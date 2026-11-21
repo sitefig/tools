@@ -1,0 +1,45 @@
+{
+ "id": "duplicate-photo-finder",
+ "seoTitle": "Duplicate Photo Finder (Group Visually Similar Photos)",
+ "metaDescription": "Select a folder full of photos (select all files in the dialog) and group the ones that look alike, such as resized or re-saved copies, with a suggestion of...",
+ "intro": "Find groups of photos that look alike.",
+ "why": "Select many photos (use Select All in the file dialog for a folder). The page hashes each one and groups the ones within your distance threshold, then marks the largest in each group as the one to keep.\n\nNothing is deleted or changed. Groups are built by chaining, so a long chain of small changes can join pictures that are not close to each other. Review each group.",
+ "howTo": [
+  "Select the photos.",
+  "Pick the hash and threshold.",
+  "Read the groups.",
+  "Decide yourself which to keep."
+ ],
+ "faq": [
+  {
+   "q": "Can it pick a folder?",
+   "a": "Browsers let you select all files in a folder in the file dialog. This page uses that, not a folder picker."
+  },
+  {
+   "q": "How many photos can it handle?",
+   "a": "Up to 600 at once."
+  },
+  {
+   "q": "Will it delete anything?",
+   "a": "No. It only lists groups."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-hash-comparator",
+  "image-info",
+  "image-compressor",
+  "image-diff",
+  "exif-viewer",
+  "file-hash"
+ ],
+ "keywords": [
+  "duplicate photo finder",
+  "find similar images",
+  "near duplicate photos",
+  "photo cleanup"
+ ]
+}

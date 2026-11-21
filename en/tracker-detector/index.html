@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Tracker Detector for Page Source (HTML) | Free Tools</title>
+<meta name="description" content="Paste page source to find third-party trackers, analytics, ad pixels, social widgets, fonts and CDNs. Free; runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/tracker-detector/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/tracker-detector/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/tracker-detector/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Tracker Detector for Page Source (HTML) | Free Tools">
+<meta property="og:description" content="Paste page source to find third-party trackers, analytics, ad pixels, social widgets, fonts and CDNs. Free; runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/tracker-detector/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Tracker Detector for Page Source (HTML) | Free Tools">
+<meta name="twitter:description" content="Paste page source to find third-party trackers, analytics, ad pixels, social widgets, fonts and CDNs. Free; runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Tracker Detector (HTML source)","url":"https://tools.sitefig.net/en/tracker-detector/","description":"Paste page source to find third-party trackers, analytics, ad pixels, social widgets, fonts and CDNs. Free; runs in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["View the page source in your browser and copy the HTML.","Paste it into the input box.","Optionally enter the first-party domain, otherwise it is read from the canonical or og:url tag.","Run the tool and review the hosts grouped by category."],"keywords":"tracker detector, find trackers on a website, detect third party scripts, analytics pixel finder, website tracker scanner html","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Privacy – Browser","item":"https://tools.sitefig.net/en/#privacy-browser"},{"@type":"ListItem","position":3,"name":"Tracker Detector (HTML source)","item":"https://tools.sitefig.net/en/tracker-detector/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it find every tracker?","acceptedAnswer":{"@type":"Answer","text":"No. It only sees hosts and snippets written in the pasted HTML. Trackers that other scripts inject at runtime, or that load after consent, will be missed. A HAR capture gives a fuller list."}},{"@type":"Question","name":"How does it know what is first party?","acceptedAnswer":{"@type":"Answer","text":"It uses the domain you enter, or the canonical link and og:url in the page. Hosts that share the same base domain are skipped as first party."}},{"@type":"Question","name":"Why does it list hosts it cannot identify?","acceptedAnswer":{"@type":"Answer","text":"Unknown external hosts are shown separately with a count. They may be your own CDN, an unlisted vendor or a harmless resource, so check them manually."}},{"@type":"Question","name":"Is the source code sent to a server?","acceptedAnswer":{"@type":"Answer","text":"No. The matching is done in your browser against built-in lists, and the pasted HTML is not uploaded."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#privacy-browser">Privacy – Browser</a></li><li><span aria-current="page">Tracker Detector (HTML source)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Tracker Detector (HTML source)</h1>
+<p class="lede">Paste the HTML source of a page to list third-party hosts and match them against known trackers, analytics, advertising, social, chat and consent services, plus inline code signatures.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="tracker-detector" data-module="privacy"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Before you write a privacy policy, set up a cookie banner or answer a data protection question, you need to know which third parties a page really talks to. Tags are added by marketing, plugins and themes over the years, and nobody remembers them all.</p>
+<p>This tool reads the HTML you paste, extracts every external host and groups known ones by category such as advertising, analytics, session replay, tag managers, social widgets, fonts and CDNs. It also looks for inline snippets such as tracking initialisation code. Pasted source only shows what is in the HTML itself: scripts loaded later by other scripts will not appear, so a network capture gives a fuller picture. The analysis runs locally.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>View the page source in your browser and copy the HTML.</li><li>Paste it into the input box.</li><li>Optionally enter the first-party domain, otherwise it is read from the canonical or og:url tag.</li><li>Run the tool and review the hosts grouped by category.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does it find every tracker?</summary><p>No. It only sees hosts and snippets written in the pasted HTML. Trackers that other scripts inject at runtime, or that load after consent, will be missed. A HAR capture gives a fuller list.</p></details>
+<details><summary>How does it know what is first party?</summary><p>It uses the domain you enter, or the canonical link and og:url in the page. Hosts that share the same base domain are skipped as first party.</p></details>
+<details><summary>Why does it list hosts it cannot identify?</summary><p>Unknown external hosts are shown separately with a count. They may be your own CDN, an unlisted vendor or a harmless resource, so check them manually.</p></details>
+<details><summary>Is the source code sent to a server?</summary><p>No. The matching is done in your browser against built-in lists, and the pasted HTML is not uploaded.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/har-analyzer/"><span class="link-card__title">HAR Privacy Analyzer</span><span class="link-card__desc">Paste HAR JSON: third-party domains, trackers, cookies and Set-Cookie flags, mixed content, large/slow requests, header mismatches. Stays in your browser; HAR files contain secrets so never upload them elsewhere.</span></a></li><li><a class="link-card" href="/en/cookie-flag-analyzer/"><span class="link-card__title">Cookie Flag Analyzer</span><span class="link-card__desc">Paste Set-Cookie headers: checks Secure, HttpOnly, SameSite, __Host-/__Secure- prefix rules, lifetime, scope and known tracking cookies.</span></a></li><li><a class="link-card" href="/en/cookie-policy-generator/"><span class="link-card__title">Cookie Policy Generator</span><span class="link-card__desc">Cookie policy draft with a categorised table of cookies (necessary, preferences, analytics, marketing). Template only, not legal advice.</span></a></li><li><a class="link-card" href="/en/privacy-policy-generator/"><span class="link-card__title">Privacy Policy Generator (GDPR / CCPA)</span><span class="link-card__desc">Fill in the options to get a privacy policy draft covering GDPR and/or CCPA/CPRA. Template only, not legal advice.</span></a></li><li><a class="link-card" href="/en/csp-builder/"><span class="link-card__title">CSP Builder</span><span class="link-card__desc">Build a Content-Security-Policy header from a preset plus extra sources. Outputs header, meta tag, nginx and Apache lines.</span></a></li><li><a class="link-card" href="/en/browser-fingerprint/"><span class="link-card__title">Browser Fingerprint Test</span><span class="link-card__desc">See what a tracker can read without cookies: UA, screen, canvas/WebGL/audio hashes, fonts, hardware. Computed locally, nothing is sent.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

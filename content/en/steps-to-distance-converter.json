@@ -1,0 +1,45 @@
+{
+ "id": "steps-to-distance-converter",
+ "seoTitle": "Steps to Distance Converter (Kilometres, Miles and Calories)",
+ "metaDescription": "Turn a step count into distance walked and estimated calories, from your height or your own stride length and walking speed.",
+ "intro": "Turn a step count into kilometres, miles and calories.",
+ "why": "Enter your steps and either your height or your own stride length. The page gives the distance, the time at your walking speed, and calories using Compendium MET values for that walking speed.\n\nStride from height uses a common rule of thumb of about 0.415 of height for men and 0.413 for women. That rule was not checked against a source, so measure your stride if you can: walk 10 steps and divide the distance by 10.",
+ "howTo": [
+  "Enter the number of steps.",
+  "Choose height-based or your own stride length.",
+  "Enter your weight and walking speed.",
+  "Read distance, time and calories."
+ ],
+ "faq": [
+  {
+   "q": "How do I measure my stride?",
+   "a": "Mark a distance, walk it naturally and divide the distance by your steps."
+  },
+  {
+   "q": "Is 10,000 steps a magic number?",
+   "a": "No. It is a round target. Benefits start well below it."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "calories-burned-calculator",
+  "running-pace-calculator",
+  "bmr-tdee",
+  "heart-rate-zones",
+  "calorie-deficit-calculator",
+  "cycling-power-speed-calculator"
+ ],
+ "keywords": [
+  "steps to km",
+  "steps to miles",
+  "step length calculator",
+  "steps to calories"
+ ]
+}

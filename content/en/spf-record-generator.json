@@ -1,0 +1,47 @@
+{
+ "id": "spf-record-generator",
+ "seoTitle": "Free SPF Record Generator & Lookup Counter",
+ "metaDescription": "Free online SPF record generator. Compose the TXT record from include, ip4, ip6, a and mx, count DNS lookups against the 10-lookup limit.",
+ "intro": "Compose an SPF TXT record from mechanisms such as include, ip4, ip6, a and mx. The tool counts DNS lookups against the limit of 10 and checks the record length.",
+ "why": "SPF lists the servers allowed to send mail for your domain, and it breaks quietly. Receivers allow at most ten DNS lookups while evaluating it, and each include, a, mx or exists counts. Add a few email services and you can go over without noticing, at which point your mail starts failing.\n\nEnter one mechanism per line, tick mx or a if needed, and choose how strict to be with all. The tool validates each mechanism, counts the lookups it can see, warns about ptr, +all and long records, and shows how to split a record beyond 255 characters into strings. It cannot see lookups hidden inside the includes of other providers, so test the finished record with a full checker. Nothing is uploaded.",
+ "howTo": [
+  "Enter mechanisms one per line, such as include:_spf.google.com or ip4:203.0.113.0/24.",
+  "Tick mx or a if your domain sends mail from those hosts.",
+  "Choose the ending: ~all, -all, ?all or +all.",
+  "Publish the TXT value at your domain, then check the lookup count warnings."
+ ],
+ "faq": [
+  {
+   "q": "What is the 10 lookup limit?",
+   "a": "SPF evaluation may trigger at most ten DNS lookups from include, a, mx, ptr, exists and redirect. Going over causes a permanent error, and receivers may reject or ignore your policy."
+  },
+  {
+   "q": "Why can this tool undercount lookups?",
+   "a": "It counts only the mechanisms you enter. Each include can contain further includes that also count, and those are not fetched here. Check the final record with an SPF checker."
+  },
+  {
+   "q": "Should I end with ~all or -all?",
+   "a": "~all (soft fail) is a safe start while you find every sender. -all (hard fail) is stricter once you are sure. Avoid +all, which lets anyone send as your domain."
+  },
+  {
+   "q": "Can I have more than one SPF record?",
+   "a": "No. A domain must publish exactly one SPF record. Two records cause an error, so merge all mechanisms into one TXT value."
+  }
+ ],
+ "related": [
+  "dmarc-generator",
+  "dkim-record-generator",
+  "dns-spf-record-flattener",
+  "dns-record-generator",
+  "ip-subnet-calculator",
+  "cidr-contains"
+ ],
+ "keywords": [
+  "spf record generator",
+  "spf generator",
+  "create spf record",
+  "free spf tool",
+  "spf 10 lookup limit",
+  "spf txt record builder"
+ ]
+}

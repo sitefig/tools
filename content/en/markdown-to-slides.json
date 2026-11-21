@@ -1,0 +1,43 @@
+{
+ "id": "markdown-to-slides",
+ "seoTitle": "Free Markdown to Slides Converter Online",
+ "metaDescription": "Turn Markdown into a slide deck with speaker notes, keyboard navigation and print-to-PDF styles. Download one self-contained HTML file. Free.",
+ "intro": "Write your slides in Markdown, separated by lines of three dashes, and get a preview plus a self-contained HTML deck with keyboard navigation, speaker notes, a progress bar and print styles.",
+ "why": "Slide software is heavy when all you have is an outline. Developers and writers already keep talks, workshop notes and demos in Markdown, and converting them by copy and paste into a presentation tool loses the structure and takes time.\n\nThis converter treats each block between horizontal rules as a slide and lets you add speaker notes with a Note line. The downloaded HTML works offline with no network requests, supports arrow keys, space, Home, End and fullscreen, and prints one slide per page, so you can save a PDF from the browser. Your text is processed in your browser only, which matters for unreleased talk material.",
+ "howTo": [
+  "Write or paste your Markdown, and put a line with only three dashes between slides.",
+  "Add speaker notes on a line starting with Note:.",
+  "Choose the dark or light theme and set the deck title.",
+  "Scroll the preview, then download the HTML file and present it with the arrow keys or press F for fullscreen."
+ ],
+ "faq": [
+  {
+   "q": "How do I make a PDF?",
+   "a": "Open the downloaded HTML file in your browser and use the print dialog to save as PDF. The print styles place one slide on each page, so check the page size and margins in the dialog."
+  },
+  {
+   "q": "Are speaker notes shown to the audience?",
+   "a": "Notes start with Note: on their own line and are hidden in the slide view. They stay in the HTML source of the downloaded file, though, so remove them before sharing the file with people who should not read them."
+  },
+  {
+   "q": "Does the deck need an internet connection?",
+   "a": "No. The downloaded file is self-contained, with its styles and script included and no network requests. Images referenced by an address will still need access to that address, or you must embed them."
+  }
+ ],
+ "related": [
+  "markdown-preview",
+  "markdown-to-html",
+  "markdown-to-pdf",
+  "markdown-table-generator",
+  "html-to-markdown",
+  "markdown-cheatsheet"
+ ],
+ "keywords": [
+  "markdown to slides",
+  "markdown presentation generator",
+  "markdown to html slide deck",
+  "convert markdown to presentation",
+  "speaker notes markdown slides",
+  "free markdown slides tool"
+ ]
+}

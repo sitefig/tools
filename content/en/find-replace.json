@@ -1,0 +1,46 @@
+{
+ "id": "find-replace",
+ "seoTitle": "Free Find and Replace Online with Regex Support",
+ "metaDescription": "Find and replace text in a pasted block, plain or with regular expressions, with case, whole-word and capture-group options. Free, in-browser.",
+ "intro": "Search a block of text and replace matches, either as plain text or with a regular expression. Options include case sensitivity, whole words and $1 or $& in the replacement.",
+ "why": "Bulk edits come up constantly: renaming a term across a document, fixing a pattern in an export, reformatting dates, removing a prefix from every line. Opening an editor for one replacement is slow, and a mistake in a large text is hard to spot afterwards.\n\nThis tool applies one find and replace to the text you paste and shows the result with the number of replacements. In plain mode special characters are treated as literal text. In regex mode you can use capture groups in the replacement, for instance $1 and $&, and the Unicode-aware multiline flags are on. Whole-word matching and case sensitivity are optional. An invalid pattern gives an error message. It runs in your browser, so nothing is uploaded.",
+ "howTo": [
+  "Paste your text into the input box.",
+  "Type what to find and what to replace it with in the options.",
+  "Tick regex, case sensitive or whole word as needed.",
+  "Run the tool and check the count at the end of the output."
+ ],
+ "faq": [
+  {
+   "q": "How do I use capture groups?",
+   "a": "Turn on regex and put parentheses around the part you want to reuse. In the replacement, write $1 for the first group, $2 for the second and $& for the entire match."
+  },
+  {
+   "q": "What flags are used in regex mode?",
+   "a": "Global, multiline and Unicode, plus case-insensitive unless you tick case sensitive. Because of the Unicode flag, some patterns that are valid in other engines may be rejected."
+  },
+  {
+   "q": "Why did a plain search match fewer or more than expected?",
+   "a": "Case sensitivity and whole word matching change the result. Whole word mode uses letters, digits and underscores as word characters, so punctuation boundaries behave differently from some editors."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "regex-tester",
+  "regex-escape",
+  "text-diff",
+  "case-converter",
+  "text-prefix-suffix-appender",
+  "remove-empty-lines-trim"
+ ],
+ "keywords": [
+  "find and replace online",
+  "regex find replace",
+  "replace text in bulk",
+  "online text replacer",
+  "regex replace tool free"
+ ]
+}

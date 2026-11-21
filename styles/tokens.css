@@ -1,0 +1,98 @@
+/* Design tokens, taken from the Sitefig design system on sus.bot (colour, type, shape). Replace the values here to re-brand; nothing else hardcodes colour, type or space. */
+@font-face { font-family: "Atkinson Hyperlegible Next"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("/assets/fonts/AtkinsonHyperlegibleNext.woff2") format("woff2"); }
+@font-face { font-family: "Atkinson Hyperlegible Mono"; font-style: normal; font-weight: 400 700; font-display: swap; src: url("/assets/fonts/AtkinsonHyperlegibleMono.woff2") format("woff2"); }
+:root {
+  color-scheme: light dark;
+  /* colour (light) */
+  --bg: #ffffff;
+  --surface: #f4f5f7;
+  --surface-2: #e8eaee;
+  --fg: #111418;
+  --muted: #454b54;
+  --border: #d3d6dc;
+  --border-strong: #6f757f;   /* controls: >= 3:1 against bg */
+  --accent: #0b57d0;          /* links */
+  --accent-fg: #ffffff;
+  --accent-soft: #e7effc;
+  --signal: #ffd60a;          /* Sitefig yellow: primary actions */
+  --signal-ink: #111418;
+  --danger: #a3201a;
+  --danger-soft: #fbe6e4;
+  --ok: #0a6b37;
+  --focus: #111418;
+
+  /* type: system stack, fluid scale */
+  --font-sans: "Atkinson Hyperlegible Next", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Atkinson Hyperlegible Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --step--1: clamp(0.8125rem, 0.79rem + 0.1vw, 0.875rem);
+  --step-0: clamp(1.0625rem, 1.03rem + 0.15vw, 1.125rem);
+  --step-1: clamp(1.15rem, 1.08rem + 0.35vw, 1.3rem);
+  --step-2: clamp(1.35rem, 1.22rem + 0.65vw, 1.65rem);
+  --step-3: clamp(1.7rem, 1.45rem + 1.25vw, 2.4rem);
+  --leading: 1.6;
+  --leading-tight: 1.2;
+  --measure: 68ch;
+
+  /* space */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4.5rem;
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2rem);
+  --wrapper: 72rem;
+
+  /* shape */
+  --radius-s: 0.25rem;
+  --radius-m: 0.375rem;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.06), 0 2px 8px rgb(0 0 0 / 0.06);
+  --focus-ring: 3px solid var(--focus);
+  --focus-offset: 2px;
+  --target: 2.75rem;          /* touch target; WCAG 2.2 minimum is 24px */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #121316;
+    --surface: #1b1c20;
+    --surface-2: #26282d;
+    --fg: #f2f3f5;
+    --muted: #bcc1c9;
+    --border: #383b42;
+    --border-strong: #8f959f;
+    --accent: #9cc0fa;
+    --accent-fg: #111418;
+    --accent-soft: #15233a;
+    --signal: #ffd60a;
+    --signal-ink: #111418;
+    --danger: #ffa198;
+    --danger-soft: #3a1715;
+    --ok: #86e0aa;
+    --focus: #ffd60a;
+    --shadow: 0 1px 2px rgb(0 0 0 / 0.4);
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #121316;
+  --surface: #1b1c20;
+  --surface-2: #26282d;
+  --fg: #f2f3f5;
+  --muted: #bcc1c9;
+  --border: #383b42;
+  --border-strong: #8f959f;
+  --accent: #9cc0fa;
+  --accent-fg: #111418;
+  --accent-soft: #15233a;
+  --signal: #ffd60a;
+  --signal-ink: #111418;
+  --danger: #ffa198;
+  --danger-soft: #3a1715;
+  --ok: #86e0aa;
+  --focus: #ffd60a;
+  --shadow: 0 1px 2px rgb(0 0 0 / 0.4);
+}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }

@@ -1,0 +1,39 @@
+{
+ "id": "project-quote-estimator",
+ "seoTitle": "Project Quote Estimator From Tasks, Hours and Rates",
+ "metaDescription": "Build a project estimate from tasks with hours and rates, plus contingency, discount and tax. Free, private.",
+ "intro": "Totals tasks with hours and rates and adds contingency, discount and tax.",
+ "why": "A good estimate lists tasks so the client can see what they pay for. Contingency covers the unknown, and showing it separately is more honest than padding every line.\n\nEnter tasks as name, hours and an optional rate. Set a default rate, contingency, discount and tax. The tool shows the blended rate so you can check it against your target. For a printable document, use the Quotation Generator.",
+ "howTo": [
+  "List tasks as name, hours, rate.",
+  "Set default rate, contingency, discount and tax.",
+  "Read the totals and the blended rate."
+ ],
+ "faq": [
+  {
+   "q": "How much contingency?",
+   "a": "It depends on how well the scope is known. 10 to 20 percent is common."
+  },
+  {
+   "q": "Is this a fixed price?",
+   "a": "Not until you and the client agree on scope."
+  },
+  {
+   "q": "Where can I print a quote?",
+   "a": "Use the Quotation Generator."
+  }
+ ],
+ "related": [
+  "employee-total-cost-calculator",
+  "freelance-hourly-rate-calculator",
+  "day-rate-to-salary-converter",
+  "salary-hourly",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "project quote estimator",
+  "project estimate calculator",
+  "hours and rate quote"
+ ]
+}

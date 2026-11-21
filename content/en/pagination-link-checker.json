@@ -1,0 +1,45 @@
+{
+ "id": "pagination-link-checker",
+ "seoTitle": "Pagination Link and Canonical Checker for Paged Series",
+ "metaDescription": "Review a paginated series from pasted HTML: canonicals, prev/next, fragment links and noindex. Explains how Google treats pagination.",
+ "intro": "Checks the head of each page in a paginated series for common mistakes.",
+ "why": "A common mistake is a canonical on every paged URL that points to page one. Google advises against that and wants each page to have its own canonical.\n\nGoogle no longer uses rel=prev/next as an indexing signal, though other engines may. The tool checks canonicals, prev/next reciprocity, fragment links and noindex across the pages you paste. Page numbers are guessed from common URL patterns.",
+ "howTo": [
+  "Paste each page after a URL: line, separated by ---.",
+  "Include at least two pages for reciprocity checks.",
+  "Run the tool.",
+  "Fix errors, then review the warnings."
+ ],
+ "faq": [
+  {
+   "q": "Does Google use rel=prev/next?",
+   "a": "No longer, per its documentation. Other engines may."
+  },
+  {
+   "q": "Why not canonical to page 1?",
+   "a": "Each page has different content, so each needs its own canonical."
+  },
+  {
+   "q": "Why avoid fragments?",
+   "a": "Google ignores fragment identifiers."
+  },
+  {
+   "q": "Does it crawl?",
+   "a": "No. Paste the pages."
+  }
+ ],
+ "related": [
+  "canonical-conflict-checker",
+  "seo-robots-noindex-simulator",
+  "html-link-auditor",
+  "url-parameter-analyzer",
+  "hreflang-validator",
+  "html-head-extractor"
+ ],
+ "keywords": [
+  "pagination seo",
+  "rel next prev",
+  "paginated canonical",
+  "pagination checker"
+ ]
+}

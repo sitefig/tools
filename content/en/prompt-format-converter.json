@@ -1,0 +1,45 @@
+{
+ "id": "prompt-format-converter",
+ "seoTitle": "Free Chat Prompt Format Converter: ChatML, Llama",
+ "metaDescription": "Convert a chat between OpenAI, Anthropic, Gemini, ChatML, Llama 2, Llama 3, Mistral and plain transcript formats. Free, runs in your browser.",
+ "intro": "Converts a conversation between OpenAI messages, Anthropic, Gemini, ChatML, Llama 2, Llama 3, Mistral and plain transcript formats, from JSON or from simple System: and User: lines.",
+ "why": "Every model family wants the same conversation written differently. OpenAI takes a messages array, Anthropic splits out the system prompt, Gemini uses contents and parts, and open models expect special tokens such as <|im_start|> or [INST]. Moving a prompt between them by hand is a source of subtle bugs, like a missing end token or a system message in the wrong place. Paste a conversation in any of the supported JSON shapes, or as plain lines starting with System:, User: and Assistant:, and choose the target. The templates follow each family's published chat format, but individual models can vary slightly, so check against your model's own template. Everything is converted in your browser.",
+ "howTo": [
+  "Paste the conversation as JSON in an OpenAI, Anthropic or Gemini shape, or as System:/User:/Assistant: lines.",
+  "Choose the target format and tick \"Append generation prompt\" if the assistant turn should be left open.",
+  "Copy the converted prompt."
+ ],
+ "faq": [
+  {
+   "q": "Which formats can it read?",
+   "a": "OpenAI-style message arrays, Anthropic objects with system and messages, Gemini contents with parts and systemInstruction, and plain text lines starting with a role name. Roles like human, ai and model are normalised."
+  },
+  {
+   "q": "Are the special-token templates exact?",
+   "a": "They follow the commonly published templates for ChatML, Llama 2, Llama 3 and Mistral. Fine-tunes and newer versions sometimes differ, so verify against the tokenizer's chat template for your exact model."
+  },
+  {
+   "q": "What does the generation prompt option do?",
+   "a": "It adds the opening of an assistant turn, such as <|im_start|>assistant, so the model continues from there. Turn it off if you are only storing the conversation."
+  },
+  {
+   "q": "What happens to the system message?",
+   "a": "It stays as a system message for OpenAI and ChatML, becomes the system field for Anthropic, goes to systemInstruction for Gemini, and is merged into the first user turn for Llama 2 and Mistral."
+  }
+ ],
+ "related": [
+  "vercel-ai-core-message-converter",
+  "system-prompt-formatter",
+  "llm-few-shot-prompt-formatter",
+  "token-truncate",
+  "gpt-token-counter",
+  "json-format"
+ ],
+ "keywords": [
+  "chat prompt format converter",
+  "chatml converter",
+  "llama 3 prompt template",
+  "convert openai messages to anthropic",
+  "free chat template converter"
+ ]
+}

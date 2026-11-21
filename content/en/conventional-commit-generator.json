@@ -1,0 +1,46 @@
+{
+ "id": "conventional-commit-generator",
+ "seoTitle": "Free Conventional Commit Message Generator",
+ "metaDescription": "Build Conventional Commits messages with type, scope, subject, body, breaking change and footers, in the right format. Free, runs in your browser.",
+ "intro": "Pick a commit type and fill in scope, subject, body and footers to get a message that follows the Conventional Commits format.",
+ "why": "Teams that generate changelogs or version numbers from commit history need messages in a strict shape. One missing colon, a capitalised subject or a breaking change written in the wrong place and the release tooling skips the commit or bumps the wrong number.\n\nThis generator assembles the header as type(scope): subject, adds an exclamation mark when you describe a breaking change, and writes the BREAKING CHANGE footer in the right spot, followed by any other footers such as Closes #12. It lowercases the first letter of the subject and strips a trailing full stop, in line with common convention, and warns when the first line passes 72 characters. It is useful when you are learning the format or setting up semantic-release. It runs locally.",
+ "howTo": [
+  "Choose the commit type, such as feat, fix or docs.",
+  "Enter an optional scope and a short subject in the imperative mood.",
+  "Add a body, a breaking change description and footers if needed; use \\n for new lines.",
+  "Copy the message into git commit."
+ ],
+ "faq": [
+  {
+   "q": "What do the types mean?",
+   "a": "feat adds a feature, fix repairs a bug, and the others cover docs, style, refactor, perf, test, build, ci, chore and revert. Release tools commonly treat feat as a minor bump and fix as a patch bump."
+  },
+  {
+   "q": "How is a breaking change marked?",
+   "a": "If you fill in the breaking change field, the header gets an exclamation mark after the type or scope and a BREAKING CHANGE footer is added. Most tools read either signal as a major release."
+  },
+  {
+   "q": "How do I add several lines to the body?",
+   "a": "Type the characters backslash and n where you want a line break. The tool turns them into real newlines. The same works in the footer field."
+  },
+  {
+   "q": "Why does it add a note about 72 characters?",
+   "a": "Long first lines are cut off in many git views. The tool appends a note when the header exceeds 72 characters, so shorten the subject and remove that note before committing."
+  }
+ ],
+ "related": [
+  "commitlint-semantic-release-generator",
+  "changelog-generator",
+  "git-command-builder",
+  "github-issue-pr-template-generator",
+  "pre-commit-config-generator",
+  "semver-calculator"
+ ],
+ "keywords": [
+  "conventional commit generator",
+  "conventional commits message builder",
+  "git commit message format",
+  "semantic commit helper",
+  "free commit message generator"
+ ]
+}

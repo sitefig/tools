@@ -1,0 +1,45 @@
+{
+  "id": "list-shuffler",
+  "seoTitle": "List Shuffler: Randomize the Order of Lines",
+  "metaDescription": "Shuffle a list into random order with an unbiased Fisher-Yates shuffle using secure random numbers. Optionally keep the first lines (a header) in place.",
+  "intro": "Paste a list, one item per line, and get it back in a random order.",
+  "why": "The shuffle is a Fisher-Yates shuffle driven by the browser's cryptographically secure random generator, so every ordering is equally likely. You can keep a number of lines at the top in place, for example a header row, and drop blank lines. Shuffling again gives a new order; there is no seed.\n\nFor drawing winners use the raffle picker, and for splitting people into groups use the random team splitter; this tool just reorders.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the list, one item per line.",
+    "Optionally keep the first N lines fixed.",
+    "Run it and copy the result.",
+    "Run again for another order."
+  ],
+  "faq": [
+    {
+      "q": "Is it truly random?",
+      "a": "It uses crypto.getRandomValues with an unbiased algorithm. It is fair for lotteries of low stakes; official draws need audited procedures."
+    },
+    {
+      "q": "Can I get the same order again?",
+      "a": "No. There is no seed, so each run differs."
+    },
+    {
+      "q": "What about blank lines?",
+      "a": "By default they are dropped."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "raffle-picker",
+    "random-team-splitter",
+    "sort-lines",
+    "dedupe-lines",
+    "decision-wheel",
+    "random-number-picker"
+  ],
+  "keywords": [
+    "shuffle list",
+    "randomize lines",
+    "random order generator",
+    "list randomizer"
+  ]
+}

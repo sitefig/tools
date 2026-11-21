@@ -1,0 +1,41 @@
+{
+ "id": "latex-to-mathml",
+ "seoTitle": "LaTeX to MathML Converter with Live Preview",
+ "metaDescription": "Convert LaTeX math to MathML that browsers draw natively: fractions, roots, sums, scripts, matrices, cases. Free, offline.",
+ "intro": "Turns LaTeX math into MathML and previews it with the browser's own MathML renderer.",
+ "why": "MathML is part of the web platform and current browsers draw it without a library. Writing it by hand is long, while LaTeX is short.\n\nThis converter parses a subset of LaTeX math: fractions, roots, sub and superscripts, big operators with limits, Greek letters, common symbols, accents, text and font commands, left and right delimiters, and matrix and cases environments. Anything outside that list raises a clear error rather than printing wrong output. It is not KaTeX or MathJax, and it has no SVG export.",
+ "howTo": [
+  "Type or paste LaTeX math, with a blank line between formulas.",
+  "Read the preview.",
+  "Copy the MathML into your HTML.",
+  "Fix any unsupported command named in the error."
+ ],
+ "faq": [
+  {
+   "q": "Which browsers render it?",
+   "a": "Chrome 109 and later, Firefox and Safari, via MathML Core."
+  },
+  {
+   "q": "Why no SVG export?",
+   "a": "Exact SVG needs font metrics and layout code that this tool does not bundle."
+  },
+  {
+   "q": "Is every LaTeX command supported?",
+   "a": "No. Unsupported commands stop with an error naming the command."
+  }
+ ],
+ "related": [
+  "latex-formatter",
+  "scientific-expression-calculator",
+  "markdown-to-html",
+  "markdown-preview",
+  "html-entities-reference",
+  "svg-path-editor"
+ ],
+ "keywords": [
+  "latex to mathml",
+  "latex equation converter",
+  "mathml generator",
+  "latex math preview"
+ ]
+}

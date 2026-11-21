@@ -1,0 +1,45 @@
+{
+ "id": "multi-color-blender",
+ "seoTitle": "Multi-Color Blender: Compare Mixes in sRGB, Linear, Lab and OKLCH",
+ "metaDescription": "Mix two or more colours by weight and compare the result in sRGB, linear light, CIE Lab, OKLab and OKLCH. Free, local.",
+ "intro": "Blends any number of colours with weights and shows the mix computed in five ways, with swatches.",
+ "why": "Averaging colours gives different results depending on the space. sRGB values are gamma encoded, so averaging them gives dark mixes. Linear RGB averages light. Lab and OKLab average perceived lightness and colour opponents. OKLCH averages hue by chroma, which keeps vivid mixes.\n\nSeeing all five side by side shows which one suits your gradient or blend. Lab uses a D65 white. Results are clipped to sRGB.",
+ "howTo": [
+  "Enter one colour per line, with an optional weight after it.",
+  "Run the tool.",
+  "Compare the five results and swatches.",
+  "Copy the HEX you prefer."
+ ],
+ "faq": [
+  {
+   "q": "Why do the results differ?",
+   "a": "Each space averages a different quantity. None is wrong; they model different things."
+  },
+  {
+   "q": "Which should I use for gradients?",
+   "a": "OKLab or OKLCH usually look smoothest. Linear RGB looks like mixing light."
+  },
+  {
+   "q": "What does weight mean?",
+   "a": "Relative share. 1, 1, 2 gives the third colour half of the mix."
+  },
+  {
+   "q": "Is there a two-colour step version?",
+   "a": "Yes, the Color Mixer."
+  }
+ ],
+ "related": [
+  "color-mixer",
+  "paint-color-mixer",
+  "gradient-generator",
+  "css-color-formats",
+  "color-converter",
+  "palette-generator"
+ ],
+ "keywords": [
+  "mix colors online",
+  "color blend calculator",
+  "oklab color mix",
+  "mix colors lab rgb"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "test-email-generator",
+ "seoTitle": "Free Test Email Address Generator: Plus Tags and Gmail Dots",
+ "metaDescription": "Make many test email addresses from one inbox with plus tags or Gmail dot variants, or use reserved example domains. Free, local.",
+ "intro": "Creates test addresses that all deliver to one real inbox, or addresses on reserved domains that can never deliver.",
+ "why": "Signup flows need many different addresses. Plus addressing (name+tag@domain) sends mail to name@domain on many providers, so one inbox can serve many test accounts. Gmail also ignores dots in the name part.\n\nNot every provider supports plus tags, and some forms reject the plus sign, so test with your own mail system. For tests that must never reach a person, use the reserved domains example.com, example.org and example.net (RFC 2606) and the reserved top-level names .test, .example and .invalid.",
+ "howTo": [
+  "Enter your base address.",
+  "Pick numbered, random or your own tag words, Gmail dots or reserved domains.",
+  "Set the count.",
+  "Copy the list."
+ ],
+ "faq": [
+  {
+   "q": "Does every provider support plus tags?",
+   "a": "No. Gmail, Outlook.com, iCloud and Fastmail do. Many company systems do not."
+  },
+  {
+   "q": "Do dots work everywhere?",
+   "a": "Only on Gmail and googlemail.com. Elsewhere they make a different address."
+  },
+  {
+   "q": "Which domains are safe for fake data?",
+   "a": "example.com, example.org, example.net and the .test, .example and .invalid names are reserved and never get real mail."
+  },
+  {
+   "q": "Will it send email?",
+   "a": "No. It only writes the addresses."
+  }
+ ],
+ "related": [
+  "email-validator",
+  "fake-person-generator",
+  "mock-data-generator",
+  "random-secret-generator",
+  "uuid-generator",
+  "outreach-mail-merge"
+ ],
+ "keywords": [
+  "test email generator",
+  "plus address generator",
+  "gmail dot trick generator",
+  "dummy email addresses"
+ ]
+}

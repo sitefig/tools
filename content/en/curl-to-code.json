@@ -1,0 +1,47 @@
+{
+ "id": "curl-to-code",
+ "seoTitle": "Free cURL to Fetch, Python, Node & PHP Converter",
+ "metaDescription": "Free online cURL converter. Turn a curl command into JavaScript fetch, Node https, Python requests or PHP cURL code, right in your browser.",
+ "intro": "Paste a curl command and get equivalent code for JavaScript fetch, Node https, Python requests or PHP cURL. Headers, body, basic auth and common flags are translated.",
+ "why": "API documentation almost always shows examples as curl commands. To use the call in an application you have to rewrite it in your language, translating headers, quoting the body and handling auth by hand. That is where typos and missing headers creep in.\n\nPaste the command, pick a target language and get working code. The parser understands common options such as -X, -H, -d and --data-raw, --json, -F forms, -u, -A, -b, -L and -k, and handles single and double quoted arguments and backslash line continuations. JSON bodies are turned into readable objects where possible. It does not execute anything, and the command is parsed in your browser, so tokens in the example are not sent anywhere. Review the code before use.",
+ "howTo": [
+  "Paste your curl command, including backslash line breaks if present.",
+  "Choose a target: fetch, node https, python requests or php cURL.",
+  "Read the generated code in the output.",
+  "Copy it into your project and replace any placeholder token."
+ ],
+ "faq": [
+  {
+   "q": "Which curl options are understood?",
+   "a": "Method, headers, data and JSON bodies, form fields, basic auth, user agent, referer, cookies, redirects, insecure mode, compression and head or get requests. Unknown options are skipped rather than translated."
+  },
+  {
+   "q": "Does the tool send the request?",
+   "a": "No. It only converts text into code. The command is never run, and nothing is sent to the API or to any server."
+  },
+  {
+   "q": "How is a JSON body handled?",
+   "a": "If the Content-Type header mentions JSON and the body parses, it is written as a readable object that is serialised in the generated code. Otherwise the body is passed as a plain string."
+  },
+  {
+   "q": "Can I convert to other languages?",
+   "a": "This tool covers four targets. For Go, Rust, Postman, HAR and others, see the related converters listed below the tool."
+  }
+ ],
+ "related": [
+  "curl-to-more-languages",
+  "curl-builder",
+  "fetch-to-curl",
+  "curl-to-postman",
+  "http-snippet-generator",
+  "curl-to-go-http"
+ ],
+ "keywords": [
+  "curl to code",
+  "curl to fetch",
+  "curl to python requests",
+  "curl converter online",
+  "free curl to php",
+  "convert curl to javascript"
+ ]
+}

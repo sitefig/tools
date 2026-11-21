@@ -1,0 +1,46 @@
+{
+ "id": "string-case-detector",
+ "seoTitle": "Free String Case Detector - camelCase, snake_case",
+ "metaDescription": "Paste identifiers one per line and see whether each is camelCase, PascalCase, snake_case, kebab-case and more. Free, runs in your browser.",
+ "intro": "Paste strings one per line and the tool labels the naming convention of each: camelCase, PascalCase, snake_case, kebab-case, Title Case and others.",
+ "why": "When you inherit a codebase, an API schema or a CSV with inconsistent column names, you first need to know which conventions are actually in use. Eyeballing a few hundred identifiers is slow and easy to get wrong, especially for look-alikes such as Train-Case and kebab-case, or SCREAMING_SNAKE_CASE and a plain uppercase word.\n\nThis detector checks every line against a set of patterns and returns a two-column table, so inconsistent names stand out at once. Use it before a rename or a migration, when reviewing a pull request that mixes styles, or when deciding which case converter to run next. Lines that fit no pattern are marked mixed or unknown rather than guessed, and the check runs locally.",
+ "howTo": [
+  "Paste your strings into the box, one per line.",
+  "Run the tool to see a table of each string and its detected case.",
+  "Look for rows marked mixed / unknown or rows that differ from the rest.",
+  "Convert them with a case converter if you want one style."
+ ],
+ "faq": [
+  {
+   "q": "Which cases can it recognise?",
+   "a": "camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE, kebab-case, Train-Case, COBOL-CASE, dot.case, Title Case, Sentence case, lower and UPPER case words, lowercase, UPPERCASE and Capitalized."
+  },
+  {
+   "q": "Why is a single word like user shown as lowercase?",
+   "a": "One word with no separators cannot reveal a style, so it is reported by its letter case only. A word such as userName needs a capital inside it to count as camelCase."
+  },
+  {
+   "q": "What does mixed / unknown mean?",
+   "a": "The line matched none of the patterns, for example user_Name, which mixes an underscore with a capital, or a string with punctuation or non-ASCII letters. Such names usually deserve a manual look."
+  },
+  {
+   "q": "Does it handle acronyms such as HTTPServer?",
+   "a": "Not reliably. Runs of capitals do not fit the strict PascalCase pattern, so names like HTTPServer or userID are normally reported as mixed / unknown."
+  }
+ ],
+ "related": [
+  "case-converter",
+  "slug-to-title",
+  "sql-slugifier",
+  "slug-generator",
+  "title-case-headline-analyzer",
+  "json-to-typescript"
+ ],
+ "keywords": [
+  "string case detector",
+  "detect camelcase snake_case",
+  "identify naming convention",
+  "case style checker",
+  "free case detector online"
+ ]
+}

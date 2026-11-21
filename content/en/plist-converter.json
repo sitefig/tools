@@ -1,0 +1,45 @@
+{
+  "id": "plist-converter",
+  "seoTitle": "Property List (plist) to JSON and Back",
+  "metaDescription": "Convert Apple XML property lists such as Info.plist and entitlements to JSON, and JSON to plist. Dates and data are kept as $date and $data.",
+  "intro": "Read and edit plist files as JSON, then turn them back into a valid XML property list.",
+  "why": "Dictionaries, arrays, strings, integers, reals, booleans, dates and data elements are mapped to JSON; dates become {\"$date\": ISO string} and binary data {\"$data\": base64} so that the conversion back is lossless. JSON null has no plist equivalent and is rejected. The output was checked against Python's plistlib in both directions.\n\nOnly XML plists are supported. Convert binary plists first with plutil -convert xml1.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose plist to JSON or JSON to plist.",
+    "Paste the document.",
+    "Edit the JSON if needed and convert back.",
+    "Save as .plist and test in Xcode or with plutil -lint."
+  ],
+  "faq": [
+    {
+      "q": "Can it read binary plists?",
+      "a": "No. Run plutil -convert xml1 first."
+    },
+    {
+      "q": "How are dates stored?",
+      "a": "As ISO 8601 text in a {\"$date\": ...} object."
+    },
+    {
+      "q": "Why is null rejected?",
+      "a": "Property lists have no null type."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "xml-to-json",
+    "json-to-xml",
+    "xml-format",
+    "ios-plist-builder",
+    "android-manifest-builder",
+    "json-format"
+  ],
+  "keywords": [
+    "plist to json",
+    "json to plist",
+    "info.plist converter",
+    "xml plist"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "zip-extractor",
+ "seoTitle": "Free ZIP Extractor - Unzip Files Online",
+ "metaDescription": "Open a .zip in your browser and download its files one by one. Handles stored and deflate entries; encrypted and ZIP64 are reported. Free, private.",
+ "intro": "Open a .zip archive and download the files inside one at a time. Unsupported entries are listed with a reason rather than failing silently.",
+ "why": "A zip arrives and the device cannot open it: a locked-down computer, a phone without an unzip app or a browser-only workstation. Online extractors solve this by uploading the archive to a server, which is a bad idea for contracts, photos or anything with personal data.\n\nThis extractor reads the archive on your device. It lists every entry, then inflates each stored or deflate-compressed file and offers it as a separate download. Folder structure is flattened in the file names, because downloads cannot create folders. Entries that use encryption or ZIP64, or an unusual compression method, are marked as skipped. As a safety measure it refuses archives that would expand beyond 1.5 GB, and downloads are capped at 300 files per run.",
+ "howTo": [
+  "Choose a .zip file from your device.",
+  "Run the tool.",
+  "Read the list of entries and any that were skipped.",
+  "Download the extracted files from the results."
+ ],
+ "faq": [
+  {
+   "q": "Which zip features are not supported?",
+   "a": "Encrypted entries, ZIP64 archives and compression methods other than stored and deflate (such as bzip2 or LZMA). These entries appear in the list marked as skipped, with the reason."
+  },
+  {
+   "q": "Why is there a 1.5 GB limit?",
+   "a": "Extraction happens in browser memory, so a very large or deliberately booby-trapped archive could crash the tab. The tool checks the declared uncompressed size and refuses anything above 1.5 GB."
+  },
+  {
+   "q": "What happens to folders?",
+   "a": "Directories are listed, but each file is downloaded on its own, so path separators in names are replaced with underscores. For a full folder tree use a desktop unzip tool."
+  },
+  {
+   "q": "Are my files uploaded?",
+   "a": "No. The archive is read and decompressed in your browser, and the downloads are generated on your device. Nothing is sent to any server."
+  }
+ ],
+ "related": [
+  "zip-inspector",
+  "zip-creator",
+  "gzip-decompress",
+  "file-hash",
+  "pdf-info",
+  "xlsx-viewer"
+ ],
+ "keywords": [
+  "zip extractor",
+  "unzip online",
+  "open zip file in browser",
+  "extract zip no upload",
+  "free unzip tool"
+ ]
+}

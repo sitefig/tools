@@ -1,0 +1,45 @@
+{
+  "id": "apache-vhost-generator",
+  "seoTitle": "Apache Virtual Host Generator (HTTPS, Redirect, Proxy)",
+  "metaDescription": "Generate Apache VirtualHost configuration for a site: HTTP to HTTPS redirect, TLS paths, document root or reverse proxy, security headers and gzip.",
+  "intro": "Get a secure starting vhost for Apache 2.4 with the modules you need listed.",
+  "why": "Enter the server name, aliases, whether to serve static files or proxy to an app, certificate paths and the document root or proxy target. The output has a port 80 host that redirects to HTTPS, a port 443 host with TLS 1.2 and 1.3 only, HSTS and other security headers, deflate compression and per-site logs. For proxies it sets X-Forwarded-Proto and ProxyPreserveHost.\n\nEnable the listed modules (ssl, rewrite, headers, deflate, proxy, proxy_http) and run apachectl configtest before reloading. Adjust cipher policy and HSTS for your environment.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the domain and choose static or proxy.",
+    "Set the certificate and key paths.",
+    "Save to sites-available and enable with a2ensite.",
+    "Run apachectl configtest and reload."
+  ],
+  "faq": [
+    {
+      "q": "What does HSTS do?",
+      "a": "It tells browsers to use HTTPS for the domain; enable it only when HTTPS works everywhere."
+    },
+    {
+      "q": "Do I need mod_proxy?",
+      "a": "Only for reverse proxy mode."
+    },
+    {
+      "q": "Where do Let's Encrypt certificates live?",
+      "a": "Usually under /etc/letsencrypt/live/DOMAIN/."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "htaccess-generator",
+    "nginx-config-generator",
+    "caddyfile-generator",
+    "security-headers-generator",
+    "cors-policy-builder",
+    "apache-conf-formatter"
+  ],
+  "keywords": [
+    "apache virtualhost generator",
+    "apache https config",
+    "apache reverse proxy",
+    "vhost config"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "url-decode",
+ "seoTitle": "Free URL Decode Online (Percent-Decoding Tool)",
+ "metaDescription": "Decode percent-encoded URL text such as %20 and %C3%AB back to readable characters, with an option to treat plus signs as spaces. Free, in your browser.",
+ "intro": "Turn percent-encoded text like %3D, %20 and %C3%AB back into readable characters. An option lets you treat plus signs as spaces for query strings from HTML forms.",
+ "why": "Links copied from analytics, server logs and redirect chains are full of %2F and %3F, and you cannot tell where a nested URL begins and ends. A search query stored in a log is unreadable until it is decoded.\n\nThis tool reverses percent-encoding with the browser's decodeURIComponent, so multi-byte UTF-8 sequences become proper characters. One checkbox handles the form convention where + means a space, which the standard function leaves alone. If the text contains a broken sequence such as a lone %, you get a clear message. Nothing leaves your browser.",
+ "howTo": [
+  "Paste the encoded text or URL into the box.",
+  "Tick \"Treat + as space\" if the text comes from an HTML form or a query string.",
+  "Read the decoded text in the output.",
+  "Copy the result, or fix the input if it reports malformed encoding."
+ ],
+ "faq": [
+  {
+   "q": "When should I treat + as a space?",
+   "a": "Use it for application/x-www-form-urlencoded data, which is what HTML forms and most query strings use. Leave it off for paths and for plain percent-encoded text, where a plus sign is a real plus sign."
+  },
+  {
+   "q": "What does \"Malformed percent-encoding\" mean?",
+   "a": "A % is not followed by two hex digits, or the bytes do not form valid UTF-8. This happens with truncated links or text that was never encoded. Fix or remove the broken sequence and try again."
+  },
+  {
+   "q": "My result still contains %25 or looks encoded. Why?",
+   "a": "The text was probably encoded twice. Run the decoder a second time on the output. %25 is an encoded percent sign, which is the usual sign of double encoding."
+  },
+  {
+   "q": "Will it decode a whole URL?",
+   "a": "Yes, but it decodes everything, including characters that were escaped on purpose, such as %26 for an ampersand. To inspect the parts safely, use the URL Parser, which splits the address first."
+  }
+ ],
+ "related": [
+  "url-encode",
+  "url-parser",
+  "query-string",
+  "html-entities",
+  "base64-decode",
+  "url-tracker-stripper"
+ ],
+ "keywords": [
+  "url decode online",
+  "percent decoding tool",
+  "decodeuricomponent online",
+  "free url decoder",
+  "decode %20 in url",
+  "urldecode text"
+ ]
+}

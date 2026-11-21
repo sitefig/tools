@@ -1,0 +1,43 @@
+{
+ "id": "css-selector-speed-profiler",
+ "seoTitle": "Free CSS Selector Speed Profiler",
+ "metaDescription": "Time querySelectorAll for each CSS selector against your HTML and rate its structural cost, such as :has() and attribute matches. Free.",
+ "intro": "Paste your HTML and a list of selectors to time querySelectorAll for each one in your browser, and see a cost rating based on key selector, descendant depth, :has() and attribute substring matches.",
+ "why": "Selector performance rarely matters on a small page, but on a large DOM with thousands of nodes and frequent style recalculation, a loose selector like a universal or deeply nested one can cost real time. Developers want to compare options, such as a child combinator against a descendant, without guessing.\n\nThis profiler runs each selector many times against your actual markup and shows the number of matches, microseconds per query and a cost rating with the reason. The numbers come from your own browser, and style matching inside the engine works differently from querySelectorAll, so use the results as a relative comparison and not an absolute truth. Test on a representative page, because the right answer depends on your DOM. Nothing is uploaded.",
+ "howTo": [
+  "Paste a representative piece of HTML into the first box.",
+  "List the selectors to test in the second box, one per line.",
+  "Set the number of iterations per selector.",
+  "Compare matches, time per query and the cost rating, and prefer the selector that is both correct and cheap."
+ ],
+ "faq": [
+  {
+   "q": "Are the timings exact?",
+   "a": "No. They show relative cost in this browser using querySelectorAll. Real style matching uses different internal paths, and results vary between engines and machines, so only compare selectors measured in the same run."
+  },
+  {
+   "q": "What makes a selector expensive?",
+   "a": "Broad key selectors that match many elements, long descendant chains, attribute substring matches and :has() with wide scope. Specific classes on the rightmost part of the selector are usually cheap."
+  },
+  {
+   "q": "Should I rewrite my CSS because of this?",
+   "a": "Only if you have measured a real problem. Readable, maintainable selectors matter more on most sites. Use this as a check on very large pages or when profiling shows style recalculation as a hotspot."
+  }
+ ],
+ "related": [
+  "css-selector-tester",
+  "css-specificity-calculator",
+  "regex-benchmark-simulator",
+  "css-format",
+  "css-minify",
+  "html-format"
+ ],
+ "keywords": [
+  "css selector performance",
+  "css selector profiler",
+  "queryselectorall benchmark",
+  "css selector speed test",
+  "slow css selectors",
+  "free css performance tool"
+ ]
+}

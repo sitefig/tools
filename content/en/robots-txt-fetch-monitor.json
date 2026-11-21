@@ -1,0 +1,45 @@
+{
+ "id": "robots-txt-fetch-monitor",
+ "seoTitle": "robots.txt Fetch Monitor From Access Logs",
+ "metaDescription": "List every crawler request for /robots.txt with its status and response time, and see fetches per day and bot. Free, runs in your browser.",
+ "intro": "Extracts robots.txt requests from your log and shows when each bot fetched the file, what you answered and how fast.",
+ "why": "Crawlers read robots.txt before they crawl, and how your server answers it affects what they do next. A file that returns errors or times out is something you want to know about early.\n\nThe tool shows a table of fetches per day and bot, the latest fetches with status and bytes, and the response time if your log has one. Look for non-200 answers, for sudden changes in file size and for bots that never ask for the file at all.",
+ "howTo": [
+  "Paste access log lines, ideally from several days.",
+  "Choose the bots, or all known bots.",
+  "Pick the unit of the response time number if your log has one.",
+  "Check the status codes and the latest fetches."
+ ],
+ "faq": [
+  {
+   "q": "Why does a robots.txt 5xx matter?",
+   "a": "Crawlers handle server errors on this file differently from a missing file. Check each vendor's robots.txt documentation for what they do."
+  },
+  {
+   "q": "My log has no robots.txt lines.",
+   "a": "The file may be served by a CDN or another host, or the period is too short."
+  },
+  {
+   "q": "Does a fetch mean the rules were obeyed?",
+   "a": "No. It only shows the file was requested. Use the compliance log checker to test the rules against requests."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  }
+ ],
+ "related": [
+  "robots-txt-compliance-log-checker",
+  "robots-tester",
+  "robots-txt-validator",
+  "robots-txt-status-code-explainer",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer"
+ ],
+ "keywords": [
+  "robots.txt fetch log",
+  "when did googlebot fetch robots.txt",
+  "robots.txt status code in server logs",
+  "robots.txt request monitor"
+ ]
+}

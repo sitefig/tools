@@ -1,0 +1,47 @@
+{
+ "id": "xml-minify",
+ "seoTitle": "Free XML Minifier - Remove Whitespace Online",
+ "metaDescription": "Free online XML minifier. Strip whitespace between elements and optionally comments to shrink XML files. Text content is preserved. Runs locally.",
+ "intro": "Remove the whitespace between XML elements, and optionally comments, to get a compact document. Text inside elements and attribute values is left alone.",
+ "why": "Indented XML is easy to read but larger than it needs to be. When you embed XML in a message, store it in a database column, or send it through a service with a size limit, the formatting is dead weight.\n\nThe minifier parses the document and writes it back without the layout whitespace between elements, so the structure and the content stay the same. Comments are dropped by default and can be kept with one tick. Spaces inside text, such as in a name with two words, are not touched. If the XML is broken you get an error instead of a mangled result. Minifying happens in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your XML into the input box.",
+  "Tick Keep comments only if you need them in the output.",
+  "Read the compact single-line result.",
+  "Copy it into your message, field or file."
+ ],
+ "faq": [
+  {
+   "q": "Will minifying change how my XML is read?",
+   "a": "For data-style XML, no. Only layout whitespace between elements is removed. Text inside elements keeps its spaces. If your document relies on whitespace between inline elements, check the result."
+  },
+  {
+   "q": "Does it remove the XML declaration?",
+   "a": "No. The declaration and processing instructions stay in place. Only whitespace between elements and, by default, comments are removed."
+  },
+  {
+   "q": "How much smaller will the file get?",
+   "a": "It depends on how deeply the original was indented. Heavily indented documents often lose a large share of their size, while already compact ones change little."
+  },
+  {
+   "q": "How do I make it readable again?",
+   "a": "Run the minified output through the XML Formatter. It restores indentation and line breaks so the structure is easy to read again, with the same content."
+  }
+ ],
+ "related": [
+  "xml-format",
+  "xml-validate",
+  "xml-to-json",
+  "html-minify",
+  "gzip-compress",
+  "json-minify"
+ ],
+ "keywords": [
+  "xml minifier online",
+  "minify xml",
+  "compress xml",
+  "free xml minify",
+  "remove whitespace from xml",
+  "xml compactor"
+ ]
+}

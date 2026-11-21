@@ -1,0 +1,38 @@
+{
+ "id": "ai-offline-chat",
+ "seoTitle": "Offline AI Chat in Your Browser: SmolLM2 135M, Private",
+ "metaDescription": "Chat with a small open model, SmolLM2-135M-Instruct, running entirely in your browser tab. 76 MB once, no account, no server. A tiny model for demos.",
+ "intro": "A small open language model you can chat with that runs only in this browser tab: no account, no server, nothing logged.",
+ "why": "Cloud chatbots send every message to a server. SmolLM2-135M-Instruct (Hugging Face, Apache-2.0) is small enough to run on your own device, so you can see what a local model does without installing anything. It is a Llama-architecture model with 135 million parameters; this page runs it with a hand-written JavaScript engine (RMSNorm, rotary embeddings, grouped-query attention, KV cache) and 4-bit weights, and reproduces the reference PyTorch output token for token on the same weights.\n\nBe realistic: 135 million parameters is roughly a thousand times smaller than the large assistants, and 4-bit compression makes it weaker still (text perplexity rises about 40%). It repeats itself, gets facts and arithmetic wrong and is poor outside English. It runs at about three words per second. Use it for simple rewrites and demos, never for advice or facts.",
+ "howTo": [
+  "Open the page and type a short message; the first send downloads 76 MB once.",
+  "Adjust temperature (0 gives the same answer every time) and the maximum reply length.",
+  "Use Stop to cut a reply short and New chat to clear the conversation and the model's memory of it."
+ ],
+ "faq": [
+  {
+   "q": "Is my conversation private?",
+   "a": "Yes. The model runs in this tab. Nothing is sent to a server and closing the tab erases the chat."
+  },
+  {
+   "q": "Why are the answers poor?",
+   "a": "It is a very small model compressed to 4 bits. Treat output as a demonstration of local AI, not as a source of facts."
+  },
+  {
+   "q": "How much memory and time does it need?",
+   "a": "A few hundred MB of memory while loaded and a few words per second on a laptop. Phones may struggle."
+  }
+ ],
+ "related": [
+  "ai-question-answering",
+  "ai-fill-mask",
+  "prompt-linter",
+  "llm-token-estimator",
+  "llm-cost-calculator"
+ ],
+ "keywords": [
+  "offline ai chat",
+  "local llm in browser",
+  "private ai chatbot"
+ ]
+}

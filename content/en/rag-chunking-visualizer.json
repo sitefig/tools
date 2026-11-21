@@ -1,0 +1,45 @@
+{
+ "id": "rag-chunking-visualizer",
+ "seoTitle": "Free RAG Chunking Visualizer: See Your Chunks",
+ "metaDescription": "See how a document splits into retrieval chunks with fixed window, sentence or recursive splitting, with colour-coded chunks and overlaps. Free, in-browser.",
+ "intro": "Paste a document and see it cut into colour-coded chunks by fixed window, sentence or recursive splitting, with the overlapping text highlighted.",
+ "why": "Chunking is one of the most influential settings in a retrieval pipeline, and it is hard to judge from numbers alone. Chunks that split a sentence, a table or a list in the middle give poor search results, and too much overlap just wastes storage.\n\nThis visualiser shows the actual text of each chunk in its own colour block, with a header giving the range and size, and highlights the part repeated from the previous chunk. Strategies: a fixed window, sentence groups, or recursive splitting that tries paragraphs, then lines, then sentences, then words. With sentence and recursive modes the overlap works in whole segments, so it can be zero when segments are large. Sizes can be in characters, words or approximate tokens.",
+ "howTo": [
+  "Paste the document text.",
+  "Choose chunk size, overlap, the unit and a strategy.",
+  "Read the coloured chunks and the statistics, then adjust until the boundaries look right."
+ ],
+ "faq": [
+  {
+   "q": "Why is my overlap zero?",
+   "a": "In sentence and recursive modes overlap is made of whole segments. If each segment is larger than the overlap you asked for, nothing fits and there is no overlap. Use fixed window for exact overlap."
+  },
+  {
+   "q": "How does recursive splitting work?",
+   "a": "It splits on paragraph breaks first, then single line breaks, sentence ends and finally spaces, and only goes to the next level when a piece is still larger than the chunk size."
+  },
+  {
+   "q": "What does the token unit mean?",
+   "a": "A rough conversion of four characters per token. It is not a real tokenizer, so counts are approximate and may differ from your embedding model."
+  },
+  {
+   "q": "Can I export the chunks?",
+   "a": "The view is for inspection. Use the Text Chunk Splitter if you want plain numbered chunks that you can copy."
+  }
+ ],
+ "related": [
+  "text-chunk-splitter",
+  "llm-token-estimator",
+  "embedding-similarity",
+  "llm-context-window-shrinker",
+  "token-truncate",
+  "embedding-cost-calculator"
+ ],
+ "keywords": [
+  "rag chunking visualizer",
+  "chunk size overlap tool",
+  "text chunking strategies",
+  "free rag chunk preview",
+  "recursive text splitter demo"
+ ]
+}

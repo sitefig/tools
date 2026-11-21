@@ -1,0 +1,46 @@
+{
+ "id": "check-digit-tool",
+ "seoTitle": "Free Luhn, Verhoeff and Damm Check Digit Tool",
+ "metaDescription": "Validate numbers or generate the check digit with the Luhn, Verhoeff or Damm algorithm, one number per line. Free, runs in your browser.",
+ "intro": "Enter numbers one per line, choose Luhn, Verhoeff or Damm and validate or generate a check digit. Spaces and dashes in the input are ignored.",
+ "why": "Card numbers, IMEI numbers, national ID numbers and many account references end in a check digit that catches mistyped digits before a request is ever sent. Luhn is the best known and catches any single-digit error and most swaps of neighbouring digits. Verhoeff and Damm catch every single-digit error and every adjacent swap, at the price of lookup tables. Developers building forms need to test their validators, and support staff sometimes need to see whether a number is simply mistyped. This tool checks a list of numbers or computes the digit to append. It shows only whether the arithmetic works, not whether a number was ever issued, so passing it says nothing about whether a card is real. Nothing leaves your browser.",
+ "howTo": [
+  "Enter one number per line; spaces and dashes are ignored.",
+  "Choose Luhn, Verhoeff or Damm and select validate or generate.",
+  "Read valid or INVALID for each line, or the check digit to append."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between Luhn, Verhoeff and Damm?",
+   "a": "Luhn is simple and widespread, used for payment cards. Verhoeff and Damm use tables and catch all single-digit errors and all adjacent transpositions, which Luhn does not (it misses 09 and 90)."
+  },
+  {
+   "q": "Does a valid check digit mean the number is real?",
+   "a": "No. It only means the digits are consistent. A number can pass and still be unissued or belong to someone else. Never treat it as proof of validity."
+  },
+  {
+   "q": "How does generate mode work?",
+   "a": "Enter the number without its check digit. The tool shows the digit to add and the full number with it appended."
+  },
+  {
+   "q": "What input is accepted?",
+   "a": "Digits only, after removing spaces and dashes. Letters or other symbols raise an error naming the offending line."
+  }
+ ],
+ "related": [
+  "luhn-validator",
+  "iban-validator",
+  "mock-credit-card-generator",
+  "vat-number-format-validator",
+  "crc-calculator",
+  "barcode-generator"
+ ],
+ "keywords": [
+  "luhn algorithm check",
+  "check digit calculator",
+  "free luhn validator",
+  "verhoeff algorithm online",
+  "damm algorithm calculator",
+  "generate check digit"
+ ]
+}

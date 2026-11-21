@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Argon2id Parameter Tuner and Calculator | Free Tools</title>
+<meta name="description" content="Choose Argon2id memory, iterations and parallelism for a target hashing time and memory budget. A calculator, not a benchmark. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/argon2-parameter-tuner/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/argon2-parameter-tuner/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/argon2-parameter-tuner/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Argon2id Parameter Tuner and Calculator | Free Tools">
+<meta property="og:description" content="Choose Argon2id memory, iterations and parallelism for a target hashing time and memory budget. A calculator, not a benchmark. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/argon2-parameter-tuner/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Argon2id Parameter Tuner and Calculator | Free Tools">
+<meta name="twitter:description" content="Choose Argon2id memory, iterations and parallelism for a target hashing time and memory budget. A calculator, not a benchmark. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Argon2 Parameter Tuner","url":"https://tools.sitefig.net/en/argon2-parameter-tuner/","description":"Choose Argon2id memory, iterations and parallelism for a target hashing time and memory budget. A calculator, not a benchmark. Free.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the target time per hash in milliseconds and the memory budget in MiB.","Set the parallelism and the number of CPU cores available for each hash.","Enter the throughput you measured by timing one hash in your own stack, and the number of concurrent logins to support.","Read the suggested iterations and memory use, then test them on your real server."],"keywords":"argon2 parameters calculator, argon2id memory iterations, argon2 tuning, argon2id recommended settings, password hashing parameters, free argon2 tool","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"Argon2 Parameter Tuner","item":"https://tools.sitefig.net/en/argon2-parameter-tuner/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does this tool run Argon2?","acceptedAnswer":{"@type":"Answer","text":"No. It only calculates. The throughput value you enter stands in for your hardware, so measure one hash in your own language and server, then use that figure to calibrate the suggestions."}},{"@type":"Question","name":"Why Argon2id?","acceptedAnswer":{"@type":"Answer","text":"Argon2id mixes data-dependent and data-independent memory access, which resists both GPU cracking and side-channel attacks. It is the variant most guidance recommends for password hashing."}},{"@type":"Question","name":"What does the concurrent logins setting do?","acceptedAnswer":{"@type":"Answer","text":"It multiplies the memory per hash by the number of simultaneous sign-ins, so you can see whether a login spike would exceed your server's memory. Lower the memory cost or rate-limit logins if it would."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">Argon2 Parameter Tuner</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Argon2 Parameter Tuner</h1>
+<p class="lede">Enter a target time per hash, a memory budget and your core count, and get suggested Argon2id memory, iterations and parallelism. It is a calculator and does not run Argon2 itself.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="argon2-parameter-tuner" data-module="devz3" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Argon2 is only as strong as its settings. Too little memory and an attacker with GPUs can try passwords quickly; too much and a burst of logins exhausts your server. Guidance such as the OWASP recommendations gives starting points, but the right numbers depend on your hardware and how many people sign in at once.</p>
+<p>This tuner turns your constraints into parameters. You say how long a hash may take, how much memory one hash may use, how many cores you have and how many concurrent logins you must survive. You supply a measured throughput figure from your own stack, because this page cannot benchmark your server. Treat the result as a starting point and test it under load.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the target time per hash in milliseconds and the memory budget in MiB.</li><li>Set the parallelism and the number of CPU cores available for each hash.</li><li>Enter the throughput you measured by timing one hash in your own stack, and the number of concurrent logins to support.</li><li>Read the suggested iterations and memory use, then test them on your real server.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does this tool run Argon2?</summary><p>No. It only calculates. The throughput value you enter stands in for your hardware, so measure one hash in your own language and server, then use that figure to calibrate the suggestions.</p></details>
+<details><summary>Why Argon2id?</summary><p>Argon2id mixes data-dependent and data-independent memory access, which resists both GPU cracking and side-channel attacks. It is the variant most guidance recommends for password hashing.</p></details>
+<details><summary>What does the concurrent logins setting do?</summary><p>It multiplies the memory per hash by the number of simultaneous sign-ins, so you can see whether a login spike would exceed your server's memory. Lower the memory cost or rate-limit logins if it would.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/argon2-hash/"><span class="link-card__title">Argon2d / Argon2i / Argon2id</span><span class="link-card__desc">Hand-written Argon2 (RFC 9106, v1.3) with memory, iterations, parallelism, tag length, secret and associated data. Raw hex or PHC string. Memory capped at 64 MiB; the UI stays responsive.</span></a></li><li><a class="link-card" href="/en/argon2-verify/"><span class="link-card__title">Argon2 PHC Hash Verifier</span><span class="link-card__desc">Check a password against a $argon2id$v=19$m=..,t=..,p=..$salt$hash string (Argon2d/i/id, v1.3). Constant-time compare.</span></a></li><li><a class="link-card" href="/en/scrypt-kdf/"><span class="link-card__title">scrypt Key Derivation</span><span class="link-card__desc">Hand-written scrypt (RFC 7914) on PBKDF2-HMAC-SHA256 and Salsa20/8. Memory 128*N*r capped at 64 MiB; yields to the UI while working.</span></a></li><li><a class="link-card" href="/en/bcrypt-generator/"><span class="link-card__title">Bcrypt Hash Generator</span><span class="link-card__desc">Hash passwords with bcrypt ($2a/$2b, cost 4-14) entirely in your browser. One password per line. Only the first 72 bytes count (bcrypt limit). Cost 12 takes a second or so.</span></a></li><li><a class="link-card" href="/en/pbkdf2-key-derivation/"><span class="link-card__title">PBKDF2 Key Derivation</span><span class="link-card__desc">Derive a key from a password with PBKDF2 (WebCrypto) using SHA-1/256/384/512; output as hex and Base64.</span></a></li><li><a class="link-card" href="/en/password-strength/"><span class="link-card__title">Password Strength Checker</span><span class="link-card__desc">Entropy, patterns (common passwords, l33t, keyboard walks, sequences, repeats), and crack-time estimates. Runs only in this page.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

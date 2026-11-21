@@ -1,0 +1,43 @@
+{
+ "id": "natural-language-to-cron",
+ "seoTitle": "Free Natural Language to Cron Expression Converter",
+ "metaDescription": "Turn plain English schedules like 'every weekday at 8:30am' into a standard 5-field cron expression. Free, rule-based, no AI, in your browser.",
+ "intro": "Type schedules in plain English, one per line, and get a standard five-field cron expression plus a readable description so you can confirm it says what you meant.",
+ "why": "Few people remember whether the day of week is the fourth or fifth cron field, or how to say every two hours between nine and five on weekdays. You can look it up each time, or you can describe the schedule in words and check the result.\n\nThis converter reads common English phrases and writes the cron line, then explains it back so a mistake is easy to spot. It is rule-based, with no AI service involved, so the same input always gives the same output and nothing you type is sent anywhere. It understands intervals, weekdays, named days, times, months and first-of-month phrases. Anything it does not recognise is reported rather than guessed.",
+ "howTo": [
+  "Type a schedule such as every weekday at 8:30am, one schedule per line.",
+  "Read the cron expression and the plain-English description that follows each line.",
+  "Check any note about ignored words, then reword the line if part of it was not understood.",
+  "Copy the expression into your crontab or scheduler."
+ ],
+ "faq": [
+  {
+   "q": "Does it use AI?",
+   "a": "No. It matches a fixed set of English patterns with rules, so results are repeatable. The trade-off is that unusual phrasing may not be understood, and the tool lists the words it ignored."
+  },
+  {
+   "q": "Which cron dialect does it produce?",
+   "a": "Standard five-field cron: minute, hour, day of month, month and day of week. Seconds, years and special Quartz fields are not generated, and a last-day request is flagged because standard cron cannot express it."
+  },
+  {
+   "q": "Does it handle time zones?",
+   "a": "No. The expression has no time zone in it; the scheduler decides that. To convert between zones, use the cron time zone converter."
+  }
+ ],
+ "related": [
+  "cron-explainer",
+  "cron-generator",
+  "cron-timezone-converter",
+  "crontab-randomized-generator",
+  "systemd-timer-generator",
+  "cron-dialect-converter"
+ ],
+ "keywords": [
+  "natural language to cron",
+  "english to cron expression",
+  "cron generator from text",
+  "cron expression from plain english",
+  "every weekday at 8am cron",
+  "free cron expression generator"
+ ]
+}

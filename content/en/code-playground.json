@@ -1,0 +1,43 @@
+{
+ "id": "code-playground",
+ "seoTitle": "Free HTML CSS JavaScript Playground Online",
+ "metaDescription": "Write HTML, CSS and JavaScript and see the result live in a sandboxed preview with a console. Network access is blocked. Free, in your browser.",
+ "intro": "Write HTML, CSS and JavaScript and see the result live in a sandboxed frame with a console panel. The sandbox blocks network requests, and you can download the result as one HTML file.",
+ "why": "Sometimes you just want to test a snippet: a CSS layout idea, a bit of DOM code or an answer you are about to paste into a ticket. Creating a project, installing tools and starting a dev server is far more setup than the question deserves.\n\nThis playground gives you three editors and an immediate preview. The preview runs in an iframe with no same-origin access and a strict Content-Security-Policy that blocks network requests, external scripts and outside images, so a pasted snippet cannot call out or read anything from this site. Console output and uncaught errors are shown in a panel. When you are happy, download everything as a single HTML file.",
+ "howTo": [
+  "Type or paste your HTML, CSS and JavaScript into the editors.",
+  "Watch the live preview update as you edit.",
+  "Open the console panel to see console.log, warnings, errors and uncaught exceptions.",
+  "Download the result as a single .html file when you are done."
+ ],
+ "faq": [
+  {
+   "q": "Why can't my code load a library from a CDN?",
+   "a": "The preview is sandboxed with a policy that blocks external scripts and all network requests. This keeps pasted code from calling out. Paste the library source into your script, or test with plain JavaScript."
+  },
+  {
+   "q": "Can the snippet access my data on this site?",
+   "a": "No. The frame has no same-origin access, so it cannot read cookies, storage or the surrounding page. That makes it reasonably safe to run code you found elsewhere, though you should still read it first."
+  },
+  {
+   "q": "Is my code saved?",
+   "a": "The playground is not an account-based service, so do not rely on it for storage. Download the HTML file to keep your work, because reloading the page may clear what you typed."
+  }
+ ],
+ "related": [
+  "html-format",
+  "css-format",
+  "js-format",
+  "html-minify",
+  "regex-tester",
+  "markdown-preview"
+ ],
+ "keywords": [
+  "html css js playground",
+  "online code playground",
+  "html javascript sandbox",
+  "run javascript in browser",
+  "live html editor",
+  "free code playground"
+ ]
+}

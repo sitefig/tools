@@ -1,0 +1,45 @@
+{
+  "id": "code-to-image",
+  "seoTitle": "Code to Image: Code Screenshot Maker (PNG)",
+  "metaDescription": "Turn a code snippet into a shareable PNG with syntax colours, window controls, line numbers and a gradient background.",
+  "intro": "Make a good-looking picture of code for posts, slides and docs.",
+  "why": "Paste the code, choose a language (JavaScript, Python, JSON, HTML, CSS, SQL, Go, Rust, shell or plain), a dark or light theme, font size, padding, background and scale. Keywords, strings, numbers and comments are coloured with simple pattern rules, and the image is drawn on a canvas with a window title bar, optional line numbers and rounded corners, then saved as PNG.\n\nColours come from pattern matching, not a full parser, so unusual syntax may be tinted imperfectly. Images are drawn in your browser; the code is not uploaded.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Paste your code.",
+    "Pick the language and theme.",
+    "Adjust padding, background and scale.",
+    "Download the PNG."
+  ],
+  "faq": [
+    {
+      "q": "Which fonts are used?",
+      "a": "Your system's monospace font, so the image looks different on different computers."
+    },
+    {
+      "q": "Is code text kept for accessibility?",
+      "a": "No, the image is pixels; add alt text or include the code as text."
+    },
+    {
+      "q": "Can I use transparent backgrounds?",
+      "a": "Yes, choose \"transparent\"."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "svg-to-png",
+    "image-resizer",
+    "image-compressor",
+    "quote-image-maker",
+    "meme-generator",
+    "js-format"
+  ],
+  "keywords": [
+    "code to image",
+    "code screenshot",
+    "carbon alternative",
+    "snippet image"
+  ]
+}

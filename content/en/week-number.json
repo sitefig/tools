@@ -1,0 +1,46 @@
+{
+ "id": "week-number",
+ "seoTitle": "Free ISO Week Number Calculator for Any Date",
+ "metaDescription": "Find the ISO 8601 week number and week-year of any date, where weeks start on Monday and week 1 holds the first Thursday. Free, in your browser.",
+ "intro": "Pick a date. The tool shows its ISO 8601 week number, the week-based year and the weekday.",
+ "why": "Planning calendars, payroll schedules, shipping notices and sprint boards often refer to week 37 rather than a date. The trouble is that week numbering is not universal: in some countries weeks start on Sunday and week 1 is the one containing 1 January. The ISO 8601 system, common across Europe and in business software, starts on Monday and makes week 1 the week with the first Thursday. As a result, the last days of December can belong to week 1 of the next year, and early January can sit in week 52 or 53 of the previous one. This calculator applies the ISO rule and shows the week-year, so edge cases are not a surprise. The date stays in your browser.",
+ "howTo": [
+  "Pick a date.",
+  "Read the ISO week number and the week-based year.",
+  "Check the weekday shown beside the date if you need to place it in the week."
+ ],
+ "faq": [
+  {
+   "q": "What is the ISO 8601 week rule?",
+   "a": "Weeks run Monday to Sunday, and week 1 is the week that contains the year's first Thursday, which is the same as the week containing 4 January."
+  },
+  {
+   "q": "Why can 30 December be in week 1?",
+   "a": "Because the week belongs to the year that holds its Thursday. If Thursday falls on 2 January, the Monday before it, in late December, is part of week 1 of the new year."
+  },
+  {
+   "q": "Is this the same as the week number in Excel or the US?",
+   "a": "Not always. US calendars and some Excel settings start weeks on Sunday and count the week with 1 January as week 1, so numbers can differ by one."
+  },
+  {
+   "q": "Can a year have 53 weeks?",
+   "a": "Yes. Some years have 53 ISO weeks, typically when 1 January falls on a Thursday, or on a Wednesday in a leap year."
+  }
+ ],
+ "related": [
+  "day-of-week",
+  "date-difference",
+  "add-subtract-dates",
+  "business-days",
+  "countdown-to-date",
+  "timestamp-converter"
+ ],
+ "keywords": [
+  "week number calculator",
+  "iso week number",
+  "free week number calculator",
+  "what week is it",
+  "iso 8601 week date",
+  "week number of the year"
+ ]
+}

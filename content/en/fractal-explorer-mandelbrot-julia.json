@@ -1,0 +1,45 @@
+{
+ "id": "fractal-explorer-mandelbrot-julia",
+ "seoTitle": "Fractal Explorer: Mandelbrot, Julia and Burning Ship Sets",
+ "metaDescription": "Render the Mandelbrot, Julia or Burning Ship set at any center, zoom, iteration count and palette, and download it as a PNG.",
+ "intro": "Renders the Mandelbrot, Julia or Burning Ship fractal at a center point and zoom level you choose, with a smooth color palette.",
+ "why": "Zoom far enough into the Mandelbrot set and new shapes keep appearing. This page renders it for any center and zoom, with up to 5000 iterations, and the Julia and Burning Ship variants too.\n\nColors use a smooth escape-time value so there are no hard bands. Instead of click-and-drag zoom, you type the center and the zoom factor, which also works with a keyboard; try centers like -0.7436 + 0.1318i at a zoom of 100 or more. Rendering happens in your browser. Past about a zoom of 1e13, double precision runs out of digits and the image turns blocky.",
+ "howTo": [
+  "Choose the set and enter the center and zoom.",
+  "Raise the iteration count for deep zooms.",
+  "Pick a palette and image width.",
+  "Save the image from the result."
+ ],
+ "faq": [
+  {
+   "q": "Why does it get blocky when I zoom in?",
+   "a": "Double-precision numbers have about 15 digits, which limits the zoom."
+  },
+  {
+   "q": "What are the Julia constants?",
+   "a": "The c value that defines the Julia set. Try -0.8 + 0.156i."
+  },
+  {
+   "q": "Is it slow?",
+   "a": "Large images with many iterations take a few seconds."
+  },
+  {
+   "q": "Can I click to zoom?",
+   "a": "No. Enter values instead."
+  }
+ ],
+ "related": [
+  "l-system-generator",
+  "cellular-automaton-generator",
+  "surface-plotter-3d",
+  "function-grapher-roots",
+  "game-of-life-simulator",
+  "wave-interference-superposition"
+ ],
+ "keywords": [
+  "mandelbrot set explorer",
+  "julia set generator",
+  "fractal zoom online",
+  "burning ship fractal"
+ ]
+}

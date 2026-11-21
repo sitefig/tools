@@ -1,0 +1,46 @@
+{
+  "id": "neumorphism-generator",
+  "seoTitle": "Free Neumorphism CSS Generator (Soft UI Shadows)",
+  "metaDescription": "Create soft-UI neumorphic CSS with paired light and dark shadows in flat, concave, convex or pressed shapes. Live preview. Free, in your browser.",
+  "intro": "Builds the CSS for a neumorphic (soft UI) element: matching light and dark shadows on a base colour, in flat, concave, convex or pressed variations, with a live preview.",
+  "why": "Neumorphism makes an element look pushed out of, or pressed into, the surface behind it. The effect works by pairing a light shadow on one side with a dark shadow on the other, both derived from the background colour. Choosing those two tints by eye, and keeping them consistent between components, is fiddly.\n\nEnter a base colour, a size, a distance and a blur, and the tool calculates a lighter and a darker tone from it, then assembles the box-shadow. Pick flat for a plain raised look, concave or convex to add a gradient, or pressed for an inset style. The preview updates as you tweak. Soft UI has weak contrast, so avoid it for controls that must be easy to see. The tool runs in your browser.",
+  "howTo": [
+    "Choose a base colour that matches the page background.",
+    "Set the size, distance, blur and radius.",
+    "Adjust the intensity to make the light and dark shadows stronger or weaker.",
+    "Pick a shape and copy the CSS."
+  ],
+  "faq": [
+    {
+      "q": "Why must the base colour match the background?",
+      "a": "The effect depends on the element and its surroundings being the same colour, so the shadows look like light falling on one continuous surface. If they differ, the object looks like an ordinary card."
+    },
+    {
+      "q": "What does intensity control?",
+      "a": "It sets how far the light and dark shadow colours are shifted from the base colour. Higher values give a stronger, more dramatic relief, lower values a subtler one."
+    },
+    {
+      "q": "What is the difference between the shapes?",
+      "a": "Flat uses shadows only. Concave and convex add a diagonal gradient between the light and dark tones. Pressed turns the shadows inset, so the element looks pushed in."
+    },
+    {
+      "q": "Is neumorphism accessible?",
+      "a": "It is weak on contrast, because edges are defined by faint shadows. Do not rely on it alone to show buttons, states or focus. Add borders, icons or text labels."
+    }
+  ],
+  "related": [
+    "box-shadow-generator",
+    "glassmorphism-generator",
+    "css-claymorphism-generator",
+    "css-3d-box-shadow-generator",
+    "color-converter",
+    "border-radius-generator"
+  ],
+  "keywords": [
+    "neumorphism generator",
+    "soft ui css generator",
+    "neumorphic button css",
+    "css neumorphism shadows",
+    "free neumorphism tool"
+  ]
+}

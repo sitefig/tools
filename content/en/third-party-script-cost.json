@@ -1,0 +1,44 @@
+{
+ "id": "third-party-script-cost",
+ "seoTitle": "Third-Party Script Cost by Vendor: HAR and Lighthouse Analysis",
+ "metaDescription": "Group HAR requests by known vendors such as analytics, ads, chat and tag managers, with bytes and request time per vendor. Also reads the Lighthouse third-party summary.",
+ "intro": "Maps the third-party requests in a HAR file to known vendors and categories, or reads the Lighthouse third-party summary, to show what each vendor costs.",
+ "why": "Tag managers, chat widgets and ad scripts add up, and nobody owns the total. A per-vendor table makes the conversation easier.\n\nFor a HAR file the tool uses a hand-made list of well-known domains and reports requests, bytes and request time per vendor and category. The main-thread cost is not in a HAR, so if you paste a Lighthouse report instead, the tool shows the transfer size, main thread time and blocking time that Lighthouse measured. Unknown domains show as unclassified.",
+ "howTo": [
+  "Export a HAR file or a Lighthouse JSON report.",
+  "Paste it into the box.",
+  "Read the vendor table sorted by bytes.",
+  "Check the category totals to find what to remove or delay."
+ ],
+ "faq": [
+  {
+   "q": "How complete is the vendor list?",
+   "a": "It has about 90 entries for common vendors. Anything else is listed as unclassified with its site name."
+  },
+  {
+   "q": "Does it measure CPU cost?",
+   "a": "Only through the Lighthouse report. A HAR has network data only."
+  },
+  {
+   "q": "Why is a CDN listed as a vendor?",
+   "a": "Public CDNs and font hosts are third-party requests too, so they are shown with their own category."
+  },
+  {
+   "q": "Is the data uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "har-performance-analyzer",
+  "har-analyzer",
+  "lighthouse-report-viewer",
+  "render-blocking-resource-finder",
+  "total-blocking-time-estimator"
+ ],
+ "keywords": [
+  "third party script cost",
+  "third party vendor analysis",
+  "tag manager cost",
+  "har vendors"
+ ]
+}

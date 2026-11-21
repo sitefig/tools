@@ -1,0 +1,45 @@
+{
+ "id": "hreflang-x-default-advisor",
+ "seoTitle": "Hreflang x-default Advisor and Tag Generator",
+ "metaDescription": "Choose the right x-default for a language selector, a global page or a redirecting home page, and get the complete tag set.",
+ "intro": "Explains which page should be your x-default for your setup and generates the tag set with it added.",
+ "why": "x-default names the page for visitors whose language matches none of your versions. Google says it was designed for language selector pages, and also works as a general fallback. The right target depends on your setup, and the tool explains each case: a selector page, a global page, a home page that redirects by browser language, or no fallback at all.\n\nThe generated set includes x-default and a reminder that every version, including the x-default page, must carry the complete set.",
+ "howTo": [
+  "Enter your versions as code | URL lines.",
+  "Choose your setup and optionally enter the x-default URL.",
+  "Read the advice.",
+  "Copy the tags into every version."
+ ],
+ "faq": [
+  {
+   "q": "Is x-default required?",
+   "a": "No, Google calls it recommended."
+  },
+  {
+   "q": "Can x-default be the same URL as a language?",
+   "a": "Yes, a version can carry both codes."
+  },
+  {
+   "q": "What about auto-redirecting home pages?",
+   "a": "Keep plain links to every version; Google does not vary its crawler by location."
+  },
+  {
+   "q": "Does it need a language code?",
+   "a": "No, the x-default page is for unmatched users, so its language is irrelevant."
+  }
+ ],
+ "related": [
+  "hreflang-generator",
+  "hreflang-format-converter",
+  "language-suggestion-banner-generator",
+  "hreflang-validator",
+  "hreflang-code-checker",
+  "language-switcher-markup-generator"
+ ],
+ "keywords": [
+  "hreflang x-default",
+  "x-default language selector",
+  "x-default advisor",
+  "hreflang fallback page"
+ ]
+}

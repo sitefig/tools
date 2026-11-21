@@ -1,0 +1,46 @@
+{
+  "id": "svg-pattern-generator",
+  "seoTitle": "Free SVG Pattern Generator for Tileable Backgrounds",
+  "metaDescription": "Create tileable SVG background patterns such as dots, grid, lines, waves, zigzag and checker, with SVG and CSS output. Free, in your browser.",
+  "intro": "Generates a repeating SVG pattern from ten styles: dots, grid, lines, vertical lines, diagonal, zigzag, waves, checker, plus and triangles. You set tile size, stroke, colours and get SVG and CSS.",
+  "why": "Subtle patterns add texture to hero sections, cards and slides without the weight of a bitmap. A tiny SVG tile repeated by CSS is sharp at any resolution and costs a few hundred bytes. Writing the data URI by hand, with the right escaping, is where people trip up.\n\nPick a pattern, set the tile size and line width, choose a foreground and background colour, and the tool gives you the SVG markup plus a CSS block with the encoded data URI and background-size. A full-size preview shows how it tiles. The characters that break a URL, such as the percent sign, angle brackets and the hash, are escaped for you. It all runs in your browser and nothing is uploaded.",
+  "howTo": [
+    "Choose a pattern type.",
+    "Set the tile size and stroke width.",
+    "Pick the pattern colour and background colour.",
+    "Copy the SVG or the CSS background declaration."
+  ],
+  "faq": [
+    {
+      "q": "Will the pattern tile without seams?",
+      "a": "The patterns are drawn to repeat across the tile edge. The diagonal pattern adds corner marks for that purpose. Odd stroke widths on very small tiles can still show anti-aliasing at some zoom levels."
+    },
+    {
+      "q": "What is in the CSS output?",
+      "a": "A background colour, a background-image with the SVG as a URL-encoded data URI, and background-size set to the tile size. Paste it onto any element."
+    },
+    {
+      "q": "What range can the tile size have?",
+      "a": "From 4 to 400 pixels square. Small tiles make fine, subtle textures, while larger tiles give bolder shapes. Line width and colours are independent of the tile size, so you can tune each separately."
+    },
+    {
+      "q": "Can I use it without CSS?",
+      "a": "Yes. The SVG markup is also given as a standalone tile, so you can save it as a file, inline it in HTML or reuse it inside another graphic. Only the CSS block uses the data URI form."
+    }
+  ],
+  "related": [
+    "css-pattern-generator",
+    "svg-wavy-divider-generator",
+    "gradient-generator",
+    "svg-optimizer",
+    "svg-to-css",
+    "mesh-gradient-generator"
+  ],
+  "keywords": [
+    "svg pattern generator",
+    "tileable background pattern",
+    "css svg background pattern",
+    "dot grid pattern generator",
+    "free pattern maker"
+  ]
+}

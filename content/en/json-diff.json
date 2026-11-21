@@ -1,0 +1,47 @@
+{
+ "id": "json-diff",
+ "seoTitle": "Free JSON Diff - Compare Two JSON Files Online",
+ "metaDescription": "Free online JSON diff. Compare two JSON documents and list every added, removed or changed value by path. Runs in your browser; nothing is uploaded.",
+ "intro": "Compare an original and a changed JSON document and get a list of added, removed and changed values, each with its path. Key order does not matter.",
+ "why": "A text diff of two JSON files is often useless: reformatting or a different key order lights up every line. What you want to know is which values really changed. This happens when you compare API responses between environments, review a changed config, or check what a migration did to a document.\n\nThe tool parses both inputs and walks them together, reporting each difference with its path, such as $.address.city. Added values are marked +, removed ones -, changed ones ~. Objects are compared by key, so reordering is ignored. Arrays are compared item by item by position. Both documents stay in your browser and are not uploaded.",
+ "howTo": [
+  "Paste the original JSON in the first box.",
+  "Paste the changed JSON in the second box.",
+  "Read the list of differences, each with a path and the old and new value.",
+  "Fix any syntax error shown, then compare again."
+ ],
+ "faq": [
+  {
+   "q": "How are arrays compared?",
+   "a": "By position. If an item is inserted at the start, later items appear as changed. That is accurate, but sort or normalise arrays first if their order should not matter."
+  },
+  {
+   "q": "Does key order matter?",
+   "a": "No. Objects are compared key by key, so the same data in a different order reports no difference."
+  },
+  {
+   "q": "What do the symbols mean?",
+   "a": "A plus sign marks a value added in the changed document, a minus sign marks one removed, and a tilde marks a value that exists in both but differs, shown as old to new."
+  },
+  {
+   "q": "What if both documents are equal?",
+   "a": "The tool says No differences: the documents are equivalent. That includes the case where they differ only in whitespace or key order."
+  }
+ ],
+ "related": [
+  "json-format",
+  "json-sort-keys",
+  "text-diff",
+  "json-patch-generator",
+  "json-validate",
+  "json-flatten-unflatten"
+ ],
+ "keywords": [
+  "json diff online",
+  "compare json",
+  "json compare tool",
+  "free json diff",
+  "diff two json files",
+  "json difference checker"
+ ]
+}

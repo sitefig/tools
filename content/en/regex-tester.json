@@ -1,0 +1,47 @@
+{
+ "id": "regex-tester",
+ "seoTitle": "Free Regex Tester for JavaScript with Groups",
+ "metaDescription": "Test JavaScript regular expressions with match positions, capture groups, named groups and a live replace preview. Free and runs in your browser.",
+ "intro": "Test a JavaScript regular expression against your text and see every match with its index, numbered and named capture groups, and a preview of a replacement.",
+ "why": "A regex that looks right often matches too much, too little or something unexpected, and the quickest way to fix it is to test against real sample text. Writing a throwaway script, or running it live on production data, is a poor way to do it.\n\nThis tester runs your pattern with the JavaScript engine in your browser, so the behaviour matches what your front-end or Node code will do. It lists up to a thousand matches with start and end positions, shows each capture and named group, and previews a replacement that uses numbered or named groups. Your text stays in the page and is never uploaded.",
+ "howTo": [
+  "Enter the pattern, without surrounding slashes, in the Pattern option.",
+  "Set the flags, such as g for all matches, i for ignore case, m or s.",
+  "Paste your sample text into the Test text box.",
+  "Optionally add a replacement such as $3/$2/$1, then read the match list and the replace result."
+ ],
+ "faq": [
+  {
+   "q": "Which regex flavour does it use?",
+   "a": "JavaScript (ECMAScript), including named groups, lookbehind and Unicode property escapes. Patterns written for PCRE, Python or Java may differ, for example in how they handle possessive quantifiers or inline flags."
+  },
+  {
+   "q": "Why do I only get one match?",
+   "a": "Without the g flag a regex returns only the first match. Add g to the flags field to find all of them. The result line tells you when only the first match was reported."
+  },
+  {
+   "q": "Can a pattern freeze the page?",
+   "a": "Yes. The test runs synchronously, and a pattern with catastrophic backtracking, such as nested quantifiers on long text, can hang the tab. Simplify the pattern or shorten the text, and reload if the page stops responding."
+  },
+  {
+   "q": "How do I use groups in the replacement?",
+   "a": "Write $1, $2 for numbered groups, a dollar sign plus the group name in angle brackets for named groups, $& for the whole match and $$ for a literal dollar sign. The preview shows what String.replace returns."
+  }
+ ],
+ "related": [
+  "regex-cheatsheet",
+  "regex-escape",
+  "regex-benchmark-simulator",
+  "find-replace",
+  "extract-emails-urls-numbers",
+  "sort-lines"
+ ],
+ "keywords": [
+  "regex tester",
+  "javascript regex tester online",
+  "test regular expression",
+  "free regex tool",
+  "regex capture groups",
+  "regex replace preview"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "iso-8601-date-parser",
+ "seoTitle": "ISO 8601 Date, Time and Interval Parser | Free",
+ "metaDescription": "Parse ISO 8601 dates, week dates, ordinal dates, durations and intervals into parts with validity checks and Unix time. Runs locally.",
+ "intro": "Breaks ISO 8601 strings into year, month, day, weekday, ISO week, time, offset and Unix time, and explains why an invalid one fails.",
+ "why": "ISO 8601 allows many forms: 2026-03-01, 20260301, 2026-060, 2026-W09-7, PT1H30M, 2026-03-01/P1W. Reading them by eye is error prone, and an impossible date such as 2026-02-30 is easy to miss.\n\nEnter one value per line. The page identifies the form, checks ranges including leap years and ISO week counts, and shows the weekday and ISO week. A value without an offset has no fixed instant, so the UTC line says it is an assumption. It was compared with Python date functions, not with the paywalled standard text.",
+ "howTo": [
+  "Paste one ISO 8601 value per line.",
+  "Read the parts and any Review message.",
+  "For intervals, check the computed end.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Which forms are supported?",
+   "a": "Calendar, ordinal and week dates, times with offsets, durations, intervals and repeating intervals."
+  },
+  {
+   "q": "What does \"If read as UTC\" mean?",
+   "a": "The value has no offset, so any instant is an assumption. The page shows UTC as one possible reading."
+  },
+  {
+   "q": "How long is a month in a duration?",
+   "a": "It varies. Totals with years or months are approximate and say so."
+  },
+  {
+   "q": "Is anything sent out?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "timestamp-converter",
+  "iso-8601-duration-builder",
+  "timezone-converter",
+  "time-duration-calculator",
+  "epoch-batch",
+  "uuid-v7-timestamp-extractor"
+ ],
+ "keywords": [
+  "iso 8601 parser",
+  "iso week date converter",
+  "parse iso duration",
+  "ordinal date converter"
+ ]
+}

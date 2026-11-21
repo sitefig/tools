@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Helm Chart Scaffolder: Deployment and Service | Free Tools</title>
+<meta name="description" content="Generate a minimal Helm chart with Chart.yaml, values.yaml, helpers, Deployment, Service and optional Ingress. Free and runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/helm-chart-scaffolder/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/helm-chart-scaffolder/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/helm-chart-scaffolder/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Helm Chart Scaffolder: Deployment and Service | Free Tools">
+<meta property="og:description" content="Generate a minimal Helm chart with Chart.yaml, values.yaml, helpers, Deployment, Service and optional Ingress. Free and runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/helm-chart-scaffolder/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Helm Chart Scaffolder: Deployment and Service | Free Tools">
+<meta name="twitter:description" content="Generate a minimal Helm chart with Chart.yaml, values.yaml, helpers, Deployment, Service and optional Ingress. Free and runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Helm Chart Scaffolder","url":"https://tools.sitefig.net/en/helm-chart-scaffolder/","description":"Generate a minimal Helm chart with Chart.yaml, values.yaml, helpers, Deployment, Service and optional Ingress. Free and runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the chart name (a lowercase DNS label), image repository, tag and container port.","Set replicas and tick the Ingress template if you want one, with a host name.","Copy each file block into your chart folder, then run helm lint and helm template."],"keywords":"helm chart generator, helm chart scaffold, free helm chart template, create helm chart online, minimal helm chart","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Infra","item":"https://tools.sitefig.net/en/#infra"},{"@type":"ListItem","position":3,"name":"Helm Chart Scaffolder","item":"https://tools.sitefig.net/en/helm-chart-scaffolder/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What if I leave the image tag blank?","acceptedAnswer":{"@type":"Answer","text":"The Deployment template falls back to the chart appVersion, so the tag follows the version you set in Chart.yaml. That is a common Helm convention."}},{"@type":"Question","name":"Does it create a ZIP or folders?","acceptedAnswer":{"@type":"Answer","text":"No. It prints every file under a heading with its path. You create the files yourself and paste each section into them."}},{"@type":"Question","name":"Why is the chart name restricted?","acceptedAnswer":{"@type":"Answer","text":"It must be a lowercase DNS label, using letters, digits and dashes, because the name flows into resource names that Kubernetes validates."}},{"@type":"Question","name":"Is it production ready?","acceptedAnswer":{"@type":"Answer","text":"It is a minimal starting point. There are no probes, security context or autoscaling, so add them before running it in a shared cluster."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#infra">Infra</a></li><li><span aria-current="page">Helm Chart Scaffolder</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Helm Chart Scaffolder</h1>
+<p class="lede">Enter a chart name, image and port and get the files for a minimal Helm chart: Chart.yaml, values.yaml, helpers, a Deployment, a Service and an optional Ingress.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="helm-chart-scaffolder" data-module="devgen2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>helm create produces a large chart full of options you may not need, and you must have Helm installed to run it. For a small internal service, a trimmed-down chart with one Deployment, one Service and a few values is easier to read and maintain.</p>
+<p>This scaffolder writes that smaller layout, with named templates in _helpers.tpl for labels and selectors, resource requests and limits in values, and an Ingress guarded by ingress.enabled. Copy each file into the right folder, then run helm lint. The text is created locally in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the chart name (a lowercase DNS label), image repository, tag and container port.</li><li>Set replicas and tick the Ingress template if you want one, with a host name.</li><li>Copy each file block into your chart folder, then run helm lint and helm template.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What if I leave the image tag blank?</summary><p>The Deployment template falls back to the chart appVersion, so the tag follows the version you set in Chart.yaml. That is a common Helm convention.</p></details>
+<details><summary>Does it create a ZIP or folders?</summary><p>No. It prints every file under a heading with its path. You create the files yourself and paste each section into them.</p></details>
+<details><summary>Why is the chart name restricted?</summary><p>It must be a lowercase DNS label, using letters, digits and dashes, because the name flows into resource names that Kubernetes validates.</p></details>
+<details><summary>Is it production ready?</summary><p>It is a minimal starting point. There are no probes, security context or autoscaling, so add them before running it in a shared cluster.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/helm-values-evaluator/"><span class="link-card__title">Helm Values &amp; Template Evaluator</span><span class="link-card__desc">Render a Helm-style Go template against a values.yaml without a cluster: .Values / .Release / .Chart lookups, --set style overrides, pipelines (default, quote, upper, indent, nindent, toYaml, b64enc, printf...), if / else / range / with, variables and whitespace trimming. Not supported: named templates (define / include / tpl), lookup, sha256sum and Sprig functions beyond the common ones.</span></a></li><li><a class="link-card" href="/en/kubernetes-deployment-generator/"><span class="link-card__title">Kubernetes Deployment Generator</span><span class="link-card__desc">Deployment with probes, resources, hardened securityContext, plus optional Service, HPA and Ingress in one multi-document YAML.</span></a></li><li><a class="link-card" href="/en/kubernetes-ingress-generator/"><span class="link-card__title">Kubernetes Ingress Generator</span><span class="link-card__desc">Ingress (networking.k8s.io/v1) from host/path/service lines, with TLS, ingress class and common nginx / cert-manager annotations.</span></a></li><li><a class="link-card" href="/en/k8s-manifest-validator/"><span class="link-card__title">Kubernetes Manifest Validator</span><span class="link-card__desc">Structural lint of YAML manifests: apiVersion/kind pairs, names, selectors vs labels, container images, resources, probes, privileged mode.</span></a></li><li><a class="link-card" href="/en/docker-compose-to-k8s/"><span class="link-card__title">Docker Compose to Kubernetes Manifests</span><span class="link-card__desc">Convert a docker-compose.yml into Kubernetes YAML: one Deployment per service (image, command/entrypoint, environment, resources from deploy.resources, healthcheck -&gt; livenessProbe, replicas), a Service for published/exposed ports, PersistentVolumeClaims for named volumes and optionally a Secret for password/token-like variables. Constructs without an equivalent (depends_on, build, env_file, bind mounts) are listed as NOTE comments.</span></a></li><li><a class="link-card" href="/en/k8s-resource-calculator/"><span class="link-card__title">Kubernetes Resource &amp; Node Sizing Calculator</span><span class="link-card__desc">Calculate total CPU / memory requests and limits for a Deployment (replicas, optional HPA max), the QoS class (Guaranteed / Burstable / BestEffort), the overcommit ratio, and how many worker nodes you need given node size, system reserve, DaemonSet overhead and the max-pods limit. Uses Kubernetes quantity syntax (500m, 0.5, 256Mi, 1Gi).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

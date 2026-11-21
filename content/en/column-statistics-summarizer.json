@@ -1,0 +1,44 @@
+{
+ "id": "column-statistics-summarizer",
+ "seoTitle": "Column Statistics Summarizer: Mean, Median, Min, Max, Stdev",
+ "metaDescription": "Summarise every numeric column of a CSV in one table with count, missing, mean, median, min, max and standard deviation. Free.",
+ "intro": "Computes basic statistics for each column of a table in one pass.",
+ "why": "A quick describe of a new file: which columns are numeric, how many values are missing, what the typical value and spread are. Text columns show the number of distinct values.\n\nThe standard deviation is the sample standard deviation (n-1). A column counts as numeric only if every filled cell is a number, so one stray text cell makes the column text; clean it first. Compare with the column profiler for types and the statistics calculator for one list.",
+ "howTo": [
+  "Paste the CSV with a header.",
+  "Set the number of decimals.",
+  "Read the summary table.",
+  "Copy or download it as CSV."
+ ],
+ "faq": [
+  {
+   "q": "Why is my column called text?",
+   "a": "At least one filled cell is not a number."
+  },
+  {
+   "q": "Which median?",
+   "a": "Linear interpolation between the two middle values."
+  },
+  {
+   "q": "Are empty cells counted?",
+   "a": "They appear in the missing column."
+  },
+  {
+   "q": "Units or currency symbols?",
+   "a": "Not parsed; strip them first."
+  }
+ ],
+ "related": [
+  "csv-column-profiler",
+  "statistics-calculator",
+  "histogram-builder",
+  "box-plot-maker",
+  "outlier-detector",
+  "pivot-table-builder"
+ ],
+ "keywords": [
+  "csv column statistics",
+  "describe dataset online",
+  "mean median min max per column"
+ ]
+}

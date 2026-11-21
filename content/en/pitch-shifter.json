@@ -1,0 +1,45 @@
+{
+ "id": "pitch-shifter",
+ "seoTitle": "Pitch Shifter: Change Key in Semitones, Same Tempo",
+ "metaDescription": "Raise or lower the pitch of an audio file by semitones and cents without changing its length. Free online pitch shifter that runs in your browser.",
+ "intro": "Shifts the pitch of an audio file up or down by semitones and cents while keeping the length the same, then saves a WAV file.",
+ "why": "Singers move a backing track into their range, players transpose a song for a capo or a different instrument, and producers fix a sample that is a little flat. The pitch has to change while the tempo stays put.\n\nThe tool time-stretches the clip by the opposite ratio with WSOLA, then resamples it so it plays back at the original length. This is a classic and simple method. It sounds good for shifts of a few semitones. Voices shifted by much more than four semitones start to sound unnatural because the formants move too.",
+ "howTo": [
+  "Choose an audio file.",
+  "Enter the semitones (positive is higher) and optional cents.",
+  "Press Run.",
+  "Listen to the result and download the WAV."
+ ],
+ "faq": [
+  {
+   "q": "How many semitones is a full tone?",
+   "a": "Two. A shift of 12 semitones is one octave."
+  },
+  {
+   "q": "Why does the length stay the same?",
+   "a": "The tool stretches the audio by the inverse ratio first, then resamples, so the two changes cancel in length."
+  },
+  {
+   "q": "Can it fix a slightly out-of-tune recording?",
+   "a": "For a whole-file offset, yes: use cents, for example +20. It cannot correct individual notes."
+  },
+  {
+   "q": "Does it keep stereo?",
+   "a": "Yes. Both channels use the same alignment so the stereo image stays stable."
+  }
+ ],
+ "related": [
+  "audio-speed-changer",
+  "musical-key-finder",
+  "instrument-tuner",
+  "tone-generator",
+  "audio-equalizer",
+  "audio-trimmer"
+ ],
+ "keywords": [
+  "pitch shifter online",
+  "change key of song",
+  "transpose audio semitones",
+  "raise pitch of mp3"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "workout-interval-timer",
+ "seoTitle": "Workout Interval Timer (HIIT and Tabata with Beeps)",
+ "metaDescription": "Set work and rest seconds, rounds and sets for HIIT or Tabata. The timer beeps at each change and the last three seconds, and shows the round on screen.",
+ "intro": "HIIT and Tabata intervals with audio beeps.",
+ "why": "Set the get-ready time, work and rest seconds, rounds per set, number of sets and rest between sets. Press Start for a countdown that beeps when a phase changes and for the last three seconds. A Tabata preset sets 20 seconds of work, 10 of rest and 8 rounds.\n\nSound needs a click on Start first, and you can mute it. The screen shows the round and set. Colours change slowly and nothing flashes. The status line updates once per phase so a screen reader is not flooded.",
+ "howTo": [
+  "Set work, rest, rounds and sets, or press the Tabata preset.",
+  "Press Start.",
+  "Follow the beeps and the colour.",
+  "Pause or Reset at any time."
+ ],
+ "faq": [
+  {
+   "q": "Will the beeps work with the screen off?",
+   "a": "Browsers may pause timers on a locked or hidden tab. Keep the page in view during a workout."
+  },
+  {
+   "q": "Can I turn the sound off?",
+   "a": "Yes. Tick Mute beeps. The screen still shows each phase."
+  },
+  {
+   "q": "Does it save my settings?",
+   "a": "No. Nothing is stored."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "pomodoro-timer",
+  "fasting-timer",
+  "heart-rate-zones",
+  "one-rep-max-calculator",
+  "calories-burned-calculator",
+  "stopwatch"
+ ],
+ "keywords": [
+  "interval timer",
+  "tabata timer",
+  "HIIT timer",
+  "workout timer"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "ai-preferences-header-generator",
+ "seoTitle": "AI Preferences (aipref) Content-Usage Header Generator",
+ "metaDescription": "Draft Content-Usage statements with the IETF AI preferences vocabulary (train-ai, ai-use, search) for HTTP headers and robots.txt.",
+ "intro": "Builds Content-Usage statements for an HTTP header and robots.txt from the IETF aipref drafts.",
+ "why": "The IETF AI Preferences working group is defining a shared vocabulary for how content may be used by AI and a way to attach it to files: a Content-Usage header and a Content-Usage line in robots.txt.\n\nThese are drafts and may change. The tool uses draft-ietf-aipref-vocab-08 and draft-ietf-aipref-attach-05 as read on 2026-10-23. Choose y, n or unspecified per category, and optionally path-specific lines. Whether any crawler reads these today is not verified.",
+ "howTo": [
+  "Choose a value for each category.",
+  "Optionally add path-specific lines.",
+  "Copy the header or robots.txt lines.",
+  "Re-check the drafts before relying on them."
+ ],
+ "faq": [
+  {
+   "q": "Is this a standard?",
+   "a": "No. The drafts say they do not reflect working group consensus."
+  },
+  {
+   "q": "What do the categories mean?",
+   "a": "train-ai: training models. ai-use: input to a model other than training. search: finding assets and linking to them."
+  },
+  {
+   "q": "What if I leave one unspecified?",
+   "a": "It stays unknown, which is the default."
+  },
+  {
+   "q": "Do crawlers honour it?",
+   "a": "Not verified."
+  }
+ ],
+ "related": [
+  "content-signals-policy-builder",
+  "tdm-reservation-header-builder",
+  "ai-bot-robots-builder",
+  "x-robots-tag-header-builder",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "aipref content-usage",
+  "ietf ai preferences",
+  "train-ai header",
+  "content-usage header generator"
+ ]
+}

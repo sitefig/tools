@@ -1,0 +1,47 @@
+{
+ "id": "utf8-bytes-viewer",
+ "seoTitle": "Free UTF-8 and UTF-16 Bytes Viewer Online",
+ "metaDescription": "See each character with its Unicode code point and its UTF-8 and UTF-16 byte sequence. Free, shows totals, and runs in your browser without uploads.",
+ "intro": "Paste text and see every character with its code point and the exact UTF-8 and UTF-16 bytes behind it. A total of code points and UTF-8 bytes is shown at the end.",
+ "why": "Encoding bugs are hard to see. A name that looks fine on screen is rejected by a database column, a string is longer in bytes than in characters, or an emoji breaks a length check. Guessing does not help; you need to look at the bytes.\n\nThis viewer lists each character on its own line with its U+ code point, its UTF-8 bytes in hex and its UTF-16 code units. Characters outside the basic plane show their surrogate pair, so you see why they count as two in JavaScript. It handles up to 500 characters in detail and runs in your browser, so sensitive text is not sent anywhere.",
+ "howTo": [
+  "Type or paste the text you want to inspect.",
+  "Read one line per character: the character, its code point, its UTF-8 bytes and its UTF-16 units.",
+  "Check the totals at the bottom for the number of code points and UTF-8 bytes.",
+  "Copy the lines you need for a bug report or a comment."
+ ],
+ "faq": [
+  {
+   "q": "Why do the UTF-8 byte counts differ from the character count?",
+   "a": "UTF-8 uses one byte for ASCII, two for most accented letters, three for many symbols and CJK characters and four for emoji. A string of 10 characters can therefore take well over 10 bytes in a database column."
+  },
+  {
+   "q": "What is a UTF-16 surrogate pair?",
+   "a": "Characters above U+FFFF, such as most emoji, are stored as two 16-bit units. JavaScript counts these as length 2 even though they are one character, which explains many off-by-one string bugs."
+  },
+  {
+   "q": "Is there a limit on input size?",
+   "a": "The per-character listing stops after 500 characters and then reports how many more there were. The totals line still counts the whole input."
+  },
+  {
+   "q": "Does it show combined characters like family emoji?",
+   "a": "It shows each code point separately, including joiners and combining marks. A family emoji therefore appears as several lines. For grapheme counts, use the String Length and Byte Size tool."
+  }
+ ],
+ "related": [
+  "char-info",
+  "string-length-bytes",
+  "hex-text",
+  "unicode-escape",
+  "zero-width-detector",
+  "unicode-normalize"
+ ],
+ "keywords": [
+  "utf-8 bytes viewer",
+  "character to utf-8 bytes",
+  "utf-16 code units online",
+  "free unicode byte inspector",
+  "emoji utf-8 bytes",
+  "string to utf-8 hex"
+ ]
+}

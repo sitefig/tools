@@ -1,0 +1,46 @@
+{
+ "id": "serp-snippet",
+ "seoTitle": "Free SERP Snippet Preview: Title and Description",
+ "metaDescription": "Preview a Google-style search result with estimated pixel widths and truncation warnings for desktop or mobile. Free and in-browser.",
+ "intro": "Type a title, meta description and URL to see a Google-style snippet, with estimated pixel widths and warnings when text is likely to be cut off on desktop or mobile.",
+ "why": "Google truncates titles and descriptions by width, not by characters, so a title that looks within the 60-character guideline can still be cut off, and a short wide one can survive. Writing for the snippet without a preview is guesswork.\n\nThis tool estimates the pixel width of your title at 20 pixels and your description at 14 pixels using Arial metrics, compares them with typical desktop and mobile limits and renders a snippet with a URL breadcrumb. It warns when text is likely to be truncated, too short or empty. The widths are estimates, because Google does not publish exact limits and often rewrites snippets anyway. Use it to draft better copy, and do not treat it as a guarantee. It runs in your browser.",
+ "howTo": [
+  "Enter your page title in the first box and your meta description in the second.",
+  "Choose desktop or mobile and enter the page URL in the options.",
+  "Run the tool to see the snippet and the pixel estimates.",
+  "Adjust the text until no truncation warnings remain."
+ ],
+ "faq": [
+  {
+   "q": "How accurate are the pixel widths?",
+   "a": "They are estimates based on Arial character widths. Google uses its own fonts and rules, and may rewrite or shorten your snippet, so allow a safety margin."
+  },
+  {
+   "q": "What limits does it use?",
+   "a": "About 600 pixels for titles on desktop, 580 on mobile, and about 920 pixels for descriptions on desktop and 680 on mobile, with character guides of 30 to 60 and 70 to 160."
+  },
+  {
+   "q": "Will Google show my description exactly?",
+   "a": "Not always. Google often builds the snippet from page text that better matches the query. A good meta description still improves your chances of a useful snippet."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The preview is drawn in your browser and the title, description and URL stay on your device."
+  }
+ ],
+ "related": [
+  "title-length-checker",
+  "meta-tag-generator",
+  "seo-inspector",
+  "social-preview",
+  "meta-analyzer",
+  "keyword-density"
+ ],
+ "keywords": [
+  "serp snippet preview",
+  "google snippet preview tool",
+  "title and meta description preview",
+  "serp simulator free",
+  "check title truncation"
+ ]
+}

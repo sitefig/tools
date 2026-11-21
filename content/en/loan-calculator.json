@@ -1,0 +1,46 @@
+{
+ "id": "loan-calculator",
+ "seoTitle": "Free Loan Calculator: Payment and Amortization",
+ "metaDescription": "Calculate the monthly payment, total interest and first amortization rows for a loan. Free loan calculator that runs in your browser, nothing uploaded.",
+ "intro": "Enter the loan amount, annual interest rate and term in years. You get the monthly payment, total paid, total interest and the first rows of the repayment schedule.",
+ "why": "Before you sign for a car, a personal loan or a mortgage, the headline monthly figure rarely tells the full story. What matters is how much extra you pay over the whole term and how slowly the balance falls at the start, when most of each payment is interest. This calculator shows both: the fixed monthly payment and an amortization table with principal, interest and remaining balance for as many months as you ask for. Changing the term from 30 to 20 years and watching the total interest drop is often more persuasive than any advice. It is an estimate for a fixed-rate loan with monthly payments, and it stays on your device.",
+ "howTo": [
+  "Enter the loan amount, the annual rate and the term in years.",
+  "Set how many schedule rows to show, 12 by default.",
+  "Read the monthly payment, total interest and the amortization table, then copy the text if needed."
+ ],
+ "faq": [
+  {
+   "q": "What kind of loan does this model?",
+   "a": "A fixed-rate loan repaid in equal monthly instalments. It does not model variable rates, fees, insurance, balloon payments or extra repayments, so a lender's quote may differ."
+  },
+  {
+   "q": "What if the interest rate is zero?",
+   "a": "The loan is split into equal parts: amount divided by the number of months, with no interest. The table then shows pure principal repayment."
+  },
+  {
+   "q": "Why is so much of the early payment interest?",
+   "a": "Interest is charged on the outstanding balance, which is largest at the start. As the balance falls, a growing share of each fixed payment goes to principal."
+  },
+  {
+   "q": "Does a longer term save money?",
+   "a": "It lowers the monthly payment but increases total interest, because you owe money for longer. Try two terms and compare the total interest line."
+  }
+ ],
+ "related": [
+  "emi-calculator",
+  "compound-interest",
+  "simple-interest",
+  "savings-goal",
+  "retirement-estimator",
+  "inflation-calculator"
+ ],
+ "keywords": [
+  "loan calculator",
+  "free loan calculator",
+  "loan amortization calculator",
+  "monthly payment calculator",
+  "loan interest calculator",
+  "amortization schedule online"
+ ]
+}

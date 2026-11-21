@@ -1,0 +1,44 @@
+{
+ "id": "tdm-reservation-header-builder",
+ "seoTitle": "TDMRep Builder: tdm-reservation Header and tdmrep.json",
+ "metaDescription": "Generate the W3C TDM Reservation Protocol signals for text-and-data-mining opt-out: HTTP headers, meta tags and /.well-known/tdmrep.json.",
+ "intro": "Builds tdm-reservation and tdm-policy as headers, meta tags and a tdmrep.json file from your settings.",
+ "why": "In the EU, rightsholders can reserve their rights against text and data mining in a machine-readable way. The W3C community report on the TDM Reservation Protocol defines how: an HTTP header, an HTML meta tag or a JSON file at /.well-known/tdmrep.json.\n\nChoose reserved or not, add a policy URL and optional path rules and get the snippets for Apache and Nginx too. The spec says to use one technique, and later sources override earlier ones. This is a technical signal, not legal advice.",
+ "howTo": [
+  "Choose 1 (reserved) or 0 and a policy URL.",
+  "Optionally add path rules.",
+  "Copy the header, meta or JSON.",
+  "Validate the JSON with the TDMRep validator."
+ ],
+ "faq": [
+  {
+   "q": "Header, meta or JSON file?",
+   "a": "The spec advises one. The JSON file suits many paths, headers suit servers, meta tags suit CMS pages."
+  },
+  {
+   "q": "What does a policy do?",
+   "a": "It links to a licence or terms. It is not processed when the reservation is 0."
+  },
+  {
+   "q": "Is this legal advice?",
+   "a": "No."
+  },
+  {
+   "q": "Do crawlers read it?",
+   "a": "Some do, not all. Combine with robots.txt."
+  }
+ ],
+ "related": [
+  "tdmrep-json-validator",
+  "ai-bot-robots-builder",
+  "ai-preferences-header-generator",
+  "content-signals-policy-builder",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "tdmrep generator",
+  "tdm-reservation header",
+  "tdmrep.json",
+  "text data mining opt out"
+ ]
+}

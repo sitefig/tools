@@ -1,0 +1,45 @@
+{
+ "id": "schema-deprecation-checker",
+ "seoTitle": "Schema Deprecation Checker: FAQ, HowTo and Retired Rich Results",
+ "metaDescription": "Find JSON-LD types whose Google rich results were retired: FAQ, HowTo, special announcement, vehicle listing and more, with the changelog date.",
+ "intro": "Flags markup for features that Google has retired or limited, such as FAQ, HowTo, special announcement, course info and the sitelinks search box, with the change date and what to do about it.",
+ "why": "Google has removed many rich result types in recent years, and old markup is still all over the web. This tool reads your JSON-LD and lists every type that matches a retired feature, with the date from the Google Search Central changelog (read 2026-10-23). FAQ results stopped appearing on 7 May 2026; How-to was removed in 2023; special announcement, course info, estimated salary, learning video and vehicle listing were retired in 2025.\n\nA retired feature does not make the markup invalid. Other search engines and tools may still use it, so the tool says whether keeping it makes sense and marks uncertain cases as review. It only covers Google Search and only what the changelog states.",
+ "howTo": [
+  "Paste the JSON-LD or HTML.",
+  "Read each flagged feature, its status and the source date.",
+  "Decide whether to keep the markup for other uses.",
+  "Remove what has no purpose to cut page weight."
+ ],
+ "faq": [
+  {
+   "q": "Will removing retired markup hurt my ranking?",
+   "a": "Google does not use it for ranking and no longer shows the result. Removal is usually harmless; keeping it is harmless too."
+  },
+  {
+   "q": "Why is Course only marked review?",
+   "a": "Course info is retired but course list carousels still use Course markup, so it depends on your use."
+  },
+  {
+   "q": "Does it know about every retired type?",
+   "a": "No. It covers the ones named in the changelog text it was built from. Anything else is not flagged."
+  },
+  {
+   "q": "Are FAQ results restricted or gone?",
+   "a": "The May 2026 changelog says the FAQ result no longer appears in Google Search. Older restrictions to certain sites are not covered here."
+  }
+ ],
+ "related": [
+  "rich-result-eligibility-checker",
+  "jsonld-syntax-validator",
+  "schema-property-checker",
+  "howto-schema-generator",
+  "schema-generator",
+  "jsonld-inspector"
+ ],
+ "keywords": [
+  "faq schema deprecated",
+  "howto rich result removed",
+  "retired structured data",
+  "google rich results changes"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "elasticsearch-query-builder",
+ "seoTitle": "Free Elasticsearch Query DSL Builder Online",
+ "metaDescription": "Free online Elasticsearch query builder. Write bool clauses one per line and get the JSON search body plus a ready curl command. Runs locally.",
+ "intro": "Write bool-query clauses one per line, such as filter term status published, and get the Elasticsearch JSON body plus a curl command. Add sort, source filtering, a terms aggregation and highlight.",
+ "why": "Elasticsearch queries are nested JSON, and a simple search with two filters and a range already takes several levels of braces. Typing them in Kibana or curl is slow, and a misplaced bracket gives an error that is not helpful.\n\nHere you write each condition as one line: the occur type (must, filter, should, must_not), the clause type and the field and value. The tool builds the bool query, adds size, from, sort, _source and an optional terms aggregation, and prints both the request body and a curl command. It supports the common clause types: match, match_phrase, term, terms, range, exists, prefix, wildcard, fuzzy and multi_match. More advanced queries need hand editing. Nothing is sent anywhere.",
+ "howTo": [
+  "Write one clause per line, for example filter term status published.",
+  "Set the index, size, from, sort and the fields to include in _source.",
+  "Optionally enter a field for a terms aggregation and choose a highlight field.",
+  "Copy the JSON body or the curl command."
+ ],
+ "faq": [
+  {
+   "q": "What does each occur type do?",
+   "a": "must clauses must match and affect scoring, filter clauses must match without scoring, should clauses are optional boosts, and must_not clauses exclude documents."
+  },
+  {
+   "q": "How do I write a range?",
+   "a": "Use key=value pairs, for example filter range price gte=10 lte=100. Supported keys are gt, gte, lt, lte, format and time_zone."
+  },
+  {
+   "q": "Does it send the query?",
+   "a": "No. It produces text only. The curl command points at localhost:9200 as an example, so change the host and add authentication before running it."
+  },
+  {
+   "q": "Which clause types are supported?",
+   "a": "match, match_phrase, term, terms, range, exists, prefix, wildcard, fuzzy and multi_match. For nested, geo or script queries, edit the generated JSON by hand."
+  }
+ ],
+ "related": [
+  "mongodb-aggregate-builder",
+  "curl-builder",
+  "json-format",
+  "sql-to-mongodb",
+  "jsonpath-tester",
+  "http-snippet-generator"
+ ],
+ "keywords": [
+  "elasticsearch query builder",
+  "elasticsearch dsl generator",
+  "bool query builder online",
+  "free elasticsearch tool",
+  "elasticsearch curl generator",
+  "es query dsl online"
+ ]
+}

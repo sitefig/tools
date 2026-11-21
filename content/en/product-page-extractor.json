@@ -1,0 +1,38 @@
+{
+ "id": "product-page-extractor",
+ "seoTitle": "Product Page Data Extractor: JSON-LD, Open Graph, Microdata",
+ "metaDescription": "Paste a product page's HTML and get structured data: JSON-LD Product and Offer, Open Graph, microdata and Amazon fields, checked against rich result needs.",
+ "intro": "Pull product name, price, availability, rating and identifiers from a product page's source and check the markup.",
+ "why": "Product pages describe themselves in several overlapping ways: schema.org JSON-LD, microdata, Open Graph product tags and shop-specific markup. This extractor reads them all from pasted HTML, builds one JSON record (title, price, currency, availability, SKU, GTIN, brand, images, rating, bullets, Amazon ASIN) and checks the JSON-LD for the fields Google needs for product rich results.\n\nIt works only on the HTML you provide; it does not crawl or bypass anything. Shops change their markup, so the Amazon-specific selectors can stop matching. Respect each site's terms before copying data from it.",
+ "howTo": [
+  "Paste the product page source.",
+  "Run the extractor.",
+  "Copy the JSON and fix the readiness warnings."
+ ],
+ "faq": [
+  {
+   "q": "Does it scrape Amazon for me?",
+   "a": "No. It reads HTML you paste; web pages cannot fetch other sites."
+  },
+  {
+   "q": "What does readiness check?",
+   "a": "Name, image, price, currency, availability URL, identifiers, rating and an expired priceValidUntil."
+  },
+  {
+   "q": "Is the data reliable?",
+   "a": "It reports what the page markup says, which can be wrong or out of date."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "json-format",
+  "meta-analyzer",
+  "html-image-extractor",
+  "article-text-extractor"
+ ],
+ "keywords": [
+  "extract product data from html",
+  "json-ld product parser",
+  "product schema checker"
+ ]
+}

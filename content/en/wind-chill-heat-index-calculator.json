@@ -1,0 +1,39 @@
+{
+ "id": "wind-chill-heat-index-calculator",
+ "seoTitle": "Wind Chill and Heat Index Calculator: Feels-Like Temperature",
+ "metaDescription": "Compute wind chill and heat index from temperature, wind and humidity with NWS formulas. Free, offline.",
+ "intro": "Calculates wind chill and heat index (feels-like temperature) in Celsius or Fahrenheit using the US National Weather Service formulas.",
+ "why": "Air temperature does not tell the whole story. Wind pulls heat from skin in the cold and humidity slows sweating in the heat.\n\nThe tool uses the NWS wind chill formula (air at or below 50 F, wind above 3 mph) and the Rothfusz heat index regression with its adjustments (read from the NWS pages on 2026-10-23). Risk bands are approximate.",
+ "howTo": [
+  "Enter the air temperature and unit.",
+  "Enter wind speed and humidity.",
+  "Read the wind chill or heat index that applies."
+ ],
+ "faq": [
+  {
+   "q": "Why is one result not defined?",
+   "a": "Each formula only applies in its range: cold and windy, or hot."
+  },
+  {
+   "q": "Is it a safety rule?",
+   "a": "No. Sun, clothing and activity change risk. Treat it as a guide."
+  },
+  {
+   "q": "Does it match the NWS charts?",
+   "a": "Spot checks match: 0 F at 15 mph gives -19 F, 90 F at 70 percent gives 106 F."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "btu-calculator",
+  "sunrise-sunset-calculator",
+  "network-connection-info",
+  "heart-rate-zones",
+  "dst-clock-change-finder"
+ ],
+ "keywords": [
+  "wind chill calculator",
+  "heat index calculator",
+  "feels like temperature"
+ ]
+}

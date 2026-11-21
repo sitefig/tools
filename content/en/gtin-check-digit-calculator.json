@@ -1,0 +1,39 @@
+{
+ "id": "gtin-check-digit-calculator",
+ "seoTitle": "GTIN Check Digit Calculator for EAN-13, UPC-A and EAN-8",
+ "metaDescription": "Compute or validate the GS1 check digit for EAN-13, UPC-A, EAN-8 and GTIN-14 numbers, one per line. Free and private.",
+ "intro": "Computes the last digit of a barcode number or checks whether a full number is valid.",
+ "why": "A mistyped barcode number is a common cause of rejected listings. The last digit is a check digit calculated from the others with alternating weights of 3 and 1, so most single-digit errors are caught.\n\nPaste numbers one per line. Seven or eleven digits get a check digit; eight, twelve, thirteen or fourteen digits are checked. A twelve digit number is shown both as an EAN-13 payload and as a full UPC-A. A valid check digit does not mean the number is assigned to your product.",
+ "howTo": [
+  "Paste one number per line.",
+  "Read the check digit or the validity of each.",
+  "Fix the digits that fail and run again."
+ ],
+ "faq": [
+  {
+   "q": "Does a valid number mean the product is registered?",
+   "a": "No. It only means the check digit fits. Numbers must be issued by GS1 or a reseller."
+  },
+  {
+   "q": "Why is a 12 digit number shown twice?",
+   "a": "It could be the start of an EAN-13 or a complete UPC-A."
+  },
+  {
+   "q": "Can it draw the barcode?",
+   "a": "Use the Barcode Generator for that."
+  }
+ ],
+ "related": [
+  "sku-code-generator",
+  "coupon-code-generator",
+  "barcode-generator",
+  "check-digit-tool",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "ean 13 check digit",
+  "gtin check digit",
+  "upc a validator"
+ ]
+}

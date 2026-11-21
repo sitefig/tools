@@ -1,0 +1,47 @@
+{
+ "id": "clickhouse-ddl-generator",
+ "seoTitle": "Free ClickHouse CREATE TABLE Generator Online",
+ "metaDescription": "Free online ClickHouse DDL generator. Turn a column list into CREATE TABLE with MergeTree engines, ORDER BY, PARTITION BY, TTL and Nullable types.",
+ "intro": "Turn a plain column list into a ClickHouse CREATE TABLE statement. Choose a MergeTree-family engine, ORDER BY, PARTITION BY, TTL, cluster and index granularity.",
+ "why": "ClickHouse tables are shaped by decisions you do not need in other databases: the engine, the sorting key, the partition expression and a TTL. Typing the DDL from memory is slow, and common type names from other systems, like string or timestamp, are not ClickHouse types.\n\nList your columns one per line, as name and type, and the tool maps friendly names such as string, int64, float64 and datetime to ClickHouse types. A question mark after a type makes it Nullable. You can add DEFAULT or CODEC clauses and a comment after two dashes. Pick an engine, such as MergeTree or ReplacingMergeTree, and fill in ORDER BY, PARTITION BY and TTL. Choosing a good sorting key still depends on your queries. Nothing is uploaded.",
+ "howTo": [
+  "Enter one column per line as name type, adding ? after the type for Nullable.",
+  "Set the table name, such as analytics.events, and choose the engine.",
+  "Fill in ORDER BY, PARTITION BY and TTL, or leave ORDER BY blank to use the first column.",
+  "Copy the CREATE TABLE statement and run it in ClickHouse."
+ ],
+ "faq": [
+  {
+   "q": "How are types mapped?",
+   "a": "Common names like string, int, uint32, float64, bool, date and datetime are mapped to ClickHouse types such as String, Int32, UInt32, Float64, Bool, Date and DateTime. Types it does not know are passed through unchanged."
+  },
+  {
+   "q": "How do I make a column nullable?",
+   "a": "Add a question mark after the type, for example referrer string?. The generated type becomes Nullable(String). Use nullable columns sparingly, since they cost extra storage and speed."
+  },
+  {
+   "q": "Which engines need extra arguments?",
+   "a": "CollapsingMergeTree needs the sign column as an engine argument. ReplacingMergeTree can take a version column, and SummingMergeTree can take columns to sum. ReplicatedMergeTree uses default Keeper paths with macros."
+  },
+  {
+   "q": "Does it choose a good ORDER BY for me?",
+   "a": "No. If you leave it blank, the first column is used. The best sorting key depends on how you filter and group, so choose it deliberately."
+  }
+ ],
+ "related": [
+  "sql-dialect-converter",
+  "postgres-connection-builder",
+  "csv-to-sql",
+  "json-to-sql",
+  "sql-ddl-to-diagram",
+  "csv-to-parquet-schema"
+ ],
+ "keywords": [
+  "clickhouse create table generator",
+  "clickhouse ddl generator",
+  "mergetree table builder",
+  "free clickhouse tool",
+  "clickhouse schema generator",
+  "clickhouse create table online"
+ ]
+}

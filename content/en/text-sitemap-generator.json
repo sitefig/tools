@@ -1,0 +1,44 @@
+{
+ "id": "text-sitemap-generator",
+ "seoTitle": "Text Sitemap Generator (One URL per Line)",
+ "metaDescription": "Clean a URL list into a plain-text sitemap: absolute, deduplicated, percent-encoded, UTF-8. Free, runs in your browser.",
+ "intro": "Cleans a URL list into the text sitemap format.",
+ "why": "A text sitemap is the simplest format: one URL per line and nothing else. Google accepts it up to 50,000 URLs and 50 MB.\n\nThis tool removes duplicates, fragments, and encodes spaces and non-ASCII characters. If a line is not an absolute http(s) URL it stops and tells you which one, because the file may contain nothing but URLs.",
+ "howTo": [
+  "Paste your URLs.",
+  "Keep fragment removal on unless you need it.",
+  "Run the tool.",
+  "Save the result as sitemap.txt."
+ ],
+ "faq": [
+  {
+   "q": "Why does it stop on a bad line?",
+   "a": "The text format allows only URLs. A stray word would break the file."
+  },
+  {
+   "q": "Is encoding UTF-8?",
+   "a": "Yes, and URLs are percent-encoded."
+  },
+  {
+   "q": "What about more than 50,000 URLs?",
+   "a": "Split the list with the sitemap splitter."
+  },
+  {
+   "q": "Can I add dates?",
+   "a": "No. Use the XML format for lastmod."
+  }
+ ],
+ "related": [
+  "sitemap-generator",
+  "sitemap-index-generator",
+  "sitemap-xml-escaper",
+  "dedupe-lines",
+  "sitemap-validator"
+ ],
+ "keywords": [
+  "text sitemap",
+  "sitemap.txt",
+  "plain text sitemap",
+  "url list sitemap"
+ ]
+}

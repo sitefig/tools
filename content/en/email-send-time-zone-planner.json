@@ -1,0 +1,45 @@
+{
+ "id": "email-send-time-zone-planner",
+ "seoTitle": "Email Send Time Zone Planner: Local Arrival Times",
+ "metaDescription": "See the local arrival time of a scheduled email in each subscriber time zone, with overnight arrivals flagged. DST is applied for the date.",
+ "intro": "Enter a send date and time in your zone and a list of subscriber zones to see when it lands for each.",
+ "why": "A 9:00 send in Brussels arrives at 4:00 in New York. For international lists, a quick table of local times shows which regions get the email overnight and which in working hours.\n\nDaylight saving is applied using the date you choose, through the browser's built-in time zone data. Zones need IANA names such as Europe/Paris. Arrival is not opening: people read when they want to.",
+ "howTo": [
+  "Enter your time zone, send date and time.",
+  "List subscriber time zones, one per line.",
+  "Set what counts as overnight.",
+  "Read the local times and flags."
+ ],
+ "faq": [
+  {
+   "q": "How do I find zone names?",
+   "a": "Use IANA names like America/Chicago. Optional labels go before a pipe."
+  },
+  {
+   "q": "Does it handle daylight saving?",
+   "a": "Yes, for the date you give."
+  },
+  {
+   "q": "What if the time does not exist on DST day?",
+   "a": "The result shifts by the offset change."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "timezone-meeting-planner",
+  "timezone-converter",
+  "world-clock",
+  "email-drip-cadence-planner",
+  "cron-timezone-converter",
+  "email-campaign-rates"
+ ],
+ "keywords": [
+  "email send time zones",
+  "best time to send email",
+  "local time calculator",
+  "timezone email planner"
+ ]
+}

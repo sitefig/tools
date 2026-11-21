@@ -1,0 +1,47 @@
+{
+ "id": "game-2048",
+ "seoTitle": "Free 2048 Game to Play Online in Your Browser",
+ "metaDescription": "Play 2048 for free: slide and merge numbered tiles with arrow keys, swipes or buttons. Your best score is saved in your browser. No sign-up needed.",
+ "intro": "Play the classic 2048 puzzle on a 4 by 4 grid. Slide tiles with the arrow keys, a swipe or the on-screen buttons, merge equal numbers and aim for the highest score.",
+ "why": "Sometimes the most useful thing on a tools page is a two-minute break. 2048 is a good one: the rules fit in a sentence, a round is quick, and it still rewards a little planning, such as keeping your largest tile in a corner.\n\nThis version runs entirely in your browser, with no account, no adverts and no download. Keyboard arrows work on a computer, and swipes work on a touch screen, with buttons as a fallback. Your best score is kept in this browser only. The game follows the usual rules, with new tiles of 2 or 4 after each move, and ends when no move is left.",
+ "howTo": [
+  "Press the arrow keys, swipe on the board or use the Left, Up, Down and Right buttons to slide all tiles.",
+  "When two tiles with the same number collide, they merge into one with the sum.",
+  "Watch the score and best score at the top, and plan moves so the board does not fill up.",
+  "Press \"New game\" to start again at any time."
+ ],
+ "faq": [
+  {
+   "q": "Is my best score saved?",
+   "a": "Yes, in your browser's local storage on this device. It is not uploaded and will not follow you to another device. Clearing site data or using a private window resets it."
+  },
+  {
+   "q": "What are the rules?",
+   "a": "Each move slides every tile as far as it can go. Tiles with equal values merge once per move, and a new 2 or 4 appears afterwards. The game ends when the grid is full and no merge is possible."
+  },
+  {
+   "q": "Why do the arrow keys not scroll the page?",
+   "a": "While playing, the arrow keys are captured by the game. Typing in a text field elsewhere on the page still works normally."
+  },
+  {
+   "q": "Does it work on a phone?",
+   "a": "Yes. Swipe on the board, or tap the buttons beneath it. Swipes shorter than a few pixels are ignored to avoid accidental moves."
+  }
+ ],
+ "related": [
+  "memory-match",
+  "minesweeper",
+  "dice-roller",
+  "coin-flip",
+  "typing-speed-test",
+  "stopwatch"
+ ],
+ "keywords": [
+  "play 2048 online",
+  "2048 game free",
+  "2048 puzzle no download",
+  "2048 browser game",
+  "slide tiles game",
+  "2048 with swipe"
+ ]
+}

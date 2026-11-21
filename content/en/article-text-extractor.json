@@ -1,0 +1,38 @@
+{
+ "id": "article-text-extractor",
+ "seoTitle": "Article Text Extractor: Main Content from HTML as Markdown",
+ "metaDescription": "Paste a web page's HTML and get the article: title, author, date, reading time and main text as plain text or Markdown, without menus, ads or comments.",
+ "intro": "Strip a page down to its article: title, author, date and the main text, as Markdown or plain text.",
+ "why": "Readability-style extraction finds the main content block of a page by looking at paragraph length and link density, and drops navigation, sidebars, comments and footers. This tool does that for pasted HTML and also reads the author, publication date and language from meta tags and JSON-LD, estimates reading time and outputs Markdown (headings, lists, quotes, code, links) or plain text.\n\nIt uses heuristics on the source you paste: pages that build their text with JavaScript will be empty, and unusual layouts can select the wrong block. Use it to archive your own pages, prepare content for summarising or compare what a crawler sees.",
+ "howTo": [
+  "Paste the page HTML.",
+  "Choose Markdown or plain text.",
+  "Copy the extracted article."
+ ],
+ "faq": [
+  {
+   "q": "Why is the output empty?",
+   "a": "The text may be added by JavaScript. Copy the rendered DOM from DevTools instead of the page source."
+  },
+  {
+   "q": "Does it keep links?",
+   "a": "Yes in Markdown mode; untick the option to drop them."
+  },
+  {
+   "q": "Does it fetch URLs?",
+   "a": "No. Paste the HTML."
+  }
+ ],
+ "related": [
+  "html-to-markdown",
+  "text-summarizer",
+  "readability",
+  "meta-description-suggester",
+  "html-image-extractor"
+ ],
+ "keywords": [
+  "extract article text",
+  "html to markdown main content",
+  "readability offline"
+ ]
+}

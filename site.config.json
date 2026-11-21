@@ -1,0 +1,207 @@
+{
+  "siteName": "Free Tools",
+  "siteUrl": "https://tools.sitefig.net",
+  "langs": [
+    "en"
+  ],
+  "defaultLang": "en",
+  "locales": {
+    "en": "en_GB"
+  },
+  "licenceNote": "Set siteUrl to the real domain before deploying: canonical, Open Graph, sitemap and JSON-LD URLs all derive from it.",
+  "accessibilityContact": "",
+  "sensitive": {
+    "cats": [
+      "^Privacy . Secrets$",
+      "^Hashing . bcrypt$"
+    ],
+    "ids": [
+      "pdf-form-filler",
+      "jwt",
+      "aes",
+      "totp",
+      "hotp",
+      "otp",
+      "hmac",
+      "password",
+      "passphrase",
+      "secret",
+      "token",
+      "bcrypt",
+      "argon2?",
+      "scrypt",
+      "pbkdf2?",
+      "hkdf",
+      "pgp",
+      "openpgp",
+      "gpg",
+      "ssh",
+      "private-key",
+      "rsa",
+      "ecdsa",
+      "ed25519",
+      "encrypt",
+      "decrypt",
+      "chacha20",
+      "xor",
+      "shamir",
+      "bip39",
+      "credential",
+      "api-key",
+      "basic-auth",
+      "authorization",
+      "bearer",
+      "cookie",
+      "redact",
+      "pii",
+      "env",
+      "dotenv",
+      "htpasswd",
+      "keystore",
+      "webhook-signature",
+      "curl",
+      "http-snippet",
+      "pkce",
+      "ai-bot-access-log-analyzer",
+      "bot-traffic-share-calculator",
+      "robots-txt-compliance-log-checker",
+      "fake-googlebot-log-detector",
+      "pre-consent-request-finder",
+      "dmarc-aggregate-report-viewer",
+      "properties-to-yaml",
+      "har-performance-analyzer",
+      "third-party-script-cost",
+      "har-analyzer",
+      "jwk-pem-converter",
+      "email-list-cleaner",
+      "email-domain-typo-fixer",
+      "disposable-email-detector",
+      "email-name-formatter",
+      "lead-scoring-calculator",
+      "googlebot-crawl-budget-analyzer",
+      "orphan-page-finder",
+      "uncrawled-sitemap-urls",
+      "crawl-frequency-per-url",
+      "bot-status-code-report",
+      "wasted-crawl-detector",
+      "redirect-hits-in-logs",
+      "robots-txt-fetch-monitor",
+      "crawl-depth-bot-hits",
+      "content-discovery-lag",
+      "googlebot-mobile-desktop-split",
+      "bot-response-time-report",
+      "crawl-spike-drop-alerts",
+      "log-vs-gsc-crawl-comparison",
+      "ai-bot-training-retrieval-splitter",
+      "resource-crawl-report",
+      "hreflang-crawl-coverage",
+      "canonical-vs-crawled-url-mismatch",
+      "log-line-prettifier",
+      "giveaway-winner-picker",
+      "(?:[a-z0-9]+-)*(?:log|logs|logcat|cloudtrail|syslog|journald)(?:-[a-z0-9]+)*",
+      "logfmt-parser",
+      "cloudflare-logpush-viewer",
+      "mysql-slow-query-analyzer",
+      "redis-mongodb-slowlog-parser",
+      "windows-event-xml-viewer",
+      "ios-crash-report-viewer",
+      "exception-grouper",
+      "brute-force-scan-detector",
+      "request-spike-detector",
+      "top-ips-user-agents",
+      "response-time-percentiles",
+      "ovulation-calculator",
+      "blood-alcohol-content-estimator",
+      "calorie-deficit-calculator",
+      "smoking-savings-calculator",
+      "child-height-predictor",
+      "fasting-timer",
+      "phone-number-normalizer",
+      "org-chart-maker",
+      "gpx-track-analyzer",
+      "waypoints-to-gpx",
+      "travel-map-pinner",
+      "duplicate-row-remover",
+      "table-joiner",
+      "fuzzy-match-deduplicator",
+      "mac-address-vendor-lookup"
+    ],
+    "notIds": [
+      "^cookie-(policy|banner)",
+      "(llm|gpt|embedding)-token",
+      "^token-(id|trunc)",
+      "-token-ids-",
+      "^(llm|gpt)-",
+      "^writing-sprint-log$",
+      "^time-tracker-log-summary$"
+    ]
+  },
+  "categorySchema": [
+    [
+      "^Games",
+      "GameApplication"
+    ],
+    [
+      "^Learning",
+      "EducationalApplication"
+    ],
+    [
+      "^Calculators . Health",
+      "HealthApplication"
+    ],
+    [
+      "^Calculators . Finance",
+      "FinanceApplication"
+    ],
+    [
+      "^Privacy|^Hashing|^Crypto",
+      "SecurityApplication"
+    ],
+    [
+      "^SEO|^Marketing|^Product Planning",
+      "BusinessApplication"
+    ],
+    [
+      "^Color|^SVG",
+      "DesignApplication"
+    ],
+    [
+      "^Images|^Image Extras|^Media|^Audio|^Video|^Device",
+      "MultimediaApplication"
+    ],
+    [
+      "^JSON|^CSV|^XML|^YAML|^Code|^Encoding|^Regex|^Dev|^CSS|^Infra|^Data Models|^LLM|^AI|^Schema|^SQL|^API|^Mobile|^Converters|^Formatters|^Network|^Diagrams|^Markup|^Test Data|^Markdown|^Date",
+      "DeveloperApplication"
+    ]
+  ],
+  "parent": {
+    "name": "Sitefig",
+    "url": "https://sitefig.eu"
+  },
+  "footerLinks": [
+    {
+      "label": "sus.bot",
+      "url": "https://sus.bot/"
+    },
+    {
+      "label": "Crawler list",
+      "url": "https://www.opencrawlers.com/"
+    },
+    {
+      "label": "Contact",
+      "url": "https://sus.bot/contact/"
+    },
+    {
+      "label": "Press kit",
+      "url": "https://sus.bot/press/"
+    },
+    {
+      "label": "Privacy",
+      "url": "https://sus.bot/privacy/"
+    },
+    {
+      "label": "Sitefig",
+      "url": "https://sitefig.eu/"
+    }
+  ]
+}

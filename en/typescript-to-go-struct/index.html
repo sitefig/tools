@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free TypeScript to Go Struct Converter Online | Free Tools</title>
+<meta name="description" content="Convert TypeScript interfaces and enums to Go structs with json tags, omitempty, pointers and time.Time. Free, runs in your browser, nothing uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/typescript-to-go-struct/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/typescript-to-go-struct/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/typescript-to-go-struct/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free TypeScript to Go Struct Converter Online | Free Tools">
+<meta property="og:description" content="Convert TypeScript interfaces and enums to Go structs with json tags, omitempty, pointers and time.Time. Free, runs in your browser, nothing uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/typescript-to-go-struct/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free TypeScript to Go Struct Converter Online | Free Tools">
+<meta name="twitter:description" content="Convert TypeScript interfaces and enums to Go structs with json tags, omitempty, pointers and time.Time. Free, runs in your browser, nothing uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"TypeScript Interfaces to Go Structs","url":"https://tools.sitefig.net/en/typescript-to-go-struct/","description":"Convert TypeScript interfaces and enums to Go structs with json tags, omitempty, pointers and time.Time. Free, runs in your browser, nothing uploaded.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your TypeScript interfaces, type aliases or enums.","Set the package name and choose how number and Date map.","Copy the Go code into a file and run gofmt if you edit it."],"keywords":"typescript to go, typescript interface to go struct, ts to golang struct, json tags generator","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Schema Converters","item":"https://tools.sitefig.net/en/#schema-converters"},{"@type":"ListItem","position":3,"name":"TypeScript Interfaces to Go Structs","item":"https://tools.sitefig.net/en/typescript-to-go-struct/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which TypeScript features are supported?","acceptedAnswer":{"@type":"Answer","text":"Interfaces, type aliases, string enums, optional and nullable properties, unions, literals, tuples, arrays, Record, Date, extends and intersections, and JSDoc comments. Conditional and mapped types, keyof, typeof, function types and most utility generics are not supported, and the tool says so instead of guessing."}},{"@type":"Question","name":"What happens to a union such as string | number?","acceptedAnswer":{"@type":"Answer","text":"Go has no general union type, so the field becomes any with a comment that says it was a union. Unions of literal values such as \"a\" | \"b\" become the base type with the literal list in a comment, and a top-level string-literal type alias becomes a real enum."}},{"@type":"Question","name":"Why does number become a floating point type?","acceptedAnswer":{"@type":"Answer","text":"TypeScript has a single number type, so the converter cannot know whether a value is an integer. It uses a floating point type by default. Switch the option or edit single fields where you know the value is whole."}},{"@type":"Question","name":"How are extends and intersections handled?","acceptedAnswer":{"@type":"Answer","text":"Go struct embedding would change how the JSON is read, so the fields of the base types are copied into the struct instead. The base types are still emitted as their own structs."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#schema-converters">Schema Converters</a></li><li><span aria-current="page">TypeScript Interfaces to Go Structs</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>TypeScript Interfaces to Go Structs</h1>
+<p class="lede">Paste TypeScript interfaces, type aliases and enums and get Go structs with json tags, omitempty for optional properties, pointers for nullable ones and typed constants for string enums.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="typescript-to-go-struct" data-module="gap6"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A Go service that serves a TypeScript front end has to describe the same JSON twice, and the two descriptions drift. Starting from the TypeScript declarations gives the Go side the exact property names, so the json tags match what the client sends.</p>
+<p>Optional properties become omitempty with a pointer, so a missing field and a zero value stay distinguishable; nullable properties become pointers; arrays become slices, Record becomes map[string]T, and Date becomes time.Time (or string). Names are exported in Go style with initialisms such as ID and URL. The output compiles with go vet and round-trips JSON through encoding/json. Everything runs in your browser and nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your TypeScript interfaces, type aliases or enums.</li><li>Set the package name and choose how number and Date map.</li><li>Copy the Go code into a file and run gofmt if you edit it.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which TypeScript features are supported?</summary><p>Interfaces, type aliases, string enums, optional and nullable properties, unions, literals, tuples, arrays, Record, Date, extends and intersections, and JSDoc comments. Conditional and mapped types, keyof, typeof, function types and most utility generics are not supported, and the tool says so instead of guessing.</p></details>
+<details><summary>What happens to a union such as string | number?</summary><p>Go has no general union type, so the field becomes any with a comment that says it was a union. Unions of literal values such as &quot;a&quot; | &quot;b&quot; become the base type with the literal list in a comment, and a top-level string-literal type alias becomes a real enum.</p></details>
+<details><summary>Why does number become a floating point type?</summary><p>TypeScript has a single number type, so the converter cannot know whether a value is an integer. It uses a floating point type by default. Switch the option or edit single fields where you know the value is whole.</p></details>
+<details><summary>How are extends and intersections handled?</summary><p>Go struct embedding would change how the JSON is read, so the fields of the base types are copied into the struct instead. The base types are still emitted as their own structs.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/json-to-go/"><span class="link-card__title">JSON to Go Struct</span><span class="link-card__desc">Generate Go structs with json tags from a JSON sample.</span></a></li><li><a class="link-card" href="/en/typescript-to-json-schema/"><span class="link-card__title">TypeScript Interface to JSON Schema</span><span class="link-card__desc">Convert TypeScript interfaces, type aliases and enums to JSON Schema draft-07 (definitions + $ref). Supports optional props, unions, literals, tuples, arrays, Record, Date, index signatures, extends/intersections and JSDoc descriptions. Not supported: conditional/mapped types, keyof/typeof and most utility generics.</span></a></li><li><a class="link-card" href="/en/go-struct-to-typescript/"><span class="link-card__title">Go Structs to TypeScript Interfaces</span><span class="link-card__desc">Convert Go struct definitions into TypeScript interfaces using their json tags: omitempty makes a property optional, pointers become | null, slices become arrays, map[string]T becomes Record, time.Time becomes string, embedded structs become extends, json:&quot;-&quot; and unexported fields are dropped, typed string and iota constants become enums or unions. Reads declarations only: custom MarshalJSON methods and build tags are not seen.</span></a></li><li><a class="link-card" href="/en/typescript-to-rust-serde/"><span class="link-card__title">TypeScript Interfaces to Rust Serde Structs</span><span class="link-card__desc">Convert TypeScript interfaces and enums to Rust structs deriving Serialize and Deserialize: Option for optional and nullable fields, Vec, HashMap, tuples, serde rename or rename_all = &quot;camelCase&quot;, Box on recursive fields, enums with per-variant renames. Reads the same TypeScript subset as the TypeScript to JSON Schema tool: interfaces, type aliases, string enums, optional and nullable properties, literals, tuples, arrays, Record, Date, extends and intersections, JSDoc. Not supported: conditional and mapped types, keyof/typeof, function types, most utility generics.</span></a></li><li><a class="link-card" href="/en/sql-to-go-gorm/"><span class="link-card__title">SQL DDL to Go GORM Structs</span><span class="link-card__desc">Convert CREATE TABLE statements to Go GORM model structs: Go-style field names (ID, URL...), pointer types for nullable columns, gorm tags (column, primaryKey, autoIncrement, size, not null, uniqueIndex, default, precision), json tags, belongs-to association fields for foreign keys and TableName() methods.</span></a></li><li><a class="link-card" href="/en/json-to-models/"><span class="link-card__title">JSON to Java / Kotlin / Swift / Python / C# / Rust Models</span><span class="link-card__desc">Generate typed model classes from sample JSON: Java records, Kotlin data classes, Swift Codable, Python dataclasses, C# classes, Rust serde structs. Merges array items to find optional fields.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

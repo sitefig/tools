@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free AI Sentiment Analysis Online, Runs in Your Browser | Free Tools</title>
+<meta name="description" content="Classify English text as positive or negative with a small DistilBERT model that runs entirely in your browser. No upload, no API key, no sign-up.">
+<link rel="canonical" href="https://tools.sitefig.net/en/ai-sentiment-classifier/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/ai-sentiment-classifier/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/ai-sentiment-classifier/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free AI Sentiment Analysis Online, Runs in Your Browser | Free Tools">
+<meta property="og:description" content="Classify English text as positive or negative with a small DistilBERT model that runs entirely in your browser. No upload, no API key, no sign-up.">
+<meta property="og:url" content="https://tools.sitefig.net/en/ai-sentiment-classifier/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free AI Sentiment Analysis Online, Runs in Your Browser | Free Tools">
+<meta name="twitter:description" content="Classify English text as positive or negative with a small DistilBERT model that runs entirely in your browser. No upload, no API key, no sign-up.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"AI Sentiment Classifier","url":"https://tools.sitefig.net/en/ai-sentiment-classifier/","description":"Classify English text as positive or negative with a small DistilBERT model that runs entirely in your browser. No upload, no API key, no sign-up.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Type or paste English text into the box (the example sentence is a mixed review).","Press Classify. The first time, the 69 MB model downloads from this site; later runs reuse it.","Read the label, the confidence and the positive/negative split, and check whether the text was truncated.","Try rewording the text to see what changes the score, and judge borderline results (near 50%) yourself."],"keywords":"sentiment analysis online, ai sentiment classifier, positive or negative text checker, sentiment analysis in browser no upload, distilbert sst-2 online, review sentiment tool","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Text","item":"https://tools.sitefig.net/en/#text"},{"@type":"ListItem","position":3,"name":"AI Sentiment Classifier","item":"https://tools.sitefig.net/en/ai-sentiment-classifier/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is my text uploaded anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The model runs in your browser. The only network requests are the one-off downloads of the model file and its vocabulary from this site; your text is never sent to a server or an AI service."}},{"@type":"Question","name":"Which model is it and how accurate is it?","acceptedAnswer":{"@type":"Answer","text":"It is distilbert-base-uncased-finetuned-sst-2-english (Apache-2.0), reported at about 91% accuracy on the SST-2 movie-review benchmark. This copy stores the weights as 8-bit numbers, which shifts the scores a little. It is a small model: expect mistakes on sarcasm, mixed feelings and text unlike movie or product reviews."}},{"@type":"Question","name":"Why is a neutral sentence called positive or negative?","acceptedAnswer":{"@type":"Answer","text":"The model was trained with only two classes. It has no neutral option, so a plain statement is scored on whichever side it leans, often with a low confidence. Treat results close to 50% as undecided."}},{"@type":"Question","name":"Does it work for other languages?","acceptedAnswer":{"@type":"Answer","text":"No. The vocabulary and the training data are English. Other languages produce unreliable scores, and characters outside the vocabulary are replaced by an unknown-word token."}},{"@type":"Question","name":"Why is the first run slow and how long can the text be?","acceptedAnswer":{"@type":"Answer","text":"The first run downloads 69 MB. After that a sentence takes about a second on a recent computer and the longest supported input (256 tokens) a few seconds; the page stays responsive. Text beyond 254 word pieces is ignored and the tool tells you when that happens."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#text">Text</a></li><li><span aria-current="page">AI Sentiment Classifier</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>AI Sentiment Classifier</h1>
+<p class="lede">Paste a review, a message or a sentence and a small transformer model tells you whether it reads as positive or negative, with a confidence score. The model runs inside your browser tab, so the text never leaves your device.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="ai-sentiment-classifier" data-module="sentiment"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Sentiment scoring is handy for sorting reviews, checking the tone of a draft or sanity-checking a support reply, but most online versions send your text to a server or an API. This tool downloads a real pretrained model once and runs it locally: DistilBERT fine-tuned on the Stanford Sentiment Treebank (SST-2), the same model that is widely used on Hugging Face, with the weights compressed to 8-bit numbers to keep the download at 69 MB. The tokenizer and the neural network are written in plain JavaScript for this site; there is no AI service behind it.</p>
+<p>Be realistic about what it is. It is a small model that only knows English and only has two answers, positive or negative, so a neutral or factual sentence still gets pushed to one side. It scores about 91% on its benchmark of movie-review sentences and can be wrong on sarcasm, mixed opinions, slang, domain jargon or anything that is not a review-like sentence. Long text is cut after 254 word pieces (roughly 190 words). Compressing the weights changes the scores slightly compared with the original model, by about 0.1 on average, so a borderline text can land on either side. Treat the result as a quick signal, not a verdict.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Type or paste English text into the box (the example sentence is a mixed review).</li><li>Press Classify. The first time, the 69 MB model downloads from this site; later runs reuse it.</li><li>Read the label, the confidence and the positive/negative split, and check whether the text was truncated.</li><li>Try rewording the text to see what changes the score, and judge borderline results (near 50%) yourself.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Is my text uploaded anywhere?</summary><p>No. The model runs in your browser. The only network requests are the one-off downloads of the model file and its vocabulary from this site; your text is never sent to a server or an AI service.</p></details>
+<details><summary>Which model is it and how accurate is it?</summary><p>It is distilbert-base-uncased-finetuned-sst-2-english (Apache-2.0), reported at about 91% accuracy on the SST-2 movie-review benchmark. This copy stores the weights as 8-bit numbers, which shifts the scores a little. It is a small model: expect mistakes on sarcasm, mixed feelings and text unlike movie or product reviews.</p></details>
+<details><summary>Why is a neutral sentence called positive or negative?</summary><p>The model was trained with only two classes. It has no neutral option, so a plain statement is scored on whichever side it leans, often with a low confidence. Treat results close to 50% as undecided.</p></details>
+<details><summary>Does it work for other languages?</summary><p>No. The vocabulary and the training data are English. Other languages produce unreliable scores, and characters outside the vocabulary are replaced by an unknown-word token.</p></details>
+<details><summary>Why is the first run slow and how long can the text be?</summary><p>The first run downloads 69 MB. After that a sentence takes about a second on a recent computer and the longest supported input (256 tokens) a few seconds; the page stays responsive. Text beyond 254 word pieces is ignored and the tool tells you when that happens.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/word-counter/"><span class="link-card__title">Word Counter</span><span class="link-card__desc">Words, characters, sentences, paragraphs, reading and speaking time.</span></a></li><li><a class="link-card" href="/en/sentiment-lexicon/"><span class="link-card__title">Sentiment Analyzer (Lexicon)</span><span class="link-card__desc">Small built-in word list, negation and intensifier aware. English only, runs locally.</span></a></li><li><a class="link-card" href="/en/readability/"><span class="link-card__title">Readability Scores</span><span class="link-card__desc">Flesch, Flesch-Kincaid, Gunning Fog, SMOG, Coleman-Liau, ARI.</span></a></li><li><a class="link-card" href="/en/text-diff/"><span class="link-card__title">Text Diff</span><span class="link-card__desc">Compare two texts line by line or word by word, unified-style output.</span></a></li><li><a class="link-card" href="/en/keyword-density/"><span class="link-card__title">Keyword Density</span><span class="link-card__desc">1-3 word phrase frequency and density.</span></a></li><li><a class="link-card" href="/en/ocr-image-to-text/"><span class="link-card__title">Image to Text (OCR)</span><span class="link-card__desc">Extract printed English text from screenshots, scans and photos, entirely in your browser (LSTM recogniser, no upload).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

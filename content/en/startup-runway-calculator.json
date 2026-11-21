@@ -1,0 +1,38 @@
+{
+ "id": "startup-runway-calculator",
+ "seoTitle": "Startup Runway Calculator With Revenue and Expense Growth",
+ "metaDescription": "Compute months of runway and the month your cash runs out from cash, expenses, revenue and growth rates. Free, private.",
+ "intro": "Estimates how many months your cash lasts and when it runs out, with optional growth in revenue and expenses.",
+ "why": "Runway is cash divided by net burn, but burn changes as revenue grows and costs rise. A month-by-month model shows when cash really ends, which is usually different from the flat estimate.\n\nEnter cash, current expenses and revenue, and growth rates, and the tool lists the cash left each month. Growth rates are guesses, so try a flat and a pessimistic case. Fundraising takes months, so plan well before cash hits zero.",
+ "howTo": [
+  "Enter cash, monthly expenses and monthly revenue.",
+  "Set expected monthly growth for each, or 0.",
+  "Read runway and the month cash ends."
+ ],
+ "faq": [
+  {
+   "q": "Why does runway differ from cash divided by burn?",
+   "a": "Because growth changes burn over time."
+  },
+  {
+   "q": "What if revenue covers expenses?",
+   "a": "The tool says runway is unlimited at today's numbers."
+  },
+  {
+   "q": "Does it include fundraising?",
+   "a": "No. Add expected funding by recalculating from a later date."
+  }
+ ],
+ "related": [
+  "burn-rate-calculator",
+  "startup-break-even-analysis-calculator",
+  "startup-cost-calculator",
+  "break-even",
+  "profit-margin"
+ ],
+ "keywords": [
+  "startup runway calculator",
+  "cash runway months",
+  "months of cash left"
+ ]
+}

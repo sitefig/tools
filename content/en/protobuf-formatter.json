@@ -1,0 +1,47 @@
+{
+ "id": "protobuf-formatter",
+ "seoTitle": "Free Protobuf (.proto) Formatter Online",
+ "metaDescription": "Free online Protobuf formatter. Format .proto files with one statement per line, consistent indentation and spacing, keeping all comments.",
+ "intro": "Format a .proto file so each statement sits on its own line with consistent indentation and spacing. Messages, enums, oneofs and services are indented, and comments are kept.",
+ "why": "Protocol Buffers definitions are shared between teams and generated into several languages, so a messy .proto file spreads confusion widely. Files copied from documentation or squeezed onto a few lines are hard to read, and field numbers are easy to misread.\n\nThe formatter puts each field, option and rpc on its own line, indents nested messages, enums, oneofs and service blocks, and sets spacing around equals signs and inside field options such as [deprecated = true]. Comments, including trailing ones, are kept. It formats layout only: it does not check field numbers for clashes or compile the file, so run protoc or buf for that. Your definitions stay in the browser and are not uploaded.",
+ "howTo": [
+  "Paste your .proto content into the input box.",
+  "Choose an indent of 2 spaces, 4 spaces or a tab.",
+  "Check the formatted messages, enums and services.",
+  "Copy the result into your repository and compile it with protoc or buf."
+ ],
+ "faq": [
+  {
+   "q": "Does it check field numbers?",
+   "a": "No. It does not compile the schema, so duplicate or reserved field numbers are not detected. Use protoc or buf lint for real validation."
+  },
+  {
+   "q": "Are comments preserved?",
+   "a": "Yes, both line comments on their own lines and trailing comments after a field. Their text is not changed."
+  },
+  {
+   "q": "Does it support proto2 and proto3?",
+   "a": "It formats layout, which is largely the same in both. Syntax statements, messages, enums, oneof, map fields, services and options are handled."
+  },
+  {
+   "q": "Will it change the wire format?",
+   "a": "No. Only whitespace and line breaks change. Field names, numbers and types stay exactly as in your input."
+  }
+ ],
+ "related": [
+  "protobuf-to-json",
+  "proto-to-typescript",
+  "protobuf-to-json-schema",
+  "json-schema-to-protobuf",
+  "json-format",
+  "yaml-format"
+ ],
+ "keywords": [
+  "protobuf formatter",
+  "proto file formatter",
+  "format proto online",
+  "free protobuf beautifier",
+  "protocol buffers formatter",
+  "proto3 formatter online"
+ ]
+}

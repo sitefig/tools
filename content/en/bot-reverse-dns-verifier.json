@@ -1,0 +1,44 @@
+{
+ "id": "bot-reverse-dns-verifier",
+ "seoTitle": "Reverse DNS Bot Verifier: Check Googlebot and Other Crawlers",
+ "metaDescription": "Paste the IP, reverse hostname and forward lookup from the host command and check them against the crawler operator's domain. Free.",
+ "intro": "Judges the results of a reverse and forward DNS lookup for a claimed crawler.",
+ "why": "The standard check for Googlebot is a reverse DNS lookup of the IP, a check that the hostname ends in googlebot.com or google.com, and a forward lookup that returns the same IP. Both steps are needed, since anyone can set a reverse record.\n\nA web page cannot run DNS queries, so you run host in a terminal and paste the answers here. The tool prints the commands for IPs you give alone, then judges the results for Google, Apple, Common Crawl or Bing (the Bing suffix is from memory and marked so).",
+ "howTo": [
+  "Choose the claimed crawler.",
+  "Run host for the IP and the hostname.",
+  "Paste lines as: IP hostname forward-IP.",
+  "Read VERIFIED or NOT VERIFIED."
+ ],
+ "faq": [
+  {
+   "q": "Why two lookups?",
+   "a": "A forged reverse record would not point back to the same IP in a forward lookup."
+  },
+  {
+   "q": "What domains are valid?",
+   "a": "For Google, googlebot.com for common crawlers, google.com for special crawlers. Apple and Common Crawl have their own."
+  },
+  {
+   "q": "Can it run the lookups?",
+   "a": "No, browsers cannot do DNS queries."
+  },
+  {
+   "q": "IPv6?",
+   "a": "Not every crawler has IPv6 reverse records. Use the IP range checker then."
+  }
+ ],
+ "related": [
+  "crawler-ip-range-checker",
+  "fake-googlebot-log-detector",
+  "bot-user-agent-identifier",
+  "antibot-waf-detector",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "verify googlebot reverse dns",
+  "reverse dns bot check",
+  "host command googlebot",
+  "fake googlebot check"
+ ]
+}

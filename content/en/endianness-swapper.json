@@ -1,0 +1,45 @@
+{
+ "id": "endianness-swapper",
+ "seoTitle": "Endianness Swapper: Big and Little Endian Byte Order | Free",
+ "metaDescription": "Reverse the byte order of hex values or 2, 4, 8 and 16-byte words and read them as big-endian and little-endian numbers. Free, local.",
+ "intro": "Swaps the byte order of a hex value or a stream of fixed-size words and shows both decimal readings.",
+ "why": "Network protocols use big-endian order and most CPUs store numbers little-endian, so the same bytes read as two different numbers. Debugging a memory dump or packet often needs a quick swap.\n\nPaste hex with or without 0x, spaces or colons. Pick the whole value or a word size, and the page reverses the bytes in each word and shows the decimal value of each reading. An odd number of digits is rejected, because the byte boundary would be a guess.",
+ "howTo": [
+  "Paste the hex bytes.",
+  "Choose whole value or a word size.",
+  "Read the swapped bytes and both numeric readings.",
+  "Copy what you need."
+ ],
+ "faq": [
+  {
+   "q": "Why does it reject an odd digit count?",
+   "a": "A byte is two hex digits. Add a leading 0 where you mean one."
+  },
+  {
+   "q": "What is a word size?",
+   "a": "The group of bytes that is reversed as one unit, for example 4 for 32-bit values."
+  },
+  {
+   "q": "Are signed values shown?",
+   "a": "No, readings are unsigned. Use the number base converter for two's complement."
+  },
+  {
+   "q": "Is the data uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "number-base-converter",
+  "bitwise-calculator",
+  "ieee754-converter",
+  "hex-to-base64",
+  "crc-calculator",
+  "ascii-table"
+ ],
+ "keywords": [
+  "endianness converter",
+  "swap byte order",
+  "big endian to little endian",
+  "hex byte swap"
+ ]
+}

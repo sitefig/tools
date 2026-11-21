@@ -1,0 +1,45 @@
+{
+ "id": "geometry-construction-board",
+ "seoTitle": "Geometry Construction Board: Compass and Straightedge Online",
+ "metaDescription": "Build constructions from points, lines, circles and intersections with typed commands, forms or the mouse. Dependent points follow. Exports SVG. Free, runs locally.",
+ "intro": "A construction board where points can be free or computed from other objects. Add objects with commands, a form or the pointer, drag free points, and export SVG with a text description.",
+ "why": "Classic constructions such as the perpendicular bisector, the circumcircle or a tangent from a point are chains of steps: each new object depends on earlier ones. In this board every object is one line of a small script, so the construction is both the picture and a record of how to rebuild it. Move a red free point and everything that depends on it is recomputed.\n\nEvery action has a keyboard route: type a command, use the form with menus for each slot, edit the script, or select a point and move it with the arrow keys or exact coordinates. The page also lists every object in words and reports relations it finds, such as perpendicular lines. Lines, segments and circles only, in floating point, so results are shown to four decimals.",
+ "howTo": [
+  "Load an example such as \"Equilateral triangle\", or start by adding two points.",
+  "Add objects with the form, or type commands like \"circle c1 A B\" and press Enter.",
+  "Drag a red point, or select it and use the arrow keys or the X and Y boxes. Dependent objects update.",
+  "Read the description under the board and download the SVG or the text."
+ ],
+ "faq": [
+  {
+   "q": "What commands are available?",
+   "a": "point, midpoint, segment, line, circle (through a point or with a radius), compass, perp, parallel, bisector, anglebisector, intersect, pointon, dist and angle. The form lists the slots for each."
+  },
+  {
+   "q": "How are intersections numbered?",
+   "a": "For two circles, number 1 is on the left of the line from the first centre to the second. For a line and a circle, number 1 comes first along the line from its first point to its second."
+  },
+  {
+   "q": "What happens when circles no longer meet?",
+   "a": "That line shows an error and everything that depends on it is skipped. Fix the free points and it comes back."
+  },
+  {
+   "q": "Can I use it without a mouse?",
+   "a": "Yes. Commands, the form, the script box, point nudging and the SVG export all work from the keyboard, and the board has a text description."
+  }
+ ],
+ "related": [
+  "geometry-shape-calculator",
+  "triangle-solver-sss-sas-asa-ssa",
+  "function-grapher-roots",
+  "perspective-corrector",
+  "svg-path-editor",
+  "mind-map-svg-builder"
+ ],
+ "keywords": [
+  "geometry construction",
+  "compass and straightedge online",
+  "dynamic geometry",
+  "perpendicular bisector construction"
+ ]
+}

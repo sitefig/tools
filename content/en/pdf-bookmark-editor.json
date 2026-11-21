@@ -1,0 +1,45 @@
+{
+ "id": "pdf-bookmark-editor",
+ "seoTitle": "PDF Bookmark Editor: Add or Edit the Outline",
+ "metaDescription": "View, write and save PDF bookmarks as text lines like \"Chapter 1 | 3\" with indentation for sub-levels. Free, private, runs in your browser.",
+ "intro": "Shows the bookmarks (outline) of a PDF as editable text, and writes a new outline from lines of the form \"Title | page\" with two spaces of indent per level.",
+ "why": "Bookmarks make a long PDF navigable in any viewer. Editing them in a graphical tree is fiddly, while a text list is quick to type, paste from a table of contents and reorder.\n\nLeave the box empty and press Run to see the current bookmarks in the same format. Edit and run again to save. Titles can use any Unicode characters. As with the other page tools here, the file is rewritten: form fields, named destinations, tagged structure and JavaScript are dropped, and the bookmarks open each page at the current zoom. We checked the result with Ghostscript, which read all the titles.",
+ "howTo": [
+  "Choose a PDF and press Run with the box empty to see any existing bookmarks.",
+  "Write or edit lines such as \"Introduction | 1\", indenting sub-entries by two spaces.",
+  "Press Run again.",
+  "Download the bookmarked PDF."
+ ],
+ "faq": [
+  {
+   "q": "How do I make a sub-bookmark?",
+   "a": "Indent the line by two spaces under its parent. Indent one level at a time."
+  },
+  {
+   "q": "Can a bookmark jump to a position on the page?",
+   "a": "No. Each one opens its page; that covers most documents."
+  },
+  {
+   "q": "Are old bookmarks kept?",
+   "a": "Existing ones are replaced by what you type. Copy them from the preview first if you want to keep them."
+  },
+  {
+   "q": "Why did my fillable form stop working?",
+   "a": "The file is rebuilt and form definitions are dropped. Fill the form first, or add bookmarks to a flattened copy."
+  }
+ ],
+ "related": [
+  "pdf-metadata-editor",
+  "pdf-reorder-pages",
+  "pdf-merge",
+  "pdf-split",
+  "pdf-info",
+  "pdf-n-up"
+ ],
+ "keywords": [
+  "pdf bookmark editor",
+  "add bookmarks to pdf",
+  "pdf outline editor",
+  "edit pdf table of contents"
+ ]
+}

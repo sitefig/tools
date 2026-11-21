@@ -1,0 +1,46 @@
+{
+ "id": "html-tag-stripper",
+ "seoTitle": "Free HTML Tag Stripper - Remove Tags Online",
+ "metaDescription": "Strip HTML tags, scripts, styles and comments from pasted markup and decode entities to get plain text. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Paste HTML and get plain text back. Tags, comments, script and style blocks are removed, and entities such as &amp; are decoded.",
+ "why": "Copying text out of a web page, an email template or a CMS export usually drags the markup along. You end up with stray div tags, inline styles and entities like &nbsp; in the middle of a sentence. Retyping is slow and a quick regex in an editor tends to leave the script contents behind.\n\nThis tool removes comments first, drops whole script and style blocks, then strips the remaining tags. Block-level closers such as paragraphs, list items and headings can become line breaks, so the result still reads as paragraphs. It suits cleaning descriptions for a spreadsheet, preparing text for a word count, or checking what a crawler would see without markup. Everything runs locally.",
+ "howTo": [
+  "Paste the HTML into the input box.",
+  "Tick Keep line breaks for block tags if you want paragraphs to stay on separate lines.",
+  "Tick Decode entities to turn &amp;, &nbsp; and numeric codes into characters.",
+  "Copy the cleaned text from the output."
+ ],
+ "faq": [
+  {
+   "q": "Does it remove the contents of script and style tags?",
+   "a": "Yes. Script and style elements are removed together with everything inside them, and HTML comments are removed first. Only the visible text between other tags is kept."
+  },
+  {
+   "q": "Which entities are decoded?",
+   "a": "Numeric entities in decimal and hex, plus a short list of named ones: amp, lt, gt, quot, apos, nbsp, copy, reg, hellip, mdash and ndash. Other named entities are left exactly as typed."
+  },
+  {
+   "q": "Is this safe for sanitising user input?",
+   "a": "No. It is a text clean-up helper based on pattern matching, not an HTML sanitiser. Do not rely on it to make untrusted markup safe for rendering; use a proper sanitiser in your application."
+  },
+  {
+   "q": "Why are blank lines collapsed?",
+   "a": "Whitespace on each line is squeezed to single spaces and runs of empty lines are reduced to one, so the output does not inherit the indentation of the source markup."
+  }
+ ],
+ "related": [
+  "html-entities",
+  "markdown-to-html",
+  "html-to-markdown",
+  "word-counter",
+  "html-format",
+  "remove-empty-lines-trim"
+ ],
+ "keywords": [
+  "html tag stripper",
+  "remove html tags online",
+  "strip html to plain text",
+  "html to text converter",
+  "free html cleaner"
+ ]
+}

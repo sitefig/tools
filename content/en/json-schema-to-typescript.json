@@ -1,0 +1,45 @@
+{
+  "id": "json-schema-to-typescript",
+  "seoTitle": "JSON Schema to TypeScript Types and Interfaces",
+  "metaDescription": "Generate TypeScript types from a JSON Schema: required and optional properties, enums, oneOf / anyOf / allOf, arrays, tuples, $defs and $ref.",
+  "intro": "Turn a JSON Schema into TypeScript declarations you can paste into your project.",
+  "why": "Properties become interface members, optional unless listed in required; enum and const become literal unions; type arrays such as [\"string\",\"null\"] become unions; oneOf and anyOf become unions and allOf becomes an intersection; $ref to #/$defs or #/definitions becomes a named type; additionalProperties maps to index signatures; descriptions become JSDoc comments. The output was compiled with tsc against valid and invalid sample values.\n\nSchema features that TypeScript cannot express (patterns, min/max, formats) are not enforced by the types. Remote $ref files are not fetched.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the JSON Schema.",
+    "Set the root type name and style.",
+    "Copy the generated declarations.",
+    "Validate data at runtime with the JSON Schema validator."
+  ],
+  "faq": [
+    {
+      "q": "Does it support $ref to other files?",
+      "a": "Only references inside the same document (#/$defs/... or #/definitions/...)."
+    },
+    {
+      "q": "How are integers typed?",
+      "a": "As number, because TypeScript has no integer type."
+    },
+    {
+      "q": "What about additionalProperties: false?",
+      "a": "It produces an object type without an index signature."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "json-schema-validator",
+    "typescript-to-json-schema",
+    "json-to-typescript",
+    "json-schema-to-zod",
+    "zod-to-json-schema",
+    "json-schema-generator"
+  ],
+  "keywords": [
+    "json schema to typescript",
+    "schema to interface",
+    "generate types from schema",
+    "ts types"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "embedding-token-cost-estimator",
+ "seoTitle": "Free Embedding Token & Cost Estimator for RAG",
+ "metaDescription": "Estimate tokens, chunk count, API cost and vector storage for embedding your text across popular models. Free, runs in your browser.",
+ "intro": "Paste a sample of your text and set the chunk size, overlap and document count to estimate tokens, number of chunks, embedding API cost and vector storage across popular embedding models.",
+ "why": "Before you build a retrieval system, you need a rough idea of what indexing will cost and how big the vector store will be. The answer depends on the amount of text, how you split it into chunks, how much the chunks overlap and which model you use. Overlap in particular quietly multiplies the tokens you pay for.\n\nThis estimator takes a sample of your real text, works out its size, scales it to your document count and compares models side by side. Token counts are estimates from a character ratio, and the price table is a built-in snapshot, so enter your own price when it differs. Re-embedding runs and vector dimensions are included. The calculation is done in your browser and your text is not uploaded.",
+ "howTo": [
+  "Paste a representative sample of your text.",
+  "Enter the number of documents, the chunk size and the overlap.",
+  "Adjust the characters-per-token ratio, vector dimensions and number of re-embedding runs, or enter a custom price.",
+  "Compare the estimated cost and storage for each model."
+ ],
+ "faq": [
+  {
+   "q": "Why does overlap affect the cost?",
+   "a": "Overlapping chunks repeat part of the text, so the same tokens are embedded more than once. A twenty percent overlap means roughly twenty percent more tokens, and the chunk count rises too."
+  },
+  {
+   "q": "Are the prices up to date?",
+   "a": "The table is a snapshot that goes out of date as providers change their pricing. Enter your own price per million tokens for any real budget, and check the provider's pricing page."
+  },
+  {
+   "q": "How is it different from the embedding cost calculator?",
+   "a": "This one starts from a text sample and chunk settings, so it works out tokens and chunks for you. The embedding cost calculator starts from a document count and an average size you already know."
+  }
+ ],
+ "related": [
+  "embedding-cost-calculator",
+  "text-chunk-splitter",
+  "rag-chunking-visualizer",
+  "llm-cost-calculator",
+  "embedding-similarity",
+  "gpt-token-counter"
+ ],
+ "keywords": [
+  "embedding cost estimator",
+  "rag embedding cost",
+  "embedding token calculator",
+  "chunk overlap cost",
+  "vector storage estimator",
+  "free embedding budget tool"
+ ]
+}

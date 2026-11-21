@@ -1,0 +1,47 @@
+{
+ "id": "ascii-table",
+ "seoTitle": "Free ASCII Table with Hex, Octal and Binary Codes",
+ "metaDescription": "Searchable ASCII chart with decimal, hex, octal and binary values for all 128 characters including control codes. Free, instant and works in your browser.",
+ "intro": "A searchable ASCII reference showing decimal, hex, octal, binary and the character for all 128 codes. Type anything into the filter to narrow the table.",
+ "why": "Even with Unicode everywhere, ASCII is the base layer you keep running into: control codes in serial and network protocols, escape sequences in terminals, delimiters in file formats, and the difference between 0x41 and 0x61 when you debug a case-conversion bug.\n\nThis table lists every code from 0 to 127 in one place. Control characters appear by their standard names, such as NUL, LF, CR and ESC. The filter matches any column, so you can type \"41\" to find the code, \"LF\" to find the line feed, or a letter to see its values. It is a plain lookup that works offline once the page is loaded.",
+ "howTo": [
+  "Open the tool. The full table is shown when the filter is empty.",
+  "Type into the filter box: a number, a hex value, a character or a control-code name such as ESC.",
+  "Read the decimal, hex, octal and binary values next to each match.",
+  "Copy the rows you need."
+ ],
+ "faq": [
+  {
+   "q": "Does this include the extended ASCII range?",
+   "a": "No. It covers the original 128 characters, codes 0 to 127. Codes 128 to 255 depend on the character set, such as Latin-1 or Windows-1252, and are not standardised ASCII."
+  },
+  {
+   "q": "How does the filter work?",
+   "a": "Every word you type must appear somewhere in the row, in any column and ignoring case. Typing \"0a\" finds the line feed through its hex value, and typing \"space\" finds code 32."
+  },
+  {
+   "q": "What are the control characters for?",
+   "a": "Codes 0 to 31 and 127 were designed for teleprinters and data links, and a few remain in daily use: LF for new lines, CR for carriage return, HT for tabs, ESC for terminal sequences and NUL for string ends."
+  },
+  {
+   "q": "How do I look up non-ASCII characters?",
+   "a": "Use the Unicode Character Inspector, which gives the code point, category, script and encodings for any character, including emoji."
+  }
+ ],
+ "related": [
+  "char-info",
+  "hex-text",
+  "binary-text",
+  "utf8-bytes-viewer",
+  "html-entities-reference",
+  "number-base-converter"
+ ],
+ "keywords": [
+  "ascii table",
+  "ascii chart with hex and binary",
+  "ascii codes list",
+  "free ascii reference",
+  "ascii control characters",
+  "ascii decimal hex octal"
+ ]
+}

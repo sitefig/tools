@@ -1,0 +1,46 @@
+{
+ "id": "json-lines-tools",
+ "seoTitle": "Free JSON Lines to JSON Array Converter",
+ "metaDescription": "Convert JSONL or NDJSON to a JSON array and back again. Free online converter that runs in your browser and reports the line number of any error.",
+ "intro": "Convert JSON Lines (JSONL or NDJSON) into a single JSON array, or turn a JSON array back into one object per line.",
+ "why": "Log exports, dataset dumps and streaming APIs often use JSON Lines: one complete JSON value per line, no surrounding brackets. That is great for appending and streaming, but most editors, viewers and test fixtures expect a normal array. Going the other way, bulk import tools and some LLM fine-tuning pipelines want one object per line rather than a big array.\n\nThis converter handles both directions. When a line is not valid JSON it tells you which line failed, so you can find the broken record instead of hunting through thousands of rows. Blank lines are skipped. The work happens in your browser, which matters when the file contains customer records or internal logs.",
+ "howTo": [
+  "Paste your data into the input box.",
+  "Choose JSONL to array or array to JSONL in the Direction menu.",
+  "Set the indent width if you are producing an array.",
+  "Copy the converted result."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between JSONL and NDJSON?",
+   "a": "In practice they are the same idea: one JSON value per line, separated by newlines. This tool reads and writes that format, so it works for files labelled either way."
+  },
+  {
+   "q": "What happens with invalid lines?",
+   "a": "Conversion stops and the message names the line number that failed to parse. Fix or remove that line and run it again. Empty lines are ignored rather than treated as errors."
+  },
+  {
+   "q": "Can the array contain anything?",
+   "a": "When converting array to JSONL, the input must be a top-level JSON array. Each element, whether object, number, string or nested array, becomes one compact line. A single object that is not wrapped in an array is rejected."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "There is no fixed limit, but very large pastes depend on your browser's memory. For multi-gigabyte files use a command line tool such as jq instead."
+  }
+ ],
+ "related": [
+  "json-format",
+  "json-validate",
+  "json-to-csv",
+  "csv-to-json",
+  "jsonl-dataset-validator",
+  "json-minify"
+ ],
+ "keywords": [
+  "jsonl to json array",
+  "ndjson to json converter",
+  "json lines converter online",
+  "json array to jsonl",
+  "free ndjson tool"
+ ]
+}

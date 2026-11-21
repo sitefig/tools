@@ -1,0 +1,45 @@
+{
+ "id": "uuid-v5-generator",
+ "seoTitle": "Free UUID v5 and v3 Name-Based Generator",
+ "metaDescription": "Generate deterministic name-based UUIDs v5 (SHA-1) or v3 (MD5) from a namespace and names, one per line. Free, runs in your browser.",
+ "intro": "Pick a namespace and list names, and get name-based UUIDs. Version 5 uses SHA-1 and version 3 uses MD5, so the same name always gives the same UUID.",
+ "why": "Random UUIDs are good for new records, but sometimes you need the same identifier every time you see the same thing: a URL, a domain name, an email address, a product code. Name-based UUIDs solve this, because they are computed from a namespace and a name rather than chosen at random.\n\nThey let different systems produce matching ids for imported data without sharing a lookup table. The built-in namespaces are DNS, URL, OID and X500, or you can supply your own UUID. Version 5 is preferred over 3 because SHA-1 beats MD5, although neither is a security feature. Do not use these ids to hide or protect private values.",
+ "howTo": [
+  "Choose version 5 or 3, and a namespace such as DNS or URL.",
+  "Enter one name per line. Use a custom namespace UUID if you have your own.",
+  "Copy the UUIDs, each listed with the name it came from."
+ ],
+ "faq": [
+  {
+   "q": "What makes the result deterministic?",
+   "a": "The UUID is a hash of the namespace bytes followed by the name. The same namespace, name and version always produce the same value, on any machine or language."
+  },
+  {
+   "q": "Should I pick v5 or v3?",
+   "a": "Use v5 unless you must match an existing v3 id. Both are just ways of hashing names; SHA-1 in v5 is the newer choice, and neither one is for secrets."
+  },
+  {
+   "q": "Can names be case-sensitive?",
+   "a": "Yes. The name is hashed exactly as typed, so Example.com and example.com give different UUIDs. Normalise case before hashing if you want them to match."
+  },
+  {
+   "q": "Does it need a valid custom namespace?",
+   "a": "Yes. A custom namespace must be a full UUID in the 8-4-4-4-12 format, or the tool shows an error instead of generating a result."
+  }
+ ],
+ "related": [
+  "uuid-generator",
+  "uuid-v7-timestamp-extractor",
+  "ulid-generator",
+  "nanoid-generator",
+  "hash-generator",
+  "mongodb-objectid-parser"
+ ],
+ "keywords": [
+  "uuid v5 generator",
+  "name based uuid",
+  "uuid v3 md5 generator",
+  "free uuid namespace tool",
+  "deterministic uuid from string"
+ ]
+}

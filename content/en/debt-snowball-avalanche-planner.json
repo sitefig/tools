@@ -1,0 +1,39 @@
+{
+ "id": "debt-snowball-avalanche-planner",
+ "seoTitle": "Debt Snowball vs Avalanche Calculator",
+ "metaDescription": "Compare paying off debts smallest balance first or highest rate first. See months to debt-free, interest and payoff order. Free and private.",
+ "intro": "Simulates both payoff strategies for your list of debts and compares time and interest.",
+ "why": "The avalanche method pays the highest rate first and usually costs least. The snowball method clears the smallest balance first, which gives quicker wins. Which one works depends on the numbers and on what keeps you going.\n\nPaste your debts, set your total monthly amount, and the tool simulates both month by month. Freed-up minimum payments roll into the next target. It ignores new borrowing, fees and rate changes.",
+ "howTo": [
+  "Paste one debt per line: name, balance, APR, minimum.",
+  "Enter the total you can pay each month.",
+  "Compare months, total interest and payoff order."
+ ],
+ "faq": [
+  {
+   "q": "What if my budget equals the minimums?",
+   "a": "Then nothing rolls over and both strategies give the same result."
+  },
+  {
+   "q": "Is my debt list stored?",
+   "a": "Nothing you type leaves your browser."
+  },
+  {
+   "q": "Which should I choose?",
+   "a": "Avalanche saves the most interest. Snowball may help motivation. The difference is shown in the result."
+  }
+ ],
+ "related": [
+  "credit-card-payoff-calculator",
+  "loan-calculator",
+  "budget-50-30-20-planner",
+  "net-worth-calculator",
+  "compound-interest",
+  "emergency-fund-calculator"
+ ],
+ "keywords": [
+  "debt snowball",
+  "debt avalanche",
+  "debt payoff planner"
+ ]
+}

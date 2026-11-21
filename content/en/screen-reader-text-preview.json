@@ -1,0 +1,44 @@
+{
+ "id": "screen-reader-text-preview",
+ "seoTitle": "Screen Reader Text Preview: What Gets Announced for Your HTML",
+ "metaDescription": "Paste HTML to read a linear approximation of screen reader output: landmarks, headings, links, buttons, fields, images, lists and tables.",
+ "intro": "Shows a rough linear reading of HTML as a screen reader might announce it.",
+ "why": "Seeing the page as a list of stops shows missing names and odd order fast.\n\nThe tool walks the page, announces landmarks, headings with level, links, buttons, fields with state, images with alt, lists and tables, and skips hidden content. Real screen readers word it differently, so use it to spot problems and then test with one.",
+ "howTo": [
+  "Paste the HTML.",
+  "Read the stops from top to bottom.",
+  "Look for unnamed or empty items.",
+  "Confirm with NVDA, VoiceOver or TalkBack."
+ ],
+ "faq": [
+  {
+   "q": "Is this what NVDA says?",
+   "a": "No, only an approximation."
+  },
+  {
+   "q": "Does it read CSS content?",
+   "a": "No."
+  },
+  {
+   "q": "Why do some images not appear?",
+   "a": "Images with empty alt are decorative and skipped."
+  },
+  {
+   "q": "Is the HTML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "accessible-name-calculator",
+  "landmark-region-outline",
+  "a11y-html-check",
+  "heading-analyzer",
+  "form-label-checker",
+  "aria-attribute-validator"
+ ],
+ "keywords": [
+  "screen reader text preview",
+  "what screen reader reads",
+  "linearized html"
+ ]
+}

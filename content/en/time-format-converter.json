@@ -1,0 +1,45 @@
+{
+  "id": "time-format-converter",
+  "seoTitle": "12-Hour to 24-Hour (Military Time) Converter",
+  "metaDescription": "Convert times between 12-hour AM/PM and 24-hour military format, including 2400, noon and midnight, for a whole list at once.",
+  "intro": "Switch between 3:45 PM and 15:45 (or 1545) for many times in one go.",
+  "why": "Paste times one per line in forms such as 3:45 PM, 0800, 17:30 or 23:59:30. The converter shows the 24-hour time and the four-digit military form for AM/PM inputs, and the AM/PM time for 24-hour inputs, and flags invalid entries. 12:00 AM is 00:00 and 12:00 PM is 12:00.\n\nMilitary time is simply the 24-hour clock written without a colon. 2400 means the end of a day and is normally written 0000 for the next day.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste times, one per line.",
+    "Read the converted forms.",
+    "Fix entries marked invalid.",
+    "Copy the results."
+  ],
+  "faq": [
+    {
+      "q": "Is 12:00 AM noon or midnight?",
+      "a": "Midnight. 12:00 PM is noon."
+    },
+    {
+      "q": "How is 1530 said?",
+      "a": "Fifteen thirty hours."
+    },
+    {
+      "q": "Does it handle seconds?",
+      "a": "Yes, in HH:MM:SS form."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "timezone-converter",
+    "work-hours-calculator",
+    "timestamp-converter",
+    "date-formats",
+    "time-duration-calculator",
+    "world-clock"
+  ],
+  "keywords": [
+    "military time converter",
+    "24 hour to 12 hour",
+    "am pm converter",
+    "time format"
+  ]
+}

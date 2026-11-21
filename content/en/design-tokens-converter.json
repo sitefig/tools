@@ -1,0 +1,45 @@
+{
+  "id": "design-tokens-converter",
+  "seoTitle": "Design Tokens Converter: W3C JSON to CSS, SCSS, Tailwind, JS",
+  "metaDescription": "Convert design tokens in the W3C format ($value, $type, groups, {aliases}) into CSS custom properties, SCSS variables, a Tailwind v4 @theme block or a JavaScript object.",
+  "intro": "Turn a tokens file from a design tool into code for your stylesheets and components.",
+  "why": "The converter flattens groups, inherits $type down the tree, resolves {alias.references} (reporting circular or missing ones) and formats each type for output: colours, dimensions and durations with units, font families, cubic-bezier easings and shadows. CSS output keeps aliases as var(--other-token); SCSS keeps them as variables; the Tailwind output maps tokens to --color-, --spacing-, --font- and other theme namespaces.\n\nThe Design Tokens format is still a community specification and tools differ, so check that your file follows the $value/$type convention. Composite types such as typography are written as JSON text.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste your tokens JSON.",
+    "Choose CSS, SCSS, Tailwind or JavaScript.",
+    "Optionally add a prefix.",
+    "Copy the output into your project."
+  ],
+  "faq": [
+    {
+      "q": "What is the W3C format?",
+      "a": "A JSON structure where each token has $value and optional $type and $description, and groups nest tokens."
+    },
+    {
+      "q": "How are aliases handled?",
+      "a": "A value like {color.brand} becomes a reference to that token."
+    },
+    {
+      "q": "Does it support dark mode themes?",
+      "a": "Convert each theme file separately and scope the CSS yourself."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "css-unit-converter",
+    "tailwind-v4-color-palette",
+    "shadcn-theme-generator",
+    "css-clamp-generator",
+    "json-format",
+    "color-converter"
+  ],
+  "keywords": [
+    "design tokens converter",
+    "w3c design tokens",
+    "tokens to css variables",
+    "json to scss variables"
+  ]
+}

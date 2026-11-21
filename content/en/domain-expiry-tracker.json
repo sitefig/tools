@@ -1,0 +1,44 @@
+{
+ "id": "domain-expiry-tracker",
+ "seoTitle": "Free Domain Expiry Date Tracker for a List of Domains",
+ "metaDescription": "Paste domains with expiry dates and see days left, sorted, with renewal warnings. Free, offline, no lookups.",
+ "intro": "Takes a list of domains and expiry dates you already have and sorts them by days left, marking expired domains and those that need renewing soon.",
+ "why": "Missed renewals cost money and sometimes the domain. A spreadsheet works, but you need the date maths and the sorting every time you look.\n\nThis tool does only that part. It does not look dates up, because a web page cannot query registries without a server. Copy the dates from your registrar or from the WHOIS and RDAP tools and check them again before you rely on them.",
+ "howTo": [
+  "Write one domain and date per line, for example example.com, 2030-08-13.",
+  "Set the warning threshold in days.",
+  "Optionally set a fixed \"today\" date.",
+  "Read the sorted table."
+ ],
+ "faq": [
+  {
+   "q": "Does it look up expiry dates?",
+   "a": "No. It only calculates from the dates you enter."
+  },
+  {
+   "q": "Which date formats work?",
+   "a": "YYYY-MM-DD, optionally followed by a time. Anything else is reported as an error."
+  },
+  {
+   "q": "Which time zone is used?",
+   "a": "Dates are treated as UTC days."
+  },
+  {
+   "q": "Can it send reminders?",
+   "a": "No. It runs once in your browser and stores nothing."
+  }
+ ],
+ "related": [
+  "whois-record-parser",
+  "rdap-json-parser",
+  "jwt-expiry-calculator",
+  "countdown-to-date",
+  "dns-answer-comparer",
+  "x509-chain-analyzer"
+ ],
+ "keywords": [
+  "domain expiry tracker",
+  "domain renewal dates",
+  "domain expiration list"
+ ]
+}

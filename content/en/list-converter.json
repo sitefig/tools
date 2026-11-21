@@ -1,0 +1,46 @@
+{
+ "id": "list-converter",
+ "seoTitle": "Free List Converter: Lines to Comma, JSON Array, SQL IN",
+ "metaDescription": "Convert lists between lines, comma, semicolon, tab, space, JSON array, quoted CSV and SQL IN (...) formats. Free; runs in your browser.",
+ "intro": "Convert a list from lines, comma, semicolon, tab, space or a JSON array into lines, comma lists, JSON arrays, quoted lists or a SQL IN clause, with trimming, empty removal and unique options.",
+ "why": "Lists live in different shapes: one per line in a spreadsheet column, comma separated in a form, a JSON array in code, or quoted values in a SQL query. Moving between them by hand means adding or deleting commas and quotes on every item, which is slow and easy to get wrong.\n\nThis converter reads your list in the source format you pick and writes it in the target format. Quoted CSV input is parsed properly, including commas inside quotes. Output formats include double-quoted and single-quoted lists with escaping, a JSON array and a ready-made SQL IN (...) clause. Trim, drop empty items and keep unique ones are optional. Quoting is simple escaping for convenience; for real queries, use parameters. The conversion happens in your browser.",
+ "howTo": [
+  "Paste your list into the input box.",
+  "Choose the source format in From and the target format in To.",
+  "Set trim, drop empty and unique options.",
+  "Run the tool and copy the converted list."
+ ],
+ "faq": [
+  {
+   "q": "How does it handle commas inside quotes?",
+   "a": "When converting from comma or semicolon lists, text inside double quotes is kept together, and doubled quotes inside are read as one quote character. Line breaks within quotes become spaces."
+  },
+  {
+   "q": "Is the SQL IN output safe to run?",
+   "a": "It escapes single quotes by doubling them, which is fine for ad-hoc queries. For application code use parameterised queries, never string-built SQL."
+  },
+  {
+   "q": "What does the JSON input option expect?",
+   "a": "A JSON array. Strings are used as they are and other values are converted to text. Anything that is not a valid array gives an error message."
+  },
+  {
+   "q": "Is my list uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "list-to-sql-in",
+  "json-array-chunker",
+  "csv-column-extractor",
+  "dedupe-lines",
+  "sort-lines",
+  "text-column-splitter"
+ ],
+ "keywords": [
+  "list converter",
+  "lines to comma separated",
+  "comma separated to list",
+  "list to json array",
+  "convert list to sql in"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "image-compressor",
+  "seoTitle": "Free Image Compressor Online: Shrink JPEG and WebP",
+  "metaDescription": "Compress images by re-encoding them as JPEG or WebP at a quality you choose and see exactly how much you save. Free, files stay in your browser.",
+  "intro": "Re-encodes images as JPEG or WebP at a chosen quality, with an optional maximum width, and reports the size before and after for each file. Several images can be processed at once.",
+  "why": "Heavy images are the usual reason a page loads slowly or an email attachment is rejected. A photo of several megabytes can usually be cut by 70 to 90 percent with no visible difference at screen sizes, if you pick the right quality and dimensions.\n\nChoose a format and a quality from 1 to 100, and optionally a maximum width so very large images are scaled down too. The result list shows each file's original and new size, and tells you honestly if the new file came out larger, which can happen with images that were already well optimised. Compression runs in your browser through the canvas, and the pictures are never uploaded to a server.",
+  "howTo": [
+    "Choose one or more image files.",
+    "Pick JPEG or WebP and set the quality, for example 75.",
+    "Optionally enter a maximum width in pixels to scale large images down.",
+    "Run it, check the size savings and download the compressed files."
+  ],
+  "faq": [
+    {
+      "q": "What quality should I use?",
+      "a": "Around 70 to 80 is a good starting point for photos. Go lower for thumbnails, higher for images with fine detail or text. Compare the result visually, since the best value depends on the picture."
+    },
+    {
+      "q": "Why did my file get bigger?",
+      "a": "Files that are already compressed or optimised, tiny images, and PNGs with flat colours can grow when re-encoded. The result list shows \"larger by\" when that happens, so keep the original instead."
+    },
+    {
+      "q": "Does it keep transparency?",
+      "a": "WebP keeps transparency, but JPEG does not. Transparent areas in a JPEG output are filled with white. Choose WebP if you need to keep the see-through background."
+    },
+    {
+      "q": "Is anything uploaded?",
+      "a": "No. Compression uses your browser's own image encoder on a canvas, so the files are read and re-encoded locally and never leave your device. You can disconnect from the internet after the page loads and it still works."
+    }
+  ],
+  "related": [
+    "image-resizer",
+    "image-format-converter",
+    "image-info",
+    "image-to-base64",
+    "svg-optimizer",
+    "exif-remover"
+  ],
+  "keywords": [
+    "image compressor",
+    "compress image online",
+    "reduce image file size",
+    "jpeg compressor",
+    "free webp compressor"
+  ]
+}

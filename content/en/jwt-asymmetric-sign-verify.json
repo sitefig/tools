@@ -1,0 +1,46 @@
+{
+  "id": "jwt-asymmetric-sign-verify",
+  "seoTitle": "JWT Sign & Verify with RS256, PS256, ES256 in the Browser",
+  "metaDescription": "Generate RSA or ECDSA key pairs, sign JWTs with a private key and verify them with a public key using WebCrypto. Keys stay in your browser.",
+  "intro": "Create and check JSON Web Tokens signed with public-key algorithms (RS256/384/512, PS256/384/512, ES256/384/512).",
+  "why": "Choose generate, sign or verify. Generating creates a key pair and prints PKCS#8 and SPKI PEM plus the public JWK. Signing takes a JSON payload and a PKCS#8 private key (PEM or JWK) and returns the compact token; ECDSA signatures use the raw r||s form the JWS spec requires. Verifying checks the signature with a public key and shows the payload.\n\nThe algorithm is chosen by you, never by the token header (a basic defence against algorithm-confusion attacks); verification checks the signature only, so real code must also check exp, nbf, iss and aud. Output was cross-checked with the jsonwebtoken library in both directions.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Pick an algorithm and generate a key pair.",
+    "Switch to sign, paste the payload and the private key.",
+    "Copy the token, or switch to verify and paste a token with the public key.",
+    "Never paste production private keys into a page you do not control."
+  ],
+  "faq": [
+    {
+      "q": "Which algorithm should I use?",
+      "a": "ES256 is compact and fast; RS256 is the most widely supported; PS256 is RSA with a modern padding scheme."
+    },
+    {
+      "q": "My key says BEGIN RSA PRIVATE KEY.",
+      "a": "That is the older PKCS#1 form. Convert it: openssl pkcs8 -topk8 -nocrypt -in key.pem -out pkcs8.pem."
+    },
+    {
+      "q": "Does it check expiry?",
+      "a": "No. Verify the claims in your application code."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "jwt-decode",
+    "jwt-encode",
+    "jwt-verify-hs",
+    "rsa-key-pair-generator",
+    "ed25519-key-generator",
+    "jwt-expiry-calculator"
+  ],
+  "keywords": [
+    "jwt rs256",
+    "sign jwt online",
+    "verify jwt public key",
+    "es256 jwt",
+    "jwt key pair"
+  ]
+}

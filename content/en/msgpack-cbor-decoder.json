@@ -1,0 +1,45 @@
+{
+  "id": "msgpack-cbor-decoder",
+  "seoTitle": "MessagePack & CBOR Decoder and Encoder (Hex, Base64)",
+  "metaDescription": "Paste MessagePack or CBOR bytes to read them as JSON, or turn JSON into MessagePack / CBOR hex. Byte strings, tags and extension types are shown explicitly.",
+  "intro": "Inspect binary payloads from APIs, queues and IoT devices without writing code.",
+  "why": "Paste hex (with or without spaces or 0x) or base64 and choose MessagePack or CBOR. The decoder handles integers of all sizes, floats (including CBOR half precision), strings, binary, arrays, maps, extension types, CBOR tags and indefinite-length items. Byte strings appear as {\"$binary\"/\"$bytes\": hex}. The encoder turns JSON into the shortest standard encodings.\n\nBoth directions were cross-checked with the @msgpack/msgpack and cbor-x libraries. Values beyond JSON, such as big integers and undefined, appear as small marker objects.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the format and direction.",
+    "Paste hex, base64 or JSON.",
+    "Read the decoded JSON or copy the encoded hex.",
+    "Compare sizes with the JSON text."
+  ],
+  "faq": [
+    {
+      "q": "How do I know which format it is?",
+      "a": "MessagePack maps start with 0x80-0x8f or 0xde/0xdf; CBOR maps with 0xa0-0xbf. Try both if unsure."
+    },
+    {
+      "q": "What are $ext and $tag?",
+      "a": "Markers for MessagePack extension types and CBOR tags, which JSON cannot express."
+    },
+    {
+      "q": "Are Date objects supported?",
+      "a": "Timestamp extensions appear as ext/tag objects; they are not converted to dates."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "bson-hex-converter",
+    "hex-dump-viewer",
+    "base64-decode",
+    "json-format",
+    "protobuf-to-json",
+    "hex-text"
+  ],
+  "keywords": [
+    "messagepack decoder",
+    "cbor decoder",
+    "msgpack to json",
+    "decode cbor online"
+  ]
+}

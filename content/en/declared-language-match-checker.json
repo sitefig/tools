@@ -1,0 +1,45 @@
+{
+ "id": "declared-language-match-checker",
+ "seoTitle": "Declared Language vs Page Text Checker",
+ "metaDescription": "Guess the language of a text from script and common words, then compare it with your lang or hreflang code and flag a mismatch.",
+ "intro": "Checks whether the language your markup declares matches what the text really is.",
+ "why": "A page marked lang=\"nl\" that is mostly German, or a translated page that was never translated, is a common hreflang failure. Paste the text and the declared code; the tool detects the script and the most frequent function words and tells you whether they match.\n\nIt is a simple heuristic: 11 Latin-script languages by common words, plus script detection for CJK, Cyrillic, Arabic, Hebrew, Greek, Devanagari and Thai. It cannot separate languages that share a script and it ignores the region part. Google does not use hreflang or lang to detect language and works it out itself.",
+ "howTo": [
+  "Paste a paragraph of the page text.",
+  "Enter the declared code, for example de-AT.",
+  "Read the detected languages with their shares.",
+  "Investigate any mismatch."
+ ],
+ "faq": [
+  {
+   "q": "How much text does it need?",
+   "a": "At least a few sentences. Very short text is flagged as unreliable."
+  },
+  {
+   "q": "Which languages are covered?",
+   "a": "English, Spanish, French, German, Italian, Portuguese, Dutch, Swedish, Polish, Turkish, Indonesian, plus scripts."
+  },
+  {
+   "q": "Is there a better detector?",
+   "a": "The AI Language Identifier on this site covers 176 languages in the browser."
+  },
+  {
+   "q": "Does it check the region?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "language-detector",
+  "ai-language-identifier",
+  "html-lang-attribute-checker",
+  "hreflang-code-checker",
+  "hreflang-validator",
+  "hreflang-csv-audit"
+ ],
+ "keywords": [
+  "language mismatch hreflang",
+  "detect page language",
+  "lang attribute check",
+  "declared language"
+ ]
+}

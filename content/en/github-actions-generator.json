@@ -1,0 +1,46 @@
+{
+ "id": "github-actions-generator",
+ "seoTitle": "Free GitHub Actions CI Workflow Generator",
+ "metaDescription": "Generate a GitHub Actions CI workflow for Node, Python, Go or Rust with a version matrix, runners, branches and dependency caching. Free in your browser.",
+ "intro": "Choose a language, matrix versions, runners and branches to get a CI workflow YAML that checks out code, sets up the toolchain, caches dependencies and runs tests.",
+ "why": "Every new repository needs a basic CI workflow, and writing the YAML from memory means looking up the right setup action, the matrix key and how caching is switched on. A small indentation slip stops the workflow from loading at all.\n\nThis generator builds a working file for Node, Python, Go and Rust. It sets up a test job that runs on push and pull request for the branches you list, expands a matrix of language versions and runners, and turns on dependency caching where the setup action supports it. Rust gets an explicit cache step. The build and test commands are the common defaults, such as npm ci and pytest, so edit them to fit your project. Output is created locally in the browser.",
+ "howTo": [
+  "Select the language: node, python, go or rust.",
+  "Enter matrix versions separated by commas, or leave it blank for defaults.",
+  "Set runners and branches, and keep Cache dependencies ticked if you want caching.",
+  "Copy the YAML into .github/workflows/ci.yml."
+ ],
+ "faq": [
+  {
+   "q": "What are the default versions?",
+   "a": "Node 18, 20 and 22; Python 3.10, 3.11 and 3.12; Go 1.21 and 1.22; Rust stable and beta. Enter your own comma-separated list if you support different releases."
+  },
+  {
+   "q": "Which commands does the workflow run?",
+   "a": "Node runs npm ci, an optional build and npm test. Python installs requirements.txt and runs pytest. Go runs build and test, and Rust runs cargo build and cargo test. Edit the run lines for your own scripts."
+  },
+  {
+   "q": "How does caching work?",
+   "a": "Node and Python use the built-in cache option of their setup actions, Go uses its own cache setting, and Rust uses an actions/cache step keyed on Cargo.lock. Untick the option to disable all of it."
+  },
+  {
+   "q": "Does it deploy anything?",
+   "a": "No. It only builds and tests. Deployment, secrets and release steps depend on your target and are best added as separate jobs after the tests pass."
+  }
+ ],
+ "related": [
+  "github-actions-matrix-builder",
+  "gitlab-ci-generator",
+  "dockerfile-generator",
+  "makefile-generator",
+  "dependabot-config-generator",
+  "pre-commit-config-generator"
+ ],
+ "keywords": [
+  "github actions generator",
+  "github actions ci workflow",
+  "github workflow yaml generator",
+  "node ci github actions",
+  "free ci config generator"
+ ]
+}

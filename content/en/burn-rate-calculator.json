@@ -1,0 +1,38 @@
+{
+ "id": "burn-rate-calculator",
+ "seoTitle": "Burn Rate Calculator: Gross and Net Monthly Burn",
+ "metaDescription": "Work out gross and net burn from expenses and revenue, or from cash at the start and end of a period, plus runway.",
+ "intro": "Calculates gross burn, net burn and runway from either monthly figures or two cash balances.",
+ "why": "Gross burn is all money going out, net burn is what is left after revenue. Investors usually look at net burn and runway.\n\nYou can enter monthly expenses and revenue, or measure burn from the change in cash over a few months. The cash method includes timing effects like annual prepayments, so use a longer window.",
+ "howTo": [
+  "Choose a method.",
+  "Enter the figures.",
+  "Read gross burn, net burn and runway."
+ ],
+ "faq": [
+  {
+   "q": "Which burn matters?",
+   "a": "Net burn drives runway."
+  },
+  {
+   "q": "Why do the two methods differ?",
+   "a": "Cash timing, one-off purchases and unpaid invoices."
+  },
+  {
+   "q": "Is burn negative when I am profitable?",
+   "a": "Yes, the tool says cash is growing."
+  }
+ ],
+ "related": [
+  "startup-runway-calculator",
+  "startup-break-even-analysis-calculator",
+  "startup-cost-calculator",
+  "break-even",
+  "profit-margin"
+ ],
+ "keywords": [
+  "burn rate calculator",
+  "net burn",
+  "gross burn startup"
+ ]
+}

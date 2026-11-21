@@ -1,0 +1,46 @@
+{
+ "id": "pdf-extract-pages",
+ "seoTitle": "Free Extract PDF Pages - Pull Pages Into a New PDF",
+ "metaDescription": "Pull selected pages such as 1-3,5,7- out of a PDF into a new file without re-rendering. Free, runs in your browser and nothing is uploaded.",
+ "intro": "Choose the pages you want, using a list such as 1-3,5,7-, and get a new PDF that contains only those pages.",
+ "why": "You rarely need the whole document. A signature page from a long contract, the one chart from a 60-page report, or the pages of a scanned pack that belong to one person: extracting just those saves attachment size and keeps unrelated content private.\n\nThis tool keeps the selected pages and drops the rest. The page list is flexible: single pages, ranges and open-ended ranges like 7- for page seven to the end can be combined with commas. Pages are copied as they are, so quality does not change. If you only want to cut out a few pages and keep the rest, use the Delete PDF Pages tool instead. As with the other editing tools, encrypted PDFs are refused, and bookmarks and form fields are not preserved. Everything runs in your browser.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Enter the pages to keep, for example 1-3,5,7-.",
+  "Run the tool.",
+  "Check the page count in the summary and download the new PDF."
+ ],
+ "faq": [
+  {
+   "q": "What page syntax is supported?",
+   "a": "Numbers, ranges with a dash and open-ended ranges, combined with commas: 1-3,5,7-. Pages are numbered from 1. A number past the last page or a malformed list produces an error."
+  },
+  {
+   "q": "Will the pages appear in the order I type them?",
+   "a": "Yes. Pages come out in the order you write them, and a page can be repeated, so 5,1-3 puts page five first. The Reorder PDF Pages tool uses the same list syntax with a focus on reordering."
+  },
+  {
+   "q": "Is the original file changed?",
+   "a": "No. A new file is created, named after the original with extract added. The source on your device is untouched."
+  },
+  {
+   "q": "Why do some features disappear?",
+   "a": "Document-level items such as bookmarks, form fields and page labels are not copied. The visible page content, images and fonts are preserved."
+  }
+ ],
+ "related": [
+  "pdf-delete-pages",
+  "pdf-split",
+  "pdf-reorder-pages",
+  "pdf-merge",
+  "pdf-page-count-and-sizes",
+  "pdf-rotate"
+ ],
+ "keywords": [
+  "extract pdf pages",
+  "pull pages from pdf",
+  "save selected pdf pages",
+  "pdf page extractor online",
+  "free extract pages from pdf"
+ ]
+}

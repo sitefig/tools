@@ -1,0 +1,45 @@
+{
+ "id": "localbusiness-schema-generator",
+ "seoTitle": "LocalBusiness Schema Generator With Subtypes and Hours",
+ "metaDescription": "Build LocalBusiness JSON-LD for a restaurant, dentist or shop: address, geo, phone, opening hours and sameAs. Pick the exact subtype.",
+ "intro": "Builds LocalBusiness markup with address, geo coordinates, phone, price range and opening hours. Choose a specific subtype such as CafeOrCoffeeShop, Dentist or Store.",
+ "why": "The more specific the type, the better the markup describes the business. The type list is taken from the Schema.org vocabulary, so every subtype shown is a real child of LocalBusiness. Fill a few lines, add hours in the simple weekly format, and copy the script tag.\n\nAfter generating, the tool checks the result against Google's local business requirements (address and name are required) and lists recommended fields you left out. Review markup for your own business is not rewarded with stars; the Review builder explains why.",
+ "howTo": [
+  "Choose the business type.",
+  "Fill name, address, phone and the fields you have; add one hours: line per rule.",
+  "Read the notes under the output for missing fields.",
+  "Paste the script into your page and test it with Google's Rich Results Test."
+ ],
+ "faq": [
+  {
+   "q": "Which type should I choose?",
+   "a": "The most specific one that is true, such as Restaurant or Dentist. If none fits, use LocalBusiness."
+  },
+  {
+   "q": "Do I need geo coordinates?",
+   "a": "They are recommended, not required. Use lat and lng with at least four decimals."
+  },
+  {
+   "q": "Why does it warn about servesCuisine?",
+   "a": "That property belongs to food establishments. The tool tells you to pick a restaurant or cafe type."
+  },
+  {
+   "q": "Can I add several locations?",
+   "a": "Generate one block per location and put each on its own location page."
+  }
+ ],
+ "related": [
+  "opening-hours-schema-builder",
+  "schema-generator",
+  "review-aggregaterating-schema-builder",
+  "rich-result-eligibility-checker",
+  "jsonld-syntax-validator",
+  "sameas-profile-list-builder"
+ ],
+ "keywords": [
+  "localbusiness schema generator",
+  "restaurant schema markup",
+  "local business json-ld",
+  "dentist schema"
+ ]
+}

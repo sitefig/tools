@@ -1,0 +1,43 @@
+{
+ "id": "svg-wavy-divider-generator",
+ "seoTitle": "Free SVG Wave Divider Generator for Sections",
+ "metaDescription": "Generate layered SVG wave dividers for section transitions with adjustable height, waves, colour and seed. Copy SVG or CSS. Free.",
+ "intro": "Create a layered SVG wave divider for the edge between two page sections. Set layers, height, amplitude, number of waves, colour and a seed, then copy the SVG or an inline CSS background.",
+ "why": "A straight line between page sections looks abrupt, and a wave softens the change. Designers often export one from a graphics tool, but then it is a fixed shape that does not match the colours of your site, and tweaking a curve by hand in the path data is slow.\n\nThis generator draws smooth layered waves from a few settings. The seed makes the result repeatable, so you can step through shapes until one looks right and come back to it later. You can flip the wave for the bottom of a section and copy it as an SVG or as a data URI in a CSS background. It runs in your browser and the output is a small vector, so it stays sharp at any width.",
+ "howTo": [
+  "Set the number of layers, the height and the amplitude of the waves.",
+  "Choose the number of waves, the colour and the opacity.",
+  "Change the seed until you like the shape, and tick flip for a wave on the bottom edge.",
+  "Copy the SVG or the inline CSS background into your page."
+ ],
+ "faq": [
+  {
+   "q": "What does the seed do?",
+   "a": "It selects one particular random wave shape. The same seed with the same settings always gives the same wave, so you can note a seed you like and reproduce it exactly later."
+  },
+  {
+   "q": "How do I make the wave match the next section?",
+   "a": "Set the wave colour to the background colour of the section it leads into. Layers with lower opacity create a gradual blend, and the flip option moves the wave to the other edge."
+  },
+  {
+   "q": "Will it stay sharp on large screens?",
+   "a": "Yes, because it is vector. Set preserveAspectRatio to stretch it across the width, and keep the height modest so it does not take up too much space on small screens."
+  }
+ ],
+ "related": [
+  "svg-pattern-generator",
+  "svg-optimizer",
+  "css-blob-generator",
+  "svg-to-css",
+  "gradient-generator",
+  "css-ribbon-banner-generator"
+ ],
+ "keywords": [
+  "svg wave divider generator",
+  "wavy section divider svg",
+  "svg wave generator",
+  "css wave background",
+  "section divider svg",
+  "free wave shape generator"
+ ]
+}

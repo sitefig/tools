@@ -1,0 +1,44 @@
+{
+ "id": "table-joiner",
+ "seoTitle": "Table Joiner: VLOOKUP-Style Join of Two CSVs",
+ "metaDescription": "Join two CSV tables on a key column with inner, left, right or full join. Reports unmatched rows. Free and private.",
+ "intro": "Matches rows of two tables on a key and returns one table with the columns of both, like VLOOKUP but for every column.",
+ "why": "Spreadsheets split information across files: customers in one, orders in another. A join puts it back together. Choose the key in each table, ignore case and spaces if needed, and pick how to treat rows without a partner.\n\nIf the right table has several rows for a key, the left row repeats once per match, as in a database. Columns with the same name get a _right suffix. The summary counts unmatched rows on both sides, which is the quickest check of a key problem.",
+ "howTo": [
+  "Paste the left table and the right table.",
+  "Type the key column of each side.",
+  "Choose left, inner, right or full join.",
+  "Copy or download the joined CSV."
+ ],
+ "faq": [
+  {
+   "q": "Left or inner?",
+   "a": "Left keeps every row of the first table, filling blanks where there is no match. Inner keeps only matches."
+  },
+  {
+   "q": "What if a key repeats?",
+   "a": "Rows multiply, as in SQL."
+  },
+  {
+   "q": "Does it match numbers like 1 and 01?",
+   "a": "No, matching is on text."
+  },
+  {
+   "q": "Can I join on two columns?",
+   "a": "Merge the columns into one key first."
+  }
+ ],
+ "related": [
+  "csv-merger",
+  "sql-on-csv",
+  "duplicate-row-remover",
+  "category-value-mapper",
+  "csv-column-extractor",
+  "spreadsheet-diff"
+ ],
+ "keywords": [
+  "join two csv files",
+  "vlookup csv online",
+  "merge tables on key"
+ ]
+}

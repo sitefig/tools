@@ -1,0 +1,45 @@
+{
+ "id": "international-url-structure-advisor",
+ "seoTitle": "ccTLD vs Subdomain vs Subfolder: International SEO URL Advisor",
+ "metaDescription": "Answer five questions and compare country domains, subdomains and subfolders for an international site, using Google's documented trade-offs.",
+ "intro": "A simple scoring helper for the first decision in international SEO: how to structure URLs for different markets.",
+ "why": "Google lists the pros and cons of country-code domains, subdomains and subdirectories in its multi-regional site guidance. This tool weighs those points against your answers on markets, team size, per-country targeting, hosting needs and brand awareness, and prints the ranked options with the reasons.\n\nThe weights are a rule of thumb, not research. Google does not say how authority carries between hosts, so the tool does not claim that. Whatever you choose, hreflang between versions is still needed.",
+ "howTo": [
+  "Choose your answers in the options.",
+  "Read the ranked list and the reasons.",
+  "Compare with Google's trade-offs listed below it.",
+  "Decide, then plan redirects and hreflang."
+ ],
+ "faq": [
+  {
+   "q": "Is the ranking reliable?",
+   "a": "It is a rule of thumb with simple weights. Treat it as a discussion starter."
+  },
+  {
+   "q": "Why not parameters?",
+   "a": "Google lists URL parameters as not recommended."
+  },
+  {
+   "q": "What about the .eu domain?",
+   "a": "Google treats .eu as a generic domain, so it gives no country signal."
+  },
+  {
+   "q": "Does hosting location matter?",
+   "a": "Google says server location is a weak signal, but subfolders share one server location."
+  }
+ ],
+ "related": [
+  "hreflang-generator",
+  "hreflang-x-default-advisor",
+  "language-suggestion-banner-generator",
+  "canonical-generator",
+  "sitemap-generator",
+  "hreflang-format-converter"
+ ],
+ "keywords": [
+  "cctld vs subfolder",
+  "international seo url structure",
+  "subdomain vs subdirectory",
+  "multi-regional site structure"
+ ]
+}

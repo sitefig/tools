@@ -1,0 +1,41 @@
+{
+ "id": "giveaway-winner-picker",
+ "seoTitle": "Giveaway Winner Picker with Backups and Audit Hash",
+ "metaDescription": "Draw giveaway winners and backups from a list of entrants, remove duplicates and get a hash of the list so the draw can be checked. Free, private.",
+ "intro": "Draw winners and backup winners from a list of entrants, remove duplicates, and keep a hash of the list so the draw can be shown to be fair.",
+ "why": "A giveaway needs a draw people can trust. Duplicate entries, excluded accounts and the question 'was it fair?' cause most of the trouble.\n\nThis tool removes duplicates, drops names you exclude, draws winners and ordered backups, and prints the SHA-256 of the cleaned entrant list. With a public seed announced after entries close, anyone can repeat the draw and get the same result. Without a seed it uses secure random numbers. Check the rules of the platform and your country before running a giveaway.",
+ "howTo": [
+  "Paste the entrants, one per line.",
+  "Optionally paste names to exclude, such as staff.",
+  "Set the number of winners and backups, and a seed if you want a repeatable draw.",
+  "Publish the list hash, the seed and the result."
+ ],
+ "faq": [
+  {
+   "q": "What does the hash prove?",
+   "a": "That the list used is the same one you later publish. Anyone can hash the cleaned list and compare."
+  },
+  {
+   "q": "Why announce the seed afterwards?",
+   "a": "If the seed is known before entries close, someone could add names until a seed favours them."
+  },
+  {
+   "q": "Does this follow giveaway law?",
+   "a": "It only draws names. Platform rules and local law differ, so check them yourself."
+  }
+ ],
+ "related": [
+  "random-line-picker",
+  "list-shuffler",
+  "secret-santa-generator",
+  "random-team-splitter",
+  "random-number-picker",
+  "dedupe-lines"
+ ],
+ "keywords": [
+  "giveaway winner picker",
+  "random winner generator",
+  "contest winner picker",
+  "instagram giveaway picker"
+ ]
+}

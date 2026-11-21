@@ -1,0 +1,45 @@
+{
+  "id": "3d-model-viewer",
+  "seoTitle": "3D Model Viewer for STL, OBJ, PLY, GLB and 3MF with Volume and Size",
+  "metaDescription": "Open an STL, OBJ, PLY, GLB/glTF or 3MF mesh in the browser, rotate it with sliders or buttons and read its size, triangle count, surface area and volume.",
+  "intro": "Check a 3D model before printing or sharing, without installing software.",
+  "why": "The viewer parses binary and ASCII STL, OBJ (triangulating polygons, supporting negative indices), PLY (ASCII and binary), glTF/GLB (triangle meshes with node transforms, self-contained files) and 3MF (meshes, components and build transforms), centres the model and draws it with a simple software renderer using flat shading. Controls are range sliders and buttons so it works with a keyboard. It reports triangle count, bounding box, surface area and volume computed with signed tetrahedra; volume is meaningful only for closed meshes. Parsing and measurements were verified on a unit cube in all formats.\n\nThe preview is a basic painter's-algorithm rendering of up to 60,000 triangles, not a full 3D engine; the numbers use every triangle. FBX and glTF files that reference external buffers are not supported, and materials and textures are ignored.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose a .stl, .obj, .ply, .glb or .gltf file, or load the sample cube.",
+    "Use Turn, Tilt, Zoom or the buttons.",
+    "Read size, area and volume.",
+    "Fix non-manifold meshes in your CAD tool before printing."
+  ],
+  "faq": [
+    {
+      "q": "What units are shown?",
+      "a": "Whatever the file uses; STL has no units. Millimetres are typical, so cm3 is shown for convenience."
+    },
+    {
+      "q": "Why is the volume odd?",
+      "a": "Open or self-intersecting meshes give meaningless volumes."
+    },
+    {
+      "q": "Can it handle large files?",
+      "a": "The preview samples triangles above 60,000, but very large files can still be slow."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "svg-path-editor",
+    "image-info",
+    "file-type-detector",
+    "mp4-box-inspector",
+    "hex-dump-viewer",
+    "css-3d-box-shadow-generator"
+  ],
+  "keywords": [
+    "stl viewer",
+    "obj viewer online",
+    "ply viewer",
+    "3d model volume calculator"
+  ]
+}

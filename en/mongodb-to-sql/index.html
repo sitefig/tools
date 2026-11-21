@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free MongoDB Query to SQL Converter Online | Free Tools</title>
+<meta name="description" content="Translate MongoDB find, aggregate, insert, update and delete queries into SQL for PostgreSQL, MySQL or SQLite. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/mongodb-to-sql/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/mongodb-to-sql/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/mongodb-to-sql/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free MongoDB Query to SQL Converter Online | Free Tools">
+<meta property="og:description" content="Translate MongoDB find, aggregate, insert, update and delete queries into SQL for PostgreSQL, MySQL or SQLite. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/mongodb-to-sql/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free MongoDB Query to SQL Converter Online | Free Tools">
+<meta name="twitter:description" content="Translate MongoDB find, aggregate, insert, update and delete queries into SQL for PostgreSQL, MySQL or SQLite. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"MongoDB Query to SQL","url":"https://tools.sitefig.net/en/mongodb-to-sql/","description":"Translate MongoDB find, aggregate, insert, update and delete queries into SQL for PostgreSQL, MySQL or SQLite. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste a MongoDB shell query, such as db.users.find({...}), into the input box.","Choose the SQL dialect: PostgreSQL, MySQL or SQLite.","Copy the SQL and adjust table and column names to your schema."],"keywords":"mongodb to sql, mongo query to sql converter, translate mongodb find to sql, free mongodb sql translator, aggregate pipeline to sql","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SQL Tools","item":"https://tools.sitefig.net/en/#sql-tools"},{"@type":"ListItem","position":3,"name":"MongoDB Query to SQL","item":"https://tools.sitefig.net/en/mongodb-to-sql/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which operations can it translate?","acceptedAnswer":{"@type":"Answer","text":"find and findOne, countDocuments, distinct, insertOne and insertMany, updateOne and updateMany, deleteOne and deleteMany, and simple aggregate pipelines."}},{"@type":"Question","name":"How are regular expressions translated?","acceptedAnswer":{"@type":"Answer","text":"Simple patterns become LIKE where possible, and other patterns use the dialect's regular expression operator, such as REGEXP in MySQL. Check complex patterns by hand."}},{"@type":"Question","name":"Does it run the query?","acceptedAnswer":{"@type":"Answer","text":"No. The shell query is only parsed as text and never executed, and no database is contacted at any point, so you can paste queries from production logs without any side effects."}},{"@type":"Question","name":"What happens to nested documents?","acceptedAnswer":{"@type":"Answer","text":"Dotted paths and embedded documents have no direct SQL equivalent, so you may need to map them to columns or JSON operators yourself."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#sql-tools">SQL Tools</a></li><li><span aria-current="page">MongoDB Query to SQL</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>MongoDB Query to SQL</h1>
+<p class="lede">Translates MongoDB shell queries into SQL: find with operators like $in, $gt and $or, projection, sort, skip and limit, inserts, updates, deletes and simple aggregate pipelines for PostgreSQL, MySQL or SQLite.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="mongodb-to-sql" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>People moving between document and relational databases keep running into the same translation problem. A filter document with $or, $in and a regular expression is compact, but the SQL equivalent takes time to write. This tool reads the shell query and writes SQL for the dialect you pick: $and and $or groups, $in, comparison operators, $regex as LIKE or REGEXP, $exists, projection, sort, skip and limit, plus counting, distinct, inserts, updates with $set, $inc and $unset, deletes and simple pipelines with $match, $group, $lookup and $project. The query is parsed as text and never executed. Real collections are rarely shaped like tables, so treat the SQL as a draft. It runs in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste a MongoDB shell query, such as db.users.find({...}), into the input box.</li><li>Choose the SQL dialect: PostgreSQL, MySQL or SQLite.</li><li>Copy the SQL and adjust table and column names to your schema.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which operations can it translate?</summary><p>find and findOne, countDocuments, distinct, insertOne and insertMany, updateOne and updateMany, deleteOne and deleteMany, and simple aggregate pipelines.</p></details>
+<details><summary>How are regular expressions translated?</summary><p>Simple patterns become LIKE where possible, and other patterns use the dialect's regular expression operator, such as REGEXP in MySQL. Check complex patterns by hand.</p></details>
+<details><summary>Does it run the query?</summary><p>No. The shell query is only parsed as text and never executed, and no database is contacted at any point, so you can paste queries from production logs without any side effects.</p></details>
+<details><summary>What happens to nested documents?</summary><p>Dotted paths and embedded documents have no direct SQL equivalent, so you may need to map them to columns or JSON operators yourself.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/sql-to-mongodb/"><span class="link-card__title">SQL to MongoDB Query</span><span class="link-card__desc">Translate SQL into MongoDB shell syntax: SELECT -&gt; find() with filter, projection, sort, skip, limit (or distinct); GROUP BY / aggregates / simple JOINs -&gt; aggregate pipeline ($match, $lookup, $group, $project, $sort); INSERT VALUES -&gt; insertOne/insertMany; UPDATE -&gt; updateMany with $set/$inc; DELETE -&gt; deleteMany. LIKE becomes a regex. Subqueries, UNION and CTEs are not supported.</span></a></li><li><a class="link-card" href="/en/mongodb-aggregate-builder/"><span class="link-card__title">MongoDB Aggregation Pipeline Builder</span><span class="link-card__desc">Fill in $match, $unwind, $lookup, $group, $sort, $project, $skip, $limit and get a pipeline for mongosh, Node, PyMongo or plain JSON.</span></a></li><li><a class="link-card" href="/en/sql-explainer/"><span class="link-card__title">SQL Query Explainer (plain English)</span><span class="link-card__desc">Explain a SELECT / INSERT / UPDATE / DELETE / CREATE TABLE statement in plain English: tables and joins, filters, grouping, ordering and limits in logical execution order, plus warnings about common pitfalls (SELECT *, leading-wildcard LIKE, functions on columns, big OFFSET, UPDATE/DELETE without WHERE). Rule-based parser: no CTEs, UNION or window frames.</span></a></li><li><a class="link-card" href="/en/json-to-sql/"><span class="link-card__title">JSON to SQL (CREATE TABLE + INSERT)</span><span class="link-card__desc">Infer a table from a JSON array of objects: column types, NULLability, and escaped INSERT statements for PostgreSQL, MySQL or SQLite.</span></a></li><li><a class="link-card" href="/en/sql-dialect-converter/"><span class="link-card__title">SQL DDL Converter (PostgreSQL / MySQL / SQLite)</span><span class="link-card__desc">Convert CREATE TABLE / CREATE INDEX DDL between PostgreSQL, MySQL and SQLite: SERIAL &lt;-&gt; AUTO_INCREMENT, BOOLEAN &lt;-&gt; TINYINT(1), TIMESTAMPTZ &lt;-&gt; DATETIME, UUID &lt;-&gt; CHAR(36), JSONB &lt;-&gt; JSON, defaults (now(), true/false), identifier quoting, PK/UNIQUE/FK and indexes. DDL is parsed and re-emitted; views, triggers, functions, partitions and CHECK constraints are not carried over.</span></a></li><li><a class="link-card" href="/en/sql-format/"><span class="link-card__title">SQL Formatter</span><span class="link-card__desc">Uppercase keywords and lay out clauses, joins and subqueries on separate lines.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

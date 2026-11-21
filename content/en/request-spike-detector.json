@@ -1,0 +1,44 @@
+{
+ "id": "request-spike-detector",
+ "seoTitle": "Request Rate Spike Detector for Access Logs",
+ "metaDescription": "Flag minutes where request volume or errors jump above normal, using the median and robust spread. Free, runs in your browser.",
+ "intro": "Counts requests and errors per bucket and flags outliers against a median and MAD baseline.",
+ "why": "A single busy minute can be a crawler, a deploy or an attack. The tool builds a per-bucket series and marks buckets far above the typical level.\n\nThe baseline is the median plus a multiple of the robust spread (1.4826 times the median absolute deviation). It is a simple statistic, not a forecast, and flagged buckets are outliers, not proof of a problem.",
+ "howTo": [
+  "Paste an access log or any timestamped log.",
+  "Choose the bucket size and sensitivity.",
+  "Set a minimum count to ignore tiny buckets.",
+  "Read the spikes and the bar chart."
+ ],
+ "faq": [
+  {
+   "q": "What counts as an error?",
+   "a": "5xx status in access logs, or an ERROR or FATAL level in other logs."
+  },
+  {
+   "q": "Why use the median?",
+   "a": "A spike does not move the median, so it does not hide itself."
+  },
+  {
+   "q": "What about a quiet site?",
+   "a": "With a median near zero any busy bucket above the minimum is flagged."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "crawl-spike-drop-alerts",
+  "log-level-histogram",
+  "top-ips-user-agents",
+  "brute-force-scan-detector",
+  "response-time-percentiles",
+  "access-log-analyzer"
+ ],
+ "keywords": [
+  "traffic spike detection logs",
+  "requests per minute from log",
+  "anomaly detection access log"
+ ]
+}

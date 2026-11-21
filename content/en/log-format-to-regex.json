@@ -1,0 +1,44 @@
+{
+ "id": "log-format-to-regex",
+ "seoTitle": "Nginx log_format and Apache LogFormat to Regex",
+ "metaDescription": "Paste an nginx log_format or Apache LogFormat and get a named-group regular expression for JavaScript and Python, tested on a sample line. Free.",
+ "intro": "Converts a log format directive into a regular expression with named groups and tests it on a sample line.",
+ "why": "Custom log formats are the usual reason a standard parser fails. Writing the regex by hand means escaping brackets and quotes for every field.\n\nThe tool maps each nginx variable or Apache code to a pattern, using the quotes or brackets around it to choose between a non-space, quoted or bracketed match. The result was tested against Python on sample lines. Odd content such as stray quotes in a user agent can still break a match.",
+ "howTo": [
+  "Paste the log_format or LogFormat line.",
+  "Paste one real log line as a sample.",
+  "Check that every field is extracted.",
+  "Copy the JavaScript or Python regex."
+ ],
+ "faq": [
+  {
+   "q": "Which variables are known?",
+   "a": "The common nginx variables and Apache codes. Unknown ones get a safe non-space pattern."
+  },
+  {
+   "q": "Why does my sample not match?",
+   "a": "A field may contain spaces or quotes the pattern does not allow. Adjust that group by hand."
+  },
+  {
+   "q": "Python or JavaScript?",
+   "a": "Both are shown. Python uses (?P<name>) and JavaScript uses (?<name>)."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "access-log-parser",
+  "log-to-csv",
+  "nginx-config-generator",
+  "apache-vhost-generator",
+  "robots-pattern-to-regex-converter",
+  "log-format-detector"
+ ],
+ "keywords": [
+  "nginx log_format regex",
+  "apache logformat to regex",
+  "log regex generator"
+ ]
+}

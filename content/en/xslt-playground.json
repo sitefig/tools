@@ -1,0 +1,45 @@
+{
+ "id": "xslt-playground",
+ "seoTitle": "XSLT Playground: Transform XML in Your Browser | Free",
+ "metaDescription": "Apply an XSLT 1.0 stylesheet to XML and see the result. Uses your browser built-in engine, so nothing is uploaded.",
+ "intro": "Runs an XSLT 1.0 stylesheet on pasted XML and shows the output text or markup.",
+ "why": "XSLT is still used to turn XML feeds, sitemaps and exports into other formats. Testing a stylesheet usually means a command line tool or an IDE.\n\nThis page uses the XSLT processor built into your browser. Paste the XML and the stylesheet, and read the result. Malformed XML or a rejected stylesheet gives an error message. Only XSLT 1.0 is supported by browsers; functions from XSLT 2 or 3 will fail. Output may differ slightly between browsers.",
+ "howTo": [
+  "Paste the XML in the first box.",
+  "Paste the stylesheet in the second.",
+  "Read the transformed output.",
+  "Edit the stylesheet and run again."
+ ],
+ "faq": [
+  {
+   "q": "Which XSLT version?",
+   "a": "1.0, the version browsers implement."
+  },
+  {
+   "q": "Why does my stylesheet fail?",
+   "a": "It may use XSLT 2 or 3 functions, or have a mistake. The message from the browser is shown."
+  },
+  {
+   "q": "Does it fetch other files?",
+   "a": "No. xsl:import and document() are not fetched."
+  },
+  {
+   "q": "Is the XML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "xpath-tester",
+  "xml-format",
+  "xml-to-json",
+  "xml-validate",
+  "xsd-validator",
+  "xsd-viewer"
+ ],
+ "keywords": [
+  "xslt online",
+  "xslt tester",
+  "xml transform online",
+  "xslt playground"
+ ]
+}

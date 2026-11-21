@@ -1,0 +1,46 @@
+{
+ "id": "macro-calculator",
+ "seoTitle": "Free Macro Calculator: Carbs, Protein and Fat in Grams",
+ "metaDescription": "Turn a daily calorie target into grams of carbohydrate, protein and fat using preset splits such as balanced, low-carb or keto. Free and in your browser.",
+ "intro": "Enter a daily calorie target and pick a carbohydrate, protein and fat split. The tool converts each share into grams per day.",
+ "why": "Calorie targets are only half of a nutrition plan; many people also want to know how much carbohydrate, protein and fat that adds up to. The conversion is simple but fiddly: carbohydrate and protein give about 4 kcal per gram, fat about 9, so the same percentage means very different gram amounts. This calculator takes your calorie number, applies one of five common presets, from balanced 40/30/30 to keto 5/25/70, and returns the grams for each. It is a handy second step after estimating your calories with the BMR and TDEE tool. It does not tailor the split to your health, so for medical conditions or a competitive sport, ask a dietitian. This is not medical advice.",
+ "howTo": [
+  "Enter your daily calorie target.",
+  "Select a split: balanced, low-carb, high-protein, keto or high-carb.",
+  "Read the grams of carbs, protein and fat per day."
+ ],
+ "faq": [
+  {
+   "q": "How are grams calculated from percentages?",
+   "a": "Calories for each macro equal total calories times its share. Carbohydrate and protein are divided by 4 kcal per gram, fat by 9 kcal per gram."
+  },
+  {
+   "q": "Can I set my own percentages?",
+   "a": "No, the tool offers five fixed presets. If you want a custom split, use the percentage calculator on the calories and divide by 4 or 9."
+  },
+  {
+   "q": "Which split is best?",
+   "a": "There is no single best split. It depends on goals, preferences, activity and health. The presets are common starting points, not recommendations."
+  },
+  {
+   "q": "Does it count fibre or alcohol?",
+   "a": "No. Only carbohydrate, protein and fat are modelled. Alcohol provides around 7 kcal per gram and is not included."
+  }
+ ],
+ "related": [
+  "bmr-tdee",
+  "bmi-calculator",
+  "water-intake",
+  "ideal-weight",
+  "body-fat-navy",
+  "percentage-calculator"
+ ],
+ "keywords": [
+  "macro calculator",
+  "free macro calculator",
+  "macronutrient calculator",
+  "carbs protein fat calculator",
+  "keto macro calculator",
+  "calories to grams"
+ ]
+}

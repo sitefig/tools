@@ -1,0 +1,46 @@
+{
+ "id": "raffle-picker",
+ "seoTitle": "Free Raffle Picker: Draw Random Winners from a List",
+ "metaDescription": "Paste a list of names and draw one or more winners at random without repeats. Uses secure random numbers. Free, runs in your browser.",
+ "intro": "Paste names, one per line, and set the number of winners. The tool shuffles the list and returns that many winners in order.",
+ "why": "Giveaways, classroom helpers, office prizes and meeting turns all come down to the same fair draw. Drawing names from a hat is charming but slow, and spreadsheets need formulas that recalculate every time you touch them. This picker takes a pasted list, shuffles it using the browser's secure random generator in an unbiased way and returns the requested number of winners as a numbered list, so first, second and third place are clear. Each entry can win only once. Entries are counted at the top, so you can check nothing was lost in the paste. The names are processed in your browser and never uploaded, but for regulated prize draws check your local rules, as this is not a certified system.",
+ "howTo": [
+  "Paste the names into the box, one per line.",
+  "Set the number of winners.",
+  "Run the tool and read the numbered list of winners."
+ ],
+ "faq": [
+  {
+   "q": "Can the same name win twice?",
+   "a": "No. The list is shuffled and the first winners are taken from the top, so each line can appear once. If a person has several entries, list their name several times."
+  },
+  {
+   "q": "Is the draw fair?",
+   "a": "Yes. It uses a Fisher-Yates shuffle with random numbers from the browser's secure generator, so every entry has an equal chance in each position."
+  },
+  {
+   "q": "What are the limits?",
+   "a": "You need at least one name, and the winners must be between 1 and the number of lines. Blank lines are ignored and surrounding spaces trimmed."
+  },
+  {
+   "q": "Is it suitable for official prize draws?",
+   "a": "It is fine for informal giveaways, but formal competitions may have legal requirements for how winners are chosen and recorded. This page keeps no record of draws."
+  }
+ ],
+ "related": [
+  "random-team-splitter",
+  "random-number-picker",
+  "decision-wheel",
+  "coin-flip",
+  "dice-roller",
+  "sort-lines"
+ ],
+ "keywords": [
+  "raffle picker",
+  "free raffle picker",
+  "random name picker",
+  "giveaway winner picker",
+  "draw winners from a list",
+  "random winner generator"
+ ]
+}

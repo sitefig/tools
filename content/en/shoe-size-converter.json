@@ -1,0 +1,39 @@
+{
+ "id": "shoe-size-converter",
+ "seoTitle": "Shoe Size Converter: EU, UK, US and Foot Length",
+ "metaDescription": "Convert adult shoe sizes between EU, UK, US men and women and foot length in mm with the standard formulas. Free, private.",
+ "intro": "Converts between foot length, EU, UK and US adult shoe sizes using the published formulas.",
+ "why": "Shoe size systems measure different things. UK and US sizes count barleycorns of the last, and EU sizes count Paris points. The ISO conversion uses foot length: EU = 0.15 x length in mm + 2, UK = 3 x length / 25.4 - 23.\n\nUS men is one above UK in these formulas, and US women is another 1.5 above, which is the common scale. Brands cut shoes differently, so treat the output as a guide and check the maker's chart. Children's sizes are not covered.",
+ "howTo": [
+  "Choose what you know: foot length or a size system.",
+  "Enter the value.",
+  "Read all systems and the nearest half sizes."
+ ],
+ "faq": [
+  {
+   "q": "How do I measure foot length?",
+   "a": "Stand on paper, mark heel and longest toe, and measure the distance. Do it in the evening."
+  },
+  {
+   "q": "Why do brands differ?",
+   "a": "Lasts and fit differ, so the same number fits differently."
+  },
+  {
+   "q": "Are children's sizes included?",
+   "a": "No. They use other zero points."
+  }
+ ],
+ "related": [
+  "clothing-size-converter",
+  "ring-size-converter",
+  "clothing-shoe-size-chart",
+  "unit-converter",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "shoe size converter",
+  "eu uk us shoe size",
+  "foot length to shoe size"
+ ]
+}

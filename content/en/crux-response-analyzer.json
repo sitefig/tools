@@ -1,0 +1,38 @@
+{
+ "id": "crux-response-analyzer",
+ "seoTitle": "CrUX and PageSpeed Field Data Analyzer: Core Web Vitals p75",
+ "metaDescription": "Paste CrUX API or PageSpeed Insights JSON and get Core Web Vitals pass or fail, p75 vs thresholds, good/needs improvement/poor shares and history trends.",
+ "intro": "Read a Chrome UX Report or PageSpeed Insights response and see whether the site passes Core Web Vitals.",
+ "why": "Field data from real Chrome users decides the Core Web Vitals assessment. The CrUX API returns histograms and 75th-percentile values as JSON that is hard to read at a glance. This analyzer takes a queryRecord response, a queryHistoryRecord response or the loadingExperience block of a PageSpeed Insights response and grades LCP, INP, CLS, FCP and TTFB against the published thresholds, shows the good / needs improvement / poor split and reports the trend over history periods.\n\nThe page cannot call the API (that needs a key and a network request): run the request yourself and paste the JSON. Thresholds are the web.dev values (LCP 2.5 s, INP 200 ms, CLS 0.1). Field data covers the last 28 days and is not a lab test.",
+ "howTo": [
+  "Call the CrUX API (or open the PageSpeed Insights JSON) and copy the response.",
+  "Paste it here.",
+  "Read the verdicts and the overall assessment."
+ ],
+ "faq": [
+  {
+   "q": "Which metrics pass Core Web Vitals?",
+   "a": "LCP at or under 2.5 s, INP at or under 200 ms and CLS at or under 0.1 at the 75th percentile."
+  },
+  {
+   "q": "Why not fetch it for me?",
+   "a": "The API needs an API key and cross-site requests, which this site never makes."
+  },
+  {
+   "q": "Does it support history data?",
+   "a": "Yes, queryHistoryRecord responses show first-to-last change per metric."
+  }
+ ],
+ "related": [
+  "core-web-vitals-grader",
+  "har-analyzer",
+  "image-seo",
+  "http-headers-analyzer",
+  "rank-history-analyzer"
+ ],
+ "keywords": [
+  "crux api response viewer",
+  "core web vitals pass fail",
+  "pagespeed json analyzer"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "nextjs-metadata-generator",
+ "seoTitle": "Free Next.js Metadata Generator for the App Router",
+ "metaDescription": "Generate a Next.js metadata export or generateMetadata with title template, canonical, Open Graph, Twitter and robots, or Pages Router tags. Free.",
+ "intro": "Generates a Next.js App Router metadata export, either static or with generateMetadata, covering title template, description, canonical, Open Graph, Twitter card, robots, icons and verification, or the equivalent Pages Router Head tags.",
+ "why": "Next.js moved SEO tags from hand-written Head elements to a typed metadata object, and the shape is easy to get slightly wrong: metadataBase, title templates, canonical paths, openGraph images and robots values all have their own spelling. This form gives you a starting object. Fill in the title, template, description, site URL, canonical path, social image, Twitter handle and locale, and choose noindex if needed. You can output static metadata, a generateMetadata function, or Pages Router tags. Add keywords in the input box. It gives you correct structure, but good titles and descriptions still need your own writing. The generator runs in your browser and nothing is sent to a server.",
+ "howTo": [
+  "Enter your keywords in the input box, comma separated.",
+  "Fill in the title, template, description, site URL, canonical path, image, Twitter handle and locale.",
+  "Choose the output style, then copy the code into layout.tsx or page.tsx."
+ ],
+ "faq": [
+  {
+   "q": "What is metadataBase for?",
+   "a": "It is the site URL that Next.js uses to turn relative paths for canonical links and images into absolute URLs. Set it to your production domain."
+  },
+  {
+   "q": "What is the difference between static metadata and generateMetadata?",
+   "a": "Static metadata is a fixed object for pages whose tags do not change. generateMetadata is a function for pages whose tags depend on data, such as a blog post fetched by slug."
+  },
+  {
+   "q": "What does the noindex option do?",
+   "a": "It adds robots settings that ask search engines not to index the page or follow its links. Use it for staging, thank-you pages and private areas."
+  },
+  {
+   "q": "Does it support the Pages Router?",
+   "a": "Yes. Choose the Pages Router output to get Head tags for title, description, canonical, Open Graph and Twitter instead of a metadata object."
+  }
+ ],
+ "related": [
+  "meta-tag-generator",
+  "og-twitter-generator",
+  "canonical-generator",
+  "robots-generator",
+  "sitemap-generator",
+  "schema-generator"
+ ],
+ "keywords": [
+  "nextjs metadata generator",
+  "next.js app router metadata",
+  "generatemetadata example",
+  "free next js seo tags",
+  "nextjs open graph metadata"
+ ]
+}

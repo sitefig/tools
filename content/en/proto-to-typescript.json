@@ -1,0 +1,45 @@
+{
+ "id": "proto-to-typescript",
+ "seoTitle": "Free Protobuf to TypeScript Interface Converter",
+ "metaDescription": "Convert .proto messages and enums into TypeScript interfaces that match the proto3 JSON mapping. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Converts .proto messages and enums into TypeScript interfaces and types that match the proto3 JSON mapping: nested messages as Outer_Inner, repeated as arrays, map as Record. Services are ignored.",
+ "why": "A browser client that talks to a gRPC-Web gateway or a JSON transcoding proxy receives plain JSON, not binary protobuf. It still helps to have types for those payloads. Full generators such as protoc plugins are the right tool for production, but they need setup, and sometimes you only want the data shapes for a quick script or review. Paste the messages here and get interfaces following the JSON mapping: camelCase fields, int64 as string or number as you choose, Timestamp as a string, oneof members optional and enums as string unions or TypeScript enums. Services and RPC definitions are ignored. The conversion runs in your browser.",
+ "howTo": [
+  "Paste the .proto source into the input box.",
+  "Choose camelCase names, how 64-bit integers are typed, and whether to emit TypeScript enums.",
+  "Copy the interfaces into your project."
+ ],
+ "faq": [
+  {
+   "q": "How are nested messages named?",
+   "a": "A message Inner declared inside Outer becomes the interface Outer_Inner. That avoids name clashes between nested messages with the same name and keeps their origin visible in the output."
+  },
+  {
+   "q": "How are repeated and map fields typed?",
+   "a": "Repeated fields become arrays of the element type, and map fields become Record types that carry the key and value types, which matches how the JSON mapping represents them."
+  },
+  {
+   "q": "What happens to oneof?",
+   "a": "Each member of a oneof becomes an optional property, because in a real message at most one of them is present. Your code can check which one is set before using it."
+  },
+  {
+   "q": "Does it generate gRPC client code?",
+   "a": "No. Services and RPC methods are ignored. It only produces data types, so use protoc or ts-proto for client code."
+  }
+ ],
+ "related": [
+  "protobuf-to-json",
+  "protobuf-to-json-schema",
+  "protobuf-formatter",
+  "json-schema-to-protobuf",
+  "graphql-to-typescript",
+  "typescript-to-json-schema"
+ ],
+ "keywords": [
+  "proto to typescript",
+  "protobuf to typescript interfaces",
+  "convert proto messages to ts",
+  "free protobuf typescript generator",
+  "grpc web typescript types"
+ ]
+}

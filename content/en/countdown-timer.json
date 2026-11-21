@@ -1,0 +1,46 @@
+{
+ "id": "countdown-timer",
+ "seoTitle": "Free Online Countdown Timer with Alarm Beep",
+ "metaDescription": "Set hours, minutes and seconds, then start a countdown that beeps at zero. Pause, skip and reset. Free timer that runs in your browser.",
+ "intro": "Set hours, minutes and seconds and press Start. The timer counts down on screen, beeps when it reaches zero, and can be paused or reset.",
+ "why": "Boiling an egg, running a presentation, limiting a quiz or taking a break from the screen all need a timer with a clear display. A countdown on the screen is easy to glance at from across a room, and a beep at zero means you can look away. This one has the three fields you would expect, a large readout, and pause and reset controls. The countdown is clock-based rather than tick-based, so it stays on time even if the browser is busy, and the page needs no account or app. Browsers may block sound until you have interacted with the page, and some pause background tabs, so keep the tab visible for important timing. Nothing is sent or stored.",
+ "howTo": [
+  "Enter the hours, minutes and seconds to count down from.",
+  "Press Start, and Pause if you need to stop temporarily.",
+  "Wait for the beep at zero, or press Reset to start over."
+ ],
+ "faq": [
+  {
+   "q": "Will it make a sound?",
+   "a": "Yes, a short beep plays when the time runs out, provided your device volume is up and the browser allows audio. Some browsers need you to have clicked on the page first."
+  },
+  {
+   "q": "Does it work in a background tab?",
+   "a": "The time is based on the clock, so it stays correct, but browsers may slow or delay updates and sounds in hidden tabs. Keep it visible for critical timing."
+  },
+  {
+   "q": "What does the Skip button do?",
+   "a": "It ends the current segment and moves on. With a single countdown there is nothing next, so it finishes the timer, with a beep."
+  },
+  {
+   "q": "Why does it say 'Set a time above 0'?",
+   "a": "All three fields are zero or empty, so there is nothing to count down. Enter at least one second in any of the hours, minutes or seconds fields to start."
+  }
+ ],
+ "related": [
+  "stopwatch",
+  "pomodoro-timer",
+  "exam-section-timer",
+  "countdown-to-date",
+  "world-clock",
+  "decision-wheel"
+ ],
+ "keywords": [
+  "online countdown timer",
+  "free countdown timer",
+  "timer with alarm",
+  "browser timer",
+  "kitchen timer online",
+  "countdown timer hours minutes seconds"
+ ]
+}

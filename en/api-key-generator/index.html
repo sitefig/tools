@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free API Key Generator with Prefix, Checksum and Hash | Free Tools</title>
+<meta name="description" content="Generate API keys with a recognisable prefix, secure random body, optional CRC-32 checksum and the SHA-256 hash to store. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/api-key-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/api-key-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/api-key-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free API Key Generator with Prefix, Checksum and Hash | Free Tools">
+<meta property="og:description" content="Generate API keys with a recognisable prefix, secure random body, optional CRC-32 checksum and the SHA-256 hash to store. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/api-key-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free API Key Generator with Prefix, Checksum and Hash | Free Tools">
+<meta name="twitter:description" content="Generate API keys with a recognisable prefix, secure random body, optional CRC-32 checksum and the SHA-256 hash to store. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"API Key Generator (prefixed, with checksum & hash)","url":"https://tools.sitefig.net/en/api-key-generator/","description":"Generate API keys with a recognisable prefix, secure random body, optional CRC-32 checksum and the SHA-256 hash to store. Free, in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the prefix (for example sk_live_), the number of random characters and how many keys you want.","Choose the alphabet and tick the CRC-32 checksum option if you want it.","Copy the keys and the matching SHA-256 hashes."],"keywords":"api key generator, generate api keys with prefix, api token generator with checksum, free secure api key tool, sk_live style key generator","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Hashing & JWT","item":"https://tools.sitefig.net/en/#hashing-and-jwt"},{"@type":"ListItem","position":3,"name":"API Key Generator (prefixed, with checksum & hash)","item":"https://tools.sitefig.net/en/api-key-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why use a prefix?","acceptedAnswer":{"@type":"Answer","text":"A prefix such as sk_live_ shows what a token is and where it belongs, makes leaks easier to find in code and logs, and lets secret scanners recognise it."}},{"@type":"Question","name":"What does the checksum do?","acceptedAnswer":{"@type":"Answer","text":"A CRC-32 checksum appended as six base62 characters lets a service reject typos or random guesses before touching the database. It is not a security feature on its own."}},{"@type":"Question","name":"Why show a hash?","acceptedAnswer":{"@type":"Answer","text":"You should store only the SHA-256 hash of a key, so a database leak does not expose working keys. Show the full key to the user once, at creation."}},{"@type":"Question","name":"Is the randomness good enough?","acceptedAnswer":{"@type":"Answer","text":"The body uses crypto.getRandomValues without modulo bias. For production keys, still generate them server-side, in a place you control."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#hashing-and-jwt">Hashing &amp; JWT</a></li><li><span aria-current="page">API Key Generator (prefixed, with checksum &amp; hash)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>API Key Generator (prefixed, with checksum &amp; hash)</h1>
+<p class="lede">Generates API keys with a recognisable prefix such as sk_live_, a secure random body from crypto.getRandomValues, an optional CRC-32 checksum suffix like GitHub tokens, and the SHA-256 hash you should store.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="api-key-generator" data-module="devz2" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Good API keys have a few properties that a quick random string lacks: a prefix that tells you what it is and which environment it belongs to, enough randomness, and a form that scanners can recognise if it leaks. The checksum suffix, as GitHub uses, lets a server reject a mistyped key without a database lookup and helps secret scanners avoid false positives. You also should not store the key itself, only its hash. This tool generates keys with all of these, in the alphabet and length you choose, and shows the SHA-256 hash next to each. Keys are random and created in your browser, but treat anything shown on a web page as an example: for production, generate keys in your own backend.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the prefix (for example sk_live_), the number of random characters and how many keys you want.</li><li>Choose the alphabet and tick the CRC-32 checksum option if you want it.</li><li>Copy the keys and the matching SHA-256 hashes.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why use a prefix?</summary><p>A prefix such as sk_live_ shows what a token is and where it belongs, makes leaks easier to find in code and logs, and lets secret scanners recognise it.</p></details>
+<details><summary>What does the checksum do?</summary><p>A CRC-32 checksum appended as six base62 characters lets a service reject typos or random guesses before touching the database. It is not a security feature on its own.</p></details>
+<details><summary>Why show a hash?</summary><p>You should store only the SHA-256 hash of a key, so a database leak does not expose working keys. Show the full key to the user once, at creation.</p></details>
+<details><summary>Is the randomness good enough?</summary><p>The body uses crypto.getRandomValues without modulo bias. For production keys, still generate them server-side, in a place you control.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/random-secret-generator/"><span class="link-card__title">Random Secret / Token Generator</span><span class="link-card__desc">Hex, base64, base64url, UUID v4, alphanumeric or numeric tokens from crypto.getRandomValues.</span></a></li><li><a class="link-card" href="/en/password-generator/"><span class="link-card__title">Password Generator</span><span class="link-card__desc">Cryptographically random passwords (crypto.getRandomValues, no modulo bias). Guarantees each selected class appears.</span></a></li><li><a class="link-card" href="/en/hmac-generator/"><span class="link-card__title">HMAC Generator</span><span class="link-card__desc">HMAC with MD5, SHA-1, SHA-256, SHA-384 or SHA-512; hex and Base64 output.</span></a></li><li><a class="link-card" href="/en/uuid-generator/"><span class="link-card__title">UUID Generator</span><span class="link-card__desc">Generate v1, v4 and v7 UUIDs in bulk (up to 1000) with formatting options.</span></a></li><li><a class="link-card" href="/en/nanoid-generator/"><span class="link-card__title">NanoID Generator</span><span class="link-card__desc">URL-safe random IDs with custom length and alphabet.</span></a></li><li><a class="link-card" href="/en/sha3-hash-generator/"><span class="link-card__title">SHA-3 / Keccak / SHAKE Hash Generator</span><span class="link-card__desc">SHA3-224/256/384/512, Keccak-256 and Keccak-512 (the pre-standard padding used by Ethereum), and the SHAKE128 / SHAKE256 extendable-output functions with a chosen output length. Hand-written Keccak-f[1600]; the browser Web Crypto API has no SHA-3, so this is pure JavaScript (fine for text, slow for megabytes).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

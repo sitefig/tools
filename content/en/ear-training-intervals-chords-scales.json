@@ -1,0 +1,45 @@
+{
+ "id": "ear-training-intervals-chords-scales",
+ "seoTitle": "Ear Training: Identify Intervals, Chords and Scales by Ear",
+ "metaDescription": "Listen to an interval, chord or scale and choose its name; your accuracy per type is tracked. Free, no sign-up, works offline.",
+ "intro": "Plays a random interval, chord or scale from a random starting note and asks you to name it, then tracks your accuracy for each type.",
+ "why": "Ear training is repetition with feedback. Choose intervals, chords or scales, press play, and pick the name from the buttons. Melodic mode plays notes one after another, harmonic mode plays them together.\n\nSounds are generated with the Web Audio API in equal temperament with A4 at 440 Hz. Your accuracy per type is saved in this browser so you can see which ones to work on; if storage is blocked it still works for the session. The tool needs sound on.",
+ "howTo": [
+  "Choose intervals, chords or scales.",
+  "Press Play a new sound and listen.",
+  "Pick the answer; hear it again if needed.",
+  "Check the accuracy list."
+ ],
+ "faq": [
+  {
+   "q": "What is included?",
+   "a": "12 intervals, 7 chord types and 6 scales and modes."
+  },
+  {
+   "q": "Is my progress saved?",
+   "a": "In this browser if storage is allowed."
+  },
+  {
+   "q": "Why triangle waves?",
+   "a": "They are softer than square waves; you can change the sound."
+  },
+  {
+   "q": "Can I use headphones?",
+   "a": "Yes."
+  }
+ ],
+ "related": [
+  "virtual-piano-keyboard",
+  "chord-finder-guitar-ukulele",
+  "sight-reading-note-trainer",
+  "instrument-tuner",
+  "tone-generator",
+  "bpm-detector"
+ ],
+ "keywords": [
+  "ear training online",
+  "interval trainer",
+  "chord recognition practice",
+  "scale ear training"
+ ]
+}

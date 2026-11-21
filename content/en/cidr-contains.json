@@ -1,0 +1,47 @@
+{
+ "id": "cidr-contains",
+ "seoTitle": "Free CIDR Contains IP Check for IPv4 and IPv6",
+ "metaDescription": "Check which CIDR ranges contain each IP address from a list. Works for IPv4 and IPv6, and reports every matching range. Free, in your browser.",
+ "intro": "Enter a list of CIDR ranges and a list of IP addresses, and see which ranges contain each address. IPv4 and IPv6 can be mixed.",
+ "why": "Allow lists and block lists are written as ranges, but the evidence is individual addresses from logs. You need to know whether 172.16.0.1 falls inside the ranges in a firewall, a rate-limit exemption or an IP restriction on an API key, and doing it by eye across a long list invites mistakes.\n\nThis tool checks every address against every range and prints the result per line: which ranges contain it, or that it is in none. Invalid addresses are flagged without stopping the rest. Matching is done with exact integer arithmetic, so it behaves the same for IPv4 and IPv6. Nothing leaves your browser.",
+ "howTo": [
+  "Enter your CIDR ranges in the first box, one per line, for example 10.0.0.0/8.",
+  "Enter the IP addresses to test in the second box, one per line.",
+  "Run the check.",
+  "Read each address with the ranges that contain it, or the message that none do."
+ ],
+ "faq": [
+  {
+   "q": "Does it handle IPv4 and IPv6 together?",
+   "a": "Yes. Each address is only compared with ranges of the same family, so an IPv6 address is never matched against an IPv4 range. IPv4-mapped IPv6 addresses are treated as IPv6."
+  },
+  {
+   "q": "What if an address matches several ranges?",
+   "a": "All matching ranges are listed, from your list order. This shows overlaps, for example 10.0.0.0/8 and 10.20.0.0/16 both containing 10.20.30.40."
+  },
+  {
+   "q": "Can I use an address with a netmask instead of a prefix?",
+   "a": "Yes, a range may also be written as address plus netmask, such as 10.0.0.0 255.0.0.0. A single address without a prefix is treated as a /32 or /128."
+  },
+  {
+   "q": "Why do I see \"invalid IP\"?",
+   "a": "The line is not a valid IPv4 or IPv6 address. Check for ports, extra text or a number above 255 in an octet. Use the IP Validator to see why a value is rejected."
+  }
+ ],
+ "related": [
+  "ip-subnet-calculator",
+  "ip-supernetting-calculator",
+  "ip-validator-converter",
+  "nginx-security-conf-generator",
+  "aws-iam-policy-linter",
+  "api-rate-limit-cost-calculator"
+ ],
+ "keywords": [
+  "cidr contains ip",
+  "is ip in cidr range",
+  "check ip against subnet list",
+  "free ip range checker",
+  "ipv6 cidr match",
+  "ip allowlist checker"
+ ]
+}

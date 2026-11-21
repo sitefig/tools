@@ -1,0 +1,38 @@
+{
+ "id": "trends-csv-analyzer",
+ "seoTitle": "Google Trends CSV Analyzer: Seasonality, Peak and Growth",
+ "metaDescription": "Paste a Google Trends interest-over-time CSV and get peak dates, recent growth, a linear trend and a month-by-month seasonality profile per term.",
+ "intro": "Understand a Google Trends export: when each term peaks, whether it is growing and how seasonal it is.",
+ "why": "Google Trends exports relative interest (0 to 100) over time. This analyzer reads the CSV and, for each term, reports the peak and its date, the average, how the latest period compares with the one before, the direction of the linear trend and, with at least two years of monthly data, a seasonality profile showing the strongest and weakest months.\n\nTrends rescales every export and shows interest relative to its own peak, never absolute search volume, so compare terms only inside the same export. The page cannot fetch Trends data; export the CSV from trends.google.com and paste it.",
+ "howTo": [
+  "Export the CSV from Google Trends (download arrow on the chart).",
+  "Paste it here.",
+  "Use the seasonality profile to plan content calendars."
+ ],
+ "faq": [
+  {
+   "q": "Does it give search volume?",
+   "a": "No. Trends only gives relative interest."
+  },
+  {
+   "q": "How much data is needed for seasonality?",
+   "a": "At least 24 monthly points."
+  },
+  {
+   "q": "Can it compare terms?",
+   "a": "Yes, if they are in the same export, since values share one scale."
+  }
+ ],
+ "related": [
+  "rank-history-analyzer",
+  "content-calendar-generator",
+  "keyword-clusterer",
+  "gsc-performance-analyzer",
+  "keyword-intent-classifier"
+ ],
+ "keywords": [
+  "google trends csv analysis",
+  "seasonality keyword",
+  "trend growth calculator"
+ ]
+}

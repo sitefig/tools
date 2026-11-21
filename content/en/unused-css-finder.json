@@ -1,0 +1,44 @@
+{
+ "id": "unused-css-finder",
+ "seoTitle": "Unused CSS Finder: Selectors Your HTML Never Matches",
+ "metaDescription": "Paste HTML and a stylesheet to list rules that match nothing, with bytes saved, or output the CSS without them. Review before deleting.",
+ "intro": "Finds CSS rules whose selectors match nothing in the HTML you paste and reports the bytes they take.",
+ "why": "Old stylesheets collect rules for pages that no longer exist. Removing them shrinks the file and the render-blocking cost.\n\nThe tool tests each selector against your HTML with its own matcher, treats state selectors such as :hover by their base element, and keeps rules it cannot test. It cannot see classes added by scripts, so run it on every template that uses the file and review the list before you delete anything.",
+ "howTo": [
+  "Paste your page HTML (join several pages if the CSS is shared).",
+  "Paste the stylesheet.",
+  "Read the unused list and byte total.",
+  "Switch the output to get the CSS without the unused rules."
+ ],
+ "faq": [
+  {
+   "q": "Is it safe to delete what it lists?",
+   "a": "Not blindly. Scripts add classes at run time, and other pages may use the rule."
+  },
+  {
+   "q": "What is \"not tested\"?",
+   "a": "Selectors with pseudo-classes it does not support, such as :has() or :nth-child()."
+  },
+  {
+   "q": "Are media queries checked?",
+   "a": "Yes, the rules inside are checked individually."
+  },
+  {
+   "q": "Is anything sent out?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "critical-css-extractor",
+  "css-minify",
+  "css-selector-tester",
+  "css-selector-speed-profiler",
+  "css-specificity-calculator"
+ ],
+ "keywords": [
+  "unused css finder",
+  "find unused css",
+  "remove unused css",
+  "css coverage paste"
+ ]
+}

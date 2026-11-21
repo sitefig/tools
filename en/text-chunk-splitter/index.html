@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Text Chunk Splitter for RAG with Overlap | Free Tools</title>
+<meta name="description" content="Split text into overlapping chunks by characters or approximate tokens, preferring paragraph and sentence breaks. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/text-chunk-splitter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/text-chunk-splitter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/text-chunk-splitter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Text Chunk Splitter for RAG with Overlap | Free Tools">
+<meta property="og:description" content="Split text into overlapping chunks by characters or approximate tokens, preferring paragraph and sentence breaks. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/text-chunk-splitter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Text Chunk Splitter for RAG with Overlap | Free Tools">
+<meta name="twitter:description" content="Split text into overlapping chunks by characters or approximate tokens, preferring paragraph and sentence breaks. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Text Chunk Splitter (RAG)","url":"https://tools.sitefig.net/en/text-chunk-splitter/","description":"Split text into overlapping chunks by characters or approximate tokens, preferring paragraph and sentence breaks. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the text you want to split into the input.","Set the chunk size and overlap, and choose characters or approximate tokens.","Leave boundary preference on, then copy the numbered chunks from the output."],"keywords":"text chunk splitter, rag chunking tool, split text into chunks with overlap, free document chunker, embedding chunk size tester","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Data Models","item":"https://tools.sitefig.net/en/#data-models"},{"@type":"ListItem","position":3,"name":"Text Chunk Splitter (RAG)","item":"https://tools.sitefig.net/en/text-chunk-splitter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is the token unit measured?","acceptedAnswer":{"@type":"Answer","text":"The approximate token option multiplies your size and overlap by four to get characters. It is a rough rule for English text, not a tokenizer."}},{"@type":"Question","name":"What does boundary preference do?","acceptedAnswer":{"@type":"Answer","text":"It looks in the second half of each window for the last blank line, sentence end or line break and cuts there, so chunks tend to end on natural breaks."}},{"@type":"Question","name":"Why must overlap be smaller than the size?","acceptedAnswer":{"@type":"Answer","text":"Otherwise each chunk would start where the previous one began and the splitter would never advance. The tool reports an error in that case."}},{"@type":"Question","name":"Can I see the chunks coloured?","acceptedAnswer":{"@type":"Answer","text":"Not in this tool, which prints numbered chunks as text. Use the RAG Chunking Visualizer to see colour-coded chunks with the overlapping parts highlighted."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#data-models">Data Models</a></li><li><span aria-current="page">Text Chunk Splitter (RAG)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Text Chunk Splitter (RAG)</h1>
+<p class="lede">Paste text and split it into overlapping chunks of a chosen size, measured in characters or approximate tokens, breaking at paragraphs or sentences where possible.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="text-chunk-splitter" data-module="devgen2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Retrieval pipelines cut documents into chunks before embedding them. Too large and each vector blurs several topics; too small and meaning is lost. Overlap repeats a little text across boundaries so that a sentence split in two can still be found.</p>
+<p>This splitter lets you try sizes on real text before writing code. It cuts at the last paragraph, sentence or line break in the second half of each window when that option is on, and falls back to a hard cut otherwise. Each chunk is labelled with its length and an approximate token count. Token sizes use a four-characters-per-token rule, so they are rough guides only.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the text you want to split into the input.</li><li>Set the chunk size and overlap, and choose characters or approximate tokens.</li><li>Leave boundary preference on, then copy the numbered chunks from the output.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How is the token unit measured?</summary><p>The approximate token option multiplies your size and overlap by four to get characters. It is a rough rule for English text, not a tokenizer.</p></details>
+<details><summary>What does boundary preference do?</summary><p>It looks in the second half of each window for the last blank line, sentence end or line break and cuts there, so chunks tend to end on natural breaks.</p></details>
+<details><summary>Why must overlap be smaller than the size?</summary><p>Otherwise each chunk would start where the previous one began and the splitter would never advance. The tool reports an error in that case.</p></details>
+<details><summary>Can I see the chunks coloured?</summary><p>Not in this tool, which prints numbered chunks as text. Use the RAG Chunking Visualizer to see colour-coded chunks with the overlapping parts highlighted.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/rag-chunking-visualizer/"><span class="link-card__title">RAG Chunking Visualizer</span><span class="link-card__desc">See how a document splits into retrieval chunks: fixed window, sentence or recursive (paragraph, line, sentence, word) splitting with size and overlap. Chunks are color coded and overlaps highlighted (recursive and sentence modes overlap by whole segments, so overlap can be 0 when segments are large).</span></a></li><li><a class="link-card" href="/en/llm-token-estimator/"><span class="link-card__title">LLM Token Count Estimator (approximate)</span><span class="link-card__desc">ESTIMATE of token counts for GPT-4o, GPT-4, Claude, DeepSeek and Llama from text, using per-model chars-per-token ratios and a word/punctuation heuristic. No vocabulary is available offline, so counts are approximate (typically within 10-20% for English).</span></a></li><li><a class="link-card" href="/en/embedding-similarity/"><span class="link-card__title">Embedding Vector Similarity</span><span class="link-card__desc">Compare embedding vectors you paste (JSON arrays or numbers, one vector per line): cosine similarity, dot product, Euclidean and Manhattan distance, plus a similarity matrix and best matches for several vectors. It does not create embeddings.</span></a></li><li><a class="link-card" href="/en/llm-context-window-shrinker/"><span class="link-card__title">LLM Context Window Shrinker</span><span class="link-card__desc">Shrink text to fit a token budget: keep head, tail, both ends, drop duplicate lines, or keep the most informative sentences in original order (frequency-based extractive summary). Token counts are estimates (characters / ratio), not a real tokenizer.</span></a></li><li><a class="link-card" href="/en/token-truncate/"><span class="link-card__title">Truncate / Chunk Text by Tokens (tiktoken)</span><span class="link-card__desc">Cut text to at most N tokens, or split it into chunks of at most N tokens with overlap, always on a token boundary that does not split a UTF-8 character. Exact cl100k_base / o200k_base. Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/text-statistics/"><span class="link-card__title">Text Statistics &amp; Readability</span><span class="link-card__desc">Averages, lexical diversity, top words, Flesch reading ease (English).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

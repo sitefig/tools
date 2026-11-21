@@ -1,0 +1,47 @@
+{
+ "id": "http-status-reference",
+ "seoTitle": "Free HTTP Status Codes List with Meanings",
+ "metaDescription": "Searchable list of HTTP status codes from 100 to 511 with a short explanation of each, including redirects and errors. Free, instant, works in your browser.",
+ "intro": "A searchable list of HTTP status codes with a one-line meaning for each. Type a code or a word like \"redirect\" or \"cache\" to filter the list.",
+ "why": "Status codes are the first clue when a request fails, but there are dozens and several look alike: 301 or 308, 401 or 403, 502 or 504. A wrong choice in your own API confuses clients, and a wrong redirect code can hurt search engines.\n\nThis reference lists the codes from 1xx to 5xx with notes on when each is used, including the WebDAV ones and the awkward 418. Because the filter matches any word, you can type a number, a name or a concept such as \"retry\" to find what you need. It is a static lookup that works without a network connection once the page has loaded.",
+ "howTo": [
+  "Open the tool to see the full list of status codes.",
+  "Type a code, a name or a keyword such as 404, redirect or rate into the filter.",
+  "Read the one-line meaning next to each matching code.",
+  "Copy the lines you want for documentation or a code comment."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between 401 and 403?",
+   "a": "401 means the client is not authenticated or its credentials failed, so it should log in. 403 means the server knows who you are but you are not allowed to do this, and logging in again will not help."
+  },
+  {
+   "q": "Which redirect code should I use?",
+   "a": "Use 301 or 308 for permanent moves, and 302 or 307 for temporary ones. 307 and 308 keep the request method, whereas 301 and 302 let clients change POST into GET. For SEO moves, 301 or 308 is standard."
+  },
+  {
+   "q": "What is the difference between 502, 503 and 504?",
+   "a": "502 means an upstream server gave an invalid response. 503 means the service is overloaded or down for maintenance, optionally with Retry-After. 504 means the upstream server did not respond in time."
+  },
+  {
+   "q": "Is the list complete?",
+   "a": "It covers the codes registered with IANA that you are likely to meet, from 100 to 511, with short descriptions. Unregistered or vendor-specific codes, such as those from CDNs, are not included."
+  }
+ ],
+ "related": [
+  "http-methods-headers",
+  "http-headers-analyzer",
+  "redirect-code-generator",
+  "cors-preflight-inspector",
+  "http-cache-control-tester",
+  "htaccess-generator"
+ ],
+ "keywords": [
+  "http status codes",
+  "http status code list",
+  "what does 404 mean",
+  "free http status reference",
+  "301 vs 302 vs 307",
+  "http error codes explained"
+ ]
+}

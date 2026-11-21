@@ -1,0 +1,41 @@
+{
+ "id": "email-ip-pseudonymizer",
+ "seoTitle": "Email and IP Hasher for Pseudonymized Analytics Uploads",
+ "metaDescription": "Normalize and hash emails or IPs with SHA-256, SHA-384 or SHA-512 and an optional salt, in your browser. Free, nothing uploaded.",
+ "intro": "Normalizes each value (trim, lowercase, optional plus-tag removal) and hashes it with an optional salt.",
+ "why": "Ad and analytics platforms often let you upload hashed emails for matching. The hash only matches if both sides normalize the same way: trimmed, lowercase, sometimes without plus tags or dots.\n\nThis tool applies those steps and hashes each line, so you can check what a hash should look like. Remember that a hashed email is still personal data: anyone with a list of candidate addresses can hash them and compare. Hashing is pseudonymisation, not anonymisation. Hashes are computed in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste one value per line.",
+  "Pick the type, algorithm and salt.",
+  "Read the normalized value and hash.",
+  "Match the normalization rules of the platform you upload to."
+ ],
+ "faq": [
+  {
+   "q": "Is a hashed email anonymous?",
+   "a": "No. It is pseudonymised data and remains personal data under the GDPR."
+  },
+  {
+   "q": "Which normalization do platforms expect?",
+   "a": "Usually trim and lowercase. Some also treat gmail dots and plus tags. Check each platform's documentation."
+  },
+  {
+   "q": "Does the salt help?",
+   "a": "It stops simple lookup tables, but the other side cannot match your hashes unless they know the salt."
+  }
+ ],
+ "related": [
+  "ip-anonymizer",
+  "hash-generator",
+  "pii-redactor",
+  "log-privacy-workbench",
+  "pwned-password-range-matcher",
+  "cookie-classifier"
+ ],
+ "keywords": [
+  "hash email sha256",
+  "pseudonymize ip",
+  "hashed email upload",
+  "email hash normalize"
+ ]
+}

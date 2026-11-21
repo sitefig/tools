@@ -1,0 +1,45 @@
+{
+ "id": "utm-parameter-parser",
+ "seoTitle": "UTM Parameter Parser: Break a Tagged URL into Parts",
+ "metaDescription": "Split a tagged campaign link into utm_source, medium, campaign, term and content, show the clean URL and other tracking IDs. Free and private.",
+ "intro": "Paste campaign links and see each UTM parameter, the clean URL and other tracking IDs found.",
+ "why": "Long campaign links are hard to read. A table of the parts shows what a link is tagged with, and the clean URL shows the page without any tracking.\n\nIt also lists click IDs such as gclid and fbclid. Capitals in values are flagged because analytics tools treat them as separate values.",
+ "howTo": [
+  "Paste one or more URLs.",
+  "Read the parameter table.",
+  "Copy the clean URL if you need it.",
+  "Fix flagged values in your link builder."
+ ],
+ "faq": [
+  {
+   "q": "Which parameters are read?",
+   "a": "utm_source, medium, campaign, term, content and id, plus common click IDs."
+  },
+  {
+   "q": "Does it follow redirects?",
+   "a": "No, it only parses the text."
+  },
+  {
+   "q": "Does it change my link?",
+   "a": "No."
+  },
+  {
+   "q": "Is the link sent anywhere?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "utm-channel-matrix",
+  "utm-bulk-builder",
+  "utm-builder",
+  "url-tracker-stripper",
+  "url-parser",
+  "cookie-header-parser"
+ ],
+ "keywords": [
+  "utm parser",
+  "utm parameter extractor",
+  "decode utm url",
+  "campaign url parser"
+ ]
+}

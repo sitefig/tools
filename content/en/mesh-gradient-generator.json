@@ -1,0 +1,46 @@
+{
+  "id": "mesh-gradient-generator",
+  "seoTitle": "Free Mesh Gradient Generator: Soft CSS Backgrounds",
+  "metaDescription": "Layer radial gradients into a soft mesh-style CSS background from your colours. Seeded, so results are repeatable. Free, runs in your browser.",
+  "intro": "Creates a soft, blurry mesh-style background by stacking radial gradients at seeded positions, using the colours you list. The same seed always gives the same result.",
+  "why": "Smooth multi-colour backgrounds are popular on landing pages and cards, but a true mesh gradient needs a graphics tool or an image. You can fake the effect in pure CSS by overlaying several radial gradients that fade to transparent, and picking their positions by hand takes trial and error.\n\nList your colours, choose how many layers to stack and how far each spreads, then change the seed until the arrangement pleases you. The tool outputs the CSS background colour and image declarations, and previews them. Because the placement comes from a seed, you can come back later and regenerate exactly the same design. The CSS is produced in your browser and nothing is sent anywhere.",
+  "howTo": [
+    "Enter your colours separated by commas or new lines; at least two.",
+    "Choose the number of layers and the spread percentage.",
+    "Change the seed until you like the arrangement.",
+    "Copy the CSS into your stylesheet."
+  ],
+  "faq": [
+    {
+      "q": "What does the seed do?",
+      "a": "It decides where each colour blob is placed. The same seed, colours and settings always give identical CSS. Change the number to get a different arrangement."
+    },
+    {
+      "q": "What are layers and spread?",
+      "a": "Each layer is one radial gradient. Layers use your colours in turn, wrapping round if there are more layers than colours. Spread is the percentage at which each blob fades to transparent, so a larger value gives a softer, more overlapping result."
+    },
+    {
+      "q": "Will it perform well?",
+      "a": "Stacked radial gradients are cheap for a static background. With many layers on a large animated element, rendering costs rise, so keep the layer count modest and avoid animating them."
+    },
+    {
+      "q": "How many layers can I use?",
+      "a": "From 1 to 20. The first colour is also used as the base background colour behind all the layers."
+    }
+  ],
+  "related": [
+    "gradient-generator",
+    "css-blob-generator",
+    "glassmorphism-generator",
+    "color-mixer",
+    "palette-generator",
+    "svg-wavy-divider-generator"
+  ],
+  "keywords": [
+    "mesh gradient generator",
+    "css mesh gradient",
+    "gradient background generator",
+    "aurora gradient css",
+    "free mesh gradient css"
+  ]
+}

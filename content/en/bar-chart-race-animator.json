@@ -1,0 +1,44 @@
+{
+ "id": "bar-chart-race-animator",
+ "seoTitle": "Bar Chart Race Animator (Animated SVG, Pausable)",
+ "metaDescription": "Turn a table of periods and items into a looping animated SVG where bars re-sort and grow over time. Pause control included. Free.",
+ "intro": "Builds an animated bar chart race as a CSS-animated SVG from a table with one row per period and one column per item.",
+ "why": "Races show how rankings change over time. This version creates an animated SVG with CSS keyframes, which you can embed in a page and pause, rather than a video file. WebM or MP4 export is not offered.\n\nThe preview has a Pause animation switch, which starts on if you prefer reduced motion. Choose a single period to see a static frame with values. The table under the chart has all numbers, which is also the text equivalent.",
+ "howTo": [
+  "Paste a table: first column period, other columns items.",
+  "Set how many bars to show and seconds per period.",
+  "Type a period name to see one still frame.",
+  "Download the SVG to keep the animation."
+ ],
+ "faq": [
+  {
+   "q": "Can I get a video?",
+   "a": "Not here. Record the screen or use the SVG on a web page."
+  },
+  {
+   "q": "Does it loop?",
+   "a": "Yes, forever, and you can pause it."
+  },
+  {
+   "q": "Why no value labels while moving?",
+   "a": "Numbers cannot be animated in CSS; the still frame and table show them."
+  },
+  {
+   "q": "Limits?",
+   "a": "120 periods and 60 items."
+  }
+ ],
+ "related": [
+  "bar-chart-maker",
+  "line-chart-maker",
+  "csv-to-chart",
+  "sparkline-generator",
+  "timeline-maker",
+  "conversion-funnel-visualizer"
+ ],
+ "keywords": [
+  "bar chart race",
+  "animated ranking chart",
+  "racing bar chart svg"
+ ]
+}

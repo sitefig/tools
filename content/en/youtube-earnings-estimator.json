@@ -1,0 +1,41 @@
+{
+ "id": "youtube-earnings-estimator",
+ "seoTitle": "YouTube Earnings Estimator from Views and RPM",
+ "metaDescription": "Estimate monthly and yearly YouTube ad revenue from your views and an RPM range from your own Studio data. Free, private.",
+ "intro": "Estimate monthly and yearly YouTube ad revenue from views and an RPM range you enter from your own YouTube Studio.",
+ "why": "Revenue estimates online use a made-up RPM. Your real RPM is in YouTube Studio, and it varies by niche, country, season and video length.\n\nEnter your monthly views and a low and high RPM. The tool shows the low, middle and high income per month and per year, and lets you take off a share for costs or fees. RPM is paid per 1,000 views of all your views, after YouTube's cut, so it is lower than CPM. Sponsorships and memberships are not included.",
+ "howTo": [
+  "Enter monthly views.",
+  "Enter low and high RPM from YouTube Studio.",
+  "Set the share you keep.",
+  "Read the three cases."
+ ],
+ "faq": [
+  {
+   "q": "What is RPM?",
+   "a": "Revenue per 1,000 views, after YouTube's share. CPM is per 1,000 ad impressions."
+  },
+  {
+   "q": "What RPM should I use?",
+   "a": "Your own, from analytics. The defaults are placeholders."
+  },
+  {
+   "q": "Are Shorts included?",
+   "a": "They have a different payout. Enter Shorts views separately with their own RPM."
+  }
+ ],
+ "related": [
+  "tiktok-money-calculator",
+  "influencer-rate-estimator",
+  "engagement-rate-calculator",
+  "youtube-seo-checker",
+  "social-media-roi-calculator",
+  "roi-calculator"
+ ],
+ "keywords": [
+  "youtube earnings calculator",
+  "youtube money calculator",
+  "youtube rpm calculator",
+  "how much does youtube pay"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "base64url-encoder",
+ "seoTitle": "Free Base64URL Encoder and Decoder (URL-Safe)",
+ "metaDescription": "Encode text to URL-safe Base64 without padding, or decode Base64URL and standard Base64 back to text. Free, runs in your browser, nothing uploaded.",
+ "intro": "Convert text to URL-safe Base64 using minus and underscore with no padding, or decode Base64URL strings, and standard Base64, back to readable text.",
+ "why": "Standard Base64 contains plus, slash and equals signs, which all have special meanings in URLs and filenames. The URL-safe variant in RFC 4648 swaps them for minus and underscore and normally drops the padding. You meet it in JWT segments, PKCE challenges, signed URLs and many API tokens.\n\nWhen a token will not decode in a plain Base64 tool, or a value breaks in a query string, the cause is often this alphabet difference. This tool encodes UTF-8 text to Base64URL and decodes it again, accepting standard Base64 on input too. Decoding fails with a clear message when the data is not valid UTF-8 text, so binary payloads need a different tool.",
+ "howTo": [
+  "Pick encode or decode.",
+  "Paste your text, or the Base64URL or Base64 string, into the input.",
+  "Copy the result. Encoded output has no padding characters."
+ ],
+ "faq": [
+  {
+   "q": "How is Base64URL different from Base64?",
+   "a": "It uses minus instead of plus and underscore instead of slash, and usually omits the trailing equals padding. The underlying bytes are identical, only the characters differ."
+  },
+  {
+   "q": "Can it decode a JWT?",
+   "a": "You can paste one segment at a time, header or payload, and read the JSON. For a whole token with claims and expiry, use a JWT decoder, which splits and formats it for you."
+  },
+  {
+   "q": "Why does decoding report an error?",
+   "a": "The input holds characters outside the Base64 alphabets, or its length is impossible for Base64. The decoder also fails if the bytes are not valid UTF-8 text, such as a raw key."
+  },
+  {
+   "q": "Is padding required?",
+   "a": "No. The decoder adds any missing padding itself, so strings with or without trailing equals signs both work. The encoder always leaves the padding off."
+  }
+ ],
+ "related": [
+  "base64-encode",
+  "base64-decode",
+  "jwt-decode",
+  "pkce-generator",
+  "url-encode",
+  "base32"
+ ],
+ "keywords": [
+  "base64url encoder",
+  "base64url decode online",
+  "url safe base64",
+  "free base64url converter",
+  "jwt base64url decode"
+ ]
+}

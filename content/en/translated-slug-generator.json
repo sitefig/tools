@@ -1,0 +1,45 @@
+{
+ "id": "translated-slug-generator",
+ "seoTitle": "Localized URL Slug Generator: Cyrillic, Greek, Accents or Native Script",
+ "metaDescription": "Create URL slugs from titles in Cyrillic, Greek and accented Latin as ASCII, or keep the native script with percent-encoding.",
+ "intro": "Turns titles in many scripts into clean slugs, as transliterated ASCII or as native-script slugs.",
+ "why": "URLs for non-English pages raise a choice: transliterate to ASCII, or keep the native script and let browsers show it. ASCII mode maps Cyrillic (Russian, Ukrainian and Serbian letters), Greek and Latin letters with accents, with an option for German umlauts. Native mode keeps letters and numbers in any script and also shows the percent-encoded form that appears in links.\n\nThe transliteration is a simple common scheme, not ISO 9 or ELOT 743. Scripts without a simple letter-for-letter rule, such as Arabic, Hebrew, Thai and Chinese, are left to native mode.",
+ "howTo": [
+  "Enter titles, one per line.",
+  "Choose ASCII or native slugs and the separator.",
+  "Set a maximum length.",
+  "Copy the slugs."
+ ],
+ "faq": [
+  {
+   "q": "Which is better for SEO?",
+   "a": "Both work. Choose what your audience can read, type and share."
+  },
+  {
+   "q": "Why is my title empty in ASCII mode?",
+   "a": "Its script has no mapping. Use native mode."
+  },
+  {
+   "q": "What is the percent-encoded form?",
+   "a": "The form used on the wire, such as %D0%BF for a Cyrillic letter."
+  },
+  {
+   "q": "Does it handle German properly?",
+   "a": "Tick the German option for ae, oe and ue."
+  }
+ ],
+ "related": [
+  "slug-generator",
+  "slug-to-title",
+  "punycode",
+  "canonical-generator",
+  "hreflang-generator",
+  "sql-slugifier"
+ ],
+ "keywords": [
+  "transliteration slug",
+  "cyrillic url slug",
+  "greek slug generator",
+  "unicode url slug"
+ ]
+}

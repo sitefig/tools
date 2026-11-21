@@ -1,0 +1,39 @@
+{
+ "id": "meeting-cost-timer",
+ "seoTitle": "Live Meeting Cost Timer: See What a Meeting Costs",
+ "metaDescription": "Enter attendees and average salary and start the timer to watch the cost of a meeting grow. Free, private, no data stored.",
+ "intro": "A timer that converts attendee time into money as the meeting goes on.",
+ "why": "Meetings feel free because nobody sees the bill. Showing the running cost in money makes a long agenda and a late start concrete.\n\nThe cost uses salary over working hours only, so it understates the real cost because employer charges are not added. The total is announced when you pause, while the running amount updates visually. Nothing is stored or sent.",
+ "howTo": [
+  "Enter attendees, average salary and working hours.",
+  "Press Start when the meeting begins.",
+  "Press Pause to read the total."
+ ],
+ "faq": [
+  {
+   "q": "Is the cost accurate?",
+   "a": "It is an estimate: salary time only, without employer charges or lost focus."
+  },
+  {
+   "q": "Can I use hourly pay?",
+   "a": "Enter hourly pay times working hours as a yearly figure."
+  },
+  {
+   "q": "Is anything saved?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "employee-total-cost-calculator",
+  "freelance-hourly-rate-calculator",
+  "day-rate-to-salary-converter",
+  "project-quote-estimator",
+  "salary-hourly",
+  "profit-margin"
+ ],
+ "keywords": [
+  "meeting cost calculator",
+  "cost of a meeting",
+  "meeting timer"
+ ]
+}

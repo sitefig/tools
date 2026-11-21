@@ -1,0 +1,44 @@
+{
+ "id": "blurhash-generator",
+ "seoTitle": "BlurHash Generator (Compact Image Placeholder String)",
+ "metaDescription": "Compute a BlurHash for an image, a short string that decodes to a blurred placeholder while the real picture loads, and preview the blurred result for the...",
+ "intro": "Make a BlurHash placeholder string from an image.",
+ "why": "Choose an image and the number of components. The page returns the BlurHash, a short string you can store with the picture, and a preview of the blur it decodes to. More components keep more detail and make a longer string. 4 by 3 is the usual choice.\n\nThe image is shrunk to 64 pixels first, which is enough for a blur. The encoder was checked against the reference C implementation for several component counts.",
+ "howTo": [
+  "Choose an image.",
+  "Set the horizontal and vertical components.",
+  "Copy the hash.",
+  "Store the aspect ratio with it."
+ ],
+ "faq": [
+  {
+   "q": "How do I use the hash?",
+   "a": "Decode it on the client with any BlurHash decoder at the picture's aspect ratio and show it until the real image loads."
+  },
+  {
+   "q": "Why is it so short?",
+   "a": "It keeps only a handful of low-frequency colour components."
+  },
+  {
+   "q": "Is it private?",
+   "a": "Yes. The picture stays in your browser."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-info",
+  "color-picker-from-image",
+  "image-size-attributes",
+  "srcset-generator",
+  "lazy-loading-injector"
+ ],
+ "keywords": [
+  "blurhash",
+  "image placeholder",
+  "blurhash generator",
+  "lazy load placeholder"
+ ]
+}

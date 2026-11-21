@@ -1,0 +1,45 @@
+{
+ "id": "ringtone-maker",
+ "seoTitle": "Ringtone Maker: Cut a 30 Second Clip from Any Song",
+ "metaDescription": "Cut a clip of up to 30 seconds from a song for a ringtone or alert sound, with fades and peak normalising. Exports WAV; no upload.",
+ "intro": "Cuts a short clip from an audio file, adds a fade at each end, optionally raises it to a standard peak level and saves a WAV file you can convert for your phone.",
+ "why": "Most phones limit ringtones to about 30 seconds, and a clip that starts and ends abruptly sounds unpleasant. A short fade-in avoids a click when the ringtone starts and a fade-out avoids a cut-off when it loops.\n\nThe browser has no encoder for MP3 or iPhone M4R files, so this tool outputs WAV. Convert it with your phone or a converter afterwards. Android generally accepts MP3, OGG and often WAV; iPhone uses M4R of at most 30 seconds.",
+ "howTo": [
+  "Choose a song.",
+  "Enter the start in seconds and the length (up to 30).",
+  "Set the fades and decide whether to normalise the peak.",
+  "Press Run, check the result, and download the WAV."
+ ],
+ "faq": [
+  {
+   "q": "Why not M4R or MP3 directly?",
+   "a": "Browsers do not provide encoders for them and this site does not ship third-party code."
+  },
+  {
+   "q": "How do I find the start time?",
+   "a": "Play the song in any player and note the time of the part you want, then type it in seconds."
+  },
+  {
+   "q": "What does normalising the peak do?",
+   "a": "It raises the clip until its loudest point is at -1 dBFS, so quiet songs ring clearly."
+  },
+  {
+   "q": "Can I use a longer clip?",
+   "a": "Use the audio trimmer for any length. This tool caps the length at 30 seconds."
+  }
+ ],
+ "related": [
+  "audio-trimmer",
+  "audio-fade-editor",
+  "loudness-normalizer",
+  "audio-converter",
+  "audio-to-flac",
+  "silence-remover"
+ ],
+ "keywords": [
+  "ringtone maker",
+  "make ringtone from mp3",
+  "cut song for ringtone",
+  "alert sound maker"
+ ]
+}

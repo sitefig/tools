@@ -1,0 +1,41 @@
+{
+ "id": "csp-violation-report-parser",
+ "seoTitle": "CSP Violation Report Parser: Group by Directive and Source",
+ "metaDescription": "Paste CSP violation reports (report-uri or Reporting API JSON) and get counts grouped by directive and blocked source with fix hints.",
+ "intro": "Groups pasted CSP violation reports by directive and blocked source and suggests what to do for each.",
+ "why": "When you roll out a Content-Security-Policy in report-only mode, the reports arrive as a pile of JSON. Reading them one by one hides the pattern.\n\nPaste the reports, as one JSON per line, an array, or a Reporting API batch, and the tool counts them by effective directive and blocked origin. Browser-extension noise is dropped. Each group gets a hint: inline code needs a nonce or hash, eval needs a fix, an origin may need allowing. A report shows what was blocked, not what is safe.",
+ "howTo": [
+  "Collect reports from your report endpoint or logs.",
+  "Paste them as JSON, one per line or as an array.",
+  "Read the groups, highest count first.",
+  "Update the policy and watch the reports drop."
+ ],
+ "faq": [
+  {
+   "q": "Which formats are supported?",
+   "a": "Legacy csp-report objects and Reporting API reports with type csp-violation."
+  },
+  {
+   "q": "Why are some reports ignored?",
+   "a": "Reports blocked by browser extensions are noise and are filtered out."
+  },
+  {
+   "q": "Can I trust the hints?",
+   "a": "They are generic. Review each source before you allow it."
+  }
+ ],
+ "related": [
+  "csp-analyzer",
+  "csp-builder",
+  "security-headers-grader",
+  "security-headers-generator",
+  "http-headers-analyzer",
+  "har-analyzer"
+ ],
+ "keywords": [
+  "csp report parser",
+  "csp violation",
+  "content security policy report",
+  "report-uri json"
+ ]
+}

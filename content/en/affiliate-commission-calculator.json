@@ -1,0 +1,45 @@
+{
+ "id": "affiliate-commission-calculator",
+ "seoTitle": "Affiliate Commission Calculator: Tiered and Flat Payouts",
+ "metaDescription": "Calculate affiliate payouts under tiered commission by sales volume, marginal or retroactive, with a breakdown per tier. Free and private.",
+ "intro": "Define tiers and enter sales to see the payout per tier and in total.",
+ "why": "Tiered plans are easy to misread: either each slice earns its own rate (marginal) or the whole amount earns the rate of the tier reached (retroactive). The difference can be large.\n\nChoose the mode your program uses. Tier ranges must not overlap. Check your program terms for refunds and whether tiers use gross or net sales.",
+ "howTo": [
+  "Enter tiers as from - to : rate%.",
+  "Enter the sales amount.",
+  "Choose marginal or retroactive.",
+  "Read the payout and effective rate."
+ ],
+ "faq": [
+  {
+   "q": "Which mode is common?",
+   "a": "Both exist. Read your terms."
+  },
+  {
+   "q": "Can I use a flat rate?",
+   "a": "Yes, a single tier from 0 with no upper limit."
+  },
+  {
+   "q": "Does it handle refunds?",
+   "a": "No."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "ads-roas-calculator",
+  "markup-margin",
+  "profit-margin",
+  "roi-calculator",
+  "cac-ltv-calculator",
+  "lead-scoring-calculator"
+ ],
+ "keywords": [
+  "affiliate commission calculator",
+  "tiered commission calculator",
+  "commission tiers",
+  "affiliate payout"
+ ]
+}

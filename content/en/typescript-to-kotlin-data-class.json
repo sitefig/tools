@@ -1,0 +1,44 @@
+{
+ "id": "typescript-to-kotlin-data-class",
+ "seoTitle": "Free TypeScript to Kotlin Data Class Converter",
+ "metaDescription": "Convert TypeScript interfaces and enums to Kotlin data classes with nullable types and optional kotlinx.serialization or Jackson annotations. Runs in your browser.",
+ "intro": "Paste TypeScript interfaces and enums and get Kotlin data classes with nullable types, = null defaults for optional properties, List and Map, enum classes and optional kotlinx.serialization or Jackson annotations.",
+ "why": "Android and Kotlin back-end code that consumes a TypeScript-defined API needs data classes that match the JSON property names and optionality. Typing them by hand is slow and the camelCase and snake_case names are easy to get wrong.\n\nOptional and nullable properties become nullable Kotlin types, optional ones also get = null so the key may be missing. When a JSON key differs from the Kotlin name the converter adds @SerialName or @JsonProperty. Enum classes carry the JSON value on each entry. The output compiles with kotlinc and round-trips JSON with kotlinx.serialization and with Jackson (jackson-module-kotlin). Everything runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your TypeScript interfaces, type aliases or enums.",
+  "Choose kotlinx.serialization, Jackson or no annotations.",
+  "Copy the Kotlin code into your project and apply the serialization plugin if you use kotlinx."
+ ],
+ "faq": [
+  {
+   "q": "Which TypeScript features are supported?",
+   "a": "Interfaces, type aliases, string enums, optional and nullable properties, unions, literals, tuples, arrays, Record, Date, extends and intersections, and JSDoc comments. Conditional and mapped types, keyof, typeof, function types and most utility generics are not supported, and the tool says so instead of guessing."
+  },
+  {
+   "q": "What happens to a union such as string | number?",
+   "a": "Kotlin has no general union type, so the field becomes JsonElement (kotlinx.serialization) or Any with a comment that says it was a union. Unions of literal values such as \"a\" | \"b\" become the base type with the literal list in a comment, and a top-level string-literal type alias becomes a real enum."
+  },
+  {
+   "q": "Why does number become a floating point type?",
+   "a": "TypeScript has a single number type, so the converter cannot know whether a value is an integer. It uses a floating point type by default. Switch the option or edit single fields where you know the value is whole."
+  },
+  {
+   "q": "How are dates handled?",
+   "a": "Date becomes String with the ISO 8601 text that JSON.stringify produces, because kotlinx.serialization has no built-in date serializer. Change the type to Instant and add a serializer if you want a real date type."
+  }
+ ],
+ "related": [
+  "json-to-models",
+  "typescript-to-java-record",
+  "typescript-to-csharp-class",
+  "typescript-to-json-schema",
+  "typescript-to-go-struct",
+  "json-to-typescript"
+ ],
+ "keywords": [
+  "typescript to kotlin",
+  "typescript to kotlin data class",
+  "kotlinx serialization generator",
+  "ts interface to kotlin"
+ ]
+}

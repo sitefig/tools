@@ -1,0 +1,45 @@
+{
+ "id": "news-sitemap-generator",
+ "seoTitle": "Google News Sitemap Generator (news:news XML)",
+ "metaDescription": "Build a Google News sitemap with publication name, language, title and date for each article. Free, in your browser.",
+ "intro": "Turns article lines into a news sitemap with the news namespace.",
+ "why": "A news sitemap is for recent articles only and has strict fields: publication name and language, the original publication date and the article title.\n\nThis tool validates the language code, the W3C date and the 1,000 article limit, and warns about articles older than two days. Check the publication name against how it appears in Google News.",
+ "howTo": [
+  "Write one article per line: URL | title | date.",
+  "Enter the publication name and language code.",
+  "Run the tool and read the notes at the end.",
+  "Publish the file and remove old entries over time."
+ ],
+ "faq": [
+  {
+   "q": "How old may articles be?",
+   "a": "Google asks for articles from the last two days."
+  },
+  {
+   "q": "Which date?",
+   "a": "The original publication date, not when you added it to the sitemap."
+  },
+  {
+   "q": "How many articles?",
+   "a": "At most 1,000 per news sitemap."
+  },
+  {
+   "q": "What goes in the title?",
+   "a": "The article title as on your page, without author, site name or date."
+  }
+ ],
+ "related": [
+  "news-sitemap-freshness-checker",
+  "sitemap-generator",
+  "sitemap-validator",
+  "video-sitemap-generator",
+  "rss-feed-generator",
+  "feed-to-sitemap"
+ ],
+ "keywords": [
+  "news sitemap generator",
+  "google news sitemap",
+  "news:publication",
+  "news sitemap xml"
+ ]
+}

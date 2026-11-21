@@ -1,0 +1,43 @@
+{
+ "id": "bitwise-calculator",
+ "seoTitle": "Free Bitwise Calculator: AND, OR, XOR, Shifts",
+ "metaDescription": "Run AND, OR, XOR, NOT, shifts, rotations and popcount on 8, 16, 32 or 64-bit values, shown in four bases. Free, in your browser.",
+ "intro": "Enter two values in decimal, hex, binary or octal, choose a bit width, and see AND, OR, XOR, NOT, shifts, rotations and bit counts, each displayed in all four bases.",
+ "why": "Bit manipulation is easy to get wrong in your head. A mask that looks right in hex may flip the wrong bit, a right shift behaves differently for signed and unsigned values, and a 32-bit overflow can change the answer you expect. Embedded developers, people reading network headers and anyone debugging flags hit this regularly.\n\nThis calculator fixes the width first, so every result wraps the way real hardware would. You can see the same value as decimal, hex, octal and grouped binary, and switch to a two's-complement signed reading. Everything is computed locally with BigInt, so even 64-bit values are exact and nothing is sent to a server.",
+ "howTo": [
+  "Type value A and value B in decimal, or with a 0x, 0b or 0o prefix.",
+  "Choose a width of 8, 16, 32 or 64 bits.",
+  "Set the shift or rotate amount, and tick the signed option if you want the two's-complement reading.",
+  "Read the table of results and the popcount and leading or trailing zero counts below it."
+ ],
+ "faq": [
+  {
+   "q": "Why do my results look different from JavaScript?",
+   "a": "Plain JavaScript bitwise operators work on 32-bit signed integers. This tool applies the width you pick and masks every result to it, so 64-bit values stay exact and unsigned results do not turn negative."
+  },
+  {
+   "q": "What is the difference between the right shifts?",
+   "a": "An arithmetic right shift copies the sign bit into the new high bits, which keeps negative numbers negative. A logical right shift fills with zeros. For unsigned thinking, use the logical shift."
+  },
+  {
+   "q": "Can I enter negative numbers?",
+   "a": "Yes. A leading minus sign is accepted and the value is wrapped into the chosen width using two's complement, so -1 at 8 bits becomes 0xFF."
+  }
+ ],
+ "related": [
+  "number-base-converter",
+  "chmod-calculator",
+  "bignumber-calculator",
+  "hex-dump-viewer",
+  "ieee754-converter",
+  "bcd-converter"
+ ],
+ "keywords": [
+  "bitwise calculator",
+  "bitwise operations online",
+  "xor calculator",
+  "binary shift calculator",
+  "64 bit bitwise calculator",
+  "free bit manipulation tool"
+ ]
+}

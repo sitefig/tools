@@ -1,0 +1,47 @@
+{
+ "id": "ip-validator-converter",
+ "seoTitle": "Free IP Address Validator and Format Converter",
+ "metaDescription": "Validate IPv4 and IPv6 addresses and convert them between dotted, integer, hex, binary and octal forms. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Check whether text is a valid IPv4 or IPv6 address and see it as dotted, integer, hex, binary and octal. A 32-bit integer or hex number is also accepted as input.",
+ "why": "Addresses arrive in awkward shapes: a database stores 3232235777, a log has 0xC0A80101, an IPv6 address is abbreviated with :: and nobody can say if it is valid. Converting them by hand is slow, and mistakes cause real trouble in access rules.\n\nThis tool validates each line and shows the other representations. For IPv4 you get the dotted form, integer, hex, binary, octal and the IPv4-mapped IPv6 version. For IPv6 you get the compressed and fully expanded forms plus the integer. Each address is also classified, for instance private, loopback, link-local or public. It all runs in your browser.",
+ "howTo": [
+  "Enter one address or number per line: dotted IPv4, IPv6, a decimal integer or a 0x hex value.",
+  "Run the tool.",
+  "Read the validity verdict and all representations for each line.",
+  "Copy the form your database, firewall or code needs."
+ ],
+ "faq": [
+  {
+   "q": "Which inputs are accepted?",
+   "a": "Dotted IPv4, IPv6 in full, compressed or IPv4-embedded notation, and a plain decimal or 0x hex number up to 32 bits, which is read as IPv4. Everything else is reported as invalid."
+  },
+  {
+   "q": "What types does it report?",
+   "a": "Examples are private (RFC 1918), loopback, link-local, shared CGNAT space, documentation ranges, multicast and reserved, plus public for the rest of IPv4. IPv6 types include unique local, link-local and global unicast."
+  },
+  {
+   "q": "Why would I want an IP as an integer?",
+   "a": "Integers sort and compare quickly, and databases often store IPv4 addresses this way. 192.168.1.1 is 3232235777. Converting back is exact."
+  },
+  {
+   "q": "Does it look up the owner or location of an address?",
+   "a": "No. That needs an external database or network request, which this offline tool does not do. It only analyses the address itself."
+  }
+ ],
+ "related": [
+  "ip-subnet-calculator",
+  "cidr-contains",
+  "number-base-converter",
+  "ip-supernetting-calculator",
+  "mac-address-generator",
+  "url-parser"
+ ],
+ "keywords": [
+  "ip address validator",
+  "ip to integer converter",
+  "ipv4 to hex",
+  "free ipv6 expand compress",
+  "validate ip address online",
+  "ipv4 to binary"
+ ]
+}

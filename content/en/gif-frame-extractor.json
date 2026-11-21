@@ -1,0 +1,45 @@
+{
+ "id": "gif-frame-extractor",
+ "seoTitle": "GIF Frame Extractor (Split an Animated GIF into PNG Frames)",
+ "metaDescription": "Decode every frame of an animated GIF, view them as numbered thumbnails with their delays, and download chosen frames as PNG files or all of them in a ZIP.",
+ "intro": "Split an animated GIF into PNG frames.",
+ "why": "Choose a GIF. The page decodes every frame, applies the GIF disposal rules, shows numbered thumbnails with their delays, and offers the chosen frames as PNG files or one ZIP.\n\nEach PNG is the full picture as it appears at that point in the animation, with transparency kept. The decoder was checked frame by frame against Pillow on GIFs with transparency, all three disposal modes and interlacing.",
+ "howTo": [
+  "Choose a GIF.",
+  "Enter the frames you want, or leave all.",
+  "Pick ZIP or single files.",
+  "Download."
+ ],
+ "faq": [
+  {
+   "q": "How many frames can it handle?",
+   "a": "Up to 2000 in the file and 400 per download."
+  },
+  {
+   "q": "Do the frames have transparency?",
+   "a": "Yes, if the GIF does."
+  },
+  {
+   "q": "Can I rebuild a GIF?",
+   "a": "Yes, with the GIF Maker tool."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "gif-maker",
+  "video-to-gif",
+  "image-info",
+  "image-resizer",
+  "sprite-sheet-packer",
+  "image-grid-splitter"
+ ],
+ "keywords": [
+  "gif to png",
+  "gif frame extractor",
+  "split gif",
+  "gif frames"
+ ]
+}

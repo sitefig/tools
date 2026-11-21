@@ -1,0 +1,45 @@
+{
+ "id": "sitemap-index-generator",
+ "seoTitle": "Sitemap Splitter and Index Generator (50,000 URL Limit)",
+ "metaDescription": "Split a long URL list into sitemap files under the 50,000 URL and 50 MB limits and build the sitemap index. Free, runs in your browser.",
+ "intro": "Splits a URL list into several sitemap files and writes the sitemap index that points to them. You download everything as one ZIP.",
+ "why": "A single sitemap may hold 50,000 URLs and 50 MB uncompressed. Bigger sites need several files and an index, and writing that by hand is slow and easy to get wrong.\n\nThis tool cuts the list by count and by bytes, escapes the URLs, names the files and builds the index with the base URL you give. It does not know your server, so you still upload the files yourself. Everything runs locally.",
+ "howTo": [
+  "Paste one absolute URL per line.",
+  "Enter the base URL where the sitemap files will be hosted.",
+  "Set the maximum URLs per file if you want smaller parts.",
+  "Download the ZIP, upload the files and submit only the index."
+ ],
+ "faq": [
+  {
+   "q": "What are the limits?",
+   "a": "Per sitemap.org, 50,000 URLs and 50 MB (52,428,800 bytes) uncompressed per file. An index may list up to 50,000 sitemaps."
+  },
+  {
+   "q": "Should I gzip the files?",
+   "a": "You may, but the limit applies to the uncompressed size. This tool writes plain XML."
+  },
+  {
+   "q": "Why does it warn about hosts?",
+   "a": "A sitemap normally may only list URLs on the host it is served from, unless ownership is verified."
+  },
+  {
+   "q": "Is lastmod in the files?",
+   "a": "Only the index entries get a lastmod. Per-URL dates need the CSV or XML tools."
+  }
+ ],
+ "related": [
+  "sitemap-generator",
+  "sitemap-limit-checker",
+  "sitemap-validator",
+  "sitemap-url-extractor",
+  "text-sitemap-generator",
+  "csv-to-sitemap"
+ ],
+ "keywords": [
+  "sitemap index generator",
+  "split sitemap 50000 urls",
+  "sitemap splitter",
+  "large sitemap"
+ ]
+}

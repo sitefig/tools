@@ -1,0 +1,45 @@
+{
+ "id": "changelog-generator",
+ "seoTitle": "Free Changelog Generator from Git Log (Conventional)",
+ "metaDescription": "Turn git log lines into a CHANGELOG.md section grouped by Conventional Commit type, with scopes, breaking changes and links. Free, in your browser.",
+ "intro": "Turns pasted git log output into a CHANGELOG.md section grouped by Conventional Commit type, with scopes, breaking changes marked and optional commit links. Other commits go under \"Other Changes\".",
+ "why": "A release needs a changelog, and nobody enjoys writing one from memory on release day. If your team writes Conventional Commits, the history already has the facts: features, fixes, performance work, docs and breaking changes. Paste the output of git log with hash and subject and this tool groups the commits by type, shows scopes, flags breaking changes (an exclamation mark or BREAKING CHANGE) and adds links to commits when you give a repository URL. You can use a grouped Conventional style or a Keep a Changelog layout, set the version and date, and skip merge commits. Commits that do not follow the convention are listed under Other Changes. It runs locally in your browser.",
+ "howTo": [
+  "Run git log with --pretty=format:\"%h %s\" and paste the output into the input box.",
+  "Set the version, date, repository URL for links and the style, and decide whether to skip merge commits.",
+  "Copy the section into your CHANGELOG.md and edit the wording where needed."
+ ],
+ "faq": [
+  {
+   "q": "What commit format does it expect?",
+   "a": "Conventional Commits such as feat(api): add pagination or fix: handle null. A hash at the start of the line is optional. Lines that do not match go under Other Changes."
+  },
+  {
+   "q": "How are breaking changes shown?",
+   "a": "A ! after the type or scope, or BREAKING CHANGE in the subject, marks the commit as breaking and it is highlighted in the output."
+  },
+  {
+   "q": "How are links built?",
+   "a": "If you enter a repository URL, each commit hash is linked to its commit page on that repository, in the repository you give."
+  },
+  {
+   "q": "Can it replace a release tool?",
+   "a": "It drafts one section from pasted text. It does not read your repository, determine the version or tag a release, so it complements rather than replaces release automation."
+  }
+ ],
+ "related": [
+  "conventional-commit-generator",
+  "commitlint-semantic-release-generator",
+  "git-command-builder",
+  "semver-calculator",
+  "markdown-preview",
+  "readme-generator"
+ ],
+ "keywords": [
+  "changelog generator",
+  "generate changelog from git log",
+  "conventional commits changelog",
+  "free changelog.md generator",
+  "keep a changelog from commits"
+ ]
+}

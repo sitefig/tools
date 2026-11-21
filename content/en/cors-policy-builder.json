@@ -1,0 +1,46 @@
+{
+  "id": "cors-policy-builder",
+  "seoTitle": "CORS Policy Builder for nginx, Apache, Express, Caddy, Workers",
+  "metaDescription": "Generate CORS headers for nginx, Apache, Express, Caddy or Cloudflare Workers with an allowlist, preflight handling and credentials checks.",
+  "intro": "Build correct Cross-Origin Resource Sharing configuration without trial and error, including the origin allowlist pattern and Vary: Origin.",
+  "why": "List the allowed origins (or *), methods, request headers, exposed headers, credentials and preflight cache time, then pick a target. The tool refuses the invalid combination of * with credentials, validates that each origin is scheme plus host, and produces config that echoes the request Origin only when it is on the list and adds Vary: Origin so caches stay correct.\n\nCORS controls whether browsers let a page read a response; it is not authentication and does not stop other clients calling your API. Browsers cap Access-Control-Max-Age (Chrome 2 hours, Firefox 24 hours).\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "List allowed origins, one per line (or *).",
+    "Set methods, headers, credentials and max-age.",
+    "Choose your server and copy the config.",
+    "Test with a preflight request from the browser console or the CORS inspector."
+  ],
+  "faq": [
+    {
+      "q": "Can I use * with cookies?",
+      "a": "No. Browsers reject Access-Control-Allow-Origin: * on credentialed requests; list explicit origins."
+    },
+    {
+      "q": "Why Vary: Origin?",
+      "a": "So a cache does not serve a response with one origin's CORS headers to a different origin."
+    },
+    {
+      "q": "Does CORS protect my API?",
+      "a": "No. It only restricts browser scripts. Use authentication and authorisation for protection."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "cors-preflight-inspector",
+    "http-headers-analyzer",
+    "security-headers-generator",
+    "nginx-config-generator",
+    "htaccess-generator",
+    "csp-builder"
+  ],
+  "keywords": [
+    "cors configuration",
+    "access-control-allow-origin",
+    "cors nginx",
+    "cors express",
+    "cors headers generator"
+  ]
+}

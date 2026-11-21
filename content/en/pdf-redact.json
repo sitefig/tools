@@ -1,0 +1,45 @@
+{
+  "id": "pdf-redact",
+  "seoTitle": "PDF Redaction: Black Out Areas Permanently",
+  "metaDescription": "Black out sensitive areas of a PDF by page and position in percent. Pages are flattened to images, so the covered text is really gone.",
+  "intro": "Remove names, numbers or signatures from a PDF so they cannot be recovered.",
+  "why": "Boxes are given as \"page x y width height\" in percent of the page, with \"all\" for every page. The tool renders each page, paints the boxes and rebuilds a PDF from the images, so the original text, hidden layers, form fields, annotations and metadata are not carried over. That is what makes the redaction permanent, unlike a box drawn over text in an editor.\n\nAlways open the result and check every page. Text becomes a picture, so the file is no longer searchable. Positions are measured from the top-left corner.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose the PDF.",
+    "List the boxes, one per line.",
+    "Download and review the redacted copy.",
+    "Share only the redacted file."
+  ],
+  "faq": [
+    {
+      "q": "Why flatten the pages?",
+      "a": "Covering text with a shape leaves the text in the file. Rendering to an image removes it."
+    },
+    {
+      "q": "How do I find coordinates?",
+      "a": "Estimate the position as a percentage of the page; run, check, adjust."
+    },
+    {
+      "q": "Is the original changed?",
+      "a": "No, a new file is created."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "image-redaction",
+    "pdf-remove-metadata",
+    "pdf-dark-mode",
+    "pii-redactor",
+    "secret-detector-redactor",
+    "pdf-to-image"
+  ],
+  "keywords": [
+    "pdf redaction",
+    "black out pdf text",
+    "redact pdf online",
+    "permanent redaction"
+  ]
+}

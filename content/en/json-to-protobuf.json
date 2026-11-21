@@ -1,0 +1,45 @@
+{
+  "id": "json-to-protobuf",
+  "seoTitle": "JSON to Protobuf (.proto) Generator",
+  "metaDescription": "Infer a proto3 schema from a JSON sample: nested messages, repeated fields and int32, int64, double, bool and string types.",
+  "intro": "Start a Protocol Buffers schema from a sample payload instead of writing it by hand.",
+  "why": "Objects become messages (named from their keys), arrays become repeated fields, integers become int32 or int64 depending on size, other numbers double, booleans bool and strings string. Field names are converted to snake_case and numbered in order. Nulls and empty arrays have no type information, so they are typed as string and noted at the end.\n\nThe result compiles with protoc. A sample cannot tell optional from required, enums from strings or timestamps from text, so review the schema before using it on the wire; field numbers must never change once published.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste a representative JSON object.",
+    "Set the root message and package.",
+    "Copy the .proto output and fix the notes.",
+    "Compile with protoc."
+  ],
+  "faq": [
+    {
+      "q": "Why are nulls typed as string?",
+      "a": "A null reveals no type. Change it to the real type."
+    },
+    {
+      "q": "How are arrays of objects merged?",
+      "a": "Keys from all elements are combined into one message."
+    },
+    {
+      "q": "Is proto3 the right version?",
+      "a": "It is the current default; proto2 features such as required fields are not generated."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "protobuf-to-json",
+    "protobuf-formatter",
+    "protobuf-to-json-schema",
+    "json-schema-to-protobuf",
+    "json-to-typescript",
+    "json-to-go"
+  ],
+  "keywords": [
+    "json to protobuf",
+    "generate proto from json",
+    "proto3 generator",
+    "json to proto"
+  ]
+}

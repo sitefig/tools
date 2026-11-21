@@ -1,0 +1,46 @@
+{
+  "id": "color-names-lookup",
+  "seoTitle": "Free Color Names Lookup: Nearest CSS Colour Name",
+  "metaDescription": "Find the nearest named CSS colour for any HEX, RGB or HSL value, or search colour names by text. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Takes colours or name fragments, one per line. For a colour value it lists the closest CSS named colours by perceptual distance. For text it lists names that contain it.",
+  "why": "You have a hex code and want a friendly name for a design token, a comment or a colour-blind-friendly note. Or you remember part of a name, such as \"slate\" or \"sky\", and want to see what is available and what hex it maps to.\n\nPaste several lines at once. A line that parses as a colour returns the nearest named CSS colours, ranked by distance in the perceptual OKLab space, so the match reflects how colours look rather than how close the numbers are. A line that does not parse is treated as a search term and returns every name containing it, with its hex code. Only the standard CSS colour names are included. The lookup runs in your browser and nothing is uploaded.",
+  "howTo": [
+    "Enter a colour value or part of a colour name on each line.",
+    "Read the ranked nearest names, or the matching names, in the output.",
+    "Note the hex codes and distances.",
+    "Copy the name you need."
+  ],
+  "faq": [
+    {
+      "q": "Which names are searched?",
+      "a": "The standard CSS named colours such as tomato, steelblue and rebeccapurple. It does not include marketing names, such as paint or brand colour names, from outside the CSS list."
+    },
+    {
+      "q": "What does distance mean?",
+      "a": "It is the Euclidean distance between two colours in the OKLab space. A smaller number is a closer match, and a distance near zero means the named colour is practically identical."
+    },
+    {
+      "q": "How does it decide between colour and search?",
+      "a": "It first tries to read the line as a colour. If that fails, for example for the text \"sky\", it treats it as a search term and ignores case and spaces."
+    },
+    {
+      "q": "Which colour formats can I enter?",
+      "a": "Hex codes, rgb, hsl and similar CSS functions, and existing colour names. Each line is handled separately, so you can mix formats in one go."
+    }
+  ],
+  "related": [
+    "color-converter",
+    "palette-generator",
+    "color-picker-from-image",
+    "contrast-checker",
+    "color-mixer",
+    "tailwind-v4-color-palette"
+  ],
+  "keywords": [
+    "css color names",
+    "nearest color name finder",
+    "hex to color name",
+    "css named colors list",
+    "free color name lookup"
+  ]
+}

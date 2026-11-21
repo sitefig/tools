@@ -1,0 +1,45 @@
+{
+ "id": "pdf-blank-page-inserter",
+ "seoTitle": "PDF Blank Page Inserter: Add Separator Pages",
+ "metaDescription": "Insert blank or separator pages into a PDF after the pages you choose, or at the start, with optional text on each. Free, private, in your browser.",
+ "intro": "Adds one or more empty pages after the page numbers you list. Each new page takes the size of the page before it, and can carry a short line of text.",
+ "why": "Chapters that must start on a right-hand page, double-sided printing, and separator sheets between sections all need blank pages in the right places. Doing this in a desktop editor is heavy for a one-off job.\n\nList the page numbers after which blanks go, for example \"0, 2, 5\", where 0 means at the start. A number repeated adds more blanks. A blank page copies the displayed size of the page it follows, including rotation. The file is rewritten, so bookmarks, form fields and links are not carried over.",
+ "howTo": [
+  "Choose a PDF.",
+  "Enter the page numbers after which to insert blanks.",
+  "Set how many blanks and an optional line of text.",
+  "Press Run and download."
+ ],
+ "faq": [
+  {
+   "q": "How do I add a blank page at the start?",
+   "a": "Enter 0 in the list."
+  },
+  {
+   "q": "Can I add text to the blank pages?",
+   "a": "Yes, enter a short line such as \"This page is intentionally blank\"."
+  },
+  {
+   "q": "Which size is used?",
+   "a": "The size of the page before the blank. At the start, the size of the first page."
+  },
+  {
+   "q": "Are my bookmarks kept?",
+   "a": "No. Page tools in this set rewrite the file and drop bookmarks. Add them back with the bookmark editor."
+  }
+ ],
+ "related": [
+  "pdf-merge",
+  "pdf-delete-pages",
+  "pdf-reorder-pages",
+  "pdf-booklet-maker",
+  "pdf-split",
+  "pdf-n-up"
+ ],
+ "keywords": [
+  "insert blank page pdf",
+  "add blank page to pdf",
+  "pdf separator page",
+  "pdf blank page inserter"
+ ]
+}

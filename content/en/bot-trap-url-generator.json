@@ -1,0 +1,44 @@
+{
+ "id": "bot-trap-url-generator",
+ "seoTitle": "Bot Trap URL Generator: Honeypot Path for Rogue Crawlers",
+ "metaDescription": "Create a honeypot path, the robots.txt rule that forbids it, a hidden link and log filters to catch crawlers that ignore robots.txt. Free.",
+ "intro": "Generates a hard-to-guess trap path with the robots.txt line, hidden link and grep commands to find visitors.",
+ "why": "A bot trap is a URL that no human sees and no polite crawler visits. If something requests it, it ignored robots.txt and followed a hidden link.\n\nThe tool derives a path from your seed, gives the Disallow rule, a hidden link that screen readers and keyboards skip, and commands to list visitors from your logs. Do not ban on one hit without checking, since scanners and proxies can trigger it.",
+ "howTo": [
+  "Enter a seed word and folder name.",
+  "Add the Disallow rule to robots.txt.",
+  "Place the hidden link in a template.",
+  "Check the log for visitors."
+ ],
+ "faq": [
+  {
+   "q": "Is the path secret?",
+   "a": "No. It comes from a simple hash and is visible in robots.txt."
+  },
+  {
+   "q": "Is the hidden link accessible?",
+   "a": "It uses display:none, so it is hidden from sighted users, keyboards and screen readers."
+  },
+  {
+   "q": "Should I auto-ban?",
+   "a": "Review first. Link preview tools and scanners can hit it."
+  },
+  {
+   "q": "What should the trap return?",
+   "a": "Something harmless, like a 404."
+  }
+ ],
+ "related": [
+  "robots-generator",
+  "bot-firewall-rule-builder",
+  "robots-txt-compliance-log-checker",
+  "access-log-analyzer",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "bot trap",
+  "honeypot url crawler",
+  "catch bad bots",
+  "robots.txt honeypot"
+ ]
+}

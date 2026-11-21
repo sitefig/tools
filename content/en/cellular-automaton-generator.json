@@ -1,0 +1,45 @@
+{
+  "id": "cellular-automaton-generator",
+  "seoTitle": "Elementary Cellular Automaton Generator (Rule 30, 90, 110, 0-255)",
+  "metaDescription": "Generate Wolfram elementary cellular automata for any rule from 0 to 255, as text and SVG, with wrap-around or fixed edges and a single-cell or random start.",
+  "intro": "Watch simple rules produce complex patterns, and download the picture as SVG.",
+  "why": "Each cell looks at itself and its two neighbours; the 8-bit rule number lists the new state for each of the eight neighbourhoods. The tool builds the generations row by row (with periodic or fixed boundaries) and draws them as text and as an SVG. Output for rules 0, 30, 90, 110, 184 and 255 was compared with an independent implementation.\n\nRule 30 is chaotic, rule 90 draws the Sierpinski triangle and rule 110 is Turing complete. Wide, long runs make large images, so size is limited to 400 cells.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter a rule number from 0 to 255.",
+    "Set width and generations.",
+    "Choose a single-cell or random start.",
+    "Download the SVG or copy the text."
+  ],
+  "faq": [
+    {
+      "q": "What does the rule number mean?",
+      "a": "Write it in binary; each bit gives the next state of the neighbourhood 111, 110, 101, 100, 011, 010, 001, 000."
+    },
+    {
+      "q": "Which rules are interesting?",
+      "a": "Try 30, 54, 60, 90, 110, 150 and 184."
+    },
+    {
+      "q": "Is it the same as Conway's Game of Life?",
+      "a": "No. Life is two-dimensional; these automata are one-dimensional rows evolving over time."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "l-system-generator",
+    "game-2048",
+    "minesweeper",
+    "svg-optimizer",
+    "bitwise-calculator",
+    "binary-text"
+  ],
+  "keywords": [
+    "cellular automaton",
+    "rule 30",
+    "rule 110",
+    "wolfram automata"
+  ]
+}

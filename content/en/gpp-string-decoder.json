@@ -1,0 +1,41 @@
+{
+ "id": "gpp-string-decoder",
+ "seoTitle": "IAB GPP String Decoder: Header and Sections",
+ "metaDescription": "Decode a Global Privacy Platform string: header, section ids and the TCF EU v2, US Privacy and US National sections. Free, local.",
+ "intro": "Decodes a GPP string into its header and sections, with full detail for EU TCF v2, US Privacy and the US National section.",
+ "why": "The Global Privacy Platform string carries several privacy signals in one value: an EU TCF string, a US Privacy string, or US state sections, joined by tildes. A small header lists which sections follow, using a Fibonacci-coded range.\n\nThis tool decodes the header, names every section id from the IAB list, and decodes the EU TCF v2, US Privacy and US National sections. The US National field order was built from the specification table and tested with a hand-made encoder, not with a real production string. State sections such as California are named but not decoded.",
+ "howTo": [
+  "Copy the GPP string from your CMP or the __gpp cookie / API.",
+  "Paste it into the box.",
+  "Read the header and the list of sections.",
+  "Check the decoded sections you care about."
+ ],
+ "faq": [
+  {
+   "q": "Which sections are decoded?",
+   "a": "EU TCF v2 (id 2), US Privacy (id 6) and US National (id 7). Others are listed by name only."
+  },
+  {
+   "q": "What is the part after the dot?",
+   "a": "A sub-section, for example the GPC flag in US sections."
+  },
+  {
+   "q": "How do I get the string?",
+   "a": "From your consent tool, or by calling __gpp(\"getGPPData\") in the browser console."
+  }
+ ],
+ "related": [
+  "tcf-string-decoder",
+  "us-privacy-string-decoder",
+  "gpc-signal-tester",
+  "consent-mode-debugger",
+  "har-analyzer",
+  "privacy-law-applicability-checker"
+ ],
+ "keywords": [
+  "gpp string decoder",
+  "global privacy platform",
+  "usnat decoder",
+  "gpp header"
+ ]
+}

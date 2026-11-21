@@ -1,0 +1,45 @@
+{
+ "id": "csat-calculator",
+ "seoTitle": "CSAT Score Calculator: Customer Satisfaction Percentage",
+ "metaDescription": "Compute CSAT from the number of responses at each rating from 1 to 5, with satisfied share and average rating. Free and private.",
+ "intro": "Enter response counts per rating and get the CSAT percentage and the average.",
+ "why": "CSAT is the share of responses that are satisfied. Teams differ on whether satisfied means 4 and 5 or only 5, so the cutoff is a choice here.\n\nAlways state the cutoff when reporting CSAT. The bars show the distribution, which often says more than the single number.",
+ "howTo": [
+  "Enter how many responses gave each rating.",
+  "Choose the satisfied cutoff.",
+  "Read CSAT and the average.",
+  "Compare periods with the same cutoff."
+ ],
+ "faq": [
+  {
+   "q": "What is the formula?",
+   "a": "Satisfied responses divided by all responses, times 100."
+  },
+  {
+   "q": "Which cutoff is standard?",
+   "a": "Both are used; 4 and 5 is common."
+  },
+  {
+   "q": "What about a 10-point scale?",
+   "a": "Map it to 5 groups first."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "nps-calculator",
+  "survey-sample-size-calculator",
+  "margin-of-error-calculator",
+  "statistics-calculator",
+  "retention-calculator",
+  "conversion-rate-calculator"
+ ],
+ "keywords": [
+  "csat calculator",
+  "customer satisfaction score",
+  "csat formula",
+  "calculate csat"
+ ]
+}

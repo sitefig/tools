@@ -1,0 +1,46 @@
+{
+ "id": "canonical-generator",
+ "seoTitle": "Free Canonical URL Generator and Normaliser",
+ "metaDescription": "Normalise URLs by forcing https, choosing www and trailing slash, stripping tracking parameters and index files, then output canonical tags. Free.",
+ "intro": "Paste URLs to normalise them: force https, add or remove www, set the trailing slash, strip tracking parameters and index.html, sort parameters, and get canonical link tags.",
+ "why": "Duplicate content often comes from URL variants of one page: http and https, with and without www, with and without a trailing slash, with a tracking parameter or an index.html. Search engines pick a canonical version, but you can state which one you prefer with a canonical tag, and clean, consistent URLs make that easier.\n\nThis tool applies the rules you choose to a list of URLs and prints a link rel=\"canonical\" tag for each result, with the original in a comment. You can force https, keep, add or remove www, set the trailing slash, strip tracking parameters and index files, lowercase the path and sort the remaining parameters. It does not check your site, so confirm that the chosen format matches your redirects. The work is done in your browser.",
+ "howTo": [
+  "Paste URLs, one per line, into the input box.",
+  "Choose https, www, trailing slash and clean-up options.",
+  "Run the tool to produce the canonical tags.",
+  "Add the tag for each page to its head and make sure redirects match the same format."
+ ],
+ "faq": [
+  {
+   "q": "Does a canonical tag replace redirects?",
+   "a": "No. A canonical is a hint. For variants such as http and www, use 301 redirects to the preferred version and add a self-referencing canonical on the final page."
+  },
+  {
+   "q": "Which tracking parameters are stripped?",
+   "a": "Common ones such as utm_ parameters, fbclid and gclid are removed when the option is on. Parameters that change page content, like page or id, are kept."
+  },
+  {
+   "q": "Should a canonical point to itself?",
+   "a": "Yes, a self-referencing canonical on every indexable page is a common good practice, and it protects against stray parameters creating duplicates."
+  },
+  {
+   "q": "Is my URL list uploaded?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "url-tracker-stripper",
+  "redirect-code-generator",
+  "sitemap-generator",
+  "htaccess-generator",
+  "hreflang-generator",
+  "seo-inspector"
+ ],
+ "keywords": [
+  "canonical url generator",
+  "canonical tag generator",
+  "normalise urls online",
+  "rel canonical builder",
+  "url normalizer free"
+ ]
+}

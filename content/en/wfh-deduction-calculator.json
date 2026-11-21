@@ -1,0 +1,38 @@
+{
+ "id": "wfh-deduction-calculator",
+ "seoTitle": "Work From Home Deduction Calculator (Fixed Rate, Australia)",
+ "metaDescription": "Calculate the ATO fixed-rate work-from-home deduction from hours per week and weeks worked, with the tax value at your marginal rate. Rate is editable.",
+ "intro": "Work out the Australian work-from-home deduction under the fixed rate per hour method.",
+ "why": "The ATO fixed rate method lets employees claim a set amount for every hour worked from home, covering energy, internet, phone and stationery. Enter your hours per week, weeks worked, the current rate (70 cents in 2024-25, editable) and your marginal rate to see the deduction and roughly how much tax it saves, and add direct costs you claim separately such as equipment decline in value.\n\nYou must keep records of the hours actually worked from home for the whole year and evidence of the expenses the rate covers, and you cannot claim those expenses again. Rules and the rate change, so check ato.gov.au. This is a calculator, not tax advice.",
+ "howTo": [
+  "Enter hours per week and weeks worked.",
+  "Check the rate against the ATO's current figure.",
+  "Add your marginal tax rate and any separate direct costs."
+ ],
+ "faq": [
+  {
+   "q": "What does the rate cover?",
+   "a": "Electricity and gas, internet, phone, stationery and computer consumables."
+  },
+  {
+   "q": "What records do I need?",
+   "a": "A record of all hours worked from home for the year, plus bills or evidence for the covered expenses."
+  },
+  {
+   "q": "Is the rate fixed?",
+   "a": "It is set by the ATO each year; edit the field if it changes."
+  }
+ ],
+ "related": [
+  "au-income-tax-estimator",
+  "gst-bas-calculator",
+  "salary-hourly",
+  "tip-calculator",
+  "percentage-calculator"
+ ],
+ "keywords": [
+  "work from home deduction",
+  "ato fixed rate method",
+  "wfh tax claim"
+ ]
+}

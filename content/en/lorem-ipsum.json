@@ -1,0 +1,46 @@
+{
+  "id": "lorem-ipsum",
+  "seoTitle": "Free Lorem Ipsum Generator: Words to Paragraphs",
+  "metaDescription": "Generate placeholder text as words, sentences or paragraphs, with an optional classic opening and a seed for repeatable output. Free, in your browser.",
+  "intro": "Produces Lorem Ipsum placeholder text in words, sentences or paragraphs. You can start with the classic opening line and set a seed so the same settings give the same text.",
+  "why": "Designers and developers need filler text long before the real copy exists. A card layout, a blog template or a form with a long description field all need something that looks like language without distracting the reviewer.\n\nPick words, sentences or paragraphs and a count, and the generator assembles pseudo-Latin text from a fixed vocabulary. The classic \"Lorem ipsum dolor sit amet\" opening can be switched on or off. A seed, which can be any word, makes the output repeatable, so screenshots, snapshot tests and design hand-offs stay stable between runs. The text is built locally in your browser and nothing is requested from a server.",
+  "howTo": [
+    "Choose a unit: paragraphs, sentences or words.",
+    "Enter a count between 1 and 2000.",
+    "Tick Start with Lorem ipsum if you want the classic opening, and add a seed for repeatable text.",
+    "Copy the generated text into your layout."
+  ],
+  "faq": [
+    {
+      "q": "Is this the original Cicero text?",
+      "a": "No. It draws random words from a Latin-style vocabulary, so the sentences are nonsense that merely look like Latin. That is the point: readers focus on layout rather than meaning."
+    },
+    {
+      "q": "What is the seed for?",
+      "a": "With a seed, the same settings always return the same text, which is useful for tests and design files. Leave it empty for a fresh random result each time."
+    },
+    {
+      "q": "What counts can I use?",
+      "a": "From 1 to 2000 of the chosen unit. Paragraphs contain three to six sentences, and sentences are six to fourteen words long, with an occasional comma. Words mode returns exactly the number you ask for."
+    },
+    {
+      "q": "Does it need a network connection?",
+      "a": "No. The vocabulary is built into the page and the text is generated in your browser, so it works offline once the page has loaded."
+    }
+  ],
+  "related": [
+    "mock-data-generator",
+    "random-json-generator",
+    "word-counter",
+    "placeholder-image-generator",
+    "fake-person-generator",
+    "case-converter"
+  ],
+  "keywords": [
+    "lorem ipsum generator",
+    "placeholder text generator",
+    "dummy text generator",
+    "lorem ipsum paragraphs",
+    "free lorem ipsum online"
+  ]
+}

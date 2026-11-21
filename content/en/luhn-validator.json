@@ -1,0 +1,46 @@
+{
+ "id": "luhn-validator",
+ "seoTitle": "Free Luhn Validator - Check or Add Check Digit",
+ "metaDescription": "Validate numbers with the Luhn checksum or calculate the missing check digit, one number per line. Free and runs privately in your browser.",
+ "intro": "Test numbers against the Luhn checksum used by payment cards and many ID schemes, or append the check digit that makes a number valid.",
+ "why": "The Luhn algorithm is the quick sanity check behind card numbers, IMEI numbers and several national identifiers. It catches most mistyped digits, which is why forms run it before sending anything to a server. Developers meet it when writing validation, testing payment forms or generating sample IDs, and need a reliable way to confirm that a number passes or to work out which final digit is missing.\n\nPaste one number per line. Spaces and hyphens are ignored. Validate mode says valid or invalid, and append mode finds the check digit and shows the complete number. Luhn only proves a number is well formed. It says nothing about whether a card exists or is active. The calculation runs locally.",
+ "howTo": [
+  "Paste numbers into the box, one per line; spaces and hyphens are allowed.",
+  "Choose validate to test them, or append check digit to complete a partial number.",
+  "Run the tool.",
+  "Read the verdict or the completed number on each line."
+ ],
+ "faq": [
+  {
+   "q": "Does a valid Luhn number mean the card is real?",
+   "a": "No. Luhn is only a typo check. Many random numbers pass it. It cannot show that an account exists, has funds or belongs to anyone, so it is never a substitute for a proper payment check."
+  },
+  {
+   "q": "How does the append mode work?",
+   "a": "You enter the number without its last digit. The tool tries digits 0 to 9 and returns the one that makes the whole number pass the Luhn test, then shows the full number and the check digit."
+  },
+  {
+   "q": "What inputs are rejected?",
+   "a": "Anything with letters or symbols other than spaces and hyphens is reported as not numeric. The line is shown with the reason, and the other lines are still processed."
+  },
+  {
+   "q": "Which numbers use Luhn?",
+   "a": "Most payment card numbers, IMEI numbers, Canadian social insurance numbers and some other identifiers. Other schemes, such as IBAN or ISBN-13, use different checksums."
+  }
+ ],
+ "related": [
+  "check-digit-tool",
+  "iban-validator",
+  "mock-credit-card-generator",
+  "crc-calculator",
+  "bcd-converter",
+  "barcode-generator"
+ ],
+ "keywords": [
+  "luhn validator",
+  "luhn algorithm checker",
+  "calculate luhn check digit",
+  "credit card number validator",
+  "free luhn tool"
+ ]
+}

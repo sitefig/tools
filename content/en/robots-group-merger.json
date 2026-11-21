@@ -1,0 +1,44 @@
+{
+ "id": "robots-group-merger",
+ "seoTitle": "robots.txt Group Merger: Effective Rules per User-agent",
+ "metaDescription": "See the rules each crawler really follows after groups with the same user-agent are merged, and why the * group does not apply on top. Free.",
+ "intro": "Merges duplicate user-agent groups like a crawler does and prints the effective rule set for each named crawler.",
+ "why": "Many robots.txt files have two groups for Googlebot, or a Googlebot group plus a * group. Crawlers merge groups with the same name, and a crawler with its own group ignores the * group completely. People often expect the opposite and end up with a crawler that is blocked from less than they intended.\n\nThe tool lists the effective rules per user-agent and warns when named groups do not inherit the * rules.",
+ "howTo": [
+  "Paste the robots.txt.",
+  "Read the merged rule list for each user-agent.",
+  "Check whether named groups need the * rules copied in.",
+  "Verify with the tester."
+ ],
+ "faq": [
+  {
+   "q": "Are the * rules added to a named group?",
+   "a": "No. A crawler uses the most specific group that names it and ignores the * group."
+  },
+  {
+   "q": "Are groups merged?",
+   "a": "Yes, groups with the same user-agent name are combined, in any order."
+  },
+  {
+   "q": "Is the user-agent name case sensitive?",
+   "a": "No."
+  },
+  {
+   "q": "Does it handle several User-agent lines in one group?",
+   "a": "Yes. Each name gets the same rules."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "robots-conflict-detector",
+  "robots-txt-viewer",
+  "robots-txt-minifier",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "robots.txt merge groups",
+  "robots.txt user-agent groups",
+  "robots.txt wildcard group",
+  "effective robots.txt rules"
+ ]
+}

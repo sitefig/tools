@@ -1,0 +1,46 @@
+{
+  "id": "svg-path-editor",
+  "seoTitle": "Free SVG Path Editor: Translate, Scale and Convert",
+  "metaDescription": "Parse an SVG path, move or scale it, switch between absolute and relative commands, round numbers and list its points. Free, in your browser.",
+  "intro": "Takes an SVG path data string and lets you translate and scale it, convert it to absolute or relative commands and round the numbers. It lists every point and draws a preview.",
+  "why": "The d attribute of an SVG path is a compact string of commands that is painful to edit by hand. Nudging a shape ten units to the right, doubling its size, or converting relative commands into absolute ones all mean rewriting every number.\n\nPaste the path, enter translate and scale values, choose absolute or relative output and a number of decimals, and the transformed path is produced with a numbered list of its points and a preview. Horizontal and vertical lines, curves, smooth curves and arcs are all handled, and implicit repeated commands are expanded. Arc radii are scaled with the absolute scale factors. It does not edit shapes visually. The processing runs in your browser.",
+  "howTo": [
+    "Paste the path data, or the whole d attribute, into the input box.",
+    "Enter translate X and Y and scale X and Y if you want to move or resize it.",
+    "Choose absolute or relative output and the number of decimals.",
+    "Check the preview and copy the new path from the output."
+  ],
+  "faq": [
+    {
+      "q": "Which commands are supported?",
+      "a": "M, L, H, V, C, S, Q, T, A and Z, in both upper and lower case. Numbers following a command without a new letter are treated as repeats of it, with M followed by implicit L."
+    },
+    {
+      "q": "What is the difference between absolute and relative?",
+      "a": "Absolute commands, in capitals, use coordinates from the origin of the drawing. Relative commands, in lower case, move from the current point. The tool converts whichever form you provide."
+    },
+    {
+      "q": "How does scaling treat arcs?",
+      "a": "Arc radii are multiplied by the absolute scale factors, and the other arc parameters are left unchanged. Negative scales that mirror a shape do not flip the arc sweep flags, so check mirrored arcs by eye."
+    },
+    {
+      "q": "Why does it say a number is missing?",
+      "a": "A command did not get all its arguments, for example a cubic curve with only five numbers. The error names the command so you can find the incomplete part of the path."
+    }
+  ],
+  "related": [
+    "svg-preview-editor",
+    "svg-optimizer",
+    "svg-to-png",
+    "clip-path-generator",
+    "svg-to-jsx",
+    "svg-wavy-divider-generator"
+  ],
+  "keywords": [
+    "svg path editor",
+    "svg path transform",
+    "svg path absolute to relative",
+    "scale svg path",
+    "free svg path tool"
+  ]
+}

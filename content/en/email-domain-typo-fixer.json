@@ -1,0 +1,45 @@
+{
+ "id": "email-domain-typo-fixer",
+ "seoTitle": "Email Domain Typo Fixer: gmial.com, hotmial.com and More",
+ "metaDescription": "Fix common email domain typos such as gmial.com, hotmial.com, yahooo.com and .con in a pasted list, and review every change. Free and private.",
+ "intro": "Paste addresses and see each domain correction before you import the list.",
+ "why": "Typed signups often contain domains like gmial.com or outlook.con. Those addresses bounce, and the person never gets your email. Correcting the obvious ones recovers real subscribers.\n\nThe fixes come from a built-in list of typos for big providers and common ending mistakes. Review the change list: a rule can be wrong for an unusual real domain. Nothing is uploaded.",
+ "howTo": [
+  "Paste the addresses.",
+  "Read the list of changes.",
+  "Turn off applying fixes if you only want the report.",
+  "Copy the corrected list."
+ ],
+ "faq": [
+  {
+   "q": "Can a fix be wrong?",
+   "a": "Yes, rarely. That is why every change is listed."
+  },
+  {
+   "q": "Does it fix local parts?",
+   "a": "No, only the domain."
+  },
+  {
+   "q": "Does it check mailboxes?",
+   "a": "No."
+  },
+  {
+   "q": "Can I add my own typos?",
+   "a": "Not in this version."
+  }
+ ],
+ "related": [
+  "email-list-cleaner",
+  "email-validator",
+  "disposable-email-detector",
+  "html-email-extractor",
+  "email-name-formatter",
+  "text-obfuscator"
+ ],
+ "keywords": [
+  "email typo fixer",
+  "gmial.com fix",
+  "email domain correction",
+  "fix email typos"
+ ]
+}

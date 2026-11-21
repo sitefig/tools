@@ -1,0 +1,47 @@
+{
+ "id": "csv-to-json",
+ "seoTitle": "Free CSV to JSON Converter Online",
+ "metaDescription": "Free online CSV to JSON converter. Handles quoted fields, any delimiter and header rows, with optional number and boolean detection. Runs in your browser.",
+ "intro": "Turn CSV text into JSON. Delimiters are detected automatically, quoted fields are handled, and you can convert numbers, booleans and null instead of leaving everything as strings.",
+ "why": "Spreadsheets and exports give you CSV, while code and APIs want JSON. A naive split on commas breaks the moment a cell contains a comma, a quote or a line break, and the usual one-liner leaves every number as a string.\n\nThis converter reads CSV the way the standard describes it: quoted fields, doubled quotes and embedded line breaks all work. It guesses the delimiter, or you can pick comma, semicolon, tab or pipe. With the header option on, each row becomes an object keyed by column name, and with it off you get arrays. Type inference turns 42, 3.5, true and null into real JSON values. Large exports stay on your machine because the conversion runs in your browser.",
+ "howTo": [
+  "Paste your CSV into the input box.",
+  "Leave the delimiter on auto, or choose comma, semicolon, tab or pipe.",
+  "Tick First row is header to get objects, and Infer types to get numbers and booleans.",
+  "Choose the indent and copy the JSON."
+ ],
+ "faq": [
+  {
+   "q": "How does type inference work?",
+   "a": "Cells that look like plain numbers become numbers, true and false become booleans and the word null becomes null. Everything else stays a string. Very long digit strings stay as text so identifiers are not corrupted."
+  },
+  {
+   "q": "What if two columns have the same name?",
+   "a": "Duplicate headers get a numeric suffix, such as name and name_2, and empty headers become column1, column2 and so on, so no data is lost."
+  },
+  {
+   "q": "Does it handle quotes and line breaks in cells?",
+   "a": "Yes. Quoted fields can contain delimiters, doubled quotes and line breaks. An unterminated quote gives a clear error message instead of silently producing wrong output."
+  },
+  {
+   "q": "What if my file has no header?",
+   "a": "Untick the header option and each row becomes an array of values rather than an object. You can then name the columns in your own code."
+  }
+ ],
+ "related": [
+  "json-to-csv",
+  "csv-viewer",
+  "csv-to-sql",
+  "json-format",
+  "csv-column-extractor",
+  "csv-to-xlsx"
+ ],
+ "keywords": [
+  "csv to json converter",
+  "convert csv to json online",
+  "csv to json free",
+  "csv to json with header",
+  "csv to json type inference",
+  "online csv json tool"
+ ]
+}

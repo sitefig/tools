@@ -1,0 +1,45 @@
+{
+ "id": "rust-formatter",
+ "seoTitle": "Rust Code Re-indenter Online",
+ "metaDescription": "Re-indent Rust code by brace depth with 4 spaces, keeping lifetimes, raw strings and nested comments intact. No rustfmt is used.",
+ "intro": "Fixes indentation, blank lines and optionally line breaks in Rust code without sending it anywhere.",
+ "why": "Messy indentation hides the structure of Rust code, and minified or copy-pasted code is worse. A re-indenter gives you the block layout back quickly.\n\nThe tool reads your code with a small scanner that knows strings, comments and raw literals, so braces inside them are ignored. It then sets the indent from bracket depth and, if you ask, puts a line break after braces and semicolons. It is not rustfmt.",
+ "howTo": [
+  "Paste Rust code.",
+  "Pick the indent and line break mode.",
+  "Copy the result.",
+  "Run cargo fmt locally for the official layout."
+ ],
+ "faq": [
+  {
+   "q": "Is this the same as rustfmt?",
+   "a": "No. rustfmt also wraps lines, reorders imports and chooses a layout for chains and arguments. This tool re-indents blocks and where clauses and optionally breaks lines. Re-indenting rustfmt output with its indentation stripped restored 107 of 127 test files exactly."
+  },
+  {
+   "q": "Will it change what my code does?",
+   "a": "It only changes whitespace outside strings, comments and raw literals. Test results: the non-whitespace text was unchanged on all test files, and re-running the tool gave the same output. Review the diff anyway."
+  },
+  {
+   "q": "Why not wrap long lines?",
+   "a": "Wrapping needs a full parser. This tool does not have one."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "json-to-models",
+  "typescript-to-rust-serde",
+  "curl-to-rust-reqwest",
+  "regex-to-code",
+  "js-format",
+  "css-format"
+ ],
+ "keywords": [
+  "rust formatter online",
+  "rustfmt online",
+  "re-indent rust code",
+  "rust indent fixer"
+ ]
+}

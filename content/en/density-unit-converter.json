@@ -1,0 +1,39 @@
+{
+ "id": "density-unit-converter",
+ "seoTitle": "Density Converter: kg/m3, g/cm3, lb/ft3 with Materials",
+ "metaDescription": "Convert kg/m3, g/cm3, g/mL, lb/ft3 and lb per gallon, and see typical material densities. Free tool.",
+ "intro": "Converts density between kilograms per cubic metre, grams per cubic centimetre, pounds per cubic foot or inch, pounds per gallon and ounces per cubic inch, with common material densities.",
+ "why": "Density is quoted as kg/m3 in engineering, g/cm3 in labs and lb/ft3 in US trades. Converting wrongly by a factor of 1000 is easy.\n\nThe list of typical materials gives a sanity check. Those values are textbook approximations, not data for a specific alloy or wood.",
+ "howTo": [
+  "Enter the density.",
+  "Pick its unit.",
+  "Read the converted values and compare with the material list."
+ ],
+ "faq": [
+  {
+   "q": "Is g/cm3 the same as g/mL?",
+   "a": "Yes. 1 g/cm3 equals 1 g/mL, 1 kg/L and 1000 kg/m3."
+  },
+  {
+   "q": "What is the density of water?",
+   "a": "About 1000 kg/m3 at 4 C, slightly less when warmer."
+  },
+  {
+   "q": "Are the material values exact?",
+   "a": "No. They are rounded textbook values and vary with temperature and grade."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "volume-us-imperial-converter",
+  "flow-rate-unit-converter",
+  "gravel-mulch-calculator",
+  "torque-unit-converter",
+  "power-unit-converter"
+ ],
+ "keywords": [
+  "kg/m3 to g/cm3",
+  "lb/ft3 to kg/m3",
+  "density of steel"
+ ]
+}

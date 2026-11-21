@@ -1,0 +1,44 @@
+{
+ "id": "sitemap-lastmod-timeline",
+ "seoTitle": "Sitemap Lastmod Timeline and Staleness Report",
+ "metaDescription": "Chart lastmod dates per day, month or year, spot single-day spikes and see which folders are stale. Free, runs locally.",
+ "intro": "Plots how many URLs were modified in each period and shows staleness by folder.",
+ "why": "A spike on one day often means the CMS rewrites every date on deploy. A folder whose newest date is two years old may be dead content.\n\nThe tool buckets valid lastmod values, flags a day holding half or more of the URLs, and compares folders. Set the reference date to repeat a report on a saved file.",
+ "howTo": [
+  "Paste the sitemap XML.",
+  "Pick day, month or year buckets, or leave auto.",
+  "Set what counts as stale.",
+  "Read the chart and the folder table."
+ ],
+ "faq": [
+  {
+   "q": "What is a spike?",
+   "a": "One day with at least half the dated URLs."
+  },
+  {
+   "q": "Is a stale URL bad?",
+   "a": "Not always. Evergreen pages may be fine; review them."
+  },
+  {
+   "q": "Which dates count?",
+   "a": "Valid W3C dates only. Others are counted as missing."
+  },
+  {
+   "q": "Is this a crawl?",
+   "a": "No. It only reads the file."
+  }
+ ],
+ "related": [
+  "sitemap-lastmod-validator",
+  "sitemap-priority-distribution",
+  "sitemap-url-pattern-analyzer",
+  "content-freshness-audit",
+  "sitemap-diff"
+ ],
+ "keywords": [
+  "sitemap lastmod chart",
+  "stale sitemap sections",
+  "sitemap dates",
+  "lastmod timeline"
+ ]
+}

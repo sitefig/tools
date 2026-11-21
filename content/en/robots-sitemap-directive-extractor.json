@@ -1,0 +1,44 @@
+{
+ "id": "robots-sitemap-directive-extractor",
+ "seoTitle": "robots.txt Sitemap Line Extractor and Checker",
+ "metaDescription": "List every Sitemap line in a robots.txt and check that each is an absolute URL, not duplicated and consistent in http and https. Free.",
+ "intro": "Pulls out the Sitemap lines from a robots.txt and checks them.",
+ "why": "Sitemap lines must be absolute URLs. A relative path, a typo or an old http address is ignored or points crawlers to the wrong place.\n\nThe extractor lists each Sitemap line with its line number, flags relative URLs, duplicates, unusual file extensions and mixed http and https, and prints a plain list you can copy.",
+ "howTo": [
+  "Paste the robots.txt.",
+  "Review the table of Sitemap lines.",
+  "Fix relative or duplicate entries.",
+  "Validate each sitemap with the sitemap validator."
+ ],
+ "faq": [
+  {
+   "q": "Are Sitemap lines tied to a user-agent?",
+   "a": "No. They apply to the whole file wherever they are placed."
+  },
+  {
+   "q": "Can Sitemap be a relative path?",
+   "a": "No, it must be a full URL."
+  },
+  {
+   "q": "Can I list several sitemaps?",
+   "a": "Yes, one per line."
+  },
+  {
+   "q": "Does it open the sitemaps?",
+   "a": "No, it makes no network requests. Paste a sitemap into the sitemap validator."
+  }
+ ],
+ "related": [
+  "sitemap-validator",
+  "sitemap-generator",
+  "sitemap-url-extractor",
+  "robots-txt-validator",
+  "robots-tester"
+ ],
+ "keywords": [
+  "robots.txt sitemap",
+  "extract sitemap from robots.txt",
+  "sitemap directive",
+  "robots.txt sitemap check"
+ ]
+}

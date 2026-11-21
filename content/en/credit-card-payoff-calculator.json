@@ -1,0 +1,39 @@
+{
+ "id": "credit-card-payoff-calculator",
+ "seoTitle": "Credit Card Payoff Calculator: Months and Interest",
+ "metaDescription": "Find how many months a card takes to clear at a fixed payment and the total interest, or the payment needed for a target date. Free.",
+ "intro": "Shows the time to clear a credit card balance and the interest it costs, or the monthly payment needed to finish by a date.",
+ "why": "Card interest compounds monthly, so paying only a little above the interest keeps you in debt for years. Seeing the months and the total interest at different payments makes the cost concrete.\n\nSet the payment to 0 and give a target number of months to get the payment you need. Real cards compute interest daily and may change the rate, so use the result as an estimate.",
+ "howTo": [
+  "Enter the balance and the APR.",
+  "Enter a fixed monthly payment, or 0 and a target number of months.",
+  "Read the months to zero and the total interest."
+ ],
+ "faq": [
+  {
+   "q": "Why do I get an error about interest?",
+   "a": "If the payment does not cover the first month of interest, the balance never goes down. Raise the payment."
+  },
+  {
+   "q": "Does it include new purchases?",
+   "a": "No. It assumes you stop using the card."
+  },
+  {
+   "q": "Is daily interest modelled?",
+   "a": "No. It uses APR divided by 12 each month."
+  }
+ ],
+ "related": [
+  "debt-snowball-avalanche-planner",
+  "loan-calculator",
+  "simple-interest",
+  "compound-interest",
+  "emergency-fund-calculator",
+  "budget-50-30-20-planner"
+ ],
+ "keywords": [
+  "credit card payoff",
+  "pay off credit card",
+  "card interest"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "inflation-calculator",
+ "seoTitle": "Free Inflation Calculator: Future Cost of Money",
+ "metaDescription": "See what an amount will cost after years of constant inflation, and how much purchasing power it loses. Free inflation calculator, runs in your browser.",
+ "intro": "Enter an amount, an annual inflation rate and a number of years. The tool shows the future cost, the equivalent value today and the purchasing power lost.",
+ "why": "Prices drift upwards, and a sum that looks comfortable now buys less every year. That matters when you plan a pension, set a savings target, agree a multi-year contract or ask for a pay rise. The calculation is simple compounding, but few people do it in their heads for a ten or twenty year span. This tool shows both directions: what something that costs 1,000 now might cost later, and what 1,000 received later is worth in current prices. It also states the share of purchasing power lost. It assumes a single constant rate, which real inflation is not, so treat it as a scenario tool. It runs locally in your browser.",
+ "howTo": [
+  "Enter the amount today.",
+  "Enter the expected inflation rate per year and the number of years.",
+  "Read the future cost, the value in current terms and the purchasing power lost."
+ ],
+ "faq": [
+  {
+   "q": "What formula does the calculator use?",
+   "a": "Future cost equals the amount times (1 plus the rate) to the power of the years. Dividing by the same factor gives what a future amount is worth in current prices."
+  },
+  {
+   "q": "Does it use real historical inflation data?",
+   "a": "No. It applies the constant rate you type and does not fetch consumer price indices. For past periods, use the official inflation figures from your national statistics office."
+  },
+  {
+   "q": "Why does purchasing power fall by less than the rate times years?",
+   "a": "Because the effect compounds. At 3% for 10 years, prices rise about 34%, but purchasing power falls by about 25.6%, since the loss is measured against the higher future price."
+  },
+  {
+   "q": "Can I enter a negative rate for deflation?",
+   "a": "Yes, a negative number is accepted. The future cost then falls and purchasing power rises. The years value can also be fractional."
+  }
+ ],
+ "related": [
+  "compound-interest",
+  "retirement-estimator",
+  "savings-goal",
+  "percent-change",
+  "simple-interest",
+  "sip-calculator"
+ ],
+ "keywords": [
+  "inflation calculator",
+  "free inflation calculator",
+  "purchasing power calculator",
+  "future value of money",
+  "inflation adjusted calculator",
+  "cost of living inflation"
+ ]
+}

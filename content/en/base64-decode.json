@@ -1,0 +1,47 @@
+{
+ "id": "base64-decode",
+ "seoTitle": "Free Base64 Decode Online to UTF-8 Text",
+ "metaDescription": "Decode Base64 or URL-safe Base64 back to readable UTF-8 text. Accepts data URIs and stray whitespace. Free, private and runs in your browser.",
+ "intro": "Paste a Base64 string and read the text inside. Standard and URL-safe alphabets both work, missing padding is fine, and line breaks or a data: prefix are stripped for you.",
+ "why": "You meet Base64 when you open a Basic auth header, a Kubernetes secret, a webhook payload or a data URI and need to know what is actually inside. Decoding by hand is not realistic, and command-line tools differ on padding and on URL-safe input.\n\nThis decoder cleans the input first. It removes whitespace and any data: prefix, converts the URL-safe alphabet, and tolerates missing padding. It then reads the bytes as UTF-8 and tells you plainly if they are not valid text. Decoding runs in the page, so tokens and secrets you inspect are not sent anywhere.",
+ "howTo": [
+  "Paste the Base64 string into the box. Line breaks and spaces are ignored.",
+  "Leave everything else as is. Standard and URL-safe input are both detected.",
+  "Read the decoded text in the output.",
+  "Copy the result, or fix the input if an error message appears."
+ ],
+ "faq": [
+  {
+   "q": "Why does it say the bytes are not valid UTF-8 text?",
+   "a": "The Base64 is valid, but the data inside is not text. It may be an image, a compressed file or an encrypted blob. For compressed data try the Gzip Decompress tool, and for images use the Base64 Image Viewer."
+  },
+  {
+   "q": "What does \"Invalid Base64 input\" mean?",
+   "a": "The string contains characters outside the Base64 alphabet, or its length is impossible, such as one leftover character. Check for a truncated copy, a stray quote or a prefix that is not part of the data."
+  },
+  {
+   "q": "Does it handle URL-safe Base64 and missing padding?",
+   "a": "Yes. It converts - and _ back to + and /, and adds the = padding itself, so JWT-style segments decode without editing."
+  },
+  {
+   "q": "Is it safe to paste a real token?",
+   "a": "Decoding happens only in your browser and nothing is uploaded. Even so, avoid pasting live production credentials into any page you do not fully trust, and rotate a secret that has been exposed."
+  }
+ ],
+ "related": [
+  "base64-encode",
+  "base64url-encoder",
+  "base64-image-viewer",
+  "jwt-decode",
+  "gzip-decompress",
+  "hex-text"
+ ],
+ "keywords": [
+  "base64 decode online",
+  "decode base64 to text",
+  "free base64 decoder",
+  "url safe base64 decode",
+  "base64 to utf-8",
+  "decode data uri"
+ ]
+}

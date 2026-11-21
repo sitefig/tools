@@ -1,0 +1,45 @@
+{
+ "id": "yaml-validator",
+ "seoTitle": "YAML Validator: Syntax, Duplicate Keys and Tabs | Free",
+ "metaDescription": "Check YAML for syntax errors with line numbers, plus duplicate keys and tab indentation. Free, runs locally in your browser.",
+ "intro": "Parses YAML and reports syntax errors with line numbers, then scans for tabs used as indentation and duplicate keys.",
+ "why": "A YAML file can parse and still do the wrong thing. Two keys with the same name in one mapping silently overwrite each other in many parsers, and tabs break indentation.\n\nThis page first parses the text with the site YAML parser. If that works it runs a line scan for tabs and repeated keys and lists them as items to review. The scan is a heuristic and does not look inside flow style braces, so treat the list as hints. Nothing leaves your browser.",
+ "howTo": [
+  "Paste the YAML.",
+  "Read the verdict and the top-level summary.",
+  "Fix any lines in the review list.",
+  "Run again until it is clean."
+ ],
+ "faq": [
+  {
+   "q": "Does it cover all of YAML 1.2?",
+   "a": "No. It covers common block and flow syntax, anchors and multiple documents, but not every corner such as complex keys or all tags."
+  },
+  {
+   "q": "Why is a duplicate key only a review item?",
+   "a": "Some tools reject it and some keep the last value. The scan is also line based, so it can be wrong."
+  },
+  {
+   "q": "Can it fix the file?",
+   "a": "No. Use the YAML formatter after fixing the problems."
+  },
+  {
+   "q": "Is my YAML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "yaml-to-json",
+  "yaml-format",
+  "json-to-yaml",
+  "toml-to-yaml",
+  "yaml-to-toml",
+  "json-format"
+ ],
+ "keywords": [
+  "yaml validator",
+  "yaml lint online",
+  "yaml duplicate keys",
+  "yaml syntax check"
+ ]
+}

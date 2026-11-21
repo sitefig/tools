@@ -1,0 +1,44 @@
+{
+ "id": "noai-meta-tag-generator",
+ "seoTitle": "noai and noimageai Meta Tag Generator",
+ "metaDescription": "Generate noai and noimageai robots meta tags and X-Robots-Tag headers, with an honest note on who actually reads them. Free.",
+ "intro": "Produces the noai and noimageai tags and header and explains their status.",
+ "why": "noai and noimageai started as an opt-out signal from an art platform. They are not part of any standard and are not in Google's list of robots rules.\n\nThe tool gives you the tag and the header, but the page is plain about the limits: which AI crawlers honour these directives has not been verified, and support is believed to be small. The robots.txt tokens of AI crawlers are better documented.",
+ "howTo": [
+  "Choose noai, noimageai or both.",
+  "Pick the meta name.",
+  "Copy the tag or header.",
+  "Also set robots.txt rules."
+ ],
+ "faq": [
+  {
+   "q": "Do AI companies respect noai?",
+   "a": "Not verified, believed to be limited."
+  },
+  {
+   "q": "Is it a standard?",
+   "a": "No."
+  },
+  {
+   "q": "Does it hurt SEO?",
+   "a": "Google ignores unknown directives, but check your own setup."
+  },
+  {
+   "q": "What is better?",
+   "a": "robots.txt rules for named AI crawlers."
+  }
+ ],
+ "related": [
+  "ai-bot-robots-builder",
+  "ai-crawler-user-agent-directory",
+  "robots-meta-tag-generator",
+  "x-robots-tag-header-builder",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "noai meta tag",
+  "noimageai",
+  "noai robots tag",
+  "opt out ai training meta"
+ ]
+}

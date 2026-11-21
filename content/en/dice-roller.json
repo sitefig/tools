@@ -1,0 +1,46 @@
+{
+ "id": "dice-roller",
+ "seoTitle": "Free Dice Roller: Roll NdM+K, D20 and More Online",
+ "metaDescription": "Roll dice online with standard notation like 2d6+3 or d20, several rolls at once, using secure random numbers. Free and runs in your browser.",
+ "intro": "Type dice in standard notation such as 2d6+3 or d20, separated by commas. The tool rolls each set and shows the individual dice and the total.",
+ "why": "Tabletop games, classroom probability exercises and board game nights all need dice, and the right one is never to hand. Standard notation puts the whole roll in a few characters: 3d8+2 means roll three eight-sided dice and add two. This roller understands that format, allows several rolls in one go, such as an attack roll and a damage roll, and prints every die so players can see where the total came from. It draws numbers using the browser's cryptographically secure generator and avoids modulo bias, so each face is equally likely. It accepts up to 1,000 dice with 2 to 1,000,000 sides, and shows only the first 50 rolls of very large sets. Nothing is uploaded.",
+ "howTo": [
+  "Type dice in NdM+K form, such as 2d6+3 or d20.",
+  "Separate several rolls with commas or new lines.",
+  "Run the tool and read each roll's individual dice and total."
+ ],
+ "faq": [
+  {
+   "q": "What does the notation mean?",
+   "a": "N is how many dice, M is the number of sides and K is an optional modifier. So 2d6+3 rolls two six-sided dice and adds three. Leaving out N means one die."
+  },
+  {
+   "q": "Are the rolls fair?",
+   "a": "Yes. Values come from crypto.getRandomValues with rejection sampling, which removes the slight bias that a plain remainder would cause. Each face on a die is equally likely."
+  },
+  {
+   "q": "What are the limits?",
+   "a": "From 1 to 1,000 dice per roll and from 2 to 1,000,000 sides. Beyond 50 dice, only the first 50 are listed, although the total includes all of them."
+  },
+  {
+   "q": "Can I do advantage, drop lowest or exploding dice?",
+   "a": "No. Only plain NdM plus or minus a number is supported. Roll twice and pick the result yourself for advantage."
+  }
+ ],
+ "related": [
+  "coin-flip",
+  "random-number-picker",
+  "decision-wheel",
+  "raffle-picker",
+  "random-team-splitter",
+  "uuid-generator"
+ ],
+ "keywords": [
+  "dice roller",
+  "free dice roller",
+  "roll d20 online",
+  "2d6 dice roller",
+  "online dice notation",
+  "dnd dice roller"
+ ]
+}

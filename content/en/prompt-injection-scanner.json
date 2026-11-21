@@ -1,0 +1,45 @@
+{
+  "id": "prompt-injection-scanner",
+  "seoTitle": "Prompt Injection Scanner for Untrusted Text",
+  "metaDescription": "Scan web pages, emails or user input for prompt-injection signs before an LLM reads them: instruction overrides, fake system tags, exfiltration links, hidden Unicode.",
+  "intro": "Check text you are about to feed to an AI assistant for the usual tricks used to hijack it.",
+  "why": "The scanner looks for phrases that override instructions, ask for the system prompt, assign a new persona, imitate chat delimiters (<system>, [INST]), embed markdown images or links that carry data to another site, tell the model to hide actions from the user, lure it into dangerous tool calls, encode instructions, and for invisible Unicode tag characters and zero-width controls. It gives a risk level and the matched text.\n\nThis catches only well-known phrasings. Injection can be paraphrased, translated or hidden in images, so a clean result proves nothing. Real defences are architectural: treat model output as untrusted, restrict tool permissions and require confirmation for sensitive actions.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the untrusted text.",
+    "Run the scan.",
+    "Review each match; remove or quarantine the content.",
+    "Apply least privilege to any tools the model can call."
+  ],
+  "faq": [
+    {
+      "q": "What is prompt injection?",
+      "a": "Text that tries to make a model follow the attacker's instructions instead of yours, often hidden in documents or web pages the model reads."
+    },
+    {
+      "q": "Can this prevent it?",
+      "a": "No. It is a heuristic check; prevention needs design changes."
+    },
+    {
+      "q": "Why flag hidden Unicode?",
+      "a": "Characters in the tag block are invisible to people but can be read by models."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "prompt-linter",
+    "system-prompt-formatter",
+    "zero-width-detector",
+    "secret-detector-redactor",
+    "code-security-scanner",
+    "llm-tool-definition-builder"
+  ],
+  "keywords": [
+    "prompt injection detector",
+    "llm security",
+    "jailbreak scanner",
+    "untrusted input check"
+  ]
+}

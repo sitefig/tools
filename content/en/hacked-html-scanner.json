@@ -1,0 +1,45 @@
+{
+  "id": "hacked-html-scanner",
+  "seoTitle": "Hacked Page & Injected Code Scanner (Local, Pattern Based)",
+  "metaDescription": "Scan pasted HTML for signs of a hack: hidden iframes and links, obfuscated eval, redirects, crypto miners and spam words. Nothing leaves your browser.",
+  "intro": "Look through a page's source for the classic traces of a compromise: invisible spam links, hidden iframes, obfuscated scripts, forced redirects and miner libraries.",
+  "why": "The scanner applies a list of patterns to the source and reports each hit with its line number and severity: eval of decoded data, long escape sequences, zero-size or hidden iframes, links hidden off-screen, meta refresh redirects, scripts from bare IP addresses or throwaway top-level domains, long base64 blobs and pharma or casino spam words.\n\nPatterns produce false positives (some analytics and consent scripts use similar tricks) and miss anything cloaked or served only to crawlers, so a clean result proves nothing. Use hits as leads: check recently changed files, plugins and admin accounts, restore from a clean backup, rotate credentials and use Search Console's security reports.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Open the page, view source and copy it all.",
+    "Paste it and run the scan.",
+    "Investigate each HIGH and MEDIUM hit in your files or database.",
+    "Clean up, secure the site and request a review if Google flagged it."
+  ],
+  "faq": [
+    {
+      "q": "Can it prove my site is clean?",
+      "a": "No. Attackers cloak content by user agent or visitor and the scan sees only what you paste."
+    },
+    {
+      "q": "Why was my analytics code flagged?",
+      "a": "Some legitimate scripts use eval, base64 or hidden elements. Judge each hit in context."
+    },
+    {
+      "q": "What should I do first after a hack?",
+      "a": "Take the site offline or restrict access if needed, change all passwords and keys, restore from a known-good backup and patch the entry point."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "secret-detector-redactor",
+    "security-headers-generator",
+    "csp-analyzer",
+    "tracker-detector",
+    "seo-inspector",
+    "code-security-scanner"
+  ],
+  "keywords": [
+    "hacked website scanner",
+    "malware in html",
+    "injected code detection",
+    "seo spam links"
+  ]
+}

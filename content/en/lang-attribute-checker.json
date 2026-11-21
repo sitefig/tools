@@ -1,0 +1,44 @@
+{
+ "id": "lang-attribute-checker",
+ "seoTitle": "Lang Attribute Checker for WCAG 3.1.1 and 3.1.2",
+ "metaDescription": "Check the page language and lang attributes on passages: missing, empty or malformed codes, unknown codes and direction for right-to-left languages.",
+ "intro": "Checks the html lang attribute and lang on parts of a page.",
+ "why": "Screen readers pick the voice and pronunciation from lang.\n\nThe tool checks the page lang, lists every part with another language, validates the tag shape, looks up the language name from your browser, and warns about mismatching meta content-language and missing dir for right-to-left languages. It cannot tell which passages are in another language.",
+ "howTo": [
+  "Paste the HTML.",
+  "Read the language list.",
+  "Fix errors.",
+  "Add lang to passages in other languages."
+ ],
+ "faq": [
+  {
+   "q": "Where does the language name come from?",
+   "a": "From your browser Intl data, which does not list every code."
+  },
+  {
+   "q": "Is xml:lang enough?",
+   "a": "Not in HTML. Use lang."
+  },
+  {
+   "q": "Do names need lang?",
+   "a": "Proper names and common loan words do not."
+  },
+  {
+   "q": "Is the HTML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "hreflang-validator",
+  "language-detector",
+  "a11y-html-check",
+  "heading-analyzer",
+  "ai-language-identifier",
+  "landmark-region-outline"
+ ],
+ "keywords": [
+  "lang attribute checker",
+  "html lang check",
+  "wcag 3.1.1"
+ ]
+}

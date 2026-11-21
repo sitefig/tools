@@ -1,0 +1,43 @@
+{
+ "id": "mock-credit-card-generator",
+ "seoTitle": "Free Mock Credit Card Number Generator for Testing",
+ "metaDescription": "Generate fake Luhn-valid test card numbers with expiry and CVV for Visa, Mastercard, Amex and more. Not real accounts. Free, in your browser.",
+ "intro": "Generate fake card numbers that pass the Luhn check, with a future expiry date and CVV, for form validation and UI tests. The numbers are not real accounts and cannot be charged.",
+ "why": "A checkout form needs test data. Typing 1111 1111 1111 1111 fails the Luhn check, so you cannot see how the valid path behaves, and borrowing a real card for a demo is a bad idea. QA engineers, front-end developers and people writing documentation need numbers that look right and belong to no one.\n\nThis tool builds numbers with the correct brand prefix and length, finishes each with a valid Luhn check digit, and adds an expiry date and CVV. A seed option makes the output repeatable for automated tests. For payment sandboxes, use the test cards your provider documents, since only those trigger the provider's test behaviour. Generation happens in your browser.",
+ "howTo": [
+  "Choose a card brand, or Any to mix the brands.",
+  "Set how many cards you want and, optionally, a seed to get the same list again.",
+  "Choose whether the numbers are shown with spaces.",
+  "Copy the generated numbers, expiry dates and CVVs into your test fixtures or form."
+ ],
+ "faq": [
+  {
+   "q": "Can these numbers be used to pay for anything?",
+   "a": "No. They only satisfy the format and Luhn checksum. They are not linked to any account and payment processors will reject them. Do not use them to try to bypass any real payment system."
+  },
+  {
+   "q": "Will they work in my payment provider's sandbox?",
+   "a": "Usually not. Sandboxes accept their own documented test numbers. Use those for end-to-end tests, and use these only for format checks, validation logic and layout testing."
+  },
+  {
+   "q": "What does the seed do?",
+   "a": "With the same seed and settings you get the same list every time, which helps keep unit tests stable. Leave it blank for a different random list on each run."
+  }
+ ],
+ "related": [
+  "luhn-validator",
+  "fake-person-generator",
+  "mock-data-generator",
+  "iban-validator",
+  "random-json-generator",
+  "api-mock-response-generator"
+ ],
+ "keywords": [
+  "mock credit card generator",
+  "fake credit card numbers for testing",
+  "luhn valid test card numbers",
+  "test card number generator",
+  "dummy credit card generator",
+  "free test data generator"
+ ]
+}

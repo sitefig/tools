@@ -1,0 +1,46 @@
+{
+ "id": "random-team-splitter",
+ "seoTitle": "Free Random Team Splitter: Shuffle Names into Teams",
+ "metaDescription": "Paste a list of names and split them at random into the number of teams you choose, with sizes balanced. Free, runs in your browser.",
+ "intro": "Paste names, one per line, and set the number of teams. The tool shuffles the names and deals them out so team sizes differ by at most one.",
+ "why": "Picking sides for a five-a-side game, groups for a workshop or pairs for a class activity takes longer than it should, and doing it by hand invites accusations of favouritism. A random shuffle settles it. This tool shuffles the list with a secure, unbiased method and then deals names out to the teams in turn, like cards, so every team has the same number of people, or one more or fewer when the numbers do not divide evenly. The result lists each team with its size and members. Because it re-shuffles every time you run it, you can run it again if the groups feel off. It does not balance by skill. The names remain in your browser.",
+ "howTo": [
+  "Paste the names into the box, one per line.",
+  "Set the number of teams, at least two.",
+  "Run the tool, and run it again for a fresh shuffle if you want a different split."
+ ],
+ "faq": [
+  {
+   "q": "How are team sizes decided?",
+   "a": "Names are dealt out one by one to each team in turn. With 7 names and 2 teams you get teams of 4 and 3. Sizes never differ by more than one."
+  },
+  {
+   "q": "Does it balance teams by skill?",
+   "a": "No. The split is purely random. For balanced skill levels, group people by level first and run the splitter on each group, then combine the teams yourself."
+  },
+  {
+   "q": "What limits apply?",
+   "a": "You need at least two teams and no more teams than names. Empty lines are ignored. An error appears if there are no names."
+  },
+  {
+   "q": "Will running it again give the same teams?",
+   "a": "Almost certainly not. Each run is a new random shuffle, so you can repeat it until you are happy, though doing so repeatedly undermines the fairness."
+  }
+ ],
+ "related": [
+  "raffle-picker",
+  "random-number-picker",
+  "decision-wheel",
+  "coin-flip",
+  "dice-roller",
+  "sort-lines"
+ ],
+ "keywords": [
+  "random team generator",
+  "free team splitter",
+  "random group maker",
+  "split names into teams",
+  "team picker",
+  "shuffle names into groups"
+ ]
+}

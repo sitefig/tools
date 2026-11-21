@@ -1,0 +1,46 @@
+{
+ "id": "slug-generator",
+ "seoTitle": "Free URL Slug Generator: Clean SEO-Friendly Slugs",
+ "metaDescription": "Turn titles into lowercase URL slugs with accents transliterated, optional stop-word removal and a length limit. Free, runs in your browser.",
+ "intro": "Paste titles, one per line, to get clean URL slugs: lowercase, accents and ligatures converted, symbols removed, with your choice of separator, stop-word removal and maximum length.",
+ "why": "A good slug is short, readable and stable: it uses lowercase letters and hyphens, and avoids accents, ampersands and punctuation that need encoding. Producing a lot of them by hand, say for a content migration or a list of product names, is where inconsistencies appear.\n\nThis tool converts each title line to a slug. It lowercases, converts letters such as é, ü, ß and ø to plain ASCII, turns ampersands into the word and, replaces every other run of symbols with your chosen separator, and trims. You can remove common English stop words and limit the length, cutting at a word boundary where possible. Titles in non-Latin scripts such as Chinese or Cyrillic are not transliterated and come out empty. The work is done in your browser.",
+ "howTo": [
+  "Paste your titles, one per line, into the input box.",
+  "Choose a hyphen or underscore as separator.",
+  "Tick stop-word removal if you want shorter slugs and set the maximum length, or 0 for none.",
+  "Run the tool and copy the slugs."
+ ],
+ "faq": [
+  {
+   "q": "Are hyphens or underscores better?",
+   "a": "Google treats hyphens as word separators, so hyphens are the usual recommendation for URLs. Underscores are offered for systems and file names that need them."
+  },
+  {
+   "q": "What happens to non-Latin titles?",
+   "a": "Characters outside a to z and 0 to 9, after accents are removed, are dropped. A title in Chinese or Cyrillic gives an empty result, so those need a different transliteration or keeping the native characters."
+  },
+  {
+   "q": "Will it check for duplicate slugs?",
+   "a": "No. Two similar titles can produce the same slug. Sort the list or use the duplicate line remover to check before publishing."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. Everything runs in your browser and nothing you paste is uploaded, stored or sent to a server, so staging or confidential configuration is safe to use here."
+  }
+ ],
+ "related": [
+  "title-case-headline-analyzer",
+  "dedupe-lines",
+  "case-converter",
+  "canonical-generator",
+  "sql-slugifier",
+  "slug-to-title"
+ ],
+ "keywords": [
+  "slug generator",
+  "url slug generator",
+  "seo friendly url generator",
+  "slugify online",
+  "title to slug converter"
+ ]
+}

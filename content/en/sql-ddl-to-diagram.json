@@ -1,0 +1,47 @@
+{
+ "id": "sql-ddl-to-diagram",
+ "seoTitle": "Free SQL to ER Diagram Generator Online",
+ "metaDescription": "Paste CREATE TABLE statements and get an entity-relationship diagram with crow's-foot notation. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Paste your CREATE TABLE statements and get an entity-relationship diagram as SVG, with primary keys, foreign keys and crow's-foot relationship lines drawn for you.",
+ "why": "Schemas live in migration files and dump scripts, and nobody can see the shape of a database by reading forty CREATE TABLE statements. You need a picture when you join a project, review a pull request that adds three tables, or explain the data model to a colleague who does not read SQL.\n\nMost diagram tools want an account, a database connection or an upload of your schema. This one reads the DDL you paste, draws the diagram locally and hands back an SVG you can drop into documentation. Your table and column names, which often reveal how a business works, stay on your machine.",
+ "howTo": [
+  "Paste your CREATE TABLE statements, and any ALTER TABLE ... ADD FOREIGN KEY lines, into the box.",
+  "Choose the layout direction: LR for left to right or TB for top to bottom.",
+  "Pick an edge style: curved, orthogonal or straight lines between tables.",
+  "Check the rendered diagram, then download or copy the SVG for your docs."
+ ],
+ "faq": [
+  {
+   "q": "Which SQL dialects does it understand?",
+   "a": "Generic SQL plus common MySQL, PostgreSQL and SQLite syntax for CREATE TABLE, PRIMARY KEY, FOREIGN KEY, inline REFERENCES, UNIQUE, NOT NULL and ALTER TABLE ... ADD FOREIGN KEY. Statements it does not recognise, such as INSERT or CREATE INDEX, are ignored."
+  },
+  {
+   "q": "Why is a relationship line missing?",
+   "a": "Lines are drawn only from declared foreign keys. If your schema relies on naming conventions such as user_id without a REFERENCES clause, the tool has nothing to connect. Add the constraint, or an ALTER TABLE statement, and the line appears."
+  },
+  {
+   "q": "Does it connect to my database?",
+   "a": "No. It only reads the text you paste, so there is no connection string, login or upload. Export the schema with your usual dump command, paste it here, and the diagram is built inside the page."
+  },
+  {
+   "q": "Can I edit the diagram by hand afterwards?",
+   "a": "The output is an SVG, which you can open in any vector editor. For a text-based alternative that you keep in version control, write the structure in Mermaid and use the Mermaid renderer instead."
+  }
+ ],
+ "related": [
+  "mermaid-lite-renderer",
+  "graphviz-dot-lite",
+  "sql-format",
+  "sql-to-prisma",
+  "prisma-to-sql",
+  "sql-dialect-converter"
+ ],
+ "keywords": [
+  "sql to er diagram",
+  "create table to diagram",
+  "free er diagram generator",
+  "sql schema visualizer online",
+  "ddl to entity relationship diagram",
+  "crow's foot diagram from sql"
+ ]
+}

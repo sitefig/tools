@@ -1,0 +1,44 @@
+{
+ "id": "gpx-track-analyzer",
+ "seoTitle": "GPX Track Analyzer: Distance, Elevation Gain, Speed",
+ "metaDescription": "Analyse a GPX file offline: distance, elevation gain and loss, time, moving speed, a track plot and elevation profile. Free.",
+ "intro": "Reads a GPX track or route and reports distance, elevation, time and speed, with a plan view and an elevation profile.",
+ "why": "Hiking and cycling apps export GPX. Paste the file and see the numbers without uploading your location history. Elevation gain ignores small bumps below a threshold you set, because GPS elevation is noisy; watch brands use their own smoothing, so totals differ.\n\nDistance is the sum of haversine legs between points. For the sample it is 0.1 percent below gpxpy, which uses a larger earth radius, and the elevation gain differs by about 1 m from gpxpy. The plan view has no basemap. Your path is private to the page.",
+ "howTo": [
+  "Paste the GPX text.",
+  "Set the elevation threshold and the stop speed.",
+  "Read the numbers, the plan and the profile.",
+  "Copy the summary or the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Why does my watch show other figures?",
+   "a": "Different smoothing and elevation sources."
+  },
+  {
+   "q": "What is moving time?",
+   "a": "Time in segments faster than the stop speed."
+  },
+  {
+   "q": "Are routes supported?",
+   "a": "Yes, if there is no track."
+  },
+  {
+   "q": "Privacy?",
+   "a": "The file stays in your browser."
+  }
+ ],
+ "related": [
+  "kml-gpx-geojson-converter",
+  "waypoints-to-gpx",
+  "geo-path-distance",
+  "line-chart-maker",
+  "sun-path-calculator",
+  "geojson-viewer-validator"
+ ],
+ "keywords": [
+  "gpx analyzer",
+  "gpx elevation profile",
+  "gpx file stats offline"
+ ]
+}

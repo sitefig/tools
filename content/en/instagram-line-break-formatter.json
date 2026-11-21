@@ -1,0 +1,41 @@
+{
+ "id": "instagram-line-break-formatter",
+ "seoTitle": "Instagram Caption Line Break Formatter",
+ "metaDescription": "Keep blank lines and indents in Instagram captions and bios by filling empty lines with an invisible character. Free, private.",
+ "intro": "Keep blank lines and spacing in captions and bios by filling empty lines with an invisible character. Shows the character count.",
+ "why": "Captions and bios can lose blank lines or leading spaces when saved. A common workaround is a line holding an invisible character.\n\nThis tool puts the Braille blank, zero-width space or word joiner on each empty line and protects indents. It shows the new character count. Invisible characters can trouble screen readers, and Instagram has changed its handling before, so paste it in, look at the preview and keep the plain text as a fallback.",
+ "howTo": [
+  "Paste your caption.",
+  "Choose the invisible character.",
+  "Decide whether to protect indents.",
+  "Paste the result into the app and check the preview."
+ ],
+ "faq": [
+  {
+   "q": "Does it always work?",
+   "a": "Not guaranteed. The platform's behaviour changes, and this was not tested against the current app."
+  },
+  {
+   "q": "Is it bad for accessibility?",
+   "a": "It can be. Some screen readers announce the Braille blank. Use it sparingly."
+  },
+  {
+   "q": "Do invisible characters count?",
+   "a": "Yes, each counts as a character."
+  }
+ ],
+ "related": [
+  "char-limit-counter",
+  "hashtag-formatter",
+  "invisible-text-generator",
+  "zero-width-detector",
+  "text-cleaner",
+  "social-post-length-checker"
+ ],
+ "keywords": [
+  "instagram line break",
+  "instagram caption spacing",
+  "instagram blank line",
+  "invisible character caption"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "fasting-window-planner",
+  "seoTitle": "Intermittent Fasting Window Planner (16:8, 18:6, 20:4, OMAD)",
+  "metaDescription": "Plan an eating window for 16:8, 14:10, 18:6, 20:4 or OMAD from your first meal time and see the fasting and eating hours.",
+  "intro": "Turn a fasting plan into clock times.",
+  "why": "Pick a plan and the time of your first meal. The page shows the eating window, the fasting window and an example day with the first meal, midpoint and last meal. It does nothing else: no health advice or calorie targets.\n\nFasting is not suitable for everyone, including people who are pregnant, diabetic and on medication, have a history of eating disorders, or are under 18. Talk to a clinician before changing how you eat.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose a plan.",
+    "Enter your first meal time (24-hour).",
+    "Read the windows.",
+    "Adjust to your routine."
+  ],
+  "faq": [
+    {
+      "q": "What does 16:8 mean?",
+      "a": "Fast for 16 hours and eat within an 8-hour window."
+    },
+    {
+      "q": "Can I drink during the fast?",
+      "a": "Water, plain tea and black coffee are commonly allowed; ask your clinician."
+    },
+    {
+      "q": "Is fasting proven to work?",
+      "a": "Evidence is mixed and individual; this page makes no health claims."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "sleep-cycle-calculator",
+    "bmr-tdee",
+    "macro-calculator",
+    "water-intake",
+    "countdown-timer",
+    "bmi-calculator"
+  ],
+  "keywords": [
+    "intermittent fasting calculator",
+    "16:8 schedule",
+    "eating window",
+    "fasting timer"
+  ]
+}

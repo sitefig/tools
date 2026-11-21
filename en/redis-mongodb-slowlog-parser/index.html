@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Redis SLOWLOG and MongoDB Slow Query Parser | Free Tools</title>
+<meta name="description" content="Rank slow operations from redis-cli SLOWLOG GET output or a mongod JSON log, grouped by command or namespace and plan. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/redis-mongodb-slowlog-parser/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/redis-mongodb-slowlog-parser/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/redis-mongodb-slowlog-parser/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Redis SLOWLOG and MongoDB Slow Query Parser | Free Tools">
+<meta property="og:description" content="Rank slow operations from redis-cli SLOWLOG GET output or a mongod JSON log, grouped by command or namespace and plan. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/redis-mongodb-slowlog-parser/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Redis SLOWLOG and MongoDB Slow Query Parser | Free Tools">
+<meta name="twitter:description" content="Rank slow operations from redis-cli SLOWLOG GET output or a mongod JSON log, grouped by command or namespace and plan. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Redis SLOWLOG and MongoDB Slow Query Log Parser","url":"https://tools.sitefig.net/en/redis-mongodb-slowlog-parser/","description":"Rank slow operations from redis-cli SLOWLOG GET output or a mongod JSON log, grouped by command or namespace and plan. Free.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Run SLOWLOG GET 128 in redis-cli, or collect mongod logs.","Paste the output.","Set a minimum duration if needed.","Read the ranked groups."],"keywords":"redis slowlog parser, mongodb slow query log, slowlog get analyzer","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Log Parsing","item":"https://tools.sitefig.net/en/#log-parsing"},{"@type":"ListItem","position":3,"name":"Redis SLOWLOG and MongoDB Slow Query Log Parser","item":"https://tools.sitefig.net/en/redis-mongodb-slowlog-parser/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which units?","acceptedAnswer":{"@type":"Answer","text":"SLOWLOG durations are microseconds, shown here in ms. MongoDB durationMillis is ms."}},{"@type":"Question","name":"Which Mongo log format?","acceptedAnswer":{"@type":"Answer","text":"Structured JSON logs of MongoDB 4.4 and newer."}},{"@type":"Question","name":"Is the full command shown?","acceptedAnswer":{"@type":"Answer","text":"Only an example per group, cut to 220 characters."}},{"@type":"Question","name":"Is my log uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#log-parsing">Log Parsing</a></li><li><span aria-current="page">Redis SLOWLOG and MongoDB Slow Query Log Parser</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Redis SLOWLOG and MongoDB Slow Query Log Parser</h1>
+<p class="lede">Ranks Redis slow commands and MongoDB slow operations from pasted output.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="redis-mongodb-slowlog-parser" data-module="new12"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Redis SLOWLOG GET prints nested lists that are hard to scan. The tool groups commands by name and shows total time. KEYS or SMEMBERS on a big key are classic findings.</p>
+<p>For MongoDB 4.4 and newer it reads the structured log: namespace, command, plan summary and docs examined. A COLLSCAN plan with many documents examined is flagged for review.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Run SLOWLOG GET 128 in redis-cli, or collect mongod logs.</li><li>Paste the output.</li><li>Set a minimum duration if needed.</li><li>Read the ranked groups.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which units?</summary><p>SLOWLOG durations are microseconds, shown here in ms. MongoDB durationMillis is ms.</p></details>
+<details><summary>Which Mongo log format?</summary><p>Structured JSON logs of MongoDB 4.4 and newer.</p></details>
+<details><summary>Is the full command shown?</summary><p>Only an example per group, cut to 220 characters.</p></details>
+<details><summary>Is my log uploaded?</summary><p>No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/mysql-slow-query-analyzer/"><span class="link-card__title">MySQL Slow Query Log Analyzer (Group by Fingerprint)</span><span class="link-card__desc">Group slow queries by their fingerprint and rank by total time, average, maximum or count. Shows rows examined versus rows sent, lock time and an example of each pattern.</span></a></li><li><a class="link-card" href="/en/postgres-log-analyzer/"><span class="link-card__title">PostgreSQL Log Analyzer: Slow Queries, Errors and Lock Waits</span><span class="link-card__desc">Find slow statements (grouped by query shape), errors, lock waits, deadlocks and temporary files in a PostgreSQL server log. A small pgBadger-style summary that runs in your browser.</span></a></li><li><a class="link-card" href="/en/mongodb-query-builder/"><span class="link-card__title">MongoDB Query Builder (find, filter, sort, projection)</span><span class="link-card__desc">Build a MongoDB find() or aggregate() command from simple conditions, with $and, $in, $regex, ranges, projection, sort and limit, as mongosh code and as JSON.</span></a></li><li><a class="link-card" href="/en/redis-command-generator/"><span class="link-card__title">Redis Command Generator</span><span class="link-card__desc">Build correct Redis commands (SET with EX/NX/XX, locks, hashes, lists, sets, sorted sets, streams, SCAN, publish...) and get them as redis-cli, ioredis, node-redis, redis-py or go-redis calls. Client snippets use each library's generic &quot;send raw command&quot; API, which is valid for every command.</span></a></li><li><a class="link-card" href="/en/jsonl-log-filter/"><span class="link-card__title">JSON Lines Log Filter: Flatten Fields and Filter by Any Key</span><span class="link-card__desc">Load newline-delimited JSON logs, flatten nested fields to dotted keys and filter by any key with =, !=, ~, &gt;, &lt;. Shows a level summary and a table of the matching rows.</span></a></li><li><a class="link-card" href="/en/exception-grouper/"><span class="link-card__title">Exception Grouper: Cluster Similar Error Messages in a Log</span><span class="link-card__desc">Group error and exception lines by replacing variable parts (numbers, IDs, IPs, paths, URLs, quoted values) with placeholders. Shows count, first and last line and an example for each group.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

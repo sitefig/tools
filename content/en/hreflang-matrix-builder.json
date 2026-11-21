@@ -1,0 +1,45 @@
+{
+ "id": "hreflang-matrix-builder",
+ "seoTitle": "Hreflang Matrix Builder: CSV to Tags, Headers or Sitemap",
+ "metaDescription": "Build hreflang for many pages from a CSV with one row per page and one column per locale. Output as link tags, headers or a sitemap.",
+ "intro": "Turns a spreadsheet of page versions into complete hreflang sets, in the format you choose, with an optional x-default taken from one column.",
+ "why": "On a large site you keep translations in a spreadsheet: each row a page, each column a locale. This tool takes that table as CSV, checks the column codes, requires absolute URLs and builds the full set for every version. A row with a blank cell simply omits that version.\n\nChoose which column should double as x-default, or leave it empty. The sitemap output has one url element per version, each with every alternate, as Google describes.",
+ "howTo": [
+  "Paste or type the CSV with locale codes in the header row.",
+  "Choose the format and the x-default column.",
+  "Read the notes for bad codes or short rows.",
+  "Copy the output."
+ ],
+ "faq": [
+  {
+   "q": "Can a page exist in only some locales?",
+   "a": "Yes, leave the cell blank. Rows with fewer than two versions are skipped."
+  },
+  {
+   "q": "Which delimiters work?",
+   "a": "Comma, semicolon or tab, detected from the header line."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "Only what your browser can handle; large sitemaps should be split."
+  },
+  {
+   "q": "Does it check the pages exist?",
+   "a": "No, it cannot fetch them. Use the CSV audit with crawl data for that."
+  }
+ ],
+ "related": [
+  "hreflang-format-converter",
+  "hreflang-generator",
+  "hreflang-csv-audit",
+  "hreflang-code-checker",
+  "csv-column-extractor",
+  "sitemap-generator"
+ ],
+ "keywords": [
+  "hreflang matrix",
+  "hreflang from csv",
+  "bulk hreflang generator",
+  "hreflang spreadsheet"
+ ]
+}

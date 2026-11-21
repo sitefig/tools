@@ -1,0 +1,45 @@
+{
+ "id": "nginx-to-caddy-converter",
+ "seoTitle": "Free nginx to Caddyfile Converter - Server Blocks",
+ "metaDescription": "Convert nginx server blocks into a Caddyfile: reverse_proxy, handle, redir, header, encode, try_files, php_fastcgi and tls. Free, runs in your browser.",
+ "intro": "Converts nginx server blocks to a Caddyfile, mapping server_name, root, location blocks, proxy_pass and upstream groups, return, add_header, gzip, try_files, fastcgi_pass and ssl_certificate.",
+ "why": "Caddy appeals because a few lines replace a long nginx configuration, and it manages HTTPS for you. The hard part is translating an existing nginx setup: location blocks with prefixes, exact matches and regular expressions, proxy_pass with upstream groups, redirects, headers and PHP. This tool maps these to handle, handle_path, reverse_proxy, redir, respond, header, encode, try_files and php_fastcgi. Servers that only redirect HTTP to HTTPS are dropped, since Caddy does that automatically. Directives with no known equivalent are left as comments. Check the result with caddy validate before use. The conversion runs in your browser, so your server configuration is not uploaded.",
+ "howTo": [
+  "Paste your nginx configuration, including any upstream blocks, into the input box.",
+  "Run the conversion to get the Caddyfile.",
+  "Review the comments for unsupported directives and check the result with caddy validate."
+ ],
+ "faq": [
+  {
+   "q": "Why are some servers missing from the output?",
+   "a": "A server block that only redirects HTTP to HTTPS is dropped, because Caddy enables HTTPS and the redirect automatically for sites with a domain name."
+  },
+  {
+   "q": "How are location blocks converted?",
+   "a": "Prefix, exact and regex locations become handle or handle_path blocks with matchers. Pay attention to path stripping, which differs between nginx proxy_pass and Caddy handle_path."
+  },
+  {
+   "q": "What happens to certificates?",
+   "a": "ssl_certificate and ssl_certificate_key become a tls directive with the same files. Remove it if you want Caddy to obtain certificates itself."
+  },
+  {
+   "q": "Does the output need checking?",
+   "a": "Yes. Unsupported directives stay as comments, and subtle behaviour such as rewrites and proxy headers can differ. Run caddy validate and test the site."
+  }
+ ],
+ "related": [
+  "caddy-to-nginx",
+  "nginx-formatter",
+  "caddyfile-generator",
+  "htaccess-to-nginx",
+  "nginx-config-generator",
+  "redirect-rules-converter"
+ ],
+ "keywords": [
+  "nginx to caddyfile",
+  "convert nginx config to caddy",
+  "nginx proxy_pass to reverse_proxy",
+  "free nginx caddy converter",
+  "migrate nginx to caddy"
+ ]
+}

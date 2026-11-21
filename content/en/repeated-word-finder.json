@@ -1,0 +1,41 @@
+{
+ "id": "repeated-word-finder",
+ "seoTitle": "Repeated Word Finder: Same Word Too Close Together",
+ "metaDescription": "Find words that return within a few words of each other and mark them, ignoring common little words. Free, in your browser.",
+ "intro": "Find words that come back within a few words or sentences of each other, ignoring common little words, and mark them in your text.",
+ "why": "Repeating a word within a sentence or two is one of the first things a reader notices and an editor flags. It is hard to see in your own writing.\n\nSet a window in words, a minimum word length and whether to skip common words. The tool marks every word that recurs inside the window and lists the closest gaps. Key terms and names are fine to repeat, so use it as a prompt.",
+ "howTo": [
+  "Paste your draft.",
+  "Set the window, for example 40 words.",
+  "Set the minimum word length.",
+  "Read the marked repeats and decide which to change."
+ ],
+ "faq": [
+  {
+   "q": "How is this different from the Duplicate Words Finder?",
+   "a": "That tool finds accidental doubles like 'the the'. This finds words reused close together."
+  },
+  {
+   "q": "Which words are ignored?",
+   "a": "A built-in list of common function words, if the option is ticked."
+  },
+  {
+   "q": "Is a repeat always a problem?",
+   "a": "No. Names, terms and deliberate echoes are fine."
+  }
+ ],
+ "related": [
+  "duplicate-words-finder",
+  "adverb-highlighter",
+  "passive-voice-checker",
+  "keyword-density",
+  "ngram-extractor",
+  "plain-language-checker"
+ ],
+ "keywords": [
+  "repeated word finder",
+  "word repetition checker",
+  "find repeated words in text",
+  "overused words"
+ ]
+}

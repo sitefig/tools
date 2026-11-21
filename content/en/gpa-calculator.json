@@ -1,0 +1,46 @@
+{
+ "id": "gpa-calculator",
+ "seoTitle": "Free GPA Calculator: Weighted 4.0 Scale from Grades",
+ "metaDescription": "Paste your course grades and credit hours to get a credit-weighted GPA on the 4.0 scale, with plus and minus grades. Free, runs in your browser.",
+ "intro": "Enter one course per line in the form 'name grade credits', such as 'Calculus A 4'. The tool returns total credits, quality points and a credit-weighted GPA.",
+ "why": "Every term you end up with a list of courses, letter grades and credit values, and you want one figure. Typing them into a form each time is slow, and a mistake with credit weighting is easy to make: a B in a four-credit lab counts for more than an A in a one-credit seminar. This calculator takes the list as plain text, so you can paste it from notes or a spreadsheet and edit it freely. It understands A+ to F including plus and minus grades, or a number you supply directly, and reports credits, quality points and the final GPA to two decimals. It uses a 4.0 scale without extra weight for honours courses. Your grades stay in your browser.",
+ "howTo": [
+  "Write one course per line: the course name, then the grade, then the credits.",
+  "Use letter grades such as A-, B+ or C, or a number of points.",
+  "Read the total credits, quality points and your GPA."
+ ],
+ "faq": [
+  {
+   "q": "Which grade scale is used?",
+   "a": "A and A+ are 4.0, A- is 3.7, B+ 3.3, B 3.0, B- 2.7, C+ 2.3, C 2.0, C- 1.7, D+ 1.3, D 1.0, D- 0.7 and F 0. Many universities differ, so check yours."
+  },
+  {
+   "q": "What does a bad line error mean?",
+   "a": "Each line must end with the credits and have a grade just before it. A missing credit value, an unknown grade or a credit of zero stops the calculation and names the line."
+  },
+  {
+   "q": "Can I include honours or AP weighting?",
+   "a": "Not automatically. You can enter a number such as 5 as the grade for a weighted course instead of a letter, and it will be used as the grade points."
+  },
+  {
+   "q": "Is this an official GPA?",
+   "a": "No. It is an unofficial calculation for your own planning. Your institution's registrar or student records office sets the official scale and rounding rules."
+  }
+ ],
+ "related": [
+  "average-median-mode",
+  "percentage-calculator",
+  "fraction-calculator",
+  "scientific-expression-calculator",
+  "flashcards-spaced-repetition",
+  "exam-section-timer"
+ ],
+ "keywords": [
+  "gpa calculator",
+  "free gpa calculator",
+  "weighted gpa calculator",
+  "college gpa calculator",
+  "4.0 scale gpa",
+  "calculate gpa from grades"
+ ]
+}

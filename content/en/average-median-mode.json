@@ -1,0 +1,46 @@
+{
+ "id": "average-median-mode",
+ "seoTitle": "Free Average, Median and Mode Calculator",
+ "metaDescription": "Paste a list of numbers to get the mean, median, mode, range and population and sample standard deviation. Free statistics tool, runs in your browser.",
+ "intro": "Paste numbers separated by spaces, commas or new lines. The tool returns the count, sum, mean, median, mode, minimum, maximum, range and standard deviation.",
+ "why": "A column of numbers from a survey, a spreadsheet, test scores or a log export rarely comes with its summary. Opening a spreadsheet just to find the median feels heavy, and a quick mean can hide a skewed distribution that the median and mode would reveal. This tool takes any pasted list and gives the main descriptive statistics at once. It lists every mode when several values tie, says so when all values are unique, and reports standard deviation both for a full population and for a sample, so you can pick the right one. It stops with an error if any entry is not a number. The data is processed locally and never uploaded.",
+ "howTo": [
+  "Paste or type your numbers, separated by spaces, commas, semicolons or line breaks.",
+  "Run the tool.",
+  "Read the count, mean, median, mode, range and standard deviations."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between mean, median and mode?",
+   "a": "The mean is the sum divided by the count. The median is the middle value when sorted. The mode is the most frequent value. Outliers shift the mean far more than the median."
+  },
+  {
+   "q": "Population or sample standard deviation?",
+   "a": "Use population when your list is the whole group. Use sample when the list is a subset used to estimate a larger group. The sample version divides by n minus 1."
+  },
+  {
+   "q": "What if there are several modes?",
+   "a": "All values tied for the highest count are listed, with their frequency. If every value appears once, the tool reports that there is no mode."
+  },
+  {
+   "q": "Why do I get 'Enter numbers only'?",
+   "a": "Some entry could not be read as a number, for example text or a thousands separator. Remove those and use a full stop for decimals."
+  }
+ ],
+ "related": [
+  "scientific-expression-calculator",
+  "gpa-calculator",
+  "percentage-calculator",
+  "fraction-calculator",
+  "ab-test-calculator",
+  "sort-lines"
+ ],
+ "keywords": [
+  "average median mode calculator",
+  "free statistics calculator",
+  "mean median mode",
+  "standard deviation calculator",
+  "calculate average online",
+  "range and mode calculator"
+ ]
+}

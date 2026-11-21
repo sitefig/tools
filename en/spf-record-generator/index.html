@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free SPF Record Generator &amp; Lookup Counter | Free Tools</title>
+<meta name="description" content="Free online SPF record generator. Compose the TXT record from include, ip4, ip6, a and mx, count DNS lookups against the 10-lookup limit.">
+<link rel="canonical" href="https://tools.sitefig.net/en/spf-record-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/spf-record-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/spf-record-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free SPF Record Generator &amp; Lookup Counter | Free Tools">
+<meta property="og:description" content="Free online SPF record generator. Compose the TXT record from include, ip4, ip6, a and mx, count DNS lookups against the 10-lookup limit.">
+<meta property="og:url" content="https://tools.sitefig.net/en/spf-record-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free SPF Record Generator &amp; Lookup Counter | Free Tools">
+<meta name="twitter:description" content="Free online SPF record generator. Compose the TXT record from include, ip4, ip6, a and mx, count DNS lookups against the 10-lookup limit.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"SPF Record Generator","url":"https://tools.sitefig.net/en/spf-record-generator/","description":"Free online SPF record generator. Compose the TXT record from include, ip4, ip6, a and mx, count DNS lookups against the 10-lookup limit.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter mechanisms one per line, such as include:_spf.google.com or ip4:203.0.113.0/24.","Tick mx or a if your domain sends mail from those hosts.","Choose the ending: ~all, -all, ?all or +all.","Publish the TXT value at your domain, then check the lookup count warnings."],"keywords":"spf record generator, spf generator, create spf record, free spf tool, spf 10 lookup limit, spf txt record builder","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"SPF Record Generator","item":"https://tools.sitefig.net/en/spf-record-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the 10 lookup limit?","acceptedAnswer":{"@type":"Answer","text":"SPF evaluation may trigger at most ten DNS lookups from include, a, mx, ptr, exists and redirect. Going over causes a permanent error, and receivers may reject or ignore your policy."}},{"@type":"Question","name":"Why can this tool undercount lookups?","acceptedAnswer":{"@type":"Answer","text":"It counts only the mechanisms you enter. Each include can contain further includes that also count, and those are not fetched here. Check the final record with an SPF checker."}},{"@type":"Question","name":"Should I end with ~all or -all?","acceptedAnswer":{"@type":"Answer","text":"~all (soft fail) is a safe start while you find every sender. -all (hard fail) is stricter once you are sure. Avoid +all, which lets anyone send as your domain."}},{"@type":"Question","name":"Can I have more than one SPF record?","acceptedAnswer":{"@type":"Answer","text":"No. A domain must publish exactly one SPF record. Two records cause an error, so merge all mechanisms into one TXT value."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">SPF Record Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>SPF Record Generator</h1>
+<p class="lede">Compose an SPF TXT record from mechanisms such as include, ip4, ip6, a and mx. The tool counts DNS lookups against the limit of 10 and checks the record length.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="spf-record-generator" data-module="devgen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>SPF lists the servers allowed to send mail for your domain, and it breaks quietly. Receivers allow at most ten DNS lookups while evaluating it, and each include, a, mx or exists counts. Add a few email services and you can go over without noticing, at which point your mail starts failing.</p>
+<p>Enter one mechanism per line, tick mx or a if needed, and choose how strict to be with all. The tool validates each mechanism, counts the lookups it can see, warns about ptr, +all and long records, and shows how to split a record beyond 255 characters into strings. It cannot see lookups hidden inside the includes of other providers, so test the finished record with a full checker. Nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter mechanisms one per line, such as include:_spf.google.com or ip4:203.0.113.0/24.</li><li>Tick mx or a if your domain sends mail from those hosts.</li><li>Choose the ending: ~all, -all, ?all or +all.</li><li>Publish the TXT value at your domain, then check the lookup count warnings.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What is the 10 lookup limit?</summary><p>SPF evaluation may trigger at most ten DNS lookups from include, a, mx, ptr, exists and redirect. Going over causes a permanent error, and receivers may reject or ignore your policy.</p></details>
+<details><summary>Why can this tool undercount lookups?</summary><p>It counts only the mechanisms you enter. Each include can contain further includes that also count, and those are not fetched here. Check the final record with an SPF checker.</p></details>
+<details><summary>Should I end with ~all or -all?</summary><p>~all (soft fail) is a safe start while you find every sender. -all (hard fail) is stricter once you are sure. Avoid +all, which lets anyone send as your domain.</p></details>
+<details><summary>Can I have more than one SPF record?</summary><p>No. A domain must publish exactly one SPF record. Two records cause an error, so merge all mechanisms into one TXT value.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/dmarc-generator/"><span class="link-card__title">DMARC Record Generator</span><span class="link-card__desc">Build the _dmarc TXT record: policy, subdomain policy, percentage, aggregate/forensic reports, alignment modes.</span></a></li><li><a class="link-card" href="/en/dkim-record-generator/"><span class="link-card__title">DKIM Record Generator</span><span class="link-card__desc">Make a DKIM DNS TXT record from a public key, or generate a fresh RSA key pair in your browser.</span></a></li><li><a class="link-card" href="/en/dns-spf-record-flattener/"><span class="link-card__title">SPF Record Flattener (offline)</span><span class="link-card__desc">Flatten an SPF record by inlining include:/redirect= records that you paste (lines &quot;domain: v=spf1 ...&quot;), de-duplicating ip4/ip6, counting DNS lookups against the limit of 10, and splitting long TXT strings. The tool never queries DNS: resolve each include yourself (dig +short TXT domain).</span></a></li><li><a class="link-card" href="/en/dns-record-generator/"><span class="link-card__title">DNS Zone Record Generator</span><span class="link-card__desc">Write DNS records as simple lines (TYPE name value ...) and get a validated BIND zone file, Route 53 change batch JSON or a generic JSON list. Supports A, AAAA, CNAME, MX, TXT (auto-split at 255 bytes), NS, SRV, CAA, PTR. Not a resolver: nothing is looked up or published.</span></a></li><li><a class="link-card" href="/en/ip-subnet-calculator/"><span class="link-card__title">IP Subnet Calculator</span><span class="link-card__desc">IPv4 CIDR/netmask details (range, broadcast, wildcard, hosts) and IPv6 prefix ranges.</span></a></li><li><a class="link-card" href="/en/cidr-contains/"><span class="link-card__title">CIDR Contains IP Check</span><span class="link-card__desc">Check which CIDR ranges contain each IP address (IPv4 and IPv6).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

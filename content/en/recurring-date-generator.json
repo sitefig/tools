@@ -1,0 +1,39 @@
+{
+ "id": "recurring-date-generator",
+ "seoTitle": "Recurring Date Generator: Every Second Tuesday, Last Friday and More",
+ "metaDescription": "List every date for a rule like the second Tuesday of each month or every 10 days within a range. Free.",
+ "intro": "Lists dates that match a repeating rule: n-th or last weekday of each month, every N days or weeks, a day of the month or the last day.",
+ "why": "Meeting series, billing days and shifts follow rules like the second Tuesday or the last Friday. Pick a rule and range to see every date.\n\nThe weekday results match the python-dateutil rrule library on four rules over 18 months.",
+ "howTo": [
+  "Choose a rule.",
+  "Set weekday, N and the range.",
+  "Copy the date list."
+ ],
+ "faq": [
+  {
+   "q": "How do I get the last Friday?",
+   "a": "Choose Nth weekday of each month, set last and Friday."
+  },
+  {
+   "q": "What if the day does not exist?",
+   "a": "Months without that day are skipped, like the 31st in April."
+  },
+  {
+   "q": "Is there a limit?",
+   "a": "Ranges up to ten years."
+  }
+ ],
+ "related": [
+  "ics-event-file-creator",
+  "add-subtract-dates",
+  "printable-calendar",
+  "monthly-calendar-generator",
+  "cron-dialect-converter",
+  "day-of-week"
+ ],
+ "keywords": [
+  "recurring dates",
+  "second tuesday of month",
+  "nth weekday"
+ ]
+}

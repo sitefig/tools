@@ -1,0 +1,46 @@
+{
+  "id": "color-blindness-simulator",
+  "seoTitle": "Free Color Blindness Simulator for Colours and Images",
+  "metaDescription": "Preview colours or an uploaded image as seen with protanopia, deuteranopia, tritanopia and achromatopsia. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Shows a list of colours, or an image you choose, as they would look with protanopia, deuteranopia, tritanopia and achromatopsia, next to the original.",
+  "why": "Roughly one in twelve men has some form of colour vision deficiency, and a design that depends on red versus green, such as a chart legend, a status badge or an error message, can be unreadable to them. Most people only find out after someone complains.\n\nEnter colours one per line to see swatches under each condition, or load a picture to see the whole image transformed. The simulation uses standard colour transform matrices, so it is a good approximation for spotting trouble, not a medical test or an exact reproduction of anyone's vision. The image is processed in your browser by drawing it on a canvas, and the file is never uploaded.",
+  "howTo": [
+    "Type or edit the colours in the box, one per line.",
+    "Optionally choose an image file to simulate as well.",
+    "Compare the normal row with the four simulated rows.",
+    "Change colours or add shape and label cues until the information still reads in every row."
+  ],
+  "faq": [
+    {
+      "q": "Which conditions are simulated?",
+      "a": "Protanopia and deuteranopia, which affect red and green perception, tritanopia, which affects blue and yellow, and achromatopsia, which removes colour entirely and leaves only lightness."
+    },
+    {
+      "q": "How accurate is the simulation?",
+      "a": "It applies fixed matrices to the colours, which is a widely used approximation. Real conditions vary in severity and between people, and screens differ, so use it to spot risks rather than as a measurement."
+    },
+    {
+      "q": "Is my image uploaded?",
+      "a": "No. The image is drawn onto a canvas in your browser, shrunk for display, and processed there. It never leaves your device."
+    },
+    {
+      "q": "How can I fix a design that fails?",
+      "a": "Do not rely on colour alone. Add icons, patterns, labels or different lightness, and check contrast between neighbouring colours. Then re-check here."
+    }
+  ],
+  "related": [
+    "contrast-checker",
+    "color-converter",
+    "palette-generator",
+    "color-picker-from-image",
+    "image-filters",
+    "a11y-html-check"
+  ],
+  "keywords": [
+    "color blindness simulator",
+    "colorblind simulator online",
+    "deuteranopia simulator",
+    "protanopia filter for images",
+    "free color vision deficiency test"
+  ]
+}

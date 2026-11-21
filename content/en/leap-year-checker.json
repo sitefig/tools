@@ -1,0 +1,39 @@
+{
+ "id": "leap-year-checker",
+ "seoTitle": "Leap Year Checker with the Rule and Upcoming Leap Years",
+ "metaDescription": "Check if a year is a leap year, see the rule that applies and list the next eight leap years. Free.",
+ "intro": "Tells whether a year is a leap year under the Gregorian rule, explains why and lists upcoming leap years.",
+ "why": "The rule is: divisible by 4, except centuries, unless divisible by 400. So 2000 and 2028 are leap years and 1900 and 2100 are not.\n\nEnter a year to see the reason and how many days it has. Before the Gregorian reform of 1582 (later in some countries) the Julian rule applied, which is not modelled.",
+ "howTo": [
+  "Enter a year.",
+  "Read the answer and the rule.",
+  "See the next leap years."
+ ],
+ "faq": [
+  {
+   "q": "Is 2100 a leap year?",
+   "a": "No. It is a century not divisible by 400."
+  },
+  {
+   "q": "Why does February have 29 days?",
+   "a": "To keep the calendar aligned with the solar year of about 365.2425 days."
+  },
+  {
+   "q": "What about years before 1582?",
+   "a": "They used the Julian rule, which treats every fourth year as leap."
+  }
+ ],
+ "related": [
+  "date-difference",
+  "add-subtract-dates",
+  "day-of-week",
+  "week-number",
+  "age-calculator",
+  "printable-calendar"
+ ],
+ "keywords": [
+  "leap year checker",
+  "is 2028 a leap year",
+  "next leap year"
+ ]
+}

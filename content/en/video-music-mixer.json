@@ -1,0 +1,45 @@
+{
+ "id": "video-music-mixer",
+ "seoTitle": "Add Background Music to a Video: Mix, Fade and Export",
+ "metaDescription": "Mix a music track under a video with volume control and a fade out. Browser only, no upload.",
+ "intro": "Mixes an audio file into a video next to its original sound. Set both volumes, loop the music if it is short and fade it out at the end.",
+ "why": "Background music works best when it sits well below speech. The tool lets you set the music at, for example, 30 percent while keeping the original at 100, and fade the music over the last seconds so it does not cut off.\n\nNothing is uploaded. The file is decoded by your browser and re-encoded, so quality drops a little and the result is WebM (or MP4 where your browser can record it). It records in real time, so a 60 second clip takes about a minute and the tab must stay visible. Make sure you have the right to use the music you add.",
+ "howTo": [
+  "Choose the video and the music file.",
+  "Set music and original volume in percent.",
+  "Set the fade out length and choose whether to loop the music.",
+  "Process and download."
+ ],
+ "faq": [
+  {
+   "q": "Which audio formats can I use?",
+   "a": "Any your browser plays: MP3, WAV, AAC, OGG and others."
+  },
+  {
+   "q": "Can I start the music later?",
+   "a": "Not in this version. Trim the audio first with the Audio Trimmer."
+  },
+  {
+   "q": "Does it remove the original sound?",
+   "a": "Set the original volume to 0 to replace it."
+  },
+  {
+   "q": "Is it copyright safe?",
+   "a": "The tool does not check rights. Use music you are allowed to use."
+  }
+ ],
+ "related": [
+  "audio-trimmer",
+  "video-muter",
+  "video-merger",
+  "video-trimmer",
+  "audio-recorder",
+  "video-audio-extractor"
+ ],
+ "keywords": [
+  "add music to video",
+  "mix audio into video",
+  "background music video online",
+  "video audio fade"
+ ]
+}

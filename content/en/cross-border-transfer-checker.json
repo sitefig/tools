@@ -1,0 +1,41 @@
+{
+ "id": "cross-border-transfer-checker",
+ "seoTitle": "EU Data Transfer Checker: Adequacy Decision or SCCs",
+ "metaDescription": "Enter destination countries and see whether the EU has an adequacy decision or whether SCCs and other safeguards are needed. Offline list with date.",
+ "intro": "Looks up each destination country in the European Commission adequacy list and tells you what transfer tool is left when there is none.",
+ "why": "Sending personal data out of the EU/EEA needs a legal route. The simplest is an adequacy decision: the Commission has decided the country gives equivalent protection. Without one you need safeguards such as Standard Contractual Clauses and a transfer impact assessment.\n\nThis tool contains the list as read from the Commission page on 23 October 2026, with notes for the United States (only Data Privacy Framework participants) and Canada (commercial organisations only). The list changes, so always check the Commission page before relying on it.",
+ "howTo": [
+  "Enter one destination country per line.",
+  "Run the tool and read the status for each.",
+  "For the United States, check the recipient is on the DPF list.",
+  "Where there is no decision, pick an Art. 46 safeguard."
+ ],
+ "faq": [
+  {
+   "q": "How current is the list?",
+   "a": "It was read on 23 October 2026 and is shown in the output. Check the Commission page for changes."
+  },
+  {
+   "q": "Does it cover the UK GDPR?",
+   "a": "No. It covers EU/EEA exports. UK exports have their own list."
+  },
+  {
+   "q": "Are the EEA countries listed?",
+   "a": "Yes, as inside the EEA. Transfers there are not third-country transfers."
+  }
+ ],
+ "related": [
+  "privacy-law-applicability-checker",
+  "ropa-builder",
+  "dpia-screening",
+  "third-party-domain-classifier",
+  "privacy-policy-generator",
+  "gdpr-checklist"
+ ],
+ "keywords": [
+  "adequacy decision list",
+  "gdpr transfer checker",
+  "standard contractual clauses",
+  "third country transfer"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "income-tax-bracket-calculator",
+ "seoTitle": "Income Tax Bracket Calculator: Marginal and Effective Rate",
+ "metaDescription": "Apply progressive brackets that you enter to an income and see tax per bracket, marginal rate, effective rate and net income.",
+ "intro": "Progressive tax calculator using brackets that you supply.",
+ "why": "Progressive tax applies each rate only to the slice of income in its bracket, so a higher bracket does not tax all your income at that rate. The tool shows each slice, the marginal rate and the effective rate.\n\nNo country tables are bundled because they change every year. Copy the bands from your tax authority. Deductions and credits are limited to one credit field.",
+ "howTo": [
+  "Enter brackets as limit and rate per line.",
+  "Enter taxable income, credits and other taxes.",
+  "Read tax, marginal and effective rate."
+ ],
+ "faq": [
+  {
+   "q": "Where do I get the brackets?",
+   "a": "From your national tax authority for the right year."
+  },
+  {
+   "q": "Does it include social contributions?",
+   "a": "Only if you enter them under other taxes."
+  },
+  {
+   "q": "Why is the effective rate lower than the marginal?",
+   "a": "Lower slices are taxed at lower rates."
+  }
+ ],
+ "related": [
+  "au-income-tax-estimator",
+  "capital-gains-tax-calculator",
+  "corporate-tax-estimator",
+  "salary-hourly",
+  "pay-raise-calculator",
+  "percent-change"
+ ],
+ "keywords": [
+  "tax bracket calculator",
+  "marginal tax rate",
+  "effective tax rate"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "id": "clipboard-inspector",
+ "seoTitle": "Clipboard Inspector: See Every Format You Paste",
+ "metaDescription": "Paste into the box and see all clipboard formats: plain text, HTML source, rich text, images and files, with sizes. Debug copy and paste. Runs locally.",
+ "intro": "Find out exactly what a copy action put on the clipboard: text, HTML, images, files and their formats.",
+ "why": "When copy and paste misbehaves (extra formatting, missing images, wrong characters) you need to see what is really on the clipboard. Paste into the box and the inspector lists every format the paste event carries, the size of each and the first part of the content, including the HTML that rich-text editors receive and any files or images.\n\nThere is also a button that uses the Clipboard API to read the current clipboard, which the browser may ask permission for. Everything stays in the page; content is shown as text, never rendered, so pasted HTML cannot run.",
+ "howTo": [
+  "Click the box and paste with Ctrl+V or Cmd+V.",
+  "Read the format list and content.",
+  "Or press the button to read the clipboard directly."
+ ],
+ "faq": [
+  {
+   "q": "Is the clipboard content sent anywhere?",
+   "a": "No. It is read in your browser and shown on the page only."
+  },
+  {
+   "q": "Why does rich text show HTML?",
+   "a": "Apps put an HTML version next to plain text so editors can keep formatting."
+  },
+  {
+   "q": "Why can the button fail?",
+   "a": "Browsers require permission or a recent click, and Firefox restricts reading the clipboard."
+  }
+ ],
+ "related": [
+  "html-entities",
+  "char-info",
+  "zero-width-detector",
+  "text-diff",
+  "browser-info"
+ ],
+ "keywords": [
+  "clipboard formats viewer",
+  "debug paste html",
+  "clipboard api test"
+ ]
+}

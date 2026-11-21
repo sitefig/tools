@@ -1,0 +1,45 @@
+{
+  "id": "work-hours-calculator",
+  "seoTitle": "Work Hours & Time Card Calculator with Overtime",
+  "metaDescription": "Add up hours from a list of shifts with breaks and overnight shifts, split regular and overtime hours and calculate gross pay for a timesheet.",
+  "intro": "Paste a week of start and end times and get totals, overtime and pay.",
+  "why": "Enter shifts like \"Mon 09:00 - 17:30 30\" (label optional, break in minutes at the end). Shifts that end before they start count as overnight. You can set daily overtime after a number of hours, weekly overtime after a threshold (40 by default), the hourly rate and the overtime multiplier.\n\nOvertime rules vary by country, contract and state (daily, weekly, double time, rest-day premiums), so set the thresholds your rules use and check payroll law for official calculations.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "List each shift on its own line.",
+    "Set overtime thresholds, rate and multiplier.",
+    "Read the total, regular and overtime hours.",
+    "Copy the figures into your timesheet."
+  ],
+  "faq": [
+    {
+      "q": "How are overnight shifts handled?",
+      "a": "If the end time is earlier than the start, the shift is counted as ending the next day."
+    },
+    {
+      "q": "Can I use 12-hour times?",
+      "a": "Enter 24-hour times; use the time format converter first for AM/PM."
+    },
+    {
+      "q": "Is this payroll software?",
+      "a": "No, it is a calculator. Taxes and statutory rules are not applied."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "time-format-converter",
+    "time-duration-calculator",
+    "salary-hourly",
+    "business-days",
+    "date-difference",
+    "add-subtract-dates"
+  ],
+  "keywords": [
+    "time card calculator",
+    "work hours calculator",
+    "overtime calculator",
+    "timesheet total"
+  ]
+}

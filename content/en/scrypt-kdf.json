@@ -1,0 +1,46 @@
+{
+ "id": "scrypt-kdf",
+ "seoTitle": "Free scrypt Calculator: Derive Keys (RFC 7914)",
+ "metaDescription": "Derive a key with scrypt (RFC 7914) from a password, salt and the N, r, p cost parameters, with memory capped at 64 MiB. Free, in your browser.",
+ "intro": "Enter a password and a salt, then set N, r, p and the output length. The tool derives a key with scrypt and prints it as hex.",
+ "why": "scrypt is a memory-hard password-based key derivation function, used for wallet encryption, some login systems and encrypted file formats. Its three cost parameters are easy to mix up, and the memory it needs, 128 times N times r bytes, can surprise you: a setting that works in a library on a server can freeze a browser tab. This page lets you try values, check them against the RFC 7914 test vectors and see the result in hex. The memory is capped at 64 MiB, and the computation yields to the page so it stays responsive. The implementation is hand-written and unaudited, so use it to learn and to verify, not to protect real passwords. Input stays in your browser.",
+ "howTo": [
+  "Enter the password and the salt as text.",
+  "Set N (a power of 2), r and p, plus the output length in bytes.",
+  "Run the tool and copy the derived key in hex."
+ ],
+ "faq": [
+  {
+   "q": "What do N, r and p mean?",
+   "a": "N is the CPU and memory cost and must be a power of two. r is the block size, and p is the parallelism. Memory used is about 128 times N times r bytes."
+  },
+  {
+   "q": "Why does it refuse some values?",
+   "a": "Memory above 64 MiB is rejected to protect your browser, so lower N or r. N must also be a power of two and at least 2."
+  },
+  {
+   "q": "Which test vector do the defaults match?",
+   "a": "The defaults, password 'password', salt 'NaCl', N=1024, r=8, p=16 and 64 bytes, are one of the examples in RFC 7914."
+  },
+  {
+   "q": "Should I use this for real passwords?",
+   "a": "Do not enter real passwords or live secrets into a page you do not fully trust. It is intended for testing and learning, and the code has not been audited."
+  }
+ ],
+ "related": [
+  "argon2-hash",
+  "pbkdf2-key-derivation",
+  "bcrypt-generator",
+  "hkdf-derive",
+  "password-strength",
+  "hash-generator"
+ ],
+ "keywords": [
+  "scrypt online",
+  "scrypt calculator",
+  "free scrypt generator",
+  "scrypt key derivation",
+  "rfc 7914 scrypt",
+  "scrypt n r p parameters"
+ ]
+}

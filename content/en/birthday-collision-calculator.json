@@ -1,0 +1,45 @@
+{
+  "id": "birthday-collision-calculator",
+  "seoTitle": "Birthday Paradox & Hash Collision Probability Calculator",
+  "metaDescription": "Compute the probability that at least two of n items collide among N possible values (birthdays, IDs, truncated hashes) and how many items give 50% or 1 in a million.",
+  "intro": "Find out how soon random identifiers or hashes will start to collide.",
+  "why": "Enter the number of items and the size of the space (a number such as 365 or 2^64). For small spaces the exact product is used; otherwise the standard approximation 1 - e^(-n(n-1)/(2N)). The page also gives the number of items for a 50%, 1% and one-in-a-million collision chance.\n\nThe birthday bound means a b-bit random value starts colliding after roughly 2^(b/2) items, which is why short hash prefixes and 64-bit IDs need care. Results assume uniformly random values.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter n and N (or 2^bits).",
+    "Read the collision probability.",
+    "Check the item counts for common risk levels.",
+    "Use more bits if the risk is too high."
+  ],
+  "faq": [
+    {
+      "q": "Why do 23 people give 50%?",
+      "a": "Because the number of pairs grows with the square of the group size."
+    },
+    {
+      "q": "How many bits for 1 billion IDs?",
+      "a": "To keep collision chance near 1 in a million you need about 70 bits."
+    },
+    {
+      "q": "Does it apply to hash functions?",
+      "a": "Yes for random outputs. It describes accidental collisions, not attacks."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "hash-generator",
+    "uuid-generator",
+    "ulid-generator",
+    "nanoid-generator",
+    "random-number-picker",
+    "percentage-calculator"
+  ],
+  "keywords": [
+    "birthday paradox calculator",
+    "hash collision probability",
+    "uuid collision",
+    "collision calculator"
+  ]
+}

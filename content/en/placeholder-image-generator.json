@@ -1,0 +1,46 @@
+{
+  "id": "placeholder-image-generator",
+  "seoTitle": "Free Placeholder Image Generator: PNG or SVG",
+  "metaDescription": "Make a placeholder image of any width and height with your own colours and text, as a PNG or SVG file. Free, runs in your browser.",
+  "intro": "Creates a placeholder image at the size you choose, with a background colour, a text colour and a label. The label defaults to the dimensions. Save it as PNG or SVG.",
+  "why": "Mock-ups, documentation, tests and layouts all need images before the real ones exist. Hot-linking a placeholder service adds a dependency and a request that can fail, and it breaks when you are offline or behind a firewall.\n\nSet a width and height up to 8000 pixels, pick the colours and optionally type a label, and the file is generated on the spot. The default label is the size, such as 600 x 400, which makes it easy to see which slot is which. SVG output is tiny and sharp at any scale, and the markup is shown so you can paste it inline. PNG is available when you need a raster file. Everything is created in your browser.",
+  "howTo": [
+    "Enter the width and height in pixels.",
+    "Pick a background colour and a text colour.",
+    "Type a label, or leave it empty to show the dimensions.",
+    "Choose png or svg, run it and download the image."
+  ],
+  "faq": [
+    {
+      "q": "What size limits apply?",
+      "a": "Width and height must each be between 1 and 8000 pixels. Values outside that range are clamped to the nearest limit, so a request for a 20000 pixel wide image is produced at 8000 pixels instead."
+    },
+    {
+      "q": "Which format should I choose?",
+      "a": "SVG is small, scales without blur and gives you code you can inline. PNG is a normal raster file that works anywhere an image upload is expected."
+    },
+    {
+      "q": "How is the text sized?",
+      "a": "The font size is picked automatically to fit the label inside the image, based on both its width and height. Very long labels shrink to a minimum size and may not fit in small images."
+    },
+    {
+      "q": "Does it need an internet connection?",
+      "a": "No. The image is drawn or written locally in your browser, so there is no request to an external placeholder service."
+    }
+  ],
+  "related": [
+    "image-resizer",
+    "svg-pattern-generator",
+    "lorem-ipsum",
+    "favicon-generator",
+    "aspect-ratio-calculator",
+    "mock-data-generator"
+  ],
+  "keywords": [
+    "placeholder image generator",
+    "dummy image generator",
+    "placeholder image png svg",
+    "generate image of custom size",
+    "free placeholder maker"
+  ]
+}

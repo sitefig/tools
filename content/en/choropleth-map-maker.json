@@ -1,0 +1,44 @@
+{
+ "id": "choropleth-map-maker",
+ "seoTitle": "Choropleth World Map Maker from a CSV (SVG)",
+ "metaDescription": "Colour countries by values from a CSV using names or ISO codes, with classed legend and table. Shapes are bundled, nothing is fetched.",
+ "intro": "Shades a world map by value for each country you list, with classes, a legend and a table of matches.",
+ "why": "Paste country and value rows and get a map. Names, ISO 2-letter and ISO 3-letter codes are matched, with a list of common alternative names. Anything that cannot be matched is listed so you can fix the spelling.\n\nThe shapes are Natural Earth 1:110m, public domain, stored on the site; small countries and islands are missing at this scale, so they cannot be coloured. Choose equal-interval or quantile classes and the colour scale. Colour alone is not enough, so the table has every value.",
+ "howTo": [
+  "Paste rows: country, value.",
+  "Choose the colour scale, the number of classes and the break method.",
+  "Check the unmatched list in the note.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Which names work?",
+   "a": "English short names, ISO codes and many variants such as USA, UK or Ivory Coast."
+  },
+  {
+   "q": "Why is a small country missing?",
+   "a": "The 110m data omits it."
+  },
+  {
+   "q": "Quantile or equal interval?",
+   "a": "Quantile gives each colour the same number of countries; equal interval keeps value gaps even."
+  },
+  {
+   "q": "Is the map projection accurate?",
+   "a": "It is plate carree (plain latitude and longitude), which stretches areas near the poles."
+  }
+ ],
+ "related": [
+  "travel-map-pinner",
+  "csv-to-map-plotter",
+  "geography-quiz-map",
+  "heatmap-maker",
+  "bar-chart-maker",
+  "csv-to-geojson"
+ ],
+ "keywords": [
+  "choropleth map maker",
+  "world map by country data",
+  "color countries csv"
+ ]
+}

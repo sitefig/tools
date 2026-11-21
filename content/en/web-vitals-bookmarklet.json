@@ -1,0 +1,43 @@
+{
+ "id": "web-vitals-bookmarklet",
+ "seoTitle": "Web Vitals Bookmarklet Builder: Show LCP, CLS and INP on Any Page",
+ "metaDescription": "Generate a bookmarklet that shows LCP, CLS, INP, FCP and TTFB with ratings as an overlay on any page, using browser performance APIs.",
+ "intro": "Builds a bookmarklet that reads Core Web Vitals from the performance APIs and shows them on the page you visit.",
+ "why": "A quick way to see Web Vitals on any page without installing an extension.\n\nThe bookmarklet uses PerformanceObserver for LCP, layout shifts (grouped in session windows like CLS), event timing for INP, paint and navigation timing. Click it again to remove it. It is lab data from your own browser and needs a Chromium browser for most metrics.",
+ "howTo": [
+  "Choose overlay and console options.",
+  "Create a new bookmark and paste the generated URL as its address.",
+  "Open a page and click the bookmark.",
+  "Interact with the page to see INP."
+ ],
+ "faq": [
+  {
+   "q": "Why does INP say waiting?",
+   "a": "It needs at least one click, tap or key press after the bookmarklet loads."
+  },
+  {
+   "q": "Does it work on every site?",
+   "a": "Not where a strict Content-Security-Policy blocks javascript: URLs. Use the source in the DevTools console instead."
+  },
+  {
+   "q": "Are these the field numbers Google uses?",
+   "a": "No. They are measured in your browser for this visit."
+  },
+  {
+   "q": "Does anything leave the page?",
+   "a": "No. It only writes to the console and the overlay."
+  }
+ ],
+ "related": [
+  "core-web-vitals-grader",
+  "crux-response-analyzer",
+  "cls-risk-finder",
+  "lighthouse-report-viewer",
+  "text-spacing-bookmarklet"
+ ],
+ "keywords": [
+  "web vitals bookmarklet",
+  "show lcp cls inp on page",
+  "core web vitals overlay"
+ ]
+}

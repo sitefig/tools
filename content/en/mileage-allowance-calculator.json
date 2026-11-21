@@ -1,0 +1,39 @@
+{
+ "id": "mileage-allowance-calculator",
+ "seoTitle": "Mileage Allowance Calculator at Your Rate",
+ "metaDescription": "Calculate a business mileage reimbursement from kilometres and a per-km rate, with an optional second rate after a distance.",
+ "intro": "Reimbursement for business kilometres at rates that you enter.",
+ "why": "Many employers and tax authorities set per-km rates, sometimes lower after a distance. Enter your rate and the tool does the arithmetic and checks an optional annual cap.\n\nNo official rates are bundled because they change by country and year.",
+ "howTo": [
+  "Enter kilometres and the rate.",
+  "Optionally set a second rate and distance.",
+  "Optionally enter a cap."
+ ],
+ "faq": [
+  {
+   "q": "Which rate should I use?",
+   "a": "The current figure from your tax authority or employer policy."
+  },
+  {
+   "q": "What records do I need?",
+   "a": "Date, route, purpose and odometer readings."
+  },
+  {
+   "q": "Is it taxed?",
+   "a": "Rules differ by country."
+  }
+ ],
+ "related": [
+  "per-diem-allowance-calculator",
+  "fuel-cost",
+  "expense-report-builder",
+  "salary-hourly",
+  "income-tax-bracket-calculator",
+  "vat-return-summary-builder"
+ ],
+ "keywords": [
+  "mileage allowance",
+  "km reimbursement",
+  "business mileage"
+ ]
+}

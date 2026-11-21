@@ -1,0 +1,47 @@
+{
+ "id": "dkim-record-generator",
+ "seoTitle": "Free DKIM Record Generator & Key Pair Maker",
+ "metaDescription": "Free online DKIM record generator. Create the DNS TXT record from a public key, or generate a fresh RSA key pair in your browser. Nothing uploaded.",
+ "intro": "Create a DKIM DNS TXT record from a public key PEM, or generate a new RSA key pair in your browser. You get the host name, record value and a zone-file line.",
+ "why": "DKIM adds a signature to outgoing mail, and receivers check it against a public key published in DNS. Setting it up involves a selector, a correctly formatted v=DKIM1 record, and a key string that often exceeds the 255-character limit for a single DNS string.\n\nPaste the public key your mail system gave you and the tool builds the TXT value with the selector and domain. With no key, it generates an RSA pair using the browser's WebCrypto and shows the private key on the page, so you can configure it in your mail server. Keep that private key secret and never publish it; if you would rather not generate keys in a web page, create them with openssl. Choose 2048 bits or more, since 1024 is considered weak. Nothing is uploaded.",
+ "howTo": [
+  "Enter the selector and your domain.",
+  "Paste a public key PEM, or leave the box empty to generate a new key pair.",
+  "Choose the key size, and tick testing mode if you want t=y while you trial it.",
+  "Publish the TXT record at the host shown and store any generated private key safely."
+ ],
+ "faq": [
+  {
+   "q": "Where does the generated private key go?",
+   "a": "It is shown on the page only. Copy it into your mail server or signing service and store it securely. If you lose it, generate a new pair and publish a new record."
+  },
+  {
+   "q": "Which key size should I choose?",
+   "a": "2048 bits is the usual choice. 1024 is weak and some receivers distrust it. 4096 is stronger but makes a long DNS record, which some providers handle poorly."
+  },
+  {
+   "q": "What is the selector?",
+   "a": "A label that lets you publish several keys for one domain, for example mail or 2025a. The record goes at selector._domainkey.yourdomain, and the signing server uses the same selector."
+  },
+  {
+   "q": "Why is the value split into pieces?",
+   "a": "A single DNS TXT string is limited to 255 characters. Long keys are split into several quoted strings, which resolvers join together. Many DNS dashboards do this for you."
+  }
+ ],
+ "related": [
+  "spf-record-generator",
+  "dmarc-generator",
+  "rsa-key-pair-generator",
+  "dns-record-generator",
+  "rsa-pkcs1-pkcs8-converter",
+  "openpgp-inspector"
+ ],
+ "keywords": [
+  "dkim record generator",
+  "dkim generator",
+  "create dkim key",
+  "free dkim tool",
+  "dkim txt record builder",
+  "generate dkim public key"
+ ]
+}

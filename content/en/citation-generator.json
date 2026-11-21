@@ -1,0 +1,46 @@
+{
+  "id": "citation-generator",
+  "seoTitle": "Citation Generator: APA 7, MLA 9, Chicago, Harvard",
+  "metaDescription": "Format a website, book or journal article reference in APA 7, MLA 9, Chicago author-date or Harvard style, with the matching in-text citation.",
+  "intro": "Fill in the source details and get a correctly punctuated reference-list entry and in-text citation.",
+  "why": "Choose the style and source type (website, book, journal article) and enter authors as \"Last, First; Last, First\", the date, title, container (journal or site), publisher, volume, issue, pages, DOI or URL. The tool applies each style's author formatting, title case rules for italics (marked with asterisks), date format and in-text pattern for one, two, three or more authors.\n\nCitation styles have many special cases (corporate authors, editions, translators, online-only formats) that a form cannot cover, so check against the official style guide or your institution's rules before submitting.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Select style and source type.",
+    "Enter authors and details.",
+    "Copy the reference and the in-text citation.",
+    "Apply italics where marked with asterisks."
+  ],
+  "faq": [
+    {
+      "q": "Which edition of each style is used?",
+      "a": "APA 7th, MLA 9th, Chicago author-date (17th) and Harvard in its common form."
+    },
+    {
+      "q": "How do I write several authors?",
+      "a": "Separate them with semicolons: \"Smith, Jane; Doe, John A.\"."
+    },
+    {
+      "q": "Does it look up a DOI?",
+      "a": "No. It formats what you type; it does not fetch metadata."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "readability",
+    "markdown-to-docx",
+    "text-statistics",
+    "title-case-headline-analyzer",
+    "word-counter",
+    "slug-generator"
+  ],
+  "keywords": [
+    "citation generator",
+    "apa citation",
+    "mla citation",
+    "harvard reference",
+    "chicago style"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "theme-color-meta-generator",
+ "seoTitle": "Theme Color Meta Tag Generator for Light and Dark Mode",
+ "metaDescription": "Create theme-color meta tags with prefers-color-scheme media for light and dark mode and preview the browser toolbar. Free.",
+ "intro": "Writes the theme-color meta tags for both color schemes.",
+ "why": "The theme-color tag tints the browser toolbar on supporting mobile browsers. With a media attribute you can set one color for light mode and another for dark.\n\nEnter the two colors as hex, rgb() or hsl(). The preview is a simple mock of the toolbar, not a real browser. Also set theme_color in your manifest if you have one.",
+ "howTo": [
+  "Type the light mode color.",
+  "Type the dark mode color.",
+  "Tick color-scheme if your site supports both.",
+  "Copy the tags into the head."
+ ],
+ "faq": [
+  {
+   "q": "Do all browsers support it?",
+   "a": "Support is mostly on mobile Chrome and Safari; others ignore it."
+  },
+  {
+   "q": "Why the media attribute?",
+   "a": "It lets the browser pick the tag that matches the user setting."
+  },
+  {
+   "q": "Is there a color picker?",
+   "a": "No, type a color value."
+  },
+  {
+   "q": "What about the manifest?",
+   "a": "Set theme_color there as well for installed apps."
+  }
+ ],
+ "related": [
+  "pwa-manifest-generator",
+  "favicon-generator",
+  "meta-tag-generator",
+  "color-mixer",
+  "color-converter",
+  "html-head-extractor"
+ ],
+ "keywords": [
+  "theme color meta tag",
+  "prefers-color-scheme theme-color",
+  "dark mode theme color",
+  "browser toolbar color"
+ ]
+}

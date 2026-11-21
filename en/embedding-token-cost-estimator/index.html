@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Embedding Token &amp; Cost Estimator for RAG | Free Tools</title>
+<meta name="description" content="Estimate tokens, chunk count, API cost and vector storage for embedding your text across popular models. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/embedding-token-cost-estimator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/embedding-token-cost-estimator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/embedding-token-cost-estimator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Embedding Token &amp; Cost Estimator for RAG | Free Tools">
+<meta property="og:description" content="Estimate tokens, chunk count, API cost and vector storage for embedding your text across popular models. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/embedding-token-cost-estimator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Embedding Token &amp; Cost Estimator for RAG | Free Tools">
+<meta name="twitter:description" content="Estimate tokens, chunk count, API cost and vector storage for embedding your text across popular models. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Embedding Token & Cost Estimator","url":"https://tools.sitefig.net/en/embedding-token-cost-estimator/","description":"Estimate tokens, chunk count, API cost and vector storage for embedding your text across popular models. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste a representative sample of your text.","Enter the number of documents, the chunk size and the overlap.","Adjust the characters-per-token ratio, vector dimensions and number of re-embedding runs, or enter a custom price.","Compare the estimated cost and storage for each model."],"keywords":"embedding cost estimator, rag embedding cost, embedding token calculator, chunk overlap cost, vector storage estimator, free embedding budget tool","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"AI & LLM","item":"https://tools.sitefig.net/en/#ai-and-llm"},{"@type":"ListItem","position":3,"name":"Embedding Token & Cost Estimator","item":"https://tools.sitefig.net/en/embedding-token-cost-estimator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does overlap affect the cost?","acceptedAnswer":{"@type":"Answer","text":"Overlapping chunks repeat part of the text, so the same tokens are embedded more than once. A twenty percent overlap means roughly twenty percent more tokens, and the chunk count rises too."}},{"@type":"Question","name":"Are the prices up to date?","acceptedAnswer":{"@type":"Answer","text":"The table is a snapshot that goes out of date as providers change their pricing. Enter your own price per million tokens for any real budget, and check the provider's pricing page."}},{"@type":"Question","name":"How is it different from the embedding cost calculator?","acceptedAnswer":{"@type":"Answer","text":"This one starts from a text sample and chunk settings, so it works out tokens and chunks for you. The embedding cost calculator starts from a document count and an average size you already know."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#ai-and-llm">AI &amp; LLM</a></li><li><span aria-current="page">Embedding Token &amp; Cost Estimator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Embedding Token &amp; Cost Estimator</h1>
+<p class="lede">Paste a sample of your text and set the chunk size, overlap and document count to estimate tokens, number of chunks, embedding API cost and vector storage across popular embedding models.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="embedding-token-cost-estimator" data-module="devz3"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Before you build a retrieval system, you need a rough idea of what indexing will cost and how big the vector store will be. The answer depends on the amount of text, how you split it into chunks, how much the chunks overlap and which model you use. Overlap in particular quietly multiplies the tokens you pay for.</p>
+<p>This estimator takes a sample of your real text, works out its size, scales it to your document count and compares models side by side. Token counts are estimates from a character ratio, and the price table is a built-in snapshot, so enter your own price when it differs. Re-embedding runs and vector dimensions are included. The calculation is done in your browser and your text is not uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste a representative sample of your text.</li><li>Enter the number of documents, the chunk size and the overlap.</li><li>Adjust the characters-per-token ratio, vector dimensions and number of re-embedding runs, or enter a custom price.</li><li>Compare the estimated cost and storage for each model.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why does overlap affect the cost?</summary><p>Overlapping chunks repeat part of the text, so the same tokens are embedded more than once. A twenty percent overlap means roughly twenty percent more tokens, and the chunk count rises too.</p></details>
+<details><summary>Are the prices up to date?</summary><p>The table is a snapshot that goes out of date as providers change their pricing. Enter your own price per million tokens for any real budget, and check the provider's pricing page.</p></details>
+<details><summary>How is it different from the embedding cost calculator?</summary><p>This one starts from a text sample and chunk settings, so it works out tokens and chunks for you. The embedding cost calculator starts from a document count and an average size you already know.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/embedding-cost-calculator/"><span class="link-card__title">Embedding Cost Calculator</span><span class="link-card__desc">Estimate the cost of embedding a corpus: documents x average tokens (or characters / words), re-embedding runs, and vector storage size (dimensions x 4 bytes, plus HNSW overhead estimate). Prices are list prices per 1M tokens at the time of writing and change often: override with &quot;Custom price&quot; and check your provider. Token counts from characters are an approximation (about 4 characters per English token).</span></a></li><li><a class="link-card" href="/en/text-chunk-splitter/"><span class="link-card__title">Text Chunk Splitter (RAG)</span><span class="link-card__desc">Split text into overlapping chunks by characters or approximate tokens, preferring paragraph/sentence boundaries.</span></a></li><li><a class="link-card" href="/en/rag-chunking-visualizer/"><span class="link-card__title">RAG Chunking Visualizer</span><span class="link-card__desc">See how a document splits into retrieval chunks: fixed window, sentence or recursive (paragraph, line, sentence, word) splitting with size and overlap. Chunks are color coded and overlaps highlighted (recursive and sentence modes overlap by whole segments, so overlap can be 0 when segments are large).</span></a></li><li><a class="link-card" href="/en/llm-cost-calculator/"><span class="link-card__title">LLM API Cost Calculator</span><span class="link-card__desc">Compute request and monthly cost from tokens and your own per-million prices (prices change; enter current ones).</span></a></li><li><a class="link-card" href="/en/embedding-similarity/"><span class="link-card__title">Embedding Vector Similarity</span><span class="link-card__desc">Compare embedding vectors you paste (JSON arrays or numbers, one vector per line): cosine similarity, dot product, Euclidean and Manhattan distance, plus a similarity matrix and best matches for several vectors. It does not create embeddings.</span></a></li><li><a class="link-card" href="/en/gpt-token-counter/"><span class="link-card__title">GPT Token Counter (cl100k + o200k, chat overhead)</span><span class="link-card__desc">Exact token counts for text under cl100k_base and o200k_base side by side, plus an approximate chat-message overhead calculator (OpenAI cookbook rule: 3 tokens per message, +1 per name, +3 reply priming; use o200k_base for the GPT-4o family). Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

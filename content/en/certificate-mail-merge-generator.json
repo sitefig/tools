@@ -1,0 +1,45 @@
+{
+ "id": "certificate-mail-merge-generator",
+ "seoTitle": "Certificate Generator: Mail-Merge Names into Printable Certificates",
+ "metaDescription": "Paste recipients, write the certificate text with placeholders, add your own background and print one page per person. Free.",
+ "intro": "Creates one landscape certificate page per recipient from a list, with your wording, signature line and an optional background image.",
+ "why": "Give a list of names, or a CSV with columns like name,course,date, and write the text under the name with placeholders such as {{course}}. Each person gets a page with a title, a name line, your wording, a signature line and a date.\n\nYou can add your own background image (PNG, JPEG, GIF or WebP up to 6 MB), which is embedded in the page and not uploaded anywhere. A framed text area keeps the writing readable on busy artwork. Print all pages or choose single pages in the print dialog; save as PDF from there.",
+ "howTo": [
+  "Paste names or a CSV with a name column.",
+  "Write the title, wording and signature label.",
+  "Optionally choose a background image.",
+  "Print the pages or save as PDF."
+ ],
+ "faq": [
+  {
+   "q": "Does it send files anywhere?",
+   "a": "No. Names and image stay in your browser."
+  },
+  {
+   "q": "One PDF per person?",
+   "a": "It makes one page per person in one document. Print selected pages to separate PDFs."
+  },
+  {
+   "q": "Can I choose a template?",
+   "a": "Use a background image for your design."
+  },
+  {
+   "q": "Which paper sizes?",
+   "a": "A4 and Letter, landscape."
+  }
+ ],
+ "related": [
+  "name-badge-maker-from-csv",
+  "label-sheet-layout-printer",
+  "signature-generator",
+  "invoice-generator",
+  "resume-builder",
+  "qr-code-generator"
+ ],
+ "keywords": [
+  "certificate generator",
+  "mail merge certificates",
+  "bulk certificates from list",
+  "printable certificate maker"
+ ]
+}

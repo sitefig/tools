@@ -1,0 +1,43 @@
+{
+ "id": "scss-to-css",
+ "seoTitle": "Free SCSS to CSS Compiler Online (Subset)",
+ "metaDescription": "Compile common SCSS to CSS in your browser: variables, nesting, mixins, extend, interpolation and basic maths. Free, no upload, subset support.",
+ "intro": "Paste SCSS and get plain CSS. It supports a practical subset: variables, nesting, mixins, simple extend, media queries, interpolation, basic maths and a few colour functions.",
+ "why": "Sometimes you only have a snippet of SCSS and no build step: a code sample from a blog, a component from a design system, or a quick fix on a machine without Node. Installing Sass for ten lines feels like overkill, but you still want to see what the browser will receive.\n\nThis compiler runs in your page and covers the features most snippets use. It is not full Dart Sass. Control directives, functions, maps and the module system are not supported, and the tool reports them as errors instead of guessing. Use it to check or share small pieces of code, and use the official compiler for production. Your code is not uploaded anywhere.",
+ "howTo": [
+  "Paste your SCSS into the input box.",
+  "Read the compiled CSS in the output panel.",
+  "If an error appears, check whether you used an unsupported feature such as @if, @each or @use.",
+  "Copy the CSS, or switch to the official Sass compiler for anything beyond the supported subset."
+ ],
+ "faq": [
+  {
+   "q": "Is this the same as the official Sass compiler?",
+   "a": "No. It handles a subset of SCSS in the browser. Variables, nesting, mixins with arguments, simple extend, media queries, interpolation, basic maths and a few colour functions work. Full projects should use Dart Sass."
+  },
+  {
+   "q": "What is not supported?",
+   "a": "Control directives such as @if, @each, @for and @while, plus @function, maps and the @use module system. Complex extends on placeholder selectors are also out. The tool shows an error for these rather than producing wrong CSS."
+  },
+  {
+   "q": "Why does my output differ from Dart Sass?",
+   "a": "Formatting and the exact handling of edge cases in unit maths or colour functions can differ. Treat the result as a quick preview and compile with the real Sass toolchain for anything you ship."
+  }
+ ],
+ "related": [
+  "css-to-scss",
+  "css-format",
+  "css-minify",
+  "tailwind-to-inline-css",
+  "css-specificity-calculator",
+  "css-unit-converter"
+ ],
+ "keywords": [
+  "scss to css compiler online",
+  "compile scss in browser",
+  "scss to css converter",
+  "sass online compiler",
+  "scss mixin to css",
+  "free scss compiler"
+ ]
+}

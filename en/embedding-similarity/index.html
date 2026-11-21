@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Embedding Vector Similarity Calculator Online | Free Tools</title>
+<meta name="description" content="Compare embedding vectors: cosine similarity, dot product, Euclidean and Manhattan distance, plus a matrix and best matches. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/embedding-similarity/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/embedding-similarity/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/embedding-similarity/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Embedding Vector Similarity Calculator Online | Free Tools">
+<meta property="og:description" content="Compare embedding vectors: cosine similarity, dot product, Euclidean and Manhattan distance, plus a matrix and best matches. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/embedding-similarity/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Embedding Vector Similarity Calculator Online | Free Tools">
+<meta name="twitter:description" content="Compare embedding vectors: cosine similarity, dot product, Euclidean and Manhattan distance, plus a matrix and best matches. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Embedding Vector Similarity","url":"https://tools.sitefig.net/en/embedding-similarity/","description":"Compare embedding vectors: cosine similarity, dot product, Euclidean and Manhattan distance, plus a matrix and best matches. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste vector set A, one vector per line, as JSON arrays or plain numbers.","Optionally paste vector set B. Leave it empty to compare the vectors in A with each other.","Choose the number of decimals and read the scores or the similarity matrix with best matches."],"keywords":"embedding similarity calculator, cosine similarity calculator online, compare embedding vectors, free vector distance tool, dot product euclidean calculator","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"LLM Tools","item":"https://tools.sitefig.net/en/#llm-tools"},{"@type":"ListItem","position":3,"name":"Embedding Vector Similarity","item":"https://tools.sitefig.net/en/embedding-similarity/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What input formats are accepted?","acceptedAnswer":{"@type":"Answer","text":"Either a JSON array of arrays, or one vector per line using numbers separated by spaces, commas or semicolons, with or without square brackets. Every vector must have the same number of dimensions."}},{"@type":"Question","name":"When does dot product equal cosine similarity?","acceptedAnswer":{"@type":"Answer","text":"When both vectors have unit length. Many embedding models return normalised vectors, and the tool tells you when both are of length one."}},{"@type":"Question","name":"What does the matrix show?","acceptedAnswer":{"@type":"Answer","text":"With several vectors it prints cosine similarity for every pair, then lists the best match for each row. When B is empty, a vector is not matched with itself."}},{"@type":"Question","name":"Can it make embeddings from my text?","acceptedAnswer":{"@type":"Answer","text":"No. It does not call a model. Get the vectors from your embedding provider or library, then paste them here."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#llm-tools">LLM Tools</a></li><li><span aria-current="page">Embedding Vector Similarity</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Embedding Vector Similarity</h1>
+<p class="lede">Compares embedding vectors you paste: cosine similarity, dot product, Euclidean and Manhattan distance, plus a similarity matrix and best match for each vector. It does not create embeddings.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="embedding-similarity" data-module="devz1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>If you work with semantic search or retrieval, you often need to check the arithmetic behind it: are these two vectors close, which candidate scores highest, does normalising change the ranking? An embedding API gives you arrays of hundreds or thousands of numbers, and there is no quick way to compare them by eye. Paste the vectors here, one per line, and get cosine similarity and the distance measures for a pair, or a full similarity matrix when you give several. It is useful for debugging a vector store, writing tests with known values or learning what cosine and dot product mean. The tool only does the maths. It cannot generate embeddings. Your vectors stay in the browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste vector set A, one vector per line, as JSON arrays or plain numbers.</li><li>Optionally paste vector set B. Leave it empty to compare the vectors in A with each other.</li><li>Choose the number of decimals and read the scores or the similarity matrix with best matches.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What input formats are accepted?</summary><p>Either a JSON array of arrays, or one vector per line using numbers separated by spaces, commas or semicolons, with or without square brackets. Every vector must have the same number of dimensions.</p></details>
+<details><summary>When does dot product equal cosine similarity?</summary><p>When both vectors have unit length. Many embedding models return normalised vectors, and the tool tells you when both are of length one.</p></details>
+<details><summary>What does the matrix show?</summary><p>With several vectors it prints cosine similarity for every pair, then lists the best match for each row. When B is empty, a vector is not matched with itself.</p></details>
+<details><summary>Can it make embeddings from my text?</summary><p>No. It does not call a model. Get the vectors from your embedding provider or library, then paste them here.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/embedding-cost-calculator/"><span class="link-card__title">Embedding Cost Calculator</span><span class="link-card__desc">Estimate the cost of embedding a corpus: documents x average tokens (or characters / words), re-embedding runs, and vector storage size (dimensions x 4 bytes, plus HNSW overhead estimate). Prices are list prices per 1M tokens at the time of writing and change often: override with &quot;Custom price&quot; and check your provider. Token counts from characters are an approximation (about 4 characters per English token).</span></a></li><li><a class="link-card" href="/en/embedding-token-cost-estimator/"><span class="link-card__title">Embedding Token &amp; Cost Estimator</span><span class="link-card__desc">Estimate tokens, chunk count, API cost and vector storage for embedding your corpus across popular embedding models. Token counts are estimates (characters / ratio) and the price table is a built-in snapshot: override it with your own price.</span></a></li><li><a class="link-card" href="/en/text-statistics/"><span class="link-card__title">Text Statistics &amp; Readability</span><span class="link-card__desc">Averages, lexical diversity, top words, Flesch reading ease (English).</span></a></li><li><a class="link-card" href="/en/llm-token-estimator/"><span class="link-card__title">LLM Token Count Estimator (approximate)</span><span class="link-card__desc">ESTIMATE of token counts for GPT-4o, GPT-4, Claude, DeepSeek and Llama from text, using per-model chars-per-token ratios and a word/punctuation heuristic. No vocabulary is available offline, so counts are approximate (typically within 10-20% for English).</span></a></li><li><a class="link-card" href="/en/rag-chunking-visualizer/"><span class="link-card__title">RAG Chunking Visualizer</span><span class="link-card__desc">See how a document splits into retrieval chunks: fixed window, sentence or recursive (paragraph, line, sentence, word) splitting with size and overlap. Chunks are color coded and overlaps highlighted (recursive and sentence modes overlap by whole segments, so overlap can be 0 when segments are large).</span></a></li><li><a class="link-card" href="/en/average-median-mode/"><span class="link-card__title">Average, Median &amp; Mode</span><span class="link-card__desc">Statistics for a list of numbers.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+ "id": "tailwind-mesh-gradient-generator",
+ "seoTitle": "Free Tailwind v4 Mesh Gradient Generator with CSS Class",
+ "metaDescription": "Create a mesh gradient from your colours and copy one Tailwind v4 bg-[radial-gradient()] class or plain CSS. Seeded, repeatable, live preview.",
+ "intro": "Enter a background colour and a few accent colours and get a ready-to-paste Tailwind class for a soft mesh gradient, plus the same thing as plain CSS.",
+ "why": "Tailwind has no mesh gradient utility, so people hand-write several stacked radial-gradient layers and then fight with underscores in the arbitrary value. This tool lays out one radial blob per accent colour at seeded positions on top of your background colour, and prints a single class with the spaces already escaped as underscores.\n\nThe class was checked by compiling it with the Tailwind v4 compiler, which produced the expected background-image. The same seed always gives the same layout, so a design can be reproduced, and changing the seed shuffles the blob positions. The spread value controls how far each colour reaches before it fades to transparent. Colours must be hex values; for other formats convert them first.",
+ "howTo": [
+  "Enter colours as hex: the first is the background, the rest become blobs.",
+  "Choose a seed and a blob spread.",
+  "Check the preview.",
+  "Copy the Tailwind class or the plain CSS."
+ ],
+ "faq": [
+  {
+   "q": "Does it need Tailwind v4?",
+   "a": "The class uses arbitrary values, which work in Tailwind v3.1 and later as well as v4. Tailwind v4 is what it was tested with."
+  },
+  {
+   "q": "How many colours can I use?",
+   "a": "One background plus up to eight blobs."
+  },
+  {
+   "q": "Can I get the same result later?",
+   "a": "Yes. The positions come from a seeded generator, so the same colours, seed and spread always give identical output."
+  },
+  {
+   "q": "Why hex colours only?",
+   "a": "Keeping one colour syntax keeps the escaped class unambiguous. Convert named, rgb or oklch colours to hex first with the colour converter."
+  }
+ ],
+ "related": [
+  "mesh-gradient-generator",
+  "gradient-generator",
+  "tailwind-v4-color-palette",
+  "tailwind-converter",
+  "palette-generator",
+  "color-converter"
+ ],
+ "keywords": [
+  "tailwind mesh gradient",
+  "tailwind v4 mesh gradient generator",
+  "mesh gradient tailwind class",
+  "tailwind radial gradient background",
+  "css mesh gradient to tailwind"
+ ]
+}

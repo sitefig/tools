@@ -1,0 +1,46 @@
+{
+ "id": "pdf-to-image",
+ "seoTitle": "Free PDF to Image Converter (PNG, JPG, WebP)",
+ "metaDescription": "Convert PDF pages to PNG, JPEG or WebP images in your browser. Choose pages and DPI. Free, no upload, no sign-up.",
+ "intro": "Render pages of a PDF as PNG, JPEG or WebP images at the resolution you choose. The built-in renderer runs in your browser, so the file stays on your device.",
+ "why": "People turn PDFs into images when a slide deck needs a page as a picture, when a form must be uploaded as a screenshot, or when a CMS refuses PDFs but accepts JPEGs. Many online converters ask you to upload the file first, which is a poor idea for contracts, invoices or anything with personal data.\n\nThis tool draws each page onto a canvas inside your browser and saves it as a separate image file. You pick the page range, the DPI, the background colour and the output format. Because nothing is sent anywhere, it also works for confidential documents and on a slow connection.",
+ "howTo": [
+  "Choose a PDF file using the file picker.",
+  "Set the pages you want, for example 1-3,5,7- or leave blank for all, then pick PNG, JPEG or WebP.",
+  "Adjust DPI, background colour and quality if needed, then run the tool.",
+  "Download the generated images, one file per page."
+ ],
+ "faq": [
+  {
+   "q": "How many pages can I convert at once?",
+   "a": "Up to 300 pages in one run. Each page becomes its own image named after the PDF with a page number. Large page counts at high DPI use a lot of memory, so convert in smaller ranges if the browser slows down."
+  },
+  {
+   "q": "Why does a page show a grey box?",
+   "a": "The renderer cannot decode JBIG2, JPEG2000 or CCITT images, so those appear as grey placeholders. Encrypted PDFs and predefined CJK character maps are also unsupported, and fonts that are not embedded fall back to system fonts."
+  },
+  {
+   "q": "What DPI should I use?",
+   "a": "The default is 150, which suits screen use. Use 72 to 96 for small web images and 300 for print. The tool accepts 10 to 600 DPI. Higher values make larger files and take longer to render."
+  },
+  {
+   "q": "Is my PDF uploaded anywhere?",
+   "a": "No. Rendering happens in your browser with a built-in renderer and the images are created locally. Nothing you open is sent to a server."
+  }
+ ],
+ "related": [
+  "pdf-thumbnail-sheet",
+  "images-to-pdf",
+  "pdf-extract-pages",
+  "pdf-info",
+  "image-compressor",
+  "image-format-converter"
+ ],
+ "keywords": [
+  "pdf to image",
+  "pdf to png online",
+  "pdf to jpg free",
+  "convert pdf to webp",
+  "pdf page to image no upload"
+ ]
+}

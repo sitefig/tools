@@ -1,0 +1,46 @@
+{
+ "id": "social-preview",
+ "seoTitle": "Free Social Share Preview for Facebook, X and LinkedIn",
+ "metaDescription": "Preview approximate Facebook, X (Twitter) and LinkedIn link cards from your title, description, URL and image. Free; runs in your browser.",
+ "intro": "Enter title, description, URL and image fields to see approximate Facebook, X and LinkedIn link cards side by side, with warnings about missing fields.",
+ "why": "A link shared with a poor preview gets ignored: no image, a cut-off title or the wrong site name. Platforms each lay cards out differently, so one set of tags looks a little different on Facebook, X and LinkedIn.\n\nThis tool draws approximate cards from the fields you type, using each platform's usual image shape and text clipping, so you can judge the title length and the description at a glance before you publish. It does not load the image or fetch your page, and the cards are approximations because platforms change their layouts and cache old scrapes. Warnings tell you if the title or image is missing or the image URL is not absolute. The preview is built in your browser.",
+ "howTo": [
+  "Edit the key: value fields: title, description, url, image and twitter_card.",
+  "Run the tool to draw the three previews.",
+  "Check how the title and description are clipped on each card.",
+  "Fix the fields or tags, and test the live URL with each platform's own debugger."
+ ],
+ "faq": [
+  {
+   "q": "Are these previews exact?",
+   "a": "No. They approximate common layouts. Platforms change their designs and cache scraped data, so always confirm with the official sharing debuggers after publishing."
+  },
+  {
+   "q": "Does it load my image?",
+   "a": "No. Previews never fetch anything. The image area shows a placeholder with the URL, so it only helps you judge the layout and text."
+  },
+  {
+   "q": "Which fields does it use?",
+   "a": "title, description, url, image and twitter_card. The host name for each card comes from the URL, and the X card layout depends on whether the card is summary or large."
+  },
+  {
+   "q": "Is my content uploaded?",
+   "a": "No. The cards are drawn in your browser and nothing you type is sent anywhere. No account, upload or request to a remote service is involved at any point."
+  }
+ ],
+ "related": [
+  "og-twitter-generator",
+  "meta-analyzer",
+  "meta-tag-generator",
+  "serp-snippet",
+  "opengraph-banner-canvas-generator",
+  "image-resizer"
+ ],
+ "keywords": [
+  "social share preview",
+  "facebook link preview tool",
+  "linkedin post preview",
+  "twitter card preview",
+  "open graph preview free"
+ ]
+}

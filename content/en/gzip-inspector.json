@@ -1,0 +1,45 @@
+{
+  "id": "gzip-inspector",
+  "seoTitle": "Gzip Inspector: Header, CRC-32 and Compression Ratio",
+  "metaDescription": "Read the header of a .gz file (name, time, OS, flags), verify its CRC-32 and size by decompressing in the browser, and see the compression ratio.",
+  "intro": "Check a gzip file's metadata and integrity without a command line.",
+  "why": "The inspector parses the header fields from RFC 1952: flags, modification time, original file name, comment, extra field, compression level hint and operating system. It then decompresses the data with the browser's DecompressionStream, computes the CRC-32 of the result and compares it and the size with the trailer.\n\nBrotli (.br) files cannot be read because browsers do not expose a Brotli decompressor to pages. Files with several members or sizes over 4 GB report the size field modulo 2^32.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose a .gz file.",
+    "Read the header and integrity result.",
+    "Compare the ratio with other compression settings.",
+    "Re-create the file if the CRC does not match."
+  ],
+  "faq": [
+    {
+      "q": "What does a CRC mismatch mean?",
+      "a": "The data was corrupted, truncated or modified after compression."
+    },
+    {
+      "q": "Does it show the original name?",
+      "a": "If the compressor stored one. Many tools, such as gzip -n or servers, omit it."
+    },
+    {
+      "q": "Can it decompress and download?",
+      "a": "It verifies and measures; use the gzip decompress tool to get the content."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "gzip-compress",
+    "gzip-decompress",
+    "file-type-detector",
+    "checksum-crc32-adler32",
+    "file-hash",
+    "zip-inspector"
+  ],
+  "keywords": [
+    "gzip inspector",
+    "gz file header",
+    "verify gzip crc",
+    "gzip ratio"
+  ]
+}

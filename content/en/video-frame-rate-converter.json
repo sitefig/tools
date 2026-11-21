@@ -1,0 +1,45 @@
+{
+ "id": "video-frame-rate-converter",
+ "seoTitle": "Video Frame Rate Converter: Change a Clip to 24, 30 or 60 fps",
+ "metaDescription": "Change the frame rate of a video by sampling it at a new rate. Frames are dropped or repeated, not blended. Private, browser only.",
+ "intro": "Records a video at a target frame rate, such as 24, 30 or 60, by sampling its frames at that rate.",
+ "why": "Some projects need a fixed frame rate. This tool samples the playing video at the target rate, so higher rates repeat frames and lower rates drop them. It does not blend or interpolate, which tools like ffmpeg can do.\n\nNothing is uploaded. The file is decoded by your browser and re-encoded, so quality drops a little and the result is WebM (or MP4 where your browser can record it). It records in real time, so a 60 second clip takes about a minute and the tab must stay visible. The browser controls the exact timing, so check the result in your editor.",
+ "howTo": [
+  "Choose the video.",
+  "Pick the target frame rate.",
+  "Process and wait.",
+  "Download and check it in your project."
+ ],
+ "faq": [
+  {
+   "q": "Will 60 fps look smoother than 30?",
+   "a": "Not if the source is 30. Repeated frames add no new motion."
+  },
+  {
+   "q": "Does it blend frames?",
+   "a": "No. There is no blending or optical flow here."
+  },
+  {
+   "q": "Is the result exactly the rate I chose?",
+   "a": "Close, but browsers decide the final timing. Verify with the Video Metadata Inspector for MP4 or WebM files."
+  },
+  {
+   "q": "Can I go lower to save size?",
+   "a": "Yes. 15 fps is smaller but choppier."
+  }
+ ],
+ "related": [
+  "video-metadata-inspector",
+  "video-compressor",
+  "video-speed-changer",
+  "video-resizer",
+  "video-format-converter",
+  "video-to-gif"
+ ],
+ "keywords": [
+  "change video frame rate",
+  "video to 24 fps",
+  "convert fps online",
+  "30 to 60 fps video"
+ ]
+}

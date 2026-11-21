@@ -1,0 +1,47 @@
+{
+ "id": "js-format",
+ "seoTitle": "Free JavaScript Formatter & Beautifier Online",
+ "metaDescription": "Free online JavaScript formatter. Beautify minified JS with sensible indentation and spacing, using a token-based approach. Runs in your browser.",
+ "intro": "Beautify JavaScript with consistent indentation and spacing. It works on tokens rather than a full syntax tree, so it is fast and tolerant but not as thorough as a full code formatter.",
+ "why": "Minified scripts from a CDN, a bookmarklet or a bug report are unreadable, and reading them is often the quickest way to find out what a library actually does. Re-indenting turns a single line into code you can follow.\n\nThis formatter puts statements on separate lines, indents blocks, and spaces operators and keywords sensibly, while leaving strings, regular expressions and template literals untouched. It reads tokens rather than building a syntax tree, which means it copes with fragments and slightly broken code, but its decisions are simpler than those of a tool like Prettier. It does not undo renaming done by a minifier, so variable names stay short. Nothing is uploaded; the formatting happens in your browser.",
+ "howTo": [
+  "Paste your JavaScript into the input box.",
+  "Choose the indent: 2, 4 or 8 spaces, or a tab.",
+  "Read the beautified code in the output.",
+  "Copy it into your editor."
+ ],
+ "faq": [
+  {
+   "q": "Is it as good as Prettier?",
+   "a": "No. It uses tokens, not a full parse, so it applies simpler rules and will not match the style or line wrapping of a dedicated formatter. It is meant for making code readable quickly."
+  },
+  {
+   "q": "Does it change what the code does?",
+   "a": "It should not. Only whitespace and line breaks change. Strings, regular expressions and template literals are kept intact. Test any code you plan to run."
+  },
+  {
+   "q": "Can it restore original variable names?",
+   "a": "No. If a minifier shortened names to a, b and c, the formatter cannot recover them. It only restores layout."
+  },
+  {
+   "q": "Does it support modern syntax?",
+   "a": "Common modern syntax such as arrow functions, async and await, template literals and optional chaining is handled. Very new or unusual syntax may be spaced imperfectly."
+  }
+ ],
+ "related": [
+  "js-minify",
+  "html-format",
+  "css-format",
+  "json-format",
+  "sql-format",
+  "regex-tester"
+ ],
+ "keywords": [
+  "javascript formatter online",
+  "js beautifier",
+  "format javascript online",
+  "free js formatter",
+  "unminify javascript",
+  "javascript prettifier"
+ ]
+}

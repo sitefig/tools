@@ -1,0 +1,46 @@
+{
+  "id": "responsive-breakpoint-previewer",
+  "seoTitle": "Free Responsive Breakpoint Previewer for HTML and CSS",
+  "metaDescription": "Render your HTML and CSS at several viewport widths side by side to test media queries. Sandboxed, no scripts. Free, runs in your browser.",
+  "intro": "Shows your HTML at several widths at the same time, such as 375, 768, 1024 and 1440 pixels. Each view is a scaled, sandboxed frame so you can compare how media queries change the layout.",
+  "why": "Testing responsive CSS usually means dragging a window edge back and forth, or opening dev tools and switching device presets one by one. It is hard to compare the layouts together or to explain a difference to someone else.\n\nPaste a snippet of HTML with its style block and the tool renders it in a row of frames, one for each width you list. Each frame has the real viewport width, so min-width and max-width media queries fire as they would in a browser, and the frames are scaled down to fit the page. Scripts are blocked, because each frame is sandboxed, so this is for layout and style checks only. Your code stays in your browser.",
+  "howTo": [
+    "Paste your HTML and CSS into the input box.",
+    "Enter the widths to test, separated by commas or spaces.",
+    "Set the frame height in pixels.",
+    "Compare the frames and adjust your CSS."
+  ],
+  "faq": [
+    {
+      "q": "Which widths are accepted?",
+      "a": "Numbers from 100 to 4000 pixels, separated by commas or spaces. The default set is 375, 768, 1024 and 1440. Values outside the range are ignored."
+    },
+    {
+      "q": "Do media queries really trigger?",
+      "a": "Yes. Each frame is rendered at its true width and scaled down afterwards with a transform, so width-based media queries evaluate against the real number, not the scaled size."
+    },
+    {
+      "q": "Why do scripts and links not work?",
+      "a": "The frames are sandboxed with all permissions off, so JavaScript, forms and navigation are blocked. That keeps pasted code safe, but means you cannot test scripted behaviour here."
+    },
+    {
+      "q": "Can it load external stylesheets or images?",
+      "a": "The snippet is rendered as given, so absolute URLs may load, but behaviour depends on the sandbox and your network. For reliable results, put the CSS in a style tag and use inline or data URL images."
+    }
+  ],
+  "related": [
+    "css-media-query-builder",
+    "flexbox-generator",
+    "grid-generator",
+    "screen-info",
+    "aspect-ratio-calculator",
+    "html-format"
+  ],
+  "keywords": [
+    "responsive breakpoint previewer",
+    "responsive design tester",
+    "test media queries online",
+    "viewport width preview",
+    "free responsive checker"
+  ]
+}

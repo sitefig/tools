@@ -1,0 +1,45 @@
+{
+ "id": "uuid-v7-timestamp-extractor",
+ "seoTitle": "Free UUID v7 and v1 Timestamp Extractor",
+ "metaDescription": "Read the creation time, version and variant from UUIDs. Supports v7 Unix milliseconds and v1 or v6 100-nanosecond ticks. Free, in your browser.",
+ "intro": "Paste UUIDs to see their version and variant, and read the embedded creation time from version 7, version 1 and version 6 identifiers.",
+ "why": "Time-ordered UUIDs make database keys sort roughly by creation, and they carry a timestamp you can read back. Version 7 stores Unix milliseconds in the first 48 bits, while versions 1 and 6 store 100-nanosecond ticks since 15 October 1582. That is useful when you are investigating when a record appeared, or checking that ids from a service really are ordered by time.\n\nPaste one UUID per line and the tool decodes it locally. Random version 4 ids have no timestamp, and the tool says so. Remember that the time comes from whichever machine generated the id, so a wrong clock gives a wrong date.",
+ "howTo": [
+  "Paste UUIDs, one per line. Braces and hyphens are accepted.",
+  "Read the version, the variant and the decoded time in ISO format.",
+  "Copy the times you need for your investigation."
+ ],
+ "faq": [
+  {
+   "q": "Which versions contain a timestamp?",
+   "a": "Versions 1, 6 and 7. Version 4 is random, and versions 3 and 5 are hashes of names, so those have no time to extract. The tool reports that for them."
+  },
+  {
+   "q": "How precise is a version 7 time?",
+   "a": "It has millisecond precision. The remaining bits hold random data or a counter, so you cannot recover anything finer from the identifier."
+  },
+  {
+   "q": "Can I trust the timestamp?",
+   "a": "Only as far as you trust the generator. Anyone can create a UUID with any time, and a machine with a wrong clock will embed the wrong one."
+  },
+  {
+   "q": "What input formats are accepted?",
+   "a": "Standard 8-4-4-4-12 hyphenated UUIDs, with or without curly braces, in upper or lower case, and 32 hex digits without hyphens. Other lengths produce an error."
+  }
+ ],
+ "related": [
+  "uuid-generator",
+  "uuid-v5-generator",
+  "ulid-generator",
+  "mongodb-objectid-parser",
+  "timestamp-converter",
+  "epoch-batch"
+ ],
+ "keywords": [
+  "uuid v7 timestamp",
+  "extract time from uuid",
+  "uuid v1 date decoder",
+  "free uuid timestamp tool",
+  "decode uuid version variant"
+ ]
+}

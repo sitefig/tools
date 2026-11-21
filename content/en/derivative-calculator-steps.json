@@ -1,0 +1,45 @@
+{
+ "id": "derivative-calculator-steps",
+ "seoTitle": "Derivative Calculator with Steps: Product, Quotient and Chain Rule",
+ "metaDescription": "Differentiate a function of x symbolically and see which rule is used at each level. Free, up to fourth derivatives, runs in your browser.",
+ "intro": "Computes the symbolic derivative of a function of x, lists the rule applied at each level of the expression and gives the simplified result.",
+ "why": "A derivative has a clear recipe, and the useful part for a student is knowing which rule applies where. The tool walks down the expression and names the sum, product, quotient, power, exponential or chain rule at each node, then prints the result.\n\nThe answer is simplified only with simple arithmetic, such as dropping times one and adding zero, so it may look longer than a hand-simplified result. It is checked against an independent computer algebra system on many functions. Derivatives assume radians. You can ask for up to the fourth derivative and for the value at a point.",
+ "howTo": [
+  "Type a function of x, for example x^2 * sin(x) or exp(3x)/x.",
+  "Set the order if you want a higher derivative.",
+  "Optionally enter an x value to get the numeric value there.",
+  "Read the steps and the final result."
+ ],
+ "faq": [
+  {
+   "q": "Which functions are supported?",
+   "a": "Sums, products, quotients, powers (including x^x), sin, cos, tan, their inverses and hyperbolic forms, exp, ln, log, log2, sqrt, cbrt and abs."
+  },
+  {
+   "q": "Is the result fully simplified?",
+   "a": "Not always. It is correct but only lightly simplified."
+  },
+  {
+   "q": "Can it do partial derivatives?",
+   "a": "No, only one variable, x."
+  },
+  {
+   "q": "Why does abs() have a warning?",
+   "a": "The derivative of abs(x) does not exist at zero. The formula given is valid elsewhere."
+  }
+ ],
+ "related": [
+  "integral-calculator-area",
+  "function-grapher-roots",
+  "polynomial-equation-solver",
+  "scientific-calculator-degrees",
+  "latex-to-mathml",
+  "matrix-calculator"
+ ],
+ "keywords": [
+  "derivative calculator with steps",
+  "differentiate online",
+  "chain rule calculator",
+  "product rule calculator"
+ ]
+}

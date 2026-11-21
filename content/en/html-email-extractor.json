@@ -1,0 +1,38 @@
+{
+ "id": "html-email-extractor",
+ "seoTitle": "Email Address Extractor from HTML or Text, Offline",
+ "metaDescription": "Pull every email address out of pasted HTML or text, including mailto links and name [at] domain [dot] com obfuscation. Deduplicated, nothing uploaded.",
+ "intro": "List all email addresses in a page or document you paste, with where each was found.",
+ "why": "Contact pages, exported CRM text and web source often hide addresses in mailto links, plain text and simple obfuscations. This extractor finds all three, removes duplicates, lists the source of each and counts them by domain.\n\nIt only reads the text you paste; it does not crawl sites. Collecting addresses for marketing is regulated (GDPR, ePrivacy, CAN-SPAM): you generally need consent or a clear legitimate interest, so use it for your own pages, audits and data clean-up.",
+ "howTo": [
+  "Paste HTML or text.",
+  "Run the extractor.",
+  "Copy the unique address list."
+ ],
+ "faq": [
+  {
+   "q": "Does it fetch the page for me?",
+   "a": "No. Paste the source; a web page cannot fetch other sites."
+  },
+  {
+   "q": "Does it find obfuscated addresses?",
+   "a": "Yes, forms like name [at] domain [dot] com and (at)/(dot)."
+  },
+  {
+   "q": "Is it legal to use harvested addresses?",
+   "a": "Only with a lawful basis. Check local rules before sending marketing email."
+  }
+ ],
+ "related": [
+  "extract-emails-urls-numbers",
+  "email-validator",
+  "html-url-extractor",
+  "text-obfuscator",
+  "outreach-mail-merge"
+ ],
+ "keywords": [
+  "extract emails from html",
+  "email harvester offline",
+  "find mailto links"
+ ]
+}

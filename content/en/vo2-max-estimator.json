@@ -1,0 +1,45 @@
+{
+ "id": "vo2-max-estimator",
+ "seoTitle": "VO2 Max Estimator (Cooper 12-Minute Test or Heart Rate Ratio)",
+ "metaDescription": "Estimate VO2 max in ml/kg/min from the distance covered in a 12-minute run (Cooper) or from maximum and resting heart rate (Uth).",
+ "intro": "Estimate VO2 max from a Cooper run or from heart rates.",
+ "why": "Pick a method. The Cooper test uses the distance you cover in 12 minutes of hard running on flat ground: VO2 max = (metres - 504.9) / 44.73. The heart rate method uses 15.3 x max heart rate / resting heart rate (Uth et al.).\n\nBoth are field estimates. The heart rate version was fitted on well-trained men, and it is weaker when max heart rate is a guess. The page does not rank the result by age and sex, because the norm tables could not be checked against a source.",
+ "howTo": [
+  "Choose Cooper or the heart rate method.",
+  "Enter the distance or the two heart rates.",
+  "Read the estimate in ml/kg/min.",
+  "Retest under the same conditions to track change."
+ ],
+ "faq": [
+  {
+   "q": "Why no age and sex ranking?",
+   "a": "Published norm tables differ and could not be verified here, so the tool leaves them out rather than guess."
+  },
+  {
+   "q": "Is a watch estimate better?",
+   "a": "Watches use more inputs but are also estimates. Lab testing is the reference."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "heart-rate-zones",
+  "race-time-predictor",
+  "running-pace-calculator",
+  "calories-burned-calculator",
+  "one-rep-max-calculator",
+  "bmr-tdee"
+ ],
+ "keywords": [
+  "VO2 max calculator",
+  "Cooper test calculator",
+  "VO2 max estimate",
+  "Uth formula"
+ ]
+}

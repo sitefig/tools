@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free User-Agent Parser: Browser, OS and Device | Free Tools</title>
+<meta name="description" content="Break User-Agent strings into browser, engine, OS, device, CPU and bot flag, one per line. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/user-agent-parser/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/user-agent-parser/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/user-agent-parser/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free User-Agent Parser: Browser, OS and Device | Free Tools">
+<meta property="og:description" content="Break User-Agent strings into browser, engine, OS, device, CPU and bot flag, one per line. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/user-agent-parser/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free User-Agent Parser: Browser, OS and Device | Free Tools">
+<meta name="twitter:description" content="Break User-Agent strings into browser, engine, OS, device, CPU and bot flag, one per line. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"User-Agent Parser","url":"https://tools.sitefig.net/en/user-agent-parser/","description":"Break User-Agent strings into browser, engine, OS, device, CPU and bot flag, one per line. Free, runs in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste one User-Agent string per line.","Run the tool to parse each line.","Read the browser, engine, OS, device, CPU and bot result under each string.","Check the UA reduction notes before relying on version numbers."],"keywords":"user agent parser, user agent string decoder, detect browser from user agent, user agent analyzer online, identify bot user agent","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Privacy – Browser","item":"https://tools.sitefig.net/en/#privacy-browser"},{"@type":"ListItem","position":3,"name":"User-Agent Parser","item":"https://tools.sitefig.net/en/user-agent-parser/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why are browsers shown as Mozilla/5.0?","acceptedAnswer":{"@type":"Answer","text":"It is historical. Early browsers pretended to be Mozilla for compatibility, and every later browser kept the prefix and added its own tokens. The real browser is found by looking at the later tokens."}},{"@type":"Question","name":"Can I trust the OS and device version?","acceptedAnswer":{"@type":"Answer","text":"Less than before. Chrome and other browsers reduce the User-Agent and freeze parts such as the OS version. Detailed values now come from client hints instead."}},{"@type":"Question","name":"Does it detect every bot?","acceptedAnswer":{"@type":"Answer","text":"No. It flags well-known crawlers and tools by their tokens. Bots can fake a normal User-Agent, so a clean result is not proof of a human visitor."}},{"@type":"Question","name":"Is my data uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Parsing is done in your browser, and the strings you paste are not sent anywhere, stored or matched against any outside database or service."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#privacy-browser">Privacy – Browser</a></li><li><span aria-current="page">User-Agent Parser</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>User-Agent Parser</h1>
+<p class="lede">Paste one or more User-Agent strings to see the browser, rendering engine, operating system, device, CPU and whether it looks like a bot, with notes on UA reduction.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="user-agent-parser" data-module="privacy"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>User-Agent strings are famously messy. Nearly all of them start with Mozilla/5.0 and mention several browsers at once, so reading them by eye in a server log is slow and error prone. Analytics questions like &quot;how much traffic is from Android Chrome&quot; or &quot;is this crawler real&quot; start with decoding them.</p>
+<p>This parser takes a list, one string per line, and splits each into its parts. It also points out when a string comes from a bot and explains where modern browsers have frozen or reduced the information in the header, so the OS version or device model may no longer be accurate. It uses a compact rule set rather than a full database, so treat rare browsers with caution. Parsing happens in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste one User-Agent string per line.</li><li>Run the tool to parse each line.</li><li>Read the browser, engine, OS, device, CPU and bot result under each string.</li><li>Check the UA reduction notes before relying on version numbers.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why are browsers shown as Mozilla/5.0?</summary><p>It is historical. Early browsers pretended to be Mozilla for compatibility, and every later browser kept the prefix and added its own tokens. The real browser is found by looking at the later tokens.</p></details>
+<details><summary>Can I trust the OS and device version?</summary><p>Less than before. Chrome and other browsers reduce the User-Agent and freeze parts such as the OS version. Detailed values now come from client hints instead.</p></details>
+<details><summary>Does it detect every bot?</summary><p>No. It flags well-known crawlers and tools by their tokens. Bots can fake a normal User-Agent, so a clean result is not proof of a human visitor.</p></details>
+<details><summary>Is my data uploaded?</summary><p>No. Parsing is done in your browser, and the strings you paste are not sent anywhere, stored or matched against any outside database or service.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/browser-info/"><span class="link-card__title">Browser Capabilities &amp; Privacy Info</span><span class="link-card__desc">Features, client hints, storage quota, permission states, privacy signals (DNT / GPC) and connection info read from your own browser.</span></a></li><li><a class="link-card" href="/en/browser-fingerprint/"><span class="link-card__title">Browser Fingerprint Test</span><span class="link-card__desc">See what a tracker can read without cookies: UA, screen, canvas/WebGL/audio hashes, fonts, hardware. Computed locally, nothing is sent.</span></a></li><li><a class="link-card" href="/en/http-headers-analyzer/"><span class="link-card__title">HTTP Headers Analyzer</span><span class="link-card__desc">Paste raw response headers: security, caching, compression, SEO issues.</span></a></li><li><a class="link-card" href="/en/user-agent-string-list/"><span class="link-card__title">User-Agent String List</span><span class="link-card__desc">Common browser, bot and tool User-Agent strings. Type a word to filter.</span></a></li><li><a class="link-card" href="/en/robots-tester/"><span class="link-card__title">robots.txt Tester</span><span class="link-card__desc">Test URLs against robots.txt with longest-match, wildcard and $ rules.</span></a></li><li><a class="link-card" href="/en/har-analyzer/"><span class="link-card__title">HAR Privacy Analyzer</span><span class="link-card__desc">Paste HAR JSON: third-party domains, trackers, cookies and Set-Cookie flags, mixed content, large/slow requests, header mismatches. Stays in your browser; HAR files contain secrets so never upload them elsewhere.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+ "id": "vesting-schedule-calculator",
+ "seoTitle": "Vesting Schedule Calculator With Cliff and Monthly Vesting",
+ "metaDescription": "Show vested shares at each month for a cliff plus monthly schedule and the vested amount on a chosen date. Free, private.",
+ "intro": "Calculates vested shares over time for a schedule with a cliff and monthly vesting.",
+ "why": "A typical grant vests over four years with a one-year cliff: nothing vests until the cliff date, then a share for each month vests. The calculator shows the amount at the cliff and later months, rounding down to whole shares.\n\nGive start date, length, cliff and a check date. Plans differ on rounding, step size and acceleration, so follow your grant document for the final figure.",
+ "howTo": [
+  "Enter shares, start date, length and cliff.",
+  "Enter a check date.",
+  "Read the vested amount and the schedule."
+ ],
+ "faq": [
+  {
+   "q": "What happens at the cliff?",
+   "a": "The shares for the cliff period vest at once."
+  },
+  {
+   "q": "Does it handle acceleration?",
+   "a": "No."
+  },
+  {
+   "q": "How are fractions handled?",
+   "a": "Rounded down; the last month vests the rest."
+  }
+ ],
+ "related": [
+  "equity-dilution-calculator",
+  "cap-table-round-simulator",
+  "safe-conversion-calculator",
+  "pre-post-money-valuation-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "vesting schedule calculator",
+  "cliff vesting",
+  "stock option vesting"
+ ]
+}

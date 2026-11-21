@@ -1,0 +1,46 @@
+{
+ "id": "bmr-tdee",
+ "seoTitle": "Free BMR and TDEE Calculator: Daily Calories",
+ "metaDescription": "Estimate your basal metabolic rate with Mifflin-St Jeor and your daily calorie needs by activity level. Free BMR and TDEE calculator, runs in your browser.",
+ "intro": "Enter your sex, age, weight, height and activity level. The tool estimates your basal metabolic rate and maintenance calories, with simple calorie targets for loss or gain.",
+ "why": "If you want to eat to lose, maintain or gain weight, you need a starting figure for how many calories your body burns in a day. Your basal metabolic rate is what you burn at rest; multiply by an activity factor and you get total daily energy expenditure. This page uses the Mifflin-St Jeor equation, a widely used estimate, and lists the five usual activity levels with their multipliers so you can choose honestly. It then shows a mild reduction, a 500 kcal deficit and a 500 kcal surplus as reference points. These are estimates and individual metabolism varies, so adjust after a few weeks of real results. The numbers never leave your device and this is not medical advice.",
+ "howTo": [
+  "Choose your sex and enter your age, weight in kilograms and height in centimetres.",
+  "Select the activity level that best matches a typical week.",
+  "Read your BMR, maintenance calories and the loss and gain targets."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between BMR and TDEE?",
+   "a": "BMR is the energy your body uses at complete rest. TDEE is BMR multiplied by an activity factor, covering movement and exercise, and is the maintenance level for weight stability."
+  },
+  {
+   "q": "How accurate is the estimate?",
+   "a": "Mifflin-St Jeor is reasonable for many adults but can be off by several hundred calories for individuals. Treat it as a starting point and adjust from your own results."
+  },
+  {
+   "q": "Does the tool accept pounds or inches?",
+   "a": "No. Weight must be in kilograms and height in centimetres. Convert first, or use the unit converter on this site."
+  },
+  {
+   "q": "Is a 500 kcal deficit always safe?",
+   "a": "Not necessarily. It is a common reference point and not a recommendation. Pregnancy, medical conditions, age and very low intakes all need personal advice from a health professional."
+  }
+ ],
+ "related": [
+  "macro-calculator",
+  "bmi-calculator",
+  "water-intake",
+  "ideal-weight",
+  "body-fat-navy",
+  "heart-rate-zones"
+ ],
+ "keywords": [
+  "bmr calculator",
+  "tdee calculator",
+  "free calorie calculator",
+  "mifflin st jeor calculator",
+  "daily calorie needs",
+  "maintenance calories calculator"
+ ]
+}

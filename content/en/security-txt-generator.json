@@ -1,0 +1,45 @@
+{
+  "id": "security-txt-generator",
+  "seoTitle": "security.txt Generator (RFC 9116) with Validation",
+  "metaDescription": "Generate /.well-known/security.txt with Contact, Expires, Encryption, Policy and Canonical fields, validated against RFC 9116 rules.",
+  "intro": "Tell security researchers how to report vulnerabilities by publishing a correct security.txt file.",
+  "why": "Enter one or more contacts (mailto:, tel: or https: URIs), an expiry date (defaults to one year ahead, since RFC 9116 recommends less than a year) and optional Encryption, Acknowledgments, Policy, Hiring, Preferred-Languages and Canonical fields. The tool validates the URIs and dates and prints the file with a reminder where to host it.\n\nPlace the file at /.well-known/security.txt over HTTPS as text/plain, and renew the Expires date before it passes. Optionally clearsign it with PGP.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter your security contact and a policy URL if you have one.",
+    "Leave Expires blank for one year, or set a date.",
+    "Copy the output to /.well-known/security.txt.",
+    "Put a reminder in your calendar to renew it."
+  ],
+  "faq": [
+    {
+      "q": "Is security.txt required?",
+      "a": "No, but it is a recognised way to receive reports and is checked by some scanners."
+    },
+    {
+      "q": "Why does it expire?",
+      "a": "So that stale contact details are not trusted. Researchers are told to ignore expired files."
+    },
+    {
+      "q": "Can I use a form instead of email?",
+      "a": "Yes. Use an https: URL as the Contact value."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "security-headers-generator",
+    "csp-builder",
+    "robots-generator",
+    "llms-txt-generator",
+    "privacy-policy-generator",
+    "gdpr-checklist"
+  ],
+  "keywords": [
+    "security.txt",
+    "rfc 9116",
+    "vulnerability disclosure file",
+    "well-known security"
+  ]
+}

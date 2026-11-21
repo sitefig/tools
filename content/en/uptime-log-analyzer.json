@@ -1,0 +1,38 @@
+{
+ "id": "uptime-log-analyzer",
+ "seoTitle": "Uptime Log Analyzer: Availability, Outages, MTTR and SLA Budget",
+ "metaDescription": "Paste monitoring checks (timestamp and up/down or HTTP status) to get availability %, outage list, MTTR and how it compares with 99.9% and 99.99% SLAs.",
+ "intro": "Turn raw monitoring checks into availability, outages and an SLA comparison.",
+ "why": "Uptime monitors log a timestamp and a status for every check. This analyzer treats HTTP 2xx and 3xx or words such as up and ok as up, everything else as down, computes availability, lists each outage with start and length, and reports longest outage, mean time to recover and mean time between failures. A table shows the downtime budget of common SLAs (99%, 99.9%, 99.99%...) and whether the log meets them.\n\nResults depend on what your monitor measures: its location, interval and definition of up. A one-minute interval cannot see a 20-second outage.",
+ "howTo": [
+  "Paste lines like \"2026-10-01T10:05:00Z 200\" or \"... down\".",
+  "Set the check interval, or use 0 to measure the gap between lines.",
+  "Read availability, outages and the SLA table."
+ ],
+ "faq": [
+  {
+   "q": "Which timestamp formats work?",
+   "a": "ISO 8601 and \"YYYY-MM-DD HH:MM:SS\"."
+  },
+  {
+   "q": "How is availability counted?",
+   "a": "Each check represents one interval; time in failing intervals counts as down."
+  },
+  {
+   "q": "Does it contact my site?",
+   "a": "No, it analyses the log you paste."
+  }
+ ],
+ "related": [
+  "access-log-analyzer",
+  "bandwidth-download-time",
+  "http-status-reference",
+  "cron-explainer",
+  "business-days"
+ ],
+ "keywords": [
+  "uptime calculator",
+  "sla downtime budget",
+  "mttr outage report"
+ ]
+}

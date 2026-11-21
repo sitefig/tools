@@ -1,0 +1,43 @@
+{
+ "id": "plain-language-checker",
+ "seoTitle": "Plain Language Checker: Complex Words, Long Sentences, Passive Voice",
+ "metaDescription": "Paste English text to find words with simpler alternatives, long sentences and passive phrases, with a simplified word-swap version.",
+ "intro": "Flags complex words, long sentences and passive phrases in English text.",
+ "why": "Plain language helps readers with low literacy, cognitive disabilities, or a second language.\n\nThe tool uses a list of about 120 word pairs, a sentence length limit and a rough passive pattern. It shows a version with only the word swaps, which may need grammar fixes. It does not understand meaning and is for English only.",
+ "howTo": [
+  "Paste your text.",
+  "Set the long sentence limit.",
+  "Review the word swaps and sentences.",
+  "Rewrite in your own words."
+ ],
+ "faq": [
+  {
+   "q": "Is this a readability score?",
+   "a": "No. Use the Readability Scores tool for that."
+  },
+  {
+   "q": "Why can the swaps be wrong?",
+   "a": "Word-for-word replacement ignores grammar and context."
+  },
+  {
+   "q": "Does it cover legal terms?",
+   "a": "Keep terms your readers need."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "readability",
+  "text-statistics",
+  "transcript-cleaner",
+  "wcag-success-criteria-explorer",
+  "text-cleaner"
+ ],
+ "keywords": [
+  "plain language checker",
+  "simplify text",
+  "jargon checker"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "font-file-inspector",
+ "seoTitle": "Font File Inspector: Names, Metrics, Features and Glyphs",
+ "metaDescription": "Open a TTF, OTF or WOFF file to read its names, metrics, OpenType features, variation axes and covered characters. Free, local.",
+ "intro": "Reads a font file in your browser and shows its family and license strings, metrics, OpenType feature tags, variable axes and the characters it maps. Tick a feature to see it on a sample line.",
+ "why": "Before you use a font you want to know what it contains: how many glyphs, which languages it can type, whether it has ligatures, small caps or variable axes, and what its license says. The tool parses the sfnt tables itself (name, head, hhea, OS/2, maxp, post, cmap, GSUB, GPOS, fvar) and shows them as text plus a clickable character grid.\n\nWOFF files are unpacked in the browser. WOFF2 uses Brotli, which scripts cannot decode, so those files are not supported here. The tool reads but never changes the file.",
+ "howTo": [
+  "Choose a .ttf, .otf or .woff file.",
+  "Read the report: names, license, metrics, features, tables.",
+  "Browse the character grid and click one to copy it.",
+  "Tick feature tags to see their effect on the sample line."
+ ],
+ "faq": [
+  {
+   "q": "Why is WOFF2 not supported?",
+   "a": "WOFF2 needs Brotli decoding and browsers do not expose that to scripts. Convert it with a desktop tool first."
+  },
+  {
+   "q": "What do the metrics mean?",
+   "a": "Values are in font units. Divide by units per em to get a ratio of the font size."
+  },
+  {
+   "q": "Does the feature list show all features?",
+   "a": "It lists the feature tags found in GSUB and GPOS. Some are hidden from the toggles, such as kerning pairs and contextual ones, that work automatically."
+  },
+  {
+   "q": "Is the font uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "font-subsetter",
+  "font-format-converter",
+  "variable-font-playground",
+  "font-previewer",
+  "font-loading-snippet-generator",
+  "unicode-character-map"
+ ],
+ "keywords": [
+  "font file inspector",
+  "ttf otf metrics viewer",
+  "opentype features viewer",
+  "font glyph viewer"
+ ]
+}

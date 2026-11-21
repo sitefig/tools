@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free CSS Specificity Calculator: Which Selector Wins | Free Tools</title>
+<meta name="description" content="Calculate CSS specificity as (a,b,c) for selectors or a whole stylesheet and see which one wins. Free, runs in your browser, nothing is uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/css-specificity-calculator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/css-specificity-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/css-specificity-calculator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free CSS Specificity Calculator: Which Selector Wins | Free Tools">
+<meta property="og:description" content="Calculate CSS specificity as (a,b,c) for selectors or a whole stylesheet and see which one wins. Free, runs in your browser, nothing is uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/css-specificity-calculator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free CSS Specificity Calculator: Which Selector Wins | Free Tools">
+<meta name="twitter:description" content="Calculate CSS specificity as (a,b,c) for selectors or a whole stylesheet and see which one wins. Free, runs in your browser, nothing is uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"CSS Specificity Calculator","url":"https://tools.sitefig.net/en/css-specificity-calculator/","description":"Calculate CSS specificity as (a,b,c) for selectors or a whole stylesheet and see which one wins. Free, runs in your browser, nothing is uploaded.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste selectors, one per line, or a whole stylesheet.","Read the (a,b,c) score in front of each selector.","Look for the line marked as the highest.","Adjust the selectors, then recheck."],"keywords":"css specificity calculator, css selector specificity, which css selector wins, specificity score checker, free specificity tool","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"CSS","item":"https://tools.sitefig.net/en/#css"},{"@type":"ListItem","position":3,"name":"CSS Specificity Calculator","item":"https://tools.sitefig.net/en/css-specificity-calculator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is (a,b,c) read?","acceptedAnswer":{"@type":"Answer","text":"The first number counts ID selectors, the second counts classes, attributes and pseudo-classes, the third counts element types and pseudo-elements. Compare from left to right: any higher a beats any b, and so on."}},{"@type":"Question","name":"How are :not, :is, :where and :has handled?","acceptedAnswer":{"@type":"Answer","text":":not, :is, :matches and :has take the specificity of their most specific argument. :where adds nothing. nth-child pseudo-classes count as one class, plus any selector listed after \"of\"."}},{"@type":"Question","name":"Does the tool consider !important, inline styles or layers?","acceptedAnswer":{"@type":"Answer","text":"No. It scores selectors only. Inline styles, !important declarations, cascade layers and source order are applied separately by the browser and can override these results."}},{"@type":"Question","name":"What does the highest marker mean?","acceptedAnswer":{"@type":"Answer","text":"It points at the selector with the greatest specificity in the list you pasted. If two are equal, the first one is shown, and in a real page the later rule in the source would win."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#css">CSS</a></li><li><span aria-current="page">CSS Specificity Calculator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>CSS Specificity Calculator</h1>
+<p class="lede">Computes the specificity of each CSS selector as an (a,b,c) triple and highlights the highest. Paste selectors one per line, as comma lists, or a full stylesheet.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="css-specificity-calculator" data-module="visual"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>When your CSS rule has no effect, the cause is almost always specificity: a more specific selector somewhere else is winning. Working it out means counting IDs, classes and element names in your head, and remembering that :not() and :is() take their most specific argument while :where() counts for nothing.</p>
+<p>Paste your selectors and each one is scored as three numbers: IDs, then classes, attributes and pseudo-classes, then elements and pseudo-elements. The highest is marked. You can paste a whole stylesheet, and the tool pulls out the selectors for you. Note that it compares selector specificity only, not source order, cascade layers or !important, which can also decide a conflict. It runs in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste selectors, one per line, or a whole stylesheet.</li><li>Read the (a,b,c) score in front of each selector.</li><li>Look for the line marked as the highest.</li><li>Adjust the selectors, then recheck.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How is (a,b,c) read?</summary><p>The first number counts ID selectors, the second counts classes, attributes and pseudo-classes, the third counts element types and pseudo-elements. Compare from left to right: any higher a beats any b, and so on.</p></details>
+<details><summary>How are :not, :is, :where and :has handled?</summary><p>:not, :is, :matches and :has take the specificity of their most specific argument. :where adds nothing. nth-child pseudo-classes count as one class, plus any selector listed after &quot;of&quot;.</p></details>
+<details><summary>Does the tool consider !important, inline styles or layers?</summary><p>No. It scores selectors only. Inline styles, !important declarations, cascade layers and source order are applied separately by the browser and can override these results.</p></details>
+<details><summary>What does the highest marker mean?</summary><p>It points at the selector with the greatest specificity in the list you pasted. If two are equal, the first one is shown, and in a real page the later rule in the source would win.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/css-selector-tester/"><span class="link-card__title">CSS Selector Tester</span><span class="link-card__desc">Paste HTML and a selector to see what matches.</span></a></li><li><a class="link-card" href="/en/css-selector-speed-profiler/"><span class="link-card__title">CSS Selector Speed Profiler</span><span class="link-card__desc">Time querySelectorAll for each selector against your HTML in this browser and rate its structural cost (key selector, descendant depth, :has(), attribute substring matches). Real style-matching cost differs by engine; use this for relative comparison.</span></a></li><li><a class="link-card" href="/en/css-format/"><span class="link-card__title">CSS Formatter</span><span class="link-card__desc">Beautify CSS, including nested rules and @media blocks.</span></a></li><li><a class="link-card" href="/en/css-minify/"><span class="link-card__title">CSS Minifier</span><span class="link-card__desc">Strip comments and whitespace from CSS without touching strings or url().</span></a></li><li><a class="link-card" href="/en/tailwind-converter/"><span class="link-card__title">CSS to Tailwind Converter</span><span class="link-card__desc">Convert CSS declarations to Tailwind utility classes (~80 properties, arbitrary-value fallback) or common Tailwind classes back to CSS.</span></a></li><li><a class="link-card" href="/en/css-to-scss/"><span class="link-card__title">CSS to SCSS Converter</span><span class="link-card__desc">Convert plain CSS to nested SCSS: selectors that extend an earlier selector (descendant, child, sibling, :hover / ::after pseudo, .class, [attr]) are nested with &amp; where appropriate, @media / @supports blocks are kept, and colours used two or more times can be pulled into $color-N variables. Comma-separated selector lists are left untouched. Review the result: nesting depends on rule order.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

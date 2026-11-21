@@ -1,0 +1,44 @@
+{
+ "id": "aria-attribute-validator",
+ "seoTitle": "ARIA Validator: Roles, States, Properties and Required Attributes",
+ "metaDescription": "Check pasted HTML against WAI-ARIA 1.2: unknown roles, abstract roles, bad values, unsupported or missing attributes and broken ID references.",
+ "intro": "Validates roles and aria-* attributes in HTML against WAI-ARIA 1.2.",
+ "why": "ARIA used wrongly is worse than none. Many mistakes are typos or attributes a role does not allow.\n\nThe data comes from the WAI-ARIA 1.2 Recommendation of 6 June 2023: roles, supported and required attributes with inheritance, value types and prohibited naming. It also checks ID references and aria-hidden on focusable elements. It does not know which HTML elements may take which role.",
+ "howTo": [
+  "Paste the HTML.",
+  "Fix errors first.",
+  "Treat review items as hints; scripts may satisfy them later.",
+  "Prefer native elements where you can."
+ ],
+ "faq": [
+  {
+   "q": "Which version of ARIA?",
+   "a": "1.2. Newer draft attributes are noted as info."
+  },
+  {
+   "q": "Does it check DPUB roles?",
+   "a": "No. doc- and graphics- roles are noted but not checked."
+  },
+  {
+   "q": "Why is a role flagged as redundant?",
+   "a": "The element already has that role, for example role=\"button\" on a button."
+  },
+  {
+   "q": "Is the HTML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "a11y-html-check",
+  "accessible-name-calculator",
+  "landmark-region-outline",
+  "form-label-checker",
+  "tab-order-checker",
+  "screen-reader-text-preview"
+ ],
+ "keywords": [
+  "aria validator",
+  "aria attributes checker",
+  "wai-aria 1.2 validation"
+ ]
+}

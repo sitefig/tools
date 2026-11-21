@@ -1,0 +1,43 @@
+{
+ "id": "opengraph-banner-canvas-generator",
+ "seoTitle": "Free Open Graph Image Generator (1200x630)",
+ "metaDescription": "Create a 1200x630 social share image with title, subtitle, brand and gradient, then download it as a PNG. Free, runs in your browser.",
+ "intro": "Type a title, subtitle and brand, pick gradient colours, and draw a 1200 by 630 social share image on a canvas that you can download as a PNG.",
+ "why": "When a link is shared on social networks or in chat apps, the preview image decides whether anyone clicks. A page with no og:image shows a blank card or a tiny logo. Opening a design tool for every blog post is too much work, so many posts go out without one.\n\nThis generator draws a clean banner at the standard 1200 by 630 size with a gradient background, a headline, a subtitle and a brand name. Enter the text, adjust the colours and font size until the title fits, and download the PNG. Upload it to your site and reference it in your Open Graph tags. The image is made on a canvas in your browser, so nothing is uploaded or stored.",
+ "howTo": [
+  "Enter the title text, and optionally a subtitle and brand name.",
+  "Choose the two gradient colours and the text colour.",
+  "Set the title size so the text fits comfortably in the image.",
+  "Download the PNG and reference it in your page's og:image meta tag."
+ ],
+ "faq": [
+  {
+   "q": "Why 1200 by 630 pixels?",
+   "a": "It is the size most platforms recommend for large link previews, with a ratio of about 1.91 to 1. Keep important text away from the edges, because some apps crop the image."
+  },
+  {
+   "q": "Which meta tag uses the image?",
+   "a": "Add an og:image tag with the full URL of the uploaded PNG, and for Twitter cards use twitter:image or let it fall back to the Open Graph value. Use the meta tag generator for the full set."
+  },
+  {
+   "q": "Can I add my logo?",
+   "a": "This tool draws text and gradients only. Download the PNG and add a logo in an image editor, or use the brand field to put your site name on the banner."
+  }
+ ],
+ "related": [
+  "og-twitter-generator",
+  "meta-tag-generator",
+  "social-preview",
+  "image-resizer",
+  "placeholder-image-generator",
+  "image-watermark"
+ ],
+ "keywords": [
+  "open graph image generator",
+  "og image generator online",
+  "social share image maker",
+  "1200x630 banner generator",
+  "create og:image png",
+  "free opengraph banner tool"
+ ]
+}

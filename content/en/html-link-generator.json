@@ -1,0 +1,45 @@
+{
+  "id": "html-link-generator",
+  "seoTitle": "HTML Link Generator: Anchor Tags With rel, target, UTM, mailto",
+  "metaDescription": "Build a correct <a> tag: URL, text, title, new tab with noopener, nofollow, sponsored or ugc rel values, optional UTM parameters, or mailto and tel links.",
+  "intro": "Write link markup without forgetting rel=\"noopener\" or escaping the attributes.",
+  "why": "Enter the destination and text, choose web page, email, phone or download, and optionally a title, new-tab behaviour, a rel value (nofollow, sponsored, ugc) and UTM source, medium and campaign. The output escapes attributes, adds rel=\"noopener\" for new tabs, normalises tel: numbers, validates email addresses and refuses javascript: links.\n\nChoose descriptive link text; \"click here\" tells screen-reader users and search engines nothing. Use rel=\"sponsored\" for paid links and ugc for user-generated content.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the URL, email or phone number.",
+    "Choose the link type, title and rel.",
+    "Optionally add UTM parameters.",
+    "Copy the tag."
+  ],
+  "faq": [
+    {
+      "q": "When do I need rel=\"noopener\"?",
+      "a": "For target=\"_blank\" links; browsers imply it now, but it is still good practice."
+    },
+    {
+      "q": "What is rel=\"sponsored\"?",
+      "a": "A hint to search engines that the link is paid or an affiliate placement."
+    },
+    {
+      "q": "Does it shorten URLs?",
+      "a": "No."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "utm-builder",
+    "utm-bulk-builder",
+    "url-parser",
+    "html-format",
+    "seo-inspector",
+    "internal-link-extractor"
+  ],
+  "keywords": [
+    "html link generator",
+    "anchor tag builder",
+    "a href generator",
+    "nofollow link html"
+  ]
+}

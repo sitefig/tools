@@ -1,0 +1,47 @@
+{
+ "id": "css-blob-generator",
+ "seoTitle": "Free SVG Blob Generator with Seed & CSS Clip-Path",
+ "metaDescription": "Free SVG blob generator. Create random organic blob shapes as an SVG path, repeatable with a seed, plus ready-to-use SVG and CSS clip-path code.",
+ "intro": "Generate organic blob shapes as an SVG path. Set the number of points, randomness, size, fill and seed, then copy ready-to-use SVG markup or a CSS clip-path.",
+ "why": "Soft, irregular shapes break up the rigid rectangles of a page and are popular behind hero images, avatars and section dividers. Drawing a good one in a vector editor takes time, and the control points must join smoothly or the outline looks lumpy.\n\nThis generator builds a closed smooth path from a number of points and a randomness setting. Because it is seeded, the same seed always gives the same blob, so you can step through seeds until one looks right and reproduce it later. The output includes a standalone SVG, the raw path data and a clip-path: path() declaration for fixed-size elements. Note that clip-path path() uses absolute pixels, so the element should have the size you chose. Everything runs in your browser.",
+ "howTo": [
+  "Set the number of points (3 to 12) and the randomness (1 to 10).",
+  "Choose a size in pixels, a fill colour and a seed.",
+  "Change the seed until you like the shape in the preview.",
+  "Copy the SVG markup, the path or the clip-path declaration."
+ ],
+ "faq": [
+  {
+   "q": "What does the seed do?",
+   "a": "It makes the shape repeatable. The same settings and seed always produce the same blob, so you can save the numbers rather than the file and recreate the shape."
+  },
+  {
+   "q": "How do I use the blob as a CSS shape?",
+   "a": "Use the clip-path: path() line on an element with the same width and height as the size you picked. The path is in absolute pixels and does not scale with the element."
+  },
+  {
+   "q": "What do points and randomness change?",
+   "a": "More points give a more complex outline, fewer give a rounder blob. Higher randomness pushes points further from the circle, making the shape more irregular."
+  },
+  {
+   "q": "Can I scale the SVG?",
+   "a": "Yes. The SVG has a viewBox, so you can set any width and height in CSS or HTML and it scales cleanly without losing quality."
+  }
+ ],
+ "related": [
+  "svg-wavy-divider-generator",
+  "clip-path-generator",
+  "svg-path-editor",
+  "css-triangle-generator",
+  "mesh-gradient-generator",
+  "border-radius-generator"
+ ],
+ "keywords": [
+  "svg blob generator",
+  "blob shape generator",
+  "css blob generator",
+  "free blob maker",
+  "organic shape svg generator",
+  "blob clip-path css"
+ ]
+}

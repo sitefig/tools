@@ -1,0 +1,45 @@
+{
+  "id": "css-scroll-driven-animation-generator",
+  "seoTitle": "CSS Scroll-Driven Animation Generator (animation-timeline)",
+  "metaDescription": "Generate CSS for scroll progress bars, fade or slide on enter, parallax and scale effects using animation-timeline: scroll() and view().",
+  "intro": "Add scroll-linked effects with CSS only, wrapped in a support check and reduced-motion media query.",
+  "why": "Choose an effect and a selector (and an animation-range for view timelines). The generator writes the keyframes, the animation declaration and the timeline, inside @supports (animation-timeline: view()) and @media (prefers-reduced-motion: no-preference), so browsers without support show the final state and people who prefer less motion see none.\n\nScroll-driven animations run off the main thread where supported (Chrome and Edge 115+, Safari 26+; Firefox was behind a flag at the time of writing). Check current support before relying on them.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Pick an effect and the selector.",
+    "Adjust the animation range if needed.",
+    "Copy the CSS to your stylesheet.",
+    "Test with reduced motion on and off."
+  ],
+  "faq": [
+    {
+      "q": "Do I need JavaScript?",
+      "a": "No. The timeline is driven by scroll position in CSS."
+    },
+    {
+      "q": "Why the reduced-motion query?",
+      "a": "Scroll effects can cause discomfort; honouring the user's setting is an accessibility requirement."
+    },
+    {
+      "q": "What if the browser does not support it?",
+      "a": "The @supports block is skipped and the page looks normal."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "css-animation-generator",
+    "css-spring-easing-generator",
+    "css-view-transition-generator",
+    "css-container-query-generator",
+    "css-cubic-bezier",
+    "responsive-breakpoint-previewer"
+  ],
+  "keywords": [
+    "scroll driven animations",
+    "animation-timeline",
+    "css scroll progress",
+    "view timeline"
+  ]
+}

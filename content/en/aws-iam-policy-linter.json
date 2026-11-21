@@ -1,0 +1,45 @@
+{
+ "id": "aws-iam-policy-linter",
+ "seoTitle": "Free AWS IAM Policy Linter and Checker",
+ "metaDescription": "Check an AWS IAM policy JSON for wildcards, privilege-escalation actions, missing Version and structural mistakes. Free and runs in your browser.",
+ "intro": "Paste an IAM policy and get a list of findings by severity: wildcard access, risky actions, bad Effect values, conflicting keys and a missing Version.",
+ "why": "IAM policies tend to grow by copy and paste until nobody is sure what they allow. A single Action of star on Resource of star gives full administrator rights, and actions like iam:PassRole or iam:CreatePolicyVersion can let a user escalate their own permissions. These are easy to miss in a long document.\n\nThis linter reads the policy locally and flags the usual problems: missing or old Version, malformed actions, duplicate Sids, Action and NotAction together, wide wildcards, a public Principal without a Condition. It is a quick review aid with a short rule list. It does not replace IAM Access Analyzer or testing in the policy simulator.",
+ "howTo": [
+  "Paste the policy JSON, including the Version and Statement keys.",
+  "Read the findings, each tagged CRITICAL, HIGH, MEDIUM, LOW, WARNING or ERROR.",
+  "Fix the policy, paste it again, and confirm with IAM Access Analyzer before deploying."
+ ],
+ "faq": [
+  {
+   "q": "What does it flag as critical?",
+   "a": "An Allow with Action star on Resource star, which is full administrator access, and a public Principal star with no Condition. Both deserve an immediate rewrite."
+  },
+  {
+   "q": "Does it check against the real AWS action list?",
+   "a": "No. It checks the pattern service:Action and a short list of known risky actions. It cannot tell you whether an action exists or what it really grants."
+  },
+  {
+   "q": "Why does it warn about the Version?",
+   "a": "Without 2012-10-17, policy variables such as aws:username are not evaluated. Older version dates are treated the same way, so set the newer value."
+  },
+  {
+   "q": "Is the policy sent anywhere?",
+   "a": "No, it is analysed in your browser. Even so, replace real account IDs and ARNs you want kept private before sharing screenshots of the results."
+  }
+ ],
+ "related": [
+  "aws-iam-policy-builder",
+  "secret-detector-redactor",
+  "json-validate",
+  "json-format",
+  "rego-snippet-helper",
+  "csp-analyzer"
+ ],
+ "keywords": [
+  "iam policy linter",
+  "aws iam policy checker",
+  "iam policy validator online",
+  "free iam policy analyzer",
+  "iam wildcard check"
+ ]
+}

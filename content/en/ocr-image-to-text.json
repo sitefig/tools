@@ -1,0 +1,47 @@
+{
+ "id": "ocr-image-to-text",
+ "seoTitle": "Free Image to Text (OCR) Online, No Upload",
+ "metaDescription": "Read text from a photo, screenshot or scan with a free OCR that runs entirely in your browser. English, no upload, no sign-up, with optional line confidence.",
+ "intro": "Choose one or more images and get the printed English text back as plain text you can copy or download. The recogniser runs locally on your device, so the pictures never leave it.",
+ "why": "Text trapped in a screenshot, a phone photo of a page or a scanned letter is awkward to reuse: you cannot search it, quote it or paste it into a form. Most online OCR services want the image uploaded to a server first, which is a poor fit for invoices, contracts, ID documents or anything confidential.\n\nThis tool runs a Tesseract-style LSTM recogniser inside your browser tab. The model file is a small download from this site, the pixels stay on your machine, and nothing needs an account. It targets clean printed English text: screenshots, scanned pages, slides and photos of documents. It is not built for handwriting, vertical text or complex magazine layouts, and it says so rather than guessing quietly.",
+ "howTo": [
+  "Choose one or more images (PNG, JPEG, WebP or similar) with the file picker.",
+  "Leave the options on auto, or set invert, threshold, scale and deskew if the result looks wrong.",
+  "Read the recognised text in the output area, tick per-line confidence to spot doubtful lines.",
+  "Copy the text or download it as a .txt file."
+ ],
+ "faq": [
+  {
+   "q": "Is my image uploaded anywhere?",
+   "a": "No. The recogniser and its model run in your browser tab. The only network request is the one-off download of the model file from this site. Your images are read from disk by the page and never sent to a server."
+  },
+  {
+   "q": "Which languages and layouts does it support?",
+   "a": "English with Latin script only, and horizontal text. It auto-corrects small skew up to about four degrees, handles light text on a dark background, and reads simple columns. Tables come out as lines of text, not as a grid."
+  },
+  {
+   "q": "Why are some characters wrong or missing?",
+   "a": "Very small text (under about 10 pixels high), heavy blur, low contrast and 1-bit images are the weak spots. Try the scale-up option, switch the threshold to adaptive, or take the screenshot at a higher zoom level and run it again."
+  },
+  {
+   "q": "How fast is it and does it block the page?",
+   "a": "A dense page of text takes a few seconds on a recent computer, using a small SIMD WebAssembly kernel when the browser supports it and a slower fallback otherwise. The page stays usable between batches of lines but is busy while recognising."
+  }
+ ],
+ "related": [
+  "ocr-line-debug",
+  "image-resizer",
+  "image-format-converter",
+  "image-compressor",
+  "word-counter",
+  "text-diff"
+ ],
+ "keywords": [
+  "image to text online",
+  "free ocr online",
+  "extract text from image",
+  "screenshot to text",
+  "ocr without upload",
+  "photo to text converter"
+ ]
+}

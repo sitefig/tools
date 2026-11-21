@@ -1,0 +1,45 @@
+{
+ "id": "csv-to-parquet-schema",
+ "seoTitle": "Free CSV to Parquet Schema Generator Online",
+ "metaDescription": "Infer column types from a CSV and output a Parquet message schema, PyArrow, Spark StructType or DuckDB CREATE TABLE. Free, runs in your browser.",
+ "intro": "Infers column types from a CSV and prints the Parquet message schema, or the equivalent PyArrow schema, Spark StructType or DuckDB CREATE TABLE. It infers the schema only and does not write a Parquet file.",
+ "why": "Parquet is the standard for analytics storage, but it needs a schema, and writing one from a CSV by hand is dull, especially for dozens of columns. Guessing types badly means failed loads or wasted space. Paste the CSV and this tool scans the values for booleans, 32 and 64-bit integers, doubles, dates, timestamps and strings, and treats columns with empty or NULL cells as optional. You can output the Parquet message definition, a PyArrow schema, a Spark StructType or a DuckDB CREATE TABLE statement. Note that it infers the schema only. It does not create a Parquet file, so you still need a library or engine for the conversion. Your CSV is read in your browser.",
+ "howTo": [
+  "Paste the CSV, with a header row, into the input box.",
+  "Pick the output (Parquet message, PyArrow, Spark StructType or DuckDB) and set a delimiter, or leave it blank to detect it.",
+  "Copy the schema and review types that the sample could not settle."
+ ],
+ "faq": [
+  {
+   "q": "How are types inferred?",
+   "a": "From the values in each column: booleans, integers that fit 32 or 64 bits, doubles, dates, timestamps, otherwise strings. A column with empty or NULL cells becomes optional."
+  },
+  {
+   "q": "Does it create a Parquet file?",
+   "a": "No. It produces the schema text only. Use PyArrow, Spark, DuckDB or another engine to write the file."
+  },
+  {
+   "q": "Why might a column be inferred as string?",
+   "a": "If values are mixed, in unusual formats, or the sample is small, the safest fallback is string. Edit the output if you know the right type."
+  },
+  {
+   "q": "How is the delimiter chosen?",
+   "a": "If you leave it blank, it is detected from the data. You can set it yourself for tab, semicolon or pipe-separated files."
+  }
+ ],
+ "related": [
+  "csv-to-json",
+  "csv-to-sql",
+  "csv-viewer",
+  "json-schema-generator",
+  "sql-on-csv",
+  "csv-column-extractor"
+ ],
+ "keywords": [
+  "csv to parquet schema",
+  "infer parquet schema from csv",
+  "csv to pyarrow schema",
+  "free parquet schema generator",
+  "csv to spark structtype"
+ ]
+}

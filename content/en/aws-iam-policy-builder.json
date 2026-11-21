@@ -1,0 +1,45 @@
+{
+ "id": "aws-iam-policy-builder",
+ "seoTitle": "Free AWS IAM Policy Builder from Plain Lines",
+ "metaDescription": "Compose an AWS IAM policy JSON from simple lines of Effect, actions, resources and an optional condition. Free and runs in your browser.",
+ "intro": "Write each statement as a line of effect, actions, resources and an optional condition, and get a valid IAM policy document in JSON.",
+ "why": "Writing IAM JSON by hand means juggling Statement arrays, single values versus lists, and nested Condition blocks, where one missing bracket produces an opaque error in the console. A compact line format makes the intent easier to see, and the JSON can be generated from it.\n\nHere each line is one statement: Allow or Deny, comma-separated actions, comma-separated resource ARNs and, if you want, a condition such as StringEquals aws:RequestedRegion=eu-west-1. The tool checks the shape of each action and the effect, numbers the statement IDs and sets the 2012-10-17 version. It does not know which actions exist, so run the result through the IAM Policy Linter and the AWS policy simulator.",
+ "howTo": [
+  "Write one statement per line: Effect | actions | resources | optional condition.",
+  "Add a principal only if you need a resource policy such as a bucket policy.",
+  "Copy the JSON into IAM, then lint it and test it in the policy simulator."
+ ],
+ "faq": [
+  {
+   "q": "What does the condition format look like?",
+   "a": "Use Operator key=value, for example StringEquals aws:RequestedRegion=eu-west-1. Several values can be separated with commas. Only one condition per statement is supported."
+  },
+  {
+   "q": "When should I fill in the principal field?",
+   "a": "For resource-based policies such as S3 bucket policies. Leave it blank for identity policies attached to a user, group or role. Use a star for any principal, with care."
+  },
+  {
+   "q": "Does it check that actions really exist?",
+   "a": "No. It checks the service:Action pattern and allows wildcards, but it has no list of AWS actions. A misspelt action will pass, so test in the policy simulator."
+  },
+  {
+   "q": "Is my policy uploaded?",
+   "a": "No. The JSON is built in your browser from what you type. Avoid pasting real account IDs into any page you do not trust."
+  }
+ ],
+ "related": [
+  "aws-iam-policy-linter",
+  "rego-snippet-helper",
+  "terraform-scaffolder",
+  "json-format",
+  "json-validate",
+  "secret-detector-redactor"
+ ],
+ "keywords": [
+  "aws iam policy builder",
+  "iam policy generator",
+  "create iam policy json",
+  "free iam policy editor",
+  "aws policy from text"
+ ]
+}

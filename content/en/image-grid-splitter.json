@@ -1,0 +1,45 @@
+{
+  "id": "image-grid-splitter",
+  "seoTitle": "Image Grid Splitter: Instagram 3x3 Grid and Carousel Tiles",
+  "metaDescription": "Cut an image into equal tiles (3x1 carousel, 3x3 Instagram grid or any rows and columns) and download them numbered in posting order.",
+  "intro": "Split one large picture into pieces for a multi-post grid.",
+  "why": "Choose columns and rows (up to 100 tiles), whether to crop the image to square tiles and the output format. Tiles are cut with the canvas, centred when cropping, and numbered either in reading order or in posting order (highest number first, so the grid reads correctly on a profile).\n\nCheck the platform's current aspect ratios, since grids and crops change. High-resolution tiles keep the original sharpness; tiny tiles from a small image will look soft.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose the image.",
+    "Set columns and rows.",
+    "Pick square crop and format.",
+    "Post the tiles in numeric order."
+  ],
+  "faq": [
+    {
+      "q": "Which numbering should I use?",
+      "a": "Posting order for profile grids: post tile 9 first, tile 1 last."
+    },
+    {
+      "q": "What size should the source be?",
+      "a": "About 1080 pixels per tile gives sharp results."
+    },
+    {
+      "q": "Can I add gaps?",
+      "a": "Not in this version."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "image-cropper",
+    "image-resizer",
+    "image-collage",
+    "image-format-converter",
+    "image-compressor",
+    "placeholder-image-generator"
+  ],
+  "keywords": [
+    "image splitter",
+    "instagram grid maker",
+    "split image into tiles",
+    "carousel splitter"
+  ]
+}

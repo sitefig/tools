@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free HTTP Headers Analyzer: Security, Cache, SEO | Free Tools</title>
+<meta name="description" content="Paste raw HTTP response headers to check security, caching, compression and SEO issues. Free; runs in your browser and uploads nothing.">
+<link rel="canonical" href="https://tools.sitefig.net/en/http-headers-analyzer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/http-headers-analyzer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/http-headers-analyzer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free HTTP Headers Analyzer: Security, Cache, SEO | Free Tools">
+<meta property="og:description" content="Paste raw HTTP response headers to check security, caching, compression and SEO issues. Free; runs in your browser and uploads nothing.">
+<meta property="og:url" content="https://tools.sitefig.net/en/http-headers-analyzer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free HTTP Headers Analyzer: Security, Cache, SEO | Free Tools">
+<meta name="twitter:description" content="Paste raw HTTP response headers to check security, caching, compression and SEO issues. Free; runs in your browser and uploads nothing.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"HTTP Headers Analyzer","url":"https://tools.sitefig.net/en/http-headers-analyzer/","description":"Paste raw HTTP response headers to check security, caching, compression and SEO issues. Free; runs in your browser and uploads nothing.","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Run curl -I https://example.com or copy response headers from developer tools.","Paste the raw headers into the input box.","Run the tool to see the issues grouped by severity.","Fix the findings on your server, then request the headers again to confirm."],"keywords":"http headers analyzer, check response headers, security headers checker, analyse curl -i output, http header checker online","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SEO – Technical","item":"https://tools.sitefig.net/en/#seo-technical"},{"@type":"ListItem","position":3,"name":"HTTP Headers Analyzer","item":"https://tools.sitefig.net/en/http-headers-analyzer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What format does it expect?","acceptedAnswer":{"@type":"Answer","text":"Raw lines such as Name: value, optionally starting with a status line like HTTP/2 200. Repeated headers, such as several Set-Cookie lines, are all read."}},{"@type":"Question","name":"Does it test my live site?","acceptedAnswer":{"@type":"Answer","text":"No. It analyses only the text you paste, so it can be used on private or staging responses. You need to fetch the headers yourself first."}},{"@type":"Question","name":"Which problems does it find?","acceptedAnswer":{"@type":"Answer","text":"Security issues such as missing HSTS or frame protection, cookie flag gaps, version disclosure, caching and compression gaps, redirect types and a few SEO signals. It is a quick review, not a complete audit."}},{"@type":"Question","name":"Are the headers uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Everything runs in your browser and nothing you paste is uploaded, stored or sent to a server, so staging or confidential configuration is safe to use here."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#seo-technical">SEO – Technical</a></li><li><span aria-current="page">HTTP Headers Analyzer</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>HTTP Headers Analyzer</h1>
+<p class="lede">Paste raw response headers, for example from curl -I, to check status, redirects, security headers, cookies, caching, compression and SEO signals, with a list of issues.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="http-headers-analyzer" data-module="seo"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Headers decide a lot about how a page behaves: whether browsers cache it, whether it can be framed, whether a cookie is protected, whether a 302 should have been a 301. You see them with curl or in developer tools, but reading a long block for the one missing line is tedious.</p>
+<p>This analyser parses the headers you paste and lists errors, warnings and notes: server errors and redirects, missing clickjacking protection, short or missing HSTS, unsafe CSP values, version leaks in Server and X-Powered-By, cookies missing flags, absent cache or compression headers, and canonical in a Link header. It then shows the parsed headers. It only judges what you paste, from one request, and does not make requests itself. It runs in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Run curl -I https://example.com or copy response headers from developer tools.</li><li>Paste the raw headers into the input box.</li><li>Run the tool to see the issues grouped by severity.</li><li>Fix the findings on your server, then request the headers again to confirm.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What format does it expect?</summary><p>Raw lines such as Name: value, optionally starting with a status line like HTTP/2 200. Repeated headers, such as several Set-Cookie lines, are all read.</p></details>
+<details><summary>Does it test my live site?</summary><p>No. It analyses only the text you paste, so it can be used on private or staging responses. You need to fetch the headers yourself first.</p></details>
+<details><summary>Which problems does it find?</summary><p>Security issues such as missing HSTS or frame protection, cookie flag gaps, version disclosure, caching and compression gaps, redirect types and a few SEO signals. It is a quick review, not a complete audit.</p></details>
+<details><summary>Are the headers uploaded?</summary><p>No. Everything runs in your browser and nothing you paste is uploaded, stored or sent to a server, so staging or confidential configuration is safe to use here.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/security-headers-generator/"><span class="link-card__title">Security Headers Generator</span><span class="link-card__desc">HSTS, CSP, X-Frame-Options and friends for Apache, NGINX, Netlify, Cloudflare.</span></a></li><li><a class="link-card" href="/en/csp-analyzer/"><span class="link-card__title">CSP Analyzer</span><span class="link-card__desc">Paste a Content-Security-Policy: flags unsafe-inline/eval, wildcards, data:/http: sources, JSONP-able CDN hosts, missing object-src/base-uri/frame-ancestors, typos, and gives a grade.</span></a></li><li><a class="link-card" href="/en/cookie-flag-analyzer/"><span class="link-card__title">Cookie Flag Analyzer</span><span class="link-card__desc">Paste Set-Cookie headers: checks Secure, HttpOnly, SameSite, __Host-/__Secure- prefix rules, lifetime, scope and known tracking cookies.</span></a></li><li><a class="link-card" href="/en/http-status-reference/"><span class="link-card__title">HTTP Status Codes</span><span class="link-card__desc">Searchable reference of HTTP status codes and what they mean.</span></a></li><li><a class="link-card" href="/en/cache-control-builder/"><span class="link-card__title">Cache-Control Header Builder</span><span class="link-card__desc">Compose a Cache-Control header from directives or a preset, with conflict warnings and snippets for nginx, Apache and Express.</span></a></li><li><a class="link-card" href="/en/http-headers-to-json/"><span class="link-card__title">HTTP Headers to JSON</span><span class="link-card__desc">Convert raw HTTP request/response headers (or a status line plus headers) to a JSON object; repeated headers become arrays.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

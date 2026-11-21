@@ -1,0 +1,46 @@
+{
+ "id": "hreflang-generator",
+ "seoTitle": "Free Hreflang Tag Generator for Multilingual Sites",
+ "metaDescription": "Turn language and URL pairs into hreflang link tags and sitemap xhtml:link markup, with checks for codes and x-default. Free, in-browser.",
+ "intro": "Enter one language code and URL per line to generate hreflang link tags for the page head and the equivalent xhtml:link entries for a sitemap, with warnings for invalid codes.",
+ "why": "Hreflang tells search engines which language or regional version of a page to show to which visitors. It is easy to get wrong: codes must be valid, every URL must be absolute, each version must list all the others and itself, and a fallback x-default is recommended.\n\nThis generator takes lines such as en-GB | https://example.com/uk/ and prints the link tags to paste in the head of every version, plus the same set as xhtml:link elements for an XML sitemap. It reports invalid codes, relative URLs and duplicate codes, and reminds you when there is no x-default. It does not check that your pages actually link to each other. For that, use the hreflang validator. The generation is done in your browser.",
+ "howTo": [
+  "Enter one pair per line in the form code | URL, for example nl-BE | https://example.com/nl-be/.",
+  "Add an x-default line for the fallback page.",
+  "Run the tool and fix any errors it lists.",
+  "Paste the full set of tags into the head of every language version, or use the sitemap markup instead."
+ ],
+ "faq": [
+  {
+   "q": "Which language codes are valid?",
+   "a": "Use ISO 639-1 language codes, optionally followed by an ISO 3166-1 region such as en-GB or nl-BE. The tool flags invalid combinations. x-default is the special value for unmatched users."
+  },
+  {
+   "q": "Do I need the tags on every page version?",
+   "a": "Yes. Each version must list all alternates, including itself, and the links must be reciprocal. Missing return links are a common reason hreflang is ignored."
+  },
+  {
+   "q": "Head tags or sitemap, which should I use?",
+   "a": "Either works, and you should not need both. Head tags suit small sites. A sitemap is easier to maintain on large sites, since the markup is in one file."
+  },
+  {
+   "q": "Is my URL list uploaded?",
+   "a": "No. Everything runs in your browser and nothing you paste is uploaded, stored or sent to a server, so staging or confidential configuration is safe to use here."
+  }
+ ],
+ "related": [
+  "hreflang-validator",
+  "sitemap-generator",
+  "canonical-generator",
+  "meta-tag-generator",
+  "redirect-code-generator",
+  "seo-inspector"
+ ],
+ "keywords": [
+  "hreflang generator",
+  "hreflang tag generator free",
+  "multilingual seo tags",
+  "hreflang sitemap generator",
+  "x-default hreflang builder"
+ ]
+}

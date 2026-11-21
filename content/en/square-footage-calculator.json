@@ -1,0 +1,45 @@
+{
+  "id": "square-footage-calculator",
+  "seoTitle": "Square Footage Calculator for Rectangles, Triangles, Circles and More",
+  "metaDescription": "Calculate the area and perimeter of common shapes in feet, inches, metres, centimetres or yards, and see square feet, square metres and square yards.",
+  "intro": "Measure a room, lot or surface and get the area in the unit you need.",
+  "why": "Pick a shape (rectangle, triangle, circle, trapezoid, ellipse or L-shape) and enter its dimensions; the page returns the area and perimeter in your unit and converts to square feet, square metres and square yards. The labels explain what each of A to D means for the chosen shape.\n\nFor flooring, paint or tiles add 5 to 10% for waste and cuts, and measure irregular rooms by splitting them into simple shapes.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Select the shape and unit.",
+    "Enter the dimensions A to D as described.",
+    "Read the area and perimeter.",
+    "Add a waste allowance when buying materials."
+  ],
+  "faq": [
+    {
+      "q": "How do I measure an L-shaped room?",
+      "a": "Use the L-shape option: the bounding rectangle minus the cut-out corner."
+    },
+    {
+      "q": "What is the formula for a circle?",
+      "a": "Area = pi times radius squared."
+    },
+    {
+      "q": "Is the perimeter of an ellipse exact?",
+      "a": "It uses Ramanujan's close approximation."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "concrete-calculator",
+    "roofing-calculator",
+    "tile-calculator",
+    "paint-coverage",
+    "flooring-calculator",
+    "unit-converter"
+  ],
+  "keywords": [
+    "square footage calculator",
+    "area calculator",
+    "room size calculator",
+    "sq ft"
+  ]
+}

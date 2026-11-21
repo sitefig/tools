@@ -1,0 +1,43 @@
+{
+ "id": "matrix-calculator",
+ "seoTitle": "Free Matrix Calculator with Exact Fractions",
+ "metaDescription": "Add, multiply, invert and solve matrices with exact fractions: determinant, rank, RREF, powers and eigenvalues. Free, in your browser.",
+ "intro": "Enter one or two matrices and choose an operation, from multiplication and inverse to determinant, rank, RREF, powers and linear systems, with exact fraction results.",
+ "why": "Matrix homework and engineering checks share the same problem: decimals hide the structure. A determinant that should be zero comes out as 0.0000001, and an inverse full of long decimals is hard to verify. Exact fractions make the answers readable and let you see at once whether a matrix is singular.\n\nThis calculator keeps every entry as a rational number using BigInt, so one third stays one third. You can multiply, transpose, find rank and reduced row echelon form, solve Ax = b and raise a matrix to a power. Eigenvalues use a floating-point method and are labelled as such. It runs in your browser, so your coursework or model data stays on your device.",
+ "howTo": [
+  "Type matrix A with one row per line and entries separated by spaces or commas; fractions like 3/4 are allowed.",
+  "Add matrix B, or the right-hand side vector b for a linear system, if the operation needs it.",
+  "Pick the operation from the list and set the power n for A^n.",
+  "Read the exact result, with a decimal view where it helps."
+ ],
+ "faq": [
+  {
+   "q": "Are the answers exact?",
+   "a": "Yes for everything except eigenvalues. Entries are stored as fractions, so determinants, inverses, RREF and solutions are exact. Eigenvalues come from a floating-point QR iteration and are shown rounded."
+  },
+  {
+   "q": "Why do I get no real eigenvalues?",
+   "a": "The method finds real eigenvalues only. Matrices with complex eigenvalues, such as a rotation, may not converge, and the tool tells you when the iteration did not settle."
+  },
+  {
+   "q": "What happens with a singular matrix?",
+   "a": "The determinant shows zero and the tool reports that the matrix has no inverse. For a linear system you get a message instead of a unique solution when the equations are dependent or inconsistent."
+  }
+ ],
+ "related": [
+  "fraction-calculator",
+  "bignumber-calculator",
+  "scientific-expression-calculator",
+  "average-median-mode",
+  "bitwise-calculator",
+  "unit-converter"
+ ],
+ "keywords": [
+  "matrix calculator",
+  "matrix inverse calculator",
+  "determinant calculator online",
+  "rref calculator",
+  "solve linear equations matrix",
+  "free matrix calculator with fractions"
+ ]
+}

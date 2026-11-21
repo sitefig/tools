@@ -1,0 +1,46 @@
+{
+ "id": "sort-lines",
+ "seoTitle": "Free Sort Lines Tool: Alphabetical, Numeric, Natural",
+ "metaDescription": "Sort lines of text alphabetically, naturally, numerically, by length, in reverse or shuffled. Free; runs in your browser.",
+ "intro": "Paste a list and sort its lines alphabetically, with natural number order, numerically, by length, in reverse order or shuffled. Case sensitivity and empty line removal are optional.",
+ "why": "Sorting a list sounds trivial until the details matter. Alphabetical order puts file10 before file2, numbers stored as text sort wrongly, and capitals can jump ahead of lowercase letters. Spreadsheets can sort, but opening one to tidy a short list is overkill.\n\nThis tool sorts the lines you paste. Alphabetical mode follows locale rules and ignores case unless you ask for it. Natural mode understands numbers inside text, so file2 comes before file10. Numeric mode sorts by the first number in each line, with lines that have none placed last. You can also sort by length, reverse the order or shuffle randomly. Empty lines can be dropped, and sorting can be descending. It all happens in your browser.",
+ "howTo": [
+  "Paste your list into the input box, one item per line.",
+  "Choose a mode: alpha, natural, numeric, length, reverse or shuffle.",
+  "Set descending, case sensitivity and whether to drop empty lines.",
+  "Run the tool and copy the sorted list."
+ ],
+ "faq": [
+  {
+   "q": "What is natural sort?",
+   "a": "It compares the numeric parts of lines as numbers, so file2 sorts before file10. Plain alphabetical order compares character by character and would put file10 first."
+  },
+  {
+   "q": "How does numeric mode treat lines without numbers?",
+   "a": "It sorts by the first number found in each line, ignoring thousands commas. Lines with no number go to the end and are ordered alphabetically among themselves."
+  },
+  {
+   "q": "Is the shuffle truly random?",
+   "a": "It uses a standard Fisher-Yates shuffle with the browser's Math.random, which is fine for ordering a list but not for security-sensitive draws."
+  },
+  {
+   "q": "Is my list uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "dedupe-lines",
+  "remove-empty-lines-trim",
+  "list-converter",
+  "line-numberer",
+  "text-duplicate-line-counter",
+  "random-team-splitter"
+ ],
+ "keywords": [
+  "sort lines online",
+  "alphabetical sorter",
+  "sort list alphabetically",
+  "natural sort online",
+  "sort text lines by length"
+ ]
+}

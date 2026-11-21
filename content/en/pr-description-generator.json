@@ -1,0 +1,38 @@
+{
+ "id": "pr-description-generator",
+ "seoTitle": "Pull Request Description Generator from a git Diff",
+ "metaDescription": "Paste a git diff and get a PR description: files by area, line counts, test and dependency notes, migrations, TODOs added and a review checklist.",
+ "intro": "Generate a structured pull request description from a git diff.",
+ "why": "Good PR descriptions save reviewers time. This generator reads a unified diff and produces a draft: a suggested title, a summary of files grouped by area (source, tests, database, dependencies, config, docs), line counts, review notes (no tests, new dependencies, migrations, large files, TODOs added, secret-looking lines) and a checklist.\n\nIt is rule-based, not an AI: it describes what changed, not why, so always add the reason and your testing. The diff never leaves your browser, which matters for private code.",
+ "howTo": [
+  "Run git diff main...HEAD (or git show) and copy the output.",
+  "Paste it here.",
+  "Copy the draft into the PR and add the why."
+ ],
+ "faq": [
+  {
+   "q": "Does it use AI?",
+   "a": "No, simple rules over the diff."
+  },
+  {
+   "q": "Is my code uploaded?",
+   "a": "No, parsing happens in your tab."
+  },
+  {
+   "q": "Which diff format?",
+   "a": "Unified diffs with \"diff --git\" headers, as printed by git."
+  }
+ ],
+ "related": [
+  "commit-message-suggester",
+  "conventional-commit-generator",
+  "github-issue-pr-template-generator",
+  "git-command-builder",
+  "changelog-generator"
+ ],
+ "keywords": [
+  "pr description generator",
+  "git diff summary",
+  "pull request template from diff"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "fuzzy-search-playground",
+ "seoTitle": "Free Fuzzy Search Playground: Score and Rank Matches",
+ "metaDescription": "Try fuzzy matching on your own list. Subsequence (fzf-style), typo-tolerant edit distance or trigram scoring with matched letters marked. Free, local.",
+ "intro": "Type a query and a list of candidates to see how three fuzzy matching methods rank them, with the matched letters marked.",
+ "why": "Fuzzy search is behind file pickers, command palettes and typo-tolerant search boxes. Different methods behave differently: subsequence matching lets you type \"usrctl\" for user_controller, edit distance forgives typos, and trigram similarity compares overall shape.\n\nUse this page to see how each method treats your own data before you choose one. The scoring here is simple and written for this page. It is not the exact algorithm of fzf or any library, so use it to compare ideas, not to predict another tool's ranking.",
+ "howTo": [
+  "Enter a query.",
+  "Paste candidates, one per line.",
+  "Pick an algorithm and adjust the minimum score or the limit.",
+  "Compare the ranking and the marked letters."
+ ],
+ "faq": [
+  {
+   "q": "Is this the same scoring as fzf?",
+   "a": "No. It is a simplified scheme with bonuses for consecutive letters and word starts. Results are similar in spirit but not identical."
+  },
+  {
+   "q": "When should I use edit distance?",
+   "a": "When users misspell words. Subsequence matching needs every letter present in order, so a typo can cause a miss."
+  },
+  {
+   "q": "How are scores compared across modes?",
+   "a": "They are not. Each mode has its own scale, so only compare scores inside one mode."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "Up to 20000 candidates, each up to 300 characters."
+  }
+ ],
+ "related": [
+  "levenshtein-calculator",
+  "string-similarity-comparer",
+  "text-similarity-checker",
+  "grep-lines",
+  "keyword-list-cleaner",
+  "sort-lines"
+ ],
+ "keywords": [
+  "fuzzy search tester",
+  "fuzzy matching demo",
+  "fzf style scoring",
+  "fuzzy match playground"
+ ]
+}

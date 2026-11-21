@@ -1,0 +1,38 @@
+{
+ "id": "docstring-skeleton-generator",
+ "seoTitle": "JSDoc and Python Docstring Skeleton Generator",
+ "metaDescription": "Paste functions and get JSDoc or Google-style docstring skeletons with parameters, defaults, return and throws filled from the signature.",
+ "intro": "Create documentation comment skeletons from function signatures.",
+ "why": "Consistent doc comments start with consistent structure. This generator reads JavaScript, TypeScript or Python function signatures and writes a JSDoc block or a Google-style docstring with every parameter, default value, return type and thrown error already listed, leaving TODO placeholders for the descriptions only a human can write.\n\nIt is a parser, not an AI: it will not describe what the function does. Regex-based parsing means unusual syntax may need manual correction. The code is processed locally.",
+ "howTo": [
+  "Paste the code.",
+  "Choose JavaScript/TypeScript or Python.",
+  "Paste each block above its function and write the descriptions."
+ ],
+ "faq": [
+  {
+   "q": "Does it write the descriptions?",
+   "a": "No, only the structure; the TODO lines are yours to fill."
+  },
+  {
+   "q": "Which docstring style?",
+   "a": "JSDoc for JS/TS and Google style for Python."
+  },
+  {
+   "q": "Is code uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "unit-test-stub-generator",
+  "json-to-typescript",
+  "code-diff-html",
+  "markdown-preview",
+  "text-to-mermaid-flowchart"
+ ],
+ "keywords": [
+  "jsdoc generator",
+  "python docstring template",
+  "documentation skeleton"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "schema-property-checker",
+ "seoTitle": "Schema.org Property Checker: Find Misspelled Properties",
+ "metaDescription": "Check every JSON-LD property against the Schema.org vocabulary for its type. Flags unknown or misplaced names and suggests the right one. Local.",
+ "intro": "Checks each property in your JSON-LD against the Schema.org vocabulary for the type it sits on. Misspelled, misplaced and superseded properties are flagged with a suggested fix.",
+ "why": "A property that Schema.org does not define for a type is ignored by every consumer, so a typo such as adressLocality quietly removes data. This tool knows which properties belong to which type, including those inherited from parent types, and suggests the closest valid name.\n\nIt also catches properties that exist but are on a different type, like price on a Product instead of on its Offer, and properties marked as superseded by a newer one. It checks names and placement only. It does not judge the values, and it does not know what Google requires; the eligibility checker covers that.",
+ "howTo": [
+  "Paste your JSON-LD or the HTML containing it.",
+  "Read each finding with its path, for example $.address.adressLocality.",
+  "Fix the name, or move the property into the type that defines it.",
+  "Run again to confirm the list is empty."
+ ],
+ "faq": [
+  {
+   "q": "Does it check nested objects?",
+   "a": "Yes, any nested object that has an @type is checked against that type. Nested objects without an @type are skipped because the tool cannot know what they are."
+  },
+  {
+   "q": "Why is a property called unknown when I see it on schema.org?",
+   "a": "It may be in the pending or extension area, or newer than version 29.2, or it may be on another type. The message says where it is defined when it is in the vocabulary."
+  },
+  {
+   "q": "Are custom properties allowed?",
+   "a": "Prefixed names such as ex:foo are listed as information and not checked."
+  },
+  {
+   "q": "Does passing mean Google will show a rich result?",
+   "a": "No. Valid names are only the first step; use the eligibility checker for Google requirements."
+  }
+ ],
+ "related": [
+  "jsonld-syntax-validator",
+  "rich-result-eligibility-checker",
+  "schema-generator",
+  "jsonld-inspector",
+  "schema-deprecation-checker",
+  "schema-markup-diff"
+ ],
+ "keywords": [
+  "schema.org property checker",
+  "invalid schema property",
+  "schema markup validator",
+  "misspelled schema property"
+ ]
+}

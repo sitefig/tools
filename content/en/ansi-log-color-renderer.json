@@ -1,0 +1,44 @@
+{
+ "id": "ansi-log-color-renderer",
+ "seoTitle": "ANSI Escape Code Renderer: Terminal Colours to HTML",
+ "metaDescription": "Render ANSI colour and style codes from terminal logs as coloured HTML, copy the HTML, or strip codes to plain text. Free.",
+ "intro": "Converts SGR escape codes (16, 256 and true colour, bold, underline) to HTML.",
+ "why": "Pasting terminal output into a ticket gives lines full of [31m. This tool renders them as colours so the log reads as it did in the terminal.\n\nIt also repairs lost escape characters, where only [32m is left. Other control sequences, such as cursor movement, are removed, and carriage-return progress lines keep their last state.",
+ "howTo": [
+  "Paste the terminal output.",
+  "Choose preview, HTML source or plain text.",
+  "Leave the repair option on for pasted logs.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Which codes are supported?",
+   "a": "Reset, bold, dim, italic, underline, strikethrough, reverse, 16 colours, 256 colours and true colour."
+  },
+  {
+   "q": "Why is the background dark?",
+   "a": "Terminal palettes are designed for dark backgrounds, so the preview uses one."
+  },
+  {
+   "q": "Is the HTML safe?",
+   "a": "Text is escaped. Only span styles generated from the codes are added."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "ci-build-log-error-extractor",
+  "android-logcat-viewer",
+  "docker-log-viewer",
+  "console-log-cleaner",
+  "html-tag-stripper",
+  "log-line-prettifier"
+ ],
+ "keywords": [
+  "ansi to html",
+  "terminal colors in html",
+  "strip ansi codes"
+ ]
+}

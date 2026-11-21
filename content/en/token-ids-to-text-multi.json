@@ -1,0 +1,46 @@
+{
+  "id": "token-ids-to-text-multi",
+  "seoTitle": "Free Token IDs to Text Converter for Many Tokenizers",
+  "metaDescription": "Convert token ids to text and text to token ids for GPT, DeepSeek, Qwen, Phi, Mistral and other tokenizers. Free, runs in your browser.",
+  "intro": "Decodes a list of token ids into text, or encodes text into ids, with any of the included tokenizers, from OpenAI encodings to DeepSeek, Qwen, Phi-4, Mistral and StarCoder2.",
+  "why": "Open-weight models and their serving tools print token ids all the time, in generation traces, training data dumps, or stop-token settings. Reading them means loading the correct tokenizer in code, which is a chore when you only want to answer a quick question.\n\nPick the encoding, paste the ids in any common list format, and the text appears. Reverse the direction to get the ids for a string, for example the ids of a stop sequence. Special tokens can be allowed or treated as plain text. If your ids end in the middle of a multi-byte character the tool says so. Vocabularies are loaded from this site on first use, and the conversion runs in your browser. The Claude option is the legacy Claude 1/2 tokenizer only.",
+  "howTo": [
+    "Pick an encoding such as deepseek-v3, qwen2.5 or cl100k_base.",
+    "Choose ids-to-text or text-to-ids.",
+    "Paste the ids or the text. Tick the special-tokens option if you want markers to become single ids.",
+    "Copy the result."
+  ],
+  "faq": [
+    {
+      "q": "What does an id mean across encodings?",
+      "a": "Nothing portable. Each tokenizer has its own vocabulary and numbering, so id 1234 stands for different text in each. Always choose the encoding that matches the model that produced the ids."
+    },
+    {
+      "q": "Why do I see odd symbols at the start or end?",
+      "a": "Ids can begin or end inside a multi-byte character, so the bytes cannot be decoded into text. A note appears under the output when this happens. Decode a longer run of ids to complete the character."
+    },
+    {
+      "q": "Does it strip the leading space for Mistral?",
+      "a": "Yes. SentencePiece-style models like Mistral mark a word start with a space symbol, and decoding removes the single leading space they add, as their own decoder does."
+    },
+    {
+      "q": "Is anything sent to a server?",
+      "a": "Only the vocabulary file is fetched from this site, once. The encoding and decoding run in your browser, so your text and ids stay private."
+    }
+  ],
+  "related": [
+    "token-id-decoder",
+    "tokenizer-visualizer-hf",
+    "multi-tokenizer-counter",
+    "gpt-token-counter",
+    "tiktoken-visualizer",
+    "utf8-bytes-viewer"
+  ],
+  "keywords": [
+    "token ids to text",
+    "decode token ids online",
+    "deepseek token ids",
+    "text to token ids",
+    "free tokenizer decoder"
+  ]
+}

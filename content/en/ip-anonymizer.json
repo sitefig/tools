@@ -1,0 +1,41 @@
+{
+ "id": "ip-anonymizer",
+ "seoTitle": "IP Address Anonymizer: Truncate IPv4 and IPv6 in Logs",
+ "metaDescription": "Zero the host part of IPv4 and IPv6 addresses in lists or whole log lines. Choose how many bits to keep. Free, runs locally.",
+ "intro": "Truncates every IPv4 and IPv6 address in your text to a prefix you choose and leaves the rest of the line unchanged.",
+ "why": "Server logs, analytics exports and support tickets often hold full IP addresses. Cutting the last part is a common way to reduce what you keep, for example the last octet of IPv4 and the last 80 bits of IPv6.\n\nThis tool finds addresses in any text, including whole log lines, and zeroes the host bits. It handles compressed IPv6 and IPv4-mapped addresses. The results were checked against Python's ipaddress module on random addresses. A truncated address can still be personal data in some cases, so treat this as one step in a retention plan.",
+ "howTo": [
+  "Paste addresses or log lines.",
+  "Choose how many bits to keep for IPv4 (default 24) and IPv6 (default 48).",
+  "Run it and copy the result.",
+  "Use the result for storage, and delete the originals."
+ ],
+ "faq": [
+  {
+   "q": "What do the defaults mean?",
+   "a": "/24 for IPv4 and /48 for IPv6. Pick what your policy and risk review say."
+  },
+  {
+   "q": "Is a truncated IP still personal data?",
+   "a": "It can be, for example in a small network. It is much less identifying."
+  },
+  {
+   "q": "What about version numbers like 1.2.3.4?",
+   "a": "They look like IPv4 and are changed too. Check the output."
+  }
+ ],
+ "related": [
+  "email-ip-pseudonymizer",
+  "pii-redactor",
+  "log-privacy-workbench",
+  "ip-validator-converter",
+  "ip-subnet-calculator",
+  "ip-address-offline-lookup"
+ ],
+ "keywords": [
+  "anonymize ip address",
+  "truncate ip",
+  "ipv6 anonymization",
+  "ip masking logs"
+ ]
+}

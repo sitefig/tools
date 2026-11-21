@@ -1,0 +1,44 @@
+{
+ "id": "postgres-log-analyzer",
+ "seoTitle": "PostgreSQL Log Analyzer: Slow Queries, Errors, Lock Waits",
+ "metaDescription": "Find slow statements, errors, lock waits, deadlocks and temp files in a PostgreSQL log, grouped by query shape. Free, browser-based.",
+ "intro": "A small pgBadger-style summary: slow queries by shape, grouped errors, lock waits and deadlocks.",
+ "why": "Slow query logs list the same query with different literals. Grouping by shape shows which query costs the most in total, not just the slowest single run.\n\nParsing depends on your log_line_prefix and on log_min_duration_statement or log_duration being set. Multi-line statements are joined. For a real report on large logs use pgBadger.",
+ "howTo": [
+  "Set log_min_duration_statement and collect the log.",
+  "Paste the log or open the file.",
+  "Choose how to rank query shapes.",
+  "Read slow queries, errors and lock waits."
+ ],
+ "faq": [
+  {
+   "q": "How are queries grouped?",
+   "a": "Literals become ? and the text is lower-cased, so two queries that differ only by values share a shape."
+  },
+  {
+   "q": "Why do I see no slow queries?",
+   "a": "Duration lines appear only when log_min_duration_statement or log_duration is on."
+  },
+  {
+   "q": "Is it as good as pgBadger?",
+   "a": "No. It is a quick view for pasted logs, with no charts and no prepared-statement tracking."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "mysql-slow-query-analyzer",
+  "postgres-explain-visualizer",
+  "sql-index-advisor",
+  "sql-explainer",
+  "redis-mongodb-slowlog-parser",
+  "exception-grouper"
+ ],
+ "keywords": [
+  "postgresql log analyzer",
+  "postgres slow query log",
+  "pgbadger alternative browser"
+ ]
+}

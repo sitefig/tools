@@ -1,0 +1,46 @@
+{
+ "id": "image-seo",
+ "seoTitle": "Free Image SEO Audit: Alt Text, Size and Format",
+ "metaDescription": "Audit images in pasted HTML for alt text, width and height, lazy loading, filenames and legacy formats. Free, runs in your browser.",
+ "intro": "Paste HTML to check every image for missing or weak alt text, missing width and height, lazy loading, non-descriptive filenames and old formats, with a summary table.",
+ "why": "Images affect search and speed in small ways that add up. Missing alt text hurts accessibility and image search, missing dimensions cause layout shift, a lazy-loaded hero image slows the first paint, and file names like IMG_2041.jpg tell nobody anything.\n\nThis audit parses the img tags in the HTML you paste and lists a warning or note for each problem, then shows a table with file name, extension, alt text, dimensions, loading mode and whether srcset is present. It looks at alt length and redundant starts like \"image of\", flags the first image if it is lazy, suggests lazy loading for later images and points out JPEG, PNG and GIF files where WebP or AVIF might help. Work is done locally in your browser.",
+ "howTo": [
+  "Copy the page HTML and paste it into the input box.",
+  "Run the tool to list all img tags.",
+  "Review the issues and the table of images.",
+  "Fix alt text, add width and height, set loading and consider newer formats, then re-check."
+ ],
+ "faq": [
+  {
+   "q": "Should every image have alt text?",
+   "a": "Informative images should have a short description. Purely decorative ones should have an empty alt attribute, which the tool counts separately. A missing attribute is the real problem."
+  },
+  {
+   "q": "Why does it warn about lazy loading the first image?",
+   "a": "The first large image is often the Largest Contentful Paint element. Lazy loading it delays the metric, so load above-the-fold images normally and lazy load the rest."
+  },
+  {
+   "q": "Does it check actual image file sizes?",
+   "a": "No. It only reads the HTML, so it cannot know the weight of the files. Use the image compressor or a network panel to check sizes."
+  },
+  {
+   "q": "Is the HTML uploaded?",
+   "a": "No. The audit runs in your browser and nothing you paste is sent to a server. Closing the tab discards the input, so nothing is kept on this site."
+  }
+ ],
+ "related": [
+  "seo-inspector",
+  "image-compressor",
+  "image-format-converter",
+  "image-resizer",
+  "a11y-html-check",
+  "heading-analyzer"
+ ],
+ "keywords": [
+  "image seo audit",
+  "check image alt text",
+  "alt text checker html",
+  "image optimisation checklist",
+  "lazy loading image audit"
+ ]
+}

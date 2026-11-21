@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free PBKDF2 Key Derivation Calculator Online | Free Tools</title>
+<meta name="description" content="Derive a key from a password with PBKDF2 using SHA-1, SHA-256, SHA-384 or SHA-512. Set salt, iterations and length. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/pbkdf2-key-derivation/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/pbkdf2-key-derivation/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/pbkdf2-key-derivation/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free PBKDF2 Key Derivation Calculator Online | Free Tools">
+<meta property="og:description" content="Derive a key from a password with PBKDF2 using SHA-1, SHA-256, SHA-384 or SHA-512. Set salt, iterations and length. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/pbkdf2-key-derivation/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free PBKDF2 Key Derivation Calculator Online | Free Tools">
+<meta name="twitter:description" content="Derive a key from a password with PBKDF2 using SHA-1, SHA-256, SHA-384 or SHA-512. Set salt, iterations and length. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"PBKDF2 Key Derivation","url":"https://tools.sitefig.net/en/pbkdf2-key-derivation/","description":"Derive a key from a password with PBKDF2 using SHA-1, SHA-256, SHA-384 or SHA-512. Set salt, iterations and length. Free, in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the password, then the salt as text.","Set the iteration count, the output length in bytes and the hash function.","Copy the derived key as hex or Base64."],"keywords":"pbkdf2 online, pbkdf2 calculator, pbkdf2 sha256 generator, free key derivation tool, pbkdf2 test vector","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"PBKDF2 Key Derivation","item":"https://tools.sitefig.net/en/pbkdf2-key-derivation/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many iterations should I use?","acceptedAnswer":{"@type":"Answer","text":"More is better until it slows your server too much. Current guidance for PBKDF2-HMAC-SHA256 is several hundred thousand iterations. Follow the latest OWASP recommendation for your hash."}},{"@type":"Question","name":"Is the salt treated as text or bytes?","acceptedAnswer":{"@type":"Answer","text":"As text, encoded as UTF-8. If your library uses a binary salt, the result will differ unless you encode the same bytes in both places."}},{"@type":"Question","name":"Is it safe to use real passwords?","acceptedAnswer":{"@type":"Answer","text":"The calculation runs in your browser and nothing is uploaded, but do not enter live production passwords into pages you do not trust. Use test values for debugging."}},{"@type":"Question","name":"What are the limits?","acceptedAnswer":{"@type":"Answer","text":"Output length is limited to between 1 and 1024 bytes, and iterations must be at least 1. A very high count will make the page pause while it works."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">PBKDF2 Key Derivation</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>PBKDF2 Key Derivation</h1>
+<p class="lede">Derive a key from a password with PBKDF2 using your chosen salt, iteration count, output length and hash, and read the result in hex and Base64.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="pbkdf2-key-derivation" data-module="devx" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>PBKDF2 turns a password into a key by running an HMAC many thousands of times, which makes guessing slower. It appears in WPA2 Wi-Fi, disk and archive encryption, password managers and many framework password hashers, and its test vectors are published in RFCs.</p>
+<p>When you are writing or debugging code that uses it, comparing against a trusted output saves hours: a different iteration count, salt encoding or hash function gives a completely different key. This tool uses the browser WebCrypto implementation, so results match standard libraries. For new password storage, prefer Argon2 or scrypt; PBKDF2 is acceptable only with a high iteration count and a unique salt per user.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the password, then the salt as text.</li><li>Set the iteration count, the output length in bytes and the hash function.</li><li>Copy the derived key as hex or Base64.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How many iterations should I use?</summary><p>More is better until it slows your server too much. Current guidance for PBKDF2-HMAC-SHA256 is several hundred thousand iterations. Follow the latest OWASP recommendation for your hash.</p></details>
+<details><summary>Is the salt treated as text or bytes?</summary><p>As text, encoded as UTF-8. If your library uses a binary salt, the result will differ unless you encode the same bytes in both places.</p></details>
+<details><summary>Is it safe to use real passwords?</summary><p>The calculation runs in your browser and nothing is uploaded, but do not enter live production passwords into pages you do not trust. Use test values for debugging.</p></details>
+<details><summary>What are the limits?</summary><p>Output length is limited to between 1 and 1024 bytes, and iterations must be at least 1. A very high count will make the page pause while it works.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/argon2-hash/"><span class="link-card__title">Argon2d / Argon2i / Argon2id</span><span class="link-card__desc">Hand-written Argon2 (RFC 9106, v1.3) with memory, iterations, parallelism, tag length, secret and associated data. Raw hex or PHC string. Memory capped at 64 MiB; the UI stays responsive.</span></a></li><li><a class="link-card" href="/en/scrypt-kdf/"><span class="link-card__title">scrypt Key Derivation</span><span class="link-card__desc">Hand-written scrypt (RFC 7914) on PBKDF2-HMAC-SHA256 and Salsa20/8. Memory 128*N*r capped at 64 MiB; yields to the UI while working.</span></a></li><li><a class="link-card" href="/en/hkdf-derive/"><span class="link-card__title">HKDF Key Derivation (RFC 5869)</span><span class="link-card__desc">HKDF extract-and-expand with SHA-1/256/384/512 from input key material, salt and info.</span></a></li><li><a class="link-card" href="/en/bcrypt-generator/"><span class="link-card__title">Bcrypt Hash Generator</span><span class="link-card__desc">Hash passwords with bcrypt ($2a/$2b, cost 4-14) entirely in your browser. One password per line. Only the first 72 bytes count (bcrypt limit). Cost 12 takes a second or so.</span></a></li><li><a class="link-card" href="/en/hmac-generator/"><span class="link-card__title">HMAC Generator</span><span class="link-card__desc">HMAC with MD5, SHA-1, SHA-256, SHA-384 or SHA-512; hex and Base64 output.</span></a></li><li><a class="link-card" href="/en/argon2-parameter-tuner/"><span class="link-card__title">Argon2 Parameter Tuner</span><span class="link-card__desc">Pick Argon2id memory, iterations and parallelism for a target hashing time and memory budget. A calculator, not a benchmark: it does not run Argon2; calibrate the throughput value by timing one hash in your stack.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

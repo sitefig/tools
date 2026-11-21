@@ -1,0 +1,47 @@
+{
+ "id": "string-length-bytes",
+ "seoTitle": "Free String Length and Byte Size Counter Online",
+ "metaDescription": "Count characters, code points, graphemes, words, lines and the byte size of text in UTF-8, UTF-16 and UTF-32. Free and runs in your browser.",
+ "intro": "Paste text to see its length in UTF-16 units, code points and user-perceived characters, plus its size in bytes under UTF-8, UTF-16 and UTF-32, with word and line counts.",
+ "why": "\"How long is this string?\" has several answers. A database column limit counts bytes, a tweet or form field counts characters, JavaScript's .length counts UTF-16 units, and a user counts what they can see. They disagree as soon as accents, emoji or combined characters appear.\n\nThis counter shows all of them side by side, so you can see why a 5-letter name overflows a 5-byte column, or why a single family emoji reports a length of 8. It also gives UTF-8, UTF-16 and UTF-32 byte sizes, word and line counts. It runs locally, so unpublished text and customer data stay private.",
+ "howTo": [
+  "Paste or type your text into the box.",
+  "Read the counts: UTF-16 units, code points, graphemes, words and lines.",
+  "Compare the byte sizes for UTF-8, UTF-16 and UTF-32.",
+  "Use the number that matches your limit, such as bytes for a column or graphemes for a visible length."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between code points and graphemes?",
+   "a": "A code point is one Unicode value. A grapheme is what a reader sees as one character, which can need several code points, such as an e plus an accent mark or a family emoji built from joined people."
+  },
+  {
+   "q": "Why is JavaScript's length different?",
+   "a": "JavaScript counts UTF-16 units. Characters above U+FFFF, including most emoji, take two units, so \"😀\".length is 2 although it is a single code point and a single visible character."
+  },
+  {
+   "q": "Which byte count should I check against a database limit?",
+   "a": "Check how your database counts. Some column types limit characters and others limit bytes, and the two differ for accented letters and emoji. Read the documentation for your column type, then compare against the matching number shown here."
+  },
+  {
+   "q": "Are grapheme counts always available?",
+   "a": "They use the browser's Intl.Segmenter. In an older browser without it, the tool falls back to the code point count, so the two numbers will be equal."
+  }
+ ],
+ "related": [
+  "word-counter",
+  "utf8-bytes-viewer",
+  "char-info",
+  "text-statistics",
+  "zero-width-detector",
+  "llm-token-estimator"
+ ],
+ "keywords": [
+  "string length calculator",
+  "utf-8 byte size of string",
+  "character count with bytes",
+  "free string byte counter",
+  "grapheme count online",
+  "utf-16 length of text"
+ ]
+}

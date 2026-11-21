@@ -1,0 +1,45 @@
+{
+ "id": "prisma-schema-generator",
+ "seoTitle": "Free Prisma Schema Generator from Simple Models",
+ "metaDescription": "Write a schema.prisma from a compact model syntax, with foreign keys and back-references added for you. Free, runs in your browser.",
+ "intro": "Describe each model as one line of fields and get a schema.prisma with datasource, generator, relation fields and the matching foreign key columns.",
+ "why": "Prisma relations take a surprising amount of typing: the relation field, the scalar foreign key, the @relation arguments and the list on the other side all have to agree. Forgetting one produces a validation error that is clear but tedious to fix.\n\nWith this tool you write something like User: id:int pk, email:string unique, posts:Post[] and it adds the author relation, authorId and references on the Post side. You pick the provider, and for MongoDB it uses ObjectId mapping. It supports one relation per pair of models, so named relations need hand edits. Run prisma format and prisma validate on the result.",
+ "howTo": [
+  "Write one model per line as Name: field:type modifiers, separated by commas.",
+  "Choose the database provider, the env variable for the URL and whether to add snake_case @@map names.",
+  "Copy the schema into schema.prisma and run prisma validate."
+ ],
+ "faq": [
+  {
+   "q": "What modifiers can I use?",
+   "a": "pk, unique, now, updatedAt, default=value, map=name and cuid for string ids. A question mark after a type makes it optional, and square brackets make a list."
+  },
+  {
+   "q": "How are relations written?",
+   "a": "Name another model as a type. A list such as posts:Post[] creates the foreign key on Post. A single such as author:User creates authorId on that model, and a list is added to User if missing."
+  },
+  {
+   "q": "Does it support composite keys or enums?",
+   "a": "No. Only a single pk per model, scalar types and relations are generated. Add enums, composite ids and named relations by hand."
+  },
+  {
+   "q": "Which types can I use?",
+   "a": "int, string, bool, float, datetime, json, bigint, decimal and bytes, in any letter case. Any other name must match one of your models."
+  }
+ ],
+ "related": [
+  "prisma-to-sql",
+  "sql-to-prisma",
+  "prisma-seed-generator",
+  "json-to-pydantic",
+  "sql-to-drizzle",
+  "mongodb-aggregate-builder"
+ ],
+ "keywords": [
+  "prisma schema generator",
+  "generate schema.prisma",
+  "prisma model builder",
+  "free prisma schema tool",
+  "prisma relations helper"
+ ]
+}

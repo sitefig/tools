@@ -1,0 +1,46 @@
+{
+ "id": "audio-db-converter",
+ "seoTitle": "Free Audio dB Converter - dBu, dBV, dBFS, Volts",
+ "metaDescription": "Convert between dBFS, dBu, dBV, volts RMS and voltage or power ratios with an adjustable full-scale reference. Free, runs in your browser.",
+ "intro": "Enter a value in dBFS, dBu, dBV, RMS volts or a voltage or power ratio and see it expressed in all the other units.",
+ "why": "Audio levels are quoted in several decibel scales, and mixing them up leads to distortion or noise. Pro gear talks in dBu, consumer gear in dBV, converters in dBFS, and datasheets in volts. Moving between them means remembering that 0 dBu is 0.7746 volts, 0 dBV is 1 volt, and that the dBFS figure depends on how your converter is aligned.\n\nThis converter does the arithmetic. Pick the unit of your input and the tool prints volts RMS, millivolts, dBu, dBV, dBFS plus peak and peak-to-peak voltage. Because 0 dBFS corresponds to a different voltage on each interface, you can set that alignment, which defaults to 18 dBu. Ratio modes convert voltage and power ratios to decibels. The calculation is done locally in your browser.",
+ "howTo": [
+  "Enter the value you want to convert.",
+  "Choose its unit: dBFS, dBu, dBV, volts (RMS), voltage ratio or power ratio.",
+  "Set what 0 dBFS equals in dBu for your converter.",
+  "Read the converted values in the output."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between dBu and dBV?",
+   "a": "Both are voltage levels. dBu is referenced to 0.7746 V RMS, the voltage that gives 1 mW into 600 ohms, while dBV is referenced to 1 V RMS. So 0 dBV equals about 2.21 dBu."
+  },
+  {
+   "q": "Why do I need to set the dBFS reference?",
+   "a": "Digital full scale maps to different analogue voltages on different devices, commonly between +18 and +24 dBu on pro interfaces. Enter your converter's alignment from its manual to get meaningful dBFS conversions."
+  },
+  {
+   "q": "Why are voltage and power ratios different?",
+   "a": "Decibels use 20 times the log of a voltage ratio but 10 times the log of a power ratio, because power goes with the square of voltage. A voltage ratio of 2 is 6 dB, while a power ratio of 2 is 3 dB."
+  },
+  {
+   "q": "Does it work with negative values?",
+   "a": "Decibel values may be negative, for example -18 dBFS. Volts and ratios must be above zero, otherwise the tool shows an error because the logarithm is undefined."
+  }
+ ],
+ "related": [
+  "decibel-meter",
+  "tone-generator",
+  "audio-trimmer",
+  "unit-converter",
+  "bitwise-calculator",
+  "ieee754-converter"
+ ],
+ "keywords": [
+  "db converter",
+  "dbu to dbv calculator",
+  "dbfs to volts",
+  "audio level converter",
+  "free decibel calculator"
+ ]
+}

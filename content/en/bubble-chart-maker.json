@@ -1,0 +1,44 @@
+{
+ "id": "bubble-chart-maker",
+ "seoTitle": "Bubble Chart Maker: X, Y and Size as Circle Area",
+ "metaDescription": "Plot three numeric columns as bubbles where x and y set the position and the third value sets the area. Free SVG with table.",
+ "intro": "Draws bubbles at x and y with area proportional to a third value, with optional labels.",
+ "why": "A bubble chart adds a third number to a scatter plot. Area, not diameter, follows the value, which is the honest way to scale circles.\n\nLabels print inside or next to bubbles. Overlaps are drawn with translucent fill, biggest first, so small bubbles stay visible. The table under the chart lists all values for exact reading.",
+ "howTo": [
+  "Paste rows x, y, size, label (label optional).",
+  "Choose whether to print labels.",
+  "Set the chart size and title.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Is size area or diameter?",
+   "a": "Area."
+  },
+  {
+   "q": "Negative sizes?",
+   "a": "Not allowed."
+  },
+  {
+   "q": "Can I add colours by group?",
+   "a": "No, colours cycle per row."
+  },
+  {
+   "q": "Limit?",
+   "a": "500 bubbles."
+  }
+ ],
+ "related": [
+  "scatter-plot-maker",
+  "bar-chart-maker",
+  "heatmap-maker",
+  "parallel-coordinates-plot",
+  "csv-to-chart",
+  "statistics-calculator"
+ ],
+ "keywords": [
+  "bubble chart maker",
+  "bubble chart three variables",
+  "svg bubble plot"
+ ]
+}

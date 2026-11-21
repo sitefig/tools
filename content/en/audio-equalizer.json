@@ -1,0 +1,45 @@
+{
+ "id": "audio-equalizer",
+ "seoTitle": "Audio Equalizer: 7-Band EQ for Files, Export WAV",
+ "metaDescription": "Apply a 7-band equalizer from 100 Hz to 8 kHz to an audio file, with presets for bass boost, voice clarity and more. Free, private, exports WAV.",
+ "intro": "Boosts or cuts seven frequency bands of an audio file and saves the processed result as WAV. Presets cover common jobs, or set each gain yourself.",
+ "why": "A muddy voice recording, a thin laptop speaker mix or a harsh cymbal can often be fixed with a few decibels at the right frequency. A graphic equalizer gives you those handles without a full editor.\n\nThe two outer bands are shelf filters, and the five inner bands are peaking filters about one octave wide, computed with the standard RBJ biquad formulas. Neighbouring bands overlap, so a single band never acts alone. Raising several bands adds loudness and can clip, so the tool can lower the output gain automatically.",
+ "howTo": [
+  "Choose an audio file.",
+  "Pick a preset, or choose \"custom\" and enter gains for each band.",
+  "Keep \"lower the gain if the result would clip\" ticked.",
+  "Press Run, listen, and download the WAV."
+ ],
+ "faq": [
+  {
+   "q": "How much gain is safe?",
+   "a": "Stay within about 6 dB per band. Large boosts amplify noise and can distort."
+  },
+  {
+   "q": "Why does the 100 Hz shelf show only half the gain at 100 Hz?",
+   "a": "A shelf reaches its full gain about an octave past its corner frequency. At the corner it is at half the gain in decibels."
+  },
+  {
+   "q": "Can I cut mains hum?",
+   "a": "Not precisely. The bands are one octave wide; a notch filter would be narrower."
+  },
+  {
+   "q": "Is it the same as a live equalizer?",
+   "a": "No. This processes the file and exports it. It does not play through an equalizer in real time."
+  }
+ ],
+ "related": [
+  "loudness-normalizer",
+  "audio-noise-reducer",
+  "spectrogram-viewer",
+  "audio-spectrum-analyzer",
+  "vocal-remover-center-cancel",
+  "audio-fade-editor"
+ ],
+ "keywords": [
+  "online audio equalizer",
+  "equalize mp3 file",
+  "bass boost audio file",
+  "eq audio online"
+ ]
+}

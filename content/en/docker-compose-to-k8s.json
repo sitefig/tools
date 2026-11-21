@@ -1,0 +1,45 @@
+{
+ "id": "docker-compose-to-k8s",
+ "seoTitle": "Free Docker Compose to Kubernetes Manifest Converter",
+ "metaDescription": "Convert a docker-compose.yml into Kubernetes Deployments, Services, PersistentVolumeClaims and Secrets. Free, runs in your browser, nothing uploaded.",
+ "intro": "Converts a docker-compose.yml into Kubernetes YAML: a Deployment per service, Services for ports, PersistentVolumeClaims for named volumes and optionally a Secret. Unsupported features are listed as NOTE comments.",
+ "why": "Compose is the easy way to describe a multi-container app on one machine, and when it is time to move to Kubernetes the manifests have to be rewritten. Each service needs a Deployment, ports need a Service, named volumes need claims, and secrets should not sit in plain environment variables. This tool drafts all of that from your compose file: images, commands, environment, replicas and resource limits from deploy.resources, a healthcheck turned into a liveness probe, and optional Secrets for variables whose names look sensitive. Things with no direct equivalent, such as depends_on, build, env_file and bind mounts, are noted as comments instead of being silently dropped. Treat the result as a starting point. It runs in your browser.",
+ "howTo": [
+  "Paste your docker-compose.yml into the input box.",
+  "Set a namespace, the Service type for published ports and the PVC size, and choose whether to create a Secret.",
+  "Read the NOTE comments, adjust the manifests and apply them to a test cluster first."
+ ],
+ "faq": [
+  {
+   "q": "What is converted?",
+   "a": "Services become Deployments with image, command, environment, replicas and resources. Published or exposed ports become Services. Named volumes become PersistentVolumeClaims. A healthcheck becomes a livenessProbe."
+  },
+  {
+   "q": "What is not converted?",
+   "a": "depends_on, build, env_file and bind mounts have no direct equivalent, so they are listed as NOTE comments. You must replace them, for example with an image build pipeline and ConfigMaps."
+  },
+  {
+   "q": "How does the Secret option work?",
+   "a": "Variables whose names look like passwords, tokens or keys are moved to a Secret and referenced from the Deployment. Review the list, since detection is by name."
+  },
+  {
+   "q": "Is the output production-ready?",
+   "a": "No. It is a starting point. Add readiness probes, resource requests, ingress, security settings and proper storage classes before you rely on it."
+  }
+ ],
+ "related": [
+  "kubernetes-deployment-generator",
+  "kubernetes-ingress-generator",
+  "k8s-manifest-validator",
+  "kubernetes-configmap-secret-builder",
+  "docker-run-to-compose",
+  "k8s-resource-calculator"
+ ],
+ "keywords": [
+  "docker compose to kubernetes",
+  "compose to k8s converter",
+  "convert docker-compose.yml to kubernetes yaml",
+  "free kompose alternative",
+  "docker compose to deployment"
+ ]
+}

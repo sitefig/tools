@@ -1,0 +1,39 @@
+{
+ "id": "ics-event-file-creator",
+ "seoTitle": "ICS Calendar Event File Creator with Reminder",
+ "metaDescription": "Make a downloadable .ics event with title, time, place, notes and reminder for Google, Outlook or Apple Calendar.",
+ "intro": "Builds a standards-style iCalendar (.ics) file for one event, with an optional reminder and all-day option, and lets you download it.",
+ "why": "An .ics file opens in any calendar app. Fill the form and get a file to send or attach.\n\nTimes are converted from your chosen time zone to UTC, so there is no timezone block to break. Text is escaped and lines are folded as the spec requires. The output was parsed with the Python icalendar library.",
+ "howTo": [
+  "Enter title, date and times.",
+  "Set the time zone, location and reminder.",
+  "Download the .ics file."
+ ],
+ "faq": [
+  {
+   "q": "Which time zone is used?",
+   "a": "The IANA zone you type, then converted to UTC."
+  },
+  {
+   "q": "Does it handle repeats?",
+   "a": "No, one event. Use the recurring date generator for a list."
+  },
+  {
+   "q": "Is the file private?",
+   "a": "It is built in your browser and never uploaded."
+  }
+ ],
+ "related": [
+  "recurring-date-generator",
+  "timezone-converter",
+  "timezone-meeting-planner",
+  "printable-calendar",
+  "event-countdown-live",
+  "content-calendar-generator"
+ ],
+ "keywords": [
+  "ics file generator",
+  "create calendar event file",
+  "ical creator"
+ ]
+}

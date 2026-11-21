@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crawl-delay Calculator: Requests per Day from Seconds | Free Tools</title>
+<meta name="description" content="Convert a robots.txt Crawl-delay into maximum requests per hour, day and month and see which crawlers read it. Free calculator.">
+<link rel="canonical" href="https://tools.sitefig.net/en/crawl-delay-calculator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/crawl-delay-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/crawl-delay-calculator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Crawl-delay Calculator: Requests per Day from Seconds | Free Tools">
+<meta property="og:description" content="Convert a robots.txt Crawl-delay into maximum requests per hour, day and month and see which crawlers read it. Free calculator.">
+<meta property="og:url" content="https://tools.sitefig.net/en/crawl-delay-calculator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Crawl-delay Calculator: Requests per Day from Seconds | Free Tools">
+<meta name="twitter:description" content="Convert a robots.txt Crawl-delay into maximum requests per hour, day and month and see which crawlers read it. Free calculator.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Crawl-delay Calculator (Requests per Day)","url":"https://tools.sitefig.net/en/crawl-delay-calculator/","description":"Convert a robots.txt Crawl-delay into maximum requests per hour, day and month and see which crawlers read it. Free calculator.","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the delay in seconds.","Optionally enter how many pages you have.","Read the requests per day and the time for a full pass.","Decide whether Crawl-delay is the right tool at all."],"keywords":"crawl-delay calculator, robots.txt crawl delay, crawl delay requests per day, does google respect crawl delay","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SEO – Technical","item":"https://tools.sitefig.net/en/#seo-technical"},{"@type":"ListItem","position":3,"name":"Crawl-delay Calculator (Requests per Day)","item":"https://tools.sitefig.net/en/crawl-delay-calculator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Google follow Crawl-delay?","acceptedAnswer":{"@type":"Answer","text":"No. Google's documentation lists only user-agent, allow, disallow and sitemap."}},{"@type":"Question","name":"What should I use to slow a crawler?","acceptedAnswer":{"@type":"Answer","text":"Serve 429 or 503 responses when you are overloaded, or use the crawl settings in a search engine's webmaster tools where available."}},{"@type":"Question","name":"Is the result exact?","acceptedAnswer":{"@type":"Answer","text":"It is the upper bound for a crawler that reads the value as one request per N seconds."}},{"@type":"Question","name":"Do all crawlers read it the same way?","acceptedAnswer":{"@type":"Answer","text":"No. Some treat it as a pause, others as a time window."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#seo-technical">SEO – Technical</a></li><li><span aria-current="page">Crawl-delay Calculator (Requests per Day)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Crawl-delay Calculator (Requests per Day)</h1>
+<p class="lede">Turns a Crawl-delay value in seconds into a request ceiling and the time a crawler would need to fetch your pages.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="crawl-delay-calculator" data-module="new01"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A line such as Crawl-delay: 10 sounds modest, but it caps a crawler at 8,640 requests a day, which is slow for a big site. Many site owners set it without knowing that Google ignores it entirely.</p>
+<p>Enter the delay and your page count to see the ceiling and the days needed to fetch everything once. The page lists what the vendors document (Google, Apple and Amazon do not use it) and is open about what it did not check.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the delay in seconds.</li><li>Optionally enter how many pages you have.</li><li>Read the requests per day and the time for a full pass.</li><li>Decide whether Crawl-delay is the right tool at all.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does Google follow Crawl-delay?</summary><p>No. Google's documentation lists only user-agent, allow, disallow and sitemap.</p></details>
+<details><summary>What should I use to slow a crawler?</summary><p>Serve 429 or 503 responses when you are overloaded, or use the crawl settings in a search engine's webmaster tools where available.</p></details>
+<details><summary>Is the result exact?</summary><p>It is the upper bound for a crawler that reads the value as one request per N seconds.</p></details>
+<details><summary>Do all crawlers read it the same way?</summary><p>No. Some treat it as a pause, others as a time window.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/robots-generator/"><span class="link-card__title">robots.txt Generator</span><span class="link-card__desc">Build a robots.txt with disallow/allow paths and sitemap.</span></a></li><li><a class="link-card" href="/en/robots-txt-validator/"><span class="link-card__title">robots.txt Validator (RFC 9309 Syntax Check)</span><span class="link-card__desc">Parse a pasted robots.txt and flag syntax errors, unknown directives, misspellings, bad paths, size and encoding problems.</span></a></li><li><a class="link-card" href="/en/nginx-rate-limit-calculator/"><span class="link-card__title">Nginx Rate Limit Calculator</span><span class="link-card__desc">Work out limit_req_zone rate, burst, delay and zone memory for a request rate, and see how traffic will be queued or rejected.</span></a></li><li><a class="link-card" href="/en/bot-rate-limit-rule-calculator/"><span class="link-card__title">Bot Rate Limit Calculator: Cloudflare, Nginx limit_req and HAProxy</span><span class="link-card__desc">Turn a request limit such as 60 requests per minute into Cloudflare rate rule fields, Nginx limit_req_zone and HAProxy stick-table settings.</span></a></li><li><a class="link-card" href="/en/robots-tester/"><span class="link-card__title">robots.txt Tester</span><span class="link-card__desc">Test URLs against robots.txt with longest-match, wildcard and $ rules.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

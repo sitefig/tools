@@ -1,0 +1,44 @@
+{
+ "id": "currency-display-checker",
+ "seoTitle": "Currency Display Checker: Symbol, Placement and Decimals by Market",
+ "metaDescription": "Check how currencies are shown in each locale: symbol or code, before or after the amount, decimals and separators. Yen has none.",
+ "intro": "For each currency and locale it prints the formatted amount, the symbol, its position, the decimals and the separators.",
+ "why": "Showing the wrong symbol, or two decimals on yen, looks careless to local buyers. Pick the currencies you sell in and the locales you serve and see exactly how Intl writes them: the euro after the amount in German and French, the dollar before it in English, no decimals for JPY.\n\nResults come from CLDR through your browser. Legal requirements for price display, such as showing the currency code or tax, are separate and not covered.",
+ "howTo": [
+  "List currencies, one per line.",
+  "List locales, one per line.",
+  "Read symbol, position and decimals.",
+  "Compare with what your shop shows."
+ ],
+ "faq": [
+  {
+   "q": "Why does the symbol change by locale?",
+   "a": "A locale may write USD as $ or US$ depending on whether the dollar is local."
+  },
+  {
+   "q": "Where do decimals come from?",
+   "a": "From the currency's minor unit in ICU data, for example 0 for JPY."
+  },
+  {
+   "q": "Is the format legally binding?",
+   "a": "No. Check local rules."
+  },
+  {
+   "q": "Can I use any currency code?",
+   "a": "Any code your browser knows from ISO 4217."
+  }
+ ],
+ "related": [
+  "international-format-previewer",
+  "currency-converter-manual-rates",
+  "product-schema-generator",
+  "merchant-return-shipping-schema-builder",
+  "language-region-code-lookup"
+ ],
+ "keywords": [
+  "currency format by locale",
+  "euro symbol position",
+  "yen decimals",
+  "price display by country"
+ ]
+}

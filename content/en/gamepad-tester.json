@@ -1,0 +1,46 @@
+{
+ "id": "gamepad-tester",
+ "seoTitle": "Free Gamepad Tester - Buttons and Axes Online",
+ "metaDescription": "Connect a controller and see live button presses and analogue axis values, with a vibration test. Free gamepad tester in your browser.",
+ "intro": "Connect a game controller, press a button, and see live values for every button and axis, plus a button to test vibration.",
+ "why": "Controllers fail in small ways: a stick that drifts, a trigger that does not reach full travel, a button that registers twice or not at all. Before returning a pad, blaming a game or filing a bug, it helps to see what the hardware actually reports.\n\nThis tester reads the browser's Gamepad API and lists each connected controller with its mapping, a numbered row of buttons that highlight with their pressure when pressed, and every axis with a numeric value and a bar. Resting sticks should sit near zero, and a steady non-zero value points to drift. A vibration button sends a short rumble to controllers that support it. Browsers only reveal a controller after you press a button on it. Nothing leaves your device.",
+ "howTo": [
+  "Connect your controller by USB or Bluetooth.",
+  "Press any button so the browser detects it.",
+  "Press buttons and move sticks to see values change.",
+  "Press Test vibration to check the rumble motors."
+ ],
+ "faq": [
+  {
+   "q": "Why does it say to connect a controller?",
+   "a": "Browsers hide gamepads until you press a button on one, for privacy. Connect it, then press any button while the page is focused. If nothing appears, try another USB port or reconnect Bluetooth."
+  },
+  {
+   "q": "How do I spot stick drift?",
+   "a": "Leave the sticks untouched and read the axis values. They should be within a few thousandths of zero. A steady value like 0.1 or higher indicates drift, though games often apply a dead zone to hide small amounts."
+  },
+  {
+   "q": "What does the mapping say?",
+   "a": "A standard mapping means the browser arranged the buttons in the usual layout. If the mapping reads none, button numbers are device-specific, so they may not match the layout of other controllers."
+  },
+  {
+   "q": "Does vibration work on all controllers?",
+   "a": "No. It needs browser support and a controller that exposes a vibration actuator. Many controllers on some systems do not, so a missing rumble does not always mean the motors are faulty."
+  }
+ ],
+ "related": [
+  "keyboard-event-viewer",
+  "mouse-click-speed-test",
+  "screen-info",
+  "game-2048",
+  "minesweeper",
+  "memory-match"
+ ],
+ "keywords": [
+  "gamepad tester",
+  "controller tester online",
+  "check joystick drift",
+  "xbox controller test",
+  "free gamepad test"
+ ]
+}

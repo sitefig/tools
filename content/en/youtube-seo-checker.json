@@ -1,0 +1,45 @@
+{
+  "id": "youtube-seo-checker",
+  "seoTitle": "YouTube Title, Description & Tags Checker",
+  "metaDescription": "Check a YouTube title, description and tags against documented limits: lengths, hashtag cap, chapter timestamps and links above the fold.",
+  "intro": "Run a quick pre-upload check of the text around a video: title length, description length, hashtags, chapters and tags.",
+  "why": "The checks follow YouTube's published limits: titles up to 100 characters, descriptions up to 5,000, tags up to 500 characters in total, and ignored hashtags when a video has more than 15. It also validates chapter timestamps (first at 00:00, at least three, ascending, each chapter at least 10 seconds) and warns when a link sits in the first 150 characters, which is all that shows before \"more\".\n\nNone of this guarantees reach: click-through rate and watch time matter far more than metadata. Limits can change, so confirm in YouTube's help centre.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the title, description and tags (comma separated).",
+    "Run the checker.",
+    "Fix any ERROR or WARN lines.",
+    "Upload with a title that matches the thumbnail promise."
+  ],
+  "faq": [
+    {
+      "q": "How many tags can I use?",
+      "a": "Up to 500 characters in total. YouTube says tags matter little beyond helping with misspellings."
+    },
+    {
+      "q": "What makes chapters work?",
+      "a": "A 00:00 start, at least three timestamps in ascending order and at least 10 seconds between them."
+    },
+    {
+      "q": "Is the title length limit 60?",
+      "a": "The hard limit is 100 characters; around 60 is what often shows in results."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "youtube-link-tools",
+    "title-length-checker",
+    "headline-generator",
+    "meta-description-suggester",
+    "serp-snippet",
+    "keyword-extractor"
+  ],
+  "keywords": [
+    "youtube seo",
+    "youtube description checker",
+    "video tags limit",
+    "youtube chapters"
+  ]
+}

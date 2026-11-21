@@ -1,0 +1,41 @@
+{
+ "id": "anagram-word-finder",
+ "seoTitle": "Anagram Word Finder from Your Own Word List",
+ "metaDescription": "Find which words from a list you paste can be made from your letters, with blanks allowed. Full anagrams or shorter words. Free, offline.",
+ "intro": "Find which words from a list you paste can be spelled with a set of letters, with blanks allowed. Full anagrams or any shorter word.",
+ "why": "Word-game helpers usually query a server. This one works offline, but it has no dictionary of its own: you paste the word list you trust, such as a Scrabble list or a class vocabulary.\n\nEnter letters, use ? for a blank, and see every listed word that can be spelled with them, longest first. Choose whether only words using all the letters count, which gives exact anagrams. To test whether two phrases are anagrams, use the Anagram Checker.",
+ "howTo": [
+  "Enter your letters, with ? for each blank.",
+  "Paste a word list, one word per line.",
+  "Choose any word that fits, or only full anagrams.",
+  "Read the matches by length."
+ ],
+ "faq": [
+  {
+   "q": "Where do I get a word list?",
+   "a": "Use any text file with one word per line, such as a Scrabble or spell-checker list. The tool is offline and ships none."
+  },
+  {
+   "q": "What does ? do?",
+   "a": "It stands for any one letter."
+  },
+  {
+   "q": "Does it test two phrases?",
+   "a": "The Anagram Checker on this site compares two phrases."
+  }
+ ],
+ "related": [
+  "anagram-checker",
+  "palindrome-checker",
+  "character-frequency",
+  "fancy-text",
+  "dedupe-lines",
+  "random-line-picker"
+ ],
+ "keywords": [
+  "anagram solver",
+  "anagram finder",
+  "word unscrambler",
+  "scrabble word finder"
+ ]
+}

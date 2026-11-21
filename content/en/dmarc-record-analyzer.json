@@ -1,0 +1,41 @@
+{
+ "id": "dmarc-record-analyzer",
+ "seoTitle": "DMARC Record Analyzer: Explain Every Tag in a TXT Value",
+ "metaDescription": "Paste a DMARC TXT record and get each tag explained, with warnings for p=none, pct below 100 and bad report addresses. Free and local.",
+ "intro": "Explains each DMARC tag in a pasted record and warns about weak or invalid settings.",
+ "why": "A DMARC record controls what receivers do with mail that fails SPF and DKIM alignment, and where they send reports. The syntax is short, but a typo can disable the policy.\n\nPaste the record (quotes and split strings are joined) and see the policy, subdomain policy, percentage, alignment modes and report addresses in plain words. Warnings cover p=none, pct below 100, missing rua, bad URIs and unknown tags. It reads RFC 7489 tags and accepts newer ones without checking. It does not look up DNS.",
+ "howTo": [
+  "Run dig TXT _dmarc.yourdomain or copy the value from DNS.",
+  "Paste it.",
+  "Read the explanation and the review list.",
+  "Move from none to quarantine to reject as reports allow."
+ ],
+ "faq": [
+  {
+   "q": "What does p=none do?",
+   "a": "It only monitors. Nothing is blocked."
+  },
+  {
+   "q": "Why do external report addresses need a record?",
+   "a": "The receiving domain must authorise reports for yours, otherwise they are not sent."
+  },
+  {
+   "q": "Can it write a record?",
+   "a": "Use the DMARC Record Generator for that."
+  }
+ ],
+ "related": [
+  "dmarc-generator",
+  "dmarc-aggregate-report-viewer",
+  "spf-record-generator",
+  "dkim-record-analyzer",
+  "dig-nslookup-output-analyzer",
+  "email-header-analyzer"
+ ],
+ "keywords": [
+  "dmarc record checker",
+  "explain dmarc",
+  "dmarc policy none",
+  "dmarc tags"
+ ]
+}

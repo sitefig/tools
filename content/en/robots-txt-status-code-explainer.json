@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-status-code-explainer",
+ "seoTitle": "robots.txt HTTP Status Codes: 200, 301, 404, 429, 503",
+ "metaDescription": "See how Google and RFC 9309 treat each HTTP status for robots.txt: success, redirect, 4xx unavailable and 5xx unreachable. Free.",
+ "intro": "Explains what crawlers do when robots.txt answers with a given status code.",
+ "why": "A 404 means no rules, but a 503 can stop crawling of your whole site, and a 429 is treated as a server error by Google. Redirect chains longer than five hops count as a 404. These details decide whether a hiccup is harmless or costly.\n\nEnter the status codes you see and read the behaviour documented by Google and by RFC 9309, which differ in places such as the 30-day rule.",
+ "howTo": [
+  "Type the status codes, one per line.",
+  "Read Google's behaviour and the RFC behaviour.",
+  "Check your server returns 200 or 404.",
+  "Never serve a 5xx for robots.txt."
+ ],
+ "faq": [
+  {
+   "q": "What happens on a 404?",
+   "a": "Crawlers treat it as no restrictions."
+  },
+  {
+   "q": "What happens on a 503?",
+   "a": "Google stops crawling for a while and uses a cached copy if it has one."
+  },
+  {
+   "q": "How many redirects are followed?",
+   "a": "At least five, per RFC 9309 and Google."
+  },
+  {
+   "q": "Is 403 a way to block crawlers?",
+   "a": "No. Google treats it as no robots.txt."
+  }
+ ],
+ "related": [
+  "robots-txt-validator",
+  "robots-tester",
+  "robots-txt-size-checker",
+  "uptime-log-analyzer",
+  "robots-generator"
+ ],
+ "keywords": [
+  "robots.txt 404",
+  "robots.txt 503",
+  "robots.txt status code",
+  "robots.txt 403 google"
+ ]
+}

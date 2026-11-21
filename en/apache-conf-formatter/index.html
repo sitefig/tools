@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Apache Config &amp; .htaccess Formatter Online | Free Tools</title>
+<meta name="description" content="Free online Apache config formatter. Indent httpd.conf and .htaccess sections such as VirtualHost and Directory, tidy spacing and keep comments.">
+<link rel="canonical" href="https://tools.sitefig.net/en/apache-conf-formatter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/apache-conf-formatter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/apache-conf-formatter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Apache Config &amp; .htaccess Formatter Online | Free Tools">
+<meta property="og:description" content="Free online Apache config formatter. Indent httpd.conf and .htaccess sections such as VirtualHost and Directory, tidy spacing and keep comments.">
+<meta property="og:url" content="https://tools.sitefig.net/en/apache-conf-formatter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Apache Config &amp; .htaccess Formatter Online | Free Tools">
+<meta name="twitter:description" content="Free online Apache config formatter. Indent httpd.conf and .htaccess sections such as VirtualHost and Directory, tidy spacing and keep comments.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Apache Config Formatter","url":"https://tools.sitefig.net/en/apache-conf-formatter/","description":"Free online Apache config formatter. Indent httpd.conf and .htaccess sections such as VirtualHost and Directory, tidy spacing and keep comments.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your httpd.conf, virtual host or .htaccess content into the input box.","Choose an indent of 2 spaces, 4 spaces or a tab.","Check that opening and closing section tags line up in the output.","Copy the result, then run apachectl configtest before reloading Apache."],"keywords":"apache config formatter, htaccess formatter, format httpd.conf online, free apache formatter, apache virtualhost formatter, beautify htaccess","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Formatters","item":"https://tools.sitefig.net/en/#formatters"},{"@type":"ListItem","position":3,"name":"Apache Config Formatter","item":"https://tools.sitefig.net/en/apache-conf-formatter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it validate my directives?","acceptedAnswer":{"@type":"Answer","text":"No. It only fixes layout. It does not know which directives or modules exist, so a mistyped directive is formatted like any other. Run apachectl configtest to check the configuration."}},{"@type":"Question","name":"Will it change how Apache reads the file?","acceptedAnswer":{"@type":"Answer","text":"It should not. Indentation and the number of spaces between arguments do not matter to Apache. Quoted arguments and comments are left as written."}},{"@type":"Question","name":"Does it work for .htaccess files?","acceptedAnswer":{"@type":"Answer","text":"Yes. The same sections and directives appear in .htaccess, including IfModule blocks and rewrite rules, and are indented in the same way."}},{"@type":"Question","name":"What about variables like ${APACHE_LOG_DIR}?","acceptedAnswer":{"@type":"Answer","text":"They are treated as normal text and left unchanged, so values such as ErrorLog ${APACHE_LOG_DIR}/error.log stay as they are."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#formatters">Formatters</a></li><li><span aria-current="page">Apache Config Formatter</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Apache Config Formatter</h1>
+<p class="lede">Indent an Apache configuration so that VirtualHost, Directory and IfModule sections are easy to follow. Spacing is tidied, blank lines are reduced and comments are kept.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="apache-conf-formatter" data-module="devgen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Apache configs grow by copy and paste. After a few years a virtual host file has mixed tabs and spaces, directives with random spacing and nested sections that no longer line up, and a missing closing tag is hard to see. The same goes for a long .htaccess full of rewrite rules.</p>
+<p>This formatter indents each directive according to its nesting level, so every opening tag lines up with its closing one. It collapses the odd runs of spaces between a directive and its arguments, reduces repeated blank lines and leaves comments where they are. Choose 2 spaces, 4 spaces or a tab. It changes layout only and does not check whether the directives exist or are valid, so test with apachectl configtest. Nothing you paste is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your httpd.conf, virtual host or .htaccess content into the input box.</li><li>Choose an indent of 2 spaces, 4 spaces or a tab.</li><li>Check that opening and closing section tags line up in the output.</li><li>Copy the result, then run apachectl configtest before reloading Apache.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does it validate my directives?</summary><p>No. It only fixes layout. It does not know which directives or modules exist, so a mistyped directive is formatted like any other. Run apachectl configtest to check the configuration.</p></details>
+<details><summary>Will it change how Apache reads the file?</summary><p>It should not. Indentation and the number of spaces between arguments do not matter to Apache. Quoted arguments and comments are left as written.</p></details>
+<details><summary>Does it work for .htaccess files?</summary><p>Yes. The same sections and directives appear in .htaccess, including IfModule blocks and rewrite rules, and are indented in the same way.</p></details>
+<details><summary>What about variables like ${APACHE_LOG_DIR}?</summary><p>They are treated as normal text and left unchanged, so values such as ErrorLog ${APACHE_LOG_DIR}/error.log stay as they are.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/htaccess-generator/"><span class="link-card__title">.htaccess Generator</span><span class="link-card__desc">HTTPS, www, trailing slash, gzip, caching and security headers for Apache.</span></a></li><li><a class="link-card" href="/en/nginx-formatter/"><span class="link-card__title">nginx Config Formatter</span><span class="link-card__desc">Re-indent nginx.conf by brace depth, collapse spaces and blank lines. Comments and values are never changed.</span></a></li><li><a class="link-card" href="/en/htaccess-to-nginx/"><span class="link-card__title">.htaccess to nginx Converter</span><span class="link-card__desc">Translate common Apache .htaccess directives to nginx: Redirect, RedirectMatch, RewriteRule/RewriteCond (R, L, NC, F, G flags, www/https/front-controller patterns), ErrorDocument, Options -Indexes, DirectoryIndex, Header set, ExpiresByType, Require/Deny. Anything unsupported is left as a &quot;# TODO&quot; comment: review before use (run nginx -t).</span></a></li><li><a class="link-card" href="/en/nginx-config-generator/"><span class="link-card__title">Nginx Config Generator</span><span class="link-card__desc">Server blocks for static sites, reverse proxy, SPA and HTTPS redirect, with optional gzip.</span></a></li><li><a class="link-card" href="/en/redirect-rules-converter/"><span class="link-card__title">Redirect Rules Converter</span><span class="link-card__desc">Turn &quot;from to [code]&quot; lines into nginx, Apache, Caddy, Netlify _redirects or Vercel JSON redirects.</span></a></li><li><a class="link-card" href="/en/caddyfile-generator/"><span class="link-card__title">Caddyfile Generator</span><span class="link-card__desc">Build a Caddyfile site block: reverse proxy, static files, SPA, PHP-FPM or redirect, with compression, headers and www redirect.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "id": "boolean-minimizer",
+  "seoTitle": "Boolean Expression Minimizer: Quine-McCluskey and Karnaugh Map",
+  "metaDescription": "Simplify a Boolean function from its minterms and don't-cares: minimal sum of products, prime implicants and a Karnaugh map for up to four variables.",
+  "intro": "Reduce a truth table to the simplest AND-OR expression.",
+  "why": "Enter the minterms (decimal numbers of the input combinations where the output is 1), optional don't-care terms and the number of variables (2 to 6). The tool finds the prime implicants with the Quine-McCluskey method, chooses an exact minimum cover (fewest terms, then fewest literals) with branch and bound and prints the expression with A as the most significant variable. A Karnaugh map in Gray-code order is shown for up to four variables. On 400 random four-variable functions the result matched an exhaustive search for the minimum number of terms every time, and every result was checked against the truth table.\n\nEquivalent minimal forms may be written differently by other tools. Product-of-sums form is not produced.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the number of variables and the minterms.",
+    "Add don't-care terms if any.",
+    "Read the minimal expression and the map.",
+    "Check it against your truth table."
+  ],
+  "faq": [
+    {
+      "q": "What are minterms?",
+      "a": "Input combinations, counted as binary numbers, for which the function is 1."
+    },
+    {
+      "q": "What is a don't care?",
+      "a": "An input that never occurs or whose output does not matter; it can be used to make groups larger."
+    },
+    {
+      "q": "Which variable is the most significant bit?",
+      "a": "A. For four variables the minterm 5 is A'BC'D."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "bitwise-calculator",
+    "binary-text",
+    "number-base-converter",
+    "cellular-automaton-generator",
+    "bcd-converter",
+    "scientific-expression-calculator"
+  ],
+  "keywords": [
+    "boolean minimizer",
+    "quine mccluskey",
+    "karnaugh map solver",
+    "simplify boolean expression"
+  ]
+}

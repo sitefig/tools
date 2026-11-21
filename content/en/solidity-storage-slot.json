@@ -1,0 +1,45 @@
+{
+ "id": "solidity-storage-slot",
+ "seoTitle": "Free Solidity Storage Slot Calculator for Mappings",
+ "metaDescription": "Find the storage slot of Solidity mappings, dynamic arrays, structs and ERC-7201 namespaces with a step-by-step path. Free, runs in your browser.",
+ "intro": "Write a path one operation per line, such as slot, map, array, add or erc7201. The tool follows it with keccak256 and shows the slot after each step and the final result.",
+ "why": "Reading contract storage directly with eth_getStorageAt, writing a Foundry test that sets a mapping value or auditing proxy contracts all require knowing the exact slot a variable lives in. For plain variables that is the declaration order, but mappings and dynamic arrays move to hashed locations, and nested structures stack several hashes together. Doing this by hand invites mistakes in padding and ordering. This tool takes a short script of operations, such as a mapping at slot 3 keyed by an address, then another keyed by a number, then a struct offset, and prints the slot after every line. It supports namespaced storage as used by EIP-1967 and ERC-7201. The work happens in your browser, and it reads nothing from a chain.",
+ "howTo": [
+  "Write one operation per line, starting with slot N for the base variable.",
+  "Add map, array, add, sub, keccak, erc7201 or bytes lines to walk the structure.",
+  "Read the slot after each step and the final slot in hex and decimal."
+ ],
+ "faq": [
+  {
+   "q": "Which operations are supported?",
+   "a": "slot N, map (key type then key), array (optional element size then index), add N, sub N, keccak (followed by text), erc7201 (followed by an id) and bytes. Lines starting with # are comments."
+  },
+  {
+   "q": "How is a mapping slot computed?",
+   "a": "As keccak256(key padded to 32 bytes, then the mapping's slot as 32 bytes). Strings and bytes keys are used unpadded, as Solidity does."
+  },
+  {
+   "q": "How are packed array elements handled?",
+   "a": "If an element is 16 bytes or smaller, several fit in one slot and the output notes the byte offset inside the slot. Larger elements take whole slots."
+  },
+  {
+   "q": "Does it read actual contract storage?",
+   "a": "No. It only calculates where data lives. To read the value you must query a node with the slot it gives you."
+  }
+ ],
+ "related": [
+  "abi-encoder-decoder",
+  "ethereum-keccak256-hasher",
+  "evm-create-address",
+  "eip712-typed-data-hash",
+  "rlp-codec"
+ ],
+ "keywords": [
+  "solidity storage slot calculator",
+  "mapping storage slot",
+  "free storage slot tool",
+  "erc7201 namespace slot",
+  "eip1967 slot",
+  "keccak mapping slot"
+ ]
+}

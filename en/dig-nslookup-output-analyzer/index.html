@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>dig and nslookup Output Analyzer: SPF, DMARC, MX, TTL | Free Tools</title>
+<meta name="description" content="Paste dig or nslookup output and get the records grouped and checked: SPF lookup count, DMARC policy, DKIM key, MX order, NS count, CNAME clashes and errors.">
+<link rel="canonical" href="https://tools.sitefig.net/en/dig-nslookup-output-analyzer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/dig-nslookup-output-analyzer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/dig-nslookup-output-analyzer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="dig and nslookup Output Analyzer: SPF, DMARC, MX, TTL | Free Tools">
+<meta property="og:description" content="Paste dig or nslookup output and get the records grouped and checked: SPF lookup count, DMARC policy, DKIM key, MX order, NS count, CNAME clashes and errors.">
+<meta property="og:url" content="https://tools.sitefig.net/en/dig-nslookup-output-analyzer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="dig and nslookup Output Analyzer: SPF, DMARC, MX, TTL | Free Tools">
+<meta name="twitter:description" content="Paste dig or nslookup output and get the records grouped and checked: SPF lookup count, DMARC policy, DKIM key, MX order, NS count, CNAME clashes and errors.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"dig and nslookup Output Analyzer (MX, NS, TXT, SPF, DMARC, DKIM)","url":"https://tools.sitefig.net/en/dig-nslookup-output-analyzer/","description":"Paste dig or nslookup output and get the records grouped and checked: SPF lookup count, DMARC policy, DKIM key, MX order, NS count, CNAME clashes and errors.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Run dig (for example `dig example.com MX TXT +noall +answer +comments`) and copy the output.","Paste it; multiple queries in one paste are fine.","Read the grouped records and the checks section."],"keywords":"dig output parser, spf dmarc check, nslookup analyzer","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Network & HTTP","item":"https://tools.sitefig.net/en/#network-and-http"},{"@type":"ListItem","position":3,"name":"dig and nslookup Output Analyzer (MX, NS, TXT, SPF, DMARC, DKIM)","item":"https://tools.sitefig.net/en/dig-nslookup-output-analyzer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why can it not just query my domain?","acceptedAnswer":{"@type":"Answer","text":"Browsers cannot send raw DNS queries and this site never makes network requests from tools. Pasting dig output keeps it private and works for internal zones too."}},{"@type":"Question","name":"Does it follow SPF includes?","acceptedAnswer":{"@type":"Answer","text":"No. It counts the lookup mechanisms in the record you pasted; paste the included records or use the SPF flattener for the full tree."}},{"@type":"Question","name":"Which formats are supported?","acceptedAnswer":{"@type":"Answer","text":"dig full output, dig +short and the common nslookup output."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#network-and-http">Network &amp; HTTP</a></li><li><span aria-current="page">dig and nslookup Output Analyzer (MX, NS, TXT, SPF, DMARC, DKIM)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>dig and nslookup Output Analyzer (MX, NS, TXT, SPF, DMARC, DKIM)</h1>
+<p class="lede">Paste what dig or nslookup printed and get the records grouped, explained and checked for common DNS and email authentication mistakes.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="dig-nslookup-output-analyzer" data-module="gap5"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>DNS debugging usually starts with dig. This tool parses its output (full, +short and the common nslookup layouts, several queries at once) and reports what matters: NXDOMAIN or SERVFAIL meaning, SPF terms with a rough count of the 10-lookup limit, a second SPF record, +all policies, DMARC p= and rua= settings, DKIM key length estimates, MX priorities and IP targets, fewer than two name servers, CNAMEs that coexist with other records, TTL range and DNSSEC signs.</p>
+<p>The page makes no DNS queries; the real answers come from your own resolver, so paste the output. The SPF count cannot follow nested includes, and cached answers show remaining TTL, not the configured value.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Run dig (for example `dig example.com MX TXT +noall +answer +comments`) and copy the output.</li><li>Paste it; multiple queries in one paste are fine.</li><li>Read the grouped records and the checks section.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why can it not just query my domain?</summary><p>Browsers cannot send raw DNS queries and this site never makes network requests from tools. Pasting dig output keeps it private and works for internal zones too.</p></details>
+<details><summary>Does it follow SPF includes?</summary><p>No. It counts the lookup mechanisms in the record you pasted; paste the included records or use the SPF flattener for the full tree.</p></details>
+<details><summary>Which formats are supported?</summary><p>dig full output, dig +short and the common nslookup output.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/dns-spf-record-flattener/"><span class="link-card__title">SPF Record Flattener (offline)</span><span class="link-card__desc">Flatten an SPF record by inlining include:/redirect= records that you paste (lines &quot;domain: v=spf1 ...&quot;), de-duplicating ip4/ip6, counting DNS lookups against the limit of 10, and splitting long TXT strings. The tool never queries DNS: resolve each include yourself (dig +short TXT domain).</span></a></li><li><a class="link-card" href="/en/dns-soa-dnssec-inspector/"><span class="link-card__title">DNS SOA &amp; DNSSEC Record Inspector</span><span class="link-card__desc">Decode pasted SOA, DNSKEY, DS/CDS, RRSIG and NSEC3PARAM records: timers vs RFC 1912 guidance, key tags, KSK/ZSK roles, algorithms, signature validity windows, and whether a DS digest really matches the DNSKEY (SHA-1/256/384 computed locally).</span></a></li><li><a class="link-card" href="/en/spf-record-generator/"><span class="link-card__title">SPF Record Generator</span><span class="link-card__desc">Compose an SPF TXT record from mechanisms, count DNS lookups against the 10-lookup limit and check the length.</span></a></li><li><a class="link-card" href="/en/dmarc-generator/"><span class="link-card__title">DMARC Record Generator</span><span class="link-card__desc">Build the _dmarc TXT record: policy, subdomain policy, percentage, aggregate/forensic reports, alignment modes.</span></a></li><li><a class="link-card" href="/en/whois-record-parser/"><span class="link-card__title">WHOIS Record Parser (Domain and IP, Expiry and Status Explained)</span><span class="link-card__desc">Paste the text from a WHOIS or RDAP lookup and get a clean summary: registrar, dates, domain age, days to expiry, name servers, and what each EPP status code means.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

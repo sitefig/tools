@@ -1,0 +1,47 @@
+{
+ "id": "cron-generator",
+ "seoTitle": "Free Cron Expression Generator with Dropdowns",
+ "metaDescription": "Build a cron expression from simple dropdowns for every N minutes, hours, daily, monthly or yearly runs, and see its meaning and next runs. Free.",
+ "intro": "Pick how often a job should run, set the time with dropdowns and get the matching cron expression, a plain-English meaning and the next three run times.",
+ "why": "Almost nobody remembers the field order of a cron expression, and the mistakes are costly: swapping the hour and minute, or forgetting that Sunday is 0. Looking up examples on every deployment is a waste of time.\n\nThis generator lets you choose a frequency such as every 15 minutes, daily at 09:00, on the 1st of each month or yearly in March, with an optional weekday filter. It produces the five-field expression, explains it in English and shows when it will next run in UTC so you can confirm it before pasting it into a crontab, CI pipeline or cloud scheduler.",
+ "howTo": [
+  "Choose how often to run: every minute, every N minutes, every N hours, daily, monthly or yearly.",
+  "Set N, the minute, the hour, the weekdays, the day of month and the month as needed.",
+  "Read the generated expression and its plain-English meaning.",
+  "Check the next three run times, then copy the expression."
+ ],
+ "faq": [
+  {
+   "q": "Which options matter for each frequency?",
+   "a": "\"Every N minutes\" uses N and the weekday filter. \"Every N hours\" uses N, the minute and weekdays. Daily uses minute, hour and weekdays. Monthly uses minute, hour and day of month. Yearly adds the month. Unused fields are ignored."
+  },
+  {
+   "q": "Can it build complex schedules?",
+   "a": "It covers the common cases only. For lists, ranges or combinations, such as 9-17 on weekdays, write the expression yourself and test it with the Cron Expression Explainer."
+  },
+  {
+   "q": "Does it match every scheduler?",
+   "a": "It produces standard five-field cron, which works in crontab, most CI systems and many cloud schedulers. Some tools, such as Quartz or AWS EventBridge, use a different syntax with extra fields."
+  },
+  {
+   "q": "Which time zone are the run times in?",
+   "a": "The preview shows UTC. Your scheduler may run in another zone, so check its documentation. The Cron Timezone Converter helps translate a schedule between zones."
+  }
+ ],
+ "related": [
+  "cron-explainer",
+  "natural-language-to-cron",
+  "cron-timezone-converter",
+  "crontab-randomized-generator",
+  "systemd-timer-generator",
+  "github-actions-generator"
+ ],
+ "keywords": [
+  "cron expression generator",
+  "cron builder",
+  "crontab generator online",
+  "free cron schedule maker",
+  "generate cron expression",
+  "cron every 15 minutes"
+ ]
+}

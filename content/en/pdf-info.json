@@ -1,0 +1,46 @@
+{
+ "id": "pdf-info",
+ "seoTitle": "Free PDF Info - Check PDF Version, Pages, Metadata",
+ "metaDescription": "Inspect a plain PDF for version, page count, Info fields, producer, fonts, encryption and object streams. Free, best-effort, runs in your browser.",
+ "intro": "Load a PDF and see its version, page count, page size, fonts, Info fields such as title and author, producer and whether it is encrypted.",
+ "why": "Before you send, merge or archive a PDF it helps to know what it contains. How many pages are there? Which software made it? Does it carry an author name you would rather not share? Is it encrypted, which would block most editing tools? Opening a heavy viewer to find out is slow, and online inspectors upload the file.\n\nThis tool scans the file's structure in your browser and reports the basics: file size, PDF version, linearisation, page count from several methods, object count, encryption, whether object and cross-reference streams are used, first page size in points and millimetres, fonts and the Info dictionary. It is a best-effort reader that works on plain files. Encrypted documents cannot be read, and damaged files are not repaired.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Run the tool.",
+  "Read the version, page count, encryption status and font list.",
+  "Check the Info dictionary for title, author and producer."
+ ],
+ "faq": [
+  {
+   "q": "Why do page counts sometimes differ?",
+   "a": "The tool counts pages three ways: walking the page tree, counting page objects and reading the root Count. They normally agree. A mismatch can come from incremental updates or deleted pages that remain in the file."
+  },
+  {
+   "q": "What if the file is encrypted?",
+   "a": "It reports Encrypted: YES, and the Info fields cannot be read. This tool does not remove passwords or restrictions."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The file is read and parsed in your browser. Nothing is sent to any server, which makes it fine for contracts and personal documents."
+  },
+  {
+   "q": "How reliable is it?",
+   "a": "It is a pattern-based reader, designed for ordinary files. Broken cross-reference tables, unusual structures and files with leftover deleted objects can produce misleading figures, so treat results as a guide."
+  }
+ ],
+ "related": [
+  "pdf-page-count-and-sizes",
+  "pdf-metadata-editor",
+  "pdf-remove-metadata",
+  "pdf-text-extract-simple",
+  "pdf-merge",
+  "exif-viewer"
+ ],
+ "keywords": [
+  "pdf info",
+  "pdf properties viewer online",
+  "check pdf metadata",
+  "pdf page count checker",
+  "free pdf inspector"
+ ]
+}

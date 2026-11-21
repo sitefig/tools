@@ -1,0 +1,46 @@
+{
+ "id": "cron-dialect-converter",
+ "seoTitle": "Free Cron Expression Converter: Quartz, AWS, K8s",
+ "metaDescription": "Convert a standard 5-field cron to Quartz, Spring, AWS EventBridge, GitHub Actions and Kubernetes CronJob syntax. Free and runs in your browser.",
+ "intro": "Paste a normal five-field cron expression and see it rewritten for Quartz, Spring, AWS EventBridge, GitHub Actions and Kubernetes CronJob, side by side.",
+ "why": "Cron is not one language. The Unix schedule you test on a server needs a leading seconds field in Quartz and Spring, a trailing year and a question mark in AWS EventBridge, and Kubernetes adds its own timeZone key. Moving a job between systems usually means a round of trial, error and a failed deploy.\n\nThis converter takes the classic five-field form (or macros like @daily) and prints each dialect. It also warns when day-of-month and day-of-week are both set, because standard cron ORs them while Quartz and EventBridge cannot. Everything runs in your browser.",
+ "howTo": [
+  "Enter a five-field cron such as 30 2 * * 1-5, or a macro like @daily.",
+  "Set the time zone to write into the Kubernetes CronJob block.",
+  "Copy the dialect you need from the output."
+ ],
+ "faq": [
+  {
+   "q": "Does it accept six-field or Quartz input?",
+   "a": "No. It expects exactly five fields (minute, hour, day of month, month, day of week) or a macro such as @hourly. Anything else returns an error naming what it expected."
+  },
+  {
+   "q": "Why was my day-of-week dropped?",
+   "a": "Standard cron runs when either day-of-month or day-of-week matches. Quartz and EventBridge require one of them to be a question mark, so the tool keeps the day-of-month and adds a note. Split the job into two schedules if you need both."
+  },
+  {
+   "q": "Is the GitHub Actions cron in my time zone?",
+   "a": "No. GitHub Actions schedules run in UTC only, so the tool writes the expression unchanged. Convert your local time to UTC first. The time zone field affects only the Kubernetes CronJob output."
+  },
+  {
+   "q": "Does it check that the numbers are valid?",
+   "a": "Only the characters and field count are checked. Out-of-range values such as minute 99 are not rejected, so confirm the schedule with a cron explainer before you deploy it."
+  }
+ ],
+ "related": [
+  "cron-explainer",
+  "cron-generator",
+  "cron-timezone-converter",
+  "natural-language-to-cron",
+  "systemd-timer-generator",
+  "crontab-randomized-generator"
+ ],
+ "keywords": [
+  "cron converter",
+  "cron to quartz",
+  "cron to aws eventbridge",
+  "free cron syntax converter",
+  "kubernetes cronjob schedule",
+  "cron expression dialects"
+ ]
+}

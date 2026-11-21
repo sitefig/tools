@@ -1,0 +1,45 @@
+{
+  "id": "css-container-query-generator",
+  "seoTitle": "CSS Container Query Generator with cqi Units and Fallback",
+  "metaDescription": "Generate CSS container queries for a card or component: name the container, set breakpoints on its width and get layout rules with container units.",
+  "intro": "Make components respond to the space they are placed in, not just the viewport.",
+  "why": "The output declares container-type: inline-size and a container-name, adds base grid styles, fluid type using cqi units, two @container rules at your breakpoints, an example using the range syntax and an @supports fallback to media queries. The explanation covers what the query measures and why a container cannot style itself.\n\nContainer queries are supported in all current major browsers. Use media queries for page-level layout and container queries for reusable components.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Name the container and give its selector.",
+    "Set two breakpoints in pixels.",
+    "Copy the CSS.",
+    "Adapt the example rules to your component."
+  ],
+  "faq": [
+    {
+      "q": "What is cqi?",
+      "a": "A container query unit equal to 1% of the container's inline size."
+    },
+    {
+      "q": "Why does the container not respond to its own query?",
+      "a": "A query applies to descendants of the container, not the container itself."
+    },
+    {
+      "q": "Media or container queries?",
+      "a": "Use container queries for components; media queries for global layout and user preferences."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "css-media-query-builder",
+    "flexbox-generator",
+    "grid-generator",
+    "css-clamp-generator",
+    "responsive-breakpoint-previewer",
+    "css-grid-area-builder"
+  ],
+  "keywords": [
+    "container queries",
+    "css container query generator",
+    "cqi units",
+    "@container"
+  ]
+}

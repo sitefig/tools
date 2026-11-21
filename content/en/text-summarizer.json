@@ -1,0 +1,45 @@
+{
+  "id": "text-summarizer",
+  "seoTitle": "Text Summarizer (Extractive, No AI Model, Runs Locally)",
+  "metaDescription": "Summarise an article by picking its most representative sentences with TextRank or word-frequency scoring. No model download, nothing uploaded.",
+  "intro": "Paste a long text and get a short summary made of its own key sentences, with the method of your choice.",
+  "why": "The tool splits the text into sentences and scores them either with TextRank (sentences vote for each other by shared vocabulary, like PageRank) or with a word-frequency score that favours sentences full of the text's most common content words, with a small bonus for the opening sentence. The top sentences are returned in their original order.\n\nIt is extractive: sentences are copied unchanged, nothing is rewritten, and no language model is involved. That makes it predictable and private, but pronouns can lose their antecedent and it works best on English prose of at least a few paragraphs.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste an article, report or transcript (at least ~40 words).",
+    "Choose how many sentences you want and the method.",
+    "Run it and read the summary and the ranked sentence list.",
+    "Edit the result into your own wording if you will publish it."
+  ],
+  "faq": [
+    {
+      "q": "Is this AI?",
+      "a": "It is an algorithm, not a neural model. It selects existing sentences; it cannot paraphrase or reason."
+    },
+    {
+      "q": "Which method is better?",
+      "a": "TextRank handles topic-heavy text well; frequency scoring is simpler and favours keyword-rich sentences. Try both."
+    },
+    {
+      "q": "Does it work in other languages?",
+      "a": "The stopword list is English. Other languages work poorly because common words are not filtered."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "readability",
+    "keyword-extractor",
+    "text-statistics",
+    "meta-description-suggester",
+    "sentiment-lexicon",
+    "ai-sentiment-classifier"
+  ],
+  "keywords": [
+    "text summarizer",
+    "extractive summary",
+    "textrank",
+    "summarize article offline"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "waterfall-chart-maker",
+ "seoTitle": "Waterfall Chart Maker for Gains, Losses and Totals",
+ "metaDescription": "Enter a start value then increases and decreases to draw a waterfall chart with running totals and subtotals. Free SVG.",
+ "intro": "Draws floating bars for each change on top of a running total, with subtotal bars where you leave the value blank.",
+ "why": "Waterfalls explain how you got from one number to another: profit bridges, headcount changes, budget variance. Start with the opening value and list each change.\n\nIncreases and decreases are coloured differently and also carry a plus or minus sign, so the picture does not depend on colour. A row with a blank value shows the running total as a subtotal bar. The table lists every step and the running total.",
+ "howTo": [
+  "Write rows label, value; leave the value blank for a subtotal.",
+  "Tick the final total option if you do not end with a subtotal row.",
+  "Set title and size.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Does the first row need to be a total?",
+   "a": "Its value is shown as the starting bar."
+  },
+  {
+   "q": "How are decreases drawn?",
+   "a": "In orange-red below the previous total with a minus sign."
+  },
+  {
+   "q": "Can the total go below zero?",
+   "a": "Yes, bars cross the zero line."
+  },
+  {
+   "q": "How many steps?",
+   "a": "Up to 60."
+  }
+ ],
+ "related": [
+  "bar-chart-maker",
+  "sankey-diagram-builder",
+  "pie-donut-chart-maker",
+  "marketing-funnel-calculator",
+  "gst-bas-calculator",
+  "csv-to-chart"
+ ],
+ "keywords": [
+  "waterfall chart maker",
+  "profit bridge chart",
+  "variance waterfall svg"
+ ]
+}

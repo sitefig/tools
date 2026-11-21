@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Tokenizer Visualizer: DeepSeek, Qwen, Mistral | Free Tools</title>
+<meta name="description" content="Pick DeepSeek, Qwen, Phi-4, Mistral, StarCoder2, GPT-2 or OpenAI encodings and see text as coloured tokens with ids and bytes. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/tokenizer-visualizer-hf/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/tokenizer-visualizer-hf/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/tokenizer-visualizer-hf/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Tokenizer Visualizer: DeepSeek, Qwen, Mistral | Free Tools">
+<meta property="og:description" content="Pick DeepSeek, Qwen, Phi-4, Mistral, StarCoder2, GPT-2 or OpenAI encodings and see text as coloured tokens with ids and bytes. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/tokenizer-visualizer-hf/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Tokenizer Visualizer: DeepSeek, Qwen, Mistral | Free Tools">
+<meta name="twitter:description" content="Pick DeepSeek, Qwen, Phi-4, Mistral, StarCoder2, GPT-2 or OpenAI encodings and see text as coloured tokens with ids and bytes. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Tokenizer Visualizer (DeepSeek, Qwen, Mistral, Phi, GPT-2, Claude legacy ...)","url":"https://tools.sitefig.net/en/tokenizer-visualizer-hf/","description":"Pick DeepSeek, Qwen, Phi-4, Mistral, StarCoder2, GPT-2 or OpenAI encodings and see text as coloured tokens with ids and bytes. Free, in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Pick an encoding from the list.","Paste or type your text, and choose plain or allow for special tokens.","Tick Show token ids if you want the ids printed in the coloured view.","Study the coloured tokens and the table of ids and bytes."],"keywords":"tokenizer visualizer, deepseek tokenizer online, qwen tokenizer visualizer, mistral tokenizer online, free bpe tokenizer viewer","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"LLM Tools","item":"https://tools.sitefig.net/en/#llm-tools"},{"@type":"ListItem","position":3,"name":"Tokenizer Visualizer (DeepSeek, Qwen, Mistral, Phi, GPT-2, Claude legacy ...)","item":"https://tools.sitefig.net/en/tokenizer-visualizer-hf/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are these exact tokenizers?","acceptedAnswer":{"@type":"Answer","text":"They are reimplementations of the public tokenizer definitions for the listed models and give the same splits as the originals in normal use. Very rare characters added in recent Unicode versions can differ slightly."}},{"@type":"Question","name":"Which encodings are missing?","acceptedAnswer":{"@type":"Answer","text":"Llama, Gemma and Gemini are gated or unpublished. Falcon, Phi-3-mini and Qwen3 use features that are not implemented. Claude 3 and later have no public vocabulary."}},{"@type":"Question","name":"What does the table show?","acceptedAnswer":{"@type":"Answer","text":"For each token: its position, id, the text it stands for, and its bytes in hex. Tokens that are only part of a multi-byte character are shown with escaped bytes instead of text."}},{"@type":"Question","name":"Is my text uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Only the static vocabulary file is fetched from this same site, once per encoding. The splitting itself happens in your browser."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#llm-tools">LLM Tools</a></li><li><span aria-current="page">Tokenizer Visualizer (DeepSeek, Qwen, Mistral, Phi, GPT-2, Claude legacy ...)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Tokenizer Visualizer (DeepSeek, Qwen, Mistral, Phi, GPT-2, Claude legacy ...)</h1>
+<p class="lede">Shows your text split into coloured tokens for a chosen encoding, with a table of ids and bytes. Choices include DeepSeek, Qwen, Phi-4, Mistral, StarCoder2, GPT-NeoX and the OpenAI encodings.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="tokenizer-visualizer-hf" data-module="tokenizer2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>When you work with an open-weight model you often need to see its tokenizer in action. Why does an indented block of code create so many tokens, how does the model split a Chinese phrase, and what happens to a trailing space? The model card rarely tells you.</p>
+<p>Select an encoding and paste your text. Each token is coloured, optionally labelled with its id, and listed in a table with its byte values, plus summary figures for tokens, characters and bytes. The vocabularies are re-implemented here from the public tokenizer files and loaded from this site when first used, then everything runs in your browser. Gemini, Llama and Gemma tokenizers are not included, and the Claude option is a legacy tokenizer that does not match current Claude models.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Pick an encoding from the list.</li><li>Paste or type your text, and choose plain or allow for special tokens.</li><li>Tick Show token ids if you want the ids printed in the coloured view.</li><li>Study the coloured tokens and the table of ids and bytes.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Are these exact tokenizers?</summary><p>They are reimplementations of the public tokenizer definitions for the listed models and give the same splits as the originals in normal use. Very rare characters added in recent Unicode versions can differ slightly.</p></details>
+<details><summary>Which encodings are missing?</summary><p>Llama, Gemma and Gemini are gated or unpublished. Falcon, Phi-3-mini and Qwen3 use features that are not implemented. Claude 3 and later have no public vocabulary.</p></details>
+<details><summary>What does the table show?</summary><p>For each token: its position, id, the text it stands for, and its bytes in hex. Tokens that are only part of a multi-byte character are shown with escaped bytes instead of text.</p></details>
+<details><summary>Is my text uploaded?</summary><p>No. Only the static vocabulary file is fetched from this same site, once per encoding. The splitting itself happens in your browser.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/multi-tokenizer-counter/"><span class="link-card__title">Multi-Tokenizer Token Counter (GPT, DeepSeek, Qwen, Mistral, Phi, ...)</span><span class="link-card__desc">Count the tokens of one text under every included tokenizer at once, sorted from fewest to most: gpt2 (GPT-2; identical ranks to r50k_base); r50k_base (GPT-3 davinci/curie/babbage/ada); p50k_base (text-davinci-002/003, Codex); cl100k_base (GPT-4, GPT-3.5-turbo); o200k_base (GPT-4o, GPT-4.1, o1/o3); DeepSeek-V3 (deepseek-ai/DeepSeek-V3); DeepSeek-R1 (deepseek-ai/DeepSeek-R1); Qwen2.5 (Qwen/Qwen2.5-7B); Phi-4 (microsoft/phi-4); GPT-NeoX-20B (Pythia, EleutherAI); StarCoder2 (bigcode/starcoder2); Mistral-7B-v0.3 (mistralai/Mistral-7B-v0.3); claude-legacy (LEGACY Claude 1/2 only, NOT Claude 3/4/5). Exact vocabularies, runs offline in your browser (vocabularies load on first use, about 20 MB in total). Exact for the listed models; LEGACY Claude 1/2 tokenizer (from the public npm package @anthropic-ai/tokenizer). It is NOT accurate for Claude 3, 4 or 5-family models: Anthropic has not published those vocabularies. Gemini, Llama, Gemma and Claude 3+ tokenizers are not included (gated or unpublished).</span></a></li><li><a class="link-card" href="/en/tiktoken-visualizer/"><span class="link-card__title">Tiktoken Tokenizer Visualizer (cl100k / o200k)</span><span class="link-card__desc">Exact OpenAI BPE tokenization (cl100k_base (GPT-4, GPT-3.5-turbo, embeddings v2/v3), o200k_base (GPT-4o, GPT-4.1, o1/o3 families)) shown as coloured tokens plus a table of ids and bytes. Runs offline in your browser. Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/token-ids-to-text-multi/"><span class="link-card__title">Token IDs &lt;-&gt; Text (all encodings)</span><span class="link-card__desc">Convert token ids to text and text to token ids with any included encoding: gpt2 (GPT-2; identical ranks to r50k_base); r50k_base (GPT-3 davinci/curie/babbage/ada); p50k_base (text-davinci-002/003, Codex); cl100k_base (GPT-4, GPT-3.5-turbo); o200k_base (GPT-4o, GPT-4.1, o1/o3); DeepSeek-V3 (deepseek-ai/DeepSeek-V3); DeepSeek-R1 (deepseek-ai/DeepSeek-R1); Qwen2.5 (Qwen/Qwen2.5-7B); Phi-4 (microsoft/phi-4); GPT-NeoX-20B (Pythia, EleutherAI); StarCoder2 (bigcode/starcoder2); Mistral-7B-v0.3 (mistralai/Mistral-7B-v0.3); claude-legacy (LEGACY Claude 1/2 only, NOT Claude 3/4/5). Exact for the listed models; LEGACY Claude 1/2 tokenizer (from the public npm package @anthropic-ai/tokenizer). It is NOT accurate for Claude 3, 4 or 5-family models: Anthropic has not published those vocabularies. Gemini, Llama, Gemma and Claude 3+ tokenizers are not included (gated or unpublished).</span></a></li><li><a class="link-card" href="/en/gpt-token-counter/"><span class="link-card__title">GPT Token Counter (cl100k + o200k, chat overhead)</span><span class="link-card__desc">Exact token counts for text under cl100k_base and o200k_base side by side, plus an approximate chat-message overhead calculator (OpenAI cookbook rule: 3 tokens per message, +1 per name, +3 reply priming; use o200k_base for the GPT-4o family). Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/text-chunk-splitter/"><span class="link-card__title">Text Chunk Splitter (RAG)</span><span class="link-card__desc">Split text into overlapping chunks by characters or approximate tokens, preferring paragraph/sentence boundaries.</span></a></li><li><a class="link-card" href="/en/llm-token-estimator/"><span class="link-card__title">LLM Token Count Estimator (approximate)</span><span class="link-card__desc">ESTIMATE of token counts for GPT-4o, GPT-4, Claude, DeepSeek and Llama from text, using per-model chars-per-token ratios and a word/punctuation heuristic. No vocabulary is available offline, so counts are approximate (typically within 10-20% for English).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

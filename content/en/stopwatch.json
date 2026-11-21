@@ -1,0 +1,46 @@
+{
+ "id": "stopwatch",
+ "seoTitle": "Free Online Stopwatch with Lap Times",
+ "metaDescription": "A simple online stopwatch with start, stop, lap and reset, showing minutes, seconds and hundredths. Free, and it runs in your browser.",
+ "intro": "Start, stop and reset a stopwatch and record lap times. It shows minutes, seconds and hundredths, with each lap's split and cumulative time listed below.",
+ "why": "Sometimes you just need a stopwatch: timing a run, a presentation, a chemistry experiment, a kid's turn at a game, or how long a meeting really took. A phone clock app works, but a browser tab is often closer to hand, particularly on a desktop or a shared computer. This one keeps it plain: start, stop, lap and reset, with the display updating many times a second and laps listed newest first, showing both the lap split and the running total. It measures time using your computer's clock rather than counting ticks, so it stays accurate if the tab is busy. Nothing is recorded or sent anywhere, and laps vanish when you close the page.",
+ "howTo": [
+  "Press Start to begin timing.",
+  "Press Lap to record a split without stopping the clock.",
+  "Press Stop to pause, Start to resume, or Reset to clear the time and laps."
+ ],
+ "faq": [
+  {
+   "q": "How accurate is the stopwatch?",
+   "a": "It reads the system clock rather than adding up timer ticks, so the total is reliable. The display refreshes about 20 times a second, and hundredths are shown, but it is not suited to scientific timing."
+  },
+  {
+   "q": "Does it keep running if I switch tabs?",
+   "a": "Yes, the elapsed time is based on the clock, so the total is correct when you return. The display may not update while the tab is hidden, but it catches up."
+  },
+  {
+   "q": "Are my laps saved?",
+   "a": "No. Laps and times live only in the open page and are lost when you close or reload it. Copy them out if you need a record."
+  },
+  {
+   "q": "What do the two times beside each lap mean?",
+   "a": "The first is the lap's own split, the time since the previous lap. The one in brackets is the total elapsed time at that lap."
+  }
+ ],
+ "related": [
+  "countdown-timer",
+  "pomodoro-timer",
+  "exam-section-timer",
+  "world-clock",
+  "time-duration-calculator",
+  "countdown-to-date"
+ ],
+ "keywords": [
+  "online stopwatch",
+  "free stopwatch",
+  "stopwatch with laps",
+  "browser stopwatch",
+  "lap timer online",
+  "simple stopwatch"
+ ]
+}

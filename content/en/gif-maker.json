@@ -1,0 +1,46 @@
+{
+ "id": "gif-maker",
+ "seoTitle": "Free GIF Maker - Combine Images into an Animated GIF",
+ "metaDescription": "Turn several images into an animated GIF with your own frame delay, width and looping. Built-in encoder, free, and nothing leaves your browser.",
+ "intro": "Select several images and combine them into one animated GIF. Choose the frame delay, the maximum width and whether it loops forever.",
+ "why": "A short animated GIF is still the easiest way to show a before and after, a step-by-step walkthrough or a few product shots in a place that does not accept video, such as an email, a README or a support ticket. Online GIF makers often upload your pictures, add a watermark or restrict the number of frames.\n\nThis maker builds the file in your browser with its own GIF89a encoder. Frames are used in the order you select them, resized to fit the first image's proportions and placed on a white background so transparent areas do not turn black. Colours are reduced to a single 256-colour palette shared by all frames, which keeps files small but can band on photos. Nothing is uploaded, and the result is a normal .gif download.",
+ "howTo": [
+  "Choose two or more images; they become frames in the order selected.",
+  "Set the frame delay in milliseconds and the maximum width in pixels.",
+  "Tick Loop forever if the animation should repeat.",
+  "Run the tool and download animation.gif."
+ ],
+ "faq": [
+  {
+   "q": "What order are the frames in?",
+   "a": "The order in which your files are selected. If the order is wrong, select them again one at a time in the order you want, or rename the files so they sort correctly in the picker."
+  },
+  {
+   "q": "Why do photos look grainy?",
+   "a": "GIF allows only 256 colours, and this encoder uses one palette for every frame. Illustrations, screenshots and logos look fine, while photographs with gradients can show banding."
+  },
+  {
+   "q": "Which size does the GIF use?",
+   "a": "The width is the smaller of your setting and the first image's width, and the height follows its proportions. Other images are fitted inside that frame without stretching, centred on white."
+  },
+  {
+   "q": "How long can the animation be?",
+   "a": "There is no fixed frame limit, but file size grows with frames and dimensions, and the work runs in your browser's memory. Keep width modest for long animations. The shortest delay is 20 ms."
+  }
+ ],
+ "related": [
+  "video-to-gif",
+  "image-resizer",
+  "image-compressor",
+  "image-collage",
+  "image-format-converter",
+  "image-diff"
+ ],
+ "keywords": [
+  "gif maker",
+  "images to gif online",
+  "create animated gif",
+  "make gif from pictures",
+  "free gif creator no upload"
+ ]
+}

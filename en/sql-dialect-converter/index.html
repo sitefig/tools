@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free SQL DDL Converter: PostgreSQL, MySQL and SQLite | Free Tools</title>
+<meta name="description" content="Convert CREATE TABLE and CREATE INDEX DDL between PostgreSQL, MySQL and SQLite, mapping types, defaults and keys. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/sql-dialect-converter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/sql-dialect-converter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/sql-dialect-converter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free SQL DDL Converter: PostgreSQL, MySQL and SQLite | Free Tools">
+<meta property="og:description" content="Convert CREATE TABLE and CREATE INDEX DDL between PostgreSQL, MySQL and SQLite, mapping types, defaults and keys. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/sql-dialect-converter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free SQL DDL Converter: PostgreSQL, MySQL and SQLite | Free Tools">
+<meta name="twitter:description" content="Convert CREATE TABLE and CREATE INDEX DDL between PostgreSQL, MySQL and SQLite, mapping types, defaults and keys. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"SQL DDL Converter (PostgreSQL / MySQL / SQLite)","url":"https://tools.sitefig.net/en/sql-dialect-converter/","description":"Convert CREATE TABLE and CREATE INDEX DDL between PostgreSQL, MySQL and SQLite, mapping types, defaults and keys. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your CREATE TABLE and CREATE INDEX statements in any of the three dialects.","Choose the target dialect: MySQL, PostgreSQL or SQLite.","Review the converted DDL, add anything that was not carried over, and test it on a scratch database."],"keywords":"sql dialect converter, postgres to mysql ddl, mysql to postgresql converter, sqlite to postgres schema, free ddl converter","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SQL Tools","item":"https://tools.sitefig.net/en/#sql-tools"},{"@type":"ListItem","position":3,"name":"SQL DDL Converter (PostgreSQL / MySQL / SQLite)","item":"https://tools.sitefig.net/en/sql-dialect-converter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which type mappings does it apply?","acceptedAnswer":{"@type":"Answer","text":"Typical ones: SERIAL and AUTO_INCREMENT, BOOLEAN and TINYINT(1), TIMESTAMPTZ and DATETIME, UUID and CHAR(36), JSONB and JSON. Defaults such as now() and true/false are translated too."}},{"@type":"Question","name":"What is not converted?","acceptedAnswer":{"@type":"Answer","text":"Views, triggers, functions, partitions and CHECK constraints are left out. Dialect-specific features without an equivalent need manual work."}},{"@type":"Question","name":"Can I migrate data with it?","acceptedAnswer":{"@type":"Answer","text":"No. It converts structure only. Use your database tools for data export and import, and check that the converted types suit your values."}},{"@type":"Question","name":"Is the output safe to run directly?","acceptedAnswer":{"@type":"Answer","text":"Treat it as a draft. Run it on a test database first, because subtle differences in types, collations and default values can change behaviour."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#sql-tools">SQL Tools</a></li><li><span aria-current="page">SQL DDL Converter (PostgreSQL / MySQL / SQLite)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>SQL DDL Converter (PostgreSQL / MySQL / SQLite)</h1>
+<p class="lede">Converts CREATE TABLE and CREATE INDEX statements between PostgreSQL, MySQL and SQLite, mapping types such as SERIAL, AUTO_INCREMENT, BOOLEAN, UUID and JSONB, plus defaults, quoting, keys and indexes.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="sql-dialect-converter" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Moving a schema from one database to another is mostly mechanical, which is exactly why it is easy to get wrong. SERIAL becomes AUTO_INCREMENT, BOOLEAN becomes TINYINT(1), TIMESTAMPTZ becomes DATETIME, identifiers change from double quotes to backticks, and defaults like now() need rewriting. This tool parses your DDL and writes it again for the target dialect, including primary keys, unique constraints, foreign keys and indexes. It is useful when you prototype on SQLite and deploy on PostgreSQL, or port a MySQL schema. It handles table structure only: views, triggers, functions, partitions and CHECK constraints are not carried over, so review the result before running it. Your schema stays in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your CREATE TABLE and CREATE INDEX statements in any of the three dialects.</li><li>Choose the target dialect: MySQL, PostgreSQL or SQLite.</li><li>Review the converted DDL, add anything that was not carried over, and test it on a scratch database.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which type mappings does it apply?</summary><p>Typical ones: SERIAL and AUTO_INCREMENT, BOOLEAN and TINYINT(1), TIMESTAMPTZ and DATETIME, UUID and CHAR(36), JSONB and JSON. Defaults such as now() and true/false are translated too.</p></details>
+<details><summary>What is not converted?</summary><p>Views, triggers, functions, partitions and CHECK constraints are left out. Dialect-specific features without an equivalent need manual work.</p></details>
+<details><summary>Can I migrate data with it?</summary><p>No. It converts structure only. Use your database tools for data export and import, and check that the converted types suit your values.</p></details>
+<details><summary>Is the output safe to run directly?</summary><p>Treat it as a draft. Run it on a test database first, because subtle differences in types, collations and default values can change behaviour.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/sql-to-prisma/"><span class="link-card__title">SQL DDL to Prisma Schema</span><span class="link-card__desc">Convert CREATE TABLE statements (PostgreSQL, MySQL or SQLite syntax) to a schema.prisma: models with @id, @default(autoincrement()/now()), @unique, @map/@@map for snake_case columns, @db.* native types, composite @@id/@@unique/@@index, foreign keys as @relation with generated back-relation lists.</span></a></li><li><a class="link-card" href="/en/prisma-to-sql/"><span class="link-card__title">Prisma Schema to SQL DDL</span><span class="link-card__desc">Convert a schema.prisma (models, enums, @id, @unique, @default, @map/@@map, @db.* types, @relation foreign keys, @@id/@@unique/@@index) into CREATE TABLE statements for PostgreSQL, MySQL or SQLite. Follows Prisma default type mappings (String -&gt; text / varchar(191) on MySQL); client-side defaults such as uuid()/cuid() produce no SQL default.</span></a></li><li><a class="link-card" href="/en/sql-format/"><span class="link-card__title">SQL Formatter</span><span class="link-card__desc">Uppercase keywords and lay out clauses, joins and subqueries on separate lines.</span></a></li><li><a class="link-card" href="/en/sql-to-typescript/"><span class="link-card__title">SQL CREATE TABLE to TypeScript</span><span class="link-card__desc">Turn CREATE TABLE statements (MySQL, PostgreSQL, SQLite flavours) into TypeScript interfaces: NOT NULL columns become required, nullable ones get &quot;| null&quot;. Handles quoted identifiers, constraints and IF NOT EXISTS.</span></a></li><li><a class="link-card" href="/en/sql-ddl-to-diagram/"><span class="link-card__title">SQL DDL to ER Diagram</span><span class="link-card__desc">Paste CREATE TABLE statements (columns, PRIMARY KEY, FOREIGN KEY ... REFERENCES, inline REFERENCES, UNIQUE, NOT NULL, ALTER TABLE ... ADD FOREIGN KEY) and get an entity-relationship diagram as SVG with crow's-foot notation. Generic SQL, MySQL, PostgreSQL and SQLite syntax work; other statements are ignored.</span></a></li><li><a class="link-card" href="/en/sql-to-drizzle/"><span class="link-card__title">SQL DDL to Drizzle ORM Schema</span><span class="link-card__desc">Convert CREATE TABLE statements into a Drizzle ORM TypeScript schema for PostgreSQL (pg-core), MySQL (mysql-core) or SQLite (sqlite-core): column builders, primaryKey/notNull/unique/default/defaultNow, references() with onDelete, composite primary keys and indexes.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

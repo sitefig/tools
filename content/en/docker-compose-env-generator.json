@@ -1,0 +1,45 @@
+{
+ "id": "docker-compose-env-generator",
+ "seoTitle": "Free Docker Compose Environment Generator from .env",
+ "metaDescription": "Generate a compose environment block or env_file setup from a .env file, or extract variables from a docker-compose.yml into .env.example. Free.",
+ "intro": "Works both ways: from a .env file it writes a compose \"environment:\" block with ${VAR:-default} interpolation or an env_file entry, and from a docker-compose.yml it extracts variables into a .env.example.",
+ "why": "Compose files and .env files drift apart. A new variable gets added to one and forgotten in the other, and someone spends an hour finding out why a container starts without its password. This helper keeps them in step. Give it a .env and it writes the environment section for a service, with ${VAR:-default} interpolation so the file works with or without a local .env, or an env_file reference instead. Give it a docker-compose.yml and it collects every ${VAR}, ${VAR:-default} and environment key into a ready .env.example. Which direction applies is your choice in the mode menu. Everything is processed in your browser, so config containing passwords is not uploaded.",
+ "howTo": [
+  "Choose the mode: .env to compose environment, .env to compose env_file, or compose to .env.example.",
+  "Paste the .env file or the docker-compose.yml into the input box and set the service name.",
+  "Decide whether to use ${VAR:-default} interpolation, then copy the result."
+ ],
+ "faq": [
+  {
+   "q": "What does interpolation add?",
+   "a": "Each variable is written as ${NAME:-default}, using the value from your .env as the default. Compose then reads NAME from the environment or a .env file, and falls back to the default."
+  },
+  {
+   "q": "What does the compose to .env.example mode collect?",
+   "a": "Every ${VAR} and ${VAR:-default} reference, and the keys under environment, so the example file lists everything the stack can be configured with."
+  },
+  {
+   "q": "Does it hide secrets in the default values?",
+   "a": "No. Defaults are written as they appear in your .env. Use the .env sanitizer first if the values are real secrets."
+  },
+  {
+   "q": "When should I use env_file instead?",
+   "a": "env_file keeps the compose file short and loads every variable from a file. Explicit environment entries document what the service needs. Choose what suits your team."
+  }
+ ],
+ "related": [
+  "env-sanitizer",
+  "docker-compose-generator",
+  "docker-compose-formatter",
+  "env-to-json",
+  "json-to-env",
+  "docker-run-to-compose"
+ ],
+ "keywords": [
+  "docker compose environment generator",
+  "env to docker compose",
+  "compose env_file example",
+  "free docker env tool",
+  "docker compose to env example"
+ ]
+}

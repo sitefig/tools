@@ -1,0 +1,45 @@
+{
+ "id": "icc-profile-inspector",
+ "seoTitle": "ICC Colour Profile Inspector for JPEG, PNG and WebP",
+ "metaDescription": "See whether an image carries an embedded ICC colour profile and read its name, colour space, version, white point, primaries and curves, with a check...",
+ "intro": "See which colour profile an image carries.",
+ "why": "Choose JPEG, PNG or WebP files. The tool reads the embedded ICC profile and shows its name, version, colour space, rendering intent, white point, primaries and curve type, and whether the primaries match sRGB.\n\nIt only reads. It does not convert pixels to sRGB, because that needs a colour management engine that is not included. If the profile is wider than sRGB, convert in an image editor before sharing on the web if colours matter.",
+ "howTo": [
+  "Choose images.",
+  "Read the profile summary.",
+  "Check the sRGB line.",
+  "Convert elsewhere if needed."
+ ],
+ "faq": [
+  {
+   "q": "What if there is no profile?",
+   "a": "Browsers treat the image as sRGB."
+  },
+  {
+   "q": "Why do my colours look dull on some sites?",
+   "a": "A wide-gamut profile such as Display P3 shown by software that ignores it will look washed out."
+  },
+  {
+   "q": "Does it handle HEIC?",
+   "a": "No. Convert to JPEG first."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "exif-viewer",
+  "image-info",
+  "color-converter",
+  "css-color-formats",
+  "image-histogram-viewer",
+  "iptc-copyright-metadata-editor"
+ ],
+ "keywords": [
+  "ICC profile viewer",
+  "check color profile",
+  "sRGB check",
+  "display p3 image"
+ ]
+}

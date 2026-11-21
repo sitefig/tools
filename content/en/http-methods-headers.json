@@ -1,0 +1,47 @@
+{
+ "id": "http-methods-headers",
+ "seoTitle": "Free HTTP Methods and Headers Reference Cheat Sheet",
+ "metaDescription": "Quick reference for HTTP methods (safe, idempotent) and common request and response headers, searchable in your browser. Free and works offline once loaded.",
+ "intro": "A searchable reference for HTTP methods, with notes on which are safe or idempotent, and for the common request and response headers. Filter by name or keyword.",
+ "why": "When you design an API or debug a request, small details matter: is PUT idempotent, should a retry of POST be allowed, does a cache look at Vary, which header carries the redirect target? These facts are scattered over RFCs and blog posts.\n\nThis cheat sheet puts the nine methods and the headers you meet most often in one filterable list. Each line says whether the header belongs to requests, responses or both, with an example value where it helps. Search for \"cors\", \"cache\" or \"cookie\" to see the related set. It is a quick memory aid, not a replacement for the specifications.",
+ "howTo": [
+  "Open the tool to see all methods and headers.",
+  "Type a word such as POST, cache, cors or cookie into the filter.",
+  "Read the description, including direction (request or response) and typical values.",
+  "Copy the entries you need for your API documentation."
+ ],
+ "faq": [
+  {
+   "q": "What do safe and idempotent mean?",
+   "a": "A safe method does not change server state, like GET or HEAD. An idempotent method has the same effect when repeated, like PUT or DELETE. GET is both. POST is neither, so retrying it can create duplicates."
+  },
+  {
+   "q": "When should I use PUT and when PATCH?",
+   "a": "PUT replaces the whole resource with what you send. PATCH changes only the fields you send. If a client may send partial updates, use PATCH. Define clearly what happens to omitted fields either way."
+  },
+  {
+   "q": "Does the list include every header?",
+   "a": "No. It covers the common standard headers plus a few widespread extras like X-Forwarded-For. Rare, experimental or vendor-specific headers are left out."
+  },
+  {
+   "q": "Where can I check the real header values of a site?",
+   "a": "Paste response headers into the HTTP Headers Analyzer, which reviews security and caching headers. This page is a reference only and does not fetch anything."
+  }
+ ],
+ "related": [
+  "http-status-reference",
+  "http-headers-analyzer",
+  "http-headers-to-json",
+  "cors-preflight-inspector",
+  "security-headers-generator",
+  "cache-control-builder"
+ ],
+ "keywords": [
+  "http methods reference",
+  "http headers list",
+  "idempotent http methods",
+  "free http cheat sheet",
+  "common http request headers",
+  "get vs post vs put"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "xor-one-time-pad",
+ "seoTitle": "Free XOR Cipher & One-Time Pad Calculator",
+ "metaDescription": "Free online XOR cipher and one-time pad tool. XOR a message with a key, repeat a short key or generate a random pad, all in your browser.",
+ "intro": "XOR a message with a key and get hex, base64 or text back. You can supply the key, repeat a short one, or let the tool generate a random pad as long as the message.",
+ "why": "XOR is the building block behind stream ciphers and the one-time pad, and it turns up constantly in CTF puzzles and malware samples. Doing it on paper is slow, and a quick script usually forgets about key length or encoding. This tool makes the rules visible.\n\nA true one-time pad needs a random key at least as long as the message, used once. If your key is shorter, the tool refuses unless you tick the repeat option, which gives you the weak Vernam-style cipher that is easy to break. You can also generate a random pad and see it in hex. Everything runs in your browser, so the message and key are not uploaded. It is for learning and puzzles, not for protecting real data.",
+ "howTo": [
+  "Enter the message and choose whether it is text, hex or base64.",
+  "Enter the key or pad and choose its format, or tick Generate a random pad.",
+  "Tick Repeat only if you accept a short key being reused over the message.",
+  "Choose the output format and copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Why does the tool refuse my short key?",
+   "a": "A one-time pad needs a key at least as long as the message. Tick the repeat option to cycle a shorter key anyway, but understand that this is no longer a one-time pad and is easy to break."
+  },
+  {
+   "q": "How do I decrypt?",
+   "a": "XOR is its own inverse. Put the ciphertext in the message box with the right format (hex or base64), use the same key, and choose text as the output to read the original."
+  },
+  {
+   "q": "Is the generated pad truly random?",
+   "a": "It comes from the browser's cryptographic random generator, which is suitable for this purpose. The pad is shown in hex above the result. You must store it safely and never use it a second time."
+  },
+  {
+   "q": "Can I use this to protect real messages?",
+   "a": "Not in practice. The security of a one-time pad depends on how you create, share and destroy the pad, and this page cannot do that for you. Treat it as a learning and puzzle tool."
+  }
+ ],
+ "related": [
+  "chacha20-poly1305",
+  "aes-modes-demo",
+  "classical-ciphers",
+  "hex-text",
+  "binary-text",
+  "base64-encode"
+ ],
+ "keywords": [
+  "xor cipher online",
+  "one time pad online",
+  "xor calculator",
+  "vernam cipher tool",
+  "free xor encrypt decrypt",
+  "xor hex strings"
+ ]
+}

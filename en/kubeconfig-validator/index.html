@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free kubeconfig Validator - Check Your kubectl Config | Free Tools</title>
+<meta name="description" content="Validate a kubeconfig: clusters, users and contexts cross-references, certificate data, exec plugins and risky settings. Credentials are never printed. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/kubeconfig-validator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/kubeconfig-validator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/kubeconfig-validator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free kubeconfig Validator - Check Your kubectl Config | Free Tools">
+<meta property="og:description" content="Validate a kubeconfig: clusters, users and contexts cross-references, certificate data, exec plugins and risky settings. Credentials are never printed. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/kubeconfig-validator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free kubeconfig Validator - Check Your kubectl Config | Free Tools">
+<meta name="twitter:description" content="Validate a kubeconfig: clusters, users and contexts cross-references, certificate data, exec plugins and risky settings. Credentials are never printed. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"kubeconfig Validator","url":"https://tools.sitefig.net/en/kubeconfig-validator/","description":"Validate a kubeconfig: clusters, users and contexts cross-references, certificate data, exec plugins and risky settings. Credentials are never printed. Free.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your kubeconfig YAML into the input box. Remove secrets first if you prefer.","Run the validation to see errors, warnings and unused entries.","Fix the listed problems in your file and test with kubectl config view."],"keywords":"kubeconfig validator, check kubeconfig file online, kubectl config validator, free kubeconfig linter, kubeconfig context cluster user check","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"kubeconfig Validator","item":"https://tools.sitefig.net/en/kubeconfig-validator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does it check?","acceptedAnswer":{"@type":"Answer","text":"Required top-level fields, that clusters, users and contexts have names, that contexts reference existing clusters and users, current-context, duplicate or unused entries, server URLs, and the encoding of certificate data."}},{"@type":"Question","name":"Are my credentials shown?","acceptedAnswer":{"@type":"Answer","text":"No. Tokens and key data are checked but not printed in the report. Still, avoid pasting live production credentials into any page you do not trust."}},{"@type":"Question","name":"What risky settings does it flag?","acceptedAnswer":{"@type":"Answer","text":"insecure-skip-tls-verify, tokens embedded in the file, and plain HTTP server URLs. Exec plugins are noted so you remember they depend on the local command being installed."}},{"@type":"Question","name":"Does it connect to the cluster?","acceptedAnswer":{"@type":"Answer","text":"No. It checks the file only and cannot tell whether the server is reachable or the credentials are accepted."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">kubeconfig Validator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>kubeconfig Validator</h1>
+<p class="lede">Validates a kubectl kubeconfig: required fields, cross-references between clusters, users and contexts, current-context, duplicates and unused entries, server URLs, certificate data and risky settings.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="kubeconfig-validator" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A kubeconfig is a YAML file that glues together clusters, users and contexts by name, and a single wrong name gives a vague kubectl error. Merged files from several clouds collect duplicates, unused users and stale contexts. This tool checks the structure: required fields, whether every context points to a cluster and a user that exist, whether current-context is valid, and whether server URLs look right. It also decodes certificate-authority-data and client-certificate-data to confirm the base64 and PEM are sane, notes exec plugins, and warns about risky settings such as insecure-skip-tls-verify and embedded tokens. Credentials are never printed in the report. The file is checked in your browser, so keys are not uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your kubeconfig YAML into the input box. Remove secrets first if you prefer.</li><li>Run the validation to see errors, warnings and unused entries.</li><li>Fix the listed problems in your file and test with kubectl config view.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What does it check?</summary><p>Required top-level fields, that clusters, users and contexts have names, that contexts reference existing clusters and users, current-context, duplicate or unused entries, server URLs, and the encoding of certificate data.</p></details>
+<details><summary>Are my credentials shown?</summary><p>No. Tokens and key data are checked but not printed in the report. Still, avoid pasting live production credentials into any page you do not trust.</p></details>
+<details><summary>What risky settings does it flag?</summary><p>insecure-skip-tls-verify, tokens embedded in the file, and plain HTTP server URLs. Exec plugins are noted so you remember they depend on the local command being installed.</p></details>
+<details><summary>Does it connect to the cluster?</summary><p>No. It checks the file only and cannot tell whether the server is reachable or the credentials are accepted.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/k8s-manifest-validator/"><span class="link-card__title">Kubernetes Manifest Validator</span><span class="link-card__desc">Structural lint of YAML manifests: apiVersion/kind pairs, names, selectors vs labels, container images, resources, probes, privileged mode.</span></a></li><li><a class="link-card" href="/en/docker-compose-to-k8s/"><span class="link-card__title">Docker Compose to Kubernetes Manifests</span><span class="link-card__desc">Convert a docker-compose.yml into Kubernetes YAML: one Deployment per service (image, command/entrypoint, environment, resources from deploy.resources, healthcheck -&gt; livenessProbe, replicas), a Service for published/exposed ports, PersistentVolumeClaims for named volumes and optionally a Secret for password/token-like variables. Constructs without an equivalent (depends_on, build, env_file, bind mounts) are listed as NOTE comments.</span></a></li><li><a class="link-card" href="/en/yaml-format/"><span class="link-card__title">YAML Formatter</span><span class="link-card__desc">Re-indent and normalise YAML (comments are not preserved; anchors are expanded).</span></a></li><li><a class="link-card" href="/en/x509-viewer/"><span class="link-card__title">X.509 Certificate Viewer</span><span class="link-card__desc">Paste a PEM certificate: subject, issuer, validity, SANs, key info and fingerprints.</span></a></li><li><a class="link-card" href="/en/jwt-decode/"><span class="link-card__title">JWT Decoder</span><span class="link-card__desc">Decode a JWT header and payload with human-readable exp/iat/nbf. Does not verify the signature.</span></a></li><li><a class="link-card" href="/en/kubernetes-deployment-generator/"><span class="link-card__title">Kubernetes Deployment Generator</span><span class="link-card__desc">Deployment with probes, resources, hardened securityContext, plus optional Service, HPA and Ingress in one multi-document YAML.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

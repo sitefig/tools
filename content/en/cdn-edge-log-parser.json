@@ -1,0 +1,44 @@
+{
+ "id": "cdn-edge-log-parser",
+ "seoTitle": "CDN Edge Log Parser for Fastly and Akamai Formats",
+ "metaDescription": "Name your CDN log fields once and get cache hit ratio, status codes, top URLs and bytes. Works with Fastly custom formats and similar. Free.",
+ "intro": "A configurable parser: choose the delimiter and name the fields, and it summarises cache and status.",
+ "why": "CDN log formats are set by you, so no fixed parser fits. Here you list the field names in order and say which one holds the status, cache result and bytes.\n\nA cache value containing HIT counts as a hit and MISS as a miss. PASS and other values are listed on their own.",
+ "howTo": [
+  "Choose the delimiter used in your log.",
+  "List the field names in order.",
+  "Name the status, cache, URL and bytes fields.",
+  "Paste the log and read the summary."
+ ],
+ "faq": [
+  {
+   "q": "Where do I find my field order?",
+   "a": "In the logging endpoint format of Fastly or the DataStream stream settings of Akamai."
+  },
+  {
+   "q": "Are quotes handled?",
+   "a": "Yes. Quoted values are kept whole."
+  },
+  {
+   "q": "Which cache values count as hits?",
+   "a": "Anything containing HIT, such as HIT, TCP_HIT or REFRESH_HIT."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "cloudfront-log-parser",
+  "cloudflare-logpush-viewer",
+  "access-log-parser",
+  "log-to-csv",
+  "compression-size-estimator",
+  "log-format-detector"
+ ],
+ "keywords": [
+  "fastly log parser",
+  "akamai datastream log analysis",
+  "cdn cache hit ratio from logs"
+ ]
+}

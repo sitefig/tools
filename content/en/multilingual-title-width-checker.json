@@ -1,0 +1,44 @@
+{
+ "id": "multilingual-title-width-checker",
+ "seoTitle": "Multilingual Title Width Checker for CJK, Thai, Arabic and Cyrillic",
+ "metaDescription": "Estimate title pixel width per script and see where each title would be cut off. CJK characters are about twice the width of Latin ones.",
+ "intro": "Estimates how wide each title is in pixels using per-script glyph widths and shows the likely truncation point.",
+ "why": "Search results truncate titles by pixel width, not characters. A Japanese title fills the same space with half as many characters as an English one, while Thai and Arabic fall in between. The tool assigns each character a width for its script, sums them at your font size and shows where a limit would cut the title.\n\nThe numbers are estimates: Google does not publish its font metrics or an exact limit, and 600px at 20px is only a common rule of thumb. Use it to compare titles and to avoid obviously long ones.",
+ "howTo": [
+  "Paste titles, one per line.",
+  "Set the width limit and font size if you use different assumptions.",
+  "Read the estimate and cut-off preview.",
+  "Shorten titles marked REVIEW."
+ ],
+ "faq": [
+  {
+   "q": "How accurate is it?",
+   "a": "It is a rough guide, not a measurement."
+  },
+  {
+   "q": "Why 600px?",
+   "a": "It is a widely quoted community figure; Google does not state a limit."
+  },
+  {
+   "q": "Are combining marks counted?",
+   "a": "They have zero width in the estimate."
+  },
+  {
+   "q": "Does it replace the Title Length Checker?",
+   "a": "It complements it for non-Latin scripts."
+  }
+ ],
+ "related": [
+  "title-length-checker",
+  "meta-analyzer",
+  "rtl-layout-checker",
+  "hreflang-code-checker",
+  "language-detector"
+ ],
+ "keywords": [
+  "title width pixels",
+  "cjk title length",
+  "thai title seo",
+  "multilingual serp preview"
+ ]
+}

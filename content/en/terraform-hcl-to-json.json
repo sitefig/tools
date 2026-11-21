@@ -1,0 +1,45 @@
+{
+ "id": "terraform-hcl-to-json",
+ "seoTitle": "Free Terraform HCL to JSON Converter Online",
+ "metaDescription": "Parse Terraform HCL2 into JSON using the Terraform JSON syntax shape, with labelled blocks nested and expressions kept as strings. Free, in browser.",
+ "intro": "Parses Terraform or HCL2 configuration into JSON. Labelled blocks nest by label, unlabelled blocks become arrays, and non-literal expressions are kept as \"${...}\" strings, as in the Terraform JSON syntax.",
+ "why": "Scripts, policy checks and documentation tools can read JSON easily, but Terraform is written in HCL. Reading .tf files from a script usually means installing a parser, and hand-converting a resource block is tedious. Paste the configuration here and get JSON in the structure Terraform itself accepts: resource.aws_instance.web style nesting, repeated unlabelled blocks as arrays, literals as values and references, function calls, conditionals and for expressions kept as \"${...}\" strings. Comments and heredocs are handled. Dynamic blocks are not expanded, so you see them as written. Because it parses your text locally, infrastructure code with internal names is not uploaded.",
+ "howTo": [
+  "Paste your Terraform or HCL configuration into the input box.",
+  "Set the indentation of the JSON output.",
+  "Copy the JSON for your script, policy check or documentation."
+ ],
+ "faq": [
+  {
+   "q": "What structure does the JSON have?",
+   "a": "It follows the Terraform JSON syntax: labelled blocks nest by label, such as resource, then type, then name. Blocks without labels become arrays of objects."
+  },
+  {
+   "q": "How are expressions handled?",
+   "a": "Anything that is not a literal, such as var.region, a function call, a conditional or a for expression, is written as a \"${...}\" string, and is not evaluated."
+  },
+  {
+   "q": "Are dynamic blocks expanded?",
+   "a": "No. The tool converts the syntax only and evaluates nothing, so dynamic blocks, count and for_each remain as written in the JSON and are not expanded into separate resources."
+  },
+  {
+   "q": "Can I convert the JSON back to HCL?",
+   "a": "Yes, the YAML / JSON to Terraform HCL tool on this site writes HCL from the same JSON shape."
+  }
+ ],
+ "related": [
+  "terraform-hcl-to-yaml",
+  "yaml-to-terraform-hcl",
+  "terraform-formatter",
+  "terraform-scaffolder",
+  "json-to-yaml",
+  "yaml-to-json"
+ ],
+ "keywords": [
+  "terraform hcl to json",
+  "convert tf to json",
+  "hcl2 parser online",
+  "free terraform json converter",
+  "hcl to json"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "html-minify",
+ "seoTitle": "Free HTML Minifier - Compress HTML Online",
+ "metaDescription": "Free online HTML minifier. Remove comments and unnecessary whitespace from HTML, keep pre blocks intact and minify inline CSS and JavaScript.",
+ "intro": "Shrink HTML by removing comments and unneeded whitespace. Content of pre elements is kept, and inline style and script blocks are minified as well.",
+ "why": "Every byte of HTML delays the first paint a little, and templates are usually written with generous indentation and comments for developers. Removing those before deployment makes pages smaller with no change for visitors.\n\nThe minifier collapses whitespace between tags, strips comments unless you choose to keep them, and shrinks the CSS and JavaScript inside style and script blocks. Text in pre elements is protected because its spaces are meaningful. It is useful for a static page, an email template, or a snippet you want to embed in a string. Always test the result in a browser, because whitespace between inline elements can affect rendering. The page stays in your browser and is not uploaded.",
+ "howTo": [
+  "Paste your HTML into the input box.",
+  "Tick Keep comments only if you need conditional comments or notes preserved.",
+  "Read the compact result in the output.",
+  "Copy it and test the page in a browser."
+ ],
+ "faq": [
+  {
+   "q": "Is the minified page safe to use?",
+   "a": "In most cases yes. Whitespace between inline elements, such as two links in a row, can affect spacing, so view the page before deploying. Pre blocks are protected."
+  },
+  {
+   "q": "Does it rename classes or remove attributes?",
+   "a": "No. Tags, attributes and their values are kept. Only comments and whitespace are removed, plus whitespace inside inline CSS and JavaScript."
+  },
+  {
+   "q": "How is inline JavaScript minified?",
+   "a": "Comments and whitespace are removed, and strings, regular expressions and template literals are preserved. Variables are not renamed, so the code stays easy to debug."
+  },
+  {
+   "q": "How much will it save?",
+   "a": "It depends on the source. Heavily indented templates with many comments can shrink considerably. Server compression such as gzip or brotli then reduces the size further."
+  }
+ ],
+ "related": [
+  "html-format",
+  "css-minify",
+  "js-minify",
+  "gzip-compress",
+  "xml-minify",
+  "json-minify"
+ ],
+ "keywords": [
+  "html minifier online",
+  "minify html",
+  "compress html online",
+  "free html minify",
+  "html compressor",
+  "remove html comments"
+ ]
+}

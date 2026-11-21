@@ -1,0 +1,45 @@
+{
+ "id": "mac-address-vendor-lookup",
+ "seoTitle": "MAC Address Vendor Lookup (OUI Finder), Works Offline",
+ "metaDescription": "Find the company behind any MAC address using the IEEE OUI registry (MA-L, MA-M, MA-S). Runs in your browser, nothing is sent, flags randomised MACs.",
+ "intro": "Paste one or more MAC addresses or OUI prefixes in any format and see the registered vendor, the registry block that matched, and whether the address is locally administered.",
+ "why": "A MAC address starts with a prefix the IEEE assigns to a manufacturer. Knowing the vendor helps when you sort out an unknown device on your network, read a DHCP or ARP table, or check a log.\n\nMost lookup sites send your addresses to a server. This one carries a copy of the public IEEE listings (54,000 blocks, company names only) and does the match in your browser. Modern phones and laptops often use random MAC addresses. Those have the locally administered bit set and no real vendor, so the tool flags them instead of guessing. The bundle is a snapshot from 2026-10-23, so devices from newer assignments will not match.",
+ "howTo": [
+  "Paste one address or prefix per line. Colons, dashes, dots and plain hex all work.",
+  "Read the vendor, the block (MA-L, MA-M or MA-S) and the address bits for each line.",
+  "If the vendor is the IEEE Registration Authority, paste the full address: the block is split into smaller ones.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Why does my device show no vendor?",
+   "a": "If the second hex digit is 2, 6, A or E, the address is locally administered. Phones, VMs and containers use those, and the prefix does not name a company."
+  },
+  {
+   "q": "What are MA-L, MA-M and MA-S?",
+   "a": "They are IEEE block sizes: MA-L covers 24 bits (the classic OUI), MA-M 28 bits and MA-S 36 bits. Smaller blocks let one prefix be shared by several companies."
+  },
+  {
+   "q": "Is the data complete and current?",
+   "a": "It is a snapshot of the public IEEE listings taken on 2026-10-23. Private registrations show as private and newer ones are missing until the file is refreshed."
+  },
+  {
+   "q": "Are my addresses sent anywhere?",
+   "a": "No. The page downloads one static data file once and the match runs locally."
+  }
+ ],
+ "related": [
+  "mac-address-generator",
+  "ip-address-offline-lookup",
+  "ip-validator-converter",
+  "tld-info-lookup",
+  "whois-record-parser",
+  "dns-zone-file-parser"
+ ],
+ "keywords": [
+  "mac address lookup",
+  "oui lookup",
+  "mac vendor finder",
+  "ieee oui"
+ ]
+}

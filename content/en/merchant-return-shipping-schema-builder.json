@@ -1,0 +1,45 @@
+{
+ "id": "merchant-return-shipping-schema-builder",
+ "seoTitle": "Merchant Return Policy and Shipping Schema Builder",
+ "metaDescription": "Generate Organization JSON-LD with MerchantReturnPolicy and ShippingService for Google merchant listings. Validates country codes and enums.",
+ "intro": "Generates Organization markup that carries your return policy and shipping service: countries, return window, fees, methods, shipping rates and delivery days.",
+ "why": "Google reads merchant-level return and shipping policies from Organization markup. The structures are deep and the enumeration values are long URLs, so the tool takes short words (finite, free, mail) and writes the correct values, and refuses invalid country codes, currencies and day ranges.\n\nIt follows Google's return policy and shipping policy documentation, read 2026-10-23: a finite window needs merchantReturnDays, return shipping fees need an amount, handling time sits on the service and transit time on each shipping condition. Offer-level policies support only a subset; check the Google page for your case.",
+ "howTo": [
+  "Enter your organization name and URL.",
+  "Add return fields: country lines, category, days, fees and methods.",
+  "Add one ship: line per destination with rate, transit and handling days.",
+  "Place the output on a page about your business policies."
+ ],
+ "faq": [
+  {
+   "q": "How many countries can I list?",
+   "a": "Up to 50 for the return policy, the limit stated by Google."
+  },
+  {
+   "q": "What if handling times differ per country?",
+   "a": "The handling time belongs to the ShippingService. Make a second service for a different handling time."
+  },
+  {
+   "q": "Is this legal advice?",
+   "a": "No. It formats the policy you already have. The policy itself must match your terms and local consumer law."
+  },
+  {
+   "q": "Does it replace Merchant Center settings?",
+   "a": "No. It is the markup route; Merchant Center settings are the other route Google supports."
+  }
+ ],
+ "related": [
+  "product-schema-generator",
+  "schema-generator",
+  "rich-result-eligibility-checker",
+  "jsonld-syntax-validator",
+  "schema-property-checker",
+  "currency-display-checker"
+ ],
+ "keywords": [
+  "merchant return policy schema",
+  "shipping policy json-ld",
+  "MerchantReturnPolicy generator",
+  "ShippingService markup"
+ ]
+}

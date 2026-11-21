@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Dependabot Config Generator (dependabot.yml) | Free Tools</title>
+<meta name="description" content="Free online dependabot.yml generator. List ecosystems and directories, set the schedule, pull request limit and grouping, and copy the YAML.">
+<link rel="canonical" href="https://tools.sitefig.net/en/dependabot-config-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/dependabot-config-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/dependabot-config-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Dependabot Config Generator (dependabot.yml) | Free Tools">
+<meta property="og:description" content="Free online dependabot.yml generator. List ecosystems and directories, set the schedule, pull request limit and grouping, and copy the YAML.">
+<meta property="og:url" content="https://tools.sitefig.net/en/dependabot-config-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Dependabot Config Generator (dependabot.yml) | Free Tools">
+<meta name="twitter:description" content="Free online dependabot.yml generator. List ecosystems and directories, set the schedule, pull request limit and grouping, and copy the YAML.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Dependabot Config Generator","url":"https://tools.sitefig.net/en/dependabot-config-generator/","description":"Free online dependabot.yml generator. List ecosystems and directories, set the schedule, pull request limit and grouping, and copy the YAML.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["List each ecosystem and directory on its own line, such as npm / or pip /backend.","Choose the interval and the day for weekly updates.","Set the pull request limit, grouping and an optional commit message prefix.","Save the output as .github/dependabot.yml and commit it."],"keywords":"dependabot config generator, dependabot.yml generator, dependabot yaml builder, free dependabot tool, dependabot grouping config, github dependabot setup","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"Dependabot Config Generator","item":"https://tools.sitefig.net/en/dependabot-config-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which ecosystem names are accepted?","acceptedAnswer":{"@type":"Answer","text":"Common ones such as npm, pip, docker, github-actions, gomod, cargo, maven, gradle, composer, nuget, bundler, terraform and helm. An unknown name returns an error that lists the valid choices."}},{"@type":"Question","name":"What does grouping change?","acceptedAnswer":{"@type":"Answer","text":"Minor and patch updates for an ecosystem are combined into a single pull request instead of one per package. Major updates remain separate."}},{"@type":"Question","name":"Where do I save the file?","acceptedAnswer":{"@type":"Answer","text":"At .github/dependabot.yml in your default branch. Dependabot reads it from there and starts opening pull requests on the schedule."}},{"@type":"Question","name":"Do I need an entry for each folder?","acceptedAnswer":{"@type":"Answer","text":"Yes. Dependabot checks the directory you list. In a monorepo add a line for each folder that has its own manifest, such as /frontend and /backend."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">Dependabot Config Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Dependabot Config Generator</h1>
+<p class="lede">Generate a .github/dependabot.yml from simple lines like npm / or pip /backend. Set the update interval, day, open pull request limit, minor and patch grouping and a commit message prefix.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="dependabot-config-generator" data-module="devgen2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Dependabot is built into GitHub, but its configuration file is required before it does anything, and the package ecosystem names are not always what you expect: github-actions, gomod, pip, npm, docker. A typo means no updates for that ecosystem and no obvious error.</p>
+<p>Write one ecosystem and directory per line, choose weekly, daily or monthly updates, and the tool writes a complete version 2 file with the schedule, a pull request limit and, if you want it, a group that combines minor and patch updates into one pull request. Unknown ecosystems are rejected with the list of known names. Monorepos need one entry per directory, which this format makes easy. Nothing is uploaded; the file is generated in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>List each ecosystem and directory on its own line, such as npm / or pip /backend.</li><li>Choose the interval and the day for weekly updates.</li><li>Set the pull request limit, grouping and an optional commit message prefix.</li><li>Save the output as .github/dependabot.yml and commit it.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which ecosystem names are accepted?</summary><p>Common ones such as npm, pip, docker, github-actions, gomod, cargo, maven, gradle, composer, nuget, bundler, terraform and helm. An unknown name returns an error that lists the valid choices.</p></details>
+<details><summary>What does grouping change?</summary><p>Minor and patch updates for an ecosystem are combined into a single pull request instead of one per package. Major updates remain separate.</p></details>
+<details><summary>Where do I save the file?</summary><p>At .github/dependabot.yml in your default branch. Dependabot reads it from there and starts opening pull requests on the schedule.</p></details>
+<details><summary>Do I need an entry for each folder?</summary><p>Yes. Dependabot checks the directory you list. In a monorepo add a line for each folder that has its own manifest, such as /frontend and /backend.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/renovate-config-generator/"><span class="link-card__title">Renovate Config Generator</span><span class="link-card__desc">Create renovate.json with presets, schedule, automerge and grouping rules.</span></a></li><li><a class="link-card" href="/en/github-actions-generator/"><span class="link-card__title">GitHub Actions CI Generator</span><span class="link-card__desc">CI workflow for node, python, go or rust with version matrix and dependency caching.</span></a></li><li><a class="link-card" href="/en/github-actions-matrix-builder/"><span class="link-card__title">GitHub Actions Matrix Builder</span><span class="link-card__desc">Describe matrix dimensions (os, node, python...) with include/exclude rows and get a ready workflow with strategy.matrix.</span></a></li><li><a class="link-card" href="/en/pre-commit-config-generator/"><span class="link-card__title">pre-commit Config Generator</span><span class="link-card__desc">Generate .pre-commit-config.yaml from hook presets (revs are examples; run pre-commit autoupdate).</span></a></li><li><a class="link-card" href="/en/package-json-license-checker/"><span class="link-card__title">package.json / Lockfile License Checker</span><span class="link-card__desc">Group dependency licenses from a package-lock.json (v2/v3 records a license per package) and flag copyleft, proprietary or unknown ones against a policy. A plain package.json has no per-dependency license data, so only its own license and dependency list are shown.</span></a></li><li><a class="link-card" href="/en/yaml-format/"><span class="link-card__title">YAML Formatter</span><span class="link-card__desc">Re-indent and normalise YAML (comments are not preserved; anchors are expanded).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

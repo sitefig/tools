@@ -1,0 +1,45 @@
+{
+ "id": "prompt-template-filler",
+ "seoTitle": "Free Prompt Template Variable Filler Online",
+ "metaDescription": "Fill placeholders in a prompt template from KEY=VALUE lines or JSON, and see which variables are missing or unused. Free, in your browser.",
+ "intro": "Paste a prompt template and a list of values to fill its placeholders, then check which variables are missing or never used.",
+ "why": "Prompt templates are usually strings with placeholders such as {{role}} or {topic}, filled in by code. While you are drafting or debugging, it helps to see the final text without running the whole program, and to spot a variable you forgot or misspelt.\n\nPaste the template in one box and the values in the other, as KEY=VALUE lines or a JSON object. The tool supports five placeholder styles, reports filled, missing and unused variables, and gives an approximate token count of the result. Missing placeholders stay in the text so they are easy to find. Your prompts stay in the browser and are not sent to any model.",
+ "howTo": [
+  "Paste the prompt template into the first box and choose the placeholder style.",
+  "Enter values as KEY=VALUE lines, or paste a JSON object, in the second box.",
+  "Check the report for missing and unused variables, then copy the filled prompt."
+ ],
+ "faq": [
+  {
+   "q": "Which placeholder styles work?",
+   "a": "Double curly braces, single curly braces, dollar and curly braces, angle brackets and double square brackets. Choose the one your template uses; others are left as plain text."
+  },
+  {
+   "q": "Can a value span several lines?",
+   "a": "Yes, tick the option for continued lines. Lines after a KEY=VALUE line that do not look like a new key are then appended to that value. Or use JSON with escaped newlines."
+  },
+  {
+   "q": "What happens to a missing variable?",
+   "a": "The placeholder is left unchanged in the output and its name appears in the report under Missing, so you can see where a value is needed."
+  },
+  {
+   "q": "How accurate is the token count?",
+   "a": "It is an estimate from a simple word-piece heuristic, usually within about fifteen percent for English. Use your provider token counter when exact numbers matter."
+  }
+ ],
+ "related": [
+  "system-prompt-budgeter",
+  "prompt-linter",
+  "prompt-format-converter",
+  "system-prompt-formatter",
+  "llm-token-estimator",
+  "llm-few-shot-prompt-formatter"
+ ],
+ "keywords": [
+  "prompt template filler",
+  "fill prompt variables",
+  "prompt variable replacement tool",
+  "free prompt template tester",
+  "jinja style placeholder fill"
+ ]
+}

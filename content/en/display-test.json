@@ -1,0 +1,45 @@
+{
+  "id": "display-test",
+  "seoTitle": "Display Test: Dead Pixels, Colours, Gradient and Refresh Rate",
+  "metaDescription": "Check a screen for dead or stuck pixels with solid colours you step through, a banding gradient, and a refresh-rate measurement. No flashing.",
+  "intro": "Inspect a new monitor or phone for defects.",
+  "why": "Choose solid colours (black, white, red, green, blue, grey and secondaries) and use the browser's full screen to cover the whole display, then look for specks that do not match. A black-to-white gradient helps reveal banding, and a two-second timing test estimates the refresh rate from animation frame intervals.\n\nColours change only when you press a button, so nothing flashes. The refresh figure is what the browser reports; power saving or background tabs can lower it.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Press a colour button, then Full screen.",
+    "Scan the screen for specks.",
+    "Check the gradient for visible steps.",
+    "Run the refresh rate test."
+  ],
+  "faq": [
+    {
+      "q": "What is a stuck pixel?",
+      "a": "A pixel that stays on a colour. Dead pixels stay black."
+    },
+    {
+      "q": "Can stuck pixels be fixed?",
+      "a": "Sometimes by gentle massage or pixel-exercising videos; warranty policies vary."
+    },
+    {
+      "q": "Why is my refresh rate 60 Hz?",
+      "a": "The browser may limit frame rate; check your OS display settings."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "screen-info",
+    "gamepad-tester",
+    "keyboard-event-viewer",
+    "mouse-click-speed-test",
+    "color-converter",
+    "screen-ruler"
+  ],
+  "keywords": [
+    "dead pixel test",
+    "display test",
+    "screen test",
+    "refresh rate test"
+  ]
+}

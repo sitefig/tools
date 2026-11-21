@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Chat Prompt Format Converter: ChatML, Llama | Free Tools</title>
+<meta name="description" content="Convert a chat between OpenAI, Anthropic, Gemini, ChatML, Llama 2, Llama 3, Mistral and plain transcript formats. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/prompt-format-converter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/prompt-format-converter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/prompt-format-converter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Chat Prompt Format Converter: ChatML, Llama | Free Tools">
+<meta property="og:description" content="Convert a chat between OpenAI, Anthropic, Gemini, ChatML, Llama 2, Llama 3, Mistral and plain transcript formats. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/prompt-format-converter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Chat Prompt Format Converter: ChatML, Llama | Free Tools">
+<meta name="twitter:description" content="Convert a chat between OpenAI, Anthropic, Gemini, ChatML, Llama 2, Llama 3, Mistral and plain transcript formats. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Chat Prompt Format Converter","url":"https://tools.sitefig.net/en/prompt-format-converter/","description":"Convert a chat between OpenAI, Anthropic, Gemini, ChatML, Llama 2, Llama 3, Mistral and plain transcript formats. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the conversation as JSON in an OpenAI, Anthropic or Gemini shape, or as System:/User:/Assistant: lines.","Choose the target format and tick \"Append generation prompt\" if the assistant turn should be left open.","Copy the converted prompt."],"keywords":"chat prompt format converter, chatml converter, llama 3 prompt template, convert openai messages to anthropic, free chat template converter","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"LLM Tools","item":"https://tools.sitefig.net/en/#llm-tools"},{"@type":"ListItem","position":3,"name":"Chat Prompt Format Converter","item":"https://tools.sitefig.net/en/prompt-format-converter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which formats can it read?","acceptedAnswer":{"@type":"Answer","text":"OpenAI-style message arrays, Anthropic objects with system and messages, Gemini contents with parts and systemInstruction, and plain text lines starting with a role name. Roles like human, ai and model are normalised."}},{"@type":"Question","name":"Are the special-token templates exact?","acceptedAnswer":{"@type":"Answer","text":"They follow the commonly published templates for ChatML, Llama 2, Llama 3 and Mistral. Fine-tunes and newer versions sometimes differ, so verify against the tokenizer's chat template for your exact model."}},{"@type":"Question","name":"What does the generation prompt option do?","acceptedAnswer":{"@type":"Answer","text":"It adds the opening of an assistant turn, such as \u003c|im_start|>assistant, so the model continues from there. Turn it off if you are only storing the conversation."}},{"@type":"Question","name":"What happens to the system message?","acceptedAnswer":{"@type":"Answer","text":"It stays as a system message for OpenAI and ChatML, becomes the system field for Anthropic, goes to systemInstruction for Gemini, and is merged into the first user turn for Llama 2 and Mistral."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#llm-tools">LLM Tools</a></li><li><span aria-current="page">Chat Prompt Format Converter</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Chat Prompt Format Converter</h1>
+<p class="lede">Converts a conversation between OpenAI messages, Anthropic, Gemini, ChatML, Llama 2, Llama 3, Mistral and plain transcript formats, from JSON or from simple System: and User: lines.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="prompt-format-converter" data-module="devz1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Every model family wants the same conversation written differently. OpenAI takes a messages array, Anthropic splits out the system prompt, Gemini uses contents and parts, and open models expect special tokens such as &lt;|im_start|&gt; or [INST]. Moving a prompt between them by hand is a source of subtle bugs, like a missing end token or a system message in the wrong place. Paste a conversation in any of the supported JSON shapes, or as plain lines starting with System:, User: and Assistant:, and choose the target. The templates follow each family's published chat format, but individual models can vary slightly, so check against your model's own template. Everything is converted in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the conversation as JSON in an OpenAI, Anthropic or Gemini shape, or as System:/User:/Assistant: lines.</li><li>Choose the target format and tick &quot;Append generation prompt&quot; if the assistant turn should be left open.</li><li>Copy the converted prompt.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which formats can it read?</summary><p>OpenAI-style message arrays, Anthropic objects with system and messages, Gemini contents with parts and systemInstruction, and plain text lines starting with a role name. Roles like human, ai and model are normalised.</p></details>
+<details><summary>Are the special-token templates exact?</summary><p>They follow the commonly published templates for ChatML, Llama 2, Llama 3 and Mistral. Fine-tunes and newer versions sometimes differ, so verify against the tokenizer's chat template for your exact model.</p></details>
+<details><summary>What does the generation prompt option do?</summary><p>It adds the opening of an assistant turn, such as &lt;|im_start|&gt;assistant, so the model continues from there. Turn it off if you are only storing the conversation.</p></details>
+<details><summary>What happens to the system message?</summary><p>It stays as a system message for OpenAI and ChatML, becomes the system field for Anthropic, goes to systemInstruction for Gemini, and is merged into the first user turn for Llama 2 and Mistral.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/vercel-ai-core-message-converter/"><span class="link-card__title">OpenAI Chat Messages &lt;-&gt; Vercel AI SDK CoreMessage Converter</span><span class="link-card__desc">Convert a messages array between the OpenAI Chat Completions format and Vercel AI SDK CoreMessage / ModelMessage: string and multi-part content, image_url &lt;-&gt; image parts, assistant tool_calls &lt;-&gt; tool-call parts, tool role results &lt;-&gt; tool-result parts. Choose AI SDK 4 field names (args / result) or AI SDK 5 (input / output).</span></a></li><li><a class="link-card" href="/en/system-prompt-formatter/"><span class="link-card__title">System Prompt Formatter</span><span class="link-card__desc">Restructure a free-form system prompt into labelled sections (role, context, instructions, constraints, output format, examples) using XML tags or Markdown headings. Sections are detected from existing headings/tags or, failing that, by keyword heuristics per paragraph or bullet; review the result, it does not rewrite wording.</span></a></li><li><a class="link-card" href="/en/llm-few-shot-prompt-formatter/"><span class="link-card__title">Few-Shot Prompt Formatter</span><span class="link-card__desc">Format input =&gt; output example pairs as a few-shot prompt: plain labels, XML tags, Markdown, or ready-to-send OpenAI / Anthropic message JSON. Use \n inside an example for line breaks.</span></a></li><li><a class="link-card" href="/en/token-truncate/"><span class="link-card__title">Truncate / Chunk Text by Tokens (tiktoken)</span><span class="link-card__desc">Cut text to at most N tokens, or split it into chunks of at most N tokens with overlap, always on a token boundary that does not split a UTF-8 character. Exact cl100k_base / o200k_base. Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/gpt-token-counter/"><span class="link-card__title">GPT Token Counter (cl100k + o200k, chat overhead)</span><span class="link-card__desc">Exact token counts for text under cl100k_base and o200k_base side by side, plus an approximate chat-message overhead calculator (OpenAI cookbook rule: 3 tokens per message, +1 per name, +3 reply priming; use o200k_base for the GPT-4o family). Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/json-format/"><span class="link-card__title">JSON Formatter</span><span class="link-card__desc">Pretty-print JSON with custom indent and optional key sorting; errors show line and column.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+ "id": "jargon-buzzword-detector",
+ "seoTitle": "Jargon and Buzzword Detector with Plain Alternatives",
+ "metaDescription": "Flag corporate buzzwords like leverage, synergy and circle back and see a plainer word for each. Free, private, runs in your browser.",
+ "intro": "Flag corporate buzzwords like leverage, synergy and circle back and see a plainer word for each.",
+ "why": "Buzzwords make a sentence sound busy while saying little. Plain words let more readers understand you, including those reading in a second language.\n\nThis tool marks about 70 common business buzzwords, counts them per 100 words and suggests a simpler word for each. The list is short and hand-written. Some terms are exact in their field, so the suggestion is a prompt, not a rule.",
+ "howTo": [
+  "Paste your text.",
+  "Read the marked text.",
+  "Check the table for plainer alternatives.",
+  "Rewrite where the plain word fits."
+ ],
+ "faq": [
+  {
+   "q": "Are all of these wrong?",
+   "a": "No. Words like scalable are exact in engineering. Check your audience."
+  },
+  {
+   "q": "Can I add words?",
+   "a": "Not in this version. The list is fixed and English only."
+  },
+  {
+   "q": "What is the measure per 100 words?",
+   "a": "The number of flagged items divided by the word count, times 100."
+  }
+ ],
+ "related": [
+  "cliche-detector",
+  "plain-language-checker",
+  "adverb-highlighter",
+  "passive-voice-checker",
+  "prompt-compressor",
+  "text-cleaner"
+ ],
+ "keywords": [
+  "jargon detector",
+  "buzzword checker",
+  "corporate jargon finder",
+  "plain english alternatives"
+ ]
+}

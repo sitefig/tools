@@ -1,0 +1,40 @@
+{
+ "id": "mortgage-affordability-calculator",
+ "seoTitle": "How Much Mortgage Can I Afford? Calculator",
+ "metaDescription": "Estimate the maximum mortgage and property price from income, debts, deposit and a debt-to-income limit you set. Free and private.",
+ "intro": "Turns your income, monthly debts, deposit and rate into a maximum monthly payment, a maximum loan and a rough price ceiling.",
+ "why": "Lenders mostly limit the share of income that can go to debt payments. This tool lets you set that share, subtracts your existing debts and housing costs, and works out the loan that the remaining payment can service.\n\nIt is a first filter before you talk to a lender, not an approval. Real lenders also test higher rates, check credit history and limit the loan against the property value, and limits differ by country.",
+ "howTo": [
+  "Enter gross income, monthly debts and your deposit.",
+  "Set the rate, term and the debt-to-income limit.",
+  "Add monthly property tax and insurance.",
+  "Read the maximum payment, loan and price."
+ ],
+ "faq": [
+  {
+   "q": "What debt-to-income limit should I use?",
+   "a": "A common rule of thumb is 36% of gross income for all debt. Your lender or country may use a different figure, so ask."
+  },
+  {
+   "q": "Are my figures stored?",
+   "a": "Nothing you type leaves your browser."
+  },
+  {
+   "q": "Why is my real offer lower?",
+   "a": "Lenders stress-test the rate, count more costs and cap the loan against the property value."
+  }
+ ],
+ "related": [
+  "mortgage-amortization-calculator",
+  "loan-calculator",
+  "emi-calculator",
+  "rent-vs-buy-calculator",
+  "budget-50-30-20-planner",
+  "emergency-fund-calculator"
+ ],
+ "keywords": [
+  "mortgage affordability",
+  "how much can I borrow",
+  "debt to income"
+ ]
+}

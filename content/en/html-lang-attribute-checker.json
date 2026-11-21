@@ -1,0 +1,45 @@
+{
+ "id": "html-lang-attribute-checker",
+ "seoTitle": "HTML lang, Content-Language and Hreflang Consistency Checker",
+ "metaDescription": "Check the html lang attribute, meta content-language, the Content-Language header and the self hreflang for validity and disagreement.",
+ "intro": "Reads the language signals on one page and flags missing, invalid or contradicting values.",
+ "why": "A page can state its language in the lang attribute, in a meta tag, in an HTTP header and in its own hreflang entry. They are meant to agree. The tool pulls each out of your pasted HTML and headers, validates the tags (hyphens, ISO language and region codes) and compares them.\n\nA missing lang attribute is an accessibility failure (WCAG 3.1.1). Disagreeing signals are usually a template mistake. Google does not use lang or hreflang to detect language, so the checks are about consistency and accessibility.",
+ "howTo": [
+  "Paste the page HTML and, optionally, the response headers.",
+  "Read the list of signals found.",
+  "Fix errors such as underscores or missing lang.",
+  "Make the signals agree."
+ ],
+ "faq": [
+  {
+   "q": "Which signals are compared?",
+   "a": "html lang, xml:lang, meta content-language, the Content-Language header and the hreflang entry for the canonical URL."
+  },
+  {
+   "q": "Are different regions an error?",
+   "a": "A warning: same language, different region."
+  },
+  {
+   "q": "Do I need Content-Language?",
+   "a": "No, it is optional."
+  },
+  {
+   "q": "Can it fetch the headers?",
+   "a": "No; copy them from DevTools or curl -I."
+  }
+ ],
+ "related": [
+  "hreflang-code-checker",
+  "declared-language-match-checker",
+  "hreflang-validator",
+  "content-language-header-builder",
+  "http-headers-analyzer",
+  "meta-analyzer"
+ ],
+ "keywords": [
+  "html lang checker",
+  "content-language vs hreflang",
+  "lang attribute validator",
+  "language signals page"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "robots-unsupported-directives-detector",
+ "seoTitle": "Unsupported robots.txt Directives: Noindex, Host, Crawl-delay",
+ "metaDescription": "Find robots.txt lines Google ignores, such as Noindex, Nofollow, Host, Clean-param and Crawl-delay, with what to use instead. Free.",
+ "intro": "Lists lines that Google does not use and suggests the working alternative for each.",
+ "why": "Old advice put Noindex, Nofollow and Host lines into robots.txt. Google supports only user-agent, allow, disallow and sitemap, so these lines do nothing there. Google stopped honouring Noindex in robots.txt in 2019.\n\nThe tool shows each unsupported line with its number and the usual replacement. Other search engines may read some of them; that is not checked here.",
+ "howTo": [
+  "Paste the robots.txt.",
+  "Read the list of ignored lines.",
+  "Replace them with the suggested method.",
+  "Re-validate the file."
+ ],
+ "faq": [
+  {
+   "q": "Is Noindex in robots.txt dead?",
+   "a": "For Google, yes. Use a robots meta tag or an X-Robots-Tag header."
+  },
+  {
+   "q": "Should I delete Crawl-delay?",
+   "a": "Google ignores it. Keep it only if another crawler you care about reads it."
+  },
+  {
+   "q": "What replaces Host?",
+   "a": "A 301 redirect to the preferred host and a canonical tag."
+  },
+  {
+   "q": "What does Google support?",
+   "a": "Only user-agent, allow, disallow and sitemap, per its documentation."
+  }
+ ],
+ "related": [
+  "robots-txt-validator",
+  "robots-meta-tag-generator",
+  "x-robots-tag-header-builder",
+  "crawl-delay-calculator",
+  "robots-tester"
+ ],
+ "keywords": [
+  "robots.txt noindex",
+  "robots.txt unsupported directives",
+  "robots.txt host directive",
+  "google ignores robots.txt"
+ ]
+}

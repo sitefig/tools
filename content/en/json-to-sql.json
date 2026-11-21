@@ -1,0 +1,45 @@
+{
+ "id": "json-to-sql",
+ "seoTitle": "Free JSON to SQL: CREATE TABLE and INSERT Generator",
+ "metaDescription": "Turn a JSON array of objects into CREATE TABLE and escaped INSERT statements for PostgreSQL, MySQL or SQLite. Free, runs in your browser.",
+ "intro": "Paste a JSON array of objects and get a CREATE TABLE with inferred column types and nullability, plus escaped INSERT statements for PostgreSQL, MySQL or SQLite.",
+ "why": "Getting API output or an export into a database usually means writing a table definition and a pile of INSERT statements, with quotes escaped and booleans and dates written the way each engine expects. Importing through a client is possible, but a script you can read, review and commit is easier to repeat.\n\nThe tool scans every object to find all keys, picks types from the values it sees, marks a column NOT NULL only if it is always present, and uses JSONB or JSON for nested values. Strings that look like timestamps become timestamp columns. Types are guesses from samples. Check them, add primary keys and indexes, and remember that INSERT text is sensitive to quoting rules of each dialect.",
+ "howTo": [
+  "Paste a JSON array of objects, or a single object.",
+  "Pick the table name and the SQL dialect, and decide whether to include CREATE TABLE.",
+  "Copy the SQL, optionally as one multi-row INSERT."
+ ],
+ "faq": [
+  {
+   "q": "How are types chosen?",
+   "a": "From the values: integers, floating numbers, booleans, strings, timestamps and nested JSON. If one key holds mixed kinds, the column falls back to JSON or text, except integers mixed with decimals, which become floating point."
+  },
+  {
+   "q": "Does it add a primary key?",
+   "a": "No. Only column types and NOT NULL are generated. Add a primary key, indexes and foreign keys yourself for the table you plan to keep."
+  },
+  {
+   "q": "How are quotes and special characters handled?",
+   "a": "Single quotes are doubled, and for MySQL backslashes are escaped too. Identifiers are quoted with double quotes, or backticks for MySQL."
+  },
+  {
+   "q": "Is it safe to run the output directly?",
+   "a": "Review it first. The statements are plain SQL text built from your data, so run them on a test database before production."
+  }
+ ],
+ "related": [
+  "csv-to-sql",
+  "sql-to-json",
+  "json-to-csv",
+  "sql-slugifier",
+  "list-to-sql-in",
+  "sql-format"
+ ],
+ "keywords": [
+  "json to sql",
+  "json to insert statements",
+  "json to create table",
+  "free json to postgres converter",
+  "generate sql from json array"
+ ]
+}

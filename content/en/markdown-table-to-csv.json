@@ -1,0 +1,45 @@
+{
+ "id": "markdown-table-to-csv",
+ "seoTitle": "Free Markdown Table to CSV Converter (TSV and JSON)",
+ "metaDescription": "Extract pipe tables from Markdown into CSV, TSV or JSON. Handles several tables, alignment rows and escaped pipes. Free and runs in your browser.",
+ "intro": "Pulls GitHub-style pipe tables out of Markdown and converts them to CSV, TSV or JSON, either the first table or every table in the document.",
+ "why": "Tables in READMEs, wiki pages and pull request descriptions are easy to read but awkward to reuse. If you want the numbers in a spreadsheet or a script, copying cell by cell is tedious, and pasting the raw pipes into Excel gives a mess. This tool finds each table by its header row and the dashed separator beneath it, then outputs clean rows. It understands escaped pipes inside cells and can strip bold, italics, code ticks and link syntax so you get plain values. It works on the whole document, so you can paste an entire README and pick the table you need. Nothing is uploaded; the parsing happens in the page.",
+ "howTo": [
+  "Paste the Markdown, which may contain text around the tables, into the input box.",
+  "Choose whether to convert the first table or all tables, and pick CSV, TSV or JSON.",
+  "Leave \"Strip emphasis / code / links\" on for plain values, then copy the output."
+ ],
+ "faq": [
+  {
+   "q": "How does it recognise a table?",
+   "a": "It looks for a line with a pipe followed by a separator row of dashes such as |---|:--:|. Lines after that with pipes belong to the table until a blank line ends it. Text without a separator row is ignored."
+  },
+  {
+   "q": "What about pipes inside a cell?",
+   "a": "An escaped pipe (\\|) is treated as a literal character and written back as a plain pipe. CSV cells containing commas, quotes or line breaks are quoted properly."
+  },
+  {
+   "q": "What does the strip option remove?",
+   "a": "It removes bold, italic, strikethrough and code markers, turns [text](url) links and images into their text, and turns line-break tags into real line breaks. Turn it off to keep the raw Markdown."
+  },
+  {
+   "q": "Does it support HTML tables or tables without a header?",
+   "a": "No. Only pipe tables with a header row and separator row are supported, in the GitHub style. For HTML tables, use the HTML table tools on this site."
+  }
+ ],
+ "related": [
+  "markdown-table-generator",
+  "csv-to-markdown-table",
+  "html-table-to-json",
+  "csv-to-json",
+  "markdown-to-html",
+  "csv-viewer"
+ ],
+ "keywords": [
+  "markdown table to csv",
+  "convert markdown table to csv",
+  "markdown table to json",
+  "free markdown table extractor",
+  "github table to excel"
+ ]
+}

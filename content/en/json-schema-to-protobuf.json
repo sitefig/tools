@@ -1,0 +1,45 @@
+{
+ "id": "json-schema-to-protobuf",
+ "seoTitle": "Free JSON Schema to Protobuf (proto3) Converter",
+ "metaDescription": "Convert a JSON Schema into proto3 messages: nested objects, repeated fields, enums with UNSPECIFIED zero values and Timestamp. Free, in your browser.",
+ "intro": "Converts a JSON Schema into proto3 messages: nested objects become messages, arrays become repeated fields, string enums gain an UNSPECIFIED zero value and date-time becomes Timestamp.",
+ "why": "When a JSON API grows into gRPC, or a service must share a data contract with a protobuf system, someone has to rewrite the schema as .proto. The two models differ in ways that cause mistakes: protobuf enums need a zero value, every field needs a stable number, and there is no direct form of optional or free-form object. This tool takes a JSON Schema using properties, $ref and definitions, enums, arrays and additionalProperties, and writes proto3 messages from it. Maps come from additionalProperties, required fields are plain and others are optional. Where a oneOf or anyOf has several real branches, it falls back to google.protobuf.Value. Field numbers are assigned in order, so lock them in before shipping. It runs in your browser.",
+ "howTo": [
+  "Paste a JSON Schema (draft-07 or 2020-12 subset) into the input box.",
+  "Enter an optional package name such as example.v1.",
+  "Copy the proto3 output, review the field numbers and names, and commit it only once they are final."
+ ],
+ "faq": [
+  {
+   "q": "How are enums converted?",
+   "a": "String enums become a proto enum with an UNSPECIFIED value at zero, since proto3 requires a zero value, followed by the original values."
+  },
+  {
+   "q": "What happens to oneOf and anyOf?",
+   "a": "If there is a single non-null branch, it is used. With several real branches, the field falls back to google.protobuf.Value, because protobuf has no direct equivalent."
+  },
+  {
+   "q": "Are field numbers stable?",
+   "a": "They are assigned in the order properties appear. Once clients use the schema, do not renumber, and keep the numbers if you add fields later."
+  },
+  {
+   "q": "Which formats are mapped?",
+   "a": "date-time becomes google.protobuf.Timestamp. Integers, numbers, booleans, strings and arrays map to their obvious proto types. Required properties are plain fields and the rest are optional."
+  }
+ ],
+ "related": [
+  "protobuf-formatter",
+  "protobuf-to-json-schema",
+  "proto-to-typescript",
+  "json-schema-generator",
+  "json-schema-validator",
+  "typescript-to-json-schema"
+ ],
+ "keywords": [
+  "json schema to protobuf",
+  "json schema to proto3",
+  "convert json schema to proto file",
+  "free proto generator",
+  "grpc from json schema"
+ ]
+}

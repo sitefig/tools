@@ -1,0 +1,45 @@
+{
+ "id": "ai-bot-training-retrieval-splitter",
+ "seoTitle": "Split AI Crawler Hits: Training, Search and User-Triggered Fetches",
+ "metaDescription": "Separate AI crawler requests in your access log into training, search indexing and user-triggered fetches, per bot and per purpose. Free.",
+ "intro": "Groups AI bot requests by the purpose their operators publish and shows hits per bot, status codes and the paths each purpose fetched.",
+ "why": "Not all AI bots do the same thing. Some collect pages that may train models, some build a search index, and some fetch a page only because a person asked an assistant about it. You may want to allow one purpose and block another.\n\nThe tool labels each request using the purposes recorded in the AI crawler directory on this site. Those purposes were read from the vendors' pages on 2026-10-23 by that tool and are not re-checked here. Names that are not in the list are not counted, and new bots appear often.",
+ "howTo": [
+  "Paste access log lines.",
+  "Read the totals per purpose and the table per bot.",
+  "Look at the top paths per purpose.",
+  "Use the result to decide which bots to allow or block in robots.txt."
+ ],
+ "faq": [
+  {
+   "q": "Do user-triggered bots follow robots.txt?",
+   "a": "Operators differ. Some say these fetches may ignore robots.txt because a person asked for the page. See the AI crawler directory for each bot."
+  },
+  {
+   "q": "A bot is missing from the result.",
+   "a": "Only bots in the directory are recognised. Check the bot identifier for unknown user agents."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench."
+  }
+ ],
+ "related": [
+  "ai-crawler-user-agent-directory",
+  "ai-bot-robots-builder",
+  "ai-bot-robots-txt-audit",
+  "bot-traffic-share-calculator",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer"
+ ],
+ "keywords": [
+  "ai bot training vs search crawler",
+  "gptbot oai-searchbot chatgpt-user logs",
+  "claudebot claude-user log analysis",
+  "ai crawler purpose split"
+ ]
+}

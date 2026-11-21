@@ -1,0 +1,45 @@
+{
+ "id": "mailto-link-generator",
+ "seoTitle": "Mailto Link Generator: Subject, Body, CC and BCC",
+ "metaDescription": "Build a mailto link with prefilled recipients, CC, BCC, subject and body, correctly encoded, plus an HTML anchor tag. Free and private.",
+ "intro": "Fill in the fields and get the encoded mailto: link and an HTML link to paste into a page.",
+ "why": "A mailto link with a subject and body saves the reader typing, but the fields must be percent-encoded: spaces, ampersands and line breaks break links when written by hand.\n\nThe tool encodes spaces as %20, line breaks as %0D%0A as RFC 6068 describes, and escapes the ampersands in the HTML version. Very long links may be cut by some clients, so keep the body short. Addresses are checked for basic syntax.",
+ "howTo": [
+  "Enter the To address and optional CC and BCC.",
+  "Enter subject and link text, and type the body in the input.",
+  "Copy the raw link or the HTML anchor.",
+  "Click the link to test it in your mail app."
+ ],
+ "faq": [
+  {
+   "q": "Why is the body encoded this way?",
+   "a": "Special characters and line breaks must be percent-encoded in a URL."
+  },
+  {
+   "q": "Is there a length limit?",
+   "a": "No fixed one, but links over about 2000 characters can fail."
+  },
+  {
+   "q": "Can I add several recipients?",
+   "a": "Yes, separate them with commas."
+  },
+  {
+   "q": "Will it hide the address from spam bots?",
+   "a": "No. For that, obfuscate the address."
+  }
+ ],
+ "related": [
+  "html-link-generator",
+  "email-signature-generator",
+  "text-obfuscator",
+  "email-validator",
+  "url-parser",
+  "utm-builder"
+ ],
+ "keywords": [
+  "mailto link generator",
+  "mailto subject body",
+  "mailto cc bcc",
+  "create email link"
+ ]
+}

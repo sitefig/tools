@@ -1,0 +1,47 @@
+{
+ "id": "systemd-unit-generator",
+ "seoTitle": "Free systemd Service Unit File Generator",
+ "metaDescription": "Free online systemd service generator. Create a .service unit with restart policy, user, environment variables and optional sandboxing hardening.",
+ "intro": "Generate a systemd .service unit with ExecStart, working directory, user, environment, restart policy and ordering. An option adds common sandboxing settings such as ProtectSystem and NoNewPrivileges.",
+ "why": "Running your own app as a service means writing a unit file, and the details matter: which Type to use, when to restart, what it should start after, and which user it runs as. Getting them wrong gives services that start before the network is ready, loop on failure or run as root without need.\n\nFill in the command, user and directory, choose the type and restart policy, and list environment variables as KEY=VALUE lines. The tool writes the Unit, Service and Install sections. The hardening option adds restrictions such as a private tmp, read-only system directories and no new privileges, with the working directory kept writable. Those can break apps that need broader access, so test the service. Nothing you enter is uploaded.",
+ "howTo": [
+  "Enter a description and the full ExecStart command.",
+  "Choose the service type, user, group, working directory and restart policy.",
+  "Add environment variables as KEY=VALUE lines, and tick sandboxing hardening if wanted.",
+  "Save the output as /etc/systemd/system/name.service, then run systemctl daemon-reload and enable it."
+ ],
+ "faq": [
+  {
+   "q": "Which Type should I choose?",
+   "a": "simple suits most programs that stay in the foreground. Use forking only for daemons that fork themselves, notify for apps that signal readiness to systemd, and oneshot for tasks that run and exit."
+  },
+  {
+   "q": "What does the hardening option do?",
+   "a": "It adds NoNewPrivileges, PrivateTmp, ProtectSystem=strict, ProtectHome and several protection settings, plus ReadWritePaths for your working directory. If the app writes elsewhere, add more paths."
+  },
+  {
+   "q": "Why is Restart missing for oneshot?",
+   "a": "Restart settings do not make sense for a task that is meant to exit, so the tool leaves them out when the type is oneshot."
+  },
+  {
+   "q": "Where do I put environment secrets?",
+   "a": "Avoid putting real secrets in a unit file, because unit files are readable by many users. Use an EnvironmentFile with restricted permissions or a credentials mechanism."
+  }
+ ],
+ "related": [
+  "systemd-timer-generator",
+  "cron-generator",
+  "dockerfile-generator",
+  "nginx-config-generator",
+  "caddyfile-generator",
+  "docker-compose-generator"
+ ],
+ "keywords": [
+  "systemd service generator",
+  "systemd unit file generator",
+  "create systemd service",
+  "free systemd tool",
+  "systemd service file example",
+  "systemd hardening options"
+ ]
+}

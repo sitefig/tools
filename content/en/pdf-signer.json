@@ -1,0 +1,45 @@
+{
+ "id": "pdf-signer",
+ "seoTitle": "PDF Signer: Draw or Type a Signature and Place It",
+ "metaDescription": "Draw, type or upload a signature, place it on a PDF page with a live preview and save the signed copy. Image signature only, runs in your browser.",
+ "intro": "Create a signature by drawing with a mouse, pen or finger, by typing your name in a script style, or from an image. Place it on a page with a preview and save a signed PDF.",
+ "why": "Many forms only need a visible signature, and printing, signing and scanning is slow. This tool puts a picture of your signature on the page and lets you position it by clicking the preview or by typing numbers, so it also works with a keyboard.\n\nBe clear about what it is: an image on the page, not a cryptographic digital signature, and it proves nothing by itself. Some contracts and authorities require a qualified electronic signature instead. The file is rewritten, so form fields and bookmarks are dropped; fill the form first. Nothing leaves your browser, and the drawing is cropped to your ink.",
+ "howTo": [
+  "Choose a PDF and pick the page.",
+  "Draw on the pad, or type a name and press \"Use the typed name\", or load a signature image.",
+  "Click the preview to place it, or type the position and width.",
+  "Press \"Sign and download\"."
+ ],
+ "faq": [
+  {
+   "q": "Is this a legally valid signature?",
+   "a": "It depends on the document and the country. It is a visible signature image, not a certificate-based digital signature. Check what the recipient requires."
+  },
+  {
+   "q": "Can I use it without a mouse?",
+   "a": "Yes. Type your name, choose a style, and enter the position as numbers."
+  },
+  {
+   "q": "Is my signature stored?",
+   "a": "No. It exists only in the page while you use it and in the PDF you download."
+  },
+  {
+   "q": "Can I sign several pages?",
+   "a": "Run it again on the signed file for each page."
+  }
+ ],
+ "related": [
+  "signature-generator",
+  "pdf-form-filler",
+  "pdf-annotate",
+  "pdf-image-watermark",
+  "pdf-flattener",
+  "pdf-password-protect"
+ ],
+ "keywords": [
+  "sign pdf online",
+  "pdf signer",
+  "draw signature on pdf",
+  "add signature to pdf free"
+ ]
+}

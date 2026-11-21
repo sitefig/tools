@@ -1,0 +1,46 @@
+{
+ "id": "audio-trimmer",
+ "seoTitle": "Free Audio Trimmer - Cut Audio Clips to WAV",
+ "metaDescription": "Load an audio file, pick a start and end time, preview the clip and export it as WAV. Free, runs entirely in your browser, nothing is uploaded.",
+ "intro": "Load an audio file, choose where the clip starts and ends on a waveform, preview it, and export the selection as a WAV file.",
+ "why": "Cutting a few seconds from a voice memo, a recorded call or a sound effect should not need a full audio editor or an upload to a website. Typical jobs are removing silence at the start, extracting a quote, preparing a ringtone sample or trimming a clip before sending it.\n\nThis trimmer decodes your file with the browser's audio engine, draws its waveform and lets you set start and end times in seconds. You can preview just the selected part before saving. The export is an uncompressed 16-bit WAV, which any editor or player accepts. Because WAV is not compressed, the file will be larger than an MP3 of the same length. The audio is processed on your device and is never uploaded.",
+ "howTo": [
+  "Choose an audio file from your device.",
+  "Set the Start and End times in seconds; the highlighted area on the waveform shows the selection.",
+  "Press Preview to listen to the selected part, and Stop to end it.",
+  "Press Export WAV and download trimmed.wav."
+ ],
+ "faq": [
+  {
+   "q": "Which file formats can I open?",
+   "a": "Whatever your browser can decode, which usually includes MP3, WAV, M4A/AAC and OGG. If the browser cannot decode a file, you see a message that it could not be read."
+  },
+  {
+   "q": "Why is the exported file so large?",
+   "a": "The export is uncompressed 16-bit PCM WAV, roughly 10 MB per minute for stereo at 44.1 kHz. It keeps full quality and works everywhere. Convert it to MP3 or AAC afterwards if size matters."
+  },
+  {
+   "q": "Is the quality reduced?",
+   "a": "The audio is decoded and re-saved as 16-bit samples at the original sample rate and channel count. A lossy original such as MP3 stays as good as the decoded version, but is not re-compressed."
+  },
+  {
+   "q": "Does it do fades or joins?",
+   "a": "No. It only cuts one range from one file. For fades, joining clips or effects you need a fuller audio editor."
+  }
+ ],
+ "related": [
+  "audio-converter",
+  "audio-bpm-tap",
+  "audio-db-converter",
+  "tone-generator",
+  "white-noise-generator",
+  "gzip-compress"
+ ],
+ "keywords": [
+  "audio trimmer",
+  "cut audio online",
+  "trim mp3 to wav",
+  "audio cutter no upload",
+  "free audio clip maker"
+ ]
+}

@@ -1,0 +1,37 @@
+{
+ "id": "average-order-value-calculator",
+ "seoTitle": "Average Order Value (AOV) Calculator With Change vs Last Period",
+ "metaDescription": "Divide revenue by orders for AOV, add units per order and compare with the previous period. Free, nothing uploaded.",
+ "intro": "Calculates average order value from revenue and order count, with units per order and a comparison to a previous period.",
+ "why": "AOV is simple to compute but easy to compute inconsistently. If one month counts shipping and tax and the next does not, the change means nothing. State what is in revenue and keep it fixed.\n\nEnter revenue and orders, and optionally units and the previous period to see the change in percent. Raising AOV by bundles or free-shipping thresholds can lower conversion, so watch both.",
+ "howTo": [
+  "Enter revenue and the number of orders.",
+  "Optionally add units sold and the previous period.",
+  "Read AOV, units per order and the change."
+ ],
+ "faq": [
+  {
+   "q": "Which revenue should I use?",
+   "a": "Pick one definition, such as net of tax and refunds, and use it every time."
+  },
+  {
+   "q": "Is a higher AOV always better?",
+   "a": "No. If conversion drops by more, revenue falls. Track both."
+  },
+  {
+   "q": "How do I raise AOV?",
+   "a": "Common methods are bundles, tiered discounts and free-shipping thresholds. Test each."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "break-even",
+  "payment-fee-gross-up-calculator",
+  "dropshipping-profit-calculator"
+ ],
+ "keywords": [
+  "average order value",
+  "aov calculator",
+  "order value ecommerce"
+ ]
+}

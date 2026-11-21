@@ -1,0 +1,46 @@
+{
+ "id": "barcode-generator",
+ "seoTitle": "Free Barcode Generator - EAN-13, UPC-A, Code 128",
+ "metaDescription": "Create Code 128, Code 39, EAN-13 and UPC-A barcodes as SVG, with check digits calculated or verified. Free and runs in your browser.",
+ "intro": "Generate Code 128, Code 39, EAN-13 or UPC-A barcodes as clean SVG. Check digits for EAN and UPC are calculated or verified for you.",
+ "why": "Product labels, shelf tags, asset stickers and test data for scanners all need barcodes, and the formats are fussy. An EAN-13 or UPC-A is only valid with the right check digit, Code 39 allows a small character set, and Code 128 has several subsets. Getting one wrong means a scanner that silently refuses to read it.\n\nThis tool validates the value before drawing anything. For EAN-13 and UPC-A you can enter the body and let the tool add the check digit, or enter the full number and have it confirm the digit is right. You can set bar height and module width, show or hide the text underneath, and copy the SVG, which stays sharp at any print size. It all runs in the browser.",
+ "howTo": [
+  "Pick a type: EAN-13, UPC-A, Code 128 or Code 39.",
+  "Enter the value, using 12 or 13 digits for EAN-13 and 11 or 12 for UPC-A.",
+  "Adjust bar height, module width and the Show text option.",
+  "Copy the SVG output."
+ ],
+ "faq": [
+  {
+   "q": "Does this give me valid GS1 product codes?",
+   "a": "It draws any number you enter correctly, but only GS1 issues the company prefixes that make an EAN or UPC unique worldwide. For retail sale you need codes registered to your business."
+  },
+  {
+   "q": "What happens if the check digit is wrong?",
+   "a": "If you enter the full 13 or 12 digits and the last one does not match, the tool stops and tells you the expected digit. Enter one digit fewer to have it calculated instead."
+  },
+  {
+   "q": "What does Code 128 support here?",
+   "a": "All-digit input of even length uses the compact numeric subset; anything else uses the character set that covers printable ASCII. Control characters are rejected. Code 39 accepts digits, capitals and a few symbols."
+  },
+  {
+   "q": "Will it scan reliably?",
+   "a": "Keep the default quiet zone, use a module width of at least 2 pixels and print with good contrast. Always test with the scanner you will actually use before printing a large batch."
+  }
+ ],
+ "related": [
+  "qr-code-generator",
+  "check-digit-tool",
+  "luhn-validator",
+  "image-to-base64",
+  "svg-to-png",
+  "placeholder-image-generator"
+ ],
+ "keywords": [
+  "barcode generator",
+  "ean-13 barcode generator",
+  "upc-a barcode online",
+  "code 128 generator",
+  "free barcode maker svg"
+ ]
+}

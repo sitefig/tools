@@ -1,0 +1,44 @@
+{
+ "id": "azure-monitor-log-viewer",
+ "seoTitle": "Azure Monitor Diagnostic Log Viewer for Exported JSON",
+ "metaDescription": "Parse Azure diagnostic log JSON into counts by category, level, operation and result, and a searchable table. Free, runs locally.",
+ "intro": "Reads diagnostic records from storage blobs, Event Hubs or Log Analytics exports and summarises them.",
+ "why": "Azure diagnostic logs use different field names per resource type and per export path. This tool tries the common names (time, category, level, operationName, resultType) and shows the rest in a detail column.\n\nSearch is a plain text match over the whole record.",
+ "howTo": [
+  "Export records as JSON.",
+  "Paste or open the file.",
+  "Filter by category, level or text.",
+  "Read the summary or the table."
+ ],
+ "faq": [
+  {
+   "q": "Which shapes are supported?",
+   "a": "JSON arrays, {\"records\": [...]} blobs and one record per line."
+  },
+  {
+   "q": "Why are some columns empty?",
+   "a": "The record does not use the field names this tool looks for. See the detail column."
+  },
+  {
+   "q": "Does it query Log Analytics?",
+   "a": "No. It reads exported files only."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "gcp-log-export-viewer",
+  "cloudtrail-event-viewer",
+  "jsonl-log-filter",
+  "vercel-netlify-log-viewer",
+  "iis-w3c-log-parser",
+  "log-level-histogram"
+ ],
+ "keywords": [
+  "azure diagnostic logs viewer",
+  "azure monitor json export",
+  "azure log analyzer offline"
+ ]
+}

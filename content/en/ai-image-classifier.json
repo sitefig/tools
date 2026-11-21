@@ -1,0 +1,38 @@
+{
+ "id": "ai-image-classifier",
+ "seoTitle": "AI Image Classifier: Name What a Photo Shows, Offline",
+ "metaDescription": "Drop a photo and a MobileNetV2 neural network in your browser names it from 1000 ImageNet classes with probabilities. The image never leaves your device.",
+ "intro": "A small neural network, MobileNetV2, tells you which of 1000 everyday object classes your picture most resembles.",
+ "why": "Image classifiers label what is in a picture. MobileNetV2 is built to be small enough for phones: 3.5 million parameters and a 7 MB file, which makes it practical to run fully in a browser tab with no upload. Typical uses are sorting photo collections, quick alt-text ideas and learning how convolutional networks behave.\n\nIt knows only the 1000 ImageNet classes (many dog breeds, tools, vehicles, foods, animals, household objects). It has no \"none of these\" class, no concept of people or text, and it always answers with the closest class, so low percentages mean it is guessing. The weights are timm mobilenetv2_100.ra_in1k (Apache-2.0); our JavaScript engine matches PyTorch on test tensors to about 0.004 in the logits.",
+ "howTo": [
+  "Choose an image file.",
+  "Run the tool; the first run downloads the 7 MB model once.",
+  "Read the top five classes with probabilities."
+ ],
+ "faq": [
+  {
+   "q": "Can it identify people or read text?",
+   "a": "No. It only distinguishes the 1000 ImageNet object classes and will still pick one for anything else."
+  },
+  {
+   "q": "Why is the answer odd for my photo?",
+   "a": "The centre 87% of the picture is analysed at 224 by 224 pixels. Busy scenes, unusual angles and objects outside the 1000 classes confuse it."
+  },
+  {
+   "q": "Is my image uploaded?",
+   "a": "No. It is decoded and analysed in your browser tab."
+  }
+ ],
+ "related": [
+  "image-info",
+  "ocr-image-to-text",
+  "ai-sentiment-classifier",
+  "color-picker-from-image",
+  "image-compressor"
+ ],
+ "keywords": [
+  "image classification in browser",
+  "mobilenet online",
+  "what is in this photo"
+ ]
+}

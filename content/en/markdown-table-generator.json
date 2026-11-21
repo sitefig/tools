@@ -1,0 +1,46 @@
+{
+  "id": "markdown-table-generator",
+  "seoTitle": "Free Markdown Table Generator from CSV or Excel",
+  "metaDescription": "Turn CSV, TSV or a pasted spreadsheet range into a neatly aligned Markdown table. Free, runs in your browser and nothing is uploaded.",
+  "intro": "Converts comma, tab, semicolon or pipe separated data into a Markdown table. It can detect the delimiter, pad the columns so the source lines up, and right-align numeric columns.",
+  "why": "Typing a Markdown table by hand is tedious, and keeping the pipes aligned after every edit is worse. Most of the time the data already exists somewhere else, in a spreadsheet, a CSV export or a query result, and you only need it in a README or a wiki page.\n\nCopy the cells from your spreadsheet, paste them here, and the table is built for you. Quoted fields with commas are parsed properly, pipes inside cells are escaped, and numbers can be right-aligned automatically. If your data has no header row, the tool adds generic column names. The work is done in your browser, so a table full of internal figures is not uploaded anywhere.",
+  "howTo": [
+    "Paste CSV, TSV or cells copied from a spreadsheet.",
+    "Leave the delimiter on auto, or pick tab, comma, semicolon or pipe.",
+    "Choose an alignment, and untick First row is header if there is none.",
+    "Copy the Markdown table from the output."
+  ],
+  "faq": [
+    {
+      "q": "How does it detect the delimiter?",
+      "a": "On auto it checks the first line. If it contains a tab, tabs are used, which is what spreadsheet pastes produce. Otherwise it picks whichever of comma, semicolon or pipe splits the line into the most parts."
+    },
+    {
+      "q": "Are quoted CSV fields supported?",
+      "a": "Yes. Fields wrapped in double quotes can contain delimiters, doubled quotes and line breaks. Line breaks inside a cell are turned into a br tag, since Markdown cells must stay on one line."
+    },
+    {
+      "q": "What does auto alignment do?",
+      "a": "A column whose body cells are all numbers, optionally with signs, separators or a percent sign, is right-aligned. All other columns are left-aligned. You can force left, centre, right or no alignment markers."
+    },
+    {
+      "q": "What happens to uneven rows?",
+      "a": "Short rows are padded with empty cells so every row has the same number of columns as the widest one. Completely empty lines are ignored."
+    }
+  ],
+  "related": [
+    "csv-to-markdown-table",
+    "markdown-table-to-csv",
+    "ascii-table-generator",
+    "markdown-to-html",
+    "csv-viewer",
+    "html-table-converter"
+  ],
+  "keywords": [
+    "markdown table generator",
+    "csv to markdown table",
+    "excel to markdown table",
+    "paste spreadsheet to markdown",
+    "free markdown table maker"
+  ]
+}

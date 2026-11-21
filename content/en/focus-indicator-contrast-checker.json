@@ -1,0 +1,44 @@
+{
+ "id": "focus-indicator-contrast-checker",
+ "seoTitle": "Focus Indicator Contrast Checker for WCAG 1.4.11 and 2.4.13",
+ "metaDescription": "Test your focus ring colours, thickness and size against the 3:1 contrast rule (1.4.11) and the Focus Appearance area and contrast rules (2.4.13).",
+ "intro": "Checks a focus indicator against WCAG 1.4.11 and 2.4.13 from colours, thickness and component size.",
+ "why": "A focus ring that is thin or pale is invisible to many people.\n\nEnter the ring colour, the colour next to it, the colour of the same pixels when not focused, the shape and size. The tool computes the contrast, the area of the indicator and the area of a 2 px perimeter, and states which test passes. 2.4.13 is Level AAA in WCAG 2.2.",
+ "howTo": [
+  "Enter the indicator and background colours.",
+  "Choose the shape, thickness and offset.",
+  "Enter the component size.",
+  "Read each pass or fail line."
+ ],
+ "faq": [
+  {
+   "q": "Is 2.4.13 required for AA?",
+   "a": "No, it is AAA. 1.4.11 (3:1) and 2.4.7 are the AA rules."
+  },
+  {
+   "q": "What are unfocused pixels?",
+   "a": "The pixels the indicator covers when the element is not focused, often the page background."
+  },
+  {
+   "q": "Does it handle double rings?",
+   "a": "Check each colour against its own neighbour separately."
+  },
+  {
+   "q": "Is the data sent?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "contrast-checker",
+  "palette-contrast-matrix",
+  "tab-order-checker",
+  "target-size-checker",
+  "accessible-palette-generator",
+  "wcag-success-criteria-explorer"
+ ],
+ "keywords": [
+  "focus indicator contrast",
+  "wcag 2.4.13 focus appearance",
+  "focus ring contrast"
+ ]
+}

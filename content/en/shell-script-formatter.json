@@ -1,0 +1,45 @@
+{
+ "id": "shell-script-formatter",
+ "seoTitle": "Shell Script Re-indenter (Bash and POSIX sh)",
+ "metaDescription": "Re-indent shell scripts by if/fi, do/done, case/esac and braces in the layout shfmt uses. Heredocs and quoted strings stay as typed.",
+ "intro": "Fixes indentation of Bash and POSIX shell scripts and keeps heredocs and multi-line strings intact.",
+ "why": "Shell scripts get edited in many hands and lose their layout. The tool follows if, then, else, fi, for, while, do, done, case, esac and brace blocks, indents case bodies one level, adds a level for lines continued with a backslash, and leaves heredoc bodies and multi-line quotes alone.\n\nIt is not shfmt, because no WASM or third-party code is allowed here, and shfmt was not available to compare. As a check, 398 real system scripts were re-indented: all still parsed with bash -n and only whitespace changed.",
+ "howTo": [
+  "Paste the script.",
+  "Pick tabs or spaces.",
+  "Read the result.",
+  "Run shellcheck for real problems."
+ ],
+ "faq": [
+  {
+   "q": "Does it fix quoting or other errors?",
+   "a": "No. Only indentation and blank lines."
+  },
+  {
+   "q": "Which case layout is used?",
+   "a": "Patterns at the level of case and bodies one level deeper, as shfmt does by default."
+  },
+  {
+   "q": "What about complicated parentheses?",
+   "a": "Subshell and multi-line command substitutions are not tracked and may keep their old indent."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "bash-posix-portability-checker",
+  "shell-command-builder",
+  "dockerfile-formatter",
+  "cron-explainer",
+  "crontab-formatter",
+  "nginx-formatter"
+ ],
+ "keywords": [
+  "shell script formatter",
+  "bash script beautifier",
+  "shfmt online alternative",
+  "re-indent bash script"
+ ]
+}

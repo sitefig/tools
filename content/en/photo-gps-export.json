@@ -1,0 +1,45 @@
+{
+ "id": "photo-gps-export",
+ "seoTitle": "Photo GPS Coordinates Export (CSV, GeoJSON, KML, Map Links)",
+ "metaDescription": "Read the GPS position, altitude and date from many geotagged JPEGs and list them as a table, CSV, GeoJSON or KML, with an OpenStreetMap link per photo....",
+ "intro": "List GPS positions from many photos as CSV, GeoJSON or KML.",
+ "why": "Choose geotagged JPEGs. The page reads latitude, longitude, altitude and capture date from the EXIF data and lists them as a table, CSV, GeoJSON or KML. Each row has an OpenStreetMap link you can click.\n\nNo map is drawn and no tiles are loaded, so the positions stay in your browser. Files without GPS data are listed as skipped.",
+ "howTo": [
+  "Choose the photos.",
+  "Pick the output format.",
+  "Copy the result.",
+  "Open the links only if you want a map."
+ ],
+ "faq": [
+  {
+   "q": "Why is there no map?",
+   "a": "A map would need to fetch tiles from a server. This site makes no network requests with your data."
+  },
+  {
+   "q": "Which files work?",
+   "a": "JPEG files with GPS tags in EXIF."
+  },
+  {
+   "q": "Can I import the result elsewhere?",
+   "a": "Yes. GeoJSON and KML open in most mapping tools."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "exif-viewer",
+  "gps-location-stripper",
+  "exif-remover",
+  "geohash-tool",
+  "photo-date-fixer",
+  "image-info"
+ ],
+ "keywords": [
+  "photo gps coordinates",
+  "exif to csv",
+  "geotag to kml",
+  "photo location export"
+ ]
+}

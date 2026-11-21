@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free robots.txt Tester: Check URLs Against Rules | Free Tools</title>
+<meta name="description" content="Test whether URLs are allowed or blocked by your robots.txt for a chosen user-agent, with longest-match and wildcard rules. Free, in-browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/robots-tester/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/robots-tester/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/robots-tester/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free robots.txt Tester: Check URLs Against Rules | Free Tools">
+<meta property="og:description" content="Test whether URLs are allowed or blocked by your robots.txt for a chosen user-agent, with longest-match and wildcard rules. Free, in-browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/robots-tester/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free robots.txt Tester: Check URLs Against Rules | Free Tools">
+<meta name="twitter:description" content="Test whether URLs are allowed or blocked by your robots.txt for a chosen user-agent, with longest-match and wildcard rules. Free, in-browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"robots.txt Tester","url":"https://tools.sitefig.net/en/robots-tester/","description":"Test whether URLs are allowed or blocked by your robots.txt for a chosen user-agent, with longest-match and wildcard rules. Free, in-browser.","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your robots.txt into the first box.","Paste the URLs you want to test, one per line, into the second box.","Enter the user-agent in the options, for example Googlebot.","Run the tool and review which URLs are blocked, and by which rule."],"keywords":"robots.txt tester, test robots.txt online, robots txt checker url, check if url is blocked by robots, robots.txt validator free","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SEO – Technical","item":"https://tools.sitefig.net/en/#seo-technical"},{"@type":"ListItem","position":3,"name":"robots.txt Tester","item":"https://tools.sitefig.net/en/robots-tester/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How are conflicts between Allow and Disallow decided?","acceptedAnswer":{"@type":"Answer","text":"The rule with the longest matching path wins. If an Allow and a Disallow match with equal length, Allow wins. Wildcards using an asterisk and a trailing dollar sign are supported."}},{"@type":"Question","name":"Which group does a user-agent use?","acceptedAnswer":{"@type":"Answer","text":"The most specific matching group applies, falling back to the asterisk group. Rules from other groups are not merged. If no group matches, everything is allowed."}},{"@type":"Question","name":"Does blocking in robots.txt remove a page from search?","acceptedAnswer":{"@type":"Answer","text":"Not reliably. It stops crawling, but a blocked URL can still be indexed if other pages link to it. Use a noindex directive on a crawlable page to keep it out of results."}},{"@type":"Question","name":"Is my robots.txt uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#seo-technical">SEO – Technical</a></li><li><span aria-current="page">robots.txt Tester</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>robots.txt Tester</h1>
+<p class="lede">Paste a robots.txt and a list of URLs, pick a user-agent such as Googlebot or Bingbot, and see which URLs are allowed or blocked and which rule decided it.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="robots-tester" data-module="seo"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A single wrong line in robots.txt can hide a whole section of a site from search engines, or leave a private area open to crawlers. The rules are subtle: the longest matching path wins, wildcards and the end-of-URL dollar sign change matching, and different user-agent groups apply to different bots.</p>
+<p>This tester parses the robots.txt you paste, finds the most specific group for the user-agent you choose, and checks each URL against its allow and disallow rules, showing the winning rule next to the result. It shows allowed and blocked counts at the top. It follows the common behaviour of major crawlers but is not the exact parser used by any search engine, so confirm important changes in Search Console. The test runs in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your robots.txt into the first box.</li><li>Paste the URLs you want to test, one per line, into the second box.</li><li>Enter the user-agent in the options, for example Googlebot.</li><li>Run the tool and review which URLs are blocked, and by which rule.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How are conflicts between Allow and Disallow decided?</summary><p>The rule with the longest matching path wins. If an Allow and a Disallow match with equal length, Allow wins. Wildcards using an asterisk and a trailing dollar sign are supported.</p></details>
+<details><summary>Which group does a user-agent use?</summary><p>The most specific matching group applies, falling back to the asterisk group. Rules from other groups are not merged. If no group matches, everything is allowed.</p></details>
+<details><summary>Does blocking in robots.txt remove a page from search?</summary><p>Not reliably. It stops crawling, but a blocked URL can still be indexed if other pages link to it. Use a noindex directive on a crawlable page to keep it out of results.</p></details>
+<details><summary>Is my robots.txt uploaded?</summary><p>No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/robots-generator/"><span class="link-card__title">robots.txt Generator</span><span class="link-card__desc">Build a robots.txt with disallow/allow paths and sitemap.</span></a></li><li><a class="link-card" href="/en/ai-bot-robots-builder/"><span class="link-card__title">AI Bot robots.txt Builder</span><span class="link-card__desc">Policy builder for GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot and more.</span></a></li><li><a class="link-card" href="/en/sitemap-validator/"><span class="link-card__title">Sitemap Validator</span><span class="link-card__desc">Check limits, duplicates, bad URLs, dates and values in pasted sitemap XML.</span></a></li><li><a class="link-card" href="/en/seo-robots-noindex-simulator/"><span class="link-card__title">Robots / Noindex Indexability Simulator</span><span class="link-card__desc">Combine robots.txt, X-Robots-Tag headers, meta robots and canonical to see whether a URL can be crawled and indexed, and warn about the classic mistake of blocking a noindex page in robots.txt.</span></a></li><li><a class="link-card" href="/en/http-headers-analyzer/"><span class="link-card__title">HTTP Headers Analyzer</span><span class="link-card__desc">Paste raw response headers: security, caching, compression, SEO issues.</span></a></li><li><a class="link-card" href="/en/seo-inspector/"><span class="link-card__title">SEO Page Inspector</span><span class="link-card__desc">Paste HTML source: full on-page report with prioritized issues.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

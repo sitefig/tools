@@ -1,0 +1,47 @@
+{
+ "id": "timestamp-converter",
+ "seoTitle": "Free Unix Timestamp Converter to Date and Back",
+ "metaDescription": "Convert Unix timestamps in seconds or milliseconds to ISO, UTC and local time, or dates to timestamps. Free, supports time zones, runs in your browser.",
+ "intro": "Convert Unix timestamps to readable dates, or date strings to timestamps. Seconds and milliseconds are detected automatically, and you can view the result in any time zone.",
+ "why": "Logs, databases and APIs store time as a number such as 1700000000, and you need to know what moment that is. The confusion starts when one system writes seconds and another milliseconds, or when the log is in UTC and the incident report is in your local time.\n\nThis converter shows seconds, milliseconds, ISO 8601, UTC, the time in a zone you choose and a relative description such as \"3 days ago\". Enter several values, one per line, to compare them. Values that look like seconds, milliseconds or even microseconds are recognised automatically, or you can force the unit. It all runs locally.",
+ "howTo": [
+  "Enter one or more timestamps or date strings, one per line.",
+  "Leave the unit on auto, or choose seconds or milliseconds.",
+  "Set a time zone such as Europe/Brussels, or leave it empty for your local zone.",
+  "Read the ISO, UTC, zone time and relative time for each line."
+ ],
+ "faq": [
+  {
+   "q": "How does auto-detection guess the unit?",
+   "a": "By magnitude: values below about 10^11 are seconds, below 10^14 milliseconds, and larger ones microseconds or nanoseconds. A 10-digit number is seconds and a 13-digit one is milliseconds. Force the unit if your data is unusual."
+  },
+  {
+   "q": "Which date strings can I enter?",
+   "a": "Anything the browser's date parser accepts, best an ISO 8601 string like 2024-02-29T12:00:00Z. Strings without a zone are read in your local time. Ambiguous formats such as 03/04/2024 vary by browser, so prefer ISO."
+  },
+  {
+   "q": "What is the Unix epoch?",
+   "a": "It is 00:00:00 UTC on 1 January 1970. A Unix timestamp counts the seconds since that moment, ignoring leap seconds, and is the same everywhere in the world."
+  },
+  {
+   "q": "Why does my local time look off by an hour?",
+   "a": "Check the time zone field. Daylight saving changes the offset during the year, and an empty zone means your device's zone. Enter an IANA name like America/New_York to be explicit."
+  }
+ ],
+ "related": [
+  "epoch-batch",
+  "date-formats",
+  "timezone-converter",
+  "date-difference",
+  "jwt-expiry-calculator",
+  "cron-explainer"
+ ],
+ "keywords": [
+  "unix timestamp converter",
+  "epoch to date",
+  "timestamp to datetime online",
+  "free epoch converter",
+  "milliseconds to date",
+  "date to unix timestamp"
+ ]
+}

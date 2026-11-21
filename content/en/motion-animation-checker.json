@@ -1,0 +1,44 @@
+{
+ "id": "motion-animation-checker",
+ "seoTitle": "Motion and Animation Checker: prefers-reduced-motion Coverage",
+ "metaDescription": "Paste CSS to find animations, transitions and smooth scrolling with no prefers-reduced-motion override, plus endless or long animations.",
+ "intro": "Finds CSS motion without a reduced-motion override.",
+ "why": "Motion can trigger nausea or distraction for some users, who set a reduced-motion preference.\n\nThe tool lists animations, transitions and smooth scroll, checks whether a prefers-reduced-motion rule covers each selector or all elements, flags endless or over 5 second animations, and layout-moving keyframes. It reads selectors as written and cannot see specificity or scripts.",
+ "howTo": [
+  "Paste the CSS or a page with style tags.",
+  "Read which rules have no override.",
+  "Add the suggested media query.",
+  "Test with the OS reduce motion setting."
+ ],
+ "faq": [
+  {
+   "q": "Which WCAG criteria apply?",
+   "a": "2.2.2 for moving content over 5 seconds, 2.3.3 for motion from interaction (AAA), 2.3.1 for flashing."
+  },
+  {
+   "q": "Are transitions a problem?",
+   "a": "Short fades are usually fine. Large movement is the concern."
+  },
+  {
+   "q": "Does it find JavaScript animation?",
+   "a": "No."
+  },
+  {
+   "q": "Is the CSS uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "css-animation-generator",
+  "css-scroll-driven-animation-generator",
+  "css-view-transition-generator",
+  "a11y-html-check",
+  "wcag-success-criteria-explorer",
+  "cls-risk-finder"
+ ],
+ "keywords": [
+  "prefers-reduced-motion checker",
+  "css animation accessibility",
+  "reduce motion css"
+ ]
+}

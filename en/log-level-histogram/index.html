@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Log Level Histogram: DEBUG INFO WARN ERROR Over Time | Free Tools</title>
+<meta name="description" content="Count log lines per level in time buckets from any timestamped log. Timestamps are detected automatically. Free, runs locally.">
+<link rel="canonical" href="https://tools.sitefig.net/en/log-level-histogram/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/log-level-histogram/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/log-level-histogram/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Log Level Histogram: DEBUG INFO WARN ERROR Over Time | Free Tools">
+<meta property="og:description" content="Count log lines per level in time buckets from any timestamped log. Timestamps are detected automatically. Free, runs locally.">
+<meta property="og:url" content="https://tools.sitefig.net/en/log-level-histogram/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Log Level Histogram: DEBUG INFO WARN ERROR Over Time | Free Tools">
+<meta name="twitter:description" content="Count log lines per level in time buckets from any timestamped log. Timestamps are detected automatically. Free, runs locally.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Log Level Histogram: DEBUG, INFO, WARN, ERROR Counts Over Time","url":"https://tools.sitefig.net/en/log-level-histogram/","description":"Count log lines per level in time buckets from any timestamped log. Timestamps are detected automatically. Free, runs locally.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the log.","Choose a bucket size or leave auto.","Set the zone for times without one.","Read the table."],"keywords":"log level counts over time, error rate per minute log, log histogram","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Log Parsing","item":"https://tools.sitefig.net/en/#log-parsing"},{"@type":"ListItem","position":3,"name":"Log Level Histogram: DEBUG, INFO, WARN, ERROR Counts Over Time","item":"https://tools.sitefig.net/en/log-level-histogram/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which levels are found?","acceptedAnswer":{"@type":"Answer","text":"TRACE, DEBUG, INFO, NOTICE, WARN, ERROR and FATAL, plus close synonyms."}},{"@type":"Question","name":"What about syslog times with no year?","acceptedAnswer":{"@type":"Answer","text":"Set the year option or the current year is used."}},{"@type":"Question","name":"Why are some buckets empty?","acceptedAnswer":{"@type":"Answer","text":"The range between first and last line is filled with zero rows."}},{"@type":"Question","name":"Is my log uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#log-parsing">Log Parsing</a></li><li><span aria-current="page">Log Level Histogram: DEBUG, INFO, WARN, ERROR Counts Over Time</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Log Level Histogram: DEBUG, INFO, WARN, ERROR Counts Over Time</h1>
+<p class="lede">Counts lines per log level for each minute, hour or day, with a bar per bucket.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="log-level-histogram" data-module="new12" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A spike in ERROR lines is easier to see as a table with bars than in the raw file. The tool finds the first timestamp in each line (ISO, Apache, syslog or epoch) and the first level word.</p>
+<p>Continuation lines such as stack traces carry no level and are not counted. Times without a zone are read as the zone you set.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the log.</li><li>Choose a bucket size or leave auto.</li><li>Set the zone for times without one.</li><li>Read the table.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which levels are found?</summary><p>TRACE, DEBUG, INFO, NOTICE, WARN, ERROR and FATAL, plus close synonyms.</p></details>
+<details><summary>What about syslog times with no year?</summary><p>Set the year option or the current year is used.</p></details>
+<details><summary>Why are some buckets empty?</summary><p>The range between first and last line is filled with zero rows.</p></details>
+<details><summary>Is my log uploaded?</summary><p>No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/request-spike-detector/"><span class="link-card__title">Request Rate Spike Detector: Minutes with Unusual Traffic or Errors</span><span class="link-card__desc">Build a per-minute (or larger) count of requests and errors from an access log and flag buckets far above the typical level. The baseline is the median plus a multiple of the robust spread (MAD).</span></a></li><li><a class="link-card" href="/en/log-timestamp-normalizer/"><span class="link-card__title">Log Timestamp Normalizer: Mixed Formats to ISO 8601</span><span class="link-card__desc">Find the timestamp in every log line (ISO, Apache, RFC 2822, syslog, logcat, epoch seconds or milliseconds) and rewrite it as ISO 8601 in one time zone. Reports how many lines used each format.</span></a></li><li><a class="link-card" href="/en/multi-log-merger/"><span class="link-card__title">Multi-Log Merger: Interleave Several Logs by Timestamp</span><span class="link-card__desc">Merge two pasted logs plus any number of files into one chronological view. Each line gets its source name. Lines without a timestamp (stack traces) stay with the line before them.</span></a></li><li><a class="link-card" href="/en/exception-grouper/"><span class="link-card__title">Exception Grouper: Cluster Similar Error Messages in a Log</span><span class="link-card__desc">Group error and exception lines by replacing variable parts (numbers, IDs, IPs, paths, URLs, quoted values) with placeholders. Shows count, first and last line and an example for each group.</span></a></li><li><a class="link-card" href="/en/log-pattern-miner/"><span class="link-card__title">Log Pattern Miner: Find Recurring Log Templates (Drain-Style)</span><span class="link-card__desc">Paste thousands of log lines and get a short list of templates with &lt;*&gt; where lines differ, how often each occurs and an example. Uses a simplified Drain-like clustering.</span></a></li><li><a class="link-card" href="/en/access-log-analyzer/"><span class="link-card__title">Web Server Access Log Analyzer: Status Codes, Top URLs, Bots</span><span class="link-card__desc">Paste Apache or nginx combined-format log lines to see status codes, top URLs, 404s, slowest-growing paths, search and AI crawler activity and bot hits by status. Local analysis.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

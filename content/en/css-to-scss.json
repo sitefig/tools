@@ -1,0 +1,43 @@
+{
+ "id": "css-to-scss",
+ "seoTitle": "Free CSS to SCSS Converter with Nesting",
+ "metaDescription": "Convert plain CSS into nested SCSS with ampersand selectors, kept media queries and optional colour variables. Free, runs in your browser.",
+ "intro": "Paste plain CSS and get nested SCSS back. Related selectors are folded under their parent with an ampersand where it fits, media blocks are kept and repeated colours can become variables.",
+ "why": "Moving a stylesheet to Sass usually starts with a flat CSS file where .card, .card:hover and .card .title all repeat the same prefix. Nesting them by hand is tedious and easy to get wrong, and finding every colour that appears three times is worse. Teams do this when they adopt Sass for a legacy project or when they pull a design handoff into an SCSS codebase.\n\nThis converter does the mechanical part. It nests selectors that extend an earlier one, keeps media and supports blocks, and can pull repeated colours into dollar variables. Selector lists with commas are left alone, so review the output before committing. It runs in your browser and your stylesheet is not uploaded.",
+ "howTo": [
+  "Paste your CSS into the input box.",
+  "Tick the option to extract repeated colours into variables if you want them.",
+  "Read the generated SCSS and check how each rule has been nested.",
+  "Copy the result into a .scss file and compile it to confirm the output matches the original."
+ ],
+ "faq": [
+  {
+   "q": "Will the compiled CSS match my original exactly?",
+   "a": "Usually, but not always. Nesting depends on the order of the rules, and the tool leaves comma-separated selector lists untouched. Compile the result and compare it with your original before relying on it."
+  },
+  {
+   "q": "What counts as a repeated colour?",
+   "a": "A colour value that appears two or more times is moved to a numbered dollar variable at the top of the file. Single-use colours stay where they are."
+  },
+  {
+   "q": "Does it convert SCSS back to CSS?",
+   "a": "No, this tool goes from CSS to SCSS only. For the other direction use the SCSS to CSS compiler, which handles a practical subset of the language."
+  }
+ ],
+ "related": [
+  "scss-to-css",
+  "css-format",
+  "css-minify",
+  "css-box-shadow-to-tailwind",
+  "tailwind-converter",
+  "css-specificity-calculator"
+ ],
+ "keywords": [
+  "css to scss converter",
+  "convert css to scss online",
+  "css to sass nesting",
+  "css to scss free",
+  "scss nesting generator",
+  "extract css colors to scss variables"
+ ]
+}

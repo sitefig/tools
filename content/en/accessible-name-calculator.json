@@ -1,0 +1,44 @@
+{
+ "id": "accessible-name-calculator",
+ "seoTitle": "Accessible Name and Role Calculator for HTML Elements",
+ "metaDescription": "Paste HTML to see the role and accessible name assistive technology gets for each element, and where the name came from.",
+ "intro": "Computes roles and accessible names for elements in pasted HTML and shows the source of each name.",
+ "why": "The accessible name is what a screen reader says. It comes from many sources in a fixed order.\n\nThe tool follows the accessible name algorithm in simplified form: aria-labelledby, aria-label, native sources such as label, alt, value, legend and caption, then content, then title or placeholder. It shows the role too, from the role attribute or the element default. Check hard cases in the browser accessibility tree.",
+ "howTo": [
+  "Paste the HTML.",
+  "Optionally enter a CSS selector for one element.",
+  "Read role, name and source.",
+  "Fix elements with no name."
+ ],
+ "faq": [
+  {
+   "q": "What does \"weak\" mean?",
+   "a": "Names from title or placeholder are used only as a last resort and are unreliable."
+  },
+  {
+   "q": "Does it handle hidden elements?",
+   "a": "Yes for hidden, aria-hidden and display none inline."
+  },
+  {
+   "q": "Is it exact?",
+   "a": "It is a simplified version. Browsers differ in edge cases."
+  },
+  {
+   "q": "Is the HTML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "form-label-checker",
+  "aria-attribute-validator",
+  "screen-reader-text-preview",
+  "link-purpose-checker",
+  "alt-text-quality-checker",
+  "a11y-html-check"
+ ],
+ "keywords": [
+  "accessible name calculator",
+  "accname checker",
+  "what name does screen reader get"
+ ]
+}

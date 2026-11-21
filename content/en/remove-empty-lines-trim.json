@@ -1,0 +1,46 @@
+{
+ "id": "remove-empty-lines-trim",
+ "seoTitle": "Free Empty Line Remover and Whitespace Trimmer",
+ "metaDescription": "Remove blank lines, trim each line, collapse repeated spaces or reduce multiple blank lines to one. Free; runs in your browser.",
+ "intro": "Clean pasted text by removing empty lines, trimming whitespace from each line, collapsing repeated spaces and tabs, or squeezing runs of blank lines into one.",
+ "why": "Text copied from PDFs, emails and web pages arrives with stray spaces, tabs and blank lines in odd places. Code, CSV rows and lists are harder to work with until those are cleaned, and a trailing space can break a comparison or a lookup.\n\nThis tool applies the clean-ups you choose. It can trim each line, collapse runs of spaces and tabs inside lines into a single space, and remove all blank lines. If you keep blank lines, it can reduce several in a row to one and drop leading and trailing blank lines. The text is processed line by line in your browser. Be careful with the inner-whitespace option on code or tables where spacing is meaningful.",
+ "howTo": [
+  "Paste the text into the input box.",
+  "Tick the clean-ups you want: remove empty lines, collapse blank lines, trim lines and collapse inner whitespace.",
+  "Run the tool.",
+  "Copy the cleaned text."
+ ],
+ "faq": [
+  {
+   "q": "What does collapse blank lines do?",
+   "a": "When empty lines are kept, runs of several are reduced to a single one, which keeps paragraph breaks but removes extra gaps. It has no effect if you remove all empty lines."
+  },
+  {
+   "q": "Is a line with only spaces empty?",
+   "a": "Yes. A line containing only spaces or tabs counts as empty when removing blank lines, even if trimming is turned off."
+  },
+  {
+   "q": "Should I collapse inner whitespace on code?",
+   "a": "Usually not. Indentation and aligned columns rely on repeated spaces. The option replaces any run of spaces or tabs inside a line with one space."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "dedupe-lines",
+  "sort-lines",
+  "find-replace",
+  "tabs-spaces-converter",
+  "wrap-text",
+  "html-tag-stripper"
+ ],
+ "keywords": [
+  "remove empty lines",
+  "delete blank lines online",
+  "trim whitespace from lines",
+  "collapse spaces text",
+  "clean pasted text"
+ ]
+}

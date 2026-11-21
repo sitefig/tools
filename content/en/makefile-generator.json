@@ -1,0 +1,46 @@
+{
+ "id": "makefile-generator",
+ "seoTitle": "Free Makefile Generator for Node, Python, Go, Rust, C",
+ "metaDescription": "Generate a Makefile with install, build, test, lint, run and clean targets for Node, Python, Go, Rust or C. Free and generated in your browser.",
+ "intro": "Choose a stack and an app name to get a Makefile with the usual install, build, test, lint, run and clean targets.",
+ "why": "A short Makefile gives every project the same entry points, so a new teammate or a CI job can run make test without reading the README to find the right command. The syntax causes most of the trouble: recipes need real tab characters, targets should be declared phony, and the default goal has to be set deliberately.\n\nThis generator writes all of that for Node, Python, Go, Rust and C. Each target wraps the usual command for the stack, such as npm ci, pytest, go test or cargo clippy. The run target depends on build, and the default goal is build. Copy the file with its tabs intact, since editors that convert tabs to spaces break make. Treat the commands as defaults and swap in your own linter or test runner where needed. It all happens in your browser.",
+ "howTo": [
+  "Choose the stack: node, python, go, rust or c.",
+  "Enter the binary or app name used in the build and run commands.",
+  "Copy the generated Makefile.",
+  "Save it as Makefile, keep the tab indentation and run make."
+ ],
+ "faq": [
+  {
+   "q": "Why do recipes need tabs?",
+   "a": "make requires each command line under a target to start with a tab character, not spaces. If your editor converts tabs to spaces you will see a missing separator error. An .editorconfig rule for Makefiles helps."
+  },
+  {
+   "q": "What does .PHONY do?",
+   "a": "It marks targets like test and clean as commands rather than files. Without it, make would skip a target if a file with the same name existed in the folder."
+  },
+  {
+   "q": "Which commands does each stack use?",
+   "a": "Node uses npm scripts, Python uses pip, build, pytest and ruff, Go uses go build, test and vet, Rust uses cargo with clippy, and C compiles src/*.c with cc and runs cppcheck."
+  },
+  {
+   "q": "Can I add more targets?",
+   "a": "Yes. Edit the file after generating it. Add a new target, list it in the .PHONY line and indent its commands with a tab. Dependencies go after the colon."
+  }
+ ],
+ "related": [
+  "github-actions-generator",
+  "dockerfile-generator",
+  "editorconfig-generator",
+  "package-json-generator",
+  "gitlab-ci-generator",
+  "pre-commit-config-generator"
+ ],
+ "keywords": [
+  "makefile generator",
+  "create makefile online",
+  "makefile template",
+  "makefile for node python go",
+  "free makefile builder"
+ ]
+}

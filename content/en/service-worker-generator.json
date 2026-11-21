@@ -1,0 +1,45 @@
+{
+  "id": "service-worker-generator",
+  "seoTitle": "Service Worker Generator: Precache & Offline Fallback",
+  "metaDescription": "Generate a service worker with precaching, cache-first, network-first or stale-while-revalidate routing, an offline page and the registration code.",
+  "intro": "Get a working service worker for a small site, with a cache strategy you choose and an offline fallback for page navigations.",
+  "why": "List the files to precache, choose a cache version and a strategy for other same-origin GET requests, and the tool writes sw.js: an install step that caches your shell, an activate step that deletes old caches, the chosen fetch strategy and a fallback to your offline page when a navigation fails. A commented registration snippet is included.\n\nCaching bugs can leave users on old files, so bump the cache version when assets change and test with the Application panel. Do not cache authenticated or personalised responses with a shared strategy.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "List the paths to precache, one per line.",
+    "Pick a strategy and an offline fallback page.",
+    "Save the output as /sw.js and register it from your page.",
+    "Change the cache version whenever you deploy new assets."
+  ],
+  "faq": [
+    {
+      "q": "Which strategy should I pick?",
+      "a": "Stale-while-revalidate suits most static assets; network-first suits HTML that changes often; cache-first suits versioned files that never change."
+    },
+    {
+      "q": "Why does my old version keep loading?",
+      "a": "The previous service worker is serving cached files. Change the cache name and unregister it during development."
+    },
+    {
+      "q": "Does it handle POST requests or APIs?",
+      "a": "No. Only same-origin GET requests are intercepted."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "pwa-manifest-generator",
+    "cache-control-builder",
+    "http-cache-control-tester",
+    "subresource-integrity-generator",
+    "code-playground",
+    "nginx-config-generator"
+  ],
+  "keywords": [
+    "service worker generator",
+    "offline page pwa",
+    "workbox alternative",
+    "cache strategies"
+  ]
+}

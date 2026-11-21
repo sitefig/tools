@@ -1,0 +1,45 @@
+{
+ "id": "mongodb-objectid-parser",
+ "seoTitle": "Free MongoDB ObjectId Parser and Date Decoder",
+ "metaDescription": "Decode MongoDB ObjectIds to see the creation time, random value and counter, one per line. Free and runs entirely in your browser.",
+ "intro": "Paste one or more 24-character ObjectIds and read the creation timestamp, the random part and the counter inside each of them.",
+ "why": "The first four bytes of a MongoDB ObjectId are a Unix timestamp in seconds, which means that you can often tell when a document was created without a createdAt field. That is handy when you are debugging an incident, auditing old records or checking whether two ids came from the same period.\n\nThis tool splits each id into its parts: the time as an ISO date, the five-byte random value and the three-byte counter. It runs locally and accepts many ids at once. The embedded time is the moment the id was generated, usually by the driver, which may differ from when the document was inserted. Anyone can also make an id with any time.",
+ "howTo": [
+  "Paste ObjectIds into the input, one per line.",
+  "Read the decoded creation time, random value and counter under each id.",
+  "Copy the dates you need into your notes or ticket."
+ ],
+ "faq": [
+  {
+   "q": "What format must the id have?",
+   "a": "It must be exactly 24 hexadecimal characters, such as 507f1f77bcf86cd799439011. Anything else stops the tool with an error that shows the value that failed."
+  },
+  {
+   "q": "Is the timestamp the insert time?",
+   "a": "It is when the id was generated, usually in the client driver. The document may be inserted later, and anyone can build an id with a chosen time, so do not use it as proof."
+  },
+  {
+   "q": "What are the random value and counter?",
+   "a": "The random value is five bytes chosen per process and the counter is a three-byte number that increases for each id generated. Together they make ids unique within a second."
+  },
+  {
+   "q": "Does it connect to a database?",
+   "a": "No. It only decodes the hexadecimal text you paste, inside your browser, and never contacts a database or any server with your data."
+  }
+ ],
+ "related": [
+  "uuid-v7-timestamp-extractor",
+  "timestamp-converter",
+  "uuid-generator",
+  "ulid-generator",
+  "hex-to-base64",
+  "sql-to-json"
+ ],
+ "keywords": [
+  "mongodb objectid decoder",
+  "objectid to date",
+  "objectid timestamp parser",
+  "free objectid converter",
+  "mongodb id creation time"
+ ]
+}

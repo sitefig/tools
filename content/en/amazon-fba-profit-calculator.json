@@ -1,0 +1,38 @@
+{
+ "id": "amazon-fba-profit-calculator",
+ "seoTitle": "Amazon FBA Profit Calculator: Enter Your Own Fees",
+ "metaDescription": "Net profit, margin and ROI per unit from price, cost, referral % and fulfilment fee you enter. No fee table built in, so no stale rates.",
+ "intro": "Works out profit per unit for an Amazon FBA product from the referral percentage and fulfilment fee you copy from Amazon.",
+ "why": "Amazon fees depend on category, size tier, weight and date, and they change. A calculator with a built-in table goes out of date quietly. This one asks for your rates and does the arithmetic, so it stays right as long as the rates you type are right.\n\nIt adds storage, advertising and a returns allowance, then shows margin, ROI on product cost and the price at which you break even. Use it to compare products with the same method.",
+ "howTo": [
+  "Look up the referral percentage and fulfilment fee for your product on Amazon's fee pages.",
+  "Enter price, landed product cost, those fees, storage, ads and a returns loss.",
+  "Read net profit, margin, ROI and the break-even price."
+ ],
+ "faq": [
+  {
+   "q": "Why are there no built-in Amazon fees?",
+   "a": "They vary by category and size and change often. Typed-in rates are always the ones you checked."
+  },
+  {
+   "q": "What is landed cost?",
+   "a": "Product cost plus freight, duty and inbound handling per unit."
+  },
+  {
+   "q": "Does it include VAT or sales tax?",
+   "a": "No. Enter the price net of tax if your marketplace shows tax-inclusive prices."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "break-even",
+  "payment-fee-gross-up-calculator",
+  "dropshipping-profit-calculator",
+  "average-order-value-calculator"
+ ],
+ "keywords": [
+  "amazon fba calculator",
+  "fba profit calculator",
+  "amazon referral fee profit"
+ ]
+}

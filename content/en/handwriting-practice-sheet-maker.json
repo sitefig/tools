@@ -1,0 +1,45 @@
+{
+ "id": "handwriting-practice-sheet-maker",
+ "seoTitle": "Handwriting Tracing Worksheet Maker with Dotted Letters",
+ "metaDescription": "Type letters, words or sentences and print a tracing worksheet with dotted text on guide lines plus blank practice rows. Free.",
+ "intro": "Creates a printable handwriting worksheet with dotted letters to trace on baseline and midline guides, followed by blank practice lines.",
+ "why": "Children learn letter shapes by tracing before writing alone. Enter the letters or words to practice and the sheet shows each line as dotted outlines on ruled guide lines, with empty lines below to copy it.\n\nThe letters use the sans-serif, serif or monospace font of your device, because a school-style font cannot be assumed. Use the size setting to make the letters bigger for young writers. Print the sheet or save it as a PDF from your browser.",
+ "howTo": [
+  "Type one line of text per row to trace.",
+  "Choose a letter style, size and the number of blank rows.",
+  "Check the preview.",
+  "Print or save as PDF."
+ ],
+ "faq": [
+  {
+   "q": "Can I get a school handwriting font?",
+   "a": "No fonts are loaded, so only the system fonts are used."
+  },
+  {
+   "q": "How many lines fit?",
+   "a": "Up to 14 lines."
+  },
+  {
+   "q": "Can I use other alphabets?",
+   "a": "Yes, if your device has a font for them."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "math-worksheet-generator",
+  "word-search-puzzle-maker",
+  "crossword-puzzle-maker",
+  "classroom-seating-chart-generator",
+  "spelling-bee-speech-practice",
+  "text-to-speech"
+ ],
+ "keywords": [
+  "handwriting practice sheet",
+  "tracing worksheet generator",
+  "dotted letters worksheet",
+  "printable handwriting"
+ ]
+}

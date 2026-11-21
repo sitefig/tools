@@ -1,0 +1,46 @@
+{
+ "id": "cookie-policy-generator",
+ "seoTitle": "Free Cookie Policy Generator (Template Draft)",
+ "metaDescription": "Draft a cookie policy with a categorised cookie table for necessary, preference, analytics and marketing cookies. Free; in your browser.",
+ "intro": "Create a cookie policy draft with a table of cookies grouped as necessary, preferences, analytics and marketing. It is a starting template and not legal advice.",
+ "why": "If your site sets cookies or uses similar storage, visitors are entitled to a clear explanation of what each one is for and how long it lasts. A good policy lists cookies by category, so people can see why a login cookie is different from an advertising cookie. Writing that table from nothing is tedious.\n\nThis generator produces a draft with sections that explain what cookies are, who is responsible, how to manage them and a table of cookie categories. You choose whether you use preference, analytics and marketing cookies, name the analytics tool and its cookies, and add the session cookie name. It is a template only and not legal advice, and the cookie names and lifetimes must match what your site really sets. Everything is generated locally.",
+ "howTo": [
+  "Enter your company name, website and contact email.",
+  "Tick the cookie types you use: preferences, analytics and marketing.",
+  "Fill in the analytics tool, the marketing tool and your session cookie details.",
+  "Run the tool, compare the table with the cookies your site really sets, and have the text reviewed."
+ ],
+ "faq": [
+  {
+   "q": "Is this cookie policy legally compliant?",
+   "a": "It is a generic starting template, not legal advice. Compliance depends on what your site really does and on local law, so have a qualified lawyer review the final text."
+  },
+  {
+   "q": "Does the policy create a consent banner?",
+   "a": "No. It only creates the policy text. For the banner use the cookie consent banner generator, and make sure scripts really wait for consent before they run."
+  },
+  {
+   "q": "How do I find out which cookies my site sets?",
+   "a": "Open browser developer tools and look at the Application or Storage tab, or run a HAR capture through the HAR analyzer. Update the table whenever you add or remove a service."
+  },
+  {
+   "q": "Does my data leave the browser?",
+   "a": "No. The text is generated locally in your browser from the details you enter, and nothing is uploaded or stored on this site or sent to a third party."
+  }
+ ],
+ "related": [
+  "cookie-banner-generator",
+  "privacy-policy-generator",
+  "tracker-detector",
+  "cookie-flag-analyzer",
+  "har-analyzer",
+  "gdpr-checklist"
+ ],
+ "keywords": [
+  "cookie policy generator",
+  "free cookie policy template",
+  "gdpr cookie policy",
+  "cookie table generator",
+  "website cookie policy draft"
+ ]
+}

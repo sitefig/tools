@@ -1,0 +1,39 @@
+{
+ "id": "apr-apy-converter",
+ "seoTitle": "APR to APY Converter (Effective Annual Rate)",
+ "metaDescription": "Convert a nominal rate to effective annual yield for any compounding frequency, or APY back to APR. Includes continuous compounding.",
+ "intro": "Converts between nominal and effective annual interest rates.",
+ "why": "A nominal rate (APR) compounded monthly yields more than the same number compounded yearly. APY is the effective annual figure that lets you compare offers fairly.\n\nChoose the direction, enter the rate and the compounding periods per year, or 0 for continuous compounding.",
+ "howTo": [
+  "Choose APR to APY or APY to APR.",
+  "Enter the rate.",
+  "Enter periods per year (12 monthly, 365 daily, 0 continuous)."
+ ],
+ "faq": [
+  {
+   "q": "Which is higher?",
+   "a": "APY is higher than APR whenever interest compounds more than once a year."
+  },
+  {
+   "q": "Do loans use APR?",
+   "a": "Rules differ. In some countries APR includes fees; here it is only the nominal rate."
+  },
+  {
+   "q": "What is continuous?",
+   "a": "The limit of ever more frequent compounding: e raised to the rate, minus 1."
+  }
+ ],
+ "related": [
+  "compound-interest",
+  "simple-interest",
+  "roi-calculator",
+  "loan-calculator",
+  "savings-goal",
+  "percent-change"
+ ],
+ "keywords": [
+  "APR to APY",
+  "effective annual rate",
+  "nominal rate"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "minesweeper",
+ "seoTitle": "Free Minesweeper Game to Play Online in Your Browser",
+ "metaDescription": "Play Minesweeper on a 9x9 board with 10 mines. Flag with right-click or flag mode on touch. Best time is saved locally. Free, no sign-up or download.",
+ "intro": "Play beginner-level Minesweeper: a 9 by 9 board with 10 hidden mines. Reveal safe squares, use the numbers to find mines, and flag them to win.",
+ "why": "Minesweeper is a small logic puzzle: every number tells you how many mines touch that square, and from those clues you work out which squares are safe. A round takes a minute or two, which suits a short break.\n\nThis version uses the beginner board. Your first click is always safe and never next to a mine, so you do not lose on move one. Right-click to place a flag on a computer, or tick \"Flag mode\" and tap on a touch screen. A counter shows mines left and a timer starts at your first click. Your best time is kept in this browser only. There is no account and no advertising.",
+ "howTo": [
+  "Click a square to reveal it. Your first click is always safe.",
+  "Read the numbers: each shows how many of the eight neighbouring squares contain a mine.",
+  "Right-click to flag a suspected mine, or tick \"Flag mode\" and click or tap squares to flag them.",
+  "Reveal every safe square to win. Press \"New game\" to play again and beat your best time."
+ ],
+ "faq": [
+  {
+   "q": "Is the first click always safe?",
+   "a": "Yes. Mines are placed after your first click, avoiding that square and its neighbours, so the first click opens up an area rather than ending the game."
+  },
+  {
+   "q": "How do I flag on a phone or tablet?",
+   "a": "Tick the \"Flag mode\" checkbox below the board. Taps then place or remove flags instead of revealing squares. Untick it to reveal squares again."
+  },
+  {
+   "q": "Where is my best time stored?",
+   "a": "In your browser's local storage on this device. It is not uploaded, and clearing site data or using a private window removes it."
+  },
+  {
+   "q": "Can I change the board size or number of mines?",
+   "a": "No. The board is fixed at 9 by 9 with 10 mines, the usual beginner level, so every round is directly comparable with your saved best time."
+  }
+ ],
+ "related": [
+  "game-2048",
+  "memory-match",
+  "dice-roller",
+  "stopwatch",
+  "typing-speed-test",
+  "random-team-splitter"
+ ],
+ "keywords": [
+  "minesweeper online",
+  "play minesweeper free",
+  "minesweeper 9x9",
+  "browser minesweeper game",
+  "minesweeper no download",
+  "minesweeper flag mode touch"
+ ]
+}

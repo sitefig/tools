@@ -1,0 +1,45 @@
+{
+ "id": "redirect-type-advisor",
+ "seoTitle": "Which Redirect to Use: 301, 302, 307, 308 or Meta Refresh",
+ "metaDescription": "Pick your situation and get the right redirect code, why, and what to watch for: domain moves, HTTPS, removed pages, A/B tests and more.",
+ "intro": "Choose what is happening to the URL and get the redirect status code to use, the reason, and the usual mistakes. Covers 301, 302, 303, 307, 308 and meta refresh.",
+ "why": "Choosing between 301, 302, 307 and 308 is a small decision with large effects. The wrong code can leave an old URL in the index or lose the request method on a form post.\n\nThe advice follows Google Search Central: 301 and 308 are strong signals that the target is the canonical URL, 302 and 307 are weak signals, and Google follows up to 10 hops. Other search engines may behave differently. It is guidance for common cases, not a guarantee.",
+ "howTo": [
+  "Pick the closest situation from the list.",
+  "Read the recommended code and the reason.",
+  "Check the \"watch for\" line before you write the rule.",
+  "Build the rules with the bulk redirect generator."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between 301 and 308?",
+   "a": "Both are permanent. 308 forces the client to repeat the same method and body, 301 lets old clients change POST to GET. For normal page moves they are equivalent for Google."
+  },
+  {
+   "q": "When should I use 410 instead of a redirect?",
+   "a": "When a page is gone and no close replacement exists. Redirecting it to the home page can be treated as a soft 404."
+  },
+  {
+   "q": "Is a meta refresh as good as a 301?",
+   "a": "No. Google can follow it, but a server-side redirect is clearer and faster. Use meta refresh only when you cannot change server config."
+  },
+  {
+   "q": "How long should I keep a redirect?",
+   "a": "Google advises at least a year for site moves."
+  }
+ ],
+ "related": [
+  "redirect-code-generator",
+  "redirect-chain-analyzer",
+  "redirect-map-matcher",
+  "http-status-seo-reference",
+  "soft-404-detector",
+  "bulk-redirect-rules"
+ ],
+ "keywords": [
+  "301 or 302",
+  "redirect types seo",
+  "307 vs 308",
+  "which redirect should i use"
+ ]
+}

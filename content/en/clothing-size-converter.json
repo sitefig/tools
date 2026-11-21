@@ -1,0 +1,39 @@
+{
+ "id": "clothing-size-converter",
+ "seoTitle": "Clothing Size Converter: US, UK, DE, FR, IT Women and EU Men",
+ "metaDescription": "Convert women's dress and top sizes between US, UK, DE, FR and IT, and men's shirt letters to EU numbers and chest cm.",
+ "intro": "Looks up equivalent clothing sizes between common systems from a published reference table.",
+ "why": "Clothing sizes are not defined by one standard, and vanity sizing makes labels drift. A table gives a fair starting point, not a promise of fit.\n\nThe women's numbers and men's letters come from the Wikipedia article on clothing sizes. For women, enter the number in the system you know. For men, enter a letter, an EU number or a chest size in cm.",
+ "howTo": [
+  "Choose women or men.",
+  "For women pick your system and enter the size; for men enter a letter, EU number or chest cm.",
+  "Read the equivalents and then check the brand's own chart."
+ ],
+ "faq": [
+  {
+   "q": "Why does my size differ by brand?",
+   "a": "Brands use different cuts and vanity sizing. Use the brand's measurements."
+  },
+  {
+   "q": "Where does the table come from?",
+   "a": "From the Wikipedia article on clothing sizes, as noted in the output."
+  },
+  {
+   "q": "Are children's sizes included?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "shoe-size-converter",
+  "ring-size-converter",
+  "clothing-shoe-size-chart",
+  "unit-converter",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "clothing size converter",
+  "us uk eu dress size",
+  "mens shirt size chart"
+ ]
+}

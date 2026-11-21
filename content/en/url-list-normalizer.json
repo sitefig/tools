@@ -1,0 +1,45 @@
+{
+ "id": "url-list-normalizer",
+ "seoTitle": "URL Normalizer and Duplicate Remover for URL Lists",
+ "metaDescription": "Clean a URL list: host case, ports, dot segments, encoding, parameter order, tracking parameters and slashes. Then remove or group duplicates.",
+ "intro": "Makes equal URLs look equal so you can count, deduplicate or group them. Choose which differences to ignore, such as tracking parameters, parameter order, www and trailing slashes.",
+ "why": "Crawls, logs and analytics exports contain the same page many times in slightly different forms. Before you compare lists or count unique pages you need one form for each URL.\n\nThe tool lowercases the scheme and host, drops default ports, resolves dot segments, uppercases percent-encoding and decodes unreserved characters (RFC 3986 normalization). The other steps are your choice, because they depend on your server: for example, paths are case-sensitive on most servers, so lowercase paths is off by default.",
+ "howTo": [
+  "Paste your URLs, one per line.",
+  "Tick the normalization steps you want.",
+  "Choose the output: normalized list, unique list or duplicate groups.",
+  "Check the groups before you redirect or delete anything."
+ ],
+ "faq": [
+  {
+   "q": "Are URLs case-sensitive?",
+   "a": "The scheme and host are not. The path usually is, and the query often is. That is why lowercasing the path is optional."
+  },
+  {
+   "q": "Which parameters count as tracking?",
+   "a": "utm_*, gclid, gbraid, wbraid, fbclid, msclkid, dclid, yclid, mc_cid, mc_eid, igshid, _ga, _gl, ref_src and twclid."
+  },
+  {
+   "q": "Is sorting parameters safe?",
+   "a": "Usually, but a few sites depend on the order. Check one example."
+  },
+  {
+   "q": "Does it follow redirects?",
+   "a": "No. It only rewrites the text you paste."
+  }
+ ],
+ "related": [
+  "canonical-generator",
+  "url-tracker-stripper",
+  "dedupe-lines",
+  "url-case-duplicates",
+  "url-parameter-analyzer",
+  "url-parser"
+ ],
+ "keywords": [
+  "url normalizer",
+  "remove duplicate urls",
+  "url deduplicator",
+  "normalize url list"
+ ]
+}

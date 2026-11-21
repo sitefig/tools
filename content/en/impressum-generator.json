@@ -1,0 +1,41 @@
+{
+ "id": "impressum-generator",
+ "seoTitle": "Impressum Generator: German and Austrian Legal Notice",
+ "metaDescription": "Generate an Impressum in German or English with register, VAT ID, authority and editor sections for German and Austrian sites. Template only.",
+ "intro": "Builds a site notice (Impressum) from company details, in German or English, for Germany or Austria.",
+ "why": "Websites aimed at Germany and Austria usually need a legal notice with the provider's name, address, quick contact, register entry and VAT ID. In Germany the duty sits in § 5 of the Digitale-Dienste-Gesetz since 14 May 2024 (before that in the Telemediengesetz). Austria has § 5 of the E-Commerce-Gesetz and other rules.\n\nFill in the fields and the tool writes the text. Which fields you need depends on legal form, trade and profession. Missing items are listed for review. It is a template, not legal advice.",
+ "howTo": [
+  "Choose country, language and legal form.",
+  "Fill in the company details that apply.",
+  "Copy the text onto an Impressum page linked from every page.",
+  "Have it checked for your trade or profession."
+ ],
+ "faq": [
+  {
+   "q": "Which law applies in Germany?",
+   "a": "§ 5 DDG since May 2024. Older notices cite § 5 TMG."
+  },
+  {
+   "q": "Do I need a register number?",
+   "a": "Companies entered in a commercial register do."
+  },
+  {
+   "q": "Do I need the dispute resolution statement?",
+   "a": "Some businesses must state whether they take part in consumer arbitration. Check if it applies to you."
+  }
+ ],
+ "related": [
+  "privacy-contact-page-generator",
+  "privacy-policy-generator",
+  "cookie-policy-generator",
+  "terms-generator",
+  "data-deletion-request-letter",
+  "gdpr-checklist"
+ ],
+ "keywords": [
+  "impressum generator",
+  "impressum template",
+  "legal notice germany",
+  "ddg paragraph 5"
+ ]
+}

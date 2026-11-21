@@ -1,0 +1,46 @@
+{
+  "id": "glassmorphism-generator",
+  "seoTitle": "Free Glassmorphism CSS Generator (Frosted Glass)",
+  "metaDescription": "Generate frosted-glass card CSS with backdrop-filter blur, transparency, border and saturation. Live preview. Free, runs in your browser.",
+  "intro": "Produces the CSS for a frosted-glass card: a translucent background, backdrop-filter blur and saturation, a faint border and rounded corners. A preview shows it over a colourful backdrop.",
+  "why": "Glassmorphism, the frosted-glass look, depends on a handful of properties working together: a semi-transparent fill, a backdrop blur, a lighter border to catch the edge and a background behind it with enough colour to show off the blur. Getting the balance wrong gives either a muddy grey box or a card that is unreadable.\n\nPick the glass colour, transparency, blur amount, saturation, border strength and radius, and compare the card against a gradient backdrop. The output includes the prefixed backdrop-filter that older WebKit browsers need. Remember that blurred backgrounds can hurt text contrast and are costly on weak devices. Everything runs locally in your browser.",
+  "howTo": [
+    "Choose the glass colour and the transparency percentage.",
+    "Adjust blur, saturation, border opacity and radius.",
+    "Check the preview card against the gradient backdrop.",
+    "Copy the CSS block into your stylesheet."
+  ],
+  "faq": [
+    {
+      "q": "Does backdrop-filter work everywhere?",
+      "a": "It is supported in current browsers, and the output includes the -webkit- prefix for older Safari. Where it is unsupported the card falls back to the translucent colour without blur, so set a fallback that stays readable."
+    },
+    {
+      "q": "How do I keep text readable on glass?",
+      "a": "Use a stronger fill, a darker or lighter text colour with enough contrast against the average backdrop, and avoid placing glass over very busy areas. Test the text colour with a contrast checker."
+    },
+    {
+      "q": "Why does my card look flat?",
+      "a": "Blur is only visible if there is something colourful or detailed behind the card. On a plain white page you will see almost nothing. Place it over an image or gradient."
+    },
+    {
+      "q": "What does the saturation setting do?",
+      "a": "It boosts or reduces the colour intensity of whatever is behind the glass. A value above 100% makes the blurred colours richer, which helps the frosted effect stand out."
+    }
+  ],
+  "related": [
+    "neumorphism-generator",
+    "css-claymorphism-generator",
+    "box-shadow-generator",
+    "mesh-gradient-generator",
+    "contrast-checker",
+    "css-filter-generator"
+  ],
+  "keywords": [
+    "glassmorphism generator",
+    "frosted glass css",
+    "backdrop-filter blur generator",
+    "css glass effect",
+    "free glassmorphism css"
+  ]
+}

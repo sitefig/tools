@@ -1,0 +1,46 @@
+{
+ "id": "profit-margin",
+ "seoTitle": "Free Profit Margin Calculator: Gross Profit and Markup",
+ "metaDescription": "Calculate gross profit, profit margin percentage and markup on cost from revenue and cost. Free profit margin calculator that runs in your browser.",
+ "intro": "Enter revenue and the cost of goods or expenses. The tool returns profit, profit margin as a percentage of revenue, and markup on cost.",
+ "why": "Revenue alone says little about whether a product or a month of trading was any good. The profit margin tells you how many pence of every pound you actually keep, and it is the figure that lenders, investors and your accountant will ask about. Small business owners tend to run into it when pricing a new product, reviewing a supplier increase, or comparing two product lines with different costs. This calculator gives the gross profit, the margin on revenue and the markup on cost in one go, so you can see both views. It uses the cost figure you supply, so decide beforehand whether that includes only direct costs or all expenses. Everything runs on your device.",
+ "howTo": [
+  "Enter your revenue (sales).",
+  "Enter the cost of goods or total expenses for the same period.",
+  "Read the profit, the profit margin and the markup on cost."
+ ],
+ "faq": [
+  {
+   "q": "How is profit margin calculated?",
+   "a": "Profit margin equals (revenue minus cost) divided by revenue, times 100. A margin of 35% means you keep 35 of every 100 earned before other deductions."
+  },
+  {
+   "q": "Is this gross or net margin?",
+   "a": "It depends on the cost you enter. With only the cost of goods sold it is a gross margin. With all expenses included it approximates a net margin before tax."
+  },
+  {
+   "q": "What does the markup line show?",
+   "a": "Profit divided by cost, as a percentage. It is always higher than the margin for a profitable sale. If the cost is zero the markup is shown as not applicable."
+  },
+  {
+   "q": "Can the margin be negative?",
+   "a": "Yes. If the cost exceeds revenue the profit and margin are negative, which signals a loss. The revenue must be above zero for the calculation to run."
+  }
+ ],
+ "related": [
+  "markup-margin",
+  "break-even",
+  "roi-calculator",
+  "discount-calculator",
+  "vat-calculator",
+  "percentage-calculator"
+ ],
+ "keywords": [
+  "profit margin calculator",
+  "free profit margin calculator",
+  "gross profit calculator",
+  "gross margin calculator",
+  "calculate profit percentage",
+  "net profit margin formula"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "radar-chart-maker",
+ "seoTitle": "Radar Chart Maker: Spider Chart Comparison (SVG)",
+ "metaDescription": "Compare items across the same attributes as overlapping polygons on a radar chart with rings, legend and a data table. Free, local.",
+ "intro": "Draws a radar (spider) chart. Each row is an item, each column an attribute, and each item becomes a polygon on shared axes.",
+ "why": "Radar charts compare a few items on several scores, such as products against criteria or skills across a team. All axes share one scale, set automatically or by you, so polygons are comparable.\n\nRadar charts are easy to misread: area grows with the square of scores, and the order of axes changes the shape. Use them for 3 to 8 attributes and 2 to 4 items, and keep the table as the exact reference.",
+ "howTo": [
+  "Paste a header row of attributes and one row of scores per item.",
+  "Set an axis maximum if scores share a known scale such as 10.",
+  "Choose whether polygons are filled.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "How many attributes?",
+   "a": "Between 3 and 24."
+  },
+  {
+   "q": "Can scores be negative?",
+   "a": "Yes, the centre then represents the lowest value."
+  },
+  {
+   "q": "Should I normalise first?",
+   "a": "Yes if attributes use different units."
+  },
+  {
+   "q": "Does axis order matter?",
+   "a": "It changes the polygon shape, so keep it consistent between charts."
+  }
+ ],
+ "related": [
+  "bar-chart-maker",
+  "heatmap-maker",
+  "parallel-coordinates-plot",
+  "csv-to-chart",
+  "bubble-chart-maker",
+  "scatter-plot-maker"
+ ],
+ "keywords": [
+  "radar chart maker",
+  "spider chart generator",
+  "compare items on axes"
+ ]
+}

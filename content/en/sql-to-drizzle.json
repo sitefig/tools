@@ -1,0 +1,45 @@
+{
+ "id": "sql-to-drizzle",
+ "seoTitle": "Free SQL DDL to Drizzle ORM Schema Converter",
+ "metaDescription": "Convert CREATE TABLE statements into a Drizzle ORM TypeScript schema for PostgreSQL, MySQL or SQLite. Free, runs in your browser.",
+ "intro": "Converts CREATE TABLE statements into a Drizzle ORM TypeScript schema using pg-core, mysql-core or sqlite-core, with notNull, unique, defaults, references, composite primary keys and indexes.",
+ "why": "Drizzle schemas are TypeScript, which is great once you have one and tedious to produce from an existing database. Column builders differ by dialect, defaults have their own helpers, and foreign keys use references() with callbacks. If you have the DDL, this tool writes the schema: builders for the chosen dialect, notNull and unique, default and defaultNow, references with onDelete actions, composite primary keys and indexes. It saves the typing when you adopt Drizzle on a legacy database or port a schema between ORMs. Review the output, since types that have no direct builder can need manual changes. The conversion happens in your browser, so your database structure is not uploaded.",
+ "howTo": [
+  "Paste your CREATE TABLE statements into the input box.",
+  "Choose the Drizzle dialect: PostgreSQL, MySQL or SQLite.",
+  "Copy the schema into your project and run your type check."
+ ],
+ "faq": [
+  {
+   "q": "Which Drizzle packages does the output target?",
+   "a": "pg-core for PostgreSQL, mysql-core for MySQL and sqlite-core for SQLite, with the matching table and column builders imported at the top."
+  },
+  {
+   "q": "Are foreign keys supported?",
+   "a": "Yes. Foreign keys become references() calls on the column, and an onDelete action is added where the DDL specifies one, so the relationships in your database are kept in the generated schema."
+  },
+  {
+   "q": "What about composite keys and indexes?",
+   "a": "Composite primary keys and indexes are generated too, so constraints that span several columns are preserved in the schema instead of being dropped. Check them against your DDL, since index options can differ by dialect."
+  },
+  {
+   "q": "Does it replace drizzle-kit pull?",
+   "a": "No. drizzle-kit introspects a live database and is more complete. This tool works from pasted DDL when you have no connection."
+  }
+ ],
+ "related": [
+  "sql-to-prisma",
+  "sql-to-orm-schema",
+  "sql-to-typescript",
+  "sql-dialect-converter",
+  "prisma-to-sql",
+  "sql-to-python-sqlalchemy"
+ ],
+ "keywords": [
+  "sql to drizzle",
+  "create table to drizzle schema",
+  "convert sql to drizzle orm",
+  "free drizzle schema generator",
+  "postgres ddl to drizzle"
+ ]
+}

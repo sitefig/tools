@@ -1,0 +1,46 @@
+{
+ "id": "simple-interest",
+ "seoTitle": "Free Simple Interest Calculator: P x R x T",
+ "metaDescription": "Calculate simple interest and the total amount from principal, annual rate and years using I = P x r x t. Free, instant and runs in your browser.",
+ "intro": "Enter the principal, the annual interest rate and the number of years. The tool applies I = P x r x t and shows the interest and the total amount.",
+ "why": "Simple interest is the version of interest taught first and used in short-term loans, some bonds, invoices with late-payment charges and many school exercises. The interest is calculated only on the original amount, so it grows in a straight line and is easy to check. People reach for a calculator when they have a rate and a term and just want the figure, or when they want to compare it with compound interest to see how much the difference matters. This page shows the substitution, so you can follow the working, then gives the interest and the total. For anything that compounds, use the compound interest calculator instead. Your numbers are never uploaded.",
+ "howTo": [
+  "Enter the principal amount.",
+  "Enter the annual rate in percent and the time in years.",
+  "Read the interest earned and the total amount, then copy the working if needed."
+ ],
+ "faq": [
+  {
+   "q": "What is the simple interest formula?",
+   "a": "Interest equals principal times rate times time, where the rate is a decimal and the time is in years. With 5,000 at 4% for 3 years, the interest is 600."
+  },
+  {
+   "q": "How does it differ from compound interest?",
+   "a": "Simple interest is charged only on the original principal. Compound interest is charged on principal plus previously added interest, so it grows faster over longer terms."
+  },
+  {
+   "q": "How do I enter months or days?",
+   "a": "Convert them to years. Six months is 0.5, and 90 days is roughly 0.2466 using a 365-day year. The tool accepts decimals."
+  },
+  {
+   "q": "Does it support partial periods or day-count conventions?",
+   "a": "No. It uses a straight multiplication, with no day-count conventions such as 30/360. Lenders may calculate slightly differently, so check the contract."
+  }
+ ],
+ "related": [
+  "compound-interest",
+  "loan-calculator",
+  "emi-calculator",
+  "percentage-calculator",
+  "savings-goal",
+  "inflation-calculator"
+ ],
+ "keywords": [
+  "simple interest calculator",
+  "free simple interest calculator",
+  "simple interest formula",
+  "calculate interest on a loan",
+  "interest = prt",
+  "simple interest vs compound interest"
+ ]
+}

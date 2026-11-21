@@ -1,0 +1,44 @@
+{
+ "id": "heroku-router-log-parser",
+ "seoTitle": "Heroku Router Log Parser: H12 and Other H-Code Errors",
+ "metaDescription": "Extract dyno, service time, status and H-codes from heroku[router] log lines and rank slow paths. Free, runs in your browser.",
+ "intro": "Parses Heroku router lines and counts H-code errors with their official titles.",
+ "why": "Router lines show what the platform saw: connect time, service time, status and, for failures, an H-code. H12 request timeout is the one most people look for.\n\nH-code titles come from the Heroku error codes page. A service time near 30000 ms with a 503 is the pattern of a timeout.",
+ "howTo": [
+  "Run heroku logs --source heroku --dyno router -n 1500.",
+  "Paste the output.",
+  "Filter by status if needed.",
+  "Read H-codes, latency and slow paths."
+ ],
+ "faq": [
+  {
+   "q": "Which H-codes are known?",
+   "a": "The codes listed on the Heroku error codes page, from H10 to H99. H16 and H23 are no longer used."
+  },
+  {
+   "q": "What are the times?",
+   "a": "connect and service are in milliseconds, as printed by the router."
+  },
+  {
+   "q": "Does it read app logs?",
+   "a": "No, only heroku[router] lines. Others are counted as skipped."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "logfmt-parser",
+  "access-log-parser",
+  "response-time-percentiles",
+  "log-level-histogram",
+  "exception-grouper",
+  "request-spike-detector"
+ ],
+ "keywords": [
+  "heroku router logs",
+  "heroku h12 timeout",
+  "heroku log analyzer"
+ ]
+}

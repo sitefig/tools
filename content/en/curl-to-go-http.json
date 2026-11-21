@@ -1,0 +1,43 @@
+{
+ "id": "curl-to-go-http",
+ "seoTitle": "Free cURL to Go net/http Converter",
+ "metaDescription": "Convert a curl command into Go code using only the standard net/http package, with headers, body, auth and multipart. Free, in your browser.",
+ "intro": "Paste a curl command and get Go code that uses only the standard library net/http, including the method, headers, body, basic auth, multipart form fields and the insecure and redirect flags.",
+ "why": "Go developers often get an API example as a curl command. Translating it means building a request, setting each header, handling the body reader and remembering to close the response body. Multipart uploads are the most tedious part because they need a writer and a content type with a boundary.\n\nThis converter produces that code with the standard library only, so there are no new dependencies to add. It supports the common flags, while proxies, certificates and retries are ignored and need your own configuration. Curl commands usually contain secrets such as API keys or passwords, so it helps that nothing is uploaded. Move any real credential out of the code and into configuration before you commit it.",
+ "howTo": [
+  "Paste your curl command into the input box.",
+  "Read the generated Go program in the output.",
+  "Copy it into a main.go file or into your own function.",
+  "Run it with go run, and replace secrets with environment variables."
+ ],
+ "faq": [
+  {
+   "q": "Does it need any external packages?",
+   "a": "No. The generated code uses only net/http and other standard library packages, so it builds with a plain Go installation and no go get step."
+  },
+  {
+   "q": "What happens to curl options that are not supported?",
+   "a": "Proxies, client certificates and retries are ignored, so the generated request will not use them. Add a custom Transport or retry loop by hand if your real request depends on them."
+  },
+  {
+   "q": "How is a multipart form handled?",
+   "a": "Fields given with -F are written with the standard mime/multipart writer, and the Content-Type header with the boundary is set from it. File parts need a real file path on your machine when you run the code."
+  }
+ ],
+ "related": [
+  "curl-to-rust-reqwest",
+  "curl-to-code",
+  "curl-to-more-languages",
+  "fetch-to-curl",
+  "curl-builder",
+  "http-snippet-generator"
+ ],
+ "keywords": [
+  "curl to go",
+  "curl to golang",
+  "convert curl to go net/http",
+  "go http request from curl",
+  "golang http client generator",
+  "free curl to go converter"
+ ]
+}

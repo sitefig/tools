@@ -1,0 +1,50 @@
+{
+ "id": "outlook-msg-viewer",
+ "seoTitle": "Outlook MSG Viewer: Open .msg Files Online Without Outlook",
+ "metaDescription": "Open an Outlook .msg file in your browser: sender, recipients, dates, plain or HTML body, internet headers and attachments you can download. Nothing is uploaded.",
+ "intro": "Read a saved Outlook message on any computer, and pull out its attachments, without installing Outlook.",
+ "why": "An .msg file is an OLE compound file (the same container as old .doc files) holding MAPI properties. This viewer reads the container itself (versions 3 and 4, FAT, mini-FAT and DIFAT), finds the property streams and decodes subject, sender, To, Cc and Bcc recipients, sent and received times, transport headers, the plain text body, the HTML body and the compressed RTF body (LZFu decompression, converted roughly to text when no plain body exists). Attachments are listed with size and type, and you can download any one by number.\n\nIt was tested against extract-msg on messages built with an independent compound file writer: subjects, addresses, recipients, dates, bodies and the SHA-1 of every attachment matched, for both container versions and for a compressed-RTF-only message. HTML is shown in a sandboxed frame with a content-security policy that blocks remote images and scripts.\n\nLimits: encrypted or rights-protected messages, digitally signed messages, embedded .msg attachments (listed but not exported), TNEF attachments, and calendar, contact and task items (only their standard fields appear, because named properties are not resolved). Everything stays in your browser.",
+ "howTo": [
+  "Choose the .msg file.",
+  "Read the headers, body and attachment list.",
+  "To save an attachment, enter its number in the download field.",
+  "Use the EML viewer for .eml files."
+ ],
+ "faq": [
+  {
+   "q": "Can I save attachments?",
+   "a": "Yes. Enter the attachment number shown in the list. Embedded messages and OLE objects are listed but cannot be exported here."
+  },
+  {
+   "q": "Why does the sender show an odd address?",
+   "a": "Messages inside Exchange often store an internal address (type EX) instead of an SMTP address. When there is no SMTP address in the file, the viewer shows what is stored."
+  },
+  {
+   "q": "Does it load remote images in HTML mail?",
+   "a": "No. Remote content and scripts are blocked in the preview."
+  },
+  {
+   "q": "Does it work offline?",
+   "a": "Yes, once the page has loaded. The file never leaves your browser."
+  },
+  {
+   "q": "Can it open .oft templates or .pst archives?",
+   "a": "No. Only single .msg messages. A .pst is a different, much larger format."
+  }
+ ],
+ "related": [
+  "eml-viewer",
+  "email-header-analyzer",
+  "quoted-printable",
+  "base64-decode",
+  "hex-dump-viewer",
+  "pii-redactor"
+ ],
+ "keywords": [
+  "msg viewer",
+  "open msg file online",
+  "outlook msg reader",
+  "view msg without outlook",
+  "extract msg attachments"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "ai-crawler-user-agent-directory",
+ "seoTitle": "AI Crawler User-Agent Directory: GPTBot, ClaudeBot and More",
+ "metaDescription": "Searchable list of AI crawler robots.txt tokens with operator, purpose, robots.txt behaviour and a note on what was checked at the source.",
+ "intro": "A reference list of AI bots with their robots.txt token, operator, purpose and what the operator says about robots.txt.",
+ "why": "AI crawlers come in kinds: training collectors, search bots and fetchers that act for a user. Blocking the wrong one costs you search visibility; leaving the right one open may feed a model you did not agree to.\n\nEach row says whether it was read on the operator's own page, with the date, or listed from memory and not verified. Rows from memory are marked so you can check them. Purposes change and new bots appear often.",
+ "howTo": [
+  "Type a bot or operator name, or choose a purpose.",
+  "Read the purpose and robots.txt behaviour.",
+  "Check the Source column before relying on a row.",
+  "Use the AI bot builder to write the rules."
+ ],
+ "faq": [
+  {
+   "q": "How current is it?",
+   "a": "Verified rows were read on 2026-10-23. Check the vendor page for changes."
+  },
+  {
+   "q": "Do all of these follow robots.txt?",
+   "a": "No. User-triggered fetchers often do not, and the table says so where the operator does."
+  },
+  {
+   "q": "Is Google-Extended a crawler?",
+   "a": "No. It is a control token with no user-agent string of its own."
+  },
+  {
+   "q": "Why are some rows unverified?",
+   "a": "They are from memory. No source was read for them."
+  }
+ ],
+ "related": [
+  "ai-bot-robots-builder",
+  "ai-bot-robots-txt-audit",
+  "robots-tester",
+  "bot-user-agent-identifier",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "ai crawler list",
+  "gptbot user agent",
+  "ai bot user agents",
+  "ai crawlers robots.txt tokens"
+ ]
+}

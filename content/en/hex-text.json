@@ -1,0 +1,47 @@
+{
+ "id": "hex-text",
+ "seoTitle": "Free Hex to Text and Text to Hex Converter",
+ "metaDescription": "Convert text to hexadecimal bytes and back using UTF-8, with a custom separator and uppercase option. Free and runs entirely in your browser.",
+ "intro": "Convert text to its hexadecimal bytes, or paste hex and read the text. It uses UTF-8, so accented letters and emoji become the multi-byte sequences you would expect.",
+ "why": "Hex is how bytes are written in packet captures, memory dumps, protocol docs, colour values and database blobs. When you need to check what a string really contains, or turn a hex dump back into something readable, doing it by hand with an ASCII table does not scale.\n\nThis converter handles both directions. Text is encoded as UTF-8, so \"é\" correctly becomes c3 a9, with your choice of separator and letter case. Hex input may include spaces, colons, commas, dashes or 0x prefixes, which are ignored. It all runs in the page, so the data you inspect is not uploaded.",
+ "howTo": [
+  "Choose the direction: text to hex, or hex to text.",
+  "Paste your text or hex digits into the Input box.",
+  "For text to hex, set the separator (a space by default) and tick Uppercase if you prefer.",
+  "Copy the result from the output."
+ ],
+ "faq": [
+  {
+   "q": "What hex formats can it read?",
+   "a": "Pairs of hex digits, optionally separated by spaces, colons, commas or dashes, with or without 0x prefixes. The number of digits must be even, because two digits make one byte."
+  },
+  {
+   "q": "Why does a single letter sometimes give two or more bytes?",
+   "a": "Text is encoded as UTF-8. ASCII characters use one byte, accented letters two, many symbols and CJK characters three, and emoji four. So \"é\" is c3 a9 and \"😀\" is f0 9f 98 80."
+  },
+  {
+   "q": "What if the hex does not decode to text?",
+   "a": "You get an error saying the bytes are not valid UTF-8. The data is probably binary, such as an image or encrypted content. A hex dump viewer is better for that."
+  },
+  {
+   "q": "Can I remove the separators?",
+   "a": "Yes. Clear the Separator field and the bytes are joined without any gap, for example 48656c6c6f, which is the form many APIs and databases expect."
+  }
+ ],
+ "related": [
+  "hex-dump-viewer",
+  "binary-text",
+  "base64-encode",
+  "utf8-bytes-viewer",
+  "number-base-converter",
+  "hex-to-base64"
+ ],
+ "keywords": [
+  "hex to text converter",
+  "text to hex online",
+  "free hex decoder",
+  "utf-8 to hex",
+  "hexadecimal to ascii",
+  "string to hex bytes"
+ ]
+}

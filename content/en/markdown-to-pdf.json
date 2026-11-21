@@ -1,0 +1,46 @@
+{
+ "id": "markdown-to-pdf",
+ "seoTitle": "Free Markdown to PDF Converter - Text-Only PDF",
+ "metaDescription": "Render Markdown headings, paragraphs, lists, quotes and code blocks into a text-only PDF. No images or tables. Free, runs in your browser.",
+ "intro": "Convert Markdown into a clean text-only PDF. Headings, paragraphs, lists, block quotes and fenced code blocks are laid out with a choice of page and font.",
+ "why": "README files, meeting notes and documentation drafts are often written in Markdown, yet recipients ask for a PDF. Pipelines with pandoc and LaTeX work but are heavy to install, and online converters mean uploading your draft.\n\nThis converter handles the common core of Markdown and draws it straight into a PDF in your browser. Headings get larger type, lists are indented with bullets or numbers, quotes are set off, and fenced code is shown in a fixed-width font. Choose A4 or Letter, orientation, font, size, margins, a header and page numbers. It is a subset on purpose: inline bold and italic are stripped, and images and tables are not rendered, with table rows printed as plain text. For rich layout, print from a Markdown preview instead.",
+ "howTo": [
+  "Paste your Markdown into the box.",
+  "Choose page size, orientation, font, size and margins.",
+  "Add a header and page-number style if needed.",
+  "Run the tool and download the PDF."
+ ],
+ "faq": [
+  {
+   "q": "What Markdown does it support?",
+   "a": "Headings, paragraphs, bulleted and numbered lists, block quotes and fenced code blocks. Inline emphasis markers are removed, and there is no support for images, links as clickable text, or tables."
+  },
+  {
+   "q": "What happens to tables?",
+   "a": "They are not drawn as grids. The table rows are printed as plain text lines, which keeps the content but not the layout. Convert a table to a list first if appearance matters."
+  },
+  {
+   "q": "Why do some characters become question marks?",
+   "a": "The PDF uses built-in standard fonts with Western European characters only. Text in other scripts or emoji cannot be shown without embedding a font, which this tool does not do."
+  },
+  {
+   "q": "Can I get a different look?",
+   "a": "Only the font, size, margins, header and numbering can be changed. For custom styling, render the Markdown to HTML and print it from your browser to PDF."
+  }
+ ],
+ "related": [
+  "text-to-pdf",
+  "markdown-preview",
+  "markdown-to-html",
+  "pdf-add-page-numbers",
+  "pdf-merge",
+  "readme-generator"
+ ],
+ "keywords": [
+  "markdown to pdf",
+  "convert markdown to pdf online",
+  "md to pdf",
+  "readme to pdf",
+  "free markdown pdf converter"
+ ]
+}

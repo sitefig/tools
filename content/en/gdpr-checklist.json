@@ -1,0 +1,46 @@
+{
+ "id": "gdpr-checklist",
+ "seoTitle": "Free GDPR Compliance Checklist (Interactive)",
+ "metaDescription": "Work through an interactive GDPR self-assessment checklist with a progress bar. Saved only in your browser. Free; not legal advice.",
+ "intro": "An interactive GDPR self-assessment checklist with a progress bar. Your ticks are saved in your own browser and nowhere else. It is a self-check, not legal advice.",
+ "why": "GDPR work is easy to postpone because it is spread across so many small tasks: knowing what data you hold, having a lawful basis, writing notices, handling requests, contracts with processors, breach plans. A checklist turns that into a list you can work through and revisit.\n\nThis page groups the common points into sections, shows how many are done and keeps a running percentage. Ticks are stored in your browser's localStorage, so you can close the tab and come back on the same device and browser. Nothing is sent to a server. It is a self-assessment aid to find gaps and not a compliance certificate or legal advice, so have a professional review anything high-risk, such as health data or large-scale monitoring.",
+ "howTo": [
+  "Open the checklist and read through each section.",
+  "Tick the items that you have completed.",
+  "Watch the progress bar to see how much is left.",
+  "Come back later on the same browser to continue, or use Reset to start again."
+ ],
+ "faq": [
+  {
+   "q": "Where is my progress saved?",
+   "a": "In your browser localStorage, on this device only. It is not synced, uploaded or shared. Clearing site data, using private mode or switching browser will lose it."
+  },
+  {
+   "q": "Does a full score mean I am compliant?",
+   "a": "No. The list is a general self-check and cannot know your situation. Compliance needs judgement about your data, risks and processes, ideally with professional advice."
+  },
+  {
+   "q": "Does it cover laws other than GDPR?",
+   "a": "No. It is focused on the GDPR. Other laws such as CCPA or national rules may add requirements that are not listed here."
+  },
+  {
+   "q": "Can I share the checklist with my team?",
+   "a": "Not directly, since progress is stored locally. Each person has their own copy. For shared tracking, copy the items into a document or task tool."
+  }
+ ],
+ "related": [
+  "privacy-policy-generator",
+  "cookie-policy-generator",
+  "cookie-banner-generator",
+  "data-deletion-request-letter",
+  "terms-generator",
+  "tracker-detector"
+ ],
+ "keywords": [
+  "gdpr checklist",
+  "gdpr compliance checklist free",
+  "gdpr self assessment",
+  "small business gdpr checklist",
+  "gdpr audit checklist template"
+ ]
+}

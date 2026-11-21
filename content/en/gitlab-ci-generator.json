@@ -1,0 +1,47 @@
+{
+ "id": "gitlab-ci-generator",
+ "seoTitle": "Free GitLab CI YAML Generator (.gitlab-ci.yml)",
+ "metaDescription": "Free online .gitlab-ci.yml generator. Create lint, test, build and deploy stages for Node, Python, Go, Maven, Ruby, PHP or Docker, with caching.",
+ "intro": "Generate a .gitlab-ci.yml with lint, test, build and optional deploy stages for Node, Python, Go, Maven, Ruby, PHP or Docker builds, including dependency caching and merge-request pipelines.",
+ "why": "A first GitLab pipeline is mostly boilerplate: choosing an image, installing dependencies, caching them correctly, and wiring stages in order. Getting the cache key and the merge-request rules right is the part people usually look up every time.\n\nPick your stack and version, choose which stages you need, and the tool writes a pipeline with sensible commands for that stack, a cache keyed on your lock file, and optional workflow rules that avoid duplicate pipelines for branches with open merge requests. Deploy can be GitLab Pages, a manual production job or an automatic one on the default branch. The commands are defaults such as npm test, so adapt them to your project. Nothing is uploaded; it all runs in your browser.",
+ "howTo": [
+  "Choose your stack and enter the image version or tag.",
+  "Tick the stages you want: lint, test and build.",
+  "Pick a deploy option and the build output folder if you use GitLab Pages.",
+  "Copy the YAML into .gitlab-ci.yml and edit the commands to match your project."
+ ],
+ "faq": [
+  {
+   "q": "What commands does each stack use?",
+   "a": "Sensible defaults, such as npm ci, npm run lint and npm test for Node, or pytest and ruff for Python. Replace them with your own scripts if your project differs."
+  },
+  {
+   "q": "What do the merge-request pipeline rules do?",
+   "a": "They run pipelines for merge request events and avoid running a second branch pipeline when a merge request is already open, which prevents duplicate jobs."
+  },
+  {
+   "q": "How is caching set up?",
+   "a": "The cache key is based on your lock file, such as package-lock.json or go.sum, so it refreshes when dependencies change. The cached paths depend on the stack."
+  },
+  {
+   "q": "Is the deploy job ready to use?",
+   "a": "Pages deploys the build output folder. The production deploy options contain a placeholder echo command, which you must replace with your real deployment steps."
+  }
+ ],
+ "related": [
+  "github-actions-generator",
+  "github-actions-matrix-builder",
+  "dockerfile-generator",
+  "renovate-config-generator",
+  "pre-commit-config-generator",
+  "yaml-format"
+ ],
+ "keywords": [
+  "gitlab ci generator",
+  "gitlab-ci.yml generator",
+  "gitlab pipeline builder",
+  "free gitlab ci tool",
+  "generate gitlab ci yaml",
+  "gitlab ci template online"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "resistor-color-code-calculator",
+  "seoTitle": "Resistor Color Code Calculator (4, 5, 6 Band and SMD)",
+  "metaDescription": "Decode resistor colour bands to ohms, tolerance and temperature coefficient, find bands for a value, and read SMD codes like 103 or 4R7.",
+  "intro": "Read a resistor or find the colours for a value you need.",
+  "why": "Enter the band colours (4, 5 or 6 bands, with gold and silver multipliers and tolerance) to get the value, tolerance range and temperature coefficient; enter a value such as 4.7k to get the 4-band and 5-band colour sequences; or enter a 3 or 4 digit SMD code (103) or an R-notation code (4R7). Results were checked against standard code tables.\n\nColours can be misread under some lighting and bands can be faded, so confirm with a multimeter before relying on a part.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Type colours separated by spaces, or a value, or an SMD code.",
+    "Read the ohm value and tolerance.",
+    "Check with a multimeter.",
+    "Choose a standard E-series value where possible."
+  ],
+  "faq": [
+    {
+      "q": "Which band is first?",
+      "a": "The one closest to an edge; the tolerance band is usually gold or silver and separated by a larger gap."
+    },
+    {
+      "q": "What is 103?",
+      "a": "10 followed by 3 zeros: 10 kilohms."
+    },
+    {
+      "q": "What does R mean in 4R7?",
+      "a": "A decimal point: 4.7 ohms."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "bandwidth-download-time",
+    "pwm-calculator",
+    "uart-baud-calculator",
+    "wavelength-antenna-calculator",
+    "battery-life-estimator",
+    "unit-converter"
+  ],
+  "keywords": [
+    "resistor color code",
+    "resistor calculator",
+    "smd resistor code",
+    "resistor bands"
+  ]
+}

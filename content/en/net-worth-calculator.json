@@ -1,0 +1,39 @@
+{
+ "id": "net-worth-calculator",
+ "seoTitle": "Net Worth Calculator: Assets Minus Debts",
+ "metaDescription": "Add up assets and debts from a pasted list to get net worth, debt ratio and your largest items. Free and private.",
+ "intro": "Total assets, total liabilities and net worth from a list.",
+ "why": "Net worth is what you own minus what you owe. Tracking it once or twice a year shows progress better than any single account balance.\n\nPaste one item per line starting with asset or debt. Value assets at what you could sell them for, and debts at the amount still owed.",
+ "howTo": [
+  "Write one line per item: asset or debt, name, value.",
+  "Read the totals and net worth.",
+  "Repeat later and compare."
+ ],
+ "faq": [
+  {
+   "q": "Should I include my home?",
+   "a": "Many people do, at estimated market value, with the mortgage as a debt. Some also show net worth without it."
+  },
+  {
+   "q": "Is the list saved?",
+   "a": "Nothing you type leaves your browser."
+  },
+  {
+   "q": "What about pensions?",
+   "a": "Include them if you want. Note that they may not be accessible yet."
+  }
+ ],
+ "related": [
+  "budget-50-30-20-planner",
+  "emergency-fund-calculator",
+  "fire-number-calculator",
+  "retirement-estimator",
+  "savings-goal",
+  "debt-snowball-avalanche-planner"
+ ],
+ "keywords": [
+  "net worth calculator",
+  "assets and liabilities",
+  "personal balance sheet"
+ ]
+}

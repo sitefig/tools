@@ -1,0 +1,45 @@
+{
+ "id": "video-compressor",
+ "seoTitle": "Video Compressor: Shrink a File by Bitrate and Resolution",
+ "metaDescription": "Make a video smaller for email or chat by lowering bitrate and resolution. See a size estimate first. Runs in your browser, nothing is uploaded.",
+ "intro": "Lowers the resolution and bitrate of a video so the file is small enough to send. You see an estimated size before you start and the real size after.",
+ "why": "File size is bitrate times duration. This tool lets you set both ends: a target height and a video bitrate in kbit/s, and it shows the arithmetic as an estimate for a one minute clip. That makes it easy to reach a limit such as 25 MB for email.\n\nNothing is uploaded. The file is decoded by your browser and re-encoded, so quality drops a little and the result is WebM (or MP4 where your browser can record it). It records in real time, so a 60 second clip takes about a minute and the tab must stay visible. If the result is bigger than the source, the source was already well compressed, so lower the bitrate or the height more.",
+ "howTo": [
+  "Choose the video file.",
+  "Pick an output height and a bitrate. 720p at 1200 kbit/s is a common starting point.",
+  "Press Process and keep the tab visible.",
+  "Check the size shown, then download. Repeat with lower numbers if needed."
+ ],
+ "faq": [
+  {
+   "q": "How do I hit a size limit?",
+   "a": "Size in MB is about (video kbit/s + audio kbit/s) x seconds / 8 / 1024. Solve for the bitrate you can afford."
+  },
+  {
+   "q": "Why is my output larger than the original?",
+   "a": "Browser encoders are less efficient than the encoder that made your file. Lower the bitrate or the height."
+  },
+  {
+   "q": "Can I remove the audio to save space?",
+   "a": "Yes, untick Keep audio. Audio is small, about 64 kbit/s here."
+  },
+  {
+   "q": "Is the bitrate exact?",
+   "a": "It is a target for the browser encoder. Real files vary around it."
+  }
+ ],
+ "related": [
+  "video-resizer",
+  "video-trimmer",
+  "video-format-converter",
+  "video-frame-rate-converter",
+  "image-compressor",
+  "video-metadata-inspector"
+ ],
+ "keywords": [
+  "compress video online",
+  "reduce video file size",
+  "video bitrate calculator",
+  "shrink video for email"
+ ]
+}

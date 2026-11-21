@@ -1,0 +1,46 @@
+{
+  "id": "image-format-converter",
+  "seoTitle": "Free Image Format Converter: PNG, JPEG and WebP",
+  "metaDescription": "Convert images between PNG, JPEG and WebP right in your browser, with a quality setting and batch support. Free, and your files are not uploaded.",
+  "intro": "Converts images to PNG, JPEG or WebP, whichever your browser can encode. You can pick the quality for the lossy formats, and drop in several files at once.",
+  "why": "File formats cause surprising problems. A site asks for JPEG and you have a PNG, a design tool exports WebP that your editor will not open, or you want a smaller WebP version of every photo in a folder. Opening each file in an image editor just to save it again is slow.\n\nChoose your files, pick the target format and quality, and each image is converted and named after the original. PNG is lossless and keeps transparency, JPEG is the safest for photos and compatibility, and WebP is usually smallest. Transparent regions become white when the target is JPEG. HEIC and AVIF files depend on what your browser can read, and the tool only writes the three formats listed. Conversion runs locally in your browser.",
+  "howTo": [
+    "Choose one or more image files.",
+    "Select the target format: png, jpeg or webp.",
+    "Set the quality for jpeg or webp.",
+    "Run it and download the converted files."
+  ],
+  "faq": [
+    {
+      "q": "Which formats can it read?",
+      "a": "Anything your browser can display as an image, which usually includes PNG, JPEG, GIF, WebP, BMP and SVG, and sometimes AVIF. For iPhone HEIC photos, use the dedicated HEIC converter."
+    },
+    {
+      "q": "Does converting improve quality?",
+      "a": "No. Converting from a lossy format like JPEG to PNG makes a larger file but cannot restore detail that was already lost. Each lossy re-encoding adds a little more degradation."
+    },
+    {
+      "q": "What happens to animated GIFs?",
+      "a": "Only the first frame is drawn, so you will get a still image. Use the GIF maker or a video tool if you need to work with animation."
+    },
+    {
+      "q": "Does it keep metadata?",
+      "a": "No. The image is redrawn on a canvas, so EXIF data such as camera model and GPS location is not carried over. That is often handy for privacy."
+    }
+  ],
+  "related": [
+    "heic-to-jpg",
+    "image-compressor",
+    "image-resizer",
+    "svg-to-png",
+    "exif-remover",
+    "gif-maker"
+  ],
+  "keywords": [
+    "image format converter",
+    "convert png to jpg",
+    "jpg to webp converter",
+    "png to webp online",
+    "free image converter"
+  ]
+}

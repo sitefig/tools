@@ -1,0 +1,45 @@
+{
+ "id": "svg-icon-recolorer",
+ "seoTitle": "SVG Icon Recolorer: Bulk Change Fill and Stroke, Download ZIP",
+ "metaDescription": "Upload many SVG icons, set a new fill and stroke colour and download them recoloured in a ZIP. Free, local.",
+ "intro": "Recolours the fill and stroke of SVG files in bulk and returns one file or a ZIP.",
+ "why": "Icon sets often come in one colour. Changing a whole set by hand is slow. The tool rewrites fill and stroke attributes and inline style values, leaves none, gradients and (optionally) currentColor alone, and can add a colour to the root element where there is none.\n\nIt works on text, without drawing the icons, so colours set in style blocks or classes are not changed. Check a few results visually. The ZIP is made in your browser.",
+ "howTo": [
+  "Choose one or more SVG files.",
+  "Enter a new fill, stroke or both.",
+  "Decide about currentColor and the root element.",
+  "Run it and download the file or ZIP."
+ ],
+ "faq": [
+  {
+   "q": "Which colours are changed?",
+   "a": "Values in fill and stroke attributes and in style=\"...\" declarations."
+  },
+  {
+   "q": "What is skipped?",
+   "a": "none, transparent, inherit, url(...) gradients, and currentColor when you untick that option."
+  },
+  {
+   "q": "Why did nothing change?",
+   "a": "The colours may come from a style block or class. Edit the SVG or inline the styles first."
+  },
+  {
+   "q": "Is the SVG optimised too?",
+   "a": "No. Use the SVG Optimizer for that."
+  }
+ ],
+ "related": [
+  "svg-optimizer",
+  "hex-to-css-filter",
+  "svg-preview-editor",
+  "svg-to-png",
+  "svg-to-jsx",
+  "color-converter"
+ ],
+ "keywords": [
+  "recolor svg icons",
+  "change svg color bulk",
+  "svg fill stroke changer",
+  "batch svg color"
+ ]
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free SHA-3, Keccak-256 and SHAKE Hash Generator | Free Tools</title>
+<meta name="description" content="Compute SHA3-224/256/384/512, Keccak-256/512 and SHAKE128/256 hashes from text or hex bytes in your browser. Free, nothing is uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/sha3-hash-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/sha3-hash-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/sha3-hash-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free SHA-3, Keccak-256 and SHAKE Hash Generator | Free Tools">
+<meta property="og:description" content="Compute SHA3-224/256/384/512, Keccak-256/512 and SHAKE128/256 hashes from text or hex bytes in your browser. Free, nothing is uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/sha3-hash-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free SHA-3, Keccak-256 and SHAKE Hash Generator | Free Tools">
+<meta name="twitter:description" content="Compute SHA3-224/256/384/512, Keccak-256/512 and SHAKE128/256 hashes from text or hex bytes in your browser. Free, nothing is uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"SHA-3 / Keccak / SHAKE Hash Generator","url":"https://tools.sitefig.net/en/sha3-hash-generator/","description":"Compute SHA3-224/256/384/512, Keccak-256/512 and SHAKE128/256 hashes from text or hex bytes in your browser. Free, nothing is uploaded.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Type or paste the input, and choose whether it is UTF-8 text or hex bytes.","Leave \"Show all algorithms\" on, or turn it off and pick one algorithm. Set the SHAKE output length if needed.","Copy the digest you need, in lower or upper-case hex."],"keywords":"sha3 hash generator, keccak-256 online, shake128 shake256 calculator, free sha3-256 tool, sha3 vs keccak","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Hashing & JWT","item":"https://tools.sitefig.net/en/#hashing-and-jwt"},{"@type":"ListItem","position":3,"name":"SHA-3 / Keccak / SHAKE Hash Generator","item":"https://tools.sitefig.net/en/sha3-hash-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between SHA3-256 and Keccak-256?","acceptedAnswer":{"@type":"Answer","text":"They use the same core function but different padding, so they produce different digests for the same input. Ethereum uses Keccak-256, whereas NIST standardised SHA3-256."}},{"@type":"Question","name":"What are SHAKE128 and SHAKE256?","acceptedAnswer":{"@type":"Answer","text":"Extendable-output functions: instead of a fixed length, you ask for as many bytes as you need. The tool lets you set the output length in bytes."}},{"@type":"Question","name":"Can I hash binary data?","acceptedAnswer":{"@type":"Answer","text":"Yes. Choose hex bytes as the input type and enter the bytes as hex. Text input is encoded as UTF-8 first."}},{"@type":"Question","name":"Is it fast enough for big files?","acceptedAnswer":{"@type":"Answer","text":"No. It is pure JavaScript, which is fine for text and test vectors but slow for megabytes. Use a native tool for large files."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#hashing-and-jwt">Hashing &amp; JWT</a></li><li><span aria-current="page">SHA-3 / Keccak / SHAKE Hash Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>SHA-3 / Keccak / SHAKE Hash Generator</h1>
+<p class="lede">Computes SHA3-224, 256, 384 and 512, Keccak-256 and Keccak-512 (the pre-standard padding used by Ethereum), and SHAKE128 and SHAKE256 with a chosen output length, from text or hex bytes.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="sha3-hash-generator" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>SHA-3 is the newer NIST hash standard, but browsers do not provide it in Web Crypto, so common online hash tools skip it or hide it. Developers still meet it: Ethereum uses Keccak-256, which differs from standard SHA3-256 only in padding and so gives a completely different digest. People mix them up and wonder why a hash does not match a contract. This tool shows all variants side by side, plus the SHAKE extendable-output functions with an output length you choose. The Keccak permutation is written in plain JavaScript, so it works anywhere but is slow for megabytes of data. It is meant for text, test vectors and short inputs. Hashing happens in your browser; nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Type or paste the input, and choose whether it is UTF-8 text or hex bytes.</li><li>Leave &quot;Show all algorithms&quot; on, or turn it off and pick one algorithm. Set the SHAKE output length if needed.</li><li>Copy the digest you need, in lower or upper-case hex.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What is the difference between SHA3-256 and Keccak-256?</summary><p>They use the same core function but different padding, so they produce different digests for the same input. Ethereum uses Keccak-256, whereas NIST standardised SHA3-256.</p></details>
+<details><summary>What are SHAKE128 and SHAKE256?</summary><p>Extendable-output functions: instead of a fixed length, you ask for as many bytes as you need. The tool lets you set the output length in bytes.</p></details>
+<details><summary>Can I hash binary data?</summary><p>Yes. Choose hex bytes as the input type and enter the bytes as hex. Text input is encoded as UTF-8 first.</p></details>
+<details><summary>Is it fast enough for big files?</summary><p>No. It is pure JavaScript, which is fine for text and test vectors but slow for megabytes. Use a native tool for large files.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/hash-generator/"><span class="link-card__title">Hash Generator</span><span class="link-card__desc">MD5, SHA-1, SHA-256, SHA-384 and SHA-512 of your text, all at once.</span></a></li><li><a class="link-card" href="/en/ethereum-keccak256-hasher/"><span class="link-card__title">Keccak-256 / SHA-3 Hasher</span><span class="link-card__desc">Hand-written Keccak-f[1600]: Ethereum Keccak-256 (not NIST SHA3-256), Keccak-512 and SHA3-224/256/384/512. Shows the 4-byte selector for function signatures.</span></a></li><li><a class="link-card" href="/en/blake2-hash/"><span class="link-card__title">BLAKE2b / BLAKE2s Hash</span><span class="link-card__desc">Hand-written BLAKE2b (1-64 byte digest) and BLAKE2s (1-32) with optional MAC key, per RFC 7693. Input as text, hex or base64.</span></a></li><li><a class="link-card" href="/en/hmac-generator/"><span class="link-card__title">HMAC Generator</span><span class="link-card__desc">HMAC with MD5, SHA-1, SHA-256, SHA-384 or SHA-512; hex and Base64 output.</span></a></li><li><a class="link-card" href="/en/file-hash/"><span class="link-card__title">File Hash</span><span class="link-card__desc">MD5, SHA-1, SHA-256, SHA-384, SHA-512 of a file, computed locally.</span></a></li><li><a class="link-card" href="/en/blake3-hash/"><span class="link-card__title">BLAKE3 Hash / Keyed / Derive Key</span><span class="link-card__desc">Hand-written BLAKE3 with the three official modes: hash, keyed_hash (32-byte key) and derive_key (context string), plus extendable output of any length.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

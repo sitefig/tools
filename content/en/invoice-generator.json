@@ -1,0 +1,46 @@
+{
+ "id": "invoice-generator",
+ "seoTitle": "Free Invoice Generator - Printable, Save as PDF",
+ "metaDescription": "Fill in a form to get a clean printable invoice with line items, tax and totals. Print or save as PDF; free and nothing is uploaded.",
+ "intro": "Enter your details, the client, line items and tax rate to get a clean invoice you can print or save as a PDF.",
+ "why": "Freelancers and small businesses often need one invoice, quickly, without paying for accounting software or sharing client details with an online service. A spreadsheet works, but alignment, totals and printing take fiddling.\n\nThis generator takes a form: your address, the client's, invoice number, dates, currency symbol, tax percentage and line items written one per line as description, quantity and unit price. It calculates each amount, the subtotal, the tax and the total due, and shows a live preview in a printable layout. Use your browser's print dialog and choose Save as PDF to get a file. Your entries are kept only in this browser so you can come back to them. It does not check local invoicing rules, so confirm what your country requires.",
+ "howTo": [
+  "Fill in the From and Bill to details, invoice number and dates.",
+  "Set the currency symbol and tax percentage.",
+  "Enter line items, one per line, as description | quantity | unit price.",
+  "Press Print / Save as PDF and choose Save as PDF in the print dialog."
+ ],
+ "faq": [
+  {
+   "q": "Does it meet legal invoice requirements?",
+   "a": "It provides a clear layout, but legal requirements such as a VAT number, sequential numbering or specific wording vary by country. Check the rules for your jurisdiction and add the details in the notes field."
+  },
+  {
+   "q": "Where is my data stored?",
+   "a": "Only in your own browser's local storage, so the form is filled in when you return. Nothing is uploaded. Clearing site data or pressing Reset removes it."
+  },
+  {
+   "q": "How do I enter line items?",
+   "a": "One item per line, separated by vertical bars: description | quantity | unit price. If the quantity is empty it counts as 1. The amount is quantity times unit price."
+  },
+  {
+   "q": "Can I add a logo?",
+   "a": "Not directly. Save the invoice as PDF and add a logo in a PDF editor, or put your company name at the top of the From box."
+  }
+ ],
+ "related": [
+  "receipt-generator",
+  "vat-calculator",
+  "percentage-calculator",
+  "resume-builder",
+  "signature-generator",
+  "markup-margin"
+ ],
+ "keywords": [
+  "invoice generator",
+  "free invoice maker",
+  "printable invoice online",
+  "create invoice pdf",
+  "simple invoice template"
+ ]
+}

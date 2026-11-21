@@ -1,0 +1,45 @@
+{
+ "id": "caffeine-intake-calculator",
+ "seoTitle": "Caffeine Intake Calculator (Daily Total vs 400 mg)",
+ "metaDescription": "Add up the coffee, tea, cola and energy drinks you had and compare the range with the 400 mg a day FDA figure for healthy adults.",
+ "intro": "Add up your caffeine and compare it with 400 mg a day.",
+ "why": "Type your drinks one per line, such as coffee 2 or energy drink 1, or give an exact amount like mg 80 2. The page shows a low and high total using the FDA ranges per 12 fl oz serving and compares it with the 400 mg a day figure the FDA gives for most healthy adults.\n\nA small espresso, a big mug or a branded energy drink will differ from these averages, so read the can. Sensitivity varies a lot. If you are pregnant, breastfeeding, have a heart condition or take medication, ask a health professional for your own limit.",
+ "howTo": [
+  "Type one drink and count per line.",
+  "Use mg lines for labelled products.",
+  "Read the low and high total.",
+  "Compare it with the 400 mg figure."
+ ],
+ "faq": [
+  {
+   "q": "Where do the amounts come from?",
+   "a": "From the FDA page on caffeine for a 12 fl oz serving: coffee 113 to 247 mg, black tea 71, green tea 37, cola 23 to 83, energy drinks 41 to 246."
+  },
+  {
+   "q": "Is 400 mg a limit for everyone?",
+   "a": "No. It is a figure for most healthy adults. Children, pregnancy and some conditions call for less."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "blood-alcohol-content-estimator",
+  "water-intake",
+  "sleep-cycle-calculator",
+  "heart-rate-zones",
+  "bmi-calculator",
+  "smoking-savings-calculator"
+ ],
+ "keywords": [
+  "caffeine calculator",
+  "how much caffeine",
+  "daily caffeine limit",
+  "caffeine in coffee"
+ ]
+}

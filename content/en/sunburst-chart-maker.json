@@ -1,0 +1,44 @@
+{
+ "id": "sunburst-chart-maker",
+ "seoTitle": "Sunburst Chart Maker with Zoom into a Branch",
+ "metaDescription": "Turn path and value rows into a sunburst of concentric rings. Zoom into one branch by typing its path. Free SVG with a table.",
+ "intro": "Draws a hierarchy as rings: the first level in the inner ring, children outside it, arc length by value.",
+ "why": "A sunburst keeps the parent-child relationship visible while showing proportions. Instead of clicking a segment to zoom, you type the branch path, for example Asia/Japan, which also works with a keyboard and a screen reader.\n\nLabels appear along an arc when they fit and radially in thin ring segments; small arcs keep a tooltip and a table row. Limit the rings if the outer levels become dust.",
+ "howTo": [
+  "Write rows like Region/Country/City,value.",
+  "Optionally type a path in Zoom into to show only that branch.",
+  "Limit the number of rings if needed.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "How do I zoom?",
+   "a": "Enter the branch path in the zoom box, using the same names as in your rows."
+  },
+  {
+   "q": "Why is there a centre label?",
+   "a": "It shows the branch you are viewing and its total."
+  },
+  {
+   "q": "Are values summed up the tree?",
+   "a": "Yes. A parent equals its children plus any own value."
+  },
+  {
+   "q": "Colours?",
+   "a": "Each top-level branch has a colour; deeper rings are lighter."
+  }
+ ],
+ "related": [
+  "treemap-maker",
+  "pie-donut-chart-maker",
+  "sankey-diagram-builder",
+  "mind-map-svg-builder",
+  "ascii-tree-generator",
+  "bar-chart-maker"
+ ],
+ "keywords": [
+  "sunburst chart maker",
+  "radial hierarchy chart",
+  "zoomable sunburst"
+ ]
+}

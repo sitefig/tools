@@ -1,0 +1,46 @@
+{
+ "id": "readability",
+ "seoTitle": "Free Readability Score Checker: Flesch, Fog, SMOG",
+ "metaDescription": "Score English text with Flesch Reading Ease, Flesch-Kincaid, Gunning Fog, SMOG, Coleman-Liau and ARI. Free; runs in your browser.",
+ "intro": "Paste English text to get six readability scores in one go: Flesch Reading Ease, Flesch-Kincaid grade, Gunning Fog, SMOG, Coleman-Liau and ARI, plus a plain-language band.",
+ "why": "Web copy that is hard to read loses people. Terms of service, product pages and help articles are often written at a level far above what readers expect, and the problem is hard to see from the inside. A readability formula gives you an outside opinion in seconds.\n\nThis tool computes the six common indexes from sentence length, syllables and letters, then averages the grade levels. It also counts sentences longer than 25 words so you know where to start cutting. Formulas are rough and built for English prose: they ignore tone, structure and jargon that is short but unfamiliar. SMOG needs about 30 sentences to be reliable. Use the scores to compare drafts of your own text, not as a target to hit at any cost.",
+ "howTo": [
+  "Paste your English text into the input box, ideally a few paragraphs or more.",
+  "Run the tool to calculate all six scores.",
+  "Read the reading ease band and the average grade level.",
+  "Shorten long sentences and complex words, then run the check again."
+ ],
+ "faq": [
+  {
+   "q": "Which score should I pay most attention to?",
+   "a": "Flesch Reading Ease is the most familiar, where 60 to 70 is plain English. Compare the grade levels together instead of relying on one, because each formula weighs sentence and word length differently."
+  },
+  {
+   "q": "Does it work for languages other than English?",
+   "a": "No. The formulas and the syllable counter are built for English. Scores for other languages are not meaningful, even if the tool returns numbers."
+  },
+  {
+   "q": "Why does my short text give odd results?",
+   "a": "Readability formulas need enough text. SMOG in particular is designed for samples of around 30 sentences, and very short passages can swing the scores widely."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "text-statistics",
+  "keyword-density",
+  "word-counter",
+  "keyword-extractor",
+  "tfidf",
+  "seo-inspector"
+ ],
+ "keywords": [
+  "readability score checker",
+  "flesch reading ease calculator",
+  "gunning fog index online",
+  "text readability test",
+  "flesch kincaid grade level free"
+ ]
+}

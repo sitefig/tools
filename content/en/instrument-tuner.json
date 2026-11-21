@@ -1,0 +1,45 @@
+{
+  "id": "instrument-tuner",
+  "seoTitle": "Instrument Tuner: Microphone Pitch Detector for Guitar, Ukulele, Violin",
+  "metaDescription": "Tune with your microphone: shows the detected note, frequency and cents sharp or flat, with an adjustable A4 reference.",
+  "intro": "Tune a string by ear and eye in your browser.",
+  "why": "The page captures the microphone and finds the pitch by autocorrelation with parabolic interpolation, then converts the frequency to the nearest note and the offset in cents using your A4 reference (440 Hz by default). A meter and plain text say whether to tighten or loosen the string.\n\nIt works best for single notes in a quiet room; very low notes need a longer window and noisy rooms confuse any tuner. A clip-on tuner is more reliable on stage. Open string notes are listed for common instruments.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Press Start and allow the microphone.",
+    "Play one open string.",
+    "Adjust until the cents offset is near zero.",
+    "Change A4 if your ensemble tunes differently."
+  ],
+  "faq": [
+    {
+      "q": "What does cents mean?",
+      "a": "A hundredth of a semitone. Within 5 cents is generally in tune."
+    },
+    {
+      "q": "Why does it jump octaves?",
+      "a": "Autocorrelation can lock on a harmonic; pluck more gently or use another string."
+    },
+    {
+      "q": "Does it upload audio?",
+      "a": "No."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "metronome",
+    "audio-bpm-tap",
+    "tone-generator",
+    "decibel-meter",
+    "mic-test",
+    "audio-db-converter"
+  ],
+  "keywords": [
+    "online tuner",
+    "guitar tuner",
+    "ukulele tuner",
+    "pitch detector"
+  ]
+}

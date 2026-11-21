@@ -1,0 +1,45 @@
+{
+ "id": "api-mock-response-generator",
+ "seoTitle": "Free API Mock Response Generator from OpenAPI or Schema",
+ "metaDescription": "Generate realistic seeded mock JSON from a JSON Schema or OpenAPI 3 or Swagger 2 document. Free, deterministic output, runs in your browser.",
+ "intro": "Generates realistic, seeded mock JSON responses from a JSON Schema or an OpenAPI 3 or Swagger 2 document in JSON or YAML. The same seed always gives the same output.",
+ "why": "Front-end work often starts before the back end exists, and tests need example responses that match the contract. Writing fixtures by hand is slow and they drift from the spec. With a schema or an OpenAPI file you already have the contract; this tool fills it with plausible values. It respects enums, constants, examples and defaults, formats such as email, uuid, date-time and uri, minimum and maximum, array sizes, allOf, oneOf, anyOf and $ref, with recursion limited to avoid endless output. For an OpenAPI document you choose the path, method and status code. A seed makes the output repeatable, which is what you want in tests. The data is invented, and nothing is uploaded.",
+ "howTo": [
+  "Paste a JSON Schema or an OpenAPI or Swagger document (JSON or YAML).",
+  "For OpenAPI, set the path, method and status code. Set the number of items and a seed.",
+  "Choose whether to wrap the result, then copy the mock JSON."
+ ],
+ "faq": [
+  {
+   "q": "Is the output random each time?",
+   "a": "No. It is deterministic for a given seed, so the same schema and seed produce the same JSON. Change the seed for different data."
+  },
+  {
+   "q": "What happens with examples and enums?",
+   "a": "If the schema has an example or default, it is used. Enums and const values are respected. Otherwise values are generated from the type and format."
+  },
+  {
+   "q": "How does it handle $ref and recursion?",
+   "a": "$ref links are resolved inside the document. Recursive structures are cut off after a limited depth so the output stays finite."
+  },
+  {
+   "q": "Can I use it as a mock server?",
+   "a": "No. It generates JSON text only. Save the output as fixtures or feed it to a mock server of your choice."
+  }
+ ],
+ "related": [
+  "mock-data-generator",
+  "random-json-generator",
+  "json-schema-generator",
+  "openapi-validator",
+  "faker-js-mock-schema-generator",
+  "fake-person-generator"
+ ],
+ "keywords": [
+  "api mock response generator",
+  "generate mock json from openapi",
+  "json schema fake data generator",
+  "free mock api response tool",
+  "openapi example response generator"
+ ]
+}

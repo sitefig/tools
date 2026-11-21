@@ -1,0 +1,39 @@
+{
+ "id": "reorder-point-calculator",
+ "seoTitle": "Inventory Reorder Point Calculator With Safety Stock",
+ "metaDescription": "Find the stock level that triggers a reorder from daily sales, supplier lead time and safety stock. Free and private.",
+ "intro": "Calculates the stock level at which to place a new order, from average daily sales, lead time and safety stock.",
+ "why": "If you wait until the shelf is empty, you are out of stock for the whole supplier lead time. The reorder point is demand during the lead time plus a buffer for variation.\n\nEnter sales per day, lead time and safety stock, and optionally your current stock to see how many days of cover you have. For the buffer itself, see the safety stock calculator.",
+ "howTo": [
+  "Enter average daily sales and lead time.",
+  "Enter safety stock, or compute it with the safety stock tool.",
+  "Optionally enter current stock to see days of cover."
+ ],
+ "faq": [
+  {
+   "q": "What if sales change by season?",
+   "a": "Use the average for the lead time period you expect, not a yearly average."
+  },
+  {
+   "q": "What counts as lead time?",
+   "a": "From placing the order to having sellable stock, including shipping and receiving."
+  },
+  {
+   "q": "How do I choose safety stock?",
+   "a": "Use the safety stock calculator in this set."
+  }
+ ],
+ "related": [
+  "safety-stock-calculator",
+  "economic-order-quantity-calculator",
+  "inventory-turnover-calculator",
+  "average-order-value-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "reorder point calculator",
+  "inventory reorder level",
+  "when to reorder stock"
+ ]
+}

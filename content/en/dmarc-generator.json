@@ -1,0 +1,47 @@
+{
+ "id": "dmarc-generator",
+ "seoTitle": "Free DMARC Record Generator Online",
+ "metaDescription": "Free online DMARC record generator. Build the _dmarc TXT record with policy, subdomain policy, percentage, report addresses and alignment modes.",
+ "intro": "Build the _dmarc TXT record for your domain: policy, subdomain policy, percentage, aggregate and forensic report addresses, alignment modes and failure options, with warnings for common mistakes.",
+ "why": "DMARC tells receiving mail servers what to do with messages that fail SPF and DKIM checks, and it is now expected by large mailbox providers. A wrong tag order or a typo in a report address means the record is ignored or the reports never arrive.\n\nEnter your domain and choose a policy: none to monitor, quarantine or reject. Add report addresses, and the tool writes the record with correct syntax, the host name to create, and a zone-file line. Warnings flag a missing report address, a policy that only monitors, and report addresses on other domains that need an authorisation record. The usual path is to start with p=none, read the reports, then tighten. A record does not fix SPF or DKIM. Nothing is uploaded.",
+ "howTo": [
+  "Enter your domain and choose the policy: none, quarantine or reject.",
+  "Add an address for aggregate reports, and optionally forensic reports.",
+  "Set percentage, alignment modes and other options if you need them.",
+  "Create the TXT record at the host shown and check it with a DNS lookup."
+ ],
+ "faq": [
+  {
+   "q": "Which policy should I start with?",
+   "a": "Start with p=none and a report address, then read the reports to find legitimate senders that fail. Move to quarantine and then reject only when legitimate mail passes consistently."
+  },
+  {
+   "q": "What does pct do?",
+   "a": "It applies the policy to only that percentage of failing mail, which lets you roll out quarantine or reject gradually. The default is 100, so the tag is omitted when it equals 100."
+  },
+  {
+   "q": "Why does it warn about report addresses on other domains?",
+   "a": "To receive reports at another domain, that domain must publish a TXT record authorising it. Without it, many receivers will not send the reports."
+  },
+  {
+   "q": "Does DMARC work on its own?",
+   "a": "No. It builds on SPF and DKIM, and a message passes only if one of them passes and aligns with the From domain. Set those up as well, then publish DMARC."
+  }
+ ],
+ "related": [
+  "spf-record-generator",
+  "dkim-record-generator",
+  "dns-record-generator",
+  "dns-spf-record-flattener",
+  "dns-soa-dnssec-inspector",
+  "http-headers-analyzer"
+ ],
+ "keywords": [
+  "dmarc record generator",
+  "dmarc generator",
+  "create dmarc record",
+  "free dmarc tool",
+  "dmarc txt record builder",
+  "dmarc policy none quarantine reject"
+ ]
+}

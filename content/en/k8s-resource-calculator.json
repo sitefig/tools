@@ -1,0 +1,45 @@
+{
+ "id": "k8s-resource-calculator",
+ "seoTitle": "Free Kubernetes Resource and Node Sizing Calculator",
+ "metaDescription": "Calculate pod CPU and memory requests and limits, QoS class, overcommit and how many worker nodes you need. Free, runs in your browser.",
+ "intro": "Calculates total CPU and memory requests and limits for a Deployment, its QoS class, the overcommit ratio, and how many worker nodes you need given node size, system reserve, DaemonSet overhead and max pods.",
+ "why": "Sizing a Kubernetes workload usually starts with a guess: three replicas, 250m CPU, 256Mi memory. The questions that follow are practical. What do all replicas request in total, including the autoscaler's maximum? Will it be Guaranteed, Burstable or BestEffort? How overcommitted are the limits? And how many nodes of a given size are needed once you subtract the system reserve and DaemonSets? This calculator answers those with the Kubernetes quantity syntax you already use (500m, 0.5, 256Mi, 1Gi). It is a planning aid based on the numbers you enter, not measured usage, so verify with real metrics. It runs in your browser, with nothing to install.",
+ "howTo": [
+  "Enter replicas, the HPA maximum and the CPU and memory requests and limits per pod.",
+  "Enter the node CPU and memory, the system reserve, DaemonSet overhead and max pods per node.",
+  "Read the totals, QoS class, overcommit ratios and the number of nodes needed."
+ ],
+ "faq": [
+  {
+   "q": "What quantity formats are accepted?",
+   "a": "Kubernetes style values: millicores such as 500m or decimal CPUs such as 0.5, and memory with suffixes such as 256Mi and 1Gi."
+  },
+  {
+   "q": "How is the QoS class decided?",
+   "a": "Guaranteed when requests equal limits for CPU and memory, BestEffort when none are set, and Burstable in all other cases."
+  },
+  {
+   "q": "How are node counts calculated?",
+   "a": "The tool subtracts the system reserve and DaemonSet use from each node, then divides pod requests by what is left, also respecting the max-pods limit. The larger result wins."
+  },
+  {
+   "q": "Is this a prediction of real usage?",
+   "a": "No. It only does arithmetic on the values you give it. Use monitoring data to choose requests and limits, then use the calculator to plan capacity."
+  }
+ ],
+ "related": [
+  "kubernetes-deployment-generator",
+  "docker-compose-to-k8s",
+  "k8s-manifest-validator",
+  "helm-values-evaluator",
+  "bandwidth-download-time",
+  "nginx-rate-limit-calculator"
+ ],
+ "keywords": [
+  "kubernetes resource calculator",
+  "k8s node sizing calculator",
+  "pod requests and limits calculator",
+  "free kubernetes capacity planner",
+  "qos class calculator"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "json-to-graphql-query",
+ "seoTitle": "Free JSON to GraphQL Query and Schema Generator",
+ "metaDescription": "Build a GraphQL query selection set from a sample JSON response, or infer GraphQL SDL types from it. Free, runs entirely in your browser.",
+ "intro": "Paste a sample JSON response and get a GraphQL query that selects all its fields, or switch to schema mode for type definitions inferred from the same JSON.",
+ "why": "When you have a REST payload and want to model it in GraphQL, or you hold a sample response from a GraphQL server and need the query that produced it, writing the nested selection by hand is a chore. The same goes for a first draft of the types.\n\nThis tool reads your sample, merges array items to see which fields are optional, and writes either a query or SDL. In schema mode, whole numbers become Int, other numbers Float, and fields that are always present become non-null. It guesses from samples, so inspect the result: an ID field is typed as Int or String, never as ID, and unions and enums need manual work.",
+ "howTo": [
+  "Paste a sample JSON response. A top-level data object is unwrapped for you.",
+  "Choose query or schema output, and set the operation or root type name.",
+  "Copy the GraphQL text and refine it by hand."
+ ],
+ "faq": [
+  {
+   "q": "How are types inferred?",
+   "a": "Strings become String, whole numbers Int, other numbers Float and booleans Boolean. A key is non-null only if it appears in every array item and is never null in your sample."
+  },
+  {
+   "q": "Does it produce ID types, enums or unions?",
+   "a": "No. Everything is built from the primitive types, so replace id fields with ID and add enums or unions yourself where the sample cannot tell you."
+  },
+  {
+   "q": "What names do nested types get?",
+   "a": "The field name in PascalCase, made singular. A posts array gives Post, and a clash with an existing name gets a trailing underscore."
+  },
+  {
+   "q": "Can it handle variables or arguments in queries?",
+   "a": "No. The query only lists fields from your sample. Add arguments, variables and fragments by hand so that it matches your real schema and the operation you want to run."
+  }
+ ],
+ "related": [
+  "graphql-query-formatter",
+  "json-to-graphql-schema",
+  "graphql-to-typescript",
+  "json-to-typescript",
+  "json-schema-generator",
+  "graphql-schema-to-zod"
+ ],
+ "keywords": [
+  "json to graphql",
+  "json to graphql schema",
+  "generate graphql query from json",
+  "free graphql type generator",
+  "graphql sdl from json"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "cloud-init-generator",
+  "seoTitle": "cloud-init User Data Generator (#cloud-config)",
+  "metaDescription": "Build a #cloud-config for a new server: admin user with SSH key, hostname, packages, SSH hardening, firewall commands and first-boot updates.",
+  "intro": "Provision a fresh VM with a sane baseline from its user data.",
+  "why": "Enter hostname, an admin user and public SSH key, packages and the commands to run once. The output creates the user with sudo and no password, disables password and root SSH login (and writes a drop-in sshd config), installs packages, sets the timezone and optionally updates packages on first boot, then restarts SSH.\n\nCheck the SSH key before booting: with password login disabled a wrong key locks you out. User data runs once on first boot on most clouds, and command lines run as root.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Fill in host, user and your public key.",
+    "List packages and first-boot commands.",
+    "Paste the output as user data when creating the server.",
+    "Log in with your key."
+  ],
+  "faq": [
+    {
+      "q": "Is the key secret?",
+      "a": "No, only the public key is used."
+    },
+    {
+      "q": "Why disable password login?",
+      "a": "It removes the most common brute-force attack path."
+    },
+    {
+      "q": "Which clouds support cloud-init?",
+      "a": "Most: AWS, Azure, Google Cloud, DigitalOcean, Hetzner and OpenStack."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "ssh-key-pair-generator",
+    "systemd-unit-generator",
+    "docker-compose-generator",
+    "wireguard-config-generator",
+    "nginx-config-generator",
+    "yaml-format"
+  ],
+  "keywords": [
+    "cloud-init generator",
+    "cloud-config yaml",
+    "user data script",
+    "server provisioning"
+  ]
+}

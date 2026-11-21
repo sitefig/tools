@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free XOR Cipher &amp; One-Time Pad Calculator | Free Tools</title>
+<meta name="description" content="Free online XOR cipher and one-time pad tool. XOR a message with a key, repeat a short key or generate a random pad, all in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/xor-one-time-pad/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/xor-one-time-pad/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/xor-one-time-pad/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free XOR Cipher &amp; One-Time Pad Calculator | Free Tools">
+<meta property="og:description" content="Free online XOR cipher and one-time pad tool. XOR a message with a key, repeat a short key or generate a random pad, all in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/xor-one-time-pad/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free XOR Cipher &amp; One-Time Pad Calculator | Free Tools">
+<meta name="twitter:description" content="Free online XOR cipher and one-time pad tool. XOR a message with a key, repeat a short key or generate a random pad, all in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"XOR Cipher / One-Time Pad","url":"https://tools.sitefig.net/en/xor-one-time-pad/","description":"Free online XOR cipher and one-time pad tool. XOR a message with a key, repeat a short key or generate a random pad, all in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the message and choose whether it is text, hex or base64.","Enter the key or pad and choose its format, or tick Generate a random pad.","Tick Repeat only if you accept a short key being reused over the message.","Choose the output format and copy the result."],"keywords":"xor cipher online, one time pad online, xor calculator, vernam cipher tool, free xor encrypt decrypt, xor hex strings","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"XOR Cipher / One-Time Pad","item":"https://tools.sitefig.net/en/xor-one-time-pad/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does the tool refuse my short key?","acceptedAnswer":{"@type":"Answer","text":"A one-time pad needs a key at least as long as the message. Tick the repeat option to cycle a shorter key anyway, but understand that this is no longer a one-time pad and is easy to break."}},{"@type":"Question","name":"How do I decrypt?","acceptedAnswer":{"@type":"Answer","text":"XOR is its own inverse. Put the ciphertext in the message box with the right format (hex or base64), use the same key, and choose text as the output to read the original."}},{"@type":"Question","name":"Is the generated pad truly random?","acceptedAnswer":{"@type":"Answer","text":"It comes from the browser's cryptographic random generator, which is suitable for this purpose. The pad is shown in hex above the result. You must store it safely and never use it a second time."}},{"@type":"Question","name":"Can I use this to protect real messages?","acceptedAnswer":{"@type":"Answer","text":"Not in practice. The security of a one-time pad depends on how you create, share and destroy the pad, and this page cannot do that for you. Treat it as a learning and puzzle tool."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">XOR Cipher / One-Time Pad</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>XOR Cipher / One-Time Pad</h1>
+<p class="lede">XOR a message with a key and get hex, base64 or text back. You can supply the key, repeat a short one, or let the tool generate a random pad as long as the message.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="xor-one-time-pad" data-module="crypto2" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>XOR is the building block behind stream ciphers and the one-time pad, and it turns up constantly in CTF puzzles and malware samples. Doing it on paper is slow, and a quick script usually forgets about key length or encoding. This tool makes the rules visible.</p>
+<p>A true one-time pad needs a random key at least as long as the message, used once. If your key is shorter, the tool refuses unless you tick the repeat option, which gives you the weak Vernam-style cipher that is easy to break. You can also generate a random pad and see it in hex. Everything runs in your browser, so the message and key are not uploaded. It is for learning and puzzles, not for protecting real data.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the message and choose whether it is text, hex or base64.</li><li>Enter the key or pad and choose its format, or tick Generate a random pad.</li><li>Tick Repeat only if you accept a short key being reused over the message.</li><li>Choose the output format and copy the result.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why does the tool refuse my short key?</summary><p>A one-time pad needs a key at least as long as the message. Tick the repeat option to cycle a shorter key anyway, but understand that this is no longer a one-time pad and is easy to break.</p></details>
+<details><summary>How do I decrypt?</summary><p>XOR is its own inverse. Put the ciphertext in the message box with the right format (hex or base64), use the same key, and choose text as the output to read the original.</p></details>
+<details><summary>Is the generated pad truly random?</summary><p>It comes from the browser's cryptographic random generator, which is suitable for this purpose. The pad is shown in hex above the result. You must store it safely and never use it a second time.</p></details>
+<details><summary>Can I use this to protect real messages?</summary><p>Not in practice. The security of a one-time pad depends on how you create, share and destroy the pad, and this page cannot do that for you. Treat it as a learning and puzzle tool.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/chacha20-poly1305/"><span class="link-card__title">ChaCha20 / Poly1305 / AEAD (RFC 8439)</span><span class="link-card__desc">Hand-written ChaCha20 stream cipher, Poly1305 one-time MAC and the ChaCha20-Poly1305 AEAD. Defaults are the RFC 8439 section 2.8.2 test vector. Decrypt checks the tag in constant time before releasing plaintext.</span></a></li><li><a class="link-card" href="/en/aes-modes-demo/"><span class="link-card__title">AES CBC / CTR / GCM / ECB Demo (educational)</span><span class="link-card__desc">EDUCATIONAL ONLY, not a vetted encryption product. Encrypt/decrypt with AES-CBC (PKCS#7), CTR, GCM (ciphertext||16-byte tag) or ECB (shown to demonstrate why ECB leaks patterns) via WebCrypto. Never reuse an IV/nonce with the same key; use a proper audited tool for real secrets.</span></a></li><li><a class="link-card" href="/en/classical-ciphers/"><span class="link-card__title">Vigenere / Autokey / Beaufort / Playfair</span><span class="link-card__desc">Classical ciphers for puzzles and teaching (not secure). Vigenere, Autokey, Beaufort keep case and punctuation; Playfair works on a 5x5 square (J=I) and inserts X fillers, which stay in the decrypted text.</span></a></li><li><a class="link-card" href="/en/hex-text/"><span class="link-card__title">Hex ⇄ Text</span><span class="link-card__desc">Convert text to hexadecimal bytes (UTF-8) and back.</span></a></li><li><a class="link-card" href="/en/binary-text/"><span class="link-card__title">Binary ⇄ Text</span><span class="link-card__desc">Convert text to 8-bit binary (UTF-8) and back.</span></a></li><li><a class="link-card" href="/en/base64-encode/"><span class="link-card__title">Base64 Encode</span><span class="link-card__desc">Encode text (UTF-8 safe) to Base64 or URL-safe Base64.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

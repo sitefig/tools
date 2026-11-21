@@ -1,0 +1,39 @@
+{
+ "id": "late-payment-interest-calculator",
+ "seoTitle": "Late Payment Interest Calculator (EU Directive)",
+ "metaDescription": "Calculate statutory late payment interest at the reference rate plus 8 points and the EUR 40 fixed sum for an overdue B2B invoice.",
+ "intro": "Interest on an overdue invoice, split across the semesters you enter, plus the fixed recovery sum.",
+ "why": "Directive 2011/7/EU gives businesses statutory interest on late B2B payments: the reference rate plus at least eight percentage points, and a fixed sum of at least EUR 40. The reference rate is the one in force on 1 January or 1 July.\n\nEnter the rate for each semester, the amount and the dates. Your country may set higher rates and the contract may differ. Not tax advice. Check national rules.",
+ "howTo": [
+  "Enter the reference rate for each semester.",
+  "Enter the amount, due date and payment date.",
+  "Read the interest and the total claim."
+ ],
+ "faq": [
+  {
+   "q": "Where do I find the reference rate?",
+   "a": "For euro countries it is the ECB main refinancing rate. The sample values are only examples."
+  },
+  {
+   "q": "How is interest counted?",
+   "a": "Simple interest on 365 days from the day after the due date."
+  },
+  {
+   "q": "Does it apply to consumers?",
+   "a": "The directive covers business transactions. Consumer rules differ."
+  }
+ ],
+ "related": [
+  "payment-terms-due-date-calculator",
+  "invoice-generator",
+  "simple-interest",
+  "date-difference",
+  "credit-note-generator",
+  "loan-calculator"
+ ],
+ "keywords": [
+  "late payment interest",
+  "EU late payment directive",
+  "statutory interest"
+ ]
+}

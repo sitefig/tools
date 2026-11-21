@@ -1,0 +1,39 @@
+{
+ "id": "pricing-tier-planner",
+ "seoTitle": "Pricing Tier Planner: Good, Better, Best Revenue and Margin",
+ "metaDescription": "Compare plans by price, expected customers and cost to serve for revenue, margin, mix and blended revenue per customer.",
+ "intro": "Compares up to a handful of plans on revenue, margin and customer mix.",
+ "why": "Tiered pricing works when each plan has its own audience. The numbers to check are revenue from each plan, margin per customer and the mix, because a cheap plan can make most of the customers and little of the profit.\n\nList plans as name, price, expected customers and cost to serve. Customer counts are your forecast, so test variations.",
+ "howTo": [
+  "List plans as name, price, customers, cost.",
+  "Read revenue, margin and mix per plan.",
+  "Change counts to try different scenarios."
+ ],
+ "faq": [
+  {
+   "q": "What is cost to serve?",
+   "a": "Variable cost per customer, like support, hosting and payment fees."
+  },
+  {
+   "q": "Can I compare monthly and yearly?",
+   "a": "Use the same period for price and cost."
+  },
+  {
+   "q": "Does it model upgrades?",
+   "a": "No. Adjust the customer counts instead."
+  }
+ ],
+ "related": [
+  "mrr-arr-calculator",
+  "churn-rate-calculator",
+  "saas-metrics-calculator",
+  "rule-of-40-calculator",
+  "retention-calculator",
+  "profit-margin"
+ ],
+ "keywords": [
+  "pricing tier planner",
+  "good better best pricing",
+  "saas pricing plans"
+ ]
+}

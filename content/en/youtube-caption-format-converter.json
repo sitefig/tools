@@ -1,0 +1,38 @@
+{
+ "id": "youtube-caption-format-converter",
+ "seoTitle": "YouTube Caption Converter: timedtext XML, json3, SRT, VTT to Text",
+ "metaDescription": "Convert YouTube caption data (timedtext XML, json3, SRT, WebVTT) into SRT, VTT, a plain transcript or timestamped text. Paste it; nothing is fetched.",
+ "intro": "Convert YouTube caption formats into a clean transcript, SRT or VTT.",
+ "why": "YouTube serves captions as timedtext XML (srv1, srv3) or json3, and yt-dlp saves SRT or VTT. This converter reads all of them and writes SRT, WebVTT, a plain transcript or a transcript with [mm:ss] timestamps, merging the rolling repeated lines that auto-captions produce.\n\nThe page cannot download captions from YouTube; save them with your own tools (browser network tab, yt-dlp) and paste the data. Only transcribe or copy content you have the right to use.",
+ "howTo": [
+  "Paste the caption data.",
+  "Choose the output format.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Can it fetch a video's transcript?",
+   "a": "No. It converts text you provide; this site makes no requests."
+  },
+  {
+   "q": "What are rolling lines?",
+   "a": "Auto-captions repeat the previous line while adding words; the merge option removes those repeats."
+  },
+  {
+   "q": "Which inputs work?",
+   "a": "timedtext XML, json3, SRT and WebVTT."
+  }
+ ],
+ "related": [
+  "subtitle-srt-vtt-converter",
+  "transcript-cleaner",
+  "youtube-link-tools",
+  "youtube-seo-checker",
+  "ai-speech-to-text"
+ ],
+ "keywords": [
+  "youtube captions to srt",
+  "timedtext xml converter",
+  "json3 transcript"
+ ]
+}

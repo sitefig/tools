@@ -1,0 +1,45 @@
+{
+ "id": "yaml-to-typescript",
+ "seoTitle": "Free YAML to TypeScript Interface Generator Online",
+ "metaDescription": "Infer TypeScript interfaces from YAML or JSON data. Nested objects become named interfaces and missing keys become optional. Free, runs in your browser.",
+ "intro": "Infers TypeScript interfaces from YAML or JSON. Nested objects get their own named interface, arrays of objects are merged so missing keys become optional, and mixed values become unions.",
+ "why": "Configuration lives in YAML: app settings, CI files, Kubernetes manifests, feature flags, content front matter. Reading that config in TypeScript without types means property typos only show up at runtime. Writing the interfaces by hand for a large file is slow. Paste the YAML and this tool infers the shapes: each nested object becomes a named interface, list items are merged so a key present in only some entries is optional, and fields that change type become unions. A null value is typed accordingly. It looks only at the sample you give it, so a single example gives a narrow picture, and you should widen types where real data varies. If the file has several YAML documents, the first is used. It runs in your browser.",
+ "howTo": [
+  "Paste YAML, or JSON, into the input box.",
+  "Set the name of the root interface, for example Config.",
+  "Copy the generated interfaces and adjust any type that the sample made too narrow."
+ ],
+ "faq": [
+  {
+   "q": "How are arrays of objects handled?",
+   "a": "All items are merged into one interface. A key missing from some items becomes optional, and a key that has different types in different items becomes a union."
+  },
+  {
+   "q": "What about multi-document YAML?",
+   "a": "Only the first document is used. Split the file and run each document separately if you need all of them."
+  },
+  {
+   "q": "Can I paste JSON?",
+   "a": "Yes. JSON is valid YAML, so you can paste a JSON document and get the same kind of interfaces, with nested objects, optional keys and unions worked out in the same way."
+  },
+  {
+   "q": "Why are my types too narrow?",
+   "a": "The tool can only see your sample. A field with one example string becomes string, and an empty list has no known element type. Provide a fuller sample or edit the output."
+  }
+ ],
+ "related": [
+  "yaml-to-json",
+  "json-to-typescript",
+  "yaml-format",
+  "sql-to-typescript",
+  "typescript-to-json-schema",
+  "json-to-go"
+ ],
+ "keywords": [
+  "yaml to typescript",
+  "yaml to ts interface",
+  "generate typescript types from yaml",
+  "free yaml type generator",
+  "yaml config to interface"
+ ]
+}

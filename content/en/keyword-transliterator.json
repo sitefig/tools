@@ -1,0 +1,45 @@
+{
+ "id": "keyword-transliterator",
+ "seoTitle": "Keyword Transliteration: Cyrillic, Greek and Kana to Latin Letters",
+ "metaDescription": "Turn Russian, Ukrainian, Greek and Japanese kana keywords into Latin spellings and URL slugs with simple rules. Free, in your browser.",
+ "intro": "Converts keywords written in Cyrillic (Russian or Ukrainian), Greek or Japanese hiragana and katakana into Latin letters, with an optional URL slug.",
+ "why": "People often type foreign-language queries with Latin letters, and URL slugs in Latin letters are easier to share. A rule-based romanization gives you a quick first version of both.\n\nThese are simplified rules, not official standards, and I did not check them against the standard texts, so do not use them for passports or legal names. Kanji and Chinese characters cannot be converted without a dictionary and are left unchanged. Chinese pinyin is not supported. Always check real search queries in Search Console.",
+ "howTo": [
+  "Paste your keywords, one per line.",
+  "Choose the script.",
+  "Tick the slug option if you need URL forms.",
+  "Check the result with a native speaker for important pages."
+ ],
+ "faq": [
+  {
+   "q": "Why not pinyin?",
+   "a": "Pinyin needs a dictionary of thousands of characters, with several readings per character. It is not included."
+  },
+  {
+   "q": "Which standard is used?",
+   "a": "None strictly. Russian is close to BGN/PCGN, Ukrainian follows the common national scheme with initial and medial forms, Japanese follows Hepburn without macrons."
+  },
+  {
+   "q": "Are accents in Greek removed?",
+   "a": "Yes, accents are stripped before converting."
+  },
+  {
+   "q": "Should URLs be in Latin letters?",
+   "a": "Google handles non-Latin URLs, but Latin slugs are easier to share and to type. Choose by audience."
+  }
+ ],
+ "related": [
+  "slug-generator",
+  "unicode-normalize",
+  "keyword-list-cleaner",
+  "url-encode",
+  "hreflang-generator",
+  "keyword-permutation-generator"
+ ],
+ "keywords": [
+  "transliterate cyrillic to latin",
+  "russian to latin keywords",
+  "romaji converter",
+  "greek to latin letters"
+ ]
+}

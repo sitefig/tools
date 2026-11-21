@@ -1,0 +1,45 @@
+{
+ "id": "dockerfile-formatter",
+ "seoTitle": "Dockerfile Formatter Online",
+ "metaDescription": "Uppercase Dockerfile instructions, indent continuation lines, collapse blank lines and split long RUN chains at &&. Free, in your browser.",
+ "intro": "Tidies a Dockerfile: instruction case, continuation indent, blank lines and optional && splitting.",
+ "why": "Dockerfiles grow long RUN lines that are hard to review. Putting each command of a chain on its own line makes diffs and mistakes visible.\n\nThe tool joins continued lines, uppercases instructions, writes FROM ... AS, and splits RUN at top-level && outside quotes and parentheses. Heredoc RUN blocks and JSON-form commands are kept as typed. It honours a custom escape character from a parser directive. It does not check what the commands do.",
+ "howTo": [
+  "Paste the Dockerfile.",
+  "Choose whether to split RUN at &&.",
+  "Pick the continuation indent.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Does it change the image?",
+   "a": "Splitting at && only adds line continuations. The command is the same."
+  },
+  {
+   "q": "Is this a linter?",
+   "a": "No. Use the Dockerfile linter for rules."
+  },
+  {
+   "q": "Are comments kept?",
+   "a": "Yes."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "dockerfile-linter",
+  "dockerfile-generator",
+  "docker-compose-formatter",
+  "shell-script-formatter",
+  "nginx-formatter",
+  "env-to-json"
+ ],
+ "keywords": [
+  "dockerfile formatter",
+  "dockerfile beautifier",
+  "format dockerfile run commands",
+  "dockerfile uppercase instructions"
+ ]
+}

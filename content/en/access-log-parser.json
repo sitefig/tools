@@ -1,0 +1,44 @@
+{
+ "id": "access-log-parser",
+ "seoTitle": "Apache and Nginx Access Log Parser: Log to Table",
+ "metaDescription": "Turn Common or Combined Log Format lines into a sortable, filterable table. Export CSV or JSON. Free, runs in your browser.",
+ "intro": "Parses Common and Combined Log Format into columns and lets you filter by text, regex, status or method, sort, and export.",
+ "why": "Web server logs are one long line per request and are hard to scan. A table with IP, time, method, path, status and bytes makes patterns visible, such as one IP hitting one URL.\n\nThe parser handles the standard Common and Combined formats used by Apache and nginx. Custom formats need the log format converter first. Time is shown as written in the log.",
+ "howTo": [
+  "Paste log lines or choose a file (gzip works).",
+  "Set filters such as a status class like 5xx or a text match.",
+  "Choose columns, sort order and table, CSV or JSON.",
+  "Copy or download the result."
+ ],
+ "faq": [
+  {
+   "q": "What if some lines do not match?",
+   "a": "They are skipped and the result says how many. Custom log formats need the Log Format to Regex tool."
+  },
+  {
+   "q": "Can I open a .gz file?",
+   "a": "Yes. Gzip files are unpacked in the browser."
+  },
+  {
+   "q": "How big a file works?",
+   "a": "A few hundred MB can work, depending on memory. For multi-GB files use the large log viewer."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "access-log-analyzer",
+  "log-format-to-regex",
+  "top-ips-user-agents",
+  "response-time-percentiles",
+  "log-to-csv",
+  "brute-force-scan-detector"
+ ],
+ "keywords": [
+  "apache log parser",
+  "nginx access log to csv",
+  "combined log format parser"
+ ]
+}

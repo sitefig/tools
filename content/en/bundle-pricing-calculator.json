@@ -1,0 +1,38 @@
+{
+ "id": "bundle-pricing-calculator",
+ "seoTitle": "Bundle Pricing Calculator: Discount Against Item Margins",
+ "metaDescription": "Compare a bundle price with selling items one by one, see the margin you keep and the largest discount that meets a target margin.",
+ "intro": "Shows what a bundle discount does to profit and the biggest discount that still meets a margin target.",
+ "why": "A bundle discount is a cost: you give away part of the price on items that might have sold anyway. It pays off only when it sells extra items or lifts basket size.\n\nList items with cost and price. The tool shows the margin of each, the profit sold separately and as a bundle, and the largest discount that keeps a target margin on the whole bundle.",
+ "howTo": [
+  "List items as name, cost, price.",
+  "Set the bundle discount and your target margin.",
+  "Compare profit and read the maximum discount."
+ ],
+ "faq": [
+  {
+   "q": "How is the maximum discount computed?",
+   "a": "It is the largest discount where bundle price still gives at least the target margin on total cost."
+  },
+  {
+   "q": "Does it model extra sales?",
+   "a": "No. Estimate those separately."
+  },
+  {
+   "q": "What about different tax rates per item?",
+   "a": "Use prices without tax."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "markup-margin",
+  "discount-calculator",
+  "break-even",
+  "roi-calculator"
+ ],
+ "keywords": [
+  "bundle pricing calculator",
+  "bundle discount margin",
+  "product bundle price"
+ ]
+}

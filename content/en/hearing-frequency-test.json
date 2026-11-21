@@ -1,0 +1,45 @@
+{
+ "id": "hearing-frequency-test",
+ "seoTitle": "High-Frequency Hearing Test: How High Can You Hear?",
+ "metaDescription": "Play quiet tones from 8 kHz to 20 kHz and mark which you can hear, to find where your high-frequency hearing ends on your own speakers. Not a medical test.",
+ "intro": "Plays ten test tones from 8 kHz up to 20 kHz. You mark each one as heard or not heard, and the page shows the highest frequency you heard.",
+ "why": "High-frequency hearing declines with age, and many people are curious where theirs stops. The test is also useful to check headphones, because cheap ones barely play above 16 kHz.\n\nThe result depends on your device as much as on you, so it is a rough check, not a medical hearing test. Set the volume with the 1 kHz reference tone first so the later tones are not painfully loud. Each tone lasts two seconds with soft starts and ends. If you notice ringing, pain or sudden hearing loss, see a doctor.",
+ "howTo": [
+  "Put on headphones in a quiet room.",
+  "Play the 1 kHz reference tone and set a comfortable volume.",
+  "Press Start, play each tone, and answer I heard it or I did not.",
+  "Read the summary at the end."
+ ],
+ "faq": [
+  {
+   "q": "Is this a medical test?",
+   "a": "No. It tests your equipment and your ears together and cannot diagnose anything."
+  },
+  {
+   "q": "Why can I not play 20 kHz?",
+   "a": "Devices with a 44.1 kHz output cannot go above about 22 kHz, and many speakers stop earlier. Such tones are marked as not playable."
+  },
+  {
+   "q": "What is a normal result?",
+   "a": "Young adults often hear up to 17 to 18 kHz on good headphones. Hearing to 14 to 16 kHz is common in adults and not a sign of a problem."
+  },
+  {
+   "q": "Is it loud?",
+   "a": "The tones are fixed at a low level, but your device volume decides. Use the reference tone to set it first."
+  }
+ ],
+ "related": [
+  "tone-generator",
+  "binaural-beat-generator",
+  "decibel-meter",
+  "audio-spectrum-analyzer",
+  "white-noise-generator",
+  "sleep-noise-timer"
+ ],
+ "keywords": [
+  "hearing frequency test",
+  "high frequency hearing test",
+  "how high can i hear",
+  "age hearing test online"
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free LLM Token Count Estimator (Approximate) | Free Tools</title>
+<meta name="description" content="Estimate token counts for GPT-4o, GPT-4, Claude, DeepSeek and Llama from text using chars-per-token ratios. Approximate and free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/llm-token-estimator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/llm-token-estimator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/llm-token-estimator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free LLM Token Count Estimator (Approximate) | Free Tools">
+<meta property="og:description" content="Estimate token counts for GPT-4o, GPT-4, Claude, DeepSeek and Llama from text using chars-per-token ratios. Approximate and free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/llm-token-estimator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free LLM Token Count Estimator (Approximate) | Free Tools">
+<meta name="twitter:description" content="Estimate token counts for GPT-4o, GPT-4, Claude, DeepSeek and Llama from text using chars-per-token ratios. Approximate and free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"LLM Token Count Estimator (approximate)","url":"https://tools.sitefig.net/en/llm-token-estimator/","description":"Estimate token counts for GPT-4o, GPT-4, Claude, DeepSeek and Llama from text using chars-per-token ratios. Approximate and free, in your browser.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your text or prompt.","Optionally enter your price per million input tokens for a cost estimate.","Read the estimated tokens and range for each model family."],"keywords":"llm token counter estimate, token count estimator, gpt token calculator approximate, free claude token estimate, how many tokens is my text","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Text","item":"https://tools.sitefig.net/en/#text"},{"@type":"ListItem","position":3,"name":"LLM Token Count Estimator (approximate)","item":"https://tools.sitefig.net/en/llm-token-estimator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How accurate is the estimate?","acceptedAnswer":{"@type":"Answer","text":"Typically within 10 to 20 percent for English prose. The output shows a range for each model. Code, numbers, emoji and other languages can be further off, so treat it as a planning figure."}},{"@type":"Question","name":"Why not use the real tokenizer?","acceptedAnswer":{"@type":"Answer","text":"Model vocabularies are large files that differ per model and change over time. This page does not ship them, so it estimates. Use the provider API for exact counts."}},{"@type":"Question","name":"Why do the models give different numbers?","acceptedAnswer":{"@type":"Answer","text":"Each family splits text differently, and newer vocabularies often pack English into fewer tokens. The tool applies a different characters-per-token ratio to each."}},{"@type":"Question","name":"Is my text sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The estimate is calculated locally in your browser from the text you paste, and nothing is uploaded, logged or stored by this page."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#text">Text</a></li><li><span aria-current="page">LLM Token Count Estimator (approximate)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>LLM Token Count Estimator (approximate)</h1>
+<p class="lede">Paste text to get an approximate token count for several model families, with a range and optional cost. These are estimates, not exact tokenizer output.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="llm-token-estimator" data-module="devx"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Prompts, documents and chat histories all have to fit a context window, and API usage is billed per token. Before you send something large, a rough count tells you whether it fits and what it may cost.</p>
+<p>Real tokenizers use learned vocabularies that differ per model, and they cannot be bundled here, so this tool uses per-family ratios of characters per token blended with a word and punctuation heuristic. For ordinary English it is usually within roughly 10 to 20 percent. Code, numbers, emoji and non-Latin scripts vary more. Use the provider token counting API when exact numbers matter, such as for billing checks or hard limits. The text stays in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your text or prompt.</li><li>Optionally enter your price per million input tokens for a cost estimate.</li><li>Read the estimated tokens and range for each model family.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How accurate is the estimate?</summary><p>Typically within 10 to 20 percent for English prose. The output shows a range for each model. Code, numbers, emoji and other languages can be further off, so treat it as a planning figure.</p></details>
+<details><summary>Why not use the real tokenizer?</summary><p>Model vocabularies are large files that differ per model and change over time. This page does not ship them, so it estimates. Use the provider API for exact counts.</p></details>
+<details><summary>Why do the models give different numbers?</summary><p>Each family splits text differently, and newer vocabularies often pack English into fewer tokens. The tool applies a different characters-per-token ratio to each.</p></details>
+<details><summary>Is my text sent anywhere?</summary><p>No. The estimate is calculated locally in your browser from the text you paste, and nothing is uploaded, logged or stored by this page.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/gpt-token-counter/"><span class="link-card__title">GPT Token Counter (cl100k + o200k, chat overhead)</span><span class="link-card__desc">Exact token counts for text under cl100k_base and o200k_base side by side, plus an approximate chat-message overhead calculator (OpenAI cookbook rule: 3 tokens per message, +1 per name, +3 reply priming; use o200k_base for the GPT-4o family). Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/multi-tokenizer-counter/"><span class="link-card__title">Multi-Tokenizer Token Counter (GPT, DeepSeek, Qwen, Mistral, Phi, ...)</span><span class="link-card__desc">Count the tokens of one text under every included tokenizer at once, sorted from fewest to most: gpt2 (GPT-2; identical ranks to r50k_base); r50k_base (GPT-3 davinci/curie/babbage/ada); p50k_base (text-davinci-002/003, Codex); cl100k_base (GPT-4, GPT-3.5-turbo); o200k_base (GPT-4o, GPT-4.1, o1/o3); DeepSeek-V3 (deepseek-ai/DeepSeek-V3); DeepSeek-R1 (deepseek-ai/DeepSeek-R1); Qwen2.5 (Qwen/Qwen2.5-7B); Phi-4 (microsoft/phi-4); GPT-NeoX-20B (Pythia, EleutherAI); StarCoder2 (bigcode/starcoder2); Mistral-7B-v0.3 (mistralai/Mistral-7B-v0.3); claude-legacy (LEGACY Claude 1/2 only, NOT Claude 3/4/5). Exact vocabularies, runs offline in your browser (vocabularies load on first use, about 20 MB in total). Exact for the listed models; LEGACY Claude 1/2 tokenizer (from the public npm package @anthropic-ai/tokenizer). It is NOT accurate for Claude 3, 4 or 5-family models: Anthropic has not published those vocabularies. Gemini, Llama, Gemma and Claude 3+ tokenizers are not included (gated or unpublished).</span></a></li><li><a class="link-card" href="/en/tokenizer-cost-estimator/"><span class="link-card__title">Token Cost Estimator (your own prices)</span><span class="link-card__desc">Exact token count (cl100k_base / o200k_base) multiplied by prices YOU enter per 1M tokens. No prices are built in: copy the current figures from your provider's pricing page. Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/llm-cost-calculator/"><span class="link-card__title">LLM API Cost Calculator</span><span class="link-card__desc">Compute request and monthly cost from tokens and your own per-million prices (prices change; enter current ones).</span></a></li><li><a class="link-card" href="/en/system-prompt-budgeter/"><span class="link-card__title">System Prompt Length Budgeter</span><span class="link-card__desc">Split a prompt into &quot;## Section&quot; parts and see approximate token share against a context window and output reserve.</span></a></li><li><a class="link-card" href="/en/token-truncate/"><span class="link-card__title">Truncate / Chunk Text by Tokens (tiktoken)</span><span class="link-card__desc">Cut text to at most N tokens, or split it into chunks of at most N tokens with overlap, always on a token boundary that does not split a UTF-8 character. Exact cl100k_base / o200k_base. Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

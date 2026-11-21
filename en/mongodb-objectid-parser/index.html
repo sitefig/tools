@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free MongoDB ObjectId Parser and Date Decoder | Free Tools</title>
+<meta name="description" content="Decode MongoDB ObjectIds to see the creation time, random value and counter, one per line. Free and runs entirely in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/mongodb-objectid-parser/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/mongodb-objectid-parser/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/mongodb-objectid-parser/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free MongoDB ObjectId Parser and Date Decoder | Free Tools">
+<meta property="og:description" content="Decode MongoDB ObjectIds to see the creation time, random value and counter, one per line. Free and runs entirely in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/mongodb-objectid-parser/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free MongoDB ObjectId Parser and Date Decoder | Free Tools">
+<meta name="twitter:description" content="Decode MongoDB ObjectIds to see the creation time, random value and counter, one per line. Free and runs entirely in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"MongoDB ObjectId Parser","url":"https://tools.sitefig.net/en/mongodb-objectid-parser/","description":"Decode MongoDB ObjectIds to see the creation time, random value and counter, one per line. Free and runs entirely in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste ObjectIds into the input, one per line.","Read the decoded creation time, random value and counter under each id.","Copy the dates you need into your notes or ticket."],"keywords":"mongodb objectid decoder, objectid to date, objectid timestamp parser, free objectid converter, mongodb id creation time","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Data Models","item":"https://tools.sitefig.net/en/#data-models"},{"@type":"ListItem","position":3,"name":"MongoDB ObjectId Parser","item":"https://tools.sitefig.net/en/mongodb-objectid-parser/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What format must the id have?","acceptedAnswer":{"@type":"Answer","text":"It must be exactly 24 hexadecimal characters, such as 507f1f77bcf86cd799439011. Anything else stops the tool with an error that shows the value that failed."}},{"@type":"Question","name":"Is the timestamp the insert time?","acceptedAnswer":{"@type":"Answer","text":"It is when the id was generated, usually in the client driver. The document may be inserted later, and anyone can build an id with a chosen time, so do not use it as proof."}},{"@type":"Question","name":"What are the random value and counter?","acceptedAnswer":{"@type":"Answer","text":"The random value is five bytes chosen per process and the counter is a three-byte number that increases for each id generated. Together they make ids unique within a second."}},{"@type":"Question","name":"Does it connect to a database?","acceptedAnswer":{"@type":"Answer","text":"No. It only decodes the hexadecimal text you paste, inside your browser, and never contacts a database or any server with your data."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#data-models">Data Models</a></li><li><span aria-current="page">MongoDB ObjectId Parser</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>MongoDB ObjectId Parser</h1>
+<p class="lede">Paste one or more 24-character ObjectIds and read the creation timestamp, the random part and the counter inside each of them.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="mongodb-objectid-parser" data-module="devgen2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>The first four bytes of a MongoDB ObjectId are a Unix timestamp in seconds, which means that you can often tell when a document was created without a createdAt field. That is handy when you are debugging an incident, auditing old records or checking whether two ids came from the same period.</p>
+<p>This tool splits each id into its parts: the time as an ISO date, the five-byte random value and the three-byte counter. It runs locally and accepts many ids at once. The embedded time is the moment the id was generated, usually by the driver, which may differ from when the document was inserted. Anyone can also make an id with any time.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste ObjectIds into the input, one per line.</li><li>Read the decoded creation time, random value and counter under each id.</li><li>Copy the dates you need into your notes or ticket.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What format must the id have?</summary><p>It must be exactly 24 hexadecimal characters, such as 507f1f77bcf86cd799439011. Anything else stops the tool with an error that shows the value that failed.</p></details>
+<details><summary>Is the timestamp the insert time?</summary><p>It is when the id was generated, usually in the client driver. The document may be inserted later, and anyone can build an id with a chosen time, so do not use it as proof.</p></details>
+<details><summary>What are the random value and counter?</summary><p>The random value is five bytes chosen per process and the counter is a three-byte number that increases for each id generated. Together they make ids unique within a second.</p></details>
+<details><summary>Does it connect to a database?</summary><p>No. It only decodes the hexadecimal text you paste, inside your browser, and never contacts a database or any server with your data.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/uuid-v7-timestamp-extractor/"><span class="link-card__title">UUID v7 / v1 Timestamp Extractor</span><span class="link-card__desc">Read the embedded creation time (and version, variant) from UUIDs. v7 stores Unix milliseconds, v1/v6 store 100 ns ticks since 1582.</span></a></li><li><a class="link-card" href="/en/timestamp-converter/"><span class="link-card__title">Unix Timestamp Converter</span><span class="link-card__desc">Unix seconds/ms to ISO, UTC, local and relative time, and date strings to timestamps.</span></a></li><li><a class="link-card" href="/en/uuid-generator/"><span class="link-card__title">UUID Generator</span><span class="link-card__desc">Generate v1, v4 and v7 UUIDs in bulk (up to 1000) with formatting options.</span></a></li><li><a class="link-card" href="/en/ulid-generator/"><span class="link-card__title">ULID Generator</span><span class="link-card__desc">Generate sortable 26-character ULIDs (48-bit timestamp + 80 random bits).</span></a></li><li><a class="link-card" href="/en/hex-to-base64/"><span class="link-card__title">Hex ⇄ Base64 Converter</span><span class="link-card__desc">Convert raw bytes between hexadecimal and Base64 (or Base64URL) directly, without going through text. Accepts 0x prefixes, spaces and colons in hex.</span></a></li><li><a class="link-card" href="/en/sql-to-json/"><span class="link-card__title">SQL INSERT to JSON</span><span class="link-card__desc">Parse INSERT ... VALUES statements (multi-row, quoted strings, NULL, booleans, numbers) into JSON rows per table. Column names come from the INSERT or the CREATE TABLE in the same script. Subset: INSERT/CREATE TABLE only; expressions stay as raw text.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+{
+ "id": "emoji-code-converter",
+ "seoTitle": "Emoji and Symbol Code Converter: U+, HTML Entity, CSS, JS",
+ "metaDescription": "Paste emojis or symbols and get code points, HTML entities, CSS and JavaScript escapes, UTF-8 bytes and UTF-16 units. Free, local.",
+ "intro": "Shows the code points and encodings for each emoji or symbol you paste, and turns U+ codes back into characters.",
+ "why": "Developers need an emoji as an HTML entity, a CSS content escape or a JavaScript escape, and need to know whether it is one code point or several (flags and ZWJ sequences are several).\n\nThe tool splits text into user-perceived characters, then lists code points, HTML hex and decimal entities, CSS escape, JS escape, UTF-8 bytes and UTF-16 units for each. It does not look up emoji names or shortcodes, because that needs a name table which is not bundled.",
+ "howTo": [
+  "Paste emojis or symbols, or type codes like U+1F680.",
+  "Optionally include plain ASCII.",
+  "Read the table.",
+  "Copy the form you need."
+ ],
+ "faq": [
+  {
+   "q": "Why do some emojis have several code points?",
+   "a": "Flags, skin tones and joined emojis are sequences of code points."
+  },
+  {
+   "q": "Does it give :shortcodes:?",
+   "a": "No. Only encodings are shown."
+  },
+  {
+   "q": "Is the CSS form safe?",
+   "a": "Yes. Use it inside content: \"...\" with a trailing space handled for you between code points."
+  }
+ ],
+ "related": [
+  "emoji-picker",
+  "html-entities-reference",
+  "html-entities",
+  "ascii-table",
+  "unicode-escape",
+  "utf8-bytes-viewer"
+ ],
+ "keywords": [
+  "emoji to unicode",
+  "emoji html entity",
+  "emoji code points",
+  "unicode escape converter"
+ ]
+}

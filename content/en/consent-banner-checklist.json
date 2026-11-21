@@ -1,0 +1,41 @@
+{
+ "id": "consent-banner-checklist",
+ "seoTitle": "Cookie Consent Banner Checklist: 12 Points to Review",
+ "metaDescription": "Tick what your cookie banner does and get a list of points to review: reject button, pre-ticked boxes, withdrawal and more. Free checklist, not legal advice.",
+ "intro": "A 12-point self-check for cookie consent banners that lists the points you ticked off and the ones to review, with the reason for each.",
+ "why": "Most complaints about cookie banners are about the same few things: no easy reject, accept and reject styled differently, boxes ticked in advance, trackers firing before a choice, and no way to change your mind later.\n\nThis checklist turns those points into tick boxes. It does not look at your site: the answers are your own statements, so test the real banner with dev tools. Rules differ by country and change, so use it as a prompt for a proper review, not as proof of compliance.",
+ "howTo": [
+  "Open your site in a private window and look at the banner.",
+  "Tick each statement that is true for your banner.",
+  "Read the review list and the reason given for each unticked item.",
+  "Fix the items and test again with the Network tab open."
+ ],
+ "faq": [
+  {
+   "q": "Does this prove my banner is compliant?",
+   "a": "No. It is a prompt for review. Compliance depends on law, country and the real behaviour of your scripts."
+  },
+  {
+   "q": "Where do the points come from?",
+   "a": "From common points in EU data protection authority guidance on cookie banners and from GDPR Art. 4(11) and Art. 7. Rules and enforcement vary."
+  },
+  {
+   "q": "Does it test my site?",
+   "a": "No. It makes no requests. Use a HAR file with the Pre-Consent Request Finder to see what loads before a choice."
+  }
+ ],
+ "related": [
+  "pre-consent-request-finder",
+  "cookie-banner-generator",
+  "cookie-policy-generator",
+  "gdpr-checklist",
+  "tracker-detector",
+  "google-consent-mode-snippet"
+ ],
+ "keywords": [
+  "cookie banner compliance",
+  "consent banner checklist",
+  "reject all button",
+  "dark patterns cookie banner"
+ ]
+}

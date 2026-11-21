@@ -1,0 +1,50 @@
+{
+ "id": "license-compatibility-matrix",
+ "seoTitle": "Open Source License Compatibility Checker and Matrix (Not Legal Advice)",
+ "metaDescription": "Enter the SPDX licences of your dependencies (MIT, Apache-2.0, GPL, MPL, LGPL, AGPL) and see which licence the combined work can use, with the rule and source for each answer. Information only.",
+ "intro": "Find out whether the licences in your dependency list can live together, and which licence your combined work could use.",
+ "why": "List the licences of your dependencies, one per line, as SPDX ids or expressions such as (MIT OR Apache-2.0) or GPL-2.0-or-later. The tool compares each against common target licences and shows YES, COND (allowed with conditions) or NO, then lists the licences the whole combination could be distributed under. Pick one target to get the reason for every dependency.\n\nThe rules come from the licence texts and the published statements of the GNU project (license list and GPL FAQ), the Apache Software Foundation's GPL-compatibility page, the Mozilla MPL 2.0 text and FAQ, and the Eclipse EPL 2.0 text and FAQ: permissive licences go anywhere; Apache-2.0 is compatible with GPLv3 and AGPLv3 but not GPLv2-only; GPLv2-only and GPLv3 do not mix; GPLv3 may be combined with AGPLv3 through section 13 but not the other way round; MPL-2.0 and EPL-2.0 are file or module level; LGPL allows larger works under other terms with conditions; EPL-1.0 and CDDL-1.0 conflict with the GPL.\n\nThis is not legal advice. It answers one narrow question about whole-work distribution. It does not know how your code is really combined, whether linking creates a derivative work, dual licensing, patents or contracts, and it covers only the listed licences. For anything with money or risk attached, ask a lawyer.",
+ "howTo": [
+  "List your dependency licences, one per line, with an optional name before a colon.",
+  "Choose the outbound licence you want details for.",
+  "Read the matrix and the list of licences the combined work could use.",
+  "Follow up on COND items and on anything marked unknown."
+ ],
+ "faq": [
+  {
+   "q": "Is this legal advice?",
+   "a": "No. It summarises published licence texts and compatibility statements. Use it to spot problems early, and have a lawyer confirm important decisions."
+  },
+  {
+   "q": "What does COND mean?",
+   "a": "The combination is possible if conditions are met, for example MPL-covered files staying under the MPL, LGPL libraries remaining replaceable, or only GPL version 3 terms applying."
+  },
+  {
+   "q": "How are OR expressions handled?",
+   "a": "For (A OR B) the more permissive choice is used. AND requires both."
+  },
+  {
+   "q": "Which licences are included?",
+   "a": "MIT, BSD-2/3, ISC, 0BSD, Zlib, Unlicense, CC0-1.0, Apache-2.0, MPL-2.0, EPL-1.0/2.0, CDDL-1.0, LGPL, GPL and AGPL versions, and proprietary. Others are marked unknown."
+  },
+  {
+   "q": "Does it read my package files?",
+   "a": "No. Paste the licences. For npm, the package.json licence checker lists them."
+  }
+ ],
+ "related": [
+  "package-json-license-checker",
+  "license-generator",
+  "package-json-generator",
+  "terms-generator",
+  "privacy-policy-generator",
+  "semver-calculator"
+ ],
+ "keywords": [
+  "license compatibility",
+  "gpl apache compatible",
+  "spdx license checker",
+  "open source license matrix",
+  "can i combine licenses"
+ ]
+}

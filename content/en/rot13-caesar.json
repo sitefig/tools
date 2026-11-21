@@ -1,0 +1,47 @@
+{
+ "id": "rot13-caesar",
+ "seoTitle": "Free ROT13 and Caesar Cipher Encoder Decoder",
+ "metaDescription": "Shift letters by any amount with the Caesar cipher, use ROT13 by default, or switch to ROT47. Free, instant and runs fully in your browser.",
+ "intro": "Apply ROT13 or a Caesar shift of any size to your text, or switch to ROT47 to cover punctuation and digits as well. Use a negative shift to decode.",
+ "why": "ROT13 is the old internet way of hiding spoilers, puzzle answers and punchlines without encrypting anything. The Caesar cipher is the same idea with any shift, and it is a favourite in beginner puzzles, geocaching clues and cryptography lessons.\n\nThis tool shifts only the letters, keeps case and leaves digits and punctuation alone. ROT13 is its own inverse, so running it twice returns the original, while any other shift is undone by the negative value. ROT47 extends the idea to all printable ASCII characters. It is a toy cipher that any person can break, so do not use it to protect anything.",
+ "howTo": [
+  "Paste your text into the Text box.",
+  "Leave the shift at 13 for ROT13, or enter another number. Use a negative number to decode.",
+  "Tick \"ROT47 instead\" if you want to rotate every printable ASCII character.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Is ROT13 secure?",
+   "a": "No. It has only one possible key, so anyone can reverse it instantly. Use it for hiding spoilers and puzzles, never for secrets. For real protection, use proper encryption such as the AES tools on this site."
+  },
+  {
+   "q": "How do I decode a Caesar cipher?",
+   "a": "Enter the negative of the shift that was used. If the text was shifted by 5, use -5. If you do not know the shift, try values from 1 to 25 until readable words appear."
+  },
+  {
+   "q": "What is the difference between ROT13 and ROT47?",
+   "a": "ROT13 rotates only the 26 letters. ROT47 rotates the 94 printable ASCII characters from ! to ~, so digits and punctuation change too. Like ROT13, applying ROT47 twice gives back the original."
+  },
+  {
+   "q": "What happens to accented letters?",
+   "a": "Only the unaccented letters A to Z and a to z are shifted. Accented letters, other alphabets, digits and punctuation pass through unchanged in Caesar mode."
+  }
+ ],
+ "related": [
+  "rot47-encoder",
+  "classical-ciphers",
+  "morse-translator",
+  "base64-encode",
+  "xor-one-time-pad",
+  "leetspeak"
+ ],
+ "keywords": [
+  "rot13 online",
+  "caesar cipher decoder",
+  "free rot13 encoder",
+  "caesar shift tool",
+  "rot47 converter",
+  "decode caesar cipher online"
+ ]
+}

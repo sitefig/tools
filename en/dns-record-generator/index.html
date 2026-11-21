@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free DNS Zone Record Generator - BIND and Route 53 | Free Tools</title>
+<meta name="description" content="Write DNS records as simple lines and get a validated BIND zone file, Route 53 change batch or JSON. Supports A, AAAA, CNAME, MX, TXT, SRV, CAA. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/dns-record-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/dns-record-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/dns-record-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free DNS Zone Record Generator - BIND and Route 53 | Free Tools">
+<meta property="og:description" content="Write DNS records as simple lines and get a validated BIND zone file, Route 53 change batch or JSON. Supports A, AAAA, CNAME, MX, TXT, SRV, CAA. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/dns-record-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free DNS Zone Record Generator - BIND and Route 53 | Free Tools">
+<meta name="twitter:description" content="Write DNS records as simple lines and get a validated BIND zone file, Route 53 change batch or JSON. Supports A, AAAA, CNAME, MX, TXT, SRV, CAA. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"DNS Zone Record Generator","url":"https://tools.sitefig.net/en/dns-record-generator/","description":"Write DNS records as simple lines and get a validated BIND zone file, Route 53 change batch or JSON. Supports A, AAAA, CNAME, MX, TXT, SRV, CAA. Free.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the zone, for example example.com, and the default TTL.","Write one record per line as TYPE name value, using @ for the apex and ttl=300 to override the TTL.","Choose BIND zone file, Route 53 ChangeBatch JSON or JSON list, then copy the output."],"keywords":"dns record generator, bind zone file generator, route 53 change batch generator, free dns zone file builder, dns records to bind format","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Network & HTTP","item":"https://tools.sitefig.net/en/#network-and-http"},{"@type":"ListItem","position":3,"name":"DNS Zone Record Generator","item":"https://tools.sitefig.net/en/dns-record-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which record types are supported?","acceptedAnswer":{"@type":"Answer","text":"A, AAAA, CNAME, MX, TXT, NS, SRV, CAA and PTR. Any other type gives an error naming the line. Each type has its own validation, for example MX needs a priority and a target host."}},{"@type":"Question","name":"How are long TXT records handled?","acceptedAnswer":{"@type":"Answer","text":"Values over 255 bytes are split into several quoted strings in one record, as DNS requires. This matters for DKIM keys and long SPF records."}},{"@type":"Question","name":"Why does it complain about a CNAME?","acceptedAnswer":{"@type":"Answer","text":"DNS forbids a CNAME on a name that has any other record type. The tool checks this across your lines and stops with the name that conflicts."}},{"@type":"Question","name":"Does it check my live DNS or publish anything?","acceptedAnswer":{"@type":"Answer","text":"No. It only formats and validates what you type. The SOA values in the BIND header are placeholders, so replace them with your provider's before loading the file."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#network-and-http">Network &amp; HTTP</a></li><li><span aria-current="page">DNS Zone Record Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>DNS Zone Record Generator</h1>
+<p class="lede">Turns simple lines such as &quot;MX @ 10 mail.example.com&quot; into a validated BIND zone file, a Route 53 ChangeBatch JSON or a plain JSON list. Nothing is looked up or published.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="dns-record-generator" data-module="devz1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Moving a domain or setting up mail usually means typing a dozen DNS records into a provider's form or zone file, where one wrong dot or missing quote breaks something quietly. This tool lets you write each record as a short line and checks it before producing output: IPv4 and IPv6 addresses, MX priorities, SRV fields, CAA tags and hostnames are validated, long TXT values are split into 255-byte strings, and a CNAME that shares a name with other records is rejected. The output can be pasted into a BIND file or sent to Route 53 as a change batch. It is a writing aid, not a resolver, and it never contacts any DNS server.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the zone, for example example.com, and the default TTL.</li><li>Write one record per line as TYPE name value, using @ for the apex and ttl=300 to override the TTL.</li><li>Choose BIND zone file, Route 53 ChangeBatch JSON or JSON list, then copy the output.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which record types are supported?</summary><p>A, AAAA, CNAME, MX, TXT, NS, SRV, CAA and PTR. Any other type gives an error naming the line. Each type has its own validation, for example MX needs a priority and a target host.</p></details>
+<details><summary>How are long TXT records handled?</summary><p>Values over 255 bytes are split into several quoted strings in one record, as DNS requires. This matters for DKIM keys and long SPF records.</p></details>
+<details><summary>Why does it complain about a CNAME?</summary><p>DNS forbids a CNAME on a name that has any other record type. The tool checks this across your lines and stops with the name that conflicts.</p></details>
+<details><summary>Does it check my live DNS or publish anything?</summary><p>No. It only formats and validates what you type. The SOA values in the BIND header are placeholders, so replace them with your provider's before loading the file.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/spf-record-generator/"><span class="link-card__title">SPF Record Generator</span><span class="link-card__desc">Compose an SPF TXT record from mechanisms, count DNS lookups against the 10-lookup limit and check the length.</span></a></li><li><a class="link-card" href="/en/dkim-record-generator/"><span class="link-card__title">DKIM Record Generator</span><span class="link-card__desc">Make a DKIM DNS TXT record from a public key, or generate a fresh RSA key pair in your browser.</span></a></li><li><a class="link-card" href="/en/dmarc-generator/"><span class="link-card__title">DMARC Record Generator</span><span class="link-card__desc">Build the _dmarc TXT record: policy, subdomain policy, percentage, aggregate/forensic reports, alignment modes.</span></a></li><li><a class="link-card" href="/en/dns-spf-record-flattener/"><span class="link-card__title">SPF Record Flattener (offline)</span><span class="link-card__desc">Flatten an SPF record by inlining include:/redirect= records that you paste (lines &quot;domain: v=spf1 ...&quot;), de-duplicating ip4/ip6, counting DNS lookups against the limit of 10, and splitting long TXT strings. The tool never queries DNS: resolve each include yourself (dig +short TXT domain).</span></a></li><li><a class="link-card" href="/en/dns-soa-dnssec-inspector/"><span class="link-card__title">DNS SOA &amp; DNSSEC Record Inspector</span><span class="link-card__desc">Decode pasted SOA, DNSKEY, DS/CDS, RRSIG and NSEC3PARAM records: timers vs RFC 1912 guidance, key tags, KSK/ZSK roles, algorithms, signature validity windows, and whether a DS digest really matches the DNSKEY (SHA-1/256/384 computed locally).</span></a></li><li><a class="link-card" href="/en/ip-validator-converter/"><span class="link-card__title">IP Validator &amp; Converter</span><span class="link-card__desc">Validate IPv4/IPv6 and convert between dotted, integer, hex and binary forms.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

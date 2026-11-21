@@ -1,0 +1,43 @@
+{
+ "id": "http-cache-control-tester",
+ "seoTitle": "Free HTTP Cache-Control Tester for Browsers and CDNs",
+ "metaDescription": "Paste response headers to see whether a browser or CDN may cache the response, how long it stays fresh and when it revalidates. Free.",
+ "intro": "Paste response headers and see whether a browser or shared cache such as a CDN may store the response, how long it stays fresh and when it must be revalidated, following RFC 9111.",
+ "why": "Caching bugs are annoying in both directions. A page that should be cached is fetched again every time, or a private response is stored by a CDN and shown to the wrong visitor. The rules mix Cache-Control, Expires, s-maxage, status codes, request methods and heuristic freshness from Last-Modified, and few people remember them all.\n\nThis tester applies the rules to the headers you paste and explains the outcome for a private browser cache and for a shared cache. You can change the status code and method to see how the result changes. It shows the logic of the specification, not what a particular CDN does with its own overrides, so confirm with real requests. The headers are analysed in your browser.",
+ "howTo": [
+  "Paste the response headers, including Cache-Control, Expires, Last-Modified and ETag if present.",
+  "Choose whether to test a private browser cache or a shared cache.",
+  "Set the response status code and request method.",
+  "Read whether the response is storable, how long it is fresh and when it needs revalidation."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between max-age and s-maxage?",
+   "a": "max-age applies to every cache, while s-maxage applies only to shared caches such as CDNs and overrides max-age there. That lets a CDN keep a copy longer than a browser does."
+  },
+  {
+   "q": "What is heuristic freshness?",
+   "a": "If a response has no explicit lifetime but has Last-Modified, caches may assume a fraction of the time since that date, commonly ten percent. The tool shows this so surprising caching has an explanation."
+  },
+  {
+   "q": "Does it reflect my CDN's real behaviour?",
+   "a": "Not exactly. It follows the standard, but CDNs add their own rules, such as ignoring headers or using their own overrides. Use it to understand your headers, then verify with real requests."
+  }
+ ],
+ "related": [
+  "cache-control-builder",
+  "http-headers-analyzer",
+  "security-headers-generator",
+  "http-status-reference",
+  "cors-preflight-inspector",
+  "http-wire-format"
+ ],
+ "keywords": [
+  "cache-control tester",
+  "http cache checker",
+  "cache-control header analyzer",
+  "browser cache vs cdn cache",
+  "s-maxage max-age explained",
+  "free http caching tool"
+ ]
+}

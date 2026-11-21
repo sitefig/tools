@@ -1,0 +1,45 @@
+{
+ "id": "hreflang-format-converter",
+ "seoTitle": "Hreflang Converter: HTML Tags, HTTP Link Header, Sitemap, Apache and nginx",
+ "metaDescription": "Convert hreflang between link tags, HTTP Link headers and sitemap xhtml:link. Header output includes Apache and nginx config for PDFs.",
+ "intro": "Reads hreflang in any of the three formats Google supports and writes it in another: link tags, an HTTP Link header, sitemap XML, or Apache and nginx configuration lines.",
+ "why": "You choose one place for hreflang: the page head, the HTTP header (the only option for PDFs and other non-HTML files) or the sitemap. Moving between them by hand is tedious. Paste what you have, pick the output and copy it.\n\nThe converter checks the codes and that URLs are absolute. For headers it lists every version including the requested one, as Google requires. The Apache and nginx output sets the same Link header for each file; adjust paths to your layout.",
+ "howTo": [
+  "Paste link tags, a Link header, sitemap XML or code | URL lines.",
+  "Choose the output format.",
+  "Read any code or URL errors.",
+  "Copy the result into your page, sitemap or server config."
+ ],
+ "faq": [
+  {
+   "q": "Which format should I pick?",
+   "a": "Google treats the three as equivalent. Use headers for PDFs, a sitemap for large sites, tags otherwise."
+  },
+  {
+   "q": "Why is the header the same for every version?",
+   "a": "Google asks for the full set on each version, including itself."
+  },
+  {
+   "q": "Does it keep x-default?",
+   "a": "Yes, as one more entry."
+  },
+  {
+   "q": "Is the sitemap output valid XML?",
+   "a": "It was parsed with an XML library during testing, and the namespaces are declared."
+  }
+ ],
+ "related": [
+  "hreflang-generator",
+  "hreflang-matrix-builder",
+  "hreflang-sitemap-validator",
+  "hreflang-code-checker",
+  "sitemap-generator",
+  "htaccess-generator"
+ ],
+ "keywords": [
+  "hreflang http header",
+  "hreflang sitemap converter",
+  "hreflang for pdf",
+  "hreflang link header nginx"
+ ]
+}

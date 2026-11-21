@@ -1,0 +1,46 @@
+{
+ "id": "pdf-add-text-watermark",
+ "seoTitle": "Free Add Text Watermark to PDF - Diagonal Overlay",
+ "metaDescription": "Overlay light, semi-transparent diagonal text such as CONFIDENTIAL on every page of a PDF. Free, runs in your browser, nothing uploaded.",
+ "intro": "Stamp a faint diagonal text such as CONFIDENTIAL or DRAFT across every page of a PDF, with control over opacity, lightness, size and angle.",
+ "why": "Drafts, review copies and sensitive documents are often marked so that nobody mistakes them for the final version or forwards them as if they were. A watermark makes that status visible on every page without editing the original in a word processor.\n\nThis tool overlays your text on each page of an existing PDF. By default it is a light grey, 30 percent opaque and set at an angle that follows the page diagonal, with the size chosen automatically to fit. You can change the opacity, how light or dark the grey is, the size and the angle. It is a visual marker, not protection: anyone can remove an overlay with the right software, so do not rely on it to keep a document secret. Text is set in Helvetica with Western characters only. Processing is local.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Type the watermark text, such as DRAFT or CONFIDENTIAL.",
+  "Adjust opacity, lightness, font size and angle, or keep the automatic values.",
+  "Run the tool and download the watermarked PDF."
+ ],
+ "faq": [
+  {
+   "q": "Can the watermark be removed?",
+   "a": "Yes, by someone with PDF editing software. It is a visible reminder, not security. For protection, control who receives the file and use access controls rather than relying on a watermark."
+  },
+  {
+   "q": "What do the automatic size and angle do?",
+   "a": "With size 0 the text is scaled to fit the page, and with the angle set to auto it follows the page diagonal. Enter numbers for either to set them yourself."
+  },
+  {
+   "q": "Will it hide the text underneath?",
+   "a": "The overlay is semi-transparent and light by default, so the page stays readable. If it is distracting, lower the opacity or raise the lightness value towards 100."
+  },
+  {
+   "q": "Which characters can I use?",
+   "a": "Letters, digits and punctuation from the standard Western set. Other scripts and emoji appear as question marks because only a built-in PDF font is used."
+  }
+ ],
+ "related": [
+  "pdf-add-page-numbers",
+  "pdf-remove-metadata",
+  "pdf-metadata-editor",
+  "image-watermark",
+  "pdf-merge",
+  "pdf-crop-margins"
+ ],
+ "keywords": [
+  "add watermark to pdf",
+  "pdf text watermark online",
+  "confidential watermark pdf",
+  "draft watermark pdf free",
+  "stamp text on pdf"
+ ]
+}

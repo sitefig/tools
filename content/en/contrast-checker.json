@@ -1,0 +1,46 @@
+{
+  "id": "contrast-checker",
+  "seoTitle": "Free Color Contrast Checker: WCAG and APCA",
+  "metaDescription": "Check the contrast ratio between two colours against WCAG AA and AAA, and see the APCA Lc score with a live preview. Free, runs in your browser.",
+  "intro": "Compares a text colour with a background colour and gives the WCAG 2 contrast ratio, pass or fail results for AA and AAA, an APCA Lc value and a live sample.",
+  "why": "Low-contrast text is among the most common accessibility failures, and it is easy to miss when you are looking at your own design on a good monitor. Grey on white that looks refined to you may be unreadable outdoors, or to someone with low vision.\n\nEnter a foreground and a background colour in any CSS format. The tool shows the ratio, then marks pass or fail for AA normal text, AA large text, AA user-interface parts, AAA normal text and AAA large text. It also calculates APCA Lc, the newer perceptual measure being considered for future guidelines, with the usual thresholds listed. A preview shows heading and body text in your colours. Calculation is local to your browser.",
+  "howTo": [
+    "Enter the foreground (text) colour in the first box.",
+    "Enter the background colour in the second box.",
+    "Read the contrast ratio and the AA and AAA results.",
+    "Check the APCA Lc value and the live preview, then adjust your colours."
+  ],
+  "faq": [
+    {
+      "q": "What ratios do I need?",
+      "a": "WCAG AA asks for 4.5 to 1 for normal text and 3 to 1 for large text and interface components. AAA asks for 7 to 1 for normal text and 4.5 to 1 for large text. The tool marks each with PASS or FAIL."
+    },
+    {
+      "q": "What is APCA?",
+      "a": "APCA is a perceptual contrast method that depends on polarity and text size. Its Lc score is read against guideline values: 75 for body text, 60 for content, 45 for large text and 30 for spot text. It is not yet part of the WCAG 2 standard."
+    },
+    {
+      "q": "Which should I follow for compliance?",
+      "a": "Legal and policy requirements today refer to WCAG 2 ratios, so those are the pass or fail results to use. Treat APCA as an extra check on readability, not a replacement."
+    },
+    {
+      "q": "Does transparency matter?",
+      "a": "The inputs are used as given. If your text colour has alpha, the tool does not blend it with the background, so enter the final solid colour as it appears on screen."
+    }
+  ],
+  "related": [
+    "color-converter",
+    "a11y-html-check",
+    "color-blindness-simulator",
+    "palette-generator",
+    "color-mixer",
+    "tailwind-v4-color-palette"
+  ],
+  "keywords": [
+    "contrast checker",
+    "wcag contrast checker",
+    "color contrast ratio calculator",
+    "apca contrast calculator",
+    "free accessibility color checker"
+  ]
+}

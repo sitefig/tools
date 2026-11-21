@@ -1,0 +1,44 @@
+{
+ "id": "travel-map-pinner",
+ "seoTitle": "Travel Map Pinner: Mark Visited Countries on a World Map",
+ "metaDescription": "Click countries or tick them in a list to mark where you have been; see the count and share and download the map as SVG. Private.",
+ "intro": "An interactive world map where you mark visited countries, with a counter and SVG download.",
+ "why": "Click a country on the map or tick it in the list. The list is the keyboard and screen reader route to the same thing. The page counts how many of the countries in the map data you have visited and what share that is.\n\nThe shapes are Natural Earth 1:110m (public domain) and leave out many small countries and islands, so the count is of the 176 countries that are drawn, not of all countries in the world. Your selection is written into the page address, so you can bookmark or share it; nothing is sent to a server.",
+ "howTo": [
+  "Click countries on the map, or tick them in the list.",
+  "Pick a colour for visited countries.",
+  "Read the count under the heading.",
+  "Download the SVG map."
+ ],
+ "faq": [
+  {
+   "q": "Why is the number not 195?",
+   "a": "The map has 176 country shapes; microstates are missing."
+  },
+  {
+   "q": "Can I share the selection?",
+   "a": "Yes. The page address records the countries, so copy the link."
+  },
+  {
+   "q": "Does it work with a keyboard?",
+   "a": "Yes, through the checkbox list."
+  },
+  {
+   "q": "Is my selection stored?",
+   "a": "Only in the page address; no server is involved."
+  }
+ ],
+ "related": [
+  "geography-quiz-map",
+  "choropleth-map-maker",
+  "csv-to-map-plotter",
+  "geo-path-distance",
+  "coordinate-format-converter",
+  "geojson-viewer-validator"
+ ],
+ "keywords": [
+  "travel map",
+  "countries visited map",
+  "scratch map online"
+ ]
+}

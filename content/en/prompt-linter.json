@@ -1,0 +1,45 @@
+{
+ "id": "prompt-linter",
+ "seoTitle": "Free Prompt Linter - Check Your LLM Prompt Online",
+ "metaDescription": "Rule-based checklist for an LLM prompt: role, task, format, examples, vague wording, shouting, placeholders and length, with fixes and score. Free.",
+ "intro": "Reviews an LLM prompt with a fixed checklist: role, task, output format, examples, vague or hedging words, shouting, placeholders, repeated sentences and length. It lists concrete fixes and a score.",
+ "why": "Most weak prompts fail for boring reasons: no clear task, no output format, vague words like \"good\" or \"some\", a placeholder left unfilled, or three warnings in capital letters. A checklist catches these quickly, before you spend tokens testing. This linter applies a set of simple rules to your text and reports what is missing, what is vague and what is repeated, with a suggested fix for each issue and an overall score. No model is called, so it is instant and free, and your prompt, which may contain business details, stays in your browser. Treat the result as a first review, not a verdict. Only testing on real inputs shows whether a prompt works.",
+ "howTo": [
+  "Paste your prompt into the input box.",
+  "Run the check and read the score, then the list of issues with suggested fixes.",
+  "Edit the prompt, paste it in again, and test the final version on real inputs."
+ ],
+ "faq": [
+  {
+   "q": "Does this use an AI model to judge the prompt?",
+   "a": "No. It uses plain pattern rules on the text, so the result is the same every time and nothing is sent anywhere. It cannot judge whether the prompt actually produces good answers."
+  },
+  {
+   "q": "What does the score mean?",
+   "a": "It is the weighted share of checks passed. Task, output format, vague wording and unfilled placeholders count double. A high score means fewer common mistakes, not a guaranteed good prompt."
+  },
+  {
+   "q": "Why is \"never\" or \"do not\" flagged?",
+   "a": "When prohibitions outnumber positive instructions, the tool suggests saying what to do instead of only what to avoid. A couple of prohibitions are fine."
+  },
+  {
+   "q": "Which placeholders does it detect?",
+   "a": "Forms like {{name}}, {name}, [INSERT ...] and [TODO ...] in square brackets. They are flagged because an unfilled one would reach the model as literal text."
+  }
+ ],
+ "related": [
+  "system-prompt-formatter",
+  "system-prompt-xml-builder",
+  "llm-few-shot-prompt-formatter",
+  "prompt-template-filler",
+  "llm-token-estimator",
+  "cot-chain-of-thought-prompt-builder"
+ ],
+ "keywords": [
+  "prompt linter",
+  "prompt checker online",
+  "llm prompt review checklist",
+  "free prompt optimizer",
+  "prompt quality score"
+ ]
+}

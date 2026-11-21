@@ -1,0 +1,46 @@
+{
+  "id": "markdown-to-html",
+  "seoTitle": "Free Markdown to HTML Converter Online",
+  "metaDescription": "Convert Markdown to clean HTML with tables, task lists, code fences and nested lists. Raw HTML is escaped by default. Free, runs in your browser.",
+  "intro": "Converts CommonMark and GitHub-style Markdown into HTML you can paste into a page or template. Tables, task lists, fenced code and nested lists are supported, and raw HTML is escaped unless you allow it.",
+  "why": "You wrote a README, a changelog or a blog post in Markdown and now a CMS, an email template or a static page needs HTML. Installing a library for a one-off conversion is more effort than the job deserves, and online converters often want you to paste your text into someone else's server.\n\nHere the conversion happens in your browser. Headings, emphasis, links, images, lists, block quotes, code fences and tables come out as plain HTML. By default any raw HTML in the source is escaped, which is the safer choice for text you did not write yourself. You can allow inline HTML when you trust the input, and wrap the result in a full document if you want a standalone file.",
+  "howTo": [
+    "Paste or type your Markdown into the input.",
+    "Tick Full HTML document if you want a complete page with head and styles.",
+    "Tick Allow raw inline HTML only if you trust the source.",
+    "Copy the HTML from the output."
+  ],
+  "faq": [
+    {
+      "q": "Which Markdown features are supported?",
+      "a": "Headings, emphasis, strikethrough, links, images, autolinks, reference links, block quotes, ordered and bullet lists, task lists, fenced code, horizontal rules and pipe tables. It follows CommonMark and GitHub conventions, though not every edge case."
+    },
+    {
+      "q": "Why is my raw HTML shown as text?",
+      "a": "By default HTML tags in the Markdown are escaped, so they are displayed instead of executed. Tick Allow raw inline HTML to pass them through. Only do that for content you trust."
+    },
+    {
+      "q": "Does it make the HTML safe against scripts?",
+      "a": "It blocks javascript, vbscript and most data URLs in link and image addresses, and escapes raw HTML by default. If you allow raw HTML, scripts in the source are passed through, so sanitise the output before publishing."
+    },
+    {
+      "q": "What does the full document option add?",
+      "a": "It wraps the converted body in a complete HTML page with a head, a charset declaration and some basic readable styling. That makes the output usable as a standalone file."
+    }
+  ],
+  "related": [
+    "markdown-preview",
+    "html-to-markdown",
+    "markdown-cheatsheet",
+    "markdown-table-generator",
+    "markdown-to-pdf",
+    "html-format"
+  ],
+  "keywords": [
+    "markdown to html converter",
+    "convert markdown to html online",
+    "markdown to html with tables",
+    "github markdown to html",
+    "free markdown converter"
+  ]
+}

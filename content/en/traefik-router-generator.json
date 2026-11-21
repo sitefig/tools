@@ -1,0 +1,45 @@
+{
+  "id": "traefik-router-generator",
+  "seoTitle": "Traefik Config Generator: Routers, Services, TLS, Middlewares",
+  "metaDescription": "Generate Traefik dynamic configuration (YAML file provider) or Docker labels with host rules, HTTPS redirect, Let's Encrypt resolver, rate limiting and security headers.",
+  "intro": "Publish a service behind Traefik with HTTPS and common middlewares from a few inputs.",
+  "why": "Enter the host, the backend URL, the certificate resolver name, an optional rate limit and whether to add a security headers middleware. The YAML defines an HTTPS router with a certificate resolver, an HTTP router that redirects to HTTPS, a load-balancer service and the middlewares. The Docker label output carries the same settings for use in docker-compose.\n\nEntry points web and websecure and the certificate resolver must exist in your static configuration. The generated YAML parses correctly; run Traefik with the file provider enabled to validate it.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter host and backend.",
+    "Choose file provider or Docker labels.",
+    "Copy the output into your dynamic config or compose file.",
+    "Check the Traefik dashboard for router errors."
+  ],
+  "faq": [
+    {
+      "q": "What is a certificate resolver?",
+      "a": "A static-config entry that tells Traefik how to obtain certificates, for example via ACME/Let's Encrypt."
+    },
+    {
+      "q": "Where do labels go?",
+      "a": "Under the service in docker-compose.yml."
+    },
+    {
+      "q": "Is the rate limit per client?",
+      "a": "The default source criterion is the client IP, and burst is set to twice the average."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "nginx-config-generator",
+    "caddyfile-generator",
+    "docker-compose-generator",
+    "kubernetes-ingress-generator",
+    "cors-policy-builder",
+    "security-headers-generator"
+  ],
+  "keywords": [
+    "traefik config generator",
+    "traefik docker labels",
+    "traefik middleware",
+    "traefik letsencrypt"
+  ]
+}

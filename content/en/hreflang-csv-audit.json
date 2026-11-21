@@ -1,0 +1,45 @@
+{
+ "id": "hreflang-csv-audit",
+ "seoTitle": "Hreflang Audit from a CSV Export: Return Links, Status, Canonicals",
+ "metaDescription": "Audit hreflang from a crawl export: missing self-references, return links, non-200 targets, canonical conflicts, bad codes and duplicates.",
+ "intro": "Reads a CSV of hreflang annotations with optional status and canonical columns and groups every problem by type with the affected URLs.",
+ "why": "Large sites cannot be checked page by page. Export the annotations from your crawler as url, hreflang, href rows and add the status and canonical columns if you have them. The audit then finds missing self-references, one-way links, targets that do not return 200, targets canonicalised elsewhere, codes outside the ISO lists, repeated codes pointing at different URLs and missing x-default.\n\nOnly pages present in the url column can be checked for return links, status and canonical; others are listed as not in the export. Nothing leaves your browser, which matters for unreleased sites.",
+ "howTo": [
+  "Export hreflang rows from your crawler into CSV with the named columns.",
+  "Paste the CSV.",
+  "Read the issues, errors first.",
+  "Fix them and re-crawl."
+ ],
+ "faq": [
+  {
+   "q": "Which columns are needed?",
+   "a": "url, hreflang and href. Optional: status and canonical."
+  },
+  {
+   "q": "Does it accept wide crawler exports?",
+   "a": "No. It needs one row per annotation."
+  },
+  {
+   "q": "What does \"not in the export\" mean?",
+   "a": "The target was never listed as a source page, so its return links could not be checked."
+  },
+  {
+   "q": "Is there a row limit?",
+   "a": "Only your browser memory; the report shows the first 40 per issue."
+  }
+ ],
+ "related": [
+  "hreflang-cluster-visualizer",
+  "hreflang-validator",
+  "hreflang-sitemap-validator",
+  "hreflang-code-checker",
+  "sitemap-validator",
+  "hreflang-matrix-builder"
+ ],
+ "keywords": [
+  "hreflang audit csv",
+  "hreflang return links",
+  "hreflang canonical conflict",
+  "hreflang non-200"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "crawl-frequency-per-url",
+ "seoTitle": "Crawl Frequency per URL From Server Logs",
+ "metaDescription": "See how often bots requested each URL, when it was first and last seen, the average gap between visits and days since the last visit. Free.",
+ "intro": "Ranks URLs by crawler hits and shows first seen, last seen, days since the last visit and the average gap between visits.",
+ "why": "Important pages should be revisited often. Pages that were fetched once and never again may be low value or poorly linked, and pages you changed recently should show recent visits.\n\nThe table is sortable by most crawled, by longest time since the last visit, or by pages crawled only once. Days since the last visit are counted from the newest line in your log, not from today, so an old export still gives meaningful numbers.",
+ "howTo": [
+  "Paste access log lines.",
+  "Choose the bots and whether query strings count as separate URLs.",
+  "Pick an order: most crawled, longest since last visit, or crawled once.",
+  "Open the pages that matter most to you and check how recent their last visit is."
+ ],
+ "faq": [
+  {
+   "q": "What is a good crawl frequency?",
+   "a": "There is no universal number. Compare your key pages with each other and with how often they change."
+  },
+  {
+   "q": "Why group query strings?",
+   "a": "By default they are ignored so that one page is one row. Turn the option on to study parameter URLs."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench."
+  }
+ ],
+ "related": [
+  "googlebot-crawl-budget-analyzer",
+  "uncrawled-sitemap-urls",
+  "sitemap-lastmod-timeline",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer",
+  "fake-googlebot-log-detector"
+ ],
+ "keywords": [
+  "crawl frequency per url",
+  "last crawled date from logs",
+  "how often does googlebot crawl a page",
+  "log file crawl frequency"
+ ]
+}

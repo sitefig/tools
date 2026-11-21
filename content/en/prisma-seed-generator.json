@@ -1,0 +1,43 @@
+{
+ "id": "prisma-seed-generator",
+ "seoTitle": "Free Prisma Seed Script Generator with Faker",
+ "metaDescription": "Paste a Prisma schema and get a prisma/seed.ts using @faker-js/faker, with models seeded in foreign-key order. Free, runs in your browser.",
+ "intro": "Paste your Prisma schema and get a prisma/seed.ts that uses @faker-js/faker. Models are seeded in foreign-key order, relations pick existing rows, and enums and defaults are respected.",
+ "why": "An empty database makes development dull. You cannot see a list view, test pagination or reproduce a bug without data, and writing a seed script for twenty models is a chore. The order matters too, because a post cannot be created before its author exists, and a many-to-many link needs both sides.\n\nThis generator reads the schema and works out the order of models from their relations. It then writes the create calls with suitable faker values and picks existing records for relation fields. You choose how many rows to create and whether to wipe the tables first. Treat the output as a first version and adjust the data to your domain. The schema is processed in your browser, so a private data model is not uploaded.",
+ "howTo": [
+  "Paste your schema.prisma content into the input box.",
+  "Set how many records to create for each model.",
+  "Decide whether the script should wipe existing data first.",
+  "Copy the seed.ts file into your prisma folder and register it in package.json under prisma seed."
+ ],
+ "faq": [
+  {
+   "q": "How does it decide the order of models?",
+   "a": "It follows the required relations. A model that points to another is seeded after it, so foreign keys always refer to rows that already exist. Circular required relations cannot be ordered and need manual handling."
+  },
+  {
+   "q": "Is the wipe option safe?",
+   "a": "It deletes data from your tables before seeding, so only use it against a development database. Check your DATABASE_URL before you run the script, because the tool cannot know which database it will hit."
+  },
+  {
+   "q": "Will it cover unusual field types?",
+   "a": "Common scalar types, enums and defaults are covered. Json fields, unsupported types and complex unique combinations may need hand edits, and unique fields can collide when many rows are generated."
+  }
+ ],
+ "related": [
+  "faker-js-mock-schema-generator",
+  "prisma-schema-generator",
+  "prisma-to-sql",
+  "sql-to-prisma",
+  "mock-data-generator",
+  "json-to-typescript"
+ ],
+ "keywords": [
+  "prisma seed generator",
+  "prisma seed.ts faker",
+  "generate prisma seed script",
+  "prisma schema to seed data",
+  "prisma mock data",
+  "free prisma tool"
+ ]
+}

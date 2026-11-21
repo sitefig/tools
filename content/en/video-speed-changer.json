@@ -1,0 +1,45 @@
+{
+ "id": "video-speed-changer",
+ "seoTitle": "Video Speed Changer: Slow Motion and Time-Lapse in a Browser",
+ "metaDescription": "Make a video slower or faster, from 0.0625x to 16x, with or without audio. Real-time browser recording, no upload.",
+ "intro": "Plays a video faster or slower and records the result. Choose a factor between 0.0625 and 16 and keep or drop the audio.",
+ "why": "Speed change here is done by playing the video at the new rate and recording the screen output. That means the browser limits (0.0625x to 16x) apply, and a clip played at 2x takes half its length to record.\n\nNothing is uploaded. The file is decoded by your browser and re-encoded, so quality drops a little and the result is WebM (or MP4 where your browser can record it). With audio kept, the browser keeps the pitch where it can.",
+ "howTo": [
+  "Choose the video.",
+  "Enter the speed factor. Use 0.25 for slow motion or 8 for time-lapse.",
+  "Choose whether to keep the audio.",
+  "Process and download."
+ ],
+ "faq": [
+  {
+   "q": "Why is the maximum 16x?",
+   "a": "Browsers do not allow a higher playback rate."
+  },
+  {
+   "q": "Is slow motion smooth?",
+   "a": "It repeats frames, it does not invent new ones, so very slow results can look steppy."
+  },
+  {
+   "q": "What about the sound at high speed?",
+   "a": "It may be unclear. Drop the audio for time-lapse."
+  },
+  {
+   "q": "How long does it take?",
+   "a": "The length of the output, because it is recorded as it plays."
+  }
+ ],
+ "related": [
+  "video-trimmer",
+  "video-frame-rate-converter",
+  "video-reverser",
+  "video-looper",
+  "video-to-gif",
+  "audio-trimmer"
+ ],
+ "keywords": [
+  "slow motion video online",
+  "speed up video",
+  "time lapse from video",
+  "change video speed"
+ ]
+}

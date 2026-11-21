@@ -1,0 +1,45 @@
+{
+ "id": "smoking-savings-calculator",
+ "seoTitle": "Quit Smoking Savings Calculator (Money Saved and Milestones)",
+ "metaDescription": "Show the money saved and cigarettes not smoked since your quit date, plus the health milestones the CDC lists, from cigarettes per day and pack price.",
+ "intro": "See the money you saved and the health milestones reached since quitting.",
+ "why": "Enter your quit date, how many cigarettes you smoked a day, the pack price and pack size. The page counts the cigarettes you did not smoke and the money saved, and marks which health milestones from the CDC list you have reached.\n\nThe milestones are measured against continuing to smoke. Savings assume the same price throughout. If you are struggling, a doctor or a national quit line can help.",
+ "howTo": [
+  "Enter the quit date.",
+  "Enter cigarettes per day, pack price and pack size.",
+  "Leave the end date blank to count to today.",
+  "Read the savings and the milestones."
+ ],
+ "faq": [
+  {
+   "q": "Where do the milestones come from?",
+   "a": "From the CDC page on the benefits of quitting smoking. Time points are ranges there, shown as such."
+  },
+  {
+   "q": "Does it store my data?",
+   "a": "No. Nothing is saved. Use the share link of the page if you want to keep the numbers."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "blood-alcohol-content-estimator",
+  "caffeine-intake-calculator",
+  "water-intake",
+  "bmi-calculator",
+  "heart-rate-zones",
+  "sleep-cycle-calculator"
+ ],
+ "keywords": [
+  "quit smoking calculator",
+  "smoking savings",
+  "money saved quitting",
+  "quit smoking milestones"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "color-picker",
+ "seoTitle": "Color Picker: HEX, RGB, HSL and OKLCH Values to Copy",
+ "metaDescription": "Pick a colour or type one and copy it as HEX, RGB, HSL and OKLCH. Free, runs in your browser, nothing is sent.",
+ "intro": "Uses your browser colour picker plus a text field to show one colour in HEX, RGB, HSL and OKLCH, each with a copy button.",
+ "why": "Design tools, CSS and code want different formats. Pick a colour with the native picker, or type any HEX, rgb(), hsl() or oklch() value, and see the others at once.\n\nOKLCH is the format for perceptually even colour work in modern CSS. The numbers come from the Oklab matrices and were checked against the Color Converter on this site.",
+ "howTo": [
+  "Click the colour box and choose a colour, or type a value in the text field.",
+  "Read HEX, RGB, HSL and OKLCH below the swatch.",
+  "Press Copy next to the format you need.",
+  "Use the Color Converter for CMYK or CSS names."
+ ],
+ "faq": [
+  {
+   "q": "Which input formats can I type?",
+   "a": "HEX (3, 4, 6 or 8 digits), rgb(), hsl() and oklch()."
+  },
+  {
+   "q": "Why does OKLCH show a hue for grey?",
+   "a": "For colours with almost no chroma the hue is meaningless, so it shows 0."
+  },
+  {
+   "q": "Can I pick from the screen?",
+   "a": "Not here. Use the Color Picker from Image for an image, or the EyeDropper API in your browser tools."
+  },
+  {
+   "q": "Is my colour stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "color-converter",
+  "css-color-formats",
+  "color-picker-from-image",
+  "contrast-checker",
+  "palette-generator",
+  "color-names-lookup"
+ ],
+ "keywords": [
+  "color picker hex rgb hsl oklch",
+  "online color picker",
+  "colour picker css",
+  "oklch picker"
+ ]
+}

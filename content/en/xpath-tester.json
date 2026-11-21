@@ -1,0 +1,47 @@
+{
+ "id": "xpath-tester",
+ "seoTitle": "Free XPath Tester & Evaluator Online",
+ "metaDescription": "Free online XPath 1.0 tester. Evaluate expressions against your XML with the browser engine and see matched nodes, strings, numbers or booleans.",
+ "intro": "Run an XPath 1.0 expression against XML and see the matching nodes, or the string, number or boolean result. Evaluation uses the XPath engine built into your browser.",
+ "why": "XPath is how you pick elements out of XML in XSLT, test tools, scrapers and many configuration systems. Writing an expression blind and running the whole pipeline to see if it works is slow. A tester gives you an answer in a moment.\n\nPut your XML in one box and the expression in the other. Node results are listed with numbers, attributes show as name and value, and text nodes show their text. Expressions that return a count, a string or a true or false are labelled with their type. Because the browser engine implements XPath 1.0, features from later versions are not available, which is worth remembering if your target uses XPath 2 or 3. Nothing is uploaded.",
+ "howTo": [
+  "Paste your XML into the first box.",
+  "Enter an XPath expression such as //book[@year > 1900]/title/text() in the second box.",
+  "Read the results: a node count with each match, or a typed value.",
+  "Adjust the expression until it selects what you need."
+ ],
+ "faq": [
+  {
+   "q": "Which XPath version is supported?",
+   "a": "XPath 1.0, as implemented by your browser. Functions and syntax that were added in XPath 2.0 and 3.0, such as regular expression functions, are not available."
+  },
+  {
+   "q": "How are results shown?",
+   "a": "Elements are serialised as XML, attributes as name=\"value\" and text nodes as their text. Counts, strings and booleans are shown with a label such as number: 3."
+  },
+  {
+   "q": "Why do I get 0 nodes when I expect a match?",
+   "a": "Common causes are XML namespaces, since a default namespace needs prefix handling in XPath 1.0, a leading slash that anchors at the wrong place, or comparing text with extra whitespace."
+  },
+  {
+   "q": "What if my XML is invalid?",
+   "a": "The tool reports that the XML is not well-formed, with the parser message. An invalid expression gives an XPath error instead."
+  }
+ ],
+ "related": [
+  "xml-validate",
+  "xml-format",
+  "xml-to-json",
+  "jsonpath-tester",
+  "css-selector-tester",
+  "html-tag-stripper"
+ ],
+ "keywords": [
+  "xpath tester",
+  "xpath online",
+  "xpath evaluator",
+  "free xpath tool",
+  "test xpath expression",
+  "xpath query tester"
+ ]
+}

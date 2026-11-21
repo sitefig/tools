@@ -1,0 +1,44 @@
+{
+ "id": "sitemap-limit-checker",
+ "seoTitle": "Sitemap Size and Limit Checker (50,000 URLs, 50 MB)",
+ "metaDescription": "Check a sitemap against the 50,000 URL and 50 MB limits, see the percentage used and how many files you need. Free and private.",
+ "intro": "Counts URLs and bytes in a pasted sitemap and compares them with the protocol limits.",
+ "why": "Search engines stop reading a sitemap that is too big. It is easy to cross a limit without noticing, especially with many long URLs.\n\nThis page shows how close you are to each limit and how many files a split would need. Size is measured on the pasted text, so line endings in the real file can change the number slightly.",
+ "howTo": [
+  "Paste the sitemap XML or a URL list.",
+  "Read the URL count and size against each limit.",
+  "Check the number of files needed.",
+  "If it is over, use the splitter tool."
+ ],
+ "faq": [
+  {
+   "q": "Which limits are used?",
+   "a": "50,000 URLs and 52,428,800 bytes uncompressed, from sitemaps.org."
+  },
+  {
+   "q": "Does gzip help?",
+   "a": "No. The limit is on the uncompressed size."
+  },
+  {
+   "q": "Does it handle sitemap indexes?",
+   "a": "Yes. It counts the sitemaps in the index against the 50,000 sitemap limit."
+  },
+  {
+   "q": "Is my file uploaded?",
+   "a": "No, it is processed in your browser."
+  }
+ ],
+ "related": [
+  "sitemap-index-generator",
+  "sitemap-validator",
+  "sitemap-gz-reader",
+  "sitemap-url-pattern-analyzer",
+  "sitemap-url-extractor"
+ ],
+ "keywords": [
+  "sitemap size limit",
+  "sitemap 50mb",
+  "sitemap url count",
+  "check sitemap limits"
+ ]
+}

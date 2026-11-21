@@ -1,0 +1,38 @@
+{
+ "id": "html-link-auditor",
+ "seoTitle": "HTML Link Auditor: Empty Links, Broken Anchors, nofollow, Anchor Text",
+ "metaDescription": "Paste page HTML and audit every link offline: empty and javascript hrefs, fragments with no target, http on https, _blank rel, nofollow and generic anchors.",
+ "intro": "Audit all links in a page you paste: broken fragments, empty hrefs, insecure links, rel attributes and weak anchor text.",
+ "why": "Link problems hide in plain sight: href=\"#\", javascript: URLs, anchors to ids that no longer exist, http links on https pages, target=_blank without rel, sponsored links without rel, and anchor text such as \"click here\". This auditor parses the pasted HTML, lists each finding with a severity, counts external, nofollow, sponsored and ugc links, flags repeated identical links and groups external domains.\n\nA web page cannot fetch other sites, so it cannot tell whether a target returns 404; that part needs a crawler or the browser extension. Fragment checks only see ids present in the pasted HTML, so paste the whole page. Set the page URL to resolve relative links.",
+ "howTo": [
+  "Paste the page HTML (View source or DevTools > Copy outerHTML).",
+  "Set the page URL so relative links resolve and internal/external is detected.",
+  "Fix the errors first, then warnings."
+ ],
+ "faq": [
+  {
+   "q": "Does it check whether links return 404?",
+   "a": "No. Requests to other sites are blocked for web pages. Use a crawler for status codes."
+  },
+  {
+   "q": "What counts as an error?",
+   "a": "Empty hrefs, javascript: URLs and fragment links with no matching id in the pasted HTML."
+  },
+  {
+   "q": "Is generic anchor text a real problem?",
+   "a": "It weakens context for users, screen readers and search engines; descriptive anchors are better."
+  }
+ ],
+ "related": [
+  "internal-link-extractor",
+  "anchor-text-distribution",
+  "html-url-extractor",
+  "redirect-chain-analyzer",
+  "html-link-generator"
+ ],
+ "keywords": [
+  "link checker html",
+  "audit anchor tags",
+  "broken fragment links"
+ ]
+}

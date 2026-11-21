@@ -1,0 +1,45 @@
+{
+ "id": "disposable-email-detector",
+ "seoTitle": "Disposable Email Detector: Flag Throwaway Domains",
+ "metaDescription": "Check email addresses against a built-in list of well-known disposable providers like mailinator.com and yopmail.com. Free, private, runs in your browser.",
+ "intro": "Paste addresses to see which use a known throwaway email provider.",
+ "why": "Disposable addresses sign up for a free offer, then vanish. They inflate list size, bounce later and skew your numbers. Flagging them before import lets you decide what to do.\n\nThe list is short, written from general knowledge, and not checked against a published list. New throwaway domains appear every day, so \"ok\" never means the address is real. For stronger checks you need a maintained list and a server.",
+ "howTo": [
+  "Paste the addresses.",
+  "Read which are marked DISPOSABLE.",
+  "Remove or review those entries.",
+  "Use a confirmation email for the rest."
+ ],
+ "faq": [
+  {
+   "q": "How many domains are in the list?",
+   "a": "About 75 well-known ones. It is not complete."
+  },
+  {
+   "q": "Can it catch subdomains?",
+   "a": "Yes, a subdomain of a listed domain is flagged."
+  },
+  {
+   "q": "Does ok mean valid?",
+   "a": "No."
+  },
+  {
+   "q": "Is the list uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "email-validator",
+  "email-list-cleaner",
+  "email-domain-typo-fixer",
+  "test-email-generator",
+  "html-email-extractor",
+  "fake-person-generator"
+ ],
+ "keywords": [
+  "disposable email detector",
+  "temporary email checker",
+  "throwaway email domains",
+  "mailinator check"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "eu-distance-selling-threshold-tracker",
+ "seoTitle": "EU Distance Selling Threshold Tracker (EUR 10,000)",
+ "metaDescription": "Track cross-border B2C sales against the EUR 10,000 EU threshold and see headroom and the month you pass it.",
+ "intro": "Running total of cross-border consumer sales against the Union-wide threshold.",
+ "why": "Article 59c of the VAT Directive lets small sellers charge their home VAT on cross-border B2C sales until the total passes EUR 10,000 across all other member states, this year or last year. After that, destination VAT applies.\n\nEnter monthly sales excluding VAT. The tool shows the running total, headroom and the month you cross the limit. Check national rules on the exact moment.",
+ "howTo": [
+  "Enter monthly sales to other EU countries, January first.",
+  "Tick if you exceeded the threshold last year.",
+  "Read headroom and the crossing month."
+ ],
+ "faq": [
+  {
+   "q": "Is the threshold per country?",
+   "a": "No. It is one EUR 10,000 total for all other member states together."
+  },
+  {
+   "q": "Can I opt out?",
+   "a": "The directive lets you opt for destination rules from the start."
+  },
+  {
+   "q": "Does it cover services?",
+   "a": "It covers goods and telecom, broadcasting and electronic services under that article."
+  }
+ ],
+ "related": [
+  "oss-vat-calculator",
+  "eu-vat-rates-lookup",
+  "reverse-charge-checker",
+  "vat-calculator",
+  "vat-return-summary-builder",
+  "eu-invoice-requirements-checker"
+ ],
+ "keywords": [
+  "distance selling threshold",
+  "EUR 10000 VAT threshold",
+  "OSS threshold"
+ ]
+}

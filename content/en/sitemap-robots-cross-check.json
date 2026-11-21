@@ -1,0 +1,44 @@
+{
+ "id": "sitemap-robots-cross-check",
+ "seoTitle": "Sitemap vs robots.txt Cross-Check: Blocked URLs",
+ "metaDescription": "Paste a sitemap and robots.txt to list sitemap URLs blocked for a crawler and the rule that blocks each. Free, local.",
+ "intro": "Finds sitemap URLs that robots.txt blocks for the crawler you choose.",
+ "why": "A URL in the sitemap that robots.txt blocks sends mixed signals. The crawler cannot read the page, yet you asked it to.\n\nThe tool applies the usual matching: the most specific user-agent group, the longest matching path, Allow winning a tie, and * and $ patterns. It matches the path and query only, not the host.",
+ "howTo": [
+  "Paste the sitemap or URL list.",
+  "Paste robots.txt.",
+  "Set the crawler name, such as Googlebot.",
+  "Review the blocked URLs and rules."
+ ],
+ "faq": [
+  {
+   "q": "Which crawler should I test?",
+   "a": "Start with Googlebot and test others you care about."
+  },
+  {
+   "q": "Is the host checked?",
+   "a": "No. robots.txt applies per host, so paste the matching one."
+  },
+  {
+   "q": "What if a URL is blocked on purpose?",
+   "a": "Remove it from the sitemap."
+  },
+  {
+   "q": "Is this exact?",
+   "a": "It follows the common rules but a live fetch is the final test."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "robots-generator",
+  "seo-robots-noindex-simulator",
+  "sitemap-validator",
+  "sitemap-noncanonical-finder"
+ ],
+ "keywords": [
+  "sitemap blocked by robots",
+  "robots.txt sitemap check",
+  "blocked sitemap urls",
+  "submitted url blocked"
+ ]
+}

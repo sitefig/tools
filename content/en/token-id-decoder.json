@@ -1,0 +1,46 @@
+{
+  "id": "token-id-decoder",
+  "seoTitle": "Free Token ID Decoder and Encoder for tiktoken",
+  "metaDescription": "Turn OpenAI token ids back into text, or text into token ids, using the exact cl100k_base and o200k_base vocabularies. Free, in your browser.",
+  "intro": "Converts a list of token ids into the text they represent, or converts text into its token ids. It uses the exact cl100k_base and o200k_base vocabularies.",
+  "why": "Token ids show up in logs, in logit bias settings, in logprobs output and in debugging sessions, and on their own they are meaningless numbers. When a model returns [9906, 11, 1917] you want to know it says \"Hello, world\" without writing a script to find out.\n\nPaste the ids, in brackets or separated by commas or spaces, and the decoder shows the text. Switch direction to get the ids for a phrase, which is the lookup you need when setting a logit bias. If the ids cut through a multi-byte character, the tool notes that some bytes could not be shown as text. The vocabulary loads from this site and everything is decoded in your browser. Only OpenAI encodings are included.",
+  "howTo": [
+    "Choose the encoding: cl100k_base or o200k_base.",
+    "Pick a direction: ids-to-text or text-to-ids.",
+    "Paste the ids or the text. Tick the special-tokens option for text with special markers.",
+    "Copy the decoded text or the list of ids."
+  ],
+  "faq": [
+    {
+      "q": "In what format should I enter ids?",
+      "a": "Any list of whole numbers separated by commas, spaces, semicolons or line breaks. Square brackets are ignored. A value that is not a number produces an error that names it."
+    },
+    {
+      "q": "Why does the output end with a note about bytes?",
+      "a": "Tokens are pieces of UTF-8 bytes, not characters. If your list starts or ends in the middle of a multi-byte character, such as an emoji, the bytes cannot form valid text, and the note explains the odd symbols."
+    },
+    {
+      "q": "Are ids the same across models?",
+      "a": "No. Each encoding has its own numbering. The same id means different text in cl100k_base and o200k_base, so always pick the encoding that matches the model you used."
+    },
+    {
+      "q": "What happens with an unknown id?",
+      "a": "An id beyond the vocabulary raises an error saying the id is unknown for that encoding, rather than guessing. Check that you picked the correct encoding."
+    }
+  ],
+  "related": [
+    "token-ids-to-text-multi",
+    "tiktoken-visualizer",
+    "gpt-token-counter",
+    "token-truncate",
+    "base64-decode",
+    "utf8-bytes-viewer"
+  ],
+  "keywords": [
+    "token id decoder",
+    "tiktoken decode ids to text",
+    "text to token ids",
+    "logit bias token ids",
+    "free tiktoken encoder"
+  ]
+}

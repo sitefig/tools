@@ -1,0 +1,45 @@
+{
+ "id": "zod-to-typescript-type",
+ "seoTitle": "Free Zod Schema to TypeScript Type Converter",
+ "metaDescription": "Convert Zod schema source into the TypeScript types z.infer would produce, without running code. Supports objects, enums, unions, arrays. Free.",
+ "intro": "Statically converts Zod schema source into the equivalent TypeScript types, the same ones z.infer would give you, without executing any code.",
+ "why": "Sometimes you want the type behind a Zod schema written out in plain TypeScript: for a shared types package, a generated d.ts, documentation, or a service that does not install Zod. Hovering in your editor shows the inferred type but does not let you copy it cleanly. Paste the schema source here and the tool reads the z.object, z.enum, z.union, z.array and similar calls, applies optional, nullable and nullish, follows extend and merge, and prints interfaces and types. The code is parsed as text and never run. Results are limited where the output type cannot be known from the source, such as .transform() results and custom refinements. Everything stays in your browser.",
+ "howTo": [
+  "Paste the Zod schema source, including the z.object declarations, into the input box.",
+  "Run the conversion to see the TypeScript types.",
+  "Copy the types, and check any field the tool marks as unknown."
+ ],
+ "faq": [
+  {
+   "q": "Does it execute my schema code?",
+   "a": "No. It parses the text only. That is why dynamic code and imported schemas from other files cannot be resolved."
+  },
+  {
+   "q": "Which Zod features are covered?",
+   "a": "Primitives, objects, arrays, tuples, records, enums, unions, optional, nullable, nullish, default, extend, merge, and describe. String checks such as min or email do not change the type."
+  },
+  {
+   "q": "What about transform and refine?",
+   "a": ".transform() changes the output type in ways that cannot be worked out from the source, so such fields are not inferred accurately. Refinements do not change the type."
+  },
+  {
+   "q": "Why does a referenced schema show as unknown?",
+   "a": "If a schema is imported from another file, the tool cannot see its definition. Paste it in alongside the schema that uses it."
+  }
+ ],
+ "related": [
+  "typescript-interface-to-zod",
+  "json-schema-to-zod",
+  "zod-to-json-schema",
+  "typescript-to-json-schema",
+  "json-to-typescript",
+  "graphql-to-typescript"
+ ],
+ "keywords": [
+  "zod to typescript",
+  "z.infer to type",
+  "convert zod schema to ts interface",
+  "free zod type extractor",
+  "zod schema to type definition"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "saas-metrics-calculator",
+ "seoTitle": "SaaS Metrics Calculator: ARPU, LTV, CAC and Payback",
+ "metaDescription": "Combine MRR, churn, gross margin and acquisition spend into ARPU, LTV, CAC, CAC payback and LTV to CAC ratio.",
+ "intro": "Calculates the core SaaS unit metrics from one month of figures.",
+ "why": "These metrics depend on each other: LTV uses ARPU, gross margin and churn, and CAC comes from spend over new customers. Seeing them side by side shows whether growth pays for itself.\n\nOne month of data is noisy, so use several months. The 3 to 1 ratio and the payback rule are common rules of thumb, not laws, and the tool says so when it flags a result.",
+ "howTo": [
+  "Enter MRR, customers, lost and new customers.",
+  "Enter sales and marketing spend and gross margin.",
+  "Read ARPU, LTV, CAC, payback and LTV to CAC."
+ ],
+ "faq": [
+  {
+   "q": "How is LTV computed?",
+   "a": "ARPU times gross margin divided by monthly churn."
+  },
+  {
+   "q": "What is CAC payback?",
+   "a": "Months of gross profit per customer needed to repay CAC."
+  },
+  {
+   "q": "Is 3 to 1 required?",
+   "a": "No. It is a rule of thumb."
+  }
+ ],
+ "related": [
+  "mrr-arr-calculator",
+  "churn-rate-calculator",
+  "rule-of-40-calculator",
+  "retention-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "saas metrics calculator",
+  "ltv cac ratio",
+  "cac payback"
+ ]
+}

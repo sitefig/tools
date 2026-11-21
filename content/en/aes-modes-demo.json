@@ -1,0 +1,47 @@
+{
+ "id": "aes-modes-demo",
+ "seoTitle": "Free AES CBC, CTR, GCM & ECB Demo Online",
+ "metaDescription": "Free educational AES demo for CBC, CTR, GCM and ECB. Encrypt or decrypt with hex keys and IVs in your browser and see why ECB leaks patterns.",
+ "intro": "Encrypt or decrypt text with AES in CBC, CTR, GCM or ECB mode using hex keys and IVs. It is a teaching tool for seeing how modes differ, not an encryption product.",
+ "why": "Most people meet AES through a library call and never see how the mode changes the result. This demo lets you flip between CBC, CTR, GCM and ECB with the same key and watch what happens. Encrypt a repeated sentence in ECB and you can see identical blocks produce identical ciphertext, which is exactly why ECB is a bad choice.\n\nIt is also handy when an integration test fails and you need to know whether the key, the IV or the padding is at fault. Encryption uses the browser's WebCrypto, and nothing is uploaded. Treat it as a classroom and debugging aid: it does not manage keys, and reusing an IV with one key breaks the security of CTR and GCM.",
+ "howTo": [
+  "Pick a mode (CBC, CTR, GCM or ECB) and a direction, encrypt or decrypt.",
+  "Enter a 16, 24 or 32-byte key as hex, plus the IV or counter block as hex.",
+  "Paste the plaintext, or the ciphertext in hex or base64 when decrypting.",
+  "Set the plaintext and ciphertext formats, then copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Why is ECB included if it is insecure?",
+   "a": "It is there to show the problem. Equal plaintext blocks give equal ciphertext blocks, so patterns survive encryption. Encrypt a repeated sentence in ECB and in CBC and compare the two outputs."
+  },
+  {
+   "q": "How long must the IV be?",
+   "a": "CBC and CTR need a 16-byte value (32 hex characters). GCM needs a 12-byte IV (24 hex characters). ECB ignores the IV. The tool shows an error that names the expected length when it is wrong."
+  },
+  {
+   "q": "How does GCM output look?",
+   "a": "The result is the ciphertext followed by the 16-byte authentication tag. When decrypting, the whole value is checked and a wrong key, IV, additional data or changed byte reports a failure instead of plaintext."
+  },
+  {
+   "q": "Is this safe for real secrets?",
+   "a": "No. It is educational only. Never reuse an IV or nonce with the same key, and do not paste production keys into any page you do not control. Use an audited tool for real encryption."
+  }
+ ],
+ "related": [
+  "chacha20-poly1305",
+  "aes-encrypt",
+  "aes-decrypt",
+  "hex-text",
+  "base64-encode",
+  "pbkdf2-key-derivation"
+ ],
+ "keywords": [
+  "aes encryption demo",
+  "aes cbc online",
+  "aes gcm online tester",
+  "aes ecb pattern demo",
+  "free aes calculator",
+  "aes ctr mode online"
+ ]
+}

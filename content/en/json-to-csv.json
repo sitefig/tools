@@ -1,0 +1,47 @@
+{
+ "id": "json-to-csv",
+ "seoTitle": "Free JSON to CSV Converter Online",
+ "metaDescription": "Free online JSON to CSV converter. Turn an array of objects into CSV, flatten nested values into dotted columns and pick your delimiter. Runs locally.",
+ "intro": "Convert an array of JSON objects into CSV for spreadsheets. Nested objects can be flattened into dotted column names, and you choose comma, semicolon, tab or pipe as delimiter.",
+ "why": "APIs return JSON, but analysts, accountants and support teams want rows and columns. Getting from one to the other usually means a script or a spreadsheet import wizard that mangles nested fields. This tool does the common case in one step.\n\nEach object in the array becomes a row, and the columns are the union of all keys found. With flattening on, a nested value such as address.city becomes its own column, which keeps the data readable in Excel or Google Sheets. Values with commas, quotes or line breaks are quoted correctly. A single object is treated as a one-row array. Conversion happens in your browser, so exported customer data stays on your machine.",
+ "howTo": [
+  "Paste a JSON array of objects into the input.",
+  "Choose the delimiter: comma, semicolon, tab or pipe.",
+  "Keep Flatten nested ticked for dotted columns, or untick it to keep nested values as JSON text.",
+  "Copy the CSV or paste it into a spreadsheet."
+ ],
+ "faq": [
+  {
+   "q": "What happens to nested objects and arrays?",
+   "a": "With flattening on, nested keys become dotted columns such as address.geo.lat, and array items get numbered columns like tags.0. With it off, nested values are written as JSON text in one cell."
+  },
+  {
+   "q": "What if objects have different keys?",
+   "a": "The header contains every key found in any row, in the order first seen. A row missing a key gets an empty cell in that column."
+  },
+  {
+   "q": "Are commas and quotes inside values handled?",
+   "a": "Yes. Cells containing the delimiter, quotes, line breaks or leading and trailing spaces are wrapped in quotes, and inner quotes are doubled, as in standard CSV."
+  },
+  {
+   "q": "Which delimiter should I use for Excel?",
+   "a": "In many European locales Excel expects a semicolon. If a comma-separated file opens in one column, convert again with the semicolon delimiter."
+  }
+ ],
+ "related": [
+  "csv-to-json",
+  "json-flatten-unflatten",
+  "json-to-xlsx",
+  "csv-viewer",
+  "json-format",
+  "json-to-sql"
+ ],
+ "keywords": [
+  "json to csv converter",
+  "convert json to csv online",
+  "json to excel csv",
+  "free json to csv",
+  "flatten json to csv",
+  "json array to csv"
+ ]
+}

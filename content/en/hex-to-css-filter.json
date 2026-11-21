@@ -1,0 +1,41 @@
+{
+ "id": "hex-to-css-filter",
+ "seoTitle": "Hex Color to CSS Filter: Recolor Black Icons | Free",
+ "metaDescription": "Turn a hex colour into an invert, sepia, saturate, hue-rotate chain that recolours black icons, with the match error shown. Runs in your browser.",
+ "intro": "Searches for a CSS filter chain that turns a black image or icon into your target colour and reports how close the result is.",
+ "why": "You cannot set the fill of an img or a CSS background icon with a colour value, but you can change its pixels with filter. Starting from black, a chain of invert, sepia, saturate, hue-rotate, brightness and contrast can reach most colours.\n\nThe tool uses the colour matrices from the CSS Filter Effects spec and a fixed-seed search, so the same colour always gives the same answer. It shows the colour the chain really produces and the largest channel error, so you see when a match is only rough. I checked five colours against Chrome canvas filters and they were within 3 of 255 per channel.",
+ "howTo": [
+  "Enter a hex colour such as #1d4ed8.",
+  "Read the filter line and the colour it actually produces.",
+  "Apply the filter to a black image or icon.",
+  "Copy it into your CSS."
+ ],
+ "faq": [
+  {
+   "q": "Does it work on non-black images?",
+   "a": "No. The chain is solved starting from pure black. For other colours, use an SVG with currentColor instead."
+  },
+  {
+   "q": "Why is the match not exact?",
+   "a": "The search is approximate and values are rounded to whole numbers. The error is shown so you can judge."
+  },
+  {
+   "q": "Will it look the same in every browser?",
+   "a": "Filters are specified, but small rendering differences exist. Check on your target browsers."
+  }
+ ],
+ "related": [
+  "css-filter-generator",
+  "palette-generator",
+  "color-converter",
+  "css-unit-converter",
+  "svg-to-css",
+  "box-shadow-generator"
+ ],
+ "keywords": [
+  "hex to css filter",
+  "recolor svg icon css",
+  "css filter color generator",
+  "invert sepia hue-rotate"
+ ]
+}

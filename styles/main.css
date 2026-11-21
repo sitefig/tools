@@ -1,0 +1,29 @@
+/* CUBE CSS: composition, utility, block, exception. Layer order is the cascade. */
+@layer theme, reset, tokens, global, compositions, utilities, blocks, exceptions;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(reset);
+@import "tailwindcss/utilities.css" layer(utilities) source(none);
+@import "./tokens.css" layer(tokens);
+@import "./global.css" layer(global);
+@import "./compositions.css" layer(compositions);
+@import "./blocks.css" layer(blocks);
+@import "./exceptions.css" layer(exceptions);
+
+@source "../scripts/*.mjs";
+@source "../src/*.js";
+
+/* Expose the design tokens as Tailwind utilities (text-muted, bg-surface, p-s, ...). */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-danger: var(--danger);
+  --color-border: var(--border);
+  --text-s: var(--step--1);
+  --text-m: var(--step-0);
+  --text-l: var(--step-1);
+  --text-xl: var(--step-2);
+}

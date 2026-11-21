@@ -1,0 +1,45 @@
+{
+  "id": "keyword-cannibalization-detector",
+  "seoTitle": "Keyword Cannibalization Checker for Search Console",
+  "metaDescription": "Paste a Search Console query and page export to find queries where several of your URLs compete, with the page that should win. Runs locally.",
+  "intro": "Find queries where more than one of your pages shows up in search results, see how clicks and impressions split between them, and get a suggested primary page for each.",
+  "why": "Export the Performance report with both Queries and Pages dimensions (or build a CSV with query, page, clicks, impressions and optionally position). The tool groups rows by query, ignores pages below a minimum number of impressions and lists the competing URLs ordered by clicks.\n\nSeveral URLs for one query is a prompt to investigate, not always a problem: a guide and a category page can both legitimately rank. Look for cases where the split is close, positions swap week to week, or a weak page outranks the one you want. Then merge, canonicalise, redirect or give each page a distinct intent.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "In Search Console, export queries with pages (or use the API) as CSV.",
+    "Paste the CSV; the header needs query, page and impressions columns.",
+    "Set the minimum impressions to ignore noise.",
+    "Review each query and decide whether to consolidate or differentiate."
+  ],
+  "faq": [
+    {
+      "q": "Does cannibalization always hurt?",
+      "a": "No. Two different result types for one query can both help you. It hurts when the pages are near-duplicates, swap places in rankings, or split links and signals."
+    },
+    {
+      "q": "What should I do about a conflict?",
+      "a": "Merge the pages and 301 the weaker one, point a canonical at the primary page, or rewrite the weaker page for a different intent and update internal links."
+    },
+    {
+      "q": "Which columns are required?",
+      "a": "query (or keyword), page (or url) and impressions. Clicks and position make the report more useful."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "branded-query-splitter",
+    "traffic-drop-analyzer",
+    "keyword-intent-classifier",
+    "keyword-clusterer",
+    "seo-inspector",
+    "canonical-generator"
+  ],
+  "keywords": [
+    "keyword cannibalization",
+    "search console cannibalization",
+    "duplicate ranking pages",
+    "seo audit csv"
+  ]
+}

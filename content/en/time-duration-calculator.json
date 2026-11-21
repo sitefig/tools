@@ -1,0 +1,45 @@
+{
+ "id": "time-duration-calculator",
+ "seoTitle": "Free Time Duration Calculator: Add, Subtract, Average",
+ "metaDescription": "Add, subtract or average durations written as 1h 30m, 90 min or 01:30:45 and see the total in days, hours, minutes and seconds. Free, in-browser.",
+ "intro": "Enter durations in many styles, such as 1h 30m, 2d 4h or 01:30:45, and add them up, subtract them or average them, with the total shown in every unit.",
+ "why": "Adding up hours worked, video lengths, build times or task estimates by hand gets messy when they are written in different styles: one in hours and minutes, another as a clock time, another in minutes only. Spreadsheets handle times badly once totals pass 24 hours.\n\nThis calculator reads each line in the form you wrote it, understands units from milliseconds to weeks, and accepts clock style like 1:30:00. A leading minus subtracts in sum mode. It can also take the first duration minus the rest, or compute the average. The result appears as a readable breakdown, a clock value and totals in days, hours, minutes, seconds and milliseconds. It is for durations, not calendar dates.",
+ "howTo": [
+  "Enter one duration per line, in any supported style.",
+  "Choose sum, first minus rest or average, and what a bare number means.",
+  "Read the total and the conversions in each unit."
+ ],
+ "faq": [
+  {
+   "q": "How is 1:30 interpreted?",
+   "a": "As 1 minute 30 seconds. Three parts, such as 1:30:00, mean hours, minutes and seconds. Write 1h 30m if you mean an hour and a half."
+  },
+  {
+   "q": "Which units are understood?",
+   "a": "ms, s, sec, m, min, h, hr, d, day, w and week, in singular or plural forms and with or without spaces, for example 2 hours, 30 minutes."
+  },
+  {
+   "q": "How are negative values treated?",
+   "a": "A minus sign in front of a line subtracts it in sum mode. In first minus rest mode, all later lines are subtracted whatever their sign."
+  },
+  {
+   "q": "Does it account for months or daylight saving?",
+   "a": "No. A day is exactly 24 hours and months are not offered. For calendar arithmetic, use a date difference tool."
+  }
+ ],
+ "related": [
+  "date-difference",
+  "add-subtract-dates",
+  "stopwatch",
+  "countdown-timer",
+  "timestamp-converter",
+  "business-days"
+ ],
+ "keywords": [
+  "time duration calculator",
+  "add hours and minutes",
+  "sum time durations",
+  "free time adder",
+  "average duration calculator"
+ ]
+}

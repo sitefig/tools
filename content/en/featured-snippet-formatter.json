@@ -1,0 +1,45 @@
+{
+ "id": "featured-snippet-formatter",
+ "seoTitle": "Featured Snippet Formatter: Paragraph, List or Table Answers",
+ "metaDescription": "Reshape an answer into a short paragraph, list or table with clean HTML under a question heading, and check the length against rules of thumb.",
+ "intro": "Takes your answer and gives you a trimmed paragraph, an ordered or bulleted list or a table as HTML under a question heading, with notes on length.",
+ "why": "Featured snippets quote a short direct answer, a list or a table. Writing the answer in that shape right under a clear question heading makes it easy for a search engine to use.\n\nGoogle decides what to show, and nothing here guarantees a snippet. The length guidance (about 40 to 60 words for a paragraph, 3 to 8 items for a list) is a common rule of thumb, not a Google rule.",
+ "howTo": [
+  "Type the question that the answer responds to.",
+  "Paste your answer as text, as list lines or as table rows.",
+  "Pick a format or leave it on auto.",
+  "Copy the HTML into your page, directly under the heading."
+ ],
+ "faq": [
+  {
+   "q": "How does auto detect the format?",
+   "a": "Lines with bullet or number markers become a list, consistent tab, pipe or comma columns become a table, otherwise a paragraph."
+  },
+  {
+   "q": "Is the 40 to 60 words rule official?",
+   "a": "No. It is a widely used guideline."
+  },
+  {
+   "q": "Should the answer repeat the question?",
+   "a": "A clear first sentence that restates the subject works well."
+  },
+  {
+   "q": "Do I need schema markup?",
+   "a": "No. Featured snippets use the visible page content."
+  }
+ ],
+ "related": [
+  "geo-readiness-checker",
+  "question-keyword-extractor",
+  "serp-snippet",
+  "schema-generator",
+  "content-brief-builder",
+  "html-to-markdown"
+ ],
+ "keywords": [
+  "featured snippet formatter",
+  "paragraph snippet length",
+  "snippet list format",
+  "position zero answer"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "ssh-key-fingerprint",
+ "seoTitle": "Free SSH Public Key Fingerprint Calculator",
+ "metaDescription": "Get the SHA256 and MD5 fingerprints, key type and size of SSH public keys from authorized_keys, .pub or known_hosts lines. Free, in your browser.",
+ "intro": "Paste public key lines from authorized_keys, a .pub file or known_hosts. The tool prints the key type, size, the SHA256 fingerprint and the legacy MD5 fingerprint.",
+ "why": "When a server asks you to confirm a host key, or an admin sends you a fingerprint to compare, you need to produce the same fingerprint from a key you have. ssh-keygen -lf does it, but you may be on a machine without it, or want to check many lines from an authorized_keys file at once. This tool takes the lines, finds the key type and base64 blob even when options or host names come first, and prints the SHA256 fingerprint in the format OpenSSH shows, the older MD5 colon-separated form and the key size where it can work it out. It only handles public keys. Never paste a private key into a web page, and remember that matching fingerprints is a check, not proof of identity.",
+ "howTo": [
+  "Paste one or more public key lines.",
+  "Run the tool.",
+  "Compare the SHA256 or MD5 fingerprint with the value you were given."
+ ],
+ "faq": [
+  {
+   "q": "Which fingerprint format should I compare?",
+   "a": "Modern OpenSSH shows SHA256:base64 values. The colon-separated MD5 form is the older style, still shown by some tools and older documentation. Compare like with like."
+  },
+  {
+   "q": "Does it work with known_hosts lines?",
+   "a": "Yes. Host names before the key are shown. Hashed host entries are accepted too, but they appear as the hash, because the real host name cannot be recovered from it."
+  },
+  {
+   "q": "Can I paste a private key?",
+   "a": "No, and you should not. Only public keys are needed and only they are parsed. Pasting a private key into any web page risks exposing it."
+  },
+  {
+   "q": "Does the same key give the same fingerprint everywhere?",
+   "a": "Yes, the fingerprint is a hash of the key blob, so comments and options on the line do not change it. If it differs, the key is different."
+  }
+ ],
+ "related": [
+  "ssh-key-inspector",
+  "openpgp-inspector",
+  "ed25519-key-generator",
+  "rsa-key-pair-generator",
+  "x509-viewer",
+  "hash-generator"
+ ],
+ "keywords": [
+  "ssh key fingerprint",
+  "ssh fingerprint calculator",
+  "free ssh public key tool",
+  "sha256 ssh fingerprint",
+  "authorized_keys fingerprint",
+  "ssh-keygen -lf online"
+ ]
+}

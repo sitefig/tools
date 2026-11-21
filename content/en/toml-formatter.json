@@ -1,0 +1,47 @@
+{
+ "id": "toml-formatter",
+ "seoTitle": "Free TOML Formatter & Key Sorter Online",
+ "metaDescription": "Free online TOML formatter. Normalise key = value spacing, add blank lines before tables, fix array indentation and optionally sort keys.",
+ "intro": "Tidy a TOML file by normalising spacing around equals signs, adding blank lines before tables, re-indenting arrays and optionally sorting keys inside each table.",
+ "why": "TOML is meant to be readable, but hand-edited files drift: some keys have no spaces around the equals sign, tables run together, and arrays are broken over lines in several styles. In files like Cargo.toml or pyproject.toml this makes diffs noisy.\n\nThis formatter works on the text, so your comments, including trailing ones, are kept. It sets key = value spacing, separates tables and arrays of tables with a blank line and indents multi-line arrays consistently. Multi-line strings are left exactly as written. The optional sort puts keys in alphabetical order within each table, which is useful for dependency lists, though it can also move keys you grouped on purpose. It does not validate TOML, so use the TOML to JSON tool to check. Nothing is uploaded.",
+ "howTo": [
+  "Paste your TOML into the input box.",
+  "Tick Sort keys within each table if you want alphabetical order.",
+  "Check the output, especially tables and arrays.",
+  "Copy the result, or convert to JSON to confirm the file still parses."
+ ],
+ "faq": [
+  {
+   "q": "Are comments preserved?",
+   "a": "Yes, including comments after values on the same line. The formatter only changes whitespace and blank lines, never the content of keys, values or comments."
+  },
+  {
+   "q": "Should I sort keys?",
+   "a": "Sorting suits long lists such as dependencies. Leave it off when the order carries meaning to readers, such as name and version at the top of a package table."
+  },
+  {
+   "q": "Does it check my TOML is valid?",
+   "a": "No. For a validity check, paste the file into the TOML to JSON converter, which reports errors with a line number."
+  },
+  {
+   "q": "What happens to multi-line strings?",
+   "a": "Multi-line strings keep their content and line breaks exactly as written, so text inside triple quotes is never re-indented or trimmed by the formatter."
+  }
+ ],
+ "related": [
+  "toml-to-json",
+  "json-to-toml",
+  "yaml-format",
+  "package-json-formatter",
+  "tsconfig-generator",
+  "editorconfig-generator"
+ ],
+ "keywords": [
+  "toml formatter",
+  "format toml online",
+  "toml beautifier",
+  "free toml formatter",
+  "sort toml keys",
+  "cargo toml formatter"
+ ]
+}

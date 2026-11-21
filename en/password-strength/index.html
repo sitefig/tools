@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Password Strength Checker with Crack Times | Free Tools</title>
+<meta name="description" content="Check a password for entropy, common patterns and estimated crack times, all in your browser. Free; the password is never uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/password-strength/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/password-strength/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/password-strength/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Password Strength Checker with Crack Times | Free Tools">
+<meta property="og:description" content="Check a password for entropy, common patterns and estimated crack times, all in your browser. Free; the password is never uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/password-strength/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Password Strength Checker with Crack Times | Free Tools">
+<meta name="twitter:description" content="Check a password for entropy, common patterns and estimated crack times, all in your browser. Free; the password is never uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Password Strength Checker","url":"https://tools.sitefig.net/en/password-strength/","description":"Check a password for entropy, common patterns and estimated crack times, all in your browser. Free; the password is never uploaded.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Type or paste a password into the box.","Run the tool to see the verdict and entropy.","Read the list of patterns found and the crack-time table.","Follow the advice shown, or generate a stronger password with the generator."],"keywords":"password strength checker, how strong is my password, password entropy calculator, password crack time, check password strength offline","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Privacy – Secrets","item":"https://tools.sitefig.net/en/#privacy-secrets"},{"@type":"ListItem","position":3,"name":"Password Strength Checker","item":"https://tools.sitefig.net/en/password-strength/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is my password sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The analysis runs in your browser and nothing is uploaded. Even so, prefer testing a similar password rather than one you use for a real account, in case of browser extensions or shared devices."}},{"@type":"Question","name":"How accurate are the crack-time estimates?","acceptedAnswer":{"@type":"Answer","text":"They are rough. They assume average-case guessing at fixed speeds, and real attackers depend on the hashing method used by the site. Treat them as a comparison between passwords, not a guarantee."}},{"@type":"Question","name":"Why did a long password score badly?","acceptedAnswer":{"@type":"Answer","text":"Patterns reduce entropy. A long phrase made of common words, a keyboard walk or repeated blocks is far easier to guess than random characters of the same length."}},{"@type":"Question","name":"What is a good score?","acceptedAnswer":{"@type":"Answer","text":"Aim for the Strong or Very strong verdict, roughly 60 bits or more after pattern analysis. For important accounts use a random password from a manager and turn on two-factor authentication."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#privacy-secrets">Privacy – Secrets</a></li><li><span aria-current="page">Password Strength Checker</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Password Strength Checker</h1>
+<p class="lede">Paste a password to see its estimated entropy, the weak patterns found in it and how long different attackers would need. Everything is calculated on this page.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="password-strength" data-module="privacy" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A password that looks complicated can still be weak. Substituting @ for a, adding 1! to a dictionary word or walking across the keyboard are patterns that cracking tools try first. A simple length-and-symbols rule does not catch them.</p>
+<p>This checker compares your password against common-password lists, l33t substitutions, keyboard walks, sequences and repeats, then estimates entropy after those patterns are taken into account. It shows crack-time estimates for several attack speeds, from a throttled online login to a large offline cluster. Use it to learn why a password is weak, not as a certificate. The figures are heuristic estimates, and you should still avoid pasting a live password into any page you do not trust.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Type or paste a password into the box.</li><li>Run the tool to see the verdict and entropy.</li><li>Read the list of patterns found and the crack-time table.</li><li>Follow the advice shown, or generate a stronger password with the generator.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Is my password sent anywhere?</summary><p>No. The analysis runs in your browser and nothing is uploaded. Even so, prefer testing a similar password rather than one you use for a real account, in case of browser extensions or shared devices.</p></details>
+<details><summary>How accurate are the crack-time estimates?</summary><p>They are rough. They assume average-case guessing at fixed speeds, and real attackers depend on the hashing method used by the site. Treat them as a comparison between passwords, not a guarantee.</p></details>
+<details><summary>Why did a long password score badly?</summary><p>Patterns reduce entropy. A long phrase made of common words, a keyboard walk or repeated blocks is far easier to guess than random characters of the same length.</p></details>
+<details><summary>What is a good score?</summary><p>Aim for the Strong or Very strong verdict, roughly 60 bits or more after pattern analysis. For important accounts use a random password from a manager and turn on two-factor authentication.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/password-generator/"><span class="link-card__title">Password Generator</span><span class="link-card__desc">Cryptographically random passwords (crypto.getRandomValues, no modulo bias). Guarantees each selected class appears.</span></a></li><li><a class="link-card" href="/en/passphrase-generator/"><span class="link-card__title">Passphrase Generator</span><span class="link-card__desc">Pronounceable syllable-based passphrases from crypto.getRandomValues. Entropy is computed exactly from the syllable space.</span></a></li><li><a class="link-card" href="/en/bcrypt-generator/"><span class="link-card__title">Bcrypt Hash Generator</span><span class="link-card__desc">Hash passwords with bcrypt ($2a/$2b, cost 4-14) entirely in your browser. One password per line. Only the first 72 bytes count (bcrypt limit). Cost 12 takes a second or so.</span></a></li><li><a class="link-card" href="/en/totp-generator/"><span class="link-card__title">TOTP Generator (RFC 6238)</span><span class="link-card__desc">Generate time-based one-time codes from a base32 secret or otpauth:// URI, with a live countdown. Computed locally with WebCrypto.</span></a></li><li><a class="link-card" href="/en/secret-detector-redactor/"><span class="link-card__title">Secret Detector &amp; Redactor</span><span class="link-card__desc">Find AWS/GCP/GitHub/Slack/Stripe keys, JWTs, private keys, credentials in URLs and high-entropy tokens. Report plus redacted output.</span></a></li><li><a class="link-card" href="/en/argon2-hash/"><span class="link-card__title">Argon2d / Argon2i / Argon2id</span><span class="link-card__desc">Hand-written Argon2 (RFC 9106, v1.3) with memory, iterations, parallelism, tag length, secret and associated data. Raw hex or PHC string. Memory capped at 64 MiB; the UI stays responsive.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

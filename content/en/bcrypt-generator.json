@@ -1,0 +1,46 @@
+{
+ "id": "bcrypt-generator",
+ "seoTitle": "Free Bcrypt Hash Generator - Cost 4 to 14",
+ "metaDescription": "Create bcrypt password hashes ($2a or $2b) with a cost factor from 4 to 14, one password per line. Free, computed in your browser, not uploaded.",
+ "intro": "Hash one or more passwords with bcrypt, choosing the cost factor and the $2a or $2b prefix. The hashing runs in your browser.",
+ "why": "Developers need bcrypt hashes to seed a user table, test a login flow, write a fixture or compare against another library's output. Running a script for each one is tedious, and pasting a real password into a random website that hashes it server-side is exactly what you should avoid.\n\nThis generator computes the hash on your device. Enter several passwords, one per line, and each gets its own random salt. The cost factor controls the work: each step doubles the time, and cost 12 takes around a second in a browser. Bcrypt only uses the first 72 bytes of a password, so longer inputs are effectively truncated. For testing you can supply a fixed 22-character salt to get repeatable output. Use test passwords, not live production credentials.",
+ "howTo": [
+  "Enter passwords, one per line.",
+  "Choose the cost, from 4 to 14, and the prefix 2b or 2a.",
+  "Optionally enter a fixed 22-character salt for repeatable test output.",
+  "Run the tool and copy the hashes."
+ ],
+ "faq": [
+  {
+   "q": "Which cost should I choose?",
+   "a": "Pick the highest cost your servers can afford while keeping login fast, often 10 to 12 today. Browser timings differ from servers, so measure on your own hardware. Costs below 10 are for tests only."
+  },
+  {
+   "q": "Why is a long password truncated?",
+   "a": "Bcrypt reads only the first 72 bytes of the input, a limit of the algorithm. Characters beyond that are ignored, so two long passwords with the same first 72 bytes produce the same hash."
+  },
+  {
+   "q": "Can I use this for real passwords?",
+   "a": "The hashing is local, but do not paste live production passwords into any web page you do not fully control. Use it for test data, learning and checking compatibility."
+  },
+  {
+   "q": "What are the 2a and 2b prefixes?",
+   "a": "They mark versions of the bcrypt scheme. 2b is the current one and fixes a bug in some older implementations that affected long inputs. Most libraries accept both when verifying."
+  }
+ ],
+ "related": [
+  "bcrypt-verifier",
+  "argon2-hash",
+  "scrypt-kdf",
+  "pbkdf2-key-derivation",
+  "password-generator",
+  "hash-generator"
+ ],
+ "keywords": [
+  "bcrypt generator",
+  "bcrypt hash online",
+  "generate bcrypt hash",
+  "bcrypt cost factor",
+  "free bcrypt tool"
+ ]
+}

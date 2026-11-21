@@ -1,0 +1,46 @@
+{
+ "id": "roof-pitch",
+ "seoTitle": "Free Roof Pitch Calculator: Angle, Slope and Rafter",
+ "metaDescription": "Convert rise and run to roof pitch, angle in degrees and slope percentage, and estimate rafter length and ridge height. Free, runs in your browser.",
+ "intro": "Enter rise, run and building span. The tool returns the pitch as x:12, the angle, the slope percentage, the rafter length factor and approximate rafter length and ridge height.",
+ "why": "Roofers talk about a 6:12 pitch, planners may specify degrees, and a drawing might give a percentage. They all describe the same slope, and converting between them by hand means a bit of trigonometry. This calculator takes the rise and run you measured or drew and shows every form, then uses the building span to work out the rafter length without overhang and how high the ridge sits above the wall plate. It is useful for ordering timber, checking whether a roof will suit a certain covering or sketching a loft conversion. The span, rise and run only need to share a unit. It is a geometric estimate for a symmetrical gable roof, not a structural design.",
+ "howTo": [
+  "Enter the rise and the run in the same unit, for example 6 and 12.",
+  "Enter the building span or width, using the same unit.",
+  "Read the pitch, angle, slope percentage, rafter length and ridge height."
+ ],
+ "faq": [
+  {
+   "q": "What does a 6:12 pitch mean?",
+   "a": "The roof rises 6 units for every 12 units of horizontal run. That is a slope of 50% and an angle of about 26.57 degrees."
+  },
+  {
+   "q": "Is the rafter length the full cut length?",
+   "a": "No. It is the sloping length from the wall plate to the ridge without overhang, ridge board allowance or birdsmouth cuts. Add those separately when you cut timber."
+  },
+  {
+   "q": "Does the span have to use the same unit?",
+   "a": "Yes, the rafter length and ridge height are returned in whatever unit you use for span, so keep them consistent."
+  },
+  {
+   "q": "Can I use it for a lean-to roof?",
+   "a": "The pitch, angle and slope values apply to any single slope. The rafter and ridge figures assume a symmetrical gable, so for a lean-to use the full span instead of half."
+  }
+ ],
+ "related": [
+  "concrete-calculator",
+  "brick-calculator",
+  "paint-coverage",
+  "unit-converter",
+  "screen-size-ppi",
+  "tile-calculator"
+ ],
+ "keywords": [
+  "roof pitch calculator",
+  "free roof pitch calculator",
+  "roof slope calculator",
+  "rafter length calculator",
+  "roof angle from pitch",
+  "rise and run calculator"
+ ]
+}

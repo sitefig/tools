@@ -1,0 +1,47 @@
+{
+ "id": "html-format",
+ "seoTitle": "Free HTML Formatter & Beautifier Online",
+ "metaDescription": "Free online HTML formatter. Beautify minified HTML with your choice of indent and line width, including inline style and script blocks. Runs locally.",
+ "intro": "Beautify HTML with consistent indentation and line wrapping. Inline style and script blocks are formatted too, and pre blocks are left exactly as written.",
+ "why": "View-source on a production page, or HTML pasted from an email template or a CMS export, is often a single dense line. Finding the unclosed div or the stray attribute in that is miserable. A formatter turns it into something you can read and diff.\n\nThe tool indents nested elements, puts block elements on their own lines, wraps long lines at the width you set, and formats the CSS and JavaScript inside style and script tags. Content of pre elements is preserved so that intentional spacing is not damaged. Missing closing tags for elements such as li are tolerated, as in a browser. It is a pragmatic formatter, not a full HTML5 parser, so check unusual markup. Nothing is uploaded.",
+ "howTo": [
+  "Paste your HTML into the input box.",
+  "Choose the indent: 2, 4 or 8 spaces, or a tab.",
+  "Set the line width at which long lines wrap.",
+  "Copy the formatted HTML."
+ ],
+ "faq": [
+  {
+   "q": "Is whitespace inside pre and text content changed?",
+   "a": "Content inside pre elements is kept exactly as written. In normal text, whitespace is collapsed the way browsers treat it, so line wrapping does not change what visitors see."
+  },
+  {
+   "q": "Does it format CSS and JavaScript inside the page?",
+   "a": "Yes. Inline style and script blocks are beautified with the same logic as the CSS and JavaScript formatters, and are indented to match the HTML around them."
+  },
+  {
+   "q": "Can it fix broken HTML?",
+   "a": "Not really. It tolerates some missing end tags, like unclosed li elements, but it does not repair structure or check validity. Use a validator for that."
+  },
+  {
+   "q": "Will formatting change how the page looks?",
+   "a": "It should not for normal pages. Whitespace between inline elements can matter in rare cases, so compare the page before and after when layout is sensitive."
+  }
+ ],
+ "related": [
+  "html-minify",
+  "css-format",
+  "js-format",
+  "html-to-jsx",
+  "html-tag-stripper",
+  "a11y-html-check"
+ ],
+ "keywords": [
+  "html formatter online",
+  "html beautifier",
+  "format html online",
+  "free html formatter",
+  "html prettifier",
+  "indent html code"
+ ]
+}

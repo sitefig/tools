@@ -1,0 +1,45 @@
+{
+ "id": "canonical-conflict-checker",
+ "seoTitle": "Canonical Conflict Checker: canonical, og:url, hreflang",
+ "metaDescription": "Compare canonical, og:url, twitter:url and hreflang self-reference in pasted HTML and see where they disagree. Free.",
+ "intro": "Lists the URL signals in a page and highlights mismatches.",
+ "why": "Conflicting signals confuse crawlers. A canonical with http, an og:url with a trailing slash and an hreflang self-reference with another form are common.\n\nThe tool parses each URL and tells you the part that differs (scheme, www, path, trailing slash, query). It words findings as things to review. Add the page URL to resolve relative links.",
+ "howTo": [
+  "Paste the HTML source.",
+  "Optionally enter the page URL.",
+  "Run the tool.",
+  "Make the signals match."
+ ],
+ "faq": [
+  {
+   "q": "Is a different canonical wrong?",
+   "a": "Not always: duplicates should point elsewhere."
+  },
+  {
+   "q": "Why check hreflang?",
+   "a": "Each page should list itself, and the self URL should match the canonical."
+  },
+  {
+   "q": "Are multiple canonicals bad?",
+   "a": "Yes, especially when they differ."
+  },
+  {
+   "q": "Is it exact?",
+   "a": "It compares URLs as parsed. A crawl shows what engines choose."
+  }
+ ],
+ "related": [
+  "canonical-generator",
+  "hreflang-validator",
+  "meta-analyzer",
+  "html-head-extractor",
+  "seo-robots-noindex-simulator",
+  "seo-inspector"
+ ],
+ "keywords": [
+  "canonical conflict",
+  "og:url canonical mismatch",
+  "hreflang self reference",
+  "canonical checker"
+ ]
+}

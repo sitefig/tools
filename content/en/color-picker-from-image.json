@@ -1,0 +1,46 @@
+{
+  "id": "color-picker-from-image",
+  "seoTitle": "Free Color Picker from Image: Click to Get Colour Codes",
+  "metaDescription": "Click any pixel in an image to get its HEX, RGB and HSL values, or extract a dominant palette. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Load an image, click a pixel to read its colour as HEX, RGB and HSL, and see a dominant palette extracted with the median-cut method. Click a swatch to copy its hex code.",
+  "why": "You have a screenshot, a logo or a photo and need the exact colour of something in it: a brand blue, a button, a sky. Eyeballing it or using an operating system eyedropper is awkward, and an eyedropper cannot tell you the dominant colours of the whole picture.\n\nOpen the image, click the spot you want, and the tool shows the colour as a chip plus HEX, RGB and HSL values. It also builds a palette of two to sixteen colours using median cut, ordered by how much of the image each covers. Click a chip to copy its hex code. The image is drawn on a canvas inside your browser. It is never uploaded, so private screenshots stay on your machine.",
+  "howTo": [
+    "Choose an image file with the file picker.",
+    "Click anywhere on the displayed image to sample that pixel.",
+    "Set the palette size to see more or fewer dominant colours.",
+    "Click a colour chip to copy its hex value."
+  ],
+  "faq": [
+    {
+      "q": "How is the palette chosen?",
+      "a": "It samples a reduced copy of the image and applies median cut: the colours are repeatedly split along their widest channel, and each group is averaged. Chips are ordered by the number of pixels each represents."
+    },
+    {
+      "q": "Why is the colour slightly different from the original?",
+      "a": "The image is shrunk to fit the page, which blends neighbouring pixels. Compression artefacts and colour profiles can also shift values. For an exact pixel, zoom in on a flat area."
+    },
+    {
+      "q": "Is the image uploaded?",
+      "a": "No. It is read by your browser and drawn to a canvas locally. Nothing is sent to a server."
+    },
+    {
+      "q": "Does it ignore transparent areas?",
+      "a": "For the palette, yes: pixels that are mostly transparent are skipped. The click sampler reads the colour channels of the pixel you clicked."
+    }
+  ],
+  "related": [
+    "color-converter",
+    "palette-generator",
+    "color-names-lookup",
+    "image-info",
+    "color-blindness-simulator",
+    "image-to-base64"
+  ],
+  "keywords": [
+    "color picker from image",
+    "get hex color from image",
+    "image color extractor",
+    "extract palette from image",
+    "free eyedropper tool online"
+  ]
+}

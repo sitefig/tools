@@ -1,0 +1,45 @@
+{
+ "id": "regex-escape",
+ "seoTitle": "Free Regex Escape and Unescape Tool Online",
+ "metaDescription": "Escape literal text so it can sit safely inside a regular expression for JavaScript, Python, Java, PHP, Go or POSIX, or unescape it. Free, in-browser.",
+ "intro": "Paste literal text and get it escaped for use inside a regular expression in JavaScript, Python, Java, PHP, Go or POSIX, or reverse the escaping.",
+ "why": "A regex treats characters such as dot, plus, brackets and dollar as syntax. If you want to match a price like $5.00 (approx.) literally, you must put backslashes in front of the right characters, and the exact set differs by language. Missing one produces a pattern that matches the wrong text or fails to compile.\n\nThis tool escapes the metacharacters for the flavour you choose. Python also escapes the space, hyphen and hash; PHP escapes more punctuation; POSIX ERE uses a smaller set. Unescape removes a backslash before any character. Built-in escape functions exist in most languages, such as re.escape or Pattern.quote, and are the safer choice inside code. Use this for quick checks and for patterns you paste into configs.",
+ "howTo": [
+  "Choose escape or unescape and the language flavour.",
+  "Paste the text you want to match literally.",
+  "Copy the result into your regular expression."
+ ],
+ "faq": [
+  {
+   "q": "Why do the flavours give different results?",
+   "a": "Each language has its own set of special characters and some escape extras. Python escapes space, hyphen and hash for verbose mode, and PHP escapes characters used by its delimiters."
+  },
+  {
+   "q": "Does it add delimiters or flags?",
+   "a": "No. It escapes the text only. Add slashes, quotes or flags yourself, and double the backslashes if you put the pattern in a normal string literal."
+  },
+  {
+   "q": "How does unescape work?",
+   "a": "It removes the backslash from every backslash plus character pair and keeps the character. It does not convert sequences such as \\n or \\t into control characters."
+  },
+  {
+   "q": "Should I use this in application code?",
+   "a": "Prefer the escape function from your language standard library inside code, since it is maintained for that language. This page is for quick use and configs."
+  }
+ ],
+ "related": [
+  "regex-tester",
+  "regex-cheatsheet",
+  "string-escape",
+  "json-escape",
+  "find-replace",
+  "url-encode"
+ ],
+ "keywords": [
+  "regex escape",
+  "escape special characters regex",
+  "regex quote online",
+  "free regex escape tool",
+  "escape string for regex python java"
+ ]
+}

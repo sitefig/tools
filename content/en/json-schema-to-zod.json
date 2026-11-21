@@ -1,0 +1,45 @@
+{
+ "id": "json-schema-to-zod",
+ "seoTitle": "Free JSON Schema to Zod Converter Online",
+ "metaDescription": "Turn a JSON Schema (draft-07 or 2020-12 subset) into Zod source code, with formats, bounds, enums, unions and $ref to $defs. Free, in-browser.",
+ "intro": "Paste a JSON Schema and get Zod source code with the matching z.object, string, number and array rules, plus an inferred TypeScript type.",
+ "why": "If your API contract is a JSON Schema, you probably also want runtime validation in TypeScript, and Zod is a popular way to do that. Rewriting a large schema by hand means translating each keyword and keeping the two in sync.\n\nThis converter handles the commonly used subset: types, string formats such as email and uuid, length and numeric bounds, enum and const, anyOf, oneOf and allOf, nullable types, required lists and references into $defs. The output includes an import and a z.infer type alias. Features like conditionals (if, then, else), patternProperties and dynamic references are not converted and degrade to z.any(). Test the generated schema against real samples before relying on it.",
+ "howTo": [
+  "Paste your JSON Schema into the input.",
+  "Set the name of the exported constant.",
+  "Copy the Zod code into your project and check it against sample data."
+ ],
+ "faq": [
+  {
+   "q": "Which keywords are supported?",
+   "a": "type, format, minLength, maxLength, pattern, minimum, maximum, exclusive bounds, multipleOf, enum, const, items, prefixItems, properties, required, additionalProperties, anyOf, oneOf, allOf, nullable, description and default."
+  },
+  {
+   "q": "What happens to unsupported features?",
+   "a": "They are skipped or replaced with z.any(), which accepts anything. That keeps the code valid but loosens the check, so review those fields by hand."
+  },
+  {
+   "q": "How are recursive $refs handled?",
+   "a": "A reference that points back to a type already being converted becomes a lazy z.any(), so output stays finite. Rewrite those spots with z.lazy and a proper type if you need strict recursion."
+  },
+  {
+   "q": "Which Zod version does the code target?",
+   "a": "It uses chained methods like .email() and .datetime() that are common in Zod 3. Newer major versions have some changes, so adjust if your compiler complains."
+  }
+ ],
+ "related": [
+  "zod-to-json-schema",
+  "json-to-zod",
+  "typescript-interface-to-zod",
+  "graphql-schema-to-zod",
+  "zod-to-typescript-type",
+  "json-schema-generator"
+ ],
+ "keywords": [
+  "json schema to zod",
+  "convert json schema to zod online",
+  "json schema zod generator",
+  "free zod schema converter",
+  "jsonschema2zod"
+ ]
+}

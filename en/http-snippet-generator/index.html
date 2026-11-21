@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free HTTP Request to curl, fetch, Python Converter | Free Tools</title>
+<meta name="description" content="Turn a raw HTTP request with method, URL, headers and body into curl, JavaScript fetch and Python snippets. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/http-snippet-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/http-snippet-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/http-snippet-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free HTTP Request to curl, fetch, Python Converter | Free Tools">
+<meta property="og:description" content="Turn a raw HTTP request with method, URL, headers and body into curl, JavaScript fetch and Python snippets. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/http-snippet-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free HTTP Request to curl, fetch, Python Converter | Free Tools">
+<meta name="twitter:description" content="Turn a raw HTTP request with method, URL, headers and body into curl, JavaScript fetch and Python snippets. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"HTTP Snippet Generator","url":"https://tools.sitefig.net/en/http-snippet-generator/","description":"Turn a raw HTTP request with method, URL, headers and body into curl, JavaScript fetch and Python snippets. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Type the request: the first line is METHOD URL.","Add one Header: value line per header, then a blank line and the body.","Run the tool.","Copy the curl, fetch or Python version."],"keywords":"http request to curl, http snippet generator, raw http to fetch, convert request to python, free http code generator","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"HTTP Snippet Generator","item":"https://tools.sitefig.net/en/http-snippet-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What request format does it expect?","acceptedAnswer":{"@type":"Answer","text":"A first line such as POST https://api.example.com/items, then header lines in Name: value form, then an empty line and the body. The URL must be a full address, not just a path."}},{"@type":"Question","name":"How are quotes in the body handled?","acceptedAnswer":{"@type":"Answer","text":"For curl, single quotes inside the body are escaped so the shell command stays valid. The fetch and Python snippets use JSON string quoting. Check very unusual characters before you run the command."}},{"@type":"Question","name":"Does it send the request?","acceptedAnswer":{"@type":"Answer","text":"No. It only generates code. Nothing is sent from this page, so you can paste requests containing tokens without them leaving your browser, though you should still avoid sharing live secrets."}},{"@type":"Question","name":"Which other languages does it cover?","acceptedAnswer":{"@type":"Answer","text":"Only curl, fetch and Python here. If you start from a curl command and need other languages, the curl converter tools on this site cover Go, Rust, PHP and more."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">HTTP Snippet Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>HTTP Snippet Generator</h1>
+<p class="lede">Paste a raw request, with the method and URL first, then headers, a blank line and the body, to get curl, fetch and Python code.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="http-snippet-generator" data-module="gen" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>API documentation, support tickets and browser devtools show requests as plain text, but you usually want code you can run. Rewriting the headers and quoting the body by hand is slow, and quotes in a JSON body easily break a shell command.</p>
+<p>This tool reads the first line as METHOD URL, treats each following line as a header until the first blank line, and takes the rest as the body. It then writes a curl command with safe single-quote escaping, a fetch call with headers and body, and a Python snippet that uses only the standard library. It is a quick way to move between those forms when testing an endpoint or sharing a reproduction. The parsing happens in your browser, so tokens in the request stay on your device.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Type the request: the first line is METHOD URL.</li><li>Add one Header: value line per header, then a blank line and the body.</li><li>Run the tool.</li><li>Copy the curl, fetch or Python version.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What request format does it expect?</summary><p>A first line such as POST https://api.example.com/items, then header lines in Name: value form, then an empty line and the body. The URL must be a full address, not just a path.</p></details>
+<details><summary>How are quotes in the body handled?</summary><p>For curl, single quotes inside the body are escaped so the shell command stays valid. The fetch and Python snippets use JSON string quoting. Check very unusual characters before you run the command.</p></details>
+<details><summary>Does it send the request?</summary><p>No. It only generates code. Nothing is sent from this page, so you can paste requests containing tokens without them leaving your browser, though you should still avoid sharing live secrets.</p></details>
+<details><summary>Which other languages does it cover?</summary><p>Only curl, fetch and Python here. If you start from a curl command and need other languages, the curl converter tools on this site cover Go, Rust, PHP and more.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/curl-to-code/"><span class="link-card__title">cURL to Code</span><span class="link-card__desc">Convert a curl command to fetch, Node (http/https), Python requests or PHP cURL.</span></a></li><li><a class="link-card" href="/en/curl-to-more-languages/"><span class="link-card__title">cURL to C# / Java / Axios / Guzzle / Faraday</span><span class="link-card__desc">Convert a curl command (-X -H -d --data-urlencode --json -F -u -k -L) into C# HttpClient, Java 11 HttpClient, JavaScript axios, PHP Guzzle or Ruby Faraday. Python, fetch, Node and plain PHP live in the main cURL to Code tool; Go and Rust have their own tools. Multipart (-F) is supported for C#, Guzzle and Faraday; Java and axios convert it to a urlencoded body.</span></a></li><li><a class="link-card" href="/en/fetch-to-curl/"><span class="link-card__title">fetch() to cURL</span><span class="link-card__desc">Convert a JavaScript fetch(url, { method, headers, body }) call (as copied from DevTools or source) into a curl command. Understands JSON.stringify(...) bodies, string and object literals; it never executes your code.</span></a></li><li><a class="link-card" href="/en/curl-builder/"><span class="link-card__title">cURL Command Builder</span><span class="link-card__desc">Fill in method, URL, headers, body, auth and flags to get a correctly quoted curl command.</span></a></li><li><a class="link-card" href="/en/http-wire-format/"><span class="link-card__title">HTTP Raw Message &lt;-&gt; JSON (wire format)</span><span class="link-card__desc">Parse a raw HTTP/1.x request or response (start line, headers, body, chunked transfer decoding, Content-Length check, query string, cookies, Basic auth) into structured JSON, or build a correctly framed raw HTTP message (CRLF line endings, Host and Content-Length) from JSON. Useful for debugging proxies, WAF rules, request smuggling cases and hand-written test fixtures.</span></a></li><li><a class="link-card" href="/en/http-headers-to-json/"><span class="link-card__title">HTTP Headers to JSON</span><span class="link-card__desc">Convert raw HTTP request/response headers (or a status line plus headers) to a JSON object; repeated headers become arrays.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+ "id": "ssl-tls-handshake-simulator",
+ "seoTitle": "Free TLS 1.2 and 1.3 Handshake Simulator",
+ "metaDescription": "Step through TLS 1.2 and 1.3 handshakes: full, resumption, mutual TLS and 0-RTT, with round trips and time to first byte. Free, in your browser.",
+ "intro": "Step through TLS 1.2 and TLS 1.3 handshakes for a full handshake, resumption, mutual TLS or 0-RTT, and see each message, what it carries, the round trips and the delay before the first request byte.",
+ "why": "People are told that TLS 1.3 is faster, but the numbers only make sense once you see the messages. A full TLS 1.2 handshake needs two round trips after TCP, TLS 1.3 needs one, and resumption or 0-RTT can cut that further. Add a 150 ms mobile connection and those round trips are what the user feels.\n\nThis simulator lays out the steps for the version and scenario you choose and converts them into time at the round-trip time you set, with or without the TCP handshake. It is an explanatory model, not a packet capture, so real timings also include certificate size, packet loss and server processing. It is useful for teaching and for understanding why connection reuse matters. Nothing is sent over the network.",
+ "howTo": [
+  "Choose TLS 1.3 or TLS 1.2.",
+  "Pick a scenario: full handshake, resumption, mutual TLS or 0-RTT resumption.",
+  "Set the round-trip time in milliseconds and tick the box to include the TCP handshake.",
+  "Read the list of messages, the round trips and the time before the first request byte."
+ ],
+ "faq": [
+  {
+   "q": "Is this a real capture of a connection?",
+   "a": "No. It is a simplified model of the handshake flow. Real connections vary with certificate chain size, congestion, packet loss and server work, so use a packet capture or browser tools for measured timings."
+  },
+  {
+   "q": "What is 0-RTT and is it safe?",
+   "a": "0-RTT lets a returning client send application data in its first flight in TLS 1.3. Because that data can be replayed by an attacker, it should be limited to idempotent requests."
+  },
+  {
+   "q": "Why does mutual TLS add messages?",
+   "a": "The server asks the client for a certificate, and the client sends it and proves it holds the key. Those extra messages add processing and a bit of size, but the number of round trips often stays the same."
+  }
+ ],
+ "related": [
+  "x509-viewer",
+  "http2-http3-frame-inspector",
+  "security-headers-generator",
+  "http-headers-analyzer",
+  "dns-soa-dnssec-inspector",
+  "ip-subnet-calculator"
+ ],
+ "keywords": [
+  "tls handshake simulator",
+  "tls 1.3 vs 1.2 handshake",
+  "tls round trips calculator",
+  "tls 0-rtt explained",
+  "mutual tls handshake steps",
+  "free tls learning tool"
+ ]
+}

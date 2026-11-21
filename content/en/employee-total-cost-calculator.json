@@ -1,0 +1,39 @@
+{
+ "id": "employee-total-cost-calculator",
+ "seoTitle": "Employee Total Cost Calculator: Salary Plus Employer Charges",
+ "metaDescription": "Estimate the full yearly cost of an employee from salary, employer charges, benefits, equipment and overhead. No tax rates built in.",
+ "intro": "Adds employer charges, benefits, equipment and overhead to a salary to get the total yearly, monthly and hourly cost.",
+ "why": "A salary is only part of what an employee costs. Employer taxes and social charges, benefits, equipment, software and office space all add up, often to well over the salary.\n\nEmployer charges differ by country and change yearly, so no rate is built in. Enter your own from payroll. The tool also divides the total by productive days to get a day and hour cost.",
+ "howTo": [
+  "Enter gross salary and the employer charge rate.",
+  "Add benefits, equipment and overhead.",
+  "Enter productive days and read the total and hourly cost."
+ ],
+ "faq": [
+  {
+   "q": "Which employer rate should I use?",
+   "a": "Ask your payroll provider or tax authority."
+  },
+  {
+   "q": "What are productive days?",
+   "a": "Working days after holidays and expected sick leave."
+  },
+  {
+   "q": "Is this a quote?",
+   "a": "No, it is an estimate."
+  }
+ ],
+ "related": [
+  "freelance-hourly-rate-calculator",
+  "day-rate-to-salary-converter",
+  "project-quote-estimator",
+  "salary-hourly",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "employee cost calculator",
+  "total cost of employee",
+  "employer cost of hiring"
+ ]
+}

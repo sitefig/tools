@@ -1,0 +1,38 @@
+{
+ "id": "network-connection-info",
+ "seoTitle": "Network Connection Info: Online, Speed Class, Data Saver",
+ "metaDescription": "See what your browser reports about your connection: online status, effective type, estimated downlink and round trip, data saver and live changes.",
+ "intro": "Read the connection details your browser exposes to web pages and watch them change live.",
+ "why": "The Network Information API lets pages adapt to slow or metered connections. This viewer shows what it reports: effective connection type (4g, 3g...), the browser's estimate of downlink and round-trip time, whether data saver is on, and online/offline events, together with logical CPU cores, device memory and languages.\n\nValues are coarse by design (rounded and capped for privacy) and the API exists only in Chromium browsers; Firefox and Safari show a notice. It is not a speed test and cannot reveal your public IP, because that would need a request to a server. Nothing is sent anywhere.",
+ "howTo": [
+  "Open the page; values load immediately.",
+  "Switch networks or toggle airplane mode to see the change log update.",
+  "Press Refresh to re-read the values."
+ ],
+ "faq": [
+  {
+   "q": "Why are there no values in my browser?",
+   "a": "Firefox and Safari do not implement the Network Information API."
+  },
+  {
+   "q": "Is the downlink a speed test?",
+   "a": "No. It is a rounded estimate from recent browser traffic."
+  },
+  {
+   "q": "Does this reveal my IP?",
+   "a": "No. Looking up a public IP needs a server request, which this tool never makes."
+  }
+ ],
+ "related": [
+  "browser-info",
+  "battery-status-viewer",
+  "bandwidth-download-time",
+  "webrtc-leak-test",
+  "browser-fingerprint"
+ ],
+ "keywords": [
+  "network information api",
+  "check effective connection type",
+  "data saver status"
+ ]
+}

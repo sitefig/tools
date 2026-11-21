@@ -1,0 +1,45 @@
+{
+ "id": "schema-markup-diff",
+ "seoTitle": "Schema Markup Diff: Compare Two JSON-LD Versions",
+ "metaDescription": "Compare two JSON-LD versions and list added, removed and changed properties by path. Key order and whitespace are ignored.",
+ "intro": "Lists what changed between two JSON-LD blocks: properties added, removed or changed, by path.",
+ "why": "When a theme update or a release changes your structured data, a text diff is noisy because key order and formatting change. This tool parses both versions and compares the values, so only real changes appear. Objects inside lists are matched by @id when every item has one; otherwise by position.\n\nA single value and a one-item list are reported as different, because consumers can treat them differently.",
+ "howTo": [
+  "Paste the old markup on the left and the new one on the right.",
+  "Read the plus, minus and tilde lines.",
+  "Check the paths of changed values.",
+  "Fix unintended changes."
+ ],
+ "faq": [
+  {
+   "q": "Does key order matter?",
+   "a": "No."
+  },
+  {
+   "q": "How are arrays compared?",
+   "a": "By @id if all items have one, else by position."
+  },
+  {
+   "q": "Can I paste whole pages?",
+   "a": "Yes, the ld+json scripts are extracted."
+  },
+  {
+   "q": "Does it understand @graph?",
+   "a": "It compares the structure as written; use matching @id values for stable results."
+  }
+ ],
+ "related": [
+  "json-diff",
+  "schema-graph-merger",
+  "jsonld-syntax-validator",
+  "text-diff",
+  "schema-property-checker",
+  "json-patch-generator"
+ ],
+ "keywords": [
+  "json-ld diff",
+  "compare structured data",
+  "schema markup changes",
+  "jsonld compare"
+ ]
+}

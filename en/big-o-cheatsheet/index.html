@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Big-O Cheatsheet: Sorting, Data Structures and Graph Algorithms | Free Tools</title>
+<meta name="description" content="A searchable Big-O cheatsheet with time and space complexity for sorting, search, data structures and graph algorithms, plus step counts for your n.">
+<link rel="canonical" href="https://tools.sitefig.net/en/big-o-cheatsheet/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/big-o-cheatsheet/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/big-o-cheatsheet/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Big-O Cheatsheet: Sorting, Data Structures and Graph Algorithms | Free Tools">
+<meta property="og:description" content="A searchable Big-O cheatsheet with time and space complexity for sorting, search, data structures and graph algorithms, plus step counts for your n.">
+<meta property="og:url" content="https://tools.sitefig.net/en/big-o-cheatsheet/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Big-O Cheatsheet: Sorting, Data Structures and Graph Algorithms | Free Tools">
+<meta name="twitter:description" content="A searchable Big-O cheatsheet with time and space complexity for sorting, search, data structures and graph algorithms, plus step counts for your n.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Big-O Complexity Cheatsheet (Sorting, Structures, Graphs)","url":"https://tools.sitefig.net/en/big-o-cheatsheet/","description":"A searchable Big-O cheatsheet with time and space complexity for sorting, search, data structures and graph algorithms, plus step counts for your n.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Type a word such as sort or graph to filter the table, or leave it empty.","Set n to see how many steps each growth class needs.","Compare rows for the structure or algorithm you are choosing."],"keywords":"big o cheat sheet, time complexity table, algorithm complexity","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Code Formatters","item":"https://tools.sitefig.net/en/#code-formatters"},{"@type":"ListItem","position":3,"name":"Big-O Complexity Cheatsheet (Sorting, Structures, Graphs)","item":"https://tools.sitefig.net/en/big-o-cheatsheet/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does the growth table show?","acceptedAnswer":{"@type":"Answer","text":"The raw value of each function at your n. It is not a timing."}},{"@type":"Question","name":"Why is n! cut off?","acceptedAnswer":{"@type":"Answer","text":"It grows past what a number can hold quickly, so large cases show a text note."}},{"@type":"Question","name":"Are these worst-case figures?","acceptedAnswer":{"@type":"Answer","text":"Where average and worst differ, both are shown."}},{"@type":"Question","name":"Is the table complete?","acceptedAnswer":{"@type":"Answer","text":"No. It covers common cases only."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#code-formatters">Code Formatters</a></li><li><span aria-current="page">Big-O Complexity Cheatsheet (Sorting, Structures, Graphs)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Big-O Complexity Cheatsheet (Sorting, Structures, Graphs)</h1>
+<p class="lede">A compact table of time and space complexity for common sorting algorithms, searches, data structures and graph algorithms, and a growth table showing how many steps O(n log n), O(n^2) or O(2^n) need for an input size you choose.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="big-o-cheatsheet" data-module="new10"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Complexity tables are easy to half remember: is quicksort worst case n log n or n squared, and does heapsort need extra space? A quick lookup beats guessing in an interview or a design review.</p>
+<p>The values are standard textbook figures and were not re-checked against a source for this build. Big-O hides constants, memory access and the shape of your data, so a fast-growing function can still win on small inputs.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Type a word such as sort or graph to filter the table, or leave it empty.</li><li>Set n to see how many steps each growth class needs.</li><li>Compare rows for the structure or algorithm you are choosing.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What does the growth table show?</summary><p>The raw value of each function at your n. It is not a timing.</p></details>
+<details><summary>Why is n! cut off?</summary><p>It grows past what a number can hold quickly, so large cases show a text note.</p></details>
+<details><summary>Are these worst-case figures?</summary><p>Where average and worst differ, both are shown.</p></details>
+<details><summary>Is the table complete?</summary><p>No. It covers common cases only.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/ascii-table/"><span class="link-card__title">ASCII Table</span><span class="link-card__desc">ASCII reference: decimal, hex, octal, binary, character. Filter by anything.</span></a></li><li><a class="link-card" href="/en/semver-calculator/"><span class="link-card__title">Semver Calculator</span><span class="link-card__desc">Compare versions, bump them, and test npm-style ranges (^ ~ &gt;= &lt; x-ranges, hyphen, ||).</span></a></li><li><a class="link-card" href="/en/cyclomatic-complexity-estimator/"><span class="link-card__title">Cyclomatic Complexity Estimator for JavaScript Functions</span><span class="link-card__desc">Estimate McCabe cyclomatic complexity per function: 1 plus branches (if, loops, case, catch, &amp;&amp;, ||, ??, ternary). Flags functions above your limit.</span></a></li><li><a class="link-card" href="/en/lines-of-code-counter/"><span class="link-card__title">Lines of Code Counter (Code, Comment and Blank, Per Language)</span><span class="link-card__desc">Count code, comment and blank lines. Paste one file, or several files each started by a line like &quot;=== path/file.py&quot; to get a per-language table.</span></a></li><li><a class="link-card" href="/en/http-status-reference/"><span class="link-card__title">HTTP Status Codes</span><span class="link-card__desc">Searchable reference of HTTP status codes and what they mean.</span></a></li><li><a class="link-card" href="/en/chmod-calculator/"><span class="link-card__title">chmod Calculator</span><span class="link-card__desc">Convert between octal (755) and symbolic (rwxr-xr-x) permissions.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

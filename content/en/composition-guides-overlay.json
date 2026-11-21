@@ -1,0 +1,45 @@
+{
+ "id": "composition-guides-overlay",
+ "seoTitle": "Composition Guides Overlay: Thirds, Phi Grid and Golden Spiral",
+ "metaDescription": "Draw rule of thirds, golden ratio lines, diagonals and a golden spiral on a photo and save it. Free, local.",
+ "intro": "Overlays composition guides on an image: rule of thirds, a phi grid at 38.2 and 61.8 percent, diagonals, a centre cross and a golden spiral with flip options.",
+ "why": "Guides help you judge a crop or a layout. The spiral is built from quarter circles in successive golden rectangles, fitted to the largest golden rectangle centred in the image, and can be flipped left to right and top to bottom to match your subject.\n\nGuides are aids, not rules, and the spiral is an approximation. The overlay is drawn on a copy and saved as PNG; the original is not changed. Nothing is uploaded.",
+ "howTo": [
+  "Choose an image.",
+  "Tick the guides you want and set colour and line width.",
+  "Flip the spiral until it fits the subject.",
+  "Run it and download the PNG."
+ ],
+ "faq": [
+  {
+   "q": "Why does the spiral have flip options?",
+   "a": "It can spiral toward any corner. Flip it to put the centre where your subject is."
+  },
+  {
+   "q": "What is the phi grid?",
+   "a": "Lines at 0.382 and 0.618 of the width and height."
+  },
+  {
+   "q": "Does it crop?",
+   "a": "No. Use the Image Cropper after you decide."
+  },
+  {
+   "q": "Does it work for portrait images?",
+   "a": "Yes. The spiral rotates for tall images."
+  }
+ ],
+ "related": [
+  "image-cropper",
+  "image-resizer",
+  "aspect-ratio-calculator",
+  "image-filters",
+  "duotone-generator",
+  "social-banner-maker"
+ ],
+ "keywords": [
+  "golden spiral overlay",
+  "rule of thirds grid on photo",
+  "composition guide",
+  "golden ratio crop"
+ ]
+}

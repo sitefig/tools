@@ -1,0 +1,45 @@
+{
+ "id": "lighthouse-report-viewer",
+ "seoTitle": "Lighthouse JSON Report Viewer: Read Scores and Failing Audits",
+ "metaDescription": "Open a Lighthouse report.json or PageSpeed Insights response as plain text: scores, lab metrics, savings and failing audits per category. Runs locally.",
+ "intro": "Reads a Lighthouse JSON report and lists category scores, lab metrics, opportunities with estimated savings and the audits that failed, grouped by category.",
+ "why": "A Lighthouse report.json is hard to read by eye. It holds hundreds of audits, and the HTML viewer needs the original tool or a hosted page.\n\nThis page reads the file in your browser and keeps only what you act on: scores with bands, the weighted metrics, savings in milliseconds and bytes, and each failing audit with its item count. It also accepts a PageSpeed Insights API response, because that wraps the same report. Nothing is uploaded. The result is one lab run, so scores move between runs.",
+ "howTo": [
+  "Run Lighthouse and save the JSON (the CLI flag --output=json, or Save as JSON in the report menu).",
+  "Paste the file contents into the box.",
+  "Pick one category or leave it on all.",
+  "Tick \"List passing audits too\" if you want the full list."
+ ],
+ "faq": [
+  {
+   "q": "Can I paste a PageSpeed Insights API response?",
+   "a": "Yes. The report sits under lighthouseResult and the tool unwraps it."
+  },
+  {
+   "q": "Why does my score differ from PageSpeed Insights?",
+   "a": "Each run is a separate lab test with its own network and CPU variance, and PSI uses different hardware. Compare several runs."
+  },
+  {
+   "q": "What are the score bands?",
+   "a": "Lighthouse treats 90 and above as good, 50 to 89 as needs work, and below 50 as poor."
+  },
+  {
+   "q": "Is the report sent anywhere?",
+   "a": "No. It is parsed in your browser."
+  }
+ ],
+ "related": [
+  "lighthouse-report-diff",
+  "core-web-vitals-grader",
+  "crux-response-analyzer",
+  "har-performance-analyzer",
+  "third-party-script-cost",
+  "render-blocking-resource-finder"
+ ],
+ "keywords": [
+  "lighthouse json viewer",
+  "read lighthouse report",
+  "report.json lighthouse",
+  "pagespeed json"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "curl-builder",
+ "seoTitle": "Free cURL Command Builder Online",
+ "metaDescription": "Free online cURL command builder. Set method, URL, headers, body, auth and flags and get a correctly quoted curl command for your terminal.",
+ "intro": "Fill in the method, URL, headers, body, authentication and flags to get a correctly quoted curl command. It can output one line or a multi-line command with backslashes.",
+ "why": "curl commands are the lingua franca for testing APIs, but quoting JSON bodies in a shell is easy to get wrong, and the flags are hard to remember. Single quotes inside a body, a missing header colon or a stray space can ruin a request.\n\nEnter the method and URL, list headers as Name: value lines and paste the body in its own box. Pick bearer or basic authentication and flags for following redirects, silent mode, response headers, compression, failing on HTTP errors and a timeout. The tool escapes quotes properly and uses --data-raw so the body is sent as written. Avoid putting a real production token into a page you do not trust; this one runs in your browser and sends nothing. To go the other way, use cURL to Code.",
+ "howTo": [
+  "Choose the method and enter the full URL starting with http or https.",
+  "Add headers as Name: value lines and paste the request body if there is one.",
+  "Select authentication and flags such as -L, -sS, --compressed or a timeout.",
+  "Copy the command, optionally as a multi-line version with backslashes."
+ ],
+ "faq": [
+  {
+   "q": "How is the body sent?",
+   "a": "With --data-raw, which sends the text exactly as typed without treating @ as a file reference. The body is quoted safely for the shell, including any single quotes inside it."
+  },
+  {
+   "q": "What does the -k option do?",
+   "a": "It turns off TLS certificate checking. It is useful for testing local servers with self-signed certificates, but never use it against real services, as it removes protection against interception."
+  },
+  {
+   "q": "How do I send basic authentication?",
+   "a": "Choose basic and enter user:password. The command gets a -u option. For bearer tokens, enter the token and an Authorization header is added."
+  },
+  {
+   "q": "Can I convert a curl command into code?",
+   "a": "Yes, with the cURL to Code tool, which produces fetch, Node, Python or PHP code from a command."
+  }
+ ],
+ "related": [
+  "curl-to-code",
+  "fetch-to-curl",
+  "http-snippet-generator",
+  "curl-to-more-languages",
+  "http-basic-auth-generator",
+  "http-wire-format"
+ ],
+ "keywords": [
+  "curl command builder",
+  "curl generator online",
+  "build curl command",
+  "free curl builder",
+  "curl command generator with headers",
+  "curl post json generator"
+ ]
+}

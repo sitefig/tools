@@ -1,0 +1,44 @@
+{
+ "id": "python-to-typescript",
+ "seoTitle": "Free Python to TypeScript Interface Converter",
+ "metaDescription": "Convert Python TypedDict, dataclass and Pydantic models to TypeScript interfaces and types. Handles Optional, Literal, Enum, list and dict. Runs in your browser.",
+ "intro": "Paste Python classes and get TypeScript interfaces and types. TypedDict, dataclass, Pydantic v2 BaseModel, NamedTuple, Enum and plain annotated classes are read, with Optional, Literal, Union, list, dict and tuple mapped.",
+ "why": "When a Python API feeds a TypeScript front end, the response shape lives in Python models and has to be copied into TypeScript by hand. The copy drifts as soon as a field changes.\n\nThe converter reads the class definitions as text, with a line-based parser rather than by running Python. Optional[X] and X | None become X | null, fields with defaults become optional, NotRequired and total=False become optional, Literal becomes a literal union, str-based enums become a union or an enum, and Pydantic alias values become the property names. The result was type-checked with tsc and compared with real Pydantic JSON output. Everything runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your Python models. Imports and other code around them are ignored.",
+  "Choose how defaults, enums, dates and property names are treated.",
+  "Copy the TypeScript into your front end project."
+ ],
+ "faq": [
+  {
+   "q": "Which Python features are supported?",
+   "a": "Classes with annotations (TypedDict, dataclass, Pydantic BaseModel, NamedTuple, Enum and plain), the functional TypedDict form, Generic[T], type aliases (Name = Union[...], type X = ..., TypeAlias, NewType) and Annotated with Field(alias=...). Runtime-built models, validators, computed fields and metaclasses are not seen."
+  },
+  {
+   "q": "Why does a field with a default become optional?",
+   "a": "A dataclass or Pydantic default means the field may be left out when you build the object. If you are describing a response, where every field is present, turn the option off."
+  },
+  {
+   "q": "How are int and float mapped?",
+   "a": "Both become number. Decimal, UUID, datetime, date, bytes and paths become string, because that is how Pydantic and json serialise them, unless you pick Date for datetimes."
+  },
+  {
+   "q": "Does it import or run my code?",
+   "a": "No. The text is parsed in your browser and never executed, so classes that need installed packages or have side effects are fine."
+  }
+ ],
+ "related": [
+  "typescript-to-python",
+  "json-to-typescript",
+  "json-to-pydantic",
+  "go-struct-to-typescript",
+  "json-schema-to-typescript",
+  "typescript-to-json-schema"
+ ],
+ "keywords": [
+  "python to typescript",
+  "pydantic to typescript",
+  "dataclass to typescript",
+  "typeddict to typescript"
+ ]
+}

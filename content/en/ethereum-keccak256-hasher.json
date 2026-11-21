@@ -1,0 +1,45 @@
+{
+ "id": "ethereum-keccak256-hasher",
+ "seoTitle": "Free Keccak-256 and SHA-3 Hash Generator Online",
+ "metaDescription": "Compute Ethereum Keccak-256, Keccak-512 and NIST SHA3 hashes for text or hex, plus 4-byte function selectors. Free, runs in your browser.",
+ "intro": "Hash text or hex bytes with Ethereum Keccak-256, Keccak-512 or SHA3-224, 256, 384 and 512, and see the four-byte selector for function signatures.",
+ "why": "Ethereum uses the original Keccak-256, which differs from the finalised NIST SHA3-256 only in a padding byte, yet the outputs are completely different. Using the wrong one is a common reason that an address, a storage slot or a signature check does not match what a contract produces.\n\nThis tool computes both families with a hand-written Keccak-f[1600] implementation running in your browser. For a Solidity signature such as transfer(address,uint256) it also shows the first four bytes, the function selector used in calldata. It can hash each line separately or take hex input. Because it is custom code, cross-check results against a known library before relying on them in anything valuable.",
+ "howTo": [
+  "Choose the algorithm: keccak256, keccak512 or one of the SHA3 sizes.",
+  "Enter text, one input per line, or switch the input type to hex.",
+  "Copy the 0x-prefixed hashes. A signature input also shows its 4-byte selector."
+ ],
+ "faq": [
+  {
+   "q": "Is Ethereum Keccak-256 the same as SHA3-256?",
+   "a": "No. Ethereum uses the original Keccak submission with padding byte 0x01, while NIST SHA3-256 uses 0x06. The outputs differ for every input, including the empty string."
+  },
+  {
+   "q": "When is the selector shown?",
+   "a": "When the algorithm is keccak256 and a line looks like a function signature, name followed by parentheses. The selector is the first four bytes of the hash."
+  },
+  {
+   "q": "Can I hash a file?",
+   "a": "Not here. The tool hashes text typed or pasted into the box, or bytes given as hex. Use a file hashing tool for documents."
+  },
+  {
+   "q": "Is it fast enough for large input?",
+   "a": "It is meant for short strings. The implementation uses BigInt arithmetic, which is slow for megabytes of data."
+  }
+ ],
+ "related": [
+  "sha3-hash-generator",
+  "hash-generator",
+  "abi-encoder-decoder",
+  "eip55-checksum-address",
+  "solidity-storage-slot",
+  "ens-namehash"
+ ],
+ "keywords": [
+  "keccak256 online",
+  "ethereum keccak hash generator",
+  "sha3 vs keccak",
+  "function selector calculator",
+  "free keccak-256 hasher"
+ ]
+}

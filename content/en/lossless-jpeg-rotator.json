@@ -1,0 +1,45 @@
+{
+ "id": "lossless-jpeg-rotator",
+ "seoTitle": "Lossless JPEG Rotator (Change EXIF Orientation, No Re-encoding)",
+ "metaDescription": "Fix sideways phone photos by changing the EXIF orientation tag only. The compressed image data is untouched, so there is no quality loss.",
+ "intro": "Rotate or flip JPEGs by changing the orientation tag only.",
+ "why": "Choose a turn or a mirror. The tool changes the EXIF orientation value and leaves the compressed picture data alone, so there is no quality loss. It combines your turn with any orientation already in the file and adds a small EXIF block if there is none.\n\nBrowsers and phones obey the tag. Some old software and upload forms ignore it. If yours does, rotate the pixels with the Image Rotate & Flip tool instead.",
+ "howTo": [
+  "Choose one or more JPEGs.",
+  "Pick the turn or mirror.",
+  "Download the files.",
+  "Open them in the app you care about to check."
+ ],
+ "faq": [
+  {
+   "q": "Is it really lossless?",
+   "a": "Yes. The image bytes are copied unchanged."
+  },
+  {
+   "q": "Why does it look unrotated in some apps?",
+   "a": "Those apps ignore the orientation tag."
+  },
+  {
+   "q": "Does it work on PNG?",
+   "a": "No. Only JPEG."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-rotate-flip",
+  "exif-viewer",
+  "photo-date-fixer",
+  "gps-location-stripper",
+  "image-cropper",
+  "image-info"
+ ],
+ "keywords": [
+  "rotate jpeg lossless",
+  "exif orientation",
+  "fix sideways photo",
+  "jpeg rotate no quality loss"
+ ]
+}

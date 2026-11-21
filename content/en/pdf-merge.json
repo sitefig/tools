@@ -1,0 +1,46 @@
+{
+ "id": "pdf-merge",
+ "seoTitle": "Free Merge PDF Files Online - No Upload",
+ "metaDescription": "Combine several PDFs into one in the order you pick, without re-rendering pages. Free, runs in your browser and your files are never uploaded.",
+ "intro": "Select two or more PDF files and join them into one document, in the order selected. Pages are copied as they are, not re-rendered.",
+ "why": "Contracts arrive as separate attachments, scans come one page at a time and reports are written in sections, but whoever receives them wants a single file. Most online mergers upload your documents to a server, which is a problem for anything confidential.\n\nThis tool joins the files on your device. It reads the structure of each PDF, copies its pages with their fonts and images untouched, and writes a fresh combined file, so text stays sharp and searchable and nothing is re-compressed. The order follows how you selected the files. Some document-level features do not survive a merge: bookmarks, form fields, named destinations and page labels are dropped, and encrypted PDFs are refused. If a file will not open, the error names which one.",
+ "howTo": [
+  "Choose two or more PDF files, in the order you want them joined.",
+  "Run the tool and wait for the summary.",
+  "Check the number of files, pages and the file size.",
+  "Download merged.pdf to your device."
+ ],
+ "faq": [
+  {
+   "q": "Is the quality affected?",
+   "a": "No. Page content, fonts and images are copied as stored, with no re-rendering or recompression, so text stays selectable and images keep their original quality."
+  },
+  {
+   "q": "What gets lost when merging?",
+   "a": "Bookmarks, form fields, named destinations, page labels, tagged structure and JavaScript are not carried over. Link annotations keep their web addresses. If you rely on form fields, keep the originals."
+  },
+  {
+   "q": "Can I merge password-protected PDFs?",
+   "a": "No. Encrypted files are refused. Remove the password in the application that created the file first, if you are allowed to."
+  },
+  {
+   "q": "How do I change the order?",
+   "a": "The order follows the order in which you selected the files. Select them again in the order you need, or reorder pages afterwards with the Reorder PDF Pages tool."
+  }
+ ],
+ "related": [
+  "pdf-split",
+  "pdf-extract-pages",
+  "pdf-reorder-pages",
+  "pdf-delete-pages",
+  "images-to-pdf",
+  "pdf-page-count-and-sizes"
+ ],
+ "keywords": [
+  "merge pdf",
+  "combine pdf files online",
+  "join pdfs free",
+  "merge pdf no upload",
+  "pdf merger browser"
+ ]
+}

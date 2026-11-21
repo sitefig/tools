@@ -1,0 +1,39 @@
+{
+ "id": "mrr-arr-calculator",
+ "seoTitle": "MRR and ARR Calculator With Net New MRR",
+ "metaDescription": "Compute MRR and ARR from plan prices and subscribers, and net new MRR from new, expansion, contraction and churned revenue.",
+ "intro": "Calculates monthly and annual recurring revenue and the monthly movement of MRR.",
+ "why": "MRR is the sum of recurring monthly revenue and ARR is twelve times that. The useful view is the movement: new plus expansion minus contraction minus churn gives net new MRR and a growth rate.\n\nList plans as name, price, subscribers, then enter the movement components. Define MRR the way your investors do, usually excluding one-off fees and uncertain usage.",
+ "howTo": [
+  "List plans with price and subscribers.",
+  "Enter new, expansion, contraction and churned MRR.",
+  "Read MRR, ARR and growth."
+ ],
+ "faq": [
+  {
+   "q": "What belongs in MRR?",
+   "a": "Recurring subscription revenue only, normalised to a month."
+  },
+  {
+   "q": "How do annual plans count?",
+   "a": "Divide by 12."
+  },
+  {
+   "q": "Is ARR just MRR x 12?",
+   "a": "Yes, as a run rate, not a forecast."
+  }
+ ],
+ "related": [
+  "churn-rate-calculator",
+  "saas-metrics-calculator",
+  "rule-of-40-calculator",
+  "retention-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "mrr calculator",
+  "arr calculator",
+  "net new mrr"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "mock-data-generator",
+ "seoTitle": "Free Mock Data Generator - JSON, CSV, NDJSON",
+ "metaDescription": "Define a JSON schema of field names and types and generate realistic mock rows as JSON, CSV or NDJSON with a seed. Free, runs in your browser.",
+ "intro": "Describe your fields in a small JSON schema, such as name, email or int:18:90, and generate up to 10,000 repeatable rows as JSON, CSV or NDJSON.",
+ "why": "Front-end demos, API prototypes, load tests and database seeds all need believable data, and typing it by hand is tedious. Dumping production data into a test environment is risky and often not allowed. A schema-driven generator gives you rows that look right without any real people behind them.\n\nHere you list each field and its type, for example uuid, email, a number range, a date, a boolean or a pick from your own list. A seed makes the output repeatable, so the same schema and seed return the same rows, which keeps snapshot tests stable. Names, emails and addresses come from small fictional lists, with example.com emails and reserved phone and IP ranges, and generation happens in your browser.",
+ "howTo": [
+  "Edit the schema: one JSON object whose keys are field names and values are types.",
+  "Set the number of rows and a seed; the same seed repeats the same data.",
+  "Choose JSON, CSV or NDJSON as the output format.",
+  "Copy the generated rows."
+ ],
+ "faq": [
+  {
+   "q": "Which field types are available?",
+   "a": "name, firstName, lastName, email, uuid, int and float with optional min and max, date, datetime, bool, address, city, country, company, phone, url, ip, color, lorem, word, and pick:a,b,c for your own list."
+  },
+  {
+   "q": "How do I set a number range?",
+   "a": "Add limits after the type, separated by colons. For example int:18:90 gives whole numbers from 18 to 90, and float:0:100 gives decimals with two places. Without limits int defaults to 0-1000."
+  },
+  {
+   "q": "Is the data real?",
+   "a": "No. Names come from short built-in lists, emails use example.com, phones use fictional 555-01 numbers and IPs use the 192.0.2.x documentation range. Do not rely on it for realistic statistical distributions."
+  },
+  {
+   "q": "Why do I get Unknown type?",
+   "a": "A value in your schema is not one of the supported type names, or it is misspelt. Names are case-sensitive, so firstName works but firstname does not. The error shows the offending text."
+  }
+ ],
+ "related": [
+  "fake-person-generator",
+  "random-json-generator",
+  "faker-js-mock-schema-generator",
+  "api-mock-response-generator",
+  "json-to-csv",
+  "csv-to-sql"
+ ],
+ "keywords": [
+  "mock data generator",
+  "generate fake data json",
+  "test data generator csv",
+  "seeded random data",
+  "free mock api data"
+ ]
+}

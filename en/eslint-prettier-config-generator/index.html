@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free ESLint and Prettier Config Generator | Free Tools</title>
+<meta name="description" content="Generate an eslint.config.js flat config and a .prettierrc from a few choices, with TypeScript support and the install command. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/eslint-prettier-config-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/eslint-prettier-config-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/eslint-prettier-config-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free ESLint and Prettier Config Generator | Free Tools">
+<meta property="og:description" content="Generate an eslint.config.js flat config and a .prettierrc from a few choices, with TypeScript support and the install command. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/eslint-prettier-config-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free ESLint and Prettier Config Generator | Free Tools">
+<meta name="twitter:description" content="Generate an eslint.config.js flat config and a .prettierrc from a few choices, with TypeScript support and the install command. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"ESLint / Prettier Config Generator","url":"https://tools.sitefig.net/en/eslint-prettier-config-generator/","description":"Generate an eslint.config.js flat config and a .prettierrc from a few choices, with TypeScript support and the install command. Free, in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Select which config you need: both, eslint or prettier.","Tick TypeScript if needed and pick the environment, node or browser.","Choose semicolons, quotes, print width, tab width and trailing commas.","Copy the files and run the install command shown at the bottom."],"keywords":"eslint config generator, prettier config generator, eslint flat config example, eslint.config.js generator, free prettierrc builder","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"ESLint / Prettier Config Generator","item":"https://tools.sitefig.net/en/eslint-prettier-config-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a flat config?","acceptedAnswer":{"@type":"Answer","text":"It is the newer ESLint configuration format: a single eslint.config.js file exporting an array of settings objects. It replaces the older .eslintrc files, and recent ESLint versions use it by default."}},{"@type":"Question","name":"Does it set up the Prettier plugin for ESLint?","acceptedAnswer":{"@type":"Answer","text":"No. The two configs are independent. Run Prettier for formatting and ESLint for code-quality rules. Adding a bridge such as eslint-config-prettier is a separate step if you see conflicts."}},{"@type":"Question","name":"Which rules are enabled?","acceptedAnswer":{"@type":"Answer","text":"The recommended ESLint set, the TypeScript recommended set if selected, plus no-unused-vars as a warning and eqeqeq as an error. Add or change rules inside the rules object."}},{"@type":"Question","name":"What about React or Vue?","acceptedAnswer":{"@type":"Answer","text":"Framework plugins are not included. Install the relevant ESLint plugin and add its config to the exported array after the generated entries."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">ESLint / Prettier Config Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>ESLint / Prettier Config Generator</h1>
+<p class="lede">Pick TypeScript, environment and formatting preferences to get an ESLint flat config, a .prettierrc and the npm command to install the packages.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="eslint-prettier-config-generator" data-module="gen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>ESLint moved to flat config files, and many tutorials online still show the old .eslintrc format, so new projects end up with settings that no longer work. Prettier is simpler, but its options have to match your team's habits, and the two tools need compatible setups.</p>
+<p>This generator writes an eslint.config.js using the recommended rules, ignores for dist and node_modules, and globals for Node or the browser. If you tick TypeScript, it adds typescript-eslint. It then writes a .prettierrc with semicolons, quotes, print width, tab width and trailing commas as you choose, and prints the matching install line. The rule set is intentionally small, so grow it as your project needs. Everything is generated in the browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Select which config you need: both, eslint or prettier.</li><li>Tick TypeScript if needed and pick the environment, node or browser.</li><li>Choose semicolons, quotes, print width, tab width and trailing commas.</li><li>Copy the files and run the install command shown at the bottom.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What is a flat config?</summary><p>It is the newer ESLint configuration format: a single eslint.config.js file exporting an array of settings objects. It replaces the older .eslintrc files, and recent ESLint versions use it by default.</p></details>
+<details><summary>Does it set up the Prettier plugin for ESLint?</summary><p>No. The two configs are independent. Run Prettier for formatting and ESLint for code-quality rules. Adding a bridge such as eslint-config-prettier is a separate step if you see conflicts.</p></details>
+<details><summary>Which rules are enabled?</summary><p>The recommended ESLint set, the TypeScript recommended set if selected, plus no-unused-vars as a warning and eqeqeq as an error. Add or change rules inside the rules object.</p></details>
+<details><summary>What about React or Vue?</summary><p>Framework plugins are not included. Install the relevant ESLint plugin and add its config to the exported array after the generated entries.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/editorconfig-generator/"><span class="link-card__title">.editorconfig Generator</span><span class="link-card__desc">Generate an .editorconfig with indentation, line endings and per-filetype overrides.</span></a></li><li><a class="link-card" href="/en/tsconfig-generator/"><span class="link-card__title">tsconfig.json Generator</span><span class="link-card__desc">tsconfig presets for Node, browser apps, libraries and React.</span></a></li><li><a class="link-card" href="/en/package-json-generator/"><span class="link-card__title">package.json Generator</span><span class="link-card__desc">Starter package.json with metadata, ESM/CommonJS type, scripts and engines.</span></a></li><li><a class="link-card" href="/en/pre-commit-config-generator/"><span class="link-card__title">pre-commit Config Generator</span><span class="link-card__desc">Generate .pre-commit-config.yaml from hook presets (revs are examples; run pre-commit autoupdate).</span></a></li><li><a class="link-card" href="/en/js-format/"><span class="link-card__title">JavaScript Formatter</span><span class="link-card__desc">Beautify JavaScript with sensible indentation and spacing (token based, no AST).</span></a></li><li><a class="link-card" href="/en/css-format/"><span class="link-card__title">CSS Formatter</span><span class="link-card__desc">Beautify CSS, including nested rules and @media blocks.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

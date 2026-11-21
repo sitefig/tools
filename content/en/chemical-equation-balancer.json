@@ -1,0 +1,45 @@
+{
+ "id": "chemical-equation-balancer",
+ "seoTitle": "Chemical Equation Balancer: Smallest Whole-Number Coefficients",
+ "metaDescription": "Balance reactions like Fe + O2 = Fe2O3 with exact linear algebra and an atom-count check. Free, handles hydrates and brackets.",
+ "intro": "Balances a chemical equation by finding the smallest whole-number coefficients, and shows the atom count on both sides.",
+ "why": "Balancing by trial and error gets hard fast. This tool treats the equation as a linear system: one equation per element, one unknown per compound, and finds the exact solution with fractions, then scales it to the smallest integers.\n\nIt handles brackets and hydrates and checks the result by counting atoms. If the system has more than one independent solution, it tells you that several reactions are mixed together and shows the smallest all-positive combination. It balances atoms only: it knows nothing about whether a reaction really happens, and ions and charges are not supported. A hard example, the potassium ferrocyanide and permanganate reaction, gives the known coefficients.",
+ "howTo": [
+  "Type the equation with = or ->, for example C3H8 + O2 -> CO2 + H2O.",
+  "Put several equations on separate lines if you like.",
+  "Read the balanced equation and the atom check.",
+  "If it fails, check the formulas for typos."
+ ],
+ "faq": [
+  {
+   "q": "Does it support states like (aq)?",
+   "a": "Not as part of the formula; leave them out."
+  },
+  {
+   "q": "Can it balance ionic or redox equations with charges?",
+   "a": "No, only neutral formulas."
+  },
+  {
+   "q": "What if the answer is not unique?",
+   "a": "The equation combines several reactions. The tool shows one smallest all-positive solution and warns you."
+  },
+  {
+   "q": "Is the answer proven?",
+   "a": "The atom check confirms every element balances."
+  }
+ ],
+ "related": [
+  "molar-mass-calculator-formula",
+  "periodic-table-explorer-weights",
+  "matrix-calculator",
+  "gcd-lcm-euclid-steps",
+  "significant-figures-counter-rounder",
+  "scientific-calculator-degrees"
+ ],
+ "keywords": [
+  "chemical equation balancer",
+  "balance chemical equations",
+  "stoichiometry coefficients",
+  "equation balancer online"
+ ]
+}

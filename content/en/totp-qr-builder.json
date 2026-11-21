@@ -1,0 +1,45 @@
+{
+ "id": "totp-qr-builder",
+ "seoTitle": "Free TOTP QR Code Builder: otpauth URI and 2FA QR",
+ "metaDescription": "Build an otpauth:// URI and a QR code to add a TOTP account to an authenticator app. Generate a Base32 secret or use yours. Free, local.",
+ "intro": "Builds the otpauth URI and a scannable QR code for two-factor setup, with the current code so you can check the app matches.",
+ "why": "When you add two-factor login to an app, the user scans a QR code that carries the secret, issuer and account in an otpauth:// URI. This tool builds that URI for tests, demos and documentation.\n\nLeave the secret blank to get a fresh random 160-bit Base32 secret, or paste your own. The page shows the current code from the same secret so you can compare it with the authenticator. Most apps ignore algorithm, digits and period and use SHA1, 6 digits and 30 seconds, so change them only if you know the app supports it.",
+ "howTo": [
+  "Enter issuer and account.",
+  "Leave the secret empty to generate one, or paste a Base32 secret.",
+  "Scan the QR with an authenticator app.",
+  "Compare the code shown here with the app."
+ ],
+ "faq": [
+  {
+   "q": "Is the secret stored?",
+   "a": "No. It exists only in this page. Anyone with the QR image or secret can make valid codes, so do not share them."
+  },
+  {
+   "q": "Why do I need an issuer?",
+   "a": "It labels the entry in the app. It is also placed in the URI label so older apps show it too."
+  },
+  {
+   "q": "Why do the codes not match?",
+   "a": "Check the device clock. If the app does not support SHA256, SHA512, 8 digits or another period, use the defaults."
+  },
+  {
+   "q": "Is the QR code standard?",
+   "a": "Yes. It is a normal QR code with the URI as text."
+  }
+ ],
+ "related": [
+  "totp-generator",
+  "qr-code-generator",
+  "qr-code-reader",
+  "random-secret-generator",
+  "password-generator",
+  "hmac-generator"
+ ],
+ "keywords": [
+  "totp qr code generator",
+  "otpauth uri builder",
+  "2fa qr code maker",
+  "authenticator qr generator"
+ ]
+}

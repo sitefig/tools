@@ -1,0 +1,47 @@
+{
+ "id": "ab-test-calculator",
+ "seoTitle": "Free A/B Test Significance Calculator with Sample Size",
+ "metaDescription": "Test whether variant B beats A with a two-proportion z-test, get the p-value and confidence interval, and estimate the sample size you need. Free.",
+ "intro": "Enter visitors and conversions for two variants and see the conversion rates, z-score, p-value, whether the difference is significant, and the sample size needed to detect a given lift.",
+ "why": "Variant B converts at 5 percent, A at 4 percent, so B wins? Not necessarily. With few visitors a gap like that is often noise, and stopping a test the moment it looks good is a common way to ship changes that do nothing.\n\nThis calculator runs a pooled two-proportion z-test and reports the p-value, a confidence interval for the difference, and a clear yes or no at 90, 95 or 99 percent confidence. It also estimates the number of visitors per variant you need to detect a relative lift of your choice, so you can plan the test before you start. It is a standard fixed-sample test, run in your browser.",
+ "howTo": [
+  "Enter visitors and conversions for variant A and variant B.",
+  "Choose the confidence level: 90, 95 or 99 percent.",
+  "Set the relative lift you want to detect and the power for the sample size estimate.",
+  "Read the p-value, the significance verdict, the confidence interval and the required sample size."
+ ],
+ "faq": [
+  {
+   "q": "What does the p-value mean?",
+   "a": "It is the probability of seeing a difference at least this large if the variants really performed the same. A p-value below 0.05 is significant at 95 percent confidence. It does not give the probability that B is better."
+  },
+  {
+   "q": "Why shouldn't I stop the test as soon as it is significant?",
+   "a": "Checking repeatedly and stopping at the first significant result inflates false positives. This is a fixed-sample test. Decide the sample size in advance, then evaluate once it is reached."
+  },
+  {
+   "q": "How is the sample size estimated?",
+   "a": "From the baseline rate of A, the relative lift you want to detect, your confidence and the power, using the standard two-proportion formula. It gives visitors per variant and in total."
+  },
+  {
+   "q": "Does it handle more than two variants?",
+   "a": "No, only two. For several variants you need to correct for multiple comparisons, which this tool does not do."
+  }
+ ],
+ "related": [
+  "ads-roas-calculator",
+  "conversion-funnel-visualizer",
+  "retention-calculator",
+  "average-median-mode",
+  "percent-change",
+  "percentage-calculator"
+ ],
+ "keywords": [
+  "ab test calculator",
+  "a/b test significance",
+  "ab testing sample size calculator",
+  "free split test calculator",
+  "conversion rate significance",
+  "two proportion z test"
+ ]
+}

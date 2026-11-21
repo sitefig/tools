@@ -1,0 +1,47 @@
+{
+ "id": "base32",
+ "seoTitle": "Free Base32 Encode and Decode Online (RFC 4648)",
+ "metaDescription": "Encode UTF-8 text to Base32 or decode it back, using the standard RFC 4648 alphabet or the extended hex one, with optional padding. Free, in your browser.",
+ "intro": "Encode text as Base32 or decode a Base32 string back to text. Choose the standard alphabet or the extended hex alphabet, and switch padding on or off.",
+ "why": "Base32 is what you find in two-factor setup keys, some file hashes, onion addresses and case-insensitive identifiers. Its letters and digits 2 to 7 avoid easily confused characters, so a person can read it out loud or type it from a printout.\n\nThis tool follows RFC 4648. It encodes your text as UTF-8 bytes, writes them in groups of five bits, and pads with = if you want. Decoding is case-insensitive and skips spaces and padding. When a character does not belong to the chosen alphabet you get an error naming it, which is the usual sign of a typo or of the wrong alphabet.",
+ "howTo": [
+  "Choose the direction: encode or decode.",
+  "Paste your text, or the Base32 string, into the Input box.",
+  "Tick \"Extended hex alphabet\" if your data uses the Base32hex variant, and untick Padding if you do not want = signs.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Why would I use Base32 instead of Base64?",
+   "a": "Base32 uses only uppercase letters and digits, so it survives case-insensitive systems and is easier to read aloud. The price is size: it is about 60 percent longer than the original data, against 33 percent for Base64."
+  },
+  {
+   "q": "What is the extended hex alphabet?",
+   "a": "It is the Base32hex variant from RFC 4648, which uses 0-9 and A-V so that encoded values keep the same sort order as the raw bytes. Most applications use the standard A-Z and 2-7 alphabet instead."
+  },
+  {
+   "q": "Can I decode a two-factor setup key?",
+   "a": "Technically yes, since those keys are Base32. But the decoded bytes are a binary secret, not text, and you will usually just see an error that they are not valid UTF-8. Do not paste real authenticator secrets into pages you do not trust."
+  },
+  {
+   "q": "Does it accept lowercase input?",
+   "a": "Yes. Decoding converts to uppercase first and ignores spaces and = padding, so keys copied with spaces for readability still decode."
+  }
+ ],
+ "related": [
+  "crockford-base32-encoder",
+  "base64-encode",
+  "base58-encoder",
+  "totp-generator",
+  "hex-text",
+  "base64url-encoder"
+ ],
+ "keywords": [
+  "base32 encode online",
+  "base32 decode",
+  "free base32 converter",
+  "rfc 4648 base32",
+  "base32hex",
+  "text to base32"
+ ]
+}

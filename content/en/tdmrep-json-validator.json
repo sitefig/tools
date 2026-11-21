@@ -1,0 +1,44 @@
+{
+ "id": "tdmrep-json-validator",
+ "seoTitle": "TDMRep JSON Validator for /.well-known/tdmrep.json",
+ "metaDescription": "Validate a tdmrep.json against the W3C TDM Reservation Protocol: array shape, location, 1 or 0 values, policy URLs and rule order. Free.",
+ "intro": "Checks a tdmrep.json file and explains each error.",
+ "why": "A tdmrep.json file has to be an array, every rule needs a location and a numeric tdm-reservation of 1 or 0, and the first matching rule wins. A wrong value is a protocol error and agents treat the reservation as unset, so a typo can undo your opt-out.\n\nPaste the file and see errors, warnings about ignored policies and rules that an earlier rule always matches first.",
+ "howTo": [
+  "Paste your tdmrep.json.",
+  "Fix errors first, then warnings.",
+  "Check the order of rules.",
+  "Serve it as application/json."
+ ],
+ "faq": [
+  {
+   "q": "Is a string like \"1\" allowed?",
+   "a": "No. The value must be the number 1 or 0."
+  },
+  {
+   "q": "Why does order matter?",
+   "a": "The first matching rule is used, so put specific paths first."
+  },
+  {
+   "q": "Is the policy required?",
+   "a": "No."
+  },
+  {
+   "q": "Is it case sensitive?",
+   "a": "Locations are."
+  }
+ ],
+ "related": [
+  "tdm-reservation-header-builder",
+  "robots-txt-validator",
+  "ai-bot-robots-builder",
+  "cidr-contains",
+  "robots-tester"
+ ],
+ "keywords": [
+  "tdmrep validator",
+  "tdmrep.json validator",
+  "validate tdm reservation",
+  "well-known tdmrep"
+ ]
+}

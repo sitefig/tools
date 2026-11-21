@@ -1,0 +1,39 @@
+{
+ "id": "torque-unit-converter",
+ "seoTitle": "Torque Converter: N m, lbf ft, kgf m, in lb",
+ "metaDescription": "Convert newton-metres, foot-pounds, inch-pounds and kilogram-force metres for wheel nuts and bolts. Free, offline.",
+ "intro": "Converts torque between newton-metres, pound-force feet and inches, kilogram-force metres and centimetres, ounce-force inches and more.",
+ "why": "Torque specs appear as N m in one manual and lbf ft in another. A wrong conversion can under-tighten a wheel or strip a thread.\n\nThis tool uses standard gravity and the exact pound, and shows all units at once. It does not know your fastener, so always follow the maker.",
+ "howTo": [
+  "Enter the torque value.",
+  "Choose the unit it is in.",
+  "Read the other units."
+ ],
+ "faq": [
+  {
+   "q": "How many lbf ft is 100 N m?",
+   "a": "About 73.76 lbf ft."
+  },
+  {
+   "q": "What is kgf m?",
+   "a": "Kilogram-force metre, an older metric unit. 1 kgf m is 9.80665 N m."
+  },
+  {
+   "q": "Can I trust this for safety parts?",
+   "a": "The maths is exact, but use the figure from your vehicle or part maker and a calibrated wrench."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "power-unit-converter",
+  "density-unit-converter",
+  "frequency-rpm-converter",
+  "flow-rate-unit-converter",
+  "angle-unit-converter"
+ ],
+ "keywords": [
+  "nm to ft lb",
+  "torque conversion",
+  "lbf in to nm"
+ ]
+}

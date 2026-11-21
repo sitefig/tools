@@ -1,0 +1,47 @@
+{
+ "id": "ollama-modelfile-generator",
+ "seoTitle": "Free Ollama Modelfile Generator Online",
+ "metaDescription": "Free online Ollama Modelfile generator. Set FROM, PARAMETERs, SYSTEM prompt, TEMPLATE presets, ADAPTER, stop tokens and example messages.",
+ "intro": "Build an Ollama Modelfile with FROM, PARAMETER values, a SYSTEM prompt, a TEMPLATE preset, an optional ADAPTER, stop tokens and example MESSAGE lines.",
+ "why": "Customising a local model with Ollama means writing a Modelfile, and the format has its own rules: triple-quoted SYSTEM and TEMPLATE blocks, one PARAMETER per line and quoted stop tokens. A small mistake means the model silently ignores a setting.\n\nEnter the base model or a .gguf path, tune temperature, context size, top_p, top_k, repeat penalty and other parameters, and write your system prompt. Extra lines let you add stop tokens and example conversation turns. You can choose a template preset such as a Llama 3 chat format, ChatML or Mistral, but it should match the model you start from, because a wrong template degrades answers. Zero values for optional parameters are omitted. Nothing is uploaded.",
+ "howTo": [
+  "Enter the FROM model name or the path to a .gguf file.",
+  "Set the parameters you care about, such as temperature and num_ctx; use 0 to leave optional ones out.",
+  "Write the system prompt in the first box, and stop tokens or example messages in the second.",
+  "Choose a template preset if needed, then copy the Modelfile and run ollama create."
+ ],
+ "faq": [
+  {
+   "q": "How do I add stop tokens or example messages?",
+   "a": "Use the second box. Write stop: followed by the token for a stop sequence, and user: or assistant: lines for example conversation turns. Each becomes a PARAMETER stop or MESSAGE line."
+  },
+  {
+   "q": "Which template should I choose?",
+   "a": "The one that matches your model. Llama 3, ChatML and Mistral each expect a specific format. If you leave it on none, Ollama uses the template built into the base model, which is usually right."
+  },
+  {
+   "q": "Why are some parameters missing from the output?",
+   "a": "Optional values such as num_ctx, top_p and top_k are left out when set to 0 so the model default applies. Temperature is always written."
+  },
+  {
+   "q": "Can my system prompt contain triple quotes?",
+   "a": "No. The SYSTEM block is wrapped in triple quotes, so a prompt containing them would break the file, and the tool shows an error. Rephrase that part."
+  }
+ ],
+ "related": [
+  "llm-tool-definition-builder",
+  "system-prompt-formatter",
+  "prompt-template-filler",
+  "sampling-curve-visualizer",
+  "llm-cost-calculator",
+  "docker-compose-generator"
+ ],
+ "keywords": [
+  "ollama modelfile generator",
+  "ollama modelfile builder",
+  "create ollama model online",
+  "free modelfile tool",
+  "ollama system prompt template",
+  "ollama parameters generator"
+ ]
+}

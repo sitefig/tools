@@ -1,0 +1,45 @@
+{
+ "id": "toml-to-yaml",
+ "seoTitle": "TOML to YAML Converter: Cargo.toml, pyproject.toml | Free",
+ "metaDescription": "Validate TOML and convert it to YAML. Tables, arrays of tables and inline tables are supported. Free, runs in your browser.",
+ "intro": "Parses TOML and writes it as block-style YAML, with an error message that names the line when the TOML is invalid.",
+ "why": "Config moves between ecosystems: a Cargo.toml or pyproject.toml fragment may need to become YAML for a CI file or a Kubernetes style tool.\n\nThe page parses the TOML (tables, arrays of tables, inline tables, dotted keys, dates) and writes the same data as YAML. Types are kept: a quoted number stays a string. Comments are not carried over because the data model has none.",
+ "howTo": [
+  "Paste the TOML.",
+  "Pick the indent.",
+  "Read the YAML or the error.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Are comments kept?",
+   "a": "No. Comments are not data, so they are dropped."
+  },
+  {
+   "q": "How are dates written?",
+   "a": "As the parsed value, shown as text in YAML."
+  },
+  {
+   "q": "Can I go back?",
+   "a": "Yes, use YAML to TOML."
+  },
+  {
+   "q": "Is it uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "toml-to-json",
+  "yaml-to-toml",
+  "json-to-yaml",
+  "toml-formatter",
+  "yaml-validator",
+  "json-to-toml"
+ ],
+ "keywords": [
+  "toml to yaml",
+  "cargo.toml to yaml",
+  "pyproject toml to yaml",
+  "toml converter"
+ ]
+}

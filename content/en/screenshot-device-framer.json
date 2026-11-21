@@ -1,0 +1,45 @@
+{
+ "id": "screenshot-device-framer",
+ "seoTitle": "Screenshot Device Framer (Phone, Tablet, Laptop, Browser Mockup)",
+ "metaDescription": "Place a screenshot inside a generic phone, tablet, laptop or browser window frame on a plain or transparent background and download it as a PNG.",
+ "intro": "Put a screenshot inside a phone, tablet, laptop or browser frame.",
+ "why": "Choose a screenshot and a frame style, set the colours and padding, and download a PNG. The frames are generic shapes drawn on a canvas, not copies of any real product. A soft shadow and a transparent background are optional.\n\nThe frame is drawn around your image at its full size, so nothing is cropped or resized.",
+ "howTo": [
+  "Choose a screenshot.",
+  "Pick the device.",
+  "Set frame colour, background and padding.",
+  "Download the PNG."
+ ],
+ "faq": [
+  {
+   "q": "Are these real device mockups?",
+   "a": "No. They are simple generic frames."
+  },
+  {
+   "q": "Can the background be transparent?",
+   "a": "Yes. Type transparent in the background box."
+  },
+  {
+   "q": "Is my screenshot uploaded?",
+   "a": "No. It stays in your browser."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-border-frame-adder",
+  "code-to-image",
+  "image-watermark",
+  "quote-image-maker",
+  "og-image-size-checker",
+  "social-image-size-reference"
+ ],
+ "keywords": [
+  "screenshot mockup",
+  "device frame",
+  "browser mockup",
+  "phone mockup"
+ ]
+}

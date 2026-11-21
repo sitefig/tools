@@ -1,0 +1,43 @@
+{
+ "id": "speculation-rules-generator",
+ "seoTitle": "Speculation Rules Generator for Prefetch and Prerender",
+ "metaDescription": "Build speculationrules JSON for prefetch or prerender from URLs and patterns, with eagerness, exclusions and the script tag to paste.",
+ "intro": "Generates the speculation rules JSON and script tag for prefetching or prerendering likely next pages.",
+ "why": "Speculation rules can make the next navigation feel instant, if you pick pages carefully.\n\nThe tool writes list rules for exact URLs and document rules with href_matches for patterns, adds exclusions and a selector to skip, and sets eagerness. It splits URLs and patterns into separate rules because a rule cannot have both. Prerender is a Chromium feature; other browsers ignore it.",
+ "howTo": [
+  "Enter URLs or patterns such as /blog/*, one per line.",
+  "Choose prefetch or prerender and the eagerness.",
+  "Edit the exclusions.",
+  "Paste the script into your page and test in DevTools."
+ ],
+ "faq": [
+  {
+   "q": "Which eagerness is safest?",
+   "a": "moderate or conservative; immediate spends data on every match."
+  },
+  {
+   "q": "Is prerender risky?",
+   "a": "It runs the page without a visit, so avoid pages with side effects and check your analytics."
+  },
+  {
+   "q": "Do all browsers support it?",
+   "a": "Prefetch rules are in the HTML Standard; support differs. Unsupported browsers ignore the script."
+  },
+  {
+   "q": "Is anything sent?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "resource-hints-generator",
+  "cache-control-builder",
+  "http-cache-control-tester",
+  "lazy-loading-injector",
+  "core-web-vitals-grader"
+ ],
+ "keywords": [
+  "speculation rules generator",
+  "prerender prefetch json",
+  "speculationrules script"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "spreadsheet-diff",
+ "seoTitle": "Spreadsheet Diff: Added, Removed and Changed Cells",
+ "metaDescription": "Compare two CSV tables by key or by row position and see added, removed and changed cells, marked with signs and colour. Free.",
+ "intro": "Compares an old and a new table and lists the differences cell by cell.",
+ "why": "Before you replace a file, see what really changed. Match rows by a key column when the order may differ, or by position when it cannot. The result shows removed rows with a minus, added rows with a plus and changed cells as old to new.\n\nColour is never the only signal. Columns that exist in only one table count as differences too. The key column must be unique in both tables; if not, the tool says so rather than guessing.",
+ "howTo": [
+  "Paste the old table in the first box and the new one in the second.",
+  "Enter the key column, or clear it to match by position.",
+  "Read the summary counts and the table.",
+  "Copy the text list of changes."
+ ],
+ "faq": [
+  {
+   "q": "What if rows moved?",
+   "a": "With a key they are matched wherever they are."
+  },
+  {
+   "q": "Are numbers compared as numbers?",
+   "a": "No, as text, so 2.5 and 2.50 differ."
+  },
+  {
+   "q": "Added columns?",
+   "a": "Shown as changes from \"(no column)\"."
+  },
+  {
+   "q": "Large files?",
+   "a": "Fine to some tens of thousands of rows."
+  }
+ ],
+ "related": [
+  "text-diff",
+  "json-diff",
+  "csv-merger",
+  "table-joiner",
+  "duplicate-row-remover",
+  "sitemap-diff"
+ ],
+ "keywords": [
+  "compare two spreadsheets",
+  "csv diff",
+  "excel file comparison"
+ ]
+}

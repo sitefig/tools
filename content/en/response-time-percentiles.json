@@ -1,0 +1,44 @@
+{
+ "id": "response-time-percentiles",
+ "seoTitle": "Response Time Percentiles per Endpoint from Access Logs",
+ "metaDescription": "Compute p50, p90, p95 and p99 latency per endpoint from logs with request time. Pick the unit and merge numeric IDs. Free.",
+ "intro": "Groups requests by route and computes latency percentiles with the nearest-rank method.",
+ "why": "Averages hide slow requests. Percentiles show how bad the slow ones are. The tool groups by endpoint, optionally merging /items/12 and /items/13 into /items/:id.\n\nThe log must record the duration: add $request_time to nginx or %D to Apache. Results were checked against a Python nearest-rank calculation.",
+ "howTo": [
+  "Add the duration to your log format.",
+  "Paste the log lines.",
+  "Set the unit and whether to merge IDs.",
+  "Sort by p95, p99 or count."
+ ],
+ "faq": [
+  {
+   "q": "Which percentile method?",
+   "a": "Nearest rank: the smallest value with at least p percent of values at or below it."
+  },
+  {
+   "q": "What if my log has a different layout?",
+   "a": "Use the regex option with a named group rt, and optionally path."
+  },
+  {
+   "q": "What unit does nginx use?",
+   "a": "$request_time is in seconds with millisecond resolution; Apache %D is microseconds."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "access-log-parser",
+  "log-format-to-regex",
+  "request-spike-detector",
+  "haproxy-log-parser",
+  "alb-elb-log-parser",
+  "top-ips-user-agents"
+ ],
+ "keywords": [
+  "p95 latency from access log",
+  "nginx request_time percentiles",
+  "endpoint latency report"
+ ]
+}

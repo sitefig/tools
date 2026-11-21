@@ -1,0 +1,41 @@
+{
+ "id": "gpc-snippet-generator",
+ "seoTitle": "Global Privacy Control Script Gate: JavaScript Generator",
+ "metaDescription": "Generate JavaScript that respects the Global Privacy Control signal before loading trackers, plus the Sec-GPC server check. Free.",
+ "intro": "Generates a small script that loads your listed third-party scripts only if GPC is not set and (optionally) consent exists.",
+ "why": "Global Privacy Control is a browser setting that tells sites not to sell or share a visitor's data. Some US state laws, California for example, treat it as a valid opt-out request.\n\nThis tool builds a script that checks navigator.globalPrivacyControl before it adds your tracker scripts to the page, and gives the matching server-side check for the Sec-GPC header. In the EU the signal does not replace consent, so the script can also require a consent check function.",
+ "howTo": [
+  "List your scripts, one per line as name | https://url.",
+  "Choose whether to also honour Do Not Track and whether to require consent.",
+  "Copy the script into your page and call loadGatedScripts from your consent code.",
+  "Add the server check where you render tags on the server."
+ ],
+ "faq": [
+  {
+   "q": "Is GPC legally binding?",
+   "a": "Under some US state laws it must be honoured as an opt-out. Whether it applies to you depends on where your visitors are and your business size."
+  },
+  {
+   "q": "Why include Do Not Track?",
+   "a": "It is optional. DNT is a legacy signal that most sites ignore. Honouring it is harmless."
+  },
+  {
+   "q": "Can I test the signal?",
+   "a": "Yes. Use the Global Privacy Control Signal Tester to see if your browser sends it."
+  }
+ ],
+ "related": [
+  "gpc-signal-tester",
+  "google-consent-mode-snippet",
+  "cookie-banner-generator",
+  "privacy-law-applicability-checker",
+  "consent-banner-checklist",
+  "browser-info"
+ ],
+ "keywords": [
+  "global privacy control script",
+  "navigator.globalPrivacyControl",
+  "sec-gpc header",
+  "honor gpc"
+ ]
+}

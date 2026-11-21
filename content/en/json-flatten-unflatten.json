@@ -1,0 +1,45 @@
+{
+ "id": "json-flatten-unflatten",
+ "seoTitle": "Free JSON Flatten and Unflatten Tool Online",
+ "metaDescription": "Flatten nested JSON to dotted keys like a.b[0].c or rebuild nested objects from flat keys. Choose the delimiter and array style. Free, in-browser.",
+ "intro": "Flatten nested JSON into a single level of dotted keys such as user.emails[0], or turn flat keys back into the nested structure, with your own delimiter.",
+ "why": "Many tools cannot take nested data: spreadsheets, environment variable systems, translation files, form libraries and key-value stores all want one level of keys. Going from {\"user\":{\"emails\":[\"a\"]}} to user.emails[0] is easy for a person and tedious for a hundred fields.\n\nThis tool flattens with a delimiter you choose, and writes array positions either in brackets or as extra segments. Unflatten rebuilds objects and arrays from those keys. Empty objects and arrays are kept as values rather than lost. Round trips work when your keys do not contain the delimiter itself, so pick a rare one such as a slash or a double underscore if your data has dots in its keys.",
+ "howTo": [
+  "Paste your JSON and pick flatten or unflatten.",
+  "Set the delimiter, and tick the option to write array indexes as [0].",
+  "Copy the converted JSON."
+ ],
+ "faq": [
+  {
+   "q": "How are arrays flattened?",
+   "a": "By default as brackets, user.emails[0]. Without the bracket option they become dotted numbers, user.emails.0. The same setting decides how unflatten reads them back."
+  },
+  {
+   "q": "What if a key contains the delimiter?",
+   "a": "Then flattening is ambiguous and unflatten may split it wrongly. Choose a different delimiter such as a slash before converting data like that."
+  },
+  {
+   "q": "What happens to empty objects and arrays?",
+   "a": "They are kept as the value of their key, so a field holding an empty object stays visible. Nothing is silently dropped during flattening."
+  },
+  {
+   "q": "Does unflatten need an object?",
+   "a": "Yes. The input must be a JSON object whose keys are the flat paths. Arrays or plain values at the top level produce an error."
+  }
+ ],
+ "related": [
+  "env-to-json",
+  "json-to-env",
+  "json-to-csv",
+  "json-format",
+  "json-sort-keys",
+  "json-pointer-tester"
+ ],
+ "keywords": [
+  "json flatten online",
+  "flatten nested json",
+  "unflatten json dot notation",
+  "free json key flattener",
+  "json to dotted keys"
+ ]
+}

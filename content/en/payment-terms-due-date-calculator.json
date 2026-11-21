@@ -1,0 +1,39 @@
+{
+ "id": "payment-terms-due-date-calculator",
+ "seoTitle": "Payment Terms Due Date Calculator (Net 30, EOM)",
+ "metaDescription": "Find the invoice due date for net 14, 30, 60 or end-of-month terms, with days left or overdue.",
+ "intro": "Due date from the invoice date and a payment term.",
+ "why": "Terms such as net 30 and 30 days end of month sound alike but give different dates. The tool shows the exact due date and weekday.\n\nYou can move weekend due dates to Monday if your policy does. Public holidays are not considered.",
+ "howTo": [
+  "Enter the invoice date.",
+  "Choose a term or custom days.",
+  "Read the due date and days left."
+ ],
+ "faq": [
+  {
+   "q": "What is net 30?",
+   "a": "Payment due 30 calendar days after the invoice date."
+  },
+  {
+   "q": "What is 30 days EOM?",
+   "a": "Count 30 days then move to the end of that month."
+  },
+  {
+   "q": "Does the contract override this?",
+   "a": "Yes. The contract terms apply."
+  }
+ ],
+ "related": [
+  "late-payment-interest-calculator",
+  "add-subtract-dates",
+  "business-days",
+  "date-difference",
+  "invoice-generator",
+  "invoice-number-generator"
+ ],
+ "keywords": [
+  "payment terms",
+  "net 30 due date",
+  "end of month terms"
+ ]
+}

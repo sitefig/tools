@@ -1,0 +1,45 @@
+{
+  "id": "parquet-viewer",
+  "seoTitle": "Parquet File Viewer and CSV Converter (In Your Browser)",
+  "metaDescription": "Open a Parquet file: schema, row count, row groups, compression and the first rows, or convert them to CSV. Reads Snappy, gzip and uncompressed files. Nothing is uploaded.",
+  "intro": "Inspect a Parquet file from a data lake or export without Python or Spark.",
+  "why": "The reader parses the file footer (Thrift compact protocol), the schema, row groups and column chunks, decompresses pages (Snappy decoder included, gzip via the browser) and decodes PLAIN, dictionary, RLE/bit-packed, delta-binary-packed and byte-stream-split encodings with null handling for data pages version 1 and 2. Dates, timestamps (millis, micros, INT96), decimals and strings are formatted. Output was compared value by value with pyarrow on files written with several compression, encoding and page-version settings.\n\nIt reads flat tables only: nested structures, repeated fields and ZSTD, LZ4 or Brotli compression are reported as unsupported, since browsers provide no decoders for them. Large files are read in memory, and only the requested number of rows is decoded.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose a .parquet file.",
+    "Set how many rows to read.",
+    "View the table, or choose CSV output to copy the rows.",
+    "Use a data tool for nested or ZSTD-compressed files."
+  ],
+  "faq": [
+    {
+      "q": "Why does it say ZSTD is not supported?",
+      "a": "Browsers expose no Zstandard decompressor to pages, and third-party code is not used here."
+    },
+    {
+      "q": "Can it read nested columns?",
+      "a": "No, only flat tables."
+    },
+    {
+      "q": "Is my file uploaded?",
+      "a": "No, it is read locally."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "csv-viewer",
+    "csv-column-profiler",
+    "sqlite-file-viewer",
+    "csv-to-parquet-schema",
+    "json-to-csv",
+    "xlsx-viewer"
+  ],
+  "keywords": [
+    "parquet viewer",
+    "open parquet file online",
+    "parquet to csv",
+    "parquet reader browser"
+  ]
+}

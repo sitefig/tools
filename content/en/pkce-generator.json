@@ -1,0 +1,45 @@
+{
+ "id": "pkce-generator",
+ "seoTitle": "Free PKCE Generator: code_verifier and S256 Challenge",
+ "metaDescription": "Generate an RFC 7636 PKCE code_verifier, its S256 code_challenge, plus random state and nonce. Free, and everything runs in your browser.",
+ "intro": "Create a PKCE code_verifier and its S256 code_challenge for OAuth, with a random state and nonce. You can also paste your own verifier to get its challenge.",
+ "why": "PKCE protects the OAuth authorisation code flow for public clients such as single-page apps and mobile apps. The client invents a secret verifier, sends only its SHA-256 hash in the authorisation request, and later proves it owns the secret when exchanging the code.\n\nWhile you are integrating with an identity provider, it helps to produce a matching pair by hand and test the endpoints with curl or Postman. This tool makes a verifier of 43 to 128 characters from the allowed set, hashes it with SHA-256 using your browser crypto API, and encodes the result as Base64URL. In a real app, generate a fresh verifier for every login request in code; do not reuse values from a web page.",
+ "howTo": [
+  "Choose a verifier length between 43 and 128, or paste your own verifier.",
+  "Read the code_verifier, code_challenge, method, state and nonce.",
+  "Use the challenge in the authorise request and the verifier in the token request."
+ ],
+ "faq": [
+  {
+   "q": "Why only S256?",
+   "a": "RFC 7636 recommends S256 whenever the client can compute SHA-256, and the plain method offers little protection. The tool outputs code_challenge_method=S256."
+  },
+  {
+   "q": "What characters can a verifier contain?",
+   "a": "Letters, digits, hyphen, dot, underscore and tilde, with a length of 43 to 128. A pasted value outside this rule is rejected with an error."
+  },
+  {
+   "q": "Should I use generated values in production?",
+   "a": "No. Use them to test and learn the flow. A real client should generate a new random verifier per authorisation request, in code, and keep it only in memory or session storage until the token exchange."
+  },
+  {
+   "q": "What are state and nonce for?",
+   "a": "State ties the response to your request and defends against cross-site request forgery. Nonce, used with OpenID Connect, ties the ID token to the request and defends against replay."
+  }
+ ],
+ "related": [
+  "base64url-encoder",
+  "jwt-decode",
+  "hash-generator",
+  "random-secret-generator",
+  "jwt-encode",
+  "totp-generator"
+ ],
+ "keywords": [
+  "pkce generator",
+  "code_verifier code_challenge generator",
+  "oauth pkce s256 online",
+  "free pkce tool",
+  "rfc 7636 verifier"
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free JWT Decoder to Read Header and Payload | Free Tools</title>
+<meta name="description" content="Decode a JSON Web Token to see its header, payload and human-readable exp, iat and nbf times. Free, runs in your browser, and does not verify the signature.">
+<link rel="canonical" href="https://tools.sitefig.net/en/jwt-decode/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/jwt-decode/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/jwt-decode/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free JWT Decoder to Read Header and Payload | Free Tools">
+<meta property="og:description" content="Decode a JSON Web Token to see its header, payload and human-readable exp, iat and nbf times. Free, runs in your browser, and does not verify the signature.">
+<meta property="og:url" content="https://tools.sitefig.net/en/jwt-decode/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free JWT Decoder to Read Header and Payload | Free Tools">
+<meta name="twitter:description" content="Decode a JSON Web Token to see its header, payload and human-readable exp, iat and nbf times. Free, runs in your browser, and does not verify the signature.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"JWT Decoder","url":"https://tools.sitefig.net/en/jwt-decode/","description":"Decode a JSON Web Token to see its header, payload and human-readable exp, iat and nbf times. Free, runs in your browser, and does not verify the signature.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the JWT into the box. A leading \"Bearer \" is removed for you.","Read the header, which shows the algorithm and type.","Read the payload and the timestamps section, including whether exp has passed.","Copy any claim you need, or move to the verifier to check the signature."],"keywords":"jwt decoder, decode jwt online, json web token viewer, free jwt parser, jwt payload reader, check jwt expiry","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Hashing & JWT","item":"https://tools.sitefig.net/en/#hashing-and-jwt"},{"@type":"ListItem","position":3,"name":"JWT Decoder","item":"https://tools.sitefig.net/en/jwt-decode/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does decoding prove the token is valid?","acceptedAnswer":{"@type":"Answer","text":"No. Anyone can create a token with any claims. Decoding only shows what the token says. To trust it you must verify the signature with the right key and check the issuer, audience and expiry on your server."}},{"@type":"Question","name":"Are JWTs encrypted?","acceptedAnswer":{"@type":"Answer","text":"Normal signed JWTs are only encoded, not encrypted, so anyone holding one can read the payload. Do not put secrets in it. Encrypted tokens (JWE) have five parts and are not handled by this tool."}},{"@type":"Question","name":"Why does it say a JWT needs three parts?","acceptedAnswer":{"@type":"Answer","text":"A signed JWT is header.payload.signature, joined by dots. If your string has a different number of parts, it may be truncated, include extra text, or be a different token type, such as an opaque access token."}},{"@type":"Question","name":"Is it safe to paste a real token?","acceptedAnswer":{"@type":"Answer","text":"Decoding is done locally and nothing is uploaded. Still, a valid token can be replayed by anyone who sees it, so prefer expired or test tokens and never share live ones."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#hashing-and-jwt">Hashing &amp; JWT</a></li><li><span aria-current="page">JWT Decoder</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>JWT Decoder</h1>
+<p class="lede">Paste a JWT and read its header and payload as formatted JSON. Expiry, issued-at and not-before times are shown as dates. The signature is not verified.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="jwt-decode" data-module="encode" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>When a login fails or an API returns 401, the first question is what the token actually says. Has it expired, which audience was it issued for, which scopes does it carry? A JWT is only Base64 text, so you can read the claims without a key, but not by eye.</p>
+<p>This decoder splits the token, decodes the header and payload, and converts exp, iat and nbf into readable dates with a note on whether the token has expired. It runs in your browser, so the token is not uploaded. It does not check the signature; use the verifier for that. Avoid pasting live production tokens into pages you do not trust.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the JWT into the box. A leading &quot;Bearer &quot; is removed for you.</li><li>Read the header, which shows the algorithm and type.</li><li>Read the payload and the timestamps section, including whether exp has passed.</li><li>Copy any claim you need, or move to the verifier to check the signature.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does decoding prove the token is valid?</summary><p>No. Anyone can create a token with any claims. Decoding only shows what the token says. To trust it you must verify the signature with the right key and check the issuer, audience and expiry on your server.</p></details>
+<details><summary>Are JWTs encrypted?</summary><p>Normal signed JWTs are only encoded, not encrypted, so anyone holding one can read the payload. Do not put secrets in it. Encrypted tokens (JWE) have five parts and are not handled by this tool.</p></details>
+<details><summary>Why does it say a JWT needs three parts?</summary><p>A signed JWT is header.payload.signature, joined by dots. If your string has a different number of parts, it may be truncated, include extra text, or be a different token type, such as an opaque access token.</p></details>
+<details><summary>Is it safe to paste a real token?</summary><p>Decoding is done locally and nothing is uploaded. Still, a valid token can be replayed by anyone who sees it, so prefer expired or test tokens and never share live ones.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/jwt-verify-hs/"><span class="link-card__title">JWT Verifier (HS256/384/512)</span><span class="link-card__desc">Verify a JWT signature with a shared secret and check exp/nbf.</span></a></li><li><a class="link-card" href="/en/jwt-encode/"><span class="link-card__title">JWT Encoder / Signer</span><span class="link-card__desc">Create and sign a JWT with HS256, HS384 or HS512.</span></a></li><li><a class="link-card" href="/en/jwt-signature-validator/"><span class="link-card__title">JWT Signature Validator (RS / PS / ES / EdDSA / HS)</span><span class="link-card__desc">Verify a JWT signature against a public key (PEM SPKI, PKCS#1, X.509 certificate), a JWK or a JWKS (matched by kid), or an HMAC secret. Supports RS256/384/512, PS256/384/512, ES256/384/512, EdDSA (Ed25519) and HS256/384/512, decodes header and payload and checks exp / nbf / iat. Blocks the classic &quot;HS256 signed with the public key&quot; algorithm-confusion trick and flags alg &quot;none&quot;.</span></a></li><li><a class="link-card" href="/en/jwt-expiry-calculator/"><span class="link-card__title">JWT Expiry Calculator</span><span class="link-card__desc">Check exp / nbf / iat of one or more JWTs against now (or a time you choose) with optional clock-skew leeway: remaining lifetime, total lifetime, and warnings. The signature is not verified.</span></a></li><li><a class="link-card" href="/en/base64url-encoder/"><span class="link-card__title">Base64URL Encoder / Decoder</span><span class="link-card__desc">URL-safe Base64 (RFC 4648 section 5): - and _ instead of + and /, no padding. Decoder accepts standard Base64 too.</span></a></li><li><a class="link-card" href="/en/timestamp-converter/"><span class="link-card__title">Unix Timestamp Converter</span><span class="link-card__desc">Unix seconds/ms to ISO, UTC, local and relative time, and date strings to timestamps.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+ "id": "htaccess-to-nginx",
+ "seoTitle": "Free .htaccess to nginx Converter - Rewrite Rules",
+ "metaDescription": "Translate common Apache .htaccess rules (Redirect, RewriteRule, ErrorDocument, Header, Expires) into nginx config. Unsupported lines are flagged. Free.",
+ "intro": "Converts common Apache .htaccess directives to nginx syntax, including redirects, rewrite rules with conditions, error pages and headers, and marks anything it cannot translate as a TODO.",
+ "why": "Switching a site from Apache to nginx means rewriting every .htaccess rule by hand, because nginx has no per-directory override files and uses a different rewrite model. Redirect chains, www and HTTPS rules and front-controller patterns are the parts that break most often. This tool handles the common cases and converts RewriteCond and RewriteRule pairs, flags such as R, L, NC, F and G, ErrorDocument, Options -Indexes, headers and expiry rules. It will not cover every Apache feature, so unsupported lines stay in the output as \"# TODO\" comments for you to resolve. It saves the typing but not the review: always check the result and run nginx -t before reloading.",
+ "howTo": [
+  "Paste the contents of your .htaccess file into the input box.",
+  "Run the conversion and read the nginx directives it produces.",
+  "Resolve every \"# TODO\" line, put the rules in the right server or location block, and test with nginx -t."
+ ],
+ "faq": [
+  {
+   "q": "What is converted and what is not?",
+   "a": "Redirect, RedirectMatch, RewriteRule with RewriteCond (HTTPS, host, URI, query, filename checks), ErrorDocument, Options, DirectoryIndex, Header set, ExpiresByType and Require or Deny. Anything else becomes a TODO comment."
+  },
+  {
+   "q": "Where do I put the output?",
+   "a": "Most lines belong in a server or location block. Expiry rules produce a map block that goes in the http context. The tool does not know your layout, so place them yourself."
+  },
+  {
+   "q": "Can I trust the result without testing?",
+   "a": "No. Apache and nginx evaluate rewrites differently, and the converter is a pattern-based translation. Run nginx -t, then test real URLs for redirects and loops before going live."
+  },
+  {
+   "q": "Why do some RewriteCond rules become TODO?",
+   "a": "Conditions on variables the tool does not map, or back-references that cannot be carried safely, are left for you. It is safer to flag them than to guess."
+  }
+ ],
+ "related": [
+  "nginx-formatter",
+  "redirect-rules-converter",
+  "nginx-config-generator",
+  "htaccess-generator",
+  "caddy-to-nginx",
+  "redirect-code-generator"
+ ],
+ "keywords": [
+  "htaccess to nginx",
+  "convert htaccess to nginx",
+  "apache rewrite to nginx",
+  "free htaccess converter",
+  "nginx rewrite rules from htaccess"
+ ]
+}

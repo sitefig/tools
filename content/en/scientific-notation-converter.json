@@ -1,0 +1,39 @@
+{
+ "id": "scientific-notation-converter",
+ "seoTitle": "Scientific and Engineering Notation Converter",
+ "metaDescription": "Convert numbers to scientific or engineering notation and expand 6.02e23 to a full decimal, exactly. Free.",
+ "intro": "Writes numbers as a coefficient times a power of ten (scientific and engineering), and expands notation such as 6.02e23 or 1.5 x 10^-3 into decimals.",
+ "why": "Very large and very small numbers are easier to read as a power of ten. Calculators show 6.02E23 while a paper may say 6.02 x 10^23.\n\nDigits are processed as text, so nothing is rounded. Engineering notation uses exponents that are multiples of three, matching SI prefixes.",
+ "howTo": [
+  "Enter one number or notation per line.",
+  "Read scientific, engineering and decimal forms.",
+  "Copy what you need."
+ ],
+ "faq": [
+  {
+   "q": "What forms can I enter?",
+   "a": "Plain numbers, 6.02e23, 6.02 x 10^23 and 6.02 times 10^23 with the times sign."
+  },
+  {
+   "q": "What is engineering notation?",
+   "a": "Scientific notation where the exponent is a multiple of 3."
+  },
+  {
+   "q": "Does it track significant figures?",
+   "a": "No. Trailing zeros are dropped."
+  }
+ ],
+ "related": [
+  "bignumber-calculator",
+  "unit-converter",
+  "number-base-converter",
+  "ieee754-converter",
+  "statistics-calculator",
+  "number-to-words"
+ ],
+ "keywords": [
+  "scientific notation converter",
+  "e notation to decimal",
+  "engineering notation"
+ ]
+}

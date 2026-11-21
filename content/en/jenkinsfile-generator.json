@@ -1,0 +1,45 @@
+{
+  "id": "jenkinsfile-generator",
+  "seoTitle": "Jenkinsfile Generator (Declarative Pipeline)",
+  "metaDescription": "Generate a declarative Jenkins pipeline with agent, timeout, build, test and deploy stages, JUnit reporting, a branch condition and post actions.",
+  "intro": "Create a starter Jenkinsfile with sensible options for a typical build, test and deploy flow.",
+  "why": "Pick an agent (any, a Docker image or a node label), enter build, test and deploy commands and the branch that may deploy. The output sets a timeout, disables concurrent builds, keeps the last 20 builds, runs each stage with sh steps, publishes JUnit results when present, restricts deploy with a when { branch } condition and cleans the workspace afterwards.\n\nCommands are written inside single-quoted Groovy strings with quotes escaped. Credentials should come from the Jenkins credentials store via withCredentials, not from the file.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the agent and enter your commands.",
+    "Set the deploy branch and timeout.",
+    "Save as Jenkinsfile in the repository root.",
+    "Create a Pipeline job that uses it."
+  ],
+  "faq": [
+    {
+      "q": "Declarative or scripted?",
+      "a": "Declarative is simpler and recommended for most pipelines; this tool writes declarative."
+    },
+    {
+      "q": "Does it need the Docker plugin?",
+      "a": "Only if you choose the docker agent."
+    },
+    {
+      "q": "How do I add secrets?",
+      "a": "Use credentials bindings, for example withCredentials, and never print them."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "circleci-config-generator",
+    "github-actions-generator",
+    "gitlab-ci-generator",
+    "dockerfile-generator",
+    "makefile-generator",
+    "kubernetes-deployment-generator"
+  ],
+  "keywords": [
+    "jenkinsfile generator",
+    "jenkins pipeline example",
+    "declarative pipeline",
+    "jenkins ci"
+  ]
+}

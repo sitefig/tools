@@ -1,0 +1,45 @@
+{
+ "id": "howto-schema-generator",
+ "seoTitle": "HowTo Schema Generator (Google No Longer Shows How-to Results)",
+ "metaDescription": "Build HowTo JSON-LD with steps, tools, supplies and total time as an ISO 8601 duration. Notes the 2023 removal of how-to rich results.",
+ "intro": "Builds HowTo markup with steps (name, text, image, URL), tools, supplies and total time, with the duration written in ISO 8601.",
+ "why": "The tool is honest about the main fact: Google removed how-to rich results in 2023 and no longer shows them. The markup is still valid Schema.org and other software may read it, so the generator stays, but the output says plainly that it gives no Google result.\n\nTimes are converted for you: type 15 min or 1h 30m and get PT15M or PT1H30M. Each step line takes a name, the instruction text, and optionally an image and a step URL, separated by vertical bars.",
+ "howTo": [
+  "Enter the name, description and total time.",
+  "Add tool: and supply: lines.",
+  "Add one step: line per step: name | text | image | URL.",
+  "Copy the script tag if you still want the markup."
+ ],
+ "faq": [
+  {
+   "q": "Will this give me a rich result?",
+   "a": "Not in Google Search. The feature was removed in September 2023."
+  },
+  {
+   "q": "Why keep generating it?",
+   "a": "Valid HowTo data can still help other tools and assistants. Decide for yourself whether it is worth the page weight."
+  },
+  {
+   "q": "How is total time written?",
+   "a": "As an ISO 8601 duration such as PT1H30M, converted from what you type."
+  },
+  {
+   "q": "Are images required for steps?",
+   "a": "No. They are optional."
+  }
+ ],
+ "related": [
+  "schema-deprecation-checker",
+  "iso-8601-duration-builder",
+  "schema-generator",
+  "recipe-schema-generator",
+  "jsonld-syntax-validator",
+  "rich-result-eligibility-checker"
+ ],
+ "keywords": [
+  "howto schema generator",
+  "howto json-ld steps",
+  "how-to structured data",
+  "howto markup"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "battery-life-estimator",
+  "seoTitle": "Battery Life Estimator for Duty-Cycled IoT Devices",
+  "metaDescription": "Estimate battery life for a device that wakes, works and sleeps from capacity, active and sleep currents and times, with a usable-capacity derating.",
+  "intro": "Predict how long a coin cell or battery pack will last for a sensor that spends most of its time asleep.",
+  "why": "Average current is the time-weighted mean of active current and sleep current over a cycle. Life is the usable capacity (capacity times your derating for self-discharge, temperature and ageing) divided by that average, shown in hours, days and years, along with the share of energy spent while active.\n\nPulse currents cause voltage sag and reduce usable capacity, and cold temperatures cut it further, so measure real current with a power analyser before committing to a battery choice.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter capacity and usable percentage.",
+    "Enter active current and time, sleep current and cycle length.",
+    "Read the estimated life.",
+    "Reduce the active share to extend it."
+  ],
+  "faq": [
+    {
+      "q": "Why is sleep current in microamps?",
+      "a": "Low-power devices sleep at microamps, so small differences matter."
+    },
+    {
+      "q": "What derating should I use?",
+      "a": "70 to 85% is typical for primary cells; less for cold or high-pulse loads."
+    },
+    {
+      "q": "Does it include self-discharge?",
+      "a": "Only through the usable-capacity percentage."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "uart-baud-calculator",
+    "pwm-calculator",
+    "electricity-cost-calculator",
+    "wavelength-antenna-calculator",
+    "time-duration-calculator",
+    "unit-converter"
+  ],
+  "keywords": [
+    "battery life calculator",
+    "iot battery estimate",
+    "duty cycle current",
+    "coin cell life"
+  ]
+}

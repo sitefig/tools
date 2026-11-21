@@ -1,0 +1,46 @@
+{
+ "id": "llms-txt-generator",
+ "seoTitle": "Free llms.txt Generator for AI Assistants",
+ "metaDescription": "Create an llms.txt file that lists your key pages with short descriptions for AI assistants. Free; built in your browser.",
+ "intro": "Write a title, summary and sections of links, and get a correctly formatted llms.txt file: a markdown index of your most useful pages for AI assistants to read.",
+ "why": "The llms.txt idea is a plain markdown file at the root of a site that tells AI assistants what the site is and which pages matter most, in a form that is easy to read without crawling the whole site. It is a proposal and not a standard, and no search engine or AI company guarantees that it will read it.\n\nThis generator saves you the formatting. Enter a title, a one-line summary and optional details, then sections with lines of name, URL and a short description. It outputs the heading, the quote block summary and a list of links under each section heading. A section called Optional marks lower-priority pages. Save the result as llms.txt in your site root. Nothing is sent anywhere, because the file is produced in your browser.",
+ "howTo": [
+  "Fill in title, summary and details at the top of the box.",
+  "Add sections with a line starting ## and then one link per line in the form name | url | description.",
+  "Run the tool to produce the formatted file.",
+  "Save the result as llms.txt and place it at the root of your site."
+ ],
+ "faq": [
+  {
+   "q": "Do AI assistants actually use llms.txt?",
+   "a": "There is no guarantee. It is a community proposal, and support varies between tools. It costs little to add, but do not expect a measurable effect on search or AI answers."
+  },
+  {
+   "q": "What does the Optional section mean?",
+   "a": "In the proposal, a section named Optional lists secondary links that can be skipped when a short context is needed. Put background material there and your essentials in the main sections."
+  },
+  {
+   "q": "What is the link line format?",
+   "a": "Use name | url | description, with the description optional. The tool writes it as a markdown list item with the name linked to the URL, followed by a colon and the description."
+  },
+  {
+   "q": "Is my content sent to a server?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "robots-generator",
+  "ai-bot-robots-builder",
+  "sitemap-generator",
+  "markdown-preview",
+  "meta-tag-generator",
+  "schema-generator"
+ ],
+ "keywords": [
+  "llms.txt generator",
+  "create llms.txt",
+  "llms txt file builder",
+  "ai friendly site index",
+  "llms.txt example free"
+ ]
+}

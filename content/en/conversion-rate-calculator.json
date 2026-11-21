@@ -1,0 +1,45 @@
+{
+ "id": "conversion-rate-calculator",
+ "seoTitle": "Conversion Rate Calculator with Target Conversions Needed",
+ "metaDescription": "Calculate conversion rate from visitors and conversions, and see how many conversions or visitors you need to hit a target. Free and private.",
+ "intro": "Enter visitors and conversions for the rate, and a target rate for what it takes to reach it.",
+ "why": "The rate is simple, but the target view is what helps planning: how many more conversions a 3% goal means on the same traffic, and how much traffic the current rate would need.\n\nDefine visitors the same way as your analytics tool (sessions or users), and conversions as one event, or the rate is not comparable between sources.",
+ "howTo": [
+  "Enter visitors and conversions.",
+  "Enter a target rate, or 0 to skip.",
+  "Read the rate and the gap.",
+  "Use the A/B tools to plan improvements."
+ ],
+ "faq": [
+  {
+   "q": "Visitors or sessions?",
+   "a": "Use whichever your analytics reports, and stay consistent."
+  },
+  {
+   "q": "What is a good rate?",
+   "a": "It varies a lot by site and goal; compare with your own history."
+  },
+  {
+   "q": "Can conversions exceed visitors?",
+   "a": "Not here, since each visitor counts at most once."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "ab-test-calculator",
+  "ab-test-duration-calculator",
+  "marketing-funnel-calculator",
+  "conversion-funnel-visualizer",
+  "ads-roas-calculator",
+  "cac-ltv-calculator"
+ ],
+ "keywords": [
+  "conversion rate calculator",
+  "calculate conversion rate",
+  "target conversion rate",
+  "conversions needed"
+ ]
+}

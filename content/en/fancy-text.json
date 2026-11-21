@@ -1,0 +1,46 @@
+{
+  "id": "fancy-text",
+  "seoTitle": "Free Fancy Text Generator: Bold, Script, Fraktur",
+  "metaDescription": "Turn plain text into bold, italic, script, gothic, double-struck, circled, small caps and upside-down Unicode styles. Free, runs in your browser.",
+  "intro": "Converts your text into many Unicode lookalike styles, such as bold, italic, script, fraktur, monospace, circled, small caps and upside-down. Pick one style or see them all at once.",
+  "why": "Social networks, chat apps and profile fields usually offer no formatting, so people reach for Unicode letters that look bold, curly or gothic. Typing those characters is impossible from a normal keyboard, which is why a converter is handy for a display name, a bio, a heading in a plain text post or a bit of fun in a message.\n\nChoose a style, or leave it on all to see every version stacked in the output. Click and copy the one you like. These are different Unicode characters, not real fonts, so they can be read badly by screen readers and may not appear in every app or search index. Use them sparingly. Conversion runs in your browser only.",
+  "howTo": [
+    "Type the text you want to restyle.",
+    "Leave the style on all to see every version, or pick one from the list.",
+    "Copy the styled line you like from the output.",
+    "Paste it into your profile, post or message."
+  ],
+  "faq": [
+    {
+      "q": "Which styles are included?",
+      "a": "Bold, italic, bold italic, script, bold script, fraktur, bold fraktur, double-struck, sans-serif variants, monospace, circled, negative circled, squared, fullwidth, small caps, strikethrough, underline and upside-down."
+    },
+    {
+      "q": "Why do some letters show as boxes?",
+      "a": "The result uses special Unicode characters, and not every font or app can draw them. Older systems may show empty boxes. Test the text on the platform where it will appear."
+    },
+    {
+      "q": "Are these accessible and searchable?",
+      "a": "Not really. Screen readers may read each character by its mathematical name, and search engines treat the characters as different from plain letters. Avoid using them for important text such as names, headings or contact details."
+    },
+    {
+      "q": "What happens to numbers and punctuation?",
+      "a": "Some styles convert digits as well, such as bold, double-struck and monospace. Characters a style does not cover, including most punctuation and accented letters, pass through unchanged."
+    }
+  ],
+  "related": [
+    "zalgo-text",
+    "leetspeak",
+    "unicode-character-map",
+    "emoji-picker",
+    "case-converter",
+    "reverse-text"
+  ],
+  "keywords": [
+    "fancy text generator",
+    "unicode text styles",
+    "bold text generator",
+    "cool font generator copy paste",
+    "upside down text generator"
+  ]
+}

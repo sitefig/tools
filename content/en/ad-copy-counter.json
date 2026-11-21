@@ -1,0 +1,47 @@
+{
+ "id": "ad-copy-counter",
+ "seoTitle": "Free Ad Copy Character Counter for Google, Meta, X",
+ "metaDescription": "Check ad text against character limits for Google Search, Meta, LinkedIn and X. One field per line, flags what is over. Free, runs in your browser.",
+ "intro": "Paste your ad copy one field per line and see each field's length against the limit for Google Search, Meta, LinkedIn or X, with a clear ok or over-by count.",
+ "why": "Ad platforms cut or reject text that is too long, and the limits differ for every field: a Google headline allows 30 characters, a description 90, a LinkedIn headline 70. Counting by hand while writing variants is slow, and finding out in the ad manager that headline two is three characters over wastes review time.\n\nThis counter assigns each line to the field in order, then shows its length, the limit and the status. It counts characters the way you see them, so an emoji counts as one. It also lists fields you have not filled in yet. Limits are standard and recommended values and platforms change them, so confirm in the ad manager.",
+ "howTo": [
+  "Choose the platform: Google Search (RSA), Meta, LinkedIn or X.",
+  "Type or paste your copy with one field per line, in the order the platform lists them.",
+  "Run the counter.",
+  "Fix any line marked \"over by\" and check which fields are still missing."
+ ],
+ "faq": [
+  {
+   "q": "Which fields are expected, and in what order?",
+   "a": "For Google Search: three headlines, two descriptions and two path fields. For Meta: primary text, headline, description. For LinkedIn: intro text, headline, description. For X: the post and the card title. Lines are matched in that order."
+  },
+  {
+   "q": "How are characters counted?",
+   "a": "By visible characters, so an emoji or accented letter counts as one. Some platforms count differently, for example X weights certain characters, so treat results near the limit with care."
+  },
+  {
+   "q": "Are these limits official?",
+   "a": "They are the commonly published display and recommended limits at the time of writing. Platforms update them and may truncate text that is within the hard limit, so check the current rules in the ad manager."
+  },
+  {
+   "q": "What if I have more lines than fields?",
+   "a": "Extra lines are labelled \"(extra line)\" and measured against the last field's limit, so you can still see how long they are."
+  }
+ ],
+ "related": [
+  "serp-snippet",
+  "title-length-checker",
+  "meta-tag-generator",
+  "title-case-headline-analyzer",
+  "word-counter",
+  "utm-builder"
+ ],
+ "keywords": [
+  "ad copy character counter",
+  "google ads headline character limit",
+  "facebook ad text length checker",
+  "free ad copy checker",
+  "linkedin ad character limits",
+  "rsa headline counter"
+ ]
+}

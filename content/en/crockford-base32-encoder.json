@@ -1,0 +1,45 @@
+{
+ "id": "crockford-base32-encoder",
+ "seoTitle": "Free Crockford Base32 Encoder and Decoder",
+ "metaDescription": "Encode text or hex bytes to Crockford Base32, which skips I, L, O and U and reads O and I as 0 and 1. Free, runs in your browser.",
+ "intro": "Encode text or hex bytes to Crockford Base32, or decode it back. The alphabet avoids easily confused letters and is case-insensitive when decoding.",
+ "why": "Douglas Crockford designed his Base32 to be read and typed by people. It leaves out I, L, O and U so that you do not confuse them with 1 and 0, and to avoid accidental rude words. Decoders treat O as zero and I or L as one, and ignore hyphens, so a value copied from a printout still decodes.\n\nYou will see it in ULIDs, which use the same alphabet for their 26-character form, and in some human-friendly identifiers. This tool lets you encode bytes or text, or decode a string to see what it holds. Note that it is the plain alphabet with no check symbol, and it is not RFC 4648 Base32.",
+ "howTo": [
+  "Choose encode or decode, and whether the bytes are text or hex.",
+  "Paste your input. Hyphens and spaces are ignored when decoding.",
+  "Copy the result from the output box."
+ ],
+ "faq": [
+  {
+   "q": "How is it different from RFC 4648 Base32?",
+   "a": "The alphabet and the order differ. Crockford uses 0 to 9 then A to Z without I, L, O and U, while RFC 4648 uses A to Z followed by 2 to 7. Strings are not interchangeable."
+  },
+  {
+   "q": "Is the output padded?",
+   "a": "No. Padding characters are not used. The last group is filled with zero bits to reach five, so lengths follow directly from the byte count."
+  },
+  {
+   "q": "Does it support the check symbol?",
+   "a": "No. Crockford describes an optional check character at the end of a value, but this tool encodes and decodes only the data itself, without any check symbol."
+  },
+  {
+   "q": "Is a ULID decoded correctly here?",
+   "a": "The alphabet matches, but a ULID packs 128 bits into 26 characters with a leading padding, so use the ULID tool to read its timestamp and random part."
+  }
+ ],
+ "related": [
+  "ulid-generator",
+  "base32",
+  "base58-encoder",
+  "base64url-encoder",
+  "hex-to-base64",
+  "uuid-generator"
+ ],
+ "keywords": [
+  "crockford base32",
+  "base32 crockford encoder",
+  "crockford base32 decoder online",
+  "free base32 converter",
+  "ulid alphabet encoding"
+ ]
+}

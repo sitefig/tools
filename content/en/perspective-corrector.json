@@ -1,0 +1,45 @@
+{
+ "id": "perspective-corrector",
+ "seoTitle": "Perspective Corrector (Straighten a Photo of a Page or Building)",
+ "metaDescription": "Mark the four corners of a document, whiteboard or facade in a photo and warp it into a flat rectangle. Drag the corners or type their positions.",
+ "intro": "Straighten a skewed photo of a page, whiteboard or building.",
+ "why": "Choose a photo and move four numbered corners onto the corners of the flat object. Press Straighten and the picture is warped into a flat rectangle. You can drag the handles or type each corner position in percent, so it works without a pointer.\n\nThe output size is worked out from the edge lengths, or you can set it. Sampling is bilinear, and the warp was checked against Pillow's perspective transform.",
+ "howTo": [
+  "Choose a photo.",
+  "Move the four corners onto the object, clockwise from the top left.",
+  "Optionally set the output size.",
+  "Press Straighten and download the PNG."
+ ],
+ "faq": [
+  {
+   "q": "Why four points?",
+   "a": "A perspective change is defined by four corner pairs."
+  },
+  {
+   "q": "Is the result a scan?",
+   "a": "It is a flattened picture. For text, a clean scan from a good photo helps."
+  },
+  {
+   "q": "Is the size limited?",
+   "a": "Output is limited to 5000 pixels per side."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-cropper",
+  "image-rotate-flip",
+  "ocr-image-to-text",
+  "images-to-pdf",
+  "image-resizer",
+  "image-filters"
+ ],
+ "keywords": [
+  "perspective correction",
+  "straighten photo",
+  "document scan",
+  "keystone correction"
+ ]
+}

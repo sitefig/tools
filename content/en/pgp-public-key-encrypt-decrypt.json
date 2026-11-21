@@ -1,0 +1,45 @@
+{
+ "id": "pgp-public-key-encrypt-decrypt",
+ "seoTitle": "PGP Encrypt with Public Key Online, gpg Compatible",
+ "metaDescription": "Encrypt text to an armored PGP public key or decrypt a gpg message with your private key in the browser. RSA, Curve25519, P-256. Nothing is uploaded.",
+ "intro": "Encrypts a message to one or more OpenPGP public keys and decrypts messages made by gpg or other OpenPGP software when you paste the private key, all inside the page.",
+ "why": "Sending an encrypted note to someone who published a PGP key normally needs gpg and a terminal. This page implements the needed parts of OpenPGP from the RFC: reading keys, picking the encryption subkey, wrapping a random AES-256 session key with RSA or ECDH, and a protected data packet with an integrity check. Messages decrypt with gpg, and messages from gpg decrypt here.\n\nKeys and text never leave your browser, but a private key pasted into any web page is a risk you should weigh; use a throwaway key for sensitive work or the gpg command line. Supported: version 4 keys, RSA, ECDH on Curve25519, P-256, P-384 and P-521, secret keys protected by a passphrase, messages with integrity protection (SEIPD version 1) or the OCB packet gpg 2.4 writes, and compression. Not supported: version 6 keys and RFC 9580 messages, ElGamal, signing and verifying, Argon2 and BZip2. Signatures are ignored.",
+ "howTo": [
+  "Choose Encrypt or Decrypt.",
+  "To encrypt, paste your text and the recipient's public key block; several keys can be pasted one after another.",
+  "To decrypt, paste the PGP MESSAGE, your private key block and its passphrase.",
+  "Copy the armored result or the decrypted text."
+ ],
+ "faq": [
+  {
+   "q": "Is it compatible with gpg?",
+   "a": "Yes for the supported algorithms. It was tested in both directions with gpg 2.4.4 on RSA 2048 and 3072, Curve25519, NIST P-256, P-384 and P-521 keys, with and without passphrases, including 100 KB messages and messages encrypted by gpg with OCB."
+  },
+  {
+   "q": "Does it sign the message?",
+   "a": "No. The message is encrypted but not signed, so the recipient cannot tell who wrote it. Signatures in decrypted messages are not verified."
+  },
+  {
+   "q": "Why not paste my main private key here?",
+   "a": "The page is open code but you cannot easily prove that your browser or extensions are not watching it. Prefer a dedicated key, and the gpg command line for important keys."
+  },
+  {
+   "q": "What about timing attacks?",
+   "a": "The RSA and X25519 arithmetic uses JavaScript big integers, which are not constant time. That matters for a server, less for a one-off local decrypt."
+  }
+ ],
+ "related": [
+  "openpgp-symmetric-encrypt",
+  "openpgp-inspector",
+  "rsa-key-pair-generator",
+  "ssh-key-pair-generator",
+  "hash-generator",
+  "rsa-pkcs1-pkcs8-converter"
+ ],
+ "keywords": [
+  "pgp encrypt online",
+  "gpg public key encrypt",
+  "decrypt pgp message browser",
+  "openpgp rsa curve25519"
+ ]
+}

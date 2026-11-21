@@ -1,0 +1,45 @@
+{
+ "id": "planet-size-comparator",
+ "seoTitle": "Planet and Moon Size Comparator at True Relative Scale",
+ "metaDescription": "Compare Sun, planets, the Moon and Pluto drawn at true relative size, with diameters, volume ratios and masses from NASA.",
+ "intro": "Draws the bodies you pick side by side at true relative size and lists their diameters, size ratios, volume ratios and masses.",
+ "why": "Pictures in textbooks rarely show how much bigger Jupiter is than Earth. Pick Earth, Jupiter, the Moon and Mars and the circles are drawn to the same scale, with a table of ratios: Jupiter is about 11 Earth diameters across and roughly 1400 Earth volumes.\n\nThe numbers are copied from the NASA Goddard Planetary Fact Sheet; the Sun diameter is twice its volumetric mean radius. Distances are not to scale. When you add the Sun, small bodies shrink to a dot, which is the point of the comparison.",
+ "howTo": [
+  "List the bodies you want, separated by commas.",
+  "Read the first body as the reference for the ratios.",
+  "Look at the picture and the table under it.",
+  "Change the order to use another reference body."
+ ],
+ "faq": [
+  {
+   "q": "Where is the data from?",
+   "a": "The NASA Planetary Fact Sheet; the page prints the source."
+  },
+  {
+   "q": "Are distances to scale?",
+   "a": "No, only the sizes."
+  },
+  {
+   "q": "Why is Pluto included?",
+   "a": "It is on the fact sheet and is useful as a small comparison."
+  },
+  {
+   "q": "Are the numbers rounded?",
+   "a": "They are as published, for example 12,756 km for Earth."
+  }
+ ],
+ "related": [
+  "projectile-motion-calculator",
+  "orbital-mechanics-nbody-sandbox",
+  "periodic-table-explorer-weights",
+  "unit-converter",
+  "geometry-shape-calculator",
+  "scientific-calculator-degrees"
+ ],
+ "keywords": [
+  "planet size comparison",
+  "solar system to scale",
+  "earth vs jupiter size",
+  "planet diameters"
+ ]
+}

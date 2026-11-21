@@ -1,0 +1,46 @@
+{
+ "id": "decision-wheel",
+ "seoTitle": "Free Decision Wheel: Spin to Pick an Option",
+ "metaDescription": "Type your options, one per line, and spin the wheel to pick one at random. Free decision wheel that runs in your browser and shares nothing.",
+ "intro": "Enter your options, one per line, and press Spin. The wheel turns for a few seconds and lands on a winner, shown below the wheel.",
+ "why": "Where to eat, who goes first, which task to start with, which movie to watch: small decisions can eat more time than they deserve, especially in a group. Spinning a wheel makes the choice feel fair and takes the argument out of it. Type the options, press Spin, and the result is picked using the browser's secure random number generator before the animation starts, so it is not influenced by when you stop watching. The wheel redraws as you edit the list, coloured by segment, and takes up to 40 options. Longer labels are shortened on the wheel itself but the winner is shown in full text. Nothing is uploaded, so you can use private options.",
+ "howTo": [
+  "Type one option per line in the box.",
+  "Press Spin and wait for the wheel to stop.",
+  "Read the winner below the wheel, edit the list and spin again if you like."
+ ],
+ "faq": [
+  {
+   "q": "Is the result really random?",
+   "a": "The final angle is chosen with the browser's cryptographically secure random generator, then the wheel animates to it. Every option occupies an equal slice, so each is equally likely."
+  },
+  {
+   "q": "How many options can I add?",
+   "a": "Up to 40 lines are used. At least two are needed, otherwise the tool asks you to add more. Blank lines are ignored."
+  },
+  {
+   "q": "Why are some labels cut off?",
+   "a": "Long names are shortened to about 18 characters so they fit on the wheel. The winner line below shows the complete option text."
+  },
+  {
+   "q": "Can I weight an option?",
+   "a": "Not directly. Each line gets an equal slice. To make an option more likely, list it more than once."
+  }
+ ],
+ "related": [
+  "random-number-picker",
+  "raffle-picker",
+  "coin-flip",
+  "dice-roller",
+  "random-team-splitter",
+  "countdown-timer"
+ ],
+ "keywords": [
+  "decision wheel",
+  "free decision wheel",
+  "spin the wheel",
+  "random picker wheel",
+  "wheel of names",
+  "choose for me wheel"
+ ]
+}

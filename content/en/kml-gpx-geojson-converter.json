@@ -1,0 +1,45 @@
+{
+ "id": "kml-gpx-geojson-converter",
+ "seoTitle": "KML, GPX and GeoJSON Converter in Your Browser",
+ "metaDescription": "Convert between KML, GPX and GeoJSON offline: placemarks, waypoints, routes, tracks and polygons with holes. Free, no upload.",
+ "intro": "Detects KML, GPX or GeoJSON and converts to another of the three, keeping names, descriptions, elevations and extra properties where the target allows.",
+ "why": "Maps, GPS devices and web tools each prefer a different file. This converter reads KML Placemarks (points, lines, polygons with holes and multi-geometries), GPX waypoints, routes and tracks, and GeoJSON, and writes any of the others.\n\nThings that do not fit are dropped: KML styles, GPX timestamps on track points, and GeoJSON polygons become GPX lines (their outer ring). Output was parsed back with Python ElementTree and gpxpy to check it is well formed.",
+ "howTo": [
+  "Paste the file text.",
+  "Choose the target format.",
+  "For GPX, decide between tracks and routes.",
+  "Copy or download the result."
+ ],
+ "faq": [
+  {
+   "q": "Are track timestamps kept?",
+   "a": "Not in this version."
+  },
+  {
+   "q": "What happens to KML styles?",
+   "a": "They are ignored."
+  },
+  {
+   "q": "Can it read gx:Track?",
+   "a": "No."
+  },
+  {
+   "q": "Is the file uploaded?",
+   "a": "No, it is parsed in the page."
+  }
+ ],
+ "related": [
+  "gpx-track-analyzer",
+  "geojson-viewer-validator",
+  "waypoints-to-gpx",
+  "csv-to-geojson",
+  "geojson-to-csv",
+  "xml-validate"
+ ],
+ "keywords": [
+  "kml to geojson",
+  "gpx to geojson",
+  "geojson to kml",
+  "convert gpx online"
+ ]
+}

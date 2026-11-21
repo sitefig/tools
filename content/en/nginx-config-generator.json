@@ -1,0 +1,46 @@
+{
+ "id": "nginx-config-generator",
+ "seoTitle": "Free Nginx Config Generator - Proxy, SPA, HTTPS",
+ "metaDescription": "Generate Nginx server blocks for static sites, reverse proxy, single-page apps and HTTPS redirects, with optional gzip. Free, runs in your browser.",
+ "intro": "Fill in a server name, root or upstream and a few options to get an Nginx server block for a static site, reverse proxy, SPA or plain HTTPS redirect.",
+ "why": "Nginx configuration is short but unforgiving. A missing semicolon, a try_files line that sends every URL to 404, or a proxy block without the forwarded headers can take a site down or break logins behind a proxy. Most setups repeat the same few patterns, so they are easy to get from a template.\n\nThis generator covers four: a static site with long-lived caching for assets, a single-page app that falls back to index.html, a reverse proxy to an upstream with the headers apps usually need, and a lone redirect from HTTP to HTTPS. You can add gzip settings and a certificate block that points at Let's Encrypt paths. Always run nginx -t before reloading. The text is generated in your browser.",
+ "howTo": [
+  "Choose the type: static, reverse proxy, SPA or https redirect only.",
+  "Enter the server_name and, depending on the type, the root folder or the upstream address.",
+  "Tick HTTPS and gzip as needed.",
+  "Copy the config, test it with nginx -t and reload Nginx."
+ ],
+ "faq": [
+  {
+   "q": "Where do the certificate paths come from?",
+   "a": "With HTTPS ticked, the block points at /etc/letsencrypt/live/ followed by your server name for fullchain.pem and privkey.pem, the usual Certbot location. Change the paths if your certificates live elsewhere."
+  },
+  {
+   "q": "What does the SPA option do differently?",
+   "a": "It sends any URL that is not a real file to /index.html, so client-side routes such as /dashboard load the app instead of returning 404. The static option returns 404 for missing files."
+  },
+  {
+   "q": "Which headers does the reverse proxy add?",
+   "a": "Host, X-Real-IP, X-Forwarded-For and X-Forwarded-Proto, plus Upgrade and Connection settings so WebSocket connections can pass through. Adjust timeouts and buffering for heavy workloads."
+  },
+  {
+   "q": "Is the output complete for production?",
+   "a": "It is a solid base but omits security headers, rate limits, TLS tuning and logging choices. Review those for your environment, and test the file before reloading."
+  }
+ ],
+ "related": [
+  "nginx-formatter",
+  "nginx-security-conf-generator",
+  "nginx-rate-limit-calculator",
+  "caddyfile-generator",
+  "security-headers-generator",
+  "htaccess-to-nginx"
+ ],
+ "keywords": [
+  "nginx config generator",
+  "nginx reverse proxy config",
+  "nginx spa try_files",
+  "nginx https redirect",
+  "free nginx server block generator"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "withholding-tax-calculator",
+ "seoTitle": "Withholding Tax Calculator and Gross-Up",
+ "metaDescription": "Compute withholding on a payment and the net received, or the gross to invoice so a chosen net arrives after withholding.",
+ "intro": "Net from gross, or gross from net, at the withholding rate you enter.",
+ "why": "Cross-border payments often have tax withheld at source. The net you receive is gross times one minus the rate, so to receive a fixed net you must invoice more.\n\nAn optional treaty rate shows the saving when a tax treaty reduces the rate. Whether the payer bears the withholding is a contract matter.",
+ "howTo": [
+  "Choose net from gross or gross from net.",
+  "Enter the amount and rate.",
+  "Optionally enter the treaty rate."
+ ],
+ "faq": [
+  {
+   "q": "Is the gross-up always right?",
+   "a": "Only if the payer withholds on the grossed-up sum."
+  },
+  {
+   "q": "Can I credit the tax?",
+   "a": "Often in your own country. Ask your adviser."
+  },
+  {
+   "q": "Are rates built in?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "vat-calculator",
+  "percentage-calculator",
+  "income-tax-bracket-calculator",
+  "corporate-tax-estimator",
+  "percent-change",
+  "currency-converter-manual-rates"
+ ],
+ "keywords": [
+  "withholding tax",
+  "gross up calculator",
+  "net to gross"
+ ]
+}

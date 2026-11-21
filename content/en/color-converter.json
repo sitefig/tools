@@ -1,0 +1,46 @@
+{
+  "id": "color-converter",
+  "seoTitle": "Free Color Converter: HEX, RGB, HSL, CMYK, OKLCH",
+  "metaDescription": "Convert colours between HEX, RGB, HSL, HSV, CMYK, OKLCH and CSS names, one per line. Free, runs in your browser and nothing is uploaded.",
+  "intro": "Converts any colour you enter into HEX, RGB, HSL, HSV, CMYK and OKLCH, and names the nearest CSS colour. Enter one colour per line in almost any common format.",
+  "why": "Design files give you hex, CSS wants hsl or oklch, a print brief asks for CMYK, and a colleague sends \"tomato\". Converting between them by hand means maths you would rather not do, and online converters tend to handle one pair of formats at a time.\n\nType or paste several colours, one per line, in HEX, RGB, HSL, OKLCH or by CSS name. For each, you get every other format together, with alpha kept where you gave it, plus the CSS name if it matches exactly or the nearest one if not. CMYK here is a simple mathematical conversion from RGB, not a colour-managed print profile, so expect shifts in real printing. All calculation is local to your browser.",
+  "howTo": [
+    "Enter one colour per line, in any format such as #ff0000, rgb(...), hsl(...), oklch(...) or a name.",
+    "Read the converted values for each line in the output.",
+    "Copy the format you need.",
+    "Add more lines to convert several colours at once."
+  ],
+  "faq": [
+    {
+      "q": "Which input formats are accepted?",
+      "a": "Hex with 3, 4, 6 or 8 digits, rgb and hsl with commas or spaces, oklch, and CSS colour names. Each line is parsed separately, and an unreadable line produces an error message."
+    },
+    {
+      "q": "Is the CMYK value usable for print?",
+      "a": "Only as a rough guide. It is a direct maths conversion from RGB with no ICC profile, so it ignores inks, paper and gamut. Ask your printer for profile-based conversion when colour accuracy matters."
+    },
+    {
+      "q": "What does the Name line mean?",
+      "a": "If the colour exactly matches a CSS named colour it shows that name. Otherwise it shows \"nearest:\" followed by the closest named colour, judged in a perceptual colour space."
+    },
+    {
+      "q": "Why does OKLCH look unfamiliar?",
+      "a": "OKLCH describes colour by lightness, chroma and hue in a perceptually even space, and is supported in modern CSS. Equal steps in lightness look equal to the eye, unlike HSL."
+    }
+  ],
+  "related": [
+    "color-names-lookup",
+    "contrast-checker",
+    "palette-generator",
+    "color-mixer",
+    "gradient-generator",
+    "color-picker-from-image"
+  ],
+  "keywords": [
+    "color converter",
+    "hex to rgb converter",
+    "rgb to hsl",
+    "hex to cmyk",
+    "free color code converter"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "dataset-schema-generator",
+ "seoTitle": "Dataset Schema Generator With DataDownload and Coverage",
+ "metaDescription": "Build Dataset JSON-LD for Google Dataset Search: license, creator, temporal and spatial coverage, and each download file with its format.",
+ "intro": "Generates Dataset markup with name, description, license, creator, keywords, time range, place and a DataDownload for each file.",
+ "why": "Dataset Search needs a clear name and description, and works better with a license, creator and file links. Each download line becomes a DataDownload with contentUrl and encodingFormat. The time range must be an ISO 8601 date or interval, which the tool checks.\n\nGoogle clarified in November 2025 that Dataset markup is used by Dataset Search only and not by Google Search results, and the output repeats this.",
+ "howTo": [
+  "Enter name, description, URL and license.",
+  "Add creator, keywords, temporal and spatial coverage.",
+  "Add one download: line per file: URL | format.",
+  "Copy the script tag."
+ ],
+ "faq": [
+  {
+   "q": "What is a valid temporal value?",
+   "a": "A date like 2020-01-01 or an interval like 2020-01-01/2024-12-31."
+  },
+  {
+   "q": "How long should the description be?",
+   "a": "The tool warns outside 50 to 5000 characters, the range Google documents."
+  },
+  {
+   "q": "Where does the data show up?",
+   "a": "In Google Dataset Search, not in normal results."
+  },
+  {
+   "q": "Can I list several files?",
+   "a": "Yes, repeat download:."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "rich-result-eligibility-checker",
+  "iso-8601-duration-builder",
+  "jsonld-syntax-validator",
+  "schema-property-checker",
+  "csv-to-parquet-schema"
+ ],
+ "keywords": [
+  "dataset schema generator",
+  "dataset json-ld",
+  "google dataset search markup",
+  "DataDownload schema"
+ ]
+}

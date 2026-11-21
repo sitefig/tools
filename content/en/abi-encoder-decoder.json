@@ -1,0 +1,45 @@
+{
+ "id": "abi-encoder-decoder",
+ "seoTitle": "Free Solidity ABI Encoder and Calldata Decoder",
+ "metaDescription": "Encode values or decode calldata using the Ethereum ABI: uint, int, address, bool, bytes, string, arrays and tuples. Free, runs in your browser.",
+ "intro": "Encode values into Ethereum ABI data, or decode calldata back into values, using a function signature or a list of types. A 4-byte selector is added or checked.",
+ "why": "Every contract call carries calldata laid out by the ABI rules: a four-byte selector followed by 32-byte words, with offsets for dynamic types such as strings and arrays. Reading that by eye is painful, and building it by hand for a test or a signature check is error-prone.\n\nGive this tool a signature like transfer(address,uint256) and a JSON array of values to get the full calldata, split into words. In decode mode, paste calldata and it returns the values, checking that the selector matches. It supports uintN and intN, address, bool, bytesN, bytes, string, arrays, fixed arrays and tuples. Custom errors, events and function overloading from a full ABI JSON are not handled.",
+ "howTo": [
+  "Enter a function signature or a comma-separated list of types.",
+  "For encoding, give the values as a JSON array. For decoding, paste the hex data.",
+  "Copy the result and check the words against your contract."
+ ],
+ "faq": [
+  {
+   "q": "How are numbers entered?",
+   "a": "Write large integers as strings, such as \"1000000000000000000\", to avoid precision loss in JSON. Addresses need 0x and 40 hex digits, and bytes values are hex strings."
+  },
+  {
+   "q": "What if I give only types, without a function name?",
+   "a": "Then no selector is computed and the output is the plain encoded arguments. Decode mode can still skip four bytes if the data length suggests a selector."
+  },
+  {
+   "q": "Why does decoding report a selector mismatch?",
+   "a": "The first four bytes of your data differ from the Keccak-256 hash of the signature you typed. Check the signature spelling, the types and any spaces."
+  },
+  {
+   "q": "Does it support full ABI JSON files?",
+   "a": "No. Type names are written inline, for example (uint256,address)[]. Struct names from Solidity must be replaced by the tuple of their field types."
+  }
+ ],
+ "related": [
+  "ethereum-keccak256-hasher",
+  "eip712-typed-data-hash",
+  "solidity-storage-slot",
+  "rlp-codec",
+  "eip55-checksum-address",
+  "crypto-unit-converter"
+ ],
+ "keywords": [
+  "abi encoder decoder",
+  "solidity abi encode online",
+  "decode calldata",
+  "ethereum function selector tool",
+  "free abi.encode tester"
+ ]
+}

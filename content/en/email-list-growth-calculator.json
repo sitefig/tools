@@ -1,0 +1,45 @@
+{
+ "id": "email-list-growth-calculator",
+ "seoTitle": "Email List Growth Calculator: Net Growth Rate and Churn",
+ "metaDescription": "Work out net email list growth and churn for a period from signups, unsubscribes, bounces and complaints, with a simple projection.",
+ "intro": "Enter your starting size and the gains and losses for a period to see net growth as a number and a percentage.",
+ "why": "A list that adds 600 people a month can still shrink if it loses more. Net growth shows the real direction, and splitting out unsubscribes, bounces and complaints shows where the loss comes from.\n\nThe projection simply repeats this period's net rate, so it overstates growth if signups slow down. Use it to see the size of the effect, not to forecast.",
+ "howTo": [
+  "Enter the list size at the start of the period.",
+  "Enter new subscribers and each kind of loss.",
+  "Read net growth, gross growth and churn.",
+  "Check the projection for the periods you chose."
+ ],
+ "faq": [
+  {
+   "q": "Which period should I use?",
+   "a": "A month is common. Use the same period for every figure."
+  },
+  {
+   "q": "Should I count bounces?",
+   "a": "Yes if you removed them, since the list is then smaller."
+  },
+  {
+   "q": "Is the projection reliable?",
+   "a": "No, it extends the current rate unchanged."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "email-campaign-rates",
+  "email-marketing-roi-calculator",
+  "email-list-cleaner",
+  "retention-calculator",
+  "email-subscriber-value-calculator",
+  "email-frequency-fatigue-estimator"
+ ],
+ "keywords": [
+  "email list growth rate",
+  "net list growth",
+  "subscriber growth calculator",
+  "list churn"
+ ]
+}

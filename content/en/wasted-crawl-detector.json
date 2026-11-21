@@ -1,0 +1,45 @@
+{
+ "id": "wasted-crawl-detector",
+ "seoTitle": "Wasted Crawl Detector for Parameter, Facet and Redirect Hits",
+ "metaDescription": "Group crawler requests in your log into likely waste: errors, redirects, facets, tracking parameters, internal search and thin pages. Free.",
+ "intro": "Sorts bot requests into waste categories and useful requests, with examples, so you can see which patterns drain crawl effort.",
+ "why": "Crawlers spend requests on whatever your site offers. Filter combinations, tracking parameters, internal search results, redirects and error pages are all things you rarely want fetched.\n\nThe tool assigns each request to the first matching category. You can edit the lists of facet, tracking and search parameter names to match your site. The categories are heuristics. Open the examples and check them before you change robots.txt, redirects or canonical tags.",
+ "howTo": [
+  "Paste access log lines.",
+  "Edit the parameter name lists to match your site.",
+  "Optionally set a minimum page size to flag thin pages.",
+  "Read the waste share and the top examples per category."
+ ],
+ "faq": [
+  {
+   "q": "How is a request assigned to a category?",
+   "a": "In a fixed order: server errors, client errors, redirects, facet parameters, tracking parameters, internal search, other parameters, thin pages. The first match wins."
+  },
+  {
+   "q": "Should I block all parameter URLs in robots.txt?",
+   "a": "Not blindly. Some parameters change the content. Review the examples first."
+  },
+  {
+   "q": "What is a thin page here?",
+   "a": "A 200 page smaller than the byte limit you set. It is only a hint of a soft 404 and needs a manual check."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  }
+ ],
+ "related": [
+  "crawl-budget-waste-estimator",
+  "url-parameter-analyzer",
+  "faceted-navigation-robots-rule-builder",
+  "googlebot-crawl-budget-analyzer",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer"
+ ],
+ "keywords": [
+  "wasted crawl budget detector",
+  "faceted navigation crawl waste",
+  "parameter urls in server logs",
+  "crawl waste analysis"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "embedding-similarity",
+ "seoTitle": "Free Embedding Vector Similarity Calculator Online",
+ "metaDescription": "Compare embedding vectors: cosine similarity, dot product, Euclidean and Manhattan distance, plus a matrix and best matches. Free, runs in your browser.",
+ "intro": "Compares embedding vectors you paste: cosine similarity, dot product, Euclidean and Manhattan distance, plus a similarity matrix and best match for each vector. It does not create embeddings.",
+ "why": "If you work with semantic search or retrieval, you often need to check the arithmetic behind it: are these two vectors close, which candidate scores highest, does normalising change the ranking? An embedding API gives you arrays of hundreds or thousands of numbers, and there is no quick way to compare them by eye. Paste the vectors here, one per line, and get cosine similarity and the distance measures for a pair, or a full similarity matrix when you give several. It is useful for debugging a vector store, writing tests with known values or learning what cosine and dot product mean. The tool only does the maths. It cannot generate embeddings. Your vectors stay in the browser.",
+ "howTo": [
+  "Paste vector set A, one vector per line, as JSON arrays or plain numbers.",
+  "Optionally paste vector set B. Leave it empty to compare the vectors in A with each other.",
+  "Choose the number of decimals and read the scores or the similarity matrix with best matches."
+ ],
+ "faq": [
+  {
+   "q": "What input formats are accepted?",
+   "a": "Either a JSON array of arrays, or one vector per line using numbers separated by spaces, commas or semicolons, with or without square brackets. Every vector must have the same number of dimensions."
+  },
+  {
+   "q": "When does dot product equal cosine similarity?",
+   "a": "When both vectors have unit length. Many embedding models return normalised vectors, and the tool tells you when both are of length one."
+  },
+  {
+   "q": "What does the matrix show?",
+   "a": "With several vectors it prints cosine similarity for every pair, then lists the best match for each row. When B is empty, a vector is not matched with itself."
+  },
+  {
+   "q": "Can it make embeddings from my text?",
+   "a": "No. It does not call a model. Get the vectors from your embedding provider or library, then paste them here."
+  }
+ ],
+ "related": [
+  "embedding-cost-calculator",
+  "embedding-token-cost-estimator",
+  "text-statistics",
+  "llm-token-estimator",
+  "rag-chunking-visualizer",
+  "average-median-mode"
+ ],
+ "keywords": [
+  "embedding similarity calculator",
+  "cosine similarity calculator online",
+  "compare embedding vectors",
+  "free vector distance tool",
+  "dot product euclidean calculator"
+ ]
+}

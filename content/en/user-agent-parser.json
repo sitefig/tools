@@ -1,0 +1,46 @@
+{
+ "id": "user-agent-parser",
+ "seoTitle": "Free User-Agent Parser: Browser, OS and Device",
+ "metaDescription": "Break User-Agent strings into browser, engine, OS, device, CPU and bot flag, one per line. Free, runs in your browser.",
+ "intro": "Paste one or more User-Agent strings to see the browser, rendering engine, operating system, device, CPU and whether it looks like a bot, with notes on UA reduction.",
+ "why": "User-Agent strings are famously messy. Nearly all of them start with Mozilla/5.0 and mention several browsers at once, so reading them by eye in a server log is slow and error prone. Analytics questions like \"how much traffic is from Android Chrome\" or \"is this crawler real\" start with decoding them.\n\nThis parser takes a list, one string per line, and splits each into its parts. It also points out when a string comes from a bot and explains where modern browsers have frozen or reduced the information in the header, so the OS version or device model may no longer be accurate. It uses a compact rule set rather than a full database, so treat rare browsers with caution. Parsing happens in your browser.",
+ "howTo": [
+  "Paste one User-Agent string per line.",
+  "Run the tool to parse each line.",
+  "Read the browser, engine, OS, device, CPU and bot result under each string.",
+  "Check the UA reduction notes before relying on version numbers."
+ ],
+ "faq": [
+  {
+   "q": "Why are browsers shown as Mozilla/5.0?",
+   "a": "It is historical. Early browsers pretended to be Mozilla for compatibility, and every later browser kept the prefix and added its own tokens. The real browser is found by looking at the later tokens."
+  },
+  {
+   "q": "Can I trust the OS and device version?",
+   "a": "Less than before. Chrome and other browsers reduce the User-Agent and freeze parts such as the OS version. Detailed values now come from client hints instead."
+  },
+  {
+   "q": "Does it detect every bot?",
+   "a": "No. It flags well-known crawlers and tools by their tokens. Bots can fake a normal User-Agent, so a clean result is not proof of a human visitor."
+  },
+  {
+   "q": "Is my data uploaded?",
+   "a": "No. Parsing is done in your browser, and the strings you paste are not sent anywhere, stored or matched against any outside database or service."
+  }
+ ],
+ "related": [
+  "browser-info",
+  "browser-fingerprint",
+  "http-headers-analyzer",
+  "user-agent-string-list",
+  "robots-tester",
+  "har-analyzer"
+ ],
+ "keywords": [
+  "user agent parser",
+  "user agent string decoder",
+  "detect browser from user agent",
+  "user agent analyzer online",
+  "identify bot user agent"
+ ]
+}

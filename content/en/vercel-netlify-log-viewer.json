@@ -1,0 +1,44 @@
+{
+ "id": "vercel-netlify-log-viewer",
+ "seoTitle": "Vercel and Netlify Log Viewer: Routes, Status and Errors",
+ "metaDescription": "Parse Vercel log JSON and Netlify function logs. Group by route and status and see error rates and common error messages. Free.",
+ "intro": "Groups requests by route and status from Vercel JSON or Netlify text logs and shows 5xx rates.",
+ "why": "Platform logs show many function calls. Grouping them by route shows which endpoint fails most.\n\nField names are matched by guesswork (proxy.statusCode, statusCode, requestPath and similar) because export shapes vary by plan and drain type. Check the columns against your file.",
+ "howTo": [
+  "Export logs from the platform and paste or open them.",
+  "Add filters such as status>=500.",
+  "Read the route table and error messages.",
+  "Switch to the table for each record."
+ ],
+ "faq": [
+  {
+   "q": "Which exports work?",
+   "a": "Vercel log drain or runtime log JSON and simple Netlify function log lines with a level or a method and status."
+  },
+  {
+   "q": "Why are columns empty?",
+   "a": "The export uses other field names. Use the JSON Lines filter to see raw keys."
+  },
+  {
+   "q": "What if some lines do not match?",
+   "a": "They are skipped and the result says how many. Unrecognised lines are counted."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "jsonl-log-filter",
+  "cloudflare-logpush-viewer",
+  "gcp-log-export-viewer",
+  "azure-monitor-log-viewer",
+  "exception-grouper",
+  "log-pattern-miner"
+ ],
+ "keywords": [
+  "vercel logs viewer",
+  "netlify function logs",
+  "serverless log summary"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "newsletter-name-generator",
+ "seoTitle": "Newsletter Name Generator: Ideas from Topic and Audience",
+ "metaDescription": "Get newsletter name ideas from a topic and audience with common patterns like The Weekly, Digest and Brief. Template based, free, no signup.",
+ "intro": "Enter topics, an audience and a rhythm to get dozens of name ideas.",
+ "why": "Newsletter names tend to follow a few patterns that readers recognise at a glance: a rhythm word, a role word like Digest or Brief, and a topic. Trying them all quickly gives you a shortlist.\n\nIt is template based, not creative, so expect to adjust. It cannot check availability: search the name, the domain and your email platform before you commit.",
+ "howTo": [
+  "Enter one or more topics.",
+  "Add an audience and pick a rhythm.",
+  "Scan the list and shortlist favourites.",
+  "Check domain and search availability."
+ ],
+ "faq": [
+  {
+   "q": "Does it use AI?",
+   "a": "No, only templates."
+  },
+  {
+   "q": "Can I use several topics?",
+   "a": "Yes, one per line."
+  },
+  {
+   "q": "Is the name checked for trademarks?",
+   "a": "No, always check yourself."
+  },
+  {
+   "q": "Is my input stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "slogan-generator",
+  "headline-generator",
+  "value-proposition-generator",
+  "email-subject-line-tester",
+  "html-link-generator",
+  "content-calendar-generator"
+ ],
+ "keywords": [
+  "newsletter name generator",
+  "newsletter name ideas",
+  "name my newsletter",
+  "newsletter title ideas"
+ ]
+}

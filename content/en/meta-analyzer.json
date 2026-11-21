@@ -1,0 +1,46 @@
+{
+ "id": "meta-analyzer",
+ "seoTitle": "Free Open Graph & Twitter Card Validator",
+ "metaDescription": "Validate Open Graph and Twitter Card tags in pasted HTML: required fields, absolute URLs, image tags and lengths. Free and in-browser.",
+ "intro": "Paste HTML to validate Open Graph and Twitter Card tags, checking required properties, absolute URLs, https images, length limits and the card type.",
+ "why": "When a link is shared on social media or in a chat, the preview is built from your Open Graph and Twitter tags. If the title is missing, the image URL is relative or the card type is invalid, the post shows a blank box or the wrong picture, and you only find out after publishing.\n\nThis validator reads the tags in the HTML you paste and reports missing required fields (title, type, image, URL), recommended ones, relative or http URLs, over-long titles and descriptions, and a missing or invalid twitter:card. It then lists every OG, Twitter, article and product tag it found. It checks the markup only: it does not fetch the image or ask the platforms, which also cache old scrapes. The check is local to your browser.",
+ "howTo": [
+  "Copy the HTML source of the page, or just its head section.",
+  "Paste it into the input box.",
+  "Run the tool and read the validation messages.",
+  "Fix the tags, then use the generator and the preview tool to confirm the result."
+ ],
+ "faq": [
+  {
+   "q": "Does it check that the image exists?",
+   "a": "No. It only validates the tag values, for example that the URL is absolute and uses https. It does not download the image or check its size."
+  },
+  {
+   "q": "Which Twitter card types are valid?",
+   "a": "summary, summary_large_image, app and player. Anything else is reported as an error. If twitter tags are missing, platforms fall back to Open Graph, but the card type defaults to summary."
+  },
+  {
+   "q": "Why is my preview still old on Facebook or X?",
+   "a": "Platforms cache link previews. After fixing tags, use each platform's own debugger or scraper tool to refresh the cache. This validator cannot do that for you."
+  },
+  {
+   "q": "Is my HTML sent anywhere?",
+   "a": "No. The validation happens in your browser and your markup is not uploaded. No account, upload or request to a remote service is involved at any point."
+  }
+ ],
+ "related": [
+  "og-twitter-generator",
+  "social-preview",
+  "seo-inspector",
+  "meta-tag-generator",
+  "jsonld-inspector",
+  "opengraph-banner-canvas-generator"
+ ],
+ "keywords": [
+  "open graph validator",
+  "twitter card validator",
+  "og tags checker",
+  "check social meta tags",
+  "og image tag test"
+ ]
+}

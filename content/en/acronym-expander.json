@@ -1,0 +1,41 @@
+{
+ "id": "acronym-expander",
+ "seoTitle": "Acronym and Abbreviation Expander: ROI, SLA, KPI and More",
+ "metaDescription": "Look up what common business, web and tech acronyms stand for, or paste text and expand each acronym. Offline list of about 250.",
+ "intro": "Look up what common acronyms like ROI, SLA, KPI, CTA or GDPR stand for, or paste text and expand every acronym found in it.",
+ "why": "Acronyms pile up in documents, and one acronym can mean several things. ER is an emergency room or an engagement rate, depending on who writes.\n\nType an acronym or paste a text. The tool lists matches from a built-in list of about 250 common acronyms in business, marketing, SEO, web, tech, law and chat language, with more than one meaning where there is one. It is offline and limited, and cannot know your company's own terms.",
+ "howTo": [
+  "Type an acronym or paste a text.",
+  "Read the meanings found.",
+  "Check the context if there is more than one meaning.",
+  "Note the acronyms that were not found."
+ ],
+ "faq": [
+  {
+   "q": "Why only some acronyms?",
+   "a": "The list is built in and offline. It covers common ones, not every field."
+  },
+  {
+   "q": "Why does an acronym have several meanings?",
+   "a": "Many do. The list shows the common ones."
+  },
+  {
+   "q": "Can I add my own?",
+   "a": "Not in this version."
+  }
+ ],
+ "related": [
+  "nato-phonetic",
+  "plain-language-checker",
+  "jargon-buzzword-detector",
+  "number-to-words",
+  "hs-code-lookup",
+  "char-info"
+ ],
+ "keywords": [
+  "acronym expander",
+  "what does acronym stand for",
+  "abbreviation lookup",
+  "business acronyms"
+ ]
+}

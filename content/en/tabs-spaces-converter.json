@@ -1,0 +1,46 @@
+{
+  "id": "tabs-spaces-converter",
+  "seoTitle": "Free Tabs to Spaces Converter Online",
+  "metaDescription": "Convert tabs to spaces or leading spaces back to tabs, with a tab size you choose. Free, runs in your browser and nothing you paste is uploaded.",
+  "intro": "Expands tab characters into spaces that respect tab stops, or collapses leading runs of spaces into tabs. You set the tab width, and the result updates as you convert.",
+  "why": "Mixed indentation is one of those problems that looks fine in your editor and falls apart everywhere else. A file written with tabs lines up in one viewer and drifts in another, a pasted snippet breaks a YAML or Makefile rule, and a diff shows every line as changed because a teammate's editor swapped tabs for spaces.\n\nThis tool fixes the whitespace in one pass. It expands tabs the way a terminal does, so a tab after three characters moves to the next stop rather than always adding four spaces. It can also go the other way for projects that insist on tabs. Because it runs in your browser, you can safely clean up private source code.",
+  "howTo": [
+    "Paste the code or text into the input box.",
+    "Choose a direction: tabs to spaces, or leading spaces to tabs.",
+    "Set the tab size, which is 4 by default.",
+    "Copy the converted text from the output."
+  ],
+  "faq": [
+    {
+      "q": "Does it replace each tab with a fixed number of spaces?",
+      "a": "No. It is tab-stop aware. A tab moves the text to the next multiple of the tab size, so a tab after two characters adds two spaces when the size is 4. This matches how editors and terminals display tabs."
+    },
+    {
+      "q": "What does leading spaces to tabs change?",
+      "a": "It only looks at the run of spaces at the start of each line. Every full group of spaces equal to the tab size becomes one tab, and any remainder stays as spaces. Spaces inside the line are left alone."
+    },
+    {
+      "q": "Will it touch tabs in the middle of a line when going to tabs?",
+      "a": "No. The spaces-to-tabs direction only converts indentation at the start of a line. Alignment spaces further along the line, such as in a table or a comment, are kept exactly as typed."
+    },
+    {
+      "q": "Is my code sent anywhere?",
+      "a": "No. The conversion runs in your browser tab. The text you paste is not uploaded or stored, so it is fine for private or unreleased code."
+    }
+  ],
+  "related": [
+    "remove-empty-lines-trim",
+    "wrap-text",
+    "text-diff",
+    "js-format",
+    "css-format",
+    "line-numberer"
+  ],
+  "keywords": [
+    "tabs to spaces converter",
+    "convert tabs to spaces online",
+    "spaces to tabs",
+    "free indentation converter",
+    "fix mixed tabs and spaces"
+  ]
+}

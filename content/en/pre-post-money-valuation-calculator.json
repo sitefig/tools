@@ -1,0 +1,39 @@
+{
+ "id": "pre-post-money-valuation-calculator",
+ "seoTitle": "Pre-Money and Post-Money Valuation Calculator",
+ "metaDescription": "Enter any two of pre-money, investment and post-money valuation and get the third plus the investor ownership.",
+ "intro": "Solves for the missing one of pre-money valuation, investment and post-money valuation and shows ownership.",
+ "why": "Post-money is pre-money plus the new investment. Investors own investment divided by post-money, and existing holders keep pre-money divided by post-money.\n\nLeave one field at 0 and fill in the other two. The tool checks that the numbers make sense, for example that investment is smaller than post-money.",
+ "howTo": [
+  "Enter two known values.",
+  "Leave the unknown at 0.",
+  "Read the third value and the ownership split."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between pre- and post-money?",
+   "a": "Pre-money is value before new cash, post-money is value after."
+  },
+  {
+   "q": "Does it include option pool?",
+   "a": "No. Use the cap table simulator."
+  },
+  {
+   "q": "Why must exactly two be filled?",
+   "a": "Two values fix the third."
+  }
+ ],
+ "related": [
+  "equity-dilution-calculator",
+  "cap-table-round-simulator",
+  "safe-conversion-calculator",
+  "vesting-schedule-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "pre money post money",
+  "valuation calculator",
+  "investor ownership"
+ ]
+}

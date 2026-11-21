@@ -1,0 +1,45 @@
+{
+ "id": "color-harmony-wheel",
+ "seoTitle": "Color Harmony Wheel: Complementary, Triadic, Analogous",
+ "metaDescription": "See colour schemes on an interactive wheel. Drag the base hue or use the slider, choose a scheme and copy the HEX values. Free, local.",
+ "intro": "Shows complementary, split complementary, analogous, triadic, tetradic and monochromatic schemes on a colour wheel, with the HEX codes listed.",
+ "why": "A scheme is just hues at fixed angles from a base hue. The wheel makes that visible: drag on the ring, or use the hue slider and number field, which also give keyboard and screen reader access.\n\nColours are computed in OKLCH with the chroma and lightness you set, so every scheme member looks equally bright. Use the output as a starting point and check contrast before using text colours.",
+ "howTo": [
+  "Choose a scheme.",
+  "Drag on the wheel or set the base hue with the slider.",
+  "Adjust chroma and lightness.",
+  "Copy the HEX codes below the wheel."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between this and the Palette Generator?",
+   "a": "The same schemes are available there from a base colour. This tool adds the wheel view and OKLCH control."
+  },
+  {
+   "q": "What are the scheme angles?",
+   "a": "Complementary 180, split 150 and 210, analogous plus or minus 30, triadic 120, tetradic 90."
+  },
+  {
+   "q": "Why is the wheel not a painter wheel?",
+   "a": "It is a hue circle in OKLCH, which matches screen colours."
+  },
+  {
+   "q": "Can I type a base colour?",
+   "a": "Set the hue in degrees; use the Color Picker to find a colour hue."
+  }
+ ],
+ "related": [
+  "palette-generator",
+  "color-picker",
+  "palette-shuffler",
+  "color-converter",
+  "contrast-checker",
+  "dataviz-palette-builder"
+ ],
+ "keywords": [
+  "color wheel tool",
+  "color harmony generator",
+  "triadic color scheme",
+  "complementary colors online"
+ ]
+}

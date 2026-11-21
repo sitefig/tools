@@ -1,0 +1,47 @@
+{
+ "id": "yaml-to-json",
+ "seoTitle": "Free YAML to JSON Converter Online",
+ "metaDescription": "Free online YAML to JSON converter. Handles maps, lists, flow style, block scalars, anchors, merge keys and multiple documents. Runs in your browser.",
+ "intro": "Convert YAML to JSON. Maps, lists, flow style, literal and folded blocks, anchors with aliases and merge keys, and multiple documents separated by --- are supported.",
+ "why": "YAML is easy to write and easy to get subtly wrong. When a CI pipeline, a Kubernetes manifest or an application config misbehaves, converting it to JSON shows what a parser really sees: which values are numbers, which are strings, and what an anchor or merge key expanded to.\n\nPaste the YAML and the tool gives you the equivalent JSON with your chosen indent. Anchors and aliases are resolved, merge keys are applied, and block scalars are turned into strings. This is useful for validating a file, feeding YAML data to a tool that only reads JSON, or comparing two files in a stable form. It covers the commonly used part of YAML rather than the full specification. Nothing is uploaded.",
+ "howTo": [
+  "Paste your YAML into the input box.",
+  "Choose the indent for the JSON output.",
+  "Read the JSON, with anchors, aliases and merge keys already expanded.",
+  "Copy the result, or fix the YAML error shown."
+ ],
+ "faq": [
+  {
+   "q": "Does it support the whole YAML specification?",
+   "a": "No. It handles the common subset: block and flow maps and lists, quoted and plain scalars, literal and folded blocks, anchors, aliases, merge keys and multiple documents. Rare features such as custom tags may not work."
+  },
+  {
+   "q": "What happens with multiple documents?",
+   "a": "Documents separated by lines containing three dashes are returned together as one JSON array, with one item per document, so nothing from later documents is lost."
+  },
+  {
+   "q": "Why did my value become a string or a number?",
+   "a": "Plain YAML values are typed by their look: 1.2 is a number, true is a boolean, ~ is null. Quote a value to force a string, for example \"1.20\" or \"no\"."
+  },
+  {
+   "q": "Are comments kept?",
+   "a": "No. JSON has no comments, so they are dropped. Use the YAML Formatter if you only want to tidy the YAML, noting that it also drops comments."
+  }
+ ],
+ "related": [
+  "json-to-yaml",
+  "yaml-format",
+  "toml-to-json",
+  "json-format",
+  "yaml-to-typescript",
+  "docker-compose-formatter"
+ ],
+ "keywords": [
+  "yaml to json converter",
+  "convert yaml to json online",
+  "yaml to json free",
+  "yaml parser online",
+  "yaml anchors to json",
+  "online yaml json tool"
+ ]
+}

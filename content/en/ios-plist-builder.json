@@ -1,0 +1,45 @@
+{
+ "id": "ios-plist-builder",
+ "seoTitle": "Free iOS Info.plist Builder with Usage Descriptions",
+ "metaDescription": "Generate an iOS Info.plist with bundle info, orientations, usage descriptions, URL schemes, background modes and ATS exceptions. Free, in your browser.",
+ "intro": "Generates an iOS Info.plist with bundle identifier and versions, orientations, usage-description strings, URL schemes, LSApplicationQueriesSchemes, background modes and App Transport Security exceptions, as valid XML.",
+ "why": "An iOS app can be rejected or crash at launch because of a missing key in Info.plist. A camera feature needs NSCameraUsageDescription, a custom link scheme needs CFBundleURLTypes, and each background mode and queried app scheme has its own entry. Remembering the exact key names is not realistic. This builder lets you give short aliases such as camera, photos or faceid with the reason text users will see, and writes the matching NS keys. It adds bundle details, supported orientations, URL schemes, LSApplicationQueriesSchemes, UIBackgroundModes and optional ATS exceptions for named domains. The output is valid XML property-list text for you to merge into your project. It runs in your browser.",
+ "howTo": [
+  "Enter usage descriptions as \"alias: reason\" lines, for example camera: We use the camera to scan QR codes.",
+  "Fill in the display name, bundle identifier, version, build, minimum iOS and URL schemes, background modes or ATS domains.",
+  "Copy the plist and merge it into your project's Info.plist."
+ ],
+ "faq": [
+  {
+   "q": "Which aliases can I use?",
+   "a": "Short names such as camera, photos, photos-add, microphone, location, location-always, contacts, calendars, faceid, bluetooth and tracking map to their NS usage-description keys. You can also write a full NS key."
+  },
+  {
+   "q": "Why do usage descriptions matter?",
+   "a": "iOS shows the text to users when asking for permission, and the app is rejected or terminates if the key is missing. Write a clear, honest reason."
+  },
+  {
+   "q": "What are ATS exceptions?",
+   "a": "App Transport Security requires HTTPS by default. Exceptions let named domains use HTTP. Use them only when you must, and prefer fixing the server."
+  },
+  {
+   "q": "Does it replace Xcode?",
+   "a": "No. It generates text for you to merge. Xcode build settings can also define some of these values, so check for conflicts."
+  }
+ ],
+ "related": [
+  "android-manifest-builder",
+  "xcode-asset-catalog",
+  "capacitor-config-builder",
+  "universal-links-validator",
+  "xml-format",
+  "app-launch-checklist"
+ ],
+ "keywords": [
+  "ios info.plist builder",
+  "info.plist generator",
+  "nscamerausagedescription generator",
+  "free ios plist tool",
+  "ios url scheme plist"
+ ]
+}

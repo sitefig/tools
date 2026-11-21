@@ -1,0 +1,45 @@
+{
+ "id": "api-key-generator",
+ "seoTitle": "Free API Key Generator with Prefix, Checksum and Hash",
+ "metaDescription": "Generate API keys with a recognisable prefix, secure random body, optional CRC-32 checksum and the SHA-256 hash to store. Free, in your browser.",
+ "intro": "Generates API keys with a recognisable prefix such as sk_live_, a secure random body from crypto.getRandomValues, an optional CRC-32 checksum suffix like GitHub tokens, and the SHA-256 hash you should store.",
+ "why": "Good API keys have a few properties that a quick random string lacks: a prefix that tells you what it is and which environment it belongs to, enough randomness, and a form that scanners can recognise if it leaks. The checksum suffix, as GitHub uses, lets a server reject a mistyped key without a database lookup and helps secret scanners avoid false positives. You also should not store the key itself, only its hash. This tool generates keys with all of these, in the alphabet and length you choose, and shows the SHA-256 hash next to each. Keys are random and created in your browser, but treat anything shown on a web page as an example: for production, generate keys in your own backend.",
+ "howTo": [
+  "Enter the prefix (for example sk_live_), the number of random characters and how many keys you want.",
+  "Choose the alphabet and tick the CRC-32 checksum option if you want it.",
+  "Copy the keys and the matching SHA-256 hashes."
+ ],
+ "faq": [
+  {
+   "q": "Why use a prefix?",
+   "a": "A prefix such as sk_live_ shows what a token is and where it belongs, makes leaks easier to find in code and logs, and lets secret scanners recognise it."
+  },
+  {
+   "q": "What does the checksum do?",
+   "a": "A CRC-32 checksum appended as six base62 characters lets a service reject typos or random guesses before touching the database. It is not a security feature on its own."
+  },
+  {
+   "q": "Why show a hash?",
+   "a": "You should store only the SHA-256 hash of a key, so a database leak does not expose working keys. Show the full key to the user once, at creation."
+  },
+  {
+   "q": "Is the randomness good enough?",
+   "a": "The body uses crypto.getRandomValues without modulo bias. For production keys, still generate them server-side, in a place you control."
+  }
+ ],
+ "related": [
+  "random-secret-generator",
+  "password-generator",
+  "hmac-generator",
+  "uuid-generator",
+  "nanoid-generator",
+  "sha3-hash-generator"
+ ],
+ "keywords": [
+  "api key generator",
+  "generate api keys with prefix",
+  "api token generator with checksum",
+  "free secure api key tool",
+  "sk_live style key generator"
+ ]
+}

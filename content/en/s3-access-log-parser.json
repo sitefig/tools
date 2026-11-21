@@ -1,0 +1,44 @@
+{
+ "id": "s3-access-log-parser",
+ "seoTitle": "S3 Server Access Log Parser: Requesters and Operations",
+ "metaDescription": "Turn S3 access log lines into a summary of requesters, operations, keys, status codes and bytes. Free, runs in your browser.",
+ "intro": "Parses S3 server access logs and shows who requested what, with errors and bytes sent.",
+ "why": "S3 access logs are one object per few minutes, each with many lines. Finding who downloaded a key or who got AccessDenied means reading them all.\n\nThe parser reads the bracketed time and quoted request fields and maps them to the documented field order. Anonymous requests show as anonymous.",
+ "howTo": [
+  "Download the log objects and paste them or choose the files.",
+  "Filter by status such as 403.",
+  "Read operations, requesters and top keys.",
+  "Switch to the table for each request."
+ ],
+ "faq": [
+  {
+   "q": "Where do the logs come from?",
+   "a": "From server access logging on a bucket, delivered to another bucket."
+  },
+  {
+   "q": "Is this CloudTrail?",
+   "a": "No. CloudTrail data events are a different log; use the CloudTrail viewer."
+  },
+  {
+   "q": "What if some lines do not match?",
+   "a": "They are skipped and the result says how many. Lines with fewer than 17 fields are skipped."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "cloudtrail-event-viewer",
+  "cloudfront-log-parser",
+  "alb-elb-log-parser",
+  "aws-arn-parser",
+  "aws-iam-policy-linter",
+  "top-ips-user-agents"
+ ],
+ "keywords": [
+  "s3 access log analyzer",
+  "s3 server access logs",
+  "s3 log parser"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "curl-to-ai-sdk",
+ "seoTitle": "Free cURL to Vercel AI SDK Converter (generateText)",
+ "metaDescription": "Turn a curl call to an OpenAI-style or Anthropic API into Vercel AI SDK generateText or streamText code. Free, runs in your browser.",
+ "intro": "Turns a curl call to an OpenAI-compatible chat completions endpoint or an Anthropic messages endpoint into Vercel AI SDK code using generateText or streamText.",
+ "why": "Provider docs and bug reports usually show a raw curl request. If your app uses the Vercel AI SDK, you then have to work out which parts belong in the model name, the system prompt, the message list and the settings. This tool reads the request body, picks out the model, system text, messages, temperature and max tokens, and writes the matching SDK call. Streaming requests produce streamText, others produce generateText. The API key in the Authorization header is not copied; the output reads it from an environment variable instead, which is where a secret belongs. It is a conversion aid for common chat calls, not a full SDK migration, so review the imports and provider setup. Parsing happens in your browser.",
+ "howTo": [
+  "Paste a curl command that calls a /chat/completions or Anthropic /messages endpoint.",
+  "Run the conversion to get the SDK code.",
+  "Copy it into your project and check the provider import and the environment variable name."
+ ],
+ "faq": [
+  {
+   "q": "Which endpoints does it recognise?",
+   "a": "OpenAI-compatible /chat/completions and Anthropic /messages requests with a JSON body. Other endpoints, such as embeddings or image generation, are not converted."
+  },
+  {
+   "q": "What happens to the API key?",
+   "a": "The key is replaced by an environment variable reference, so you never paste a real secret into the code. Set the variable in your own environment."
+  },
+  {
+   "q": "How does it choose between generateText and streamText?",
+   "a": "If the request body contains \"stream\": true, the converted code uses streamText so you can read tokens as they arrive. Without it, the output uses generateText and returns the whole answer at once."
+  },
+  {
+   "q": "Are all request fields carried over?",
+   "a": "Model, system and chat messages, temperature and max tokens are. Tools, response formats and other provider-specific fields may need to be added by hand."
+  }
+ ],
+ "related": [
+  "curl-to-more-languages",
+  "curl-to-postman",
+  "vercel-ai-core-message-converter",
+  "prompt-format-converter",
+  "openai-structured-outputs",
+  "llm-tool-definition-builder"
+ ],
+ "keywords": [
+  "curl to vercel ai sdk",
+  "curl openai to generatetext",
+  "convert curl to ai sdk",
+  "free curl to ai sdk",
+  "anthropic curl to javascript"
+ ]
+}

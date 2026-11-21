@@ -1,0 +1,45 @@
+{
+  "id": "email-header-analyzer",
+  "seoTitle": "Email Header Analyzer: Received Path, SPF, DKIM, DMARC",
+  "metaDescription": "Paste full email headers to trace each Received hop with delays, read SPF/DKIM/DMARC results, check alignment and spot spoofing signs.",
+  "intro": "Find out where a message came from, how long each hop took and whether it passed authentication.",
+  "why": "The analyzer lists the Received chain oldest first with from/by hosts, protocols and timestamps, computes the delay between hops (flagging slow hops and clock skew), reads the Authentication-Results header for SPF, DKIM and DMARC, shows DKIM signature domains and selectors, compares the From and Return-Path domains and the DKIM domain for alignment, and notes a different Reply-To.\n\nHeaders added below your own server's lines can be forged, so trust only the Received and Authentication-Results lines added by servers you control. It does not query DNS to verify records.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "In your mail client open \"Show original\" or \"View headers\".",
+    "Copy all header lines and paste them.",
+    "Read the route and authentication.",
+    "Check SPF, DKIM and DMARC DNS records if something fails."
+  ],
+  "faq": [
+    {
+      "q": "What is DMARC alignment?",
+      "a": "The domain in From must match the domain authenticated by SPF or DKIM."
+    },
+    {
+      "q": "Why is a hop slow?",
+      "a": "Greylisting, queueing or scanning. Over five minutes is flagged."
+    },
+    {
+      "q": "Can I trust the first Received line?",
+      "a": "The topmost line is added by your own server; lines further down can be forged."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "spf-record-generator",
+    "dkim-record-generator",
+    "dmarc-generator",
+    "dns-spf-record-flattener",
+    "eml-viewer",
+    "http-headers-analyzer"
+  ],
+  "keywords": [
+    "email header analyzer",
+    "trace email route",
+    "spf dkim dmarc results",
+    "received headers"
+  ]
+}

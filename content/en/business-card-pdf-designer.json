@@ -1,0 +1,45 @@
+{
+ "id": "business-card-pdf-designer",
+ "seoTitle": "Business Card Designer: Print PDF with Bleed and Crop Marks",
+ "metaDescription": "Lay out a business card and download a print-ready PDF with trim and bleed boxes and crop marks. Free, local, no signup.",
+ "intro": "Fills in a business card layout and creates a PDF with the finished card size, the bleed area, crop marks and the TrimBox and BleedBox set for your print shop.",
+ "why": "Print shops want the background to run past the cut line (bleed) and marks showing where to cut. This tool extends the background into the bleed you set, draws marks outside it and writes the PDF boxes. Three layouts: left aligned, accent bar and bottom band.\n\nIt uses the standard Helvetica fonts, so only Latin text prints correctly, and colours are RGB. Ask your printer if they need CMYK or specific bleed, and keep text 3 mm inside the cut. Order a proof first.",
+ "howTo": [
+  "Enter your name, title and contact details.",
+  "Pick the card size, layout, bleed and colours.",
+  "Run the tool and open the PDF to check it.",
+  "Send it to your print shop."
+ ],
+ "faq": [
+  {
+   "q": "What bleed should I use?",
+   "a": "Three millimetres is common, but your printer decides."
+  },
+  {
+   "q": "Is it CMYK?",
+   "a": "No. The PDF uses RGB colours. Ask your printer about conversion."
+  },
+  {
+   "q": "Why do some characters show as ?",
+   "a": "Only Latin-1 characters work with the built-in fonts."
+  },
+  {
+   "q": "Can I add a logo?",
+   "a": "Not in this version."
+  }
+ ],
+ "related": [
+  "email-signature-generator",
+  "simple-logo-maker",
+  "qr-code-generator",
+  "invoice-generator",
+  "resume-builder",
+  "pdf-metadata-editor"
+ ],
+ "keywords": [
+  "business card pdf",
+  "business card with bleed",
+  "crop marks pdf generator",
+  "print ready business card"
+ ]
+}

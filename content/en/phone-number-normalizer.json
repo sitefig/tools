@@ -1,0 +1,44 @@
+{
+ "id": "phone-number-normalizer",
+ "seoTitle": "Phone Number Normalizer to E.164 for a CSV Column",
+ "metaDescription": "Convert phone numbers in a CSV column to E.164 with a default country, flagging numbers whose length looks wrong. Free, offline.",
+ "intro": "Rewrites phone numbers to +countrycode and digits using a default country for numbers without a code, and flags odd lengths for review.",
+ "why": "CRM and mailing exports hold numbers in every local style. E.164 (+442079460958) is what most SMS and voice systems expect. Pick the default country, and local numbers lose their trunk zero and gain the country code.\n\nThe check is structural: it knows each country calling code, the trunk prefix and the usual length of the national number (from Google libphonenumber metadata), but it does not know whether a number is assigned or a mobile. A number marked ok may still not exist. 00 is treated as the international prefix, as in most countries. Review flagged rows by hand.",
+ "howTo": [
+  "Paste the CSV and name the phone column.",
+  "Enter the default country as a two-letter code.",
+  "Keep the phone_check column to see review flags.",
+  "Copy or download the result."
+ ],
+ "faq": [
+  {
+   "q": "Is it as strict as libphonenumber?",
+   "a": "No. It checks digit count only. We compared the output numbers with libphonenumber-js and they matched except for cases noted as 00 prefix handling."
+  },
+  {
+   "q": "Extensions?",
+   "a": "A trailing ext or x number is dropped."
+  },
+  {
+   "q": "Which countries?",
+   "a": "All with a calling code in the bundled table; use the ISO code, for example GB or DE."
+  },
+  {
+   "q": "Is the data private?",
+   "a": "Yes, nothing leaves your browser."
+  }
+ ],
+ "related": [
+  "entity-extractor",
+  "email-list-cleaner",
+  "csv-whitespace-trimmer",
+  "table-find-replace",
+  "csv-column-profiler",
+  "fake-person-generator"
+ ],
+ "keywords": [
+  "phone number to e164",
+  "normalize phone numbers csv",
+  "international phone format"
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Number Base Converter (Binary, Hex, Decimal) | Free Tools</title>
+<meta name="description" content="Convert integers of any size between bases 2 and 36, with binary, octal, decimal and hex shown together plus two's complement. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/number-base-converter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/number-base-converter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/number-base-converter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Number Base Converter (Binary, Hex, Decimal) | Free Tools">
+<meta property="og:description" content="Convert integers of any size between bases 2 and 36, with binary, octal, decimal and hex shown together plus two's complement. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/number-base-converter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Number Base Converter (Binary, Hex, Decimal) | Free Tools">
+<meta name="twitter:description" content="Convert integers of any size between bases 2 and 36, with binary, octal, decimal and hex shown together plus two's complement. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Number Base Converter","url":"https://tools.sitefig.net/en/number-base-converter/","description":"Convert integers of any size between bases 2 and 36, with binary, octal, decimal and hex shown together plus two's complement. Free, in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter one number per line in the box. Prefixes like 0x, 0b and 0o are accepted when they match the base.","Set the From base and the To base, anywhere from 2 to 36.","Choose a two's complement width (8, 16, 32 or 64) if you need the signed bit pattern.","Read the results and copy the lines you need."],"keywords":"number base converter, binary to decimal converter, hex to decimal online, free base converter, two's complement calculator, convert between bases 2 to 36","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Encoding","item":"https://tools.sitefig.net/en/#encoding"},{"@type":"ListItem","position":3,"name":"Number Base Converter","item":"https://tools.sitefig.net/en/number-base-converter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How large can the numbers be?","acceptedAnswer":{"@type":"Answer","text":"There is no fixed limit. The tool uses BigInt arithmetic, so a 40-digit decimal number converts exactly. Only the length of what you can comfortably paste limits it."}},{"@type":"Question","name":"Does it handle fractions or decimals?","acceptedAnswer":{"@type":"Answer","text":"No, it converts integers only. Characters like a decimal point are rejected with an error that names the invalid digit for the chosen base. Convert the whole and fractional parts separately if you must."}},{"@type":"Question","name":"How does two's complement work here?","acceptedAnswer":{"@type":"Answer","text":"Choose a width and a negative number such as -42 is shown as its bit pattern, 11010110 for 8 bits. A positive value above the signed range is read as the negative number it would represent. Values that fit neither are reported as out of range."}},{"@type":"Question","name":"Which digits are valid for bases above 10?","acceptedAnswer":{"@type":"Answer","text":"Letters a to z stand for the digits 10 to 35, and input is not case sensitive. Base 36 therefore uses 0-9 and a-z. Underscores, commas and spaces inside a number are ignored."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#encoding">Encoding</a></li><li><span aria-current="page">Number Base Converter</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Number Base Converter</h1>
+<p class="lede">Convert whole numbers between any two bases from 2 to 36. Very large values stay exact, and you can add a two's complement view for 8, 16, 32 or 64-bit widths.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="number-base-converter" data-module="encode"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Bases come up whenever you read memory addresses, permission masks, colour codes, IDs and protocol fields. Switching between hex, binary and decimal in your head works for small numbers, but it falls apart with a 64-bit value or a negative number.</p>
+<p>This converter parses your number with arbitrary-precision integers, so nothing is rounded the way JavaScript's normal numbers would be. For each line you see the target base plus binary, octal, decimal and hex side by side. Pick a width and it shows the two's complement bit pattern, or reads a large unsigned value as signed. It all runs locally.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter one number per line in the box. Prefixes like 0x, 0b and 0o are accepted when they match the base.</li><li>Set the From base and the To base, anywhere from 2 to 36.</li><li>Choose a two's complement width (8, 16, 32 or 64) if you need the signed bit pattern.</li><li>Read the results and copy the lines you need.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How large can the numbers be?</summary><p>There is no fixed limit. The tool uses BigInt arithmetic, so a 40-digit decimal number converts exactly. Only the length of what you can comfortably paste limits it.</p></details>
+<details><summary>Does it handle fractions or decimals?</summary><p>No, it converts integers only. Characters like a decimal point are rejected with an error that names the invalid digit for the chosen base. Convert the whole and fractional parts separately if you must.</p></details>
+<details><summary>How does two's complement work here?</summary><p>Choose a width and a negative number such as -42 is shown as its bit pattern, 11010110 for 8 bits. A positive value above the signed range is read as the negative number it would represent. Values that fit neither are reported as out of range.</p></details>
+<details><summary>Which digits are valid for bases above 10?</summary><p>Letters a to z stand for the digits 10 to 35, and input is not case sensitive. Base 36 therefore uses 0-9 and a-z. Underscores, commas and spaces inside a number are ignored.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/bitwise-calculator/"><span class="link-card__title">Bitwise Calculator (AND, OR, XOR, shifts, rotate)</span><span class="link-card__desc">Apply AND, OR, XOR, NAND, NOR, XNOR, NOT, left / arithmetic right / logical right shifts, rotations, popcount, leading / trailing zeros and bit reversal to 8, 16, 32 or 64-bit values, with two's-complement signed or unsigned interpretation. Inputs accept decimal, 0x hex, 0b binary and 0o octal; results are shown in all four bases with the bit pattern.</span></a></li><li><a class="link-card" href="/en/bignumber-calculator/"><span class="link-card__title">Arbitrary-Precision Calculator (big integers &amp; decimals)</span><span class="link-card__desc">Evaluate expressions with unlimited-size integers and exact decimals: + - * / % ^ ** ! parentheses, sqrt, abs, gcd, lcm, powmod, floor, round, factorial, fib, pi and e. Add, subtract and multiply are exact; division and sqrt are rounded to the chosen number of decimal places. One expression per line.</span></a></li><li><a class="link-card" href="/en/binary-text/"><span class="link-card__title">Binary ⇄ Text</span><span class="link-card__desc">Convert text to 8-bit binary (UTF-8) and back.</span></a></li><li><a class="link-card" href="/en/hex-text/"><span class="link-card__title">Hex ⇄ Text</span><span class="link-card__desc">Convert text to hexadecimal bytes (UTF-8) and back.</span></a></li><li><a class="link-card" href="/en/ieee754-converter/"><span class="link-card__title">IEEE 754 Float / Hex Converter</span><span class="link-card__desc">Show a number as 32-bit and 64-bit IEEE 754 hex and bits (sign, exponent, mantissa), or decode a hex pattern to a float.</span></a></li><li><a class="link-card" href="/en/bcd-converter/"><span class="link-card__title">BCD (Binary-Coded Decimal) Converter</span><span class="link-card__desc">Convert decimal numbers to packed/unpacked BCD nibbles and back.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

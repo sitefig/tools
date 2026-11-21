@@ -1,0 +1,45 @@
+{
+ "id": "log-vs-gsc-crawl-comparison",
+ "seoTitle": "Compare Server Log Googlebot Hits With Search Console Crawl Stats",
+ "metaDescription": "Paste daily crawl request counts from Search Console next to your access log and compare them day by day. No API, nothing uploaded.",
+ "intro": "Lines up daily Googlebot-claimed requests from your log with the daily crawl requests you copy from Search Console and shows the ratio.",
+ "why": "Search Console counts the crawl requests Google made. Your log counts requests that claim to be Google. When the two differ a lot, something is off: fake bots, a CDN that hides requests from your server, or a time zone shift.\n\nThe Search Console API needs an account, so this tool does not call it. You copy the daily numbers from the Crawl Stats report yourself and paste them as date,count lines. Compare totals over several days, since a day boundary in a different time zone moves requests between days.",
+ "howTo": [
+  "Open the Crawl Stats report in Search Console and copy the daily total crawl requests.",
+  "Paste them in the second box as date,count lines.",
+  "Paste your access log lines in the first box.",
+  "Compare the ratio per day and in total."
+ ],
+ "faq": [
+  {
+   "q": "Why do the numbers not match?",
+   "a": "Fake Googlebot requests, CDN or load balancer layers that are not in your log, and time zone differences are the usual causes."
+  },
+  {
+   "q": "Which time zone does Search Console use?",
+   "a": "Not verified here. Check your report, and compare totals over several days to reduce the effect."
+  },
+  {
+   "q": "Does the tool call the Search Console API?",
+   "a": "No. Nothing is fetched. You paste the numbers."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  }
+ ],
+ "related": [
+  "fake-googlebot-log-detector",
+  "gsc-performance-analyzer",
+  "crawl-spike-drop-alerts",
+  "googlebot-crawl-budget-analyzer",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer"
+ ],
+ "keywords": [
+  "search console crawl stats vs server logs",
+  "compare googlebot logs with gsc",
+  "crawl stats log comparison",
+  "googlebot requests mismatch"
+ ]
+}

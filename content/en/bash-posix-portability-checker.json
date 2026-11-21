@@ -1,0 +1,45 @@
+{
+  "id": "bash-posix-portability-checker",
+  "seoTitle": "Shell Script Portability Checker: Find Bashisms for sh/dash",
+  "metaDescription": "Find bash-only syntax in a script that must run under POSIX sh, dash or busybox: [[ ]], arrays, ${var//x/y}, <<<, source, local, echo -e, brace ranges.",
+  "intro": "Check a script for features that break when /bin/sh is dash, ash or busybox, with the POSIX replacement for each.",
+  "why": "A list of patterns similar to checkbashisms is applied line by line: double brackets, \"function\" definitions, arrays, here-strings, process substitution, bash parameter expansions, $RANDOM and other bash variables, echo -e/-n, brace sequences, select, (( )) arithmetic, == inside single brackets and more. The shebang is read so that scripts declared as bash are not alarmed.\n\nIt is pattern based, so it can miss subtle cases and flag a few valid POSIX lines. Confirm with dash -n script.sh, run the script under dash, and use ShellCheck for deeper analysis.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the script with its shebang line.",
+    "Run the check.",
+    "Replace each flagged construct with its POSIX equivalent or change the shebang to bash.",
+    "Test under dash."
+  ],
+  "faq": [
+    {
+      "q": "Is \"local\" a bashism?",
+      "a": "It is not in POSIX, but dash, ash and busybox support it. The tool notes it."
+    },
+    {
+      "q": "What is the shebang for portability?",
+      "a": "#!/bin/sh with only POSIX features, or #!/usr/bin/env bash if you need bash."
+    },
+    {
+      "q": "Can it replace ShellCheck?",
+      "a": "No. ShellCheck is far more thorough."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "dockerfile-linter",
+    "makefile-generator",
+    "shell-command-builder",
+    "github-actions-generator",
+    "git-command-builder",
+    "systemd-unit-generator"
+  ],
+  "keywords": [
+    "bashism checker",
+    "posix shell check",
+    "checkbashisms online",
+    "dash compatibility"
+  ]
+}

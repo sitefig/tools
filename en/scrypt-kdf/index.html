@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free scrypt Calculator: Derive Keys (RFC 7914) | Free Tools</title>
+<meta name="description" content="Derive a key with scrypt (RFC 7914) from a password, salt and the N, r, p cost parameters, with memory capped at 64 MiB. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/scrypt-kdf/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/scrypt-kdf/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/scrypt-kdf/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free scrypt Calculator: Derive Keys (RFC 7914) | Free Tools">
+<meta property="og:description" content="Derive a key with scrypt (RFC 7914) from a password, salt and the N, r, p cost parameters, with memory capped at 64 MiB. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/scrypt-kdf/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free scrypt Calculator: Derive Keys (RFC 7914) | Free Tools">
+<meta name="twitter:description" content="Derive a key with scrypt (RFC 7914) from a password, salt and the N, r, p cost parameters, with memory capped at 64 MiB. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"scrypt Key Derivation","url":"https://tools.sitefig.net/en/scrypt-kdf/","description":"Derive a key with scrypt (RFC 7914) from a password, salt and the N, r, p cost parameters, with memory capped at 64 MiB. Free, in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the password and the salt as text.","Set N (a power of 2), r and p, plus the output length in bytes.","Run the tool and copy the derived key in hex."],"keywords":"scrypt online, scrypt calculator, free scrypt generator, scrypt key derivation, rfc 7914 scrypt, scrypt n r p parameters","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"scrypt Key Derivation","item":"https://tools.sitefig.net/en/scrypt-kdf/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What do N, r and p mean?","acceptedAnswer":{"@type":"Answer","text":"N is the CPU and memory cost and must be a power of two. r is the block size, and p is the parallelism. Memory used is about 128 times N times r bytes."}},{"@type":"Question","name":"Why does it refuse some values?","acceptedAnswer":{"@type":"Answer","text":"Memory above 64 MiB is rejected to protect your browser, so lower N or r. N must also be a power of two and at least 2."}},{"@type":"Question","name":"Which test vector do the defaults match?","acceptedAnswer":{"@type":"Answer","text":"The defaults, password 'password', salt 'NaCl', N=1024, r=8, p=16 and 64 bytes, are one of the examples in RFC 7914."}},{"@type":"Question","name":"Should I use this for real passwords?","acceptedAnswer":{"@type":"Answer","text":"Do not enter real passwords or live secrets into a page you do not fully trust. It is intended for testing and learning, and the code has not been audited."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">scrypt Key Derivation</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>scrypt Key Derivation</h1>
+<p class="lede">Enter a password and a salt, then set N, r, p and the output length. The tool derives a key with scrypt and prints it as hex.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="scrypt-kdf" data-module="crypto2" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>scrypt is a memory-hard password-based key derivation function, used for wallet encryption, some login systems and encrypted file formats. Its three cost parameters are easy to mix up, and the memory it needs, 128 times N times r bytes, can surprise you: a setting that works in a library on a server can freeze a browser tab. This page lets you try values, check them against the RFC 7914 test vectors and see the result in hex. The memory is capped at 64 MiB, and the computation yields to the page so it stays responsive. The implementation is hand-written and unaudited, so use it to learn and to verify, not to protect real passwords. Input stays in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the password and the salt as text.</li><li>Set N (a power of 2), r and p, plus the output length in bytes.</li><li>Run the tool and copy the derived key in hex.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What do N, r and p mean?</summary><p>N is the CPU and memory cost and must be a power of two. r is the block size, and p is the parallelism. Memory used is about 128 times N times r bytes.</p></details>
+<details><summary>Why does it refuse some values?</summary><p>Memory above 64 MiB is rejected to protect your browser, so lower N or r. N must also be a power of two and at least 2.</p></details>
+<details><summary>Which test vector do the defaults match?</summary><p>The defaults, password 'password', salt 'NaCl', N=1024, r=8, p=16 and 64 bytes, are one of the examples in RFC 7914.</p></details>
+<details><summary>Should I use this for real passwords?</summary><p>Do not enter real passwords or live secrets into a page you do not fully trust. It is intended for testing and learning, and the code has not been audited.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/argon2-hash/"><span class="link-card__title">Argon2d / Argon2i / Argon2id</span><span class="link-card__desc">Hand-written Argon2 (RFC 9106, v1.3) with memory, iterations, parallelism, tag length, secret and associated data. Raw hex or PHC string. Memory capped at 64 MiB; the UI stays responsive.</span></a></li><li><a class="link-card" href="/en/pbkdf2-key-derivation/"><span class="link-card__title">PBKDF2 Key Derivation</span><span class="link-card__desc">Derive a key from a password with PBKDF2 (WebCrypto) using SHA-1/256/384/512; output as hex and Base64.</span></a></li><li><a class="link-card" href="/en/bcrypt-generator/"><span class="link-card__title">Bcrypt Hash Generator</span><span class="link-card__desc">Hash passwords with bcrypt ($2a/$2b, cost 4-14) entirely in your browser. One password per line. Only the first 72 bytes count (bcrypt limit). Cost 12 takes a second or so.</span></a></li><li><a class="link-card" href="/en/hkdf-derive/"><span class="link-card__title">HKDF Key Derivation (RFC 5869)</span><span class="link-card__desc">HKDF extract-and-expand with SHA-1/256/384/512 from input key material, salt and info.</span></a></li><li><a class="link-card" href="/en/password-strength/"><span class="link-card__title">Password Strength Checker</span><span class="link-card__desc">Entropy, patterns (common passwords, l33t, keyboard walks, sequences, repeats), and crack-time estimates. Runs only in this page.</span></a></li><li><a class="link-card" href="/en/hash-generator/"><span class="link-card__title">Hash Generator</span><span class="link-card__desc">MD5, SHA-1, SHA-256, SHA-384 and SHA-512 of your text, all at once.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

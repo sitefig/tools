@@ -1,0 +1,45 @@
+{
+  "id": "bingo-card-generator",
+  "seoTitle": "Bingo Card Generator: 75-Ball and Custom Word Cards, Printable",
+  "metaDescription": "Create printable bingo cards with classic B-I-N-G-O numbers or your own words, a free centre space and a caller sheet.",
+  "intro": "Make bingo cards for a party, class or event in seconds.",
+  "why": "Classic cards follow the 75-ball layout: five unique numbers per column from 1-15 (B), 16-30 (I), 31-45 (N), 46-60 (G) and 61-75 (O), with an optional free space in the centre. Custom cards use your words (at least 24, or 25 without a free space) shuffled onto 5 by 5 grids. The printable page puts each card in its own box and classic mode adds a randomised caller sheet. Column ranges and uniqueness were checked automatically on 30 cards.\n\nCards are random, so two cards can occasionally be identical for very small word lists.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose how many cards.",
+    "Leave the words box empty for classic bingo, or enter at least 24 words.",
+    "Print the preview.",
+    "Use the caller sheet to draw numbers."
+  ],
+  "faq": [
+    {
+      "q": "How many words do I need?",
+      "a": "At least 24 with a free space, or 25 without."
+    },
+    {
+      "q": "Are cards unique?",
+      "a": "Classic cards are random; duplicates are extremely unlikely."
+    },
+    {
+      "q": "Can I print them?",
+      "a": "Yes, use the browser print dialog on the preview."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "raffle-picker",
+    "random-number-picker",
+    "dice-roller",
+    "decision-wheel",
+    "secret-santa-generator",
+    "tournament-bracket-generator"
+  ],
+  "keywords": [
+    "bingo card generator",
+    "printable bingo cards",
+    "custom bingo cards",
+    "bingo caller"
+  ]
+}

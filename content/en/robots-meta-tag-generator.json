@@ -1,0 +1,44 @@
+{
+ "id": "robots-meta-tag-generator",
+ "seoTitle": "Robots Meta Tag Generator: noindex, max-snippet and More",
+ "metaDescription": "Generate a robots meta tag and X-Robots-Tag header with noindex, nofollow, max-snippet, max-image-preview, max-video-preview and unavailable_after.",
+ "intro": "Builds the robots meta tag you need, plus the same rules as an X-Robots-Tag header, using the directives Google documents.",
+ "why": "The robots meta tag controls indexing and previews per page, but the syntax is easy to get wrong: max-snippet takes a number, max-image-preview takes none, standard or large, and unavailable_after wants a date.\n\nPick the directives and get the tag and the header form. The tool warns about combinations that do nothing, such as indexifembedded without noindex, and notes that noarchive is ignored by Google. A page blocked in robots.txt never shows its tag to crawlers.",
+ "howTo": [
+  "Choose the crawler and indexing options.",
+  "Add snippet or preview limits if needed.",
+  "Copy the meta tag into the page head or the header into your server.",
+  "Make sure the page is not blocked in robots.txt."
+ ],
+ "faq": [
+  {
+   "q": "Meta tag or header?",
+   "a": "Use the header for non-HTML files such as PDFs. For HTML pages either works."
+  },
+  {
+   "q": "What does max-snippet:-1 mean?",
+   "a": "No limit: the search engine chooses the length."
+  },
+  {
+   "q": "Does noindex work if robots.txt blocks the page?",
+   "a": "No. The crawler never fetches the page, so it never sees the tag."
+  },
+  {
+   "q": "Is noarchive still used?",
+   "a": "Google lists it as ignored for Search; other engines may honour it."
+  }
+ ],
+ "related": [
+  "meta-tag-generator",
+  "x-robots-tag-header-builder",
+  "seo-robots-noindex-simulator",
+  "ai-snippet-control-advisor",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "robots meta tag generator",
+  "noindex nofollow tag",
+  "max-snippet generator",
+  "unavailable_after tag"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "structured-payment-reference-generator",
+ "seoTitle": "RF Creditor Reference and Belgian OGM/VCS Generator",
+ "metaDescription": "Generate ISO 11649 RF references or Belgian +++ structured communications with check digits, or verify one you have.",
+ "intro": "Creates and checks RF references and Belgian structured communications.",
+ "why": "A structured reference lets the receiver match a payment to an invoice automatically. The RF format (ISO 11649) uses a mod 97 check, and the Belgian +++000/0000/00000+++ format uses the first ten digits modulo 97.\n\nPaste an existing reference to verify it. The calculations are standard and were checked against published examples.",
+ "howTo": [
+  "Choose create RF, create OGM or verify.",
+  "Enter your invoice or customer number.",
+  "Copy the reference."
+ ],
+ "faq": [
+  {
+   "q": "What is the maximum length?",
+   "a": "RF references have up to 21 characters after the check digits."
+  },
+  {
+   "q": "What if the remainder is 0 in OGM?",
+   "a": "The check digits are 97."
+  },
+  {
+   "q": "Is it stored?",
+   "a": "Nothing you type leaves your browser."
+  }
+ ],
+ "related": [
+  "sepa-epc-qr-code-generator",
+  "iban-validator",
+  "invoice-number-generator",
+  "invoice-generator",
+  "tax-id-checksum-validator",
+  "late-payment-interest-calculator"
+ ],
+ "keywords": [
+  "RF reference",
+  "OGM VCS",
+  "structured communication"
+ ]
+}

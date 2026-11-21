@@ -1,0 +1,43 @@
+{
+ "id": "crontab-randomized-generator",
+ "seoTitle": "Free Randomised Crontab Generator to Spread Jobs",
+ "metaDescription": "Spread many cron jobs across minutes and hours instead of firing all at :00, with stable per-job hashes. Free, runs in your browser.",
+ "intro": "Enter your jobs and get crontab lines that spread them across minutes or hours instead of all firing at the same time. Times are stable per job, like Jenkins H syntax, or evenly spaced.",
+ "why": "When every job is set to run at minute zero, the machine sees a spike at the top of each hour: backups, reports, API polling and cleanups all start together. Shared servers, rate-limited APIs and remote services feel it too. Choosing odd minutes by hand helps for a while, until someone copies a line and the spike returns.\n\nThis generator assigns minutes from a hash of a seed and the command, so a given job always lands at the same time, but different jobs differ. Or it spaces them evenly across a window. Pick the frequency, the allowed hours and an optional user. Nothing is uploaded, and the same seed gives the same schedule when you regenerate it.",
+ "howTo": [
+  "List your jobs, one command per line.",
+  "Choose how often they should run and the hour window, if any.",
+  "Select stable hashing or even spacing, and enter a seed and optional user.",
+  "Copy the crontab lines into your crontab file."
+ ],
+ "faq": [
+  {
+   "q": "What does stable mean here?",
+   "a": "A hash of the seed and the command picks the minute, so regenerating the list gives the same times. Add or remove a job and the others do not move, which keeps change history clean."
+  },
+  {
+   "q": "When is even spacing better?",
+   "a": "When you want a predictable gap between jobs, for example to stay below a rate limit. Hashing gives a random-looking spread, while even spacing distributes jobs at fixed intervals across the window."
+  },
+  {
+   "q": "Does it change the time zone?",
+   "a": "No. Cron lines are interpreted in the server's time zone or the one your scheduler is set to. Use the cron time zone converter if you need to shift a schedule between zones."
+  }
+ ],
+ "related": [
+  "cron-generator",
+  "cron-explainer",
+  "natural-language-to-cron",
+  "cron-timezone-converter",
+  "systemd-timer-generator",
+  "cron-dialect-converter"
+ ],
+ "keywords": [
+  "randomized crontab generator",
+  "spread cron jobs",
+  "cron jitter generator",
+  "jenkins h syntax cron",
+  "stagger cron jobs",
+  "free crontab tool"
+ ]
+}

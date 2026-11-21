@@ -1,0 +1,51 @@
+{
+ "id": "ai-sentiment-classifier",
+ "seoTitle": "Free AI Sentiment Analysis Online, Runs in Your Browser",
+ "metaDescription": "Classify English text as positive or negative with a small DistilBERT model that runs entirely in your browser. No upload, no API key, no sign-up.",
+ "intro": "Paste a review, a message or a sentence and a small transformer model tells you whether it reads as positive or negative, with a confidence score. The model runs inside your browser tab, so the text never leaves your device.",
+ "why": "Sentiment scoring is handy for sorting reviews, checking the tone of a draft or sanity-checking a support reply, but most online versions send your text to a server or an API. This tool downloads a real pretrained model once and runs it locally: DistilBERT fine-tuned on the Stanford Sentiment Treebank (SST-2), the same model that is widely used on Hugging Face, with the weights compressed to 8-bit numbers to keep the download at 69 MB. The tokenizer and the neural network are written in plain JavaScript for this site; there is no AI service behind it.\n\nBe realistic about what it is. It is a small model that only knows English and only has two answers, positive or negative, so a neutral or factual sentence still gets pushed to one side. It scores about 91% on its benchmark of movie-review sentences and can be wrong on sarcasm, mixed opinions, slang, domain jargon or anything that is not a review-like sentence. Long text is cut after 254 word pieces (roughly 190 words). Compressing the weights changes the scores slightly compared with the original model, by about 0.1 on average, so a borderline text can land on either side. Treat the result as a quick signal, not a verdict.",
+ "howTo": [
+  "Type or paste English text into the box (the example sentence is a mixed review).",
+  "Press Classify. The first time, the 69 MB model downloads from this site; later runs reuse it.",
+  "Read the label, the confidence and the positive/negative split, and check whether the text was truncated.",
+  "Try rewording the text to see what changes the score, and judge borderline results (near 50%) yourself."
+ ],
+ "faq": [
+  {
+   "q": "Is my text uploaded anywhere?",
+   "a": "No. The model runs in your browser. The only network requests are the one-off downloads of the model file and its vocabulary from this site; your text is never sent to a server or an AI service."
+  },
+  {
+   "q": "Which model is it and how accurate is it?",
+   "a": "It is distilbert-base-uncased-finetuned-sst-2-english (Apache-2.0), reported at about 91% accuracy on the SST-2 movie-review benchmark. This copy stores the weights as 8-bit numbers, which shifts the scores a little. It is a small model: expect mistakes on sarcasm, mixed feelings and text unlike movie or product reviews."
+  },
+  {
+   "q": "Why is a neutral sentence called positive or negative?",
+   "a": "The model was trained with only two classes. It has no neutral option, so a plain statement is scored on whichever side it leans, often with a low confidence. Treat results close to 50% as undecided."
+  },
+  {
+   "q": "Does it work for other languages?",
+   "a": "No. The vocabulary and the training data are English. Other languages produce unreliable scores, and characters outside the vocabulary are replaced by an unknown-word token."
+  },
+  {
+   "q": "Why is the first run slow and how long can the text be?",
+   "a": "The first run downloads 69 MB. After that a sentence takes about a second on a recent computer and the longest supported input (256 tokens) a few seconds; the page stays responsive. Text beyond 254 word pieces is ignored and the tool tells you when that happens."
+  }
+ ],
+ "related": [
+  "word-counter",
+  "sentiment-lexicon",
+  "readability",
+  "text-diff",
+  "keyword-density",
+  "ocr-image-to-text"
+ ],
+ "keywords": [
+  "sentiment analysis online",
+  "ai sentiment classifier",
+  "positive or negative text checker",
+  "sentiment analysis in browser no upload",
+  "distilbert sst-2 online",
+  "review sentiment tool"
+ ]
+}

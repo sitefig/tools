@@ -1,0 +1,46 @@
+{
+ "id": "random-number-picker",
+ "seoTitle": "Free Random Number Picker: Integers in a Range",
+ "metaDescription": "Pick random whole numbers between a minimum and maximum, with or without repeats, using secure randomness. Free tool that runs in your browser.",
+ "intro": "Set a minimum, a maximum and how many numbers you want, and choose whether they must be unique. The tool returns a list of random integers.",
+ "why": "Picking a number between 1 and 100 for a game, drawing lottery-style numbers for a classroom, choosing a random row from a spreadsheet or sampling item numbers for an audit all need the same thing: unbiased integers in a range. Doing it by hand tends to favour numbers people think look random, such as 7 and 37. This tool draws each value with the browser's secure random generator and rejection sampling so every integer in the range has the same chance. With the unique option on it never repeats a value and warns you if the range is too small for the count. It handles up to 10,000 numbers at a time, and nothing you enter leaves the page.",
+ "howTo": [
+  "Enter the minimum and maximum values.",
+  "Enter how many numbers you want and tick 'Unique numbers' to avoid repeats.",
+  "Run the tool and copy the comma-separated list."
+ ],
+ "faq": [
+  {
+   "q": "Are both ends of the range included?",
+   "a": "Yes. The minimum and the maximum can both appear. Decimal bounds are rounded inwards, so 1.5 to 9.5 becomes 2 to 9."
+  },
+  {
+   "q": "What does the unique option do?",
+   "a": "It rejects duplicates so each number appears at most once. If you ask for more unique numbers than the range holds, the tool reports an error."
+  },
+  {
+   "q": "Is it suitable for lotteries or security?",
+   "a": "The randomness is cryptographically strong, but this is not a certified draw system. Do not use it for regulated lotteries or for generating secrets such as passwords."
+  },
+  {
+   "q": "How many numbers can I generate?",
+   "a": "Between 1 and 10,000 per run. The output is a plain comma-separated line that you can paste into a spreadsheet."
+  }
+ ],
+ "related": [
+  "raffle-picker",
+  "dice-roller",
+  "coin-flip",
+  "decision-wheel",
+  "uuid-generator",
+  "password-generator"
+ ],
+ "keywords": [
+  "random number picker",
+  "free random number generator",
+  "pick random numbers",
+  "random integer generator",
+  "unique random numbers",
+  "random number between range"
+ ]
+}

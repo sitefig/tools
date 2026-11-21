@@ -1,0 +1,50 @@
+{
+ "id": "pdf-form-filler",
+ "seoTitle": "Fill PDF Form Online - Text Fields, Checkboxes, Flatten",
+ "metaDescription": "Fill the AcroForm fields of a PDF (text, checkbox, radio, drop-down) and optionally flatten the form. Lists the fields first. In your browser.",
+ "intro": "Fill a fillable PDF form by name and optionally flatten it into plain page content. Run it empty first to see every field.",
+ "why": "Fillable PDF forms store their fields in an AcroForm. This tool reads that structure, lists each field with its type and current value, and fills the ones you name.\n\nRun it with the value box empty to get the field list. Then write one line per field, for example Name = Ada Lovelace or Subscribe = yes, and run it again. Text fields get a freshly generated appearance using the font and size set in the form (size 0 shrinks to fit), alignment, background and border colours; multi-line fields wrap, and \\n starts a new line. Checkboxes take yes or no, radio buttons the name of a choice, and drop-downs one of their options.\n\nTick Flatten and the filled widgets are drawn into the page as fixed content and the form is removed, which is what you want before sending a final copy. Without it the form stays editable. Limits: no XFA (dynamic) forms, comb fields appear as plain text, rotated widgets are left to the viewer, JavaScript calculations are not run and signature fields cannot be filled. Encrypted files must be unlocked first. Everything stays in your browser.",
+ "howTo": [
+  "Choose the form PDF and run the tool with the value box empty to list the fields.",
+  "Write one \"field name = value\" line per field you want to fill.",
+  "Tick Flatten if the form should become fixed text.",
+  "Run again and download the filled PDF."
+ ],
+ "faq": [
+  {
+   "q": "Why does the tool say there are no form fields?",
+   "a": "The PDF has no AcroForm. It may be a flat scan, or an XFA form made by LiveCycle. For flat PDFs use the annotate tool to place text instead."
+  },
+  {
+   "q": "What does flatten do?",
+   "a": "It paints the field appearances into the page content, removes the widgets and deletes the AcroForm. The values can no longer be edited, and the file works in any viewer."
+  },
+  {
+   "q": "How do I check a checkbox or choose a radio button?",
+   "a": "Write yes, on, true or 1 to tick a checkbox and no to clear it. For a radio group write the name of the choice exactly as the field list prints it."
+  },
+  {
+   "q": "Will calculated fields update?",
+   "a": "No. JavaScript calculations and validations do not run here. Fill the final values yourself."
+  },
+  {
+   "q": "Are non-Latin characters supported?",
+   "a": "Values are stored correctly, but the generated appearance uses Western European characters in the form font; others show as a question mark. Viewers that regenerate appearances may show the stored value."
+  }
+ ],
+ "related": [
+  "pdf-annotate",
+  "pdf-redact",
+  "pdf-merge",
+  "pdf-info",
+  "pdf-remove-metadata",
+  "pdf-password-protect"
+ ],
+ "keywords": [
+  "fill pdf form online",
+  "pdf form filler",
+  "flatten pdf form",
+  "fill acroform pdf",
+  "fill fillable pdf free"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "accessible-table-builder",
+ "seoTitle": "Accessible HTML Table Builder from CSV with Caption and Scope",
+ "metaDescription": "Turn CSV or tab-separated data into an HTML table with caption, thead, th scope headers and an optional keyboard-reachable scroll wrapper.",
+ "intro": "Builds an accessible HTML table from pasted CSV with caption and scope attributes.",
+ "why": "Tables without headers are read cell by cell with no context.\n\nThis tool detects the delimiter, handles quoted fields, escapes the content, adds a caption, marks column headers and an optional header column with scope, and can wrap the table in a labelled, focusable scroll region. Complex tables with merged cells need manual markup.",
+ "howTo": [
+  "Paste CSV or tab-separated data.",
+  "Enter a caption.",
+  "Choose whether the first column is a header.",
+  "Copy the HTML."
+ ],
+ "faq": [
+  {
+   "q": "Why scope?",
+   "a": "It tells assistive technology which cells a header applies to."
+  },
+  {
+   "q": "Why tabindex on the wrapper?",
+   "a": "So keyboard users can scroll a table that overflows."
+  },
+  {
+   "q": "Can it do merged cells?",
+   "a": "No. Use colspan, rowspan and scope=\"colgroup\" by hand."
+  },
+  {
+   "q": "Is the data sent?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "csv-to-html-table",
+  "html-table-converter",
+  "html-table-to-json",
+  "a11y-html-check",
+  "screen-reader-text-preview",
+  "csv-to-markdown-table"
+ ],
+ "keywords": [
+  "accessible table builder",
+  "html table th scope",
+  "csv to accessible table"
+ ]
+}

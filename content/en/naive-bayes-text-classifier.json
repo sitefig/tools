@@ -1,0 +1,38 @@
+{
+ "id": "naive-bayes-text-classifier",
+ "seoTitle": "Train Your Own Text Classifier: Naive Bayes in the Browser",
+ "metaDescription": "Paste labelled examples and texts to classify. A Naive Bayes model trains instantly in your browser with probabilities, clue words and an accuracy estimate.",
+ "intro": "Train a small text classifier on your own labelled examples and use it immediately, privately.",
+ "why": "Sometimes you do not need a big model: sorting support tickets, tagging notes or routing feedback can work with a few dozen labelled examples. This tool trains a multinomial Naive Bayes classifier on words and bigrams from your \"label: text\" lines, shows the strongest clue words per label, estimates accuracy by leave-one-out testing on your own examples and predicts labels with probabilities for the texts you add.\n\nNaive Bayes is a simple baseline: it assumes words are independent, only knows words it has seen and always picks one of your labels, even for text that fits none. More and more varied examples help most. Training happens in your tab and the data is never sent anywhere.",
+ "howTo": [
+  "Write training lines as label: text (at least two labels, a few examples each).",
+  "Put the texts to classify in the second box, one per line.",
+  "Read the predictions, the \"unsure\" marks and the accuracy estimate."
+ ],
+ "faq": [
+  {
+   "q": "How many examples do I need?",
+   "a": "A dozen per label gives a rough start; dozens to hundreds are better."
+  },
+  {
+   "q": "Can it say \"none of these\"?",
+   "a": "No. Add an \"other\" label with examples if you need that."
+  },
+  {
+   "q": "Is this AI?",
+   "a": "It is classic machine learning, trained on your data in your browser."
+  }
+ ],
+ "related": [
+  "ai-sentiment-classifier",
+  "keyword-intent-classifier",
+  "keyword-clusterer",
+  "tfidf",
+  "ai-language-identifier"
+ ],
+ "keywords": [
+  "naive bayes classifier online",
+  "train text classifier browser",
+  "text categorization tool"
+ ]
+}

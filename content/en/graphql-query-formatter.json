@@ -1,0 +1,45 @@
+{
+ "id": "graphql-query-formatter",
+ "seoTitle": "Free GraphQL Query Formatter and Beautifier",
+ "metaDescription": "Pretty-print GraphQL queries, mutations and fragments with two-space indentation. Free, runs in your browser, and nothing you paste is uploaded.",
+ "intro": "Paste a GraphQL query, mutation or fragment on one line or many and get it back with tidy two-space indentation and one field per line.",
+ "why": "GraphQL queries often arrive minified from a network tab, a log line or a code string, with commas and fields all run together. Reading nested selections like user { posts { edges { node } } } on one line is hard, and reviewing a change to it is worse.\n\nThis formatter tokenises the document and rebuilds it with one selection per line, aligned braces, tidy arguments and variable definitions kept on the operation line. It keeps comments and block strings. It does not check your query against a schema, so it works for any API, and what you paste stays in your browser.",
+ "howTo": [
+  "Paste a GraphQL query, mutation or fragment into the input.",
+  "Read the formatted result, indented with two spaces per level.",
+  "Copy it back into your code or API client."
+ ],
+ "faq": [
+  {
+   "q": "Does it validate the query against a schema?",
+   "a": "No. It only checks that braces are balanced and then reformats the text. A field that does not exist in your schema will not be flagged."
+  },
+  {
+   "q": "What happens to commas?",
+   "a": "GraphQL treats commas as whitespace, so the formatter drops them between selections. Arguments and variable lists are kept on one line with spacing normalised."
+  },
+  {
+   "q": "Are comments and descriptions kept?",
+   "a": "Yes. Hash comments get their own line at the current indent, and triple-quoted block strings are preserved as single tokens."
+  },
+  {
+   "q": "Can it format a schema definition?",
+   "a": "It is designed for operations and fragments. Schema definition language may format acceptably in simple cases, but nothing is guaranteed for complex type definitions."
+  }
+ ],
+ "related": [
+  "json-to-graphql-query",
+  "json-to-graphql-schema",
+  "graphql-to-typescript",
+  "graphql-schema-to-zod",
+  "json-format",
+  "curl-builder"
+ ],
+ "keywords": [
+  "graphql formatter",
+  "graphql beautifier online",
+  "format graphql query",
+  "free graphql prettifier",
+  "pretty print graphql"
+ ]
+}

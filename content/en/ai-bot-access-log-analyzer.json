@@ -1,0 +1,44 @@
+{
+ "id": "ai-bot-access-log-analyzer",
+ "seoTitle": "AI Bot Access Log Analyzer: Hits per Crawler and Path",
+ "metaDescription": "Paste Apache or Nginx access log lines and count hits per AI crawler with top paths and status codes. Free, your log never leaves the browser.",
+ "intro": "Counts requests from known AI crawlers in a combined-format log and shows their top paths and status codes.",
+ "why": "To decide whether to block an AI crawler, look at what it actually does on your site: how often it visits, what it fetches and whether you serve it.\n\nPaste a log sample and see hits per crawler, distinct IPs, status codes and top paths. The log stays in your browser; remove IP addresses first if you prefer, since the tool only needs the request and user-agent. Matching is by user-agent text, which can be forged.",
+ "howTo": [
+  "Paste log lines in combined format.",
+  "Read the per-crawler table.",
+  "Check the top paths for each bot.",
+  "Decide what to allow or block."
+ ],
+ "faq": [
+  {
+   "q": "Which log formats work?",
+   "a": "Combined format with referrer and user agent, common on Apache and Nginx."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No."
+  },
+  {
+   "q": "Why do some bots show 403?",
+   "a": "Your server or firewall blocked them."
+  },
+  {
+   "q": "Can a bot fake its name?",
+   "a": "Yes. Verify important ones with their published IP ranges."
+  }
+ ],
+ "related": [
+  "access-log-analyzer",
+  "ai-crawler-user-agent-directory",
+  "crawler-ip-range-checker",
+  "robots-txt-compliance-log-checker",
+  "log-privacy-workbench"
+ ],
+ "keywords": [
+  "ai bot log analyzer",
+  "gptbot in access log",
+  "ai crawler traffic",
+  "log file ai bots"
+ ]
+}

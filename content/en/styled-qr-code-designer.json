@@ -1,0 +1,45 @@
+{
+ "id": "styled-qr-code-designer",
+ "seoTitle": "Styled QR Code Designer: Rounded Dots, Colors and Center Logo",
+ "metaDescription": "Make a QR code with square, rounded or dot modules, rounded corner squares, your colours and an optional centre logo. Free, local SVG and PNG.",
+ "intro": "Creates a QR code with module and corner styles, custom colours and an optional logo in the middle, as SVG and PNG.",
+ "why": "The plain QR Code Generator makes the standard black and white code. This one styles it. A logo covers some modules, so the tool switches to the highest error correction level (H) and caps the logo at 25 percent of the width.\n\nA scanner needs strong contrast between dark and light, so the tool refuses colour pairs below 3:1 contrast. Styled codes were decoded back with this site's QR reader in tests, but always scan the final file with your own phone before printing.",
+ "howTo": [
+  "Enter the text or URL.",
+  "Pick module and corner styles and the colours.",
+  "Optionally add a logo and set its size.",
+  "Run it, scan the result with your phone, then download."
+ ],
+ "faq": [
+  {
+   "q": "Why does the logo force level H?",
+   "a": "High error correction lets a scanner rebuild the covered area."
+  },
+  {
+   "q": "Can I use light dots on a dark background?",
+   "a": "Some scanners fail inverted codes. Dark on light is safest."
+  },
+  {
+   "q": "Is the data sent anywhere?",
+   "a": "No."
+  },
+  {
+   "q": "How big should it be in print?",
+   "a": "At least 2 cm wide for a short URL. Test with your phone."
+  }
+ ],
+ "related": [
+  "qr-code-generator",
+  "qr-code-reader",
+  "totp-qr-builder",
+  "data-matrix-generator",
+  "svg-to-png",
+  "simple-logo-maker"
+ ],
+ "keywords": [
+  "qr code with logo",
+  "styled qr code generator",
+  "rounded qr code",
+  "custom qr code design"
+ ]
+}

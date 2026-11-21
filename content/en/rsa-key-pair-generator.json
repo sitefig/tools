@@ -1,0 +1,45 @@
+{
+ "id": "rsa-key-pair-generator",
+ "seoTitle": "Free RSA Key Pair Generator: 2048, 3072, 4096 Bit",
+ "metaDescription": "Generate an RSA key pair in your browser with WebCrypto: PKCS#8 private key and SPKI public key in PEM, or PKCS1. Nothing is uploaded.",
+ "intro": "Generate an RSA key pair at 2048, 3072 or 4096 bits and get the private key as PKCS#8 or PKCS1 PEM, plus the public key as SPKI PEM.",
+ "why": "RSA keys are still needed for TLS test certificates, JWT signing with RS256, legacy SSH servers and sample integrations. Reaching for OpenSSL just to make a test key is slow when you are on a borrowed machine or in a hurry.\n\nThis tool uses your browser WebCrypto engine to create the pair locally. It then rewrites the key identifiers so that tools treat it as a plain RSA key, rather than a key restricted to the PSS scheme, and outputs PEM in the layout you choose. A 4096-bit key can take a few seconds. For long-lived production secrets, generate keys on the machine or HSM that will keep them.",
+ "howTo": [
+  "Choose the key size: 2048, 3072 or 4096 bits.",
+  "Choose PKCS#8 or PKCS1 for the private key format.",
+  "Run it and copy the private and public PEM blocks."
+ ],
+ "faq": [
+  {
+   "q": "Which key size should I pick?",
+   "a": "2048 bits is the usual minimum today, and 3072 gives a larger margin. 4096 is slower to generate and use. Match the size to what your platform policy requires."
+  },
+  {
+   "q": "Why does the key use the RSA-PSS algorithm in WebCrypto?",
+   "a": "WebCrypto requires a signing scheme when generating a key. The tool then rewrites the identifier to plain rsaEncryption, so the key works as a general RSA key with other software."
+  },
+  {
+   "q": "Is the key stored anywhere?",
+   "a": "No. It is created in the page and shown to you. Nothing is saved or sent, and it disappears when you close or reload the tab."
+  },
+  {
+   "q": "Is the private key protected by a passphrase?",
+   "a": "No. It is unencrypted PEM. Protect any file you save it to, and avoid using browser-made keys for high-value systems."
+  }
+ ],
+ "related": [
+  "rsa-pkcs1-pkcs8-converter",
+  "ed25519-key-generator",
+  "x509-csr-decoder",
+  "ssh-key-inspector",
+  "jwt-encode",
+  "x509-san-csr-builder"
+ ],
+ "keywords": [
+  "rsa key pair generator",
+  "generate rsa key online",
+  "rsa 2048 pem generator",
+  "free rsa keygen browser",
+  "pkcs8 private key generator"
+ ]
+}

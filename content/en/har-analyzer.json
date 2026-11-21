@@ -1,0 +1,46 @@
+{
+ "id": "har-analyzer",
+ "seoTitle": "Free HAR File Privacy Analyzer (Local Only)",
+ "metaDescription": "Analyse a HAR capture for third-party domains, trackers, cookies, mixed content and slow or large requests. Free, runs in your browser.",
+ "intro": "Paste the JSON of a HAR file to see third-party domains, known trackers, cookies and their flags, mixed content, large and slow requests and header mismatches.",
+ "why": "A HAR file is a recording of everything a page loaded. It is the best evidence of which third parties receive requests, what cookies are set and whether anything goes over plain HTTP. It is also dangerous: HAR files can include session cookies, tokens and form data, so uploading one to an unknown online analyser is a bad idea.\n\nThis analyser keeps the file in your browser. It groups third-party hosts with request counts and bytes, flags known trackers, lists Set-Cookie headers with flag problems, spots http requests on an https page and highlights requests over your size and time thresholds. Use it for privacy reviews and performance triage. Remove or rotate any secrets before sharing a HAR with anyone.",
+ "howTo": [
+  "Export a HAR from the Network tab of your browser developer tools.",
+  "Paste the HAR JSON into the input box.",
+  "Enter the first-party host if the first request is not your site, and set the large and slow thresholds.",
+  "Run the tool and read the sections for domains, cookies, mixed content and performance."
+ ],
+ "faq": [
+  {
+   "q": "Is it safe to paste a HAR file here?",
+   "a": "The analysis runs in your browser and nothing is uploaded. HAR files still hold secrets such as cookies and tokens, so only use them on a device you trust and sanitise before sharing."
+  },
+  {
+   "q": "How are third parties decided?",
+   "a": "By comparing the base domain of each request with the first-party host, which you can set. Anything else counts as third party, and a built-in list marks known trackers."
+  },
+  {
+   "q": "What if my HAR is very large?",
+   "a": "Large captures with response bodies can be tens of megabytes and may slow the browser. Export without content, or trim entries, if the page becomes unresponsive."
+  },
+  {
+   "q": "What do the thresholds do?",
+   "a": "Requests above the large size in kilobytes or the slow time in milliseconds are listed separately. The defaults are 500 KB and 1,000 ms, and you can change both."
+  }
+ ],
+ "related": [
+  "tracker-detector",
+  "cookie-flag-analyzer",
+  "http-headers-analyzer",
+  "har-to-k6",
+  "json-format",
+  "csp-analyzer"
+ ],
+ "keywords": [
+  "har file analyzer",
+  "har privacy check",
+  "analyse har file online",
+  "third party requests har",
+  "har viewer local"
+ ]
+}

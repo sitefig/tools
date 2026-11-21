@@ -1,0 +1,45 @@
+{
+ "id": "morse-code-koch-trainer",
+ "seoTitle": "Morse Code Trainer: Copy by Ear with the Koch Method",
+ "metaDescription": "Hear random Morse groups at your speed, type what you hear, and add characters as you improve. Free, no sign-up, works offline.",
+ "intro": "Plays groups of five random Morse characters from the set you have learned so far; you type them, and you add a new character at a time.",
+ "why": "The Koch method starts with just two characters at full speed and adds one at a time, so you learn to hear the sound of each letter rather than counting dots. Set the level, speed and pitch, press Play, and type the five characters.\n\nThe character order and the 90 percent rule of thumb for moving on are the commonly used ones, written from memory and not checked against a published source. The Morse table itself was compared with the Morse translator on this site. Timing follows the standard: a dash is three dots, with one dot between elements and three between letters. The level is remembered in this browser if storage is allowed.",
+ "howTo": [
+  "Set how many characters you have learned and your speed.",
+  "Press Play 5 new characters and listen.",
+  "Type what you heard and press Check.",
+  "Raise the level when your accuracy is high."
+ ],
+ "faq": [
+  {
+   "q": "Why start at 15 words per minute?",
+   "a": "The Koch method uses a fast character speed from the start; lower it if you need to."
+  },
+  {
+   "q": "Is the order verified?",
+   "a": "No. It is the order commonly cited, written from memory."
+  },
+  {
+   "q": "Can I hear a text I type?",
+   "a": "Use the Morse code audio generator."
+  },
+  {
+   "q": "Is my progress saved?",
+   "a": "The level only, in this browser."
+  }
+ ],
+ "related": [
+  "morse-translator",
+  "morse-code-audio",
+  "ear-training-intervals-chords-scales",
+  "tone-generator",
+  "multiplication-table-trainer",
+  "flashcards-spaced-repetition"
+ ],
+ "keywords": [
+  "morse code trainer",
+  "learn morse code koch method",
+  "morse code practice by ear",
+  "cw trainer online"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "openapi-to-typescript-fetch",
+ "seoTitle": "Free OpenAPI to TypeScript Types and Fetch Client",
+ "metaDescription": "Generate TypeScript interfaces and a typed fetch client from an OpenAPI 3 or Swagger 2 document in JSON or YAML. Free, runs in your browser.",
+ "intro": "Paste an OpenAPI 3 or Swagger 2 document in JSON or YAML and get TypeScript interfaces from its schemas, and a small typed fetch function for each operation.",
+ "why": "API specs are the source of truth, but nobody wants to retype them as TypeScript interfaces every time a field is added. Large generators work well but need a toolchain, configuration and a build step, which is a lot for a quick prototype or a script.\n\nThis tool turns components.schemas into interfaces and types, handles allOf, oneOf, enums, nullable and arrays, and then writes one function per operation. Path parameters are encoded, query values are added to the URL and JSON bodies are sent with the right header. It is intentionally small: no authentication, no file uploads, no streaming and no operation grouping. For a production SDK, use a full generator and treat this output as a head start.",
+ "howTo": [
+  "Paste your OpenAPI or Swagger document in JSON or YAML.",
+  "Choose whether to include the fetch client, and optionally set the base URL.",
+  "Copy the TypeScript into your project and adjust names or error handling."
+ ],
+ "faq": [
+  {
+   "q": "Does it need the spec to be JSON?",
+   "a": "No. YAML works too, using the same built-in YAML reader as the YAML to JSON tool. JSON documents are read directly."
+  },
+  {
+   "q": "Where does the base URL come from?",
+   "a": "From the field if you fill it in, otherwise the first entry in servers, or host and basePath for Swagger 2. Edit the BASE_URL constant afterwards if needed."
+  },
+  {
+   "q": "How are operation function names chosen?",
+   "a": "From operationId in camelCase. Without one, the method and path are turned into a name. Duplicates get a trailing underscore."
+  },
+  {
+   "q": "What does the client not cover?",
+   "a": "Authentication headers, cookies, multipart or form bodies, and non-JSON responses beyond plain text. Pass extra headers through the init argument that every function accepts."
+  }
+ ],
+ "related": [
+  "openapi-validator",
+  "openapi-to-postman",
+  "postman-to-openapi",
+  "json-to-typescript",
+  "curl-to-code",
+  "yaml-to-typescript"
+ ],
+ "keywords": [
+  "openapi to typescript",
+  "swagger to typescript types",
+  "generate fetch client from openapi",
+  "free openapi codegen online",
+  "openapi typescript interfaces"
+ ]
+}

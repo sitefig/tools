@@ -1,0 +1,44 @@
+{
+ "id": "bar-chart-maker",
+ "seoTitle": "Free Bar Chart Maker: Grouped, Stacked, SVG Export",
+ "metaDescription": "Paste labels and values to draw vertical, horizontal, grouped or stacked bar charts as SVG with a data table. Free, runs in your browser.",
+ "intro": "Turns pasted labels and values into an accessible SVG bar chart. Choose vertical or horizontal bars, grouped or stacked series, sort order, colours and value labels.",
+ "why": "Most online chart makers want an account or upload your data. This one draws the chart from text you paste and keeps everything in the page. The result is plain SVG, so it scales for print and drops into slides, wikis and web pages.\n\nEvery chart carries a title, a description and a table of the numbers, so screen reader users get the same information. Colours come from a palette that stays distinguishable for common colour vision differences. PNG export is not offered: open the SVG in any editor or browser to save an image.",
+ "howTo": [
+  "Paste two or more columns: a label, then one column per series. Keep the header row ticked if you have one.",
+  "Pick vertical or horizontal, grouped or stacked, and a sort order.",
+  "Set a title and size, and give one hex colour if you have a single series.",
+  "Copy the SVG or download it, or read the data table under the chart."
+ ],
+ "faq": [
+  {
+   "q": "Can I export PNG?",
+   "a": "Not directly. The tool produces SVG, which every browser and design tool can open and export to PNG at any size."
+  },
+  {
+   "q": "Are negative values supported?",
+   "a": "Yes. Bars extend below the zero line. In stacked mode negative parts stack downwards separately from positive parts."
+  },
+  {
+   "q": "How many bars can it draw?",
+   "a": "Up to 200 bars. Beyond that labels become unreadable, so group the data first."
+  },
+  {
+   "q": "Does my data leave the browser?",
+   "a": "No. The chart is computed locally and nothing is sent."
+  }
+ ],
+ "related": [
+  "csv-to-chart",
+  "line-chart-maker",
+  "pie-donut-chart-maker",
+  "histogram-builder",
+  "heatmap-maker",
+  "statistics-calculator"
+ ],
+ "keywords": [
+  "bar chart maker",
+  "svg bar chart generator",
+  "stacked bar chart online"
+ ]
+}

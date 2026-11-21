@@ -1,0 +1,44 @@
+{
+ "id": "exception-grouper",
+ "seoTitle": "Exception Grouper: Cluster Similar Error Messages",
+ "metaDescription": "Group error and exception lines by masking numbers, IDs, IPs, paths and URLs. See counts, first and last line and an example. Free.",
+ "intro": "Replaces the variable parts of error lines with placeholders and counts each group.",
+ "why": "A log with 10,000 errors usually has a handful of causes. Masking IDs, numbers, paths, URLs and quoted values turns thousands of lines into a short list.\n\nIt works on single lines. Stack frames are skipped, and a leading timestamp is removed so equal messages group together.",
+ "howTo": [
+  "Paste the log.",
+  "Choose errors only or all lines.",
+  "Decide whether quoted values stay visible.",
+  "Read the groups from most to least frequent."
+ ],
+ "faq": [
+  {
+   "q": "What is masked?",
+   "a": "UUIDs, IPs, URLs, long hex strings, paths, quoted values and numbers."
+  },
+  {
+   "q": "Is this like the privacy workbench?",
+   "a": "That tool redacts private data first. This one only groups errors and keeps the original text in the example."
+  },
+  {
+   "q": "Can it group multi-line traces?",
+   "a": "It groups the line that names the exception, not the whole trace."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "log-pattern-miner",
+  "stacktrace-formatter",
+  "log-privacy-workbench",
+  "log-level-histogram",
+  "ci-build-log-error-extractor",
+  "source-map-stack-trace-decoder"
+ ],
+ "keywords": [
+  "group similar errors",
+  "exception frequency log",
+  "error log deduplication"
+ ]
+}

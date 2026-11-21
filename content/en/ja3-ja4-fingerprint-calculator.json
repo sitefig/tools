@@ -1,0 +1,38 @@
+{
+ "id": "ja3-ja4-fingerprint-calculator",
+ "seoTitle": "JA3 and JA4 TLS Fingerprint Calculator from a ClientHello",
+ "metaDescription": "Paste a TLS ClientHello in hex and get its JA3 string, JA3 MD5 and JA4 fingerprint with a readable breakdown. Local, matches reference implementations.",
+ "intro": "Compute the JA3 and JA4 TLS client fingerprints from a ClientHello you captured, with the ciphers, extensions and groups decoded.",
+ "why": "JA3 and JA4 summarise how a TLS client says hello (versions, cipher suites, extensions, curves) into a short hash, which defenders use to spot bot frameworks, malware and unusual clients, and which scraping teams check to understand why a request is challenged. The page cannot see your connection, so you give it a capture: hex from Wireshark (\"Copy as hex stream\"), tcpdump, or `openssl s_client -msg`.\n\nGREASE values are removed as the specifications require. JA3 follows the original Salesforce definition; JA4 follows the FoxIO specification and matches the ja4plus reference port on our test hellos. Chrome and Firefox shuffle extension order, which changes JA3 per connection but not JA4. A fingerprint identifies software, not a person.",
+ "howTo": [
+  "Capture a ClientHello and copy it as hex (a TLS record starting 16 03, or a handshake starting 01).",
+  "Paste it; a JA3 string alone is also accepted and hashed.",
+  "Read the JA3 MD5, the JA4 string and the decoded ciphers and extensions."
+ ],
+ "faq": [
+  {
+   "q": "How do I get the hex?",
+   "a": "In Wireshark select the Client Hello, then Copy > ...as a Hex Stream. With OpenSSL, run s_client with -msg and copy the bytes of the first message."
+  },
+  {
+   "q": "Why does my browser give a different JA3 each time?",
+   "a": "Modern Chrome and Firefox randomise the order of extensions. JA4 sorts them, so it stays stable."
+  },
+  {
+   "q": "Is this a way to bypass bot detection?",
+   "a": "No. It only computes the published hashes of a hello you supply, which is what defenders and testers do to understand their traffic."
+  }
+ ],
+ "related": [
+  "ssl-tls-handshake-simulator",
+  "x509-chain-analyzer",
+  "http-headers-analyzer",
+  "hash-generator",
+  "antibot-waf-detector"
+ ],
+ "keywords": [
+  "ja3 fingerprint",
+  "ja4 calculator",
+  "tls client hello hash"
+ ]
+}

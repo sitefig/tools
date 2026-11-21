@@ -1,0 +1,45 @@
+{
+ "id": "spelling-bee-speech-practice",
+ "seoTitle": "Spelling Practice: Hear the Word, Type the Spelling",
+ "metaDescription": "Enter a word list and your browser speaks each word; you type the spelling and get a score and a list to practise. Free.",
+ "intro": "Reads each word of your list aloud with your browser's speech synthesis; you type it, and at the end you see your score and the words to practise.",
+ "why": "Spelling practice works best with spoken words, like a classroom test. Paste your weekly list, press Start, listen and type. You can hear the word again, hear it slowly, or reveal it, which counts as a miss.\n\nSpeech uses the voices already installed on your device through the Web Speech API. Some browsers use online voices, which would send the word to the voice provider; choose a local voice in your system settings if that matters. The tool needs a browser with speech synthesis, otherwise use the reveal button.",
+ "howTo": [
+  "Paste your word list, one word per line.",
+  "Press Start and listen.",
+  "Type the spelling and press Enter.",
+  "Read your score and the words to practise."
+ ],
+ "faq": [
+  {
+   "q": "Can it read other languages?",
+   "a": "It uses the page language and your installed voices."
+  },
+  {
+   "q": "Is the word list stored?",
+   "a": "No."
+  },
+  {
+   "q": "Why is there no sound?",
+   "a": "Your browser may lack a voice. Use Show the word instead."
+  },
+  {
+   "q": "Does it check capitals?",
+   "a": "No, case is ignored."
+  }
+ ],
+ "related": [
+  "text-to-speech",
+  "flashcards-spaced-repetition",
+  "handwriting-practice-sheet-maker",
+  "word-search-puzzle-maker",
+  "crossword-puzzle-maker",
+  "quiz-builder-html-file"
+ ],
+ "keywords": [
+  "spelling practice",
+  "spelling bee practice online",
+  "spelling test with audio",
+  "type the spelling"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "breadcrumb-trail-builder",
+ "seoTitle": "Breadcrumb Trail Builder: HTML and BreadcrumbList JSON-LD",
+ "metaDescription": "Turn a URL path into breadcrumb navigation HTML and matching BreadcrumbList JSON-LD. Rename any level. Free.",
+ "intro": "Builds a breadcrumb nav and the JSON-LD from a URL.",
+ "why": "Breadcrumbs help visitors and can appear in search results when marked up. The visible trail and the markup must match.\n\nThe names come from the URL segments, so check them and rename the ones that are not right. The last item is the current page and does not need a link or an item URL.",
+ "howTo": [
+  "Paste the page URL.",
+  "List renames as segment = Label.",
+  "Choose the home label.",
+  "Copy the HTML and JSON-LD."
+ ],
+ "faq": [
+  {
+   "q": "Is the last item linked?",
+   "a": "Not by default; the current page is marked with aria-current."
+  },
+  {
+   "q": "Is the markup valid?",
+   "a": "It follows the schema.org BreadcrumbList shape. Test it in a rich results tool."
+  },
+  {
+   "q": "Do names come from page titles?",
+   "a": "No, from URL segments."
+  },
+  {
+   "q": "Can I add levels?",
+   "a": "Edit the URL or paste the output and adjust."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "jsonld-inspector",
+  "html-link-generator",
+  "heading-analyzer",
+  "seo-inspector",
+  "slug-to-title"
+ ],
+ "keywords": [
+  "breadcrumb generator",
+  "breadcrumblist json-ld",
+  "breadcrumb html",
+  "breadcrumb schema"
+ ]
+}

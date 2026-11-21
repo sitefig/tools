@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free JWT Verifier for HS256, HS384 and HS512 | Free Tools</title>
+<meta name="description" content="Check a JWT signature against a shared secret and see whether exp or nbf make the token invalid. Free, runs in your browser, nothing is uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/jwt-verify-hs/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/jwt-verify-hs/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/jwt-verify-hs/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free JWT Verifier for HS256, HS384 and HS512 | Free Tools">
+<meta property="og:description" content="Check a JWT signature against a shared secret and see whether exp or nbf make the token invalid. Free, runs in your browser, nothing is uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/jwt-verify-hs/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free JWT Verifier for HS256, HS384 and HS512 | Free Tools">
+<meta name="twitter:description" content="Check a JWT signature against a shared secret and see whether exp or nbf make the token invalid. Free, runs in your browser, nothing is uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"JWT Verifier (HS256/384/512)","url":"https://tools.sitefig.net/en/jwt-verify-hs/","description":"Check a JWT signature against a shared secret and see whether exp or nbf make the token invalid. Free, runs in your browser, nothing is uploaded.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the JWT into the first box.","Enter the shared secret in the second box.","Run the check and read the verdict: valid or invalid signature.","Review the notes on expiry and not-before, and the list of token times."],"keywords":"jwt verifier, verify jwt signature online, jwt hs256 validator, free jwt checker, check jwt secret, jwt signature debug","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Hashing & JWT","item":"https://tools.sitefig.net/en/#hashing-and-jwt"},{"@type":"ListItem","position":3,"name":"JWT Verifier (HS256/384/512)","item":"https://tools.sitefig.net/en/jwt-verify-hs/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which algorithms can it verify?","acceptedAnswer":{"@type":"Answer","text":"HS256, HS384 and HS512 only. A token declaring \"none\" is never accepted, and RS256, ES256 and other asymmetric algorithms are reported as unsupported, since they require a public key."}},{"@type":"Question","name":"What does an invalid signature mean?","acceptedAnswer":{"@type":"Answer","text":"Either the secret is wrong, or the token was changed after signing, or it was signed with a different algorithm or key. Check for whitespace around the secret and whether the secret is Base64 encoded in your system."}},{"@type":"Question","name":"Does a valid signature mean I should trust the token?","acceptedAnswer":{"@type":"Answer","text":"It means the token was signed with that secret and not altered. Your server must also check the issuer, audience and expiry. This page checks exp and nbf only."}},{"@type":"Question","name":"Is it safe to enter my secret?","acceptedAnswer":{"@type":"Answer","text":"The check runs in your browser and nothing is sent anywhere. Still, treat real signing secrets carefully, use test values while debugging, and rotate any secret you pasted into an untrusted page."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#hashing-and-jwt">Hashing &amp; JWT</a></li><li><span aria-current="page">JWT Verifier (HS256/384/512)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>JWT Verifier (HS256/384/512)</h1>
+<p class="lede">Paste a JWT and its secret to find out whether the signature is valid. The tool also checks the exp and nbf claims and lists all token times.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="jwt-verify-hs" data-module="encode" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>The classic debugging question is &quot;is my secret wrong, or is the token wrong?&quot;. A 401 gives no detail. Verifying the signature by hand means recomputing an HMAC over the first two parts and comparing it with the third, which is tedious and easy to get slightly wrong.</p>
+<p>This verifier does exactly that. It reads the algorithm from the header, recomputes the signature with your secret, compares it in a way that looks at every character, and reports valid or invalid. It also flags an expired or not-yet-valid token. It runs in your browser, so the secret is not uploaded. Use test secrets when you can.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the JWT into the first box.</li><li>Enter the shared secret in the second box.</li><li>Run the check and read the verdict: valid or invalid signature.</li><li>Review the notes on expiry and not-before, and the list of token times.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which algorithms can it verify?</summary><p>HS256, HS384 and HS512 only. A token declaring &quot;none&quot; is never accepted, and RS256, ES256 and other asymmetric algorithms are reported as unsupported, since they require a public key.</p></details>
+<details><summary>What does an invalid signature mean?</summary><p>Either the secret is wrong, or the token was changed after signing, or it was signed with a different algorithm or key. Check for whitespace around the secret and whether the secret is Base64 encoded in your system.</p></details>
+<details><summary>Does a valid signature mean I should trust the token?</summary><p>It means the token was signed with that secret and not altered. Your server must also check the issuer, audience and expiry. This page checks exp and nbf only.</p></details>
+<details><summary>Is it safe to enter my secret?</summary><p>The check runs in your browser and nothing is sent anywhere. Still, treat real signing secrets carefully, use test values while debugging, and rotate any secret you pasted into an untrusted page.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/jwt-decode/"><span class="link-card__title">JWT Decoder</span><span class="link-card__desc">Decode a JWT header and payload with human-readable exp/iat/nbf. Does not verify the signature.</span></a></li><li><a class="link-card" href="/en/jwt-signature-validator/"><span class="link-card__title">JWT Signature Validator (RS / PS / ES / EdDSA / HS)</span><span class="link-card__desc">Verify a JWT signature against a public key (PEM SPKI, PKCS#1, X.509 certificate), a JWK or a JWKS (matched by kid), or an HMAC secret. Supports RS256/384/512, PS256/384/512, ES256/384/512, EdDSA (Ed25519) and HS256/384/512, decodes header and payload and checks exp / nbf / iat. Blocks the classic &quot;HS256 signed with the public key&quot; algorithm-confusion trick and flags alg &quot;none&quot;.</span></a></li><li><a class="link-card" href="/en/jwt-encode/"><span class="link-card__title">JWT Encoder / Signer</span><span class="link-card__desc">Create and sign a JWT with HS256, HS384 or HS512.</span></a></li><li><a class="link-card" href="/en/hmac-generator/"><span class="link-card__title">HMAC Generator</span><span class="link-card__desc">HMAC with MD5, SHA-1, SHA-256, SHA-384 or SHA-512; hex and Base64 output.</span></a></li><li><a class="link-card" href="/en/jwt-expiry-calculator/"><span class="link-card__title">JWT Expiry Calculator</span><span class="link-card__desc">Check exp / nbf / iat of one or more JWTs against now (or a time you choose) with optional clock-skew leeway: remaining lifetime, total lifetime, and warnings. The signature is not verified.</span></a></li><li><a class="link-card" href="/en/webhook-signature-verifier/"><span class="link-card__title">Webhook Signature Verifier (HMAC)</span><span class="link-card__desc">Verify a webhook's HMAC signature locally: paste the raw request body, the signature header(s) and your signing secret, choose the provider (GitHub, Stripe, Slack, Shopify, Standard Webhooks/Svix or generic HMAC) and see the expected signature, a constant-time comparison and, where relevant, timestamp tolerance. The body must be the exact raw bytes received (no re-serialised JSON).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+{
+ "id": "jsonpath-tester",
+ "seoTitle": "Free JSONPath Tester & Evaluator Online",
+ "metaDescription": "Free online JSONPath tester. Run queries with filters, slices, unions and recursive descent against your JSON and see the matches and their paths.",
+ "intro": "Run a JSONPath expression against a JSON document and see the matching values. Filters, slices, unions, wildcards and recursive descent are supported, and you can show the path of each match.",
+ "why": "JSONPath is how many tools, from API gateways to test frameworks, pick values out of a JSON document. Getting an expression right by trial and error inside the real system is slow, especially with filters such as price under 20 and an author present.\n\nPut your document in one box and the expression in the other, and the matches appear straight away. Tick the paths option to see exactly where each match was found, which is useful when a filter returns more than you expected. The tool covers the common syntax: dot and bracket notation, wildcards, .., slices, unions and [?()] filters. Differences exist between JSONPath implementations, so confirm unusual expressions in your target tool. Nothing is uploaded.",
+ "howTo": [
+  "Paste the JSON data into the first box.",
+  "Enter a JSONPath expression such as $.store.book[*].title in the second box.",
+  "Tick Show matched paths to see where each result came from.",
+  "Adjust the expression until the output matches what you need."
+ ],
+ "faq": [
+  {
+   "q": "Which syntax is supported?",
+   "a": "Root $, child access with dots and brackets, wildcards, recursive descent .., array indexes, slices, unions and [?()] filter expressions with comparisons and && or ||."
+  },
+  {
+   "q": "Why do results differ from another tool?",
+   "a": "JSONPath was never strictly standardised until recently, and libraries differ on details such as filter syntax and missing keys. Check edge cases in the implementation you actually use."
+  },
+  {
+   "q": "What does the output look like?",
+   "a": "By default a JSON array of matched values. With paths enabled, a match count followed by one line per match showing its path and value."
+  },
+  {
+   "q": "What if nothing matches?",
+   "a": "You see an empty array, or 0 matches with the paths option. An empty expression gives an error asking you to enter one."
+  }
+ ],
+ "related": [
+  "json-tree",
+  "json-pointer-tester",
+  "json-format",
+  "xpath-tester",
+  "json-validate",
+  "json-patch-generator"
+ ],
+ "keywords": [
+  "jsonpath tester",
+  "jsonpath online",
+  "jsonpath evaluator",
+  "free jsonpath tool",
+  "jsonpath filter expression",
+  "test jsonpath query"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "calorie-deficit-calculator",
+ "seoTitle": "Calorie Deficit Calculator (Daily Target and Goal Date)",
+ "metaDescription": "Turn a weekly weight-loss rate into a daily calorie target and an estimated goal date, from Mifflin-St Jeor maintenance calories and a 7,700 kcal per kg...",
+ "intro": "Turn a weekly weight-loss rate into a daily calorie target and a goal date.",
+ "why": "Enter your body details, activity level, goal weight and planned change per week. The tool estimates your maintenance calories with Mifflin-St Jeor, subtracts the daily deficit (7,700 kcal per kg, or 3,500 per lb), and counts the weeks to your goal.\n\nThe 7,700 figure is a rule of thumb. Real weight change slows as you lose, and water shifts hide the trend for days. The page warns when the target falls below your resting calories or the rate is above about 1% of body weight a week.",
+ "howTo": [
+  "Pick units and enter age, sex, height and current weight.",
+  "Choose the activity level that matches your normal week.",
+  "Enter the goal weight and the change per week you want.",
+  "Read the daily target and the estimated goal date."
+ ],
+ "faq": [
+  {
+   "q": "Why 7,700 kcal per kg?",
+   "a": "It is the common estimate of the energy in a kilogram of body weight. It is an average, so use it for planning, not prediction."
+  },
+  {
+   "q": "Is a bigger deficit better?",
+   "a": "Not usually. Fast cuts are hard to keep and can cost muscle. The page flags rates above about 1% of body weight a week."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "bmr-tdee",
+  "macro-calculator",
+  "protein-intake-calculator",
+  "ideal-weight",
+  "bmi-calculator",
+  "water-intake"
+ ],
+ "keywords": [
+  "calorie deficit calculator",
+  "weight loss calculator",
+  "daily calories to lose weight",
+  "goal date calculator"
+ ]
+}

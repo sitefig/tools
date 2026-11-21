@@ -1,0 +1,45 @@
+{
+ "id": "random-number-generator",
+ "seoTitle": "Free Random Number Generator: Integers and Decimals",
+ "metaDescription": "Cryptographically random integers or decimals in any range, with unique values, sorting and sum and mean. No modulo bias. Free, local.",
+ "intro": "Generates random whole numbers or decimals between a minimum and a maximum using the browser's cryptographic random source.",
+ "why": "Pick numbers for a sample, a test, a draw or a spreadsheet. Integers are drawn without modulo bias, and big ranges work because the maths uses exact large integers. Decimals use 53 random bits scaled to your range and rounded to the places you choose.\n\nYou can ask for unique values, sort the list and choose the separator. The result also shows the count, sum and mean so you can check it. Because it is a true random source with no seed, the same settings give different numbers each time.",
+ "howTo": [
+  "Set the minimum and maximum.",
+  "Choose integers or decimals and the count.",
+  "Tick unique or sorted if needed.",
+  "Copy the numbers."
+ ],
+ "faq": [
+  {
+   "q": "Is this secure random?",
+   "a": "It uses crypto.getRandomValues, which is suitable for most uses including picking winners. Do not use it where a law or contest rule requires a certified method."
+  },
+  {
+   "q": "Are both ends included?",
+   "a": "For integers yes. For decimals the range is closed at both ends after rounding."
+  },
+  {
+   "q": "Can I repeat a draw?",
+   "a": "No. There is no seed, so results cannot be reproduced."
+  },
+  {
+   "q": "What is the biggest range?",
+   "a": "Integers can be very large. Decimals are limited by double precision."
+  }
+ ],
+ "related": [
+  "random-number-picker",
+  "raffle-picker",
+  "dice-roller",
+  "password-generator",
+  "random-secret-generator",
+  "list-shuffler"
+ ],
+ "keywords": [
+  "random number generator",
+  "random decimal generator",
+  "random integer generator",
+  "unique random numbers"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "robots-pattern-to-regex-converter",
+ "seoTitle": "robots.txt Pattern to Regex Converter for Log Analysis",
+ "metaDescription": "Convert robots.txt Allow and Disallow paths with * and $ into regular expressions for grep, awk and log tools. Free, in your browser.",
+ "intro": "Turns robots.txt path patterns into regular expressions anchored at the start of the path.",
+ "why": "To count how often bots hit blocked areas in your logs, you need the same patterns as regular expressions. Converting by hand means escaping dots and question marks and mapping * to .* correctly.\n\nPaste your rules and copy the regexes. The tool does not apply the longest-match logic between Allow and Disallow; that stays up to you or to the compliance log checker.",
+ "howTo": [
+  "Paste rules with or without the Allow or Disallow prefix.",
+  "Copy the regex for each pattern.",
+  "Use it with grep -E, awk or a log platform.",
+  "Apply it to the path plus query string."
+ ],
+ "faq": [
+  {
+   "q": "Is the regex case sensitive?",
+   "a": "Yes, like robots.txt."
+  },
+  {
+   "q": "Why anchor with ^?",
+   "a": "Patterns match from the start of the path."
+  },
+  {
+   "q": "Does it handle $?",
+   "a": "Yes, it becomes an end-of-string anchor."
+  },
+  {
+   "q": "Can it resolve conflicts?",
+   "a": "No. The compliance log checker applies the full logic."
+  }
+ ],
+ "related": [
+  "robots-wildcard-pattern-tester",
+  "robots-txt-compliance-log-checker",
+  "robots-tester",
+  "access-log-analyzer",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "robots.txt to regex",
+  "robots pattern regex",
+  "robots.txt wildcard regex",
+  "convert disallow to regex"
+ ]
+}

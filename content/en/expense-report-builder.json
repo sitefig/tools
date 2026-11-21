@@ -1,0 +1,39 @@
+{
+ "id": "expense-report-builder",
+ "seoTitle": "Expense Report Builder With VAT and CSV Export",
+ "metaDescription": "Itemize business expenses with category and VAT, get totals by category and rate, and copy the CSV. Free and private.",
+ "intro": "Turns pasted expense lines into totals by category and VAT rate, plus CSV.",
+ "why": "Expense claims need net, VAT and gross per line and a summary by category. Paste CSV lines of date, category, description, amount and VAT percent.\n\nChoose whether amounts include VAT. Whether VAT is deductible depends on national rules for meals, cars and similar items.",
+ "howTo": [
+  "Paste one expense per line as CSV.",
+  "Choose whether amounts include VAT.",
+  "Copy the totals or the CSV."
+ ],
+ "faq": [
+  {
+   "q": "What delimiters work?",
+   "a": "Comma, semicolon and tab, with quotes for text."
+  },
+  {
+   "q": "Is the data stored?",
+   "a": "Nothing you type leaves your browser."
+  },
+  {
+   "q": "Is VAT reclaimable?",
+   "a": "That depends on your country and the type of cost."
+  }
+ ],
+ "related": [
+  "vat-return-summary-builder",
+  "vat-calculator",
+  "mileage-allowance-calculator",
+  "per-diem-allowance-calculator",
+  "invoice-generator",
+  "receipt-generator"
+ ],
+ "keywords": [
+  "expense report",
+  "expenses with VAT",
+  "expense CSV"
+ ]
+}

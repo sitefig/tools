@@ -1,0 +1,44 @@
+{
+ "id": "windows-event-xml-viewer",
+ "seoTitle": "Windows Event Log XML Viewer: Filter by Event ID",
+ "metaDescription": "Read Windows events exported as XML and filter by event ID. Common Security events get their Microsoft title. Free, runs locally.",
+ "intro": "Parses Event Viewer XML exports, lists events and summarises failed logons.",
+ "why": "Event Viewer can save events as XML. This tool reads them, so you can filter 4625 failed logons or 4688 new processes without opening Event Viewer.\n\nTitles for the listed Security event IDs come from the Microsoft Learn pages. Other IDs show no title. Binary .evtx files are not read; export to XML first.",
+ "howTo": [
+  "In Event Viewer choose Save All Events As and pick XML, or run wevtutil qe Security /f:xml.",
+  "Paste or open the XML.",
+  "Enter event IDs to show, if you want a subset.",
+  "Read the summary and the table."
+ ],
+ "faq": [
+  {
+   "q": "Can it open .evtx?",
+   "a": "No. Export to XML first."
+  },
+  {
+   "q": "What does Level LogAlways mean?",
+   "a": "Level 0. Security audit events use it."
+  },
+  {
+   "q": "Which logon types are named?",
+   "a": "2 Interactive, 3 Network, 4 Batch, 5 Service, 7 Unlock, 8 NetworkCleartext, 9 NewCredentials, 10 RemoteInteractive, 11 CachedInteractive."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "auth-log-analyzer",
+  "cloudtrail-event-viewer",
+  "xml-format",
+  "brute-force-scan-detector",
+  "syslog-parser",
+  "log-format-detector"
+ ],
+ "keywords": [
+  "windows event log viewer",
+  "evtx xml parser",
+  "event id 4625 analysis"
+ ]
+}

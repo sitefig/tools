@@ -1,0 +1,47 @@
+{
+ "id": "port-reference",
+ "seoTitle": "Free Common Ports Reference: TCP and UDP Port List",
+ "metaDescription": "Searchable list of well-known TCP and UDP port numbers for SSH, HTTP, databases, mail, Kubernetes and more. Free, instant and works in your browser.",
+ "intro": "A searchable list of common TCP and UDP ports and the services that use them. Filter by number, protocol or name, such as 5432, UDP or Redis.",
+ "why": "You need port numbers all the time: opening a firewall rule, writing a Docker mapping, reading a connection error, or working out why something is listening on 9200. Memorising them all is impossible, and search results are full of vendor pages and outdated tables.\n\nThis reference gathers about seventy ports that matter for web and infrastructure work: SSH, DNS, mail, databases, message brokers, Kubernetes, monitoring and VPNs. It marks whether the port is TCP, UDP or both. Typing a service name or a number narrows the list instantly. Remember that a port number only suggests the usual service, since anything can listen anywhere.",
+ "howTo": [
+  "Open the tool to see the full port list.",
+  "Type a port number, a protocol or a service name into the filter.",
+  "Read the protocol and service next to each match.",
+  "Copy what you need for a firewall rule, a Compose file or documentation."
+ ],
+ "faq": [
+  {
+   "q": "Does a port number prove which service is running?",
+   "a": "No. Ports are only conventions. A web server can listen on 22 and SSH on 8080. Use the list to know what is expected and to investigate surprises, not as proof of what is running."
+  },
+  {
+   "q": "Which ports are for secure and insecure mail?",
+   "a": "SMTP relay is 25, submission with STARTTLS is 587 and implicit-TLS SMTP is 465. IMAP is 143 or 993 with TLS, and POP3 is 110 or 995 with TLS."
+  },
+  {
+   "q": "Which ports are risky to expose to the internet?",
+   "a": "Management and database ports such as RDP 3389, SMB 445, Telnet 23, Docker 2375 without TLS, Redis 6379, MongoDB 27017 and Elasticsearch 9200 should normally be firewalled or bound to private networks."
+  },
+  {
+   "q": "Is this the full IANA registry?",
+   "a": "No. The registry holds thousands of entries. This is a short list of the ports you are likely to meet in everyday web, database and DevOps work."
+  }
+ ],
+ "related": [
+  "ip-subnet-calculator",
+  "http-status-reference",
+  "dns-record-generator",
+  "nginx-config-generator",
+  "docker-compose-generator",
+  "k8s-manifest-validator"
+ ],
+ "keywords": [
+  "common ports list",
+  "tcp udp port numbers",
+  "port 443 vs 8443",
+  "free port reference",
+  "well known ports",
+  "default database ports"
+ ]
+}

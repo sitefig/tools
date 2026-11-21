@@ -1,0 +1,44 @@
+{
+ "id": "fuzzy-match-deduplicator",
+ "seoTitle": "Fuzzy Match Deduplicator: Cluster Near-Duplicate Names",
+ "metaDescription": "Group spellings like Acme Inc and ACME Inc. in a CSV column, pick the most frequent as canonical, and output a cleaned file. Free.",
+ "intro": "Finds values in a column that differ only by case, punctuation, company suffixes or small typos and groups them, with an option to rewrite them to one spelling.",
+ "why": "Company and place names are typed many ways. Exact match tools miss them. This tool first normalises accents, case, punctuation and common suffixes such as Inc, Ltd or GmbH, then optionally groups values within an edit-distance similarity.\n\nThe report shows every group with the counts per spelling so you can judge them. Similarity is a heuristic: Initech and Initec may or may not be the same company, so read the report before applying the cleaned file. At 100 percent only formatting differences are grouped.",
+ "howTo": [
+  "Paste the CSV and name the column.",
+  "Set the similarity: 100 for formatting only, 85 for typos.",
+  "Pick the cluster report first and review it.",
+  "Switch to the cleaned CSV to rewrite the column."
+ ],
+ "faq": [
+  {
+   "q": "How is similarity measured?",
+   "a": "One minus the Levenshtein edit distance divided by the longer normalised string."
+  },
+  {
+   "q": "Will it merge different companies with similar names?",
+   "a": "It can at low settings. Check the report."
+  },
+  {
+   "q": "Which spelling wins?",
+   "a": "The most frequent one; ties go to the shorter."
+  },
+  {
+   "q": "Limits?",
+   "a": "Up to 3000 distinct values."
+  }
+ ],
+ "related": [
+  "duplicate-row-remover",
+  "category-value-mapper",
+  "fuzzy-search-playground",
+  "email-list-cleaner",
+  "csv-column-profiler",
+  "table-find-replace"
+ ],
+ "keywords": [
+  "fuzzy duplicate finder",
+  "cluster similar names csv",
+  "clean company names"
+ ]
+}

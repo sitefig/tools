@@ -1,0 +1,46 @@
+{
+  "id": "image-to-ascii",
+  "seoTitle": "Free Image to ASCII Art Converter: Photo to Text",
+  "metaDescription": "Convert an image into ASCII text art with a chosen width, a custom character ramp and an invert option. Free, files stay in your browser.",
+  "intro": "Turns a picture into text art. It scales the image to the number of columns you set, then maps each pixel's brightness to a character from a ramp. You can invert the ramp and use your own characters.",
+  "why": "ASCII art still has a place in README headers, terminal splash screens, code comments and just plain nostalgia. Converting a photo or logo by hand is not realistic, and a command line converter is another thing to install.\n\nChoose an image, set the width in columns, and the tool samples brightness and swaps pixels for characters from dark to light. The default ramp goes from @ down to a space. If you plan to show the result light-on-dark, tick Invert so bright areas get the dense characters. Rows are halved to compensate for tall characters. High contrast images with a simple subject look best. The conversion runs in your browser and the picture is not uploaded.",
+  "howTo": [
+    "Choose an image file.",
+    "Set the number of columns, between 10 and 300.",
+    "Tick Invert if the text will be shown light on dark, or edit the character ramp.",
+    "Run it, then copy the output into a monospaced context."
+  ],
+  "faq": [
+    {
+      "q": "What is the character ramp?",
+      "a": "A list of characters ordered from darkest to lightest. Each pixel's brightness picks a character from it. A longer ramp gives smoother shading, a short one such as \"#. \" gives a bolder look."
+    },
+    {
+      "q": "Why does the picture look stretched?",
+      "a": "Characters are taller than they are wide, so the tool uses half as many rows as a straight scale would, which restores the shape. If your font is unusual, adjust the column count."
+    },
+    {
+      "q": "What images work best?",
+      "a": "Simple, high-contrast pictures such as logos, portraits against a plain background and silhouettes. Detailed photos with a busy background turn into noise at low column counts."
+    },
+    {
+      "q": "Where should I paste the result?",
+      "a": "Anywhere with a monospaced font and no automatic wrapping, such as a code block, a terminal or a README. In a proportional font the proportions fall apart."
+    }
+  ],
+  "related": [
+    "ascii-art-text",
+    "ascii-table-generator",
+    "image-filters",
+    "image-resizer",
+    "image-info",
+    "ascii-tree-generator"
+  ],
+  "keywords": [
+    "image to ascii art",
+    "photo to ascii converter",
+    "picture to text art",
+    "ascii art generator from image",
+    "free ascii converter"
+  ]
+}

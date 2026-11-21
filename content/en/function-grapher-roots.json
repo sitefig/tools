@@ -1,0 +1,45 @@
+{
+ "id": "function-grapher-roots",
+ "seoTitle": "Free Function Grapher: Plot Curves, Find Roots and Intersections",
+ "metaDescription": "Plot one or more functions of x online, with roots and crossing points marked and listed. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Plots up to six functions of x on one grid and marks where each curve crosses the x axis and where two curves cross each other.",
+ "why": "A graph answers questions that algebra hides: how many solutions are there, where do two curves meet, what does the function do far from zero. Typing y = x^2 - 3 and y = sin(x) and seeing the crossings is often faster than solving by hand.\n\nThe roots and crossings are found by sampling the curve at 4000 points and refining each sign change by bisection. That is reliable for ordinary functions but can miss a root where the curve only touches the axis, such as x^2 at zero, and it can draw a false root at a jump like tan(x). The page says so under the plot, so treat marked points as a guide.",
+ "howTo": [
+  "Type one function per line, for example y = x^2 - 3 and sin(x) * 2.",
+  "Set the x range and, if you like, the y range. Leave y blank for an automatic range.",
+  "Tick the degrees box if trig functions should use degrees.",
+  "Read the plot and the lists of roots and crossings below it."
+ ],
+ "faq": [
+  {
+   "q": "Which functions can I type?",
+   "a": "Numbers, x, pi, e, + - * / ^, brackets and sin, cos, tan, asin, acos, atan, sinh, cosh, tanh, exp, ln, log (base 10), log2, sqrt, cbrt, abs and more. Writing 2x or 3(x+1) works."
+  },
+  {
+   "q": "Why is a root missing?",
+   "a": "The search looks for a sign change. A curve that touches zero without crossing, like x^2, has none, so it is not found."
+  },
+  {
+   "q": "Does it plot implicit curves or parametric curves?",
+   "a": "No. Only y = f(x). For 3D surfaces use the 3D surface plotter."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything is computed in your browser."
+  }
+ ],
+ "related": [
+  "scientific-calculator-degrees",
+  "polynomial-equation-solver",
+  "derivative-calculator-steps",
+  "integral-calculator-area",
+  "surface-plotter-3d",
+  "regression-curve-fit"
+ ],
+ "keywords": [
+  "function grapher online",
+  "plot function find intersection",
+  "graphing calculator roots",
+  "plot y = x^2"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "language-region-code-lookup",
+ "seoTitle": "Language and Region Code Lookup for Hreflang (pt-BR, en-GB)",
+ "metaDescription": "Search ISO 639-1 languages and ISO 3166-1 regions by name or code, and copy valid hreflang combinations such as pt-BR.",
+ "intro": "Type Portuguese Brazil or a code and get matching languages, regions and ready combinations.",
+ "why": "Hreflang values are language-REGION, and people remember neither list. Search by English name, native name or code. When your search matches both a language and a region the tool offers the combinations, such as pt-BR.\n\nNames come from your browser's Intl data, so they follow current CLDR. A region alone is never valid in hreflang, and the page reminds you to use the language alone unless the versions really differ by country.",
+ "howTo": [
+  "Type a language, a country or a code.",
+  "Read the languages and regions found.",
+  "Pick a combination.",
+  "Check it in the code checker if unsure."
+ ],
+ "faq": [
+  {
+   "q": "Why are some names in other scripts?",
+   "a": "The native name appears in brackets so you can recognise the language."
+  },
+  {
+   "q": "Does it include 3-letter codes?",
+   "a": "No, Google supports ISO 639-1 two-letter codes."
+  },
+  {
+   "q": "Can it list every language?",
+   "a": "Search for a letter or common word to browse."
+  },
+  {
+   "q": "Which data is used?",
+   "a": "ISO code lists plus Intl.DisplayNames from your browser."
+  }
+ ],
+ "related": [
+  "hreflang-code-checker",
+  "hreflang-script-subtag-helper",
+  "hreflang-generator",
+  "language-detector",
+  "international-format-previewer",
+  "punycode"
+ ],
+ "keywords": [
+  "hreflang language codes",
+  "iso 639-1 lookup",
+  "country code lookup",
+  "pt-BR hreflang"
+ ]
+}

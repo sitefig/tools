@@ -1,0 +1,45 @@
+{
+ "id": "video-cropper",
+ "seoTitle": "Video Cropper: Make 9:16, 1:1 or 4:5 Clips in Your Browser",
+ "metaDescription": "Crop a video to vertical, square or custom aspect ratios. Pick the ratio and position the crop, then export. No upload.",
+ "intro": "Crops a video to a new aspect ratio, such as 9:16 for stories or 1:1 for feeds, at a position you set with two percentages.",
+ "why": "A drag box is hard to use with a keyboard, so you choose the ratio and move the crop with two number fields: horizontal and vertical position from 0 to 100. The crop is the largest area of that ratio that fits in the frame.\n\nNothing is uploaded. The file is decoded by your browser and re-encoded, so quality drops a little and the result is WebM (or MP4 where your browser can record it). It records in real time, so a 60 second clip takes about a minute and the tab must stay visible.",
+ "howTo": [
+  "Choose the video.",
+  "Pick a ratio or enter a custom one such as 2:1.",
+  "Set the horizontal and vertical position of the crop.",
+  "Process and download."
+ ],
+ "faq": [
+  {
+   "q": "Can I drag a box on the picture?",
+   "a": "No. Position fields work with keyboard, touch and screen readers. Try 50 and 50 first, then adjust."
+  },
+  {
+   "q": "What size is the output?",
+   "a": "The crop size in source pixels, rounded to even numbers."
+  },
+  {
+   "q": "Does it zoom?",
+   "a": "The crop is not scaled. Use the Video Resizer after if you need a specific size."
+  },
+  {
+   "q": "Is audio kept?",
+   "a": "Yes."
+  }
+ ],
+ "related": [
+  "video-resizer",
+  "video-rotator",
+  "image-cropper",
+  "aspect-ratio-calculator",
+  "video-trimmer",
+  "social-image-size-reference"
+ ],
+ "keywords": [
+  "crop video online",
+  "video to 9:16",
+  "square video crop",
+  "vertical video maker"
+ ]
+}

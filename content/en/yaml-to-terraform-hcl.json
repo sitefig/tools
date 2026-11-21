@@ -1,0 +1,45 @@
+{
+ "id": "yaml-to-terraform-hcl",
+ "seoTitle": "Free YAML or JSON to Terraform HCL Converter",
+ "metaDescription": "Turn YAML or JSON in Terraform JSON-syntax shape into HCL with aligned attributes, blocks and unquoted expressions. Free, runs in your browser.",
+ "intro": "Turns YAML or JSON in the Terraform JSON-syntax shape (resource, variable, output, locals, provider, terraform) into HCL, writing expressions unquoted, repeated blocks as nested blocks and aligning output like terraform fmt.",
+ "why": "If a script or generator produces your infrastructure description as YAML or JSON, someone still has to turn it into HCL for people to read and review. Doing it by hand risks mistakes with quoting and block structure. Paste the data here and the tool writes HCL: a string that is a single \"${...}\" expression is written unquoted, lists of mappings become repeated nested blocks, known block names such as lifecycle and connection become blocks, and other mappings such as tags stay attribute maps. Output is aligned in the style of terraform fmt. The input must follow the Terraform JSON shape, with top-level keys like resource and variable. The conversion runs in your browser.",
+ "howTo": [
+  "Paste YAML or JSON in the Terraform structure into the input box.",
+  "Run the conversion to see the HCL.",
+  "Copy it into a .tf file and run terraform fmt and terraform validate."
+ ],
+ "faq": [
+  {
+   "q": "What input shape does it expect?",
+   "a": "The Terraform JSON syntax: top-level keys such as terraform, variable, resource, output, locals and provider, with resources nested by type and name."
+  },
+  {
+   "q": "How are \"${...}\" strings treated?",
+   "a": "A string that is exactly one ${...} expression is written without quotes, so references like aws_instance.web[0].public_ip become real expressions in HCL."
+  },
+  {
+   "q": "How does it decide between blocks and maps?",
+   "a": "Known block names such as lifecycle and connection, and lists of mappings, become blocks. Other mappings, like tags, stay as attribute maps with an equals sign."
+  },
+  {
+   "q": "Does the output need checking?",
+   "a": "Yes. Run terraform fmt and terraform validate on the result, ideally in a scratch directory. Unusual structures or block names that the tool does not recognise may need a manual fix."
+  }
+ ],
+ "related": [
+  "terraform-hcl-to-json",
+  "terraform-hcl-to-yaml",
+  "terraform-formatter",
+  "terraform-scaffolder",
+  "yaml-to-json",
+  "json-to-yaml"
+ ],
+ "keywords": [
+  "yaml to terraform hcl",
+  "json to hcl converter",
+  "convert yaml to tf",
+  "free terraform hcl generator",
+  "terraform json syntax to hcl"
+ ]
+}

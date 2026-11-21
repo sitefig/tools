@@ -1,0 +1,50 @@
+{
+ "id": "arrow-ipc-viewer",
+ "seoTitle": "Arrow and Feather File Viewer: Read .arrow Files Online",
+ "metaDescription": "Open Apache Arrow IPC (.arrow, .arrows) and Feather v2 files in your browser: schema, metadata and rows as JSON or CSV. LZ4 compression and dictionaries supported. No upload.",
+ "intro": "Look inside an Arrow or Feather file without Python: see the schema, the metadata and the first rows.",
+ "why": "The decoder reads the Arrow IPC stream and file formats, including Feather v2, with a hand-written FlatBuffers reader. It decodes the schema, record batches and dictionary batches, applies validity bitmaps for nulls, and understands booleans, signed and unsigned integers of all widths, half, single and double floats, UTF-8 and large UTF-8 strings, binary and fixed-size binary, dates, times, timestamps with time zones, durations, decimal128, lists, large lists, fixed-size lists, structs, maps and dictionary-encoded columns. Buffers compressed with LZ4 (what pandas and pyarrow write by default for Feather) are decompressed with a hand-written LZ4 frame decoder.\n\nResults were compared with pyarrow on files it wrote, both stream and file formats, uncompressed and LZ4, plus a 300,000-row Feather file: every value matched.\n\nLimits: ZSTD-compressed buffers (a ZSTD decoder is a separate large piece of code), union, run-end and view types, decimal256, intervals, big-endian files and extension types beyond their storage type. The whole file is read into memory, so very large files will be slow. 64-bit integers beyond 2^53 are shown as strings so no digits are lost.",
+ "howTo": [
+  "Choose an .arrow, .arrows or .feather file.",
+  "Read the schema and metadata at the top.",
+  "Pick JSON or CSV and the number of rows to show.",
+  "Copy the rows or download them."
+ ],
+ "faq": [
+  {
+   "q": "Does it open Parquet files?",
+   "a": "No, Parquet is a different format. Use the Parquet viewer."
+  },
+  {
+   "q": "Why does my file say it uses ZSTD?",
+   "a": "The writer chose ZSTD compression for the buffers. Re-save it with compression off or LZ4 (for example compression='lz4' in pyarrow)."
+  },
+  {
+   "q": "Why are some large integers strings?",
+   "a": "JSON numbers lose precision above 2^53, so larger values are written as text to keep every digit."
+  },
+  {
+   "q": "Can it edit or convert files?",
+   "a": "It only reads them, and exports the shown rows as JSON or CSV."
+  },
+  {
+   "q": "Is my data uploaded?",
+   "a": "No. The file is decoded in your browser."
+  }
+ ],
+ "related": [
+  "parquet-viewer",
+  "csv-viewer",
+  "csv-to-parquet-schema",
+  "json-to-csv",
+  "msgpack-cbor-decoder",
+  "hex-dump-viewer"
+ ],
+ "keywords": [
+  "arrow file viewer",
+  "feather file viewer",
+  "open arrow ipc",
+  "read feather file online",
+  "apache arrow decoder"
+ ]
+}

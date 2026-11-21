@@ -1,0 +1,46 @@
+{
+ "id": "day-of-week",
+ "seoTitle": "Free Day of the Week Calculator for Any Date",
+ "metaDescription": "Find out which weekday any date falls on, plus the day of the year and whether it is a leap year. Free day of week calculator, runs in your browser.",
+ "intro": "Pick a date. The tool tells you the weekday, the day number within the year and whether that year is a leap year.",
+ "why": "Which day was 4 July in the year you were born? What weekday will your wedding anniversary fall on in five years? Does a contract deadline land on a Sunday? A day-of-the-week calculator answers these in a second and avoids counting forwards from a calendar. The tool uses the proleptic Gregorian calendar, which means it applies today's leap year rules to all dates, including historic ones, so very old dates may differ from the calendar in use at the time. Alongside the weekday it gives the day of the year, which is useful for ordinal dates in logs and data, and tells you if the year has 366 days. Your input is handled locally.",
+ "howTo": [
+  "Pick a date in the date field.",
+  "Read the weekday that date falls on.",
+  "Check the day of the year and the leap-year note if you need them."
+ ],
+ "faq": [
+  {
+   "q": "Does it work for very old or future dates?",
+   "a": "Yes, within the range your browser supports. It applies the modern Gregorian calendar rules throughout, so dates before the calendar was adopted in your region may not match historical records."
+  },
+  {
+   "q": "What is the day of the year?",
+   "a": "The count of days from 1 January, where 1 January is day 1. It is also called the ordinal date and is used in some data formats and logs."
+  },
+  {
+   "q": "How does it know if a year is a leap year?",
+   "a": "It checks whether 29 February exists in that year, using the standard rule: divisible by 4, except centuries unless they are divisible by 400."
+  },
+  {
+   "q": "Is the weekday affected by my time zone?",
+   "a": "No. The date is treated as a plain calendar date and calculated in UTC, so every user sees the same weekday for the same date."
+  }
+ ],
+ "related": [
+  "week-number",
+  "date-difference",
+  "add-subtract-dates",
+  "age-calculator",
+  "business-days",
+  "countdown-to-date"
+ ],
+ "keywords": [
+  "day of the week calculator",
+  "what day of the week was",
+  "free weekday calculator",
+  "day of week for any date",
+  "day of year calculator",
+  "find weekday from date"
+ ]
+}

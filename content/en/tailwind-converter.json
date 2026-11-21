@@ -1,0 +1,46 @@
+{
+  "id": "tailwind-converter",
+  "seoTitle": "Free CSS to Tailwind Converter (and Back Again)",
+  "metaDescription": "Convert CSS declarations to Tailwind utility classes, or common Tailwind classes back to CSS. Handles about 80 properties. Free, in your browser.",
+  "intro": "Turns CSS declarations into Tailwind utility classes, with an arbitrary-value fallback for anything unusual, and converts common Tailwind classes back into plain CSS.",
+  "why": "Moving an existing stylesheet to Tailwind means translating each declaration into a utility name: padding 8px 16px becomes py-2 px-4, font-size 18px becomes text-lg. Looking each one up in the documentation is slow, and going the other way, reading a long class list to work out the CSS, is just as tedious.\n\nPaste declarations, with or without a selector block, to get the equivalent classes. About eighty common properties are mapped, and values that do not match the default scale fall back to arbitrary values in square brackets, so nothing is silently dropped. In reverse mode, paste classes to get CSS. Variants, palette colours and unsupported classes are listed as not converted. It uses the default Tailwind scale and runs in your browser.",
+  "howTo": [
+    "Choose a direction: css-to-tailwind or tailwind-to-css.",
+    "Paste CSS declarations or a list of Tailwind classes.",
+    "Read the generated class attribute or CSS.",
+    "Review any items flagged as not converted."
+  ],
+  "faq": [
+    {
+      "q": "What happens to values Tailwind does not have?",
+      "a": "They become arbitrary values such as w-[137px] or [transition:opacity_0.2s]. The result is valid Tailwind, but you might prefer to add a value to your theme instead."
+    },
+    {
+      "q": "Which Tailwind features are not reversed?",
+      "a": "Variants such as hover: and md:, palette colours such as blue-500, and anything outside the supported subset are reported as not converted. Only a core set of utilities, spacing, sizing and arbitrary values are handled."
+    },
+    {
+      "q": "Does it assume the default theme?",
+      "a": "Yes. Spacing, font sizes, radii and so on follow the default Tailwind scale, with 1 spacing unit equal to 4 pixels and rem values treated as 16 pixels. A customised theme may differ."
+    },
+    {
+      "q": "Can I paste a whole rule with a selector?",
+      "a": "Yes. If the input contains braces, the declarations inside each block are collected and converted together. Comments are removed first. Selectors are ignored."
+    }
+  ],
+  "related": [
+    "css-box-shadow-to-tailwind",
+    "tailwind-to-inline-css",
+    "tailwind-v3-to-v4-migrator",
+    "tailwind-spacing-generator",
+    "tailwind-class-sorter",
+    "css-to-scss"
+  ],
+  "keywords": [
+    "css to tailwind converter",
+    "tailwind to css",
+    "convert css to tailwind classes",
+    "tailwind class generator",
+    "free tailwind converter"
+  ]
+}

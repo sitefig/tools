@@ -1,0 +1,44 @@
+{
+ "id": "csv-to-map-plotter",
+ "seoTitle": "CSV Coordinates to Map Plotter on Country Outlines",
+ "metaDescription": "Plot CSV rows with latitude and longitude as markers on an offline outline map, with labels and sizes. Exports SVG.",
+ "intro": "Reads a CSV with lat and lon columns and draws each row as a marker over country outlines, sized by an optional column.",
+ "why": "A quick look at where your rows are. No street map is loaded, so nothing about your locations leaves the page; the outlines come from a public domain dataset on this site. The view zooms to your points.\n\nColumns are found by name: lat or latitude, lon, lng or longitude. Rows with invalid coordinates are skipped and counted. For Europe-sized spreads the outline is coarse (110m scale), so use it for context, not for fine positions.",
+ "howTo": [
+  "Paste a CSV with a header.",
+  "Name the label and size columns if you want them.",
+  "Switch the outlines on or off.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Which column names are recognised?",
+   "a": "lat, latitude, y and lon, lng, long, longitude, x."
+  },
+  {
+   "q": "Why no street map?",
+   "a": "It would need to contact a tile server."
+  },
+  {
+   "q": "How precise is it?",
+   "a": "The data is exact; the outline is coarse."
+  },
+  {
+   "q": "Limit?",
+   "a": "5000 points."
+  }
+ ],
+ "related": [
+  "csv-to-geojson",
+  "geojson-viewer-validator",
+  "choropleth-map-maker",
+  "geohash-tool",
+  "coordinate-format-converter",
+  "geo-midpoint-finder"
+ ],
+ "keywords": [
+  "plot csv on map",
+  "csv lat lon map offline",
+  "points on world map"
+ ]
+}

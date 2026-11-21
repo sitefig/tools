@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Line Chart Maker for Time Series (SVG) | Free Tools</title>
+<meta name="description" content="Plot one or more series from a pasted table as an accessible SVG line chart with dates on the x axis, gaps and a legend. Free, local.">
+<link rel="canonical" href="https://tools.sitefig.net/en/line-chart-maker/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/line-chart-maker/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/line-chart-maker/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Line Chart Maker for Time Series (SVG) | Free Tools">
+<meta property="og:description" content="Plot one or more series from a pasted table as an accessible SVG line chart with dates on the x axis, gaps and a legend. Free, local.">
+<meta property="og:url" content="https://tools.sitefig.net/en/line-chart-maker/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Line Chart Maker for Time Series (SVG) | Free Tools">
+<meta name="twitter:description" content="Plot one or more series from a pasted table as an accessible SVG line chart with dates on the x axis, gaps and a legend. Free, local.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Line Chart Maker (Multi-Series Time Series to SVG)","url":"https://tools.sitefig.net/en/line-chart-maker/","description":"Plot one or more series from a pasted table as an accessible SVG line chart with dates on the x axis, gaps and a legend. Free, local.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste a header row, then one row per time point: x value first, one column per series.","Choose whether the y axis starts at zero and whether to show point markers.","Add a title and optional y axis label, and set the size.","Copy or download the SVG."],"keywords":"line chart maker, time series chart online, multi series line graph svg","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Charts & Data Visualization","item":"https://tools.sitefig.net/en/#charts-and-data-visualization"},{"@type":"ListItem","position":3,"name":"Line Chart Maker (Multi-Series Time Series to SVG)","item":"https://tools.sitefig.net/en/line-chart-maker/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which date formats work?","acceptedAnswer":{"@type":"Answer","text":"YYYY-MM-DD, YYYY/MM/DD and YYYY-MM. Anything else is treated as a number or a plain label."}},{"@type":"Question","name":"What happens with empty cells?","acceptedAnswer":{"@type":"Answer","text":"The line stops and restarts after the gap. Missing values are never filled in."}},{"@type":"Question","name":"Can I plot two scales?","acceptedAnswer":{"@type":"Answer","text":"No. All series share one y axis. Index the series or make two charts if the units differ."}},{"@type":"Question","name":"Is there a point limit?","acceptedAnswer":{"@type":"Answer","text":"Up to 2000 rows."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#charts-and-data-visualization">Charts &amp; Data Visualization</a></li><li><span aria-current="page">Line Chart Maker (Multi-Series Time Series to SVG)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Line Chart Maker (Multi-Series Time Series to SVG)</h1>
+<p class="lede">Draws a multi-series line chart from a table. The first column may hold dates (YYYY-MM-DD), numbers or labels, and empty cells break the line instead of inventing values.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="line-chart-maker" data-module="new21"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Time series arrive as spreadsheets, and a line chart is usually the first thing you want. Paste the columns and get an SVG with axes, ticks, a legend and point markers, without installing a plotting library.</p>
+<p>Dates are placed to scale on the axis, so uneven gaps look uneven, which is how they should look. A table of the values sits under the chart as the text alternative. The y axis can start at zero or at the data minimum; truncated axes exaggerate small changes, so choose on purpose.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste a header row, then one row per time point: x value first, one column per series.</li><li>Choose whether the y axis starts at zero and whether to show point markers.</li><li>Add a title and optional y axis label, and set the size.</li><li>Copy or download the SVG.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which date formats work?</summary><p>YYYY-MM-DD, YYYY/MM/DD and YYYY-MM. Anything else is treated as a number or a plain label.</p></details>
+<details><summary>What happens with empty cells?</summary><p>The line stops and restarts after the gap. Missing values are never filled in.</p></details>
+<details><summary>Can I plot two scales?</summary><p>No. All series share one y axis. Index the series or make two charts if the units differ.</p></details>
+<details><summary>Is there a point limit?</summary><p>Up to 2000 rows.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/csv-to-chart/"><span class="link-card__title">CSV to Chart (Bar, Line, Pie as SVG)</span><span class="link-card__desc">Turn a small CSV into a bar, line or pie chart as a downloadable SVG with a data table for accessibility. First column is the label, other columns are series.</span></a></li><li><a class="link-card" href="/en/bar-chart-maker/"><span class="link-card__title">Bar Chart Maker (Vertical, Horizontal, Stacked, SVG)</span><span class="link-card__desc">Paste labels and values and get an accessible SVG bar chart: vertical or horizontal, grouped or stacked, one colour or a palette, with a data table as text alternative.</span></a></li><li><a class="link-card" href="/en/sparkline-generator/"><span class="link-card__title">Sparkline Generator (Tiny Inline SVG Trend Charts)</span><span class="link-card__desc">Paste a series of numbers and get a small line, area or bar sparkline as SVG, sized to sit in text or a table cell. Copy the markup. Includes an accessible name with start, end, min and max.</span></a></li><li><a class="link-card" href="/en/scatter-plot-maker/"><span class="link-card__title">Scatter Plot Maker with Trendline and Pearson Correlation</span><span class="link-card__desc">Paste X and Y columns to draw a scatter plot with a least-squares trendline, slope, intercept, Pearson r and R squared. Accessible SVG with a data table.</span></a></li><li><a class="link-card" href="/en/trends-csv-analyzer/"><span class="link-card__title">Google Trends CSV Analyzer (Seasonality, Peak, Growth)</span><span class="link-card__desc">Paste a Google Trends &quot;interest over time&quot; CSV and get peak dates, recent growth, year-on-year change and a month-by-month seasonality profile for each search term. Runs offline.</span></a></li><li><a class="link-card" href="/en/csv-viewer/"><span class="link-card__title">CSV Viewer</span><span class="link-card__desc">View CSV as a sortable, filterable table. Open a file or paste text.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

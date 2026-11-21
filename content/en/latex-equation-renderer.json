@@ -1,0 +1,45 @@
+{
+ "id": "latex-equation-renderer",
+ "seoTitle": "LaTeX Equation to SVG Renderer Online, Free, No Server",
+ "metaDescription": "Typeset LaTeX math to a scalable SVG in your browser: fractions, roots, sums, integrals, matrices, cases and accents with TeX spacing rules. Free download.",
+ "intro": "Renders a LaTeX math formula as an SVG image using a layout engine written for the task, following TeX's spacing and placement rules, and lets you copy or download the SVG.",
+ "why": "A formula for a slide, a document or a web page is often easier as a picture than as MathJax or a LaTeX install. This tool lays the formula out with the rules from the TeXbook: inter-atom spacing, script shifts, fraction clearances, radicals, limits on large operators and delimiter sizes, using glyph sizes measured from Computer Modern.\n\nThe layout was compared with real LaTeX (width, height and depth of 195 formulas in display and text style): 97% were within 0.02 em on all three, and the mean width error was under 0.01 em. The glyphs themselves are text in your system fonts (Latin Modern Math, STIX, Cambria, Times), so letter shapes differ from Computer Modern and spacing can be slightly off when a different font is used. Supported: fractions, binomials, scripts, roots, sums and integrals, functions, Greek and common symbols, fonts such as \\mathbb, accents, over and underbraces, \\left and \\right, matrices, cases, aligned, \\text and spacing commands. No macros, packages, colours or numbering.",
+ "howTo": [
+  "Type the formula without dollar signs, or paste one wrapped in $...$ or \\[...\\].",
+  "Pick display or text style and a size.",
+  "Check the preview; an error names the command it does not know.",
+  "Copy the SVG markup or download equation.svg."
+ ],
+ "faq": [
+  {
+   "q": "Why do letters look different from LaTeX output?",
+   "a": "The SVG uses text in a math font that your system has. Install Latin Modern Math or STIX Two Math for the closest look. Spacing is computed from Computer Modern widths."
+  },
+  {
+   "q": "Which commands are not supported?",
+   "a": "Custom macros, \\newcommand, packages such as tikz or chemfig, \\tag, \\color, \\cancel, multi-line equation numbering and any text-mode formatting outside \\text."
+  },
+  {
+   "q": "Is the layout accurate?",
+   "a": "It was measured against LaTeX for 195 formulas. Most matched within 0.02 em in width, height and depth. Cases such as \\underset next to an operator and kerning inside \\text words differ slightly."
+  },
+  {
+   "q": "Can I use the SVG in a document?",
+   "a": "Yes. The SVG is self-contained and scales without loss. It refers to system fonts by name, so convert text to outlines in your editor if the target machine may lack them."
+  }
+ ],
+ "related": [
+  "latex-to-mathml",
+  "latex-formatter",
+  "svg-optimizer",
+  "svg-to-png",
+  "polynomial-equation-solver",
+  "svg-preview-editor"
+ ],
+ "keywords": [
+  "latex to svg",
+  "equation renderer online",
+  "render latex math",
+  "latex formula image"
+ ]
+}

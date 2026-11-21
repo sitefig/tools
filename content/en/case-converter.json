@@ -1,0 +1,46 @@
+{
+ "id": "case-converter",
+ "seoTitle": "Free Case Converter: camelCase, snake_case, Title Case",
+ "metaDescription": "Convert text to upper, lower, title, sentence, camel, Pascal, snake, kebab, constant, dot or alternating case. Free; runs in your browser.",
+ "intro": "Convert text between UPPER, lower, Title, Sentence, camelCase, PascalCase, snake_case, kebab-case, CONSTANT_CASE, dot.case and aLtErNaTiNg case, or see all of them at once.",
+ "why": "Developers rename variables between conventions, editors fix headings typed in capitals, and writers need title case that skips small words like \"of\" and \"the\". Retyping or fixing by hand is tedious and error prone, and a word processor only covers upper, lower and title case.\n\nThis converter handles all of them. For the identifier styles, camel, Pascal, snake, kebab, constant and dot case, each line is converted separately, so you can paste a list of names. The tool splits words on spaces, punctuation, underscores and changes in capitalisation. Title case leaves short words in lower case, except at the start and end. Choose one style or all, to compare the results. Conversion happens in your browser.",
+ "howTo": [
+  "Paste your text into the input box.",
+  "Pick the target case in the options, or leave it on all to see every style.",
+  "Run the tool.",
+  "Copy the version you need."
+ ],
+ "faq": [
+  {
+   "q": "Are identifiers converted line by line?",
+   "a": "Yes. For camel, Pascal, snake, kebab, constant and dot case, each line becomes one identifier. For the other styles the text is converted as a whole."
+  },
+  {
+   "q": "How does title case treat small words?",
+   "a": "Words such as a, of and the stay lower case unless they are the first or last word. Style guides vary, so check the result against the guide you follow."
+  },
+  {
+   "q": "What happens to accents and non-English letters?",
+   "a": "Letters from any script are handled using Unicode rules, so accented characters change case correctly. Camel and snake style splitting works best with Latin text."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "string-case-detector",
+  "slug-to-title",
+  "title-case-headline-analyzer",
+  "slug-generator",
+  "find-replace",
+  "reverse-text"
+ ],
+ "keywords": [
+  "case converter",
+  "camelcase to snake_case",
+  "title case converter",
+  "text case changer online",
+  "kebab case converter"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "sql-select-builder",
+  "seoTitle": "SQL SELECT Query Builder for PostgreSQL, MySQL, SQLite, SQL Server",
+  "metaDescription": "Build a SELECT with columns, a join, filters, grouping, ordering and limit from simple lines of conditions, with identifiers quoted for your dialect.",
+  "intro": "Write a readable query by listing conditions instead of remembering syntax and quoting rules.",
+  "why": "Enter the table, columns (with optional AS aliases), a join of the form \"orders on orders.user_id = users.id\", conditions one per line (column operator value, including in, not in, like and is null), group by, order by and a limit. Identifiers are validated and quoted for the dialect and values are escaped as literals; SQL Server uses TOP. The sqlite output was run against a test table to confirm the result.\n\nValues are inlined for readability. In application code use bound parameters instead of building SQL from user input.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the table and columns.",
+    "Type conditions, one per line.",
+    "Add join, ordering and limit.",
+    "Copy the query and move values into parameters in your code."
+  ],
+  "faq": [
+    {
+      "q": "Which operators work?",
+      "a": "=, !=, <>, >, >=, <, <=, like, ilike, not like, in, not in, is null and is not null."
+    },
+    {
+      "q": "Does it prevent injection?",
+      "a": "Identifiers are validated and values escaped, but real code should still use bound parameters."
+    },
+    {
+      "q": "Can it do subqueries?",
+      "a": "No. For complex SQL write it by hand and use the formatter."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "sql-format",
+    "sql-variable-inliner",
+    "sql-explainer",
+    "sql-index-advisor",
+    "sql-migration-generator",
+    "mongodb-query-builder"
+  ],
+  "keywords": [
+    "sql query builder",
+    "select statement generator",
+    "sql where builder",
+    "query generator"
+  ]
+}

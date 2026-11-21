@@ -1,0 +1,47 @@
+{
+ "id": "competitor-comparison-matrix",
+ "seoTitle": "Free Competitor Comparison Matrix Table Maker",
+ "metaDescription": "Build an editable feature comparison table for your product and competitors, then copy it as Markdown or CSV. Saved in your browser. Free to use.",
+ "intro": "Edit a table of features against your product and your competitors, add or remove rows and columns, and copy the result as a Markdown table or CSV.",
+ "why": "Comparing yourself with competitors forces useful questions: which features really differ, what do they charge, who has a free plan? A table makes the gaps visible, but formatting Markdown tables by hand is fiddly, and pasting from a spreadsheet loses pipes and alignment.\n\nThis tool gives you a small grid to fill in. Start with your product and two rivals, add rows for each feature and columns for more competitors, and the Markdown and CSV versions update as you type. The table is stored in your browser so it is still there next time. It never leaves your device, so competitive notes stay private. Check every claim against the competitor's own pages.",
+ "howTo": [
+  "Edit the column headings to name your product and each competitor.",
+  "Fill in the cells for each feature row. Rename the feature labels as needed.",
+  "Use + Row, + Competitor, - Row and - Column to resize the table.",
+  "Copy the Markdown or CSV output from the boxes below the table."
+ ],
+ "faq": [
+  {
+   "q": "Is the table saved?",
+   "a": "Yes, in your browser's local storage as you type. It stays on this device and browser only. Clearing site data removes it, so copy important tables elsewhere."
+  },
+  {
+   "q": "Can I use the Markdown in GitHub or a wiki?",
+   "a": "Yes. It is standard pipe-table Markdown, and vertical bars in your text are escaped. Most Markdown renderers, including GitHub, display it as a table."
+  },
+  {
+   "q": "How do I open the CSV in a spreadsheet?",
+   "a": "Copy the CSV box, save it as a .csv file or paste it into a new sheet. Cells with commas, quotes or line breaks are quoted properly."
+  },
+  {
+   "q": "Does it fetch competitor data?",
+   "a": "No. You type everything yourself, and the page makes no network requests for it. Verify competitor facts from their public pages before you publish a comparison."
+  }
+ ],
+ "related": [
+  "swot-generator",
+  "decision-matrix",
+  "user-persona-template",
+  "markdown-table-generator",
+  "csv-to-markdown-table",
+  "rice-prioritization"
+ ],
+ "keywords": [
+  "competitor comparison matrix",
+  "feature comparison table maker",
+  "competitor analysis template",
+  "free comparison table generator",
+  "markdown comparison table",
+  "competitive analysis grid"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "crypto-unit-converter",
+ "seoTitle": "Free Ethereum Unit Converter: Wei, Gwei, Ether",
+ "metaDescription": "Convert exactly between wei, kwei, mwei, gwei, szabo, finney and ether, plus Bitcoin satoshi and BTC, with BigInt precision. Free, in-browser.",
+ "intro": "Enter an amount and pick its unit to see the exact value in wei, gwei, ether and the other Ethereum units, or in satoshi and BTC for Bitcoin.",
+ "why": "Ethereum amounts live in wei, an integer one eighteen-zeroth of an ether, while gas prices are quoted in gwei and wallets show ether. Mixing them up by a factor of a billion is an easy mistake, and floating-point arithmetic in a spreadsheet or JavaScript loses digits on numbers this large.\n\nThis converter uses BigInt arithmetic, so every digit is exact. Type 1.5 ether, or 30 gwei, and read the value in every unit. The same approach works for Bitcoin, where one BTC is 100 million satoshi. Values with more decimals than the unit allows are rejected rather than rounded, which catches a pasted number that is in the wrong unit. It converts units only and knows nothing about prices.",
+ "howTo": [
+  "Enter a non-negative amount. Underscores and commas are ignored.",
+  "Choose the unit you entered it in.",
+  "Read the equivalent values in the other units."
+ ],
+ "faq": [
+  {
+   "q": "Why not use a normal calculator?",
+   "a": "Wei amounts run to 18 digits or more, beyond what ordinary floating-point numbers hold exactly. BigInt arithmetic keeps every digit, so nothing is silently rounded."
+  },
+  {
+   "q": "What is a gwei?",
+   "a": "One billionth of an ether, or 10^9 wei. Gas prices are normally quoted in gwei because wei is too small and ether too large for everyday fees."
+  },
+  {
+   "q": "Why did I get an error about decimal places?",
+   "a": "Each unit has a fixed number of decimals, for example 18 for ether and 9 for gwei. An amount with more digits than that cannot be a whole number of wei."
+  },
+  {
+   "q": "Does it show currency prices?",
+   "a": "No. It converts between units of the same coin only, and does not look up exchange rates or use the network."
+  }
+ ],
+ "related": [
+  "number-base-converter",
+  "bignumber-calculator",
+  "ethereum-keccak256-hasher",
+  "abi-encoder-decoder",
+  "eip55-checksum-address",
+  "evm-create-address"
+ ],
+ "keywords": [
+  "ether unit converter",
+  "wei to gwei to ether",
+  "satoshi to btc converter",
+  "free eth unit calculator",
+  "gwei to eth calculator"
+ ]
+}

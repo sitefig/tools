@@ -1,0 +1,46 @@
+{
+ "id": "tone-generator",
+ "seoTitle": "Free Online Tone Generator - Sine, Square, Sawtooth",
+ "metaDescription": "Generate a sine, square, triangle or sawtooth tone at any frequency from 20 to 20,000 Hz with volume control. Free and runs in your browser.",
+ "intro": "Play a continuous tone with a chosen waveform and frequency, from 20 Hz to 20,000 Hz, and adjust the pitch and volume while it plays.",
+ "why": "A pure test tone is useful for tuning an instrument, checking a speaker or headphone, finding a rattle in a room, testing the range of your hearing, or setting levels in a sound system. Apps that can do this are often cluttered with adverts, and hardware generators are expensive.\n\nThis generator uses your browser's audio engine to produce a sine, square, triangle or sawtooth wave at the frequency you type or slide to. A sine is the cleanest and sounds pure; square and sawtooth add harmonics and sound harsher and brighter. Change the frequency while it plays to hear the pitch move. Start at a low volume, especially at high frequencies, because tones that seem quiet can still be uncomfortable or harmful over time. Everything is computed locally.",
+ "howTo": [
+  "Choose a wave type: sine, square, triangle or sawtooth.",
+  "Enter a frequency in hertz or move the slider.",
+  "Set the volume low, then press Start.",
+  "Press Stop when you have finished."
+ ],
+ "faq": [
+  {
+   "q": "What is 440 Hz?",
+   "a": "It is concert A, the standard tuning reference for most Western instruments. The tool starts at 440 Hz so you can tune a guitar or violin by ear against it."
+  },
+  {
+   "q": "Why do square and sawtooth waves sound harsher?",
+   "a": "They contain many extra harmonics above the base pitch, while a sine wave has only one frequency. More harmonics make the sound brighter and buzzier."
+  },
+  {
+   "q": "Can I use it to test my speakers?",
+   "a": "Yes, for rough checks. Sweep from low to high and listen for distortion or rattles. Laptop speakers will not reproduce the lowest tones, and your hearing range also limits what you notice."
+  },
+  {
+   "q": "Is it safe to play loud tones?",
+   "a": "Keep the volume low, particularly with headphones. Pure tones at high levels can cause discomfort and hearing damage. Raise the volume gradually and stop if anything sounds painful."
+  }
+ ],
+ "related": [
+  "white-noise-generator",
+  "metronome",
+  "audio-bpm-tap",
+  "audio-db-converter",
+  "decibel-meter",
+  "morse-code-audio"
+ ],
+ "keywords": [
+  "tone generator",
+  "online sine wave generator",
+  "frequency tone player",
+  "440 hz tone",
+  "free audio test tone"
+ ]
+}

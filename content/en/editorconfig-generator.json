@@ -1,0 +1,46 @@
+{
+ "id": "editorconfig-generator",
+ "seoTitle": "Free .editorconfig Generator - Indent and EOL",
+ "metaDescription": "Generate an .editorconfig with indent style and size, line endings, charset, trimming and Markdown and Makefile rules. Free, runs in your browser.",
+ "intro": "Choose indentation, line endings, charset and a few overrides to get an .editorconfig that keeps every editor on the same page.",
+ "why": "Mixed tabs and spaces, Windows and Unix line endings and stray trailing whitespace create noisy diffs and pointless review comments. An .editorconfig file tells every contributor's editor how to behave without anyone installing plugins or agreeing on settings by hand.\n\nThis generator writes the file from a few choices: indent style and size, end of line, charset, whether to trim trailing whitespace and insert a final newline. It also adds two overrides people commonly forget: Markdown keeps trailing spaces, because two of them can mean a line break, and Makefiles keep tabs, because they require them. Drop the result in the repository root next to your .gitignore. It is generated in your browser.",
+ "howTo": [
+  "Pick the indent style and indent size.",
+  "Choose the end of line and the charset.",
+  "Tick the trimming, final newline, Markdown and Makefile options you want.",
+  "Save the output as .editorconfig in the repository root."
+ ],
+ "faq": [
+  {
+   "q": "Do all editors read .editorconfig?",
+   "a": "Many do natively, including JetBrains IDEs and Visual Studio. Others, such as VS Code and Vim, need a free EditorConfig plugin. The file is plain text, so it does no harm where it is unsupported."
+  },
+  {
+   "q": "Why keep trailing spaces in Markdown?",
+   "a": "In some Markdown flavours, two spaces at the end of a line create a hard line break. Trimming them would silently change how the document renders, so the Markdown override switches trimming off."
+  },
+  {
+   "q": "What does root = true do?",
+   "a": "It tells editors to stop looking in parent folders for more .editorconfig files. Without it, settings from a file higher up the directory tree could be merged into yours."
+  },
+  {
+   "q": "Which line ending should I choose?",
+   "a": "LF is the common choice for projects that run on Linux, macOS or in containers. Use CRLF only if your team works on Windows with tools that need it, and pair it with your git autocrlf setting."
+  }
+ ],
+ "related": [
+  "eslint-prettier-config-generator",
+  "gitignore-generator",
+  "pre-commit-config-generator",
+  "tabs-spaces-converter",
+  "tsconfig-generator",
+  "makefile-generator"
+ ],
+ "keywords": [
+  "editorconfig generator",
+  "create .editorconfig online",
+  "editorconfig indent_style",
+  "editorconfig example",
+  "free editorconfig builder"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "string-escape",
+  "seoTitle": "Free String Escape and Unescape Tool Online",
+  "metaDescription": "Escape or unescape strings for JavaScript, JSON, CSV, SQL and regular expressions. Free, runs in your browser and nothing you paste is uploaded.",
+  "intro": "Escapes special characters in a string for JavaScript, JSON, CSV, SQL or regex, or reverses the process. An option can turn non-ASCII characters into unicode escapes.",
+  "why": "Quotes, backslashes and newlines cause bugs in the places you least expect. A pasted error message breaks a JavaScript string literal, a CSV cell with a comma splits into two columns, and a SQL value containing an apostrophe either fails or opens the door to injection. Each language has its own rules, and remembering them under pressure is unreliable.\n\nThis tool applies the right rule for the format you pick and can undo it as well, which helps when you are reading a log full of backslashes. Everything is processed in your browser, so you can paste real payloads without sending them to a server. For SQL, treat it as a quick helper rather than a replacement for parameterised queries.",
+  "howTo": [
+    "Paste your string into the input box.",
+    "Pick a format: JavaScript, JSON, CSV, SQL or Regex.",
+    "Choose escape or unescape, and tick Escape non-ASCII if you want unicode escapes.",
+    "Copy the result from the output."
+  ],
+  "faq": [
+    {
+      "q": "What does each format escape?",
+      "a": "JavaScript escapes quotes, backticks, backslashes and control characters. JSON uses the standard JSON string rules. CSV wraps the value in double quotes and doubles inner quotes. SQL doubles single quotes. Regex adds a backslash before special characters."
+    },
+    {
+      "q": "Does escaping for SQL make my query safe?",
+      "a": "No. Doubling apostrophes is only a basic aid for writing a literal by hand. For anything that takes user input, use parameterised queries or prepared statements in your database library instead."
+    },
+    {
+      "q": "Why does unescaping fail with an error?",
+      "a": "The JSON mode expects a valid JSON string body, so a stray backslash or a bad unicode escape raises an error. JavaScript mode also reports an invalid code point. Check the input for half-written escapes."
+    },
+    {
+      "q": "What does Escape non-ASCII do?",
+      "a": "For JavaScript and JSON it replaces characters outside the ASCII range with unicode escapes, such as an e with an accent becoming a four-digit escape. This helps when a file must stay pure ASCII."
+    }
+  ],
+  "related": [
+    "json-escape",
+    "json-unescape",
+    "regex-escape",
+    "url-encode",
+    "html-entities",
+    "unicode-escape"
+  ],
+  "keywords": [
+    "string escape online",
+    "escape string for javascript",
+    "unescape json string",
+    "sql escape single quotes",
+    "free string escaper"
+  ]
+}

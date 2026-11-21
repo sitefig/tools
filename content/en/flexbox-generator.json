@@ -1,0 +1,46 @@
+{
+  "id": "flexbox-generator",
+  "seoTitle": "Free CSS Flexbox Generator with Live Layout Preview",
+  "metaDescription": "Set flex-direction, wrap, justify-content, align-items, align-content and gap, and see the layout live. Copy the CSS. Free, runs in your browser.",
+  "intro": "Lets you configure a flex container with direction, wrap, justify-content, align-items, align-content and gap, shows a live preview of the items, and outputs the CSS.",
+  "why": "Flexbox properties are easy to mix up. Is it justify-content or align-items that centres vertically, and what flips when you change the direction to column? Even experienced developers pick a value, reload and check.\n\nHere you change a value and see the effect straight away on a set of sample boxes that vary in size. Choose how many items to show, the direction, wrap behaviour, main-axis and cross-axis alignment, and the gap in pixels. The output is a short block of container CSS, leaving out align-content when it is set to normal. Use it to learn or to confirm a layout before you write it into your code. It all runs in your browser.",
+  "howTo": [
+    "Choose the flex-direction and wrap behaviour.",
+    "Set justify-content, align-items and align-content.",
+    "Set the gap and the number of preview items.",
+    "Copy the CSS block from the output."
+  ],
+  "faq": [
+    {
+      "q": "Which property aligns along which axis?",
+      "a": "justify-content works along the main axis, which is horizontal for row and vertical for column. align-items works across it. When you switch the direction, the two swap."
+    },
+    {
+      "q": "When does align-content matter?",
+      "a": "Only when items wrap onto several lines. It spreads those lines inside the container. With a single line it has no effect, which is why the tool omits it when set to normal."
+    },
+    {
+      "q": "Why do my items not fill the height?",
+      "a": "Items stretch only when align-items is stretch and the container has extra height. In the preview the container fills the screen height so you can see it."
+    },
+    {
+      "q": "Is this the container only?",
+      "a": "Yes. It produces CSS for the flex container. Properties on individual items, such as flex-grow, flex-basis or align-self, are not included."
+    }
+  ],
+  "related": [
+    "grid-generator",
+    "css-grid-area-builder",
+    "tailwind-converter",
+    "responsive-breakpoint-previewer",
+    "css-media-query-builder",
+    "css-unit-converter"
+  ],
+  "keywords": [
+    "flexbox generator",
+    "css flexbox playground",
+    "flex container css generator",
+    "justify-content align-items visual",
+    "free flexbox tool"
+  ]
+}

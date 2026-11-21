@@ -1,0 +1,45 @@
+{
+ "id": "typescript-to-json-schema",
+ "seoTitle": "Free TypeScript Interface to JSON Schema Converter",
+ "metaDescription": "Convert TypeScript interfaces, types and enums into JSON Schema draft-07 with $ref definitions. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Converts TypeScript interfaces, type aliases and enums into JSON Schema draft-07, with definitions and $ref, optional properties, unions, literals, tuples, arrays, Record and JSDoc descriptions.",
+ "why": "You often need the same shape twice: as a TypeScript type for your code and as a JSON Schema for validation, OpenAPI documents, form generators or config files. Maintaining both by hand invites drift. This tool reads your declarations and produces a draft-07 schema, with optional properties left out of \"required\" and JSDoc comments turned into descriptions. You can name the root type, or let it pick the first declaration that nothing else refers to, and choose whether objects forbid extra properties. It covers the common subset of TypeScript. Conditional types, mapped types, keyof, typeof and most utility generics are not supported. Your code stays in the browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your TypeScript interfaces, type aliases and enums into the input box.",
+  "Optionally name the root type and choose whether to add additionalProperties: false.",
+  "Copy the JSON Schema and check it against your real data with a validator."
+ ],
+ "faq": [
+  {
+   "q": "What TypeScript features are supported?",
+   "a": "Interfaces, type aliases, enums, optional properties, unions, literal types, tuples, arrays, Record, Date, index signatures, extends and intersections, and JSDoc descriptions."
+  },
+  {
+   "q": "What is not supported?",
+   "a": "Conditional types, mapped types, keyof, typeof and most utility generics such as Partial or Pick. Rewrite those as plain interfaces first."
+  },
+  {
+   "q": "How does it choose the root type?",
+   "a": "If you leave the root name blank, it uses the first declaration that no other declaration refers to. Name it explicitly when you have several top-level types."
+  },
+  {
+   "q": "What does the strict option do?",
+   "a": "It adds additionalProperties: false to every object schema, so any key not declared in your interface fails validation. Turn it off if your objects may carry extra properties that you want to allow."
+  }
+ ],
+ "related": [
+  "typescript-interface-to-zod",
+  "json-schema-validator",
+  "json-schema-generator",
+  "json-schema-to-zod",
+  "json-to-typescript",
+  "openapi-validator"
+ ],
+ "keywords": [
+  "typescript to json schema",
+  "interface to json schema",
+  "convert typescript types to json schema",
+  "free ts to json schema",
+  "typescript enum to json schema"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "content-gap",
+ "seoTitle": "Free Content Gap Tool: Compare Terms in Two Texts",
+ "metaDescription": "Compare two texts to find terms a competitor covers that you miss, and terms only you use. Free; runs in your browser.",
+ "intro": "Paste your text and a competitor's text to see the terms and two-word phrases they cover that you do not, the terms only you have and how much the two overlap.",
+ "why": "When a competing page outranks yours, one question is whether it simply covers more of the topic. Comparing two articles by eye is hard because the differences hide in specific terms and phrases, such as a feature, a standard or a step you never mention.\n\nThis tool extracts single words and two-word phrases from each text, ignoring common stop words, then lists terms that appear in the other text but not in yours, ordered by frequency, as well as terms only you use. It also gives an overlap percentage. It is a crude, vocabulary-level comparison with no understanding of meaning, so use the output as prompts for questions to answer, not as a list of words to add. Work is done in your browser.",
+ "howTo": [
+  "Paste your own text into the first box.",
+  "Paste the competitor or reference text into the second box.",
+  "Run the tool to see the overlap and the list of missing terms.",
+  "Decide which gaps are relevant to your readers and cover them properly in your own words."
+ ],
+ "faq": [
+  {
+   "q": "Should I copy the missing terms into my page?",
+   "a": "No. Use them to find subtopics you may have skipped, then write useful content about them. Stuffing words in does not help readers or search engines."
+  },
+  {
+   "q": "How does it compare terms?",
+   "a": "It lowercases the text, drops stop words and very short words, and compares single words and two-word phrases. The overlap figure is shared terms divided by all distinct terms across both texts."
+  },
+  {
+   "q": "Can I compare more than two pages?",
+   "a": "Not in this tool. To rank terms across several documents, use the TF-IDF term ranker, which takes multiple documents separated by a line of three dashes."
+  },
+  {
+   "q": "Is the text uploaded?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "tfidf",
+  "keyword-extractor",
+  "keyword-density",
+  "text-diff",
+  "topic-cluster-planner",
+  "competitor-comparison-matrix"
+ ],
+ "keywords": [
+  "content gap analysis tool",
+  "compare two texts keywords",
+  "competitor content gap",
+  "missing keywords checker",
+  "term comparison tool free"
+ ]
+}

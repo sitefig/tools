@@ -1,0 +1,46 @@
+{
+  "id": "eeat-signal-checker",
+  "seoTitle": "E-E-A-T & Freshness Signal Checker for a Page",
+  "metaDescription": "Scan page HTML for trust signals: author, credentials, dates, about and contact links, sources, organization schema, plus content age. Local check.",
+  "intro": "Check whether a page shows the visible signals of experience, expertise, authoritativeness and trust, and how fresh its dates are.",
+  "why": "The checker looks for a named author or reviewer, stated credentials or experience, links to About, Contact, Privacy and editorial policy pages, external sources, organization or publisher data and sameAs profiles in JSON-LD, review markup, and machine-readable publish or update dates. It computes the age of the newest date and flags content older than your threshold.\n\nE-E-A-T is a quality concept used by Google's human raters, not a switch you can turn on. This tool only reports what is present in the markup. Add signals only where they are true: invented credentials or reviews hurt users and break guidelines.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the page HTML.",
+    "Set how many months count as stale and, if needed, the date to check against.",
+    "Run it and note which signals are missing.",
+    "Add genuine author, source and update information where it belongs."
+  ],
+  "faq": [
+    {
+      "q": "Is E-E-A-T a ranking factor?",
+      "a": "Google describes it as a framework for evaluating quality, not a single factor or score."
+    },
+    {
+      "q": "Why check dates?",
+      "a": "Outdated pages can mislead. Showing when content was updated helps readers and is picked up in structured data."
+    },
+    {
+      "q": "Does it verify credentials?",
+      "a": "No. It only detects that credentials are mentioned."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "geo-readiness-checker",
+    "seo-inspector",
+    "jsonld-inspector",
+    "schema-generator",
+    "privacy-policy-generator",
+    "meta-analyzer"
+  ],
+  "keywords": [
+    "eeat checker",
+    "author signals",
+    "content freshness",
+    "trust signals seo",
+    "eeat audit"
+  ]
+}

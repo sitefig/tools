@@ -1,0 +1,46 @@
+{
+ "id": "digital-compass",
+ "seoTitle": "Free Digital Compass - Heading from Phone Sensor",
+ "metaDescription": "Show your compass heading in degrees and direction using your phone or tablet's orientation sensor. Free, runs in your browser, needs no app.",
+ "intro": "Enable the compass to see your heading in degrees and as a direction such as NE, using your phone or tablet's orientation sensor.",
+ "why": "A quick compass check is handy when pitching a tent, orienting a map, placing a solar panel or satellite dish, or just working out which way a window faces. Not everyone has a compass app installed, and many free ones are packed with adverts or ask for unrelated permissions.\n\nThis page reads the device orientation sensor directly in your browser. On iPhones and iPads the browser asks for permission first. On Android it uses the absolute orientation event when available. The needle and dial turn as you move, and the heading appears as degrees from north with a compass point. Desktop computers usually have no such sensor, and the page needs a secure connection, so you may see a message instead. Readings are affected by nearby metal and magnets, so move away from them.",
+ "howTo": [
+  "Open the page on a phone or tablet.",
+  "Press Enable compass and allow motion access if prompted.",
+  "Hold the device flat and wait a moment for the heading.",
+  "Move away from metal objects or magnets if the reading jumps."
+ ],
+ "faq": [
+  {
+   "q": "Why does it say No compass data?",
+   "a": "Your device or browser has no orientation sensor, which is typical for desktop computers, or the page is not on HTTPS. Try a phone or tablet using a current browser."
+  },
+  {
+   "q": "Is it as accurate as a real compass?",
+   "a": "It can be within a few degrees on a well-calibrated phone, but readings drift near speakers, cars, metal furniture and magnetic cases. Move your device in a figure of eight to help calibrate it."
+  },
+  {
+   "q": "Is this magnetic or true north?",
+   "a": "The sensor measures magnetic north, which differs from true north by the local declination, from a few degrees to more than ten in some regions. Apply a correction for accurate navigation."
+  },
+  {
+   "q": "Is my location or sensor data sent anywhere?",
+   "a": "No. The orientation readings are processed in your browser and are not uploaded. The tool does not use GPS or request your location."
+  }
+ ],
+ "related": [
+  "bubble-level",
+  "screen-info",
+  "screen-ruler",
+  "world-clock",
+  "browser-info",
+  "timezone-converter"
+ ],
+ "keywords": [
+  "digital compass online",
+  "phone compass web",
+  "compass heading browser",
+  "online compass no app",
+  "free compass tool"
+ ]
+}

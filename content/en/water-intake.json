@@ -1,0 +1,46 @@
+{
+ "id": "water-intake",
+ "seoTitle": "Free Daily Water Intake Calculator from Weight",
+ "metaDescription": "Get a rough daily hydration target in litres, cups and fluid ounces from your body weight and exercise time. Free, runs in your browser.",
+ "intro": "Enter your weight in kilograms and your daily exercise minutes. The tool gives a rough daily water target in litres, fluid ounces and cups.",
+ "why": "Advice such as eight glasses a day is easy to remember and hard to justify, since a 55 kg office worker and a 95 kg builder do not need the same amount. A weight-based figure is a more sensible starting point, with extra for time spent exercising. This calculator uses about 33 ml per kilogram of body weight plus 350 ml for every 30 minutes of exercise, and converts the result into litres, fluid ounces and cups, so it is easy to compare with the size of your bottle. Heat, altitude, illness, pregnancy and diet all change what you need, and food contributes too. It is a rough guide, not medical advice, and nothing you enter leaves your browser.",
+ "howTo": [
+  "Enter your body weight in kilograms.",
+  "Enter the minutes you exercise on a typical day.",
+  "Read the daily target in litres, fluid ounces and cups."
+ ],
+ "faq": [
+  {
+   "q": "How is the water target calculated?",
+   "a": "It multiplies your weight in kilograms by 0.033 litres and adds 0.35 litres for each 30 minutes of exercise. The result is converted to fluid ounces and 250 ml cups."
+  },
+  {
+   "q": "Does the target include water from food and other drinks?",
+   "a": "The figure is a total fluid guide. Tea, coffee, soup and fruit contribute to it, so you do not need to drink the whole amount as plain water."
+  },
+  {
+   "q": "When do I need more?",
+   "a": "In hot weather, at altitude, during illness with fever or diarrhoea, while breastfeeding or after heavy sweating. Some medical conditions require limiting fluids, so follow your doctor's advice."
+  },
+  {
+   "q": "Can I enter pounds?",
+   "a": "No. The tool expects kilograms. Divide pounds by 2.205 or use the unit converter on this site first."
+  }
+ ],
+ "related": [
+  "bmr-tdee",
+  "bmi-calculator",
+  "macro-calculator",
+  "unit-converter",
+  "heart-rate-zones",
+  "ideal-weight"
+ ],
+ "keywords": [
+  "water intake calculator",
+  "daily water intake calculator",
+  "free water intake calculator",
+  "how much water should i drink",
+  "hydration calculator",
+  "water intake by weight"
+ ]
+}

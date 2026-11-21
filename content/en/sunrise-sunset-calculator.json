@@ -1,0 +1,39 @@
+{
+ "id": "sunrise-sunset-calculator",
+ "seoTitle": "Sunrise and Sunset Calculator by Latitude, Longitude and Date",
+ "metaDescription": "Compute sunrise, sunset, solar noon and day length offline for any coordinates and date. Free, no data sent.",
+ "intro": "Calculates sunrise, solar noon, sunset and day length for coordinates and a date with the NOAA solar equations, shown in a time zone you choose.",
+ "why": "Many sunrise sites call a weather API. This one calculates it on your device from latitude, longitude and date, so you can use it anywhere.\n\nIt matches the astral library within about 1 minute on nine test locations. Real times vary with weather, altitude and the horizon. Use east-positive longitude.",
+ "howTo": [
+  "Enter latitude and longitude.",
+  "Pick a date and the time zone to show.",
+  "Read sunrise, sunset and day length."
+ ],
+ "faq": [
+  {
+   "q": "Can it find a place by name?",
+   "a": "No, that needs a lookup service. Enter coordinates from a map."
+  },
+  {
+   "q": "How accurate is it?",
+   "a": "About a minute against astral at mid-latitudes; less reliable near the poles."
+  },
+  {
+   "q": "What about polar day?",
+   "a": "It tells you when the sun stays up or down all day."
+  }
+ ],
+ "related": [
+  "moon-phase-calculator",
+  "dst-clock-change-finder",
+  "timezone-converter",
+  "world-clock",
+  "gps-speedometer",
+  "wind-chill-heat-index-calculator"
+ ],
+ "keywords": [
+  "sunrise sunset calculator",
+  "day length by latitude",
+  "solar noon"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "fuel-cost",
+ "seoTitle": "Free Fuel Cost Calculator for Trips: Litres and Price",
+ "metaDescription": "Work out how much fuel a trip needs and what it costs, from distance, consumption and fuel price. Supports km, miles, L/100km, km/L and mpg. Free.",
+ "intro": "Enter distance, fuel consumption and fuel price. The tool shows the fuel needed, the total trip cost and the cost per kilometre or mile.",
+ "why": "Splitting petrol money for a road trip, comparing the cost of driving with the train, or claiming mileage all need the same sum: how much fuel will this journey use and what will it cost? The sum looks simple until the units fight each other. The car says 7 litres per 100 km, the sat nav shows miles and the pump price is per US gallon. This calculator accepts distance in kilometres or miles, consumption in L/100km, km/L or US mpg, and does the conversion. It then reports fuel, total cost and cost per unit distance, which is handy for sharing costs between passengers. It assumes steady consumption and ignores tolls and wear. Nothing is uploaded.",
+ "howTo": [
+  "Enter the distance and pick kilometres or miles.",
+  "Enter your fuel consumption and pick L/100km, km/L or mpg (US).",
+  "Enter the fuel price per litre, or per US gallon if you use mpg, then read the cost."
+ ],
+ "faq": [
+  {
+   "q": "What price do I enter for mpg?",
+   "a": "mpg means US miles per US gallon here, so enter the price per US gallon. For L/100km and km/L, enter the price per litre."
+  },
+  {
+   "q": "Is it a return trip?",
+   "a": "The tool calculates one distance only. For a return journey, double the distance before you enter it, and the fuel and cost will double too."
+  },
+  {
+   "q": "How accurate is the estimate?",
+   "a": "It is as accurate as your consumption figure. Real consumption changes with speed, load, traffic and weather, so use a figure from your own trip computer if you have one."
+  },
+  {
+   "q": "Are imperial gallons supported?",
+   "a": "No. The mpg option uses US gallons. Convert imperial mpg to US mpg first by multiplying by about 0.8327."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "tip-calculator",
+  "percentage-calculator",
+  "salary-hourly",
+  "discount-calculator",
+  "time-duration-calculator"
+ ],
+ "keywords": [
+  "fuel cost calculator",
+  "trip cost calculator",
+  "free fuel cost calculator",
+  "petrol cost calculator",
+  "gas mileage cost calculator",
+  "road trip fuel calculator"
+ ]
+}

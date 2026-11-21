@@ -1,0 +1,41 @@
+{
+ "id": "social-post-preview",
+ "seoTitle": "Social Post Text Preview: X, LinkedIn and Facebook Style",
+ "metaDescription": "See how a text post reads in a generic X, LinkedIn or Facebook style card, with the character count. Free, private, in your browser.",
+ "intro": "See how a text post reads in a generic X-style, LinkedIn-style or Facebook-style card, with the character count against the limit.",
+ "why": "Seeing a post in a card shows line breaks, links and length better than a text box does.\n\nEnter a name, handle and text and pick a card style, light or dark. Links and hashtags are coloured and the character count shows against the limit. The cards are generic, not exact copies, so see the real platform for final spacing and truncation. Text is escaped and nothing runs.",
+ "howTo": [
+  "Paste the post text.",
+  "Enter a name and handle.",
+  "Choose the card style and theme.",
+  "Check line breaks and length."
+ ],
+ "faq": [
+  {
+   "q": "Is this exactly what the platform shows?",
+   "a": "No. It is a generic look and does not copy their truncation rules."
+  },
+  {
+   "q": "Can I add an image?",
+   "a": "Not in this version. For link preview images use the Social Preview tool."
+  },
+  {
+   "q": "Is my text sent anywhere?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "social-preview",
+  "social-post-length-checker",
+  "x-post-character-counter",
+  "linkedin-text-formatter",
+  "thread-splitter",
+  "og-image-size-checker"
+ ],
+ "keywords": [
+  "social post preview",
+  "tweet mockup generator",
+  "linkedin post preview",
+  "post text preview"
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Nginx Config Generator - Proxy, SPA, HTTPS | Free Tools</title>
+<meta name="description" content="Generate Nginx server blocks for static sites, reverse proxy, single-page apps and HTTPS redirects, with optional gzip. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/nginx-config-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/nginx-config-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/nginx-config-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Nginx Config Generator - Proxy, SPA, HTTPS | Free Tools">
+<meta property="og:description" content="Generate Nginx server blocks for static sites, reverse proxy, single-page apps and HTTPS redirects, with optional gzip. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/nginx-config-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Nginx Config Generator - Proxy, SPA, HTTPS | Free Tools">
+<meta name="twitter:description" content="Generate Nginx server blocks for static sites, reverse proxy, single-page apps and HTTPS redirects, with optional gzip. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Nginx Config Generator","url":"https://tools.sitefig.net/en/nginx-config-generator/","description":"Generate Nginx server blocks for static sites, reverse proxy, single-page apps and HTTPS redirects, with optional gzip. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose the type: static, reverse proxy, SPA or https redirect only.","Enter the server_name and, depending on the type, the root folder or the upstream address.","Tick HTTPS and gzip as needed.","Copy the config, test it with nginx -t and reload Nginx."],"keywords":"nginx config generator, nginx reverse proxy config, nginx spa try_files, nginx https redirect, free nginx server block generator","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"Nginx Config Generator","item":"https://tools.sitefig.net/en/nginx-config-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where do the certificate paths come from?","acceptedAnswer":{"@type":"Answer","text":"With HTTPS ticked, the block points at /etc/letsencrypt/live/ followed by your server name for fullchain.pem and privkey.pem, the usual Certbot location. Change the paths if your certificates live elsewhere."}},{"@type":"Question","name":"What does the SPA option do differently?","acceptedAnswer":{"@type":"Answer","text":"It sends any URL that is not a real file to /index.html, so client-side routes such as /dashboard load the app instead of returning 404. The static option returns 404 for missing files."}},{"@type":"Question","name":"Which headers does the reverse proxy add?","acceptedAnswer":{"@type":"Answer","text":"Host, X-Real-IP, X-Forwarded-For and X-Forwarded-Proto, plus Upgrade and Connection settings so WebSocket connections can pass through. Adjust timeouts and buffering for heavy workloads."}},{"@type":"Question","name":"Is the output complete for production?","acceptedAnswer":{"@type":"Answer","text":"It is a solid base but omits security headers, rate limits, TLS tuning and logging choices. Review those for your environment, and test the file before reloading."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">Nginx Config Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Nginx Config Generator</h1>
+<p class="lede">Fill in a server name, root or upstream and a few options to get an Nginx server block for a static site, reverse proxy, SPA or plain HTTPS redirect.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="nginx-config-generator" data-module="gen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Nginx configuration is short but unforgiving. A missing semicolon, a try_files line that sends every URL to 404, or a proxy block without the forwarded headers can take a site down or break logins behind a proxy. Most setups repeat the same few patterns, so they are easy to get from a template.</p>
+<p>This generator covers four: a static site with long-lived caching for assets, a single-page app that falls back to index.html, a reverse proxy to an upstream with the headers apps usually need, and a lone redirect from HTTP to HTTPS. You can add gzip settings and a certificate block that points at Let's Encrypt paths. Always run nginx -t before reloading. The text is generated in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose the type: static, reverse proxy, SPA or https redirect only.</li><li>Enter the server_name and, depending on the type, the root folder or the upstream address.</li><li>Tick HTTPS and gzip as needed.</li><li>Copy the config, test it with nginx -t and reload Nginx.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Where do the certificate paths come from?</summary><p>With HTTPS ticked, the block points at /etc/letsencrypt/live/ followed by your server name for fullchain.pem and privkey.pem, the usual Certbot location. Change the paths if your certificates live elsewhere.</p></details>
+<details><summary>What does the SPA option do differently?</summary><p>It sends any URL that is not a real file to /index.html, so client-side routes such as /dashboard load the app instead of returning 404. The static option returns 404 for missing files.</p></details>
+<details><summary>Which headers does the reverse proxy add?</summary><p>Host, X-Real-IP, X-Forwarded-For and X-Forwarded-Proto, plus Upgrade and Connection settings so WebSocket connections can pass through. Adjust timeouts and buffering for heavy workloads.</p></details>
+<details><summary>Is the output complete for production?</summary><p>It is a solid base but omits security headers, rate limits, TLS tuning and logging choices. Review those for your environment, and test the file before reloading.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/nginx-formatter/"><span class="link-card__title">nginx Config Formatter</span><span class="link-card__desc">Re-indent nginx.conf by brace depth, collapse spaces and blank lines. Comments and values are never changed.</span></a></li><li><a class="link-card" href="/en/nginx-security-conf-generator/"><span class="link-card__title">Nginx Security Hardening Config</span><span class="link-card__desc">Generate a hardened nginx server block: modern TLS, HSTS, security headers, hidden version, request limits, rate limiting, dotfile/backup file blocking and method allow-list. Review before production.</span></a></li><li><a class="link-card" href="/en/nginx-rate-limit-calculator/"><span class="link-card__title">Nginx Rate Limit Calculator</span><span class="link-card__desc">Work out limit_req_zone rate, burst, delay and zone memory for a request rate, and see how traffic will be queued or rejected.</span></a></li><li><a class="link-card" href="/en/caddyfile-generator/"><span class="link-card__title">Caddyfile Generator</span><span class="link-card__desc">Build a Caddyfile site block: reverse proxy, static files, SPA, PHP-FPM or redirect, with compression, headers and www redirect.</span></a></li><li><a class="link-card" href="/en/security-headers-generator/"><span class="link-card__title">Security Headers Generator</span><span class="link-card__desc">HSTS, CSP, X-Frame-Options and friends for Apache, NGINX, Netlify, Cloudflare.</span></a></li><li><a class="link-card" href="/en/htaccess-to-nginx/"><span class="link-card__title">.htaccess to nginx Converter</span><span class="link-card__desc">Translate common Apache .htaccess directives to nginx: Redirect, RedirectMatch, RewriteRule/RewriteCond (R, L, NC, F, G flags, www/https/front-controller patterns), ErrorDocument, Options -Indexes, DirectoryIndex, Header set, ExpiresByType, Require/Deny. Anything unsupported is left as a &quot;# TODO&quot; comment: review before use (run nginx -t).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

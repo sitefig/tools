@@ -1,0 +1,45 @@
+{
+ "id": "orbital-mechanics-nbody-sandbox",
+ "seoTitle": "Orbital Mechanics Sandbox: N-Body Gravity Simulation with Orbit Trails",
+ "metaDescription": "Enter bodies with mass, position and velocity and watch their orbits under mutual gravity as trails. Free leapfrog integrator.",
+ "intro": "Integrates the motion of up to ten bodies under mutual gravity in two dimensions and draws their orbit trails and final state.",
+ "why": "Orbits are easy to describe and hard to picture. Enter a Sun, an Earth and a Mars in astronomical units, solar masses and years, and the trails show their ellipses. Change a speed and see how the orbit turns from circle to ellipse to escape.\n\nThe integrator is velocity Verlet (leapfrog), which keeps energy and angular momentum from drifting; both drifts are printed. The result was compared with a high-order solver, and it converges as the time step is reduced. Close encounters need a smaller step. The sample masses use the planet to Sun mass ratios from NASA data, and the speeds are circular-orbit values.",
+ "howTo": [
+  "Enter one body per line: name, mass, x, y, vx, vy.",
+  "Choose AU/solar mass/year units or arbitrary units with G = 1.",
+  "Set the time step and total time.",
+  "Read the final state and look at the trails."
+ ],
+ "faq": [
+  {
+   "q": "Why does G equal 4 pi squared?",
+   "a": "In AU, solar masses and years that makes a circular orbit at 1 AU last one year, an idealisation."
+  },
+  {
+   "q": "Is it 3D?",
+   "a": "No, two dimensions only."
+  },
+  {
+   "q": "How do I know the step is small enough?",
+   "a": "Halve it and compare the final positions."
+  },
+  {
+   "q": "Can bodies collide?",
+   "a": "There is no collision handling; a very close pass needs a tiny step."
+  }
+ ],
+ "related": [
+  "planet-size-comparator",
+  "projectile-motion-calculator",
+  "pendulum-simulator-period",
+  "function-grapher-roots",
+  "wave-interference-superposition",
+  "game-of-life-simulator"
+ ],
+ "keywords": [
+  "orbit simulator",
+  "n-body simulation",
+  "gravity simulation online",
+  "planetary orbit sandbox"
+ ]
+}

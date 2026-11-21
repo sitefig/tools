@@ -1,0 +1,45 @@
+{
+  "id": "regex-to-code",
+  "seoTitle": "Regex to Code: JavaScript, Python, Go, Java, PHP, C#, Ruby, Rust",
+  "metaDescription": "Turn one regular expression into correctly escaped snippets for eight languages, with warnings where a language lacks lookarounds or backreferences.",
+  "intro": "Paste a regex once and get ready-to-paste declarations for JavaScript, Python, Go, Java, PHP, C#, Ruby and Rust.",
+  "why": "The tool escapes the pattern for each language's string rules (raw strings in Python, Go and Rust, doubled backslashes in Java, verbatim strings in C#, delimiters and flags in PHP) and maps the ignore-case, multiline and dotall options to each language's flags. It converts named groups to Python's (?P<name>) form and warns when Go or Rust cannot compile lookarounds or backreferences.\n\nRegex dialects differ beyond escaping: Unicode behaviour of \\w and \\b, possessive quantifiers and \\p classes vary. Test the snippet in the target language.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the pattern without slashes.",
+    "Tick ignore case, multiline or dotall if needed.",
+    "Copy the snippet for your language.",
+    "Run it against test strings in that language."
+  ],
+  "faq": [
+    {
+      "q": "Why does Go not accept my pattern?",
+      "a": "Go uses RE2, which has no lookahead, lookbehind or backreferences, so the tool shows a warning."
+    },
+    {
+      "q": "Do named groups work everywhere?",
+      "a": "Syntax varies: (?<n>) in JavaScript, Java, .NET and Ruby; (?P<n>) in Python and Go."
+    },
+    {
+      "q": "Is my pattern uploaded?",
+      "a": "No. It is transformed in the page."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "regex-tester",
+    "regex-explainer",
+    "regex-escape",
+    "regex-cheatsheet",
+    "curl-to-more-languages",
+    "json-to-models"
+  ],
+  "keywords": [
+    "regex to python",
+    "convert regex to code",
+    "regex java escape",
+    "regex multiple languages"
+  ]
+}

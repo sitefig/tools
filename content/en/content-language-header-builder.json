@@ -1,0 +1,45 @@
+{
+ "id": "content-language-header-builder",
+ "seoTitle": "Content-Language Header Builder With meta, Apache and nginx",
+ "metaDescription": "Build a Content-Language header, the matching meta http-equiv tag and html lang, with Apache and nginx lines. Notes what Google and Bing do.",
+ "intro": "Writes the Content-Language header and its equivalents from valid language tags.",
+ "why": "Content-Language states the language of the audience the content is meant for. It is not Accept-Language, which is what a browser requests. The tool checks your tags against the ISO lists and outputs the header, the meta http-equiv equivalent, the html lang attribute and server config lines.\n\nGoogle says it does not use hreflang or lang to detect language and does not list Content-Language as a signal. For Bing, community and older sources say it reads the meta tag or header; I could not confirm that on Bing's current official documentation, and the tool says so.",
+ "howTo": [
+  "Enter one or more language tags.",
+  "Copy the header, meta tag or server line you need.",
+  "Set html lang as well.",
+  "Test the header with curl -I."
+ ],
+ "faq": [
+  {
+   "q": "Does Google use it?",
+   "a": "Google does not list it as a signal; use hreflang for alternates."
+  },
+  {
+   "q": "Does Bing use it?",
+   "a": "Sources say yes, but this was not verified on official documentation."
+  },
+  {
+   "q": "Can I list several languages?",
+   "a": "Yes, for content meant for readers of all of them."
+  },
+  {
+   "q": "Is it the same as lang?",
+   "a": "No, lang is for browsers and assistive technology."
+  }
+ ],
+ "related": [
+  "html-lang-attribute-checker",
+  "hreflang-code-checker",
+  "http-headers-analyzer",
+  "accept-language-parser",
+  "cache-control-builder",
+  "hreflang-x-default-advisor"
+ ],
+ "keywords": [
+  "content-language header",
+  "content-language meta",
+  "bing language targeting",
+  "content-language apache"
+ ]
+}

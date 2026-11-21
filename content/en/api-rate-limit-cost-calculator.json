@@ -1,0 +1,43 @@
+{
+ "id": "api-rate-limit-cost-calculator",
+ "seoTitle": "Free API Rate Limit and Cost Calculator",
+ "metaDescription": "Work out how long a bulk API job takes, how many keys you need for a deadline and the monthly cost with plan fee and overage. Free.",
+ "intro": "Enter a rate limit and a price plan to see how long a bulk job takes, how many API keys you need to meet a deadline, the monthly ceiling and the total cost including fee, quota and overage.",
+ "why": "A bulk job against a rate-limited API is easy to underestimate. Fifty thousand requests at sixty per minute is almost fourteen hours, retries stretch it further, and a plan with an included quota charges overage beyond that. Teams discover this when the job is still running the next day or when the invoice arrives.\n\nThis calculator puts the constraints in one place. Enter the limit and its window, the items to process, any batching, retry rate and the hours per day you can run, and see the duration. Then check how many keys or accounts a deadline needs, and what the plan fee plus overage costs. Check the provider's terms before using several keys, as some forbid it. The sums run in your browser and nothing is stored.",
+ "howTo": [
+  "Enter the rate limit and its time window in seconds.",
+  "Enter the number of items, the batch size, the retry rate and the hours per day the job can run.",
+  "Set the number of keys, plus the plan fee, included quota and overage price.",
+  "Read the estimated duration, the keys needed for your deadline and the cost."
+ ],
+ "faq": [
+  {
+   "q": "Does using more keys always speed things up?",
+   "a": "Only if the provider limits per key. Many APIs limit per account, per IP or per organisation, so extra keys may not help and may break the terms of service. Read the provider's rules first."
+  },
+  {
+   "q": "How are retries counted?",
+   "a": "The retry rate adds extra requests on top of the items, since each retried request uses the limit again. A five percent retry rate means about five percent more calls than items."
+  },
+  {
+   "q": "Are the results guaranteed?",
+   "a": "No. They assume steady throughput at the limit. Real jobs see latency, throttling responses and downtime, so add a safety margin to any deadline you promise to others."
+  }
+ ],
+ "related": [
+  "nginx-rate-limit-calculator",
+  "bandwidth-download-time",
+  "llm-cost-calculator",
+  "time-duration-calculator",
+  "redis-lua-script-generator",
+  "startup-cost-calculator"
+ ],
+ "keywords": [
+  "api rate limit calculator",
+  "how long will api job take",
+  "api cost calculator overage",
+  "bulk api request time estimate",
+  "rate limit planning tool",
+  "free api rate limit tool"
+ ]
+}

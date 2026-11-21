@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Probability Distribution Calculator: Normal, Binomial and Poisson | Free Tools</title>
+<meta name="description" content="Get probabilities for normal, binomial and Poisson distributions over any interval, with a shaded plot. Free, verified against SciPy.">
+<link rel="canonical" href="https://tools.sitefig.net/en/probability-distribution-calculator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/probability-distribution-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/probability-distribution-calculator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Probability Distribution Calculator: Normal, Binomial and Poisson | Free Tools">
+<meta property="og:description" content="Get probabilities for normal, binomial and Poisson distributions over any interval, with a shaded plot. Free, verified against SciPy.">
+<meta property="og:url" content="https://tools.sitefig.net/en/probability-distribution-calculator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Probability Distribution Calculator: Normal, Binomial and Poisson | Free Tools">
+<meta name="twitter:description" content="Get probabilities for normal, binomial and Poisson distributions over any interval, with a shaded plot. Free, verified against SciPy.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Probability Distribution Calculator and Plot: Normal, Binomial, Poisson","url":"https://tools.sitefig.net/en/probability-distribution-calculator/","description":"Get probabilities for normal, binomial and Poisson distributions over any interval, with a shaded plot. Free, verified against SciPy.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose the distribution.","Enter its parameters: mean and standard deviation, or trials and probability, or the rate.","Enter the from and to values, leaving one blank for an open end.","Read the probability and look at the shaded area."],"keywords":"normal distribution calculator, binomial probability calculator, poisson probability calculator, probability between two values","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Math & Science","item":"https://tools.sitefig.net/en/#math-and-science"},{"@type":"ListItem","position":3,"name":"Probability Distribution Calculator and Plot: Normal, Binomial, Poisson","item":"https://tools.sitefig.net/en/probability-distribution-calculator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are the limits inclusive?","acceptedAnswer":{"@type":"Answer","text":"For binomial and Poisson yes, for the normal distribution it makes no difference."}},{"@type":"Question","name":"How large can the binomial n be?","acceptedAnswer":{"@type":"Answer","text":"Up to 100000 trials."}},{"@type":"Question","name":"What is the Poisson limit?","acceptedAnswer":{"@type":"Answer","text":"Rates up to 5000."}},{"@type":"Question","name":"Does it give percentiles?","acceptedAnswer":{"@type":"Answer","text":"No, only probabilities of intervals."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#math-and-science">Math &amp; Science</a></li><li><span aria-current="page">Probability Distribution Calculator and Plot: Normal, Binomial, Poisson</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Probability Distribution Calculator and Plot: Normal, Binomial, Poisson</h1>
+<p class="lede">Calculates the probability that a normal, binomial or Poisson variable falls in an interval, with the mean, variance and a shaded plot.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="probability-distribution-calculator" data-module="new22"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Textbook problems ask for things like the chance of 85 to 115 on a test with mean 100 and standard deviation 15, or of 2 to 6 events when the average is 4.5. Enter the parameters and the interval and the probability is shaded on the plot.</p>
+<p>The normal CDF uses a series and continued-fraction form of the error function accurate to about 1e-13. Binomial and Poisson masses use log-factorials so large numbers of trials do not overflow. The results were compared with SciPy for many cases. For discrete distributions both ends of the interval are included.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose the distribution.</li><li>Enter its parameters: mean and standard deviation, or trials and probability, or the rate.</li><li>Enter the from and to values, leaving one blank for an open end.</li><li>Read the probability and look at the shaded area.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Are the limits inclusive?</summary><p>For binomial and Poisson yes, for the normal distribution it makes no difference.</p></details>
+<details><summary>How large can the binomial n be?</summary><p>Up to 100000 trials.</p></details>
+<details><summary>What is the Poisson limit?</summary><p>Rates up to 5000.</p></details>
+<details><summary>Does it give percentiles?</summary><p>No, only probabilities of intervals.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/statistics-calculator/"><span class="link-card__title">Statistics Calculator (Mean, SD, Variance, Quartiles, z-Score)</span><span class="link-card__desc">Paste numbers and get count, sum, mean, median, mode, range, sample and population standard deviation and variance, quartiles, IQR, mean absolute deviation, outliers and z-scores.</span></a></li><li><a class="link-card" href="/en/average-median-mode/"><span class="link-card__title">Average, Median &amp; Mode</span><span class="link-card__desc">Statistics for a list of numbers.</span></a></li><li><a class="link-card" href="/en/regression-curve-fit/"><span class="link-card__title">Regression Calculator: Linear, Polynomial, Exponential, Power and Log Fits</span><span class="link-card__desc">Fit a model to x, y data and get the equation, R squared, residuals and a plot of the curve over your points.</span></a></li><li><a class="link-card" href="/en/birthday-collision-calculator/"><span class="link-card__title">Birthday Paradox &amp; Hash Collision Probability Calculator</span><span class="link-card__desc">Probability that at least two of n items collide in a space of N possibilities (birthdays, random IDs, truncated hashes), and how many items give a 50% or 1-in-a-million chance.</span></a></li><li><a class="link-card" href="/en/ab-test-calculator/"><span class="link-card__title">A/B Test Significance Calculator</span><span class="link-card__desc">Two-proportion z-test (pooled), confidence and required sample size.</span></a></li><li><a class="link-card" href="/en/dice-roller/"><span class="link-card__title">Dice Roller</span><span class="link-card__desc">Roll dice in NdM+K notation (e.g. 2d6+3, d20). Cryptographically random.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

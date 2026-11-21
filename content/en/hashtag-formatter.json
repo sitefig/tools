@@ -1,0 +1,41 @@
+{
+ "id": "hashtag-formatter",
+ "seoTitle": "Hashtag Formatter: Words to CamelCase Hashtags",
+ "metaDescription": "Turn words and phrases into clean hashtags like #SmallBusinessTips with CamelCase for screen readers. Removes duplicates. Free.",
+ "intro": "Turn a list of words or phrases into clean hashtags such as #SmallBusinessTips, with CamelCase that screen readers can pronounce.",
+ "why": "A good hashtag has no spaces or punctuation, and is easier to read and pronounce in CamelCase. #WeAreHiring reads clearly to a screen reader, while #wearehiring does not.\n\nPaste phrases one per line or separated by commas. The tool strips punctuation, joins the words, removes duplicates and skips tags made only of digits, which most platforms do not link. Choose lowercase if you prefer. It does not suggest hashtags: that needs data from a service.",
+ "howTo": [
+  "Paste phrases, one per line or comma separated.",
+  "Choose CamelCase or lowercase.",
+  "Choose one line or one per line.",
+  "Copy the tags."
+ ],
+ "faq": [
+  {
+   "q": "Why CamelCase?",
+   "a": "Screen readers can pronounce capitalised words, so it is more accessible."
+  },
+  {
+   "q": "Does it suggest popular hashtags?",
+   "a": "No. That needs platform data. It only formats what you give it."
+  },
+  {
+   "q": "Is there a limit on hashtags?",
+   "a": "Platforms set their own, so check each one."
+  }
+ ],
+ "related": [
+  "social-post-length-checker",
+  "instagram-line-break-formatter",
+  "thread-splitter",
+  "linkedin-text-formatter",
+  "case-converter",
+  "slug-generator"
+ ],
+ "keywords": [
+  "hashtag formatter",
+  "camelcase hashtag generator",
+  "hashtag generator from words",
+  "clean hashtags"
+ ]
+}

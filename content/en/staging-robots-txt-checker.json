@@ -1,0 +1,44 @@
+{
+ "id": "staging-robots-txt-checker",
+ "seoTitle": "Staging robots.txt on Production Checker",
+ "metaDescription": "Detect a blanket Disallow: / or noindex that was pushed from staging to production, or a staging site left open. Free, runs in your browser.",
+ "intro": "Checks whether the robots.txt you paste blocks ordinary pages, and whether the page headers or HTML carry noindex, for production or staging.",
+ "why": "One of the classic launch mistakes is shipping the staging robots.txt (Disallow: /) or a noindex tag to production. Traffic falls over days and nobody sees why. The reverse also happens: a staging site left open gets indexed.\n\nPaste the live robots.txt, optionally the headers and page head, and say which environment it is. The tool checks the root and a deep page for * and the big crawlers and tells you what to review.",
+ "howTo": [
+  "Paste the robots.txt your site serves.",
+  "Optionally paste response headers and the page head.",
+  "Select production or staging.",
+  "Fix anything marked REVIEW."
+ ],
+ "faq": [
+  {
+   "q": "Does robots.txt hide a staging site?",
+   "a": "It asks crawlers to stay out, but it is not security. Use a password."
+  },
+  {
+   "q": "Why check noindex too?",
+   "a": "A noindex tag has the same effect on search as a block and is often forgotten."
+  },
+  {
+   "q": "Will it check my live site?",
+   "a": "No, it only reads what you paste. Fetching a site needs a network request."
+  },
+  {
+   "q": "How can I avoid the mistake?",
+   "a": "Add a robots.txt and noindex check to your release checklist."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "robots-generator",
+  "seo-robots-noindex-simulator",
+  "sitemap-validator",
+  "robots-txt-template-library"
+ ],
+ "keywords": [
+  "staging robots.txt",
+  "disallow all production",
+  "noindex left on after launch",
+  "robots.txt block all check"
+ ]
+}

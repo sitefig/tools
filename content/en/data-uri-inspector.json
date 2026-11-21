@@ -1,0 +1,45 @@
+{
+ "id": "data-uri-inspector",
+ "seoTitle": "Data URI Inspector and Decoder",
+ "metaDescription": "Parse a data: URI: MIME type, charset, encoding, decoded size, overhead and a check of the type against the real bytes, with an image preview.",
+ "intro": "Breaks a data URI into type, encoding and payload and checks that the declared type matches the bytes.",
+ "why": "Data URIs hide files inside strings in HTML, CSS and emails. It is hard to tell what one holds or how big it is.\n\nThe tool decodes the payload, reports the size and the Base64 overhead, sniffs the real type from the first bytes and flags a mismatch for review. Images show a preview. Types that can run script, such as HTML and SVG, carry a warning.",
+ "howTo": [
+  "Paste the data: URI, a url(...) value or an attribute value.",
+  "Read the type, charset and size.",
+  "Check any mismatch note.",
+  "Download the decoded image if one is shown."
+ ],
+ "faq": [
+  {
+   "q": "Is it safe to paste untrusted data?",
+   "a": "Yes. Nothing is executed. Images are shown with an img element only."
+  },
+  {
+   "q": "Why is the size larger than the file?",
+   "a": "Base64 adds about a third."
+  },
+  {
+   "q": "Does it need the base64 flag?",
+   "a": "No. Percent-encoded payloads are decoded too."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "base64-image-viewer",
+  "image-to-base64",
+  "svg-to-css",
+  "file-to-data-uri",
+  "base64-to-file",
+  "mime-type-lookup"
+ ],
+ "keywords": [
+  "data uri decoder",
+  "inspect data url",
+  "data uri to file",
+  "base64 data uri size"
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Date Format Normalizer: Mixed Dates in a CSV to ISO | Free Tools</title>
+<meta name="description" content="Rewrite a column of mixed dates (03/04/21, 4 March 2021) into one format. You choose day-first or month-first. Free, no upload.">
+<link rel="canonical" href="https://tools.sitefig.net/en/date-format-normalizer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/date-format-normalizer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/date-format-normalizer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Date Format Normalizer: Mixed Dates in a CSV to ISO | Free Tools">
+<meta property="og:description" content="Rewrite a column of mixed dates (03/04/21, 4 March 2021) into one format. You choose day-first or month-first. Free, no upload.">
+<meta property="og:url" content="https://tools.sitefig.net/en/date-format-normalizer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Date Format Normalizer: Mixed Dates in a CSV to ISO | Free Tools">
+<meta name="twitter:description" content="Rewrite a column of mixed dates (03/04/21, 4 March 2021) into one format. You choose day-first or month-first. Free, no upload.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Date Format Normalizer for a CSV Column (Mixed Formats to ISO)","url":"https://tools.sitefig.net/en/date-format-normalizer/","description":"Rewrite a column of mixed dates (03/04/21, 4 March 2021) into one format. You choose day-first or month-first. Free, no upload.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the CSV and name the date column.","Choose DMY or MDY for numeric dates.","Pick the output format.","Copy or download the result and check the unreadable list."],"keywords":"normalize dates csv, convert date format column, mixed date formats to iso","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Spreadsheet & Data Cleaning","item":"https://tools.sitefig.net/en/#spreadsheet-and-data-cleaning"},{"@type":"ListItem","position":3,"name":"Date Format Normalizer for a CSV Column (Mixed Formats to ISO)","item":"https://tools.sitefig.net/en/date-format-normalizer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What formats are read?","acceptedAnswer":{"@type":"Answer","text":"YYYY-MM-DD, YYYYMMDD, D/M/Y and M/D/Y with / - or ., 4 March 2021, March 4 2021 and 4th Mar 21."}},{"@type":"Question","name":"Times?","acceptedAnswer":{"@type":"Answer","text":"A time after an ISO date is dropped."}},{"@type":"Question","name":"Why was a date unchanged?","acceptedAnswer":{"@type":"Answer","text":"It was not recognised or not a real calendar date."}},{"@type":"Question","name":"Verified?","acceptedAnswer":{"@type":"Answer","text":"Checked against Python dateutil on a sample; differences were limited to cases where dateutil guesses the order."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#spreadsheet-and-data-cleaning">Spreadsheet &amp; Data Cleaning</a></li><li><span aria-current="page">Date Format Normalizer for a CSV Column (Mixed Formats to ISO)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Date Format Normalizer for a CSV Column (Mixed Formats to ISO)</h1>
+<p class="lede">Parses numeric dates and English month-name dates in a CSV column and rewrites them in one output format, such as YYYY-MM-DD.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="date-format-normalizer" data-module="new21"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Day-month order is the usual trap: 03/04/21 is 3 April in Europe and March 4 in the US. The tool does not guess; you set the order for all-numeric dates, and the summary reports how many were ambiguous.</p>
+<p>Dates that cannot be read, or that do not exist such as 31/04/2021, are left unchanged and listed, never silently turned into something else. Two-digit years use 69 to 99 for 19xx and 00 to 68 for 20xx. Only English month names are understood.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the CSV and name the date column.</li><li>Choose DMY or MDY for numeric dates.</li><li>Pick the output format.</li><li>Copy or download the result and check the unreadable list.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What formats are read?</summary><p>YYYY-MM-DD, YYYYMMDD, D/M/Y and M/D/Y with / - or ., 4 March 2021, March 4 2021 and 4th Mar 21.</p></details>
+<details><summary>Times?</summary><p>A time after an ISO date is dropped.</p></details>
+<details><summary>Why was a date unchanged?</summary><p>It was not recognised or not a real calendar date.</p></details>
+<details><summary>Verified?</summary><p>Checked against Python dateutil on a sample; differences were limited to cases where dateutil guesses the order.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/date-formats/"><span class="link-card__title">Date Format Converter</span><span class="link-card__desc">Show one date in many formats: ISO 8601, RFC 2822, SQL, US/EU, week dates, Julian day and more.</span></a></li><li><a class="link-card" href="/en/calendar-heatmap/"><span class="link-card__title">Calendar Heatmap (GitHub-Style Year of Daily Values)</span><span class="link-card__desc">Paste dates with counts and see each day of a year as a square shaded by its value, with month labels and a legend. Dates must be YYYY-MM-DD; repeated dates are added together.</span></a></li><li><a class="link-card" href="/en/timezone-converter/"><span class="link-card__title">Time Zone Converter</span><span class="link-card__desc">Convert a date/time from one IANA zone to several others, DST-aware.</span></a></li><li><a class="link-card" href="/en/csv-column-profiler/"><span class="link-card__title">CSV Column Profiler (Types, Nulls, Unique, Min/Max)</span><span class="link-card__desc">Profile each column of a CSV: inferred type, empty count, distinct values, min / max / mean for numbers, shortest and longest text, and most frequent values.</span></a></li><li><a class="link-card" href="/en/table-find-replace/"><span class="link-card__title">Find and Replace in Selected CSV Columns (Regex)</span><span class="link-card__desc">Apply a regular expression find and replace to chosen columns of a CSV only. See how many cells changed and which, before you copy the result. $1 style groups work.</span></a></li><li><a class="link-card" href="/en/date-difference/"><span class="link-card__title">Date Difference Calculator</span><span class="link-card__desc">Years, months, days and total days between two dates.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

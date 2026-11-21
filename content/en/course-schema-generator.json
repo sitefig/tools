@@ -1,0 +1,45 @@
+{
+ "id": "course-schema-generator",
+ "seoTitle": "Course Schema Generator With CourseInstance Schedule",
+ "metaDescription": "Build Course JSON-LD with provider and course instances: online or onsite, start and end dates, weekly workload and instructor.",
+ "intro": "Builds Course markup with provider and one CourseInstance per run, each with mode, schedule, workload and instructor.",
+ "why": "Each run of a course is a CourseInstance with its own dates and delivery mode. Write one instance: line per run and the tool builds the schedule, and turns a workload such as 3h/week into a repeat frequency and an ISO 8601 duration.\n\nGoogle retired the course info result in 2025; course list carousels still use name, description and provider. The tool says so and checks those three.",
+ "howTo": [
+  "Enter the name, description and URL.",
+  "Enter the provider as Name | URL.",
+  "Add instance: lines with mode, dates, workload and instructor.",
+  "Copy the script tag onto the course page."
+ ],
+ "faq": [
+  {
+   "q": "What modes are allowed?",
+   "a": "online, onsite and blended."
+  },
+  {
+   "q": "How is workload read?",
+   "a": "3h/week becomes a weekly schedule and PT3H; a plain duration like 20 hours also works."
+  },
+  {
+   "q": "Does Google still show course results?",
+   "a": "Course info was retired. The list carousel remains; see the notes in the output."
+  },
+  {
+   "q": "Can a course have several instances?",
+   "a": "Yes, repeat the instance: line."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "iso-8601-duration-builder",
+  "rich-result-eligibility-checker",
+  "schema-deprecation-checker",
+  "jsonld-syntax-validator",
+  "event-schema-generator"
+ ],
+ "keywords": [
+  "course schema generator",
+  "CourseInstance json-ld",
+  "course structured data",
+  "online course markup"
+ ]
+}

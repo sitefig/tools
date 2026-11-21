@@ -1,0 +1,46 @@
+{
+ "id": "image-diff",
+ "seoTitle": "Free Image Diff - Compare Two Images by Pixels",
+ "metaDescription": "Compare two images and highlight the changed pixels in red, with the percentage changed and an adjustable tolerance. Free, runs in your browser.",
+ "intro": "Load two images and see the pixels that differ highlighted in red, with the share of changed pixels shown above the result.",
+ "why": "Visual changes are hard to spot by eye: a shifted button, a different shade, a missing icon. Designers comparing exports, developers checking screenshots after a CSS change and testers reviewing a visual regression all need an objective answer to what changed and by how much.\n\nThis tool draws the second image over the first at the first image's size and compares them pixel by pixel. Any pixel that differs by more than your tolerance in red, green, blue or alpha is painted red, and unchanged areas are shown faded, so the differences stand out. A percentage tells you how large the change is. Raise the tolerance to ignore tiny compression noise. Both images stay in your browser; nothing is uploaded.",
+ "howTo": [
+  "Choose Image A, the reference image.",
+  "Choose Image B, the image to compare.",
+  "Adjust the tolerance, from 0 to 255, to ignore small colour differences.",
+  "Read the percentage changed and inspect the red areas in the result."
+ ],
+ "faq": [
+  {
+   "q": "What does tolerance mean?",
+   "a": "It is the largest difference in any colour channel that still counts as unchanged. The default of 16 hides faint JPEG noise. Set it to 0 to flag every tiny difference."
+  },
+  {
+   "q": "What if the images have different sizes?",
+   "a": "The second image is resized to match the first, and the tool says so. Because resizing blurs detail, results are most meaningful when both images have the same dimensions."
+  },
+  {
+   "q": "Will JPEG compression cause false differences?",
+   "a": "Yes, lossy compression changes pixels slightly even when the picture looks the same. Compare PNG screenshots where you can, or raise the tolerance to filter out the noise."
+  },
+  {
+   "q": "Does it detect moved elements?",
+   "a": "No. It compares pixels at the same position, so an element that shifted by a few pixels will show as changes at both its old and new place. It does not track movement."
+  }
+ ],
+ "related": [
+  "text-diff",
+  "image-compressor",
+  "image-resizer",
+  "image-format-converter",
+  "gif-maker",
+  "color-converter"
+ ],
+ "keywords": [
+  "image diff",
+  "compare two images online",
+  "image difference checker",
+  "visual diff tool",
+  "free pixel comparison"
+ ]
+}

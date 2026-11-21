@@ -1,0 +1,45 @@
+{
+ "id": "hex-to-base64",
+ "seoTitle": "Free Hex to Base64 Converter (and Back) Online",
+ "metaDescription": "Convert raw bytes between hexadecimal and Base64 or Base64URL without going through text. Accepts 0x, spaces and colons. Free, in your browser.",
+ "intro": "Converts raw bytes directly between hex and Base64 (or Base64URL), accepting 0x prefixes, spaces and colons in the hex, and formats hex output as you like.",
+ "why": "Hashes, keys, signatures and binary IDs are shown as hex in one place and Base64 in another. A SHA-256 digest in a log is hex, the same value in a JWT or an HTTP header is Base64. Converting between them with a normal text Base64 tool gives the wrong answer, because those tools encode the characters of the hex string, not the bytes it stands for. This converter works on the bytes themselves. Paste a fingerprint with colons, a value starting with 0x or a spaced hex dump and get the right Base64, with or without padding and in the URL-safe alphabet. It also goes the other way and groups the hex into pairs. Nothing leaves your browser.",
+ "howTo": [
+  "Choose the direction: hex to Base64, or Base64 to hex.",
+  "Paste the value. Hex may include 0x, spaces, commas, dashes or colons; Base64 may be standard or URL-safe.",
+  "Set the options for URL-safe alphabet, padding, upper-case hex and grouping, then copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Why not just use a normal Base64 encoder?",
+   "a": "A text encoder turns the characters \"de ad be ef\" into Base64, not the four bytes they represent. This tool first decodes the hex to bytes and then encodes those bytes, which is what keys and digests need."
+  },
+  {
+   "q": "What makes hex input invalid?",
+   "a": "After removing 0x, spaces, commas, dashes and colons the input must contain an even number of digits from 0-9 and a-f. An odd count or any other character produces an error."
+  },
+  {
+   "q": "What is the Base64URL option?",
+   "a": "It swaps + and / for - and _ so the value can sit in a URL or JWT. You can also drop the = padding. When decoding, the tool accepts either alphabet."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "There is no fixed limit, but it runs in the page, so very large inputs will be slow. It is meant for keys, digests and short binary values."
+  }
+ ],
+ "related": [
+  "base64-encode",
+  "base64-decode",
+  "base64url-encoder",
+  "hex-dump-viewer",
+  "hex-text",
+  "hash-generator"
+ ],
+ "keywords": [
+  "hex to base64",
+  "base64 to hex",
+  "convert hex to base64 online",
+  "free hex base64 converter",
+  "hex fingerprint to base64"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "missing-value-filler",
+ "seoTitle": "Missing Value Filler: Constant, Mean, Median, Forward Fill",
+ "metaDescription": "Fill empty CSV cells per column with a constant, mean, median, or the previous or next value. Free, shows how many were filled.",
+ "intro": "Replaces empty cells column by column using the method you choose, with one default and overrides for single columns.",
+ "why": "Gaps in data break charts and averages. Filling with a mean or the last value is a modelling choice, so the tool tells you how many cells were changed in each column and which method it used.\n\nMean and median need numbers; forward and backward fill work for text as well, and leave leading or trailing gaps empty if there is nothing to copy. Writing overrides such as temp: mean; city: forward lets you mix methods. Filled values are guesses; keep the original file.",
+ "howTo": [
+  "Paste the CSV with a header.",
+  "Choose a default method.",
+  "Add overrides like temp: mean; city: forward.",
+  "Copy or download the filled CSV."
+ ],
+ "faq": [
+  {
+   "q": "What counts as empty?",
+   "a": "A cell with nothing or only spaces."
+  },
+  {
+   "q": "Can I fill with a fixed word?",
+   "a": "Yes, choose constant and type it, or use const=VALUE in an override."
+  },
+  {
+   "q": "Is the mean rounded?",
+   "a": "To six significant digits."
+  },
+  {
+   "q": "Does it modify non-empty cells?",
+   "a": "Never."
+  }
+ ],
+ "related": [
+  "outlier-detector",
+  "column-statistics-summarizer",
+  "csv-column-profiler",
+  "category-value-mapper",
+  "statistics-calculator",
+  "table-find-replace"
+ ],
+ "keywords": [
+  "fill missing values csv",
+  "forward fill blanks",
+  "replace empty cells with mean"
+ ]
+}

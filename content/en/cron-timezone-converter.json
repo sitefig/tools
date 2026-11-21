@@ -1,0 +1,43 @@
+{
+ "id": "cron-timezone-converter",
+ "seoTitle": "Free Cron Time Zone Converter",
+ "metaDescription": "Convert a 5-field cron expression from one time zone to another, adjusting hours and days when it crosses midnight. Free, runs in the browser.",
+ "intro": "Enter a five-field cron expression written for one time zone and get the equivalent for another, with the hour and, when the shift crosses midnight, the day fields adjusted.",
+ "why": "Many schedulers only understand UTC. A job that must run at 09:00 in Brussels then needs a different expression in summer and winter, and a late-evening job in New York lands on the next day in UTC, so the day-of-week field has to move too. Doing this by hand is where weekday jobs end up running on a Saturday.\n\nThis converter calculates the offset between the two zones on a reference date, shifts the hours and rolls the day fields forward or back as needed. It also warns about the daylight saving catch. A shifted expression is only right while both zones keep that offset. The work happens in your browser and your schedule is not uploaded.",
+ "howTo": [
+  "Paste the cron expression with five fields: minute, hour, day of month, month and day of week.",
+  "Enter the time zone it is written for and the time zone you want, as IANA names.",
+  "Optionally set a reference date so the correct daylight saving offset is used.",
+  "Copy the converted expression and read the notes about day shifts and clock changes."
+ ],
+ "faq": [
+  {
+   "q": "Will the converted job still be right after daylight saving changes?",
+   "a": "Not necessarily. The result is exact only while both zones keep the offset of your reference date. For year-round local time, set the time zone in the scheduler itself if it supports one."
+  },
+  {
+   "q": "What cron syntax does it support?",
+   "a": "Standard five-field cron with lists, ranges, steps and day names. Complex expressions, such as a step on a half-hour offset, may need manual conversion, and the tool will say so."
+  },
+  {
+   "q": "Why did my day-of-week field change?",
+   "a": "If the shift moves the time past midnight, the job runs on a different calendar day in the target zone. The tool moves each listed day forward or back by one so the job still fires on the intended day."
+  }
+ ],
+ "related": [
+  "cron-explainer",
+  "cron-generator",
+  "natural-language-to-cron",
+  "timezone-converter",
+  "timezone-meeting-planner",
+  "cron-dialect-converter"
+ ],
+ "keywords": [
+  "cron timezone converter",
+  "convert cron to utc",
+  "cron expression time zone",
+  "cron local time to utc",
+  "shift cron expression hours",
+  "free cron converter"
+ ]
+}

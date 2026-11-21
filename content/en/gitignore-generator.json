@@ -1,0 +1,46 @@
+{
+ "id": "gitignore-generator",
+ "seoTitle": "Free .gitignore Generator - Combine Templates",
+ "metaDescription": "Build a .gitignore by combining templates for Node, Python, Java, Go, Rust, .NET, macOS, VS Code, Terraform and more. Free and runs in your browser.",
+ "intro": "Type the names of the stacks and tools you use and get one combined .gitignore, with a labelled section for each template.",
+ "why": "A new repository without a .gitignore soon collects node_modules folders, compiled classes, editor settings and operating system clutter, and removing files from history later is painful. Copying ignore rules from an old project works, but you usually paste too much or forget the IDE and OS entries.\n\nThis generator lets you list templates such as node, python, macos and vscode and returns them stacked in one file, each under its own heading. Covered stacks include Node, Python, Java, Go, Rust, .NET, Ruby, PHP, Swift, Unity and Terraform, plus macOS, Windows, Linux, JetBrains and VS Code. The templates are short starting points, not the full community lists, so review them against your build output before the first commit. Nothing is uploaded.",
+ "howTo": [
+  "Type template names separated by commas or new lines, for example node, python, macos, vscode.",
+  "Run the tool to build the combined file.",
+  "Check each section against your project's build and cache folders.",
+  "Save the result as .gitignore in the repository root."
+ ],
+ "faq": [
+  {
+   "q": "Which templates are available?",
+   "a": "node, python, java, go, rust, dotnet, ruby, php, swift, unity, macos, windows, linux, jetbrains, vscode and terraform. A few aliases also work, such as csharp, idea and js. An unknown name shows the full list."
+  },
+  {
+   "q": "Are these the same as GitHub's templates?",
+   "a": "No. They are shorter, hand-written lists of the most common patterns. They are a good start for a new project but may miss rules that the larger community templates include for your framework."
+  },
+  {
+   "q": "Will it stop files that are already tracked?",
+   "a": "No. A .gitignore only affects untracked files. If something is already committed, remove it from the index with git rm --cached and then commit; the ignore rule will keep it out afterwards."
+  },
+  {
+   "q": "Should I commit lock files?",
+   "a": "The generator does not ignore lock files such as package-lock.json. Applications normally commit them. The Rust template includes a comment about Cargo.lock, which libraries and binaries treat differently."
+  }
+ ],
+ "related": [
+  "dockerignore-generator",
+  "gitignore-tester",
+  "git-command-builder",
+  "editorconfig-generator",
+  "pre-commit-config-generator",
+  "license-generator"
+ ],
+ "keywords": [
+  "gitignore generator",
+  "create gitignore online",
+  "gitignore node python",
+  "combine gitignore templates",
+  "free gitignore maker"
+ ]
+}

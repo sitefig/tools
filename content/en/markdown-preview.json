@@ -1,0 +1,46 @@
+{
+  "id": "markdown-preview",
+  "seoTitle": "Free Markdown Preview: Live Rendered View Online",
+  "metaDescription": "Write Markdown and see it rendered live in a sandboxed frame where scripts never run. Free, runs in your browser and nothing is uploaded.",
+  "intro": "Shows your Markdown as rendered HTML as you type, inside a sandboxed frame. Scripts do not run, and raw HTML is escaped unless you allow it.",
+  "why": "Before you commit a README, post a comment or publish a changelog it helps to see how the Markdown will actually look. A missing blank line breaks a list, a stray pipe ruins a table, and an unclosed code fence swallows the rest of the page.\n\nThis preview renders your text with the same engine as the Markdown to HTML tool and shows it in a sandboxed frame, so even if the source contains script tags they cannot run. Raw HTML is escaped by default, which shows you what a stricter platform would do. Turn it on to test how your own HTML blocks look. It works offline once the page has loaded, and your text is not uploaded.",
+  "howTo": [
+    "Paste or write your Markdown in the input box.",
+    "Look at the rendered preview, which updates with your text.",
+    "Tick Allow raw inline HTML to see how embedded HTML renders.",
+    "Fix formatting problems in the source and watch the preview change."
+  ],
+  "faq": [
+    {
+      "q": "Is it safe to preview untrusted Markdown?",
+      "a": "The preview sits in a sandboxed frame, so scripts never run, even if the Markdown contains script tags and you have allowed raw HTML. Links are also filtered for javascript addresses."
+    },
+    {
+      "q": "Will it match how GitHub renders my file?",
+      "a": "Closely for common syntax such as tables, task lists and fenced code. It is not an exact copy of any one platform, so features like emoji shortcodes or mentions are not rendered here."
+    },
+    {
+      "q": "Why does my HTML not appear?",
+      "a": "Raw HTML is escaped by default and shown as plain text. Tick Allow raw inline HTML to render it. Many comment systems do the same and strip HTML, so the default is a useful check."
+    },
+    {
+      "q": "Can I get the HTML itself?",
+      "a": "Use the Markdown to HTML tool, which gives the converted code to copy. The preview shows only the rendered result."
+    }
+  ],
+  "related": [
+    "markdown-to-html",
+    "markdown-cheatsheet",
+    "html-to-markdown",
+    "markdown-table-generator",
+    "markdown-to-slides",
+    "readme-generator"
+  ],
+  "keywords": [
+    "markdown preview",
+    "live markdown preview online",
+    "markdown viewer",
+    "preview readme markdown",
+    "free markdown editor preview"
+  ]
+}

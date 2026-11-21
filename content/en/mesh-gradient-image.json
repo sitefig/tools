@@ -1,0 +1,45 @@
+{
+ "id": "mesh-gradient-image",
+ "seoTitle": "Mesh Gradient Image Maker: Export PNG or SVG Backgrounds",
+ "metaDescription": "Blend coloured points into a soft mesh gradient and download a PNG or SVG for websites and slides. Free, local.",
+ "intro": "Turns a list of coloured points into a soft blended background and exports it as a PNG image or an SVG file.",
+ "why": "The existing mesh gradient tool outputs CSS. This one produces files for slides, design tools and hero images. Each line gives a position, a colour and an optional radius. Points fade into the background colour with radial gradients.\n\nSVG output is small and scales to any size. PNG output is fixed in pixels. Point positions are typed, which keeps the tool usable with a keyboard.",
+ "howTo": [
+  "Enter one point per line: x percent, y percent, colour and optional radius percent.",
+  "Set the size and background colour.",
+  "Choose PNG or SVG.",
+  "Download the image."
+ ],
+ "faq": [
+  {
+   "q": "Can I drag the points?",
+   "a": "No. Edit the numbers; the preview updates when you run it again."
+  },
+  {
+   "q": "What does the radius mean?",
+   "a": "The spread of a point as a percent of the longer side."
+  },
+  {
+   "q": "Is the SVG the same as the PNG?",
+   "a": "Very close. Both use radial gradients that fade to transparent."
+  },
+  {
+   "q": "Can I use CSS instead?",
+   "a": "The Mesh Gradient Generator gives CSS."
+  }
+ ],
+ "related": [
+  "mesh-gradient-generator",
+  "gradient-generator",
+  "tailwind-mesh-gradient-generator",
+  "noise-texture-generator",
+  "svg-wavy-divider-generator",
+  "palette-generator"
+ ],
+ "keywords": [
+  "mesh gradient png",
+  "mesh gradient svg export",
+  "gradient background maker",
+  "blurred gradient background"
+ ]
+}

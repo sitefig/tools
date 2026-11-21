@@ -1,0 +1,43 @@
+{
+ "id": "bitcoin-bech32-address-encoder",
+ "seoTitle": "Free Bitcoin Bech32 and Bech32m Address Tool",
+ "metaDescription": "Decode or encode Bech32 and Bech32m strings: Bitcoin SegWit and Taproot addresses, plus npub and other prefixes. Free, in your browser.",
+ "intro": "Decode Bech32 and Bech32m strings such as bc1 and tb1 addresses to see the witness version, program and scriptPubKey, or encode a hex witness program with a prefix of your choice.",
+ "why": "Native SegWit and Taproot addresses look like random text, but they carry a version number and a program, and a checksum protects against typing errors. When you write wallet software, parse a transaction or debug why an address is rejected, you want to see what is inside.\n\nThis tool decodes the string, checks the checksum and shows the witness version, the program and the matching scriptPubKey. It tells apart Bech32 from the newer Bech32m, which Taproot uses. In the other direction it encodes a hex program with a prefix and version. It also works with generic Bech32 data such as npub keys. It checks the format only, not whether anyone controls the address. Nothing is uploaded.",
+ "howTo": [
+  "Paste one or more addresses to decode, one per line, or hex witness programs to encode.",
+  "Choose decode or encode mode.",
+  "For encoding, enter the human-readable prefix, such as bc or tb, and the witness version.",
+  "Read the decoded details or copy the encoded address."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between Bech32 and Bech32m?",
+   "a": "They use different checksum constants. Bech32 is used for witness version 0 addresses, while Bech32m, from BIP-350, is used for version 1 and above, including Taproot. A mismatch makes the checksum fail."
+  },
+  {
+   "q": "Does it show the balance of an address?",
+   "a": "No. It only parses the encoding. Checking a balance needs a blockchain explorer or a node, and that would send the address to a third party."
+  },
+  {
+   "q": "Can I use it with Nostr or Lightning strings?",
+   "a": "Generic Bech32 strings can be decoded and encoded, so values with prefixes such as npub or lightning ones work for the data layer. The Bitcoin-specific fields only make sense for bc1 and tb1 addresses."
+  }
+ ],
+ "related": [
+  "bech32-codec",
+  "base58-encoder",
+  "solana-address-validator",
+  "eip55-checksum-address",
+  "bip39-generator",
+  "hex-dump-viewer"
+ ],
+ "keywords": [
+  "bech32 decoder",
+  "bitcoin address decoder",
+  "bech32m taproot address",
+  "bc1 address decoder",
+  "segwit address encoder",
+  "free bech32 tool"
+ ]
+}

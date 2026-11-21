@@ -1,0 +1,46 @@
+{
+ "id": "percent-change",
+ "seoTitle": "Free Percent Change Calculator: Increase or Decrease",
+ "metaDescription": "Enter an old and a new value to get the absolute change and the percentage increase or decrease. Free percent change calculator that runs in your browser.",
+ "intro": "Enter an old value and a new value. The tool returns the absolute difference and the percentage increase or decrease, with the formula used.",
+ "why": "Reports, price lists and dashboards love to say 'up 12%' without showing the sum behind it. When you have the before and after figures, you often need the exact percentage yourself: how much did monthly traffic grow, how far has a supplier raised its prices, how much has a bill dropped since last year. Getting the base wrong is the classic mistake, since dividing by the new value instead of the old one gives a different answer. This page fixes the base as the old value and tells you whether the result is an increase or a decrease. It works offline once loaded, so internal figures stay on your device.",
+ "howTo": [
+  "Enter the old (starting) value.",
+  "Enter the new (ending) value.",
+  "Read the change, the percent change and the increase or decrease label, then copy them if needed."
+ ],
+ "faq": [
+  {
+   "q": "Which number is the base for the percentage?",
+   "a": "The old value. The formula is (new minus old) divided by the absolute old value, times 100. Using the new value as the base would give a different, usually smaller, percentage."
+  },
+  {
+   "q": "Why is a drop of 50% followed by a rise of 50% not back to the start?",
+   "a": "Because each percentage applies to a different base. A fall from 100 to 50 is minus 50%, but 50 rising by 50% gives only 75. To recover the original you need a 100% rise."
+  },
+  {
+   "q": "Can I use negative numbers?",
+   "a": "Yes. The tool divides by the absolute value of the old value, so the direction of the label still makes sense. A starting value of zero is rejected because the change would be undefined."
+  },
+  {
+   "q": "Does it round the result?",
+   "a": "The percentage is shown with up to four decimal places and the absolute change with up to six. Round it yourself when you quote it in a report."
+  }
+ ],
+ "related": [
+  "percentage-calculator",
+  "roi-calculator",
+  "inflation-calculator",
+  "discount-calculator",
+  "profit-margin",
+  "ab-test-calculator"
+ ],
+ "keywords": [
+  "percent change calculator",
+  "percentage increase calculator",
+  "percentage decrease calculator",
+  "free percent change calculator",
+  "calculate percentage difference",
+  "percentage growth calculator"
+ ]
+}

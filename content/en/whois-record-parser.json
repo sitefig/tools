@@ -1,0 +1,38 @@
+{
+ "id": "whois-record-parser",
+ "seoTitle": "WHOIS Record Parser: Expiry, Age, Name Servers and EPP Status",
+ "metaDescription": "Paste WHOIS or RDAP text and get a clean summary with domain age, days to expiry, name servers and a plain-English explanation of every status code.",
+ "intro": "Turn raw WHOIS text into a readable summary with the expiry countdown, domain age and the meaning of each EPP status.",
+ "why": "WHOIS output is long, inconsistent between registries and full of codes such as clientTransferProhibited. This parser extracts the registrar, creation, update and expiry dates, name servers and statuses from pasted text (domain or IP records), calculates domain age and days to expiry and explains each status: which are normal locks, which mean the domain does not resolve (hold, redemption, pending delete).\n\nThe page cannot query WHOIS servers, so run `whois example.com` or use a lookup site and paste the result. Registries format fields differently and modern records hide registrant data, so a missing field may exist in the raw text. Set the \"today\" option to check how a record looked on another date.",
+ "howTo": [
+  "Run whois (or copy a lookup result) and paste the text.",
+  "Optionally set a fixed date for the age and expiry calculation.",
+  "Read the summary, the status explanations and the checks at the bottom."
+ ],
+ "faq": [
+  {
+   "q": "Does this look up the domain for me?",
+   "a": "No. A web page cannot reach WHOIS servers. Paste a record you obtained yourself."
+  },
+  {
+   "q": "What does clientTransferProhibited mean?",
+   "a": "The registrar has locked the domain against transfers. It is normal and recommended."
+  },
+  {
+   "q": "Why is the registrant hidden?",
+   "a": "Since GDPR most registries redact personal data. Contact the registrar abuse address for issues."
+  }
+ ],
+ "related": [
+  "dig-nslookup-output-analyzer",
+  "dns-soa-dnssec-inspector",
+  "dns-record-generator",
+  "email-header-analyzer",
+  "ip-address-offline-lookup"
+ ],
+ "keywords": [
+  "whois parser",
+  "domain expiry checker",
+  "epp status codes"
+ ]
+}

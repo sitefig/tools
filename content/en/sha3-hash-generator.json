@@ -1,0 +1,45 @@
+{
+ "id": "sha3-hash-generator",
+ "seoTitle": "Free SHA-3, Keccak-256 and SHAKE Hash Generator",
+ "metaDescription": "Compute SHA3-224/256/384/512, Keccak-256/512 and SHAKE128/256 hashes from text or hex bytes in your browser. Free, nothing is uploaded.",
+ "intro": "Computes SHA3-224, 256, 384 and 512, Keccak-256 and Keccak-512 (the pre-standard padding used by Ethereum), and SHAKE128 and SHAKE256 with a chosen output length, from text or hex bytes.",
+ "why": "SHA-3 is the newer NIST hash standard, but browsers do not provide it in Web Crypto, so common online hash tools skip it or hide it. Developers still meet it: Ethereum uses Keccak-256, which differs from standard SHA3-256 only in padding and so gives a completely different digest. People mix them up and wonder why a hash does not match a contract. This tool shows all variants side by side, plus the SHAKE extendable-output functions with an output length you choose. The Keccak permutation is written in plain JavaScript, so it works anywhere but is slow for megabytes of data. It is meant for text, test vectors and short inputs. Hashing happens in your browser; nothing is uploaded.",
+ "howTo": [
+  "Type or paste the input, and choose whether it is UTF-8 text or hex bytes.",
+  "Leave \"Show all algorithms\" on, or turn it off and pick one algorithm. Set the SHAKE output length if needed.",
+  "Copy the digest you need, in lower or upper-case hex."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between SHA3-256 and Keccak-256?",
+   "a": "They use the same core function but different padding, so they produce different digests for the same input. Ethereum uses Keccak-256, whereas NIST standardised SHA3-256."
+  },
+  {
+   "q": "What are SHAKE128 and SHAKE256?",
+   "a": "Extendable-output functions: instead of a fixed length, you ask for as many bytes as you need. The tool lets you set the output length in bytes."
+  },
+  {
+   "q": "Can I hash binary data?",
+   "a": "Yes. Choose hex bytes as the input type and enter the bytes as hex. Text input is encoded as UTF-8 first."
+  },
+  {
+   "q": "Is it fast enough for big files?",
+   "a": "No. It is pure JavaScript, which is fine for text and test vectors but slow for megabytes. Use a native tool for large files."
+  }
+ ],
+ "related": [
+  "hash-generator",
+  "ethereum-keccak256-hasher",
+  "blake2-hash",
+  "hmac-generator",
+  "file-hash",
+  "blake3-hash"
+ ],
+ "keywords": [
+  "sha3 hash generator",
+  "keccak-256 online",
+  "shake128 shake256 calculator",
+  "free sha3-256 tool",
+  "sha3 vs keccak"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "dataviz-palette-builder",
+ "seoTitle": "Data Viz Palette Builder: Color-Blind-Safe Chart Colors",
+ "metaDescription": "Build categorical, sequential or diverging chart palettes and check distances under protanopia, deuteranopia and tritanopia. Free, local.",
+ "intro": "Generates a chart palette of the type and size you choose and reports the closest colour pair under normal vision and three colour vision deficiencies.",
+ "why": "Chart colours must stay apart for everyone. Categorical palettes are chosen from a candidate set by picking, one at a time, the colour farthest from those already chosen, across all four views. Sequential palettes step lightness at a fixed hue. Diverging palettes use two hues meeting at a light middle.\n\nDistances are OKLab differences times 100, using the Machado 2009 simulation at full severity. The review threshold of 8 is a rule of thumb. Add labels or patterns for important series.",
+ "howTo": [
+  "Choose Categorical, Sequential or Diverging and the number of colours.",
+  "Set hues for sequential and diverging palettes.",
+  "Run and read the distance check.",
+  "Copy the JavaScript array or CSS variables."
+ ],
+ "faq": [
+  {
+   "q": "Is the result guaranteed accessible?",
+   "a": "No. It is a heuristic. Test with real users where it matters."
+  },
+  {
+   "q": "How many categories can I use?",
+   "a": "Up to 12, but beyond 6 or 7 colours become hard to tell apart."
+  },
+  {
+   "q": "Why a greedy search?",
+   "a": "It is simple and fast and gives well-spread colours."
+  },
+  {
+   "q": "What about greyscale printing?",
+   "a": "Sequential palettes vary lightness, so they survive it. Categorical ones may not."
+  }
+ ],
+ "related": [
+  "color-blindness-simulator",
+  "csv-to-chart",
+  "accessible-palette-generator",
+  "palette-contrast-matrix",
+  "tailwind-v4-color-palette",
+  "palette-exporter"
+ ],
+ "keywords": [
+  "colorblind safe palette",
+  "chart color palette generator",
+  "categorical palette",
+  "diverging palette"
+ ]
+}

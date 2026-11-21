@@ -1,0 +1,39 @@
+{
+ "id": "equity-dilution-calculator",
+ "seoTitle": "Equity Dilution Calculator Across Funding Rounds",
+ "metaDescription": "Follow your ownership through several rounds from investment, pre-money and option pool top-ups, with stake value. Free, private.",
+ "intro": "Shows how your percentage shrinks round by round as new investors and option pool top-ups come in.",
+ "why": "Each round gives new shares to investors, so existing holders own a smaller part of a bigger company. The investor share is investment over post-money, and an option pool top-up taken before the round dilutes everyone but the new investor.\n\nList rounds as name, investment, pre-money and optional pool percentage. The tool multiplies the share you keep each round. It does not model SAFEs, notes, preferences or anti-dilution, which can change the outcome.",
+ "howTo": [
+  "Enter your starting ownership.",
+  "Add one round per line.",
+  "Read ownership and stake value after each round."
+ ],
+ "faq": [
+  {
+   "q": "Why is the pool top-up included?",
+   "a": "Investors often require it before the round, which dilutes existing holders."
+  },
+  {
+   "q": "Does it include SAFEs?",
+   "a": "No. Use the SAFE calculator for one SAFE."
+  },
+  {
+   "q": "Is the stake value a payout?",
+   "a": "No. It is a paper value at the round price, not what you would get on sale."
+  }
+ ],
+ "related": [
+  "cap-table-round-simulator",
+  "safe-conversion-calculator",
+  "pre-post-money-valuation-calculator",
+  "vesting-schedule-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "equity dilution calculator",
+  "founder dilution",
+  "funding round ownership"
+ ]
+}

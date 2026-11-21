@@ -1,0 +1,45 @@
+{
+ "id": "pcre-regex-tester",
+ "seoTitle": "PCRE Regex Tester Online: Lookbehind, Recursion, Free",
+ "metaDescription": "Test PCRE2 patterns in your browser with a hand-written engine: named groups, lookbehind, possessive quantifiers, recursion, conditionals. Free, offline.",
+ "intro": "Runs a PCRE2-style pattern against your text and lists every match with its offsets, capture groups and named groups, plus an optional substitution using PCRE2 replacement syntax.",
+ "why": "The regex tester most sites offer uses the JavaScript engine, which lacks several PCRE features that PHP, grep -P, nginx, Apache and many editors rely on: possessive quantifiers, atomic groups, recursion, conditionals, \\K and variable alternatives in lookbehind. Pasting a PCRE pattern into a JavaScript tester then gives misleading answers.\n\nThis page contains its own backtracking matcher written for the PCRE2 syntax. It was compared with the real PCRE2 10.42 library on tens of thousands of generated pattern and subject pairs, and the results agreed except where noted below. It is still not PCRE2: there is no JIT, no (*VERB) control verbs, no branch reset groups, no \\G, \\X or Unicode properties beyond what the browser provides, and no callouts. Matching works on code points, like PCRE2 in UTF mode. A step limit stops catastrophic patterns.",
+ "howTo": [
+  "Type or paste the pattern without delimiters in the first box.",
+  "Paste the text to search in the second box and tick the flags you need.",
+  "Read the match list: each match shows its code point range and every group.",
+  "Optionally enter a replacement such as $2/${year} to preview a substitution."
+ ],
+ "faq": [
+  {
+   "q": "Which PCRE features are supported?",
+   "a": "Character classes and POSIX classes, \\d \\w \\s \\h \\v \\R \\N, \\p{..} through the browser, anchors \\A \\z \\Z \\b \\B, greedy, lazy and possessive quantifiers, capture, named, non-capturing and atomic groups, lookahead, lookbehind (fixed length per top-level branch), backreferences \\1 \\g{-1} \\k<name>, conditionals, recursion (?R) (?1) (?&name), inline flags and \\Q..\\E."
+  },
+  {
+   "q": "What is not supported?",
+   "a": "Control verbs such as (*SKIP), branch reset groups (?|...), \\G, \\X, callouts, \\K inside lookarounds (PCRE2 forbids it too), unicode escapes in identifiers, and variable-length lookbehind (PCRE2 10.43 and later). Unsupported syntax gives an error instead of a wrong answer."
+  },
+  {
+   "q": "How was it checked?",
+   "a": "About 9,000 random pattern and subject cases per run were generated and compared with PCRE2 10.42 through a small C program, over many runs. Match positions and groups agreed. One known difference remains: \\K inside a repeated atomic group can report a different start."
+  },
+  {
+   "q": "Are my patterns sent anywhere?",
+   "a": "No. The matcher runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "regex-tester",
+  "python-re-regex-tester",
+  "regex-cheatsheet",
+  "regex-explainer",
+  "regex-to-code",
+  "redos-checker"
+ ],
+ "keywords": [
+  "pcre regex tester",
+  "pcre2 online",
+  "regex lookbehind possessive",
+  "test pcre pattern"
+ ]
+}

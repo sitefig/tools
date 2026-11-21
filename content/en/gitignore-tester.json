@@ -1,0 +1,45 @@
+{
+ "id": "gitignore-tester",
+ "seoTitle": "Free .gitignore Pattern Tester - Which Rule Matches",
+ "metaDescription": "Test which paths a .gitignore ignores and which line decides it, with negation, anchored patterns, ** wildcards and last-match-wins. Free, in browser.",
+ "intro": "Tests which paths a .gitignore ignores and which line decides each result. It supports comments, negation, directory-only patterns, anchors, *, ?, character ranges, ** wildcards and last-match-wins.",
+ "why": ".gitignore rules look simple until one does not do what you expect. A file stays tracked, a negation is ignored, or a pattern matches more than you meant. The usual way to find out is to commit and run git status, or git check-ignore on a real checkout. This tool lets you paste the file and a list of paths and see, for each one, whether it is ignored and which line decided it. It follows Git's rules: later lines win, a trailing slash means a directory, a leading slash anchors the pattern, ** crosses directories, and a file inside an ignored directory cannot be re-included. It checks a single .gitignore, without nested files or global excludes. It runs in your browser.",
+ "howTo": [
+  "Paste the contents of your .gitignore into the first box.",
+  "Paste the paths to test into the second box, one per line, relative to the repository root. End directories with a slash.",
+  "Read which paths are ignored and which rule decided each result."
+ ],
+ "faq": [
+  {
+   "q": "Which rules does it support?",
+   "a": "Comments, blank lines, negation with !, directory-only patterns with a trailing slash, anchored patterns, *, ?, character ranges and ** wildcards, with the last matching line winning."
+  },
+  {
+   "q": "Why can't I re-include a file in an ignored directory?",
+   "a": "Git does not look inside a directory that is ignored, so a negation for a file within it has no effect. Re-include the directory itself first."
+  },
+  {
+   "q": "What does it not cover?",
+   "a": "Nested .gitignore files, the global excludes file, .git/info/exclude and files that are already tracked, which Git keeps tracking even if they match a rule."
+  },
+  {
+   "q": "How do I mark a path as a directory?",
+   "a": "End the path with a slash, for example build/. Paths without a trailing slash are treated as files, which matters because directory-only patterns match only paths marked as directories."
+  }
+ ],
+ "related": [
+  "gitignore-generator",
+  "git-command-builder",
+  "regex-tester",
+  "dockerignore-generator",
+  "find-replace",
+  "text-diff"
+ ],
+ "keywords": [
+  "gitignore tester",
+  "test gitignore patterns online",
+  "gitignore checker which rule matches",
+  "free gitignore validator",
+  "git check-ignore online"
+ ]
+}

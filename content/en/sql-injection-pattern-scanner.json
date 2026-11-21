@@ -1,0 +1,45 @@
+{
+  "id": "sql-injection-pattern-scanner",
+  "seoTitle": "SQL Injection Pattern Scanner for Logs and Inputs",
+  "metaDescription": "Scan access-log lines or form values for SQL injection signatures such as tautologies, UNION SELECT, time-based and error-based payloads, with URL-decoding.",
+  "intro": "Find suspicious requests in a log excerpt and see which signature each one matched.",
+  "why": "Each line is checked as written and after URL-decoding (up to twice) against signatures for tautologies (' OR 1=1), UNION SELECT, stacked statements, sleep and benchmark calls, schema enumeration, error-based functions, comment terminators, command and file access, hex or CHAR() payloads and generic SQL keywords. Hits are ranked high, medium or low.\n\nA match means the request looked like an attack, not that it worked. Check response codes and sizes, then fix the root cause with parameterised queries; filters and WAF rules are a second layer. Obfuscated or novel payloads will be missed.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste log lines or input values, one per line.",
+    "Run the scan.",
+    "Review high-severity lines first, including the decoded view.",
+    "Check whether the endpoint uses parameterised queries."
+  ],
+  "faq": [
+    {
+      "q": "Can it prove an attack succeeded?",
+      "a": "No. It only matches signatures; look at the response and database logs."
+    },
+    {
+      "q": "Why are there false positives?",
+      "a": "Legitimate text such as \"select a size from the list\" can match keyword rules, which is why those are marked low."
+    },
+    {
+      "q": "What fixes SQL injection?",
+      "a": "Prepared statements with bound parameters, least-privilege database accounts and input validation."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "code-security-scanner",
+    "prompt-injection-scanner",
+    "sql-variable-inliner",
+    "secret-detector-redactor",
+    "log-privacy-workbench",
+    "url-decode"
+  ],
+  "keywords": [
+    "sql injection detector",
+    "sqli log scanner",
+    "detect union select",
+    "web attack patterns"
+  ]
+}

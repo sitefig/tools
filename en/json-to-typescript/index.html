@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free JSON to TypeScript Interface Generator | Free Tools</title>
+<meta name="description" content="Free online JSON to TypeScript generator. Create interfaces or types from a JSON sample, with array merging and optional keys. Runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/json-to-typescript/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/json-to-typescript/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/json-to-typescript/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free JSON to TypeScript Interface Generator | Free Tools">
+<meta property="og:description" content="Free online JSON to TypeScript generator. Create interfaces or types from a JSON sample, with array merging and optional keys. Runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/json-to-typescript/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free JSON to TypeScript Interface Generator | Free Tools">
+<meta name="twitter:description" content="Free online JSON to TypeScript generator. Create interfaces or types from a JSON sample, with array merging and optional keys. Runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"JSON to TypeScript","url":"https://tools.sitefig.net/en/json-to-typescript/","description":"Free online JSON to TypeScript generator. Create interfaces or types from a JSON sample, with array merging and optional keys. Runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste a representative JSON sample into the input box.","Enter a root name such as User or ApiResponse.","Choose interface or type, and keep Mark missing keys optional ticked if you want that.","Copy the generated declarations into your project."],"keywords":"json to typescript, json to typescript interface, convert json to ts types, free json to typescript generator, typescript interface from json, json to ts online","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"JSON","item":"https://tools.sitefig.net/en/#json"},{"@type":"ListItem","position":3,"name":"JSON to TypeScript","item":"https://tools.sitefig.net/en/json-to-typescript/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does it decide a field is optional?","acceptedAnswer":{"@type":"Answer","text":"When you merge array items and a key is present in some but not all, it is marked optional with a question mark. A single object has no such information, so all its keys are required."}},{"@type":"Question","name":"What happens with null values?","acceptedAnswer":{"@type":"Answer","text":"A null in the sample becomes the type null. If the same field is a string elsewhere in an array, it becomes string | null. Check these against what your API really allows."}},{"@type":"Question","name":"Is one sample enough?","acceptedAnswer":{"@type":"Answer","text":"It is enough for a first draft, but types come from only what the sample shows. Rare fields, other number formats and extra variants will be missed, so use several items or the API schema when possible."}},{"@type":"Question","name":"How are awkward key names handled?","acceptedAnswer":{"@type":"Answer","text":"Keys that are not valid identifiers, such as my-key, are quoted in the output. Nested object type names are built from the key in PascalCase and made unique."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#json">JSON</a></li><li><span aria-current="page">JSON to TypeScript</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>JSON to TypeScript</h1>
+<p class="lede">Generate TypeScript interfaces or type aliases from a JSON sample. Array items are merged into one shape, and keys missing from some items become optional.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="json-to-typescript" data-module="data"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>When you start using a new API, the quickest way to understand it is to look at a real response, but typing that response out as interfaces is dull and error-prone. Doing it by hand also means you have to notice which fields appear only sometimes.</p>
+<p>Paste a sample and the tool infers a type for each value, names nested objects from their keys, and merges all items in an array into one type. If one order has a gift field and another does not, gift is marked optional. You can choose interface or type, and set the root name. The result is a starting point from a single sample, so review it against your API documentation. Nothing is uploaded; inference runs locally.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste a representative JSON sample into the input box.</li><li>Enter a root name such as User or ApiResponse.</li><li>Choose interface or type, and keep Mark missing keys optional ticked if you want that.</li><li>Copy the generated declarations into your project.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How does it decide a field is optional?</summary><p>When you merge array items and a key is present in some but not all, it is marked optional with a question mark. A single object has no such information, so all its keys are required.</p></details>
+<details><summary>What happens with null values?</summary><p>A null in the sample becomes the type null. If the same field is a string elsewhere in an array, it becomes string | null. Check these against what your API really allows.</p></details>
+<details><summary>Is one sample enough?</summary><p>It is enough for a first draft, but types come from only what the sample shows. Rare fields, other number formats and extra variants will be missed, so use several items or the API schema when possible.</p></details>
+<details><summary>How are awkward key names handled?</summary><p>Keys that are not valid identifiers, such as my-key, are quoted in the output. Nested object type names are built from the key in PascalCase and made unique.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/json-to-zod/"><span class="link-card__title">JSON to Zod Schema</span><span class="link-card__desc">Generate a Zod schema (and inferred type) from a JSON sample.</span></a></li><li><a class="link-card" href="/en/json-to-go/"><span class="link-card__title">JSON to Go Struct</span><span class="link-card__desc">Generate Go structs with json tags from a JSON sample.</span></a></li><li><a class="link-card" href="/en/json-schema-generator/"><span class="link-card__title">JSON Schema Generator</span><span class="link-card__desc">Infer a draft-07 JSON Schema from a sample document, with optional string format detection.</span></a></li><li><a class="link-card" href="/en/typescript-to-json-schema/"><span class="link-card__title">TypeScript Interface to JSON Schema</span><span class="link-card__desc">Convert TypeScript interfaces, type aliases and enums to JSON Schema draft-07 (definitions + $ref). Supports optional props, unions, literals, tuples, arrays, Record, Date, index signatures, extends/intersections and JSDoc descriptions. Not supported: conditional/mapped types, keyof/typeof and most utility generics.</span></a></li><li><a class="link-card" href="/en/json-to-typescript-type-guards/"><span class="link-card__title">JSON to TypeScript Type Guards</span><span class="link-card__desc">From sample JSON, generate TypeScript interfaces plus runtime type-guard functions (isRoot(value): value is Root) that check every property, nested object, array element, optional and nullable field. Handy for validating API responses without a schema library.</span></a></li><li><a class="link-card" href="/en/json-to-pydantic/"><span class="link-card__title">JSON to Pydantic Models</span><span class="link-card__desc">Generate Pydantic v2 BaseModel classes from sample JSON: nested classes, List/Optional/Union typing, datetime/date/UUID detection, snake_case attributes with Field(alias=...) when the JSON key is camelCase or a Python keyword. Arrays of objects are merged to find optional fields.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

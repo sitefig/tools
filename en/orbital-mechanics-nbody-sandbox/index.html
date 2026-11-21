@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Orbital Mechanics Sandbox: N-Body Gravity Simulation with Orbit Trails | Free Tools</title>
+<meta name="description" content="Enter bodies with mass, position and velocity and watch their orbits under mutual gravity as trails. Free leapfrog integrator.">
+<link rel="canonical" href="https://tools.sitefig.net/en/orbital-mechanics-nbody-sandbox/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/orbital-mechanics-nbody-sandbox/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/orbital-mechanics-nbody-sandbox/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Orbital Mechanics Sandbox: N-Body Gravity Simulation with Orbit Trails | Free Tools">
+<meta property="og:description" content="Enter bodies with mass, position and velocity and watch their orbits under mutual gravity as trails. Free leapfrog integrator.">
+<meta property="og:url" content="https://tools.sitefig.net/en/orbital-mechanics-nbody-sandbox/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Orbital Mechanics Sandbox: N-Body Gravity Simulation with Orbit Trails | Free Tools">
+<meta name="twitter:description" content="Enter bodies with mass, position and velocity and watch their orbits under mutual gravity as trails. Free leapfrog integrator.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Orbital Mechanics Sandbox: N-Body Gravity Simulation with Orbit Trails","url":"https://tools.sitefig.net/en/orbital-mechanics-nbody-sandbox/","description":"Enter bodies with mass, position and velocity and watch their orbits under mutual gravity as trails. Free leapfrog integrator.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter one body per line: name, mass, x, y, vx, vy.","Choose AU/solar mass/year units or arbitrary units with G = 1.","Set the time step and total time.","Read the final state and look at the trails."],"keywords":"orbit simulator, n-body simulation, gravity simulation online, planetary orbit sandbox","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Math & Science","item":"https://tools.sitefig.net/en/#math-and-science"},{"@type":"ListItem","position":3,"name":"Orbital Mechanics Sandbox: N-Body Gravity Simulation with Orbit Trails","item":"https://tools.sitefig.net/en/orbital-mechanics-nbody-sandbox/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why does G equal 4 pi squared?","acceptedAnswer":{"@type":"Answer","text":"In AU, solar masses and years that makes a circular orbit at 1 AU last one year, an idealisation."}},{"@type":"Question","name":"Is it 3D?","acceptedAnswer":{"@type":"Answer","text":"No, two dimensions only."}},{"@type":"Question","name":"How do I know the step is small enough?","acceptedAnswer":{"@type":"Answer","text":"Halve it and compare the final positions."}},{"@type":"Question","name":"Can bodies collide?","acceptedAnswer":{"@type":"Answer","text":"There is no collision handling; a very close pass needs a tiny step."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#math-and-science">Math &amp; Science</a></li><li><span aria-current="page">Orbital Mechanics Sandbox: N-Body Gravity Simulation with Orbit Trails</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Orbital Mechanics Sandbox: N-Body Gravity Simulation with Orbit Trails</h1>
+<p class="lede">Integrates the motion of up to ten bodies under mutual gravity in two dimensions and draws their orbit trails and final state.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="orbital-mechanics-nbody-sandbox" data-module="new22"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Orbits are easy to describe and hard to picture. Enter a Sun, an Earth and a Mars in astronomical units, solar masses and years, and the trails show their ellipses. Change a speed and see how the orbit turns from circle to ellipse to escape.</p>
+<p>The integrator is velocity Verlet (leapfrog), which keeps energy and angular momentum from drifting; both drifts are printed. The result was compared with a high-order solver, and it converges as the time step is reduced. Close encounters need a smaller step. The sample masses use the planet to Sun mass ratios from NASA data, and the speeds are circular-orbit values.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter one body per line: name, mass, x, y, vx, vy.</li><li>Choose AU/solar mass/year units or arbitrary units with G = 1.</li><li>Set the time step and total time.</li><li>Read the final state and look at the trails.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why does G equal 4 pi squared?</summary><p>In AU, solar masses and years that makes a circular orbit at 1 AU last one year, an idealisation.</p></details>
+<details><summary>Is it 3D?</summary><p>No, two dimensions only.</p></details>
+<details><summary>How do I know the step is small enough?</summary><p>Halve it and compare the final positions.</p></details>
+<details><summary>Can bodies collide?</summary><p>There is no collision handling; a very close pass needs a tiny step.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/planet-size-comparator/"><span class="link-card__title">Planet and Moon Size Comparator (True Relative Scale)</span><span class="link-card__desc">Pick planets, the Moon, Pluto or the Sun and see them side by side at true relative size with diameters and size ratios.</span></a></li><li><a class="link-card" href="/en/projectile-motion-calculator/"><span class="link-card__title">Projectile Motion Calculator: Range, Height, Flight Time and Path</span><span class="link-card__desc">Set launch speed, angle and height for Earth, Moon or other planets and get range, maximum height, time of flight, impact speed and the path.</span></a></li><li><a class="link-card" href="/en/pendulum-simulator-period/"><span class="link-card__title">Pendulum Simulator: Simple and Double Pendulum with Exact Period</span><span class="link-card__desc">Simulate a simple or double pendulum from length, gravity and starting angle, and plot the angles over time with the period.</span></a></li><li><a class="link-card" href="/en/function-grapher-roots/"><span class="link-card__title">Function Grapher with Roots and Intersections</span><span class="link-card__desc">Plot one or more functions of x, with the roots and the points where two curves cross marked and listed.</span></a></li><li><a class="link-card" href="/en/wave-interference-superposition/"><span class="link-card__title">Wave Interference Simulator: Superposition of Two Sine Waves</span><span class="link-card__desc">Set amplitude, frequency and phase of two waves and see each wave and their sum, with constructive or destructive interference and beats.</span></a></li><li><a class="link-card" href="/en/game-of-life-simulator/"><span class="link-card__title">Conway's Game of Life Simulator with Pattern Detection</span><span class="link-card__desc">Draw a starting grid as text, run any number of generations and see the population, snapshots and whether it dies out or settles into a cycle.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

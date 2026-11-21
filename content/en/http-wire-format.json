@@ -1,0 +1,43 @@
+{
+ "id": "http-wire-format",
+ "seoTitle": "Free HTTP Raw Message Parser & Builder",
+ "metaDescription": "Parse a raw HTTP/1.x request or response into JSON, or build a correctly framed message with CRLF and Content-Length. Free, in your browser.",
+ "intro": "Paste a raw HTTP/1.x request or response and get structured JSON with headers, query string, cookies and decoded body, or turn JSON back into a correctly framed raw message.",
+ "why": "When a proxy rewrites a header or a firewall blocks a request, the raw bytes are what matter, not the tidy view from a browser. Reading them by eye is error-prone: the line endings, the blank line before the body, a chunked body or a Content-Length that does not match are exactly where bugs and smuggling cases hide.\n\nThis tool parses the message into fields, decodes chunked transfer encoding, checks the declared length against the body and picks out cookies and Basic credentials. In the other direction it builds a message with CRLF line endings, a Host header and the right Content-Length, which suits hand-written test fixtures. Parsing is done locally, so captured traffic stays on your machine.",
+ "howTo": [
+  "Paste a raw HTTP request or response, or a JSON description of one.",
+  "Choose raw to JSON to parse the message, or JSON to raw to build one.",
+  "Read the parsed fields, including headers, query string, cookies and any length warnings.",
+  "Copy the JSON or the framed raw message into your test, ticket or proxy rule."
+ ],
+ "faq": [
+  {
+   "q": "Does it support HTTP/2 or HTTP/3?",
+   "a": "No, only the text-based HTTP/1.x format. HTTP/2 and HTTP/3 use binary frames, so a message copied from them would need to be written out in HTTP/1.1 form first."
+  },
+  {
+   "q": "Why does it check Content-Length?",
+   "a": "A mismatch between the declared length and the actual body is a classic source of truncated requests and request smuggling issues. The tool flags it so you can see where the two disagree."
+  },
+  {
+   "q": "Is it safe to paste real traffic?",
+   "a": "Parsing runs in your browser and nothing is uploaded. Even so, captured requests may contain tokens, cookies and passwords, so redact secrets before you share the output with others."
+  }
+ ],
+ "related": [
+  "http-headers-to-json",
+  "http-headers-analyzer",
+  "cors-preflight-inspector",
+  "http-methods-headers",
+  "curl-builder",
+  "har-analyzer"
+ ],
+ "keywords": [
+  "http raw request parser",
+  "parse raw http message",
+  "http wire format",
+  "raw http to json",
+  "build raw http request online",
+  "free http message parser"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "canonical-vs-crawled-url-mismatch",
+ "seoTitle": "Canonical vs Crawled URLs: Bot Hits on Non-Canonical Pages",
+ "metaDescription": "Find URL variants that declare another canonical but still receive bot hits, using a crawl export and your access log. Free, in your browser.",
+ "intro": "Matches log requests against url,canonical pairs from a crawl export and shows how many hits went to non-canonical URLs.",
+ "why": "A canonical tag is a hint. Crawlers still fetch the variants, and if most of their hits go to URLs that point elsewhere, the signals on your site may be mixed: internal links, sitemaps or redirects still lead to the variants.\n\nPaste the address and canonical columns from a crawl export and your access log. The tool lists the non-canonical URLs that received hits and their declared canonical. It matches by path and query, so parameter variants show up as their own rows.",
+ "howTo": [
+  "Export your crawl with the URL and its canonical URL.",
+  "Paste the pairs as url,canonical lines in the second box.",
+  "Paste access log lines in the first box.",
+  "Fix internal links and sitemap entries that point to the top variants."
+ ],
+ "faq": [
+  {
+   "q": "Do crawlers ignore canonicals?",
+   "a": "No, but they still request the variants to read them. Many hits on variants mean the variants are easy to find."
+  },
+  {
+   "q": "What about URLs missing from the export?",
+   "a": "They are counted as unknown and not judged."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench."
+  }
+ ],
+ "related": [
+  "wasted-crawl-detector",
+  "url-parameter-analyzer",
+  "sitemap-noncanonical-finder",
+  "crawl-budget-waste-estimator",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer"
+ ],
+ "keywords": [
+  "canonical vs crawled urls",
+  "non canonical urls crawled by googlebot",
+  "canonical mismatch log analysis",
+  "bot hits on parameter variants"
+ ]
+}

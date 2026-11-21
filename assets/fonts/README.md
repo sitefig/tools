@@ -1,0 +1,1 @@
+Atkinson Hyperlegible Next and Atkinson Hyperlegible Mono (Braille Institute, SIL Open Font License 1.1), copied from https://sus.bot/fonts/ so these pages share Sitefig's type. Served from this origin; nothing is loaded from a third party.

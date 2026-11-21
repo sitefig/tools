@@ -1,0 +1,47 @@
+{
+ "id": "app-performance-budget-calculator",
+ "seoTitle": "Free Performance Budget Calculator for Page Weight",
+ "metaDescription": "Work out how many kilobytes your page can weigh for a target load time on slow 3G, fast 3G, 4G or Wi-Fi, with a suggested split by asset type. Free.",
+ "intro": "Pick a connection type and a target load time and get the total transfer budget in kilobytes, with a suggested split between JavaScript, images, CSS, fonts and HTML.",
+ "why": "\"Make it fast\" is not a requirement. A performance budget turns it into a number: with this connection and a five-second target, your page may weigh no more than so many kilobytes. A budget stops weight creeping up by a library at a time, and gives reviews something to measure.\n\nThis calculator takes the speed and latency of a chosen connection profile, subtracts the round trips before the first byte, and converts the remaining time into a download budget. It then suggests how to spend it across asset types. The maths is ideal-case, so real throughput is lower and your budget should be tighter. It runs locally.",
+ "howTo": [
+  "Choose a connection profile: slow-3g, slow-4g (1.6 Mbps, 150 ms; formerly called Fast 3G in DevTools), 4g or wifi.",
+  "Set the target load time in seconds.",
+  "Set the number of round trips before the first byte arrives, covering DNS, TCP, TLS and the request.",
+  "Read the total budget in KB and the suggested split by asset type."
+ ],
+ "faq": [
+  {
+   "q": "Which numbers do the connection profiles use?",
+   "a": "Slow 3G is 0.4 Mbps with 400 ms latency, fast 3G 1.6 Mbps with 150 ms, 4G 9 Mbps with 70 ms and Wi-Fi 30 Mbps with 20 ms. They are rough profiles in line with common testing presets."
+  },
+  {
+   "q": "Why does it say the target is eaten by latency?",
+   "a": "Round trips times latency already use the whole target time, leaving no time to transfer anything. Raise the target, cut round trips with a CDN or connection reuse, or choose a faster profile."
+  },
+  {
+   "q": "Is the budget compressed or uncompressed size?",
+   "a": "Compressed transfer size, as sent over the network. JavaScript also costs parse and execution time, and the tool notes roughly 3.5 times the compressed size as source."
+  },
+  {
+   "q": "Is the suggested split a rule?",
+   "a": "No. It uses 35 percent for JavaScript and images each and 10 percent for CSS, fonts and other. Adjust it to your page, and measure with real tools."
+  }
+ ],
+ "related": [
+  "bandwidth-download-time",
+  "image-compressor",
+  "image-resizer",
+  "screen-size-ppi",
+  "responsive-breakpoint-previewer",
+  "app-launch-checklist"
+ ],
+ "keywords": [
+  "performance budget calculator",
+  "page weight budget",
+  "web performance budget",
+  "free page size calculator",
+  "load time budget by connection",
+  "kb budget for 3g"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "pre-commit-config-generator",
+ "seoTitle": "Free pre-commit Config Generator Online",
+ "metaDescription": "Free online pre-commit config generator. Pick hook presets such as ruff, prettier, shellcheck and gitleaks and get a ready .pre-commit-config.yaml.",
+ "intro": "Generate a .pre-commit-config.yaml from named presets such as basic, prettier, eslint, ruff, black, shellcheck, gitleaks, hadolint, terraform, yamllint, commitlint and codespell.",
+ "why": "The pre-commit framework runs checks before each commit, catching trailing whitespace, broken YAML, leaked secrets and style problems before they reach review. Setting it up means finding each hook repository, its current revision and the right hook ids.\n\nList the presets you want, one per line, and the tool writes the repos section with the repository URL, a revision and the hook ids for each. Optional fail_fast stops at the first failure and default_install_hook_types lets you install hooks for stages other than pre-commit. The revisions in the file are examples that were current when the tool was written, so run pre-commit autoupdate after saving to move to the latest. Nothing is uploaded.",
+ "howTo": [
+  "List the presets you want, one per line, for example basic, ruff and gitleaks.",
+  "Set the install hook types and tick fail_fast if you want to stop at the first failing hook.",
+  "Copy the YAML into .pre-commit-config.yaml.",
+  "Run pre-commit autoupdate, then pre-commit install."
+ ],
+ "faq": [
+  {
+   "q": "Are the revisions up to date?",
+   "a": "Not necessarily. They are example revisions. Run pre-commit autoupdate after saving the file to bump every hook to its latest tag."
+  },
+  {
+   "q": "What does the basic preset include?",
+   "a": "Six hooks from the pre-commit-hooks repository: trailing-whitespace, end-of-file-fixer, check-yaml, check-json, check-merge-conflict and check-added-large-files. They are a common baseline for most projects."
+  },
+  {
+   "q": "What happens with a preset name the tool does not know?",
+   "a": "It reports an error and lists the known presets. For other hooks, add them to the generated file by hand from the hook repository's documentation."
+  },
+  {
+   "q": "How do I enable the hooks?",
+   "a": "Install pre-commit, then run pre-commit install in your repository. Hooks then run on every commit, and pre-commit run --all-files checks existing files."
+  }
+ ],
+ "related": [
+  "commitlint-semantic-release-generator",
+  "github-actions-generator",
+  "gitlab-ci-generator",
+  "dependabot-config-generator",
+  "editorconfig-generator",
+  "gitignore-generator"
+ ],
+ "keywords": [
+  "pre-commit config generator",
+  "pre-commit-config.yaml generator",
+  "pre-commit hooks builder",
+  "free pre-commit tool",
+  "pre-commit ruff prettier config",
+  "git pre-commit hooks setup"
+ ]
+}

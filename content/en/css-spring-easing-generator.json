@@ -1,0 +1,45 @@
+{
+  "id": "css-spring-easing-generator",
+  "seoTitle": "CSS Spring Easing Generator (linear() Function)",
+  "metaDescription": "Turn spring physics (mass, stiffness, damping, velocity) into a CSS linear() easing and a matching duration, with damping ratio and overshoot.",
+  "intro": "Get bouncy, natural animations in plain CSS without a JavaScript animation library.",
+  "why": "The generator solves the damped spring equation exactly (underdamped, critically damped and overdamped cases), samples it at the number of points you choose, finds the time to settle within 0.1% and writes a linear(...) easing and a transition ready to paste. The curve was compared with a numerical integration of the spring for several parameter sets.\n\nlinear() with many stops is supported in current browsers; older ones ignore the declaration, so keep a plain ease-out before it. Large overshoot on opacity values is clamped by the browser, so use springs for transforms.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Set mass, stiffness and damping (170 and 14 is a lively default).",
+    "Choose how many sample points.",
+    "Copy the transition line.",
+    "Add a fallback easing before it."
+  ],
+  "faq": [
+    {
+      "q": "What do the parameters mean?",
+      "a": "Stiffness pulls toward the target, damping slows oscillation, mass makes it more sluggish."
+    },
+    {
+      "q": "How many points do I need?",
+      "a": "30 to 60 gives a smooth curve; more bloats the CSS."
+    },
+    {
+      "q": "Can I get no bounce?",
+      "a": "Raise damping until the damping ratio is 1 or more."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "css-cubic-bezier",
+    "css-animation-generator",
+    "css-scroll-driven-animation-generator",
+    "css-view-transition-generator",
+    "css-clamp-generator",
+    "css-loader-generator"
+  ],
+  "keywords": [
+    "css spring animation",
+    "linear() easing",
+    "spring easing css",
+    "css bounce animation"
+  ]
+}

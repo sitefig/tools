@@ -1,0 +1,45 @@
+{
+ "id": "swimming-pace-calculator",
+ "seoTitle": "Swimming Pace Calculator (Pace per 100 m or 100 yd)",
+ "metaDescription": "Fill in two of distance, time and pace per 100 to get the third, with predicted times for common pool distances at the same pace.",
+ "intro": "Work out pace per 100 m or 100 yd and times for set distances.",
+ "why": "Fill in two of distance, time and pace per 100, and leave the third blank. The page solves it and lists predicted times at the same pace for common pool and open-water distances.\n\nIt assumes an even pace. Starts, turns and tiring are not modelled, so longer swims usually end slower than a straight multiplication.",
+ "howTo": [
+  "Choose metres or yards.",
+  "Enter two of distance, time and pace.",
+  "Leave the third blank.",
+  "Read the result and the table."
+ ],
+ "faq": [
+  {
+   "q": "What time format works?",
+   "a": "Use mm:ss or h:mm:ss, such as 1:45 or 26:15."
+  },
+  {
+   "q": "Why does my pace drop on long swims?",
+   "a": "Fatigue and technique. Treat the table as a best case."
+  },
+  {
+   "q": "Can I use yards?",
+   "a": "Yes. Pick yd and the pace is shown per 100 yards."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "running-pace-calculator",
+  "race-time-predictor",
+  "calories-burned-calculator",
+  "cycling-power-speed-calculator",
+  "heart-rate-zones",
+  "vo2-max-estimator"
+ ],
+ "keywords": [
+  "swimming pace calculator",
+  "swim pace per 100m",
+  "swim time calculator",
+  "css pace"
+ ]
+}

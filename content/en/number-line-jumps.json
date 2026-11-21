@@ -1,0 +1,45 @@
+{
+ "id": "number-line-jumps",
+ "seoTitle": "Number Line Tool: Show Addition and Subtraction as Jumps",
+ "metaDescription": "Type a problem like -3 + 5 and see each step drawn as a jump on a number line from the start to the answer. Free, for kids and teachers.",
+ "intro": "Draws a sum or difference of integers or decimals as jumps along a number line, with the start, each step and the answer marked.",
+ "why": "Negative numbers are easier when you can see them: start at -3, jump 5 to the right, land on 2. The tool draws each step as an arc, blue for adding and red for subtracting, with the start in green and the answer in black.\n\nSeveral steps are allowed, such as 2 - 7 + 4. The text under the picture lists each jump in words, so the page also works for people who cannot see the drawing. For long ranges the labels thin out automatically.",
+ "howTo": [
+  "Type a problem with plus and minus signs.",
+  "Press the run button or change the text.",
+  "Follow the arcs from the green dot to the black dot.",
+  "Read the steps in words below."
+ ],
+ "faq": [
+  {
+   "q": "Does it do multiplication?",
+   "a": "No, only addition and subtraction."
+  },
+  {
+   "q": "Can I use decimals?",
+   "a": "Yes."
+  },
+  {
+   "q": "How many steps?",
+   "a": "Up to 12 numbers."
+  },
+  {
+   "q": "Is there a screen reader description?",
+   "a": "Yes, the picture has a text description and the steps are listed in words."
+  }
+ ],
+ "related": [
+  "fraction-visualizer-pie-bar",
+  "math-worksheet-generator",
+  "multiplication-table-trainer",
+  "fraction-calculator",
+  "analog-clock-reading-trainer",
+  "scientific-calculator-degrees"
+ ],
+ "keywords": [
+  "number line tool",
+  "integer addition number line",
+  "negative numbers number line",
+  "subtraction jumps"
+ ]
+}

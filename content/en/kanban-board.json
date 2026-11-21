@@ -1,0 +1,47 @@
+{
+ "id": "kanban-board",
+ "seoTitle": "Free Kanban Board with To Do, Doing and Done",
+ "metaDescription": "A simple three-column Kanban board: add cards, move them between To do, Doing and Done, and delete them. Saved in your browser. Free, no account.",
+ "intro": "A minimal Kanban board with three columns: To do, Doing and Done. Add cards, move them left or right and delete them. The board is saved in your browser.",
+ "why": "Many personal projects do not need a full project-management suite with accounts and notifications. They need somewhere to see what is waiting, what is in progress and what is finished, so you do not hold the whole list in your head.\n\nThis board does just that. Type a card into any column and press Enter, move it between columns with the arrow buttons, or remove it with x. A count in each column heading shows how much is in play, which makes it easy to notice when too much is in Doing. Everything is saved in this browser only. There is no sharing or sync, so it suits one person on one device.",
+ "howTo": [
+  "Type a card name into the \"New card\" box under a column and press Enter or click Add.",
+  "Click \">\" to move a card to the next column, or \"<\" to move it back.",
+  "Click \"x\" to delete a card you no longer need.",
+  "Check the counts in the headings, and come back later, since the board is saved automatically."
+ ],
+ "faq": [
+  {
+   "q": "Where is the board stored?",
+   "a": "In your browser's local storage on this device. Nothing is uploaded, and the board will not appear on another device. Clearing site data, or a private window, removes it."
+  },
+  {
+   "q": "Can I rename or add columns?",
+   "a": "No. The three columns, To do, Doing and Done, are fixed. The tool is meant to stay simple."
+  },
+  {
+   "q": "Can I share the board with a team?",
+   "a": "No. There is no sync or sharing, because nothing is sent to a server. For a team, use a shared tracker, or paste a list from here into one."
+  },
+  {
+   "q": "Can I reorder cards inside a column?",
+   "a": "Not directly. New cards are added at the bottom, and moving a card to another column places it at the bottom there as well."
+  }
+ ],
+ "related": [
+  "mind-map-maker",
+  "rice-prioritization",
+  "content-calendar-generator",
+  "app-launch-checklist",
+  "pomodoro-timer",
+  "flashcards-spaced-repetition"
+ ],
+ "keywords": [
+  "kanban board online",
+  "simple kanban board free",
+  "to do doing done board",
+  "personal kanban no account",
+  "browser kanban tool",
+  "free task board"
+ ]
+}

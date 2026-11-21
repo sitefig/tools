@@ -1,0 +1,45 @@
+{
+  "id": "email-validator",
+  "seoTitle": "Email Address Validator: Syntax, Typos, Role Addresses",
+  "metaDescription": "Validate email addresses against practical RFC 5321/5322 rules, length limits and IDN, with typo suggestions for common providers. Offline.",
+  "intro": "Check a list of email addresses for syntax errors, over-long parts, bad domains and likely typos like gmial.com.",
+  "why": "The validator checks the local part (allowed characters, dots, 64-character limit), the domain (labels, hyphens, 63-character labels, TLD), total length (254), internationalised domains and the quoted-string form. Warnings flag role addresses such as admin@ or info@, plus-tag addresses and domains within two edits of popular providers.\n\nSyntax validity does not mean a mailbox exists. Confirming that needs a DNS lookup and an SMTP conversation or, better, a confirmation email, which a browser page cannot do. It also does not check for disposable-domain lists.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste addresses one per line.",
+    "Run the validator.",
+    "Fix entries marked FAIL; look at the typo hints.",
+    "Send a confirmation email to prove ownership."
+  ],
+  "faq": [
+    {
+      "q": "Can it tell if the address exists?",
+      "a": "No. Only a message to the address (or a trusted verification service) can."
+    },
+    {
+      "q": "Why accept plus addresses?",
+      "a": "They are valid and widely used, so they only get a note."
+    },
+    {
+      "q": "Are non-ASCII addresses valid?",
+      "a": "Yes under SMTPUTF8, though not every system accepts them; the tool warns."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "extract-emails-urls-numbers",
+    "iban-validator",
+    "vat-number-format-validator",
+    "luhn-validator",
+    "url-parser",
+    "dmarc-generator"
+  ],
+  "keywords": [
+    "email validator",
+    "validate email syntax",
+    "email typo checker",
+    "email format check"
+  ]
+}

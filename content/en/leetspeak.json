@@ -1,0 +1,46 @@
+{
+  "id": "leetspeak",
+  "seoTitle": "Free Leetspeak Converter: Text to 1337 5p34k",
+  "metaDescription": "Convert normal text into leetspeak at three intensities, from simple number swaps to full symbol substitutions. Free, runs in your browser.",
+  "intro": "Turns text into leetspeak by swapping letters for look-alike numbers and symbols. Choose basic, advanced or extreme to control how heavily the text is changed.",
+  "why": "Leetspeak began as a way for early online communities to dodge word filters and show off, and it has stayed popular for usernames, game tags, memes and puzzle clues. Converting a phrase by hand means remembering which digit stands for which letter and applying it consistently.\n\nThree levels cover most needs. Basic swaps a handful of vowels and common consonants for digits. Advanced covers more letters. Extreme uses multi-character symbols such as pipes and slashes, which is less readable but more elaborate. The conversion is one way and not meant to hide anything, because anyone can reverse it. It is done in your browser and the text is not uploaded.",
+  "howTo": [
+    "Type the text you want to convert.",
+    "Choose a level: basic, advanced or extreme.",
+    "Read the leetspeak version in the output.",
+    "Copy it for your username, post or puzzle."
+  ],
+  "faq": [
+    {
+      "q": "What changes at each level?",
+      "a": "Basic replaces a, e, i, o, s and t with digits. Advanced adds b, g, l and z. Extreme replaces most letters with symbol combinations, so one letter can become several characters."
+    },
+    {
+      "q": "Can I convert leetspeak back to normal text?",
+      "a": "No, this tool only converts in one direction. Many leet symbols stand for more than one letter, for example 1 can mean i or l, so a perfect reverse is not possible."
+    },
+    {
+      "q": "Is it good for hiding text or making passwords?",
+      "a": "No. Leetspeak substitutions are among the first things password crackers and filters try. Do not use it to build a password. Use a random generator for that."
+    },
+    {
+      "q": "What happens to capitals and punctuation?",
+      "a": "Letters are matched without regard to case, and the output uses the substitution only, so capitals are lost where a replacement applies. Characters with no substitution, including punctuation and spaces, stay the same."
+    }
+  ],
+  "related": [
+    "fancy-text",
+    "nato-phonetic",
+    "zalgo-text",
+    "rot13-caesar",
+    "password-generator",
+    "case-converter"
+  ],
+  "keywords": [
+    "leetspeak converter",
+    "text to leetspeak",
+    "1337 speak translator",
+    "leet speak generator",
+    "free leet converter"
+  ]
+}

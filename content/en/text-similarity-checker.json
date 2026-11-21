@@ -1,0 +1,45 @@
+{
+  "id": "text-similarity-checker",
+  "seoTitle": "Text Similarity & Duplicate Content Checker (Two Texts)",
+  "metaDescription": "Compare two texts for duplicate content: shingle overlap, cosine similarity and longest shared phrases. Local; it does not search the web.",
+  "intro": "Check how similar two pieces of text are, find the phrases they share, and judge whether one is a near-copy of the other.",
+  "why": "Both texts are lowercased and split into words. The tool reports the Jaccard similarity of word k-shingles (3 by default), how much of each text appears in the other, the cosine similarity of word counts and any shared runs of five or more words. A verdict from \"largely different\" to \"near-duplicate\" summarises the result.\n\nIt compares only what you paste, so it cannot detect plagiarism from the web. It is useful for comparing product descriptions, rewriting drafts, localised versions or old and new page copy.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste text A and text B.",
+    "Adjust the shingle size if you want a stricter or looser comparison.",
+    "Read the percentages and shared phrases.",
+    "Rewrite sections that are too close to a source."
+  ],
+  "faq": [
+    {
+      "q": "Is this a plagiarism checker?",
+      "a": "Only for two texts you provide. It does not search any database or website."
+    },
+    {
+      "q": "What is a shingle?",
+      "a": "A run of k consecutive words. Shared shingles measure copied phrasing better than shared single words."
+    },
+    {
+      "q": "How similar is too similar?",
+      "a": "Above about 60% shingle overlap is a near-duplicate; the right threshold depends on your use."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "text-diff",
+    "duplicate-words-finder",
+    "readability",
+    "tfidf",
+    "content-gap",
+    "text-summarizer"
+  ],
+  "keywords": [
+    "duplicate content checker",
+    "text similarity",
+    "compare two texts",
+    "plagiarism overlap"
+  ]
+}

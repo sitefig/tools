@@ -1,0 +1,45 @@
+{
+  "id": "csv-transpose",
+  "seoTitle": "CSV / TSV Transposer: Swap Rows and Columns",
+  "metaDescription": "Transpose a table so rows become columns and columns become rows. Handles quoted fields, ragged rows and comma, tab, semicolon or pipe delimiters.",
+  "intro": "Flip a table on its side for spreadsheets, reports or data import.",
+  "why": "The input is parsed as CSV with quoted fields and embedded commas or line breaks, the delimiter is detected (or chosen), shorter rows are padded with empty cells and the table is written back transposed, quoting cells that need it.\n\nFor large datasets use a spreadsheet or a command-line tool; this page works in memory in your browser.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the table.",
+    "Choose the delimiter or leave on auto.",
+    "Run it.",
+    "Copy the transposed table."
+  ],
+  "faq": [
+    {
+      "q": "Does the header move?",
+      "a": "The first row becomes the first column, like every other row."
+    },
+    {
+      "q": "What if rows have different lengths?",
+      "a": "Missing cells are filled with empty values."
+    },
+    {
+      "q": "Is the data uploaded?",
+      "a": "No."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "csv-viewer",
+    "csv-to-json",
+    "csv-column-profiler",
+    "csv-to-markdown-table",
+    "json-to-csv",
+    "csv-to-chart"
+  ],
+  "keywords": [
+    "csv transpose",
+    "swap rows and columns",
+    "transpose table",
+    "tsv transposer"
+  ]
+}

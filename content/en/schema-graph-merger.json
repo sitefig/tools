@@ -1,0 +1,45 @@
+{
+ "id": "schema-graph-merger",
+ "seoTitle": "Schema @graph Merger: Combine JSON-LD Blocks Into One",
+ "metaDescription": "Merge several JSON-LD blocks into one @graph with consistent @id values. Duplicate entities are combined and nested copies become references.",
+ "intro": "Combines separate JSON-LD blocks into a single @graph, assigns @id values from a base URL and merges duplicates of the same entity.",
+ "why": "Plugins and themes each add their own JSON-LD, and the same Organization appears three times with different details. This tool puts them in one @graph. Nodes with the same @id, or the same type and URL or name, are merged; lists are joined, objects merged, and when two blocks disagree on a single value the first is kept and the conflict is listed.\n\nWith a base URL, nodes without an @id get one like https://example.com/#organization, and nested copies of an entity are replaced by a reference to it.",
+ "howTo": [
+  "Paste all the blocks or the page HTML.",
+  "Enter your site's base URL.",
+  "Read the notes about merged nodes and conflicts.",
+  "Replace the old scripts with the merged one."
+ ],
+ "faq": [
+  {
+   "q": "What decides that two nodes are the same?",
+   "a": "The same @id, or the same first @type with the same URL or name."
+  },
+  {
+   "q": "What about conflicts?",
+   "a": "The first value is kept and each conflict is listed for review."
+  },
+  {
+   "q": "Are properties lost?",
+   "a": "Properties from all copies are kept unless they conflict."
+  },
+  {
+   "q": "Should I check the result?",
+   "a": "Yes, run the syntax validator and the eligibility checker on it."
+  }
+ ],
+ "related": [
+  "schema-graph-visualizer",
+  "structured-data-extractor",
+  "jsonld-syntax-validator",
+  "schema-markup-diff",
+  "schema-property-checker",
+  "schema-generator"
+ ],
+ "keywords": [
+  "merge json-ld",
+  "schema graph merger",
+  "combine structured data blocks",
+  "json-ld @graph"
+ ]
+}

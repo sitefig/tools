@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free CSV Column Extractor - Pick or Drop Columns | Free Tools</title>
+<meta name="description" content="Keep, reorder or drop CSV columns by header name or position, remove duplicates and export CSV, plain lines or JSON. Free and runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/csv-column-extractor/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/csv-column-extractor/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/csv-column-extractor/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free CSV Column Extractor - Pick or Drop Columns | Free Tools">
+<meta property="og:description" content="Keep, reorder or drop CSV columns by header name or position, remove duplicates and export CSV, plain lines or JSON. Free and runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/csv-column-extractor/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free CSV Column Extractor - Pick or Drop Columns | Free Tools">
+<meta name="twitter:description" content="Keep, reorder or drop CSV columns by header name or position, remove duplicates and export CSV, plain lines or JSON. Free and runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"CSV Column Extractor","url":"https://tools.sitefig.net/en/csv-column-extractor/","description":"Keep, reorder or drop CSV columns by header name or position, remove duplicates and export CSV, plain lines or JSON. Free and runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your CSV and set the delimiter (comma, semicolon, tab or pipe).","Type the columns as names or numbers, separated by commas. Ranges such as 2-4 work. Choose keep or drop.","Tick duplicate removal if needed, choose CSV, one value per line or JSON, and copy the result."],"keywords":"csv column extractor, extract columns from csv, remove columns from csv online, free csv column picker, csv select columns","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"CSV","item":"https://tools.sitefig.net/en/#csv"},{"@type":"ListItem","position":3,"name":"CSV Column Extractor","item":"https://tools.sitefig.net/en/csv-column-extractor/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I mix names and numbers?","acceptedAnswer":{"@type":"Answer","text":"Yes. Each item is first matched against the header names, then read as a range like 2-4, then as a 1-based column number. The order you type is the order of the output columns when you keep them."}},{"@type":"Question","name":"What if there is no header row?","acceptedAnswer":{"@type":"Answer","text":"Untick \"First row is header\". Columns are then numbered 1, 2, 3 and so on, and all rows are treated as data. JSON output then uses those numbers as keys."}},{"@type":"Question","name":"How are quotes and line breaks handled?","acceptedAnswer":{"@type":"Answer","text":"The parser follows the usual CSV quoting rules: quoted fields, doubled quotes and line breaks inside quotes are read correctly, and output cells are quoted again where needed. An unterminated quote gives an error."}},{"@type":"Question","name":"What does one value per line do with several columns?","acceptedAnswer":{"@type":"Answer","text":"When more than one column is selected, the values of each row are joined with a space on one line. For clean lists, select a single column."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#csv">CSV</a></li><li><span aria-current="page">CSV Column Extractor</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>CSV Column Extractor</h1>
+<p class="lede">Selects, reorders or removes columns from a CSV by header name, column number or range, with optional de-duplication and CSV, line or JSON output.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="csv-column-extractor" data-module="devz1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Exports from CRMs, shops and analytics tools usually contain far more columns than you need. Opening a 40-column file in a spreadsheet just to copy two of them is slow, and it is a risk when the file holds personal data. With this tool you type the columns you want, such as &quot;email,country&quot; or &quot;1,3-5&quot;, and get only those back. You can invert the choice to drop columns instead, keep the original header or not, and remove duplicate rows to get a unique list. The one-value-per-line output is handy for pasting email addresses into another system. It all happens in your browser, so the file contents are not sent anywhere.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your CSV and set the delimiter (comma, semicolon, tab or pipe).</li><li>Type the columns as names or numbers, separated by commas. Ranges such as 2-4 work. Choose keep or drop.</li><li>Tick duplicate removal if needed, choose CSV, one value per line or JSON, and copy the result.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Can I mix names and numbers?</summary><p>Yes. Each item is first matched against the header names, then read as a range like 2-4, then as a 1-based column number. The order you type is the order of the output columns when you keep them.</p></details>
+<details><summary>What if there is no header row?</summary><p>Untick &quot;First row is header&quot;. Columns are then numbered 1, 2, 3 and so on, and all rows are treated as data. JSON output then uses those numbers as keys.</p></details>
+<details><summary>How are quotes and line breaks handled?</summary><p>The parser follows the usual CSV quoting rules: quoted fields, doubled quotes and line breaks inside quotes are read correctly, and output cells are quoted again where needed. An unterminated quote gives an error.</p></details>
+<details><summary>What does one value per line do with several columns?</summary><p>When more than one column is selected, the values of each row are joined with a space on one line. For clean lists, select a single column.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/csv-to-json/"><span class="link-card__title">CSV to JSON</span><span class="link-card__desc">Parse CSV (RFC 4180 quotes, any delimiter) into JSON with optional type inference.</span></a></li><li><a class="link-card" href="/en/csv-viewer/"><span class="link-card__title">CSV Viewer</span><span class="link-card__desc">View CSV as a sortable, filterable table. Open a file or paste text.</span></a></li><li><a class="link-card" href="/en/csv-to-sql/"><span class="link-card__title">CSV to SQL INSERT</span><span class="link-card__desc">Generate INSERT statements (and optionally CREATE TABLE) from CSV.</span></a></li><li><a class="link-card" href="/en/csv-to-markdown-table/"><span class="link-card__title">CSV to Markdown Table</span><span class="link-card__desc">Turn CSV into an aligned Markdown (GFM) table.</span></a></li><li><a class="link-card" href="/en/dedupe-lines/"><span class="link-card__title">Remove Duplicate Lines</span><span class="link-card__desc">Keep first occurrences, keep only unique lines, or show only the duplicates.</span></a></li><li><a class="link-card" href="/en/extract-emails-urls-numbers/"><span class="link-card__title">Extract Emails, URLs &amp; Numbers</span><span class="link-card__desc">Pull emails, URLs, numbers or hashtags out of any text.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

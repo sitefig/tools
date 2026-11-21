@@ -1,0 +1,44 @@
+{
+ "id": "x-robots-tag-header-builder",
+ "seoTitle": "X-Robots-Tag Header Builder for Apache, Nginx, Cloudflare",
+ "metaDescription": "Build X-Robots-Tag rules for PDFs and other files or a whole site as Apache, Nginx, Cloudflare and _headers snippets. Free, in your browser.",
+ "intro": "Generates X-Robots-Tag configuration for the common servers, for chosen file types or the whole site.",
+ "why": "You cannot put a meta tag in a PDF or an image, so noindex for those files has to be an HTTP header. The config differs per server, and a small mistake such as a missing always flag makes the header vanish on error responses.\n\nEnter the directives, the file extensions and an optional crawler name and get snippets for Apache, Nginx, a Cloudflare Transform Rule and a _headers file. Directives are checked against Google's list.",
+ "howTo": [
+  "Enter the directives, for example noindex, nofollow.",
+  "Choose file extensions or the whole site.",
+  "Pick the server format or all.",
+  "Test with curl -I on a file URL."
+ ],
+ "faq": [
+  {
+   "q": "Why not use robots.txt for PDFs?",
+   "a": "A block stops crawling but not indexing of linked URLs. A header with noindex removes the file, if the crawler can fetch it."
+  },
+  {
+   "q": "Can I target one crawler?",
+   "a": "Yes, enter its name such as googlebot and the header gets that prefix."
+  },
+  {
+   "q": "Does Nginx add_header need always?",
+   "a": "Yes if you want it on error responses too."
+  },
+  {
+   "q": "Is the Cloudflare snippet tested?",
+   "a": "Not on a live account here; check your dashboard wording."
+  }
+ ],
+ "related": [
+  "robots-meta-tag-generator",
+  "htaccess-generator",
+  "nginx-config-generator",
+  "security-headers-generator",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "x-robots-tag",
+  "noindex pdf header",
+  "x-robots-tag nginx",
+  "x-robots-tag apache htaccess"
+ ]
+}

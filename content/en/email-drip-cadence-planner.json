@@ -1,0 +1,45 @@
+{
+ "id": "email-drip-cadence-planner",
+ "seoTitle": "Email Drip Sequence Planner: Delays to Send Dates",
+ "metaDescription": "Map a drip email sequence with delays like 2 days after signup and get exact send dates and weekdays from a start date. Free, runs in your browser.",
+ "intro": "List your emails with delays and get a dated timeline.",
+ "why": "Drip sequences are described in delays, but you schedule them on dates. Converting \"3 days after the previous email\" into real weekdays shows when a send lands on a weekend.\n\nEach delay can count from signup, the previous email or a named earlier email. Times are in the zone you plan in. Turn on the weekend option to move Saturday and Sunday sends to Monday.",
+ "howTo": [
+  "Choose the start date and send time.",
+  "Write one email per line as Name | delay.",
+  "Optionally move weekend sends to Monday.",
+  "Copy the timeline into your tool."
+ ],
+ "faq": [
+  {
+   "q": "What delay formats work?",
+   "a": "Numbers with h, d or w (hours, days, weeks), and an optional \"after signup\", \"after previous\" or \"after Name\"."
+  },
+  {
+   "q": "Is a number alone allowed?",
+   "a": "Yes, it means days after the previous email."
+  },
+  {
+   "q": "Does it change time zones?",
+   "a": "No. Use the time zone planner for that."
+  },
+  {
+   "q": "Can it export?",
+   "a": "Copy the text output."
+  }
+ ],
+ "related": [
+  "email-send-time-zone-planner",
+  "content-calendar-generator",
+  "business-days",
+  "email-frequency-fatigue-estimator",
+  "outreach-mail-merge",
+  "email-campaign-rates"
+ ],
+ "keywords": [
+  "drip campaign planner",
+  "email sequence timeline",
+  "email cadence",
+  "autoresponder schedule"
+ ]
+}

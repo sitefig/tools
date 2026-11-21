@@ -1,0 +1,45 @@
+{
+ "id": "random-ip-generator",
+ "seoTitle": "Free Random IP Address Generator: IPv4, IPv6, CIDR",
+ "metaDescription": "Generate random IPv4 or IPv6 addresses: public, private, documentation ranges, or inside any CIDR block. Crypto random, free, local.",
+ "intro": "Creates random IPv4 or IPv6 addresses from a range you choose, for test data, fixtures and documentation.",
+ "why": "Test data often needs addresses that look real but are safe. Documentation ranges (192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24, and 2001:db8::/32) are set aside for examples and will not point at real hosts. Private ranges suit internal network tests.\n\nYou can also generate from any CIDR block you give, or from public space. Public random addresses may belong to real servers, so do not scan or connect to them. The excluded ranges come from the IANA special-purpose registry, checked when this page was written.",
+ "howTo": [
+  "Choose IPv4 or IPv6.",
+  "Pick a range: public, private, documentation, any or your own CIDR.",
+  "Set the count and whether to avoid duplicates.",
+  "Copy the list."
+ ],
+ "faq": [
+  {
+   "q": "Which range is safest for examples?",
+   "a": "Documentation ranges. They are reserved for this purpose."
+  },
+  {
+   "q": "Is the randomness cryptographic?",
+   "a": "Yes, it uses the browser crypto source with unbiased sampling."
+  },
+  {
+   "q": "Can I get more addresses than the range holds?",
+   "a": "Not without duplicates. The tool refuses when no duplicates is on and the range is too small."
+  },
+  {
+   "q": "What does public mean here?",
+   "a": "Outside the IANA special-purpose blocks and multicast. It does not mean the address is in use or routed."
+  }
+ ],
+ "related": [
+  "ip-address-extractor",
+  "ip-subnet-calculator",
+  "mac-address-generator",
+  "ip-validator-converter",
+  "mock-data-generator",
+  "random-number-generator"
+ ],
+ "keywords": [
+  "random ip generator",
+  "generate random ipv4",
+  "random ipv6 address",
+  "random ip in cidr"
+ ]
+}

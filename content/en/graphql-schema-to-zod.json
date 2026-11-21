@@ -1,0 +1,45 @@
+{
+ "id": "graphql-schema-to-zod",
+ "seoTitle": "Free GraphQL Schema to Zod Converter Online",
+ "metaDescription": "Convert GraphQL SDL types, inputs, enums and unions into Zod schemas with nullable and optional handling. Free, runs in your browser.",
+ "intro": "Converts GraphQL SDL types, inputs, enums and unions into Zod schemas, with .nullable() and .optional() applied, lists as z.array and recursive types wrapped in z.lazy.",
+ "why": "GraphQL checks types on the server, but data coming out of a client, a form or a webhook is not covered by that. Zod lets you validate those values in TypeScript, and your GraphQL schema already describes the shapes. Rather than writing every z.object twice, paste the SDL and get matching schemas. Enums become z.enum, unions become z.union, lists become z.array, nullable fields get .nullable() and recursive types use z.lazy so they do not fail on circular references. Custom scalars become z.string(), which you can edit to something stricter. Operation roots are skipped unless you include them. Your schema is processed in your browser.",
+ "howTo": [
+  "Paste your GraphQL SDL into the input box.",
+  "Tick \"Include Query / Mutation / Subscription\" only if you need those roots.",
+  "Copy the Zod module and refine custom scalars such as dates."
+ ],
+ "faq": [
+  {
+   "q": "How are nullable and optional fields marked?",
+   "a": "Nullable fields get .nullable() or .optional() depending on how the type is used, and fields marked non-null are required. Lists become z.array, so each element is validated as well."
+  },
+  {
+   "q": "How are recursive types handled?",
+   "a": "Types that refer to themselves, directly or through others, use z.lazy so Zod can build the schema without a reference error."
+  },
+  {
+   "q": "What happens to custom scalars?",
+   "a": "They become z.string(). Replace them with a more precise validator, for example a date or JSON schema, where the data needs it."
+  },
+  {
+   "q": "Does it generate TypeScript types too?",
+   "a": "It outputs the Zod schemas. Use z.infer in your code, or the GraphQL to TypeScript tool on this site if you want plain interfaces."
+  }
+ ],
+ "related": [
+  "graphql-to-typescript",
+  "typescript-interface-to-zod",
+  "json-schema-to-zod",
+  "zod-to-typescript-type",
+  "json-to-graphql-schema",
+  "json-to-zod"
+ ],
+ "keywords": [
+  "graphql to zod",
+  "graphql schema to zod schema",
+  "convert graphql sdl to zod",
+  "free zod generator from graphql",
+  "zod validation from graphql types"
+ ]
+}

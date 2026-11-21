@@ -1,0 +1,41 @@
+{
+ "id": "dnssec-record-decoder",
+ "seoTitle": "DNSSEC DS, DNSKEY and RRSIG Decoder with Digest Check",
+ "metaDescription": "Paste DS, DNSKEY and RRSIG records to see algorithms, key roles, key tags, signature dates and whether the DS digest matches the DNSKEY.",
+ "intro": "Decodes DNSSEC records, computes key tags and checks that a DS digest matches the DNSKEY you pasted.",
+ "why": "DNSSEC links a domain to its parent through a DS record, which holds a digest of the domain's key-signing key. If the DS and DNSKEY do not match, validating resolvers reject the domain.\n\nPaste the DS and DNSKEY records from dig and the tool names the algorithms, tells key-signing keys from zone-signing keys, computes the key tag (RFC 4034 appendix B) and compares the digest. It was tested on a live pair of records. It does not verify signatures or walk the chain from the root.",
+ "howTo": [
+  "Run dig DS and dig DNSKEY for the domain.",
+  "Paste the records, plus RRSIG lines if you want date checks.",
+  "Read the key tags and the digest match line.",
+  "Fix the DS at your registrar if it does not match."
+ ],
+ "faq": [
+  {
+   "q": "Does it validate DNSSEC?",
+   "a": "No. It decodes and compares text. Use a validating resolver for the full chain."
+  },
+  {
+   "q": "Which digests are checked?",
+   "a": "SHA-1, SHA-256 and SHA-384."
+  },
+  {
+   "q": "Why is my DS not matched?",
+   "a": "The DNSKEY with that tag and algorithm is not in your paste, or the DS is out of date."
+  }
+ ],
+ "related": [
+  "dig-nslookup-output-analyzer",
+  "caa-record-analyzer",
+  "dmarc-record-analyzer",
+  "mta-sts-tls-rpt-checker",
+  "hash-generator",
+  "x509-viewer"
+ ],
+ "keywords": [
+  "dnssec ds record",
+  "dnskey key tag",
+  "rrsig expiry",
+  "dnssec decoder"
+ ]
+}

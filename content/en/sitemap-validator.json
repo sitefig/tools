@@ -1,0 +1,46 @@
+{
+ "id": "sitemap-validator",
+ "seoTitle": "Free Sitemap Validator: Check sitemap.xml Online",
+ "metaDescription": "Check pasted sitemap XML for limits, duplicates, bad URLs, invalid dates and priority values. Free; runs in your browser.",
+ "intro": "Paste sitemap or sitemap index XML to check entry counts, size, duplicate and invalid URLs, date formats and changefreq and priority values.",
+ "why": "A sitemap with errors wastes the one document written for crawlers. Common faults are relative URLs, duplicates, URLs over the length limit, lastmod dates in the wrong format, priority outside 0 to 1 and files over the 50,000-entry limit. Search Console will tell you some of this, but only after you submit it and wait.\n\nThis validator parses the XML you paste, checks that the root is a urlset or sitemapindex and runs through the entries. It shows the type, the number of entries, unique entries and size, then lists the problems it finds. It checks structure and values, not whether each URL is live, canonical or indexable, which needs a crawler. The check runs in your browser, so a staging sitemap can be tested before it goes anywhere.",
+ "howTo": [
+  "Open your sitemap.xml and copy its contents.",
+  "Paste it into the input box.",
+  "Run the tool to see the summary and the list of issues.",
+  "Fix the entries and generate the file again, then submit it in Search Console."
+ ],
+ "faq": [
+  {
+   "q": "What does it check?",
+   "a": "The root element, number of entries against the 50,000 limit, size, duplicates, absolute http or https URLs, URL length, W3C date formats for lastmod, and valid changefreq and priority values."
+  },
+  {
+   "q": "Does it test that URLs work?",
+   "a": "No. It never requests any URL. A live check of status codes, redirects and canonicals needs a crawler."
+  },
+  {
+   "q": "Can it handle a sitemap index?",
+   "a": "Yes. It accepts a sitemapindex root and checks the listed sitemap locations. It does not fetch the child sitemaps, so validate each one separately."
+  },
+  {
+   "q": "Is the XML uploaded?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "sitemap-generator",
+  "sitemap-url-extractor",
+  "robots-tester",
+  "xml-validate",
+  "hreflang-validator",
+  "canonical-generator"
+ ],
+ "keywords": [
+  "sitemap validator",
+  "sitemap.xml checker",
+  "validate xml sitemap online",
+  "sitemap errors check",
+  "sitemap lastmod validator"
+ ]
+}

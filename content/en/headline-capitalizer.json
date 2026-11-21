@@ -1,0 +1,41 @@
+{
+ "id": "headline-capitalizer",
+ "seoTitle": "Headline Capitalizer: AP, APA, Chicago and MLA Title Case",
+ "metaDescription": "Capitalize headlines in AP/APA style, Chicago/MLA style or sentence case, with small words handled. Free and private.",
+ "intro": "Capitalize a headline in AP/APA style (lowercase words of three letters or fewer) or Chicago/MLA style (lowercase all short function words), or switch to sentence case.",
+ "why": "Title case rules differ by style guide. Some capitalize every word of four letters or more, others lowercase all articles, prepositions and conjunctions however long.\n\nPaste headlines, one per line, and pick a style. The first and last word and the word after a colon are always capitalized, hyphenated parts are capitalized, and words such as iPhone or NASA are left alone. The rules are the commonly published ones, not checked against current manuals, and phrasal verbs like 'look up' need a manual look.",
+ "howTo": [
+  "Paste your headlines, one per line.",
+  "Choose AP/APA, Chicago/MLA or sentence case.",
+  "Read the result.",
+  "Fix names or phrasal verbs the rules cannot know."
+ ],
+ "faq": [
+  {
+   "q": "Which style should I use?",
+   "a": "The one your publisher or school requires. AP is common in news, APA in science, Chicago in books and MLA in humanities."
+  },
+  {
+   "q": "Why is 'up' lowercase?",
+   "a": "It is a short preposition here, but in a phrasal verb such as 'Look Up' it should be capitalized. The tool cannot tell."
+  },
+  {
+   "q": "Does it check my headline quality?",
+   "a": "No. For a score, use the Headline Analyzer."
+  }
+ ],
+ "related": [
+  "title-case-headline-analyzer",
+  "case-converter",
+  "slug-to-title",
+  "headline-generator",
+  "title-length-checker",
+  "serp-snippet"
+ ],
+ "keywords": [
+  "title case converter",
+  "headline capitalization",
+  "ap style title case",
+  "chicago style title case"
+ ]
+}

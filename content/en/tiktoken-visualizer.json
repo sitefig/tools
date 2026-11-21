@@ -1,0 +1,46 @@
+{
+  "id": "tiktoken-visualizer",
+  "seoTitle": "Free Tiktoken Tokenizer Visualizer (GPT-4, GPT-4o)",
+  "metaDescription": "See exactly how OpenAI tiktoken splits text into tokens for cl100k_base and o200k_base, with coloured tokens and ids. Free, runs in your browser.",
+  "intro": "Shows your text as coloured tokens using the exact OpenAI cl100k_base and o200k_base encodings, plus a table of token ids and bytes. It also reports token, character and byte counts.",
+  "why": "A token count is only a number until you see where the splits fall. Why does a long number cost three tokens per group, why does an emoji take several, and why is a leading space attached to a word? Looking at the actual pieces answers those questions and helps you tighten prompts.\n\nThis visualizer implements the tiktoken byte-pair encoding for GPT-4 and GPT-3.5 (cl100k_base) and for GPT-4o and newer models (o200k_base). Each token is shaded, optionally labelled with its id, and listed in a table with its bytes. The vocabulary file is fetched from this same site on first use, and the tokenising happens in your browser. Your text is not uploaded. Only OpenAI encodings are included.",
+  "howTo": [
+    "Paste or type your text into the input box.",
+    "Choose an encoding: cl100k_base or o200k_base.",
+    "Set special tokens to plain or allow, and tick the option to show ids in the coloured view.",
+    "Read the token count and the colour-coded breakdown, then check the table of ids and bytes."
+  ],
+  "faq": [
+    {
+      "q": "Are these the same counts the API uses?",
+      "a": "For the text itself, yes, the encodings are exact implementations of OpenAI's public vocabularies. Billed totals for chat requests also include message framing and other overhead, which this view does not add."
+    },
+    {
+      "q": "What do plain and allow mean for special tokens?",
+      "a": "In plain mode, text like the end-of-text marker is tokenised as ordinary characters, which is how most API text is treated. In allow mode, it is turned into the single special token id."
+    },
+    {
+      "q": "Does my text leave the browser?",
+      "a": "No. Only a vocabulary file is fetched from this site, once. After that the splitting runs locally, so your prompt stays on your device."
+    },
+    {
+      "q": "Why not Claude or Gemini?",
+      "a": "Their tokenizer vocabularies are not available for offline use, so only the OpenAI encodings are included here. Use the token estimator for approximate counts for those models."
+    }
+  ],
+  "related": [
+    "gpt-token-counter",
+    "token-id-decoder",
+    "multi-tokenizer-counter",
+    "tokenizer-visualizer-hf",
+    "llm-token-estimator",
+    "token-truncate"
+  ],
+  "keywords": [
+    "tiktoken tokenizer online",
+    "gpt tokenizer visualizer",
+    "cl100k_base tokenizer",
+    "o200k_base token counter",
+    "free openai tokenizer"
+  ]
+}

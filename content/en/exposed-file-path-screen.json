@@ -1,0 +1,41 @@
+{
+ "id": "exposed-file-path-screen",
+ "seoTitle": "Exposed File Path Screen: .env, .git, Backups and Dumps",
+ "metaDescription": "Paste URLs, paths or a sitemap and flag ones that look like .env, .git, backups, database dumps and keys, sorted by severity. No requests made.",
+ "intro": "Flags file names in a URL list that often mean exposed secrets or source: .env, .git, backups, dumps, keys and admin tools.",
+ "why": "Many leaks are plain files left on a web server: a .env file, a .git folder, a database dump, a zip backup. They show up in sitemaps, crawl exports and archive lists.\n\nPaste your URLs, paths or sitemap XML and the tool flags names that match common patterns, sorted by severity. A match is a candidate only: open the file on your own site to confirm, then remove it or block the path in the server. The tool makes no requests, so use it only on lists from sites you own or are allowed to test.",
+ "howTo": [
+  "Export URLs from your sitemap, crawler or access logs.",
+  "Paste them into the box.",
+  "Check each high and medium item on your own site.",
+  "Delete the files or block the paths, and rotate any secret that was exposed."
+ ],
+ "faq": [
+  {
+   "q": "Does it fetch the URLs?",
+   "a": "No. It only reads names."
+  },
+  {
+   "q": "Is a low item a problem?",
+   "a": "Usually not by itself, but dependency manifests and docs can reveal versions."
+  },
+  {
+   "q": "What should I do if a .env was exposed?",
+   "a": "Remove it, then treat every secret in it as leaked and rotate them."
+  }
+ ],
+ "related": [
+  "secret-detector-redactor",
+  "env-linter",
+  "security-headers-grader",
+  "nginx-security-conf-generator",
+  "mixed-content-finder",
+  "subdomain-takeover-cname-screen"
+ ],
+ "keywords": [
+  "exposed env file",
+  "git folder exposed",
+  "backup file check",
+  "sensitive paths"
+ ]
+}

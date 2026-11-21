@@ -1,0 +1,47 @@
+{
+ "id": "classical-ciphers",
+ "seoTitle": "Free Vigenere, Autokey, Beaufort & Playfair Tool",
+ "metaDescription": "Free online Vigenere, Autokey, Beaufort and Playfair cipher tool. Encrypt or decrypt classic ciphers with a key, in your browser, for puzzles and teaching.",
+ "intro": "Encrypt or decrypt text with the Vigenere, Autokey, Beaufort or Playfair cipher. Enter a key, pick a direction and read the result. These ciphers are for puzzles and teaching, not security.",
+ "why": "Classical ciphers appear in escape rooms, geocaching puzzles, history lessons and beginner CTF challenges. Working them out by hand is slow and error-prone, especially Playfair with its 5x5 square and double-letter rules. This tool does the mechanical part so you can focus on the idea.\n\nVigenere, Autokey and Beaufort keep letter case and leave punctuation and spaces alone, which makes the output easy to read against the original. Playfair works on letter pairs, treats J as I and inserts X fillers that stay in the decrypted text. None of these ciphers is secure today. They are quick to break, so use them for fun and learning only. The work happens in your browser and nothing is uploaded.",
+ "howTo": [
+  "Choose a cipher: vigenere, autokey, beaufort or playfair.",
+  "Choose encrypt or decrypt and enter the key, for example LEMON.",
+  "Paste the text you want to convert.",
+  "Read the result and copy it. For Playfair, remove any X fillers by eye."
+ ],
+ "faq": [
+  {
+   "q": "Why does Playfair output contain extra X letters?",
+   "a": "Playfair works on pairs of letters. Repeated letters in a pair and an odd final letter are padded with X. These fillers remain after decryption, so you read past them by eye."
+  },
+  {
+   "q": "What happens to spaces and punctuation?",
+   "a": "For Vigenere, Autokey and Beaufort, non-letters pass through unchanged and do not use up key letters. Upper and lower case are preserved. Playfair works on letters only and treats J as I."
+  },
+  {
+   "q": "Are these ciphers secure?",
+   "a": "No. Frequency analysis and known-plaintext attacks break all of them quickly. They are fine for puzzles and teaching, but never for anything that needs real confidentiality."
+  },
+  {
+   "q": "What counts as a valid key?",
+   "a": "Only letters A to Z are used from the key, in any case. A key with no letters gives an error. Digits and symbols in the key are ignored."
+  }
+ ],
+ "related": [
+  "rot13-caesar",
+  "xor-one-time-pad",
+  "morse-translator",
+  "hex-text",
+  "chacha20-poly1305",
+  "nato-phonetic"
+ ],
+ "keywords": [
+  "vigenere cipher online",
+  "playfair cipher online",
+  "autokey cipher tool",
+  "beaufort cipher calculator",
+  "free classical cipher tool",
+  "vigenere decoder"
+ ]
+}

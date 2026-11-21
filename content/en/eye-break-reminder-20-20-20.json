@@ -1,0 +1,45 @@
+{
+ "id": "eye-break-reminder-20-20-20",
+ "seoTitle": "Eye Break Reminder: 20-20-20 Rule Timer",
+ "metaDescription": "Every 20 minutes get a prompt to look at something 20 feet away for 20 seconds, with a countdown and optional sound. Free.",
+ "intro": "A timer that cycles between work and short eye breaks, with an on-page prompt, an optional beep and optional desktop notifications.",
+ "why": "The 20-20-20 rule is a common suggestion for screen users: every 20 minutes, look at something about 20 feet (6 metres) away for 20 seconds. This page counts the work time, tells you when the break starts, counts the break down and then restarts the cycle.\n\nYou can change the work and break lengths, turn the beep off, and allow desktop notifications if you want a prompt while another tab is in front. Browsers slow timers in background tabs, so a prompt can come a little late. This is a reminder, not medical advice. Nothing is stored or sent.",
+ "howTo": [
+  "Set the work minutes and break seconds.",
+  "Press Start reminders.",
+  "Optionally allow desktop notifications.",
+  "Look away when the break prompt appears."
+ ],
+ "faq": [
+  {
+   "q": "Does it work in the background?",
+   "a": "Only while the tab stays open; browsers may delay timers in hidden tabs."
+  },
+  {
+   "q": "Do I have to allow notifications?",
+   "a": "No, the on-page prompt and beep work without them."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No, it is a common guideline in reminder form."
+  },
+  {
+   "q": "Is anything saved?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "pomodoro-timer-notifications",
+  "pomodoro-timer",
+  "countdown-timer",
+  "stopwatch",
+  "habit-streak-tracker",
+  "sleep-noise-timer"
+ ],
+ "keywords": [
+  "20 20 20 rule timer",
+  "eye break reminder",
+  "screen break timer",
+  "eye strain reminder"
+ ]
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Tailwind CSS v3 to v4 Migrator | Free Tools</title>
+<meta name="description" content="Rewrite Tailwind v3 class names and directives for v4: renamed utilities, important modifier, @import and @utility. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/tailwind-v3-to-v4-migrator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/tailwind-v3-to-v4-migrator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/tailwind-v3-to-v4-migrator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Tailwind CSS v3 to v4 Migrator | Free Tools">
+<meta property="og:description" content="Rewrite Tailwind v3 class names and directives for v4: renamed utilities, important modifier, @import and @utility. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/tailwind-v3-to-v4-migrator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Tailwind CSS v3 to v4 Migrator | Free Tools">
+<meta name="twitter:description" content="Rewrite Tailwind v3 class names and directives for v4: renamed utilities, important modifier, @import and @utility. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Tailwind CSS v3 to v4 Migrator","url":"https://tools.sitefig.net/en/tailwind-v3-to-v4-migrator/","description":"Rewrite Tailwind v3 class names and directives for v4: renamed utilities, important modifier, @import and @utility. Free, in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your HTML, JSX or CSS that uses Tailwind v3 into the input box.","Read the converted output and the list of changes it reports.","Compare the result with your original using a diff tool.","Handle the items under the manual-changes report yourself, then run your own build and visual checks."],"keywords":"tailwind v3 to v4 migration, tailwind 4 upgrade tool, tailwind v4 renamed utilities, migrate tailwind classes, tailwind shadow-sm rename v4, free tailwind migrator","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"CSS","item":"https://tools.sitefig.net/en/#css"},{"@type":"ListItem","position":3,"name":"Tailwind CSS v3 to v4 Migrator","item":"https://tools.sitefig.net/en/tailwind-v3-to-v4-migrator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it replace the official upgrade tool?","acceptedAnswer":{"@type":"Answer","text":"No. It follows the upgrade guide for class and directive renames, but it cannot read your config file or project. Use the official tool for whole projects and this one to check snippets."}},{"@type":"Question","name":"What can it not convert?","acceptedAnswer":{"@type":"Answer","text":"Things that depend on context, such as opacity utilities, the new default border colour and your tailwind.config file. These are listed in a report so you can address them by hand."}},{"@type":"Question","name":"Can it rename a class that is part of my own CSS?","acceptedAnswer":{"@type":"Answer","text":"It works on text patterns, so a class of your own with the same name as a Tailwind utility can be changed too. Review the output before you apply it."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#css">CSS</a></li><li><span aria-current="page">Tailwind CSS v3 to v4 Migrator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Tailwind CSS v3 to v4 Migrator</h1>
+<p class="lede">Paste HTML, JSX or CSS that uses Tailwind v3 and get it rewritten for v4, with renamed utilities, new directives and a report of changes that still need manual work.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="tailwind-v3-to-v4-migrator" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Tailwind v4 renamed a surprising number of everyday utilities. Plain shadow became shadow-sm, rounded became rounded-sm, outline-none became outline-hidden, gradients moved to bg-linear, and the important marker went to the end of the class. In a large codebase, finding every one by hand is tedious and the visual differences are subtle.</p>
+<p>This migrator applies the renames from the official upgrade guide to whatever you paste, rewrites the tailwind directives to a single import and converts layer utilities to the new utility syntax. It also lists what cannot be automated, such as opacity utilities and the config file. Treat it as a first pass and review the diff. The text stays in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your HTML, JSX or CSS that uses Tailwind v3 into the input box.</li><li>Read the converted output and the list of changes it reports.</li><li>Compare the result with your original using a diff tool.</li><li>Handle the items under the manual-changes report yourself, then run your own build and visual checks.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does it replace the official upgrade tool?</summary><p>No. It follows the upgrade guide for class and directive renames, but it cannot read your config file or project. Use the official tool for whole projects and this one to check snippets.</p></details>
+<details><summary>What can it not convert?</summary><p>Things that depend on context, such as opacity utilities, the new default border colour and your tailwind.config file. These are listed in a report so you can address them by hand.</p></details>
+<details><summary>Can it rename a class that is part of my own CSS?</summary><p>It works on text patterns, so a class of your own with the same name as a Tailwind utility can be changed too. Review the output before you apply it.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/tailwind-converter/"><span class="link-card__title">CSS to Tailwind Converter</span><span class="link-card__desc">Convert CSS declarations to Tailwind utility classes (~80 properties, arbitrary-value fallback) or common Tailwind classes back to CSS.</span></a></li><li><a class="link-card" href="/en/tailwind-class-sorter/"><span class="link-card__title">Tailwind Class Sorter</span><span class="link-card__desc">Sort Tailwind CSS utility classes into the conventional order (layout, box model, typography, effects ... with variants like hover:/md:/dark: after base classes), similar to prettier-plugin-tailwindcss. Hand-written approximation of the official ordering: unknown/custom classes come first, results can differ in rare edge cases.</span></a></li><li><a class="link-card" href="/en/tailwind-v4-color-palette/"><span class="link-card__title">Tailwind v4 Color Palette (OKLCH)</span><span class="link-card__desc">Generate a 50-950 scale from one base colour as OKLCH, emitted as an @theme block for Tailwind CSS v4 (hex fallback list included).</span></a></li><li><a class="link-card" href="/en/tailwind-spacing-generator/"><span class="link-card__title">Tailwind Spacing Scale Generator</span><span class="link-card__desc">Generate a custom spacing scale for Tailwind: choose a base unit (4px grid, 8pt grid, or any), a linear, doubling, modular (ratio) or Fibonacci progression, and get Tailwind v4 @theme variables, a v3 theme.extend.spacing block, plain CSS custom properties and a px / rem table.</span></a></li><li><a class="link-card" href="/en/css-box-shadow-to-tailwind/"><span class="link-card__title">CSS box-shadow to Tailwind Class</span><span class="link-card__desc">Convert a CSS box-shadow value (including multiple layers, inset, rgba / hex colours) to a Tailwind arbitrary-value class (shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1)]) and detect when it exactly equals a built-in preset of Tailwind v3 or v4 (shadow-md, shadow-lg, ...). Also gives the theme extension for tailwind.config.js and the v4 @theme variable.</span></a></li><li><a class="link-card" href="/en/text-diff/"><span class="link-card__title">Text Diff</span><span class="link-card__desc">Compare two texts line by line or word by word, unified-style output.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

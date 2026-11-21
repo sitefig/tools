@@ -1,0 +1,45 @@
+{
+ "id": "rot47-encoder",
+ "seoTitle": "Free ROT47 Encoder and Decoder Online",
+ "metaDescription": "Rotate every printable ASCII character by 47 places with ROT47. Apply it again to decode. Free and runs entirely in your browser.",
+ "intro": "Paste text and ROT47 rotates all printable ASCII characters, from exclamation mark to tilde, by 47 positions. Running it twice returns the original text.",
+ "why": "ROT13 only touches letters, so digits and punctuation stay readable. ROT47 widens the idea to the 94 printable ASCII characters, which scrambles numbers and symbols as well. It is still not encryption: anyone can reverse it in a second, and it is mostly used for puzzles, capture-the-flag challenges and hiding spoilers from a casual glance.\n\nBecause 47 is half of 94, the same operation encodes and decodes, so there is no mode switch. Characters outside the range, such as spaces, line breaks and accented letters, pass through unchanged. If you meet a string that looks like random punctuation with an @ and a 6 in it, try ROT47 before anything else.",
+ "howTo": [
+  "Paste the text you want to encode or decode.",
+  "Read the rotated output immediately.",
+  "Copy it, or paste it back in to restore the original."
+ ],
+ "faq": [
+  {
+   "q": "Is ROT47 secure?",
+   "a": "No. It is a fixed substitution with no key, so anyone can undo it. Never use it to protect passwords or private data; use real encryption for that."
+  },
+  {
+   "q": "Which characters change?",
+   "a": "Those from code 33 to 126: letters, digits and punctuation. Spaces, tabs, line breaks and non-ASCII characters such as accented letters stay exactly as they were."
+  },
+  {
+   "q": "Why is there no decode button?",
+   "a": "Rotating by 47 twice equals 94, the size of the range, so the second pass restores the text. The same action handles both directions."
+  },
+  {
+   "q": "How is it different from ROT13?",
+   "a": "ROT13 rotates only the 26 letters by 13. ROT47 rotates 94 printable characters by 47, so digits and symbols are scrambled too."
+  }
+ ],
+ "related": [
+  "rot13-caesar",
+  "classical-ciphers",
+  "base64-encode",
+  "hex-text",
+  "binary-text",
+  "morse-translator"
+ ],
+ "keywords": [
+  "rot47 decoder",
+  "rot47 encoder online",
+  "rot47 cipher",
+  "free rot47 tool",
+  "ascii rotation cipher"
+ ]
+}

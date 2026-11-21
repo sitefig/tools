@@ -1,0 +1,45 @@
+{
+  "id": "email-signature-generator",
+  "seoTitle": "Email Signature Generator (HTML, Table-Based, No Images)",
+  "metaDescription": "Create a clean HTML email signature with name, title, company, contact details, website and social links in table-based markup that works in Gmail, Outlook and Apple Mail.",
+  "intro": "Get a professional signature you can paste into any email client.",
+  "why": "Fill in your details and accent colour and the tool writes inline-styled table markup with an accent bar, tel: and mailto: links and optional social links and a disclaimer line. It uses text links instead of images so nothing loads from another server and nothing is blocked by default image settings.\n\nEmail clients strip many CSS features, which is why the markup uses tables and inline styles. Paste into your client's signature editor from the preview and send yourself a test.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter your name, title, company and contact details.",
+    "Add social links as label=url pairs.",
+    "Select the preview, copy and paste it into the signature settings.",
+    "Send a test email."
+  ],
+  "faq": [
+    {
+      "q": "Why no logo?",
+      "a": "Remote images are often blocked and add tracking-like requests; add one yourself if your brand needs it."
+    },
+    {
+      "q": "Does it work in Outlook?",
+      "a": "The markup is table-based and inline-styled, which Outlook renders reliably."
+    },
+    {
+      "q": "Is my information uploaded?",
+      "a": "No."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "signature-generator",
+    "invoice-generator",
+    "html-link-generator",
+    "utm-builder",
+    "press-release-template",
+    "html-format"
+  ],
+  "keywords": [
+    "email signature generator",
+    "html email signature",
+    "gmail signature",
+    "outlook signature"
+  ]
+}

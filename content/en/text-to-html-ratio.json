@@ -1,0 +1,46 @@
+{
+ "id": "text-to-html-ratio",
+ "seoTitle": "Free Text-to-HTML Ratio Checker",
+ "metaDescription": "Measure how much of a page's HTML is visible text versus markup, scripts and styles. Free; paste source and run it in your browser.",
+ "intro": "Paste HTML to see the share of visible text against total page size, plus the weight of inline JavaScript and CSS and the word count.",
+ "why": "Text-to-HTML ratio is a rough measure of how much of a page is content and how much is code. A very low figure usually means heavy markup, large inline scripts or a page with little to say, which is worth a look for both speed and content depth.\n\nThis tool strips scripts, styles and tags from the HTML you paste, counts the bytes of visible text against the full source and shows the percentage with a short verdict. It also reports the size of inline JavaScript and CSS and the number of words. It is not a Google ranking factor and app-like pages naturally score low, so use it as a prompt to investigate, not as a target. The calculation is done in your browser.",
+ "howTo": [
+  "Copy the page source and paste it into the input box.",
+  "Run the tool to compute the ratio.",
+  "Read the percentage, the verdict, the byte sizes and the word count.",
+  "If the ratio is very low, check for heavy inline scripts, repeated markup or thin content."
+ ],
+ "faq": [
+  {
+   "q": "Is text-to-HTML ratio a ranking factor?",
+   "a": "Not directly. Search engines do not publish it as a signal. It is a quick indicator of bloat or thin content, which can matter indirectly through speed and usefulness."
+  },
+  {
+   "q": "What ratio is good?",
+   "a": "The tool treats under 10 per cent as very low, 10 to 25 as low to average and above 25 as healthy. Content pages usually score higher than application pages."
+  },
+  {
+   "q": "Does it measure rendered content?",
+   "a": "No. It measures the HTML you paste. Content added by JavaScript after loading is not counted unless you paste the rendered DOM."
+  },
+  {
+   "q": "Is the HTML uploaded?",
+   "a": "No. Everything is calculated in your browser, and the source you paste is not sent anywhere. No account, upload or request to a remote service is involved at any point."
+  }
+ ],
+ "related": [
+  "seo-inspector",
+  "html-tag-stripper",
+  "word-counter",
+  "html-minify",
+  "heading-analyzer",
+  "css-minify"
+ ],
+ "keywords": [
+  "text to html ratio checker",
+  "html text ratio",
+  "code to content ratio",
+  "page bloat check",
+  "text html ratio seo"
+ ]
+}

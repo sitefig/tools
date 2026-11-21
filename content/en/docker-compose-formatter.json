@@ -1,0 +1,47 @@
+{
+ "id": "docker-compose-formatter",
+ "seoTitle": "Free Docker Compose Formatter & Key Sorter",
+ "metaDescription": "Free online Docker Compose formatter. Re-indent docker-compose.yml consistently, keep comments and optionally order keys in the conventional way.",
+ "intro": "Re-indent a docker-compose.yml with 2 or 4 spaces, keep your comments, and optionally reorder top-level and service keys into the conventional order, such as image before ports.",
+ "why": "Compose files are edited by many hands, and they drift: services indented differently, list items at odd depths, and keys in random order so that image, ports and environment are hard to find. A consistent file is quicker to review and produces cleaner diffs.\n\nUnlike a parse-and-rewrite YAML formatter, this one works on the text, so comments stay where you wrote them. It normalises indentation, and with the reorder option puts keys such as image, build, command, ports, environment and volumes into a familiar sequence within each service. Multi-line values like folded command blocks are left alone. It does not check that the file is a valid Compose file. Formatting runs in your browser, and environment values or passwords you paste are not uploaded.",
+ "howTo": [
+  "Paste your docker-compose.yml into the input box.",
+  "Choose an indent of 2 or 4 spaces.",
+  "Tick Reorder keys if you want conventional ordering of top-level and service keys.",
+  "Copy the formatted file and run docker compose config to validate it."
+ ],
+ "faq": [
+  {
+   "q": "Are my comments kept?",
+   "a": "Yes. The formatter works on lines of text rather than rewriting from parsed data, so comments stay with the content they were next to."
+  },
+  {
+   "q": "What does reordering do?",
+   "a": "Inside each service, common keys such as image, build, command, ports, environment, volumes and depends_on are arranged in a familiar order. Top-level sections like services, volumes and networks are ordered too. Values are not changed."
+  },
+  {
+   "q": "Does it validate the Compose file?",
+   "a": "No. It does not know the Compose specification. After formatting, run docker compose config to check that the file is valid and to see the resolved result."
+  },
+  {
+   "q": "Is it safe for files with secrets?",
+   "a": "The processing is local to your browser and nothing is uploaded. Still, avoid committing real passwords in a Compose file. Use env files or secrets."
+  }
+ ],
+ "related": [
+  "docker-compose-generator",
+  "yaml-format",
+  "docker-compose-to-k8s",
+  "docker-run-to-compose",
+  "dockerfile-linter",
+  "docker-compose-env-generator"
+ ],
+ "keywords": [
+  "docker compose formatter",
+  "format docker-compose yml",
+  "compose file beautifier",
+  "free docker compose formatter",
+  "sort docker compose keys",
+  "docker compose indent fixer"
+ ]
+}

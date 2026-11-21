@@ -1,0 +1,46 @@
+{
+  "id": "image-resizer",
+  "seoTitle": "Free Image Resizer Online: Resize by Pixels or Percent",
+  "metaDescription": "Resize images by pixel size or percentage, keep the aspect ratio and save as PNG, JPEG or WebP. Batch supported. Free, files never leave your browser.",
+  "intro": "Resizes one or many images to a pixel width and height, or by a percentage. It can keep the aspect ratio and export as PNG, JPEG or WebP at a quality you choose.",
+  "why": "Photos straight from a phone are far larger than any web page, email or form needs. Upload limits, slow pages and attachments that bounce all point to the same fix: make the picture smaller. Many online resizers want you to upload the file first, which is a poor idea for private photos or documents.\n\nHere the resize happens in your browser using a canvas. Choose pixels or percent, set a width or height and let the other follow when Keep aspect ratio is on, then pick the output format and quality. You can drop in several images and get each one resized, named with its new dimensions. Output size is limited to 16384 pixels on a side. Nothing is uploaded at any point.",
+  "howTo": [
+    "Choose one or more image files.",
+    "Pick a mode, pixels or percent, and enter a width, a height or a percentage.",
+    "Leave Keep aspect ratio ticked unless you want to stretch the image; choose a format and quality.",
+    "Run it and download the resized files."
+  ],
+  "faq": [
+    {
+      "q": "What does 0 mean in the width and height boxes?",
+      "a": "Zero means automatic. With Keep aspect ratio on, set one side and leave the other at 0 so it is calculated. If both are 0, the image keeps its original size."
+    },
+    {
+      "q": "Which format should I pick?",
+      "a": "JPEG is smallest for photos, PNG keeps sharp edges and transparency, and WebP is usually smaller than both. Saving a transparent PNG as JPEG fills the transparent areas with white."
+    },
+    {
+      "q": "Is there a size limit?",
+      "a": "The output cannot exceed 16384 pixels in width or height. Very large images may also hit your device's memory limit, in which case try a smaller target or process fewer files at once."
+    },
+    {
+      "q": "Are my photos uploaded?",
+      "a": "No. Files are read and drawn on a canvas in your browser, and the resized copies are created locally. Nothing is sent to a server."
+    }
+  ],
+  "related": [
+    "image-compressor",
+    "image-cropper",
+    "image-format-converter",
+    "aspect-ratio-calculator",
+    "image-info",
+    "exif-remover"
+  ],
+  "keywords": [
+    "image resizer",
+    "resize image online",
+    "resize photo by percentage",
+    "bulk image resizer",
+    "free image resize tool"
+  ]
+}

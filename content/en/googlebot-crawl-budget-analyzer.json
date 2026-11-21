@@ -1,0 +1,45 @@
+{
+ "id": "googlebot-crawl-budget-analyzer",
+ "seoTitle": "Googlebot Crawl Budget Analyzer for Server Logs",
+ "metaDescription": "Paste access log lines and see how Googlebot spends its requests by site section, URL template, status code and day. Free and local.",
+ "intro": "Counts crawler requests per site section or URL template, with unique URLs, hits per URL, status classes and a daily total.",
+ "why": "Search Console shows totals. Your server log shows where each request went. If one folder takes a third of all crawler hits but holds a handful of useful pages, that is where crawl effort leaks.\n\nThe tool groups paths by folder, by two folder levels, or by a URL template where numbers and slugs are folded together. A high hits-per-URL value means the same URLs are fetched again and again. The first and last day of a log are often partial, so read the daily table with that in mind.",
+ "howTo": [
+  "Copy access log lines from your server, CDN or hosting panel.",
+  "Pick which bots to count, for example Google crawlers.",
+  "Choose how to group URLs: folder, two levels or template.",
+  "Read the share, unique URLs and status columns, then check the busiest groups first."
+ ],
+ "faq": [
+  {
+   "q": "Which log format does it read?",
+   "a": "Apache and nginx combined format: IP, time in brackets, the quoted request, status, bytes, then the quoted referrer and user agent. Lines in another format are skipped and counted."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  },
+  {
+   "q": "Does crawl budget matter for a small site?",
+   "a": "Rarely. It matters for large sites, sites with many parameter URLs, and sites that publish a lot of pages quickly."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench."
+  }
+ ],
+ "related": [
+  "crawl-budget-waste-estimator",
+  "wasted-crawl-detector",
+  "bot-status-code-report",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer",
+  "fake-googlebot-log-detector"
+ ],
+ "keywords": [
+  "googlebot crawl budget log analysis",
+  "crawl stats by section",
+  "server log seo analyzer",
+  "googlebot hits per folder"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "id": "resume-bullet-improver",
+ "seoTitle": "Resume Bullet Point Checker: Verbs, Metrics, Length",
+ "metaDescription": "Paste CV bullets for a score per line: weak openers like \"responsible for\", missing numbers, passive voice, length, with stronger verbs and a rewrite template.",
+ "intro": "Check resume bullets for weak verbs, missing results and wordiness.",
+ "why": "Recruiters skim. Bullets that open with a strong action verb, show scope and a measurable result stand out; \"responsible for\" and \"helped with\" do not. This checker scores each bullet on the opener, the presence of a number, first-person and passive wording, length and vague words, suggests stronger verbs for weak openers and gives a rewrite template.\n\nIt is a rule-based style checker, not an AI writer and not a judgement of your experience. Only claim numbers you can defend in an interview.",
+ "howTo": [
+  "Paste your bullets, one per line.",
+  "Read the score and notes for each.",
+  "Rewrite the low scores using the template and the verb list."
+ ],
+ "faq": [
+  {
+   "q": "Does it rewrite my bullets?",
+   "a": "No. It flags weaknesses and gives a template; you supply the facts."
+  },
+  {
+   "q": "Is my CV uploaded?",
+   "a": "No, checks run in your browser."
+  },
+  {
+   "q": "What is a good length?",
+   "a": "About 15 to 25 words, one line or two."
+  }
+ ],
+ "related": [
+  "resume-builder",
+  "text-statistics",
+  "readability",
+  "tone-analyzer",
+  "ad-copy-counter"
+ ],
+ "keywords": [
+  "resume bullet points checker",
+  "cv action verbs",
+  "improve resume wording"
+ ]
+}

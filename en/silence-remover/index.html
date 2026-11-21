@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Silence Remover: Cut Silent Gaps from Audio | Free Tools</title>
+<meta name="description" content="Detect and remove silent gaps from a recording. Set the threshold and the shortest gap, keep a little breathing room, download the WAV. Private.">
+<link rel="canonical" href="https://tools.sitefig.net/en/silence-remover/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/silence-remover/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/silence-remover/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Silence Remover: Cut Silent Gaps from Audio | Free Tools">
+<meta property="og:description" content="Detect and remove silent gaps from a recording. Set the threshold and the shortest gap, keep a little breathing room, download the WAV. Private.">
+<meta property="og:url" content="https://tools.sitefig.net/en/silence-remover/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Silence Remover: Cut Silent Gaps from Audio | Free Tools">
+<meta name="twitter:description" content="Detect and remove silent gaps from a recording. Set the threshold and the shortest gap, keep a little breathing room, download the WAV. Private.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Silence Remover for Audio","url":"https://tools.sitefig.net/en/silence-remover/","description":"Detect and remove silent gaps from a recording. Set the threshold and the shortest gap, keep a little breathing room, download the WAV. Private.","applicationCategory":"MultimediaApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose a recording.","Set the threshold (try -45 dB) and the shortest gap to cut (500 ms).","Set how much silence to leave at each cut.","Press Run and compare the new length with the old."],"keywords":"remove silence from audio, silence remover online, cut pauses from recording, trim silence mp3","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Audio","item":"https://tools.sitefig.net/en/#audio"},{"@type":"ListItem","position":3,"name":"Silence Remover for Audio","item":"https://tools.sitefig.net/en/silence-remover/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Nothing was cut. Why?","acceptedAnswer":{"@type":"Answer","text":"The pauses are probably louder than the threshold because of room noise. Raise the threshold, for example to -35 dBFS."}},{"@type":"Question","name":"Does it cut quiet words?","acceptedAnswer":{"@type":"Answer","text":"Very soft sounds below the threshold can be treated as silence, but only if they last longer than the minimum gap."}},{"@type":"Question","name":"Can I remove all silence entirely?","acceptedAnswer":{"@type":"Answer","text":"Set \"leave this much silence\" to 0. Speech sounds hurried that way."}},{"@type":"Question","name":"Will it click at the joins?","acceptedAnswer":{"@type":"Answer","text":"Each join has a short 2 ms fade, which prevents clicks in normal material."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#audio">Audio</a></li><li><span aria-current="page">Silence Remover for Audio</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Silence Remover for Audio</h1>
+<p class="lede">Finds stretches of audio quieter than a threshold and cuts or shortens them, then exports the tightened file as WAV.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="silence-remover" data-module="new19"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Voice memos, lecture recordings and screen-recorded narration are full of pauses. Removing the long ones makes them faster to listen to without changing the voice, unlike speeding up the whole file.</p>
+<p>Level is measured in 10 ms blocks across all channels. A gap counts only if it stays below the threshold for longer than your minimum length. By default each cut leaves 150 ms of silence so speech still breathes, and each join has a 2 ms fade to avoid clicks. If room noise is above the threshold, nothing is cut, so raise the threshold in that case.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose a recording.</li><li>Set the threshold (try -45 dB) and the shortest gap to cut (500 ms).</li><li>Set how much silence to leave at each cut.</li><li>Press Run and compare the new length with the old.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Nothing was cut. Why?</summary><p>The pauses are probably louder than the threshold because of room noise. Raise the threshold, for example to -35 dBFS.</p></details>
+<details><summary>Does it cut quiet words?</summary><p>Very soft sounds below the threshold can be treated as silence, but only if they last longer than the minimum gap.</p></details>
+<details><summary>Can I remove all silence entirely?</summary><p>Set &quot;leave this much silence&quot; to 0. Speech sounds hurried that way.</p></details>
+<details><summary>Will it click at the joins?</summary><p>Each join has a short 2 ms fade, which prevents clicks in normal material.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/audio-trimmer/"><span class="link-card__title">Audio Trimmer</span><span class="link-card__desc">Load an audio file, choose start and end, preview and export the clip as WAV.</span></a></li><li><a class="link-card" href="/en/audio-noise-reducer/"><span class="link-card__title">Audio Noise Reducer (Noise Profile)</span><span class="link-card__desc">Reduce steady background hiss or hum. Name a stretch of the recording that contains only noise, and spectral subtraction removes that noise profile from the whole file. Exports WAV.</span></a></li><li><a class="link-card" href="/en/audio-joiner/"><span class="link-card__title">Audio Joiner with Crossfade</span><span class="link-card__desc">Join several audio clips into one WAV file, in the order you pick them or sorted by name, with an optional crossfade or a gap of silence between clips.</span></a></li><li><a class="link-card" href="/en/audio-recorder/"><span class="link-card__title">Voice Recorder (Record Audio to a File)</span><span class="link-card__desc">Record audio from your microphone to a downloadable file (WebM/Opus or what your browser supports) with a timer, pause and playback. Nothing is uploaded.</span></a></li><li><a class="link-card" href="/en/audio-fade-editor/"><span class="link-card__title">Audio Fade In and Fade Out Editor</span><span class="link-card__desc">Add a fade-in and a fade-out to an audio file, with a linear, cosine, equal-power or logarithmic curve, and download the result as a WAV file.</span></a></li><li><a class="link-card" href="/en/loudness-normalizer/"><span class="link-card__title">Loudness Normalizer (LUFS Target)</span><span class="link-card__desc">Measure integrated loudness in LUFS (ITU-R BS.1770 / EBU R128, K-weighted with gating) and set it to a target such as -16 or -23 LUFS, with peak protection. Writes a WAV file.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

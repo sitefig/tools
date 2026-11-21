@@ -1,0 +1,45 @@
+{
+  "id": "tournament-bracket-generator",
+  "seoTitle": "Tournament Bracket Generator: Single Elimination and Round Robin",
+  "metaDescription": "Build a single-elimination bracket with byes and standard seeding, or a round-robin schedule, from a list of players or teams. Printable output.",
+  "intro": "Set up a knockout bracket or a league schedule from your list of teams.",
+  "why": "For single elimination the bracket is padded to the next power of two, seeds are placed in the standard order (1 plays the lowest seed, 2 the second lowest, and so on) and byes go to the top seeds. Round robin uses the circle method so every pair meets exactly once and nobody plays twice in a round; with an odd number one player rests each round. You can shuffle the seeds first. Properties were verified with automated checks.\n\nThe output is a list of matches and a printable page; double elimination and result tracking are not included.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the teams in seed order, one per line.",
+    "Choose single elimination or round robin.",
+    "Optionally shuffle the seeds.",
+    "Print the page or copy the matches."
+  ],
+  "faq": [
+    {
+      "q": "How are byes assigned?",
+      "a": "To the highest seeds, so they skip the first round."
+    },
+    {
+      "q": "How many matches are there?",
+      "a": "Single elimination has players minus one; round robin has n(n-1)/2."
+    },
+    {
+      "q": "Does it support double elimination?",
+      "a": "Not yet."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "secret-santa-generator",
+    "random-team-splitter",
+    "raffle-picker",
+    "dice-roller",
+    "decision-wheel",
+    "list-shuffler"
+  ],
+  "keywords": [
+    "tournament bracket generator",
+    "single elimination bracket",
+    "round robin schedule",
+    "bracket maker"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "json-format",
+ "seoTitle": "Free JSON Formatter & Beautifier Online",
+ "metaDescription": "Free online JSON formatter. Pretty-print JSON with 2, 4, 8 spaces or tabs, sort keys, and see errors with line and column. Runs in your browser.",
+ "intro": "Paste minified or messy JSON and get it back indented and readable. Choose the indent size, optionally sort keys, and see the line and column of any syntax error.",
+ "why": "APIs, log lines and config exports often arrive as one long unreadable line. Before you can spot a missing field or a wrong type, you have to make the structure visible. A formatter does that in a second, and the same pass tells you whether the JSON is valid at all.\n\nIf the text is broken, the error names the line and column and the unexpected character, so you can jump to the trailing comma or missing quote instead of hunting for it. Sorting keys is useful when you want two payloads to line up for a diff. Everything runs in your browser, so payloads containing customer data or tokens are not uploaded anywhere.",
+ "howTo": [
+  "Paste your JSON into the input box.",
+  "Choose the indent: 2, 4 or 8 spaces, or a tab.",
+  "Tick Sort keys if you want object keys in alphabetical order.",
+  "Copy the formatted result, or fix the error at the line and column shown."
+ ],
+ "faq": [
+  {
+   "q": "What does the error message tell me?",
+   "a": "It gives the line and column where parsing failed and the unexpected character, or says the input ended too early. Common causes are trailing commas, single quotes, unquoted keys and comments, none of which are valid JSON."
+  },
+  {
+   "q": "Does sorting keys change my data?",
+   "a": "Only the order of object keys changes, at every nesting level. Array order is kept as it is. Values are not altered, and since JSON objects are unordered the meaning stays the same."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "There is no fixed limit, but everything is processed in your browser memory. Files of a few megabytes format quickly. Very large files may be slow or make the tab unresponsive."
+  },
+  {
+   "q": "Is my JSON uploaded anywhere?",
+   "a": "No. Parsing and formatting happen locally in your browser, and what you paste is not sent to a server."
+  }
+ ],
+ "related": [
+  "json-minify",
+  "json-validate",
+  "json-tree",
+  "json-sort-keys",
+  "json-diff",
+  "json-to-yaml"
+ ],
+ "keywords": [
+  "json formatter online",
+  "json beautifier",
+  "pretty print json",
+  "free json formatter",
+  "format json online",
+  "json indent tool"
+ ]
+}

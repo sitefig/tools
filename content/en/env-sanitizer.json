@@ -1,0 +1,45 @@
+{
+ "id": "env-sanitizer",
+ "seoTitle": "Free .env Sanitizer - Create a Safe .env.example",
+ "metaDescription": "Turn a real .env into a safe .env.example by replacing secret-looking values with placeholders. Comments and order are kept. Free, nothing uploaded.",
+ "intro": "Turns a real .env file into a safe .env.example: secret-looking keys or values are replaced by placeholders, while comments, blank lines and order are preserved.",
+ "why": "Every project wants a .env.example so new developers know which variables to set, and every project has had the moment where a real secret nearly went into it. Copying the file and blanking values by hand invites mistakes. This tool does the pass for you. It replaces values of keys that look sensitive (PASSWORD, TOKEN, KEY, SECRET, DSN) and values that look like secrets even under a harmless name, such as JWTs, AWS keys, long hex or base64 strings and URLs with embedded passwords. Other settings can be kept or blanked. The detection is heuristic, so read the result before you commit it. Your .env is processed locally in the browser and is not uploaded.",
+ "howTo": [
+  "Paste your .env file into the input box.",
+  "Choose whether to keep or blank the values of non-secret settings, and pick the placeholder style.",
+  "Read the output carefully, then save it as .env.example."
+ ],
+ "faq": [
+  {
+   "q": "How does it decide what is secret?",
+   "a": "By key name (for example PASSWORD, TOKEN, KEY, SECRET, DSN) and by value shape: JWTs, AWS and API key formats, long hex or base64 strings, and URLs with passwords. It can miss unusual secrets."
+  },
+  {
+   "q": "What is preserved?",
+   "a": "Comments, blank lines, the order of variables and an optional export prefix are all preserved, so the example file reads like your original. Only the values are replaced or blanked."
+  },
+  {
+   "q": "Is it safe to paste a real .env?",
+   "a": "The processing is local and nothing is uploaded. Even so, treat live secrets with care, and always read the result before committing."
+  },
+  {
+   "q": "What placeholder styles are there?",
+   "a": "The key name in angle brackets, the word changeme, or empty. Choose the one that matches your team's convention."
+  }
+ ],
+ "related": [
+  "env-linter",
+  "env-toolkit",
+  "secret-detector-redactor",
+  "docker-compose-env-generator",
+  "json-to-env",
+  "env-to-json"
+ ],
+ "keywords": [
+  "env sanitizer",
+  "env to env.example",
+  "remove secrets from .env",
+  "free env example generator",
+  ".env file redact values"
+ ]
+}

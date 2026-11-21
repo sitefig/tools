@@ -1,0 +1,45 @@
+{
+ "id": "base58-encoder",
+ "seoTitle": "Free Base58 Encoder and Decoder Online",
+ "metaDescription": "Encode text or hex bytes to Base58 with the Bitcoin alphabet, or decode Base58 back. Free, no checksum, and runs in your browser.",
+ "intro": "Encode text or hex bytes using the Bitcoin Base58 alphabet, or decode a Base58 string back to text or hex. No checksum is added or checked.",
+ "why": "Base58 drops the look-alike characters 0, O, I and l from Base64, so values are easier to read aloud and copy by hand. It is used for Bitcoin addresses, Solana public keys, IPFS CIDv0 hashes and many other identifiers.\n\nWhen you are debugging one of these, you often need to see the raw bytes behind a string, or turn a hex value into the string form. This tool converts both ways using big-integer arithmetic and keeps leading zero bytes as leading ones, which is how Base58 preserves them. It does not add the four-byte checksum used by Base58Check, so it will not validate a Bitcoin address by itself.",
+ "howTo": [
+  "Choose encode or decode, and whether the bytes are text or hex.",
+  "Paste your text, hex bytes or Base58 string.",
+  "Copy the converted result."
+ ],
+ "faq": [
+  {
+   "q": "Does it handle Base58Check?",
+   "a": "No. Base58Check adds a version byte and a four-byte checksum around the payload. This tool converts the plain bytes only, so a decoded Bitcoin address will include those extra bytes."
+  },
+  {
+   "q": "Why do leading zero bytes become ones?",
+   "a": "The Base58 alphabet starts with the digit 1 for the value zero. Each leading zero byte in the input is written as a leading 1 so that the length survives a round trip."
+  },
+  {
+   "q": "Which alphabet is used?",
+   "a": "The Bitcoin alphabet: digits 1 to 9, uppercase without I and O, and lowercase without l. Flickr and Ripple use different orderings, which this tool does not support."
+  },
+  {
+   "q": "What happens with a bad character?",
+   "a": "Decoding stops with an error naming the invalid character, for example a zero or a lowercase L, so you can spot a transcription mistake."
+  }
+ ],
+ "related": [
+  "solana-address-validator",
+  "bech32-codec",
+  "base32",
+  "crockford-base32-encoder",
+  "hex-to-base64",
+  "number-base-converter"
+ ],
+ "keywords": [
+  "base58 encoder",
+  "base58 decode online",
+  "bitcoin base58 converter",
+  "free base58 tool",
+  "solana address base58"
+ ]
+}

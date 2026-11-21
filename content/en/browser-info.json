@@ -1,0 +1,46 @@
+{
+ "id": "browser-info",
+ "seoTitle": "Free Browser Capabilities and Privacy Info Viewer",
+ "metaDescription": "Check browser features, client hints, storage quota, permissions, DNT and GPC signals and connection info. Free; read locally from your browser.",
+ "intro": "Lists what your own browser supports and exposes: features, client hints, storage quota, permission states, privacy signals such as DNT and GPC, and connection details.",
+ "why": "When a web feature fails or a site behaves differently in one browser, the first question is what that browser actually supports. The same page also answers a privacy question: what does my browser tell every site by default, and have my privacy signals been switched on?\n\nThis viewer reads the information directly from the browser APIs and shows it in tables. You can see support for features such as service workers, WebAssembly, WebGL and WebGPU, the client hints available to sites, how much storage you have left, whether permissions are granted, prompt or denied, and whether Do Not Track and Global Privacy Control are set. Nothing is sent to a server, because the values come from your own device.",
+ "howTo": [
+  "Open the page and let it read your browser.",
+  "Scroll through the sections for features, client hints, storage and permissions.",
+  "Check the privacy signals section to see if DNT and GPC are set.",
+  "Compare against another browser or profile when debugging differences."
+ ],
+ "faq": [
+  {
+   "q": "Where does the information come from?",
+   "a": "From standard browser APIs such as navigator, the storage estimate API, the Permissions API and the connection API. Values depend on your browser, and some APIs are missing in Firefox or Safari."
+  },
+  {
+   "q": "Why are some values unknown or n/a?",
+   "a": "Browsers hide or lack some APIs for privacy or compatibility reasons. An n/a value usually means the browser does not expose it, not that the tool failed."
+  },
+  {
+   "q": "Do DNT and GPC actually protect me?",
+   "a": "They are signals that ask sites not to track or sell data. Sites are not technically forced to respect them, though GPC has legal weight in some regions. They are no substitute for blocking trackers."
+  },
+  {
+   "q": "Is any of this uploaded?",
+   "a": "No. The data is read locally and displayed on the page. Nothing is sent to this site or to third parties."
+  }
+ ],
+ "related": [
+  "browser-fingerprint",
+  "user-agent-parser",
+  "screen-info",
+  "cookie-flag-analyzer",
+  "keyboard-event-viewer",
+  "gamepad-tester"
+ ],
+ "keywords": [
+  "browser capabilities test",
+  "check browser features",
+  "what does my browser support",
+  "global privacy control check",
+  "browser info online"
+ ]
+}

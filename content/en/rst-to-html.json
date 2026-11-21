@@ -1,0 +1,41 @@
+{
+ "id": "rst-to-html",
+ "seoTitle": "reStructuredText to HTML Converter (Subset, Offline)",
+ "metaDescription": "Render common reStructuredText to HTML in your browser: titles, lists, literal blocks, code-block, admonitions and links, with line-numbered warnings.",
+ "intro": "Converts a practical subset of reStructuredText to HTML without Python or a server.",
+ "why": "README.rst files and Sphinx sources use reStructuredText. Rendering needs docutils, which is a Python package. This page has a small hand-written converter for the common parts instead.\n\nIt handles section titles, paragraphs, bullet and numbered lists, definition and field lists, block quotes, literal blocks, comments, targets and links, basic inline markup, and the note, warning, code-block and image directives. I compared output with docutils on sample documents: structure matched, with differences in wrapper markup and class names. Tables, footnotes, substitutions and most directives are not supported and are reported as warnings.",
+ "howTo": [
+  "Paste the .rst text.",
+  "Read the preview and the warnings comment.",
+  "Copy the HTML.",
+  "Use docutils for full fidelity."
+ ],
+ "faq": [
+  {
+   "q": "Is this docutils?",
+   "a": "No. It is a hand-written subset converter."
+  },
+  {
+   "q": "What gets skipped?",
+   "a": "Tables, footnotes, substitutions, roles other than a few, and unknown directives."
+  },
+  {
+   "q": "Are links safe?",
+   "a": "Only http, https, mailto, ftp and relative targets are kept."
+  }
+ ],
+ "related": [
+  "markdown-to-html",
+  "markdown-preview",
+  "html-to-markdown",
+  "bbcode-to-html",
+  "docx-to-html",
+  "html-sanitizer"
+ ],
+ "keywords": [
+  "rst to html",
+  "restructuredtext converter",
+  "rst preview online",
+  "sphinx rst to html"
+ ]
+}

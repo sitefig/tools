@@ -1,0 +1,45 @@
+{
+  "id": "mongodb-query-builder",
+  "seoTitle": "MongoDB Query Builder: find(), aggregate(), filter JSON",
+  "metaDescription": "Build a MongoDB find() or aggregate() from simple conditions, with $in, $regex, ranges, projection, sort and limit, as mongosh code and JSON.",
+  "intro": "Write a MongoDB filter from readable lines and get both the find call and the equivalent aggregation.",
+  "why": "Conditions are written as \"field operator value\" with =, !=, >, >=, <, <=, in, nin, regex and exists. Values are parsed as JSON where possible. The tool merges operators on the same field, adds a projection and sort and prints the find command, the equivalent aggregate pipeline and the filter as JSON.\n\nWhen user input goes into a filter object, check its type: an attacker can send {\"$ne\": \"\"} where a string is expected (operator injection).\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the collection.",
+    "Write conditions, one per line.",
+    "Set projection, sort and limit.",
+    "Copy the mongosh command."
+  ],
+  "faq": [
+    {
+      "q": "What is operator injection?",
+      "a": "Passing an object with $-operators in place of a value to change the query logic. Validate that values are plain strings or numbers."
+    },
+    {
+      "q": "Can it write updates?",
+      "a": "No, only read queries."
+    },
+    {
+      "q": "Does it connect to a database?",
+      "a": "No; it only writes the command."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "sql-to-mongodb",
+    "mongodb-to-sql",
+    "mongodb-aggregate-builder",
+    "bson-hex-converter",
+    "mongodb-objectid-parser",
+    "json-format"
+  ],
+  "keywords": [
+    "mongodb query builder",
+    "mongodb find generator",
+    "mongosh query",
+    "aggregation pipeline"
+  ]
+}

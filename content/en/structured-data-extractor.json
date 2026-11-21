@@ -1,0 +1,45 @@
+{
+ "id": "structured-data-extractor",
+ "seoTitle": "Structured Data Extractor: JSON-LD, Microdata and RDFa From HTML",
+ "metaDescription": "Pull all JSON-LD, microdata and RDFa out of pasted HTML. See each item as a tree and copy it as JSON-LD.",
+ "intro": "Finds JSON-LD scripts, microdata items and RDFa items in pasted HTML and lists each with its type, properties and a copyable JSON-LD version.",
+ "why": "Pages often mix formats, and testing tools show them in different places. This tool lists every item it finds, labelled by format, as an indented tree followed by the same item as JSON-LD. Invalid JSON-LD blocks are reported with the line and column.\n\nNothing is fetched: paste the HTML you copied from the page source or the elements panel. Items that scripts add after loading need the rendered HTML.",
+ "howTo": [
+  "Copy the HTML from view-source or DevTools.",
+  "Paste it in and add a base URL if you want absolute links.",
+  "Read the tree for each item.",
+  "Copy any item as JSON-LD."
+ ],
+ "faq": [
+  {
+   "q": "Can it read a live URL?",
+   "a": "No. A web page cannot fetch other sites. Paste the HTML."
+  },
+  {
+   "q": "What if a script adds the markup later?",
+   "a": "Copy the rendered HTML from DevTools rather than view-source."
+  },
+  {
+   "q": "Does it merge duplicates?",
+   "a": "No, use the @graph merger for that."
+  },
+  {
+   "q": "Which formats are covered?",
+   "a": "JSON-LD, microdata and a subset of RDFa."
+  }
+ ],
+ "related": [
+  "microdata-to-jsonld",
+  "rdfa-to-jsonld",
+  "jsonld-inspector",
+  "html-url-extractor",
+  "product-page-extractor",
+  "schema-graph-merger"
+ ],
+ "keywords": [
+  "structured data extractor",
+  "extract json-ld from html",
+  "microdata rdfa extractor",
+  "schema markup finder"
+ ]
+}

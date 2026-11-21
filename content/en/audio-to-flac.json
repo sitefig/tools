@@ -1,0 +1,45 @@
+{
+ "id": "audio-to-flac",
+ "seoTitle": "Convert Audio to FLAC Online, Lossless and Private",
+ "metaDescription": "Turn MP3, M4A, OGG or WAV into a lossless FLAC file in your browser. 16 or 24 bit, mono to 8 channels, no upload, no account.",
+ "intro": "Decodes an audio file with your browser and writes it back as FLAC, the lossless format. The encoder is hand-written code that runs on your device.",
+ "why": "FLAC stores audio in about half the space of a WAV file without changing a single sample. That makes it a good archive format for recordings you made yourself, for sample libraries and for masters that you want to keep.\n\nThis tool encodes with fixed predictors and Rice coding, picks the best stereo mode for each block, and checks out against standard decoders. The compression is a little weaker than the reference encoder at its highest setting. Converting a lossy file such as an MP3 to FLAC keeps the lossy sound; it cannot bring back what was thrown away.",
+ "howTo": [
+  "Choose an audio file your browser can play.",
+  "Pick 16 or 24 bit.",
+  "Press Run and wait for the result.",
+  "Download the .flac file."
+ ],
+ "faq": [
+  {
+   "q": "Is this really lossless?",
+   "a": "Yes. Decoding the FLAC gives back exactly the samples the browser decoded from your file, rounded to the bit depth you chose."
+  },
+  {
+   "q": "Why not MP3 or OGG output?",
+   "a": "Those need an encoder, and browsers do not expose one. This site ships no third-party code, so only lossless FLAC and WAV are offered."
+  },
+  {
+   "q": "Why is the MD5 field empty?",
+   "a": "The FLAC format allows an all-zero MD5, meaning unknown. Players and decoders do not require it."
+  },
+  {
+   "q": "How big will the file be?",
+   "a": "Typically 50 to 70 percent of the raw PCM size, less for quiet or simple material and more for noisy recordings."
+  }
+ ],
+ "related": [
+  "audio-converter",
+  "audio-trimmer",
+  "audio-joiner",
+  "audio-reverser",
+  "audio-waveform-svg",
+  "loudness-normalizer"
+ ],
+ "keywords": [
+  "audio to flac",
+  "wav to flac online",
+  "mp3 to flac converter",
+  "lossless audio converter"
+ ]
+}

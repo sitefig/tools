@@ -1,0 +1,41 @@
+{
+ "id": "google-consent-mode-snippet",
+ "seoTitle": "Google Consent Mode v2 Snippet Builder (gtag)",
+ "metaDescription": "Generate gtag consent default and update code for ad_storage, analytics_storage, ad_user_data and ad_personalization. Free, copy and paste.",
+ "intro": "Generates the Google Consent Mode v2 default and update code with all four main signals, optional regions, wait_for_update and ads_data_redaction.",
+ "why": "Google tags need to know the visitor's consent state before they load. Consent Mode v2 added two signals, ad_user_data and ad_personalization, next to ad_storage and analytics_storage.\n\nThis tool writes the default call, the update function for your banner to call, and the optional settings. The default must run before the Google tag or Tag Manager loads, otherwise the tag starts without it. The code does not collect consent: that is the job of your consent banner.",
+ "howTo": [
+  "Choose the default for each signal. Denied is the usual starting point in the EU.",
+  "Set a region list if the default should only apply to some places.",
+  "Copy the script above your Google tag snippet.",
+  "Call updateConsent from your banner when the visitor chooses."
+ ],
+ "faq": [
+  {
+   "q": "Does this make me compliant?",
+   "a": "No. It passes a state to Google tags. You still need a valid consent banner and a lawful basis."
+  },
+  {
+   "q": "What does wait_for_update do?",
+   "a": "It tells tags to wait that many milliseconds for an update call before sending data, so a stored choice can arrive first."
+  },
+  {
+   "q": "Can I check it works?",
+   "a": "Yes. Paste a request URL into the Consent Mode Decoder to see the gcs and gcd values."
+  }
+ ],
+ "related": [
+  "consent-mode-debugger",
+  "consent-banner-checklist",
+  "cookie-banner-generator",
+  "gpc-snippet-generator",
+  "tracker-detector",
+  "har-analyzer"
+ ],
+ "keywords": [
+  "google consent mode v2",
+  "gtag consent default",
+  "ad_user_data ad_personalization",
+  "consent mode snippet"
+ ]
+}

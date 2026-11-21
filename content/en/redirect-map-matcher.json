@@ -1,0 +1,45 @@
+{
+  "id": "redirect-map-matcher",
+  "seoTitle": "Site Migration Redirect Map Matcher (Old to New URLs)",
+  "metaDescription": "Match old URLs to new URLs by path and slug similarity and export a 301 redirect map as CSV, nginx or Apache rules. Review before use.",
+  "intro": "Give it a list of old URLs and a list of new URLs and it proposes the best match for each, with a score, ready to export as a redirect map.",
+  "why": "Matching goes in order of confidence: identical path (100), identical final slug (92), then a blend of shared path words and edit distance on the last segment. Anything below your minimum score is listed separately with the closest candidate so you can map it by hand.\n\nA wrong redirect is worse than a 404, so treat the output as a draft: spot-check every row, group redirects by section, and point retired pages to the closest parent rather than the homepage. Output formats are CSV, nginx \"location =\" blocks and Apache \"Redirect 301\" lines.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the old URLs in the first box and the new URLs in the second.",
+    "Pick a minimum score and an output format.",
+    "Review matches and the unmatched list.",
+    "Deploy the rules in staging, test with a crawler, then go live."
+  ],
+  "faq": [
+    {
+      "q": "How accurate is the matching?",
+      "a": "Exact path and slug matches are reliable. Fuzzy matches are suggestions; always verify them."
+    },
+    {
+      "q": "What about query strings?",
+      "a": "Matching uses the path only. Add rules for parameters separately if they matter."
+    },
+    {
+      "q": "Should unmatched pages go to the homepage?",
+      "a": "Avoid that. Search engines treat mass redirects to the homepage as soft 404s; use the closest relevant page or let it return 410/404."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "redirect-code-generator",
+    "redirect-rules-converter",
+    "htaccess-generator",
+    "nginx-config-generator",
+    "url-parameter-analyzer",
+    "sitemap-url-extractor"
+  ],
+  "keywords": [
+    "site migration redirects",
+    "301 redirect map",
+    "url mapping tool",
+    "redirect matcher"
+  ]
+}

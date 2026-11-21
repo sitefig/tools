@@ -1,0 +1,46 @@
+{
+  "id": "image-rotate-flip",
+  "seoTitle": "Free Image Rotate and Flip Tool: Any Angle",
+  "metaDescription": "Rotate an image by any angle with the canvas expanding to fit, and flip it horizontally or vertically. Free, files stay in your browser.",
+  "intro": "Rotates images clockwise by any angle, growing the canvas so nothing is cut off, and can mirror them horizontally or vertically. Output as PNG, JPEG or WebP, with batch support.",
+  "why": "A scanned page comes out sideways, a phone photo is mirrored, or a screenshot is a few degrees crooked. Fixing that in an editor means opening a heavy app for a one-second job.\n\nEnter the angle in degrees, clockwise, and tick the flip options you need. Ninety, 180 and 270 give clean quarter turns. Other angles work too, and the canvas is enlarged to hold the rotated picture, which leaves empty corners that are transparent in PNG and WebP and white in JPEG. All processing happens in your browser using a canvas, so private scans and photos are not uploaded anywhere.",
+  "howTo": [
+    "Choose one or more image files.",
+    "Enter a rotation angle in degrees, clockwise.",
+    "Tick Flip horizontal or Flip vertical if needed, and select a format and quality.",
+    "Run it and download the rotated images."
+  ],
+  "faq": [
+    {
+      "q": "Which angles work?",
+      "a": "Any number. Positive values turn clockwise, negative values turn anticlockwise. Quarter turns of 90, 180 and 270 degrees are lossless in shape, while other angles resample the pixels slightly."
+    },
+    {
+      "q": "What fills the corners after a non-right-angle rotation?",
+      "a": "The canvas grows to fit the rotated image, and the new corners are empty. They stay transparent in PNG and WebP. In JPEG they become white."
+    },
+    {
+      "q": "Does flipping change the file size or quality?",
+      "a": "The picture is redrawn and encoded again, so lossy formats may change size a little. Choose PNG for a lossless result."
+    },
+    {
+      "q": "Does it fix photos that are sideways because of EXIF orientation?",
+      "a": "Browsers usually apply the EXIF orientation when displaying an image, and the tool saves what the browser draws. If a result still looks wrong, rotate it by hand here."
+    }
+  ],
+  "related": [
+    "image-cropper",
+    "image-resizer",
+    "image-filters",
+    "image-format-converter",
+    "pdf-rotate",
+    "exif-viewer"
+  ],
+  "keywords": [
+    "rotate image online",
+    "flip image horizontally",
+    "mirror image online",
+    "rotate photo by angle",
+    "free image rotator"
+  ]
+}

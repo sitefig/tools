@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Logfmt Parser: key=value Logs to JSON, Table or CSV | Free Tools</title>
+<meta name="description" content="Convert logfmt lines from Heroku, Go and other services into JSON, a table or CSV. Quoted values and typed numbers supported. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/logfmt-parser/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/logfmt-parser/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/logfmt-parser/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Logfmt Parser: key=value Logs to JSON, Table or CSV | Free Tools">
+<meta property="og:description" content="Convert logfmt lines from Heroku, Go and other services into JSON, a table or CSV. Quoted values and typed numbers supported. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/logfmt-parser/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Logfmt Parser: key=value Logs to JSON, Table or CSV | Free Tools">
+<meta name="twitter:description" content="Convert logfmt lines from Heroku, Go and other services into JSON, a table or CSV. Quoted values and typed numbers supported. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Logfmt Parser: key=value Log Lines to JSON or Table","url":"https://tools.sitefig.net/en/logfmt-parser/","description":"Convert logfmt lines from Heroku, Go and other services into JSON, a table or CSV. Quoted values and typed numbers supported. Free.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste logfmt lines or choose a file.","Choose the output format.","Turn typing of numbers on or off.","Copy the result."],"keywords":"logfmt to json, parse logfmt, key=value log parser","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Log Parsing","item":"https://tools.sitefig.net/en/#log-parsing"},{"@type":"ListItem","position":3,"name":"Logfmt Parser: key=value Log Lines to JSON or Table","item":"https://tools.sitefig.net/en/logfmt-parser/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are bare words kept?","acceptedAnswer":{"@type":"Answer","text":"Only if you tick the option. They become key=true."}},{"@type":"Question","name":"Does it handle a prefix before the pairs?","acceptedAnswer":{"@type":"Answer","text":"Words before the first pair are ignored, so syslog-style prefixes do not break it."}},{"@type":"Question","name":"Are numbers converted?","acceptedAnswer":{"@type":"Answer","text":"By default yes. Long digit strings stay text so IDs are not damaged."}},{"@type":"Question","name":"Is my log uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#log-parsing">Log Parsing</a></li><li><span aria-current="page">Logfmt Parser: key=value Log Lines to JSON or Table</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Logfmt Parser: key=value Log Lines to JSON or Table</h1>
+<p class="lede">Parses key=value logfmt lines into objects and prints them as JSON, JSON lines, a table or CSV.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="logfmt-parser" data-module="new12" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Logfmt is compact for people but awkward for tools. Converting it to JSON or CSV lets you use jq, spreadsheets or other viewers.</p>
+<p>Quoted values with escapes are supported. Numbers and true or false can be converted to types. Words without an equals sign are ignored unless you ask to keep them.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste logfmt lines or choose a file.</li><li>Choose the output format.</li><li>Turn typing of numbers on or off.</li><li>Copy the result.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Are bare words kept?</summary><p>Only if you tick the option. They become key=true.</p></details>
+<details><summary>Does it handle a prefix before the pairs?</summary><p>Words before the first pair are ignored, so syslog-style prefixes do not break it.</p></details>
+<details><summary>Are numbers converted?</summary><p>By default yes. Long digit strings stay text so IDs are not damaged.</p></details>
+<details><summary>Is my log uploaded?</summary><p>No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/heroku-router-log-parser/"><span class="link-card__title">Heroku Router Log Parser (Dyno, Service Time, H-Code Errors)</span><span class="link-card__desc">Extract dyno, connect and service time, status and bytes from heroku[router] lines. Counts H-code errors such as H12 request timeout with their official titles, and ranks slow paths.</span></a></li><li><a class="link-card" href="/en/jsonl-log-filter/"><span class="link-card__title">JSON Lines Log Filter: Flatten Fields and Filter by Any Key</span><span class="link-card__desc">Load newline-delimited JSON logs, flatten nested fields to dotted keys and filter by any key with =, !=, ~, &gt;, &lt;. Shows a level summary and a table of the matching rows.</span></a></li><li><a class="link-card" href="/en/ndjson-viewer/"><span class="link-card__title">NDJSON / JSON Lines Viewer (Table, Sort, CSV)</span><span class="link-card__desc">Read newline-delimited JSON as a table. Keys become columns (nested keys use dot paths), rows can be sorted, and bad lines are reported with their line number.</span></a></li><li><a class="link-card" href="/en/json-to-csv/"><span class="link-card__title">JSON to CSV</span><span class="link-card__desc">Convert an array of JSON objects to CSV, flattening nested values into dotted columns.</span></a></li><li><a class="link-card" href="/en/log-line-prettifier/"><span class="link-card__title">Log Line Prettifier: Expand JSON Inside Log Lines</span><span class="link-card__desc">Find JSON objects and arrays inside application log lines and print each as an indented block under its line, leaving the rest of the line as it was.</span></a></li><li><a class="link-card" href="/en/log-format-detector/"><span class="link-card__title">Log Format Auto-Detector: Which Parser Fits These Lines?</span><span class="link-card__desc">Paste a sample of log lines and see which known format each line matches (Combined, syslog, JSON, logfmt, W3C, HAProxy, cloud logs and more), with a share per format and the tool to open next.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

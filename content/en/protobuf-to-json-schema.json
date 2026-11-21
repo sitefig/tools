@@ -1,0 +1,45 @@
+{
+ "id": "protobuf-to-json-schema",
+ "seoTitle": "Free Protobuf to JSON Schema Converter (draft-07)",
+ "metaDescription": "Convert .proto messages and enums into a JSON Schema draft-07 document that follows the proto3 JSON mapping. Free, runs in your browser.",
+ "intro": "Converts .proto messages and enums into a JSON Schema draft-07 document with definitions, following the proto3 JSON mapping: int64 as numeric strings, bytes as base64 and Timestamp as date-time.",
+ "why": "Protobuf describes your messages for gRPC, but plenty of tooling around an API expects JSON Schema: validators, form generators, documentation sites, API gateways and mock servers. Rewriting the schema by hand keeps two definitions in step only until the next change. This tool turns the .proto source into a draft-07 schema with definitions for each message and enum, using the same rules protobuf uses for JSON: camelCase property names, 64-bit integers as numeric strings, bytes as base64 and timestamps as date-time. You choose the root message, or let it find the first top-level one. Imports are not followed, so paste related files together. Your file is processed in your browser.",
+ "howTo": [
+  "Paste the .proto source into the input box.",
+  "Name the root message, or leave it blank, and set camelCase and 64-bit integer options.",
+  "Copy the JSON Schema and use it with your validator or documentation tool."
+ ],
+ "faq": [
+  {
+   "q": "Which JSON Schema version does it write?",
+   "a": "Draft-07, with a definitions section that holds every message and enum, and $ref links between them. The root message is referenced from the top of the document."
+  },
+  {
+   "q": "How are int64 values described?",
+   "a": "By default as strings holding numbers, matching the proto3 JSON mapping. You can choose number instead if your system uses numeric JSON."
+  },
+  {
+   "q": "How is the root picked?",
+   "a": "By the message name you enter. If blank, it takes the first top-level message that no other message uses."
+  },
+  {
+   "q": "Does it support proto2 and imports?",
+   "a": "It reads proto2 and proto3 syntax in the text you paste. Imported files are not fetched, so include the messages you need."
+  }
+ ],
+ "related": [
+  "protobuf-to-json",
+  "proto-to-typescript",
+  "json-schema-to-protobuf",
+  "json-schema-validator",
+  "typescript-to-json-schema",
+  "openapi-validator"
+ ],
+ "keywords": [
+  "protobuf to json schema",
+  "proto to json schema converter",
+  "convert proto message to json schema",
+  "free protobuf schema tool",
+  "proto3 to draft-07"
+ ]
+}

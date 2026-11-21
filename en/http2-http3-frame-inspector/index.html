@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free HTTP/2 and HTTP/3 Frame Inspector | Free Tools</title>
+<meta name="description" content="Decode hex dumps of HTTP/2 frames with SETTINGS, HEADERS, DATA and GOAWAY, or HTTP/3 frames with varints. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/http2-http3-frame-inspector/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/http2-http3-frame-inspector/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/http2-http3-frame-inspector/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free HTTP/2 and HTTP/3 Frame Inspector | Free Tools">
+<meta property="og:description" content="Decode hex dumps of HTTP/2 frames with SETTINGS, HEADERS, DATA and GOAWAY, or HTTP/3 frames with varints. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/http2-http3-frame-inspector/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free HTTP/2 and HTTP/3 Frame Inspector | Free Tools">
+<meta name="twitter:description" content="Decode hex dumps of HTTP/2 frames with SETTINGS, HEADERS, DATA and GOAWAY, or HTTP/3 frames with varints. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"HTTP/2 & HTTP/3 Frame Inspector","url":"https://tools.sitefig.net/en/http2-http3-frame-inspector/","description":"Decode hex dumps of HTTP/2 frames with SETTINGS, HEADERS, DATA and GOAWAY, or HTTP/3 frames with varints. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose HTTP/2 or HTTP/3.","Paste the hex dump of the frames, with or without spaces.","Read the decoded frames in order, with type, flags, stream ID and payload details.","Compare them with the expected behaviour in the RFC to find the unexpected frame or setting."],"keywords":"http2 frame decoder, http3 frame inspector, decode http/2 hex dump, hpack frame analyzer, http2 settings frame decoder, free http2 debugging tool","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Network & HTTP","item":"https://tools.sitefig.net/en/#network-and-http"},{"@type":"ListItem","position":3,"name":"HTTP/2 & HTTP/3 Frame Inspector","item":"https://tools.sitefig.net/en/http2-http3-frame-inspector/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why are some header strings shown as hex?","acceptedAnswer":{"@type":"Answer","text":"HPACK can compress strings with a Huffman code, and this tool shows those strings as hex instead of decoding them. QPACK blocks in HTTP/3 are not decoded either, so header content is limited."}},{"@type":"Question","name":"Does it need the connection preface?","acceptedAnswer":{"@type":"Answer","text":"For HTTP/2 the client preface is recognised if present, but you can also paste only the frames. The decoder reads the frame headers from the start of what you paste."}},{"@type":"Question","name":"Can I analyse encrypted traffic with it?","acceptedAnswer":{"@type":"Answer","text":"No. You need the decrypted frames, for example from a debug log or a capture decrypted with a key log file. Raw TLS records on the wire will not decode as frames."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#network-and-http">Network &amp; HTTP</a></li><li><span aria-current="page">HTTP/2 &amp; HTTP/3 Frame Inspector</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>HTTP/2 &amp; HTTP/3 Frame Inspector</h1>
+<p class="lede">Paste a hex dump of HTTP/2 frames, with or without the client preface, or HTTP/3 frames, and see each frame decoded: type, flags, stream and length, including SETTINGS, HEADERS, DATA and GOAWAY.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="http2-http3-frame-inspector" data-module="devz3"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>HTTP/2 and HTTP/3 are binary, so when a proxy, a test client or a hand-built server misbehaves, you cannot read the traffic as text. A captured hex dump is accurate but impenetrable: you have to read nine-byte frame headers, track stream IDs and decode flags by eye, and HTTP/3 uses variable-length integers on top.</p>
+<p>This inspector splits the dump into frames and explains each one. HPACK header blocks are shown with their fields where possible, but Huffman-coded strings are shown as hex and QPACK blocks are not decoded, so you still need a full tool for header contents. It is meant for learning and debugging protocol-level issues. The decoding runs in your browser and your capture is not uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose HTTP/2 or HTTP/3.</li><li>Paste the hex dump of the frames, with or without spaces.</li><li>Read the decoded frames in order, with type, flags, stream ID and payload details.</li><li>Compare them with the expected behaviour in the RFC to find the unexpected frame or setting.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why are some header strings shown as hex?</summary><p>HPACK can compress strings with a Huffman code, and this tool shows those strings as hex instead of decoding them. QPACK blocks in HTTP/3 are not decoded either, so header content is limited.</p></details>
+<details><summary>Does it need the connection preface?</summary><p>For HTTP/2 the client preface is recognised if present, but you can also paste only the frames. The decoder reads the frame headers from the start of what you paste.</p></details>
+<details><summary>Can I analyse encrypted traffic with it?</summary><p>No. You need the decrypted frames, for example from a debug log or a capture decrypted with a key log file. Raw TLS records on the wire will not decode as frames.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/http-wire-format/"><span class="link-card__title">HTTP Raw Message &lt;-&gt; JSON (wire format)</span><span class="link-card__desc">Parse a raw HTTP/1.x request or response (start line, headers, body, chunked transfer decoding, Content-Length check, query string, cookies, Basic auth) into structured JSON, or build a correctly framed raw HTTP message (CRLF line endings, Host and Content-Length) from JSON. Useful for debugging proxies, WAF rules, request smuggling cases and hand-written test fixtures.</span></a></li><li><a class="link-card" href="/en/http-headers-analyzer/"><span class="link-card__title">HTTP Headers Analyzer</span><span class="link-card__desc">Paste raw response headers: security, caching, compression, SEO issues.</span></a></li><li><a class="link-card" href="/en/ssl-tls-handshake-simulator/"><span class="link-card__title">TLS Handshake Simulator</span><span class="link-card__desc">Step through TLS 1.2 and TLS 1.3 handshakes (full, resumption, mutual TLS, 0-RTT): messages, what each carries, round trips, and time before the first request byte at your RTT. An explanatory model, not a packet capture.</span></a></li><li><a class="link-card" href="/en/hex-dump-viewer/"><span class="link-card__title">Hex Dump Viewer</span><span class="link-card__desc">Classic hexdump -C style view (offset, hex bytes, ASCII) of UTF-8 text or pasted hex bytes.</span></a></li><li><a class="link-card" href="/en/http-status-reference/"><span class="link-card__title">HTTP Status Codes</span><span class="link-card__desc">Searchable reference of HTTP status codes and what they mean.</span></a></li><li><a class="link-card" href="/en/http-methods-headers/"><span class="link-card__title">HTTP Methods &amp; Headers</span><span class="link-card__desc">Reference for HTTP methods (safe/idempotent) and common request/response headers.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

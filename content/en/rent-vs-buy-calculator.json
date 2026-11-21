@@ -1,0 +1,39 @@
+{
+ "id": "rent-vs-buy-calculator",
+ "seoTitle": "Rent vs Buy Calculator: Wealth After N Years",
+ "metaDescription": "Compare renting and investing with buying a home, including mortgage, upkeep, price growth, rent growth and selling costs.",
+ "intro": "Estimates which path leaves you with more wealth after a number of years.",
+ "why": "The answer depends on assumptions you choose: price growth, rent growth, investment return and costs. The tool models both sides month by month and lets whoever pays less invest the difference.\n\nIt leaves out income tax on returns, mortgage interest relief and changing rates. Change a few inputs to see how sensitive the result is before deciding anything.",
+ "howTo": [
+  "Enter price, down payment, rate and term.",
+  "Enter upkeep, growth, rent and investment return.",
+  "Choose the number of years and read the result."
+ ],
+ "faq": [
+  {
+   "q": "Does it include tax?",
+   "a": "No tax effects are modelled."
+  },
+  {
+   "q": "Why is upkeep a percent of value?",
+   "a": "It combines maintenance and property tax, which usually scale with value."
+  },
+  {
+   "q": "Is it advice?",
+   "a": "No. It is a model of your assumptions."
+  }
+ ],
+ "related": [
+  "mortgage-amortization-calculator",
+  "mortgage-affordability-calculator",
+  "compound-interest",
+  "inflation-calculator",
+  "loan-calculator",
+  "net-worth-calculator"
+ ],
+ "keywords": [
+  "rent vs buy",
+  "should I buy a house",
+  "rent or buy calculator"
+ ]
+}

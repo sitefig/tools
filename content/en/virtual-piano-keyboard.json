@@ -1,0 +1,45 @@
+{
+ "id": "virtual-piano-keyboard",
+ "seoTitle": "Virtual Piano: Play with Your Computer Keyboard, Mouse or Touch",
+ "metaDescription": "Play a piano with the mouse, touch or computer keys, change octave and sound and record a melody to play back. Free, no download.",
+ "intro": "A one-octave piano you play with the mouse, touch or computer keys, with octave buttons, four sounds and a simple recorder.",
+ "why": "Press A S D F G H J K for the white keys and W E T Y U for the black keys, or click and tap the keys. Octave buttons move the range up and down, and you can pick a triangle, sine, square or sawtooth sound.\n\nEvery key is a real button with a name such as C4, so it can also be used with a keyboard and screen reader. The recorder keeps the notes you play and plays them back in time. The sounds are synthesised with the Web Audio API in equal temperament, A4 = 440 Hz. Recordings are not saved when you leave the page.",
+ "howTo": [
+  "Press the computer keys or click the piano keys.",
+  "Use Octave down and Octave up to change range.",
+  "Press Record, play, press Stop, then Play back.",
+  "Choose another sound if you like."
+ ],
+ "faq": [
+  {
+   "q": "Which keys play which notes?",
+   "a": "A to K are the white keys C to C, W E T Y U the black keys."
+  },
+  {
+   "q": "Can I save a recording?",
+   "a": "No, it lasts only while the page is open."
+  },
+  {
+   "q": "Why no sound?",
+   "a": "Check that your device volume is on; some browsers need a first click."
+  },
+  {
+   "q": "Is it touch friendly?",
+   "a": "Yes."
+  }
+ ],
+ "related": [
+  "ear-training-intervals-chords-scales",
+  "sight-reading-note-trainer",
+  "chord-finder-guitar-ukulele",
+  "drum-machine",
+  "tone-generator",
+  "instrument-tuner"
+ ],
+ "keywords": [
+  "virtual piano",
+  "online piano keyboard",
+  "play piano with computer keyboard",
+  "piano recorder"
+ ]
+}

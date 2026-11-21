@@ -1,0 +1,45 @@
+{
+ "id": "csv-column-extractor",
+ "seoTitle": "Free CSV Column Extractor - Pick or Drop Columns",
+ "metaDescription": "Keep, reorder or drop CSV columns by header name or position, remove duplicates and export CSV, plain lines or JSON. Free and runs in your browser.",
+ "intro": "Selects, reorders or removes columns from a CSV by header name, column number or range, with optional de-duplication and CSV, line or JSON output.",
+ "why": "Exports from CRMs, shops and analytics tools usually contain far more columns than you need. Opening a 40-column file in a spreadsheet just to copy two of them is slow, and it is a risk when the file holds personal data. With this tool you type the columns you want, such as \"email,country\" or \"1,3-5\", and get only those back. You can invert the choice to drop columns instead, keep the original header or not, and remove duplicate rows to get a unique list. The one-value-per-line output is handy for pasting email addresses into another system. It all happens in your browser, so the file contents are not sent anywhere.",
+ "howTo": [
+  "Paste your CSV and set the delimiter (comma, semicolon, tab or pipe).",
+  "Type the columns as names or numbers, separated by commas. Ranges such as 2-4 work. Choose keep or drop.",
+  "Tick duplicate removal if needed, choose CSV, one value per line or JSON, and copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Can I mix names and numbers?",
+   "a": "Yes. Each item is first matched against the header names, then read as a range like 2-4, then as a 1-based column number. The order you type is the order of the output columns when you keep them."
+  },
+  {
+   "q": "What if there is no header row?",
+   "a": "Untick \"First row is header\". Columns are then numbered 1, 2, 3 and so on, and all rows are treated as data. JSON output then uses those numbers as keys."
+  },
+  {
+   "q": "How are quotes and line breaks handled?",
+   "a": "The parser follows the usual CSV quoting rules: quoted fields, doubled quotes and line breaks inside quotes are read correctly, and output cells are quoted again where needed. An unterminated quote gives an error."
+  },
+  {
+   "q": "What does one value per line do with several columns?",
+   "a": "When more than one column is selected, the values of each row are joined with a space on one line. For clean lists, select a single column."
+  }
+ ],
+ "related": [
+  "csv-to-json",
+  "csv-viewer",
+  "csv-to-sql",
+  "csv-to-markdown-table",
+  "dedupe-lines",
+  "extract-emails-urls-numbers"
+ ],
+ "keywords": [
+  "csv column extractor",
+  "extract columns from csv",
+  "remove columns from csv online",
+  "free csv column picker",
+  "csv select columns"
+ ]
+}

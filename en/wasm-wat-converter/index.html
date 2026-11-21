@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WAT to WASM and WASM to WAT Converter Online, Free | Free Tools</title>
+<meta name="description" content="Assemble WebAssembly text (WAT) into a .wasm binary or disassemble hex or base64 wasm to WAT in your browser. Core, bulk memory, reference types. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/wasm-wat-converter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/wasm-wat-converter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/wasm-wat-converter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="WAT to WASM and WASM to WAT Converter Online, Free | Free Tools">
+<meta property="og:description" content="Assemble WebAssembly text (WAT) into a .wasm binary or disassemble hex or base64 wasm to WAT in your browser. Core, bulk memory, reference types. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/wasm-wat-converter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="WAT to WASM and WASM to WAT Converter Online, Free | Free Tools">
+<meta name="twitter:description" content="Assemble WebAssembly text (WAT) into a .wasm binary or disassemble hex or base64 wasm to WAT in your browser. Core, bulk memory, reference types. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"WebAssembly Text and Binary Converter (WAT to WASM, WASM to WAT)","url":"https://tools.sitefig.net/en/wasm-wat-converter/","description":"Assemble WebAssembly text (WAT) into a .wasm binary or disassemble hex or base64 wasm to WAT in your browser. Core, bulk memory, reference types. Free.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste WAT text starting with (module, or paste a binary as hex or base64.","The direction is detected automatically; you can force it in the options.","For WAT input, read the validation line and download module.wasm.","For binary input, read the WAT output and copy it."],"keywords":"wat to wasm online, wasm to wat, webassembly text converter, wasm disassembler","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Extras","item":"https://tools.sitefig.net/en/#dev-extras"},{"@type":"ListItem","position":3,"name":"WebAssembly Text and Binary Converter (WAT to WASM, WASM to WAT)","item":"https://tools.sitefig.net/en/wasm-wat-converter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How was correctness checked?","acceptedAnswer":{"@type":"Answer","text":"Assembling and disassembling were compared with wabt 1.0.39. Every supported opcode produced identical bytes, and disassembled real modules re-assembled to the same bytes as wabt did."}},{"@type":"Question","name":"Why does a binary fail with an unsupported error?","acceptedAnswer":{"@type":"Answer","text":"The module probably uses SIMD, atomics or another proposal not implemented here. A module built for the web by Emscripten with SIMD enabled is an example."}},{"@type":"Question","name":"Are names and debug info kept?","acceptedAnswer":{"@type":"Answer","text":"Custom sections including the name section are not interpreted. The disassembler prints numeric indexes with comments."}},{"@type":"Question","name":"Does the assembler type check?","acceptedAnswer":{"@type":"Answer","text":"No. The browser validates the result with WebAssembly.Module and reports its message."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-extras">Dev Extras</a></li><li><span aria-current="page">WebAssembly Text and Binary Converter (WAT to WASM, WASM to WAT)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>WebAssembly Text and Binary Converter (WAT to WASM, WASM to WAT)</h1>
+<p class="lede">Converts WebAssembly text format to a binary module and back. Paste WAT to get the bytes, a download and a validity check, or paste a binary as hex or base64 to read it as text.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="wasm-wat-converter" data-module="new25"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>WebAssembly tooling usually means installing wabt or wasm-tools. For a quick look at what a module contains, or to build a tiny test module by hand, a converter in the page is enough. This one is written from the binary format specification and covers the core instruction set plus common extensions: multi-value blocks, reference types, bulk memory and table operations, saturating conversions and sign extension.</p>
+<p>It does not cover SIMD, threads and atomics, exceptions, tail calls, GC types or multiple memories; these give a clear error. The assembler accepts flat and folded instructions, named identifiers, inline imports and exports, data and element segments, and the common abbreviations. The browser validates the module for you. Output was compared byte for byte with the wabt toolkit: all 198 supported opcodes, 24 hand-written modules, random floats and real modules of up to 3.4 MB.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste WAT text starting with (module, or paste a binary as hex or base64.</li><li>The direction is detected automatically; you can force it in the options.</li><li>For WAT input, read the validation line and download module.wasm.</li><li>For binary input, read the WAT output and copy it.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How was correctness checked?</summary><p>Assembling and disassembling were compared with wabt 1.0.39. Every supported opcode produced identical bytes, and disassembled real modules re-assembled to the same bytes as wabt did.</p></details>
+<details><summary>Why does a binary fail with an unsupported error?</summary><p>The module probably uses SIMD, atomics or another proposal not implemented here. A module built for the web by Emscripten with SIMD enabled is an example.</p></details>
+<details><summary>Are names and debug info kept?</summary><p>Custom sections including the name section are not interpreted. The disassembler prints numeric indexes with comments.</p></details>
+<details><summary>Does the assembler type check?</summary><p>No. The browser validates the result with WebAssembly.Module and reports its message.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/hex-dump-viewer/"><span class="link-card__title">Hex Dump Viewer</span><span class="link-card__desc">Classic hexdump -C style view (offset, hex bytes, ASCII) of UTF-8 text or pasted hex bytes.</span></a></li><li><a class="link-card" href="/en/hex-to-base64/"><span class="link-card__title">Hex ⇄ Base64 Converter</span><span class="link-card__desc">Convert raw bytes between hexadecimal and Base64 (or Base64URL) directly, without going through text. Accepts 0x prefixes, spaces and colons in hex.</span></a></li><li><a class="link-card" href="/en/base64-decode/"><span class="link-card__title">Base64 Decode</span><span class="link-card__desc">Decode Base64 / URL-safe Base64 to UTF-8 text.</span></a></li><li><a class="link-card" href="/en/base64-encode/"><span class="link-card__title">Base64 Encode</span><span class="link-card__desc">Encode text (UTF-8 safe) to Base64 or URL-safe Base64.</span></a></li><li><a class="link-card" href="/en/hex-text/"><span class="link-card__title">Hex ⇄ Text</span><span class="link-card__desc">Convert text to hexadecimal bytes (UTF-8) and back.</span></a></li><li><a class="link-card" href="/en/binary-text/"><span class="link-card__title">Binary ⇄ Text</span><span class="link-card__desc">Convert text to 8-bit binary (UTF-8) and back.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

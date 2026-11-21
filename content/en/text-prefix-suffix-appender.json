@@ -1,0 +1,45 @@
+{
+ "id": "text-prefix-suffix-appender",
+ "seoTitle": "Free Add Prefix and Suffix to Each Line Tool",
+ "metaDescription": "Add a prefix and suffix to every line of text: quotes, commas, SQL, HTML or list markers, with optional trimming, blank-line skipping and numbering.",
+ "intro": "Wrap every line with text of your choice before and after it, such as quotes and a comma, with options to trim, skip blank lines and number the lines.",
+ "why": "Turning a column of names into a quoted array, a list of IDs into SQL fragments or a list of words into HTML items is one of those chores that a text editor macro would handle but that you rarely have the macro for. A regular expression works, but it takes longer to write than the task deserves.\n\nPut your prefix and suffix in the boxes and paste the lines. Typical pairs are a double quote and a quote with a comma, or an opening list tag and its closing tag. Use {n} in either box to insert the line number when the numbering option is on. Trim removes stray spaces first and skip drops blank lines, so empty rows do not become empty quoted entries.",
+ "howTo": [
+  "Paste your lines.",
+  "Type a prefix and a suffix, and choose whether to trim lines and skip empty ones.",
+  "Tick numbering to replace {n} with the line number, then copy the result."
+ ],
+ "faq": [
+  {
+   "q": "How do I make a quoted, comma-separated list?",
+   "a": "Use a double quote as the prefix and a double quote plus a comma as the suffix. Remove the final comma by hand, since the tool treats every line the same way."
+  },
+  {
+   "q": "How does numbering work?",
+   "a": "With numbering on, every {n} in the prefix or suffix becomes the running number of the line, counting only the lines that are kept. Use it for things like numbered steps."
+  },
+  {
+   "q": "What happens to blank lines?",
+   "a": "When skipping is on, empty lines are removed after trimming. When it is off they stay and still receive the prefix and suffix."
+  },
+  {
+   "q": "Can I add text only on one side?",
+   "a": "Yes. Leave either the prefix or the suffix box empty and the other one still applies to every line, so you can add just a bullet or just a trailing comma."
+  }
+ ],
+ "related": [
+  "line-numberer",
+  "list-converter",
+  "sort-lines",
+  "dedupe-lines",
+  "find-replace",
+  "list-to-sql-in"
+ ],
+ "keywords": [
+  "add prefix to each line",
+  "add suffix to every line online",
+  "wrap lines with quotes",
+  "free line prefix suffix tool",
+  "text line wrapper"
+ ]
+}

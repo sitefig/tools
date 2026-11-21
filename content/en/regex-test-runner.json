@@ -1,0 +1,45 @@
+{
+ "id": "regex-test-runner",
+ "seoTitle": "Free Regex Test Case Runner: Should Match, Should Not Match",
+ "metaDescription": "Run one regex against lists of strings that must match and must not match. Get pass or fail for each line. Free and local.",
+ "intro": "Checks one JavaScript regex against many test strings. Mark each line as must match or must not match and see which ones pass.",
+ "why": "A regex that works on the three examples you tried can still accept bad input or reject good input. A list of positive and negative cases catches both kinds of mistake and gives you a small regression test to keep with the pattern.\n\nPut \"+ \" before a string that should match and \"- \" before one that should not. The tool runs them all and prints PASS or FAIL per line with a count. You can match anywhere in the string or require the whole string to match, which is what most validation patterns need.",
+ "howTo": [
+  "Enter the regex in the first box.",
+  "Write test cases in the second box, one per line, starting with \"+ \" or \"- \".",
+  "Choose anywhere or whole string matching.",
+  "Fix the pattern until every line shows PASS."
+ ],
+ "faq": [
+  {
+   "q": "Why do lines need a + or - prefix?",
+   "a": "The prefix says what you expect. Lines without a prefix are ignored, so you can leave comments or blank lines in the list."
+  },
+  {
+   "q": "What is the difference between the match modes?",
+   "a": "Anywhere means the pattern may match a part of the string. Whole string wraps the pattern in ^(?:...)$ so all of it must match."
+  },
+  {
+   "q": "Does it support other regex engines?",
+   "a": "No. It runs the JavaScript engine. Behaviour can differ in PCRE, Python and Java."
+  },
+  {
+   "q": "Can a pattern hang the page?",
+   "a": "A pattern with catastrophic backtracking can. Run it through the ReDoS checker first if you are unsure."
+  }
+ ],
+ "related": [
+  "regex-tester",
+  "redos-checker",
+  "regex-generator",
+  "regex-explainer",
+  "regex-railroad-diagram",
+  "regex-escape"
+ ],
+ "keywords": [
+  "regex unit test",
+  "regex test cases",
+  "test regex match list",
+  "regex validation tester"
+ ]
+}

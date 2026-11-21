@@ -1,0 +1,44 @@
+{
+ "id": "readable-typography-previewer",
+ "seoTitle": "Readable Typography Previewer: Font, Spacing and Line Length",
+ "metaDescription": "Preview text with adjustable font, size, letter, word and line spacing, line length and colours, with contrast checked and CSS to copy.",
+ "intro": "Previews text with typography settings often recommended for dyslexia and low vision.",
+ "why": "Readers differ, and spacing and size often matter more than the font name.\n\nPaste text and change font, size, letter and word spacing, line height, line length, colours and alignment. The preview updates, the text contrast is checked and the CSS is ready to copy. The advice is common guidance and research on special fonts is mixed; let users adjust text themselves.",
+ "howTo": [
+  "Paste a sample of your text.",
+  "Adjust font, spacing and colours.",
+  "Check the contrast line.",
+  "Copy the CSS."
+ ],
+ "faq": [
+  {
+   "q": "Is there a dyslexia font here?",
+   "a": "No. Only installed system fonts are used."
+  },
+  {
+   "q": "What contrast is needed?",
+   "a": "At least 4.5 to 1 for normal text (AA)."
+  },
+  {
+   "q": "Why avoid justify?",
+   "a": "It creates uneven gaps that make reading harder for many."
+  },
+  {
+   "q": "Is the text uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "contrast-checker",
+  "text-spacing-bookmarklet",
+  "readability",
+  "css-clamp-generator",
+  "plain-language-checker",
+  "accessible-palette-generator"
+ ],
+ "keywords": [
+  "dyslexia friendly typography",
+  "readable text preview",
+  "letter spacing line height preview"
+ ]
+}

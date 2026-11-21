@@ -1,0 +1,41 @@
+{
+ "id": "tcf-string-decoder",
+ "seoTitle": "IAB TCF v2 Consent String Decoder (TC String)",
+ "metaDescription": "Decode a TCF v2 TC string: dates, CMP, purposes with consent or legitimate interest, vendor ids, restrictions. Free and offline.",
+ "intro": "Reads an IAB TCF v2 consent string (the euconsent-v2 cookie) and lists every field it holds.",
+ "why": "A TC string packs a visitor's consent choices into a short base64 text. It holds dates, the consent tool that made it, purposes with consent or legitimate interest, special features, vendor ids and publisher restrictions.\n\nThis decoder reads the bit layout from the IAB specification and checks it against a hand-built encoder, including range-encoded vendor lists and the extra segments. Vendor names are not shown because they need IAB's Global Vendor List, which is large and changes. The tool does not check whether a string is valid for a given vendor list.",
+ "howTo": [
+  "Copy the euconsent-v2 cookie value from your browser, or the string from your CMP.",
+  "Paste it into the box.",
+  "Read the core segment, purposes and vendor lists.",
+  "Look up vendor ids in the Global Vendor List if you need names."
+ ],
+ "faq": [
+  {
+   "q": "Does it support TCF v1?",
+   "a": "No. Only v2 strings (version 2) are decoded."
+  },
+  {
+   "q": "Why are vendor names missing?",
+   "a": "Names live in the Global Vendor List, which is not bundled. Only ids are shown."
+  },
+  {
+   "q": "Is my string sent anywhere?",
+   "a": "No. It is decoded in your browser."
+  }
+ ],
+ "related": [
+  "gpp-string-decoder",
+  "us-privacy-string-decoder",
+  "cookie-banner-generator",
+  "consent-mode-debugger",
+  "har-analyzer",
+  "cookie-classifier"
+ ],
+ "keywords": [
+  "tcf string decoder",
+  "euconsent-v2",
+  "tc string",
+  "iab tcf v2.2"
+ ]
+}

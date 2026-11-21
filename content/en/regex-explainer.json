@@ -1,0 +1,45 @@
+{
+  "id": "regex-explainer",
+  "seoTitle": "Regex Explainer: Plain-English Breakdown of a Pattern",
+  "metaDescription": "Paste a JavaScript regular expression and get a token-by-token explanation of groups, classes, lookarounds, quantifiers and flags.",
+  "intro": "Understand a regular expression you did not write by reading what each part matches.",
+  "why": "The explainer parses the pattern the way the engine does and describes literals, escapes (\\d, \\w, \\b, \\p{...}, backreferences), character classes with ranges, anchors, groups (capturing, named, non-capturing), lookahead and lookbehind, alternation and quantifiers including lazy ones. Groups are indented so you can see the structure. Invalid patterns are reported with the engine's message.\n\nIt explains JavaScript syntax; other flavours differ in small ways. The explanation says what the pattern matches, not whether it is a good idea: complex patterns for email or HTML are better replaced with a parser.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the pattern, with or without /slashes/flags.",
+    "Read the indented explanation.",
+    "Test the pattern in the regex tester.",
+    "Simplify anything you cannot explain."
+  ],
+  "faq": [
+    {
+      "q": "Which regex flavour is explained?",
+      "a": "JavaScript (ECMAScript), including named groups, lookbehind and Unicode property escapes."
+    },
+    {
+      "q": "Does it find performance problems?",
+      "a": "No. The regex benchmark simulator helps there."
+    },
+    {
+      "q": "Can it explain PCRE or Python patterns?",
+      "a": "Mostly, when they use shared syntax, but flavour-specific features such as possessive quantifiers are noted as unsupported."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "regex-tester",
+    "regex-cheatsheet",
+    "regex-escape",
+    "regex-generator",
+    "regex-to-code",
+    "regex-benchmark-simulator"
+  ],
+  "keywords": [
+    "regex explainer",
+    "explain regular expression",
+    "regex to english",
+    "regex breakdown"
+  ]
+}

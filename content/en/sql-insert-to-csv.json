@@ -1,0 +1,45 @@
+{
+ "id": "sql-insert-to-csv",
+ "seoTitle": "SQL INSERT to CSV Converter | Free, in Your Browser",
+ "metaDescription": "Turn SQL INSERT ... VALUES statements into CSV with a header row. Multi-row inserts and quoted strings are handled. Nothing is uploaded.",
+ "intro": "Reads INSERT statements and writes the rows as CSV, with column names from the INSERT or from a CREATE TABLE in the same script.",
+ "why": "A database dump is easy to read for a database and awkward for a spreadsheet. Many people only need the rows of one table in CSV.\n\nThe page parses INSERT ... VALUES, including several rows per statement, escaped quotes and NULL. Choose the table when the script has several, and decide whether NULL becomes an empty cell or the word NULL. Only INSERT and CREATE TABLE are read; expressions are kept as text.",
+ "howTo": [
+  "Paste the SQL script.",
+  "Pick a table, or leave empty for the first with rows.",
+  "Choose delimiter and NULL handling.",
+  "Copy the CSV."
+ ],
+ "faq": [
+  {
+   "q": "Which statements are read?",
+   "a": "INSERT ... VALUES and CREATE TABLE for column names. Other statements are ignored."
+  },
+  {
+   "q": "What if there are several tables?",
+   "a": "The first with rows is used. Enter another name in the Table option."
+  },
+  {
+   "q": "Are functions like NOW() evaluated?",
+   "a": "No, they stay as text."
+  },
+  {
+   "q": "Is the SQL uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "sql-to-json",
+  "csv-to-sql",
+  "json-to-sql",
+  "sql-on-csv",
+  "csv-viewer",
+  "sql-format"
+ ],
+ "keywords": [
+  "sql insert to csv",
+  "sql dump to csv",
+  "insert statements to csv",
+  "sql to spreadsheet"
+ ]
+}

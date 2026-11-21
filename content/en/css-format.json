@@ -1,0 +1,47 @@
+{
+ "id": "css-format",
+ "seoTitle": "Free CSS Formatter & Beautifier Online",
+ "metaDescription": "Free online CSS formatter. Beautify minified CSS, including nested rules and @media blocks, with your choice of indent. Runs in your browser.",
+ "intro": "Beautify CSS with one declaration per line and consistent indentation. At-rules such as @media and nested rules are indented, and strings and url() values are left alone.",
+ "why": "Minified stylesheets from a build, a plugin or a copied snippet are hard to read and impossible to review. Before you can find which rule sets a colour or why a media query misbehaves, you need the file laid out properly.\n\nThis formatter puts selectors on their own lines, writes one declaration per line, and indents the contents of @media, @supports and similar blocks, including nested rules. Strings, url() values such as data URIs, and comments are protected, so content like \"a;b{\" does not confuse it. It does not reorder properties or fix mistakes, so a missing semicolon stays missing. Formatting is done in your browser, and your stylesheet is not uploaded.",
+ "howTo": [
+  "Paste your CSS into the input box.",
+  "Choose the indent: 2, 4 or 8 spaces, or a tab.",
+  "Read the formatted stylesheet in the output.",
+  "Copy it into your editor."
+ ],
+ "faq": [
+  {
+   "q": "Does it change my rules?",
+   "a": "No. It changes layout only: line breaks, indentation and spacing around punctuation. Selectors, properties and values are the same, and property order is not changed."
+  },
+  {
+   "q": "Are data URIs and strings safe?",
+   "a": "Yes. Content inside quotes and url() is not touched, so base64 data URIs and strings with semicolons or braces are kept as they are."
+  },
+  {
+   "q": "Does it support nested CSS and @media?",
+   "a": "Yes. @media and other at-rules are indented, and nested rules inside them or inside other rules get deeper indentation."
+  },
+  {
+   "q": "Can it fix invalid CSS?",
+   "a": "No. It does not validate. A missing semicolon or brace will still be missing in the output, though the layout may help you spot it."
+  }
+ ],
+ "related": [
+  "css-minify",
+  "html-format",
+  "js-format",
+  "css-to-scss",
+  "scss-to-css",
+  "css-specificity-calculator"
+ ],
+ "keywords": [
+  "css formatter online",
+  "css beautifier",
+  "format css online",
+  "free css formatter",
+  "css prettifier",
+  "unminify css"
+ ]
+}

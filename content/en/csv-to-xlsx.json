@@ -1,0 +1,46 @@
+{
+ "id": "csv-to-xlsx",
+ "seoTitle": "Free CSV to XLSX Converter - Keep Leading Zeros",
+ "metaDescription": "Convert CSV text to an Excel .xlsx file with numeric cells, auto-detected delimiter and text kept for values like 007. Free, in your browser.",
+ "intro": "Paste CSV text and download an Excel .xlsx file. The delimiter is detected for you, numbers become numeric cells and values such as 007 stay as text.",
+ "why": "Double-clicking a CSV in Excel often goes wrong: leading zeros vanish from postcodes and product codes, long IDs turn into scientific notation, and semicolon-separated files from European systems open as a single column. People then retype or fix cells by hand.\n\nThis converter builds a proper workbook from the CSV text, so you control the outcome. It can detect a comma, semicolon, tab or pipe delimiter, handles quoted fields with embedded commas and line breaks, and turns clean numbers into numeric cells. Numbers with a leading zero, or over fifteen digits, stay as text so nothing is changed. The header row can be bold and the sheet named. Conversion is local, so exports with customer data do not leave your device.",
+ "howTo": [
+  "Paste your CSV into the input box.",
+  "Set the delimiter, or leave it on auto.",
+  "Choose whether to detect numbers, bold the header and name the sheet.",
+  "Run the tool and download data.xlsx."
+ ],
+ "faq": [
+  {
+   "q": "How does it decide what is a number?",
+   "a": "A value that looks like a plain number, with no leading zeros and at most 15 digits, becomes a numeric cell. Anything else, such as 007 or a 20-digit ID, stays text so Excel cannot alter it."
+  },
+  {
+   "q": "How is the delimiter detected?",
+   "a": "With auto selected, the tool counts commas, semicolons, tabs and pipes in the first line and picks the most frequent. If your first line is unusual, choose the delimiter yourself."
+  },
+  {
+   "q": "Does it support quoted fields?",
+   "a": "Yes. Quoted fields can contain delimiters, doubled quotes and line breaks. An unterminated quote produces an error, which usually means the file is damaged or a quote is missing."
+  },
+  {
+   "q": "Does it convert dates?",
+   "a": "No, dates stay as text exactly as they appear in the CSV. Convert them to dates in the spreadsheet if you need date calculations."
+  }
+ ],
+ "related": [
+  "json-to-xlsx",
+  "xlsx-viewer",
+  "csv-viewer",
+  "csv-to-json",
+  "csv-to-sql",
+  "csv-to-markdown-table"
+ ],
+ "keywords": [
+  "csv to xlsx",
+  "convert csv to excel",
+  "csv to excel keep leading zeros",
+  "semicolon csv to xlsx",
+  "free csv converter"
+ ]
+}

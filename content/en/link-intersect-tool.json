@@ -1,0 +1,38 @@
+{
+ "id": "link-intersect-tool",
+ "seoTitle": "Link Intersect: Domains Linking to Competitors but Not to You",
+ "metaDescription": "Paste referring-domain lists for you and up to three competitors to find domains that link to two or more competitors but not to you: top link targets.",
+ "intro": "Find the sites that link to your competitors but not to you.",
+ "why": "Link intersect (or link gap) analysis is a classic outreach list builder: a domain that already links to several competitors is likely to link to a good resource of yours too. Paste your referring domains and up to three competitors' lists (from any backlink tool) and the tool lists domains linking to two or more competitors but not to you, those linking to exactly one, and the common ground.\n\nDomains are merged by registered domain (www and subdomains together). Check each candidate's relevance and the linking page before outreach; the lists come from whatever your backlink tool crawled.",
+ "howTo": [
+  "Paste your referring domains in the first box.",
+  "Paste competitor lists in the other boxes (one domain per line, URLs are fine).",
+  "Take the \"2+ competitors, not you\" list into outreach."
+ ],
+ "faq": [
+  {
+   "q": "Where do I get competitor link data?",
+   "a": "Backlink tools such as Ahrefs, Semrush, Moz or Majestic export referring domains; Search Console gives yours."
+  },
+  {
+   "q": "Why merge subdomains?",
+   "a": "So blog.example.com and www.example.com count as one site."
+  },
+  {
+   "q": "Is the data uploaded?",
+   "a": "No, set operations run in your browser."
+  }
+ ],
+ "related": [
+  "backlink-export-analyzer",
+  "anchor-text-distribution",
+  "disavow-file-generator",
+  "competitor-comparison-matrix",
+  "outreach-mail-merge"
+ ],
+ "keywords": [
+  "link intersect tool",
+  "link gap analysis",
+  "competitor backlinks not mine"
+ ]
+}

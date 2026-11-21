@@ -1,0 +1,47 @@
+{
+ "id": "timezone-converter",
+ "seoTitle": "Free Time Zone Converter for Any Date and Time",
+ "metaDescription": "Convert a date and time from one IANA time zone to several others at once, with DST handled correctly. Free, instant and runs in your browser.",
+ "intro": "Enter a date and time, a source zone and a list of target zones, and see the same moment in each place, with its UTC offset and weekday.",
+ "why": "Scheduling a call between Ghent, New York and Sydney, or checking what time a release lands for a team in another region, gets awkward fast. Offsets change with daylight saving, and not on the same dates in every country, so mental arithmetic breaks twice a year.\n\nThis converter uses the time zone database built into your browser, so each result reflects the rules in force on the date you entered. Give the source zone and a comma-separated list of destinations, and you see local time, offset, weekday and abbreviation for each. Leave the time empty to convert the current moment. It runs locally.",
+ "howTo": [
+  "Enter the date and time as YYYY-MM-DD HH:MM, or leave the box empty to use now.",
+  "Set the From zone using an IANA name such as America/New_York.",
+  "List the target zones, separated by commas.",
+  "Read the converted time, UTC offset and weekday for each zone."
+ ],
+ "faq": [
+  {
+   "q": "What are IANA time zone names?",
+   "a": "Names like Europe/Brussels or Asia/Tokyo from the standard time zone database. They carry the full daylight-saving history, which abbreviations like CET or EST do not. An unknown name produces an error."
+  },
+  {
+   "q": "How does it deal with daylight saving?",
+   "a": "Offsets are looked up for the exact date, so the same zone can show UTC-5 in winter and UTC-4 in summer. A time that does not exist during a spring change, or occurs twice in autumn, is resolved to a single instant."
+  },
+  {
+   "q": "Can I plan a meeting with it?",
+   "a": "Yes, for a single time. The Time Zone Meeting Planner compares working hours across several zones, which is easier for finding a slot that suits everyone."
+  },
+  {
+   "q": "Why is the weekday different in some zones?",
+   "a": "Crossing midnight changes the date. A late afternoon meeting in New York is already the next day in Sydney, and the result shows that date and weekday."
+  }
+ ],
+ "related": [
+  "timezone-meeting-planner",
+  "world-clock",
+  "timestamp-converter",
+  "date-formats",
+  "cron-timezone-converter",
+  "add-subtract-dates"
+ ],
+ "keywords": [
+  "time zone converter",
+  "convert time between time zones",
+  "free timezone calculator",
+  "est to cet converter",
+  "meeting time zone tool",
+  "iana time zone converter"
+ ]
+}

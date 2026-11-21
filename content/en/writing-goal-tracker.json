@@ -1,0 +1,41 @@
+{
+ "id": "writing-goal-tracker",
+ "seoTitle": "Writing Goal Tracker: Streaks from Your Word Count Log",
+ "metaDescription": "Paste a log of dates and words written and see your daily goal streak, longest streak, average and project pace. Free and private.",
+ "intro": "Paste a log of dates and words written, set a daily goal, and see your streak, longest streak, average and the days you hit the goal.",
+ "why": "Daily word-count goals work because streaks show. The hard part is keeping the numbers somewhere.\n\nPaste a log with one line per day, set your goal and optionally a project total. The tool counts the current and longest streak, the share of days you hit the goal, averages and a projected finish at your recent pace. Nothing is stored by the page: you keep the log in your own notes and paste it back.",
+ "howTo": [
+  "Write one line per day: 2026-03-01 620.",
+  "Paste the log and set your daily goal.",
+  "Optionally set today's date and a project target.",
+  "Read the streaks and the last days table."
+ ],
+ "faq": [
+  {
+   "q": "Where is my log saved?",
+   "a": "Nowhere. The page does not store anything, so keep the log in your own file."
+  },
+  {
+   "q": "How is the current streak counted?",
+   "a": "Days in a row that met the goal, ending today if met, or yesterday if today is not over."
+  },
+  {
+   "q": "What about days with no line?",
+   "a": "They count as zero words."
+  }
+ ],
+ "related": [
+  "writing-sprint-log",
+  "pomodoro-timer",
+  "word-counter",
+  "savings-goal",
+  "countdown-to-date",
+  "content-calendar-generator"
+ ],
+ "keywords": [
+  "writing goal tracker",
+  "word count tracker",
+  "writing streak",
+  "nanowrimo tracker"
+ ]
+}

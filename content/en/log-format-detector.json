@@ -1,0 +1,44 @@
+{
+ "id": "log-format-detector",
+ "seoTitle": "Log Format Auto-Detector: Which Parser Fits My Logs?",
+ "metaDescription": "Paste log lines to see which known format they match and which tool opens them. Detects Combined, syslog, JSON, logfmt, HAProxy and more.",
+ "intro": "Matches each line against known log formats, shows shares and names the tool to open next.",
+ "why": "When you get a log file from someone else, the first question is what format it is. This tool tests each line against about thirty patterns, including cloud JSON logs identified by their keys.\n\nThe first matching pattern wins, so ambiguous lines may be assigned to a generic format. It reads the first 5000 lines.",
+ "howTo": [
+  "Paste a sample of the log.",
+  "Read the best guess and the table.",
+  "Open the suggested tool.",
+  "Check unmatched lines if there are any."
+ ],
+ "faq": [
+  {
+   "q": "How many formats?",
+   "a": "About twenty line patterns plus JSON shape detection for CloudTrail, Cloudflare, Traefik, Caddy, Google Cloud, Azure, journald, MongoDB and Vercel."
+  },
+  {
+   "q": "What if nothing matches?",
+   "a": "Use the log pattern miner to see the shapes in the file."
+  },
+  {
+   "q": "Are the tool ids pages here?",
+   "a": "Yes. They are tool ids on this site."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "log-pattern-miner",
+  "access-log-parser",
+  "syslog-parser",
+  "logfmt-parser",
+  "jsonl-log-filter",
+  "log-format-to-regex"
+ ],
+ "keywords": [
+  "detect log format",
+  "identify log file type",
+  "what log format is this"
+ ]
+}

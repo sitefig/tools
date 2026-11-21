@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free UUID v5 and v3 Name-Based Generator | Free Tools</title>
+<meta name="description" content="Generate deterministic name-based UUIDs v5 (SHA-1) or v3 (MD5) from a namespace and names, one per line. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/uuid-v5-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/uuid-v5-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/uuid-v5-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free UUID v5 and v3 Name-Based Generator | Free Tools">
+<meta property="og:description" content="Generate deterministic name-based UUIDs v5 (SHA-1) or v3 (MD5) from a namespace and names, one per line. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/uuid-v5-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free UUID v5 and v3 Name-Based Generator | Free Tools">
+<meta name="twitter:description" content="Generate deterministic name-based UUIDs v5 (SHA-1) or v3 (MD5) from a namespace and names, one per line. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"UUID v5 / v3 Name-Based Generator","url":"https://tools.sitefig.net/en/uuid-v5-generator/","description":"Generate deterministic name-based UUIDs v5 (SHA-1) or v3 (MD5) from a namespace and names, one per line. Free, runs in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose version 5 or 3, and a namespace such as DNS or URL.","Enter one name per line. Use a custom namespace UUID if you have your own.","Copy the UUIDs, each listed with the name it came from."],"keywords":"uuid v5 generator, name based uuid, uuid v3 md5 generator, free uuid namespace tool, deterministic uuid from string","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"UUID v5 / v3 Name-Based Generator","item":"https://tools.sitefig.net/en/uuid-v5-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What makes the result deterministic?","acceptedAnswer":{"@type":"Answer","text":"The UUID is a hash of the namespace bytes followed by the name. The same namespace, name and version always produce the same value, on any machine or language."}},{"@type":"Question","name":"Should I pick v5 or v3?","acceptedAnswer":{"@type":"Answer","text":"Use v5 unless you must match an existing v3 id. Both are just ways of hashing names; SHA-1 in v5 is the newer choice, and neither one is for secrets."}},{"@type":"Question","name":"Can names be case-sensitive?","acceptedAnswer":{"@type":"Answer","text":"Yes. The name is hashed exactly as typed, so Example.com and example.com give different UUIDs. Normalise case before hashing if you want them to match."}},{"@type":"Question","name":"Does it need a valid custom namespace?","acceptedAnswer":{"@type":"Answer","text":"Yes. A custom namespace must be a full UUID in the 8-4-4-4-12 format, or the tool shows an error instead of generating a result."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">UUID v5 / v3 Name-Based Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>UUID v5 / v3 Name-Based Generator</h1>
+<p class="lede">Pick a namespace and list names, and get name-based UUIDs. Version 5 uses SHA-1 and version 3 uses MD5, so the same name always gives the same UUID.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="uuid-v5-generator" data-module="devx"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Random UUIDs are good for new records, but sometimes you need the same identifier every time you see the same thing: a URL, a domain name, an email address, a product code. Name-based UUIDs solve this, because they are computed from a namespace and a name rather than chosen at random.</p>
+<p>They let different systems produce matching ids for imported data without sharing a lookup table. The built-in namespaces are DNS, URL, OID and X500, or you can supply your own UUID. Version 5 is preferred over 3 because SHA-1 beats MD5, although neither is a security feature. Do not use these ids to hide or protect private values.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose version 5 or 3, and a namespace such as DNS or URL.</li><li>Enter one name per line. Use a custom namespace UUID if you have your own.</li><li>Copy the UUIDs, each listed with the name it came from.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What makes the result deterministic?</summary><p>The UUID is a hash of the namespace bytes followed by the name. The same namespace, name and version always produce the same value, on any machine or language.</p></details>
+<details><summary>Should I pick v5 or v3?</summary><p>Use v5 unless you must match an existing v3 id. Both are just ways of hashing names; SHA-1 in v5 is the newer choice, and neither one is for secrets.</p></details>
+<details><summary>Can names be case-sensitive?</summary><p>Yes. The name is hashed exactly as typed, so Example.com and example.com give different UUIDs. Normalise case before hashing if you want them to match.</p></details>
+<details><summary>Does it need a valid custom namespace?</summary><p>Yes. A custom namespace must be a full UUID in the 8-4-4-4-12 format, or the tool shows an error instead of generating a result.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/uuid-generator/"><span class="link-card__title">UUID Generator</span><span class="link-card__desc">Generate v1, v4 and v7 UUIDs in bulk (up to 1000) with formatting options.</span></a></li><li><a class="link-card" href="/en/uuid-v7-timestamp-extractor/"><span class="link-card__title">UUID v7 / v1 Timestamp Extractor</span><span class="link-card__desc">Read the embedded creation time (and version, variant) from UUIDs. v7 stores Unix milliseconds, v1/v6 store 100 ns ticks since 1582.</span></a></li><li><a class="link-card" href="/en/ulid-generator/"><span class="link-card__title">ULID Generator</span><span class="link-card__desc">Generate sortable 26-character ULIDs (48-bit timestamp + 80 random bits).</span></a></li><li><a class="link-card" href="/en/nanoid-generator/"><span class="link-card__title">NanoID Generator</span><span class="link-card__desc">URL-safe random IDs with custom length and alphabet.</span></a></li><li><a class="link-card" href="/en/hash-generator/"><span class="link-card__title">Hash Generator</span><span class="link-card__desc">MD5, SHA-1, SHA-256, SHA-384 and SHA-512 of your text, all at once.</span></a></li><li><a class="link-card" href="/en/mongodb-objectid-parser/"><span class="link-card__title">MongoDB ObjectId Parser</span><span class="link-card__desc">Decode ObjectIds into creation time, random value and counter; one per line.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

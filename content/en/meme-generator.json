@@ -1,0 +1,45 @@
+{
+  "id": "meme-generator",
+  "seoTitle": "Meme Generator: Add Top and Bottom Text to an Image",
+  "metaDescription": "Put classic white outlined meme text at the top and bottom of any image, auto-sized to fit, and save as PNG. The picture stays on your device.",
+  "intro": "Caption an image the classic way without uploading it to a meme site.",
+  "why": "Choose an image, type top and bottom text (uppercase optional) and download the result. The text uses an Impact-style font with a black outline, wraps to at most three lines and shrinks to fit the width. Large images are scaled down to your chosen maximum width.\n\nThe tool adds text only. Respect copyright and people's privacy when you caption photos.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose an image.",
+    "Type the top and bottom text.",
+    "Set uppercase and maximum width.",
+    "Download the PNG."
+  ],
+  "faq": [
+    {
+      "q": "Is the image uploaded?",
+      "a": "No, it is drawn in your browser."
+    },
+    {
+      "q": "What font is used?",
+      "a": "Impact if installed, otherwise a bold condensed sans-serif."
+    },
+    {
+      "q": "Can I add stickers?",
+      "a": "No, only text."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "image-watermark",
+    "image-resizer",
+    "image-compressor",
+    "quote-image-maker",
+    "code-to-image",
+    "image-filters"
+  ],
+  "keywords": [
+    "meme generator",
+    "caption image",
+    "add text to image",
+    "impact font meme"
+  ]
+}

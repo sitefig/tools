@@ -1,0 +1,47 @@
+{
+ "id": "cron-explainer",
+ "seoTitle": "Free Cron Expression Explainer with Next Run Times",
+ "metaDescription": "Paste a 5-field cron expression and read it in plain English, with the next 10 run times in UTC or local time. Free and runs in your browser.",
+ "intro": "Paste a standard 5-field cron expression and get a plain-English description plus the next ten times it will run, in UTC or in your local time.",
+ "why": "Cron strings are compact and easy to misread. Is \"0 9 * * 1-5\" weekdays at nine, and does \"*/15 9-17\" run at 17:45? A wrong schedule means a backup that never runs or a job that fires every minute, and you only find out later.\n\nThis tool parses the expression, checks every field for range errors, and explains it in English. It then lists the next ten run times so you can check the schedule against your expectations. Names such as mon-fri and jan, and shortcuts like @daily and @hourly are understood. When both day-of-month and day-of-week are set, it follows the usual rule that either can match.",
+ "howTo": [
+  "Paste a cron expression with five fields: minute, hour, day of month, month, day of week.",
+  "Choose whether to show run times in UTC or local time.",
+  "Read the plain-English meaning.",
+  "Compare the next ten run times with what you intended."
+ ],
+ "faq": [
+  {
+   "q": "Which cron syntax is supported?",
+   "a": "Standard five-field cron: numbers, lists, ranges, steps, * and ?, month and weekday names, and the aliases @hourly, @daily, @weekly, @monthly and @yearly. Seconds fields, Quartz extras such as L, W or #, and year fields are not supported."
+  },
+  {
+   "q": "How are day-of-month and day-of-week combined?",
+   "a": "If both are restricted, the job runs when either one matches, as classic cron does. If only one is restricted, only that one counts."
+  },
+  {
+   "q": "Which time zone does my cron run in?",
+   "a": "That depends on the scheduler. Many servers use UTC, but crontab uses the system zone and some cloud schedulers let you set one. Compare the UTC and local lists to see the difference."
+  },
+  {
+   "q": "Why does it say no run found?",
+   "a": "The search looks about eight years ahead. An expression such as 0 0 31 2 * (31 February) never matches, so no run is listed. This is usually a sign of a mistake in the schedule."
+  }
+ ],
+ "related": [
+  "cron-generator",
+  "natural-language-to-cron",
+  "cron-timezone-converter",
+  "cron-dialect-converter",
+  "crontab-randomized-generator",
+  "systemd-timer-generator"
+ ],
+ "keywords": [
+  "cron expression explainer",
+  "cron to english",
+  "crontab next run times",
+  "free cron parser",
+  "what does this cron mean",
+  "cron schedule checker"
+ ]
+}

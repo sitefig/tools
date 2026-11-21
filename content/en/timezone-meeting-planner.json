@@ -1,0 +1,43 @@
+{
+ "id": "timezone-meeting-planner",
+ "seoTitle": "Free Time Zone Meeting Planner for Teams",
+ "metaDescription": "Find meeting times that fit everyone's working hours across time zones, with DST applied for your date. Free, runs in your browser.",
+ "intro": "List your participants with their time zones, pick a date and working hours, and see a half-hour grid of local times plus the start times that suit everyone or the most people.",
+ "why": "Scheduling across Brussels, New York, Singapore and Los Angeles is a puzzle. Half the team is asleep at any time you suggest, and daylight saving shifts the answer twice a year, but not on the same day in every country. A mental calculation that works in January can be an hour out in March.\n\nThis planner lays out the whole day in half-hour steps, with each person's local time, marks when the meeting fits inside working hours and shows the next-day or previous-day shift. DST is applied using the date you choose. It runs in your browser, so the names and locations of your colleagues are not uploaded anywhere.",
+ "howTo": [
+  "Write one participant per line as a name, a comma and an IANA time zone, such as Ann, Europe/Brussels.",
+  "Enter the meeting date, or leave it blank to use today.",
+  "Set the working hours and the meeting length in minutes.",
+  "Read the grid and the suggested start time, shown in UTC and in each person's local time."
+ ],
+ "faq": [
+  {
+   "q": "What time zone names does it accept?",
+   "a": "It accepts IANA names like America/New_York or Asia/Kolkata, as understood by your browser. Abbreviations such as EST or CET are not reliable, because they do not say which daylight saving rules apply."
+  },
+  {
+   "q": "What if no time suits everyone?",
+   "a": "The tool then shows the start times where the largest number of people are within working hours, and says how many that is. You can widen the working hours or shorten the meeting to see if a slot appears."
+  },
+  {
+   "q": "Is daylight saving handled?",
+   "a": "Yes, for the date you enter. Offsets are calculated for that day only, so if your meeting series crosses a clock change in one country, check the date after the change as well."
+  }
+ ],
+ "related": [
+  "timezone-converter",
+  "world-clock",
+  "cron-timezone-converter",
+  "countdown-to-date",
+  "date-difference",
+  "epoch-batch"
+ ],
+ "keywords": [
+  "time zone meeting planner",
+  "meeting time across time zones",
+  "best time to meet time zones",
+  "world meeting planner",
+  "free timezone scheduler",
+  "find overlapping working hours"
+ ]
+}

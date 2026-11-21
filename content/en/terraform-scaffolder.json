@@ -1,0 +1,45 @@
+{
+ "id": "terraform-scaffolder",
+ "seoTitle": "Free Terraform AWS Starter Code Scaffolder",
+ "metaDescription": "Scaffold Terraform for AWS: provider, remote state, VPC with subnets, a private S3 bucket and an EC2 instance. Free, runs in your browser.",
+ "intro": "Choose a region, a name prefix and the pieces you want, and get a formatted Terraform starting point with provider, state backend, VPC, S3 bucket and EC2.",
+ "why": "Every new AWS project begins with the same boilerplate: required_providers, a backend, a VPC with public subnets and route tables, a bucket with encryption and public access blocked. Writing it from memory is slow, and copying from an old repo carries over stale settings.\n\nThis scaffolder produces that skeleton with sensible defaults, such as versioning, AES256 encryption, a blocked public bucket policy and IMDSv2 required on the instance. The output is a starting point, not a reviewed production design. Check the CIDR ranges, security group rules and instance size before you apply anything. All generation happens in your browser.",
+ "howTo": [
+  "Set the AWS region and a lowercase name prefix.",
+  "Pick the state backend and tick the VPC, S3 bucket or EC2 blocks you need.",
+  "Copy the generated code into main.tf and review it before running terraform plan."
+ ],
+ "faq": [
+  {
+   "q": "Is the code ready for production?",
+   "a": "No. It is a scaffold with safe-looking defaults. The EC2 security group opens port 443 to the whole internet, for example. Review every block, then run terraform plan."
+  },
+  {
+   "q": "What does the S3 backend option do?",
+   "a": "It adds a backend block pointing at a bucket named from your prefix, with encryption and a lockfile. You must create that bucket yourself first; the tool does not create it."
+  },
+  {
+   "q": "Which provider version is used?",
+   "a": "It pins the AWS provider to the 5.x series with a pessimistic constraint. Change the version if your project needs a different major release."
+  },
+  {
+   "q": "Are credentials involved?",
+   "a": "No. Nothing is read from AWS and no keys are needed. The tool only generates text from the values you type."
+  }
+ ],
+ "related": [
+  "terraform-formatter",
+  "terraform-hcl-to-json",
+  "aws-iam-policy-builder",
+  "aws-iam-policy-linter",
+  "kubernetes-deployment-generator",
+  "ansible-playbook-generator"
+ ],
+ "keywords": [
+  "terraform aws scaffold",
+  "terraform starter template",
+  "generate terraform vpc s3 ec2",
+  "free terraform generator",
+  "terraform boilerplate aws"
+ ]
+}

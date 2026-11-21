@@ -1,0 +1,45 @@
+{
+ "id": "game-of-life-simulator",
+ "seoTitle": "Conway's Game of Life Simulator with Pattern and Cycle Detection",
+ "metaDescription": "Type a starting grid, run any number of generations and see snapshots, population and whether the pattern dies or repeats. Free.",
+ "intro": "Runs Conway's Game of Life on a grid you type, on a torus or with dead edges, and reports the population, snapshots and cycles.",
+ "why": "Life has two rules and endless behavior: a live cell with two or three live neighbours survives, and a dead cell with exactly three becomes live. Draw a glider with # and . characters and watch it walk across the grid.\n\nThe tool prints snapshots and the population per generation and detects when the grid repeats, telling you whether it is a still life or an oscillator and its period, or that everything died. Results were compared with an independent implementation on random grids with both edge rules. It is text-based, not a clickable canvas.",
+ "howTo": [
+  "Type the grid with # for live and . for dead cells.",
+  "Set the number of generations.",
+  "Choose wrap-around (torus) or bounded edges.",
+  "Read the snapshots, population list and the cycle note."
+ ],
+ "faq": [
+  {
+   "q": "Which cell characters work?",
+   "a": "#, O, o, * and 1 are live; everything else is dead."
+  },
+  {
+   "q": "What is the largest grid?",
+   "a": "160 columns by 120 rows."
+  },
+  {
+   "q": "Why does a glider come back?",
+   "a": "On a torus it wraps around the edges."
+  },
+  {
+   "q": "What about other rules?",
+   "a": "For one-dimensional rules like Rule 30 use the elementary cellular automaton tool."
+  }
+ ],
+ "related": [
+  "cellular-automaton-generator",
+  "l-system-generator",
+  "orbital-mechanics-nbody-sandbox",
+  "fractal-explorer-mandelbrot-julia",
+  "word-search-puzzle-maker",
+  "minesweeper"
+ ],
+ "keywords": [
+  "game of life simulator",
+  "conway game of life online",
+  "cellular automaton glider",
+  "life pattern oscillator"
+ ]
+}

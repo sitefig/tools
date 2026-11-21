@@ -1,0 +1,41 @@
+{
+ "id": "css-checkbox-toggle-generator",
+ "seoTitle": "Custom Checkbox and Toggle Switch CSS (Accessible)",
+ "metaDescription": "Style a checkbox or switch in pure CSS on a real input: size, colours, radius, focus ring and reduced motion. Copy the HTML and CSS.",
+ "intro": "Generates the HTML and CSS for a styled checkbox or toggle switch that keeps the native input, so keyboard and screen reader behaviour stay intact.",
+ "why": "Hiding the real checkbox and drawing a fake one with a span breaks keyboard focus and screen reader support more often than people notice.\n\nThis generator keeps the native input and restyles it with appearance: none. The output includes a visible focus ring, a disabled state, a prefers-reduced-motion override and a forced-colors fallback. The switch variant adds role=\"switch\" so assistive technology announces it as a switch.",
+ "howTo": [
+  "Choose checkbox or switch.",
+  "Set size, colours, radius and transition.",
+  "Check the preview.",
+  "Copy the HTML and CSS."
+ ],
+ "faq": [
+  {
+   "q": "Why keep the real input?",
+   "a": "It gives you keyboard support, form submission and the correct accessible role for free."
+  },
+  {
+   "q": "Does it work in all browsers?",
+   "a": "appearance: none is supported in current browsers. Very old ones show the default control."
+  },
+  {
+   "q": "Can I use my own colours?",
+   "a": "Yes, any plain CSS colour. Check contrast of the on and off states against the page background."
+  }
+ ],
+ "related": [
+  "css-button-generator",
+  "a11y-html-check",
+  "target-size-checker",
+  "accessible-name-calculator",
+  "css-pattern-generator",
+  "skip-link-generator"
+ ],
+ "keywords": [
+  "css toggle switch generator",
+  "custom checkbox css",
+  "accessible switch css",
+  "appearance none checkbox"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "html-table-converter",
+ "seoTitle": "Free HTML Table to CSV, Markdown, JSON & SQL",
+ "metaDescription": "Extract HTML tables and convert them to CSV, TSV, Markdown, JSON or SQL INSERT statements. Free, runs in your browser, nothing uploaded.",
+ "intro": "Paste HTML containing one or more tables, choose a table number and an output format, and get CSV, TSV, a Markdown table, a JSON array or SQL INSERT statements.",
+ "why": "Data often sits in an HTML table with no download button: a report saved as a web page, a status page, an internal wiki or an email. Copying it into a spreadsheet can mangle merged cells, and writing a script just to read one table is more effort than the task deserves.\n\nThis converter parses the table markup, resolves colspan and rowspan, strips inner tags and decodes entities, then writes the format you need. If the page has several tables, pick one by number or convert them all. It is useful for turning a table into a Markdown README section or a quick database import. Everything happens in your browser, so a private report is not uploaded.",
+ "howTo": [
+  "Paste the HTML that contains the table or tables.",
+  "Choose the output format: CSV, TSV, Markdown, JSON or SQL INSERT.",
+  "Set the table number, or 0 for all tables, and say whether the first row is a header.",
+  "Copy the result, and enter a table name first if you chose SQL."
+ ],
+ "faq": [
+  {
+   "q": "What happens with merged cells?",
+   "a": "Colspan and rowspan are expanded so each row has the same number of cells, with the merged value repeated. That keeps the grid rectangular, which CSV, SQL and JSON all need."
+  },
+  {
+   "q": "Do I need the whole web page?",
+   "a": "No. You can paste only the table element, or a larger piece of HTML containing it. The tool looks for table elements and ignores everything else around them."
+  },
+  {
+   "q": "How are the SQL values written?",
+   "a": "As INSERT statements into the table name you give, with text quoted. Column types are not guessed, so create the table with suitable types yourself and check numbers and dates before running the script."
+  }
+ ],
+ "related": [
+  "html-table-to-json",
+  "csv-to-markdown-table",
+  "csv-to-sql",
+  "csv-to-json",
+  "html-tag-stripper",
+  "markdown-table-generator"
+ ],
+ "keywords": [
+  "html table to csv",
+  "html table converter",
+  "convert html table to markdown",
+  "html table to json",
+  "html table to sql insert",
+  "free html table extractor"
+ ]
+}

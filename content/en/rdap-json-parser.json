@@ -1,0 +1,44 @@
+{
+ "id": "rdap-json-parser",
+ "seoTitle": "Free RDAP JSON Reader: Domain, IP and ASN Response Summary",
+ "metaDescription": "Paste an RDAP JSON response and read registrar, dates, status, name servers and contacts. Works for domains, IP networks and AS numbers. Offline.",
+ "intro": "Turns a raw RDAP JSON response (RFC 9083) into a plain summary: dates with days to expiry, status values, name servers, DNSSEC state, network ranges and the entities with their roles.",
+ "why": "RDAP is the JSON successor to WHOIS, but the raw answer is long and nested, with contacts hidden inside vCard arrays. You usually want five things: who, when it expires, what the status is, which name servers and who to contact.\n\nPaste the JSON you got from your registry or a command-line client. The tool never queries a registry itself, so it cannot tell you whether the data is current. For plain-text WHOIS output use the WHOIS record parser.",
+ "howTo": [
+  "Copy the RDAP JSON response from your client or browser.",
+  "Paste it into the box.",
+  "Optionally set a fixed \"today\" date to count days to expiry.",
+  "Read the summary."
+ ],
+ "faq": [
+  {
+   "q": "Where do I get the JSON?",
+   "a": "From a command such as curl against the registry RDAP URL, or from a registrar or registry web page that exposes it. This page does not fetch anything."
+  },
+  {
+   "q": "Which object types work?",
+   "a": "Domain, IP network and autnum responses. Others show the common fields only."
+  },
+  {
+   "q": "Why are some contacts missing?",
+   "a": "Registries often redact personal data. The tool shows only what the response contains."
+  },
+  {
+   "q": "Is this the same as WHOIS?",
+   "a": "It carries similar data in a structured form. Use the WHOIS parser for plain text records."
+  }
+ ],
+ "related": [
+  "whois-record-parser",
+  "dig-nslookup-output-analyzer",
+  "domain-expiry-tracker",
+  "dns-answer-comparer",
+  "ip-address-offline-lookup",
+  "dnssec-record-decoder"
+ ],
+ "keywords": [
+  "rdap parser",
+  "rdap json viewer",
+  "rdap response reader"
+ ]
+}

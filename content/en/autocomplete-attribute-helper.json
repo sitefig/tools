@@ -1,0 +1,43 @@
+{
+ "id": "autocomplete-attribute-helper",
+ "seoTitle": "Autocomplete Attribute Helper for WCAG 1.3.5 Input Purposes",
+ "metaDescription": "Paste a form to get the right autocomplete value per field from name, id, type and label, and validate existing values.",
+ "intro": "Suggests and validates autocomplete tokens for form fields.",
+ "why": "The autocomplete attribute lets browsers fill fields and lets assistive tools show the purpose (WCAG 1.3.5).\n\nThe tool guesses a token from the field type, name, id, label and placeholder, and checks existing values against the HTML autofill field names, section and shipping or billing prefixes, and contact types. Guesses are keyword based, so check each.",
+ "howTo": [
+  "Paste the form HTML.",
+  "Read the table of current and suggested values.",
+  "Add or fix the attribute.",
+  "Skip fields not about the user."
+ ],
+ "faq": [
+  {
+   "q": "Does it apply to search boxes?",
+   "a": "No. Only fields collecting information about the user."
+  },
+  {
+   "q": "Is autocomplete=\"off\" allowed?",
+   "a": "It blocks autofill, so on user data fields it conflicts with 1.3.5."
+  },
+  {
+   "q": "Where do the tokens come from?",
+   "a": "The HTML Standard autofill field names, read in October 2026."
+  },
+  {
+   "q": "Is the form uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "form-label-checker",
+  "accessible-error-message-builder",
+  "a11y-html-check",
+  "wcag-success-criteria-explorer",
+  "aria-attribute-validator"
+ ],
+ "keywords": [
+  "autocomplete attribute helper",
+  "wcag 1.3.5 autocomplete",
+  "html autofill tokens"
+ ]
+}

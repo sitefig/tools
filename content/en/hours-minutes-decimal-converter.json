@@ -1,0 +1,39 @@
+{
+ "id": "hours-minutes-decimal-converter",
+ "seoTitle": "Hours and Minutes to Decimal Hours Converter for Billing",
+ "metaDescription": "Convert 2:45 to 2.75 hours and back, with optional round-up to billing increments. Free.",
+ "intro": "Converts hours and minutes (2:45 or 2h 45m) to decimal hours and decimal hours to hours and minutes, with a total and optional rounding up.",
+ "why": "Timesheets and invoices need decimal hours: 2 hours 45 minutes is 2.75, not 2.45. The mistake is common.\n\nList several times to get a total. Set a round-up step such as 6 or 15 minutes if you bill in increments.",
+ "howTo": [
+  "Enter times, one per line.",
+  "Optionally set a round-up step in minutes.",
+  "Read the conversions and total."
+ ],
+ "faq": [
+  {
+   "q": "How is the direction chosen?",
+   "a": "Lines with a colon or h and m become decimals; plain numbers become h:mm."
+  },
+  {
+   "q": "Does rounding go up?",
+   "a": "Yes, always up to the next step, as most billing does."
+  },
+  {
+   "q": "Can I use negative times?",
+   "a": "Yes, with a minus sign."
+  }
+ ],
+ "related": [
+  "time-duration-calculator",
+  "work-hours-calculator",
+  "overtime-pay-calculator",
+  "salary-hourly",
+  "freelance-hourly-rate-calculator",
+  "project-quote-estimator"
+ ],
+ "keywords": [
+  "hours to decimal",
+  "minutes to decimal hours",
+  "timesheet decimal"
+ ]
+}

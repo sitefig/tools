@@ -1,0 +1,39 @@
+{
+ "id": "lei-code-validator",
+ "seoTitle": "LEI Code Validator: ISO 17442 Check Digits and Parts",
+ "metaDescription": "Check the format and ISO 7064 check digits of Legal Entity Identifiers and split out the prefix and entity part. No lookup.",
+ "intro": "Validates 20-character Legal Entity Identifiers and splits them into their parts.",
+ "why": "An LEI has 20 characters: a four character issuer prefix, two reserved characters, a twelve character entity part and two check digits. The check digits use the ISO 7064 MOD 97-10 method, the same as IBANs, so typing errors are caught.\n\nA valid check does not mean the code is registered or active. The public GLEIF register has the entity data, and this tool makes no network calls and does not look anything up.",
+ "howTo": [
+  "Paste LEI codes, one per line.",
+  "Read the format and check digit result.",
+  "Look up valid codes in the GLEIF register yourself."
+ ],
+ "faq": [
+  {
+   "q": "Does it say who the company is?",
+   "a": "No. It makes no lookup. Use the GLEIF register."
+  },
+  {
+   "q": "What is the check?",
+   "a": "Letters become numbers and the whole number must leave remainder 1 when divided by 97."
+  },
+  {
+   "q": "Is a valid LEI active?",
+   "a": "Not necessarily. Status is in the register."
+  }
+ ],
+ "related": [
+  "sku-code-generator",
+  "gtin-check-digit-calculator",
+  "coupon-code-generator",
+  "barcode-generator",
+  "check-digit-tool",
+  "profit-margin"
+ ],
+ "keywords": [
+  "lei validator",
+  "legal entity identifier check",
+  "iso 17442"
+ ]
+}

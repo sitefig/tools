@@ -1,0 +1,39 @@
+{
+ "id": "cart-abandonment-rate-calculator",
+ "seoTitle": "Cart Abandonment Rate Calculator With Recoverable Revenue",
+ "metaDescription": "Compute cart abandonment from carts and purchases, the money left in abandoned carts and what an assumed recovery rate could win back.",
+ "intro": "Computes the share of carts that never turn into purchases and the revenue sitting in them.",
+ "why": "Abandonment is a ratio, but it only means something if carts and purchases are counted the same way, for example both sessions or both users. Most carts are never meant to convert, so a high rate alone is not a problem to fix.\n\nThe revenue figure shows the size of the pool, and the recovery rate you enter is an assumption, not a benchmark. Use it to judge whether a reminder email or checkout change is worth the effort.",
+ "howTo": [
+  "Enter carts created and completed purchases for the same period.",
+  "Enter the average cart value.",
+  "Set a recovery rate you think is realistic."
+ ],
+ "faq": [
+  {
+   "q": "What is a normal abandonment rate?",
+   "a": "It varies widely by site and device. Compare with your own history rather than a published average."
+  },
+  {
+   "q": "Why is the recovery rate an input?",
+   "a": "Because it depends on your emails, audience and offers. The tool does not know it."
+  },
+  {
+   "q": "Should carts be counted by session?",
+   "a": "Count carts and purchases on the same basis."
+  }
+ ],
+ "related": [
+  "dimensional-weight-calculator",
+  "shipping-box-fit-calculator",
+  "free-shipping-threshold-calculator",
+  "return-rate-cost-calculator",
+  "reorder-point-calculator",
+  "profit-margin"
+ ],
+ "keywords": [
+  "cart abandonment rate",
+  "abandoned cart revenue",
+  "checkout abandonment"
+ ]
+}

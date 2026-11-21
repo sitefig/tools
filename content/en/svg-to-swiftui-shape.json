@@ -1,0 +1,43 @@
+{
+ "id": "svg-to-swiftui-shape",
+ "seoTitle": "Free SVG to SwiftUI Shape Converter",
+ "metaDescription": "Convert SVG paths and basic shapes into a SwiftUI Shape struct that scales to its frame. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Paste an SVG and get a SwiftUI Shape struct with its path commands translated, including arcs, which are turned into cubic curves. The shape scales to whatever frame you give it.",
+ "why": "Icons and custom shapes in SwiftUI are often easier to start from an SVG exported by a designer than to draw point by point in code. Swift has no built-in SVG parser, and rewriting path commands by hand means dealing with relative coordinates, arcs and transforms.\n\nThis tool reads the SVG and writes a struct conforming to Shape, with the path built in the rect you are given, so it scales cleanly. Transforms are baked into the coordinates and arcs become cubic Bezier curves. Colours are not copied, because in SwiftUI you style a shape with fill, stroke and foregroundStyle. The code is generated in your browser and your artwork stays on your device.",
+ "howTo": [
+  "Paste your SVG markup into the input box.",
+  "Enter a name for the Swift struct.",
+  "Read the generated Shape code in the output.",
+  "Copy it into your Xcode project and use it with fill, stroke and a frame modifier."
+ ],
+ "faq": [
+  {
+   "q": "Are colours and gradients preserved?",
+   "a": "No. Only geometry is converted. Style the shape in SwiftUI with fill, stroke or foregroundStyle, which also lets it follow light and dark mode and accent colours."
+  },
+  {
+   "q": "What happens to arcs?",
+   "a": "SVG arc commands are converted to cubic curves, which SwiftUI paths support directly. The result closely follows the original arc, but the path will contain more points than the SVG did."
+  },
+  {
+   "q": "Will the shape scale to any size?",
+   "a": "Yes. The path is written relative to the rectangle passed to the shape, so it fills whatever frame you set. Keep the aspect ratio with a modifier if the artwork must not stretch."
+  }
+ ],
+ "related": [
+  "svg-to-android-vector",
+  "svg-to-react-native",
+  "svg-to-jsx",
+  "svg-optimizer",
+  "svg-path-editor",
+  "xcode-asset-catalog"
+ ],
+ "keywords": [
+  "svg to swiftui",
+  "svg to swiftui shape",
+  "convert svg path to swift",
+  "swiftui custom shape from svg",
+  "svg to swift code",
+  "free svg to swiftui converter"
+ ]
+}

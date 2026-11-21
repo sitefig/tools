@@ -1,0 +1,45 @@
+{
+ "id": "morse-code-audio",
+ "seoTitle": "Free Morse Code Audio Generator with WAV Download",
+ "metaDescription": "Turn text into Morse code and a playable, downloadable WAV beep track with adjustable speed and pitch. Free and generated in your browser.",
+ "intro": "Type some text to see its Morse code, then play or download a WAV audio track of the beeps with your chosen speed in words per minute and tone pitch.",
+ "why": "Reading Morse is one thing; hearing it at the right speed is how you actually learn it, or check a message for a puzzle, a radio exercise or a school project. Most text-to-Morse converters show dots and dashes but do not give you sound that follows the standard timing.\n\nThis generator uses PARIS timing: a dot is one unit, a dash three, gaps of one, three and seven units inside letters, between letters and between words. You can set the speed from 5 to 60 words per minute and the pitch from 200 to 2000 Hz. The audio is built in the browser as a mono WAV, with short fades on each beep to avoid clicks.",
+ "howTo": [
+  "Type or paste the text you want to send.",
+  "Set the speed in words per minute and the tone frequency in hertz.",
+  "Read the dots and dashes, then play or download the WAV file."
+ ],
+ "faq": [
+  {
+   "q": "Which characters are supported?",
+   "a": "Letters A to Z, digits, and common punctuation such as full stop, comma, question mark, slash, brackets, colon, equals, plus, hyphen, quotes and at sign. Unsupported characters are skipped."
+  },
+  {
+   "q": "What does PARIS timing mean?",
+   "a": "The word PARIS takes exactly 50 time units in Morse, so speed in words per minute sets the length of one unit as 1.2 seconds divided by the speed. It is the usual standard."
+  },
+  {
+   "q": "What format is the audio?",
+   "a": "A mono, 16-bit PCM WAV file at 8000 samples per second. That is plenty for a tone up to 2000 Hz and keeps the file small."
+  },
+  {
+   "q": "Is the audio uploaded?",
+   "a": "No. The sound is calculated and played inside your browser, and the WAV download is created locally from the same samples without any upload."
+  }
+ ],
+ "related": [
+  "morse-translator",
+  "tone-generator",
+  "metronome",
+  "nato-phonetic",
+  "binary-text",
+  "audio-converter"
+ ],
+ "keywords": [
+  "morse code audio generator",
+  "text to morse code sound",
+  "morse code wav download",
+  "free morse code player",
+  "morse code wpm tool"
+ ]
+}

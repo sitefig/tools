@@ -1,0 +1,47 @@
+{
+ "id": "base64-encode",
+ "seoTitle": "Free Base64 Encode Online (UTF-8 and URL-safe)",
+ "metaDescription": "Encode text to Base64 or URL-safe Base64 with correct UTF-8 handling and optional 76-character line wrapping. Free and runs in your browser.",
+ "intro": "Turn any text into Base64, including accented letters and emoji. Switch on URL-safe output for tokens and links, or wrap lines at 76 characters for email-style blocks.",
+ "why": "Base64 turns arbitrary bytes into plain ASCII, which is why it turns up in Basic auth headers, data URIs, config files and email attachments. The classic trap is btoa() in the browser console, which throws on any character outside Latin-1, so a name like \"Zoë\" or an emoji breaks it.\n\nThis tool encodes your text as UTF-8 first, so non-English text round-trips correctly. It offers the URL-safe variant used in JWTs and query strings, and an optional 76-character wrap for MIME-style output. Everything happens locally, so credentials and snippets you encode are not uploaded.",
+ "howTo": [
+  "Type or paste the text you want to encode into the Text box.",
+  "Tick \"URL-safe\" if the result will go into a URL, cookie or JWT part.",
+  "Tick \"Wrap at 76 chars\" if you need MIME-style line breaks.",
+  "Copy the Base64 result."
+ ],
+ "faq": [
+  {
+   "q": "Is Base64 a form of encryption?",
+   "a": "No. Base64 is a reversible encoding that anyone can decode in a second. Do not use it to hide passwords or secrets. It exists only to carry binary or special characters through text-only channels."
+  },
+  {
+   "q": "What does URL-safe change?",
+   "a": "It swaps + for - and / for _, and removes the = padding at the end. Those characters are safe in URLs and filenames without further escaping. You must decode with a URL-safe aware decoder; the Base64 Decode tool accepts both."
+  },
+  {
+   "q": "Why does my output differ from another tool?",
+   "a": "The usual cause is a different character encoding. This tool encodes text as UTF-8, which is the modern standard. A tool that uses Latin-1 or UTF-16 produces different bytes, and therefore different Base64, for any non-ASCII character."
+  },
+  {
+   "q": "Can I encode a file or image?",
+   "a": "This page encodes text only. For images, use the Image to Base64 tool, which produces a data URI you can paste into HTML or CSS."
+  }
+ ],
+ "related": [
+  "base64-decode",
+  "base64url-encoder",
+  "image-to-base64",
+  "base64-image-viewer",
+  "hex-text",
+  "url-encode"
+ ],
+ "keywords": [
+  "base64 encode online",
+  "encode text to base64",
+  "free base64 encoder",
+  "url safe base64",
+  "utf-8 base64 encode",
+  "base64 encode with line wrap"
+ ]
+}

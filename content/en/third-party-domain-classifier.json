@@ -1,0 +1,41 @@
+{
+ "id": "third-party-domain-classifier",
+ "seoTitle": "Third-Party Domain Classifier: Vendor and Category",
+ "metaDescription": "Paste domains or URLs and see the vendor and category for each: analytics, advertising, social, fonts, CDN. Free offline list.",
+ "intro": "Matches domains against a built-in list of about 150 well-known vendors and groups them by category.",
+ "why": "A privacy review often starts with a list of domains from a network log, a sitemap of embeds or a scanner export. The next step is working out who each domain belongs to and what it does.\n\nThis tool matches each name (including subdomains) against a built-in list of common analytics, advertising, social, session replay, fonts, chat and CDN domains. Anything else is listed as unclassified for you to research. The list is not a full tracker database and it cannot tell what a request actually sends.",
+ "howTo": [
+  "Paste domains or full URLs, one per line.",
+  "Run the tool.",
+  "Read the groups and the unclassified list.",
+  "Research the unclassified domains and add vendors to your policy."
+ ],
+ "faq": [
+  {
+   "q": "How big is the list?",
+   "a": "About 150 well-known domains. It is a starting point, not a database."
+  },
+  {
+   "q": "Can it see what data is sent?",
+   "a": "No. It only classifies names."
+  },
+  {
+   "q": "What about first-party domains?",
+   "a": "They show as unclassified. Remove your own domains before pasting."
+  }
+ ],
+ "related": [
+  "tracker-detector",
+  "har-analyzer",
+  "pre-consent-request-finder",
+  "google-fonts-gdpr-checker",
+  "url-tracker-stripper",
+  "cookie-classifier"
+ ],
+ "keywords": [
+  "third party domains",
+  "tracker domain list",
+  "classify domains",
+  "vendor lookup"
+ ]
+}

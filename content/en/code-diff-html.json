@@ -1,0 +1,46 @@
+{
+ "id": "code-diff-html",
+ "seoTitle": "Free Side-by-Side Diff Viewer with Word Highlights",
+ "metaDescription": "See two versions of text or code side by side, with changed lines coloured and changed words highlighted inside lines. Free, in-browser.",
+ "intro": "Paste two versions to get a side-by-side comparison with line numbers, coloured added and removed lines and inline word highlights for changed lines.",
+ "why": "A unified diff is compact but harder to read than two columns, especially for code and configuration where one line changed slightly. Seeing the old and new line next to each other with the exact words marked makes review faster.\n\nThis viewer aligns the two texts line by line, numbering each side. Removed lines are tinted on the left, added lines on the right, and where a line was changed rather than replaced, the specific words that differ are highlighted. You can ignore whitespace or case to avoid noise from indentation and capitalisation. The comparison is plain text with no syntax awareness. It is drawn in your browser, so source code and drafts are not uploaded anywhere.",
+ "howTo": [
+  "Paste the original into the first box and the changed version into the second.",
+  "Tick ignore whitespace or ignore case if needed.",
+  "Run the tool to render the two-column comparison.",
+  "Scroll through the highlighted lines to review each change."
+ ],
+ "faq": [
+  {
+   "q": "How does it differ from the text diff tool?",
+   "a": "The text diff gives unified-style text output you can copy. This tool draws a visual two-column view with line numbers and word-level highlights, which is easier to scan."
+  },
+  {
+   "q": "Are word changes shown inside a changed line?",
+   "a": "Yes. When a removed line is paired with an added line, the words that differ are marked in both columns. Very long lines skip the word highlighting to keep the page responsive."
+  },
+  {
+   "q": "Does it understand code syntax?",
+   "a": "No. It compares plain text, so a moved block shows as removed and added. For structured data, such as JSON, a dedicated JSON diff is better."
+  },
+  {
+   "q": "Is my code uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "text-diff",
+  "json-diff",
+  "html-format",
+  "css-format",
+  "find-replace",
+  "env-toolkit"
+ ],
+ "keywords": [
+  "side by side diff",
+  "code diff online",
+  "compare code versions",
+  "visual text diff",
+  "diff viewer html"
+ ]
+}

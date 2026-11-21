@@ -1,0 +1,46 @@
+{
+  "id": "redirect-chain-analyzer",
+  "seoTitle": "Redirect Chain Analyzer for curl -IL Output",
+  "metaDescription": "Paste the headers from curl -sIL or dev tools to see every redirect hop, loops, 302 vs 301 and http to https issues. No requests are made.",
+  "intro": "Turn the raw output of a redirect check into a readable chain with the status of each hop and a list of SEO problems.",
+  "why": "Run curl -sIL URL (or copy response headers from your browser), paste the output and the tool lists each hop with its status, Location and cache-control, resolves relative Locations against the start URL, and flags loops, temporary redirects where a permanent one is expected, downgrades from https to http, chains of several redirects and chains that end in an error.\n\nThe page cannot fetch URLs itself (browsers block cross-site requests), so you supply the headers. Aim for at most one redirect between a link and its final URL.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Run curl -sIL https://example.com/old in a terminal.",
+    "Paste the full output, including all hops.",
+    "Optionally enter the start URL so relative redirects resolve.",
+    "Fix chains longer than one hop and replace 302s with 301/308 where the move is permanent."
+  ],
+  "faq": [
+    {
+      "q": "How many redirects are too many?",
+      "a": "One is fine. Googlebot follows up to about 10 hops, but every extra hop wastes crawl budget and slows users."
+    },
+    {
+      "q": "301 or 302?",
+      "a": "Use 301 or 308 for permanent moves and 302 or 307 for temporary ones. Search engines treat them differently."
+    },
+    {
+      "q": "Can this tool check a URL for me?",
+      "a": "No, it only analyses headers you paste. A browser extension could fetch them."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "redirect-code-generator",
+    "redirect-map-matcher",
+    "http-headers-analyzer",
+    "http-status-reference",
+    "htaccess-generator",
+    "cache-control-builder"
+  ],
+  "keywords": [
+    "redirect chain checker",
+    "curl redirect",
+    "redirect loop",
+    "redirect analyzer",
+    "http redirect seo"
+  ]
+}

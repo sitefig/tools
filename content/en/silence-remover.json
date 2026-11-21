@@ -1,0 +1,45 @@
+{
+ "id": "silence-remover",
+ "seoTitle": "Silence Remover: Cut Silent Gaps from Audio",
+ "metaDescription": "Detect and remove silent gaps from a recording. Set the threshold and the shortest gap, keep a little breathing room, download the WAV. Private.",
+ "intro": "Finds stretches of audio quieter than a threshold and cuts or shortens them, then exports the tightened file as WAV.",
+ "why": "Voice memos, lecture recordings and screen-recorded narration are full of pauses. Removing the long ones makes them faster to listen to without changing the voice, unlike speeding up the whole file.\n\nLevel is measured in 10 ms blocks across all channels. A gap counts only if it stays below the threshold for longer than your minimum length. By default each cut leaves 150 ms of silence so speech still breathes, and each join has a 2 ms fade to avoid clicks. If room noise is above the threshold, nothing is cut, so raise the threshold in that case.",
+ "howTo": [
+  "Choose a recording.",
+  "Set the threshold (try -45 dB) and the shortest gap to cut (500 ms).",
+  "Set how much silence to leave at each cut.",
+  "Press Run and compare the new length with the old."
+ ],
+ "faq": [
+  {
+   "q": "Nothing was cut. Why?",
+   "a": "The pauses are probably louder than the threshold because of room noise. Raise the threshold, for example to -35 dBFS."
+  },
+  {
+   "q": "Does it cut quiet words?",
+   "a": "Very soft sounds below the threshold can be treated as silence, but only if they last longer than the minimum gap."
+  },
+  {
+   "q": "Can I remove all silence entirely?",
+   "a": "Set \"leave this much silence\" to 0. Speech sounds hurried that way."
+  },
+  {
+   "q": "Will it click at the joins?",
+   "a": "Each join has a short 2 ms fade, which prevents clicks in normal material."
+  }
+ ],
+ "related": [
+  "audio-trimmer",
+  "audio-noise-reducer",
+  "audio-joiner",
+  "audio-recorder",
+  "audio-fade-editor",
+  "loudness-normalizer"
+ ],
+ "keywords": [
+  "remove silence from audio",
+  "silence remover online",
+  "cut pauses from recording",
+  "trim silence mp3"
+ ]
+}

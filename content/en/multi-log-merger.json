@@ -1,0 +1,44 @@
+{
+ "id": "multi-log-merger",
+ "seoTitle": "Multi-Log Merger: Interleave Logs by Timestamp",
+ "metaDescription": "Merge several logs into one chronological view. Each line is tagged with its source. Stack trace lines stay with their parent. Free.",
+ "intro": "Merges pasted logs and files by the first timestamp in each line and tags the source.",
+ "why": "When a request crosses services, the story is spread over several files. Merging by time shows the order of events.\n\nLines without a timestamp stay with the line before them, so stack traces are not separated. All sources must use comparable clocks; if they do not, normalise them first.",
+ "howTo": [
+  "Paste two logs, or choose several files.",
+  "Set the zone for times without one.",
+  "Keep source tags on.",
+  "Read or copy the merged view."
+ ],
+ "faq": [
+  {
+   "q": "How is order decided?",
+   "a": "By the first timestamp in each line, then by input order."
+  },
+  {
+   "q": "What about clock skew?",
+   "a": "It is not corrected. Different server clocks give a wrong order."
+  },
+  {
+   "q": "How many files?",
+   "a": "Any number, memory permitting."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "log-timestamp-normalizer",
+  "log-level-histogram",
+  "log-grep-context",
+  "docker-log-viewer",
+  "kubectl-log-viewer",
+  "log-pattern-miner"
+ ],
+ "keywords": [
+  "merge log files by time",
+  "interleave logs",
+  "combine logs chronological"
+ ]
+}

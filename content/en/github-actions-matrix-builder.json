@@ -1,0 +1,47 @@
+{
+ "id": "github-actions-matrix-builder",
+ "seoTitle": "Free GitHub Actions Matrix Builder Online",
+ "metaDescription": "Free online GitHub Actions matrix builder. Describe os and version dimensions with include and exclude rows and get a ready workflow file.",
+ "intro": "Describe matrix dimensions such as os and node version, add include and exclude rows, and get a complete GitHub Actions workflow with strategy.matrix, setup action and test command.",
+ "why": "Testing across several operating systems and language versions is easy to want and awkward to write. The matrix syntax has its own rules for include and exclude, and a small indentation slip changes which jobs run. Many projects end up with a matrix nobody dares touch.\n\nWrite each dimension as a line, for example os: ubuntu-latest, windows-latest or node: 20, 22, then add exclude or include lines with key=value pairs. The tool builds a workflow with checkout, the right setup action for your language, install and test commands, fail-fast and max-parallel settings, and continue-on-error for experimental rows. It shows what the matrix will contain, but not how many jobs your plan allows, so keep an eye on total job count. Nothing is uploaded.",
+ "howTo": [
+  "Write dimensions as name: value, value, one per line.",
+  "Add exclude and include lines using key=value pairs.",
+  "Choose the setup action for your language, and edit the install and test commands.",
+  "Set fail-fast, max-parallel and branch, then copy the workflow."
+ ],
+ "faq": [
+  {
+   "q": "How do include and exclude work?",
+   "a": "Exclude removes a combination from the generated matrix, for example macOS with Node 20. Include adds extra combinations or extra variables, such as an experimental Node 24 job on Ubuntu."
+  },
+  {
+   "q": "Which languages are supported?",
+   "a": "Setup actions for Node, Python, Go, Java, Ruby and .NET, or none if you only want the matrix. Each has default install and test commands you can override."
+  },
+  {
+   "q": "What does the experimental key do?",
+   "a": "If any include row sets experimental=true, the job gets continue-on-error based on that value, so a failure in an experimental job does not fail the whole run."
+  },
+  {
+   "q": "Does it count jobs for me?",
+   "a": "No. Multiply the values in each dimension, subtract excludes and add includes to estimate the number of jobs, and check your plan limits."
+  }
+ ],
+ "related": [
+  "github-actions-generator",
+  "gitlab-ci-generator",
+  "dependabot-config-generator",
+  "renovate-config-generator",
+  "yaml-format",
+  "makefile-generator"
+ ],
+ "keywords": [
+  "github actions matrix generator",
+  "github actions matrix builder",
+  "matrix strategy workflow generator",
+  "free github actions tool",
+  "github workflow matrix include exclude",
+  "ci matrix builder"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "jsx-to-html",
+ "seoTitle": "Free JSX to HTML Converter for Static Markup",
+ "metaDescription": "Turn static JSX into plain HTML: className to class, style objects to CSS, self-closing tags expanded. Free, runs in your browser.",
+ "intro": "Paste static JSX and get plain HTML. It renames attributes, turns style objects into inline CSS, expands self-closing tags, drops event handlers and keeps dynamic expressions visible as placeholders.",
+ "why": "A React component is sometimes the only copy of a piece of markup: a design from a component library, an email block or a snippet you want to drop into a CMS. Pasting JSX into an HTML page breaks at once, because of className, camelCase attributes, style objects and curly braces.\n\nThis converter handles those differences for static markup. It does not run your code. Anything dynamic, such as a variable or a conditional, stays visible as a double-brace placeholder and is listed in a note, so you know what still needs a real value. Event handlers, keys, refs and spreads are dropped because plain HTML cannot carry them. Your code is processed in the browser only.",
+ "howTo": [
+  "Paste your JSX into the input box.",
+  "Read the HTML output and the note listing any dynamic expressions.",
+  "Replace each double-brace placeholder with a real value.",
+  "Copy the HTML into your page, template or CMS."
+ ],
+ "faq": [
+  {
+   "q": "Can it convert a component with logic?",
+   "a": "Only the markup. It does not execute JavaScript, so loops, conditionals and variables cannot be resolved. They remain as visible placeholders and are listed in a note so you can replace them manually."
+  },
+  {
+   "q": "What happens to onClick and similar props?",
+   "a": "Event handlers, key, ref and spread props are removed, because plain HTML has no equivalent. You would add behaviour back with your own script after converting."
+  },
+  {
+   "q": "How are style objects converted?",
+   "a": "Properties are renamed from camelCase to kebab-case, and numeric values get px added where that is the React behaviour. A padding of 16 becomes padding:16px in the style attribute."
+  }
+ ],
+ "related": [
+  "html-to-jsx",
+  "svg-to-jsx",
+  "html-format",
+  "html-minify",
+  "tailwind-to-inline-css",
+  "html-to-markdown"
+ ],
+ "keywords": [
+  "jsx to html",
+  "convert jsx to html online",
+  "react to html converter",
+  "classname to class converter",
+  "jsx to plain html",
+  "free jsx converter"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "json-to-models",
+ "seoTitle": "Free JSON to Java, Kotlin, Swift, Python, C#, Rust",
+ "metaDescription": "Generate typed model classes from sample JSON: Java records, Kotlin data classes, Swift Codable, Python dataclasses, C# and Rust serde structs.",
+ "intro": "Paste sample JSON and get typed models in Java, Kotlin, Swift, Python, C# or Rust. Array items are merged to find which fields are optional.",
+ "why": "Every mobile or backend project that consumes a JSON API ends up writing the same boilerplate: a class per object, field names converted to the language style and renames mapped back to the original keys. For a payload with nested objects this takes a while and is easy to get slightly wrong.\n\nThis generator reads a sample, merges the items of each array to learn which fields are sometimes missing or null, and writes the models in the style of the chosen language, with serialisation annotations for renamed keys. Because it learns only from one sample, review the output: a field that was always a number in your sample may be a string elsewhere, and dates arrive as plain strings.",
+ "howTo": [
+  "Paste sample JSON. A top-level array of objects is also accepted.",
+  "Choose the language and the name of the root type.",
+  "Copy the generated models and adjust types the sample could not reveal."
+ ],
+ "faq": [
+  {
+   "q": "How are optional fields found?",
+   "a": "Items inside an array are merged. A key missing in some items, or null in a sample, becomes optional, such as Optional in Python, a question mark in Kotlin or Swift, and Option in Rust."
+  },
+  {
+   "q": "How are integers and decimals typed?",
+   "a": "Whole numbers become long, Long, Int, int, long and i64, depending on language. Any decimal makes the field double-like. Large IDs in your data may need a string type instead."
+  },
+  {
+   "q": "What about keys that are language keywords?",
+   "a": "They are renamed, for example with an underscore suffix, backticks in Kotlin and Swift, or r# in Rust, and the original JSON key is kept through an annotation where the language supports it."
+  },
+  {
+   "q": "Are nested objects given their own types?",
+   "a": "Yes. Each nested object becomes a type named after its key in PascalCase, made singular for arrays, and clashing names get a number appended."
+  }
+ ],
+ "related": [
+  "json-to-typescript",
+  "json-to-go",
+  "json-to-pydantic",
+  "json-to-typescript-type-guards",
+  "json-schema-generator",
+  "json-to-zod"
+ ],
+ "keywords": [
+  "json to java class",
+  "json to kotlin data class",
+  "json to swift codable",
+  "json to python dataclass",
+  "json to rust struct",
+  "free json model generator"
+ ]
+}

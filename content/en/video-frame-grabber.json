@@ -1,0 +1,45 @@
+{
+ "id": "video-frame-grabber",
+ "seoTitle": "Video Frame Grabber: Save Stills at Exact Timestamps",
+ "metaDescription": "Save still frames from a video as PNG or JPG at timestamps or at regular intervals, with a ZIP of all. Private, browser only.",
+ "intro": "Pulls still images out of a video at times you list, or every N seconds, in full resolution as PNG or JPG.",
+ "why": "To get a thumbnail, a screenshot for a bug report or a frame for a storyboard you need an exact moment. Enter timestamps like 1.5, 0:10 or 1:02:03, or set an interval. The player lets you find the time first.\n\nEach frame is saved at the video size. Many frames are also offered as one ZIP. No upload happens.",
+ "howTo": [
+  "Choose the video and find your moments in the player.",
+  "Type the timestamps, or set an interval in seconds.",
+  "Pick PNG or JPG and press Process.",
+  "Download single frames or the ZIP."
+ ],
+ "faq": [
+  {
+   "q": "Is it the exact frame?",
+   "a": "It is the frame the browser shows at that time, which is within one frame of the request."
+  },
+  {
+   "q": "PNG or JPG?",
+   "a": "PNG is lossless and larger. JPG is smaller."
+  },
+  {
+   "q": "What is the maximum?",
+   "a": "Up to 200 frames in interval mode."
+  },
+  {
+   "q": "Can I get every frame?",
+   "a": "Use a small interval, but memory limits apply for very long videos."
+  }
+ ],
+ "related": [
+  "video-contact-sheet",
+  "video-trimmer",
+  "video-to-gif",
+  "youtube-link-tools",
+  "image-compressor",
+  "video-metadata-inspector"
+ ],
+ "keywords": [
+  "extract frames from video",
+  "video screenshot at time",
+  "save frame from video",
+  "video to images"
+ ]
+}

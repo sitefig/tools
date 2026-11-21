@@ -1,0 +1,46 @@
+{
+ "id": "data-deletion-request-letter",
+ "seoTitle": "Free GDPR Erasure & Access Request Letter Generator",
+ "metaDescription": "Draft a GDPR Article 17 erasure and/or Article 15 access request letter to a company. Free template; not legal advice.",
+ "intro": "Write a GDPR letter asking a company to erase your personal data under Article 17, to give you access to it under Article 15, or both in sequence. A template, not legal advice.",
+ "why": "Companies hold more of your data than you remember: old accounts, newsletters, marketing lists, support tickets. The GDPR gives you the right to ask what they hold and to ask them to delete it, but a vague email is easy to ignore. A clear letter that cites the right article, states the ground and sets a deadline is harder to brush aside.\n\nThis generator drafts that letter from your details: the request type, your name and address, identifiers the company can use to find you, the company and its privacy contact, the erasure ground and whether to ask them to notify recipients. It is a template only and not legal advice. The letter is built in your browser, so the details you type are not uploaded.",
+ "howTo": [
+  "Choose the request: erasure, access, or access followed by erasure.",
+  "Enter your name, address and any account identifiers the company can use to find you.",
+  "Enter the company name and its privacy contact or data protection officer, and pick the ground for erasure.",
+  "Run the tool, check the letter, and send it by email or post, keeping a copy."
+ ],
+ "faq": [
+  {
+   "q": "Which erasure ground should I choose?",
+   "a": "Pick the one that is true for you, for example that you withdraw consent, or that the data is no longer necessary. Article 17 lists the grounds, and the company may have legal reasons to keep some data."
+  },
+  {
+   "q": "How long does the company have to reply?",
+   "a": "Under the GDPR, generally one month, extendable in some cases. The letter asks for confirmation within that period. If you get no answer you can complain to your national data protection authority."
+  },
+  {
+   "q": "Is this legal advice?",
+   "a": "No. It is a template to help you ask clearly. For disputed or complex cases, contact a lawyer or your data protection authority."
+  },
+  {
+   "q": "Is my information uploaded?",
+   "a": "No. The letter is produced in your browser and your name, address and identifiers are not sent to any server."
+  }
+ ],
+ "related": [
+  "privacy-policy-generator",
+  "gdpr-checklist",
+  "cookie-policy-generator",
+  "pii-redactor",
+  "text-to-pdf",
+  "markdown-to-pdf"
+ ],
+ "keywords": [
+  "gdpr erasure request letter",
+  "gdpr right to be forgotten template",
+  "data subject access request generator",
+  "article 17 letter",
+  "dsar letter template free"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "json-to-graphql-schema",
+ "seoTitle": "Free JSON to GraphQL Schema Generator (SDL) Online",
+ "metaDescription": "Infer GraphQL type definitions from a JSON sample. Nested objects become types, arrays become lists, optional keys become nullable. Free, in your browser.",
+ "intro": "Infers GraphQL schema definition language from a JSON sample: nested objects become types, arrays become lists, and fields missing in some items become nullable.",
+ "why": "Say a REST endpoint returns a large JSON document and you are wrapping it in a GraphQL layer. Writing the type definitions by hand means reading the payload, deciding what is a list, what can be null and where an ID belongs. This tool does that first pass for you. It looks at every item in an array, so a key that appears in only some objects is marked nullable, and it tells integers from floats. It also names nested types from the key they sit under. You get a schema skeleton to refine, not a finished design. Your sample stays in the browser, which matters when the payload is a real customer response.",
+ "howTo": [
+  "Paste a JSON object, or an array of objects, into the sample box.",
+  "Set the root type name and tick \"Also emit input types\" if you need matching input definitions.",
+  "Review the generated type blocks and copy them into your schema file."
+ ],
+ "faq": [
+  {
+   "q": "How does it decide what is nullable?",
+   "a": "A field is nullable if it is null in any sample or missing from some objects in an array. Everything else gets a \"!\" for non-null. A single object gives no hint about optional keys, so provide several examples where you can."
+  },
+  {
+   "q": "What becomes ID, Int and Float?",
+   "a": "A key called \"id\" becomes ID. Other numbers become Int when every sample value is a whole number and Float otherwise. Strings and anything unclear become String."
+  },
+  {
+   "q": "Can it produce input types?",
+   "a": "Yes. The input option emits an \"Input\" twin of each type and points nested fields at the matching input types. Check them, since inputs often need fewer fields than outputs."
+  },
+  {
+   "q": "Does it understand unions or enums?",
+   "a": "No. It only sees shapes in the sample, so unions, enums and custom scalars such as dates have to be added by hand. Dates will appear as String."
+  }
+ ],
+ "related": [
+  "json-to-typescript",
+  "json-to-pydantic",
+  "graphql-to-typescript",
+  "json-schema-generator",
+  "graphql-schema-to-zod",
+  "json-format"
+ ],
+ "keywords": [
+  "json to graphql schema",
+  "json to graphql sdl",
+  "generate graphql types from json",
+  "free json to graphql converter",
+  "graphql type generator"
+ ]
+}

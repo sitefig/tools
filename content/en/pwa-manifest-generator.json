@@ -1,0 +1,45 @@
+{
+  "id": "pwa-manifest-generator",
+  "seoTitle": "Web App Manifest Generator for PWAs",
+  "metaDescription": "Build manifest.webmanifest with name, icons, display mode, theme colours and installability checks, plus the HTML link tags.",
+  "intro": "Create the web app manifest that lets browsers install your site as an app, with checks for the most common installability mistakes.",
+  "why": "Fill in the name, short name, start URL, scope, display mode, orientation, colours, language and icons (path:WxH, add :maskable for maskable icons). The tool outputs valid JSON with icon MIME types inferred from the file extension, the link and meta tags to add to your HTML and a short checklist: 192 and 512 pixel icons, a maskable icon, a short name of 12 characters or less, and a start URL inside the scope.\n\nInstallability also needs HTTPS and, in some browsers, a service worker with a fetch handler; serve the manifest as application/manifest+json.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter your app name, start URL and colours.",
+    "List your icons, for example /icons/192.png:192x192.",
+    "Copy the JSON to manifest.webmanifest and the tags into your <head>.",
+    "Test with the Application panel in browser dev tools."
+  ],
+  "faq": [
+    {
+      "q": "What is a maskable icon?",
+      "a": "An icon with extra safe-zone padding so Android can crop it to different shapes without cutting off the artwork."
+    },
+    {
+      "q": "Do I need a service worker?",
+      "a": "Chromium requires installability criteria including HTTPS; offline support needs a service worker, which the service worker generator can write."
+    },
+    {
+      "q": "What does scope do?",
+      "a": "It limits which URLs belong to the app; navigating outside it opens a normal browser tab."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "service-worker-generator",
+    "favicon-generator",
+    "app-icon-generator",
+    "meta-tag-generator",
+    "capacitor-config-builder",
+    "electron-config-builder"
+  ],
+  "keywords": [
+    "web app manifest",
+    "pwa manifest generator",
+    "manifest.json",
+    "installable web app"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+ "id": "content-freshness-audit",
+ "seoTitle": "Content Freshness Audit: Outdated Years, Versions and Phrases",
+ "metaDescription": "Paste an article and find what has gone stale: old years, \"this year\" phrases, software versions, undated statistics and copyright dates, with a refresh checklist.",
+ "intro": "Find the parts of an article that have aged and get a checklist for refreshing it.",
+ "why": "Old content loses rankings and trust quietly. This audit scans the text for years older than a threshold you set, relative-time words (\"this year\", \"recently\", \"currently\"), software versions, pandemic wording, statistics with no date and old copyright years, shows the context of each hit and ends with a refresh checklist covering dates, schema, sources and links.\n\nIt is pattern matching: it cannot tell whether a statement is still true, so use the hits as a to-do list and verify each against a current source.",
+ "howTo": [
+  "Paste the article text or HTML.",
+  "Set the current year and the age threshold.",
+  "Work through the hits and the checklist."
+ ],
+ "faq": [
+  {
+   "q": "Does it check facts?",
+   "a": "No. It finds places that are likely to be outdated."
+  },
+  {
+   "q": "Will updating the date help rankings?",
+   "a": "Only if the content really changed; fake freshness does not help."
+  },
+  {
+   "q": "Can it fetch my URL?",
+   "a": "No; paste the content."
+  }
+ ],
+ "related": [
+  "wayback-cdx-analyzer",
+  "keyword-placement-checker",
+  "content-gap",
+  "text-diff",
+  "readability"
+ ],
+ "keywords": [
+  "content refresh checklist",
+  "find outdated content",
+  "stale year detector"
+ ]
+}

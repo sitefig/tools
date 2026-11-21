@@ -1,0 +1,45 @@
+{
+ "id": "xsd-validator",
+ "seoTitle": "XSD Validator: Check XML Against a Schema | Free",
+ "metaDescription": "Validate XML against an XSD 1.0 schema in your browser: order, occurrences, attributes, types, enumerations and patterns, with paths.",
+ "intro": "Checks an XML document against an XML Schema and lists each problem with its path.",
+ "why": "A schema error found late costs time. This page checks the common parts of XSD 1.0: sequence, choice and all content, minOccurs and maxOccurs, attributes, built-in types, restrictions, lists, unions and type extension.\n\nIt is a hand-written subset, not a full validator. Namespaces are ignored, identity constraints and other files (import, include) are not followed, and the page lists what it skipped. Verdicts matched lxml on 20 test documents; for final sign-off use your normal toolchain.",
+ "howTo": [
+  "Paste the XML in the first box.",
+  "Paste the XSD in the second box.",
+  "Read the list of problems with their paths.",
+  "Fix and run again."
+ ],
+ "faq": [
+  {
+   "q": "Is a Valid result final?",
+   "a": "No. It is a good sign for common schemas. Confirm with xmllint or your build tool."
+  },
+  {
+   "q": "Which features are missing?",
+   "a": "Namespaces, key, keyref, unique, substitution groups, import, include and XSD 1.1 assertions."
+  },
+  {
+   "q": "Why are error messages short?",
+   "a": "They name the path and the first problem, such as an unexpected element or a value out of range."
+  },
+  {
+   "q": "Is my XML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "xsd-viewer",
+  "xml-validate",
+  "xml-format",
+  "xpath-tester",
+  "xslt-playground",
+  "json-schema-validator"
+ ],
+ "keywords": [
+  "xsd validator online",
+  "validate xml against xsd",
+  "xml schema checker",
+  "xsd 1.0 validation"
+ ]
+}

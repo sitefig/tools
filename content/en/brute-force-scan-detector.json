@@ -1,0 +1,44 @@
+{
+ "id": "brute-force-scan-detector",
+ "seoTitle": "Brute-Force and Scan Detector for Access Logs",
+ "metaDescription": "List IPs with failed login bursts, many 404s or requests for known probe paths in an access log. Findings are for review. Free.",
+ "intro": "Finds failed login bursts, 404 bursts and probe path requests per IP.",
+ "why": "Public servers are probed all day. The useful question is which IPs look automated and what they asked for. This tool applies three simple rules.\n\nA burst of 401 or 403 on a login-like path, a burst of 404 responses, and a short list of well-known probe patterns such as wp-login.php or .env. A match is worth a look, not proof of an attack. Shared NAT addresses and monitoring tools can trigger the rules.",
+ "howTo": [
+  "Paste the access log.",
+  "Set the window and thresholds.",
+  "Read the IP list and the reasons.",
+  "Block or rate-limit only after checking."
+ ],
+ "faq": [
+  {
+   "q": "Does it block anything?",
+   "a": "No. It only reads text."
+  },
+  {
+   "q": "Why is a probe on a 404 still listed?",
+   "a": "The request itself is the signal. A 404 means the server had nothing there."
+  },
+  {
+   "q": "Which probe patterns?",
+   "a": "WordPress login, dot files, database admin tools, shell and PHPUnit paths, path traversal, JNDI strings, SQL injection patterns and some admin paths."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "auth-log-analyzer",
+  "top-ips-user-agents",
+  "fake-googlebot-log-detector",
+  "bot-firewall-rule-builder",
+  "sql-injection-pattern-scanner",
+  "request-spike-detector"
+ ],
+ "keywords": [
+  "detect brute force access log",
+  "wp-login attempts log",
+  "log scan detector"
+ ]
+}

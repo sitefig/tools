@@ -1,0 +1,45 @@
+{
+ "id": "public-holidays-lookup",
+ "seoTitle": "Public Holidays by Country: Belgium, France, Germany and More",
+ "metaDescription": "List national public holidays for BE, FR, DE, NL, GB (England and Wales), ES, IT, AT, LU and the US federal calendar, 2015 to 2060. Rule-based, offline.",
+ "intro": "Pick a country and a year and get the national public holidays with weekday, computed from the holiday rules in your browser. Covers ten countries for 2015 to 2060.",
+ "why": "Public holiday lists are usually fetched from an online service. These dates follow fixed rules (Easter, first Monday of May, fixed days with weekend substitutes), so they can be computed locally and checked.\n\nThe rules here were cross-checked against the open-source python-holidays library for every year from 2015 to 2060, and for England and Wales against the official GOV.UK bank holiday data for 2019 to 2028. Only national days are listed. Regions, states and communities add their own, which this tool does not cover. Always confirm a date that matters with an official calendar, because governments can change dates by decree.",
+ "howTo": [
+  "Choose a country.",
+  "Enter the first year and how many years you want.",
+  "Read the dates with weekdays and notes about substitutes or one-off changes.",
+  "Copy the list."
+ ],
+ "faq": [
+  {
+   "q": "Which countries are covered?",
+   "a": "Belgium, France, Germany (nationwide days), the Netherlands, England and Wales, Spain (nationwide days), Italy, Austria, Luxembourg and the US federal holidays."
+  },
+  {
+   "q": "Why does a US date say observed?",
+   "a": "US federal holidays on a Saturday are observed on Friday and on a Sunday on Monday, so the day off differs from the calendar date."
+  },
+  {
+   "q": "Why are regional holidays missing?",
+   "a": "They differ by state or region, and the tool lists only holidays that apply nationally."
+  },
+  {
+   "q": "Is this an official calendar?",
+   "a": "No. It is computed from rules and verified against two other sources. Check an official source before you rely on a date."
+  }
+ ],
+ "related": [
+  "working-days-due-date-calculator",
+  "long-weekend-finder",
+  "timezone-converter",
+  "monthly-calendar-generator",
+  "printable-calendar",
+  "moon-phase-calculator"
+ ],
+ "keywords": [
+  "public holidays",
+  "bank holidays",
+  "national holidays by country",
+  "holiday calendar"
+ ]
+}

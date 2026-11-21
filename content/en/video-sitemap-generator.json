@@ -1,0 +1,45 @@
+{
+ "id": "video-sitemap-generator",
+ "seoTitle": "Video Sitemap Generator with Required Field Checks",
+ "metaDescription": "Create a video sitemap with thumbnail, title, description and content or player URL. Checks Google limits first. Free.",
+ "intro": "Builds a video sitemap from simple key: value blocks and checks the required fields.",
+ "why": "A video sitemap lets search engines find videos on a page. Missing required fields or out-of-range values make an entry useless.\n\nThis tool checks the fields Google documents: thumbnail, title, description of up to 2048 characters, a content or player URL, duration from 1 to 28800 seconds, rating 0 to 5 and at most 32 tags. It stops with a list of problems instead of writing a broken file.",
+ "howTo": [
+  "Write one block per video, separated by a blank line.",
+  "Fill page, thumbnail, title, description and content or player.",
+  "Add optional fields such as duration or published.",
+  "Copy the XML into your sitemap file."
+ ],
+ "faq": [
+  {
+   "q": "Content or player URL?",
+   "a": "At least one is required. Content is recommended when you have it."
+  },
+  {
+   "q": "Which date format?",
+   "a": "W3C: 2026-05-01 or with time and zone."
+  },
+  {
+   "q": "Are restriction and platform supported?",
+   "a": "No. Add them by hand if needed."
+  },
+  {
+   "q": "Can one page have several videos?",
+   "a": "Yes. Repeat the same page value."
+  }
+ ],
+ "related": [
+  "sitemap-generator",
+  "image-sitemap-generator",
+  "news-sitemap-generator",
+  "schema-generator",
+  "sitemap-validator",
+  "youtube-link-tools"
+ ],
+ "keywords": [
+  "video sitemap generator",
+  "video:video",
+  "google video sitemap",
+  "video thumbnail_loc"
+ ]
+}

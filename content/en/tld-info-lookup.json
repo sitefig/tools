@@ -1,0 +1,45 @@
+{
+ "id": "tld-info-lookup",
+ "seoTitle": "TLD Info Lookup: Type, Manager and Punycode of Any TLD",
+ "metaDescription": "Look up any top-level domain in the IANA root zone list: generic or country code, registry manager, punycode and Unicode forms. Offline and private.",
+ "intro": "Enter TLDs, domains, URLs or email addresses and get the TLD type, the organisation that manages it and the punycode and Unicode spellings, from a bundled copy of the IANA root zone data.",
+ "why": "Domain tools often need to know whether a suffix is a country code, a generic TLD or something special, who runs it, and how an internationalised TLD looks in punycode. The answers live in the IANA root zone database.\n\nThis page bundles that list (1,437 TLDs, version 2026102300) so you can check many names at once without sending them anywhere. It takes the last label of what you paste, so a URL or email works too. It does not know second-level suffixes such as co.uk: those come from the Public Suffix List, which is a separate dataset.",
+ "howTo": [
+  "Paste one TLD, domain, URL or email per line.",
+  "Read the type, manager and punycode form for each.",
+  "A TLD that is missing may be new, retired or mistyped.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Where does the data come from?",
+   "a": "The IANA Root Zone Database page and tlds-alpha-by-domain.txt, retrieved on 2026-10-23. The file version is shown under the results."
+  },
+  {
+   "q": "Does it support internationalised TLDs?",
+   "a": "Yes. Paste the Unicode form or the xn-- form and you get both spellings."
+  },
+  {
+   "q": "Why is co.uk not found as a TLD?",
+   "a": "Only uk is in the root zone. co.uk is a registry-level suffix listed in the Public Suffix List."
+  },
+  {
+   "q": "Can it tell me if a domain is registered?",
+   "a": "No. That needs a live DNS or WHOIS query. This tool only describes the TLD."
+  }
+ ],
+ "related": [
+  "punycode",
+  "whois-record-parser",
+  "url-parser",
+  "dns-record-generator",
+  "domain-expiry-tracker",
+  "email-domain-typo-fixer"
+ ],
+ "keywords": [
+  "tld lookup",
+  "iana root zone",
+  "punycode tld",
+  "country code tld list"
+ ]
+}

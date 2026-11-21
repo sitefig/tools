@@ -1,0 +1,38 @@
+{
+ "id": "hs-code-lookup",
+ "seoTitle": "HS Code Lookup: Harmonized System 2022 by Code or Description",
+ "metaDescription": "Search the six-digit HS 2022 tariff nomenclature by code or words and see the section, chapter, heading and subheading chain. Public-domain data, offline.",
+ "intro": "Find the HS code for a product, or the meaning of a code, with its full classification path.",
+ "why": "Customs declarations, import duties and trade statistics all start from the Harmonized System. This lookup searches the six-digit HS 2022 nomenclature (about 6,900 chapters, headings and subheadings) by code prefix or by words, and shows each hit with its section, chapter, heading and subheading chain, so you can see where a product sits and what its neighbours are.\n\nSix digits are international; countries extend them to 8 to 10 digits with their own duty rates (EU TARIC/CN, US HTS, UK Trade Tariff) and revise the system every five years. Use this for orientation and confirm the national code in the official tariff; for binding classification apply for a ruling. Data: UN Comtrade via the datasets/harmonized-system project, ODC Public Domain Dedication and Licence.",
+ "howTo": [
+  "Type a code (8471 or 847130) or words (laptop, cotton shirt).",
+  "Read the matches and their hierarchy.",
+  "Confirm the national 8 to 10 digit code in your country's tariff."
+ ],
+ "faq": [
+  {
+   "q": "Does it give duty rates?",
+   "a": "No. Duty rates are national and change; use TARIC, HTS or the UK Trade Tariff."
+  },
+  {
+   "q": "Is HS 2022 current?",
+   "a": "HS is revised every five years; HS 2022 is in force and HS 2027 follows. Check the version your customs authority requires."
+  },
+  {
+   "q": "Where does the data come from?",
+   "a": "The WCO nomenclature as extracted by UN Comtrade and republished under the ODC-PDDL in datasets/harmonized-system."
+  }
+ ],
+ "related": [
+  "tax-id-checksum-validator",
+  "mime-type-lookup",
+  "port-reference",
+  "vat-calculator",
+  "ip-address-offline-lookup"
+ ],
+ "keywords": [
+  "hs code lookup",
+  "harmonized system search",
+  "tariff code finder"
+ ]
+}

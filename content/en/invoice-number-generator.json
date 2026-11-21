@@ -1,0 +1,39 @@
+{
+ "id": "invoice-number-generator",
+ "seoTitle": "Invoice Number Generator With Year Reset",
+ "metaDescription": "Generate sequential invoice numbers with prefix, year, zero padding and an option to restart each year. Continues from your last number.",
+ "intro": "Next invoice numbers in your format, continuing from the last one you issued.",
+ "why": "Invoice numbers must be unique and sequential in most countries. Typing them by hand invites duplicates and typos.\n\nSet a prefix, separator, year style and padding. Paste the last number and the tool continues from it, or restarts at your start value when the year changes and you choose to reset.",
+ "howTo": [
+  "Set prefix, separator, year style and digits.",
+  "Paste your last number, or leave empty.",
+  "Copy the numbers."
+ ],
+ "faq": [
+  {
+   "q": "Can I use several series?",
+   "a": "Yes, use a different prefix for each series, for example credit notes."
+  },
+  {
+   "q": "Are gaps allowed?",
+   "a": "Rules differ by country. Document any gap."
+  },
+  {
+   "q": "Does it store the counter?",
+   "a": "No. Paste the last number each time."
+  }
+ ],
+ "related": [
+  "invoice-generator",
+  "credit-note-generator",
+  "quotation-generator",
+  "eu-invoice-requirements-checker",
+  "payment-terms-due-date-calculator",
+  "structured-payment-reference-generator"
+ ],
+ "keywords": [
+  "invoice number generator",
+  "sequential invoice numbers",
+  "invoice numbering"
+ ]
+}

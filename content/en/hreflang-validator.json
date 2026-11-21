@@ -1,0 +1,46 @@
+{
+ "id": "hreflang-validator",
+ "seoTitle": "Free Hreflang Validator with Reciprocity Check",
+ "metaDescription": "Validate hreflang link tags in pasted HTML and check return links across several pages separated by dashes. Free, in-browser.",
+ "intro": "Paste the HTML head of one or more pages, separated by a line of three dashes, to validate hreflang tags: codes, absolute URLs, self-reference, x-default and reciprocity.",
+ "why": "Hreflang problems rarely produce a visible error. They just mean the wrong language version appears in search. The usual causes are a missing self-reference, return links that do not match, duplicate codes, invalid language codes and relative URLs.\n\nThis validator reads the link rel alternate hreflang tags in each page you paste, using the canonical link to identify the page. It checks each tag for valid codes, absolute URLs, duplicates and the presence of a self-referencing entry and x-default. When you paste several pages separated by a line of three dashes, it also checks that every page you listed links back to the others. It only sees the HTML you provide and does not fetch any URL. The check runs in your browser.",
+ "howTo": [
+  "Copy the head of each language version of the page.",
+  "Paste them into the input box, separated by a line containing three dashes.",
+  "Run the tool to see the issues for each page.",
+  "Fix missing self-references, bad codes and one-way links, then check again."
+ ],
+ "faq": [
+  {
+   "q": "How does it check reciprocity?",
+   "a": "For each pair of pages you pasted, it checks that if A lists B, then B lists A. A missing return link is reported with both URLs, since search engines may ignore one-way hreflang."
+  },
+  {
+   "q": "Why does it ask for a canonical tag?",
+   "a": "The canonical URL identifies which page each pasted block represents, so the tool can check for a self-reference. Without one, it warns that it cannot confirm it."
+  },
+  {
+   "q": "Does it fetch my live pages?",
+   "a": "No. It only analyses pasted HTML. To check a live site, copy the source of each version and paste it. Pages you do not paste cannot be checked for return links."
+  },
+  {
+   "q": "Is my HTML uploaded?",
+   "a": "No. Everything runs in your browser and nothing you paste is uploaded, stored or sent to a server, so staging or confidential configuration is safe to use here."
+  }
+ ],
+ "related": [
+  "hreflang-generator",
+  "canonical-generator",
+  "sitemap-validator",
+  "seo-inspector",
+  "sitemap-generator",
+  "meta-analyzer"
+ ],
+ "keywords": [
+  "hreflang validator",
+  "check hreflang tags",
+  "hreflang reciprocity checker",
+  "hreflang test online",
+  "validate hreflang html"
+ ]
+}

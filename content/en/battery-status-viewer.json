@@ -1,0 +1,38 @@
+{
+ "id": "battery-status-viewer",
+ "seoTitle": "Battery Status Viewer: Level, Charging and Time Left",
+ "metaDescription": "Read your device battery level, charging state and estimated time to full or empty with the Battery Status API, with live updates. Local, Chromium browsers.",
+ "intro": "See the battery level, charging state and the browser's time estimates for this device.",
+ "why": "The Battery Status API reports the charge level, whether the device is charging and estimated times to full or empty. This viewer shows them with live updates, which is useful for testing web apps that adapt to low battery and for checking a laptop or phone at a glance.\n\nChrome, Edge and Opera support the API; Firefox and Safari removed or never shipped it because battery data can be used for fingerprinting, and the page says so when it is missing. Desktops without a battery usually report 100% and charging. Nothing is sent anywhere.",
+ "howTo": [
+  "Open the page in a Chromium browser.",
+  "Plug or unplug the charger to see the values update.",
+  "Read the level, charging state and time estimates."
+ ],
+ "faq": [
+  {
+   "q": "Why does it say unavailable?",
+   "a": "Your browser does not provide the API (Firefox, Safari)."
+  },
+  {
+   "q": "Why does time say unknown?",
+   "a": "Browsers need a few minutes of data after a change before estimating."
+  },
+  {
+   "q": "Is this private?",
+   "a": "Yes, it only reads the values locally."
+  }
+ ],
+ "related": [
+  "battery-life-estimator",
+  "network-connection-info",
+  "browser-info",
+  "gps-speedometer",
+  "bubble-level"
+ ],
+ "keywords": [
+  "battery status api",
+  "check battery level browser",
+  "charging time left"
+ ]
+}

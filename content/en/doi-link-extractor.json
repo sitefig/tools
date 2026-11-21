@@ -1,0 +1,41 @@
+{
+ "id": "doi-link-extractor",
+ "seoTitle": "DOI Extractor and doi.org Link Builder",
+ "metaDescription": "Find DOIs in text or a reference list, clean them and build doi.org links. Checks the pattern only, nothing is looked up. Free, private.",
+ "intro": "Find DOIs in pasted text or a reference list, clean them up and build doi.org links. Checks the syntax only; it does not look anything up.",
+ "why": "Reference lists mix DOIs written as doi:10..., full URLs and bare numbers, often with a full stop stuck on the end.\n\nPaste the text and the tool pulls out each DOI, removes trailing punctuation, drops duplicates and builds a doi.org link. It checks the pattern recommended by Crossref and flags odd characters. It does not look a DOI up: fetching the title and authors needs a request to a server, which this offline tool does not make.",
+ "howTo": [
+  "Paste text or a reference list.",
+  "Read the table of DOIs and links.",
+  "Check any flagged DOIs by hand.",
+  "Use the Citation Generator to format a reference."
+ ],
+ "faq": [
+  {
+   "q": "Does it check the DOI exists?",
+   "a": "No. It checks the pattern. Opening the link tells you if it resolves."
+  },
+  {
+   "q": "Are DOIs case sensitive?",
+   "a": "No, but they are shown as found."
+  },
+  {
+   "q": "What is the pattern?",
+   "a": "10., four to nine digits, a slash, then letters, digits and some punctuation."
+  }
+ ],
+ "related": [
+  "citation-generator",
+  "isbn-validator-converter",
+  "html-url-extractor",
+  "extract-emails-urls-numbers",
+  "entity-extractor",
+  "url-list-normalizer"
+ ],
+ "keywords": [
+  "doi extractor",
+  "doi link generator",
+  "doi checker",
+  "find doi in text"
+ ]
+}

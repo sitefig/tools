@@ -1,0 +1,47 @@
+{
+ "id": "json-to-toml",
+ "seoTitle": "Free JSON to TOML Converter Online",
+ "metaDescription": "Free online JSON to TOML converter. Turn a JSON object into TOML tables and arrays of tables. Reports clearly when null cannot be represented.",
+ "intro": "Convert a JSON object into TOML with tables, nested tables and arrays of tables. TOML has no null, so the tool tells you if your data contains one.",
+ "why": "TOML is the configuration format behind Cargo, pyproject.toml and many other tools. If you have settings as JSON, rewriting them as tables and arrays of tables by hand is fiddly, because the syntax differs for each nesting pattern.\n\nPaste a JSON object and the tool writes the matching TOML: plain keys at the top, nested objects as tables, and lists of objects as repeated array-of-tables sections. Keys with unusual characters are quoted. The one thing TOML cannot do is represent null, so the tool stops with a clear message rather than silently dropping the value. The root must be an object, not an array. Conversion happens in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste a JSON object into the input box.",
+  "Check the output for tables such as [owner] and array tables such as [[servers]].",
+  "Remove or replace any null values if an error mentions them.",
+  "Copy the TOML into your config file."
+ ],
+ "faq": [
+  {
+   "q": "Why does it complain about null?",
+   "a": "TOML has no null value. Rather than guess, the tool stops with an error. Remove the key, or replace null with an empty string, zero or another default that suits your application."
+  },
+  {
+   "q": "Why must the input be an object?",
+   "a": "A TOML document is a table of keys, so the top level has to be a JSON object. If you have an array, wrap it in an object under a key such as items."
+  },
+  {
+   "q": "How are arrays of objects written?",
+   "a": "As arrays of tables with double brackets, for example [[servers]], repeated once per item. Arrays of plain values stay as inline arrays such as ports = [8000, 8001]."
+  },
+  {
+   "q": "Can I convert TOML back?",
+   "a": "Yes, use the TOML to JSON tool. It parses tables, arrays of tables, inline tables, dotted keys and dates."
+  }
+ ],
+ "related": [
+  "toml-to-json",
+  "toml-formatter",
+  "json-to-yaml",
+  "json-format",
+  "yaml-to-json",
+  "json-validate"
+ ],
+ "keywords": [
+  "json to toml converter",
+  "convert json to toml online",
+  "json to toml free",
+  "json toml tool",
+  "toml generator from json",
+  "online toml converter"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "id": "charm-pricing-helper",
+ "seoTitle": "Psychological Pricing Helper: Charm Price Options",
+ "metaDescription": "List price points around a target such as .99, .95 or a round number and see how each changes your price. Free, private.",
+ "intro": "Lists candidate price points near a target price with the percentage change from it.",
+ "why": "Prices ending in .99 are common, but results from the research are mixed and depend on the product and the audience. The helper does not claim to know which one sells best. It shows the options and what each does to your price so you can choose on purpose and test.\n\nIt lists endings like .99, .95 and .49, whole numbers and round numbers. Check what your margin does at each price before you pick.",
+ "howTo": [
+  "Enter your target price.",
+  "Choose two decimals or zero.",
+  "Compare the options and pick candidates to test."
+ ],
+ "faq": [
+  {
+   "q": "Does .99 really sell more?",
+   "a": "Evidence is mixed. Test with your own audience."
+  },
+  {
+   "q": "Why include round prices?",
+   "a": "Some products, especially premium ones, do better with clean round numbers."
+  },
+  {
+   "q": "Does it check my margin?",
+   "a": "No. Use a margin calculator on the shortlisted prices."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "markup-margin",
+  "discount-calculator",
+  "break-even",
+  "roi-calculator"
+ ],
+ "keywords": [
+  "charm pricing",
+  "psychological pricing",
+  "price ending 99"
+ ]
+}

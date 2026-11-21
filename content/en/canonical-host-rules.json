@@ -1,0 +1,45 @@
+{
+ "id": "canonical-host-rules",
+ "seoTitle": "HTTPS, www and Trailing Slash Redirect Rules for Apache and Nginx",
+ "metaDescription": "Generate rules that force HTTPS, one preferred host and one trailing slash policy for Apache .htaccess or Nginx, in as few hops as possible.",
+ "intro": "Builds the redirect rules for one canonical version of your site: HTTPS or not, www or non-www, and a trailing slash policy that leaves file URLs alone.",
+ "why": "Search engines see http://example.com, https://www.example.com and the slash and no-slash forms as different URLs. Redirecting all of them to one form keeps signals together and avoids duplicate pages.\n\nThe Apache rules send the scheme and host to the final address in a single hop and were tested against apache2 2.4 for the host and slash cases. HTTPS itself could not be tested locally, and Nginx output was not run. Adding a slash rule can still loop with some frameworks, so test with curl -I.",
+ "howTo": [
+  "Enter your domain without www.",
+  "Choose the preferred host, HTTPS and the slash policy.",
+  "Pick Apache or Nginx and copy the rules.",
+  "Test all four host and scheme combinations with and without a slash."
+ ],
+ "faq": [
+  {
+   "q": "Should I use www or non-www?",
+   "a": "Either works. Pick one, redirect the other and use it in canonical tags and sitemaps."
+  },
+  {
+   "q": "Why skip file URLs for the slash rule?",
+   "a": "A slash after /file.pdf would break it. The rule only touches paths without a file extension."
+  },
+  {
+   "q": "Why does it sometimes take two hops?",
+   "a": "Scheme and host are fixed in one hop, then the slash rule can add a second. Many servers can combine them, but that needs server-specific logic."
+  },
+  {
+   "q": "What about a CDN or load balancer?",
+   "a": "If it ends HTTPS for you, Apache may always see plain HTTP. Test the X-Forwarded-Proto header instead."
+  }
+ ],
+ "related": [
+  "htaccess-generator",
+  "nginx-config-generator",
+  "canonical-generator",
+  "bulk-redirect-rules",
+  "redirect-chain-analyzer",
+  "http-headers-analyzer"
+ ],
+ "keywords": [
+  "force https htaccess",
+  "www to non-www redirect",
+  "trailing slash redirect",
+  "nginx https redirect"
+ ]
+}

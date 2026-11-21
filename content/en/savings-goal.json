@@ -1,0 +1,46 @@
+{
+ "id": "savings-goal",
+ "seoTitle": "Free Savings Goal Calculator: Monthly Amount to Save",
+ "metaDescription": "Find out how much to save each month to reach a target amount, allowing for existing savings and interest. Free savings goal calculator, runs in your browser.",
+ "intro": "Enter your goal, what you have already saved, an expected annual return and the time in years. The tool works out the monthly amount you need to put aside.",
+ "why": "A deposit for a flat, a wedding, a new laptop or an emergency fund all have the same shape: a target, a deadline and a starting balance. What you want to know is the monthly figure that gets you there. Dividing the goal by the number of months is a start, but it ignores the interest your money earns on the way and the head start your existing savings give you. This calculator solves for the monthly deposit with both included, and also shows how much of the goal comes from deposits and how much from growth. If your current savings already reach the target through growth alone, it says so. Calculations stay in your browser.",
+ "howTo": [
+  "Enter your goal amount and the amount already saved.",
+  "Enter the expected annual return and the number of years.",
+  "Read the monthly saving needed, the total deposits and the growth."
+ ],
+ "faq": [
+  {
+   "q": "Does the calculation allow for interest?",
+   "a": "Yes. It assumes a constant annual return converted to a monthly rate, and works out the payment that lets your savings and deposits reach the goal. Set the return to 0 for a plain division."
+  },
+  {
+   "q": "What if my savings already cover the goal?",
+   "a": "The tool says your current savings reach the goal through growth alone, rather than showing a negative payment."
+  },
+  {
+   "q": "Are deposits at the start or end of the month?",
+   "a": "The formula treats deposits as made at the end of each month. Paying at the start would need slightly less each month."
+  },
+  {
+   "q": "Is the return guaranteed?",
+   "a": "No. Savings rates change, and investments can fall. Use a cautious rate, or run the calculation twice with a low and a high rate to see the range."
+  }
+ ],
+ "related": [
+  "compound-interest",
+  "sip-calculator",
+  "retirement-estimator",
+  "inflation-calculator",
+  "loan-calculator",
+  "simple-interest"
+ ],
+ "keywords": [
+  "savings goal calculator",
+  "free savings goal calculator",
+  "how much to save per month",
+  "savings target calculator",
+  "monthly savings calculator",
+  "savings plan calculator"
+ ]
+}

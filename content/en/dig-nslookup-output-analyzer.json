@@ -1,0 +1,38 @@
+{
+ "id": "dig-nslookup-output-analyzer",
+ "seoTitle": "dig and nslookup Output Analyzer: SPF, DMARC, MX, TTL",
+ "metaDescription": "Paste dig or nslookup output and get the records grouped and checked: SPF lookup count, DMARC policy, DKIM key, MX order, NS count, CNAME clashes and errors.",
+ "intro": "Paste what dig or nslookup printed and get the records grouped, explained and checked for common DNS and email authentication mistakes.",
+ "why": "DNS debugging usually starts with dig. This tool parses its output (full, +short and the common nslookup layouts, several queries at once) and reports what matters: NXDOMAIN or SERVFAIL meaning, SPF terms with a rough count of the 10-lookup limit, a second SPF record, +all policies, DMARC p= and rua= settings, DKIM key length estimates, MX priorities and IP targets, fewer than two name servers, CNAMEs that coexist with other records, TTL range and DNSSEC signs.\n\nThe page makes no DNS queries; the real answers come from your own resolver, so paste the output. The SPF count cannot follow nested includes, and cached answers show remaining TTL, not the configured value.",
+ "howTo": [
+  "Run dig (for example `dig example.com MX TXT +noall +answer +comments`) and copy the output.",
+  "Paste it; multiple queries in one paste are fine.",
+  "Read the grouped records and the checks section."
+ ],
+ "faq": [
+  {
+   "q": "Why can it not just query my domain?",
+   "a": "Browsers cannot send raw DNS queries and this site never makes network requests from tools. Pasting dig output keeps it private and works for internal zones too."
+  },
+  {
+   "q": "Does it follow SPF includes?",
+   "a": "No. It counts the lookup mechanisms in the record you pasted; paste the included records or use the SPF flattener for the full tree."
+  },
+  {
+   "q": "Which formats are supported?",
+   "a": "dig full output, dig +short and the common nslookup output."
+  }
+ ],
+ "related": [
+  "dns-spf-record-flattener",
+  "dns-soa-dnssec-inspector",
+  "spf-record-generator",
+  "dmarc-generator",
+  "whois-record-parser"
+ ],
+ "keywords": [
+  "dig output parser",
+  "spf dmarc check",
+  "nslookup analyzer"
+ ]
+}

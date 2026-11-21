@@ -1,0 +1,45 @@
+{
+  "id": "invisible-text-generator",
+  "seoTitle": "Invisible & Blank Character Generator (Copy Empty Text)",
+  "metaDescription": "Copy invisible Unicode characters such as the Hangul filler, Braille blank and zero-width space, with a table of what each one is.",
+  "intro": "Get a blank-looking string to paste into a name, bio or message field, and see which character you are using.",
+  "why": "The tool lists thirteen invisible or blank characters (zero-width space, joiner, non-joiner, word joiner, BOM, no-break and various spaces, Hangul fillers, Braille pattern blank) and repeats the one you choose. The generated text is shown between arrows so you can select it.\n\nWhether a site accepts blank text depends on its validation; many reject zero-width characters but accept the Hangul filler or Braille blank. Using blank text to impersonate someone or evade moderation can breach a service's rules.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the character.",
+    "Set how many times to repeat it.",
+    "Select the text between the arrows and copy.",
+    "Paste it where you need it."
+  ],
+  "faq": [
+    {
+      "q": "Which one works most often?",
+      "a": "U+3164 (Hangul filler) and U+2800 (Braille blank) are commonly accepted; zero-width spaces are often stripped."
+    },
+    {
+      "q": "Is it detectable?",
+      "a": "Yes. The zero-width detector and text cleaner find these characters."
+    },
+    {
+      "q": "Is it safe?",
+      "a": "The characters are harmless, but hidden text can be misused. Follow each site's rules."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "zero-width-detector",
+    "text-cleaner",
+    "char-info",
+    "unicode-character-map",
+    "text-obfuscator",
+    "fancy-text"
+  ],
+  "keywords": [
+    "invisible character",
+    "blank text generator",
+    "empty character copy",
+    "hangul filler"
+  ]
+}

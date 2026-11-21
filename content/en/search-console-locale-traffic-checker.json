@@ -1,0 +1,45 @@
+{
+ "id": "search-console-locale-traffic-checker",
+ "seoTitle": "Search Console Wrong-Locale Traffic Checker From a CSV Export",
+ "metaDescription": "Paste a Search Console export of clicks by page and country and see how much traffic each language version gets from outside its markets.",
+ "intro": "Reads an exported page-by-country table and your market mapping, then reports the share of clicks inside and outside each version's intended countries.",
+ "why": "If French visitors in France mostly land on your English pages, hreflang or your French pages may not be doing their job. Export clicks by page and country from Search Console, list the countries each version is meant for, and see the split with the largest outside countries.\n\nNothing is fetched: this works on a file you export. Traffic from other countries is not always a problem, since travellers and shared languages are normal, and the 60 percent threshold is a judgement call. Search Console row limits apply to the export.",
+ "howTo": [
+  "In Search Console export clicks by page and country as CSV.",
+  "Paste the CSV and list each URL prefix with its country codes.",
+  "Read the share inside and outside per version.",
+  "Investigate versions below the threshold."
+ ],
+ "faq": [
+  {
+   "q": "Which columns are required?",
+   "a": "page, country and clicks. Country can be a name or an ISO code."
+  },
+  {
+   "q": "Why is Search Console not connected?",
+   "a": "That needs an account login and API access, which this page does not do."
+  },
+  {
+   "q": "What does it flag?",
+   "a": "Versions where under 60 percent of clicks come from their listed markets."
+  },
+  {
+   "q": "Are country names matched exactly?",
+   "a": "They are matched against English names from your browser; unrecognised ones are listed."
+  }
+ ],
+ "related": [
+  "hreflang-csv-audit",
+  "hreflang-validator",
+  "hreflang-code-checker",
+  "csv-column-extractor",
+  "html-lang-attribute-checker",
+  "url-parser"
+ ],
+ "keywords": [
+  "wrong country traffic hreflang",
+  "search console country report",
+  "hreflang performance check",
+  "search console csv"
+ ]
+}

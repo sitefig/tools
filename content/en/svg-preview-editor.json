@@ -1,0 +1,46 @@
+{
+  "id": "svg-preview-editor",
+  "seoTitle": "Free SVG Preview Editor: Edit SVG Code Live",
+  "metaDescription": "Edit SVG code and see it rendered live, with syntax validation and a size readout. Free, runs in your browser and nothing is uploaded.",
+  "intro": "A two-pane editor for SVG. Type or paste markup, and the rendered image updates as you edit. If the markup is invalid, the tool shows the parser's error message instead.",
+  "why": "When you are tweaking an icon, fixing a path, or debugging why an exported SVG looks wrong, switching between a code editor and a browser tab is slow. A syntax slip, such as a missing quote or an unclosed tag, makes the image vanish with no explanation.\n\nType into the editor and, after a short pause, the image redraws. The XML parser checks the code and reports the first error it finds, and the root element must be an svg. The preview sits on a white background with a height cap, and the byte size of your code is shown so you can see the effect of your edits. The image is rendered as an image element, so scripts in the SVG do not run. Everything stays in your browser.",
+  "howTo": [
+    "Paste or write SVG code in the editor.",
+    "Watch the preview update.",
+    "Fix any parser error shown in place of the image.",
+    "Copy the finished code, or optimise it with the SVG optimizer."
+  ],
+  "faq": [
+    {
+      "q": "What counts as an error?",
+      "a": "Anything the browser's XML parser rejects, such as unclosed tags, bad attributes or unescaped characters, or a document whose root element is not svg. The first line of the parser message is shown."
+    },
+    {
+      "q": "Do scripts and animations work?",
+      "a": "Scripts do not run, because the code is displayed as an image. CSS and SMIL animations inside the SVG may play, depending on your browser, while external resources are blocked."
+    },
+    {
+      "q": "Can I make the preview larger?",
+      "a": "The preview scales within a maximum height. To control the size, set width and height or a viewBox in the SVG itself."
+    },
+    {
+      "q": "Does it save my work?",
+      "a": "No. Nothing is stored or uploaded, and the editor starts again from its sample code when you reload the page. Copy your finished SVG somewhere safe before you close the tab or navigate away."
+    }
+  ],
+  "related": [
+    "svg-optimizer",
+    "svg-path-editor",
+    "svg-to-png",
+    "svg-pattern-generator",
+    "svg-to-jsx",
+    "html-format"
+  ],
+  "keywords": [
+    "svg editor online",
+    "svg preview",
+    "live svg viewer",
+    "edit svg code",
+    "free svg code editor"
+  ]
+}

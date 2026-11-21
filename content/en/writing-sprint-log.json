@@ -1,0 +1,41 @@
+{
+ "id": "writing-sprint-log",
+ "seoTitle": "Writing Sprint Log: Words per Minute for Timed Sprints",
+ "metaDescription": "Log timed writing sprints and see words per minute for each, your best sprint, average pace and how many sprints reach a daily target.",
+ "intro": "Log your timed writing sprints (minutes and words) and see words per minute for each, your best sprint and a pace for a daily target.",
+ "why": "Timed sprints make a writing session measurable. Seeing words per minute shows which conditions work for you.\n\nEnter one line per sprint: minutes and words, with an optional note. The tool shows pace for each sprint, the average and best, and how many more sprints of your chosen length reach a daily target at your average pace. For the timer itself use the Pomodoro Timer on this site.",
+ "howTo": [
+  "Write one line per sprint, for example: 25 480 chapter 3.",
+  "Set your target for the day and sprint length.",
+  "Read the table and the pace.",
+  "Plan the next sprint."
+ ],
+ "faq": [
+  {
+   "q": "Does it time my sprint?",
+   "a": "No. Use the Pomodoro Timer, then log the result here."
+  },
+  {
+   "q": "Is the log saved?",
+   "a": "No. Keep it in your notes and paste it back."
+  },
+  {
+   "q": "What is a good pace?",
+   "a": "It depends on the person and the task. Compare yourself with your own earlier sprints."
+  }
+ ],
+ "related": [
+  "pomodoro-timer",
+  "writing-goal-tracker",
+  "word-counter",
+  "countdown-timer",
+  "exam-section-timer",
+  "content-calendar-generator"
+ ],
+ "keywords": [
+  "writing sprint timer",
+  "words per minute writing",
+  "word sprint log",
+  "writing pace calculator"
+ ]
+}

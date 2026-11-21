@@ -1,0 +1,38 @@
+{
+ "id": "startup-break-even-analysis-calculator",
+ "seoTitle": "Startup Break-Even Analysis With Margin of Safety",
+ "metaDescription": "Find break-even units and revenue, units for a profit target and the margin of safety from fixed and variable costs. Free, private.",
+ "intro": "Computes break-even units and revenue, plus units for a target profit and margin of safety.",
+ "why": "Break-even tells you how much you must sell before fixed costs are covered. Contribution per unit, price minus variable cost, is the key number.\n\nThis version adds a profit target and the margin of safety at your expected sales, showing how far sales can fall before you lose money. It assumes steady prices and costs, which is rough for a new product.",
+ "howTo": [
+  "Enter fixed costs per month, price and variable cost.",
+  "Set a profit target and expected units.",
+  "Read break-even and margin of safety."
+ ],
+ "faq": [
+  {
+   "q": "What are fixed costs?",
+   "a": "Costs that do not change with units, like rent and salaries."
+  },
+  {
+   "q": "What is margin of safety?",
+   "a": "How far sales can fall below expected before reaching break-even."
+  },
+  {
+   "q": "Does price change with volume?",
+   "a": "Not in this model."
+  }
+ ],
+ "related": [
+  "startup-runway-calculator",
+  "burn-rate-calculator",
+  "startup-cost-calculator",
+  "break-even",
+  "profit-margin"
+ ],
+ "keywords": [
+  "startup break even analysis",
+  "break even units",
+  "margin of safety"
+ ]
+}

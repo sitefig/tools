@@ -1,0 +1,45 @@
+{
+  "id": "meta-description-suggester",
+  "seoTitle": "Meta Description Suggester (Extractive, From Your Page)",
+  "metaDescription": "Get three meta description candidates built from your page's own best sentences, cut cleanly at a safe length. Rule based, no AI.",
+  "intro": "Paste a page or article and receive meta description options copied from your text, trimmed to a chosen length and checked for your keyword.",
+  "why": "Sentences are scored for keyword presence, position (opening sentences are favoured), helpful words such as guide, how or cost, the presence of numbers and closeness to the target length. The best sentences become candidates, shortened at a word boundary with an ellipsis if needed.\n\nGoogle often rewrites descriptions to match the query, so write one that is an accurate summary and a reason to click, then check it in the SERP preview. Extracted sentences are a draft, not a finished snippet.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the page text or HTML.",
+    "Optionally enter the target keyword and a maximum length.",
+    "Review the three candidates and their character counts.",
+    "Edit one for tone and paste it into your meta tag."
+  ],
+  "faq": [
+    {
+      "q": "How long should a meta description be?",
+      "a": "About 150 to 160 characters fits most desktop results; mobile shows less."
+    },
+    {
+      "q": "Is it a ranking factor?",
+      "a": "Not directly. It influences click-through, which is why it deserves care."
+    },
+    {
+      "q": "Why copy sentences?",
+      "a": "It avoids invented claims. The tool selects, it does not write."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "serp-snippet",
+    "meta-tag-generator",
+    "headline-generator",
+    "text-summarizer",
+    "title-length-checker",
+    "meta-analyzer"
+  ],
+  "keywords": [
+    "meta description generator",
+    "meta description suggester",
+    "snippet length",
+    "seo description"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "due-date-calculator",
+ "seoTitle": "Free Pregnancy Due Date Calculator Online",
+ "metaDescription": "Estimate your due date from the first day of your last period or the conception date, with trimester dates. Free, private, and runs in your browser.",
+ "intro": "Choose last menstrual period or conception date, enter the date and your cycle length. The tool estimates the due date, trimester milestones and today's progress.",
+ "why": "A positive test starts a long list of questions, and the first is usually when the baby is due. Midwives date a pregnancy from the first day of the last menstrual period, which is why you are already counted as two weeks pregnant at conception. This calculator does that arithmetic for you: it adds 280 days to the period date, adjusts for a cycle that is longer or shorter than 28 days, or works from a known conception date. It also lists the end of the first and second trimesters and how far along you are today. Only about 5% of babies arrive on the estimated date, and your own care provider's dating is the one to follow. This is not medical advice, and the date you enter stays in your browser.",
+ "howTo": [
+  "Choose 'Last menstrual period (LMP)' or 'Conception date'.",
+  "Pick the date and, for LMP, enter your usual cycle length in days.",
+  "Read the due date, the trimester dates and the weeks completed today."
+ ],
+ "faq": [
+  {
+   "q": "How is the due date calculated?",
+   "a": "From the last period, it adds 280 days, which is 40 weeks. From conception it adds 266 days. A cycle longer or shorter than 28 days shifts the date by the difference."
+  },
+  {
+   "q": "How accurate is a due date?",
+   "a": "It is an estimate. Few babies arrive exactly on the day, and many are born between 37 and 42 weeks. An ultrasound scan may revise the date."
+  },
+  {
+   "q": "What if my cycle is irregular?",
+   "a": "The estimate becomes less reliable. Use the cycle length that is most typical for you, or rely on early scan dating from your midwife or doctor."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It gives an informational estimate only, based on averages. Follow the dating and guidance given by your midwife, doctor or other healthcare provider."
+  }
+ ],
+ "related": [
+  "add-subtract-dates",
+  "date-difference",
+  "age-calculator",
+  "week-number",
+  "countdown-to-date",
+  "day-of-week"
+ ],
+ "keywords": [
+  "due date calculator",
+  "pregnancy due date calculator",
+  "free due date calculator",
+  "due date from last period",
+  "conception date calculator",
+  "pregnancy week calculator"
+ ]
+}

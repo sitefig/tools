@@ -1,0 +1,45 @@
+{
+ "id": "jsonld-syntax-validator",
+ "seoTitle": "JSON-LD Syntax Validator With Line and Column Errors",
+ "metaDescription": "Find the exact line and column of a JSON-LD error, then check @context, @type and @id. Accepts raw JSON or a full HTML page. Runs locally.",
+ "intro": "Parses JSON-LD with its own strict parser, reports the exact line and column of any error, and then checks @context, @type and @id. Paste raw JSON or a whole page and it finds the ld+json scripts.",
+ "why": "Most broken structured data is a typo in the JSON: a trailing comma, smart quotes copied from a document, or a missing bracket. Browsers and search engines then ignore the whole block without saying why. This tool points at the exact spot and explains the problem in plain words.\n\nAfter the syntax passes it checks the parts that make JSON-LD work: a schema.org @context, an @type that exists in the current vocabulary (with a did-you-mean for typos such as Organisation), and well-formed @id and @graph values. It does not check properties or Google requirements; use the property checker and the eligibility checker for that.",
+ "howTo": [
+  "Paste the JSON-LD, or the whole HTML page with its script tags.",
+  "Read the first error with its line and column and fix it.",
+  "Run again until the output says Valid JSON.",
+  "Review the @context and @type findings, then copy the reformatted JSON."
+ ],
+ "faq": [
+  {
+   "q": "Does it find several errors at once?",
+   "a": "It reports the first syntax error, as JSON parsers do, because everything after it is unreliable. Semantic findings (context, type, id) are listed together once the syntax is valid."
+  },
+  {
+   "q": "Which Schema.org version is used?",
+   "a": "Version 29.2 of the vocabulary. The page says so in the output. New types added later will show as unknown until the tool is updated."
+  },
+  {
+   "q": "Why does it flag duplicate keys?",
+   "a": "JSON allows them but keeps only the last value, so the first one is silently lost. That is nearly always a mistake."
+  },
+  {
+   "q": "Is my markup sent anywhere?",
+   "a": "No. Parsing and checking happen in your browser."
+  }
+ ],
+ "related": [
+  "schema-property-checker",
+  "rich-result-eligibility-checker",
+  "jsonld-inspector",
+  "schema-generator",
+  "schema-markup-diff",
+  "json-format"
+ ],
+ "keywords": [
+  "json-ld validator",
+  "json-ld syntax error",
+  "validate structured data json",
+  "schema.org @type check"
+ ]
+}

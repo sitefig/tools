@@ -1,0 +1,45 @@
+{
+ "id": "iptc-copyright-metadata-editor",
+ "seoTitle": "IPTC Caption, Keywords and Copyright Editor for JPEG (Batch)",
+ "metaDescription": "Read and write the IPTC caption, keywords, creator and copyright notice in JPEG files, one set of fields for many photos, with an optional license link in...",
+ "intro": "Read and write caption, keywords and copyright in JPEGs.",
+ "why": "Fill in the fields you want and choose JPEG files. The tool writes IPTC caption, headline, title, keywords, creator, credit, source and copyright, and adds a small XMP block (creator, rights, license link) when the file has none. Leave every field empty to just read what the files hold.\n\nEmpty fields keep what is there. The picture data is copied byte for byte. Copyright metadata states a claim. It does not stop copying, and anyone can strip it.",
+ "howTo": [
+  "Choose the JPEGs.",
+  "Fill in the fields.",
+  "Optionally add a license URL.",
+  "Download the updated files."
+ ],
+ "faq": [
+  {
+   "q": "Will search engines read it?",
+   "a": "Google can read IPTC creator, credit and copyright for image results. Visibility is not guaranteed."
+  },
+  {
+   "q": "Does it overwrite existing XMP?",
+   "a": "No. If the file already has XMP, it is left unchanged and the report says so."
+  },
+  {
+   "q": "Does it work for PNG?",
+   "a": "No. JPEG only."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "exif-viewer",
+  "exif-remover",
+  "gps-location-stripper",
+  "photo-date-fixer",
+  "image-watermark",
+  "icc-profile-inspector"
+ ],
+ "keywords": [
+  "IPTC editor",
+  "add copyright to photo",
+  "jpeg keywords",
+  "image metadata editor"
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free MongoDB Aggregation Pipeline Builder | Free Tools</title>
+<meta name="description" content="Free online MongoDB aggregation pipeline builder. Fill in match, unwind, lookup, group, sort, project, skip and limit stages for mongosh, Node or PyMongo.">
+<link rel="canonical" href="https://tools.sitefig.net/en/mongodb-aggregate-builder/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/mongodb-aggregate-builder/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/mongodb-aggregate-builder/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free MongoDB Aggregation Pipeline Builder | Free Tools">
+<meta property="og:description" content="Free online MongoDB aggregation pipeline builder. Fill in match, unwind, lookup, group, sort, project, skip and limit stages for mongosh, Node or PyMongo.">
+<meta property="og:url" content="https://tools.sitefig.net/en/mongodb-aggregate-builder/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free MongoDB Aggregation Pipeline Builder | Free Tools">
+<meta name="twitter:description" content="Free online MongoDB aggregation pipeline builder. Fill in match, unwind, lookup, group, sort, project, skip and limit stages for mongosh, Node or PyMongo.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"MongoDB Aggregation Pipeline Builder","url":"https://tools.sitefig.net/en/mongodb-aggregate-builder/","description":"Free online MongoDB aggregation pipeline builder. Fill in match, unwind, lookup, group, sort, project, skip and limit stages for mongosh, Node or PyMongo.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the collection name and choose the output format.","Fill in the stages you need, such as a $match JSON filter and a $group field.","Write accumulators as name:op:field, separated by commas.","Add sort, skip and limit, then copy the generated pipeline."],"keywords":"mongodb aggregation builder, mongodb pipeline generator, aggregate pipeline online, free mongodb query builder, mongosh aggregate generator, pymongo aggregate builder","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"MongoDB Aggregation Pipeline Builder","item":"https://tools.sitefig.net/en/mongodb-aggregate-builder/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which stages and accumulators are supported?","acceptedAnswer":{"@type":"Answer","text":"Stages: $match, $unwind, $lookup, $group, $sort, $project, $skip and $limit. Accumulators: sum, avg, min, max, first, last, push, addToSet and count. Others you add by hand."}},{"@type":"Question","name":"In what order are stages added?","acceptedAnswer":{"@type":"Answer","text":"In a fixed order: match, unwind, lookup, group, sort, project, skip, limit. If you need a different order, copy the JSON output and rearrange the stages."}},{"@type":"Question","name":"How do I group all documents together?","acceptedAnswer":{"@type":"Answer","text":"Enter null as the group field. The _id of the group becomes null, so accumulators run over the whole collection, which is useful for totals and averages."}},{"@type":"Question","name":"Does it run the query?","acceptedAnswer":{"@type":"Answer","text":"No. It only generates code. Test the pipeline on a copy of your data or with explain before running it on production."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">MongoDB Aggregation Pipeline Builder</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>MongoDB Aggregation Pipeline Builder</h1>
+<p class="lede">Build an aggregation pipeline from form fields: $match, $unwind, $lookup, $group, $sort, $project, $skip and $limit. Output as mongosh, Node.js driver, PyMongo or plain JSON.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="mongodb-aggregate-builder" data-module="devgen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Aggregation pipelines are powerful but fiddly to type: nested braces, dollar signs on field references and a stage order that matters. A missing bracket costs time, and translating a working mongosh query into Python or Node adds another chance for error.</p>
+<p>Fill in only the stages you need and the tool assembles them in a sensible order: match first, then unwind, lookup, group, sort, project, skip and limit. Accumulators are written as name:op:field, for example total:sum:amount. You pick the output language, and get a snippet ready to paste. It builds a basic pipeline, not every operator MongoDB offers, so extend the result by hand for expressions and conditions. Nothing leaves your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the collection name and choose the output format.</li><li>Fill in the stages you need, such as a $match JSON filter and a $group field.</li><li>Write accumulators as name:op:field, separated by commas.</li><li>Add sort, skip and limit, then copy the generated pipeline.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which stages and accumulators are supported?</summary><p>Stages: $match, $unwind, $lookup, $group, $sort, $project, $skip and $limit. Accumulators: sum, avg, min, max, first, last, push, addToSet and count. Others you add by hand.</p></details>
+<details><summary>In what order are stages added?</summary><p>In a fixed order: match, unwind, lookup, group, sort, project, skip, limit. If you need a different order, copy the JSON output and rearrange the stages.</p></details>
+<details><summary>How do I group all documents together?</summary><p>Enter null as the group field. The _id of the group becomes null, so accumulators run over the whole collection, which is useful for totals and averages.</p></details>
+<details><summary>Does it run the query?</summary><p>No. It only generates code. Test the pipeline on a copy of your data or with explain before running it on production.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/sql-to-mongodb/"><span class="link-card__title">SQL to MongoDB Query</span><span class="link-card__desc">Translate SQL into MongoDB shell syntax: SELECT -&gt; find() with filter, projection, sort, skip, limit (or distinct); GROUP BY / aggregates / simple JOINs -&gt; aggregate pipeline ($match, $lookup, $group, $project, $sort); INSERT VALUES -&gt; insertOne/insertMany; UPDATE -&gt; updateMany with $set/$inc; DELETE -&gt; deleteMany. LIKE becomes a regex. Subqueries, UNION and CTEs are not supported.</span></a></li><li><a class="link-card" href="/en/mongodb-to-sql/"><span class="link-card__title">MongoDB Query to SQL</span><span class="link-card__desc">Translate MongoDB shell queries to SQL: find/findOne with filters ($and, $or, $in, $gt..., $regex -&gt; LIKE/REGEXP, $exists), projection, sort/skip/limit, countDocuments, distinct, insertOne/Many, updateOne/Many ($set, $inc, $unset), deleteOne/Many and simple aggregate pipelines ($match, $group, $sort, $limit, $project, $lookup). The query is parsed, never executed.</span></a></li><li><a class="link-card" href="/en/mongodb-objectid-parser/"><span class="link-card__title">MongoDB ObjectId Parser</span><span class="link-card__desc">Decode ObjectIds into creation time, random value and counter; one per line.</span></a></li><li><a class="link-card" href="/en/elasticsearch-query-builder/"><span class="link-card__title">Elasticsearch Query DSL Builder</span><span class="link-card__desc">Write bool-query clauses one per line and get the JSON body plus a curl command.</span></a></li><li><a class="link-card" href="/en/json-format/"><span class="link-card__title">JSON Formatter</span><span class="link-card__desc">Pretty-print JSON with custom indent and optional key sorting; errors show line and column.</span></a></li><li><a class="link-card" href="/en/redis-command-generator/"><span class="link-card__title">Redis Command Generator</span><span class="link-card__desc">Build correct Redis commands (SET with EX/NX/XX, locks, hashes, lists, sets, sorted sets, streams, SCAN, publish...) and get them as redis-cli, ioredis, node-redis, redis-py or go-redis calls. Client snippets use each library's generic &quot;send raw command&quot; API, which is valid for every command.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

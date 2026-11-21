@@ -1,0 +1,47 @@
+{
+ "id": "csv-to-html-table",
+ "seoTitle": "Free CSV to HTML Table Generator with Preview",
+ "metaDescription": "Free online CSV to HTML table converter. Generate clean table markup with thead and tbody from CSV, choose indent, and see a live preview.",
+ "intro": "Convert CSV into HTML table markup with thead, tbody and escaped cell text. Choose whether the first row is a header and how to indent, and check the result in a live preview.",
+ "why": "Publishing tabular data on a web page means writing a lot of repetitive markup: a tr for every row and a td for every cell, each with correct escaping. Copying from a spreadsheet gives you messy code, and typing it yourself is slow.\n\nPaste your CSV and get a clean table with a header section and body, indented the way you prefer. Characters such as & and < in cells are escaped so they show as text instead of breaking the page. The live preview shows how the table looks with basic borders, so you can check column order before pasting into your CMS. The markup is plain, with no classes or inline styles, so your own stylesheet controls the look. Everything runs in your browser.",
+ "howTo": [
+  "Paste your CSV into the input box.",
+  "Choose the delimiter, or leave it on auto.",
+  "Tick First row is header to use th cells inside thead, and choose the indent.",
+  "Check the preview, then copy the HTML table."
+ ],
+ "faq": [
+  {
+   "q": "Is the output styled?",
+   "a": "No. It is plain table markup. The preview uses simple borders only so you can see the layout. Add your own CSS classes or styles on your site."
+  },
+  {
+   "q": "Are special characters escaped?",
+   "a": "Yes. Ampersands, angle brackets and similar characters in cells are converted to entities so they display as text rather than being read as HTML."
+  },
+  {
+   "q": "What if my CSV has no header row?",
+   "a": "Untick the header option. Every row, including the first, is then written as td cells inside tbody, and no thead section is created in the markup."
+  },
+  {
+   "q": "Is the table accessible?",
+   "a": "Using th for headers and thead for the header row is the basis of an accessible table. For complex tables you may still want to add a caption and scope attributes yourself."
+  }
+ ],
+ "related": [
+  "csv-to-markdown-table",
+  "html-table-to-json",
+  "html-format",
+  "csv-to-json",
+  "html-table-converter",
+  "csv-viewer"
+ ],
+ "keywords": [
+  "csv to html table",
+  "convert csv to html online",
+  "csv to html free",
+  "html table generator from csv",
+  "csv table to html",
+  "csv to table markup"
+ ]
+}

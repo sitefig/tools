@@ -1,0 +1,45 @@
+{
+ "id": "surface-plotter-3d",
+ "seoTitle": "Free 3D Surface Plotter: Graph z = f(x, y) Online",
+ "metaDescription": "Draw a surface z = f(x, y) as a colored 3D mesh and turn it with azimuth and elevation. Free, no upload, runs in your browser.",
+ "intro": "Draws a surface z = f(x, y) as a depth-sorted, height-colored mesh. You turn it by changing two angles.",
+ "why": "Two-variable functions are hard to picture from the formula alone. A quick surface plot shows peaks, saddles and ripples, such as sin(x) * cos(y) or x^2 - y^2.\n\nThe plot is a static image made from filled polygons sorted by depth, with color showing height from blue to red. Because it is not a mouse-driven 3D scene, you rotate it by editing the azimuth and elevation numbers, which also keeps it usable with a keyboard. Very steep surfaces can show small sorting artefacts.",
+ "howTo": [
+  "Type the formula in x and y, for example sin(sqrt(x^2 + y^2)).",
+  "Set the x and y ranges and the grid size.",
+  "Change azimuth and elevation to look from another side.",
+  "Check the z range printed below the picture."
+ ],
+ "faq": [
+  {
+   "q": "Can I rotate with the mouse?",
+   "a": "No. Use the angle fields; this keeps the tool accessible and dependency-free."
+  },
+  {
+   "q": "Why are parts missing?",
+   "a": "Points where the function is undefined (such as a division by zero) are left out."
+  },
+  {
+   "q": "How many points does it use?",
+   "a": "Up to 60 by 60 cells, so 3600 polygons."
+  },
+  {
+   "q": "Can I save the picture?",
+   "a": "Use your browser to save or print the page, or take a screenshot."
+  }
+ ],
+ "related": [
+  "function-grapher-roots",
+  "scientific-calculator-degrees",
+  "derivative-calculator-steps",
+  "integral-calculator-area",
+  "fractal-explorer-mandelbrot-julia",
+  "matrix-calculator"
+ ],
+ "keywords": [
+  "3d function plotter",
+  "plot z = f(x,y)",
+  "surface plot online",
+  "3d graphing calculator"
+ ]
+}

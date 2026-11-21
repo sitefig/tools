@@ -1,0 +1,46 @@
+{
+  "id": "unicode-character-map",
+  "seoTitle": "Free Unicode Character Map: Browse and Copy Symbols",
+  "metaDescription": "Browse Unicode blocks or any hex range, click a character to copy it, and see its code point, HTML entity and UTF-8 bytes. Free, in your browser.",
+  "intro": "Lets you browse Unicode by block or by a custom hex range. Click a character to copy it and see its code point, decimal value, HTML entity, UTF-8 bytes and JavaScript escape.",
+  "why": "Sometimes you need a character that is not on your keyboard: an arrow, a currency sign, a box-drawing line, a Greek letter or a mathematical operator. Searching the web for one symbol and copying it from a random page is slow, and you rarely get its code point, which is what a developer needs for HTML or source code.\n\nChoose a block such as Arrows or Currency Symbols, or type a hex range. Hover to read the details, click to copy, and use the Jump box to go to a code point or paste a character to find it. Unassigned and control code points are greyed out. Everything runs in your browser and nothing is uploaded.",
+  "howTo": [
+    "Choose a Unicode block from the list, or enter a custom hex range.",
+    "Hover over a character to see its code point and encodings.",
+    "Click a character to copy it and add it to the picked tray.",
+    "Use Jump with U+1F600 or a pasted character to go to a specific place."
+  ],
+  "faq": [
+    {
+      "q": "What details are shown for a character?",
+      "a": "The code point in U+ notation, its decimal value, the HTML numeric entity, the UTF-8 bytes in hex and the JavaScript escape. These are the forms you need when writing HTML, CSS or source code."
+    },
+    {
+      "q": "How many characters appear at once?",
+      "a": "A page shows up to 256 code points, with Prev and Next buttons to move through larger ranges. Unassigned code points, control characters and private use areas are shown disabled."
+    },
+    {
+      "q": "What do combining marks look like?",
+      "a": "They are displayed on a dotted circle so you can see them alone. When copied they attach to whatever character comes before them in your text."
+    },
+    {
+      "q": "Can I look up a character I only have as text?",
+      "a": "Yes. Paste it into the Jump box and press Enter. The tool opens the block that contains it and shows its details. For longer text, use the character info tool."
+    }
+  ],
+  "related": [
+    "char-info",
+    "emoji-picker",
+    "html-entities-reference",
+    "unicode-escape",
+    "utf8-bytes-viewer",
+    "unicode-normalize"
+  ],
+  "keywords": [
+    "unicode character map",
+    "unicode symbol picker",
+    "copy special characters",
+    "unicode block browser",
+    "free character map online"
+  ]
+}

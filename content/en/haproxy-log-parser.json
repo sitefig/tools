@@ -1,0 +1,44 @@
+{
+ "id": "haproxy-log-parser",
+ "seoTitle": "HAProxy Log Parser: Timers and Termination State Codes",
+ "metaDescription": "Decode HAProxy httplog lines: Tq/Tw/Tc/Tr/Ta timers, status and the four-letter termination state explained in words. Free.",
+ "intro": "Parses HAProxy HTTP logs and explains termination flags such as sH-- and SC--.",
+ "why": "The termination state shows why a session ended: a client abort, a server timeout, a refused connection. It is the fastest way to tell a slow backend from a dead one, but the letters are hard to remember.\n\nThe first two letters are decoded from the HAProxy configuration manual, section 8. Timers are in milliseconds and -1 means the stage was not reached.",
+ "howTo": [
+  "Paste httplog lines from syslog or haproxy.log.",
+  "Filter by status, for example 5xx.",
+  "Read the decoded termination states.",
+  "Check timers and queue waits in the table."
+ ],
+ "faq": [
+  {
+   "q": "Why is TR sometimes -1?",
+   "a": "The request was aborted before a full request arrived."
+  },
+  {
+   "q": "Are the cookie letters decoded?",
+   "a": "No. Only the first two letters. The third and fourth are shown as written."
+  },
+  {
+   "q": "What if some lines do not match?",
+   "a": "They are skipped and the result says how many. TCP-mode and custom log-format lines are not supported."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "alb-elb-log-parser",
+  "access-log-parser",
+  "response-time-percentiles",
+  "nginx-rate-limit-calculator",
+  "traefik-caddy-log-parser",
+  "log-format-detector"
+ ],
+ "keywords": [
+  "haproxy log analyzer",
+  "haproxy termination state",
+  "haproxy httplog parser"
+ ]
+}

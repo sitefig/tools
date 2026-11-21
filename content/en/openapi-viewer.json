@@ -1,0 +1,45 @@
+{
+  "id": "openapi-viewer",
+  "seoTitle": "OpenAPI & Swagger Viewer: Readable Endpoint Outline",
+  "metaDescription": "Paste an OpenAPI 3 or Swagger 2 file (JSON or YAML) and read servers, auth, every endpoint with parameters and responses, and the schemas.",
+  "intro": "Turn a long API description into a compact outline you can scan: endpoints grouped by path, with parameters, request bodies and response codes.",
+  "why": "The viewer resolves the structure of an OpenAPI 3.x or Swagger 2.0 document: info, servers or host, security schemes, each operation (method, path, tags, deprecated flag), parameters with location and required marks, request bodies, responses with media types and schema names, and the component schemas with required properties starred. $ref targets are shown by name and not fetched.\n\nIt reads the document you paste; it does not validate it (use the OpenAPI validator for that) or call the API.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the spec as JSON or YAML.",
+    "Read the outline from top to bottom.",
+    "Look for deprecated or undocumented operations.",
+    "Use the validator and converters for further work."
+  ],
+  "faq": [
+    {
+      "q": "Can it load a spec from a URL?",
+      "a": "No. Pasting keeps it offline; a browser extension could fetch specs."
+    },
+    {
+      "q": "Does it support OpenAPI 3.1?",
+      "a": "Basic 3.1 documents render, but 3.1-only features such as type arrays are shown simply."
+    },
+    {
+      "q": "Where are the examples?",
+      "a": "Examples are not rendered; this view focuses on structure."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "openapi-validator",
+    "openapi-to-typescript-fetch",
+    "openapi-to-postman",
+    "postman-to-openapi",
+    "json-schema-validator",
+    "api-mock-response-generator"
+  ],
+  "keywords": [
+    "openapi viewer",
+    "swagger viewer",
+    "api documentation outline",
+    "swagger to readable"
+  ]
+}

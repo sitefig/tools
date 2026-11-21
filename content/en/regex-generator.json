@@ -1,0 +1,45 @@
+{
+  "id": "regex-generator",
+  "seoTitle": "Regex Generator from Examples (Rule Based, No AI)",
+  "metaDescription": "Give examples that should match and ones that should not, and get a regex: a known pattern if one fits, otherwise one learned from your examples.",
+  "intro": "Describe what you want with examples instead of syntax and get a regular expression back, tested against all of them.",
+  "why": "The generator first tries a library of common patterns (email, URL, ISO date, UUID, IPv4, hex colour, time, version, slug, numbers) and keeps those that match every positive and no negative example. Otherwise it generalises your examples by character class (digit, upper, lower, space, punctuation) and learns the length ranges per position when all examples share the same shape. As a last resort it lists the literals as an alternation.\n\nThe result is only as good as your examples: give varied positives and the tricky negatives. Always review it, and prefer a validated library for emails and URLs.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter strings that must match, one per line.",
+    "Optionally enter strings that must not match.",
+    "Run it and pick a candidate.",
+    "Test it in the regex tester with more data."
+  ],
+  "faq": [
+    {
+      "q": "Is this machine learning?",
+      "a": "No. It is a rule-based generaliser with a small pattern library."
+    },
+    {
+      "q": "Why did it fail?",
+      "a": "No pattern fit all positives without matching a negative; remove a conflicting example or add more."
+    },
+    {
+      "q": "Can it handle optional parts?",
+      "a": "Only when lengths vary within one segment. Examples with different structures fall back to an alternation."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "regex-tester",
+    "regex-explainer",
+    "regex-to-code",
+    "regex-escape",
+    "regex-cheatsheet",
+    "extract-emails-urls-numbers"
+  ],
+  "keywords": [
+    "regex generator",
+    "regex from examples",
+    "create regular expression",
+    "ai regex alternative"
+  ]
+}

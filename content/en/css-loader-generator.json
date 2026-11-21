@@ -1,0 +1,46 @@
+{
+  "id": "css-loader-generator",
+  "seoTitle": "Free CSS Loader and Spinner Generator (Pure CSS)",
+  "metaDescription": "Generate pure CSS loading spinners, dots, bars and pulses with your colour, size and speed. HTML and CSS to copy, with preview. Free, in your browser.",
+  "intro": "Creates a pure-CSS loading indicator: a spinner, dual ring, bouncing dots, bars or a pulse. You choose colour, size and speed and get the HTML and CSS to paste, plus a live preview.",
+  "why": "Every app has a moment where it waits for data, and a loading animation tells people that something is happening. Pulling in an icon library or a GIF for that is heavy, and hand-writing the keyframes for a spinner is a copy-and-paste job from old projects.\n\nPick one of five styles, then set the colour, size and animation speed. The output is a tiny HTML snippet and a CSS block with its own keyframes, no images and no JavaScript. The preview shows it centred on the page. Because loaders are decoration, add an accessible label such as aria-busy or visually hidden text where it matters for screen reader users. The code is built in your browser and nothing is uploaded.",
+  "howTo": [
+    "Choose a type: spinner, dual-ring, dots, bars or pulse.",
+    "Pick a colour and set the size and speed.",
+    "Check the animated preview.",
+    "Copy the HTML and CSS into your page."
+  ],
+  "faq": [
+    {
+      "q": "Does it need JavaScript or images?",
+      "a": "No. Each loader is a few lines of HTML and CSS keyframes, so it loads instantly, scales cleanly at any size and can be recoloured by changing one value."
+    },
+    {
+      "q": "How do I make it accessible?",
+      "a": "The animation is purely visual. Add a text alternative, such as an aria-label on the container, a visually hidden \"Loading\" message or aria-busy on the region being updated."
+    },
+    {
+      "q": "Can I change the speed later?",
+      "a": "Yes. The duration is a single value in the animation property, in seconds, so you can edit it in the CSS. A lower number makes the animation faster."
+    },
+    {
+      "q": "Why does the size scale the other parts?",
+      "a": "Border thickness, gaps and dot sizes are calculated as fractions of the size you enter, so the loader keeps its proportions as you make it bigger or smaller."
+    }
+  ],
+  "related": [
+    "css-animation-generator",
+    "css-cubic-bezier",
+    "svg-pattern-generator",
+    "css-pattern-generator",
+    "gradient-generator",
+    "color-converter"
+  ],
+  "keywords": [
+    "css loader generator",
+    "css spinner generator",
+    "pure css loading animation",
+    "css loading dots",
+    "free css preloader"
+  ]
+}

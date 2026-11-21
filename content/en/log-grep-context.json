@@ -1,0 +1,44 @@
+{
+ "id": "log-grep-context",
+ "seoTitle": "Log Grep with Context: Regex Search with Before and After Lines",
+ "metaDescription": "Search a log with a regex and show lines of context before and after each match, like grep -n -B -A. Free, runs in your browser.",
+ "intro": "A grep with context for pasted logs or files: regex, before and after lines, invert, highlight and a match limit.",
+ "why": "Finding the error line is half the job. The lines before it usually tell you why. This tool shows them with line numbers, the way grep -n -C does.\n\nMatches are marked with a colon and context with a dash. Overlapping context is merged. The output was compared with grep on a test file.",
+ "howTo": [
+  "Paste the log or choose a file.",
+  "Enter a regex and set lines before and after.",
+  "Turn on ignore-case, invert or highlight if needed.",
+  "Read the matches with context."
+ ],
+ "faq": [
+  {
+   "q": "Is the syntax grep or JavaScript?",
+   "a": "JavaScript regular expressions."
+  },
+  {
+   "q": "How large a file?",
+   "a": "Hundreds of MB may work. For huge files use the large log file viewer."
+  },
+  {
+   "q": "What does -- mean?",
+   "a": "A gap between two groups of context, as in grep."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "large-log-file-viewer",
+  "regex-tester",
+  "exception-grouper",
+  "ci-build-log-error-extractor",
+  "multi-log-merger",
+  "text-diff"
+ ],
+ "keywords": [
+  "grep with context online",
+  "log search regex",
+  "grep -C in browser"
+ ]
+}

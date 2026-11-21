@@ -1,0 +1,44 @@
+{
+ "id": "bot-firewall-rule-builder",
+ "seoTitle": "Bot Firewall Rule Builder: Cloudflare, Nginx, Apache",
+ "metaDescription": "Generate Cloudflare WAF, Nginx and Apache rules that block or rate-limit chosen bots by user-agent. Free, runs in your browser.",
+ "intro": "Builds user-agent block or rate-limit rules for three platforms from a list of bot names.",
+ "why": "robots.txt is a request; a firewall rule is enforcement. For crawlers that ignore robots.txt, you can refuse them at the server.\n\nList the bot tokens and get a Cloudflare custom rule expression, an Nginx map with a 403 or a limit_req setup, and an Apache rewrite rule. User-agent rules only catch bots that identify themselves honestly, and they also block real visitors who carry the word in their string. Test with curl -A.",
+ "howTo": [
+  "List bot tokens, one per line.",
+  "Choose block or rate limit and the platform.",
+  "Copy the rules into your config.",
+  "Test with curl -A \"GPTBot\" -I."
+ ],
+ "faq": [
+  {
+   "q": "Will this stop a determined scraper?",
+   "a": "No. It changes its user-agent. Use IP ranges, rate limits or a bot management service."
+  },
+  {
+   "q": "Does Apache support rate limiting?",
+   "a": "Not built in; the tool says so in the output."
+  },
+  {
+   "q": "Is the Cloudflare syntax tested?",
+   "a": "Not against a live account here."
+  },
+  {
+   "q": "Should I also edit robots.txt?",
+   "a": "Yes, keep both."
+  }
+ ],
+ "related": [
+  "htaccess-bot-blocker-generator",
+  "nginx-bot-map-generator",
+  "bot-rate-limit-rule-calculator",
+  "ai-bot-robots-builder",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "block bots cloudflare waf",
+  "block gptbot nginx",
+  "user-agent block rule",
+  "block ai bots firewall"
+ ]
+}

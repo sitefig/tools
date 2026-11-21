@@ -1,0 +1,45 @@
+{
+  "id": "audio-waveform-svg",
+  "seoTitle": "Audio Waveform to SVG Image Generator",
+  "metaDescription": "Turn an audio file into a waveform image as SVG with bars, a filled shape or a line, in your size and colours. Audio is decoded locally.",
+  "intro": "Create waveform graphics for podcasts, players and video thumbnails without audio software.",
+  "why": "The tool decodes the file with the browser's audio decoder, computes the peak level for each bar or point across the track, and writes an SVG with your chosen size, number of bars, style, colour and optional background. The SVG has an accessible label.\n\nPeaks are scaled to the loudest part of the file so quiet tracks still fill the image. Only the first channel is drawn, and formats the browser cannot decode are rejected.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose an audio file.",
+    "Set size, style, colour and number of bars.",
+    "Copy or download the SVG.",
+    "Embed it in your page with an accessible description."
+  ],
+  "faq": [
+    {
+      "q": "Which formats are supported?",
+      "a": "Whatever your browser can decode: MP3, AAC, OGG, WAV, FLAC and more, depending on the browser."
+    },
+    {
+      "q": "Can I animate it?",
+      "a": "The output is static; CSS or JS can animate the bars."
+    },
+    {
+      "q": "Is my audio uploaded?",
+      "a": "No."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "audio-trimmer",
+    "audio-converter",
+    "svg-optimizer",
+    "svg-to-png",
+    "audio-bpm-tap",
+    "image-compressor"
+  ],
+  "keywords": [
+    "audio waveform svg",
+    "waveform generator",
+    "soundwave image",
+    "mp3 to waveform"
+  ]
+}

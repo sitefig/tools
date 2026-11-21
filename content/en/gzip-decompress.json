@@ -1,0 +1,47 @@
+{
+ "id": "gzip-decompress",
+ "seoTitle": "Free Gzip and Deflate Decompressor from Base64",
+ "metaDescription": "Decode Base64 and decompress gzip, deflate or raw deflate data back to readable text. Free, runs in your browser, and nothing is uploaded.",
+ "intro": "Paste Base64 that holds gzip, deflate or raw deflate data and read the original text. Choose the format if the default gzip does not fit.",
+ "why": "Payloads that look like random Base64 often turn out to be compressed. You meet them in message queues, cache entries, cookie values, log shippers and API fields that compress JSON to save space. A string starting with H4sI is the tell-tale sign of gzip.\n\nThis tool decodes the Base64, runs the data through the browser's own decompression, and shows the resulting text. If the format is wrong or the data is damaged, it asks you to check the format option instead of failing silently. Everything happens in the page, so data from logs or production systems is not uploaded.",
+ "howTo": [
+  "Paste the Base64 string into the box.",
+  "Choose the format: gzip, deflate or deflate-raw.",
+  "Read the decompressed text in the output.",
+  "Copy it, or switch the format if you see an error."
+ ],
+ "faq": [
+  {
+   "q": "How do I know which format to pick?",
+   "a": "Gzip Base64 usually starts with H4sI. Zlib-wrapped deflate often starts with eJ. Raw deflate has no marker. If the tool reports invalid data, try the other two options in turn."
+  },
+  {
+   "q": "Why does it say the result is not valid text?",
+   "a": "The decompression worked but the content is not UTF-8 text. It may be a binary file, such as an image or a protobuf message. This tool displays text only."
+  },
+  {
+   "q": "What if the Base64 is URL-safe?",
+   "a": "That is fine. The decoder converts - and _ back, ignores whitespace and a data: prefix, and fixes missing padding before decompressing."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "There is no fixed limit, but the data is held in memory in your tab. Very large inputs, or archives that expand enormously, may be slow or fail. Treat unknown data with care, since a small input can expand a great deal."
+  }
+ ],
+ "related": [
+  "gzip-compress",
+  "base64-decode",
+  "base64-encode",
+  "jwt-decode",
+  "zip-inspector",
+  "json-format"
+ ],
+ "keywords": [
+  "gzip decompress online",
+  "base64 gzip decoder",
+  "decode h4sI string",
+  "free inflate tool",
+  "decompress deflate base64",
+  "ungzip text online"
+ ]
+}

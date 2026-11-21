@@ -1,0 +1,45 @@
+{
+ "id": "pdf-grayscale",
+ "seoTitle": "PDF Grayscale Converter: Print Color PDFs in Gray",
+ "metaDescription": "Make a color PDF display and print in grayscale, keeping text sharp and selectable. Uses a PDF blend mode; runs in your browser.",
+ "intro": "Adds a gray layer in the Saturation blend mode to each page, so colors drop out and brightness stays. Text and vector art remain sharp and searchable.",
+ "why": "Printing a color document in black and white saves ink, and gray often reads better than a printer's own conversion of red or green text. Rasterising every page would do it but turns text into pictures. Painting a full-page gray rectangle with the PDF Saturation blend mode removes the saturation of everything below it and keeps its brightness.\n\nWe checked a rendered page: the original had strong colors and the converted page had zero spread between its red, green and blue channels. The limits are stated plainly. The color data is still in the file, so the size does not shrink, and old RIPs or print workflows that flatten transparency may ignore the effect. For strict black-and-white printing, also use your printer's gray setting.",
+ "howTo": [
+  "Choose a color PDF.",
+  "Press Run.",
+  "Download the grayscale PDF.",
+  "Check it in your viewer before printing."
+ ],
+ "faq": [
+  {
+   "q": "Does the file get smaller?",
+   "a": "No. The original color data stays; only a gray layer is added."
+  },
+  {
+   "q": "Is the text still selectable?",
+   "a": "Yes. Nothing is rasterised."
+  },
+  {
+   "q": "Will every printer respect it?",
+   "a": "Modern viewers and printer drivers do. A few older print systems ignore transparency blend modes."
+  },
+  {
+   "q": "Can I get true gray color data?",
+   "a": "Not with this method. A desktop tool that converts colors in place is needed for that."
+  }
+ ],
+ "related": [
+  "pdf-dark-mode",
+  "pdf-compress",
+  "pdf-flattener",
+  "pdf-to-image",
+  "pdf-n-up",
+  "pdf-image-watermark"
+ ],
+ "keywords": [
+  "pdf to grayscale",
+  "convert pdf to black and white",
+  "pdf grayscale online",
+  "print pdf in gray"
+ ]
+}

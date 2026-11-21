@@ -1,0 +1,45 @@
+{
+ "id": "hreflang-sitemap-validator",
+ "seoTitle": "Hreflang Sitemap Validator (xhtml:link Annotations)",
+ "metaDescription": "Validate xhtml:link hreflang in a sitemap: namespace, rel, codes, absolute URLs, self-reference, return links and duplicates.",
+ "intro": "Checks the hreflang annotations inside sitemap XML against Google's sitemap rules.",
+ "why": "Hreflang in a sitemap needs the xhtml namespace, one url element per version, and the full set of alternates in each, including the page itself. Typical errors are a missing namespace, relative hrefs, a missing self-entry or a return link that exists in only one direction. The tool lists each with the url entry it belongs to.\n\nIt reads the XML with pattern matching, not a full XML parser, so it will not catch every well-formedness error; run the file through an XML validator as well. The general sitemap checks (limits, dates) are in the Sitemap Validator.",
+ "howTo": [
+  "Paste the sitemap XML.",
+  "Read errors by url entry.",
+  "Fix namespaces, codes and missing alternates.",
+  "Re-run, then submit the sitemap."
+ ],
+ "faq": [
+  {
+   "q": "Is x-default checked?",
+   "a": "Only as information."
+  },
+  {
+   "q": "Do both pages need to be in the same sitemap?",
+   "a": "Return links can only be verified for pages present; others are noted."
+  },
+  {
+   "q": "Does it check HTTP status?",
+   "a": "No, it cannot fetch pages."
+  },
+  {
+   "q": "Where are the rules from?",
+   "a": "Google's localized versions page, read 2026-10-23."
+  }
+ ],
+ "related": [
+  "sitemap-validator",
+  "hreflang-format-converter",
+  "hreflang-code-checker",
+  "hreflang-csv-audit",
+  "sitemap-generator",
+  "hreflang-validator"
+ ],
+ "keywords": [
+  "hreflang sitemap validator",
+  "xhtml:link validation",
+  "hreflang xml sitemap",
+  "sitemap hreflang errors"
+ ]
+}

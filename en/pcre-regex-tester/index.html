@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PCRE Regex Tester Online: Lookbehind, Recursion, Free | Free Tools</title>
+<meta name="description" content="Test PCRE2 patterns in your browser with a hand-written engine: named groups, lookbehind, possessive quantifiers, recursion, conditionals. Free, offline.">
+<link rel="canonical" href="https://tools.sitefig.net/en/pcre-regex-tester/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/pcre-regex-tester/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/pcre-regex-tester/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="PCRE Regex Tester Online: Lookbehind, Recursion, Free | Free Tools">
+<meta property="og:description" content="Test PCRE2 patterns in your browser with a hand-written engine: named groups, lookbehind, possessive quantifiers, recursion, conditionals. Free, offline.">
+<meta property="og:url" content="https://tools.sitefig.net/en/pcre-regex-tester/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PCRE Regex Tester Online: Lookbehind, Recursion, Free | Free Tools">
+<meta name="twitter:description" content="Test PCRE2 patterns in your browser with a hand-written engine: named groups, lookbehind, possessive quantifiers, recursion, conditionals. Free, offline.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"PCRE Regex Tester (PCRE2 Syntax, Lookbehind, Recursion)","url":"https://tools.sitefig.net/en/pcre-regex-tester/","description":"Test PCRE2 patterns in your browser with a hand-written engine: named groups, lookbehind, possessive quantifiers, recursion, conditionals. Free, offline.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Type or paste the pattern without delimiters in the first box.","Paste the text to search in the second box and tick the flags you need.","Read the match list: each match shows its code point range and every group.","Optionally enter a replacement such as $2/${year} to preview a substitution."],"keywords":"pcre regex tester, pcre2 online, regex lookbehind possessive, test pcre pattern","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Regex","item":"https://tools.sitefig.net/en/#regex"},{"@type":"ListItem","position":3,"name":"PCRE Regex Tester (PCRE2 Syntax, Lookbehind, Recursion)","item":"https://tools.sitefig.net/en/pcre-regex-tester/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which PCRE features are supported?","acceptedAnswer":{"@type":"Answer","text":"Character classes and POSIX classes, \\d \\w \\s \\h \\v \\R \\N, \\p{..} through the browser, anchors \\A \\z \\Z \\b \\B, greedy, lazy and possessive quantifiers, capture, named, non-capturing and atomic groups, lookahead, lookbehind (fixed length per top-level branch), backreferences \\1 \\g{-1} \\k\u003cname>, conditionals, recursion (?R) (?1) (?&name), inline flags and \\Q..\\E."}},{"@type":"Question","name":"What is not supported?","acceptedAnswer":{"@type":"Answer","text":"Control verbs such as (*SKIP), branch reset groups (?|...), \\G, \\X, callouts, \\K inside lookarounds (PCRE2 forbids it too), unicode escapes in identifiers, and variable-length lookbehind (PCRE2 10.43 and later). Unsupported syntax gives an error instead of a wrong answer."}},{"@type":"Question","name":"How was it checked?","acceptedAnswer":{"@type":"Answer","text":"About 9,000 random pattern and subject cases per run were generated and compared with PCRE2 10.42 through a small C program, over many runs. Match positions and groups agreed. One known difference remains: \\K inside a repeated atomic group can report a different start."}},{"@type":"Question","name":"Are my patterns sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The matcher runs in your browser and nothing is uploaded."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#regex">Regex</a></li><li><span aria-current="page">PCRE Regex Tester (PCRE2 Syntax, Lookbehind, Recursion)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>PCRE Regex Tester (PCRE2 Syntax, Lookbehind, Recursion)</h1>
+<p class="lede">Runs a PCRE2-style pattern against your text and lists every match with its offsets, capture groups and named groups, plus an optional substitution using PCRE2 replacement syntax.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="pcre-regex-tester" data-module="new25"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>The regex tester most sites offer uses the JavaScript engine, which lacks several PCRE features that PHP, grep -P, nginx, Apache and many editors rely on: possessive quantifiers, atomic groups, recursion, conditionals, \K and variable alternatives in lookbehind. Pasting a PCRE pattern into a JavaScript tester then gives misleading answers.</p>
+<p>This page contains its own backtracking matcher written for the PCRE2 syntax. It was compared with the real PCRE2 10.42 library on tens of thousands of generated pattern and subject pairs, and the results agreed except where noted below. It is still not PCRE2: there is no JIT, no (*VERB) control verbs, no branch reset groups, no \G, \X or Unicode properties beyond what the browser provides, and no callouts. Matching works on code points, like PCRE2 in UTF mode. A step limit stops catastrophic patterns.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Type or paste the pattern without delimiters in the first box.</li><li>Paste the text to search in the second box and tick the flags you need.</li><li>Read the match list: each match shows its code point range and every group.</li><li>Optionally enter a replacement such as $2/${year} to preview a substitution.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which PCRE features are supported?</summary><p>Character classes and POSIX classes, \d \w \s \h \v \R \N, \p{..} through the browser, anchors \A \z \Z \b \B, greedy, lazy and possessive quantifiers, capture, named, non-capturing and atomic groups, lookahead, lookbehind (fixed length per top-level branch), backreferences \1 \g{-1} \k&lt;name&gt;, conditionals, recursion (?R) (?1) (?&amp;name), inline flags and \Q..\E.</p></details>
+<details><summary>What is not supported?</summary><p>Control verbs such as (*SKIP), branch reset groups (?|...), \G, \X, callouts, \K inside lookarounds (PCRE2 forbids it too), unicode escapes in identifiers, and variable-length lookbehind (PCRE2 10.43 and later). Unsupported syntax gives an error instead of a wrong answer.</p></details>
+<details><summary>How was it checked?</summary><p>About 9,000 random pattern and subject cases per run were generated and compared with PCRE2 10.42 through a small C program, over many runs. Match positions and groups agreed. One known difference remains: \K inside a repeated atomic group can report a different start.</p></details>
+<details><summary>Are my patterns sent anywhere?</summary><p>No. The matcher runs in your browser and nothing is uploaded.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/regex-tester/"><span class="link-card__title">Regex Tester</span><span class="link-card__desc">Test a JavaScript regex: matches with indexes, capture groups, named groups and replace preview.</span></a></li><li><a class="link-card" href="/en/python-re-regex-tester/"><span class="link-card__title">Python re Regex Tester (Python 3.12 Syntax, finditer and sub)</span><span class="link-card__desc">Test a pattern with Python re semantics without Python: (?P&lt;name&gt;), (?P=name), lookbehind that must be fixed width, atomic groups, possessive quantifiers, flags, finditer and re.sub templates.</span></a></li><li><a class="link-card" href="/en/regex-cheatsheet/"><span class="link-card__title">Regex Cheat Sheet</span><span class="link-card__desc">JavaScript regular expression syntax quick reference.</span></a></li><li><a class="link-card" href="/en/regex-explainer/"><span class="link-card__title">Regex Explainer (Plain English)</span><span class="link-card__desc">Paste a JavaScript regular expression and get a line-by-line explanation of every token, group, lookaround, quantifier and flag.</span></a></li><li><a class="link-card" href="/en/regex-to-code/"><span class="link-card__title">Regex to Code (JS, Python, Go, Java, PHP, C#, Ruby, Rust)</span><span class="link-card__desc">Turn one regular expression into correctly escaped snippets for eight languages, with warnings where a language lacks a feature (lookbehind, backreferences, named groups).</span></a></li><li><a class="link-card" href="/en/redos-checker/"><span class="link-card__title">ReDoS Checker: Static Scan for Catastrophic Backtracking</span><span class="link-card__desc">Scan a JavaScript regex for patterns that can backtrack catastrophically: nested quantifiers, overlapping alternatives, adjacent overlapping repeats. A review aid, not a proof.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

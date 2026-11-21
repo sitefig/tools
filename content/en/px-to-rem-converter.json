@@ -1,0 +1,45 @@
+{
+ "id": "px-to-rem-converter",
+ "seoTitle": "Free PX to REM and EM Converter Online",
+ "metaDescription": "Convert pixel values to rem or em and back for a chosen root font size, or rewrite every px value in pasted CSS to rem. Free, in your browser.",
+ "intro": "Convert a list of pixel values to rem or em, convert rem back to pixels, or paste a stylesheet and have every px value rewritten as rem.",
+ "why": "Sizing in rem lets text and spacing follow the visitor's browser font size, which matters for accessibility. Designers still hand over pixel values, and doing the division by 16 in your head for every margin is slow and error-prone.\n\nSet your root size, usually 16, and paste a list of values to get a table. Or paste CSS and the tool rewrites each px value, turning 0px into plain 0 and trimming long decimals. Note that em depends on the font size of the parent element, so the same number only equals rem at the root level. Media query widths and borders you want to keep sharp are better left in pixels, so check the rewritten CSS before shipping it.",
+ "howTo": [
+  "Choose px to rem, rem to px, or rewrite CSS.",
+  "Enter values one per line, or paste CSS, and set the root font size.",
+  "Copy the converted values or the new stylesheet."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between rem and em?",
+   "a": "rem is relative to the root element font size, em to the font size of the element or its parent. The tool divides by the root size, which is exactly right only for rem."
+  },
+  {
+   "q": "Does rewriting CSS change media queries?",
+   "a": "Every px value in the pasted text is converted, including those in media queries. Browsers handle em and rem in queries differently from px, so you may prefer to restore those."
+  },
+  {
+   "q": "Why is 0px written as 0?",
+   "a": "Zero needs no unit in CSS, so 0px becomes plain 0. Other values keep up to four decimals with trailing zeros removed."
+  },
+  {
+   "q": "What root size should I use?",
+   "a": "16 matches the default in browsers. If your site sets html font-size to 62.5 percent, use 10 so the maths lines up with your CSS."
+  }
+ ],
+ "related": [
+  "css-unit-converter",
+  "css-clamp-calculator",
+  "css-clamp-generator",
+  "tailwind-spacing-generator",
+  "tailwind-converter",
+  "responsive-breakpoint-previewer"
+ ],
+ "keywords": [
+  "px to rem converter",
+  "pixels to rem calculator",
+  "css px to rem online",
+  "free px to em tool",
+  "convert css to rem"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "review-reply-generator",
+  "seoTitle": "Review Reply Generator for Google Business (Templates)",
+  "metaDescription": "Draft a polite reply to a customer review from its star rating and topics using fill-in templates. Not AI; edit before posting.",
+  "intro": "Turn a customer review into a first-draft reply that matches the rating, mentions what the reviewer raised and invites follow-up where needed.",
+  "why": "The tool reads the review for topics such as service, price, waiting, quality, delivery and cleanliness, and for positive or negative wording. It then fills a template for five-star, three-star or low ratings with your business name, signature, tone (warm or formal) and a contact for resolving problems.\n\nIt is a template engine, not a language model, so always add one specific detail from the review before you post. Do not offer compensation in exchange for changing a review, and keep personal information out of public replies.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the review text and set the star rating.",
+    "Enter your business name, signature and contact.",
+    "Pick a tone and generate.",
+    "Personalise the reply with one concrete detail and publish it."
+  ],
+  "faq": [
+    {
+      "q": "Is the reply written by AI?",
+      "a": "No. It is assembled from templates using keywords found in the review."
+    },
+    {
+      "q": "Should I reply to negative reviews?",
+      "a": "Yes, briefly and politely, offering to resolve it offline. Replies are public and read by future customers."
+    },
+    {
+      "q": "Can I use it in other languages?",
+      "a": "The keyword detection and templates are English only."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "headline-generator",
+    "sentiment-lexicon",
+    "ai-sentiment-classifier",
+    "tone-analyzer",
+    "schema-generator",
+    "press-release-template"
+  ],
+  "keywords": [
+    "review reply generator",
+    "google business reply",
+    "respond to reviews",
+    "review response template"
+  ]
+}

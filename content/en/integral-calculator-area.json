@@ -1,0 +1,45 @@
+{
+ "id": "integral-calculator-area",
+ "seoTitle": "Integral Calculator: Antiderivative, Definite Integral and Area Plot",
+ "metaDescription": "Find antiderivatives and definite integrals of common functions, with a numeric cross-check and a shaded area plot. Free, runs in your browser.",
+ "intro": "Gives the antiderivative when the built-in rules can find it, the value of a definite integral with a numeric cross-check, and a plot of the shaded area.",
+ "why": "The value of a definite integral is the signed area under a curve. This tool computes it numerically with adaptive Simpson integration, and when it can find an antiderivative it also evaluates F(b) - F(a) and compares the two values. If they disagree it warns you, which usually means a singularity inside the interval.\n\nThe antiderivative table covers polynomials, sums, constant multiples, powers of a linear term, sin, cos, exp, sinh, cosh, tan, sqrt, ln of a linear term, c/(ax+b) and c/(ax^2+k). It does not do integration by parts or substitution, so x*sin(x) gets a numeric value but no formula. Every antiderivative is checked by differentiating it numerically before it is shown.",
+ "howTo": [
+  "Type the function of x.",
+  "Enter the lower and upper limits, or clear them for an indefinite integral.",
+  "Read the antiderivative, the numeric value and the check.",
+  "Look at the shaded plot to see which parts count as negative."
+ ],
+ "faq": [
+  {
+   "q": "Why is there no formula for my integral?",
+   "a": "The built-in table is limited. A numeric value is still given when you enter limits."
+  },
+  {
+   "q": "How precise is the number?",
+   "a": "The target tolerance is 1e-10. Smooth functions usually reach it."
+  },
+  {
+   "q": "Does it handle improper integrals?",
+   "a": "No. Limits must be finite and the function finite on the interval."
+  },
+  {
+   "q": "What does the + C mean?",
+   "a": "Any constant can be added to an antiderivative without changing its derivative."
+  }
+ ],
+ "related": [
+  "derivative-calculator-steps",
+  "function-grapher-roots",
+  "polynomial-equation-solver",
+  "scientific-calculator-degrees",
+  "statistics-calculator",
+  "probability-distribution-calculator"
+ ],
+ "keywords": [
+  "integral calculator",
+  "definite integral calculator",
+  "area under curve calculator",
+  "antiderivative online"
+ ]
+}

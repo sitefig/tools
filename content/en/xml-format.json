@@ -1,0 +1,47 @@
+{
+ "id": "xml-format",
+ "seoTitle": "Free XML Formatter & Beautifier Online",
+ "metaDescription": "Free online XML formatter. Pretty-print XML with your choice of indent, keep or drop comments, and preserve mixed content. Runs in your browser.",
+ "intro": "Pretty-print XML with consistent indentation. Elements, attributes, CDATA and the XML declaration are kept, mixed text content is preserved, and comments can be kept or removed.",
+ "why": "XML from a SOAP response, an RSS feed or an export is often delivered on a single line. That makes it nearly impossible to see which element contains which, or where a closing tag is missing. A formatter lays the tree out so you can read it.\n\nThe tool re-indents elements, keeps attributes and CDATA sections, and treats text mixed with tags, like a paragraph with a bold word, carefully so that spacing in the text is not changed. You choose 2, 4 or 8 spaces or a tab, and whether comments stay. Malformed XML is reported rather than guessed at. Formatting happens in your browser and nothing is uploaded, which matters when the XML contains customer records.",
+ "howTo": [
+  "Paste your XML into the input box.",
+  "Choose the indent: 2, 4 or 8 spaces, or a tab.",
+  "Tick Keep comments if you want comments retained.",
+  "Copy the formatted XML."
+ ],
+ "faq": [
+  {
+   "q": "Does formatting change my data?",
+   "a": "Whitespace between elements is rearranged, but text content is not altered. Where text and tags are mixed, as in an element containing text and a child, the original spacing is preserved."
+  },
+  {
+   "q": "What if the XML is not well-formed?",
+   "a": "The tool reports an error instead of producing output. Use the XML Validator for a clear check of well-formedness using the browser parser."
+  },
+  {
+   "q": "Are CDATA sections and comments kept?",
+   "a": "CDATA sections are kept as they are. Comments are kept when the option is ticked and removed when it is not."
+  },
+  {
+   "q": "Can it format XML with namespaces?",
+   "a": "Namespace prefixes and declarations are kept as written. The tool re-indents; it does not resolve or validate namespaces or check against a DTD or schema."
+  }
+ ],
+ "related": [
+  "xml-minify",
+  "xml-validate",
+  "xml-to-json",
+  "xpath-tester",
+  "html-format",
+  "json-to-xml"
+ ],
+ "keywords": [
+  "xml formatter online",
+  "xml beautifier",
+  "pretty print xml",
+  "free xml formatter",
+  "format xml online",
+  "xml indent tool"
+ ]
+}

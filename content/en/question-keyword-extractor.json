@@ -1,0 +1,45 @@
+{
+ "id": "question-keyword-extractor",
+ "seoTitle": "Question Keyword Extractor: Pull Questions from a Keyword List",
+ "metaDescription": "Filter a keyword list to question-style queries and group them by who, what, how, why, can and more. Good for FAQ and how-to content.",
+ "intro": "Keeps keywords that start with a question word (or end with a question mark), and groups them by that word.",
+ "why": "Question keywords tell you what people want to know, and they fit FAQ sections, how-to guides and featured snippet answers. In a list of thousands they are hard to spot.\n\nThe filter looks for English question words at the start of a keyword, and optionally anywhere in it. It does not understand meaning: a keyword that starts with \"can\" or \"is\" may be a product name.",
+ "howTo": [
+  "Paste your keyword list.",
+  "Decide whether to include keywords with question words later in the phrase.",
+  "Read the groups.",
+  "Turn the best questions into headings with short direct answers."
+ ],
+ "faq": [
+  {
+   "q": "Which words count as question words?",
+   "a": "who, whom, whose, what, when, where, why, how, which, can, could, do, does, did, is, are, was, were, will, would, should, shall, may, might, has, have, am."
+  },
+  {
+   "q": "Does it handle other languages?",
+   "a": "No, English only."
+  },
+  {
+   "q": "Why are some questions missing?",
+   "a": "Unusual phrasing such as \"best way to X\" is not a question word start unless you tick the \"anywhere\" option."
+  },
+  {
+   "q": "What next?",
+   "a": "Group them with the keyword clusterer or check intent with the intent classifier."
+  }
+ ],
+ "related": [
+  "keyword-list-cleaner",
+  "keyword-intent-classifier",
+  "keyword-clusterer",
+  "featured-snippet-formatter",
+  "geo-readiness-checker",
+  "content-brief-builder"
+ ],
+ "keywords": [
+  "question keywords",
+  "extract questions from keyword list",
+  "faq keyword research",
+  "question keyword filter"
+ ]
+}

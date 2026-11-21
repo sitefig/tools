@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Terraform AWS Starter Code Scaffolder | Free Tools</title>
+<meta name="description" content="Scaffold Terraform for AWS: provider, remote state, VPC with subnets, a private S3 bucket and an EC2 instance. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/terraform-scaffolder/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/terraform-scaffolder/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/terraform-scaffolder/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Terraform AWS Starter Code Scaffolder | Free Tools">
+<meta property="og:description" content="Scaffold Terraform for AWS: provider, remote state, VPC with subnets, a private S3 bucket and an EC2 instance. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/terraform-scaffolder/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Terraform AWS Starter Code Scaffolder | Free Tools">
+<meta name="twitter:description" content="Scaffold Terraform for AWS: provider, remote state, VPC with subnets, a private S3 bucket and an EC2 instance. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Terraform AWS Scaffolder","url":"https://tools.sitefig.net/en/terraform-scaffolder/","description":"Scaffold Terraform for AWS: provider, remote state, VPC with subnets, a private S3 bucket and an EC2 instance. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Set the AWS region and a lowercase name prefix.","Pick the state backend and tick the VPC, S3 bucket or EC2 blocks you need.","Copy the generated code into main.tf and review it before running terraform plan."],"keywords":"terraform aws scaffold, terraform starter template, generate terraform vpc s3 ec2, free terraform generator, terraform boilerplate aws","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Infra","item":"https://tools.sitefig.net/en/#infra"},{"@type":"ListItem","position":3,"name":"Terraform AWS Scaffolder","item":"https://tools.sitefig.net/en/terraform-scaffolder/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the code ready for production?","acceptedAnswer":{"@type":"Answer","text":"No. It is a scaffold with safe-looking defaults. The EC2 security group opens port 443 to the whole internet, for example. Review every block, then run terraform plan."}},{"@type":"Question","name":"What does the S3 backend option do?","acceptedAnswer":{"@type":"Answer","text":"It adds a backend block pointing at a bucket named from your prefix, with encryption and a lockfile. You must create that bucket yourself first; the tool does not create it."}},{"@type":"Question","name":"Which provider version is used?","acceptedAnswer":{"@type":"Answer","text":"It pins the AWS provider to the 5.x series with a pessimistic constraint. Change the version if your project needs a different major release."}},{"@type":"Question","name":"Are credentials involved?","acceptedAnswer":{"@type":"Answer","text":"No. Nothing is read from AWS and no keys are needed. The tool only generates text from the values you type."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#infra">Infra</a></li><li><span aria-current="page">Terraform AWS Scaffolder</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Terraform AWS Scaffolder</h1>
+<p class="lede">Choose a region, a name prefix and the pieces you want, and get a formatted Terraform starting point with provider, state backend, VPC, S3 bucket and EC2.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="terraform-scaffolder" data-module="devgen2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Every new AWS project begins with the same boilerplate: required_providers, a backend, a VPC with public subnets and route tables, a bucket with encryption and public access blocked. Writing it from memory is slow, and copying from an old repo carries over stale settings.</p>
+<p>This scaffolder produces that skeleton with sensible defaults, such as versioning, AES256 encryption, a blocked public bucket policy and IMDSv2 required on the instance. The output is a starting point, not a reviewed production design. Check the CIDR ranges, security group rules and instance size before you apply anything. All generation happens in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Set the AWS region and a lowercase name prefix.</li><li>Pick the state backend and tick the VPC, S3 bucket or EC2 blocks you need.</li><li>Copy the generated code into main.tf and review it before running terraform plan.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Is the code ready for production?</summary><p>No. It is a scaffold with safe-looking defaults. The EC2 security group opens port 443 to the whole internet, for example. Review every block, then run terraform plan.</p></details>
+<details><summary>What does the S3 backend option do?</summary><p>It adds a backend block pointing at a bucket named from your prefix, with encryption and a lockfile. You must create that bucket yourself first; the tool does not create it.</p></details>
+<details><summary>Which provider version is used?</summary><p>It pins the AWS provider to the 5.x series with a pessimistic constraint. Change the version if your project needs a different major release.</p></details>
+<details><summary>Are credentials involved?</summary><p>No. Nothing is read from AWS and no keys are needed. The tool only generates text from the values you type.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/terraform-formatter/"><span class="link-card__title">Terraform / HCL Formatter</span><span class="link-card__desc">Indent HCL by nesting depth and align &quot;=&quot; in consecutive attribute lines (terraform fmt style). Heredocs untouched.</span></a></li><li><a class="link-card" href="/en/terraform-hcl-to-json/"><span class="link-card__title">Terraform HCL to JSON</span><span class="link-card__desc">Parse Terraform / HCL2 configuration into JSON. Labeled blocks nest by label (resource.aws_instance.web), unlabeled blocks become arrays, non-literal expressions (references, function calls, conditionals, for expressions) are kept as &quot;${...}&quot; strings as in the Terraform JSON syntax. Comments and heredocs are handled; dynamic blocks are not expanded.</span></a></li><li><a class="link-card" href="/en/aws-iam-policy-builder/"><span class="link-card__title">AWS IAM Policy Builder</span><span class="link-card__desc">Compose an IAM policy from &quot;Effect | actions | resources | Operator key=value&quot; lines.</span></a></li><li><a class="link-card" href="/en/aws-iam-policy-linter/"><span class="link-card__title">AWS IAM Policy Linter</span><span class="link-card__desc">Check an IAM policy JSON for wildcards, privilege-escalation actions, missing Version and structural mistakes.</span></a></li><li><a class="link-card" href="/en/kubernetes-deployment-generator/"><span class="link-card__title">Kubernetes Deployment Generator</span><span class="link-card__desc">Deployment with probes, resources, hardened securityContext, plus optional Service, HPA and Ingress in one multi-document YAML.</span></a></li><li><a class="link-card" href="/en/ansible-playbook-generator/"><span class="link-card__title">Ansible Playbook Scaffolder</span><span class="link-card__desc">Scaffold a playbook with packages, services, users, firewall ports and a restart handler.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

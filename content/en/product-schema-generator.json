@@ -1,0 +1,45 @@
+{
+ "id": "product-schema-generator",
+ "seoTitle": "Product Schema Generator With GTIN and Currency Validation",
+ "metaDescription": "Build Product JSON-LD with offer, availability, GTIN, rating and review. Checks GTIN check digits, ISO 4217 currency and price format.",
+ "intro": "Builds Product markup with offers, availability, price validity, ratings, reviews and a GTIN. The GTIN check digit, the currency code and the price format are validated before output.",
+ "why": "A wrong GTIN or a price like \"€89,99\" makes product markup useless for shopping features. The tool validates the GTIN against the GS1 check digit rule (8, 12, 13 or 14 digits) and names the right property, checks the currency against the ISO 4217 list known to your browser, and requires a plain decimal number for price.\n\nAvailability accepts the short names from Google's documentation and expands them to full Schema.org URLs. The output is checked against both the product snippet and the merchant listing requirements, because they differ.",
+ "howTo": [
+  "Fill name, image, price, currency and availability.",
+  "Add a GTIN, brand and sku if you have them.",
+  "Add ratingValue and ratingCount only if real reviews are shown on the page.",
+  "Copy the script tag onto the product page."
+ ],
+ "faq": [
+  {
+   "q": "How is the GTIN checked?",
+   "a": "With the GS1 mod 10 rule on the last digit. The tool picks gtin8, gtin12, gtin13 or gtin14 by length."
+  },
+  {
+   "q": "Which availability values are valid?",
+   "a": "BackOrder, Discontinued, InStock, InStoreOnly, LimitedAvailability, OnlineOnly, OutOfStock, PreOrder, PreSale and SoldOut, as listed by Google."
+  },
+  {
+   "q": "Do I need ratings?",
+   "a": "Google product snippets need one of offers, aggregateRating or review. Ratings must be genuine and visible."
+  },
+  {
+   "q": "Why is price a plain number?",
+   "a": "Both Google and Schema.org expect digits with a point. Currency goes in priceCurrency."
+  }
+ ],
+ "related": [
+  "merchant-return-shipping-schema-builder",
+  "schema-generator",
+  "rich-result-eligibility-checker",
+  "product-page-extractor",
+  "jsonld-syntax-validator",
+  "review-aggregaterating-schema-builder"
+ ],
+ "keywords": [
+  "product schema generator",
+  "gtin check digit validator",
+  "product json-ld offers",
+  "merchant listing markup"
+ ]
+}

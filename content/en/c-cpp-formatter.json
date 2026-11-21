@@ -1,0 +1,45 @@
+{
+ "id": "c-cpp-formatter",
+ "seoTitle": "C and C++ Code Re-indenter Online",
+ "metaDescription": "Re-indent C or C++ by brace depth with 2 spaces, keep preprocessor lines at column 0, indent switch cases. No clang-format presets.",
+ "intro": "Fixes indentation, blank lines and optionally line breaks in C and C++ code without sending it anywhere.",
+ "why": "Messy indentation hides the structure of C and C++ code, and minified or copy-pasted code is worse. A re-indenter gives you the block layout back quickly.\n\nThe tool reads your code with a small scanner that knows strings, comments and raw literals, so braces inside them are ignored. It then sets the indent from bracket depth and, if you ask, puts a line break after braces and semicolons. It is not clang-format.",
+ "howTo": [
+  "Paste C or C++ code.",
+  "Pick the indent and line break mode.",
+  "Copy the result.",
+  "Use clang-format locally for a named style."
+ ],
+ "faq": [
+  {
+   "q": "Is this the same as clang-format?",
+   "a": "No. clang-format applies full style presets, wraps lines and aligns declarations. This tool re-indents and optionally breaks lines only, with no LLVM or Google preset."
+  },
+  {
+   "q": "Will it change what my code does?",
+   "a": "It only changes whitespace outside strings, comments and raw literals. Test results: the non-whitespace text was unchanged on all test files, and re-running the tool gave the same output. Review the diff anyway."
+  },
+  {
+   "q": "Why not wrap long lines?",
+   "a": "Wrapping needs a full parser. This tool does not have one."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "bitwise-calculator",
+  "ieee754-converter",
+  "regex-to-code",
+  "hex-dump-viewer",
+  "crc-calculator",
+  "js-format"
+ ],
+ "keywords": [
+  "c formatter online",
+  "c++ code beautifier",
+  "re-indent c code",
+  "clang format alternative"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "subresource-integrity-generator",
+ "seoTitle": "Free Subresource Integrity (SRI) Hash Generator",
+ "metaDescription": "Free online SRI generator. Compute the sha256, sha384 or sha512 integrity attribute for a script or stylesheet and get a ready-made tag.",
+ "intro": "Paste a script or stylesheet and get its Subresource Integrity value as sha256, sha384, sha512 or all three. Add a URL to receive a ready-made script or link tag.",
+ "why": "When you load a library from a CDN, a compromised or altered file would run on your pages. The integrity attribute lets the browser refuse the file unless its hash matches. Generating the right value usually means an openssl command and a base64 conversion.\n\nPaste the exact content of the file you serve and choose the algorithm; sha384 is the usual choice. The tool computes the digest with the browser's WebCrypto, formats it as sha384-base64, and, if you give a URL, builds the full tag with crossorigin set. Hashes cover the exact bytes, so line endings and trailing newlines matter, and a copy-paste may differ from the real file. For critical use, hash the downloaded file. Nothing is uploaded.",
+ "howTo": [
+  "Paste the exact content of the script or stylesheet.",
+  "Choose sha256, sha384, sha512 or all three.",
+  "Optionally enter the file URL and choose script or stylesheet link.",
+  "Copy the integrity attribute or the complete tag into your HTML."
+ ],
+ "faq": [
+  {
+   "q": "Why doesn't my hash match the CDN file?",
+   "a": "The hash covers exact bytes. Different line endings, a missing final newline or a byte-order mark will change it. Hash the file as the CDN serves it, ideally from the downloaded file."
+  },
+  {
+   "q": "Which algorithm should I use?",
+   "a": "sha384 is the common choice and is widely supported. sha256 is shorter, and sha512 is longer. Listing several values lets the browser pick the strongest it supports."
+  },
+  {
+   "q": "Does cross-origin loading need anything else?",
+   "a": "Yes. The tag needs crossorigin=\"anonymous\", which the tool adds, and the server must send suitable CORS headers. Without them the browser blocks the resource."
+  },
+  {
+   "q": "What if the file changes later?",
+   "a": "Any change, even a whitespace edit or a new library version, breaks the hash and the browser refuses to run it. Update the integrity value whenever you update the file."
+  }
+ ],
+ "related": [
+  "hash-generator",
+  "file-hash",
+  "csp-builder",
+  "security-headers-generator",
+  "base64-encode",
+  "csp-analyzer"
+ ],
+ "keywords": [
+  "sri hash generator",
+  "subresource integrity generator",
+  "integrity attribute generator",
+  "free sri tool",
+  "sha384 integrity online",
+  "script integrity tag generator"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "target-size-checker",
+ "seoTitle": "Target Size Checker for WCAG 2.5.8 (24 by 24 CSS Pixels)",
+ "metaDescription": "List buttons and links with size and position and check the 24 by 24 px minimum, including the spacing exception with a 24 px circle.",
+ "intro": "Checks touch and click targets against WCAG 2.5.8, including the spacing exception.",
+ "why": "Small, tightly packed targets are hard to hit with a finger or tremor.\n\nThe tool tests each target for 24 by 24 CSS pixels. For smaller ones it applies the spacing exception: a 24 px circle centred on the target must not touch another target or another undersized target circle. Equivalent, inline, user-agent and essential exceptions need your judgement.",
+ "howTo": [
+  "Enter one target per line: name, width, height, x, y.",
+  "Use real sizes from DevTools.",
+  "Read the result for each target.",
+  "Enlarge or space out the failing ones."
+ ],
+ "faq": [
+  {
+   "q": "Does padding count?",
+   "a": "Yes, the target is the clickable area."
+  },
+  {
+   "q": "What if I have no positions?",
+   "a": "Undersized targets without a position are marked review."
+  },
+  {
+   "q": "Is this AA?",
+   "a": "Yes, 2.5.8 Target Size (Minimum) is Level AA in WCAG 2.2."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "mobile-friendly-html-check",
+  "focus-indicator-contrast-checker",
+  "tab-order-checker",
+  "wcag-success-criteria-explorer",
+  "text-spacing-bookmarklet",
+  "screen-info"
+ ],
+ "keywords": [
+  "target size checker",
+  "wcag 2.5.8",
+  "24px touch target"
+ ]
+}

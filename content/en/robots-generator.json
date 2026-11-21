@@ -1,0 +1,46 @@
+{
+ "id": "robots-generator",
+ "seoTitle": "Free robots.txt Generator with Allow and Disallow",
+ "metaDescription": "Build a robots.txt file with allow and disallow paths, a user-agent, crawl delay and sitemap line. Free; runs in your browser.",
+ "intro": "Create a robots.txt by listing allow and disallow paths. Choose the user-agent, an allow-all or block-all default, an optional crawl delay and a sitemap URL.",
+ "why": "Most sites need only a short robots.txt: keep crawlers out of admin pages, carts, internal search and parameter URLs, and point them at the sitemap. The syntax is simple but unforgiving, and a block-all file left over from staging is a classic way to disappear from search.\n\nThis generator turns a few lines into a valid file. List your Allow and Disallow rules, choose the user-agent, and add a sitemap URL and, if you want, a crawl delay. A default of allow all or block all is available, with a warning for the latter. Keep in mind that robots.txt controls crawling, not indexing, and that it is public, so never list secret paths in it. The file is built in your browser, and you upload it to your site root yourself.",
+ "howTo": [
+  "List your rules in the box, one per line, such as Disallow: /admin/.",
+  "Choose the default (allow all or block all) and the user-agent.",
+  "Add your sitemap URL and an optional crawl delay.",
+  "Run the tool, copy the result into a file named robots.txt and upload it to your site root."
+ ],
+ "faq": [
+  {
+   "q": "Does robots.txt hide pages from search results?",
+   "a": "Not reliably. It asks well-behaved crawlers not to fetch URLs, but blocked pages can still be listed if other sites link to them. Use noindex for pages that must stay out of search."
+  },
+  {
+   "q": "Is the crawl delay useful?",
+   "a": "Google ignores Crawl-delay, though some other crawlers honour it. The tool adds a comment saying so. For Google, crawl rate is managed through other means."
+  },
+  {
+   "q": "Should I list private folders in robots.txt?",
+   "a": "No. The file is public, so listing a path tells everyone it exists. Protect private areas with authentication, not with robots.txt."
+  },
+  {
+   "q": "Is my data uploaded?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "ai-bot-robots-builder",
+  "sitemap-generator",
+  "llms-txt-generator",
+  "htaccess-generator",
+  "seo-robots-noindex-simulator"
+ ],
+ "keywords": [
+  "robots.txt generator",
+  "create robots.txt online",
+  "free robots txt builder",
+  "disallow rules generator",
+  "robots.txt with sitemap"
+ ]
+}

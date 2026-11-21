@@ -1,0 +1,45 @@
+{
+ "id": "coordinate-format-converter",
+ "seoTitle": "Coordinate Converter: Decimal, DMS, UTM, MGRS, Plus Code",
+ "metaDescription": "Convert a position between decimal degrees, degrees minutes seconds, UTM, MGRS and Plus Code, offline on WGS 84. Free, no map needed.",
+ "intro": "Reads a coordinate in any of five formats and shows it in all of them: decimal, DMS, degrees and decimal minutes, UTM, MGRS and Plus Code.",
+ "why": "Surveyors, hikers, pilots and GIS users meet the same point written five ways. This tool converts between them with the WGS 84 ellipsoid and no server. UTM uses the Krueger series, checked against PROJ (pyproj) on 300 random points: all within 0.5 m of the metre-rounded output. MGRS and Plus Codes matched independent libraries on the same points.\n\nInputs are detected by shape: an MGRS reference such as 18TWL8040712345, UTM as 31U 448251 5411932, a full Plus Code, or a latitude and longitude with N S E W letters, symbols, or signs. UTM covers latitude -80 to 84; near the poles it reports that it is not defined here. Short Plus Codes need a reference location, so use the Plus Code tool for them.",
+ "howTo": [
+  "Type one position per line in any supported format.",
+  "Pick the Plus Code length you want in the output.",
+  "Read decimal, DMS, DDM, UTM, MGRS and Plus Code for each line.",
+  "Copy the text."
+ ],
+ "faq": [
+  {
+   "q": "Which datum?",
+   "a": "WGS 84 only. Positions from local datums need a datum shift first."
+  },
+  {
+   "q": "What does the zone letter mean?",
+   "a": "The latitude band; C to M are south of the equator, N to X north."
+  },
+  {
+   "q": "Does it handle Norway and Svalbard zone exceptions?",
+   "a": "Yes."
+  },
+  {
+   "q": "How accurate is UTM?",
+   "a": "Better than a millimetre in the maths; the output is rounded to whole metres."
+  }
+ ],
+ "related": [
+  "geohash-tool",
+  "plus-code-converter",
+  "geo-path-distance",
+  "csv-to-geojson",
+  "sunrise-sunset-calculator",
+  "geojson-viewer-validator"
+ ],
+ "keywords": [
+  "coordinate converter",
+  "lat long to utm",
+  "dms to decimal degrees",
+  "mgrs converter"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "paint-color-mixer",
+ "seoTitle": "Paint Color Mixer: Blue and Yellow Make Green",
+ "metaDescription": "Mix paint colours the way pigments behave, subtractively, and compare with a screen average. Free, local.",
+ "intro": "Mixes paints with a Kubelka-Munk model so blue and yellow give green instead of grey.",
+ "why": "On screens colours add light, so averaging blue and yellow gives a grey. Paints absorb light, so mixing darkens and shifts hue. This tool converts each colour to absorption and scattering per channel, averages them by parts and converts back.\n\nIt is an illustration. Real paint depends on pigment, opacity and medium, and the tool has no measured spectra. Treat it as a hint, not a recipe.",
+ "howTo": [
+  "Enter one paint colour per line, with parts after it.",
+  "Run the tool.",
+  "Compare the pigment-style mix with the screen average.",
+  "Test your real paint on paper."
+ ],
+ "faq": [
+  {
+   "q": "Why not use RYB?",
+   "a": "RYB wheels are a teaching tool. The Kubelka-Munk idea is closer to how pigments mix."
+  },
+  {
+   "q": "Is the result accurate?",
+   "a": "No. It shows the direction of change, not exact paint colours."
+  },
+  {
+   "q": "Do parts matter?",
+   "a": "Yes. 2 parts of one paint and 1 of another gives a weighted mix."
+  },
+  {
+   "q": "Can it mix more than two paints?",
+   "a": "Yes."
+  }
+ ],
+ "related": [
+  "color-mixer",
+  "multi-color-blender",
+  "palette-generator",
+  "color-picker",
+  "color-converter",
+  "color-harmony-wheel"
+ ],
+ "keywords": [
+  "paint mixing simulator",
+  "subtractive color mixing",
+  "blue and yellow make green",
+  "pigment mix calculator"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "id": "currency-converter-manual-rates",
+ "seoTitle": "Currency Converter with Your Own Rates: ECB Paste and Cross Rates",
+ "metaDescription": "Convert currencies with rates you paste (ECB daily CSV or XML, or lines like USD 1.0850). Cross rates, inverse rates and a rate matrix, no live feed.",
+ "intro": "Convert amounts with exchange rates you supply, including the ECB reference rate file.",
+ "why": "Live exchange feeds need a server and an API key, which this site does not use. This converter works from rates you paste: the European Central Bank daily reference file (CSV or XML), or simple lines such as \"USD 1.0850\" meaning units per one base currency. It computes cross rates through the base currency, shows inverse rates and builds a rate matrix when you give no amounts.\n\nThe result is only as current as your paste, and reference rates are not what banks or cards charge. Download the ECB file from ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml and paste it for up-to-date rates.",
+ "howTo": [
+  "Paste the rates (ECB file or CODE rate lines) and set the base currency.",
+  "Write conversions such as \"250 USD to EUR, GBP\".",
+  "Read the converted amounts and the cross rates."
+ ],
+ "faq": [
+  {
+   "q": "Where do I get rates?",
+   "a": "The ECB publishes daily euro foreign exchange reference rates; paste its CSV or XML."
+  },
+  {
+   "q": "Why not live rates?",
+   "a": "A live feed needs network requests and a provider; this tool stays offline."
+  },
+  {
+   "q": "Are the results what my bank gives?",
+   "a": "No, banks add a margin to reference rates."
+  }
+ ],
+ "related": [
+  "vat-calculator",
+  "unit-converter",
+  "percent-change",
+  "compound-interest",
+  "timezone-converter"
+ ],
+ "keywords": [
+  "currency converter offline",
+  "ecb exchange rates convert",
+  "cross rate calculator"
+ ]
+}

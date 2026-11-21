@@ -1,0 +1,46 @@
+{
+ "id": "images-to-pdf",
+ "seoTitle": "Free Images to PDF Converter - JPG, PNG, WebP",
+ "metaDescription": "Combine JPG, PNG, WebP or GIF images into one PDF, one per page, in A4, Letter or fit-to-image size. Free, runs in your browser, nothing uploaded.",
+ "intro": "Select several images and combine them into a single PDF, one image per page, with A4, Letter or fit-to-image page sizes.",
+ "why": "Scanned receipts, phone photos of documents and screenshots often need to go to one place as a single file: an expense claim, a visa application, a school form. Sending a dozen separate images invites mistakes, and online converters mean uploading private paperwork.\n\nThis tool builds the PDF on your device. JPEG files are embedded as they are, untouched, so there is no quality loss and no size increase. PNG, WebP and GIF images are re-encoded: PNGs with transparency can be kept lossless, other images are saved as JPEG at the quality you choose. Pages follow the order of selection, images are scaled to fit within the margins, and landscape images get landscape pages. Choose Fit image to make each page exactly image-sized.",
+ "howTo": [
+  "Choose the images in the order you want the pages.",
+  "Pick A4, Letter or Fit image, and set the margin.",
+  "Choose whether to keep transparency and the JPEG quality for re-encoded images.",
+  "Run the tool and download images.pdf."
+ ],
+ "faq": [
+  {
+   "q": "Are JPEGs recompressed?",
+   "a": "No. Standard JPEG files are embedded as they are, so quality stays identical. Photos stored with an orientation flag are re-drawn once so they appear upright, which involves a re-encode."
+  },
+  {
+   "q": "What happens to PNG transparency?",
+   "a": "With Keep transparency ticked, transparent PNGs are stored losslessly with an alpha mask, which makes files larger. Untick it to flatten transparent areas onto white and save as a smaller JPEG."
+  },
+  {
+   "q": "Can I reorder pages afterwards?",
+   "a": "Pages follow the order in which you selected the files. To change it later, use the Reorder PDF Pages tool, or run this again with the files selected in a new order."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "Images above roughly 120 megapixels are refused. Total size depends on your device's memory, so for hundreds of high-resolution photos, work in smaller batches."
+  }
+ ],
+ "related": [
+  "pdf-merge",
+  "pdf-reorder-pages",
+  "image-compressor",
+  "image-resizer",
+  "pdf-to-image",
+  "text-to-pdf"
+ ],
+ "keywords": [
+  "images to pdf",
+  "jpg to pdf",
+  "combine pictures into pdf",
+  "png to pdf online",
+  "free image to pdf converter"
+ ]
+}

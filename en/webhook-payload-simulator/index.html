@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Signed Webhook Payload Simulator and Tester | Free Tools</title>
+<meta name="description" content="Build a signed webhook request for GitHub, Stripe, Slack, Shopify or generic HMAC, with headers and a curl command. Nothing is sent. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/webhook-payload-simulator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/webhook-payload-simulator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/webhook-payload-simulator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Signed Webhook Payload Simulator and Tester | Free Tools">
+<meta property="og:description" content="Build a signed webhook request for GitHub, Stripe, Slack, Shopify or generic HMAC, with headers and a curl command. Nothing is sent. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/webhook-payload-simulator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Signed Webhook Payload Simulator and Tester | Free Tools">
+<meta name="twitter:description" content="Build a signed webhook request for GitHub, Stripe, Slack, Shopify or generic HMAC, with headers and a curl command. Nothing is sent. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Webhook Payload & Signature Simulator","url":"https://tools.sitefig.net/en/webhook-payload-simulator/","description":"Build a signed webhook request for GitHub, Stripe, Slack, Shopify or generic HMAC, with headers and a curl command. Nothing is sent. Free.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose a provider: GitHub, Stripe, Slack, Shopify or a generic HMAC scheme.","Enter your test signing secret and the endpoint URL, plus the event name for GitHub or Shopify.","Paste your JSON payload, or leave it blank to use a sample event.","Copy the curl command and run it against your endpoint to test signature verification."],"keywords":"webhook payload simulator, test webhook signature, stripe webhook signature generator, github webhook hmac tester, signed webhook curl, free webhook testing tool","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Network & HTTP","item":"https://tools.sitefig.net/en/#network-and-http"},{"@type":"ListItem","position":3,"name":"Webhook Payload & Signature Simulator","item":"https://tools.sitefig.net/en/webhook-payload-simulator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the tool send the webhook?","acceptedAnswer":{"@type":"Answer","text":"No. It only builds the body, headers and signature, and prints a curl command. You run that command yourself, so you decide where the request goes and can inspect it first."}},{"@type":"Question","name":"Why does my endpoint still reject the signature?","acceptedAnswer":{"@type":"Answer","text":"Most often the body was changed after signing, for example by a parser that re-serialises the JSON. Verify the signature against the raw request body, byte for byte, and check the timestamp tolerance."}},{"@type":"Question","name":"Should I use my real signing secret?","acceptedAnswer":{"@type":"Answer","text":"Use a test secret. With the live secret, the generated command can produce valid-looking requests for your production endpoint, so keep it out of shared screens, tickets and shell history."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#network-and-http">Network &amp; HTTP</a></li><li><span aria-current="page">Webhook Payload &amp; Signature Simulator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Webhook Payload &amp; Signature Simulator</h1>
+<p class="lede">Choose a provider, a secret and a payload and get the exact body, headers, HMAC signature and a curl command to replay a signed webhook against your own endpoint. Nothing is sent from the browser.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="webhook-payload-simulator" data-module="devz3"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Testing a webhook receiver is awkward. The provider's dashboard may only send real events, local servers are not reachable from the internet, and a hand-made request fails because the signature does not match the exact bytes of the body. Getting the timestamp format and header name right for each provider adds more room for mistakes.</p>
+<p>This tool builds the request the way the chosen provider would, signs it with the secret you enter and prints a curl command you can run against localhost or a staging URL. Because it only prepares the request, nothing leaves your browser. Use a test secret rather than your live signing secret, since the command and headers contain what is needed to forge valid requests.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose a provider: GitHub, Stripe, Slack, Shopify or a generic HMAC scheme.</li><li>Enter your test signing secret and the endpoint URL, plus the event name for GitHub or Shopify.</li><li>Paste your JSON payload, or leave it blank to use a sample event.</li><li>Copy the curl command and run it against your endpoint to test signature verification.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does the tool send the webhook?</summary><p>No. It only builds the body, headers and signature, and prints a curl command. You run that command yourself, so you decide where the request goes and can inspect it first.</p></details>
+<details><summary>Why does my endpoint still reject the signature?</summary><p>Most often the body was changed after signing, for example by a parser that re-serialises the JSON. Verify the signature against the raw request body, byte for byte, and check the timestamp tolerance.</p></details>
+<details><summary>Should I use my real signing secret?</summary><p>Use a test secret. With the live secret, the generated command can produce valid-looking requests for your production endpoint, so keep it out of shared screens, tickets and shell history.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/webhook-signature-verifier/"><span class="link-card__title">Webhook Signature Verifier (HMAC)</span><span class="link-card__desc">Verify a webhook's HMAC signature locally: paste the raw request body, the signature header(s) and your signing secret, choose the provider (GitHub, Stripe, Slack, Shopify, Standard Webhooks/Svix or generic HMAC) and see the expected signature, a constant-time comparison and, where relevant, timestamp tolerance. The body must be the exact raw bytes received (no re-serialised JSON).</span></a></li><li><a class="link-card" href="/en/hmac-generator/"><span class="link-card__title">HMAC Generator</span><span class="link-card__desc">HMAC with MD5, SHA-1, SHA-256, SHA-384 or SHA-512; hex and Base64 output.</span></a></li><li><a class="link-card" href="/en/curl-builder/"><span class="link-card__title">cURL Command Builder</span><span class="link-card__desc">Fill in method, URL, headers, body, auth and flags to get a correctly quoted curl command.</span></a></li><li><a class="link-card" href="/en/jwt-signature-validator/"><span class="link-card__title">JWT Signature Validator (RS / PS / ES / EdDSA / HS)</span><span class="link-card__desc">Verify a JWT signature against a public key (PEM SPKI, PKCS#1, X.509 certificate), a JWK or a JWKS (matched by kid), or an HMAC secret. Supports RS256/384/512, PS256/384/512, ES256/384/512, EdDSA (Ed25519) and HS256/384/512, decodes header and payload and checks exp / nbf / iat. Blocks the classic &quot;HS256 signed with the public key&quot; algorithm-confusion trick and flags alg &quot;none&quot;.</span></a></li><li><a class="link-card" href="/en/http-wire-format/"><span class="link-card__title">HTTP Raw Message &lt;-&gt; JSON (wire format)</span><span class="link-card__desc">Parse a raw HTTP/1.x request or response (start line, headers, body, chunked transfer decoding, Content-Length check, query string, cookies, Basic auth) into structured JSON, or build a correctly framed raw HTTP message (CRLF line endings, Host and Content-Length) from JSON. Useful for debugging proxies, WAF rules, request smuggling cases and hand-written test fixtures.</span></a></li><li><a class="link-card" href="/en/api-mock-response-generator/"><span class="link-card__title">API Mock Response Generator (from JSON Schema / OpenAPI)</span><span class="link-card__desc">Generate realistic, seeded mock JSON responses from a JSON Schema or an OpenAPI 3 / Swagger 2 document (JSON or YAML). Honours enum, const, example/default, format (email, uuid, date-time, uri...), min/max, array sizes, allOf/oneOf/anyOf and $ref (recursion limited). Output is deterministic for a given seed.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

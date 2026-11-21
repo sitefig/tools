@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free OpenPGP Key and Signature Inspector Online | Free Tools</title>
+<meta name="description" content="Inspect an ASCII-armored PGP key, signature or message: check the CRC-24, list packets and compute fingerprints. Nothing is verified. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/openpgp-inspector/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/openpgp-inspector/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/openpgp-inspector/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free OpenPGP Key and Signature Inspector Online | Free Tools">
+<meta property="og:description" content="Inspect an ASCII-armored PGP key, signature or message: check the CRC-24, list packets and compute fingerprints. Nothing is verified. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/openpgp-inspector/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free OpenPGP Key and Signature Inspector Online | Free Tools">
+<meta name="twitter:description" content="Inspect an ASCII-armored PGP key, signature or message: check the CRC-24, list packets and compute fingerprints. Nothing is verified. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"OpenPGP Armor / Packet Inspector","url":"https://tools.sitefig.net/en/openpgp-inspector/","description":"Inspect an ASCII-armored PGP key, signature or message: check the CRC-24, list packets and compute fingerprints. Nothing is verified. Free, in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the full armored block, including the BEGIN and END lines, or paste hex.","Run the tool.","Read the CRC check, the numbered packet list and the fingerprints."],"keywords":"pgp key inspector, openpgp packet viewer, free pgp key viewer, pgp fingerprint calculator, armored pgp decoder, inspect gpg public key","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"OpenPGP Armor / Packet Inspector","item":"https://tools.sitefig.net/en/openpgp-inspector/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the tool verify signatures or trust?","acceptedAnswer":{"@type":"Answer","text":"No. It only parses and describes the data. It does not check that a signature is valid, that a key is trusted or that a user ID belongs to a real person."}},{"@type":"Question","name":"What does the CRC-24 check tell me?","acceptedAnswer":{"@type":"Answer","text":"It tells you whether the armor was copied intact. A mismatch suggests a damaged paste, such as lost characters or changed line endings. It is not a security check."}},{"@type":"Question","name":"Is it safe to paste a private key?","acceptedAnswer":{"@type":"Answer","text":"No. Do not paste secret keys into any web page. Although the tool runs locally and reports only whether secret material is protected, public key blocks are the intended use."}},{"@type":"Question","name":"Which fingerprints can it compute?","acceptedAnswer":{"@type":"Answer","text":"Version 4 keys (SHA-1) and version 6 keys (SHA-256). Version 3 keys are flagged as obsolete and version 5 fingerprints are not computed."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">OpenPGP Armor / Packet Inspector</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>OpenPGP Armor / Packet Inspector</h1>
+<p class="lede">Paste an ASCII-armored PGP block, or hex of binary packets. The tool checks the CRC-24, lists the packets and shows algorithms, key sizes, user IDs, signature details and fingerprints.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="openpgp-inspector" data-module="crypto2" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A PGP key block is a wall of base64, and the questions you have about it are practical: whose key is this, what algorithm does it use, when was it made, does it expire, and what is its fingerprint? Command-line tools such as gpg answer them but need installing and a keyring. This inspector parses the packets directly in your browser. It lists public keys, subkeys, user IDs, signatures and their subpackets, including key flags, creation and expiry times, and preferences, and computes v4 (SHA-1) and v6 (SHA-256) fingerprints and key IDs. It does not verify signatures, check trust or decrypt anything, and secret key blocks should never be pasted into a web page. Only public material is safe to inspect here.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the full armored block, including the BEGIN and END lines, or paste hex.</li><li>Run the tool.</li><li>Read the CRC check, the numbered packet list and the fingerprints.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does the tool verify signatures or trust?</summary><p>No. It only parses and describes the data. It does not check that a signature is valid, that a key is trusted or that a user ID belongs to a real person.</p></details>
+<details><summary>What does the CRC-24 check tell me?</summary><p>It tells you whether the armor was copied intact. A mismatch suggests a damaged paste, such as lost characters or changed line endings. It is not a security check.</p></details>
+<details><summary>Is it safe to paste a private key?</summary><p>No. Do not paste secret keys into any web page. Although the tool runs locally and reports only whether secret material is protected, public key blocks are the intended use.</p></details>
+<details><summary>Which fingerprints can it compute?</summary><p>Version 4 keys (SHA-1) and version 6 keys (SHA-256). Version 3 keys are flagged as obsolete and version 5 fingerprints are not computed.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/ssh-key-fingerprint/"><span class="link-card__title">SSH Public Key Fingerprint</span><span class="link-card__desc">SHA256 (base64) and legacy MD5 fingerprints of authorized_keys / .pub / known_hosts lines, with key type and size. Same output as ssh-keygen -lf.</span></a></li><li><a class="link-card" href="/en/ssh-key-inspector/"><span class="link-card__title">SSH Public Key Inspector</span><span class="link-card__desc">Parse an OpenSSH public key line: type, size, comment and the SHA-256 / MD5 fingerprints shown by ssh-keygen -l.</span></a></li><li><a class="link-card" href="/en/x509-viewer/"><span class="link-card__title">X.509 Certificate Viewer</span><span class="link-card__desc">Paste a PEM certificate: subject, issuer, validity, SANs, key info and fingerprints.</span></a></li><li><a class="link-card" href="/en/hash-generator/"><span class="link-card__title">Hash Generator</span><span class="link-card__desc">MD5, SHA-1, SHA-256, SHA-384 and SHA-512 of your text, all at once.</span></a></li><li><a class="link-card" href="/en/base64-decode/"><span class="link-card__title">Base64 Decode</span><span class="link-card__desc">Decode Base64 / URL-safe Base64 to UTF-8 text.</span></a></li><li><a class="link-card" href="/en/hex-text/"><span class="link-card__title">Hex ⇄ Text</span><span class="link-card__desc">Convert text to hexadecimal bytes (UTF-8) and back.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

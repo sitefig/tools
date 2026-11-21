@@ -1,0 +1,44 @@
+{
+ "id": "csv-column-merger",
+ "seoTitle": "CSV Column Merger: Join Columns with a Separator",
+ "metaDescription": "Concatenate several CSV columns into one new column with your separator, skipping empty parts. Free, in your browser.",
+ "intro": "Adds a column built from several others, such as street, postcode and city joined into an address.",
+ "why": "The reverse of text to columns. List the columns in order, choose the separator and name the new column. Empty values are skipped so you do not get double commas.\n\nYou can keep the original columns or drop them. The new column is added at the end. Useful for building labels, full names, search keys and mailing lines.",
+ "howTo": [
+  "Paste the CSV with a header.",
+  "List the columns to join, in order.",
+  "Set the separator and the new column name.",
+  "Copy or download the result."
+ ],
+ "faq": [
+  {
+   "q": "Are empty values joined?",
+   "a": "No, they are skipped."
+  },
+  {
+   "q": "Can I use column numbers?",
+   "a": "Yes, 1-based numbers or names."
+  },
+  {
+   "q": "Where does the new column go?",
+   "a": "At the end."
+  },
+  {
+   "q": "Can I join with a new line?",
+   "a": "Not through the separator field; use a visible separator and replace afterwards."
+  }
+ ],
+ "related": [
+  "csv-column-splitter",
+  "csv-column-extractor",
+  "csv-whitespace-trimmer",
+  "table-find-replace",
+  "csv-merger",
+  "text-cleaner"
+ ],
+ "keywords": [
+  "merge csv columns",
+  "concatenate columns csv",
+  "build full address column"
+ ]
+}

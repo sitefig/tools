@@ -1,0 +1,47 @@
+{
+ "id": "nginx-rate-limit-calculator",
+ "seoTitle": "Free Nginx Rate Limit Calculator (limit_req)",
+ "metaDescription": "Free online Nginx rate limit calculator. Work out limit_req_zone rate, burst, delay and zone memory, and see how traffic is queued or rejected.",
+ "intro": "Enter a request rate, burst and handling mode and get the limit_req_zone and limit_req directives, plus a plain-language analysis of what gets served, delayed or rejected and how much zone memory you need.",
+ "why": "The Nginx rate limiting module is easy to misconfigure because rate, burst, nodelay and delay interact in non-obvious ways. A limit that looks generous can still reject a normal page load, and one that is too relaxed does not protect your login endpoint.\n\nSet the allowed rate per second or minute, choose burst handling, and the tool writes the directives and explains the effect: how many requests from an idle client are accepted at once, how long queued requests wait, and when 429 responses begin. It also estimates shared memory from the number of expected client keys. The numbers are approximations from the nginx documentation. Test with real traffic. Behind a proxy or CDN, remember the key may be the CDN address. Nothing is uploaded.",
+ "howTo": [
+  "Enter the allowed rate and choose per second or per minute.",
+  "Set the burst size and choose nodelay, queue or two-stage delay.",
+  "Enter the expected number of unique clients, the key, zone name and location.",
+  "Copy the directives and read the analysis before reloading Nginx."
+ ],
+ "faq": [
+  {
+   "q": "What does burst do?",
+   "a": "Burst is the number of extra requests allowed to queue above the steady rate. Without it, any request arriving too soon after the last one is rejected immediately."
+  },
+  {
+   "q": "When should I use nodelay?",
+   "a": "Use nodelay when you want burst requests served immediately and the rest rejected, such as for page loads that fire many requests at once. Without it, excess requests are delayed to match the rate."
+  },
+  {
+   "q": "How is the zone size estimated?",
+   "a": "From the number of clients multiplied by about 64 bytes for an IP key (128 for others) with extra headroom, then rounded up to whole megabytes. Treat it as a guide and watch for evictions."
+  },
+  {
+   "q": "Why are my users behind a CDN all limited together?",
+   "a": "If the key is the remote address, every visitor behind the same CDN or NAT address shares one limit. Use the real client IP through the realip module, or choose a different key."
+  }
+ ],
+ "related": [
+  "nginx-config-generator",
+  "nginx-security-conf-generator",
+  "api-rate-limit-cost-calculator",
+  "nginx-formatter",
+  "http-status-reference",
+  "cache-control-builder"
+ ],
+ "keywords": [
+  "nginx rate limit calculator",
+  "limit_req_zone calculator",
+  "nginx limit_req generator",
+  "free nginx rate limiting tool",
+  "nginx burst nodelay explained",
+  "nginx rate limit zone size"
+ ]
+}

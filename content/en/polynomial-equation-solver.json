@@ -1,0 +1,45 @@
+{
+ "id": "polynomial-equation-solver",
+ "seoTitle": "Equation Solver: Linear, Quadratic and Polynomial Equations with Steps",
+ "metaDescription": "Solve equations like 2x^2 + 3x - 5 = 0 with every step and real or complex roots. Free, exact for rational roots, runs in your browser.",
+ "intro": "Solves a polynomial equation in one unknown and shows the steps: standard form, the discriminant for quadratics, rational roots for higher degrees and numeric roots for the rest.",
+ "why": "Seeing the steps matters when you are learning algebra or checking homework. For a quadratic the tool lists a, b and c, the discriminant and the formula that gives two real roots, one repeated root or a complex pair.\n\nFor cubics and above it first looks for rational roots with exact integer arithmetic, divides them out, and solves what remains. If more than a quadratic is left it uses a numeric method (Durand-Kerner with Newton polishing), because there is no general formula in radicals from degree five. It then substitutes every root back and prints the largest residual so you can judge the precision. Equations that are not polynomials fall back to a numeric scan between -100 and 100.",
+ "howTo": [
+  "Type the equation, for example x^3 - 6x^2 + 11x - 6 = 0.",
+  "Read the steps, then the list of roots with multiplicity.",
+  "Check the residual line to see how precise the roots are.",
+  "Use only one unknown letter."
+ ],
+ "faq": [
+  {
+   "q": "Does it find complex roots?",
+   "a": "Yes. They are shown as a + bi."
+  },
+  {
+   "q": "Can it solve systems of equations?",
+   "a": "No, only one equation in one unknown. For linear systems use the matrix calculator."
+  },
+  {
+   "q": "Why are repeated roots less precise?",
+   "a": "Numeric methods lose accuracy at multiple roots. Rational repeated roots are found exactly before the numeric step."
+  },
+  {
+   "q": "What about equations with sin or exp?",
+   "a": "They are not polynomials, so there are no algebraic steps, but a numeric scan lists roots between -100 and 100."
+  }
+ ],
+ "related": [
+  "matrix-calculator",
+  "function-grapher-roots",
+  "derivative-calculator-steps",
+  "fraction-calculator",
+  "scientific-calculator-degrees",
+  "bignumber-calculator"
+ ],
+ "keywords": [
+  "equation solver with steps",
+  "quadratic equation solver",
+  "polynomial roots calculator",
+  "solve cubic equation online"
+ ]
+}

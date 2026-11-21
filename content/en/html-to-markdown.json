@@ -1,0 +1,46 @@
+{
+  "id": "html-to-markdown",
+  "seoTitle": "Free HTML to Markdown Converter Online",
+  "metaDescription": "Convert HTML to Markdown: headings, lists, tables, links, images and code blocks, using your browser's HTML parser. Free, nothing is uploaded.",
+  "intro": "Turns pasted HTML into Markdown, including headings, bold and italic, links, images, lists, tables and code blocks. It uses the browser's own parser, so messy markup is handled sensibly.",
+  "why": "Moving content out of a CMS, a wiki or an old website into a Markdown-based tool such as a static site generator, a documentation repository or a notes app means converting HTML by hand or writing a script. Copying a rendered page and cleaning it up line by line is slow and error-prone.\n\nPaste the HTML here and the converter walks the parsed document and writes Markdown for each element it knows about. Scripts, styles and head content are dropped, nested lists keep their indentation, and tables become pipe tables with alignment from the source. Because the page is parsed in your browser, nothing you paste is uploaded, which is handy for internal documentation.",
+  "howTo": [
+    "Paste the HTML source into the input box.",
+    "Check the Markdown that appears in the output.",
+    "Review lists, tables and code blocks for anything unusual.",
+    "Copy the Markdown into your document."
+  ],
+  "faq": [
+    {
+      "q": "Which HTML elements are converted?",
+      "a": "Headings, paragraphs, bold, italic, strikethrough, inline and block code, links, images, block quotes, ordered and unordered lists, task checkboxes, horizontal rules and tables. Other elements are unwrapped, keeping their text."
+    },
+    {
+      "q": "What is dropped?",
+      "a": "Script, style, head, title and noscript content are removed. Attributes other than href, src, alt, title, language classes on code and table alignment are ignored, so classes and inline styles do not survive."
+    },
+    {
+      "q": "How are tables handled?",
+      "a": "They become pipe tables. The first row is treated as the header, and column alignment is read from align attributes or text-align styles. Cells with line breaks are flattened, and merged cells are not represented."
+    },
+    {
+      "q": "Why does my result have extra backslashes?",
+      "a": "Characters that Markdown treats as formatting, such as asterisks, underscores, brackets and backticks, are escaped in plain text so they display literally. Inside code they are left alone."
+    }
+  ],
+  "related": [
+    "markdown-to-html",
+    "html-tag-stripper",
+    "html-format",
+    "markdown-preview",
+    "html-table-to-json",
+    "html-to-jsx"
+  ],
+  "keywords": [
+    "html to markdown converter",
+    "convert html to markdown online",
+    "html table to markdown",
+    "web page to markdown",
+    "free html to md"
+  ]
+}

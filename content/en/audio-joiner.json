@@ -1,0 +1,45 @@
+{
+ "id": "audio-joiner",
+ "seoTitle": "Audio Joiner: Merge Audio Files with Crossfade",
+ "metaDescription": "Join several audio clips into one WAV file, in order or sorted by name, with a crossfade or a gap of silence. Free and private.",
+ "intro": "Joins two or more audio files into one. Clips with different sample rates are matched, mono clips are copied to both channels, and you can add an equal-power crossfade or a gap between clips.",
+ "why": "Podcast intros, voice memos, loop takes and music snippets often need to be glued end to end. Doing it in an editor is heavy for a job that takes a second. A crossfade hides the seam between two clips so there is no click or sudden level jump.\n\nThe tool decodes every file in the browser, resamples to the rate of the first clip with a windowed-sinc resampler, and writes a 16-bit WAV. Crossfades are equal power, so the loudness stays even through the overlap.",
+ "howTo": [
+  "Select two or more audio files at once.",
+  "Choose the order and set a crossfade or a gap in seconds.",
+  "Press Run.",
+  "Play the result and download the WAV."
+ ],
+ "faq": [
+  {
+   "q": "Can I reorder the clips by dragging?",
+   "a": "Not here. Use \"by file name\" (numbers sort naturally) or select the files in the order you want in your file picker."
+  },
+  {
+   "q": "What if the clips have different sample rates?",
+   "a": "They are resampled to the sample rate of the first clip."
+  },
+  {
+   "q": "Does it re-encode MP3 files?",
+   "a": "The output is always an uncompressed WAV. It will be larger than the MP3 inputs."
+  },
+  {
+   "q": "Why can I not use a crossfade and a gap together?",
+   "a": "A gap means silence between clips, so there is nothing to overlap. If you set a gap, the crossfade is ignored."
+  }
+ ],
+ "related": [
+  "audio-trimmer",
+  "audio-fade-editor",
+  "audio-to-flac",
+  "silence-remover",
+  "loudness-normalizer",
+  "audio-converter"
+ ],
+ "keywords": [
+  "join audio files",
+  "merge mp3 online",
+  "audio crossfade",
+  "combine audio clips"
+ ]
+}

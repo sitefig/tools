@@ -1,0 +1,45 @@
+{
+ "id": "json-patch-applier",
+ "seoTitle": "Free JSON Patch Applier (RFC 6902) Online",
+ "metaDescription": "Apply a JSON Patch with add, remove, replace, move, copy and test operations to a document. Errors name the failing operation. Free, in-browser.",
+ "intro": "Paste a JSON document and a JSON Patch array to apply the operations in order and see the result, or the exact operation that failed.",
+ "why": "JSON Patch is used in Kubernetes patches, REST APIs and sync protocols, and a mistake in a path or index fails the whole patch. When a server returns a vague 422 error, you want to run the same patch locally and learn which of ten operations was at fault.\n\nThis tool applies add, remove, replace, move, copy and test as defined in RFC 6902. The operations run in sequence on a copy of the document, so your input is not altered, and the error message gives the position, operation and path. A test operation that does not match stops the patch, which is how conditional updates work. It follows the standard, but a particular server may differ in edge cases.",
+ "howTo": [
+  "Paste the JSON document into the first box.",
+  "Paste the patch, an array of operations, into the second box.",
+  "Read the patched document, or the error naming the failing operation."
+ ],
+ "faq": [
+  {
+   "q": "Is the patch applied atomically?",
+   "a": "Yes in effect. If any operation fails, you get an error and no partial result, because the patch is applied to a copy and discarded on failure."
+  },
+  {
+   "q": "What does the dash path segment do?",
+   "a": "In an add operation on an array, a trailing dash appends the value at the end. For other operations it is not a valid index and causes an error."
+  },
+  {
+   "q": "How does the test operation compare values?",
+   "a": "It uses deep equality, ignoring key order in objects. If the values differ, the patch stops with a message that the test failed."
+  },
+  {
+   "q": "Can I move a value into its own child?",
+   "a": "No. The RFC forbids it and the tool reports an error. Moving a value to a different parent or a sibling is fine."
+  }
+ ],
+ "related": [
+  "json-patch-generator",
+  "json-pointer-tester",
+  "json-diff",
+  "json-format",
+  "json-validate",
+  "json-sort-keys"
+ ],
+ "keywords": [
+  "json patch applier",
+  "apply json patch online",
+  "rfc 6902 tester",
+  "free json patch tool",
+  "json patch move copy test"
+ ]
+}

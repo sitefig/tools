@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DC Circuit Solver: Node Voltages, Currents and Power from a Netlist | Free Tools</title>
+<meta name="description" content="Describe resistors and sources as a netlist and get every node voltage, branch current and power. Free, verified against NumPy.">
+<link rel="canonical" href="https://tools.sitefig.net/en/dc-circuit-solver-netlist/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/dc-circuit-solver-netlist/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/dc-circuit-solver-netlist/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="DC Circuit Solver: Node Voltages, Currents and Power from a Netlist | Free Tools">
+<meta property="og:description" content="Describe resistors and sources as a netlist and get every node voltage, branch current and power. Free, verified against NumPy.">
+<meta property="og:url" content="https://tools.sitefig.net/en/dc-circuit-solver-netlist/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DC Circuit Solver: Node Voltages, Currents and Power from a Netlist | Free Tools">
+<meta name="twitter:description" content="Describe resistors and sources as a netlist and get every node voltage, branch current and power. Free, verified against NumPy.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"DC Circuit Solver: Voltages, Currents and Power from a Netlist","url":"https://tools.sitefig.net/en/dc-circuit-solver-netlist/","description":"Describe resistors and sources as a netlist and get every node voltage, branch current and power. Free, verified against NumPy.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Write one element per line: name, node, node, value.","Use node 0 (or gnd) as ground and values like 1k, 2.2k, 5m, 4u or 1meg.","Read node voltages, element currents and the power balance.","Fix any error message, such as a floating node."],"keywords":"circuit solver online, dc circuit analysis, nodal analysis calculator, netlist solver","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Math & Science","item":"https://tools.sitefig.net/en/#math-and-science"},{"@type":"ListItem","position":3,"name":"DC Circuit Solver: Voltages, Currents and Power from a Netlist","item":"https://tools.sitefig.net/en/dc-circuit-solver-netlist/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What do V, R and I mean?","acceptedAnswer":{"@type":"Answer","text":"V is a voltage source, R a resistor, I a current source."}},{"@type":"Question","name":"How do I write mega and milli?","acceptedAnswer":{"@type":"Answer","text":"Use meg for mega and m for milli. A capital M is refused because it is ambiguous."}},{"@type":"Question","name":"Why a negative source current?","acceptedAnswer":{"@type":"Answer","text":"The current is counted from the first to the second node inside the element, so a source delivering power shows a negative value."}},{"@type":"Question","name":"Can I add capacitors or diodes?","acceptedAnswer":{"@type":"Answer","text":"No, only DC steady state with resistors and ideal sources."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#math-and-science">Math &amp; Science</a></li><li><span aria-current="page">DC Circuit Solver: Voltages, Currents and Power from a Netlist</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>DC Circuit Solver: Voltages, Currents and Power from a Netlist</h1>
+<p class="lede">Solves a DC circuit of resistors, voltage sources and current sources written as a netlist, giving node voltages, element currents and power.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="dc-circuit-solver-netlist" data-module="new22"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Voltage dividers, ladders and bridges are quick to type as a netlist: V1 in 0 9, R1 in mid 1k, R2 mid 0 2k. The tool solves the whole circuit at once and lists the voltage at every node and the current, voltage drop and power in every element.</p>
+<p>It uses modified nodal analysis with Gaussian elimination and partial pivoting, and the power delivered by the sources is compared with the power dissipated in the resistors as a sanity check. The solution was compared with NumPy. Only ideal sources and resistors are supported, and there is no drag-and-drop board: an open switch is simply left out of the netlist, and a lamp is a resistor.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Write one element per line: name, node, node, value.</li><li>Use node 0 (or gnd) as ground and values like 1k, 2.2k, 5m, 4u or 1meg.</li><li>Read node voltages, element currents and the power balance.</li><li>Fix any error message, such as a floating node.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What do V, R and I mean?</summary><p>V is a voltage source, R a resistor, I a current source.</p></details>
+<details><summary>How do I write mega and milli?</summary><p>Use meg for mega and m for milli. A capital M is refused because it is ambiguous.</p></details>
+<details><summary>Why a negative source current?</summary><p>The current is counted from the first to the second node inside the element, so a source delivering power shows a negative value.</p></details>
+<details><summary>Can I add capacitors or diodes?</summary><p>No, only DC steady state with resistors and ideal sources.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/ohms-law-calculator/"><span class="link-card__title">Ohm's Law Calculator: Volts, Amps, Ohms and Watts</span><span class="link-card__desc">Enter any two of voltage, current, resistance and power and get the other two from V = I x R and P = V x I.</span></a></li><li><a class="link-card" href="/en/resistor-color-code-calculator/"><span class="link-card__title">Resistor Colour Code Calculator (4, 5, 6 Band &amp; SMD)</span><span class="link-card__desc">Decode resistor colour bands to ohms, tolerance and temperature coefficient, find the bands for a value, and read 3 or 4 digit SMD codes (103, 4R7, 01C).</span></a></li><li><a class="link-card" href="/en/pwm-calculator/"><span class="link-card__title">PWM Calculator (Duty Cycle, Frequency, Average Voltage)</span><span class="link-card__desc">Convert between PWM frequency, period, duty cycle and on-time, and see the average voltage and timer counts for a given timer clock, prescaler and resolution.</span></a></li><li><a class="link-card" href="/en/battery-life-estimator/"><span class="link-card__title">Battery Life Estimator (Duty-Cycled IoT Device)</span><span class="link-card__desc">Estimate battery life for a device that wakes, works and sleeps: average current from active and sleep currents and times, with a derating for self-discharge, temperature and ageing.</span></a></li><li><a class="link-card" href="/en/matrix-calculator/"><span class="link-card__title">Matrix Calculator (exact fractions)</span><span class="link-card__desc">Add, subtract, multiply, transpose, determinant, inverse, rank, trace, RREF, matrix power and linear-system solving (A x = b) with exact rational arithmetic (BigInt fractions, so 1/3 stays 1/3), plus real eigenvalues via QR iteration (floating point, may not converge for complex eigenvalues). Entries: integers, decimals or fractions like 3/4, separated by spaces or commas, one row per line.</span></a></li><li><a class="link-card" href="/en/wave-interference-superposition/"><span class="link-card__title">Wave Interference Simulator: Superposition of Two Sine Waves</span><span class="link-card__desc">Set amplitude, frequency and phase of two waves and see each wave and their sum, with constructive or destructive interference and beats.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

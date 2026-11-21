@@ -1,0 +1,38 @@
+{
+ "id": "backlink-export-analyzer",
+ "seoTitle": "Backlink Export Analyzer: Referring Domains, Anchors, Nofollow, Risk",
+ "metaDescription": "Paste a backlink CSV from Ahrefs, Semrush, Moz, Majestic or Search Console: referring domains, dofollow share, anchor mix, TLDs, growth and risky links.",
+ "intro": "Summarise a backlink export: who links to you, with what anchors, how natural the profile looks and what to review.",
+ "why": "Backlink tools export thousands of rows. This analyzer finds the source column automatically, counts links and referring domains, shows the dofollow and nofollow share, ranks the top linking domains, classifies anchor text (branded, naked URL, generic, empty, keyword-style), shows TLD spread and link growth by month and lists links from cheap TLDs or spam words for manual review.\n\nIt cannot compute authority or spam scores, which need crawled link graphs, and tools sample the web differently, so a single export is incomplete. Google ignores most spam links; reserve the disavow tool for unnatural link patterns you cannot remove.",
+ "howTo": [
+  "Export links from your backlink tool or Search Console and paste the CSV.",
+  "Enter your brand terms and domain for anchor classification.",
+  "Review the risky list manually before any disavow."
+ ],
+ "faq": [
+  {
+   "q": "Which columns are needed?",
+   "a": "A source URL column. Anchor, nofollow/rel and first-seen columns improve the output."
+  },
+  {
+   "q": "Should I disavow the risky links?",
+   "a": "Only for a clear unnatural pattern. Google usually ignores low-quality links by itself."
+  },
+  {
+   "q": "Does it call any API?",
+   "a": "No, it only reads the CSV you paste."
+  }
+ ],
+ "related": [
+  "anchor-text-distribution",
+  "disavow-file-generator",
+  "link-intersect-tool",
+  "html-link-auditor",
+  "internal-link-suggester"
+ ],
+ "keywords": [
+  "backlink profile analysis",
+  "anchor text mix",
+  "referring domains csv"
+ ]
+}

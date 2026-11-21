@@ -1,0 +1,45 @@
+{
+ "id": "css-color-formats",
+ "seoTitle": "CSS Color Level 4 Converter: HWB, LAB, LCH, OKLAB, P3 | Free",
+ "metaDescription": "Convert HEX, rgb, hsl, hwb, lab, lch, oklab and oklch into every CSS format, including Display P3. Free and local.",
+ "intro": "Converts a colour written in any common CSS format into hex, rgb, hsl, hwb, lab, lch, oklab, oklch and display-p3.",
+ "why": "Modern CSS accepts hwb(), lab(), lch(), oklab() and oklch(), but design tools still hand you hex. You need the same colour in both worlds.\n\nEnter one colour per line. The output lists every format with alpha kept. If a colour is outside sRGB, the hex, rgb, hsl and hwb lines are clipped and the page says so. Values were compared with a browser engine for five colours and match to the shown digits; the last digit can still differ.",
+ "howTo": [
+  "Paste one colour per line.",
+  "Read all formats for each.",
+  "Check the out-of-gamut note if shown.",
+  "Copy the format you need."
+ ],
+ "faq": [
+  {
+   "q": "Which inputs work?",
+   "a": "Hex with 3, 4, 6 or 8 digits, rgb(), hsl(), hwb(), lab(), lch(), oklab() and oklch(), with or without commas and alpha."
+  },
+  {
+   "q": "Why is a value clipped?",
+   "a": "The colour lies outside sRGB. LAB, OKLAB and P3 keep the real colour."
+  },
+  {
+   "q": "Are colour names supported?",
+   "a": "No. Use the colour names lookup."
+  },
+  {
+   "q": "Is it uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "color-converter",
+  "color-names-lookup",
+  "color-mixer",
+  "palette-generator",
+  "tailwind-v4-color-palette",
+  "color-blindness-simulator"
+ ],
+ "keywords": [
+  "hwb converter",
+  "oklch converter",
+  "lab color converter",
+  "display p3 css"
+ ]
+}

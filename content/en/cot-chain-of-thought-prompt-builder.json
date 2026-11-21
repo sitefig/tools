@@ -1,0 +1,43 @@
+{
+ "id": "cot-chain-of-thought-prompt-builder",
+ "seoTitle": "Free Chain-of-Thought Prompt Builder",
+ "metaDescription": "Wrap a task in a reasoning prompt: zero-shot CoT, plan-and-solve, step-back, self-consistency or tree-of-thought. Free, in your browser.",
+ "intro": "Enter a task and choose a reasoning pattern, such as zero-shot chain of thought, plan-and-solve, step-back or tree-of-thought, then pick the answer format and copy the finished prompt.",
+ "why": "Asking a model to think before answering often improves results on maths, logic and multi-step questions, but the wording matters, and the different published patterns do different things. Plain let's think step by step is not the same as asking for a plan first, or for several independent attempts that are then compared.\n\nThis builder wraps your task in the pattern you pick, with a final answer format so the reasoning stays separate from the result you need to parse. It saves rewriting the same scaffolding for each experiment and makes it easier to compare patterns on identical tasks. Reasoning models may do this internally already, so test whether the extra structure helps. The prompt is built in your browser.",
+ "howTo": [
+  "Type or paste the task or question for the model.",
+  "Choose a reasoning technique from the list.",
+  "Pick an answer format, and set the number of attempts or panel members where the pattern needs it.",
+  "Copy the prompt and test it with your model against your usual inputs."
+ ],
+ "faq": [
+  {
+   "q": "Does chain of thought always help?",
+   "a": "No. It tends to help on multi-step reasoning and can add cost and length on simple questions. Some newer models reason internally, so extra instructions may add nothing. Test with your own examples."
+  },
+  {
+   "q": "What is the difference between the techniques?",
+   "a": "Zero-shot CoT asks for step-by-step thinking. Plan-and-solve asks for a plan first. Step-back asks for general principles before the details. Self-consistency and tree-of-thought use several attempts or viewpoints that are compared."
+  },
+  {
+   "q": "How do I get a clean final answer?",
+   "a": "Choose an answer format that puts the result in a marked place, such as a tagged final answer. Then your code can read that part and ignore the reasoning above it."
+  }
+ ],
+ "related": [
+  "llm-few-shot-prompt-formatter",
+  "system-prompt-xml-builder",
+  "prompt-linter",
+  "llm-context-window-shrinker",
+  "prompt-template-filler",
+  "system-prompt-formatter"
+ ],
+ "keywords": [
+  "chain of thought prompt builder",
+  "cot prompt generator",
+  "step by step prompt template",
+  "tree of thought prompt",
+  "plan and solve prompting",
+  "free prompt engineering tool"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "palette-exporter",
+ "seoTitle": "Palette Exporter: ASE, GPL, CSS Variables, Tailwind and JSON",
+ "metaDescription": "Turn a list of colours into an Adobe ASE swatch file, a GIMP palette, CSS variables, a Tailwind config or JSON. Free, local.",
+ "intro": "Takes a named list of colours and exports it as Adobe Swatch Exchange (.ase), a GIMP palette (.gpl), CSS custom properties, a Tailwind colors block or JSON.",
+ "why": "Moving a palette between design tools and code is tedious. Paste lines such as \"Brand #4f8cff\" and pick a format. The ASE file follows the published block layout with RGB float values and can be imported by Adobe apps. GPL is the plain text format of GIMP and Inkscape.\n\nThe ASE file was checked by parsing it back, not by opening it in Adobe software. Colours are RGB only.",
+ "howTo": [
+  "Enter one colour per line, with an optional name first.",
+  "Pick the format and a palette name.",
+  "Run the tool.",
+  "Copy the code or download the file."
+ ],
+ "faq": [
+  {
+   "q": "Does it export CMYK?",
+   "a": "No, ASE entries are RGB."
+  },
+  {
+   "q": "Can I import the ASE into Photoshop?",
+   "a": "It is meant for that, but this tool was not tested in Adobe software. Tell us if it fails."
+  },
+  {
+   "q": "What are the CSS names?",
+   "a": "The name you give, lower-cased with dashes."
+  },
+  {
+   "q": "Which Tailwind version?",
+   "a": "The config extends theme.colors, usable in v3 style configs."
+  }
+ ],
+ "related": [
+  "design-tokens-converter",
+  "tailwind-v4-color-palette",
+  "palette-generator",
+  "color-converter",
+  "palette-shuffler",
+  "css-color-formats"
+ ],
+ "keywords": [
+  "export palette ase",
+  "gimp palette gpl",
+  "palette to css variables",
+  "swatch file generator"
+ ]
+}

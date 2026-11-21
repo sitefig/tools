@@ -1,0 +1,45 @@
+{
+ "id": "crontab-formatter",
+ "seoTitle": "Crontab Formatter and Aligner",
+ "metaDescription": "Line up minute, hour, day, month and weekday fields of crontab entries in columns. Commands and comments stay exactly as written.",
+ "intro": "Aligns crontab fields into columns so schedules are easy to scan.",
+ "why": "Crontab files grow by pasting. Uneven spacing hides which job runs when.\n\nThe tool pads the five time fields to a common width, keeps @reboot style lines and variable lines as they are and leaves each command exactly as typed. Turn on the user column for /etc/crontab style files. Lines with too few fields are left alone and listed for review. It does not check the values.",
+ "howTo": [
+  "Paste the crontab.",
+  "Tick the user column option for /etc/crontab.",
+  "Read the aligned result.",
+  "Use the cron explainer to check the schedules."
+ ],
+ "faq": [
+  {
+   "q": "Does it validate my schedule?",
+   "a": "No. Use the cron explainer."
+  },
+  {
+   "q": "Are comments kept?",
+   "a": "Yes, as they are."
+  },
+  {
+   "q": "What about spaces inside commands?",
+   "a": "They are kept."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "cron-explainer",
+  "cron-generator",
+  "cron-dialect-converter",
+  "cron-timezone-converter",
+  "natural-language-to-cron",
+  "shell-script-formatter"
+ ],
+ "keywords": [
+  "crontab formatter",
+  "align crontab",
+  "format cron file",
+  "crontab beautifier"
+ ]
+}

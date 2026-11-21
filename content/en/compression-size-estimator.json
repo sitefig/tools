@@ -1,0 +1,44 @@
+{
+ "id": "compression-size-estimator",
+ "seoTitle": "Gzip and Deflate Size Estimator for HTML, CSS and JavaScript",
+ "metaDescription": "Paste text to see raw, gzip and deflate sizes and the saving in percent, using your browser compression. Brotli is not available in browsers.",
+ "intro": "Compresses pasted text with the browser and shows raw, gzip and deflate sizes.",
+ "why": "Compression is the cheapest speed gain for text files, and you can see its effect before you touch the server.\n\nThe page uses the browser CompressionStream at its default level. A server at maximum level or a build step may beat it a little. Brotli is not shown because browsers cannot create it and this site ships no encoder of its own; measure Brotli on your server.",
+ "howTo": [
+  "Paste the contents of an HTML, CSS, JS or JSON file.",
+  "Read the byte counts and percent saved.",
+  "Compare with your minified version if you have one.",
+  "Check your server sends content-encoding."
+ ],
+ "faq": [
+  {
+   "q": "Why no Brotli?",
+   "a": "The browser compression API only offers gzip and deflate. Brotli is usually smaller, so test it on the server."
+  },
+  {
+   "q": "Does it work for images?",
+   "a": "No. Images and WOFF2 fonts are already compressed."
+  },
+  {
+   "q": "Is gzip level configurable?",
+   "a": "Not in the browser API; it uses a default level."
+  },
+  {
+   "q": "Is the text uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "gzip-inspector",
+  "gzip-compress",
+  "css-minify",
+  "js-minify",
+  "html-minify",
+  "page-weight-download-time"
+ ],
+ "keywords": [
+  "gzip size estimator",
+  "check compressed size",
+  "deflate size calculator"
+ ]
+}

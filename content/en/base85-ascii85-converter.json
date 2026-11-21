@@ -1,0 +1,45 @@
+{
+ "id": "base85-ascii85-converter",
+ "seoTitle": "Base85 Converter for Ascii85 and Z85",
+ "metaDescription": "Encode and decode Ascii85 (PostScript, PDF) and Z85 (ZeroMQ) text or hex bytes in your browser, with optional <~ ~> delimiters. Free.",
+ "intro": "Converts text or hex bytes to Ascii85 or Z85 and back.",
+ "why": "Base85 packs four bytes into five characters, so it is about 25 percent bigger than the data, against 33 percent for Base64. Ascii85 appears in PostScript and PDF streams. Z85 is a variant from ZeroMQ that avoids quotes and backslashes so it can sit in source code.\n\nAscii85 handles any length and uses z for four zero bytes. Z85 needs a multiple of four bytes and has no padding. The tool checks both rules and tells you when input breaks them.",
+ "howTo": [
+  "Choose encode or decode and the variant.",
+  "Paste text, or switch the plain side to hex bytes for binary data.",
+  "Tick the delimiter option if you need <~ and ~> around Ascii85.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Which variant should I use?",
+   "a": "Ascii85 for PDF and PostScript data. Z85 only when a ZeroMQ-style system asks for it."
+  },
+  {
+   "q": "Why does Z85 refuse my text?",
+   "a": "Z85 works on blocks of four bytes. Pad your data to a multiple of four."
+  },
+  {
+   "q": "Is this RFC 1924 Base85?",
+   "a": "No. RFC 1924 and Python's b85 use another alphabet."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "base64-encode",
+  "base64-decode",
+  "base58-encoder",
+  "base32",
+  "hex-text",
+  "hex-to-base64"
+ ],
+ "keywords": [
+  "ascii85 encoder decoder",
+  "z85 converter",
+  "base85 online",
+  "ascii85 pdf postscript"
+ ]
+}

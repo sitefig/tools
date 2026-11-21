@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PWM Calculator: Duty Cycle, Frequency, Average Voltage | Free Tools</title>
+<meta name="description" content="Convert between PWM frequency, period, duty cycle and on-time, see average and RMS voltage and the timer counts for a given clock and prescaler.">
+<link rel="canonical" href="https://tools.sitefig.net/en/pwm-calculator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/pwm-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/pwm-calculator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="PWM Calculator: Duty Cycle, Frequency, Average Voltage | Free Tools">
+<meta property="og:description" content="Convert between PWM frequency, period, duty cycle and on-time, see average and RMS voltage and the timer counts for a given clock and prescaler.">
+<meta property="og:url" content="https://tools.sitefig.net/en/pwm-calculator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PWM Calculator: Duty Cycle, Frequency, Average Voltage | Free Tools">
+<meta name="twitter:description" content="Convert between PWM frequency, period, duty cycle and on-time, see average and RMS voltage and the timer counts for a given clock and prescaler.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"PWM Calculator (Duty Cycle, Frequency, Average Voltage)","url":"https://tools.sitefig.net/en/pwm-calculator/","description":"Convert between PWM frequency, period, duty cycle and on-time, see average and RMS voltage and the timer counts for a given clock and prescaler.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter frequency and duty cycle.","Enter the timer clock and bit width if you want register values.","Pick a prescaler that fits.","Set the compare register to the shown value."],"keywords":"pwm calculator, duty cycle calculator, timer prescaler, average voltage pwm","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tools.sitefig.net/en/#calculators"},{"@type":"ListItem","position":3,"name":"PWM Calculator (Duty Cycle, Frequency, Average Voltage)","item":"https://tools.sitefig.net/en/pwm-calculator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is duty cycle?","acceptedAnswer":{"@type":"Answer","text":"The percentage of each period that the signal is high."}},{"@type":"Question","name":"Why does a prescaler matter?","acceptedAnswer":{"@type":"Answer","text":"It slows the timer so low frequencies fit into the counter width."}},{"@type":"Question","name":"Is RMS different from average?","acceptedAnswer":{"@type":"Answer","text":"Yes: RMS matters for heating (resistive loads), average for DC-like loads."}},{"@type":"Question","name":"Is my data sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is processed in your browser, and the page makes no network requests with your input."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#calculators">Calculators</a></li><li><span aria-current="page">PWM Calculator (Duty Cycle, Frequency, Average Voltage)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>PWM Calculator (Duty Cycle, Frequency, Average Voltage)</h1>
+<p class="lede">Work out PWM settings for LEDs, motors and servos.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="pwm-calculator" data-module="gap2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Enter frequency, duty cycle, supply voltage and optionally the timer clock and resolution. The page gives the period, on and off times, average voltage and RMS voltage, and a prescaler table showing the counts per period and the compare value for each prescaler, marking which fit in the counter.</p>
+<p>Average voltage is what a filtered or resistive load sees; LEDs follow average current and motors follow the average. Audible-frequency PWM may produce noise.</p>
+<p>No data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter frequency and duty cycle.</li><li>Enter the timer clock and bit width if you want register values.</li><li>Pick a prescaler that fits.</li><li>Set the compare register to the shown value.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What is duty cycle?</summary><p>The percentage of each period that the signal is high.</p></details>
+<details><summary>Why does a prescaler matter?</summary><p>It slows the timer so low frequencies fit into the counter width.</p></details>
+<details><summary>Is RMS different from average?</summary><p>Yes: RMS matters for heating (resistive loads), average for DC-like loads.</p></details>
+<details><summary>Is my data sent anywhere?</summary><p>No. Everything is processed in your browser, and the page makes no network requests with your input.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/uart-baud-calculator/"><span class="link-card__title">UART Baud Rate Divisor &amp; Error Calculator</span><span class="link-card__desc">Find the baud rate register value for a microcontroller clock (AVR UBRR, generic divisor), the actual baud rate and the percentage error, for 16x and 8x oversampling.</span></a></li><li><a class="link-card" href="/en/resistor-color-code-calculator/"><span class="link-card__title">Resistor Colour Code Calculator (4, 5, 6 Band &amp; SMD)</span><span class="link-card__desc">Decode resistor colour bands to ohms, tolerance and temperature coefficient, find the bands for a value, and read 3 or 4 digit SMD codes (103, 4R7, 01C).</span></a></li><li><a class="link-card" href="/en/wavelength-antenna-calculator/"><span class="link-card__title">Wavelength &amp; Antenna Length Calculator</span><span class="link-card__desc">Convert radio frequency to wavelength and get half-wave dipole, quarter-wave monopole and full-wave lengths with a velocity factor, in metres, feet and inches.</span></a></li><li><a class="link-card" href="/en/battery-life-estimator/"><span class="link-card__title">Battery Life Estimator (Duty-Cycled IoT Device)</span><span class="link-card__desc">Estimate battery life for a device that wakes, works and sleeps: average current from active and sleep currents and times, with a derating for self-discharge, temperature and ageing.</span></a></li><li><a class="link-card" href="/en/unit-converter/"><span class="link-card__title">Unit Converter</span><span class="link-card__desc">Length, mass, temperature, volume, area, speed, data, time, energy, pressure.</span></a></li><li><a class="link-card" href="/en/bitwise-calculator/"><span class="link-card__title">Bitwise Calculator (AND, OR, XOR, shifts, rotate)</span><span class="link-card__desc">Apply AND, OR, XOR, NAND, NOR, XNOR, NOT, left / arithmetic right / logical right shifts, rotations, popcount, leading / trailing zeros and bit reversal to 8, 16, 32 or 64-bit values, with two's-complement signed or unsigned interpretation. Inputs accept decimal, 0x hex, 0b binary and 0o octal; results are shown in all four bases with the bit pattern.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

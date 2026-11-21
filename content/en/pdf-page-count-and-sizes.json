@@ -1,0 +1,46 @@
+{
+ "id": "pdf-page-count-and-sizes",
+ "seoTitle": "Free PDF Page Count and Page Size Checker",
+ "metaDescription": "List the page count of one or more PDFs with each page's size, rotation and paper format such as A4 or Letter. Free, runs in your browser.",
+ "intro": "Load one or more PDFs and see how many pages each has, with every page's dimensions, rotation and paper format.",
+ "why": "Print shops, mailing services and upload forms often ask for the page count and a specific paper size, and a single odd page can wreck a print job: a landscape insert, a Letter page in an A4 document or a page rotated by the scanner. Finding such a page by flipping through a viewer is easy to get wrong.\n\nThis checker reads the pages' dimensions straight from the file and lists them. For each PDF you get the page count and, per page, width and height in points and millimetres, the rotation and the closest standard format such as A4 or Letter. You can select several files at once and see a report for each. It reads file structure only and does not render pages. Encrypted files are not supported. Nothing is uploaded.",
+ "howTo": [
+  "Choose one or more PDF files.",
+  "Run the tool.",
+  "Read the page count and the list of page sizes for each file.",
+  "Look for pages whose size or rotation differs from the rest."
+ ],
+ "faq": [
+  {
+   "q": "What units are used?",
+   "a": "Sizes are shown in PDF points, where 72 points make an inch, together with millimetres, so you can compare with paper sizes. A4 is about 595 by 842 points."
+  },
+  {
+   "q": "Does it show the size as displayed?",
+   "a": "The report includes the rotation of each page, so you can tell whether a portrait page is shown sideways. Check the rotation column when a page seems the wrong way round."
+  },
+  {
+   "q": "How are paper formats named?",
+   "a": "Page dimensions are compared with common sizes such as A4, A3 and Letter, within a small tolerance. Non-standard sizes are shown by their measurements only."
+  },
+  {
+   "q": "Can it read several files at once?",
+   "a": "Yes. Select more than one file and each gets its own report. A file that cannot be read gets an error line with its name, and the others still run."
+  }
+ ],
+ "related": [
+  "pdf-info",
+  "pdf-crop-margins",
+  "pdf-rotate",
+  "pdf-merge",
+  "pdf-split",
+  "aspect-ratio-calculator"
+ ],
+ "keywords": [
+  "pdf page count",
+  "pdf page size checker",
+  "check pdf dimensions",
+  "pdf paper size online",
+  "free pdf page info"
+ ]
+}

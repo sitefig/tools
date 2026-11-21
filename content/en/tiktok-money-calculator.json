@@ -1,0 +1,41 @@
+{
+ "id": "tiktok-money-calculator",
+ "seoTitle": "TikTok Earnings Calculator: Views Payout and Brand Deals",
+ "metaDescription": "Estimate monthly income from average views and a payout per 1,000 views you enter, plus brand deal income from followers.",
+ "intro": "Estimate monthly income from average views, posting rate and a payout per 1,000 views you enter, plus a brand deal price from followers.",
+ "why": "TikTok income comes from several places: a views-based program in some countries, brand deals, gifts and shop sales. Public figures vary and the rules change.\n\nEnter your average views, videos per month, the payout per 1,000 qualifying views and the share of views that qualify, then followers and your brand rate per 1,000 followers. The tool shows monthly and yearly income. Every rate is yours to set, because no honest default exists.",
+ "howTo": [
+  "Enter average views and videos per month.",
+  "Enter your payout rate and qualifying share.",
+  "Enter followers, brand rate and deals per month.",
+  "Read the monthly and yearly totals."
+ ],
+ "faq": [
+  {
+   "q": "What payout rate should I use?",
+   "a": "The rate shown in your own dashboard, if you have one. The default is a placeholder."
+  },
+  {
+   "q": "Does it include gifts or shop sales?",
+   "a": "No."
+  },
+  {
+   "q": "Is it a forecast?",
+   "a": "No. It is a calculator for assumptions you provide."
+  }
+ ],
+ "related": [
+  "youtube-earnings-estimator",
+  "influencer-rate-estimator",
+  "engagement-rate-calculator",
+  "follower-growth-calculator",
+  "social-media-roi-calculator",
+  "roi-calculator"
+ ],
+ "keywords": [
+  "tiktok money calculator",
+  "tiktok earnings",
+  "creator fund calculator",
+  "tiktok brand deal rate"
+ ]
+}

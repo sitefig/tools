@@ -1,0 +1,45 @@
+{
+  "id": "commit-message-suggester",
+  "seoTitle": "Commit Message Suggester from a git diff (Conventional Commits)",
+  "metaDescription": "Paste a unified git diff and get a Conventional Commits subject and file summary drafted from paths and changes. Heuristic, nothing uploaded.",
+  "intro": "Draft a commit message from your staged changes: type, scope and a list of files with line counts.",
+  "why": "The tool reads git diff headers and hunks, counts additions and deletions per file, classifies files (tests, docs, CI, build files, styles, code) and chooses a type: test, docs, ci, build, style, fix, feat or refactor. The scope comes from the common directory of changed code files.\n\nIt is a rule-based starting point. Replace the subject with what the change does and why, add \"!\" or a BREAKING CHANGE footer for incompatible changes, and keep the subject under about 72 characters.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Run git diff --staged (or git diff) and copy the output.",
+    "Paste it and read the suggested subject and file list.",
+    "Rewrite the subject to say what and why.",
+    "Commit with git commit -m."
+  ],
+  "faq": [
+    {
+      "q": "Does it understand my code?",
+      "a": "No. It looks at file paths, change sizes and a few keywords. Review the type it picks."
+    },
+    {
+      "q": "What are Conventional Commits?",
+      "a": "A convention of \"type(scope): subject\" messages that tools can use to build changelogs and version numbers."
+    },
+    {
+      "q": "Is my diff sent anywhere?",
+      "a": "No. It stays in the page."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "conventional-commit-generator",
+    "git-command-builder",
+    "changelog-generator",
+    "code-diff-html",
+    "pre-commit-config-generator",
+    "commitlint-semantic-release-generator"
+  ],
+  "keywords": [
+    "commit message generator",
+    "conventional commits",
+    "git diff to message",
+    "commit helper"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "postman-to-curl",
+ "seoTitle": "Free Postman Collection to cURL Converter",
+ "metaDescription": "Convert every request in a Postman Collection v2 JSON, including folders, headers, bodies and auth, into curl commands. Free, runs in your browser.",
+ "intro": "Paste an exported Postman Collection and get a curl command for each request, with folders as comments, headers, bodies, query strings and common auth types included.",
+ "why": "Postman collections are great while you are inside Postman, but a teammate in a terminal, a CI job or a bug report wants plain curl. Re-typing each request by hand loses headers and quoting details, and copying them one at a time through the app is slow.\n\nThis converter reads the collection JSON and walks through nested folders. It writes curl with the method, URL, headers, raw, URL-encoded, form-data and GraphQL bodies, and bearer, basic and API key auth. Collection variables such as {{host}} can be replaced with their values. Pre-request scripts, tests, environment-level variables and OAuth flows are not run, so check any request that depends on them.",
+ "howTo": [
+  "Export your collection as JSON (v2.0 or v2.1) and paste it into the input.",
+  "Choose whether to substitute collection variables and add request names as comments.",
+  "Copy the curl commands into your terminal or script."
+ ],
+ "faq": [
+  {
+   "q": "Which auth types are converted?",
+   "a": "Bearer tokens, basic auth and API keys in a header or the query string. Other types, such as OAuth 2 or AWS signatures, are not converted and need to be added by hand."
+  },
+  {
+   "q": "What about environment variables?",
+   "a": "Only variables stored in the collection itself are substituted. Variables from a Postman environment file stay as {{name}} so that you can fill them in or export them into the shell."
+  },
+  {
+   "q": "Are scripts and tests included?",
+   "a": "No. Pre-request and test scripts are ignored because curl has no equivalent. A request that sets a header in a script needs that header added manually."
+  },
+  {
+   "q": "Is my collection uploaded?",
+   "a": "No. It is parsed in your browser. Even so, collections often contain tokens, so remove real secrets before sharing the output."
+  }
+ ],
+ "related": [
+  "curl-to-postman",
+  "postman-to-openapi",
+  "curl-to-code",
+  "curl-builder",
+  "har-to-k6",
+  "curl-to-har"
+ ],
+ "keywords": [
+  "postman to curl",
+  "convert postman collection to curl",
+  "postman export to curl commands",
+  "free postman converter",
+  "postman collection v2.1 curl"
+ ]
+}

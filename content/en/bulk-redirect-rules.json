@@ -1,0 +1,45 @@
+{
+ "id": "bulk-redirect-rules",
+ "seoTitle": "Bulk Redirect Generator: Apache, Nginx, Cloudflare, Netlify, Vercel",
+ "metaDescription": "Turn a list of old and new URLs into redirect rules for Apache, Nginx, Cloudflare Bulk Redirects CSV, Netlify _redirects or vercel.json. Free, in your browser.",
+ "intro": "Paste old and new URLs, pick a platform and copy ready rules. Supports Apache Redirect, RedirectMatch and RewriteRule, Nginx location blocks and map, Cloudflare Bulk Redirects CSV, Netlify _redirects and vercel.json.",
+ "why": "A site migration can mean thousands of redirects, and every platform wants a different format. Typing them by hand invites typos, duplicate sources and chains. This tool reads one simple list and writes the format you need, and it warns about self-redirects, duplicate sources, chains and rows a platform cannot express, such as query strings in a Cloudflare source.\n\nThe Apache outputs were tested against a running apache2 2.4. Cloudflare and Netlify formats follow their documentation. Vercel escaping could not be checked against a live deployment. Always test on staging: one wrong rule can redirect the whole site.",
+ "howTo": [
+  "Paste one pair per line: old URL, then new URL. Add 301, 302, 307 or 308 at the end of a line to override the default.",
+  "Choose the output format and the default status code.",
+  "For Cloudflare, enter your domain if the old URLs are only paths.",
+  "Copy the rules, read the Review list and test on staging."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between Redirect and RedirectMatch?",
+   "a": "Redirect matches a path prefix, so /old also redirects /old/anything. RedirectMatch with ^/old$ matches only the exact path. Pick the exact form when you do not want the prefix behaviour."
+  },
+  {
+   "q": "How are query strings handled?",
+   "a": "Apache RewriteRule, Nginx location and Netlify rules can match a specific query string. Redirect, RedirectMatch, Cloudflare and Vercel sources match the path only, so those rows are skipped with a note."
+  },
+  {
+   "q": "Which format for thousands of rows?",
+   "a": "Nginx map and Cloudflare Bulk Redirects are built for long lists. Long lists in vercel.json are better placed in a bulk redirects file."
+  },
+  {
+   "q": "Does it check that redirects work?",
+   "a": "No. It only writes rules. Test with curl -I and fix chains with the Redirect Map Flattener."
+  }
+ ],
+ "related": [
+  "redirect-code-generator",
+  "redirect-rules-converter",
+  "redirect-map-flattener",
+  "redirect-rule-tester",
+  "redirect-map-matcher",
+  "redirect-type-advisor"
+ ],
+ "keywords": [
+  "bulk redirect generator",
+  "htaccess redirect list",
+  "nginx redirect map",
+  "cloudflare bulk redirects csv"
+ ]
+}

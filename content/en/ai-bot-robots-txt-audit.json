@@ -1,0 +1,44 @@
+{
+ "id": "ai-bot-robots-txt-audit",
+ "seoTitle": "AI Bot robots.txt Audit: Allowed, Blocked or Not Named",
+ "metaDescription": "Check a robots.txt against known AI crawlers and see which are blocked, partly blocked, open or not named. Free, runs in your browser.",
+ "intro": "Reads your robots.txt and reports how each known AI crawler is treated.",
+ "why": "Many sites think they block AI crawlers because they block one or two. The audit lists every crawler in the directory, the effect of your rules on the home page, and whether any rule names it.\n\nA crawler that is not named follows the * group, which is usually open. The summary lists training crawlers you have not named. Blocking is advisory, and user-triggered fetchers may ignore it.",
+ "howTo": [
+  "Paste your robots.txt.",
+  "Read the effect and Named columns.",
+  "Add groups for crawlers you want to block.",
+  "Use the AI bot builder to generate them."
+ ],
+ "faq": [
+  {
+   "q": "What does via * mean?",
+   "a": "No group names the crawler, so the * group applies."
+  },
+  {
+   "q": "What is partly blocked?",
+   "a": "Some paths are disallowed but the home page is open."
+  },
+  {
+   "q": "Does blocking guarantee no crawling?",
+   "a": "No. Only crawlers that obey robots.txt respect it."
+  },
+  {
+   "q": "Does it list every AI bot?",
+   "a": "No. It covers the directory list, which changes over time."
+  }
+ ],
+ "related": [
+  "ai-bot-robots-builder",
+  "ai-crawler-user-agent-directory",
+  "ai-crawler-policy-comparator",
+  "robots-tester",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "ai bot robots.txt audit",
+  "am i blocking gptbot",
+  "check ai crawlers robots.txt",
+  "ai crawler policy check"
+ ]
+}

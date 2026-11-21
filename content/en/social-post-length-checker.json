@@ -1,0 +1,41 @@
+{
+ "id": "social-post-length-checker",
+ "seoTitle": "Post Length Checker for X, Threads, Bluesky, LinkedIn, Instagram",
+ "metaDescription": "Paste one draft and see if it fits X, Threads, Bluesky, Mastodon, Instagram and LinkedIn limits, with room left on each. Free, private.",
+ "intro": "Paste one draft and see whether it fits X, Threads, Bluesky, Mastodon, Instagram and LinkedIn limits, with the characters left on each.",
+ "why": "Each network has its own limit and its own way of counting. A post that fits on LinkedIn is far too long for X, and a link counts differently on X and Mastodon.\n\nPaste one draft and see all limits side by side. X uses its weighted count and Threads the 500 limit, both checked against the vendor documentation. The other limits are commonly quoted values that were not verified at the source, and the table says so. You can add a custom limit.",
+ "howTo": [
+  "Paste your draft post.",
+  "Read the table of used and remaining characters per platform.",
+  "Add a custom limit if you post somewhere else.",
+  "Confirm important limits in the platform before relying on them."
+ ],
+ "faq": [
+  {
+   "q": "Which limits are verified?",
+   "a": "X (280 weighted, links 23) and Threads (500). The rest are marked as not verified in the table."
+  },
+  {
+   "q": "Why do the Used numbers differ?",
+   "a": "X weights links and emoji, Mastodon counts links as 23, and the others count visible characters."
+  },
+  {
+   "q": "Does it post anything?",
+   "a": "No. It only counts text in your browser."
+  }
+ ],
+ "related": [
+  "x-post-character-counter",
+  "thread-splitter",
+  "char-limit-counter",
+  "instagram-line-break-formatter",
+  "hashtag-formatter",
+  "reddit-title-checker"
+ ],
+ "keywords": [
+  "post length checker",
+  "social media character limits",
+  "linkedin character limit",
+  "bluesky character count"
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IIS W3C Log Parser: u_ex Logs to Table and Summary | Free Tools</title>
+<meta name="description" content="Read IIS W3C extended logs using the #Fields line. See status codes, top URLs, slow requests, or export rows. Free, runs locally.">
+<link rel="canonical" href="https://tools.sitefig.net/en/iis-w3c-log-parser/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/iis-w3c-log-parser/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/iis-w3c-log-parser/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="IIS W3C Log Parser: u_ex Logs to Table and Summary | Free Tools">
+<meta property="og:description" content="Read IIS W3C extended logs using the #Fields line. See status codes, top URLs, slow requests, or export rows. Free, runs locally.">
+<meta property="og:url" content="https://tools.sitefig.net/en/iis-w3c-log-parser/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IIS W3C Log Parser: u_ex Logs to Table and Summary | Free Tools">
+<meta name="twitter:description" content="Read IIS W3C extended logs using the #Fields line. See status codes, top URLs, slow requests, or export rows. Free, runs locally.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"IIS W3C Log Parser (#Fields Header to Table)","url":"https://tools.sitefig.net/en/iis-w3c-log-parser/","description":"Read IIS W3C extended logs using the #Fields line. See status codes, top URLs, slow requests, or export rows. Free, runs locally.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the log including the # header lines, or choose files.","Pick the view: summary, table, CSV or JSON.","Filter by status or choose columns.","Copy the result or narrow it with the filters."],"keywords":"iis log parser, w3c extended log viewer, u_ex log analyzer","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Log Parsing","item":"https://tools.sitefig.net/en/#log-parsing"},{"@type":"ListItem","position":3,"name":"IIS W3C Log Parser (#Fields Header to Table)","item":"https://tools.sitefig.net/en/iis-w3c-log-parser/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why do I need the # lines?","acceptedAnswer":{"@type":"Answer","text":"The #Fields line names the columns. Without it the lines cannot be mapped."}},{"@type":"Question","name":"What if some lines do not match?","acceptedAnswer":{"@type":"Answer","text":"They are skipped and the result says how many. Lines before the first #Fields line are skipped."}},{"@type":"Question","name":"Which unit is time-taken?","acceptedAnswer":{"@type":"Answer","text":"Milliseconds in IIS logs."}},{"@type":"Question","name":"Is my log uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#log-parsing">Log Parsing</a></li><li><span aria-current="page">IIS W3C Log Parser (#Fields Header to Table)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>IIS W3C Log Parser (#Fields Header to Table)</h1>
+<p class="lede">Maps every IIS log line to the columns named in the #Fields header and summarises the result.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="iis-w3c-log-parser" data-module="new12" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>IIS log files change their columns when logging settings change, so a fixed parser breaks. This tool reads the #Fields line and uses it, including when the header appears again in the file.</p>
+<p>The summary covers status codes, top URLs, client IPs and request time. IIS writes UTC by default.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the log including the # header lines, or choose files.</li><li>Pick the view: summary, table, CSV or JSON.</li><li>Filter by status or choose columns.</li><li>Copy the result or narrow it with the filters.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why do I need the # lines?</summary><p>The #Fields line names the columns. Without it the lines cannot be mapped.</p></details>
+<details><summary>What if some lines do not match?</summary><p>They are skipped and the result says how many. Lines before the first #Fields line are skipped.</p></details>
+<details><summary>Which unit is time-taken?</summary><p>Milliseconds in IIS logs.</p></details>
+<details><summary>Is my log uploaded?</summary><p>No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/access-log-parser/"><span class="link-card__title">Apache and Nginx Access Log Parser (Common and Combined Format Table)</span><span class="link-card__desc">Turn Common or Combined Log Format lines into a table with IP, time, method, path, status, bytes, referrer and user agent. Filter by text, regex, status or method, sort, and export CSV or JSON.</span></a></li><li><a class="link-card" href="/en/cloudfront-log-parser/"><span class="link-card__title">CloudFront Standard Log Parser (Tab-Separated, .gz Supported)</span><span class="link-card__desc">Read CloudFront standard access logs, including gzipped files from S3. Shows cache hit ratio by result type, status codes, top URLs, edge locations and slow requests.</span></a></li><li><a class="link-card" href="/en/log-to-csv/"><span class="link-card__title">Log to CSV Converter (Access Logs, logfmt, JSON Lines, Custom Regex)</span><span class="link-card__desc">Convert log lines to CSV for a spreadsheet. Pick Common/Combined, an nginx or Apache format string, logfmt, JSON lines or your own regex with named groups, then choose the columns.</span></a></li><li><a class="link-card" href="/en/response-time-percentiles/"><span class="link-card__title">Response Time Percentile Calculator per Endpoint (p50, p90, p95, p99)</span><span class="link-card__desc">Compute p50, p90, p95 and p99 latency per endpoint from an access log that records request time (nginx $request_time, Apache %D or %T). Pick the unit and group numeric IDs into one route.</span></a></li><li><a class="link-card" href="/en/log-format-detector/"><span class="link-card__title">Log Format Auto-Detector: Which Parser Fits These Lines?</span><span class="link-card__desc">Paste a sample of log lines and see which known format each line matches (Combined, syslog, JSON, logfmt, W3C, HAProxy, cloud logs and more), with a share per format and the tool to open next.</span></a></li><li><a class="link-card" href="/en/csv-viewer/"><span class="link-card__title">CSV Viewer</span><span class="link-card__desc">View CSV as a sortable, filterable table. Open a file or paste text.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+ "id": "pdf-text-extract-simple",
+ "seoTitle": "Free Simple PDF Text Extractor (Limited)",
+ "metaDescription": "Best-effort text extraction from simple PDFs with plain fonts. Will not work on most Word, Chrome or LaTeX PDFs or scans. Free, runs locally.",
+ "intro": "Extract text from PDFs that use simple fonts and plain or Flate-compressed content. It cannot read most modern documents or scanned pages.",
+ "why": "Sometimes you just want the words out of a PDF: to paste into an email, search, or run through a word counter. This tool exists for the simple cases and is honest about the rest. It reads the page content streams and pulls out text drawn with simple fonts, such as many invoices, reports from older systems and generated documents.\n\nIt will not work on files where text uses subset-embedded or composite fonts with Identity-H encoding, which covers most output from Word, Chrome print-to-PDF and LaTeX. In those the codes are not Unicode, so the result is empty or garbled. It also cannot read scanned pages, which are pictures of text and need OCR. When it cannot succeed it warns you. Processing is local, and there is no upload.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Keep Page separators ticked to see where each page starts.",
+  "Run the tool.",
+  "Copy the extracted text, and read any warnings about fonts."
+ ],
+ "faq": [
+  {
+   "q": "Why is the result empty or garbled?",
+   "a": "The PDF probably uses composite fonts with Identity-H encoding, which most Word, Chrome and LaTeX files do, or it is a scan. This tool cannot map those glyph codes to characters, so use a full PDF reader or an OCR tool."
+  },
+  {
+   "q": "Does it handle encrypted PDFs?",
+   "a": "No. Encrypted files are refused with a message. Remove the restriction using the software that created the file, if you have the right to do so."
+  },
+  {
+   "q": "Which filters can it read?",
+   "a": "Uncompressed and Flate-compressed content streams. Streams using other filters are skipped, and the output tells you how many were left out."
+  },
+  {
+   "q": "Is the layout kept?",
+   "a": "Only roughly. Text is returned in drawing order with line breaks where the file moves to a new line. Columns, tables and reading order can come out jumbled."
+  }
+ ],
+ "related": [
+  "pdf-info",
+  "pdf-extract-pages",
+  "ocr-image-to-text",
+  "text-to-pdf",
+  "word-counter",
+  "pdf-to-image"
+ ],
+ "keywords": [
+  "pdf text extractor",
+  "extract text from pdf online",
+  "pdf to text simple",
+  "copy text from pdf free",
+  "pdf text extraction limits"
+ ]
+}

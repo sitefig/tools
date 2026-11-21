@@ -1,0 +1,44 @@
+{
+ "id": "sitemap-gz-reader",
+ "seoTitle": "Gzipped Sitemap Reader: Open sitemap.xml.gz",
+ "metaDescription": "Open a sitemap.xml.gz in your browser: unzip, read formatted XML, count URLs and save as plain .xml. Nothing is uploaded.",
+ "intro": "Opens a gzipped sitemap file, shows the XML formatted, counts the URLs and lets you save the plain .xml.",
+ "why": "Many sites publish sitemap.xml.gz, which you cannot read in an editor. Command line tools work, but not everyone has one at hand.\n\nThis tool uses the decompression built into your browser. It also accepts a plain .xml file. Very long files show the first 1,500 lines, and the download has everything.",
+ "howTo": [
+  "Choose a .xml.gz or .xml file.",
+  "Read the size before and after unzipping and the URL count.",
+  "Scan the formatted XML.",
+  "Save the plain XML file if needed."
+ ],
+ "faq": [
+  {
+   "q": "Does it upload my file?",
+   "a": "No. The file is read and unzipped locally."
+  },
+  {
+   "q": "Why is only part shown?",
+   "a": "Long files are cut at 1,500 lines on screen. The download is complete."
+  },
+  {
+   "q": "Can it read .br files?",
+   "a": "No. Browsers do not expose Brotli decompression to pages."
+  },
+  {
+   "q": "Does it check the sitemap?",
+   "a": "It checks the root element and the limits. Use the validator for a full check."
+  }
+ ],
+ "related": [
+  "sitemap-validator",
+  "sitemap-url-extractor",
+  "gzip-inspector",
+  "sitemap-limit-checker",
+  "sitemap-to-csv"
+ ],
+ "keywords": [
+  "sitemap.xml.gz",
+  "open gz sitemap",
+  "decompress sitemap",
+  "gzip sitemap reader"
+ ]
+}

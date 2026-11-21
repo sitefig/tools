@@ -1,0 +1,45 @@
+{
+ "id": "k8s-manifest-validator",
+ "seoTitle": "Free Kubernetes YAML Manifest Validator Online",
+ "metaDescription": "Lint Kubernetes YAML for wrong apiVersion and kind pairs, invalid names, selector mismatches, :latest images, missing probes and privileged mode.",
+ "intro": "Paste one or more Kubernetes manifests and get a structural check of apiVersion, names, selectors, images, resources, probes and privileged settings.",
+ "why": "Most broken manifests fail for ordinary reasons: a Deployment selector that does not match the pod template labels, an apiVersion that was removed in a newer cluster, an uppercase character in a name, or an image with no tag. kubectl tells you only after you apply, and sometimes only as a vague message.\n\nThis validator reads multi-document YAML as text and checks those common mistakes, plus risky settings such as privileged containers, hostNetwork and root users. It is a structural lint based on indentation and patterns, not a schema validator, so it cannot know every kind. Use kubectl apply --dry-run=server or kubeconform for authoritative checks.",
+ "howTo": [
+  "Paste your Kubernetes YAML, separating documents with a line of three dashes.",
+  "Read the findings, which are labelled ERROR, WARNING or INFO with a document number.",
+  "Fix the manifest, then confirm it with kubectl apply --dry-run=server."
+ ],
+ "faq": [
+  {
+   "q": "Is this a full schema validation?",
+   "a": "No. It checks a fixed list of common problems for about twenty built-in kinds using patterns. For schema-level validation of any resource, use kubeconform or a server-side dry run."
+  },
+  {
+   "q": "Does it work with flow-style YAML?",
+   "a": "Only partly. The checks follow indentation, so manifests written with inline braces such as {app: web} are not fully analysed. Convert them to block style first."
+  },
+  {
+   "q": "What does the selector check do?",
+   "a": "For Deployments, StatefulSets, DaemonSets and ReplicaSets it compares each matchLabels pair with the pod template labels and reports any that do not match."
+  },
+  {
+   "q": "Does it contact my cluster?",
+   "a": "No. It works only on the text you paste, in your browser, and has no access to a cluster."
+  }
+ ],
+ "related": [
+  "kubeconfig-validator",
+  "kubernetes-deployment-generator",
+  "kubernetes-ingress-generator",
+  "kubernetes-configmap-secret-builder",
+  "helm-chart-scaffolder",
+  "yaml-format"
+ ],
+ "keywords": [
+  "kubernetes manifest validator",
+  "validate kubernetes yaml online",
+  "k8s yaml linter",
+  "free kubernetes lint tool",
+  "kubernetes selector mismatch check"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "journald-json-viewer",
+ "seoTitle": "systemd Journal Viewer for journalctl -o json",
+ "metaDescription": "Summarise journalctl JSON output by unit and priority, find repeated messages and filter entries. Free, runs in your browser.",
+ "intro": "Reads journalctl -o json lines and shows counts per unit and priority, top repeated messages and a table of entries.",
+ "why": "journalctl can export every field as JSON, which is complete but long. This tool shows which units are noisy and how bad their worst priority is.\n\nTimestamps come from __REALTIME_TIMESTAMP in microseconds and are shown in UTC. Messages stored as byte arrays are decoded as UTF-8.",
+ "howTo": [
+  "Run journalctl -o json --since \"1 hour ago\" > j.json.",
+  "Paste the output or choose the file.",
+  "Filter by unit, priority or text.",
+  "Read the summary or switch to the table."
+ ],
+ "faq": [
+  {
+   "q": "Which priorities exist?",
+   "a": "emerg, alert, crit, err, warning, notice, info, debug (0 to 7)."
+  },
+  {
+   "q": "Why are some messages numbers?",
+   "a": "journald stores binary or non-UTF8 messages as byte arrays. They are decoded here."
+  },
+  {
+   "q": "What if some lines do not match?",
+   "a": "They are skipped and the result says how many. Lines that are not JSON are counted."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "syslog-parser",
+  "jsonl-log-filter",
+  "systemd-unit-generator",
+  "docker-log-viewer",
+  "log-pattern-miner",
+  "log-level-histogram"
+ ],
+ "keywords": [
+  "journalctl json viewer",
+  "systemd journal analyzer",
+  "journald log summary"
+ ]
+}

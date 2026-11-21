@@ -1,0 +1,47 @@
+{
+ "id": "anchor-text-distribution",
+ "seoTitle": "Free Anchor Text Distribution Checker for Backlinks",
+ "metaDescription": "Paste backlink anchor texts and see the share of branded, exact match, partial match, generic and URL anchors. Free, rule-based and runs in your browser.",
+ "intro": "Paste a list of backlink anchor texts and see how they split into branded, exact-match, partial-match, generic and naked-URL buckets, with counts and percentages.",
+ "why": "A natural backlink profile contains mostly brand names, naked URLs and generic phrases such as \"click here\". A profile dominated by one exact money keyword is a classic sign of over-optimised link building, and worth checking during an audit or before a link campaign.\n\nExport your anchors from your backlink tool, paste them here and set your brand terms and target keywords. Each anchor is sorted into a bucket by simple rules and you get a table with shares and bars. If exact-match anchors exceed about ten percent you get a warning. The rules are heuristics, not Google's rules, so use the result as a prompt for review.",
+ "howTo": [
+  "Paste your anchor texts, one per line. Repeats are fine and count separately.",
+  "Enter your brand terms, separated by commas.",
+  "Enter your target keywords, separated by commas.",
+  "Read the bucket table and the warning about exact-match share."
+ ],
+ "faq": [
+  {
+   "q": "How are the buckets decided?",
+   "a": "In order: a URL or bare domain is a naked link, a text containing a brand term is branded, an exact keyword is exact match, one that contains a keyword or one of its words is partial, and known phrases like \"read more\" are generic."
+  },
+  {
+   "q": "What is a healthy distribution?",
+   "a": "There is no official number. Most natural profiles are mainly branded and URL anchors, with few exact-match ones. The tool warns above about 10 percent exact match, which is a rule of thumb, not a Google threshold."
+  },
+  {
+   "q": "Why do many anchors land in Other?",
+   "a": "Anything that matches no rule falls into Other, for instance an article title or a person's name. Add more brand terms or keywords, or review that bucket manually."
+  },
+  {
+   "q": "Does it fetch my backlinks?",
+   "a": "No. Getting backlink data needs an external service. Export your anchors from the tool you already use and paste them here."
+  }
+ ],
+ "related": [
+  "disavow-file-generator",
+  "keyword-clusterer",
+  "keyword-intent-classifier",
+  "keyword-density",
+  "internal-link-extractor",
+  "topic-cluster-planner"
+ ],
+ "keywords": [
+  "anchor text distribution",
+  "anchor text analyzer",
+  "backlink anchor text checker",
+  "free anchor text tool",
+  "exact match anchor percentage",
+  "branded vs generic anchors"
+ ]
+}

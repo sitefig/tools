@@ -1,0 +1,45 @@
+{
+  "id": "qr-code-reader",
+  "seoTitle": "QR Code Reader: Decode a QR Image in Your Browser",
+  "metaDescription": "Read a QR code from a picture or screenshot: finds the code, corrects errors with Reed-Solomon and shows the text, version, correction level and mask.",
+  "intro": "Scan a QR code from an image file without uploading it or using a phone.",
+  "why": "The decoder is written from scratch: it thresholds the image adaptively, finds the three finder patterns by their 1:1:3:1:1 run ratios, estimates the grid and samples modules (rotated and inverted codes are handled), reads the format information, removes the mask, de-interleaves the blocks, repairs damaged codewords with Reed-Solomon error correction and decodes numeric, alphanumeric, byte (UTF-8 or Latin-1), ECI and Kanji segments. It was tested against codes produced by an independent encoder (zxing-cpp) at all four correction levels, versions 1 to 30+, rotations, blur, noise, JPEG compression and deliberate damage.\n\nIt reads one code per image and assumes little perspective distortion: photos taken at a steep angle may fail. Always check a decoded web address before opening it, because QR codes are used for phishing.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose an image with a QR code.",
+    "Read the decoded text and the code details.",
+    "Check URLs before opening them.",
+    "Try a sharper, straighter or larger image if it fails."
+  ],
+  "faq": [
+    {
+      "q": "Does it use the camera?",
+      "a": "No, it reads image files."
+    },
+    {
+      "q": "Why did it fail?",
+      "a": "Steep perspective, glare, a cropped quiet zone or a very small code can prevent detection."
+    },
+    {
+      "q": "Which codes are supported?",
+      "a": "QR Code (Model 2) only, not Data Matrix or barcodes."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "qr-code-generator",
+    "barcode-generator",
+    "image-info",
+    "url-parser",
+    "image-redaction",
+    "file-type-detector"
+  ],
+  "keywords": [
+    "qr code reader",
+    "decode qr code online",
+    "qr scanner from image",
+    "read qr from screenshot"
+  ]
+}

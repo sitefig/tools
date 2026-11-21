@@ -1,0 +1,46 @@
+{
+  "id": "grid-generator",
+  "seoTitle": "Free CSS Grid Generator with Live Preview",
+  "metaDescription": "Define columns, rows, sizes, gaps and alignment, preview the grid and copy the CSS. Free, runs in your browser and nothing is uploaded.",
+  "intro": "Builds CSS Grid container code from a column and row count, track sizes, gaps and item alignment. A live preview fills the grid with numbered cells.",
+  "why": "CSS Grid is powerful, and its syntax is not memorable: repeat functions, fr units, minmax, and two different gap properties. Trying a layout in the browser means editing, saving and reloading to see whether three columns of 1fr behave as you expect.\n\nSet the number of columns and rows, the track size for each, the gaps and the item alignment, and the preview draws the cells at once. The generated code uses repeat so it stays short, and omits alignment properties left at their defaults. This makes it handy for sketching a card layout, a gallery or a dashboard before you commit to a design. The size fields accept any valid track size such as 1fr, 200px or minmax. It all runs in your browser.",
+  "howTo": [
+    "Enter the number of columns and rows.",
+    "Set the column and row track sizes, for example 1fr or auto.",
+    "Adjust the column and row gaps, and the item alignment options.",
+    "Copy the grid CSS from the output."
+  ],
+  "faq": [
+    {
+      "q": "What can I put in the size fields?",
+      "a": "Any valid track size: fr units, pixels, percentages, auto, or functions such as minmax(100px, 1fr). The value is repeated for every column or row, so use the same size throughout."
+    },
+    {
+      "q": "Can I make columns of different widths?",
+      "a": "Not in the tool, because it repeats one size. Copy the output and replace the repeat function with your own list, such as 200px 1fr 2fr."
+    },
+    {
+      "q": "What do justify-items and align-items do?",
+      "a": "They position items inside their grid cell, horizontally and vertically. The default, stretch, makes items fill the cell. Start, end and center shrink them to their content."
+    },
+    {
+      "q": "How many cells does the preview show?",
+      "a": "Columns times rows, up to a maximum of 100 cells, each numbered so you can see the order items flow into the grid."
+    }
+  ],
+  "related": [
+    "flexbox-generator",
+    "css-grid-area-builder",
+    "responsive-breakpoint-previewer",
+    "css-media-query-builder",
+    "tailwind-converter",
+    "aspect-ratio-calculator"
+  ],
+  "keywords": [
+    "css grid generator",
+    "css grid layout generator",
+    "grid template columns generator",
+    "css grid playground",
+    "free grid layout tool"
+  ]
+}

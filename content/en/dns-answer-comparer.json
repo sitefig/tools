@@ -1,0 +1,45 @@
+{
+ "id": "dns-answer-comparer",
+ "seoTitle": "DNS Answer Comparer: Compare Two dig Results After a DNS Change",
+ "metaDescription": "Paste dig or nslookup answers from two resolvers or from before and after a change. See which records match, differ and have different TTLs.",
+ "intro": "Compares two sets of DNS records and shows what is the same, what is only in one answer and where the TTL differs. Useful after a DNS change or migration.",
+ "why": "After a DNS change, different resolvers answer differently until caches expire. Running dig against two resolvers and comparing by eye is slow and error-prone, especially with several records.\n\nThis page does not look anything up. Run dig yourself, for example dig @8.8.8.8 example.com A and dig @1.1.1.1 example.com A, and paste both. Records are compared as sets, ignoring order and a trailing dot. Round-robin or geo DNS can differ legitimately.",
+ "howTo": [
+  "Run dig against resolver A and paste the answer in the first box.",
+  "Do the same for resolver B.",
+  "Read the verdict and the lists.",
+  "Wait for the TTL to pass and compare again."
+ ],
+ "faq": [
+  {
+   "q": "Which input formats work?",
+   "a": "Full dig answer lines (name TTL IN TYPE value), lines without TTL, and bare TYPE value lines."
+  },
+  {
+   "q": "Why do TTLs differ?",
+   "a": "A resolver that cached the record earlier shows the remaining time, so the numbers count down."
+  },
+  {
+   "q": "Does it query DNS?",
+   "a": "No. A web page cannot send DNS queries. You paste results you got elsewhere."
+  },
+  {
+   "q": "What does a difference mean?",
+   "a": "Usually propagation in progress. It can also be load-balanced or geo-aware DNS."
+  }
+ ],
+ "related": [
+  "dig-nslookup-output-analyzer",
+  "dns-resolution-simulator",
+  "whois-record-parser",
+  "dkim-record-generator",
+  "domain-migration-checklist",
+  "subdomain-list-analyzer"
+ ],
+ "keywords": [
+  "dns propagation check",
+  "compare dig output",
+  "dns diff",
+  "dns records changed"
+ ]
+}

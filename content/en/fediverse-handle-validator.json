@@ -1,0 +1,41 @@
+{
+ "id": "fediverse-handle-validator",
+ "seoTitle": "Fediverse Handle Validator and WebFinger URL Builder",
+ "metaDescription": "Check a Mastodon or fediverse handle like @user@example.social and build its profile and WebFinger URLs without contacting any server.",
+ "intro": "Check that a Mastodon or fediverse handle like @user@example.social is well formed, normalise it, and build its profile and WebFinger URLs without looking anything up.",
+ "why": "A fediverse handle has two parts, a username and a server. A typo in either points to the wrong account, or to none.\n\nPaste handles or profile URLs. The tool checks the form, normalises the host, and builds the profile URL and the WebFinger lookup URL. Nothing is contacted, so it cannot say that the account exists. Open the WebFinger link in a browser to see the server's answer.",
+ "howTo": [
+  "Paste handles or profile URLs, one per line.",
+  "Read the form check for each.",
+  "Open the WebFinger URL yourself to look up the account.",
+  "Fix invalid lines."
+ ],
+ "faq": [
+  {
+   "q": "Does it check the account exists?",
+   "a": "No. It checks the form. A browser visit to the WebFinger URL does the lookup."
+  },
+  {
+   "q": "Are usernames case sensitive?",
+   "a": "Usually not."
+  },
+  {
+   "q": "Does it work for non-Mastodon servers?",
+   "a": "The handle form is shared, but the profile URL pattern may differ."
+  }
+ ],
+ "related": [
+  "social-share-link-generator",
+  "email-validator",
+  "url-list-normalizer",
+  "ip-address-offline-lookup",
+  "whatsapp-link-generator",
+  "hashtag-formatter"
+ ],
+ "keywords": [
+  "mastodon handle validator",
+  "fediverse address checker",
+  "webfinger url",
+  "activitypub handle"
+ ]
+}

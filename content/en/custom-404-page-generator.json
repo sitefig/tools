@@ -1,0 +1,45 @@
+{
+ "id": "custom-404-page-generator",
+ "seoTitle": "404 Page Generator: Helpful Not Found Page Template",
+ "metaDescription": "Create a single-file, accessible 404.html with a message, search box and your popular links. Light and dark mode, no scripts.",
+ "intro": "Fill in your links and texts and get a complete 404.html with a search form, popular links, dark mode and visible focus styles. No scripts and no external files.",
+ "why": "A good 404 page keeps a lost visitor on your site. It says plainly what happened and offers a search and a few useful links. This template does that in a small file with no dependencies.\n\nThe page must still be served with a real 404 status code. Do not redirect missing URLs to it or to the home page, because that creates soft 404s. The generated page has noindex as a safety net, a labelled search field, a visible focus outline and colours that follow the visitor's light or dark setting.",
+ "howTo": [
+  "Add your popular links as Label | /url lines.",
+  "Set the site name, texts, search action and accent colour.",
+  "Check the preview, then save the code as 404.html.",
+  "Configure your server to serve it with status 404."
+ ],
+ "faq": [
+  {
+   "q": "How do I serve it with a 404 status?",
+   "a": "Apache: ErrorDocument 404 /404.html. Nginx: error_page 404 /404.html. Static hosts such as Netlify and Cloudflare Pages use a file named 404.html."
+  },
+  {
+   "q": "Why not redirect to the home page?",
+   "a": "Google treats that as a soft 404 and the visitor does not learn that the page is gone."
+  },
+  {
+   "q": "What if I have no search?",
+   "a": "Leave the search action empty and the form is left out."
+  },
+  {
+   "q": "Is the accent colour accessible?",
+   "a": "Check that it has enough contrast against the background. The dark mode uses a lighter colour."
+  }
+ ],
+ "related": [
+  "soft-404-detector",
+  "http-status-seo-reference",
+  "redirect-type-advisor",
+  "access-log-analyzer",
+  "crawl-error-url-grouper",
+  "html-link-generator"
+ ],
+ "keywords": [
+  "404 page template",
+  "custom 404 page",
+  "not found page html",
+  "error page generator"
+ ]
+}

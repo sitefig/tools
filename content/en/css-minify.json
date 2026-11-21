@@ -1,0 +1,47 @@
+{
+ "id": "css-minify",
+ "seoTitle": "Free CSS Minifier - Compress CSS Online",
+ "metaDescription": "Free online CSS minifier. Strip comments and whitespace from CSS without touching strings or url() values. Runs in your browser; nothing is uploaded.",
+ "intro": "Remove comments and whitespace from CSS to produce a compact stylesheet. Quoted strings and url() values, including data URIs, are left exactly as they are.",
+ "why": "Stylesheets are often the biggest render-blocking resource on a page, and the comments and indentation you wrote for yourself are of no use to the browser. Minifying is one of the cheapest ways to send fewer bytes.\n\nThe tool strips comments, collapses spaces around selectors, colons and braces, and keeps !important and the rules inside @media blocks intact. Strings and url() contents are protected, so base64 images and content values with spaces survive. It does not merge rules, shorten colours or reorder anything, which keeps the output predictable and easy to diff. For large production builds you might use your bundler, but this is ideal for a quick snippet or a single file. Nothing is uploaded.",
+ "howTo": [
+  "Paste your CSS into the input box.",
+  "Read the compact stylesheet in the output.",
+  "Copy it into your page, template or build output.",
+  "Test the page to confirm styling is unchanged."
+ ],
+ "faq": [
+  {
+   "q": "What exactly is removed?",
+   "a": "Comments and unnecessary whitespace, such as indentation, line breaks and spaces around braces, colons and commas. Rules, values and their order are not changed."
+  },
+  {
+   "q": "Will data URIs and strings survive?",
+   "a": "Yes. Anything inside quotes or url() is preserved untouched, including spaces in content values and long base64 data."
+  },
+  {
+   "q": "Does it optimise values, like shortening colours?",
+   "a": "No. It does not rewrite colours, merge duplicate rules or drop unused CSS. That keeps it safe, but bundler tools can save more."
+  },
+  {
+   "q": "How can I read the minified result again?",
+   "a": "Paste it into the CSS Formatter in this collection. It restores indentation and puts one declaration on each line, although removed comments cannot be brought back."
+  }
+ ],
+ "related": [
+  "css-format",
+  "html-minify",
+  "js-minify",
+  "gzip-compress",
+  "css-to-scss",
+  "xml-minify"
+ ],
+ "keywords": [
+  "css minifier online",
+  "minify css",
+  "compress css online",
+  "free css minify",
+  "css compressor",
+  "reduce css size"
+ ]
+}

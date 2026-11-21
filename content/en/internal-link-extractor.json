@@ -1,0 +1,46 @@
+{
+ "id": "internal-link-extractor",
+ "seoTitle": "Free Link Extractor: Internal, External and Nofollow",
+ "metaDescription": "Extract and classify links from pasted HTML as internal or external, with anchor text and rel values. Free, in-browser.",
+ "intro": "Paste HTML and a base URL to list every link as internal, external or other, with its anchor text and nofollow, ugc or sponsored status, plus warnings on weak anchors.",
+ "why": "A link audit starts with knowing what links a page contains. For internal linking you want descriptive anchors that point to the pages you care about, and for outbound links you want to know which are nofollow, which open in a new tab without rel protection and which still use http on an https site.\n\nThis extractor reads the anchor tags in the HTML you paste, resolves them against the base URL you enter or the canonical link in the page, and classifies each one. It gives counts for internal, external and other links such as mailto and tel, and warns about empty anchors, generic text like \"click here\", insecure links and internal nofollow. Nothing is fetched, so it does not check whether the targets actually work.",
+ "howTo": [
+  "Paste the page HTML into the first box.",
+  "Enter the page's base URL in the second box, or leave it to be taken from the canonical link.",
+  "Run the tool to classify the links.",
+  "Review the warnings and the link table, then improve weak anchors and attributes."
+ ],
+ "faq": [
+  {
+   "q": "How does it decide what is internal?",
+   "a": "It compares the host of each link with the base URL host, ignoring a leading www. Subdomains count as external, so check them manually if you treat them as part of the same site."
+  },
+  {
+   "q": "Does it check for broken links?",
+   "a": "No. It works only on the pasted HTML and does not request any URL. Use a crawler or a status checker to test whether targets respond."
+  },
+  {
+   "q": "Does it handle relative links?",
+   "a": "Yes. Relative links are resolved against the base URL you give. If the base is missing it tries the canonical link, and if that is also absent it asks you for one."
+  },
+  {
+   "q": "Is my HTML uploaded?",
+   "a": "No. The extraction runs in your browser and your markup stays on your device. Closing the tab discards the input, so nothing is kept on this site."
+  }
+ ],
+ "related": [
+  "sitemap-url-extractor",
+  "seo-inspector",
+  "anchor-text-distribution",
+  "canonical-generator",
+  "extract-emails-urls-numbers",
+  "url-parser"
+ ],
+ "keywords": [
+  "link extractor",
+  "extract links from html",
+  "internal external link checker",
+  "anchor text extractor",
+  "nofollow link finder"
+ ]
+}

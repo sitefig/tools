@@ -1,0 +1,43 @@
+{
+ "id": "bignumber-calculator",
+ "seoTitle": "Free Big Number Calculator with Exact Decimals",
+ "metaDescription": "Calculate with huge integers and exact decimals: powers, factorials, gcd, powmod, sqrt and more. Free arbitrary-precision calculator in your browser.",
+ "intro": "Type one expression per line and get exact results for huge integers and decimals, including powers, factorials, gcd, lcm, powmod and square roots rounded to the precision you choose.",
+ "why": "Ordinary calculators and JavaScript numbers start losing digits after about 15 significant figures. That is fine for shopping, but not for cryptography exercises, combinatorics, checksums or anything where 0.1 plus 0.2 must be exactly 0.3. People end up opening a Python shell just to compute 2 to the power of 200.\n\nThis calculator uses BigInt arithmetic, so addition, subtraction and multiplication are exact however long the numbers get. Division and square roots are rounded to a number of decimal places you set. It runs entirely in your browser, which is handy when the numbers come from a private key exercise or a financial check you would rather keep local.",
+ "howTo": [
+  "Type an expression on each line, for example 2^200 or 100!.",
+  "Use functions such as sqrt, gcd, lcm, powmod, floor, round, fact and fib where you need them.",
+  "Set the number of decimal places used for division and square roots.",
+  "Read each result line below the input, and use a hash sign at the start of a line to leave a comment."
+ ],
+ "faq": [
+  {
+   "q": "Is every operation exact?",
+   "a": "Addition, subtraction, multiplication, integer powers and factorials are exact. Division and square roots are rounded to the decimal places you choose, up to 1000, so 1/7 shows a finite number of digits."
+  },
+  {
+   "q": "Are there size limits?",
+   "a": "Yes, to keep the page responsive. Factorials are limited to 5000, exponents to 100000, and Fibonacci arguments to 100000. Larger inputs return an error instead of freezing the tab."
+  },
+  {
+   "q": "Which constants are built in?",
+   "a": "Pi and e are available with about a hundred digits, which is enough for the default precision of 40 places and well beyond. Ask for more than that many places and the result is only as precise as those stored digits."
+  }
+ ],
+ "related": [
+  "scientific-expression-calculator",
+  "bitwise-calculator",
+  "matrix-calculator",
+  "fraction-calculator",
+  "number-base-converter",
+  "percentage-calculator"
+ ],
+ "keywords": [
+  "big number calculator",
+  "arbitrary precision calculator",
+  "big integer calculator online",
+  "factorial calculator large numbers",
+  "exact decimal calculator",
+  "free bignum calculator"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "dsar-deadline-calculator",
+ "seoTitle": "DSAR Deadline Calculator: GDPR One Month and CCPA 45 Days",
+ "metaDescription": "Enter the date a data subject request arrived and get the GDPR and CCPA response deadlines with extensions. Free, local.",
+ "intro": "Calculates when to answer a data request under the GDPR (one month, plus two) and the CCPA (45 days, plus 45).",
+ "why": "Missing a deadline is the easiest way to turn a routine request into a complaint. The GDPR gives one month, which can be extended by two further months in complex cases. The CCPA gives 45 days, with one extension of up to 45 more days.\n\nEnter the date and see both. Months are counted as calendar months, so 31 January plus one month is 28 February. The tool does not move dates for weekends or public holidays, and other laws have their own rules.",
+ "howTo": [
+  "Enter the date you received the request (empty means today).",
+  "Read the standard and extended deadlines.",
+  "Tell the requester within the first period if you extend.",
+  "Note the dates in your request log."
+ ],
+ "faq": [
+  {
+   "q": "How is one month counted?",
+   "a": "Same day next month, or the last day of the month when there is no such day."
+  },
+  {
+   "q": "Does the clock start when I verify the person?",
+   "a": "Under the CCPA the clock runs from receipt, not from verification. Under the GDPR, wait for the information you need but do not delay."
+  },
+  {
+   "q": "Does it cover other laws?",
+   "a": "No. Only the GDPR and CCPA are included."
+  }
+ ],
+ "related": [
+  "dsr-response-templates",
+  "data-deletion-request-letter",
+  "breach-notification-timer",
+  "ropa-builder",
+  "privacy-law-applicability-checker",
+  "gdpr-checklist"
+ ],
+ "keywords": [
+  "dsar deadline",
+  "gdpr one month deadline",
+  "ccpa 45 days",
+  "data request deadline"
+ ]
+}

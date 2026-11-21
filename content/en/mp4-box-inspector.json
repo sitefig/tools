@@ -1,0 +1,46 @@
+{
+  "id": "mp4-box-inspector",
+  "seoTitle": "MP4 / MOV Box Inspector: Codecs, Duration, Fast Start",
+  "metaDescription": "Read the box structure of an MP4, M4A or MOV file: brands, duration, tracks, video size, codecs and whether the moov atom comes first for streaming.",
+  "intro": "Understand why a video starts slowly or what codec a file uses.",
+  "why": "The inspector walks the ISO base media boxes (ftyp, moov, trak, mdia, stbl, mdat) by reading file slices, so large videos are not loaded into memory. It reports the major brand, duration, per-track type, codec (such as avc1 H.264, hvc1 HEVC, av01, mp4a AAC), video dimensions and duration, the size of the media data and whether moov precedes mdat (\"fast start\"). Results were compared with ffprobe on test files.\n\nFragmented MP4 files keep duration in a different place, so a missing duration there is normal. For web delivery, move moov to the start: ffmpeg -i in.mp4 -c copy -movflags +faststart out.mp4.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose an MP4, M4A or MOV file.",
+    "Read the brands, tracks and codecs.",
+    "Check the fast start line.",
+    "Re-mux with faststart if needed."
+  ],
+  "faq": [
+    {
+      "q": "What is fast start?",
+      "a": "Having the index (moov) before the media data so playback can begin before the download finishes."
+    },
+    {
+      "q": "Which codec is best for browsers?",
+      "a": "H.264 with AAC plays everywhere; AV1 and HEVC support varies."
+    },
+    {
+      "q": "Does it read MKV or WebM?",
+      "a": "No, those use a different container."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "file-type-detector",
+    "gzip-inspector",
+    "video-to-gif",
+    "audio-converter",
+    "hex-dump-viewer",
+    "image-info"
+  ],
+  "keywords": [
+    "mp4 inspector",
+    "mp4 atoms",
+    "moov atom",
+    "video codec checker",
+    "faststart check"
+  ]
+}

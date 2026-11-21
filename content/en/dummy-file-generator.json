@@ -1,0 +1,45 @@
+{
+ "id": "dummy-file-generator",
+ "seoTitle": "Free Dummy File Generator: Create a File of Exact Size",
+ "metaDescription": "Create a file of an exact size for upload and limit tests: zero bytes, random bytes or repeating text, up to 256 MiB. Free, built in your browser.",
+ "intro": "Builds a file of the exact number of bytes you ask for and offers it as a download.",
+ "why": "When you test upload limits, quotas or slow connections, you need files of a precise size. Enter the size in bytes, KB, KiB, MB, MiB, GB or GiB and download it. Decimal units use 1000, binary units use 1024.\n\nZero bytes and repeating text compress to almost nothing, so choose random bytes if a server or proxy compresses uploads. The file is built in memory in your browser and is limited to 256 MiB so the tab stays responsive.",
+ "howTo": [
+  "Enter the size and unit.",
+  "Choose the content type.",
+  "Set the file name.",
+  "Download the file."
+ ],
+ "faq": [
+  {
+   "q": "Is the size exact?",
+   "a": "Yes. The file has exactly the number of bytes shown in the result."
+  },
+  {
+   "q": "Why is there a 256 MiB limit?",
+   "a": "The file is built in browser memory. Larger files could crash the tab."
+  },
+  {
+   "q": "What is the difference between MB and MiB?",
+   "a": "MB is 1,000,000 bytes and MiB is 1,048,576 bytes."
+  },
+  {
+   "q": "Is any data uploaded?",
+   "a": "No. The file is made locally."
+  }
+ ],
+ "related": [
+  "file-hash",
+  "string-length-bytes",
+  "random-secret-generator",
+  "lorem-ipsum",
+  "zip-extractor",
+  "json-size-analyzer"
+ ],
+ "keywords": [
+  "dummy file generator",
+  "create file of specific size",
+  "test file generator",
+  "fake file with size"
+ ]
+}

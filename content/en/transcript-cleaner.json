@@ -1,0 +1,46 @@
+{
+  "id": "transcript-cleaner",
+  "seoTitle": "Transcript & Subtitle Cleaner (SRT, VTT, Timestamps, Fillers)",
+  "metaDescription": "Turn SRT, WebVTT or timestamped transcripts into clean paragraphs by removing cue numbers, timestamps, tags, speaker labels and filler words.",
+  "intro": "Convert subtitle files and raw transcripts into readable text for articles, summaries or notes.",
+  "why": "The cleaner removes the WEBVTT header and NOTE blocks, cue numbers, time ranges and leading timestamps, HTML-style tags, optional speaker labels, bracketed sound cues and filler words (um, uh, er, hmm), then joins broken lines into paragraphs and fixes spacing and capitalisation. A setting groups sentences into paragraphs of a chosen length.\n\nIt only edits text: no speech recognition happens, and removing \"um\" can occasionally leave a sentence slightly unnatural, so give it a read.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the subtitle or transcript text.",
+    "Choose which clean-ups to apply.",
+    "Optionally set sentences per paragraph.",
+    "Copy the cleaned text."
+  ],
+  "faq": [
+    {
+      "q": "Does it transcribe audio?",
+      "a": "No. It cleans text you already have."
+    },
+    {
+      "q": "Which formats are handled?",
+      "a": "SRT, WebVTT and plain transcripts with timestamps like [00:01:23]."
+    },
+    {
+      "q": "Will it remove real words?",
+      "a": "Only the listed fillers; \"like\" and \"you know\" are left alone."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "subtitle-srt-vtt-converter",
+    "text-cleaner",
+    "text-summarizer",
+    "word-counter",
+    "duplicate-words-finder",
+    "remove-empty-lines-trim"
+  ],
+  "keywords": [
+    "srt to text",
+    "vtt to text",
+    "subtitle cleaner",
+    "transcript cleaner",
+    "remove timestamps"
+  ]
+}

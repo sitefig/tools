@@ -1,0 +1,47 @@
+{
+ "id": "epoch-batch",
+ "seoTitle": "Free Batch Epoch Converter for Many Timestamps",
+ "metaDescription": "Convert many Unix timestamps to ISO dates, or many dates to timestamps, one per line. Errors are reported per line. Free and runs in your browser.",
+ "intro": "Paste a list of timestamps or dates, one per line, and convert all of them in one go. Numbers become ISO dates and dates become seconds or milliseconds.",
+ "why": "A log excerpt or a database export may hold hundreds of epoch values. Converting them one at a time in a single-value converter is painful, and writing a throwaway script for every incident is no better.\n\nThis tool processes a whole list at once. Each numeric line becomes an ISO 8601 UTC date, and each date line becomes a Unix timestamp in seconds, or in milliseconds if you tick the option. A line that cannot be parsed gets its own error message, but the other lines still convert. That makes it easy to spot the odd row in a long list. Processing is local.",
+ "howTo": [
+  "Paste your values, one per line: epoch numbers, ISO dates or other date strings.",
+  "Leave the numeric unit on auto, or choose seconds or milliseconds.",
+  "Tick \"Dates to milliseconds\" if you want dates converted to milliseconds instead of seconds.",
+  "Copy the converted lines."
+ ],
+ "faq": [
+  {
+   "q": "How does it decide between converting to a date or to a number?",
+   "a": "Lines that are purely numeric are treated as timestamps and shown as ISO dates. Any other line is parsed as a date and shown as a timestamp."
+  },
+  {
+   "q": "What happens when a line is invalid?",
+   "a": "That line shows ERROR with the reason, and the remaining lines are converted normally. Your output keeps the same order as your input, so you can find the bad row."
+  },
+  {
+   "q": "Are results in UTC?",
+   "a": "Timestamps are converted to ISO 8601 in UTC, ending in Z. A date string without a zone is read in your local time before it is turned into a timestamp, so add Z or an offset for exact results."
+  },
+  {
+   "q": "How does it tell seconds from milliseconds?",
+   "a": "On auto, by size: roughly 10-digit values are seconds and 13-digit values are milliseconds. If your data mixes units unusually, set the unit explicitly."
+  }
+ ],
+ "related": [
+  "timestamp-converter",
+  "date-formats",
+  "timezone-converter",
+  "date-difference",
+  "time-duration-calculator",
+  "sort-lines"
+ ],
+ "keywords": [
+  "batch epoch converter",
+  "convert multiple timestamps",
+  "bulk unix time to date",
+  "free epoch list converter",
+  "timestamps to iso dates",
+  "log timestamp converter"
+ ]
+}

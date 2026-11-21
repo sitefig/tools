@@ -1,0 +1,39 @@
+{
+ "id": "moon-phase-calculator",
+ "seoTitle": "Moon Phase Calculator: Phase, Illumination, Next Full Moon",
+ "metaDescription": "Find the moon phase for any date, percent lit, and the next new and full moons, plus a month table. Free, offline.",
+ "intro": "Gives moon phase name, illumination, age and the next full and new moons for a date, and a day-by-day table for the month.",
+ "why": "Look up the phase for a birthday, a photo shoot or a garden plan. New and full moon times use the main terms of Meeus's method.\n\nChecked against the ephem library: moon event times within 2 minutes on three cases, illumination within about 5 points. Dates are UTC and the local date may differ.",
+ "howTo": [
+  "Pick a date.",
+  "Tick Show every day of the month if you want the table.",
+  "Read the phase, illumination and next moons."
+ ],
+ "faq": [
+  {
+   "q": "How accurate are the times?",
+   "a": "Within a few minutes of the ephem library in my checks."
+  },
+  {
+   "q": "Is the illumination exact?",
+   "a": "No, within about 5 percentage points."
+  },
+  {
+   "q": "Which time zone?",
+   "a": "UTC, evaluated at noon UTC for the date."
+  }
+ ],
+ "related": [
+  "sunrise-sunset-calculator",
+  "chinese-zodiac-finder",
+  "dst-clock-change-finder",
+  "day-of-week",
+  "printable-calendar",
+  "week-number"
+ ],
+ "keywords": [
+  "moon phase calculator",
+  "next full moon",
+  "moon illumination"
+ ]
+}

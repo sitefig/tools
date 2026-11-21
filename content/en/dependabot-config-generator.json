@@ -1,0 +1,47 @@
+{
+ "id": "dependabot-config-generator",
+ "seoTitle": "Free Dependabot Config Generator (dependabot.yml)",
+ "metaDescription": "Free online dependabot.yml generator. List ecosystems and directories, set the schedule, pull request limit and grouping, and copy the YAML.",
+ "intro": "Generate a .github/dependabot.yml from simple lines like npm / or pip /backend. Set the update interval, day, open pull request limit, minor and patch grouping and a commit message prefix.",
+ "why": "Dependabot is built into GitHub, but its configuration file is required before it does anything, and the package ecosystem names are not always what you expect: github-actions, gomod, pip, npm, docker. A typo means no updates for that ecosystem and no obvious error.\n\nWrite one ecosystem and directory per line, choose weekly, daily or monthly updates, and the tool writes a complete version 2 file with the schedule, a pull request limit and, if you want it, a group that combines minor and patch updates into one pull request. Unknown ecosystems are rejected with the list of known names. Monorepos need one entry per directory, which this format makes easy. Nothing is uploaded; the file is generated in your browser.",
+ "howTo": [
+  "List each ecosystem and directory on its own line, such as npm / or pip /backend.",
+  "Choose the interval and the day for weekly updates.",
+  "Set the pull request limit, grouping and an optional commit message prefix.",
+  "Save the output as .github/dependabot.yml and commit it."
+ ],
+ "faq": [
+  {
+   "q": "Which ecosystem names are accepted?",
+   "a": "Common ones such as npm, pip, docker, github-actions, gomod, cargo, maven, gradle, composer, nuget, bundler, terraform and helm. An unknown name returns an error that lists the valid choices."
+  },
+  {
+   "q": "What does grouping change?",
+   "a": "Minor and patch updates for an ecosystem are combined into a single pull request instead of one per package. Major updates remain separate."
+  },
+  {
+   "q": "Where do I save the file?",
+   "a": "At .github/dependabot.yml in your default branch. Dependabot reads it from there and starts opening pull requests on the schedule."
+  },
+  {
+   "q": "Do I need an entry for each folder?",
+   "a": "Yes. Dependabot checks the directory you list. In a monorepo add a line for each folder that has its own manifest, such as /frontend and /backend."
+  }
+ ],
+ "related": [
+  "renovate-config-generator",
+  "github-actions-generator",
+  "github-actions-matrix-builder",
+  "pre-commit-config-generator",
+  "package-json-license-checker",
+  "yaml-format"
+ ],
+ "keywords": [
+  "dependabot config generator",
+  "dependabot.yml generator",
+  "dependabot yaml builder",
+  "free dependabot tool",
+  "dependabot grouping config",
+  "github dependabot setup"
+ ]
+}

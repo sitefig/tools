@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-template-library",
+ "seoTitle": "robots.txt Templates for WordPress, Shopify and Magento",
+ "metaDescription": "Starting-point robots.txt files for WordPress, WooCommerce, Shopify, Magento, static sites, staging and AI-crawler opt-out. Free, copy and edit.",
+ "intro": "Pick a platform and get a sensible starting robots.txt with comments explaining why.",
+ "why": "Most sites need the same few rules: keep admin, cart, internal search and parameter URLs out of the crawl, and point to the sitemap. Starting from a template is faster than from a blank file.\n\nThese templates are generic starting points, not vendor defaults (Shopify, for example, generates its own file). Edit them, then validate and test before publishing.",
+ "howTo": [
+  "Choose a template.",
+  "Add your sitemap URL.",
+  "Copy the result and adapt paths to your site.",
+  "Validate and test the file."
+ ],
+ "faq": [
+  {
+   "q": "Are these the platforms' official files?",
+   "a": "No. They are common practice. WordPress and Shopify generate their own files, and the notes say so."
+  },
+  {
+   "q": "Will the staging template remove my pages from Google?",
+   "a": "No. Blocking crawling does not remove indexed URLs; use noindex or a password."
+  },
+  {
+   "q": "Should I block AI crawlers?",
+   "a": "That is your choice. The AI template covers common training crawlers; see the directory for details."
+  },
+  {
+   "q": "Do I need robots.txt at all?",
+   "a": "No, but a missing file returns a 404 on every request, and a simple file avoids that."
+  }
+ ],
+ "related": [
+  "robots-generator",
+  "robots-txt-validator",
+  "robots-tester",
+  "ai-bot-robots-builder",
+  "seo-robots-noindex-simulator"
+ ],
+ "keywords": [
+  "robots.txt template",
+  "wordpress robots.txt",
+  "shopify robots.txt",
+  "magento robots.txt"
+ ]
+}

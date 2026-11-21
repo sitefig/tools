@@ -1,0 +1,41 @@
+{
+ "id": "content-pillar-planner",
+ "seoTitle": "Content Pillar Planner: Post Mix Against Target Ratios",
+ "metaDescription": "Define content pillars with target percentages, paste your planned posts and see the gap per pillar and what to add. Free, private.",
+ "intro": "Define content pillars with target percentages, paste your planned posts and see the gap per pillar and how many posts to add to hit the mix.",
+ "why": "A feed made only of promotion loses readers, and one with none loses the business. A pillar plan sets the mix on purpose, for example 40 percent education and 25 percent product.\n\nList your pillars with targets and paste your planned posts as pillar and title. The tool compares the actual mix with the target, tells you how many posts to add to each pillar for the plan size you choose, and flags posts with an unknown pillar. Targets are scaled if they do not add to 100.",
+ "howTo": [
+  "List pillars as Name | percent.",
+  "Paste planned posts as Pillar | Title.",
+  "Set the total number of posts you want.",
+  "Add posts where the table says add."
+ ],
+ "faq": [
+  {
+   "q": "What if my targets do not add to 100?",
+   "a": "They are scaled to 100 and the tool says so."
+  },
+  {
+   "q": "What about a pillar I did not list?",
+   "a": "It is flagged and counted in the total."
+  },
+  {
+   "q": "Why can the total be off by one?",
+   "a": "Targets are rounded to whole posts."
+  }
+ ],
+ "related": [
+  "social-post-planner",
+  "content-calendar-generator",
+  "topic-cluster-planner",
+  "social-post-length-checker",
+  "keyword-clusterer",
+  "random-line-picker"
+ ],
+ "keywords": [
+  "content pillar planner",
+  "content mix planner",
+  "social media content pillars",
+  "post ratio planner"
+ ]
+}

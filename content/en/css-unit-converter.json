@@ -1,0 +1,46 @@
+{
+  "id": "css-unit-converter",
+  "seoTitle": "Free CSS Unit Converter: px, rem, em, pt, vw, vh",
+  "metaDescription": "Convert px, rem, em, pt, pc, cm, mm, in, vw, vh, vmin and vmax with your own root size and viewport. Free, runs in your browser.",
+  "intro": "Converts CSS lengths between px, rem, em, pt, pc, cm, mm, in, vw, vh, vmin and vmax. You set the root and parent font sizes and the viewport size used for relative units.",
+  "why": "A designer hands over sizes in points, a spec is in rem, and the layout is in pixels. Converting between them by hand is easy to get wrong because relative units depend on context: a rem depends on the root font size, an em on the parent, and vw and vh on the viewport.\n\nEnter one value per line with its unit, or a bare number that uses your default unit. The tool converts it to every other unit using the root font size, the parent font size and the viewport width and height you set, so the output matches your actual setup rather than a textbook default of 16 pixels. Absolute units follow CSS reference definitions of 96 pixels to an inch. It is all computed in your browser.",
+  "howTo": [
+    "Enter values one per line, such as 24px or 1.5rem.",
+    "Pick the default unit for numbers without one.",
+    "Set the root font size, parent font size and viewport size.",
+    "Read the converted values for every unit."
+  ],
+  "faq": [
+    {
+      "q": "What is the difference between rem and em here?",
+      "a": "Rem is converted using the root font size you enter, em using the parent font size. Both default to 16 pixels. If your page changes either, set them to get matching results."
+    },
+    {
+      "q": "How are physical units defined?",
+      "a": "CSS fixes one inch at 96 pixels, so a point is 96/72 pixels and a centimetre is 96/2.54 pixels. A real screen or printer may show them at a different physical size."
+    },
+    {
+      "q": "What are vmin and vmax?",
+      "a": "They are one percent of the smaller or larger side of the viewport. They are calculated from the width and height you enter, which default to 1920 by 1080 pixels."
+    },
+    {
+      "q": "Why do I see an error for a value?",
+      "a": "The line must be a number optionally followed by a known unit. Something like \"12 pixels\" or \"auto\" cannot be converted. The message names the line it could not read."
+    }
+  ],
+  "related": [
+    "px-to-rem-converter",
+    "css-clamp-calculator",
+    "css-clamp-generator",
+    "tailwind-spacing-generator",
+    "screen-size-ppi",
+    "unit-converter"
+  ],
+  "keywords": [
+    "css unit converter",
+    "px to rem converter",
+    "rem to px",
+    "pt to px converter",
+    "free css units calculator"
+  ]
+}

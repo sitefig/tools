@@ -1,0 +1,44 @@
+{
+ "id": "accessible-palette-generator",
+ "seoTitle": "Accessible Palette Generator: Shades with Guaranteed Text Contrast",
+ "metaDescription": "Enter a brand colour and get a shade ramp with white and black text contrast per step, pairs that reach your WCAG target and CSS variables.",
+ "intro": "Builds a shade ramp from a brand colour and shows which text colours and step pairs meet a contrast target.",
+ "why": "Palettes made by eye often have text pairs that fail contrast.\n\nThis tool produces eleven steps from one brand colour, calculates the WCAG contrast of each with white and black, picks the best text colour, and lists which pairs inside the ramp reach 3, 4.5 or 7 to 1. It also suggests a darker brand variant for text on white if the brand colour is too light.",
+ "howTo": [
+  "Enter your brand colour.",
+  "Choose the contrast target.",
+  "Read the table and the safe pairs.",
+  "Copy the CSS variables."
+ ],
+ "faq": [
+  {
+   "q": "Which ratio should I pick?",
+   "a": "4.5 for normal text at AA, 3 for large text and UI parts, 7 for AAA."
+  },
+  {
+   "q": "Is the formula the WCAG one?",
+   "a": "Yes, the WCAG 2 relative luminance contrast ratio."
+  },
+  {
+   "q": "What about APCA?",
+   "a": "Use the Contrast Checker for APCA values."
+  },
+  {
+   "q": "Is the colour sent anywhere?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "contrast-checker",
+  "palette-contrast-matrix",
+  "palette-generator",
+  "color-blindness-simulator",
+  "tailwind-v4-color-palette",
+  "focus-indicator-contrast-checker"
+ ],
+ "keywords": [
+  "accessible palette generator",
+  "wcag color palette",
+  "brand color shades contrast"
+ ]
+}

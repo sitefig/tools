@@ -1,0 +1,45 @@
+{
+ "id": "bencode-decoder",
+ "seoTitle": "Bencode Decoder and .torrent File Viewer",
+ "metaDescription": "Decode bencode text or open a .torrent file to see trackers, files, size, piece count and the info hash. Nothing is uploaded.",
+ "intro": "Parses bencoded data into a readable tree and summarises torrent files, including the info hash and magnet link.",
+ "why": "Bencode is the format of .torrent files and some tracker replies. It has integers, byte strings, lists and dictionaries and is hard to read by eye.\n\nThe tool decodes pasted text or a file, shows strings as text when they are valid UTF-8 and as hex otherwise, and replaces the long pieces field by a count. For torrents it also lists the files and computes the SHA-1 info hash from the info dictionary exactly as stored.",
+ "howTo": [
+  "Paste bencode text, or choose a .torrent file.",
+  "Read the summary at the top for torrents.",
+  "Scroll the tree for all fields.",
+  "Copy the magnet link if you need it."
+ ],
+ "faq": [
+  {
+   "q": "Is the info hash correct?",
+   "a": "It is the SHA-1 of the stored info bytes, which is how version 1 torrents are identified."
+  },
+  {
+   "q": "Does it download anything?",
+   "a": "No. It only reads the file you give it."
+  },
+  {
+   "q": "Why do I see hex for some strings?",
+   "a": "They are binary, such as hashes."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "msgpack-cbor-decoder",
+  "hex-dump-viewer",
+  "protobuf-raw-decoder",
+  "json-tree",
+  "bson-hex-converter",
+  "asn1-der-decoder"
+ ],
+ "keywords": [
+  "bencode decoder",
+  "torrent file viewer online",
+  "torrent info hash calculator",
+  "decode .torrent"
+ ]
+}

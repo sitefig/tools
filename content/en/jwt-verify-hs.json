@@ -1,0 +1,47 @@
+{
+ "id": "jwt-verify-hs",
+ "seoTitle": "Free JWT Verifier for HS256, HS384 and HS512",
+ "metaDescription": "Check a JWT signature against a shared secret and see whether exp or nbf make the token invalid. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Paste a JWT and its secret to find out whether the signature is valid. The tool also checks the exp and nbf claims and lists all token times.",
+ "why": "The classic debugging question is \"is my secret wrong, or is the token wrong?\". A 401 gives no detail. Verifying the signature by hand means recomputing an HMAC over the first two parts and comparing it with the third, which is tedious and easy to get slightly wrong.\n\nThis verifier does exactly that. It reads the algorithm from the header, recomputes the signature with your secret, compares it in a way that looks at every character, and reports valid or invalid. It also flags an expired or not-yet-valid token. It runs in your browser, so the secret is not uploaded. Use test secrets when you can.",
+ "howTo": [
+  "Paste the JWT into the first box.",
+  "Enter the shared secret in the second box.",
+  "Run the check and read the verdict: valid or invalid signature.",
+  "Review the notes on expiry and not-before, and the list of token times."
+ ],
+ "faq": [
+  {
+   "q": "Which algorithms can it verify?",
+   "a": "HS256, HS384 and HS512 only. A token declaring \"none\" is never accepted, and RS256, ES256 and other asymmetric algorithms are reported as unsupported, since they require a public key."
+  },
+  {
+   "q": "What does an invalid signature mean?",
+   "a": "Either the secret is wrong, or the token was changed after signing, or it was signed with a different algorithm or key. Check for whitespace around the secret and whether the secret is Base64 encoded in your system."
+  },
+  {
+   "q": "Does a valid signature mean I should trust the token?",
+   "a": "It means the token was signed with that secret and not altered. Your server must also check the issuer, audience and expiry. This page checks exp and nbf only."
+  },
+  {
+   "q": "Is it safe to enter my secret?",
+   "a": "The check runs in your browser and nothing is sent anywhere. Still, treat real signing secrets carefully, use test values while debugging, and rotate any secret you pasted into an untrusted page."
+  }
+ ],
+ "related": [
+  "jwt-decode",
+  "jwt-signature-validator",
+  "jwt-encode",
+  "hmac-generator",
+  "jwt-expiry-calculator",
+  "webhook-signature-verifier"
+ ],
+ "keywords": [
+  "jwt verifier",
+  "verify jwt signature online",
+  "jwt hs256 validator",
+  "free jwt checker",
+  "check jwt secret",
+  "jwt signature debug"
+ ]
+}

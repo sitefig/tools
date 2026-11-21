@@ -1,0 +1,45 @@
+{
+ "id": "nginx-formatter",
+ "seoTitle": "Free nginx Config Formatter and Beautifier",
+ "metaDescription": "Re-indent nginx.conf by brace depth, put one directive per line and tidy blank lines. Free, in your browser; comments and values are never changed.",
+ "intro": "Paste an nginx configuration and get it re-indented by nesting depth, with each directive on its own line and extra blank lines collapsed.",
+ "why": "Configs inherited from older servers are often a mix of tabs, spaces and one-line blocks like location /static/ { root /var/www; }. That makes a diff noisy and a missing brace easy to miss. A consistent layout makes review simpler and shows at a glance which block a directive belongs to.\n\nThis formatter places each directive and brace on its own line, indents by depth using 2 spaces, 4 spaces or tabs, and leaves comments and quoted strings alone. It works on the text only, so your config is not sent anywhere and nothing is validated against a real nginx binary.",
+ "howTo": [
+  "Paste your nginx.conf or a single server block into the input.",
+  "Choose an indent of 4 spaces, 2 spaces or a tab.",
+  "Copy the formatted configuration back into your file."
+ ],
+ "faq": [
+  {
+   "q": "Does it change any values or comments?",
+   "a": "No. Only whitespace and line breaks change. Comments, quoted strings and directive values are copied as they are, apart from runs of spaces outside quotes being collapsed to one."
+  },
+  {
+   "q": "Does it check that my config is valid?",
+   "a": "No. It is a formatter, not a validator. Run nginx -t on the result to confirm that the syntax and the directives are correct for your build."
+  },
+  {
+   "q": "Why did a regex with braces confuse it?",
+   "a": "The depth counter counts braces, so an unquoted pattern like {2,3} can throw it off. Put such patterns in quotes, which nginx accepts, and format again."
+  },
+  {
+   "q": "Can it handle include files?",
+   "a": "It formats only the text you paste. Include lines are left as they are, so format each included file separately."
+  }
+ ],
+ "related": [
+  "nginx-config-generator",
+  "nginx-to-caddy-converter",
+  "caddy-to-nginx",
+  "nginx-security-conf-generator",
+  "apache-conf-formatter",
+  "nginx-rate-limit-calculator"
+ ],
+ "keywords": [
+  "nginx config formatter",
+  "nginx beautifier",
+  "format nginx.conf online",
+  "free nginx indent tool",
+  "nginx conf pretty print"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "ndjson-viewer",
+ "seoTitle": "NDJSON Viewer: JSON Lines as a Sortable Table | Free",
+ "metaDescription": "View NDJSON and JSON Lines as a table, sort by a column, flatten nested keys and export CSV. Bad lines are reported. Runs in your browser.",
+ "intro": "Turns newline-delimited JSON into a table with one column per key, optional sorting, and CSV or TSV output.",
+ "why": "Logs and API exports are often one JSON object per line. They are hard to read as raw text and not every line has the same keys.\n\nThis page builds the union of all keys as columns, flattens nested objects with dot paths (arrays use index numbers), and sorts by any column, numbers as numbers. A line that is not valid JSON is skipped and reported with its line number. The table is text, so it is not clickable; use the sort option and re-run.",
+ "howTo": [
+  "Paste the NDJSON lines.",
+  "Optionally list the columns to show and a column to sort by.",
+  "Choose table, CSV or TSV output.",
+  "Read the result or copy it."
+ ],
+ "faq": [
+  {
+   "q": "How are nested values shown?",
+   "a": "As dot paths such as user.name. Array items use numbers, such as tags.0."
+  },
+  {
+   "q": "What happens to invalid lines?",
+   "a": "In table view they are listed below the table. CSV and TSV output stops with an error so nothing is lost silently."
+  },
+  {
+   "q": "Can I click a header to sort?",
+   "a": "No. Type the column name in the sort box instead."
+  },
+  {
+   "q": "Is the data sent anywhere?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "json-lines-tools",
+  "jsonl-dataset-validator",
+  "json-to-csv",
+  "csv-viewer",
+  "json-tree",
+  "json-format"
+ ],
+ "keywords": [
+  "ndjson viewer",
+  "jsonl to table",
+  "json lines viewer",
+  "ndjson to csv"
+ ]
+}

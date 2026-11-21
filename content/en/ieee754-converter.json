@@ -1,0 +1,45 @@
+{
+ "id": "ieee754-converter",
+ "seoTitle": "Free IEEE 754 Float to Hex and Binary Converter",
+ "metaDescription": "Convert numbers to 32-bit and 64-bit IEEE 754 hex and bits, with sign, exponent and mantissa, or decode a hex pattern. Free, in your browser.",
+ "intro": "Enter a number to see its 32-bit and 64-bit IEEE 754 representation in hex and binary, split into sign, exponent and mantissa, or decode a hex pattern.",
+ "why": "Floating-point numbers store a sign, an exponent and a fraction, which is why 0.1 cannot be held exactly and why 0.1 plus 0.2 is not 0.3. Seeing the actual bits explains many surprises: rounding in a financial report, NaN handling in a network protocol, or a value that shows up as 0x3f800000 in a memory dump.\n\nType one value per line, such as 0.1, -118.625, NaN or 1e300. The tool prints the float32 and float64 hex, the bit groups and the stored value after rounding to single precision. Paste 0x40490fdb to decode it as a float32, or a longer pattern as float64.",
+ "howTo": [
+  "Enter one number or hex pattern per line, such as 0.1 or 0x40490fdb.",
+  "Read the hex and the sign, exponent and mantissa bits for 32 and 64 bits.",
+  "Copy the values you need."
+ ],
+ "faq": [
+  {
+   "q": "How does it decide between 32 and 64-bit hex input?",
+   "a": "Up to eight hex digits are read as a 32-bit float and up to sixteen digits as a 64-bit double. Longer patterns are rejected."
+  },
+  {
+   "q": "Why does the stored 32-bit value differ from my number?",
+   "a": "Single precision has only about seven significant decimal digits, so the nearest representable value is shown. 0.1 becomes roughly 0.10000000149."
+  },
+  {
+   "q": "Does it show half precision or bfloat16?",
+   "a": "No. Only the 32-bit and 64-bit formats are supported, because those cover most programming languages, databases and memory dumps. Half precision and bfloat16 are not included."
+  },
+  {
+   "q": "Which special values work?",
+   "a": "NaN, Infinity and -Infinity are accepted, as are numbers in exponent form like 1e300. Zero shows the sign bit, so negative zero can be told apart from zero."
+  }
+ ],
+ "related": [
+  "number-base-converter",
+  "bitwise-calculator",
+  "bcd-converter",
+  "hex-dump-viewer",
+  "bignumber-calculator",
+  "binary-text"
+ ],
+ "keywords": [
+  "ieee 754 converter",
+  "float to hex converter",
+  "ieee754 binary representation",
+  "free floating point visualizer",
+  "32-bit float to binary"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "docker-compose-generator",
+ "seoTitle": "Free Docker Compose Generator for Common Services",
+ "metaDescription": "Pick services such as Postgres, Redis, MongoDB, Nginx or RabbitMQ and get a docker-compose.yml with ports, volumes and env. Free, in your browser.",
+ "intro": "List the services you need, like postgres, redis and nginx, and get a docker-compose.yml with images, ports, environment variables and named volumes.",
+ "why": "Spinning up a local database, cache or message broker is one of the most common reasons to write a Compose file, and the details are easy to forget: which environment variables Postgres needs, where MongoDB keeps its data, which two ports RabbitMQ exposes. Searching documentation each time slows you down.\n\nThis tool reads a list of service names and writes a complete services block, with restart policy, port mappings and a named volume for data where one makes sense. It supports postgres, mysql, mariadb, redis, mongo, nginx, rabbitmq, memcached, elasticsearch, minio and mailhog. Passwords are placeholders marked change-me, so replace them before use. The file is meant for development, and it is generated in your browser.",
+ "howTo": [
+  "Type service names, one per line or separated by commas, such as postgres, redis, nginx.",
+  "Run the tool to generate the Compose file.",
+  "Replace every change-me password and adjust ports or image tags.",
+  "Save it as docker-compose.yml and start it with docker compose up."
+ ],
+ "faq": [
+  {
+   "q": "Which services can I choose?",
+   "a": "postgres, mysql, mariadb, redis, mongo, nginx, rabbitmq, memcached, elasticsearch, minio and mailhog. An unknown name stops the run and the error lists every supported service."
+  },
+  {
+   "q": "Are the passwords safe to use?",
+   "a": "No. They are placeholders such as change-me. Replace them, and keep real secrets in an env file or a secrets manager rather than in a file you commit to version control."
+  },
+  {
+   "q": "Does it add a version field or networks?",
+   "a": "No version key is written, since current Compose ignores it. Services share the default network that Compose creates, so they can reach each other by service name."
+  },
+  {
+   "q": "Why is Elasticsearch security off?",
+   "a": "The elasticsearch entry runs a single node with security disabled to make local work easy. Never expose that configuration to a public network or use it in production."
+  }
+ ],
+ "related": [
+  "docker-compose-formatter",
+  "docker-run-to-compose",
+  "docker-compose-to-k8s",
+  "dockerfile-generator",
+  "docker-compose-env-generator",
+  "postgres-connection-builder"
+ ],
+ "keywords": [
+  "docker compose generator",
+  "docker-compose.yml generator",
+  "compose file postgres redis",
+  "docker compose template online",
+  "free docker compose builder"
+ ]
+}

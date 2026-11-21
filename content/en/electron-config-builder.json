@@ -1,0 +1,43 @@
+{
+ "id": "electron-config-builder",
+ "seoTitle": "Free Electron Config Builder with Secure Defaults",
+ "metaDescription": "Generate a secure Electron starter: main.js, preload.js and package.json with electron-builder settings. Free and runs in your browser.",
+ "intro": "Fill in the app name, ID and window size and get a main.js, preload.js and package.json for Electron with context isolation, sandboxing and a Content-Security-Policy already switched on.",
+ "why": "Most insecure Electron apps started from a tutorial that enabled nodeIntegration to make the first demo work. The safer settings are well known, but they are spread across the BrowserWindow options, the session headers, the navigation handlers and the preload script, so it is easy to forget one.\n\nThis builder gives you a starting point where context isolation and the sandbox are on, node integration is off, navigation and new windows are blocked, and the preload exposes only a narrow bridge. It also writes an electron-builder block for macOS, Windows and Linux. It is generated in your browser, so your app ID and URLs stay on your machine.",
+ "howTo": [
+  "Enter the product name, app ID and the start file or URL.",
+  "Set the window width and height, and tick single instance or hide menu if needed.",
+  "Adjust the Content-Security-Policy and choose the build targets for macOS, Windows or Linux.",
+  "Copy the three sections into main.js, preload.js and package.json, then run npm install."
+ ],
+ "faq": [
+  {
+   "q": "Is the generated app guaranteed to be secure?",
+   "a": "No. It applies sensible defaults, but your own code can still add risks. Review the CSP against what your pages load, keep the preload bridge small and validate every IPC message in the main process."
+  },
+  {
+   "q": "Can I load a remote URL as the start page?",
+   "a": "Yes. If the start value begins with http or https, the window loads that address, otherwise it loads the local file. Remote content deserves a strict CSP and careful navigation rules."
+  },
+  {
+   "q": "Which Electron versions does it assume?",
+   "a": "The package.json pins recent major versions of electron and electron-builder as caret ranges. Update them to the versions you actually use and check the Electron release notes for breaking changes."
+  }
+ ],
+ "related": [
+  "capacitor-config-builder",
+  "package-json-generator",
+  "csp-builder",
+  "csp-analyzer",
+  "security-headers-generator",
+  "universal-links-validator"
+ ],
+ "keywords": [
+  "electron config builder",
+  "electron secure defaults",
+  "electron main.js generator",
+  "electron-builder config",
+  "electron contextisolation preload",
+  "free electron starter"
+ ]
+}

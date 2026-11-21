@@ -1,0 +1,45 @@
+{
+ "id": "video-reverser",
+ "seoTitle": "Video Reverser: Play a Short Clip Backwards Online",
+ "metaDescription": "Reverse a short video clip in your browser and download it. Audio is not included. No upload.",
+ "intro": "Plays a short clip backwards. Frames are read at fixed steps, stored, and recorded in reverse order.",
+ "why": "Reverse playback is not possible in a browser, so the tool seeks to each frame, keeps it in memory and then plays the list backwards. That limits the clip to 15 seconds and a modest width.\n\nAudio is left out. It records in real time, so a 60 second clip takes about a minute and the tab must stay visible.",
+ "howTo": [
+  "Choose the video and set start and end.",
+  "Set the frame rate and width.",
+  "Process: first it reads the frames, then it records them.",
+  "Download the reversed clip."
+ ],
+ "faq": [
+  {
+   "q": "Why 15 seconds at most?",
+   "a": "Every frame is stored in memory."
+  },
+  {
+   "q": "Why no audio?",
+   "a": "Reversed speech is rarely wanted, and reversing audio in real time is not available in the browser."
+  },
+  {
+   "q": "Can the frames be smoother?",
+   "a": "Raise the frame rate, within the memory limit."
+  },
+  {
+   "q": "Is it exact?",
+   "a": "Frames are taken at even steps, so very fast motion may skip."
+  }
+ ],
+ "related": [
+  "video-looper",
+  "video-speed-changer",
+  "video-trimmer",
+  "video-to-gif",
+  "video-frame-grabber",
+  "video-rotator"
+ ],
+ "keywords": [
+  "reverse video online",
+  "play video backwards",
+  "video reverser no upload",
+  "rewind video effect"
+ ]
+}

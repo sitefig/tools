@@ -1,0 +1,43 @@
+{
+ "id": "llm-context-window-shrinker",
+ "seoTitle": "Free Text Shrinker to Fit an LLM Token Budget",
+ "metaDescription": "Cut text to fit a token budget: keep the head, tail or both ends, drop duplicate lines or keep the best sentences. Free, in your browser.",
+ "intro": "Paste long text and a token budget, and shrink it to fit by keeping the head, the tail or both ends, removing duplicate lines, or keeping the most informative sentences in their original order.",
+ "why": "A long log, transcript or document will not always fit the context window, and cost grows with every token. Pasting it in and hoping the model copes can mean a truncated prompt, an error or a large bill. Trimming it by hand takes time and tends to remove the wrong part.\n\nThis tool offers several simple strategies. Keeping the head or tail suits logs, where the start or end matters. Keeping both ends preserves the opening and conclusion. Removing duplicate lines cleans repeated output. The extractive mode scores sentences by word frequency and keeps the best ones in order. Token counts are estimates from characters and a ratio, not a real tokenizer, so leave some margin. The text is processed in your browser.",
+ "howTo": [
+  "Paste the text you want to shorten.",
+  "Set the token budget and the characters-per-token ratio.",
+  "Choose a mode: keep head, keep tail, keep both ends, drop duplicate lines or keep the best sentences.",
+  "Copy the shortened text and check that the important parts survived."
+ ],
+ "faq": [
+  {
+   "q": "How accurate is the token count?",
+   "a": "It divides the character count by a ratio you can change, about 4 for English. Real tokenizers differ by model and language, so leave a safety margin or confirm with a tokenizer tool for your model."
+  },
+  {
+   "q": "What does the sentence mode do?",
+   "a": "It scores sentences by how frequent their words are across the text and keeps the highest-scoring ones, in original order. It is a simple extractive summary and does not rewrite anything."
+  },
+  {
+   "q": "Will it lose important details?",
+   "a": "Any cut can. Head and tail modes drop the middle, and sentence mode drops lower-scoring text. Always review the result, especially for legal, medical or technical content where details matter."
+  }
+ ],
+ "related": [
+  "token-truncate",
+  "text-chunk-splitter",
+  "gpt-token-counter",
+  "llm-token-estimator",
+  "rag-chunking-visualizer",
+  "dedupe-lines"
+ ],
+ "keywords": [
+  "llm context window shrinker",
+  "reduce text to token limit",
+  "trim text for chatgpt",
+  "shorten prompt to fit context",
+  "token budget text trimmer",
+  "free text summarizer for prompts"
+ ]
+}

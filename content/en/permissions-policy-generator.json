@@ -1,0 +1,41 @@
+{
+ "id": "permissions-policy-generator",
+ "seoTitle": "Permissions-Policy Header Generator for Browser Features",
+ "metaDescription": "Build a Permissions-Policy header that disables unused browser features and allows others for self or named origins. Checks names against MDN.",
+ "intro": "Writes a Permissions-Policy header from the features you want to disable and allow, with nginx and Apache lines.",
+ "why": "A Permissions-Policy header lets your page and its iframes use only the browser features you allow. Switching off camera, microphone, geolocation and similar features you do not need limits the damage if a script or an embed misbehaves.\n\nList the features to disable and, if needed, the ones to allow for your own origin or named origins. The tool checks names against the directive list on MDN as read on 23 October 2026 and warns about names it does not know. Browser support differs by feature.",
+ "howTo": [
+  "List features to disable, one per line.",
+  "Add allowed features as feature = self https://origin.",
+  "Copy the header or the server line.",
+  "Test your pages to see nothing needed was blocked."
+ ],
+ "faq": [
+  {
+   "q": "What does () mean?",
+   "a": "No origin may use the feature, including your own page."
+  },
+  {
+   "q": "Does it replace Feature-Policy?",
+   "a": "Yes. Feature-Policy is the old name and is obsolete."
+  },
+  {
+   "q": "Why do I see an unknown name warning?",
+   "a": "The name is not in the MDN list read on 23 October 2026. It may be new, experimental or a typo."
+  }
+ ],
+ "related": [
+  "security-headers-grader",
+  "security-headers-generator",
+  "hsts-header-generator",
+  "referrer-policy-explainer",
+  "csp-builder",
+  "browser-permissions-viewer"
+ ],
+ "keywords": [
+  "permissions policy generator",
+  "disable camera microphone",
+  "permissions-policy header",
+  "feature policy"
+ ]
+}

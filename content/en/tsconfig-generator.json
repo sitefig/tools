@@ -1,0 +1,46 @@
+{
+ "id": "tsconfig-generator",
+ "seoTitle": "Free tsconfig.json Generator - Node, Browser, React",
+ "metaDescription": "Generate a tsconfig.json from presets for Node, browser apps, libraries and React with strict mode, source maps and folders. Free, in your browser.",
+ "intro": "Choose a preset for Node, browser, library or React, then set strictness, source maps and folders to get a tsconfig.json.",
+ "why": "The TypeScript compiler has dozens of options, and the right combination depends on where the code runs. A Node service needs NodeNext module resolution, a bundled browser app wants the DOM libraries and no emit, a library needs declaration files, and a React app needs the JSX transform. Copying a config from an unrelated project often leaves you with confusing errors about imports or missing types.\n\nThis generator starts from a modern base targeting ES2022 and adjusts it per preset. You decide on strict mode, source maps, the output folder and the source folder. The result is a compact file you can extend. Check it against your bundler or runtime documentation, as module settings must match how your code is actually loaded. Output is created in the browser.",
+ "howTo": [
+  "Choose a preset: node, browser, library or react.",
+  "Tick or untick strict and sourceMap.",
+  "Set outDir and the source folder used for rootDir and include.",
+  "Copy the JSON into tsconfig.json and run tsc --noEmit to test it."
+ ],
+ "faq": [
+  {
+   "q": "Which settings differ between presets?",
+   "a": "Node uses NodeNext modules and node types. Browser and React add the DOM libraries and noEmit, leaving output to a bundler. Library turns on declaration files and a rootDir. React also sets the react-jsx transform."
+  },
+  {
+   "q": "Should I always enable strict?",
+   "a": "For new code, yes. It turns on a group of checks, such as no implicit any and strict null checks, that catch real bugs. For a large JavaScript migration you may switch it off at first and tighten later."
+  },
+  {
+   "q": "Why is outDir missing in browser presets?",
+   "a": "Those presets use noEmit because a bundler such as Vite or esbuild produces the output. TypeScript is then used only for type checking, so an output directory is not needed."
+  },
+  {
+   "q": "Does it cover monorepos or path aliases?",
+   "a": "No. Project references, paths and extends are not generated. Add them by hand once the base file works for your package."
+  }
+ ],
+ "related": [
+  "package-json-generator",
+  "eslint-prettier-config-generator",
+  "json-to-typescript",
+  "typescript-to-json-schema",
+  "json-validate",
+  "editorconfig-generator"
+ ],
+ "keywords": [
+  "tsconfig generator",
+  "tsconfig.json example",
+  "typescript config generator",
+  "tsconfig node preset",
+  "free tsconfig builder"
+ ]
+}

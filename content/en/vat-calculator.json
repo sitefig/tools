@@ -1,0 +1,46 @@
+{
+ "id": "vat-calculator",
+ "seoTitle": "Free VAT Calculator: Add or Remove VAT Online",
+ "metaDescription": "Add VAT to a net price or remove it from a gross price at any rate, and see net, VAT and gross amounts. Free VAT calculator, runs in your browser.",
+ "intro": "Enter an amount and a VAT rate, then choose whether the amount is net (add VAT) or gross (remove VAT). The result shows net, VAT and gross.",
+ "why": "Invoices, price lists and shop tags mix prices with and without VAT, and the wrong direction of calculation is a common slip. Taking 21% off a gross price is not the same as dividing by 1.21, and the first approach leaves you with too much. Freelancers, shopkeepers and bookkeepers meet this every time they raise an invoice or reconcile a receipt. This calculator handles both directions with whatever rate you type, so it suits any country and any reduced rate. It shows the formula and the three figures side by side. It is a calculation aid only and does not check VAT numbers or tell you which rate applies. Everything stays in your browser.",
+ "howTo": [
+  "Enter the amount and the VAT rate in percent.",
+  "Choose 'Add VAT (amount is net)' or 'Remove VAT (amount is gross)'.",
+  "Read the net, VAT and gross amounts and copy them if needed."
+ ],
+ "faq": [
+  {
+   "q": "How do I remove VAT from a gross price?",
+   "a": "Divide the gross price by 1 plus the rate. At 21%, divide by 1.21. Subtracting 21% of the gross price is wrong because VAT is calculated on the net price."
+  },
+  {
+   "q": "Which VAT rate should I use?",
+   "a": "The one that applies to your goods or services in your country. The tool does not look rates up, so check with your tax authority. Many places have a standard rate and reduced rates."
+  },
+  {
+   "q": "Does it round to two decimals?",
+   "a": "Results are displayed to two decimals. Invoices may round at line level or total level depending on local rules, so small differences from your accounting system are possible."
+  },
+  {
+   "q": "Is this tax advice?",
+   "a": "No. It is an arithmetic helper. Your obligations depend on your jurisdiction and circumstances, so ask an accountant when in doubt."
+  }
+ ],
+ "related": [
+  "vat-number-format-validator",
+  "percentage-calculator",
+  "discount-calculator",
+  "markup-margin",
+  "invoice-generator",
+  "profit-margin"
+ ],
+ "keywords": [
+  "vat calculator",
+  "free vat calculator",
+  "add vat to price",
+  "remove vat from price",
+  "vat inclusive exclusive calculator",
+  "calculate vat online"
+ ]
+}

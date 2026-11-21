@@ -1,0 +1,46 @@
+{
+ "id": "receipt-generator",
+ "seoTitle": "Free Receipt Generator - Printable Sales Receipt",
+ "metaDescription": "Create a simple printable sales receipt with items, tax, payment method and footer. Print or save as PDF. Free, nothing is uploaded.",
+ "intro": "Create a simple sales receipt with business details, items, tax and payment method, then print it or save it as a PDF.",
+ "why": "A small shop, a market stall or a freelancer selling a one-off service sometimes needs to hand over a written receipt, and a pre-printed book is not always at hand. Customers may also ask for a receipt for expenses or returns.\n\nThis generator formats a narrow, till-style receipt in a monospaced font. Enter the business name and address, receipt number, date, currency symbol and tax rate, then list items one per line as description, quantity and price. It calculates each line, the subtotal, the tax and the total, adds the payment method and a footer such as a thank-you, and shows a live preview. Print it or choose Save as PDF in the print dialog. It is a simple record, not a certified fiscal receipt, so check your local rules.",
+ "howTo": [
+  "Enter the business name, address, receipt number and date.",
+  "Set the currency symbol, tax percentage and payment method.",
+  "Add items, one per line, as description | quantity | unit price.",
+  "Press Print / Save as PDF."
+ ],
+ "faq": [
+  {
+   "q": "Is this a legally valid receipt?",
+   "a": "It is a simple record of a sale. Some countries require fiscal receipts from certified equipment or specific tax details. Check local rules if you trade regularly, and do not use it to avoid required systems."
+  },
+  {
+   "q": "Is my data kept anywhere?",
+   "a": "Only in your browser's local storage, so your form is filled in next time. Nothing is sent to a server. Reset clears the form and the saved copy."
+  },
+  {
+   "q": "How is tax calculated?",
+   "a": "Tax is the percentage you enter applied to the subtotal of all items, shown on its own line before the total. Prices are treated as excluding tax."
+  },
+  {
+   "q": "Can I print on a thermal printer?",
+   "a": "The layout is about 340 pixels wide in a monospaced font, which suits narrow paper. Print settings for thermal rolls vary by printer, so try a test print first."
+  }
+ ],
+ "related": [
+  "invoice-generator",
+  "vat-calculator",
+  "tip-calculator",
+  "percentage-calculator",
+  "discount-calculator",
+  "resume-builder"
+ ],
+ "keywords": [
+  "receipt generator",
+  "printable receipt maker",
+  "create sales receipt online",
+  "simple receipt template",
+  "free receipt pdf"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "conventional-commit-linter",
+ "seoTitle": "Free Conventional Commit Linter: Check Messages Online",
+ "metaDescription": "Check commit messages against the default commitlint rules: type, subject, header length, blank lines. Free, runs in your browser, nothing uploaded.",
+ "intro": "Paste one or more commit messages and see which commitlint conventional rules they break, with error and warning levels like the real tool.",
+ "why": "Commit linting usually runs in a git hook after you install node packages. Sometimes you just want to check a message, a pull request title or a squash commit before it goes in, without a config file.\n\nThis page applies the default rules of the conventional config: allowed types, lower-case type, no full stop, header length, blank lines and line length. The subject-case check is an approximation, and custom rules from your own commitlint config are not read.",
+ "howTo": [
+  "Paste a message, or several separated by a line with three dashes.",
+  "Adjust the allowed types and length limits if your team differs.",
+  "Read the error and warning lines for each message.",
+  "Fix the message and paste it again."
+ ],
+ "faq": [
+  {
+   "q": "Is this the same as running commitlint?",
+   "a": "It follows the default rules of the conventional config, which I read from its source. Your own config, plugins and ignores are not applied, so treat it as a quick check."
+  },
+  {
+   "q": "What is the difference between error and warning?",
+   "a": "Errors fail the commit in commitlint. Warnings are reported but do not fail it. Blank-line rules are warnings by default."
+  },
+  {
+   "q": "Why is a capital letter in the subject reported?",
+   "a": "The default config forbids sentence-case, start-case, pascal-case and upper-case subjects. This tool flags a leading capital letter as an approximation."
+  },
+  {
+   "q": "Is my message sent anywhere?",
+   "a": "No. Everything is checked in your browser."
+  }
+ ],
+ "related": [
+  "conventional-commit-generator",
+  "commitlint-semantic-release-generator",
+  "changelog-generator",
+  "git-command-builder",
+  "commit-message-suggester",
+  "pr-description-generator"
+ ],
+ "keywords": [
+  "commitlint online",
+  "conventional commits checker",
+  "commit message validator"
+ ]
+}

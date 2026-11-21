@@ -1,0 +1,44 @@
+{
+ "id": "logfmt-parser",
+ "seoTitle": "Logfmt Parser: key=value Logs to JSON, Table or CSV",
+ "metaDescription": "Convert logfmt lines from Heroku, Go and other services into JSON, a table or CSV. Quoted values and typed numbers supported. Free.",
+ "intro": "Parses key=value logfmt lines into objects and prints them as JSON, JSON lines, a table or CSV.",
+ "why": "Logfmt is compact for people but awkward for tools. Converting it to JSON or CSV lets you use jq, spreadsheets or other viewers.\n\nQuoted values with escapes are supported. Numbers and true or false can be converted to types. Words without an equals sign are ignored unless you ask to keep them.",
+ "howTo": [
+  "Paste logfmt lines or choose a file.",
+  "Choose the output format.",
+  "Turn typing of numbers on or off.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Are bare words kept?",
+   "a": "Only if you tick the option. They become key=true."
+  },
+  {
+   "q": "Does it handle a prefix before the pairs?",
+   "a": "Words before the first pair are ignored, so syslog-style prefixes do not break it."
+  },
+  {
+   "q": "Are numbers converted?",
+   "a": "By default yes. Long digit strings stay text so IDs are not damaged."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "heroku-router-log-parser",
+  "jsonl-log-filter",
+  "ndjson-viewer",
+  "json-to-csv",
+  "log-line-prettifier",
+  "log-format-detector"
+ ],
+ "keywords": [
+  "logfmt to json",
+  "parse logfmt",
+  "key=value log parser"
+ ]
+}

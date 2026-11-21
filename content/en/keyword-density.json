@@ -1,0 +1,46 @@
+{
+ "id": "keyword-density",
+ "seoTitle": "Free Keyword Density Checker (1-3 Word Phrases)",
+ "metaDescription": "Count word and phrase frequency and density in your text, for 1, 2 or 3-word phrases with stop words ignored. Free; runs in your browser.",
+ "intro": "Paste text to see which words and two or three-word phrases appear most, with counts and percentage density. Stop words can be ignored and a minimum count set.",
+ "why": "Keyword density is an old SEO habit, and exact percentages do not matter to search engines. What it is still good for is spotting accidental repetition: the same word in every sentence, a phrase that dominates the page, or a target term that barely appears.\n\nThis tool counts words and phrases in the text you paste and shows count and density for the most frequent ones. You choose single words, two-word or three-word phrases, whether to skip common stop words, the minimum count and how many rows to show. It warns when the top term is unusually high. Treat the figures as a way to review natural writing, not a number to hit. The counting is done in your browser.",
+ "howTo": [
+  "Paste your article or page text into the input box.",
+  "Choose the phrase length from 1 to 3 words and whether to ignore stop words.",
+  "Set a minimum count and how many results you want to see.",
+  "Run the tool and look for over-used terms and missing target phrases."
+ ],
+ "faq": [
+  {
+   "q": "What is a good keyword density?",
+   "a": "There is no target that search engines publish. Write naturally for people. If one phrase takes up several per cent of your words it will likely read as stuffed, so use the table to catch that."
+  },
+  {
+   "q": "Why are some common words missing?",
+   "a": "With stop words ignored, very common words such as the, and and of are skipped for single words, and ignored when they begin or end a phrase for longer ones. Turn the option off to see them."
+  },
+  {
+   "q": "Does it count words in HTML?",
+   "a": "It counts words in whatever text you paste, so markup tags would be counted too. Paste visible text, or strip tags first with the HTML tag stripper."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "keyword-extractor",
+  "tfidf",
+  "content-gap",
+  "word-counter",
+  "readability",
+  "html-tag-stripper"
+ ],
+ "keywords": [
+  "keyword density checker",
+  "keyword density tool free",
+  "phrase frequency counter",
+  "check keyword stuffing",
+  "seo word frequency analyzer"
+ ]
+}

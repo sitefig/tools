@@ -1,0 +1,45 @@
+{
+  "id": "rss-feed-validator",
+  "seoTitle": "RSS & Atom Feed Validator (Paste XML)",
+  "metaDescription": "Validate RSS 2.0 and Atom feeds: well-formed XML, required elements, RFC 822 / RFC 3339 dates, absolute links, GUIDs and enclosures.",
+  "intro": "Paste a feed and get a list of errors and warnings before readers and podcast directories find them.",
+  "why": "The validator parses your XML strictly (mismatched tags are reported with a line number), identifies RSS or Atom, and checks the required elements of each format: channel title, link and description for RSS; id, title, updated and author for Atom. It validates date formats, absolute links, duplicate GUIDs or IDs, and the url, length and type attributes of enclosures.\n\nIt does not fetch the feed or its links and is not the W3C validator, but it catches the common mistakes that make feeds fail in readers.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Open your feed URL and copy the XML source.",
+    "Paste it and run the validator.",
+    "Fix each ERROR, then consider the WARN items.",
+    "Re-test in a feed reader or podcast app."
+  ],
+  "faq": [
+    {
+      "q": "What date format does RSS need?",
+      "a": "RFC 822, for example Mon, 05 Oct 2026 09:00:00 GMT. Atom uses RFC 3339, like 2026-10-05T09:00:00Z."
+    },
+    {
+      "q": "Why do items need GUIDs?",
+      "a": "Readers use the guid to tell new items from ones they have already shown."
+    },
+    {
+      "q": "Does it check podcast tags?",
+      "a": "No, only core RSS 2.0 and Atom rules."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "rss-feed-generator",
+    "sitemap-validator",
+    "xml-validate",
+    "xml-format",
+    "meta-analyzer",
+    "http-headers-analyzer"
+  ],
+  "keywords": [
+    "rss validator",
+    "atom feed validator",
+    "feed checker",
+    "validate rss xml"
+  ]
+}

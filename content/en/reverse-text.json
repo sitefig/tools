@@ -1,0 +1,46 @@
+{
+ "id": "reverse-text",
+ "seoTitle": "Free Reverse Text Tool: Characters, Words or Lines",
+ "metaDescription": "Reverse text by characters, word order, letters in each word or line order. Handles emoji and combined characters. Free; in your browser.",
+ "intro": "Reverse a text by characters, by the order of words, by the letters in each word, or by the order of lines. Emoji and combined characters stay intact.",
+ "why": "Reversing text turns up in puzzles, programming exercises, quick tests for palindromes, mirror-style designs and checking right-to-left layout. Doing it by hand is error prone, and simple code often breaks emoji or accented letters by splitting them into pieces.\n\nThis tool offers four modes. Characters reverses each line character by character using grapheme clusters, so family emojis and letters with combining accents stay whole. Word order reverses the words in each line while keeping the spacing. Letters in each word flips each word in place. Line order flips the order of lines. Each line is processed separately except in line mode. It all runs in your browser.",
+ "howTo": [
+  "Paste the text into the input box.",
+  "Choose the mode: characters, word order, letters in each word or line order.",
+  "Run the tool.",
+  "Copy the reversed text."
+ ],
+ "faq": [
+  {
+   "q": "Does it handle emoji and accents correctly?",
+   "a": "Yes. Text is split into grapheme clusters, so an emoji sequence or a letter with combining marks is reversed as one unit and does not break."
+  },
+  {
+   "q": "Is each line reversed separately?",
+   "a": "In character, word and letter modes, yes. Line breaks stay where they are. Only the line order mode reverses the order of the lines themselves."
+  },
+  {
+   "q": "What is the difference between word order and letters in each word?",
+   "a": "Word order turns \"one two three\" into \"three two one\". Letters in each word keeps the order and flips each word to give \"eno owt eerht\"."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "palindrome-checker",
+  "anagram-checker",
+  "case-converter",
+  "fancy-text",
+  "zalgo-text",
+  "sort-lines"
+ ],
+ "keywords": [
+  "reverse text",
+  "text reverser online",
+  "reverse string",
+  "reverse word order",
+  "flip text backwards"
+ ]
+}

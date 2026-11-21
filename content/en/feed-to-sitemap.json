@@ -1,0 +1,44 @@
+{
+ "id": "feed-to-sitemap",
+ "seoTitle": "RSS or Atom Feed to Sitemap Converter",
+ "metaDescription": "Convert an RSS 2.0 or Atom feed into an XML sitemap: item links become loc, dates become lastmod. Free, private.",
+ "intro": "Reads an RSS or Atom feed and writes a sitemap from its links and dates.",
+ "why": "Blogs and news sites already publish a feed. A sitemap from it can be a quick start or a supplement.\n\nA feed lists only recent items, so this is not a full sitemap of the site. Dates are converted to W3C format in UTC. Items without an absolute link are skipped and counted.",
+ "howTo": [
+  "Paste the feed XML.",
+  "Choose whether lastmod should include the time.",
+  "Run the tool.",
+  "Copy the sitemap or merge it into yours."
+ ],
+ "faq": [
+  {
+   "q": "RSS and Atom?",
+   "a": "Both. RSS 2.0 item/link/pubDate and Atom entry/link/updated."
+  },
+  {
+   "q": "Which date does Atom use?",
+   "a": "updated first, then published."
+  },
+  {
+   "q": "Is the feed fetched?",
+   "a": "No. Paste it; a web page cannot fetch other sites."
+  },
+  {
+   "q": "Are duplicates removed?",
+   "a": "Yes."
+  }
+ ],
+ "related": [
+  "rss-feed-validator",
+  "rss-feed-generator",
+  "sitemap-generator",
+  "news-sitemap-generator",
+  "sitemap-validator"
+ ],
+ "keywords": [
+  "rss to sitemap",
+  "atom to sitemap",
+  "feed to xml sitemap",
+  "convert feed sitemap"
+ ]
+}

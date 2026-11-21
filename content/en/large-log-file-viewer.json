@@ -1,0 +1,44 @@
+{
+ "id": "large-log-file-viewer",
+ "seoTitle": "Large Log File Viewer: Read Multi-GB Logs in Pages",
+ "metaDescription": "Open a very large text log and page through it, jump to a percentage or search forward. Only the part you view is read. Free.",
+ "intro": "A paged viewer that reads a big file in slices instead of loading it all.",
+ "why": "Editors struggle with logs over a gigabyte. This viewer reads the file with the browser File API in 512 KiB slices, so memory stays small.\n\nIt shows byte positions instead of line numbers because counting lines would need a full pass. Search goes forward from the current page. Paging and search were tested on an 11 MB file against Python.",
+ "howTo": [
+  "Choose a log file.",
+  "Use the page buttons or jump to a percentage.",
+  "Enter text or /regex/ and press Find next.",
+  "Set lines per page up to 2000."
+ ],
+ "faq": [
+  {
+   "q": "Is the file uploaded?",
+   "a": "No. The browser reads slices from disk locally."
+  },
+  {
+   "q": "Why no line numbers?",
+   "a": "They need a full scan. Positions in bytes and percent are shown."
+  },
+  {
+   "q": "Can it search backward?",
+   "a": "No, only forward. Use Previous page to go back."
+  },
+  {
+   "q": "Which encodings?",
+   "a": "UTF-8 text."
+  }
+ ],
+ "related": [
+  "log-grep-context",
+  "log-level-histogram",
+  "access-log-parser",
+  "multi-log-merger",
+  "log-pattern-miner",
+  "exception-grouper"
+ ],
+ "keywords": [
+  "open large log file",
+  "view huge log browser",
+  "multi gigabyte log viewer"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "content-calendar-generator",
+ "seoTitle": "Free Content Calendar Generator in Markdown or CSV",
+ "metaDescription": "Assign a list of topics to dates on a daily, weekday, weekly, biweekly or monthly cadence and export as Markdown or CSV. Free, in your browser.",
+ "intro": "Enter your topics, a start date and a cadence, and get a dated content calendar as a Markdown table or CSV, ready to paste into a doc or spreadsheet.",
+ "why": "A list of article ideas is not a plan until each one has a date. Laying them out by hand in a spreadsheet is tedious, and it gets worse when you want weekdays only, or a monthly slot that must handle short months.\n\nThis generator takes your topics in order and assigns each a date from your start date at the cadence you choose: every day, weekdays only, weekly, every two weeks or monthly. The output has date, weekday, topic, channel and a Planned status, in Markdown for wikis and pull requests, or CSV for spreadsheets. The dates come from simple calendar rules, and nothing is stored or uploaded.",
+ "howTo": [
+  "Enter your topics, one per line, in the order you want to publish them.",
+  "Set the start date as YYYY-MM-DD, the cadence and the channel name.",
+  "Choose the output format: markdown or csv.",
+  "Copy the calendar into your document, board or spreadsheet."
+ ],
+ "faq": [
+  {
+   "q": "How does the monthly cadence handle short months?",
+   "a": "It keeps the same day of the month where possible. If the start date is the 31st, shorter months use their last day, such as 28 or 30 February."
+  },
+  {
+   "q": "What does the weekdays cadence do?",
+   "a": "It schedules one topic per working day, skipping Saturdays and Sundays. If your start date falls on a weekend, the first topic moves to the following Monday."
+  },
+  {
+   "q": "Does it know about public holidays?",
+   "a": "No. It only skips weekends, and only in weekdays mode. Adjust dates by hand around holidays that matter to your audience."
+  },
+  {
+   "q": "Why is the date format YYYY-MM-DD?",
+   "a": "It is unambiguous, sorts correctly and imports cleanly into spreadsheets. A start date in another format is rejected with a message asking for an example like 2026-01-05."
+  }
+ ],
+ "related": [
+  "topic-cluster-planner",
+  "kanban-board",
+  "utm-bulk-builder",
+  "date-difference",
+  "add-subtract-dates",
+  "business-days"
+ ],
+ "keywords": [
+  "content calendar generator",
+  "editorial calendar template",
+  "content schedule maker",
+  "free posting calendar tool",
+  "blog calendar csv",
+  "social media content plan"
+ ]
+}

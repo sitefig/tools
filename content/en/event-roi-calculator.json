@@ -1,0 +1,45 @@
+{
+ "id": "event-roi-calculator",
+ "seoTitle": "Event ROI Calculator: Trade Show Cost per Lead and Pipeline",
+ "metaDescription": "Compare event costs with leads, pipeline and closed revenue: cost per lead, cost per opportunity, pipeline multiple and ROI.",
+ "intro": "Enter event costs and results to get cost per lead, per opportunity, pipeline multiple and ROI.",
+ "why": "Events are expensive and results arrive late. Putting costs and outcomes side by side makes the comparison with other channels possible.\n\nPipeline is not revenue, so ROI here uses closed revenue, or gross profit if you add margin. Re-run it when deals close. Include staff time to avoid flattering the result.",
+ "howTo": [
+  "Enter booth, travel, staff and other costs.",
+  "Enter leads, opportunities, pipeline and closed revenue.",
+  "Add margin if you want profit.",
+  "Read the metrics."
+ ],
+ "faq": [
+  {
+   "q": "Which ROI is used?",
+   "a": "Closed revenue (or profit) minus cost, divided by cost."
+  },
+  {
+   "q": "When to run it?",
+   "a": "At the end and again as deals close."
+  },
+  {
+   "q": "Is pipeline counted?",
+   "a": "Only as a multiple of cost."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "roi-calculator",
+  "ads-roas-calculator",
+  "cac-ltv-calculator",
+  "marketing-funnel-calculator",
+  "profit-margin",
+  "lead-scoring-calculator"
+ ],
+ "keywords": [
+  "event roi calculator",
+  "trade show roi",
+  "cost per lead event",
+  "conference roi"
+ ]
+}

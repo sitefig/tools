@@ -1,0 +1,46 @@
+{
+ "id": "postgres-connection-builder",
+ "seoTitle": "Free PostgreSQL Connection String Builder",
+ "metaDescription": "Build a PostgreSQL URI, libpq string, JDBC URL, psql command and PG environment variables from parts, with the password percent-encoded.",
+ "intro": "Enter host, port, database, user, password and sslmode and get a postgres URI, a libpq string, a JDBC URL, a psql command and PG environment variables.",
+ "why": "The same database is addressed in different ways by different tools: a DATABASE_URL for an ORM, key and value pairs for libpq, a jdbc: URL for Java and PG variables for psql. A password containing an at sign, a colon or a slash silently breaks the URI form unless it is percent-encoded, which is a classic cause of connection errors.\n\nThis builder encodes the user, password and database name where the format needs it and writes all five forms at once. Because the output contains your password in clear text, use test credentials on shared screens, and never paste production secrets into a page you do not control. Nothing is sent from your browser.",
+ "howTo": [
+  "Fill in host, port, database, user and password, and choose an sslmode.",
+  "Add an application name or connect timeout if you want them in the string.",
+  "Copy the form you need: URI, keyword string, JDBC, psql or environment variables."
+ ],
+ "faq": [
+  {
+   "q": "Why is the password changed in the URI?",
+   "a": "Characters such as @, :, / and ? have meaning in a URL, so they are percent-encoded. A password like p@ss:w/rd becomes p%40ss%3Aw%2Frd in the URI and JDBC forms."
+  },
+  {
+   "q": "Which sslmode should I choose?",
+   "a": "Use require or stronger for anything over a network you do not control. verify-full also checks the server certificate and host name. The default here is prefer, which can fall back to plain text."
+  },
+  {
+   "q": "Is the password stored or sent?",
+   "a": "No, the strings are built in your browser. The output does hold the password in plain text, so avoid real production credentials on shared screens."
+  },
+  {
+   "q": "Does it test the connection?",
+   "a": "No. A web page cannot reach your database directly. Paste the result into psql or your application to test it."
+  }
+ ],
+ "related": [
+  "url-parser",
+  "url-encode",
+  "password-generator",
+  "random-secret-generator",
+  "docker-compose-generator",
+  "env-toolkit"
+ ],
+ "keywords": [
+  "postgres connection string builder",
+  "postgresql connection string generator",
+  "jdbc postgres url",
+  "libpq connection string",
+  "database_url postgres",
+  "free psql command builder"
+ ]
+}

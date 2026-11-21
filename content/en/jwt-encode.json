@@ -1,0 +1,47 @@
+{
+ "id": "jwt-encode",
+ "seoTitle": "Free JWT Encoder and Signer (HS256, HS384, HS512)",
+ "metaDescription": "Create a signed JSON Web Token from a JSON payload and a secret using HS256, HS384 or HS512. Free, built for testing, and runs in your browser.",
+ "intro": "Enter a JSON payload and a secret, choose HS256, HS384 or HS512 and get a signed JWT. Handy for generating test tokens for local development.",
+ "why": "Developing an API that accepts JWTs means you constantly need tokens with specific claims: an expired one, one with a different role, one with a missing field. Writing a small script each time is slow.\n\nThis tool builds the header, encodes your JSON payload, and signs it with HMAC using the secret you provide. The result is a standard token that any HS-capable library verifies. It is meant for tests and learning. The signing runs in your browser, so your test secret is not uploaded, but never mint production tokens with a real signing secret on a page you do not control.",
+ "howTo": [
+  "Paste the payload as valid JSON, for example {\"sub\":\"123\",\"role\":\"admin\"}.",
+  "Enter the secret used to sign the token.",
+  "Choose the algorithm: HS256, HS384 or HS512.",
+  "Copy the token and use it in your test request."
+ ],
+ "faq": [
+  {
+   "q": "Does it add exp or iat automatically?",
+   "a": "No. The payload is signed exactly as you write it. Add your own exp, iat and nbf as Unix seconds. The Unix Timestamp Converter helps you calculate those values."
+  },
+  {
+   "q": "Which algorithms are supported?",
+   "a": "Only the HMAC family: HS256, HS384 and HS512, which use a shared secret. RSA, ECDSA and EdDSA tokens need a private key and are not produced here."
+  },
+  {
+   "q": "Why is the JSON rejected?",
+   "a": "The payload must be valid JSON: double-quoted keys and strings, no trailing commas. Run it through a JSON validator first if you are unsure."
+  },
+  {
+   "q": "Can I use these tokens in production?",
+   "a": "They are valid, but the tool is intended for development and learning. Create production tokens in your own server code, with a secret that is stored and rotated properly and never typed into a web page."
+  }
+ ],
+ "related": [
+  "jwt-decode",
+  "jwt-verify-hs",
+  "jwt-expiry-calculator",
+  "hmac-generator",
+  "timestamp-converter",
+  "json-validate"
+ ],
+ "keywords": [
+  "jwt encoder",
+  "create jwt online",
+  "jwt generator hs256",
+  "free jwt signer",
+  "sign jwt with secret",
+  "generate test jwt"
+ ]
+}

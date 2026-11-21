@@ -1,0 +1,45 @@
+{
+  "id": "printable-calendar",
+  "seoTitle": "Printable Year Calendar with ISO Week Numbers",
+  "metaDescription": "Create a printable one-page calendar for any year with weeks starting Monday or Sunday and optional ISO week numbers, ready to print or save as PDF.",
+  "intro": "Make a year-at-a-glance calendar in seconds.",
+  "why": "Pick a year from 1583 to 9999, the first day of the week and whether to show ISO 8601 week numbers. The preview shows 12 month grids on one page with weekends shaded, and you print or save it through the browser's print dialog. Layout and week numbers were checked against Python's calendar module.\n\nHolidays are not included because they differ by country and region. Dates before the Gregorian reform of 1582 follow the proleptic Gregorian calendar.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the year and the first weekday.",
+    "Decide whether to show week numbers.",
+    "Press Ctrl+P on the preview.",
+    "Choose \"Save as PDF\" or print."
+  ],
+  "faq": [
+    {
+      "q": "What is an ISO week?",
+      "a": "Weeks start on Monday and week 1 contains the first Thursday of the year."
+    },
+    {
+      "q": "Can I add holidays?",
+      "a": "Not in this tool."
+    },
+    {
+      "q": "Is the layout for A4?",
+      "a": "It uses a three-column grid that fits A4 and Letter landscape."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "week-number",
+    "day-of-week",
+    "date-difference",
+    "business-days",
+    "countdown-to-date",
+    "life-in-weeks"
+  ],
+  "keywords": [
+    "printable calendar",
+    "year calendar",
+    "calendar with week numbers",
+    "yearly calendar pdf"
+  ]
+}

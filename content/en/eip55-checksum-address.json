@@ -1,0 +1,46 @@
+{
+ "id": "eip55-checksum-address",
+ "seoTitle": "Free Ethereum EIP-55 Checksum Address Converter",
+ "metaDescription": "Convert Ethereum addresses to EIP-55 mixed-case checksum form and check whether an existing checksum is valid. Free, runs in your browser.",
+ "intro": "Paste Ethereum addresses, one per line. The tool returns each in EIP-55 checksum form and tells you whether the case in your input was a valid checksum.",
+ "why": "Ethereum addresses are 20 bytes written as 40 hex digits, and a single wrong character sends funds to the wrong place. EIP-55 hides a checksum in the capitalisation of the letters, so a typo in a mixed-case address can be detected without changing its length. Wallets and block explorers show the checksummed form, but logs, databases and old documentation often hold all-lowercase addresses. This tool converts a list to the checksum form and flags any mixed-case address whose capitalisation does not match, which usually means a typo or a mangled copy. It uses Keccak-256, run locally in your browser. It checks format only; it cannot tell you whether an address is a contract, is funded or belongs to the person you think.",
+ "howTo": [
+  "Paste one Ethereum address per line, with or without the 0x prefix.",
+  "Run the tool.",
+  "Read each checksummed address and its status: valid, invalid or no checksum in the input."
+ ],
+ "faq": [
+  {
+   "q": "How does the EIP-55 checksum work?",
+   "a": "The lowercase address is hashed with Keccak-256. Each letter is uppercased if the matching hex digit of the hash is 8 or higher. The pattern of capitals is the checksum."
+  },
+  {
+   "q": "What does 'no checksum in input' mean?",
+   "a": "The input was all lowercase or all uppercase, so there was no checksum to verify. The tool still outputs the correct checksummed form."
+  },
+  {
+   "q": "What does CHECKSUM INVALID mean?",
+   "a": "The address had mixed case that does not match the correct pattern. Either a character was mistyped or the capitalisation was altered. Recheck the source before sending funds."
+  },
+  {
+   "q": "Does it validate the address on-chain?",
+   "a": "No. It checks only length, hex characters and the checksum. It cannot tell if the address exists, holds funds or is a contract."
+  }
+ ],
+ "related": [
+  "ethereum-keccak256-hasher",
+  "evm-create-address",
+  "eip191-message-hash",
+  "abi-encoder-decoder",
+  "solana-address-validator",
+  "hex-text"
+ ],
+ "keywords": [
+  "eip55 checksum address",
+  "ethereum checksum address converter",
+  "free ethereum address checker",
+  "validate ethereum address",
+  "checksum address online",
+  "mixed case ethereum address"
+ ]
+}

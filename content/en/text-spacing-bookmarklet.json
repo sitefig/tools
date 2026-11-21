@@ -1,0 +1,43 @@
+{
+ "id": "text-spacing-bookmarklet",
+ "seoTitle": "Text Spacing Bookmarklet for WCAG 1.4.12 Testing",
+ "metaDescription": "Generate a bookmarklet or CSS that applies WCAG 1.4.12 text spacing (line height 1.5, letter 0.12em, word 0.16em, paragraph 2em) to test for lost content.",
+ "intro": "Builds a bookmarklet and CSS that apply the WCAG text spacing values to any page.",
+ "why": "WCAG 1.4.12 requires that content survives user-set text spacing. The quickest check is to apply the values and look.\n\nThe bookmarklet injects one style element with the spacing values from the W3C text and toggles it on a second click. Look for clipped text, overlap and lost controls. You can change the numbers if you want to test beyond the minimum.",
+ "howTo": [
+  "Keep the defaults or edit the values.",
+  "Create a bookmark with the generated URL, or use the CSS in DevTools.",
+  "Open your page and click it.",
+  "Look for cut-off text and overlap."
+ ],
+ "faq": [
+  {
+   "q": "What are the required values?",
+   "a": "Line height 1.5, paragraph spacing 2, letter spacing 0.12 and word spacing 0.16, all times the font size."
+  },
+  {
+   "q": "Must my page use these values?",
+   "a": "No. It must still work when a user applies them."
+  },
+  {
+   "q": "Why does it not work on some sites?",
+   "a": "A strict Content-Security-Policy can block the bookmarklet. Paste the CSS in DevTools instead."
+  },
+  {
+   "q": "Does anything leave the page?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "wcag-success-criteria-explorer",
+  "contrast-checker",
+  "target-size-checker",
+  "readable-typography-previewer",
+  "a11y-html-check"
+ ],
+ "keywords": [
+  "text spacing bookmarklet",
+  "wcag 1.4.12 test",
+  "text spacing css"
+ ]
+}

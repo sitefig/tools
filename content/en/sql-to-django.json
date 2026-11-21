@@ -1,0 +1,45 @@
+{
+ "id": "sql-to-django",
+ "seoTitle": "Free SQL DDL to Django Models Converter (models.py)",
+ "metaDescription": "Convert CREATE TABLE statements to Django models with field types, null/blank, unique, defaults and ForeignKey. Free, runs in your browser.",
+ "intro": "Converts CREATE TABLE statements into Django models.py code with max_length, decimal precision, null and blank, unique, defaults, ForeignKey and db_table so the models map onto the existing tables.",
+ "why": "Django ships with inspectdb, but it needs a configured project and a live database. When you only have SQL, for example a dump from a legacy system, you must write the models yourself. This tool generates them from the DDL: the right field class for each column, max_length for varchar, decimal precision, null and blank, unique, defaults and ForeignKey with on_delete. It sets db_table and db_column so the models point at the existing tables instead of creating new ones. The implicit id AutoField is left out, and composite primary keys become unique_together because Django has no composite keys. Review and set managed = False if the tables are not yours to migrate. It runs in your browser.",
+ "howTo": [
+  "Paste your CREATE TABLE statements into the input box.",
+  "Run the conversion to get the model classes.",
+  "Copy them into models.py, check field types and on_delete choices, and decide whether the models should be managed by Django."
+ ],
+ "faq": [
+  {
+   "q": "Why is the id field missing?",
+   "a": "Django adds an implicit auto-incrementing id, so a simple integer primary key called id is omitted. Other primary keys are written explicitly."
+  },
+  {
+   "q": "How are composite primary keys handled?",
+   "a": "Django does not support them, so the columns become a unique_together constraint. You may need to designate one field as the primary key by hand."
+  },
+  {
+   "q": "Will the models match my existing tables?",
+   "a": "They use db_table and db_column, so yes in naming. Set managed = False in Meta if migrations should not touch the tables."
+  },
+  {
+   "q": "How are foreign keys written?",
+   "a": "As ForeignKey fields with an on_delete value chosen from the DDL. Check the target model and on_delete behaviour against your intent."
+  }
+ ],
+ "related": [
+  "sql-to-python-sqlalchemy",
+  "sql-to-prisma",
+  "sql-to-orm-schema",
+  "sql-to-go-gorm",
+  "json-to-pydantic",
+  "sql-dialect-converter"
+ ],
+ "keywords": [
+  "sql to django models",
+  "create table to django model",
+  "django inspectdb alternative",
+  "free sql to models.py",
+  "convert ddl to django orm"
+ ]
+}

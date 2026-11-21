@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-formatter",
+ "seoTitle": "robots.txt Formatter: Tidy Casing, Spacing and Order",
+ "metaDescription": "Clean up a robots.txt: consistent directive casing, one space after the colon, blank lines between groups and fixed typos. Comments are kept.",
+ "intro": "Rewrites a robots.txt into a consistent layout without changing its meaning, and keeps your comments.",
+ "why": "Files edited by many people end up with User-agent in three casings, spaces before colons and blank lines in odd places. It still works, but it is hard to review and easy to break.\n\nThe formatter normalises directive names, puts a single space after the colon, separates groups with one blank line and can fix misspellings such as Disalow. You can also sort consecutive rule lines by path. Comments stay where they are.",
+ "howTo": [
+  "Paste the robots.txt.",
+  "Choose whether to sort rules and fix typos.",
+  "Copy the formatted result.",
+  "Validate and test it before you publish."
+ ],
+ "faq": [
+  {
+   "q": "Does formatting change behaviour?",
+   "a": "No. Casing and spacing are not significant, and rule order does not matter for longest-match crawlers."
+  },
+  {
+   "q": "What does Fix misspelled directives do?",
+   "a": "It rewrites known typos such as Disalow to Disallow so every crawler understands them."
+  },
+  {
+   "q": "Are comments kept?",
+   "a": "Yes, in place."
+  },
+  {
+   "q": "Does it sort groups?",
+   "a": "No, only consecutive rule lines inside a group, and only if you ask."
+  }
+ ],
+ "related": [
+  "robots-txt-validator",
+  "robots-txt-minifier",
+  "robots-txt-comment-annotator",
+  "robots-generator",
+  "robots-tester"
+ ],
+ "keywords": [
+  "robots.txt formatter",
+  "format robots.txt",
+  "robots.txt beautifier",
+  "clean robots.txt"
+ ]
+}

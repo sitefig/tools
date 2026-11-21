@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Faker.js Mock Factory Generator from JSON | Free Tools</title>
+<meta name="description" content="Turn a sample JSON object into a @faker-js/faker factory function. Field names pick the faker call. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/faker-js-mock-schema-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/faker-js-mock-schema-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/faker-js-mock-schema-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Faker.js Mock Factory Generator from JSON | Free Tools">
+<meta property="og:description" content="Turn a sample JSON object into a @faker-js/faker factory function. Field names pick the faker call. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/faker-js-mock-schema-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Faker.js Mock Factory Generator from JSON | Free Tools">
+<meta name="twitter:description" content="Turn a sample JSON object into a @faker-js/faker factory function. Field names pick the faker call. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Faker.js Mock Factory Generator","url":"https://tools.sitefig.net/en/faker-js-mock-schema-generator/","description":"Turn a sample JSON object into a @faker-js/faker factory function. Field names pick the faker call. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste a sample JSON object that shows the shape of your data.","Choose the faker locale and how many items the factory should create.","Read the generated factory function and check each faker call.","Copy it into your tests or storybook files and install @faker-js/faker."],"keywords":"faker js factory generator, json to faker, generate faker mock data, faker-js schema generator, mock data factory from json, free faker generator","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Code Generators","item":"https://tools.sitefig.net/en/#code-generators"},{"@type":"ListItem","position":3,"name":"Faker.js Mock Factory Generator","item":"https://tools.sitefig.net/en/faker-js-mock-schema-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does it choose the faker call?","acceptedAnswer":{"@type":"Answer","text":"It looks at the field name first, such as email, id, url or createdAt, then at the value type. Anything it cannot place falls back to a generic call for that type, which you can replace."}},{"@type":"Question","name":"Are the results deterministic?","acceptedAnswer":{"@type":"Answer","text":"Not by default, because faker returns random values. For stable tests, set a seed with faker.seed in your own code before calling the factory."}},{"@type":"Question","name":"Do I need a package installed?","acceptedAnswer":{"@type":"Answer","text":"Yes. The generated code imports from @faker-js/faker, so install it as a development dependency. Check the faker version, since some method names changed between major releases."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#code-generators">Code Generators</a></li><li><span aria-current="page">Faker.js Mock Factory Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Faker.js Mock Factory Generator</h1>
+<p class="lede">Paste a sample JSON object and get a @faker-js/faker factory function. Field names and value shapes choose the faker call, and nested objects and arrays are handled.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="faker-js-mock-schema-generator" data-module="devz3"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Tests, stories and demo screens need realistic data, not the same fixture copied everywhere. Writing a faker factory for an object with twenty fields means looking up the right call for each one: an email, a UUID, a date, a URL, a person's name. It is dull work and easy to leave half done.</p>
+<p>This tool inspects a real example and guesses the match from the field name and the value, so email becomes an email address and createdAt becomes a date. Nested objects and arrays become nested factories. The guesses are heuristics, so check the result and adjust calls where your domain needs something specific. You can set the locale and the number of items. It runs in your browser, so your sample data is not uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste a sample JSON object that shows the shape of your data.</li><li>Choose the faker locale and how many items the factory should create.</li><li>Read the generated factory function and check each faker call.</li><li>Copy it into your tests or storybook files and install @faker-js/faker.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How does it choose the faker call?</summary><p>It looks at the field name first, such as email, id, url or createdAt, then at the value type. Anything it cannot place falls back to a generic call for that type, which you can replace.</p></details>
+<details><summary>Are the results deterministic?</summary><p>Not by default, because faker returns random values. For stable tests, set a seed with faker.seed in your own code before calling the factory.</p></details>
+<details><summary>Do I need a package installed?</summary><p>Yes. The generated code imports from @faker-js/faker, so install it as a development dependency. Check the faker version, since some method names changed between major releases.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/mock-data-generator/"><span class="link-card__title">Mock Data Generator</span><span class="link-card__desc">Generate rows from a JSON schema of field to type, with a seeded PRNG. JSON or CSV.</span></a></li><li><a class="link-card" href="/en/random-json-generator/"><span class="link-card__title">Random JSON Generator</span><span class="link-card__desc">Random nested JSON of a chosen depth and width, seedable.</span></a></li><li><a class="link-card" href="/en/api-mock-response-generator/"><span class="link-card__title">API Mock Response Generator (from JSON Schema / OpenAPI)</span><span class="link-card__desc">Generate realistic, seeded mock JSON responses from a JSON Schema or an OpenAPI 3 / Swagger 2 document (JSON or YAML). Honours enum, const, example/default, format (email, uuid, date-time, uri...), min/max, array sizes, allOf/oneOf/anyOf and $ref (recursion limited). Output is deterministic for a given seed.</span></a></li><li><a class="link-card" href="/en/prisma-seed-generator/"><span class="link-card__title">Prisma Seed Script Generator</span><span class="link-card__desc">Read a Prisma schema and write prisma/seed.ts using @faker-js/faker: models are seeded in foreign-key order, relations pick existing rows, enums and defaults are respected.</span></a></li><li><a class="link-card" href="/en/fake-person-generator/"><span class="link-card__title">Fake Person Generator</span><span class="link-card__desc">Clearly fictional people: example.com emails, 555-01xx phones, made-up addresses.</span></a></li><li><a class="link-card" href="/en/json-to-typescript/"><span class="link-card__title">JSON to TypeScript</span><span class="link-card__desc">Generate TypeScript interfaces or types from a JSON sample, merging array elements.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

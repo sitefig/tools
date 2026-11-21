@@ -1,0 +1,45 @@
+{
+ "id": "quiz-builder-html-file",
+ "seoTitle": "Multiple-Choice Quiz Builder: Make a Shareable HTML Quiz File",
+ "metaDescription": "Write questions and mark the right answers, then download one HTML file that anyone can open to take the quiz and see a score. Free.",
+ "intro": "Turns a simple text format into a self-contained HTML quiz file with scoring and feedback, which works offline on any device.",
+ "why": "Quiz sites want accounts and store your questions. Here you write the quiz as plain text, with Q: for a question, a dash for a wrong option and a star for a correct one, and download a single HTML file.\n\nThe file contains the questions, a small script and nothing else, so you can email it, put it on a website or a USB stick. Questions with more than one correct option become check boxes. The answers are inside the file, so anyone who views the source can read them: it is for practice, not for exams. This tool shares by file, not by a web link.",
+ "howTo": [
+  "Write each question with Q: and options starting with - or *.",
+  "Separate questions with a blank line, and add Title: on the first line if you like.",
+  "Check the preview list.",
+  "Download the HTML file and send or host it."
+ ],
+ "faq": [
+  {
+   "q": "Can I get a share link?",
+   "a": "No link is made; share the file. Anyone can open it in a browser."
+  },
+  {
+   "q": "Can answers be hidden from students?",
+   "a": "No. They are in the file, so this is not secure."
+  },
+  {
+   "q": "Does the quiz save scores?",
+   "a": "No, scores are shown on the page only."
+  },
+  {
+   "q": "Can options be shuffled?",
+   "a": "Yes, tick the shuffle box."
+  }
+ ],
+ "related": [
+  "flashcards-spaced-repetition",
+  "math-worksheet-generator",
+  "crossword-puzzle-maker",
+  "word-search-puzzle-maker",
+  "markdown-to-slides",
+  "random-team-splitter"
+ ],
+ "keywords": [
+  "quiz maker",
+  "multiple choice quiz builder",
+  "html quiz generator",
+  "offline quiz file"
+ ]
+}

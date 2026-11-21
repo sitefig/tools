@@ -1,0 +1,45 @@
+{
+ "id": "blood-alcohol-content-estimator",
+ "seoTitle": "Blood Alcohol Content Estimator (Widmark Formula)",
+ "metaDescription": "Estimate blood alcohol concentration and the time until it reaches zero from drinks, body weight, sex and hours since the first drink, using the Widmark...",
+ "intro": "Estimate blood alcohol from your drinks, weight and time.",
+ "why": "List your drinks as count, millilitres and percent alcohol, then enter your weight, sex and the hours since your first drink. The page uses the Widmark formula, BAC = A / (r x W) - beta x t, with alcohol at 0.789 g per ml, r of 0.68 for men and 0.55 for women, and an elimination rate you can change (default 0.015 g/dL per hour).\n\nIt is a rough guide only. Food, medication, drinking pace and body differences move the real figure a lot. It assumes all the alcohol is absorbed at once, so it overstates the peak for slow drinking. It is not a test of whether you can drive. Do not drive after drinking.",
+ "howTo": [
+  "Type one drink per line, for example 2 x 330 5.",
+  "Choose sex and enter weight and hours.",
+  "Adjust the elimination rate if you wish.",
+  "Read the estimate and the time to zero."
+ ],
+ "faq": [
+  {
+   "q": "Can I use this to decide if I can drive?",
+   "a": "No. Never use it for that. The estimate can be wrong in both directions, and legal limits differ by country."
+  },
+  {
+   "q": "Why do women get a lower r?",
+   "a": "Widmark factors reflect average body water share, which differs between men and women on average. Individuals vary a lot."
+  },
+  {
+   "q": "What does per mille mean?",
+   "a": "Grams of alcohol per litre of blood. 0.50 per mille equals 0.05 g/dL."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "caffeine-intake-calculator",
+  "water-intake",
+  "bmi-calculator",
+  "smoking-savings-calculator",
+  "sleep-cycle-calculator",
+  "bmr-tdee"
+ ],
+ "keywords": [
+  "blood alcohol calculator",
+  "BAC calculator",
+  "Widmark formula",
+  "how long until sober"
+ ]
+}

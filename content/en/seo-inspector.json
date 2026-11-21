@@ -1,0 +1,46 @@
+{
+ "id": "seo-inspector",
+ "seoTitle": "Free SEO Page Inspector: On-Page HTML Audit",
+ "metaDescription": "Paste HTML source for an on-page SEO report: title, description, canonical, robots, headings, images, social tags and more. Free, in-browser.",
+ "intro": "Paste a page's HTML source to get a prioritised on-page SEO report covering title, meta description, canonical, robots, viewport, headings, images, social tags, structured data and thin content.",
+ "why": "When a page does not rank or looks wrong in search results, the cause is often a basic tag: a missing title, a noindex left over from staging, a canonical pointing somewhere else or no H1. Spotting that in a long source file is slow, and many online auditors want you to hand over a URL or an account.\n\nThis inspector reads the HTML you paste and lists problems as errors, warnings and notes in order of importance. It checks the title and description length, canonical and robots tags, viewport, language and charset, headings, image alt text, Open Graph and Twitter tags, JSON-LD, favicon, empty links and the amount of visible text. It works on one page of source at a time and does not fetch anything, so it cannot see how the page renders after JavaScript runs.",
+ "howTo": [
+  "Open the page, view the source and copy all the HTML.",
+  "Paste it into the input box.",
+  "Run the tool to produce the report.",
+  "Fix the errors first, then the warnings, and run it again to confirm."
+ ],
+ "faq": [
+  {
+   "q": "Does it fetch my page?",
+   "a": "No. You paste the source and it analyses only that text in your browser. It cannot see content added later by JavaScript, so paste the rendered DOM from developer tools if your page needs it."
+  },
+  {
+   "q": "What counts as an error here?",
+   "a": "Problems that usually block search visibility or basic usability, such as a missing title or H1, a noindex robots tag, multiple canonicals or a missing viewport. Warnings and notes are less urgent."
+  },
+  {
+   "q": "Is it a full SEO audit?",
+   "a": "No. It covers on-page markup only. It does not check links to other pages, speed, backlinks, indexing status or content quality, so use it alongside other checks."
+  },
+  {
+   "q": "Is my HTML uploaded?",
+   "a": "No. The analysis runs locally in your browser and your source code is not sent to any server."
+  }
+ ],
+ "related": [
+  "heading-analyzer",
+  "meta-analyzer",
+  "image-seo",
+  "jsonld-inspector",
+  "a11y-html-check",
+  "serp-snippet"
+ ],
+ "keywords": [
+  "seo page inspector",
+  "on page seo checker",
+  "html seo audit online",
+  "check meta tags from html",
+  "free seo analyzer paste source"
+ ]
+}

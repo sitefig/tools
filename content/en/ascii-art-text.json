@@ -1,0 +1,46 @@
+{
+  "id": "ascii-art-text",
+  "seoTitle": "Free ASCII Art Text Generator: Big Block Letters",
+  "metaDescription": "Turn text into big five-row block letters for A-Z, digits and common punctuation, with your own fill character. Free, runs in your browser.",
+  "intro": "Draws your text as large five-row block letters. It supports A to Z, 0 to 9 and common punctuation, lets you choose the fill character, and adjusts the spacing between letters.",
+  "why": "A big banner at the top of a script, a README header, a terminal welcome message or a code comment gives a project some personality. Hand-drawing block letters in a text editor is slow, and getting every row to line up is annoying.\n\nType a word and the tool lays out each letter on five rows. The fill character is yours to choose, so you can use a solid block, a hash, an asterisk or anything else. Letter spacing is adjustable, and multiple lines are drawn one after another. Input is converted to upper case because the font has only capitals. Characters it does not know appear as question marks. The text is produced in your browser, so nothing is uploaded.",
+  "howTo": [
+    "Type the word or short line you want as a banner.",
+    "Set the fill character, which defaults to a solid block.",
+    "Adjust the letter spacing.",
+    "Copy the result into a monospaced context such as a code comment or README."
+  ],
+  "faq": [
+    {
+      "q": "Which characters are supported?",
+      "a": "The letters A to Z, digits 0 to 9, space and common punctuation such as full stops, commas, exclamation and question marks, hyphens, brackets, slashes, hash, at and ampersand. Unknown characters are drawn as a question mark."
+    },
+    {
+      "q": "Why is everything upper case?",
+      "a": "The built-in font has one set of capital letters. Your text is converted to upper case before drawing, so lower case and capitals give the same banner."
+    },
+    {
+      "q": "How long can the text be?",
+      "a": "There is no fixed limit, but each letter is five to six characters wide, so long lines become very wide. Split long text over several lines to keep it readable in a terminal or code comment."
+    },
+    {
+      "q": "Can I use a different fill character?",
+      "a": "Yes. Only the first character you enter in the fill box is used. Some fonts draw characters like the full block unevenly, so test the result where you plan to use it."
+    }
+  ],
+  "related": [
+    "ascii-table-generator",
+    "ascii-tree-generator",
+    "image-to-ascii",
+    "fancy-text",
+    "text-to-pdf",
+    "leetspeak"
+  ],
+  "keywords": [
+    "ascii art text generator",
+    "big text banner generator",
+    "block letters ascii",
+    "text to ascii art",
+    "free ascii banner maker"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "ci-build-log-error-extractor",
+ "seoTitle": "CI Build Log Error Extractor for GitHub Actions and Jenkins",
+ "metaDescription": "Find the first failure in a long CI log with its step name and surrounding lines, plus other error lines. Free, runs in your browser.",
+ "intro": "Strips colours and timestamps, finds the first failing line and shows context.",
+ "why": "A failed build log can run to thousands of lines, and the cause is somewhere near the first error. This tool jumps there and shows the lines around it, plus the step name when the log has groups.\n\nIt uses a list of strong error patterns for GitHub Actions, npm, TypeScript, Jest, Maven, Python, Git and shell. The first failing line is not always the root cause.",
+ "howTo": [
+  "Copy the raw log from the CI run.",
+  "Paste it or open the file.",
+  "Set lines of context before and after.",
+  "Read the first failure and the list of other errors."
+ ],
+ "faq": [
+  {
+   "q": "Which CI systems work?",
+   "a": "Any text log. Step names are read from GitHub Actions groups and Jenkins pipeline stages."
+  },
+  {
+   "q": "Why does it miss my error?",
+   "a": "Tick the option to count lines containing the word error."
+  },
+  {
+   "q": "Are colours handled?",
+   "a": "ANSI codes and leading timestamps are removed first."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "github-actions-explainer",
+  "exception-grouper",
+  "log-grep-context",
+  "stacktrace-formatter",
+  "gitlab-ci-linter",
+  "ansi-log-color-renderer"
+ ],
+ "keywords": [
+  "find error in ci log",
+  "github actions log failure",
+  "jenkins console error extractor"
+ ]
+}

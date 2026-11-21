@@ -1,0 +1,45 @@
+{
+ "id": "video-looper",
+ "seoTitle": "Video Looper and Boomerang Maker: Repeat or Ping-Pong a Clip",
+ "metaDescription": "Repeat a short clip or play it forward and back as a boomerang. Browser based, no upload.",
+ "intro": "Makes a longer clip by repeating a short segment, or a boomerang that plays forward and then backward.",
+ "why": "Short loops suit social posts and website backgrounds. Repeat mode plays the segment again and again. Boomerang mode reads the frames into memory, then plays them forward and back, which is why it is limited to 10 seconds and a modest width.\n\nLoop clips have no audio. It records in real time, so a 60 second clip takes about a minute and the tab must stay visible.",
+ "howTo": [
+  "Choose the video and set the start and end (max 10 s).",
+  "Pick Repeat or Boomerang and how many cycles.",
+  "For a boomerang, set the frame rate and width.",
+  "Process and download."
+ ],
+ "faq": [
+  {
+   "q": "Why no sound?",
+   "a": "Reversing audio is not supported, and loops are usually silent."
+  },
+  {
+   "q": "Is the loop seamless?",
+   "a": "Boomerang is seamless by design. For Repeat the cut point depends on your clip."
+  },
+  {
+   "q": "Why a 10 second limit?",
+   "a": "Frames are kept in memory for boomerangs."
+  },
+  {
+   "q": "Can I make a GIF?",
+   "a": "Use Video to GIF for that."
+  }
+ ],
+ "related": [
+  "video-reverser",
+  "video-to-gif",
+  "video-speed-changer",
+  "video-trimmer",
+  "gif-maker",
+  "video-merger"
+ ],
+ "keywords": [
+  "boomerang video maker",
+  "loop video online",
+  "repeat video clip",
+  "ping pong video"
+ ]
+}

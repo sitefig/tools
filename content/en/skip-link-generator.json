@@ -1,0 +1,44 @@
+{
+ "id": "skip-link-generator",
+ "seoTitle": "Skip Link Generator: Skip to Main Content HTML and CSS",
+ "metaDescription": "Create a skip to main content link whose CSS stays hidden until keyboard focus, with colours checked for contrast and the main element markup.",
+ "intro": "Writes the HTML and CSS for a skip link, checks its contrast and explains how to test it.",
+ "why": "A skip link lets keyboard users bypass repeated navigation (WCAG 2.4.1).\n\nThe generated link is the first focusable element, hidden by a transform rather than display none so it stays in the tab order, and revealed on focus with a visible outline. The tool checks text and outline contrast for the colours you pick and shows the main element markup.",
+ "howTo": [
+  "Set the target id and text.",
+  "Pick colours and position.",
+  "Copy the HTML and CSS.",
+  "Test by pressing Tab then Enter."
+ ],
+ "faq": [
+  {
+   "q": "Why not display none?",
+   "a": "Hidden elements cannot receive focus."
+  },
+  {
+   "q": "Does it animate?",
+   "a": "No, so there is nothing to turn off for reduced motion."
+  },
+  {
+   "q": "Where does it go?",
+   "a": "As the first focusable element in the body."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "landmark-region-outline",
+  "tab-order-checker",
+  "focus-indicator-contrast-checker",
+  "contrast-checker",
+  "a11y-html-check",
+  "aria-attribute-validator"
+ ],
+ "keywords": [
+  "skip link generator",
+  "skip to content link",
+  "bypass blocks 2.4.1"
+ ]
+}

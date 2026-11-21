@@ -1,0 +1,39 @@
+{
+ "id": "pomodoro-timer-notifications",
+ "seoTitle": "Pomodoro Timer with Notifications and Session Count",
+ "metaDescription": "Pomodoro focus and break timer with sound, optional browser notifications and a count of finished sessions.",
+ "intro": "Cycles focus, short break and long break intervals you set, beeps and optionally notifies at each change, and counts focus sessions.",
+ "why": "The Pomodoro method alternates focus and rest. Here you set the lengths and how many sessions come before a long break.\n\nAllow notifications if you want a pop-up when the tab is hidden. Browsers may slow timers in background tabs, so the end time is checked against the clock.",
+ "howTo": [
+  "Set focus, break and long break minutes.",
+  "Press Start focus.",
+  "Allow notifications if you want them."
+ ],
+ "faq": [
+  {
+   "q": "Do notifications need permission?",
+   "a": "Yes. Press Enable notifications. Without it you still get a sound."
+  },
+  {
+   "q": "Will it run in a background tab?",
+   "a": "Usually, but browsers may delay checks by a few seconds."
+  },
+  {
+   "q": "Is the count saved?",
+   "a": "No, it resets when you leave the page."
+  }
+ ],
+ "related": [
+  "pomodoro-timer",
+  "countdown-timer",
+  "stopwatch-lap-csv-export",
+  "exam-section-timer",
+  "typing-speed-test",
+  "writing-sprint-log"
+ ],
+ "keywords": [
+  "pomodoro timer",
+  "focus timer notification",
+  "25 5 timer"
+ ]
+}

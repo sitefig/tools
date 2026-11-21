@@ -1,0 +1,43 @@
+{
+ "id": "server-timing-parser",
+ "seoTitle": "Server-Timing Header Parser with Duration Bars",
+ "metaDescription": "Paste a Server-Timing header and read each metric as a table with name, description and duration, with bars and syntax warnings.",
+ "intro": "Parses Server-Timing headers into a table of metrics, descriptions and durations.",
+ "why": "Server-Timing lets the server explain where time went, but the raw header is hard to scan.\n\nThe parser splits metrics and parameters, handles quoted descriptions, checks metric names, reports invalid durations and draws a small bar per metric. Metrics may overlap, so the sum is a hint, not the response time.",
+ "howTo": [
+  "Copy the Server-Timing header value from DevTools or curl -I.",
+  "Paste it, several header lines are fine.",
+  "Read the table and warnings.",
+  "Fix names or durations on the server."
+ ],
+ "faq": [
+  {
+   "q": "Where do I see it in the browser?",
+   "a": "DevTools Network, select the request, open the Timing tab."
+  },
+  {
+   "q": "Can scripts read it?",
+   "a": "Yes for same-origin responses, or cross-origin with Timing-Allow-Origin."
+  },
+  {
+   "q": "Is it safe to expose internals?",
+   "a": "No secrets: anyone can read the header."
+  },
+  {
+   "q": "Is the header uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "http-cache-control-tester",
+  "cache-control-builder",
+  "har-performance-analyzer",
+  "lighthouse-report-viewer",
+  "core-web-vitals-grader"
+ ],
+ "keywords": [
+  "server-timing parser",
+  "server timing header",
+  "parse server-timing"
+ ]
+}

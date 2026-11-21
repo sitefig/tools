@@ -1,0 +1,41 @@
+{
+ "id": "google-fonts-gdpr-checker",
+ "seoTitle": "Google Fonts Loading Checker: Find Remote Fonts and Self-Host",
+ "metaDescription": "Paste HTML or CSS to find remote Google Fonts requests, the families used, and get a self-hosting plan with @font-face stubs. Free.",
+ "intro": "Finds Google Fonts links, imports and preconnects in pasted source and gives a self-hosting plan.",
+ "why": "Loading fonts from fonts.googleapis.com makes each visitor's browser contact Google, which sends the IP address to a third party. Some European courts and authorities have treated this as a data protection problem, and many sites now host the font files themselves.\n\nPaste your HTML or CSS and the tool lists each Google Fonts URL, the families and weights, and a step plan with @font-face stubs. It only sees the text you paste, so fonts loaded by scripts or plugins need a look at the Network tab.",
+ "howTo": [
+  "Paste the head of your page or your CSS.",
+  "Read the list of remote URLs and families.",
+  "Download the font files, host them on your domain and add the @font-face rules.",
+  "Remove the Google links and update your CSP."
+ ],
+ "faq": [
+  {
+   "q": "Is Google Fonts illegal?",
+   "a": "There is no single answer. Some courts and authorities objected; others did not. Self-hosting avoids the question."
+  },
+  {
+   "q": "Are the fonts free to host myself?",
+   "a": "Google Fonts are open source licensed, mostly under the SIL Open Font License. Check each font's licence."
+  },
+  {
+   "q": "Will it find fonts loaded by JavaScript?",
+   "a": "No. Check the Network tab for fonts.gstatic.com."
+  }
+ ],
+ "related": [
+  "tracker-detector",
+  "third-party-domain-classifier",
+  "csp-builder",
+  "har-analyzer",
+  "font-subsetter",
+  "subresource-integrity-generator"
+ ],
+ "keywords": [
+  "google fonts gdpr",
+  "self host google fonts",
+  "remote fonts check",
+  "fonts.googleapis.com"
+ ]
+}

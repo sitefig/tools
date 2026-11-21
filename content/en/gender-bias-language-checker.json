@@ -1,0 +1,41 @@
+{
+ "id": "gender-bias-language-checker",
+ "seoTitle": "Gender-Coded Language Checker for Job Ads",
+ "metaDescription": "Flag gendered job titles and gender-coded words in job adverts, with neutral alternatives. Free, private, for review only.",
+ "intro": "Flag gendered job titles and words often described as masculine- or feminine-coded in job adverts, with neutral alternatives.",
+ "why": "Wording in a job advert can put people off. Titles like salesman and phrases like he or she are easy to replace. Words such as aggressive or supportive are described in research as coded, though the effect size varies.\n\nThis tool marks gendered terms and coded words with a short hand-written list, counts them and suggests neutral alternatives for titles. It does not prove bias and is not legal advice. Read each hit in context.",
+ "howTo": [
+  "Paste the job ad.",
+  "Choose whether to flag coded adjectives.",
+  "Read the marked text and the suggestions.",
+  "Reword where the term does not serve the role."
+ ],
+ "faq": [
+  {
+   "q": "Is there proof these words matter?",
+   "a": "Some studies found coded wording affects who applies. Effects differ, and these lists are our own, not copied from a study."
+  },
+  {
+   "q": "Is this legal advice?",
+   "a": "No. Equality law differs by country."
+  },
+  {
+   "q": "Does it check other kinds of bias?",
+   "a": "No. Only gender wording."
+  }
+ ],
+ "related": [
+  "plain-language-checker",
+  "jargon-buzzword-detector",
+  "cliche-detector",
+  "jobposting-schema-generator",
+  "passive-voice-checker",
+  "readable-typography-previewer"
+ ],
+ "keywords": [
+  "gender bias checker",
+  "job ad gender decoder",
+  "inclusive language checker",
+  "gendered words in job ads"
+ ]
+}

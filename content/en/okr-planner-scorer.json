@@ -1,0 +1,39 @@
+{
+ "id": "okr-planner-scorer",
+ "seoTitle": "OKR Planner and Progress Scorer",
+ "metaDescription": "Write objectives with key results and score each from start, target and current values, with objective averages. Free and private.",
+ "intro": "Scores key results from start, target and current values and averages them per objective.",
+ "why": "OKRs only help when key results are measurable. Scoring each one as progress from start to target keeps the discussion about numbers. The score works for targets that go down too, like response time.\n\nWrite lines starting with O: and KR: and the tool does the math. Whether 0.7 or 1.0 counts as success depends on your team, so decide before the quarter starts.",
+ "howTo": [
+  "Write O: lines for objectives.",
+  "Add KR: name | start | target | current lines.",
+  "Read scores and update the current values."
+ ],
+ "faq": [
+  {
+   "q": "How is the score computed?",
+   "a": "(current - start) divided by (target - start), kept between 0 and 1."
+  },
+  {
+   "q": "What is a good score?",
+   "a": "Some teams aim for 0.7 on stretch goals. Others expect 1.0."
+  },
+  {
+   "q": "Can targets go down?",
+   "a": "Yes."
+  }
+ ],
+ "related": [
+  "lean-canvas-builder",
+  "business-model-canvas-builder",
+  "raci-matrix-builder",
+  "decision-matrix",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "okr planner",
+  "okr scoring",
+  "key results tracker"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "dc-circuit-solver-netlist",
+ "seoTitle": "DC Circuit Solver: Node Voltages, Currents and Power from a Netlist",
+ "metaDescription": "Describe resistors and sources as a netlist and get every node voltage, branch current and power. Free, verified against NumPy.",
+ "intro": "Solves a DC circuit of resistors, voltage sources and current sources written as a netlist, giving node voltages, element currents and power.",
+ "why": "Voltage dividers, ladders and bridges are quick to type as a netlist: V1 in 0 9, R1 in mid 1k, R2 mid 0 2k. The tool solves the whole circuit at once and lists the voltage at every node and the current, voltage drop and power in every element.\n\nIt uses modified nodal analysis with Gaussian elimination and partial pivoting, and the power delivered by the sources is compared with the power dissipated in the resistors as a sanity check. The solution was compared with NumPy. Only ideal sources and resistors are supported, and there is no drag-and-drop board: an open switch is simply left out of the netlist, and a lamp is a resistor.",
+ "howTo": [
+  "Write one element per line: name, node, node, value.",
+  "Use node 0 (or gnd) as ground and values like 1k, 2.2k, 5m, 4u or 1meg.",
+  "Read node voltages, element currents and the power balance.",
+  "Fix any error message, such as a floating node."
+ ],
+ "faq": [
+  {
+   "q": "What do V, R and I mean?",
+   "a": "V is a voltage source, R a resistor, I a current source."
+  },
+  {
+   "q": "How do I write mega and milli?",
+   "a": "Use meg for mega and m for milli. A capital M is refused because it is ambiguous."
+  },
+  {
+   "q": "Why a negative source current?",
+   "a": "The current is counted from the first to the second node inside the element, so a source delivering power shows a negative value."
+  },
+  {
+   "q": "Can I add capacitors or diodes?",
+   "a": "No, only DC steady state with resistors and ideal sources."
+  }
+ ],
+ "related": [
+  "ohms-law-calculator",
+  "resistor-color-code-calculator",
+  "pwm-calculator",
+  "battery-life-estimator",
+  "matrix-calculator",
+  "wave-interference-superposition"
+ ],
+ "keywords": [
+  "circuit solver online",
+  "dc circuit analysis",
+  "nodal analysis calculator",
+  "netlist solver"
+ ]
+}

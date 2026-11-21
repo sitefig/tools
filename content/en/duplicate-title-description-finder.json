@@ -1,0 +1,45 @@
+{
+ "id": "duplicate-title-description-finder",
+ "seoTitle": "Duplicate Title and Meta Description Finder from Crawl CSV",
+ "metaDescription": "Load a crawl export CSV and group URLs that share a title or meta description. Download the groups. Free, runs in your browser.",
+ "intro": "Finds duplicate titles and descriptions in a crawl export.",
+ "why": "Duplicate titles are one of the most common crawl findings, and a crawler lists them row by row. Grouping them shows the pattern, such as paginated or filtered pages.\n\nIt finds Screaming Frog style headers (Address, Title 1, Meta Description 1) and common alternatives, or you can name the columns. Case and spacing can be ignored. Empty values are counted but not grouped.",
+ "howTo": [
+  "Paste the crawl CSV with its header row.",
+  "Name the columns if they are not found.",
+  "Run the tool.",
+  "Download the groups as CSV."
+ ],
+ "faq": [
+  {
+   "q": "Which columns are found?",
+   "a": "Address or URL, Title or Title 1, Meta Description or Meta Description 1."
+  },
+  {
+   "q": "Are empty titles duplicates?",
+   "a": "No. They are counted separately."
+  },
+  {
+   "q": "Is the CSV uploaded?",
+   "a": "No."
+  },
+  {
+   "q": "How big can the file be?",
+   "a": "As large as your browser can paste; very large files may be slow."
+  }
+ ],
+ "related": [
+  "bulk-title-truncation-preview",
+  "title-length-checker",
+  "csv-column-profiler",
+  "keyword-cannibalization-detector",
+  "dedupe-lines",
+  "text-similarity-checker"
+ ],
+ "keywords": [
+  "duplicate title finder",
+  "duplicate meta description",
+  "screaming frog duplicates",
+  "crawl csv analysis"
+ ]
+}

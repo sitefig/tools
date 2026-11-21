@@ -1,0 +1,44 @@
+{
+ "id": "traefik-caddy-log-parser",
+ "seoTitle": "Traefik and Caddy JSON Access Log Summary",
+ "metaDescription": "Summarise Traefik and Caddy JSON access logs: requests per router or host, status codes, top paths and duration percentiles. Free.",
+ "intro": "Reads JSON access logs from Traefik and Caddy and shows per-route traffic and latency.",
+ "why": "Both proxies can log JSON, but with different keys and units. Traefik uses DownstreamStatus and Duration in nanoseconds. Caddy nests the request and uses seconds for duration.\n\nThe tool detects each shape and normalises it, so you can compare routers or hosts and see 5xx counts and p95 time.",
+ "howTo": [
+  "Enable JSON access logs in Traefik or Caddy.",
+  "Paste the log lines or open the file.",
+  "Filter, for example status>=500.",
+  "Read the per-route table."
+ ],
+ "faq": [
+  {
+   "q": "Which keys identify the format?",
+   "a": "Traefik: DownstreamStatus or RouterName. Caddy: a request object with status and duration."
+  },
+  {
+   "q": "What are the units?",
+   "a": "Traefik Duration in nanoseconds, Caddy duration in seconds. Both are shown in ms."
+  },
+  {
+   "q": "Is the plain text format supported?",
+   "a": "No, JSON only."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "haproxy-log-parser",
+  "nginx-config-generator",
+  "jsonl-log-filter",
+  "response-time-percentiles",
+  "caddy-to-nginx",
+  "log-format-detector"
+ ],
+ "keywords": [
+  "traefik access log json",
+  "caddy access log parser",
+  "reverse proxy log summary"
+ ]
+}

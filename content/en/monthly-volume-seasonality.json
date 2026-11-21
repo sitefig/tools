@@ -1,0 +1,45 @@
+{
+ "id": "monthly-volume-seasonality",
+ "seoTitle": "Search Volume Seasonality Chart from Monthly Data",
+ "metaDescription": "Paste monthly search volumes and see a text bar chart, seasonal index per month, peak and low months and the swing between them.",
+ "intro": "Turns monthly search volume figures into a seasonality chart: average per calendar month, index against the average, peak, low and swing. Several years are averaged.",
+ "why": "Many topics peak in one season. Knowing the months helps you plan when to publish and refresh. Keyword tools give monthly volumes, but not a quick picture.\n\nThe tool averages each calendar month across years and shows an index where 100 is the average month. With less than two years, one-off events can look like seasons, and monthly volumes from keyword tools are estimates. For Google Trends data use the Google Trends CSV Analyzer.",
+ "howTo": [
+  "Paste the monthly volumes in any of the supported formats.",
+  "If you paste bare numbers, choose the first month.",
+  "Read the chart and the peak and low months.",
+  "Plan to publish or refresh a few weeks before the rise."
+ ],
+ "faq": [
+  {
+   "q": "Which formats can I paste?",
+   "a": "2024-01 1200, Jan 2024: 1,200, Jan 1200, or one number per line from your chosen first month."
+  },
+  {
+   "q": "How much data do I need?",
+   "a": "At least six different months, ideally 24 or more."
+  },
+  {
+   "q": "What does the index mean?",
+   "a": "Volume divided by the average month, times 100. 150 means 50% above average."
+  },
+  {
+   "q": "Is the publish timing advice exact?",
+   "a": "No. It is a rule of thumb. Test it on your own pages."
+  }
+ ],
+ "related": [
+  "trends-csv-analyzer",
+  "serp-ctr-traffic-model",
+  "gsc-performance-analyzer",
+  "content-freshness-audit",
+  "keyword-clusterer",
+  "rank-history-analyzer"
+ ],
+ "keywords": [
+  "keyword seasonality",
+  "seasonal keyword chart",
+  "monthly search volume chart",
+  "seasonality calculator"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "ai-crawler-policy-comparator",
+ "seoTitle": "AI Crawler Policy Comparator: Compare robots.txt Files",
+ "metaDescription": "Paste several robots.txt files and compare how each treats GPTBot, ClaudeBot, CCBot, Google-Extended and other AI crawlers. Free.",
+ "intro": "Builds a table of AI crawlers against the robots.txt files you paste.",
+ "why": "To see where you stand, compare your AI crawler policy with other sites in your field. The policy is in each site's robots.txt, and archived copies work too.\n\nPaste each file after a line === name and read the crawler-by-site table, with a count of blocked crawlers per site. The page makes no network requests, so you fetch the files yourself.",
+ "howTo": [
+  "Open each robots.txt and copy it.",
+  "Paste each after a === name line.",
+  "Read the table.",
+  "Adjust your own policy."
+ ],
+ "faq": [
+  {
+   "q": "Can it fetch other sites?",
+   "a": "No. Cross-site fetching is not possible in a web page without a server."
+  },
+  {
+   "q": "What does via * mean?",
+   "a": "The crawler is not named; the * rules apply."
+  },
+  {
+   "q": "Which crawlers are compared?",
+   "a": "The ones in the AI crawler directory that were checked at the source."
+  },
+  {
+   "q": "Does a block mean the content is safe?",
+   "a": "No. Blocking is advisory."
+  }
+ ],
+ "related": [
+  "ai-bot-robots-txt-audit",
+  "ai-block-adoption-timeline",
+  "ai-crawler-user-agent-directory",
+  "robots-txt-diff",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "compare ai crawler policies",
+  "who blocks gptbot",
+  "robots.txt ai bots comparison",
+  "ai bot blocking sites"
+ ]
+}

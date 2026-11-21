@@ -1,0 +1,39 @@
+{
+ "id": "free-shipping-threshold-calculator",
+ "seoTitle": "Free Shipping Threshold Calculator From AOV and Margin",
+ "metaDescription": "Suggest a free shipping minimum from average order value, shipping cost, margin and basket lift, and check shipping stays within the margin.",
+ "intro": "Suggests a minimum order for free shipping and checks how much of the margin the shipping would use.",
+ "why": "A free-shipping threshold works when it sits just above what customers usually spend and the margin on that order still covers the shipping you pay. If it is too low you give away shipping, and if it is too high it stops mattering.\n\nThe tool offers a starting point from your average order value, a target lift and your margin, and flags it when shipping takes more than half of the margin. It is a heuristic, so run a test and watch AOV and conversion.",
+ "howTo": [
+  "Enter average order value and your average shipping cost.",
+  "Enter gross margin and the basket lift you aim for.",
+  "Read the suggested threshold and the margin check."
+ ],
+ "faq": [
+  {
+   "q": "Is the suggestion exact?",
+   "a": "No, it is a rule of thumb. The real answer comes from testing different thresholds."
+  },
+  {
+   "q": "What lift should I choose?",
+   "a": "Ten to twenty percent above AOV is a common starting point, but that is an assumption, not a measured value."
+  },
+  {
+   "q": "Does it handle zones and weight?",
+   "a": "No. Use your average shipping cost."
+  }
+ ],
+ "related": [
+  "dimensional-weight-calculator",
+  "shipping-box-fit-calculator",
+  "return-rate-cost-calculator",
+  "reorder-point-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "free shipping threshold",
+  "free shipping minimum",
+  "shipping margin calculator"
+ ]
+}

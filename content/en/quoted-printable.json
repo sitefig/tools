@@ -1,0 +1,45 @@
+{
+ "id": "quoted-printable",
+ "seoTitle": "Free Quoted-Printable Encoder and Decoder Online",
+ "metaDescription": "Encode text to MIME quoted-printable with 76-column soft line breaks, or decode it back to UTF-8. Free and runs entirely in your browser.",
+ "intro": "Encode UTF-8 text as MIME quoted-printable with soft line breaks at 76 columns, or paste quoted-printable text and decode it back to readable characters.",
+ "why": "Quoted-printable is the encoding behind those strings full of =C3=A9 and lines ending in an equals sign that you meet when you open a raw email source. It exists so that mostly-ASCII text with a few accents can pass through old mail systems that only handled 7-bit data.\n\nYou might need it when debugging a message header, reading an .eml file, or building a MIME body by hand for a test. This tool encodes non-ASCII bytes and equals signs as hex pairs, keeps lines under the RFC 2045 limit by inserting soft breaks, and decodes the reverse. It works on UTF-8, so accents and the euro sign round-trip correctly.",
+ "howTo": [
+  "Choose encode or decode in the mode selector.",
+  "Paste your text or the quoted-printable string into the input.",
+  "Copy the converted output from the result box."
+ ],
+ "faq": [
+  {
+   "q": "What does an equals sign at the end of a line mean?",
+   "a": "It is a soft line break. The decoder removes it and joins the two lines, so the original text had no line break there. It is inserted so no encoded line exceeds 76 characters."
+  },
+  {
+   "q": "Which character set is used?",
+   "a": "UTF-8. Characters outside ASCII are turned into their UTF-8 bytes and written as =XX pairs. When decoding, byte sequences are read back as UTF-8, so a Latin-1 message may display wrongly."
+  },
+  {
+   "q": "Why does decoding fail with an error?",
+   "a": "An equals sign must be followed by two hex digits or a line break. A stray equals sign, often from copied text, makes the input invalid and the tool says so rather than guessing."
+  },
+  {
+   "q": "Is this the same as Base64?",
+   "a": "No. Quoted-printable leaves readable text mostly intact and is suited to mainly-ASCII content. Base64 turns everything into a new alphabet and suits binary data such as attachments."
+  }
+ ],
+ "related": [
+  "base64-encode",
+  "base64-decode",
+  "url-encode",
+  "html-entities",
+  "utf8-bytes-viewer",
+  "unicode-escape"
+ ],
+ "keywords": [
+  "quoted printable decoder",
+  "quoted printable encoder online",
+  "mime quoted-printable converter",
+  "decode =C3=A9 email text",
+  "free qp encode decode"
+ ]
+}

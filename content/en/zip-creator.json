@@ -1,0 +1,46 @@
+{
+ "id": "zip-creator",
+ "seoTitle": "Free ZIP Creator - Make a .zip File Online",
+ "metaDescription": "Pack several files into one .zip archive in your browser, with deflate compression or stored mode. Free, nothing is uploaded, no encryption.",
+ "intro": "Select several files and pack them into a single .zip archive. Compression is optional, and you can name the archive before downloading it.",
+ "why": "Sending ten files as ten attachments is clumsy, and many forms accept only one upload. Zipping is the usual fix, but on a locked-down work laptop, a Chromebook or a phone you may have no archive tool, and online zippers want you to upload files you would rather keep private.\n\nThis creator builds the archive locally. Each file is read in your browser, compressed with deflate if you leave Compress ticked, and written into a standard ZIP structure that Windows, macOS, Linux and phone file managers open. If two files share a name, the later ones get a number in brackets so none is overwritten. The tool reports the total size before and after compression. It does not add passwords or encryption, and archives are limited to 4 GB.",
+ "howTo": [
+  "Choose the files to include; you can select many at once.",
+  "Keep Compress (deflate) ticked, or untick it to store files without compression.",
+  "Enter an archive name ending in .zip.",
+  "Run the tool and download the archive."
+ ],
+ "faq": [
+  {
+   "q": "Can I password-protect the zip?",
+   "a": "No. This tool creates standard unencrypted archives only. If the contents are sensitive, encrypt the files separately before zipping, or use a dedicated tool that supports modern encryption."
+  },
+  {
+   "q": "What size limits apply?",
+   "a": "The ZIP64 extension is not used, so the archive and each file must stay under 4 GB, and everything is held in your browser's memory. For very large sets, a desktop archiver is more reliable."
+  },
+  {
+   "q": "Why would I untick Compress?",
+   "a": "Files such as JPEG, MP4 and existing zips are already compressed, so deflate gains little. Storing them uncompressed is slightly faster. For text and documents, compression usually helps."
+  },
+  {
+   "q": "What happens to duplicate file names?",
+   "a": "A second file called report.pdf becomes report (2).pdf inside the archive, so nothing is lost. Folder paths are kept only if your browser provides them for the selected files."
+  }
+ ],
+ "related": [
+  "zip-extractor",
+  "zip-inspector",
+  "gzip-compress",
+  "pdf-merge",
+  "file-hash",
+  "base64-to-pdf"
+ ],
+ "keywords": [
+  "zip creator",
+  "create zip file online",
+  "zip files in browser",
+  "compress files to zip",
+  "free zip maker no upload"
+ ]
+}

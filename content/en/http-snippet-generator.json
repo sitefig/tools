@@ -1,0 +1,46 @@
+{
+ "id": "http-snippet-generator",
+ "seoTitle": "Free HTTP Request to curl, fetch, Python Converter",
+ "metaDescription": "Turn a raw HTTP request with method, URL, headers and body into curl, JavaScript fetch and Python snippets. Free, runs in your browser.",
+ "intro": "Paste a raw request, with the method and URL first, then headers, a blank line and the body, to get curl, fetch and Python code.",
+ "why": "API documentation, support tickets and browser devtools show requests as plain text, but you usually want code you can run. Rewriting the headers and quoting the body by hand is slow, and quotes in a JSON body easily break a shell command.\n\nThis tool reads the first line as METHOD URL, treats each following line as a header until the first blank line, and takes the rest as the body. It then writes a curl command with safe single-quote escaping, a fetch call with headers and body, and a Python snippet that uses only the standard library. It is a quick way to move between those forms when testing an endpoint or sharing a reproduction. The parsing happens in your browser, so tokens in the request stay on your device.",
+ "howTo": [
+  "Type the request: the first line is METHOD URL.",
+  "Add one Header: value line per header, then a blank line and the body.",
+  "Run the tool.",
+  "Copy the curl, fetch or Python version."
+ ],
+ "faq": [
+  {
+   "q": "What request format does it expect?",
+   "a": "A first line such as POST https://api.example.com/items, then header lines in Name: value form, then an empty line and the body. The URL must be a full address, not just a path."
+  },
+  {
+   "q": "How are quotes in the body handled?",
+   "a": "For curl, single quotes inside the body are escaped so the shell command stays valid. The fetch and Python snippets use JSON string quoting. Check very unusual characters before you run the command."
+  },
+  {
+   "q": "Does it send the request?",
+   "a": "No. It only generates code. Nothing is sent from this page, so you can paste requests containing tokens without them leaving your browser, though you should still avoid sharing live secrets."
+  },
+  {
+   "q": "Which other languages does it cover?",
+   "a": "Only curl, fetch and Python here. If you start from a curl command and need other languages, the curl converter tools on this site cover Go, Rust, PHP and more."
+  }
+ ],
+ "related": [
+  "curl-to-code",
+  "curl-to-more-languages",
+  "fetch-to-curl",
+  "curl-builder",
+  "http-wire-format",
+  "http-headers-to-json"
+ ],
+ "keywords": [
+  "http request to curl",
+  "http snippet generator",
+  "raw http to fetch",
+  "convert request to python",
+  "free http code generator"
+ ]
+}

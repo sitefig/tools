@@ -1,0 +1,46 @@
+{
+  "id": "nato-phonetic",
+  "seoTitle": "Free NATO Phonetic Alphabet Converter",
+  "metaDescription": "Spell text with the NATO phonetic alphabet (Alfa, Bravo, Charlie) or decode it back to letters. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Converts text into NATO phonetic words such as Alfa, Bravo and Charlie, or decodes a phonetic spelling back to plain text. An option adds the ITU radio pronunciation for digits.",
+  "why": "Spelling a reference number, a licence key or a surname over the phone goes wrong easily, because B, D, P and T sound alike on a poor line. The NATO phonetic alphabet exists to prevent that, but few people can recite all twenty-six words from memory.\n\nType your text and get the full spelling, with words separated by a slash so the original word boundaries stay clear. You can also paste a phonetic sequence and turn it back into letters, which is handy when decoding a message. Radio-style digit words like Niner and Fife are optional. The conversion runs in your browser, so a code you are about to read out is not uploaded.",
+  "howTo": [
+    "Type or paste the text you want to spell out.",
+    "Choose a direction: text to NATO, or NATO to text.",
+    "Tick ITU radio digits if you want words such as Tree, Fife and Niner.",
+    "Read the result aloud or copy it."
+  ],
+  "faq": [
+    {
+      "q": "Which spelling does it use?",
+      "a": "The ICAO and NATO standard spelling, including Alfa and Juliett. When decoding it also accepts the common variants Alpha, Juliet and Xray, so you can paste hand-typed spellings."
+    },
+    {
+      "q": "How are numbers handled?",
+      "a": "By default digits stay as digits. Tick ITU radio digits to spell them out as Zero, Wun, Too, Tree, Fower, Fife, Six, Seven, Ait and Niner, which are designed to be unambiguous on a radio."
+    },
+    {
+      "q": "How does decoding work?",
+      "a": "Phonetic words are matched without regard to case. Separate original words with a slash or two spaces. Anything it cannot match as a word becomes a question mark, unless it is a single character, which is kept."
+    },
+    {
+      "q": "What about accented or special characters?",
+      "a": "Characters outside A to Z and 0 to 9 have no standard phonetic word, so they are passed through unchanged. Check these parts yourself before reading the result aloud."
+    }
+  ],
+  "related": [
+    "morse-translator",
+    "text-to-speech",
+    "leetspeak",
+    "rot13-caesar",
+    "classical-ciphers",
+    "password-generator"
+  ],
+  "keywords": [
+    "nato phonetic alphabet",
+    "nato alphabet converter",
+    "phonetic alphabet translator",
+    "spell with phonetic alphabet",
+    "free nato alphabet tool"
+  ]
+}

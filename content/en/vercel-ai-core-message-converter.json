@@ -1,0 +1,43 @@
+{
+ "id": "vercel-ai-core-message-converter",
+ "seoTitle": "Free OpenAI to Vercel AI SDK Message Converter",
+ "metaDescription": "Convert chat message arrays between OpenAI Chat Completions and Vercel AI SDK CoreMessage, with tool calls and images. Free, in your browser.",
+ "intro": "Paste a messages array and convert it between the OpenAI Chat Completions format and Vercel AI SDK CoreMessage, including image parts, tool calls and tool results, for AI SDK 4 or 5.",
+ "why": "The two formats look alike but differ in the details. OpenAI nests images under image_url and sends tool arguments as a JSON string. The AI SDK uses image parts, tool-call parts with parsed objects, and separate tool-result parts. When you move a chat history, a test fixture or a logged conversation from one world to the other, those differences cause quiet failures.\n\nAI SDK 5 also renamed the fields from args and result to input and output. This converter handles both directions and both versions, so you can fix a fixture in seconds. It runs in your browser, which is useful when the conversation you are converting contains real user messages.",
+ "howTo": [
+  "Paste your messages array as JSON into the input box.",
+  "Choose the direction, either OpenAI to AI SDK or AI SDK to OpenAI.",
+  "Select AI SDK version 5 (input and output) or version 4 (args and result).",
+  "Copy the converted JSON into your code or test fixture."
+ ],
+ "faq": [
+  {
+   "q": "Which roles are supported?",
+   "a": "System, developer, user, assistant and tool messages are converted. Any other role stops the conversion with an error naming it, so you can fix the input rather than lose a message silently."
+  },
+  {
+   "q": "What happens to tool call arguments?",
+   "a": "Going to the AI SDK, the JSON string is parsed into an object. If it is not valid JSON, the raw string is kept. Going back to OpenAI, the object is stringified again."
+  },
+  {
+   "q": "Is the output guaranteed to be accepted by the SDK?",
+   "a": "It follows the documented shapes, but SDK versions change. Check the result against the version you have installed, especially for audio, files and other less common content parts."
+  }
+ ],
+ "related": [
+  "prompt-format-converter",
+  "openai-structured-outputs",
+  "llm-tool-definition-builder",
+  "json-format",
+  "mcp-message-validator",
+  "curl-to-ai-sdk"
+ ],
+ "keywords": [
+  "openai messages to vercel ai sdk",
+  "coremessage converter",
+  "vercel ai sdk modelmessage",
+  "convert chat completions messages",
+  "ai sdk 5 message format",
+  "free message converter"
+ ]
+}

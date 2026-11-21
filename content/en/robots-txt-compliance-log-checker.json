@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-compliance-log-checker",
+ "seoTitle": "robots.txt Compliance Log Checker: Bots Ignoring Rules",
+ "metaDescription": "Cross-reference access log hits with your robots.txt to find crawlers that requested disallowed paths. Free, runs in your browser.",
+ "intro": "Applies your robots.txt to the bot requests in a log and counts the ones that hit disallowed paths.",
+ "why": "A rule in robots.txt only helps if crawlers follow it. Your logs show who does not: bots that request paths you disallowed.\n\nPaste the robots.txt and a combined-format log. Bots with a named group are judged by it, the rest by the * group. Caveats are listed: the rules may have changed after the visit, crawlers cache robots.txt, and user-triggered fetchers are expected to ignore it.",
+ "howTo": [
+  "Paste the robots.txt.",
+  "Paste log lines.",
+  "Read hits on disallowed paths per bot.",
+  "Block repeat offenders at the server."
+ ],
+ "faq": [
+  {
+   "q": "What does served mean?",
+   "a": "The request got a status below 400, so the content was delivered."
+  },
+  {
+   "q": "Why might a compliant bot show hits?",
+   "a": "It may have cached an older robots.txt from before your change."
+  },
+  {
+   "q": "Are fetchers like ChatGPT-User violators?",
+   "a": "They act for a user and may not follow robots.txt by design."
+  },
+  {
+   "q": "Is the user-agent trustworthy?",
+   "a": "No. It can be forged."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "ai-bot-access-log-analyzer",
+  "robots-pattern-to-regex-converter",
+  "bot-firewall-rule-builder",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "robots.txt violations log",
+  "bots ignoring robots.txt",
+  "check bots obey robots.txt",
+  "disallowed paths in logs"
+ ]
+}

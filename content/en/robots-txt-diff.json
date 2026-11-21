@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-diff",
+ "seoTitle": "robots.txt Diff Tool: Compare Two Versions by Rule",
+ "metaDescription": "Compare two robots.txt files and see added and removed rules per user-agent, ignoring comments, order and blank lines. Free, runs in your browser.",
+ "intro": "Compares an old and a new robots.txt by meaning, not by text, and lists the rules added or removed for each user-agent and each Sitemap line.",
+ "why": "A normal text diff buries the real change under moved lines, new comments and different spacing. What you need to know after a deploy is which crawler can now fetch or no longer fetch which paths.\n\nThis tool merges groups the way crawlers do, then compares the rules for each user-agent. If only comments or order changed, it says there are no rule changes. Paste archived copies to see how a policy changed over time; the site itself makes no network requests.",
+ "howTo": [
+  "Paste the old robots.txt in the first box.",
+  "Paste the new one in the second box.",
+  "Read the changes grouped by user-agent.",
+  "Run the new file through the tester for your key URLs."
+ ],
+ "faq": [
+  {
+   "q": "Does the order of rules matter?",
+   "a": "Not for Google or RFC 9309 crawlers: the longest matching rule wins. The diff ignores order for that reason."
+  },
+  {
+   "q": "Are two groups for the same bot merged?",
+   "a": "Yes. Crawlers combine them, so the diff does too before comparing."
+  },
+  {
+   "q": "Can it fetch old versions?",
+   "a": "No, that needs a network request. Copy archived versions from a web archive and paste them."
+  },
+  {
+   "q": "Does it show comment changes?",
+   "a": "No. Comments do not change behaviour, so they are left out."
+  }
+ ],
+ "related": [
+  "robots-txt-validator",
+  "robots-tester",
+  "robots-group-merger",
+  "robots-txt-viewer",
+  "robots-generator"
+ ],
+ "keywords": [
+  "robots.txt diff",
+  "compare robots.txt files",
+  "robots.txt changes",
+  "robots.txt version compare"
+ ]
+}

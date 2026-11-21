@@ -1,0 +1,44 @@
+{
+ "id": "radius-circle-geojson",
+ "seoTitle": "Radius Circle Generator: GeoJSON Circle Around a Point",
+ "metaDescription": "Enter a centre and radii to get circles as GeoJSON polygons with area and bounding box, plus an SVG preview. Offline.",
+ "intro": "Creates accurate circles of given radii around a point as GeoJSON polygons, computed on the sphere.",
+ "why": "A radius around a shop, a site or an incident is a common need. This tool computes every point of the circle by travelling the radius on a great circle at equal bearings, so the circle is correct at any latitude, unlike a circle drawn in degrees.\n\nYou get GeoJSON ready for GIS tools or web maps, plus a preview with the radii labelled. Several radii make rings. The circle is a polygon with the number of points you choose; 72 is smooth for most uses.",
+ "howTo": [
+  "Type the centre as lat, lon.",
+  "List the radii, comma separated, and pick the unit.",
+  "Set the number of points per circle.",
+  "Copy or download the GeoJSON."
+ ],
+ "faq": [
+  {
+   "q": "Is the area exact?",
+   "a": "It is the spherical cap area, not the polygon area."
+  },
+  {
+   "q": "Does it cross the date line?",
+   "a": "Positions are normalised to -180..180, but a polygon crossing the line is not split."
+  },
+  {
+   "q": "Can I draw on a map?",
+   "a": "No, there are no map tiles; the preview is a simple plan."
+  },
+  {
+   "q": "Maximum radius?",
+   "a": "About 10000 km."
+  }
+ ],
+ "related": [
+  "geojson-viewer-validator",
+  "geo-path-distance",
+  "geo-midpoint-finder",
+  "kml-gpx-geojson-converter",
+  "csv-to-geojson",
+  "geohash-tool"
+ ],
+ "keywords": [
+  "circle around a point geojson",
+  "radius polygon generator",
+  "buffer circle coordinates"
+ ]
+}

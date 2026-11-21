@@ -1,0 +1,39 @@
+{
+ "id": "bill-splitter",
+ "seoTitle": "Bill Splitter With Shares, Tax and Tip",
+ "metaDescription": "Split a restaurant bill among people with items each ordered, shared dishes by weight, tax and tip. Amounts add up exactly.",
+ "intro": "Fair split of a bill with individual items, a shared amount, tax and tip.",
+ "why": "Equal splits are unfair when people order different amounts. List what each person ordered, enter the shared total, and give weights if some people share more.\n\nTax and tip are spread in proportion. Cents are allocated so that the shares add up to the exact total.",
+ "howTo": [
+  "Write one line per person: name, items joined by +, weight.",
+  "Enter the shared total, tax and tip.",
+  "Read what each person pays."
+ ],
+ "faq": [
+  {
+   "q": "How are cents handled?",
+   "a": "Fractions of a cent are assigned to the largest remainders so the sum matches."
+  },
+  {
+   "q": "Is tip before or after tax?",
+   "a": "You choose."
+  },
+  {
+   "q": "What is weight?",
+   "a": "The share of the shared items. 2 pays twice as much as 1."
+  }
+ ],
+ "related": [
+  "tip-calculator",
+  "percentage-calculator",
+  "discount-calculator",
+  "subscription-cost-tracker",
+  "random-team-splitter",
+  "budget-50-30-20-planner"
+ ],
+ "keywords": [
+  "bill splitter",
+  "split the check",
+  "restaurant bill split"
+ ]
+}

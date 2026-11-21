@@ -1,0 +1,45 @@
+{
+  "id": "entity-extractor",
+  "seoTitle": "Entity Extractor: Emails, Dates, Money, Phones, Names",
+  "metaDescription": "Pull emails, URLs, phones, dates, money, percentages, hashtags, @mentions and likely names out of text with patterns. Not AI, runs locally.",
+  "intro": "Find the structured facts hiding in a block of text and list them by type.",
+  "why": "Regular expressions pick out emails, URLs, phone numbers, dates in several formats, currency amounts, percentages, hashtags, @mentions and reference numbers such as #4471. Runs of capitalised words that are not month names are listed as likely names and organisations.\n\nIt matches patterns only. Names are guessed from capital letters, so sentence starts can slip in, and unusual number formats are missed. For named-entity recognition of unseen text you need a language model, which this page does not use.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the text.",
+    "Run it.",
+    "Copy the lists you need.",
+    "Check the names list by eye."
+  ],
+  "faq": [
+    {
+      "q": "Is this named-entity recognition?",
+      "a": "It is a rule-based extractor. It finds patterned entities reliably and names only heuristically."
+    },
+    {
+      "q": "Which date formats are supported?",
+      "a": "ISO dates, \"March 3, 2026\", \"3 March 2026\" and numeric day/month/year strings."
+    },
+    {
+      "q": "Is the text uploaded?",
+      "a": "No. It is processed in the page."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "extract-emails-urls-numbers",
+    "pii-redactor",
+    "keyword-extractor",
+    "text-statistics",
+    "url-parser",
+    "secret-detector-redactor"
+  ],
+  "keywords": [
+    "entity extractor",
+    "extract emails and dates",
+    "text mining tool",
+    "regex extractor"
+  ]
+}

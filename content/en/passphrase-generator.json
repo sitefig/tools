@@ -1,0 +1,46 @@
+{
+ "id": "passphrase-generator",
+ "seoTitle": "Free Passphrase Generator: Easy to Say, Hard to Guess",
+ "metaDescription": "Make random, pronounceable passphrases with exact entropy shown. Choose words, separator and digit. Free, in-browser, nothing is uploaded.",
+ "intro": "Generate pronounceable passphrases from random syllables using the browser secure random generator. The page tells you how many bits of entropy each phrase has.",
+ "why": "Some passwords you must remember or read aloud: a laptop disk password, a Wi-Fi key shared in a meeting, a master password you type daily. Random strings like k9$Zq are hard to type and recall, while a few real words can be guessed if you choose them yourself.\n\nThis tool builds each word from random syllables, so the words are easy to say but are not dictionary entries. Because the syllable space is fixed and known, the entropy can be computed exactly: it is shown per word and in total. Choose how many words, the separator, capitalisation and whether to append a digit. Generation is local and uses secure randomness.",
+ "howTo": [
+  "Set the number of words per passphrase and how many passphrases you want.",
+  "Choose a separator, capitalisation and an optional trailing digit.",
+  "Run the tool and read the bits of entropy shown below the list.",
+  "Pick one, memorise it or store it in a password manager, and do not reuse it."
+ ],
+ "faq": [
+  {
+   "q": "How strong is a passphrase from this tool?",
+   "a": "The page prints exact bits per word and in total. More words means more entropy. Five words of this kind give a good level for most uses, but check the figure shown for your settings."
+  },
+  {
+   "q": "Why are the words not real dictionary words?",
+   "a": "Each word is three random syllables, which makes it pronounceable but unpredictable. That lets the entropy be calculated exactly, unlike lists where people pick favourite words."
+  },
+  {
+   "q": "Is randomness secure?",
+   "a": "Yes, it uses crypto.getRandomValues with an unbiased selection. Nothing is uploaded or stored, so the phrases only exist in your browser while you view them."
+  },
+  {
+   "q": "How many words can I generate?",
+   "a": "Between 2 and 20 words per passphrase, and up to 100 passphrases at once. Longer phrases are safer but harder to type."
+  }
+ ],
+ "related": [
+  "password-generator",
+  "password-strength",
+  "random-secret-generator",
+  "bip39-generator",
+  "bcrypt-generator",
+  "totp-generator"
+ ],
+ "keywords": [
+  "passphrase generator",
+  "random passphrase online",
+  "memorable password generator",
+  "pronounceable password",
+  "diceware alternative free"
+ ]
+}

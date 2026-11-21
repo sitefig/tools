@@ -1,0 +1,42 @@
+{
+ "id": "mermaid-lite-renderer",
+ "seoTitle": "Free Mermaid Diagram Renderer Offline (Subset)",
+ "metaDescription": "Render a practical Mermaid subset to SVG offline: flowcharts, sequence, pie, gantt, ER, state and class diagrams. Free, in your browser.",
+ "intro": "Write Mermaid text and get an SVG diagram drawn offline in your browser. It supports flowcharts, sequence, pie, gantt, ER, state and class diagrams, using its own layout rather than the full Mermaid library.",
+ "why": "Mermaid is a handy way to keep diagrams as text next to your code, but rendering it usually means loading a large script from a CDN or running a build step. For a quick check of a README diagram, or in a setting where scripts from elsewhere are not allowed, that is more than you want.\n\nThis renderer draws a practical subset with a hand-written layered layout and runs fully offline in your page. It covers common syntax for the seven diagram types and reports what it cannot handle. It does not support themes, init directives, click links, icons or newer diagram types such as mindmap or timeline. Text widths are estimated, so very tight labels can differ slightly from the official renderer. Your diagram text is not uploaded anywhere.",
+ "howTo": [
+  "Type or paste Mermaid text, starting with the diagram type such as flowchart TD or sequenceDiagram.",
+  "Check the rendered diagram next to the editor and fix any syntax message.",
+  "Adjust labels, shapes and links until the diagram reads well.",
+  "Export the SVG for your documentation, or copy your Mermaid text into your README."
+ ],
+ "faq": [
+  {
+   "q": "Is this the official Mermaid?",
+   "a": "No. It is an independent renderer for a subset of the syntax, with its own layout, so positions and spacing differ from the official one. For final documentation, check the diagram in the tool your platform uses."
+  },
+  {
+   "q": "Which features are missing?",
+   "a": "Themes, init directives, click events and links, icons, markdown or maths in labels, and diagram types such as mindmap, timeline, journey, git graph, quadrant and C4. Unsupported lines are reported."
+  },
+  {
+   "q": "Does it need an internet connection?",
+   "a": "No. After the page has loaded, rendering uses only code in the page and makes no network requests, so your diagram text stays on your device."
+  }
+ ],
+ "related": [
+  "graphviz-dot-lite",
+  "sql-ddl-to-diagram",
+  "user-flow-to-mermaid-text",
+  "svg-optimizer",
+  "svg-to-png"
+ ],
+ "keywords": [
+  "mermaid renderer offline",
+  "mermaid live editor alternative",
+  "render mermaid to svg",
+  "mermaid flowchart online",
+  "mermaid sequence diagram viewer",
+  "free mermaid tool"
+ ]
+}

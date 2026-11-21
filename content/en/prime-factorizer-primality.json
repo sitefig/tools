@@ -1,0 +1,45 @@
+{
+ "id": "prime-factorizer-primality",
+ "seoTitle": "Prime Factorization Calculator and Primality Test for Big Numbers",
+ "metaDescription": "Check if a number is prime and factor it into primes with exponents, divisor count, divisor sum and Euler totient. Free, handles 30+ digits.",
+ "intro": "Tests primality and factors whole numbers into primes in exponent form, using exact big-integer arithmetic.",
+ "why": "Factoring is the basis of fractions, divisibility and number theory homework. Type 360 and get 2^3 x 3^2 x 5, with the number of divisors, their sum and Euler totient. The same tool copes with numbers of 30 digits or more.\n\nSmall factors are removed by trial division, primality is tested with Miller-Rabin using twelve fixed bases (proven correct for numbers below about 3.3e24), and larger composites are split with Pollard rho. Above 3.3e24 a prime verdict is marked as probable. If a very hard number resists the time budget, the unfactored composite part is shown instead of guessing.",
+ "howTo": [
+  "Enter one or more whole numbers, one per line.",
+  "Read the factorization or the statement that the number is prime.",
+  "Use the divisor count, divisor sum and totient lines if you need them.",
+  "For numbers over 30 digits, expect some to take a while or stay partly factored."
+ ],
+ "faq": [
+  {
+   "q": "Is a prime verdict always proven?",
+   "a": "Below about 3.3e24 yes. Above it the result is a very strong probable-prime test."
+  },
+  {
+   "q": "What is the Euler totient?",
+   "a": "The count of numbers up to n that share no factor with n."
+  },
+  {
+   "q": "Can it factor RSA-size numbers?",
+   "a": "No. Hundreds of digits are far beyond this method."
+  },
+  {
+   "q": "Are my numbers sent anywhere?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "gcd-lcm-euclid-steps",
+  "bignumber-calculator",
+  "fraction-calculator",
+  "scientific-calculator-degrees",
+  "significant-figures-counter-rounder",
+  "bitwise-calculator"
+ ],
+ "keywords": [
+  "prime factorization calculator",
+  "is this number prime",
+  "factor large numbers",
+  "prime factors online"
+ ]
+}

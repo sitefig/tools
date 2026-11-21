@@ -1,0 +1,46 @@
+{
+ "id": "flooring-calculator",
+ "seoTitle": "Free Flooring Calculator: Area and Boxes Needed",
+ "metaDescription": "Calculate the floor area in square metres and feet, add a waste allowance and see how many boxes of flooring to buy. Free, runs in your browser.",
+ "intro": "Enter room length and width, the coverage of one box and a waste percentage. The tool shows the floor area, the area with waste and the number of boxes to buy.",
+ "why": "Laminate, vinyl planks and engineered wood are sold in boxes that each cover a fixed area, so the practical question is how many boxes to put in the trolley. Buying one too few can mean waiting for a delivery from a different batch with a slightly different shade; buying too many wastes money. This calculator multiplies length by width, adds a waste percentage to allow for cuts around walls and mistakes, and divides by the coverage per box, always rounding up. It reports the area in square feet as well as square metres, which helps with American listings, and it shows the total area your boxes will cover. Dimensions you type are never sent anywhere.",
+ "howTo": [
+  "Enter the room length and width in metres.",
+  "Enter the coverage per box in square metres and the waste percentage.",
+  "Read the room area, the area with waste and the number of boxes."
+ ],
+ "faq": [
+  {
+   "q": "Why is waste needed for flooring?",
+   "a": "Planks are cut to fit at walls and around obstacles, and some offcuts cannot be reused. Ten percent is typical for straight layouts, with more for diagonal patterns or awkward rooms."
+  },
+  {
+   "q": "Where do I find the coverage per box?",
+   "a": "On the packaging or product page, usually in square metres per pack. Enter that number exactly, since it varies by product."
+  },
+  {
+   "q": "How are partial boxes handled?",
+   "a": "The box count is always rounded up, because you cannot buy part of a box. The tool also shows the total area those boxes cover so you can see the spare."
+  },
+  {
+   "q": "Can I use it for an L-shaped room?",
+   "a": "Not directly. Split the room into rectangles, calculate each area, and add the results. Use the combined area as one of the dimensions, such as length with a width of 1."
+  }
+ ],
+ "related": [
+  "tile-calculator",
+  "paint-coverage",
+  "concrete-calculator",
+  "brick-calculator",
+  "unit-converter",
+  "roof-pitch"
+ ],
+ "keywords": [
+  "flooring calculator",
+  "free flooring calculator",
+  "laminate flooring calculator",
+  "how many boxes of flooring",
+  "floor area calculator",
+  "flooring waste calculator"
+ ]
+}

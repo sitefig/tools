@@ -1,0 +1,45 @@
+{
+  "id": "traffic-drop-analyzer",
+  "seoTitle": "Traffic Drop Analyzer: Compare Two Search Console Periods",
+  "metaDescription": "Compare two Search Console exports of pages or queries to see what lost and gained clicks, with percent change and impression change. Local analysis.",
+  "intro": "Paste a \"before\" and an \"after\" export and see which pages or queries explain a drop (or a rise) in clicks, ranked by size of change.",
+  "why": "The first column of each export is the item (a page URL or a query) and a clicks column is required; impressions are optional. The tool joins both periods, marks items that disappeared or are new, and lists the biggest losers and gainers with the change in clicks and impressions.\n\nA fall in impressions as well as clicks points to lost visibility (ranking, indexing, seasonality). Clicks down with impressions flat points to a lower click-through rate: titles, snippets or SERP features. Compare equal-length periods and consider seasonality before drawing conclusions.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Export Performance data for two equal periods, with the page or query in the first column.",
+    "Paste the earlier period in the first box and the later one in the second.",
+    "Read the totals, then the biggest losers and gainers.",
+    "Investigate losers: rankings, indexing, redirects, titles and competitors."
+  ],
+  "faq": [
+    {
+      "q": "Which periods should I compare?",
+      "a": "Equal lengths, ideally the same days of the week, and the same period a year earlier if the business is seasonal."
+    },
+    {
+      "q": "What does \"gone\" mean?",
+      "a": "The item had clicks in the first export and does not appear in the second."
+    },
+    {
+      "q": "Can I use queries instead of pages?",
+      "a": "Yes. Any first column works; the tool only needs a key and a clicks column."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "keyword-cannibalization-detector",
+    "branded-query-splitter",
+    "seo-inspector",
+    "redirect-map-matcher",
+    "ab-test-calculator",
+    "url-parameter-analyzer"
+  ],
+  "keywords": [
+    "traffic drop analysis",
+    "search console compare periods",
+    "seo traffic loss",
+    "clicks change report"
+  ]
+}

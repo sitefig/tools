@@ -1,0 +1,39 @@
+{
+ "id": "emergency-fund-calculator",
+ "seoTitle": "Emergency Fund Calculator: How Much to Save",
+ "metaDescription": "Work out an emergency fund target from essential monthly costs and months of cover, and how long it takes to reach it.",
+ "intro": "Target emergency fund, the gap to your savings and the time to close it.",
+ "why": "An emergency fund covers essential costs if income stops. The usual guidance is three to six months, with more for a single income, variable income or dependants.\n\nEnter only essentials, not wants. The tool shows how many months your current savings cover and how long saving a fixed amount takes, without counting interest.",
+ "howTo": [
+  "Enter essential monthly expenses.",
+  "Choose the months to cover.",
+  "Enter current savings and what you can add monthly."
+ ],
+ "faq": [
+  {
+   "q": "What counts as essential?",
+   "a": "Housing, food, utilities, insurance, transport to work and minimum debt payments."
+  },
+  {
+   "q": "Is interest included?",
+   "a": "No. The time to reach the target is simple division."
+  },
+  {
+   "q": "Where should I keep it?",
+   "a": "In an easily accessible account. That choice is outside this tool."
+  }
+ ],
+ "related": [
+  "savings-goal",
+  "budget-50-30-20-planner",
+  "net-worth-calculator",
+  "retirement-estimator",
+  "fire-number-calculator",
+  "compound-interest"
+ ],
+ "keywords": [
+  "emergency fund",
+  "rainy day fund",
+  "months of expenses"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "lua-formatter",
+ "seoTitle": "Lua Code Re-indenter Online",
+ "metaDescription": "Re-indent Lua scripts by function, if, for, while, repeat and end blocks. Strings, long strings and comments are not touched. Free.",
+ "intro": "Fixes the indentation of Lua scripts using block keywords and brackets.",
+ "why": "Lua marks blocks with words rather than braces, so copied or generated scripts lose their layout easily. The tool counts function, if, for, while, repeat, do and end, treats else and elseif as part of the block, and counts brackets and braces too.\n\nStrings, long strings and comments are skipped when counting. It does not rewrite spacing inside lines and it does not check syntax. No Lua interpreter was available to test against, so it was checked by reading and by confirming that only whitespace changes.",
+ "howTo": [
+  "Paste Lua code.",
+  "Pick the indent.",
+  "Read the result.",
+  "Run a Lua linter for syntax."
+ ],
+ "faq": [
+  {
+   "q": "Does it check my syntax?",
+   "a": "No. A missing end will throw the indentation off, which can help you find it."
+  },
+  {
+   "q": "What about goto labels?",
+   "a": "They are treated as normal lines."
+  },
+  {
+   "q": "Are long strings safe?",
+   "a": "Yes. Lines inside them are kept exactly."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "redis-lua-script-generator",
+  "tabs-spaces-converter",
+  "line-ending-normalizer",
+  "code-diff-html",
+  "js-format",
+  "css-format"
+ ],
+ "keywords": [
+  "lua formatter online",
+  "lua code beautifier",
+  "lua indent",
+  "re-indent lua script"
+ ]
+}

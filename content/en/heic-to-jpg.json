@@ -1,0 +1,47 @@
+{
+ "id": "heic-to-jpg",
+ "seoTitle": "Free HEIC to JPG, PNG and WebP Converter",
+ "metaDescription": "Convert iPhone HEIC photos to JPG, PNG or WebP using your browser's own decoder. Free, files stay on your device, works in Safari and some Chrome builds.",
+ "intro": "Convert HEIC or HEIF photos to JPG, PNG or WebP. It uses your browser's built-in image decoder, so it only works where the browser can already open HEIC files.",
+ "why": "iPhones save photos as HEIC, and plenty of websites, forms and older apps still refuse anything but JPG. The usual fix is an online converter that takes your photos onto someone else's server, which is a poor deal for family pictures or scanned documents.\n\nThis converter hands the file to the decoder your browser already has and redraws it into the format you choose. Safari on macOS and iOS can do this, as can some Chrome and Edge builds with system HEVC codecs. If your browser cannot decode HEIC, the tool says so rather than failing silently. Nothing is uploaded.",
+ "howTo": [
+  "Choose one or more HEIC or HEIF files with the file picker.",
+  "Pick the output format: jpeg, png or webp.",
+  "Set the quality between 0.1 and 1. The default is 0.92.",
+  "Run the conversion and download the converted files."
+ ],
+ "faq": [
+  {
+   "q": "Why does it say my browser cannot decode HEIC?",
+   "a": "The tool relies on the decoder already inside your browser and does not bundle its own. Safari supports HEIC, and some Chrome or Edge builds do when the system has HEVC codecs. Firefox and many Linux setups do not."
+  },
+  {
+   "q": "Does it upload my photos?",
+   "a": "No. The file is decoded, drawn onto a canvas and re-encoded entirely in your browser, and the result is offered as a download. Nothing is sent to a server."
+  },
+  {
+   "q": "Will I lose quality?",
+   "a": "JPG and WebP are lossy, so a little detail is lost at any setting below 1. The default 0.92 is visually close to the original. PNG is lossless but produces much larger files for photos."
+  },
+  {
+   "q": "What happens to transparency and metadata?",
+   "a": "JPG has no transparency, so any transparent area is filled with white. The image is redrawn on a canvas, so metadata such as location and camera model is not carried over to the new file."
+  }
+ ],
+ "related": [
+  "heic-decoder",
+  "image-format-converter",
+  "image-compressor",
+  "image-resizer",
+  "exif-remover",
+  "exif-viewer"
+ ],
+ "keywords": [
+  "heic to jpg",
+  "convert heic to jpg free",
+  "heic to png online",
+  "heic to webp",
+  "iphone photo converter",
+  "heic converter no upload"
+ ]
+}

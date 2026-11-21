@@ -1,0 +1,46 @@
+{
+  "id": "favicon-generator",
+  "seoTitle": "Free Favicon Generator: ICO, PNG Sizes and Manifest",
+  "metaDescription": "Create favicon.ico, 16, 32, 48, 180, 192 and 512 pixel PNGs, an HTML snippet and a web manifest from one image. Free, in your browser.",
+  "intro": "Builds a full favicon set from one picture: a multi-size favicon.ico, PNGs for browsers, Apple touch icon and Android, plus the link tags and a site.webmanifest to paste into your site.",
+  "why": "A site without a proper favicon looks unfinished in browser tabs, bookmarks and home-screen shortcuts, yet the set needed is annoying: an ICO for old browsers, several PNG sizes, an Apple touch icon and a manifest. Generating them by hand in an image editor takes a while.\n\nChoose one image, ideally square and at least 512 pixels, enter your app name and theme colour, and download the set. The picture is centre-cropped to a square and scaled to each size. The tool also prints the head link tags and the manifest contents so you can paste them straight into your page. Files are produced in your browser and never uploaded, which helps if your logo is not public yet.",
+  "howTo": [
+    "Choose your logo or icon image, preferably square and large.",
+    "Enter the app name and pick a theme colour.",
+    "Run it and download the generated files.",
+    "Copy the link tags and manifest into your site, and upload the icons to its root."
+  ],
+  "faq": [
+    {
+      "q": "Which files do I get?",
+      "a": "favicon.ico with 16, 32 and 48 pixel images, PNGs at 16, 32, 48, 180 (Apple touch icon), 192 and 512 pixels, and a site.webmanifest. A text output lists the HTML link tags."
+    },
+    {
+      "q": "What if my image is not square?",
+      "a": "It is cropped from the centre to the largest square. If your logo is wide, add padding in an editor first so nothing important is cut off."
+    },
+    {
+      "q": "Where do I put the files?",
+      "a": "In the root of your website, since the generated link tags and manifest use absolute paths like /favicon.ico. If you place them elsewhere, edit the paths."
+    },
+    {
+      "q": "Does it support SVG favicons or dark mode variants?",
+      "a": "No. This tool creates ICO and PNG files only. You can add an SVG favicon yourself with an extra link tag."
+    }
+  ],
+  "related": [
+    "app-icon-generator",
+    "image-resizer",
+    "image-format-converter",
+    "svg-to-png",
+    "meta-tag-generator",
+    "nextjs-metadata-generator"
+  ],
+  "keywords": [
+    "favicon generator",
+    "create favicon ico",
+    "favicon from png",
+    "apple touch icon generator",
+    "free favicon maker"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "aws-arn-parser",
+ "seoTitle": "AWS ARN Parser: Split and Check Amazon Resource Names",
+ "metaDescription": "Split ARNs into partition, service, region, account ID and resource, with notes on mistakes such as a wrong account length. Free and offline.",
+ "intro": "Breaks any number of ARNs into their parts and points out common mistakes.",
+ "why": "ARNs look alike but each service lays out the resource part differently. Splitting them by hand is slow and the colons and slashes are easy to misread.\n\nThe tool reads partition, service, region, account and resource, guesses the resource type split and flags things such as an account that is not 12 digits. The type split is a guess because services choose their own layout.",
+ "howTo": [
+  "Paste ARNs, one per line.",
+  "Read the fields for each one.",
+  "Check the review notes.",
+  "Copy the part you need."
+ ],
+ "faq": [
+  {
+   "q": "Why are region and account empty for S3?",
+   "a": "Bucket and object ARNs have no region or account. Global services such as IAM leave the region empty."
+  },
+  {
+   "q": "Which partitions are known?",
+   "a": "aws, aws-cn, aws-us-gov, aws-iso and aws-iso-b."
+  },
+  {
+   "q": "Does it check that the resource exists?",
+   "a": "No. It only reads the text."
+  },
+  {
+   "q": "Are wildcards allowed?",
+   "a": "In IAM policies yes. The tool notes them."
+  }
+ ],
+ "related": [
+  "aws-iam-policy-linter",
+  "aws-iam-policy-builder",
+  "iam-policy-simulator-lite",
+  "cloudformation-template-generator",
+  "terraform-scaffolder",
+  "cloudtrail-event-viewer"
+ ],
+ "keywords": [
+  "aws arn parser",
+  "arn format explained",
+  "split arn"
+ ]
+}

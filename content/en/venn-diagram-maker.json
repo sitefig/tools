@@ -1,0 +1,44 @@
+{
+ "id": "venn-diagram-maker",
+ "seoTitle": "Venn Diagram Maker for 2 or 3 Sets (SVG)",
+ "metaDescription": "Name two or three sets and write the text for each region to get a labelled Venn diagram as SVG. Free, nothing uploaded.",
+ "intro": "Draws overlapping circles for two or three sets and places your text into each region using simple codes like 12 for the overlap of sets 1 and 2.",
+ "why": "Venn diagrams compare what is shared and what is not. You write the set names once, then one line per region.\n\nThe circles are equal in size and do not reflect how many items each region has; it is a layout diagram, not a proportional one. Four-set diagrams are not supported. A text version of every region is in the table below.",
+ "howTo": [
+  "Write the set names on the first line, separated by |.",
+  "Add lines like 1: text, 12: shared item, 123: centre.",
+  "Separate several items in a region with ;.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "What do the numbers mean?",
+   "a": "Digits are set positions: 1 is the first set, 12 is the overlap of 1 and 2 only."
+  },
+  {
+   "q": "Is there a 4-set version?",
+   "a": "No."
+  },
+  {
+   "q": "Are areas proportional?",
+   "a": "No, circles are equal."
+  },
+  {
+   "q": "Can I leave regions empty?",
+   "a": "Yes."
+  }
+ ],
+ "related": [
+  "mind-map-svg-builder",
+  "flowchart-maker",
+  "pie-donut-chart-maker",
+  "bar-chart-maker",
+  "word-cloud-generator",
+  "markdown-table-generator"
+ ],
+ "keywords": [
+  "venn diagram maker",
+  "3 set venn diagram",
+  "overlap diagram generator"
+ ]
+}

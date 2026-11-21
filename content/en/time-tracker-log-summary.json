@@ -1,0 +1,45 @@
+{
+ "id": "time-tracker-log-summary",
+ "seoTitle": "Time Tracker Log: Hours per Project and Day with CSV Export",
+ "metaDescription": "Paste time entries with start-end times or durations and get totals per project and day, a project-by-day grid and a CSV. Free.",
+ "intro": "Adds up a log of time entries by project and by day, in a text summary and a downloadable CSV.",
+ "why": "Write entries like 2026-10-19 Website 09:00-11:30 homepage, or use a duration such as 2.5h or 1h30m. The tool totals hours per project, per day and in a project-by-day grid, with percent share per project.\n\nThere is no running timer in this tool; time the work with the stopwatch and write the result in. Entries that cross midnight are counted on the start date. Nothing is stored; the CSV is created in your browser, so you can keep the log in your own file.",
+ "howTo": [
+  "Write one entry per line: date project time note.",
+  "Use 09:00-11:30, 2.5h or 1h30m for the time.",
+  "Read the totals and the grid.",
+  "Download the CSV."
+ ],
+ "faq": [
+  {
+   "q": "Does it have a start/stop timer?",
+   "a": "No. Use the stopwatch and enter the time here."
+  },
+  {
+   "q": "Are my entries saved?",
+   "a": "No, keep your log text in your own file."
+  },
+  {
+   "q": "Can project names have spaces?",
+   "a": "Use a dash or underscore, since a space ends the name."
+  },
+  {
+   "q": "What is in the CSV?",
+   "a": "Date, project, minutes, hours and note per entry."
+  }
+ ],
+ "related": [
+  "stopwatch",
+  "stopwatch-lap-csv-export",
+  "work-hours-calculator",
+  "weekly-shift-schedule-planner",
+  "time-duration-calculator",
+  "writing-sprint-log"
+ ],
+ "keywords": [
+  "time tracker",
+  "hours per project calculator",
+  "timesheet summary csv",
+  "time log totals"
+ ]
+}

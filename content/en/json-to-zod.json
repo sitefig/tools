@@ -1,0 +1,47 @@
+{
+ "id": "json-to-zod",
+ "seoTitle": "Free JSON to Zod Schema Generator Online",
+ "metaDescription": "Free online JSON to Zod schema generator. Create a Zod object schema and inferred TypeScript type from a JSON sample. Runs in your browser.",
+ "intro": "Generate a Zod schema, plus the TypeScript type inferred from it, from a JSON sample. Arrays are merged, and keys missing from some items are marked optional.",
+ "why": "Zod lets you validate data at runtime and get a TypeScript type from the same definition, but you first have to write the schema. For an API response with many nested fields, that is tedious, and it is easy to forget a field or mix up number and string.\n\nPaste a real response and the tool builds a z.object with the right nested objects, arrays and primitives. Whole numbers use z.number().int(), null values become nullable, and keys that are absent in some array items are marked optional. The output also exports the inferred type so the schema and type cannot drift apart. A single sample cannot show every variation, so tighten the schema afterwards. Inference runs locally and nothing is uploaded.",
+ "howTo": [
+  "Paste a JSON sample into the input box.",
+  "Set the root name, which becomes RootSchema and the Root type.",
+  "Copy the generated import, schema and inferred type into your project.",
+  "Refine the schema with extra checks such as email or min length."
+ ],
+ "faq": [
+  {
+   "q": "What does the output contain?",
+   "a": "An import of z from zod, an exported schema named after your root plus Schema, and an exported TypeScript type created with z.infer. You can paste all three into one file."
+  },
+  {
+   "q": "How are null and mixed values handled?",
+   "a": "A field that is sometimes null becomes nullable. If the sample mixes other types, a z.union of the options is used. Empty arrays become arrays of unknown, because the item type cannot be known."
+  },
+  {
+   "q": "Will it add validations like email or min?",
+   "a": "No. It describes the shape and basic types only. Add checks such as .email(), .min() or .regex() yourself, because a sample cannot tell what the real constraints are."
+  },
+  {
+   "q": "Which Zod version is the output for?",
+   "a": "It uses basic constructs such as z.object, z.array, z.union and z.string that work across common Zod releases. Check unusual cases against the version you use."
+  }
+ ],
+ "related": [
+  "json-to-typescript",
+  "json-schema-generator",
+  "json-schema-to-zod",
+  "typescript-interface-to-zod",
+  "zod-to-json-schema",
+  "json-to-go"
+ ],
+ "keywords": [
+  "json to zod",
+  "json to zod schema",
+  "generate zod schema from json",
+  "free zod generator",
+  "zod schema online",
+  "convert json to zod"
+ ]
+}

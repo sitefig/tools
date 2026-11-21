@@ -1,0 +1,47 @@
+{
+ "id": "utm-bulk-builder",
+ "seoTitle": "Free Bulk UTM Link Builder for Many URLs at Once",
+ "metaDescription": "Add UTM source, medium, campaign, term and content to many URLs in one go, keeping existing query strings. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Paste a list of URLs, fill in the UTM fields once and get every URL back with the parameters added. Existing query strings and fragments are kept.",
+ "why": "Campaign tracking only works if every link carries the same, consistent UTM tags. Adding them by hand to thirty URLs for a newsletter or a social schedule invites typos, and a single \"Email\" instead of \"email\" splits your analytics data into two rows.\n\nThis builder applies source, medium and campaign (plus optional term and content) to every URL you paste. It merges them into any existing query string, replaces old UTM values rather than duplicating them, and can lowercase the values to keep reports tidy. Invalid URLs stop the run with the offending line shown. Everything runs locally, so your campaign plans and landing pages stay private.",
+ "howTo": [
+  "Paste your URLs, one per line, including https://.",
+  "Fill in utm_source, utm_medium and utm_campaign. These three are required.",
+  "Add utm_term or utm_content if you need them, and keep \"Lowercase values\" ticked for tidy reports.",
+  "Copy the tagged URLs."
+ ],
+ "faq": [
+  {
+   "q": "What happens to parameters already in the URL?",
+   "a": "They are kept. Only the UTM keys you set are added or replaced, so https://example.com/pricing?plan=pro becomes the same address with the UTM parameters appended after plan=pro."
+  },
+  {
+   "q": "Why lowercase the values?",
+   "a": "Analytics tools treat Email and email as different values. Lowercasing keeps campaign names consistent, which makes reports easier to read."
+  },
+  {
+   "q": "What about fragments such as #intro?",
+   "a": "The fragment is kept at the end of the URL. The parameters are placed before it, as they should be."
+  },
+  {
+   "q": "Should I use UTM tags on internal links?",
+   "a": "Generally no. Tagging links inside your own site can overwrite the original traffic source in analytics. Use them on links from outside, such as emails, ads and social posts."
+  }
+ ],
+ "related": [
+  "utm-builder",
+  "url-tracker-stripper",
+  "query-string",
+  "url-parser",
+  "content-calendar-generator",
+  "ads-roas-calculator"
+ ],
+ "keywords": [
+  "bulk utm builder",
+  "add utm parameters to multiple urls",
+  "utm link generator",
+  "free campaign url builder",
+  "utm tagging tool",
+  "batch utm tags"
+ ]
+}

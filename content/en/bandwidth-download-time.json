@@ -1,0 +1,46 @@
+{
+ "id": "bandwidth-download-time",
+ "seoTitle": "Free Download Time Calculator by File Size and Speed",
+ "metaDescription": "Estimate how long a file takes to download at a given connection speed, with protocol overhead and effective speed shown. Free, runs in your browser.",
+ "intro": "Enter a file size, a connection speed and an overhead percentage. The tool estimates the download time and shows the effective speed in Mbps and MB/s.",
+ "why": "Internet speeds are sold in megabits per second, while file sizes are shown in megabytes or gigabytes, and the factor of eight between them catches people out. A 4.7 GB file on a 100 Mbps line takes about six minutes, not forty-seven seconds. This calculator does the conversion for you and lets you set protocol overhead, since real transfers never reach the headline speed because of headers, retransmissions and shared bandwidth. It is useful for planning a large backup, estimating an upload window before a deployment, or judging whether a game download will finish before dinner. It uses decimal units (1 GB equals 1,000 MB) and assumes a steady rate. The numbers are computed locally.",
+ "howTo": [
+  "Enter the file size and pick KB, MB, GB or TB.",
+  "Enter the connection speed and pick kbps, Mbps, Gbps or MB/s.",
+  "Adjust the protocol overhead if needed, then read the time and effective speed."
+ ],
+ "faq": [
+  {
+   "q": "Why is the download slower than my plan speed?",
+   "a": "Plans quote bits per second, and real transfers lose some capacity to protocol overhead, Wi-Fi conditions and other devices. The overhead field, 5% by default, approximates that loss."
+  },
+  {
+   "q": "What is the difference between Mbps and MB/s?",
+   "a": "Mbps is megabits per second and MB/s is megabytes per second. One byte is eight bits, so 100 Mbps equals 12.5 MB/s before overhead."
+  },
+  {
+   "q": "Does it use decimal or binary units?",
+   "a": "Decimal. One GB is 1,000,000,000 bytes. If a system reports GiB, the real file is about 7% larger. Use the unit converter to convert first."
+  },
+  {
+   "q": "Does it handle varying speeds?",
+   "a": "No. It assumes a constant rate for the whole transfer. Real connections fluctuate during the day, so treat the result as a typical estimate rather than a promise."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "ip-subnet-calculator",
+  "http-status-reference",
+  "time-duration-calculator",
+  "screen-size-ppi",
+  "gzip-compress"
+ ],
+ "keywords": [
+  "download time calculator",
+  "file transfer time calculator",
+  "free download time calculator",
+  "bandwidth calculator",
+  "how long to download",
+  "mbps to mb/s download time"
+ ]
+}

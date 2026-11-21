@@ -1,0 +1,46 @@
+{
+ "id": "license-generator",
+ "seoTitle": "Free License Generator - MIT, Apache, BSD, GPL",
+ "metaDescription": "Create a LICENSE file text for MIT, ISC, BSD, Apache-2.0, GPL-3.0, MPL-2.0 or Unlicense with your name and year. Free, runs in your browser.",
+ "intro": "Choose a licence, enter the copyright holder and year, and get the text ready to save as LICENSE in your project.",
+ "why": "A repository without a licence is, by default, not open for others to reuse, so adding one is often the last small step before publishing. Writing the MIT or BSD text from memory risks small errors, and finding a reliable copy with the correct year and name takes a few clicks you would rather skip.\n\nThis tool inserts your name and year into the standard wording for MIT, ISC, BSD 2-Clause and 3-Clause, and the Unlicense. For Apache-2.0, GPL-3.0 and MPL-2.0 it gives the short notice, and you must add the full licence text from the official source, which the output points to. This is a convenience, not legal advice. For anything commercial or unusual, check with a qualified lawyer before choosing. Text is produced in your browser.",
+ "howTo": [
+  "Pick a licence from the list.",
+  "Enter the copyright holder's name and the year.",
+  "Copy the text.",
+  "Save it as LICENSE in the repository root and mention it in your package metadata."
+ ],
+ "faq": [
+  {
+   "q": "Is this legal advice?",
+   "a": "No. It supplies standard licence wording with your name and year filled in. Choosing a licence has legal consequences, so ask a qualified person if you are unsure which suits your project or company."
+  },
+  {
+   "q": "Why do Apache, GPL and MPL only give a notice?",
+   "a": "Those licences are long and expected to be included in full. The tool produces the short header notice, and a note tells you where to download the complete official text to put in your LICENSE file."
+  },
+  {
+   "q": "What is the difference between MIT and Apache-2.0?",
+   "a": "Both are permissive. Apache-2.0 adds an explicit patent grant and requires stating changes. MIT is shorter and simpler. GPL-3.0 is different: it requires derivative works to stay open under the same terms."
+  },
+  {
+   "q": "Do I need a licence for private code?",
+   "a": "Not for code that stays private. A licence matters when others will use, copy or contribute to your code. Without one, copyright law generally reserves all rights to the author."
+  }
+ ],
+ "related": [
+  "package-json-license-checker",
+  "readme-generator",
+  "package-json-generator",
+  "gitignore-generator",
+  "privacy-policy-generator",
+  "terms-generator"
+ ],
+ "keywords": [
+  "license generator",
+  "mit license generator",
+  "create license file online",
+  "apache 2.0 license text",
+  "free open source license picker"
+ ]
+}

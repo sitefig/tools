@@ -1,0 +1,46 @@
+{
+ "id": "brick-calculator",
+ "seoTitle": "Free Brick Calculator: How Many Bricks for a Wall",
+ "metaDescription": "Estimate how many bricks a wall needs from its length, height, openings, mortar joint and waste. Defaults to 215 x 65 mm bricks. Free, in your browser.",
+ "intro": "Enter the wall length and height, openings and waste. The tool calculates net wall area, bricks per square metre and the number of bricks to buy, using adjustable brick size and mortar joint.",
+ "why": "A garden wall or an extension needs a decent estimate of bricks before you phone the merchant. Counting by hand is tedious: you subtract the door and window openings, add the mortar joint to each brick's face, work out how many fit in a square metre and then allow for breakages. This calculator does it with the standard UK brick face of 215 by 65 mm and a 10 mm joint, but you can change all three to match your bricks. It assumes a single skin, one brick thick, laid in a regular stretcher pattern, so cavity walls, double thickness or decorative bonds need more. It runs on your device with no upload.",
+ "howTo": [
+  "Enter the wall length and height in metres and the area of any openings in square metres.",
+  "Set the waste percentage, and adjust brick length, brick height and mortar joint in millimetres if yours differ.",
+  "Read the net area, bricks per square metre and the total with waste."
+ ],
+ "faq": [
+  {
+   "q": "What brick size does it assume?",
+   "a": "A face of 215 by 65 mm with a 10 mm mortar joint, which is the common UK metric brick. Change the three fields if you use another size."
+  },
+  {
+   "q": "Does it work for a double-skin or cavity wall?",
+   "a": "No. It calculates one brick thickness (a single skin). For a cavity wall, calculate each leaf separately and add the totals. Mortar quantity is not included."
+  },
+  {
+   "q": "How much waste should I allow?",
+   "a": "Five percent is the default. Complex cuts, corners and poor-quality bricks may need more. Order a little extra so every brick comes from the same batch."
+  },
+  {
+   "q": "Why does the answer change when I change the joint?",
+   "a": "A thicker mortar joint makes each brick take up more wall area, so fewer bricks fit in a square metre. It is a small effect but adds up over big walls."
+  }
+ ],
+ "related": [
+  "concrete-calculator",
+  "paint-coverage",
+  "tile-calculator",
+  "flooring-calculator",
+  "roof-pitch",
+  "unit-converter"
+ ],
+ "keywords": [
+  "brick calculator",
+  "free brick calculator",
+  "how many bricks do i need",
+  "bricks per square metre",
+  "wall brick estimator",
+  "brickwork calculator"
+ ]
+}

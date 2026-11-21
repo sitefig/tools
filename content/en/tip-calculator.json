@@ -1,0 +1,46 @@
+{
+ "id": "tip-calculator",
+ "seoTitle": "Free Tip Calculator: Tip, Total and Split the Bill",
+ "metaDescription": "Work out the tip, the total and each person's share when splitting a bill, with an option to round up. Free tip calculator that runs in your browser.",
+ "intro": "Enter the bill, a tip percentage and the number of people. You get the tip, the total, the share per person and the tip each person pays.",
+ "why": "At the end of a meal, nobody wants to do mental arithmetic while the waiter waits. The tip itself is easy to estimate; the trouble starts when four people want an even split of a bill that includes service. This tool does the sum in one step and gives the per-person amount, with an option to round that share up to the next whole unit so you can pay in notes or round numbers. It is useful abroad, where customs differ from home and the percentage you type can follow local habit. It works on any currency, because it only handles plain numbers, and runs privately in your browser.",
+ "howTo": [
+  "Enter the bill amount.",
+  "Type your tip percentage and how many people are splitting.",
+  "Tick 'Round total per person up' if you want whole amounts, then read the tip, total and per-person share."
+ ],
+ "faq": [
+  {
+   "q": "Is the tip calculated before or after tax?",
+   "a": "On the bill amount you enter. If you want the tip on the pre-tax subtotal, enter that figure. If the bill already includes tax or service, enter the total shown."
+  },
+  {
+   "q": "What does rounding up do?",
+   "a": "It rounds each person's share up to the next whole number. The sum paid can then exceed the bill plus tip slightly, which works as a small extra tip."
+  },
+  {
+   "q": "Can I split the bill unevenly?",
+   "a": "No. The tool divides the total equally by the number of people. For unequal shares, calculate each person's portion separately and use the percentage calculator."
+  },
+  {
+   "q": "What tip percentage should I use?",
+   "a": "Customs vary by country, and in many places service is included. The tool takes any percentage, so enter what is usual where you are."
+  }
+ ],
+ "related": [
+  "percentage-calculator",
+  "discount-calculator",
+  "vat-calculator",
+  "fuel-cost",
+  "random-team-splitter",
+  "salary-hourly"
+ ],
+ "keywords": [
+  "tip calculator",
+  "free tip calculator",
+  "bill splitter",
+  "split bill calculator",
+  "restaurant tip calculator",
+  "tip per person"
+ ]
+}

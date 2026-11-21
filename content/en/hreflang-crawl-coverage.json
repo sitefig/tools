@@ -1,0 +1,45 @@
+{
+ "id": "hreflang-crawl-coverage",
+ "seoTitle": "Hreflang Crawl Coverage: Are All Language Versions Crawled?",
+ "metaDescription": "Check in your access log whether bots requested every language version of a page, using hreflang groups you paste. Free and private.",
+ "intro": "Takes groups of alternate URLs and shows for each group how many versions were requested by bots and how often.",
+ "why": "Hreflang only helps if search engines fetch all the versions. If the English page is crawled daily and the German one never, the pairing may break or the German page may be hard to reach.\n\nPaste your hreflang groups, one URL per line with a blank line between pages. The tool matches each URL against the log by path, ignoring host, query and trailing slash. Groups where only some versions were crawled are marked for review.",
+ "howTo": [
+  "Export or write your hreflang groups: the alternates of one page together, a blank line between pages.",
+  "Paste your access log lines.",
+  "Choose the bots.",
+  "Review the groups marked as partly crawled."
+ ],
+ "faq": [
+  {
+   "q": "Where do I get the groups?",
+   "a": "From a crawler export of hreflang annotations, or from your sitemap if it holds xhtml:link alternates."
+  },
+  {
+   "q": "Why are some versions not crawled?",
+   "a": "Weak links to that language folder, a block, a redirect, or a log period that is too short."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench."
+  }
+ ],
+ "related": [
+  "uncrawled-sitemap-urls",
+  "orphan-page-finder",
+  "googlebot-crawl-budget-analyzer",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer",
+  "fake-googlebot-log-detector"
+ ],
+ "keywords": [
+  "hreflang crawl coverage",
+  "are all language versions crawled",
+  "hreflang alternates in log files",
+  "international seo log analysis"
+ ]
+}

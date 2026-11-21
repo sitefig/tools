@@ -1,0 +1,39 @@
+{
+ "id": "elevator-pitch-generator",
+ "seoTitle": "Elevator Pitch Generator From Problem, Solution and Audience",
+ "metaDescription": "Fill in who you help, the problem and your solution to get two pitch drafts with word count and speaking time. Free, private.",
+ "intro": "Builds pitch drafts in a problem-first and a positioning-statement structure from a few fields.",
+ "why": "A short pitch states who you help, what hurts, what you do and why it is different. Writing each part separately makes gaps obvious: if you cannot fill the problem, the pitch will not land.\n\nThe tool fills two templates and shows a word count and speaking time at a relaxed pace. These are drafts to edit by ear, not finished copy. It does not use AI.",
+ "howTo": [
+  "Fill in who, the problem and how you solve it.",
+  "Add what is different, proof and an ask if you have them.",
+  "Read the two drafts aloud and edit them."
+ ],
+ "faq": [
+  {
+   "q": "How long should a pitch be?",
+   "a": "Around 30 seconds, about 75 words, is typical."
+  },
+  {
+   "q": "Does it use AI?",
+   "a": "No. It fills templates with your words."
+  },
+  {
+   "q": "What is a positioning statement?",
+   "a": "A format: for a target who has a need, the product is a category that gives a benefit, unlike alternatives."
+  }
+ ],
+ "related": [
+  "lean-canvas-builder",
+  "business-model-canvas-builder",
+  "okr-planner-scorer",
+  "raci-matrix-builder",
+  "decision-matrix",
+  "profit-margin"
+ ],
+ "keywords": [
+  "elevator pitch generator",
+  "pitch template",
+  "positioning statement"
+ ]
+}

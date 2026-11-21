@@ -1,0 +1,45 @@
+{
+ "id": "fetch-to-curl",
+ "seoTitle": "Free fetch() to cURL Converter - JavaScript to curl",
+ "metaDescription": "Convert a JavaScript fetch(url, options) call into a curl command, including headers, method and JSON.stringify bodies. Free, nothing is executed.",
+ "intro": "Converts a JavaScript fetch(url, { method, headers, body }) call into a curl command. It understands JSON.stringify bodies, string literals and object literals, and never runs your code.",
+ "why": "A failing request in the browser is often easier to reproduce from a terminal: you can change headers, see raw responses and share a one-line command with a colleague. DevTools can copy a request as curl, but when you have only a code snippet, such as a fetch call from an issue, a tutorial or your own source, you have to rewrite it by hand. This tool reads the call as text and builds the equivalent command: the method, each header, and the body, including a body written with JSON.stringify of an object literal. It does not execute your code, so nothing in the snippet can run, and it stays in your browser. Features without a curl equivalent, such as credentials: \"include\", are ignored.",
+ "howTo": [
+  "Paste the fetch(...) call, with its options object, into the input box.",
+  "Run the conversion to get the curl command.",
+  "Copy it into your terminal and replace any placeholder tokens before running it."
+ ],
+ "faq": [
+  {
+   "q": "Does it run my JavaScript?",
+   "a": "No. The call is read as text and parsed with simple rules. Variables, function calls and template placeholders cannot be evaluated, so use literal values for the best result."
+  },
+  {
+   "q": "Which options are converted?",
+   "a": "The URL, method, headers and body. A JSON.stringify of an object literal becomes a JSON body. Options with no curl equivalent, like credentials, mode or cache, are skipped."
+  },
+  {
+   "q": "What if my body is built from variables?",
+   "a": "Replace the variables with sample values first. The tool can only convert what it can read as a literal."
+  },
+  {
+   "q": "Can I go the other way?",
+   "a": "Yes, the cURL to Code tool and the other cURL converters on this site turn a curl command into fetch and other languages."
+  }
+ ],
+ "related": [
+  "curl-to-code",
+  "curl-builder",
+  "curl-to-more-languages",
+  "http-wire-format",
+  "http-headers-to-json",
+  "curl-to-postman"
+ ],
+ "keywords": [
+  "fetch to curl",
+  "convert javascript fetch to curl",
+  "fetch call to curl command",
+  "free fetch curl converter",
+  "js fetch to terminal command"
+ ]
+}

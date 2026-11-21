@@ -1,0 +1,46 @@
+{
+ "id": "pdf-delete-pages",
+ "seoTitle": "Free Delete PDF Pages - Remove Pages Online",
+ "metaDescription": "Remove selected pages such as 2,4-6 from a PDF and save the rest as a new file. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Enter the pages to remove, such as 2,4-6, and download a new PDF without them. The rest stays exactly as it was.",
+ "why": "A blank page at the end of a scan, a cover sheet that should not be shared or an outdated appendix: removing pages is one of the most common PDF edits. Opening a full editor for it, or uploading a confidential file to a web service, is more than the task deserves.\n\nThis tool drops the pages you list and keeps all the others in their original order, without re-rendering them. The list can mix single pages and ranges, and open-ended ranges like 7- remove everything from page seven onwards. It will not let you delete every page. If you know exactly which pages to keep instead, the Extract PDF Pages tool is quicker. Encrypted files are refused, and bookmarks and form fields are not carried over. Processing happens in your browser.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Enter the pages to delete, for example 2,4-6.",
+  "Run the tool.",
+  "Check the new page count and download the file."
+ ],
+ "faq": [
+  {
+   "q": "Can I delete the last page without knowing the count?",
+   "a": "Use an open-ended range. Typing 7- removes page seven and all following pages. To remove just the last page, check the page count first with the page count tool."
+  },
+  {
+   "q": "Does deleting pages shrink the file?",
+   "a": "Usually yes, because unused images, fonts and content are not copied into the new file. The saving depends on how much those pages contained."
+  },
+  {
+   "q": "Is the content really removed?",
+   "a": "The new file does not contain the deleted pages or anything only they used. The original file on your device is unchanged, so keep a backup before sharing the edited one."
+  },
+  {
+   "q": "What if I list every page?",
+   "a": "A PDF needs at least one page, so the tool shows an error instead of producing an empty file. Adjust the list so at least one page remains."
+  }
+ ],
+ "related": [
+  "pdf-extract-pages",
+  "pdf-split",
+  "pdf-reorder-pages",
+  "pdf-merge",
+  "pdf-page-count-and-sizes",
+  "pdf-remove-metadata"
+ ],
+ "keywords": [
+  "delete pdf pages",
+  "remove pages from pdf",
+  "pdf page remover online",
+  "delete blank page pdf",
+  "free remove pdf pages"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "csv-to-chart",
+  "seoTitle": "CSV to Chart: Bar, Line and Pie Charts as SVG",
+  "metaDescription": "Turn a small CSV into a bar, line or pie chart as a downloadable SVG with a title, legend and an accessible description.",
+  "intro": "Visualise a table without a spreadsheet or charting library.",
+  "why": "The first column is used as labels and each other column as a series. Bar and line charts get a scaled axis with rounded tick values; pie charts use the first value column and show percentages in the legend. The SVG includes a title and a text description of the data so assistive technology can read it, and per-item tooltips.\n\nIt is built for small tables (up to 60 rows). For dashboards or large data use a dedicated charting tool.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste CSV with a header row.",
+    "Choose the chart type and size.",
+    "Copy or download the SVG.",
+    "Add the chart with an alt text or the built-in description."
+  ],
+  "faq": [
+    {
+      "q": "Can I change the colours?",
+      "a": "The palette is fixed; edit the SVG fill values to customise."
+    },
+    {
+      "q": "Does it support dates on the axis?",
+      "a": "Labels are treated as text in order."
+    },
+    {
+      "q": "Is the chart accessible?",
+      "a": "It has a title and description, but you should still provide the data or a summary in text."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "csv-viewer",
+    "csv-column-profiler",
+    "csv-transpose",
+    "svg-optimizer",
+    "svg-to-png",
+    "json-to-csv"
+  ],
+  "keywords": [
+    "csv to chart",
+    "csv to svg chart",
+    "bar chart from csv",
+    "pie chart generator"
+  ]
+}

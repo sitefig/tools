@@ -1,0 +1,46 @@
+{
+ "id": "tfidf",
+ "seoTitle": "Free TF-IDF Term Ranker for SEO and Text Analysis",
+ "metaDescription": "Rank the most distinctive terms in one document against others using TF-IDF. Separate documents with a line of three dashes. Free, in-browser.",
+ "intro": "Paste two or more documents separated by a line of three dashes, and see which terms in the first one are most distinctive compared with the rest, using TF-IDF.",
+ "why": "A word that appears often in your page is not necessarily important to it: \"the\" and \"shoes\" are both frequent on a shoe store page. TF-IDF weighs how often a term appears in a document against how many documents contain it, so terms that are common everywhere are pushed down and terms that characterise your page rise.\n\nPaste your document first, then competitor or comparison documents, each separated by a line containing only three dashes. The tool ranks the terms of the first document using a smoothed inverse document frequency, and shows the score, count and the number of documents that contain each term. With only a few documents the figures are rough, so use it for ideas and not for precise scoring. Everything runs in your browser.",
+ "howTo": [
+  "Paste your document first, then add a line with --- and the next document.",
+  "Add as many comparison documents as you like, each separated by a --- line.",
+  "Set how many rows you want and run the tool.",
+  "Read the ranked terms of the first document and check them against your target topics."
+ ],
+ "faq": [
+  {
+   "q": "What do the columns mean?",
+   "a": "TF-IDF is the score. Count is how often the term appears in the first document. In docs is the number of documents, including the first, that contain it. A low In docs value means a distinctive term."
+  },
+  {
+   "q": "How many documents do I need?",
+   "a": "At least two. More comparison documents make the ranking more meaningful, because the inverse document frequency has more to compare against. With just two it only separates shared from unshared terms."
+  },
+  {
+   "q": "Does it do stemming or handle other languages?",
+   "a": "No. It lowercases words and drops English stop words and very short terms, but does not stem, so \"shoe\" and \"shoes\" are separate. It is aimed at English text."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "content-gap",
+  "keyword-extractor",
+  "keyword-density",
+  "text-statistics",
+  "keyword-clusterer",
+  "readability"
+ ],
+ "keywords": [
+  "tf-idf calculator",
+  "tfidf online tool",
+  "tf idf seo",
+  "rank distinctive terms",
+  "tfidf term ranker free"
+ ]
+}

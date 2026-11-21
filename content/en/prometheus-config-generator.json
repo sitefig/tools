@@ -1,0 +1,45 @@
+{
+ "id": "prometheus-config-generator",
+ "seoTitle": "Free prometheus.yml Config Generator Online",
+ "metaDescription": "Generate a prometheus.yml from simple job and target lines, with scrape intervals, Alertmanager and rule file settings. Free, runs in your browser.",
+ "intro": "Write one line per job with its targets and optional metrics path, and get a prometheus.yml with global settings, Alertmanager and rule files.",
+ "why": "A first prometheus.yml is short, but the indentation and list syntax catch people out: targets must be a list inside static_configs, which sits inside a scrape config. When you are adding a dozen hosts, typing that YAML by hand invites a stray space that stops Prometheus from starting.\n\nEnter each job as a name followed by comma-separated host:port targets, and add a metrics path where it differs from the default, as with a Spring Boot actuator endpoint. The tool writes the global block, an optional self-scrape job, the alerting section and rule_files. It covers static targets only, so service discovery blocks need to be added by hand.",
+ "howTo": [
+  "Enter one job per line as name, comma-separated targets, then an optional metrics path.",
+  "Set the scrape and evaluation intervals, the Alertmanager address and the rule file glob.",
+  "Copy the YAML into prometheus.yml and validate it with promtool check config."
+ ],
+ "faq": [
+  {
+   "q": "Can I add Kubernetes or Consul discovery?",
+   "a": "No. Only static_configs are generated. Add service discovery blocks by hand after you paste the output into your file."
+  },
+  {
+   "q": "What if I leave Alertmanager blank?",
+   "a": "The alerting section is left out. The same goes for the rule_files line when its glob is empty, so you get a minimal valid file."
+  },
+  {
+   "q": "Is the self-scrape job necessary?",
+   "a": "It is optional. Prometheus exposes its own metrics on localhost:9090, and scraping them is useful for monitoring the server itself. Untick the box to remove it."
+  },
+  {
+   "q": "Does it check that targets are reachable?",
+   "a": "No. It only formats text. Open the Targets page in the Prometheus UI after loading the file to see whether each target is up."
+  }
+ ],
+ "related": [
+  "prometheus-alert-generator",
+  "prometheus-recording-rules-generator",
+  "yaml-format",
+  "docker-compose-generator",
+  "kubernetes-deployment-generator",
+  "nginx-config-generator"
+ ],
+ "keywords": [
+  "prometheus config generator",
+  "prometheus.yml generator",
+  "prometheus scrape config",
+  "free prometheus yaml builder",
+  "prometheus static targets"
+ ]
+}

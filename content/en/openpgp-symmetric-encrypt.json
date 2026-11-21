@@ -1,0 +1,45 @@
+{
+  "id": "openpgp-symmetric-encrypt",
+  "seoTitle": "OpenPGP Passphrase Encrypt and Decrypt (gpg --symmetric Compatible)",
+  "metaDescription": "Encrypt text to an ASCII-armored OpenPGP message with a passphrase (AES-256, salted S2K, integrity protected), or decrypt one made by gpg --symmetric.",
+  "intro": "Send a secret to someone with a shared passphrase, in a format every GnuPG installation can open.",
+  "why": "Encryption derives an AES-256 key from the passphrase with the iterated, salted S2K (SHA-256), writes the symmetric-key packet, a literal data packet and an encrypted-and-integrity-protected packet (SEIPD v1 with an MDC) and wraps everything in PGP armor with a CRC-24. Messages made here decrypt with gpg --decrypt, and messages from gpg --symmetric (AES-128/192/256, ZIP or ZLIB compression) decrypt here.\n\nThe passphrase is the only protection: anyone with the message can guess passphrases offline, so use a long one. Public-key messages and the newer AEAD format are not supported.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose encrypt or decrypt.",
+    "Paste the text or the PGP MESSAGE block and the passphrase.",
+    "Copy the armored message to send.",
+    "Share the passphrase through a different channel."
+  ],
+  "faq": [
+    {
+      "q": "Can GnuPG read it?",
+      "a": "Yes: gpg --decrypt message.asc. This was tested in both directions."
+    },
+    {
+      "q": "Does it hide the message length or metadata?",
+      "a": "No. OpenPGP leaks approximate size and the existence of the message."
+    },
+    {
+      "q": "Is the passphrase uploaded?",
+      "a": "No. Everything runs in your browser."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "aes-encrypt",
+    "aes-decrypt",
+    "openpgp-inspector",
+    "pbkdf2-key-derivation",
+    "password-generator",
+    "passphrase-generator"
+  ],
+  "keywords": [
+    "openpgp symmetric",
+    "gpg symmetric encryption online",
+    "pgp message passphrase",
+    "encrypt text with passphrase"
+  ]
+}

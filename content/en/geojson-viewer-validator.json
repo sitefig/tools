@@ -1,0 +1,44 @@
+{
+ "id": "geojson-viewer-validator",
+ "seoTitle": "GeoJSON Viewer and Validator: Plot, Stats, Problems",
+ "metaDescription": "Paste GeoJSON to validate it and see points, lines and polygons plotted offline, with bounding box, lengths, areas and a problem list.",
+ "intro": "Checks GeoJSON structure and draws the features without a map service, listing counts, extent, length and area.",
+ "why": "GeoJSON is easy to get slightly wrong: longitude and latitude swapped, a polygon ring that is not closed, a coordinate out of range. The tool lists such problems and plots the data over country outlines (Natural Earth, public domain) so you can see if it lands on the right continent.\n\nLength and area use spherical formulas and are approximate. Editing is done in the text box: change the JSON and run again. Drawing and dragging on a map needs tiles and is not offered; use the waypoint tool to build GPX from typed points.",
+ "howTo": [
+  "Paste GeoJSON in the box.",
+  "Choose a label property and optionally a numeric property to size points.",
+  "Switch the country outlines on or off.",
+  "Read the problems and copy the formatted JSON."
+ ],
+ "faq": [
+  {
+   "q": "Does it fix errors?",
+   "a": "No, it reports them."
+  },
+  {
+   "q": "Is swapped lat/lon detected?",
+   "a": "Only when a value falls out of range; a swap with small values is visible on the plot."
+  },
+  {
+   "q": "Which projection?",
+   "a": "A simple equirectangular fit, not Web Mercator."
+  },
+  {
+   "q": "Limits?",
+   "a": "5000 features."
+  }
+ ],
+ "related": [
+  "kml-gpx-geojson-converter",
+  "csv-to-geojson",
+  "geojson-to-csv",
+  "json-validate",
+  "radius-circle-geojson",
+  "csv-to-map-plotter"
+ ],
+ "keywords": [
+  "geojson viewer",
+  "validate geojson online",
+  "geojson plot offline"
+ ]
+}

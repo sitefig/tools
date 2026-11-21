@@ -1,0 +1,46 @@
+{
+ "id": "exif-viewer",
+ "seoTitle": "Free EXIF Viewer: Read Photo Metadata Online",
+ "metaDescription": "View EXIF data in JPEG, PNG and WebP photos: camera, dates and GPS location. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Read the metadata hidden inside a photo: camera model, dates, software and GPS position for JPEG, plus text chunks in PNG and WebP. The file stays in your browser.",
+ "why": "A photo carries more than pixels. A phone snapshot can include the exact coordinates where it was taken, the time, the device model and the editing software. Sharing it without checking can reveal your home address or routine, which matters for marketplace listings, support tickets and social posts.\n\nThis viewer parses the file with a small hand-written reader and lists what it finds, including the risky fields. It is also useful the other way round, for photographers checking lens settings or journalists checking when a picture was taken. Since the image is never uploaded, you can inspect private photos safely before you decide whether to clean them.",
+ "howTo": [
+  "Choose one or more image files with the file picker.",
+  "Run the tool to parse each file.",
+  "Read the report for camera, dates, software and any GPS position.",
+  "If risky fields appear, use the metadata remover before sharing the image."
+ ],
+ "faq": [
+  {
+   "q": "Which formats does it read?",
+   "a": "JPEG files are read for EXIF, including camera, date and GPS fields. PNG and WebP files are read for their metadata chunks. Other formats may show an error message for that file."
+  },
+  {
+   "q": "Does an image with no EXIF mean it is safe?",
+   "a": "Not necessarily. The report only covers what the parser understands. Social platforms usually strip metadata on upload, but your own site or email attachment will keep it. Use the remover tool to be certain."
+  },
+  {
+   "q": "Can the GPS location be wrong?",
+   "a": "Yes. GPS data comes from the device at capture time and can be missing, approximate or edited. Treat it as a hint, not proof of where a photo was taken."
+  },
+  {
+   "q": "Is my photo sent to a server?",
+   "a": "No. The file is read in your browser and nothing is uploaded, so private photos can be inspected safely."
+  }
+ ],
+ "related": [
+  "exif-remover",
+  "image-info",
+  "image-redaction",
+  "image-compressor",
+  "pdf-info",
+  "pii-redactor"
+ ],
+ "keywords": [
+  "exif viewer online",
+  "view photo metadata",
+  "check gps in photo",
+  "exif data reader free",
+  "image metadata viewer"
+ ]
+}

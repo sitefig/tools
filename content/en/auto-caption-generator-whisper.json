@@ -1,0 +1,45 @@
+{
+ "id": "auto-caption-generator-whisper",
+ "seoTitle": "Auto Caption Generator: SRT and VTT with Whisper, Offline",
+ "metaDescription": "Make timed SRT or WebVTT captions from speech in an audio or video file with Whisper tiny English running in your browser. Edit, then download. Free and private.",
+ "intro": "Whisper tiny.en transcribes your file in speech windows, the text is split into captions and timed along the voiced parts, and you can edit the result before downloading SRT or WebVTT.",
+ "why": "Captions make video usable without sound and are required for accessibility in many settings. This tool runs the OpenAI Whisper tiny English model in your browser tab, so the audio never leaves your device. It first finds speech and pauses from the sound level, cuts the audio at long pauses into windows, skips silence, transcribes each window, then splits the text at punctuation and spreads the captions over the voiced time.\n\nBe aware of the limits. The model is small (about 43 MB) and English only. It takes roughly 20 to 25 seconds per speech window on a typical laptop, misses names and jargon, and may invent words on noise or music. Timing is estimated from sound levels, not aligned word by word, so captions can be off by a fraction of a second. On a test clip of a clean 11 second recording the text matched the reference exactly and caption edges fell within a few hundredths of a second of the pauses an independent tool found. Always proofread.",
+ "howTo": [
+  "Choose an audio or video file and a window length (shorter windows time better but take longer).",
+  "Press \"Make captions\" and wait. The first run downloads the model.",
+  "Edit the captions in the text box, then press \"Check the captions\" for timing and length warnings.",
+  "Pick SRT or WebVTT and download."
+ ],
+ "faq": [
+  {
+   "q": "Why only English?",
+   "a": "The bundled model is Whisper tiny.en, which was trained for English. Other languages would need a different, larger model."
+  },
+  {
+   "q": "How long does it take?",
+   "a": "About 20 to 25 seconds of processing for each window of speech on a typical laptop. Silent stretches are skipped. Files over 30 minutes are refused."
+  },
+  {
+   "q": "How accurate are the timings?",
+   "a": "They are estimates. The text is split at punctuation and spread over the speech detected in each window, so expect small errors, larger when someone pauses inside a sentence."
+  },
+  {
+   "q": "Is my audio uploaded?",
+   "a": "No. The file is decoded and transcribed in your browser. The only download is the model file from this site."
+  }
+ ],
+ "related": [
+  "subtitle-srt-vtt-converter",
+  "subtitle-timing-sync",
+  "caption-file-validator",
+  "subtitle-burner",
+  "ai-speech-to-text",
+  "youtube-caption-format-converter"
+ ],
+ "keywords": [
+  "auto caption generator",
+  "whisper srt offline",
+  "generate subtitles from video",
+  "speech to captions browser"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "mind-map-maker",
+ "seoTitle": "Free Mind Map Maker with Markdown Outline Export",
+ "metaDescription": "Build a tree of ideas with branches and sub-branches, then export it as a Markdown outline. Saved in your browser. Free, no account, nothing uploaded.",
+ "intro": "Build a mind map as a tree: a central idea with branches and sub-branches you can add, rename and delete. The tool exports the structure as a Markdown outline.",
+ "why": "A mind map is useful for getting thoughts out of your head before they are ordered: the structure of an article, a meeting agenda, the parts of a project. Many mind map apps are heavy, ask you to sign up, or lock your map inside a proprietary format.\n\nThis one is deliberately plain. You edit a tree of text fields, adding children with a button and deleting branches you do not need, and below it a Markdown outline updates as you type, which you can paste into a note, wiki or README. The map is saved in this browser only, so nothing is uploaded. It is a text outline, not a drawn diagram with circles and lines.",
+ "howTo": [
+  "Click the central idea field and replace \"Central idea\" with your topic.",
+  "Click \"+ child\" on any node to add a branch under it, and type the idea into the new field.",
+  "Click \"delete\" to remove a branch you do not need.",
+  "Copy the Markdown outline from the box below the tree with the Copy button."
+ ],
+ "faq": [
+  {
+   "q": "Is it a visual mind map?",
+   "a": "No. It is an indented tree of text fields with a Markdown outline export. There are no drawn bubbles or lines. If you need a diagram, convert the outline to Mermaid or use a drawing tool."
+  },
+  {
+   "q": "Where is my map saved?",
+   "a": "In your browser's local storage on this device only. It is not uploaded and will not sync. Clearing site data, or using a private window, removes it, so copy the outline when it matters."
+  },
+  {
+   "q": "What does the Markdown look like?",
+   "a": "The central idea becomes a top-level heading and each branch becomes a bullet, indented one level per depth. It pastes cleanly into Markdown editors, GitHub and note apps."
+  },
+  {
+   "q": "Can I have more than one map?",
+   "a": "No, there is one map stored per browser. To start another, copy the outline you want to keep, then rename the nodes or delete branches."
+  }
+ ],
+ "related": [
+  "kanban-board",
+  "user-flow-to-mermaid-text",
+  "topic-cluster-planner",
+  "markdown-preview",
+  "flashcards-spaced-repetition",
+  "scratchpad-notes"
+ ],
+ "keywords": [
+  "mind map maker",
+  "free mind map online",
+  "mind map to markdown",
+  "simple mind mapping tool",
+  "outline brainstorming tool",
+  "mind map no sign up"
+ ]
+}

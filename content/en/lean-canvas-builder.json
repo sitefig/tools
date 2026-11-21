@@ -1,0 +1,39 @@
+{
+ "id": "lean-canvas-builder",
+ "seoTitle": "Lean Canvas Builder: One-Page Business Plan",
+ "metaDescription": "Fill in the nine boxes of a lean canvas and get a printable one-page canvas. Free, runs in your browser.",
+ "intro": "Lays the nine lean canvas boxes out on one page you can save or print.",
+ "why": "The lean canvas fits a business idea on one page: problem, solution, value proposition, unfair advantage, customer segments, key metrics, channels, costs and revenue. It forces short answers and shows the gaps.\n\nWrite a point per line in each box. The result is an HTML page you can save or print to PDF. Nothing is uploaded.",
+ "howTo": [
+  "Fill each box with short points, one per line.",
+  "Check the preview.",
+  "Save the page or print it to PDF."
+ ],
+ "faq": [
+  {
+   "q": "Where do I start?",
+   "a": "With the problem and customer segments, then the value proposition."
+  },
+  {
+   "q": "Is the result editable?",
+   "a": "Edit the text here and generate it again."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "business-model-canvas-builder",
+  "okr-planner-scorer",
+  "raci-matrix-builder",
+  "decision-matrix",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "lean canvas builder",
+  "lean canvas template",
+  "one page business plan"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "social-banner-maker",
+ "seoTitle": "Social Media Banner Maker with Safe-Area Guide",
+ "metaDescription": "Make a header at a preset or custom size with text, colour or photo background and a dashed safe-area guide. Free, local PNG.",
+ "intro": "Draws a banner with your text on a gradient or photo at a preset or custom size and shows a safe-area rectangle so important text stays inside.",
+ "why": "Platforms crop headers differently on phones and desktops. The guide marks an inset from each edge you choose, so keep names and faces inside it. Turn the guide off for the final export.\n\nPreset sizes are values commonly quoted for each platform and were not checked against today's platform help, so confirm them before you rely on them. The existing Social Image Size Reference lists which ones were checked.",
+ "howTo": [
+  "Choose a preset size or enter a custom size.",
+  "Type your text and set colours, an optional photo, and text size.",
+  "Set the safe-area inset and keep the guide on while designing.",
+  "Turn the guide off and download the PNG."
+ ],
+ "faq": [
+  {
+   "q": "Are the preset sizes official?",
+   "a": "They are widely quoted, not verified here. Check the platform."
+  },
+  {
+   "q": "Can I add a logo?",
+   "a": "Use the Video Watermarker or Image Watermark on the result."
+  },
+  {
+   "q": "What is the maximum size?",
+   "a": "6000 pixels per side."
+  },
+  {
+   "q": "Is my image uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "social-image-size-reference",
+  "opengraph-banner-canvas-generator",
+  "image-resizer",
+  "image-watermark",
+  "quote-image-maker",
+  "simple-logo-maker"
+ ],
+ "keywords": [
+  "social media banner maker",
+  "linkedin banner maker",
+  "youtube channel art size",
+  "header image safe area"
+ ]
+}

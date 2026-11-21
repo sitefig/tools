@@ -1,0 +1,43 @@
+{
+ "id": "json-csv-grid-editor",
+ "seoTitle": "Free JSON & CSV Grid Editor in Your Browser",
+ "metaDescription": "Edit JSON arrays or CSV in a spreadsheet-like grid: change cells, add rows and columns, sort, then export CSV or JSON. Free, no upload.",
+ "intro": "Paste or open a JSON array of objects or a CSV file, edit it in a spreadsheet-like grid, add or delete rows and columns, sort by a column, and copy or download the result as CSV or JSON.",
+ "why": "Editing a few cells in a large JSON or CSV file is awkward in a text editor. Quotes get lost, a stray comma breaks a row, and finding the right line in a long array takes patience. Opening a full spreadsheet application can be heavy and may change how numbers and dates are stored.\n\nThis grid shows your data as rows and columns, so you can fix a value, rename a header, add a column or sort and then export in the format you need. Numbers and booleans stay typed in the JSON output instead of becoming strings. The data never leaves your browser, which makes it safe for customer lists, test data and exports you would rather not upload to an online service.",
+ "howTo": [
+  "Paste JSON (an array of objects) or CSV into the input, or open a file.",
+  "Click a cell to edit it, and use the controls to add or delete rows and columns or rename a header.",
+  "Click a column header to sort by that column.",
+  "Copy or download the data as CSV or JSON."
+ ],
+ "faq": [
+  {
+   "q": "What JSON shape does it accept?",
+   "a": "An array of objects, where each object becomes a row and its keys become columns. Deeply nested objects do not fit a flat grid well, so flatten them first with the JSON flatten tool."
+  },
+  {
+   "q": "Are numbers kept as numbers?",
+   "a": "Yes. In JSON output, values that look like numbers or booleans are written as numbers and booleans rather than strings. In CSV everything is text, as the format has no types."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "There is no fixed limit, but a grid with many thousands of rows depends on your browser's memory and speed. For very large files, a command-line tool or a database import is a better fit."
+  }
+ ],
+ "related": [
+  "csv-viewer",
+  "csv-to-json",
+  "json-to-csv",
+  "json-flatten-unflatten",
+  "xlsx-viewer",
+  "json-format"
+ ],
+ "keywords": [
+  "json csv grid editor",
+  "edit csv online",
+  "edit json as table",
+  "csv editor in browser",
+  "json table editor",
+  "free csv json spreadsheet editor"
+ ]
+}

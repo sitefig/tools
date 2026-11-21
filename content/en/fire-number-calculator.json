@@ -1,0 +1,39 @@
+{
+ "id": "fire-number-calculator",
+ "seoTitle": "FIRE Number Calculator: Portfolio and Years to Go",
+ "metaDescription": "Calculate the portfolio you need for financial independence from annual spending and withdrawal rate, and the years to reach it.",
+ "intro": "FIRE number, progress to date and years left from your savings and expected real return.",
+ "why": "The FIRE number is annual spending divided by a withdrawal rate. At 4% it is 25 times spending. The rate is a rule of thumb from historical market data; longer retirements usually call for lower rates.\n\nThe years estimate uses a constant real return (after inflation) and yearly contributions. Real markets are uneven, so treat it as a rough guide and test several return values.",
+ "howTo": [
+  "Enter annual spending and a withdrawal rate.",
+  "Enter your invested amount and yearly savings.",
+  "Set a real return and read the years."
+ ],
+ "faq": [
+  {
+   "q": "Should I use real or nominal returns?",
+   "a": "Real returns, after inflation, so that spending stays in today's money."
+  },
+  {
+   "q": "Is 4% safe?",
+   "a": "It is a rule of thumb, not a guarantee. Use a lower rate for longer horizons."
+  },
+  {
+   "q": "Are taxes included?",
+   "a": "No. Taxes and fees are not modelled."
+  }
+ ],
+ "related": [
+  "retirement-estimator",
+  "compound-interest",
+  "savings-goal",
+  "inflation-calculator",
+  "net-worth-calculator",
+  "emergency-fund-calculator"
+ ],
+ "keywords": [
+  "FIRE number",
+  "financial independence calculator",
+  "4 percent rule"
+ ]
+}

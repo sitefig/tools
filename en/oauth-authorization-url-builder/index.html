@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free OAuth 2.0 Authorization URL Builder With PKCE and State | Free Tools</title>
+<meta name="description" content="Build an OAuth 2.0 or OpenID Connect authorization URL with scopes, state, nonce and PKCE S256. Free, runs locally.">
+<link rel="canonical" href="https://tools.sitefig.net/en/oauth-authorization-url-builder/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/oauth-authorization-url-builder/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/oauth-authorization-url-builder/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free OAuth 2.0 Authorization URL Builder With PKCE and State | Free Tools">
+<meta property="og:description" content="Build an OAuth 2.0 or OpenID Connect authorization URL with scopes, state, nonce and PKCE S256. Free, runs locally.">
+<meta property="og:url" content="https://tools.sitefig.net/en/oauth-authorization-url-builder/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free OAuth 2.0 Authorization URL Builder With PKCE and State | Free Tools">
+<meta name="twitter:description" content="Build an OAuth 2.0 or OpenID Connect authorization URL with scopes, state, nonce and PKCE S256. Free, runs locally.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"OAuth 2.0 Authorization URL Builder","url":"https://tools.sitefig.net/en/oauth-authorization-url-builder/","description":"Build an OAuth 2.0 or OpenID Connect authorization URL with scopes, state, nonce and PKCE S256. Free, runs locally.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the authorization endpoint, client_id and redirect URI.","Choose the response type and scopes.","Leave state blank for a random one, and tick PKCE for the code flow.","Copy the URL and keep the code verifier."],"keywords":"oauth authorization url, oauth2 url builder, pkce authorize url","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Network & HTTP","item":"https://tools.sitefig.net/en/#network-and-http"},{"@type":"ListItem","position":3,"name":"OAuth 2.0 Authorization URL Builder","item":"https://tools.sitefig.net/en/oauth-authorization-url-builder/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it send the URL anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. It only builds text. You open the URL yourself."}},{"@type":"Question","name":"Why is PKCE ignored for some response types?","acceptedAnswer":{"@type":"Answer","text":"PKCE protects the authorization code flow. For other flows there is no code to protect."}},{"@type":"Question","name":"Do I need a nonce?","acceptedAnswer":{"@type":"Answer","text":"OpenID Connect flows that return an ID token directly need one. The tool warns when it is missing."}},{"@type":"Question","name":"Where do I put the client secret?","acceptedAnswer":{"@type":"Answer","text":"Not in this URL. It goes in the token request, from a server."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#network-and-http">Network &amp; HTTP</a></li><li><span aria-current="page">OAuth 2.0 Authorization URL Builder</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>OAuth 2.0 Authorization URL Builder</h1>
+<p class="lede">Builds the authorization request URL for the authorization code or implicit flow. It encodes the parameters, can generate a random state, nonce and a PKCE code challenge, and lists each parameter.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="oauth-authorization-url-builder" data-module="new10" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Authorization URLs fail on small things: an unencoded redirect URI, a missing scope separator, no state, a PKCE challenge that does not match the verifier. The error pages are often vague.</p>
+<p>This tool assembles the URL with correct encoding and random values from the browser crypto API. If it generates a PKCE verifier it shows it once. Keep it, you need it at the token request. Client secrets do not belong in this URL and the tool has no field for them.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the authorization endpoint, client_id and redirect URI.</li><li>Choose the response type and scopes.</li><li>Leave state blank for a random one, and tick PKCE for the code flow.</li><li>Copy the URL and keep the code verifier.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does it send the URL anywhere?</summary><p>No. It only builds text. You open the URL yourself.</p></details>
+<details><summary>Why is PKCE ignored for some response types?</summary><p>PKCE protects the authorization code flow. For other flows there is no code to protect.</p></details>
+<details><summary>Do I need a nonce?</summary><p>OpenID Connect flows that return an ID token directly need one. The tool warns when it is missing.</p></details>
+<details><summary>Where do I put the client secret?</summary><p>Not in this URL. It goes in the token request, from a server.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/pkce-generator/"><span class="link-card__title">PKCE Generator (OAuth code_verifier / challenge)</span><span class="link-card__desc">Generate an RFC 7636 code_verifier, its S256 code_challenge, plus random state and nonce. Paste your own verifier to compute its challenge.</span></a></li><li><a class="link-card" href="/en/jwt-expiry-calculator/"><span class="link-card__title">JWT Expiry Calculator</span><span class="link-card__desc">Check exp / nbf / iat of one or more JWTs against now (or a time you choose) with optional clock-skew leeway: remaining lifetime, total lifetime, and warnings. The signature is not verified.</span></a></li><li><a class="link-card" href="/en/http-basic-auth-generator/"><span class="link-card__title">HTTP Basic Auth Header Generator</span><span class="link-card__desc">Encode user:password into an Authorization header and snippets.</span></a></li><li><a class="link-card" href="/en/query-string/"><span class="link-card__title">Query String Parser / Builder</span><span class="link-card__desc">Parse a query string or URL into key/value pairs and JSON, or build one from key=value lines or JSON.</span></a></li><li><a class="link-card" href="/en/webhook-signature-verifier/"><span class="link-card__title">Webhook Signature Verifier (HMAC)</span><span class="link-card__desc">Verify a webhook's HMAC signature locally: paste the raw request body, the signature header(s) and your signing secret, choose the provider (GitHub, Stripe, Slack, Shopify, Standard Webhooks/Svix or generic HMAC) and see the expected signature, a constant-time comparison and, where relevant, timestamp tolerance. The body must be the exact raw bytes received (no re-serialised JSON).</span></a></li><li><a class="link-card" href="/en/url-encode/"><span class="link-card__title">URL Encode</span><span class="link-card__desc">Percent-encode text for URLs.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

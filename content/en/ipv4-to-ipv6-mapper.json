@@ -1,0 +1,44 @@
+{
+ "id": "ipv4-to-ipv6-mapper",
+ "seoTitle": "Free IPv4 to IPv6 Mapper: Mapped, 6to4 and NAT64 Forms",
+ "metaDescription": "Convert an IPv4 address to its IPv4-mapped, 6to4 and NAT64 IPv6 forms, or extract the IPv4 from such an address. Free and offline.",
+ "intro": "Shows how an IPv4 address looks inside IPv6: the IPv4-mapped form ::ffff:a.b.c.d, the 6to4 prefix (2002::/16) and the NAT64 well-known prefix 64:ff9b::/96. It also reverses these forms.",
+ "why": "Dual-stack software often logs ::ffff:192.0.2.1 for an IPv4 client, and NAT64 networks hand out 64:ff9b:: addresses for IPv4-only servers. Reading those by eye is slow because the IPv4 part is hidden in hex.\n\nThis page converts in both directions with exact integer maths. It covers three documented embeddings only. Other schemes, such as Teredo or network-specific NAT64 prefixes, are reported as not recognised.",
+ "howTo": [
+  "Paste IPv4 or IPv6 addresses, one per line.",
+  "For an IPv4 address, copy the form you need.",
+  "For an IPv6 address, read the embedded IPv4 address if it uses one of the known forms."
+ ],
+ "faq": [
+  {
+   "q": "What is an IPv4-mapped address?",
+   "a": "An address in ::ffff:0:0/96 that carries an IPv4 address in the last 32 bits. Sockets use it to let an IPv6 socket talk to IPv4 hosts."
+  },
+  {
+   "q": "What is 6to4?",
+   "a": "A transition method that put the IPv4 address inside 2002::/16. It is deprecated, but the addresses still show up in old logs."
+  },
+  {
+   "q": "Does the NAT64 result work on my network?",
+   "a": "Only if your NAT64 gateway uses the well-known prefix 64:ff9b::/96. Many networks use their own prefix."
+  },
+  {
+   "q": "Are my addresses sent anywhere?",
+   "a": "No. The conversion runs in your browser."
+  }
+ ],
+ "related": [
+  "ip-validator-converter",
+  "ip-subnet-calculator",
+  "ipv6-prefix-splitter",
+  "ip-address-offline-lookup",
+  "ip-supernetting-calculator",
+  "subnet-cheat-sheet"
+ ],
+ "keywords": [
+  "ipv4 to ipv6",
+  "ipv4 mapped ipv6",
+  "nat64 address",
+  "6to4 address"
+ ]
+}

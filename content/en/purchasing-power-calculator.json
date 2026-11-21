@@ -1,0 +1,39 @@
+{
+ "id": "purchasing-power-calculator",
+ "seoTitle": "Purchasing Power Calculator With Yearly Table",
+ "metaDescription": "See what a sum will buy in today's money after each year of inflation, and the amount you need to keep pace. Free.",
+ "intro": "A year-by-year table of how inflation erodes the value of an amount.",
+ "why": "Money kept in cash loses value when prices rise. The table shows the value in today's terms and the nominal amount needed to match the original buying power in each future year.\n\nIt assumes a constant rate. For real historical changes in the euro area, use the euro area inflation calculator.",
+ "howTo": [
+  "Enter an amount and an inflation rate.",
+  "Set the number of years.",
+  "Read the table."
+ ],
+ "faq": [
+  {
+   "q": "Which rate should I use?",
+   "a": "Central banks often target around 2%. Choose a rate that matches your own assumptions."
+  },
+  {
+   "q": "Is it exact?",
+   "a": "Within the constant-rate assumption yes. Real inflation varies."
+  },
+  {
+   "q": "Does it include interest?",
+   "a": "No. See the compound interest calculator."
+  }
+ ],
+ "related": [
+  "inflation-calculator",
+  "euro-area-inflation-calculator",
+  "compound-interest",
+  "savings-goal",
+  "retirement-estimator",
+  "percent-change"
+ ],
+ "keywords": [
+  "purchasing power",
+  "inflation erosion",
+  "real value of money"
+ ]
+}

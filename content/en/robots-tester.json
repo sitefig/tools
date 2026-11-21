@@ -1,0 +1,46 @@
+{
+ "id": "robots-tester",
+ "seoTitle": "Free robots.txt Tester: Check URLs Against Rules",
+ "metaDescription": "Test whether URLs are allowed or blocked by your robots.txt for a chosen user-agent, with longest-match and wildcard rules. Free, in-browser.",
+ "intro": "Paste a robots.txt and a list of URLs, pick a user-agent such as Googlebot or Bingbot, and see which URLs are allowed or blocked and which rule decided it.",
+ "why": "A single wrong line in robots.txt can hide a whole section of a site from search engines, or leave a private area open to crawlers. The rules are subtle: the longest matching path wins, wildcards and the end-of-URL dollar sign change matching, and different user-agent groups apply to different bots.\n\nThis tester parses the robots.txt you paste, finds the most specific group for the user-agent you choose, and checks each URL against its allow and disallow rules, showing the winning rule next to the result. It shows allowed and blocked counts at the top. It follows the common behaviour of major crawlers but is not the exact parser used by any search engine, so confirm important changes in Search Console. The test runs in your browser.",
+ "howTo": [
+  "Paste your robots.txt into the first box.",
+  "Paste the URLs you want to test, one per line, into the second box.",
+  "Enter the user-agent in the options, for example Googlebot.",
+  "Run the tool and review which URLs are blocked, and by which rule."
+ ],
+ "faq": [
+  {
+   "q": "How are conflicts between Allow and Disallow decided?",
+   "a": "The rule with the longest matching path wins. If an Allow and a Disallow match with equal length, Allow wins. Wildcards using an asterisk and a trailing dollar sign are supported."
+  },
+  {
+   "q": "Which group does a user-agent use?",
+   "a": "The most specific matching group applies, falling back to the asterisk group. Rules from other groups are not merged. If no group matches, everything is allowed."
+  },
+  {
+   "q": "Does blocking in robots.txt remove a page from search?",
+   "a": "Not reliably. It stops crawling, but a blocked URL can still be indexed if other pages link to it. Use a noindex directive on a crawlable page to keep it out of results."
+  },
+  {
+   "q": "Is my robots.txt uploaded?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "robots-generator",
+  "ai-bot-robots-builder",
+  "sitemap-validator",
+  "seo-robots-noindex-simulator",
+  "http-headers-analyzer",
+  "seo-inspector"
+ ],
+ "keywords": [
+  "robots.txt tester",
+  "test robots.txt online",
+  "robots txt checker url",
+  "check if url is blocked by robots",
+  "robots.txt validator free"
+ ]
+}

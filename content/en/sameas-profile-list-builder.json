@@ -1,0 +1,45 @@
+{
+ "id": "sameas-profile-list-builder",
+ "seoTitle": "sameAs Profile List Builder (Wikidata, Wikipedia, Social)",
+ "metaDescription": "Clean profile links, Wikipedia pages and Wikidata Q-ids into a sameAs array: https, no tracking parameters, no share links, no duplicates.",
+ "intro": "Normalises a list of profile URLs, Wikipedia links and Wikidata Q-ids into a clean sameAs array and tells you what each one is.",
+ "why": "sameAs links tell search engines that your organization or person is the same entity as a profile elsewhere. The list is usually a mess: http links, mobile Wikipedia URLs, tracking parameters, share buttons pasted by mistake. This tool cleans them up, turns Q-ids into Wikidata URLs, labels each platform and drops duplicates and share links.\n\nIt does not look anything up. Finding the right Wikidata item or Wikipedia page for a name needs a live search, which a client-side page cannot do; find the Q-id on wikidata.org and paste it here.",
+ "howTo": [
+  "Paste profile URLs, Q-ids or Wikipedia links, one per line.",
+  "Read the notes for each cleaned entry.",
+  "Copy the sameAs array.",
+  "Put it in your Organization or Person markup."
+ ],
+ "faq": [
+  {
+   "q": "Why not look up Wikidata for me?",
+   "a": "That needs a network call to another site, which this page does not make."
+  },
+  {
+   "q": "What is removed?",
+   "a": "Tracking parameters such as utm_ and fbclid, fragments, trailing slashes and share links."
+  },
+  {
+   "q": "Is every link kept as https?",
+   "a": "Yes, http is upgraded."
+  },
+  {
+   "q": "Should I list every profile?",
+   "a": "Only pages truly about the same entity."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "localbusiness-schema-generator",
+  "article-schema-generator",
+  "jsonld-syntax-validator",
+  "canonical-generator",
+  "schema-graph-merger"
+ ],
+ "keywords": [
+  "sameas generator",
+  "wikidata sameAs",
+  "organization sameAs urls",
+  "clean social profile links"
+ ]
+}

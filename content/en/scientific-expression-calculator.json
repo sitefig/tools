@@ -1,0 +1,46 @@
+{
+ "id": "scientific-expression-calculator",
+ "seoTitle": "Free Scientific Calculator Online: Type Expressions",
+ "metaDescription": "Evaluate maths expressions with powers, brackets, percentages and functions like sqrt, sin, ln and log, one per line. Free, runs in your browser.",
+ "intro": "Type one or more expressions, one per line, using operators, brackets and functions such as sqrt, sin, cos, ln and log. The tool evaluates each line and lets you pick radians or degrees.",
+ "why": "A phone calculator is fine for sums, but it is awkward when you want to see the whole expression, change a number and run it again. Typing expressions as text makes it easy to check your working, keep several calculations in a list and paste results into notes. This calculator uses a small hand-written parser rather than running your input as code, so it understands operator precedence, powers with ^, brackets, percentages and the constants pi and e, and nothing else. It supports common functions including trigonometric, logarithmic, rounding and absolute value, with a switch for degrees. Errors such as a missing bracket are reported plainly. Everything is evaluated in your browser.",
+ "howTo": [
+  "Type an expression on each line, for example 2 * (3 + 4)^2 / sqrt(16).",
+  "Choose Radians or Degrees for the trigonometric functions.",
+  "Read the result beside each expression."
+ ],
+ "faq": [
+  {
+   "q": "Which functions are supported?",
+   "a": "sqrt, cbrt, sin, cos, tan, asin, acos, atan, ln, log (base 10), log2, exp, abs, floor, ceil and round, plus the constants pi and e."
+  },
+  {
+   "q": "How does the percent sign work?",
+   "a": "A percent sign after a number divides it by 100, so 50% * 80 is 40. Between two operands, as in 17 % 5, it works as a remainder (modulo) instead."
+  },
+  {
+   "q": "Is my input run as JavaScript code?",
+   "a": "No. A purpose-built parser reads the expression, so only numbers, operators, brackets, known functions and the constants pi and e are accepted. Anything else produces an error."
+  },
+  {
+   "q": "Why do I get a long decimal or tiny error?",
+   "a": "Results are computed in floating point and shown to twelve significant digits, so values like 0.1 + 0.2 may carry a small rounding difference. Round the result yourself if needed."
+  }
+ ],
+ "related": [
+  "fraction-calculator",
+  "average-median-mode",
+  "bignumber-calculator",
+  "bitwise-calculator",
+  "matrix-calculator",
+  "percentage-calculator"
+ ],
+ "keywords": [
+  "scientific calculator online",
+  "free scientific calculator",
+  "expression calculator",
+  "calculator with brackets and functions",
+  "online math calculator",
+  "sin cos tan calculator"
+ ]
+}

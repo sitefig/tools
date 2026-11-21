@@ -1,0 +1,44 @@
+{
+ "id": "ios-crash-report-viewer",
+ "seoTitle": "iOS Crash Report Viewer for .crash and .ips Files",
+ "metaDescription": "Format Apple crash reports: device, OS, exception, termination reason and the crashed thread backtrace. Free, does not upload.",
+ "intro": "Reads .ips JSON and older text crash reports and shows the key facts first.",
+ "why": "Crash reports are long. The things you need first are the exception type, the termination reason and the backtrace of the crashed thread.\n\nThis tool formats them, but it does not symbolicate. Frames marked not symbolicated need your dSYM files, which Xcode or atos use.",
+ "howTo": [
+  "Open the .ips or .crash file or paste its contents.",
+  "Read the header and exception.",
+  "Read the crashed thread frames.",
+  "Tick the option to list other threads."
+ ],
+ "faq": [
+  {
+   "q": "What is .ips?",
+   "a": "The JSON crash report format used by recent iOS and macOS versions."
+  },
+  {
+   "q": "Why are frames not symbolicated?",
+   "a": "The report holds addresses and image offsets. Symbols need the dSYM matching the build."
+  },
+  {
+   "q": "Is the report uploaded?",
+   "a": "No."
+  },
+  {
+   "q": "Does it fix crashes?",
+   "a": "No, it only helps read the report."
+  }
+ ],
+ "related": [
+  "android-logcat-viewer",
+  "stacktrace-formatter",
+  "source-map-stack-trace-decoder",
+  "exception-grouper",
+  "json-format",
+  "app-store-description-template"
+ ],
+ "keywords": [
+  "ios crash log viewer",
+  "ips file reader",
+  "apple crash report format"
+ ]
+}

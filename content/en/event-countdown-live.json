@@ -1,0 +1,38 @@
+{
+ "id": "event-countdown-live",
+ "seoTitle": "Live Event Countdown with Shareable Link",
+ "metaDescription": "A ticking countdown to an event name, date and time, with a link that carries those settings. Free.",
+ "intro": "Counts down live to an event in days, hours, minutes and seconds and keeps the settings in the page link so you can share it.",
+ "why": "Share a launch, trip or exam date with a link that shows the remaining time. The link holds the event name, date and time, nothing else.\n\nThe time is read in the viewer's local time zone, so people in other zones see the same wall-clock moment in their own zone.",
+ "howTo": [
+  "Enter an event name, date and time.",
+  "Watch the countdown.",
+  "Press Copy share link."
+ ],
+ "faq": [
+  {
+   "q": "Which time zone is used?",
+   "a": "The viewer's own, so a 09:00 event is 09:00 for each viewer."
+  },
+  {
+   "q": "What happens after the date?",
+   "a": "It shows how long ago the event was."
+  },
+  {
+   "q": "Is anything sent to a server?",
+   "a": "No. The link carries the settings in the address."
+  }
+ ],
+ "related": [
+  "countdown-to-date",
+  "countdown-timer",
+  "timezone-meeting-planner",
+  "world-clock",
+  "date-difference",
+  "pomodoro-timer-notifications"
+ ],
+ "keywords": [
+  "countdown timer to date",
+  "event countdown link"
+ ]
+}

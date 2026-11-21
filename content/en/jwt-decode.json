@@ -1,0 +1,47 @@
+{
+ "id": "jwt-decode",
+ "seoTitle": "Free JWT Decoder to Read Header and Payload",
+ "metaDescription": "Decode a JSON Web Token to see its header, payload and human-readable exp, iat and nbf times. Free, runs in your browser, and does not verify the signature.",
+ "intro": "Paste a JWT and read its header and payload as formatted JSON. Expiry, issued-at and not-before times are shown as dates. The signature is not verified.",
+ "why": "When a login fails or an API returns 401, the first question is what the token actually says. Has it expired, which audience was it issued for, which scopes does it carry? A JWT is only Base64 text, so you can read the claims without a key, but not by eye.\n\nThis decoder splits the token, decodes the header and payload, and converts exp, iat and nbf into readable dates with a note on whether the token has expired. It runs in your browser, so the token is not uploaded. It does not check the signature; use the verifier for that. Avoid pasting live production tokens into pages you do not trust.",
+ "howTo": [
+  "Paste the JWT into the box. A leading \"Bearer \" is removed for you.",
+  "Read the header, which shows the algorithm and type.",
+  "Read the payload and the timestamps section, including whether exp has passed.",
+  "Copy any claim you need, or move to the verifier to check the signature."
+ ],
+ "faq": [
+  {
+   "q": "Does decoding prove the token is valid?",
+   "a": "No. Anyone can create a token with any claims. Decoding only shows what the token says. To trust it you must verify the signature with the right key and check the issuer, audience and expiry on your server."
+  },
+  {
+   "q": "Are JWTs encrypted?",
+   "a": "Normal signed JWTs are only encoded, not encrypted, so anyone holding one can read the payload. Do not put secrets in it. Encrypted tokens (JWE) have five parts and are not handled by this tool."
+  },
+  {
+   "q": "Why does it say a JWT needs three parts?",
+   "a": "A signed JWT is header.payload.signature, joined by dots. If your string has a different number of parts, it may be truncated, include extra text, or be a different token type, such as an opaque access token."
+  },
+  {
+   "q": "Is it safe to paste a real token?",
+   "a": "Decoding is done locally and nothing is uploaded. Still, a valid token can be replayed by anyone who sees it, so prefer expired or test tokens and never share live ones."
+  }
+ ],
+ "related": [
+  "jwt-verify-hs",
+  "jwt-encode",
+  "jwt-signature-validator",
+  "jwt-expiry-calculator",
+  "base64url-encoder",
+  "timestamp-converter"
+ ],
+ "keywords": [
+  "jwt decoder",
+  "decode jwt online",
+  "json web token viewer",
+  "free jwt parser",
+  "jwt payload reader",
+  "check jwt expiry"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "system-prompt-budgeter",
+ "seoTitle": "Free System Prompt Token Budget Calculator",
+ "metaDescription": "Split a system prompt by headings and see approximate token share per section against your context window and output reserve. Free, in your browser.",
+ "intro": "Paste a system prompt with section headings and see roughly how many tokens each section uses and how much of the context window is left.",
+ "why": "System prompts grow by accretion: a rule here, an example there, until a third of the budget is gone before the user says anything. It is hard to see which section is responsible when the whole thing is one block of text.\n\nThis tool splits the prompt at markdown headings or XML-style tags, estimates tokens for each part and shows each share of the total. It also subtracts your reserved output and history from the context window, so you can see what remains for documents and tool results. The counts are estimates from a heuristic, not the provider tokenizer, so leave a safety margin.",
+ "howTo": [
+  "Paste your prompt, using ## headings or XML-style tags to mark sections.",
+  "Set the context window, the output reserve, the history reserve and a model family.",
+  "Read the table of sections and the remaining budget, then trim the largest parts."
+ ],
+ "faq": [
+  {
+   "q": "How are sections detected?",
+   "a": "Any markdown heading line, or a line that is only an opening XML-style tag, starts a new section. Text before the first one is shown as preamble."
+  },
+  {
+   "q": "How accurate are the token counts?",
+   "a": "They are approximate, based on word pieces of about four characters, with a small adjustment per model family. Expect an error of roughly ten to twenty percent; real tokenizers differ."
+  },
+  {
+   "q": "What does Over Budget mean?",
+   "a": "The prompt plus the output and history reserves exceed the context window you entered, so there is no room left for documents or tool output."
+  },
+  {
+   "q": "Does it send my prompt anywhere?",
+   "a": "No. The prompt is analysed in your browser. No model is called, no tokenizer vocabulary is downloaded, and nothing you paste is stored or uploaded anywhere."
+  }
+ ],
+ "related": [
+  "llm-token-estimator",
+  "gpt-token-counter",
+  "prompt-template-filler",
+  "llm-context-window-shrinker",
+  "prompt-linter",
+  "system-prompt-xml-builder"
+ ],
+ "keywords": [
+  "system prompt token budget",
+  "prompt length calculator",
+  "context window budget tool",
+  "free prompt token estimator",
+  "llm prompt section size"
+ ]
+}

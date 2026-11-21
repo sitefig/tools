@@ -1,0 +1,44 @@
+{
+ "id": "htaccess-bot-blocker-generator",
+ "seoTitle": ".htaccess Bot Blocker Generator: Return 403 to Bad Bots",
+ "metaDescription": "Create .htaccess rules that return 403 Forbidden to selected bots and scrapers, with mod_rewrite or SetEnvIf. Free, in your browser.",
+ "intro": "Generates Apache rules that refuse requests from the user-agents you list.",
+ "why": "On shared Apache hosting, .htaccess is often the only place you can refuse a crawler. Two ways work: mod_rewrite with a condition on the user-agent, or SetEnvIf with Require not env.\n\nList the bot names and pick the method. The rules block anything whose user-agent contains the names, so double check the list. A typo in .htaccess can cause a 500 error, so keep a backup.",
+ "howTo": [
+  "List bot tokens.",
+  "Choose mod_rewrite or SetEnvIf.",
+  "Add the rules to .htaccess.",
+  "Test with curl -A."
+ ],
+ "faq": [
+  {
+   "q": "Which method is better?",
+   "a": "SetEnvIf with Require is the Apache 2.4 style; mod_rewrite works on almost every host."
+  },
+  {
+   "q": "Is the match case sensitive?",
+   "a": "No, the rules use case-insensitive flags."
+  },
+  {
+   "q": "Can bots bypass it?",
+   "a": "Yes, by changing the user-agent."
+  },
+  {
+   "q": "Why 403?",
+   "a": "It means forbidden and tells honest tools to stop."
+  }
+ ],
+ "related": [
+  "htaccess-generator",
+  "bot-firewall-rule-builder",
+  "nginx-bot-map-generator",
+  "redirect-code-generator",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "htaccess block bots",
+  "htaccess block user agent",
+  "block gptbot htaccess",
+  "apache block bad bots"
+ ]
+}

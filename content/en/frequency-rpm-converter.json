@@ -1,0 +1,39 @@
+{
+ "id": "frequency-rpm-converter",
+ "seoTitle": "Frequency Converter: Hz, kHz, MHz, GHz and RPM",
+ "metaDescription": "Convert hertz, kilohertz, megahertz, gigahertz, RPM and rad/s, and see the period. Free and offline.",
+ "intro": "Converts frequency and rotational speed between hertz, kHz, MHz, GHz, revolutions per minute and radians per second, and shows the period of one cycle.",
+ "why": "Motors are rated in RPM, signals in Hz and clocks in MHz or GHz. 1 Hz is 60 RPM, which is easy to forget.\n\nThe tool also shows the period of one cycle so you can move between frequency and time.",
+ "howTo": [
+  "Enter the value.",
+  "Pick its unit.",
+  "Read the other units and the period."
+ ],
+ "faq": [
+  {
+   "q": "How many RPM is 50 Hz?",
+   "a": "3000 RPM, as 1 Hz equals 60 RPM."
+  },
+  {
+   "q": "What is rad/s?",
+   "a": "Angular speed. One turn per second is 2 pi, about 6.283 rad/s."
+  },
+  {
+   "q": "Does it give motor shaft speed from mains frequency?",
+   "a": "No. Pole count and slip change the real speed."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "angle-unit-converter",
+  "pwm-calculator",
+  "wavelength-antenna-calculator",
+  "torque-unit-converter",
+  "power-unit-converter"
+ ],
+ "keywords": [
+  "hz to rpm",
+  "rpm to hz",
+  "mhz to hz"
+ ]
+}

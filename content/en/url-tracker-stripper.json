@@ -1,0 +1,46 @@
+{
+ "id": "url-tracker-stripper",
+ "seoTitle": "Free URL Tracker Stripper: Remove utm and fbclid",
+ "metaDescription": "Remove utm_*, fbclid, gclid and 60+ other tracking parameters from URLs or text. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Clean tracking parameters such as utm_source, fbclid, gclid and msclkid from a list of URLs, or from links inside a block of text. Add your own parameters to remove or keep.",
+ "why": "Links copied from newsletters, ads and social posts often carry long tails of tracking parameters. They make URLs ugly, reveal where you clicked from, and fill analytics with noise when you paste them into your own pages or documents. Cleaning them by hand is fiddly when there are dozens.\n\nThis tool finds http and https URLs in whatever you paste, removes parameters on a built-in list of more than 60 trackers, and leaves everything else, including the fragment, intact. You can add extra parameter names to strip and a keep list for ones you need. An optional summary shows how many links were cleaned. It works locally in your browser.",
+ "howTo": [
+  "Paste URLs, one per line, or any text that contains links.",
+  "Optionally add extra parameters to strip and parameters to keep, separated by commas.",
+  "Tick the summary option if you want counts of removed parameters.",
+  "Run the tool and copy the cleaned links."
+ ],
+ "faq": [
+  {
+   "q": "Which parameters are removed?",
+   "a": "utm_ parameters, fbclid, gclid, dclid, msclkid, mc_eid, igshid, ttclid, twclid, HubSpot and Mailchimp parameters and many more, over 60 in total. You can add others in the extra field."
+  },
+  {
+   "q": "Will it break my links?",
+   "a": "It only deletes listed tracking parameters. Functional parameters like id or page stay. Some sites use tracking-looking names for real functions, so add those to the keep list."
+  },
+  {
+   "q": "Does it handle text, not just URL lists?",
+   "a": "Yes. It finds http and https links inside any text and rewrites them in place, leaving the surrounding words unchanged. Links without a scheme are not detected."
+  },
+  {
+   "q": "Are my links sent anywhere?",
+   "a": "No. The cleaning runs in your browser and no request is made for your URLs, so private or internal links are not visited or logged by this page."
+  }
+ ],
+ "related": [
+  "utm-builder",
+  "utm-bulk-builder",
+  "canonical-generator",
+  "url-parser",
+  "query-string",
+  "url-encode"
+ ],
+ "keywords": [
+  "remove utm parameters",
+  "strip tracking from url",
+  "url cleaner online",
+  "remove fbclid",
+  "clean tracking links free"
+ ]
+}

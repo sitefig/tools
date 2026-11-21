@@ -1,0 +1,46 @@
+{
+ "id": "noncrypto-hashes",
+ "seoTitle": "Free xxHash, MurmurHash3, FNV-1a and SipHash Online",
+ "metaDescription": "Compute xxHash32 and 64, MurmurHash3, FNV-1 and FNV-1a, and SipHash with a seed or key. Fast non-cryptographic hashes, free in your browser.",
+ "intro": "Enter data as text, hex or base64, choose a hash and optionally set a seed or SipHash key. The tool returns the value in hex and decimal.",
+ "why": "Hash tables, bloom filters, sharding keys, deduplication and content-based caches rely on fast hashes that are not meant to be secure. xxHash, MurmurHash3, FNV-1a and SipHash show up in databases, compilers, languages and network software, and ports to other languages are a regular source of subtle bugs: wrong seed handling, byte order or a missing final mix. This page lets you check your implementation against a known-good one for the same input and seed. SipHash accepts a 128-bit key and is designed to protect hash tables against collision attacks, though it is still not a general-purpose cryptographic hash. The others should never be used to protect data or store passwords. The calculation runs in your browser.",
+ "howTo": [
+  "Enter the data and choose text, hex or base64.",
+  "Pick the algorithm and, if needed, set the seed or the 32-hex-character SipHash key.",
+  "Read the result in hex and decimal."
+ ],
+ "faq": [
+  {
+   "q": "Are these hashes secure?",
+   "a": "No. xxHash, MurmurHash3 and FNV are built for speed and distribution, and collisions are easy to craft. SipHash is a keyed function that suits hash tables but is not a general cryptographic hash."
+  },
+  {
+   "q": "How is the seed entered?",
+   "a": "As a decimal number or 0x hexadecimal value. xxHash32 and MurmurHash3 use the lower 32 bits, xxHash64 uses 64 bits. FNV has no seed, and SipHash uses the key."
+  },
+  {
+   "q": "What key does SipHash need?",
+   "a": "A 128-bit key as 32 hex characters. The default 000102...0f is the one used in the SipHash reference test vectors."
+  },
+  {
+   "q": "Which variants are included?",
+   "a": "xxHash32 and xxHash64, MurmurHash3 x86 32-bit, FNV-1 and FNV-1a in 32 and 64 bits, and SipHash-2-4 and SipHash-1-3."
+  }
+ ],
+ "related": [
+  "crc-calculator",
+  "hash-generator",
+  "blake3-hash",
+  "blake2-hash",
+  "checksum-crc32-adler32",
+  "file-hash"
+ ],
+ "keywords": [
+  "xxhash online",
+  "murmurhash3 calculator",
+  "free fnv1a hash",
+  "siphash online",
+  "non cryptographic hash",
+  "hash function tester"
+ ]
+}

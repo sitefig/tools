@@ -1,0 +1,51 @@
+{
+ "id": "psd-layer-viewer",
+ "seoTitle": "PSD Viewer: Open Photoshop Layers and Flatten Online, No Photoshop",
+ "metaDescription": "Open a .psd in your browser: list layers with blend mode, opacity, groups and bounds, see the composite, flatten visible layers or export one layer as PNG. No upload.",
+ "intro": "Inspect a Photoshop file without Photoshop: layer list, stored preview, flattened result and single-layer export.",
+ "why": "The reader parses the PSD header, the layer and mask section and the merged image. For each layer it reports name (Unicode when present), bounds, blend mode, opacity, visibility, clipping, mask, group structure and kind (pixel, text, smart object, shape, fill or adjustment). Pixel data is decoded for raw, RLE, ZIP and ZIP-with-prediction channels in RGB and grayscale, 8 and 16 bit. You can show the composite stored in the file, flatten the layers yourself, or export one layer as a PNG.\n\nThe flattener honours hidden layers and hidden groups, opacity, layer masks, clipping and the blend modes normal, multiply, screen, overlay, darken, lighten, difference, linear dodge and exclusion. Tested against psd-tools on files with all four compressions, groups, a hidden group and a multiply layer: every layer's pixels and bounds were identical, and the flattened image matched psd-tools' composite exactly. 16-bit RGB and 8-bit grayscale files also matched.\n\nLimits: CMYK, Lab, indexed and bitmap modes, 32-bit documents and PSB (large) files are not supported. Text, shapes, smart objects, adjustment layers and layer effects are listed but not drawn, and other blend modes are drawn as normal and reported. If a file was saved without Maximise Compatibility its stored composite is empty, so use the flatten option.",
+ "howTo": [
+  "Choose a .psd file.",
+  "Read the layer table (numbered bottom to top).",
+  "Pick the stored composite, flattened layers or a single layer.",
+  "Download the PNG."
+ ],
+ "faq": [
+  {
+   "q": "Why do text layers look missing in the flattened image?",
+   "a": "Text, vector shapes, smart objects, adjustments and layer effects need Photoshop's renderer. They are listed in the table and reported as not drawn; the stored composite includes them if the file has one."
+  },
+  {
+   "q": "What is the stored composite?",
+   "a": "Photoshop saves a flattened copy in each file when Maximise Compatibility is on. It is the most faithful preview when present."
+  },
+  {
+   "q": "Does it open PSB or CMYK files?",
+   "a": "No. PSB, CMYK, Lab, indexed and 32-bit files give a clear message. The layer list is still shown for unsupported colour modes."
+  },
+  {
+   "q": "Which blend modes are supported?",
+   "a": "Normal, multiply, screen, overlay, darken, lighten, difference, linear dodge and exclusion. Others are drawn as normal and named in the report."
+  },
+  {
+   "q": "Is my file uploaded?",
+   "a": "No. It is decoded in your browser."
+  }
+ ],
+ "related": [
+  "image-format-converter",
+  "image-info",
+  "exif-viewer",
+  "image-compressor",
+  "image-resizer",
+  "image-diff"
+ ],
+ "keywords": [
+  "psd viewer",
+  "open psd online",
+  "photoshop file viewer",
+  "psd layers",
+  "flatten psd",
+  "psd to png"
+ ]
+}

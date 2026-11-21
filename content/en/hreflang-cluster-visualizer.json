@@ -1,0 +1,45 @@
+{
+ "id": "hreflang-cluster-visualizer",
+ "seoTitle": "Hreflang Cluster Visualizer: Spot One-Way Links",
+ "metaDescription": "Draw hreflang annotations as a graph. Missing return links are dashed red arrows, pages without a self-reference are marked.",
+ "intro": "Shows which pages link to which in an hreflang set and highlights the links with no return link.",
+ "why": "The hardest hreflang rule to check by eye is the return link: if page A points to B, B must point back. This diagram draws each annotation as an arrow between pages. A one-way arrow is dashed and red and appears in a list below the picture, so the information is not carried by colour alone.\n\nPages that have annotations but none pointing at themselves are marked with an orange outline and a label. The graph shows up to 40 pages; the audit tool covers larger sets.",
+ "howTo": [
+  "Paste the CSV of annotations.",
+  "Read the summary and the picture description.",
+  "Check the list of missing return links.",
+  "Add the missing annotations."
+ ],
+ "faq": [
+  {
+   "q": "What is a one-way link?",
+   "a": "An annotation A to B where B does not list A."
+  },
+  {
+   "q": "Why dashed lines?",
+   "a": "So the problem is visible without relying on colour."
+  },
+  {
+   "q": "Can it show hundreds of pages?",
+   "a": "It draws the first 40."
+  },
+  {
+   "q": "What input does it need?",
+   "a": "url, hreflang, href columns."
+  }
+ ],
+ "related": [
+  "hreflang-csv-audit",
+  "hreflang-validator",
+  "hreflang-sitemap-validator",
+  "schema-graph-visualizer",
+  "hreflang-generator",
+  "mermaid-lite-renderer"
+ ],
+ "keywords": [
+  "hreflang graph",
+  "hreflang visualizer",
+  "one-way hreflang",
+  "hreflang cluster"
+ ]
+}

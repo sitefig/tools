@@ -1,0 +1,44 @@
+{
+ "id": "cloudflare-logpush-viewer",
+ "seoTitle": "Cloudflare Logpush Viewer: Cache, Country and Bot Score",
+ "metaDescription": "Summarise Cloudflare Logpush HTTP request logs: cache status, status codes, countries and bot score bands. Free, runs in your browser.",
+ "intro": "Reads Logpush http_requests NDJSON and shows cache, status, country, bot score bands and edge time to first byte.",
+ "why": "Logpush files hold one JSON object per request. A summary by cache status and country answers common questions without a log platform.\n\nBot score bands follow Cloudflare's description: 1 automated, 2 to 29 likely automated, 30 to 99 likely human. Scores exist only on plans with Bot Management.",
+ "howTo": [
+  "Download Logpush files and paste them or choose them (gzip works).",
+  "Add filters such as EdgeResponseStatus>=500.",
+  "Read the summary.",
+  "Switch to the table for rows."
+ ],
+ "faq": [
+  {
+   "q": "Which dataset?",
+   "a": "The http_requests dataset with fields such as ClientIP and EdgeResponseStatus."
+  },
+  {
+   "q": "Why is there no bot score?",
+   "a": "It needs Bot Management and the field in the Logpush job."
+  },
+  {
+   "q": "Can it chart over time?",
+   "a": "No. Use the spike detector on a CSV-converted log for that."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "cloudfront-log-parser",
+  "cdn-edge-log-parser",
+  "bot-user-agent-identifier",
+  "jsonl-log-filter",
+  "top-ips-user-agents",
+  "request-spike-detector"
+ ],
+ "keywords": [
+  "cloudflare logpush viewer",
+  "cloudflare http requests log",
+  "cloudflare cache status analysis"
+ ]
+}

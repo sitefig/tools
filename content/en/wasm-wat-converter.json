@@ -1,0 +1,45 @@
+{
+ "id": "wasm-wat-converter",
+ "seoTitle": "WAT to WASM and WASM to WAT Converter Online, Free",
+ "metaDescription": "Assemble WebAssembly text (WAT) into a .wasm binary or disassemble hex or base64 wasm to WAT in your browser. Core, bulk memory, reference types. Free.",
+ "intro": "Converts WebAssembly text format to a binary module and back. Paste WAT to get the bytes, a download and a validity check, or paste a binary as hex or base64 to read it as text.",
+ "why": "WebAssembly tooling usually means installing wabt or wasm-tools. For a quick look at what a module contains, or to build a tiny test module by hand, a converter in the page is enough. This one is written from the binary format specification and covers the core instruction set plus common extensions: multi-value blocks, reference types, bulk memory and table operations, saturating conversions and sign extension.\n\nIt does not cover SIMD, threads and atomics, exceptions, tail calls, GC types or multiple memories; these give a clear error. The assembler accepts flat and folded instructions, named identifiers, inline imports and exports, data and element segments, and the common abbreviations. The browser validates the module for you. Output was compared byte for byte with the wabt toolkit: all 198 supported opcodes, 24 hand-written modules, random floats and real modules of up to 3.4 MB.",
+ "howTo": [
+  "Paste WAT text starting with (module, or paste a binary as hex or base64.",
+  "The direction is detected automatically; you can force it in the options.",
+  "For WAT input, read the validation line and download module.wasm.",
+  "For binary input, read the WAT output and copy it."
+ ],
+ "faq": [
+  {
+   "q": "How was correctness checked?",
+   "a": "Assembling and disassembling were compared with wabt 1.0.39. Every supported opcode produced identical bytes, and disassembled real modules re-assembled to the same bytes as wabt did."
+  },
+  {
+   "q": "Why does a binary fail with an unsupported error?",
+   "a": "The module probably uses SIMD, atomics or another proposal not implemented here. A module built for the web by Emscripten with SIMD enabled is an example."
+  },
+  {
+   "q": "Are names and debug info kept?",
+   "a": "Custom sections including the name section are not interpreted. The disassembler prints numeric indexes with comments."
+  },
+  {
+   "q": "Does the assembler type check?",
+   "a": "No. The browser validates the result with WebAssembly.Module and reports its message."
+  }
+ ],
+ "related": [
+  "hex-dump-viewer",
+  "hex-to-base64",
+  "base64-decode",
+  "base64-encode",
+  "hex-text",
+  "binary-text"
+ ],
+ "keywords": [
+  "wat to wasm online",
+  "wasm to wat",
+  "webassembly text converter",
+  "wasm disassembler"
+ ]
+}

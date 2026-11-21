@@ -1,0 +1,45 @@
+{
+ "id": "googlebot-mobile-desktop-split",
+ "seoTitle": "Googlebot Smartphone vs Desktop Requests per Day",
+ "metaDescription": "Chart Googlebot smartphone against desktop requests per day from your access log, with image, video and other Google crawlers apart. Free.",
+ "intro": "Splits Google crawler requests into smartphone, desktop, image or video or news, and other Google, per day.",
+ "why": "Google tells the smartphone and desktop crawlers apart by their user-agent text. Counting both over time shows which one fetches your pages and whether that changes after a site move or a mobile fix.\n\nThe tool treats Googlebot with Mobile or Android in the user agent as smartphone and the rest as desktop. Image, video, news and other Google crawlers are shown in their own columns so that they do not distort the page-crawl split.",
+ "howTo": [
+  "Paste access log lines covering several days.",
+  "Read the table of requests per day for each crawler type.",
+  "Check the smartphone share.",
+  "Compare the trend before and after a change to your site."
+ ],
+ "faq": [
+  {
+   "q": "How does the tool know it is the smartphone crawler?",
+   "a": "By the words Mobile or Android in the user-agent string, which is how Google documents the smartphone crawler."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  },
+  {
+   "q": "Why are other Google crawlers separate?",
+   "a": "Image, video, AdsBot and others have a different purpose and would blur the page-crawl numbers."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench."
+  }
+ ],
+ "related": [
+  "googlebot-crawl-budget-analyzer",
+  "bot-status-code-report",
+  "crawl-spike-drop-alerts",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer",
+  "fake-googlebot-log-detector"
+ ],
+ "keywords": [
+  "googlebot smartphone vs desktop",
+  "mobile first indexing log analysis",
+  "googlebot user agent split",
+  "mobile googlebot hits per day"
+ ]
+}

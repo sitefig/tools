@@ -1,0 +1,45 @@
+{
+  "id": "background-remover-solid",
+  "seoTitle": "Background Remover for Plain Backgrounds (No AI, Local)",
+  "metaDescription": "Make a solid or near-solid background transparent by flood-filling from the edges with an adjustable tolerance. For logos, product shots and screenshots.",
+  "intro": "Cut out a white or flat-colour background in your browser, with no upload and no model.",
+  "why": "The tool finds the dominant colour along the image edges (or uses one you give), then floods inward from the edges through pixels within the tolerance of that colour and makes them transparent. Only regions connected to the edge are removed, so enclosed areas of the same colour, such as the inside of a letter O, stay. Edge pixels can be softened for a cleaner outline. The result is a PNG with an alpha channel.\n\nThis is not an AI cut-out tool: it cannot separate a person from a busy photo background. If parts of the subject disappear, lower the tolerance; if a halo remains, raise it.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose an image.",
+    "Set the tolerance and (optionally) the background colour.",
+    "Run it and download the PNG.",
+    "Retry with another tolerance if needed."
+  ],
+  "faq": [
+    {
+      "q": "Does it work on photos?",
+      "a": "Only when the background is uniform, such as a studio backdrop."
+    },
+    {
+      "q": "Why does a hole stay opaque?",
+      "a": "Regions not connected to the edge are kept on purpose."
+    },
+    {
+      "q": "Is there a limit?",
+      "a": "Images above about 36 megapixels are rejected."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "image-redaction",
+    "image-format-converter",
+    "image-resizer",
+    "image-filters",
+    "image-compressor",
+    "svg-optimizer"
+  ],
+  "keywords": [
+    "background remover",
+    "make background transparent",
+    "remove white background",
+    "png transparent"
+  ]
+}

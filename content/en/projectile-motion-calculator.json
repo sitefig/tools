@@ -1,0 +1,45 @@
+{
+ "id": "projectile-motion-calculator",
+ "seoTitle": "Projectile Motion Calculator: Range, Max Height and Flight Time",
+ "metaDescription": "Enter launch speed, angle and height for Earth, Moon, Mars or any gravity and get range, height, time of flight, impact speed and a path plot.",
+ "intro": "Computes range, maximum height, time of flight and impact speed of a projectile without air resistance, and plots the path.",
+ "why": "The classic physics problem: a ball leaves at 25 m/s at 45 degrees; where does it land and how high does it go? Enter the speed, angle and starting height and read the answers, then switch the gravity to the Moon or Mars to see the difference.\n\nThe formulas assume constant gravity, flat ground and no drag. Earth uses the standard value 9.80665 m/s2 (CODATA 2022). Other bodies use the surface gravity listed in the NASA Planetary Fact Sheet, which gives one decimal. Results were compared with a numerical ODE solver. The path is a static plot, not an animation.",
+ "howTo": [
+  "Enter speed, launch angle and launch height.",
+  "Pick a body or choose custom and enter g.",
+  "Read range, height, flight time and impact speed.",
+  "Study the plot and the time table."
+ ],
+ "faq": [
+  {
+   "q": "Does it include air resistance?",
+   "a": "No. Real flights with drag are shorter."
+  },
+  {
+   "q": "Can the angle be negative?",
+   "a": "Yes, down to -90 degrees, for throwing down from a height."
+  },
+  {
+   "q": "Where do the g values come from?",
+   "a": "Earth: CODATA standard gravity. Others: NASA Planetary Fact Sheet."
+  },
+  {
+   "q": "Is it animated?",
+   "a": "No, it draws the finished path."
+  }
+ ],
+ "related": [
+  "pendulum-simulator-period",
+  "orbital-mechanics-nbody-sandbox",
+  "planet-size-comparator",
+  "wave-interference-superposition",
+  "unit-converter",
+  "scientific-calculator-degrees"
+ ],
+ "keywords": [
+  "projectile motion calculator",
+  "trajectory calculator",
+  "range and max height",
+  "physics projectile angle"
+ ]
+}

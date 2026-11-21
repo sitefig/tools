@@ -1,0 +1,45 @@
+{
+ "id": "image-histogram-viewer",
+ "seoTitle": "Image Histogram Viewer (RGB and Luminance, Clipping Check)",
+ "metaDescription": "Draw the red, green, blue and luminance histograms of a photo and see how many pixels are crushed to black or blown to white, to judge exposure.",
+ "intro": "See the RGB and luminance histogram of a photo.",
+ "why": "Choose a photo and the page draws the red, green, blue and luminance histograms and reports how much of the picture is clipped to black or white.\n\nThe left edge of the chart is black and the right edge is white. A big spike at either end means lost detail. Some pictures are meant to be bright or dark, so look at the photo as well.",
+ "howTo": [
+  "Choose a photo.",
+  "Pick linear or square-root scale.",
+  "Read the chart.",
+  "Check the clipping percentages."
+ ],
+ "faq": [
+  {
+   "q": "What does luminance mean here?",
+   "a": "Brightness computed from red, green and blue with Rec. 709 weights."
+  },
+  {
+   "q": "Is clipping always bad?",
+   "a": "No. A white background will clip on purpose."
+  },
+  {
+   "q": "Why a square-root scale?",
+   "a": "It lifts small bars so tails are easier to see."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-info",
+  "color-picker-from-image",
+  "image-filters",
+  "exif-viewer",
+  "image-diff",
+  "error-level-analyzer"
+ ],
+ "keywords": [
+  "image histogram",
+  "photo histogram",
+  "exposure check",
+  "clipping highlights"
+ ]
+}

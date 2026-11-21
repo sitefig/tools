@@ -1,0 +1,45 @@
+{
+  "id": "subnet-cheat-sheet",
+  "seoTitle": "IPv4 Subnet Mask Cheat Sheet (CIDR /8 to /32)",
+  "metaDescription": "Reference table of IPv4 prefixes from /8 to /32 with subnet mask, wildcard mask, address count and usable hosts.",
+  "intro": "Look up a netmask or host count without calculating it.",
+  "why": "The table lists each prefix length with its dotted subnet mask, wildcard (inverse) mask, total addresses and usable hosts (addresses minus network and broadcast, except /31 point-to-point and /32 host routes). Values were checked against Python's ipaddress module. You can narrow the range of prefixes.\n\nIt covers IPv4 only. For specific networks use the subnet calculator.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the prefix range.",
+    "Read the row you need.",
+    "Use the wildcard mask for ACLs and OSPF statements.",
+    "Open the subnet calculator for a specific network."
+  ],
+  "faq": [
+    {
+      "q": "What is a wildcard mask?",
+      "a": "The inverse of the subnet mask, used in some router ACL syntaxes."
+    },
+    {
+      "q": "Why minus 2?",
+      "a": "The first address is the network and the last the broadcast."
+    },
+    {
+      "q": "What is /31 for?",
+      "a": "Point-to-point links, defined in RFC 3021."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "ip-subnet-calculator",
+    "vlsm-calculator",
+    "cidr-contains",
+    "ip-supernetting-calculator",
+    "port-reference",
+    "ip-validator-converter"
+  ],
+  "keywords": [
+    "subnet mask cheat sheet",
+    "cidr table",
+    "subnet chart",
+    "netmask list"
+  ]
+}

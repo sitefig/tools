@@ -1,0 +1,45 @@
+{
+ "id": "font-previewer",
+ "seoTitle": "Font Previewer: Your Text in Many Installed or Uploaded Fonts",
+ "metaDescription": "Type your text and compare it in the fonts on your device, or in font files you add. Free, local, nothing uploaded.",
+ "intro": "Shows one line of your text in many fonts at one size, using generic families, common fonts found on your device and fonts you upload.",
+ "why": "Choosing a font for a logo or headline is easier when you see your own words in every candidate. The tool checks a list of common font names against your device and lists those present. Chromium browsers can also list every installed font if you give permission.\n\nUploaded TTF, OTF, WOFF or WOFF2 files are loaded in the page and not sent anywhere. Fonts you do not have installed are not shown, because the page cannot download fonts.",
+ "howTo": [
+  "Type your text and set a size.",
+  "Scroll the list to compare fonts.",
+  "Optionally add font files with the upload field.",
+  "In Chrome or Edge, press the button to list all installed fonts."
+ ],
+ "faq": [
+  {
+   "q": "Why are some fonts missing?",
+   "a": "Only fonts on your device or uploaded to the page can be shown."
+  },
+  {
+   "q": "Does this use Google Fonts?",
+   "a": "No. It uses no network at all."
+  },
+  {
+   "q": "Why is a font name listed twice?",
+   "a": "Uploaded fonts use the file name as family name."
+  },
+  {
+   "q": "Is permission needed?",
+   "a": "Only for the full list of installed fonts, in browsers that support it."
+  }
+ ],
+ "related": [
+  "font-file-inspector",
+  "font-loading-snippet-generator",
+  "readable-typography-previewer",
+  "type-scale-generator",
+  "google-fonts-gdpr-checker",
+  "text-box-drawer"
+ ],
+ "keywords": [
+  "font previewer",
+  "compare fonts",
+  "font tester online",
+  "preview text in fonts"
+ ]
+}

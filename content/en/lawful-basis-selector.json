@@ -1,0 +1,41 @@
+{
+ "id": "lawful-basis-selector",
+ "seoTitle": "GDPR Lawful Basis Selector: Article 6 Decision Aid",
+ "metaDescription": "Answer questions on consent, contract, legal obligation, vital interests, public task and legitimate interests to see which Art. 6 basis fits. Free aid.",
+ "intro": "Walks through the six Art. 6(1) bases and shows which ones could fit your purpose, with the checks to make for each.",
+ "why": "Every use of personal data under the GDPR needs one of six lawful bases. People often pick consent by habit, or legitimate interests without doing the test.\n\nTick the statements that are true and the tool lists the bases that could fit, with the main check for each. It also adds notes for public authorities, special category data and children. It is a decision aid based on the text of Art. 6. A lawyer should confirm the choice for risky processing.",
+ "howTo": [
+  "Tick each statement that is true for your purpose.",
+  "Tick the notes for public authority, special category data and children if they apply.",
+  "Read the bases that fit and their checks.",
+  "Write the chosen basis into your privacy notice and records."
+ ],
+ "faq": [
+  {
+   "q": "Can I use more than one basis?",
+   "a": "Usually pick the one that truly fits each purpose and say so. Do not switch to another basis because the first one fails."
+  },
+  {
+   "q": "Is special category data covered?",
+   "a": "Only as a warning. Art. 9 needs its own condition in addition to an Art. 6 basis."
+  },
+  {
+   "q": "What is the three-part test?",
+   "a": "For legitimate interests: purpose, necessity and balancing against the person's rights."
+  }
+ ],
+ "related": [
+  "dpia-screening",
+  "ropa-builder",
+  "privacy-law-applicability-checker",
+  "privacy-policy-generator",
+  "gdpr-checklist",
+  "consent-banner-checklist"
+ ],
+ "keywords": [
+  "lawful basis gdpr",
+  "article 6 gdpr",
+  "legitimate interest test",
+  "which lawful basis"
+ ]
+}

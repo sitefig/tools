@@ -1,0 +1,43 @@
+{
+ "id": "video-to-gif",
+ "seoTitle": "Free Video to GIF Converter in Your Browser",
+ "metaDescription": "Turn a short video clip into an animated GIF: set start time, duration, frame rate and width. Runs locally in your browser, free.",
+ "intro": "Pick a video file, choose where the clip starts, how long it runs, the frame rate and the width, and get an animated GIF made locally in your browser.",
+ "why": "Short GIFs are still the easiest way to show a bug, a UI interaction or a quick demo in a ticket, a pull request or a chat, where video embeds are awkward. Screen recordings are usually videos, so they need converting, and many online converters want you to upload the file first.\n\nThis tool reads frames from the video onto a canvas and encodes the GIF itself, with a fixed 256-colour palette and dithering. That keeps your recording on your device but also limits quality, so it suits UI demos rather than photographs. Long or large clips use a lot of memory, so keep the clip to about ten seconds at 480 pixels wide. For anything cinematic, use ffmpeg.",
+ "howTo": [
+  "Choose a video file from your device.",
+  "Set the start time, duration (up to 30 seconds), frames per second (1 to 20) and width in pixels.",
+  "Tick loop forever if you want the GIF to repeat.",
+  "Create the GIF, check the preview and download it."
+ ],
+ "faq": [
+  {
+   "q": "Why does my GIF look grainy?",
+   "a": "GIFs are limited to 256 colours, and this encoder uses a fixed palette with ordered dithering. Photographic content shows banding and noise. UI screens with flat colours look much better."
+  },
+  {
+   "q": "How can I make the file smaller?",
+   "a": "Reduce the width, the frame rate and the duration. Halving the width cuts the pixel count to a quarter, which usually has the biggest effect. Five to ten frames per second is enough for most demos."
+  },
+  {
+   "q": "Is my video uploaded?",
+   "a": "No. The video is played in a hidden element in your browser, the frames are drawn on a canvas and the GIF is built on your device. Close the tab and nothing remains on any server."
+  }
+ ],
+ "related": [
+  "gif-maker",
+  "screen-recorder",
+  "webcam-recorder",
+  "image-compressor",
+  "audio-converter",
+  "image-resizer"
+ ],
+ "keywords": [
+  "video to gif converter",
+  "convert video to gif online",
+  "mp4 to gif in browser",
+  "screen recording to gif",
+  "make gif from video",
+  "free video to gif no upload"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "geography-quiz-map",
+ "seoTitle": "Geography Quiz: Find Countries on a Blank Map",
+ "metaDescription": "Practise country locations by clicking the map or naming the highlighted country, by continent, with score and answers. Free.",
+ "intro": "A quiz on a blank world map: find the named country, or name the highlighted one. Choose a region and keep score.",
+ "why": "Learn where countries are by testing yourself. In pointer mode the page names a country and you click it; after a miss it shows the right country. In keyboard mode a country is highlighted and you type its name, with suggestions, which works without a pointer.\n\nBoth modes score each country once and show your result at the end. The map has the countries of the 110m Natural Earth data, so very small states are not included. Region choices zoom the map to a continent.",
+ "howTo": [
+  "Choose a region and a mode.",
+  "Click the country named, or type the highlighted country's name.",
+  "Press Next after a miss.",
+  "Restart for a new shuffle."
+ ],
+ "faq": [
+  {
+   "q": "Why are some countries missing?",
+   "a": "Small countries are not in the map data."
+  },
+  {
+   "q": "Can I use only a keyboard?",
+   "a": "Yes, use the typing mode."
+  },
+  {
+   "q": "What counts as a right answer?",
+   "a": "The name, an ISO code or a known alias."
+  },
+  {
+   "q": "Is progress stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "travel-map-pinner",
+  "choropleth-map-maker",
+  "csv-to-map-plotter",
+  "coordinate-format-converter",
+  "nato-phonetic",
+  "random-number-picker"
+ ],
+ "keywords": [
+  "geography quiz",
+  "country map quiz",
+  "world map test"
+ ]
+}

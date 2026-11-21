@@ -1,0 +1,45 @@
+{
+  "id": "csv-column-profiler",
+  "seoTitle": "CSV Column Profiler: Types, Nulls, Unique Values, Min and Max",
+  "metaDescription": "Profile each CSV column: inferred type, empty count, distinct values, min, max, mean, median, shortest and longest text and the most frequent values.",
+  "intro": "Get a quick data-quality summary of a CSV before importing it.",
+  "why": "Each column is analysed for filled and empty cells, number of distinct values, and a type (integer, number, boolean, date or text). Numeric columns show min, max, mean and median; text columns show length range; dates show the earliest and latest and invalid dates (like 2024-02-30) are listed. The three most common values with counts appear for every column.\n\nTypes are inferred from the values present, so a column of IDs with leading zeros counts as integer. For large files use a data tool; this works in memory in the page.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the CSV with a header row.",
+    "Run the profiler.",
+    "Look for unexpected types, many empties or invalid dates.",
+    "Clean the data before import."
+  ],
+  "faq": [
+    {
+      "q": "How is a date detected?",
+      "a": "Values that look like YYYY-MM-DD (optionally with time) and are real calendar dates."
+    },
+    {
+      "q": "Are empty strings counted as null?",
+      "a": "Yes, empty cells count as empty."
+    },
+    {
+      "q": "Can it handle big files?",
+      "a": "It works in memory in your browser, so very large files may be slow."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "csv-viewer",
+    "csv-transpose",
+    "csv-to-json",
+    "csv-to-sql",
+    "csv-to-chart",
+    "sql-on-csv"
+  ],
+  "keywords": [
+    "csv profiler",
+    "csv column types",
+    "data profiling",
+    "csv quality check"
+  ]
+}

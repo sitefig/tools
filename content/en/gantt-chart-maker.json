@@ -1,0 +1,44 @@
+{
+ "id": "gantt-chart-maker",
+ "seoTitle": "Gantt Chart Maker from Tasks and Dependencies (SVG)",
+ "metaDescription": "List tasks with start dates, durations and the tasks they follow to get a Gantt chart with arrows and a schedule table. Free, private.",
+ "intro": "Plans tasks on a timeline. A task has a name, an optional start date, a number of days and optional predecessors; start dates are computed from dependencies.",
+ "why": "A Gantt chart makes the order of work and the length of the whole plan visible. Give fixed dates to the tasks that have them and let the rest follow their predecessors.\n\nDurations count calendar days, with no weekends or holidays, so use it for rough plans and timelines. Loops and missing predecessors are reported by name. The schedule table lists each start and last day so the plan can be pasted elsewhere.",
+ "howTo": [
+  "Paste rows: Task, Start (or blank), Days, After (names separated by ;).",
+  "Fix start dates where they are known; leave the rest blank.",
+  "Read the schedule table for start and end days.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Are weekends skipped?",
+   "a": "No. Days are calendar days."
+  },
+  {
+   "q": "What if two predecessors end on different days?",
+   "a": "The task starts the day after the latest one ends."
+  },
+  {
+   "q": "Can tasks overlap?",
+   "a": "Yes; give them the same predecessor or the same start."
+  },
+  {
+   "q": "Is there a critical path?",
+   "a": "Not marked, but the longest chain of arrows determines the end date."
+  }
+ ],
+ "related": [
+  "timeline-maker",
+  "flowchart-maker",
+  "date-difference",
+  "add-subtract-dates",
+  "printable-calendar",
+  "countdown-to-date"
+ ],
+ "keywords": [
+  "gantt chart maker",
+  "project timeline with dependencies",
+  "free gantt chart online"
+ ]
+}

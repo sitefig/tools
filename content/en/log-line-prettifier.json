@@ -1,0 +1,45 @@
+{
+ "id": "log-line-prettifier",
+ "seoTitle": "Log Line Prettifier: Expand JSON in Log Files",
+ "metaDescription": "Find JSON objects inside log lines and print each as an indented block under its line. The rest of the line stays as it was. Free.",
+ "intro": "Expands embedded JSON in application log lines into readable indented blocks.",
+ "why": "Structured logs often put a JSON object in the middle of a text line. On one line it is hard to read.\n\nThe tool scans each line for balanced braces and brackets, tries to parse each as JSON, and prints the valid ones pretty. Text before and after stays on its own lines. Arrays that hold only plain values such as [INFO] or [2025] are left alone unless you tick the option.",
+ "howTo": [
+  "Paste log lines.",
+  "Pick the indent.",
+  "Tick the option to expand arrays of plain values if needed.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "What if the JSON is invalid?",
+   "a": "It is left in the line as it was."
+  },
+  {
+   "q": "Does it handle JSON inside quoted strings?",
+   "a": "No. Only JSON written directly in the line."
+  },
+  {
+   "q": "Do I need to remove secrets first?",
+   "a": "The tool is local, but logs often hold tokens. Use the log privacy workbench before sharing."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "log-privacy-workbench",
+  "json-format",
+  "json-tree",
+  "stacktrace-formatter",
+  "access-log-analyzer",
+  "jsonl-dataset-validator"
+ ],
+ "keywords": [
+  "log prettifier",
+  "pretty print json in logs",
+  "expand json log lines",
+  "format structured log"
+ ]
+}

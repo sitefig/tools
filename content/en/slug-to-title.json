@@ -1,0 +1,45 @@
+{
+ "id": "slug-to-title",
+ "seoTitle": "Free Slug to Title Case Converter Online",
+ "metaDescription": "Turn URL slugs, snake_case and camelCase identifiers into readable titles, keeping small words lowercase and acronyms uppercase. Free, in-browser.",
+ "intro": "Convert slugs such as how-to-build-a-rest-api, snake_case names and camelCase identifiers into proper titles, one per line.",
+ "why": "Content migrations, redirects and site audits often start with a list of URL slugs and a need for human-readable page titles. Editing a few hundred of them by hand into Title Case, while remembering that API or CDN must stay in capitals, is a slog.\n\nThis tool splits on hyphens, underscores, spaces and camelCase boundaries, drops a file extension at the end, capitalises each word and keeps small words such as a, the, of and to in lowercase unless they come first or last. You can edit the acronym list, which defaults to common ones like API, CSS, HTML and URL. The result is a clean first draft of a title, not an editorial decision. Check names, product spellings and places by eye.",
+ "howTo": [
+  "Paste slugs or identifiers, one per line.",
+  "Choose whether small words stay lowercase, and edit the acronym list.",
+  "Copy the titles."
+ ],
+ "faq": [
+  {
+   "q": "Which words stay lowercase?",
+   "a": "Articles, short conjunctions and prepositions such as a, an, the, and, but, or, for, on, at, to, from, by, of, in, with, as, vs and via. The first and last word are always capitalised."
+  },
+  {
+   "q": "How are acronyms handled?",
+   "a": "Any word in the acronym list, comma-separated and case-insensitive, is written in uppercase, so api becomes API. Add your own, such as seo or cms."
+  },
+  {
+   "q": "Does it split camelCase?",
+   "a": "Yes. parseHTMLString becomes Parse HTML String, because a run of capitals is kept together as a word before the next capitalised word."
+  },
+  {
+   "q": "Does it remove file extensions?",
+   "a": "A trailing extension such as .html is removed before converting, so my-page.html becomes My Page. Numbers inside the slug are kept."
+  }
+ ],
+ "related": [
+  "case-converter",
+  "slug-generator",
+  "title-case-headline-analyzer",
+  "string-case-detector",
+  "sql-slugifier",
+  "sort-lines"
+ ],
+ "keywords": [
+  "slug to title",
+  "url slug to title case",
+  "convert slug to readable title",
+  "free slug converter",
+  "snake case to title case"
+ ]
+}

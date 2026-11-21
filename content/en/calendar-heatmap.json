@@ -1,0 +1,44 @@
+{
+ "id": "calendar-heatmap",
+ "seoTitle": "Calendar Heatmap Maker: GitHub-Style Year Grid",
+ "metaDescription": "Paste dates and counts to see each day of a year as a shaded square with months, weekdays and a legend. Free SVG calendar heatmap.",
+ "intro": "Shows a year of daily values as a grid of squares, one column per week, shaded by value like a contribution graph.",
+ "why": "A calendar heatmap shows rhythm: weekends, holidays, streaks and gaps. Paste a date and a value per line and get the year in one picture.\n\nDates must be written YYYY-MM-DD; other formats are rejected rather than guessed. Repeated dates add up. The year defaults to the latest one in your data, and you can start weeks on Monday or Sunday. A table of the days sits under the chart as a text alternative.",
+ "howTo": [
+  "Paste lines like 2026-03-14,5.",
+  "Optionally set the year, week start and colour.",
+  "Check the active days and total in the note.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Why only ISO dates?",
+   "a": "Formats like 03/04/26 are ambiguous. Normalise them first with the date format normalizer."
+  },
+  {
+   "q": "What if a date repeats?",
+   "a": "The values are added."
+  },
+  {
+   "q": "How are levels chosen?",
+   "a": "Four levels by share of the busiest day, plus an empty level for zero."
+  },
+  {
+   "q": "Can I show several years?",
+   "a": "One year per run. Change the year option for others."
+  }
+ ],
+ "related": [
+  "date-format-normalizer",
+  "heatmap-maker",
+  "line-chart-maker",
+  "bar-chart-maker",
+  "csv-viewer",
+  "printable-calendar"
+ ],
+ "keywords": [
+  "calendar heatmap",
+  "github contribution graph generator",
+  "daily activity heatmap"
+ ]
+}

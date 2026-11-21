@@ -1,0 +1,45 @@
+{
+ "id": "night-sky-viewer",
+ "seoTitle": "Night Sky Viewer: Stars, Moon and Planets for Any Place and Time",
+ "metaDescription": "See the sky overhead for any date, time and location: bright stars, Sun, Moon phase and planets on an all-sky chart with an altitude and azimuth table. Offline.",
+ "intro": "Enter a place and a time and get an all-sky chart (looking straight up) with stars to magnitude 5, the Sun, Moon with its phase and the planets, plus a table of altitude and azimuth you can read without the picture.",
+ "why": "Planetarium apps are handy but need installs or send your location out. This page calculates the sky locally. Stars come from the Yale Bright Star Catalogue (1,629 stars to magnitude 5, with IAU names for the best known). The Sun, Moon and planets use P. Schlyter's low-precision formulas.\n\nWe compared the positions with astropy for ten dates and places between 2000 and 2045. The Sun, Moon and planets agreed within 3.4 arc minutes and the stars within about half an arc minute, far below what the eye can see. Refraction, rise and set times and constellation lines are not included.",
+ "howTo": [
+  "Enter the local date and time as YYYY-MM-DD HH:MM and the offset from UTC in hours.",
+  "Enter latitude and longitude in degrees (south and west are negative).",
+  "Choose the faintest star magnitude to draw.",
+  "Read the chart (north up, east left) or the table of altitude and azimuth."
+ ],
+ "faq": [
+  {
+   "q": "Why is east on the left?",
+   "a": "You are looking up at the sky, not down at a map. Hold the chart over your head with north toward north and east is on the left."
+  },
+  {
+   "q": "How accurate are the positions?",
+   "a": "Within a few arc minutes for the Moon and planets and under one arc minute for stars, compared with astropy. Proper motion of fast stars and refraction are ignored."
+  },
+  {
+   "q": "Why are Uranus and Neptune drawn?",
+   "a": "They are shown when above the horizon, but they are too faint to see without binoculars or a telescope."
+  },
+  {
+   "q": "Does it find my time zone?",
+   "a": "No. Enter the UTC offset yourself so that summer time is handled the way you expect."
+  }
+ ],
+ "related": [
+  "moon-phase-calculator",
+  "sun-times-twilight-table",
+  "sunrise-sunset-calculator",
+  "sun-path-calculator",
+  "planet-size-comparator",
+  "timezone-converter"
+ ],
+ "keywords": [
+  "night sky viewer",
+  "sky chart",
+  "stars tonight",
+  "planets tonight"
+ ]
+}

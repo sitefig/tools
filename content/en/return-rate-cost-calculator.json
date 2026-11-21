@@ -1,0 +1,39 @@
+{
+ "id": "return-rate-cost-calculator",
+ "seoTitle": "Return Rate and Cost of Returns Calculator",
+ "metaDescription": "Return rate from units sold and returned, plus lost margin, handling and write-off cost. Free, private, runs in your browser.",
+ "intro": "Calculates your return rate and the profit lost to returns, including handling and stock that cannot be resold.",
+ "why": "Returns cost more than the refund. You lose the margin on the reversed sale, pay for shipping and handling, and write off items that cannot be resold. Seeing these parts separately shows where to act.\n\nEnter units sold and returned, price, product cost, handling cost per return and the share you can resell. The tool gives the rate, the profit impact in total and per unit sold, and profit before and after returns.",
+ "howTo": [
+  "Enter units sold and returned.",
+  "Enter price, product cost and handling cost per return.",
+  "Set the share of returns you can resell."
+ ],
+ "faq": [
+  {
+   "q": "Why is margin lost on returns?",
+   "a": "The sale is reversed, so the profit from it disappears."
+  },
+  {
+   "q": "How are unsellable items handled?",
+   "a": "They are written off at product cost."
+  },
+  {
+   "q": "Does this include refunds of shipping?",
+   "a": "Add it to the handling cost per return."
+  }
+ ],
+ "related": [
+  "dimensional-weight-calculator",
+  "shipping-box-fit-calculator",
+  "free-shipping-threshold-calculator",
+  "reorder-point-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "return rate calculator",
+  "cost of returns ecommerce",
+  "product returns profit"
+ ]
+}

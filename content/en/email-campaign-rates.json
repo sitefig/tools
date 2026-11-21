@@ -1,0 +1,45 @@
+{
+ "id": "email-campaign-rates",
+ "seoTitle": "Email Campaign Rates Calculator: Open, CTR, Bounce, Unsubscribe",
+ "metaDescription": "Calculate open rate, click-through rate, click-to-open rate, bounce, unsubscribe and complaint rates from campaign counts, with review flags.",
+ "intro": "Enter the counts from one send and get every standard email rate, with flags where a rate is above a common limit.",
+ "why": "Open rate, CTR and CTOR are often mixed up because each divides by something different. Here each rate states its formula: opens and clicks are divided by delivered emails, CTOR is clicks over opens, and bounce rates use emails sent.\n\nThe complaint limits come from Google's email sender guidelines (keep below 0.1%, never reach 0.3%). The 2% bounce and 0.5% unsubscribe flags are common rules of thumb, not rules. Open counts are inflated by Apple Mail Privacy Protection, so compare your own sends over time instead of chasing industry averages.",
+ "howTo": [
+  "Enter emails sent, bounces, opens, clicks, unsubscribes and complaints.",
+  "Leave Delivered at 0 to use sent minus bounces.",
+  "Read the rates and the review flags.",
+  "Compare with your previous sends."
+ ],
+ "faq": [
+  {
+   "q": "Should I use unique or total opens?",
+   "a": "Unique opens and unique clicks. Total counts include repeat opens by the same person."
+  },
+  {
+   "q": "What is click-to-open rate?",
+   "a": "Unique clicks divided by unique opens. It shows how engaging the content was for people who opened."
+  },
+  {
+   "q": "Why are my open rates so high?",
+   "a": "Mail privacy features load images automatically and count as opens. Clicks are a safer signal."
+  },
+  {
+   "q": "Where do the limits come from?",
+   "a": "Complaint limits are from Google's sender guidelines. The others are rules of thumb."
+  }
+ ],
+ "related": [
+  "email-list-growth-calculator",
+  "email-marketing-roi-calculator",
+  "ab-test-calculator",
+  "ads-roas-calculator",
+  "conversion-rate-calculator",
+  "email-subscriber-value-calculator"
+ ],
+ "keywords": [
+  "email open rate calculator",
+  "click through rate email",
+  "bounce rate calculator",
+  "unsubscribe rate calculator"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "date-formats",
+ "seoTitle": "Free Date Format Converter: ISO, RFC 2822, SQL and More",
+ "metaDescription": "Show one date in many formats at once: ISO 8601, RFC 2822, SQL, US and EU styles, week dates, Julian day and Excel serial. Free, in your browser.",
+ "intro": "Enter a date or timestamp and see it written in more than twenty formats, from ISO 8601 and RFC 2822 to SQL datetime, ISO week date, Julian day and Excel serial.",
+ "why": "Every system wants dates in a slightly different shape: ISO in JSON, RFC 2822 in email headers, an HTTP date in cache headers, a plain SQL string in a query, a serial number in a spreadsheet. Converting by hand, with the right zone offset, is where bugs sneak in.\n\nThis tool takes a single date, ISO string or timestamp and prints all of these forms in one list, in the time zone you choose. It also gives locale styles for several languages, ISO week number, day of year and quarter. Leave the box empty to format the current moment. It all runs in your browser.",
+ "howTo": [
+  "Enter a date or timestamp, or leave the box empty to use the current time.",
+  "Leave the numeric unit on auto, or choose seconds or milliseconds for numeric input.",
+  "Set a time zone such as UTC or Europe/Brussels.",
+  "Copy the format your system needs from the list."
+ ],
+ "faq": [
+  {
+   "q": "Which formats are included?",
+   "a": "ISO 8601 in UTC and with offset, ISO basic, RFC 2822, the HTTP date, a cookie Expires date, SQL datetime, US and European styles, long forms in four locales, ISO week date, ordinal date, Unix seconds and milliseconds, Julian day and an Excel serial number."
+  },
+  {
+   "q": "What is the Excel serial number?",
+   "a": "It counts days since 1900 in Excel's system, with fractions for the time of day. Be aware that Excel wrongly treats 1900 as a leap year, which the common formula used here already accounts for."
+  },
+  {
+   "q": "How is the ISO week date calculated?",
+   "a": "Weeks start on Monday, and week 1 is the week containing the first Thursday of the year. Dates near 1 January can therefore belong to the previous or next year's week."
+  },
+  {
+   "q": "Why does my date shift when I change the zone?",
+   "a": "The instant is the same but its calendar fields change with the zone, and late-evening times can land on the next or previous day. A date without a zone in your input is read as local time first."
+  }
+ ],
+ "related": [
+  "timestamp-converter",
+  "epoch-batch",
+  "timezone-converter",
+  "week-number",
+  "date-difference",
+  "day-of-week"
+ ],
+ "keywords": [
+  "date format converter",
+  "iso 8601 converter online",
+  "rfc 2822 date format",
+  "free date formatter",
+  "sql datetime format",
+  "julian day calculator"
+ ]
+}

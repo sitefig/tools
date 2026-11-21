@@ -1,0 +1,44 @@
+{
+ "id": "nginx-bot-map-generator",
+ "seoTitle": "Nginx Bot Map Generator: map $http_user_agent",
+ "metaDescription": "Build an Nginx map block that flags selected user-agents, plus the server snippet that denies or rate-limits them. Free, runs in your browser.",
+ "intro": "Creates the map and the server snippet that block or limit bots by user-agent.",
+ "why": "The cleanest way to block bots in Nginx is a map on $http_user_agent that sets a variable, followed by one check in the server. It scales to long bot lists without chains of if statements.\n\nList the tokens and choose block with a status code or rate limit with limit_req. The rate-limit variant uses an empty key for normal visitors so only flagged bots are limited.",
+ "howTo": [
+  "List bot tokens.",
+  "Choose block or rate limit and the variable name.",
+  "Put the map in http {} and the rest in server {}.",
+  "Reload Nginx and test with curl -A."
+ ],
+ "faq": [
+  {
+   "q": "Where does the map go?",
+   "a": "In the http block, not inside server."
+  },
+  {
+   "q": "Why use map instead of if?",
+   "a": "map is evaluated once, and if inside server has well-known pitfalls."
+  },
+  {
+   "q": "How does the rate limit skip normal visitors?",
+   "a": "Their key is an empty string, which limit_req does not count."
+  },
+  {
+   "q": "Can I use 444?",
+   "a": "Yes, set the status code option."
+  }
+ ],
+ "related": [
+  "nginx-config-generator",
+  "bot-firewall-rule-builder",
+  "nginx-rate-limit-calculator",
+  "bot-rate-limit-rule-calculator",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "nginx block bots",
+  "nginx map user agent",
+  "nginx block gptbot",
+  "nginx bad bot list"
+ ]
+}

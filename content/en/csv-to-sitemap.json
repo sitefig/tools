@@ -1,0 +1,45 @@
+{
+ "id": "csv-to-sitemap",
+ "seoTitle": "CSV to Sitemap Converter (Dates to W3C Format)",
+ "metaDescription": "Turn a spreadsheet of URLs and dates into a valid sitemap.xml. Map columns, convert dates to W3C format. Free, no upload.",
+ "intro": "Converts a CSV with a header row into a sitemap and rewrites dates in W3C format.",
+ "why": "Many site exports and crawl reports come as CSV. Building a sitemap from them by hand risks bad dates and unescaped characters.\n\nThe tool finds the URL, date, changefreq and priority columns by name, or you can name them. Dates like 15/09/2026 or Sep 1 2026 are converted; ambiguous ones follow your day-month choice. Times without a zone are written as UTC.",
+ "howTo": [
+  "Paste the CSV with a header row.",
+  "Name the columns if they are not found automatically.",
+  "Choose day-month or month-day for dates like 03/04/2026.",
+  "Copy the XML."
+ ],
+ "faq": [
+  {
+   "q": "Which separators work?",
+   "a": "Comma, semicolon or tab."
+  },
+  {
+   "q": "What happens to bad rows?",
+   "a": "They are skipped and noted in a comment at the end."
+  },
+  {
+   "q": "Is priority required?",
+   "a": "No. Google ignores priority and changefreq."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "50,000 URLs per file."
+  }
+ ],
+ "related": [
+  "sitemap-to-csv",
+  "sitemap-generator",
+  "sitemap-index-generator",
+  "sitemap-validator",
+  "csv-viewer",
+  "text-sitemap-generator"
+ ],
+ "keywords": [
+  "csv to sitemap",
+  "spreadsheet to sitemap xml",
+  "excel to sitemap",
+  "convert csv sitemap"
+ ]
+}

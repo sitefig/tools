@@ -1,0 +1,38 @@
+{
+ "id": "browser-permissions-viewer",
+ "seoTitle": "Browser Permissions Viewer: What This Site Can Access",
+ "metaDescription": "List the state of camera, microphone, location, notifications, clipboard, sensors and more for this site with the Permissions API, without asking for anything.",
+ "intro": "See which browser permissions are granted, denied or still undecided for this site, without triggering any prompt.",
+ "why": "The Permissions API lets a page read the current state of a permission without requesting it. This viewer lists the common ones (geolocation, notifications, camera, microphone, clipboard, MIDI, sensors, wake lock, storage, local fonts and more) as granted, denied or ask, explains what each state means and updates live if you change a setting.\n\nThe list is per site and per browser profile, so a private window starts empty, and each browser supports a different set of names; unsupported ones are marked. It is a quick way to audit what you have approved and to debug why a feature does not prompt.",
+ "howTo": [
+  "Open the page; states are read immediately.",
+  "Change a permission in the browser's site settings (padlock icon).",
+  "Watch the table update."
+ ],
+ "faq": [
+  {
+   "q": "Does this request any permission?",
+   "a": "No. It only queries the current state."
+  },
+  {
+   "q": "Why do some show unsupported?",
+   "a": "Browsers implement different permission names. Chrome supports the most."
+  },
+  {
+   "q": "How do I revoke one?",
+   "a": "Use the padlock icon next to the address bar and reset the permission for this site."
+  }
+ ],
+ "related": [
+  "browser-info",
+  "webrtc-leak-test",
+  "media-devices-viewer",
+  "cookie-flag-analyzer",
+  "tracker-detector"
+ ],
+ "keywords": [
+  "permissions api viewer",
+  "browser permission status",
+  "site permissions check"
+ ]
+}

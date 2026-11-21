@@ -1,0 +1,46 @@
+{
+ "id": "pdf-remove-metadata",
+ "seoTitle": "Free Remove PDF Metadata - Strip Author and Info",
+ "metaDescription": "Strip the Info dictionary (author, title, creator) and XMP metadata from a PDF before sharing. Free, runs in your browser, nothing uploaded.",
+ "intro": "Remove the author, title, creator and other document properties from a PDF, including any XMP metadata packet, and save a clean copy.",
+ "why": "A PDF can reveal more than its pages: the author's name, the software and version used, the original file name used as a title, creation and modification dates. For a press release, a legal document or a CV sent to many people, that is information you may not want to share.\n\nThis tool strips the Info dictionary, where those fields live, and removes XMP metadata packets, the second place that often stores the same details. The visible pages are left as they are. Metadata is only one kind of leaked detail: text inside the document, comments, hidden layers and attachments are not touched, so review the content as well. Use the metadata editor if you want to set specific values rather than clear them. Encrypted files are refused, and the work is done locally.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Run the tool.",
+  "Check the summary of the new file.",
+  "Download the cleaned PDF and, if you like, inspect it with PDF Info."
+ ],
+ "faq": [
+  {
+   "q": "What exactly is removed?",
+   "a": "The Info dictionary, which holds Title, Author, Subject, Keywords, Creator, Producer and dates, and XMP metadata packets. Page content is unchanged."
+  },
+  {
+   "q": "Does that make the PDF anonymous?",
+   "a": "No. Names, comments, annotations, embedded files and text inside the pages are not touched. File names and the date you save the file can also reveal details, so review the document as a whole."
+  },
+  {
+   "q": "How can I check the result?",
+   "a": "Open the cleaned file in the PDF Info tool, which lists the Info fields. They should show as none found. Your viewer's document properties page should also be empty."
+  },
+  {
+   "q": "Will it break a digital signature?",
+   "a": "Yes. Any rewrite of the file invalidates existing signatures. Remove the metadata first, and sign afterwards if you need a signed document."
+  }
+ ],
+ "related": [
+  "pdf-metadata-editor",
+  "pdf-info",
+  "exif-remover",
+  "exif-viewer",
+  "pii-redactor",
+  "pdf-merge"
+ ],
+ "keywords": [
+  "remove pdf metadata",
+  "strip pdf author",
+  "clean pdf properties",
+  "anonymise pdf metadata",
+  "free pdf metadata remover"
+ ]
+}

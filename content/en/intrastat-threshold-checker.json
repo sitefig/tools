@@ -1,0 +1,39 @@
+{
+ "id": "intrastat-threshold-checker",
+ "seoTitle": "Intrastat Threshold Checker With Your Limits",
+ "metaDescription": "Compare yearly intra-EU arrivals and dispatches with the Intrastat thresholds you enter and see headroom or excess.",
+ "intro": "Checks your trade totals against thresholds that you provide.",
+ "why": "Intrastat reporting applies when intra-EU goods trade passes a national threshold, separately for arrivals and dispatches. Thresholds differ by country and change.\n\nEnter your totals and the thresholds from your statistics office. The tool flags the flows over the limit for review.",
+ "howTo": [
+  "Enter arrivals and dispatches.",
+  "Enter your country's thresholds.",
+  "Read headroom or excess."
+ ],
+ "faq": [
+  {
+   "q": "Are thresholds built in?",
+   "a": "No. They change and differ by country."
+  },
+  {
+   "q": "Does it cover services?",
+   "a": "No, Intrastat is for goods."
+  },
+  {
+   "q": "Is it related to VAT filings?",
+   "a": "It is separate from the VAT EC Sales List."
+  }
+ ],
+ "related": [
+  "eu-distance-selling-threshold-tracker",
+  "eu-vat-rates-lookup",
+  "reverse-charge-checker",
+  "oss-vat-calculator",
+  "vat-return-summary-builder",
+  "tax-id-checksum-validator"
+ ],
+ "keywords": [
+  "Intrastat threshold",
+  "Intrastat reporting",
+  "intra-EU trade"
+ ]
+}

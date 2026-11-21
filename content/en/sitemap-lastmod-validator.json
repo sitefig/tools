@@ -1,0 +1,44 @@
+{
+ "id": "sitemap-lastmod-validator",
+ "seoTitle": "Sitemap Lastmod Date Validator (W3C Datetime)",
+ "metaDescription": "Check sitemap lastmod values for W3C format, impossible or future dates, missing values and one-date-for-all patterns.",
+ "intro": "Validates every lastmod in a sitemap and flags suspicious patterns.",
+ "why": "Google uses lastmod only when it is consistently accurate. A build script that stamps every URL with the same date teaches crawlers to ignore it.\n\nThis tool checks the format (including a time without a zone), real calendar dates and future dates, and it counts distinct days. It cannot tell if a date is true, only if it looks plausible.",
+ "howTo": [
+  "Paste the sitemap XML, or lines of URL and date.",
+  "Run the tool.",
+  "Fix the errors first.",
+  "Review warnings about identical dates."
+ ],
+ "faq": [
+  {
+   "q": "Which formats are valid?",
+   "a": "W3C datetime: YYYY-MM-DD or a full date and time with Z or +hh:mm."
+  },
+  {
+   "q": "Why is a shared date a problem?",
+   "a": "It often means the date is generated at build time and not the real change date."
+  },
+  {
+   "q": "Is a future date an error?",
+   "a": "It is a warning. Dates more than a day ahead are flagged."
+  },
+  {
+   "q": "Does this replace the sitemap validator?",
+   "a": "No. It focuses on dates; use both."
+  }
+ ],
+ "related": [
+  "sitemap-validator",
+  "sitemap-lastmod-timeline",
+  "sitemap-priority-distribution",
+  "sitemap-diff",
+  "sitemap-generator"
+ ],
+ "keywords": [
+  "lastmod validator",
+  "sitemap lastmod format",
+  "w3c datetime sitemap",
+  "sitemap date check"
+ ]
+}

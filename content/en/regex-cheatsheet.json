@@ -1,0 +1,47 @@
+{
+ "id": "regex-cheatsheet",
+ "seoTitle": "Free JavaScript Regex Cheat Sheet with Examples",
+ "metaDescription": "Searchable quick reference for JavaScript regex syntax: classes, groups, lookarounds, flags, replacement tokens and examples. Free, in your browser.",
+ "intro": "A searchable cheat sheet for JavaScript regular expressions. It covers character classes, quantifiers, groups, lookarounds, flags, replacement tokens and a few ready-made patterns.",
+ "why": "Even regular users forget the small details: the syntax for a named group, whether lookbehind exists, what the s flag does, how to refer to a group in a replacement. Searching the web turns up answers for other languages with subtly different rules.\n\nThis sheet is specific to JavaScript. Type \"lookbehind\", \"unicode\", \"flag\" or \"replace\" and the matching lines appear with a short explanation. At the bottom you find starter patterns for dates, IPv4 addresses, hex colours and duplicate words. They are starting points to adapt and test, not complete validators; try them in the Regex Tester before using them.",
+ "howTo": [
+  "Open the cheat sheet to see all entries.",
+  "Type a keyword such as group, lookahead, unicode or flag to filter.",
+  "Read the syntax on the left and the explanation on the right.",
+  "Copy a pattern into the Regex Tester to try it on your own text."
+ ],
+ "faq": [
+  {
+   "q": "Does it cover other regex flavours?",
+   "a": "No, it describes JavaScript only. PCRE, Python, Java and .NET share most basics but differ in features such as inline flags, atomic groups, possessive quantifiers and variable-length lookbehind."
+  },
+  {
+   "q": "What does the u flag change?",
+   "a": "It switches on Unicode mode, so the pattern works on code points rather than UTF-16 units. That makes emoji behave as single characters and enables \\p{...} property escapes such as \\p{L} for any letter."
+  },
+  {
+   "q": "Are the example patterns safe to use?",
+   "a": "Treat them as starting points. A simple email or URL pattern accepts many invalid inputs and rejects some valid ones. For validation, test with real data and prefer a dedicated parser where one exists."
+  },
+  {
+   "q": "Where can I try a pattern?",
+   "a": "Use the Regex Tester on this site. It shows matches, groups and replace results for any JavaScript pattern and flags."
+  }
+ ],
+ "related": [
+  "regex-tester",
+  "regex-escape",
+  "regex-benchmark-simulator",
+  "find-replace",
+  "markdown-cheatsheet",
+  "html-entities-reference"
+ ],
+ "keywords": [
+  "regex cheat sheet",
+  "javascript regular expressions reference",
+  "regex syntax quick reference",
+  "free regex cheatsheet",
+  "named capture group syntax",
+  "regex lookbehind javascript"
+ ]
+}

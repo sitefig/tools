@@ -1,0 +1,45 @@
+{
+ "id": "marketing-funnel-calculator",
+ "seoTitle": "Marketing Funnel Calculator: Visitors Needed for a Revenue Goal",
+ "metaDescription": "Work back from a revenue goal and deal size through your stage conversion rates to the visitors, leads and opportunities you need.",
+ "intro": "Enter a revenue goal, deal size and four stage rates to see the volume needed at each stage.",
+ "why": "Goals are set in revenue but campaigns run on traffic. Working backward through the funnel shows the size of the gap between the two.\n\nEach stage is rounded up. The rates are inputs, so use real rates from your own history. The output shows the volume implied, not whether it is reachable.",
+ "howTo": [
+  "Enter revenue goal and average deal size.",
+  "Enter the four stage conversion rates.",
+  "Read the counts at each stage.",
+  "Compare with current traffic."
+ ],
+ "faq": [
+  {
+   "q": "Why start from revenue?",
+   "a": "It shows the traffic needed to hit the target."
+  },
+  {
+   "q": "Can I change the stage names?",
+   "a": "Not here; the stages are fixed."
+  },
+  {
+   "q": "Does it include time?",
+   "a": "No, only volume."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "conversion-funnel-visualizer",
+  "conversion-rate-calculator",
+  "cac-ltv-calculator",
+  "ads-roas-calculator",
+  "lead-scoring-calculator",
+  "rice-prioritization"
+ ],
+ "keywords": [
+  "marketing funnel calculator",
+  "funnel math",
+  "leads needed for revenue",
+  "sales funnel calculator"
+ ]
+}

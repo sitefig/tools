@@ -1,0 +1,39 @@
+{
+ "id": "subscription-cost-tracker",
+ "seoTitle": "Subscription Cost Tracker: Monthly and Yearly Total",
+ "metaDescription": "Total all subscriptions per month and year from a pasted list, sorted by cost with each share. Free and private.",
+ "intro": "Turns a list of subscriptions with different billing cycles into monthly and yearly totals.",
+ "why": "Small recurring charges add up. Putting weekly, monthly, quarterly and yearly prices on the same monthly scale shows which ones cost most.\n\nSet a highlight limit to flag items worth reviewing. Nothing is saved: copy your list if you want to keep it.",
+ "howTo": [
+  "Write one line per subscription: name, price, cycle.",
+  "Optionally set a highlight limit.",
+  "Read totals and ranking."
+ ],
+ "faq": [
+  {
+   "q": "Which cycles work?",
+   "a": "Weekly, monthly, quarterly, half-yearly and yearly."
+  },
+  {
+   "q": "Is my list stored?",
+   "a": "Nothing you type leaves your browser."
+  },
+  {
+   "q": "Does it include tax?",
+   "a": "Only if the price you enter does."
+  }
+ ],
+ "related": [
+  "bill-tracker",
+  "budget-50-30-20-planner",
+  "net-worth-calculator",
+  "percentage-calculator",
+  "savings-goal",
+  "bill-splitter"
+ ],
+ "keywords": [
+  "subscription tracker",
+  "recurring costs",
+  "cancel subscriptions"
+ ]
+}

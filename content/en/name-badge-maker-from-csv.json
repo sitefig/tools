@@ -1,0 +1,45 @@
+{
+ "id": "name-badge-maker-from-csv",
+ "seoTitle": "Name Badge Maker from a CSV of Attendees",
+ "metaDescription": "Paste a CSV of names, titles and companies, design one badge with placeholders and print a badge for every row. Free, nothing uploaded.",
+ "intro": "Fills one badge layout with each row of a CSV and lays the badges out on printable pages.",
+ "why": "Events need badges fast. Paste the attendee list with a header row such as name,title,company, then write the three lines of the badge with placeholders like {{name}}. Every row becomes a badge, with an optional event name on top and an accent color bar.\n\nThe CSV reader handles quoted fields with commas inside, such as \"Turing, Alan\". A placeholder that has no matching column gives a clear error instead of a blank badge. Names stay in your browser, which matters for attendee lists. Set the badge size to match your holders and print from the browser.",
+ "howTo": [
+  "Paste the CSV with a header row.",
+  "Set the three lines using {{column}} placeholders.",
+  "Set badge size, color and paper.",
+  "Print the pages."
+ ],
+ "faq": [
+  {
+   "q": "Is the attendee list uploaded?",
+   "a": "No."
+  },
+  {
+   "q": "Can I add a logo?",
+   "a": "Not in this version."
+  },
+  {
+   "q": "How many badges?",
+   "a": "Up to 500."
+  },
+  {
+   "q": "What if a name has a comma?",
+   "a": "Put it in quotes in the CSV."
+  }
+ ],
+ "related": [
+  "certificate-mail-merge-generator",
+  "label-sheet-layout-printer",
+  "qr-code-generator",
+  "business-card-pdf-designer",
+  "csv-viewer",
+  "invoice-generator"
+ ],
+ "keywords": [
+  "name badge maker",
+  "conference badge generator",
+  "badges from csv",
+  "event name tags"
+ ]
+}

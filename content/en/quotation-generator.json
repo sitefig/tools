@@ -1,0 +1,50 @@
+{
+ "id": "quotation-generator",
+ "seoTitle": "Free Quotation Generator: Printable Price Quote, Save as PDF",
+ "metaDescription": "Fill in a form to get a clean printable quotation with validity date, line items, discount, tax, terms and an acceptance block. Print or save as PDF; nothing is uploaded.",
+ "intro": "Prepare a price quotation (estimate) for a client in a few minutes and save it as a PDF.",
+ "why": "A quotation is not an invoice: it states a price that is valid until a date and invites the client to accept. This generator takes your details, the client, a subject, a validity date, currency, discount, tax percentage, line items written one per line as description, quantity and unit price, and your terms. It calculates amounts, subtotal, discount, tax and the total quoted, and shows a live printable preview with signature lines for acceptance. Use your browser's print dialog and choose Save as PDF.\n\nYour entries are kept only in this browser. It does not apply local tax or legal rules, so check what your country requires on quotations and on the contract that follows.",
+ "howTo": [
+  "Fill in your details, the client and the quotation number.",
+  "Set the validity date, currency, discount and tax.",
+  "Enter line items as description | quantity | unit price.",
+  "Press Print / Save as PDF and choose Save as PDF."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between a quotation and an invoice?",
+   "a": "A quotation offers a price before the work; an invoice asks for payment after it. Use the invoice generator once the work is accepted."
+  },
+  {
+   "q": "How does the discount work?",
+   "a": "It is a percentage taken off the subtotal before tax is added."
+  },
+  {
+   "q": "Is a signed quotation a contract?",
+   "a": "That depends on your jurisdiction and on what you wrote. The acceptance block is a convenience, not legal advice; add your terms and ask a professional if the amount is large."
+  },
+  {
+   "q": "Where are my entries stored?",
+   "a": "Only in this browser's local storage. Reset clears them."
+  },
+  {
+   "q": "Can I add a logo?",
+   "a": "Not directly. Save as PDF and add it in a PDF editor, or put your company name in the From box."
+  }
+ ],
+ "related": [
+  "invoice-generator",
+  "receipt-generator",
+  "vat-calculator",
+  "discount-calculator",
+  "markup-margin",
+  "resume-builder"
+ ],
+ "keywords": [
+  "quotation generator",
+  "quote template",
+  "free price quote maker",
+  "estimate template pdf",
+  "printable quotation"
+ ]
+}

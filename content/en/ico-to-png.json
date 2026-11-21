@@ -1,0 +1,45 @@
+{
+  "id": "ico-to-png",
+  "seoTitle": "ICO to PNG Converter (All Sizes, With Transparency)",
+  "metaDescription": "Open a .ico or .cur file and save every size inside it as a PNG. Reads PNG-compressed and classic bitmap icons at 1, 4, 8, 16, 24 and 32 bits.",
+  "intro": "Extract the images from a favicon or Windows icon.",
+  "why": "The tool reads the icon directory and every image entry. PNG-compressed entries are saved as they are; bitmap entries are decoded (palettes, 16/24/32-bit colour and the AND transparency mask) and re-encoded as PNG. Decoding of all bit depths was compared pixel by pixel with Pillow.\n\nRLE-compressed or unusual bitmaps are not supported, and cursor hotspots are ignored.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose an .ico or .cur file.",
+    "Read the list of sizes.",
+    "Download each PNG.",
+    "Create a new favicon set with the favicon generator."
+  ],
+  "faq": [
+    {
+      "q": "How many images are in an ico?",
+      "a": "Often 16, 32, 48 and 256 pixel sizes in one file."
+    },
+    {
+      "q": "Is transparency kept?",
+      "a": "Yes."
+    },
+    {
+      "q": "Can I make an ico?",
+      "a": "Use the favicon generator, which creates .ico from an image."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "favicon-generator",
+    "image-format-converter",
+    "app-icon-generator",
+    "image-resizer",
+    "svg-to-png",
+    "image-info"
+  ],
+  "keywords": [
+    "ico to png",
+    "convert ico",
+    "extract icon sizes",
+    "favicon to png"
+  ]
+}

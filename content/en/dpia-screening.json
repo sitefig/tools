@@ -1,0 +1,41 @@
+{
+ "id": "dpia-screening",
+ "seoTitle": "DPIA Screening: Is a Data Protection Impact Assessment Needed?",
+ "metaDescription": "Tick the nine high-risk criteria and see whether a DPIA is likely required, worth considering or probably not needed. Free screening aid.",
+ "intro": "Applies the nine WP29/EDPB criteria and the GDPR Art. 35(3) cases to tell you whether a DPIA is likely needed.",
+ "why": "A data protection impact assessment is required when processing is likely to result in a high risk to people. The WP29 guidelines list nine criteria; processing that meets two or more will in most cases need a DPIA. Art. 35(3) names cases where one is always required, and each national authority publishes its own list.\n\nTick what applies and get a screening result with the reasoning to write down. It is a screening aid only. Your DPO or lawyer decides.",
+ "howTo": [
+  "Describe the processing activity in your own notes.",
+  "Tick each criterion that applies.",
+  "Tick the Art. 35(3) and national list boxes if they apply.",
+  "Read the result and record the reasoning."
+ ],
+ "faq": [
+  {
+   "q": "What if I score one criterion?",
+   "a": "Review it with your DPO. A DPIA may still be needed, and writing down why or why not is good practice."
+  },
+  {
+   "q": "Where is the national list?",
+   "a": "On your supervisory authority's website. This tool does not include any national list."
+  },
+  {
+   "q": "What happens after a DPIA?",
+   "a": "If high risk remains that you cannot reduce, Art. 36 requires consulting the authority first."
+  }
+ ],
+ "related": [
+  "ropa-builder",
+  "lawful-basis-selector",
+  "gdpr-checklist",
+  "privacy-law-applicability-checker",
+  "retention-schedule-builder",
+  "data-deletion-request-letter"
+ ],
+ "keywords": [
+  "dpia screening",
+  "is a dpia required",
+  "wp248 criteria",
+  "data protection impact assessment"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "unicode-normalize",
+  "seoTitle": "Free Unicode Normalizer (NFC, NFD, NFKC, NFKD)",
+  "metaDescription": "Normalise text to NFC, NFD, NFKC or NFKD, strip accents and remove zero-width characters. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Rewrites text into a chosen Unicode normalisation form, with optional accent stripping and removal of zero-width characters and soft hyphens. It also reports how many code points went in and came out.",
+  "why": "Two strings can look identical on screen and still fail an equality check. The letter e with an acute accent can be one code point or an e followed by a combining mark, and a search, a database lookup or a filename comparison will treat them as different. Compatibility characters like the fi ligature, circled digits and full-width letters add to the confusion.\n\nThis tool lets you see and fix that. Pick a normalisation form, optionally strip diacritics for slugs or loose matching, and remove invisible characters that sneak in from copied web text. The code point count before and after shows whether anything actually changed. It all runs locally, so internal data stays on your machine.",
+  "howTo": [
+    "Paste your text into the input box.",
+    "Choose a form: NFC, NFD, NFKC or NFKD.",
+    "Tick Strip diacritics to drop accents, and Remove zero-width / soft hyphen if needed.",
+    "Read the output and the code point counts underneath, then copy the result."
+  ],
+  "faq": [
+    {
+      "q": "Which form should I use?",
+      "a": "NFC is the usual choice for storing and comparing text. NFD splits letters from their accents. NFKC and NFKD also fold compatibility characters, so ligatures and full-width letters become plain ones, which suits search but loses some formatting."
+    },
+    {
+      "q": "What exactly does strip diacritics remove?",
+      "a": "It decomposes the text, deletes all combining marks, then recomposes using the form you selected. Cafe with an accent becomes plain Cafe. It does not transliterate letters such as the Danish o with a stroke, which has no combining mark."
+    },
+    {
+      "q": "Which invisible characters are removed?",
+      "a": "The zero-width space, zero-width non-joiner and joiner, word joiner, byte order mark and soft hyphen. Other invisible characters, such as directional marks, are left in place."
+    },
+    {
+      "q": "Why do the code point counts differ?",
+      "a": "Normalisation can merge a base letter and its combining mark into one code point, or split them apart. The counts under the output show that change, and they also reflect characters that were removed."
+    }
+  ],
+  "related": [
+    "zero-width-detector",
+    "char-info",
+    "unicode-escape",
+    "string-escape",
+    "text-obfuscator",
+    "utf8-bytes-viewer"
+  ],
+  "keywords": [
+    "unicode normalizer",
+    "nfc nfd nfkc nfkd converter",
+    "remove accents from text",
+    "remove zero width characters",
+    "free unicode normalization tool"
+  ]
+}

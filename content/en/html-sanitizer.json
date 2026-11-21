@@ -1,0 +1,41 @@
+{
+ "id": "html-sanitizer",
+ "seoTitle": "HTML Sanitizer: Remove Scripts and Unsafe URLs, List Changes",
+ "metaDescription": "Clean untrusted HTML with a strict allow-list: scripts, handlers and javascript: URLs removed, every change listed. Local, no upload.",
+ "intro": "Rebuilds untrusted HTML from an allow-list of tags and attributes and reports each removal with its line number.",
+ "why": "User-supplied HTML can carry scripts, event handlers and javascript: links. This tool parses the markup, keeps only a short list of text, list, table and image tags, drops script, style, iframe, form and similar elements with their content, removes event handlers and style attributes, and allows only http, https, mailto and tel links.\n\nIt is hand-written and has had no third-party security review, so treat it as a preview of what an allow-list does. In production use a maintained library and a Content-Security-Policy. Nothing you paste is sent anywhere.",
+ "howTo": [
+  "Paste the untrusted HTML.",
+  "Choose whether to keep ids or allow data: images.",
+  "Read the cleaned HTML and the change list.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Is this DOMPurify?",
+   "a": "No. It is a separate, smaller implementation. Use a maintained library for real products."
+  },
+  {
+   "q": "Are encoded tricks handled?",
+   "a": "URL values are decoded and stripped of hidden characters before the scheme check, and output is escaped."
+  },
+  {
+   "q": "Why are ids removed?",
+   "a": "Ids can clash with page scripts (DOM clobbering). You can keep them with the option."
+  }
+ ],
+ "related": [
+  "html-tag-stripper",
+  "html-format",
+  "hacked-html-scanner",
+  "security-headers-grader",
+  "html-validator",
+  "tracker-detector"
+ ],
+ "keywords": [
+  "html sanitizer",
+  "sanitize html online",
+  "remove script tags from html",
+  "xss clean html"
+ ]
+}

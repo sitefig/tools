@@ -1,0 +1,41 @@
+{
+ "id": "cookie-expiry-auditor",
+ "seoTitle": "Cookie Expiry Auditor: Check Lifetimes Against 13 Months",
+ "metaDescription": "Paste Set-Cookie headers and flag cookies that live longer than a limit you choose, 13 months by default. Reads Max-Age and Expires.",
+ "intro": "Reads Max-Age and Expires from each cookie, converts to days and months and flags the ones over your limit.",
+ "why": "The French CNIL recommends keeping the lifetime of consent-exempt cookies, such as audience measurement, to about 13 months, and asking for consent again after about six months. Other authorities have their own views, and browsers cap cookie lifetime too.\n\nPaste your Set-Cookie headers and the tool works out each cookie's lifetime from a reference date, using Max-Age first as browsers do. The 13-month figure is guidance, and it came from secondary sources here, so check the CNIL text if you rely on it. You can change the limit.",
+ "howTo": [
+  "Paste Set-Cookie headers.",
+  "Set the limit in months and an optional reference date.",
+  "Run the tool and read which cookies are over.",
+  "Shorten the lifetime or justify it in your policy."
+ ],
+ "faq": [
+  {
+   "q": "Which wins, Max-Age or Expires?",
+   "a": "Max-Age wins when both are present, as in RFC 6265."
+  },
+  {
+   "q": "Is 13 months a legal limit?",
+   "a": "No. It is CNIL guidance for certain cookies. Other regulators differ."
+  },
+  {
+   "q": "What about cookies set by JavaScript?",
+   "a": "Check document.cookie in the console or the browser cookie list."
+  }
+ ],
+ "related": [
+  "cookie-flag-analyzer",
+  "cookie-classifier",
+  "cookie-table-builder",
+  "cookie-policy-generator",
+  "har-analyzer",
+  "consent-banner-checklist"
+ ],
+ "keywords": [
+  "cookie lifetime check",
+  "cnil 13 months",
+  "cookie max-age",
+  "cookie expiry"
+ ]
+}

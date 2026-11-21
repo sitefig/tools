@@ -1,0 +1,46 @@
+{
+ "id": "concrete-calculator",
+ "seoTitle": "Free Concrete Calculator: Slab Volume and Bags Needed",
+ "metaDescription": "Work out the concrete volume for a slab in cubic metres and yards, add a waste allowance and see how many bags to buy. Free, runs in your browser.",
+ "intro": "Enter slab length, width, thickness and a waste percentage. The tool returns the volume in cubic metres and yards, and the number of bags needed.",
+ "why": "Pouring a shed base, a path or a patio means ordering the right amount of concrete. Too little and you face a cold joint halfway through the pour; too much and you are paying to dump it. The volume is length times width times depth, but depth is in centimetres while the other sides are in metres, and a waste allowance is needed for uneven ground and spillage. This calculator takes care of the units, adds your waste percentage and then converts the result into bag counts for two common bag sizes, an 80 lb (36 kg) bag and a 25 kg premix bag. Bag yields vary by brand, so check the label. It is for rectangular slabs, and it runs locally.",
+ "howTo": [
+  "Enter the slab length and width in metres.",
+  "Enter the thickness in centimetres and a waste percentage.",
+  "Read the volume with and without waste and the number of bags."
+ ],
+ "faq": [
+  {
+   "q": "How much waste should I allow?",
+   "a": "Ten percent is a common allowance for uneven sub-bases and spillage. The default is 10%. Increase it for rough ground or small, complex pours, and reduce it for flat, well-prepared bases."
+  },
+  {
+   "q": "How many bags does the tool assume?",
+   "a": "It assumes about 0.017 cubic metres for an 80 lb (36 kg) bag and about 0.0075 cubic metres for a 25 kg premix bag. Yields differ between products, so check the label."
+  },
+  {
+   "q": "Can I use it for circular or sloped areas?",
+   "a": "Not directly. It treats the slab as a rectangle with even thickness. For other shapes, work out the area separately and enter an equivalent length and width."
+  },
+  {
+   "q": "Is this a structural specification?",
+   "a": "No. It estimates quantity only. The thickness, mix, reinforcement and base preparation for your job should follow local building rules or an engineer's advice."
+  }
+ ],
+ "related": [
+  "brick-calculator",
+  "tile-calculator",
+  "flooring-calculator",
+  "paint-coverage",
+  "unit-converter",
+  "roof-pitch"
+ ],
+ "keywords": [
+  "concrete calculator",
+  "free concrete calculator",
+  "concrete slab calculator",
+  "how many bags of concrete",
+  "concrete volume calculator",
+  "cubic metres of concrete"
+ ]
+}

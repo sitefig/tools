@@ -1,0 +1,45 @@
+{
+ "id": "package-json-formatter",
+ "seoTitle": "Free package.json Formatter and Sorter Online",
+ "metaDescription": "Reorder package.json keys into the conventional npm order, sort dependencies and scripts, fix indentation and spot basic problems. Free, in your browser.",
+ "intro": "Re-orders package.json keys into the conventional npm order, sorts dependency maps, optionally sorts scripts, normalises indentation and reports basic problems such as missing fields or invalid versions.",
+ "why": "package.json files grow by hand edits, and soon name sits below scripts and dependencies are in random order. Diffs get noisy, merge conflicts multiply and reviewers cannot find anything. This tool puts the file into the usual order (name, version, description, then scripts, dependencies, engines and so on), sorts the dependency sections alphabetically and optionally sorts scripts and unknown keys. It also looks for common mistakes: a missing name or version, a version that is not valid semver, \"latest\" used as a range, and the same package listed in several dependency sections. Paste the file, copy the result, and commit a tidy file. It runs in your browser and your package details are not uploaded.",
+ "howTo": [
+  "Paste the contents of your package.json into the input box.",
+  "Set the indentation and choose whether to sort scripts and unknown keys.",
+  "Review the reported problems, then copy the formatted file."
+ ],
+ "faq": [
+  {
+   "q": "What order is used?",
+   "a": "The conventional npm order: identity fields such as name, version and description first, then entry points, scripts, dependency sections and engines, with unknown keys afterwards."
+  },
+  {
+   "q": "Does sorting scripts change behaviour?",
+   "a": "No, but it can change reading order, so scripts that depend on each other by name remain correct while their order changes. It is off by default."
+  },
+  {
+   "q": "What problems does it report?",
+   "a": "Missing name or version, invalid semver in version, dependencies pinned to \"latest\", and packages that appear in more than one dependency section."
+  },
+  {
+   "q": "Will it keep my custom fields?",
+   "a": "Yes. Unknown keys are preserved and, by default, sorted alphabetically after the known ones. Untick the option to keep their original order."
+  }
+ ],
+ "related": [
+  "package-json-generator",
+  "package-json-license-checker",
+  "json-format",
+  "json-sort-keys",
+  "semver-calculator",
+  "tsconfig-generator"
+ ],
+ "keywords": [
+  "package.json formatter",
+  "sort package.json online",
+  "package json key order",
+  "free package.json sorter",
+  "format package.json dependencies"
+ ]
+}

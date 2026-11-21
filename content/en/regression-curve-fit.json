@@ -1,0 +1,45 @@
+{
+ "id": "regression-curve-fit",
+ "seoTitle": "Regression Calculator: Linear, Polynomial, Exponential and Power Fit",
+ "metaDescription": "Fit a line, polynomial, exponential, power or log model to x, y data and get the equation, R squared and a plot. Free, runs in your browser.",
+ "intro": "Fits a model to your x, y data by least squares and gives the equation, R squared, adjusted R squared, residuals and a plot of the curve over the points.",
+ "why": "A fitted curve turns a table of numbers into a rule you can use. Paste your x and y values, pick linear, polynomial (degree 2 to 6), exponential, power or logarithmic, and read the equation and how well it matches.\n\nLinear and polynomial fits use a numerically stable QR least-squares solution on centered data. Exponential and power fits are done on the logarithms, the usual spreadsheet method, so their R squared is computed on the original y values and can be lower than the log-scale fit suggests. A high R squared does not prove the model is right, so always look at the plot and the residual column.",
+ "howTo": [
+  "Paste one x y pair per line.",
+  "Choose the model, and the degree for polynomial fits.",
+  "Read the equation, R squared and the residual table.",
+  "Look at the plot to see if the curve really follows the points."
+ ],
+ "faq": [
+  {
+   "q": "What does R squared mean?",
+   "a": "The share of the variation in y that the model explains, from 0 to 1 for a good fit."
+  },
+  {
+   "q": "Why does exponential need y above zero?",
+   "a": "The fit takes the logarithm of y, which is undefined for zero or negative values."
+  },
+  {
+   "q": "Can I predict new values?",
+   "a": "Use the equation shown. Extrapolating far beyond your data is risky."
+  },
+  {
+   "q": "How many points do I need?",
+   "a": "At least 3, and more than the number of model parameters."
+  }
+ ],
+ "related": [
+  "statistics-calculator",
+  "average-median-mode",
+  "function-grapher-roots",
+  "probability-distribution-calculator",
+  "ab-test-calculator",
+  "scientific-calculator-degrees"
+ ],
+ "keywords": [
+  "regression calculator",
+  "linear regression online",
+  "polynomial curve fit",
+  "exponential regression calculator"
+ ]
+}

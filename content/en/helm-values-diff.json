@@ -1,0 +1,44 @@
+{
+ "id": "helm-values-diff",
+ "seoTitle": "Helm Values Diff: Compare Two values.yaml Files",
+ "metaDescription": "Compare two Helm values or YAML files key by key. Nested keys become dotted paths marked added, removed or changed. Free, runs in your browser.",
+ "intro": "Flattens two YAML files to dotted key paths and lists what was added, removed or changed, with old and new values.",
+ "why": "Values files grow over time and a plain text diff shows moved lines and comments as changes. Comparing by key path shows only what changes the rendered chart.\n\nFor each path the tool shows the old and new value. Lists are compared by index, so inserting an item near the top marks every later item as changed. Comments and key order are ignored. Anchors and merge keys are expanded.",
+ "howTo": [
+  "Paste the old values in the first box and the new values in the second.",
+  "Tick the option to list unchanged keys if you want the full picture.",
+  "Pick table, CSV or JSON output.",
+  "Copy the result into your review."
+ ],
+ "faq": [
+  {
+   "q": "Does key order matter?",
+   "a": "No. Keys are compared by path, so reordering is not a change."
+  },
+  {
+   "q": "How are lists compared?",
+   "a": "By position, as path[0], path[1] and so on. Inserting an item shifts the later ones."
+  },
+  {
+   "q": "Can I use it for non-Helm YAML?",
+   "a": "Yes. Any YAML mapping works."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "helm-values-evaluator",
+  "helm-chart-scaffolder",
+  "json-diff",
+  "yaml-validator",
+  "text-diff",
+  "k8s-manifest-validator"
+ ],
+ "keywords": [
+  "helm values diff",
+  "compare yaml files",
+  "yaml diff by key"
+ ]
+}

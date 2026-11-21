@@ -1,0 +1,45 @@
+{
+ "id": "protobuf-to-json",
+ "seoTitle": "Free Protobuf to Sample JSON Generator (proto3 Mapping)",
+ "metaDescription": "Generate a sample JSON document from a .proto message using the canonical proto3 JSON mapping. Free, runs in your browser.",
+ "intro": "Parses a .proto file (proto2 or proto3) and writes a sample JSON document for one message using the canonical proto3 JSON mapping: camelCase names, int64 as strings, bytes as base64 and enums by name.",
+ "why": "Working with gRPC or protobuf APIs, you often need an example payload: for a REST gateway, a test fixture, documentation or a quick curl call. Writing JSON by hand from a message definition means remembering the mapping rules. 64-bit integers are strings, bytes are base64, enums appear by name, maps are objects, and a Timestamp is an RFC 3339 string. This tool applies those rules to your .proto source and fills in placeholder values for every field, so you get a realistic skeleton. You pick the message, or let it use the first top-level one that nothing refers to. For a oneof it outputs the first member only. The file is processed in your browser, so internal service definitions are not uploaded.",
+ "howTo": [
+  "Paste the .proto source into the input box.",
+  "Optionally name the message to use, and choose camelCase field names and how 64-bit integers are written.",
+  "Copy the sample JSON and replace the placeholders with real values."
+ ],
+ "faq": [
+  {
+   "q": "Which JSON mapping does it follow?",
+   "a": "The canonical proto3 JSON mapping: lowerCamelCase names, int64 and uint64 as strings (or numbers if you choose), bytes as base64, enums by name, maps as objects and Timestamp as RFC 3339 text."
+  },
+  {
+   "q": "What about oneof fields?",
+   "a": "Only the first member of a oneof is included in the sample, because a real message can have only one set."
+  },
+  {
+   "q": "Does it support imports?",
+   "a": "It works on the text you paste. Messages that come from imported files must be pasted in too, or they cannot be resolved."
+  },
+  {
+   "q": "Are values meaningful?",
+   "a": "No. They are placeholders chosen by type so the shape is correct. Replace them with realistic data for tests."
+  }
+ ],
+ "related": [
+  "proto-to-typescript",
+  "protobuf-to-json-schema",
+  "protobuf-formatter",
+  "json-schema-to-protobuf",
+  "json-format",
+  "api-mock-response-generator"
+ ],
+ "keywords": [
+  "protobuf to json",
+  "proto to sample json",
+  "generate json from proto message",
+  "free protobuf json converter",
+  "proto3 json mapping example"
+ ]
+}

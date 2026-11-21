@@ -1,0 +1,45 @@
+{
+ "id": "csv-delimiter-converter",
+ "seoTitle": "CSV Delimiter Converter: Comma, Semicolon, Tab, Pipe | Free",
+ "metaDescription": "Switch a CSV between comma, semicolon, tab and pipe delimiters with correct quoting. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Changes the delimiter of a CSV file and re-quotes fields so values that contain the new delimiter, quotes or line breaks stay intact.",
+ "why": "Spreadsheet programs in many countries export semicolon-separated files because the comma is the decimal mark. Tools elsewhere expect commas or tabs. A find and replace breaks as soon as a quoted field contains the old delimiter.\n\nThis page reads the data as real CSV first, then writes it again with the delimiter you pick. It can guess the input delimiter from the first line. Rows with a different number of columns are kept as they are, not padded.",
+ "howTo": [
+  "Paste the CSV or load it into the box.",
+  "Leave the input delimiter on auto, or pick it if the guess is wrong.",
+  "Choose the output delimiter, quoting and line ending.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "How does auto detection work?",
+   "a": "It counts each candidate delimiter in the first non-empty line, ignoring quoted text, and picks the most frequent one. Pick it by hand for files with one column or unusual headers."
+  },
+  {
+   "q": "Are quotes kept?",
+   "a": "Fields are quoted only when needed (they contain the delimiter, a quote or a line break), unless you tick Quote every field."
+  },
+  {
+   "q": "Is my data uploaded?",
+   "a": "No. Parsing runs in your browser."
+  },
+  {
+   "q": "What about an unclosed quote?",
+   "a": "You get an error instead of a silent wrong result."
+  }
+ ],
+ "related": [
+  "csv-viewer",
+  "csv-to-json",
+  "csv-column-extractor",
+  "csv-transpose",
+  "csv-deduplicator",
+  "json-to-csv"
+ ],
+ "keywords": [
+  "csv delimiter converter",
+  "semicolon to comma csv",
+  "csv to tsv",
+  "change csv separator"
+ ]
+}

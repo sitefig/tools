@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Question Answering from Your Text, Offline in the Browser | Free Tools</title>
+<meta name="description" content="Paste a passage, ask a question, and a DistilBERT SQuAD model highlights the answer span. Runs locally in your browser; nothing is uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/ai-question-answering/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/ai-question-answering/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/ai-question-answering/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="AI Question Answering from Your Text, Offline in the Browser | Free Tools">
+<meta property="og:description" content="Paste a passage, ask a question, and a DistilBERT SQuAD model highlights the answer span. Runs locally in your browser; nothing is uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/ai-question-answering/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Question Answering from Your Text, Offline in the Browser | Free Tools">
+<meta name="twitter:description" content="Paste a passage, ask a question, and a DistilBERT SQuAD model highlights the answer span. Runs locally in your browser; nothing is uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"AI Question Answering from a Passage (DistilBERT SQuAD)","url":"https://tools.sitefig.net/en/ai-question-answering/","description":"Paste a passage, ask a question, and a DistilBERT SQuAD model highlights the answer span. Runs locally in your browser; nothing is uploaded.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the passage and type a question.","Press Find the answer; the first run downloads 67 MB once.","Read the highlighted span and the confidence; treat low confidence as \"probably not in the text\"."],"keywords":"question answering offline, squad bert browser, extract answer from text","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"AI & LLM","item":"https://tools.sitefig.net/en/#ai-and-llm"},{"@type":"ListItem","position":3,"name":"AI Question Answering from a Passage (DistilBERT SQuAD)","item":"https://tools.sitefig.net/en/ai-question-answering/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it write answers?","acceptedAnswer":{"@type":"Answer","text":"No, it only selects a span from your text. It cannot summarise, combine facts from two places or do arithmetic."}},{"@type":"Question","name":"How do I know the answer is right?","acceptedAnswer":{"@type":"Answer","text":"Read the highlighted sentence in context and check the confidence. Under about 20% usually means the passage does not contain the answer."}},{"@type":"Question","name":"How long can the passage be?","acceptedAnswer":{"@type":"Answer","text":"Several pages. Longer text is split into overlapping windows, which takes longer; very large documents are better split by section."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#ai-and-llm">AI &amp; LLM</a></li><li><span aria-current="page">AI Question Answering from a Passage (DistilBERT SQuAD)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>AI Question Answering from a Passage (DistilBERT SQuAD)</h1>
+<p class="lede">Ask a question about a passage and get the exact answer span highlighted, from a neural model that runs in your tab.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="ai-question-answering" data-module="gap5"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Extractive question answering finds the stretch of text that answers a question, instead of generating new text. That makes it far less prone to invention than a chat model: the answer is always words from your passage, so you can check it at a glance. It suits contracts, manuals, meeting notes and articles you do not want to upload.</p>
+<p>The model is distilbert-base-cased-distilled-squad (Apache-2.0, trained on SQuAD v1.1) with int8 weights and a hand-written JavaScript engine. Long passages are read in overlapping 384-token windows and the best span is returned. It cannot say &quot;not in the text&quot;: a low confidence figure is your warning.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the passage and type a question.</li><li>Press Find the answer; the first run downloads 67 MB once.</li><li>Read the highlighted span and the confidence; treat low confidence as &quot;probably not in the text&quot;.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does it write answers?</summary><p>No, it only selects a span from your text. It cannot summarise, combine facts from two places or do arithmetic.</p></details>
+<details><summary>How do I know the answer is right?</summary><p>Read the highlighted sentence in context and check the confidence. Under about 20% usually means the passage does not contain the answer.</p></details>
+<details><summary>How long can the passage be?</summary><p>Several pages. Longer text is split into overlapping windows, which takes longer; very large documents are better split by section.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/ai-fill-mask/"><span class="link-card__title">AI Fill-Mask: Predict the Missing Word (DistilBERT)</span><span class="link-card__desc">Put [MASK] in an English sentence and a DistilBERT language model, running in your browser, ranks the most likely words. No upload, no API.</span></a></li><li><a class="link-card" href="/en/ai-sentiment-classifier/"><span class="link-card__title">AI Sentiment Classifier</span><span class="link-card__desc">Positive or negative? A small DistilBERT transformer classifies English text entirely in your browser (no upload, no API).</span></a></li><li><a class="link-card" href="/en/text-summarizer/"><span class="link-card__title">Text Summarizer (Extractive, No AI Model)</span><span class="link-card__desc">Pick the most representative sentences from an article using TextRank or word-frequency scoring. Runs in the browser, no model download.</span></a></li><li><a class="link-card" href="/en/rag-chunking-visualizer/"><span class="link-card__title">RAG Chunking Visualizer</span><span class="link-card__desc">See how a document splits into retrieval chunks: fixed window, sentence or recursive (paragraph, line, sentence, word) splitting with size and overlap. Chunks are color coded and overlaps highlighted (recursive and sentence modes overlap by whole segments, so overlap can be 0 when segments are large).</span></a></li><li><a class="link-card" href="/en/ai-language-identifier/"><span class="link-card__title">AI Language Identifier (fastText, 176 Languages)</span><span class="link-card__desc">Identify the language of any text with Facebook's fastText lid.176 model (917 KB), run by a JavaScript port in your browser. Shows probabilities and can check every line.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

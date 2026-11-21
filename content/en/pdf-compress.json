@@ -1,0 +1,50 @@
+{
+ "id": "pdf-compress",
+ "seoTitle": "Compress PDF Online Free - No Upload, In Your Browser",
+ "metaDescription": "Shrink a PDF in your browser: deflate streams, drop unused objects, pack objects and optionally downsample JPEG images. Nothing is uploaded.",
+ "intro": "Make a PDF smaller without sending it anywhere. The tool rewrites the file structure and can lower the resolution of embedded JPEG photos.",
+ "why": "A PDF often carries more weight than it needs: uncompressed content streams, objects nothing refers to any more, thousands of small objects stored one by one, and photos stored at far more pixels than any screen or printer shows.\n\nThis tool reads the file, keeps only the objects reachable from the document catalog, deflates every stream that is stored raw, optionally recompresses streams that are already deflated, and packs the small objects into compressed object streams with a cross-reference stream. That lossless pass is the whole job for text-heavy files. For scans and photo reports, switch on the lossy option: every plain JPEG image (RGB or grey) larger than the pixel limit is scaled down and re-encoded at the quality you set, and it is kept only when the new image is at least 5% smaller.\n\nText stays text: pages are never rasterised, so search, copy and vector graphics survive. Everything runs in your browser, nothing is uploaded.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Leave the lossless options on for a safe pass, or tick the JPEG option for photo-heavy files.",
+  "Set the longest image side in pixels (1600 is fine for screens) and the JPEG quality.",
+  "Download the compressed file and check the size line; if it is not smaller, keep the original."
+ ],
+ "faq": [
+  {
+   "q": "How much smaller will my PDF get?",
+   "a": "It depends on the file. A PDF made by a tool that already compresses everything may shrink by a few percent only, in which case the tool tells you the result is not smaller. Files with raw streams or many small objects often drop by a third or more, and scans or photo reports can drop by 80% or more with the JPEG option."
+  },
+  {
+   "q": "Is the JPEG option lossy?",
+   "a": "Yes. Re-encoding a JPEG always loses some detail. Only images that are RGB or grey, 8 bit, unmasked and without a custom decode array are touched, and only if the result is clearly smaller. CMYK images, images with transparency masks, and non-JPEG images (Flate, JBIG2, JPEG 2000) are left alone."
+  },
+  {
+   "q": "Does it keep forms, bookmarks and links?",
+   "a": "Yes. Every object reachable from the document is kept, including form fields, outlines and link annotations. What is lost is anything the file already lost: digital signatures become invalid because the bytes change, and linearization (fast web view) is not rebuilt."
+  },
+  {
+   "q": "Does it handle password-protected files?",
+   "a": "No. Encrypted files are refused so that the result cannot silently lose its protection. Remove the password first with the unlock tool, compress, then protect again."
+  },
+  {
+   "q": "Why is the result sometimes the same size?",
+   "a": "The structural pass can only remove slack that exists. Fonts, already-compressed images and well-packed files have little. This tool does not subset fonts, convert colour spaces or run Ghostscript-class optimisations."
+  }
+ ],
+ "related": [
+  "image-compressor",
+  "pdf-merge",
+  "pdf-split",
+  "pdf-delete-pages",
+  "pdf-to-image",
+  "pdf-info"
+ ],
+ "keywords": [
+  "compress pdf online",
+  "reduce pdf file size",
+  "shrink pdf without upload",
+  "pdf size reducer",
+  "downsample pdf images"
+ ]
+}

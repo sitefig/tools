@@ -1,0 +1,46 @@
+{
+  "id": "pagerank-calculator",
+  "seoTitle": "Free Internal PageRank Calculator for Site Links",
+  "metaDescription": "Paste a crawl link list and calculate internal PageRank, inlinks, click depth, orphan pages and dead ends. Runs in your browser; no crawl data is uploaded.",
+  "intro": "Paste the links from a site crawl (one \"from to\" pair per line) and see which pages collect the most internal link equity, which are orphans, and how deep each page sits.",
+  "why": "The tool runs the classic PageRank power iteration with a damping factor you can change (0.85 by default) on the links you give it. Pages with no outgoing links share their weight with every page, as in the original algorithm. Scores are shown relative to an average page and to the strongest page, so you can compare pages quickly.\n\nThis is a model of your internal linking, not of Google's ranking: it ignores external links, anchor text, nofollow and everything else Google uses. Use it to find pages that are buried, pages that hog authority, and sections your navigation never reaches. Export \"Source,Destination\" from your crawler or write the pairs by hand.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Export internal links from your crawler as Source,Destination, or type one \"from to\" pair per line.",
+    "Paste them in and set the damping factor if you want to experiment.",
+    "Read the table: high scores are well linked, depth shows clicks from the start page.",
+    "Check the orphan, dead-end and unreachable lists and add links where they are missing."
+  ],
+  "faq": [
+    {
+      "q": "Is this the same as Google PageRank?",
+      "a": "No. It applies the textbook PageRank algorithm to the internal links you paste. Google combines hundreds of signals and does not publish its scores. Treat the output as a map of how your own links distribute weight."
+    },
+    {
+      "q": "What is the damping factor?",
+      "a": "The probability that a surfer keeps following links instead of jumping to a random page. 0.85 is the value from the original paper; lower values spread weight more evenly."
+    },
+    {
+      "q": "Why do dead-end pages matter?",
+      "a": "A page with no outgoing links gives its weight to every page equally. Adding links from dead ends back into your site keeps authority circulating."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "internal-link-extractor",
+    "internal-link-suggester",
+    "anchor-text-distribution",
+    "sitemap-url-extractor",
+    "seo-inspector",
+    "topic-cluster-planner"
+  ],
+  "keywords": [
+    "pagerank calculator",
+    "internal pagerank",
+    "internal linking analysis",
+    "orphan pages",
+    "click depth"
+  ]
+}

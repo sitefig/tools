@@ -1,0 +1,45 @@
+{
+ "id": "image-hash-comparator",
+ "seoTitle": "Image Hash Comparator (Perceptual pHash, dHash and aHash)",
+ "metaDescription": "Compute perceptual hashes for two or more images and compare them by Hamming distance to find near-duplicates, resized copies and re-compressed versions.",
+ "intro": "Compare images with perceptual hashes.",
+ "why": "Choose two or more images. The page computes a pHash, dHash or aHash for each from a tiny grayscale copy and ranks the pairs by Hamming distance, the number of differing bits out of 64.\n\nSmall distances mean similar pictures, so resized or re-compressed copies match. Crops, rotations and mirrored copies do not. The near-duplicate threshold is a rule of thumb, so review the matches by eye.",
+ "howTo": [
+  "Choose at least two images.",
+  "Pick the hash type.",
+  "Set the near-duplicate threshold.",
+  "Read the closest pairs."
+ ],
+ "faq": [
+  {
+   "q": "Which hash should I use?",
+   "a": "pHash is the most robust to edits. dHash is fast and good for copies. aHash is the simplest."
+  },
+  {
+   "q": "What distance means a duplicate?",
+   "a": "0 is the same hash. Up to about 5 to 10 bits is often a near copy. Always check."
+  },
+  {
+   "q": "Does it find rotated copies?",
+   "a": "No. The hashes change when the picture turns."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "duplicate-photo-finder",
+  "image-diff",
+  "image-info",
+  "hash-compare",
+  "file-hash",
+  "blurhash-generator"
+ ],
+ "keywords": [
+  "perceptual hash",
+  "pHash",
+  "dHash",
+  "image similarity"
+ ]
+}

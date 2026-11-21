@@ -1,0 +1,45 @@
+{
+  "id": "branded-query-splitter",
+  "seoTitle": "Branded vs Non-Branded Query Splitter for Search Console",
+  "metaDescription": "Split a Search Console query export into branded and non-branded queries by your brand terms, with typo matching and click, impression and CTR totals.",
+  "intro": "Separate searches that include your brand from generic ones, and compare how many clicks and impressions each group brings.",
+  "why": "Paste queries one per line or as CSV with clicks and impressions. A query counts as branded if it contains any brand term, ignoring spaces and dashes (so \"acmeshoes\" matches \"acme shoes\"). An option also catches one-letter typos of brand words of five or more letters.\n\nBranded traffic usually has a very high CTR and says little about SEO growth, so tracking non-branded clicks separately is the useful number. Add product names and common misspellings to the brand list for a cleaner split.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Export queries from Search Console (with clicks and impressions) and paste them.",
+    "Enter your brand terms separated by commas.",
+    "Run it and compare branded and non-branded totals and CTR.",
+    "Refine the brand list if queries land in the wrong group."
+  ],
+  "faq": [
+    {
+      "q": "Does it use Google's own branded filter?",
+      "a": "No. Search Console has a similar built-in filter; this tool lets you control the terms and works with any exported list."
+    },
+    {
+      "q": "What does the typo option do?",
+      "a": "It treats a word that is one edit away from a brand term (5+ letters) as branded, for example \"akme\" for \"acme\"."
+    },
+    {
+      "q": "Why is branded CTR so high?",
+      "a": "People searching for you by name usually want your site and click the first result."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "keyword-cannibalization-detector",
+    "traffic-drop-analyzer",
+    "keyword-extractor",
+    "keyword-clusterer",
+    "keyword-intent-classifier",
+    "utm-builder"
+  ],
+  "keywords": [
+    "branded queries",
+    "non-branded traffic",
+    "search console brand filter",
+    "brand vs generic keywords"
+  ]
+}

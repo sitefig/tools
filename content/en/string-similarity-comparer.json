@@ -1,0 +1,45 @@
+{
+ "id": "string-similarity-comparer",
+ "seoTitle": "Free String Similarity Comparer: Jaro-Winkler, Dice, Cosine",
+ "metaDescription": "Compare two strings with Levenshtein, Jaro, Jaro-Winkler, Dice, Jaccard, cosine and LCS scores side by side. Free, runs locally.",
+ "intro": "Scores two strings with ten common similarity measures at once so you can see how they differ.",
+ "why": "No single similarity score fits every job. Jaro-Winkler suits short names because it rewards a shared start. Dice and cosine on letter pairs suit longer text. Edit distance is easy to explain but harsh on long strings.\n\nPaste two strings and see all scores from 0 to 1 side by side, each with a one-line description of what it measures. The Jaro-Winkler scores use the usual prefix length of 4 and scale of 0.1, and match the published values for MARTHA and MARHTA.",
+ "howTo": [
+  "Enter the two strings.",
+  "Choose whether to ignore case and collapse whitespace.",
+  "Compare the scores in the table.",
+  "Pick the measure that suits your data and set your own threshold."
+ ],
+ "faq": [
+  {
+   "q": "Which score should I use for names?",
+   "a": "Jaro-Winkler is a common choice for short names. Test it on your own data and set a threshold from examples."
+  },
+  {
+   "q": "Why are bigram scores 0 for one-letter strings?",
+   "a": "A single character has no pairs of letters, so there is nothing to compare unless the strings are equal."
+  },
+  {
+   "q": "Are the scores comparable to each other?",
+   "a": "Roughly, since all run from 0 to 1, but they measure different things. Compare scores of one measure across pairs."
+  },
+  {
+   "q": "Is there a length limit?",
+   "a": "5000 characters per string."
+  }
+ ],
+ "related": [
+  "levenshtein-calculator",
+  "text-similarity-checker",
+  "fuzzy-search-playground",
+  "embedding-similarity",
+  "text-diff",
+  "keyword-list-cleaner"
+ ],
+ "keywords": [
+  "string similarity",
+  "jaro winkler calculator",
+  "dice coefficient calculator",
+  "compare strings similarity"
+ ]
+}

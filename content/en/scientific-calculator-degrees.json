@@ -1,0 +1,45 @@
+{
+ "id": "scientific-calculator-degrees",
+ "seoTitle": "Scientific Calculator with Degrees, Variables and Physical Constants",
+ "metaDescription": "Free scientific calculator: trig in degrees or radians, logs, factorials, variables and CODATA constants with their NIST source. Runs in your browser.",
+ "intro": "Evaluates a list of expressions with trig, logs, factorials, variables, the last answer and physical constants, and shows where each constant comes from.",
+ "why": "Many online calculators hide which unit they use for angles and where their constants come from. This one lets you switch between radians and degrees, write sin(30°) with a degree sign, store results in variables and reuse the last answer as ans.\n\nPhysical constants such as the speed of light c, the Boltzmann constant kB or the Avogadro constant NA are built in from the 2022 CODATA values published by NIST. Whenever you use one, the value, unit and source are printed under the results, so you can check the number you used. Results are ordinary double-precision floats, good for about 15 digits.",
+ "howTo": [
+  "Type one expression per line, such as sin(30°) + log(100) * pi.",
+  "Choose radians or degrees. The degree sign always converts to the chosen unit.",
+  "Use name = value to set a variable, and ans for the previous result.",
+  "Tick the constants box to list every built-in constant with its source."
+ ],
+ "faq": [
+  {
+   "q": "Which constants are included?",
+   "a": "c, h, hbar, qe, kB, NA, R, G, g0, me, mp, mn, eps0, sigma, amu, a0, alpha, Ryd and F, from CODATA 2022 as published by NIST. pi, e, tau and phi are also available."
+  },
+  {
+   "q": "Is log base 10 or natural?",
+   "a": "log is base 10, ln is natural, log2 is base 2."
+  },
+  {
+   "q": "Can it do complex numbers or big integers?",
+   "a": "No. For exact big numbers use the arbitrary-precision calculator."
+  },
+  {
+   "q": "How accurate is it?",
+   "a": "About 15 significant digits, as with any double-precision calculator."
+  }
+ ],
+ "related": [
+  "scientific-expression-calculator",
+  "bignumber-calculator",
+  "function-grapher-roots",
+  "statistics-calculator",
+  "unit-converter",
+  "derivative-calculator-steps"
+ ],
+ "keywords": [
+  "scientific calculator online",
+  "degrees radians calculator",
+  "physical constants CODATA",
+  "calculator with variables"
+ ]
+}

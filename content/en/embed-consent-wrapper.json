@@ -1,0 +1,41 @@
+{
+ "id": "embed-consent-wrapper",
+ "seoTitle": "Click-to-Load Embed Wrapper for YouTube and Maps",
+ "metaDescription": "Turn an iframe embed into a placeholder with a load button, so nothing loads before the click. Optional youtube-nocookie. Free generator.",
+ "intro": "Converts iframe embeds into placeholders that load the real embed only after the visitor clicks.",
+ "why": "A YouTube or map embed contacts the provider as soon as the page loads, even if the visitor never plays it. A two-click solution fixes that: show a placeholder with a button, and create the iframe only when the visitor presses it.\n\nPaste your iframe and the tool outputs the placeholder markup, small CSS and a script that builds the iframe on click, without inline event handlers. YouTube URLs can switch to youtube-nocookie.com, which still contacts Google after the click. Script-based embeds such as X posts are not handled.",
+ "howTo": [
+  "Paste one or more iframe embeds.",
+  "Set the placeholder text and button text.",
+  "Copy the markup, style and script into your page.",
+  "Mention the provider in your privacy and cookie policies."
+ ],
+ "faq": [
+  {
+   "q": "Does it work for Google Maps?",
+   "a": "Yes for iframe embeds. The map loads after the click."
+  },
+  {
+   "q": "Is a click valid consent?",
+   "a": "The click shows the visitor's choice for that embed. Whether it is enough depends on your setup and local rules."
+  },
+  {
+   "q": "What about CSP?",
+   "a": "Allow the embed domain in frame-src."
+  }
+ ],
+ "related": [
+  "cookie-banner-generator",
+  "consent-banner-checklist",
+  "csp-builder",
+  "third-party-domain-classifier",
+  "tracker-detector",
+  "google-consent-mode-snippet"
+ ],
+ "keywords": [
+  "click to load youtube",
+  "embed placeholder",
+  "two click embed",
+  "youtube nocookie"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "ansible-playbook-generator",
+ "seoTitle": "Free Ansible Playbook Scaffolder and Generator",
+ "metaDescription": "Generate an Ansible playbook with packages, services, users, ufw firewall ports and a restart handler. Free, runs entirely in your browser.",
+ "intro": "Fill in hosts, packages, services, users and firewall ports and get a ready-to-edit Ansible playbook with a restart handler.",
+ "why": "A first server setup playbook almost always does the same things: refresh the package cache, install a few packages, create a deploy user, open ports and start a service. Writing the YAML by hand means checking module names and indentation each time, and small mistakes only show up when the play runs.\n\nThis tool writes that baseline using the fully qualified module names (ansible.builtin.package, ansible.builtin.user, community.general.ufw). It assumes Debian or Ubuntu style tooling for the apt cache and ufw tasks, so adjust it for other systems. The text is built in your browser and never leaves it.",
+ "howTo": [
+  "Enter the play name, the target hosts group and whether to use become.",
+  "List packages, services, users and TCP ports, separated by commas.",
+  "Copy the YAML into a playbook file and run it with ansible-playbook --check first."
+ ],
+ "faq": [
+  {
+   "q": "Does it work on Red Hat style systems?",
+   "a": "The package, user and service tasks are generic, but the apt cache update and ufw firewall tasks are Debian-oriented. Untick the cache option and replace ufw with firewalld or similar if needed."
+  },
+  {
+   "q": "What is the handler for?",
+   "a": "A handler named Restart followed by your first service is added at the end, so other tasks can notify it. The generated tasks do not notify it yet, so link it where you change config."
+  },
+  {
+   "q": "Do I need the community.general collection?",
+   "a": "Only if you list firewall ports, because the ufw module lives there. Install it with ansible-galaxy collection install community.general."
+  },
+  {
+   "q": "Is a bad port number caught?",
+   "a": "Yes. A port that is not a whole number up to 65535 stops the tool with an error before any YAML is produced."
+  }
+ ],
+ "related": [
+  "terraform-scaffolder",
+  "systemd-unit-generator",
+  "helm-chart-scaffolder",
+  "yaml-format",
+  "github-actions-generator",
+  "dockerfile-generator"
+ ],
+ "keywords": [
+  "ansible playbook generator",
+  "ansible playbook template",
+  "free ansible scaffolder",
+  "generate ansible yaml",
+  "ansible ufw playbook"
+ ]
+}

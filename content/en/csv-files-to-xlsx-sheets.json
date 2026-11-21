@@ -1,0 +1,44 @@
+{
+ "id": "csv-files-to-xlsx-sheets",
+ "seoTitle": "Several CSV Files to One Excel Workbook, One Sheet Each",
+ "metaDescription": "Paste several CSV tables separated by --- and download one .xlsx with a sheet per table. Numbers stay numbers, leading zeros stay text. Free.",
+ "intro": "Builds an Excel workbook from several pasted CSV tables. Name each sheet with a first line like -- name: Sales.",
+ "why": "Excel opens a single CSV as one sheet, so combining several exports into one workbook usually means copy and paste. Separate the tables with a line of three dashes and get one .xlsx with a bold header row on every sheet.\n\nNumbers are written as real numbers so formulas work, while values such as 007 or 00123 stay as text to keep the leading zeros. The file is built in your browser from plain XML and a ZIP container; no macros, no styles beyond the bold header. For a single CSV you can also use the CSV to XLSX tool.",
+ "howTo": [
+  "Paste the first table, then a line with ---, then the next.",
+  "Start a table with -- name: Sheet name to name its sheet.",
+  "Pick the delimiter, or leave it on auto, and decide whether numbers are converted.",
+  "Download the workbook."
+ ],
+ "faq": [
+  {
+   "q": "Is the file valid for Excel?",
+   "a": "It is a standard .xlsx package. It was checked as a well-formed ZIP and XML; open it in your spreadsheet program to confirm."
+  },
+  {
+   "q": "Are dates converted?",
+   "a": "No. Dates stay text, so nothing is silently reinterpreted."
+  },
+  {
+   "q": "Sheet name limits?",
+   "a": "Names are cut to 31 characters and forbidden characters are replaced with spaces."
+  },
+  {
+   "q": "Can I upload files?",
+   "a": "Paste the text; the tool works on text input only."
+  }
+ ],
+ "related": [
+  "csv-to-xlsx",
+  "json-to-xlsx",
+  "xlsx-viewer",
+  "csv-merger",
+  "csv-viewer",
+  "xlsx-to-json"
+ ],
+ "keywords": [
+  "csv to excel",
+  "merge csv into workbook",
+  "csv multiple sheets xlsx"
+ ]
+}

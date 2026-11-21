@@ -1,0 +1,41 @@
+{
+ "id": "isbn-validator-converter",
+ "seoTitle": "ISBN Validator and ISBN-10 to ISBN-13 Converter",
+ "metaDescription": "Check ISBN-10 and ISBN-13 check digits and convert between them, many at once. Free, offline, no book lookup.",
+ "intro": "Check the check digit of ISBN-10 and ISBN-13 numbers and convert between the two forms. Works offline; it does not look up the book.",
+ "why": "A wrong digit in an ISBN sends an order to the wrong book. The last digit is a check digit, so most typing errors can be caught offline.\n\nPaste ISBNs, one per line, with or without hyphens. The tool checks ISBN-10 (weights 10 to 1, modulus 11, X for ten) and ISBN-13 (weights 1 and 3, modulus 10) and converts between the two. ISBNs starting 979 have no ISBN-10. It does not add hyphens, which needs the agency's range tables, or look up the book.",
+ "howTo": [
+  "Paste ISBNs, one per line.",
+  "Read the type and result for each.",
+  "Copy the converted forms.",
+  "Look up valid numbers in a library or shop for the book itself."
+ ],
+ "faq": [
+  {
+   "q": "Does a valid ISBN mean the book exists?",
+   "a": "No. It only means the check digit is right."
+  },
+  {
+   "q": "Why is there no ISBN-10 for some?",
+   "a": "ISBN-10 maps only to 978 numbers. 979 numbers were created later."
+  },
+  {
+   "q": "Why no hyphens?",
+   "a": "Hyphen positions depend on published range tables that change, so this tool leaves them out."
+  }
+ ],
+ "related": [
+  "doi-link-extractor",
+  "test-identifier-generator",
+  "tax-id-checksum-validator",
+  "citation-generator",
+  "email-validator",
+  "vat-number-format-validator"
+ ],
+ "keywords": [
+  "isbn validator",
+  "isbn 10 to 13 converter",
+  "isbn check digit",
+  "isbn converter"
+ ]
+}

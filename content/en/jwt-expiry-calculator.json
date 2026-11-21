@@ -1,0 +1,43 @@
+{
+ "id": "jwt-expiry-calculator",
+ "seoTitle": "Free JWT Expiry Checker: exp, nbf and iat",
+ "metaDescription": "Check JWT exp, nbf and iat against the current time, with clock-skew leeway, remaining and total lifetime. Signature is not verified. Free.",
+ "intro": "Paste one or more JWTs and check their exp, nbf and iat claims against now or a time you choose, with optional clock-skew leeway. See remaining lifetime, total lifetime and warnings.",
+ "why": "A user reports being logged out, or an API returns 401 for a token that looks fine. The first question is almost always whether the token has expired, is not yet valid, or is valid for an unreasonable length of time. The claims are Unix timestamps in a base64 payload, which nobody can read at a glance.\n\nThis tool decodes the payload and does the arithmetic: how long until expiry, how long the token lives in total, and whether the clocks of two systems could explain a failure, using leeway. It does not verify the signature, so a token that passes here is not proven authentic. Because tokens grant access, use test or expired tokens where possible. The decoding happens in your browser.",
+ "howTo": [
+  "Paste one JWT, or several with one per line.",
+  "Optionally set a different current time to test a past or future moment.",
+  "Set the clock-skew leeway in seconds.",
+  "Read the remaining lifetime, the total lifetime and any warnings for each token."
+ ],
+ "faq": [
+  {
+   "q": "Does this prove a token is valid?",
+   "a": "No. It reads the claims and never checks the signature, so anyone can craft a token that looks good here. Real validation must happen on your server with the correct key."
+  },
+  {
+   "q": "What is clock-skew leeway?",
+   "a": "Servers rarely agree on the exact time. Leeway adds a few seconds of tolerance to exp and nbf checks, so a token that is a moment early or late is still accepted, as many libraries do."
+  },
+  {
+   "q": "Should I paste a live production token?",
+   "a": "Better not. A valid token can give access to an account until it expires. The tool runs in your browser, but use expired or test tokens when you can, and revoke any token you shared."
+  }
+ ],
+ "related": [
+  "jwt-decode",
+  "jwt-encode",
+  "jwt-signature-validator",
+  "jwt-verify-hs",
+  "timestamp-converter",
+  "epoch-batch"
+ ],
+ "keywords": [
+  "jwt expiry checker",
+  "jwt exp calculator",
+  "check jwt expiration",
+  "jwt nbf iat decoder",
+  "jwt lifetime calculator",
+  "free jwt tool"
+ ]
+}

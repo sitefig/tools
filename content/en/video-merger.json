@@ -1,0 +1,45 @@
+{
+ "id": "video-merger",
+ "seoTitle": "Video Merger: Join Several Clips Into One File",
+ "metaDescription": "Join video clips in the order you choose, scaled to one size, in your browser. Nothing is uploaded.",
+ "intro": "Plays several clips one after another and records them as one video. You can reorder the list with buttons.",
+ "why": "The size of the first clip sets the output size; other clips are fitted inside it with black bars so nothing is stretched. Audio from each clip is recorded in turn.\n\nNothing is uploaded. The file is decoded by your browser and re-encoded, so quality drops a little and the result is WebM (or MP4 where your browser can record it). It records in real time, so a 60 second clip takes about a minute and the tab must stay visible. The sum of all clip lengths is the processing time.",
+ "howTo": [
+  "Add the clips with the file field. Add more than once if needed.",
+  "Reorder with the Up and Down buttons or remove one.",
+  "Press Process and keep the tab visible.",
+  "Download the merged video."
+ ],
+ "faq": [
+  {
+   "q": "Do the clips need the same size?",
+   "a": "No. They are fitted to the first clip."
+  },
+  {
+   "q": "Is there a transition?",
+   "a": "No, clips are joined with a straight cut."
+  },
+  {
+   "q": "How many clips can I join?",
+   "a": "It depends on your device memory. Four to ten short clips are fine."
+  },
+  {
+   "q": "Can I trim clips first?",
+   "a": "Use the Video Trimmer, then merge."
+  }
+ ],
+ "related": [
+  "video-trimmer",
+  "video-resizer",
+  "video-format-converter",
+  "video-music-mixer",
+  "video-compressor",
+  "audio-trimmer"
+ ],
+ "keywords": [
+  "join videos online",
+  "merge video clips",
+  "combine videos no upload",
+  "concatenate video"
+ ]
+}

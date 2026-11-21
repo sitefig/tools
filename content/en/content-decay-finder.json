@@ -1,0 +1,45 @@
+{
+ "id": "content-decay-finder",
+ "seoTitle": "Content Decay Finder: Pages Losing Clicks in Search Console",
+ "metaDescription": "Compare two Search Console Pages exports and list pages that lost clicks, with impression, position and CTR changes and a likely cause hint.",
+ "intro": "Paste the Pages export of an earlier and a later period. The tool lists pages that lost clicks, how much, and whether impressions, position or CTR changed.",
+ "why": "Content slowly loses traffic as it ages, competitors update and demand shifts. The pages that lost the most clicks are the best candidates to refresh first.\n\nThe hint tries to tell causes apart: a worse position points to ranking, fewer impressions point to demand or visibility, and steady rank and impressions with fewer clicks point to the snippet or SERP features. These are rules of thumb. Use periods of the same length, think about seasonality, and remember Search Console exports are limited to 1,000 rows.",
+ "howTo": [
+  "Export Pages from Search Console for the earlier period and paste it in the first box.",
+  "Export the later period and paste it in the second.",
+  "Set the minimum earlier clicks and minimum drop.",
+  "Open the worst pages and refresh or fix them."
+ ],
+ "faq": [
+  {
+   "q": "Which columns are needed?",
+   "a": "A page column first, then Clicks. Impressions and Position make the hints better."
+  },
+  {
+   "q": "Why is a page missing from the later file?",
+   "a": "It may have no impressions now, or fall below the 1,000 row export limit."
+  },
+  {
+   "q": "Which periods should I compare?",
+   "a": "Equal lengths, ideally the same season, for example the last 3 months against the 3 months before, or year on year."
+  },
+  {
+   "q": "Is the hint a diagnosis?",
+   "a": "No. Confirm in Search Console and check the page."
+  }
+ ],
+ "related": [
+  "gsc-performance-analyzer",
+  "content-freshness-audit",
+  "keyword-cannibalization-detector",
+  "branded-query-splitter",
+  "trends-csv-analyzer",
+  "rank-history-analyzer"
+ ],
+ "keywords": [
+  "content decay",
+  "pages losing traffic",
+  "search console compare periods",
+  "content refresh candidates"
+ ]
+}

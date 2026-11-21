@@ -1,0 +1,45 @@
+{
+  "id": "docx-cleaner",
+  "seoTitle": "Word Document Cleaner: Remove Metadata, Comments, Tracked Changes",
+  "metaDescription": "Scrub a .docx before sharing: remove author and company metadata, delete comments, accept tracked changes and strip revision IDs. Runs in your browser.",
+  "intro": "Send a Word file without leaking who edited it, what was deleted or what colleagues commented.",
+  "why": "The cleaner rewrites the .docx: it clears author, last modified by, title, subject, keywords, description and revision in the core properties, company, manager, template and editing time in the extended properties, deletes the comments parts and their references, accepts all tracked changes (deleted text disappears and insertions stay), strips rsid attributes, and removes the thumbnail and custom properties. It also sets Word's \"remove personal information on save\". Output was opened with python-docx and LibreOffice to confirm the content and that the metadata and changes are gone.\n\nMetadata can also live in headers, footers, hidden text, embedded objects, images and the file name; this tool does not touch those. Open the cleaned file in Word and use Inspect Document for a final check.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose a .docx file.",
+    "Tick what to remove.",
+    "Download the cleaned copy.",
+    "Review it in Word before sending."
+  ],
+  "faq": [
+    {
+      "q": "Does it reject tracked changes?",
+      "a": "No, it accepts them: deleted text is removed and inserted text stays."
+    },
+    {
+      "q": "Is it safe for legal documents?",
+      "a": "Review the result carefully; keep the original and check with Word's Inspect Document."
+    },
+    {
+      "q": "Will formatting change?",
+      "a": "The content is unchanged apart from removed revision marks and metadata."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "docx-to-html",
+    "exif-remover",
+    "pdf-remove-metadata",
+    "pdf-metadata-editor",
+    "zip-inspector",
+    "pii-redactor"
+  ],
+  "keywords": [
+    "remove metadata from word",
+    "accept all tracked changes",
+    "remove comments from docx",
+    "docx sanitizer"
+  ]
+}

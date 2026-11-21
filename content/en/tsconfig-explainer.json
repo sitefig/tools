@@ -1,0 +1,44 @@
+{
+ "id": "tsconfig-explainer",
+ "seoTitle": "tsconfig.json Explainer: Every Option in Plain Words",
+ "metaDescription": "Paste a tsconfig.json and get a short plain-language note for each option, plus a review list for unknown or risky settings. Runs in your browser.",
+ "intro": "Annotates each option in a tsconfig.json with what it does and flags unknown option names and a few risky combinations.",
+ "why": "A tsconfig often contains options copied from a template, and nobody remembers why. This page gives one line per option so you can decide what to keep. Comments and trailing commas are accepted, as in a real tsconfig.\n\nOption names were checked against the TSConfig Reference. The notes are short summaries I wrote, and defaults change between TypeScript versions, so confirm details in the reference before changing a build.",
+ "howTo": [
+  "Paste your tsconfig.json.",
+  "Read each entry and its note.",
+  "Check the Review list for unknown names and risky settings.",
+  "Look up anything unclear in the TSConfig Reference."
+ ],
+ "faq": [
+  {
+   "q": "Are the descriptions official?",
+   "a": "No. They are short summaries written for this page. The option names are checked against the reference."
+  },
+  {
+   "q": "Does it read extended configs?",
+   "a": "No. Only the pasted file is read, not files named in extends."
+  },
+  {
+   "q": "Why is my option unknown?",
+   "a": "It may be a typo, a wrong capitalisation, or newer than the list used here."
+  },
+  {
+   "q": "Is the file uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "tsconfig-generator",
+  "package-json-formatter",
+  "eslint-prettier-config-generator",
+  "json-format",
+  "typescript-formatter",
+  "editorconfig-generator"
+ ],
+ "keywords": [
+  "tsconfig explained",
+  "tsconfig options meaning",
+  "tsconfig strict explained"
+ ]
+}

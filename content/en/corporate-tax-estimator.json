@@ -1,0 +1,39 @@
+{
+ "id": "corporate-tax-estimator",
+ "seoTitle": "Corporate Tax Estimator With Two-Tier Rate",
+ "metaDescription": "Estimate company tax from profit at the rate you enter, with an optional reduced rate on the first slice and losses brought forward.",
+ "intro": "Corporate tax, effective rate and optional dividend tax from your own rates.",
+ "why": "Some countries tax small profits at a lower rate. Enter a reduced rate and the profit limit it applies to, plus any losses carried forward.\n\nAn optional dividend step shows the combined burden on distributed profit. Taxable profit is accounting profit adjusted by many rules that are not modelled. Not tax advice. Check national rules.",
+ "howTo": [
+  "Enter profit, losses and the standard rate.",
+  "Optionally add a reduced rate and limit.",
+  "Optionally add the dividend share and tax."
+ ],
+ "faq": [
+  {
+   "q": "Which rate should I use?",
+   "a": "Your country's current rate from the tax authority."
+  },
+  {
+   "q": "Are surtaxes included?",
+   "a": "No."
+  },
+  {
+   "q": "Does it compute taxable profit?",
+   "a": "No. You enter it."
+  }
+ ],
+ "related": [
+  "income-tax-bracket-calculator",
+  "withholding-tax-calculator",
+  "depreciation-calculator",
+  "profit-margin",
+  "break-even",
+  "capital-gains-tax-calculator"
+ ],
+ "keywords": [
+  "corporate tax calculator",
+  "company tax",
+  "profit tax"
+ ]
+}

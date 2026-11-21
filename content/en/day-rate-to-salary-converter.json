@@ -1,0 +1,39 @@
+{
+ "id": "day-rate-to-salary-converter",
+ "seoTitle": "Contractor Day Rate to Annual Salary Converter",
+ "metaDescription": "Turn a day rate and days worked into yearly income, hourly rate and an employee-equivalent salary. Free and private.",
+ "intro": "Converts a day rate to yearly income, hourly rate and a comparable employee salary.",
+ "why": "Comparing a day rate with a salary is only fair if you count the days you really bill and the benefits an employee gets, such as paid holiday and pension. Contractors also lose income between jobs.\n\nEnter day rate, days per year and a benefits uplift. The uplift is your own assumption. Taxes differ for contractors and employees and are not included.",
+ "howTo": [
+  "Enter the day rate and days worked.",
+  "Enter hours per day and a benefits uplift.",
+  "Read yearly income and the equivalent salary."
+ ],
+ "faq": [
+  {
+   "q": "How many days should I use?",
+   "a": "The days you expect to bill, usually fewer than a full year."
+  },
+  {
+   "q": "What is the benefits uplift?",
+   "a": "The value of paid leave, pension and other perks as a share of salary."
+  },
+  {
+   "q": "Is tax included?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "employee-total-cost-calculator",
+  "freelance-hourly-rate-calculator",
+  "project-quote-estimator",
+  "salary-hourly",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "day rate to salary",
+  "contractor day rate",
+  "day rate calculator"
+ ]
+}

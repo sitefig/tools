@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Musical Key Finder: Detect the Key of a Song | Free Tools</title>
+<meta name="description" content="Detect the likely key of a song from an audio file, with the top three matches and Camelot codes for DJ mixing. Free and private, runs locally.">
+<link rel="canonical" href="https://tools.sitefig.net/en/musical-key-finder/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/musical-key-finder/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/musical-key-finder/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Musical Key Finder: Detect the Key of a Song | Free Tools">
+<meta property="og:description" content="Detect the likely key of a song from an audio file, with the top three matches and Camelot codes for DJ mixing. Free and private, runs locally.">
+<meta property="og:url" content="https://tools.sitefig.net/en/musical-key-finder/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Musical Key Finder: Detect the Key of a Song | Free Tools">
+<meta name="twitter:description" content="Detect the likely key of a song from an audio file, with the top three matches and Camelot codes for DJ mixing. Free and private, runs locally.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Musical Key Finder for Audio Files","url":"https://tools.sitefig.net/en/musical-key-finder/","description":"Detect the likely key of a song from an audio file, with the top three matches and Camelot codes for DJ mixing. Free and private, runs locally.","applicationCategory":"MultimediaApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose an audio file.","Press Run.","Read the top three keys and their match scores.","If the first two are a relative major and minor pair, trust your ear to choose."],"keywords":"key finder, detect key of song, musical key detector, camelot key finder","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Audio","item":"https://tools.sitefig.net/en/#audio"},{"@type":"ListItem","position":3,"name":"Musical Key Finder for Audio Files","item":"https://tools.sitefig.net/en/musical-key-finder/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How reliable is it?","acceptedAnswer":{"@type":"Answer","text":"In our synthetic tests it named the right key every time. Real recordings are harder; a match above about 0.8 is usually dependable."}},{"@type":"Question","name":"What is the Camelot code?","acceptedAnswer":{"@type":"Answer","text":"A wheel notation DJs use: 8B is C major and 8A is A minor, and neighbouring numbers mix well."}},{"@type":"Question","name":"Does it use my whole file?","acceptedAnswer":{"@type":"Answer","text":"It analyses up to two minutes from the middle of the file."}},{"@type":"Question","name":"Which key profiles are used?","acceptedAnswer":{"@type":"Answer","text":"The Krumhansl-Kessler probe-tone profiles for major and minor."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#audio">Audio</a></li><li><span aria-current="page">Musical Key Finder for Audio Files</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Musical Key Finder for Audio Files</h1>
+<p class="lede">Listens to an audio file, measures how much energy falls on each of the twelve pitch classes, and compares that profile with the Krumhansl-Kessler major and minor key profiles.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="musical-key-finder" data-module="new19"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Knowing the key helps you mix tracks harmonically, pick a scale for a solo or find a sample that fits. The method counts pitch classes over time and finds the key whose typical note usage matches best. A tuning estimate corrects for recordings that are slightly off A440.</p>
+<p>It is a statistical guess. A song and its relative key (for example C major and A minor) share the same notes and are easy to confuse. Music that modulates, atonal music and noisy percussion give lower scores. The result lists three candidates with their Camelot wheel codes so you can see the close alternatives.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose an audio file.</li><li>Press Run.</li><li>Read the top three keys and their match scores.</li><li>If the first two are a relative major and minor pair, trust your ear to choose.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How reliable is it?</summary><p>In our synthetic tests it named the right key every time. Real recordings are harder; a match above about 0.8 is usually dependable.</p></details>
+<details><summary>What is the Camelot code?</summary><p>A wheel notation DJs use: 8B is C major and 8A is A minor, and neighbouring numbers mix well.</p></details>
+<details><summary>Does it use my whole file?</summary><p>It analyses up to two minutes from the middle of the file.</p></details>
+<details><summary>Which key profiles are used?</summary><p>The Krumhansl-Kessler probe-tone profiles for major and minor.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/bpm-detector/"><span class="link-card__title">BPM Detector for Audio Files</span><span class="link-card__desc">Estimate the tempo of a song from an audio file by analysing onsets and their repeating period. Shows the likely BPM, the half and double values, and a confidence figure.</span></a></li><li><a class="link-card" href="/en/instrument-tuner/"><span class="link-card__title">Instrument Tuner (Microphone Pitch Detector)</span><span class="link-card__desc">Tune a guitar, violin, ukulele or voice with your microphone: shows the detected note, frequency and how many cents sharp or flat you are, with an adjustable A4 reference.</span></a></li><li><a class="link-card" href="/en/pitch-shifter/"><span class="link-card__title">Pitch Shifter (Semitones, Same Tempo)</span><span class="link-card__desc">Raise or lower the pitch of an audio file by semitones and cents without changing its length, using a time stretch plus resampling. Exports WAV.</span></a></li><li><a class="link-card" href="/en/tone-generator/"><span class="link-card__title">Tone Generator</span><span class="link-card__desc">Generate a sine, square, triangle or sawtooth tone at any frequency.</span></a></li><li><a class="link-card" href="/en/spectrogram-viewer/"><span class="link-card__title">Spectrogram Viewer for Audio Files</span><span class="link-card__desc">Draw a spectrogram of an audio file: time across, frequency up, colour for loudness. Choose the window size, a linear or logarithmic frequency axis, and the dynamic range.</span></a></li><li><a class="link-card" href="/en/audio-spectrum-analyzer/"><span class="link-card__title">Live Audio Spectrum Analyzer</span><span class="link-card__desc">Watch the frequency spectrum of your microphone, or of an audio file as it plays, with the peak frequency and its musical note. Runs locally; nothing is recorded or sent.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

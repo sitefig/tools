@@ -1,0 +1,44 @@
+{
+ "id": "waypoints-to-gpx",
+ "seoTitle": "Waypoint List to GPX: Route, Track or Waypoints",
+ "metaDescription": "Type latitude, longitude and name per line and download a GPX route, track or waypoints for your GPS or app. Offline, no map clicks.",
+ "intro": "Writes a GPX 1.1 file from a typed list of points, as a route, a track or plain named waypoints.",
+ "why": "Planning a route usually means clicking on a map, which needs map tiles. If you know the points, you can type them and get the GPX file directly, ready for a GPS unit or a hiking app.\n\nRoutes are meant to be navigated, tracks record where you went. The tool can also write the same points as named waypoints. It shows the great-circle length between points, which is shorter than any real path. The file was parsed with gpxpy to verify structure.",
+ "howTo": [
+  "Type one point per line: lat, lon, name.",
+  "Choose route, track or waypoints only.",
+  "Name the route and decide on extra waypoints.",
+  "Download the .gpx file."
+ ],
+ "faq": [
+  {
+   "q": "Does it route along roads?",
+   "a": "No, the line goes straight between your points."
+  },
+  {
+   "q": "Can I add elevation?",
+   "a": "Not in this version."
+  },
+  {
+   "q": "Which GPX version?",
+   "a": "1.1."
+  },
+  {
+   "q": "How many points?",
+   "a": "Up to 5000."
+  }
+ ],
+ "related": [
+  "gpx-track-analyzer",
+  "kml-gpx-geojson-converter",
+  "geo-path-distance",
+  "coordinate-format-converter",
+  "csv-to-geojson",
+  "geojson-viewer-validator"
+ ],
+ "keywords": [
+  "create gpx file",
+  "coordinates to gpx",
+  "gpx route from points"
+ ]
+}

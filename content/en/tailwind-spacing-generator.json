@@ -1,0 +1,43 @@
+{
+ "id": "tailwind-spacing-generator",
+ "seoTitle": "Free Tailwind Spacing Scale Generator",
+ "metaDescription": "Generate a custom Tailwind spacing scale from a base unit: linear, doubling, modular or Fibonacci, with v4 theme and v3 config output. Free.",
+ "intro": "Choose a base unit and a progression and get a spacing scale as Tailwind v4 theme variables, a v3 config block, CSS custom properties and a table of pixel and rem values.",
+ "why": "Spacing is where design systems drift. One screen uses 12px, the next 14px, and nobody remembers the rule. A fixed scale built from a base unit, such as a 4px or 8pt grid, keeps layouts consistent and makes review easier because values are either on the scale or not.\n\nThis generator lets you try different progressions before you commit: linear steps, doubling, a modular ratio or Fibonacci. It then writes the scale in the formats you need, with pixel and rem values side by side so you can check it against your root font size. The calculation runs in your browser, so you can experiment freely and copy only the version you like.",
+ "howTo": [
+  "Set the base unit in pixels, for example 4 for a 4px grid or 8 for an 8pt grid.",
+  "Choose a progression: linear, doubling, modular ratio or Fibonacci, and set the number of steps.",
+  "Pick how the steps are named and set the root font size used for rem values.",
+  "Copy the Tailwind v4 theme block, the v3 config or the CSS custom properties."
+ ],
+ "faq": [
+  {
+   "q": "Which progression should I choose?",
+   "a": "Linear suits dense interfaces that need fine control. Doubling and modular scales grow faster and suit marketing pages or type-led layouts. Fibonacci sits between them. Try each and look at the pixel table."
+  },
+  {
+   "q": "How are the values named?",
+   "a": "You can use numbers, t-shirt sizes such as xs, sm and md, or the pixel value itself. Numbers are the easiest to remember, while the pixel names make the output self-explanatory."
+  },
+  {
+   "q": "Why does the tool ask for a root font size?",
+   "a": "Tailwind spacing is expressed in rem. The root size, normally 16px, converts your pixel steps into rem so that the scale follows a user's browser font settings."
+  }
+ ],
+ "related": [
+  "tailwind-v4-color-palette",
+  "css-clamp-calculator",
+  "px-to-rem-converter",
+  "tailwind-v3-to-v4-migrator",
+  "tailwind-converter",
+  "responsive-breakpoint-previewer"
+ ],
+ "keywords": [
+  "tailwind spacing scale generator",
+  "custom tailwind spacing",
+  "tailwind v4 theme spacing",
+  "8pt grid spacing scale",
+  "modular spacing scale generator",
+  "free design spacing tool"
+ ]
+}

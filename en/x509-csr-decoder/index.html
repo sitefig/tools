@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free CSR Decoder: Read a PKCS#10 Request Online | Free Tools</title>
+<meta name="description" content="Decode a PEM certificate signing request to see the subject, public key size, signature algorithm, SANs and key usage. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/x509-csr-decoder/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/x509-csr-decoder/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/x509-csr-decoder/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free CSR Decoder: Read a PKCS#10 Request Online | Free Tools">
+<meta property="og:description" content="Decode a PEM certificate signing request to see the subject, public key size, signature algorithm, SANs and key usage. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/x509-csr-decoder/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free CSR Decoder: Read a PKCS#10 Request Online | Free Tools">
+<meta name="twitter:description" content="Decode a PEM certificate signing request to see the subject, public key size, signature algorithm, SANs and key usage. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"X.509 CSR Decoder","url":"https://tools.sitefig.net/en/x509-csr-decoder/","description":"Decode a PEM certificate signing request to see the subject, public key size, signature algorithm, SANs and key usage. Free, in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the PEM text, from BEGIN CERTIFICATE REQUEST to END CERTIFICATE REQUEST.","Read the subject, key, signature algorithm and extensions in the output.","Fix the request in your tooling if anything is wrong, then submit it to the CA."],"keywords":"csr decoder, decode certificate signing request, pkcs10 csr viewer, free csr checker online, read csr subject and san","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"X.509 CSR Decoder","item":"https://tools.sitefig.net/en/x509-csr-decoder/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the CSR contain my private key?","acceptedAnswer":{"@type":"Answer","text":"No. A CSR holds the public key, the requested names and a signature made with the private key. The private key stays where you generated it and must not be pasted anywhere."}},{"@type":"Question","name":"Does it verify the signature?","acceptedAnswer":{"@type":"Answer","text":"No. The output says so at the end. It decodes the structure only, so a damaged or forged signature would not be detected."}},{"@type":"Question","name":"Which key types can it describe?","acceptedAnswer":{"@type":"Answer","text":"RSA, with a bit length, and elliptic curve keys with the curve name when it is one of P-256, P-384 or P-521. Other algorithms are shown by their object identifier."}},{"@type":"Question","name":"Where do I see the subject alternative names?","acceptedAnswer":{"@type":"Answer","text":"In a line labelled Subject Alt Names, if the CSR carries the extension. Names appear as DNS, email, URI or IP entries."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">X.509 CSR Decoder</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>X.509 CSR Decoder</h1>
+<p class="lede">Paste a PEM certificate signing request and read its subject, public key type and size, signature algorithm, requested SANs and key usage, plus its SHA-256 fingerprint.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="x509-csr-decoder" data-module="devx"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Before you send a CSR to a certificate authority, it pays to check what it actually asks for. A missing subject alternative name, a 1024-bit key or the wrong common name wastes a day when the certificate comes back unusable.</p>
+<p>This decoder reads the PKCS#10 structure with a small built-in DER parser and lists the subject fields, the RSA bit length or EC curve, the signature algorithm and the requested extensions. It also computes a SHA-256 fingerprint of the request. The signature itself is not verified. The CSR contains only a public key and identity details, never the private key, but treat requests from unknown sources with care.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the PEM text, from BEGIN CERTIFICATE REQUEST to END CERTIFICATE REQUEST.</li><li>Read the subject, key, signature algorithm and extensions in the output.</li><li>Fix the request in your tooling if anything is wrong, then submit it to the CA.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does the CSR contain my private key?</summary><p>No. A CSR holds the public key, the requested names and a signature made with the private key. The private key stays where you generated it and must not be pasted anywhere.</p></details>
+<details><summary>Does it verify the signature?</summary><p>No. The output says so at the end. It decodes the structure only, so a damaged or forged signature would not be detected.</p></details>
+<details><summary>Which key types can it describe?</summary><p>RSA, with a bit length, and elliptic curve keys with the curve name when it is one of P-256, P-384 or P-521. Other algorithms are shown by their object identifier.</p></details>
+<details><summary>Where do I see the subject alternative names?</summary><p>In a line labelled Subject Alt Names, if the CSR carries the extension. Names appear as DNS, email, URI or IP entries.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/x509-viewer/"><span class="link-card__title">X.509 Certificate Viewer</span><span class="link-card__desc">Paste a PEM certificate: subject, issuer, validity, SANs, key info and fingerprints.</span></a></li><li><a class="link-card" href="/en/x509-san-csr-builder/"><span class="link-card__title">CSR Builder (with SAN)</span><span class="link-card__desc">Generate a new key pair in your browser and a PKCS#10 certificate signing request with Subject Alternative Names (DNS, IP, email, URI). Output is the CSR PEM and the private key (PKCS#8 PEM); nothing leaves the page.</span></a></li><li><a class="link-card" href="/en/rsa-key-pair-generator/"><span class="link-card__title">RSA Key Pair Generator</span><span class="link-card__desc">Generate an RSA key pair with WebCrypto: PKCS#8 private key and SPKI public key as PEM (optional PKCS#1 format). Nothing is uploaded.</span></a></li><li><a class="link-card" href="/en/ssh-key-inspector/"><span class="link-card__title">SSH Public Key Inspector</span><span class="link-card__desc">Parse an OpenSSH public key line: type, size, comment and the SHA-256 / MD5 fingerprints shown by ssh-keygen -l.</span></a></li><li><a class="link-card" href="/en/openpgp-inspector/"><span class="link-card__title">OpenPGP Armor / Packet Inspector</span><span class="link-card__desc">Paste an ASCII-armored PGP key, signature or message: checks the CRC-24, lists packets (algorithms, curves, key sizes, creation time, user IDs, signature subpackets) and computes v4 (SHA-1) / v6 (SHA-256) fingerprints. Nothing is verified or decrypted.</span></a></li><li><a class="link-card" href="/en/ssl-tls-handshake-simulator/"><span class="link-card__title">TLS Handshake Simulator</span><span class="link-card__desc">Step through TLS 1.2 and TLS 1.3 handshakes (full, resumption, mutual TLS, 0-RTT): messages, what each carries, round trips, and time before the first request byte at your RTT. An explanatory model, not a packet capture.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

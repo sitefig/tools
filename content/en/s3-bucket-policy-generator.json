@@ -1,0 +1,45 @@
+{
+  "id": "s3-bucket-policy-generator",
+  "seoTitle": "S3 Bucket Policy Generator (HTTPS Only, CloudFront, IP, Cross-Account)",
+  "metaDescription": "Generate an S3 bucket policy for common cases: deny insecure HTTP, public read, CloudFront origin access, cross-account read or an IP allowlist.",
+  "intro": "Write a correct bucket policy JSON for the usual requirements without hand-editing ARNs.",
+  "why": "Enter the bucket name and choose a case. The policy uses the standard 2012-10-17 version, correct resource ARNs for the bucket and its objects, and the right condition keys (aws:SecureTransport, AWS:SourceArn, aws:SourceIp). Inputs are validated: bucket naming rules, a CloudFront distribution ARN, a 12-digit account ID or an IPv4 CIDR.\n\nPublic read also requires turning off Block Public Access for the bucket, and Deny statements with broad principals can lock you out of your own bucket, so test on a scratch bucket. Prefer CloudFront with origin access control to public buckets.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the bucket name.",
+    "Choose a case and fill the extra value.",
+    "Copy the JSON into the bucket policy editor.",
+    "Use the IAM policy simulator to test."
+  ],
+  "faq": [
+    {
+      "q": "Is public read safe?",
+      "a": "Only for content that is meant to be public. Many data leaks come from public buckets."
+    },
+    {
+      "q": "Why deny HTTP?",
+      "a": "To make sure all access uses TLS."
+    },
+    {
+      "q": "Does it support multiple statements?",
+      "a": "It writes one statement per case; combine statements by hand."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "aws-iam-policy-builder",
+    "aws-iam-policy-linter",
+    "cloudformation-template-generator",
+    "terraform-scaffolder",
+    "json-format",
+    "cors-policy-builder"
+  ],
+  "keywords": [
+    "s3 bucket policy generator",
+    "deny http s3",
+    "cloudfront oac policy",
+    "bucket policy json"
+  ]
+}

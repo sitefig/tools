@@ -1,0 +1,45 @@
+{
+ "id": "color-hue-quiz",
+ "seoTitle": "Color Hue Quiz: Spot the Odd Swatch",
+ "metaDescription": "A short game: find the swatch with a slightly different lightness. Differences shrink each round. Free, local.",
+ "intro": "Shows nine swatches, one slightly different in lightness. Each correct pick makes the next difference smaller, up to 12 rounds.",
+ "why": "The quiz is built for fun and a rough feel for your colour vision on your own screen. Differences are measured in OKLab lightness, so steps are perceptually even. You get a score and the smallest difference you spotted.\n\nIt is not a medical test. Screen settings and room lighting change the result, and the game needs colour vision to play, so it has no non-visual mode.",
+ "howTo": [
+  "Press Start new game.",
+  "Pick the swatch that looks different.",
+  "Continue through the rounds.",
+  "Read your score and smallest difference."
+ ],
+ "faq": [
+  {
+   "q": "Is this a colour blindness test?",
+   "a": "No. Use a clinical test for that. The Colour Blindness Simulator shows how others see colours."
+  },
+  {
+   "q": "What do the difference numbers mean?",
+   "a": "OKLab lightness points on a 0 to 1 scale; lower means subtler."
+  },
+  {
+   "q": "Can I use the keyboard?",
+   "a": "Yes. Every swatch is a button with a name like Swatch 3 of 9."
+  },
+  {
+   "q": "Why three misses?",
+   "a": "To end the game quickly when the differences are below what you can see."
+  }
+ ],
+ "related": [
+  "color-blindness-simulator",
+  "display-test",
+  "color-picker",
+  "contrast-checker",
+  "palette-shuffler",
+  "dataviz-palette-builder"
+ ],
+ "keywords": [
+  "color vision game",
+  "odd color out game",
+  "hue test online",
+  "color perception quiz"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "box-plot-maker",
+ "seoTitle": "Box and Whisker Plot Maker with Outliers (SVG)",
+ "metaDescription": "Paste one column per group to draw box plots with median, quartiles, 1.5 IQR whiskers and outlier points plus a summary table.",
+ "intro": "Draws a box plot per column: median line, quartile box, Tukey whiskers and outlier dots, with a five-number summary table.",
+ "why": "Box plots compare spread and centre across groups at a glance. Here the quartiles use linear interpolation, the same as Excel QUARTILE.INC and R type 7, and the table shows the exact numbers so you can check them.\n\nWhiskers run to the most extreme value within 1.5 times the interquartile range of the box; points beyond that are drawn as outliers. That is a convention, not a verdict: an outlier may be a data error or the most interesting row.",
+ "howTo": [
+  "Paste a header row of group names and the numbers below each.",
+  "Choose vertical or horizontal boxes.",
+  "Check the summary table for min, quartiles, median, max and whisker ends.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Which quartile method?",
+   "a": "Linear interpolation (Excel QUARTILE.INC, R type 7). Other methods give slightly different quartiles for small samples."
+  },
+  {
+   "q": "Do groups need equal length?",
+   "a": "No. Empty cells are ignored."
+  },
+  {
+   "q": "How are outliers decided?",
+   "a": "Values more than 1.5 IQR beyond the box."
+  },
+  {
+   "q": "Verified?",
+   "a": "Quartiles match Python statistics.quantiles with the inclusive method for the sample data."
+  }
+ ],
+ "related": [
+  "histogram-builder",
+  "outlier-detector",
+  "statistics-calculator",
+  "column-statistics-summarizer",
+  "scatter-plot-maker",
+  "bar-chart-maker"
+ ],
+ "keywords": [
+  "box plot maker",
+  "box and whisker plot online",
+  "quartiles and outliers chart"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "batch-image-optimizer",
+ "seoTitle": "Batch Image Optimizer (Compress Many Images to a ZIP)",
+ "metaDescription": "Drop in many photos, pick one quality and a maximum width, and download the compressed JPEG or WebP versions in one ZIP. Files that would get bigger can...",
+ "intro": "Compress many images at once and download one ZIP.",
+ "why": "Drop in a set of images, pick JPEG or WebP, one quality and a maximum width. Every image is re-encoded in your browser and the results come back in one ZIP with a report of the savings. A tick box keeps the original when the new file would not be smaller.\n\nRe-encoding removes EXIF metadata, which is good for privacy and bad if you need the camera data. Quality 70 to 80 is a good start for photos.",
+ "howTo": [
+  "Choose the images.",
+  "Pick the format, quality and maximum width.",
+  "Decide whether to keep originals that would grow.",
+  "Download the ZIP and read the report."
+ ],
+ "faq": [
+  {
+   "q": "Is the quality lost?",
+   "a": "JPEG and WebP are lossy. Check a few results by eye before using a whole batch."
+  },
+  {
+   "q": "Why is a file unchanged?",
+   "a": "If the new file is not smaller and you ticked Keep, the original goes into the ZIP."
+  },
+  {
+   "q": "Is there a file limit?",
+   "a": "Memory is the limit. Very large batches may be slow in a small browser tab."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-compressor",
+  "image-resizer",
+  "png-quantizer",
+  "png-to-jpg-converter",
+  "thumbnail-batch-generator",
+  "srcset-generator"
+ ],
+ "keywords": [
+  "batch image compressor",
+  "bulk image optimizer",
+  "compress images zip",
+  "reduce photo size"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "cloudformation-template-generator",
+  "seoTitle": "CloudFormation Template Generator (S3, Lambda, DynamoDB, SQS)",
+  "metaDescription": "Generate an AWS CloudFormation YAML template for a private encrypted S3 bucket, a Lambda function with role and logs, a DynamoDB table or an SQS queue with dead-letter queue.",
+  "intro": "Start from a template with safe defaults instead of a blank file.",
+  "why": "The S3 template blocks public access, enables encryption and versioning and retains the bucket on deletion. The Lambda template creates an execution role, the function and a log group with 14-day retention. DynamoDB uses on-demand billing, point-in-time recovery and encryption; SQS uses managed encryption and a dead-letter queue after five receives.\n\nAll four templates parse as YAML with CloudFormation tags. Review names, retention and IAM permissions for your account, and validate with aws cloudformation validate-template.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the resource type and a logical name.",
+    "Copy the template.",
+    "Validate it with the AWS CLI.",
+    "Create the stack and add outputs you need."
+  ],
+  "faq": [
+    {
+      "q": "Why DeletionPolicy: Retain?",
+      "a": "It keeps data when the stack is deleted, which avoids accidental loss."
+    },
+    {
+      "q": "Is the Lambda code real?",
+      "a": "It is a placeholder inline handler; replace it with your package."
+    },
+    {
+      "q": "Can I add more resources?",
+      "a": "Yes. This is a starting point for the Resources section."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "aws-iam-policy-builder",
+    "s3-bucket-policy-generator",
+    "terraform-scaffolder",
+    "kubernetes-deployment-generator",
+    "yaml-format",
+    "cloud-init-generator"
+  ],
+  "keywords": [
+    "cloudformation template generator",
+    "aws s3 cloudformation",
+    "lambda cloudformation",
+    "dynamodb template"
+  ]
+}

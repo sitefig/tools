@@ -1,0 +1,45 @@
+{
+ "id": "probability-distribution-calculator",
+ "seoTitle": "Probability Distribution Calculator: Normal, Binomial and Poisson",
+ "metaDescription": "Get probabilities for normal, binomial and Poisson distributions over any interval, with a shaded plot. Free, verified against SciPy.",
+ "intro": "Calculates the probability that a normal, binomial or Poisson variable falls in an interval, with the mean, variance and a shaded plot.",
+ "why": "Textbook problems ask for things like the chance of 85 to 115 on a test with mean 100 and standard deviation 15, or of 2 to 6 events when the average is 4.5. Enter the parameters and the interval and the probability is shaded on the plot.\n\nThe normal CDF uses a series and continued-fraction form of the error function accurate to about 1e-13. Binomial and Poisson masses use log-factorials so large numbers of trials do not overflow. The results were compared with SciPy for many cases. For discrete distributions both ends of the interval are included.",
+ "howTo": [
+  "Choose the distribution.",
+  "Enter its parameters: mean and standard deviation, or trials and probability, or the rate.",
+  "Enter the from and to values, leaving one blank for an open end.",
+  "Read the probability and look at the shaded area."
+ ],
+ "faq": [
+  {
+   "q": "Are the limits inclusive?",
+   "a": "For binomial and Poisson yes, for the normal distribution it makes no difference."
+  },
+  {
+   "q": "How large can the binomial n be?",
+   "a": "Up to 100000 trials."
+  },
+  {
+   "q": "What is the Poisson limit?",
+   "a": "Rates up to 5000."
+  },
+  {
+   "q": "Does it give percentiles?",
+   "a": "No, only probabilities of intervals."
+  }
+ ],
+ "related": [
+  "statistics-calculator",
+  "average-median-mode",
+  "regression-curve-fit",
+  "birthday-collision-calculator",
+  "ab-test-calculator",
+  "dice-roller"
+ ],
+ "keywords": [
+  "normal distribution calculator",
+  "binomial probability calculator",
+  "poisson probability calculator",
+  "probability between two values"
+ ]
+}

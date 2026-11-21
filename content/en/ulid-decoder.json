@@ -1,0 +1,45 @@
+{
+ "id": "ulid-decoder",
+ "seoTitle": "Free ULID Decoder: Read the Timestamp from a ULID",
+ "metaDescription": "Decode ULIDs to their creation time and 80-bit random part. Paste one or many 26-character IDs. Free, runs in your browser.",
+ "intro": "Reads the creation time and the random part out of ULIDs, one per line.",
+ "why": "A ULID packs a 48-bit millisecond Unix timestamp and 80 random bits into 26 characters of Crockford Base32. That is why ULIDs sort by creation time, and why you can read when a record was made from its ID alone.\n\nPaste ULIDs from a database or a log and see the time in ISO format. The decoder accepts lower case and the usual look-alike letters (I and L read as 1, O as 0). It rejects values whose first character is above 7, because the time field is only 48 bits. It was checked against the example in the ULID specification and against an independent Python decode.",
+ "howTo": [
+  "Paste one or more ULIDs, one per line.",
+  "Read the ISO time and the Unix milliseconds.",
+  "Check the random part if you need to compare IDs.",
+  "Fix any line that shows an error message."
+ ],
+ "faq": [
+  {
+   "q": "How precise is the time?",
+   "a": "To the millisecond. IDs made in the same millisecond differ only in their random part."
+  },
+  {
+   "q": "Why is a ULID rejected?",
+   "a": "It must be 26 Crockford Base32 characters and the first one must be 0 to 7. Letters I, L, O and U are not in the alphabet, though I, L and O are read as look-alikes."
+  },
+  {
+   "q": "Does it verify that the ID was really created then?",
+   "a": "No. The time is whatever the generator wrote. Anyone can make a ULID with any time."
+  },
+  {
+   "q": "Can it create ULIDs?",
+   "a": "Use the ULID generator tool for that."
+  }
+ ],
+ "related": [
+  "ulid-generator",
+  "uuid-v7-timestamp-extractor",
+  "ksuid-tool",
+  "snowflake-id-decoder",
+  "uuid-generator",
+  "crockford-base32-encoder"
+ ],
+ "keywords": [
+  "ulid decoder",
+  "ulid to timestamp",
+  "decode ulid online",
+  "ulid to date"
+ ]
+}

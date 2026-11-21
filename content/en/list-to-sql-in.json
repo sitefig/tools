@@ -1,0 +1,45 @@
+{
+ "id": "list-to-sql-in",
+ "seoTitle": "Free List to SQL IN Clause Generator",
+ "metaDescription": "Turn a pasted column of values into a quoted, escaped SQL IN (...) list, with deduplication and Oracle-safe chunks of 1000. Free, in your browser.",
+ "intro": "Paste a column of values from a spreadsheet or log and get a ready SQL IN (...) clause, quoted and escaped, with optional deduplication and NOT IN.",
+ "why": "You have fifty order numbers in a spreadsheet and need to look them up in the database. Wrapping each in quotes, adding commas and escaping apostrophes by hand is slow and a stray quote spoils the whole query.\n\nThis tool takes a list, one per line or comma-separated, trims it, removes duplicates and builds the clause. It detects numbers and leaves them unquoted, or you can force quotes. A single quote inside a value is doubled the SQL way. Oracle limits an IN list to 1000 expressions, so an option splits long lists into several IN groups joined by OR, or AND for NOT IN. Review queries before running them on production data.",
+ "howTo": [
+  "Paste your values, one per line or comma-separated.",
+  "Enter the column name, and choose quoting, deduplication, trimming and NOT IN as needed.",
+  "Copy the clause into your SQL query."
+ ],
+ "faq": [
+  {
+   "q": "How does it decide whether to quote values?",
+   "a": "In auto mode, values are left bare only if every one looks like a number. A single non-numeric entry quotes the whole list. Use always or never to override."
+  },
+  {
+   "q": "How are apostrophes escaped?",
+   "a": "By doubling them, so O'Brien becomes 'O''Brien'. That is the standard SQL way and works in PostgreSQL, MySQL, SQL Server and Oracle."
+  },
+  {
+   "q": "What does the Oracle option do?",
+   "a": "Splits the list into groups of 1000 values, because Oracle rejects larger lists, and joins them with OR. With NOT IN the groups are joined with AND."
+  },
+  {
+   "q": "Can I get only the parenthesised list?",
+   "a": "Yes. Leave the column name empty and the output is just (value1, value2, ...), which you can drop into your own query."
+  }
+ ],
+ "related": [
+  "text-prefix-suffix-appender",
+  "sql-format",
+  "sql-slugifier",
+  "dedupe-lines",
+  "csv-to-sql",
+  "json-to-sql"
+ ],
+ "keywords": [
+  "list to sql in clause",
+  "sql in clause generator",
+  "convert column to sql in list",
+  "free sql in list tool",
+  "oracle in clause 1000 limit"
+ ]
+}

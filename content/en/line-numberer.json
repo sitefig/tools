@@ -1,0 +1,46 @@
+{
+ "id": "line-numberer",
+ "seoTitle": "Free Line Numbering Tool: Add Line Numbers to Text",
+ "metaDescription": "Prefix each line of text with a number, choosing the start value, separator and alignment, and optionally skipping empty lines. Free, in-browser.",
+ "intro": "Add line numbers to pasted text. Choose the starting number, the separator, whether to right-align the numbers and whether to skip empty lines.",
+ "why": "Numbered lines are useful when you quote code in a review, refer to a clause in a contract, share a log excerpt in a ticket or prepare a script. Most plain text editors do not show numbers you can copy, so the numbers are lost when you paste.\n\nThis tool puts a number at the start of every line of the text you paste. You can start from any number, set the separator, such as a colon and a space, or a tab, and right-align the numbers so the text lines up when the count passes 9 or 99. If you skip empty lines, they are left blank and not numbered, and the numbering continues on the next line with text. Everything is done in your browser.",
+ "howTo": [
+  "Paste your text into the input box.",
+  "Set the starting number and the separator, for example a colon and a space.",
+  "Choose right-aligned numbers and whether to skip empty lines.",
+  "Run the tool and copy the numbered text."
+ ],
+ "faq": [
+  {
+   "q": "Can I start numbering from a number other than 1?",
+   "a": "Yes. Set the start value in the options, for example 100 to continue from an earlier section. Zero and negative start values also work."
+  },
+  {
+   "q": "What does skip empty lines do?",
+   "a": "Empty lines are left unnumbered and do not use up a number, so the numbers continue in sequence on the lines that have text."
+  },
+  {
+   "q": "How do I remove line numbers later?",
+   "a": "Use the find and replace tool with a regex such as ^\\s*\\d+: to strip them, adjusting the separator to match what you used."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "find-replace",
+  "text-prefix-suffix-appender",
+  "sort-lines",
+  "remove-empty-lines-trim",
+  "wrap-text",
+  "tabs-spaces-converter"
+ ],
+ "keywords": [
+  "add line numbers to text",
+  "line numbering online",
+  "number lines tool",
+  "prefix lines with numbers",
+  "text line numberer free"
+ ]
+}

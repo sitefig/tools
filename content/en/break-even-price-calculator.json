@@ -1,0 +1,38 @@
+{
+ "id": "break-even-price-calculator",
+ "seoTitle": "Break-Even Selling Price Calculator for Products",
+ "metaDescription": "Find the lowest price that covers product cost, packaging, shipping, fees and ads, with an optional target profit. Free and private.",
+ "intro": "Finds the price at which an order covers product cost, packaging, shipping, ads and percentage fees, and the price needed for a profit you choose.",
+ "why": "A price that looks fine can lose money once fees that scale with the price are counted. Fixed costs are simple to add, but a percentage fee is taken from the price itself, so the formula divides by one minus the fee rate rather than adding a percentage on top.\n\nEnter your costs per order and any target profit. The tool shows the break-even price and the price for your target, and checks the result by working the profit back.",
+ "howTo": [
+  "Enter product, packaging and shipping costs.",
+  "Enter ad cost per order, the percentage fees and the fixed fee per order.",
+  "Optionally set a target profit per order and read the price."
+ ],
+ "faq": [
+  {
+   "q": "Why not just add the fee percent to the cost?",
+   "a": "Because the fee is a share of the final price. Adding 12 percent of cost undercharges. The tool divides by (1 - fee%) instead."
+  },
+  {
+   "q": "Should returns be included?",
+   "a": "Add an average cost per order into ad cost or product cost if you want to spread it. The tool has no separate returns field."
+  },
+  {
+   "q": "Is the margin shown on price or cost?",
+   "a": "On price. It is profit divided by the selling price."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "break-even",
+  "payment-fee-gross-up-calculator",
+  "dropshipping-profit-calculator",
+  "average-order-value-calculator"
+ ],
+ "keywords": [
+  "break even price",
+  "minimum selling price",
+  "price to cover fees"
+ ]
+}

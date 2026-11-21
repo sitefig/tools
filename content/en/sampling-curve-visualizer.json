@@ -1,0 +1,45 @@
+{
+ "id": "sampling-curve-visualizer",
+ "seoTitle": "Free LLM Sampling Visualizer - Temperature, Top-p, Top-k",
+ "metaDescription": "See how temperature, top-k, top-p and min-p reshape a next-token distribution from logits, with text bars and entropy. Free, runs in your browser.",
+ "intro": "Shows what temperature, top-k, top-p and min-p do to a next-token distribution. You enter token and logit pairs and get probabilities before and after each step, as text bars with entropy.",
+ "why": "Sampling settings are easy to copy and hard to feel. What does temperature 0.8 really do to a list of candidate words? How many tokens survive top-p 0.9? This tool lets you try it on numbers you control. Enter a few tokens with logits, set the four parameters, and see the softmax probabilities, the effect of temperature, which tokens are filtered out and the final renormalised distribution, along with entropy at each stage. It is a teaching and debugging aid for prompt engineers and developers tuning generation settings. It does not call a model, and real frameworks differ slightly in the order and tie handling of the filters. Everything runs in your browser.",
+ "howTo": [
+  "Enter tokens with logits, one per line as \"token: logit\", or paste a plain list of logit numbers.",
+  "Set temperature, top-k (0 turns it off), top-p (1 turns it off) and min-p (0 turns it off).",
+  "Read the table of probabilities, the kept tokens and the entropy values."
+ ],
+ "faq": [
+  {
+   "q": "In what order are the filters applied?",
+   "a": "Temperature first, then top-k, then top-p, then min-p, with renormalisation after each filter. Some libraries use a different order or handle ties differently, so results can vary."
+  },
+  {
+   "q": "What does temperature 0 do?",
+   "a": "It becomes greedy selection: the highest logit gets all the probability, shared equally between exact ties. Values above 1 flatten the distribution."
+  },
+  {
+   "q": "What is entropy used for here?",
+   "a": "Entropy in bits measures how spread out the distribution is. A drop after temperature or filtering shows that the model has become more predictable."
+  },
+  {
+   "q": "Does it show real model output?",
+   "a": "No. It works only on the logits you enter and does not run a model. Use it to understand the maths, not to predict a specific model's text."
+  }
+ ],
+ "related": [
+  "llm-token-estimator",
+  "llm-cost-calculator",
+  "prompt-linter",
+  "embedding-similarity",
+  "gpt-token-counter",
+  "average-median-mode"
+ ],
+ "keywords": [
+  "llm sampling visualizer",
+  "temperature top p top k explained",
+  "softmax temperature calculator",
+  "free sampling curve tool",
+  "min-p sampling demo"
+ ]
+}

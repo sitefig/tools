@@ -1,0 +1,41 @@
+{
+ "id": "email-css-inliner",
+ "seoTitle": "Email CSS Inliner: Move style Blocks into style Attributes",
+ "metaDescription": "Inline CSS from style blocks into HTML email markup, with specificity and !important handled; media queries are kept. Free, local.",
+ "intro": "Moves CSS rules onto matching elements as inline styles, the way many email clients need.",
+ "why": "Several email clients ignore or strip style blocks, so rules must sit on each element. Doing that by hand is slow and easy to get wrong.\n\nThe tool parses your style blocks, matches selectors (tag, class, id, attribute, child, descendant and sibling combinators, first-child, last-child, nth-child, not) against your HTML, applies them in specificity order, honours !important, and lets existing inline styles win. Rules it cannot inline, such as media queries and :hover, stay in a style block in the head. Linked stylesheets cannot be fetched, so paste the CSS into a style block.",
+ "howTo": [
+  "Paste HTML that contains a style block.",
+  "Read the summary comment at the top.",
+  "Copy the result into your email template.",
+  "Test in the mail clients you target."
+ ],
+ "faq": [
+  {
+   "q": "Are media queries lost?",
+   "a": "No. They stay in a style block, which most modern clients support."
+  },
+  {
+   "q": "Which selectors work?",
+   "a": "Tag, class, id, attributes, combinators, first-child, last-child, only-child, nth-child and not. Others are kept in the style block."
+  },
+  {
+   "q": "Does it add table layouts?",
+   "a": "No. It only moves CSS."
+  }
+ ],
+ "related": [
+  "tailwind-to-inline-css",
+  "email-signature-generator",
+  "mjml-subset-compiler",
+  "html-minify",
+  "critical-css-extractor",
+  "unused-css-finder"
+ ],
+ "keywords": [
+  "email css inliner",
+  "inline css for email",
+  "style block to inline",
+  "html email inliner"
+ ]
+}

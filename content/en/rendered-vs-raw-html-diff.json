@@ -1,0 +1,45 @@
+{
+ "id": "rendered-vs-raw-html-diff",
+ "seoTitle": "Rendered vs Raw HTML SEO Diff: JavaScript-Injected Tags",
+ "metaDescription": "Paste view-source and rendered HTML to see which title, canonical, robots, headings, links and structured data change after JavaScript.",
+ "intro": "Compares raw and rendered HTML on the signals that matter for search.",
+ "why": "Search engines may see the raw HTML first and the rendered page later. A canonical or robots tag that differs between the two is a known source of surprises.\n\nPaste the view-source HTML on the left and the rendered DOM (copied from DevTools) on the right. The tool lists signals that appear only after rendering, those that disappear, and those that change. Links are compared by their href text.",
+ "howTo": [
+  "Copy the page source with view-source.",
+  "Copy the rendered DOM from DevTools (Elements, Copy outerHTML).",
+  "Paste them into the two boxes.",
+  "Review what differs."
+ ],
+ "faq": [
+  {
+   "q": "Why does it matter?",
+   "a": "Content and tags added by JavaScript depend on the engine rendering the page."
+  },
+  {
+   "q": "Which signals are compared?",
+   "a": "Title, description, robots, canonical, hreflang, Open Graph, headings, links, JSON-LD types."
+  },
+  {
+   "q": "Does it fetch the page?",
+   "a": "No. A web page cannot fetch other sites."
+  },
+  {
+   "q": "Does it replace a crawler?",
+   "a": "No. It compares two snapshots you provide."
+  }
+ ],
+ "related": [
+  "seo-html-compare",
+  "seo-inspector",
+  "canonical-conflict-checker",
+  "html-head-extractor",
+  "html-url-extractor",
+  "jsonld-inspector"
+ ],
+ "keywords": [
+  "rendered vs raw html",
+  "javascript seo diff",
+  "view source vs rendered",
+  "js injected canonical"
+ ]
+}

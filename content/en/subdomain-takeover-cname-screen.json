@@ -1,0 +1,41 @@
+{
+ "id": "subdomain-takeover-cname-screen",
+ "seoTitle": "Subdomain Takeover CNAME Screen: Find Risky Dangling Records",
+ "metaDescription": "Paste CNAME records and list those pointing to cloud and SaaS services where unclaimed targets are commonly taken over. Offline list.",
+ "intro": "Matches your CNAME targets against a list of services where dangling records are often taken over.",
+ "why": "A subdomain takeover happens when a DNS record points to a service you no longer use, and someone else claims the name there. They can then serve content on your subdomain.\n\nPaste your CNAME records and the tool lists the ones that point to services in its list, with what to check for each. It cannot see whether the target is claimed, and the list is informal and not verified against a public takeover database. A match means review, not vulnerable.",
+ "howTo": [
+  "Export your DNS zone or run dig for your subdomains.",
+  "Paste the CNAME records.",
+  "Check each flagged target in the provider dashboard.",
+  "Remove records for services you no longer use."
+ ],
+ "faq": [
+  {
+   "q": "Does a match mean I am vulnerable?",
+   "a": "No. It means check. If the resource is still yours, it is fine."
+  },
+  {
+   "q": "Which records are checked?",
+   "a": "CNAME targets only. A and NS record issues are not covered."
+  },
+  {
+   "q": "Does it query DNS?",
+   "a": "No. It makes no requests."
+  }
+ ],
+ "related": [
+  "dig-nslookup-output-analyzer",
+  "caa-record-analyzer",
+  "dnssec-record-decoder",
+  "exposed-file-path-screen",
+  "ip-address-offline-lookup",
+  "security-txt-generator"
+ ],
+ "keywords": [
+  "subdomain takeover",
+  "dangling cname",
+  "cname check",
+  "takeover risk"
+ ]
+}

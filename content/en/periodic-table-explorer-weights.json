@@ -1,0 +1,45 @@
+{
+ "id": "periodic-table-explorer-weights",
+ "seoTitle": "Periodic Table with Atomic Weights, Blocks and Element Search",
+ "metaDescription": "See the periodic table colored by block or atomic weight and look up any element by symbol, name or number. Uses IUPAC 2024 weights.",
+ "intro": "Shows the standard 18-column periodic table colored by block or by atomic weight, and details for the elements you search for.",
+ "why": "A table you can search quickly is useful for homework and for checking an atomic weight. Type Fe, oxygen or 79 and the element is outlined on the table, with its weight, period, group and block listed below.\n\nWeights come from the IUPAC CIAAW abridged table for 2024 and are shown with their uncertainty. Elements without a standard atomic weight are greyed out. Group numbers follow the common layout; because the group 3 question (Lu and Lr versus La and Ac) is still discussed, the f-block rows are shown without a group number. Electron configuration and electronegativity are not included because no source was fetched for them.",
+ "howTo": [
+  "Type elements to highlight, separated by commas.",
+  "Choose to color the table by block or by atomic weight.",
+  "Hover a cell to see the name, number and weight.",
+  "Read the details list under the table."
+ ],
+ "faq": [
+  {
+   "q": "Where do the weights come from?",
+   "a": "The CIAAW (IUPAC) abridged standard atomic weights 2024, with the link shown on the page."
+  },
+  {
+   "q": "Why do some elements show a dash?",
+   "a": "They have no standard atomic weight because they have no stable isotopes."
+  },
+  {
+   "q": "Why no electron configuration?",
+   "a": "It is not included until it can be taken from a cited source."
+  },
+  {
+   "q": "Can I print it?",
+   "a": "Yes, use your browser print function."
+  }
+ ],
+ "related": [
+  "molar-mass-calculator-formula",
+  "chemical-equation-balancer",
+  "planet-size-comparator",
+  "unit-converter",
+  "significant-figures-counter-rounder",
+  "scientific-calculator-degrees"
+ ],
+ "keywords": [
+  "periodic table online",
+  "atomic weight lookup",
+  "element search",
+  "periodic table by block"
+ ]
+}

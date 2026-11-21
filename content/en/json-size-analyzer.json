@@ -1,0 +1,45 @@
+{
+ "id": "json-size-analyzer",
+ "seoTitle": "Free JSON Size Analyzer - Find What Makes It Big",
+ "metaDescription": "See raw, minified, pretty and gzip sizes of a JSON payload, value-type counts, depth and the heaviest paths and keys. Free, runs in your browser.",
+ "intro": "Shows why a JSON payload is large: raw, minified, pretty and gzip byte sizes, counts of each value type, maximum depth and the heaviest paths and keys.",
+ "why": "An API response that took 800 ms to download usually has one or two culprits: a base64 image field, a long description repeated for every item, or a key with a very long name. Finding them by eye in a minified blob is hopeless. Paste the payload here and see where the bytes go, ranked by path and by key name across all occurrences. You also get the minified, pretty and gzip sizes, which tells you whether compression already hides the problem or whether the payload needs trimming. It is useful when you tune API responses, cut mobile data use or check whether a document fits a size limit. Everything is measured in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste the JSON payload into the input box.",
+  "Set how many rows to show in the \"heaviest\" lists, 10 by default.",
+  "Run the analysis and read the size summary, then the heaviest paths and heaviest keys."
+ ],
+ "faq": [
+  {
+   "q": "How are the sizes measured?",
+   "a": "Sizes are UTF-8 bytes. \"Minified\" is the JSON re-serialised without spaces, \"pretty\" uses two-space indentation, and gzip is measured with the browser's own compression on the minified text and on the text as pasted."
+  },
+  {
+   "q": "What is the difference between heaviest paths and keys?",
+   "a": "A path is one specific value, such as .users[3].bio. A key adds up every occurrence of a name across the document, which shows a field repeated in thousands of items."
+  },
+  {
+   "q": "Does gzip size match what my server sends?",
+   "a": "It is a close guide, not an exact match. Servers use different compression levels and settings, and may use Brotli. Use it to compare payloads, not to predict bytes on the wire."
+  },
+  {
+   "q": "What if my JSON is invalid?",
+   "a": "You get an error message with the parser's reason. Fix the syntax first, for example with the JSON validator on this site, then run the analysis again."
+  }
+ ],
+ "related": [
+  "json-format",
+  "json-minify",
+  "json-validate",
+  "json-tree",
+  "gzip-compress",
+  "json-diff"
+ ],
+ "keywords": [
+  "json size analyzer",
+  "analyze json payload size",
+  "why is my json so large",
+  "free json size checker",
+  "json gzip size calculator"
+ ]
+}

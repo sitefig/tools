@@ -1,0 +1,45 @@
+{
+ "id": "video-muter",
+ "seoTitle": "Video Muter: Remove Audio Without Re-encoding",
+ "metaDescription": "Strip the audio track from an MP4, MOV or WebM file with no quality loss. The picture bytes are untouched. Runs in your browser.",
+ "intro": "Removes the audio track from MP4, MOV or WebM files by editing the container in place. The video stream is not re-encoded.",
+ "why": "For MP4 and MOV the audio track box is renamed to an empty box of the same size, so every offset stays valid and the picture data is unchanged. For WebM the audio track entry is blanked in the same way. This is instant and lossless.\n\nThe audio bytes may remain unused inside the file, so it does not shrink. Fragmented files and other formats fall back to a re-encode without audio.",
+ "howTo": [
+  "Choose the video.",
+  "Press Process.",
+  "Check that the result has no sound.",
+  "Download the muted file."
+ ],
+ "faq": [
+  {
+   "q": "Is it really lossless?",
+   "a": "Yes for MP4, MOV and WebM files that are not fragmented. The video bytes are copied as they are."
+  },
+  {
+   "q": "Is the audio really gone?",
+   "a": "Players no longer see the track. The old bytes may still be inside the file, so use a full re-encode if you need them removed."
+  },
+  {
+   "q": "Why did it re-encode my file?",
+   "a": "The format could not be edited in place, for example a fragmented MP4. The fallback records the video without sound."
+  },
+  {
+   "q": "Does ffmpeg complain about a WebM?",
+   "a": "It may print a warning about an unknown track number. Playback still works."
+  }
+ ],
+ "related": [
+  "mp4-box-inspector",
+  "video-metadata-inspector",
+  "video-format-converter",
+  "video-trimmer",
+  "video-audio-extractor",
+  "video-music-mixer"
+ ],
+ "keywords": [
+  "remove audio from video",
+  "mute video online",
+  "strip audio track",
+  "silent video no re-encode"
+ ]
+}

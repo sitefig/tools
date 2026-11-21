@@ -1,0 +1,45 @@
+{
+ "id": "math-worksheet-generator",
+ "seoTitle": "Printable Math Worksheet Generator with Answer Key",
+ "metaDescription": "Make addition, subtraction, multiplication and division worksheets with your number range and an answer page. Free, print or save as PDF.",
+ "intro": "Generates printable arithmetic worksheets with the operation, number range and problem count you choose, plus an answer-key page.",
+ "why": "Practice sheets are easiest when they match the lesson: only sums to 20, or the 7 times table, or division with no remainders. Set the range, the operation (or a mix) and the number of problems and get a clean page with a name and date line.\n\nThe second page has the answers. Subtraction never goes negative and division always comes out exact. The same seed gives the same worksheet, so you can recreate it, and a new seed makes a new one. The answers were checked against an independent calculation. Use your browser print dialog and choose Save as PDF to get a file.",
+ "howTo": [
+  "Pick the operation and the smallest and largest number.",
+  "Set the number of problems and columns, and a title.",
+  "Change the seed for a different set.",
+  "Print the sheet, or save it as a PDF from the print dialog."
+ ],
+ "faq": [
+  {
+   "q": "Does it make a PDF?",
+   "a": "It makes a printable page. Choose Save as PDF in your browser print dialog."
+  },
+  {
+   "q": "Are the answers correct?",
+   "a": "Yes, they were verified independently."
+  },
+  {
+   "q": "Can I get the same worksheet again?",
+   "a": "Yes, use the same seed and settings."
+  },
+  {
+   "q": "What is mixed?",
+   "a": "A rotation of all four operations."
+  }
+ ],
+ "related": [
+  "multiplication-table-trainer",
+  "fraction-visualizer-pie-bar",
+  "number-line-jumps",
+  "gcd-lcm-euclid-steps",
+  "word-search-puzzle-maker",
+  "flashcards-spaced-repetition"
+ ],
+ "keywords": [
+  "math worksheet generator",
+  "printable arithmetic worksheets",
+  "addition subtraction worksheet",
+  "worksheet with answer key"
+ ]
+}

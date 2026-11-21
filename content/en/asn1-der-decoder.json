@@ -1,0 +1,46 @@
+{
+  "id": "asn1-der-decoder",
+  "seoTitle": "ASN.1 / DER Decoder for PEM, Certificates and Keys",
+  "metaDescription": "Parse DER or PEM data into a tree with tags, lengths, offsets, decoded OIDs, strings and times, like openssl asn1parse, in your browser.",
+  "intro": "Look inside any ASN.1 structure: certificates, private keys, CSRs, PKCS containers.",
+  "why": "The decoder reads definite-length BER/DER, prints each element with its offset, depth, header length and content length, names universal types, converts OIDs to dotted form (with names for common algorithms, extensions and attributes), decodes strings and UTCTime/GeneralizedTime and opens OCTET STRING and BIT STRING contents when they hold more DER. Every element that openssl asn1parse lists for a test certificate also appears here.\n\nIndefinite lengths (BER only) and very unusual tags are not supported. Nothing leaves the page, which matters when you paste private keys.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste a PEM block, hex or base64.",
+    "Read the tree; indentation shows nesting.",
+    "Match OIDs and offsets with the specification you are debugging.",
+    "Use the certificate viewer for a friendlier summary of certificates."
+  ],
+  "faq": [
+    {
+      "q": "How is this different from the X.509 viewer?",
+      "a": "It shows the raw ASN.1 structure of any DER data, not only certificates."
+    },
+    {
+      "q": "What do the d, hl and l columns mean?",
+      "a": "Depth, header length and content length, like openssl asn1parse."
+    },
+    {
+      "q": "Is it safe to paste a private key?",
+      "a": "The decoding is local, but treat any key you paste into a browser carefully."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "x509-viewer",
+    "x509-csr-decoder",
+    "rsa-pkcs1-pkcs8-converter",
+    "ssh-key-inspector",
+    "openpgp-inspector",
+    "hex-dump-viewer"
+  ],
+  "keywords": [
+    "asn1 decoder",
+    "der decoder",
+    "asn1parse online",
+    "pem to asn1",
+    "decode certificate structure"
+  ]
+}

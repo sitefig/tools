@@ -1,0 +1,45 @@
+{
+ "id": "image-mask-painter",
+ "seoTitle": "Image Mask Painter (Paint Transparency, Export PNG)",
+ "metaDescription": "Brush over parts of a picture to make them transparent, or restore them, then save a PNG. Works with a mouse, touch or the keyboard, and has rectangle...",
+ "intro": "Paint areas of a picture transparent and save a PNG.",
+ "why": "Choose a picture, then paint with a brush to make parts transparent, or switch to restore. You can use a pointer, or the keyboard: focus the picture, press Space to put the brush down or lift it, and move with the arrow keys. A rectangle form can clear a box or everything outside it, and there is undo.\n\nThe canvas is limited to 2400 pixels on the long side to keep the page fast. The edges are hard, so it is best for simple cut-outs.",
+ "howTo": [
+  "Choose a picture.",
+  "Set the brush size and mode.",
+  "Paint, or use the rectangle form.",
+  "Press Save PNG and download."
+ ],
+ "faq": [
+  {
+   "q": "Can I use it without a mouse?",
+   "a": "Yes. Use the arrow keys and Space, or the rectangle form."
+  },
+  {
+   "q": "Does it find the subject for me?",
+   "a": "No. It is manual. There is a separate tool for plain backgrounds."
+  },
+  {
+   "q": "How many undo steps?",
+   "a": "Eight."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "background-remover-solid",
+  "image-cropper",
+  "image-redaction",
+  "image-filters",
+  "perspective-corrector",
+  "image-border-frame-adder"
+ ],
+ "keywords": [
+  "mask painter",
+  "make parts transparent",
+  "erase background",
+  "png transparency editor"
+ ]
+}

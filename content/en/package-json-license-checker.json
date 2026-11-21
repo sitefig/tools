@@ -1,0 +1,43 @@
+{
+ "id": "package-json-license-checker",
+ "seoTitle": "Free npm License Checker for package-lock.json",
+ "metaDescription": "Group dependency licences from package-lock.json and flag copyleft, proprietary or unknown ones against a policy. Free, runs in your browser.",
+ "intro": "Paste a package-lock.json to group your dependencies by licence and flag copyleft, proprietary or unknown ones against a policy you choose. A plain package.json shows only its own licence and dependency list.",
+ "why": "Before a release, an audit or a customer questionnaire, someone asks which licences are in your dependency tree. A single strong copyleft package in a closed-source product can be a legal problem, and a dependency with no licence stated is a risk of its own. Checking hundreds of transitive packages by hand is not realistic.\n\nA lockfile of version 2 or 3 records the licence of each package, so the information is already there. This tool groups the packages by licence and applies a simple policy: permissive only, permissive plus weak copyleft, or anything except proprietary and unknown. It is a screening aid and not legal advice, and licence fields in packages can be wrong. The file is read in your browser and is not uploaded.",
+ "howTo": [
+  "Paste your package-lock.json, preferably lockfile version 2 or 3.",
+  "Choose the policy: permissive only, permissive plus weak copyleft, or anything except proprietary or unknown.",
+  "Read the licences grouped with package counts and the packages flagged by your policy.",
+  "Investigate flagged packages, and ask a lawyer where the licence terms matter."
+ ],
+ "faq": [
+  {
+   "q": "Why is package.json not enough?",
+   "a": "A package.json lists dependency names and version ranges but not their licences. Only the lockfile records a licence per installed package, so use package-lock.json for the full picture."
+  },
+  {
+   "q": "Is this legal advice?",
+   "a": "No. It is a quick screening based on the licence strings in package metadata, which can be missing or wrong. For commercial products, have the flagged licences reviewed by someone qualified."
+  },
+  {
+   "q": "Why are some packages marked unknown?",
+   "a": "Their metadata has no licence field or uses a non-standard string. Open the package repository to find the actual licence, and treat the package as unknown until you have confirmed it."
+  }
+ ],
+ "related": [
+  "license-generator",
+  "package-json-generator",
+  "package-json-formatter",
+  "semver-calculator",
+  "json-size-analyzer",
+  "secret-detector-redactor"
+ ],
+ "keywords": [
+  "npm license checker",
+  "package-lock license audit",
+  "check dependency licenses",
+  "copyleft dependency checker",
+  "node_modules license report",
+  "free license compliance check"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "ads-roas-calculator",
+ "seoTitle": "Free ROAS and CPA Calculator with Break-Even Check",
+ "metaDescription": "Work out ROAS, CPA, CPC, CTR, conversion rate and break-even ROAS from your ad numbers, and split a budget by channel. Free, runs in your browser.",
+ "intro": "Enter ad spend, revenue, clicks, impressions, conversions and margin to get ROAS, CPA, CPC, CTR, CPM and break-even ROAS, plus a budget split across channels.",
+ "why": "A ROAS of 4 sounds good, but whether it makes money depends on your margin. At a 35 percent gross margin, you need a ROAS of about 2.9 just to break even on ad spend, and anything under that loses money on every sale.\n\nThis calculator computes the usual metrics from your campaign numbers and compares ROAS with break-even ROAS, so you can see at once if a campaign is profitable. It also splits a budget across channels by weight, for example Search 50, Social 30, Display 20. It does simple arithmetic on what you enter, so the result is only as good as your inputs. Your numbers are not uploaded.",
+ "howTo": [
+  "Enter ad spend, revenue from ads, clicks, impressions and conversions.",
+  "Enter your gross margin in percent to get the break-even ROAS.",
+  "Edit the budget split, as channel names with weights, and the total budget to split.",
+  "Read the metrics, the profit verdict and the budget per channel."
+ ],
+ "faq": [
+  {
+   "q": "What is break-even ROAS?",
+   "a": "It is the revenue per unit of ad spend you need to cover the cost of goods and the ads. It equals 100 divided by your gross margin percentage. At a 25 percent margin it is 4.0."
+  },
+  {
+   "q": "What is the difference between ROAS and ROI?",
+   "a": "ROAS is revenue divided by ad spend and ignores costs of goods. ROI considers profit. This tool shows ROAS and profit after ad spend based on your margin, which is closer to a true return."
+  },
+  {
+   "q": "How does the budget split work?",
+   "a": "Each item is \"name weight\". The weights are added up and the budget is divided in proportion, so weights of 50, 30 and 20 give 50, 30 and 20 percent. The weights do not have to add up to 100."
+  },
+  {
+   "q": "Why are my numbers zero or an error?",
+   "a": "Spend must be above zero, and every field needs a valid number. Where a division would be by zero, such as clicks equal to zero for CPC, the metric shows 0 instead of failing."
+  }
+ ],
+ "related": [
+  "ab-test-calculator",
+  "conversion-funnel-visualizer",
+  "retention-calculator",
+  "profit-margin",
+  "break-even",
+  "roi-calculator"
+ ],
+ "keywords": [
+  "roas calculator",
+  "cpa calculator",
+  "break even roas",
+  "free ad spend calculator",
+  "ctr cpc cpm calculator",
+  "return on ad spend"
+ ]
+}

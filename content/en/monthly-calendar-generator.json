@@ -1,0 +1,39 @@
+{
+ "id": "monthly-calendar-generator",
+ "seoTitle": "Monthly Calendar Maker: Print a Month or Year with Marked Dates",
+ "metaDescription": "Make a printable calendar for one month or the whole year with week numbers and your own labelled dates. Free, offline.",
+ "intro": "Creates a print-ready monthly or yearly calendar with Monday or Sunday start, ISO week numbers and highlighted dates with labels.",
+ "why": "The existing yearly calendar fits a year on one page. This one gives each month a full page with room to write, and lets you mark dates such as holidays or deadlines.\n\nPaste dates with labels, choose the month or the whole year, then print or save as PDF from your browser. Nothing is sent anywhere.",
+ "howTo": [
+  "Choose the year and month.",
+  "Add marked dates and labels.",
+  "Print or save as PDF from the preview."
+ ],
+ "faq": [
+  {
+   "q": "Can I print all twelve months?",
+   "a": "Yes, choose Whole year for one page per month."
+  },
+  {
+   "q": "How are week numbers counted?",
+   "a": "ISO 8601 weeks, which start on Monday."
+  },
+  {
+   "q": "Does it include public holidays?",
+   "a": "No. Add the ones you need as marked dates."
+  }
+ ],
+ "related": [
+  "printable-calendar",
+  "recurring-date-generator",
+  "long-weekend-finder",
+  "week-number",
+  "content-calendar-generator",
+  "ics-event-file-creator"
+ ],
+ "keywords": [
+  "monthly calendar printable",
+  "calendar generator",
+  "print month calendar"
+ ]
+}

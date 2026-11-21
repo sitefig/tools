@@ -1,0 +1,45 @@
+{
+  "id": "gravel-mulch-calculator",
+  "seoTitle": "Gravel, Mulch & Soil Calculator: Cubic Yards, Tons and Bags",
+  "metaDescription": "Work out how much gravel, mulch, topsoil or sand to order for an area and depth: volume, weight and number of bags, with a waste allowance.",
+  "intro": "Enter the size of the bed or driveway and the depth to see how much material to buy.",
+  "why": "Volume is length times width times depth, converted to cubic yards, cubic metres and cubic feet, with an allowance for waste or compaction (10% by default). Weight uses typical densities per cubic yard for gravel, mulch, topsoil, sand and crushed stone, and the bag count divides by the bag size you enter.\n\nDensity varies a lot with moisture and grading, so ask your supplier for the weight of the actual product and round the order up.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose feet/inches or metres/centimetres.",
+    "Enter length, width and depth.",
+    "Pick the material and waste percentage.",
+    "Round up when ordering."
+  ],
+  "faq": [
+    {
+      "q": "What depth should I use?",
+      "a": "Mulch 2 to 3 inches, topsoil 4 to 6, gravel paths 2 to 4, driveways 4 to 6 over a base."
+    },
+    {
+      "q": "Why add a waste allowance?",
+      "a": "Material compacts and some is lost in spreading."
+    },
+    {
+      "q": "Are the weights exact?",
+      "a": "No, they are typical densities."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "concrete-calculator",
+    "paint-coverage",
+    "tile-calculator",
+    "flooring-calculator",
+    "brick-calculator",
+    "unit-converter"
+  ],
+  "keywords": [
+    "gravel calculator",
+    "mulch calculator",
+    "cubic yard calculator",
+    "topsoil calculator"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "treemap-maker",
+ "seoTitle": "Treemap Maker: Nested Rectangles from Category Paths",
+ "metaDescription": "Paste rows like Media/Video,5200 to draw a squarified treemap where area equals value, with nested groups and a table. Free SVG.",
+ "intro": "Draws a treemap from path and value rows. Each rectangle has an area proportional to its value, and groups nest inside their parents.",
+ "why": "Treemaps are good for seeing which few items make up most of a total, such as disk usage, revenue by product line or traffic by section. Write the hierarchy as a path separated by slashes and give each leaf a value.\n\nThe layout uses the squarified method so rectangles stay close to square and are easy to compare. Very small rectangles lose their labels but keep a hover title and a row in the table. Areas encode values, so negative numbers are not allowed.",
+ "howTo": [
+  "Write one row per leaf: Group/Sub/Item,value.",
+  "Choose whether labels include values.",
+  "Look at the table to check totals.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Can a node have its own value and children?",
+   "a": "Yes, its own value is shown as an extra \"(own)\" rectangle."
+  },
+  {
+   "q": "How deep can it go?",
+   "a": "As deep as the labels stay readable; there is no hard depth limit."
+  },
+  {
+   "q": "Why is a label missing?",
+   "a": "The rectangle was too small. Hover for the title."
+  },
+  {
+   "q": "Does it handle zero values?",
+   "a": "Zero rows are ignored."
+  }
+ ],
+ "related": [
+  "sunburst-chart-maker",
+  "sankey-diagram-builder",
+  "pie-donut-chart-maker",
+  "ascii-tree-generator",
+  "bar-chart-maker",
+  "csv-to-chart"
+ ],
+ "keywords": [
+  "treemap generator",
+  "disk usage treemap",
+  "hierarchical data visualization"
+ ]
+}

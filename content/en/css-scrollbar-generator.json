@@ -1,0 +1,47 @@
+{
+ "id": "css-scrollbar-generator",
+ "seoTitle": "Free CSS Scrollbar Generator with Live Preview",
+ "metaDescription": "Free CSS scrollbar generator. Style scrollbars with ::-webkit-scrollbar and the standard scrollbar-color and scrollbar-width. Live preview included.",
+ "intro": "Style scrollbars for any selector using both the standard scrollbar-color and scrollbar-width properties and the older ::-webkit-scrollbar rules. Choose colours, width and radius and see a live preview.",
+ "why": "The default scrollbar often clashes with a dark theme or a custom interface. Styling it has been messy for years, because browsers split into two approaches: the standard properties, now supported in current Firefox and Chromium, and the older ::-webkit-scrollbar pseudo-elements that Safari and some other browsers still depend on.\n\nPick the selector, thumb, hover and track colours, a width and a thumb radius, and the tool writes both sets of rules together so the result is consistent across browsers. A scrolling demo box shows how it looks. Remember that very thin or low-contrast scrollbars hurt usability, and that hiding them entirely with scrollbar-width: none removes a visual cue that content scrolls. Nothing is uploaded.",
+ "howTo": [
+  "Enter the CSS selector, for example .scroll.",
+  "Choose the thumb, hover and track colours, the width and the thumb radius.",
+  "Pick the standard scrollbar-width: thin, auto or none.",
+  "Check the preview and copy the CSS."
+ ],
+ "faq": [
+  {
+   "q": "Why are there two sets of rules?",
+   "a": "scrollbar-color and scrollbar-width are the standard properties. The ::-webkit-scrollbar rules give finer control and are still needed for older Safari and Chromium versions, so both are included."
+  },
+  {
+   "q": "Does the hover colour work everywhere?",
+   "a": "Hover styling applies through the WebKit rules only. Browsers that use the standard properties show the single thumb colour you set."
+  },
+  {
+   "q": "Can I apply it to the whole page?",
+   "a": "Yes, use html or body as the selector. For the page scrollbar, some browsers apply styles from the root element only, so try html first."
+  },
+  {
+   "q": "Is hiding the scrollbar a good idea?",
+   "a": "Use scrollbar-width: none with care. Users may no longer see that content scrolls, which hurts usability and accessibility. Keep a visible cue or keep the scrollbar thin."
+  }
+ ],
+ "related": [
+  "css-filter-generator",
+  "css-pattern-generator",
+  "box-shadow-generator",
+  "border-radius-generator",
+  "color-converter",
+  "contrast-checker"
+ ],
+ "keywords": [
+  "css scrollbar generator",
+  "custom scrollbar css",
+  "scrollbar-color generator",
+  "free scrollbar styler",
+  "webkit scrollbar generator",
+  "style scrollbar css"
+ ]
+}

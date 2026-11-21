@@ -1,0 +1,46 @@
+{
+  "id": "character-frequency",
+  "seoTitle": "Free Character Frequency Counter and Analyzer",
+  "metaDescription": "Count how often each character appears in your text, with percentages, Unicode code points and a bar chart. Free, runs in your browser.",
+  "intro": "Counts every character in your text and lists them from most to least common, with the count, percentage, Unicode code point and a small bar. Case and whitespace handling are optional.",
+  "why": "Counting letters comes up in more places than you would expect. Cryptography puzzles and simple substitution ciphers are cracked by frequency analysis, linguists compare letter distributions, and developers want to know which odd characters crept into a data file.\n\nThis tool gives you the full table in one go. Each character shows its code point, so a lookalike such as a Cyrillic letter inside Latin text becomes obvious. You can fold case, count or ignore whitespace, and limit the count to letters and digits. Whitespace is displayed with a visible symbol so it can be read. Your text stays in the browser, which matters when you are analysing private data.",
+  "howTo": [
+    "Paste the text you want to analyse.",
+    "Tick Case sensitive if capital and lower-case letters should be counted separately.",
+    "Choose whether to include whitespace, or limit the count to letters and digits.",
+    "Read the sorted table and copy it if needed."
+  ],
+  "faq": [
+    {
+      "q": "What does each column mean?",
+      "a": "The columns show the character, its Unicode code point, how many times it appears, its share of the total and a bar scaled to the most common character. The header line gives the total and the number of distinct characters."
+    },
+    {
+      "q": "How are spaces and line breaks shown?",
+      "a": "When whitespace is included, a space appears as a visible symbol and tabs and line breaks as escape sequences, so they can be told apart. By default whitespace is excluded from the counts."
+    },
+    {
+      "q": "Can it help break a simple cipher?",
+      "a": "It is a useful first step. In a monoalphabetic substitution cipher the most common ciphertext letters often map to common plain letters such as E and T. It will not solve the cipher for you."
+    },
+    {
+      "q": "Are emoji counted correctly?",
+      "a": "Characters are counted as Unicode code points, so most emoji count as one. Emoji built from several code points, such as skin tone variants or flags, appear as separate entries."
+    }
+  ],
+  "related": [
+    "classical-ciphers",
+    "word-counter",
+    "text-statistics",
+    "char-info",
+    "duplicate-words-finder",
+    "anagram-checker"
+  ],
+  "keywords": [
+    "character frequency counter",
+    "letter frequency analysis",
+    "count characters in text",
+    "letter counter online",
+    "free character count tool"
+  ]
+}

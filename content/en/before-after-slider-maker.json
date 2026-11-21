@@ -1,0 +1,45 @@
+{
+ "id": "before-after-slider-maker",
+ "seoTitle": "Before and After Image Slider Maker (Embeddable HTML)",
+ "metaDescription": "Turn two images into a before and after comparison slider you can paste into a page. The code is one small block with a keyboard-operable range input and...",
+ "intro": "Make an embeddable before and after image slider.",
+ "why": "Choose the before image first and the after image second. The tool scales both to the same size and produces one block of HTML, CSS and a few lines of script, with the images embedded. The slider is a real range input laid over the pictures, so it works with a keyboard and screen readers.\n\nThe preview is static because scripts do not run in the preview frame. Paste the code in your page to see it work. For big pictures, host the files and swap the data URIs for their URLs.",
+ "howTo": [
+  "Choose the before and after images, in that order.",
+  "Write alt text for both.",
+  "Pick a width and quality.",
+  "Copy the code into your page."
+ ],
+ "faq": [
+  {
+   "q": "How big is the code?",
+   "a": "It depends on the pictures. The size is shown. Embedded images make it large, so host them for big photos."
+  },
+  {
+   "q": "Does it need a library?",
+   "a": "No. It is plain HTML, CSS and a few lines of JavaScript."
+  },
+  {
+   "q": "Do the images need the same size?",
+   "a": "The second is stretched to match the first, so use pictures with the same aspect ratio."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-diff",
+  "image-resizer",
+  "image-compressor",
+  "iframe-embed-builder",
+  "image-to-base64",
+  "image-border-frame-adder"
+ ],
+ "keywords": [
+  "before after slider",
+  "image comparison slider",
+  "before and after image",
+  "compare images embed"
+ ]
+}

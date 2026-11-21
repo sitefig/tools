@@ -1,0 +1,45 @@
+{
+  "id": "grade-calculator",
+  "seoTitle": "Weighted Grade Calculator and Final Exam Score Needed",
+  "metaDescription": "Enter assignments with scores and weights to get your current weighted grade, the score you need on the rest to reach a target, and the letter grade.",
+  "intro": "Find out where your grade stands and what the final exam has to be.",
+  "why": "Enter lines like \"Midterm 84 30\" (name, score, weight %). The page computes the weighted grade on the work graded so far, the points already banked toward the final grade, and the average you need on the remaining weight to reach your target, with best and worst case outcomes. Letter grades use a US scale or a plus/minus scale.\n\nGrading policies differ (curves, dropped scores, rounding), so check your syllabus for the official calculation.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "List each graded item with score and weight.",
+    "Enter your target grade.",
+    "Read the current grade and required average.",
+    "Check the policy for rounding and drops."
+  ],
+  "faq": [
+    {
+      "q": "Do weights have to add to 100?",
+      "a": "No, but they cannot exceed 100. The rest is treated as remaining work."
+    },
+    {
+      "q": "What if the needed score is over 100?",
+      "a": "The target is out of reach without extra credit."
+    },
+    {
+      "q": "Can I use percentages and points?",
+      "a": "Enter scores as percentages."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "gpa-calculator",
+    "statistics-calculator",
+    "percentage-calculator",
+    "average-median-mode",
+    "fraction-calculator",
+    "countdown-to-date"
+  ],
+  "keywords": [
+    "grade calculator",
+    "final exam grade calculator",
+    "weighted grade",
+    "what do i need on the final"
+  ]
+}

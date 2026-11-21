@@ -1,0 +1,45 @@
+{
+ "id": "base64-to-file",
+ "seoTitle": "Base64 to File: Decode and Download Any Type",
+ "metaDescription": "Decode Base64, Base64URL or a data: URI and download the bytes as a file, with the type detected from the content. Runs in your browser.",
+ "intro": "Decodes Base64 and saves the bytes as a file with the right extension.",
+ "why": "You may get an attachment, an image or an archive as a Base64 string from an API, an email source or a log. The text has to become a file before anything can open it.\n\nThe tool accepts standard and URL-safe Base64 and data: URIs, tolerates missing padding and line breaks, and looks at the first bytes to pick the type and extension for PNG, JPEG, PDF, ZIP and more. A declared type that disagrees with the bytes is flagged.",
+ "howTo": [
+  "Paste the Base64 string or data URI.",
+  "Set a file name if you like.",
+  "Check the detected type.",
+  "Use the download link."
+ ],
+ "faq": [
+  {
+   "q": "The file will not open.",
+   "a": "The string may be cut off or double encoded. Check the first bytes shown."
+  },
+  {
+   "q": "Why was an extension chosen for me?",
+   "a": "It follows the detected content, not the name."
+  },
+  {
+   "q": "Is the string uploaded?",
+   "a": "No."
+  },
+  {
+   "q": "What about PDFs?",
+   "a": "The PDF tool also checks the header and ending."
+  }
+ ],
+ "related": [
+  "base64-decode",
+  "base64-to-pdf",
+  "data-uri-inspector",
+  "file-to-data-uri",
+  "base64url-encoder",
+  "hex-to-base64"
+ ],
+ "keywords": [
+  "base64 to file",
+  "decode base64 download file",
+  "base64 to image or pdf",
+  "base64 string to binary file"
+ ]
+}

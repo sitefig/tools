@@ -1,0 +1,44 @@
+{
+ "id": "log-pattern-miner",
+ "seoTitle": "Log Pattern Miner: Find Log Templates Like Drain",
+ "metaDescription": "Find recurring log templates in thousands of lines, with <*> where lines differ, counts and an example. Free, runs in your browser.",
+ "intro": "A simplified Drain-style clustering that turns many log lines into a few templates.",
+ "why": "Most log lines come from a few print statements. Finding the templates shows what is noisy and what is rare, and rare lines are often the interesting ones.\n\nWords with digits and long hex strings are treated as variables up front. Lines are grouped by length and first words, then merged when enough words match. Different wordings of one event stay separate.",
+ "howTo": [
+  "Paste log lines.",
+  "Keep the timestamp strip on unless your lines have none.",
+  "Raise the similarity threshold to get more, narrower templates.",
+  "Read the templates by count."
+ ],
+ "faq": [
+  {
+   "q": "Is this exactly Drain?",
+   "a": "No. It follows the idea with a simpler tree. Results will differ on hard logs."
+  },
+  {
+   "q": "What does the threshold do?",
+   "a": "The share of words that must match for a line to join a template. Higher means stricter."
+  },
+  {
+   "q": "How many lines can it take?",
+   "a": "Tens of thousands in a modern browser."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "exception-grouper",
+  "log-privacy-workbench",
+  "log-level-histogram",
+  "log-format-detector",
+  "log-grep-context",
+  "journald-json-viewer"
+ ],
+ "keywords": [
+  "log template mining",
+  "drain log parsing",
+  "cluster log lines"
+ ]
+}

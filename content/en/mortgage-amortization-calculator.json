@@ -1,0 +1,40 @@
+{
+ "id": "mortgage-amortization-calculator",
+ "seoTitle": "Mortgage Calculator With Full Amortization Table",
+ "metaDescription": "Free mortgage calculator: monthly payment, total interest and a month-by-month schedule. Add overpayments to see interest saved. Runs in your browser.",
+ "intro": "Works out the monthly payment on a fixed-rate mortgage, lists every payment split into principal and interest, and shows what extra payments save.",
+ "why": "A mortgage payment looks fixed, but early payments are mostly interest. The schedule shows how slowly the balance falls at first, which is why even a small monthly overpayment cuts the term by years.\n\nThe tool compares the original schedule with one that includes your overpayment, so you see months saved and interest saved side by side. It assumes a fixed rate and payments at month end. Lenders may round payments or add fees and insurance, so treat the result as an estimate.",
+ "howTo": [
+  "Enter price, down payment, rate and term.",
+  "Add a monthly or one-off extra payment if you want to compare.",
+  "Choose a monthly or yearly schedule view.",
+  "Read the payment, total interest and the saved time and interest."
+ ],
+ "faq": [
+  {
+   "q": "Does it include taxes and insurance?",
+   "a": "No. It only covers principal and interest. Add property tax, insurance and fees yourself."
+  },
+  {
+   "q": "Why does the last payment differ?",
+   "a": "Payments are not rounded to cents here, so the final payment can differ by a few cents from a lender statement."
+  },
+  {
+   "q": "Does an overpayment shorten the term or lower the payment?",
+   "a": "Here it shortens the term and the payment stays the same. Some lenders let you choose; check your contract for early repayment fees."
+  }
+ ],
+ "related": [
+  "loan-calculator",
+  "emi-calculator",
+  "compound-interest",
+  "mortgage-affordability-calculator",
+  "rent-vs-buy-calculator",
+  "car-loan-balloon-calculator"
+ ],
+ "keywords": [
+  "mortgage calculator",
+  "amortization schedule",
+  "mortgage overpayment"
+ ]
+}

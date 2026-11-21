@@ -1,0 +1,44 @@
+{
+ "id": "plus-code-converter",
+ "seoTitle": "Plus Code Converter: Encode, Decode, Recover Short Codes",
+ "metaDescription": "Turn latitude and longitude into a Plus Code (Open Location Code), decode one into its area, or expand a short code from a reference. Offline.",
+ "intro": "Encodes and decodes Open Location Codes, including the 11 to 15 digit refinements, and recovers short codes near a reference point.",
+ "why": "Plus Codes give any place a short address without street names. The tool follows the published specification: a 20 character alphabet, five latitude and longitude pairs and an optional grid refinement. Codes were compared with the openlocationcode Python library on 300 random points.\n\nA short code such as 9G8F+6W drops the first characters and is only meaningful near a place. Give a reference location within roughly 50 km to recover the full code. Decoding returns the centre and the corners of the cell, with its size in metres.",
+ "howTo": [
+  "Paste a Plus Code to decode it, or a latitude and longitude to encode.",
+  "For a short code, enter a nearby reference as lat, lon.",
+  "Pick the code length for encoding; 10 is about 14 by 14 m.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "What length should I use?",
+   "a": "10 digits is the usual precision, about 14 metres; each added digit narrows it further."
+  },
+  {
+   "q": "What does a 0 mean?",
+   "a": "Padding in short-area codes such as 8FVC0000+."
+  },
+  {
+   "q": "Is it related to what3words?",
+   "a": "No. Plus Codes are an open standard with no database or licence."
+  },
+  {
+   "q": "Can it find a place by name?",
+   "a": "No. That needs a geocoding service; this tool only converts coordinates."
+  }
+ ],
+ "related": [
+  "coordinate-format-converter",
+  "geohash-tool",
+  "geo-path-distance",
+  "geo-midpoint-finder",
+  "csv-to-geojson",
+  "radius-circle-geojson"
+ ],
+ "keywords": [
+  "plus code converter",
+  "open location code",
+  "google plus code decoder"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "ip-subnet-calculator",
+ "seoTitle": "Free IP Subnet Calculator for IPv4 and IPv6 CIDR",
+ "metaDescription": "Calculate network, broadcast, netmask, wildcard and host range for any IPv4 CIDR or netmask, plus IPv6 prefix ranges. Free, runs in your browser.",
+ "intro": "Enter an IPv4 address with a CIDR prefix or netmask, or an IPv6 prefix, and get the network range, mask, wildcard, host count and address type. Several lines at once are fine.",
+ "why": "Subnet maths comes up in cloud networking, firewall rules, VPN setups and exam questions: how many hosts fit in a /26, where does 10.0.0.0/22 end, what is the wildcard mask for an access list? The calculation is simple but easy to botch with a pencil, and one wrong bit means overlapping networks.\n\nThis calculator takes IPv4 as CIDR (192.168.10.77/26) or address plus netmask, and shows network and broadcast addresses, netmask in dotted and binary form, wildcard, host range, total and usable hosts, class and type. IPv6 prefixes show the first and last address and the /64 count. It runs locally.",
+ "howTo": [
+  "Enter one or more addresses with a prefix, such as 192.168.10.77/26, or an address and netmask separated by a space.",
+  "Add IPv6 prefixes like 2001:db8:abcd::1/48 if you need them.",
+  "Read the network, broadcast, host range and counts for each entry.",
+  "Copy the details you need into your firewall or cloud configuration."
+ ],
+ "faq": [
+  {
+   "q": "Why are usable hosts two fewer than the total?",
+   "a": "The first address is the network address and the last is the broadcast address, so neither can be given to a host. The exceptions are /31 networks, which provide two usable addresses, and /32, which is a single host."
+  },
+  {
+   "q": "What is a wildcard mask?",
+   "a": "It is the inverse of the netmask: ones where the netmask has zeros. Cisco-style access lists and OSPF configuration use it. For a /24 the netmask is 255.255.255.0 and the wildcard is 0.0.0.255."
+  },
+  {
+   "q": "Does it validate that the netmask is contiguous?",
+   "a": "Yes. A netmask like 255.0.255.0 is rejected with an error, because only masks made of consecutive ones followed by zeros correspond to a CIDR prefix."
+  },
+  {
+   "q": "What does the IPv6 output include?",
+   "a": "The compressed and expanded address, the prefix, its first and last address, the total number of addresses, how many /64 subnets fit inside and the address type, such as global unicast or unique local."
+  }
+ ],
+ "related": [
+  "cidr-contains",
+  "ip-supernetting-calculator",
+  "ip-validator-converter",
+  "port-reference",
+  "nginx-rate-limit-calculator",
+  "bandwidth-download-time"
+ ],
+ "keywords": [
+  "ip subnet calculator",
+  "cidr calculator",
+  "subnet mask calculator",
+  "free ipv4 subnet tool",
+  "ipv6 prefix calculator",
+  "wildcard mask calculator"
+ ]
+}

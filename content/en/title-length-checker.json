@@ -1,0 +1,46 @@
+{
+ "id": "title-length-checker",
+ "seoTitle": "Free Title & Meta Description Length Checker",
+ "metaDescription": "Check many page titles or meta descriptions at once for length and estimated pixel width, with duplicates flagged. Free, in-browser.",
+ "intro": "Paste a list of page titles or meta descriptions, one per line, to check character count, estimated pixel width and status, and to spot duplicates.",
+ "why": "Checking one title is easy. Checking two hundred from a crawl export or a spreadsheet is where tools earn their keep. Titles that are too long are cut off in search results, too short ones waste space, and duplicates compete with each other.\n\nThis checker takes one title or description per line and shows each with its length in characters, an estimated width in pixels, and a status: OK, too long, too short or empty. Targets are 30 to 60 characters and about 600 pixels for titles, and 70 to 160 characters and about 920 pixels for descriptions. Duplicates are listed separately. The pixel widths are estimates and the targets are guidelines, since Google may show a different snippet. Everything is calculated in your browser.",
+ "howTo": [
+  "Choose whether you are checking titles or descriptions in the options.",
+  "Paste one entry per line into the input box.",
+  "Run the tool to see the table of lengths, widths and statuses.",
+  "Rewrite entries marked too long, too short or duplicated."
+ ],
+ "faq": [
+  {
+   "q": "What are the target lengths?",
+   "a": "Titles: 30 to 60 characters and about 600 pixels. Descriptions: 70 to 160 characters and about 920 pixels. They are common guidelines rather than official limits."
+  },
+  {
+   "q": "Why check pixels as well as characters?",
+   "a": "Search results truncate by width. Wide letters such as W take more space than narrow ones such as i, so two titles of equal length can display differently."
+  },
+  {
+   "q": "How are duplicates found?",
+   "a": "Entries are compared ignoring case, and any text that appears more than once is listed. Duplicate titles across pages are worth fixing because they blur which page should rank."
+  },
+  {
+   "q": "Is my list uploaded?",
+   "a": "No. The check runs in your browser and the titles or descriptions you paste are not sent anywhere."
+  }
+ ],
+ "related": [
+  "serp-snippet",
+  "meta-tag-generator",
+  "dedupe-lines",
+  "seo-inspector",
+  "word-counter",
+  "slug-generator"
+ ],
+ "keywords": [
+  "title length checker",
+  "meta description length checker",
+  "bulk title tag checker",
+  "seo title pixel width",
+  "check many titles at once"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "json-schema-validator",
+ "seoTitle": "Free JSON Schema Validator Online (Draft-07 Subset)",
+ "metaDescription": "Free online JSON Schema validator. Check JSON data against a schema and get a list of errors by path. Supports common keywords and local $ref.",
+ "intro": "Validate a JSON document against a JSON Schema and see each failure listed with its path. It supports the common keywords, including anyOf, oneOf, allOf and local $ref.",
+ "why": "A schema is only useful if you can check data against it. When an integration rejects a payload with a vague 400 error, or you are writing a schema and want to see how it behaves, you need a quick way to run both side by side and get readable messages.\n\nPaste the schema in one box and the data in the other. Every failure is listed with its path, for example that age must be at most 150 or that a required key is missing, so you can fix them one by one. The tool covers the keywords most schemas use rather than every part of the specification, which is worth knowing for advanced schemas. Both documents stay in your browser and are not uploaded.",
+ "howTo": [
+  "Paste the JSON Schema into the first box.",
+  "Paste the JSON data you want to check into the second box.",
+  "Read the verdict: Valid, or a list of errors with the path of each.",
+  "Fix the data or the schema and run it again."
+ ],
+ "faq": [
+  {
+   "q": "Which keywords are supported?",
+   "a": "Type, properties, required, items, enum, const, minimum and maximum, string length, pattern, uniqueItems, anyOf, oneOf, allOf, not and local $ref. It is a practical subset, not the entire specification."
+  },
+  {
+   "q": "Does it follow remote $ref links?",
+   "a": "No. Only local references that start with #, such as #/definitions/cat, are resolved. A remote reference gives an error, so copy the referenced definitions into your schema."
+  },
+  {
+   "q": "Does it check format keywords?",
+   "a": "Formats it knows, such as email, date, date-time and uuid, are checked with simple patterns. Unknown formats are ignored, so a pass does not prove a value is a real address."
+  },
+  {
+   "q": "What if the schema itself is wrong?",
+   "a": "It reports parse errors for invalid JSON. It does not validate the schema against the meta-schema, so a misspelled keyword is simply ignored."
+  }
+ ],
+ "related": [
+  "json-schema-generator",
+  "json-validate",
+  "json-format",
+  "jsonpath-tester",
+  "json-diff",
+  "zod-to-json-schema"
+ ],
+ "keywords": [
+  "json schema validator",
+  "validate json against schema",
+  "json schema checker online",
+  "free json schema validator",
+  "draft-07 validator",
+  "json schema test tool"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "webcam-mirror-check",
+ "seoTitle": "Webcam Mirror: Check Lighting and Framing Before a Video Call",
+ "metaDescription": "See your camera as a live mirrored preview with an optional framing grid. Nothing is recorded, saved or uploaded. Free.",
+ "intro": "Shows a live, mirrored preview from your camera so you can check lighting, background and framing before a call.",
+ "why": "Before a meeting you want to see what others will see. Press start, allow the camera, and your picture appears mirrored like a mirror. A thirds grid can help you center your face and keep your eyes near the top line.\n\nThe video goes straight from the camera to the page. It is not recorded, not saved and not sent anywhere. You can pick another camera if you have several, and stop the camera at any time. Video-call apps often show others the unmirrored picture, so text behind you will look reversed to you.",
+ "howTo": [
+  "Press Start camera and allow access.",
+  "Pick another camera from the list if needed.",
+  "Turn on the framing grid if you like.",
+  "Press Stop camera when done."
+ ],
+ "faq": [
+  {
+   "q": "Is anything recorded?",
+   "a": "No. The picture stays on this page."
+  },
+  {
+   "q": "Why is the picture reversed?",
+   "a": "It is mirrored on purpose; others see it unmirrored."
+  },
+  {
+   "q": "Why does the page ask for permission?",
+   "a": "Browsers always ask before a page uses the camera."
+  },
+  {
+   "q": "Does it work on a phone?",
+   "a": "Yes in most modern browsers."
+  }
+ ],
+ "related": [
+  "webcam-recorder",
+  "mic-test",
+  "meeting-cost-timer",
+  "timezone-meeting-planner",
+  "screen-info",
+  "media-devices-viewer"
+ ],
+ "keywords": [
+  "webcam mirror",
+  "camera test online",
+  "check my camera before a call",
+  "mirror view webcam"
+ ]
+}

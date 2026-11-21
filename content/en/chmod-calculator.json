@@ -1,0 +1,46 @@
+{
+ "id": "chmod-calculator",
+ "seoTitle": "Free chmod Calculator: Octal and Symbolic Permissions",
+ "metaDescription": "Convert Unix file permissions between octal like 755 and symbolic rwxr-xr-x, with a per-user breakdown and the chmod command. Free, in your browser.",
+ "intro": "Enter an octal mode such as 755 or a symbolic string such as rwxr-xr-x. The tool converts it to the other form and explains what owner, group and others can do.",
+ "why": "Linux and macOS file permissions are written two ways: three octal digits in commands like chmod 644, and a nine-character string in the output of ls -l. Remembering that 4 is read, 2 is write and 1 is execute is easy enough, but working out whether 750 gives the group write access means doing the sums. This calculator converts both directions and spells out each permission for owner, group and others in words, then gives the exact chmod command to copy. It is useful when you are fixing web server permissions, setting up SSH keys or reading a deployment guide. It does not touch any files; it only converts the notation. Everything stays in your browser.",
+ "howTo": [
+  "Type an octal value like 644 or 755, or a symbolic string like rw-r--r--.",
+  "Run the tool.",
+  "Read the other notation, the plain-English breakdown and the chmod command."
+ ],
+ "faq": [
+  {
+   "q": "What do the octal digits mean?",
+   "a": "Each digit covers owner, group and others in turn. It is the sum of read (4), write (2) and execute (1), so 7 is all three, 6 is read and write, and 5 is read and execute."
+  },
+  {
+   "q": "Does it handle setuid, setgid and the sticky bit?",
+   "a": "Only partly. A four-digit octal input is accepted but the leading special digit is dropped, so the result covers the last three digits only. Treat special bits separately."
+  },
+  {
+   "q": "Which permissions are safe for web files?",
+   "a": "Common choices are 644 for files and 755 for directories, but it depends on your server setup. Avoid 777, since it lets any user on the system modify the file."
+  },
+  {
+   "q": "Can I use u+x style changes?",
+   "a": "No. This tool converts full mode notations only. Relative changes such as u+x or g-w are not parsed."
+  }
+ ],
+ "related": [
+  "number-base-converter",
+  "bitwise-calculator",
+  "cron-explainer",
+  "htpasswd-generator",
+  "ssh-key-inspector",
+  "gitignore-generator"
+ ],
+ "keywords": [
+  "chmod calculator",
+  "free chmod calculator",
+  "linux file permissions calculator",
+  "chmod 755 meaning",
+  "octal to rwx",
+  "unix permissions converter"
+ ]
+}

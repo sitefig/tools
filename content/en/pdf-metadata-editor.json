@@ -1,0 +1,46 @@
+{
+ "id": "pdf-metadata-editor",
+ "seoTitle": "Free PDF Metadata Editor - Title, Author, Keywords",
+ "metaDescription": "Edit a PDF's Title, Author, Subject, Keywords, Creator and Producer, or delete fields. Shows before and after. Free, runs in your browser.",
+ "intro": "Change a PDF's Title, Author, Subject, Keywords, Creator and Producer. Leave a field empty to keep it, or type a dash to delete it.",
+ "why": "PDF metadata travels with the file. A document exported from a template may carry an old author name, a draft title or the name of the software and the person who made it. Search engines and file managers show the title, and recipients can see the rest in the document properties.\n\nThis editor shows you the result as a before and after list. Fill in the fields you want to change, leave the others blank to keep their current values, and type a single dash to remove a field completely. It also drops the old XMP metadata packet, so a leftover copy cannot contradict the new values. The page content itself is untouched. To remove all metadata in one go, use the Remove PDF Metadata tool. Encrypted PDFs are refused, and processing is local.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Type new values in the fields you want to change.",
+  "Leave fields blank to keep them, or enter a dash to delete them.",
+  "Run the tool, review the before and after list, and download the PDF."
+ ],
+ "faq": [
+  {
+   "q": "How do I delete a field?",
+   "a": "Type a single dash in that field. An empty field means keep the current value, so the dash is what tells the tool to remove it."
+  },
+  {
+   "q": "Why is XMP metadata dropped?",
+   "a": "Many PDFs store the same details twice, in the Info dictionary and in an XMP packet. If only one were changed, the old values could still show up elsewhere, so the packet is removed."
+  },
+  {
+   "q": "Does this change the document text?",
+   "a": "No. Only the metadata is rewritten. Pages, fonts and images are copied unchanged, although the file is re-saved as a new document with the changed fields."
+  },
+  {
+   "q": "Does it affect digital signatures?",
+   "a": "Yes. Rewriting the file invalidates any digital signature on it, as any change after signing does. Edit the metadata before signing, not after."
+  }
+ ],
+ "related": [
+  "pdf-remove-metadata",
+  "pdf-info",
+  "exif-remover",
+  "exif-viewer",
+  "pdf-merge",
+  "pdf-add-text-watermark"
+ ],
+ "keywords": [
+  "pdf metadata editor",
+  "change pdf author",
+  "edit pdf title online",
+  "pdf properties editor",
+  "free pdf metadata tool"
+ ]
+}

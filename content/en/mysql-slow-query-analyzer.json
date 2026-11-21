@@ -1,0 +1,44 @@
+{
+ "id": "mysql-slow-query-analyzer",
+ "seoTitle": "MySQL Slow Query Log Analyzer: Group by Fingerprint",
+ "metaDescription": "Group MySQL slow queries by pattern and rank by total time, average, max or count, with rows examined versus sent. Free, runs in your browser.",
+ "intro": "Groups slow log entries by fingerprint and ranks them.",
+ "why": "One slow query pattern may run thousands of times. Total time per pattern shows where the server spends its time.\n\nFor each pattern the tool shows count, total, average and maximum time, lock time and rows examined versus rows sent. Examining far more rows than returned is a sign of a missing index.",
+ "howTo": [
+  "Enable the slow query log and collect it.",
+  "Paste the log or open the file.",
+  "Choose ranking by total, average, max or count.",
+  "Read the patterns and examples."
+ ],
+ "faq": [
+  {
+   "q": "What is a fingerprint?",
+   "a": "The query with literals replaced by ? and lists collapsed, in lower case."
+  },
+  {
+   "q": "Does it replace pt-query-digest?",
+   "a": "No. It is a simplified take for pasted logs."
+  },
+  {
+   "q": "Which log forms work?",
+   "a": "The text slow log with # Query_time lines."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "postgres-log-analyzer",
+  "sql-index-advisor",
+  "sql-explainer",
+  "sql-format",
+  "redis-mongodb-slowlog-parser",
+  "log-pattern-miner"
+ ],
+ "keywords": [
+  "mysql slow log analyzer",
+  "slow query log fingerprint",
+  "pt-query-digest online"
+ ]
+}

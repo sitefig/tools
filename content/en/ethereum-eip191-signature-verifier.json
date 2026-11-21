@@ -1,0 +1,43 @@
+{
+ "id": "ethereum-eip191-signature-verifier",
+ "seoTitle": "Free Ethereum personal_sign Signature Verifier",
+ "metaDescription": "Recover the signer address from a personal_sign EIP-191 signature and compare it with an expected address. Free, runs in your browser.",
+ "intro": "Paste a message and a 65-byte signature to recover the Ethereum address that signed it with personal_sign, then compare it with the address you expect.",
+ "why": "Wallets sign messages to prove ownership of an address: logging in, claiming an airdrop or confirming a statement. If you build or test that flow, you need to check that a signature really belongs to the claimed address, and the details are fiddly. The message is prefixed and hashed, and the signature has to be split into its r, s and v parts.\n\nThis verifier does that recovery with secp256k1 and Keccak-256 written into the page, so the message and signature are not sent to a node. A match tells you the signature is valid for that exact message and address. It does not tell you the wallet owner is trustworthy, or that the message is safe to act on, so keep your own server-side checks.",
+ "howTo": [
+  "Enter the message, as text or as hex bytes if you choose that option.",
+  "Paste the 65-byte signature in hex, made of r, s and v.",
+  "Optionally enter the expected Ethereum address to compare against.",
+  "Read the recovered address and whether it matches."
+ ],
+ "faq": [
+  {
+   "q": "What is the EIP-191 prefix?",
+   "a": "personal_sign adds the text 'Ethereum Signed Message' with the message length before hashing, so a signature cannot be reused as a transaction signature. The tool applies this prefix to your message before recovering the address."
+  },
+  {
+   "q": "Why is my recovered address different?",
+   "a": "Usually the message differs by a byte, such as a trailing newline, or it was entered as text when it was signed as hex. Check the message format option and compare the exact bytes."
+  },
+  {
+   "q": "Is it safe to use a real wallet signature?",
+   "a": "A signature is not a private key, and the tool works in your browser. Still, a signed login message can sometimes be replayed elsewhere, so avoid sharing signatures that grant access to anything."
+  }
+ ],
+ "related": [
+  "eip191-message-hash",
+  "eip712-typed-data-hash",
+  "eip55-checksum-address",
+  "ethereum-keccak256-hasher",
+  "ed25519-sign-verify",
+  "abi-encoder-decoder"
+ ],
+ "keywords": [
+  "eip-191 signature verifier",
+  "personal_sign verify online",
+  "recover ethereum address from signature",
+  "ethereum message signature check",
+  "ecrecover online",
+  "free eth signature verifier"
+ ]
+}

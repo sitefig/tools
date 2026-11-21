@@ -1,0 +1,38 @@
+{
+ "id": "shopify-payment-fee-calculator",
+ "seoTitle": "Shopify Payment Fee Calculator: Compare Plans by Card Rate",
+ "metaDescription": "Compare card processing fees and total monthly cost across three plans from the rates and prices you enter. Defaults are examples.",
+ "intro": "Compares card processing fees plus plan price across three plans for your order value and volume.",
+ "why": "A higher plan costs more each month but usually charges a lower card rate. Which one is cheaper depends on how many orders you take and how large they are. The break point is easy to compute and hard to guess.\n\nEnter the rates and plan prices from Shopify's pricing page for your country. The defaults are only examples. The tool shows fees per order, fees per month and the total for each plan, then names the cheapest one.",
+ "howTo": [
+  "Copy the card rates, fixed fee and plan prices from Shopify's pricing page.",
+  "Enter your typical order value and orders per month.",
+  "Read the total per month and the cheapest plan."
+ ],
+ "faq": [
+  {
+   "q": "Are the default rates correct?",
+   "a": "Not verified. They are examples, so check them for your country."
+  },
+  {
+   "q": "Does it include third-party gateway fees?",
+   "a": "No. Those depend on the plan and gateway; use your gateway's own numbers."
+  },
+  {
+   "q": "Does it include currency conversion fees?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "break-even",
+  "payment-fee-gross-up-calculator",
+  "dropshipping-profit-calculator",
+  "average-order-value-calculator"
+ ],
+ "keywords": [
+  "shopify payment fees",
+  "shopify plan comparison",
+  "card processing fee calculator"
+ ]
+}

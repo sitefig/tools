@@ -1,0 +1,39 @@
+{
+ "id": "cap-table-round-simulator",
+ "seoTitle": "Cap Table Simulator With Option Pool and New Round",
+ "metaDescription": "Enter holders and shares, add a priced round with pool top-up and get a before and after table with price per share. Free, private.",
+ "intro": "Builds a simple cap table before and after one priced round, with an option pool top-up if you want it.",
+ "why": "A cap table lists who owns how many shares. A priced round gives the investor shares at a price set by the pre-money valuation and all shares that exist before it, including a pool top-up demanded before the round.\n\nThe pool size needed to reach your target after the round is solved in closed form, so the target is met exactly. The model is one round of common-equivalent shares with no preferences, SAFEs or notes, so use it to see magnitudes and not to sign anything.",
+ "howTo": [
+  "Enter holders as name, shares. Name the option pool row with the word pool.",
+  "Enter investment, pre-money and a pool target.",
+  "Read the table and the price per share."
+ ],
+ "faq": [
+  {
+   "q": "What does the pool target mean?",
+   "a": "The share of the post-round company that the pool should hold."
+  },
+  {
+   "q": "Is the top-up before or after the round?",
+   "a": "Before. It is part of pre-money, so only existing holders are diluted."
+  },
+  {
+   "q": "Is this legal advice?",
+   "a": "No. Check any real cap table with a lawyer."
+  }
+ ],
+ "related": [
+  "equity-dilution-calculator",
+  "safe-conversion-calculator",
+  "pre-post-money-valuation-calculator",
+  "vesting-schedule-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "cap table simulator",
+  "option pool top up",
+  "priced round shares"
+ ]
+}

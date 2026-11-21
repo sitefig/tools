@@ -1,0 +1,39 @@
+{
+ "id": "churn-rate-calculator",
+ "seoTitle": "Churn Rate Calculator: Customer, Revenue and Net Retention",
+ "metaDescription": "Customer churn, gross and net revenue churn, retention, annualised churn and lifetime from start-of-period figures.",
+ "intro": "Computes customer and revenue churn, retention and expected lifetime.",
+ "why": "Churn can mean customers lost or revenue lost, and they behave differently. Gross revenue churn includes cancellations and downgrades. Net revenue churn also subtracts upgrades, and it can go negative.\n\nUse start-of-period customers as the base, not new ones from the period. The tool also converts a monthly rate to a yearly one and gives a lifetime of one over the monthly rate.",
+ "howTo": [
+  "Enter customers at the start and customers lost.",
+  "Enter revenue at start, lost, downgraded and upgraded.",
+  "Read churn, retention and lifetime."
+ ],
+ "faq": [
+  {
+   "q": "What is net revenue retention?",
+   "a": "Revenue kept from the starting base after upgrades and losses, over starting revenue."
+  },
+  {
+   "q": "Can churn be negative?",
+   "a": "Net revenue churn can, when expansion beats losses."
+  },
+  {
+   "q": "Why use the start base?",
+   "a": "New customers have not had the chance to churn."
+  }
+ ],
+ "related": [
+  "mrr-arr-calculator",
+  "saas-metrics-calculator",
+  "rule-of-40-calculator",
+  "retention-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "churn rate calculator",
+  "net revenue retention",
+  "customer churn"
+ ]
+}

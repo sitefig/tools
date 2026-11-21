@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CSV Deduplicator: Remove Duplicate Rows by Column | Free | Free Tools</title>
+<meta name="description" content="Remove duplicate CSV rows by key columns, keep first or last, ignore case and spaces, and list what was removed. Runs locally in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/csv-deduplicator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/csv-deduplicator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/csv-deduplicator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="CSV Deduplicator: Remove Duplicate Rows by Column | Free | Free Tools">
+<meta property="og:description" content="Remove duplicate CSV rows by key columns, keep first or last, ignore case and spaces, and list what was removed. Runs locally in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/csv-deduplicator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CSV Deduplicator: Remove Duplicate Rows by Column | Free | Free Tools">
+<meta name="twitter:description" content="Remove duplicate CSV rows by key columns, keep first or last, ignore case and spaces, and list what was removed. Runs locally in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"CSV Deduplicator (Remove Duplicate Rows by Key Columns)","url":"https://tools.sitefig.net/en/csv-deduplicator/","description":"Remove duplicate CSV rows by key columns, keep first or last, ignore case and spaces, and list what was removed. Runs locally in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the CSV.","Enter key columns by name or 1-based number, or leave empty to compare whole rows.","Choose first or last, and the case and trim options.","Pick cleaned CSV, removed rows or duplicate groups, then copy."],"keywords":"remove duplicate rows csv, csv deduplicate by column, csv unique rows, dedupe email list","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"CSV","item":"https://tools.sitefig.net/en/#csv"},{"@type":"ListItem","position":3,"name":"CSV Deduplicator (Remove Duplicate Rows by Key Columns)","item":"https://tools.sitefig.net/en/csv-deduplicator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which row is kept?","acceptedAnswer":{"@type":"Answer","text":"The first match by default, or the last if you choose it. Kept rows stay in their original order."}},{"@type":"Question","name":"Can I use several key columns?","acceptedAnswer":{"@type":"Answer","text":"Yes, separate them with commas. A row is a duplicate only when all key values match."}},{"@type":"Question","name":"Are blank values duplicates?","acceptedAnswer":{"@type":"Answer","text":"Yes, two rows with an empty key are treated as the same key."}},{"@type":"Question","name":"Is anything uploaded?","acceptedAnswer":{"@type":"Answer","text":"No, everything runs in your browser."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#csv">CSV</a></li><li><span aria-current="page">CSV Deduplicator (Remove Duplicate Rows by Key Columns)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>CSV Deduplicator (Remove Duplicate Rows by Key Columns)</h1>
+<p class="lede">Removes duplicate rows from a CSV by comparing one or more key columns, or the whole row, and can show which rows were removed.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="csv-deduplicator" data-module="new08"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Exports from CRMs and mailing lists often contain the same person twice with small differences in case or spacing. Comparing only the whole line misses those. Comparing the key column, such as email, finds them.</p>
+<p>Choose the key columns by name or number, decide whether the first or last match is kept, and switch case and space handling. You can also view only the removed rows or a list of duplicate groups before you trust the result. Row order of the kept rows is unchanged.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the CSV.</li><li>Enter key columns by name or 1-based number, or leave empty to compare whole rows.</li><li>Choose first or last, and the case and trim options.</li><li>Pick cleaned CSV, removed rows or duplicate groups, then copy.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which row is kept?</summary><p>The first match by default, or the last if you choose it. Kept rows stay in their original order.</p></details>
+<details><summary>Can I use several key columns?</summary><p>Yes, separate them with commas. A row is a duplicate only when all key values match.</p></details>
+<details><summary>Are blank values duplicates?</summary><p>Yes, two rows with an empty key are treated as the same key.</p></details>
+<details><summary>Is anything uploaded?</summary><p>No, everything runs in your browser.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/csv-column-extractor/"><span class="link-card__title">CSV Column Extractor</span><span class="link-card__desc">Pick, reorder or drop CSV columns by header name or 1-based index (ranges like 2-4 work), optionally de-duplicate, and output CSV, one value per line or JSON.</span></a></li><li><a class="link-card" href="/en/csv-delimiter-converter/"><span class="link-card__title">CSV Delimiter Converter (Comma, Semicolon, Tab, Pipe)</span><span class="link-card__desc">Switch a CSV between comma, semicolon, tab and pipe delimiters. Quoted fields are parsed and re-quoted correctly, and the input delimiter can be detected.</span></a></li><li><a class="link-card" href="/en/csv-viewer/"><span class="link-card__title">CSV Viewer</span><span class="link-card__desc">View CSV as a sortable, filterable table. Open a file or paste text.</span></a></li><li><a class="link-card" href="/en/csv-column-profiler/"><span class="link-card__title">CSV Column Profiler (Types, Nulls, Unique, Min/Max)</span><span class="link-card__desc">Profile each column of a CSV: inferred type, empty count, distinct values, min / max / mean for numbers, shortest and longest text, and most frequent values.</span></a></li><li><a class="link-card" href="/en/csv-transpose/"><span class="link-card__title">CSV / TSV Transposer (Swap Rows and Columns)</span><span class="link-card__desc">Transpose a table: rows become columns and columns become rows. Handles quoted fields and ragged rows, for CSV, TSV or semicolon data.</span></a></li><li><a class="link-card" href="/en/csv-to-json/"><span class="link-card__title">CSV to JSON</span><span class="link-card__desc">Parse CSV (RFC 4180 quotes, any delimiter) into JSON with optional type inference.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

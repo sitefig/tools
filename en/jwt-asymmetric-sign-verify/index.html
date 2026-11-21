@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JWT Sign &amp; Verify with RS256, PS256, ES256 in the Browser | Free Tools</title>
+<meta name="description" content="Generate RSA or ECDSA key pairs, sign JWTs with a private key and verify them with a public key using WebCrypto. Keys stay in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/jwt-asymmetric-sign-verify/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/jwt-asymmetric-sign-verify/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/jwt-asymmetric-sign-verify/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="JWT Sign &amp; Verify with RS256, PS256, ES256 in the Browser | Free Tools">
+<meta property="og:description" content="Generate RSA or ECDSA key pairs, sign JWTs with a private key and verify them with a public key using WebCrypto. Keys stay in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/jwt-asymmetric-sign-verify/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="JWT Sign &amp; Verify with RS256, PS256, ES256 in the Browser | Free Tools">
+<meta name="twitter:description" content="Generate RSA or ECDSA key pairs, sign JWTs with a private key and verify them with a public key using WebCrypto. Keys stay in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"JWT Sign & Verify (RS256, PS256, ES256 and more)","url":"https://tools.sitefig.net/en/jwt-asymmetric-sign-verify/","description":"Generate RSA or ECDSA key pairs, sign JWTs with a private key and verify them with a public key using WebCrypto. Keys stay in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Pick an algorithm and generate a key pair.","Switch to sign, paste the payload and the private key.","Copy the token, or switch to verify and paste a token with the public key.","Never paste production private keys into a page you do not control."],"keywords":"jwt rs256, sign jwt online, verify jwt public key, es256 jwt, jwt key pair","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Hashing & JWT","item":"https://tools.sitefig.net/en/#hashing-and-jwt"},{"@type":"ListItem","position":3,"name":"JWT Sign & Verify (RS256, PS256, ES256 and more)","item":"https://tools.sitefig.net/en/jwt-asymmetric-sign-verify/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which algorithm should I use?","acceptedAnswer":{"@type":"Answer","text":"ES256 is compact and fast; RS256 is the most widely supported; PS256 is RSA with a modern padding scheme."}},{"@type":"Question","name":"My key says BEGIN RSA PRIVATE KEY.","acceptedAnswer":{"@type":"Answer","text":"That is the older PKCS#1 form. Convert it: openssl pkcs8 -topk8 -nocrypt -in key.pem -out pkcs8.pem."}},{"@type":"Question","name":"Does it check expiry?","acceptedAnswer":{"@type":"Answer","text":"No. Verify the claims in your application code."}},{"@type":"Question","name":"Is my data sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"The file is read in your browser and is not uploaded anywhere."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#hashing-and-jwt">Hashing &amp; JWT</a></li><li><span aria-current="page">JWT Sign &amp; Verify (RS256, PS256, ES256 and more)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>JWT Sign &amp; Verify (RS256, PS256, ES256 and more)</h1>
+<p class="lede">Create and check JSON Web Tokens signed with public-key algorithms (RS256/384/512, PS256/384/512, ES256/384/512).</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="jwt-asymmetric-sign-verify" data-module="gap2" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Choose generate, sign or verify. Generating creates a key pair and prints PKCS#8 and SPKI PEM plus the public JWK. Signing takes a JSON payload and a PKCS#8 private key (PEM or JWK) and returns the compact token; ECDSA signatures use the raw r||s form the JWS spec requires. Verifying checks the signature with a public key and shows the payload.</p>
+<p>The algorithm is chosen by you, never by the token header (a basic defence against algorithm-confusion attacks); verification checks the signature only, so real code must also check exp, nbf, iss and aud. Output was cross-checked with the jsonwebtoken library in both directions.</p>
+<p>The file is read in your browser and is not uploaded anywhere.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Pick an algorithm and generate a key pair.</li><li>Switch to sign, paste the payload and the private key.</li><li>Copy the token, or switch to verify and paste a token with the public key.</li><li>Never paste production private keys into a page you do not control.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which algorithm should I use?</summary><p>ES256 is compact and fast; RS256 is the most widely supported; PS256 is RSA with a modern padding scheme.</p></details>
+<details><summary>My key says BEGIN RSA PRIVATE KEY.</summary><p>That is the older PKCS#1 form. Convert it: openssl pkcs8 -topk8 -nocrypt -in key.pem -out pkcs8.pem.</p></details>
+<details><summary>Does it check expiry?</summary><p>No. Verify the claims in your application code.</p></details>
+<details><summary>Is my data sent anywhere?</summary><p>The file is read in your browser and is not uploaded anywhere.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/jwt-decode/"><span class="link-card__title">JWT Decoder</span><span class="link-card__desc">Decode a JWT header and payload with human-readable exp/iat/nbf. Does not verify the signature.</span></a></li><li><a class="link-card" href="/en/jwt-encode/"><span class="link-card__title">JWT Encoder / Signer</span><span class="link-card__desc">Create and sign a JWT with HS256, HS384 or HS512.</span></a></li><li><a class="link-card" href="/en/jwt-verify-hs/"><span class="link-card__title">JWT Verifier (HS256/384/512)</span><span class="link-card__desc">Verify a JWT signature with a shared secret and check exp/nbf.</span></a></li><li><a class="link-card" href="/en/rsa-key-pair-generator/"><span class="link-card__title">RSA Key Pair Generator</span><span class="link-card__desc">Generate an RSA key pair with WebCrypto: PKCS#8 private key and SPKI public key as PEM (optional PKCS#1 format). Nothing is uploaded.</span></a></li><li><a class="link-card" href="/en/ed25519-key-generator/"><span class="link-card__title">Ed25519 Key Pair Generator</span><span class="link-card__desc">Generate an Ed25519 key pair with WebCrypto: PKCS#8 private PEM, SPKI public PEM, OpenSSH public key line and raw hex. Keys never leave your browser.</span></a></li><li><a class="link-card" href="/en/jwt-expiry-calculator/"><span class="link-card__title">JWT Expiry Calculator</span><span class="link-card__desc">Check exp / nbf / iat of one or more JWTs against now (or a time you choose) with optional clock-skew leeway: remaining lifetime, total lifetime, and warnings. The signature is not verified.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

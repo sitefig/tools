@@ -1,0 +1,45 @@
+{
+ "id": "helm-chart-scaffolder",
+ "seoTitle": "Free Helm Chart Scaffolder: Deployment and Service",
+ "metaDescription": "Generate a minimal Helm chart with Chart.yaml, values.yaml, helpers, Deployment, Service and optional Ingress. Free and runs in your browser.",
+ "intro": "Enter a chart name, image and port and get the files for a minimal Helm chart: Chart.yaml, values.yaml, helpers, a Deployment, a Service and an optional Ingress.",
+ "why": "helm create produces a large chart full of options you may not need, and you must have Helm installed to run it. For a small internal service, a trimmed-down chart with one Deployment, one Service and a few values is easier to read and maintain.\n\nThis scaffolder writes that smaller layout, with named templates in _helpers.tpl for labels and selectors, resource requests and limits in values, and an Ingress guarded by ingress.enabled. Copy each file into the right folder, then run helm lint. The text is created locally in your browser.",
+ "howTo": [
+  "Enter the chart name (a lowercase DNS label), image repository, tag and container port.",
+  "Set replicas and tick the Ingress template if you want one, with a host name.",
+  "Copy each file block into your chart folder, then run helm lint and helm template."
+ ],
+ "faq": [
+  {
+   "q": "What if I leave the image tag blank?",
+   "a": "The Deployment template falls back to the chart appVersion, so the tag follows the version you set in Chart.yaml. That is a common Helm convention."
+  },
+  {
+   "q": "Does it create a ZIP or folders?",
+   "a": "No. It prints every file under a heading with its path. You create the files yourself and paste each section into them."
+  },
+  {
+   "q": "Why is the chart name restricted?",
+   "a": "It must be a lowercase DNS label, using letters, digits and dashes, because the name flows into resource names that Kubernetes validates."
+  },
+  {
+   "q": "Is it production ready?",
+   "a": "It is a minimal starting point. There are no probes, security context or autoscaling, so add them before running it in a shared cluster."
+  }
+ ],
+ "related": [
+  "helm-values-evaluator",
+  "kubernetes-deployment-generator",
+  "kubernetes-ingress-generator",
+  "k8s-manifest-validator",
+  "docker-compose-to-k8s",
+  "k8s-resource-calculator"
+ ],
+ "keywords": [
+  "helm chart generator",
+  "helm chart scaffold",
+  "free helm chart template",
+  "create helm chart online",
+  "minimal helm chart"
+ ]
+}

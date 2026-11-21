@@ -1,0 +1,38 @@
+{
+ "id": "gsc-page-indexing-explainer",
+ "seoTitle": "Search Console Page Indexing Explainer: Why Pages Are Not Indexed",
+ "metaDescription": "Paste the \"Why pages aren't indexed\" table and get every reason explained, rated normal or needs action, with the fix, sorted by page count.",
+ "intro": "Understand each reason in the Search Console Pages report and know which ones actually need action.",
+ "why": "The Pages report lists reasons such as \"Crawled - currently not indexed\", \"Duplicate without user-selected canonical\" or \"Alternate page with proper canonical tag\", and many are expected behaviour. This explainer takes your table (CSV or plain \"reason, count\" lines), explains each reason, marks it normal, review or fix, gives the usual remedy and totals how many URLs fall in each class.\n\nWording follows the English interface; other languages will not match. The tool cannot see your pages or the example URLs, so inspect those in Search Console before changing anything.",
+ "howTo": [
+  "Open Search Console > Pages, scroll to \"Why pages aren't indexed\" and copy or export the table.",
+  "Paste it here.",
+  "Start with the FIX class, then review the largest groups."
+ ],
+ "faq": [
+  {
+   "q": "Is \"not indexed\" always bad?",
+   "a": "No. Redirects, canonical alternates, noindex pages and 404s are meant to be excluded."
+  },
+  {
+   "q": "What should I do about \"Discovered - currently not indexed\"?",
+   "a": "Improve internal links to those URLs, remove low-value pages and make sure the server is fast."
+  },
+  {
+   "q": "Are my URLs uploaded?",
+   "a": "No; only the table you paste is processed, in your browser."
+  }
+ ],
+ "related": [
+  "soft-404-detector",
+  "sitemap-validator",
+  "seo-robots-noindex-simulator",
+  "robots-tester",
+  "canonical-generator"
+ ],
+ "keywords": [
+  "page indexing report explained",
+  "crawled currently not indexed",
+  "search console pages report"
+ ]
+}

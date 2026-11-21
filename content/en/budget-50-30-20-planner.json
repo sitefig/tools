@@ -1,0 +1,40 @@
+{
+ "id": "budget-50-30-20-planner",
+ "seoTitle": "50/30/20 Budget Planner With Spending Check",
+ "metaDescription": "Split take-home pay into needs, wants and savings and compare your actual spending with each share. Free and private.",
+ "intro": "Target amounts for needs, wants and savings, checked against the spending you paste in.",
+ "why": "The 50/30/20 rule is a simple starting point: half for needs, 30% for wants, 20% for savings and debt repayment. The shares are editable here, because high-rent cities often push needs above half.\n\nPaste your spending as category, label and amount lines to see which category is over or under. The sheet is not stored.",
+ "howTo": [
+  "Enter monthly take-home pay.",
+  "Adjust the percentages if needed.",
+  "Paste spending lines with need, want or save.",
+  "Read the difference per category."
+ ],
+ "faq": [
+  {
+   "q": "What counts as a need?",
+   "a": "Costs you must pay: housing, food, utilities, insurance, minimum debt payments, transport to work."
+  },
+  {
+   "q": "Do debt repayments go in savings?",
+   "a": "The rule groups extra debt repayment with savings. Minimum payments count as needs."
+  },
+  {
+   "q": "Is data saved?",
+   "a": "Nothing you type leaves your browser."
+  }
+ ],
+ "related": [
+  "net-worth-calculator",
+  "emergency-fund-calculator",
+  "savings-goal",
+  "bill-tracker",
+  "subscription-cost-tracker",
+  "salary-hourly"
+ ],
+ "keywords": [
+  "50/30/20 budget",
+  "budget planner",
+  "spending check"
+ ]
+}

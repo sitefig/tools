@@ -1,0 +1,46 @@
+{
+ "id": "security-headers-generator",
+ "seoTitle": "Free Security Headers Generator: HSTS, CSP, X-Frame",
+ "metaDescription": "Generate HSTS, CSP, X-Frame-Options and related security headers for Apache, NGINX, Netlify or Cloudflare. Free; in your browser.",
+ "intro": "Choose a platform and values for CSP, HSTS and X-Frame-Options to generate security header configuration for Apache, NGINX, Netlify _headers or a Cloudflare Worker.",
+ "why": "Security headers are cheap protection against clickjacking, content sniffing and downgrade attacks, but their syntax differs between servers, and a wrong HSTS or CSP setting can lock visitors out or break the page.\n\nThis generator produces a set of headers in the format for Apache, NGINX, Netlify or a Cloudflare Worker. You enter your Content-Security-Policy, the HSTS max-age, whether to include preload, and the X-Frame-Options value. The output includes a reminder to test CSP in Report-Only mode first, and a warning about HSTS preload, which is difficult to undo. Check the result with the headers analyzer after deployment. Generation happens in your browser, and nothing is sent to a server.",
+ "howTo": [
+  "Choose your platform: Apache, NGINX, Netlify or Cloudflare.",
+  "Enter your Content-Security-Policy and the HSTS max-age, and decide on preload.",
+  "Choose SAMEORIGIN or DENY for X-Frame-Options.",
+  "Run the tool, add the configuration to your server and test with the headers analyzer."
+ ],
+ "faq": [
+  {
+   "q": "Is HSTS preload safe to enable?",
+   "a": "Only when every subdomain supports HTTPS permanently. Preloading puts your domain in browser lists and removal is slow, so read the preload requirements first and start with a short max-age."
+  },
+  {
+   "q": "Should I start with a strict CSP?",
+   "a": "Start with Report-Only to see what would be blocked. A CSP that is too strict breaks inline scripts and third-party widgets, so tune it before enforcing."
+  },
+  {
+   "q": "Does X-Frame-Options still matter?",
+   "a": "CSP frame-ancestors is the modern way, but X-Frame-Options is still honoured by older browsers, so many sites send both."
+  },
+  {
+   "q": "Is my configuration uploaded?",
+   "a": "No. Everything runs in your browser and nothing you paste is uploaded, stored or sent to a server, so staging or confidential configuration is safe to use here."
+  }
+ ],
+ "related": [
+  "csp-builder",
+  "csp-analyzer",
+  "http-headers-analyzer",
+  "htaccess-generator",
+  "nginx-security-conf-generator",
+  "cache-control-builder"
+ ],
+ "keywords": [
+  "security headers generator",
+  "hsts header generator",
+  "x-frame-options generator",
+  "nginx security headers",
+  "netlify headers file generator"
+ ]
+}

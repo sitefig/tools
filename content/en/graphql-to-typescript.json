@@ -1,0 +1,45 @@
+{
+ "id": "graphql-to-typescript",
+ "seoTitle": "Free GraphQL Schema to TypeScript Types Converter",
+ "metaDescription": "Convert GraphQL SDL into TypeScript interfaces and types: objects, inputs, enums, unions and interfaces. Free, runs in your browser.",
+ "intro": "Converts GraphQL SDL (types, inputs, interfaces, enums, unions, scalars and descriptions) into TypeScript interfaces and types. Nullable output fields become \"T | null\" and nullable inputs optional.",
+ "why": "Code generators for GraphQL are powerful but need a config file, a build step and often a running server. When you only want the types for a quick script, a front-end mock or a code review, that is heavy. Paste the schema here and get TypeScript out. Interfaces are inlined into the types that implement them, enums can be emitted as TypeScript enums or string unions, and descriptions are kept as comments. Query and Mutation root types are skipped unless you ask for them, and field arguments are ignored, so this produces data shapes, not operation types. For a production project you probably still want a full codegen tool. Your schema is processed in your browser.",
+ "howTo": [
+  "Paste your GraphQL SDL into the input box.",
+  "Tick the options to include Query, Mutation and Subscription types, or to emit TypeScript enums.",
+  "Copy the generated TypeScript into your project."
+ ],
+ "faq": [
+  {
+   "q": "How are nullable fields typed?",
+   "a": "Output fields that can be null become \"T | null\". Nullable input fields become optional properties. Non-null fields are required."
+  },
+  {
+   "q": "What happens to interfaces and unions?",
+   "a": "Interface fields are inlined into each implementing type, and unions become TypeScript union types of the member types."
+  },
+  {
+   "q": "Are field arguments or operations typed?",
+   "a": "No. Arguments are ignored, and Query, Mutation and Subscription roots are skipped by default. The tool outputs the shapes of data, not variables for operations."
+  },
+  {
+   "q": "What do custom scalars become?",
+   "a": "Custom scalars have no known representation, so they are typed as string by default. Replace them with your own types where needed."
+  }
+ ],
+ "related": [
+  "graphql-schema-to-zod",
+  "json-to-graphql-schema",
+  "graphql-query-formatter",
+  "json-to-graphql-query",
+  "typescript-to-json-schema",
+  "openapi-to-typescript-fetch"
+ ],
+ "keywords": [
+  "graphql to typescript",
+  "graphql schema to ts types",
+  "convert graphql sdl to typescript",
+  "free graphql type generator",
+  "graphql codegen alternative"
+ ]
+}

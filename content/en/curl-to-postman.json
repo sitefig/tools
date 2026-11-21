@@ -1,0 +1,45 @@
+{
+ "id": "curl-to-postman",
+ "seoTitle": "Free cURL to Postman Collection Converter Online",
+ "metaDescription": "Convert one or more curl commands into a Postman Collection v2.1 JSON file with headers, query params, body and basic auth. Free, in your browser.",
+ "intro": "Converts one or more curl commands into an importable Postman Collection v2.1 JSON, keeping headers, query parameters, raw, URL-encoded or form-data bodies and basic auth.",
+ "why": "Teams share API calls as curl snippets in tickets, chat and documentation. Turning ten of them into Postman requests by copying fields one at a time is a waste of an afternoon. Paste the commands here, separated by blank lines, and you get a single collection file that Postman can import, with one request per command. Headers, the URL and its query string, the body type and basic authentication are carried across. It is handy for building a test collection from an incident ticket, from README examples or from a browser's \"Copy as cURL\" output. The conversion is done locally, which matters when your commands contain real tokens: they stay on your machine until you decide to import the file.",
+ "howTo": [
+  "Paste one or more curl commands, separating separate requests with a blank line.",
+  "Run the conversion to generate the collection JSON.",
+  "Save it as a .json file and use Import in Postman, then replace any tokens with variables."
+ ],
+ "faq": [
+  {
+   "q": "How are multiple commands separated?",
+   "a": "Each block separated by a blank line becomes one request in the collection. Line continuations with a backslash inside a block are joined."
+  },
+  {
+   "q": "Which body types are supported?",
+   "a": "Raw bodies such as JSON, URL-encoded form data and multipart form-data from -F fields. Basic authentication from -u becomes a Postman auth setting."
+  },
+  {
+   "q": "Does it keep my tokens?",
+   "a": "Headers are copied as written, including any Authorization value. Replace real secrets with Postman variables before sharing the collection."
+  },
+  {
+   "q": "Is the output compatible with other tools?",
+   "a": "It targets Collection v2.1, which Postman imports. Other tools that read Postman collections, such as Insomnia or Bruno, can often import it too, but this is not tested here."
+  }
+ ],
+ "related": [
+  "postman-to-openapi",
+  "openapi-to-postman",
+  "postman-to-curl",
+  "curl-to-har",
+  "curl-to-more-languages",
+  "curl-builder"
+ ],
+ "keywords": [
+  "curl to postman",
+  "convert curl to postman collection",
+  "import curl into postman",
+  "free curl postman converter",
+  "curl commands to collection json"
+ ]
+}

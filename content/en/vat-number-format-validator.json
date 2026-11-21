@@ -1,0 +1,46 @@
+{
+ "id": "vat-number-format-validator",
+ "seoTitle": "Free EU VAT Number Format Validator",
+ "metaDescription": "Check the format of EU VAT numbers by country prefix, one per line. Format only, no registry lookup. Free and runs in your browser.",
+ "intro": "Paste EU VAT numbers one per line and see whether each matches the format used by its country prefix. This checks the pattern only, not registration.",
+ "why": "Invoicing forms, checkout pages and supplier imports all collect VAT numbers, and a lot of them arrive with the wrong shape: missing prefix, extra dots, a letter in the wrong place. Catching those before submission saves a failed lookup or a rejected invoice.\n\nThis tool normalises each line by removing spaces, dots and hyphens, reads the two-letter country prefix and tests the rest against that country's pattern. It supports the EU member prefixes, including EL for Greece. It is a first-pass format check. It does not call VIES, so it cannot confirm that a number is registered, active or belongs to the named company, and some countries have checksum rules that are not applied. Your data stays in the browser.",
+ "howTo": [
+  "Paste VAT numbers into the box, one per line, each starting with the country prefix.",
+  "Run the check.",
+  "Read the result next to each number: format OK or wrong format for that country.",
+  "Verify important numbers against the official VIES service."
+ ],
+ "faq": [
+  {
+   "q": "Does this confirm a business is VAT registered?",
+   "a": "No. It only checks that the pattern fits the country. To confirm registration you need the European Commission's VIES service or your tax authority, which this page does not contact."
+  },
+  {
+   "q": "How do I write Greece and Northern Ireland?",
+   "a": "Greece uses the prefix EL, not GR. Northern Ireland uses XI, which is not in this tool's list, so those numbers are reported as unknown prefix. Other non-EU prefixes are also flagged."
+  },
+  {
+   "q": "Are spaces and dots allowed?",
+   "a": "Yes. Spaces, dots and hyphens are removed before checking, so DE 123.456.789 is treated like DE123456789. The original text is still shown in the result."
+  },
+  {
+   "q": "Why can a number pass but still be wrong?",
+   "a": "Format checks cannot detect a mistyped digit that keeps the right pattern. Several countries also use checksum digits that this tool does not verify, so treat OK as plausible, not proven."
+  }
+ ],
+ "related": [
+  "vat-calculator",
+  "iban-validator",
+  "luhn-validator",
+  "check-digit-tool",
+  "invoice-generator",
+  "percentage-calculator"
+ ],
+ "keywords": [
+  "eu vat number validator",
+  "vat number format check",
+  "validate vat id online",
+  "vat number checker",
+  "free vat format validator"
+ ]
+}

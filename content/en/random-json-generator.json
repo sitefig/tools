@@ -1,0 +1,46 @@
+{
+ "id": "random-json-generator",
+ "seoTitle": "Free Random JSON Generator - Nested, Seeded",
+ "metaDescription": "Generate random nested JSON with a chosen depth, width and seed. Useful for testing parsers, formatters and UIs. Free, runs in your browser.",
+ "intro": "Create random but repeatable JSON documents. Set how deep it nests, how many keys or items each level has, and the seed.",
+ "why": "Testing a JSON viewer, a diff tool, a parser or a table component needs input with real variety: nested objects, arrays, strings, numbers, booleans and nulls. Hand-writing that structure takes time, and copying a real payload may expose private data.\n\nThis generator builds a document from scratch each time. Depth controls how far it nests, width caps the number of keys or items per level, and the seed makes the result repeatable, so a bug report can say which seed triggered it. You can pick the indentation, including none for a compact payload. Values include integers, decimals, short phrases, UUID-style strings and null. Use it for fuzzing, benchmarking formatters or filling a demo screen quickly.",
+ "howTo": [
+  "Set the depth from 1 to 6.",
+  "Set the maximum number of keys or items per level, from 1 to 8.",
+  "Enter a seed to repeat a result, and choose the indent.",
+  "Copy the generated JSON."
+ ],
+ "faq": [
+  {
+   "q": "Is the output always the same for the same seed?",
+   "a": "Yes. The same seed, depth and width return the same document every time. Change the seed to get a different structure. Numeric seeds are used directly and text seeds are hashed into a number."
+  },
+  {
+   "q": "How big can the output get?",
+   "a": "Depth 6 with width 8 can grow into thousands of values, because each level may branch. For small samples keep depth at 3 or 4. The limits are capped at 6 and 8 to protect your browser."
+  },
+  {
+   "q": "Is it valid JSON?",
+   "a": "Yes, the output is produced by JSON.stringify, so it parses anywhere. Setting indent to 0 gives a single compact line, useful for size tests."
+  },
+  {
+   "q": "Can I define my own fields?",
+   "a": "Not here. This tool makes arbitrary structures. If you need specific field names and types such as email or date, use the mock data generator, which takes a schema."
+  }
+ ],
+ "related": [
+  "mock-data-generator",
+  "json-format",
+  "json-size-analyzer",
+  "json-minify",
+  "json-tree",
+  "json-schema-generator"
+ ],
+ "keywords": [
+  "random json generator",
+  "generate random json online",
+  "nested json test data",
+  "json fuzz data",
+  "free json sample generator"
+ ]
+}

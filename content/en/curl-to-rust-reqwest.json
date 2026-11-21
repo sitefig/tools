@@ -1,0 +1,43 @@
+{
+ "id": "curl-to-rust-reqwest",
+ "seoTitle": "Free cURL to Rust (reqwest) Converter",
+ "metaDescription": "Convert a curl command into async Rust code using the reqwest crate, with headers, body, auth and multipart. Free, runs in your browser.",
+ "intro": "Paste a curl command and get async Rust code using the reqwest crate, covering the method, headers, body, basic auth, multipart form fields and the skip-verify and follow-redirect flags.",
+ "why": "API documentation almost always shows an example in curl. If your service is written in Rust, you then have to translate each flag into reqwest builder calls: the client, the method, every header, the body and the authentication. It is not hard, but it is repetitive, and it is easy to forget a header or send a form as plain text.\n\nThis converter does that translation, so you can start from a working request and then add error handling and types. It supports the common curl options only. Proxies, certificates and retries are ignored, and you need to configure those yourself. The command may contain a token or a password, which is a good reason that the conversion happens only in your browser.",
+ "howTo": [
+  "Paste your curl command into the input box.",
+  "Read the generated async Rust code in the output.",
+  "Add the reqwest and tokio crates to Cargo.toml if you have not already.",
+  "Copy the code into your project and replace placeholder values and error handling as needed."
+ ],
+ "faq": [
+  {
+   "q": "Which curl flags are supported?",
+   "a": "The method, headers, request body, basic auth, multipart form fields with -F, the insecure flag and following redirects. Other options such as proxies, certificates and retries are ignored, so the request may behave differently."
+  },
+  {
+   "q": "Does the output compile as it is?",
+   "a": "It is meant to be a good starting point, using async reqwest. You still need the crate dependencies and an async runtime such as tokio, and you may want to replace unwrap calls with proper error handling."
+  },
+  {
+   "q": "Is it safe to paste a command with a real token?",
+   "a": "The conversion is done in your browser and nothing is uploaded, but the generated code will contain your token. Replace it with an environment variable before you commit the code."
+  }
+ ],
+ "related": [
+  "curl-to-go-http",
+  "curl-to-code",
+  "curl-to-more-languages",
+  "curl-to-ai-sdk",
+  "fetch-to-curl",
+  "curl-builder"
+ ],
+ "keywords": [
+  "curl to rust",
+  "curl to reqwest",
+  "convert curl to rust code",
+  "rust http request from curl",
+  "reqwest example generator",
+  "free curl converter"
+ ]
+}

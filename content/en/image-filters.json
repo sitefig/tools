@@ -1,0 +1,46 @@
+{
+  "id": "image-filters",
+  "seoTitle": "Free Image Filters: Grayscale, Sepia, Blur and More",
+  "metaDescription": "Apply grayscale, sepia, brightness, contrast, saturation, hue rotation, blur and invert to images and download the result. Free, in your browser.",
+  "intro": "Applies grayscale, sepia, brightness, contrast, saturation, hue rotation, blur and invert to your images using canvas filters, then saves them as PNG, JPEG or WebP.",
+  "why": "Sometimes you only need a quick adjustment: a black-and-white version of a logo, a brightened screenshot, a blurred background or an inverted diagram for dark mode. Opening a full photo editor is overkill, and online filter sites often upload your picture.\n\nSet the percentage for each effect, leave the rest at their defaults and run it. The filters are combined in one pass and the result is saved as a new file. They rely on the canvas filter feature of your browser, which older versions of Safari do not support, in which case the output may look unchanged. If you only want the CSS for a web page, use the CSS filter generator instead. Nothing leaves your device.",
+  "howTo": [
+    "Choose one or more image files.",
+    "Set the filter amounts, for example grayscale 100 for black and white.",
+    "Pick the output format and quality.",
+    "Run it and download the filtered images."
+  ],
+  "faq": [
+    {
+      "q": "What are the default values?",
+      "a": "Brightness, contrast and saturate are 100 percent, which means no change. Grayscale, sepia, invert, blur and hue are 0. Only the settings you change affect the picture."
+    },
+    {
+      "q": "Why does nothing change in my browser?",
+      "a": "The tool uses the canvas filter property, which older Safari versions do not support. Try a current Chrome, Edge, Firefox or a recent Safari."
+    },
+    {
+      "q": "Are the effects applied in a fixed order?",
+      "a": "Yes: grayscale, sepia, brightness, contrast, saturate, hue rotation, blur, then invert, all in a single pass. A different order would give slightly different results."
+    },
+    {
+      "q": "Is it lossy?",
+      "a": "The effects are applied to the pixels and the file is encoded again, so a JPEG or WebP output uses lossy compression. PNG output is lossless."
+    }
+  ],
+  "related": [
+    "css-filter-generator",
+    "image-watermark",
+    "image-rotate-flip",
+    "image-compressor",
+    "color-blindness-simulator",
+    "image-format-converter"
+  ],
+  "keywords": [
+    "image filters online",
+    "black and white image converter",
+    "sepia filter online",
+    "blur image online",
+    "free photo filter tool"
+  ]
+}

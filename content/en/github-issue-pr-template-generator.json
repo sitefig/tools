@@ -1,0 +1,43 @@
+{
+ "id": "github-issue-pr-template-generator",
+ "seoTitle": "Free GitHub Issue & PR Template Generator",
+ "metaDescription": "Generate GitHub issue forms, Markdown issue templates, a pull request template, config.yml and SECURITY.md. Free, runs in your browser.",
+ "intro": "Choose a template type and get ready-to-commit files for the .github folder: YAML issue forms, classic Markdown issue templates, a pull request template, config.yml and a SECURITY.md stub.",
+ "why": "A repository without templates collects vague bug reports: no version, no steps, no expected result. Maintainers then spend their time asking the same follow-up questions. Issue templates fix this, but the YAML issue form syntax is easy to get wrong and the folder layout is easy to forget.\n\nThis generator writes templates for bug reports and feature requests, either as structured forms or as Markdown, plus a pull request checklist, a config file that disables blank issues and a basic security policy. Set your project name, default labels and a security contact, and copy the file contents into the right paths. Edit the wording to suit your project. Nothing is uploaded.",
+ "howTo": [
+  "Choose a template type, or All of them to get every file.",
+  "Enter your project name, default labels and a security contact address.",
+  "Read the output and note the file path shown for each template.",
+  "Copy each file into your repository under the .github folder and commit it."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between issue forms and Markdown templates?",
+   "a": "Issue forms are YAML files that show real form fields with required checks, so reporters cannot skip key details. Markdown templates pre-fill a text box that users can edit freely or delete."
+  },
+  {
+   "q": "Where do the files go?",
+   "a": "Issue templates go in .github/ISSUE_TEMPLATE, the pull request template in .github or its docs variant, and SECURITY.md in the repository root or .github. The output shows the path for each file."
+  },
+  {
+   "q": "Do I need to change the generated text?",
+   "a": "Yes. The templates are a sensible start, not a rule. Adjust the questions to your project, add environment fields that matter to you, and replace the placeholder security contact with a real one."
+  }
+ ],
+ "related": [
+  "gitignore-generator",
+  "conventional-commit-generator",
+  "readme-generator",
+  "license-generator",
+  "github-actions-generator",
+  "dependabot-config-generator"
+ ],
+ "keywords": [
+  "github issue template generator",
+  "github pull request template",
+  "issue forms yaml generator",
+  "github security.md generator",
+  "github config.yml issue templates",
+  "free github template tool"
+ ]
+}

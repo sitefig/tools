@@ -1,0 +1,46 @@
+{
+ "id": "rlp-codec",
+ "seoTitle": "Free RLP Encoder and Decoder for Ethereum",
+ "metaDescription": "Encode JSON into Ethereum RLP hex, or decode RLP hex into nested values, with checks for non-canonical encodings. Free, runs in your browser.",
+ "intro": "Switch between encode and decode. In encode mode, give a JSON value and get RLP hex; in decode mode, paste RLP hex and get nested hex strings back.",
+ "why": "Recursive Length Prefix is the serialisation format Ethereum uses for transactions, blocks and trie nodes, and it is also the first step in working out a CREATE contract address. Reading a raw transaction by eye is hopeless, since the length prefixes are mixed in with the data. This tool lets you build RLP from a JSON structure, where strings beginning 0x are raw bytes, other strings are UTF-8 text, numbers are non-negative integers and arrays are lists, or take apart a hex blob into nested items. The decoder rejects non-canonical forms, such as leading zeros in lengths or single bytes wrapped when they need not be, and trailing data after the item. All of it runs in your browser.",
+ "howTo": [
+  "Choose encode or decode.",
+  "Enter JSON such as [\"cat\", \"dog\", 1024] to encode, or RLP hex to decode.",
+  "Read the hex output or the nested JSON, and copy it."
+ ],
+ "faq": [
+  {
+   "q": "How are JSON values mapped to bytes when encoding?",
+   "a": "Strings starting with 0x become raw bytes, other strings become UTF-8 bytes, numbers become the shortest big-endian integer, and arrays become RLP lists. Zero encodes as an empty byte string."
+  },
+  {
+   "q": "Why can't I encode a large number?",
+   "a": "JSON numbers must be non-negative safe integers. For bigger values, write them as a hex string such as 0x0de0b6b3a7640000, which is treated as bytes."
+  },
+  {
+   "q": "What does the decoder do with invalid input?",
+   "a": "It reports the first problem: truncated data, lengths larger than the input, non-canonical lengths or trailing bytes. Strict checks help catch malformed transactions."
+  },
+  {
+   "q": "Does decoding show text or numbers?",
+   "a": "No. Every item comes back as a hex string, since RLP itself carries no type information. You decide whether bytes mean a number, an address or text."
+  }
+ ],
+ "related": [
+  "evm-create-address",
+  "abi-encoder-decoder",
+  "ethereum-keccak256-hasher",
+  "hex-text",
+  "solidity-storage-slot",
+  "json-format"
+ ],
+ "keywords": [
+  "rlp encoder",
+  "rlp decoder online",
+  "free rlp tool",
+  "ethereum rlp",
+  "recursive length prefix",
+  "decode rlp hex"
+ ]
+}

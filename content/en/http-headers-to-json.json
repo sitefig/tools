@@ -1,0 +1,45 @@
+{
+ "id": "http-headers-to-json",
+ "seoTitle": "Free HTTP Headers to JSON Converter Online",
+ "metaDescription": "Convert raw HTTP request or response headers, with or without a status line, into a JSON object. Repeated headers become arrays. Free, in-browser.",
+ "intro": "Paste raw HTTP headers, optionally with a status or request line, and get a JSON object. Repeated headers such as Set-Cookie become arrays.",
+ "why": "Headers copied from browser developer tools, curl -i output or a log are plain text lines, while test code, mock servers and API clients want a JSON object. Retyping each line into quotes and commas is dull and gets cookies and folded lines wrong.\n\nThis converter reads each Name: value line, keeps the value after the first colon intact, joins folded continuation lines, and turns repeated headers into an array so no Set-Cookie is lost. A leading status line such as HTTP/1.1 200 OK, or a request line such as GET /path HTTP/1.1, is stored under _status. You can lowercase names to match how HTTP/2 shows them. It only converts format and does not interpret the headers.",
+ "howTo": [
+  "Paste the raw headers, with or without the first status line.",
+  "Tick lowercase names if you want HTTP/2 style keys.",
+  "Copy the JSON object into your test or tool."
+ ],
+ "faq": [
+  {
+   "q": "What happens to headers that appear twice?",
+   "a": "They become an array of values in the order they appear. This matters for Set-Cookie, which must not be merged into one comma-separated line."
+  },
+  {
+   "q": "Where does the status line go?",
+   "a": "Into a key called _status at the top of the object, for both response lines like HTTP/1.1 404 Not Found and request lines like POST /api HTTP/1.1."
+  },
+  {
+   "q": "Can it handle folded headers?",
+   "a": "Yes. A line starting with whitespace is treated as a continuation of the previous header and is joined to it with a single space."
+  },
+  {
+   "q": "What if a line has no colon?",
+   "a": "The tool stops with an error quoting the line, so a stray body line or a bad copy is easy to find. Remove the body before converting."
+  }
+ ],
+ "related": [
+  "http-headers-analyzer",
+  "http-wire-format",
+  "cors-preflight-inspector",
+  "curl-builder",
+  "security-headers-generator",
+  "cookie-flag-analyzer"
+ ],
+ "keywords": [
+  "http headers to json",
+  "convert headers to json online",
+  "raw headers parser",
+  "free http header converter",
+  "curl headers to json"
+ ]
+}

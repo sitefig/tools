@@ -1,0 +1,39 @@
+{
+ "id": "credit-note-generator",
+ "seoTitle": "Credit Note Generator: Printable and Linked to Invoice",
+ "metaDescription": "Create a printable credit note that names the original invoice and credits lines with negative amounts and VAT per rate.",
+ "intro": "A printable credit note with negative amounts and a VAT summary.",
+ "why": "A credit note corrects or cancels an invoice. It should name the original invoice and show the credited amounts and VAT.\n\nFill in your details and the credited lines. The preview uses negative amounts grouped by VAT rate, ready to print or save as PDF with your browser.",
+ "howTo": [
+  "Enter your details, the customer, the credit note number and the original invoice.",
+  "Add credited lines as description, quantity, price, VAT percent.",
+  "Print or save as PDF."
+ ],
+ "faq": [
+  {
+   "q": "Must it show a reason?",
+   "a": "Many countries expect one. A field is included."
+  },
+  {
+   "q": "Does it send anything?",
+   "a": "Nothing you type leaves your browser."
+  },
+  {
+   "q": "Does it check legal fields?",
+   "a": "No. See the EU invoice requirements checker."
+  }
+ ],
+ "related": [
+  "invoice-generator",
+  "quotation-generator",
+  "receipt-generator",
+  "invoice-number-generator",
+  "eu-invoice-requirements-checker",
+  "vat-calculator"
+ ],
+ "keywords": [
+  "credit note generator",
+  "credit memo",
+  "invoice correction"
+ ]
+}

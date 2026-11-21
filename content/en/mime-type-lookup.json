@@ -1,0 +1,47 @@
+{
+ "id": "mime-type-lookup",
+ "seoTitle": "Free MIME Type Lookup by File Extension",
+ "metaDescription": "Find the MIME type for a file extension, or the extension for a MIME type, from a searchable list of web, image, audio, video and document formats. Free.",
+ "intro": "Look up the MIME type for an extension like .webp, or work out the extension for a type like application/json. The list covers common web, image, audio, video, font and document formats.",
+ "why": "A wrong Content-Type is a classic cause of broken downloads and silent failures: fonts that do not load, scripts blocked by nosniff, a PDF that opens as text, a WebAssembly file that cannot be streamed. Remembering the exact type for every extension is unrealistic.\n\nThis lookup lists around a hundred extensions with the MIME type and a short description. Type an extension, part of a type or a word like \"video\" and the list narrows. Use it when setting up a web server, an upload validator or a storage bucket. It lists common types, so for anything exotic check the IANA registry.",
+ "howTo": [
+  "Open the tool to see the whole list.",
+  "Type an extension such as .woff2, or part of a MIME type such as image/ or json.",
+  "Read the matching rows, which show extension, MIME type and description.",
+  "Copy the MIME type into your server configuration or upload rules."
+ ],
+ "faq": [
+  {
+   "q": "Is the correct JavaScript type text/javascript?",
+   "a": "Yes. The current standard type is text/javascript. The older application/javascript and application/x-javascript are obsolete aliases that you may still see, and servers should send text/javascript."
+  },
+  {
+   "q": "Why do some extensions map to several types?",
+   "a": "Some formats have a registered type plus older aliases, and a few extensions are shared. For example .pem appears as a certificate type and as a generic PEM file. Choose the one your client expects."
+  },
+  {
+   "q": "What should I send for an unknown file?",
+   "a": "Use application/octet-stream, which means arbitrary binary data. Browsers will usually offer to download it. Send a specific type whenever you know it, so the file opens properly."
+  },
+  {
+   "q": "Does it cover every type?",
+   "a": "No, it covers the common ones, roughly a hundred. The official registry kept by IANA lists many more, including vendor-specific types."
+  }
+ ],
+ "related": [
+  "http-methods-headers",
+  "http-headers-analyzer",
+  "image-format-converter",
+  "http-status-reference",
+  "cache-control-builder",
+  "nginx-config-generator"
+ ],
+ "keywords": [
+  "mime type lookup",
+  "content type for file extension",
+  "mime types list",
+  "free mime type finder",
+  "application/json mime type",
+  "extension to mime type"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "jobposting-schema-generator",
+ "seoTitle": "JobPosting Schema Generator With Salary and Remote Work",
+ "metaDescription": "Build JobPosting JSON-LD with employment type, salary range, remote work (TELECOMMUTE), applicant country and validThrough. Validates enums.",
+ "intro": "Creates JobPosting markup with location or remote settings, base salary range per hour, day, week, month or year, employment type and expiry date.",
+ "why": "Google's job posting rules have enumerated values that are easy to misspell: FULL_TIME, PART_TIME, CONTRACTOR and so on, and salary units in capitals. The tool rejects values outside the documented lists, checks the currency, and makes sure the salary range is not reversed.\n\nRemote jobs use jobLocationType TELECOMMUTE with the countries where applicants may live; on-site jobs need a work address. The documentation says only employers may publish baseSalary and that expired jobs must be removed or expired with validThrough; both are repeated in the notes.",
+ "howTo": [
+  "Enter the title, description, dates and employer.",
+  "Add the work address, or set remote: yes with applicantCountry lines.",
+  "Add salaryMin, salaryMax, salaryCurrency and salaryUnit if you publish pay.",
+  "Copy the script tag onto the job page."
+ ],
+ "faq": [
+  {
+   "q": "Which employment types are valid?",
+   "a": "FULL_TIME, PART_TIME, CONTRACTOR, TEMPORARY, INTERN, VOLUNTEER, PER_DIEM and OTHER."
+  },
+  {
+   "q": "How do I mark a remote job?",
+   "a": "Set remote: yes and add applicantCountry: lines. The tool writes jobLocationType TELECOMMUTE."
+  },
+  {
+   "q": "Can the description contain HTML?",
+   "a": "Yes, basic HTML is allowed by Google; it is escaped correctly in the JSON."
+  },
+  {
+   "q": "What happens when a job closes?",
+   "a": "Remove the page or set validThrough to a past date, as Google describes."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "rich-result-eligibility-checker",
+  "iso-8601-duration-builder",
+  "jsonld-syntax-validator",
+  "currency-display-checker",
+  "schema-property-checker"
+ ],
+ "keywords": [
+  "jobposting schema generator",
+  "job posting json-ld salary",
+  "remote job structured data",
+  "TELECOMMUTE schema"
+ ]
+}

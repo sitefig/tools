@@ -1,0 +1,40 @@
+{
+ "id": "cookie-table-builder",
+ "seoTitle": "Cookie Policy Table Builder (Markdown or HTML)",
+ "metaDescription": "Turn a list of cookies with purposes and durations into a grouped cookie policy table in Markdown or HTML. Free, local, no signup.",
+ "intro": "Builds the cookie table for a cookie policy from one line per cookie, grouped by category, with missing fields flagged.",
+ "why": "Cookie policies usually need a table with cookie name, purpose, duration and provider. Writing it by hand in HTML or Markdown is dull and easy to get wrong.\n\nPaste one cookie per line and the tool groups them by category. If you leave the category empty it guesses from the cookie name. Rows with an empty purpose, duration or provider are flagged so you can fill them in before publishing. The text itself is yours to write: the tool does not know what your cookies really do.",
+ "howTo": [
+  "Write one cookie per line: name | purpose | duration | provider | category.",
+  "Choose Markdown or HTML.",
+  "Read the review notes under each group and fill in gaps.",
+  "Paste the table into your cookie policy page."
+ ],
+ "faq": [
+  {
+   "q": "Is the category field required?",
+   "a": "No. If you leave it out, the tool guesses from the cookie name and uses Unclassified when it cannot."
+  },
+  {
+   "q": "Does it write the rest of the policy?",
+   "a": "No. Use the Cookie Policy Generator for the full text and this tool for a detailed table."
+  },
+  {
+   "q": "Are the durations checked?",
+   "a": "No. Use the Cookie Expiry Auditor to check them against a limit."
+  }
+ ],
+ "related": [
+  "cookie-classifier",
+  "cookie-policy-generator",
+  "cookie-banner-generator",
+  "cookie-expiry-auditor",
+  "cookie-flag-analyzer",
+  "privacy-policy-generator"
+ ],
+ "keywords": [
+  "cookie policy table",
+  "cookie declaration table",
+  "cookie list generator"
+ ]
+}

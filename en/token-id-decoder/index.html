@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Token ID Decoder and Encoder for tiktoken | Free Tools</title>
+<meta name="description" content="Turn OpenAI token ids back into text, or text into token ids, using the exact cl100k_base and o200k_base vocabularies. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/token-id-decoder/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/token-id-decoder/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/token-id-decoder/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Token ID Decoder and Encoder for tiktoken | Free Tools">
+<meta property="og:description" content="Turn OpenAI token ids back into text, or text into token ids, using the exact cl100k_base and o200k_base vocabularies. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/token-id-decoder/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Token ID Decoder and Encoder for tiktoken | Free Tools">
+<meta name="twitter:description" content="Turn OpenAI token ids back into text, or text into token ids, using the exact cl100k_base and o200k_base vocabularies. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Token ID Decoder / Encoder (tiktoken)","url":"https://tools.sitefig.net/en/token-id-decoder/","description":"Turn OpenAI token ids back into text, or text into token ids, using the exact cl100k_base and o200k_base vocabularies. Free, in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose the encoding: cl100k_base or o200k_base.","Pick a direction: ids-to-text or text-to-ids.","Paste the ids or the text. Tick the special-tokens option for text with special markers.","Copy the decoded text or the list of ids."],"keywords":"token id decoder, tiktoken decode ids to text, text to token ids, logit bias token ids, free tiktoken encoder","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"LLM Tools","item":"https://tools.sitefig.net/en/#llm-tools"},{"@type":"ListItem","position":3,"name":"Token ID Decoder / Encoder (tiktoken)","item":"https://tools.sitefig.net/en/token-id-decoder/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"In what format should I enter ids?","acceptedAnswer":{"@type":"Answer","text":"Any list of whole numbers separated by commas, spaces, semicolons or line breaks. Square brackets are ignored. A value that is not a number produces an error that names it."}},{"@type":"Question","name":"Why does the output end with a note about bytes?","acceptedAnswer":{"@type":"Answer","text":"Tokens are pieces of UTF-8 bytes, not characters. If your list starts or ends in the middle of a multi-byte character, such as an emoji, the bytes cannot form valid text, and the note explains the odd symbols."}},{"@type":"Question","name":"Are ids the same across models?","acceptedAnswer":{"@type":"Answer","text":"No. Each encoding has its own numbering. The same id means different text in cl100k_base and o200k_base, so always pick the encoding that matches the model you used."}},{"@type":"Question","name":"What happens with an unknown id?","acceptedAnswer":{"@type":"Answer","text":"An id beyond the vocabulary raises an error saying the id is unknown for that encoding, rather than guessing. Check that you picked the correct encoding."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#llm-tools">LLM Tools</a></li><li><span aria-current="page">Token ID Decoder / Encoder (tiktoken)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Token ID Decoder / Encoder (tiktoken)</h1>
+<p class="lede">Converts a list of token ids into the text they represent, or converts text into its token ids. It uses the exact cl100k_base and o200k_base vocabularies.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="token-id-decoder" data-module="tokenizer"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Token ids show up in logs, in logit bias settings, in logprobs output and in debugging sessions, and on their own they are meaningless numbers. When a model returns [9906, 11, 1917] you want to know it says &quot;Hello, world&quot; without writing a script to find out.</p>
+<p>Paste the ids, in brackets or separated by commas or spaces, and the decoder shows the text. Switch direction to get the ids for a phrase, which is the lookup you need when setting a logit bias. If the ids cut through a multi-byte character, the tool notes that some bytes could not be shown as text. The vocabulary loads from this site and everything is decoded in your browser. Only OpenAI encodings are included.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose the encoding: cl100k_base or o200k_base.</li><li>Pick a direction: ids-to-text or text-to-ids.</li><li>Paste the ids or the text. Tick the special-tokens option for text with special markers.</li><li>Copy the decoded text or the list of ids.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>In what format should I enter ids?</summary><p>Any list of whole numbers separated by commas, spaces, semicolons or line breaks. Square brackets are ignored. A value that is not a number produces an error that names it.</p></details>
+<details><summary>Why does the output end with a note about bytes?</summary><p>Tokens are pieces of UTF-8 bytes, not characters. If your list starts or ends in the middle of a multi-byte character, such as an emoji, the bytes cannot form valid text, and the note explains the odd symbols.</p></details>
+<details><summary>Are ids the same across models?</summary><p>No. Each encoding has its own numbering. The same id means different text in cl100k_base and o200k_base, so always pick the encoding that matches the model you used.</p></details>
+<details><summary>What happens with an unknown id?</summary><p>An id beyond the vocabulary raises an error saying the id is unknown for that encoding, rather than guessing. Check that you picked the correct encoding.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/token-ids-to-text-multi/"><span class="link-card__title">Token IDs &lt;-&gt; Text (all encodings)</span><span class="link-card__desc">Convert token ids to text and text to token ids with any included encoding: gpt2 (GPT-2; identical ranks to r50k_base); r50k_base (GPT-3 davinci/curie/babbage/ada); p50k_base (text-davinci-002/003, Codex); cl100k_base (GPT-4, GPT-3.5-turbo); o200k_base (GPT-4o, GPT-4.1, o1/o3); DeepSeek-V3 (deepseek-ai/DeepSeek-V3); DeepSeek-R1 (deepseek-ai/DeepSeek-R1); Qwen2.5 (Qwen/Qwen2.5-7B); Phi-4 (microsoft/phi-4); GPT-NeoX-20B (Pythia, EleutherAI); StarCoder2 (bigcode/starcoder2); Mistral-7B-v0.3 (mistralai/Mistral-7B-v0.3); claude-legacy (LEGACY Claude 1/2 only, NOT Claude 3/4/5). Exact for the listed models; LEGACY Claude 1/2 tokenizer (from the public npm package @anthropic-ai/tokenizer). It is NOT accurate for Claude 3, 4 or 5-family models: Anthropic has not published those vocabularies. Gemini, Llama, Gemma and Claude 3+ tokenizers are not included (gated or unpublished).</span></a></li><li><a class="link-card" href="/en/tiktoken-visualizer/"><span class="link-card__title">Tiktoken Tokenizer Visualizer (cl100k / o200k)</span><span class="link-card__desc">Exact OpenAI BPE tokenization (cl100k_base (GPT-4, GPT-3.5-turbo, embeddings v2/v3), o200k_base (GPT-4o, GPT-4.1, o1/o3 families)) shown as coloured tokens plus a table of ids and bytes. Runs offline in your browser. Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/gpt-token-counter/"><span class="link-card__title">GPT Token Counter (cl100k + o200k, chat overhead)</span><span class="link-card__desc">Exact token counts for text under cl100k_base and o200k_base side by side, plus an approximate chat-message overhead calculator (OpenAI cookbook rule: 3 tokens per message, +1 per name, +3 reply priming; use o200k_base for the GPT-4o family). Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/token-truncate/"><span class="link-card__title">Truncate / Chunk Text by Tokens (tiktoken)</span><span class="link-card__desc">Cut text to at most N tokens, or split it into chunks of at most N tokens with overlap, always on a token boundary that does not split a UTF-8 character. Exact cl100k_base / o200k_base. Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/base64-decode/"><span class="link-card__title">Base64 Decode</span><span class="link-card__desc">Decode Base64 / URL-safe Base64 to UTF-8 text.</span></a></li><li><a class="link-card" href="/en/utf8-bytes-viewer/"><span class="link-card__title">UTF-8 Bytes Viewer</span><span class="link-card__desc">Show code points with their UTF-8 and UTF-16 byte sequences.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

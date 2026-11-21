@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Mesh Gradient Generator: Soft CSS Backgrounds | Free Tools</title>
+<meta name="description" content="Layer radial gradients into a soft mesh-style CSS background from your colours. Seeded, so results are repeatable. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/mesh-gradient-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/mesh-gradient-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/mesh-gradient-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Mesh Gradient Generator: Soft CSS Backgrounds | Free Tools">
+<meta property="og:description" content="Layer radial gradients into a soft mesh-style CSS background from your colours. Seeded, so results are repeatable. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/mesh-gradient-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Mesh Gradient Generator: Soft CSS Backgrounds | Free Tools">
+<meta name="twitter:description" content="Layer radial gradients into a soft mesh-style CSS background from your colours. Seeded, so results are repeatable. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Mesh Gradient Generator","url":"https://tools.sitefig.net/en/mesh-gradient-generator/","description":"Layer radial gradients into a soft mesh-style CSS background from your colours. Seeded, so results are repeatable. Free, runs in your browser.","applicationCategory":"DesignApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter your colours separated by commas or new lines; at least two.","Choose the number of layers and the spread percentage.","Change the seed until you like the arrangement.","Copy the CSS into your stylesheet."],"keywords":"mesh gradient generator, css mesh gradient, gradient background generator, aurora gradient css, free mesh gradient css","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Color","item":"https://tools.sitefig.net/en/#color"},{"@type":"ListItem","position":3,"name":"Mesh Gradient Generator","item":"https://tools.sitefig.net/en/mesh-gradient-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does the seed do?","acceptedAnswer":{"@type":"Answer","text":"It decides where each colour blob is placed. The same seed, colours and settings always give identical CSS. Change the number to get a different arrangement."}},{"@type":"Question","name":"What are layers and spread?","acceptedAnswer":{"@type":"Answer","text":"Each layer is one radial gradient. Layers use your colours in turn, wrapping round if there are more layers than colours. Spread is the percentage at which each blob fades to transparent, so a larger value gives a softer, more overlapping result."}},{"@type":"Question","name":"Will it perform well?","acceptedAnswer":{"@type":"Answer","text":"Stacked radial gradients are cheap for a static background. With many layers on a large animated element, rendering costs rise, so keep the layer count modest and avoid animating them."}},{"@type":"Question","name":"How many layers can I use?","acceptedAnswer":{"@type":"Answer","text":"From 1 to 20. The first colour is also used as the base background colour behind all the layers."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#color">Color</a></li><li><span aria-current="page">Mesh Gradient Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Mesh Gradient Generator</h1>
+<p class="lede">Creates a soft, blurry mesh-style background by stacking radial gradients at seeded positions, using the colours you list. The same seed always gives the same result.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="mesh-gradient-generator" data-module="visual"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Smooth multi-colour backgrounds are popular on landing pages and cards, but a true mesh gradient needs a graphics tool or an image. You can fake the effect in pure CSS by overlaying several radial gradients that fade to transparent, and picking their positions by hand takes trial and error.</p>
+<p>List your colours, choose how many layers to stack and how far each spreads, then change the seed until the arrangement pleases you. The tool outputs the CSS background colour and image declarations, and previews them. Because the placement comes from a seed, you can come back later and regenerate exactly the same design. The CSS is produced in your browser and nothing is sent anywhere.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter your colours separated by commas or new lines; at least two.</li><li>Choose the number of layers and the spread percentage.</li><li>Change the seed until you like the arrangement.</li><li>Copy the CSS into your stylesheet.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What does the seed do?</summary><p>It decides where each colour blob is placed. The same seed, colours and settings always give identical CSS. Change the number to get a different arrangement.</p></details>
+<details><summary>What are layers and spread?</summary><p>Each layer is one radial gradient. Layers use your colours in turn, wrapping round if there are more layers than colours. Spread is the percentage at which each blob fades to transparent, so a larger value gives a softer, more overlapping result.</p></details>
+<details><summary>Will it perform well?</summary><p>Stacked radial gradients are cheap for a static background. With many layers on a large animated element, rendering costs rise, so keep the layer count modest and avoid animating them.</p></details>
+<details><summary>How many layers can I use?</summary><p>From 1 to 20. The first colour is also used as the base background colour behind all the layers.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/gradient-generator/"><span class="link-card__title">CSS Gradient Generator</span><span class="link-card__desc">Linear, radial, conic and repeating gradients with color stops. CSS and Tailwind output, live preview.</span></a></li><li><a class="link-card" href="/en/css-blob-generator/"><span class="link-card__title">SVG Blob Generator</span><span class="link-card__desc">Random organic blob shapes as an SVG path (seedable), with ready-to-use SVG and CSS clip-path.</span></a></li><li><a class="link-card" href="/en/glassmorphism-generator/"><span class="link-card__title">Glassmorphism Generator</span><span class="link-card__desc">Frosted-glass card CSS with backdrop-filter.</span></a></li><li><a class="link-card" href="/en/color-mixer/"><span class="link-card__title">Color Mixer</span><span class="link-card__desc">Blend two colors at a ratio or in steps, in sRGB, linear light, OKLab or HSL.</span></a></li><li><a class="link-card" href="/en/palette-generator/"><span class="link-card__title">Color Palette Generator</span><span class="link-card__desc">Generate complementary, analogous, triadic, tetradic, shade/tint scales from a base color. Exports CSS variables and Tailwind config.</span></a></li><li><a class="link-card" href="/en/svg-wavy-divider-generator/"><span class="link-card__title">SVG Wavy Divider Generator</span><span class="link-card__desc">Generate a layered, seeded SVG wave divider (smooth curves) for section transitions. Choose layers, amplitude, number of waves, color, flip; copy the SVG or an inline CSS background.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

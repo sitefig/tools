@@ -1,0 +1,45 @@
+{
+ "id": "audio-spectrum-analyzer",
+ "seoTitle": "Live Audio Spectrum Analyzer for Mic or File",
+ "metaDescription": "Watch the live frequency spectrum of your microphone or an audio file, with peak frequency and musical note. Local only, nothing recorded or sent.",
+ "intro": "Draws the frequency spectrum of your microphone or of a file as it plays, with a logarithmic frequency axis and a readout of the strongest frequency and its note.",
+ "why": "A spectrum shows which frequencies are loud right now. It helps you find the pitch of a tone, spot feedback ringing, check a room for hum, and see what an equalizer is doing. Microphone input is processed live and is not echoed to your speakers, so there is no feedback loop.\n\nThe analyser uses the browser's FFT with the size you choose: larger sizes resolve close frequencies better but react slower. Automatic gain control, echo cancellation and noise suppression are switched off so the display shows what the microphone really hears.",
+ "howTo": [
+  "Choose Microphone or Audio file as the source.",
+  "Pick an FFT size and the smoothing.",
+  "Press Start and allow microphone access if asked.",
+  "Press Stop when you are done."
+ ],
+ "faq": [
+  {
+   "q": "Is my voice recorded or uploaded?",
+   "a": "No. The audio is analysed in memory and never stored or sent."
+  },
+  {
+   "q": "Why does the peak jump around?",
+   "a": "Real sounds have many harmonics and the strongest one can change. Raise the smoothing or use a larger FFT size."
+  },
+  {
+   "q": "How accurate is the peak frequency?",
+   "a": "Within a fraction of a hertz for a clean tone at FFT size 8192 or more, thanks to interpolation."
+  },
+  {
+   "q": "Can I test it without a microphone?",
+   "a": "Yes, choose Audio file and play any recording."
+  }
+ ],
+ "related": [
+  "spectrogram-viewer",
+  "instrument-tuner",
+  "decibel-meter",
+  "tone-generator",
+  "mic-test",
+  "audio-equalizer"
+ ],
+ "keywords": [
+  "live spectrum analyzer",
+  "frequency analyzer microphone",
+  "audio spectrum online",
+  "real time fft"
+ ]
+}

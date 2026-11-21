@@ -1,0 +1,44 @@
+{
+ "id": "csv-column-splitter",
+ "seoTitle": "CSV Column Splitter: One Column into Several by Separator",
+ "metaDescription": "Split a CSV column on a comma, space, slash or other separator into new columns with names you choose. Free and private.",
+ "intro": "Splits one column into several parts, for example Smith, John into surname and first name, leaving all other columns where they are.",
+ "why": "Names, addresses and codes often arrive packed into one column. Splitting on the separator gives you sortable, filterable fields.\n\nSet a maximum number of parts so extra separators stay in the last part, such as middle names. Name the new columns or let the tool call them name_1, name_2. Rows with fewer parts get empty cells. The original column can be kept or removed.",
+ "howTo": [
+  "Paste the CSV with a header.",
+  "Enter the column and the separator text.",
+  "Set a maximum number of parts and optional new names.",
+  "Copy or download the result."
+ ],
+ "faq": [
+  {
+   "q": "Can the separator be several characters?",
+   "a": "Yes, any text, for example \" - \"."
+  },
+  {
+   "q": "How do I split on a tab?",
+   "a": "Type \\t as the separator."
+  },
+  {
+   "q": "What about a quoted comma?",
+   "a": "The CSV is parsed first, so commas inside quotes are not column breaks, but your separator still applies inside the cell."
+  },
+  {
+   "q": "Are values trimmed?",
+   "a": "Yes, each part is trimmed of surrounding spaces."
+  }
+ ],
+ "related": [
+  "text-column-splitter",
+  "csv-column-merger",
+  "csv-column-extractor",
+  "csv-whitespace-trimmer",
+  "wide-to-long-reshaper",
+  "csv-transpose"
+ ],
+ "keywords": [
+  "split csv column",
+  "split name into first and last",
+  "text to columns csv"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "engagement-rate-calculator",
+ "seoTitle": "Social Media Engagement Rate Calculator",
+ "metaDescription": "Work out engagement rate by followers, reach or views from likes, comments, shares and saves, for one post or the average of many.",
+ "intro": "Work out engagement rate from likes, comments, shares and saves, against followers, reach or views, for one post or an average over several.",
+ "why": "Engagement rate is quoted without saying what it is divided by. Rates by followers, by reach and by views for the same post differ a lot.\n\nEnter your counts and the tool shows all three rates side by side with the formula. If your numbers add up over several posts, enter how many and it shows the average per post. No benchmark is shown because published averages differ widely by source and year.",
+ "howTo": [
+  "Enter likes, comments, shares and saves.",
+  "Enter followers, and reach or views if you have them.",
+  "Enter the number of posts if the totals cover several.",
+  "Compare the rates."
+ ],
+ "faq": [
+  {
+   "q": "Which rate should I use?",
+   "a": "Rate by reach is the most direct. Rate by followers is the common quote and is easy to compute."
+  },
+  {
+   "q": "What counts as engagement?",
+   "a": "Here likes, comments, shares and saves. Platforms and agencies differ, so compare like with like."
+  },
+  {
+   "q": "What is a good rate?",
+   "a": "It depends on platform, size and niche. Compare with your own history."
+  }
+ ],
+ "related": [
+  "follower-growth-calculator",
+  "influencer-rate-estimator",
+  "social-media-roi-calculator",
+  "roi-calculator",
+  "youtube-earnings-estimator",
+  "tiktok-money-calculator"
+ ],
+ "keywords": [
+  "engagement rate calculator",
+  "instagram engagement rate",
+  "social media engagement formula",
+  "err calculator"
+ ]
+}

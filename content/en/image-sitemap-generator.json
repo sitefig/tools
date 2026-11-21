@@ -1,0 +1,44 @@
+{
+ "id": "image-sitemap-generator",
+ "seoTitle": "Image Sitemap Generator (image:image XML)",
+ "metaDescription": "Build an image sitemap from page and image URLs, with the Google image namespace and the 1,000 image limit checked. Free.",
+ "intro": "Turns lines of page URL and image URLs into an image sitemap.",
+ "why": "Image sitemaps help search engines find images that scripts or galleries hide. The markup needs the image namespace and one image:image per image.\n\nGoogle supports image:loc only now. The older title, caption, geo and license tags are no longer documented, so this tool does not write them.",
+ "howTo": [
+  "Write one page per line: page URL, then image URLs separated by |.",
+  "Run the tool.",
+  "Check the XML.",
+  "Save it as sitemap-images.xml and submit it."
+ ],
+ "faq": [
+  {
+   "q": "How many images per page?",
+   "a": "Up to 1,000 image tags per URL."
+  },
+  {
+   "q": "Can images be on another domain?",
+   "a": "Yes, if both domains are verified in Search Console."
+  },
+  {
+   "q": "Why no captions?",
+   "a": "Google no longer documents image:caption, title, geo_location or license."
+  },
+  {
+   "q": "Does robots.txt matter?",
+   "a": "Yes. Do not block images you want indexed."
+  }
+ ],
+ "related": [
+  "sitemap-generator",
+  "video-sitemap-generator",
+  "sitemap-validator",
+  "image-seo",
+  "html-image-extractor"
+ ],
+ "keywords": [
+  "image sitemap generator",
+  "image:image",
+  "google image sitemap",
+  "sitemap images"
+ ]
+}

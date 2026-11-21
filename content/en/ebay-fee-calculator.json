@@ -1,0 +1,38 @@
+{
+ "id": "ebay-fee-calculator",
+ "seoTitle": "eBay Fee and Profit Calculator With Your Own Rates",
+ "metaDescription": "Estimate eBay final value fee, per-order fee, promoted listing cost and profit from the rates you enter. Defaults are examples to check.",
+ "intro": "Estimates the fees on an eBay sale and your profit after item and shipping cost, from rates you enter.",
+ "why": "eBay's final value fee depends on the category and the seller, and in some markets it applies to shipping and tax as well as the item price. That is why one rate rarely fits everyone.\n\nThis tool applies your final value percentage to price plus shipping plus tax, adds the per-order fee and any promoted listing percentage, and shows profit. The default numbers are examples, so replace them with the figures on eBay's fee page for your category.",
+ "howTo": [
+  "Enter sale price, shipping charged and tax collected.",
+  "Replace the fee rates with the ones for your category and country.",
+  "Add your item and real shipping cost and read the profit."
+ ],
+ "faq": [
+  {
+   "q": "Are the default fees current?",
+   "a": "Not verified. Treat them as placeholders and check eBay's fee page."
+  },
+  {
+   "q": "Does the fee apply to shipping?",
+   "a": "In many markets yes. If yours does not, set shipping charged to 0 and add it back by hand."
+  },
+  {
+   "q": "What is promoted listing percent?",
+   "a": "An optional ad fee. Enter 0 if you do not use it."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "break-even",
+  "payment-fee-gross-up-calculator",
+  "dropshipping-profit-calculator",
+  "average-order-value-calculator"
+ ],
+ "keywords": [
+  "ebay fee calculator",
+  "ebay final value fee",
+  "ebay profit calculator"
+ ]
+}

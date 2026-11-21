@@ -1,0 +1,44 @@
+{
+ "id": "csv-whitespace-trimmer",
+ "seoTitle": "CSV Whitespace Trimmer: Trim and Collapse Spaces",
+ "metaDescription": "Trim every cell and collapse tabs, repeated spaces and non-breaking spaces to single spaces in a CSV. Reports how many cells changed.",
+ "intro": "Cleans invisible spacing problems in every cell: leading and trailing spaces, double spaces, tabs, non-breaking spaces and zero-width characters.",
+ "why": "Stray spaces cause failed joins, duplicate-looking rows and sorting surprises. Non-breaking spaces and zero-width characters look like nothing but are not equal to a normal space or to nothing.\n\nThe tool replaces all Unicode space separators with a plain space, optionally collapses runs, removes zero-width characters and trims each cell. The summary says how many cells changed so you can tell whether the data had a problem.",
+ "howTo": [
+  "Paste the CSV or table.",
+  "Choose whether to collapse internal runs and remove zero-width characters.",
+  "Read the changed-cells count.",
+  "Copy or download the cleaned CSV."
+ ],
+ "faq": [
+  {
+   "q": "Does it change line breaks inside cells?",
+   "a": "Yes when collapsing: any whitespace run, including a line break, becomes one space."
+  },
+  {
+   "q": "Does it touch the header?",
+   "a": "Yes, header cells are cleaned too."
+  },
+  {
+   "q": "Are numbers changed?",
+   "a": "Only surrounding spaces are removed."
+  },
+  {
+   "q": "Which characters count as spaces?",
+   "a": "Regular space, tab, NBSP, the Unicode en/em spaces, narrow NBSP and ideographic space."
+  }
+ ],
+ "related": [
+  "text-cleaner",
+  "remove-empty-lines-trim",
+  "duplicate-row-remover",
+  "table-find-replace",
+  "csv-column-profiler",
+  "csv-merger"
+ ],
+ "keywords": [
+  "trim whitespace csv",
+  "remove non breaking spaces",
+  "clean spaces in spreadsheet"
+ ]
+}

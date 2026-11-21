@@ -1,0 +1,45 @@
+{
+  "id": "btu-calculator",
+  "seoTitle": "Air Conditioner BTU Calculator by Room Size",
+  "metaDescription": "Estimate the cooling capacity in BTU/h for a room from floor area, ceiling height, sun exposure, occupants and kitchen use, with the 20 BTU per square foot rule.",
+  "intro": "Choose a correctly sized air conditioner or heater by estimating the load of the room.",
+  "why": "The base is 20 BTU per square foot of floor area, scaled for ceilings above 8 feet, adjusted plus or minus 10% for very sunny or shaded rooms, plus 600 BTU for each occupant beyond two and 4,000 BTU for a kitchen. The result is shown in BTU/h, kilowatts and tons.\n\nThis is a rule of thumb. Insulation, window area and climate change the real load, and for a whole house you should ask for a Manual J calculation. Oversized units switch on and off too often and remove humidity poorly.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the room area and ceiling height.",
+    "Choose sun exposure and occupants.",
+    "Tick kitchen if relevant.",
+    "Pick a unit near the recommended capacity."
+  ],
+  "faq": [
+    {
+      "q": "How many BTU for 300 sq ft?",
+      "a": "About 6,000 BTU/h with the base rule."
+    },
+    {
+      "q": "What is a ton of cooling?",
+      "a": "12,000 BTU per hour."
+    },
+    {
+      "q": "Can I use it for heating?",
+      "a": "The factor is for cooling; heating needs depend on climate and insulation."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "electricity-cost-calculator",
+    "square-footage-calculator",
+    "roofing-calculator",
+    "unit-converter",
+    "fuel-cost",
+    "water-intake"
+  ],
+  "keywords": [
+    "btu calculator",
+    "air conditioner size",
+    "ac sizing",
+    "room btu"
+  ]
+}

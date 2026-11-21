@@ -1,0 +1,47 @@
+{
+ "id": "app-name-ideas",
+ "seoTitle": "Free App Name Ideas Generator from Keywords",
+ "metaDescription": "Combine your keywords with prefixes, suffixes and blends to get a list of app and product name ideas. Free, repeatable with a seed, runs in your browser.",
+ "intro": "Enter a few keywords and get a shuffled list of name ideas built from prefixes, suffixes, blends and simple endings. A seed number makes the shuffle repeatable.",
+ "why": "Naming is hard because you start from nothing. A list of mechanical combinations will not give you a perfect name, but it can break the block: a word you would not have thought of, a blend that sounds good out loud, a suffix that gives a plain word some character.\n\nThis generator takes your keywords and mixes them with common prefixes like Go and Smart, suffixes like -ly, -ify, -hub and -kit, endings such as -r and -o, and blends of two of your keywords. It then shuffles them with a seed you control. The output is names only. Before falling for one, check trademarks, domain names and app store listings yourself.",
+ "howTo": [
+  "Enter your keywords, one per line.",
+  "Set how many names you want and a shuffle seed number.",
+  "Run the tool to see the list of capitalised names.",
+  "Change the seed to get a different selection, and shortlist the names that sound right out loud."
+ ],
+ "faq": [
+  {
+   "q": "Are these names available?",
+   "a": "Unknown. The tool does not check anything. Search trademark registers, domain registrars and app stores before you commit to a name."
+  },
+  {
+   "q": "What does the seed do?",
+   "a": "It controls the random shuffle. The same keywords, count and seed always give the same list, so you can return to a good one. A different seed gives a different set of names."
+  },
+  {
+   "q": "How many names can I get?",
+   "a": "As many as you ask for, up to the number of combinations the keywords produce. More keywords give many more combinations, especially because pairs of keywords are blended."
+  },
+  {
+   "q": "Does it use AI?",
+   "a": "No. It is plain string combination with a fixed list of prefixes and suffixes, so the names are mechanical and need your judgement."
+  }
+ ],
+ "related": [
+  "slug-generator",
+  "fancy-text",
+  "leetspeak",
+  "user-persona-template",
+  "decision-matrix",
+  "app-store-description-template"
+ ],
+ "keywords": [
+  "app name ideas",
+  "app name generator",
+  "product name generator from keywords",
+  "free startup name ideas",
+  "brand name combiner",
+  "name ideas for an app"
+ ]
+}

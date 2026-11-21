@@ -1,0 +1,43 @@
+{
+ "id": "flutter-theme-generator",
+ "seoTitle": "Free Flutter Material 3 Theme Generator",
+ "metaDescription": "Generate Dart code for a Flutter Material 3 ThemeData from a seed colour, with light and dark themes. Free, and it runs in your browser.",
+ "intro": "Pick a seed colour, font and corner radius, and get an AppTheme class in Dart with light and dark ThemeData built on ColorScheme.fromSeed, ready to paste into your Flutter project.",
+ "why": "Every new Flutter app needs a theme, and the boilerplate is easy to get slightly wrong: the brightness has to be set on the ColorScheme, the dark theme needs its own seed call, and button, input and card shapes all want the same radius. Teams usually copy an old project and edit it by hand.\n\nThis tool writes that class for you from a handful of fields. It does not try to imitate Material's tonal palette. Flutter computes the real palette at runtime from your seed, so what you see in the app is what Material 3 produces. Because everything runs in your browser, you can try brand colours freely and nothing you type is uploaded.",
+ "howTo": [
+  "Enter your seed colour as a hex value, for example #6750A4.",
+  "Optionally set a secondary or error colour override, a font family and the corner radius.",
+  "Tick the app bar, outlined input and dark theme options you want.",
+  "Copy the generated AppTheme class into your project and pass AppTheme.light and AppTheme.dark to MaterialApp."
+ ],
+ "faq": [
+  {
+   "q": "Does this show the real Material 3 colour palette?",
+   "a": "No. The tool only writes the Dart code. Flutter calculates the full tonal palette from your seed colour when the app runs, so check the result in an emulator or on a device."
+  },
+  {
+   "q": "What happens if I leave the secondary or error field blank?",
+   "a": "The generated code leaves those arguments out, so ColorScheme.fromSeed derives the secondary colour from the seed and uses the default error colour. Fill them in only when your brand guidelines demand specific values."
+  },
+  {
+   "q": "Why does the output mention CardThemeData?",
+   "a": "Newer Flutter releases (3.27 and later) use CardThemeData for the card theme. On older versions the class is called CardTheme, so rename it if your project has not upgraded yet."
+  }
+ ],
+ "related": [
+  "android-manifest-builder",
+  "ios-plist-builder",
+  "xcode-asset-catalog",
+  "color-converter",
+  "contrast-checker",
+  "palette-generator"
+ ],
+ "keywords": [
+  "flutter theme generator",
+  "material 3 theme flutter",
+  "colorscheme fromseed",
+  "flutter themedata generator",
+  "free flutter dark theme code",
+  "flutter seed color"
+ ]
+}

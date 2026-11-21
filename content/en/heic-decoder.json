@@ -1,0 +1,46 @@
+{
+ "id": "heic-decoder",
+ "seoTitle": "Free HEIC to JPG Decoder - Works in Any Browser",
+ "metaDescription": "Decode HEIC and HEIF photos from iPhone or Samsung to JPEG, PNG or WebP in any browser with a built-in decoder. Free, nothing is uploaded.",
+ "intro": "Open HEIC or HEIF photos and convert them to JPEG, PNG or WebP. A built-in software decoder means it works in Chrome, Edge and Firefox as well as Safari.",
+ "why": "iPhones and many Android phones save photos as HEIC, a format that Windows, older apps, web forms and most email clients cannot open. Safari can display it, but other browsers have no HEVC codec, so the usual browser tricks fail. Many converters solve this by uploading your pictures to a server, which is a poor idea for personal photos.\n\nThis decoder includes its own HEVC still-image decoder, so nothing depends on browser codecs and nothing is uploaded. It handles photos stored as tiles (a grid), applies rotation, mirroring and cropping properties, and can export JPEG, PNG or WebP. You can drop in several files at once. Large photos take a few seconds, because the work runs on your processor.",
+ "howTo": [
+  "Choose one or more .heic or .heif files.",
+  "Pick the output format: JPEG, PNG or WebP.",
+  "Set the quality value if you chose JPEG or WebP.",
+  "Run the conversion and download the converted images."
+ ],
+ "faq": [
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. Decoding and conversion happen in your browser using a decoder shipped with the page. Your photos stay on your device, and the page works the same in any modern browser."
+  },
+  {
+   "q": "What is not supported?",
+   "a": "Only the primary still image is decoded. Live-photo motion, HEIC sequences, overlay images, alpha and depth maps, and AVIF files are not handled. Wide-colour profiles are not colour-managed, so pixels appear as stored."
+  },
+  {
+   "q": "Why does a large photo take a while?",
+   "a": "The HEVC decoding is done in software on your CPU, not by a hardware codec, so a 12-megapixel photo can take a few seconds. Converting several files runs them one after another."
+  },
+  {
+   "q": "Will metadata such as location be kept?",
+   "a": "The output is a fresh image drawn from the pixels, so EXIF details like GPS location are not copied across. That is often useful when you want to share a picture, but keep the original if you need them."
+  }
+ ],
+ "related": [
+  "heic-to-jpg",
+  "image-format-converter",
+  "image-compressor",
+  "image-resizer",
+  "exif-viewer",
+  "image-info"
+ ],
+ "keywords": [
+  "heic decoder",
+  "heic to jpg converter",
+  "open heic in chrome",
+  "convert heif online",
+  "free heic to png"
+ ]
+}

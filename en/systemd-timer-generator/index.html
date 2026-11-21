@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free systemd Timer Generator (Cron Replacement) | Free Tools</title>
+<meta name="description" content="Free online systemd timer generator. Create a .timer and matching .service with OnCalendar or boot-plus-interval schedules, jitter and persistence.">
+<link rel="canonical" href="https://tools.sitefig.net/en/systemd-timer-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/systemd-timer-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/systemd-timer-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free systemd Timer Generator (Cron Replacement) | Free Tools">
+<meta property="og:description" content="Free online systemd timer generator. Create a .timer and matching .service with OnCalendar or boot-plus-interval schedules, jitter and persistence.">
+<meta property="og:url" content="https://tools.sitefig.net/en/systemd-timer-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free systemd Timer Generator (Cron Replacement) | Free Tools">
+<meta name="twitter:description" content="Free online systemd timer generator. Create a .timer and matching .service with OnCalendar or boot-plus-interval schedules, jitter and persistence.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"systemd Timer Generator","url":"https://tools.sitefig.net/en/systemd-timer-generator/","description":"Free online systemd timer generator. Create a .timer and matching .service with OnCalendar or boot-plus-interval schedules, jitter and persistence.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter a unit name, a description and the command to run.","Choose OnCalendar and enter a schedule, or choose boot plus interval and enter both times.","Set the random delay, tick Persistent for catch-up and enter a user if needed.","Save both files in /etc/systemd/system and run the enable command shown."],"keywords":"systemd timer generator, systemd timer cron replacement, oncalendar generator, free systemd timer tool, create systemd timer, systemd timer example","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"systemd Timer Generator","item":"https://tools.sitefig.net/en/systemd-timer-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does Persistent=true do?","acceptedAnswer":{"@type":"Answer","text":"If the machine was off at a scheduled time, the missed run happens as soon as the timer is next active, for example at boot. It applies to OnCalendar timers."}},{"@type":"Question","name":"How do I check an OnCalendar expression?","acceptedAnswer":{"@type":"Answer","text":"Run systemd-analyze calendar followed by the expression. It prints the normalised form and the next time it will fire, so you can confirm the schedule before relying on it."}},{"@type":"Question","name":"Why does the service use Type=oneshot?","acceptedAnswer":{"@type":"Answer","text":"A timer starts a job that runs and finishes, which is what oneshot describes. systemd then knows when the run is complete."}},{"@type":"Question","name":"What is RandomizedDelaySec for?","acceptedAnswer":{"@type":"Answer","text":"It adds a random delay up to the value you set, so many machines or timers scheduled for the same moment do not all start together."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">systemd Timer Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>systemd Timer Generator</h1>
+<p class="lede">Generate a systemd .timer and its matching .service as a replacement for a cron job. Use OnCalendar schedules or boot plus interval timing, with optional random delay and catch-up runs.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="systemd-timer-generator" data-module="devgen2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>systemd timers have real advantages over cron: logs in the journal, dependency handling, catch-up of missed runs after downtime and random delays to spread load. But they need two files that must match by name, and the OnCalendar syntax is unfamiliar.</p>
+<p>Enter the unit name, description and command, pick OnCalendar for clock-based times such as *-*-* 03:00:00, or boot plus interval for jobs that run a set time after startup and then repeat. The tool writes the timer and the oneshot service together, with Persistent=true if you want missed runs executed at the next boot, and RandomizedDelaySec for jitter. It also prints the commands to enable the timer. Use systemd-analyze calendar to check your expression. Nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter a unit name, a description and the command to run.</li><li>Choose OnCalendar and enter a schedule, or choose boot plus interval and enter both times.</li><li>Set the random delay, tick Persistent for catch-up and enter a user if needed.</li><li>Save both files in /etc/systemd/system and run the enable command shown.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What does Persistent=true do?</summary><p>If the machine was off at a scheduled time, the missed run happens as soon as the timer is next active, for example at boot. It applies to OnCalendar timers.</p></details>
+<details><summary>How do I check an OnCalendar expression?</summary><p>Run systemd-analyze calendar followed by the expression. It prints the normalised form and the next time it will fire, so you can confirm the schedule before relying on it.</p></details>
+<details><summary>Why does the service use Type=oneshot?</summary><p>A timer starts a job that runs and finishes, which is what oneshot describes. systemd then knows when the run is complete.</p></details>
+<details><summary>What is RandomizedDelaySec for?</summary><p>It adds a random delay up to the value you set, so many machines or timers scheduled for the same moment do not all start together.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/systemd-unit-generator/"><span class="link-card__title">systemd Service Unit Generator</span><span class="link-card__desc">Build a .service unit file with restart policy, user, environment and optional sandboxing hardening.</span></a></li><li><a class="link-card" href="/en/cron-generator/"><span class="link-card__title">Cron Expression Generator</span><span class="link-card__desc">Build a cron expression from dropdowns and see what it means.</span></a></li><li><a class="link-card" href="/en/cron-explainer/"><span class="link-card__title">Cron Expression Explainer</span><span class="link-card__desc">Explain a 5-field cron expression in English and list the next 10 run times.</span></a></li><li><a class="link-card" href="/en/cron-dialect-converter/"><span class="link-card__title">Cron Dialect Converter</span><span class="link-card__desc">Convert a standard 5-field cron to Quartz, Spring, AWS EventBridge, GitHub Actions and Kubernetes CronJob syntax.</span></a></li><li><a class="link-card" href="/en/crontab-randomized-generator/"><span class="link-card__title">Randomized Crontab Generator</span><span class="link-card__desc">Spread many cron jobs across minutes/hours so they do not all fire at :00. Stable per job (hash of seed + command, like Jenkins &quot;H&quot;), or evenly spaced across a window.</span></a></li><li><a class="link-card" href="/en/natural-language-to-cron/"><span class="link-card__title">Natural Language to Cron</span><span class="link-card__desc">Turn plain English schedules into a standard 5-field cron expression and read it back to confirm: &quot;every 15 minutes&quot;, &quot;every weekday at 8:30am&quot;, &quot;every monday and friday at 5pm&quot;, &quot;first day of every month at midnight&quot;, &quot;every 2 hours between 9am and 5pm on weekdays&quot;, &quot;quarterly&quot;, &quot;on the 1st and 15th at noon&quot;. Rule-based (no AI), English only; unrecognised words are reported. One schedule per line.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

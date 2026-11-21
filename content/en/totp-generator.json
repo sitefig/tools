@@ -1,0 +1,46 @@
+{
+ "id": "totp-generator",
+ "seoTitle": "Free TOTP Code Generator (RFC 6238) Online",
+ "metaDescription": "Generate time-based one-time passwords from a base32 secret or otpauth link, with a live countdown. Free and computed locally.",
+ "intro": "Enter a base32 secret or an otpauth:// URI to get the current six-digit code and the next one, with a countdown. Digits, period and SHA algorithm can be changed.",
+ "why": "Developers testing two-factor login need to know what code an authenticator should show for a given secret, and support teams sometimes need to confirm that a secret works. A phone app is awkward for that, especially when you are scripting or debugging an implementation.\n\nThis page implements RFC 6238 with the browser WebCrypto API. Paste the secret or a full otpauth link and it reads digits, period and algorithm from the link, then shows the current code, a progress bar and the next code. You can also generate a random test secret. Use it for testing and learning, and do not paste the secret for an account you care about into a page you do not trust.",
+ "howTo": [
+  "Paste a base32 secret or an otpauth:// URI into the secret box.",
+  "Choose digits, period and algorithm if they differ from the usual 6, 30 seconds and SHA-1.",
+  "Read the current code and the countdown bar.",
+  "Use Generate random secret to create a test secret."
+ ],
+ "faq": [
+  {
+   "q": "Will it match Google Authenticator?",
+   "a": "For standard settings of 6 digits, a 30-second period and SHA-1, yes, provided your device clock is correct. Services that use other digits or algorithms need those values set."
+  },
+  {
+   "q": "Why does my code not work?",
+   "a": "Most often it is clock drift, a wrongly copied secret or different parameters. Check your system time, the base32 characters and the digits, period and algorithm of the service."
+  },
+  {
+   "q": "Is it safe to enter a real secret?",
+   "a": "The calculation is local and nothing is uploaded, but a TOTP secret is as sensitive as a password. Use test secrets here, and keep real ones in an authenticator you trust."
+  },
+  {
+   "q": "What is the default secret?",
+   "a": "The page loads with an example secret so you can see a code immediately. Replace it with your own or generate a random one."
+  }
+ ],
+ "related": [
+  "hmac-generator",
+  "random-secret-generator",
+  "base32",
+  "password-generator",
+  "jwt-decode",
+  "timestamp-converter"
+ ],
+ "keywords": [
+  "totp generator online",
+  "2fa code generator",
+  "rfc 6238 tool",
+  "otpauth uri tester",
+  "test totp secret"
+ ]
+}

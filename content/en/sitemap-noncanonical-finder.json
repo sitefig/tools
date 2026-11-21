@@ -1,0 +1,45 @@
+{
+ "id": "sitemap-noncanonical-finder",
+ "seoTitle": "Sitemap Non-Canonical URL Finder",
+ "metaDescription": "Flag sitemap URLs with query strings, fragments, tracking parameters, mixed http/https or www and odd slashes. Free.",
+ "intro": "Looks for sitemap URLs that are probably not the canonical version and suggests a clean form.",
+ "why": "Sitemaps should list the canonical URL of each page. Tracking parameters, fragments and mixed protocols are common leaks.\n\nThe tool finds the majority style in your file (https, www or not, trailing slash or not) and flags URLs that differ. Suggestions assume that majority is right. The page canonical tag is the real authority.",
+ "howTo": [
+  "Paste the sitemap or URL list.",
+  "Run the tool.",
+  "Read the reason for each flagged URL.",
+  "Fix the source and regenerate the sitemap."
+ ],
+ "faq": [
+  {
+   "q": "How is the trailing slash decided?",
+   "a": "By the majority among folder-like URLs."
+  },
+  {
+   "q": "Are all query strings wrong?",
+   "a": "No. They are flagged for review because some are canonical."
+  },
+  {
+   "q": "Does it fix the sitemap?",
+   "a": "It suggests forms. You fix the source."
+  },
+  {
+   "q": "Does it need the pages?",
+   "a": "No, only the URLs."
+  }
+ ],
+ "related": [
+  "canonical-generator",
+  "sitemap-validator",
+  "sitemap-url-pattern-analyzer",
+  "url-parameter-analyzer",
+  "canonical-conflict-checker",
+  "sitemap-robots-cross-check"
+ ],
+ "keywords": [
+  "sitemap canonical urls",
+  "non canonical urls sitemap",
+  "sitemap parameters",
+  "sitemap trailing slash"
+ ]
+}

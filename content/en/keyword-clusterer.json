@@ -1,0 +1,47 @@
+{
+ "id": "keyword-clusterer",
+ "seoTitle": "Free Keyword Clusterer to Group Keywords by Stem",
+ "metaDescription": "Group a keyword list into clusters by their most shared stem word. Deterministic and rule-based, no AI, no upload. Free and runs in your browser.",
+ "intro": "Paste a keyword list and get it grouped into clusters, each named after the stem word the keywords share most. The result is deterministic, with no AI model involved.",
+ "why": "A raw keyword export of several hundred phrases is hard to plan content from. You need to see which phrases belong to the same topic, so that one page targets \"running shoes\" instead of five near-duplicates competing with each other.\n\nThis clusterer removes common stop words, reduces words to a crude stem, counts how many keywords contain each stem and puts every keyword in the group of its most common stem. Keywords with no shared stem go into an unclustered group. Because it is rule-based, the same list always gives the same clusters. It does not know meaning, so review the groups yourself, especially synonyms.",
+ "howTo": [
+  "Paste your keywords, one per line.",
+  "Set the minimum cluster size. The default is 2.",
+  "Run the tool.",
+  "Review each cluster heading with its keywords, and the unclustered group at the end."
+ ],
+ "faq": [
+  {
+   "q": "How does it decide the cluster name?",
+   "a": "For each keyword it picks the stem word, after removing stop words, that occurs in the most keywords of your list and at least the minimum cluster size. Ties are broken alphabetically."
+  },
+  {
+   "q": "Does it understand synonyms or search intent?",
+   "a": "No. It only compares word stems, so \"trainers\" and \"sneakers\" will not be grouped unless they share a word. For intent, use the Keyword Intent Classifier. Always review clusters before building pages."
+  },
+  {
+   "q": "Why is a keyword left unclustered?",
+   "a": "None of its words appears in enough other keywords. Lower the minimum cluster size to 2 or add related keywords to the list."
+  },
+  {
+   "q": "Is my keyword list uploaded?",
+   "a": "No. The grouping runs in your browser, so a list of unreleased product or campaign ideas stays on your device."
+  }
+ ],
+ "related": [
+  "keyword-intent-classifier",
+  "topic-cluster-planner",
+  "keyword-extractor",
+  "keyword-density",
+  "content-gap",
+  "dedupe-lines"
+ ],
+ "keywords": [
+  "keyword clusterer",
+  "group keywords online",
+  "keyword grouping tool",
+  "free keyword cluster tool",
+  "cluster seo keywords",
+  "keyword list organiser"
+ ]
+}

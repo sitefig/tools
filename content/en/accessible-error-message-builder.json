@@ -1,0 +1,44 @@
+{
+ "id": "accessible-error-message-builder",
+ "seoTitle": "Accessible Form Error Message Builder with aria-describedby",
+ "metaDescription": "List fields and messages to get markup with aria-invalid, aria-describedby, a linked error summary and the focus script.",
+ "intro": "Generates accessible form error markup, an error summary and a focus script.",
+ "why": "Errors must be found, announced and explained, not just coloured red.\n\nThe markup ties each message to its field with aria-describedby, sets aria-invalid, adds a hidden \"Error:\" prefix, an error summary with links, and CSS that does not rely on colour alone. Remember to remove the error state once the user fixes the value.",
+ "howTo": [
+  "Enter id, label and message per line.",
+  "Choose summary and script.",
+  "Copy the markup and CSS.",
+  "Test with a screen reader."
+ ],
+ "faq": [
+  {
+   "q": "role=alert on the summary?",
+   "a": "It makes the failure announced; move focus to it as well."
+  },
+  {
+   "q": "Why not title for errors?",
+   "a": "Title is not reliably exposed and not for touch users."
+  },
+  {
+   "q": "Which criteria?",
+   "a": "3.3.1, 3.3.3 and 4.1.3."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "form-label-checker",
+  "autocomplete-attribute-helper",
+  "a11y-html-check",
+  "aria-attribute-validator",
+  "contrast-checker",
+  "wcag-success-criteria-explorer"
+ ],
+ "keywords": [
+  "accessible error messages",
+  "form error aria-describedby",
+  "error summary html"
+ ]
+}

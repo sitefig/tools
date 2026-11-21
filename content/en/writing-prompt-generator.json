@@ -1,0 +1,41 @@
+{
+ "id": "writing-prompt-generator",
+ "seoTitle": "Writing Prompt Generator by Genre",
+ "metaDescription": "Get random writing prompts for horror, romance, science fiction, fantasy, mystery, drama, humour and historical fiction. Free and private.",
+ "intro": "Get random creative writing prompts by genre: horror, romance, science fiction, fantasy, mystery, drama, humour or historical.",
+ "why": "A blank page is easier to start when a prompt gives you a person, a place and a problem.\n\nPick a genre or let the tool choose. Each prompt joins one of eight characters, eight settings and eight complications, so each genre offers 512 combinations. Add a seed text to get the same list again. Everything is generated in your browser.",
+ "howTo": [
+  "Choose a genre or any.",
+  "Set how many prompts you want.",
+  "Optionally enter a seed to repeat the list.",
+  "Pick one and write for ten minutes."
+ ],
+ "faq": [
+  {
+   "q": "Are the prompts original?",
+   "a": "They are combinations of short original elements written for this tool."
+  },
+  {
+   "q": "Can I get the same prompts again?",
+   "a": "Yes, enter the same seed text."
+  },
+  {
+   "q": "May I use them in published work?",
+   "a": "Yes. They are ideas, not text to copy."
+  }
+ ],
+ "related": [
+  "story-plot-generator",
+  "character-name-generator",
+  "random-text-generator",
+  "writing-goal-tracker",
+  "writing-sprint-log",
+  "app-name-ideas"
+ ],
+ "keywords": [
+  "writing prompt generator",
+  "creative writing prompts",
+  "story starters",
+  "random writing prompts"
+ ]
+}

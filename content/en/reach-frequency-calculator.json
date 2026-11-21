@@ -1,0 +1,45 @@
+{
+ "id": "reach-frequency-calculator",
+ "seoTitle": "Reach, Frequency and GRP Calculator for Ad Campaigns",
+ "metaDescription": "Estimate average frequency, reach percentage and gross rating points from impressions, unique reach and population. Free and private.",
+ "intro": "Enter impressions, unique reach and population to get average frequency, reach % and GRPs.",
+ "why": "Average frequency is impressions per person reached, reach is the share of the population seen, and GRPs are impressions over population times 100, which equals reach % times frequency.\n\nFrequency is an average, so some people see the ad once and a few see it many times. Reach from different platforms cannot be added because of overlap.",
+ "howTo": [
+  "Enter total impressions and unique reach.",
+  "Enter the target population.",
+  "Add spend for cost per GRP and CPM.",
+  "Read the results."
+ ],
+ "faq": [
+  {
+   "q": "What is a GRP?",
+   "a": "Gross rating point: one percent of the target population reached, counting repeats."
+  },
+  {
+   "q": "Can GRPs exceed 100?",
+   "a": "Yes, with repeated exposure."
+  },
+  {
+   "q": "Why check overlap?",
+   "a": "The same person may appear on several platforms."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "ad-cost-solver",
+  "ads-roas-calculator",
+  "share-of-voice-calculator",
+  "conversion-rate-calculator",
+  "statistics-calculator",
+  "serp-ctr-traffic-model"
+ ],
+ "keywords": [
+  "reach and frequency calculator",
+  "grp calculator",
+  "average frequency",
+  "gross rating points"
+ ]
+}

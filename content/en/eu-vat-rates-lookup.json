@@ -1,0 +1,39 @@
+{
+ "id": "eu-vat-rates-lookup",
+ "seoTitle": "EU VAT Rates by Country: Standard and Reduced",
+ "metaDescription": "Standard, reduced, super-reduced and parking VAT rates for all 27 EU countries, with source and date. Works offline.",
+ "intro": "A table of VAT rates for every EU member state, searchable by country.",
+ "why": "VAT rates differ widely, from 17% in Luxembourg to 27% in Hungary. The table is bundled in the page, so it works offline and shows its source and date.\n\nWhich goods get a reduced rate is set by each country and is not in this table. The source leaves out regional rates. Check your tax authority before invoicing.",
+ "howTo": [
+  "Type a country code or name, or leave empty for all.",
+  "Choose a sort order.",
+  "Read the rates and the source line."
+ ],
+ "faq": [
+  {
+   "q": "How current is the data?",
+   "a": "It was copied from the Your Europe VAT page that showed \"last checked 13 July 2026\". Rates change, so verify."
+  },
+  {
+   "q": "Why EL for Greece?",
+   "a": "The EU uses EL as the VAT code for Greece."
+  },
+  {
+   "q": "Are regional rates included?",
+   "a": "No, for example the Canary Islands and the Azores are left out."
+  }
+ ],
+ "related": [
+  "vat-calculator",
+  "oss-vat-calculator",
+  "reverse-charge-checker",
+  "vat-number-format-validator",
+  "tax-id-checksum-validator",
+  "vat-return-summary-builder"
+ ],
+ "keywords": [
+  "EU VAT rates",
+  "VAT rates by country",
+  "standard VAT rate"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "calories-burned-calculator",
+ "seoTitle": "Calories Burned Calculator by Activity (MET Values)",
+ "metaDescription": "Estimate calories burned for walking, running, cycling, swimming and gym activities from MET values in the 2011 Compendium of Physical Activities, your...",
+ "intro": "Estimate calories burned from the activity, time and your weight.",
+ "why": "Choose an activity from the list, enter the minutes and your weight. Calories are MET x kg x hours, using MET values from the 2011 Compendium of Physical Activities. The Compendium code is shown next to each activity so you can look it up.\n\nMET values are averages for gross energy use, which includes the calories you burn at rest anyway. Your own number depends on fitness, terrain and technique. You can type your own MET value to override the list.",
+ "howTo": [
+  "Pick the activity.",
+  "Enter minutes and body weight.",
+  "Optionally type your own MET value.",
+  "Read the calories for the session and per hour."
+ ],
+ "faq": [
+  {
+   "q": "What is a MET?",
+   "a": "A metabolic equivalent. 1 MET is the energy use at rest, so 8 METs is about eight times resting use."
+  },
+  {
+   "q": "Why do other sites give other numbers?",
+   "a": "Some subtract resting calories or use different MET tables. This one is gross energy from the Compendium."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "steps-to-distance-converter",
+  "bmr-tdee",
+  "running-pace-calculator",
+  "heart-rate-zones",
+  "cycling-power-speed-calculator",
+  "calorie-deficit-calculator"
+ ],
+ "keywords": [
+  "calories burned calculator",
+  "MET calculator",
+  "exercise calorie calculator",
+  "compendium of physical activities"
+ ]
+}

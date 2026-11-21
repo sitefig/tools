@@ -1,0 +1,45 @@
+{
+  "id": "gps-speedometer",
+  "seoTitle": "GPS Speedometer & Position (From Your Device)",
+  "metaDescription": "Show speed, heading, altitude and coordinates from the device GPS in km/h, mph, knots or m/s, with trip distance and max speed. Nothing is sent by this page.",
+  "intro": "Use a phone or laptop as a simple speedometer and position display.",
+  "why": "The page asks the browser for location with high accuracy and shows the speed reported by the positioning system, heading, altitude, accuracy, maximum speed and a trip distance computed with the haversine formula from fixes with good accuracy. Units can be switched at any time.\n\nSpeed comes from the GPS chip where available; devices that estimate location from Wi-Fi may report no speed. Your browser, not this page, talks to location services. Do not operate a phone while driving.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Press Start and allow location.",
+    "Pick the unit.",
+    "Move and watch the readings.",
+    "Press Stop to end tracking."
+  ],
+  "faq": [
+    {
+      "q": "Is my location sent anywhere?",
+      "a": "This page does not transmit it; the browser may use a location service to find it."
+    },
+    {
+      "q": "Why is speed zero indoors?",
+      "a": "Without a GPS fix the browser may only estimate position."
+    },
+    {
+      "q": "How accurate is it?",
+      "a": "Typically within a few km/h outdoors with a clear sky."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "digital-compass",
+    "bubble-level",
+    "screen-info",
+    "unit-converter",
+    "geohash-tool",
+    "fuel-cost"
+  ],
+  "keywords": [
+    "gps speedometer",
+    "speed test gps",
+    "browser geolocation",
+    "phone speedometer"
+  ]
+}

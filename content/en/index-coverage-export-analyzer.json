@@ -1,0 +1,45 @@
+{
+ "id": "index-coverage-export-analyzer",
+ "seoTitle": "Search Console Page Indexing Export Analyzer",
+ "metaDescription": "Group Search Console non-indexed URL exports by reason and by folder to see which sections lose the most pages. Free, local.",
+ "intro": "Summarises CSV exports from the Search Console page indexing report.",
+ "why": "The report lists reasons pages are not indexed, but the pages are in separate exports and hard to compare. Grouping by folder shows which part of the site is hit.\n\nPaste one or more exports. Add a line like \"# Crawled - currently not indexed\" before an export that has no reason column. A summary table with Reason and Pages columns is also read. The tool groups only; it does not explain statuses.",
+ "howTo": [
+  "Export the URL lists from Search Console as CSV.",
+  "Paste them, each after a # reason line.",
+  "Set the folder depth.",
+  "Read the reasons and the most affected folders."
+ ],
+ "faq": [
+  {
+   "q": "Which columns are needed?",
+   "a": "A URL (or Address) column, or Reason and Pages columns for a summary."
+  },
+  {
+   "q": "Does it log in to Search Console?",
+   "a": "No. You paste exports."
+  },
+  {
+   "q": "Does it say why a status happened?",
+   "a": "No. Read Google help for each reason."
+  },
+  {
+   "q": "Is my data uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "sitemap-robots-cross-check",
+  "soft-404-detector",
+  "seo-robots-noindex-simulator",
+  "sitemap-url-pattern-analyzer",
+  "csv-column-profiler",
+  "keyword-cannibalization-detector"
+ ],
+ "keywords": [
+  "page indexing report",
+  "not indexed reasons",
+  "search console export analyzer",
+  "coverage report csv"
+ ]
+}

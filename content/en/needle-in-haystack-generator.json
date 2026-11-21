@@ -1,0 +1,45 @@
+{
+  "id": "needle-in-haystack-generator",
+  "seoTitle": "Needle-in-a-Haystack Test Text Generator for LLMs",
+  "metaDescription": "Build a long filler document with one hidden fact at a chosen depth to test an LLM's long-context recall, with a question and expected answer.",
+  "intro": "Create reproducible long-context tests: a haystack of neutral sentences with your \"needle\" inserted at the position you choose.",
+  "why": "Set the haystack length in words, the needle sentence, its depth as a percentage from the start, a question and a seed. The filler is generated from small word lists with a seeded generator, so the same settings always give the same text. The output ends with the question, the expected answer and the sentence position of the needle.\n\nRun the same needle at several depths and lengths to see where recall degrades. Real-world long-context tasks are harder than finding one distinctive sentence, so treat results as a lower bound on difficulty.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Set the length and needle depth.",
+    "Edit the needle and question.",
+    "Copy the text into your model and ask the question.",
+    "Compare answers across depths and lengths."
+  ],
+  "faq": [
+    {
+      "q": "What is a needle-in-a-haystack test?",
+      "a": "A test that hides a fact in a long document and checks whether the model can retrieve it."
+    },
+    {
+      "q": "Why a seed?",
+      "a": "So the same document can be regenerated for repeatable comparisons."
+    },
+    {
+      "q": "How many tokens is the text?",
+      "a": "About 1.3 tokens per word for English; use the tokenizer tools for exact counts."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "llm-context-window-shrinker",
+    "rag-chunking-visualizer",
+    "gpt-token-counter",
+    "embedding-token-cost-estimator",
+    "llm-cost-calculator",
+    "prompt-linter"
+  ],
+  "keywords": [
+    "needle in a haystack",
+    "long context test",
+    "llm recall test",
+    "context window benchmark"
+  ]
+}

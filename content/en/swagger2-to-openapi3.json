@@ -1,0 +1,44 @@
+{
+ "id": "swagger2-to-openapi3",
+ "seoTitle": "Free Swagger 2.0 to OpenAPI 3.0 Converter (JSON)",
+ "metaDescription": "Convert a Swagger 2.0 JSON file to OpenAPI 3.0.3 in your browser: servers, components, request bodies, responses, security. Nothing is uploaded.",
+ "intro": "Converts a Swagger 2.0 JSON document to OpenAPI 3.0.3. Host, basePath and schemes become servers, definitions move to components, body and form parameters become request bodies, and security definitions are mapped.",
+ "why": "Many tools now expect OpenAPI 3. Upgrading a Swagger 2.0 file by hand means moving every definition, rewriting each $ref, and turning body parameters into requestBody objects.\n\nThis converter applies those rules locally. Review the result before you publish it: it covers the common cases, not every vendor extension, and it accepts JSON only. Convert YAML to JSON first. You can check the output with the OpenAPI structural validator.",
+ "howTo": [
+  "Paste your Swagger 2.0 JSON.",
+  "Choose an indent.",
+  "Copy the OpenAPI 3.0.3 output.",
+  "Run it through the OpenAPI validator and a diff against your old file."
+ ],
+ "faq": [
+  {
+   "q": "Why JSON only?",
+   "a": "To keep the page small and exact. Use the YAML to JSON converter first."
+  },
+  {
+   "q": "What happens to body parameters?",
+   "a": "They become requestBody with one content entry per consumes media type."
+  },
+  {
+   "q": "How are file parameters handled?",
+   "a": "type: file becomes a string with format binary, in a multipart form body."
+  },
+  {
+   "q": "Is OpenAPI 3.1 supported?",
+   "a": "No. The output is 3.0.3."
+  }
+ ],
+ "related": [
+  "openapi-validator",
+  "openapi-viewer",
+  "postman-to-openapi",
+  "openapi-to-postman",
+  "yaml-to-json",
+  "openapi-to-typescript-fetch"
+ ],
+ "keywords": [
+  "swagger to openapi",
+  "swagger 2.0 to openapi 3",
+  "openapi converter"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "screen-info",
+ "seoTitle": "Free Screen Info - Resolution, Pixel Ratio, Colour Depth",
+ "metaDescription": "See your screen resolution, viewport, pixel ratio, colour depth, touch points, orientation and display features such as dark mode and HDR. Free.",
+ "intro": "See what your browser reports about your display: resolution, viewport size, pixel ratio, colour depth, touch points, orientation and media features.",
+ "why": "Designers and developers often need to know exactly what a device reports: the viewport width for a breakpoint, the pixel ratio for choosing image sizes, or whether a screen is wide-gamut or touch-enabled. Support staff ask users for the same numbers when a layout looks wrong. Reading them out of devtools is awkward on a phone.\n\nThis page lists the values the browser exposes: screen resolution in CSS pixels, an approximate physical resolution, available area, viewport size, device pixel ratio, colour and pixel depth, orientation, maximum touch points, pointer type, hover capability, wide gamut, HDR, dark mode and reduced motion preference. It updates when you resize or rotate. Everything is read locally from your browser, and nothing is sent anywhere.",
+ "howTo": [
+  "Open the page on the device you want to check.",
+  "Read the values in the list.",
+  "Resize the window or rotate the device and watch the numbers update.",
+  "Copy the values into your bug report or design notes."
+ ],
+ "faq": [
+  {
+   "q": "What is the device pixel ratio?",
+   "a": "It is the number of physical pixels per CSS pixel. A ratio of 2 means each CSS pixel is drawn with a 2 by 2 block, which is why high-density screens need larger images to look sharp."
+  },
+  {
+   "q": "Why is the physical resolution approximate?",
+   "a": "It is calculated by multiplying the CSS resolution by the pixel ratio. Browser zoom, scaling settings and rounding can make this slightly different from the true panel resolution."
+  },
+  {
+   "q": "What is the difference between screen and viewport?",
+   "a": "The screen is the whole display. The viewport is the visible area for the page inside the browser window, excluding toolbars and scrollbars. Breakpoints respond to the viewport, not the screen."
+  },
+  {
+   "q": "Why does it say hover is not available?",
+   "a": "Touch-only devices usually report no hover capability, because there is no pointer that can hover. This helps sites decide whether to rely on hover menus."
+  }
+ ],
+ "related": [
+  "browser-info",
+  "browser-fingerprint",
+  "responsive-breakpoint-previewer",
+  "screen-size-ppi",
+  "screen-ruler",
+  "aspect-ratio-calculator"
+ ],
+ "keywords": [
+  "screen info",
+  "what is my screen resolution",
+  "device pixel ratio checker",
+  "viewport size checker",
+  "free display info tool"
+ ]
+}

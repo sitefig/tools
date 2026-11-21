@@ -1,0 +1,45 @@
+{
+ "id": "sql-to-go-gorm",
+ "seoTitle": "Free SQL DDL to Go GORM Structs Converter Online",
+ "metaDescription": "Convert CREATE TABLE statements into Go GORM structs with gorm and json tags, pointer types for nullable columns and TableName methods. Free.",
+ "intro": "Converts CREATE TABLE statements into Go GORM structs with Go-style field names, pointer types for nullable columns, gorm and json tags, belongs-to association fields and TableName() methods.",
+ "why": "Writing GORM models for an existing schema means translating every column into a Go field with the right type, name and tag: ID instead of Id, a pointer for NULLable columns, a gorm tag for column name, size and constraints, and a json tag for the API. For a large table that is a lot of careful typing, and a missed tag can silently map a field to the wrong column. Paste the DDL here and get structs with those details filled in, including belongs-to fields for foreign keys and a TableName method when the table name differs from GORM's convention. It is a starting point rather than a finished model. The conversion runs in your browser.",
+ "howTo": [
+  "Paste your CREATE TABLE statements into the input box.",
+  "Run the conversion to get the Go structs.",
+  "Copy them into your package, run gofmt and check the field types against your code."
+ ],
+ "faq": [
+  {
+   "q": "How are nullable columns represented?",
+   "a": "Nullable columns become pointer types, such as *string or *int64, so that a NULL value in the database maps to nil in Go instead of being confused with an empty string or zero."
+  },
+  {
+   "q": "What tags are generated?",
+   "a": "A gorm tag with column, primaryKey, autoIncrement, size, not null, uniqueIndex, default or precision as needed, and a json tag with the column name."
+  },
+  {
+   "q": "How are names converted?",
+   "a": "Column names become Go-style exported field names, with common initialisms such as ID and URL written in capitals. The original column name is kept in the gorm tag so the mapping stays correct."
+  },
+  {
+   "q": "Are associations created?",
+   "a": "Foreign keys produce belongs-to association fields. Has-many and many-to-many associations are not generated, so add them where you need them."
+  }
+ ],
+ "related": [
+  "sql-to-django",
+  "sql-to-python-sqlalchemy",
+  "sql-to-drizzle",
+  "json-to-go",
+  "sql-dialect-converter",
+  "sql-to-orm-schema"
+ ],
+ "keywords": [
+  "sql to gorm",
+  "create table to go struct",
+  "gorm model generator",
+  "free ddl to golang struct",
+  "convert mysql schema to gorm"
+ ]
+}

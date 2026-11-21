@@ -1,0 +1,45 @@
+{
+ "id": "crawl-spike-drop-alerts",
+ "seoTitle": "Crawl Spike and Drop Alerts From Access Logs",
+ "metaDescription": "Flag days when bot requests jump or fall against the average of the previous days, per crawler or in total. Free, in your browser.",
+ "intro": "Compares each day's crawler requests with the average of the days before and flags spikes and drops above a threshold.",
+ "why": "A sudden drop in crawling can follow a server problem, a robots.txt mistake or a block. A spike can be a new crawler, a fake bot or a change in your internal links. Spotting either early helps.\n\nYou set the baseline window, the percent change and a minimum baseline so that quiet days do not raise false alarms. Days with less than 20 hours of log lines are marked as partial, since a half day always looks like a drop.",
+ "howTo": [
+  "Paste log lines for as many days as you have.",
+  "Choose all bots together or each bot separately.",
+  "Set the window, the threshold in percent and the minimum baseline.",
+  "Open the flagged days and compare them with deploys, outages and robots.txt changes."
+ ],
+ "faq": [
+  {
+   "q": "How is the baseline computed?",
+   "a": "As the plain average of the previous days in the window. A longer log gives better baselines."
+  },
+  {
+   "q": "Why is the first day not checked?",
+   "a": "There are no earlier days to compare it with."
+  },
+  {
+   "q": "A spike came from one IP.",
+   "a": "Check it with the fake Googlebot detector. Fake bots often cause spikes."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench."
+  }
+ ],
+ "related": [
+  "googlebot-crawl-budget-analyzer",
+  "traffic-drop-analyzer",
+  "bot-traffic-share-calculator",
+  "googlebot-mobile-desktop-split",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer"
+ ],
+ "keywords": [
+  "crawl spike detection",
+  "googlebot crawl drop log analysis",
+  "crawl rate change alert",
+  "daily bot requests anomaly"
+ ]
+}

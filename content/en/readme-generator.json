@@ -1,0 +1,46 @@
+{
+ "id": "readme-generator",
+ "seoTitle": "Free README Generator - Markdown README Template",
+ "metaDescription": "Create a README.md skeleton with title, description, table of contents, install, usage, contributing and license sections. Free, runs in your browser.",
+ "intro": "Enter a project name, description, install command and usage snippet to get a README.md skeleton with the sections most projects need.",
+ "why": "The README is the first thing a visitor reads, and an empty or messy one makes people leave before trying the project. The structure is nearly always the same: what it is, how to install it, how to use it, how to contribute and what licence applies. Starting from a blank file makes it easy to skip one of those.\n\nThis generator fills in that skeleton for you. It writes the heading, your description, optional table of contents with working anchor links, installation and usage code blocks, a short contributing note and the licence name. It is deliberately plain, so you can add badges, screenshots, API tables or a roadmap afterwards. Use the Markdown preview tool to check the final result. Everything is generated in the browser.",
+ "howTo": [
+  "Enter the project name and a one-line description.",
+  "Fill in the install command, usage snippet and licence name.",
+  "Tick or untick Contributing section and Table of contents.",
+  "Copy the Markdown into README.md."
+ ],
+ "faq": [
+  {
+   "q": "Which sections does it create?",
+   "a": "A title and description, an optional table of contents, then Installation, Usage, an optional Contributing section and License. You can add more sections by hand afterwards."
+  },
+  {
+   "q": "Are the table of contents links reliable?",
+   "a": "They use lowercase anchors that match the generated headings, which works on GitHub and most Markdown renderers. If you rename a heading later, update its link too."
+  },
+  {
+   "q": "Can I add badges and screenshots?",
+   "a": "Not in this tool. Add them to the generated Markdown yourself, below the title is the usual place. The output is plain text, so any edit works."
+  },
+  {
+   "q": "Does it write the licence text?",
+   "a": "No, it only prints the licence name in the README. Use the licence generator to create the matching LICENSE file for your repository."
+  }
+ ],
+ "related": [
+  "markdown-preview",
+  "markdown-cheatsheet",
+  "license-generator",
+  "markdown-to-html",
+  "changelog-generator",
+  "github-issue-pr-template-generator"
+ ],
+ "keywords": [
+  "readme generator",
+  "readme.md template",
+  "create readme online",
+  "github readme builder",
+  "free markdown readme maker"
+ ]
+}

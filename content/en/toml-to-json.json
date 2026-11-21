@@ -1,0 +1,47 @@
+{
+ "id": "toml-to-json",
+ "seoTitle": "Free TOML to JSON Converter Online",
+ "metaDescription": "Free online TOML to JSON converter. Parses tables, arrays of tables, inline tables, dotted keys and dates, and reports errors with the line number.",
+ "intro": "Convert TOML to JSON. Tables, arrays of tables, inline tables, dotted keys, multi-line strings, numbers in several bases and dates are parsed, and errors give a line number.",
+ "why": "TOML files such as Cargo.toml or pyproject.toml are pleasant to edit but awkward to process with tools that expect JSON. Converting shows how a parser reads your file: which keys end up under which table, how a repeated [[servers]] section becomes an array, and what type a value has.\n\nPaste the TOML and get JSON with your chosen indent. Dotted keys such as site.name are expanded into nested objects, hex and exponent numbers are converted, and dates are kept as strings in a standard form. If the file has a mistake, the error mentions the line, so you can fix it quickly. Parsing is done in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your TOML into the input box.",
+  "Choose the indent for the JSON output.",
+  "Read the JSON and check how tables and arrays of tables were nested.",
+  "Copy the JSON, or fix the TOML at the line named in the error."
+ ],
+ "faq": [
+  {
+   "q": "How are arrays of tables converted?",
+   "a": "Each [[name]] section adds one object to an array called name. Two [[servers]] sections give a servers array with two objects."
+  },
+  {
+   "q": "How are dates represented?",
+   "a": "JSON has no date type, so TOML dates and times are written as strings in their original form, for example \"1979-05-27T07:32:00Z\". Parse them in your own code."
+  },
+  {
+   "q": "What if my TOML has an error?",
+   "a": "You get a message that begins with TOML error at line N and explains the problem, such as a duplicate key or a bad value."
+  },
+  {
+   "q": "Can I convert back to TOML?",
+   "a": "Yes, with the JSON to TOML tool in this collection. Remember that TOML cannot hold null values, so any nulls in your JSON need to be removed or replaced first."
+  }
+ ],
+ "related": [
+  "json-to-toml",
+  "toml-formatter",
+  "yaml-to-json",
+  "json-format",
+  "json-to-yaml",
+  "json-validate"
+ ],
+ "keywords": [
+  "toml to json converter",
+  "convert toml to json online",
+  "toml parser online",
+  "free toml to json",
+  "toml json tool",
+  "cargo toml to json"
+ ]
+}

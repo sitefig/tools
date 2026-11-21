@@ -1,0 +1,44 @@
+{
+ "id": "outlier-detector",
+ "seoTitle": "Outlier Detector for a CSV Column: IQR or Z-Score",
+ "metaDescription": "Flag numeric outliers in a CSV column with Tukey IQR fences or a z-score limit and add a flag column. Free, shows the limits used.",
+ "intro": "Marks values far outside the usual range of a column as low or high and adds an outlier column you can filter on.",
+ "why": "Outliers can be errors, special cases or the finding. The IQR method flags values beyond 1.5 times the interquartile range from the quartiles, which does not depend on a normal distribution. The z-score method flags values more than a set number of standard deviations from the mean and is thrown off by the very outliers it looks for.\n\nThe summary prints the exact limits so the decision is reproducible. Flagging is not removal: check each case before deleting.",
+ "howTo": [
+  "Paste the CSV and name the numeric column.",
+  "Pick IQR or z-score and the threshold.",
+  "Read the limits in the summary.",
+  "Copy or download the table, or only the flagged rows."
+ ],
+ "faq": [
+  {
+   "q": "Which quartile method?",
+   "a": "Linear interpolation, same as Excel QUARTILE.INC."
+  },
+  {
+   "q": "Which standard deviation?",
+   "a": "Sample standard deviation (n-1)."
+  },
+  {
+   "q": "Non-numeric cells?",
+   "a": "They are marked not a number."
+  },
+  {
+   "q": "Minimum data?",
+   "a": "At least 4 numbers."
+  }
+ ],
+ "related": [
+  "box-plot-maker",
+  "histogram-builder",
+  "statistics-calculator",
+  "missing-value-filler",
+  "column-statistics-summarizer",
+  "csv-column-profiler"
+ ],
+ "keywords": [
+  "outlier detection csv",
+  "iqr outliers",
+  "z score outliers online"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "id": "ai-question-answering",
+ "seoTitle": "AI Question Answering from Your Text, Offline in the Browser",
+ "metaDescription": "Paste a passage, ask a question, and a DistilBERT SQuAD model highlights the answer span. Runs locally in your browser; nothing is uploaded.",
+ "intro": "Ask a question about a passage and get the exact answer span highlighted, from a neural model that runs in your tab.",
+ "why": "Extractive question answering finds the stretch of text that answers a question, instead of generating new text. That makes it far less prone to invention than a chat model: the answer is always words from your passage, so you can check it at a glance. It suits contracts, manuals, meeting notes and articles you do not want to upload.\n\nThe model is distilbert-base-cased-distilled-squad (Apache-2.0, trained on SQuAD v1.1) with int8 weights and a hand-written JavaScript engine. Long passages are read in overlapping 384-token windows and the best span is returned. It cannot say \"not in the text\": a low confidence figure is your warning.",
+ "howTo": [
+  "Paste the passage and type a question.",
+  "Press Find the answer; the first run downloads 67 MB once.",
+  "Read the highlighted span and the confidence; treat low confidence as \"probably not in the text\"."
+ ],
+ "faq": [
+  {
+   "q": "Does it write answers?",
+   "a": "No, it only selects a span from your text. It cannot summarise, combine facts from two places or do arithmetic."
+  },
+  {
+   "q": "How do I know the answer is right?",
+   "a": "Read the highlighted sentence in context and check the confidence. Under about 20% usually means the passage does not contain the answer."
+  },
+  {
+   "q": "How long can the passage be?",
+   "a": "Several pages. Longer text is split into overlapping windows, which takes longer; very large documents are better split by section."
+  }
+ ],
+ "related": [
+  "ai-fill-mask",
+  "ai-sentiment-classifier",
+  "text-summarizer",
+  "rag-chunking-visualizer",
+  "ai-language-identifier"
+ ],
+ "keywords": [
+  "question answering offline",
+  "squad bert browser",
+  "extract answer from text"
+ ]
+}

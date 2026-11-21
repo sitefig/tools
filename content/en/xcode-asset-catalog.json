@@ -1,0 +1,43 @@
+{
+ "id": "xcode-asset-catalog",
+ "seoTitle": "Free Xcode Asset Catalog Contents.json Generator",
+ "metaDescription": "Generate Contents.json for Xcode asset catalogs: app icon sets, image sets and colour sets with dark variants. Free, runs in your browser.",
+ "intro": "Choose an app icon, image set or colour set and get the exact Contents.json for your .xcassets folder, along with the folder path and the file names Xcode expects.",
+ "why": "Xcode normally writes Contents.json for you when you drag images into the catalog. That stops being convenient when you script a build, add assets from a design handoff, or work in a repository where the catalog is edited as text. Then you need the JSON shape, and one wrong key means an icon silently goes missing.\n\nThis tool produces the three common shapes: a single 1024 px app icon with optional dark and tinted variants, the legacy iPhone and iPad size matrix with the pixel size of each file, and image or colour sets with dark appearances. It runs in your browser and nothing you type leaves the page.",
+ "howTo": [
+  "Select the asset type: app icon (single or legacy), image set or colour set.",
+  "Enter the asset name, and the light and dark hex colours if you chose a colour set.",
+  "Tick the dark variant or template rendering options that apply.",
+  "Copy the JSON into the folder path shown on the first line, then add the PNG files with the listed names."
+ ],
+ "faq": [
+  {
+   "q": "Which app icon option should I choose?",
+   "a": "Choose the single 1024 pixel option for projects built with Xcode 14 or later, because Xcode generates the other sizes. The legacy matrix is for older projects that still need every size supplied as a separate PNG."
+  },
+  {
+   "q": "Does the tool create the image files?",
+   "a": "No. It writes Contents.json and lists the file names and pixel dimensions you need to supply. Export the PNGs from your design tool using exactly those names, with no transparency for the app icon."
+  },
+  {
+   "q": "What colour format does the colour set use?",
+   "a": "Colours are written in the sRGB colour space as hex component values. Leave the dark colour blank if the colour should look the same in both appearances, and the tool will emit only the light entry."
+  }
+ ],
+ "related": [
+  "ios-plist-builder",
+  "app-icon-generator",
+  "favicon-generator",
+  "flutter-theme-generator",
+  "color-converter",
+  "android-manifest-builder"
+ ],
+ "keywords": [
+  "xcode asset catalog generator",
+  "contents.json generator",
+  "xcassets appiconset json",
+  "xcode colorset json",
+  "ios app icon sizes",
+  "free xcode assets tool"
+ ]
+}

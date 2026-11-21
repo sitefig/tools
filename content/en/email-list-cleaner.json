@@ -1,0 +1,45 @@
+{
+ "id": "email-list-cleaner",
+ "seoTitle": "Email List Cleaner: Dedupe, Lowercase and Validate",
+ "metaDescription": "Clean an email list in your browser: split on any separator, lowercase, remove duplicates and invalid addresses, and see what was removed and why.",
+ "intro": "Paste a messy list from a spreadsheet or export and get back a clean, de-duplicated list plus a list of what was removed.",
+ "why": "Lists collected from forms, exports and spreadsheets come with mixed case, duplicates, trailing punctuation and typos. Cleaning them before an import avoids bounces and double sends.\n\nThe check is syntax only. It cannot tell whether a mailbox exists, which needs a live check or a confirmation email. Because email addresses are personal data, it matters that nothing is uploaded: the list is processed in your browser only.",
+ "howTo": [
+  "Paste addresses separated by lines, commas, semicolons or spaces.",
+  "Choose lowercase and sorting.",
+  "Copy the clean list.",
+  "Review the invalid and duplicate lists."
+ ],
+ "faq": [
+  {
+   "q": "Does lowercasing break addresses?",
+   "a": "In theory the local part is case sensitive, but in practice providers treat it as insensitive. Turn the option off to keep the original case."
+  },
+  {
+   "q": "Does it check that the mailbox exists?",
+   "a": "No, syntax only."
+  },
+  {
+   "q": "What about \"Name <email>\" format?",
+   "a": "The address inside the brackets is used."
+  },
+  {
+   "q": "Is my list uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "email-validator",
+  "email-domain-typo-fixer",
+  "disposable-email-detector",
+  "html-email-extractor",
+  "extract-emails-urls-numbers",
+  "email-name-formatter"
+ ],
+ "keywords": [
+  "email list cleaner",
+  "remove duplicate emails",
+  "email list validator",
+  "clean email list"
+ ]
+}

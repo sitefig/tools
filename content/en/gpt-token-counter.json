@@ -1,0 +1,46 @@
+{
+  "id": "gpt-token-counter",
+  "seoTitle": "Free GPT Token Counter for GPT-4 and GPT-4o",
+  "metaDescription": "Count tokens in text with the exact cl100k_base and o200k_base encodings side by side, plus chat message overhead. Free, runs in your browser.",
+  "intro": "Counts tokens for your text under both OpenAI encodings at once. A second box accepts chat messages as JSON and adds the usual per-message overhead to estimate a request size.",
+  "why": "Prompts have a budget. Context windows, rate limits and per-token pricing all depend on counts, and guessing from word counts is off by a wide margin for code, numbers and non-English text.\n\nPaste your text and see the exact figure for cl100k_base, used by GPT-4 and GPT-3.5, and for o200k_base, used by GPT-4o and later models. If you are building a chat request, paste the messages as a JSON array and the tool adds the per-message overhead from OpenAI's cookbook rule: three tokens per message, one more for a name and three to prime the reply. That total is an estimate, since real usage can vary slightly by model. All counting is local in your browser.",
+  "howTo": [
+    "Paste the text you want to count into the Text box.",
+    "Optionally paste chat messages as a JSON array of role, optional name and content.",
+    "Read the token counts for cl100k_base and o200k_base.",
+    "Use the chat total, with its content-only and overhead split, to plan your request size."
+  ],
+  "faq": [
+    {
+      "q": "How are chat messages counted?",
+      "a": "Each message adds 3 tokens, plus 1 if it has a name, plus the tokens of every field value, and 3 more tokens are added once for the reply. It is the cookbook approximation, not a guarantee for every model version."
+    },
+    {
+      "q": "What is the difference between the two encodings?",
+      "a": "cl100k_base belongs to GPT-4 and GPT-3.5-turbo, o200k_base to GPT-4o and later families. The newer one has a larger vocabulary and usually produces fewer tokens for non-English text and code."
+    },
+    {
+      "q": "Will it count tool calls or images?",
+      "a": "No. Function and tool definitions, images, audio and newer message fields add their own overhead in real requests, and this tool does not model that. Treat the total as a lower-bound estimate."
+    },
+    {
+      "q": "Is my text uploaded?",
+      "a": "No. A vocabulary file is loaded from this site on first use. The counting itself runs in your browser, so prompts and messages stay on your device."
+    }
+  ],
+  "related": [
+    "tiktoken-visualizer",
+    "tokenizer-cost-estimator",
+    "multi-tokenizer-counter",
+    "llm-cost-calculator",
+    "system-prompt-budgeter",
+    "llm-token-estimator"
+  ],
+  "keywords": [
+    "gpt token counter",
+    "openai token counter",
+    "gpt-4o token counter",
+    "count tokens in prompt",
+    "free token calculator"
+  ]
+}

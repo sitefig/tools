@@ -1,0 +1,39 @@
+{
+ "id": "overtime-pay-calculator",
+ "seoTitle": "Overtime Pay Calculator with Time-and-a-Half and Double Time",
+ "metaDescription": "Split hours into regular, overtime and double-time and see pay for each at your multipliers. Free calculator.",
+ "intro": "Splits worked hours at your thresholds and multipliers and returns regular, overtime and double-time pay and the total.",
+ "why": "Overtime rules vary: 1.5 times after 40 hours here, double time after 12 there. Enter your own threshold, multipliers and rate.\n\nOutput is gross pay. It does not know any country's rules, taxes or contract terms.",
+ "howTo": [
+  "Enter hours worked and the regular threshold.",
+  "Enter your rate and multipliers.",
+  "Add a double-time threshold if you have one."
+ ],
+ "faq": [
+  {
+   "q": "Is the threshold weekly or daily?",
+   "a": "Whichever you enter. Apply it per period."
+  },
+  {
+   "q": "What is double time?",
+   "a": "Hours above a second threshold paid at a higher multiplier, often 2."
+  },
+  {
+   "q": "Does it include tax?",
+   "a": "No, gross pay only."
+  }
+ ],
+ "related": [
+  "work-hours-calculator",
+  "hours-minutes-decimal-converter",
+  "salary-hourly",
+  "time-duration-calculator",
+  "day-rate-to-salary-converter",
+  "freelance-hourly-rate-calculator"
+ ],
+ "keywords": [
+  "overtime calculator",
+  "time and a half",
+  "double time pay"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "typescript-interface-to-zod",
+ "seoTitle": "Free TypeScript Interface to Zod Schema Converter",
+ "metaDescription": "Convert TypeScript interfaces, types and enums into Zod schemas with inferred types. Supports unions, tuples, records, optional fields. Free, in browser.",
+ "intro": "Converts TypeScript interfaces, type aliases and enums into Zod schemas such as z.object, z.enum, z.union and z.record, with optional and nullable handling and inferred types.",
+ "why": "TypeScript types vanish at runtime, so a response from an API or a form submission is only trusted until it arrives with the wrong shape. Zod checks the data at runtime, but writing a schema for every existing interface is repetitive work. Paste your declarations and this tool writes the matching schemas, turns JSDoc comments into descriptions and adds the inferred type exports so the two stay in line. It supports the same subset of TypeScript as the TypeScript to JSON Schema tool: common types, unions, tuples, records and enums, but not conditional or mapped types. You can add .strict() to objects. The conversion runs in your browser and your code is not uploaded.",
+ "howTo": [
+  "Paste your TypeScript interfaces, types and enums into the input box.",
+  "Tick \"Use .strict() on objects\" if unknown keys should be rejected.",
+  "Copy the generated Zod module into your project and install zod if you have not already."
+ ],
+ "faq": [
+  {
+   "q": "What does the output contain?",
+   "a": "A Zod schema for each declaration, in dependency order, plus inferred type exports from z.infer so your types follow the schema."
+  },
+  {
+   "q": "Which TypeScript constructs are supported?",
+   "a": "Interfaces, type aliases, enums, optional and nullable properties, unions, literals, tuples, arrays, Record, Date, index signatures and extends. Conditional and mapped types are not supported."
+  },
+  {
+   "q": "How are optional properties written?",
+   "a": "Properties marked with a question mark become .optional(). Types that include null become .nullable(), and a union of several types becomes z.union, so each alternative is still checked at runtime."
+  },
+  {
+   "q": "Does it validate formats like email or URL?",
+   "a": "No. TypeScript has no such information, so strings become plain z.string(). Add .email(), .url() or .min() yourself where needed."
+  }
+ ],
+ "related": [
+  "zod-to-typescript-type",
+  "typescript-to-json-schema",
+  "json-schema-to-zod",
+  "json-to-zod",
+  "graphql-schema-to-zod",
+  "json-schema-generator"
+ ],
+ "keywords": [
+  "typescript interface to zod",
+  "typescript to zod schema",
+  "convert ts types to zod",
+  "free zod schema generator",
+  "zod from typescript"
+ ]
+}

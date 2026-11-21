@@ -1,0 +1,46 @@
+{
+ "id": "terms-generator",
+ "seoTitle": "Free Terms of Service Generator (Template)",
+ "metaDescription": "Draft website or SaaS terms and conditions with optional accounts, payments, user content and liability clauses. Free; not legal advice.",
+ "intro": "Create a draft of website or SaaS terms and conditions, with optional clauses for accounts, paid plans and refunds, user content and limits of liability. Template only, not legal advice.",
+ "why": "A site that offers accounts, takes payments or lets people post content needs terms that set out who may use it, what happens when something goes wrong and which law applies. Without them, disputes are settled by default rules that rarely favour the small business.\n\nThis generator assembles a first draft from the options you choose: governing law, minimum age, whether there are accounts, paid plans with a refund period, user-generated content and a liability clause. It is a starting template and not legal advice. Consumer protection rules in many countries override clauses like refunds and liability limits, so a lawyer should check the result for your market. The text is produced in your browser.",
+ "howTo": [
+  "Enter your company name, website and contact email.",
+  "Set the governing law and the minimum age of users.",
+  "Tick accounts, paid plans, user content and liability as they apply, and give the refund period in days.",
+  "Run the tool and take the draft to a lawyer before publishing it."
+ ],
+ "faq": [
+  {
+   "q": "Can I publish the generated terms as they are?",
+   "a": "It is risky. The output is a generic template, not legal advice. Local consumer law may override parts of it, so have a qualified lawyer review and adapt it."
+  },
+  {
+   "q": "What does the refund period setting do?",
+   "a": "It adds a refund clause with the number of days you give. Setting it to 0 means no refund clause. Statutory rights, such as cooling-off periods, may apply regardless."
+  },
+  {
+   "q": "Does it cover privacy and cookies?",
+   "a": "No. Those need their own documents. Use the privacy policy and cookie policy generators and link them from your terms."
+  },
+  {
+   "q": "Is anything I type uploaded?",
+   "a": "No. The terms are generated in your browser from your answers and are not sent to any server."
+  }
+ ],
+ "related": [
+  "privacy-policy-generator",
+  "cookie-policy-generator",
+  "license-generator",
+  "cookie-banner-generator",
+  "gdpr-checklist",
+  "readme-generator"
+ ],
+ "keywords": [
+  "terms of service generator",
+  "terms and conditions template",
+  "free tos generator",
+  "saas terms generator",
+  "website terms draft"
+ ]
+}

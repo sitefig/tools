@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free SQL to ER Diagram Generator Online | Free Tools</title>
+<meta name="description" content="Paste CREATE TABLE statements and get an entity-relationship diagram with crow's-foot notation. Free, runs in your browser, nothing is uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/sql-ddl-to-diagram/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/sql-ddl-to-diagram/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/sql-ddl-to-diagram/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free SQL to ER Diagram Generator Online | Free Tools">
+<meta property="og:description" content="Paste CREATE TABLE statements and get an entity-relationship diagram with crow's-foot notation. Free, runs in your browser, nothing is uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/sql-ddl-to-diagram/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free SQL to ER Diagram Generator Online | Free Tools">
+<meta name="twitter:description" content="Paste CREATE TABLE statements and get an entity-relationship diagram with crow's-foot notation. Free, runs in your browser, nothing is uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"SQL DDL to ER Diagram","url":"https://tools.sitefig.net/en/sql-ddl-to-diagram/","description":"Paste CREATE TABLE statements and get an entity-relationship diagram with crow's-foot notation. Free, runs in your browser, nothing is uploaded.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your CREATE TABLE statements, and any ALTER TABLE ... ADD FOREIGN KEY lines, into the box.","Choose the layout direction: LR for left to right or TB for top to bottom.","Pick an edge style: curved, orthogonal or straight lines between tables.","Check the rendered diagram, then download or copy the SVG for your docs."],"keywords":"sql to er diagram, create table to diagram, free er diagram generator, sql schema visualizer online, ddl to entity relationship diagram, crow's foot diagram from sql","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Diagrams","item":"https://tools.sitefig.net/en/#diagrams"},{"@type":"ListItem","position":3,"name":"SQL DDL to ER Diagram","item":"https://tools.sitefig.net/en/sql-ddl-to-diagram/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which SQL dialects does it understand?","acceptedAnswer":{"@type":"Answer","text":"Generic SQL plus common MySQL, PostgreSQL and SQLite syntax for CREATE TABLE, PRIMARY KEY, FOREIGN KEY, inline REFERENCES, UNIQUE, NOT NULL and ALTER TABLE ... ADD FOREIGN KEY. Statements it does not recognise, such as INSERT or CREATE INDEX, are ignored."}},{"@type":"Question","name":"Why is a relationship line missing?","acceptedAnswer":{"@type":"Answer","text":"Lines are drawn only from declared foreign keys. If your schema relies on naming conventions such as user_id without a REFERENCES clause, the tool has nothing to connect. Add the constraint, or an ALTER TABLE statement, and the line appears."}},{"@type":"Question","name":"Does it connect to my database?","acceptedAnswer":{"@type":"Answer","text":"No. It only reads the text you paste, so there is no connection string, login or upload. Export the schema with your usual dump command, paste it here, and the diagram is built inside the page."}},{"@type":"Question","name":"Can I edit the diagram by hand afterwards?","acceptedAnswer":{"@type":"Answer","text":"The output is an SVG, which you can open in any vector editor. For a text-based alternative that you keep in version control, write the structure in Mermaid and use the Mermaid renderer instead."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#diagrams">Diagrams</a></li><li><span aria-current="page">SQL DDL to ER Diagram</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>SQL DDL to ER Diagram</h1>
+<p class="lede">Paste your CREATE TABLE statements and get an entity-relationship diagram as SVG, with primary keys, foreign keys and crow's-foot relationship lines drawn for you.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="sql-ddl-to-diagram" data-module="diagrams"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Schemas live in migration files and dump scripts, and nobody can see the shape of a database by reading forty CREATE TABLE statements. You need a picture when you join a project, review a pull request that adds three tables, or explain the data model to a colleague who does not read SQL.</p>
+<p>Most diagram tools want an account, a database connection or an upload of your schema. This one reads the DDL you paste, draws the diagram locally and hands back an SVG you can drop into documentation. Your table and column names, which often reveal how a business works, stay on your machine.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your CREATE TABLE statements, and any ALTER TABLE ... ADD FOREIGN KEY lines, into the box.</li><li>Choose the layout direction: LR for left to right or TB for top to bottom.</li><li>Pick an edge style: curved, orthogonal or straight lines between tables.</li><li>Check the rendered diagram, then download or copy the SVG for your docs.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which SQL dialects does it understand?</summary><p>Generic SQL plus common MySQL, PostgreSQL and SQLite syntax for CREATE TABLE, PRIMARY KEY, FOREIGN KEY, inline REFERENCES, UNIQUE, NOT NULL and ALTER TABLE ... ADD FOREIGN KEY. Statements it does not recognise, such as INSERT or CREATE INDEX, are ignored.</p></details>
+<details><summary>Why is a relationship line missing?</summary><p>Lines are drawn only from declared foreign keys. If your schema relies on naming conventions such as user_id without a REFERENCES clause, the tool has nothing to connect. Add the constraint, or an ALTER TABLE statement, and the line appears.</p></details>
+<details><summary>Does it connect to my database?</summary><p>No. It only reads the text you paste, so there is no connection string, login or upload. Export the schema with your usual dump command, paste it here, and the diagram is built inside the page.</p></details>
+<details><summary>Can I edit the diagram by hand afterwards?</summary><p>The output is an SVG, which you can open in any vector editor. For a text-based alternative that you keep in version control, write the structure in Mermaid and use the Mermaid renderer instead.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/mermaid-lite-renderer/"><span class="link-card__title">Mermaid Diagram Renderer (lite)</span><span class="link-card__desc">Renders a practical Mermaid subset to SVG, fully offline with a hand-written layered layout. Supported: flowchart/graph (TD TB LR RL BT; shapes [] () ([ ]) [[ ]] [( )] (( )) {} {{ }} [/ /]; edges --&gt; --- -.-&gt; ==&gt; with |label| or -- text --&gt;; chains A--&gt;B--&gt;C; &amp; fan-out; subgraph...end (nested, edges into subgraphs); classDef/class/:::/style/linkStyle), sequenceDiagram (participant/actor aliases, -&gt;&gt; --&gt;&gt; -&gt; --&gt; -x -), +/- activations, notes, loop/alt/else/opt/par/and/critical/break/rect blocks, autonumber), pie (title, showData), gantt (sections, YYYY-MM-DD, durations d/w/h, after id, done/active/crit/milestone), erDiagram (entities with attributes, cardinalities, labels), stateDiagram-v2 (transitions, [*], composite states, choice/fork, notes, descriptions) and classDiagram (members, &lt;&lt;annotations&gt;&gt;, inheritance/composition/aggregation/association/dependency/realization, cardinalities). Not supported: themes/init directives, click/links, icons, markdown/KaTeX text, WITH-style styling beyond basics, mindmap/timeline/journey/git/quadrant/C4/etc. Text widths are estimated, so very tight labels can differ slightly from a browser render.</span></a></li><li><a class="link-card" href="/en/graphviz-dot-lite/"><span class="link-card__title">Graphviz DOT Renderer (lite)</span><span class="link-card__desc">Renders a simple DOT subset to SVG offline with the built-in layered layout (not the real Graphviz engine, so positions differ). Supported: digraph/graph, rankdir, node/edge/graph default attributes, node and edge statements with chains and {a b} sets, quoted ids, label (with \n), shape (box ellipse circle diamond hexagon cylinder plaintext parallelogram), style (filled dashed dotted bold invis), color/fillcolor/fontcolor, arrowhead/arrowtail/dir, headlabel/taillabel, cluster subgraphs. Not supported: HTML labels, record ports, ports/compass points, splines/ratio/size/nodesep and other layout attributes (ignored).</span></a></li><li><a class="link-card" href="/en/sql-format/"><span class="link-card__title">SQL Formatter</span><span class="link-card__desc">Uppercase keywords and lay out clauses, joins and subqueries on separate lines.</span></a></li><li><a class="link-card" href="/en/sql-to-prisma/"><span class="link-card__title">SQL DDL to Prisma Schema</span><span class="link-card__desc">Convert CREATE TABLE statements (PostgreSQL, MySQL or SQLite syntax) to a schema.prisma: models with @id, @default(autoincrement()/now()), @unique, @map/@@map for snake_case columns, @db.* native types, composite @@id/@@unique/@@index, foreign keys as @relation with generated back-relation lists.</span></a></li><li><a class="link-card" href="/en/prisma-to-sql/"><span class="link-card__title">Prisma Schema to SQL DDL</span><span class="link-card__desc">Convert a schema.prisma (models, enums, @id, @unique, @default, @map/@@map, @db.* types, @relation foreign keys, @@id/@@unique/@@index) into CREATE TABLE statements for PostgreSQL, MySQL or SQLite. Follows Prisma default type mappings (String -&gt; text / varchar(191) on MySQL); client-side defaults such as uuid()/cuid() produce no SQL default.</span></a></li><li><a class="link-card" href="/en/sql-dialect-converter/"><span class="link-card__title">SQL DDL Converter (PostgreSQL / MySQL / SQLite)</span><span class="link-card__desc">Convert CREATE TABLE / CREATE INDEX DDL between PostgreSQL, MySQL and SQLite: SERIAL &lt;-&gt; AUTO_INCREMENT, BOOLEAN &lt;-&gt; TINYINT(1), TIMESTAMPTZ &lt;-&gt; DATETIME, UUID &lt;-&gt; CHAR(36), JSONB &lt;-&gt; JSON, defaults (now(), true/false), identifier quoting, PK/UNIQUE/FK and indexes. DDL is parsed and re-emitted; views, triggers, functions, partitions and CHECK constraints are not carried over.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

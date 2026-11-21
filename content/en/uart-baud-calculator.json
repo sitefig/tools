@@ -1,0 +1,45 @@
+{
+  "id": "uart-baud-calculator",
+  "seoTitle": "UART Baud Rate Divisor and Error Calculator",
+  "metaDescription": "Find the baud rate register value for a microcontroller clock, the actual baud rate and the percentage error for 16x and 8x oversampling.",
+  "intro": "Check whether your clock can produce a baud rate accurately, before you wonder why serial output is garbled.",
+  "why": "Enter the clock frequency and target baud rate. For normal (16x) and double-speed (8x) modes the page computes the exact divisor, the rounded register value (UBRR = round(f/(oversampling*baud)) - 1), the baud rate actually generated, the error percentage and a verdict (under about 2% is fine, around 3% is marginal).\n\nBoth ends need to agree within the UART tolerance, so errors on each side add up. Crystals such as 18.432 MHz and 3.6864 MHz divide evenly into standard baud rates.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the clock in Hz and the baud rate.",
+    "Compare normal and double-speed mode.",
+    "Pick the register value with the smallest error.",
+    "Choose a different crystal if both are poor."
+  ],
+  "faq": [
+    {
+      "q": "What error is acceptable?",
+      "a": "Roughly under 2% in total between transmitter and receiver."
+    },
+    {
+      "q": "What is U2X?",
+      "a": "The AVR double-speed bit that halves the oversampling to 8x."
+    },
+    {
+      "q": "Do other MCUs use the same formula?",
+      "a": "Many do with small variations; check the datasheet."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "pwm-calculator",
+    "resistor-color-code-calculator",
+    "wavelength-antenna-calculator",
+    "battery-life-estimator",
+    "bandwidth-download-time",
+    "bitwise-calculator"
+  ],
+  "keywords": [
+    "uart baud rate calculator",
+    "ubrr calculator",
+    "serial baud error",
+    "avr baud"
+  ]
+}

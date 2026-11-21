@@ -1,0 +1,45 @@
+{
+ "id": "jwt-signature-validator",
+ "seoTitle": "Free JWT Signature Validator: RS256, ES256, EdDSA, HS256",
+ "metaDescription": "Verify a JWT signature against a public key, JWK, JWKS or HMAC secret. Supports RS, PS, ES, EdDSA and HS algorithms. Free, runs in your browser.",
+ "intro": "Verifies a JWT signature against a public key (PEM, certificate), JWK, JWKS selected by kid, or an HMAC secret. It supports RS, PS, ES, EdDSA and HS algorithms, decodes the token and checks exp, nbf and iat.",
+ "why": "When a service rejects a token, the question is always the same: is the signature wrong, the key wrong, the algorithm wrong, or has the token simply expired? Decoding a JWT only shows the claims, which anyone can read, and says nothing about whether it is genuine. This tool checks the signature itself against the key you provide, for RS256, PS256, ES256, EdDSA, HS256 and their relatives, and picks the right key from a JWKS by kid. It also checks time claims, rejects algorithm \"none\" and blocks the classic trick of verifying an HS256 token with a public key. Use test tokens and public keys where you can. Verification runs in your browser.",
+ "howTo": [
+  "Paste the JWT into the first box.",
+  "Paste the public key (PEM, certificate, JWK or JWKS) or the HMAC secret into the second box.",
+  "Leave the algorithm on \"from token header\" or force one, then read the verification result and the time-claim checks."
+ ],
+ "faq": [
+  {
+   "q": "What key formats are accepted?",
+   "a": "PEM public keys (SPKI or PKCS1), X.509 certificates, a single JWK, a JWKS (matched by kid) or an HMAC secret for HS algorithms."
+  },
+  {
+   "q": "Why does it block some algorithm combinations?",
+   "a": "To prevent algorithm confusion: verifying an HS256 token with an RSA public key as the secret would accept forged tokens. The tool refuses it, and flags alg \"none\"."
+  },
+  {
+   "q": "What claims are checked?",
+   "a": "exp, nbf and iat are compared with the current time, or with the Unix time you enter. Other claims such as issuer and audience are shown but not enforced."
+  },
+  {
+   "q": "Is it safe to paste a real token?",
+   "a": "Verification is local and nothing is uploaded. Still, tokens and secrets are sensitive: prefer test tokens, and never share an HMAC secret from production."
+  }
+ ],
+ "related": [
+  "jwt-decode",
+  "jwt-verify-hs",
+  "jwt-expiry-calculator",
+  "jwt-encode",
+  "x509-viewer",
+  "ed25519-sign-verify"
+ ],
+ "keywords": [
+  "jwt signature validator",
+  "verify jwt rs256 online",
+  "jwt jwks verifier",
+  "free jwt signature check",
+  "verify es256 eddsa jwt"
+ ]
+}

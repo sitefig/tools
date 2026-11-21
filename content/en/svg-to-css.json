@@ -1,0 +1,43 @@
+{
+ "id": "svg-to-css",
+ "seoTitle": "Free SVG to CSS Data URI Converter",
+ "metaDescription": "Convert SVG into a CSS data URI for background-image, mask-image, list-style-image or content, URL-encoded or base64. Free, in your browser.",
+ "intro": "Paste SVG markup and get a CSS data URI you can use as a background image, mask, list marker or content value, URL-encoded or base64, with the byte size of each variant.",
+ "why": "Small icons are often better inlined in CSS than fetched as separate files: one request fewer, no flash of missing icon and easy theming with masks. The catch is the encoding. A raw SVG inside url() breaks on hash signs, quotes and angle brackets, and base64 makes the string about a third larger.\n\nThis tool minifies the markup, adds the xmlns attribute if it is missing and escapes only what needs escaping, which is why the URL-encoded form is usually smaller than base64. It writes the complete declaration for the property you choose and shows both sizes so you can pick. The conversion runs in your browser and your artwork is not uploaded.",
+ "howTo": [
+  "Paste the SVG markup into the input box.",
+  "Choose the CSS property: background-image, mask-image, list-style-image or content.",
+  "Pick URL-encoded or base64 encoding, and tick the option to add width and height from the viewBox.",
+  "Copy the CSS declaration into your stylesheet."
+ ],
+ "faq": [
+  {
+   "q": "Should I use URL-encoded or base64?",
+   "a": "URL-encoded is usually smaller and stays readable, so it is the better default. Base64 is useful when a tool or build step cannot handle special characters in a url() value."
+  },
+  {
+   "q": "Can I change an icon's colour with CSS afterwards?",
+   "a": "Not with a background image, because the colour is fixed inside the SVG. Use the mask-image option with a background colour instead, and the shape will take that colour."
+  },
+  {
+   "q": "Why add width and height from the viewBox?",
+   "a": "An SVG with only a viewBox has no natural size, and some contexts such as list markers and content then render nothing or an unexpected size. Adding explicit dimensions makes it predictable."
+  }
+ ],
+ "related": [
+  "svg-optimizer",
+  "svg-to-png",
+  "image-to-base64",
+  "base64-encode",
+  "svg-pattern-generator",
+  "css-pattern-generator"
+ ],
+ "keywords": [
+  "svg to css",
+  "svg data uri generator",
+  "svg to base64 css background",
+  "svg mask-image css",
+  "inline svg in css",
+  "free svg to css converter"
+ ]
+}

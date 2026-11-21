@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Binary to Text and Text to Binary Converter | Free Tools</title>
+<meta name="description" content="Convert text to 8-bit binary and binary back to text using UTF-8. Handles accents and emoji. Free, instant and runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/binary-text/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/binary-text/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/binary-text/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Binary to Text and Text to Binary Converter | Free Tools">
+<meta property="og:description" content="Convert text to 8-bit binary and binary back to text using UTF-8. Handles accents and emoji. Free, instant and runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/binary-text/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Binary to Text and Text to Binary Converter | Free Tools">
+<meta name="twitter:description" content="Convert text to 8-bit binary and binary back to text using UTF-8. Handles accents and emoji. Free, instant and runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Binary ⇄ Text","url":"https://tools.sitefig.net/en/binary-text/","description":"Convert text to 8-bit binary and binary back to text using UTF-8. Handles accents and emoji. Free, instant and runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose \"text to binary\" or \"binary to text\" as the direction.","Paste the text, or the binary digits, into the Input box.","Run the conversion.","Copy the result from the output box."],"keywords":"binary to text converter, text to binary online, free binary translator, binary to ascii, utf-8 to binary, convert binary code to words","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Encoding","item":"https://tools.sitefig.net/en/#encoding"},{"@type":"ListItem","position":3,"name":"Binary ⇄ Text","item":"https://tools.sitefig.net/en/binary-text/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why are there 8 bits per character?","acceptedAnswer":{"@type":"Answer","text":"Each UTF-8 byte is shown as 8 bits. Basic English letters take one byte, so one group of 8. Accented letters and symbols use two to four bytes, so they appear as several groups."}},{"@type":"Question","name":"What if my binary has no spaces?","acceptedAnswer":{"@type":"Answer","text":"That is fine. The decoder drops everything that is not a 0 or 1 and then splits the digits into groups of eight, so spaced and unspaced input both work."}},{"@type":"Question","name":"Why do I get an error about the length?","acceptedAnswer":{"@type":"Answer","text":"The number of binary digits must be a multiple of 8. A missing or extra digit shifts every byte after it, so the tool refuses instead of guessing. Count the digits or look for a trimmed first or last group."}},{"@type":"Question","name":"Can it show 7-bit ASCII or 16-bit values?","acceptedAnswer":{"@type":"Answer","text":"No. It always uses 8-bit bytes of UTF-8. For other bases or two's complement of whole numbers, use the Number Base Converter."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#encoding">Encoding</a></li><li><span aria-current="page">Binary ⇄ Text</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Binary ⇄ Text</h1>
+<p class="lede">Turn text into groups of 8-bit binary, or paste ones and zeros and read the message. It works on UTF-8 bytes, so non-English characters come out correctly.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="binary-text" data-module="encode"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Binary conversion is a staple of computing homework, puzzle hunts, CTF challenges and quick checks of how a character is stored. Doing it by hand means looking up codes and padding bits, and it is easy to drop a digit halfway through.</p>
+<p>This tool converts each UTF-8 byte of your text to eight bits, separated by spaces. Going back, it ignores everything except 0 and 1, regroups the digits into bytes and decodes them. If the number of bits is not a multiple of eight, you are told so rather than given garbage. It all happens locally.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose &quot;text to binary&quot; or &quot;binary to text&quot; as the direction.</li><li>Paste the text, or the binary digits, into the Input box.</li><li>Run the conversion.</li><li>Copy the result from the output box.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why are there 8 bits per character?</summary><p>Each UTF-8 byte is shown as 8 bits. Basic English letters take one byte, so one group of 8. Accented letters and symbols use two to four bytes, so they appear as several groups.</p></details>
+<details><summary>What if my binary has no spaces?</summary><p>That is fine. The decoder drops everything that is not a 0 or 1 and then splits the digits into groups of eight, so spaced and unspaced input both work.</p></details>
+<details><summary>Why do I get an error about the length?</summary><p>The number of binary digits must be a multiple of 8. A missing or extra digit shifts every byte after it, so the tool refuses instead of guessing. Count the digits or look for a trimmed first or last group.</p></details>
+<details><summary>Can it show 7-bit ASCII or 16-bit values?</summary><p>No. It always uses 8-bit bytes of UTF-8. For other bases or two's complement of whole numbers, use the Number Base Converter.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/hex-text/"><span class="link-card__title">Hex ⇄ Text</span><span class="link-card__desc">Convert text to hexadecimal bytes (UTF-8) and back.</span></a></li><li><a class="link-card" href="/en/number-base-converter/"><span class="link-card__title">Number Base Converter</span><span class="link-card__desc">Convert arbitrarily large integers between bases 2-36, with two's complement.</span></a></li><li><a class="link-card" href="/en/ascii-table/"><span class="link-card__title">ASCII Table</span><span class="link-card__desc">ASCII reference: decimal, hex, octal, binary, character. Filter by anything.</span></a></li><li><a class="link-card" href="/en/utf8-bytes-viewer/"><span class="link-card__title">UTF-8 Bytes Viewer</span><span class="link-card__desc">Show code points with their UTF-8 and UTF-16 byte sequences.</span></a></li><li><a class="link-card" href="/en/morse-translator/"><span class="link-card__title">Morse Code Translator</span><span class="link-card__desc">Translate text to Morse code and back (letters separated by space, words by &quot; / &quot;).</span></a></li><li><a class="link-card" href="/en/bitwise-calculator/"><span class="link-card__title">Bitwise Calculator (AND, OR, XOR, shifts, rotate)</span><span class="link-card__desc">Apply AND, OR, XOR, NAND, NOR, XNOR, NOT, left / arithmetic right / logical right shifts, rotations, popcount, leading / trailing zeros and bit reversal to 8, 16, 32 or 64-bit values, with two's-complement signed or unsigned interpretation. Inputs accept decimal, 0x hex, 0b binary and 0o octal; results are shown in all four bases with the bit pattern.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

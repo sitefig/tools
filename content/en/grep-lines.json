@@ -1,0 +1,45 @@
+{
+ "id": "grep-lines",
+ "seoTitle": "Free Online Grep for Pasted Text with Context Lines",
+ "metaDescription": "Filter pasted text with a plain or regex pattern like grep. Invert, whole word, line numbers, context before and after, count or matches only. Free.",
+ "intro": "Runs a grep-style search on text you paste, with context lines, invert, whole-word matching and a count.",
+ "why": "Sometimes you only need to find the interesting lines in a log or export without opening a terminal. This tool offers the grep options people use most: -n line numbers, -v invert, -i ignore case, -w whole word, -A and -B context, -c count and -o matching parts only.\n\nThe output format follows GNU grep, so match lines use a colon and context lines use a dash, with -- between groups. The pattern is a JavaScript regular expression, which differs a little from POSIX or PCRE, for example in how \\b and character classes work.",
+ "howTo": [
+  "Paste your text.",
+  "Enter a pattern and tick regex if it is an expression.",
+  "Choose options such as invert, whole word or context lines.",
+  "Copy the filtered lines."
+ ],
+ "faq": [
+  {
+   "q": "Is this the same as GNU grep?",
+   "a": "The output layout and options match. The pattern syntax is JavaScript regex, not POSIX basic or extended expressions."
+  },
+  {
+   "q": "How is the plain pattern treated?",
+   "a": "Special characters are escaped, so a dot means a dot and not any character."
+  },
+  {
+   "q": "What does only the matching parts do?",
+   "a": "It prints each match on its own line, like grep -o. It cannot be combined with invert."
+  },
+  {
+   "q": "Is the text uploaded?",
+   "a": "No. Everything runs in your browser."
+  }
+ ],
+ "related": [
+  "find-replace",
+  "regex-tester",
+  "sort-lines",
+  "dedupe-lines",
+  "extract-emails-urls-numbers",
+  "ip-address-extractor"
+ ],
+ "keywords": [
+  "grep online",
+  "grep pasted text",
+  "filter lines by pattern",
+  "online grep tool"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "unicode-escape",
+ "seoTitle": "Free Unicode Escape and Unescape Online Tool",
+ "metaDescription": "Convert text to \\uXXXX, \\u{X} or U+XXXX escapes and back again, including \\xNN. Free, handles emoji, and runs entirely in your browser.",
+ "intro": "Turn non-ASCII text into \\uXXXX, \\u{X} or U+XXXX escape sequences, or decode escapes back into readable characters. \\xNN and \\UXXXXXXXX forms are understood when unescaping.",
+ "why": "Source files, JSON payloads and config formats sometimes need pure ASCII, which means accented letters and emoji must be written as escapes. The other way round, logs and API responses are full of \\u00e9 and \\ud83d\\ude00 that nobody can read at a glance.\n\nThis tool escapes every character outside ASCII in the style you choose, and optionally ASCII too. Characters above U+FFFF become surrogate pairs in the \\uXXXX style, which is how JavaScript and JSON expect them. Unescaping accepts several syntaxes in one pass. It is all done in your browser, so nothing is uploaded.",
+ "howTo": [
+  "Pick the direction: escape or unescape.",
+  "For escaping, choose a style: \\uXXXX, \\u{X} or U+XXXX.",
+  "Paste your text into the box, and tick \"Escape ASCII too\" if every character should be escaped.",
+  "Copy the converted text."
+ ],
+ "faq": [
+  {
+   "q": "Which style should I use?",
+   "a": "\\uXXXX works in JSON and in every JavaScript version, using two escapes for characters above U+FFFF. \\u{X} is shorter and valid in modern JavaScript and Rust. U+XXXX is only a notation for documents and is not valid code."
+  },
+  {
+   "q": "Why does one emoji produce two escapes?",
+   "a": "In the \\uXXXX style, characters above U+FFFF are written as a UTF-16 surrogate pair, such as \\ud83d\\ude00. That is how JSON and older JavaScript represent them. Use \\u{X} for a single escape."
+  },
+  {
+   "q": "What does unescape understand?",
+   "a": "\\u{1F600}, \\u00e9, \\xe9, \\U0001F600 and U+00E9. Any other backslash sequences, such as \\n, are left untouched, so this is not a full string unescaper."
+  },
+  {
+   "q": "Will it change normal ASCII text?",
+   "a": "Not unless you tick \"Escape ASCII too\". By default, letters, digits and punctuation in the ASCII range are copied as they are, so the output stays easy to read."
+  }
+ ],
+ "related": [
+  "string-escape",
+  "char-info",
+  "utf8-bytes-viewer",
+  "html-entities",
+  "json-escape",
+  "unicode-normalize"
+ ],
+ "keywords": [
+  "unicode escape online",
+  "unicode to \\u escape",
+  "unescape unicode text",
+  "free unicode converter",
+  "emoji to unicode escape",
+  "\\u0000 decoder"
+ ]
+}

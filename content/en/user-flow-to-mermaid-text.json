@@ -1,0 +1,47 @@
+{
+ "id": "user-flow-to-mermaid-text",
+ "seoTitle": "Free User Flow to Mermaid Flowchart Converter",
+ "metaDescription": "Turn an indented list of screens and decisions into Mermaid flowchart source, with decision nodes and edge labels. Free, runs in your browser.",
+ "intro": "Write your user flow as an indented list and get Mermaid flowchart code. Prefix a step with \"? \" for a decision and with \"(label) \" for a labelled edge.",
+ "why": "User flows are easier to agree on when they are drawn, but dragging boxes around in a diagram editor is slow, and editing one later is slower. A text outline is quick to write and easy to review in a pull request.\n\nThis converter reads an outline where each indent level is a step deeper in the flow, and writes Mermaid flowchart TD source. Questions become diamond decision nodes, and labels like (yes) or (no) go on the arrows. Steps that repeat the same name become one node, so branches can join again. Paste the output into any Mermaid renderer, including the Mermaid Renderer on this site. Your text is not uploaded.",
+ "howTo": [
+  "Write one step per line and indent by two spaces (or a tab) for each level deeper.",
+  "Start a line with \"? \" for a decision, and with \"(label) \" to label the arrow into that step.",
+  "Run the tool to get the flowchart TD source.",
+  "Copy the code into a Mermaid renderer to see the diagram."
+ ],
+ "faq": [
+  {
+   "q": "How do I make branches that join again?",
+   "a": "Reuse the same step text on each branch. Steps with identical text, ignoring case, are merged into one node, so two paths ending in \"Dashboard\" lead to the same box."
+  },
+  {
+   "q": "What does an indentation error mean?",
+   "a": "You jumped more than one level at once, for example from no indent to four spaces. Each step may be at most one level deeper than the line above."
+  },
+  {
+   "q": "Can I make cycles or arbitrary links?",
+   "a": "Not directly. The outline describes a tree with merges, so a step links only to its parent. For arbitrary connections, write the Mermaid syntax by hand."
+  },
+  {
+   "q": "Where do I view the diagram?",
+   "a": "Paste the output into the Mermaid Renderer on this site, or into GitHub Markdown, Notion or any tool that supports Mermaid."
+  }
+ ],
+ "related": [
+  "mermaid-lite-renderer",
+  "graphviz-dot-lite",
+  "sql-ddl-to-diagram",
+  "conversion-funnel-visualizer",
+  "mind-map-maker",
+  "user-persona-template"
+ ],
+ "keywords": [
+  "user flow to mermaid",
+  "text to flowchart",
+  "indented list to mermaid",
+  "free user flow diagram generator",
+  "mermaid flowchart from outline",
+  "user journey flowchart text"
+ ]
+}

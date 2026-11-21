@@ -1,0 +1,50 @@
+{
+ "id": "pdf417-generator",
+ "seoTitle": "PDF417 Barcode Generator: Free, Offline, SVG Download",
+ "metaDescription": "Create a PDF417 2D barcode from text in your browser: text, byte and numeric compaction, Reed-Solomon error correction levels 0-8, SVG download. Checked with a ZXing decoder.",
+ "intro": "Type or paste text and get a PDF417 stacked barcode, the format used on boarding passes, driving licences and shipping labels, as a scalable SVG.",
+ "why": "PDF417 stores data as rows of codewords, each drawn as four bars and four spaces. The encoder here picks text, byte or numeric compaction per run of characters, adds a length descriptor, calculates Reed-Solomon error-correction codewords over GF(929) at the level you choose (0 to 8, or automatic), then lays the codewords out in 1 to 30 data columns with row indicators, start and stop patterns.\n\nThe symbol tables are the standard's three cluster tables, so results are real PDF417. Output was verified by decoding with the ZXing-C++ reader: 75 symbols covering ASCII, punctuation, digits runs, UTF-8 text with an ECI marker, random binary and different column and ECC settings all decoded back to the exact input.\n\nLimits: no Macro PDF417, no GS1 or other special function codewords, no Compact (truncated) PDF417, and compaction switching is greedy rather than size-optimal, so a few symbols are slightly larger than the minimum. The capacity is 929 codewords including error correction, roughly 1,100 text characters or 1,800 digits at low ECC. Nothing is uploaded.",
+ "howTo": [
+  "Paste the text to encode (UTF-8 is supported).",
+  "Leave columns and ECC on automatic, or set them if a scanner spec requires it.",
+  "Check the size line, then download the SVG.",
+  "Print at a module width of at least 0.25 mm and test with your scanner."
+ ],
+ "faq": [
+  {
+   "q": "Will every PDF417 scanner read it?",
+   "a": "The codewords, row indicators and patterns follow the standard and were decoded by ZXing-C++ in testing. Always test with your real scanner and print size, and keep a quiet zone of at least 2 modules."
+  },
+  {
+   "q": "Which error-correction level should I use?",
+   "a": "Automatic picks level 2 for small payloads and higher levels for larger ones. Use 4 to 6 for labels that may get scuffed. Each level doubles the error-correction codewords, so the symbol grows."
+  },
+  {
+   "q": "Can it encode AAMVA driving licence data or boarding passes?",
+   "a": "It encodes any text you give it, so you can place a correctly formatted payload in it. It does not build those payload formats and has no compliance checking."
+  },
+  {
+   "q": "Why is my barcode wider than tall?",
+   "a": "PDF417 is a row-based symbol. Choose fewer columns for a taller, narrower symbol, or more for a wider one. Row height is set in modules."
+  },
+  {
+   "q": "Is my text sent anywhere?",
+   "a": "No. Encoding happens in your browser and the page makes no network requests with your input."
+  }
+ ],
+ "related": [
+  "qr-code-generator",
+  "barcode-generator",
+  "qr-code-reader",
+  "svg-optimizer",
+  "svg-to-png",
+  "crc-calculator"
+ ],
+ "keywords": [
+  "pdf417 generator",
+  "pdf417 barcode online",
+  "create pdf417",
+  "2d barcode generator",
+  "stacked barcode"
+ ]
+}

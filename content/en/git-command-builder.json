@@ -1,0 +1,45 @@
+{
+ "id": "git-command-builder",
+ "seoTitle": "Free Git Command Builder and Cheat Sheet Online",
+ "metaDescription": "Pick a Git task and fill in a few parameters to get the exact command, an explanation and a warning for destructive operations. Free, in your browser.",
+ "intro": "Offers a list of common Git tasks such as undo, squash, rebase, cherry-pick, safe force push, bisect and sparse clone, and builds the exact command with a short explanation and a warning for risky operations.",
+ "why": "Git has a command for everything and a memory for nothing: is it reset --soft or --mixed, how do you force-push without destroying a colleague's work, what was the flag for a sparse clone? Searching the answer again each time breaks your flow. This tool works as a cheat sheet that fills in the blanks. Choose the task, type up to three parameters such as a branch name, commit hash or number of commits, and get the command with a one-line explanation. Operations that rewrite history or throw work away carry a warning. It does not run anything or touch your repository, so you copy the command into your own terminal when you are ready. It all runs in your browser.",
+ "howTo": [
+  "Choose the task from the list, for example \"Squash last N commits into one\".",
+  "Fill in the parameters the task asks for, such as the number of commits or a branch name.",
+  "Read the command and its explanation, then copy it into your terminal."
+ ],
+ "faq": [
+  {
+   "q": "Does the tool run Git commands?",
+   "a": "No. It only generates text. Nothing touches your repository, and you decide when and where to run the command."
+  },
+  {
+   "q": "Which tasks are included?",
+   "a": "Undoing and amending commits, branches, stash, interactive rebase, squash, cherry-pick, revert, safe force push, shallow and sparse clones, bisect, history searches, reflog recovery, clean, restore and tags."
+  },
+  {
+   "q": "Why does it suggest force-with-lease?",
+   "a": "git push --force-with-lease refuses to overwrite remote commits you have not seen, which is safer than a plain force push when a colleague may have pushed."
+  },
+  {
+   "q": "What if I leave a parameter empty?",
+   "a": "The command contains a readable placeholder, such as a commit hash in angle brackets or path/to/file, so it is obvious what is missing. Replace the placeholder before you run the command."
+  }
+ ],
+ "related": [
+  "conventional-commit-generator",
+  "gitignore-generator",
+  "changelog-generator",
+  "git-conflict-marker-cleaner",
+  "gitignore-tester",
+  "github-issue-pr-template-generator"
+ ],
+ "keywords": [
+  "git command builder",
+  "git cheat sheet online",
+  "git squash last commits command",
+  "free git command generator",
+  "git undo commit command"
+ ]
+}

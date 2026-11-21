@@ -1,0 +1,47 @@
+{
+ "id": "json-validate",
+ "seoTitle": "Free JSON Validator & Checker Online",
+ "metaDescription": "Free online JSON validator. Check whether text is valid JSON, find the exact line and column of an error and see root type, depth and size.",
+ "intro": "Check if text is valid JSON. If it is, you get its root type, number of values, keys, maximum depth and size in bytes. If not, you get the line and column of the error.",
+ "why": "Before you commit a config file, send a request body or import a data export, it is worth knowing for certain that it parses. A single trailing comma or a stray comment is enough to make a pipeline fail with a vague message.\n\nThis validator uses the same strict rules as a standard JSON parser and reports the precise line, column and offending character. When the document is valid it also summarises it: root type, count of values and keys, nesting depth and byte size. That quick overview helps you spot a payload that is unexpectedly large or deeply nested. It does not check a schema; for that, use the schema validator. Your text stays in the browser and is not uploaded.",
+ "howTo": [
+  "Paste the JSON text into the input box.",
+  "Read the verdict on the first line: Valid JSON, or an error with line and column.",
+  "For valid input, check the root type, key count, depth and size shown below.",
+  "Fix any error, then paste again to confirm."
+ ],
+ "faq": [
+  {
+   "q": "What rules does it use?",
+   "a": "Strict JSON as defined by the standard. Comments, trailing commas, single-quoted strings, unquoted keys and values such as NaN or undefined are all reported as errors."
+  },
+  {
+   "q": "Does it validate against a schema?",
+   "a": "No. It only checks that the text is syntactically valid JSON. To check types, required fields and ranges, use the JSON Schema Validator tool."
+  },
+  {
+   "q": "What do the statistics mean?",
+   "a": "Total values counts every item in the document, object keys counts the keys of all objects, max depth is the deepest nesting level, and size is the number of UTF-8 bytes of your input."
+  },
+  {
+   "q": "Is my data sent anywhere?",
+   "a": "No. Validation runs in your browser, so tokens or customer data in the pasted text are not uploaded."
+  }
+ ],
+ "related": [
+  "json-format",
+  "json-schema-validator",
+  "json-minify",
+  "json-tree",
+  "json-diff",
+  "jsonpath-tester"
+ ],
+ "keywords": [
+  "json validator online",
+  "validate json",
+  "json checker",
+  "free json lint",
+  "json syntax checker",
+  "is my json valid"
+ ]
+}

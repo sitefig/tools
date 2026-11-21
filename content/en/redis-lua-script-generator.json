@@ -1,0 +1,42 @@
+{
+ "id": "redis-lua-script-generator",
+ "seoTitle": "Free Redis Lua Script Generator for Atomic Ops",
+ "metaDescription": "Get ready-made Redis Lua script templates: rate limiter, token bucket, lock release, compare-and-set and more, with EVAL code. Free.",
+ "intro": "Choose a pattern such as a rate limiter, token bucket, lock release or compare-and-set and get an atomic Redis Lua script together with ready-to-run EVAL or client code.",
+ "why": "Redis commands are atomic one at a time, but real tasks need several steps: read a counter, check a limit, set an expiry. Running those as separate calls leaves a gap in which another client can change the data, so rate limits overshoot and locks are released by the wrong owner. A Lua script runs as one unit and closes that gap.\n\nThe patterns are well known, yet the details are easy to get subtly wrong, such as releasing a lock only if the value still matches. This tool gives you tested-style templates with the right KEYS and ARGV layout. The scripts are not executed here. Run them on a development Redis first. The text is generated in your browser.",
+ "howTo": [
+  "Choose a pattern: rate limiter, token bucket, lock release or extend, compare-and-set or capped increment.",
+  "Pick the client language for the example call.",
+  "Read the script and the way KEYS and ARGV are used.",
+  "Copy it, then test it on a development Redis instance before using it in production."
+ ],
+ "faq": [
+  {
+   "q": "Why use Lua instead of MULTI and EXEC?",
+   "a": "A transaction cannot make a decision based on a value it has just read. A script can read, compare and write in one atomic step, which is what limiters and safe lock release need."
+  },
+  {
+   "q": "Does the tool run the script?",
+   "a": "No. It only produces the text. Test on a dev Redis, with your Redis version and settings, and check how the script behaves under cluster mode, where all keys must live in the same slot."
+  },
+  {
+   "q": "How do I pass keys and arguments?",
+   "a": "Keys go in the KEYS array and everything else, such as limits and timeouts, in ARGV. The generated example shows the count of keys followed by the values in EVAL order."
+  }
+ ],
+ "related": [
+  "redis-command-generator",
+  "nginx-rate-limit-calculator",
+  "api-rate-limit-cost-calculator",
+  "uuid-generator",
+  "docker-compose-generator"
+ ],
+ "keywords": [
+  "redis lua script generator",
+  "redis rate limiter lua",
+  "redis token bucket script",
+  "redis lock release lua",
+  "redis eval example",
+  "free redis lua tool"
+ ]
+}

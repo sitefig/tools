@@ -1,0 +1,45 @@
+{
+ "id": "mcp-message-validator",
+ "seoTitle": "Free MCP and JSON-RPC Message Inspector Online",
+ "metaDescription": "Check Model Context Protocol and JSON-RPC 2.0 messages offline: ids, initialize, tools/list schemas, tools/call and content blocks. Free, in your browser.",
+ "intro": "Checks Model Context Protocol traffic offline. Paste one JSON-RPC message, an array or JSON Lines and get structure checks for ids, initialize, tool schemas, tool calls, content blocks and errors.",
+ "why": "When an MCP server and client do not agree, the failure is often a small shape error: a missing jsonrpc field, a null id, a tool whose required property is not declared, or a notification that carries an id. Reading raw logs for these is tedious. Paste a captured conversation here and each message is classified as a request, response, notification or error, then checked against the rules the protocol sets. Requests without a matching response are listed. It is an offline linter for logs and test fixtures, not a client: it cannot connect to a live server or test whether a tool works. Your messages stay in the browser, which helps when logs contain internal tool names.",
+ "howTo": [
+  "Paste one JSON-RPC message, a JSON array of messages, or one message per line.",
+  "Run the inspection to see each message classified and marked ok or PROBLEMS.",
+  "Fix the listed problems in your server or client, and check any requests that have no response."
+ ],
+ "faq": [
+  {
+   "q": "What does it check?",
+   "a": "It checks jsonrpc \"2.0\", request or response shape, ids, params, the required fields of initialize, tools/call, resources/read and prompts/get, tool names and inputSchema in tools/list results, content block types and error objects."
+  },
+  {
+   "q": "Can it test a live MCP server?",
+   "a": "No. It only reads text you paste. It will not connect to a server, call a tool or check that responses are semantically correct."
+  },
+  {
+   "q": "How are mixed formats handled?",
+   "a": "It first tries to parse the whole input as JSON, either one object or an array. If that fails it reads one JSON message per line and reports the line number of any parse error."
+  },
+  {
+   "q": "Why are null ids flagged?",
+   "a": "MCP does not allow null request ids, so a null or non-string, non-number id is reported. Notifications must have no id at all."
+  }
+ ],
+ "related": [
+  "json-validate",
+  "json-schema-validator",
+  "llm-tool-definition-builder",
+  "openai-structured-outputs",
+  "json-format",
+  "http-wire-format"
+ ],
+ "keywords": [
+  "mcp message validator",
+  "model context protocol inspector",
+  "json-rpc validator online",
+  "free mcp debugging tool",
+  "mcp tools list schema checker"
+ ]
+}

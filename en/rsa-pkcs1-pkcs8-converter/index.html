@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free RSA PKCS1 to PKCS#8 PEM Key Converter | Free Tools</title>
+<meta name="description" content="Convert RSA keys between PKCS1 (BEGIN RSA PRIVATE KEY) and PKCS#8 or SPKI (BEGIN PRIVATE KEY), detecting the direction. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/rsa-pkcs1-pkcs8-converter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/rsa-pkcs1-pkcs8-converter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/rsa-pkcs1-pkcs8-converter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free RSA PKCS1 to PKCS#8 PEM Key Converter | Free Tools">
+<meta property="og:description" content="Convert RSA keys between PKCS1 (BEGIN RSA PRIVATE KEY) and PKCS#8 or SPKI (BEGIN PRIVATE KEY), detecting the direction. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/rsa-pkcs1-pkcs8-converter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free RSA PKCS1 to PKCS#8 PEM Key Converter | Free Tools">
+<meta name="twitter:description" content="Convert RSA keys between PKCS1 (BEGIN RSA PRIVATE KEY) and PKCS#8 or SPKI (BEGIN PRIVATE KEY), detecting the direction. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"RSA PKCS#1 / PKCS#8 PEM Converter","url":"https://tools.sitefig.net/en/rsa-pkcs1-pkcs8-converter/","description":"Convert RSA keys between PKCS1 (BEGIN RSA PRIVATE KEY) and PKCS#8 or SPKI (BEGIN PRIVATE KEY), detecting the direction. Free, in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste a PEM block: an RSA private or public key, or a PKCS#8 or SPKI key.","The direction is detected from the BEGIN line, so there is nothing to select.","Copy the converted PEM and use it in your application."],"keywords":"pkcs1 to pkcs8 converter, convert rsa private key format, begin rsa private key to begin private key, free pem key converter, rsa spki to pkcs1","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"RSA PKCS#1 / PKCS#8 PEM Converter","item":"https://tools.sitefig.net/en/rsa-pkcs1-pkcs8-converter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between the formats?","acceptedAnswer":{"@type":"Answer","text":"PKCS1 holds only the RSA numbers. PKCS#8 and SPKI add an algorithm identifier, so they can describe other key types too. The RSA numbers inside are unchanged."}},{"@type":"Question","name":"Does it work for EC or Ed25519 keys?","acceptedAnswer":{"@type":"Answer","text":"No. Converting from PKCS#8 to PKCS1 stops with an error unless the algorithm is RSA, because only RSA has a PKCS1 form."}},{"@type":"Question","name":"Can it open encrypted keys?","acceptedAnswer":{"@type":"Answer","text":"No. Encrypted PEM blocks with a passphrase are not decrypted. Remove the passphrase with OpenSSL on your own machine first, if appropriate."}},{"@type":"Question","name":"Is my key uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. The conversion is done by code running in your browser. Still, avoid pasting real production private keys anywhere unnecessary; use test keys when you can."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">RSA PKCS#1 / PKCS#8 PEM Converter</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>RSA PKCS#1 / PKCS#8 PEM Converter</h1>
+<p class="lede">Paste an RSA key in PEM format and convert it between PKCS1 and PKCS#8 for private keys, or PKCS1 and SPKI for public keys. The direction is detected.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="rsa-pkcs1-pkcs8-converter" data-module="devx" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Different software wants different wrappers for the same RSA key. OpenSSL traditionally writes BEGIN RSA PRIVATE KEY, which is PKCS1. Java, many cloud APIs and newer tools expect BEGIN PRIVATE KEY, which is PKCS#8, and a mismatch produces errors like invalid key format or unsupported header.</p>
+<p>The key material is the same; only the ASN.1 envelope changes. This tool detects the label, then wraps or unwraps the DER bytes locally, so you do not need OpenSSL on hand. Because private keys are involved, only use it with keys you are comfortable handling in a browser, and never paste a live production key into a page you do not trust. Encrypted PEM keys are not supported.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste a PEM block: an RSA private or public key, or a PKCS#8 or SPKI key.</li><li>The direction is detected from the BEGIN line, so there is nothing to select.</li><li>Copy the converted PEM and use it in your application.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What is the difference between the formats?</summary><p>PKCS1 holds only the RSA numbers. PKCS#8 and SPKI add an algorithm identifier, so they can describe other key types too. The RSA numbers inside are unchanged.</p></details>
+<details><summary>Does it work for EC or Ed25519 keys?</summary><p>No. Converting from PKCS#8 to PKCS1 stops with an error unless the algorithm is RSA, because only RSA has a PKCS1 form.</p></details>
+<details><summary>Can it open encrypted keys?</summary><p>No. Encrypted PEM blocks with a passphrase are not decrypted. Remove the passphrase with OpenSSL on your own machine first, if appropriate.</p></details>
+<details><summary>Is my key uploaded?</summary><p>No. The conversion is done by code running in your browser. Still, avoid pasting real production private keys anywhere unnecessary; use test keys when you can.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/rsa-key-pair-generator/"><span class="link-card__title">RSA Key Pair Generator</span><span class="link-card__desc">Generate an RSA key pair with WebCrypto: PKCS#8 private key and SPKI public key as PEM (optional PKCS#1 format). Nothing is uploaded.</span></a></li><li><a class="link-card" href="/en/ed25519-key-generator/"><span class="link-card__title">Ed25519 Key Pair Generator</span><span class="link-card__desc">Generate an Ed25519 key pair with WebCrypto: PKCS#8 private PEM, SPKI public PEM, OpenSSH public key line and raw hex. Keys never leave your browser.</span></a></li><li><a class="link-card" href="/en/x509-csr-decoder/"><span class="link-card__title">X.509 CSR Decoder</span><span class="link-card__desc">Decode a PEM certificate signing request (PKCS#10): subject, public key, signature algorithm, requested SANs / key usage, SHA-256 fingerprint.</span></a></li><li><a class="link-card" href="/en/ssh-key-inspector/"><span class="link-card__title">SSH Public Key Inspector</span><span class="link-card__desc">Parse an OpenSSH public key line: type, size, comment and the SHA-256 / MD5 fingerprints shown by ssh-keygen -l.</span></a></li><li><a class="link-card" href="/en/x509-viewer/"><span class="link-card__title">X.509 Certificate Viewer</span><span class="link-card__desc">Paste a PEM certificate: subject, issuer, validity, SANs, key info and fingerprints.</span></a></li><li><a class="link-card" href="/en/openpgp-inspector/"><span class="link-card__title">OpenPGP Armor / Packet Inspector</span><span class="link-card__desc">Paste an ASCII-armored PGP key, signature or message: checks the CRC-24, lists packets (algorithms, curves, key sizes, creation time, user IDs, signature subpackets) and computes v4 (SHA-1) / v6 (SHA-256) fingerprints. Nothing is verified or decrypted.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

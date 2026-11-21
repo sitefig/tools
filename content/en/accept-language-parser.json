@@ -1,0 +1,45 @@
+{
+ "id": "accept-language-parser",
+ "seoTitle": "Accept-Language Header Parser With q-Values",
+ "metaDescription": "Parse an Accept-Language header into ranked language preferences with q-values, wildcards and error notes. Can read your browser's languages.",
+ "intro": "Sorts the language ranges in an Accept-Language header by preference and flags invalid q-values and tags.",
+ "why": "Accept-Language lists the languages a visitor prefers, each with a q-value from 0 to 1. Reading a long header by hand is hard. This tool sorts the ranges, shows q=0 as not acceptable, marks the wildcard and reports malformed values according to RFC 9110.\n\nLeave the input blank in a browser to build a header from navigator.languages. That is an approximation, because browsers choose their own q-values.",
+ "howTo": [
+  "Paste an Accept-Language value, or leave it blank for your browser.",
+  "Read the ranked list.",
+  "Fix any invalid q-values.",
+  "Use the Locale Negotiation Simulator to see the outcome."
+ ],
+ "faq": [
+  {
+   "q": "What does q=0 mean?",
+   "a": "The language is not acceptable."
+  },
+  {
+   "q": "What is *?",
+   "a": "Any language not otherwise listed."
+  },
+  {
+   "q": "How are ties ordered?",
+   "a": "By their order in the header."
+  },
+  {
+   "q": "Is the browser header exact?",
+   "a": "No, it is rebuilt from navigator.languages."
+  }
+ ],
+ "related": [
+  "locale-negotiation-simulator",
+  "http-headers-analyzer",
+  "language-suggestion-banner-generator",
+  "http-headers-to-json",
+  "browser-info",
+  "hreflang-code-checker"
+ ],
+ "keywords": [
+  "accept-language parser",
+  "accept-language q values",
+  "parse accept-language header",
+  "browser language preferences"
+ ]
+}

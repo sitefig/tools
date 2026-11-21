@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free CREATE and CREATE2 Contract Address Calculator | Free Tools</title>
+<meta name="description" content="Predict an Ethereum contract address from a deployer and nonce (CREATE) or from deployer, salt and init code (CREATE2). Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/evm-create-address/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/evm-create-address/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/evm-create-address/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free CREATE and CREATE2 Contract Address Calculator | Free Tools">
+<meta property="og:description" content="Predict an Ethereum contract address from a deployer and nonce (CREATE) or from deployer, salt and init code (CREATE2). Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/evm-create-address/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free CREATE and CREATE2 Contract Address Calculator | Free Tools">
+<meta name="twitter:description" content="Predict an Ethereum contract address from a deployer and nonce (CREATE) or from deployer, salt and init code (CREATE2). Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"CREATE / CREATE2 Contract Address","url":"https://tools.sitefig.net/en/evm-create-address/","description":"Predict an Ethereum contract address from a deployer and nonce (CREATE) or from deployer, salt and init code (CREATE2). Free, runs in your browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the deployer or sender address and choose CREATE or CREATE2.","For CREATE, set the nonce; for CREATE2, set the salt and paste the init code in the second box.","If you only have the init code hash, tick the checkbox, then read the checksummed address."],"keywords":"create2 address calculator, contract address calculator, free create2 tool, predict contract address, eip1014 create2, ethereum create address nonce","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"CREATE / CREATE2 Contract Address","item":"https://tools.sitefig.net/en/evm-create-address/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is the CREATE address derived?","acceptedAnswer":{"@type":"Answer","text":"As the last 20 bytes of keccak256(rlp([sender, nonce])). The nonce is the sender's transaction count for an account, so the same account gives a new address with each deployment."}},{"@type":"Question","name":"How does CREATE2 differ?","acceptedAnswer":{"@type":"Answer","text":"The address is the last 20 bytes of keccak256(0xff ++ deployer ++ salt ++ keccak256(init_code)), so it does not depend on a nonce. The same deployer, salt and code always give the same address."}},{"@type":"Question","name":"Can I paste the init code hash instead?","acceptedAnswer":{"@type":"Answer","text":"Yes. Tick 'Second input is already the init code hash' and paste the 32-byte hash. Otherwise the tool hashes the init code you give it."}},{"@type":"Question","name":"Does the tool check the chain?","acceptedAnswer":{"@type":"Answer","text":"No. It computes the address only. Whether anything is deployed there, or whether the address has been used, needs a node or explorer."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">CREATE / CREATE2 Contract Address</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>CREATE / CREATE2 Contract Address</h1>
+<p class="lede">Enter a deployer address and choose CREATE or CREATE2. The tool calculates the contract address from the nonce, or from the salt and init code, as a checksummed address.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="evm-create-address" data-module="crypto2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Smart contract addresses are not random: they follow from who deploys them. With CREATE the address depends on the deployer and its nonce, and with CREATE2 it depends on the deployer, a salt and the hash of the init code. That makes it possible to know an address before deployment, which factories, wallets and cross-chain systems rely on. Developers need to check their expectations, for example that a factory will deploy to the address a front end shows. This tool follows EIP-1014 for CREATE2 and the RLP-based rule for CREATE, using Keccak-256 locally in your browser. You can supply either the init code itself or its hash. It does not look anything up on-chain, so it cannot tell whether an address is already in use.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the deployer or sender address and choose CREATE or CREATE2.</li><li>For CREATE, set the nonce; for CREATE2, set the salt and paste the init code in the second box.</li><li>If you only have the init code hash, tick the checkbox, then read the checksummed address.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How is the CREATE address derived?</summary><p>As the last 20 bytes of keccak256(rlp([sender, nonce])). The nonce is the sender's transaction count for an account, so the same account gives a new address with each deployment.</p></details>
+<details><summary>How does CREATE2 differ?</summary><p>The address is the last 20 bytes of keccak256(0xff ++ deployer ++ salt ++ keccak256(init_code)), so it does not depend on a nonce. The same deployer, salt and code always give the same address.</p></details>
+<details><summary>Can I paste the init code hash instead?</summary><p>Yes. Tick 'Second input is already the init code hash' and paste the 32-byte hash. Otherwise the tool hashes the init code you give it.</p></details>
+<details><summary>Does the tool check the chain?</summary><p>No. It computes the address only. Whether anything is deployed there, or whether the address has been used, needs a node or explorer.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/rlp-codec/"><span class="link-card__title">RLP Encoder / Decoder</span><span class="link-card__desc">Ethereum Recursive Length Prefix. Encode JSON (strings &quot;0x..&quot; = bytes, other strings = UTF-8, numbers = integers, arrays = lists) or decode hex into nested hex strings, with canonical-form checks.</span></a></li><li><a class="link-card" href="/en/eip55-checksum-address/"><span class="link-card__title">Ethereum EIP-55 Checksum Address</span><span class="link-card__desc">Convert addresses (one per line) to EIP-55 mixed-case checksum form and validate existing checksums.</span></a></li><li><a class="link-card" href="/en/ethereum-keccak256-hasher/"><span class="link-card__title">Keccak-256 / SHA-3 Hasher</span><span class="link-card__desc">Hand-written Keccak-f[1600]: Ethereum Keccak-256 (not NIST SHA3-256), Keccak-512 and SHA3-224/256/384/512. Shows the 4-byte selector for function signatures.</span></a></li><li><a class="link-card" href="/en/abi-encoder-decoder/"><span class="link-card__title">Solidity ABI Encoder / Decoder</span><span class="link-card__desc">Encode values or decode calldata with the Ethereum ABI: uintN/intN, address, bool, bytesN, bytes, string, arrays and tuples. Accepts a function signature to add the 4-byte selector.</span></a></li><li><a class="link-card" href="/en/solidity-storage-slot/"><span class="link-card__title">Solidity Storage Slot Calculator</span><span class="link-card__desc">Walk a storage path through mappings, dynamic arrays, struct offsets and namespaced slots (EIP-1967 / ERC-7201) using keccak256, one operation per line.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

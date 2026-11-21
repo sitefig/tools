@@ -1,0 +1,45 @@
+{
+ "id": "videoobject-schema-generator",
+ "seoTitle": "VideoObject Schema Generator With Key Moments (Clip)",
+ "metaDescription": "Build VideoObject JSON-LD with thumbnail, duration, upload date and key moments as Clip objects from timestamps like 0:25.",
+ "intro": "Generates VideoObject markup with thumbnails, ISO 8601 duration, upload date, content and embed URLs, live broadcast info and key moments as Clip entries.",
+ "why": "Video markup needs a name, thumbnail and upload date to be eligible, and key moments need a name, start offset and URL for each clip. You write clips as Label | start | end with times like 1:20, and the tool converts them to seconds, links each to your page with a ?t= parameter, and warns if a clip runs past the video length.\n\nThe duration is read as minutes and seconds (2:10 becomes PT2M10S). Required and recommended fields are checked against the video documentation.",
+ "howTo": [
+  "Fill name, description, thumbnail URL and upload date.",
+  "Enter the duration as 2:10 and the content or embed URL.",
+  "Add one clip: line per key moment and set pageUrl.",
+  "Copy the script tag onto the video page."
+ ],
+ "faq": [
+  {
+   "q": "How are clip URLs built?",
+   "a": "pageUrl plus ?t=seconds. Check that your player honours that parameter."
+  },
+  {
+   "q": "Why is a time zone mentioned?",
+   "a": "Upload dates with a time need an offset; the time zone option supplies it."
+  },
+  {
+   "q": "Does it support live streams?",
+   "a": "Yes: live: start | end adds a BroadcastEvent with isLiveBroadcast."
+  },
+  {
+   "q": "Is a thumbnail required?",
+   "a": "Yes, Google lists thumbnailUrl as required."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "iso-8601-duration-builder",
+  "rich-result-eligibility-checker",
+  "jsonld-syntax-validator",
+  "recipe-schema-generator",
+  "subtitle-srt-vtt-converter"
+ ],
+ "keywords": [
+  "videoobject schema generator",
+  "video key moments schema",
+  "clip structured data",
+  "video json-ld"
+ ]
+}

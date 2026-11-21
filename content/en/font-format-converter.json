@@ -1,0 +1,45 @@
+{
+ "id": "font-format-converter",
+ "seoTitle": "Font Format Converter: TTF or OTF to WOFF with @font-face",
+ "metaDescription": "Pack a TTF or OTF font as WOFF for the web with a ready @font-face rule, or unpack WOFF back to TTF or OTF. Free, local, lossless.",
+ "intro": "Converts between desktop font files and WOFF, the compressed web font format, and writes a matching @font-face CSS rule.",
+ "why": "WOFF is the original zlib-compressed wrapper for fonts. Each table is compressed on its own and the font data is unchanged, so the conversion is lossless and reversible. The test font used here shrank to about half its size.\n\nWOFF2 compresses better but needs a Brotli encoder, which the browser does not offer and this site does not ship, so it is not offered. WOFF is supported by all current browsers. Check the font license before converting or self-hosting.",
+ "howTo": [
+  "Choose a TTF, OTF or WOFF file.",
+  "Pick WOFF or unpacked output.",
+  "Run the tool and download the font.",
+  "Copy the @font-face rule into your CSS."
+ ],
+ "faq": [
+  {
+   "q": "Why no WOFF2?",
+   "a": "Browsers cannot produce Brotli output for scripts. WOFF gives a smaller file than TTF but larger than WOFF2."
+  },
+  {
+   "q": "Does it change glyphs?",
+   "a": "No. Tables are copied byte for byte. Round trip checks showed identical tables."
+  },
+  {
+   "q": "May I convert any font?",
+   "a": "Only if the license allows it. Some licenses forbid web embedding."
+  },
+  {
+   "q": "Can it subset the font?",
+   "a": "Use the Font Subsetter to cut unused glyphs first."
+  }
+ ],
+ "related": [
+  "font-subsetter",
+  "font-file-inspector",
+  "font-loading-snippet-generator",
+  "google-fonts-gdpr-checker",
+  "variable-font-playground",
+  "file-to-data-uri"
+ ],
+ "keywords": [
+  "ttf to woff",
+  "font converter online",
+  "woff to ttf",
+  "font-face generator"
+ ]
+}

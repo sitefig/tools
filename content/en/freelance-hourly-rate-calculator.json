@@ -1,0 +1,39 @@
+{
+ "id": "freelance-hourly-rate-calculator",
+ "seoTitle": "Freelance Hourly Rate Calculator From Income Target",
+ "metaDescription": "Find the hourly rate you need for a take-home target after expenses, tax and realistic billable hours. Free and private.",
+ "intro": "Works backwards from the income you want to the hourly rate you need to charge.",
+ "why": "Most freelancers cannot bill every working hour. Admin, sales and gaps take a large share, so the rate must be higher than salary divided by 2080. Tax and expenses add to what you need.\n\nEnter your target take-home, expenses, tax rate estimate, working weeks and the share of time you bill. The tax rate is your own estimate. A buffer line shows the rate with 15 percent extra.",
+ "howTo": [
+  "Enter your take-home target and expenses.",
+  "Enter your tax estimate and weeks and hours worked.",
+  "Set billable share and read the rate."
+ ],
+ "faq": [
+  {
+   "q": "What billable share is realistic?",
+   "a": "Many freelancers bill 50 to 70 percent of working hours. Use your own history."
+  },
+  {
+   "q": "Which tax rate should I use?",
+   "a": "Ask an accountant. The tool does not know your country."
+  },
+  {
+   "q": "Does it include holidays?",
+   "a": "Yes, by working weeks."
+  }
+ ],
+ "related": [
+  "employee-total-cost-calculator",
+  "day-rate-to-salary-converter",
+  "project-quote-estimator",
+  "salary-hourly",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "freelance hourly rate",
+  "hourly rate calculator",
+  "freelancer rate from income"
+ ]
+}

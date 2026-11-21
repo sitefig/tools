@@ -1,0 +1,46 @@
+{
+  "id": "tokenizer-cost-estimator",
+  "seoTitle": "Free Token Cost Estimator: Use Your Own Prices",
+  "metaDescription": "Count tokens exactly with cl100k_base or o200k_base and multiply by the per-million prices you enter to estimate cost. Free, runs in your browser.",
+  "intro": "Counts the tokens of a prompt with the exact OpenAI encoding, then works out the cost from input and output prices that you type in. No prices are built in.",
+  "why": "Before you run a prompt a thousand times, it is worth knowing what it will cost. Pricing pages list rates per million tokens, and turning a prompt into a bill means counting its tokens, adding expected output, and multiplying by the number of calls.\n\nPaste the prompt, pick the encoding, then type the input price, the output price, the expected output tokens per call and the number of calls. You get the cost per call and the total. The tool deliberately has no price list, because rates change and a stale figure would mislead you. Copy the current numbers from your provider's pricing page. Discounts for cached input or batch jobs are not modelled. The counting runs in your browser.",
+  "howTo": [
+    "Paste your prompt text into the box.",
+    "Choose the encoding that matches your model.",
+    "Enter input and output prices per 1M tokens, expected output tokens, number of calls and a currency label.",
+    "Read the cost per call and the total for all calls."
+  ],
+  "faq": [
+    {
+      "q": "Where do I find the prices?",
+      "a": "On your provider's own pricing page. Enter the figure per one million tokens for input and for output. This tool assumes nothing and verifies nothing, so the answer is only as good as the numbers you enter."
+    },
+    {
+      "q": "Is the token count exact?",
+      "a": "For OpenAI models, the count of your prompt text is exact for the encoding you pick. The number of output tokens is your own estimate, and message framing for chat requests is not added."
+    },
+    {
+      "q": "Does it handle cached or batch pricing?",
+      "a": "No. It multiplies a flat price by the token count. If your provider discounts cached input or batch requests, adjust the price you enter, or run separate calculations."
+    },
+    {
+      "q": "Can I use it for non-OpenAI models?",
+      "a": "The token count would only be an approximation, because other tokenizers differ. For a rough result, enter your own price anyway, but expect the real count to be somewhat different."
+    }
+  ],
+  "related": [
+    "gpt-token-counter",
+    "llm-cost-calculator",
+    "embedding-cost-calculator",
+    "llm-token-estimator",
+    "system-prompt-budgeter",
+    "tiktoken-visualizer"
+  ],
+  "keywords": [
+    "token cost estimator",
+    "llm prompt cost calculator",
+    "openai cost per prompt",
+    "token price calculator",
+    "free api cost estimator"
+  ]
+}

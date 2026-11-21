@@ -1,0 +1,45 @@
+{
+ "id": "dns-record-generator",
+ "seoTitle": "Free DNS Zone Record Generator - BIND and Route 53",
+ "metaDescription": "Write DNS records as simple lines and get a validated BIND zone file, Route 53 change batch or JSON. Supports A, AAAA, CNAME, MX, TXT, SRV, CAA. Free.",
+ "intro": "Turns simple lines such as \"MX @ 10 mail.example.com\" into a validated BIND zone file, a Route 53 ChangeBatch JSON or a plain JSON list. Nothing is looked up or published.",
+ "why": "Moving a domain or setting up mail usually means typing a dozen DNS records into a provider's form or zone file, where one wrong dot or missing quote breaks something quietly. This tool lets you write each record as a short line and checks it before producing output: IPv4 and IPv6 addresses, MX priorities, SRV fields, CAA tags and hostnames are validated, long TXT values are split into 255-byte strings, and a CNAME that shares a name with other records is rejected. The output can be pasted into a BIND file or sent to Route 53 as a change batch. It is a writing aid, not a resolver, and it never contacts any DNS server.",
+ "howTo": [
+  "Enter the zone, for example example.com, and the default TTL.",
+  "Write one record per line as TYPE name value, using @ for the apex and ttl=300 to override the TTL.",
+  "Choose BIND zone file, Route 53 ChangeBatch JSON or JSON list, then copy the output."
+ ],
+ "faq": [
+  {
+   "q": "Which record types are supported?",
+   "a": "A, AAAA, CNAME, MX, TXT, NS, SRV, CAA and PTR. Any other type gives an error naming the line. Each type has its own validation, for example MX needs a priority and a target host."
+  },
+  {
+   "q": "How are long TXT records handled?",
+   "a": "Values over 255 bytes are split into several quoted strings in one record, as DNS requires. This matters for DKIM keys and long SPF records."
+  },
+  {
+   "q": "Why does it complain about a CNAME?",
+   "a": "DNS forbids a CNAME on a name that has any other record type. The tool checks this across your lines and stops with the name that conflicts."
+  },
+  {
+   "q": "Does it check my live DNS or publish anything?",
+   "a": "No. It only formats and validates what you type. The SOA values in the BIND header are placeholders, so replace them with your provider's before loading the file."
+  }
+ ],
+ "related": [
+  "spf-record-generator",
+  "dkim-record-generator",
+  "dmarc-generator",
+  "dns-spf-record-flattener",
+  "dns-soa-dnssec-inspector",
+  "ip-validator-converter"
+ ],
+ "keywords": [
+  "dns record generator",
+  "bind zone file generator",
+  "route 53 change batch generator",
+  "free dns zone file builder",
+  "dns records to bind format"
+ ]
+}

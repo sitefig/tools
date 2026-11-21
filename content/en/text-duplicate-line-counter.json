@@ -1,0 +1,45 @@
+{
+ "id": "text-duplicate-line-counter",
+ "seoTitle": "Free Duplicate Line Counter and Frequency Tool",
+ "metaDescription": "Count how often each distinct line occurs and list lines by frequency with percentages. Ignore case or spaces if you wish. Free, in your browser.",
+ "intro": "Paste a list and see each distinct line with the number of times it occurs and its share of the total, sorted by count, alphabetically or by first appearance.",
+ "why": "Logs, exports and keyword lists often hide repeats that are the real story: the same error appearing 400 times, a customer listed twice, the most common value in a column. Sorting a list and removing duplicates tells you what is there, but not how often.\n\nThis counter gives a frequency table. You can ignore case and trim spaces so that apple and Apple count together, show only lines that occur more than once, and sort by count, alphabet or first appearance. The header line reports total lines, distinct lines and how many duplicates there are. The first spelling of each line is shown. Blank lines are not counted. It handles plain lines, not CSV columns, so extract the column first.",
+ "howTo": [
+  "Paste your lines, one value per line.",
+  "Choose whether to ignore case, trim spaces and show only duplicates.",
+  "Pick a sort order and read the counts and percentages."
+ ],
+ "faq": [
+  {
+   "q": "Which spelling is displayed when case differs?",
+   "a": "The first spelling found in your text. If Apple appears before apple, the combined line is shown as Apple with the total count."
+  },
+  {
+   "q": "Are empty lines counted?",
+   "a": "No. Blank lines are skipped, and the totals only include lines with content after trimming when trim is on."
+  },
+  {
+   "q": "How do I only remove duplicates?",
+   "a": "Use a dedupe tool for that. This one is meant to show the counts, so you can decide which repeats matter."
+  },
+  {
+   "q": "Can I analyse a CSV column?",
+   "a": "Extract the column first with the column splitter, then paste the values here. Each line is treated as one value."
+  }
+ ],
+ "related": [
+  "dedupe-lines",
+  "sort-lines",
+  "character-frequency",
+  "text-column-splitter",
+  "word-counter",
+  "text-statistics"
+ ],
+ "keywords": [
+  "duplicate line counter",
+  "count duplicate lines online",
+  "line frequency counter",
+  "free repeated lines finder",
+  "count occurrences of each line"
+ ]
+}

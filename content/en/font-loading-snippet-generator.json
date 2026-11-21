@@ -1,0 +1,44 @@
+{
+ "id": "font-loading-snippet-generator",
+ "seoTitle": "Web Font Loading Snippet Generator: @font-face, font-display, Preload",
+ "metaDescription": "Describe your font files and get @font-face rules with font-display, WOFF2-first src lists, preload tags and a fallback font stack.",
+ "intro": "Writes @font-face rules, preload tags and a font stack from a list of your font files.",
+ "why": "Web fonts can block or shift text. Good loading code is short but easy to get wrong.\n\nThe tool orders WOFF2 first, adds format hints, sets font-display, and preloads the first faces you choose with crossorigin. It explains what the chosen font-display value does. It does not check licenses or subset the file; use the Font Subsetter for size.",
+ "howTo": [
+  "Add one line per face: Family | weight | style | files.",
+  "Pick font-display and how many faces to preload.",
+  "Set the fallback fonts.",
+  "Copy the CSS and head tags."
+ ],
+ "faq": [
+  {
+   "q": "Which font-display should I use?",
+   "a": "swap shows text at once and swaps later; optional avoids layout shift but may keep the fallback. Avoid block for body text."
+  },
+  {
+   "q": "Do I need WOFF as well as WOFF2?",
+   "a": "Only for very old browsers. WOFF2 is supported everywhere current."
+  },
+  {
+   "q": "Why preload only two faces?",
+   "a": "Each preload competes for bandwidth. Preload faces used above the fold."
+  },
+  {
+   "q": "Does it upload fonts?",
+   "a": "No, it only writes text."
+  }
+ ],
+ "related": [
+  "font-subsetter",
+  "resource-hints-generator",
+  "cls-risk-finder",
+  "css-clamp-generator",
+  "render-blocking-resource-finder"
+ ],
+ "keywords": [
+  "font loading snippet",
+  "font-face generator font-display",
+  "preload web font",
+  "woff2 font-face"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "binary-text",
+ "seoTitle": "Free Binary to Text and Text to Binary Converter",
+ "metaDescription": "Convert text to 8-bit binary and binary back to text using UTF-8. Handles accents and emoji. Free, instant and runs in your browser.",
+ "intro": "Turn text into groups of 8-bit binary, or paste ones and zeros and read the message. It works on UTF-8 bytes, so non-English characters come out correctly.",
+ "why": "Binary conversion is a staple of computing homework, puzzle hunts, CTF challenges and quick checks of how a character is stored. Doing it by hand means looking up codes and padding bits, and it is easy to drop a digit halfway through.\n\nThis tool converts each UTF-8 byte of your text to eight bits, separated by spaces. Going back, it ignores everything except 0 and 1, regroups the digits into bytes and decodes them. If the number of bits is not a multiple of eight, you are told so rather than given garbage. It all happens locally.",
+ "howTo": [
+  "Choose \"text to binary\" or \"binary to text\" as the direction.",
+  "Paste the text, or the binary digits, into the Input box.",
+  "Run the conversion.",
+  "Copy the result from the output box."
+ ],
+ "faq": [
+  {
+   "q": "Why are there 8 bits per character?",
+   "a": "Each UTF-8 byte is shown as 8 bits. Basic English letters take one byte, so one group of 8. Accented letters and symbols use two to four bytes, so they appear as several groups."
+  },
+  {
+   "q": "What if my binary has no spaces?",
+   "a": "That is fine. The decoder drops everything that is not a 0 or 1 and then splits the digits into groups of eight, so spaced and unspaced input both work."
+  },
+  {
+   "q": "Why do I get an error about the length?",
+   "a": "The number of binary digits must be a multiple of 8. A missing or extra digit shifts every byte after it, so the tool refuses instead of guessing. Count the digits or look for a trimmed first or last group."
+  },
+  {
+   "q": "Can it show 7-bit ASCII or 16-bit values?",
+   "a": "No. It always uses 8-bit bytes of UTF-8. For other bases or two's complement of whole numbers, use the Number Base Converter."
+  }
+ ],
+ "related": [
+  "hex-text",
+  "number-base-converter",
+  "ascii-table",
+  "utf8-bytes-viewer",
+  "morse-translator",
+  "bitwise-calculator"
+ ],
+ "keywords": [
+  "binary to text converter",
+  "text to binary online",
+  "free binary translator",
+  "binary to ascii",
+  "utf-8 to binary",
+  "convert binary code to words"
+ ]
+}

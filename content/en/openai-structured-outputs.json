@@ -1,0 +1,45 @@
+{
+ "id": "openai-structured-outputs",
+ "seoTitle": "Free OpenAI Structured Outputs Schema Builder",
+ "metaDescription": "Turn sample JSON or a JSON Schema into a strict response_format for OpenAI Structured Outputs, with Python and TypeScript snippets. Free, in browser.",
+ "intro": "Turns sample JSON or an existing JSON Schema into a strict response_format for OpenAI Structured Outputs, with every property required, additionalProperties false and optional fields made nullable.",
+ "why": "Structured Outputs in strict mode accept only a limited form of JSON Schema: every property must be listed as required, extra properties are not allowed, and some keywords are rejected. Hand-written schemas often fail the first request with a validation error, and the message is not always clear. Give this tool a sample object or your schema and it rewrites it into the strict shape, makes optional fields nullable, and removes keywords the strict mode does not accept, such as minLength or pattern, listing what it stripped. You can then copy the response_format JSON, or a ready request snippet in Python or TypeScript. Check the rules for your model, since support changes over time. Your data stays in your browser.",
+ "howTo": [
+  "Paste a sample JSON object or a JSON Schema into the input box.",
+  "Name the schema and choose the output: response_format JSON, a Python snippet or a TypeScript snippet.",
+  "Copy the result and check the list of stripped keywords."
+ ],
+ "faq": [
+  {
+   "q": "What changes does strict mode require?",
+   "a": "Every property listed in required, additionalProperties set to false on objects, and optional fields expressed as a type that includes null. The tool applies these changes for you."
+  },
+  {
+   "q": "What does it remove?",
+   "a": "Keywords that strict mode may reject, such as minLength, maxLength, pattern and similar constraints. They are listed so you can enforce them in your own code instead."
+  },
+  {
+   "q": "How does it infer a schema from a sample?",
+   "a": "It reads the types of the values you provide. Strings, numbers, integers, booleans, arrays and nested objects are recognised. Null values make a field nullable."
+  },
+  {
+   "q": "Is the output guaranteed to be accepted?",
+   "a": "No. Supported keywords differ by model and change over time. Test the schema with a real request and check the current documentation."
+  }
+ ],
+ "related": [
+  "llm-tool-definition-builder",
+  "json-schema-generator",
+  "json-schema-validator",
+  "curl-to-ai-sdk",
+  "prompt-linter",
+  "json-to-pydantic"
+ ],
+ "keywords": [
+  "openai structured outputs schema",
+  "response_format json_schema builder",
+  "strict json schema openai",
+  "free structured output generator",
+  "openai json schema python snippet"
+ ]
+}

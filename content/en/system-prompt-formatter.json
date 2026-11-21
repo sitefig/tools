@@ -1,0 +1,45 @@
+{
+ "id": "system-prompt-formatter",
+ "seoTitle": "Free System Prompt Formatter - XML Tags or Markdown",
+ "metaDescription": "Restructure a system prompt into labelled sections such as role, context, instructions, constraints and format, using XML or Markdown. Free.",
+ "intro": "Restructures a free-form system prompt into labelled sections: role, context, instructions, constraints, output format and examples, written with XML tags, Markdown headings or plain labels.",
+ "why": "System prompts tend to grow by accretion: a line about tone here, a rule added after a bug there, an example pasted at the end. Eventually nobody can see what the model has been told. Splitting the prompt into named sections makes it easier to read, edit and review, and many people find models follow clearly delimited prompts more reliably. This tool sorts each line or paragraph into a section, using your existing headings or tags where present and keyword rules where not, then writes the result in the style you choose. It does not rewrite your wording, and its sorting is heuristic, so read the output and move any misplaced line. Your prompt stays in the browser.",
+ "howTo": [
+  "Paste your existing system prompt into the input box.",
+  "Choose XML tags, Markdown headings or plain labels as the output style.",
+  "Check that each line landed in the right section, move any misplaced ones and copy the prompt."
+ ],
+ "faq": [
+  {
+   "q": "How does it decide which section a line belongs to?",
+   "a": "If your prompt already has headings or tags it uses them. Otherwise keyword rules decide: \"You are\" means role, example markers mean examples, words like never or avoid mean constraints, format words mean output format."
+  },
+  {
+   "q": "Does it change my wording?",
+   "a": "No. Lines are kept as written, only removing list markers and regrouping. Instructions and constraints with several lines become bullet lists."
+  },
+  {
+   "q": "Why did a line end up in the wrong section?",
+   "a": "Rules are simple and a line can match more than one. Always review the result and move lines by hand. The default bucket is instructions."
+  },
+  {
+   "q": "Which style should I pick?",
+   "a": "XML tags suit prompts with long pasted content because the boundaries are explicit. Markdown headings read well for humans. Both are valid; use what your team can maintain."
+  }
+ ],
+ "related": [
+  "system-prompt-xml-builder",
+  "prompt-linter",
+  "prompt-format-converter",
+  "llm-few-shot-prompt-formatter",
+  "prompt-template-filler",
+  "system-prompt-budgeter"
+ ],
+ "keywords": [
+  "system prompt formatter",
+  "structure system prompt xml tags",
+  "organize ai prompt sections",
+  "free prompt restructure tool",
+  "system prompt template builder"
+ ]
+}

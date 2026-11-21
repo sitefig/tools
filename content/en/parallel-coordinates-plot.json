@@ -1,0 +1,44 @@
+{
+ "id": "parallel-coordinates-plot",
+ "seoTitle": "Parallel Coordinates Plot with Range Filters",
+ "metaDescription": "Draw each row as a line across one axis per numeric column and filter rows by typing a range per column. Free SVG.",
+ "intro": "Shows multi-column data as lines across vertical axes. Filters highlight matching rows and fade the rest.",
+ "why": "Parallel coordinates help you explore tables with many numeric columns: which rows are high on one measure and low on another. The first axis order matters, so reorder columns in your data to compare neighbours.\n\nInstead of dragging a brush on an axis, you type filters such as mpg: 20-30; weight: -3000. The matching ranges appear as yellow bars on the axes. This keeps the tool usable without a pointer. Text columns are used to colour lines.",
+ "howTo": [
+  "Paste a table with a header row.",
+  "Type filters as column: min-max, separated by ;.",
+  "Choose a column to colour lines by.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "How do I write an open range?",
+   "a": "Leave one side empty: mpg: 20- or weight: -3000."
+  },
+  {
+   "q": "Which columns become axes?",
+   "a": "Columns where every filled cell is a number."
+  },
+  {
+   "q": "How many rows?",
+   "a": "Up to 1000."
+  },
+  {
+   "q": "Can axes be reordered?",
+   "a": "Reorder the columns in your data."
+  }
+ ],
+ "related": [
+  "scatter-plot-maker",
+  "heatmap-maker",
+  "radar-chart-maker",
+  "bubble-chart-maker",
+  "csv-column-profiler",
+  "column-statistics-summarizer"
+ ],
+ "keywords": [
+  "parallel coordinates plot",
+  "multidimensional data visualization",
+  "filter rows by range chart"
+ ]
+}

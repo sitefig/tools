@@ -1,0 +1,44 @@
+{
+ "id": "bingbot-robots-rule-simulator",
+ "seoTitle": "Bingbot robots.txt Simulator: Compare with Googlebot",
+ "metaDescription": "Test URLs for Bingbot, see its Crawl-delay and find where the result differs from Googlebot because of group selection. Free, in your browser.",
+ "intro": "Applies robots.txt to Bingbot and Googlebot side by side and shows the URLs where they differ.",
+ "why": "Bingbot and Googlebot can get different answers from the same file, mostly because each uses the most specific group that names it. A Bingbot-only group with a Crawl-delay, for instance, replaces the * rules for Bing but not for Google.\n\nThe simulator uses RFC 9309 matching for both and lists Bingbot's Crawl-delay. It does not model any Bing-specific parsing quirks, because those were not verified; check with Bing Webmaster Tools for anything critical.",
+ "howTo": [
+  "Paste the robots.txt and URLs.",
+  "Choose the Bing crawler.",
+  "Read the side-by-side verdicts.",
+  "Check the differing URLs and the Crawl-delay."
+ ],
+ "faq": [
+  {
+   "q": "Why would results differ?",
+   "a": "Different groups apply to each crawler."
+  },
+  {
+   "q": "Does Bing read Crawl-delay?",
+   "a": "It is commonly reported to, but this was not verified here."
+  },
+  {
+   "q": "Does it model Bing-specific quirks?",
+   "a": "No. It uses the shared RFC 9309 matching."
+  },
+  {
+   "q": "Where do I confirm?",
+   "a": "Bing Webmaster Tools."
+  }
+ ],
+ "related": [
+  "googlebot-robots-rule-simulator",
+  "robots-tester",
+  "robots-group-merger",
+  "crawl-delay-calculator",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "bingbot robots.txt tester",
+  "bing robots.txt",
+  "bingbot crawl delay",
+  "bing vs google robots.txt"
+ ]
+}

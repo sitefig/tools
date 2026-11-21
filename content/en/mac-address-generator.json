@@ -1,0 +1,45 @@
+{
+ "id": "mac-address-generator",
+ "seoTitle": "Free MAC Address Generator - Random Addresses Online",
+ "metaDescription": "Generate random MAC addresses as unicast or multicast, locally or globally administered, with your own OUI prefix and colon, dash or Cisco format. Free.",
+ "intro": "Generates random MAC addresses from your browser's secure random source, in the type and format you choose, optionally starting from your own OUI prefix.",
+ "why": "Test setups, virtual machines, containers and network labs all need hardware addresses that do not clash. Inventing them by hand risks duplicates, or setting the wrong bits so the address is treated as multicast. This tool produces random six-byte addresses with the unicast and locally-administered flags set the way you ask, which is the safe range for virtual interfaces. If you need addresses that look like they belong to a vendor, give it an OUI prefix and it fills in the rest. You can generate up to a thousand at once in colon, dash, Cisco-dot or plain format. They are for testing and documentation only, not for impersonating real devices. Generation happens in your browser.",
+ "howTo": [
+  "Set how many addresses you need, from 1 to 1000.",
+  "Choose the type (unicast locally administered, unicast globally unique, or multicast) and the output format.",
+  "Optionally enter an OUI prefix and tick upper case, then copy the list."
+ ],
+ "faq": [
+  {
+   "q": "What does \"locally administered\" mean?",
+   "a": "The second-lowest bit of the first byte marks an address as assigned by an administrator instead of a manufacturer. It is the recommended range for virtual machines and test devices because it will not collide with real vendor blocks."
+  },
+  {
+   "q": "What happens when I enter an OUI prefix?",
+   "a": "The prefix is used as the first bytes (up to five) and the remaining bytes are random. The type setting is then not applied, so make sure your prefix has the flag bits you need."
+  },
+  {
+   "q": "Are the addresses really random?",
+   "a": "They come from crypto.getRandomValues, the browser's secure random generator. Randomness does not guarantee uniqueness, so on a real network check for duplicates."
+  },
+  {
+   "q": "Can I use these on real hardware?",
+   "a": "Changing a device's MAC address can break network access control and may be against policy. Use generated addresses for labs, tests and examples, and follow your network rules."
+  }
+ ],
+ "related": [
+  "ip-subnet-calculator",
+  "uuid-generator",
+  "ip-validator-converter",
+  "random-number-picker",
+  "dns-record-generator",
+  "port-reference"
+ ],
+ "keywords": [
+  "mac address generator",
+  "random mac address",
+  "generate mac address online",
+  "free mac address generator",
+  "mac address with custom oui"
+ ]
+}

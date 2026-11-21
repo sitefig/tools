@@ -1,0 +1,47 @@
+{
+ "id": "shadcn-theme-generator",
+ "seoTitle": "Free shadcn/ui Theme Generator (OKLCH Variables)",
+ "metaDescription": "Free shadcn/ui theme generator. Create light and dark OKLCH CSS variables from a primary colour, neutral tint and radius, with @theme inline mapping.",
+ "intro": "Generate the CSS variables for a shadcn/ui theme from a primary colour, a neutral tint and a border radius. Light and dark modes are included in OKLCH, with the @theme inline mapping.",
+ "why": "A shadcn/ui theme is a long list of CSS variables: background, foreground, card, popover, primary, secondary, muted, accent, destructive, border, input, ring, chart colours and sidebar tokens, each with a light and a dark value. Building a coherent set by hand takes a while, and a single poorly chosen foreground can make text unreadable.\n\nChoose a primary colour, a neutral tint such as slate, zinc or stone, and a radius. The tool derives the rest, picks light or dark foreground text for the primary, creates dark-mode variants, and adds chart colours around the hue wheel. The @theme inline block maps the variables to Tailwind colour names. The result is a starting point, so check contrast in your own components. Nothing is uploaded.",
+ "howTo": [
+  "Pick the primary colour.",
+  "Choose a neutral tint: neutral, slate, zinc, stone or match primary.",
+  "Set the radius, for example 0.625rem, and keep @theme inline ticked for Tailwind v4.",
+  "Copy the CSS into your global stylesheet and look at the light and dark preview."
+ ],
+ "faq": [
+  {
+   "q": "Which versions does it target?",
+   "a": "The variable names and OKLCH values follow the current shadcn/ui and Tailwind v4 conventions, including the @theme inline block. For older setups, you may need to adjust the format."
+  },
+  {
+   "q": "How is the foreground colour chosen?",
+   "a": "For the primary colour, the tool uses dark text when the colour is light and near-white text when it is dark. Check contrast with the contrast checker for your actual components."
+  },
+  {
+   "q": "What does the neutral tint change?",
+   "a": "It sets the hue and a small amount of colour in greys such as background, border and muted. Neutral is pure grey, while slate and others add a slight cool or warm tone."
+  },
+  {
+   "q": "Can I edit the result?",
+   "a": "Yes, all values are plain CSS variables. Adjust any token, then keep light and dark pairs consistent so the interface stays readable."
+  }
+ ],
+ "related": [
+  "tailwind-v4-color-palette",
+  "contrast-checker",
+  "color-converter",
+  "css-box-shadow-to-tailwind",
+  "tailwind-to-inline-css",
+  "palette-generator"
+ ],
+ "keywords": [
+  "shadcn theme generator",
+  "shadcn ui theme",
+  "shadcn css variables generator",
+  "free shadcn colors tool",
+  "oklch shadcn theme",
+  "shadcn dark mode theme"
+ ]
+}

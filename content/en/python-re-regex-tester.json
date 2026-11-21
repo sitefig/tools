@@ -1,0 +1,45 @@
+{
+ "id": "python-re-regex-tester",
+ "seoTitle": "Python re Regex Tester Online Without Python, Free",
+ "metaDescription": "Test Python 3.12 re patterns in your browser: (?P<name>), fixed-width lookbehind, atomic groups, flags, finditer matches and re.sub templates. Free and offline.",
+ "intro": "Applies a Python re pattern to your text and shows every match span, group and named group the way re.finditer would, with an optional re.sub replacement template.",
+ "why": "Python's re module differs from JavaScript and from PCRE in details that matter: named groups are written (?P<name>...), lookbehind must have a fixed width, \\Z means the very end, \\w and \\d are Unicode aware unless the ASCII flag is set, and empty matches next to a previous match are reported. Testing in the wrong flavour gives surprises later.\n\nThis tool uses its own matcher written to follow Python 3.12 re. It was compared with the real re module on tens of thousands of generated cases and agreed on every one that both accepted, including error cases. Limits: no Unicode case folding beyond simple lower and upper case, \\N{name} escapes are not supported, \\w uses letters and digits from the browser's Unicode data, and group state inside very deep repetition may hit a recursion limit on subjects of several thousand characters.",
+ "howTo": [
+  "Enter the pattern as you would pass it to re.compile, without quotes.",
+  "Paste the subject text and tick the flags (i, m, s, x, a).",
+  "Check the list of matches and the groups with their spans.",
+  "Add a replacement template such as \\g<year>/\\2 to preview re.sub."
+ ],
+ "faq": [
+  {
+   "q": "Does it match what re.findall returns?",
+   "a": "The match list is what re.finditer yields, including empty matches. Spans are code point offsets like Python string indexes."
+  },
+  {
+   "q": "Why does a lookbehind give an error?",
+   "a": "Python requires a fixed width inside (?<=...) and (?<!...). Alternatives of different length are rejected, as in Python itself."
+  },
+  {
+   "q": "Which Python version is mirrored?",
+   "a": "Behaviour was compared with Python 3.12, which supports atomic groups (?>...) and possessive quantifiers. Older versions reject those."
+  },
+  {
+   "q": "What is not supported?",
+   "a": "\\N{name} escapes, the locale flag, (?L), and flags set in the middle of the pattern, which Python 3.11 and later also reject."
+  }
+ ],
+ "related": [
+  "regex-tester",
+  "pcre-regex-tester",
+  "regex-to-code",
+  "regex-cheatsheet",
+  "regex-explainer",
+  "regex-generator"
+ ],
+ "keywords": [
+  "python re tester",
+  "python regex online",
+  "re.finditer tester",
+  "re.sub template tester"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "file-to-data-uri",
+ "seoTitle": "Convert Any File to a Base64 Data URI",
+ "metaDescription": "Turn any file into a data: URI, raw Base64, a CSS url() value or an HTML tag. The file is read in your browser and never uploaded.",
+ "intro": "Encodes a chosen file as Base64 in the form you need and shows its type and size.",
+ "why": "Small images, fonts and icons can be inlined to save requests. The same trick moves a file through a text-only channel.\n\nThe tool reads the file locally, uses the type the browser reports or detects it from the first bytes, and prints a data URI, plain Base64, a CSS url() value or an HTML tag. It warns when the result is large, because inlined data cannot be cached on its own.",
+ "howTo": [
+  "Choose a file.",
+  "Pick the output form.",
+  "Copy the result.",
+  "Paste it into your HTML, CSS or message."
+ ],
+ "faq": [
+  {
+   "q": "Is there a size limit?",
+   "a": "Only your browser memory. Large outputs are slow to paste and slow pages down."
+  },
+  {
+   "q": "Is the file uploaded?",
+   "a": "No."
+  },
+  {
+   "q": "When should I inline?",
+   "a": "For tiny assets. Above about 10 KB a separate file is usually better."
+  },
+  {
+   "q": "Which tool decodes it back?",
+   "a": "Use Base64 to File or the Data URI Inspector."
+  }
+ ],
+ "related": [
+  "data-uri-inspector",
+  "base64-to-file",
+  "image-to-base64",
+  "base64-image-viewer",
+  "svg-to-css",
+  "base64-encode"
+ ],
+ "keywords": [
+  "file to data uri",
+  "file to base64 online",
+  "convert file to base64",
+  "inline file data url"
+ ]
+}

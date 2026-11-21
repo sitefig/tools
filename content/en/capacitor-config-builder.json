@@ -1,0 +1,43 @@
+{
+ "id": "capacitor-config-builder",
+ "seoTitle": "Free Capacitor Config Builder (TS or JSON)",
+ "metaDescription": "Build capacitor.config.ts or capacitor.config.json with app ID, server options and plugin settings for splash screen, status bar and push. Free.",
+ "intro": "Set your app ID, name and web directory, add server and plugin options, and get a capacitor.config.ts or capacitor.config.json file you can drop into an Ionic or Capacitor project.",
+ "why": "Capacitor reads one config file at sync time, and a typo in a key is ignored without complaint. The plugin sections for the splash screen, status bar, keyboard and push notifications each have their own option names, and it is hard to remember them while you are also fighting a native build.\n\nThis builder writes the file in either TypeScript or JSON from a short form. It also reminds you when a live-reload server URL is present, because that setting must not ship in a release build. Everything is produced in your browser, so internal hostnames and bundle IDs are not sent anywhere.",
+ "howTo": [
+  "Enter the app ID, app name and webDir where your built web assets live.",
+  "Optionally set a server URL for live reload, cleartext traffic and the Android scheme.",
+  "Tick the SplashScreen, StatusBar, Keyboard or PushNotifications plugins you use and set their values.",
+  "Choose TypeScript or JSON, copy the result into your project root and run npx cap sync."
+ ],
+ "faq": [
+  {
+   "q": "Should I keep server.url in a production build?",
+   "a": "No. The server URL points the native shell at a development server for live reload. Remove it before you build release binaries, or the app will try to load your dev machine instead of the bundled files."
+  },
+  {
+   "q": "What does the cleartext option change?",
+   "a": "It sets server.cleartext and allows mixed content on Android, so plain HTTP is permitted. Use it only for local development against an HTTP server, never for a released app."
+  },
+  {
+   "q": "Does it cover every Capacitor setting?",
+   "a": "No. It covers the common fields and four popular plugins. Other plugins and platform options can be added by hand to the generated file, following the Capacitor documentation."
+  }
+ ],
+ "related": [
+  "electron-config-builder",
+  "android-manifest-builder",
+  "ios-plist-builder",
+  "package-json-generator",
+  "tsconfig-generator",
+  "universal-links-validator"
+ ],
+ "keywords": [
+  "capacitor config builder",
+  "capacitor.config.ts generator",
+  "capacitor config json",
+  "capacitor splashscreen config",
+  "ionic capacitor config",
+  "free capacitor tool"
+ ]
+}

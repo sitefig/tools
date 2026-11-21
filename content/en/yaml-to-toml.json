@@ -1,0 +1,44 @@
+{
+  "id": "yaml-to-toml",
+  "seoTitle": "YAML to TOML Converter",
+  "metaDescription": "Convert YAML (maps, lists, anchors, multi-line strings) to TOML tables and arrays of tables. Null values are rejected as TOML has none.",
+  "intro": "Move configuration from YAML to TOML in one step.",
+  "why": "The YAML is parsed (including anchors, merge keys and block scalars) and written as TOML with tables, nested tables and arrays of tables. Because TOML has no null and requires a table at the top level, those cases are reported rather than silently altered. Mixed-type arrays are allowed in modern TOML.\n\nComments are not carried over, since the conversion goes through data. Check dates and numbers after conversion.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste YAML.",
+    "Run the conversion.",
+    "Review tables and arrays of tables.",
+    "Save as .toml."
+  ],
+  "faq": [
+    {
+      "q": "Are comments kept?",
+      "a": "No. Only data is converted."
+    },
+    {
+      "q": "What about YAML null?",
+      "a": "TOML cannot represent it, so remove or replace those keys."
+    },
+    {
+      "q": "Can I go back?",
+      "a": "Yes, with the TOML to JSON and JSON to YAML tools."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "toml-to-json",
+    "json-to-toml",
+    "yaml-to-json",
+    "yaml-format",
+    "toml-formatter",
+    "json-to-yaml"
+  ],
+  "keywords": [
+    "yaml to toml",
+    "convert yaml to toml",
+    "config converter"
+  ]
+}

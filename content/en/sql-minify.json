@@ -1,0 +1,46 @@
+{
+ "id": "sql-minify",
+ "seoTitle": "Free SQL Minifier - Compress SQL Online",
+ "metaDescription": "Free online SQL minifier. Strip comments and extra whitespace from SQL while keeping string literals intact. Runs in your browser; nothing is uploaded.",
+ "intro": "Remove comments and extra whitespace from SQL and get a compact query. Quoted strings are kept exactly, so values containing double spaces or dashes are not damaged.",
+ "why": "A formatted query is great in an editor, but you sometimes need it on one line: in a log message, a configuration value, a code string, or a command line. Collapsing it by hand risks cutting into a string literal or leaving a comment that swallows the rest of the line.\n\nThe minifier deletes line and block comments, collapses runs of whitespace into a single space and trims spaces around punctuation. String literals are recognised and copied unchanged, so a value like 'a  -- b' stays exactly as written. Because comments are removed, the single-line result cannot be broken by a trailing -- comment. The tool does not check whether the SQL is valid. Nothing is uploaded; everything happens in your browser.",
+ "howTo": [
+  "Paste your SQL into the input box.",
+  "Read the single-line result in the output.",
+  "Copy it into your code, log or configuration."
+ ],
+ "faq": [
+  {
+   "q": "Are string values safe?",
+   "a": "Yes. Text inside single-quoted strings is copied as it is, including double spaces and characters that look like comments, such as -- or /*."
+  },
+  {
+   "q": "Why remove comments?",
+   "a": "On one line, a -- comment would hide everything after it. Removing comments avoids that, and also makes the result shorter."
+  },
+  {
+   "q": "Does it check SQL syntax?",
+   "a": "No. It only removes whitespace and comments and does not parse the query as a whole. A query with a mistake stays wrong after minifying, so test it in your database."
+  },
+  {
+   "q": "How do I make it readable again?",
+   "a": "Paste the minified query into the SQL Formatter. It restores line breaks and indentation, but any comments that were removed earlier cannot be brought back."
+  }
+ ],
+ "related": [
+  "sql-format",
+  "sql-keyword-uppercaser",
+  "sql-explainer",
+  "json-minify",
+  "csv-to-sql",
+  "sql-index-advisor"
+ ],
+ "keywords": [
+  "sql minifier online",
+  "minify sql",
+  "compress sql query",
+  "free sql minify",
+  "sql one line",
+  "remove sql comments"
+ ]
+}

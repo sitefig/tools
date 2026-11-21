@@ -1,0 +1,46 @@
+{
+ "id": "hkdf-derive",
+ "seoTitle": "Free HKDF Calculator: Derive Keys (RFC 5869)",
+ "metaDescription": "Run HKDF extract-and-expand with SHA-1, SHA-256, SHA-384 or SHA-512 from key material, salt and info. Free HKDF tool, runs in your browser.",
+ "intro": "Enter input key material, choose a hash, and optionally add a hex salt and info string. The tool runs HKDF extract-and-expand and returns the derived key as hex.",
+ "why": "HKDF turns one secret, such as a shared key from a key exchange, into one or more strong keys for different purposes. It appears in TLS 1.3, Signal, WireGuard-style protocols and many application designs. When you build or debug one of these, you need to check that your derived bytes match another implementation, and a small mistake with an empty salt or an info label changes everything. This page follows RFC 5869, using HMAC built on the browser's native SHA functions. The defaults are the first test case from the RFC, so you can see a known answer straight away. Do not paste real production keys into any untrusted page; this runs locally but is a testing aid.",
+ "howTo": [
+  "Enter the input key material and say whether it is hex, text or base64.",
+  "Choose the hash and fill in the optional salt and info as hex.",
+  "Set the output length in bytes and copy the derived key."
+ ],
+ "faq": [
+  {
+   "q": "What are salt and info for?",
+   "a": "The salt randomises the extraction step; an empty salt is replaced by a string of zero bytes. The info string binds the derived key to a context, such as a protocol label."
+  },
+  {
+   "q": "What is the maximum output length?",
+   "a": "255 times the hash size: 8160 bytes for SHA-256 and 16,320 for SHA-512. The tool shows the limit for the chosen hash if you go over."
+  },
+  {
+   "q": "Is HKDF suitable for hashing passwords?",
+   "a": "No. HKDF assumes input that is already high entropy. For passwords use a slow, memory-hard function such as Argon2 or scrypt."
+  },
+  {
+   "q": "Which test case do the defaults reproduce?",
+   "a": "The first test case in RFC 5869 for SHA-256: 22-byte key material 0x0b repeated, salt 000102...0c, info f0f1...f9 and 42 bytes of output."
+  }
+ ],
+ "related": [
+  "pbkdf2-key-derivation",
+  "scrypt-kdf",
+  "argon2-hash",
+  "hmac-generator",
+  "blake3-hash",
+  "hash-generator"
+ ],
+ "keywords": [
+  "hkdf online",
+  "hkdf calculator",
+  "free hkdf generator",
+  "rfc 5869 hkdf",
+  "hkdf sha256 test vector",
+  "key derivation function online"
+ ]
+}

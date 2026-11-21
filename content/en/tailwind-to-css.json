@@ -1,0 +1,41 @@
+{
+ "id": "tailwind-to-css",
+ "seoTitle": "Tailwind Classes to CSS: Convert Utilities to Plain Rules",
+ "metaDescription": "Expand Tailwind v4 utility classes into plain CSS rules with hover, md: and dark: variants. Unknown classes are listed. Free, local.",
+ "intro": "Converts a list of Tailwind utility classes into ordinary CSS rules, including state, breakpoint and dark mode variants.",
+ "why": "Sometimes you want the CSS a Tailwind class stands for: to move a component out of Tailwind, to learn, or to paste into an email or a CMS field.\n\nThis converter handles a documented subset of v4 utilities: layout, spacing, sizing, typography, colours (default OKLCH palette), borders, radius, shadows, opacity and basic transforms. Values were checked against output from the real Tailwind v4 compiler; the compiler writes var(--spacing) calculations where this tool writes the resolved rem value. Classes outside the subset are listed, not guessed.",
+ "howTo": [
+  "Paste the class list.",
+  "Read the generated rules.",
+  "Check the list of classes that were not converted.",
+  "Copy the CSS."
+ ],
+ "faq": [
+  {
+   "q": "Which Tailwind version?",
+   "a": "Values follow the v4 default theme. Spacing is 0.25rem per step."
+  },
+  {
+   "q": "Are custom theme values supported?",
+   "a": "No. Only the default theme and arbitrary values like w-[300px]."
+  },
+  {
+   "q": "What about hover and md: variants?",
+   "a": "They become :hover rules and @media (min-width) blocks. dark: uses prefers-color-scheme."
+  }
+ ],
+ "related": [
+  "tailwind-to-inline-css",
+  "tailwind-converter",
+  "tailwind-class-sorter",
+  "tailwind-v3-to-v4-migrator",
+  "tailwind-spacing-generator",
+  "tailwind-v4-color-palette"
+ ],
+ "keywords": [
+  "tailwind to css",
+  "convert tailwind classes",
+  "tailwind class to css",
+  "tailwind utilities to css"
+ ]
+}

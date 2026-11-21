@@ -1,0 +1,39 @@
+{
+ "id": "per-diem-allowance-calculator",
+ "seoTitle": "Per Diem Allowance Calculator for Business Trips",
+ "metaDescription": "Compute a travel daily allowance from departure and return times, your day rates and meals provided.",
+ "intro": "Trip allowance from 24-hour blocks, a part-day band and meal deductions.",
+ "why": "Daily allowances depend on destination and trip length. Enter your own full-day rate, part-day rate and the cut for each meal provided.\n\nThe model is deliberately simple: 24-hour blocks plus one part-day band. Official systems differ, so no rates are built in.",
+ "howTo": [
+  "Enter departure and return times.",
+  "Enter day rates and the part-day threshold.",
+  "Enter meals provided and cuts."
+ ],
+ "faq": [
+  {
+   "q": "Which rates apply?",
+   "a": "Those from your tax authority or employer for the destination."
+  },
+  {
+   "q": "How are partial days handled?",
+   "a": "The remainder over the threshold gets the part-day rate."
+  },
+  {
+   "q": "Does it handle time zones?",
+   "a": "No. Use local clock times consistently."
+  }
+ ],
+ "related": [
+  "mileage-allowance-calculator",
+  "expense-report-builder",
+  "date-difference",
+  "business-days",
+  "timezone-meeting-planner",
+  "salary-hourly"
+ ],
+ "keywords": [
+  "per diem calculator",
+  "travel allowance",
+  "daily allowance"
+ ]
+}

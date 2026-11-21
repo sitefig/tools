@@ -1,0 +1,45 @@
+{
+ "id": "teleprompter-recorder",
+ "seoTitle": "Teleprompter Recorder: Read a Script While You Record",
+ "metaDescription": "Scroll your script over the webcam view while recording. Set speed and size, mirror text and download the video. Private.",
+ "intro": "Shows a scrolling script on top of your camera preview while the browser records the camera and microphone. The scrolling text is not part of the video.",
+ "why": "Reading from a script while looking at the camera is hard. Here the text scrolls over the live preview at the speed you set, near the lens. The recording is the raw camera and microphone feed, so there is no text in the final video.\n\nYou can pause scrolling, jump back to the top, mirror the text for a mirrored prompter and change the size. Nothing is uploaded.",
+ "howTo": [
+  "Paste your script and set size and speed.",
+  "Press Start camera and allow access.",
+  "Press Record; the text scrolls. Press Stop when done.",
+  "Play back and download the recording."
+ ],
+ "faq": [
+  {
+   "q": "Is the script in the video?",
+   "a": "No. Only the camera and microphone are recorded."
+  },
+  {
+   "q": "How do I choose the speed?",
+   "a": "Read it aloud once and adjust. About 40 pixels per second suits 32 pixel text."
+  },
+  {
+   "q": "Can I use a second screen?",
+   "a": "Yes, drag the browser window there. The camera stays on this page."
+  },
+  {
+   "q": "What is the file format?",
+   "a": "WebM from your browser recorder."
+  }
+ ],
+ "related": [
+  "webcam-recorder",
+  "screen-recorder",
+  "audio-recorder",
+  "video-trimmer",
+  "picture-in-picture-composer",
+  "mic-test"
+ ],
+ "keywords": [
+  "online teleprompter",
+  "record video with script",
+  "teleprompter webcam",
+  "prompter scroll text"
+ ]
+}

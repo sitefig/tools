@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free DKIM Record Generator &amp; Key Pair Maker | Free Tools</title>
+<meta name="description" content="Free online DKIM record generator. Create the DNS TXT record from a public key, or generate a fresh RSA key pair in your browser. Nothing uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/dkim-record-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/dkim-record-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/dkim-record-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free DKIM Record Generator &amp; Key Pair Maker | Free Tools">
+<meta property="og:description" content="Free online DKIM record generator. Create the DNS TXT record from a public key, or generate a fresh RSA key pair in your browser. Nothing uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/dkim-record-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free DKIM Record Generator &amp; Key Pair Maker | Free Tools">
+<meta name="twitter:description" content="Free online DKIM record generator. Create the DNS TXT record from a public key, or generate a fresh RSA key pair in your browser. Nothing uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"DKIM Record Generator","url":"https://tools.sitefig.net/en/dkim-record-generator/","description":"Free online DKIM record generator. Create the DNS TXT record from a public key, or generate a fresh RSA key pair in your browser. Nothing uploaded.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the selector and your domain.","Paste a public key PEM, or leave the box empty to generate a new key pair.","Choose the key size, and tick testing mode if you want t=y while you trial it.","Publish the TXT record at the host shown and store any generated private key safely."],"keywords":"dkim record generator, dkim generator, create dkim key, free dkim tool, dkim txt record builder, generate dkim public key","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"DKIM Record Generator","item":"https://tools.sitefig.net/en/dkim-record-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where does the generated private key go?","acceptedAnswer":{"@type":"Answer","text":"It is shown on the page only. Copy it into your mail server or signing service and store it securely. If you lose it, generate a new pair and publish a new record."}},{"@type":"Question","name":"Which key size should I choose?","acceptedAnswer":{"@type":"Answer","text":"2048 bits is the usual choice. 1024 is weak and some receivers distrust it. 4096 is stronger but makes a long DNS record, which some providers handle poorly."}},{"@type":"Question","name":"What is the selector?","acceptedAnswer":{"@type":"Answer","text":"A label that lets you publish several keys for one domain, for example mail or 2025a. The record goes at selector._domainkey.yourdomain, and the signing server uses the same selector."}},{"@type":"Question","name":"Why is the value split into pieces?","acceptedAnswer":{"@type":"Answer","text":"A single DNS TXT string is limited to 255 characters. Long keys are split into several quoted strings, which resolvers join together. Many DNS dashboards do this for you."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">DKIM Record Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>DKIM Record Generator</h1>
+<p class="lede">Create a DKIM DNS TXT record from a public key PEM, or generate a new RSA key pair in your browser. You get the host name, record value and a zone-file line.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="dkim-record-generator" data-module="devgen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>DKIM adds a signature to outgoing mail, and receivers check it against a public key published in DNS. Setting it up involves a selector, a correctly formatted v=DKIM1 record, and a key string that often exceeds the 255-character limit for a single DNS string.</p>
+<p>Paste the public key your mail system gave you and the tool builds the TXT value with the selector and domain. With no key, it generates an RSA pair using the browser's WebCrypto and shows the private key on the page, so you can configure it in your mail server. Keep that private key secret and never publish it; if you would rather not generate keys in a web page, create them with openssl. Choose 2048 bits or more, since 1024 is considered weak. Nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the selector and your domain.</li><li>Paste a public key PEM, or leave the box empty to generate a new key pair.</li><li>Choose the key size, and tick testing mode if you want t=y while you trial it.</li><li>Publish the TXT record at the host shown and store any generated private key safely.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Where does the generated private key go?</summary><p>It is shown on the page only. Copy it into your mail server or signing service and store it securely. If you lose it, generate a new pair and publish a new record.</p></details>
+<details><summary>Which key size should I choose?</summary><p>2048 bits is the usual choice. 1024 is weak and some receivers distrust it. 4096 is stronger but makes a long DNS record, which some providers handle poorly.</p></details>
+<details><summary>What is the selector?</summary><p>A label that lets you publish several keys for one domain, for example mail or 2025a. The record goes at selector._domainkey.yourdomain, and the signing server uses the same selector.</p></details>
+<details><summary>Why is the value split into pieces?</summary><p>A single DNS TXT string is limited to 255 characters. Long keys are split into several quoted strings, which resolvers join together. Many DNS dashboards do this for you.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/spf-record-generator/"><span class="link-card__title">SPF Record Generator</span><span class="link-card__desc">Compose an SPF TXT record from mechanisms, count DNS lookups against the 10-lookup limit and check the length.</span></a></li><li><a class="link-card" href="/en/dmarc-generator/"><span class="link-card__title">DMARC Record Generator</span><span class="link-card__desc">Build the _dmarc TXT record: policy, subdomain policy, percentage, aggregate/forensic reports, alignment modes.</span></a></li><li><a class="link-card" href="/en/rsa-key-pair-generator/"><span class="link-card__title">RSA Key Pair Generator</span><span class="link-card__desc">Generate an RSA key pair with WebCrypto: PKCS#8 private key and SPKI public key as PEM (optional PKCS#1 format). Nothing is uploaded.</span></a></li><li><a class="link-card" href="/en/dns-record-generator/"><span class="link-card__title">DNS Zone Record Generator</span><span class="link-card__desc">Write DNS records as simple lines (TYPE name value ...) and get a validated BIND zone file, Route 53 change batch JSON or a generic JSON list. Supports A, AAAA, CNAME, MX, TXT (auto-split at 255 bytes), NS, SRV, CAA, PTR. Not a resolver: nothing is looked up or published.</span></a></li><li><a class="link-card" href="/en/rsa-pkcs1-pkcs8-converter/"><span class="link-card__title">RSA PKCS#1 / PKCS#8 PEM Converter</span><span class="link-card__desc">Convert RSA keys between PKCS#1 (BEGIN RSA PRIVATE/PUBLIC KEY) and PKCS#8 / SPKI (BEGIN PRIVATE/PUBLIC KEY). Auto-detects direction.</span></a></li><li><a class="link-card" href="/en/openpgp-inspector/"><span class="link-card__title">OpenPGP Armor / Packet Inspector</span><span class="link-card__desc">Paste an ASCII-armored PGP key, signature or message: checks the CRC-24, lists packets (algorithms, curves, key sizes, creation time, user IDs, signature subpackets) and computes v4 (SHA-1) / v6 (SHA-256) fingerprints. Nothing is verified or decrypted.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

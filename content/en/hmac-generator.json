@@ -1,0 +1,47 @@
+{
+ "id": "hmac-generator",
+ "seoTitle": "Free HMAC Generator for SHA-256, SHA-512 and MD5",
+ "metaDescription": "Compute an HMAC of a message with a secret key using MD5, SHA-1, SHA-256, SHA-384 or SHA-512. Hex and Base64 output. Free and runs in your browser.",
+ "intro": "Enter a message and a secret key, pick a hash algorithm and get the HMAC in both hex and Base64. It is built for signing and verifying webhooks and API requests.",
+ "why": "HMAC proves that a message came from someone who holds a shared secret and was not changed on the way. Payment providers, Git hosts and chat platforms sign their webhooks this way, and many APIs expect an HMAC signature on every request.\n\nWhen a signature check fails, you want to calculate the expected value yourself and compare. This tool computes the HMAC from your exact message and key, shown in hex and in Base64, so you can match whichever format the service documents. It runs in your browser, so your test secret is not sent anywhere. Use test keys while debugging, not live production secrets.",
+ "howTo": [
+  "Paste the message (the exact payload bytes you were sent) into the Message box.",
+  "Enter the shared secret in the Secret key box.",
+  "Choose the algorithm, for example SHA-256.",
+  "Copy the hex or Base64 value and compare it with the signature you received."
+ ],
+ "faq": [
+  {
+   "q": "Why does my HMAC not match the webhook signature?",
+   "a": "The most common cause is a message that differs by one byte: reformatted JSON, changed whitespace or a trailing newline. Sign the raw request body exactly as received, and check you used the right secret, algorithm and output format."
+  },
+  {
+   "q": "Which algorithm should I use?",
+   "a": "Use whatever the service specifies, most often SHA-256. For new designs choose SHA-256 or stronger. HMAC-MD5 and HMAC-SHA1 are still considered usable for message authentication, but they are legacy choices."
+  },
+  {
+   "q": "Is it safe to paste my real secret here?",
+   "a": "The calculation happens in your browser and nothing is uploaded. Even so, prefer test keys while debugging, and rotate any secret you have pasted into a page that you cannot fully trust."
+  },
+  {
+   "q": "What is the difference between a plain hash and an HMAC?",
+   "a": "A plain hash can be computed by anyone who has the message. An HMAC mixes in a secret key, so only someone with the key can produce or verify it. That is what makes it an authentication code."
+  }
+ ],
+ "related": [
+  "webhook-signature-verifier",
+  "hash-generator",
+  "jwt-encode",
+  "jwt-verify-hs",
+  "hkdf-derive",
+  "pbkdf2-key-derivation"
+ ],
+ "keywords": [
+  "hmac generator online",
+  "hmac sha256 calculator",
+  "free hmac tool",
+  "webhook signature calculator",
+  "hmac md5",
+  "hmac base64 output"
+ ]
+}

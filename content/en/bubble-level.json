@@ -1,0 +1,46 @@
+{
+ "id": "bubble-level",
+ "seoTitle": "Free Bubble Level - Spirit Level with Phone Sensor",
+ "metaDescription": "Use your phone's accelerometer as a spirit level with live X and Y tilt in degrees and a calibration button. Free, runs in your browser.",
+ "intro": "Lay your phone on a surface to see a bubble move and the tilt in degrees on two axes. A calibrate button sets the current position as zero.",
+ "why": "A spirit level is the quickest way to check that a shelf, a picture frame, a washing machine or a camera tripod is level, and it is rarely in your pocket when you need it. Your phone contains an accelerometer that can measure tilt, and this page turns it into a simple bubble level in the browser.\n\nThe tilt is calculated from gravity along the X and Y axes and shown in degrees, with a bubble that moves opposite to the tilt like a real vial. Because a phone case or the camera bump can leave the device slightly off flat, there is a calibrate button that sets the current angle as zero: place the phone on a surface you know is level, press it, then measure. Accuracy is good for casual jobs, not for precision engineering.",
+ "howTo": [
+  "Open the page on a phone or tablet.",
+  "Press Enable level and allow motion access if asked.",
+  "Lay the device flat on the surface you want to check.",
+  "Read the X and Y degrees, and use Calibrate to set zero on a known level surface."
+ ],
+ "faq": [
+  {
+   "q": "Why is nothing happening?",
+   "a": "Your device may have no accelerometer, which is common on desktop computers, or the page is not on HTTPS. On iPhones you must also allow motion access when prompted."
+  },
+  {
+   "q": "How accurate is it?",
+   "a": "Roughly within a degree after calibration on most phones, which is fine for hanging a picture but not for building work. Cases, covers and the camera bump can add error, so calibrate each time."
+  },
+  {
+   "q": "How do I calibrate it?",
+   "a": "Place the phone on a surface you trust to be level, such as a flat floor tile checked another way, and press Calibrate. Future readings are then shown relative to that position."
+  },
+  {
+   "q": "Does it measure vertical surfaces?",
+   "a": "It is designed for flat surfaces with the phone lying down. Standing the phone on its edge changes which axes the readings represent, so results for walls will not be reliable."
+  }
+ ],
+ "related": [
+  "digital-compass",
+  "screen-ruler",
+  "screen-info",
+  "roof-pitch",
+  "aspect-ratio-calculator",
+  "gamepad-tester"
+ ],
+ "keywords": [
+  "bubble level online",
+  "phone spirit level",
+  "digital level web",
+  "accelerometer level tool",
+  "free level app browser"
+ ]
+}

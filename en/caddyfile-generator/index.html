@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Caddyfile Generator for Common Sites | Free Tools</title>
+<meta name="description" content="Free online Caddyfile generator. Build a site block for reverse proxy, static files, SPA, PHP-FPM or redirect with compression, headers and www redirect.">
+<link rel="canonical" href="https://tools.sitefig.net/en/caddyfile-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/caddyfile-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/caddyfile-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Caddyfile Generator for Common Sites | Free Tools">
+<meta property="og:description" content="Free online Caddyfile generator. Build a site block for reverse proxy, static files, SPA, PHP-FPM or redirect with compression, headers and www redirect.">
+<meta property="og:url" content="https://tools.sitefig.net/en/caddyfile-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Caddyfile Generator for Common Sites | Free Tools">
+<meta name="twitter:description" content="Free online Caddyfile generator. Build a site block for reverse proxy, static files, SPA, PHP-FPM or redirect with compression, headers and www redirect.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Caddyfile Generator","url":"https://tools.sitefig.net/en/caddyfile-generator/","description":"Free online Caddyfile generator. Build a site block for reverse proxy, static files, SPA, PHP-FPM or redirect with compression, headers and www redirect.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the site address, for example example.com.","Choose a mode and enter the upstream, root folder or redirect target.","Tick compression, security headers, logging and www redirect as needed.","Copy the Caddyfile, then run caddy validate and reload."],"keywords":"caddyfile generator, caddy reverse proxy config, caddyfile builder online, free caddyfile tool, caddy spa config, caddy php fastcgi config","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"Caddyfile Generator","item":"https://tools.sitefig.net/en/caddyfile-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does Caddy handle HTTPS automatically?","acceptedAnswer":{"@type":"Answer","text":"Yes, for public domain names, Caddy obtains and renews certificates by itself. Use tls internal for local names, where it issues certificates from its own authority instead."}},{"@type":"Question","name":"How does the SPA mode work?","acceptedAnswer":{"@type":"Answer","text":"It serves files from the root folder and uses try_files to fall back to /index.html for unknown paths, so client-side routes work when someone reloads the page."}},{"@type":"Question","name":"Is the PHP socket path correct for my system?","acceptedAnswer":{"@type":"Answer","text":"The tool uses unix//run/php/php-fpm.sock as a common default. Package names and versions vary, so confirm the real socket path on your server."}},{"@type":"Question","name":"What does the www redirect do?","acceptedAnswer":{"@type":"Answer","text":"It adds a second site block for www.yourdomain that redirects permanently to the bare domain, keeping the path and query."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">Caddyfile Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Caddyfile Generator</h1>
+<p class="lede">Build a Caddyfile site block for a reverse proxy, static file server, single-page app, PHP-FPM site or redirect, with compression, security headers, logging and an optional www redirect.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="caddyfile-generator" data-module="devgen2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Caddy is popular because it gets HTTPS certificates automatically and has a short configuration language. Even so, the common recipes are easy to forget: how a single-page app falls back to index.html, how to hand PHP to FPM, or which security headers to add.</p>
+<p>Enter the site address and choose a mode. Reverse proxy takes an upstream such as localhost:3000, file server and SPA take a root folder, PHP uses php_fastcgi with a socket path you should check, and redirect takes a target URL. You can add encode zstd gzip, a header block, access logging, tls internal for local certificates and a global ACME email. The headers are sensible defaults, not a full security policy. Nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the site address, for example example.com.</li><li>Choose a mode and enter the upstream, root folder or redirect target.</li><li>Tick compression, security headers, logging and www redirect as needed.</li><li>Copy the Caddyfile, then run caddy validate and reload.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does Caddy handle HTTPS automatically?</summary><p>Yes, for public domain names, Caddy obtains and renews certificates by itself. Use tls internal for local names, where it issues certificates from its own authority instead.</p></details>
+<details><summary>How does the SPA mode work?</summary><p>It serves files from the root folder and uses try_files to fall back to /index.html for unknown paths, so client-side routes work when someone reloads the page.</p></details>
+<details><summary>Is the PHP socket path correct for my system?</summary><p>The tool uses unix//run/php/php-fpm.sock as a common default. Package names and versions vary, so confirm the real socket path on your server.</p></details>
+<details><summary>What does the www redirect do?</summary><p>It adds a second site block for www.yourdomain that redirects permanently to the bare domain, keeping the path and query.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/caddy-to-nginx/"><span class="link-card__title">Caddyfile to nginx Converter</span><span class="link-card__desc">Convert common Caddyfile site blocks to nginx server blocks: reverse_proxy (with matchers and multiple upstreams), root / file_server, encode gzip, redir, respond, header, try_files, rewrite, handle / handle_path, php_fastcgi and tls. Automatic HTTPS becomes an explicit 443 server plus a 301 redirect server with placeholder certificate paths. Unsupported directives are left as comments; always review the result.</span></a></li><li><a class="link-card" href="/en/nginx-to-caddy-converter/"><span class="link-card__title">nginx to Caddyfile Converter</span><span class="link-card__desc">Convert nginx server blocks to a Caddyfile: server_name / listen -&gt; site addresses, root, location (prefix, exact, regex) -&gt; handle / handle_path, proxy_pass (including upstream groups) -&gt; reverse_proxy, return/redirect -&gt; redir / respond, add_header -&gt; header, gzip -&gt; encode, try_files, fastcgi_pass -&gt; php_fastcgi, ssl_certificate -&gt; tls. HTTP to HTTPS redirect servers are dropped (Caddy does it automatically). Unsupported directives are left as comments.</span></a></li><li><a class="link-card" href="/en/nginx-config-generator/"><span class="link-card__title">Nginx Config Generator</span><span class="link-card__desc">Server blocks for static sites, reverse proxy, SPA and HTTPS redirect, with optional gzip.</span></a></li><li><a class="link-card" href="/en/security-headers-generator/"><span class="link-card__title">Security Headers Generator</span><span class="link-card__desc">HSTS, CSP, X-Frame-Options and friends for Apache, NGINX, Netlify, Cloudflare.</span></a></li><li><a class="link-card" href="/en/htaccess-generator/"><span class="link-card__title">.htaccess Generator</span><span class="link-card__desc">HTTPS, www, trailing slash, gzip, caching and security headers for Apache.</span></a></li><li><a class="link-card" href="/en/systemd-unit-generator/"><span class="link-card__title">systemd Service Unit Generator</span><span class="link-card__desc">Build a .service unit file with restart policy, user, environment and optional sandboxing hardening.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

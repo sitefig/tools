@@ -1,0 +1,44 @@
+{
+ "id": "sun-path-calculator",
+ "seoTitle": "Sun Path Calculator: Azimuth and Elevation by Time",
+ "metaDescription": "See the sun's compass direction and height through a day at any location, with a sky dome chart and table. Offline, free.",
+ "intro": "Calculates the sun's azimuth and elevation at set intervals for a date and place and draws the path as a polar chart.",
+ "why": "Where the sun is at what time matters for solar panels, windows, gardens and photography. The chart shows the path across the sky with hour marks: the centre is straight overhead, the outer ring the horizon.\n\nThe same NOAA equations as the sunrise tool are used. Compared with PyEphem for London on midsummer day, elevation differs by less than 0.04 degrees. Elevation is geometric, without atmospheric refraction, so the sun appears slightly higher near the horizon than the numbers say.",
+ "howTo": [
+  "Enter the location as lat, lon.",
+  "Set a date and an IANA time zone.",
+  "Choose the step in minutes.",
+  "Read the chart and the table."
+ ],
+ "faq": [
+  {
+   "q": "What is azimuth?",
+   "a": "Compass direction in degrees clockwise from north."
+  },
+  {
+   "q": "What does a negative elevation mean?",
+   "a": "The sun is below the horizon."
+  },
+  {
+   "q": "Does it consider obstacles?",
+   "a": "No."
+  },
+  {
+   "q": "Why do hours look shifted in summer?",
+   "a": "Labels are local clock time, including daylight saving."
+  }
+ ],
+ "related": [
+  "sun-times-twilight-table",
+  "sunrise-sunset-calculator",
+  "coordinate-format-converter",
+  "timezone-converter",
+  "geo-path-distance",
+  "line-chart-maker"
+ ],
+ "keywords": [
+  "sun path diagram",
+  "sun azimuth elevation calculator",
+  "solar position by time"
+ ]
+}

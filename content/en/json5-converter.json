@@ -1,0 +1,45 @@
+{
+  "id": "json5-converter",
+  "seoTitle": "JSON5 Validator and JSON5 ⇄ JSON Converter",
+  "metaDescription": "Parse JSON5 (comments, trailing commas, single quotes, unquoted keys, hex numbers) to strict JSON, or write JSON as JSON5.",
+  "intro": "Read config files that allow comments and relaxed syntax and convert them to plain JSON for tools that need it.",
+  "why": "The parser accepts JSON5: // and /* */ comments, trailing commas, single and double quoted strings with line continuations, unquoted identifier keys, hexadecimal and signed numbers, leading or trailing decimal points, Infinity and NaN. Errors give a line and column. The reverse mode writes JSON as JSON5 with unquoted keys where possible and your choice of quote style.\n\nResults were compared with the json5 package on valid and invalid inputs. NaN and Infinity cannot exist in JSON and become null in the strict output.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the direction.",
+    "Paste JSON5 or JSON.",
+    "Set indentation and quote style.",
+    "Copy the result."
+  ],
+  "faq": [
+    {
+      "q": "What is JSON5 used for?",
+      "a": "Human-edited configuration, such as .babelrc, tsconfig variants and tool settings."
+    },
+    {
+      "q": "Is tsconfig.json JSON5?",
+      "a": "It allows comments and trailing commas like JSON5, but it is parsed by TypeScript, not as full JSON5."
+    },
+    {
+      "q": "Can it keep comments?",
+      "a": "No. Comments are dropped when converting to JSON."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "json-format",
+    "json-minify",
+    "json-validate",
+    "json-to-yaml",
+    "json-to-toml",
+    "json-sort-keys"
+  ],
+  "keywords": [
+    "json5 converter",
+    "json5 to json",
+    "json with comments",
+    "validate json5"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "big-o-cheatsheet",
+ "seoTitle": "Free Big-O Cheatsheet: Sorting, Data Structures and Graph Algorithms",
+ "metaDescription": "A searchable Big-O cheatsheet with time and space complexity for sorting, search, data structures and graph algorithms, plus step counts for your n.",
+ "intro": "A compact table of time and space complexity for common sorting algorithms, searches, data structures and graph algorithms, and a growth table showing how many steps O(n log n), O(n^2) or O(2^n) need for an input size you choose.",
+ "why": "Complexity tables are easy to half remember: is quicksort worst case n log n or n squared, and does heapsort need extra space? A quick lookup beats guessing in an interview or a design review.\n\nThe values are standard textbook figures and were not re-checked against a source for this build. Big-O hides constants, memory access and the shape of your data, so a fast-growing function can still win on small inputs.",
+ "howTo": [
+  "Type a word such as sort or graph to filter the table, or leave it empty.",
+  "Set n to see how many steps each growth class needs.",
+  "Compare rows for the structure or algorithm you are choosing."
+ ],
+ "faq": [
+  {
+   "q": "What does the growth table show?",
+   "a": "The raw value of each function at your n. It is not a timing."
+  },
+  {
+   "q": "Why is n! cut off?",
+   "a": "It grows past what a number can hold quickly, so large cases show a text note."
+  },
+  {
+   "q": "Are these worst-case figures?",
+   "a": "Where average and worst differ, both are shown."
+  },
+  {
+   "q": "Is the table complete?",
+   "a": "No. It covers common cases only."
+  }
+ ],
+ "related": [
+  "ascii-table",
+  "semver-calculator",
+  "cyclomatic-complexity-estimator",
+  "lines-of-code-counter",
+  "http-status-reference",
+  "chmod-calculator"
+ ],
+ "keywords": [
+  "big o cheat sheet",
+  "time complexity table",
+  "algorithm complexity"
+ ]
+}

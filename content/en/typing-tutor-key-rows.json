@@ -1,0 +1,45 @@
+{
+ "id": "typing-tutor-key-rows",
+ "seoTitle": "Free Touch Typing Lessons by Keyboard Row, With WPM",
+ "metaDescription": "Learn touch typing row by row, from the home row to capitals and punctuation. See WPM, accuracy and your most mistyped keys. Free, keyboard only, nothing stored.",
+ "intro": "Eleven short lessons that add keys a row at a time. After each drill you get words per minute, accuracy and the keys you missed most, and a special drill built from those keys.",
+ "why": "Touch typing is learned by repeating a small set of keys until the fingers know where to go. This tutor starts with the home row of one hand and adds keys step by step: both hands, G and H, the top row, the bottom row, numbers, capitals with Shift, punctuation and finally whole sentences.\n\nA wrong key is counted but does not move you on, so accuracy means correct keystrokes out of all keystrokes. Speed is correct characters divided by five, per minute, the usual definition of a word. Results are shown for this visit only and are not stored or sent anywhere. It needs a physical keyboard: phone on-screen keyboards do not report keys reliably.",
+ "howTo": [
+  "Choose a lesson, or start with lesson 1.",
+  "Click the typing area (or press Tab to it) and type the highlighted text. The timer starts with your first key.",
+  "Read your speed, accuracy and mistyped keys, then try the same text again or the next drill.",
+  "Use \"Practice my weak keys\" to drill the keys you missed most."
+ ],
+ "faq": [
+  {
+   "q": "How is words per minute calculated?",
+   "a": "Correct characters typed, divided by five, divided by the minutes from your first key to your last. Wrong keys do not add to the speed but do lower the accuracy."
+  },
+  {
+   "q": "Why do wrong keys not advance the text?",
+   "a": "It forces you to find the right key, which is how the habit forms. Every wrong key still counts against your accuracy figure."
+  },
+  {
+   "q": "Can I save my progress?",
+   "a": "No. Nothing is stored or sent, so the results table covers the current visit only."
+  },
+  {
+   "q": "Does it work with other keyboard layouts?",
+   "a": "The lessons are written for the QWERTY layout and expect the keys shown. On another layout the key rows will not match the lesson names."
+  }
+ ],
+ "related": [
+  "typing-speed-test",
+  "spelling-bee-speech-practice",
+  "word-search-puzzle-maker",
+  "math-worksheet-generator",
+  "text-box-drawer",
+  "crossword-puzzle-maker"
+ ],
+ "keywords": [
+  "typing tutor",
+  "touch typing lessons",
+  "learn to type online",
+  "typing practice wpm"
+ ]
+}

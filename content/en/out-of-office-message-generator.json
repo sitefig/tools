@@ -1,0 +1,45 @@
+{
+ "id": "out-of-office-message-generator",
+ "seoTitle": "Out-of-Office Message Generator: Email Auto-Reply Text",
+ "metaDescription": "Write an out-of-office auto-reply with away dates, return date and backup contact in formal, friendly or short style. Free, runs in your browser.",
+ "intro": "Enter your dates and backup contact and get an auto-reply with subject and body.",
+ "why": "A clear out-of-office message states when you are away, when you are back and who to contact. Writing it takes longer than it should, especially with dates spelled out.\n\nDates are shown with the weekday so there is no doubt. Pick whether you have access to email. Paste the result into your mail client's automatic replies setting.",
+ "howTo": [
+  "Enter your name and the away and return dates.",
+  "Add a backup contact.",
+  "Choose a tone and an email access line.",
+  "Copy the subject and body."
+ ],
+ "faq": [
+  {
+   "q": "Should I give a phone number?",
+   "a": "Only if the backup contact agrees. It is optional here."
+  },
+  {
+   "q": "Can I use other languages?",
+   "a": "The text is English only."
+  },
+  {
+   "q": "Do I need a subject?",
+   "a": "Yes, auto-replies work better with a clear subject."
+  },
+  {
+   "q": "Is anything stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "email-signature-generator",
+  "business-days",
+  "timezone-meeting-planner",
+  "email-name-formatter",
+  "mailto-link-generator",
+  "printable-calendar"
+ ],
+ "keywords": [
+  "out of office message",
+  "out of office generator",
+  "auto reply template",
+  "vacation email"
+ ]
+}

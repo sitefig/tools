@@ -1,0 +1,45 @@
+{
+  "id": "username-generator",
+  "seoTitle": "Username Generator for Discord, Reddit, Twitch and Games",
+  "metaDescription": "Generate username ideas from adjective and noun words with digits, styles and your own keyword, within each platform's length and character rules.",
+  "intro": "Get a list of usable handles and shortlist the ones you like.",
+  "why": "Pick a style (CamelCase, snake_case, dashes, lowercase or noun plus number), optionally a platform whose published length and character limits are applied (Discord 2-32, Reddit 3-20 letters, digits, _ and -, Twitch 4-25 letters, digits and _), your own keyword and whether to add digits. Names are random combinations of 30 adjectives and 30 nouns with secure randomness.\n\nThe names are random, so availability must be checked on the platform. Rules shown are the commonly published limits and can change.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose a platform and style.",
+    "Add a keyword if you want it included.",
+    "Generate and note favourites.",
+    "Check availability on the site."
+  ],
+  "faq": [
+    {
+      "q": "Are these names taken?",
+      "a": "Possibly. The tool cannot check availability."
+    },
+    {
+      "q": "Can I use my name?",
+      "a": "Enter it as the keyword to mix it into some results."
+    },
+    {
+      "q": "Do names include digits?",
+      "a": "Optionally, to improve the chance of finding a free one."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "app-name-ideas",
+    "fake-person-generator",
+    "slug-generator",
+    "password-generator",
+    "avatar-generator",
+    "case-converter"
+  ],
+  "keywords": [
+    "username generator",
+    "discord username ideas",
+    "gamer tag generator",
+    "twitch name"
+  ]
+}

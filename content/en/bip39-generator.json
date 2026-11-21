@@ -1,0 +1,45 @@
+{
+ "id": "bip39-generator",
+ "seoTitle": "Free BIP-39 Mnemonic Generator and Validator Tool",
+ "metaDescription": "Generate or validate a BIP-39 recovery phrase and derive its seed, in your browser. For learning and testing only: never use it for real funds. Free.",
+ "intro": "Generates a BIP-39 English mnemonic from random or supplied entropy, validates the checksum of an existing phrase and derives the 512-bit seed. For testing and learning only.",
+ "why": "Developers building or testing wallets need valid recovery phrases for test cases, documentation and checksum debugging. This tool shows how the standard works: entropy in, checksum bits added, words picked from the 2048-word English list, then a seed derived with PBKDF2-HMAC-SHA512 and an optional passphrase. You can supply your own entropy to reproduce a known test vector, or validate a phrase to see whether the words and checksum are correct. Important: this is not a place to create a wallet. Anything generated or pasted into a web page could be exposed by an extension, a compromised device or a mistake. Use it with throwaway data, and make real keys with a hardware wallet or trusted offline software.",
+ "howTo": [
+  "Choose generate or validate. For generate, set the number of words, or paste your own entropy hex.",
+  "For validate, paste the full mnemonic. Enter a passphrase only if you want to test one.",
+  "Run it and read the mnemonic, the entropy and the derived seed. Use test data only."
+ ],
+ "faq": [
+  {
+   "q": "Is it safe to use for a real wallet?",
+   "a": "No. Never generate or paste a phrase that controls real funds into any website. It runs locally, but your browser, extensions or device could still leak it. Use a hardware wallet or trusted offline software."
+  },
+  {
+   "q": "What entropy lengths are valid?",
+   "a": "Entropy must be 128, 160, 192, 224 or 256 bits, which is 32 to 64 hex digits, giving 12, 15, 18, 21 or 24 words. Leave the box empty to use random bytes from the browser."
+  },
+  {
+   "q": "What does validation check?",
+   "a": "It checks the word count, that each word is on the English BIP-39 list, and that the checksum bits match the entropy. It does not tell you whether a wallet holds anything."
+  },
+  {
+   "q": "What is the passphrase?",
+   "a": "The optional passphrase is mixed into the seed derivation. A different passphrase gives a completely different seed from the same words, so losing it means losing access."
+  }
+ ],
+ "related": [
+  "ethereum-keccak256-hasher",
+  "pbkdf2-key-derivation",
+  "passphrase-generator",
+  "hash-generator",
+  "shamir-secret-sharing",
+  "random-secret-generator"
+ ],
+ "keywords": [
+  "bip39 generator",
+  "bip39 mnemonic validator",
+  "bip39 seed from mnemonic",
+  "free bip39 tool",
+  "mnemonic checksum validator"
+ ]
+}

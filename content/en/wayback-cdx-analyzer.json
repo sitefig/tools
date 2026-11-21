@@ -1,0 +1,38 @@
+{
+ "id": "wayback-cdx-analyzer",
+ "seoTitle": "Wayback Machine CDX Analyzer: Snapshots, Status, Content Changes",
+ "metaDescription": "Paste Internet Archive CDX output to see capture counts per year, status codes, real content changes by digest, gaps and links to each changed snapshot.",
+ "intro": "Read a CDX listing from the Wayback Machine and find when a page really changed.",
+ "why": "The Internet Archive's CDX API lists every capture of a URL with timestamp, status and a content digest. Raw, it is a long column of lines. This analyzer groups captures by year and status, identifies the captures where the digest changed (a different body, so a real change), shows error captures that suggest downtime and the longest gap, and links straight to each changed snapshot.\n\nThe page makes no request: open the CDX URL in your browser (web.archive.org/cdx/search/cdx?url=...&output=txt) and paste the result. Digests change for trivial reasons such as ads and timestamps, so confirm by viewing the snapshots.",
+ "howTo": [
+  "Open the CDX API URL for your page in a new tab and copy the text.",
+  "Paste it here.",
+  "Open the linked snapshots around the dates content changed."
+ ],
+ "faq": [
+  {
+   "q": "Does it query archive.org?",
+   "a": "No. This site never makes requests from tools. Paste the CDX output."
+  },
+  {
+   "q": "What is the digest?",
+   "a": "A hash of the captured response body; a new digest means different bytes."
+  },
+  {
+   "q": "Can it read JSON output?",
+   "a": "Yes, output=json arrays are supported."
+  }
+ ],
+ "related": [
+  "redirect-chain-analyzer",
+  "content-freshness-audit",
+  "sitemap-url-extractor",
+  "text-diff",
+  "access-log-analyzer"
+ ],
+ "keywords": [
+  "wayback machine cdx",
+  "internet archive history",
+  "when did my page change"
+ ]
+}

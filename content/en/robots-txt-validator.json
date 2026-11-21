@@ -1,0 +1,45 @@
+{
+ "id": "robots-txt-validator",
+ "seoTitle": "Free robots.txt Validator: Check Syntax and Errors",
+ "metaDescription": "Paste a robots.txt and find syntax errors, misspelled or unknown directives, bad paths, relative sitemaps and size problems. Free, runs in your browser.",
+ "intro": "Checks a pasted robots.txt line by line against RFC 9309 and Google's documentation, and lists errors, warnings and notes with line numbers.",
+ "why": "A single wrong character in robots.txt can quietly turn a rule off. A missing colon, a misspelled directive, a rule placed before any User-agent line or a relative Sitemap URL is simply ignored by crawlers, and nothing tells you.\n\nThis validator reads the file the way a crawler does and reports what would be ignored or looks risky. Some findings depend on the crawler (Google accepts frequent typos, others may not), so those are marked as items to review, not as hard failures. Nothing is uploaded.",
+ "howTo": [
+  "Paste your robots.txt into the box.",
+  "Read the errors first, then the warnings, then the notes.",
+  "Fix the lines named by number and paste again.",
+  "Test the important URLs with the robots.txt tester."
+ ],
+ "faq": [
+  {
+   "q": "Does it fetch my live robots.txt?",
+   "a": "No. This site makes no network requests. Open yoursite/robots.txt in a browser, copy it and paste it here."
+  },
+  {
+   "q": "Why is a misspelling only a warning?",
+   "a": "Google accepts a short list of frequent typos such as Disalow, but other crawlers may ignore the line. The safe fix is the correct spelling."
+  },
+  {
+   "q": "Is Noindex in robots.txt valid?",
+   "a": "Google stopped supporting it in 2019. The tool lists it as a note with the supported alternative."
+  },
+  {
+   "q": "What size limit does it check?",
+   "a": "500 KiB, the minimum parsing limit in RFC 9309 and the limit Google documents."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "robots-generator",
+  "seo-robots-noindex-simulator",
+  "sitemap-validator",
+  "robots-txt-formatter",
+  "robots-txt-size-checker"
+ ],
+ "keywords": [
+  "robots.txt validator",
+  "robots.txt syntax checker",
+  "check robots.txt errors",
+  "rfc 9309 robots validator"
+ ]
+}

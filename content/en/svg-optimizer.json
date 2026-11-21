@@ -1,0 +1,46 @@
+{
+  "id": "svg-optimizer",
+  "seoTitle": "Free SVG Optimizer: Shrink SVG Code Online",
+  "metaDescription": "Clean and shrink SVG files by removing comments, metadata and editor cruft, unused ids and extra decimals. Free, runs in your browser.",
+  "intro": "Reduces the size of SVG code by stripping comments, XML declarations, editor metadata and unused ids, rounding numbers to a precision you choose and tidying whitespace and empty groups.",
+  "why": "SVG files exported from Illustrator, Inkscape or Sketch carry a lot of baggage: editor namespaces, generator comments, long decimal coordinates and ids nobody references. On a page with dozens of icons, that adds up in download size and clutter in your markup.\n\nPaste the SVG and the optimiser removes what a browser does not need, then shows the result. You decide how many decimal places to keep, whether to drop unused ids and whether to remove title and desc elements. Keep the titles if you rely on them for accessibility. This is a lightweight cleaner, not a full SVGO replacement, so it does not merge paths or convert shapes. It runs in your browser and the code is not uploaded.",
+  "howTo": [
+    "Paste your SVG code into the input box.",
+    "Set the decimal places to keep, for example 2.",
+    "Choose whether to remove unused ids and title and desc elements.",
+    "Preview the result, compare it with the original, and copy the optimised SVG."
+  ],
+  "faq": [
+    {
+      "q": "What exactly is removed?",
+      "a": "XML declarations, doctype, comments, metadata blocks, Inkscape, Sodipodi, Sketch and similar editor attributes and namespaces, empty groups and defs, and, if selected, ids that nothing refers to and title or desc elements."
+    },
+    {
+      "q": "Will it change how the SVG looks?",
+      "a": "Rounding coordinates can shift shapes slightly if you use too few decimals. Two decimals is usually safe for icons. Compare the before and after rendering for detailed illustrations."
+    },
+    {
+      "q": "Why keep the title element?",
+      "a": "A title gives screen readers and tooltips a name for the graphic. Only remove it if the SVG is decorative or you provide an accessible name another way."
+    },
+    {
+      "q": "How does this differ from SVGO?",
+      "a": "SVGO has many plugins, such as path merging and transform collapsing. This tool does safer text-level cleanup only. For maximum compression, run SVGO in your build as well."
+    }
+  ],
+  "related": [
+    "svg-preview-editor",
+    "svg-to-png",
+    "svg-path-editor",
+    "svg-to-jsx",
+    "svg-to-css",
+    "image-compressor"
+  ],
+  "keywords": [
+    "svg optimizer",
+    "minify svg online",
+    "compress svg",
+    "clean svg code",
+    "free svgo alternative"
+  ]
+}

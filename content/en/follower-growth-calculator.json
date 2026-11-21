@@ -1,0 +1,41 @@
+{
+ "id": "follower-growth-calculator",
+ "seoTitle": "Follower Growth Rate Calculator with Projection",
+ "metaDescription": "Compute follower growth in numbers and percent, per day and per month, and project counts at the same pace. Free and private.",
+ "intro": "Compute follower growth in numbers and percent between two counts, per day and per month, and project future counts at the same pace.",
+ "why": "Growth numbers mean little without a period. Fifty followers a week is fast for a small account and slow for a large one.\n\nEnter the start count, the current count and the days between. The tool shows the change, the percentage, the per-day and per-month pace and the compound monthly rate, then projects the count at that pace both linearly and compounded. Growth rarely stays steady, so treat the projection as a planning aid.",
+ "howTo": [
+  "Enter the follower count at the start and now.",
+  "Enter the number of days between.",
+  "Set how many months to project.",
+  "Compare the linear and compound columns."
+ ],
+ "faq": [
+  {
+   "q": "Linear or compound?",
+   "a": "Linear adds the same number each month, compound grows by the same percentage. Compound runs away on long periods."
+  },
+  {
+   "q": "Is the projection reliable?",
+   "a": "No. It assumes the recent pace continues."
+  },
+  {
+   "q": "Can I use it for subscribers or email lists?",
+   "a": "Yes. It works for any count."
+  }
+ ],
+ "related": [
+  "engagement-rate-calculator",
+  "influencer-rate-estimator",
+  "social-media-roi-calculator",
+  "savings-goal",
+  "date-difference",
+  "monthly-volume-seasonality"
+ ],
+ "keywords": [
+  "follower growth calculator",
+  "instagram growth rate",
+  "subscriber growth rate",
+  "growth projection"
+ ]
+}

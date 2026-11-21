@@ -1,0 +1,41 @@
+{
+ "id": "ropa-builder",
+ "seoTitle": "GDPR Article 30 Record of Processing Builder",
+ "metaDescription": "Build an Article 30 record of processing activities as a table, with missing required fields flagged. Free, local, no signup.",
+ "intro": "Creates a record of processing activities (ROPA) table from one line per activity and flags the Art. 30(1) fields you left empty.",
+ "why": "Article 30 of the GDPR asks many controllers to keep a written record of processing: who the controller is, what each activity is for, whose data and which data, who receives it, transfers abroad, how long it is kept and how it is secured.\n\nPaste one activity per line and the tool builds the table and lists the missing fields with the article point they relate to. It does not know your processing, so the content is yours. Processors keep a separate record under Art. 30(2), and some small organisations are partly exempt.",
+ "howTo": [
+  "Write one activity per line, fields separated by | in the order shown.",
+  "Enter the controller and DPO details.",
+  "Run the tool and read the review list.",
+  "Copy the table into your document and keep it up to date."
+ ],
+ "faq": [
+  {
+   "q": "Who needs a record?",
+   "a": "Controllers and processors, with a partial exemption for organisations under 250 staff that only process occasionally and not risky data. Check Art. 30(5)."
+  },
+  {
+   "q": "Is legal basis required?",
+   "a": "Not by Art. 30, but many authorities expect it. It is included as a useful column."
+  },
+  {
+   "q": "Does it store my data?",
+   "a": "No. Everything stays in your browser."
+  }
+ ],
+ "related": [
+  "dpia-screening",
+  "data-deletion-request-letter",
+  "retention-schedule-builder",
+  "lawful-basis-selector",
+  "gdpr-checklist",
+  "privacy-policy-generator"
+ ],
+ "keywords": [
+  "record of processing activities",
+  "article 30 gdpr template",
+  "ropa template",
+  "processing register"
+ ]
+}

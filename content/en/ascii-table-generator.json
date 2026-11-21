@@ -1,0 +1,46 @@
+{
+  "id": "ascii-table-generator",
+  "seoTitle": "Free ASCII Table Generator: Text Tables from CSV",
+  "metaDescription": "Draw CSV or TSV data as a text table using plain ASCII, box-drawing, rounded or double lines. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Draws delimited data as a monospaced table. Choose plain ASCII plus-and-dash borders, box-drawing characters, rounded or double lines, or a compact borderless layout.",
+  "why": "Plain text tables are what you reach for in a code comment, a terminal tool's output, a commit message, a support email or a README that has to be readable without rendering. Getting the columns to line up by hand takes patience, and one edit throws everything off.\n\nPaste your rows and pick a border style. The tool measures every column, pads each cell and draws the frame, optionally with a separator under the header or between every row. Alignment can be left, centre or right. Pick ASCII when the output must survive old terminals and email clients, and a box-drawing style when it will be displayed in a modern monospaced font. Everything runs locally in your browser.",
+  "howTo": [
+    "Paste CSV, TSV or pipe-separated rows.",
+    "Choose a style: ascii, unicode, rounded, double or compact.",
+    "Set alignment and tick Separate header or Line between rows as needed.",
+    "Copy the table and paste it into a monospaced context."
+  ],
+  "faq": [
+    {
+      "q": "Which style should I choose?",
+      "a": "Use ascii when the text may pass through old terminals, email or tools that mangle non-ASCII characters. Unicode, rounded and double use box-drawing characters that look cleaner in a monospaced font. Compact skips borders entirely."
+    },
+    {
+      "q": "Why do the columns look misaligned in my document?",
+      "a": "Tables only line up in a monospaced font. In a proportional font the spaces have different widths. Put the table in a code block or a plain-text field to keep the alignment."
+    },
+    {
+      "q": "Does it handle wide characters?",
+      "a": "Width is measured by counting characters, not display columns. East Asian wide characters and some emoji take more space on screen, so tables containing them may look uneven."
+    },
+    {
+      "q": "How is the delimiter chosen?",
+      "a": "On auto it uses tabs if the first line has any, otherwise the most frequent of comma, semicolon and pipe. You can also set it yourself. Quoted fields with delimiters inside are parsed correctly."
+    }
+  ],
+  "related": [
+    "markdown-table-generator",
+    "csv-viewer",
+    "csv-to-html-table",
+    "ascii-tree-generator",
+    "ascii-art-text",
+    "csv-to-markdown-table"
+  ],
+  "keywords": [
+    "ascii table generator",
+    "text table from csv",
+    "box drawing table generator",
+    "plain text table maker",
+    "free ascii table online"
+  ]
+}

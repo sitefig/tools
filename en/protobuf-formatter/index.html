@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Protobuf (.proto) Formatter Online | Free Tools</title>
+<meta name="description" content="Free online Protobuf formatter. Format .proto files with one statement per line, consistent indentation and spacing, keeping all comments.">
+<link rel="canonical" href="https://tools.sitefig.net/en/protobuf-formatter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/protobuf-formatter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/protobuf-formatter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Protobuf (.proto) Formatter Online | Free Tools">
+<meta property="og:description" content="Free online Protobuf formatter. Format .proto files with one statement per line, consistent indentation and spacing, keeping all comments.">
+<meta property="og:url" content="https://tools.sitefig.net/en/protobuf-formatter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Protobuf (.proto) Formatter Online | Free Tools">
+<meta name="twitter:description" content="Free online Protobuf formatter. Format .proto files with one statement per line, consistent indentation and spacing, keeping all comments.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Protobuf Formatter","url":"https://tools.sitefig.net/en/protobuf-formatter/","description":"Free online Protobuf formatter. Format .proto files with one statement per line, consistent indentation and spacing, keeping all comments.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your .proto content into the input box.","Choose an indent of 2 spaces, 4 spaces or a tab.","Check the formatted messages, enums and services.","Copy the result into your repository and compile it with protoc or buf."],"keywords":"protobuf formatter, proto file formatter, format proto online, free protobuf beautifier, protocol buffers formatter, proto3 formatter online","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Formatters","item":"https://tools.sitefig.net/en/#formatters"},{"@type":"ListItem","position":3,"name":"Protobuf Formatter","item":"https://tools.sitefig.net/en/protobuf-formatter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it check field numbers?","acceptedAnswer":{"@type":"Answer","text":"No. It does not compile the schema, so duplicate or reserved field numbers are not detected. Use protoc or buf lint for real validation."}},{"@type":"Question","name":"Are comments preserved?","acceptedAnswer":{"@type":"Answer","text":"Yes, both line comments on their own lines and trailing comments after a field. Their text is not changed."}},{"@type":"Question","name":"Does it support proto2 and proto3?","acceptedAnswer":{"@type":"Answer","text":"It formats layout, which is largely the same in both. Syntax statements, messages, enums, oneof, map fields, services and options are handled."}},{"@type":"Question","name":"Will it change the wire format?","acceptedAnswer":{"@type":"Answer","text":"No. Only whitespace and line breaks change. Field names, numbers and types stay exactly as in your input."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#formatters">Formatters</a></li><li><span aria-current="page">Protobuf Formatter</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Protobuf Formatter</h1>
+<p class="lede">Format a .proto file so each statement sits on its own line with consistent indentation and spacing. Messages, enums, oneofs and services are indented, and comments are kept.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="protobuf-formatter" data-module="devgen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Protocol Buffers definitions are shared between teams and generated into several languages, so a messy .proto file spreads confusion widely. Files copied from documentation or squeezed onto a few lines are hard to read, and field numbers are easy to misread.</p>
+<p>The formatter puts each field, option and rpc on its own line, indents nested messages, enums, oneofs and service blocks, and sets spacing around equals signs and inside field options such as [deprecated = true]. Comments, including trailing ones, are kept. It formats layout only: it does not check field numbers for clashes or compile the file, so run protoc or buf for that. Your definitions stay in the browser and are not uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your .proto content into the input box.</li><li>Choose an indent of 2 spaces, 4 spaces or a tab.</li><li>Check the formatted messages, enums and services.</li><li>Copy the result into your repository and compile it with protoc or buf.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does it check field numbers?</summary><p>No. It does not compile the schema, so duplicate or reserved field numbers are not detected. Use protoc or buf lint for real validation.</p></details>
+<details><summary>Are comments preserved?</summary><p>Yes, both line comments on their own lines and trailing comments after a field. Their text is not changed.</p></details>
+<details><summary>Does it support proto2 and proto3?</summary><p>It formats layout, which is largely the same in both. Syntax statements, messages, enums, oneof, map fields, services and options are handled.</p></details>
+<details><summary>Will it change the wire format?</summary><p>No. Only whitespace and line breaks change. Field names, numbers and types stay exactly as in your input.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/protobuf-to-json/"><span class="link-card__title">Protobuf Message to Sample JSON</span><span class="link-card__desc">Parse a .proto (proto2/proto3) file and generate a sample JSON document for a message following the canonical proto3 JSON mapping: lowerCamelCase names, int64 as strings, bytes as base64, enums by name, maps as objects, Timestamp as RFC 3339, oneof (first member only).</span></a></li><li><a class="link-card" href="/en/proto-to-typescript/"><span class="link-card__title">Protobuf to TypeScript Interfaces</span><span class="link-card__desc">Convert .proto messages and enums to TypeScript interfaces/types matching the proto3 JSON mapping (nested messages become Outer_Inner, repeated -&gt; arrays, map -&gt; Record, oneof members optional, int64 as string or number, Timestamp as string). Services are ignored.</span></a></li><li><a class="link-card" href="/en/protobuf-to-json-schema/"><span class="link-card__title">Protobuf to JSON Schema</span><span class="link-card__desc">Convert .proto messages and enums to a JSON Schema draft-07 document with definitions, following the proto3 JSON mapping (int64 as numeric strings, bytes as base64, Timestamp as date-time).</span></a></li><li><a class="link-card" href="/en/json-schema-to-protobuf/"><span class="link-card__title">JSON Schema to Protobuf</span><span class="link-card__desc">Convert a JSON Schema (draft-07 / 2020-12 subset with properties, $ref/definitions, enums, arrays, additionalProperties) into proto3 messages: nested objects become messages, arrays become repeated, string enums get an UNSPECIFIED zero value, date-time maps to google.protobuf.Timestamp, non-required fields are optional. oneOf/anyOf with several non-null branches fall back to google.protobuf.Value.</span></a></li><li><a class="link-card" href="/en/json-format/"><span class="link-card__title">JSON Formatter</span><span class="link-card__desc">Pretty-print JSON with custom indent and optional key sorting; errors show line and column.</span></a></li><li><a class="link-card" href="/en/yaml-format/"><span class="link-card__title">YAML Formatter</span><span class="link-card__desc">Re-indent and normalise YAML (comments are not preserved; anchors are expanded).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

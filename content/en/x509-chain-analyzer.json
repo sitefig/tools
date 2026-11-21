@@ -1,0 +1,45 @@
+{
+  "id": "x509-chain-analyzer",
+  "seoTitle": "Certificate Chain Analyzer: Signatures, Expiry, Hostname Match",
+  "metaDescription": "Paste a PEM certificate bundle to see the chain order, verify each signature with WebCrypto, check dates, CA flags and key strength, and match a hostname.",
+  "intro": "Debug \"incomplete chain\" and expiry problems by checking the certificates a server sends.",
+  "why": "The analyzer parses each certificate, builds the chain from leaf to root by issuer and subject, and verifies each signature against its issuer's public key (RSA PKCS#1 v1.5, ECDSA and Ed25519; RSA-PSS is noted but not verified). It shows validity and days left, key type and size, signature algorithm, CA flag and path length, SAN, key usage and extended key usage, and warns about expired certificates, SHA-1 signatures, small RSA keys, non-CA issuers, a missing root or a hostname that is not covered. Tested on a generated three-level chain, with tampering detected.\n\nIt cannot check revocation (OCSP/CRL) or whether a root is trusted by a given system.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Get the chain, for example with openssl s_client -showcerts.",
+    "Paste the PEM blocks.",
+    "Enter the hostname to test.",
+    "Fix expired, missing or mismatched certificates."
+  ],
+  "faq": [
+    {
+      "q": "What does \"stops at an intermediate\" mean?",
+      "a": "The root is not in the bundle, which is normal for servers; clients need it in their trust store."
+    },
+    {
+      "q": "Why is the order important?",
+      "a": "Servers should send the leaf first, then intermediates; the tool re-orders by issuer when needed."
+    },
+    {
+      "q": "Does it check wildcard names?",
+      "a": "Yes, a wildcard matches one label only."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "x509-viewer",
+    "x509-csr-decoder",
+    "x509-san-csr-builder",
+    "asn1-der-decoder",
+    "ssl-tls-handshake-simulator",
+    "dns-spf-record-flattener"
+  ],
+  "keywords": [
+    "certificate chain analyzer",
+    "ssl chain checker",
+    "verify certificate chain",
+    "incomplete chain"
+  ]
+}

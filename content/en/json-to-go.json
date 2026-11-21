@@ -1,0 +1,47 @@
+{
+ "id": "json-to-go",
+ "seoTitle": "Free JSON to Go Struct Generator Online",
+ "metaDescription": "Free online JSON to Go struct generator. Create Go structs with json tags from a sample, with idiomatic names like ID and URL. Runs in your browser.",
+ "intro": "Generate Go struct definitions with json tags from a JSON sample. Field names are converted to exported Go names, and fields missing in some items get omitempty.",
+ "why": "Decoding JSON in Go needs a struct that matches the data, with exported field names and json tags. Writing one for a large response means a lot of typing and easy mistakes, such as a lowercase field that never gets filled or a tag that does not match the key.\n\nPaste a sample response and the tool produces nested structs, turns snake_case keys into names like UserName, and uses common initialisms such as ID, URL and HTTP. Integers become int64 and other numbers float64. A field that is null in the sample, or absent in some array items, becomes a pointer or gets omitempty. Review the result, since a sample cannot show every variation. Nothing is uploaded; it runs in your browser.",
+ "howTo": [
+  "Paste a JSON sample into the input box.",
+  "Set the root struct name, for example Response or User.",
+  "Copy the generated structs into your Go file.",
+  "Adjust types by hand where the sample is not representative."
+ ],
+ "faq": [
+  {
+   "q": "How are field names chosen?",
+   "a": "Keys are split into words and converted to exported Go names, so user_name becomes UserName. Common initialisms such as ID, URL, API and HTTP are written in capitals. The original key stays in the json tag."
+  },
+  {
+   "q": "Which Go types are used?",
+   "a": "Strings become string, booleans bool, whole numbers int64 and other numbers float64. Objects become named structs and arrays become slices. Mixed or unknown values fall back to interface{}."
+  },
+  {
+   "q": "What does a null value become?",
+   "a": "If a field is null in one place and a value elsewhere, it becomes a pointer, such as *string. A field that is only null, or empty arrays, become interface{} because the type cannot be known."
+  },
+  {
+   "q": "Does it add omitempty?",
+   "a": "Yes, for keys that are missing from some items when array elements are merged. Fields present everywhere get a plain json tag."
+  }
+ ],
+ "related": [
+  "json-to-typescript",
+  "json-to-zod",
+  "json-to-pydantic",
+  "json-schema-generator",
+  "json-to-models",
+  "sql-to-go-gorm"
+ ],
+ "keywords": [
+  "json to go struct",
+  "json to golang struct",
+  "convert json to go online",
+  "free json to go",
+  "go struct generator",
+  "golang json tags generator"
+ ]
+}

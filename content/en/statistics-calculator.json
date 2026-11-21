@@ -1,0 +1,45 @@
+{
+  "id": "statistics-calculator",
+  "seoTitle": "Statistics Calculator: Mean, SD, Variance, Quartiles, z-Score",
+  "metaDescription": "Paste numbers and get count, mean, median, mode, sample and population standard deviation and variance, quartiles, IQR, outliers and z-scores.",
+  "intro": "Describe a data set quickly, with both sample and population formulas.",
+  "why": "Numbers can be separated by commas, spaces or new lines. The page reports count, sum, minimum, maximum, range, mean, median and mode, sample (n-1) and population (n) variance and standard deviation, the standard error of the mean, mean absolute deviation, quartiles with the inclusive (Excel QUARTILE.INC) method, the interquartile range and outliers beyond 1.5 times the IQR, plus a z-score for a value you choose. Results were checked against Python's statistics module.\n\nQuartile methods differ between tools (inclusive, exclusive, Tukey hinges), so numbers may differ slightly from another program.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste your numbers.",
+    "Optionally enter a value for its z-score.",
+    "Read the summary.",
+    "Use the sample standard deviation for data that is a sample of a larger group."
+  ],
+  "faq": [
+    {
+      "q": "Sample or population?",
+      "a": "Use the sample formulas (n-1) when your data is a sample of a larger population, population formulas when it is the whole group."
+    },
+    {
+      "q": "What is a z-score?",
+      "a": "The number of standard deviations a value lies from the mean."
+    },
+    {
+      "q": "How are outliers defined?",
+      "a": "Values more than 1.5 times the IQR below Q1 or above Q3."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "average-median-mode",
+    "percentage-calculator",
+    "scientific-expression-calculator",
+    "grade-calculator",
+    "gpa-calculator",
+    "csv-column-profiler"
+  ],
+  "keywords": [
+    "statistics calculator",
+    "standard deviation calculator",
+    "quartile calculator",
+    "z score calculator"
+  ]
+}

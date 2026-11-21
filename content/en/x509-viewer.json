@@ -1,0 +1,47 @@
+{
+ "id": "x509-viewer",
+ "seoTitle": "Free X.509 Certificate Viewer and PEM Decoder",
+ "metaDescription": "Paste a PEM certificate to see its subject, issuer, validity dates, SANs, key info and SHA fingerprints. Free, parsed in your browser, nothing is uploaded.",
+ "intro": "Paste a PEM certificate and see who it was issued to and by whom, when it expires, which names it covers, its key type and its SHA-1 and SHA-256 fingerprints.",
+ "why": "Certificate problems show up as vague browser warnings or failed TLS handshakes: wrong name, expired, wrong chain. Reading the certificate itself usually answers the question, but openssl commands are hard to remember and a PEM block is unreadable by eye.\n\nThis viewer parses the certificate in your browser and lists the subject, issuer, serial number, validity period, public key, key usage and Subject Alternative Names. It tells you whether the certificate is valid now or how long ago it expired, and calculates the fingerprints used in pinning and trust-store checks. A certificate is public data, but nothing is uploaded in any case.",
+ "howTo": [
+  "Paste one or more PEM certificates, from -----BEGIN CERTIFICATE----- to -----END CERTIFICATE-----.",
+  "Run the viewer.",
+  "Check the subject, issuer, validity status and Subject Alternative Names.",
+  "Copy the fingerprints or other fields you need."
+ ],
+ "faq": [
+  {
+   "q": "Does it validate the certificate chain?",
+   "a": "No. It parses and displays one certificate at a time and does not check signatures, revocation or trust. A \"valid\" status here only means the current date is inside the validity period."
+  },
+  {
+   "q": "What certificate formats does it accept?",
+   "a": "PEM text, or just the Base64 body. DER binary files, PKCS#12 bundles and keys are not supported. Convert with openssl or export as Base64 PEM first."
+  },
+  {
+   "q": "Which fields does it show?",
+   "a": "Subject, issuer, version, serial, signature algorithm, validity dates, public key type and size, and common extensions: Subject Alt Names, Basic Constraints, Key Usage, Extended Key Usage and key identifiers. Other extensions are listed by name or OID with their size."
+  },
+  {
+   "q": "Can I paste a private key?",
+   "a": "Do not. This tool needs only the public certificate. A private key must never be pasted into a web page you cannot fully trust, and anything labelled PRIVATE KEY is not parsed here."
+  }
+ ],
+ "related": [
+  "x509-csr-decoder",
+  "x509-san-csr-builder",
+  "ssh-key-fingerprint",
+  "ssl-tls-handshake-simulator",
+  "rsa-pkcs1-pkcs8-converter",
+  "dns-record-generator"
+ ],
+ "keywords": [
+  "x509 certificate viewer",
+  "pem certificate decoder",
+  "ssl certificate decoder online",
+  "free certificate parser",
+  "view certificate fingerprint",
+  "check ssl certificate expiry"
+ ]
+}

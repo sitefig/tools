@@ -1,0 +1,46 @@
+{
+ "id": "world-clock",
+ "seoTitle": "Free World Clock: Current Time in Several Time Zones",
+ "metaDescription": "See the live time and date in several time zones at once, add or remove zones, and keep your list in this browser. Free, works offline.",
+ "intro": "Add time zones from a list and watch the current time, date and zone abbreviation for each update every second. Your selection is remembered in this browser.",
+ "why": "Working with a team spread across continents or planning a call with family abroad means translating time zones in your head, and daylight saving shifts make that unreliable. This clock shows several chosen zones side by side, each with the current time, the local date and the short zone name, such as CET or EDT. The list comes from your browser's built-in time zone database, so it follows daylight saving rules without any network request and still works offline. Your chosen zones are saved only in this browser so they are there next time. For planning a meeting across zones, the timezone meeting planner shows several time zones with working hours.",
+ "howTo": [
+  "Pick a time zone from the drop-down list and press Add.",
+  "Watch the clock lines update each second with the time, date and zone abbreviation.",
+  "Select a zone and press 'Remove selected' to drop it from the list."
+ ],
+ "faq": [
+  {
+   "q": "Where does the time zone data come from?",
+   "a": "From your browser's built-in Intl support, which uses the IANA time zone database. No network request is made, so it works offline and handles daylight saving automatically."
+  },
+  {
+   "q": "Is my list of zones stored?",
+   "a": "Yes, only in this browser's local storage, so it is there when you come back. Nothing is sent to a server, and clearing site data or using a private window removes it."
+  },
+  {
+   "q": "Why do some zones show an unusual abbreviation?",
+   "a": "Not every zone has a common short name. Where there is none, browsers show a form such as GMT+5:30 instead."
+  },
+  {
+   "q": "Is the time accurate?",
+   "a": "It is only as accurate as your device's clock. If your computer's time is wrong, every zone shown will be wrong by the same amount."
+  }
+ ],
+ "related": [
+  "timezone-converter",
+  "timezone-meeting-planner",
+  "cron-timezone-converter",
+  "timestamp-converter",
+  "countdown-to-date",
+  "date-formats"
+ ],
+ "keywords": [
+  "world clock",
+  "free world clock",
+  "time zones clock",
+  "current time in different time zones",
+  "multiple time zone clock",
+  "time zone converter clock"
+ ]
+}

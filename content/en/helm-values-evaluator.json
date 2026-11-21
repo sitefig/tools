@@ -1,0 +1,45 @@
+{
+ "id": "helm-values-evaluator",
+ "seoTitle": "Free Helm Values and Template Evaluator Online",
+ "metaDescription": "Render a Helm-style Go template against values.yaml without a cluster, with --set overrides, pipelines, if, range and with. Free, in browser.",
+ "intro": "Renders a Helm-style Go template against a values.yaml without a cluster. It supports .Values, .Release and .Chart lookups, set overrides, common pipelines, if, range, with, variables and whitespace trimming.",
+ "why": "Writing a Helm template means a loop of edit, helm template, read the output, repeat, and that needs a chart directory, the helm binary and sometimes cluster access. For a small snippet that is a lot of ceremony. Here you paste a values file and a template and see the rendered YAML straight away, including functions such as default, quote, upper, indent, nindent, toYaml, b64enc and printf, plus conditions and loops. You can also set values the way --set does. It is a sandbox for checking logic and whitespace, not a replacement for Helm: named templates (define, include, tpl), lookup and many Sprig functions are not supported. Everything runs in your browser.",
+ "howTo": [
+  "Paste your values.yaml into the first box and your template into the second.",
+  "Set the release name, chart name, app version, namespace and any --set style overrides.",
+  "Read the rendered output and fix indentation or logic in the template."
+ ],
+ "faq": [
+  {
+   "q": "Which template features work?",
+   "a": ".Values, .Release and .Chart lookups, if and else, range, with, variables, whitespace trimming with dashes, and common pipeline functions such as default, quote, upper, indent, nindent, toYaml and b64enc."
+  },
+  {
+   "q": "What is not supported?",
+   "a": "Named templates (define, include, tpl), lookup, sha256sum and Sprig functions beyond the common ones. Charts that depend on helpers will not render fully here."
+  },
+  {
+   "q": "Can I override values?",
+   "a": "Yes. Use the set field with key=value entries, like helm --set, to try different values without editing the file."
+  },
+  {
+   "q": "Will output match helm template exactly?",
+   "a": "Not in every case. It is a lightweight evaluator, so always confirm with helm template or helm lint before deploying."
+  }
+ ],
+ "related": [
+  "helm-chart-scaffolder",
+  "k8s-manifest-validator",
+  "yaml-format",
+  "kubernetes-configmap-secret-builder",
+  "yaml-to-json",
+  "kubernetes-deployment-generator"
+ ],
+ "keywords": [
+  "helm template evaluator",
+  "render helm template online",
+  "helm values tester",
+  "free helm playground",
+  "go template yaml renderer"
+ ]
+}

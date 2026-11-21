@@ -1,0 +1,44 @@
+{
+ "id": "cloudfront-log-parser",
+ "seoTitle": "CloudFront Log Parser: Cache Hit Ratio from Standard Logs",
+ "metaDescription": "Read CloudFront standard logs, including .gz files. See cache hit ratio, status codes, top URLs and edge locations. Free, runs in your browser.",
+ "intro": "Parses tab-separated CloudFront logs using the #Fields header and summarises caching, status codes and slow requests.",
+ "why": "CloudFront writes gzipped logs to S3. Downloading, unpacking and loading them in a spreadsheet takes several steps. Here you can drop the .gz files directly.\n\nThe hit ratio counts Hit, RefreshHit and OriginShieldHit over all requests, including errors and redirects, and says so in the output.",
+ "howTo": [
+  "Download log files from the S3 bucket.",
+  "Drop the .gz files or paste the text.",
+  "Optionally filter by status.",
+  "Read hit ratio, status codes and top URLs."
+ ],
+ "faq": [
+  {
+   "q": "How is the hit ratio defined?",
+   "a": "Hit plus RefreshHit plus OriginShieldHit divided by all requests. A different definition gives a different number."
+  },
+  {
+   "q": "Are real-time logs supported?",
+   "a": "No. Only the standard log format with a #Fields line."
+  },
+  {
+   "q": "What if some lines do not match?",
+   "a": "They are skipped and the result says how many. Lines before a #Fields line are skipped."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "alb-elb-log-parser",
+  "s3-access-log-parser",
+  "cloudflare-logpush-viewer",
+  "cdn-edge-log-parser",
+  "compression-size-estimator",
+  "iis-w3c-log-parser"
+ ],
+ "keywords": [
+  "cloudfront log analyzer",
+  "cloudfront standard logs",
+  "cloudfront cache hit ratio"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "image-info",
+  "seoTitle": "Free Image Info Tool: Size, Type, Ratio and Colours",
+  "metaDescription": "See an image's dimensions, file type, size, aspect ratio, transparency, brightness and dominant colours. Free, files stay in your browser.",
+  "intro": "Reads one or more images and reports their type, file size, pixel dimensions, megapixels, aspect ratio, whether they contain transparency, average brightness and five dominant colours.",
+  "why": "Before you upload an image to a CMS, send it to a printer or write a CSS rule for it, you often need to know a few basics: how big is it in pixels, is it really a PNG, does it have an alpha channel, what ratio is it? Right-clicking through properties dialogs differs on every system and rarely shows all of that.\n\nDrop in your files and each gets a short report. Transparency is detected by scanning a reduced copy of the image, and dominant colours come from a median-cut palette with the share of each. Several images can be checked at once, which is helpful when auditing a folder. Reading happens in your browser, so private pictures do not leave your device. EXIF metadata is not shown here.",
+  "howTo": [
+    "Choose one or more image files.",
+    "Run the tool.",
+    "Read the report for each image: type, size, dimensions, ratio, transparency and colours.",
+    "Copy any values you need."
+  ],
+  "faq": [
+    {
+      "q": "What does the transparency check look at?",
+      "a": "It scans a reduced copy of the image and reports yes if any pixel has an alpha value below fully opaque. A PNG with a fully opaque image will say no, even though the format could hold transparency."
+    },
+    {
+      "q": "How are dominant colours chosen?",
+      "a": "The image is shrunk, then the median-cut method groups similar colours and averages each group. The five largest groups are listed as hex values with their approximate share of the picture."
+    },
+    {
+      "q": "Does it show camera details or location?",
+      "a": "No. It reports basic properties only. To read EXIF metadata such as the camera model or GPS position, use the EXIF viewer."
+    },
+    {
+      "q": "What is average brightness?",
+      "a": "The mean perceived lightness of all pixels as a percentage, using standard luminance weights. 0 is black and 100 is white. It gives a rough idea of how dark or light the picture is."
+    }
+  ],
+  "related": [
+    "exif-viewer",
+    "image-resizer",
+    "image-compressor",
+    "color-picker-from-image",
+    "aspect-ratio-calculator",
+    "exif-remover"
+  ],
+  "keywords": [
+    "image info",
+    "image properties viewer",
+    "check image dimensions online",
+    "does my png have transparency",
+    "free image analyzer"
+  ]
+}

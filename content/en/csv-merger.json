@@ -1,0 +1,44 @@
+{
+ "id": "csv-merger",
+ "seoTitle": "CSV Merger: Stack Files and Align Columns by Header",
+ "metaDescription": "Paste several CSV tables separated by --- and stack them into one table, matching columns by header name. Free, private, in your browser.",
+ "intro": "Combines CSV tables into one, matching columns by their header names so a different column order or an extra column is handled.",
+ "why": "Exports from the same system rarely line up exactly: the column order changes, a new column appears, a name changes case. Matching by header, not by position, avoids the classic shifted-column mistake.\n\nThe result has every column that appears in any table, in order of first appearance. Missing cells stay empty. Add a source column to see which table each row came from. Headers that differ in spelling are separate columns, so fix those first.",
+ "howTo": [
+  "Paste the tables, each with its header, separated by a line of ---.",
+  "Choose whether header case is ignored and whether to add a source column.",
+  "Check the summary line for row and column counts.",
+  "Copy or download the merged CSV."
+ ],
+ "faq": [
+  {
+   "q": "What if two files have different delimiters?",
+   "a": "Set the delimiter explicitly only if all use the same; otherwise it is detected from the first line of each table."
+  },
+  {
+   "q": "Are duplicate rows removed?",
+   "a": "No. Use the duplicate row remover afterwards."
+  },
+  {
+   "q": "What about renamed columns?",
+   "a": "They are treated as new columns. Rename in the source first."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "Memory only; very large files are better handled with a command-line tool."
+  }
+ ],
+ "related": [
+  "csv-files-to-xlsx-sheets",
+  "duplicate-row-remover",
+  "table-joiner",
+  "csv-splitter",
+  "csv-column-extractor",
+  "csv-viewer"
+ ],
+ "keywords": [
+  "merge csv files",
+  "combine csv by column name",
+  "csv stacker"
+ ]
+}

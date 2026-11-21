@@ -1,0 +1,47 @@
+{
+ "id": "url-encode",
+ "seoTitle": "Free URL Encode Online (Percent-Encoding Tool)",
+ "metaDescription": "Percent-encode text for URLs using encodeURIComponent, encodeURI or form-style plus signs for spaces. Free, instant and runs in your browser.",
+ "intro": "Percent-encode text so it is safe inside a URL. Pick component mode for query values, full URL mode to keep the address structure, or form mode for spaces as plus signs.",
+ "why": "A query value containing &, = or a space can silently break a link, and a redirect URL pasted into another URL needs its slashes and question marks escaped or the receiver reads the wrong parts. Hand-editing %20 and %26 is slow and easy to get wrong.\n\nThis tool applies the same rules as the browser's own functions. Component mode matches encodeURIComponent and escapes nearly everything. Full URL mode matches encodeURI and leaves the address structure alone. Form mode swaps spaces for plus signs, as HTML forms do. Your text is processed locally and never uploaded.",
+ "howTo": [
+  "Paste the text or URL fragment you want to encode.",
+  "Choose a mode: component (encodeURIComponent), full URL (encodeURI) or form (space as +).",
+  "Read the percent-encoded result.",
+  "Copy it into your link, API call or redirect parameter."
+ ],
+ "faq": [
+  {
+   "q": "Which mode should I choose?",
+   "a": "Use component mode for a single value, such as a search term or a redirect target inside a query string. Use full URL mode when you have a whole address and only want to escape unsafe characters, keeping : / ? & = intact."
+  },
+  {
+   "q": "Why is a space sometimes %20 and sometimes +?",
+   "a": "%20 is the standard percent-encoding for a space and works everywhere in a URL. The + form is only valid inside query strings in form-encoded data. Form mode produces +, the other modes produce %20."
+  },
+  {
+   "q": "Does it encode non-English characters?",
+   "a": "Yes. Characters are converted to UTF-8 bytes and each byte is written as %XX, so ë becomes %C3%AB. This is what modern browsers and servers expect."
+  },
+  {
+   "q": "Should I encode a URL twice?",
+   "a": "No. Double encoding turns % into %25 and breaks the link. Encode each part once, at the moment you assemble the URL."
+  }
+ ],
+ "related": [
+  "url-decode",
+  "query-string",
+  "url-parser",
+  "html-entities",
+  "punycode",
+  "base64url-encoder"
+ ],
+ "keywords": [
+  "url encode online",
+  "percent encoding tool",
+  "encodeuricomponent online",
+  "free url encoder",
+  "urlencode text",
+  "escape url characters"
+ ]
+}

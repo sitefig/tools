@@ -1,0 +1,45 @@
+{
+ "id": "glob-pattern-tester",
+ "seoTitle": "Free Glob Pattern Tester for File Paths",
+ "metaDescription": "Test glob patterns such as src/**/*.{js,ts} against a list of file paths. See which pattern matches each path. Free and local.",
+ "intro": "Paste glob patterns and a list of paths to see which paths match. Supports *, **, ?, character classes, brace lists, extglob and exclusions.",
+ "why": "Globs are used in build tools, linters, CI configs and shells, and small differences cause missed or extra files. Testing a pattern against real paths before you commit it saves a failed build.\n\nThe tool turns each glob into a regular expression and tests every path. Patterns starting with ! exclude, and the last matching pattern decides. Names starting with a dot are skipped by * and ** unless you allow them, as in bash. Real tools differ in details, so use this as a close check, not a final word.",
+ "howTo": [
+  "Enter glob patterns, one per line. Start a line with ! to exclude.",
+  "Paste your file paths, one per line.",
+  "Set the options for dotfiles, base name matching and case.",
+  "Read which pattern matched each path."
+ ],
+ "faq": [
+  {
+   "q": "Which glob dialect is this?",
+   "a": "It follows common bash and minimatch behaviour: * and ? stay within one folder, ** crosses folders, braces expand, and [abc] and [!abc] are classes. Differences between tools exist."
+  },
+  {
+   "q": "Why is a dotfile not matched by *?",
+   "a": "Shells and most glob libraries hide names that start with a dot unless the pattern names the dot or an option allows it. Tick the dot option to include them."
+  },
+  {
+   "q": "Is !(pattern) supported?",
+   "a": "No. Negated extglob is rejected with a message. Use a ! exclusion line instead."
+  },
+  {
+   "q": "Is this the same as .gitignore?",
+   "a": "No. Gitignore has its own rules. Use the gitignore tester for those."
+  }
+ ],
+ "related": [
+  "gitignore-tester",
+  "regex-tester",
+  "find-replace",
+  "robots-wildcard-pattern-tester",
+  "regex-url-filter",
+  "sort-lines"
+ ],
+ "keywords": [
+  "glob pattern tester",
+  "test glob pattern",
+  "minimatch tester",
+  "file glob matcher"
+ ]
+}

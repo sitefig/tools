@@ -1,0 +1,45 @@
+{
+  "id": "access-log-analyzer",
+  "seoTitle": "Web Server Access Log Analyzer: Status Codes, Top URLs, Crawlers",
+  "metaDescription": "Paste Apache or nginx combined log lines to see status codes, top URLs, 404s, Googlebot, Bing and AI crawler activity and bot hits by status. Local analysis.",
+  "intro": "Turn a slice of your access log into an SEO and crawl-budget report without uploading it.",
+  "why": "The analyzer parses the combined log format (IP, time, request, status, bytes, referrer, user agent) and reports the status-class split, the most requested URLs without query strings, top 404s, how many requests carry parameters, and a table of identified crawlers (Googlebot, Bingbot, GPTBot, ClaudeBot, PerplexityBot, Applebot, Yandex, Baidu, Ahrefs, Semrush and others) with their 2xx, 3xx and error counts, plus a Googlebot summary.\n\nUser-agent strings can be forged; verify a crawler by reverse DNS before acting on it. Only the combined format is understood, and very large logs should be sampled first.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Copy a few thousand lines from access.log and paste them.",
+    "Set the number of rows per table.",
+    "Read the status, URL and crawler sections.",
+    "Fix 404s that crawlers hit and redirect chains they follow."
+  ],
+  "faq": [
+    {
+      "q": "Which log format does it need?",
+      "a": "Apache or nginx \"combined\", which includes the referrer and user agent."
+    },
+    {
+      "q": "Can it prove a visit was Googlebot?",
+      "a": "No. Verify with a reverse DNS lookup and forward confirmation, or Google's published IP ranges."
+    },
+    {
+      "q": "Is the log uploaded?",
+      "a": "No."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "robots-tester",
+    "ai-bot-robots-builder",
+    "url-parameter-analyzer",
+    "redirect-chain-analyzer",
+    "user-agent-parser",
+    "log-privacy-workbench"
+  ],
+  "keywords": [
+    "access log analyzer",
+    "log file analysis seo",
+    "googlebot log",
+    "nginx log parser"
+  ]
+}

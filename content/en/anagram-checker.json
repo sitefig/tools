@@ -1,0 +1,46 @@
+{
+  "id": "anagram-checker",
+  "seoTitle": "Free Anagram Checker: Compare Two Phrases",
+  "metaDescription": "Check whether two words or phrases use exactly the same letters and see which letters differ. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Compares two phrases letter by letter, ignoring case, spaces and punctuation, and says whether they are anagrams. If not, it lists the letters that do not match.",
+  "why": "Anagrams are a staple of word games, crossword setting, puzzle hunts and classroom exercises, and checking one by hand means crossing off letters one at a time. It is easy to miss a single stray letter in a longer phrase such as a name or a motto.\n\nThis checker counts every letter and digit in both phrases and compares the totals. When they differ, it shows exactly which characters are over or under, so you can tweak your attempt. Accents can be ignored, which helps with names that mix spelled variants. Spaces and punctuation never count. The comparison happens in your browser, so you can try out puzzle answers without sharing them.",
+  "howTo": [
+    "Type the first word or phrase into Phrase A.",
+    "Type the second one into Phrase B.",
+    "Leave Ignore accents ticked if accented letters should match plain ones.",
+    "Read the verdict and the sorted letters, plus any differences."
+  ],
+  "faq": [
+    {
+      "q": "What is ignored in the comparison?",
+      "a": "Case, spaces and punctuation. Only letters and digits are compared. So \"Dormitory\" and \"Dirty room\" match, because both contain the same letters once spaces are removed."
+    },
+    {
+      "q": "What does Ignore accents do?",
+      "a": "When ticked, accents are removed before comparing, so an e with an acute accent matches a plain e. Untick it if you want accented letters to be treated as different characters."
+    },
+    {
+      "q": "Why does it say identical words are not true anagrams?",
+      "a": "If both phrases reduce to the same sequence of letters, they are the same word with different spacing or punctuation. The tool still reports a match but adds a note, because a true anagram rearranges the letters."
+    },
+    {
+      "q": "How do I see why two phrases do not match?",
+      "a": "The result lists the differences as letter counts, for example \"e: 2 vs 1\". That tells you which letters you have too many or too few of in each phrase."
+    }
+  ],
+  "related": [
+    "palindrome-checker",
+    "character-frequency",
+    "duplicate-words-finder",
+    "reverse-text",
+    "case-converter",
+    "word-counter"
+  ],
+  "keywords": [
+    "anagram checker",
+    "are these two words anagrams",
+    "anagram checker for phrases",
+    "check anagram online",
+    "free anagram tool"
+  ]
+}

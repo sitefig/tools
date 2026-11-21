@@ -1,0 +1,39 @@
+{
+ "id": "business-model-canvas-builder",
+ "seoTitle": "Business Model Canvas Builder With Nine Blocks",
+ "metaDescription": "Add notes to the nine blocks of the business model canvas and get a printable one-page canvas. Free, runs in your browser.",
+ "intro": "Lays the nine business model canvas blocks out on one page you can save or print.",
+ "why": "The business model canvas describes how a business creates and captures value in nine blocks, from key partners to revenue streams. Putting it on a single page makes the links between blocks visible.\n\nWrite a point per line in each block. The result is an HTML page to save or print to PDF. Nothing is uploaded.",
+ "howTo": [
+  "Write notes for each block, one per line.",
+  "Review the layout.",
+  "Save or print the page."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference from a lean canvas?",
+   "a": "The lean canvas focuses on problem and solution for startups; this one covers partners and resources."
+  },
+  {
+   "q": "Can I add more than one note?",
+   "a": "Yes, one per line."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "lean-canvas-builder",
+  "okr-planner-scorer",
+  "raci-matrix-builder",
+  "decision-matrix",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "business model canvas",
+  "canvas template",
+  "nine blocks"
+ ]
+}

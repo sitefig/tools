@@ -1,0 +1,46 @@
+{
+  "id": "color-mixer",
+  "seoTitle": "Free Color Mixer: Blend Two Colours in Any Space",
+  "metaDescription": "Blend two colours at a chosen ratio or in steps, using sRGB, linear light, OKLab or HSL mixing. Free, runs in your browser and nothing is uploaded.",
+  "intro": "Mixes colour A with colour B at a percentage, and also produces an evenly spaced series between them. You can mix in sRGB, linear light, OKLab or HSL.",
+  "why": "Blending two colours sounds simple, but the result depends heavily on the colour space. Mixing blue and yellow in plain sRGB gives a murky grey, while OKLab keeps the transition smoother and closer to what your eye expects. CSS gradients and design tools make different choices, which is why a mixed colour rarely matches what you meant.\n\nEnter two colours, choose the percentage of B and the number of steps, and compare spaces. You get the single mix as hex and rgb, and a list of steps from A to B with swatches. It is useful for hover states, tinted backgrounds and building a ramp between brand colours. Everything is calculated locally in your browser.",
+  "howTo": [
+    "Enter colour A and colour B in any CSS format.",
+    "Set the mix percentage of B and the number of steps.",
+    "Pick a colour space: srgb, linear, oklab or hsl.",
+    "Copy the mixed colour or one of the steps from the list."
+  ],
+  "faq": [
+    {
+      "q": "Which space should I choose?",
+      "a": "OKLab usually looks the most natural for transitions. Linear light mimics physical mixing of light. sRGB matches what many tools and CSS do by default. HSL travels around the hue wheel, so it can pass through other hues."
+    },
+    {
+      "q": "What does the percentage mean?",
+      "a": "It is the share of colour B in the main mix. 0 gives colour A, 100 gives colour B and 50 is an even blend. The steps list always runs from A at the start to B at the end."
+    },
+    {
+      "q": "How many steps can I create?",
+      "a": "Between 2 and 50. The first step is exactly colour A and the last is exactly colour B, with the others evenly spaced in the chosen space."
+    },
+    {
+      "q": "Is alpha mixed too?",
+      "a": "Yes. If either colour has an alpha value, the result mixes the opacity at the same ratio and shows an rgba value in the output."
+    }
+  ],
+  "related": [
+    "gradient-generator",
+    "color-converter",
+    "palette-generator",
+    "mesh-gradient-generator",
+    "contrast-checker",
+    "css-filter-generator"
+  ],
+  "keywords": [
+    "color mixer",
+    "blend two colors",
+    "mix hex colors online",
+    "oklab color mixer",
+    "free color blending tool"
+  ]
+}

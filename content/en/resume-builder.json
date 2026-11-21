@@ -1,0 +1,46 @@
+{
+ "id": "resume-builder",
+ "seoTitle": "Free Resume Builder - Printable One-Page, Save as PDF",
+ "metaDescription": "Type your details to get a clean printable one-page resume with summary, experience, education and skills. Save as PDF. Free, nothing uploaded.",
+ "intro": "Type your contact details, summary, experience, education and skills and get a clean one-page resume that you can print or save as a PDF.",
+ "why": "A resume does not need a complicated template. Recruiters skim, and applicant tracking systems read plain structured text better than elaborate columns. Yet many resume websites ask you to register, upload your personal history to their servers, then charge to download the result.\n\nThis builder keeps it simple. You fill in a form, and the page shows a tidy layout with a name and headline, contact line, summary, experience and education blocks, and a skills list. For experience, the first line of each block holds role, company and dates separated by vertical bars, and the lines under it become bullet points. Your text stays in your browser, saved locally so you can edit later. Use the print dialog to save it as a PDF, and check the result fits one page.",
+ "howTo": [
+  "Enter your name, headline and contact details.",
+  "Write a short summary, then add experience and education blocks.",
+  "List skills separated by commas.",
+  "Press Print / Save as PDF and choose Save as PDF in the print dialog."
+ ],
+ "faq": [
+  {
+   "q": "How do I format experience entries?",
+   "a": "Start each block with Role | Company | Dates on the first line, then one bullet per following line. Separate blocks with a blank line. Education uses the same format."
+  },
+  {
+   "q": "Is my information uploaded?",
+   "a": "No. What you type is processed in your browser and saved only in its local storage so you can return to it. Press Reset to clear it. Clearing site data also removes it."
+  },
+  {
+   "q": "Will applicant tracking systems read it?",
+   "a": "The layout is plain text with simple headings, which parses well in most systems. Saved as PDF it keeps selectable text. Avoid adding images or tables, which this tool does not create anyway."
+  },
+  {
+   "q": "Can I choose a different design?",
+   "a": "No. There is one clean layout. If you want more styling, save the PDF or copy the text into a document editor and format it there."
+  }
+ ],
+ "related": [
+  "invoice-generator",
+  "receipt-generator",
+  "signature-generator",
+  "text-to-pdf",
+  "markdown-to-pdf",
+  "word-counter"
+ ],
+ "keywords": [
+  "resume builder",
+  "free resume maker",
+  "one page resume online",
+  "cv builder pdf",
+  "printable resume generator"
+ ]
+}

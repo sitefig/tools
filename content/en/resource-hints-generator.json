@@ -1,0 +1,45 @@
+{
+ "id": "resource-hints-generator",
+ "seoTitle": "Resource Hints Generator: preload, preconnect, dns-prefetch, fetchpriority",
+ "metaDescription": "List URLs and get correct link tags for preload (with as and crossorigin), preconnect, dns-prefetch and fetchpriority, with overuse warnings.",
+ "intro": "Turns a list of URLs into preload, preconnect, dns-prefetch, modulepreload and prefetch tags.",
+ "why": "Resource hints help when used on the few files that matter and hurt when sprayed everywhere.\n\nThe tool picks the as value from the extension, adds crossorigin for fonts, which the browser needs even on the same origin, treats bare origins as preconnect, and warns when you ask for many preloads or origins. You can add fetchpriority=\"high\" to the first image preload.",
+ "howTo": [
+  "List one URL per line; start a line with the hint name to choose it.",
+  "Add options such as as=image or fetchpriority=high after the URL.",
+  "Copy the tags into the head, early.",
+  "Read the review notes."
+ ],
+ "faq": [
+  {
+   "q": "Why does a font preload need crossorigin?",
+   "a": "Fonts are fetched in CORS mode. Without it the preload is not reused and the font downloads twice."
+  },
+  {
+   "q": "How many preconnects are too many?",
+   "a": "Keep to two to four origins that the page needs immediately."
+  },
+  {
+   "q": "preconnect or dns-prefetch?",
+   "a": "preconnect opens the full connection; dns-prefetch only resolves the name and is a cheap fallback."
+  },
+  {
+   "q": "Is anything fetched by the tool?",
+   "a": "No. It only writes text."
+  }
+ ],
+ "related": [
+  "font-loading-snippet-generator",
+  "lazy-loading-injector",
+  "render-blocking-resource-finder",
+  "speculation-rules-generator",
+  "cache-control-builder",
+  "link-purpose-checker"
+ ],
+ "keywords": [
+  "resource hints generator",
+  "preload tag generator",
+  "preconnect generator",
+  "fetchpriority high"
+ ]
+}

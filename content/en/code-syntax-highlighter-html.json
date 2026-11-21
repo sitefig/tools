@@ -1,0 +1,44 @@
+{
+ "id": "code-syntax-highlighter-html",
+ "seoTitle": "Free Code Syntax Highlighter: Copy as HTML With Inline Styles",
+ "metaDescription": "Highlight code and copy it as self-contained HTML with inline styles in a light or dark theme. Works for JS, JSON, Python, CSS, HTML, SQL, bash.",
+ "intro": "Colours a code snippet and gives you a pre/code block with inline styles that you can paste into a blog editor, email or CMS without loading a stylesheet or script.",
+ "why": "Many editors strip classes and scripts but keep inline styles. Highlighting libraries need both. A block with inline colours works in more places.\n\nThe highlighter is a small hand-written tokenizer, not a full parser. It colours comments, strings, numbers, keywords and function calls, which is enough for snippets but will misjudge unusual syntax such as nested template strings. The colour pairs in both themes meet normal text contrast against their background.",
+ "howTo": [
+  "Paste your code and pick the language.",
+  "Choose a light or dark theme and, if you like, line numbers.",
+  "Check the preview.",
+  "Copy the HTML from the text output."
+ ],
+ "faq": [
+  {
+   "q": "Why inline styles?",
+   "a": "They survive in email clients and CMS editors that remove classes and scripts."
+  },
+  {
+   "q": "Is the result accessible?",
+   "a": "Text stays real text, so screen readers read it normally. Colours are not the only information."
+  },
+  {
+   "q": "Which languages work?",
+   "a": "JavaScript or TypeScript, JSON, Python, C-style languages, CSS, HTML, SQL and shell."
+  },
+  {
+   "q": "Can it make an image?",
+   "a": "Use the Code to Image tool for PNG output."
+  }
+ ],
+ "related": [
+  "code-to-image",
+  "js-format",
+  "sql-format",
+  "html-minify",
+  "code-comment-stripper",
+  "json-format"
+ ],
+ "keywords": [
+  "syntax highlighter html",
+  "code to html",
+  "highlight code inline styles"
+ ]
+}

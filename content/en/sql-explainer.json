@@ -1,0 +1,45 @@
+{
+ "id": "sql-explainer",
+ "seoTitle": "Free SQL Query Explainer in Plain English Online",
+ "metaDescription": "Explain a SELECT, INSERT, UPDATE, DELETE or CREATE TABLE in plain English, with warnings about common pitfalls. Free, rule-based, runs in your browser.",
+ "intro": "Explains a SELECT, INSERT, UPDATE, DELETE or CREATE TABLE statement in plain English: tables and joins, filters, grouping, ordering and limits, in logical order, with warnings for common pitfalls.",
+ "why": "Reading someone else's query, or your own from six months ago, is slow when it has four joins, a HAVING clause and a nested condition. A plain-English walk-through helps you check that the query does what you think. This tool describes the steps in the order the database logically evaluates them: where the rows come from, how tables are joined, what filters apply, how results are grouped and sorted, and what is returned. It also warns about common problems such as SELECT *, a LIKE with a leading wildcard, functions applied to columns, large OFFSET values, and UPDATE or DELETE without WHERE. It uses rules, not an AI model, so CTEs, UNION and window frames are not supported. Your SQL stays in your browser.",
+ "howTo": [
+  "Paste a single SQL statement into the input box.",
+  "Run the explanation to read the steps and the warnings.",
+  "Compare it with your intent and fix any warning that applies."
+ ],
+ "faq": [
+  {
+   "q": "Does it use AI?",
+   "a": "No. It is a rule-based parser that follows the structure of the statement. That makes it fast and private, but limited to the patterns it knows."
+  },
+  {
+   "q": "What is not supported?",
+   "a": "CTEs (WITH), UNION, window function frames and other advanced syntax. Statements using them may be explained incompletely or not at all."
+  },
+  {
+   "q": "What warnings does it give?",
+   "a": "SELECT *, LIKE patterns starting with a wildcard, functions on columns in WHERE, big OFFSET values and UPDATE or DELETE without a WHERE clause."
+  },
+  {
+   "q": "Can it tell me if the query is fast?",
+   "a": "No. It never sees your data or indexes. For performance, check the plan with EXPLAIN and use the PostgreSQL plan visualiser or the index advisor on this site."
+  }
+ ],
+ "related": [
+  "sql-index-advisor",
+  "postgres-explain-visualizer",
+  "sql-format",
+  "sql-to-mongodb",
+  "sql-keyword-uppercaser",
+  "sql-on-csv"
+ ],
+ "keywords": [
+  "sql explainer",
+  "explain sql query in plain english",
+  "sql query to english",
+  "free sql query analyzer",
+  "understand sql joins and filters"
+ ]
+}

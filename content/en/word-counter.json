@@ -1,0 +1,46 @@
+{
+ "id": "word-counter",
+ "seoTitle": "Free Word Counter: Words, Characters, Reading Time",
+ "metaDescription": "Count words, characters, sentences, paragraphs and lines, with estimated reading and speaking time. Free; runs in your browser.",
+ "intro": "Paste text to count words, characters with and without spaces, sentences, paragraphs and lines, with reading and speaking time based on speeds you can change.",
+ "why": "Essays have word limits, meta descriptions have character limits, social posts have both, and speakers need to know how long a script will take. Counting by hand is impossible and the count in a word processor does not always match what a form or a CMS will accept.\n\nThis counter gives the basics at once: words, characters with and without spaces, sentences, paragraphs and lines. Characters are counted as Unicode characters, so an emoji counts as one. Reading time uses 238 words per minute and speaking time 150, and you can change both to match your audience. Sentences and paragraphs are estimated from punctuation and blank lines, so unusual formatting can change them. Counting is done in your browser.",
+ "howTo": [
+  "Paste or type your text into the input box.",
+  "Adjust the reading and speaking speeds if the defaults do not suit you.",
+  "Run the tool to see all the counts.",
+  "Edit the text and run it again until you are within your limit."
+ ],
+ "faq": [
+  {
+   "q": "How are words counted?",
+   "a": "Words are runs of letters and digits, including apostrophes within a word. Counts can differ slightly from other tools that treat hyphenated words or numbers differently."
+  },
+  {
+   "q": "How is reading time estimated?",
+   "a": "By dividing the word count by the reading speed, 238 words per minute by default. Speaking time uses 150 words per minute. Change either value in the options."
+  },
+  {
+   "q": "Does it count characters like emoji correctly?",
+   "a": "Characters are counted by Unicode code point, so an emoji counts as one. Some platforms count differently, so check the limit of the service you are posting to."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "text-statistics",
+  "readability",
+  "keyword-density",
+  "case-converter",
+  "duplicate-words-finder",
+  "character-frequency"
+ ],
+ "keywords": [
+  "word counter",
+  "character counter online",
+  "count words and characters",
+  "reading time calculator",
+  "sentence counter free"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "json-escape",
+ "seoTitle": "Free JSON String Escape Online",
+ "metaDescription": "Free online JSON string escape tool. Turn text with quotes, newlines and tabs into a valid JSON string, with optional Unicode escapes. Runs locally.",
+ "intro": "Convert any text into a correctly escaped JSON string. Quotes, backslashes, newlines and tabs are escaped, and you can also escape non-ASCII characters as \\uXXXX.",
+ "why": "Putting a multi-line message, a snippet of HTML or a Windows path into a JSON value by hand almost always goes wrong. One unescaped quote or raw newline breaks the whole document, and the parser error rarely points at the real cause. This happens when you build a request body, write a test fixture or edit a translation file.\n\nPaste the raw text and the tool produces a string that any JSON parser will accept. You can keep or drop the surrounding quotes, and turn accented letters and emoji into \\u sequences when a system only handles ASCII. It uses the standard JSON string rules, so the result can be pasted straight into a document. Nothing leaves your browser.",
+ "howTo": [
+  "Paste the raw text you want to embed in JSON.",
+  "Tick Wrap in quotes if you want the surrounding double quotes included.",
+  "Tick Escape non-ASCII to turn accented letters and emoji into \\u sequences.",
+  "Copy the escaped string into your JSON document."
+ ],
+ "faq": [
+  {
+   "q": "Which characters get escaped?",
+   "a": "Double quotes, backslashes, line breaks, tabs and other control characters are escaped following JSON rules. With the non-ASCII option on, every character above code 127 becomes a \\uXXXX sequence as well."
+  },
+  {
+   "q": "How are emoji handled?",
+   "a": "With non-ASCII escaping on, an emoji is written as a pair of \\u sequences (a surrogate pair), which is the correct JSON form. With it off, the emoji is kept as a normal character."
+  },
+  {
+   "q": "Should I keep the surrounding quotes?",
+   "a": "Keep them if you are pasting a complete JSON value. Turn them off when you are inserting the text into a string that already has quotes, for instance inside a larger template."
+  },
+  {
+   "q": "How do I reverse it?",
+   "a": "Use the JSON String Unescape tool. Paste the escaped value and it turns \\n, \\\" and \\uXXXX sequences back into readable plain text, line breaks included."
+  }
+ ],
+ "related": [
+  "json-unescape",
+  "json-format",
+  "string-escape",
+  "html-entities",
+  "url-encode",
+  "unicode-escape"
+ ],
+ "keywords": [
+  "json escape online",
+  "escape string for json",
+  "json string escaper",
+  "free json escape tool",
+  "escape quotes in json",
+  "json stringify online"
+ ]
+}

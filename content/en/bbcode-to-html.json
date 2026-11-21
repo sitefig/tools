@@ -1,0 +1,41 @@
+{
+ "id": "bbcode-to-html",
+ "seoTitle": "BBCode to HTML Converter with Safe Output and Preview",
+ "metaDescription": "Convert forum BBCode to HTML: bold, italic, links, images, quotes, code, lists, colour and size. Text is escaped and links checked.",
+ "intro": "Converts common BBCode tags to HTML, escaping text and keeping only safe link and image URLs.",
+ "why": "Old forums and CMS exports store posts as BBCode. Converting them with search and replace is risky, because the text can contain HTML and unsafe URLs.\n\nThis converter escapes all text, builds a tree so nested and unclosed tags are handled, keeps only http, https, mailto and ftp links and http or https images, and lists problems such as unclosed tags. Unknown tags stay as literal text. Output links get rel=\"nofollow ugc\".",
+ "howTo": [
+  "Paste the BBCode.",
+  "Review the preview and the notes comment.",
+  "Copy the HTML.",
+  "Fix unclosed tags in the source if the notes list any."
+ ],
+ "faq": [
+  {
+   "q": "Which tags work?",
+   "a": "b, i, u, s, url, email, img, quote, code, list with [*], color, size, center, left, right."
+  },
+  {
+   "q": "Are javascript: links removed?",
+   "a": "Yes. The link is dropped and the text kept."
+  },
+  {
+   "q": "Can it go the other way?",
+   "a": "Use the BBCode to Markdown tool, or Markdown to BBCode."
+  }
+ ],
+ "related": [
+  "bbcode-to-markdown",
+  "markdown-to-bbcode",
+  "html-tag-stripper",
+  "html-sanitizer",
+  "markdown-to-html",
+  "html-to-markdown"
+ ],
+ "keywords": [
+  "bbcode to html",
+  "convert bbcode",
+  "forum code to html",
+  "bbcode converter online"
+ ]
+}

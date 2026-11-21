@@ -1,0 +1,46 @@
+{
+ "id": "clothing-shoe-size-chart",
+ "seoTitle": "Free Clothing and Shoe Size Chart: US, UK, EU",
+ "metaDescription": "Look up approximate shoe size conversions between US, UK and EU with foot length, and men's clothing sizes by chest. Free, instant, in your browser.",
+ "intro": "Choose Shoes or Clothing (tops) to see a reference table. Shoe tables convert US, UK and EU sizes with foot length in centimetres; the clothing table lists chest measurements.",
+ "why": "Ordering clothes from an overseas shop usually means decoding a size chart. A US 9 is a UK 8.5 for men and a 42 in European sizes, but the same number means something else for women, and brands cut differently again. This page puts a compact set of common conversions in one place, with foot length in centimetres, which is the most reliable thing to measure. The clothing table gives chest ranges in centimetres and inches alongside XS to XXL and rough EU and US numbers. It is a generic reference table only, not a fit guarantee, so always check the shop's own chart if it has one. The page needs no uploads and works offline once loaded.",
+ "howTo": [
+  "Select the chart: Shoes or Clothing (tops).",
+  "Run the tool to show the table.",
+  "Find your size in one system and read across to the others."
+ ],
+ "faq": [
+  {
+   "q": "How accurate are the conversions?",
+   "a": "They are approximate. Brands, countries and styles differ by half a size or more. Use the table as a guide and prefer the retailer's own size chart or your measured foot length."
+  },
+  {
+   "q": "How should I measure my foot?",
+   "a": "Stand on paper, mark the heel and the longest toe, and measure the distance in centimetres. Measure in the evening, when feet are largest, and compare with the foot length column."
+  },
+  {
+   "q": "Is the clothing chart for men or women?",
+   "a": "It is an approximate chart for men's tops. Women's and children's sizing varies more between brands and is not covered."
+  },
+  {
+   "q": "Does the chart include half sizes?",
+   "a": "Only the sizes listed. In between, choose the nearer size or check the brand's chart. The table is deliberately short and readable."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "screen-size-ppi",
+  "aspect-ratio-calculator",
+  "bmi-calculator",
+  "ideal-weight",
+  "paint-coverage"
+ ],
+ "keywords": [
+  "shoe size conversion chart",
+  "us uk eu shoe size",
+  "free size chart",
+  "clothing size chart",
+  "foot length size chart",
+  "shoe size converter"
+ ]
+}

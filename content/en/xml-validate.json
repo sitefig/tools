@@ -1,0 +1,47 @@
+{
+ "id": "xml-validate",
+ "seoTitle": "Free XML Validator - Well-Formed Checker Online",
+ "metaDescription": "Free online XML validator. Check that XML is well-formed using your browser parser and see the root element, element count and attribute count.",
+ "intro": "Check whether XML is well-formed. If it is, you see the root element and counts of elements and attributes. If not, you get the parser message that explains what broke.",
+ "why": "A missing closing tag, an unescaped ampersand or two root elements are enough to make an XML consumer reject a file, often with an unhelpful error far from the cause. Checking well-formedness before you send or commit the file saves a round trip.\n\nThis tool hands your text to the XML parser built into your browser, the same one that handles web pages, and shows its message when something is wrong. For a valid document it adds a short summary: the root element and how many elements and attributes it contains. Note that well-formed is not the same as valid against a schema or DTD, which this tool does not check. Everything stays in your browser.",
+ "howTo": [
+  "Paste your XML into the input box.",
+  "Read the first line: Well-formed XML, or Not well-formed with the parser message.",
+  "For valid input, check the root element and counts shown below.",
+  "Fix any reported problem and paste again."
+ ],
+ "faq": [
+  {
+   "q": "Is this the same as schema validation?",
+   "a": "No. It checks well-formedness only: matching tags, quoting, escaping and a single root. It does not check against an XSD or DTD."
+  },
+  {
+   "q": "Why does the error message look different between browsers?",
+   "a": "The message comes from your browser's own XML parser, and each engine words errors differently. The line and column it mentions are usually enough to find the problem."
+  },
+  {
+   "q": "What are common causes of errors?",
+   "a": "Unescaped ampersands or less-than signs in text, unclosed or mismatched tags, attribute values without quotes, more than one root element and text before the XML declaration."
+  },
+  {
+   "q": "Does it work with large files?",
+   "a": "Yes, within your browser memory. A few megabytes are no problem; very large files may be slow to paste and parse."
+  }
+ ],
+ "related": [
+  "xml-format",
+  "xml-minify",
+  "xpath-tester",
+  "xml-to-json",
+  "json-validate",
+  "html-format"
+ ],
+ "keywords": [
+  "xml validator online",
+  "check xml well formed",
+  "xml syntax checker",
+  "free xml validator",
+  "validate xml",
+  "xml lint online"
+ ]
+}

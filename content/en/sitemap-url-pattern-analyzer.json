@@ -1,0 +1,44 @@
+{
+ "id": "sitemap-url-pattern-analyzer",
+ "seoTitle": "Sitemap URL Pattern and Structure Analyzer",
+ "metaDescription": "Group sitemap URLs by folder and template to see site structure, section sizes, parameter variants and deep paths. Free.",
+ "intro": "Summarises how the URLs in a sitemap are spread across folders and URL templates.",
+ "why": "A sitemap shows your site structure better than a menu does. Counting URLs per section reveals where the bulk is, and repeated templates reveal generated pages.\n\nThe template step replaces numbers, dates, long hex ids and long hyphenated last segments with placeholders. This is a heuristic and not a crawl, so read it as a hint.",
+ "howTo": [
+  "Paste the sitemap XML or URL list.",
+  "Set the number of folder levels.",
+  "Set how deep is too deep.",
+  "Read sections, templates and observations."
+ ],
+ "faq": [
+  {
+   "q": "What is a template?",
+   "a": "The path with numbers, dates and ids replaced, such as /blog/{slug}."
+  },
+  {
+   "q": "Why flag query strings?",
+   "a": "Sitemaps should list canonical URLs, and parameter variants are rarely canonical."
+  },
+  {
+   "q": "Does it fetch pages?",
+   "a": "No."
+  },
+  {
+   "q": "Does it handle indexes?",
+   "a": "It lists the child sitemap URLs as entries."
+  }
+ ],
+ "related": [
+  "sitemap-noncanonical-finder",
+  "url-parameter-analyzer",
+  "sitemap-validator",
+  "sitemap-lastmod-timeline",
+  "sitemap-to-csv"
+ ],
+ "keywords": [
+  "sitemap analyzer",
+  "sitemap structure",
+  "url pattern analysis",
+  "sitemap bloat"
+ ]
+}

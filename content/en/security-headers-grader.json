@@ -1,0 +1,41 @@
+{
+ "id": "security-headers-grader",
+ "seoTitle": "Security Headers Grader: A to F Score from Pasted Headers",
+ "metaDescription": "Paste response headers and get a graded score for HSTS, CSP, framing, nosniff, Referrer-Policy, Permissions-Policy and more. Free, local.",
+ "intro": "Scores a set of response headers out of 100 and explains every point lost.",
+ "why": "Security headers are cheap to add and easy to forget. A quick check tells you which ones are missing or weak on a page.\n\nPaste the response headers from dev tools or curl -I and the tool gives each header points: HSTS, Content-Security-Policy, nosniff, framing protection, Referrer-Policy, Permissions-Policy and the two cross-origin headers. Version leaks cost points. The scoring is a simple heuristic made for this site, not the scale of any other grader, and the CSP check is only a quick look.",
+ "howTo": [
+  "Run curl -I https://yoursite or copy headers from the Network tab.",
+  "Paste them into the box.",
+  "Read the grade and the points per header.",
+  "Add or fix headers and test again."
+ ],
+ "faq": [
+  {
+   "q": "Is this the same as other header graders?",
+   "a": "No. The weights are different. Compare results only within this tool."
+  },
+  {
+   "q": "Does it fetch my site?",
+   "a": "No. It reads the text you paste."
+  },
+  {
+   "q": "Why is CSP half marked?",
+   "a": "A policy with unsafe-inline, unsafe-eval or wildcard script sources gets half the points. Use the CSP Analyzer for details."
+  }
+ ],
+ "related": [
+  "http-headers-analyzer",
+  "csp-analyzer",
+  "security-headers-generator",
+  "hsts-header-generator",
+  "permissions-policy-generator",
+  "referrer-policy-explainer"
+ ],
+ "keywords": [
+  "security headers score",
+  "security header checker",
+  "hsts csp grade",
+  "http header audit"
+ ]
+}

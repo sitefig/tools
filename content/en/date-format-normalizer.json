@@ -1,0 +1,44 @@
+{
+ "id": "date-format-normalizer",
+ "seoTitle": "Date Format Normalizer: Mixed Dates in a CSV to ISO",
+ "metaDescription": "Rewrite a column of mixed dates (03/04/21, 4 March 2021) into one format. You choose day-first or month-first. Free, no upload.",
+ "intro": "Parses numeric dates and English month-name dates in a CSV column and rewrites them in one output format, such as YYYY-MM-DD.",
+ "why": "Day-month order is the usual trap: 03/04/21 is 3 April in Europe and March 4 in the US. The tool does not guess; you set the order for all-numeric dates, and the summary reports how many were ambiguous.\n\nDates that cannot be read, or that do not exist such as 31/04/2021, are left unchanged and listed, never silently turned into something else. Two-digit years use 69 to 99 for 19xx and 00 to 68 for 20xx. Only English month names are understood.",
+ "howTo": [
+  "Paste the CSV and name the date column.",
+  "Choose DMY or MDY for numeric dates.",
+  "Pick the output format.",
+  "Copy or download the result and check the unreadable list."
+ ],
+ "faq": [
+  {
+   "q": "What formats are read?",
+   "a": "YYYY-MM-DD, YYYYMMDD, D/M/Y and M/D/Y with / - or ., 4 March 2021, March 4 2021 and 4th Mar 21."
+  },
+  {
+   "q": "Times?",
+   "a": "A time after an ISO date is dropped."
+  },
+  {
+   "q": "Why was a date unchanged?",
+   "a": "It was not recognised or not a real calendar date."
+  },
+  {
+   "q": "Verified?",
+   "a": "Checked against Python dateutil on a sample; differences were limited to cases where dateutil guesses the order."
+  }
+ ],
+ "related": [
+  "date-formats",
+  "calendar-heatmap",
+  "timezone-converter",
+  "csv-column-profiler",
+  "table-find-replace",
+  "date-difference"
+ ],
+ "keywords": [
+  "normalize dates csv",
+  "convert date format column",
+  "mixed date formats to iso"
+ ]
+}

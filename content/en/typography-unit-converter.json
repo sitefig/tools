@@ -1,0 +1,39 @@
+{
+ "id": "typography-unit-converter",
+ "seoTitle": "Points, Picas, Pixels and Millimetres Converter",
+ "metaDescription": "Convert pt, pica, px, mm, cm, inch and twip at any DPI, for example 12 pt in millimetres. Free and offline.",
+ "intro": "Converts print and screen type sizes between points, picas, pixels, millimetres, centimetres, inches and twips at a DPI you set.",
+ "why": "Designers work in points, browsers in pixels and printers in millimetres. A 12 pt font is 4.23 mm and 16 px at 96 DPI.\n\nSet the DPI to match your target and read all units. It uses the 1/72 inch desktop publishing point.",
+ "howTo": [
+  "Enter the size.",
+  "Choose its unit.",
+  "Set the DPI for pixel results."
+ ],
+ "faq": [
+  {
+   "q": "How many px is 12 pt?",
+   "a": "16 px at 96 DPI (CSS)."
+  },
+  {
+   "q": "What is a pica?",
+   "a": "12 points, one sixth of an inch."
+  },
+  {
+   "q": "Which point size is used?",
+   "a": "The 1/72 inch point used by PostScript, PDF and CSS, not the older traditional point."
+  }
+ ],
+ "related": [
+  "css-unit-converter",
+  "px-to-rem-converter",
+  "paper-size-reference",
+  "unit-converter",
+  "readable-typography-previewer",
+  "image-resizer"
+ ],
+ "keywords": [
+  "pt to mm",
+  "points to pixels",
+  "pica to px"
+ ]
+}

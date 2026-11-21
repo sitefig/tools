@@ -1,0 +1,46 @@
+{
+ "id": "webcam-recorder",
+ "seoTitle": "Free Webcam Recorder - Record Video to WebM Online",
+ "metaDescription": "Record video from your webcam, with optional microphone audio, and save it as a WebM file. Free, the recording stays on your device.",
+ "intro": "Record your webcam, with or without microphone audio, and download the clip as a WebM file. Nothing is sent to a server.",
+ "why": "Sometimes you just need a short video: a message for a colleague, a camera test before a meeting, a quick demo of a physical product or a clip for a form that asks for a video upload. Installing a recording app or signing up for a video messaging service is more than the job deserves.\n\nThis recorder asks your browser for the camera and, if ticked, the microphone, shows a live preview while it records, and then gives you a playable clip and a download link. The video is built in memory on your device and is not uploaded. You will need to grant camera permission, and if another application is already using the camera, the browser may refuse to start. As with any in-memory recording, long sessions use a lot of RAM.",
+ "howTo": [
+  "Tick Include audio if you want the microphone recorded.",
+  "Press Start recording and allow camera access in the browser prompt.",
+  "Press Stop when you are done.",
+  "Check the preview, then press Download WebM."
+ ],
+ "faq": [
+  {
+   "q": "Does the video leave my device?",
+   "a": "No. The camera stream is recorded in your browser and kept in memory until you download it. Nothing is uploaded, and the camera is released when you stop recording."
+  },
+  {
+   "q": "Why can't it access my camera?",
+   "a": "Permission may be blocked in your browser settings, or another program may be using the camera. Close other apps that use the camera, check the site permission, and reload the page."
+  },
+  {
+   "q": "Which format and quality do I get?",
+   "a": "A WebM file using the best supported codec, preferably VP9 with Opus. The quality follows the browser's default for your camera; there are no resolution settings in this tool."
+  },
+  {
+   "q": "Can I use the clip in other software?",
+   "a": "Most modern players and editors open WebM. If one does not, convert it to MP4 with a desktop converter. This page does not convert formats."
+  }
+ ],
+ "related": [
+  "screen-recorder",
+  "video-to-gif",
+  "decibel-meter",
+  "audio-trimmer",
+  "image-compressor",
+  "signature-generator"
+ ],
+ "keywords": [
+  "webcam recorder online",
+  "record video from webcam",
+  "browser camera recorder",
+  "free webcam video recorder",
+  "record webcam webm"
+ ]
+}

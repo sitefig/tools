@@ -1,0 +1,46 @@
+{
+ "id": "browser-fingerprint",
+ "seoTitle": "Free Browser Fingerprint Test: What Trackers See",
+ "metaDescription": "See what websites can read about your browser without cookies: canvas, WebGL, audio, fonts, screen. Free, computed locally, nothing sent.",
+ "intro": "Shows the attributes a tracker can read from your browser without cookies, including user agent, screen, canvas, WebGL and audio hashes, fonts and hardware, with a rough uniqueness estimate.",
+ "why": "Cookie banners get the attention, but many trackers identify visitors without storing anything. They combine small details such as screen size, installed fonts, graphics card, time zone and the way your browser draws a hidden canvas into a signature that is often unique.\n\nThis page collects those same signals and shows them in a table with a rough entropy value for each. You can see which ones make your browser stand out and whether a privacy setting, extension or browser is actually changing them, for example when the canvas hash differs on every read. Everything is computed locally and nothing is sent, so it is safe to run on your own device. The uniqueness figure is only an upper-bound estimate.",
+ "howTo": [
+  "Open the page and wait a moment while the signals are collected.",
+  "Read the table of attributes with their entropy estimates and the uniqueness summary.",
+  "Change a browser setting, extension or browser, then press Re-run to compare.",
+  "Use Copy table if you want to share the results."
+ ],
+ "faq": [
+  {
+   "q": "Is the uniqueness number accurate?",
+   "a": "No, it is a rough upper bound. It adds up the entropy of attributes as if they were independent, but real attributes correlate. Use it to compare settings, not as a measured value."
+  },
+  {
+   "q": "Why does the canvas hash change every time?",
+   "a": "Some privacy browsers and extensions add random noise to canvas reads so each read differs. The tool detects this and says so, which usually means that protection is working."
+  },
+  {
+   "q": "Does this page send my fingerprint anywhere?",
+   "a": "No. All values are computed in your browser and shown only on this page. Nothing is uploaded, stored or compared with a database."
+  },
+  {
+   "q": "How do I reduce my fingerprint?",
+   "a": "Use a browser with fingerprinting protection such as Firefox with resistFingerprinting, Brave or Tor Browser, keep the window size at default and avoid unusual fonts and extensions."
+  }
+ ],
+ "related": [
+  "browser-info",
+  "user-agent-parser",
+  "tracker-detector",
+  "cookie-flag-analyzer",
+  "har-analyzer",
+  "screen-info"
+ ],
+ "keywords": [
+  "browser fingerprint test",
+  "canvas fingerprint check",
+  "what does my browser reveal",
+  "am i unique browser",
+  "webgl audio fingerprint"
+ ]
+}

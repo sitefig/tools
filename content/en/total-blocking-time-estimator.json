@@ -1,0 +1,44 @@
+{
+ "id": "total-blocking-time-estimator",
+ "seoTitle": "Total Blocking Time Estimator from JavaScript Bundle Sizes",
+ "metaDescription": "Enter script sizes and a CPU slowdown to model long-task time and how splitting work cuts Total Blocking Time. An editable model.",
+ "intro": "Models Total Blocking Time from script sizes, a CPU slowdown and task splitting.",
+ "why": "TBT depends on long tasks. Bundle size is a rough proxy that helps you compare options.\n\nEach script is treated as one or more tasks that take size times a ms-per-KB value times a CPU slowdown. The part of each task over 50 ms counts as blocking. The default ms per KB is an assumption you should calibrate with one real trace. Use the tool to see how splitting or removing a script changes the total, then verify in Lighthouse.",
+ "howTo": [
+  "List scripts with their compressed size in KB.",
+  "Choose the device slowdown.",
+  "Enter your own ms per KB if you have a trace.",
+  "Try more tasks per script to see the effect."
+ ],
+ "faq": [
+  {
+   "q": "Is the result my real TBT?",
+   "a": "No. It is a model. Real cost depends on the code and the device."
+  },
+  {
+   "q": "Where do 4x and 6x come from?",
+   "a": "They are the DevTools mid-tier and low-tier mobile CPU throttling presets; Lighthouse simulates 4x."
+  },
+  {
+   "q": "How do I calibrate ms per KB?",
+   "a": "Divide a bundle task time in the Performance panel by its compressed size."
+  },
+  {
+   "q": "Is data sent?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "core-web-vitals-grader",
+  "third-party-script-cost",
+  "lighthouse-report-viewer",
+  "js-minify",
+  "compression-size-estimator",
+  "page-weight-download-time"
+ ],
+ "keywords": [
+  "total blocking time estimator",
+  "tbt calculator",
+  "javascript cost estimator"
+ ]
+}

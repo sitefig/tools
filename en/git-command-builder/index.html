@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Git Command Builder and Cheat Sheet Online | Free Tools</title>
+<meta name="description" content="Pick a Git task and fill in a few parameters to get the exact command, an explanation and a warning for destructive operations. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/git-command-builder/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/git-command-builder/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/git-command-builder/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Git Command Builder and Cheat Sheet Online | Free Tools">
+<meta property="og:description" content="Pick a Git task and fill in a few parameters to get the exact command, an explanation and a warning for destructive operations. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/git-command-builder/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Git Command Builder and Cheat Sheet Online | Free Tools">
+<meta name="twitter:description" content="Pick a Git task and fill in a few parameters to get the exact command, an explanation and a warning for destructive operations. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Git Command Builder & Cheat Sheet","url":"https://tools.sitefig.net/en/git-command-builder/","description":"Pick a Git task and fill in a few parameters to get the exact command, an explanation and a warning for destructive operations. Free, in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose the task from the list, for example \"Squash last N commits into one\".","Fill in the parameters the task asks for, such as the number of commits or a branch name.","Read the command and its explanation, then copy it into your terminal."],"keywords":"git command builder, git cheat sheet online, git squash last commits command, free git command generator, git undo commit command","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"Git Command Builder & Cheat Sheet","item":"https://tools.sitefig.net/en/git-command-builder/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does the tool run Git commands?","acceptedAnswer":{"@type":"Answer","text":"No. It only generates text. Nothing touches your repository, and you decide when and where to run the command."}},{"@type":"Question","name":"Which tasks are included?","acceptedAnswer":{"@type":"Answer","text":"Undoing and amending commits, branches, stash, interactive rebase, squash, cherry-pick, revert, safe force push, shallow and sparse clones, bisect, history searches, reflog recovery, clean, restore and tags."}},{"@type":"Question","name":"Why does it suggest force-with-lease?","acceptedAnswer":{"@type":"Answer","text":"git push --force-with-lease refuses to overwrite remote commits you have not seen, which is safer than a plain force push when a colleague may have pushed."}},{"@type":"Question","name":"What if I leave a parameter empty?","acceptedAnswer":{"@type":"Answer","text":"The command contains a readable placeholder, such as a commit hash in angle brackets or path/to/file, so it is obvious what is missing. Replace the placeholder before you run the command."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">Git Command Builder &amp; Cheat Sheet</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Git Command Builder &amp; Cheat Sheet</h1>
+<p class="lede">Offers a list of common Git tasks such as undo, squash, rebase, cherry-pick, safe force push, bisect and sparse clone, and builds the exact command with a short explanation and a warning for risky operations.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="git-command-builder" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Git has a command for everything and a memory for nothing: is it reset --soft or --mixed, how do you force-push without destroying a colleague's work, what was the flag for a sparse clone? Searching the answer again each time breaks your flow. This tool works as a cheat sheet that fills in the blanks. Choose the task, type up to three parameters such as a branch name, commit hash or number of commits, and get the command with a one-line explanation. Operations that rewrite history or throw work away carry a warning. It does not run anything or touch your repository, so you copy the command into your own terminal when you are ready. It all runs in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose the task from the list, for example &quot;Squash last N commits into one&quot;.</li><li>Fill in the parameters the task asks for, such as the number of commits or a branch name.</li><li>Read the command and its explanation, then copy it into your terminal.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does the tool run Git commands?</summary><p>No. It only generates text. Nothing touches your repository, and you decide when and where to run the command.</p></details>
+<details><summary>Which tasks are included?</summary><p>Undoing and amending commits, branches, stash, interactive rebase, squash, cherry-pick, revert, safe force push, shallow and sparse clones, bisect, history searches, reflog recovery, clean, restore and tags.</p></details>
+<details><summary>Why does it suggest force-with-lease?</summary><p>git push --force-with-lease refuses to overwrite remote commits you have not seen, which is safer than a plain force push when a colleague may have pushed.</p></details>
+<details><summary>What if I leave a parameter empty?</summary><p>The command contains a readable placeholder, such as a commit hash in angle brackets or path/to/file, so it is obvious what is missing. Replace the placeholder before you run the command.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/conventional-commit-generator/"><span class="link-card__title">Conventional Commit Generator</span><span class="link-card__desc">Build a Conventional Commits message with scope, body, breaking change and footers.</span></a></li><li><a class="link-card" href="/en/gitignore-generator/"><span class="link-card__title">.gitignore Generator</span><span class="link-card__desc">Combine templates by name: node, python, java, go, rust, dotnet, ruby, php, swift, unity, macos, windows, linux, jetbrains, vscode, terraform.</span></a></li><li><a class="link-card" href="/en/changelog-generator/"><span class="link-card__title">Changelog Generator (from git log)</span><span class="link-card__desc">Paste `git log --pretty=format:&quot;%h %s&quot;` output and get a CHANGELOG.md section grouped by Conventional Commit type (feat, fix, perf...), with scopes, breaking changes (! or BREAKING CHANGE) and optional commit links. Commits that are not conventional go under &quot;Other Changes&quot;.</span></a></li><li><a class="link-card" href="/en/git-conflict-marker-cleaner/"><span class="link-card__title">Git Conflict Marker Cleaner</span><span class="link-card__desc">Resolve every &lt;&lt;&lt;&lt;&lt;&lt;&lt; / ======= / &gt;&gt;&gt;&gt;&gt;&gt;&gt; block in pasted text by keeping ours, theirs, both, or the diff3 base, or just list the conflicts. Understands diff3 (|||||||) style.</span></a></li><li><a class="link-card" href="/en/gitignore-tester/"><span class="link-card__title">.gitignore Pattern Tester</span><span class="link-card__desc">Test which paths a .gitignore ignores and which line decides it: supports comments, negation (!), directory-only patterns (trailing /), anchored patterns, *, ?, [a-z] ranges and ** wildcards, last-match-wins, and the rule that a file inside an ignored directory cannot be re-included. Single .gitignore file semantics (no nested files, no global excludes). Paths ending in / are treated as directories.</span></a></li><li><a class="link-card" href="/en/github-issue-pr-template-generator/"><span class="link-card__title">GitHub Issue &amp; PR Template Generator</span><span class="link-card__desc">Generate .github issue forms (YAML), classic Markdown issue templates, a pull request template, ISSUE_TEMPLATE/config.yml and a SECURITY.md stub.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

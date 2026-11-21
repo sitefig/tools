@@ -1,0 +1,45 @@
+{
+ "id": "pdf-table-extractor",
+ "seoTitle": "PDF Table Extractor: Export Tables to CSV in Your Browser",
+ "metaDescription": "Find tables in the text layer of a PDF and export them as CSV files. Row and column detection from text positions, no upload.",
+ "intro": "Looks at where text sits on each page, finds blocks of rows with several cells, works out the columns from the gaps between them and writes each table as a CSV file.",
+ "why": "Copying a table out of a PDF usually pastes one long column. The PDF has no real table object, only words placed at coordinates, so a tool has to rebuild the structure. This one treats a line with two or more widely separated cells as a table row, joins consecutive rows into a table and takes the empty vertical bands as column boundaries.\n\nIt is a heuristic and the page says so. It works well on invoices, statements and data tables with clear spacing. It ignores ruling lines, turns wrapped cells into extra rows and can merge columns under a heading that spans them. Always check the output. Scanned tables need OCR first.",
+ "howTo": [
+  "Choose a PDF.",
+  "Optionally set pages, the cell gap and the smallest table size.",
+  "Press Run to see a preview of each table.",
+  "Download the CSV files."
+ ],
+ "faq": [
+  {
+   "q": "No table was found. Why?",
+   "a": "The text may be a scan, or the columns may be too close together. Lower the \"gap that separates two cells\" value, for example to 0.6."
+  },
+  {
+   "q": "Cells are split in the wrong places.",
+   "a": "Raise the cell gap so words in one cell stay together, or lower it to separate close columns."
+  },
+  {
+   "q": "Does it read tables with borders?",
+   "a": "It uses only text positions, so borders do not help or hurt. Cells that wrap onto several lines become separate rows."
+  },
+  {
+   "q": "Can I open the CSV in a spreadsheet?",
+   "a": "Yes. Cells with commas or quotes are escaped as standard CSV."
+  }
+ ],
+ "related": [
+  "pdf-text-extractor",
+  "pdf-ocr-searchable",
+  "pdf-to-image",
+  "pdf-info",
+  "pdf-split",
+  "pdf-extract-pages"
+ ],
+ "keywords": [
+  "pdf table to csv",
+  "extract table from pdf",
+  "pdf to excel table offline",
+  "pdf table extractor"
+ ]
+}

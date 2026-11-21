@@ -1,0 +1,43 @@
+{
+ "id": "system-prompt-xml-builder",
+ "seoTitle": "Free System Prompt XML Builder for LLMs",
+ "metaDescription": "Turn a simple outline of role, context, instructions and examples into an XML-tagged system prompt. Free and runs in your browser.",
+ "intro": "Write your prompt as sections under simple headers and get a clean XML-tagged system prompt, with examples grouped together, optional step-by-step thinking text and a rough token estimate.",
+ "why": "Long prompts turn into a wall of text where the role, the rules and the sample outputs blur together, and the model sometimes treats an example as an instruction. Wrapping each part in its own tag is a simple fix that Anthropic recommends for Claude, and it helps other models too.\n\nDoing the wrapping by hand means typing matching open and close tags and keeping the names consistent across prompts. This builder takes a plain outline, makes the tag names uniform and groups repeated examples. It runs in your browser, which matters when the prompt contains internal policies or customer wording you would rather not paste into an unknown site.",
+ "howTo": [
+  "Write each part of the prompt under a header line such as ## role or ## instructions.",
+  "Repeat ## example for each sample, and add ## output_format or ## documents if you need them.",
+  "Tick the options to add thinking instructions, put documents first or indent the contents.",
+  "Copy the XML prompt and check the approximate token count in the final comment."
+ ],
+ "faq": [
+  {
+   "q": "Are the tag names fixed?",
+   "a": "No. Any header you write becomes a tag, lowercased with hyphens turned into underscores. The tool only treats a few names specially: example for grouping, and input, documents or context for the move-first option."
+  },
+  {
+   "q": "How accurate is the token count?",
+   "a": "It divides the character count by four, which is a rough rule of thumb for English. Use a real tokenizer tool when you need a figure for a specific model."
+  },
+  {
+   "q": "Does it check that my prompt is any good?",
+   "a": "No. It only structures the text you give it. A well-tagged prompt can still be vague, so test it against real inputs and edit the wording."
+  }
+ ],
+ "related": [
+  "system-prompt-formatter",
+  "prompt-linter",
+  "prompt-format-converter",
+  "system-prompt-budgeter",
+  "gpt-token-counter",
+  "llm-few-shot-prompt-formatter"
+ ],
+ "keywords": [
+  "system prompt xml builder",
+  "claude xml tags prompt",
+  "xml prompt generator",
+  "structure system prompt",
+  "prompt xml formatter",
+  "free prompt builder online"
+ ]
+}

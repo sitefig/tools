@@ -1,0 +1,41 @@
+{
+ "id": "us-privacy-string-decoder",
+ "seoTitle": "US Privacy String (CCPA usprivacy) Decoder",
+ "metaDescription": "Decode a 4-character CCPA US Privacy string like 1YNN into notice, opt-out and LSPA flags. Free and local.",
+ "intro": "Explains each character of a legacy CCPA US Privacy string.",
+ "why": "The US Privacy string is four characters, such as 1YNN: version, whether notice and opt-out choice were given, whether the user opted out of sale, and whether the transaction is covered by the IAB Limited Service Provider Agreement.\n\nThis tool spells out each position. IAB Tech Lab states that the signal was deprecated on 31 January 2024 in favour of the Global Privacy Platform, but you still meet the string in old tags, cookies and logs.",
+ "howTo": [
+  "Copy the usprivacy value from a cookie or ad request.",
+  "Paste it into the box.",
+  "Read what each position says.",
+  "Use the GPP decoder if your site now uses GPP."
+ ],
+ "faq": [
+  {
+   "q": "What does a dash mean?",
+   "a": "Unknown or not applicable. 1--- means the CCPA does not apply."
+  },
+  {
+   "q": "Is the string still used?",
+   "a": "It was deprecated in January 2024 but still appears in older setups."
+  },
+  {
+   "q": "Can a dash appear anywhere?",
+   "a": "In position 3 only when the CCPA does not apply."
+  }
+ ],
+ "related": [
+  "gpp-string-decoder",
+  "tcf-string-decoder",
+  "gpc-signal-tester",
+  "privacy-law-applicability-checker",
+  "cookie-classifier",
+  "privacy-policy-generator"
+ ],
+ "keywords": [
+  "usprivacy string",
+  "ccpa opt out string",
+  "1YNN",
+  "us privacy decoder"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "ens-namehash",
+ "seoTitle": "Free ENS Namehash and Labelhash Calculator",
+ "metaDescription": "Compute the EIP-137 namehash and every labelhash step for ENS names, one per line. Free calculator that runs in your browser.",
+ "intro": "Paste ENS names, one per line. The tool computes the EIP-137 namehash for each and lists the labelhash and node value at every step.",
+ "why": "ENS stores names on-chain as 32-byte hashes, not as text. To read a record from the registry or resolver contract directly, or to check what your front end sends, you need the namehash of the name. The algorithm walks the labels from right to left, hashing each label and combining it with the parent node. It is simple enough to get wrong, and the intermediate values are what you need when debugging. This tool shows every step for each name, including the empty root, so you can compare against a library or a block explorer. Normalisation here is lowercase plus Unicode NFC only, not the full ENSIP-15 rules, so names with emoji or confusable characters may differ from what the official tools produce.",
+ "howTo": [
+  "Paste one ENS name per line, for example vitalik.eth.",
+  "Run the tool.",
+  "Read the namehash and the labelhash chain for each name."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between namehash and labelhash?",
+   "a": "A labelhash is the Keccak-256 of one label, such as 'vitalik'. The namehash combines labelhashes from the top-level label down, giving a single identifier for the whole name."
+  },
+  {
+   "q": "How are names normalised?",
+   "a": "They are lowercased and converted to Unicode NFC. The full ENSIP-15 normalisation, which also rejects confusable and disallowed characters, is not implemented, so treat unusual names with care."
+  },
+  {
+   "q": "What is the namehash of an empty name?",
+   "a": "32 zero bytes. An empty input is shown as the root node. An empty label inside a name, such as a double dot, is rejected."
+  },
+  {
+   "q": "Can it resolve a name to an address?",
+   "a": "No. It only calculates hashes locally. Resolving needs a connection to an Ethereum node, which this tool does not make."
+  }
+ ],
+ "related": [
+  "ethereum-keccak256-hasher",
+  "eip55-checksum-address",
+  "punycode",
+  "evm-create-address",
+  "abi-encoder-decoder",
+  "dns-record-generator"
+ ],
+ "keywords": [
+  "ens namehash",
+  "ens labelhash calculator",
+  "free ens namehash tool",
+  "eip137 namehash",
+  "ethereum name service hash",
+  "calculate namehash online"
+ ]
+}

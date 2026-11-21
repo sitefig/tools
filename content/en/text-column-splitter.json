@@ -1,0 +1,45 @@
+{
+ "id": "text-column-splitter",
+ "seoTitle": "Free Text Column Splitter: Split by Delimiter",
+ "metaDescription": "Split each line into columns by a delimiter or runs of whitespace, pick the columns you need and output TSV, CSV, JSON or a padded table.",
+ "intro": "Split each line of text by whitespace, comma, tab, semicolon, pipe, colon or your own delimiter, keep chosen columns and output TSV, CSV, JSON arrays or an aligned table.",
+ "why": "Command output, logs and copied tables are full of columns that line up for the eye but not for tools. Pulling out the third and fifth field normally needs awk or cut, and quoting rules make CSV exports awkward to get right by hand.\n\nPaste the text and pick how it is separated. Whitespace mode treats any run of spaces or tabs as one separator, which suits aligned command output. Choose the columns to keep, by number or range such as 1,3 or 2-4, and the output format. The padded table is easy to read, TSV pastes into a spreadsheet, CSV quotes values with commas and JSON arrays suit scripts. The split is simple: quoted fields containing the delimiter are not recognised.",
+ "howTo": [
+  "Paste your lines of text.",
+  "Choose the delimiter, or enter a custom one, and the columns to keep.",
+  "Choose the output format and copy the result."
+ ],
+ "faq": [
+  {
+   "q": "How do I choose columns?",
+   "a": "Enter numbers starting from 1, separated by commas, and ranges with a hyphen, for example 1,3,5-7. Leave the box empty to keep all columns. Missing columns come out empty."
+  },
+  {
+   "q": "Does it understand quoted CSV fields?",
+   "a": "No. It splits on every delimiter, even inside quotes. For real CSV with quoted commas, use a CSV tool that follows the quoting rules."
+  },
+  {
+   "q": "What does whitespace mode do?",
+   "a": "Any run of spaces or tabs counts as one separator, and leading and trailing spaces are ignored. It works well for aligned output from commands such as ls or ps."
+  },
+  {
+   "q": "How is the CSV output quoted?",
+   "a": "A value is wrapped in double quotes when it contains a comma, a quote or a line break, and inner quotes are doubled."
+  }
+ ],
+ "related": [
+  "csv-column-extractor",
+  "csv-to-json",
+  "list-converter",
+  "text-prefix-suffix-appender",
+  "markdown-table-generator",
+  "ascii-table-generator"
+ ],
+ "keywords": [
+  "text column splitter",
+  "split text into columns online",
+  "extract column from text",
+  "free awk alternative online",
+  "whitespace to csv converter"
+ ]
+}

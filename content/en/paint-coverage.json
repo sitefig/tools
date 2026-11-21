@@ -1,0 +1,46 @@
+{
+ "id": "paint-coverage",
+ "seoTitle": "Free Paint Calculator: Litres Needed for a Room",
+ "metaDescription": "Estimate litres of paint for a room's walls from its size, doors and windows, number of coats and coverage per litre. Free, runs in your browser.",
+ "intro": "Enter room length, width and wall height, the area of doors and windows, number of coats and the paint's coverage. The tool gives the litres needed and an amount to buy.",
+ "why": "Standing in a shop deciding between a 2.5 litre and a 5 litre tin is a classic DIY moment. Buy too little and you risk a colour mismatch from a second batch; buy too much and you are storing half-used tins. The sum is the perimeter times the wall height, minus doors and windows, multiplied by the coats and divided by the coverage printed on the tin. This calculator handles that, rounds the amount to the nearest half litre for buying, and also gives the extra litres a ceiling would take. Real coverage varies with the surface, so porous plaster or a dark-to-light change needs more than the label suggests. Calculations are done in your browser.",
+ "howTo": [
+  "Enter the room's length, width and wall height in metres.",
+  "Enter the area of doors and windows, the number of coats and the coverage in square metres per litre.",
+  "Read the wall area, the litres needed and the optional ceiling figure."
+ ],
+ "faq": [
+  {
+   "q": "Where do I find the coverage figure?",
+   "a": "On the tin, usually written as square metres per litre. Typical emulsion covers around 10 to 12 m² per litre per coat on a smooth, sealed surface."
+  },
+  {
+   "q": "Is the ceiling included?",
+   "a": "Not in the main figure. The tool lists the paint a single coat on the ceiling would take as a separate line, so add it only if you plan to paint it."
+  },
+  {
+   "q": "Why buy more than the calculation says?",
+   "a": "Rough surfaces absorb more paint, a dark base needs extra coats and tins are sold in fixed sizes. The tool suggests rounding up to the next half litre."
+  },
+  {
+   "q": "Does it cover skirting boards or woodwork?",
+   "a": "No. It handles wall area only. Woodwork needs a different paint and is usually a small quantity, so estimate it separately."
+  }
+ ],
+ "related": [
+  "tile-calculator",
+  "flooring-calculator",
+  "brick-calculator",
+  "concrete-calculator",
+  "unit-converter",
+  "roof-pitch"
+ ],
+ "keywords": [
+  "paint calculator",
+  "free paint calculator",
+  "how much paint do i need",
+  "room paint estimator",
+  "paint coverage calculator",
+  "litres of paint for a room"
+ ]
+}

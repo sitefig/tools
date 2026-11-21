@@ -1,0 +1,38 @@
+{
+ "id": "nmap-output-analyzer",
+ "seoTitle": "Nmap Output Analyzer: Open Ports, Services and Risk Notes",
+ "metaDescription": "Paste nmap normal or grepable output for a table of open ports per host, risky exposures such as RDP, SMB, Redis or Docker, and outdated versions.",
+ "intro": "Make nmap results readable: open ports per host, risky services highlighted, old software versions noted.",
+ "why": "Nmap output is accurate but long. This analyser reads normal (-oN) and grepable (-oG) formats, builds a table of open ports with service and version per host, lists other states, and adds notes from a built-in list of risky ports (telnet, SMB, RDP, VNC, databases, Redis, Elasticsearch, Docker API, memcached) and a few outdated-version patterns in banners.\n\nThe notes are generic hints by port number and banner text. They are not vulnerability findings: confirm each service, patch level and exposure. Only scan systems you own or are authorised to test.",
+ "howTo": [
+  "Run nmap with -oN or -oG and copy the file contents.",
+  "Paste the output.",
+  "Review each host table and the notes underneath."
+ ],
+ "faq": [
+  {
+   "q": "Does it scan?",
+   "a": "No. A web page cannot send raw packets. It only reads results you already have."
+  },
+  {
+   "q": "Are the risk notes a vulnerability scan?",
+   "a": "No. They flag services that are commonly exposed by mistake and software that is old by version number."
+  },
+  {
+   "q": "Can it read XML?",
+   "a": "Not yet. Use -oN or -oG, or convert with xsltproc."
+  }
+ ],
+ "related": [
+  "port-reference",
+  "cidr-contains",
+  "ip-subnet-calculator",
+  "har-analyzer",
+  "ip-address-offline-lookup"
+ ],
+ "keywords": [
+  "nmap output parser",
+  "open ports report",
+  "nmap grepable viewer"
+ ]
+}

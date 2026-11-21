@@ -1,0 +1,46 @@
+{
+ "id": "image-redaction",
+ "seoTitle": "Free Image Redaction Tool: Blur or Black Out",
+ "metaDescription": "Draw boxes over names, faces or numbers in an image and fill them black or pixelate. Free, runs in your browser, no upload.",
+ "intro": "Load an image, drag boxes over anything sensitive, fill them with solid black or pixelation, and export a PNG or JPEG. Metadata is dropped on export.",
+ "why": "Screenshots leak things quietly: an email address in a tab, an API key in a terminal, a licence plate behind a car, a name on a letter. Sending a support ticket or a bug report usually means hiding a few details first, and opening a heavy editor for a single black rectangle is overkill.\n\nThis tool is a small canvas editor. You mark areas with the mouse or a finger, choose black boxes or pixelation, undo or clear, and export. The result is a flattened image, so the hidden content is not kept in a layer. It runs locally, so the unredacted original never leaves your device while you work.",
+ "howTo": [
+  "Choose an image with the file picker.",
+  "Pick the fill, black box or pixelate, and set the pixel block size for pixelation.",
+  "Drag on the image to mark each area, using Undo or Clear to fix mistakes.",
+  "Export as PNG or JPEG and check the result before sharing."
+ ],
+ "faq": [
+  {
+   "q": "Is pixelation safe for passwords or faces?",
+   "a": "Not always. Pixelation with small blocks can sometimes be reversed or guessed. Use black boxes for passwords, ID numbers and faces, and keep pixelation for low-risk blurring."
+  },
+  {
+   "q": "Is the original content removed from the exported file?",
+   "a": "Yes. The export is drawn flat onto a canvas, so covered areas are replaced by black or blocks. The original file on your device is unchanged, so keep or delete it as you prefer."
+  },
+  {
+   "q": "Does the export keep EXIF or GPS data?",
+   "a": "No. Exported files are created from the canvas and contain no EXIF or GPS data. Use the metadata viewer on the result if you want to confirm."
+  },
+  {
+   "q": "Can I redact a PDF with this?",
+   "a": "Not directly. It works on images only. Convert the PDF pages to images first, redact them, then combine them back into a PDF."
+  }
+ ],
+ "related": [
+  "exif-remover",
+  "pdf-to-image",
+  "images-to-pdf",
+  "pii-redactor",
+  "image-cropper",
+  "image-watermark"
+ ],
+ "keywords": [
+  "redact image online",
+  "blur part of image",
+  "black out text in screenshot",
+  "pixelate image free",
+  "censor image browser"
+ ]
+}

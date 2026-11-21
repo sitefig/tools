@@ -1,0 +1,45 @@
+{
+ "id": "locale-negotiation-simulator",
+ "seoTitle": "Locale Negotiation Simulator: Which Language Version Wins",
+ "metaDescription": "Enter a visitor's Accept-Language and your available locales and see the match step by step, including fr-CA to fr fallback and default.",
+ "intro": "Simulates RFC 4647 lookup so you can see why a visitor gets a given language version.",
+ "why": "When a French-Canadian visitor reaches a site with only fr and en, which one do they get, and why? The simulator walks through each language range in preference order, dropping subtags from the right until it finds one of your locales, and falls back to your default. An option also allows matching a different region of the same language.\n\nCMSs and frameworks implement negotiation differently, so use this to understand the logic and then test your own stack.",
+ "howTo": [
+  "Paste the visitor's Accept-Language header.",
+  "List your locales; the first is the default.",
+  "Run and read the matching steps.",
+  "Tick the loose option to compare behaviours."
+ ],
+ "faq": [
+  {
+   "q": "Which algorithm is used?",
+   "a": "The Lookup scheme from RFC 4647 section 3.4."
+  },
+  {
+   "q": "What about q=0?",
+   "a": "Those ranges are skipped."
+  },
+  {
+   "q": "Does Google negotiate this way?",
+   "a": "Google does not vary its crawler; use hreflang and links."
+  },
+  {
+   "q": "Can I test many visitors?",
+   "a": "Run it once per header."
+  }
+ ],
+ "related": [
+  "accept-language-parser",
+  "language-suggestion-banner-generator",
+  "hreflang-x-default-advisor",
+  "hreflang-generator",
+  "international-url-structure-advisor",
+  "http-headers-analyzer"
+ ],
+ "keywords": [
+  "locale negotiation",
+  "language fallback fr-CA fr",
+  "content negotiation language",
+  "rfc 4647 lookup"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "x509-csr-decoder",
+ "seoTitle": "Free CSR Decoder: Read a PKCS#10 Request Online",
+ "metaDescription": "Decode a PEM certificate signing request to see the subject, public key size, signature algorithm, SANs and key usage. Free, in your browser.",
+ "intro": "Paste a PEM certificate signing request and read its subject, public key type and size, signature algorithm, requested SANs and key usage, plus its SHA-256 fingerprint.",
+ "why": "Before you send a CSR to a certificate authority, it pays to check what it actually asks for. A missing subject alternative name, a 1024-bit key or the wrong common name wastes a day when the certificate comes back unusable.\n\nThis decoder reads the PKCS#10 structure with a small built-in DER parser and lists the subject fields, the RSA bit length or EC curve, the signature algorithm and the requested extensions. It also computes a SHA-256 fingerprint of the request. The signature itself is not verified. The CSR contains only a public key and identity details, never the private key, but treat requests from unknown sources with care.",
+ "howTo": [
+  "Paste the PEM text, from BEGIN CERTIFICATE REQUEST to END CERTIFICATE REQUEST.",
+  "Read the subject, key, signature algorithm and extensions in the output.",
+  "Fix the request in your tooling if anything is wrong, then submit it to the CA."
+ ],
+ "faq": [
+  {
+   "q": "Does the CSR contain my private key?",
+   "a": "No. A CSR holds the public key, the requested names and a signature made with the private key. The private key stays where you generated it and must not be pasted anywhere."
+  },
+  {
+   "q": "Does it verify the signature?",
+   "a": "No. The output says so at the end. It decodes the structure only, so a damaged or forged signature would not be detected."
+  },
+  {
+   "q": "Which key types can it describe?",
+   "a": "RSA, with a bit length, and elliptic curve keys with the curve name when it is one of P-256, P-384 or P-521. Other algorithms are shown by their object identifier."
+  },
+  {
+   "q": "Where do I see the subject alternative names?",
+   "a": "In a line labelled Subject Alt Names, if the CSR carries the extension. Names appear as DNS, email, URI or IP entries."
+  }
+ ],
+ "related": [
+  "x509-viewer",
+  "x509-san-csr-builder",
+  "rsa-key-pair-generator",
+  "ssh-key-inspector",
+  "openpgp-inspector",
+  "ssl-tls-handshake-simulator"
+ ],
+ "keywords": [
+  "csr decoder",
+  "decode certificate signing request",
+  "pkcs10 csr viewer",
+  "free csr checker online",
+  "read csr subject and san"
+ ]
+}

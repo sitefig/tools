@@ -1,0 +1,41 @@
+{
+ "id": "story-plot-generator",
+ "seoTitle": "Story Plot Generator: Hero, Setting, Conflict and Twist",
+ "metaDescription": "Combine a random hero, setting, goal, opponent, twist and theme into a story premise. Free, runs in your browser.",
+ "intro": "Combine a random hero, setting, goal, opponent and twist into a short story premise. Press run again for a new one.",
+ "why": "A premise needs a person who wants something, a place and something in the way. Starting from a random set can break a stale idea.\n\nEach premise joins a hero with a trait, a setting, a goal, an opposing force, a twist and a theme from short lists. Make several, keep the ones that spark something and change the rest. Use a seed to repeat a list.",
+ "howTo": [
+  "Set how many premises you want.",
+  "Optionally enter a seed.",
+  "Press run for new combinations.",
+  "Keep one and rewrite it in your own words."
+ ],
+ "faq": [
+  {
+   "q": "Is the output a full plot?",
+   "a": "No. It is a premise. Structure and scenes are yours to write."
+  },
+  {
+   "q": "Can I repeat a result?",
+   "a": "Yes, with the same seed."
+  },
+  {
+   "q": "Does it use AI?",
+   "a": "No. It picks items from fixed lists with a random number generator."
+  }
+ ],
+ "related": [
+  "writing-prompt-generator",
+  "character-name-generator",
+  "random-text-generator",
+  "app-name-ideas",
+  "writing-goal-tracker",
+  "bingo-card-generator"
+ ],
+ "keywords": [
+  "story plot generator",
+  "story idea generator",
+  "plot generator",
+  "random story premise"
+ ]
+}

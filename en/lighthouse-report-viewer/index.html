@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lighthouse JSON Report Viewer: Read Scores and Failing Audits | Free Tools</title>
+<meta name="description" content="Open a Lighthouse report.json or PageSpeed Insights response as plain text: scores, lab metrics, savings and failing audits per category. Runs locally.">
+<link rel="canonical" href="https://tools.sitefig.net/en/lighthouse-report-viewer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/lighthouse-report-viewer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/lighthouse-report-viewer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Lighthouse JSON Report Viewer: Read Scores and Failing Audits | Free Tools">
+<meta property="og:description" content="Open a Lighthouse report.json or PageSpeed Insights response as plain text: scores, lab metrics, savings and failing audits per category. Runs locally.">
+<meta property="og:url" content="https://tools.sitefig.net/en/lighthouse-report-viewer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lighthouse JSON Report Viewer: Read Scores and Failing Audits | Free Tools">
+<meta name="twitter:description" content="Open a Lighthouse report.json or PageSpeed Insights response as plain text: scores, lab metrics, savings and failing audits per category. Runs locally.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Lighthouse JSON Report Viewer: Scores, Metrics and Failing Audits","url":"https://tools.sitefig.net/en/lighthouse-report-viewer/","description":"Open a Lighthouse report.json or PageSpeed Insights response as plain text: scores, lab metrics, savings and failing audits per category. Runs locally.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Run Lighthouse and save the JSON (the CLI flag --output=json, or Save as JSON in the report menu).","Paste the file contents into the box.","Pick one category or leave it on all.","Tick \"List passing audits too\" if you want the full list."],"keywords":"lighthouse json viewer, read lighthouse report, report.json lighthouse, pagespeed json","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Web Performance","item":"https://tools.sitefig.net/en/#web-performance"},{"@type":"ListItem","position":3,"name":"Lighthouse JSON Report Viewer: Scores, Metrics and Failing Audits","item":"https://tools.sitefig.net/en/lighthouse-report-viewer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Can I paste a PageSpeed Insights API response?","acceptedAnswer":{"@type":"Answer","text":"Yes. The report sits under lighthouseResult and the tool unwraps it."}},{"@type":"Question","name":"Why does my score differ from PageSpeed Insights?","acceptedAnswer":{"@type":"Answer","text":"Each run is a separate lab test with its own network and CPU variance, and PSI uses different hardware. Compare several runs."}},{"@type":"Question","name":"What are the score bands?","acceptedAnswer":{"@type":"Answer","text":"Lighthouse treats 90 and above as good, 50 to 89 as needs work, and below 50 as poor."}},{"@type":"Question","name":"Is the report sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. It is parsed in your browser."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#web-performance">Web Performance</a></li><li><span aria-current="page">Lighthouse JSON Report Viewer: Scores, Metrics and Failing Audits</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Lighthouse JSON Report Viewer: Scores, Metrics and Failing Audits</h1>
+<p class="lede">Reads a Lighthouse JSON report and lists category scores, lab metrics, opportunities with estimated savings and the audits that failed, grouped by category.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="lighthouse-report-viewer" data-module="new05"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A Lighthouse report.json is hard to read by eye. It holds hundreds of audits, and the HTML viewer needs the original tool or a hosted page.</p>
+<p>This page reads the file in your browser and keeps only what you act on: scores with bands, the weighted metrics, savings in milliseconds and bytes, and each failing audit with its item count. It also accepts a PageSpeed Insights API response, because that wraps the same report. Nothing is uploaded. The result is one lab run, so scores move between runs.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Run Lighthouse and save the JSON (the CLI flag --output=json, or Save as JSON in the report menu).</li><li>Paste the file contents into the box.</li><li>Pick one category or leave it on all.</li><li>Tick &quot;List passing audits too&quot; if you want the full list.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Can I paste a PageSpeed Insights API response?</summary><p>Yes. The report sits under lighthouseResult and the tool unwraps it.</p></details>
+<details><summary>Why does my score differ from PageSpeed Insights?</summary><p>Each run is a separate lab test with its own network and CPU variance, and PSI uses different hardware. Compare several runs.</p></details>
+<details><summary>What are the score bands?</summary><p>Lighthouse treats 90 and above as good, 50 to 89 as needs work, and below 50 as poor.</p></details>
+<details><summary>Is the report sent anywhere?</summary><p>No. It is parsed in your browser.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/lighthouse-report-diff/"><span class="link-card__title">Lighthouse Report Diff: Before and After Regressions</span><span class="link-card__desc">Compare two Lighthouse JSON reports: score changes per category, metric regressions and improvements, and audits that started or stopped failing.</span></a></li><li><a class="link-card" href="/en/core-web-vitals-grader/"><span class="link-card__title">Core Web Vitals &amp; Lighthouse Score Calculator</span><span class="link-card__desc">Enter LCP, INP, CLS (and optional FCP, TTFB, TBT, Speed Index): get Good / Needs improvement / Poor ratings and the Lighthouse performance score.</span></a></li><li><a class="link-card" href="/en/crux-response-analyzer/"><span class="link-card__title">CrUX and PageSpeed Insights Field Data Analyzer (Core Web Vitals p75)</span><span class="link-card__desc">Paste the JSON from the Chrome UX Report API (query or history) or PageSpeed Insights loadingExperience and get Core Web Vitals pass or fail, p75 vs thresholds, good/needs-improvement/poor shares and trend.</span></a></li><li><a class="link-card" href="/en/har-performance-analyzer/"><span class="link-card__title">HAR Performance Analyzer: Waterfall, Heaviest Requests and Third-Party Share</span><span class="link-card__desc">Paste a HAR file and get total weight by type, the largest and slowest requests, third-party share, uncompressed text and a text waterfall. Nothing is uploaded.</span></a></li><li><a class="link-card" href="/en/third-party-script-cost/"><span class="link-card__title">Third-Party Script Cost by Vendor (from a HAR or Lighthouse Report)</span><span class="link-card__desc">Group HAR requests by known third-party vendors such as analytics, ads, chat and tag managers, and see requests, bytes and time per vendor. Also reads the Lighthouse third-party summary.</span></a></li><li><a class="link-card" href="/en/render-blocking-resource-finder/"><span class="link-card__title">Render-Blocking Resource Finder for Scripts and Stylesheets</span><span class="link-card__desc">Paste your page HTML and list the scripts and stylesheets that block first paint: sync scripts in head, stylesheets without a media query, @import chains and blocking inline scripts, with a fix for each.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

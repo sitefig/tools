@@ -1,0 +1,45 @@
+{
+ "id": "color-swatch-matcher",
+ "seoTitle": "Color Swatch Matcher: Nearest Named Colors (CIEDE2000)",
+ "metaDescription": "Match any hex, RGB or HSL color to the closest of 949 everyday color names with swatches and CIEDE2000 distance. Free, offline, no Pantone claims.",
+ "intro": "Give it a color and it lists the closest names from the xkcd color survey, with a swatch and a perceptual distance for each, so you can find a plain-English name or a near neighbour.",
+ "why": "Matching a color to the nearest named swatch by RGB distance gives poor results because RGB is not how we see color. This tool converts to CIE Lab and ranks with CIEDE2000, the standard perceptual difference formula, and shows the distance so you can judge how close the match really is.\n\nThe names come from the xkcd color survey (CC0, 949 names). They are everyday names such as dusty teal or brick orange, not an industry standard. It is not a Pantone or RAL matcher: those palettes are proprietary and are not included. For CSS names use the color names lookup.",
+ "howTo": [
+  "Enter one color per line as #rrggbb, rgb(r, g, b), r g b or hsl(h, s%, l%).",
+  "Choose how many matches you want per color.",
+  "Compare the swatches and the distance: under 2 is hard to tell apart, under 5 is close.",
+  "Copy the names or hex values you need."
+ ],
+ "faq": [
+  {
+   "q": "Is this a Pantone matcher?",
+   "a": "No. Pantone and RAL colors are proprietary. This uses an open dataset of everyday color names."
+  },
+  {
+   "q": "What does the distance mean?",
+   "a": "It is CIEDE2000 delta E under sRGB and D65. About 1 is the smallest visible difference, 2 to 5 is a close match, above 10 is clearly different."
+  },
+  {
+   "q": "Why are some names odd?",
+   "a": "The names were chosen by survey participants, so some are informal. Use the hex value for anything that must be exact."
+  },
+  {
+   "q": "Is my color sent anywhere?",
+   "a": "No. The 949 colors are part of the page and everything runs in the browser."
+  }
+ ],
+ "related": [
+  "color-names-lookup",
+  "color-converter",
+  "palette-generator",
+  "color-picker",
+  "contrast-checker",
+  "css-color-formats"
+ ],
+ "keywords": [
+  "color name finder",
+  "nearest color name",
+  "ciede2000",
+  "swatch matcher"
+ ]
+}

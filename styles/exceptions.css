@@ -1,0 +1,5 @@
+/* Exceptions: state and variants via data attributes. */
+[data-state="error"] { color: var(--danger); }
+[data-state="busy"] { opacity: 0.7; }
+[hidden] { display: none !important; }
+[data-theme-toggle][hidden] { display: none; }

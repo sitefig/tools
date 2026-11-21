@@ -1,0 +1,46 @@
+{
+ "id": "eslint-prettier-config-generator",
+ "seoTitle": "Free ESLint and Prettier Config Generator",
+ "metaDescription": "Generate an eslint.config.js flat config and a .prettierrc from a few choices, with TypeScript support and the install command. Free, in your browser.",
+ "intro": "Pick TypeScript, environment and formatting preferences to get an ESLint flat config, a .prettierrc and the npm command to install the packages.",
+ "why": "ESLint moved to flat config files, and many tutorials online still show the old .eslintrc format, so new projects end up with settings that no longer work. Prettier is simpler, but its options have to match your team's habits, and the two tools need compatible setups.\n\nThis generator writes an eslint.config.js using the recommended rules, ignores for dist and node_modules, and globals for Node or the browser. If you tick TypeScript, it adds typescript-eslint. It then writes a .prettierrc with semicolons, quotes, print width, tab width and trailing commas as you choose, and prints the matching install line. The rule set is intentionally small, so grow it as your project needs. Everything is generated in the browser.",
+ "howTo": [
+  "Select which config you need: both, eslint or prettier.",
+  "Tick TypeScript if needed and pick the environment, node or browser.",
+  "Choose semicolons, quotes, print width, tab width and trailing commas.",
+  "Copy the files and run the install command shown at the bottom."
+ ],
+ "faq": [
+  {
+   "q": "What is a flat config?",
+   "a": "It is the newer ESLint configuration format: a single eslint.config.js file exporting an array of settings objects. It replaces the older .eslintrc files, and recent ESLint versions use it by default."
+  },
+  {
+   "q": "Does it set up the Prettier plugin for ESLint?",
+   "a": "No. The two configs are independent. Run Prettier for formatting and ESLint for code-quality rules. Adding a bridge such as eslint-config-prettier is a separate step if you see conflicts."
+  },
+  {
+   "q": "Which rules are enabled?",
+   "a": "The recommended ESLint set, the TypeScript recommended set if selected, plus no-unused-vars as a warning and eqeqeq as an error. Add or change rules inside the rules object."
+  },
+  {
+   "q": "What about React or Vue?",
+   "a": "Framework plugins are not included. Install the relevant ESLint plugin and add its config to the exported array after the generated entries."
+  }
+ ],
+ "related": [
+  "editorconfig-generator",
+  "tsconfig-generator",
+  "package-json-generator",
+  "pre-commit-config-generator",
+  "js-format",
+  "css-format"
+ ],
+ "keywords": [
+  "eslint config generator",
+  "prettier config generator",
+  "eslint flat config example",
+  "eslint.config.js generator",
+  "free prettierrc builder"
+ ]
+}

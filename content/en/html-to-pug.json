@@ -1,0 +1,41 @@
+{
+ "id": "html-to-pug",
+ "seoTitle": "HTML to Pug Converter: Markup to Indented Templates",
+ "metaDescription": "Convert HTML to Pug (Jade) with #id and .class shorthand, attribute lists, piped text, comments and dot blocks. Free, local.",
+ "intro": "Translates HTML into Pug syntax, keeping structure, attributes, comments and script and style blocks.",
+ "why": "Moving a static page into a Pug-based project by hand means rewriting every tag. The structure is mechanical, so a tool can do it.\n\nThe converter writes classes and ids in shorthand when they are simple names, keeps unusual class strings such as md:flex as attributes, writes script and style as dot blocks, and uses piped lines for text next to tags. I compiled the results with Pug and compared with the input: they matched apart from attribute order and quoting. Whitespace between inline elements can differ slightly, so look at the page after converting.",
+ "howTo": [
+  "Paste HTML.",
+  "Choose the indent.",
+  "Copy the Pug.",
+  "Compile it in your project and check the page."
+ ],
+ "faq": [
+  {
+   "q": "Does it handle inline tags in text?",
+   "a": "Yes, using piped text lines and child tags. Check spacing around them."
+  },
+  {
+   "q": "What about template variables?",
+   "a": "The input is plain HTML. # { and #[ in text are escaped so Pug does not treat them as interpolation."
+  },
+  {
+   "q": "Can it convert back?",
+   "a": "Compile with Pug itself; this tool only goes from HTML to Pug."
+  }
+ ],
+ "related": [
+  "html-format",
+  "html-to-jsx",
+  "html-to-markdown",
+  "html-minify",
+  "jsx-to-html",
+  "markdown-to-html"
+ ],
+ "keywords": [
+  "html to pug",
+  "html to jade converter",
+  "convert html to pug online",
+  "pug template converter"
+ ]
+}

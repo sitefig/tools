@@ -1,0 +1,39 @@
+{
+ "id": "dimensional-weight-calculator",
+ "seoTitle": "Dimensional Weight Calculator: Volumetric Weight With Divisors",
+ "metaDescription": "Calculate volumetric weight from box size and a carrier divisor and compare it with actual weight to see the billable weight.",
+ "intro": "Computes volumetric weight from length, width, height and a divisor, and shows which weight a carrier would bill.",
+ "why": "Carriers bill the greater of actual weight and volumetric weight, so a light, bulky box can cost as much as a heavy one. The formula is length times width times height divided by a divisor, and the divisor differs by carrier and service.\n\nThe divisors offered here, about 5000, 6000 and 7000 cm3 per kg, come from a public summary of carrier practice that is not dated per carrier. Confirm the one your carrier uses and how it rounds, then use Custom if it differs.",
+ "howTo": [
+  "Enter the box size and the actual weight.",
+  "Choose a divisor or enter your carrier's.",
+  "Read the volumetric weight and the billable weight."
+ ],
+ "faq": [
+  {
+   "q": "Which divisor does my carrier use?",
+   "a": "Ask your carrier or read its current rate guide. Values around 5000, 6000 and 7000 are common, but they change."
+  },
+  {
+   "q": "Do carriers round?",
+   "a": "Many round dimensions or weight up. This tool does not, so allow some margin."
+  },
+  {
+   "q": "Does it use inches and pounds?",
+   "a": "Yes. Pick the units and the tool converts."
+  }
+ ],
+ "related": [
+  "shipping-box-fit-calculator",
+  "free-shipping-threshold-calculator",
+  "return-rate-cost-calculator",
+  "reorder-point-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "dimensional weight calculator",
+  "volumetric weight",
+  "dim weight divisor"
+ ]
+}

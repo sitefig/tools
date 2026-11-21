@@ -1,0 +1,45 @@
+{
+ "id": "chord-finder-guitar-ukulele",
+ "seoTitle": "Guitar and Ukulele Chord Finder with Fingering Diagrams",
+ "metaDescription": "Type chord names like Am7 or F#m and get several playable fingering diagrams for guitar or ukulele, worked out from the chord notes.",
+ "intro": "Looks up the notes of a chord and searches the fretboard for playable fingerings, then draws them as chord diagrams.",
+ "why": "Chord charts in books show one shape per chord. Here you type any root and one of sixteen chord types and the tool finds several fingerings: it searches a four-fret window for shapes that contain every chord tone, start on the root (on guitar) and need at most four fingers, counting a barre as one.\n\nThe shapes are suggestions that are guaranteed to contain the right notes, which was checked for 1300 generated fingerings across all roots and types. They are not the only or the traditional shapes, and ranking by ease is a heuristic. Sound is not played on this page.",
+ "howTo": [
+  "Type chord names separated by commas, such as C, Am7, F#m.",
+  "Choose guitar or ukulele.",
+  "Read the diagrams: x is muted, a circle is an open string.",
+  "Read the fret numbers and notes in the text list."
+ ],
+ "faq": [
+  {
+   "q": "Which chord types work?",
+   "a": "Major, m, 7, maj7, m7, dim, dim7, m7b5, aug, sus2, sus4, 6, m6, 9, add9 and 5."
+  },
+  {
+   "q": "Why are some chords missing on ukulele?",
+   "a": "Four strings cannot hold every tone of a five-note chord or a power chord."
+  },
+  {
+   "q": "Are the shapes standard?",
+   "a": "They are correct but may differ from what a book shows."
+  },
+  {
+   "q": "Can I hear the chord?",
+   "a": "Not here. Try the virtual piano or an instrument tuner."
+  }
+ ],
+ "related": [
+  "virtual-piano-keyboard",
+  "instrument-tuner",
+  "ear-training-intervals-chords-scales",
+  "sight-reading-note-trainer",
+  "tone-generator",
+  "drum-machine"
+ ],
+ "keywords": [
+  "guitar chord finder",
+  "ukulele chord diagrams",
+  "chord fingering generator",
+  "chord chart maker"
+ ]
+}

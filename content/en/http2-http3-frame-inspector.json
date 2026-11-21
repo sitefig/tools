@@ -1,0 +1,43 @@
+{
+ "id": "http2-http3-frame-inspector",
+ "seoTitle": "Free HTTP/2 and HTTP/3 Frame Inspector",
+ "metaDescription": "Decode hex dumps of HTTP/2 frames with SETTINGS, HEADERS, DATA and GOAWAY, or HTTP/3 frames with varints. Free, runs in your browser.",
+ "intro": "Paste a hex dump of HTTP/2 frames, with or without the client preface, or HTTP/3 frames, and see each frame decoded: type, flags, stream and length, including SETTINGS, HEADERS, DATA and GOAWAY.",
+ "why": "HTTP/2 and HTTP/3 are binary, so when a proxy, a test client or a hand-built server misbehaves, you cannot read the traffic as text. A captured hex dump is accurate but impenetrable: you have to read nine-byte frame headers, track stream IDs and decode flags by eye, and HTTP/3 uses variable-length integers on top.\n\nThis inspector splits the dump into frames and explains each one. HPACK header blocks are shown with their fields where possible, but Huffman-coded strings are shown as hex and QPACK blocks are not decoded, so you still need a full tool for header contents. It is meant for learning and debugging protocol-level issues. The decoding runs in your browser and your capture is not uploaded.",
+ "howTo": [
+  "Choose HTTP/2 or HTTP/3.",
+  "Paste the hex dump of the frames, with or without spaces.",
+  "Read the decoded frames in order, with type, flags, stream ID and payload details.",
+  "Compare them with the expected behaviour in the RFC to find the unexpected frame or setting."
+ ],
+ "faq": [
+  {
+   "q": "Why are some header strings shown as hex?",
+   "a": "HPACK can compress strings with a Huffman code, and this tool shows those strings as hex instead of decoding them. QPACK blocks in HTTP/3 are not decoded either, so header content is limited."
+  },
+  {
+   "q": "Does it need the connection preface?",
+   "a": "For HTTP/2 the client preface is recognised if present, but you can also paste only the frames. The decoder reads the frame headers from the start of what you paste."
+  },
+  {
+   "q": "Can I analyse encrypted traffic with it?",
+   "a": "No. You need the decrypted frames, for example from a debug log or a capture decrypted with a key log file. Raw TLS records on the wire will not decode as frames."
+  }
+ ],
+ "related": [
+  "http-wire-format",
+  "http-headers-analyzer",
+  "ssl-tls-handshake-simulator",
+  "hex-dump-viewer",
+  "http-status-reference",
+  "http-methods-headers"
+ ],
+ "keywords": [
+  "http2 frame decoder",
+  "http3 frame inspector",
+  "decode http/2 hex dump",
+  "hpack frame analyzer",
+  "http2 settings frame decoder",
+  "free http2 debugging tool"
+ ]
+}

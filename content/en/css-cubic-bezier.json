@@ -1,0 +1,43 @@
+{
+ "id": "css-cubic-bezier",
+ "seoTitle": "Free CSS cubic-bezier Easing Generator",
+ "metaDescription": "Pick a preset or set control points to get cubic-bezier CSS for transitions, animations and Tailwind, with a curve and live preview. Free.",
+ "intro": "Choose an easing preset or enter control points and get a cubic-bezier value with ready CSS for transitions, animations, Tailwind and the Web Animations API, plus a curve drawing and a looping preview.",
+ "why": "The default ease and linear timings make an interface feel generic, and a custom curve is what gives a button press or a drawer slide character. Writing four numbers blind is hard, though, so people copy values from a list and hope.\n\nThis tool lets you start from the standard CSS keywords or the popular easings.net set, adjust the control points and watch the curve and a moving preview before you copy anything. It also produces a sampled linear() version for modern browsers, which can describe overshoot and bounce that a single bezier cannot. The x values must stay between 0 and 1, while the y values may go beyond to overshoot. Everything is calculated in your browser.",
+ "howTo": [
+  "Pick a preset, or choose custom and enter x1, y1, x2 and y2.",
+  "Set the duration in milliseconds for the preview.",
+  "Watch the curve and the looping animation, and adjust the points until the motion feels right.",
+  "Copy the CSS for transition, animation, Tailwind or the Web Animations API."
+ ],
+ "faq": [
+  {
+   "q": "Why must x be between 0 and 1?",
+   "a": "CSS requires the x coordinates of a cubic-bezier to stay in that range, because time cannot run backwards. The y values are free, so values below 0 or above 1 give anticipation and overshoot."
+  },
+  {
+   "q": "What is the linear() output for?",
+   "a": "The linear() easing function approximates a curve with many straight segments. Modern browsers support it, and it can represent springs and bounces. It is longer than cubic-bezier, so use it only when you need that."
+  },
+  {
+   "q": "Which preset is closest to a natural feel?",
+   "a": "Ease-out curves, such as easeOutCubic or easeOutBack, feel responsive for things appearing on screen, since they start fast and settle. Try a few in the preview with your real duration."
+  }
+ ],
+ "related": [
+  "css-animation-generator",
+  "css-loader-generator",
+  "css-filter-generator",
+  "clip-path-generator",
+  "css-clamp-calculator",
+  "tailwind-converter"
+ ],
+ "keywords": [
+  "cubic-bezier generator",
+  "css easing generator",
+  "css cubic bezier tool",
+  "css transition timing function",
+  "easings.net css",
+  "free css easing curve editor"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "text-shadow-generator",
+  "seoTitle": "Free CSS Text Shadow Generator: Glow and Drop Shadow",
+  "metaDescription": "Create CSS text-shadow code for drop shadows, glows and soft effects with a live preview. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Builds a CSS text-shadow declaration from offset, blur, colour and opacity, with optional extra glow layers. A live preview shows the effect on sample text.",
+  "why": "Text shadows can lift a heading off a photo, add a neon glow or give a button label a little depth. They are also easy to overdo, and legibility suffers when the blur is too heavy or the colour too strong.\n\nSet the horizontal and vertical offset, the blur, the colour and the opacity, and watch the sample heading change. The glow option stacks up to five additional zero-offset shadows with growing blur, which produces a soft neon halo without writing each layer yourself. The output is a single text-shadow line using rgba colours, ready to paste into your stylesheet. It runs in your browser.",
+  "howTo": [
+    "Set the X and Y offsets and the blur radius.",
+    "Choose a colour and an opacity percentage.",
+    "Raise Extra glow layers for a neon effect.",
+    "Copy the text-shadow line from the output."
+  ],
+  "faq": [
+    {
+      "q": "How do I make a glow rather than a drop shadow?",
+      "a": "Set both offsets to 0 and increase the extra glow layers. Each layer adds a shadow centred on the text with a larger blur, so the light appears to spread outward."
+    },
+    {
+      "q": "Will a shadow help readability on images?",
+      "a": "A subtle dark shadow can separate light text from a busy photo, but it is not a substitute for enough contrast. Check the text and its real background with a contrast checker."
+    },
+    {
+      "q": "Does text-shadow affect layout or performance?",
+      "a": "It does not change layout. Large blurs on lots of text can slow painting on weak devices, so use heavy glows sparingly and avoid animating them."
+    },
+    {
+      "q": "Can I add more than one colour?",
+      "a": "This tool uses one colour for all layers. For multi-coloured effects, copy the output and add further comma-separated shadows by hand."
+    }
+  ],
+  "related": [
+    "box-shadow-generator",
+    "css-filter-generator",
+    "fancy-text",
+    "neumorphism-generator",
+    "css-animation-generator",
+    "contrast-checker"
+  ],
+  "keywords": [
+    "text shadow generator",
+    "css text shadow glow",
+    "neon text css",
+    "css text-shadow online",
+    "free text shadow maker"
+  ]
+}

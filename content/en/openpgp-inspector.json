@@ -1,0 +1,46 @@
+{
+ "id": "openpgp-inspector",
+ "seoTitle": "Free OpenPGP Key and Signature Inspector Online",
+ "metaDescription": "Inspect an ASCII-armored PGP key, signature or message: check the CRC-24, list packets and compute fingerprints. Nothing is verified. Free, in your browser.",
+ "intro": "Paste an ASCII-armored PGP block, or hex of binary packets. The tool checks the CRC-24, lists the packets and shows algorithms, key sizes, user IDs, signature details and fingerprints.",
+ "why": "A PGP key block is a wall of base64, and the questions you have about it are practical: whose key is this, what algorithm does it use, when was it made, does it expire, and what is its fingerprint? Command-line tools such as gpg answer them but need installing and a keyring. This inspector parses the packets directly in your browser. It lists public keys, subkeys, user IDs, signatures and their subpackets, including key flags, creation and expiry times, and preferences, and computes v4 (SHA-1) and v6 (SHA-256) fingerprints and key IDs. It does not verify signatures, check trust or decrypt anything, and secret key blocks should never be pasted into a web page. Only public material is safe to inspect here.",
+ "howTo": [
+  "Paste the full armored block, including the BEGIN and END lines, or paste hex.",
+  "Run the tool.",
+  "Read the CRC check, the numbered packet list and the fingerprints."
+ ],
+ "faq": [
+  {
+   "q": "Does the tool verify signatures or trust?",
+   "a": "No. It only parses and describes the data. It does not check that a signature is valid, that a key is trusted or that a user ID belongs to a real person."
+  },
+  {
+   "q": "What does the CRC-24 check tell me?",
+   "a": "It tells you whether the armor was copied intact. A mismatch suggests a damaged paste, such as lost characters or changed line endings. It is not a security check."
+  },
+  {
+   "q": "Is it safe to paste a private key?",
+   "a": "No. Do not paste secret keys into any web page. Although the tool runs locally and reports only whether secret material is protected, public key blocks are the intended use."
+  },
+  {
+   "q": "Which fingerprints can it compute?",
+   "a": "Version 4 keys (SHA-1) and version 6 keys (SHA-256). Version 3 keys are flagged as obsolete and version 5 fingerprints are not computed."
+  }
+ ],
+ "related": [
+  "ssh-key-fingerprint",
+  "ssh-key-inspector",
+  "x509-viewer",
+  "hash-generator",
+  "base64-decode",
+  "hex-text"
+ ],
+ "keywords": [
+  "pgp key inspector",
+  "openpgp packet viewer",
+  "free pgp key viewer",
+  "pgp fingerprint calculator",
+  "armored pgp decoder",
+  "inspect gpg public key"
+ ]
+}

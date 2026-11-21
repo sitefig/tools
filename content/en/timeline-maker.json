@@ -1,0 +1,44 @@
+{
+ "id": "timeline-maker",
+ "seoTitle": "Timeline Maker: Dated Events on a Line (SVG)",
+ "metaDescription": "Enter events as date, title and description to draw a horizontal or vertical timeline, evenly spaced or to scale. Free SVG.",
+ "intro": "Places dated events on a line with their titles and descriptions. Dates can be a year, a year-month or a full day.",
+ "why": "A timeline turns a list of dates into a story. Paste the events and get a clean line, alternating above and below to avoid overlap.\n\nEven spacing keeps the text readable; to scale shows the real gaps, which is more honest but crowds close events. Dates are sorted for you. The event table below the image gives a text version.",
+ "howTo": [
+  "Write one event per line: date | title | description.",
+  "Choose horizontal or vertical, even or to scale.",
+  "Check the table for order.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Which date formats?",
+   "a": "YYYY, YYYY-MM and YYYY-MM-DD, with / allowed in full dates."
+  },
+  {
+   "q": "BC dates?",
+   "a": "Years from -999 are accepted for the year form."
+  },
+  {
+   "q": "Why is a description cut?",
+   "a": "Long descriptions are limited to a few lines."
+  },
+  {
+   "q": "Limit?",
+   "a": "60 events."
+  }
+ ],
+ "related": [
+  "gantt-chart-maker",
+  "date-difference",
+  "add-subtract-dates",
+  "mind-map-svg-builder",
+  "flowchart-maker",
+  "printable-calendar"
+ ],
+ "keywords": [
+  "timeline maker",
+  "event timeline generator",
+  "history timeline svg"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "pwm-calculator",
+  "seoTitle": "PWM Calculator: Duty Cycle, Frequency, Average Voltage",
+  "metaDescription": "Convert between PWM frequency, period, duty cycle and on-time, see average and RMS voltage and the timer counts for a given clock and prescaler.",
+  "intro": "Work out PWM settings for LEDs, motors and servos.",
+  "why": "Enter frequency, duty cycle, supply voltage and optionally the timer clock and resolution. The page gives the period, on and off times, average voltage and RMS voltage, and a prescaler table showing the counts per period and the compare value for each prescaler, marking which fit in the counter.\n\nAverage voltage is what a filtered or resistive load sees; LEDs follow average current and motors follow the average. Audible-frequency PWM may produce noise.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter frequency and duty cycle.",
+    "Enter the timer clock and bit width if you want register values.",
+    "Pick a prescaler that fits.",
+    "Set the compare register to the shown value."
+  ],
+  "faq": [
+    {
+      "q": "What is duty cycle?",
+      "a": "The percentage of each period that the signal is high."
+    },
+    {
+      "q": "Why does a prescaler matter?",
+      "a": "It slows the timer so low frequencies fit into the counter width."
+    },
+    {
+      "q": "Is RMS different from average?",
+      "a": "Yes: RMS matters for heating (resistive loads), average for DC-like loads."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "uart-baud-calculator",
+    "resistor-color-code-calculator",
+    "wavelength-antenna-calculator",
+    "battery-life-estimator",
+    "unit-converter",
+    "bitwise-calculator"
+  ],
+  "keywords": [
+    "pwm calculator",
+    "duty cycle calculator",
+    "timer prescaler",
+    "average voltage pwm"
+  ]
+}

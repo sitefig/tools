@@ -1,0 +1,44 @@
+{
+ "id": "word-cloud-generator",
+ "seoTitle": "Word Cloud Generator from Text or Counts (SVG)",
+ "metaDescription": "Paste text or word counts to get a packed word cloud as SVG, with stop words skipped. Same seed, same layout. Free and private.",
+ "intro": "Counts words in your text, or reads word and count lines, and packs them into a cloud where size follows frequency.",
+ "why": "Word clouds are blunt but quick for a look at a survey, a speech or a set of keywords. Paste raw text or your own counts; common English words are skipped for raw text so the interesting words stand out.\n\nLayout is a spiral placement with rectangles, so words never overlap; those that do not fit are reported rather than shrunk silently. A table lists the counts, since size is a poor way to read exact values.",
+ "howTo": [
+  "Paste text, or lines like word 12.",
+  "Set the maximum words and tick rotation if you like.",
+  "Change the seed for another layout.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "How does it know my input is counts?",
+   "a": "If most lines end in a number it reads them as word and count."
+  },
+  {
+   "q": "Other languages?",
+   "a": "Words are split on letters and digits of any script; the stop-word list is English only."
+  },
+  {
+   "q": "Why are some words missing?",
+   "a": "They did not fit; lower the maximum or raise the size."
+  },
+  {
+   "q": "Is the layout stable?",
+   "a": "Yes for the same input and seed."
+  }
+ ],
+ "related": [
+  "text-statistics",
+  "bar-chart-maker",
+  "dedupe-lines",
+  "keyword-extractor",
+  "treemap-maker",
+  "pie-donut-chart-maker"
+ ],
+ "keywords": [
+  "word cloud generator",
+  "tag cloud from text",
+  "free word cloud svg"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "file-hash",
+ "seoTitle": "Free File Hash Checker (MD5, SHA-256, SHA-512)",
+ "metaDescription": "Compute MD5, SHA-1, SHA-256, SHA-384 and SHA-512 checksums of any file locally. Free, and the file never leaves your browser or device.",
+ "intro": "Choose a file and get its MD5, SHA-1, SHA-256, SHA-384 and SHA-512 checksums, together with its name and size in bytes. The file is read locally.",
+ "why": "Download pages for installers, disk images and firmware publish a checksum so you can confirm that the file you received is the file they built. Comparing it takes a command-line tool most people do not remember, and online checkers ask you to upload the file.\n\nThis tool reads the file in your browser and computes five hashes at once, so you can match whichever one the publisher lists. Compare the result with the published value, using the Hash Compare tool if you want a careful check. Nothing is uploaded. A matching hash proves the file is unchanged, not that its source is trustworthy.",
+ "howTo": [
+  "Click the file chooser and select the file you want to check.",
+  "Run the tool to compute the hashes.",
+  "Read the file name, its size and the five hashes.",
+  "Compare the one that matches the publisher's checksum, or paste both into Hash Compare."
+ ],
+ "faq": [
+  {
+   "q": "How do I verify a download?",
+   "a": "Compute the hash here, then compare it with the checksum shown on the official download page. If every character matches, the file is identical. If not, download it again before using it."
+  },
+  {
+   "q": "Does it upload my file?",
+   "a": "No. The file is read by your browser and hashed in the page. This makes it suitable for private documents and large installers alike."
+  },
+  {
+   "q": "Is there a file size limit?",
+   "a": "The whole file is loaded into memory before hashing, so the practical limit is your device's memory. Files of a few hundred megabytes usually work, while multi-gigabyte images may fail."
+  },
+  {
+   "q": "Is a matching hash a guarantee of safety?",
+   "a": "It guarantees the file matches the checksum you compared with. If an attacker controls both the download and the checksum on the same page, that proves little. Prefer checksums or signatures from a separate, trusted source."
+  }
+ ],
+ "related": [
+  "hash-generator",
+  "hash-compare",
+  "sha3-hash-generator",
+  "checksum-crc32-adler32",
+  "hmac-generator",
+  "zip-inspector"
+ ],
+ "keywords": [
+  "file hash checker",
+  "sha256 checksum of file",
+  "md5 checksum online",
+  "free file hash calculator",
+  "verify download checksum",
+  "file integrity check"
+ ]
+}

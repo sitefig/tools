@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Keyboard Event Viewer - key, code, keyCode | Free Tools</title>
+<meta name="description" content="Press any key to see its key, code, keyCode, which, location and modifier values, plus a history of recent presses. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/keyboard-event-viewer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/keyboard-event-viewer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/keyboard-event-viewer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Keyboard Event Viewer - key, code, keyCode | Free Tools">
+<meta property="og:description" content="Press any key to see its key, code, keyCode, which, location and modifier values, plus a history of recent presses. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/keyboard-event-viewer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Keyboard Event Viewer - key, code, keyCode | Free Tools">
+<meta name="twitter:description" content="Press any key to see its key, code, keyCode, which, location and modifier values, plus a history of recent presses. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Keyboard Event Viewer","url":"https://tools.sitefig.net/en/keyboard-event-viewer/","description":"Press any key to see its key, code, keyCode, which, location and modifier values, plus a history of recent presses. Free, in your browser.","applicationCategory":"MultimediaApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Click on the page, away from any text box.","Press a key and read the key, code, keyCode and other values.","Hold modifiers like Shift or Ctrl to see them listed.","Check the History list for your last presses."],"keywords":"keyboard event viewer, javascript key code tester, keycode finder, event.key event.code, free keyboard tester","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Device & Sensors","item":"https://tools.sitefig.net/en/#device-and-sensors"},{"@type":"ListItem","position":3,"name":"Keyboard Event Viewer","item":"https://tools.sitefig.net/en/keyboard-event-viewer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between key and code?","acceptedAnswer":{"@type":"Answer","text":"key is the value the key produces, such as a or A, and depends on layout and modifiers. code identifies the physical key, such as KeyA, and stays the same across layouts. Use code for game controls and key for text."}},{"@type":"Question","name":"Why is keyCode crossed out in documentation?","acceptedAnswer":{"@type":"Answer","text":"It is deprecated because its values were inconsistent between browsers and layouts. It is shown here because older scripts still use it, but new code should use key or code."}},{"@type":"Question","name":"Why does pressing a key do nothing?","acceptedAnswer":{"@type":"Answer","text":"The page ignores key events when focus is inside a text field or select box. Click on an empty part of the page first. Some keys captured by the system, such as the Windows key, may not reach the browser."}},{"@type":"Question","name":"Does it record what I type?","acceptedAnswer":{"@type":"Answer","text":"No. Events are shown on screen and kept only in the page's memory for the short history. Nothing is stored or uploaded. Avoid typing passwords anyway."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#device-and-sensors">Device &amp; Sensors</a></li><li><span aria-current="page">Keyboard Event Viewer</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Keyboard Event Viewer</h1>
+<p class="lede">Press any key to see the values a web page receives: key, code, keyCode, which, location, repeat and active modifiers, with a short history.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="keyboard-event-viewer" data-module="media"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>When you write keyboard shortcuts or game controls, you need the exact values the browser reports, and they are confusing. key gives the character produced, code gives the physical key, and the old keyCode and which are deprecated yet still common in legacy code. International layouts make it worse: the same physical key can produce different characters.</p>
+<p>This viewer shows all of those values the moment you press or release a key. It also shows whether the key is on the left, right or numpad, whether it is repeating and which of Ctrl, Shift, Alt and Meta are held. A list keeps the last twelve presses. It is an easy way to check what your own keyboard layout produces before you hard-code a handler. Nothing is recorded or sent anywhere.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Click on the page, away from any text box.</li><li>Press a key and read the key, code, keyCode and other values.</li><li>Hold modifiers like Shift or Ctrl to see them listed.</li><li>Check the History list for your last presses.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What is the difference between key and code?</summary><p>key is the value the key produces, such as a or A, and depends on layout and modifiers. code identifies the physical key, such as KeyA, and stays the same across layouts. Use code for game controls and key for text.</p></details>
+<details><summary>Why is keyCode crossed out in documentation?</summary><p>It is deprecated because its values were inconsistent between browsers and layouts. It is shown here because older scripts still use it, but new code should use key or code.</p></details>
+<details><summary>Why does pressing a key do nothing?</summary><p>The page ignores key events when focus is inside a text field or select box. Click on an empty part of the page first. Some keys captured by the system, such as the Windows key, may not reach the browser.</p></details>
+<details><summary>Does it record what I type?</summary><p>No. Events are shown on screen and kept only in the page's memory for the short history. Nothing is stored or uploaded. Avoid typing passwords anyway.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/gamepad-tester/"><span class="link-card__title">Gamepad Tester</span><span class="link-card__desc">Connect a controller, press a button, and see live button and axis values.</span></a></li><li><a class="link-card" href="/en/typing-speed-test/"><span class="link-card__title">Typing Speed Test</span><span class="link-card__desc">Measure words per minute and accuracy. Nothing is stored or sent.</span></a></li><li><a class="link-card" href="/en/mouse-click-speed-test/"><span class="link-card__title">Mouse Click Speed Test</span><span class="link-card__desc">How many clicks per second can you do? Pick a duration and start clicking.</span></a></li><li><a class="link-card" href="/en/ascii-table/"><span class="link-card__title">ASCII Table</span><span class="link-card__desc">ASCII reference: decimal, hex, octal, binary, character. Filter by anything.</span></a></li><li><a class="link-card" href="/en/char-info/"><span class="link-card__title">Unicode Character Inspector</span><span class="link-card__desc">Code point, category, script, encodings and escapes for each character.</span></a></li><li><a class="link-card" href="/en/unicode-character-map/"><span class="link-card__title">Unicode Character Map</span><span class="link-card__desc">Browse Unicode blocks or any hex range; click a character to copy it and see its code points.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

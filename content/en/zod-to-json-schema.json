@@ -1,0 +1,45 @@
+{
+ "id": "zod-to-json-schema",
+ "seoTitle": "Free Zod to JSON Schema Converter (No Code Run)",
+ "metaDescription": "Parse Zod source such as z.object, enums, unions and arrays and emit JSON Schema 2020-12. A static parser, so no code is executed. Free, in-browser.",
+ "intro": "Paste Zod schema source and get JSON Schema. It is read by a small static parser, so your code is never executed.",
+ "why": "Zod schemas are written for TypeScript, but OpenAPI generators, LLM tool definitions, form builders and docs tools all want JSON Schema. The usual route is a library call at runtime, which means setting up a project just to convert one file.\n\nPaste the source and this tool reads the z.object, z.string, z.enum, z.union and similar calls without running them. It follows const references between declarations, so a schema built from smaller named parts works. Checks such as min, max, email, regex and int become keywords. Methods that need execution, such as refine or transform, are noted as ignored. It supports a common subset only, and unknown methods stop with a clear error instead of guessing.",
+ "howTo": [
+  "Paste Zod source code, including the const declarations it refers to.",
+  "The last schema in the text is used as the root.",
+  "Copy the JSON Schema output into your tooling."
+ ],
+ "faq": [
+  {
+   "q": "Is my code executed?",
+   "a": "No. The text is tokenised and parsed as data, and only the Zod method calls it recognises are translated. Nothing is evaluated, imported or sent anywhere."
+  },
+  {
+   "q": "Which Zod features are supported?",
+   "a": "Primitives, literal, enum, array, tuple, record, union, intersection, object and strictObject, and chained checks like min, max, int, email, uuid, regex, optional, nullable, default and describe."
+  },
+  {
+   "q": "What about refine, transform and custom types?",
+   "a": "Refinements and transforms are skipped because they cannot be expressed in JSON Schema. Unknown types or methods raise an error naming the one that is not supported."
+  },
+  {
+   "q": "How are optional fields treated?",
+   "a": "A property is left out of the required list when it ends in optional, nullish or default. nullable makes the schema accept null as well."
+  }
+ ],
+ "related": [
+  "json-schema-to-zod",
+  "zod-to-typescript-type",
+  "typescript-interface-to-zod",
+  "typescript-to-json-schema",
+  "json-schema-validator",
+  "llm-tool-definition-builder"
+ ],
+ "keywords": [
+  "zod to json schema",
+  "convert zod to jsonschema online",
+  "zod schema to json schema free",
+  "zod to openapi schema",
+  "static zod parser"
+ ]
+}

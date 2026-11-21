@@ -1,0 +1,41 @@
+{
+ "id": "char-limit-counter",
+ "seoTitle": "Character Counter with Custom Limits: 160, 280, 500",
+ "metaDescription": "Count characters and see how many are left against any limits you set, such as SMS 160 or a 280 character post. Free, runs in your browser.",
+ "intro": "Count characters as you paste and see how many are left against one or more limits you choose, such as 160 for SMS or 280 for a post.",
+ "why": "Many fields have a hard limit: an SMS, a meta description, a button label, a post. Counting by eye fails, and word processors count differently from the platform you paste into.\n\nThis counter shows characters the way people see them, plus code points, UTF-16 length and UTF-8 bytes, so you can tell why two tools disagree. You can set several limits at once and see the room left on each. Nothing leaves your browser.",
+ "howTo": [
+  "Paste or type your text.",
+  "Enter one or more limits, separated by commas.",
+  "Read the remaining characters for each limit.",
+  "Tick the trim option if spaces at the ends should not count."
+ ],
+ "faq": [
+  {
+   "q": "Why do emoji count differently in other tools?",
+   "a": "An emoji is one character to a reader but two or more UTF-16 units and several bytes. This tool shows all the counts so you can compare."
+  },
+  {
+   "q": "Does this count SMS segments?",
+   "a": "No. SMS splits messages at 160 characters in the GSM alphabet and 70 once any other character appears, and long messages use smaller parts. Use it as a first check."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The counting runs in your browser."
+  }
+ ],
+ "related": [
+  "word-counter",
+  "ad-copy-counter",
+  "x-post-character-counter",
+  "social-post-length-checker",
+  "title-length-checker",
+  "text-splitter"
+ ],
+ "keywords": [
+  "character counter",
+  "character limit checker",
+  "sms length counter",
+  "characters remaining"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "eip712-typed-data-hash",
+ "seoTitle": "Free EIP-712 Typed Data Hash and Domain Separator",
+ "metaDescription": "Compute the EIP-712 domain separator, struct hash and signing digest from eth_signTypedData_v4 JSON. Free, runs in your browser.",
+ "intro": "Paste typed data JSON with types, primaryType, domain and message. The tool computes the domain separator, the struct hash and the final digest that is signed.",
+ "why": "Typed data signatures show readable fields in a wallet prompt instead of an opaque hash, and they are used for permits, order books, gasless transactions and DAO votes. On the contract side, the digest must be rebuilt exactly, and a small difference in a type string, field order or an address casing yields a different hash and a signature that fails to verify. This tool takes the same JSON a dapp sends to eth_signTypedData_v4 and shows the encoded type, the type hash, the domain separator, the hash of the message struct and the final signing digest. It handles nested structs, arrays, fixed-size bytes and integers with range checks. It runs in your browser, produces no signature and never needs a private key.",
+ "howTo": [
+  "Paste the typed data JSON, or use the Mail example already loaded.",
+  "Run the tool.",
+  "Compare the domain separator, struct hash and digest with your contract or library."
+ ],
+ "faq": [
+  {
+   "q": "What goes into the final digest?",
+   "a": "keccak256 of 0x1901, followed by the 32-byte domain separator and the 32-byte hash of the message struct. This is the value the wallet signs."
+  },
+  {
+   "q": "What if my JSON has no EIP712Domain type?",
+   "a": "The tool builds it from the domain fields present, in the standard order: name, version, chainId, verifyingContract and salt. Supply the type yourself for a non-standard domain."
+  },
+  {
+   "q": "Which types are supported?",
+   "a": "Structs, arrays (fixed or dynamic), string, bytes, bytesN, address, bool and intN/uintN with range checks. Values outside a type's range or the wrong byte length raise an error."
+  },
+  {
+   "q": "Does it sign or verify a signature?",
+   "a": "No. It only computes hashes. Never paste private keys into a web page; to check a signature, use a verifier with the digest it gives you."
+  }
+ ],
+ "related": [
+  "eip191-message-hash",
+  "ethereum-eip191-signature-verifier",
+  "eip55-checksum-address",
+  "abi-encoder-decoder",
+  "ethereum-keccak256-hasher",
+  "json-format"
+ ],
+ "keywords": [
+  "eip712 hash calculator",
+  "typed data hash",
+  "free eip712 tool",
+  "domain separator calculator",
+  "eth_signtypeddata_v4 hash",
+  "eip-712 digest"
+ ]
+}

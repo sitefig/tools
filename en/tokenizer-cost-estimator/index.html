@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Token Cost Estimator: Use Your Own Prices | Free Tools</title>
+<meta name="description" content="Count tokens exactly with cl100k_base or o200k_base and multiply by the per-million prices you enter to estimate cost. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/tokenizer-cost-estimator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/tokenizer-cost-estimator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/tokenizer-cost-estimator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Token Cost Estimator: Use Your Own Prices | Free Tools">
+<meta property="og:description" content="Count tokens exactly with cl100k_base or o200k_base and multiply by the per-million prices you enter to estimate cost. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/tokenizer-cost-estimator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Token Cost Estimator: Use Your Own Prices | Free Tools">
+<meta name="twitter:description" content="Count tokens exactly with cl100k_base or o200k_base and multiply by the per-million prices you enter to estimate cost. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Token Cost Estimator (your own prices)","url":"https://tools.sitefig.net/en/tokenizer-cost-estimator/","description":"Count tokens exactly with cl100k_base or o200k_base and multiply by the per-million prices you enter to estimate cost. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your prompt text into the box.","Choose the encoding that matches your model.","Enter input and output prices per 1M tokens, expected output tokens, number of calls and a currency label.","Read the cost per call and the total for all calls."],"keywords":"token cost estimator, llm prompt cost calculator, openai cost per prompt, token price calculator, free api cost estimator","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"LLM Tools","item":"https://tools.sitefig.net/en/#llm-tools"},{"@type":"ListItem","position":3,"name":"Token Cost Estimator (your own prices)","item":"https://tools.sitefig.net/en/tokenizer-cost-estimator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where do I find the prices?","acceptedAnswer":{"@type":"Answer","text":"On your provider's own pricing page. Enter the figure per one million tokens for input and for output. This tool assumes nothing and verifies nothing, so the answer is only as good as the numbers you enter."}},{"@type":"Question","name":"Is the token count exact?","acceptedAnswer":{"@type":"Answer","text":"For OpenAI models, the count of your prompt text is exact for the encoding you pick. The number of output tokens is your own estimate, and message framing for chat requests is not added."}},{"@type":"Question","name":"Does it handle cached or batch pricing?","acceptedAnswer":{"@type":"Answer","text":"No. It multiplies a flat price by the token count. If your provider discounts cached input or batch requests, adjust the price you enter, or run separate calculations."}},{"@type":"Question","name":"Can I use it for non-OpenAI models?","acceptedAnswer":{"@type":"Answer","text":"The token count would only be an approximation, because other tokenizers differ. For a rough result, enter your own price anyway, but expect the real count to be somewhat different."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#llm-tools">LLM Tools</a></li><li><span aria-current="page">Token Cost Estimator (your own prices)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Token Cost Estimator (your own prices)</h1>
+<p class="lede">Counts the tokens of a prompt with the exact OpenAI encoding, then works out the cost from input and output prices that you type in. No prices are built in.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="tokenizer-cost-estimator" data-module="tokenizer"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Before you run a prompt a thousand times, it is worth knowing what it will cost. Pricing pages list rates per million tokens, and turning a prompt into a bill means counting its tokens, adding expected output, and multiplying by the number of calls.</p>
+<p>Paste the prompt, pick the encoding, then type the input price, the output price, the expected output tokens per call and the number of calls. You get the cost per call and the total. The tool deliberately has no price list, because rates change and a stale figure would mislead you. Copy the current numbers from your provider's pricing page. Discounts for cached input or batch jobs are not modelled. The counting runs in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your prompt text into the box.</li><li>Choose the encoding that matches your model.</li><li>Enter input and output prices per 1M tokens, expected output tokens, number of calls and a currency label.</li><li>Read the cost per call and the total for all calls.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Where do I find the prices?</summary><p>On your provider's own pricing page. Enter the figure per one million tokens for input and for output. This tool assumes nothing and verifies nothing, so the answer is only as good as the numbers you enter.</p></details>
+<details><summary>Is the token count exact?</summary><p>For OpenAI models, the count of your prompt text is exact for the encoding you pick. The number of output tokens is your own estimate, and message framing for chat requests is not added.</p></details>
+<details><summary>Does it handle cached or batch pricing?</summary><p>No. It multiplies a flat price by the token count. If your provider discounts cached input or batch requests, adjust the price you enter, or run separate calculations.</p></details>
+<details><summary>Can I use it for non-OpenAI models?</summary><p>The token count would only be an approximation, because other tokenizers differ. For a rough result, enter your own price anyway, but expect the real count to be somewhat different.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/gpt-token-counter/"><span class="link-card__title">GPT Token Counter (cl100k + o200k, chat overhead)</span><span class="link-card__desc">Exact token counts for text under cl100k_base and o200k_base side by side, plus an approximate chat-message overhead calculator (OpenAI cookbook rule: 3 tokens per message, +1 per name, +3 reply priming; use o200k_base for the GPT-4o family). Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/llm-cost-calculator/"><span class="link-card__title">LLM API Cost Calculator</span><span class="link-card__desc">Compute request and monthly cost from tokens and your own per-million prices (prices change; enter current ones).</span></a></li><li><a class="link-card" href="/en/embedding-cost-calculator/"><span class="link-card__title">Embedding Cost Calculator</span><span class="link-card__desc">Estimate the cost of embedding a corpus: documents x average tokens (or characters / words), re-embedding runs, and vector storage size (dimensions x 4 bytes, plus HNSW overhead estimate). Prices are list prices per 1M tokens at the time of writing and change often: override with &quot;Custom price&quot; and check your provider. Token counts from characters are an approximation (about 4 characters per English token).</span></a></li><li><a class="link-card" href="/en/llm-token-estimator/"><span class="link-card__title">LLM Token Count Estimator (approximate)</span><span class="link-card__desc">ESTIMATE of token counts for GPT-4o, GPT-4, Claude, DeepSeek and Llama from text, using per-model chars-per-token ratios and a word/punctuation heuristic. No vocabulary is available offline, so counts are approximate (typically within 10-20% for English).</span></a></li><li><a class="link-card" href="/en/system-prompt-budgeter/"><span class="link-card__title">System Prompt Length Budgeter</span><span class="link-card__desc">Split a prompt into &quot;## Section&quot; parts and see approximate token share against a context window and output reserve.</span></a></li><li><a class="link-card" href="/en/tiktoken-visualizer/"><span class="link-card__title">Tiktoken Tokenizer Visualizer (cl100k / o200k)</span><span class="link-card__desc">Exact OpenAI BPE tokenization (cl100k_base (GPT-4, GPT-3.5-turbo, embeddings v2/v3), o200k_base (GPT-4o, GPT-4.1, o1/o3 families)) shown as coloured tokens plus a table of ids and bytes. Runs offline in your browser. Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

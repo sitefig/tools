@@ -1,0 +1,44 @@
+{
+ "id": "k8s-quantity-converter",
+ "seoTitle": "Kubernetes CPU and Memory Unit Converter",
+ "metaDescription": "Convert Kubernetes quantities like 250m, 1.5Gi or 512Mi to cores, millicores, bytes, MiB and GiB, plus the canonical form. Free and exact.",
+ "intro": "Parses Kubernetes resource quantities exactly (no floating point) and shows cores, millicores, bytes, MiB, GiB and the canonical form.",
+ "why": "Resource requests and limits mix suffixes: m for thousandths, k and Ki, M and Mi, G and Gi. Mixing 1G and 1Gi is a common source of wrong limits, because one is 10^9 and the other 2^30.\n\nPaste values, one per line. CPU reads the number as cores. Memory reads it as bytes. Parsing uses integer arithmetic, so there is no rounding error, and amounts below 1m round up as Kubernetes does.",
+ "howTo": [
+  "Paste quantities, one per line.",
+  "Read the cores and millicores for CPU values.",
+  "Read bytes, MiB and GiB for memory values.",
+  "Use the canonical column to see how Kubernetes would print it."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between G and Gi?",
+   "a": "G is 1,000,000,000 bytes. Gi is 1,073,741,824 bytes. The binary suffix is about 7 percent larger."
+  },
+  {
+   "q": "What does the m suffix mean?",
+   "a": "Thousandths. 250m is 0.25 of a core, or 0.25 of a byte for memory."
+  },
+  {
+   "q": "What is canonical form?",
+   "a": "The largest suffix that keeps the value a whole number. 1.5Gi becomes 1536Mi and 1.5 becomes 1500m."
+  },
+  {
+   "q": "Does it size my nodes?",
+   "a": "No. Use the Kubernetes resource and node sizing calculator for that."
+  }
+ ],
+ "related": [
+  "k8s-resource-calculator",
+  "kubernetes-deployment-generator",
+  "k8s-manifest-validator",
+  "helm-values-diff",
+  "docker-compose-to-k8s",
+  "kubernetes-configmap-secret-builder"
+ ],
+ "keywords": [
+  "kubernetes cpu millicores",
+  "k8s memory units Mi Gi",
+  "kubernetes quantity converter"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "bbcode-to-markdown",
+ "seoTitle": "Free BBCode to Markdown Converter Online",
+ "metaDescription": "Convert forum BBCode to Markdown: bold, italic, links, images, quotes, code blocks and lists. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Paste BBCode from a forum post and get Markdown. Bold, italic, links, images, quotes, code blocks and lists are converted, while size and colour wrappers are dropped but their text is kept.",
+ "why": "Old forum threads often hold useful guides, changelogs or support answers, and moving them to a wiki, a README or a static site means turning bracket tags into Markdown. Doing it by hand through a long post with nested lists and quotes takes ages and invites typos in link addresses.\n\nThis converter reads the common tags and writes the Markdown equivalent. Formatting that Markdown cannot express, such as colour and size, is dropped while the text stays. Underline is written as an HTML tag. Tags it does not know are left as they are, so you can find them afterwards. The conversion runs locally, so archived forum text is not sent to a third party.",
+ "howTo": [
+  "Paste the BBCode source from the forum post into the input box.",
+  "Read the Markdown output and look for any bracket tags that were left unchanged.",
+  "Fix those tags by hand, or remove them if they only carried styling.",
+  "Copy the Markdown into your document, wiki or README."
+ ],
+ "faq": [
+  {
+   "q": "What happens to colour and size tags?",
+   "a": "They are removed and the content inside is kept, because Markdown has no way to set colour or font size. If those styles matter, add HTML or CSS after converting."
+  },
+  {
+   "q": "How is underline handled?",
+   "a": "Markdown has no underline, so the converter writes it as an HTML u tag. Many Markdown renderers accept inline HTML, but some strip it, so check where your text will be shown."
+  },
+  {
+   "q": "What about tags it does not recognise?",
+   "a": "Unknown tags are left exactly as written. That makes them easy to search for, and nothing is lost silently. Forum-specific tags such as attachments or embeds usually need manual handling."
+  }
+ ],
+ "related": [
+  "markdown-to-bbcode",
+  "html-to-markdown",
+  "markdown-to-html",
+  "markdown-preview",
+  "html-tag-stripper",
+  "text-diff"
+ ],
+ "keywords": [
+  "bbcode to markdown",
+  "convert bbcode to markdown online",
+  "forum post to markdown",
+  "bbcode converter",
+  "phpbb to markdown",
+  "free bbcode to markdown tool"
+ ]
+}

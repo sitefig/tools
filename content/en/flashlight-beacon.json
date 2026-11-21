@@ -1,0 +1,46 @@
+{
+ "id": "flashlight-beacon",
+ "seoTitle": "Free Screen Flashlight and SOS Beacon Online",
+ "metaDescription": "Turn your screen into a full-screen white light, a strobe or a Morse code SOS beacon. Click or press Esc to exit. Free in your browser.",
+ "intro": "Fill your screen with white light, flash it as a strobe, or blink a Morse message such as SOS. Click or press Esc to leave.",
+ "why": "A bright screen is a useful emergency light when the power is out, a simple way to see around a dark room, or a visible signal at night. A dedicated flashlight app is not always installed, and the phone's torch may not be available from a browser.\n\nThis page covers the screen-based alternative. White light fills the display with white at full-screen size. Strobe flashes at a rate you choose from 0.5 to 10 flashes per second. Morse mode blinks any text you type, defaulting to SOS, with a unit length you can adjust. Pressing Esc or clicking the screen ends it. The screen is far dimmer than a real torch and not a safety device. Strobe effects can trigger seizures in people with photosensitive epilepsy, so use them with care.",
+ "howTo": [
+  "Choose a mode: white light, strobe or morse / SOS.",
+  "For strobe set the flashes per second; for morse enter the text and the unit length in milliseconds.",
+  "Press Start to go full screen.",
+  "Click anywhere or press Esc to exit."
+ ],
+ "faq": [
+  {
+   "q": "Is flashing light dangerous?",
+   "a": "It can be. Flashing and strobing lights can trigger seizures in people with photosensitive epilepsy. Do not use the strobe or Morse modes around others without warning, and avoid high flash rates."
+  },
+  {
+   "q": "How bright is it?",
+   "a": "As bright as your screen's brightness setting allows. Raise the brightness to maximum for the best result, but it will not match a real torch and drains battery faster."
+  },
+  {
+   "q": "Which characters does Morse mode support?",
+   "a": "Letters A to Z and digits 0 to 9. Other characters are skipped. Words are separated by longer gaps, and the pattern repeats until you exit. The unit length sets the speed."
+  },
+  {
+   "q": "Can I rely on it in an emergency?",
+   "a": "No. It is a convenience, not a safety or signalling device. In a real emergency use a proper torch or call emergency services."
+  }
+ ],
+ "related": [
+  "morse-translator",
+  "morse-code-audio",
+  "screen-info",
+  "countdown-timer",
+  "stopwatch",
+  "tone-generator"
+ ],
+ "keywords": [
+  "screen flashlight",
+  "online flashlight",
+  "sos morse light",
+  "strobe light online",
+  "free torch for screen"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "caddyfile-generator",
+ "seoTitle": "Free Caddyfile Generator for Common Sites",
+ "metaDescription": "Free online Caddyfile generator. Build a site block for reverse proxy, static files, SPA, PHP-FPM or redirect with compression, headers and www redirect.",
+ "intro": "Build a Caddyfile site block for a reverse proxy, static file server, single-page app, PHP-FPM site or redirect, with compression, security headers, logging and an optional www redirect.",
+ "why": "Caddy is popular because it gets HTTPS certificates automatically and has a short configuration language. Even so, the common recipes are easy to forget: how a single-page app falls back to index.html, how to hand PHP to FPM, or which security headers to add.\n\nEnter the site address and choose a mode. Reverse proxy takes an upstream such as localhost:3000, file server and SPA take a root folder, PHP uses php_fastcgi with a socket path you should check, and redirect takes a target URL. You can add encode zstd gzip, a header block, access logging, tls internal for local certificates and a global ACME email. The headers are sensible defaults, not a full security policy. Nothing is uploaded.",
+ "howTo": [
+  "Enter the site address, for example example.com.",
+  "Choose a mode and enter the upstream, root folder or redirect target.",
+  "Tick compression, security headers, logging and www redirect as needed.",
+  "Copy the Caddyfile, then run caddy validate and reload."
+ ],
+ "faq": [
+  {
+   "q": "Does Caddy handle HTTPS automatically?",
+   "a": "Yes, for public domain names, Caddy obtains and renews certificates by itself. Use tls internal for local names, where it issues certificates from its own authority instead."
+  },
+  {
+   "q": "How does the SPA mode work?",
+   "a": "It serves files from the root folder and uses try_files to fall back to /index.html for unknown paths, so client-side routes work when someone reloads the page."
+  },
+  {
+   "q": "Is the PHP socket path correct for my system?",
+   "a": "The tool uses unix//run/php/php-fpm.sock as a common default. Package names and versions vary, so confirm the real socket path on your server."
+  },
+  {
+   "q": "What does the www redirect do?",
+   "a": "It adds a second site block for www.yourdomain that redirects permanently to the bare domain, keeping the path and query."
+  }
+ ],
+ "related": [
+  "caddy-to-nginx",
+  "nginx-to-caddy-converter",
+  "nginx-config-generator",
+  "security-headers-generator",
+  "htaccess-generator",
+  "systemd-unit-generator"
+ ],
+ "keywords": [
+  "caddyfile generator",
+  "caddy reverse proxy config",
+  "caddyfile builder online",
+  "free caddyfile tool",
+  "caddy spa config",
+  "caddy php fastcgi config"
+ ]
+}

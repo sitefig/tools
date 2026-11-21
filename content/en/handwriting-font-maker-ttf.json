@@ -1,0 +1,45 @@
+{
+ "id": "handwriting-font-maker-ttf",
+ "seoTitle": "Handwriting Font Maker: Draw Glyphs, Download TTF",
+ "metaDescription": "Draw each character on a pixel grid with the mouse or keyboard and download an installable TrueType font. Blocky pixel style, free, built entirely in your browser.",
+ "intro": "Draw characters cell by cell on a grid, preview your own text in the new font, and download a TTF file you can install. Works with pointer, touch or keyboard.",
+ "why": "A true handwriting font needs smooth outlines traced from scans. This tool takes a simpler and more honest route: you draw each character on a 10 by 14 grid and the cells become square outlines, merged into rectangles. The result is a pixel font in the shape of your handwriting. It is blocky, but it installs and works like any TrueType font.\n\nThe grid works with a pointer or the keyboard: Tab in, move with the arrow keys, Space toggles a cell, Shift plus an arrow paints while moving. Tools flip, shift, invert and copy glyphs, and an optional rough-in fills a character from a system font as a starting point, so check that font's licence before sharing the result. The font file is written by the page itself and was checked with fontTools and FreeType. Characters you leave undrawn are simply missing from the font.",
+ "howTo": [
+  "Type or choose a character, then draw it on the grid.",
+  "Repeat for the characters you need. The preview shows your text in the new font as you go.",
+  "Set the font family name and spacing.",
+  "Press Download TTF, then open the file to install it."
+ ],
+ "faq": [
+  {
+   "q": "Why is the font blocky?",
+   "a": "Each filled cell becomes a square. Smooth, pen-like outlines would need tracing from high resolution scans, which this tool does not do."
+  },
+  {
+   "q": "Which characters can I use?",
+   "a": "Any character up to U+FFFF, so accented letters and symbols are fine. Characters outside that range are not supported."
+  },
+  {
+   "q": "Can I edit the font later?",
+   "a": "There is no project file yet. Keep the TTF and open it in a font editor, or redraw the characters here."
+  },
+  {
+   "q": "Is the font file valid?",
+   "a": "It was checked with fontTools (tables, checksums, glyph coordinates) and rendered with FreeType, and it loads in the browser. It has no hinting and only basic metadata."
+  }
+ ],
+ "related": [
+  "font-file-inspector",
+  "font-previewer",
+  "font-format-converter",
+  "font-subsetter",
+  "variable-font-playground",
+  "font-loading-snippet-generator"
+ ],
+ "keywords": [
+  "handwriting font maker",
+  "make a ttf font online",
+  "draw your own font",
+  "pixel font creator"
+ ]
+}

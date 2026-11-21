@@ -1,0 +1,45 @@
+{
+ "id": "pendulum-simulator-period",
+ "seoTitle": "Pendulum Simulator: Simple and Double Pendulum, Exact Period",
+ "metaDescription": "Simulate a simple or double pendulum, plot the angles over time and compare the period with the small-angle formula. Free, runs in your browser.",
+ "intro": "Simulates a simple or double pendulum with a fourth-order Runge-Kutta method, plots the angles over time and reports the period and energy drift.",
+ "why": "For small swings a pendulum takes 2 pi sqrt(L/g) seconds, but for a 60 degree swing it takes about 7 percent longer. The simple mode shows the small-angle period, the exact period from the arithmetic-geometric mean formula and the period measured from the simulation, which agree to many digits.\n\nThe double pendulum mode uses the standard Lagrangian equations of motion, which were checked against an independent derivation with a computer algebra system and a high-order solver. It is chaotic: after ten to twenty seconds tiny changes in the inputs give a different path. The energy drift line shows how well the integrator conserves energy. There is no friction, and the result is a plot, not a live animation.",
+ "howTo": [
+  "Choose simple or double.",
+  "Enter lengths, masses, gravity and starting angles.",
+  "Set the duration (up to 120 seconds).",
+  "Read the period or angle plot and the energy drift."
+ ],
+ "faq": [
+  {
+   "q": "Is there damping?",
+   "a": "No, the system is frictionless."
+  },
+  {
+   "q": "Why does the double pendulum differ for tiny changes?",
+   "a": "It is chaotic, so small differences grow quickly."
+  },
+  {
+   "q": "What is the exact period formula?",
+   "a": "T = 2 pi sqrt(L/g) / AGM(1, cos(theta0 / 2))."
+  },
+  {
+   "q": "Can I watch it move?",
+   "a": "No, you get the angle-versus-time plot."
+  }
+ ],
+ "related": [
+  "projectile-motion-calculator",
+  "wave-interference-superposition",
+  "orbital-mechanics-nbody-sandbox",
+  "dc-circuit-solver-netlist",
+  "function-grapher-roots",
+  "scientific-calculator-degrees"
+ ],
+ "keywords": [
+  "pendulum simulator",
+  "double pendulum chaos",
+  "pendulum period calculator",
+  "simple pendulum large angle"
+ ]
+}

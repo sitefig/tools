@@ -1,0 +1,45 @@
+{
+  "id": "dog-age-calculator",
+  "seoTitle": "Dog Age in Human Years Calculator",
+  "metaDescription": "Convert a dog's age to human years with the 2020 epigenetic formula (16 x ln(age) + 31), the size-based rule and the old 7x rule, and see its life stage.",
+  "intro": "See how old your dog is in human terms, with three different methods.",
+  "why": "The 2020 UCSD formula comes from DNA-methylation research on Labrador retrievers: human age = 16 ln(dog age) + 31 for dogs over a year old. The size-based rule counts 15 human years for the first year, 9 for the second and 4, 5 or 6 per year after that for small, medium and large dogs. The 7x rule is shown for comparison. A life stage label (puppy, young adult, adult, senior, geriatric) is added.\n\nNo formula is correct for every dog, because breeds age at different rates. Use it for fun and ask a vet about senior care.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the dog's age in years and months.",
+    "Choose the size.",
+    "Compare the three methods.",
+    "Talk to your vet about age-appropriate care."
+  ],
+  "faq": [
+    {
+      "q": "Why different answers?",
+      "a": "Each method is a model. The 2020 formula is research-based but derived from one breed."
+    },
+    {
+      "q": "When is a dog a senior?",
+      "a": "Around 7 years, earlier for giant breeds."
+    },
+    {
+      "q": "Does this work for cats?",
+      "a": "No, cats have different guidelines."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "age-calculator",
+    "date-difference",
+    "bmi-calculator",
+    "due-date-calculator",
+    "water-intake",
+    "unit-converter"
+  ],
+  "keywords": [
+    "dog age calculator",
+    "dog years to human years",
+    "dog age formula",
+    "pet age"
+  ]
+}

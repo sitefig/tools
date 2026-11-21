@@ -1,0 +1,46 @@
+{
+ "id": "pdf-crop-margins",
+ "seoTitle": "Free Crop PDF Margins - Trim Page Edges Online",
+ "metaDescription": "Trim margins from PDF pages by setting the CropBox in mm, points or inches. Content is hidden, not deleted. Free, runs in your browser.",
+ "intro": "Trim white space from the edges of PDF pages by setting a crop box with top, right, bottom and left margins in millimetres, points or inches.",
+ "why": "Scans and exported documents often carry wide white borders or scanner shadows around the edge. They waste space on a phone screen, make text look small when printed, and push a one-page figure onto two pages. Cropping the page cleans that up without touching the contents.\n\nThis tool sets the page's crop box inward by the amounts you give for each side, measured on the page as it is displayed, so rotated pages behave as you expect. Viewers then show and print only the cropped area. The content outside is hidden rather than deleted, so a determined person could still recover it. Do not use this to redact confidential information. You can crop all pages or a range, and optionally also adjust the media box. It runs in your browser.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Pick a unit and set the top, right, bottom and left margins to remove.",
+  "Optionally limit it to a page range, or tick Also set MediaBox.",
+  "Run the tool and download the cropped PDF."
+ ],
+ "faq": [
+  {
+   "q": "Is the cropped content deleted?",
+   "a": "No. Cropping only changes the visible area. The original content is still in the file and can be recovered. Never use cropping to hide sensitive information; use proper redaction instead."
+  },
+  {
+   "q": "What does Also set MediaBox do?",
+   "a": "The media box is the full page size, while the crop box is what viewers show. Setting both makes some tools that ignore the crop box respect the new size too."
+  },
+  {
+   "q": "Which units can I use?",
+   "a": "Millimetres, points and inches. A PDF point is 1/72 inch. The default is 10 mm on every side, so start with small values and increase until the result looks right."
+  },
+  {
+   "q": "Do margins follow page rotation?",
+   "a": "Yes, margins refer to the page as displayed, so top really means the top of the page you see, even on a page rotated by the scanner."
+  }
+ ],
+ "related": [
+  "pdf-rotate",
+  "pdf-page-count-and-sizes",
+  "pdf-add-page-numbers",
+  "pdf-extract-pages",
+  "image-cropper",
+  "pdf-merge"
+ ],
+ "keywords": [
+  "crop pdf margins",
+  "trim pdf white space",
+  "crop pdf pages online",
+  "remove pdf borders",
+  "free pdf cropper"
+ ]
+}

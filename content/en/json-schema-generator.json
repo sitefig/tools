@@ -1,0 +1,47 @@
+{
+ "id": "json-schema-generator",
+ "seoTitle": "Free JSON Schema Generator from JSON Sample",
+ "metaDescription": "Free online JSON Schema generator. Infer a draft-07 schema from a sample, with required keys, strict mode and format detection. Runs in your browser.",
+ "intro": "Infer a draft-07 JSON Schema from a sample document. Choose whether keys are required, forbid extra properties, and detect string formats like email or date-time.",
+ "why": "A JSON Schema documents what your data should look like and lets other tools check it, but writing one from scratch is slow. A good first draft from a real example saves most of the typing, and you can then tighten it by hand.\n\nPaste a sample and the tool works out types for every value, merges array items, and lists required keys. With format detection on, strings that look like email addresses, dates, date-times, UUIDs or URLs get a matching format. The strict option adds additionalProperties false so unknown keys are rejected. Because the schema comes from one sample, treat it as a draft and add limits yourself. You can test the result with the JSON Schema Validator. Nothing is uploaded.",
+ "howTo": [
+  "Paste a representative JSON sample into the input box.",
+  "Tick Mark keys required if every key seen should be mandatory.",
+  "Tick additionalProperties: false for a strict schema, and Detect formats for email, date and similar strings.",
+  "Copy the draft-07 schema into your project."
+ ],
+ "faq": [
+  {
+   "q": "Which JSON Schema version does it produce?",
+   "a": "Draft-07. The generated schema begins with the draft-07 $schema URL, which most validators, editors and code generators understand, so you can use it straight away."
+  },
+  {
+   "q": "How are optional properties decided?",
+   "a": "When array items are merged, keys missing from some items are left out of required. If you untick the required option, no property is marked required at all."
+  },
+  {
+   "q": "How reliable is format detection?",
+   "a": "It looks at the sample value only, using simple patterns for formats such as email, date, date-time and UUID. A string that happens to look like a date may get a format you did not intend."
+  },
+  {
+   "q": "What should I add by hand?",
+   "a": "Anything a sample cannot tell: minimum and maximum values, string lengths, patterns, enums and descriptions. Add them, then check some real documents with the schema validator."
+  }
+ ],
+ "related": [
+  "json-schema-validator",
+  "json-to-typescript",
+  "json-to-zod",
+  "zod-to-json-schema",
+  "json-validate",
+  "typescript-to-json-schema"
+ ],
+ "keywords": [
+  "json schema generator",
+  "generate json schema from json",
+  "json to json schema",
+  "free json schema tool",
+  "draft-07 schema generator",
+  "json schema from sample"
+ ]
+}

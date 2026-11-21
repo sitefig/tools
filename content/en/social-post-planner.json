@@ -1,0 +1,41 @@
+{
+ "id": "social-post-planner",
+ "seoTitle": "Social Post Planner: Weekly Calendar and CSV Export",
+ "metaDescription": "Paste planned posts with date, time and platform and get a sorted weekly calendar or CSV, with clashes and bad dates flagged. Free.",
+ "intro": "Paste your planned posts (date, time, platform, text) and get them sorted into a weekly calendar or a CSV, with clashes and bad dates flagged.",
+ "why": "A content plan often starts in a notes file. Putting it in order by hand invites errors, such as two posts at the same time.\n\nWrite one line per post: date and time, platform and text, separated by bars. The tool sorts them, groups them by week (Monday first), flags clashes and lines it cannot read, and shows counts per platform. Switch to CSV for a spreadsheet. Times are not converted between time zones.",
+ "howTo": [
+  "Write one line per post: 2026-03-03 09:00 | LinkedIn | Text.",
+  "Choose calendar or CSV.",
+  "Fix any flagged lines.",
+  "Copy the plan."
+ ],
+ "faq": [
+  {
+   "q": "Does it schedule posts?",
+   "a": "No. It organises a plan. Posting needs your platform or a scheduler."
+  },
+  {
+   "q": "What about time zones?",
+   "a": "Times are kept as written."
+  },
+  {
+   "q": "How is the CSV quoted?",
+   "a": "Platform and text are in quotes with doubled inner quotes."
+  }
+ ],
+ "related": [
+  "content-calendar-generator",
+  "content-pillar-planner",
+  "timezone-converter",
+  "timezone-meeting-planner",
+  "social-post-length-checker",
+  "printable-calendar"
+ ],
+ "keywords": [
+  "social media planner",
+  "content calendar csv",
+  "weekly social media calendar",
+  "post schedule planner"
+ ]
+}

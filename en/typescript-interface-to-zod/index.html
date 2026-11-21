@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free TypeScript Interface to Zod Schema Converter | Free Tools</title>
+<meta name="description" content="Convert TypeScript interfaces, types and enums into Zod schemas with inferred types. Supports unions, tuples, records, optional fields. Free, in browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/typescript-interface-to-zod/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/typescript-interface-to-zod/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/typescript-interface-to-zod/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free TypeScript Interface to Zod Schema Converter | Free Tools">
+<meta property="og:description" content="Convert TypeScript interfaces, types and enums into Zod schemas with inferred types. Supports unions, tuples, records, optional fields. Free, in browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/typescript-interface-to-zod/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free TypeScript Interface to Zod Schema Converter | Free Tools">
+<meta name="twitter:description" content="Convert TypeScript interfaces, types and enums into Zod schemas with inferred types. Supports unions, tuples, records, optional fields. Free, in browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"TypeScript Interface to Zod Schema","url":"https://tools.sitefig.net/en/typescript-interface-to-zod/","description":"Convert TypeScript interfaces, types and enums into Zod schemas with inferred types. Supports unions, tuples, records, optional fields. Free, in browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your TypeScript interfaces, types and enums into the input box.","Tick \"Use .strict() on objects\" if unknown keys should be rejected.","Copy the generated Zod module into your project and install zod if you have not already."],"keywords":"typescript interface to zod, typescript to zod schema, convert ts types to zod, free zod schema generator, zod from typescript","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Schema Converters","item":"https://tools.sitefig.net/en/#schema-converters"},{"@type":"ListItem","position":3,"name":"TypeScript Interface to Zod Schema","item":"https://tools.sitefig.net/en/typescript-interface-to-zod/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does the output contain?","acceptedAnswer":{"@type":"Answer","text":"A Zod schema for each declaration, in dependency order, plus inferred type exports from z.infer so your types follow the schema."}},{"@type":"Question","name":"Which TypeScript constructs are supported?","acceptedAnswer":{"@type":"Answer","text":"Interfaces, type aliases, enums, optional and nullable properties, unions, literals, tuples, arrays, Record, Date, index signatures and extends. Conditional and mapped types are not supported."}},{"@type":"Question","name":"How are optional properties written?","acceptedAnswer":{"@type":"Answer","text":"Properties marked with a question mark become .optional(). Types that include null become .nullable(), and a union of several types becomes z.union, so each alternative is still checked at runtime."}},{"@type":"Question","name":"Does it validate formats like email or URL?","acceptedAnswer":{"@type":"Answer","text":"No. TypeScript has no such information, so strings become plain z.string(). Add .email(), .url() or .min() yourself where needed."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#schema-converters">Schema Converters</a></li><li><span aria-current="page">TypeScript Interface to Zod Schema</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>TypeScript Interface to Zod Schema</h1>
+<p class="lede">Converts TypeScript interfaces, type aliases and enums into Zod schemas such as z.object, z.enum, z.union and z.record, with optional and nullable handling and inferred types.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="typescript-interface-to-zod" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>TypeScript types vanish at runtime, so a response from an API or a form submission is only trusted until it arrives with the wrong shape. Zod checks the data at runtime, but writing a schema for every existing interface is repetitive work. Paste your declarations and this tool writes the matching schemas, turns JSDoc comments into descriptions and adds the inferred type exports so the two stay in line. It supports the same subset of TypeScript as the TypeScript to JSON Schema tool: common types, unions, tuples, records and enums, but not conditional or mapped types. You can add .strict() to objects. The conversion runs in your browser and your code is not uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your TypeScript interfaces, types and enums into the input box.</li><li>Tick &quot;Use .strict() on objects&quot; if unknown keys should be rejected.</li><li>Copy the generated Zod module into your project and install zod if you have not already.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What does the output contain?</summary><p>A Zod schema for each declaration, in dependency order, plus inferred type exports from z.infer so your types follow the schema.</p></details>
+<details><summary>Which TypeScript constructs are supported?</summary><p>Interfaces, type aliases, enums, optional and nullable properties, unions, literals, tuples, arrays, Record, Date, index signatures and extends. Conditional and mapped types are not supported.</p></details>
+<details><summary>How are optional properties written?</summary><p>Properties marked with a question mark become .optional(). Types that include null become .nullable(), and a union of several types becomes z.union, so each alternative is still checked at runtime.</p></details>
+<details><summary>Does it validate formats like email or URL?</summary><p>No. TypeScript has no such information, so strings become plain z.string(). Add .email(), .url() or .min() yourself where needed.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/zod-to-typescript-type/"><span class="link-card__title">Zod Schema to TypeScript Type</span><span class="link-card__desc">Statically convert Zod schema source (z.object, z.string().min(), z.enum, z.union, z.array, z.record, optional/nullable/nullish, extend/merge, describe) into the equivalent TypeScript types, i.e. what z.infer would produce. The code is parsed, never executed. .transform() outputs and custom refinements are not inferable.</span></a></li><li><a class="link-card" href="/en/typescript-to-json-schema/"><span class="link-card__title">TypeScript Interface to JSON Schema</span><span class="link-card__desc">Convert TypeScript interfaces, type aliases and enums to JSON Schema draft-07 (definitions + $ref). Supports optional props, unions, literals, tuples, arrays, Record, Date, index signatures, extends/intersections and JSDoc descriptions. Not supported: conditional/mapped types, keyof/typeof and most utility generics.</span></a></li><li><a class="link-card" href="/en/json-schema-to-zod/"><span class="link-card__title">JSON Schema to Zod</span><span class="link-card__desc">Turn a JSON Schema (draft-07 / 2020-12 subset: types, formats, bounds, enum/const, anyOf/oneOf/allOf, $ref to $defs) into Zod source code.</span></a></li><li><a class="link-card" href="/en/json-to-zod/"><span class="link-card__title">JSON to Zod Schema</span><span class="link-card__desc">Generate a Zod schema (and inferred type) from a JSON sample.</span></a></li><li><a class="link-card" href="/en/graphql-schema-to-zod/"><span class="link-card__title">GraphQL Schema to Zod</span><span class="link-card__desc">Convert GraphQL SDL types, inputs, enums and unions into Zod schemas (z.object, z.enum, z.union, .nullable() / .optional(), z.array). Custom scalars map to z.string() (edit as needed). Recursive types use z.lazy.</span></a></li><li><a class="link-card" href="/en/json-schema-generator/"><span class="link-card__title">JSON Schema Generator</span><span class="link-card__desc">Infer a draft-07 JSON Schema from a sample document, with optional string format detection.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

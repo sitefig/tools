@@ -1,0 +1,46 @@
+{
+ "id": "tracker-detector",
+ "seoTitle": "Free Tracker Detector for Page Source (HTML)",
+ "metaDescription": "Paste page source to find third-party trackers, analytics, ad pixels, social widgets, fonts and CDNs. Free; runs in your browser.",
+ "intro": "Paste the HTML source of a page to list third-party hosts and match them against known trackers, analytics, advertising, social, chat and consent services, plus inline code signatures.",
+ "why": "Before you write a privacy policy, set up a cookie banner or answer a data protection question, you need to know which third parties a page really talks to. Tags are added by marketing, plugins and themes over the years, and nobody remembers them all.\n\nThis tool reads the HTML you paste, extracts every external host and groups known ones by category such as advertising, analytics, session replay, tag managers, social widgets, fonts and CDNs. It also looks for inline snippets such as tracking initialisation code. Pasted source only shows what is in the HTML itself: scripts loaded later by other scripts will not appear, so a network capture gives a fuller picture. The analysis runs locally.",
+ "howTo": [
+  "View the page source in your browser and copy the HTML.",
+  "Paste it into the input box.",
+  "Optionally enter the first-party domain, otherwise it is read from the canonical or og:url tag.",
+  "Run the tool and review the hosts grouped by category."
+ ],
+ "faq": [
+  {
+   "q": "Does it find every tracker?",
+   "a": "No. It only sees hosts and snippets written in the pasted HTML. Trackers that other scripts inject at runtime, or that load after consent, will be missed. A HAR capture gives a fuller list."
+  },
+  {
+   "q": "How does it know what is first party?",
+   "a": "It uses the domain you enter, or the canonical link and og:url in the page. Hosts that share the same base domain are skipped as first party."
+  },
+  {
+   "q": "Why does it list hosts it cannot identify?",
+   "a": "Unknown external hosts are shown separately with a count. They may be your own CDN, an unlisted vendor or a harmless resource, so check them manually."
+  },
+  {
+   "q": "Is the source code sent to a server?",
+   "a": "No. The matching is done in your browser against built-in lists, and the pasted HTML is not uploaded."
+  }
+ ],
+ "related": [
+  "har-analyzer",
+  "cookie-flag-analyzer",
+  "cookie-policy-generator",
+  "privacy-policy-generator",
+  "csp-builder",
+  "browser-fingerprint"
+ ],
+ "keywords": [
+  "tracker detector",
+  "find trackers on a website",
+  "detect third party scripts",
+  "analytics pixel finder",
+  "website tracker scanner html"
+ ]
+}

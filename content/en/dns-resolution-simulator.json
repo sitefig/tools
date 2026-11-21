@@ -1,0 +1,46 @@
+{
+ "id": "dns-resolution-simulator",
+ "seoTitle": "Free DNS Lookup Simulator - Test Zone Records Offline",
+ "metaDescription": "Paste DNS records, ask for a name and type, and see the answer an authoritative server would give: CNAME chains, wildcards, NODATA, NXDOMAIN, referrals.",
+ "intro": "Write your records, pick a name and record type, and see what a DNS server holding that zone would reply. It simulates your own data; no real lookup is made.",
+ "why": "DNS mistakes are hard to see from the zone file alone. A wildcard that does not match the apex, a CNAME that points outside the zone, or a name that exists but has no record of the type you asked for all behave differently, and the difference between NODATA and NXDOMAIN matters to mail servers and certificate issuers.\n\nThis simulator applies the standard authoritative lookup rules to the records you paste: it follows CNAME chains, uses wildcards only when the closest encloser exists, returns NODATA for empty non-terminal names, hands back a referral when a name sits below a delegation, and adds glue addresses for MX, NS and SRV targets that live in the zone. It is a model of one authoritative server, not a recursive resolver, so it does not know what the real internet currently returns. For that you need an actual lookup, which a page that sends nothing over the network cannot do.",
+ "howTo": [
+  "Enter the zone, such as example.com.",
+  "Paste records as TYPE name value, one per line.",
+  "Enter the name to query and choose the record type.",
+  "Read the status, answer section and the step-by-step explanation."
+ ],
+ "faq": [
+  {
+   "q": "Does this query the real DNS?",
+   "a": "No. It only evaluates the records you paste. Use it to check how a zone would answer, not to see live data or propagation."
+  },
+  {
+   "q": "Why NODATA instead of NXDOMAIN?",
+   "a": "NXDOMAIN means the name does not exist at all. NODATA means the name exists, perhaps with other record types or with names beneath it, but not with the type you asked for."
+  },
+  {
+   "q": "Why does my wildcard not match?",
+   "a": "A wildcard only applies to names that do not exist, and only below a closest encloser that does exist. It never matches the name it hangs off, and an explicit record of any type at the queried name hides it."
+  },
+  {
+   "q": "Which record types are supported?",
+   "a": "A, AAAA, CNAME, MX, TXT, NS, SRV, CAA and PTR. DNSSEC and zone transfers are not modelled."
+  }
+ ],
+ "related": [
+  "dns-record-generator",
+  "dns-soa-dnssec-inspector",
+  "dns-spf-record-flattener",
+  "cron-explainer",
+  "ip-subnet-calculator",
+  "dmarc-generator"
+ ],
+ "keywords": [
+  "dns lookup simulator",
+  "dns resolution simulator",
+  "dns zone tester offline",
+  "cname chain checker",
+  "dns nodata vs nxdomain"
+ ]
+}

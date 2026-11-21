@@ -1,0 +1,46 @@
+{
+  "id": "keyword-placement-checker",
+  "seoTitle": "Keyword Placement & Content Score Checker",
+  "metaDescription": "Check where your target keyword appears: title, meta description, H1, URL, first paragraph, alt text and density, with a simple score. Local and instant.",
+  "intro": "Paste a page (HTML or plain text) and a target keyword to see whether it appears in the places search engines and readers look first.",
+  "why": "The checker looks at the title, meta description, H1, number of H1s, subheadings, image alt text and file names, the first 100 words, the URL, keyword count and density, keyword stuffing and body length, then gives a weighted pass score. With plain text only the on-page checks apply.\n\nIt measures placement, not quality: there is no ideal keyword density, and exact-match checks miss synonyms and variants that readers value. Use the score as a checklist, then judge whether the page truly answers the query.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the page source (best) or article text.",
+    "Enter the target keyword and the page URL if you want the URL check.",
+    "Run it and work through any FAIL lines.",
+    "Re-read the page for the reader, not just the checker."
+  ],
+  "faq": [
+    {
+      "q": "What is a good keyword density?",
+      "a": "There is no target. Use the phrase naturally; anything above about 3% on a long page starts to read as stuffing."
+    },
+    {
+      "q": "Why does a short page fail the length check?",
+      "a": "The check uses a rule of thumb of 300 words for an article. Some pages, such as product pages, are fine shorter."
+    },
+    {
+      "q": "Does it work for multi-word keywords?",
+      "a": "Yes. It matches the whole phrase in order, ignoring case and hyphens."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "keyword-density",
+    "keyword-extractor",
+    "seo-inspector",
+    "title-length-checker",
+    "readability",
+    "heading-analyzer"
+  ],
+  "keywords": [
+    "keyword checker",
+    "keyword placement",
+    "on-page seo checker",
+    "content score",
+    "keyword in title"
+  ]
+}

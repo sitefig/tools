@@ -1,0 +1,45 @@
+{
+ "id": "pdf-ocr-searchable",
+ "seoTitle": "PDF OCR: Make Scanned PDFs Searchable, No Upload",
+ "metaDescription": "Run OCR on scanned PDF pages and add an invisible text layer so the file becomes searchable and copyable. English text, runs in your browser.",
+ "intro": "Renders each scanned page, recognises the printed English text with the on-device OCR engine and adds the text as an invisible layer on top of the original page.",
+ "why": "A scanned PDF is only pictures. You cannot search it, select a sentence or let a screen reader read it. Adding a hidden text layer fixes that and leaves the page looking exactly as it did. The original page content is kept untouched.\n\nOCR is slow and imperfect, so pages are limited to 60 per run and a resolution of 200 DPI is the default. Lines are placed from their recognised position and stretched to the measured width, so selecting text highlights roughly the right area rather than exact words. English printed text only; handwriting and other scripts are not recognised. The recognised text is also shown so you can copy it.",
+ "howTo": [
+  "Choose a scanned PDF.",
+  "Set the pages if you only need some.",
+  "Press Run; the first run downloads the OCR model once.",
+  "Download the searchable PDF or copy the recognised text."
+ ],
+ "faq": [
+  {
+   "q": "Does it replace the scan?",
+   "a": "No. Pages keep their image; the text layer is added invisibly on top."
+  },
+  {
+   "q": "How accurate is it?",
+   "a": "Good on clean printed English text at 200 DPI or more. Poor scans, small print and tables lower the accuracy; the page report shows a confidence percentage."
+  },
+  {
+   "q": "Can it read other languages?",
+   "a": "Not yet. The model is English (Latin script) only."
+  },
+  {
+   "q": "Why skip pages that already have text?",
+   "a": "Adding OCR text over real text would duplicate it. Untick the option to force OCR."
+  }
+ ],
+ "related": [
+  "ocr-image-to-text",
+  "pdf-text-extractor",
+  "pdf-to-image",
+  "pdf-compress",
+  "pdf-table-extractor",
+  "pdf-info"
+ ],
+ "keywords": [
+  "pdf ocr online",
+  "make scanned pdf searchable",
+  "ocr pdf offline",
+  "searchable pdf creator"
+ ]
+}

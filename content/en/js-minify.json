@@ -1,0 +1,47 @@
+{
+ "id": "js-minify",
+ "seoTitle": "Free JavaScript Minifier - Compress JS Online",
+ "metaDescription": "Free online JavaScript minifier. Remove comments and whitespace safely while keeping strings, regex and template literals. No renaming of variables.",
+ "intro": "Strip comments and unnecessary whitespace from JavaScript. Strings, regular expressions and template literals are preserved, and variable names are not changed.",
+ "why": "Smaller scripts download and parse faster, and comments and indentation are only for humans. Full minifiers rename variables and rewrite code, which is powerful but needs a build step and can hide bugs.\n\nThis tool takes the conservative route. It removes comments and whitespace only, keeping a space or newline where the language needs one so that statements do not run together. Automatic semicolon insertion is respected, so code written without semicolons keeps working. Strings, regex literals and template literals are protected. It suits a small script, a bookmarklet or an inline snippet. For production bundles, use a build tool with tree-shaking and renaming. Nothing is uploaded; the work happens in your browser.",
+ "howTo": [
+  "Paste your JavaScript into the input box.",
+  "Read the compact output.",
+  "Copy it into your page, bookmarklet or file.",
+  "Run the result to confirm it behaves as before."
+ ],
+ "faq": [
+  {
+   "q": "Does it rename variables like Terser does?",
+   "a": "No. Names stay as they are, so savings are smaller than with a full minifier, but there is less risk of breaking code and the output remains debuggable."
+  },
+  {
+   "q": "Is code without semicolons safe?",
+   "a": "Yes. The tool keeps line breaks where removing them could change meaning through automatic semicolon insertion, so code written in that style still runs the same."
+  },
+  {
+   "q": "Are strings and regular expressions protected?",
+   "a": "Yes. Strings, regular expression literals and template literals are recognised and copied untouched, so text such as \"// not a comment\" is not damaged."
+  },
+  {
+   "q": "Should I use this for production?",
+   "a": "For small scripts, yes. For a full application, a build-time minifier with renaming and dead-code removal will produce smaller files."
+  }
+ ],
+ "related": [
+  "js-format",
+  "css-minify",
+  "html-minify",
+  "gzip-compress",
+  "regex-tester",
+  "json-minify"
+ ],
+ "keywords": [
+  "javascript minifier online",
+  "minify js",
+  "compress javascript online",
+  "free js minify",
+  "js compressor",
+  "minify javascript without renaming"
+ ]
+}

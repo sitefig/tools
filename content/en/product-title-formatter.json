@@ -1,0 +1,39 @@
+{
+ "id": "product-title-formatter",
+ "seoTitle": "Product Title Formatter From Brand, Type, Size and Colour",
+ "metaDescription": "Build clean product titles in three orders from attribute fields, with length counts and flags for repeats and promotional words.",
+ "intro": "Joins product attributes into tidy titles and flags titles that are too long or repeat words.",
+ "why": "Marketplace and search titles read best when the most useful words come first, with no repeats or sales shouting. Filling in fields beats typing titles by hand because the order stays consistent across a catalogue.\n\nThe tool offers brand-first, product-first and short versions, counts characters against a limit you set and flags repeated words and promotional wording. It does not know any marketplace's rules, so check those yourself.",
+ "howTo": [
+  "Fill in the attribute fields.",
+  "Set the length limit you want to stay within.",
+  "Pick one of the three versions and copy it."
+ ],
+ "faq": [
+  {
+   "q": "What is the right length?",
+   "a": "It depends on the marketplace and the device. Set your own limit; this tool does not know theirs."
+  },
+  {
+   "q": "Why are promotional words flagged?",
+   "a": "Many marketplaces reject them. It is a review flag, not a rule."
+  },
+  {
+   "q": "Does it translate or add keywords?",
+   "a": "No. Put your own keyword in the keyword field."
+  }
+ ],
+ "related": [
+  "sku-code-generator",
+  "gtin-check-digit-calculator",
+  "coupon-code-generator",
+  "barcode-generator",
+  "check-digit-tool",
+  "profit-margin"
+ ],
+ "keywords": [
+  "product title formatter",
+  "ecommerce product title",
+  "listing title builder"
+ ]
+}

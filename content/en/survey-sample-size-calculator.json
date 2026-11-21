@@ -1,0 +1,45 @@
+{
+ "id": "survey-sample-size-calculator",
+ "seoTitle": "Survey Sample Size Calculator: Confidence and Margin of Error",
+ "metaDescription": "Calculate how many survey responses you need for a confidence level and margin of error, with finite population correction.",
+ "intro": "Choose confidence level, margin of error and population to get the minimum number of responses.",
+ "why": "Use the standard formula n0 = z squared times p(1-p) divided by e squared, then adjust for a small population. With 50% expected proportion you get the safest, largest number.\n\nThis assumes a random sample of completed answers. Divide by your expected response rate to know how many to invite. Self-selected surveys have bias that no sample size fixes. The z values are the standard normal values for each level.",
+ "howTo": [
+  "Enter the population or 0 for very large.",
+  "Pick confidence and margin of error.",
+  "Keep 50% unless you know better.",
+  "Read the responses needed."
+ ],
+ "faq": [
+  {
+   "q": "Why 385?",
+   "a": "At 95% confidence and a 5% margin with a large population, the formula gives 385."
+  },
+  {
+   "q": "Does population matter?",
+   "a": "Only when the sample is a sizeable part of it."
+  },
+  {
+   "q": "What is p?",
+   "a": "Your expected proportion; 50 gives the largest sample."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "margin-of-error-calculator",
+  "ab-test-calculator",
+  "nps-calculator",
+  "csat-calculator",
+  "statistics-calculator",
+  "ab-test-duration-calculator"
+ ],
+ "keywords": [
+  "survey sample size",
+  "sample size calculator",
+  "how many survey responses",
+  "margin of error sample size"
+ ]
+}

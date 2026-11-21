@@ -1,0 +1,44 @@
+{
+ "id": "network-graph-visualizer",
+ "seoTitle": "Network Graph Visualizer: Force-Directed Layout Online",
+ "metaDescription": "Paste an edge list and nodes arrange themselves by attraction and repulsion. Components get colours, size shows degree. Free SVG.",
+ "intro": "Draws a network from pairs of connected names. A force simulation places connected nodes close and unconnected ones apart; a table lists degrees.",
+ "why": "Edge lists come from exports of links, emails, dependencies and social data. Seeing them as a graph shows clusters, bridges and isolated groups quickly.\n\nThe layout is a Fruchterman-Reingold style simulation with a fixed seed, so the same input draws the same picture, and you can change the seed for another arrangement. Direction and repeated edges are ignored. Beyond a few hundred nodes any force layout becomes a hairball; filter the list first.",
+ "howTo": [
+  "Paste one connection per line: a,b or a -> b.",
+  "Turn labels on or off, change the seed for another layout.",
+  "Read the degree table for the most connected nodes.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Are edges directed?",
+   "a": "No, direction is ignored in the picture."
+  },
+  {
+   "q": "What do colours mean?",
+   "a": "Each connected component has its own colour."
+  },
+  {
+   "q": "Why do two runs look different with another seed?",
+   "a": "The simulation starts from a different random start; both layouts show the same graph."
+  },
+  {
+   "q": "Limits?",
+   "a": "Up to 300 nodes and 1500 edges."
+  }
+ ],
+ "related": [
+  "schema-graph-visualizer",
+  "graphviz-dot-lite",
+  "mermaid-lite-renderer",
+  "org-chart-maker",
+  "sankey-diagram-builder",
+  "subdomain-list-analyzer"
+ ],
+ "keywords": [
+  "network graph visualizer",
+  "edge list to graph",
+  "force directed graph online"
+ ]
+}

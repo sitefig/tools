@@ -1,0 +1,46 @@
+{
+  "id": "typing-speed-test",
+  "seoTitle": "Free Typing Speed Test: Check Your WPM and Accuracy",
+  "metaDescription": "Measure your typing speed in words per minute and your accuracy with a timed test. Free, no sign-up, and nothing is stored or sent.",
+  "intro": "A timed typing test with a random passage. It shows words per minute, raw speed, accuracy and time left, using the standard five characters per word.",
+  "why": "Typing speed matters for job applications, school courses, transcription work and just getting through email faster. Most online tests want a login, show adverts or keep a leaderboard, when all you want is a number.\n\nYou get a passage and a timer, and your results appear live. Words per minute counts only correct characters, divided by five, which is the usual convention. Raw speed counts everything you typed, and accuracy shows the share of characters that matched. Choose a limit of 30, 60 or 120 seconds, or no limit. Mistakes are highlighted as you go. Nothing is recorded or uploaded, so your results are yours alone.",
+  "howTo": [
+    "Choose a time limit: 30, 60 or 120 seconds, or no limit.",
+    "Start typing the passage shown; the timer begins with your first key.",
+    "Watch the highlighted characters, WPM, raw speed and accuracy as you type.",
+    "Press New text / restart to try another passage."
+  ],
+  "faq": [
+    {
+      "q": "How is WPM calculated?",
+      "a": "The number of correct characters is divided by five, then divided by the elapsed minutes. Five characters counts as one word, which is the standard measure, so long and short words are treated fairly."
+    },
+    {
+      "q": "What is the difference between WPM and raw speed?",
+      "a": "WPM counts only characters that match the passage. Raw speed counts everything you typed, including mistakes. A big gap between them means you are typing faster than your accuracy allows."
+    },
+    {
+      "q": "Does fixing a mistake count?",
+      "a": "You can correct errors with backspace. The test compares what is in the box with the passage at each moment, so a corrected mistake no longer counts against you, but the time spent fixing it does."
+    },
+    {
+      "q": "Is my score saved anywhere?",
+      "a": "No. Nothing is stored or sent, and there is no leaderboard. Note your result yourself if you want to track progress over time."
+    }
+  ],
+  "related": [
+    "mouse-click-speed-test",
+    "keyboard-event-viewer",
+    "stopwatch",
+    "countdown-timer",
+    "word-counter",
+    "game-2048"
+  ],
+  "keywords": [
+    "typing speed test",
+    "wpm test",
+    "typing test online",
+    "check typing accuracy",
+    "free typing practice"
+  ]
+}

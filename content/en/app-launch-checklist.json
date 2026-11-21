@@ -1,0 +1,47 @@
+{
+ "id": "app-launch-checklist",
+ "seoTitle": "Free App Launch Checklist with Saved Progress",
+ "metaDescription": "Tick off pre-launch tasks for product, store listing, legal and growth. Progress is saved in your browser and you can copy it as Markdown. Free to use.",
+ "intro": "A pre-launch checklist for mobile and web apps, grouped into product, store listing, legal and privacy, and growth. Tick items off, see your progress and copy the list as Markdown.",
+ "why": "Launches go wrong on small things: screenshots in the wrong size, a privacy policy URL that returns 404, a crash reporter nobody switched on, support email nobody reads. Each is easy to fix a week early and painful on launch day.\n\nThis checklist lists around twenty tasks across four groups, so a team can walk through them together. Your ticks are saved in this browser, so you can come back tomorrow, and a counter shows how far along you are. \"Copy as Markdown\" gives you the list with checkboxes for an issue tracker or wiki. Nothing is sent anywhere; the list is general, so add anything your store or industry requires.",
+ "howTo": [
+  "Open the checklist and read through the four groups: Product, Store listing, Legal and privacy, Growth.",
+  "Tick each task when it is done. The progress counter at the top updates.",
+  "Come back later in the same browser to continue, since ticks are saved automatically.",
+  "Use \"Copy as Markdown\" to paste the list into an issue, or Reset to start over."
+ ],
+ "faq": [
+  {
+   "q": "Where is my progress stored?",
+   "a": "In your browser's local storage on this device. It is not uploaded, and it will not appear on another device or browser. Clearing site data, or using a private window, removes it."
+  },
+  {
+   "q": "Is this checklist complete?",
+   "a": "No. It covers the common items, but each app store and market has its own rules, for example age ratings or data-safety forms. Treat it as a base to extend."
+  },
+  {
+   "q": "Can I add my own tasks?",
+   "a": "Not in the page. Use \"Copy as Markdown\" to take the list into your tracker, where you can add tasks of your own."
+  },
+  {
+   "q": "Does this give legal advice?",
+   "a": "No. The legal items remind you to publish terms and a privacy policy and to check consent flows. Have a qualified person review what applies to your product."
+  }
+ ],
+ "related": [
+  "app-store-description-template",
+  "privacy-policy-generator",
+  "terms-generator",
+  "app-performance-budget-calculator",
+  "kanban-board",
+  "gdpr-checklist"
+ ],
+ "keywords": [
+  "app launch checklist",
+  "mobile app release checklist",
+  "pre launch checklist",
+  "free app launch template",
+  "app store submission checklist",
+  "product launch checklist"
+ ]
+}

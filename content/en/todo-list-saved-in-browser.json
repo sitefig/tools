@@ -1,0 +1,45 @@
+{
+ "id": "todo-list-saved-in-browser",
+ "seoTitle": "To-Do List Saved in Your Browser: No Account, No Sign-Up",
+ "metaDescription": "A plain checklist: add items, tick them off, reorder and delete them. Kept in your browser and also works without storage. Free.",
+ "intro": "A simple checklist that is saved in this browser, with reorder and delete buttons, and that still works if storage is blocked.",
+ "why": "Not every list needs an app and an account. Type an item, press Enter, tick it when done. Buttons move items up or down, so reordering needs no dragging.\n\nThe list is kept in your browser local storage, which means it stays on this device and is not sent to a server. If your browser blocks storage, for example in a private window, the page says so and the list lasts only until you close it. Clearing site data removes the list.",
+ "howTo": [
+  "Type an item and press Enter or Add.",
+  "Tick the box when it is done.",
+  "Use Up, Down and Delete on a row.",
+  "Use Clear completed to tidy the list."
+ ],
+ "faq": [
+  {
+   "q": "Where is the list stored?",
+   "a": "In your browser on this device, in localStorage."
+  },
+  {
+   "q": "Will it sync between devices?",
+   "a": "No."
+  },
+  {
+   "q": "What if I clear my browser data?",
+   "a": "The list is lost."
+  },
+  {
+   "q": "Does it work in a private window?",
+   "a": "Yes, but it is forgotten when the window closes."
+  }
+ ],
+ "related": [
+  "kanban-board",
+  "habit-streak-tracker",
+  "eisenhower-matrix-planner",
+  "pomodoro-timer",
+  "sticky-notes-board-local",
+  "writing-goal-tracker"
+ ],
+ "keywords": [
+  "simple to do list online",
+  "checklist saved in browser",
+  "todo list no account",
+  "task list local storage"
+ ]
+}

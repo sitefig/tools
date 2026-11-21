@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Cloudflare wrangler.toml Builder Online | Free Tools</title>
+<meta name="description" content="Free online wrangler.toml builder for Cloudflare Workers. Add KV, R2, D1, Durable Objects, queues, AI, cron triggers, routes, vars and assets.">
+<link rel="canonical" href="https://tools.sitefig.net/en/cloudflare-wrangler-builder/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/cloudflare-wrangler-builder/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/cloudflare-wrangler-builder/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Cloudflare wrangler.toml Builder Online | Free Tools">
+<meta property="og:description" content="Free online wrangler.toml builder for Cloudflare Workers. Add KV, R2, D1, Durable Objects, queues, AI, cron triggers, routes, vars and assets.">
+<meta property="og:url" content="https://tools.sitefig.net/en/cloudflare-wrangler-builder/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Cloudflare wrangler.toml Builder Online | Free Tools">
+<meta name="twitter:description" content="Free online wrangler.toml builder for Cloudflare Workers. Add KV, R2, D1, Durable Objects, queues, AI, cron triggers, routes, vars and assets.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Cloudflare wrangler.toml Builder","url":"https://tools.sitefig.net/en/cloudflare-wrangler-builder/","description":"Free online wrangler.toml builder for Cloudflare Workers. Add KV, R2, D1, Durable Objects, queues, AI, cron triggers, routes, vars and assets.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the Worker name, entry point and compatibility date.","Choose options such as nodejs_compat and observability, and a route pattern with its zone if needed.","List bindings one per line using the kv, r2, d1, do, queue, ai, var and cron forms.","Copy the TOML into wrangler.toml and replace example ids with real ones."],"keywords":"wrangler toml generator, cloudflare workers config builder, wrangler.toml builder online, free wrangler config tool, cloudflare d1 kv r2 binding config, workers cron trigger config","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"Cloudflare wrangler.toml Builder","item":"https://tools.sitefig.net/en/cloudflare-wrangler-builder/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What format do bindings use?","acceptedAnswer":{"@type":"Answer","text":"Write one binding per line with a type prefix: kv:BINDING:id, r2:BINDING:bucket, d1:BINDING:name:id, do:BINDING:ClassName, queue:BINDING:queue, ai:BINDING, var:KEY=value and cron:expression. Lines are checked and unknown prefixes give an error."}},{"@type":"Question","name":"What is the compatibility date?","acceptedAnswer":{"@type":"Answer","text":"It pins the Workers runtime behaviour to a date so updates do not change your Worker unexpectedly. The field defaults to today's date in the form YYYY-MM-DD and is validated."}},{"@type":"Question","name":"Do Durable Objects need anything else?","acceptedAnswer":{"@type":"Answer","text":"Yes, a migration. The tool adds a migrations entry for each Durable Object class, so you can deploy, but you must also export the class from your Worker code."}},{"@type":"Question","name":"Does it create the resources?","acceptedAnswer":{"@type":"Answer","text":"No. It only writes configuration. Create KV namespaces, buckets and databases with wrangler or the dashboard, then put their real ids into the file."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">Cloudflare wrangler.toml Builder</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Cloudflare wrangler.toml Builder</h1>
+<p class="lede">Generate a wrangler.toml for a Cloudflare Worker with compatibility date and flags, routes, vars, KV, R2, D1, Durable Object, queue and AI bindings, cron triggers and static assets.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="cloudflare-wrangler-builder" data-module="devgen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A Worker is configured through wrangler.toml, and each binding type has its own table with slightly different field names: binding, bucket_name, database_id, class_name. Copying from documentation and editing ids leads to typos that only show up at deploy time.</p>
+<p>List your bindings one per line in a compact form, such as kv:CACHE:namespace-id, r2:UPLOADS:bucket, d1:DB:name:id, do:COUNTER:Counter, queue:JOBS:queue-name, ai:AI, var:KEY=value and cron:*/15 * * * *. The tool writes the correct tables, sets the compatibility date, adds the nodejs_compat flag and observability if you ask, and creates the migration entry that Durable Objects need. Placeholder ids must be replaced with your real ones. Nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the Worker name, entry point and compatibility date.</li><li>Choose options such as nodejs_compat and observability, and a route pattern with its zone if needed.</li><li>List bindings one per line using the kv, r2, d1, do, queue, ai, var and cron forms.</li><li>Copy the TOML into wrangler.toml and replace example ids with real ones.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What format do bindings use?</summary><p>Write one binding per line with a type prefix: kv:BINDING:id, r2:BINDING:bucket, d1:BINDING:name:id, do:BINDING:ClassName, queue:BINDING:queue, ai:BINDING, var:KEY=value and cron:expression. Lines are checked and unknown prefixes give an error.</p></details>
+<details><summary>What is the compatibility date?</summary><p>It pins the Workers runtime behaviour to a date so updates do not change your Worker unexpectedly. The field defaults to today's date in the form YYYY-MM-DD and is validated.</p></details>
+<details><summary>Do Durable Objects need anything else?</summary><p>Yes, a migration. The tool adds a migrations entry for each Durable Object class, so you can deploy, but you must also export the class from your Worker code.</p></details>
+<details><summary>Does it create the resources?</summary><p>No. It only writes configuration. Create KV namespaces, buckets and databases with wrangler or the dashboard, then put their real ids into the file.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/toml-formatter/"><span class="link-card__title">TOML Formatter</span><span class="link-card__desc">Normalise &quot;key = value&quot; spacing, blank lines before tables, array indentation; optionally sort keys inside each table.</span></a></li><li><a class="link-card" href="/en/json-to-toml/"><span class="link-card__title">JSON to TOML</span><span class="link-card__desc">Convert a JSON object to TOML (tables and arrays of tables). TOML cannot represent null.</span></a></li><li><a class="link-card" href="/en/github-actions-generator/"><span class="link-card__title">GitHub Actions CI Generator</span><span class="link-card__desc">CI workflow for node, python, go or rust with version matrix and dependency caching.</span></a></li><li><a class="link-card" href="/en/cache-control-builder/"><span class="link-card__title">Cache-Control Header Builder</span><span class="link-card__desc">Compose a Cache-Control header from directives or a preset, with conflict warnings and snippets for nginx, Apache and Express.</span></a></li><li><a class="link-card" href="/en/package-json-generator/"><span class="link-card__title">package.json Generator</span><span class="link-card__desc">Starter package.json with metadata, ESM/CommonJS type, scripts and engines.</span></a></li><li><a class="link-card" href="/en/tsconfig-generator/"><span class="link-card__title">tsconfig.json Generator</span><span class="link-card__desc">tsconfig presets for Node, browser apps, libraries and React.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

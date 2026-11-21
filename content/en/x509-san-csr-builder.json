@@ -1,0 +1,43 @@
+{
+ "id": "x509-san-csr-builder",
+ "seoTitle": "Free CSR Generator with SAN (DNS, IP, Email)",
+ "metaDescription": "Generate a key pair and a PKCS#10 CSR with Subject Alternative Names in your browser. ECDSA or RSA, nothing leaves the page. Free.",
+ "intro": "Create a new key pair and a PKCS#10 certificate signing request with Subject Alternative Names for DNS names, IP addresses, emails and URIs. You get the CSR and the private key in PEM format.",
+ "why": "Modern browsers ignore the common name and look at Subject Alternative Names, so a request without SANs gives a certificate that browsers reject. Command-line OpenSSL can do it, but it needs a config file with a SAN section, and getting the syntax right on the first try is rare.\n\nThis builder takes a list of names, a key type and your organisation details, then creates the key and request in your browser. Nothing is uploaded, and the private key is shown only on your screen. You must still store that key safely, as anyone who has it can impersonate your site. Treat a key generated on any web page with caution, and for production systems prefer generating the key on the server.",
+ "howTo": [
+  "Enter the Subject Alternative Names, one per line, with optional DNS:, IP:, email: or URI: prefixes.",
+  "Choose a key type: ECDSA P-256, P-384 or RSA 2048, 3072 or 4096.",
+  "Fill in the common name, organisation and other subject fields as needed.",
+  "Copy the CSR to send to your certificate authority, and store the private key safely."
+ ],
+ "faq": [
+  {
+   "q": "Is the private key sent anywhere?",
+   "a": "No. Both the key and the CSR are made in your browser and shown on the page. Copy and store the key yourself. If you reload the page, it is gone and cannot be recovered."
+  },
+  {
+   "q": "Should I use this for a production server?",
+   "a": "Prefer generating production keys on the server itself, where they never leave the machine. This tool suits test environments, internal labs and learning how a CSR is structured."
+  },
+  {
+   "q": "What if I leave the common name blank?",
+   "a": "It defaults to the first DNS name in the SAN list. Browsers rely on the SAN entries anyway, so make sure every hostname the certificate must cover is listed there."
+  }
+ ],
+ "related": [
+  "x509-csr-decoder",
+  "x509-viewer",
+  "rsa-key-pair-generator",
+  "ssh-key-inspector",
+  "rsa-pkcs1-pkcs8-converter",
+  "openpgp-inspector"
+ ],
+ "keywords": [
+  "csr generator",
+  "csr with san generator",
+  "generate certificate signing request online",
+  "pkcs10 csr builder",
+  "subject alternative name csr",
+  "free csr generator in browser"
+ ]
+}

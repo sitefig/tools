@@ -1,0 +1,45 @@
+{
+ "id": "emoji-sticker-composer",
+ "seoTitle": "Emoji Sticker Composer: Two Emoji in One Transparent PNG",
+ "metaDescription": "Place two emoji together as a sticker with an optional white border and save a transparent PNG. Free, local. Not Google Emoji Kitchen.",
+ "intro": "Draws two emoji side by side, overlapping or as a big and small pair on a transparent canvas and saves a PNG.",
+ "why": "Emoji Kitchen blends emoji into new artwork made by Google, which is not available offline. This tool does a simpler job: it places two emoji from your device font in one image, with an optional white sticker edge, at any size up to 2048 pixels.\n\nThe emoji look depends on your system font. Check the license of your system emoji set before using the image commercially.",
+ "howTo": [
+  "Type or paste two emoji.",
+  "Pick a layout, size and border.",
+  "Run the tool.",
+  "Download the transparent PNG."
+ ],
+ "faq": [
+  {
+   "q": "Does it blend the two emoji?",
+   "a": "No. It places them together. True blending uses artwork this site does not have."
+  },
+  {
+   "q": "Why does it look different on another computer?",
+   "a": "Each system has its own emoji font."
+  },
+  {
+   "q": "Can I use more than two emoji?",
+   "a": "Only the first emoji of each box is used."
+  },
+  {
+   "q": "Is the PNG transparent?",
+   "a": "Yes, outside the emoji and border."
+  }
+ ],
+ "related": [
+  "emoji-picker",
+  "emoji-code-converter",
+  "meme-generator",
+  "avatar-generator",
+  "image-collage",
+  "quote-image-maker"
+ ],
+ "keywords": [
+  "emoji combiner",
+  "emoji sticker maker",
+  "combine two emoji",
+  "emoji png transparent"
+ ]
+}

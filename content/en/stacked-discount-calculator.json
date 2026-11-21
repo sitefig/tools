@@ -1,0 +1,38 @@
+{
+ "id": "stacked-discount-calculator",
+ "seoTitle": "Stacked Discount Calculator: Percent and Fixed Off",
+ "metaDescription": "Apply several discounts in order, percent or fixed, and see every step, the total saved and the true combined percentage. Free, in your browser.",
+ "intro": "Applies a list of discounts one after another and shows the price after each step, the total saved and the effective combined discount.",
+ "why": "Two discounts of 20 percent and 10 percent do not make 30 percent. The second one applies to the already reduced price, so the real figure is 28 percent. Shops, coupon stacking and trade deals all hide this gap.\n\nThis tool takes percent and fixed-amount discounts in any order, because order matters when a fixed amount is mixed in. It stops you if a step takes off more than the remaining price.",
+ "howTo": [
+  "Enter the original price.",
+  "List the discounts in the order they are applied, one per line: 20% for a percent, 5 for a fixed amount.",
+  "Read each step and the total saved."
+ ],
+ "faq": [
+  {
+   "q": "Does the order of discounts matter?",
+   "a": "For percent only, no: the result is the same. When a fixed amount is mixed in, order changes the result, so list them as the shop applies them."
+  },
+  {
+   "q": "Why is the total less than the sum of the percentages?",
+   "a": "Each percent applies to the price left after the previous discount, so later discounts are worth less in money."
+  },
+  {
+   "q": "Can I add tax?",
+   "a": "Not here. Apply tax to the final price yourself, or use the Discount Calculator, which has a tax field."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "markup-margin",
+  "discount-calculator",
+  "break-even",
+  "roi-calculator"
+ ],
+ "keywords": [
+  "stacked discount calculator",
+  "successive discounts",
+  "multiple discounts price"
+ ]
+}

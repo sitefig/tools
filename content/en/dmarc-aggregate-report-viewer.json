@@ -1,0 +1,41 @@
+{
+ "id": "dmarc-aggregate-report-viewer",
+ "seoTitle": "DMARC Aggregate Report Viewer: Read RUA XML, GZ and ZIP",
+ "metaDescription": "Open DMARC aggregate report XML (also .gz or .zip) and see pass and fail counts by source IP. Free, files stay in your browser.",
+ "intro": "Parses DMARC aggregate reports and summarises pass and fail per sending IP, with the failing sources listed.",
+ "why": "DMARC receivers send you XML reports, usually zipped, that list which IP addresses sent mail as your domain and whether it passed. They are unreadable without a viewer, and the right sources to fix are often buried.\n\nPaste the XML or choose .xml, .gz or .zip files. The tool counts messages, DMARC passes (aligned SPF or DKIM) and failures per source IP, and lists failing records with the raw SPF and DKIM results. Everything happens in your browser. A failing source may be a forwarder, a list or an attacker: find out which before tightening policy.",
+ "howTo": [
+  "Save the report attachment from your inbox.",
+  "Choose the file or paste the XML.",
+  "Read the totals and the table by source IP.",
+  "Fix your own failing senders, then tighten your policy."
+ ],
+ "faq": [
+  {
+   "q": "Which files are supported?",
+   "a": "Plain XML, gzip and single-file zip."
+  },
+  {
+   "q": "What counts as a pass?",
+   "a": "Either SPF or DKIM passing in the policy evaluation, which means aligned."
+  },
+  {
+   "q": "Is my report uploaded?",
+   "a": "No. It is read locally."
+  }
+ ],
+ "related": [
+  "dmarc-record-analyzer",
+  "dmarc-generator",
+  "dkim-record-analyzer",
+  "spf-record-generator",
+  "email-header-analyzer",
+  "eml-viewer"
+ ],
+ "keywords": [
+  "dmarc report viewer",
+  "rua xml",
+  "dmarc aggregate report",
+  "read dmarc reports"
+ ]
+}

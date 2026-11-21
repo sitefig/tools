@@ -1,0 +1,46 @@
+{
+ "id": "css-selector-tester",
+ "seoTitle": "Free CSS Selector Tester Online",
+ "metaDescription": "Paste HTML and a CSS selector to see which elements match and how many. Free CSS selector tester that runs in your browser, nothing is uploaded.",
+ "intro": "Paste a snippet of HTML and a CSS selector, and the tool lists every element the selector matches, with a count and a short preview of each one.",
+ "why": "A selector that looks right often matches the wrong thing: a child combinator that skips a wrapper, a class on the parent instead of the child, or a :not() that quietly excludes too much. Testing it against the real page means opening devtools, finding the node and retyping the selector in the console. This tester lets you paste only the relevant markup, try a selector and see the match count immediately.\n\nIt is handy when you write scraping rules, Cypress or Playwright locators, stylesheet overrides or querySelectorAll calls. The matching uses the browser's own selector engine, so results agree with what your code will do, and your HTML never leaves the page.",
+ "howTo": [
+  "Paste the HTML you want to test into the first box.",
+  "Type a CSS selector such as li.item > a into the second box.",
+  "Read the match count and the list of matched elements below.",
+  "Adjust the selector until only the elements you want are listed."
+ ],
+ "faq": [
+  {
+   "q": "Which selectors are supported?",
+   "a": "Anything your browser's querySelectorAll understands, including attribute selectors, combinators, :not(), :nth-child() and :is(). Support for newer pseudo-classes such as :has() depends on the browser you are using."
+  },
+  {
+   "q": "Why does it say Invalid selector?",
+   "a": "The browser refused to parse the selector. Common causes are an unclosed bracket, a stray comma, or an unescaped character in an id or class name. Fix the syntax and the results appear again."
+  },
+  {
+   "q": "Is my HTML sent anywhere?",
+   "a": "No. The markup is parsed into a detached document in your browser, and nothing is uploaded. Scripts inside the pasted HTML are not executed because the parser only builds a tree."
+  },
+  {
+   "q": "Is the output limited?",
+   "a": "The count covers every match, but only the first 200 matches are listed, and each preview is cut at 200 characters. That keeps very large pastes readable."
+  }
+ ],
+ "related": [
+  "xpath-tester",
+  "css-specificity-calculator",
+  "css-selector-speed-profiler",
+  "html-tag-stripper",
+  "regex-tester",
+  "html-format"
+ ],
+ "keywords": [
+  "css selector tester",
+  "test css selector online",
+  "css selector checker",
+  "queryselectorall tester",
+  "free css selector tool"
+ ]
+}

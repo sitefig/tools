@@ -1,0 +1,45 @@
+{
+ "id": "email-marketing-roi-calculator",
+ "seoTitle": "Email Marketing ROI Calculator: Revenue per Campaign",
+ "metaDescription": "Estimate revenue and ROI of an email campaign from list size, open, click and conversion rates, order value and cost. Free and private.",
+ "intro": "Enter list size, the three rates, order value and cost to see projected revenue, net result and ROI.",
+ "why": "The chain from list to order has four steps and each loses most people. Writing it out shows what a change in one rate is worth: lifting clicks by a point may matter more than a long subject line debate.\n\nThe result is only as good as the rates you enter, so use figures from your own past sends. Add a margin to get profit instead of revenue. It does not model repeat purchases.",
+ "howTo": [
+  "Enter the delivered list size.",
+  "Enter open rate, click rate of opens and conversion rate of clicks.",
+  "Add order value, optional margin and the cost.",
+  "Read revenue, net result and ROI."
+ ],
+ "faq": [
+  {
+   "q": "Is click rate based on opens or sends?",
+   "a": "Here it is a share of opens (click-to-open). Convert if your tool reports clicks per delivered email."
+  },
+  {
+   "q": "Should I add staff time to cost?",
+   "a": "Yes, otherwise ROI looks better than it is."
+  },
+  {
+   "q": "Does it include lifetime value?",
+   "a": "No, only the first order."
+  },
+  {
+   "q": "Is it a forecast?",
+   "a": "No, it is a calculation from your assumptions."
+  }
+ ],
+ "related": [
+  "email-campaign-rates",
+  "roi-calculator",
+  "email-subscriber-value-calculator",
+  "ads-roas-calculator",
+  "profit-margin",
+  "cac-ltv-calculator"
+ ],
+ "keywords": [
+  "email marketing roi",
+  "email campaign revenue calculator",
+  "email roi",
+  "campaign roi calculator"
+ ]
+}

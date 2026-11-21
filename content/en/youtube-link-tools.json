@@ -1,0 +1,45 @@
+{
+  "id": "youtube-link-tools",
+  "seoTitle": "YouTube Link, Video ID & Thumbnail URL Extractor",
+  "metaDescription": "Extract the video ID from YouTube links and get watch, short, embed and thumbnail URLs plus an iframe snippet. Nothing is fetched.",
+  "intro": "Turn any YouTube URL into its video ID and the standard watch, youtu.be, embed (privacy-enhanced) and thumbnail links.",
+  "why": "Paste links in any common form: watch?v=, youtu.be, embed, shorts, live or a bare 11-character ID. For each one the tool prints the canonical URLs, an embed iframe using youtube-nocookie.com, a timestamped link if you set a start time and the five thumbnail image URLs (maxresdefault down to default).\n\nThe tool builds URLs from YouTube's public patterns and never loads them, so it cannot tell whether a thumbnail size exists; maxresdefault is only present for HD uploads.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste one or more YouTube links.",
+    "Optionally set a start time in seconds.",
+    "Copy the URL or iframe you need.",
+    "Add loading=\"lazy\" and a title to embeds for performance and accessibility."
+  ],
+  "faq": [
+    {
+      "q": "Why use youtube-nocookie.com?",
+      "a": "It avoids setting tracking cookies until the visitor plays the video."
+    },
+    {
+      "q": "Which thumbnail size should I use?",
+      "a": "maxresdefault (1280x720) when available, otherwise hqdefault."
+    },
+    {
+      "q": "Does it work with playlist links?",
+      "a": "It extracts the video ID only; playlist parameters are ignored."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "youtube-seo-checker",
+    "url-parser",
+    "url-encode",
+    "qr-code-generator",
+    "utm-builder",
+    "og-twitter-generator"
+  ],
+  "keywords": [
+    "youtube video id",
+    "youtube thumbnail url",
+    "youtube embed code",
+    "youtube link converter"
+  ]
+}

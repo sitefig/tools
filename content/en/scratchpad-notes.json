@@ -1,0 +1,46 @@
+{
+  "id": "scratchpad-notes",
+  "seoTitle": "Free Online Scratchpad: Notes Saved in Your Browser",
+  "metaDescription": "Keep several quick text notes that are saved in your browser only and never uploaded. No sign-up, free to use, works offline once loaded.",
+  "intro": "A simple notepad with multiple notes. Everything you type is saved in your browser's local storage on this device, with no account and no upload.",
+  "why": "Everyone needs somewhere to park a snippet, a phone number, a half-written reply or a to-do list for a few minutes. Opening a full notes app, signing in or creating a document feels like too much when all you want is a blank box.\n\nThis scratchpad saves as you type, keeps several notes in a list on the left, and names each one after its first line. The notes live in your browser's local storage on this device only, not on a server. That makes them private, but also fragile: clearing site data, using a private window or switching browser loses them, and they do not sync between devices. Copy anything important somewhere safe.",
+  "howTo": [
+    "Type into the note area; saving happens automatically.",
+    "Press the add button to start a new note.",
+    "Click a note in the list to switch to it.",
+    "Copy important text elsewhere for a backup."
+  ],
+  "faq": [
+    {
+      "q": "Where are my notes stored?",
+      "a": "In your browser's local storage for this site, on this device. They are never sent to a server. This also means nobody else can read them from here, and you cannot open them from another device."
+    },
+    {
+      "q": "When could I lose my notes?",
+      "a": "If you clear site data or cookies, use a private or incognito window, or the browser blocks storage. A message says when storage is unavailable. Treat the scratchpad as temporary and copy anything you cannot lose."
+    },
+    {
+      "q": "Is there a size limit?",
+      "a": "Browsers allow only a few megabytes of local storage per site, shared with other data this site stores. That is plenty for text notes, but not for pasted images or very large documents."
+    },
+    {
+      "q": "Can I use it offline?",
+      "a": "Once the page has loaded, yes. Notes are saved locally and no connection is needed to type or save them."
+    }
+  ],
+  "related": [
+    "word-counter",
+    "text-diff",
+    "kanban-board",
+    "case-converter",
+    "sort-lines",
+    "typing-speed-test"
+  ],
+  "keywords": [
+    "online scratchpad",
+    "browser notepad",
+    "private notes online no sign up",
+    "free online notepad",
+    "quick notes in browser"
+  ]
+}

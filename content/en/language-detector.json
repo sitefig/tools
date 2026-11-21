@@ -1,0 +1,46 @@
+{
+  "id": "language-detector",
+  "seoTitle": "Free Language Detector: Guess the Language of Text",
+  "metaDescription": "Guess which language a piece of text is written in, from its script and common words. A free heuristic that runs in your browser, nothing is uploaded.",
+  "intro": "Looks at the writing script and counts common words to suggest which language your text is in, with a rough percentage. It covers about twenty languages and is a hint, not a verdict.",
+  "why": "Sometimes you receive text and have no idea what language it is: a support message, a scraped review, a line in a spreadsheet of user input. Before you translate it, route it or set a lang attribute, a quick guess saves time.\n\nThis tool uses two simple signals. First the Unicode script, which separates Cyrillic, Greek, Hebrew, Thai, Korean, Japanese and others at once. Then, for Latin-script text, a list of very common words in languages such as English, Spanish, French, German, Italian, Portuguese and Dutch. It is a heuristic, so short snippets are unreliable. Detection runs in your browser and the text is not uploaded.",
+  "howTo": [
+    "Paste the text whose language you want to identify.",
+    "Read the ranked guesses with their percentages.",
+    "Check the note under the result for warnings about short or unknown text.",
+    "Use a longer sample if the answer looks uncertain."
+  ],
+  "faq": [
+    {
+      "q": "How accurate is it?",
+      "a": "Good for several sentences of ordinary prose, poor for a few words. It counts common words and Unicode scripts, not full language models. Treat the top answer as a hint and confirm important cases another way."
+    },
+    {
+      "q": "Which languages does it recognise?",
+      "a": "Script-based detection covers Japanese, Chinese, Korean, Cyrillic, Arabic script, Hebrew, Greek, Devanagari and Thai. Common-word detection covers English, Spanish, French, German, Italian, Portuguese, Dutch, Swedish, Polish, Turkish and Indonesian."
+    },
+    {
+      "q": "Why does it say Russian or other Cyrillic?",
+      "a": "Many languages share the Cyrillic alphabet. The tool looks for a few telltale letters to pick Ukrainian, Belarusian or Bulgarian, and otherwise falls back to a general answer. It cannot reliably separate every Cyrillic language."
+    },
+    {
+      "q": "What if my language is not listed?",
+      "a": "A Latin-script text in an unsupported language may match no common words, and the tool then says so. It will not invent an answer, but it may also misattribute closely related languages."
+    }
+  ],
+  "related": [
+    "unicode-normalize",
+    "char-info",
+    "text-statistics",
+    "word-counter",
+    "sentiment-lexicon",
+    "keyword-extractor"
+  ],
+  "keywords": [
+    "language detector",
+    "detect language of text",
+    "what language is this text",
+    "identify language online",
+    "free language identifier"
+  ]
+}

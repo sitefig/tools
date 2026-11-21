@@ -1,0 +1,46 @@
+{
+ "id": "json-to-xlsx",
+ "seoTitle": "Free JSON to XLSX Converter - Excel from JSON",
+ "metaDescription": "Convert a JSON array of objects or arrays to an Excel .xlsx file with a bold frozen header row and real numeric cells. Free, runs in your browser.",
+ "intro": "Paste a JSON array of objects, or of arrays, and download an Excel .xlsx file with a bold, frozen header row and numbers stored as numbers.",
+ "why": "APIs and exports give you JSON, but the people who need to read it work in Excel. Opening a CSV generated from JSON can mangle dates and long numbers, and online converters often send the data to a server, which matters for customer lists or internal reports.\n\nThis converter writes a real .xlsx workbook locally. For an array of objects, the header row is the union of all keys, so records with different fields still line up, and missing values stay empty. Nested objects and arrays are stored as JSON text in the cell. Numbers become numeric cells, so sums and sorting work, while strings stay text. You can name the sheet and turn off the bold header. The first row is frozen so it stays visible while you scroll through long tables.",
+ "howTo": [
+  "Paste a JSON array into the input box.",
+  "Choose whether to bold the header row and set a sheet name.",
+  "Run the tool and check the summary of rows and columns.",
+  "Download data.xlsx and open it in Excel or any spreadsheet app."
+ ],
+ "faq": [
+  {
+   "q": "What JSON shapes are accepted?",
+   "a": "An array of objects, where keys become columns, or an array of arrays, where the first row is treated as the header. A single object that is not inside an array is not a table and is rejected."
+  },
+  {
+   "q": "What happens to nested data?",
+   "a": "Objects and arrays inside a record are written into one cell as JSON text. Flatten the data first if you want nested fields as separate columns."
+  },
+  {
+   "q": "Are numbers and dates handled?",
+   "a": "JSON numbers become numeric cells. Dates are plain strings in JSON, so they stay as text rather than becoming Excel dates; format them in the spreadsheet if needed."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "None fixed, but the workbook is built in memory, so very large arrays depend on your browser. Excel itself caps a sheet at 1,048,576 rows."
+  }
+ ],
+ "related": [
+  "csv-to-xlsx",
+  "xlsx-viewer",
+  "json-to-csv",
+  "json-format",
+  "json-validate",
+  "csv-viewer"
+ ],
+ "keywords": [
+  "json to xlsx",
+  "json to excel converter",
+  "convert json to spreadsheet",
+  "json array to xlsx online",
+  "free json excel export"
+ ]
+}

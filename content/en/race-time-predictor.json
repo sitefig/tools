@@ -1,0 +1,45 @@
+{
+ "id": "race-time-predictor",
+ "seoTitle": "Race Time Predictor (Riegel Formula for 5K to Marathon)",
+ "metaDescription": "Predict 5K, 10K, half marathon and marathon times from a recent race result with the Riegel formula, with the pace for each distance.",
+ "intro": "Predict your 5K, 10K, half marathon and marathon times.",
+ "why": "Enter a recent race distance and finish time. The page applies the Riegel formula, T2 = T1 x (D2 / D1) raised to 1.06, and lists predicted times and paces for the other distances.\n\nThe formula assumes you have trained for the longer race. For a marathon predicted from a 5K, treat the result as an upper limit of what you could do with solid mileage. You can change the exponent if you know a better one for yourself.",
+ "howTo": [
+  "Choose the unit.",
+  "Enter your recent race distance and time.",
+  "Keep 1.06 or set your own exponent.",
+  "Read the predicted times and paces."
+ ],
+ "faq": [
+  {
+   "q": "How accurate is Riegel?",
+   "a": "It works best between about 5K and the half marathon for trained runners. Errors grow towards the marathon."
+  },
+  {
+   "q": "Why is my marathon prediction too fast?",
+   "a": "Short races do not show how well you handle fatigue over 3 hours. Low weekly mileage is the usual reason."
+  },
+  {
+   "q": "Can I use miles?",
+   "a": "Yes. Switch the unit and enter the distance in miles."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "running-pace-calculator",
+  "heart-rate-zones",
+  "vo2-max-estimator",
+  "swimming-pace-calculator",
+  "calories-burned-calculator",
+  "one-rep-max-calculator"
+ ],
+ "keywords": [
+  "race time predictor",
+  "Riegel formula",
+  "marathon time prediction",
+  "race predictor"
+ ]
+}

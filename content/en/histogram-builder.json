@@ -1,0 +1,44 @@
+{
+ "id": "histogram-builder",
+ "seoTitle": "Histogram Builder with Bin Width Control (SVG)",
+ "metaDescription": "Bin a list of numbers into a histogram with your own bin width or an automatic one. Free, shows counts per bin, exports SVG.",
+ "intro": "Counts how many of your numbers fall in each bin and draws the bars. You set the bin width and where the first bin starts.",
+ "why": "The shape of a histogram changes with the bin width, so being able to change it is the whole point. Try several widths and watch whether a second peak appears or disappears.\n\nBins include their lower edge and exclude the upper edge; the last bin includes both. The table under the chart lists every bin and count, so you can copy the numbers. Automatic width picks a round number from the Sturges rule, which suits roughly bell-shaped data and can hide detail in skewed data.",
+ "howTo": [
+  "Paste numbers separated by spaces, commas or new lines.",
+  "Set a bin width, or 0 for automatic, and optionally the first bin start.",
+  "Compare the picture with different widths.",
+  "Copy the SVG or the counts table."
+ ],
+ "faq": [
+  {
+   "q": "Which edge belongs to which bin?",
+   "a": "A value equal to a bin edge goes into the bin that starts there. Only the last bin also includes its upper edge."
+  },
+  {
+   "q": "How many numbers can it take?",
+   "a": "Up to 100000."
+  },
+  {
+   "q": "Can I use percentages instead of counts?",
+   "a": "Not yet. The y axis shows counts."
+  },
+  {
+   "q": "Verified?",
+   "a": "Bin counts for the sample were checked against a manual Python count."
+  }
+ ],
+ "related": [
+  "statistics-calculator",
+  "box-plot-maker",
+  "scatter-plot-maker",
+  "column-statistics-summarizer",
+  "outlier-detector",
+  "bar-chart-maker"
+ ],
+ "keywords": [
+  "histogram maker",
+  "histogram bin width",
+  "frequency distribution chart"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "lazy-loading-injector",
+ "seoTitle": "Lazy Loading Injector: Add loading=\"lazy\" to Images and Iframes",
+ "metaDescription": "Paste HTML and get it back with native lazy loading added below the fold, early images left eager and a warning on lazy LCP images.",
+ "intro": "Adds loading=\"lazy\" and decoding=\"async\" to images and iframes while leaving the first images eager.",
+ "why": "Native lazy loading saves data, but lazy-loading the main image delays it.\n\nThe tool leaves the first N images eager, removes loading=\"lazy\" from them, can add fetchpriority=\"high\" to the first one, and warns about lazy images without width and height. It edits only the tags and keeps the rest of your HTML as written.",
+ "howTo": [
+  "Paste your HTML.",
+  "Set how many leading images stay eager.",
+  "Choose whether to include iframes and decoding.",
+  "Copy the result and the change list."
+ ],
+ "faq": [
+  {
+   "q": "Which image is my LCP?",
+   "a": "Check DevTools or Lighthouse; the first-N rule is a guess."
+  },
+  {
+   "q": "Does it touch noscript images?",
+   "a": "No. Images in noscript and head are skipped."
+  },
+  {
+   "q": "What about CSS backgrounds?",
+   "a": "They are not affected by loading attributes."
+  },
+  {
+   "q": "Is my HTML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "image-size-attributes",
+  "srcset-generator",
+  "image-seo",
+  "cls-risk-finder",
+  "resource-hints-generator"
+ ],
+ "keywords": [
+  "lazy loading injector",
+  "add loading lazy to images",
+  "native lazy loading html"
+ ]
+}

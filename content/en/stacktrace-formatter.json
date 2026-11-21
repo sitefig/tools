@@ -1,0 +1,45 @@
+{
+  "id": "stacktrace-formatter",
+  "seoTitle": "Stack Trace Formatter for Java, Python, JavaScript, .NET, Go",
+  "metaDescription": "Paste a stack trace and get the error, the \"caused by\" chain and a clean frame list, with library frames collapsed so your own code stands out.",
+  "intro": "Make a long exception readable: the failing exception and message at the top, your own frames highlighted, framework frames folded away.",
+  "why": "The formatter detects Java/Kotlin, Python, JavaScript/Node, .NET and Go traces, extracts the exception types and messages (including Caused by chains), lists frames with file and line, and collapses frames from common libraries when you name your own package or path (for example com.acme). It reports the first frame in your code.\n\nParsing is by pattern, so unusual log prefixes or truncated traces may need trimming. Remember that Java, JavaScript and .NET list the throw site first, while Python and Go list the most recent call last.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the trace.",
+    "Enter a package or path that identifies your code.",
+    "Keep \"collapse library frames\" on for a short view.",
+    "Start debugging at the first highlighted frame."
+  ],
+  "faq": [
+    {
+      "q": "Which languages are supported?",
+      "a": "Java/Kotlin, Python, JavaScript/Node, .NET and Go panics."
+    },
+    {
+      "q": "Does it remove sensitive paths?",
+      "a": "No, it shows frames as pasted. Remove secrets before sharing."
+    },
+    {
+      "q": "Why are frames hidden?",
+      "a": "Frames that match common library prefixes are collapsed to keep the focus on your code; switch the option off to see all."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "log-privacy-workbench",
+    "secret-detector-redactor",
+    "har-analyzer",
+    "json-format",
+    "code-diff-html",
+    "text-diff"
+  ],
+  "keywords": [
+    "stack trace formatter",
+    "java stack trace",
+    "python traceback",
+    "exception parser"
+  ]
+}

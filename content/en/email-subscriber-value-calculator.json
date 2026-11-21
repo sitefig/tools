@@ -1,0 +1,45 @@
+{
+ "id": "email-subscriber-value-calculator",
+ "seoTitle": "Email Subscriber Value Calculator: Revenue per Subscriber",
+ "metaDescription": "Estimate what one email subscriber is worth from yearly email revenue, list size and average time on the list. Free and private.",
+ "intro": "Divide email revenue by list size, then multiply by how long a subscriber stays.",
+ "why": "The value of a subscriber tells you how much you can spend to get one. Knowing it is worth 8 changes decisions about lead magnets and ads.\n\nThis is a whole-list average, which hides the fact that buyers are worth far more than readers. Use margin to count profit rather than revenue, and split by segment if you have the data.",
+ "howTo": [
+  "Enter yearly revenue from email and average list size.",
+  "Enter the average months a subscriber stays.",
+  "Optionally add margin and acquisition cost.",
+  "Read value per subscriber and payback."
+ ],
+ "faq": [
+  {
+   "q": "Where do I find average months on the list?",
+   "a": "From your tool's retention data, or 1 divided by monthly churn."
+  },
+  {
+   "q": "Should revenue be attributed to email only?",
+   "a": "Yes, use revenue you attribute to email."
+  },
+  {
+   "q": "Is it the same as customer LTV?",
+   "a": "No, it spreads revenue over all subscribers."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "email-list-growth-calculator",
+  "email-marketing-roi-calculator",
+  "cac-ltv-calculator",
+  "retention-calculator",
+  "email-campaign-rates",
+  "roi-calculator"
+ ],
+ "keywords": [
+  "email subscriber value",
+  "value of an email subscriber",
+  "subscriber lifetime value",
+  "email list value"
+ ]
+}

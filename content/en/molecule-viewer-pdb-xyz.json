@@ -1,0 +1,45 @@
+{
+ "id": "molecule-viewer-pdb-xyz",
+ "seoTitle": "Molecule Viewer for PDB and XYZ Files: Ball-and-Stick and Space-Filling",
+ "metaDescription": "Paste PDB or XYZ coordinates and view the molecule as ball-and-stick, sticks or space-filling, turned with two angles. Free, nothing uploaded.",
+ "intro": "Draws a molecule from pasted PDB or XYZ coordinates in ball-and-stick, sticks or space-filling style, which you turn with azimuth and elevation.",
+ "why": "Structure files are plain text. Paste the ATOM lines of a PDB file or an XYZ block and the page draws the atoms with the usual CPK colors, depth-sorted so nearer atoms cover farther ones.\n\nBonds come from CONECT records when the file has them, otherwise they are guessed from distances (under 1.9 angstrom, or 1.25 to hydrogen), and the page says which. Space-filling radii use Bondi van der Waals radii for H, C, N, O, F, P, S and Cl, as listed in a public table, and 1.8 angstrom for other elements. SMILES input is not supported because it needs a 3D structure generator. The picture is static; you turn it by changing the angles.",
+ "howTo": [
+  "Paste a PDB or XYZ file.",
+  "Choose ball-and-stick, sticks or space-filling.",
+  "Change azimuth and elevation to turn the molecule.",
+  "Read the atom and bond counts under the picture."
+ ],
+ "faq": [
+  {
+   "q": "Can I load a SMILES string?",
+   "a": "No. SMILES has no coordinates and generating 3D coordinates is not included."
+  },
+  {
+   "q": "How many atoms can it draw?",
+   "a": "Up to 4000."
+  },
+  {
+   "q": "Are bonds always right?",
+   "a": "Not when guessed. Use a file with CONECT records for exact bonds."
+  },
+  {
+   "q": "Is my file uploaded?",
+   "a": "No, it is drawn in your browser."
+  }
+ ],
+ "related": [
+  "periodic-table-explorer-weights",
+  "molar-mass-calculator-formula",
+  "chemical-equation-balancer",
+  "surface-plotter-3d",
+  "planet-size-comparator",
+  "3d-model-viewer"
+ ],
+ "keywords": [
+  "pdb viewer online",
+  "xyz molecule viewer",
+  "ball and stick model",
+  "molecule 3d viewer"
+ ]
+}

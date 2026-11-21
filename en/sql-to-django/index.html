@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free SQL DDL to Django Models Converter (models.py) | Free Tools</title>
+<meta name="description" content="Convert CREATE TABLE statements to Django models with field types, null/blank, unique, defaults and ForeignKey. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/sql-to-django/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/sql-to-django/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/sql-to-django/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free SQL DDL to Django Models Converter (models.py) | Free Tools">
+<meta property="og:description" content="Convert CREATE TABLE statements to Django models with field types, null/blank, unique, defaults and ForeignKey. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/sql-to-django/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free SQL DDL to Django Models Converter (models.py) | Free Tools">
+<meta name="twitter:description" content="Convert CREATE TABLE statements to Django models with field types, null/blank, unique, defaults and ForeignKey. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"SQL DDL to Django Models","url":"https://tools.sitefig.net/en/sql-to-django/","description":"Convert CREATE TABLE statements to Django models with field types, null/blank, unique, defaults and ForeignKey. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your CREATE TABLE statements into the input box.","Run the conversion to get the model classes.","Copy them into models.py, check field types and on_delete choices, and decide whether the models should be managed by Django."],"keywords":"sql to django models, create table to django model, django inspectdb alternative, free sql to models.py, convert ddl to django orm","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SQL Tools","item":"https://tools.sitefig.net/en/#sql-tools"},{"@type":"ListItem","position":3,"name":"SQL DDL to Django Models","item":"https://tools.sitefig.net/en/sql-to-django/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why is the id field missing?","acceptedAnswer":{"@type":"Answer","text":"Django adds an implicit auto-incrementing id, so a simple integer primary key called id is omitted. Other primary keys are written explicitly."}},{"@type":"Question","name":"How are composite primary keys handled?","acceptedAnswer":{"@type":"Answer","text":"Django does not support them, so the columns become a unique_together constraint. You may need to designate one field as the primary key by hand."}},{"@type":"Question","name":"Will the models match my existing tables?","acceptedAnswer":{"@type":"Answer","text":"They use db_table and db_column, so yes in naming. Set managed = False in Meta if migrations should not touch the tables."}},{"@type":"Question","name":"How are foreign keys written?","acceptedAnswer":{"@type":"Answer","text":"As ForeignKey fields with an on_delete value chosen from the DDL. Check the target model and on_delete behaviour against your intent."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#sql-tools">SQL Tools</a></li><li><span aria-current="page">SQL DDL to Django Models</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>SQL DDL to Django Models</h1>
+<p class="lede">Converts CREATE TABLE statements into Django models.py code with max_length, decimal precision, null and blank, unique, defaults, ForeignKey and db_table so the models map onto the existing tables.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="sql-to-django" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Django ships with inspectdb, but it needs a configured project and a live database. When you only have SQL, for example a dump from a legacy system, you must write the models yourself. This tool generates them from the DDL: the right field class for each column, max_length for varchar, decimal precision, null and blank, unique, defaults and ForeignKey with on_delete. It sets db_table and db_column so the models point at the existing tables instead of creating new ones. The implicit id AutoField is left out, and composite primary keys become unique_together because Django has no composite keys. Review and set managed = False if the tables are not yours to migrate. It runs in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your CREATE TABLE statements into the input box.</li><li>Run the conversion to get the model classes.</li><li>Copy them into models.py, check field types and on_delete choices, and decide whether the models should be managed by Django.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why is the id field missing?</summary><p>Django adds an implicit auto-incrementing id, so a simple integer primary key called id is omitted. Other primary keys are written explicitly.</p></details>
+<details><summary>How are composite primary keys handled?</summary><p>Django does not support them, so the columns become a unique_together constraint. You may need to designate one field as the primary key by hand.</p></details>
+<details><summary>Will the models match my existing tables?</summary><p>They use db_table and db_column, so yes in naming. Set managed = False in Meta if migrations should not touch the tables.</p></details>
+<details><summary>How are foreign keys written?</summary><p>As ForeignKey fields with an on_delete value chosen from the DDL. Check the target model and on_delete behaviour against your intent.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/sql-to-python-sqlalchemy/"><span class="link-card__title">SQL DDL to SQLAlchemy 2.0 Models</span><span class="link-card__desc">Convert CREATE TABLE statements to SQLAlchemy 2.0 declarative models using Mapped[...] / mapped_column(): column types, nullable, unique, primary keys, ForeignKey with ondelete, server defaults, UniqueConstraint and Index in __table_args__. Relationship() attributes are not generated.</span></a></li><li><a class="link-card" href="/en/sql-to-prisma/"><span class="link-card__title">SQL DDL to Prisma Schema</span><span class="link-card__desc">Convert CREATE TABLE statements (PostgreSQL, MySQL or SQLite syntax) to a schema.prisma: models with @id, @default(autoincrement()/now()), @unique, @map/@@map for snake_case columns, @db.* native types, composite @@id/@@unique/@@index, foreign keys as @relation with generated back-relation lists.</span></a></li><li><a class="link-card" href="/en/sql-to-orm-schema/"><span class="link-card__title">SQL DDL to TypeORM / Sequelize Models</span><span class="link-card__desc">Convert CREATE TABLE statements to TypeORM entity classes (decorators, ManyToOne + JoinColumn, Index/Unique) or Sequelize model definitions (DataTypes, associations). For Prisma, Drizzle, Django, SQLAlchemy and GORM use the dedicated converters.</span></a></li><li><a class="link-card" href="/en/sql-to-go-gorm/"><span class="link-card__title">SQL DDL to Go GORM Structs</span><span class="link-card__desc">Convert CREATE TABLE statements to Go GORM model structs: Go-style field names (ID, URL...), pointer types for nullable columns, gorm tags (column, primaryKey, autoIncrement, size, not null, uniqueIndex, default, precision), json tags, belongs-to association fields for foreign keys and TableName() methods.</span></a></li><li><a class="link-card" href="/en/json-to-pydantic/"><span class="link-card__title">JSON to Pydantic Models</span><span class="link-card__desc">Generate Pydantic v2 BaseModel classes from sample JSON: nested classes, List/Optional/Union typing, datetime/date/UUID detection, snake_case attributes with Field(alias=...) when the JSON key is camelCase or a Python keyword. Arrays of objects are merged to find optional fields.</span></a></li><li><a class="link-card" href="/en/sql-dialect-converter/"><span class="link-card__title">SQL DDL Converter (PostgreSQL / MySQL / SQLite)</span><span class="link-card__desc">Convert CREATE TABLE / CREATE INDEX DDL between PostgreSQL, MySQL and SQLite: SERIAL &lt;-&gt; AUTO_INCREMENT, BOOLEAN &lt;-&gt; TINYINT(1), TIMESTAMPTZ &lt;-&gt; DATETIME, UUID &lt;-&gt; CHAR(36), JSONB &lt;-&gt; JSON, defaults (now(), true/false), identifier quoting, PK/UNIQUE/FK and indexes. DDL is parsed and re-emitted; views, triggers, functions, partitions and CHECK constraints are not carried over.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

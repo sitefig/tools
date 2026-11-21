@@ -1,0 +1,45 @@
+{
+ "id": "css-media-query-builder",
+ "seoTitle": "Free CSS Media Query Builder - Widths, Dark Mode, Motion",
+ "metaDescription": "Build a @media rule from widths, orientation, colour scheme, reduced motion, hover and pointer, in classic or range syntax. Free and runs in your browser.",
+ "intro": "Builds a ready-to-paste @media rule from width and height limits, orientation, colour scheme, reduced motion, hover, pointer, resolution and contrast, in classic or modern range syntax.",
+ "why": "Media queries look simple until you need several conditions together. Is it min-width or max-width? Does a 1023px limit leave a gap at 1023.5px? What is the exact spelling of the dark mode or reduced motion feature? This builder lets you set the conditions with fields and menus and returns the finished rule, so you do not have to remember the syntax. You can write it the classic way or with the newer range form such as 640px <= width <= 1023.98px. If you paste some CSS it wraps it inside the rule, and the output also includes a matchMedia call for testing the same query in JavaScript. Everything runs in the page.",
+ "howTo": [
+  "Pick the media type and enter the min and max width or height you need.",
+  "Add optional conditions: orientation, colour scheme, motion, hover, pointer, resolution or contrast.",
+  "Choose classic or range syntax, optionally paste CSS to wrap, and copy the rule."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between classic and range syntax?",
+   "a": "Classic uses (min-width: 640px) and (max-width: 1023px). Range syntax writes (640px <= width <= 1023px), which reads more naturally. Range syntax is newer, so check support for your target browsers."
+  },
+  {
+   "q": "Why does the default max width end in .98?",
+   "a": "It avoids overlapping with a min-width of 1024px in the next rule. Fractional pixel widths exist on high-density screens, so 1023.98px leaves no gap between ranges."
+  },
+  {
+   "q": "What values does it accept for sizes?",
+   "a": "Numbers with px, em, rem, vw, vh, ch, cm, mm, in or pt. Anything else gives an error. Resolution is entered as a plain number of dppx."
+  },
+  {
+   "q": "What does the matchMedia line do?",
+   "a": "It gives the same query as a JavaScript string so you can test it in the console or use it in code to react to the condition."
+  }
+ ],
+ "related": [
+  "responsive-breakpoint-previewer",
+  "css-clamp-calculator",
+  "css-unit-converter",
+  "css-format",
+  "css-grid-area-builder",
+  "flexbox-generator"
+ ],
+ "keywords": [
+  "css media query builder",
+  "media query generator",
+  "prefers-color-scheme media query",
+  "free css media query tool",
+  "media query range syntax"
+ ]
+}

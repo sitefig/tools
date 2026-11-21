@@ -1,0 +1,39 @@
+{
+ "id": "unit-economics-calculator",
+ "seoTitle": "Unit Economics Calculator: Contribution Margin Per Order",
+ "metaDescription": "Contribution per unit from revenue and variable costs, with acquisition cost payback if you add it. Free and private.",
+ "intro": "Computes contribution per unit from revenue and a list of variable costs, and payback of acquisition cost.",
+ "why": "Contribution is revenue minus the costs that move with each unit. It is what each unit has left to pay for fixed costs and profit. If it is negative, growth only makes the loss bigger.\n\nList the variable costs by name, then add acquisition cost and orders per customer to see how many orders it takes to pay back. Fixed costs are left out on purpose.",
+ "howTo": [
+  "Enter revenue per unit.",
+  "List variable costs as name, amount.",
+  "Add acquisition cost and orders per customer."
+ ],
+ "faq": [
+  {
+   "q": "What is a variable cost?",
+   "a": "One that grows with each unit, like product, shipping and payment fees."
+  },
+  {
+   "q": "Where do fixed costs go?",
+   "a": "Compare total contribution with them separately."
+  },
+  {
+   "q": "What if orders per customer is unknown?",
+   "a": "Try a range and see how payback changes."
+  }
+ ],
+ "related": [
+  "mrr-arr-calculator",
+  "churn-rate-calculator",
+  "saas-metrics-calculator",
+  "rule-of-40-calculator",
+  "retention-calculator",
+  "profit-margin"
+ ],
+ "keywords": [
+  "unit economics calculator",
+  "contribution margin per order",
+  "cac payback orders"
+ ]
+}

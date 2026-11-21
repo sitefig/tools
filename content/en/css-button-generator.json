@@ -1,0 +1,41 @@
+{
+ "id": "css-button-generator",
+ "seoTitle": "CSS Button Generator: Hover, Active and Focus States",
+ "metaDescription": "Design a button with padding, colours, border, radius, shadow and font, set hover and active colours, and copy the CSS. Free.",
+ "intro": "Builds button CSS with separate hover, active, focus-visible and disabled states and a live preview.",
+ "why": "A button needs more than a background colour: hover, pressed, keyboard focus and disabled all need to look right.\n\nThis tool writes all of those states, uses :focus-visible so keyboard users see an outline without mouse clicks adding one, and adds a reduced-motion override for the transition. Pick colours with enough contrast: the text colour against each background should reach at least 4.5 to 1.",
+ "howTo": [
+  "Set colours, border, radius, padding and font.",
+  "Choose hover and active backgrounds.",
+  "Try the preview with mouse and keyboard.",
+  "Copy the CSS."
+ ],
+ "faq": [
+  {
+   "q": "Why focus-visible?",
+   "a": "It shows the outline for keyboard focus but not for mouse clicks, which is what most designers want."
+  },
+  {
+   "q": "Does it check contrast?",
+   "a": "No. Use the contrast checker with your chosen colours."
+  },
+  {
+   "q": "Can I use it for links?",
+   "a": "Yes, apply the class to an a element, but keep real buttons for actions."
+  }
+ ],
+ "related": [
+  "css-checkbox-toggle-generator",
+  "box-shadow-generator",
+  "gradient-generator",
+  "css-cubic-bezier",
+  "target-size-checker",
+  "palette-contrast-matrix"
+ ],
+ "keywords": [
+  "css button generator",
+  "button hover css",
+  "button style generator",
+  "css button states"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "iban-validator",
+ "seoTitle": "Free IBAN Validator - Check Length and Checksum",
+ "metaDescription": "Check IBANs for the correct country length and the mod-97 checksum, one per line, with a clear reason for each failure. Free and runs in your browser.",
+ "intro": "Paste one IBAN per line to check the country code, the expected length and the mod-97 checksum. Each line gets a clear valid or invalid result.",
+ "why": "A mistyped IBAN can send a payment to the wrong account or cause a bank to reject a bulk file days later. Most typos are caught by the checksum built into every IBAN, but that only helps if someone actually runs the check. Finance teams, developers building payment forms and anyone cleaning a supplier list run into this regularly.\n\nThis validator handles a list in one go. It strips spaces, checks the structure, compares the length with the country's expected length and then runs the mod-97 test. Valid numbers are shown in the familiar groups of four. It checks structure only: it does not confirm that the account exists, who owns it, or that the bank accepts it. Processing stays in your browser.",
+ "howTo": [
+  "Paste your IBANs into the box, one per line; spaces are fine.",
+  "Run the check.",
+  "Read the result on each line: valid, or the reason it failed.",
+  "Correct the failing lines and check again."
+ ],
+ "faq": [
+  {
+   "q": "Does a valid result mean the account exists?",
+   "a": "No. It means the number is well formed: right characters, right length for the country and a correct checksum. It cannot tell whether the account is open or who it belongs to; only the bank can."
+  },
+  {
+   "q": "What does the checksum catch?",
+   "a": "The mod-97 test catches nearly all single-character typos and most swapped adjacent characters. It will not catch a number that is valid but belongs to someone else."
+  },
+  {
+   "q": "Which countries are supported?",
+   "a": "A built-in table of lengths covers the IBAN countries of Europe and many others across the Middle East, Africa, Asia and the Americas. A country not in the table is reported as unknown."
+  },
+  {
+   "q": "Does the tool check bank codes inside the IBAN?",
+   "a": "No. It does not validate the national bank code or account number format for each country, only the overall length and checksum. Some countries have extra internal checks that are not applied here."
+  }
+ ],
+ "related": [
+  "luhn-validator",
+  "vat-number-format-validator",
+  "check-digit-tool",
+  "mock-credit-card-generator",
+  "crc-calculator",
+  "regex-tester"
+ ],
+ "keywords": [
+  "iban validator",
+  "iban checker online",
+  "validate iban number",
+  "iban mod 97 check",
+  "free iban verification"
+ ]
+}

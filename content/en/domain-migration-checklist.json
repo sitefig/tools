@@ -1,0 +1,45 @@
+{
+ "id": "domain-migration-checklist",
+ "seoTitle": "Domain Migration SEO Checklist: Redirects, Search Console, Sitemaps",
+ "metaDescription": "A step-by-step site move checklist based on Google Search Central: prepare, map URLs, redirect, Change of Address and monitor. Progress saved in your browser.",
+ "intro": "An interactive checklist for moving a site to a new domain or URL structure, in four stages: prepare, map URLs, launch and after launch. Tick items off, copy as Markdown.",
+ "why": "Site moves go wrong when a small step is forgotten: a robots.txt that still blocks everything, a missing Search Console property, redirects that chain or point to the home page. A checklist makes the order clear.\n\nThe steps follow Google Search Central's guide for site moves with URL changes, read in October 2026. Your site may need more, and the guide may change. Ticks are stored in this browser only and are never sent anywhere.",
+ "howTo": [
+  "Work through the four groups from the top.",
+  "Tick each step as you finish it.",
+  "Use Copy as Markdown to paste the list into a ticket.",
+  "Press Reset all to start a new migration."
+ ],
+ "faq": [
+  {
+   "q": "Do I need the Change of Address tool for HTTPS?",
+   "a": "No. Google says it is only for domain moves, not for http to https, www changes or path changes."
+  },
+  {
+   "q": "How long should I keep redirects?",
+   "a": "At least a year, according to Google."
+  },
+  {
+   "q": "Where is my progress stored?",
+   "a": "In your browser's local storage. Clearing site data removes it."
+  },
+  {
+   "q": "Is this the full migration plan?",
+   "a": "No. It covers the search-related steps. Add your own technical and content tasks."
+  }
+ ],
+ "related": [
+  "bulk-redirect-rules",
+  "redirect-map-flattener",
+  "redirect-map-matcher",
+  "sitemap-validator",
+  "robots-tester",
+  "hreflang-validator"
+ ],
+ "keywords": [
+  "site migration checklist",
+  "domain change seo",
+  "change of address google",
+  "website move checklist"
+ ]
+}

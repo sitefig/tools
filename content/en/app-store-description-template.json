@@ -1,0 +1,47 @@
+{
+ "id": "app-store-description-template",
+ "seoTitle": "Free App Store Description Template with Limit Checks",
+ "metaDescription": "Draft an App Store and Google Play listing with name, subtitle, keywords, short and full description, and live character limit checks. Free, in your browser.",
+ "intro": "Fill in your app name, tagline, features, audience and call to action to get listing text for the App Store and Google Play, with character counts against common limits.",
+ "why": "Store listings have hard limits: a 30-character name and subtitle on iOS, a 100-character keyword field and an 80-character short description on Google Play. Writing a lovely sentence that turns out to be 12 characters too long is a waste of an afternoon.\n\nThis template arranges your answers into a listing: name, subtitle, keyword string, short description and a full description with a features list and call to action, each with a count such as 24/30 and OVER when it exceeds the limit. It is a draft to rewrite in your own voice. Limits change, so confirm the current ones in App Store Connect and Google Play Console.",
+ "howTo": [
+  "Enter the app name, tagline and a one-sentence description of what it does.",
+  "List key features, comma separated, and describe who the app is for.",
+  "Add iOS keywords separated by commas, and a closing call to action.",
+  "Check each character count, fix anything marked OVER and copy the text."
+ ],
+ "faq": [
+  {
+   "q": "Which limits does it check?",
+   "a": "App name 30, iOS subtitle 30, iOS keywords 100, Google Play short description 80 and full description 4000 characters. These are values at the time of writing, so confirm them with the stores."
+  },
+  {
+   "q": "How is the short description made?",
+   "a": "It is the first 80 characters of your one-sentence description, cut mechanically. Rewrite it by hand so it reads well and ends on a whole word."
+  },
+  {
+   "q": "Do I repeat keywords in the description on iOS?",
+   "a": "The keyword field is a separate, hidden field, so words there do not need repeating. Avoid duplicating the app name or category words, which are already indexed. Check the guidelines for current advice."
+  },
+  {
+   "q": "Does it follow store policies?",
+   "a": "No. It only formats and counts. Avoid claims you cannot support, and read each store's rules on metadata, which prohibit things such as competitor names and misleading text."
+  }
+ ],
+ "related": [
+  "app-launch-checklist",
+  "ad-copy-counter",
+  "app-name-ideas",
+  "press-release-template",
+  "serp-snippet",
+  "user-persona-template"
+ ],
+ "keywords": [
+  "app store description template",
+  "app store listing generator",
+  "google play description limit",
+  "free aso text template",
+  "ios keywords character count",
+  "app store subtitle length"
+ ]
+}

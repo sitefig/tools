@@ -1,0 +1,43 @@
+{
+ "id": "embedding-cost-calculator",
+ "seoTitle": "Free Embedding Cost Calculator for Vector Search",
+ "metaDescription": "Estimate the cost of embedding a document corpus and the size of the vector index, with re-embedding runs and query costs. Free to use online.",
+ "intro": "Enter the number of documents, their average size, the model and how often you re-embed, and see the indexing cost, monthly query cost and the vector storage you will need.",
+ "why": "Embedding a corpus looks cheap until you multiply it out: a hundred thousand chunks, a few hundred tokens each, re-run every time you change the chunking or switch model. Then the vector database needs memory for every dimension of every chunk, plus index overhead. People tend to find out about both numbers after the first bill.\n\nThis calculator lets you plan before you commit. Choose a listed model or enter your own price per million tokens, and compare scenarios in seconds. List prices change often, so treat the preset prices as a starting point and check your provider. The sums run in your browser and nothing you enter is stored.",
+ "howTo": [
+  "Pick an embedding model, or choose Custom price and enter the cost per million tokens.",
+  "Enter the number of documents or chunks and their average size in tokens, words or characters.",
+  "Set how many times you will embed the corpus, the vector dimensions and your monthly query volume.",
+  "Read the indexing cost, query cost and estimated storage in the result."
+ ],
+ "faq": [
+  {
+   "q": "Are the preset prices current?",
+   "a": "They are list prices at the time of writing and providers change them often. Use Custom price with the figure from your provider's pricing page for any decision that matters."
+  },
+  {
+   "q": "How are words and characters turned into tokens?",
+   "a": "Words are multiplied by about 1.33 and characters are divided by about 4. These are rough English averages. Other languages and code usually need more tokens, so measure a sample with a real tokenizer."
+  },
+  {
+   "q": "How is storage calculated?",
+   "a": "Documents times dimensions times 4 bytes gives the raw float32 size, and the tool adds a rough 50 percent for an HNSW index. Real overhead depends on your database and its settings."
+  }
+ ],
+ "related": [
+  "embedding-token-cost-estimator",
+  "llm-cost-calculator",
+  "tokenizer-cost-estimator",
+  "embedding-similarity",
+  "text-chunk-splitter",
+  "rag-chunking-visualizer"
+ ],
+ "keywords": [
+  "embedding cost calculator",
+  "openai embedding cost",
+  "vector storage size calculator",
+  "text-embedding-3-small cost",
+  "rag embedding budget",
+  "free embedding price estimator"
+ ]
+}

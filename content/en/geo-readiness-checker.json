@@ -1,0 +1,46 @@
+{
+  "id": "geo-readiness-checker",
+  "seoTitle": "AI Search (GEO) Readiness Checker for Web Pages",
+  "metaDescription": "Rule-based check of a page for answer-engine friendliness: question headings, direct answers, lists, sources, author and dates, snippet controls. Local only.",
+  "intro": "See how well a page is structured for AI answers and featured snippets: clear sections, short direct answers, facts, sources, authorship and no accidental blocking.",
+  "why": "The checker reads the HTML you paste and tests for meta robots or data-nosnippet rules that block excerpts, descriptive subheadings, question-style headings, sections that open with a short direct answer, paragraph length, lists and tables, concrete facts, external citations, a named author, dates in markup and JSON-LD. It also lists the first sentence of each section, which is the passage most likely to be quoted.\n\nThese are heuristics based on public guidance; no search or AI engine publishes a formula, and passing does not guarantee citations. The best preparation is still accurate, original, well-sourced content.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Copy the page source and paste it in.",
+    "Run the checks.",
+    "Fix FAIL items that make sense for your content.",
+    "Read the quoted passages and tighten any that would not stand alone."
+  ],
+  "faq": [
+    {
+      "q": "Is GEO a ranking factor?",
+      "a": "GEO (generative engine optimisation) is a label for making content easy for AI systems to use and cite. There is no official score; this tool gives a checklist."
+    },
+    {
+      "q": "Does it check llms.txt?",
+      "a": "No, that is a site-level file. Use the llms.txt generator for it."
+    },
+    {
+      "q": "Why does it need HTML?",
+      "a": "Authorship, dates, schema and robots rules live in the markup, which plain text does not have."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "llms-txt-generator",
+    "ai-bot-robots-builder",
+    "jsonld-inspector",
+    "eeat-signal-checker",
+    "heading-analyzer",
+    "readability"
+  ],
+  "keywords": [
+    "generative engine optimization",
+    "ai search seo",
+    "geo checker",
+    "answer engine optimization",
+    "ai overview readiness"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "markdown-formatter",
+ "seoTitle": "Markdown Formatter and Table Aligner",
+ "metaDescription": "Normalise Markdown: one list marker, renumbered lists, tidy headings, aligned tables and blank lines. Code blocks are left alone. Free.",
+ "intro": "Tidies Markdown lists, headings, tables and blank lines without touching code blocks.",
+ "why": "Markdown from many authors mixes list markers, odd heading spacing and ragged tables. The tool picks one bullet marker, renumbers ordered lists, tidies # headings, pads tables to equal column widths with their alignment, puts blank lines around blocks and removes trailing spaces except hard line breaks.\n\nAs a check, real Markdown files were formatted and rendered again with a CommonMark parser: 498 of 500 rendered to the same HTML, and 99 of 100 in a second set. The differences were mixed bullet markers at one level, which now join one list, and a code block with no closing fence. Review the output.",
+ "howTo": [
+  "Paste Markdown.",
+  "Pick the bullet marker.",
+  "Choose whether to renumber lists and align tables.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Does it change how the page renders?",
+   "a": "Rarely. Mixed bullet markers at the same level become one list."
+  },
+  {
+   "q": "What about wide characters in tables?",
+   "a": "Column width uses string length, so East Asian text may look uneven."
+  },
+  {
+   "q": "Does it rewrap paragraphs?",
+   "a": "No."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "markdown-linter",
+  "markdown-to-html",
+  "markdown-preview",
+  "markdown-table-generator",
+  "markdown-to-plain-text",
+  "csv-to-markdown-table"
+ ],
+ "keywords": [
+  "markdown formatter online",
+  "markdown table aligner",
+  "markdown beautifier",
+  "format markdown lists"
+ ]
+}

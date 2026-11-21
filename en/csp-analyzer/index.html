@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free CSP Analyzer: Grade a Content-Security-Policy | Free Tools</title>
+<meta name="description" content="Paste a Content-Security-Policy to find unsafe-inline, wildcards, risky hosts and missing directives, and get a grade. Free, in-browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/csp-analyzer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/csp-analyzer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/csp-analyzer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free CSP Analyzer: Grade a Content-Security-Policy | Free Tools">
+<meta property="og:description" content="Paste a Content-Security-Policy to find unsafe-inline, wildcards, risky hosts and missing directives, and get a grade. Free, in-browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/csp-analyzer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free CSP Analyzer: Grade a Content-Security-Policy | Free Tools">
+<meta name="twitter:description" content="Paste a Content-Security-Policy to find unsafe-inline, wildcards, risky hosts and missing directives, and get a grade. Free, in-browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"CSP Analyzer","url":"https://tools.sitefig.net/en/csp-analyzer/","description":"Paste a Content-Security-Policy to find unsafe-inline, wildcards, risky hosts and missing directives, and get a grade. Free, in-browser.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Copy your Content-Security-Policy header or meta tag.","Paste it into the input box.","Run the tool to see the grade and the list of findings.","Apply the suggested fixes and test the policy in Report-Only mode."],"keywords":"csp analyzer, csp checker online, content security policy validator, check csp for unsafe-inline, csp evaluator free","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Privacy – Browser","item":"https://tools.sitefig.net/en/#privacy-browser"},{"@type":"ListItem","position":3,"name":"CSP Analyzer","item":"https://tools.sitefig.net/en/csp-analyzer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is the grade calculated?","acceptedAnswer":{"@type":"Answer","text":"Each finding subtracts points by severity: high 30, medium 12 and low 4, starting from 100. The score maps to a letter from A to F. It is a quick signal, not a formal audit."}},{"@type":"Question","name":"Why is a CDN host flagged?","acceptedAnswer":{"@type":"Answer","text":"Some public hosts serve JSONP endpoints or user-uploaded scripts that can be used to bypass a host allowlist. Nonces with strict-dynamic are the usual safer approach."}},{"@type":"Question","name":"Can it read a Report-Only policy?","acceptedAnswer":{"@type":"Answer","text":"Yes. It detects the Report-Only name, analyses the directives as usual and adds a note that the policy does not block anything yet."}},{"@type":"Question","name":"Is my policy sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. The analysis runs entirely in your browser, and your policy is not uploaded or stored, so you can check policies from private or staging sites."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#privacy-browser">Privacy – Browser</a></li><li><span aria-current="page">CSP Analyzer</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>CSP Analyzer</h1>
+<p class="lede">Paste a Content-Security-Policy header or meta tag to find unsafe-inline and unsafe-eval, wildcards, risky schemes, JSONP-able CDN hosts and missing directives, with a grade.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="csp-analyzer" data-module="privacy"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Many sites ship a CSP that looks serious but blocks very little. An allowed unsafe-inline, a wildcard, an allowed data: scheme or a whole CDN such as cdnjs can let an attacker run script anyway. A missing object-src or base-uri leaves further gaps.</p>
+<p>This analyser parses the policy, notes typos and duplicate directives and reports each weakness with a severity and a suggested fix. It understands that unsafe-inline is ignored by modern browsers when a nonce, hash or strict-dynamic is present. It then gives a score from 0 to 100 and a letter grade. The check is static and based on rules of thumb, so use it as a review aid, then test the policy in a real browser. Nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Copy your Content-Security-Policy header or meta tag.</li><li>Paste it into the input box.</li><li>Run the tool to see the grade and the list of findings.</li><li>Apply the suggested fixes and test the policy in Report-Only mode.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How is the grade calculated?</summary><p>Each finding subtracts points by severity: high 30, medium 12 and low 4, starting from 100. The score maps to a letter from A to F. It is a quick signal, not a formal audit.</p></details>
+<details><summary>Why is a CDN host flagged?</summary><p>Some public hosts serve JSONP endpoints or user-uploaded scripts that can be used to bypass a host allowlist. Nonces with strict-dynamic are the usual safer approach.</p></details>
+<details><summary>Can it read a Report-Only policy?</summary><p>Yes. It detects the Report-Only name, analyses the directives as usual and adds a note that the policy does not block anything yet.</p></details>
+<details><summary>Is my policy sent anywhere?</summary><p>No. The analysis runs entirely in your browser, and your policy is not uploaded or stored, so you can check policies from private or staging sites.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/csp-builder/"><span class="link-card__title">CSP Builder</span><span class="link-card__desc">Build a Content-Security-Policy header from a preset plus extra sources. Outputs header, meta tag, nginx and Apache lines.</span></a></li><li><a class="link-card" href="/en/security-headers-generator/"><span class="link-card__title">Security Headers Generator</span><span class="link-card__desc">HSTS, CSP, X-Frame-Options and friends for Apache, NGINX, Netlify, Cloudflare.</span></a></li><li><a class="link-card" href="/en/http-headers-analyzer/"><span class="link-card__title">HTTP Headers Analyzer</span><span class="link-card__desc">Paste raw response headers: security, caching, compression, SEO issues.</span></a></li><li><a class="link-card" href="/en/cookie-flag-analyzer/"><span class="link-card__title">Cookie Flag Analyzer</span><span class="link-card__desc">Paste Set-Cookie headers: checks Secure, HttpOnly, SameSite, __Host-/__Secure- prefix rules, lifetime, scope and known tracking cookies.</span></a></li><li><a class="link-card" href="/en/subresource-integrity-generator/"><span class="link-card__title">Subresource Integrity (SRI) Generator</span><span class="link-card__desc">Compute the integrity attribute (sha256/384/512, base64) of a script or stylesheet you paste, and get the ready-made tag.</span></a></li><li><a class="link-card" href="/en/cors-preflight-inspector/"><span class="link-card__title">CORS Preflight Inspector</span><span class="link-card__desc">Describe the browser request (method, Origin, headers) and paste the server's response headers: see whether a preflight is needed, what the OPTIONS request would contain, and exactly why the response would be accepted or blocked.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

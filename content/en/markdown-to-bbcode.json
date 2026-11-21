@@ -1,0 +1,43 @@
+{
+ "id": "markdown-to-bbcode",
+ "seoTitle": "Free Markdown to BBCode Converter for Forums",
+ "metaDescription": "Convert Markdown to BBCode for phpBB, vBulletin and XenForo: headings, lists, links, images, quotes and code. Free, runs in your browser.",
+ "intro": "Paste Markdown and get BBCode ready for a forum post. Headings, bold, italic, links, images, quotes, code blocks, lists and horizontal rules are converted to their bracket tags.",
+ "why": "Many communities still run on phpBB, vBulletin or XenForo, and their posts use square-bracket tags rather than Markdown. If you write release notes, a bug report or a long guide in a Markdown editor, retyping it as BBCode is slow and invites mistakes with nested lists and code blocks.\n\nThis converter transforms the common Markdown elements in one pass, so you can write in the format you prefer and paste the result into the forum. Tables and raw HTML are passed through as text, so check those by hand. Forums differ in which tags they allow, so preview the post before you publish. Your text stays in your browser.",
+ "howTo": [
+  "Paste your Markdown into the input box.",
+  "Choose the list style, either list tags with star items or plain dash lines.",
+  "Copy the BBCode output.",
+  "Paste it into your forum editor in source mode and preview the post before submitting."
+ ],
+ "faq": [
+  {
+   "q": "Does it support tables?",
+   "a": "No. Tables and raw HTML are passed through as plain text, because BBCode table tags vary a lot between forum software. You can rewrite those parts by hand once the rest is converted."
+  },
+  {
+   "q": "Why does my forum show headings differently?",
+   "a": "BBCode has no real heading tag, so headings become bold text inside a size tag. Forums apply their own size scale, so the look can differ. Adjust the size values after conversion if needed."
+  },
+  {
+   "q": "Which forum software is it meant for?",
+   "a": "It targets common tags used by phpBB, vBulletin and XenForo, such as bold, italic, url, img, quote, code and list. Check the allowed tags of your board, because administrators can disable some."
+  }
+ ],
+ "related": [
+  "bbcode-to-markdown",
+  "markdown-to-html",
+  "markdown-preview",
+  "html-to-markdown",
+  "markdown-table-generator",
+  "markdown-cheatsheet"
+ ],
+ "keywords": [
+  "markdown to bbcode",
+  "convert markdown to bbcode online",
+  "bbcode converter for forums",
+  "phpbb markdown converter",
+  "markdown to forum code",
+  "free markdown to bbcode tool"
+ ]
+}

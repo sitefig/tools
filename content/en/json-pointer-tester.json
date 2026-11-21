@@ -1,0 +1,45 @@
+{
+ "id": "json-pointer-tester",
+ "seoTitle": "Free JSON Pointer Tester (RFC 6901) Online",
+ "metaDescription": "Evaluate JSON Pointers like /a/0/b or #/a%20b against a document, with ~0 and ~1 escapes and the canonical form shown. Free, in your browser.",
+ "intro": "Paste a JSON document and a list of JSON Pointers to see the value each one points to, its tokens and its canonical escaped form, or the reason it fails.",
+ "why": "JSON Pointer is the addressing syntax behind JSON Schema references, OpenAPI $ref values and JSON Patch paths. It looks simple, but a few rules cause real bugs: keys that contain a slash or a tilde must be escaped, array indexes cannot have leading zeros, and the empty string points to the whole document.\n\nPaste a document on one side and your pointers on the other, one per line, and see exactly what each resolves to. Errors name the cause, such as a missing key or an index out of range. The tool also understands URI fragment form starting with a hash and decodes percent escapes first. It evaluates pointers only and cannot modify the document.",
+ "howTo": [
+  "Paste the JSON document into the first box.",
+  "Enter pointers in the second box, one per line, such as /users/0/name.",
+  "Read the value, tokens and canonical form for each pointer."
+ ],
+ "faq": [
+  {
+   "q": "How do I address a key containing a slash?",
+   "a": "Write the slash as ~1 and a tilde as ~0. The key a/b becomes /a~1b, and m~n becomes /m~0n. The tool shows the canonical escaped path for each pointer."
+  },
+  {
+   "q": "What does the empty pointer mean?",
+   "a": "An empty string refers to the entire document, and a lone slash refers to a key that is the empty string. Both are valid and have different results."
+  },
+  {
+   "q": "Is the dash token supported in arrays?",
+   "a": "The dash means the position after the last element and is only meaningful when adding in JSON Patch. When reading, it fails with an error, as in the standard."
+  },
+  {
+   "q": "Is this the same as JSONPath?",
+   "a": "No. JSON Pointer addresses exactly one location with slash-separated tokens. JSONPath is a query language with wildcards and filters; use the JSONPath tester for that."
+  }
+ ],
+ "related": [
+  "jsonpath-tester",
+  "json-patch-applier",
+  "json-patch-generator",
+  "json-format",
+  "json-schema-validator",
+  "json-tree"
+ ],
+ "keywords": [
+  "json pointer tester",
+  "rfc 6901 online",
+  "json pointer evaluator",
+  "free json pointer tool",
+  "json pointer escape ~1"
+ ]
+}

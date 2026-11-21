@@ -1,0 +1,39 @@
+{
+ "id": "market-size-tam-sam-som-calculator",
+ "seoTitle": "Market Size Calculator for TAM, SAM and SOM",
+ "metaDescription": "Estimate total, serviceable and obtainable market from customer counts, price and shares. Free and private.",
+ "intro": "Estimates TAM, SAM and SOM bottom-up from customers and price.",
+ "why": "Total addressable market is every possible customer times what each would pay. The serviceable part is what your product and channels can reach, and the obtainable part is what you can win in your plan period.\n\nThe shares are assumptions and carry most of the uncertainty, so source each one and show a low and a high case.",
+ "howTo": [
+  "Enter the number of possible customers and revenue per customer.",
+  "Set the serviceable and obtainable shares.",
+  "Read TAM, SAM and SOM."
+ ],
+ "faq": [
+  {
+   "q": "Is bottom-up better than top-down?",
+   "a": "Often yes, because each step can be checked."
+  },
+  {
+   "q": "Where do the shares come from?",
+   "a": "Industry data or surveys; the tool cannot know."
+  },
+  {
+   "q": "Should SOM be large?",
+   "a": "It should be a plausible share, not a hope."
+  }
+ ],
+ "related": [
+  "lean-canvas-builder",
+  "business-model-canvas-builder",
+  "okr-planner-scorer",
+  "raci-matrix-builder",
+  "decision-matrix",
+  "profit-margin"
+ ],
+ "keywords": [
+  "tam sam som calculator",
+  "market size estimate",
+  "addressable market"
+ ]
+}

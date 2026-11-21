@@ -1,0 +1,45 @@
+{
+ "id": "video-metadata-inspector",
+ "seoTitle": "Video Metadata Inspector: Codec, FPS, Bitrate, Duration",
+ "metaDescription": "Read codecs, resolution, frame rate, bitrate and duration from MP4, MOV or WebM files in your browser. Compared with ffprobe. No upload.",
+ "intro": "Reads the container of an MP4, MOV, M4V or WebM file and lists tracks, codecs, size, frame rate, average bitrate and duration.",
+ "why": "Knowing the codec and frame rate is the first step in fixing a file that will not play or upload. The tool parses the container itself: sample tables in MP4 and track entries in WebM. Average bitrate is computed from sample sizes (MP4) or file size (WebM).\n\nValues were checked against ffprobe on test files. Files with unusual structure may show less detail. Nothing is uploaded.",
+ "howTo": [
+  "Choose the video file.",
+  "Press Run.",
+  "Read the container, tracks and values.",
+  "Copy the text if you need it."
+ ],
+ "faq": [
+  {
+   "q": "Which formats are read?",
+   "a": "MP4, MOV, M4V and WebM. MKV is not parsed fully."
+  },
+  {
+   "q": "Is the frame rate exact?",
+   "a": "For MP4 it is the sample count divided by the track duration. For WebM it is the declared value."
+  },
+  {
+   "q": "Why is the WebM duration missing?",
+   "a": "Browser recordings often omit it. Our recorders add it, but other files may not have it."
+  },
+  {
+   "q": "How does it differ from the MP4 Box Inspector?",
+   "a": "That tool shows the box layout and fast-start flag. This one adds frame rate, bitrate and WebM support."
+  }
+ ],
+ "related": [
+  "mp4-box-inspector",
+  "video-format-converter",
+  "video-compressor",
+  "video-frame-rate-converter",
+  "file-type-detector",
+  "videoobject-schema-generator"
+ ],
+ "keywords": [
+  "video metadata viewer",
+  "ffprobe online",
+  "video codec checker",
+  "video bitrate and fps"
+ ]
+}

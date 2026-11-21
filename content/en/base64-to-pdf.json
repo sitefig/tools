@@ -1,0 +1,45 @@
+{
+ "id": "base64-to-pdf",
+ "seoTitle": "Free Base64 to PDF Decoder - Download the File Online",
+ "metaDescription": "Decode a Base64 string or data URI into a PDF you can download, with a check for the %PDF header. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Decodes a Base64 string or a data:application/pdf URI back into a PDF file, checks it starts with the %PDF header, and offers it for download.",
+ "why": "APIs often return documents as Base64 inside JSON: invoices, labels, contracts, reports. When something goes wrong you are left staring at a wall of letters and no idea whether it is a valid PDF. Pasting the string here turns it back into a file you can open, and tells you early if it is not a PDF at all or looks cut off. That makes it a quick debugging step when an integration returns an empty page, a truncated payload or the wrong content type. Because the decoding runs in your browser, confidential documents are not sent to any server, which is the main reason to prefer it over a random online converter.",
+ "howTo": [
+  "Paste the Base64 text, or the full data:application/pdf;base64 URI, into the input box.",
+  "Set the file name you want for the download, such as invoice.pdf.",
+  "Run the conversion, read the byte count and PDF version, then download the file."
+ ],
+ "faq": [
+  {
+   "q": "What checks are made on the data?",
+   "a": "The text is decoded, then the first five bytes must be %PDF-. If not, you get an error. The tool also looks for %%EOF near the end and warns if it is missing, which often means truncation."
+  },
+  {
+   "q": "Can I paste a data URI or JSON string?",
+   "a": "Yes. A data: prefix is stripped, and surrounding double quotes are removed. Whitespace and line breaks inside the Base64 are ignored. Base64URL characters are accepted too."
+  },
+  {
+   "q": "Why does the PDF open blank or fail?",
+   "a": "The header can be valid while the file is damaged. A missing %%EOF warning, a cut-off string or double-encoded data are the usual causes. Check what your API sent."
+  },
+  {
+   "q": "Is a large PDF a problem?",
+   "a": "Everything is held in memory in your browser, so files of many megabytes work but may feel slow. Nothing is uploaded at any point."
+  }
+ ],
+ "related": [
+  "base64-decode",
+  "text-to-pdf",
+  "pdf-info",
+  "pdf-text-extract-simple",
+  "base64-encode",
+  "image-to-base64"
+ ],
+ "keywords": [
+  "base64 to pdf",
+  "decode base64 pdf online",
+  "base64 string to pdf file",
+  "free base64 pdf converter",
+  "data uri pdf decoder"
+ ]
+}

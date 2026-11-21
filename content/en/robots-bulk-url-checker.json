@@ -1,0 +1,44 @@
+{
+ "id": "robots-bulk-url-checker",
+ "seoTitle": "Bulk robots.txt URL Checker with CSV Export",
+ "metaDescription": "Check hundreds of URLs against a robots.txt for several crawlers at once and download blocked and allowed results as CSV. Free, in your browser.",
+ "intro": "Tests a long list of URLs against a robots.txt for one or more crawlers and gives a table or a CSV file.",
+ "why": "After a robots.txt change you want to know which of your important URLs are now blocked, for Googlebot, Bingbot and AI crawlers. Testing them one at a time does not scale.\n\nPaste the file and a URL list, name the crawlers, and get the verdict and deciding rule for every pair. Switch to CSV to open it in a spreadsheet. The same longest-match rules as the single-URL tester apply.",
+ "howTo": [
+  "Paste the robots.txt.",
+  "Paste the URLs, one per line, from a sitemap or crawl.",
+  "List the crawlers you care about.",
+  "Choose table or CSV and copy or download."
+ ],
+ "faq": [
+  {
+   "q": "How many URLs can I test?",
+   "a": "Up to 50,000 per run."
+  },
+  {
+   "q": "Can I see only blocked URLs?",
+   "a": "Yes, tick the Show only blocked option."
+  },
+  {
+   "q": "Which rule decides?",
+   "a": "The longest matching pattern, with Allow winning a tie."
+  },
+  {
+   "q": "Where do I get a URL list?",
+   "a": "The sitemap URL extractor turns a sitemap into a list."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "sitemap-url-extractor",
+  "robots-txt-validator",
+  "googlebot-robots-rule-simulator",
+  "robots-generator"
+ ],
+ "keywords": [
+  "bulk robots.txt checker",
+  "check many urls robots.txt",
+  "robots.txt csv",
+  "blocked urls robots.txt"
+ ]
+}

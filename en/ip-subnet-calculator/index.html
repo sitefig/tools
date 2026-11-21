@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free IP Subnet Calculator for IPv4 and IPv6 CIDR | Free Tools</title>
+<meta name="description" content="Calculate network, broadcast, netmask, wildcard and host range for any IPv4 CIDR or netmask, plus IPv6 prefix ranges. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/ip-subnet-calculator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/ip-subnet-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/ip-subnet-calculator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free IP Subnet Calculator for IPv4 and IPv6 CIDR | Free Tools">
+<meta property="og:description" content="Calculate network, broadcast, netmask, wildcard and host range for any IPv4 CIDR or netmask, plus IPv6 prefix ranges. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/ip-subnet-calculator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free IP Subnet Calculator for IPv4 and IPv6 CIDR | Free Tools">
+<meta name="twitter:description" content="Calculate network, broadcast, netmask, wildcard and host range for any IPv4 CIDR or netmask, plus IPv6 prefix ranges. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"IP Subnet Calculator","url":"https://tools.sitefig.net/en/ip-subnet-calculator/","description":"Calculate network, broadcast, netmask, wildcard and host range for any IPv4 CIDR or netmask, plus IPv6 prefix ranges. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter one or more addresses with a prefix, such as 192.168.10.77/26, or an address and netmask separated by a space.","Add IPv6 prefixes like 2001:db8:abcd::1/48 if you need them.","Read the network, broadcast, host range and counts for each entry.","Copy the details you need into your firewall or cloud configuration."],"keywords":"ip subnet calculator, cidr calculator, subnet mask calculator, free ipv4 subnet tool, ipv6 prefix calculator, wildcard mask calculator","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Network & HTTP","item":"https://tools.sitefig.net/en/#network-and-http"},{"@type":"ListItem","position":3,"name":"IP Subnet Calculator","item":"https://tools.sitefig.net/en/ip-subnet-calculator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why are usable hosts two fewer than the total?","acceptedAnswer":{"@type":"Answer","text":"The first address is the network address and the last is the broadcast address, so neither can be given to a host. The exceptions are /31 networks, which provide two usable addresses, and /32, which is a single host."}},{"@type":"Question","name":"What is a wildcard mask?","acceptedAnswer":{"@type":"Answer","text":"It is the inverse of the netmask: ones where the netmask has zeros. Cisco-style access lists and OSPF configuration use it. For a /24 the netmask is 255.255.255.0 and the wildcard is 0.0.0.255."}},{"@type":"Question","name":"Does it validate that the netmask is contiguous?","acceptedAnswer":{"@type":"Answer","text":"Yes. A netmask like 255.0.255.0 is rejected with an error, because only masks made of consecutive ones followed by zeros correspond to a CIDR prefix."}},{"@type":"Question","name":"What does the IPv6 output include?","acceptedAnswer":{"@type":"Answer","text":"The compressed and expanded address, the prefix, its first and last address, the total number of addresses, how many /64 subnets fit inside and the address type, such as global unicast or unique local."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#network-and-http">Network &amp; HTTP</a></li><li><span aria-current="page">IP Subnet Calculator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>IP Subnet Calculator</h1>
+<p class="lede">Enter an IPv4 address with a CIDR prefix or netmask, or an IPv6 prefix, and get the network range, mask, wildcard, host count and address type. Several lines at once are fine.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="ip-subnet-calculator" data-module="encode"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Subnet maths comes up in cloud networking, firewall rules, VPN setups and exam questions: how many hosts fit in a /26, where does 10.0.0.0/22 end, what is the wildcard mask for an access list? The calculation is simple but easy to botch with a pencil, and one wrong bit means overlapping networks.</p>
+<p>This calculator takes IPv4 as CIDR (192.168.10.77/26) or address plus netmask, and shows network and broadcast addresses, netmask in dotted and binary form, wildcard, host range, total and usable hosts, class and type. IPv6 prefixes show the first and last address and the /64 count. It runs locally.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter one or more addresses with a prefix, such as 192.168.10.77/26, or an address and netmask separated by a space.</li><li>Add IPv6 prefixes like 2001:db8:abcd::1/48 if you need them.</li><li>Read the network, broadcast, host range and counts for each entry.</li><li>Copy the details you need into your firewall or cloud configuration.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why are usable hosts two fewer than the total?</summary><p>The first address is the network address and the last is the broadcast address, so neither can be given to a host. The exceptions are /31 networks, which provide two usable addresses, and /32, which is a single host.</p></details>
+<details><summary>What is a wildcard mask?</summary><p>It is the inverse of the netmask: ones where the netmask has zeros. Cisco-style access lists and OSPF configuration use it. For a /24 the netmask is 255.255.255.0 and the wildcard is 0.0.0.255.</p></details>
+<details><summary>Does it validate that the netmask is contiguous?</summary><p>Yes. A netmask like 255.0.255.0 is rejected with an error, because only masks made of consecutive ones followed by zeros correspond to a CIDR prefix.</p></details>
+<details><summary>What does the IPv6 output include?</summary><p>The compressed and expanded address, the prefix, its first and last address, the total number of addresses, how many /64 subnets fit inside and the address type, such as global unicast or unique local.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/cidr-contains/"><span class="link-card__title">CIDR Contains IP Check</span><span class="link-card__desc">Check which CIDR ranges contain each IP address (IPv4 and IPv6).</span></a></li><li><a class="link-card" href="/en/ip-supernetting-calculator/"><span class="link-card__title">IP Supernetting (CIDR Aggregation)</span><span class="link-card__desc">Aggregate IPv4/IPv6 addresses, CIDR blocks and ranges (a-b) into the smallest set of CIDR prefixes, plus the single smallest supernet that covers everything and how much address space it wastes.</span></a></li><li><a class="link-card" href="/en/ip-validator-converter/"><span class="link-card__title">IP Validator &amp; Converter</span><span class="link-card__desc">Validate IPv4/IPv6 and convert between dotted, integer, hex and binary forms.</span></a></li><li><a class="link-card" href="/en/port-reference/"><span class="link-card__title">Common Ports Reference</span><span class="link-card__desc">Well-known TCP/UDP port numbers and their services.</span></a></li><li><a class="link-card" href="/en/nginx-rate-limit-calculator/"><span class="link-card__title">Nginx Rate Limit Calculator</span><span class="link-card__desc">Work out limit_req_zone rate, burst, delay and zone memory for a request rate, and see how traffic will be queued or rejected.</span></a></li><li><a class="link-card" href="/en/bandwidth-download-time/"><span class="link-card__title">Download Time Calculator</span><span class="link-card__desc">Time to transfer a file at a given connection speed.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

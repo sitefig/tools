@@ -1,0 +1,46 @@
+{
+  "id": "markdown-cheatsheet",
+  "seoTitle": "Free Markdown Cheatsheet with Live Rendered Examples",
+  "metaDescription": "A quick Markdown syntax reference showing every common construct next to its rendered result. Free, works in your browser, nothing is uploaded.",
+  "intro": "A one-page reference for common Markdown syntax. Each row shows the element, the source you type and how it renders, covering headings, emphasis, links, lists, code, tables and more.",
+  "why": "Most people know a handful of Markdown rules and forget the rest the moment they need them. How do you write a task list, add a title to a link, or make a table align right? Searching returns long guides when you want a quick answer.\n\nThis cheatsheet is a single table. The middle column shows exactly what to type and the right column shows what you get, rendered by the same converter used in the Markdown to HTML tool. It covers headings, bold, italic, strikethrough, inline code, links, images, autolinks, reference links, block quotes, lists, task lists, code fences, rules, tables, line breaks and escapes. It works offline after loading.",
+  "howTo": [
+    "Open the page and scan the table for the element you need.",
+    "Copy the syntax from the middle column.",
+    "Compare the rendered result in the right column.",
+    "Try your own text in the Markdown preview tool."
+  ],
+  "faq": [
+    {
+      "q": "Which Markdown flavour does it show?",
+      "a": "CommonMark with common GitHub extensions: tables, task lists and strikethrough. Platform-specific extras, such as footnotes, emoji shortcodes or callout blocks, are not covered because they differ between sites."
+    },
+    {
+      "q": "Why does my Markdown look different on another site?",
+      "a": "Markdown has several dialects. Details like line breaks, nested list indentation and raw HTML handling vary, so a document can render differently in a forum, a wiki or a static site generator."
+    },
+    {
+      "q": "How do I show a literal asterisk or backtick?",
+      "a": "Put a backslash in front of it, as in the Escape row of the table. Inside inline code you can also wrap the code in a longer run of backticks."
+    },
+    {
+      "q": "Can I edit the examples?",
+      "a": "Not on this page. To experiment, paste the syntax into the Markdown preview tool and change it there."
+    }
+  ],
+  "related": [
+    "markdown-preview",
+    "markdown-to-html",
+    "markdown-table-generator",
+    "html-to-markdown",
+    "regex-cheatsheet",
+    "html-entities-reference"
+  ],
+  "keywords": [
+    "markdown cheatsheet",
+    "markdown syntax guide",
+    "markdown quick reference",
+    "markdown table syntax",
+    "free markdown reference"
+  ]
+}

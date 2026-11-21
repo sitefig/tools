@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-encoding-checker",
+ "seoTitle": "robots.txt Encoding Checker: BOM and Hidden Characters",
+ "metaDescription": "Find byte order marks, zero-width characters, curly quotes and non-ASCII paths that make crawlers ignore robots.txt lines. Free, in your browser.",
+ "intro": "Scans a pasted robots.txt for characters you cannot see that break parsing, and can print a cleaned copy.",
+ "why": "A robots.txt that looks perfect can still fail. A byte order mark at the start, a zero-width space inside a path, a non-breaking space after the colon or a curly quote pasted from a document makes a line unreadable. Google treats a byte order mark as an invalid line.\n\nThe checker lists each odd character with line, column and code point, notes line endings and shows a cleaned version. Pasted text is already decoded, so a file saved in the wrong encoding shows up as replacement characters.",
+ "howTo": [
+  "Paste the robots.txt, ideally copied straight from the live file.",
+  "Read the list of suspicious characters.",
+  "Use the cleaned copy as a starting point.",
+  "Save the file as UTF-8 without BOM."
+ ],
+ "faq": [
+  {
+   "q": "Why does a BOM matter?",
+   "a": "Google's documentation lists a byte order mark among invalid lines, so the first rule may be lost."
+  },
+  {
+   "q": "Does it detect files saved as Latin-1?",
+   "a": "Only indirectly, through replacement characters after pasting. For a file on disk use the file command shown in the output."
+  },
+  {
+   "q": "Should paths contain non-ASCII letters?",
+   "a": "No. Write them as percent-encoded UTF-8."
+  },
+  {
+   "q": "Which line endings are fine?",
+   "a": "CR, LF and CRLF are all valid."
+  }
+ ],
+ "related": [
+  "robots-txt-validator",
+  "robots-txt-formatter",
+  "robots-tester",
+  "robots-txt-size-checker",
+  "robots-generator"
+ ],
+ "keywords": [
+  "robots.txt encoding",
+  "robots.txt BOM",
+  "invisible characters robots.txt",
+  "robots.txt utf-8"
+ ]
+}

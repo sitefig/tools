@@ -1,0 +1,45 @@
+{
+ "id": "html-table-to-json",
+ "seoTitle": "Free HTML Table to JSON Converter Online",
+ "metaDescription": "Extract table elements from pasted HTML and convert them to JSON, as objects keyed by the header row or as raw arrays. Free, in your browser.",
+ "intro": "Paste HTML containing one or more tables and get JSON: either an array of objects keyed by the header row, or plain arrays of cell values.",
+ "why": "Data trapped in an HTML table, on a documentation page, a report or an email, often needs to go into code or a spreadsheet. Selecting the cells and pasting is hit and miss, and a scraper is overkill for a one-off job.\n\nPaste the page source or just the table, and this tool pulls out each table, reads the rows and cells, strips inner tags, decodes entities such as &amp; and tidies whitespace. The first row supplies the keys, duplicate headers are numbered, and numbers can be converted automatically. Merged cells are not expanded and nested tables are not handled specially, so check the output on complex layouts. Nothing leaves your browser.",
+ "howTo": [
+  "Paste the HTML that contains your table.",
+  "Choose which table to use (0 for all), and objects or arrays as the output shape.",
+  "Copy the JSON into your code or spreadsheet."
+ ],
+ "faq": [
+  {
+   "q": "How are the keys chosen?",
+   "a": "From the cells of the first row, th or td. Empty headers become column1, column2 and so on, and repeated names get a numeric suffix so no key is lost."
+  },
+  {
+   "q": "Does it handle colspan and rowspan?",
+   "a": "No. Cells are read in order and merged cells are not expanded, so rows with spans can look shifted. Clean such tables in a spreadsheet first."
+  },
+  {
+   "q": "Can I extract several tables?",
+   "a": "Yes. Set the table number to 0 to convert every table into an array of results, or enter 1, 2 and so on for a single table."
+  },
+  {
+   "q": "Is JavaScript-rendered content included?",
+   "a": "Only the HTML you paste is read. If a table is built by JavaScript after the page loads, copy the rendered HTML from your developer tools rather than the raw page source."
+  }
+ ],
+ "related": [
+  "html-table-converter",
+  "csv-to-json",
+  "json-to-csv",
+  "html-to-markdown",
+  "html-tag-stripper",
+  "markdown-table-to-csv"
+ ],
+ "keywords": [
+  "html table to json",
+  "convert html table to json online",
+  "extract table from html",
+  "free table scraper",
+  "html table parser"
+ ]
+}

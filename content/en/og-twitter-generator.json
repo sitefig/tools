@@ -1,0 +1,46 @@
+{
+ "id": "og-twitter-generator",
+ "seoTitle": "Free Open Graph & Twitter Card Meta Tag Generator",
+ "metaDescription": "Generate Open Graph and Twitter Card meta tags from simple fields: title, description, URL, image and card type. Free, in-browser.",
+ "intro": "Turn simple key: value fields into Open Graph and Twitter Card meta tags, with the card type picked automatically from whether you supply an image.",
+ "why": "Social sharing previews depend on a dozen meta tags, and it is easy to forget one or mix up property and name attributes. Twitter uses name, Open Graph uses property, and both have their own titles, descriptions and images.\n\nThis generator takes one set of fields: title, description, URL, image, image alt, site name, type, locale and the Twitter site and creator handles. It prints the matching og: and twitter: tags with properly escaped values. If you do not set a card type, it uses summary_large_image when there is an image and summary when there is not. It adds a reminder about the recommended image size of 1200 by 630 pixels. Generation happens in your browser, and results should be checked with the validator and the platforms' own tools.",
+ "howTo": [
+  "Fill in the key: value lines for title, description, url and image.",
+  "Add image_alt, site_name, locale, twitter_site or twitter_card as needed.",
+  "Run the tool to generate the tags.",
+  "Paste the tags into your page head and test the result with the validator."
+ ],
+ "faq": [
+  {
+   "q": "Which image size should I use?",
+   "a": "The output notes 1200 by 630 pixels, a 1.91 to 1 ratio, under 5 MB. Platforms crop differently, so keep important content away from the edges."
+  },
+  {
+   "q": "How is the Twitter card type chosen?",
+   "a": "If you set twitter_card it is used. Otherwise the tool picks summary_large_image when an image URL is present and summary when not."
+  },
+  {
+   "q": "Do I need both Open Graph and Twitter tags?",
+   "a": "Twitter falls back to Open Graph for most fields, but it still needs a twitter:card to choose the layout. Including both gives the most consistent previews."
+  },
+  {
+   "q": "Is anything sent to a server?",
+   "a": "No. The tags are produced in your browser and your fields are not uploaded. Closing the tab discards the input, so nothing is kept on this site."
+  }
+ ],
+ "related": [
+  "meta-analyzer",
+  "social-preview",
+  "meta-tag-generator",
+  "opengraph-banner-canvas-generator",
+  "image-resizer",
+  "schema-generator"
+ ],
+ "keywords": [
+  "open graph generator",
+  "twitter card generator",
+  "og meta tags generator",
+  "social meta tag builder",
+  "og image tags free"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "json-sort-keys",
+ "seoTitle": "Free JSON Key Sorter - Sort Keys Online",
+ "metaDescription": "Free online JSON key sorter. Sort object keys alphabetically, ascending or descending, at every nesting level, with your choice of indentation.",
+ "intro": "Sort the keys of every JSON object alphabetically, ascending or descending, at all nesting levels. Array order is kept, and you pick the indent of the output.",
+ "why": "Two JSON files can hold identical data and still look completely different because their keys come in another order. That makes diffs noisy, code reviews slow and version control history hard to read. Sorting keys first gives you a stable, predictable layout.\n\nTypical moments are comparing an API response before and after a change, committing a generated config file, or hashing a document where key order would otherwise change the result. The tool sorts every object in the document, however deep, and leaves arrays in their original order because their order carries meaning. Parsing and sorting happen in your browser, so your data is not uploaded.",
+ "howTo": [
+  "Paste your JSON into the input box.",
+  "Choose ascending or descending order.",
+  "Choose the indent: 2, 4, 8 spaces or a tab.",
+  "Copy the sorted JSON."
+ ],
+ "faq": [
+  {
+   "q": "Are arrays sorted too?",
+   "a": "No. Array items keep their order, because order in an array is usually meaningful. Only the keys of objects are sorted, though objects inside arrays are sorted as well."
+  },
+  {
+   "q": "How are keys compared?",
+   "a": "Keys are compared as plain strings by character code, so uppercase letters sort before lowercase ones. A and B come before a and b."
+  },
+  {
+   "q": "Does sorting change the meaning of the JSON?",
+   "a": "No. JSON objects are unordered by definition, so parsers read the sorted and unsorted versions as the same data. Only the text layout changes."
+  },
+  {
+   "q": "Is it the same as the Sort keys option in the formatter?",
+   "a": "It does the same ascending sort, and adds a descending option. Use the formatter if you also want to check errors, or this tool when sorting is the main job."
+  }
+ ],
+ "related": [
+  "json-format",
+  "json-diff",
+  "json-minify",
+  "json-flatten-unflatten",
+  "yaml-format",
+  "json-validate"
+ ],
+ "keywords": [
+  "json key sorter",
+  "sort json keys online",
+  "alphabetize json",
+  "free json sort",
+  "json sort keys alphabetically",
+  "order json keys"
+ ]
+}

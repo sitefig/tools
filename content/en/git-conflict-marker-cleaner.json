@@ -1,0 +1,43 @@
+{
+ "id": "git-conflict-marker-cleaner",
+ "seoTitle": "Free Git Merge Conflict Marker Cleaner",
+ "metaDescription": "Resolve all Git conflict blocks in pasted text by keeping ours, theirs, both or the diff3 base, or just list them. Free, in your browser.",
+ "intro": "Paste text containing Git conflict markers and resolve every block at once by keeping your side, their side, both, or the diff3 base. Or only list the conflicts. Diff3 style is understood.",
+ "why": "After a messy merge, a file may contain dozens of conflict blocks, and many of them have an obvious answer, such as always taking the incoming change for a generated lockfile or always keeping yours for a config you edited. Opening each block in an editor and deleting marker lines by hand is slow and it is easy to leave a stray marker in the file.\n\nThis tool applies one choice to all blocks and removes the markers cleanly, so the result is plain text again. You can choose ours, theirs, both in either order, or the common ancestor if the conflict was written in diff3 style. A report-only mode counts and lists the conflicts without changing anything. Always review the result and run your tests. The text is processed in your browser.",
+ "howTo": [
+  "Paste the file content that contains the conflict markers.",
+  "Choose what to keep: ours, theirs, both in either order, the diff3 base, or report only.",
+  "Read the cleaned output and the list of conflicts it handled.",
+  "Copy the result back into your file, review the diff and run your tests."
+ ],
+ "faq": [
+  {
+   "q": "Is it safe to resolve all conflicts the same way?",
+   "a": "Only when one side is clearly right for every block. Code conflicts often need a mix of both sides, so use report-only first to see them, and resolve logic changes by hand."
+  },
+  {
+   "q": "What does the base option need?",
+   "a": "The diff3 conflict style, which adds the common ancestor between the two sides. If your Git config does not use it, no base section exists, and you can enable it with the merge conflictstyle setting."
+  },
+  {
+   "q": "Does it work on whole repositories?",
+   "a": "No, it cleans text you paste into the page, one file at a time. For many files, resolve with Git itself, for example with the ours or theirs strategy options, then use this tool for individual cases."
+  }
+ ],
+ "related": [
+  "text-diff",
+  "code-diff-html",
+  "find-replace",
+  "git-command-builder",
+  "remove-empty-lines-trim",
+  "gitignore-generator"
+ ],
+ "keywords": [
+  "git conflict marker remover",
+  "resolve merge conflicts online",
+  "remove conflict markers",
+  "git keep ours or theirs",
+  "diff3 conflict resolver",
+  "free git conflict cleaner"
+ ]
+}

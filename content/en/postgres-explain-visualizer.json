@@ -1,0 +1,45 @@
+{
+ "id": "postgres-explain-visualizer",
+ "seoTitle": "Free PostgreSQL EXPLAIN Plan Visualizer Online",
+ "metaDescription": "Visualise EXPLAIN or EXPLAIN ANALYZE output as a plan tree with time or cost bars and automatic findings. Free, runs in your browser.",
+ "intro": "Turns EXPLAIN or EXPLAIN ANALYZE output, as text or FORMAT JSON, into an indented plan tree with per-node time or cost bars, row-estimate error factors and automatic findings.",
+ "why": "A PostgreSQL query plan is hard to read as text, especially with nested loops, hashes and sorts, and the real cost is often hiding in one node. Pasting the plan here gives you a tree with each node's own time, not time cumulated from its children, shown as a bar, so the hot spot stands out. The tool compares estimated and actual row counts and highlights big mismatches, which usually point to stale statistics. It also flags sequential scans that discard most rows, sorts that spill to disk, hashes that run in multiple batches and nested loops with many iterations. Plans can contain table names and filter values, so doing this in your browser, without uploading, is a good fit.",
+ "howTo": [
+  "Run EXPLAIN (ANALYZE) on your query and copy the output, as text or FORMAT JSON.",
+  "Paste the plan into the input box.",
+  "Read the tree to find the nodes with the highest time, then check the findings listed."
+ ],
+ "faq": [
+  {
+   "q": "Which plan formats can I paste?",
+   "a": "The default text format and FORMAT JSON. EXPLAIN ANALYZE output is best, because it contains real times and row counts. A plain EXPLAIN shows costs only."
+  },
+  {
+   "q": "What is exclusive time?",
+   "a": "The time spent in a node itself, without the time of its children. It shows which step really costs the most."
+  },
+  {
+   "q": "What does the row-estimate error factor mean?",
+   "a": "It compares the planner's estimated rows with the actual rows. Large differences suggest stale statistics, and often lead to poor plan choices. Try ANALYZE on the table."
+  },
+  {
+   "q": "Does it tell me exactly how to fix the query?",
+   "a": "No. It points to likely problems such as sequential scans or disk sorts. You still decide whether an index, a rewrite or better statistics is the right fix."
+  }
+ ],
+ "related": [
+  "sql-index-advisor",
+  "sql-explainer",
+  "sql-format",
+  "postgres-connection-builder",
+  "sql-to-json",
+  "json-format"
+ ],
+ "keywords": [
+  "postgres explain visualizer",
+  "explain analyze viewer",
+  "postgresql query plan analyzer",
+  "free explain plan tool",
+  "read postgres execution plan"
+ ]
+}

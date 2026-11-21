@@ -1,0 +1,46 @@
+{
+ "id": "react-native-icon-finder",
+ "seoTitle": "React Native Vector Icons Finder - Search Icon Names",
+ "metaDescription": "Search icon names across Feather, Ionicons, Material, FontAwesome, AntDesign, Entypo and Octicons and copy the import and JSX for react-native-vector-icons.",
+ "intro": "Type a word and see every matching icon name across the nine icon sets in react-native-vector-icons, with the import line and JSX ready to paste.",
+ "why": "In React Native the icon you want exists, but you do not know its exact name or which set has it. Searching nine separate glyph lists, each with its own naming style, is slow. This tool searches all the names at once and shows the component and name to use.\n\nIt is a name search only. There are no glyph previews, because showing the icons would mean shipping the icon fonts, which this site does not do. The lists come from the react-native-vector-icons package version 10 (MIT licence) and contain names only. For the FontAwesome sets the free icons are included; add the solid or brand prop in your code for those styles. If your project uses a different version of the package, a few names may differ.",
+ "howTo": [
+  "Type one or more words, such as arrow left.",
+  "Optionally choose one icon set.",
+  "Look through the matches grouped by set.",
+  "Copy the import and JSX line you need."
+ ],
+ "faq": [
+  {
+   "q": "Why are there no icon images?",
+   "a": "Rendering the glyphs needs the icon fonts, and the site ships no third-party code or fonts. Only names are searched."
+  },
+  {
+   "q": "Which version of the package is this based on?",
+   "a": "Version 10.0.1 of react-native-vector-icons. Names in your project may differ slightly if you use another version."
+  },
+  {
+   "q": "How do I use FontAwesome solid or brand icons?",
+   "a": "Import FontAwesome5 or FontAwesome6 and add the solid or brand prop, for example name=\"github\" brand."
+  },
+  {
+   "q": "Does a multi-word search match all words?",
+   "a": "Yes. Every word must appear somewhere in the icon name."
+  }
+ ],
+ "related": [
+  "svg-to-react-native",
+  "svg-to-jsx",
+  "favicon-generator",
+  "app-icon-generator",
+  "emoji-picker",
+  "svg-optimizer"
+ ],
+ "keywords": [
+  "react native vector icons search",
+  "react native icon finder",
+  "react-native-vector-icons list",
+  "material community icons search",
+  "ionicons name finder"
+ ]
+}

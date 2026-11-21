@@ -1,0 +1,44 @@
+{
+ "id": "mind-map-svg-builder",
+ "seoTitle": "Mind Map Maker from an Indented List (SVG)",
+ "metaDescription": "Turn an indented outline into a coloured mind map SVG. Limit the levels to collapse deep branches. Free, nothing uploaded.",
+ "intro": "Draws a mind map from an indented list. Each branch from the centre gets its own colour, and you can collapse levels deeper than a number you choose.",
+ "why": "Outlines are how most people draft ideas; a map makes the structure visible. Paste an indented list and get a tree growing to the right, with curved links and colours per main branch.\n\nCollapsing is done with the levels option, which replaces the click-to-fold of an interactive map and is therefore usable with a keyboard. Collapsed nodes show a plus count of what is hidden. The outline is also listed in the table as a text version.",
+ "howTo": [
+  "Write the root, then indent children by two spaces.",
+  "Use bullets or numbers if you like; they are ignored.",
+  "Set levels to show to collapse deeper branches.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "How do I nest?",
+   "a": "Indent by two spaces (or a tab) per level."
+  },
+  {
+   "q": "Several top-level lines?",
+   "a": "They are placed under a generic \"Map\" root."
+  },
+  {
+   "q": "Can I export Markdown?",
+   "a": "The mind map maker tool exports an outline; this one draws the picture."
+  },
+  {
+   "q": "Size limits?",
+   "a": "Up to 400 nodes."
+  }
+ ],
+ "related": [
+  "mind-map-maker",
+  "ascii-tree-generator",
+  "flowchart-maker",
+  "sunburst-chart-maker",
+  "org-chart-maker",
+  "markdown-cheatsheet"
+ ],
+ "keywords": [
+  "mind map generator",
+  "outline to mind map",
+  "svg mind map"
+ ]
+}

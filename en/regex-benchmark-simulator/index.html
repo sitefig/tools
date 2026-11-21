@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Regex Performance Tester and ReDoS Checker | Free Tools</title>
+<meta name="description" content="Time a JavaScript regex on your text, see ops per second and test how it scales to spot catastrophic backtracking. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/regex-benchmark-simulator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/regex-benchmark-simulator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/regex-benchmark-simulator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Regex Performance Tester and ReDoS Checker | Free Tools">
+<meta property="og:description" content="Time a JavaScript regex on your text, see ops per second and test how it scales to spot catastrophic backtracking. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/regex-benchmark-simulator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Regex Performance Tester and ReDoS Checker | Free Tools">
+<meta name="twitter:description" content="Time a JavaScript regex on your text, see ops per second and test how it scales to spot catastrophic backtracking. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Regex Benchmark & ReDoS Simulator","url":"https://tools.sitefig.net/en/regex-benchmark-simulator/","description":"Time a JavaScript regex on your text, see ops per second and test how it scales to spot catastrophic backtracking. Free, in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter your regular expression and its flags.","Paste a sample text, and keep it short for the first run.","Set the number of iterations and run the benchmark.","Read the speed and the scaling results, and rewrite the pattern if time grows steeply."],"keywords":"regex performance tester, redos checker online, regex catastrophic backtracking, benchmark regular expression, regex ops per second, free regex benchmark tool","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Regex","item":"https://tools.sitefig.net/en/#regex"},{"@type":"ListItem","position":3,"name":"Regex Benchmark & ReDoS Simulator","item":"https://tools.sitefig.net/en/regex-benchmark-simulator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why did my tab freeze?","acceptedAnswer":{"@type":"Answer","text":"The pattern was catastrophic for that input. Backtracking can grow exponentially, and the page cannot interrupt a running regex. Close or reload the tab and retry with much shorter text or a safer pattern."}},{"@type":"Question","name":"Do results apply to other languages?","acceptedAnswer":{"@type":"Answer","text":"Only partly. This uses the JavaScript engine in your browser. Engines such as RE2 avoid backtracking, while PCRE, Python and Java can behave differently. Test in your own runtime for critical code."}},{"@type":"Question","name":"How can I make a slow regex safer?","acceptedAnswer":{"@type":"Answer","text":"Remove nested quantifiers, make alternatives mutually exclusive, anchor the pattern where possible and limit input length. Atomic groups or possessive quantifiers help in engines that support them, but JavaScript does not have them."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#regex">Regex</a></li><li><span aria-current="page">Regex Benchmark &amp; ReDoS Simulator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Regex Benchmark &amp; ReDoS Simulator</h1>
+<p class="lede">Time a JavaScript regular expression against your own text, see operations per second, and run a scaling test with the input repeated up to 16 times to reveal polynomial or exponential backtracking.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="regex-benchmark-simulator" data-module="devz3"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A regex that works on a small test string can freeze a server when it meets a long or hostile input. Nested quantifiers like (a+)+ make the engine try an exploding number of paths, which is the basis of regular expression denial of service. You usually find out in production.</p>
+<p>This tool measures instead of guessing. It runs your pattern repeatedly and reports operations per second, then repeats the text at growing sizes and shows how time grows. A linear curve is fine; a steep one is a warning. A static check also flags nested quantifiers. Be careful: a truly catastrophic pattern can freeze the tab, so start with short input. It uses JavaScript's own engine, so results may differ in other languages.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter your regular expression and its flags.</li><li>Paste a sample text, and keep it short for the first run.</li><li>Set the number of iterations and run the benchmark.</li><li>Read the speed and the scaling results, and rewrite the pattern if time grows steeply.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why did my tab freeze?</summary><p>The pattern was catastrophic for that input. Backtracking can grow exponentially, and the page cannot interrupt a running regex. Close or reload the tab and retry with much shorter text or a safer pattern.</p></details>
+<details><summary>Do results apply to other languages?</summary><p>Only partly. This uses the JavaScript engine in your browser. Engines such as RE2 avoid backtracking, while PCRE, Python and Java can behave differently. Test in your own runtime for critical code.</p></details>
+<details><summary>How can I make a slow regex safer?</summary><p>Remove nested quantifiers, make alternatives mutually exclusive, anchor the pattern where possible and limit input length. Atomic groups or possessive quantifiers help in engines that support them, but JavaScript does not have them.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/regex-tester/"><span class="link-card__title">Regex Tester</span><span class="link-card__desc">Test a JavaScript regex: matches with indexes, capture groups, named groups and replace preview.</span></a></li><li><a class="link-card" href="/en/regex-cheatsheet/"><span class="link-card__title">Regex Cheat Sheet</span><span class="link-card__desc">JavaScript regular expression syntax quick reference.</span></a></li><li><a class="link-card" href="/en/regex-escape/"><span class="link-card__title">Regex Escape / Unescape</span><span class="link-card__desc">Escape literal text so it can be embedded in a regular expression (JavaScript, Python, Java, PHP, Go, POSIX) or unescape it back.</span></a></li><li><a class="link-card" href="/en/text-statistics/"><span class="link-card__title">Text Statistics &amp; Readability</span><span class="link-card__desc">Averages, lexical diversity, top words, Flesch reading ease (English).</span></a></li><li><a class="link-card" href="/en/find-replace/"><span class="link-card__title">Find &amp; Replace</span><span class="link-card__desc">Plain or regex find and replace; $1 / $&amp; work in regex mode.</span></a></li><li><a class="link-card" href="/en/css-selector-speed-profiler/"><span class="link-card__title">CSS Selector Speed Profiler</span><span class="link-card__desc">Time querySelectorAll for each selector against your HTML in this browser and rate its structural cost (key selector, descendant depth, :has(), attribute substring matches). Real style-matching cost differs by engine; use this for relative comparison.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

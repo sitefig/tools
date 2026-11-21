@@ -1,0 +1,44 @@
+{
+ "id": "typescript-to-go-struct",
+ "seoTitle": "Free TypeScript to Go Struct Converter Online",
+ "metaDescription": "Convert TypeScript interfaces and enums to Go structs with json tags, omitempty, pointers and time.Time. Free, runs in your browser, nothing uploaded.",
+ "intro": "Paste TypeScript interfaces, type aliases and enums and get Go structs with json tags, omitempty for optional properties, pointers for nullable ones and typed constants for string enums.",
+ "why": "A Go service that serves a TypeScript front end has to describe the same JSON twice, and the two descriptions drift. Starting from the TypeScript declarations gives the Go side the exact property names, so the json tags match what the client sends.\n\nOptional properties become omitempty with a pointer, so a missing field and a zero value stay distinguishable; nullable properties become pointers; arrays become slices, Record becomes map[string]T, and Date becomes time.Time (or string). Names are exported in Go style with initialisms such as ID and URL. The output compiles with go vet and round-trips JSON through encoding/json. Everything runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your TypeScript interfaces, type aliases or enums.",
+  "Set the package name and choose how number and Date map.",
+  "Copy the Go code into a file and run gofmt if you edit it."
+ ],
+ "faq": [
+  {
+   "q": "Which TypeScript features are supported?",
+   "a": "Interfaces, type aliases, string enums, optional and nullable properties, unions, literals, tuples, arrays, Record, Date, extends and intersections, and JSDoc comments. Conditional and mapped types, keyof, typeof, function types and most utility generics are not supported, and the tool says so instead of guessing."
+  },
+  {
+   "q": "What happens to a union such as string | number?",
+   "a": "Go has no general union type, so the field becomes any with a comment that says it was a union. Unions of literal values such as \"a\" | \"b\" become the base type with the literal list in a comment, and a top-level string-literal type alias becomes a real enum."
+  },
+  {
+   "q": "Why does number become a floating point type?",
+   "a": "TypeScript has a single number type, so the converter cannot know whether a value is an integer. It uses a floating point type by default. Switch the option or edit single fields where you know the value is whole."
+  },
+  {
+   "q": "How are extends and intersections handled?",
+   "a": "Go struct embedding would change how the JSON is read, so the fields of the base types are copied into the struct instead. The base types are still emitted as their own structs."
+  }
+ ],
+ "related": [
+  "json-to-go",
+  "typescript-to-json-schema",
+  "go-struct-to-typescript",
+  "typescript-to-rust-serde",
+  "sql-to-go-gorm",
+  "json-to-models"
+ ],
+ "keywords": [
+  "typescript to go",
+  "typescript interface to go struct",
+  "ts to golang struct",
+  "json tags generator"
+ ]
+}

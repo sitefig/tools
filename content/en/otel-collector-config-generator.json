@@ -1,0 +1,45 @@
+{
+  "id": "otel-collector-config-generator",
+  "seoTitle": "OpenTelemetry Collector Config Generator (YAML)",
+  "metaDescription": "Generate an OpenTelemetry Collector configuration with OTLP receivers, batch and memory limiter processors and exporters wired into traces, metrics and logs pipelines.",
+  "intro": "Start a Collector configuration quickly, with the processors that production setups normally need.",
+  "why": "Choose OTLP over gRPC and/or HTTP, then where traces, metrics and logs go: OTLP to a backend, a Prometheus scrape endpoint, or the debug exporter. The output defines receivers, memory_limiter and batch processors (memory_limiter first, as recommended), the exporters you selected and one pipeline per signal.\n\nThe YAML was parsed to check its structure, but not run against a Collector. Component names and options change between Collector versions, so validate with otelcol validate.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose receiver protocols and an exporter per signal.",
+    "Enter the OTLP endpoint and Prometheus port.",
+    "Save as config.yaml.",
+    "Run otelcol validate --config config.yaml."
+  ],
+  "faq": [
+    {
+      "q": "Why is memory_limiter first?",
+      "a": "So it can refuse data before other processors allocate memory."
+    },
+    {
+      "q": "Does it add TLS?",
+      "a": "The OTLP exporter keeps TLS verification on; add certificates for private CAs."
+    },
+    {
+      "q": "Which Collector distribution?",
+      "a": "The core debug exporter, OTLP and Prometheus exporters are used."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "prometheus-config-generator",
+    "grafana-panel-generator",
+    "promql-query-builder",
+    "docker-compose-generator",
+    "kubernetes-deployment-generator",
+    "yaml-format"
+  ],
+  "keywords": [
+    "opentelemetry collector config",
+    "otel collector yaml",
+    "otlp receiver",
+    "observability pipeline"
+  ]
+}

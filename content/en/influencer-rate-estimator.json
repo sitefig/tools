@@ -1,0 +1,41 @@
+{
+ "id": "influencer-rate-estimator",
+ "seoTitle": "Influencer Sponsored Post Rate Estimator",
+ "metaDescription": "Estimate a price for a sponsored post from followers and engagement with a rate per 1,000 followers that you set. Free, private.",
+ "intro": "Estimate a fair price for a sponsored post from followers and engagement, using a rate per 1,000 followers that you set yourself.",
+ "why": "Creators and brands often ask what a post is worth. No single market rate exists, and public rate tables vary by platform, niche and year.\n\nThis tool is a calculator for your own rate card. Set a base rate per 1,000 followers, compare your engagement rate with an average you choose, add a format multiplier and a usage-rights add-on, and see an estimate with a rough negotiation band. The defaults are placeholders, not data.",
+ "howTo": [
+  "Enter followers and engagement rate.",
+  "Set your base rate per 1,000 followers and the average engagement rate.",
+  "Add a format multiplier and usage rights if needed.",
+  "Use the estimate as a starting point for a quote."
+ ],
+ "faq": [
+  {
+   "q": "Where do the default numbers come from?",
+   "a": "They are placeholders. Replace them with rates you have been paid or quoted."
+  },
+  {
+   "q": "How is engagement used?",
+   "a": "Your rate divided by the average, kept between 0.5 and 2 times."
+  },
+  {
+   "q": "Is the band exact?",
+   "a": "No. It is plus or minus 25 percent as a negotiation range."
+  }
+ ],
+ "related": [
+  "engagement-rate-calculator",
+  "follower-growth-calculator",
+  "social-media-roi-calculator",
+  "youtube-earnings-estimator",
+  "tiktok-money-calculator",
+  "discount-calculator"
+ ],
+ "keywords": [
+  "influencer rate calculator",
+  "sponsored post price",
+  "influencer pricing",
+  "how much to charge for sponsored post"
+ ]
+}

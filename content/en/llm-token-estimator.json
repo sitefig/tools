@@ -1,0 +1,45 @@
+{
+ "id": "llm-token-estimator",
+ "seoTitle": "Free LLM Token Count Estimator (Approximate)",
+ "metaDescription": "Estimate token counts for GPT-4o, GPT-4, Claude, DeepSeek and Llama from text using chars-per-token ratios. Approximate and free, in your browser.",
+ "intro": "Paste text to get an approximate token count for several model families, with a range and optional cost. These are estimates, not exact tokenizer output.",
+ "why": "Prompts, documents and chat histories all have to fit a context window, and API usage is billed per token. Before you send something large, a rough count tells you whether it fits and what it may cost.\n\nReal tokenizers use learned vocabularies that differ per model, and they cannot be bundled here, so this tool uses per-family ratios of characters per token blended with a word and punctuation heuristic. For ordinary English it is usually within roughly 10 to 20 percent. Code, numbers, emoji and non-Latin scripts vary more. Use the provider token counting API when exact numbers matter, such as for billing checks or hard limits. The text stays in your browser.",
+ "howTo": [
+  "Paste your text or prompt.",
+  "Optionally enter your price per million input tokens for a cost estimate.",
+  "Read the estimated tokens and range for each model family."
+ ],
+ "faq": [
+  {
+   "q": "How accurate is the estimate?",
+   "a": "Typically within 10 to 20 percent for English prose. The output shows a range for each model. Code, numbers, emoji and other languages can be further off, so treat it as a planning figure."
+  },
+  {
+   "q": "Why not use the real tokenizer?",
+   "a": "Model vocabularies are large files that differ per model and change over time. This page does not ship them, so it estimates. Use the provider API for exact counts."
+  },
+  {
+   "q": "Why do the models give different numbers?",
+   "a": "Each family splits text differently, and newer vocabularies often pack English into fewer tokens. The tool applies a different characters-per-token ratio to each."
+  },
+  {
+   "q": "Is my text sent anywhere?",
+   "a": "No. The estimate is calculated locally in your browser from the text you paste, and nothing is uploaded, logged or stored by this page."
+  }
+ ],
+ "related": [
+  "gpt-token-counter",
+  "multi-tokenizer-counter",
+  "tokenizer-cost-estimator",
+  "llm-cost-calculator",
+  "system-prompt-budgeter",
+  "token-truncate"
+ ],
+ "keywords": [
+  "llm token counter estimate",
+  "token count estimator",
+  "gpt token calculator approximate",
+  "free claude token estimate",
+  "how many tokens is my text"
+ ]
+}

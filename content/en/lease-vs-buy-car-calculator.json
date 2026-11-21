@@ -1,0 +1,39 @@
+{
+ "id": "lease-vs-buy-car-calculator",
+ "seoTitle": "Lease vs Buy Car Calculator",
+ "metaDescription": "Compare the total cost of leasing and buying a car over the same period using lease fees, loan terms and resale value.",
+ "intro": "Total cost of lease and purchase over one period.",
+ "why": "Leasing has lower payments but leaves you with nothing at the end. Buying costs more cash but gives you a car with resale value. Comparing over the same number of months makes the numbers comparable.\n\nThe loan balance still owed at the end is added to the cost of buying, and the resale value is subtracted. Resale value is the biggest unknown.",
+ "howTo": [
+  "Enter the period in months and the lease terms.",
+  "Enter the purchase price, deposit, rate and term.",
+  "Enter the expected resale value."
+ ],
+ "faq": [
+  {
+   "q": "Does it include insurance?",
+   "a": "No. Add it to both sides if it differs."
+  },
+  {
+   "q": "What about opportunity cost?",
+   "a": "It is ignored. Cash used for a deposit could earn interest."
+  },
+  {
+   "q": "What if I keep the car?",
+   "a": "Then compare over a longer period."
+  }
+ ],
+ "related": [
+  "car-loan-balloon-calculator",
+  "loan-calculator",
+  "emi-calculator",
+  "fuel-cost",
+  "rent-vs-buy-calculator",
+  "compound-interest"
+ ],
+ "keywords": [
+  "lease vs buy",
+  "car lease calculator",
+  "buy or lease"
+ ]
+}

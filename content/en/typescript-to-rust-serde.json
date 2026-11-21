@@ -1,0 +1,44 @@
+{
+ "id": "typescript-to-rust-serde",
+ "seoTitle": "Free TypeScript to Rust Serde Struct Converter",
+ "metaDescription": "Convert TypeScript interfaces and enums to Rust structs that derive Serialize and Deserialize, with Option, Vec, HashMap and serde rename. Runs in your browser.",
+ "intro": "Paste TypeScript interfaces and enums and get Rust structs deriving Serialize and Deserialize, with Option for optional fields, Vec, HashMap, tuples, serde renames and enums with per-variant names.",
+ "why": "A Rust API behind a TypeScript client needs structs whose serde names line up with the client's property names. Writing them by hand means translating every camelCase key and every optional field.\n\nThe converter writes snake_case Rust fields and adds #[serde(rename_all = \"camelCase\")] when every key fits, or a per-field rename when they do not. Optional fields become Option with skip_serializing_if, recursive fields get a Box, reserved words use raw identifiers, and string enums become enums with a rename on each variant. The output builds with cargo check against serde and serde_json and round-trips JSON. Everything runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your TypeScript interfaces, type aliases or enums.",
+  "Edit the derive list and choose the camelCase and Date options.",
+  "Copy the Rust code into a module and add serde (with the derive feature) and serde_json to Cargo.toml."
+ ],
+ "faq": [
+  {
+   "q": "Which TypeScript features are supported?",
+   "a": "Interfaces, type aliases, string enums, optional and nullable properties, unions, literals, tuples, arrays, Record, Date, extends and intersections, and JSDoc comments. Conditional and mapped types, keyof, typeof, function types and most utility generics are not supported, and the tool says so instead of guessing."
+  },
+  {
+   "q": "What happens to a union such as string | number?",
+   "a": "Rust has no general union type, so the field becomes serde_json::Value with a comment that says it was a union. Unions of literal values such as \"a\" | \"b\" become the base type with the literal list in a comment, and a top-level string-literal type alias becomes a real enum."
+  },
+  {
+   "q": "Why does number become a floating point type?",
+   "a": "TypeScript has a single number type, so the converter cannot know whether a value is an integer. It uses a floating point type by default. Switch the option or edit single fields where you know the value is whole."
+  },
+  {
+   "q": "Which crates does the output need?",
+   "a": "serde with the derive feature, always. serde_json when a field is unknown or a union, and chrono (with its serde feature) only if you choose the chrono Date option. The default is String for dates so no extra crate is needed."
+  }
+ ],
+ "related": [
+  "typescript-to-go-struct",
+  "json-to-models",
+  "typescript-to-json-schema",
+  "curl-to-rust-reqwest",
+  "typescript-to-kotlin-data-class",
+  "typescript-to-python"
+ ],
+ "keywords": [
+  "typescript to rust",
+  "typescript to serde",
+  "ts interface to rust struct",
+  "rust serde generator"
+ ]
+}

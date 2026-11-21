@@ -1,0 +1,45 @@
+{
+ "id": "subtitle-srt-vtt-converter",
+ "seoTitle": "Free SRT to VTT Subtitle Converter with Time Shift",
+ "metaDescription": "Convert SubRip (.srt) and WebVTT (.vtt) subtitles in both directions, auto-detecting the input, and shift all cues by milliseconds. Free, in-browser.",
+ "intro": "Paste SRT or VTT subtitles to convert them to the other format, with automatic detection of the input type and an optional shift of every cue in milliseconds.",
+ "why": "Web video players want WebVTT, while many editors and download sites give you SubRip. The two formats are close but not the same: SRT numbers each cue and uses a comma before the milliseconds, VTT starts with a WEBVTT header and uses a dot. Replacing characters by hand tends to miss a case.\n\nThis tool reads the cues, converts timestamps and writes the target format. If subtitles run early or late, a shift in milliseconds fixes every cue at once, with negative values moving them earlier. Positioning settings, styles and notes in VTT files are not carried over, and cue text including simple tags is passed through unchanged. Save the output as UTF-8 for accented characters.",
+ "howTo": [
+  "Paste subtitles in SRT or VTT format.",
+  "Choose the target format, or leave it on automatic to flip to the opposite one.",
+  "Enter a shift in milliseconds if the timing is off, then copy the result."
+ ],
+ "faq": [
+  {
+   "q": "How does it know which format I pasted?",
+   "a": "If the text starts with WEBVTT it is treated as VTT, otherwise as SRT. Automatic mode then converts to the other format."
+  },
+  {
+   "q": "Are styles and positions kept?",
+   "a": "No. NOTE, STYLE and REGION blocks are skipped, and cue settings after the timestamps are not carried across. Only the timing and the cue text are converted."
+  },
+  {
+   "q": "How do I shift the timing?",
+   "a": "Enter milliseconds in the shift box: 2000 delays every cue by two seconds, and -1500 shows them one and a half seconds earlier. Times never go below zero."
+  },
+  {
+   "q": "Does it handle hours in VTT timestamps?",
+   "a": "Yes. VTT times may omit the hour part, as in 01:02.500, and the tool reads both forms. Output always includes hours, minutes, seconds and milliseconds."
+  }
+ ],
+ "related": [
+  "video-to-gif",
+  "text-diff",
+  "sort-lines",
+  "find-replace",
+  "timestamp-converter",
+  "time-duration-calculator"
+ ],
+ "keywords": [
+  "srt to vtt converter",
+  "vtt to srt online",
+  "subtitle converter",
+  "free subtitle time shift",
+  "webvtt converter"
+ ]
+}

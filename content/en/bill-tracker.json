@@ -1,0 +1,46 @@
+{
+ "id": "bill-tracker",
+ "seoTitle": "Free Monthly Bill Tracker, Saved Only in This Browser",
+ "metaDescription": "List recurring bills with amount and due day, tick them paid each month and see total, paid and remaining. Free, data stays in your browser.",
+ "intro": "Add each recurring bill with an amount and due day, then tick it as paid every month. The tool shows the total, the amount paid, what remains and which bills are overdue.",
+ "why": "Rent, broadband, insurance and subscriptions each come due on different days, and a missed payment means a late fee or a nasty letter. A spreadsheet works but needs setting up, and a banking app may not list the bills you pay by transfer. This tracker is deliberately simple: enter the name, amount and the day of the month it is due, and it shows the month's total, how much you have already paid and how much is left. Bills past their due day and not yet ticked are marked overdue, and ticks reset naturally each month. Because it stores data in your browser only, nothing is uploaded, though that also means no backup or sync.",
+ "howTo": [
+  "Enter the bill name, amount and due day of the month, then press 'Add bill'.",
+  "Tick the checkbox when you have paid it this month.",
+  "Check the totals at the top and delete bills you no longer pay."
+ ],
+ "faq": [
+  {
+   "q": "Where are my bills saved?",
+   "a": "In this browser's local storage, on this device only. They are not uploaded or synced. If you clear site data, use a private window or change browser, the list will be empty."
+  },
+  {
+   "q": "How does the monthly reset work?",
+   "a": "Paid ticks are stored per calendar month, so on the first of a new month every bill appears unpaid again without deleting anything."
+  },
+  {
+   "q": "When is a bill shown as overdue?",
+   "a": "If its due day has already passed this month and it is not ticked as paid. The comparison uses today's day of the month."
+  },
+  {
+   "q": "Does it handle different currencies or payment history?",
+   "a": "Amounts are plain numbers with two decimals, so any currency works but nothing is converted. Only the current month's ticks matter, and there is no long-term history."
+  }
+ ],
+ "related": [
+  "habit-streak-tracker",
+  "savings-goal",
+  "loan-calculator",
+  "salary-hourly",
+  "vat-calculator",
+  "kanban-board"
+ ],
+ "keywords": [
+  "bill tracker",
+  "free monthly bill tracker",
+  "bill payment tracker",
+  "recurring bills tracker",
+  "track bills due dates",
+  "bill organiser no sign up"
+ ]
+}

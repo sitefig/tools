@@ -1,0 +1,44 @@
+{
+ "id": "log-timestamp-normalizer",
+ "seoTitle": "Log Timestamp Normalizer: Mixed Formats to ISO 8601",
+ "metaDescription": "Detect mixed timestamp formats in logs and rewrite them as ISO 8601 in one time zone. Epoch, syslog, Apache and RFC 2822 supported. Free.",
+ "intro": "Finds the timestamp in each line and rewrites it in ISO 8601 in a time zone you choose.",
+ "why": "Merging logs from several systems is painful when each writes time differently. Normalising first makes sorting and comparison work.\n\nFormats: ISO 8601, Apache, RFC 2822, syslog, logcat, yyyy/mm/dd, epoch seconds and milliseconds. Day-first dates such as 03/04/2024 are not guessed. Conversions were checked against Python.",
+ "howTo": [
+  "Paste the log lines.",
+  "Set the zone for times that have none.",
+  "Choose the output zone.",
+  "Copy the converted lines."
+ ],
+ "faq": [
+  {
+   "q": "Which time is changed?",
+   "a": "Only the first timestamp in each line."
+  },
+  {
+   "q": "What if a line has no time?",
+   "a": "It is left as it was and counted."
+  },
+  {
+   "q": "Why is the year wrong for syslog?",
+   "a": "Syslog lines have no year. Set it in the option."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "multi-log-merger",
+  "log-level-histogram",
+  "timestamp-converter",
+  "date-difference",
+  "syslog-parser",
+  "log-format-detector"
+ ],
+ "keywords": [
+  "normalize log timestamps",
+  "convert log time to iso 8601",
+  "mixed timestamp formats"
+ ]
+}

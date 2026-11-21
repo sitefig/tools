@@ -1,0 +1,45 @@
+{
+ "id": "grid-robot-and-circuit-puzzles",
+ "seoTitle": "Logic Puzzles: Program a Robot or Set Boolean Switches",
+ "metaDescription": "Two keyboard-playable logic puzzle sets: write F, L, R and repeat programs to walk a grid robot, or set switches so a gate formula gives the target. Exact solvability checks.",
+ "intro": "Six grid levels where you type a short program and six gate-formula levels where you set switches. Build your own map or formula and the tool checks whether it can be solved.",
+ "why": "Block coding teaches sequences and loops, but dragging blocks is hard without a mouse. Here the program is text: F moves forward, L and R turn, and repeat 3 { F } repeats. You run it, step through it, and the tool tells you where the robot ended up or which wall it hit. Each level has a limit on instructions, so you are pushed toward loops.\n\nThe circuit puzzles show a formula with AND, OR, NOT, XOR, NAND, NOR and XNOR and a set of switches. Both sets can check solvability exactly: the robot check is a breadth-first search over every position, direction and star set, and the circuit check tries every switch setting. One circuit level is impossible on purpose: the right move is to say so.",
+ "howTo": [
+  "Pick the robot or circuit puzzle type, then a level.",
+  "Robot: type a program such as \"repeat 5 { F }\" and press Run, then step through the trace. Circuit: toggle switches and watch the output.",
+  "Use \"Show a shortest solution\" or \"Show every switch setting\" if you are stuck.",
+  "Open \"Make or test your own\" to check whether your map or formula can be solved."
+ ],
+ "faq": [
+  {
+   "q": "How are instructions counted?",
+   "a": "Each F, L, R and each repeat counts as one. The brackets do not count. The limit is shown with the level."
+  },
+  {
+   "q": "What happens if the robot hits a wall?",
+   "a": "The program stops with a message and the level is not solved. Walls and edges are never passed through."
+  },
+  {
+   "q": "Which operators does the formula accept?",
+   "a": "AND OR NOT XOR NAND NOR XNOR, the symbols & | ! ^, parentheses, 0 and 1. NOT binds tightest, then AND, then XOR, then OR."
+  },
+  {
+   "q": "Is the solvability check reliable?",
+   "a": "Yes for these puzzles: both checks are exhaustive. Maps are limited to 20 by 20 and formulas to 8 variables."
+  }
+ ],
+ "related": [
+  "boolean-minimizer",
+  "game-of-life-simulator",
+  "game-2048",
+  "word-search-puzzle-maker",
+  "crossword-puzzle-maker",
+  "typing-tutor-key-rows"
+ ],
+ "keywords": [
+  "coding puzzles for kids",
+  "robot grid programming game",
+  "boolean logic puzzle",
+  "logic gate game"
+ ]
+}

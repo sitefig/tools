@@ -1,0 +1,39 @@
+{
+ "id": "dollar-cost-averaging-calculator",
+ "seoTitle": "Dollar-Cost Averaging Calculator",
+ "metaDescription": "Simulate regular investing at a list of prices: shares bought, average cost and gain or loss. Free and private.",
+ "intro": "Shows what a fixed amount invested each period buys at the prices you enter.",
+ "why": "Dollar-cost averaging buys more shares when prices are low and fewer when they are high. The average cost per share is the harmonic mean of prices, always at or below the simple average.\n\nPaste prices from your own data. Fractional shares and no dividends are assumed, so compare with your broker statements.",
+ "howTo": [
+  "Paste prices, oldest first.",
+  "Enter the amount per purchase and any fee.",
+  "Read shares, average cost and gain or loss."
+ ],
+ "faq": [
+  {
+   "q": "Why is average cost below the average price?",
+   "a": "Equal money buys more shares at low prices, which pulls the cost down."
+  },
+  {
+   "q": "Can I use my own prices?",
+   "a": "Yes. Paste them from a spreadsheet."
+  },
+  {
+   "q": "Is future performance predicted?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "stock-profit-calculator",
+  "dividend-yield-calculator",
+  "roi-calculator",
+  "compound-interest",
+  "savings-goal",
+  "percent-change"
+ ],
+ "keywords": [
+  "dollar cost averaging",
+  "DCA calculator",
+  "average purchase price"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "text-chunk-splitter",
+ "seoTitle": "Free Text Chunk Splitter for RAG with Overlap",
+ "metaDescription": "Split text into overlapping chunks by characters or approximate tokens, preferring paragraph and sentence breaks. Free, runs in your browser.",
+ "intro": "Paste text and split it into overlapping chunks of a chosen size, measured in characters or approximate tokens, breaking at paragraphs or sentences where possible.",
+ "why": "Retrieval pipelines cut documents into chunks before embedding them. Too large and each vector blurs several topics; too small and meaning is lost. Overlap repeats a little text across boundaries so that a sentence split in two can still be found.\n\nThis splitter lets you try sizes on real text before writing code. It cuts at the last paragraph, sentence or line break in the second half of each window when that option is on, and falls back to a hard cut otherwise. Each chunk is labelled with its length and an approximate token count. Token sizes use a four-characters-per-token rule, so they are rough guides only.",
+ "howTo": [
+  "Paste the text you want to split into the input.",
+  "Set the chunk size and overlap, and choose characters or approximate tokens.",
+  "Leave boundary preference on, then copy the numbered chunks from the output."
+ ],
+ "faq": [
+  {
+   "q": "How is the token unit measured?",
+   "a": "The approximate token option multiplies your size and overlap by four to get characters. It is a rough rule for English text, not a tokenizer."
+  },
+  {
+   "q": "What does boundary preference do?",
+   "a": "It looks in the second half of each window for the last blank line, sentence end or line break and cuts there, so chunks tend to end on natural breaks."
+  },
+  {
+   "q": "Why must overlap be smaller than the size?",
+   "a": "Otherwise each chunk would start where the previous one began and the splitter would never advance. The tool reports an error in that case."
+  },
+  {
+   "q": "Can I see the chunks coloured?",
+   "a": "Not in this tool, which prints numbered chunks as text. Use the RAG Chunking Visualizer to see colour-coded chunks with the overlapping parts highlighted."
+  }
+ ],
+ "related": [
+  "rag-chunking-visualizer",
+  "llm-token-estimator",
+  "embedding-similarity",
+  "llm-context-window-shrinker",
+  "token-truncate",
+  "text-statistics"
+ ],
+ "keywords": [
+  "text chunk splitter",
+  "rag chunking tool",
+  "split text into chunks with overlap",
+  "free document chunker",
+  "embedding chunk size tester"
+ ]
+}

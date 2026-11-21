@@ -1,0 +1,39 @@
+{
+ "id": "reverse-charge-checker",
+ "seoTitle": "EU Reverse Charge Checker for B2B Sales",
+ "metaDescription": "Answer a few questions to see whether VAT is reverse-charged or exempt on a cross-border EU sale, with invoice wording to consider.",
+ "intro": "A rule-of-thumb guide to the main cross-border B2B VAT cases.",
+ "why": "For B2B services between member states, the place of supply is usually the buyer's country and the buyer accounts for the VAT. For goods moved to a business in another member state, the supply is usually exempt.\n\nThe tool follows Articles 44, 138, 146 and 196 of Directive 2006/112/EC for the main cases and names exceptions. It cannot check the buyer's VAT ID, which you should validate in VIES. Not tax advice. Check national rules.",
+ "howTo": [
+  "Choose where the buyer is and what kind of buyer.",
+  "Choose services or goods and tick the special cases.",
+  "Read the result and the wording."
+ ],
+ "faq": [
+  {
+   "q": "Does it check VAT numbers?",
+   "a": "No. It works offline. Use VIES for a live check."
+  },
+  {
+   "q": "Is reverse charge the same as the goods exemption?",
+   "a": "Not strictly. For goods the seller exempts and the buyer reports acquisition VAT."
+  },
+  {
+   "q": "Which cases are not covered?",
+   "a": "Chain transactions, triangulation, special schemes and national domestic reverse charge rules."
+  }
+ ],
+ "related": [
+  "vat-number-format-validator",
+  "tax-id-checksum-validator",
+  "eu-invoice-requirements-checker",
+  "vat-calculator",
+  "oss-vat-calculator",
+  "eu-vat-rates-lookup"
+ ],
+ "keywords": [
+  "reverse charge",
+  "intra-community supply",
+  "B2B VAT EU"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "url-case-duplicates",
+ "seoTitle": "Case Sensitive URL Duplicate Finder",
+ "metaDescription": "Find URLs in a list that differ only by upper and lower case, which can create duplicate pages on case-sensitive servers.",
+ "intro": "Groups URLs that are equal when case is ignored, so you can pick one lowercase form and redirect the rest.",
+ "why": "On many servers /Shop and /shop are different pages. If both are linked, crawled or indexed, the same content lives at two URLs. This tool finds those pairs in a crawl or log export.\n\nWhether a case variant is a separate page depends on your server, so test one pair with curl -I before acting. Host names are case-insensitive by definition, so a host-only difference needs no fix.",
+ "howTo": [
+  "Paste a URL list from a crawl, sitemap or log.",
+  "Choose whether the query string case matters.",
+  "Review the groups.",
+  "Redirect the variants to one lowercase URL."
+ ],
+ "faq": [
+  {
+   "q": "Why do case duplicates happen?",
+   "a": "Hand-typed links, links from other sites, and CMS or rewrite rules that ignore case."
+  },
+  {
+   "q": "What is the fix?",
+   "a": "Pick one lowercase form, redirect the others with a 301 and use the same form in canonical tags and sitemaps."
+  },
+  {
+   "q": "Do trailing slashes count?",
+   "a": "You can treat them as the same so variants that differ in both are still grouped."
+  },
+  {
+   "q": "Does it request the URLs?",
+   "a": "No, it only compares the text."
+  }
+ ],
+ "related": [
+  "url-list-normalizer",
+  "canonical-generator",
+  "bulk-redirect-rules",
+  "url-parameter-analyzer",
+  "crawl-error-url-grouper",
+  "sitemap-validator"
+ ],
+ "keywords": [
+  "url case sensitivity seo",
+  "uppercase lowercase url duplicate",
+  "duplicate urls case",
+  "find case duplicates"
+ ]
+}

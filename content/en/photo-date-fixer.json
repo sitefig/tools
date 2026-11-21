@@ -1,0 +1,45 @@
+{
+ "id": "photo-date-fixer",
+ "seoTitle": "Photo Date Fixer (Shift EXIF Capture Time in Batch)",
+ "metaDescription": "Shift the capture time of JPEG photos by an offset such as +6h, or set the first photo to a date and move the rest by the same amount, so a camera with a...",
+ "intro": "Shift the capture time of photos in EXIF.",
+ "why": "Choose JPEGs and either shift every date by an offset such as +6h or -1d 2h 30m, or set the earliest photo to a date you give and move the rest by the same amount. DateTime, DateTimeOriginal and DateTimeDigitized are changed in place.\n\nEXIF stores a local clock time without a time zone, so the tool shifts the written time and does not handle time zones or daylight saving. XMP dates, GPS time and the file modified time are not changed.",
+ "howTo": [
+  "Choose the JPEGs.",
+  "Pick shift or set mode.",
+  "Enter the offset or the new date.",
+  "Download the files."
+ ],
+ "faq": [
+  {
+   "q": "Does the sign apply to every part?",
+   "a": "Yes. -1d 2h means minus one day and two hours."
+  },
+  {
+   "q": "Why do some files get skipped?",
+   "a": "They have no EXIF date tags."
+  },
+  {
+   "q": "Does it change the file modified time?",
+   "a": "No. That belongs to your file system."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "exif-viewer",
+  "lossless-jpeg-rotator",
+  "gps-location-stripper",
+  "photo-gps-export",
+  "timestamp-converter",
+  "iptc-copyright-metadata-editor"
+ ],
+ "keywords": [
+  "change exif date",
+  "photo date shift",
+  "fix camera clock",
+  "edit date taken"
+ ]
+}

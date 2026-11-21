@@ -1,0 +1,47 @@
+{
+ "id": "html-entities",
+ "seoTitle": "Free HTML Entities Encode and Decode Online",
+ "metaDescription": "Escape or unescape HTML entities, including named, decimal and hex forms. Optionally encode all non-ASCII characters. Free and runs in your browser.",
+ "intro": "Escape special characters into HTML entities, or turn entities like &amp;, &eacute; and &#x1F600; back into plain text. Named, decimal and hexadecimal forms are all handled.",
+ "why": "Putting a snippet of code or user text into an HTML page without escaping &, < and quotes breaks the layout, and in the worst case opens a cross-site scripting hole. In the other direction, scraped text and exported feeds arrive full of &amp; and &#8217; that need turning back into characters.\n\nThis tool escapes the five characters that matter in HTML, and can also convert every non-ASCII character to a named or numeric entity. In decode mode it understands named, decimal and hex entities, and leaves unknown names untouched. It runs locally, so draft content stays private.",
+ "howTo": [
+  "Paste your text or HTML into the box.",
+  "Choose the direction: encode to produce entities, or decode to restore characters.",
+  "For encoding, tick \"Encode all non-ASCII\" if the target cannot handle UTF-8.",
+  "Copy the converted text."
+ ],
+ "faq": [
+  {
+   "q": "Which characters does encoding escape?",
+   "a": "It always escapes & < > \" and the apostrophe, which covers the characters that can break HTML markup or attributes. With \"Encode all non-ASCII\" it also converts accented letters, symbols and emoji to named or numeric entities."
+  },
+  {
+   "q": "Does it know every named entity?",
+   "a": "It knows the five core ones plus a few dozen common names such as nbsp, copy, eacute, mdash and euro. Unknown names are left as they are. Numeric entities, decimal or hex, always work for any code point."
+  },
+  {
+   "q": "Is escaping enough to prevent XSS?",
+   "a": "Escaping text placed in element content is a key defence, but the right escaping depends on context. Attributes, URLs, scripts and styles each need their own rules. Use a templating library that escapes by default."
+  },
+  {
+   "q": "Why does decode show a replacement character?",
+   "a": "A numeric entity pointing to code point 0 or beyond the Unicode range cannot be a real character, so it becomes the replacement character, �."
+  }
+ ],
+ "related": [
+  "html-entities-reference",
+  "html-tag-stripper",
+  "unicode-escape",
+  "url-encode",
+  "string-escape",
+  "json-escape"
+ ],
+ "keywords": [
+  "html entities encode",
+  "html entities decode online",
+  "html escape tool",
+  "free html entity converter",
+  "unescape html online",
+  "html special characters converter"
+ ]
+}

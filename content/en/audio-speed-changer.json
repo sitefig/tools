@@ -1,0 +1,45 @@
+{
+ "id": "audio-speed-changer",
+ "seoTitle": "Change Audio Speed Online, Keep or Change Pitch",
+ "metaDescription": "Speed up or slow down audio from 0.25x to 4x. Keep the pitch with a WSOLA time stretch or let it change like a tape. Free, private, exports WAV.",
+ "intro": "Changes the playback speed of an audio file and saves the result as WAV. Choose whether the pitch stays the same or moves with the speed.",
+ "why": "Slowing a lecture down, speeding up a podcast or practising a fast guitar part at half speed are common jobs. Just resampling changes the pitch along with the speed, so voices turn into chipmunks. Time stretching keeps the pitch.\n\nThe pitch-keeping mode uses WSOLA: overlapping 46 ms frames are chosen so their waveforms line up, then added together. It works well on speech and most music. Drums and sharp attacks can sound slightly smeared at extreme settings. The other mode resamples, which is how a tape machine behaves.",
+ "howTo": [
+  "Choose an audio file.",
+  "Enter the speed, for example 0.75 or 1.5.",
+  "Choose \"keep pitch\" or \"change pitch with speed\".",
+  "Press Run, listen, and download the WAV."
+ ],
+ "faq": [
+  {
+   "q": "What range is allowed?",
+   "a": "From 0.25 to 4 times the original speed."
+  },
+  {
+   "q": "Why does it sound a bit watery at 0.5x?",
+   "a": "Time stretching repeats and overlaps tiny slices of sound. At large ratios that becomes audible. Try 0.7x to 0.8x for speech."
+  },
+  {
+   "q": "Can I change the pitch without the speed?",
+   "a": "Yes, use the pitch shifter tool."
+  },
+  {
+   "q": "Is a long file a problem?",
+   "a": "A few minutes processes in seconds. Very long files use a lot of memory because everything is decoded in the browser."
+  }
+ ],
+ "related": [
+  "pitch-shifter",
+  "audio-trimmer",
+  "audio-reverser",
+  "audio-fade-editor",
+  "bpm-detector",
+  "audio-bpm-tap"
+ ],
+ "keywords": [
+  "change audio speed",
+  "slow down audio keep pitch",
+  "speed up mp3 online",
+  "time stretch audio"
+ ]
+}

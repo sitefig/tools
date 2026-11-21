@@ -1,0 +1,46 @@
+{
+ "id": "rego-snippet-helper",
+ "seoTitle": "Free OPA Rego Policy Snippet Generator",
+ "metaDescription": "Generate Open Policy Agent Rego v1 policies for RBAC, deny lists, Kubernetes admission and Terraform plan checks. Free, runs in your browser.",
+ "intro": "Pick a policy pattern, enter a few values and get a Rego v1 policy for RBAC, deny lists, Kubernetes admission or Terraform plan checks.",
+ "why": "Rego is easy to read once you know it, but the first policy is hard to write from a blank file. The syntax changed with Rego v1, so older blog examples now fail without import rego.v1, and the contains and in keywords trip up people used to the earlier style.\n\nThis helper offers six common patterns and fills in your package name and values: roles for RBAC, a set of blocked names, required Kubernetes labels, a privileged container check, a public S3 ACL check on a Terraform plan and a simple HTTP method and path rule. Treat the output as a starting point and test it with opa eval or opa test.",
+ "howTo": [
+  "Choose a template, such as Kubernetes: required labels.",
+  "Enter the values the template needs, one per line, and set the package name.",
+  "Copy the Rego code into a .rego file and test it with opa eval."
+ ],
+ "faq": [
+  {
+   "q": "Which Rego syntax does it produce?",
+   "a": "Rego v1. Each policy starts with import rego.v1 and uses keywords such as if, contains and in, which current OPA releases expect."
+  },
+  {
+   "q": "What are the values for?",
+   "a": "They feed the template. For RBAC they become role names, for a deny list the blocked values, and for required labels the label keys. Templates that need no values ignore the field."
+  },
+  {
+   "q": "Are the policies safe to deploy as they are?",
+   "a": "No. They are examples. Check the input shape against what your system actually sends to OPA, and write tests before enforcing anything."
+  },
+  {
+   "q": "Can it write a policy from my own rules?",
+   "a": "No. It only fills in the six built-in patterns. Edit the generated code by hand for anything custom."
+  }
+ ],
+ "related": [
+  "aws-iam-policy-builder",
+  "aws-iam-policy-linter",
+  "k8s-manifest-validator",
+  "kubernetes-deployment-generator",
+  "terraform-scaffolder",
+  "kubeconfig-validator"
+ ],
+ "keywords": [
+  "rego policy generator",
+  "opa rego examples",
+  "open policy agent snippets",
+  "free rego template",
+  "kubernetes admission rego",
+  "rego v1 syntax"
+ ]
+}

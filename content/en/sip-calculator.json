@@ -1,0 +1,46 @@
+{
+ "id": "sip-calculator",
+ "seoTitle": "Free SIP Calculator: Future Value of Monthly Investing",
+ "metaDescription": "Estimate the future value of a monthly systematic investment plan from the instalment, expected return and years. Free SIP calculator, runs in your browser.",
+ "intro": "Enter a monthly investment, an expected annual return and the number of years. The tool shows the amount invested, the estimated returns and the future value.",
+ "why": "A systematic investment plan, or SIP, means putting the same amount into a fund every month. People often use a SIP calculator before starting one, to see whether a modest monthly sum can reach a target in ten or twenty years, and to compare different assumed returns. The result is only as good as the return you type in, and real markets do not move in a straight line, so treat the figure as an illustration, not a prediction. Seeing how much of the final value comes from returns rather than from your own deposits makes the effect of time very clear. The calculation runs locally in your browser.",
+ "howTo": [
+  "Enter the monthly investment amount.",
+  "Enter the expected annual return in percent and the number of years.",
+  "Read the total invested, the estimated returns and the future value."
+ ],
+ "faq": [
+  {
+   "q": "When is each instalment assumed to be invested?",
+   "a": "At the start of each month, which is the usual SIP convention in the formula. That gives a slightly higher future value than assuming deposits at month end."
+  },
+  {
+   "q": "Is the expected return guaranteed?",
+   "a": "No. Market-linked investments vary and can lose value. The calculator applies one constant rate, so use it to compare scenarios rather than to promise an outcome. This is not financial advice."
+  },
+  {
+   "q": "Does the result include tax, fees or inflation?",
+   "a": "No. Expense ratios, exit loads, taxes and inflation are not modelled. Subtract fees from your expected return and check the inflation calculator for purchasing power."
+  },
+  {
+   "q": "How is this different from the compound interest calculator?",
+   "a": "This one is built for a fixed monthly deposit and starts from zero. The compound interest calculator also lets you set an initial lump sum and the compounding frequency."
+  }
+ ],
+ "related": [
+  "compound-interest",
+  "retirement-estimator",
+  "savings-goal",
+  "roi-calculator",
+  "inflation-calculator",
+  "emi-calculator"
+ ],
+ "keywords": [
+  "sip calculator",
+  "free sip calculator",
+  "systematic investment plan calculator",
+  "monthly investment calculator",
+  "sip return calculator",
+  "mutual fund sip calculator"
+ ]
+}

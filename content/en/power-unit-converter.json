@@ -1,0 +1,39 @@
+{
+ "id": "power-unit-converter",
+ "seoTitle": "Power Converter: Watts, kW, Horsepower and BTU/h",
+ "metaDescription": "Convert watts, kilowatts, mechanical and metric horsepower, BTU per hour and refrigeration tons. Free and offline.",
+ "intro": "Converts between watts, kilowatts, megawatts, mechanical horsepower, metric horsepower (PS), BTU per hour, kcal per hour and tons of refrigeration.",
+ "why": "Car, motor and heater ratings come in different units, and there is more than one horsepower. Mechanical horsepower is 745.7 W, metric horsepower is 735.5 W.\n\nEnter one value and see all the others. Both horsepowers are shown so you can tell which one a spec sheet uses.",
+ "howTo": [
+  "Type the power value.",
+  "Choose its unit.",
+  "Read the equivalents below."
+ ],
+ "faq": [
+  {
+   "q": "Which horsepower should I use?",
+   "a": "Use mechanical hp for US and UK ratings and PS (metric hp) for most European ones. Check the label."
+  },
+  {
+   "q": "How many watts is one BTU/h?",
+   "a": "About 0.293 W, using the International Table BTU."
+  },
+  {
+   "q": "What is a ton of refrigeration?",
+   "a": "12,000 BTU/h, about 3.517 kW, used for air conditioning capacity."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "btu-calculator",
+  "electricity-cost-calculator",
+  "torque-unit-converter",
+  "frequency-rpm-converter",
+  "flow-rate-unit-converter"
+ ],
+ "keywords": [
+  "watts to horsepower",
+  "kw to hp",
+  "btu/h to watts"
+ ]
+}

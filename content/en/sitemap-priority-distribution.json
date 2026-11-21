@@ -1,0 +1,44 @@
+{
+ "id": "sitemap-priority-distribution",
+ "seoTitle": "Sitemap Priority and Changefreq Distribution Chart",
+ "metaDescription": "Show how often each priority and changefreq value appears in a sitemap as a bar chart. Spot meaningless defaults. Free.",
+ "intro": "Counts priority and changefreq values and draws them as bars.",
+ "why": "If every URL has priority 0.5 or the same changefreq, the values say nothing. Google ignores both anyway, but other tools and engines may read them.\n\nThe chart makes a flat distribution obvious. Use it as a quick audit of what a CMS plugin wrote.",
+ "howTo": [
+  "Paste the sitemap XML.",
+  "Run the tool.",
+  "Read the two charts.",
+  "Decide whether to set real values or drop the fields."
+ ],
+ "faq": [
+  {
+   "q": "Does Google use priority?",
+   "a": "Google states it ignores priority and changefreq."
+  },
+  {
+   "q": "Why check then?",
+   "a": "Other consumers of the file may use them, and defaults show a lazy generator."
+  },
+  {
+   "q": "Is the chart an image?",
+   "a": "No, it is text bars you can copy."
+  },
+  {
+   "q": "Are missing values counted?",
+   "a": "Yes, as (none)."
+  }
+ ],
+ "related": [
+  "sitemap-lastmod-timeline",
+  "sitemap-lastmod-validator",
+  "sitemap-validator",
+  "sitemap-generator",
+  "sitemap-url-pattern-analyzer"
+ ],
+ "keywords": [
+  "sitemap priority",
+  "sitemap changefreq",
+  "sitemap default values",
+  "priority distribution"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "json-to-js-object-literal",
+ "seoTitle": "Free JSON to JavaScript Object Literal Converter",
+ "metaDescription": "Convert JSON to a JavaScript object literal with unquoted keys, single or double quotes and optional trailing commas. Free, runs offline.",
+ "intro": "Turns JSON into code you can paste into a JavaScript file: keys that are valid identifiers lose their quotes, strings use your preferred quotes, and you can add a const declaration and trailing commas.",
+ "why": "JSON is valid JavaScript only by accident. In source code teams usually want unquoted keys, single quotes and a name for the value. Editing that by hand is dull and quotes inside strings are easy to break.\n\nThe tool parses your JSON, so invalid input is reported instead of guessed at, and it escapes strings for the quote style you pick. A key named __proto__ is written as a computed key so that it stays a normal property.",
+ "howTo": [
+  "Paste JSON.",
+  "Pick the quote style and indent.",
+  "Set a variable name, or clear it for a bare literal.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Which keys keep their quotes?",
+   "a": "Keys that are not valid identifiers, such as first-name or 1abc."
+  },
+  {
+   "q": "What about numbers like 1e400?",
+   "a": "JSON.parse turns them into Infinity. The output keeps what JavaScript read."
+  },
+  {
+   "q": "Are large integers safe?",
+   "a": "No. JSON numbers become JavaScript numbers, so integers over 2^53 lose precision."
+  },
+  {
+   "q": "Does it support comments or trailing commas in the input?",
+   "a": "No, the input must be strict JSON."
+  }
+ ],
+ "related": [
+  "json-format",
+  "json-to-typescript",
+  "json-validate",
+  "json5-converter",
+  "json-minify",
+  "json-to-yaml"
+ ],
+ "keywords": [
+  "json to javascript object",
+  "json to js object literal",
+  "json to object"
+ ]
+}

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boolean Expression Minimizer: Quine-McCluskey and Karnaugh Map | Free Tools</title>
+<meta name="description" content="Simplify a Boolean function from its minterms and don't-cares: minimal sum of products, prime implicants and a Karnaugh map for up to four variables.">
+<link rel="canonical" href="https://tools.sitefig.net/en/boolean-minimizer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/boolean-minimizer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/boolean-minimizer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Boolean Expression Minimizer: Quine-McCluskey and Karnaugh Map | Free Tools">
+<meta property="og:description" content="Simplify a Boolean function from its minterms and don't-cares: minimal sum of products, prime implicants and a Karnaugh map for up to four variables.">
+<meta property="og:url" content="https://tools.sitefig.net/en/boolean-minimizer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Boolean Expression Minimizer: Quine-McCluskey and Karnaugh Map | Free Tools">
+<meta name="twitter:description" content="Simplify a Boolean function from its minterms and don't-cares: minimal sum of products, prime implicants and a Karnaugh map for up to four variables.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Boolean Expression Minimizer: Truth Table, Karnaugh Map, Quine-McCluskey","url":"https://tools.sitefig.net/en/boolean-minimizer/","description":"Simplify a Boolean function from its minterms and don't-cares: minimal sum of products, prime implicants and a Karnaugh map for up to four variables.","applicationCategory":"EducationalApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the number of variables and the minterms.","Add don't-care terms if any.","Read the minimal expression and the map.","Check it against your truth table."],"keywords":"boolean minimizer, quine mccluskey, karnaugh map solver, simplify boolean expression","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Learning","item":"https://tools.sitefig.net/en/#learning"},{"@type":"ListItem","position":3,"name":"Boolean Expression Minimizer: Truth Table, Karnaugh Map, Quine-McCluskey","item":"https://tools.sitefig.net/en/boolean-minimizer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What are minterms?","acceptedAnswer":{"@type":"Answer","text":"Input combinations, counted as binary numbers, for which the function is 1."}},{"@type":"Question","name":"What is a don't care?","acceptedAnswer":{"@type":"Answer","text":"An input that never occurs or whose output does not matter; it can be used to make groups larger."}},{"@type":"Question","name":"Which variable is the most significant bit?","acceptedAnswer":{"@type":"Answer","text":"A. For four variables the minterm 5 is A'BC'D."}},{"@type":"Question","name":"Is my data sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is processed in your browser, and the page makes no network requests with your input."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#learning">Learning</a></li><li><span aria-current="page">Boolean Expression Minimizer: Truth Table, Karnaugh Map, Quine-McCluskey</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Boolean Expression Minimizer: Truth Table, Karnaugh Map, Quine-McCluskey</h1>
+<p class="lede">Reduce a truth table to the simplest AND-OR expression.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="boolean-minimizer" data-module="gap2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Enter the minterms (decimal numbers of the input combinations where the output is 1), optional don't-care terms and the number of variables (2 to 6). The tool finds the prime implicants with the Quine-McCluskey method, chooses an exact minimum cover (fewest terms, then fewest literals) with branch and bound and prints the expression with A as the most significant variable. A Karnaugh map in Gray-code order is shown for up to four variables. On 400 random four-variable functions the result matched an exhaustive search for the minimum number of terms every time, and every result was checked against the truth table.</p>
+<p>Equivalent minimal forms may be written differently by other tools. Product-of-sums form is not produced.</p>
+<p>No data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the number of variables and the minterms.</li><li>Add don't-care terms if any.</li><li>Read the minimal expression and the map.</li><li>Check it against your truth table.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What are minterms?</summary><p>Input combinations, counted as binary numbers, for which the function is 1.</p></details>
+<details><summary>What is a don't care?</summary><p>An input that never occurs or whose output does not matter; it can be used to make groups larger.</p></details>
+<details><summary>Which variable is the most significant bit?</summary><p>A. For four variables the minterm 5 is A'BC'D.</p></details>
+<details><summary>Is my data sent anywhere?</summary><p>No. Everything is processed in your browser, and the page makes no network requests with your input.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/bitwise-calculator/"><span class="link-card__title">Bitwise Calculator (AND, OR, XOR, shifts, rotate)</span><span class="link-card__desc">Apply AND, OR, XOR, NAND, NOR, XNOR, NOT, left / arithmetic right / logical right shifts, rotations, popcount, leading / trailing zeros and bit reversal to 8, 16, 32 or 64-bit values, with two's-complement signed or unsigned interpretation. Inputs accept decimal, 0x hex, 0b binary and 0o octal; results are shown in all four bases with the bit pattern.</span></a></li><li><a class="link-card" href="/en/binary-text/"><span class="link-card__title">Binary ⇄ Text</span><span class="link-card__desc">Convert text to 8-bit binary (UTF-8) and back.</span></a></li><li><a class="link-card" href="/en/number-base-converter/"><span class="link-card__title">Number Base Converter</span><span class="link-card__desc">Convert arbitrarily large integers between bases 2-36, with two's complement.</span></a></li><li><a class="link-card" href="/en/cellular-automaton-generator/"><span class="link-card__title">Elementary Cellular Automaton Generator (Rule 30, 90, 110, Any Rule 0-255)</span><span class="link-card__desc">Generate Wolfram elementary cellular automata for any rule from 0 to 255: text and SVG output, with wrap-around or fixed edges and a single-cell or random start.</span></a></li><li><a class="link-card" href="/en/bcd-converter/"><span class="link-card__title">BCD (Binary-Coded Decimal) Converter</span><span class="link-card__desc">Convert decimal numbers to packed/unpacked BCD nibbles and back.</span></a></li><li><a class="link-card" href="/en/scientific-expression-calculator/"><span class="link-card__title">Scientific Calculator</span><span class="link-card__desc">Evaluate expressions: + - * / ^ % ( ) sqrt sin cos tan ln log abs pi e. One per line.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "id": "circleci-config-generator",
+  "seoTitle": "CircleCI Config Generator (.circleci/config.yml)",
+  "metaDescription": "Build a CircleCI config for Node, Python, Go or Docker projects with dependency caching, a test job and an optional deploy job on main.",
+  "intro": "Get a working CircleCI 2.1 configuration without reading the docs first.",
+  "why": "Choose a language and image version, optionally change the install and test commands, and add a deploy command. The output defines a test job on a cimg convenience image with restore_cache and save_cache keyed on your lockfile checksum, and a workflow that runs deploy only on the main branch after tests pass. Docker builds get setup_remote_docker.\n\nThe YAML was parsed to confirm its structure. Adjust images, resource classes, orbs and secrets for your project; keep deploy credentials in CircleCI contexts, not in the file.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Pick the language and version.",
+    "Set install, test and deploy commands if the defaults do not fit.",
+    "Save the output as .circleci/config.yml.",
+    "Push and watch the pipeline."
+  ],
+  "faq": [
+    {
+      "q": "What are cimg images?",
+      "a": "CircleCI's maintained convenience images, such as cimg/node:22.11."
+    },
+    {
+      "q": "How does the cache key work?",
+      "a": "It includes a checksum of the lockfile, so the cache refreshes when dependencies change."
+    },
+    {
+      "q": "Where do secrets go?",
+      "a": "In project or context environment variables, never in the YAML."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "github-actions-generator",
+    "gitlab-ci-generator",
+    "jenkinsfile-generator",
+    "dockerfile-generator",
+    "github-actions-explainer",
+    "dependabot-config-generator"
+  ],
+  "keywords": [
+    "circleci config generator",
+    "config.yml circleci",
+    "circleci node example",
+    "ci pipeline generator"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "hreflang-script-subtag-helper",
+ "seoTitle": "Hreflang Script Subtag Helper: zh-Hans and zh-Hant",
+ "metaDescription": "See when a script subtag like zh-Hant belongs in hreflang, which script a tag implies and whether the combination is valid.",
+ "intro": "Explains script subtags in language tags, shows the likely full form from CLDR and validates the script code.",
+ "why": "Chinese is written in Simplified and Traditional characters, and Serbian in Cyrillic and Latin. Google documents zh-Hans and zh-Hant, and says that without a script it derives one from the country, so zh-TW means Traditional. You can also combine script and region, as in zh-Hans-US.\n\nFor each tag the tool shows what your browser's CLDR data considers the likely full form, whether the script is written in the tag, and whether the script code exists in ISO 15924. Support in other search engines is not verified here.",
+ "howTo": [
+  "Enter tags one per line.",
+  "Read the likely full form and the script note.",
+  "Add a script only if you have versions in different scripts of one language.",
+  "Validate the final set with the code checker."
+ ],
+ "faq": [
+  {
+   "q": "When do I need a script?",
+   "a": "When the same language has versions in different scripts and the region does not settle it."
+  },
+  {
+   "q": "Is zh-CN enough?",
+   "a": "Google derives Simplified from CN, so usually yes."
+  },
+  {
+   "q": "Who supports script subtags?",
+   "a": "Google documents them; others are not checked here."
+  },
+  {
+   "q": "Where does the full form come from?",
+   "a": "Intl.Locale.maximize in your browser."
+  }
+ ],
+ "related": [
+  "hreflang-code-checker",
+  "language-region-code-lookup",
+  "hreflang-generator",
+  "hreflang-validator",
+  "translated-slug-generator",
+  "language-detector"
+ ],
+ "keywords": [
+  "hreflang zh-Hans zh-Hant",
+  "script subtag",
+  "iso 15924 hreflang",
+  "chinese hreflang"
+ ]
+}

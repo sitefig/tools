@@ -1,0 +1,45 @@
+{
+ "id": "sql-keyword-uppercaser",
+ "seoTitle": "Free SQL Keyword Uppercaser - Format Case Online",
+ "metaDescription": "Uppercase or lowercase SQL keywords, functions and data types while leaving strings, quoted names, comments and your identifiers unchanged. Free.",
+ "intro": "Changes the case of SQL keywords, and optionally functions and data types, to UPPERCASE or lowercase, while leaving string literals, quoted identifiers, comments and your own table and column names untouched.",
+ "why": "Many teams settle on upper-case keywords so queries scan quickly, but queries pasted from logs, ORMs or old code come in every style. A plain find-and-replace to upper-case the whole query would ruin string values, identifiers and comments. This tool changes only what it recognises as keywords, and can include built-in function names and data types. Strings, quoted identifiers and comments are left alone, so a word like \"select me\" inside a literal stays as it is. It does not reformat or indent, only the case, so it fits as a quick clean-up before a commit or review. You can also go the other way and lower-case everything. It runs in your browser.",
+ "howTo": [
+  "Paste your SQL into the input box.",
+  "Choose UPPERCASE or lowercase for keywords, and tick whether functions and data types should change too.",
+  "Copy the result back into your editor or script."
+ ],
+ "faq": [
+  {
+   "q": "What is left unchanged?",
+   "a": "String literals, quoted identifiers, comments, and any name that is not a recognised keyword, function or type, such as your table and column names."
+  },
+  {
+   "q": "Does it reformat the query?",
+   "a": "No. Only the letter case of recognised words changes. For layout and indentation, use the SQL formatter on this site."
+  },
+  {
+   "q": "What if a column shares a name with a keyword?",
+   "a": "An unquoted word that matches a keyword list entry will change case. Quote the identifier if you need it kept as written."
+  },
+  {
+   "q": "Does it understand every dialect?",
+   "a": "It uses a general list of common keywords, functions and types, so dialect-specific words may be missed. Check the result before committing."
+  }
+ ],
+ "related": [
+  "sql-format",
+  "sql-minify",
+  "sql-explainer",
+  "sql-dialect-converter",
+  "case-converter",
+  "sql-index-advisor"
+ ],
+ "keywords": [
+  "sql keyword uppercaser",
+  "uppercase sql keywords online",
+  "sql lowercase converter",
+  "free sql case formatter",
+  "capitalize sql keywords"
+ ]
+}

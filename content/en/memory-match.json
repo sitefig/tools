@@ -1,0 +1,47 @@
+{
+ "id": "memory-match",
+ "seoTitle": "Free Memory Match Card Game to Play Online",
+ "metaDescription": "Flip cards to find all eight pairs in as few moves as you can. A free memory game that runs in your browser and saves your best score locally.",
+ "intro": "Flip two cards at a time to find matching pairs. There are eight pairs on a 4 by 4 board, and your goal is to clear them in as few moves as possible.",
+ "why": "Memory games are a simple way to exercise short-term recall, and a quick one to play while a build runs or a file uploads. This one has sixteen cards, eight emoji pairs, and a move counter so you can try to beat your own record.\n\nCards are shuffled on every new game. A pair that does not match flips back after under a second, which is your chance to remember where each symbol is. The best result, the lowest number of moves, is kept in this browser only. There is no timer, account or advertising, and the game works on touch screens and with a mouse.",
+ "howTo": [
+  "Click or tap a card to flip it, then flip a second card.",
+  "If the two match, they stay face up. If not, they flip back after a moment.",
+  "Remember where each symbol was and clear all eight pairs while keeping the move count low.",
+  "Press \"New game\" to reshuffle and try for a better score."
+ ],
+ "faq": [
+  {
+   "q": "How is the score counted?",
+   "a": "Each time you flip two cards counts as one move. The fewer moves you need to find all eight pairs, the better. The lowest total is stored as your best."
+  },
+  {
+   "q": "Where is my best score stored?",
+   "a": "In your browser's local storage on this device only. It is not sent anywhere. Clearing site data or using a private window removes it."
+  },
+  {
+   "q": "What is the lowest possible score?",
+   "a": "Eight moves, which would need every pair found on the first try and so takes luck. With good recall you will usually need noticeably more, so set yourself a personal target and try to beat it."
+  },
+  {
+   "q": "Can I change the board size?",
+   "a": "No. The board is fixed at 16 cards with 8 emoji pairs, so every game is directly comparable with your saved best score. Press New game to reshuffle the cards."
+  }
+ ],
+ "related": [
+  "game-2048",
+  "minesweeper",
+  "flashcards-spaced-repetition",
+  "dice-roller",
+  "typing-speed-test",
+  "random-number-picker"
+ ],
+ "keywords": [
+  "memory match game",
+  "free memory card game",
+  "pairs game online",
+  "concentration game browser",
+  "matching cards game",
+  "memory game no download"
+ ]
+}

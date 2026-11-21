@@ -1,0 +1,46 @@
+{
+ "id": "mouse-click-speed-test",
+ "seoTitle": "Free Mouse Click Speed Test - Clicks per Second",
+ "metaDescription": "Test your clicks per second (CPS) over 5, 10, 30 or 60 seconds. Click inside the box and see your result. Free, runs in your browser.",
+ "intro": "Pick a duration, click inside the box as fast as you can, and see your total clicks and clicks per second when time runs out.",
+ "why": "Gamers, people comparing mice, and anyone curious about their reflexes often want a number for how fast they can click. Quick clicking matters in some games and also exposes problems such as a double-clicking switch or a worn button.\n\nThis test counts clicks inside a box for the duration you choose: 5, 10, 30 or 60 seconds. The timer starts on your first click, shows the count and the time left, and gives total clicks and clicks per second at the end. Results vary with technique and device, so use the same mouse, surface and duration when you compare. The test uses the primary button, ignores right clicks and keeps nothing: no data is stored or sent anywhere. Rest your hand between long runs to avoid strain.",
+ "howTo": [
+  "Choose a duration from the menu: 5, 10, 30 or 60 seconds.",
+  "Click inside the box to start the timer and keep clicking.",
+  "Wait for the time to run out.",
+  "Read your total clicks and clicks per second, then click again to retry."
+ ],
+ "faq": [
+  {
+   "q": "When does the timer start?",
+   "a": "On your first click inside the box. That click counts too. The countdown then runs for the chosen duration, and the final score appears when it reaches zero."
+  },
+  {
+   "q": "What is a good CPS score?",
+   "a": "Typical users reach about 5 to 8 clicks per second over a short test. Special techniques can go higher, but sustained scores over 30 or 60 seconds are lower. Compare your own results rather than chasing a figure."
+  },
+  {
+   "q": "Do right or middle clicks count?",
+   "a": "No. Only the primary button counts. Right-clicking inside the box is blocked from opening the menu, so it does not interrupt the test."
+  },
+  {
+   "q": "Why do results differ between devices?",
+   "a": "Mouse switches, polling rate, trackpads and touch screens respond differently, and browsers process input at slightly different speeds. Use the same setup each time for a fair comparison."
+  }
+ ],
+ "related": [
+  "keyboard-event-viewer",
+  "typing-speed-test",
+  "gamepad-tester",
+  "stopwatch",
+  "countdown-timer",
+  "dice-roller"
+ ],
+ "keywords": [
+  "mouse click speed test",
+  "cps test",
+  "clicks per second test",
+  "click speed checker",
+  "free cps tester"
+ ]
+}

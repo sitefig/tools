@@ -1,0 +1,46 @@
+{
+ "id": "pdf-split",
+ "seoTitle": "Free Split PDF - By Page Count or Page Ranges",
+ "metaDescription": "Split a PDF into several files, every N pages or by custom ranges such as 1-3,5,7-. Free, runs in your browser, files are never uploaded.",
+ "intro": "Split one PDF into several files, either every N pages or by custom ranges, where each comma-separated range becomes its own file.",
+ "why": "A scanned batch of invoices, a long report that should go out chapter by chapter, or a form pack where each person needs their own pages all call for splitting. Doing it in a desktop PDF editor means opening a heavy program, and uploading the file to a web service is out for private documents.\n\nThis tool splits locally. In every-N mode, set a number such as 1 for single pages or 10 for chunks of ten, and set it to 0 to use ranges instead. In range mode, each comma-separated item, like 1-3, 5 or 7-, becomes a separate PDF, and a trailing dash means through to the last page. Output files are named after the original with the page numbers added. Encrypted PDFs are refused, and bookmarks and form fields are not carried into the pieces.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Set Every N pages, or set it to 0 to use ranges.",
+  "If using ranges, enter them separated by commas, for example 1-3,5,7-.",
+  "Run the tool and download the resulting files."
+ ],
+ "faq": [
+  {
+   "q": "How do ranges work?",
+   "a": "Each comma-separated item makes one file. 1-3 is pages one to three, 5 is a single page, and 7- means page seven to the end. Pages may appear in more than one range."
+  },
+  {
+   "q": "What happens when the page count is not divisible by N?",
+   "a": "The last file simply contains the remaining pages. Splitting a 25-page file every 10 pages gives files of 10, 10 and 5 pages."
+  },
+  {
+   "q": "How are the files named?",
+   "a": "The original name, then pages and the page numbers, such as report-pages-1-3.pdf. Your browser may ask permission to download several files at once."
+  },
+  {
+   "q": "Does splitting reduce quality?",
+   "a": "No. Pages are copied without re-rendering, so text and images stay exactly as in the original. File size per piece depends on shared resources such as fonts, which are copied into each file."
+  }
+ ],
+ "related": [
+  "pdf-extract-pages",
+  "pdf-merge",
+  "pdf-delete-pages",
+  "pdf-reorder-pages",
+  "pdf-page-count-and-sizes",
+  "zip-creator"
+ ],
+ "keywords": [
+  "split pdf",
+  "split pdf by pages online",
+  "divide pdf into separate files",
+  "pdf splitter free",
+  "split pdf page ranges"
+ ]
+}

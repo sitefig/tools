@@ -1,0 +1,45 @@
+{
+ "id": "csv-to-geojson",
+ "seoTitle": "Free CSV to GeoJSON Converter with Lat/Lon Detection",
+ "metaDescription": "Turn a CSV with latitude and longitude columns or a WKT POINT column into a GeoJSON FeatureCollection. Validates coordinates. Free, in browser.",
+ "intro": "Turns a CSV with latitude and longitude columns, or a WKT POINT column, into a GeoJSON FeatureCollection of Point features. Other columns become properties, and coordinates are validated.",
+ "why": "A list of stores, sensors or customers in a spreadsheet is easy to keep, but web map libraries, GIS tools and many APIs expect GeoJSON. Writing a script for a one-off conversion is more work than it is worth. Paste the CSV and the tool finds the coordinate columns, matching names such as lat, latitude, lng, lon, long and longitude, or a WKT POINT column, and builds a FeatureCollection. Other columns become properties, with numbers and booleans converted to real JSON types. Coordinates are checked, so latitude outside -90 to 90 is caught, and invalid rows can be skipped. Coordinates should be WGS 84 degrees. Everything is processed in your browser, so address lists are not uploaded.",
+ "howTo": [
+  "Paste the CSV, with a header row, into the input box.",
+  "Leave the latitude and longitude columns blank to auto-detect them, or enter their names. Set the delimiter if needed.",
+  "Choose whether to skip invalid rows, then copy the GeoJSON."
+ ],
+ "faq": [
+  {
+   "q": "How are coordinate columns detected?",
+   "a": "By header name: lat or latitude, and lng, lon, long or longitude, with a fallback to y and x. A WKT POINT column is also understood. Name the columns yourself if detection picks the wrong ones."
+  },
+  {
+   "q": "What happens to invalid coordinates?",
+   "a": "Values outside the valid latitude and longitude range, or not numbers, make a row invalid. With the skip option on, such rows are left out. With it off, you get an error."
+  },
+  {
+   "q": "Are other columns kept?",
+   "a": "Yes. Every other column becomes a property on each feature, and values that look like numbers, or true and false, are converted into proper JSON numbers and booleans instead of strings."
+  },
+  {
+   "q": "Does it geocode addresses?",
+   "a": "No. It needs coordinates in the file. It cannot look up an address, and nothing is sent to a geocoding service."
+  }
+ ],
+ "related": [
+  "geojson-to-csv",
+  "csv-to-json",
+  "csv-viewer",
+  "json-format",
+  "csv-column-extractor",
+  "csv-to-sql"
+ ],
+ "keywords": [
+  "csv to geojson",
+  "convert csv lat lon to geojson",
+  "csv to geojson online",
+  "free csv map data converter",
+  "wkt point csv to geojson"
+ ]
+}

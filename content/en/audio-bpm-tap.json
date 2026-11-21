@@ -1,0 +1,46 @@
+{
+ "id": "audio-bpm-tap",
+ "seoTitle": "Free Tap Tempo BPM Counter - Find Beats per Minute",
+ "metaDescription": "Tap a button or press the space bar in rhythm to measure the tempo in beats per minute. Free tap tempo tool that runs in your browser.",
+ "intro": "Tap the button, or press the space bar, in time with a song and the tool shows the tempo in beats per minute.",
+ "why": "Musicians, DJs, dancers and video editors often need a tempo and have no metadata to read it from. Setting a metronome, matching a loop to a track or syncing a cut to the beat all start with knowing the BPM. Counting beats against a stopwatch is slow and inaccurate.\n\nThis tool measures the time between your taps and averages the most recent ones, so a single uneven tap does not throw it off. It uses the last nine taps and starts a fresh count if you pause for more than three seconds. The display shows the exact value and a rounded figure. For the best result, tap along for at least eight beats, and tap on the main pulse rather than the subdivisions. It works offline in the browser.",
+ "howTo": [
+  "Start the music you want to measure.",
+  "Tap the TAP button, or press the space bar, on every beat.",
+  "Keep going for at least eight beats and read the BPM shown.",
+  "Press Reset to start again with a new song."
+ ],
+ "faq": [
+  {
+   "q": "How many taps do I need?",
+   "a": "Two taps give a reading, but accuracy improves with more. Aim for eight or more. The tool averages up to the last nine taps, so older uneven taps drop out of the calculation."
+  },
+  {
+   "q": "Why did my count reset?",
+   "a": "If more than three seconds pass between taps, the tool assumes you are starting over and clears the earlier taps. Keep tapping steadily, or use Reset to clear manually."
+  },
+  {
+   "q": "Which beat should I tap?",
+   "a": "Tap the main pulse you would naturally tap your foot to. Tapping every half beat will double the figure, and tapping every second beat will halve it. Compare with the song if the result looks off."
+  },
+  {
+   "q": "How accurate is it?",
+   "a": "It depends on your timing and your device. Human taps drift by a few milliseconds, so expect a result within about a BPM for steady music. Use it as a guide rather than a studio-grade measurement."
+  }
+ ],
+ "related": [
+  "metronome",
+  "tone-generator",
+  "audio-db-converter",
+  "audio-trimmer",
+  "stopwatch",
+  "time-duration-calculator"
+ ],
+ "keywords": [
+  "tap tempo",
+  "bpm counter online",
+  "find bpm by tapping",
+  "beats per minute tapper",
+  "free bpm tool"
+ ]
+}

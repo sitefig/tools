@@ -1,0 +1,46 @@
+{
+ "id": "utm-builder",
+ "seoTitle": "Free UTM Campaign URL Builder for GA4",
+ "metaDescription": "Add utm_source, medium, campaign, term, content and id to a URL, with warnings about missing fields. Free; runs in your browser.",
+ "intro": "Fill in a landing page URL and campaign fields to build a tagged link with utm_source, utm_medium, utm_campaign, utm_term, utm_content and utm_id. Values can be lowercased.",
+ "why": "UTM parameters let analytics tell which campaign, channel or link brought a visitor. They only work if people use them consistently: \"Email\", \"email\" and \"e-mail\" show up as three different mediums, and a forgotten campaign name leaves traffic unlabelled.\n\nThis builder takes the landing page URL and your source, medium, campaign, term, content and id, adds them as utm_ parameters and prints the finished link. By default values are lowercased to keep reports tidy. It warns when source, medium or campaign is missing, which GA4 expects, and when spaces appear in values, where underscores are safer. It also reminds you not to tag internal links, since that resets the visitor's session source. The link is built in your browser.",
+ "howTo": [
+  "Write the landing page URL on the url line.",
+  "Fill in source, medium and campaign, and add term, content or id if needed.",
+  "Leave lowercase values ticked to keep naming consistent.",
+  "Run the tool and copy the tagged link into your email, ad or post."
+ ],
+ "faq": [
+  {
+   "q": "Which UTM fields are required?",
+   "a": "GA4 best practice asks for source, medium and campaign. Term, content and id are optional. The tool warns when one of the main three is missing."
+  },
+  {
+   "q": "Why lowercase values?",
+   "a": "Analytics treats parameter values as case sensitive, so Email and email are reported separately. Lowercasing everything avoids split reports."
+  },
+  {
+   "q": "Can I tag links on my own site?",
+   "a": "Avoid it. A UTM link clicked inside your site starts a new session and overwrites the real source. Use events for internal tracking instead."
+  },
+  {
+   "q": "Is my URL sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing you paste is uploaded, stored or sent to a server, so staging or confidential configuration is safe to use here."
+  }
+ ],
+ "related": [
+  "utm-bulk-builder",
+  "url-tracker-stripper",
+  "query-string",
+  "url-parser",
+  "url-encode",
+  "canonical-generator"
+ ],
+ "keywords": [
+  "utm builder",
+  "utm link generator",
+  "campaign url builder",
+  "ga4 utm builder free",
+  "utm parameters tool"
+ ]
+}

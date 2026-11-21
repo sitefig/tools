@@ -1,0 +1,45 @@
+{
+ "id": "javascript-ast-explorer",
+ "seoTitle": "JavaScript AST Explorer: ESTree Tree View Online",
+ "metaDescription": "Parse JavaScript into an ESTree syntax tree and browse node types, properties and source ranges as a tree or JSON. Hand-written ES2022 parser, free, offline.",
+ "intro": "Shows the abstract syntax tree of a JavaScript snippet as an indented tree with node types, fields and character ranges, or as ESTree JSON. A JSON mode shows any JSON document as a typed tree.",
+ "why": "To write a codemod, a lint rule or a small parser you need to see which nodes a piece of code becomes. Online AST explorers load large parsers; this one has a compact parser written for ES2022 scripts that produces the same ESTree shape as Acorn.\n\nIt supports declarations, functions, arrow functions, async and generator functions, classes with fields, private names and static blocks, destructuring, spread, template and tagged templates, optional chaining, labels, switch, try and for loops including for await, dynamic import and import.meta. It does not parse modules (import and export statements), JSX, TypeScript or unicode escapes in identifiers, and it reports a position when it stops. The tree for 451 library files matched Acorn exactly, including start and end offsets.",
+ "howTo": [
+  "Paste JavaScript in the box, or switch the language to JSON.",
+  "Choose the tree view or ESTree JSON and whether to show [start-end] ranges.",
+  "Read each node as Type (range) and its properties; arrays are numbered.",
+  "Copy the text to use it in a bug report or a rule description."
+ ],
+ "faq": [
+  {
+   "q": "Is the output the same as Acorn or Esprima?",
+   "a": "It follows the ESTree names used by Acorn. A comparison on 451 files from published libraries gave identical trees and positions. Esprima differs in a few node names."
+  },
+  {
+   "q": "Why does import or export fail?",
+   "a": "The parser handles scripts only. Wrap the code in a function or remove the module syntax first."
+  },
+  {
+   "q": "Does it keep comments?",
+   "a": "No. Comments and white space are skipped like in Acorn without options."
+  },
+  {
+   "q": "Can it explore CSS or HTML?",
+   "a": "Not as an AST. Use the JSON mode for data, and the CSS and HTML tools on this site for their own formats."
+  }
+ ],
+ "related": [
+  "json-tree",
+  "js-format",
+  "js-minify",
+  "javascript-obfuscator",
+  "typescript-to-javascript",
+  "json-format"
+ ],
+ "keywords": [
+  "javascript ast explorer",
+  "estree viewer online",
+  "parse javascript to ast",
+  "acorn ast viewer"
+ ]
+}

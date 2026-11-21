@@ -1,0 +1,45 @@
+{
+ "id": "lead-scoring-calculator",
+ "seoTitle": "Lead Scoring Calculator: Weighted Criteria, Hot Warm Cold",
+ "metaDescription": "Define weighted scoring criteria and score leads into hot, warm or cold. Negative points allowed. Free, private, runs in your browser.",
+ "intro": "Enter criteria with points and the criteria each lead meets to get a score and label.",
+ "why": "Lead scoring turns \"this lead looks good\" into a number you can sort by. Fit signals such as company size get points, behaviour signals such as visiting pricing get points, and bad signals can subtract.\n\nThe weights here are yours, not research. Calibrate them against leads that became customers. Unknown criteria in the lead lines are listed and ignored.",
+ "howTo": [
+  "List criteria as name: points.",
+  "List each lead with the criteria it meets, separated by semicolons.",
+  "Set the hot and warm thresholds.",
+  "Read the ranked leads."
+ ],
+ "faq": [
+  {
+   "q": "Are negative points allowed?",
+   "a": "Yes."
+  },
+  {
+   "q": "How do I pick weights?",
+   "a": "Compare past won and lost deals."
+  },
+  {
+   "q": "Are criteria case sensitive?",
+   "a": "No."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No, and lead names stay in your browser."
+  }
+ ],
+ "related": [
+  "marketing-funnel-calculator",
+  "conversion-funnel-visualizer",
+  "rice-prioritization",
+  "cac-ltv-calculator",
+  "event-roi-calculator",
+  "user-persona-template"
+ ],
+ "keywords": [
+  "lead scoring calculator",
+  "lead score model",
+  "hot warm cold leads",
+  "weighted lead scoring"
+ ]
+}

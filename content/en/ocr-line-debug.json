@@ -1,0 +1,47 @@
+{
+ "id": "ocr-line-debug",
+ "seoTitle": "Free OCR Layout Debugger: See Text Line Boxes",
+ "metaDescription": "See how the free in-browser OCR splits an image into text blocks and lines, with per-line confidence and the least certain lines flagged. No upload needed.",
+ "intro": "Load an image and see the boxes the OCR draws around each block and line of text, with a confidence score per line. It helps you find out why a scan reads badly.",
+ "why": "When OCR output is wrong, the cause is rarely the letters. More often the layout step has glued two columns together, split a heading, or treated a logo as a line of text. Reading only the final text makes that hard to see.\n\nThis debugger draws the segmentation that the in-browser recogniser used: coloured block outlines, one box per line, and the confidence for each line, with the least certain lines called out. You can then change the invert, threshold, scale and deskew options and watch the boxes change. It is a companion to the Image to Text tool for people tuning scans, screenshots or documents, and like it, everything runs locally in your browser.",
+ "howTo": [
+  "Choose an image with the file picker; one image is shown at a time.",
+  "Look at the drawn block and line boxes and check they follow the real text.",
+  "Adjust threshold, scale, invert or deskew until the boxes sit correctly on every line.",
+  "Check the least confident lines, then use the same settings in the Image to Text tool."
+ ],
+ "faq": [
+  {
+   "q": "What do the colours and numbers mean?",
+   "a": "Each colour marks a separate text block found by the layout analysis, and each box is one line. The number is the recogniser's confidence for that line; low values suggest blur, tiny text or a non-text region."
+  },
+  {
+   "q": "Does it change or upload my image?",
+   "a": "No. The picture is read and drawn onto a canvas in your browser and is never sent anywhere. Nothing is saved; closing the tab discards it."
+  },
+  {
+   "q": "Why are two columns merged into one line?",
+   "a": "The splitter looks for clear vertical gaps. When columns are close together, or the page is skewed, the gap disappears. Try deskew, a higher scale, or crop the columns into separate images first."
+  },
+  {
+   "q": "Which text does it understand?",
+   "a": "The same engine as the Image to Text tool: English, Latin script, horizontal lines. Vertical text, handwriting and heavily decorated layouts are not supported and may produce odd boxes."
+  }
+ ],
+ "related": [
+  "ocr-image-to-text",
+  "image-cropper",
+  "image-resizer",
+  "image-info",
+  "image-format-converter",
+  "image-redaction"
+ ],
+ "keywords": [
+  "ocr layout debugger",
+  "text line detection online",
+  "ocr confidence viewer",
+  "image text boxes",
+  "tune ocr threshold",
+  "free ocr tool"
+ ]
+}

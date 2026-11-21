@@ -1,0 +1,46 @@
+{
+  "id": "number-to-words",
+  "seoTitle": "Free Number to Words Converter (English)",
+  "metaDescription": "Spell out numbers as English words: cardinal, ordinal or currency, with an optional British \"and\". Free, runs in your browser, nothing is uploaded.",
+  "intro": "Writes numbers out in English words, one per line. Choose cardinal, ordinal or dollars-and-cents currency style, and switch on the British \"and\" if you want it.",
+  "why": "Cheques, contracts and invoices often need the amount written out in words as well as digits, because words are harder to alter. Teachers, copywriters and developers building templates run into the same need when they have a column of numbers and want text.\n\nThis tool handles a whole list at once. Each line is converted separately, so you can paste a column and get a column back. It copes with negatives, decimals and very large values, and it can produce ordinals like twenty-first or currency like forty-two dollars and fifty cents. The British option adds \"and\" after hundreds. All of it is calculated locally in your browser.",
+  "howTo": [
+    "Type or paste one number per line.",
+    "Choose a style: cardinal, ordinal or currency (dollars).",
+    "Tick British \"and\" if you want \"one hundred and five\".",
+    "Copy the lines of words from the output."
+  ],
+  "faq": [
+    {
+      "q": "How large a number can it spell out?",
+      "a": "Up to about 10 to the power 36, which is the decillion range. Beyond that it returns a \"number too large\" message for that line. Whole numbers are handled exactly rather than as floating point."
+    },
+    {
+      "q": "How are decimals treated?",
+      "a": "In cardinal mode the digits after the point are read one by one, so 3.14 becomes \"three point one four\". Ordinals need whole numbers. Currency mode rounds to cents."
+    },
+    {
+      "q": "Does currency mode support euros or pounds?",
+      "a": "No. Currency mode is written for dollars and cents only. You can take the words for the whole number from cardinal mode and add your own currency name."
+    },
+    {
+      "q": "What happens if a line is not a number?",
+      "a": "That line is shown with the note \"not a number\" and the other lines are still converted. Commas, underscores and spaces inside a number are ignored, so 1,000 works."
+    }
+  ],
+  "related": [
+    "roman-numerals",
+    "unit-converter",
+    "number-base-converter",
+    "fraction-calculator",
+    "invoice-generator",
+    "case-converter"
+  ],
+  "keywords": [
+    "number to words converter",
+    "spell out numbers in english",
+    "number to words for cheque",
+    "convert numbers to ordinal words",
+    "free number to text converter"
+  ]
+}

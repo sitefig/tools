@@ -1,0 +1,46 @@
+{
+ "id": "semver-calculator",
+ "seoTitle": "Free Semver Calculator - Compare, Bump, Ranges",
+ "metaDescription": "Compare two semantic versions, bump major, minor or patch, and test npm-style ranges such as ^1.2.0 or >=3.0.0 <3.5. Free and runs in your browser.",
+ "intro": "Compare two semantic versions, see what a bump produces, and check whether either version satisfies an npm-style range like ^1.2.0 || >=3.0.0.",
+ "why": "Semantic versioning looks simple until a prerelease tag or a caret range gets involved. Is 1.10.0-beta.2 older than 1.2.3? Does ^0.2.3 allow 0.3.0? Will a range in package.json pull in a version you did not intend? Guessing leads to broken installs or missed security fixes.\n\nThis calculator answers those questions in one place. Enter two versions to see which is newer, pick a bump such as minor or prerelease to preview the next number, and paste a range to test both versions against it. It covers caret, tilde, comparators, x-ranges, hyphen ranges and the || operator. The logic follows the npm rules and runs in your browser, so you can check ranges before committing a dependency change.",
+ "howTo": [
+  "Enter Version A and Version B, for example 1.2.3 and 1.10.0-beta.2.",
+  "Pick a bump type to preview the next version of A.",
+  "Type a range such as ^1.2.0 || >=3.0.0 <3.5 in the Range box.",
+  "Read the comparison, the bumped version and whether each version satisfies the range."
+ ],
+ "faq": [
+  {
+   "q": "Which range syntax is supported?",
+   "a": "Caret (^), tilde (~), comparators (>, >=, <, <=, =), x-ranges such as 1.x or 1.2.*, hyphen ranges like 1.2.3 - 2.3.4, and alternatives joined with ||. Space-separated comparators are combined with AND."
+  },
+  {
+   "q": "How are prerelease versions handled in ranges?",
+   "a": "As in npm, a prerelease such as 1.3.0-beta only satisfies a range if some comparator in that set names a prerelease of the same major, minor and patch. This stops accidental upgrades to unstable builds."
+  },
+  {
+   "q": "Does build metadata affect comparison?",
+   "a": "No. Anything after a plus sign is accepted when parsing but ignored in comparison, as the semver specification requires. A leading v on the version is also accepted."
+  },
+  {
+   "q": "What if my version is not valid semver?",
+   "a": "The tool shows an error naming the value it could not parse. Versions need three numeric parts, such as 2.0.1. Two-part versions like 2.0 are valid inside ranges but not as Version A or B."
+  }
+ ],
+ "related": [
+  "package-json-generator",
+  "package-json-license-checker",
+  "changelog-generator",
+  "commitlint-semantic-release-generator",
+  "renovate-config-generator",
+  "dependabot-config-generator"
+ ],
+ "keywords": [
+  "semver calculator",
+  "semantic version compare",
+  "npm semver range tester",
+  "version bump calculator",
+  "free semver tool online"
+ ]
+}

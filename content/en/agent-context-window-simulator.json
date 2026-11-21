@@ -1,0 +1,38 @@
+{
+ "id": "agent-context-window-simulator",
+ "seoTitle": "Agent Context Window Simulator: What Survives Truncation",
+ "metaDescription": "Paste a chat or agent message list and see which messages stay in a limited context window under different strategies, with token use per message.",
+ "intro": "See which messages an LLM would still see when the context window overflows.",
+ "why": "Long conversations and agent loops overflow the context window, and what gets dropped decides whether the agent forgets the user's name or its own instructions. Paste your messages (JSON or role: text lines), set the window and the reply reserve, and choose a strategy: drop the oldest, keep the system message plus the most recent, or also keep the first user message. The tool shows each message as KEEP or DROP with estimated tokens and lists what the model will no longer see.\n\nToken counts are estimates (about 4 characters per token plus framing); use the tokenizer tools for exact figures for your model. It is a planning aid for memory design: pin key facts in the system prompt or a summary.",
+ "howTo": [
+  "Paste the conversation as JSON or lines like \"user: ...\".",
+  "Set the window size, reply reserve and strategy.",
+  "Check what is dropped and move critical facts into pinned messages."
+ ],
+ "faq": [
+  {
+   "q": "Are the token counts exact?",
+   "a": "No, they use a 4 characters per token estimate."
+  },
+  {
+   "q": "What does reserve mean?",
+   "a": "Tokens kept free for the model's reply."
+  },
+  {
+   "q": "Which strategy is best?",
+   "a": "Keeping the system message and recent turns is the usual default; add summaries for long tasks."
+  }
+ ],
+ "related": [
+  "llm-context-window-shrinker",
+  "llm-token-estimator",
+  "rag-chunking-visualizer",
+  "prompt-format-converter",
+  "multi-tokenizer-counter"
+ ],
+ "keywords": [
+  "context window simulator",
+  "llm truncation strategies",
+  "agent memory sliding window"
+ ]
+}

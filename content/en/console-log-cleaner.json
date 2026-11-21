@@ -1,0 +1,44 @@
+{
+ "id": "console-log-cleaner",
+ "seoTitle": "Browser Console Log Cleaner: Strip Noise and Group Repeats",
+ "metaDescription": "Clean pasted DevTools console output: remove file:line prefixes, drop dev-server noise and collapse repeated messages. Free.",
+ "intro": "Strips source links and known noise from copied console output and counts repeats.",
+ "why": "Copying the console gives lines with file:line prefixes, VM numbers and dev-server chatter. Cleaning them makes the output fit for a bug report.\n\nThe noise list is short and shown in the result: React DevTools hint, source-map warnings, vite, HMR, webpack-dev-server, Violation and third-party cookie notices. Indented stack lines are kept.",
+ "howTo": [
+  "Copy the console output and paste it.",
+  "Choose which cleanups to apply.",
+  "Choose how to collapse repeats.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Will it remove real errors?",
+   "a": "No. Only the listed noise patterns and source prefixes are removed."
+  },
+  {
+   "q": "What is collapse every repeat?",
+   "a": "Identical lines are merged into one with a count, even if they were apart."
+  },
+  {
+   "q": "Does it hide secrets?",
+   "a": "No. Use the secret redactor for that."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "stacktrace-formatter",
+  "secret-detector-redactor",
+  "exception-grouper",
+  "ci-build-log-error-extractor",
+  "har-analyzer",
+  "log-line-prettifier"
+ ],
+ "keywords": [
+  "clean console output",
+  "chrome devtools console copy",
+  "dedupe console log"
+ ]
+}

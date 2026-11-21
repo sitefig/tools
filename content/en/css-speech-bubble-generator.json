@@ -1,0 +1,42 @@
+{
+ "id": "css-speech-bubble-generator",
+ "seoTitle": "Free CSS Speech Bubble & Tooltip Generator",
+ "metaDescription": "Create a pure CSS speech bubble or tooltip with a tail on any side, border, radius and shadow. Live preview and copy-ready CSS. Free.",
+ "intro": "Design a speech bubble or tooltip with a triangle tail on any side and get the CSS, built from pseudo-elements, with adjustable colours, border, radius, tail size and offset.",
+ "why": "A tail on a chat bubble or tooltip is usually a CSS triangle drawn with borders, and when the bubble also has a border of its own you need a second triangle behind the first to fake the outline. It is a well-known trick that is tedious to redo every time the colour or side changes.\n\nThis generator writes both pseudo-elements for you. Choose the side the tail points from, set its size and how far along the edge it sits, add a border colour and a shadow, and the live preview shows the result. The output is a single bubble rule, so it drops into any stylesheet without images or JavaScript. The code is produced in your browser and nothing is uploaded.",
+ "howTo": [
+  "Choose the side where the tail should appear: top, bottom, left or right.",
+  "Set background, text and border colours, border width and corner radius.",
+  "Adjust tail size and offset in percent, and tick the drop shadow if you want one.",
+  "Copy the .bubble CSS into your stylesheet and add the class to your element."
+ ],
+ "faq": [
+  {
+   "q": "Why are two pseudo-elements used?",
+   "a": "The border triangle technique needs one triangle in the border colour and a slightly smaller one in the fill colour on top. Without a border, the outline triangle is simply not visible."
+  },
+  {
+   "q": "Can the tail point at a specific element?",
+   "a": "The tail offset is a percentage along the bubble edge, so you can line it up with a button or avatar. For a tooltip that must follow its target, position the bubble with your own JavaScript or CSS anchor positioning."
+  },
+  {
+   "q": "Does a shadow also follow the tail?",
+   "a": "A box-shadow follows the rectangle only, not the tail. If the shadow around the tail looks missing, a filter drop-shadow on the bubble is an alternative you can try by hand."
+  }
+ ],
+ "related": [
+  "box-shadow-generator",
+  "border-radius-generator",
+  "css-ribbon-banner-generator",
+  "clip-path-generator",
+  "css-triangle-generator"
+ ],
+ "keywords": [
+  "css speech bubble generator",
+  "css tooltip arrow",
+  "pure css chat bubble",
+  "css triangle tail",
+  "speech bubble css",
+  "free css bubble maker"
+ ]
+}

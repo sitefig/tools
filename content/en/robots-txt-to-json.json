@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-to-json",
+ "seoTitle": "robots.txt to JSON Converter",
+ "metaDescription": "Convert a robots.txt into structured JSON with groups, user-agents, rules, sitemaps and ignored lines. Free, runs in your browser.",
+ "intro": "Parses a robots.txt into JSON you can use in scripts, audits or spreadsheets.",
+ "why": "Scripts that audit many sites need robots.txt as data, not text. Writing a parser means handling comments, shared user-agent lines and odd spacing.\n\nThis tool outputs groups with their user-agents, rules (with type, path and line number), other directives, sitemaps and the lines that were ignored. It follows RFC 9309 grouping.",
+ "howTo": [
+  "Paste the robots.txt.",
+  "Pick an indent size.",
+  "Copy the JSON.",
+  "Use it in your own script or tool."
+ ],
+ "faq": [
+  {
+   "q": "What does it do with Crawl-delay?",
+   "a": "It appears under other for the group it belongs to."
+  },
+  {
+   "q": "Are misspelled directives repaired?",
+   "a": "No. This converter is strict and lists them as other directives, so you see what a strict parser sees."
+  },
+  {
+   "q": "Are line numbers included?",
+   "a": "Yes, for groups and rules."
+  },
+  {
+   "q": "Are comments included?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "robots-txt-viewer",
+  "robots-txt-validator",
+  "robots-txt-diff",
+  "robots-tester",
+  "robots-generator"
+ ],
+ "keywords": [
+  "robots.txt to json",
+  "parse robots.txt",
+  "robots.txt parser json",
+  "robots.txt converter"
+ ]
+}

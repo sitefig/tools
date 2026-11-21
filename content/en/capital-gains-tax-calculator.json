@@ -1,0 +1,39 @@
+{
+ "id": "capital-gains-tax-calculator",
+ "seoTitle": "Capital Gains Tax Calculator With Exemption and Losses",
+ "metaDescription": "Estimate tax on an asset sale with your own short and long holding rates, annual exemption, costs and losses.",
+ "intro": "Gain, taxable gain and tax from the rates and thresholds you enter.",
+ "why": "Capital gains rules vary: some countries tax at income rates, some at flat rates, some exempt long holdings. This tool uses the values you enter, so it fits many systems.\n\nIt subtracts costs, applies losses and an exempt amount, and picks the long or short rate by days held. Not tax advice. Check national rules.",
+ "howTo": [
+  "Enter purchase, sale, costs and days held.",
+  "Enter your rates, threshold, exemption and losses.",
+  "Read the gain and tax."
+ ],
+ "faq": [
+  {
+   "q": "Are rates built in?",
+   "a": "No, you enter them."
+  },
+  {
+   "q": "Does it do FIFO lots?",
+   "a": "No. See the crypto and shares calculator."
+  },
+  {
+   "q": "What if I have a loss?",
+   "a": "It shows the loss and no tax."
+  }
+ ],
+ "related": [
+  "crypto-cgt-calculator",
+  "stock-profit-calculator",
+  "roi-calculator",
+  "income-tax-bracket-calculator",
+  "corporate-tax-estimator",
+  "percent-change"
+ ],
+ "keywords": [
+  "capital gains tax",
+  "gain after tax",
+  "holding period tax"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "image-to-base64",
+  "seoTitle": "Free Image to Base64 Converter: Data URI, CSS, HTML",
+  "metaDescription": "Encode images as Base64 data URIs, raw Base64, an img tag or a CSS background, for one or many files. Free, runs in your browser.",
+  "intro": "Reads image files and returns them as a Base64 data URI, a raw Base64 string, a ready-made img tag or a CSS background-image declaration. Several files can be encoded at once.",
+  "why": "Embedding a small image straight in HTML, CSS or JSON saves a request and keeps a single file self-contained. That is useful for email templates, small icons, test fixtures and API payloads that expect a Base64 string. Doing the conversion on the command line works if you remember the right flags.\n\nChoose your images and select the output form. For each file you get a comment with its name and sizes, then the encoded text. Be aware that Base64 makes data about a third larger and cannot be cached on its own, so it only suits small images. The file is read by your browser and the encoded text is created locally, so nothing is uploaded.",
+  "howTo": [
+    "Choose one or more image files.",
+    "Pick an output: data URI, raw base64, img tag or CSS background.",
+    "Run it and read the encoded result for each file.",
+    "Copy the text into your HTML, CSS or API request."
+  ],
+  "faq": [
+    {
+      "q": "When is Base64 a good idea for images?",
+      "a": "For tiny images such as icons or placeholders where one fewer request matters, and in places that cannot reference a file, such as some emails and JSON. For large images it is wasteful."
+    },
+    {
+      "q": "How much bigger does the file get?",
+      "a": "About 33 percent, because every three bytes become four characters. The comment above each result lists the original size and the encoded size so you can judge."
+    },
+    {
+      "q": "What is the difference between a data URI and raw Base64?",
+      "a": "A data URI includes the prefix with the media type, such as data:image/png;base64, and can be used directly as a src or url. Raw Base64 is only the encoded characters, which many APIs expect."
+    },
+    {
+      "q": "Can I convert it back to an image?",
+      "a": "Yes. Use the Base64 image viewer to preview an encoded image, or the Base64 decode tool to turn the text back into bytes."
+    }
+  ],
+  "related": [
+    "base64-image-viewer",
+    "base64-encode",
+    "base64-decode",
+    "image-compressor",
+    "svg-to-css",
+    "image-info"
+  ],
+  "keywords": [
+    "image to base64",
+    "convert image to data uri",
+    "png to base64 online",
+    "base64 background image css",
+    "free image base64 encoder"
+  ]
+}

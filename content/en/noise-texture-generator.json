@@ -1,0 +1,45 @@
+{
+ "id": "noise-texture-generator",
+ "seoTitle": "Noise Texture Generator: Tileable Grain as Transparent PNG",
+ "metaDescription": "Make a seamless grain or noise PNG with density, opacity and tint to overlay on gradients and flat colours. Free, local.",
+ "intro": "Creates a square transparent PNG filled with random grain, colour noise or sparse speckles that tiles without seams.",
+ "why": "A touch of grain makes gradients look richer and hides banding. Every pixel here is random and independent, so the tile repeats without a visible edge. Opacity controls how strong the overlay is, density how many pixels are filled.\n\nThe seed makes a result repeatable. Use the PNG as a CSS background over a colour or gradient. Large tiles and high opacity increase file size.",
+ "howTo": [
+  "Choose the tile size and noise type.",
+  "Set density, opacity and tint.",
+  "Run it and preview the tile.",
+  "Download the PNG and use it as a repeating background."
+ ],
+ "faq": [
+  {
+   "q": "Is it really seamless?",
+   "a": "Yes. Pixels are independent, so there is no pattern to break at the edges."
+  },
+  {
+   "q": "How big should the tile be?",
+   "a": "256 pixels is usually enough because noise has no structure."
+  },
+  {
+   "q": "Can I get SVG noise?",
+   "a": "No. This tool writes PNG pixels."
+  },
+  {
+   "q": "What does the seed do?",
+   "a": "The same seed and settings give the same image."
+  }
+ ],
+ "related": [
+  "mesh-gradient-image",
+  "gradient-generator",
+  "css-pattern-generator",
+  "svg-pattern-generator",
+  "image-compressor",
+  "image-filters"
+ ],
+ "keywords": [
+  "noise texture png",
+  "grain overlay generator",
+  "seamless noise",
+  "film grain texture"
+ ]
+}

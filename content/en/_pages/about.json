@@ -1,0 +1,29 @@
+{
+  "title": "About Free Tools",
+  "metaDescription": "Why Free Tools exists: hundreds of free SEO, privacy and developer tools that run entirely in your browser, with no sign-up and no uploads.",
+  "sections": [
+    {
+      "h2": "Why this site exists",
+      "paragraphs": [
+        "Most small utilities on the web ask you to paste your data into a form that sends it to a server. For a colour converter that hardly matters. For a JSON payload, a token, a log file or a customer list, it does.",
+        "Free Tools is a collection of small, single-purpose tools that do the work on your own device instead. The page you open contains the code, and the code processes what you type or drop in."
+      ]
+    },
+    {
+      "h2": "What that means for you",
+      "list": [
+        "Free to use, with no account and no sign-up.",
+        "Private by design: tool inputs are not uploaded, because the tools make no network requests with your data.",
+        "Fast and light: plain pages, system fonts, no tracking scripts and no advertising.",
+        "Shareable: most tools keep their input and options in the page address, so you can send someone the exact same result."
+      ]
+    },
+    {
+      "h2": "Limits worth knowing",
+      "paragraphs": [
+        "A web page cannot fetch other websites on your behalf, so tools that analyse a page ask you to paste its HTML or headers instead of a URL. Anything that needs an account, an API key or a server is left out on purpose.",
+        "Some tools are simplified. Where a tool supports only a common subset of a format, its page says so. Calculators, legal templates and health tools give general information, not professional advice."
+      ]
+    }
+  ]
+}

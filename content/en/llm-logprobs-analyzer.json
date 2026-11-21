@@ -1,0 +1,38 @@
+{
+ "id": "llm-logprobs-analyzer",
+ "seoTitle": "LLM Logprobs Analyzer: Token Confidence and Perplexity",
+ "metaDescription": "Paste OpenAI-style logprobs JSON to see per-token probability, perplexity, entropy from top alternatives and the uncertain spans of a response.",
+ "intro": "Find where a language model was unsure by analysing the logprobs from its API response.",
+ "why": "With logprobs enabled, APIs return the probability of every generated token and its top alternatives. This analyzer turns that JSON into perplexity, mean log probability, an approximate entropy from the returned candidates, a histogram of token confidence and the text with low-confidence tokens marked, plus a table of those tokens and their rivals.\n\nToken probability is not truth: a model can be confident and wrong, or unsure between harmless synonyms. Use it to decide which parts of an answer to verify, to compare prompts at the same temperature and to understand sampling. Works with chat completions (choices[0].logprobs.content), the legacy completions format and plain arrays of {token, logprob}.",
+ "howTo": [
+  "Call the API with logprobs=true (and top_logprobs=5) and copy the response JSON.",
+  "Paste it here and set the low-confidence threshold.",
+  "Check the marked tokens and the alternatives."
+ ],
+ "faq": [
+  {
+   "q": "Does low probability mean a hallucination?",
+   "a": "Not necessarily; it flags uncertainty, which correlates with errors but is not proof."
+  },
+  {
+   "q": "How is entropy computed?",
+   "a": "From the top alternatives returned, renormalised; it is an approximation of the full distribution."
+  },
+  {
+   "q": "Does it call an API?",
+   "a": "No, it only parses the JSON you paste."
+  }
+ ],
+ "related": [
+  "llm-token-estimator",
+  "gpt-token-counter",
+  "prompt-linter",
+  "llm-cost-calculator",
+  "json-format"
+ ],
+ "keywords": [
+  "logprobs analyzer",
+  "llm perplexity calculator",
+  "token confidence openai"
+ ]
+}

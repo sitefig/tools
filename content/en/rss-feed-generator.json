@@ -1,0 +1,45 @@
+{
+  "id": "rss-feed-generator",
+  "seoTitle": "RSS Feed Generator: Build RSS 2.0 XML from a List",
+  "metaDescription": "Create a valid RSS 2.0 feed from lines of title, URL, date and summary, with escaped content and an atom:link self reference.",
+  "intro": "Write your posts as simple lines and get a complete RSS 2.0 file to host on your site.",
+  "why": "Each line has the form \"title | URL | YYYY-MM-DD | summary\". The generator validates the URLs, converts the dates to RFC 822 form, uses each URL as a permalink GUID, escapes special characters and adds the channel details you fill in (title, site URL, description, language, feed URL). The result can be saved as feed.xml.\n\nFor a site with many posts it is better to generate the feed from your CMS or static-site generator; this tool is for small sites, tests and examples. Check the output with the RSS validator.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Fill in the feed title, site URL, description and feed URL.",
+    "Add one line per post.",
+    "Copy the XML into feed.xml on your site.",
+    "Link it with <link rel=\"alternate\" type=\"application/rss+xml\" href=\"/feed.xml\">."
+  ],
+  "faq": [
+    {
+      "q": "Do I need a summary?",
+      "a": "No, but readers show it. Without a description the item needs a title."
+    },
+    {
+      "q": "What if a title contains &?",
+      "a": "It is escaped automatically."
+    },
+    {
+      "q": "Atom or RSS?",
+      "a": "Both are widely supported. RSS 2.0 is simpler and what this tool writes."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "rss-feed-validator",
+    "sitemap-generator",
+    "xml-format",
+    "meta-tag-generator",
+    "og-twitter-generator",
+    "robots-generator"
+  ],
+  "keywords": [
+    "rss feed generator",
+    "create rss feed",
+    "rss xml builder",
+    "feed.xml"
+  ]
+}

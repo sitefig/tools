@@ -1,0 +1,39 @@
+{
+ "id": "chinese-zodiac-finder",
+ "seoTitle": "Chinese Zodiac Animal and Element Finder by Birth Date",
+ "metaDescription": "Find the Chinese zodiac animal, element and yin or yang from a birth date, using the Chinese New Year date of that year.",
+ "intro": "Gives the zodiac animal, element and polarity for a birth date, using the Chinese calendar data in your browser for New Year.",
+ "why": "People born in January or early February belong to the previous zodiac year. The tool finds Chinese New Year for the birth year and uses it.\n\nResults matched known cases (1988 Dragon after February 17, 2024 Wood Dragon on February 10). Dates are taken in UTC, so New Year's Day itself may differ by time zone.",
+ "howTo": [
+  "Enter the birth date.",
+  "Read the animal and element.",
+  "Check the New Year date shown."
+ ],
+ "faq": [
+  {
+   "q": "Why is my animal different from my birth year?",
+   "a": "If you were born before Chinese New Year, your sign is the previous year's."
+  },
+  {
+   "q": "Is it astrology?",
+   "a": "It is only the calendar lookup, with no interpretation."
+  },
+  {
+   "q": "Which years work?",
+   "a": "1900 to 2100."
+  }
+ ],
+ "related": [
+  "moon-phase-calculator",
+  "age-calculator",
+  "day-of-week",
+  "life-in-weeks",
+  "date-difference",
+  "leap-year-checker"
+ ],
+ "keywords": [
+  "chinese zodiac finder",
+  "chinese zodiac by birthday",
+  "zodiac animal"
+ ]
+}

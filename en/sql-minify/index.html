@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free SQL Minifier - Compress SQL Online | Free Tools</title>
+<meta name="description" content="Free online SQL minifier. Strip comments and extra whitespace from SQL while keeping string literals intact. Runs in your browser; nothing is uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/sql-minify/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/sql-minify/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/sql-minify/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free SQL Minifier - Compress SQL Online | Free Tools">
+<meta property="og:description" content="Free online SQL minifier. Strip comments and extra whitespace from SQL while keeping string literals intact. Runs in your browser; nothing is uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/sql-minify/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free SQL Minifier - Compress SQL Online | Free Tools">
+<meta name="twitter:description" content="Free online SQL minifier. Strip comments and extra whitespace from SQL while keeping string literals intact. Runs in your browser; nothing is uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"SQL Minifier","url":"https://tools.sitefig.net/en/sql-minify/","description":"Free online SQL minifier. Strip comments and extra whitespace from SQL while keeping string literals intact. Runs in your browser; nothing is uploaded.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your SQL into the input box.","Read the single-line result in the output.","Copy it into your code, log or configuration."],"keywords":"sql minifier online, minify sql, compress sql query, free sql minify, sql one line, remove sql comments","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Code Formatters","item":"https://tools.sitefig.net/en/#code-formatters"},{"@type":"ListItem","position":3,"name":"SQL Minifier","item":"https://tools.sitefig.net/en/sql-minify/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are string values safe?","acceptedAnswer":{"@type":"Answer","text":"Yes. Text inside single-quoted strings is copied as it is, including double spaces and characters that look like comments, such as -- or /*."}},{"@type":"Question","name":"Why remove comments?","acceptedAnswer":{"@type":"Answer","text":"On one line, a -- comment would hide everything after it. Removing comments avoids that, and also makes the result shorter."}},{"@type":"Question","name":"Does it check SQL syntax?","acceptedAnswer":{"@type":"Answer","text":"No. It only removes whitespace and comments and does not parse the query as a whole. A query with a mistake stays wrong after minifying, so test it in your database."}},{"@type":"Question","name":"How do I make it readable again?","acceptedAnswer":{"@type":"Answer","text":"Paste the minified query into the SQL Formatter. It restores line breaks and indentation, but any comments that were removed earlier cannot be brought back."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#code-formatters">Code Formatters</a></li><li><span aria-current="page">SQL Minifier</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>SQL Minifier</h1>
+<p class="lede">Remove comments and extra whitespace from SQL and get a compact query. Quoted strings are kept exactly, so values containing double spaces or dashes are not damaged.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="sql-minify" data-module="data"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A formatted query is great in an editor, but you sometimes need it on one line: in a log message, a configuration value, a code string, or a command line. Collapsing it by hand risks cutting into a string literal or leaving a comment that swallows the rest of the line.</p>
+<p>The minifier deletes line and block comments, collapses runs of whitespace into a single space and trims spaces around punctuation. String literals are recognised and copied unchanged, so a value like 'a  -- b' stays exactly as written. Because comments are removed, the single-line result cannot be broken by a trailing -- comment. The tool does not check whether the SQL is valid. Nothing is uploaded; everything happens in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your SQL into the input box.</li><li>Read the single-line result in the output.</li><li>Copy it into your code, log or configuration.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Are string values safe?</summary><p>Yes. Text inside single-quoted strings is copied as it is, including double spaces and characters that look like comments, such as -- or /*.</p></details>
+<details><summary>Why remove comments?</summary><p>On one line, a -- comment would hide everything after it. Removing comments avoids that, and also makes the result shorter.</p></details>
+<details><summary>Does it check SQL syntax?</summary><p>No. It only removes whitespace and comments and does not parse the query as a whole. A query with a mistake stays wrong after minifying, so test it in your database.</p></details>
+<details><summary>How do I make it readable again?</summary><p>Paste the minified query into the SQL Formatter. It restores line breaks and indentation, but any comments that were removed earlier cannot be brought back.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/sql-format/"><span class="link-card__title">SQL Formatter</span><span class="link-card__desc">Uppercase keywords and lay out clauses, joins and subqueries on separate lines.</span></a></li><li><a class="link-card" href="/en/sql-keyword-uppercaser/"><span class="link-card__title">SQL Keyword Uppercaser</span><span class="link-card__desc">Uppercase (or lowercase) SQL keywords, and optionally built-in function names and data types, while leaving string literals, quoted identifiers, comments and your own table/column names untouched.</span></a></li><li><a class="link-card" href="/en/sql-explainer/"><span class="link-card__title">SQL Query Explainer (plain English)</span><span class="link-card__desc">Explain a SELECT / INSERT / UPDATE / DELETE / CREATE TABLE statement in plain English: tables and joins, filters, grouping, ordering and limits in logical execution order, plus warnings about common pitfalls (SELECT *, leading-wildcard LIKE, functions on columns, big OFFSET, UPDATE/DELETE without WHERE). Rule-based parser: no CTEs, UNION or window frames.</span></a></li><li><a class="link-card" href="/en/json-minify/"><span class="link-card__title">JSON Minifier</span><span class="link-card__desc">Remove all whitespace from JSON (validates first).</span></a></li><li><a class="link-card" href="/en/csv-to-sql/"><span class="link-card__title">CSV to SQL INSERT</span><span class="link-card__desc">Generate INSERT statements (and optionally CREATE TABLE) from CSV.</span></a></li><li><a class="link-card" href="/en/sql-index-advisor/"><span class="link-card__title">SQL Index Advisor</span><span class="link-card__desc">Paste your CREATE TABLE statements and the SELECT / UPDATE / DELETE queries you run: get CREATE INDEX suggestions based on WHERE equality and range columns, join keys and ORDER BY / GROUP BY, skipping indexes already provided by primary keys, UNIQUE constraints or existing indexes. Static heuristic (no table statistics): always confirm with EXPLAIN on real data.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

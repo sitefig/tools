@@ -1,0 +1,47 @@
+{
+ "id": "gzip-compress",
+ "seoTitle": "Free Gzip and Deflate Compressor with Base64 Output",
+ "metaDescription": "Compress text with gzip, deflate or raw deflate and get the result as Base64. Free, uses your browser's built-in compression, and never uploads your data.",
+ "intro": "Compress text with gzip, deflate or raw deflate and copy the result as Base64. It is handy for checking how well a payload compresses or producing test data.",
+ "why": "Compressed payloads turn up in API requests, message queues, cookies, URLs and test fixtures, and you often want to produce one quickly: to check how many bytes gzip really saves on a JSON sample, or to create a Base64 blob that a decoder can read.\n\nThis tool uses the compression streams built into modern browsers, so the output is standard data that other software can read. Pick gzip for files and HTTP, deflate for the zlib wrapper, or deflate-raw for protocols that supply their own headers. The text is compressed locally and never uploaded.",
+ "howTo": [
+  "Paste the text you want to compress into the box.",
+  "Choose a format: gzip, deflate or deflate-raw.",
+  "Read the Base64 output.",
+  "Copy it, or paste it into the Gzip Decompress tool to check the round trip."
+ ],
+ "faq": [
+  {
+   "q": "Which format should I choose?",
+   "a": "Use gzip for .gz files and HTTP Content-Encoding. Use deflate for the zlib-wrapped format, and deflate-raw for formats such as ZIP entries that carry no header. The decompress tool needs the same format to read the data back."
+  },
+  {
+   "q": "Why is my output bigger than the input?",
+   "a": "Very short or already compressed text can grow, since headers and the Base64 step add overhead of roughly a third. Compression pays off on longer, repetitive text such as JSON, HTML or logs."
+  },
+  {
+   "q": "Is the result identical to the gzip command?",
+   "a": "It is valid gzip that any decoder reads, but the bytes may differ from command-line output because header fields, compression level and implementation vary between programs."
+  },
+  {
+   "q": "Does it work in every browser?",
+   "a": "It needs the CompressionStream feature, which current versions of Chrome, Edge, Firefox and Safari provide. In an older browser the tool reports an error instead of producing output."
+  }
+ ],
+ "related": [
+  "gzip-decompress",
+  "base64-encode",
+  "base64-decode",
+  "json-minify",
+  "string-length-bytes",
+  "zip-creator"
+ ],
+ "keywords": [
+  "gzip compress online",
+  "text to gzip base64",
+  "free deflate compressor",
+  "compress string to base64",
+  "gzip text online",
+  "deflate raw base64"
+ ]
+}

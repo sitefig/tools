@@ -1,0 +1,44 @@
+{
+ "id": "redis-mongodb-slowlog-parser",
+ "seoTitle": "Redis SLOWLOG and MongoDB Slow Query Parser",
+ "metaDescription": "Rank slow operations from redis-cli SLOWLOG GET output or a mongod JSON log, grouped by command or namespace and plan. Free.",
+ "intro": "Ranks Redis slow commands and MongoDB slow operations from pasted output.",
+ "why": "Redis SLOWLOG GET prints nested lists that are hard to scan. The tool groups commands by name and shows total time. KEYS or SMEMBERS on a big key are classic findings.\n\nFor MongoDB 4.4 and newer it reads the structured log: namespace, command, plan summary and docs examined. A COLLSCAN plan with many documents examined is flagged for review.",
+ "howTo": [
+  "Run SLOWLOG GET 128 in redis-cli, or collect mongod logs.",
+  "Paste the output.",
+  "Set a minimum duration if needed.",
+  "Read the ranked groups."
+ ],
+ "faq": [
+  {
+   "q": "Which units?",
+   "a": "SLOWLOG durations are microseconds, shown here in ms. MongoDB durationMillis is ms."
+  },
+  {
+   "q": "Which Mongo log format?",
+   "a": "Structured JSON logs of MongoDB 4.4 and newer."
+  },
+  {
+   "q": "Is the full command shown?",
+   "a": "Only an example per group, cut to 220 characters."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "mysql-slow-query-analyzer",
+  "postgres-log-analyzer",
+  "mongodb-query-builder",
+  "redis-command-generator",
+  "jsonl-log-filter",
+  "exception-grouper"
+ ],
+ "keywords": [
+  "redis slowlog parser",
+  "mongodb slow query log",
+  "slowlog get analyzer"
+ ]
+}

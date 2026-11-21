@@ -1,0 +1,44 @@
+{
+ "id": "csv-splitter",
+ "seoTitle": "CSV Splitter: Parts of N Rows Each, Header Repeated, ZIP",
+ "metaDescription": "Split a large CSV into numbered files with a set number of rows, each with the header row, bundled in a ZIP. Free, in your browser.",
+ "intro": "Cuts a CSV into equal parts by row count and gives you a ZIP of numbered files, each starting with the header.",
+ "why": "Spreadsheet programs and import tools often choke on very large files. Splitting into parts with the same header keeps each part importable on its own.\n\nRows stay intact, including quoted fields with line breaks, because the file is parsed before it is cut. The ZIP uses stored entries, so it opens everywhere. Pasting a huge file into a browser text box has limits; for gigabytes use a command-line tool.",
+ "howTo": [
+  "Paste the CSV with its header.",
+  "Set the data rows per part and a file name prefix.",
+  "Download the ZIP.",
+  "Check the list of files and row counts."
+ ],
+ "faq": [
+  {
+   "q": "Is the last part smaller?",
+   "a": "Yes, it holds the remainder."
+  },
+  {
+   "q": "Are quoted line breaks kept?",
+   "a": "Yes."
+  },
+  {
+   "q": "How many parts?",
+   "a": "Up to 500."
+  },
+  {
+   "q": "Is the ZIP compressed?",
+   "a": "No, entries are stored, which is simple and universal."
+  }
+ ],
+ "related": [
+  "csv-merger",
+  "csv-files-to-xlsx-sheets",
+  "csv-to-json",
+  "csv-viewer",
+  "random-row-sampler",
+  "csv-column-extractor"
+ ],
+ "keywords": [
+  "split csv file",
+  "csv splitter rows",
+  "break up large csv"
+ ]
+}

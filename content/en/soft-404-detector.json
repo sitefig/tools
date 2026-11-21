@@ -1,0 +1,38 @@
+{
+ "id": "soft-404-detector",
+ "seoTitle": "Soft 404 Detector: Error Pages That Return 200",
+ "metaDescription": "Paste a page's HTML and HTTP status to check for soft 404 signs: error wording, thin content, noindex, canonical to home, meta refresh. Fix advice included.",
+ "intro": "Check whether a page that returns 200 looks like an error page to search engines.",
+ "why": "A soft 404 is a page that tells visitors \"not found\" while the server answers 200 OK. Search engines waste crawl budget on them and report them in Search Console. This detector scores the HTML you paste for the usual signs: not-found wording in the title, heading and text, very little content, noindex, a canonical pointing to the home page and meta refresh redirects, then recommends 404, 410, 301 or keeping the page.\n\nGoogle's own classifier is not public, so treat the verdict as a heuristic. If the server already returns 404 or 410 the tool says so. It cannot request the URL; paste the status and source from your own fetch.",
+ "howTo": [
+  "Paste the page source, optionally with the HTTP status line.",
+  "Set the status and URL if you did not include them.",
+  "Read the verdict and the recommended action."
+ ],
+ "faq": [
+  {
+   "q": "What should I return for removed products?",
+   "a": "410 or 404 if gone for good, a 301 to the closest replacement if one exists, and keep 200 only if the page still has useful content."
+  },
+  {
+   "q": "Is redirecting everything to the home page ok?",
+   "a": "Google treats mass redirects to the home page as soft 404s. Redirect to a relevant page."
+  },
+  {
+   "q": "Can the tool fetch the URL?",
+   "a": "No; paste the HTML you retrieved."
+  }
+ ],
+ "related": [
+  "gsc-page-indexing-explainer",
+  "seo-robots-noindex-simulator",
+  "redirect-chain-analyzer",
+  "http-headers-analyzer",
+  "redirect-map-matcher"
+ ],
+ "keywords": [
+  "soft 404 checker",
+  "soft 404 search console",
+  "error page returns 200"
+ ]
+}

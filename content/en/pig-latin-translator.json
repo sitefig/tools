@@ -1,0 +1,41 @@
+{
+ "id": "pig-latin-translator",
+ "seoTitle": "Pig Latin Translator: English to Pig Latin",
+ "metaDescription": "Turn English into Pig Latin: leading consonants move to the end plus ay, vowel words get way. Keeps capitals and punctuation. Free.",
+ "intro": "Turn English text into Pig Latin by moving leading consonants to the end and adding \"ay\", keeping capitals and punctuation.",
+ "why": "Pig Latin is a word game that scrambles English so outsiders find it hard to follow. It is also a common exercise for learning string handling.\n\nThe common rule is used: a leading group of consonants (with qu kept together) moves to the end and gets ay, and a word that starts with a vowel gets way. You can pick yay, ay or hay as the vowel ending, as variants differ. Capitals and punctuation stay in place.",
+ "howTo": [
+  "Type or paste English text.",
+  "Choose the ending for words that start with a vowel.",
+  "Read the Pig Latin text.",
+  "Copy it."
+ ],
+ "faq": [
+  {
+   "q": "Which variant is this?",
+   "a": "Consonant clusters move with ay, vowel words get way by default. Other variants use yay or hay."
+  },
+  {
+   "q": "Does it translate back?",
+   "a": "No. Going back is ambiguous because it is not clear where the moved letters began."
+  },
+  {
+   "q": "What about numbers and symbols?",
+   "a": "They are left unchanged."
+  }
+ ],
+ "related": [
+  "reverse-text",
+  "fancy-text",
+  "nato-phonetic",
+  "text-obfuscator",
+  "random-text-generator",
+  "case-converter"
+ ],
+ "keywords": [
+  "pig latin translator",
+  "english to pig latin",
+  "pig latin converter",
+  "pig latin generator"
+ ]
+}

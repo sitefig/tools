@@ -1,0 +1,47 @@
+{
+ "id": "xml-to-json",
+ "seoTitle": "Free XML to JSON Converter Online",
+ "metaDescription": "Free online XML to JSON converter. Attributes get a prefix, repeated elements become arrays, and text goes to #text. Runs in your browser.",
+ "intro": "Convert XML into JSON. Attributes are prefixed (default @), repeated sibling elements become arrays, and text next to attributes or children goes into a #text key.",
+ "why": "XML and JSON model data differently, so any conversion needs rules. When you read an XML feed or a SOAP response in JavaScript, or move data from an older system to a modern API, it helps to see exactly what shape you will get.\n\nHere the rules are simple. An attribute becomes a key starting with a prefix you choose, a repeated child element turns into an array, an element with only text becomes a string, and mixed content keeps its text under #text. Empty elements become empty values. The same convention is used by the JSON to XML tool in this collection, so simple documents can go both ways. The conversion runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your XML into the input box.",
+  "Set the attribute prefix, or keep the default @.",
+  "Choose the indent for the JSON output.",
+  "Copy the resulting JSON."
+ ],
+ "faq": [
+  {
+   "q": "How do I tell if something will be an array?",
+   "a": "An element becomes an array when the same tag appears more than once in the same parent. A single occurrence is an object or string, so the shape can differ between documents."
+  },
+  {
+   "q": "Where do attributes go?",
+   "a": "Each attribute becomes a key on the element object, with the prefix in front, for example @id. Change the prefix if your code expects something else, such as an underscore."
+  },
+  {
+   "q": "What about text mixed with child elements?",
+   "a": "Text in an element that also has attributes or children is stored under the #text key, next to the other keys."
+  },
+  {
+   "q": "Are numbers converted?",
+   "a": "No. All text values come out as strings because XML has no types. Convert them in your own code if you need numbers or booleans."
+  }
+ ],
+ "related": [
+  "json-to-xml",
+  "xml-format",
+  "xpath-tester",
+  "json-format",
+  "xml-validate",
+  "yaml-to-json"
+ ],
+ "keywords": [
+  "xml to json converter",
+  "convert xml to json online",
+  "xml to json free",
+  "xml json tool",
+  "xml attributes to json",
+  "online xml json converter"
+ ]
+}

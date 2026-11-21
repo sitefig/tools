@@ -1,0 +1,45 @@
+{
+ "id": "waist-to-hip-ratio-calculator",
+ "seoTitle": "Waist-to-Hip Ratio Calculator (WHO Cut-offs)",
+ "metaDescription": "Divide waist by hip and compare the ratio with the WHO cut-offs of 0.90 for men and 0.85 for women for increased metabolic risk.",
+ "intro": "Compare your waist-to-hip ratio with the WHO cut-offs.",
+ "why": "Enter your waist and hip measurements and your sex. The page divides one by the other and compares it with 0.90 for men and 0.85 for women, the cut-offs usually attributed to the WHO 2008 expert consultation as a substantially increased metabolic risk.\n\nThe figures come from secondary sources; the WHO report itself was not checked. Cut-offs can differ for some ethnic groups. A result above the line is a reason to talk to a health professional, not a diagnosis.",
+ "howTo": [
+  "Choose cm or inches and your sex.",
+  "Measure the waist and the widest part of the hips.",
+  "Enter both numbers.",
+  "Read the ratio and the cut-off result."
+ ],
+ "faq": [
+  {
+   "q": "How do I measure the hips?",
+   "a": "Stand relaxed and measure around the widest part of the buttocks, with the tape level."
+  },
+  {
+   "q": "Which sex do I choose?",
+   "a": "The cut-offs were set for men and women separately. Use the one that matches the reference group your doctor uses."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "waist-to-height-ratio-calculator",
+  "bmi-calculator",
+  "body-fat-navy",
+  "ideal-weight",
+  "lean-body-mass-calculator",
+  "heart-rate-zones"
+ ],
+ "keywords": [
+  "waist to hip ratio",
+  "WHR calculator",
+  "WHO waist hip cut-off",
+  "abdominal obesity"
+ ]
+}

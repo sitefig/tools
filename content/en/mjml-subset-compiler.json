@@ -1,0 +1,41 @@
+{
+ "id": "mjml-subset-compiler",
+ "seoTitle": "MJML Subset Compiler: Responsive Email Markup to HTML",
+ "metaDescription": "Compile common MJML (section, column, text, image, button, divider, spacer) into table-based responsive email HTML with preview.",
+ "intro": "A small compiler for the most used MJML tags that outputs responsive, table-based email HTML.",
+ "why": "MJML lets you write email layouts in short tags. The official compiler is a large library; this page contains a small hand-written one for the common tags.\n\nIt supports mj-head with title, preview, style and attributes, plus mj-body, mj-section, mj-column, mj-text, mj-image, mj-button, mj-divider and mj-spacer with their usual attributes. Columns sit side by side above 480px and stack below it. It does not produce Outlook (MSO) conditional tables, so Outlook desktop may render columns differently. Test before sending.",
+ "howTo": [
+  "Paste MJML wrapped in mjml and mj-body.",
+  "Read the compiled HTML and preview.",
+  "Check the notes for unsupported tags.",
+  "Test in your target email clients."
+ ],
+ "faq": [
+  {
+   "q": "Is the output identical to MJML?",
+   "a": "No. It follows the same ideas but is not byte-for-byte the same."
+  },
+  {
+   "q": "What is not supported?",
+   "a": "Other mj- components, mj-include, mj-wrapper, mj-group and Outlook ghost tables."
+  },
+  {
+   "q": "Will it work in Gmail?",
+   "a": "The output uses inline styles and tables, which Gmail handles, but always send a test."
+  }
+ ],
+ "related": [
+  "email-css-inliner",
+  "email-signature-generator",
+  "html-validator",
+  "html-minify",
+  "html-to-pug",
+  "outreach-mail-merge"
+ ],
+ "keywords": [
+  "mjml compiler online",
+  "mjml to html",
+  "responsive email builder",
+  "mjml editor"
+ ]
+}

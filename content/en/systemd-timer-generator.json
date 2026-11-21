@@ -1,0 +1,47 @@
+{
+ "id": "systemd-timer-generator",
+ "seoTitle": "Free systemd Timer Generator (Cron Replacement)",
+ "metaDescription": "Free online systemd timer generator. Create a .timer and matching .service with OnCalendar or boot-plus-interval schedules, jitter and persistence.",
+ "intro": "Generate a systemd .timer and its matching .service as a replacement for a cron job. Use OnCalendar schedules or boot plus interval timing, with optional random delay and catch-up runs.",
+ "why": "systemd timers have real advantages over cron: logs in the journal, dependency handling, catch-up of missed runs after downtime and random delays to spread load. But they need two files that must match by name, and the OnCalendar syntax is unfamiliar.\n\nEnter the unit name, description and command, pick OnCalendar for clock-based times such as *-*-* 03:00:00, or boot plus interval for jobs that run a set time after startup and then repeat. The tool writes the timer and the oneshot service together, with Persistent=true if you want missed runs executed at the next boot, and RandomizedDelaySec for jitter. It also prints the commands to enable the timer. Use systemd-analyze calendar to check your expression. Nothing is uploaded.",
+ "howTo": [
+  "Enter a unit name, a description and the command to run.",
+  "Choose OnCalendar and enter a schedule, or choose boot plus interval and enter both times.",
+  "Set the random delay, tick Persistent for catch-up and enter a user if needed.",
+  "Save both files in /etc/systemd/system and run the enable command shown."
+ ],
+ "faq": [
+  {
+   "q": "What does Persistent=true do?",
+   "a": "If the machine was off at a scheduled time, the missed run happens as soon as the timer is next active, for example at boot. It applies to OnCalendar timers."
+  },
+  {
+   "q": "How do I check an OnCalendar expression?",
+   "a": "Run systemd-analyze calendar followed by the expression. It prints the normalised form and the next time it will fire, so you can confirm the schedule before relying on it."
+  },
+  {
+   "q": "Why does the service use Type=oneshot?",
+   "a": "A timer starts a job that runs and finishes, which is what oneshot describes. systemd then knows when the run is complete."
+  },
+  {
+   "q": "What is RandomizedDelaySec for?",
+   "a": "It adds a random delay up to the value you set, so many machines or timers scheduled for the same moment do not all start together."
+  }
+ ],
+ "related": [
+  "systemd-unit-generator",
+  "cron-generator",
+  "cron-explainer",
+  "cron-dialect-converter",
+  "crontab-randomized-generator",
+  "natural-language-to-cron"
+ ],
+ "keywords": [
+  "systemd timer generator",
+  "systemd timer cron replacement",
+  "oncalendar generator",
+  "free systemd timer tool",
+  "create systemd timer",
+  "systemd timer example"
+ ]
+}

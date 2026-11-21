@@ -1,0 +1,45 @@
+{
+ "id": "crawl-error-url-grouper",
+ "seoTitle": "Crawl Error URL Grouper: Find the Pattern in 404 Lists",
+ "metaDescription": "Group URLs from a Search Console export, crawler or log by folder, pattern, file type or parameter so you can fix a whole class of errors at once.",
+ "intro": "Paste a list of error URLs and see them grouped by pattern (digits and slugs replaced), folder, file type, query parameter names or reason. The biggest group shows what to fix first.",
+ "why": "A list of 3,000 404 URLs is rarely 3,000 problems. It is usually a handful of causes: a deleted section, a changed URL pattern or a broken link template. Grouping shows them.\n\nThe default pattern view replaces numbers with {n}, long hex or UUID values with {id} and hyphenated words with {slug}, so /products/12345 and /products/12399 become one group. It is a grouping aid. It does not check whether the URLs really return errors.",
+ "howTo": [
+  "Paste URLs, each optionally followed by a reason or status.",
+  "Choose how to group.",
+  "Start with the largest group.",
+  "Redirect, fix the link or return 410 depending on the cause."
+ ],
+ "faq": [
+  {
+   "q": "What formats work?",
+   "a": "A plain URL list, or lines with a URL plus text such as a status or a Search Console reason."
+  },
+  {
+   "q": "What is a pattern?",
+   "a": "The path with variable parts replaced, so similar URLs share one label."
+  },
+  {
+   "q": "Should I redirect every 404?",
+   "a": "No. Redirect when a close replacement exists. Let truly removed pages stay 404 or 410."
+  },
+  {
+   "q": "Does it work with Search Console exports?",
+   "a": "Yes, paste the URL column, optionally with the reason."
+  }
+ ],
+ "related": [
+  "soft-404-detector",
+  "redirect-map-matcher",
+  "bulk-redirect-rules",
+  "url-path-grouper",
+  "access-log-analyzer",
+  "url-parameter-analyzer"
+ ],
+ "keywords": [
+  "group 404 errors",
+  "search console crawl errors",
+  "url pattern grouping",
+  "404 error analysis"
+ ]
+}

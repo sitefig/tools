@@ -1,0 +1,45 @@
+{
+ "id": "running-pace-calculator",
+ "seoTitle": "Running Pace Calculator (Pace, Time or Distance with Splits)",
+ "metaDescription": "Fill in any two of distance, time and pace to get the third, with split times per kilometre or mile and the speed in km/h and mph.",
+ "intro": "Solve for pace, time or distance and see your splits.",
+ "why": "Fill in any two of distance, time and pace and leave the third blank. The page calculates it and lists even-pace splits per kilometre or mile, with the speed in km/h and mph. Distance accepts a number or a name such as 5k, 10k, half or marathon.\n\nSplits assume a steady pace. Hills, wind and fatigue are not modelled.",
+ "howTo": [
+  "Choose km or miles.",
+  "Type two of distance, time and pace.",
+  "Leave the third box empty.",
+  "Read the result and the split table."
+ ],
+ "faq": [
+  {
+   "q": "What time format works?",
+   "a": "Use mm:ss or h:mm:ss, for example 25:30 or 1:45:00."
+  },
+  {
+   "q": "Can I enter a half marathon?",
+   "a": "Yes. Type half, 10k, 5k or marathon in the distance box."
+  },
+  {
+   "q": "Why does it ask for exactly two values?",
+   "a": "Three values would be able to disagree with each other. Two let the tool compute the third without a conflict."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "race-time-predictor",
+  "swimming-pace-calculator",
+  "heart-rate-zones",
+  "calories-burned-calculator",
+  "steps-to-distance-converter",
+  "vo2-max-estimator"
+ ],
+ "keywords": [
+  "running pace calculator",
+  "pace calculator",
+  "marathon pace splits",
+  "min per km"
+ ]
+}

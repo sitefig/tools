@@ -1,0 +1,39 @@
+{
+ "id": "coupon-code-generator",
+ "seoTitle": "Coupon Code Generator: Batches of Unique Discount Codes",
+ "metaDescription": "Generate unique random discount codes with a prefix, length, character set and dashes using browser crypto. Free, private.",
+ "intro": "Generates a batch of random, unique coupon codes with the prefix, length and character set you choose.",
+ "why": "Guessable coupon codes get abused. Codes that are random and long enough to make guessing impractical, with look-alike characters removed, are safer and easier to read out loud.\n\nThe tool uses the browser crypto random source with rejection sampling, so every character is equally likely. It refuses a batch if the code space is too small for the count, and it never repeats a code within a batch. It cannot check against codes already in your shop.",
+ "howTo": [
+  "Set how many codes you need.",
+  "Set prefix, length, dash grouping and character set.",
+  "Copy the list and import it into your shop."
+ ],
+ "faq": [
+  {
+   "q": "How long should a code be?",
+   "a": "Eight random letters and digits give a very large space, which is enough for most promos."
+  },
+  {
+   "q": "Why are some letters missing?",
+   "a": "O, I and the digits 0 and 1 are left out to avoid confusion."
+  },
+  {
+   "q": "Will it avoid codes I already used?",
+   "a": "No. Compare against your existing list."
+  }
+ ],
+ "related": [
+  "sku-code-generator",
+  "gtin-check-digit-calculator",
+  "barcode-generator",
+  "check-digit-tool",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "coupon code generator",
+  "random discount codes",
+  "promo code batch"
+ ]
+}

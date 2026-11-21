@@ -1,0 +1,47 @@
+{
+ "id": "hash-generator",
+ "seoTitle": "Free Hash Generator for MD5, SHA-1 and SHA-256",
+ "metaDescription": "Generate MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text at once. Free, uses UTF-8 and runs in your browser without uploading your text.",
+ "intro": "Type or paste text and get its MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes at the same time, as lowercase or uppercase hex.",
+ "why": "A hash is a short fingerprint of data. You use it to check that a downloaded file or a copied string was not altered, to build cache keys, to compare a value against a published checksum, or to reproduce a hash that an API expects.\n\nThis tool computes five common algorithms in one go, so you do not run five commands. MD5 and SHA-1 are included because many old systems still publish them, but they are broken for security uses; prefer SHA-256 or better. Text is hashed as UTF-8. The calculation runs in your browser, so the text you hash is never uploaded. Hashing is not encryption and cannot be reversed.",
+ "howTo": [
+  "Type or paste the text to hash into the box.",
+  "Read the five hashes shown, one per line, each labelled with its algorithm.",
+  "Tick \"Uppercase hex\" if the system you compare against uses capital letters.",
+  "Copy the hash you need."
+ ],
+ "faq": [
+  {
+   "q": "Which algorithm should I use?",
+   "a": "Use SHA-256 or SHA-512 for integrity checks. MD5 and SHA-1 have known collision attacks, so avoid them where an attacker could craft input. They remain fine for catching accidental corruption or matching old checksums."
+  },
+  {
+   "q": "Can I use this to store passwords?",
+   "a": "No. Fast hashes like these are the wrong tool for passwords because they can be guessed billions of times per second. Use a slow password hash such as bcrypt, scrypt or Argon2, which are available on this site."
+  },
+  {
+   "q": "Why does my hash differ from another tool?",
+   "a": "The usual causes are a trailing newline or space, different line endings, or another text encoding. This tool hashes the exact UTF-8 bytes of what you typed, so even one extra character changes everything."
+  },
+  {
+   "q": "Can I hash a file?",
+   "a": "Not on this page. The File Hash tool computes the same algorithms for a file you choose, locally."
+  }
+ ],
+ "related": [
+  "file-hash",
+  "hash-compare",
+  "hmac-generator",
+  "sha3-hash-generator",
+  "bcrypt-generator",
+  "checksum-crc32-adler32"
+ ],
+ "keywords": [
+  "hash generator online",
+  "md5 hash generator",
+  "sha256 online",
+  "free sha1 generator",
+  "sha512 hash calculator",
+  "text to hash"
+ ]
+}

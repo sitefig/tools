@@ -1,0 +1,39 @@
+{
+ "id": "recipe-scaler",
+ "seoTitle": "Recipe Scaler: Change Servings and Scale Ingredients",
+ "metaDescription": "Paste a recipe and scale every quantity from the original to the wanted servings. Handles fractions and ranges. Free.",
+ "intro": "Multiplies the first quantity on each ingredient line by wanted servings divided by original servings, and prints friendly fractions.",
+ "why": "Doubling a recipe by hand means multiplying 1 1/2 and 3/4 in your head. Paste the list and get each line scaled.\n\nIt reads whole numbers, decimals, fractions such as 1/2, mixed numbers such as 1 1/2, unicode halves and ranges like 2-3. Units are not converted and cooking times are left alone.",
+ "howTo": [
+  "Paste the ingredient list.",
+  "Enter original and wanted servings.",
+  "Copy the scaled list."
+ ],
+ "faq": [
+  {
+   "q": "Does it change units?",
+   "a": "No. 48 tsp stays 48 tsp. Use the cooking converter for units."
+  },
+  {
+   "q": "Do spices scale linearly?",
+   "a": "Often not. Taste and adjust when scaling a lot."
+  },
+  {
+   "q": "What about lines without a number?",
+   "a": "They are copied unchanged."
+  }
+ ],
+ "related": [
+  "cooking-measurement-converter",
+  "oven-temperature-converter",
+  "unit-converter",
+  "percentage-calculator",
+  "volume-us-imperial-converter",
+  "recipe-schema-generator"
+ ],
+ "keywords": [
+  "recipe converter servings",
+  "scale recipe up",
+  "halve a recipe"
+ ]
+}

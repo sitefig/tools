@@ -1,0 +1,45 @@
+{
+  "id": "binaural-beat-generator",
+  "seoTitle": "Binaural Beat Generator: Left and Right Tones",
+  "metaDescription": "Play two slightly different sine tones, one in each ear, to create a binaural beat at the difference frequency. Stereo headphones needed.",
+  "intro": "Generate a binaural beat tone with exact frequencies.",
+  "why": "Set a base tone (50 to 1000 Hz), the beat frequency (0.5 to 40 Hz) and a volume. The left ear plays the base tone and the right ear plays base plus beat, panned hard left and right. The perceived beat equals the difference.\n\nEvidence that binaural beats change mood, focus or sleep is mixed and the effects are small. This is not a medical device. Keep the volume low, do not use it while driving and stop if you feel unwell.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Put on stereo headphones.",
+    "Set base tone, beat and a low volume.",
+    "Press Start.",
+    "Stop at any time."
+  ],
+  "faq": [
+    {
+      "q": "Why headphones?",
+      "a": "Each ear must hear a different tone; speakers mix them before they reach your ears."
+    },
+    {
+      "q": "What beat frequencies are used?",
+      "a": "Delta 0.5-4 Hz, theta 4-8, alpha 8-12, beta 12-30. Claims about each range are not well proven."
+    },
+    {
+      "q": "Is it safe?",
+      "a": "At low volume, yes; avoid if you have epilepsy or hearing issues and ask your doctor."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "tone-generator",
+    "white-noise-generator",
+    "metronome",
+    "audio-bpm-tap",
+    "decibel-meter",
+    "audio-db-converter"
+  ],
+  "keywords": [
+    "binaural beats",
+    "binaural beat generator",
+    "brainwave audio",
+    "tone left right"
+  ]
+}

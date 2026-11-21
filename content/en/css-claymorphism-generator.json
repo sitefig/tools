@@ -1,0 +1,43 @@
+{
+ "id": "css-claymorphism-generator",
+ "seoTitle": "Free CSS Claymorphism Generator with Preview",
+ "metaDescription": "Generate claymorphism CSS: pastel surface, large radius, outer shadow and inner highlights. Adjust depth and blur with a live preview. Free.",
+ "intro": "Choose a colour, radius, depth and blur and get CSS for the soft, inflated clay look: a pastel surface with a drop shadow and two inset highlights, with a live preview.",
+ "why": "Claymorphism is the puffy, toy-like style seen in friendly app illustrations and landing pages. It looks simple, but the effect depends on combining several shadows: one outer shadow for lift, a light inset on one edge and a darker inset on the other. Getting the balance wrong makes it look dirty or flat.\n\nThis generator builds that stack from a few controls, so you can tune the depth, blur and highlight strength against your page background and see the result straight away. It is a different style from glassmorphism or neumorphism, which have their own tools on this site. The CSS is created in your browser and you can copy it as soon as it looks right.",
+ "howTo": [
+  "Choose a surface colour and a page background colour.",
+  "Set the corner radius, depth and blur in pixels.",
+  "Adjust the inner highlight strength between 0 and 1 and watch the preview.",
+  "Copy the CSS into your stylesheet and apply the class to your card or button."
+ ],
+ "faq": [
+  {
+   "q": "What colours work best?",
+   "a": "Soft, mid-light pastels on a slightly lighter or darker page background. Very dark or very saturated surfaces make the highlights harder to see, so lower the inner strength if the result looks muddy."
+  },
+  {
+   "q": "How is it different from neumorphism?",
+   "a": "Neumorphism uses the same colour for page and element with two opposing shadows. Claymorphism uses a distinct surface colour, a larger radius and inset highlights, giving a rounder, more inflated look."
+  },
+  {
+   "q": "Is it accessible?",
+   "a": "The effect is decorative, so check text contrast on the surface colour yourself. Soft pastels with light text often fail contrast checks, and a dark text colour is usually the safer choice."
+  }
+ ],
+ "related": [
+  "glassmorphism-generator",
+  "neumorphism-generator",
+  "box-shadow-generator",
+  "css-3d-box-shadow-generator",
+  "contrast-checker",
+  "border-radius-generator"
+ ],
+ "keywords": [
+  "claymorphism css generator",
+  "clay effect css",
+  "claymorphism generator",
+  "css clay button",
+  "soft 3d css shadow",
+  "free claymorphism tool"
+ ]
+}

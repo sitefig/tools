@@ -1,0 +1,46 @@
+{
+  "id": "app-icon-generator",
+  "seoTitle": "Free App Icon Generator for iOS and Android Sizes",
+  "metaDescription": "Generate all common iOS and Android app icon PNG sizes from one square-ish image, with a solid background for iOS. Free, runs in your browser.",
+  "intro": "Creates the set of PNG icon sizes needed for iOS and Android apps from a single image. iOS sizes get a solid background colour, and Android icons come in the standard density folders.",
+  "why": "Shipping an app means supplying a pile of icon sizes: thirteen for iOS, from 20 to 1024 pixels, and a set of density buckets for Android plus the Play Store image. Resizing one logo thirteen times and naming each file correctly is the kind of job that goes wrong at the last minute.\n\nUpload your artwork, ideally a square at least 1024 pixels wide, pick iOS, Android or both, and download the lot. iOS icons cannot contain transparency, so choose the background colour that fills any transparent areas. The image is centre-cropped to a square first. The files are generated in your browser and not uploaded. You still need to place them in your project's asset catalogue or resource folders yourself.",
+  "howTo": [
+    "Choose your icon artwork, ideally square and at least 1024 pixels.",
+    "Select a platform: both, ios or android.",
+    "Pick the iOS background colour for transparent areas.",
+    "Run it and download the PNG files."
+  ],
+  "faq": [
+    {
+      "q": "Which sizes are produced?",
+      "a": "For iOS: 1024, 180, 167, 152, 120, 87, 80, 76, 60, 58, 40, 29 and 20 pixels. For Android: 48, 72, 96, 144 and 192 pixels for the mdpi to xxxhdpi folders, and a 512 pixel Play Store icon."
+    },
+    {
+      "q": "Why does iOS need a background colour?",
+      "a": "App Store icons must not have transparency. Any transparent pixels in your image are filled with the colour you choose. Android icons keep their transparency."
+    },
+    {
+      "q": "Does it create adaptive Android icons?",
+      "a": "No. It produces plain legacy-style PNG icons, not the foreground and background layers of adaptive icons. Create those in Android Studio or a dedicated tool."
+    },
+    {
+      "q": "Are the files named for my project structure?",
+      "a": "They are named by platform and size, for example ios-icon-180.png and android-mipmap-hdpi-72.png. You will need to move or rename them for your asset catalogue."
+    }
+  ],
+  "related": [
+    "favicon-generator",
+    "xcode-asset-catalog",
+    "android-manifest-builder",
+    "image-resizer",
+    "image-cropper",
+    "flutter-theme-generator"
+  ],
+  "keywords": [
+    "app icon generator",
+    "ios app icon sizes",
+    "android launcher icon generator",
+    "generate app icons from one image",
+    "free app icon maker"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "terraform-plan-viewer",
+ "seoTitle": "Terraform Plan Viewer for terraform show -json",
+ "metaDescription": "Summarise a Terraform plan JSON: resources to add, change, replace and destroy, changed attributes and output changes. Free, nothing uploaded.",
+ "intro": "Reads the JSON from terraform show -json and lists each resource with its action and the attributes that change. Sensitive values are hidden.",
+ "why": "A long plan is hard to review in a pull request. This page turns the machine-readable plan into a short list: counts, one line per resource and the changed attribute names.\n\nIt compares before and after values from the JSON, so its grouping can differ from the text plan. Values marked sensitive are never printed, and values unknown until apply are labelled as such.",
+ "howTo": [
+  "Run terraform plan -out tfplan, then terraform show -json tfplan > plan.json.",
+  "Paste the JSON or choose the file.",
+  "Read the totals and the per-resource list.",
+  "Use Terraform itself for the final decision."
+ ],
+ "faq": [
+  {
+   "q": "Can the plan contain secrets?",
+   "a": "Plan files can. The page hides values marked sensitive and runs offline, but treat the file as private anyway."
+  },
+  {
+   "q": "Why does a replace show as -/+?",
+   "a": "Terraform destroys and creates the resource. The order depends on create_before_destroy."
+  },
+  {
+   "q": "Does it run Terraform?",
+   "a": "No. It only reads the JSON."
+  },
+  {
+   "q": "Are drift changes shown?",
+   "a": "Only a count of resource_drift entries."
+  }
+ ],
+ "related": [
+  "terraform-formatter",
+  "terraform-hcl-to-json",
+  "terraform-scaffolder",
+  "json-diff",
+  "aws-iam-policy-linter",
+  "cloudformation-template-generator"
+ ],
+ "keywords": [
+  "terraform plan summary",
+  "terraform show json viewer",
+  "terraform plan to table"
+ ]
+}

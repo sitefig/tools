@@ -1,0 +1,46 @@
+{
+ "id": "signature-generator",
+ "seoTitle": "Free Signature Generator - Draw or Type, PNG",
+ "metaDescription": "Draw or type your signature and download it as a transparent PNG. Choose colour, pen width and font. Free, runs in your browser, nothing uploaded.",
+ "intro": "Draw your signature with a mouse, finger or stylus, or type your name in a handwriting style, then download it as a transparent PNG.",
+ "why": "Forms, contracts, invoices and PDFs often need a signature image, and scanning a signed sheet of paper, cropping it and removing the white background is a chore. Many signature websites require an account or place their own branding on the result.\n\nThis tool gives you a canvas with a checkered background to show the transparency. Draw directly, choosing the pen width and colour, or switch to Type mode and pick one of four script-style fonts that your device provides. When you press download, it crops the image tightly around your signature, adds a small margin and saves a PNG with a transparent background, ready to place in a document. The image is made in your browser and nothing is uploaded. Whether an image signature is legally valid depends on local law and the document.",
+ "howTo": [
+  "Choose Draw or Type as the mode.",
+  "Draw on the canvas, or type your name and pick a font style.",
+  "Choose the colour and pen width, and use Clear to start again.",
+  "Press Download transparent PNG."
+ ],
+ "faq": [
+  {
+   "q": "Is this a legally binding e-signature?",
+   "a": "It only makes an image. Whether an image of a signature is accepted depends on the law where you are and the type of document. For contracts that matter, use a recognised e-signature service or ask a lawyer."
+  },
+  {
+   "q": "Can I use it on a phone?",
+   "a": "Yes. Drawing works with a finger or stylus, and the canvas does not scroll while you draw. Rotate the phone to landscape for more room."
+  },
+  {
+   "q": "Why does the typed signature look different on another device?",
+   "a": "Type mode uses script fonts installed on your device, and different systems have different ones. The listed fallbacks mean the appearance can change. The downloaded PNG is fixed once saved."
+  },
+  {
+   "q": "Is the background really transparent?",
+   "a": "Yes. The checkered pattern is only a guide. The PNG contains only your strokes with a transparent background, so it can sit over any colour in a document or design tool."
+  }
+ ],
+ "related": [
+  "invoice-generator",
+  "resume-builder",
+  "receipt-generator",
+  "image-watermark",
+  "image-to-base64",
+  "image-format-converter"
+ ],
+ "keywords": [
+  "signature generator",
+  "draw signature online",
+  "transparent signature png",
+  "create handwritten signature",
+  "free signature maker"
+ ]
+}

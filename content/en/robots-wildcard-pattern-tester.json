@@ -1,0 +1,44 @@
+{
+ "id": "robots-wildcard-pattern-tester",
+ "seoTitle": "robots.txt Wildcard Tester: How * and $ Match URLs",
+ "metaDescription": "Test robots.txt patterns such as /*.pdf$ against sample URLs and see matches and the regex behind each. Free, runs in your browser.",
+ "intro": "Shows which of your sample URLs a robots.txt pattern matches, in plain words and as a regular expression.",
+ "why": "Only two special characters exist in robots.txt: * matches any run of characters and $ marks the end of the URL. Even so, patterns like /*.pdf$ or /*?sort= surprise people, because matching starts at the path, includes the query string and is case sensitive.\n\nPaste patterns and URLs and see exactly what each one catches. The tool does not decide Allow against Disallow; use the tester for the full verdict.",
+ "howTo": [
+  "Paste patterns, one per line (with or without the Allow or Disallow prefix).",
+  "Paste sample URLs.",
+  "Read MATCH or no match for each pair.",
+  "Adjust the pattern until it catches only what you want."
+ ],
+ "faq": [
+  {
+   "q": "Does the pattern match the query string?",
+   "a": "Yes. The path and query string are matched together, which is why /*?sort= works."
+  },
+  {
+   "q": "What does $ do?",
+   "a": "It anchors the pattern to the end of the URL, so /*.pdf$ matches a.pdf but not a.pdf?x=1."
+  },
+  {
+   "q": "Is matching case sensitive?",
+   "a": "Yes. /Admin and /admin are different."
+  },
+  {
+   "q": "Does it test Allow against Disallow?",
+   "a": "No, it tests one pattern at a time. The robots.txt tester resolves conflicts."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "robots-pattern-to-regex-converter",
+  "robots-conflict-detector",
+  "robots-txt-validator",
+  "robots-generator"
+ ],
+ "keywords": [
+  "robots.txt wildcard",
+  "robots.txt pattern tester",
+  "robots.txt dollar sign",
+  "robots.txt asterisk"
+ ]
+}

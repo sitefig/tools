@@ -1,0 +1,41 @@
+{
+ "id": "cliche-detector",
+ "seoTitle": "Cliché and Overused Phrase Detector",
+ "metaDescription": "Mark clichés and worn phrases like at the end of the day and think outside the box in your draft, using a built-in list. Free, private.",
+ "intro": "Mark clichés and worn-out phrases in your text using a built-in list of about 80, with counts.",
+ "why": "Clichés are phrases so familiar that readers skim them. They also make writing sound the same as everyone else's.\n\nThis tool checks your text against a hand-picked list of about 80 common English clichés and business phrases, marks each hit and counts them. You can add your own phrases. The list is not complete, and idioms can be right in dialogue or humour, so treat each mark as a question.",
+ "howTo": [
+  "Paste your draft.",
+  "Add your own phrases to flag if you like.",
+  "Read the marked text and counts.",
+  "Rewrite the phrase plainly or freshly."
+ ],
+ "faq": [
+  {
+   "q": "Is the list complete?",
+   "a": "No. It is a short, hand-picked list. Add your own phrases in the option box."
+  },
+  {
+   "q": "Are clichés always bad?",
+   "a": "Not in speech, dialogue or when you use them on purpose. They are a risk in formal prose."
+  },
+  {
+   "q": "Does it work in other languages?",
+   "a": "No, the list is English."
+  }
+ ],
+ "related": [
+  "jargon-buzzword-detector",
+  "adverb-highlighter",
+  "passive-voice-checker",
+  "repeated-word-finder",
+  "plain-language-checker",
+  "headline-generator"
+ ],
+ "keywords": [
+  "cliche detector",
+  "overused phrases checker",
+  "cliche finder",
+  "find cliches in writing"
+ ]
+}

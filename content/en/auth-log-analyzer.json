@@ -1,0 +1,44 @@
+{
+ "id": "auth-log-analyzer",
+ "seoTitle": "auth.log and fail2ban Analyzer: Failed SSH Logins",
+ "metaDescription": "Summarise auth.log and fail2ban.log: failed and invalid SSH logins by IP and user, accepted logins, bans and sudo commands. Free.",
+ "intro": "Counts failed and accepted SSH logins, fail2ban bans and sudo commands from pasted logs.",
+ "why": "After a server is online for a day the auth log fills with failed logins. A summary shows the busiest IPs, the user names tried and whether any login succeeded from an unexpected address.\n\nPatterns follow OpenSSH, sudo and fail2ban wording. Wording varies a little by version and distribution, so some lines may be ignored.",
+ "howTo": [
+  "Paste /var/log/auth.log (or secure) and fail2ban.log.",
+  "Set how many rows to show.",
+  "Read failed logins by IP and user.",
+  "Check accepted logins and sudo commands."
+ ],
+ "faq": [
+  {
+   "q": "Does it ban IPs?",
+   "a": "No. It only reads text."
+  },
+  {
+   "q": "Why are bans missing?",
+   "a": "Include fail2ban.log. Bans are logged there, not in auth.log."
+  },
+  {
+   "q": "Are the results complete?",
+   "a": "Only lines matching known patterns are counted."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "brute-force-scan-detector",
+  "syslog-parser",
+  "ssh-config-builder",
+  "firewall-log-parser",
+  "ssh-key-fingerprint",
+  "log-privacy-workbench"
+ ],
+ "keywords": [
+  "auth log analyzer",
+  "ssh failed login summary",
+  "fail2ban log analysis"
+ ]
+}

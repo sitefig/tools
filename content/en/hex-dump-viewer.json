@@ -1,0 +1,45 @@
+{
+ "id": "hex-dump-viewer",
+ "seoTitle": "Free Hex Dump Viewer: hexdump -C Style Output",
+ "metaDescription": "See text or pasted hex bytes as a classic hexdump -C view with offsets, hex columns and an ASCII panel. Free, runs in your browser.",
+ "intro": "Paste text or hex bytes and get a hexdump -C style listing with the offset, bytes in hexadecimal and a printable ASCII column for each row.",
+ "why": "When a file or a string misbehaves, looking at the real bytes often settles it: a byte order mark at the start, a carriage return before a line feed, a non-breaking space that looks like a normal one, or a character that took three bytes instead of one. A hex dump makes these differences visible.\n\nThis viewer encodes your text as UTF-8 and prints rows of 16 bytes by default, split into two groups of eight, with a final offset giving the total length. You can also paste hex bytes from a log or a packet capture to get the same layout. It does not read files from disk, so for a file, copy its bytes as hex first.",
+ "howTo": [
+  "Paste text, or choose hex and paste byte values.",
+  "Set the number of bytes per row, between 4 and 64.",
+  "Read the offsets, hex columns and ASCII panel in the output."
+ ],
+ "faq": [
+  {
+   "q": "How is text turned into bytes?",
+   "a": "As UTF-8. Plain ASCII uses one byte per character, accented letters use two, and the euro sign uses three, so the dump shows the true size of your string."
+  },
+  {
+   "q": "What input formats work for hex?",
+   "a": "Pairs of hex digits, optionally with spaces, colons, commas, 0x prefixes or a leading 0x. The number of digits must be even or the tool reports an error."
+  },
+  {
+   "q": "What do the dots in the ASCII panel mean?",
+   "a": "Bytes that are not printable ASCII, such as control characters and parts of multibyte letters, are shown as a dot, exactly as hexdump does."
+  },
+  {
+   "q": "Can I open a file directly?",
+   "a": "No. This tool takes text or hex pasted into the box. It is meant for small samples, not large binary files."
+  }
+ ],
+ "related": [
+  "hex-text",
+  "utf8-bytes-viewer",
+  "binary-text",
+  "hex-to-base64",
+  "string-length-bytes",
+  "char-info"
+ ],
+ "keywords": [
+  "hex dump viewer",
+  "hexdump online",
+  "hex viewer text to hex dump",
+  "free hexdump -C tool",
+  "view bytes of a string"
+ ]
+}

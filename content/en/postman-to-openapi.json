@@ -1,0 +1,43 @@
+{
+ "id": "postman-to-openapi",
+ "seoTitle": "Free Postman Collection to OpenAPI Converter",
+ "metaDescription": "Convert a Postman Collection v2 JSON file into an OpenAPI 3.0.3 document as YAML or JSON. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Paste a Postman Collection (v2.0 or v2.1) and get an OpenAPI 3.0.3 document in YAML or JSON, with tags, parameters, request bodies, example responses and security schemes filled in.",
+ "why": "Teams often document an API as a Postman collection because that is where the requests were first built. Later a client generator, a gateway or a documentation site asks for an OpenAPI file, and nobody wants to write one from scratch for fifty endpoints.\n\nThis converter produces a first draft from the collection you already have. Folders become tags, path variables and query parameters are listed, bodies become schemas inferred from your examples, and saved responses become examples. Because schemas are guessed from sample data, required fields and exact types need a human check. The collection may contain internal URLs and tokens, so it is useful that nothing leaves your browser.",
+ "howTo": [
+  "Paste your Postman Collection JSON into the input box.",
+  "Choose YAML or JSON as the output format.",
+  "Read the generated OpenAPI document and check paths, parameters and security schemes.",
+  "Copy it into your spec file, then review required fields and types before publishing."
+ ],
+ "faq": [
+  {
+   "q": "How accurate are the generated schemas?",
+   "a": "They are inferred from the example values in your requests and responses, so a field that was empty in one example may get the wrong type. Review required fields, enums and formats before you trust the spec."
+  },
+  {
+   "q": "What happens to Postman variables?",
+   "a": "Variables in curly braces and colon-style path parameters become OpenAPI path parameters. The base URL is not turned into a server entry for you in every case, so check the servers section."
+  },
+  {
+   "q": "Which authentication types are converted?",
+   "a": "Bearer, basic and API key auth are turned into security schemes. Other Postman auth types, such as OAuth flows or AWS signatures, are not converted and need to be described by hand."
+  }
+ ],
+ "related": [
+  "openapi-to-postman",
+  "openapi-validator",
+  "openapi-to-typescript-fetch",
+  "postman-to-curl",
+  "json-schema-generator",
+  "yaml-to-json"
+ ],
+ "keywords": [
+  "postman to openapi",
+  "convert postman collection to openapi",
+  "postman collection to swagger",
+  "postman to openapi 3 online",
+  "generate openapi from postman",
+  "free postman converter"
+ ]
+}

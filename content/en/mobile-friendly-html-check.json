@@ -1,0 +1,37 @@
+{
+ "id": "mobile-friendly-html-check",
+ "seoTitle": "Mobile-Friendly HTML Check: Viewport, Zoom, Fixed Widths",
+ "metaDescription": "Static mobile checks on pasted HTML: viewport meta, zoom blocking, fixed pixel widths, tiny fonts, media queries, wide tables and images, plugins, tap targets.",
+ "intro": "Run static mobile-friendliness checks on page HTML without rendering it.",
+ "why": "Google retired its Mobile-Friendly Test, but the common causes of bad mobile pages are still easy to spot in the source: no viewport meta tag, user-scalable=no or a low maximum-scale (which blocks zoom), fixed pixel widths over 480, fonts under 12px, tables and images wider than a phone, Flash or embed content, tiny tap targets and no media queries.\n\nThis tool reads the HTML and inline CSS you paste. It cannot see external stylesheets or the rendered layout, so a pass here is not proof; confirm with Lighthouse or Chrome DevTools device mode. It is deliberately a checklist, not a score.",
+ "howTo": [
+  "Paste the page HTML (include inline styles if possible).",
+  "Run the check.",
+  "Fix FAIL items first, then WARN items."
+ ],
+ "faq": [
+  {
+   "q": "Why was the Google test retired?",
+   "a": "Google removed the Mobile-Friendly Test and report in 2023; Lighthouse and PageSpeed Insights cover similar checks."
+  },
+  {
+   "q": "Does it render the page?",
+   "a": "No. It is a static source check."
+  },
+  {
+   "q": "Is user-scalable=no really a problem?",
+   "a": "Yes: it blocks pinch zoom and fails WCAG 1.4.4 for people who need larger text."
+  }
+ ],
+ "related": [
+  "responsive-breakpoint-previewer",
+  "a11y-html-check",
+  "core-web-vitals-grader",
+  "css-media-query-builder"
+ ],
+ "keywords": [
+  "mobile friendly test offline",
+  "viewport meta checker",
+  "static mobile audit"
+ ]
+}

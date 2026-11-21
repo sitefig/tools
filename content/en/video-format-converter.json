@@ -1,0 +1,45 @@
+{
+ "id": "video-format-converter",
+ "seoTitle": "Browser Video Converter: Re-encode to WebM or MP4",
+ "metaDescription": "Convert a video to WebM or MP4 using only your browser. No ffmpeg download, no upload. Honest limits explained: real-time recording, no MOV output.",
+ "intro": "Re-encodes a video to WebM, or to MP4 where your browser can record it, using the built-in media recorder instead of ffmpeg.",
+ "why": "Many converters load a large ffmpeg build or upload your file. This tool uses what the browser already has: it plays your video and records it again with MediaRecorder. That keeps the page tiny and your file private.\n\nThe trade-offs are real. It records in real time, so a 60 second clip takes about a minute and the tab must stay visible. MOV and other containers cannot be written by the browser, and MP4 recording depends on your browser version. Use it when you need a quick WebM or MP4 for the web, not for professional transcoding.",
+ "howTo": [
+  "Choose the video file.",
+  "Pick WebM or MP4. If MP4 is not supported you get a clear message.",
+  "Press Process and wait for the recording to finish.",
+  "Download the converted file."
+ ],
+ "faq": [
+  {
+   "q": "Why is there no MOV or MKV output?",
+   "a": "Browsers can only record the containers they support, which are WebM and, in newer versions, MP4."
+  },
+  {
+   "q": "Will quality match the source?",
+   "a": "Close, but not identical. The video is re-encoded once at a default quality."
+  },
+  {
+   "q": "Why did MP4 fail?",
+   "a": "Your browser does not offer MP4 recording. Chrome and Edge recent versions do. Firefox may not. Use WebM then."
+  },
+  {
+   "q": "Does it keep the audio?",
+   "a": "Yes, it records the audio track together with the picture."
+  }
+ ],
+ "related": [
+  "video-trimmer",
+  "video-compressor",
+  "video-resizer",
+  "video-metadata-inspector",
+  "mp4-box-inspector",
+  "video-muter"
+ ],
+ "keywords": [
+  "convert video to webm",
+  "video converter no upload",
+  "mp4 to webm online",
+  "browser video re-encode"
+ ]
+}

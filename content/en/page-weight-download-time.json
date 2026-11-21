@@ -1,0 +1,43 @@
+{
+ "id": "page-weight-download-time",
+ "seoTitle": "Page Weight Download Time on 3G, 4G and Broadband Connections",
+ "metaDescription": "Estimate how long a page of a given size takes to download on Slow 3G, Slow 4G, Fast 4G and broadband, including connection setup and extra round trips.",
+ "intro": "Estimates download time for a page weight across common connection profiles, adding connection setup and extra sequential round trips.",
+ "why": "A 2 MB page feels fine on office Wi-Fi and painful on a phone. Seeing the same weight on several connections makes the cost concrete.\n\nThe model is size divided by speed plus about three round trips for DNS, TCP and TLS, plus any extra trips you enter. The profiles use the nominal values in Chrome DevTools throttling and Lighthouse. It ignores slow start, parallel connections and caching, so use it for order of magnitude, then measure with real throttling.",
+ "howTo": [
+  "Enter the total transfer size and choose KB or MB.",
+  "Set the number of extra sequential round trips, such as redirects or blocking chains.",
+  "Optionally add your own speed and round-trip time.",
+  "Compare the totals per connection."
+ ],
+ "faq": [
+  {
+   "q": "Where do the speeds come from?",
+   "a": "From the DevTools network presets and Lighthouse desktop settings as found in their source code in October 2026."
+  },
+  {
+   "q": "Is this the load time of my page?",
+   "a": "No. It is the transfer time only. Rendering, scripts and server time come on top."
+  },
+  {
+   "q": "Which size should I enter?",
+   "a": "The transferred (compressed) size from the Network panel or a HAR file, not the uncompressed size."
+  },
+  {
+   "q": "Why add round trips?",
+   "a": "Each blocking step, such as a redirect or a chain of CSS imports, costs at least one round trip."
+  }
+ ],
+ "related": [
+  "app-performance-budget-calculator",
+  "har-performance-analyzer",
+  "compression-size-estimator",
+  "core-web-vitals-grader",
+  "lighthouse-report-viewer"
+ ],
+ "keywords": [
+  "page weight download time",
+  "how long to download page on 3g",
+  "page size 4g load time"
+ ]
+}

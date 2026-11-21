@@ -1,0 +1,45 @@
+{
+ "id": "bot-response-time-report",
+ "seoTitle": "Crawler Response Time Report: Slow Sections and URLs",
+ "metaDescription": "Show how long your server took to answer crawlers per section, with median, 95th percentile and the slowest URLs. Free, local analysis.",
+ "intro": "Summarises response times for bot requests by folder or URL template and lists the slowest URLs.",
+ "why": "Slow answers make crawlers visit less. Looking at crawler response times by section shows which templates are slow, and it often differs from what a page speed test says because bots hit different URLs than visitors do.\n\nThe tool needs a response time at the end of each log line, such as nginx $request_time in seconds or Apache %D in microseconds. Pick the unit that matches your log. If another number is last on your lines, the result will be wrong.",
+ "howTo": [
+  "Add a response time to your log format if it is not there yet.",
+  "Paste log lines and pick the unit of the last number.",
+  "Choose how to group URLs and what counts as slow.",
+  "Open the slowest sections and URLs and look for slow queries or uncached pages."
+ ],
+ "faq": [
+  {
+   "q": "My log has no response time.",
+   "a": "In nginx add $request_time to the log format. In Apache use %D for microseconds or %T for seconds."
+  },
+  {
+   "q": "What is the 95th percentile?",
+   "a": "The time that 95 percent of requests were faster than. It shows slow tails that averages hide."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  },
+  {
+   "q": "Which log format does it read?",
+   "a": "Apache and nginx combined format: IP, time in brackets, the quoted request, status, bytes, then the quoted referrer and user agent. Lines in another format are skipped and counted."
+  }
+ ],
+ "related": [
+  "googlebot-crawl-budget-analyzer",
+  "uptime-log-analyzer",
+  "nginx-rate-limit-calculator",
+  "crawl-delay-calculator",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer"
+ ],
+ "keywords": [
+  "bot response time report",
+  "googlebot server response time logs",
+  "slow pages for crawlers",
+  "request_time crawl analysis"
+ ]
+}

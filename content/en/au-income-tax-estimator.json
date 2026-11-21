@@ -1,0 +1,38 @@
+{
+ "id": "au-income-tax-estimator",
+ "seoTitle": "Australian Income Tax Estimator 2024-25 to 2026-27",
+ "metaDescription": "Estimate Australian tax and Medicare levy for residents, foreign residents and working holiday makers, with bracket breakdown, take-home pay and super.",
+ "intro": "Estimate Australian income tax, Medicare levy, take-home pay and employer super from taxable income.",
+ "why": "Enter a taxable income and pick the financial year and tax status to see tax by bracket, the 2% Medicare levy, total tax, average and marginal rate, take-home pay per month and fortnight, and the employer super guarantee. Brackets are built in and printed with the result so you can check them: resident rates (16% rising to 30%, 37% and 45%, with the 16% rate falling to 15% in 2026-27), foreign resident rates and working holiday maker rates.\n\nThis is an estimate. It leaves out tax offsets such as LITO, low-income Medicare reductions, the Medicare levy surcharge, HELP repayments and deductions. Rates change: confirm at ato.gov.au. It is not tax advice.",
+ "howTo": [
+  "Enter taxable income (several lines compare scenarios).",
+  "Choose year and tax status.",
+  "Read tax, take-home and the bracket table."
+ ],
+ "faq": [
+  {
+   "q": "Which income do I enter?",
+   "a": "Taxable income: assessable income minus deductions, before tax."
+  },
+  {
+   "q": "Are offsets included?",
+   "a": "No. LITO and other offsets reduce the real tax for some taxpayers."
+  },
+  {
+   "q": "Where are the rates from?",
+   "a": "The ATO published resident, foreign resident and working holiday maker rates; check ato.gov.au for updates."
+  }
+ ],
+ "related": [
+  "wfh-deduction-calculator",
+  "gst-bas-calculator",
+  "salary-hourly",
+  "vat-calculator",
+  "compound-interest"
+ ],
+ "keywords": [
+  "australia tax calculator",
+  "ato income tax estimator",
+  "take home pay australia"
+ ]
+}

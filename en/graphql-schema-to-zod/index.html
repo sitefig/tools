@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free GraphQL Schema to Zod Converter Online | Free Tools</title>
+<meta name="description" content="Convert GraphQL SDL types, inputs, enums and unions into Zod schemas with nullable and optional handling. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/graphql-schema-to-zod/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/graphql-schema-to-zod/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/graphql-schema-to-zod/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free GraphQL Schema to Zod Converter Online | Free Tools">
+<meta property="og:description" content="Convert GraphQL SDL types, inputs, enums and unions into Zod schemas with nullable and optional handling. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/graphql-schema-to-zod/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free GraphQL Schema to Zod Converter Online | Free Tools">
+<meta name="twitter:description" content="Convert GraphQL SDL types, inputs, enums and unions into Zod schemas with nullable and optional handling. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"GraphQL Schema to Zod","url":"https://tools.sitefig.net/en/graphql-schema-to-zod/","description":"Convert GraphQL SDL types, inputs, enums and unions into Zod schemas with nullable and optional handling. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your GraphQL SDL into the input box.","Tick \"Include Query / Mutation / Subscription\" only if you need those roots.","Copy the Zod module and refine custom scalars such as dates."],"keywords":"graphql to zod, graphql schema to zod schema, convert graphql sdl to zod, free zod generator from graphql, zod validation from graphql types","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Schema Converters","item":"https://tools.sitefig.net/en/#schema-converters"},{"@type":"ListItem","position":3,"name":"GraphQL Schema to Zod","item":"https://tools.sitefig.net/en/graphql-schema-to-zod/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How are nullable and optional fields marked?","acceptedAnswer":{"@type":"Answer","text":"Nullable fields get .nullable() or .optional() depending on how the type is used, and fields marked non-null are required. Lists become z.array, so each element is validated as well."}},{"@type":"Question","name":"How are recursive types handled?","acceptedAnswer":{"@type":"Answer","text":"Types that refer to themselves, directly or through others, use z.lazy so Zod can build the schema without a reference error."}},{"@type":"Question","name":"What happens to custom scalars?","acceptedAnswer":{"@type":"Answer","text":"They become z.string(). Replace them with a more precise validator, for example a date or JSON schema, where the data needs it."}},{"@type":"Question","name":"Does it generate TypeScript types too?","acceptedAnswer":{"@type":"Answer","text":"It outputs the Zod schemas. Use z.infer in your code, or the GraphQL to TypeScript tool on this site if you want plain interfaces."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#schema-converters">Schema Converters</a></li><li><span aria-current="page">GraphQL Schema to Zod</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>GraphQL Schema to Zod</h1>
+<p class="lede">Converts GraphQL SDL types, inputs, enums and unions into Zod schemas, with .nullable() and .optional() applied, lists as z.array and recursive types wrapped in z.lazy.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="graphql-schema-to-zod" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>GraphQL checks types on the server, but data coming out of a client, a form or a webhook is not covered by that. Zod lets you validate those values in TypeScript, and your GraphQL schema already describes the shapes. Rather than writing every z.object twice, paste the SDL and get matching schemas. Enums become z.enum, unions become z.union, lists become z.array, nullable fields get .nullable() and recursive types use z.lazy so they do not fail on circular references. Custom scalars become z.string(), which you can edit to something stricter. Operation roots are skipped unless you include them. Your schema is processed in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your GraphQL SDL into the input box.</li><li>Tick &quot;Include Query / Mutation / Subscription&quot; only if you need those roots.</li><li>Copy the Zod module and refine custom scalars such as dates.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How are nullable and optional fields marked?</summary><p>Nullable fields get .nullable() or .optional() depending on how the type is used, and fields marked non-null are required. Lists become z.array, so each element is validated as well.</p></details>
+<details><summary>How are recursive types handled?</summary><p>Types that refer to themselves, directly or through others, use z.lazy so Zod can build the schema without a reference error.</p></details>
+<details><summary>What happens to custom scalars?</summary><p>They become z.string(). Replace them with a more precise validator, for example a date or JSON schema, where the data needs it.</p></details>
+<details><summary>Does it generate TypeScript types too?</summary><p>It outputs the Zod schemas. Use z.infer in your code, or the GraphQL to TypeScript tool on this site if you want plain interfaces.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/graphql-to-typescript/"><span class="link-card__title">GraphQL Schema to TypeScript</span><span class="link-card__desc">Convert GraphQL SDL (type, input, interface, enum, union, scalar, descriptions) into TypeScript interfaces and types. Interface fields are inlined into implementing types; nullable output fields become &quot;T | null&quot;, nullable input fields become optional. Query/Mutation root types are skipped unless enabled; field arguments are ignored.</span></a></li><li><a class="link-card" href="/en/typescript-interface-to-zod/"><span class="link-card__title">TypeScript Interface to Zod Schema</span><span class="link-card__desc">Convert TypeScript interfaces, type aliases and enums into Zod schemas (z.object, z.enum, z.union, z.tuple, z.record, optional/nullable, descriptions from JSDoc) plus inferred types. Same TypeScript subset as the TypeScript to JSON Schema tool.</span></a></li><li><a class="link-card" href="/en/json-schema-to-zod/"><span class="link-card__title">JSON Schema to Zod</span><span class="link-card__desc">Turn a JSON Schema (draft-07 / 2020-12 subset: types, formats, bounds, enum/const, anyOf/oneOf/allOf, $ref to $defs) into Zod source code.</span></a></li><li><a class="link-card" href="/en/zod-to-typescript-type/"><span class="link-card__title">Zod Schema to TypeScript Type</span><span class="link-card__desc">Statically convert Zod schema source (z.object, z.string().min(), z.enum, z.union, z.array, z.record, optional/nullable/nullish, extend/merge, describe) into the equivalent TypeScript types, i.e. what z.infer would produce. The code is parsed, never executed. .transform() outputs and custom refinements are not inferable.</span></a></li><li><a class="link-card" href="/en/json-to-graphql-schema/"><span class="link-card__title">JSON to GraphQL Schema (SDL)</span><span class="link-card__desc">Infer GraphQL type definitions from a JSON sample: nested objects become types, arrays become lists, keys missing or null in some array items become nullable, &quot;id&quot; becomes ID, integers vs floats are told apart.</span></a></li><li><a class="link-card" href="/en/json-to-zod/"><span class="link-card__title">JSON to Zod Schema</span><span class="link-card__desc">Generate a Zod schema (and inferred type) from a JSON sample.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

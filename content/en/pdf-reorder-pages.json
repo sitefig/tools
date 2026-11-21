@@ -1,0 +1,46 @@
+{
+ "id": "pdf-reorder-pages",
+ "seoTitle": "Free Reorder PDF Pages - Rearrange Online",
+ "metaDescription": "Rearrange PDF pages with an order list like 3,1,2,4-6. Repeat pages, reverse runs and drop the rest. Free, in your browser, nothing uploaded.",
+ "intro": "Type the new page order, for example 3,1,2,4-6, and download a PDF with the pages arranged that way.",
+ "why": "Scans often come out in the wrong order: pages fed upside down, double-sided sheets read front then back, or an appendix that belongs after page two. Fixing that in a heavy editor with drag and drop is slow for long documents, and uploading the file to a website is not an option for private papers.\n\nThis tool uses a simple list instead. Write the page numbers in the order you want them. Ranges are allowed, so 4-6 means four, five, six, and a reversed range like 6-4 gives six, five, four. A page may be repeated, and any page you leave out is dropped, so the output can also be a subset. For a plain reversal of the whole file use the Reverse tool. Pages are not re-rendered, encrypted files are refused, and bookmarks and form fields are not kept.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Type the new order, for example 2,1,3- to swap the first two pages and keep the rest.",
+  "Run the tool.",
+  "Check the page count and download the new PDF."
+ ],
+ "faq": [
+  {
+   "q": "What happens to pages I do not list?",
+   "a": "They are left out of the new file. Make sure the list includes every page you want to keep. For example 2,1,3- keeps page 3 onwards, but 2,1 would drop the rest."
+  },
+  {
+   "q": "Can I repeat a page?",
+   "a": "Yes. Listing a page twice, such as 1,1,2, puts it in the output twice. That is handy for duplicated cover sheets or forms."
+  },
+  {
+   "q": "How do I reverse a block of pages?",
+   "a": "Write the range backwards: 6-4 outputs 6, 5, 4. You can combine this with other items, for instance 1-3,6-4,7-."
+  },
+  {
+   "q": "Is there a faster way to reverse everything?",
+   "a": "Yes, the Reverse PDF Page Order tool flips the whole document in one step, without needing to type any page numbers."
+  }
+ ],
+ "related": [
+  "pdf-reverse",
+  "pdf-extract-pages",
+  "pdf-delete-pages",
+  "pdf-rotate",
+  "pdf-merge",
+  "pdf-split"
+ ],
+ "keywords": [
+  "reorder pdf pages",
+  "rearrange pdf pages online",
+  "change page order pdf",
+  "move pages in pdf",
+  "free pdf page organiser"
+ ]
+}

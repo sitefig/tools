@@ -1,0 +1,47 @@
+{
+ "id": "cloudflare-wrangler-builder",
+ "seoTitle": "Free Cloudflare wrangler.toml Builder Online",
+ "metaDescription": "Free online wrangler.toml builder for Cloudflare Workers. Add KV, R2, D1, Durable Objects, queues, AI, cron triggers, routes, vars and assets.",
+ "intro": "Generate a wrangler.toml for a Cloudflare Worker with compatibility date and flags, routes, vars, KV, R2, D1, Durable Object, queue and AI bindings, cron triggers and static assets.",
+ "why": "A Worker is configured through wrangler.toml, and each binding type has its own table with slightly different field names: binding, bucket_name, database_id, class_name. Copying from documentation and editing ids leads to typos that only show up at deploy time.\n\nList your bindings one per line in a compact form, such as kv:CACHE:namespace-id, r2:UPLOADS:bucket, d1:DB:name:id, do:COUNTER:Counter, queue:JOBS:queue-name, ai:AI, var:KEY=value and cron:*/15 * * * *. The tool writes the correct tables, sets the compatibility date, adds the nodejs_compat flag and observability if you ask, and creates the migration entry that Durable Objects need. Placeholder ids must be replaced with your real ones. Nothing is uploaded.",
+ "howTo": [
+  "Enter the Worker name, entry point and compatibility date.",
+  "Choose options such as nodejs_compat and observability, and a route pattern with its zone if needed.",
+  "List bindings one per line using the kv, r2, d1, do, queue, ai, var and cron forms.",
+  "Copy the TOML into wrangler.toml and replace example ids with real ones."
+ ],
+ "faq": [
+  {
+   "q": "What format do bindings use?",
+   "a": "Write one binding per line with a type prefix: kv:BINDING:id, r2:BINDING:bucket, d1:BINDING:name:id, do:BINDING:ClassName, queue:BINDING:queue, ai:BINDING, var:KEY=value and cron:expression. Lines are checked and unknown prefixes give an error."
+  },
+  {
+   "q": "What is the compatibility date?",
+   "a": "It pins the Workers runtime behaviour to a date so updates do not change your Worker unexpectedly. The field defaults to today's date in the form YYYY-MM-DD and is validated."
+  },
+  {
+   "q": "Do Durable Objects need anything else?",
+   "a": "Yes, a migration. The tool adds a migrations entry for each Durable Object class, so you can deploy, but you must also export the class from your Worker code."
+  },
+  {
+   "q": "Does it create the resources?",
+   "a": "No. It only writes configuration. Create KV namespaces, buckets and databases with wrangler or the dashboard, then put their real ids into the file."
+  }
+ ],
+ "related": [
+  "toml-formatter",
+  "json-to-toml",
+  "github-actions-generator",
+  "cache-control-builder",
+  "package-json-generator",
+  "tsconfig-generator"
+ ],
+ "keywords": [
+  "wrangler toml generator",
+  "cloudflare workers config builder",
+  "wrangler.toml builder online",
+  "free wrangler config tool",
+  "cloudflare d1 kv r2 binding config",
+  "workers cron trigger config"
+ ]
+}

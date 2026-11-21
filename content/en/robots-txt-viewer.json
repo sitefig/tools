@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-viewer",
+ "seoTitle": "robots.txt Viewer: Plain-English Summary per Crawler",
+ "metaDescription": "Paste a robots.txt and read what each crawler may not fetch, the Allow exceptions, sitemaps and ignored lines. Free, runs in your browser.",
+ "intro": "Turns a robots.txt into a readable summary: one block per group, with what it blocks, its exceptions and any other directives.",
+ "why": "Real robots.txt files grow long, with several groups, shared user-agent lines and comments. It is hard to see at a glance who is blocked from what.\n\nThe viewer lists each group, the crawlers it applies to, whether it blocks the whole site, the Disallow patterns and the Allow exceptions. Lines crawlers would ignore are listed too. A web page cannot fetch other sites' files, so you paste the text.",
+ "howTo": [
+  "Open the robots.txt in your browser and copy it.",
+  "Paste it here.",
+  "Read each group and its blocked patterns.",
+  "Use the validator or tester for deeper checks."
+ ],
+ "faq": [
+  {
+   "q": "Can it load a live robots.txt from a domain?",
+   "a": "No. Cross-site fetching needs a network request or a server, which this site avoids. Paste the text."
+  },
+  {
+   "q": "Does it show Crawl-delay?",
+   "a": "Yes, under Other for the group where it appears. Google ignores it."
+  },
+  {
+   "q": "What about groups with several User-agent lines?",
+   "a": "They are shown as one group with all names listed, as crawlers read them."
+  },
+  {
+   "q": "Are comments shown?",
+   "a": "Only a count. They do not affect crawling."
+  }
+ ],
+ "related": [
+  "robots-txt-validator",
+  "robots-tester",
+  "robots-group-merger",
+  "robots-txt-to-json",
+  "robots-generator"
+ ],
+ "keywords": [
+  "robots.txt viewer",
+  "read robots.txt",
+  "robots.txt explained",
+  "view robots.txt rules"
+ ]
+}

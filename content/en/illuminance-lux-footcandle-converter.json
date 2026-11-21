@@ -1,0 +1,38 @@
+{
+ "id": "illuminance-lux-footcandle-converter",
+ "seoTitle": "Lux to Foot-Candle Converter with Typical Light Levels",
+ "metaDescription": "Convert lux, foot-candles and phot and compare with typical light levels for homes, offices and daylight. Free.",
+ "intro": "Converts illuminance between lux, foot-candles and phot and lists rough light levels from moonlight to direct sun.",
+ "why": "Light meters and lighting guides use lux in most of the world and foot-candles in the US. One foot-candle is 10.76 lux.\n\nA short list of typical levels helps you judge a reading. They are rough orientation values, not a lighting standard.",
+ "howTo": [
+  "Enter the light level.",
+  "Choose lux, foot-candle or phot.",
+  "Compare the result with the typical levels."
+ ],
+ "faq": [
+  {
+   "q": "How many lux is 50 foot-candles?",
+   "a": "About 538 lux."
+  },
+  {
+   "q": "What lux is right for an office?",
+   "a": "Guides often say 300 to 500 lux for desk work. Check your local standard."
+  },
+  {
+   "q": "Is lux the same as lumens?",
+   "a": "No. Lux is lumens per square metre, so it depends on area."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "power-unit-converter",
+  "color-converter",
+  "wavelength-antenna-calculator",
+  "electricity-cost-calculator",
+  "btu-calculator"
+ ],
+ "keywords": [
+  "lux to foot candles",
+  "footcandle conversion"
+ ]
+}

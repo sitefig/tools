@@ -1,0 +1,46 @@
+{
+  "id": "token-truncate",
+  "seoTitle": "Free Text Truncator and Chunker by Token Count",
+  "metaDescription": "Cut text to at most N tokens or split it into token-sized chunks with overlap, never splitting a UTF-8 character. Free, runs in your browser.",
+  "intro": "Truncates text to a maximum number of tokens, or splits it into chunks of at most N tokens with optional overlap. Cuts fall on token boundaries that keep multi-byte characters whole.",
+  "why": "Models have a context limit, and embedding endpoints reject input that is too long. Cutting by characters is a poor proxy: a thousand characters of English and a thousand of Japanese use very different token counts, so a slice that fits one document overflows the next.\n\nThis tool cuts by real tokens using the OpenAI cl100k_base or o200k_base vocabularies. In truncate mode it keeps the first N tokens. In chunk mode it produces consecutive pieces of at most N tokens, with an overlap you control so context is not lost between pieces. Each boundary is moved back if needed so that no emoji or accented letter is cut in half. The work runs in your browser and the text is not uploaded.",
+  "howTo": [
+    "Paste your text into the input box.",
+    "Choose the encoding and the mode: truncate or chunks.",
+    "Set the maximum tokens N and, for chunks, the overlap in tokens.",
+    "Copy the truncated text or the numbered chunks."
+  ],
+  "faq": [
+    {
+      "q": "How does overlap work?",
+      "a": "Each new chunk starts a few tokens before the previous one ended, so the end of one chunk appears again at the start of the next. The overlap must be smaller than the chunk size or an error is shown."
+    },
+    {
+      "q": "Why is a chunk slightly shorter than N?",
+      "a": "If a cut would fall inside a multi-byte UTF-8 character, the boundary moves back to the nearest safe token. So a chunk can hold fewer than N tokens, and the summary notes it for truncation."
+    },
+    {
+      "q": "Does it split on sentences or paragraphs?",
+      "a": "No. It cuts purely on token counts. For structure-aware splitting, use the text chunk splitter, or the RAG chunking visualiser."
+    },
+    {
+      "q": "Is the token count exact?",
+      "a": "It is exact for the OpenAI encodings listed. Other models tokenise differently, so a chunk that fits cl100k_base may be a bit over or under in another tokenizer."
+    }
+  ],
+  "related": [
+    "text-chunk-splitter",
+    "rag-chunking-visualizer",
+    "gpt-token-counter",
+    "llm-context-window-shrinker",
+    "tiktoken-visualizer",
+    "embedding-token-cost-estimator"
+  ],
+  "keywords": [
+    "truncate text by tokens",
+    "split text into token chunks",
+    "token chunker with overlap",
+    "limit prompt to n tokens",
+    "free rag chunking tool"
+  ]
+}

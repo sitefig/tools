@@ -1,0 +1,45 @@
+{
+  "id": "css-view-transition-generator",
+  "seoTitle": "CSS View Transitions Generator (Same-Document and Cross-Document)",
+  "metaDescription": "Generate CSS and JavaScript for view transitions: cross-fade, slide or scale for page changes, a shared-element morph and reduced-motion handling.",
+  "intro": "Animate page and state changes with the View Transitions API and get the CSS that styles them.",
+  "why": "Choose the page transition effect, duration and an optional shared element name and selector. The output enables cross-document transitions with @view-transition, styles ::view-transition-old/new(root) with matching keyframes, gives the shared element a view-transition-name, switches animations off under prefers-reduced-motion, and includes a small startViewTransition wrapper with a fallback for browsers without the API.\n\nSupport varies (same-document transitions are widespread; cross-document ones are newer), and view-transition-name must be unique on the page at one time.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the effect and duration.",
+    "Name the shared element if you want a morph.",
+    "Copy the CSS and JavaScript.",
+    "Test with reduced motion enabled."
+  ],
+  "faq": [
+    {
+      "q": "What is a shared element transition?",
+      "a": "An element with the same view-transition-name before and after the change morphs between its two positions."
+    },
+    {
+      "q": "Do multi-page sites work?",
+      "a": "Yes in browsers that support cross-document view transitions, with the @view-transition rule."
+    },
+    {
+      "q": "Why must names be unique?",
+      "a": "The browser pairs old and new snapshots by name; duplicates break the transition."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "css-animation-generator",
+    "css-scroll-driven-animation-generator",
+    "css-spring-easing-generator",
+    "css-cubic-bezier",
+    "css-container-query-generator",
+    "code-playground"
+  ],
+  "keywords": [
+    "view transitions api",
+    "css view transition",
+    "page transition css",
+    "shared element transition"
+  ]
+}

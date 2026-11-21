@@ -1,0 +1,46 @@
+{
+ "id": "extract-emails-urls-numbers",
+ "seoTitle": "Free Extractor: Emails, URLs, Numbers and Hashtags",
+ "metaDescription": "Pull email addresses, URLs, numbers or hashtags out of any text and list each type with counts. Free; runs in your browser.",
+ "intro": "Paste any text to extract email addresses, web links, numbers and hashtags into separate lists with counts. Duplicates can be removed.",
+ "why": "You have a long email thread, an export from a CRM, a page of scraped text or meeting notes, and need just the addresses, links or figures. Searching by eye is slow, and copying them one at a time is worse.\n\nThis extractor scans your text with patterns for emails, http and https links or links that start with www, numbers including thousands separators and decimals, and hashtags. Each type is listed under its own heading with a count. Trailing punctuation such as a full stop after a link is trimmed. Unique-only mode removes repeats. Patterns cover common formats and will miss unusual ones. Be mindful of data protection rules when you collect email addresses. Extraction happens in your browser.",
+ "howTo": [
+  "Paste your text into the input box.",
+  "Tick the types to extract: emails, URLs, numbers and hashtags.",
+  "Choose unique only if you do not want repeats.",
+  "Run the tool and copy the lists."
+ ],
+ "faq": [
+  {
+   "q": "How are numbers recognised?",
+   "a": "Integers, decimals, negatives and numbers with thousands commas such as 1,299.50 are matched. Dates and phone numbers contain digits too, so they may appear as several numbers."
+  },
+  {
+   "q": "Does it find links without http?",
+   "a": "It finds links starting with http, https or www. Bare domains such as example.com without a prefix are not detected as URLs."
+  },
+  {
+   "q": "Can I use this to build a mailing list?",
+   "a": "Only if you have a lawful basis to contact those people. Extracting addresses from text does not give you consent to email them, and data protection laws may apply."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "pii-redactor",
+  "url-tracker-stripper",
+  "dedupe-lines",
+  "sort-lines",
+  "list-converter",
+  "regex-tester"
+ ],
+ "keywords": [
+  "extract emails from text",
+  "extract urls from text",
+  "email extractor online",
+  "number extractor",
+  "hashtag extractor free"
+ ]
+}

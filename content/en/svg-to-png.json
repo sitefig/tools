@@ -1,0 +1,46 @@
+{
+  "id": "svg-to-png",
+  "seoTitle": "Free SVG to PNG Converter: Scale, Background, WebP",
+  "metaDescription": "Convert SVG code to PNG, JPEG or WebP at any scale with an optional background colour. Free, runs in your browser and nothing is uploaded.",
+  "intro": "Rasterises pasted SVG code into a PNG, JPEG or WebP image. You set a scale factor and an optional background colour, and the output size is shown.",
+  "why": "Plenty of places do not accept SVG: social media uploads, slide decks, some email clients and app stores. You have the vector logo and need a bitmap at a particular size, with or without a background.\n\nPaste the SVG code, choose a scale, and the tool draws it onto a canvas at that multiple of its natural size, so scale 2 gives a crisp double-resolution image and scale 4 suits print. Leave the background empty for transparency, or give a colour for a solid fill, which JPEG always needs. The output size in pixels is reported. Rasterising happens in your browser with no upload. Features that depend on external files, such as linked images or fonts, may not render.",
+  "howTo": [
+    "Paste your SVG code into the input box.",
+    "Set the scale, for example 2 for double size.",
+    "Enter a background colour, or leave it empty for transparent.",
+    "Choose the format, run it and download the image."
+  ],
+  "faq": [
+    {
+      "q": "How is the output size decided?",
+      "a": "From the width and height on the SVG, or its viewBox if no size is given, multiplied by the scale. The final pixel dimensions are shown after conversion. Scale can range from 0.1 to 20."
+    },
+    {
+      "q": "Why is my image blank or missing fonts?",
+      "a": "SVG images drawn onto a canvas cannot load external resources such as linked images, stylesheets or web fonts. Embed images as data URIs and convert text to outlines if you need them to appear."
+    },
+    {
+      "q": "Will it keep transparency?",
+      "a": "PNG and WebP keep it when the background field is empty. JPEG has no transparency, so use a background colour or you will get a black or white fill depending on the browser."
+    },
+    {
+      "q": "What if I need a specific pixel size?",
+      "a": "Work out the scale from the SVG's natural width, for example 512 divided by 128 is 4. Check the SVG's width attribute or the aspect ratio calculator if you are unsure."
+    }
+  ],
+  "related": [
+    "svg-optimizer",
+    "svg-preview-editor",
+    "image-format-converter",
+    "favicon-generator",
+    "image-resizer",
+    "svg-to-android-vector"
+  ],
+  "keywords": [
+    "svg to png",
+    "convert svg to png online",
+    "svg to jpg converter",
+    "svg to webp",
+    "free svg rasterizer"
+  ]
+}

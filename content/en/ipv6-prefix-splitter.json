@@ -1,0 +1,44 @@
+{
+ "id": "ipv6-prefix-splitter",
+ "seoTitle": "Free IPv6 Prefix Expander, Compressor and Subnet Splitter",
+ "metaDescription": "Expand or compress IPv6 addresses and split a prefix such as /48 into /52 or /64 subnets. Free, runs in your browser, nothing is sent.",
+ "intro": "Expands and compresses IPv6 prefixes (RFC 5952 style), shows the first and last address and the address count, and lists the subnets you get when you split a prefix into a longer one.",
+ "why": "IPv6 plans are usually made by cutting a large prefix into equal pieces: a /48 per site, a /64 per VLAN. Doing that by hand means hex arithmetic on 128-bit numbers, and one slipped digit gives you overlapping ranges.\n\nPaste a prefix, choose the new length and read the list. The tool uses exact integer maths, clears host bits and tells you when it did so. It does not know which prefixes are allocated to you. It only does the arithmetic.",
+ "howTo": [
+  "Paste one IPv6 address or prefix per line.",
+  "Set the split length, for example 64 for a /48 prefix, or 0 to only expand and compress.",
+  "Read the expanded and compressed forms and the list of subnets.",
+  "Raise the list limit if you need more than the first subnets."
+ ],
+ "faq": [
+  {
+   "q": "Why is the list cut off?",
+   "a": "A /32 split into /64 gives four billion subnets. The tool lists only the first ones (you choose how many) and tells you how many remain."
+  },
+  {
+   "q": "What happens to bits after the prefix length?",
+   "a": "They are cleared to zero, and the result says so. 2001:db8::1/64 becomes 2001:db8::/64."
+  },
+  {
+   "q": "Which compressed form is used?",
+   "a": "The longest run of zero groups, at least two groups long, becomes ::, with lowercase hex and no leading zeros, as in RFC 5952."
+  },
+  {
+   "q": "Does it check if the prefix is in use?",
+   "a": "No. It is pure arithmetic and makes no lookups."
+  }
+ ],
+ "related": [
+  "ip-subnet-calculator",
+  "ip-supernetting-calculator",
+  "ip-validator-converter",
+  "vlsm-calculator",
+  "cidr-contains",
+  "ipv4-to-ipv6-mapper"
+ ],
+ "keywords": [
+  "ipv6 subnet calculator",
+  "ipv6 prefix split",
+  "ipv6 compress expand"
+ ]
+}

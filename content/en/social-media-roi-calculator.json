@@ -1,0 +1,41 @@
+{
+ "id": "social-media-roi-calculator",
+ "seoTitle": "Social Media ROI Calculator: ROAS, Cost per Conversion",
+ "metaDescription": "Calculate ROI and ROAS on social ads including tool and labour costs, plus cost per click, per conversion and break-even revenue.",
+ "intro": "Work out the return on social ad spend, including tool and labour costs: ROI, ROAS, cost per click, cost per conversion and break-even revenue.",
+ "why": "Ad platforms report return on ad spend, which ignores the tools, the creative and the hours it took. A campaign can look profitable on ROAS and lose money.\n\nEnter ad spend, tool costs, hours and rate, other costs and the revenue you attribute to the campaign. The tool shows full-cost ROI, ROAS, cost per conversion, cost per click, conversion rate and break-even revenue. Set a margin if revenue is not profit.",
+ "howTo": [
+  "Enter ad spend and the other costs.",
+  "Enter revenue, conversions and clicks.",
+  "Set a margin if revenue is not all profit.",
+  "Read ROI, ROAS and break-even."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between ROI and ROAS?",
+   "a": "ROAS is revenue divided by ad spend. ROI here is profit divided by all costs."
+  },
+  {
+   "q": "What revenue should I enter?",
+   "a": "Revenue you can attribute to the campaign, which is the hard part."
+  },
+  {
+   "q": "Why a margin field?",
+   "a": "ROI on revenue overstates success if the margin is thin."
+  }
+ ],
+ "related": [
+  "roi-calculator",
+  "engagement-rate-calculator",
+  "influencer-rate-estimator",
+  "youtube-earnings-estimator",
+  "discount-calculator",
+  "follower-growth-calculator"
+ ],
+ "keywords": [
+  "social media roi calculator",
+  "roas calculator",
+  "ad spend return",
+  "social ad break even"
+ ]
+}

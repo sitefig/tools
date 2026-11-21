@@ -1,0 +1,44 @@
+{
+ "id": "headless-browser-signal-tester",
+ "seoTitle": "Headless Browser Signal Tester: What Bot Detectors See",
+ "metaDescription": "See which automation signals your own browser exposes, such as navigator.webdriver, HeadlessChrome, missing plugins and software rendering.",
+ "intro": "Reads the signals simple bot detectors check in your browser and says which look automated.",
+ "why": "Bot detection starts with simple checks: does the browser report webdriver, does the user agent say Headless, are there plugins and languages, is there a real window size, what graphics renderer is used.\n\nThe page reads these from your own browser and explains each. A clean result proves nothing: modern automation hides most of these and detectors use many more signals. A flagged result can be a false alarm, for example with privacy extensions or unusual setups. Nothing is sent anywhere.",
+ "howTo": [
+  "Open the page in the browser you want to test.",
+  "Read the table of signals.",
+  "Compare a normal and an automated browser.",
+  "Use it to debug false positives on your site."
+ ],
+ "faq": [
+  {
+   "q": "Is my data sent?",
+   "a": "No. Everything is read locally."
+  },
+  {
+   "q": "Does a clean result mean I look human?",
+   "a": "No. Detectors use timing, behaviour and network signals too."
+  },
+  {
+   "q": "Why does a real browser sometimes flag?",
+   "a": "Privacy extensions, containers and software rendering can trigger signals."
+  },
+  {
+   "q": "Is this for evading detection?",
+   "a": "It shows what is checked; it does not help hide it."
+  }
+ ],
+ "related": [
+  "browser-fingerprint",
+  "antibot-waf-detector",
+  "browser-info",
+  "user-agent-parser",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "headless browser detection",
+  "navigator.webdriver test",
+  "bot detection signals",
+  "puppeteer detection test"
+ ]
+}

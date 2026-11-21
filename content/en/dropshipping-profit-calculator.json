@@ -1,0 +1,37 @@
+{
+ "id": "dropshipping-profit-calculator",
+ "seoTitle": "Dropshipping Profit Calculator With Ads and Refunds",
+ "metaDescription": "Profit per order after supplier cost, shipping, payment fees, ad cost and refunds, plus maximum CPA and break-even ROAS. Free and private.",
+ "intro": "Shows profit per dropshipped order after supplier, shipping, fees, ads and refunds, and how much ad cost you can afford.",
+ "why": "Dropshipping margins are thin, and ad cost is usually the largest line. Knowing the most you can pay for an order, and the return on ad spend you need, turns ad dashboards into a yes or no.\n\nThe model takes payment fees off first, then applies a refund and chargeback rate by treating those orders as lost sales while still paying the supplier. The result is profit before ads, profit after ads, maximum cost per order and break-even ROAS.",
+ "howTo": [
+  "Enter selling price and supplier cost and shipping.",
+  "Add payment fee, ad cost per order, refund rate and other costs.",
+  "Compare ad cost with the break-even maximum."
+ ],
+ "faq": [
+  {
+   "q": "What is break-even ROAS?",
+   "a": "Revenue per ad dollar needed to cover all costs. It is price divided by profit before ads."
+  },
+  {
+   "q": "How are refunds modelled?",
+   "a": "As orders where you get no revenue but still pay the supplier. If your supplier refunds you, lower the rate."
+  },
+  {
+   "q": "Does it include tax?",
+   "a": "No. Use prices without tax."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "break-even",
+  "payment-fee-gross-up-calculator",
+  "average-order-value-calculator"
+ ],
+ "keywords": [
+  "dropshipping profit calculator",
+  "break even roas",
+  "max cpa calculator"
+ ]
+}

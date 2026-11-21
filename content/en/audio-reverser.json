@@ -1,0 +1,45 @@
+{
+ "id": "audio-reverser",
+ "seoTitle": "Audio Reverser: Play Any Sound Backwards",
+ "metaDescription": "Reverse an audio file so it plays backwards, preview it and download the WAV. Free online audio reverser that runs in your browser.",
+ "intro": "Plays an audio clip in reverse and saves the reversed version as a WAV file.",
+ "why": "Reversed sound is a classic effect: reverse cymbals build up to a hit, backward vocals add an eerie layer, and some people reverse speech to hear how it sounds. It is also a quick way to check a loop for clicks, because the seam is easy to hear backwards.\n\nThe tool decodes the file with your browser, flips the samples of every channel and writes a WAV. Nothing is uploaded and no sound quality is lost beyond what the decoder gave.",
+ "howTo": [
+  "Choose an audio file.",
+  "Press Run.",
+  "Play the result in the preview.",
+  "Download the reversed WAV."
+ ],
+ "faq": [
+  {
+   "q": "Does it work with stereo?",
+   "a": "Yes. Both channels are reversed together."
+  },
+  {
+   "q": "Can I reverse only a part?",
+   "a": "Cut the part first with the audio trimmer, reverse it, then join it back with the joiner."
+  },
+  {
+   "q": "Why is the file larger than my MP3?",
+   "a": "The output is uncompressed WAV."
+  },
+  {
+   "q": "Is there a length limit?",
+   "a": "Only your browser memory. Several minutes of audio is fine."
+  }
+ ],
+ "related": [
+  "audio-trimmer",
+  "audio-joiner",
+  "audio-fade-editor",
+  "audio-speed-changer",
+  "audio-to-flac",
+  "pitch-shifter"
+ ],
+ "keywords": [
+  "reverse audio",
+  "play audio backwards",
+  "audio reverser online",
+  "reverse sound effect"
+ ]
+}

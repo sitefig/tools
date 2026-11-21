@@ -1,0 +1,46 @@
+{
+ "id": "uuid-generator",
+ "seoTitle": "Free UUID Generator - v1, v4 and v7 Online",
+ "metaDescription": "Generate up to 1000 UUIDs at once in version 1, 4 or 7, with uppercase, braces, quotes and hyphen options. Free and runs in your browser.",
+ "intro": "Generate version 1, 4 or 7 UUIDs in bulk, up to 1000 at a time, and format them with or without hyphens, braces, quotes or uppercase.",
+ "why": "Developers reach for UUIDs when seeding a database, writing test fixtures, naming files or filling a column that needs a unique key. Opening a REPL or writing a loop for each case gets old, and the surrounding formatting differs by tool: SQL wants quotes, .NET code often wants braces, some systems want no hyphens.\n\nThis generator produces a whole list in one go and applies the format you pick. Version 4 is fully random, version 7 starts with a millisecond timestamp so new IDs sort by creation time and index well, and version 1 is time-based with a random node. Random bytes come from the browser's secure random source, and nothing is sent anywhere.",
+ "howTo": [
+  "Choose a version: v4, v7 or v1.",
+  "Set how many UUIDs you need, from 1 to 1000.",
+  "Tick Uppercase, Hyphens, Braces or Quote each to match the format you need.",
+  "Copy the list from the output."
+ ],
+ "faq": [
+  {
+   "q": "Which UUID version should I use?",
+   "a": "Use v4 when you only need uniqueness. Choose v7 when the IDs are database keys, because the leading timestamp keeps inserts roughly ordered. v1 is mostly for compatibility; it embeds a time but uses a random node ID here."
+  },
+  {
+   "q": "Can two generated UUIDs collide?",
+   "a": "For v4 the chance is negligible in practice, since 122 bits are random. Collisions are far likelier from copying a value twice than from the generator. v7 adds a timestamp but still carries random bits."
+  },
+  {
+   "q": "Are these UUIDs suitable as secrets?",
+   "a": "No. A UUID is an identifier, not a credential. Do not use it as a password or access token; a v7 UUID even reveals its creation time. Use a dedicated random secret generator for that."
+  },
+  {
+   "q": "Is there a MAC address in the v1 output?",
+   "a": "No. Browsers do not expose a MAC address, so the node field is random with the multicast bit set, as the RFC recommends for this situation."
+  }
+ ],
+ "related": [
+  "uuid-v7-timestamp-extractor",
+  "uuid-v5-generator",
+  "ulid-generator",
+  "nanoid-generator",
+  "mongodb-objectid-parser",
+  "random-secret-generator"
+ ],
+ "keywords": [
+  "uuid generator",
+  "generate uuid online",
+  "uuid v4 generator",
+  "uuid v7 generator",
+  "bulk uuid generator free"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "kubernetes-deployment-generator",
+ "seoTitle": "Free Kubernetes Deployment YAML Generator",
+ "metaDescription": "Free online Kubernetes Deployment generator. Create a Deployment with probes, resources and securityContext, plus Service, HPA and Ingress YAML.",
+ "intro": "Generate a Kubernetes Deployment with resource requests, probes and a hardened securityContext, plus an optional Service, HorizontalPodAutoscaler and Ingress, all in one multi-document YAML.",
+ "why": "A production-ready Deployment is far more than image and replicas. It needs resource requests so the scheduler can place pods, readiness and liveness probes so traffic only reaches healthy ones, and a securityContext that drops privileges. Most people start from an old manifest and forget one of these.\n\nFill in the app name, image, ports and limits, and the tool writes the Deployment with consistent labels, environment variables from KEY=VALUE lines, and optional extras: a Service of the type you choose, an autoscaler targeting CPU, and an Ingress for a host. The hardened option runs as non-root with a read-only root filesystem and no extra capabilities, which some images cannot run with. Treat the output as a starting point and review it. Nothing is uploaded.",
+ "howTo": [
+  "Enter the app name, namespace, image, replicas and container port.",
+  "Set CPU and memory requests and limits, and an HTTP probe path if your app has one.",
+  "Choose a Service type and tick HPA or enter an Ingress host if needed.",
+  "Add environment variables as KEY=VALUE lines, then copy the YAML and apply it with kubectl."
+ ],
+ "faq": [
+  {
+   "q": "Will the hardened securityContext work for my image?",
+   "a": "Not always. It runs as non-root with a read-only root filesystem and drops all capabilities. Images that write to their own filesystem or need root will fail, so untick it or add writable volumes."
+  },
+  {
+   "q": "Where do the probes point?",
+   "a": "If you give a probe path, both readiness and liveness use an HTTP GET to that path on the named container port. Leave it blank for no probes."
+  },
+  {
+   "q": "What does the autoscaler do?",
+   "a": "It creates an autoscaling/v2 HorizontalPodAutoscaler for the Deployment, with your replicas as the minimum, your maximum and a CPU utilisation target. It needs CPU requests and a metrics server in the cluster."
+  },
+  {
+   "q": "Is the output ready for production?",
+   "a": "It is a sound starting point, not a final answer. Review image tags, limits, probes, secrets handling and network policies, and validate it with a dry run before applying."
+  }
+ ],
+ "related": [
+  "kubernetes-ingress-generator",
+  "kubernetes-configmap-secret-builder",
+  "k8s-resource-calculator",
+  "k8s-manifest-validator",
+  "helm-chart-scaffolder",
+  "docker-compose-to-k8s"
+ ],
+ "keywords": [
+  "kubernetes deployment generator",
+  "k8s deployment yaml generator",
+  "kubernetes manifest builder",
+  "free kubernetes yaml generator",
+  "deployment hpa ingress yaml",
+  "kubernetes securitycontext generator"
+ ]
+}

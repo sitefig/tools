@@ -1,0 +1,41 @@
+{
+ "id": "pre-consent-request-finder",
+ "seoTitle": "Pre-Consent Request Finder: Trackers Before the Banner (HAR)",
+ "metaDescription": "Paste a HAR recorded before consent and list tracking requests and cookies set before the visitor chose. Free, runs locally.",
+ "intro": "Finds tracker requests and tracking-looking cookies in a HAR file recorded before any consent click, in time order.",
+ "why": "The most common banner failure is simple: tags fire before the visitor has chosen anything. You can see it by recording a HAR on first visit in a clean browser profile and not touching the banner.\n\nThis tool reads that HAR and lists requests to known tracker domains, other third-party requests that send the visitor's IP, and cookies set by responses whose names look like analytics or marketing cookies. It cannot tell when you clicked the banner, so only feed it a HAR where you did not. HAR files can hold secrets, so keep them private.",
+ "howTo": [
+  "Open a private window, open dev tools Network tab, load your site and do not touch the banner.",
+  "Export the HAR and paste its JSON.",
+  "Set the first-party domain if the first request is not on your site.",
+  "Read the lists and fix tags that fire too early."
+ ],
+ "faq": [
+  {
+   "q": "Why are some cookies missing?",
+   "a": "Cookies set by JavaScript (document.cookie) do not appear in a HAR."
+  },
+  {
+   "q": "Is a tag manager request a violation?",
+   "a": "Not by itself. It is shown because it often loads trackers. Check what it loads."
+  },
+  {
+   "q": "Is my HAR uploaded?",
+   "a": "No. It is read in your browser."
+  }
+ ],
+ "related": [
+  "har-analyzer",
+  "consent-banner-checklist",
+  "third-party-domain-classifier",
+  "tracker-detector",
+  "cookie-classifier",
+  "google-consent-mode-snippet"
+ ],
+ "keywords": [
+  "cookies before consent",
+  "trackers before consent",
+  "har consent check",
+  "pre consent tracking"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "discount-calculator",
+ "seoTitle": "Free Discount Calculator with Extra Discount and Tax",
+ "metaDescription": "Find the sale price after one or two stacked discounts, how much you save and the final price with sales tax. Free, private and runs in your browser.",
+ "intro": "Enter the original price and a discount percentage, optionally add a second discount and a sales tax rate. You see the sale price, the saving and the final total.",
+ "why": "Shops love a stacked offer: 25% off, then an extra 10% at the till, then tax on top. The numbers do not simply add up, because the second discount applies to the already reduced price. Before you decide whether a deal is worth it, you need the real total saving and the final price you will pay. This calculator applies each step in order, shows the intermediate prices and reports the overall percentage saved, which is usually lower than the two percentages added together. It is handy for shoppers, for market traders pricing a sale and for anyone checking a quote. Nothing leaves your browser.",
+ "howTo": [
+  "Enter the original price.",
+  "Type the first discount percentage and, if there is one, the extra discount percentage.",
+  "Add a sales tax percentage if you want the tax-inclusive price, then read the final price and the amount saved."
+ ],
+ "faq": [
+  {
+   "q": "Are two discounts added together?",
+   "a": "No. The second discount is applied to the price after the first. Two discounts of 20% and 10% give a total saving of 28%, not 30%. The result shows the true combined percentage."
+  },
+  {
+   "q": "Is tax applied before or after the discount?",
+   "a": "After. The tool reduces the price first, then adds the tax percentage to the discounted price. If your local rules differ, enter 0 for tax and calculate it separately."
+  },
+  {
+   "q": "What does 'Extra discount 0' mean?",
+   "a": "Zero means no second discount, and that line is left out of the result. You can leave it at 0 for a single discount."
+  },
+  {
+   "q": "Which currency does it use?",
+   "a": "None. The numbers are plain figures shown with two decimals, so any currency works. The tool does not fetch exchange rates."
+  }
+ ],
+ "related": [
+  "percentage-calculator",
+  "vat-calculator",
+  "percent-change",
+  "markup-margin",
+  "tip-calculator",
+  "profit-margin"
+ ],
+ "keywords": [
+  "discount calculator",
+  "sale price calculator",
+  "free discount calculator",
+  "double discount calculator",
+  "calculate discount with tax",
+  "percent off calculator"
+ ]
+}

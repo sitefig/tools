@@ -1,0 +1,45 @@
+{
+ "id": "ad-cost-solver",
+ "seoTitle": "CPM, CPC and CPA Calculator: Solve for Any Missing Value",
+ "metaDescription": "Enter any two of spend, units and rate for CPM, CPC or CPA, and the third is solved. Free and private, runs in your browser.",
+ "intro": "Fill two of the three values in a group and the calculator solves for the third.",
+ "why": "Ad costs are three related numbers: spend, units and cost per unit. Often you know two and need the third, for example how many clicks a budget buys at a given CPC.\n\nLeave a field empty to mark it unknown. CTR and click-to-conversion rates are shown when the numbers are present. CPM is cost per 1000 impressions.",
+ "howTo": [
+  "Enter the spend.",
+  "In each group fill the units or the rate, leaving the one you want empty.",
+  "Read the solved values.",
+  "Check for the agreement warning when all three are filled."
+ ],
+ "faq": [
+  {
+   "q": "What is CPM?",
+   "a": "Cost per thousand impressions."
+  },
+  {
+   "q": "Can I solve for spend?",
+   "a": "Yes, leave spend empty and fill units and rate."
+  },
+  {
+   "q": "Why is only one group solved?",
+   "a": "Each group needs two known values."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "ads-roas-calculator",
+  "conversion-rate-calculator",
+  "ab-test-duration-calculator",
+  "serp-ctr-traffic-model",
+  "reach-frequency-calculator",
+  "cac-ltv-calculator"
+ ],
+ "keywords": [
+  "cpm calculator",
+  "cpc calculator",
+  "cpa calculator",
+  "cost per click calculator"
+ ]
+}

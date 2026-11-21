@@ -1,0 +1,45 @@
+{
+ "id": "typescript-to-javascript",
+ "seoTitle": "TypeScript to JavaScript Converter: Strip Types Online",
+ "metaDescription": "Turn TypeScript into plain JavaScript in your browser: removes annotations, interfaces, generics, enums, as, satisfies and parameter properties. Free, offline.",
+ "intro": "Strips TypeScript syntax from a snippet or file and gives you runnable modern JavaScript, with enums expanded and parameter properties turned into assignments. Syntax it cannot convert safely is rejected with a message.",
+ "why": "Often you only need the JavaScript from a TypeScript example to paste it into a console, a script tag or a build that has no TypeScript. A full compiler is heavy for that. This tool is a small token-level transformer written for the task, with no compiler inside it.\n\nIt handles type annotations, interfaces, type aliases, generics on functions, classes and calls, enums and const enums, as and satisfies, non-null assertions, access modifiers, readonly, abstract classes, overloads, declare statements, definite assignment, this parameters, optional parameters, parameter properties and import type forms. It rejects decorators, namespaces, JSX, angle-bracket assertions and import = require, because converting them needs a real compiler. Output follows ES2022 class field semantics, and unused imports are removed by name, not by scope.",
+ "howTo": [
+  "Paste the TypeScript in the box.",
+  "Read the JavaScript result; unsupported syntax shows an error with a line and column.",
+  "Copy the output into your script or module.",
+  "Tick Keep unused imports if you want every import left as written."
+ ],
+ "faq": [
+  {
+   "q": "How accurate is the conversion?",
+   "a": "The syntax tree of the output was compared with the TypeScript 5.6 compiler output on 681 real source files from large libraries and matched on 647. Most differences were namespaces the tool rejects, enum declaration style, and import removal by name instead of scope. 66 small programs also ran with the same output as esbuild."
+  },
+  {
+   "q": "Does it check types?",
+   "a": "No. It only removes type syntax. Errors that TypeScript would report are not reported."
+  },
+  {
+   "q": "How are enums converted?",
+   "a": "Into the usual var plus function pattern with reverse mapping for numbers. Constant initialisers are evaluated; other initialisers are copied."
+  },
+  {
+   "q": "What changes about class fields?",
+   "a": "Fields stay as ES2022 class fields. Parameter properties are declared as fields and assigned in the constructor. If a field initialiser uses this in a class with parameter properties, the tool stops because the order differs between TypeScript targets."
+  }
+ ],
+ "related": [
+  "typescript-formatter",
+  "json-to-typescript",
+  "python-to-typescript",
+  "js-format",
+  "js-minify",
+  "code-comment-stripper"
+ ],
+ "keywords": [
+  "typescript to javascript converter",
+  "strip typescript types",
+  "ts to js online",
+  "remove type annotations"
+ ]
+}

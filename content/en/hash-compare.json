@@ -1,0 +1,47 @@
+{
+ "id": "hash-compare",
+ "seoTitle": "Free Hash Compare Tool to Check Two Checksums",
+ "metaDescription": "Compare two hashes ignoring case, spaces and prefixes, and see the likely algorithm from the length. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Paste two hashes and see whether they match. Case, spaces, colons and prefixes like sha256: are ignored, and the tool guesses the algorithm from the length.",
+ "why": "Comparing two 64-character strings by eye is how mistakes happen. One is lowercase, the other uppercase with spaces from a PDF, and a changed character in the middle is easy to miss. You still need a reliable answer when you verify a download, a backup or a signature.\n\nThis tool cleans both values before comparing: it removes spaces, colons, dashes and prefixes such as 0x or sha256:, and ignores case. The comparison itself examines every character, so the verdict is exact. When the two differ, it reports the lengths and how many positions differ, which tells you whether the value was truncated or altered.",
+ "howTo": [
+  "Paste the first hash, for example the one you calculated, into Hash A.",
+  "Paste the second hash, for example the published one, into Hash B.",
+  "Run the comparison.",
+  "Read the MATCH or DIFFERENT verdict, the lengths and the likely algorithm."
+ ],
+ "faq": [
+  {
+   "q": "Which formatting differences are ignored?",
+   "a": "Upper and lower case, spaces, colons and dashes, and leading prefixes such as 0x, sha256: or sha1=. The remaining hex digits are compared exactly."
+  },
+  {
+   "q": "How does it guess the algorithm?",
+   "a": "By length: 32 hex characters suggests MD5, 40 SHA-1, 64 SHA-256, 96 SHA-384 and 128 SHA-512. Other lengths are reported as unknown. Several algorithms can share a length, so treat this as a hint."
+  },
+  {
+   "q": "What does the differing positions number mean?",
+   "a": "When both hashes have the same length but differ, it counts the positions with different characters. A few differences point to a typing error, while about half of them suggests unrelated data."
+  },
+  {
+   "q": "Can it tell me if a file is genuine?",
+   "a": "No, it only compares two strings. Use File Hash to compute the checksum of your file first, then compare it with the value from a trusted source."
+  }
+ ],
+ "related": [
+  "file-hash",
+  "hash-generator",
+  "hmac-generator",
+  "text-diff",
+  "checksum-crc32-adler32",
+  "sha3-hash-generator"
+ ],
+ "keywords": [
+  "hash compare",
+  "compare two hashes online",
+  "checksum comparison tool",
+  "free hash matcher",
+  "verify sha256 match",
+  "md5 compare"
+ ]
+}

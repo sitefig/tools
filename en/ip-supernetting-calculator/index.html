@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free IP Supernetting and CIDR Aggregation Calculator | Free Tools</title>
+<meta name="description" content="Aggregate IPv4 and IPv6 addresses, CIDR blocks and ranges into the smallest set of prefixes and find the smallest covering supernet. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/ip-supernetting-calculator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/ip-supernetting-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/ip-supernetting-calculator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free IP Supernetting and CIDR Aggregation Calculator | Free Tools">
+<meta property="og:description" content="Aggregate IPv4 and IPv6 addresses, CIDR blocks and ranges into the smallest set of prefixes and find the smallest covering supernet. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/ip-supernetting-calculator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free IP Supernetting and CIDR Aggregation Calculator | Free Tools">
+<meta name="twitter:description" content="Aggregate IPv4 and IPv6 addresses, CIDR blocks and ranges into the smallest set of prefixes and find the smallest covering supernet. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"IP Supernetting (CIDR Aggregation)","url":"https://tools.sitefig.net/en/ip-supernetting-calculator/","description":"Aggregate IPv4 and IPv6 addresses, CIDR blocks and ranges into the smallest set of prefixes and find the smallest covering supernet. Free.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter addresses, CIDR blocks or ranges written as a-b, one per line.","Read the minimal list of CIDR prefixes that covers exactly the same addresses.","Check the smallest single supernet and the wasted address space it implies.","Copy the aggregated list into your firewall, route table or allow-list."],"keywords":"ip supernet calculator, cidr aggregation tool, merge cidr blocks, summarize ip ranges, route summarization calculator, free cidr merge tool","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Network & HTTP","item":"https://tools.sitefig.net/en/#network-and-http"},{"@type":"ListItem","position":3,"name":"IP Supernetting (CIDR Aggregation)","item":"https://tools.sitefig.net/en/ip-supernetting-calculator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does aggregation change what is matched?","acceptedAnswer":{"@type":"Answer","text":"The minimal prefix list covers exactly the same addresses as your input, no more and no less. The single supernet is different: it can include extra addresses, and the tool shows how many."}},{"@type":"Question","name":"Can I mix IPv4 and IPv6?","acceptedAnswer":{"@type":"Answer","text":"Yes. The two families are aggregated separately because they cannot be merged. You will see one result list for IPv4 and another for IPv6."}},{"@type":"Question","name":"What if my ranges do not align to prefixes?","acceptedAnswer":{"@type":"Answer","text":"A range such as 10.0.0.5 to 10.0.0.20 does not match a single prefix, so it is split into several smaller blocks. The tool produces the smallest set that covers the range exactly."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#network-and-http">Network &amp; HTTP</a></li><li><span aria-current="page">IP Supernetting (CIDR Aggregation)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>IP Supernetting (CIDR Aggregation)</h1>
+<p class="lede">Enter IPv4 or IPv6 addresses, CIDR blocks or ranges and get the smallest set of CIDR prefixes that covers them, plus the single smallest supernet and how much extra address space it wastes.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="ip-supernetting-calculator" data-module="devz3"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Firewall rules, route tables and allow-lists grow into long lists of adjacent blocks. Merging 10.0.0.0/24 and 10.0.1.0/24 into one /23 is easy, but doing it across dozens of entries, mixed with single addresses and ranges, is error-prone. A wrong merge opens up more address space than intended.</p>
+<p>This calculator merges overlapping and adjacent entries into the minimal list of prefixes, so you can shorten a rule set without changing what it matches. It also reports the one smallest supernet that contains everything and how many addresses it adds beyond your list, which helps you decide whether a single summary route is acceptable. The calculation runs in your browser and nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter addresses, CIDR blocks or ranges written as a-b, one per line.</li><li>Read the minimal list of CIDR prefixes that covers exactly the same addresses.</li><li>Check the smallest single supernet and the wasted address space it implies.</li><li>Copy the aggregated list into your firewall, route table or allow-list.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does aggregation change what is matched?</summary><p>The minimal prefix list covers exactly the same addresses as your input, no more and no less. The single supernet is different: it can include extra addresses, and the tool shows how many.</p></details>
+<details><summary>Can I mix IPv4 and IPv6?</summary><p>Yes. The two families are aggregated separately because they cannot be merged. You will see one result list for IPv4 and another for IPv6.</p></details>
+<details><summary>What if my ranges do not align to prefixes?</summary><p>A range such as 10.0.0.5 to 10.0.0.20 does not match a single prefix, so it is split into several smaller blocks. The tool produces the smallest set that covers the range exactly.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/ip-subnet-calculator/"><span class="link-card__title">IP Subnet Calculator</span><span class="link-card__desc">IPv4 CIDR/netmask details (range, broadcast, wildcard, hosts) and IPv6 prefix ranges.</span></a></li><li><a class="link-card" href="/en/cidr-contains/"><span class="link-card__title">CIDR Contains IP Check</span><span class="link-card__desc">Check which CIDR ranges contain each IP address (IPv4 and IPv6).</span></a></li><li><a class="link-card" href="/en/ip-validator-converter/"><span class="link-card__title">IP Validator &amp; Converter</span><span class="link-card__desc">Validate IPv4/IPv6 and convert between dotted, integer, hex and binary forms.</span></a></li><li><a class="link-card" href="/en/mac-address-generator/"><span class="link-card__title">MAC Address Generator</span><span class="link-card__desc">Generate random MAC addresses (cryptographically random) as unicast/multicast, globally- or locally-administered, optionally with your own OUI prefix, in colon, dash, Cisco-dot or plain format.</span></a></li><li><a class="link-card" href="/en/port-reference/"><span class="link-card__title">Common Ports Reference</span><span class="link-card__desc">Well-known TCP/UDP port numbers and their services.</span></a></li><li><a class="link-card" href="/en/dns-spf-record-flattener/"><span class="link-card__title">SPF Record Flattener (offline)</span><span class="link-card__desc">Flatten an SPF record by inlining include:/redirect= records that you paste (lines &quot;domain: v=spf1 ...&quot;), de-duplicating ip4/ip6, counting DNS lookups against the limit of 10, and splitting long TXT strings. The tool never queries DNS: resolve each include yourself (dig +short TXT domain).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+ "id": "email-deliverability-checklist",
+ "seoTitle": "Email Deliverability Checklist: SPF, DKIM, DMARC, List Hygiene",
+ "metaDescription": "A tick-off checklist for email authentication, list hygiene, sending practice and content. Progress is saved in your browser only. Free.",
+ "intro": "Work through authentication, list hygiene, sending practice and content items, with progress saved in this browser.",
+ "why": "Inbox placement depends on many small things done right: authentication records, a clean consented list, steady volume and honest content. A checklist makes gaps visible before a campaign instead of after.\n\nIt is a starting list, not a guarantee. Mailbox providers change requirements, so check current Google and Yahoo sender rules. The complaint-rate item reflects Google's guideline of staying below 0.1% and never reaching 0.3%. Progress is stored in your browser and not sent anywhere.",
+ "howTo": [
+  "Tick the items you have done.",
+  "Follow up on the unticked ones, starting with authentication.",
+  "Use the record analysers to check SPF, DKIM and DMARC.",
+  "Come back before large campaigns."
+ ],
+ "faq": [
+  {
+   "q": "Is my progress saved?",
+   "a": "Yes, in this browser only, using local storage."
+  },
+  {
+   "q": "Is this enough for inbox placement?",
+   "a": "No. It lowers risk but cannot guarantee delivery."
+  },
+  {
+   "q": "Where is the one-click unsubscribe rule from?",
+   "a": "Google and Yahoo ask bulk senders for it. Check their current pages."
+  },
+  {
+   "q": "How do I reset?",
+   "a": "Press Reset all."
+  }
+ ],
+ "related": [
+  "dmarc-record-analyzer",
+  "spf-record-generator",
+  "dkim-record-analyzer",
+  "email-header-analyzer",
+  "spam-trigger-word-checker",
+  "gdpr-checklist"
+ ],
+ "keywords": [
+  "email deliverability checklist",
+  "spf dkim dmarc checklist",
+  "inbox placement checklist",
+  "email sender requirements"
+ ]
+}

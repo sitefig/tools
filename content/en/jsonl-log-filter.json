@@ -1,0 +1,44 @@
+{
+ "id": "jsonl-log-filter",
+ "seoTitle": "JSON Lines Log Filter: Search Any Key in NDJSON Logs",
+ "metaDescription": "Load JSON logs, flatten nested fields and filter by any key with =, !=, ~, > and <. Level summary and table. Free, runs in your browser.",
+ "intro": "Flattens JSON log records to dotted keys and filters them with simple key conditions.",
+ "why": "Structured logs are easy to write and awkward to read. This tool flattens nested fields and lets you ask questions such as level=error;ctx.ms>1000 without jq.\n\nIt picks time, level and message columns first. The NDJSON viewer is better for plain sorting and CSV; this one is for filtering and summaries.",
+ "howTo": [
+  "Paste JSON lines or choose a file.",
+  "Write filters separated by semicolons.",
+  "Choose columns and sorting if needed.",
+  "Read the level summary and the matching rows."
+ ],
+ "faq": [
+  {
+   "q": "Which operators work?",
+   "a": "= != ~ (contains) !~ > < >= <=. Numbers compare as numbers when both sides are numeric."
+  },
+  {
+   "q": "How are nested keys named?",
+   "a": "With dots, like ctx.ms. Arrays of simple values are joined with commas."
+  },
+  {
+   "q": "What if some lines do not match?",
+   "a": "They are skipped and the result says how many. Lines that are not JSON are counted and skipped."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "ndjson-viewer",
+  "log-line-prettifier",
+  "logfmt-parser",
+  "log-to-csv",
+  "jq-playground",
+  "json-format"
+ ],
+ "keywords": [
+  "filter json logs online",
+  "ndjson log filter",
+  "json log viewer"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "wcag-success-criteria-explorer",
+ "seoTitle": "WCAG 2.2 Success Criteria Explorer and Reference",
+ "metaDescription": "Search all 86 WCAG 2.2 success criteria by number, name or words, filter by level, principle or new in 2.2, with links to Understanding pages.",
+ "intro": "A searchable list of all WCAG 2.2 success criteria with level, opening text and a link to the W3C explanation.",
+ "why": "You often need to find the criterion for a problem quickly.\n\nThe data comes from the W3C WCAG 2.2 Recommendation. Filter by A, AA or AAA, by principle, or to the nine criteria new in 2.2. Only the opening sentence is shown, so read the full text before judging a pass.",
+ "howTo": [
+  "Type words or a number.",
+  "Pick the level and principle.",
+  "Tick \"new in 2.2\" for recent additions.",
+  "Open the Understanding link for detail."
+ ],
+ "faq": [
+  {
+   "q": "How many criteria are there?",
+   "a": "86, with 4.1.1 Parsing removed in 2.2."
+  },
+  {
+   "q": "Which are new?",
+   "a": "2.4.11, 2.4.12, 2.4.13, 2.5.7, 2.5.8, 3.2.6, 3.3.7, 3.3.8 and 3.3.9."
+  },
+  {
+   "q": "Is the full text here?",
+   "a": "No, only the first sentence."
+  },
+  {
+   "q": "Does it use the network?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "vpat-acr-builder",
+  "eaa-en301549-web-checklist",
+  "a11y-html-check",
+  "contrast-checker",
+  "target-size-checker",
+  "focus-indicator-contrast-checker"
+ ],
+ "keywords": [
+  "wcag 2.2 criteria list",
+  "wcag success criteria search",
+  "wcag 2.2 new criteria"
+ ]
+}

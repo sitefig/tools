@@ -1,0 +1,46 @@
+{
+  "id": "internal-link-suggester",
+  "seoTitle": "Internal Link Suggester: Find Related Pages to Link",
+  "metaDescription": "Paste your pages' text and get internal link suggestions with anchor text ideas, ranked by TF-IDF similarity. Local, no crawl or API needed.",
+  "intro": "Give it the text of several pages and it suggests which page should link to which, with the shared terms and a few anchor phrases taken from your own copy.",
+  "why": "Each page is turned into a TF-IDF vector (words that are frequent on a page but rare across your site count most) and pages are compared with cosine similarity. For every page you get the most similar other pages above a threshold, whether the target is already mentioned in the text, and anchor ideas built from shared terms that actually occur on the source page.\n\nSimilarity means overlapping vocabulary, not search intent, so read each suggestion before adding a link. It works best with a few hundred words per page and a site of related topics; with very few pages the weights are not meaningful.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Write each page as a line \"=== /url\" followed by its text.",
+    "Choose how many suggestions per page and the minimum similarity.",
+    "Run it and review each suggested link and anchor idea.",
+    "Add the links that help the reader, using natural anchor text."
+  ],
+  "faq": [
+    {
+      "q": "How is similarity calculated?",
+      "a": "Cosine similarity between TF-IDF word vectors. Common words are down-weighted, so shared rare terms drive the score."
+    },
+    {
+      "q": "Does it crawl my site?",
+      "a": "No. It only reads the text you paste, which is why no network access is needed."
+    },
+    {
+      "q": "Can it tell me which links already exist?",
+      "a": "It flags suggestions whose URL already appears in the source text, but it does not parse HTML links. Use the link extractor for that."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "pagerank-calculator",
+    "internal-link-extractor",
+    "anchor-text-distribution",
+    "keyword-clusterer",
+    "topic-cluster-planner",
+    "tfidf"
+  ],
+  "keywords": [
+    "internal link suggestions",
+    "related pages tool",
+    "tf-idf similarity",
+    "anchor text ideas",
+    "internal linking"
+  ]
+}

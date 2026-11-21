@@ -1,0 +1,46 @@
+{
+  "id": "url-parameter-analyzer",
+  "seoTitle": "URL Parameter & Crawl Trap Analyzer for SEO",
+  "metaDescription": "Paste crawled URLs to see which query parameters multiply pages (facets, sorting, sessions), find crawl-trap risks and get robots.txt and canonical hints.",
+  "intro": "Spot parameters that create endless URL variations, such as filters, sort orders, session IDs and tracking tags, before they waste crawl budget.",
+  "why": "The tool counts every query parameter across your URLs, how many distinct values it takes, on how many paths it appears and what it probably does (tracking, session, sort, pagination or a filter). It also flags paths with many parameter combinations, URLs that differ only in parameter order, and drafts robots.txt rules for the parameters that are safe to block.\n\nBlocking in robots.txt stops crawling but not indexing of known URLs, and it cuts link equity flow, so for facet filters that you want consolidated a canonical to the clean category is often better. The suggestions are a starting point to review.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Export URLs from a crawl, a log file or Search Console and paste them one per line.",
+    "Set the combination count at which a path is flagged.",
+    "Read the parameter table and the crawl-trap list.",
+    "Choose between canonical, noindex and robots.txt rules for each parameter."
+  ],
+  "faq": [
+    {
+      "q": "What is a crawl trap?",
+      "a": "A set of URLs that is effectively infinite, such as combinable filters or calendars, so crawlers keep finding new pages with little value."
+    },
+    {
+      "q": "Should I block tracking parameters in robots.txt?",
+      "a": "Usually no. Use a self-referencing canonical on the clean URL; blocking can hide the parameter from consolidation signals."
+    },
+    {
+      "q": "How are parameters classified?",
+      "a": "By name patterns (utm_*, session ids, sort/order, page/offset) and by the number of distinct values; the labels are hints, not facts."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "robots-tester",
+    "robots-generator",
+    "canonical-generator",
+    "sitemap-url-extractor",
+    "utm-builder",
+    "redirect-map-matcher"
+  ],
+  "keywords": [
+    "url parameters seo",
+    "faceted navigation",
+    "crawl budget",
+    "crawl trap",
+    "parameter handling"
+  ]
+}

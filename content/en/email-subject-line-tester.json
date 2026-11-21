@@ -1,0 +1,45 @@
+{
+ "id": "email-subject-line-tester",
+ "seoTitle": "Free Email Subject Line Tester: Score and Fix Tips",
+ "metaDescription": "Score email subject lines out of 100 for length, spam words, caps and personalisation, with notes per line. Free, runs in your browser, nothing is sent.",
+ "intro": "Paste one or more subject lines and get a score out of 100 with a note for every point that raised or lowered it.",
+ "why": "A subject line decides whether the email is opened, and most problems are easy to spot: too long for a phone screen, shouting in capitals, stacked exclamation marks, or words that look like a pitch. Checking these by hand for every send is slow, so this page does it in one pass and says what to change.\n\nThe score is a rule-based heuristic built from common deliverability and copywriting advice. It does not measure real opens and it cannot know your audience. Use it to catch obvious problems, then test two versions on a part of your list. The text stays in your browser.",
+ "howTo": [
+  "Paste your subject lines, one per line.",
+  "Read the score and the notes under each line.",
+  "Edit the line and run it again until the notes are clean.",
+  "Test the best two on a small share of your list."
+ ],
+ "faq": [
+  {
+   "q": "Is the score a prediction of open rate?",
+   "a": "No. It is a checklist turned into a number. Real open rates depend on sender reputation, timing and audience."
+  },
+  {
+   "q": "Why is 40 characters the target?",
+   "a": "Phones show roughly the first 30 to 40 characters of a subject. The exact number depends on the app and the screen, so treat it as a guide."
+  },
+  {
+   "q": "Are all-caps words always bad?",
+   "a": "Not always. Acronyms are fine. The tool marks them as something to review."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. Everything is computed in your browser."
+  }
+ ],
+ "related": [
+  "spam-trigger-word-checker",
+  "email-preheader-previewer",
+  "headline-generator",
+  "title-case-headline-analyzer",
+  "email-campaign-rates",
+  "outreach-mail-merge"
+ ],
+ "keywords": [
+  "email subject line tester",
+  "subject line score",
+  "subject line checker",
+  "email subject length"
+ ]
+}

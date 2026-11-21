@@ -1,0 +1,45 @@
+{
+ "id": "monthly-calendar-printer",
+ "seoTitle": "Printable Monthly Calendar with Your Own Dates and Events",
+ "metaDescription": "Print a large one-month-per-page calendar for any year, Monday or Sunday start, with your own events written in the day cells. Free.",
+ "intro": "Makes a printable monthly calendar page (or all twelve months) with large day cells and your own dates written in.",
+ "why": "A year-on-a-page calendar is small to write on. This one gives each month a landscape page with big cells, a Monday or Sunday start and A4 or Letter paper. Your own dates, such as birthdays or deadlines, are printed in the right cells.\n\nWrite dates as 2026-12-25 Christmas for one year or 12-25 Birthday for every year. No holiday data is built in because holiday dates vary by country and need an official source. The layout was compared with the Python calendar module for several months and both week starts. Print from your browser or save as PDF.",
+ "howTo": [
+  "Choose the year, month (or 0 for all) and week start.",
+  "Type your dates, one per line.",
+  "Pick paper size.",
+  "Print or save as PDF."
+ ],
+ "faq": [
+  {
+   "q": "Are holidays included?",
+   "a": "No, add the ones you need yourself."
+  },
+  {
+   "q": "Can I print all months?",
+   "a": "Yes, set the month to 0."
+  },
+  {
+   "q": "Does it have week numbers?",
+   "a": "Not this one. The year calendar tool has ISO week numbers."
+  },
+  {
+   "q": "Can I add recurring dates?",
+   "a": "Yes, write MM-DD without a year."
+  }
+ ],
+ "related": [
+  "printable-calendar",
+  "ics-event-file-creator",
+  "content-calendar-generator",
+  "week-number",
+  "business-days",
+  "countdown-to-date"
+ ],
+ "keywords": [
+  "printable monthly calendar",
+  "monthly calendar template",
+  "calendar with events print",
+  "custom calendar maker"
+ ]
+}

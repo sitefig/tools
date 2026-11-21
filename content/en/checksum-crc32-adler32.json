@@ -1,0 +1,47 @@
+{
+ "id": "checksum-crc32-adler32",
+ "seoTitle": "Free CRC32 and Adler-32 Checksum Calculator",
+ "metaDescription": "Calculate the CRC-32 (IEEE) and Adler-32 checksums of your text as UTF-8, shown in hex and decimal. Free and runs in your browser, nothing is uploaded.",
+ "intro": "Compute the CRC-32 (IEEE 802.3) and Adler-32 checksums of your text at the same time. Each value is shown in hexadecimal and decimal.",
+ "why": "CRC-32 sits inside ZIP files, PNG images, gzip streams and Ethernet frames, and Adler-32 inside zlib. When you debug a file format, compare a checksum with a spec, or write a test for a parser, you need to know the right number for a given input.\n\nThis tool computes both for the UTF-8 bytes of your text and shows them as eight-digit hex and as an integer. The sample \"123456789\" is the standard check value, giving cbf43926 for CRC-32, so you can confirm that it matches your own implementation. These checksums catch accidental damage only; they offer no protection against deliberate tampering.",
+ "howTo": [
+  "Type or paste the text to checksum.",
+  "Read the CRC-32 value in hex and decimal.",
+  "Read the Adler-32 value in hex and decimal.",
+  "Copy the form your format or test expects."
+ ],
+ "faq": [
+  {
+   "q": "Which CRC-32 variant is this?",
+   "a": "The common IEEE 802.3 one, with polynomial 0xEDB88320 reflected, an initial value of all ones and a final XOR. It is the one used by ZIP, gzip and PNG. Other CRC-32 variants such as CRC-32C give different results."
+  },
+  {
+   "q": "Can I use these for security?",
+   "a": "No. Both are error-detection codes that are trivial to forge on purpose. For tamper detection use a cryptographic hash like SHA-256, available in the Hash Generator."
+  },
+  {
+   "q": "How do I check my implementation?",
+   "a": "Enter 123456789. The correct CRC-32 is cbf43926 and Adler-32 is 091e01de. If your code gives something else, check the byte encoding and the byte order of the output."
+  },
+  {
+   "q": "Does it checksum files?",
+   "a": "No, this page takes text, which is encoded as UTF-8 first. To check a file, use the File Hash tool for cryptographic digests."
+  }
+ ],
+ "related": [
+  "crc-calculator",
+  "noncrypto-hashes",
+  "hash-generator",
+  "file-hash",
+  "check-digit-tool",
+  "gzip-compress"
+ ],
+ "keywords": [
+  "crc32 calculator",
+  "adler32 online",
+  "crc32 checksum of text",
+  "free checksum tool",
+  "crc-32 ieee online",
+  "compute crc32 string"
+ ]
+}

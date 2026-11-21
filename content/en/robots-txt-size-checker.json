@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-size-checker",
+ "seoTitle": "robots.txt Size Checker: 500 KiB Limit and Cut-off Line",
+ "metaDescription": "Measure your robots.txt in bytes against the 500 KiB crawler limit and see the line where a crawler stops reading. Free, runs in your browser.",
+ "intro": "Counts the bytes of a pasted robots.txt, compares them with the 500 KiB limit and, if it is too big, shows which line is cut.",
+ "why": "RFC 9309 tells crawlers to parse at least 500 kibibytes, and Google ignores content past that limit. A file that grows through generated rules can silently lose its last lines, which might hold the rules that matter.\n\nThe checker counts real bytes (UTF-8, not characters), shows the share of the limit used and marks the first line a crawler would not read. It also suggests ways to shrink the file.",
+ "howTo": [
+  "Paste the whole robots.txt.",
+  "Read the size and percentage of the limit.",
+  "If over, note the cut-off line and what comes after it.",
+  "Shrink with wildcard patterns or the minifier."
+ ],
+ "faq": [
+  {
+   "q": "Why 500 KiB?",
+   "a": "RFC 9309 says crawlers must parse at least 500 kibibytes, and Google documents the same limit."
+  },
+  {
+   "q": "Are bytes different from characters?",
+   "a": "Yes. Non-ASCII characters take several bytes in UTF-8, so the byte count is what matters."
+  },
+  {
+   "q": "Can I change the limit?",
+   "a": "Yes, the option lets you test another limit, for example for a stricter crawler."
+  },
+  {
+   "q": "What happens past the limit?",
+   "a": "Google ignores the rest of the file. Other crawlers may behave differently."
+  }
+ ],
+ "related": [
+  "robots-txt-validator",
+  "robots-txt-minifier",
+  "robots-tester",
+  "robots-txt-formatter",
+  "robots-generator"
+ ],
+ "keywords": [
+  "robots.txt size limit",
+  "robots.txt 500kb",
+  "robots.txt too large",
+  "robots.txt byte count"
+ ]
+}

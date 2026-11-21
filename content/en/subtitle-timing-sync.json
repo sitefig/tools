@@ -1,0 +1,45 @@
+{
+ "id": "subtitle-timing-sync",
+ "seoTitle": "SRT Subtitle Timing Shifter and Drift Fixer",
+ "metaDescription": "Delay or advance SRT subtitles by an offset, or stretch them with two reference points to fix drift from frame rate mismatch. Private, text only.",
+ "intro": "Shifts every subtitle cue by a fixed number of seconds, or rescales all times with two reference points to fix gradual drift.",
+ "why": "Subtitles that start in sync but drift later usually come from a frame rate mismatch, for example 23.976 against 25 fps. Two reference points give a straight line: new time equals a times old time plus b. The tool solves that line and applies it to every cue.\n\nFor a constant delay use the offset mode. Cues that would end before zero are dropped. The converter on this site shifts by milliseconds too, but has no stretch mode.",
+ "howTo": [
+  "Paste your SRT.",
+  "Pick Shift for a constant delay, or Stretch for drift.",
+  "For Stretch, enter two times where the subtitle is now and when it should be.",
+  "Copy the corrected SRT."
+ ],
+ "faq": [
+  {
+   "q": "How do I pick the reference points?",
+   "a": "Choose the first and the last line of dialogue. Note when each is heard in the video and its current cue time."
+  },
+  {
+   "q": "What time formats work?",
+   "a": "Seconds, m:ss or h:mm:ss, with decimals."
+  },
+  {
+   "q": "Does it change the text?",
+   "a": "No. Only the times. Cues are renumbered."
+  },
+  {
+   "q": "What about VTT?",
+   "a": "Convert VTT to SRT with the converter first."
+  }
+ ],
+ "related": [
+  "subtitle-srt-vtt-converter",
+  "caption-file-validator",
+  "transcript-cleaner",
+  "subtitle-burner",
+  "youtube-caption-format-converter",
+  "video-trimmer"
+ ],
+ "keywords": [
+  "srt sync tool",
+  "shift subtitles",
+  "fix subtitle drift",
+  "subtitle delay online"
+ ]
+}

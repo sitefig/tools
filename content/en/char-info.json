@@ -1,0 +1,47 @@
+{
+ "id": "char-info",
+ "seoTitle": "Free Unicode Character Inspector and Lookup Tool",
+ "metaDescription": "Inspect any character: code point, category, script, UTF-8 and UTF-16 bytes, HTML, JS and CSS escapes. Free, handles emoji, runs in your browser.",
+ "intro": "Paste any characters and get the code point, general category, script, UTF-8 and UTF-16 bytes and the HTML, JavaScript and CSS escapes for each one.",
+ "why": "Some text looks right but behaves wrongly: a hyphen that is really a minus sign, a space that does not break, an invisible character inside an identifier, a Latin-looking letter that is actually Cyrillic. You cannot see these differences, but your search, sort, regex or database comparison can.\n\nThis inspector breaks a string into characters and reports what each really is. You get the U+ code point, its Unicode category, its script, the encoded bytes, and ready-made escapes for HTML, JavaScript and CSS. Non-printing characters are labelled as such. The first 100 characters are analysed, entirely in your browser.",
+ "howTo": [
+  "Paste or type the characters you want to identify. Up to 100 are analysed.",
+  "Read the block for each character: code point, category, script and encodings.",
+  "Check the Emoji line if you are unsure whether a symbol is treated as emoji.",
+  "Copy the HTML, JS or CSS escape you need."
+ ],
+ "faq": [
+  {
+   "q": "Which scripts does it recognise?",
+   "a": "It checks a practical list: Latin, Greek, Cyrillic, Armenian, Hebrew, Arabic, Devanagari, Bengali, Thai, Georgian, Hangul, Hiragana, Katakana, Han, Common and Inherited. Anything else is labelled \"other\"."
+  },
+  {
+   "q": "Why does a flag or family emoji give several results?",
+   "a": "Those are sequences of several code points joined together. The inspector lists each code point separately, which is useful for seeing the joiners and regional indicators inside them."
+  },
+  {
+   "q": "How do I find invisible characters in my text?",
+   "a": "Paste the text and look for entries marked \"(non-printing)\" or categories starting with Z or C, such as Format or Control. The Zero-width Detector scans for these automatically."
+  },
+  {
+   "q": "Is this a full Unicode database?",
+   "a": "No. Category, script and emoji data come from your browser's own Unicode property support, so results depend on its Unicode version. Character names are not included."
+  }
+ ],
+ "related": [
+  "utf8-bytes-viewer",
+  "zero-width-detector",
+  "unicode-escape",
+  "unicode-character-map",
+  "ascii-table",
+  "unicode-normalize"
+ ],
+ "keywords": [
+  "unicode character inspector",
+  "what character is this",
+  "unicode code point lookup",
+  "free character info tool",
+  "find invisible characters",
+  "unicode category and script"
+ ]
+}

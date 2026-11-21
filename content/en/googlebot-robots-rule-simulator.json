@@ -1,0 +1,44 @@
+{
+ "id": "googlebot-robots-rule-simulator",
+ "seoTitle": "Googlebot robots.txt Simulator with Parser Edge Cases",
+ "metaDescription": "Test URLs the way Google reads robots.txt: accepted typos, merged groups, 500 KiB cut-off, ignored directives and tie-breaks. Free, in your browser.",
+ "intro": "Models Google's robots.txt handling for a chosen Google crawler and explains the special cases it applied.",
+ "why": "Google's parser is forgiving in ways other parsers are not: it accepts frequent misspellings such as Disalow, merges groups with the same name, drops everything past 500 KiB and ignores directives like Crawl-delay.\n\nThis simulator follows Google's published documentation and the typo list in its open-source parser. It also falls back from Googlebot-Image or Googlebot-News to the Googlebot group. It is a model, not the live crawler, so confirm important pages in Search Console.",
+ "howTo": [
+  "Paste the robots.txt and URLs.",
+  "Choose the Google crawler.",
+  "Read each verdict and the notes about typos or ignored lines.",
+  "Confirm in the Search Console robots.txt report."
+ ],
+ "faq": [
+  {
+   "q": "Which typos does Google accept?",
+   "a": "Disallow variants such as dissallow, dissalow, disalow, diasllow and disallaw, plus useragent, user agent and site-map, from its open-source parser."
+  },
+  {
+   "q": "Does Googlebot-Image use the Googlebot group?",
+   "a": "If no group names it, yes, the most specific matching group is used and Googlebot is the fallback."
+  },
+  {
+   "q": "Does Google read Crawl-delay?",
+   "a": "No."
+  },
+  {
+   "q": "Is this the real Google result?",
+   "a": "No. It is a model built from documentation. The Search Console report is authoritative."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "bingbot-robots-rule-simulator",
+  "robots-txt-validator",
+  "seo-robots-noindex-simulator",
+  "robots-generator"
+ ],
+ "keywords": [
+  "googlebot robots.txt tester",
+  "google robots parser",
+  "robots.txt typos google",
+  "googlebot rule simulator"
+ ]
+}

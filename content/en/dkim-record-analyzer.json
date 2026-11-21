@@ -1,0 +1,41 @@
+{
+ "id": "dkim-record-analyzer",
+ "seoTitle": "DKIM Record Analyzer: Key Type, RSA Key Length, Test Mode",
+ "metaDescription": "Paste a DKIM TXT record and read its tags, RSA key size, Ed25519 key, testing flag and revoked keys. Free, offline.",
+ "intro": "Parses a DKIM public key record, measures the RSA key length from the DER data and flags weak or revoked keys.",
+ "why": "A DKIM record holds the public key that receivers use to check your signatures. Common problems are a key that is too short, a record cut off during copy and paste, a revoked key (empty p=) and a domain left in testing mode.\n\nPaste the TXT value and the tool joins split strings, decodes the key and shows the RSA modulus size. It was checked against keys made with OpenSSL. It reads text only: it does not fetch DNS or verify any signature.",
+ "howTo": [
+  "Run dig TXT selector._domainkey.yourdomain.",
+  "Paste the value, with or without quotes.",
+  "Read the key type, size and review list.",
+  "Replace keys under 2048 bits when you can."
+ ],
+ "faq": [
+  {
+   "q": "What is a good key size?",
+   "a": "2048 bits for RSA. 1024 is the minimum allowed for signers by RFC 8301 and is considered weak."
+  },
+  {
+   "q": "What does an empty p= mean?",
+   "a": "The key is revoked and signatures with that selector fail."
+  },
+  {
+   "q": "Does it support Ed25519?",
+   "a": "It identifies the key and checks the length. RFC 8463 defines the type."
+  }
+ ],
+ "related": [
+  "dkim-record-generator",
+  "dmarc-record-analyzer",
+  "spf-record-generator",
+  "email-header-analyzer",
+  "dig-nslookup-output-analyzer",
+  "dns-spf-record-flattener"
+ ],
+ "keywords": [
+  "dkim record check",
+  "dkim key length",
+  "dkim txt record",
+  "dkim selector"
+ ]
+}

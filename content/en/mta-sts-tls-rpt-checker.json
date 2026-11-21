@@ -1,0 +1,41 @@
+{
+ "id": "mta-sts-tls-rpt-checker",
+ "seoTitle": "MTA-STS and TLS-RPT Record Checker",
+ "metaDescription": "Paste your MTA-STS and TLS-RPT TXT records and the policy file and check the id, mode, mx patterns, max_age and report address.",
+ "intro": "Checks the DNS records and the policy file that make up MTA-STS and TLS reporting.",
+ "why": "MTA-STS tells sending mail servers to use TLS when delivering to your domain. It needs a TXT record, a policy file served over HTTPS and, ideally, a TLS-RPT record so you receive reports about failures.\n\nPaste the records and the policy file and the tool checks the version, id, mode, mx lines, max_age and report address against RFC 8461 and RFC 8460. It cannot test the HTTPS side or fetch anything. Move from testing to enforce once reports look clean.",
+ "howTo": [
+  "Copy the _mta-sts and _smtp._tls TXT records.",
+  "Copy the mta-sts.txt policy.",
+  "Paste both and read the review list.",
+  "Switch mode from testing to enforce when ready."
+ ],
+ "faq": [
+  {
+   "q": "What does testing mode do?",
+   "a": "Failures are reported but delivery is not stopped."
+  },
+  {
+   "q": "Why does the id matter?",
+   "a": "Senders use it to know when to refetch your policy. Change it whenever the policy changes."
+  },
+  {
+   "q": "Does it fetch my policy?",
+   "a": "No. Paste the text."
+  }
+ ],
+ "related": [
+  "dmarc-record-analyzer",
+  "dkim-record-analyzer",
+  "dig-nslookup-output-analyzer",
+  "dnssec-record-decoder",
+  "caa-record-analyzer",
+  "spf-record-generator"
+ ],
+ "keywords": [
+  "mta-sts checker",
+  "tls-rpt",
+  "mta-sts policy",
+  "smtp tls reporting"
+ ]
+}

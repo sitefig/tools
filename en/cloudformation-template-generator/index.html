@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CloudFormation Template Generator (S3, Lambda, DynamoDB, SQS) | Free Tools</title>
+<meta name="description" content="Generate an AWS CloudFormation YAML template for a private encrypted S3 bucket, a Lambda function with role and logs, a DynamoDB table or an SQS queue with dead-letter queue.">
+<link rel="canonical" href="https://tools.sitefig.net/en/cloudformation-template-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/cloudformation-template-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/cloudformation-template-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="CloudFormation Template Generator (S3, Lambda, DynamoDB, SQS) | Free Tools">
+<meta property="og:description" content="Generate an AWS CloudFormation YAML template for a private encrypted S3 bucket, a Lambda function with role and logs, a DynamoDB table or an SQS queue with dead-letter queue.">
+<meta property="og:url" content="https://tools.sitefig.net/en/cloudformation-template-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CloudFormation Template Generator (S3, Lambda, DynamoDB, SQS) | Free Tools">
+<meta name="twitter:description" content="Generate an AWS CloudFormation YAML template for a private encrypted S3 bucket, a Lambda function with role and logs, a DynamoDB table or an SQS queue with dead-letter queue.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"CloudFormation Template Generator (S3, Lambda, DynamoDB, SQS)","url":"https://tools.sitefig.net/en/cloudformation-template-generator/","description":"Generate an AWS CloudFormation YAML template for a private encrypted S3 bucket, a Lambda function with role and logs, a DynamoDB table or an SQS queue with dead-letter queue.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose the resource type and a logical name.","Copy the template.","Validate it with the AWS CLI.","Create the stack and add outputs you need."],"keywords":"cloudformation template generator, aws s3 cloudformation, lambda cloudformation, dynamodb template","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Infra","item":"https://tools.sitefig.net/en/#infra"},{"@type":"ListItem","position":3,"name":"CloudFormation Template Generator (S3, Lambda, DynamoDB, SQS)","item":"https://tools.sitefig.net/en/cloudformation-template-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why DeletionPolicy: Retain?","acceptedAnswer":{"@type":"Answer","text":"It keeps data when the stack is deleted, which avoids accidental loss."}},{"@type":"Question","name":"Is the Lambda code real?","acceptedAnswer":{"@type":"Answer","text":"It is a placeholder inline handler; replace it with your package."}},{"@type":"Question","name":"Can I add more resources?","acceptedAnswer":{"@type":"Answer","text":"Yes. This is a starting point for the Resources section."}},{"@type":"Question","name":"Is my data sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is processed in your browser, and the page makes no network requests with your input."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#infra">Infra</a></li><li><span aria-current="page">CloudFormation Template Generator (S3, Lambda, DynamoDB, SQS)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>CloudFormation Template Generator (S3, Lambda, DynamoDB, SQS)</h1>
+<p class="lede">Start from a template with safe defaults instead of a blank file.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="cloudformation-template-generator" data-module="gap2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>The S3 template blocks public access, enables encryption and versioning and retains the bucket on deletion. The Lambda template creates an execution role, the function and a log group with 14-day retention. DynamoDB uses on-demand billing, point-in-time recovery and encryption; SQS uses managed encryption and a dead-letter queue after five receives.</p>
+<p>All four templates parse as YAML with CloudFormation tags. Review names, retention and IAM permissions for your account, and validate with aws cloudformation validate-template.</p>
+<p>No data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose the resource type and a logical name.</li><li>Copy the template.</li><li>Validate it with the AWS CLI.</li><li>Create the stack and add outputs you need.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why DeletionPolicy: Retain?</summary><p>It keeps data when the stack is deleted, which avoids accidental loss.</p></details>
+<details><summary>Is the Lambda code real?</summary><p>It is a placeholder inline handler; replace it with your package.</p></details>
+<details><summary>Can I add more resources?</summary><p>Yes. This is a starting point for the Resources section.</p></details>
+<details><summary>Is my data sent anywhere?</summary><p>No. Everything is processed in your browser, and the page makes no network requests with your input.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/aws-iam-policy-builder/"><span class="link-card__title">AWS IAM Policy Builder</span><span class="link-card__desc">Compose an IAM policy from &quot;Effect | actions | resources | Operator key=value&quot; lines.</span></a></li><li><a class="link-card" href="/en/s3-bucket-policy-generator/"><span class="link-card__title">S3 Bucket Policy Generator</span><span class="link-card__desc">Generate an S3 bucket policy for common cases: public read of objects, CloudFront origin access, deny insecure (HTTP) transport, restrict to an IP range or another AWS account.</span></a></li><li><a class="link-card" href="/en/terraform-scaffolder/"><span class="link-card__title">Terraform AWS Scaffolder</span><span class="link-card__desc">Scaffold providers, remote state, VPC, S3 bucket and EC2 instance blocks (formatted like terraform fmt).</span></a></li><li><a class="link-card" href="/en/kubernetes-deployment-generator/"><span class="link-card__title">Kubernetes Deployment Generator</span><span class="link-card__desc">Deployment with probes, resources, hardened securityContext, plus optional Service, HPA and Ingress in one multi-document YAML.</span></a></li><li><a class="link-card" href="/en/yaml-format/"><span class="link-card__title">YAML Formatter</span><span class="link-card__desc">Re-indent and normalise YAML (comments are not preserved; anchors are expanded).</span></a></li><li><a class="link-card" href="/en/cloud-init-generator/"><span class="link-card__title">cloud-init User Data Generator (#cloud-config)</span><span class="link-card__desc">Build a #cloud-config for a new server: user with SSH key, hostname, packages, firewall-friendly settings, files, run commands and automatic security updates.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

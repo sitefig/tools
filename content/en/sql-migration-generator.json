@@ -1,0 +1,45 @@
+{
+  "id": "sql-migration-generator",
+  "seoTitle": "SQL Migration Generator (Up and Down Scripts)",
+  "metaDescription": "Generate up and down migration SQL for common schema changes: create table, add or drop columns, rename a column, add an index or a foreign key.",
+  "intro": "Draft migration files with matching rollback statements for PostgreSQL, MySQL or SQLite.",
+  "why": "Choose the change, the table and the details. Create table and add column take definitions one per line; the other changes take column names. The tool validates identifiers, quotes them for the dialect and writes both directions, noting where a rollback cannot restore data (dropping a column) and refusing unsupported cases (adding a foreign key to an existing SQLite table). The SQLite output was executed against a test database.\n\nReview before running: large ALTERs can lock tables, and some dialect differences still need manual care.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Pick the change type and dialect.",
+    "Enter table and column details.",
+    "Copy the up and down scripts into your migration tool.",
+    "Test on a copy of production data."
+  ],
+  "faq": [
+    {
+      "q": "Why does drop column have a placeholder rollback?",
+      "a": "Dropping loses data and the original definition, so the down step needs your original type."
+    },
+    {
+      "q": "Can it generate migrations from two schemas?",
+      "a": "No, it writes single changes."
+    },
+    {
+      "q": "Which migration tools can use it?",
+      "a": "Any that accept raw SQL, such as Flyway, Liquibase, Alembic or dbmate."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "sql-format",
+    "sql-select-builder",
+    "sql-dialect-converter",
+    "prisma-schema-generator",
+    "sql-ddl-to-diagram",
+    "postgres-connection-builder"
+  ],
+  "keywords": [
+    "sql migration generator",
+    "alter table generator",
+    "up down migration",
+    "database migration sql"
+  ]
+}

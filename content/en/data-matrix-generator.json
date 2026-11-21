@@ -1,0 +1,45 @@
+{
+  "id": "data-matrix-generator",
+  "seoTitle": "Data Matrix Barcode Generator (ECC 200, SVG)",
+  "metaDescription": "Create a Data Matrix (ECC 200) 2D barcode as SVG: automatic square size 10x10 to 144x144, Reed-Solomon error correction, digit-pair compression and a quiet zone.",
+  "intro": "Make Data Matrix codes for parts, labels and packaging.",
+  "why": "The encoder writes ECC 200 square symbols: ASCII encodation with digit-pair compression, padding with the standard pseudo-random pad, Reed-Solomon codewords over GF(256) with the 0x12D polynomial, round-robin block interleaving for the larger sizes and the standard \"Utah\" module placement with finder and clock patterns for the 1 to 36 data regions. All 24 square sizes from 10x10 to 144x144 were generated and decoded with the independent zxing-cpp reader, including digit-heavy, UTF-8 and mixed text.\n\nOnly ASCII encodation is used, so very long non-numeric data needs a larger symbol than an encoder that switches to C40, Text or Base 256 would choose. Rectangular symbols and GS1 mode are not offered. Scan a sample before printing in quantity.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the text or digits.",
+    "Set the module size and quiet zone.",
+    "Copy or download the SVG.",
+    "Scan it with a reader before printing."
+  ],
+  "faq": [
+    {
+      "q": "What is the capacity?",
+      "a": "Up to 1,558 codewords in a 144x144 symbol, which is about 1,558 characters or 3,116 digits."
+    },
+    {
+      "q": "How is it different from a QR code?",
+      "a": "Data Matrix is more compact for small items and has a solid L-shaped finder pattern; both are 2D barcodes."
+    },
+    {
+      "q": "Can I print it small?",
+      "a": "Yes, but keep modules large enough for your scanner; test at the final size."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "qr-code-generator",
+    "qr-code-reader",
+    "barcode-generator",
+    "test-identifier-generator",
+    "svg-optimizer",
+    "svg-to-png"
+  ],
+  "keywords": [
+    "data matrix generator",
+    "datamatrix barcode",
+    "ecc200",
+    "2d barcode generator"
+  ]
+}

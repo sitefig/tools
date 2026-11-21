@@ -1,0 +1,38 @@
+{
+ "id": "passport-validity-checker",
+ "seoTitle": "Passport Validity Checker: Schengen 3-Month and 6-Month Rule",
+ "metaDescription": "Check if your passport meets a typical entry rule: Schengen (3 months after departure, issued within 10 years), 6 months after entry, or valid for the stay.",
+ "intro": "Test whether your passport is valid enough for a trip under common entry rules, and see the latest renewal date.",
+ "why": "Many travellers are refused boarding for a passport that is valid but not valid enough. Enter the expiry and issue dates and your planned entry and departure dates, pick a rule and the checker shows whether you pass, the exact date the passport must be valid until and how many days short you are.\n\nSchengen requires validity of at least three months after the planned departure and issue within the previous ten years; many other countries require six months after entry. Rules vary by destination and nationality and change often, so confirm with the embassy or an official government source before travelling.",
+ "howTo": [
+  "Enter expiry and issue dates and your trip dates.",
+  "Choose the rule.",
+  "Renew if the result says FAIL."
+ ],
+ "faq": [
+  {
+   "q": "Which rule applies to me?",
+   "a": "Check the destination's official entry requirements for your nationality."
+  },
+  {
+   "q": "Is the 10-year rule only Schengen?",
+   "a": "It is a Schengen condition; other destinations have other conditions."
+  },
+  {
+   "q": "Does it contact anyone?",
+   "a": "No, it only does date arithmetic in your browser."
+  }
+ ],
+ "related": [
+  "date-difference",
+  "add-subtract-dates",
+  "business-days",
+  "timezone-converter",
+  "countdown-to-date"
+ ],
+ "keywords": [
+  "passport validity calculator",
+  "schengen 3 month rule",
+  "passport 6 month rule"
+ ]
+}

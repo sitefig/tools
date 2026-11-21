@@ -1,0 +1,46 @@
+{
+  "id": "core-web-vitals-grader",
+  "seoTitle": "Core Web Vitals & Lighthouse Score Calculator",
+  "metaDescription": "Rate LCP, INP, CLS, FCP and TTFB as Good, Needs improvement or Poor and estimate the Lighthouse performance score from lab metrics.",
+  "intro": "Enter your metrics and see the official Good / Needs improvement / Poor thresholds applied, plus the Lighthouse performance score those lab values would produce.",
+  "why": "The rating uses Google's published thresholds: LCP 2.5 s / 4 s, INP 200 ms / 500 ms, CLS 0.1 / 0.25, FCP 1.8 s / 3 s and TTFB 0.8 s / 1.8 s. The Core Web Vitals assessment passes only if LCP, INP and CLS are all Good.\n\nThe Lighthouse score applies the log-normal scoring curves of Lighthouse 10+ (mobile control points) to FCP, Speed Index, LCP, Total Blocking Time and CLS with weights of 10, 10, 25, 30 and 25 percent. Lighthouse versions and device presets differ, so treat the number as an estimate. Field data from real users, not lab scores, decides the Core Web Vitals assessment.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter LCP, INP and CLS from PageSpeed Insights, CrUX or your own measurement.",
+    "Optionally add FCP, TTFB, TBT and Speed Index.",
+    "Read the ratings and the estimated Lighthouse score.",
+    "Work on the weakest metric first."
+  ],
+  "faq": [
+    {
+      "q": "Why is my score different from PageSpeed Insights?",
+      "a": "Lighthouse versions, throttling and device presets change the curves and the lab values. This tool uses the mobile control points of Lighthouse 10+."
+    },
+    {
+      "q": "Is INP part of the Lighthouse score?",
+      "a": "Not directly; Lighthouse scores Total Blocking Time as a lab stand-in for responsiveness. INP is a field metric."
+    },
+    {
+      "q": "What counts as passing Core Web Vitals?",
+      "a": "LCP, INP and CLS all Good at the 75th percentile of real-user visits."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "app-performance-budget-calculator",
+    "seo-inspector",
+    "image-compressor",
+    "http-cache-control-tester",
+    "text-to-html-ratio",
+    "responsive-breakpoint-previewer"
+  ],
+  "keywords": [
+    "core web vitals",
+    "lighthouse score calculator",
+    "lcp inp cls",
+    "web vitals thresholds",
+    "pagespeed score"
+  ]
+}

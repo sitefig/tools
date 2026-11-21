@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Prisma Schema to SQL DDL Converter Online | Free Tools</title>
+<meta name="description" content="Convert a schema.prisma into CREATE TABLE statements for PostgreSQL, MySQL or SQLite, with keys, defaults and indexes. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/prisma-to-sql/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/prisma-to-sql/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/prisma-to-sql/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Prisma Schema to SQL DDL Converter Online | Free Tools">
+<meta property="og:description" content="Convert a schema.prisma into CREATE TABLE statements for PostgreSQL, MySQL or SQLite, with keys, defaults and indexes. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/prisma-to-sql/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Prisma Schema to SQL DDL Converter Online | Free Tools">
+<meta name="twitter:description" content="Convert a schema.prisma into CREATE TABLE statements for PostgreSQL, MySQL or SQLite, with keys, defaults and indexes. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Prisma Schema to SQL DDL","url":"https://tools.sitefig.net/en/prisma-to-sql/","description":"Convert a schema.prisma into CREATE TABLE statements for PostgreSQL, MySQL or SQLite, with keys, defaults and indexes. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your schema.prisma, including the datasource block and models, into the input box.","Choose \"from datasource\" or pick PostgreSQL, MySQL or SQLite.","Review the CREATE TABLE statements and use them as a reference or starting point."],"keywords":"prisma to sql, prisma schema to create table, convert schema.prisma to ddl, free prisma sql generator, prisma to postgres ddl","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SQL Tools","item":"https://tools.sitefig.net/en/#sql-tools"},{"@type":"ListItem","position":3,"name":"Prisma Schema to SQL DDL","item":"https://tools.sitefig.net/en/prisma-to-sql/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it match what prisma migrate produces?","acceptedAnswer":{"@type":"Answer","text":"It follows Prisma's default mappings, such as String to text, or varchar(191) on MySQL. Migrations can differ in details like constraint names, so use the output as a guide, not a byte-for-byte match."}},{"@type":"Question","name":"How are relations converted?","acceptedAnswer":{"@type":"Answer","text":"Fields with @relation, fields and references become foreign key constraints, with onDelete actions where specified. List-side relation fields produce no columns."}},{"@type":"Question","name":"What happens to uuid() and cuid() defaults?","acceptedAnswer":{"@type":"Answer","text":"These run in Prisma's client, not in the database, so no SQL default is generated for them. Autoincrement and now() are converted."}},{"@type":"Question","name":"Are enums supported?","acceptedAnswer":{"@type":"Answer","text":"Yes. Enums are created as database enums where the dialect supports them, and mapped in other ways where it does not. Check the result for your dialect."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#sql-tools">SQL Tools</a></li><li><span aria-current="page">Prisma Schema to SQL DDL</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Prisma Schema to SQL DDL</h1>
+<p class="lede">Converts a schema.prisma into CREATE TABLE statements for PostgreSQL, MySQL or SQLite, covering models, enums, @id, @unique, @default, @map, @relation foreign keys and indexes.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="prisma-to-sql" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Prisma generates SQL through migrations, but sometimes you just want to see the DDL: to review what a schema means in plain SQL, to hand it to a DBA, to set up a database without Node, or to compare with a legacy schema. Running prisma migrate needs a project, a connection and a shadow database. Paste the schema here instead and get the CREATE TABLE statements, using Prisma's default type mappings, the dialect from the datasource block or one you pick. Names from @map and @@map are used, relations become foreign keys and indexes are written out. Client-side defaults such as uuid() and cuid() produce no SQL default, as in Prisma itself. Nothing leaves your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your schema.prisma, including the datasource block and models, into the input box.</li><li>Choose &quot;from datasource&quot; or pick PostgreSQL, MySQL or SQLite.</li><li>Review the CREATE TABLE statements and use them as a reference or starting point.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does it match what prisma migrate produces?</summary><p>It follows Prisma's default mappings, such as String to text, or varchar(191) on MySQL. Migrations can differ in details like constraint names, so use the output as a guide, not a byte-for-byte match.</p></details>
+<details><summary>How are relations converted?</summary><p>Fields with @relation, fields and references become foreign key constraints, with onDelete actions where specified. List-side relation fields produce no columns.</p></details>
+<details><summary>What happens to uuid() and cuid() defaults?</summary><p>These run in Prisma's client, not in the database, so no SQL default is generated for them. Autoincrement and now() are converted.</p></details>
+<details><summary>Are enums supported?</summary><p>Yes. Enums are created as database enums where the dialect supports them, and mapped in other ways where it does not. Check the result for your dialect.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/sql-to-prisma/"><span class="link-card__title">SQL DDL to Prisma Schema</span><span class="link-card__desc">Convert CREATE TABLE statements (PostgreSQL, MySQL or SQLite syntax) to a schema.prisma: models with @id, @default(autoincrement()/now()), @unique, @map/@@map for snake_case columns, @db.* native types, composite @@id/@@unique/@@index, foreign keys as @relation with generated back-relation lists.</span></a></li><li><a class="link-card" href="/en/prisma-schema-generator/"><span class="link-card__title">Prisma Schema Generator</span><span class="link-card__desc">Write schema.prisma from a compact DSL; relations get foreign keys and back-references automatically.</span></a></li><li><a class="link-card" href="/en/sql-dialect-converter/"><span class="link-card__title">SQL DDL Converter (PostgreSQL / MySQL / SQLite)</span><span class="link-card__desc">Convert CREATE TABLE / CREATE INDEX DDL between PostgreSQL, MySQL and SQLite: SERIAL &lt;-&gt; AUTO_INCREMENT, BOOLEAN &lt;-&gt; TINYINT(1), TIMESTAMPTZ &lt;-&gt; DATETIME, UUID &lt;-&gt; CHAR(36), JSONB &lt;-&gt; JSON, defaults (now(), true/false), identifier quoting, PK/UNIQUE/FK and indexes. DDL is parsed and re-emitted; views, triggers, functions, partitions and CHECK constraints are not carried over.</span></a></li><li><a class="link-card" href="/en/sql-to-drizzle/"><span class="link-card__title">SQL DDL to Drizzle ORM Schema</span><span class="link-card__desc">Convert CREATE TABLE statements into a Drizzle ORM TypeScript schema for PostgreSQL (pg-core), MySQL (mysql-core) or SQLite (sqlite-core): column builders, primaryKey/notNull/unique/default/defaultNow, references() with onDelete, composite primary keys and indexes.</span></a></li><li><a class="link-card" href="/en/prisma-seed-generator/"><span class="link-card__title">Prisma Seed Script Generator</span><span class="link-card__desc">Read a Prisma schema and write prisma/seed.ts using @faker-js/faker: models are seeded in foreign-key order, relations pick existing rows, enums and defaults are respected.</span></a></li><li><a class="link-card" href="/en/sql-ddl-to-diagram/"><span class="link-card__title">SQL DDL to ER Diagram</span><span class="link-card__desc">Paste CREATE TABLE statements (columns, PRIMARY KEY, FOREIGN KEY ... REFERENCES, inline REFERENCES, UNIQUE, NOT NULL, ALTER TABLE ... ADD FOREIGN KEY) and get an entity-relationship diagram as SVG with crow's-foot notation. Generic SQL, MySQL, PostgreSQL and SQLite syntax work; other statements are ignored.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

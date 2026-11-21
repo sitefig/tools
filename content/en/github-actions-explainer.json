@@ -1,0 +1,45 @@
+{
+  "id": "github-actions-explainer",
+  "seoTitle": "GitHub Actions Workflow Explainer and Security Auditor",
+  "metaDescription": "Paste a workflow YAML for a plain-English walkthrough of triggers, jobs, dependencies and matrix size, plus checks for unpinned actions and risky permissions.",
+  "intro": "Understand what a CI workflow does and spot common security problems at the same time.",
+  "why": "The explainer reads the YAML and describes when the workflow runs (including schedules and branches), each job with its runner, dependencies, conditions and matrix size, and each step. It then lists notes from GitHub's hardening guidance: actions not pinned to a full commit SHA, a missing top-level permissions block, write-all permissions, pull_request_target risks and untrusted event data (such as a pull request title) expanded inside a run script.\n\nIt does not run workflows or fetch actions, and the checks are a short list rather than a complete audit.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste a file from .github/workflows.",
+    "Read the walkthrough.",
+    "Fix each security note.",
+    "Pin third-party actions by SHA and set least-privilege permissions."
+  ],
+  "faq": [
+    {
+      "q": "Why pin actions to a SHA?",
+      "a": "Tags and branches can be moved. A full commit SHA is immutable, which protects against a compromised action."
+    },
+    {
+      "q": "What is script injection?",
+      "a": "Putting ${{ github.event... }} text directly in a run script lets an attacker craft titles or branch names that execute commands. Pass values through env instead."
+    },
+    {
+      "q": "Does it work with reusable workflows?",
+      "a": "It describes the jobs in the file you paste; called workflows are not expanded."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "github-actions-generator",
+    "github-actions-matrix-builder",
+    "cron-explainer",
+    "gitlab-ci-generator",
+    "circleci-config-generator",
+    "dependabot-config-generator"
+  ],
+  "keywords": [
+    "github actions explainer",
+    "workflow yaml explained",
+    "github actions security",
+    "pin actions sha"
+  ]
+}

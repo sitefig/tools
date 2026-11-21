@@ -1,0 +1,45 @@
+{
+ "id": "webhook-signature-verifier",
+ "seoTitle": "Free Webhook Signature Verifier for GitHub and Stripe",
+ "metaDescription": "Verify a webhook HMAC signature locally for GitHub, Stripe, Slack, Shopify, Standard Webhooks or generic HMAC. Free, runs in your browser.",
+ "intro": "Verifies a webhook's HMAC signature locally. Paste the raw body, the signature header and your signing secret, pick the provider and see the expected signature, a constant-time comparison and a timestamp check.",
+ "why": "A webhook handler that rejects every request with \"invalid signature\" is a common and frustrating bug. The cause is usually small: the body was parsed and re-serialised before hashing, the secret has a trailing newline, the wrong header was used, or the timestamp window was exceeded. This tool lets you take a failing delivery and check it step by step. Paste the exact raw body and the headers, choose GitHub, Stripe, Slack, Shopify, Standard Webhooks (Svix) or a generic HMAC, and it computes the expected signature and compares it. Verification runs in your browser, but the signing secret is sensitive: use test secrets, or rotate a real one after debugging.",
+ "howTo": [
+  "Paste the raw request body into the first box, exactly as received.",
+  "Paste the signature header lines, or just the signature value, into the second box.",
+  "Choose the provider, enter the signing secret, and set a timestamp tolerance if relevant. Then read the result."
+ ],
+ "faq": [
+  {
+   "q": "Why must the body be the raw bytes?",
+   "a": "The signature is computed over the exact bytes sent. If your framework parses and re-serialises JSON first, spacing or key order can change and the HMAC no longer matches."
+  },
+  {
+   "q": "Which providers are supported?",
+   "a": "GitHub (X-Hub-Signature-256), Stripe (Stripe-Signature), Slack (X-Slack-Signature), Shopify (X-Shopify-Hmac-Sha256), Standard Webhooks and Svix, and a generic HMAC in hex or Base64."
+  },
+  {
+   "q": "What does the timestamp tolerance do?",
+   "a": "For providers that sign a timestamp, such as Stripe and Slack, it rejects requests older than the number of seconds you set. Zero skips the check. You can also set the current time to test old samples."
+  },
+  {
+   "q": "Is it safe to enter my secret?",
+   "a": "The computation is local and nothing is uploaded, but treat the secret as sensitive. Prefer a test secret, and rotate a production secret if you pasted it anywhere."
+  }
+ ],
+ "related": [
+  "hmac-generator",
+  "jwt-signature-validator",
+  "webhook-payload-simulator",
+  "hash-generator",
+  "api-key-generator",
+  "http-headers-analyzer"
+ ],
+ "keywords": [
+  "webhook signature verifier",
+  "verify stripe webhook signature online",
+  "github x-hub-signature-256 check",
+  "free hmac webhook tester",
+  "debug webhook invalid signature"
+ ]
+}

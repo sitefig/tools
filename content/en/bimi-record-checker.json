@@ -1,0 +1,44 @@
+{
+ "id": "bimi-record-checker",
+ "seoTitle": "Free BIMI Record Checker: default._bimi TXT and DMARC Needs",
+ "metaDescription": "Check a BIMI TXT record for tags, https links and SVG file name, and your DMARC policy against BIMI needs. Free and offline.",
+ "intro": "Checks a BIMI TXT record for the required v=BIMI1 tag, an https logo link to an SVG file and an optional evidence link. A second box checks your DMARC record against what BIMI asks for.",
+ "why": "BIMI lets mailbox providers show your logo next to authenticated mail. It fails quietly: a wrong tag order, an http link or a DMARC policy of p=none means no logo, and nobody tells you why.\n\nThis page checks the record text and the DMARC policy against the BIMI Internet-Draft. It cannot fetch your SVG or certificate, so it cannot confirm the logo file format or that your certificate is valid. Mailbox providers also add rules of their own.",
+ "howTo": [
+  "Look up the TXT record at default._bimi.yourdomain with your DNS tool.",
+  "Paste it into the first box.",
+  "Optionally paste your _dmarc TXT record into the second box.",
+  "Fix every PROBLEM line and read the REVIEW lines."
+ ],
+ "faq": [
+  {
+   "q": "Where is the BIMI record published?",
+   "a": "As a TXT record at default._bimi.<your domain>, unless you use another selector."
+  },
+  {
+   "q": "Which DMARC policy is needed?",
+   "a": "Quarantine (with pct=100) or reject. A policy of none does not qualify."
+  },
+  {
+   "q": "Do I need a VMC or CMC?",
+   "a": "Some mailbox providers require one. The a= tag points to it. Check the rules of the providers you care about."
+  },
+  {
+   "q": "Does the tool check the SVG?",
+   "a": "No. It only checks the link. The file must be a valid SVG Tiny PS profile."
+  }
+ ],
+ "related": [
+  "mta-sts-tls-rpt-checker",
+  "dmarc-record-analyzer",
+  "dkim-record-analyzer",
+  "dns-spf-record-flattener",
+  "email-header-analyzer",
+  "dns-record-generator"
+ ],
+ "keywords": [
+  "bimi checker",
+  "bimi record validator",
+  "bimi dmarc requirements"
+ ]
+}

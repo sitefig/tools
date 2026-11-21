@@ -1,0 +1,39 @@
+{
+ "id": "paper-size-reference",
+ "seoTitle": "Paper Sizes: A4, Letter and More in mm, Inches and Pixels",
+ "metaDescription": "Look up A, B, C and US paper sizes in mm, inches, points and pixels at your DPI. Free reference.",
+ "intro": "Shows ISO A, B and C sizes, DL and US sizes such as Letter, Legal and Tabloid in millimetres, inches, points and pixels at a chosen DPI.",
+ "why": "Printing, PDF and design work need the exact page size. A4 is 210 x 297 mm and US Letter is 8.5 x 11 inches, which are not the same shape.\n\nPick a size to see it in every unit, including pixels at 72, 150 or 300 DPI. The ISO sizes follow the published millimetre values; the ISO text itself was not checked.",
+ "howTo": [
+  "Choose a paper size or All sizes.",
+  "Set the DPI.",
+  "Read the sizes in mm, inches, points and pixels."
+ ],
+ "faq": [
+  {
+   "q": "What is A4 in pixels?",
+   "a": "2480 x 3508 px at 300 DPI, 595 x 842 at 72 DPI."
+  },
+  {
+   "q": "Why is Letter different from A4?",
+   "a": "They come from different standards. Letter is a little wider and shorter."
+  },
+  {
+   "q": "Does it show landscape?",
+   "a": "Sizes are portrait, width first. Swap them for landscape."
+  }
+ ],
+ "related": [
+  "typography-unit-converter",
+  "pdf-page-count-and-sizes",
+  "css-unit-converter",
+  "image-resizer",
+  "printable-calendar",
+  "unit-converter"
+ ],
+ "keywords": [
+  "a4 size in pixels",
+  "paper sizes mm inches",
+  "us letter size"
+ ]
+}

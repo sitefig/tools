@@ -1,0 +1,39 @@
+{
+ "id": "safety-stock-calculator",
+ "seoTitle": "Safety Stock Calculator: Service Level or Max Minus Average",
+ "metaDescription": "Compute safety stock from demand variation and a service level using the normal distribution, or from the worst case. Free, private.",
+ "intro": "Computes the buffer stock needed to reach a service level, or the simple worst-case buffer.",
+ "why": "Safety stock protects against demand and lead time varying around their averages. The statistical method multiplies a z-score for your service level by the combined standard deviation. The simple method subtracts average usage from the worst case and tends to overstock.\n\nThe z-score is computed from the inverse normal curve, so you can use any service level between 50 and 100 percent. The method assumes roughly normal demand, which is weak for spiky or seasonal items.",
+ "howTo": [
+  "Choose a method.",
+  "Enter average demand, lead time and, for the service level method, the standard deviation and service level.",
+  "Read safety stock and the reorder point."
+ ],
+ "faq": [
+  {
+   "q": "What service level should I pick?",
+   "a": "It is a business choice. 95 percent is common, but higher levels need much more stock."
+  },
+  {
+   "q": "What is the standard deviation of demand?",
+   "a": "The spread of daily sales around the mean, taken from your sales history."
+  },
+  {
+   "q": "Is demand normal?",
+   "a": "Often not. For intermittent or seasonal demand treat the result as a floor."
+  }
+ ],
+ "related": [
+  "reorder-point-calculator",
+  "economic-order-quantity-calculator",
+  "inventory-turnover-calculator",
+  "average-order-value-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "safety stock calculator",
+  "safety stock formula",
+  "service level z score"
+ ]
+}

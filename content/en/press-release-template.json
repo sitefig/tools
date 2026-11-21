@@ -1,0 +1,47 @@
+{
+ "id": "press-release-template",
+ "seoTitle": "Free Press Release Template Generator Online",
+ "metaDescription": "Fill in a few fields and get a standard press release with headline, dateline, quote, boilerplate and media contact. Free and runs in your browser.",
+ "intro": "Fill in the company, headline, city, date, announcement, quote and contact details to get a press release in the standard structure, ready to edit.",
+ "why": "Journalists receive many releases a day and skim for the same elements: a clear headline, a dateline, the news in the first paragraph, a quote, the background and a contact. Writing from a blank page often buries the news under company history.\n\nThis template arranges your answers in the conventional order: FOR IMMEDIATE RELEASE, headline, city and date, what is being announced and why it matters, a quote, a link, the \"About\" paragraph, the media contact and the closing ###. It does not write the news for you, so keep the facts concrete and the language plain. Your text is assembled in the browser and not uploaded.",
+ "howTo": [
+  "Fill in the company name, headline, city and date.",
+  "Write the announcement in one or two sentences, then add why it matters.",
+  "Add a quote with the speaker's name and title, a link, a press contact and the about text.",
+  "Copy the finished text and edit it into your own voice."
+ ],
+ "faq": [
+  {
+   "q": "What should the first paragraph contain?",
+   "a": "The news itself: who, what, when, where and why it matters, in one or two sentences. Put background after that. Many readers, and some journalists, will not get past the opening."
+  },
+  {
+   "q": "How long should a press release be?",
+   "a": "Usually one page, around 300 to 500 words. The template produces a short skeleton, so expand the body only with facts the reader needs."
+  },
+  {
+   "q": "Does it check facts or style?",
+   "a": "No. It only arranges what you type. Check names, dates and claims yourself, and avoid hype words that a journalist will cut anyway."
+  },
+  {
+   "q": "Is the content saved or sent anywhere?",
+   "a": "No. The release is built in your browser and disappears when you close the page. Copy it into your own document if you want to keep it."
+  }
+ ],
+ "related": [
+  "content-calendar-generator",
+  "swot-generator",
+  "user-persona-template",
+  "app-store-description-template",
+  "readability",
+  "word-counter"
+ ],
+ "keywords": [
+  "press release template",
+  "press release generator",
+  "free press release format",
+  "write a press release online",
+  "news release template",
+  "press release structure"
+ ]
+}

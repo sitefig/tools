@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free String Case Detector - camelCase, snake_case | Free Tools</title>
+<meta name="description" content="Paste identifiers one per line and see whether each is camelCase, PascalCase, snake_case, kebab-case and more. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/string-case-detector/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/string-case-detector/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/string-case-detector/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free String Case Detector - camelCase, snake_case | Free Tools">
+<meta property="og:description" content="Paste identifiers one per line and see whether each is camelCase, PascalCase, snake_case, kebab-case and more. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/string-case-detector/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free String Case Detector - camelCase, snake_case | Free Tools">
+<meta name="twitter:description" content="Paste identifiers one per line and see whether each is camelCase, PascalCase, snake_case, kebab-case and more. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"String Case Detector","url":"https://tools.sitefig.net/en/string-case-detector/","description":"Paste identifiers one per line and see whether each is camelCase, PascalCase, snake_case, kebab-case and more. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your strings into the box, one per line.","Run the tool to see a table of each string and its detected case.","Look for rows marked mixed / unknown or rows that differ from the rest.","Convert them with a case converter if you want one style."],"keywords":"string case detector, detect camelcase snake_case, identify naming convention, case style checker, free case detector online","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Extras","item":"https://tools.sitefig.net/en/#dev-extras"},{"@type":"ListItem","position":3,"name":"String Case Detector","item":"https://tools.sitefig.net/en/string-case-detector/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which cases can it recognise?","acceptedAnswer":{"@type":"Answer","text":"camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE, kebab-case, Train-Case, COBOL-CASE, dot.case, Title Case, Sentence case, lower and UPPER case words, lowercase, UPPERCASE and Capitalized."}},{"@type":"Question","name":"Why is a single word like user shown as lowercase?","acceptedAnswer":{"@type":"Answer","text":"One word with no separators cannot reveal a style, so it is reported by its letter case only. A word such as userName needs a capital inside it to count as camelCase."}},{"@type":"Question","name":"What does mixed / unknown mean?","acceptedAnswer":{"@type":"Answer","text":"The line matched none of the patterns, for example user_Name, which mixes an underscore with a capital, or a string with punctuation or non-ASCII letters. Such names usually deserve a manual look."}},{"@type":"Question","name":"Does it handle acronyms such as HTTPServer?","acceptedAnswer":{"@type":"Answer","text":"Not reliably. Runs of capitals do not fit the strict PascalCase pattern, so names like HTTPServer or userID are normally reported as mixed / unknown."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-extras">Dev Extras</a></li><li><span aria-current="page">String Case Detector</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>String Case Detector</h1>
+<p class="lede">Paste strings one per line and the tool labels the naming convention of each: camelCase, PascalCase, snake_case, kebab-case, Title Case and others.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="string-case-detector" data-module="extras"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>When you inherit a codebase, an API schema or a CSV with inconsistent column names, you first need to know which conventions are actually in use. Eyeballing a few hundred identifiers is slow and easy to get wrong, especially for look-alikes such as Train-Case and kebab-case, or SCREAMING_SNAKE_CASE and a plain uppercase word.</p>
+<p>This detector checks every line against a set of patterns and returns a two-column table, so inconsistent names stand out at once. Use it before a rename or a migration, when reviewing a pull request that mixes styles, or when deciding which case converter to run next. Lines that fit no pattern are marked mixed or unknown rather than guessed, and the check runs locally.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your strings into the box, one per line.</li><li>Run the tool to see a table of each string and its detected case.</li><li>Look for rows marked mixed / unknown or rows that differ from the rest.</li><li>Convert them with a case converter if you want one style.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which cases can it recognise?</summary><p>camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE, kebab-case, Train-Case, COBOL-CASE, dot.case, Title Case, Sentence case, lower and UPPER case words, lowercase, UPPERCASE and Capitalized.</p></details>
+<details><summary>Why is a single word like user shown as lowercase?</summary><p>One word with no separators cannot reveal a style, so it is reported by its letter case only. A word such as userName needs a capital inside it to count as camelCase.</p></details>
+<details><summary>What does mixed / unknown mean?</summary><p>The line matched none of the patterns, for example user_Name, which mixes an underscore with a capital, or a string with punctuation or non-ASCII letters. Such names usually deserve a manual look.</p></details>
+<details><summary>Does it handle acronyms such as HTTPServer?</summary><p>Not reliably. Runs of capitals do not fit the strict PascalCase pattern, so names like HTTPServer or userID are normally reported as mixed / unknown.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/case-converter/"><span class="link-card__title">Case Converter</span><span class="link-card__desc">UPPER, lower, Title, Sentence, camelCase, PascalCase, snake_case, kebab-case, CONSTANT, dot.case, aLtErNaTiNg.</span></a></li><li><a class="link-card" href="/en/slug-to-title/"><span class="link-card__title">Slug to Title Case</span><span class="link-card__desc">Turn URL slugs, snake_case or camelCase identifiers into readable titles. Small words stay lowercase (AP style), acronyms can be kept.</span></a></li><li><a class="link-card" href="/en/sql-slugifier/"><span class="link-card__title">SQL Identifier Slugifier</span><span class="link-card__desc">Turn titles, CSV headers or free text into safe snake_case table/column names: accents removed, no leading digit, reserved words suffixed, duplicates numbered.</span></a></li><li><a class="link-card" href="/en/slug-generator/"><span class="link-card__title">URL Slug Generator</span><span class="link-card__desc">Turn titles into clean, SEO-friendly URL slugs.</span></a></li><li><a class="link-card" href="/en/title-case-headline-analyzer/"><span class="link-card__title">Headline Analyzer</span><span class="link-card__desc">Score headlines on length, numbers, power words and sentiment-lite. Heuristic, not an SEO guarantee.</span></a></li><li><a class="link-card" href="/en/json-to-typescript/"><span class="link-card__title">JSON to TypeScript</span><span class="link-card__desc">Generate TypeScript interfaces or types from a JSON sample, merging array elements.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

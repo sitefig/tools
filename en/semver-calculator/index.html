@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Semver Calculator - Compare, Bump, Ranges | Free Tools</title>
+<meta name="description" content="Compare two semantic versions, bump major, minor or patch, and test npm-style ranges such as ^1.2.0 or &gt;=3.0.0 &lt;3.5. Free and runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/semver-calculator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/semver-calculator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/semver-calculator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Semver Calculator - Compare, Bump, Ranges | Free Tools">
+<meta property="og:description" content="Compare two semantic versions, bump major, minor or patch, and test npm-style ranges such as ^1.2.0 or &gt;=3.0.0 &lt;3.5. Free and runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/semver-calculator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Semver Calculator - Compare, Bump, Ranges | Free Tools">
+<meta name="twitter:description" content="Compare two semantic versions, bump major, minor or patch, and test npm-style ranges such as ^1.2.0 or &gt;=3.0.0 &lt;3.5. Free and runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Semver Calculator","url":"https://tools.sitefig.net/en/semver-calculator/","description":"Compare two semantic versions, bump major, minor or patch, and test npm-style ranges such as ^1.2.0 or >=3.0.0 \u003c3.5. Free and runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter Version A and Version B, for example 1.2.3 and 1.10.0-beta.2.","Pick a bump type to preview the next version of A.","Type a range such as ^1.2.0 || >=3.0.0 \u003c3.5 in the Range box.","Read the comparison, the bumped version and whether each version satisfies the range."],"keywords":"semver calculator, semantic version compare, npm semver range tester, version bump calculator, free semver tool online","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Extras","item":"https://tools.sitefig.net/en/#dev-extras"},{"@type":"ListItem","position":3,"name":"Semver Calculator","item":"https://tools.sitefig.net/en/semver-calculator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which range syntax is supported?","acceptedAnswer":{"@type":"Answer","text":"Caret (^), tilde (~), comparators (>, >=, \u003c, \u003c=, =), x-ranges such as 1.x or 1.2.*, hyphen ranges like 1.2.3 - 2.3.4, and alternatives joined with ||. Space-separated comparators are combined with AND."}},{"@type":"Question","name":"How are prerelease versions handled in ranges?","acceptedAnswer":{"@type":"Answer","text":"As in npm, a prerelease such as 1.3.0-beta only satisfies a range if some comparator in that set names a prerelease of the same major, minor and patch. This stops accidental upgrades to unstable builds."}},{"@type":"Question","name":"Does build metadata affect comparison?","acceptedAnswer":{"@type":"Answer","text":"No. Anything after a plus sign is accepted when parsing but ignored in comparison, as the semver specification requires. A leading v on the version is also accepted."}},{"@type":"Question","name":"What if my version is not valid semver?","acceptedAnswer":{"@type":"Answer","text":"The tool shows an error naming the value it could not parse. Versions need three numeric parts, such as 2.0.1. Two-part versions like 2.0 are valid inside ranges but not as Version A or B."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-extras">Dev Extras</a></li><li><span aria-current="page">Semver Calculator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Semver Calculator</h1>
+<p class="lede">Compare two semantic versions, see what a bump produces, and check whether either version satisfies an npm-style range like ^1.2.0 || &gt;=3.0.0.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="semver-calculator" data-module="extras"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Semantic versioning looks simple until a prerelease tag or a caret range gets involved. Is 1.10.0-beta.2 older than 1.2.3? Does ^0.2.3 allow 0.3.0? Will a range in package.json pull in a version you did not intend? Guessing leads to broken installs or missed security fixes.</p>
+<p>This calculator answers those questions in one place. Enter two versions to see which is newer, pick a bump such as minor or prerelease to preview the next number, and paste a range to test both versions against it. It covers caret, tilde, comparators, x-ranges, hyphen ranges and the || operator. The logic follows the npm rules and runs in your browser, so you can check ranges before committing a dependency change.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter Version A and Version B, for example 1.2.3 and 1.10.0-beta.2.</li><li>Pick a bump type to preview the next version of A.</li><li>Type a range such as ^1.2.0 || &gt;=3.0.0 &lt;3.5 in the Range box.</li><li>Read the comparison, the bumped version and whether each version satisfies the range.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which range syntax is supported?</summary><p>Caret (^), tilde (~), comparators (&gt;, &gt;=, &lt;, &lt;=, =), x-ranges such as 1.x or 1.2.*, hyphen ranges like 1.2.3 - 2.3.4, and alternatives joined with ||. Space-separated comparators are combined with AND.</p></details>
+<details><summary>How are prerelease versions handled in ranges?</summary><p>As in npm, a prerelease such as 1.3.0-beta only satisfies a range if some comparator in that set names a prerelease of the same major, minor and patch. This stops accidental upgrades to unstable builds.</p></details>
+<details><summary>Does build metadata affect comparison?</summary><p>No. Anything after a plus sign is accepted when parsing but ignored in comparison, as the semver specification requires. A leading v on the version is also accepted.</p></details>
+<details><summary>What if my version is not valid semver?</summary><p>The tool shows an error naming the value it could not parse. Versions need three numeric parts, such as 2.0.1. Two-part versions like 2.0 are valid inside ranges but not as Version A or B.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/package-json-generator/"><span class="link-card__title">package.json Generator</span><span class="link-card__desc">Starter package.json with metadata, ESM/CommonJS type, scripts and engines.</span></a></li><li><a class="link-card" href="/en/package-json-license-checker/"><span class="link-card__title">package.json / Lockfile License Checker</span><span class="link-card__desc">Group dependency licenses from a package-lock.json (v2/v3 records a license per package) and flag copyleft, proprietary or unknown ones against a policy. A plain package.json has no per-dependency license data, so only its own license and dependency list are shown.</span></a></li><li><a class="link-card" href="/en/changelog-generator/"><span class="link-card__title">Changelog Generator (from git log)</span><span class="link-card__desc">Paste `git log --pretty=format:&quot;%h %s&quot;` output and get a CHANGELOG.md section grouped by Conventional Commit type (feat, fix, perf...), with scopes, breaking changes (! or BREAKING CHANGE) and optional commit links. Commits that are not conventional go under &quot;Other Changes&quot;.</span></a></li><li><a class="link-card" href="/en/commitlint-semantic-release-generator/"><span class="link-card__title">commitlint + semantic-release Config</span><span class="link-card__desc">Generate commitlint.config.js, .releaserc.json and a husky commit-msg hook for conventional-commit based releases.</span></a></li><li><a class="link-card" href="/en/renovate-config-generator/"><span class="link-card__title">Renovate Config Generator</span><span class="link-card__desc">Create renovate.json with presets, schedule, automerge and grouping rules.</span></a></li><li><a class="link-card" href="/en/dependabot-config-generator/"><span class="link-card__title">Dependabot Config Generator</span><span class="link-card__desc">Generate .github/dependabot.yml from &quot;ecosystem directory&quot; lines with schedule and grouping.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

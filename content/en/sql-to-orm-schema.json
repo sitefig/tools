@@ -1,0 +1,45 @@
+{
+ "id": "sql-to-orm-schema",
+ "seoTitle": "Free SQL DDL to TypeORM and Sequelize Models Tool",
+ "metaDescription": "Convert CREATE TABLE statements into TypeORM entity classes or Sequelize model definitions with relations and indexes. Free, runs in your browser.",
+ "intro": "Converts CREATE TABLE statements into TypeORM entity classes (decorators, ManyToOne and JoinColumn, Index and Unique) or Sequelize model definitions with DataTypes and associations.",
+ "why": "TypeORM and Sequelize are the usual ORMs in many Node projects, and both need a model per table. When the database already exists, writing them by hand means mapping every column type, nullability, unique constraint and foreign key into decorators or a define call. Paste the DDL and choose the ORM, and this tool writes the classes: columns with the right types, primary keys, indexes, and ManyToOne or belongsTo links for foreign keys. For Prisma, Drizzle, Django, SQLAlchemy and GORM, use the separate converters on this site. The output is a draft for you to review, because relationship naming, lazy loading and cascade behaviour are choices only you can make. It runs in your browser.",
+ "howTo": [
+  "Paste your CREATE TABLE statements into the input box.",
+  "Choose TypeORM or Sequelize.",
+  "Copy the generated models, review the relations and connect them to your data source."
+ ],
+ "faq": [
+  {
+   "q": "What does the TypeORM output include?",
+   "a": "Entity classes with Column and PrimaryGeneratedColumn decorators, ManyToOne relations with JoinColumn for foreign keys, and Index and Unique decorators."
+  },
+  {
+   "q": "What does the Sequelize output include?",
+   "a": "Model definitions built with DataTypes, including primary keys, allowNull flags, unique settings and associations for foreign keys, so the generated code reflects the constraints from your CREATE TABLE statements."
+  },
+  {
+   "q": "Are the reverse relations generated?",
+   "a": "The output focuses on the side that holds the foreign key. Add OneToMany or hasMany sides yourself where you need to navigate in both directions."
+  },
+  {
+   "q": "Which ORMs are covered elsewhere?",
+   "a": "Prisma, Drizzle, Django, SQLAlchemy and GORM each have their own dedicated converter on this site, with output tuned to that ORM, so use those if your project is not on TypeORM or Sequelize."
+  }
+ ],
+ "related": [
+  "sql-to-prisma",
+  "sql-to-drizzle",
+  "sql-to-typescript",
+  "sql-to-django",
+  "sql-to-go-gorm",
+  "sql-dialect-converter"
+ ],
+ "keywords": [
+  "sql to typeorm",
+  "sql to sequelize model",
+  "create table to typeorm entity",
+  "free orm model generator",
+  "convert ddl to sequelize"
+ ]
+}

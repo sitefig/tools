@@ -1,0 +1,46 @@
+{
+ "id": "heading-analyzer",
+ "seoTitle": "Free Heading Structure Analyzer (H1-H6 Outline)",
+ "metaDescription": "Check an HTML page's heading hierarchy: missing H1, skipped levels, empty or duplicate headings, with a clear outline. Free and in-browser.",
+ "intro": "Paste HTML to see its H1 to H6 outline as a tree and find a missing or repeated H1, skipped levels, empty headings, over-long headings and duplicate text.",
+ "why": "Headings are how people skim a page and how screen readers and search engines understand its structure. They also go wrong quietly. A theme jumps from H1 to H4 for styling, a page ends up with three H1s after a template change, or a heading is empty because an image failed to load.\n\nThis analyser pulls every heading out of your HTML, shows the outline with indentation and counts how many of each level there are. It reports a missing H1, more than one H1, a first heading that is not H1, skipped levels, empty headings, headings over 70 characters and repeated heading text. These are guidelines rather than hard rules, since HTML5 allows several H1s in sectioning content. The analysis happens in your browser.",
+ "howTo": [
+  "Copy the HTML source of the page and paste it into the input box.",
+  "Run the tool to extract all headings.",
+  "Read the issues list for missing H1, skipped levels and empty headings.",
+  "Use the outline view to check the page reads logically, then fix the markup."
+ ],
+ "faq": [
+  {
+   "q": "Is more than one H1 always wrong?",
+   "a": "Not always. HTML allows it, and Google handles it. But a single clear H1 is the safer convention for most pages, so the tool reports extra H1s as a warning."
+  },
+  {
+   "q": "Why does skipping levels matter?",
+   "a": "Jumping from H2 to H4 leaves a gap in the outline that screen reader users rely on. Use the heading level for structure and CSS for appearance."
+  },
+  {
+   "q": "Does it read headings added by JavaScript?",
+   "a": "Only if they are in the HTML you paste. For client-rendered pages, copy the rendered DOM from developer tools rather than the page source."
+  },
+  {
+   "q": "Is my page sent anywhere?",
+   "a": "No. The extraction runs locally in your browser and nothing is uploaded. It also means the page works for drafts and private sites you would not want to share."
+  }
+ ],
+ "related": [
+  "seo-inspector",
+  "a11y-html-check",
+  "text-to-html-ratio",
+  "meta-analyzer",
+  "html-tag-stripper",
+  "title-length-checker"
+ ],
+ "keywords": [
+  "heading structure checker",
+  "h1 h2 h3 outline tool",
+  "check heading hierarchy",
+  "html heading analyzer",
+  "seo heading audit free"
+ ]
+}

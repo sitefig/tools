@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free ReDoS Checker: Find Catastrophic Backtracking in a Regex | Free Tools</title>
+<meta name="description" content="Scan a JavaScript regex for ReDoS risks: nested quantifiers, overlapping alternatives, adjacent repeats. A heuristic review aid. Free, local.">
+<link rel="canonical" href="https://tools.sitefig.net/en/redos-checker/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/redos-checker/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/redos-checker/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free ReDoS Checker: Find Catastrophic Backtracking in a Regex | Free Tools">
+<meta property="og:description" content="Scan a JavaScript regex for ReDoS risks: nested quantifiers, overlapping alternatives, adjacent repeats. A heuristic review aid. Free, local.">
+<meta property="og:url" content="https://tools.sitefig.net/en/redos-checker/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free ReDoS Checker: Find Catastrophic Backtracking in a Regex | Free Tools">
+<meta name="twitter:description" content="Scan a JavaScript regex for ReDoS risks: nested quantifiers, overlapping alternatives, adjacent repeats. A heuristic review aid. Free, local.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"ReDoS Checker: Static Scan for Catastrophic Backtracking","url":"https://tools.sitefig.net/en/redos-checker/","description":"Scan a JavaScript regex for ReDoS risks: nested quantifiers, overlapping alternatives, adjacent repeats. A heuristic review aid. Free, local.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste one or more regexes, one per line.","Read each finding and the part of the pattern it points to.","Try the suggested test string in the regex benchmark tool to confirm.","Rewrite the pattern so the parts cannot match the same text."],"keywords":"redos checker, catastrophic backtracking regex, regex denial of service, regex safety check","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Regex","item":"https://tools.sitefig.net/en/#regex"},{"@type":"ListItem","position":3,"name":"ReDoS Checker: Static Scan for Catastrophic Backtracking","item":"https://tools.sitefig.net/en/redos-checker/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does \"no known risky shape\" mean the regex is safe?","acceptedAnswer":{"@type":"Answer","text":"No. It only means none of the shapes this tool knows about were found. Treat it as a first filter."}},{"@type":"Question","name":"Which engines are affected?","acceptedAnswer":{"@type":"Answer","text":"Backtracking engines such as JavaScript, Python, Java, PHP and .NET. Engines with linear-time matching, such as RE2, are not."}},{"@type":"Question","name":"How do I fix a flagged pattern?","acceptedAnswer":{"@type":"Answer","text":"Make alternatives exclusive, remove the inner repeat, place a delimiter between repeats, limit lengths, or use a linear-time engine."}},{"@type":"Question","name":"Does it run the regex?","acceptedAnswer":{"@type":"Answer","text":"No. It only analyses the pattern, so it cannot hang. The benchmark tool can time a pattern against real input."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#regex">Regex</a></li><li><span aria-current="page">ReDoS Checker: Static Scan for Catastrophic Backtracking</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>ReDoS Checker: Static Scan for Catastrophic Backtracking</h1>
+<p class="lede">Looks at the structure of a regex and flags shapes that are known to backtrack badly, with a suggestion for a test string and a fix.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="redos-checker" data-module="new09"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Some regexes take exponential time on input that almost matches. A web server running one of them can be frozen by a single request, which is called ReDoS. The risky shapes are well known: a repeated group that ends in a repeat, alternatives that start with the same character inside a loop, and two repeats side by side that match the same characters.</p>
+<p>This tool parses the pattern and checks for those shapes using sampled character sets. It is a heuristic. It can miss risky patterns, especially with backreferences or lookarounds, and it can flag safe ones, so every finding is a review item. Confirm with a timing test on your own engine.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste one or more regexes, one per line.</li><li>Read each finding and the part of the pattern it points to.</li><li>Try the suggested test string in the regex benchmark tool to confirm.</li><li>Rewrite the pattern so the parts cannot match the same text.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does &quot;no known risky shape&quot; mean the regex is safe?</summary><p>No. It only means none of the shapes this tool knows about were found. Treat it as a first filter.</p></details>
+<details><summary>Which engines are affected?</summary><p>Backtracking engines such as JavaScript, Python, Java, PHP and .NET. Engines with linear-time matching, such as RE2, are not.</p></details>
+<details><summary>How do I fix a flagged pattern?</summary><p>Make alternatives exclusive, remove the inner repeat, place a delimiter between repeats, limit lengths, or use a linear-time engine.</p></details>
+<details><summary>Does it run the regex?</summary><p>No. It only analyses the pattern, so it cannot hang. The benchmark tool can time a pattern against real input.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/regex-benchmark-simulator/"><span class="link-card__title">Regex Benchmark &amp; ReDoS Simulator</span><span class="link-card__desc">Time a JavaScript regex against your text: ops/second, plus a scaling test (input repeated 1x-16x) that reveals polynomial or exponential backtracking. A static check flags nested quantifiers. A catastrophic pattern can freeze the tab: start with short input.</span></a></li><li><a class="link-card" href="/en/regex-tester/"><span class="link-card__title">Regex Tester</span><span class="link-card__desc">Test a JavaScript regex: matches with indexes, capture groups, named groups and replace preview.</span></a></li><li><a class="link-card" href="/en/regex-test-runner/"><span class="link-card__title">Regex Test Cases Runner (Should Match / Should Not Match)</span><span class="link-card__desc">Run one JavaScript regex against a list of strings that must match and a list that must not. Each line gets pass or fail, with a summary.</span></a></li><li><a class="link-card" href="/en/regex-explainer/"><span class="link-card__title">Regex Explainer (Plain English)</span><span class="link-card__desc">Paste a JavaScript regular expression and get a line-by-line explanation of every token, group, lookaround, quantifier and flag.</span></a></li><li><a class="link-card" href="/en/regex-railroad-diagram/"><span class="link-card__title">Regex Railroad Diagram Generator</span><span class="link-card__desc">Draw a JavaScript regular expression as a railroad (syntax) diagram: alternatives, optional parts, loops, groups and lookarounds. SVG, drawn in your browser.</span></a></li><li><a class="link-card" href="/en/regex-cheatsheet/"><span class="link-card__title">Regex Cheat Sheet</span><span class="link-card__desc">JavaScript regular expression syntax quick reference.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

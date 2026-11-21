@@ -1,0 +1,38 @@
+{
+ "id": "crypto-cgt-calculator",
+ "seoTitle": "Capital Gains Calculator: FIFO, LIFO, HIFO and 12-Month Discount",
+ "metaDescription": "Paste buys and sells for crypto or shares and get gain or loss per disposal with FIFO, LIFO or highest-cost matching, holding period and the optional discount.",
+ "intro": "Compute capital gains from a list of buys and sells with your choice of cost matching and a holding-period discount.",
+ "why": "Capital gains tax needs each sale matched to the purchases it disposes of. This calculator takes a CSV of dates, buy or sell, asset, quantity, price per unit and fee; matches sales to buy lots by FIFO, LIFO or highest cost first; adds fees to the cost base and deducts them from proceeds; and reports gain or loss per lot, whether the lot qualified for a discount (default 50% after 365 days, as for Australian individuals), losses applied before the discount, the net capital gain and what you still hold.\n\nTax rules differ by country and over time. Set the discount to 0 for rules without one, and treat crypto-to-crypto swaps as a sell plus a buy at market value. It is a calculator, not tax advice or a tax return.",
+ "howTo": [
+  "Paste the CSV: date,type,asset,quantity,price,fee.",
+  "Choose FIFO, LIFO or HIFO and set the discount days and percentage.",
+  "Review each disposal and the net capital gain."
+ ],
+ "faq": [
+  {
+   "q": "Which method should I use?",
+   "a": "Use the one your tax authority allows. Australia allows choosing a method if you keep consistent records."
+  },
+  {
+   "q": "Are losses handled?",
+   "a": "Yes, applied first to gains without discount, then to discountable gains, before the discount."
+  },
+  {
+   "q": "Is my data private?",
+   "a": "Yes. Everything is calculated in your browser."
+  }
+ ],
+ "related": [
+  "au-income-tax-estimator",
+  "compound-interest",
+  "percent-change",
+  "csv-to-json",
+  "break-even"
+ ],
+ "keywords": [
+  "crypto capital gains calculator",
+  "fifo lifo hifo",
+  "cgt discount 12 months"
+ ]
+}

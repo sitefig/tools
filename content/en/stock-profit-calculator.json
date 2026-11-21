@@ -1,0 +1,39 @@
+{
+ "id": "stock-profit-calculator",
+ "seoTitle": "Stock Profit Calculator With Fees",
+ "metaDescription": "Net profit or loss on a share trade after commissions, with return on investment, break-even price and optional tax.",
+ "intro": "Profit, return and break-even price for a trade including broker fees.",
+ "why": "Commissions matter more on small trades. The tool adds the buy fee to your cost and subtracts the sell fee from proceeds, then shows the break-even sell price.\n\nAn optional flat tax rate on gains is available. Real tax rules (allowances, loss offsets) are country specific and not modelled.",
+ "howTo": [
+  "Enter shares, buy price and sell price.",
+  "Enter commissions on both sides.",
+  "Read profit, percentage and break-even."
+ ],
+ "faq": [
+  {
+   "q": "Is the break-even price exact?",
+   "a": "Yes, for the fees you entered."
+  },
+  {
+   "q": "Does it handle several lots?",
+   "a": "No. See the crypto and shares capital gains calculator for FIFO."
+  },
+  {
+   "q": "Does it handle currency?",
+   "a": "No. Use one currency."
+  }
+ ],
+ "related": [
+  "roi-calculator",
+  "dividend-yield-calculator",
+  "dollar-cost-averaging-calculator",
+  "crypto-cgt-calculator",
+  "percent-change",
+  "capital-gains-tax-calculator"
+ ],
+ "keywords": [
+  "stock profit calculator",
+  "trade profit",
+  "break even price"
+ ]
+}

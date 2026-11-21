@@ -1,0 +1,46 @@
+{
+  "id": "text-to-speech",
+  "seoTitle": "Free Text to Speech: Read Text Aloud in Your Browser",
+  "metaDescription": "Read any text aloud using the voices installed in your browser, with rate, pitch and volume controls. Free, no sign-up and nothing is uploaded.",
+  "intro": "Reads text aloud using your browser's built-in speech synthesis. Pick a voice, adjust rate, pitch and volume, and pause or resume while it speaks.",
+  "why": "Listening to text can help you proofread, check how a sentence flows, rest your eyes or follow a long document while doing something else. People who find reading hard, or who are learning a language, also use spoken text to connect the sound with the spelling.\n\nThis tool uses the speech voices that already exist in your browser and operating system, so there is nothing to install and no account to make. You choose a voice, set the speed and pitch, and press Speak. By default only local voices are listed, because some voices are cloud-backed and send the text to a remote service. Which voices you see depends on your device and browser.",
+  "howTo": [
+    "Type or paste the text into the box.",
+    "Pick a voice from the list; local voices are shown by default.",
+    "Adjust rate, pitch and volume with the sliders.",
+    "Press Speak, and use Pause, Resume or Stop as needed."
+  ],
+  "faq": [
+    {
+      "q": "Why is the voice list empty or short?",
+      "a": "Voices come from your browser and operating system, not from this site. Untick Local voices only to see more, or install extra voices in your system settings. Some browsers load the list a moment after the page opens."
+    },
+    {
+      "q": "Is my text sent to a server?",
+      "a": "Not by this page. With local voices, the speech is produced on your device. Voices marked online may use a remote service run by the browser or system vendor, so keep Local voices only ticked for private text."
+    },
+    {
+      "q": "Can I save the speech as an audio file?",
+      "a": "No. The browser speech API plays the sound but does not give access to the audio, so this tool cannot export an MP3 or WAV. Use a screen recorder if you need a recording."
+    },
+    {
+      "q": "Why does a long text stop or skip?",
+      "a": "The text is split into sentences and queued, but some browsers stop long speech sessions or drop queued sentences. Try shorter passages, or a different voice or browser, if that happens."
+    }
+  ],
+  "related": [
+    "nato-phonetic",
+    "morse-code-audio",
+    "tone-generator",
+    "word-counter",
+    "text-statistics",
+    "readability"
+  ],
+  "keywords": [
+    "text to speech",
+    "read text aloud online",
+    "browser text to speech",
+    "free tts reader",
+    "text reader with voices"
+  ]
+}

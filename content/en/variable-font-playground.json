@@ -1,0 +1,45 @@
+{
+ "id": "variable-font-playground",
+ "seoTitle": "Variable Font Playground: Axes Sliders and font-variation-settings",
+ "metaDescription": "Load a variable font file, move its weight, width and other axes, and copy the font-variation-settings CSS. Free, local, no catalog needed.",
+ "intro": "Reads the axes of a variable font you upload and gives a slider and a number field for each, with a live preview and the CSS to copy.",
+ "why": "Variable fonts pack many styles into one file along axes such as weight (wght) and width (wdth). The tool reads the fvar table to learn each axis range and default, then applies your values with font-variation-settings.\n\nIt works from your own file, so it needs no font catalog or network. Choose a TTF, OTF or WOFF variable font. WOFF2 cannot be read here.",
+ "howTo": [
+  "Choose a variable font file.",
+  "Move the sliders or type axis values.",
+  "Edit the preview text and size.",
+  "Copy the font-variation-settings line."
+ ],
+ "faq": [
+  {
+   "q": "Where do I find a variable font?",
+   "a": "Many open fonts offer them. Check the license for your use."
+  },
+  {
+   "q": "What if there are no sliders?",
+   "a": "The font is static and has no fvar table."
+  },
+  {
+   "q": "Can I use named instances?",
+   "a": "Not in this version. Set the axis values directly."
+  },
+  {
+   "q": "Is it uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "font-file-inspector",
+  "font-format-converter",
+  "font-subsetter",
+  "font-loading-snippet-generator",
+  "type-scale-generator",
+  "readable-typography-previewer"
+ ],
+ "keywords": [
+  "variable font tester",
+  "font variation settings",
+  "wght wdth sliders",
+  "variable font axes viewer"
+ ]
+}

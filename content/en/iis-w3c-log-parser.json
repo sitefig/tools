@@ -1,0 +1,44 @@
+{
+ "id": "iis-w3c-log-parser",
+ "seoTitle": "IIS W3C Log Parser: u_ex Logs to Table and Summary",
+ "metaDescription": "Read IIS W3C extended logs using the #Fields line. See status codes, top URLs, slow requests, or export rows. Free, runs locally.",
+ "intro": "Maps every IIS log line to the columns named in the #Fields header and summarises the result.",
+ "why": "IIS log files change their columns when logging settings change, so a fixed parser breaks. This tool reads the #Fields line and uses it, including when the header appears again in the file.\n\nThe summary covers status codes, top URLs, client IPs and request time. IIS writes UTC by default.",
+ "howTo": [
+  "Paste the log including the # header lines, or choose files.",
+  "Pick the view: summary, table, CSV or JSON.",
+  "Filter by status or choose columns.",
+  "Copy the result or narrow it with the filters."
+ ],
+ "faq": [
+  {
+   "q": "Why do I need the # lines?",
+   "a": "The #Fields line names the columns. Without it the lines cannot be mapped."
+  },
+  {
+   "q": "What if some lines do not match?",
+   "a": "They are skipped and the result says how many. Lines before the first #Fields line are skipped."
+  },
+  {
+   "q": "Which unit is time-taken?",
+   "a": "Milliseconds in IIS logs."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "access-log-parser",
+  "cloudfront-log-parser",
+  "log-to-csv",
+  "response-time-percentiles",
+  "log-format-detector",
+  "csv-viewer"
+ ],
+ "keywords": [
+  "iis log parser",
+  "w3c extended log viewer",
+  "u_ex log analyzer"
+ ]
+}

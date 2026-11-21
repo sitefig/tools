@@ -1,0 +1,45 @@
+{
+ "id": "simple-logo-maker",
+ "seoTitle": "Simple Logo Maker: Shape, Letters and Name to SVG and PNG",
+ "metaDescription": "Build a simple logo from a geometric icon, initials and your brand name. Export SVG and PNG. Free, local, no account.",
+ "intro": "Combines one of eight geometric shapes, optional letters inside it and your brand name in a layout you choose, and exports SVG code and a PNG.",
+ "why": "A quick logo for a side project or a placeholder. Pick a shape, set the colours, choose a font family and a layout: icon left, icon above, icon only or name only. The text colour inside the icon is chosen for contrast.\n\nFonts are the generic system families because the SVG does not embed fonts, so the look changes on other devices. For a final brand, convert text to outlines in a design tool. There is no icon library here, only simple shapes.",
+ "howTo": [
+  "Type your brand name.",
+  "Pick a shape, letters, layout and font family.",
+  "Set icon, text and background colours.",
+  "Copy the SVG or download the PNG."
+ ],
+ "faq": [
+  {
+   "q": "Can I use my own icon?",
+   "a": "Not in this tool. Put your icon into the SVG code or use a design tool."
+  },
+  {
+   "q": "Why does the font look different on another computer?",
+   "a": "Fonts are not embedded in the SVG. Use outlines for final artwork."
+  },
+  {
+   "q": "Is the logo trademark safe?",
+   "a": "No check is made. Search for similar marks before using a logo commercially."
+  },
+  {
+   "q": "What is the PNG scale?",
+   "a": "A multiplier of the SVG size."
+  }
+ ],
+ "related": [
+  "avatar-generator",
+  "favicon-generator",
+  "app-icon-generator",
+  "svg-optimizer",
+  "social-banner-maker",
+  "quote-image-maker"
+ ],
+ "keywords": [
+  "simple logo maker",
+  "free logo generator svg",
+  "text logo creator",
+  "initials logo"
+ ]
+}

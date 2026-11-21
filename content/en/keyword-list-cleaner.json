@@ -1,0 +1,45 @@
+{
+ "id": "keyword-list-cleaner",
+ "seoTitle": "Keyword List Cleaner: Remove Duplicates and Near-Duplicates",
+ "metaDescription": "Clean a keyword list: lowercase, strip symbols, remove duplicates, stop words and near-duplicates such as word order and plurals.",
+ "intro": "Cleans up exported keyword lists. Removes exact duplicates and, if you wish, near-duplicates (same words in a different order, simple plurals) and stop words, and lists what it removed.",
+ "why": "Keyword exports from several tools overlap heavily. Case differences, stray symbols and reordered words make a list longer than it needs to be.\n\nNear-duplicate matching uses a simple English plural rule and ignores word order. That keeps the first form it sees. It can merge keywords with different meanings, so the removed list is shown for review.",
+ "howTo": [
+  "Paste the keyword list.",
+  "Choose the cleaning steps.",
+  "Copy the kept list.",
+  "Check the removed list for merges you do not want."
+ ],
+ "faq": [
+  {
+   "q": "Which keyword is kept?",
+   "a": "The first one in your list."
+  },
+  {
+   "q": "Will it merge \"shoe store\" and \"store shoes\"?",
+   "a": "Yes, with near-duplicates on, because the words are the same. Turn the option off to avoid this."
+  },
+  {
+   "q": "Does it work for other languages?",
+   "a": "Symbols and exact duplicates work everywhere. Stop words and plurals are English only."
+  },
+  {
+   "q": "Can I keep only longer keywords?",
+   "a": "Yes, set the minimum words per keyword."
+  }
+ ],
+ "related": [
+  "dedupe-lines",
+  "keyword-clusterer",
+  "keyword-permutation-generator",
+  "question-keyword-extractor",
+  "keyword-intent-classifier",
+  "sort-lines"
+ ],
+ "keywords": [
+  "keyword list cleaner",
+  "remove duplicate keywords",
+  "keyword deduplicator",
+  "clean keyword list"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "one-rep-max-calculator",
+  "seoTitle": "One-Rep Max (1RM) Calculator with Percentage Table",
+  "metaDescription": "Estimate your one-rep max from a weight and reps using the Epley, Brzycki, Lombardi and Mayhew formulas, with training weights by percentage.",
+  "intro": "Find your estimated max lift without testing it, and plan working weights.",
+  "why": "Enter the weight lifted and the repetitions completed (1 to 12 reps give the best estimates). The page shows four common formulas and their average, then a table of weights at 60 to 100% of that estimate rounded to your plate increment, with typical rep ranges for each percentage.\n\nEstimates from submaximal sets are least accurate for high reps and for lifts you do not train regularly. Test a true max only with a spotter and a proper warm-up.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the weight and reps of a hard set.",
+    "Choose the unit and plate rounding.",
+    "Read the 1RM estimates.",
+    "Use the percentage table to set training weights."
+  ],
+  "faq": [
+    {
+      "q": "Which formula is best?",
+      "a": "They agree within a few percent at low reps. The average smooths differences."
+    },
+    {
+      "q": "Why not use more than 12 reps?",
+      "a": "Endurance and fatigue make the estimate unreliable."
+    },
+    {
+      "q": "Is it safe to lift my max?",
+      "a": "Only with experience, spotters and safety equipment."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "bmr-tdee",
+    "macro-calculator",
+    "heart-rate-zones",
+    "ideal-weight",
+    "body-fat-navy",
+    "water-intake"
+  ],
+  "keywords": [
+    "one rep max calculator",
+    "1rm calculator",
+    "epley formula",
+    "strength training percentages"
+  ]
+}

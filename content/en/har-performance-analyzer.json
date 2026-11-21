@@ -1,0 +1,45 @@
+{
+ "id": "har-performance-analyzer",
+ "seoTitle": "HAR Performance Analyzer: Waterfall, Heaviest Requests, Third Parties",
+ "metaDescription": "Paste a HAR file to see weight by type, largest and slowest requests, third-party share, uncompressed text and a text waterfall. Stays in your browser.",
+ "intro": "Analyses a HAR file for performance: totals by resource type, largest and slowest requests, third-party share, uncompressed text responses and a text waterfall.",
+ "why": "A HAR file has everything the Network panel showed, but reading it as JSON is painful. The numbers you need are totals, outliers and who is not you.\n\nThis tool adds up transferred bytes by type, lists the biggest and slowest requests, separates third-party hosts using a simple site rule, and flags text sent without compression and slow server waits. The waterfall is drawn in text. HAR files can contain cookies and tokens, so reading it locally matters; nothing leaves this page.",
+ "howTo": [
+  "In DevTools, open Network, reload the page, then choose Save all as HAR.",
+  "Paste the file contents into the box.",
+  "Read the type totals and the third-party share first.",
+  "Adjust the list length or waterfall rows with the options."
+ ],
+ "faq": [
+  {
+   "q": "How is third party decided?",
+   "a": "By comparing each host with the registrable domain of the first request, using the last two labels (three for names like co.uk). There is no public suffix list."
+  },
+  {
+   "q": "Why do the sizes differ from DevTools?",
+   "a": "The tool uses the transfer size when the HAR has it, otherwise body plus header size, otherwise the uncompressed size."
+  },
+  {
+   "q": "Is the waterfall exact?",
+   "a": "It is a coarse text scale of start and duration. Use DevTools for detail."
+  },
+  {
+   "q": "Is my HAR uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "third-party-script-cost",
+  "har-analyzer",
+  "lighthouse-report-viewer",
+  "page-weight-download-time",
+  "compression-size-estimator",
+  "cache-control-builder"
+ ],
+ "keywords": [
+  "har file analyzer",
+  "har waterfall",
+  "largest requests har",
+  "har third party share"
+ ]
+}

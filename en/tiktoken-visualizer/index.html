@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Tiktoken Tokenizer Visualizer (GPT-4, GPT-4o) | Free Tools</title>
+<meta name="description" content="See exactly how OpenAI tiktoken splits text into tokens for cl100k_base and o200k_base, with coloured tokens and ids. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/tiktoken-visualizer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/tiktoken-visualizer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/tiktoken-visualizer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Tiktoken Tokenizer Visualizer (GPT-4, GPT-4o) | Free Tools">
+<meta property="og:description" content="See exactly how OpenAI tiktoken splits text into tokens for cl100k_base and o200k_base, with coloured tokens and ids. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/tiktoken-visualizer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Tiktoken Tokenizer Visualizer (GPT-4, GPT-4o) | Free Tools">
+<meta name="twitter:description" content="See exactly how OpenAI tiktoken splits text into tokens for cl100k_base and o200k_base, with coloured tokens and ids. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Tiktoken Tokenizer Visualizer (cl100k / o200k)","url":"https://tools.sitefig.net/en/tiktoken-visualizer/","description":"See exactly how OpenAI tiktoken splits text into tokens for cl100k_base and o200k_base, with coloured tokens and ids. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste or type your text into the input box.","Choose an encoding: cl100k_base or o200k_base.","Set special tokens to plain or allow, and tick the option to show ids in the coloured view.","Read the token count and the colour-coded breakdown, then check the table of ids and bytes."],"keywords":"tiktoken tokenizer online, gpt tokenizer visualizer, cl100k_base tokenizer, o200k_base token counter, free openai tokenizer","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"LLM Tools","item":"https://tools.sitefig.net/en/#llm-tools"},{"@type":"ListItem","position":3,"name":"Tiktoken Tokenizer Visualizer (cl100k / o200k)","item":"https://tools.sitefig.net/en/tiktoken-visualizer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are these the same counts the API uses?","acceptedAnswer":{"@type":"Answer","text":"For the text itself, yes, the encodings are exact implementations of OpenAI's public vocabularies. Billed totals for chat requests also include message framing and other overhead, which this view does not add."}},{"@type":"Question","name":"What do plain and allow mean for special tokens?","acceptedAnswer":{"@type":"Answer","text":"In plain mode, text like the end-of-text marker is tokenised as ordinary characters, which is how most API text is treated. In allow mode, it is turned into the single special token id."}},{"@type":"Question","name":"Does my text leave the browser?","acceptedAnswer":{"@type":"Answer","text":"No. Only a vocabulary file is fetched from this site, once. After that the splitting runs locally, so your prompt stays on your device."}},{"@type":"Question","name":"Why not Claude or Gemini?","acceptedAnswer":{"@type":"Answer","text":"Their tokenizer vocabularies are not available for offline use, so only the OpenAI encodings are included here. Use the token estimator for approximate counts for those models."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#llm-tools">LLM Tools</a></li><li><span aria-current="page">Tiktoken Tokenizer Visualizer (cl100k / o200k)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Tiktoken Tokenizer Visualizer (cl100k / o200k)</h1>
+<p class="lede">Shows your text as coloured tokens using the exact OpenAI cl100k_base and o200k_base encodings, plus a table of token ids and bytes. It also reports token, character and byte counts.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="tiktoken-visualizer" data-module="tokenizer"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A token count is only a number until you see where the splits fall. Why does a long number cost three tokens per group, why does an emoji take several, and why is a leading space attached to a word? Looking at the actual pieces answers those questions and helps you tighten prompts.</p>
+<p>This visualizer implements the tiktoken byte-pair encoding for GPT-4 and GPT-3.5 (cl100k_base) and for GPT-4o and newer models (o200k_base). Each token is shaded, optionally labelled with its id, and listed in a table with its bytes. The vocabulary file is fetched from this same site on first use, and the tokenising happens in your browser. Your text is not uploaded. Only OpenAI encodings are included.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste or type your text into the input box.</li><li>Choose an encoding: cl100k_base or o200k_base.</li><li>Set special tokens to plain or allow, and tick the option to show ids in the coloured view.</li><li>Read the token count and the colour-coded breakdown, then check the table of ids and bytes.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Are these the same counts the API uses?</summary><p>For the text itself, yes, the encodings are exact implementations of OpenAI's public vocabularies. Billed totals for chat requests also include message framing and other overhead, which this view does not add.</p></details>
+<details><summary>What do plain and allow mean for special tokens?</summary><p>In plain mode, text like the end-of-text marker is tokenised as ordinary characters, which is how most API text is treated. In allow mode, it is turned into the single special token id.</p></details>
+<details><summary>Does my text leave the browser?</summary><p>No. Only a vocabulary file is fetched from this site, once. After that the splitting runs locally, so your prompt stays on your device.</p></details>
+<details><summary>Why not Claude or Gemini?</summary><p>Their tokenizer vocabularies are not available for offline use, so only the OpenAI encodings are included here. Use the token estimator for approximate counts for those models.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/gpt-token-counter/"><span class="link-card__title">GPT Token Counter (cl100k + o200k, chat overhead)</span><span class="link-card__desc">Exact token counts for text under cl100k_base and o200k_base side by side, plus an approximate chat-message overhead calculator (OpenAI cookbook rule: 3 tokens per message, +1 per name, +3 reply priming; use o200k_base for the GPT-4o family). Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/token-id-decoder/"><span class="link-card__title">Token ID Decoder / Encoder (tiktoken)</span><span class="link-card__desc">Convert token ids to text and text to token ids with exact cl100k_base / o200k_base vocabularies. Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li><li><a class="link-card" href="/en/multi-tokenizer-counter/"><span class="link-card__title">Multi-Tokenizer Token Counter (GPT, DeepSeek, Qwen, Mistral, Phi, ...)</span><span class="link-card__desc">Count the tokens of one text under every included tokenizer at once, sorted from fewest to most: gpt2 (GPT-2; identical ranks to r50k_base); r50k_base (GPT-3 davinci/curie/babbage/ada); p50k_base (text-davinci-002/003, Codex); cl100k_base (GPT-4, GPT-3.5-turbo); o200k_base (GPT-4o, GPT-4.1, o1/o3); DeepSeek-V3 (deepseek-ai/DeepSeek-V3); DeepSeek-R1 (deepseek-ai/DeepSeek-R1); Qwen2.5 (Qwen/Qwen2.5-7B); Phi-4 (microsoft/phi-4); GPT-NeoX-20B (Pythia, EleutherAI); StarCoder2 (bigcode/starcoder2); Mistral-7B-v0.3 (mistralai/Mistral-7B-v0.3); claude-legacy (LEGACY Claude 1/2 only, NOT Claude 3/4/5). Exact vocabularies, runs offline in your browser (vocabularies load on first use, about 20 MB in total). Exact for the listed models; LEGACY Claude 1/2 tokenizer (from the public npm package @anthropic-ai/tokenizer). It is NOT accurate for Claude 3, 4 or 5-family models: Anthropic has not published those vocabularies. Gemini, Llama, Gemma and Claude 3+ tokenizers are not included (gated or unpublished).</span></a></li><li><a class="link-card" href="/en/tokenizer-visualizer-hf/"><span class="link-card__title">Tokenizer Visualizer (DeepSeek, Qwen, Mistral, Phi, GPT-2, Claude legacy ...)</span><span class="link-card__desc">Pick an encoding and see the text as coloured tokens plus a table of ids and bytes. Encodings: gpt2 (GPT-2; identical ranks to r50k_base); r50k_base (GPT-3 davinci/curie/babbage/ada); p50k_base (text-davinci-002/003, Codex); cl100k_base (GPT-4, GPT-3.5-turbo); o200k_base (GPT-4o, GPT-4.1, o1/o3); DeepSeek-V3 (deepseek-ai/DeepSeek-V3); DeepSeek-R1 (deepseek-ai/DeepSeek-R1); Qwen2.5 (Qwen/Qwen2.5-7B); Phi-4 (microsoft/phi-4); GPT-NeoX-20B (Pythia, EleutherAI); StarCoder2 (bigcode/starcoder2); Mistral-7B-v0.3 (mistralai/Mistral-7B-v0.3); claude-legacy (LEGACY Claude 1/2 only, NOT Claude 3/4/5). Exact for the listed models; LEGACY Claude 1/2 tokenizer (from the public npm package @anthropic-ai/tokenizer). It is NOT accurate for Claude 3, 4 or 5-family models: Anthropic has not published those vocabularies. Gemini, Llama, Gemma and Claude 3+ tokenizers are not included (gated or unpublished).</span></a></li><li><a class="link-card" href="/en/llm-token-estimator/"><span class="link-card__title">LLM Token Count Estimator (approximate)</span><span class="link-card__desc">ESTIMATE of token counts for GPT-4o, GPT-4, Claude, DeepSeek and Llama from text, using per-model chars-per-token ratios and a word/punctuation heuristic. No vocabulary is available offline, so counts are approximate (typically within 10-20% for English).</span></a></li><li><a class="link-card" href="/en/token-truncate/"><span class="link-card__title">Truncate / Chunk Text by Tokens (tiktoken)</span><span class="link-card__desc">Cut text to at most N tokens, or split it into chunks of at most N tokens with overlap, always on a token boundary that does not split a UTF-8 character. Exact cl100k_base / o200k_base. Only OpenAI encodings (cl100k_base, o200k_base) are included. Claude, DeepSeek and Gemini tokenizers are NOT included (their vocabularies are not available offline): use the llm-token-estimator tool for approximate counts of those.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

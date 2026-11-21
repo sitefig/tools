@@ -1,0 +1,46 @@
+{
+  "id": "image-collage",
+  "seoTitle": "Free Image Collage Maker: Photo Grid in Your Browser",
+  "metaDescription": "Arrange several images into a grid collage with set columns, cell size, gap and background colour. Free, and your pictures are not uploaded.",
+  "intro": "Combines several images into one grid collage. You choose the number of columns, the cell size, the gap and background colour, and whether images fill (cover) or fit (contain) each cell.",
+  "why": "A single image that shows several photos together is handy for a before and after, a product sheet, a social post or a quick photo summary of an event. Layout apps are bigger than the job needs, and online collage sites usually upload your photos.\n\nSelect your images in the order you want them, and the tool places them left to right, top to bottom in square cells. Cover crops each picture to fill its cell, and contain shows the whole picture with space around it. The gap and background colour are yours to set. The result is one image in JPEG, PNG or WebP. Everything runs in your browser, so your photos stay on your device.",
+  "howTo": [
+    "Choose two or more image files in the order you want them.",
+    "Set the number of columns, the cell size and the gap in pixels.",
+    "Pick a background colour, and cover or contain for the fit.",
+    "Choose the format, run it and download the collage."
+  ],
+  "faq": [
+    {
+      "q": "In what order are the images placed?",
+      "a": "In the order the files were selected, left to right and then top to bottom. If your system sorts the selection by name, rename the files to get the order you want."
+    },
+    {
+      "q": "What is the difference between cover and contain?",
+      "a": "Cover scales each image to fill its square cell and crops what overflows. Contain scales it to fit inside the cell, leaving background colour at the sides of the image."
+    },
+    {
+      "q": "How big is the final image?",
+      "a": "Width is columns times cell size plus the gaps, and the height is rows times cell size plus gaps. The cell size is limited to 40 to 2000 pixels and columns to 1 to 12."
+    },
+    {
+      "q": "Can I use different sized cells?",
+      "a": "No. Every cell is a square of the same size. For other layouts, build the collage in a design tool."
+    }
+  ],
+  "related": [
+    "image-resizer",
+    "image-compressor",
+    "image-cropper",
+    "images-to-pdf",
+    "gif-maker",
+    "image-info"
+  ],
+  "keywords": [
+    "image collage maker",
+    "photo grid maker",
+    "combine images into one",
+    "make a photo collage online",
+    "free collage creator"
+  ]
+}

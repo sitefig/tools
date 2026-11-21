@@ -1,0 +1,45 @@
+{
+ "id": "spam-trigger-word-checker",
+ "seoTitle": "Spam Trigger Word Checker for Email Subject and Body",
+ "metaDescription": "Highlight spam trigger words like free, act now and click here in your email subject and body, with counts. Free and private, runs in your browser.",
+ "intro": "Paste a subject and body to see words and phrases often cited as spam triggers highlighted in the text, with a count of matches.",
+ "why": "Long lists of spam words circulate, and checking an email against them by eye is tedious. This page marks the matches for you so you can decide which to rewrite, and counts them in the subject and the body separately.\n\nBe realistic about what this tells you. Modern filters score sender reputation, authentication, links and engagement far more than single words, and plenty of legitimate email says \"free\". Treat every match as a prompt to read the sentence again, not as a failure. Your text stays in the browser.",
+ "howTo": [
+  "Paste the subject and the body.",
+  "Read the highlighted matches and the list under them.",
+  "Rewrite phrases that sound like a pitch.",
+  "Run it again to confirm the count went down."
+ ],
+ "faq": [
+  {
+   "q": "Will an email with no matches reach the inbox?",
+   "a": "Not necessarily. Authentication (SPF, DKIM, DMARC), list quality and complaints matter more."
+  },
+  {
+   "q": "Is this the list a filter uses?",
+   "a": "No. It is a hand-made list of commonly cited words. No filter publishes its rules."
+  },
+  {
+   "q": "Does case matter?",
+   "a": "No, matching ignores capitals."
+  },
+  {
+   "q": "Is my email sent anywhere?",
+   "a": "No. It is checked in your browser."
+  }
+ ],
+ "related": [
+  "email-subject-line-tester",
+  "email-deliverability-checklist",
+  "email-campaign-rates",
+  "dmarc-record-analyzer",
+  "spf-record-generator",
+  "email-header-analyzer"
+ ],
+ "keywords": [
+  "spam word checker",
+  "spam trigger words",
+  "email spam test",
+  "spam filter words"
+ ]
+}

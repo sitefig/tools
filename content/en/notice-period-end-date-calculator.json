@@ -1,0 +1,39 @@
+{
+ "id": "notice-period-end-date-calculator",
+ "seoTitle": "Notice Period End Date Calculator: Last Working Day",
+ "metaDescription": "Enter the notice date and length in days, weeks or months to get the last day of the notice period. Free.",
+ "intro": "Adds a notice period to the date notice was given and returns the end date and weekday, with options for whether the first day counts.",
+ "why": "Notice periods end on a date that depends on whether the day notice is given counts and whether the length is in days, weeks or months.\n\nThe tool shows the end date and, if it lands on a weekend, the nearest weekdays. Contract terms and local law decide which applies, so it is a starting point, not advice.",
+ "howTo": [
+  "Enter the date notice is given.",
+  "Enter the length and unit.",
+  "Tick whether the first day counts."
+ ],
+ "faq": [
+  {
+   "q": "Does the day of notice count?",
+   "a": "Contracts differ. Tick the box if yours does."
+  },
+  {
+   "q": "How are months added?",
+   "a": "By calendar month, capped at the last day of a shorter month."
+  },
+  {
+   "q": "Is it legal advice?",
+   "a": "No. Check your contract and local rules."
+  }
+ ],
+ "related": [
+  "annual-leave-pro-rata-calculator",
+  "working-days-due-date-calculator",
+  "add-subtract-dates",
+  "date-difference",
+  "business-days",
+  "day-of-week"
+ ],
+ "keywords": [
+  "notice period calculator",
+  "last working day",
+  "resignation date"
+ ]
+}

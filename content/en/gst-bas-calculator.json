@@ -1,0 +1,38 @@
+{
+ "id": "gst-bas-calculator",
+ "seoTitle": "GST and BAS Worksheet Calculator for Australia",
+ "metaDescription": "Add sales and purchases with GST included, excluded or GST-free to get BAS figures G1, 1A, G11, 1B and the net GST to pay or refund.",
+ "intro": "Total your sales and purchases and see the GST figures that go on a BAS.",
+ "why": "Enter one line per transaction as sale or purchase, the amount and whether it is GST inclusive, exclusive or GST-free. The calculator splits each amount, then totals the main BAS labels: G1 total sales, 1A GST on sales, G11 non-capital purchases, 1B GST on purchases and the net GST payable or refundable. The rate is editable.\n\nIt is a worksheet to understand the figures. Real BAS classification involves capital purchases (G10), private use, input-taxed supplies and adjustments, so lodge through the ATO portal or your agent. This is not tax advice.",
+ "howTo": [
+  "List each transaction as sale|purchase, amount, inc|ex|free.",
+  "Check the rate (10% in Australia).",
+  "Read the BAS figures and the net GST."
+ ],
+ "faq": [
+  {
+   "q": "What is 1A and 1B?",
+   "a": "1A is GST collected on sales; 1B is GST credits on purchases."
+  },
+  {
+   "q": "How is GST-inclusive handled?",
+   "a": "GST is one eleventh of a GST-inclusive amount at 10%."
+  },
+  {
+   "q": "Does it lodge anything?",
+   "a": "No, it only calculates."
+  }
+ ],
+ "related": [
+  "vat-calculator",
+  "au-income-tax-estimator",
+  "wfh-deduction-calculator",
+  "break-even",
+  "invoice-generator"
+ ],
+ "keywords": [
+  "gst calculator australia",
+  "bas worksheet",
+  "gst 1a 1b calculator"
+ ]
+}

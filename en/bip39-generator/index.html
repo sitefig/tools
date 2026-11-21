@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free BIP-39 Mnemonic Generator and Validator Tool | Free Tools</title>
+<meta name="description" content="Generate or validate a BIP-39 recovery phrase and derive its seed, in your browser. For learning and testing only: never use it for real funds. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/bip39-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/bip39-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/bip39-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free BIP-39 Mnemonic Generator and Validator Tool | Free Tools">
+<meta property="og:description" content="Generate or validate a BIP-39 recovery phrase and derive its seed, in your browser. For learning and testing only: never use it for real funds. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/bip39-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free BIP-39 Mnemonic Generator and Validator Tool | Free Tools">
+<meta name="twitter:description" content="Generate or validate a BIP-39 recovery phrase and derive its seed, in your browser. For learning and testing only: never use it for real funds. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"BIP-39 Mnemonic Generator & Validator","url":"https://tools.sitefig.net/en/bip39-generator/","description":"Generate or validate a BIP-39 recovery phrase and derive its seed, in your browser. For learning and testing only: never use it for real funds. Free.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose generate or validate. For generate, set the number of words, or paste your own entropy hex.","For validate, paste the full mnemonic. Enter a passphrase only if you want to test one.","Run it and read the mnemonic, the entropy and the derived seed. Use test data only."],"keywords":"bip39 generator, bip39 mnemonic validator, bip39 seed from mnemonic, free bip39 tool, mnemonic checksum validator","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"BIP-39 Mnemonic Generator & Validator","item":"https://tools.sitefig.net/en/bip39-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it safe to use for a real wallet?","acceptedAnswer":{"@type":"Answer","text":"No. Never generate or paste a phrase that controls real funds into any website. It runs locally, but your browser, extensions or device could still leak it. Use a hardware wallet or trusted offline software."}},{"@type":"Question","name":"What entropy lengths are valid?","acceptedAnswer":{"@type":"Answer","text":"Entropy must be 128, 160, 192, 224 or 256 bits, which is 32 to 64 hex digits, giving 12, 15, 18, 21 or 24 words. Leave the box empty to use random bytes from the browser."}},{"@type":"Question","name":"What does validation check?","acceptedAnswer":{"@type":"Answer","text":"It checks the word count, that each word is on the English BIP-39 list, and that the checksum bits match the entropy. It does not tell you whether a wallet holds anything."}},{"@type":"Question","name":"What is the passphrase?","acceptedAnswer":{"@type":"Answer","text":"The optional passphrase is mixed into the seed derivation. A different passphrase gives a completely different seed from the same words, so losing it means losing access."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">BIP-39 Mnemonic Generator &amp; Validator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>BIP-39 Mnemonic Generator &amp; Validator</h1>
+<p class="lede">Generates a BIP-39 English mnemonic from random or supplied entropy, validates the checksum of an existing phrase and derives the 512-bit seed. For testing and learning only.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="bip39-generator" data-module="devz1" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Developers building or testing wallets need valid recovery phrases for test cases, documentation and checksum debugging. This tool shows how the standard works: entropy in, checksum bits added, words picked from the 2048-word English list, then a seed derived with PBKDF2-HMAC-SHA512 and an optional passphrase. You can supply your own entropy to reproduce a known test vector, or validate a phrase to see whether the words and checksum are correct. Important: this is not a place to create a wallet. Anything generated or pasted into a web page could be exposed by an extension, a compromised device or a mistake. Use it with throwaway data, and make real keys with a hardware wallet or trusted offline software.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose generate or validate. For generate, set the number of words, or paste your own entropy hex.</li><li>For validate, paste the full mnemonic. Enter a passphrase only if you want to test one.</li><li>Run it and read the mnemonic, the entropy and the derived seed. Use test data only.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Is it safe to use for a real wallet?</summary><p>No. Never generate or paste a phrase that controls real funds into any website. It runs locally, but your browser, extensions or device could still leak it. Use a hardware wallet or trusted offline software.</p></details>
+<details><summary>What entropy lengths are valid?</summary><p>Entropy must be 128, 160, 192, 224 or 256 bits, which is 32 to 64 hex digits, giving 12, 15, 18, 21 or 24 words. Leave the box empty to use random bytes from the browser.</p></details>
+<details><summary>What does validation check?</summary><p>It checks the word count, that each word is on the English BIP-39 list, and that the checksum bits match the entropy. It does not tell you whether a wallet holds anything.</p></details>
+<details><summary>What is the passphrase?</summary><p>The optional passphrase is mixed into the seed derivation. A different passphrase gives a completely different seed from the same words, so losing it means losing access.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/ethereum-keccak256-hasher/"><span class="link-card__title">Keccak-256 / SHA-3 Hasher</span><span class="link-card__desc">Hand-written Keccak-f[1600]: Ethereum Keccak-256 (not NIST SHA3-256), Keccak-512 and SHA3-224/256/384/512. Shows the 4-byte selector for function signatures.</span></a></li><li><a class="link-card" href="/en/pbkdf2-key-derivation/"><span class="link-card__title">PBKDF2 Key Derivation</span><span class="link-card__desc">Derive a key from a password with PBKDF2 (WebCrypto) using SHA-1/256/384/512; output as hex and Base64.</span></a></li><li><a class="link-card" href="/en/passphrase-generator/"><span class="link-card__title">Passphrase Generator</span><span class="link-card__desc">Pronounceable syllable-based passphrases from crypto.getRandomValues. Entropy is computed exactly from the syllable space.</span></a></li><li><a class="link-card" href="/en/hash-generator/"><span class="link-card__title">Hash Generator</span><span class="link-card__desc">MD5, SHA-1, SHA-256, SHA-384 and SHA-512 of your text, all at once.</span></a></li><li><a class="link-card" href="/en/shamir-secret-sharing/"><span class="link-card__title">Shamir Secret Sharing (GF(256))</span><span class="link-card__desc">Split a secret into n shares so any k recover it (byte-wise Shamir over GF(256), random coefficients from crypto.getRandomValues), or combine shares. Shares look like k-x-hex. Fewer than k shares reveal nothing.</span></a></li><li><a class="link-card" href="/en/random-secret-generator/"><span class="link-card__title">Random Secret / Token Generator</span><span class="link-card__desc">Hex, base64, base64url, UUID v4, alphanumeric or numeric tokens from crypto.getRandomValues.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

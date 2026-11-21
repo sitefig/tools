@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-comment-annotator",
+ "seoTitle": "robots.txt Comment Annotator: Plain-English Rule Notes",
+ "metaDescription": "Add a comment above every robots.txt rule that explains in plain words which URLs it blocks or allows. Free, runs in your browser.",
+ "intro": "Writes a short explanation above each Allow and Disallow line.",
+ "why": "A robots.txt full of patterns like /*?sort= or /*.pdf$ is a mystery to the next person who edits it. Comments help, but few people write them.\n\nThe annotator reads each rule and adds a comment such as Blocks everything inside the folder /admin/ or Blocks any URL ending in .pdf. Existing comments and lines with their own comment are left alone.",
+ "howTo": [
+  "Paste the robots.txt.",
+  "Copy the annotated version.",
+  "Edit comments that are not quite right.",
+  "Keep the annotated file as your source."
+ ],
+ "faq": [
+  {
+   "q": "Does it change the rules?",
+   "a": "No, it only adds comment lines."
+  },
+  {
+   "q": "Are descriptions always right?",
+   "a": "They are generated from the pattern shape. Odd wildcard mixes get a generic description, so read them."
+  },
+  {
+   "q": "Does it touch existing comments?",
+   "a": "No."
+  },
+  {
+   "q": "Do comments increase the file size?",
+   "a": "Yes, slightly. Mind the 500 KiB limit."
+  }
+ ],
+ "related": [
+  "robots-txt-formatter",
+  "robots-txt-viewer",
+  "robots-txt-minifier",
+  "robots-txt-validator",
+  "robots-tester"
+ ],
+ "keywords": [
+  "explain robots.txt",
+  "robots.txt comments",
+  "annotate robots.txt",
+  "robots.txt documentation"
+ ]
+}

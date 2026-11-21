@@ -1,0 +1,44 @@
+{
+ "id": "redirect-map-flattener",
+ "seoTitle": "Redirect Chain and Loop Finder for Redirect Lists",
+ "metaDescription": "Paste old to new redirect pairs and find chains and loops, then get flattened rules that point every old URL straight to its final destination.",
+ "intro": "Checks a redirect list for chains (A to B to C) and loops (A to B to A) and outputs rules where each old URL goes directly to the final URL.",
+ "why": "Migrations pile redirects on redirects. Each extra hop slows visitors and wastes crawl effort, and Google advises keeping chains to three hops or fewer. A loop breaks the page completely.\n\nThis tool works on the list you paste, so you can fix the map before it goes live. To follow redirects on a real URL, use the Redirect Chain Analyzer with curl output. Matching uses host, path and query exactly as written, with an option to ignore the trailing slash.",
+ "howTo": [
+  "Paste your redirect pairs, one per line.",
+  "Review the chains and loops.",
+  "Copy the flattened rules and replace the old list."
+ ],
+ "faq": [
+  {
+   "q": "What counts as a chain?",
+   "a": "A rule whose target is itself the source of another rule. The tool follows it to the end."
+  },
+  {
+   "q": "What happens to loops?",
+   "a": "They are listed and left out of the flattened rules, because they have no valid destination. Fix them by hand."
+  },
+  {
+   "q": "Does it request the URLs?",
+   "a": "No. It only reads the list you paste."
+  },
+  {
+   "q": "How many hops does Google follow?",
+   "a": "Up to 10, but its site move guide advises three at most in practice."
+  }
+ ],
+ "related": [
+  "redirect-chain-analyzer",
+  "bulk-redirect-rules",
+  "redirect-rule-tester",
+  "redirect-map-matcher",
+  "redirect-code-generator",
+  "url-list-normalizer"
+ ],
+ "keywords": [
+  "redirect chain finder",
+  "flatten redirects",
+  "redirect loop checker",
+  "redirect map cleanup"
+ ]
+}

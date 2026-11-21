@@ -1,0 +1,46 @@
+{
+ "id": "bech32-codec",
+ "seoTitle": "Free Bech32 and Bech32m Decoder and Encoder",
+ "metaDescription": "Decode and validate bech32 or bech32m strings such as SegWit and Taproot addresses, or encode hex bytes and witness programs. Free, in your browser.",
+ "intro": "Paste a bech32 or bech32m string to decode it, or switch the mode to encode hex bytes or a SegWit witness program. The tool shows checksum validity, the human-readable part and the data.",
+ "why": "Bitcoin SegWit and Taproot addresses, Lightning invoices and several other protocols use bech32 encoding, which has a built-in checksum designed to catch typing errors. When you build wallet software or inspect a transaction, you need to know whether an address is valid, which checksum variant it uses and what witness version and program sit inside. Version 0 addresses use bech32, while later versions use bech32m, and mixing them up is a classic bug. This tool decodes both, reports rule violations such as a wrong program length, and recognises P2WPKH, P2WSH and P2TR forms. It can also encode. Everything runs in your browser; it validates format only and does not check the network or funds.",
+ "howTo": [
+  "Choose a mode: decode, encode bytes or encode segwit.",
+  "Paste the bech32 string, or the hex bytes or witness program to encode.",
+  "For encoding, set the human-readable part, checksum type or witness version, then read the result."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between bech32 and bech32m?",
+   "a": "They use different checksum constants. SegWit version 0 addresses use bech32, and version 1 and later, including Taproot, use bech32m. Using the wrong one makes the address invalid."
+  },
+  {
+   "q": "Why does it reject a long string?",
+   "a": "Standard bech32 is limited to 90 characters. Tick 'No 90-character limit' for formats such as Lightning invoices that exceed it."
+  },
+  {
+   "q": "Does a valid checksum mean the address is safe to use?",
+   "a": "No. It only means the string is well formed. It says nothing about who controls the address, which network it belongs to beyond the prefix, or whether funds will arrive."
+  },
+  {
+   "q": "Can it decode other data besides addresses?",
+   "a": "Yes. Any bech32 or bech32m string is decoded to its 5-bit values and, if they fit whole bytes, the bytes. The SegWit analysis only appears when the first value is a valid witness version."
+  }
+ ],
+ "related": [
+  "bitcoin-bech32-address-encoder",
+  "base58-encoder",
+  "hex-text",
+  "bip39-generator",
+  "base32",
+  "ethereum-keccak256-hasher"
+ ],
+ "keywords": [
+  "bech32 decoder",
+  "bech32m encoder",
+  "free bech32 tool",
+  "segwit address decoder",
+  "taproot address validator",
+  "bip173 bip350 online"
+ ]
+}

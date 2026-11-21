@@ -1,0 +1,38 @@
+{
+ "id": "antibot-waf-detector",
+ "seoTitle": "Anti-bot and WAF Detector from Headers, Cookies and HTML",
+ "metaDescription": "Paste response headers, cookies and page source to see which protection a site uses: Cloudflare, Akamai, DataDome, HUMAN, Imperva, Kasada, reCAPTCHA.",
+ "intro": "Find out which bot protection, WAF or CAPTCHA produced a response, from public signatures in its headers, cookies and HTML.",
+ "why": "When a request returns 403, a challenge page or odd cookies, the first question is which product is in front of the site. This tool matches the pasted text against public markers: server and diagnostic headers, characteristic cookie names, challenge script paths and widget markup for Cloudflare (including Turnstile), Akamai, DataDome, HUMAN/PerimeterX, Imperva, Kasada, F5, AWS WAF, Sucuri, Fastly, Vercel, reCAPTCHA, hCaptcha, Arkose and others.\n\nA match shows a product is deployed, not how it is configured, and absence of a match proves nothing: responses vary by visitor and the paste may be incomplete. Use it to audit your own sites, understand blocked monitoring or write accurate support tickets.",
+ "howTo": [
+  "Copy the response headers (curl -i) and, if possible, the first part of the HTML.",
+  "Paste everything, including Set-Cookie lines.",
+  "Read the detected products and the evidence for each."
+ ],
+ "faq": [
+  {
+   "q": "Does it bypass protection?",
+   "a": "No. It only names what is visible in text you already have."
+  },
+  {
+   "q": "Why nothing detected?",
+   "a": "The response may be from a site without such protection, or the paste lacks the cookies and scripts that carry the markers."
+  },
+  {
+   "q": "Is it accurate?",
+   "a": "Signatures are public cookie, header and script names. Rebranded or customised deployments can hide them."
+  }
+ ],
+ "related": [
+  "http-headers-analyzer",
+  "cookie-flag-analyzer",
+  "ja3-ja4-fingerprint-calculator",
+  "tracker-detector",
+  "csp-analyzer"
+ ],
+ "keywords": [
+  "detect cloudflare datadome",
+  "waf fingerprint",
+  "captcha detector"
+ ]
+}

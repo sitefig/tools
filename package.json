@@ -1,0 +1,21 @@
+{
+  "name": "free-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "npm run build:css && npm run build:pages",
+    "build:css": "tailwindcss -i styles/main.css -o assets/site.css --minify",
+    "build:pages": "node scripts/build.mjs",
+    "test": "node test/smoke.mjs && node test/sentiment.mjs && node test/cli.mjs && node test/pages.mjs",
+    "serve": "python3 -m http.server 8765",
+    "mcp": "node cli/mcp.mjs"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  },
+  "bin": {
+    "ft": "cli/ft.mjs",
+    "free-tools-mcp": "cli/mcp.mjs"
+  }
+}

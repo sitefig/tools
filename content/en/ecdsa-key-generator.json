@@ -1,0 +1,45 @@
+{
+ "id": "ecdsa-key-generator",
+ "seoTitle": "Free ECDSA Key Pair Generator: P-256, P-384, P-521 PEM and JWK",
+ "metaDescription": "Generate an ECDSA or ECDH key pair in your browser. PKCS#8 and SPKI PEM, JWK with thumbprint. Private key never leaves the tab.",
+ "intro": "Creates an elliptic-curve key pair with your browser's WebCrypto and shows it as PEM and as JWK, with the RFC 7638 thumbprint as key ID.",
+ "why": "ES256, ES384 and ES512 JWT signing, WebAuthn work and many API signatures use ECDSA keys. This page generates a P-256, P-384 or P-521 pair and gives you the formats tools ask for: PKCS#8 private PEM, SPKI public PEM and both JWKs.\n\nThe key is created by the browser and shown only here. It is good for tests, learning and local setups. For production keys use a hardware module, a KMS, or a trusted machine and keep private keys out of web pages. The output matches OpenSSL: the PEM loads with openssl pkey and the public key equals openssl pkey -pubout.",
+ "howTo": [
+  "Choose the curve and whether the key is for signing or key agreement.",
+  "Optionally set a key ID.",
+  "Copy the PEM or JWK you need.",
+  "Store the private key safely and do not share it."
+ ],
+ "faq": [
+  {
+   "q": "Which curve should I pick?",
+   "a": "P-256 is the common default (ES256). P-384 and P-521 give larger keys and are used when a policy asks for them."
+  },
+  {
+   "q": "Is the private key sent anywhere?",
+   "a": "No. It is generated and shown in your browser only."
+  },
+  {
+   "q": "What is the thumbprint?",
+   "a": "A SHA-256 hash of the required public JWK fields (RFC 7638). It is a stable key identifier and is used as the key ID if you leave it blank."
+  },
+  {
+   "q": "Can I use these keys for Ed25519 or RSA?",
+   "a": "No. Use the Ed25519 or RSA key generator tools for those."
+  }
+ ],
+ "related": [
+  "jwk-pem-converter",
+  "ed25519-key-generator",
+  "rsa-key-pair-generator",
+  "ssh-key-pair-generator",
+  "jwt-asymmetric-sign-verify",
+  "x509-san-csr-builder"
+ ],
+ "keywords": [
+  "ecdsa key generator",
+  "generate p-256 key pem",
+  "ec key pair online",
+  "es256 key generator"
+ ]
+}

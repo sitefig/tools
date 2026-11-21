@@ -1,0 +1,47 @@
+{
+ "id": "sql-format",
+ "seoTitle": "Free SQL Formatter & Beautifier Online",
+ "metaDescription": "Free online SQL formatter. Uppercase keywords and lay out clauses, joins and subqueries on separate lines with your choice of indent. Runs locally.",
+ "intro": "Format SQL so each clause, join and subquery sits on its own line. Keywords can be uppercased, and strings and comments are left alone.",
+ "why": "SQL written by an ORM, copied from a log or squeezed into one line by a colleague is hard to read, and mistakes in joins or conditions hide easily. A consistent layout makes a query reviewable.\n\nThe formatter starts SELECT, FROM, WHERE, GROUP BY, HAVING and ORDER BY on new lines, places joins and their ON conditions clearly, indents subqueries, and lays out VALUES lists. Keywords can be uppercased so they stand out from table and column names. Quoted strings, including escaped quotes, are kept exactly. It understands general SQL rather than one dialect, so very vendor-specific syntax may be laid out simply. Formatting runs in your browser, and your queries and table names are not uploaded.",
+ "howTo": [
+  "Paste your SQL into the input box.",
+  "Choose the indent: 2, 4 or 8 spaces, or a tab.",
+  "Tick Uppercase keywords if you want SELECT and FROM in capitals.",
+  "Copy the formatted query."
+ ],
+ "faq": [
+  {
+   "q": "Which databases does it support?",
+   "a": "It uses general SQL rules and does not target one dialect. Common statements for PostgreSQL, MySQL, SQLite and SQL Server are laid out well, while vendor-specific syntax may be formatted more simply."
+  },
+  {
+   "q": "Does it change the meaning of a query?",
+   "a": "No. Only whitespace, line breaks and the case of keywords change. String contents, identifiers and numbers are kept as written."
+  },
+  {
+   "q": "Can it format several statements at once?",
+   "a": "Yes. Statements separated by semicolons, such as a SELECT followed by an INSERT, are each formatted in turn."
+  },
+  {
+   "q": "What about comments?",
+   "a": "Comments are kept in the output. If you want to remove them, use the SQL Minifier, which strips comments and extra whitespace."
+  }
+ ],
+ "related": [
+  "sql-minify",
+  "sql-keyword-uppercaser",
+  "sql-explainer",
+  "sql-dialect-converter",
+  "postgres-explain-visualizer",
+  "csv-to-sql"
+ ],
+ "keywords": [
+  "sql formatter online",
+  "sql beautifier",
+  "format sql online",
+  "free sql formatter",
+  "sql pretty print",
+  "sql query formatter"
+ ]
+}

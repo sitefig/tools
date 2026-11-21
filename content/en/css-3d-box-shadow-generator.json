@@ -1,0 +1,43 @@
+{
+ "id": "css-3d-box-shadow-generator",
+ "seoTitle": "Free CSS 3D Box-Shadow Generator with Preview",
+ "metaDescription": "Build 3D box-shadow CSS: stepped extrusion, long shadow, realistic layered elevation or hard retro offset. Live preview. Free, in your browser.",
+ "intro": "Create multi-layer box-shadows that look three-dimensional: stepped extrusion, long flat shadow, smooth realistic elevation or a hard retro offset, with colour, depth and direction controls.",
+ "why": "A single box-shadow gives a soft blur, but depth effects need many layers. A chunky 3D button is a stack of one-pixel steps in the same direction, a long shadow runs diagonally across the page, and a realistic card shadow is made of several soft layers that grow together. Writing twenty values by hand and keeping them consistent is not fun.\n\nThis generator builds the stack from a handful of settings: style, shadow and face colour, depth, direction as an angle and opacity for layered shadows. The preview is a button-like block so you can judge the effect directly. Copy the CSS when it looks right. The calculation runs in your browser, so you can experiment freely.",
+ "howTo": [
+  "Choose a style: 3D extrude, long shadow, layered realistic or hard retro.",
+  "Set the shadow colour, face colour and depth in pixels.",
+  "Set the direction in degrees, where 0 points right and 90 points down, and the opacity for layered shadows.",
+  "Check the preview and copy the CSS into your stylesheet."
+ ],
+ "faq": [
+  {
+   "q": "Will many shadow layers slow down my page?",
+   "a": "A handful of layers on a few elements is fine. Very deep extrusions on many animated elements can cost rendering time, so keep the depth modest and test on a low-end phone."
+  },
+  {
+   "q": "What does the angle control?",
+   "a": "It sets the direction the shadow extends, measured in degrees, with 0 pointing right and 90 pointing down. A 45 degree angle gives the classic bottom-right look."
+  },
+  {
+   "q": "Which style is best for a button?",
+   "a": "The 3D extrude and hard retro styles read as pressable, since you can shrink the offset on :active to make the button look pushed in. Layered realistic is better suited to cards and panels."
+  }
+ ],
+ "related": [
+  "box-shadow-generator",
+  "css-claymorphism-generator",
+  "css-box-shadow-to-tailwind",
+  "neumorphism-generator",
+  "text-shadow-generator",
+  "glassmorphism-generator"
+ ],
+ "keywords": [
+  "3d box shadow generator",
+  "css long shadow generator",
+  "css 3d button shadow",
+  "layered box shadow css",
+  "retro box shadow css",
+  "free css shadow tool"
+ ]
+}

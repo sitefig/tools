@@ -1,0 +1,45 @@
+{
+ "id": "eml-viewer",
+ "seoTitle": "EML Email Viewer: Headers, Body and Attachments",
+ "metaDescription": "Read an .eml message: decoded headers, plain and HTML bodies, nested MIME parts and an attachment list. Everything stays in your browser.",
+ "intro": "Open a saved email message and see what is inside, including parts your mail client hides.",
+ "why": "Paste the raw message source. The parser unfolds headers, decodes RFC 2047 encoded words in Subject and addresses, walks nested multipart structures, decodes base64 and quoted-printable bodies in their declared charsets and lists attachments with names, types and sizes. The HTML part is shown in a sandboxed frame with remote content blocked by a content-security policy, so tracking pixels do not load.\n\nOutput was compared with Python's email package. For Outlook .msg files use the Outlook MSG viewer.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+ "howTo": [
+  "Open the .eml in a text editor and copy everything.",
+  "Paste it in.",
+  "Read the headers, text and structure.",
+  "Use the header analyzer for the delivery path."
+ ],
+ "faq": [
+  {
+   "q": "Can it extract attachments?",
+   "a": "It lists them. Downloading is not offered in this version."
+  },
+  {
+   "q": "Does viewing HTML load images?",
+   "a": "No. External resources are blocked."
+  },
+  {
+   "q": "Why paste instead of choose a file?",
+   "a": "Pasting works the same on every browser; the text is not uploaded."
+  },
+  {
+   "q": "Is my data sent anywhere?",
+   "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+  }
+ ],
+ "related": [
+  "email-header-analyzer",
+  "quoted-printable",
+  "base64-decode",
+  "html-entities",
+  "pii-redactor",
+  "outlook-msg-viewer"
+ ],
+ "keywords": [
+  "eml viewer",
+  "open eml file online",
+  "email source viewer",
+  "mime parser"
+ ]
+}

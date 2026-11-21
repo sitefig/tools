@@ -1,0 +1,46 @@
+{
+ "id": "pdf-add-page-numbers",
+ "seoTitle": "Free Add Page Numbers to PDF Online",
+ "metaDescription": "Stamp page numbers onto an existing PDF with position, format like Page {n} of {N}, start number, size and page range. Free, in your browser.",
+ "intro": "Add page numbers to an existing PDF. Choose the position, the format such as Page {n} of {N}, the first number, font size and which pages to number.",
+ "why": "Merged files, scans and exported chapters often arrive without page numbers, which makes referring to a page in a meeting or a legal review awkward. Word processors add numbers when you write a document, but not after the PDF exists.\n\nThis tool stamps numbers onto the finished pages. Pick one of six positions along the top or bottom edge, write a format using {n} for the current number and {N} for the total, and set the first number, so a chapter can start at 15. You can also limit the numbering to a range, for example to skip a cover page. It respects page rotation and crop offsets, so numbers land where you expect on rotated pages. Text is set in Helvetica, and characters outside the Western set show as a question mark.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Pick a position and write the format, for example Page {n} of {N}.",
+  "Set the first number, font size, margin, bold, and the pages to number if you want a subset.",
+  "Run the tool and download the numbered PDF."
+ ],
+ "faq": [
+  {
+   "q": "What do {n} and {N} mean?",
+   "a": "{n} is replaced with the page's own number, and {N} with the total number of pages. The default format Page {n} of {N} gives Page 3 of 12. Use just {n} for a bare number."
+  },
+  {
+   "q": "Can I skip the cover page?",
+   "a": "Yes. Enter a range in the pages field, such as 2-, to number from page two onwards. Set the first number to 1 if you want page two to be shown as 1."
+  },
+  {
+   "q": "Will the numbers cover existing text?",
+   "a": "They are drawn on top of the page, near the edge. If your page has content in the margin, increase the margin value or choose another position. The crop box and rotation are taken into account."
+  },
+  {
+   "q": "Can I change the font?",
+   "a": "Only the size and bold setting. The text uses Helvetica, a standard PDF font, so no font files are embedded and the file size barely grows."
+  }
+ ],
+ "related": [
+  "pdf-add-text-watermark",
+  "pdf-merge",
+  "pdf-crop-margins",
+  "pdf-reorder-pages",
+  "text-to-pdf",
+  "pdf-page-count-and-sizes"
+ ],
+ "keywords": [
+  "add page numbers to pdf",
+  "pdf page numbering online",
+  "number pdf pages",
+  "insert page numbers pdf free",
+  "stamp page numbers"
+ ]
+}

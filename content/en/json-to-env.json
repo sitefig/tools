@@ -1,0 +1,45 @@
+{
+ "id": "json-to-env",
+ "seoTitle": "Free JSON to .env Converter - Flatten Config Online",
+ "metaDescription": "Flatten JSON config into KEY=VALUE lines with upper-case names joined by underscores. Handles arrays and quoting. Free and runs in your browser.",
+ "intro": "Flattens a JSON config into .env lines, joining nested keys with underscores in upper case, so database.host becomes DATABASE_HOST.",
+ "why": "Configuration often starts life as a JSON file and then has to become environment variables for Docker, a CI job or a hosting dashboard. Retyping nested keys as flat names is easy to get wrong, and values with spaces or a dollar sign need quoting rules that vary between loaders. This tool walks the JSON, builds the names for you and quotes values that need it. You can add a prefix, change the separator, switch off upper-casing and choose how arrays are written. It runs locally, which is useful because config files tend to hold passwords and tokens you would rather not paste into a stranger's server.",
+ "howTo": [
+  "Paste a JSON object into the input box. The top level has to be an object.",
+  "Set an optional prefix and separator, and choose upper-case keys or not.",
+  "Pick how arrays are written: indexed keys, one comma-separated value or a JSON string, then copy the result."
+ ],
+ "faq": [
+  {
+   "q": "How are nested keys named?",
+   "a": "The path is joined with your separator (underscore by default), characters outside A-Z, a-z, 0-9 and underscore are replaced by underscores, and the result is upper-cased unless you turn that off. So app.port becomes APP_PORT."
+  },
+  {
+   "q": "What happens to arrays?",
+   "a": "Indexed mode gives KEY_0, KEY_1 and so on. Comma mode joins simple values into one line. JSON mode stores the whole array as a JSON string. Comma mode falls back to JSON when an array holds objects."
+  },
+  {
+   "q": "When are values quoted?",
+   "a": "Empty values and anything containing whitespace, #, quotes, $, backticks, backslashes or = are wrapped in double quotes with the special characters escaped. Plain values stay bare. null becomes an empty value."
+  },
+  {
+   "q": "Will every .env loader read the output?",
+   "a": "Most will, but quoting rules differ slightly between dotenv, Docker and shells. Test the file with the loader you actually use before relying on it."
+  }
+ ],
+ "related": [
+  "env-to-json",
+  "env-sanitizer",
+  "env-linter",
+  "json-flatten-unflatten",
+  "docker-compose-env-generator",
+  "yaml-to-json"
+ ],
+ "keywords": [
+  "json to env",
+  "json to dotenv converter",
+  "convert json config to environment variables",
+  "free json to env file",
+  "flatten json to env"
+ ]
+}

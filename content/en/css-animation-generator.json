@@ -1,0 +1,46 @@
+{
+  "id": "css-animation-generator",
+  "seoTitle": "Free CSS Animation Generator with Keyframe Presets",
+  "metaDescription": "Pick a keyframe preset such as bounce, shake or fade-in, tune duration, delay and easing, and copy the CSS. Free, runs in your browser.",
+  "intro": "Writes CSS keyframes and an animation declaration from ready-made presets like fade-in, slide-up, bounce, shake, flip, wobble and heartbeat. You set duration, delay, timing, iteration and fill mode.",
+  "why": "Small motion cues make an interface feel alive, but writing keyframes from memory is a chore and tuning timing by trial and error means constant reloads. Most of what people need, such as a fade, a slide, a bounce or a shake, is a standard recipe.\n\nChoose a preset, set the duration, delay, easing curve, iteration count and fill mode, and watch the sample box animate. The output includes both the keyframes block and a class that applies the animation, ready to paste. Use animation sparingly, since constant movement is distracting and can cause problems for people with vestibular disorders. Respect the reduced motion setting in your own stylesheet. Everything runs in your browser.",
+  "howTo": [
+    "Choose a preset animation from the list.",
+    "Set the duration, delay, timing function and iteration count.",
+    "Choose the fill mode and watch the preview box.",
+    "Copy the keyframes and the animation rule."
+  ],
+  "faq": [
+    {
+      "q": "What do the iteration and fill options mean?",
+      "a": "Iteration is how many times it plays, or infinite for a loop. Fill mode decides which styles apply before and after the animation: none, forwards keeps the end state, backwards applies the first frame during the delay, both combines them."
+    },
+    {
+      "q": "How do I respect reduced motion?",
+      "a": "Wrap your animation in a media query for prefers-reduced-motion: no-preference, or turn it off inside a reduce query. The generated CSS does not add this for you."
+    },
+    {
+      "q": "Can I use my own keyframes?",
+      "a": "This tool uses its fixed presets. Copy the output and edit the percentages and properties by hand to build a custom animation."
+    },
+    {
+      "q": "Which properties are safe to animate?",
+      "a": "Transform and opacity are the cheapest because browsers can animate them without re-laying out the page. Animating width, height or margins is more expensive. The presets here stick to transform and opacity."
+    }
+  ],
+  "related": [
+    "css-cubic-bezier",
+    "css-loader-generator",
+    "css-filter-generator",
+    "text-shadow-generator",
+    "box-shadow-generator",
+    "gradient-generator"
+  ],
+  "keywords": [
+    "css animation generator",
+    "css keyframes generator",
+    "css bounce animation",
+    "css shake animation",
+    "free css animation maker"
+  ]
+}

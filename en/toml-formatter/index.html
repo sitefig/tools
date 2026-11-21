@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free TOML Formatter &amp; Key Sorter Online | Free Tools</title>
+<meta name="description" content="Free online TOML formatter. Normalise key = value spacing, add blank lines before tables, fix array indentation and optionally sort keys.">
+<link rel="canonical" href="https://tools.sitefig.net/en/toml-formatter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/toml-formatter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/toml-formatter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free TOML Formatter &amp; Key Sorter Online | Free Tools">
+<meta property="og:description" content="Free online TOML formatter. Normalise key = value spacing, add blank lines before tables, fix array indentation and optionally sort keys.">
+<meta property="og:url" content="https://tools.sitefig.net/en/toml-formatter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free TOML Formatter &amp; Key Sorter Online | Free Tools">
+<meta name="twitter:description" content="Free online TOML formatter. Normalise key = value spacing, add blank lines before tables, fix array indentation and optionally sort keys.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"TOML Formatter","url":"https://tools.sitefig.net/en/toml-formatter/","description":"Free online TOML formatter. Normalise key = value spacing, add blank lines before tables, fix array indentation and optionally sort keys.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your TOML into the input box.","Tick Sort keys within each table if you want alphabetical order.","Check the output, especially tables and arrays.","Copy the result, or convert to JSON to confirm the file still parses."],"keywords":"toml formatter, format toml online, toml beautifier, free toml formatter, sort toml keys, cargo toml formatter","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Formatters","item":"https://tools.sitefig.net/en/#formatters"},{"@type":"ListItem","position":3,"name":"TOML Formatter","item":"https://tools.sitefig.net/en/toml-formatter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are comments preserved?","acceptedAnswer":{"@type":"Answer","text":"Yes, including comments after values on the same line. The formatter only changes whitespace and blank lines, never the content of keys, values or comments."}},{"@type":"Question","name":"Should I sort keys?","acceptedAnswer":{"@type":"Answer","text":"Sorting suits long lists such as dependencies. Leave it off when the order carries meaning to readers, such as name and version at the top of a package table."}},{"@type":"Question","name":"Does it check my TOML is valid?","acceptedAnswer":{"@type":"Answer","text":"No. For a validity check, paste the file into the TOML to JSON converter, which reports errors with a line number."}},{"@type":"Question","name":"What happens to multi-line strings?","acceptedAnswer":{"@type":"Answer","text":"Multi-line strings keep their content and line breaks exactly as written, so text inside triple quotes is never re-indented or trimmed by the formatter."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#formatters">Formatters</a></li><li><span aria-current="page">TOML Formatter</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>TOML Formatter</h1>
+<p class="lede">Tidy a TOML file by normalising spacing around equals signs, adding blank lines before tables, re-indenting arrays and optionally sorting keys inside each table.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="toml-formatter" data-module="devgen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>TOML is meant to be readable, but hand-edited files drift: some keys have no spaces around the equals sign, tables run together, and arrays are broken over lines in several styles. In files like Cargo.toml or pyproject.toml this makes diffs noisy.</p>
+<p>This formatter works on the text, so your comments, including trailing ones, are kept. It sets key = value spacing, separates tables and arrays of tables with a blank line and indents multi-line arrays consistently. Multi-line strings are left exactly as written. The optional sort puts keys in alphabetical order within each table, which is useful for dependency lists, though it can also move keys you grouped on purpose. It does not validate TOML, so use the TOML to JSON tool to check. Nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your TOML into the input box.</li><li>Tick Sort keys within each table if you want alphabetical order.</li><li>Check the output, especially tables and arrays.</li><li>Copy the result, or convert to JSON to confirm the file still parses.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Are comments preserved?</summary><p>Yes, including comments after values on the same line. The formatter only changes whitespace and blank lines, never the content of keys, values or comments.</p></details>
+<details><summary>Should I sort keys?</summary><p>Sorting suits long lists such as dependencies. Leave it off when the order carries meaning to readers, such as name and version at the top of a package table.</p></details>
+<details><summary>Does it check my TOML is valid?</summary><p>No. For a validity check, paste the file into the TOML to JSON converter, which reports errors with a line number.</p></details>
+<details><summary>What happens to multi-line strings?</summary><p>Multi-line strings keep their content and line breaks exactly as written, so text inside triple quotes is never re-indented or trimmed by the formatter.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/toml-to-json/"><span class="link-card__title">TOML to JSON</span><span class="link-card__desc">Parse TOML (tables, arrays of tables, inline tables, dotted keys, dates) into JSON.</span></a></li><li><a class="link-card" href="/en/json-to-toml/"><span class="link-card__title">JSON to TOML</span><span class="link-card__desc">Convert a JSON object to TOML (tables and arrays of tables). TOML cannot represent null.</span></a></li><li><a class="link-card" href="/en/yaml-format/"><span class="link-card__title">YAML Formatter</span><span class="link-card__desc">Re-indent and normalise YAML (comments are not preserved; anchors are expanded).</span></a></li><li><a class="link-card" href="/en/package-json-formatter/"><span class="link-card__title">package.json Formatter &amp; Sorter</span><span class="link-card__desc">Re-order package.json keys into the conventional npm order (name, version, description ... scripts, dependencies, engines ...), sort dependency maps alphabetically, optionally sort scripts, normalise indentation and report basic problems (missing name / version, invalid semver, unpinned &quot;latest&quot;, duplicate dependencies across sections).</span></a></li><li><a class="link-card" href="/en/tsconfig-generator/"><span class="link-card__title">tsconfig.json Generator</span><span class="link-card__desc">tsconfig presets for Node, browser apps, libraries and React.</span></a></li><li><a class="link-card" href="/en/editorconfig-generator/"><span class="link-card__title">.editorconfig Generator</span><span class="link-card__desc">Generate an .editorconfig with indentation, line endings and per-filetype overrides.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

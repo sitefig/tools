@@ -1,0 +1,39 @@
+{
+ "id": "safe-conversion-calculator",
+ "seoTitle": "SAFE Conversion Calculator: Valuation Cap and Discount",
+ "metaDescription": "Estimate the shares and ownership a single SAFE converts into at a priced round using the lower of cap price and discount price.",
+ "intro": "Estimates conversion of a single SAFE using a valuation cap and a discount at a priced round.",
+ "why": "A SAFE converts at the lower of the cap price and the discounted round price. For a post-money SAFE, the cap price equals the cap less the SAFE amount divided by existing shares, so an uncapped ownership equals amount divided by cap.\n\nThe model covers one SAFE and does not count other SAFEs, notes or a pool increase. Real conversions follow the signed document and a lawyer's cap table. Treat the result as a sanity check.",
+ "howTo": [
+  "Choose pre-money or post-money SAFE.",
+  "Enter amount, cap, discount, existing shares and the round price per share.",
+  "Read the conversion price, shares and ownership."
+ ],
+ "faq": [
+  {
+   "q": "Which price applies?",
+   "a": "The lower of the cap price and the discount price."
+  },
+  {
+   "q": "Can I model several SAFEs?",
+   "a": "Not in this tool. They interact in post-money SAFEs."
+  },
+  {
+   "q": "Is this exact?",
+   "a": "No. It follows public descriptions and your document may differ."
+  }
+ ],
+ "related": [
+  "equity-dilution-calculator",
+  "cap-table-round-simulator",
+  "pre-post-money-valuation-calculator",
+  "vesting-schedule-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "safe conversion calculator",
+  "valuation cap discount",
+  "post money safe"
+ ]
+}

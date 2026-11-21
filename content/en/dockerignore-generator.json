@@ -1,0 +1,45 @@
+{
+ "id": "dockerignore-generator",
+ "seoTitle": "Free .dockerignore Generator Online",
+ "metaDescription": "Generate a .dockerignore file for Node, Python, Go, Java and more. Free, runs in your browser, and nothing you pick is uploaded anywhere.",
+ "intro": "Pick your stacks and get a .dockerignore that keeps version control folders, editor files, secrets and build output out of your Docker build context.",
+ "why": "A Docker build sends the whole project folder to the daemon before the first instruction runs. If node_modules, .git or a stray .env sits in that folder, builds get slow, images grow and secrets can end up in a layer. Most people copy a .dockerignore from an old project and never revisit it.\n\nThis generator starts from the usual noise (VCS metadata, IDE folders, swap files) and adds the build artefacts for each stack you list, such as __pycache__ for Python or target for Java. It runs locally, so you can describe your project without sending file names anywhere.",
+ "howTo": [
+  "Type one stack per line, such as node or python, in the input box.",
+  "Tick the options for ignoring .env and key files, markdown docs, or Docker files themselves.",
+  "Copy the result into a file called .dockerignore next to your Dockerfile."
+ ],
+ "faq": [
+  {
+   "q": "Which stacks does it know?",
+   "a": "Node, Python, Go, Java, Rust, PHP, dotnet and Ruby. An unknown name produces an error that lists the supported ones, so you can correct the spelling and run it again."
+  },
+  {
+   "q": "Does it read my project folder?",
+   "a": "No. It only turns the stack names you type into a list of patterns. It cannot see your files, so check the output against your real directory layout before relying on it."
+  },
+  {
+   "q": "Why ignore .git and Dockerfile?",
+   "a": "Neither is needed inside the image in most builds, and .git can be large. Ignoring the Dockerfile is optional here because some multi-stage setups still copy it, so it is a checkbox rather than a default."
+  },
+  {
+   "q": "Will it protect my secrets?",
+   "a": "It helps keep .env and key files out of the build context, but it is not a security control. Never bake secrets into images; use build secrets or runtime environment variables."
+  }
+ ],
+ "related": [
+  "dockerfile-generator",
+  "dockerfile-linter",
+  "docker-compose-generator",
+  "gitignore-generator",
+  "docker-run-to-compose",
+  "docker-compose-formatter"
+ ],
+ "keywords": [
+  "dockerignore generator",
+  "free dockerignore generator",
+  "create .dockerignore file",
+  "dockerignore node python",
+  "docker build context ignore"
+ ]
+}

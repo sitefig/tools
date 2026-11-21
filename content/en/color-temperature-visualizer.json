@@ -1,0 +1,45 @@
+{
+ "id": "color-temperature-visualizer",
+ "seoTitle": "Color Temperature Visualizer: Kelvin to RGB and HEX",
+ "metaDescription": "Move a slider from 1000 to 15000 K and see the matching light colour with HEX and RGB. Free, local.",
+ "intro": "Shows the colour of a black body radiator for a Kelvin value between 1000 and 15000, with HEX, RGB and CIE chromaticity.",
+ "why": "Lights are described in Kelvin: low values are warm and orange, high values are cool and blue. The tool uses Krystek's rational approximation of the Planckian locus and converts it to sRGB, then scales the brightest channel to 255.\n\nThe chromaticity matches published values near 6500 K (x 0.3135, y 0.3235) and 2856 K. Real screens and lamps differ, so use it as a guide for white balance and lighting choices.",
+ "howTo": [
+  "Move the slider or type a Kelvin value.",
+  "Read the swatch, HEX, RGB and chromaticity.",
+  "Compare with the reference table.",
+  "Copy the HEX if needed."
+ ],
+ "faq": [
+  {
+   "q": "Is 6500 K pure white?",
+   "a": "On screens it is the standard white point, but a black body at 6500 K looks very slightly pink on sRGB."
+  },
+  {
+   "q": "How accurate is it?",
+   "a": "It is an approximation, valid about 1000 to 15000 K."
+  },
+  {
+   "q": "Is it the same as camera white balance?",
+   "a": "It is related, but cameras use tint and sensor curves too."
+  },
+  {
+   "q": "Why scale to 255?",
+   "a": "Only the colour matters here, not the brightness."
+  }
+ ],
+ "related": [
+  "color-picker",
+  "color-converter",
+  "flashlight-beacon",
+  "display-test",
+  "palette-generator",
+  "css-color-formats"
+ ],
+ "keywords": [
+  "kelvin to rgb",
+  "color temperature to hex",
+  "light color kelvin",
+  "white balance preview"
+ ]
+}

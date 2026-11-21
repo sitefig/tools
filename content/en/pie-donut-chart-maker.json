@@ -1,0 +1,44 @@
+{
+ "id": "pie-donut-chart-maker",
+ "seoTitle": "Pie and Donut Chart Maker with Percent Labels",
+ "metaDescription": "Enter categories and values to get an SVG pie or donut chart with percentage labels, a legend and a data table. Free and private.",
+ "intro": "Builds a pie or donut chart from category and value lines. Each slice shows its share of the total, and a legend lists the exact percentages.",
+ "why": "Pie charts work for a few parts of a whole and fail beyond that. This tool warns by design: it draws what you give it, labels each slice with its percentage, and supplies a table so the numbers are never only in the colours.\n\nThe donut option leaves room for a total or note when you place the SVG in a slide. Slices smaller than about 4 percent keep their value in the legend rather than crowding the chart. Negative values are rejected because they have no meaning in a pie.",
+ "howTo": [
+  "Type one category and value per line, separated by a comma.",
+  "Set the hole size: 0 for a pie, about 55 for a donut.",
+  "Choose decimals and whether to sort the largest first.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Why are tiny slices not labelled?",
+   "a": "Labels under 4 percent would overlap. The legend still shows every percentage."
+  },
+  {
+   "q": "Can values be zero?",
+   "a": "Zero rows are dropped. Negative values give an error."
+  },
+  {
+   "q": "How many slices?",
+   "a": "Up to 40, but readability drops fast after about 6."
+  },
+  {
+   "q": "Is the order kept?",
+   "a": "Yes unless you tick sort largest first."
+  }
+ ],
+ "related": [
+  "bar-chart-maker",
+  "csv-to-chart",
+  "sankey-diagram-builder",
+  "treemap-maker",
+  "pictogram-maker",
+  "conversion-funnel-visualizer"
+ ],
+ "keywords": [
+  "pie chart maker",
+  "donut chart generator",
+  "svg pie chart"
+ ]
+}

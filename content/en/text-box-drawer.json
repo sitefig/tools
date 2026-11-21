@@ -1,0 +1,45 @@
+{
+  "id": "text-box-drawer",
+  "seoTitle": "Text Box Drawer: ASCII Boxes and Code Comment Banners",
+  "metaDescription": "Draw a box around text with single, double, rounded, heavy or ASCII borders, or wrap it as a // /* */ # comment banner for code.",
+  "intro": "Put a neat frame around text for READMEs, terminals and source-code headers.",
+  "why": "Choose a border style, alignment and padding. Box styles use Unicode box-drawing characters or plain ASCII; comment styles wrap each line with //, /* */ or # and add rules above and below. The width is measured in characters so the box lines up in monospace fonts.\n\nUnicode box characters need a monospace font that includes them; use the ASCII style for maximum compatibility.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the text.",
+    "Pick a border style and alignment.",
+    "Set padding.",
+    "Copy the result into your document or code."
+  ],
+  "faq": [
+    {
+      "q": "Why do borders look broken?",
+      "a": "The font may not be monospace or may lack box-drawing characters; use the ASCII style."
+    },
+    {
+      "q": "Does it handle emoji?",
+      "a": "Wide characters can misalign boxes in some fonts."
+    },
+    {
+      "q": "Can I draw tables?",
+      "a": "Use the ASCII table generator for tables."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "ascii-art-text",
+    "ascii-table-generator",
+    "ascii-tree-generator",
+    "markdown-table-generator",
+    "fancy-text",
+    "case-converter"
+  ],
+  "keywords": [
+    "text box generator",
+    "ascii box",
+    "comment banner",
+    "box drawing characters"
+  ]
+}

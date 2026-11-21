@@ -1,0 +1,47 @@
+{
+ "id": "number-base-converter",
+ "seoTitle": "Free Number Base Converter (Binary, Hex, Decimal)",
+ "metaDescription": "Convert integers of any size between bases 2 and 36, with binary, octal, decimal and hex shown together plus two's complement. Free, in your browser.",
+ "intro": "Convert whole numbers between any two bases from 2 to 36. Very large values stay exact, and you can add a two's complement view for 8, 16, 32 or 64-bit widths.",
+ "why": "Bases come up whenever you read memory addresses, permission masks, colour codes, IDs and protocol fields. Switching between hex, binary and decimal in your head works for small numbers, but it falls apart with a 64-bit value or a negative number.\n\nThis converter parses your number with arbitrary-precision integers, so nothing is rounded the way JavaScript's normal numbers would be. For each line you see the target base plus binary, octal, decimal and hex side by side. Pick a width and it shows the two's complement bit pattern, or reads a large unsigned value as signed. It all runs locally.",
+ "howTo": [
+  "Enter one number per line in the box. Prefixes like 0x, 0b and 0o are accepted when they match the base.",
+  "Set the From base and the To base, anywhere from 2 to 36.",
+  "Choose a two's complement width (8, 16, 32 or 64) if you need the signed bit pattern.",
+  "Read the results and copy the lines you need."
+ ],
+ "faq": [
+  {
+   "q": "How large can the numbers be?",
+   "a": "There is no fixed limit. The tool uses BigInt arithmetic, so a 40-digit decimal number converts exactly. Only the length of what you can comfortably paste limits it."
+  },
+  {
+   "q": "Does it handle fractions or decimals?",
+   "a": "No, it converts integers only. Characters like a decimal point are rejected with an error that names the invalid digit for the chosen base. Convert the whole and fractional parts separately if you must."
+  },
+  {
+   "q": "How does two's complement work here?",
+   "a": "Choose a width and a negative number such as -42 is shown as its bit pattern, 11010110 for 8 bits. A positive value above the signed range is read as the negative number it would represent. Values that fit neither are reported as out of range."
+  },
+  {
+   "q": "Which digits are valid for bases above 10?",
+   "a": "Letters a to z stand for the digits 10 to 35, and input is not case sensitive. Base 36 therefore uses 0-9 and a-z. Underscores, commas and spaces inside a number are ignored."
+  }
+ ],
+ "related": [
+  "bitwise-calculator",
+  "bignumber-calculator",
+  "binary-text",
+  "hex-text",
+  "ieee754-converter",
+  "bcd-converter"
+ ],
+ "keywords": [
+  "number base converter",
+  "binary to decimal converter",
+  "hex to decimal online",
+  "free base converter",
+  "two's complement calculator",
+  "convert between bases 2 to 36"
+ ]
+}

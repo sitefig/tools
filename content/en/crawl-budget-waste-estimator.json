@@ -1,0 +1,44 @@
+{
+ "id": "crawl-budget-waste-estimator",
+ "seoTitle": "Crawl Budget Waste Estimator for Parameter and Facet URLs",
+ "metaDescription": "Estimate the share of crawler requests wasted on parameter, facet and duplicate URLs and how long a full crawl of your real pages takes.",
+ "intro": "Gives a rough waste share and crawl time from counts of good, parameter, facet and duplicate URLs and your daily crawl rate.",
+ "why": "On large sites with filters and tracking parameters, most crawlable URLs are variations of a few real pages. If crawlers visit URLs evenly, most of their requests go to waste and new pages wait longer to be found.\n\nEnter your numbers, for example the daily request count from the Crawl Stats report, and see the waste share and how much faster a pass over your real pages could be. It is a model for ranking problems, not a prediction; crawlers favour popular and fresh pages.",
+ "howTo": [
+  "Count your real pages and the waste URL types (a crawl export helps).",
+  "Enter your crawler requests per day.",
+  "Read the waste share and time to crawl.",
+  "Fix the biggest waste source first."
+ ],
+ "faq": [
+  {
+   "q": "Does crawl budget matter for my small site?",
+   "a": "Mostly not. It matters for large sites or ones that publish many pages quickly."
+  },
+  {
+   "q": "Where do I get the numbers?",
+   "a": "Crawl a staging copy, use the URL parameter analyzer, and read Crawl Stats in Search Console."
+  },
+  {
+   "q": "Is the waste share exact?",
+   "a": "No. It assumes even visits, which real crawlers do not do."
+  },
+  {
+   "q": "How do I cut waste?",
+   "a": "Canonical tags, fewer internal links to filters, and robots.txt rules for parameters."
+  }
+ ],
+ "related": [
+  "url-parameter-analyzer",
+  "faceted-navigation-robots-rule-builder",
+  "pagerank-calculator",
+  "robots-generator",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "crawl budget calculator",
+  "crawl budget waste",
+  "crawl budget parameters",
+  "estimate crawl budget"
+ ]
+}

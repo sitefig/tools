@@ -1,0 +1,45 @@
+{
+ "id": "video-resizer",
+ "seoTitle": "Video Resizer: Scale to 720p, 1080p or Any Size",
+ "metaDescription": "Rescale a video to 480p, 720p, 1080p or a custom size in your browser, keeping the aspect ratio or stretching. Private, no upload.",
+ "intro": "Changes the pixel size of a video to a preset or custom resolution. You can keep the aspect ratio with black bars or stretch to fill.",
+ "why": "Platforms ask for specific sizes, and phones record at sizes you may not need. Resizing is also the simplest way to cut file size.\n\nNothing is uploaded. The file is decoded by your browser and re-encoded, so quality drops a little and the result is WebM (or MP4 where your browser can record it). It records in real time, so a 60 second clip takes about a minute and the tab must stay visible. Fitting keeps the picture undistorted and adds black bars where the shape differs.",
+ "howTo": [
+  "Choose the video.",
+  "Pick a preset height or choose Custom and enter width and height.",
+  "Decide whether to keep the aspect ratio.",
+  "Process, then download."
+ ],
+ "faq": [
+  {
+   "q": "Does upscaling improve quality?",
+   "a": "No. Making a video larger only enlarges the pixels you have."
+  },
+  {
+   "q": "What happens to odd sizes?",
+   "a": "Sizes are rounded to even numbers because video encoders need them."
+  },
+  {
+   "q": "Can I crop instead?",
+   "a": "Use the Video Cropper to remove parts of the frame."
+  },
+  {
+   "q": "Is the audio kept?",
+   "a": "Yes."
+  }
+ ],
+ "related": [
+  "video-cropper",
+  "video-compressor",
+  "video-rotator",
+  "video-format-converter",
+  "aspect-ratio-calculator",
+  "video-metadata-inspector"
+ ],
+ "keywords": [
+  "resize video online",
+  "change video resolution",
+  "video to 720p",
+  "scale video browser"
+ ]
+}

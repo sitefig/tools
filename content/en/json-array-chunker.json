@@ -1,0 +1,45 @@
+{
+ "id": "json-array-chunker",
+ "seoTitle": "Free JSON Array Splitter and Chunker Online",
+ "metaDescription": "Split a JSON array into chunks of N items or into N equal chunks, as an array of arrays or one JSON document per line. Free, in your browser.",
+ "intro": "Paste a JSON array and split it into chunks of a given size, or into a set number of chunks, as a nested array or one JSON document per line.",
+ "why": "APIs often cap the number of items per request, batch imports time out on large payloads, and some tools refuse files above a certain size. Splitting a long array into batches by hand means counting brackets and commas, and one miss gives invalid JSON.\n\nThis tool parses the array first, so the pieces are always valid. Choose items per chunk, say 100, or ask for a number of chunks and it works out the size, rounding up so no item is lost. The output is either one array of arrays or newline-delimited JSON with one chunk per line, which is handy for scripts that read line by line. Item order is kept and the last chunk may be smaller.",
+ "howTo": [
+  "Paste a JSON array.",
+  "Choose whether N means items per chunk or number of chunks, and set N.",
+  "Pick array of arrays or one document per line, then copy the result."
+ ],
+ "faq": [
+  {
+   "q": "What happens when the array does not divide evenly?",
+   "a": "The last chunk holds the remainder. When splitting into a number of chunks, the size is rounded up, so you may get fewer chunks than requested."
+  },
+  {
+   "q": "Can I split an object instead of an array?",
+   "a": "No. The input must be a JSON array and any other value produces an error. For object keys, convert to an array of entries first."
+  },
+  {
+   "q": "What is the one-document-per-chunk output?",
+   "a": "Newline-delimited JSON: each line is a complete JSON array holding one chunk. Many tools and scripts can read it line by line without loading everything."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "The array is processed in your browser memory, so very large files may be slow. Try a smaller sample first for multi-megabyte inputs."
+  }
+ ],
+ "related": [
+  "json-lines-tools",
+  "json-format",
+  "json-minify",
+  "json-to-csv",
+  "json-size-analyzer",
+  "csv-column-extractor"
+ ],
+ "keywords": [
+  "json array splitter",
+  "split json array into chunks",
+  "json chunker online",
+  "free json batch splitter",
+  "json to ndjson chunks"
+ ]
+}

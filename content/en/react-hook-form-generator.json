@@ -1,0 +1,47 @@
+{
+ "id": "react-hook-form-generator",
+ "seoTitle": "Free React Hook Form Generator with Zod Option",
+ "metaDescription": "Free online React Hook Form generator. Turn a field list into a typed form component with validation rules and an optional Zod resolver.",
+ "intro": "Describe your form fields in a short list and get a React Hook Form component with validation rules. Choose TypeScript and an optional Zod schema with the Zod resolver.",
+ "why": "Every form needs the same boilerplate: useForm, a register call for each input, error messages and a submit handler. Writing that for a ten-field form is repetitive, and keeping types, rules and markup in step is where bugs creep in.\n\nList each field as a name, a type and optional rules such as required, min, maxLength, pattern or options for a select. The tool generates a component with the right input elements, register calls with rules and error output, plus a FormValues type. Switch on the Zod option and the rules move into a schema used by zodResolver. The markup is deliberately plain, so you can style it to your design system. Treat the result as a starting point. Nothing leaves your browser.",
+ "howTo": [
+  "Write one field per line: name, type, then rules like required or minLength=2.",
+  "For a select, add options=a|b|c.",
+  "Set the component name and tick TypeScript and Zod resolver as needed.",
+  "Copy the component into your project and style the markup."
+ ],
+ "faq": [
+  {
+   "q": "Which field types are supported?",
+   "a": "text, email, password, number, tel, url, date, textarea, checkbox and select. A select must have options, written as options=free|pro|team."
+  },
+  {
+   "q": "Which rules can I add?",
+   "a": "required, min, max, minLength, maxLength and pattern. With the Zod option on, they become schema checks; otherwise they are passed to register with messages."
+  },
+  {
+   "q": "What packages do I need?",
+   "a": "react-hook-form always. With the Zod option you also need zod and @hookform/resolvers. The generated code imports them for you."
+  },
+  {
+   "q": "Does it style the form?",
+   "a": "No. The markup is plain HTML with labels and error paragraphs, so you can apply your own classes or replace the inputs with components from your UI library."
+  }
+ ],
+ "related": [
+  "html-to-jsx",
+  "json-to-zod",
+  "json-to-typescript",
+  "typescript-interface-to-zod",
+  "zod-to-typescript-type",
+  "prisma-schema-generator"
+ ],
+ "keywords": [
+  "react hook form generator",
+  "react form generator",
+  "react hook form zod generator",
+  "free react form builder",
+  "generate react form code",
+  "react hook form typescript"
+ ]
+}

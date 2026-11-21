@@ -1,0 +1,47 @@
+{
+ "id": "yaml-format",
+ "seoTitle": "Free YAML Formatter & Beautifier Online",
+ "metaDescription": "Free online YAML formatter. Re-indent and normalise YAML with 2 or 4 spaces. Note that comments are not kept and anchors are expanded.",
+ "intro": "Re-indent and tidy YAML with a 2 or 4 space indent. The file is parsed and written back in a consistent style, which means comments are dropped and anchors are expanded.",
+ "why": "YAML files edited by several people end up with mixed indentation, list items at different depths and inconsistent quoting. That makes reviews noisy and mistakes easy to miss. Reformatting gives you one consistent layout.\n\nThe formatter parses your YAML and writes it out again from the data, so the result is regular by construction. That comes with trade-offs worth knowing: comments are not preserved, and anchors and aliases are replaced by the values they refer to. If you rely on comments, as in most hand-maintained config, copy them back or use the Docker Compose formatter, which keeps them. For multi-document files, documents are written separated by ---. Everything runs in your browser.",
+ "howTo": [
+  "Paste your YAML into the input box.",
+  "Choose an indent of 2 or 4 spaces.",
+  "Check the result, remembering that comments are removed and anchors expanded.",
+  "Copy the formatted YAML."
+ ],
+ "faq": [
+  {
+   "q": "Why did my comments disappear?",
+   "a": "The tool parses the YAML into data and writes it back, and comments are not part of the data. If you need to keep them, edit by hand or use a formatter that works on text, like the Docker Compose formatter."
+  },
+  {
+   "q": "What happens to anchors and aliases?",
+   "a": "They are expanded. Each alias is replaced by a copy of the anchored value, so the result is longer but means the same thing."
+  },
+  {
+   "q": "Does it change values?",
+   "a": "Values keep their meaning, but their style may change, for instance flow lists become block lists and quoting may be normalised. Compare with a JSON conversion if in doubt."
+  },
+  {
+   "q": "Does it support multiple documents?",
+   "a": "Yes. Documents separated by --- in your input are formatted separately and written back with --- between them."
+  }
+ ],
+ "related": [
+  "yaml-to-json",
+  "json-to-yaml",
+  "docker-compose-formatter",
+  "toml-formatter",
+  "json-format",
+  "kubernetes-deployment-generator"
+ ],
+ "keywords": [
+  "yaml formatter online",
+  "yaml beautifier",
+  "format yaml",
+  "free yaml formatter",
+  "yaml indent fixer",
+  "reformat yaml online"
+ ]
+}

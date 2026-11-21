@@ -1,0 +1,46 @@
+{
+  "id": "palette-generator",
+  "seoTitle": "Free Color Palette Generator from a Base Colour",
+  "metaDescription": "Generate complementary, analogous, triadic, tetradic, shade, tint and Tailwind-style palettes from one colour. CSS variables included. Free, in your browser.",
+  "intro": "Builds a colour palette from one base colour using classic colour-wheel schemes or a tint and shade scale. It prints swatches, CSS custom properties and a Tailwind config snippet.",
+  "why": "Starting from one brand colour, you still need a set that works together: an accent that contrasts, a pair of neighbours for backgrounds, and a lighter-to-darker ramp for buttons, borders and text. Picking them by eye is hit and miss.\n\nEnter a base colour and choose a scheme. Complementary, analogous, triadic, tetradic and split-complementary rotate the hue around the wheel. Shades and tints step towards black or white. The Tailwind scale gives ten steps from 50 to 900, with your colour at 500. The output includes the hex values, a block of CSS variables and a Tailwind config fragment. These are mathematical starting points, so check text contrast before shipping. Nothing is sent to a server.",
+  "howTo": [
+    "Enter your base colour in any CSS format.",
+    "Choose a scheme such as complementary, triadic or tailwind-scale.",
+    "Look at the swatches and the list of hex values.",
+    "Copy the CSS variables or the Tailwind config into your project."
+  ],
+  "faq": [
+    {
+      "q": "How does the Tailwind scale work?",
+      "a": "It mixes your base colour toward white for steps 50 to 400 and toward black for 600 to 900, keeping your colour at 500. It is a quick approximation, not Tailwind's hand-tuned palette, so check the steps by eye."
+    },
+    {
+      "q": "What is the difference between shades and tints?",
+      "a": "Shades mix the base colour with black, tints mix it with white. Both give nine steps. Both are simple mixes in RGB, so very saturated colours may look slightly off."
+    },
+    {
+      "q": "Are the colours accessible together?",
+      "a": "Not automatically. The schemes are based on hue rotation and say nothing about readability. Use the contrast checker on any pair that will carry text."
+    },
+    {
+      "q": "How are the variables named?",
+      "a": "Wheel schemes are named color-1, color-2 and so on. Scale schemes are named brand-50 through brand-900, or brand-100 to brand-900 for shades and tints. Rename them to fit your project."
+    }
+  ],
+  "related": [
+    "color-converter",
+    "contrast-checker",
+    "tailwind-v4-color-palette",
+    "shadcn-theme-generator",
+    "gradient-generator",
+    "color-mixer"
+  ],
+  "keywords": [
+    "color palette generator",
+    "color scheme generator",
+    "triadic color palette",
+    "tailwind color scale generator",
+    "free palette from hex"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+ "id": "gsc-performance-analyzer",
+ "seoTitle": "Search Console Export Analyzer: Quick Wins, CTR Gaps, Brand Split",
+ "metaDescription": "Paste a Search Console Queries or Pages CSV and find striking-distance keywords, low-CTR rows, position buckets and brand vs non-brand traffic.",
+ "intro": "Turn a Search Console performance export into a prioritised list of quick wins.",
+ "why": "Search Console gives rows of clicks, impressions, CTR and position; the useful questions are which queries sit just off page one, which rank well but get few clicks, and how much traffic depends on the brand name. This analyzer answers them from the CSV you export: totals and weighted position, position buckets, striking-distance rows (positions 8 to 20 with enough impressions), rows whose CTR is far below a typical curve for their position, and a brand split from terms you enter.\n\nThe expected-CTR curve is a generic rounded industry average, not Google data, and SERP features change CTR a lot. Positions are averages, so export by device and country before acting. Nothing is uploaded.",
+ "howTo": [
+  "Export Queries or Pages from Search Console (Performance > Export > CSV) and paste it.",
+  "Enter your brand terms and a minimum impression threshold.",
+  "Work through striking-distance rows and low-CTR rows."
+ ],
+ "faq": [
+  {
+   "q": "Is the CTR benchmark accurate?",
+   "a": "It is a rough generic curve (28%, 15%, 11%, 8%...). Use it to rank candidates, not as a target."
+  },
+  {
+   "q": "Does it need the API?",
+   "a": "No. A pasted export is enough, so nothing leaves your browser."
+  },
+  {
+   "q": "Why do totals differ from the Overview?",
+   "a": "Exports are limited to 1000 rows and anonymised queries are missing."
+  }
+ ],
+ "related": [
+  "keyword-cannibalization-detector",
+  "keyword-clusterer",
+  "serp-snippet",
+  "rank-history-analyzer",
+  "anchor-text-distribution"
+ ],
+ "keywords": [
+  "search console export analysis",
+  "striking distance keywords",
+  "gsc ctr opportunities"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "base64-image-viewer",
+ "seoTitle": "Free Base64 Image Viewer and Downloader Online",
+ "metaDescription": "Paste a data URI or raw Base64 string to preview the image and download it as a file. Detects PNG, JPEG, GIF, WebP, BMP, ICO and SVG. Free and private.",
+ "intro": "Paste a data URI or a raw Base64 string and see the image it contains. The tool detects the file type from the bytes, shows a preview and lets you download the file.",
+ "why": "Images hide inside CSS, HTML emails, JSON responses and log files as long Base64 strings, and a wall of characters tells you nothing. You often need to confirm that an API really returned the picture you expect, or to pull an embedded logo back out as a normal file.\n\nThis viewer decodes the string locally and shows the image straight away. If the data URI has no usable type, it checks the first bytes for known image signatures. The preview and download are built in your browser, so private screenshots or customer images are not uploaded.",
+ "howTo": [
+  "Paste a full data URI such as data:image/png;base64,... or just the raw Base64 string.",
+  "Run the tool to decode it and preview the image.",
+  "Check that the picture looks right.",
+  "Download the image as a file with the suggested name and extension."
+ ],
+ "faq": [
+  {
+   "q": "Which image types are recognised?",
+   "a": "PNG, JPEG, GIF, WebP, BMP, ICO and SVG. If the data URI declares an image type, that is used. Otherwise the tool reads the first bytes for the format signature."
+  },
+  {
+   "q": "Why do I get \"Could not detect an image type\"?",
+   "a": "The decoded bytes do not start like any supported image format. The string may be truncated, may be a different kind of file such as a PDF, or may have extra characters at the start. Check the source."
+  },
+  {
+   "q": "Does the file leave my device?",
+   "a": "No. Decoding, preview and download all happen inside your browser tab, so private images and screenshots stay on your own computer."
+  },
+  {
+   "q": "Can I go the other way and turn an image into Base64?",
+   "a": "Yes, the Image to Base64 tool creates a data URI from a picture file. Keep in mind that Base64 makes the data about a third larger, so it suits small icons rather than big photos."
+  }
+ ],
+ "related": [
+  "image-to-base64",
+  "base64-decode",
+  "base64-encode",
+  "image-info",
+  "image-format-converter",
+  "svg-preview-editor"
+ ],
+ "keywords": [
+  "base64 image viewer",
+  "base64 to image",
+  "data uri viewer",
+  "decode base64 image online",
+  "free base64 image decoder",
+  "preview data uri image"
+ ]
+}

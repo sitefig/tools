@@ -1,0 +1,46 @@
+{
+ "id": "llm-cost-calculator",
+ "seoTitle": "Free LLM API Cost Calculator per Request and Month",
+ "metaDescription": "Work out LLM API cost per request, day, month and year from your token counts and your own per-million-token prices. Free, in your browser.",
+ "intro": "Enter token counts per request, request volume and your own per-million prices to get cost per request, per day, per month and per year.",
+ "why": "Before building a feature on a language model, someone usually asks what it will cost at a thousand requests a day. The arithmetic is simple, but it has several moving parts: input and output prices differ, cached input is cheaper, and a batch discount might apply.\n\nThis calculator has no built-in price list, because prices change often and a stale table would mislead. You type the current per-million prices from your provider page, plus tokens per request, the cached share of input and the volume. It then shows the cost split between input and output. Treat the figures as planning estimates and compare them with your real billing data.",
+ "howTo": [
+  "Enter the input, output and cached input prices per million tokens from your provider.",
+  "Enter input and output tokens per request, the cached share, requests per day and days per month.",
+  "Add any batch discount and read the per-request, monthly and yearly totals."
+ ],
+ "faq": [
+  {
+   "q": "Why are there no default model prices?",
+   "a": "Prices change and differ by region and contract. The sample numbers are placeholders only, so always replace them with the current figures from your provider."
+  },
+  {
+   "q": "How is caching handled?",
+   "a": "The cached share of input tokens is charged at your cached price and the rest at the normal input price. Set the share to 0 if you do not use prompt caching."
+  },
+  {
+   "q": "Does it include tools, images or reasoning tokens?",
+   "a": "Only if you add them to the token counts yourself. Count hidden reasoning or tool tokens as output or input, according to how your provider bills them."
+  },
+  {
+   "q": "Is the calculation exact?",
+   "a": "The arithmetic is exact for the numbers you enter, but real usage varies per request. Use measured averages from your logs for the best estimate."
+  }
+ ],
+ "related": [
+  "embedding-cost-calculator",
+  "embedding-token-cost-estimator",
+  "tokenizer-cost-estimator",
+  "llm-token-estimator",
+  "api-rate-limit-cost-calculator",
+  "system-prompt-budgeter"
+ ],
+ "keywords": [
+  "llm cost calculator",
+  "openai api cost calculator",
+  "ai api pricing calculator",
+  "free token cost estimator",
+  "llm monthly cost estimate",
+  "prompt caching cost"
+ ]
+}

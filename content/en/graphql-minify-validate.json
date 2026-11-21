@@ -1,0 +1,45 @@
+{
+  "id": "graphql-minify-validate",
+  "seoTitle": "GraphQL Minifier & Syntax Validator",
+  "metaDescription": "Check GraphQL queries, fragments and schema SDL for syntax errors with line and column, and minify by stripping comments and whitespace.",
+  "intro": "Validate GraphQL documents and shrink them for storage or persisted queries, with errors that point to the exact spot.",
+  "why": "The parser covers the GraphQL grammar for operations, fragments, variables, directives, values, and type-system definitions (schema, scalar, type, interface, union, enum, input, directive, extend). Minifying removes comments, commas and extra whitespace and keeps a single space only where two names would merge; strings and block strings are left unchanged.\n\nIt validates syntax only, not whether fields exist in a schema. Results agree with graphql-js on the valid and invalid documents used in testing: minified output parses to the same AST as the original.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste a query or schema.",
+    "Choose validate or minify.",
+    "Fix the reported line and column if there is an error.",
+    "Copy the minified text for use as a persisted query."
+  ],
+  "faq": [
+    {
+      "q": "Does it check against my schema?",
+      "a": "No, only syntax. Schema validation needs your type definitions."
+    },
+    {
+      "q": "Are descriptions preserved?",
+      "a": "Yes. Block strings and quoted descriptions are kept as they are."
+    },
+    {
+      "q": "Why remove commas?",
+      "a": "Commas are insignificant whitespace in GraphQL, so minified queries omit them."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "graphql-query-formatter",
+    "graphql-to-typescript",
+    "json-to-graphql-query",
+    "json-to-graphql-schema",
+    "graphql-schema-to-zod",
+    "curl-to-code"
+  ],
+  "keywords": [
+    "graphql minify",
+    "graphql validator",
+    "graphql syntax check",
+    "minify graphql query"
+  ]
+}

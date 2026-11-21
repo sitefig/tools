@@ -1,0 +1,46 @@
+{
+  "id": "image-watermark",
+  "seoTitle": "Free Image Watermark Tool: Add Text to Photos",
+  "metaDescription": "Add a text watermark to images, single or tiled, with adjustable size, opacity, colour, rotation and position. Free, files stay in your browser.",
+  "intro": "Stamps text onto your images as a single watermark in a corner or the centre, or tiled across the whole picture. You control size, opacity, colour and rotation, and can process several images.",
+  "why": "Photographers, designers and sellers put a name or notice on images so they are not reused without credit. Doing that in an editor for every file is tedious, and online watermark sites ask you to upload your originals, which defeats the point.\n\nType the text, choose a position or tiled, then set size as a percentage of the image width, opacity, colour and angle. A faint shadow keeps white text readable on light areas. Apply it to a whole batch in one go. A visible watermark is a deterrent, not protection, because it can be cropped or edited out, so keep your originals. The work happens in your browser and nothing is uploaded.",
+  "howTo": [
+    "Choose one or more image files.",
+    "Enter the watermark text and pick a position, or tiled.",
+    "Adjust size, opacity, colour and rotation.",
+    "Choose the output format, run it and download the watermarked images."
+  ],
+  "faq": [
+    {
+      "q": "How is the text size defined?",
+      "a": "As a percentage of the image width, so the watermark scales with each picture in a batch. A value around 6 gives a modest corner mark, and a higher value makes it more prominent."
+    },
+    {
+      "q": "What does rotation do for each position?",
+      "a": "The angle is applied to the centre and tiled layouts. Corner watermarks are always drawn straight so they sit neatly against the edge."
+    },
+    {
+      "q": "Will a watermark stop people copying my images?",
+      "a": "No. It discourages casual reuse and shows ownership, but it can be cropped, retouched or covered. Share smaller versions and keep the originals private."
+    },
+    {
+      "q": "Can I use my logo instead of text?",
+      "a": "No, this tool only draws text. For a logo, composite it in an image editor or place the text over a logo image you created."
+    }
+  ],
+  "related": [
+    "image-filters",
+    "image-resizer",
+    "image-compressor",
+    "pdf-add-text-watermark",
+    "exif-remover",
+    "image-redaction"
+  ],
+  "keywords": [
+    "image watermark tool",
+    "add watermark to photo online",
+    "text watermark generator",
+    "tiled watermark image",
+    "free watermark maker"
+  ]
+}

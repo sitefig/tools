@@ -1,0 +1,46 @@
+{
+ "id": "screen-ruler",
+ "seoTitle": "Free On-Screen Ruler in cm, Inches and Pixels",
+ "metaDescription": "A ruler on your screen in centimetres, inches or pixels. Calibrate against a bank card for real-world measurements. Free, runs in your browser.",
+ "intro": "Measure with an on-screen ruler in centimetres, inches or pixels, and calibrate it by matching a box to a standard bank card.",
+ "why": "Sometimes you need a real measurement and have no ruler: the size of a small part, a gap on a shelf, a print layout. Screens vary in pixel density, so a ruler drawn at a fixed number of pixels per centimetre will be wrong on most displays.\n\nThis ruler fixes that with a calibration step. A blue box is drawn at the size of a bank card, 85.6 by 54 millimetres. Hold a real card against your screen and change the pixels-per-centimetre value until the box matches it, and the ruler then reads true on your display. You can click on the ruler to read a position in pixels, centimetres and inches. Results are only as good as your calibration, and zoom level changes the scale, so keep browser zoom at 100 percent.",
+ "howTo": [
+  "Choose cm, in or px as the unit.",
+  "Hold a bank card to the screen and adjust Pixels per cm until the blue box matches its size.",
+  "Place the object against the screen and read the ruler.",
+  "Click a point on the ruler to see its position in pixels, centimetres and inches."
+ ],
+ "faq": [
+  {
+   "q": "Why do I need to calibrate?",
+   "a": "Browsers assume 96 CSS pixels per inch, but real screens differ by size and resolution. Matching the box to a bank card gives you the actual pixels per centimetre of your display."
+  },
+  {
+   "q": "Does browser zoom affect it?",
+   "a": "Yes. Zooming changes the size of CSS pixels, so calibrate again at your usual zoom level, and keep it unchanged while measuring. A zoom of 100 percent is the easiest to trust."
+  },
+  {
+   "q": "How long is the ruler?",
+   "a": "It shows about 30 cm, 12 inches or 1200 pixels, depending on the unit. On a small screen the ruler scrolls sideways so you can see the rest."
+  },
+  {
+   "q": "How accurate can it be?",
+   "a": "After a careful calibration, within about a millimetre for small objects. Parallax from viewing the screen at an angle and glass thickness add error, so view straight on."
+  }
+ ],
+ "related": [
+  "bubble-level",
+  "screen-info",
+  "unit-converter",
+  "css-unit-converter",
+  "px-to-rem-converter",
+  "screen-size-ppi"
+ ],
+ "keywords": [
+  "screen ruler",
+  "online ruler cm inches",
+  "on screen ruler actual size",
+  "measure with phone screen",
+  "free pixel ruler"
+ ]
+}

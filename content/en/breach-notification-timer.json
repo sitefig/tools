@@ -1,0 +1,41 @@
+{
+ "id": "breach-notification-timer",
+ "seoTitle": "GDPR Breach Notification Timer: 72-Hour Deadline and Draft",
+ "metaDescription": "Enter when you became aware of a data breach and get the 72-hour Art. 33 deadline, time left and a draft notification. Free and local.",
+ "intro": "Calculates the 72-hour GDPR breach notification deadline and drafts the notification with the four points Art. 33(3) asks for.",
+ "why": "When a personal data breach happens the controller has to notify the supervisory authority without undue delay and, where feasible, within 72 hours of becoming aware, unless the breach is unlikely to risk people's rights. Late notices must explain the delay.\n\nEnter the time you became aware and the tool shows the deadline, the time left, and a draft with the content Art. 33(3) asks for. It also lists what to document and when affected people must be told (Art. 34). What counts as becoming aware can be argued, so involve your DPO or counsel quickly.",
+ "howTo": [
+  "Enter when you became aware, with a time zone, or leave it empty for now.",
+  "Read the deadline and the time left.",
+  "Fill in the draft notification.",
+  "Document the breach even if you do not notify."
+ ],
+ "faq": [
+  {
+   "q": "Are weekends excluded?",
+   "a": "No. The 72 hours run continuously."
+  },
+  {
+   "q": "What if I do not know everything yet?",
+   "a": "Notify in phases (Art. 33(4)). Say what is unknown."
+  },
+  {
+   "q": "Do I always have to notify?",
+   "a": "No, not if the breach is unlikely to result in a risk to people. Record why."
+  }
+ ],
+ "related": [
+  "dsar-deadline-calculator",
+  "dsr-response-templates",
+  "ropa-builder",
+  "dpia-screening",
+  "secret-detector-redactor",
+  "gdpr-checklist"
+ ],
+ "keywords": [
+  "72 hour breach notification",
+  "gdpr article 33",
+  "data breach template",
+  "breach deadline"
+ ]
+}

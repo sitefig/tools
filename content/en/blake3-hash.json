@@ -1,0 +1,46 @@
+{
+ "id": "blake3-hash",
+ "seoTitle": "Free BLAKE3 Hash Generator: Hash, Keyed, Derive Key",
+ "metaDescription": "Compute BLAKE3 in hash, keyed_hash or derive_key mode with output of any length up to 1 MiB. Free BLAKE3 tool that runs in your browser.",
+ "intro": "Enter a message as text, hex or base64 and pick hash, keyed_hash or derive_key mode. Choose an output length in bytes and the tool returns the result as hex.",
+ "why": "BLAKE3 is a newer hash that is very fast and can produce output of any length, which makes it attractive for checksums, content addressing and key derivation. Libraries differ in how they expose its three modes, and it is easy to get one detail wrong, such as using a key of the wrong size or forgetting the context string in derive_key mode. This page lets you try all three modes with your own data and an adjustable output length, to compare against another implementation or to confirm a test vector. The implementation is hand-written and runs entirely in your browser, so the input is not uploaded. It is an educational tool and has not been audited; use a reviewed library in production.",
+ "howTo": [
+  "Enter the message or key material and choose text, hex or base64.",
+  "Select hash, keyed_hash or derive_key and set the output length in bytes.",
+  "Supply a 64-character hex key for keyed_hash, or a context string for derive_key, then copy the hex output."
+ ],
+ "faq": [
+  {
+   "q": "What does keyed_hash need?",
+   "a": "A key of exactly 32 bytes, entered as 64 hex characters. Any other length produces an error. In this mode BLAKE3 acts as a MAC."
+  },
+  {
+   "q": "What is the context string for?",
+   "a": "In derive_key mode the context string identifies the purpose of the derived key, such as an app name, date and use. The message field then holds the key material. Different contexts give unrelated keys."
+  },
+  {
+   "q": "How long can the output be?",
+   "a": "From 1 byte up to 1 MiB, thanks to BLAKE3's extendable output. The first 32 bytes match the default 256-bit digest."
+  },
+  {
+   "q": "Should I use this for production secrets?",
+   "a": "Do not paste live secrets into any page you do not fully trust. This implementation is for learning and checking test vectors; it is not audited."
+  }
+ ],
+ "related": [
+  "blake2-hash",
+  "hash-generator",
+  "hkdf-derive",
+  "sha3-hash-generator",
+  "hmac-generator",
+  "noncrypto-hashes"
+ ],
+ "keywords": [
+  "blake3 hash online",
+  "blake3 generator",
+  "free blake3 calculator",
+  "blake3 keyed hash",
+  "blake3 derive key",
+  "blake3 test vectors"
+ ]
+}

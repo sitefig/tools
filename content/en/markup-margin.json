@@ -1,0 +1,46 @@
+{
+ "id": "markup-margin",
+ "seoTitle": "Free Markup and Margin Calculator: Price from Cost",
+ "metaDescription": "Convert between cost, markup percentage, margin percentage and selling price. Free markup and margin calculator that runs in your browser.",
+ "intro": "Enter your cost and one of markup %, margin % or selling price. The tool works out the other values, including profit.",
+ "why": "Markup and margin are often confused, and the mistake costs money. A 50% markup on a cost of 60 gives a selling price of 90, but the margin on that price is only 33.3%. People who think in margins quote prices that are too low, and people who think in markups misread supplier terms. Retailers, freelancers and shop owners run into this whenever they set prices or read a competitor's accounts. This calculator accepts whichever number you know and shows cost, selling price, profit, markup and margin together, so you can see how they relate. A margin of 100% or more is rejected because it is impossible. All calculations are local.",
+ "howTo": [
+  "Enter your cost.",
+  "Choose what you are given: Markup %, Margin % or Selling price.",
+  "Type that value and read the selling price, profit, markup and margin."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between markup and margin?",
+   "a": "Markup is profit as a percentage of cost. Margin is profit as a percentage of the selling price. The same sale always has a lower margin than markup, because the price is larger than the cost."
+  },
+  {
+   "q": "Why can't the margin be 100% or more?",
+   "a": "A margin of 100% would mean the selling price is infinite compared with cost. The formula divides cost by (1 minus margin), so the tool shows an error for 100% or above."
+  },
+  {
+   "q": "Can I work backwards from a selling price?",
+   "a": "Yes. Choose 'Selling price', enter it and the cost, and the tool reports the markup and margin that price implies."
+  },
+  {
+   "q": "Does this include tax or overheads?",
+   "a": "No. It uses only the cost you type. Add overheads to the cost if you want them covered, and use the VAT calculator for tax."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "break-even",
+  "discount-calculator",
+  "vat-calculator",
+  "roi-calculator",
+  "percentage-calculator"
+ ],
+ "keywords": [
+  "markup and margin calculator",
+  "free markup calculator",
+  "margin vs markup",
+  "selling price calculator",
+  "cost plus pricing calculator",
+  "markup to margin"
+ ]
+}

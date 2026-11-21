@@ -1,0 +1,43 @@
+{
+ "id": "audio-converter",
+ "seoTitle": "Free Audio Converter to WAV in Your Browser",
+ "metaDescription": "Convert MP3, M4A, OGG, FLAC and other audio files to WAV in your browser: choose bit depth, sample rate, mono, normalise and trim. Free.",
+ "intro": "Choose an audio file your browser can play and save it as an uncompressed WAV, with a choice of 16-bit, 24-bit or 32-bit float, mono mix-down, resampling, normalisation and trimming.",
+ "why": "Audio tools, game engines, speech models and some hardware want plain WAV, while what you have is an M4A voice memo, an OGG clip or an MP3. Installing a desktop converter for one file is a chore, and uploading a private recording to a web service is not something everyone is comfortable with.\n\nThis converter decodes the file with your browser's own audio support and writes the WAV locally, so the recording is never uploaded. You can down-mix to mono, change the sample rate, normalise the peak and cut the start and end. It does not create MP3 or AAC files, because browsers do not include encoders for them. Which formats can be opened depends on your browser.",
+ "howTo": [
+  "Choose an audio file from your device.",
+  "Select the bit depth, and a sample rate or keep the original.",
+  "Tick mono mix-down or peak normalisation if you need them, and set the trim start and end in seconds.",
+  "Run the conversion and download the WAV file."
+ ],
+ "faq": [
+  {
+   "q": "Why can't I save as MP3?",
+   "a": "Browsers can decode MP3 but do not ship an MP3 or AAC encoder, so this tool outputs WAV only. WAV files are larger, because they are uncompressed, but they work almost everywhere."
+  },
+  {
+   "q": "Which files can I open?",
+   "a": "Whatever your browser can decode, commonly MP3, AAC or M4A, OGG, Opus, FLAC, WAV and WebM audio. If a file fails to load, try another browser or check that the file is not damaged or protected."
+  },
+  {
+   "q": "What does normalising do?",
+   "a": "It scales the whole file so the loudest peak reaches minus 1 dBFS. That makes quiet recordings louder without clipping, but it changes the volume of the entire file by the same amount, not just the quiet parts."
+  }
+ ],
+ "related": [
+  "audio-trimmer",
+  "audio-db-converter",
+  "audio-bpm-tap",
+  "tone-generator",
+  "video-to-gif",
+  "screen-recorder"
+ ],
+ "keywords": [
+  "audio converter to wav",
+  "convert mp3 to wav online",
+  "m4a to wav in browser",
+  "audio normalise online",
+  "resample audio browser",
+  "free audio converter no upload"
+ ]
+}

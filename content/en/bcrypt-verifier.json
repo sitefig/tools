@@ -1,0 +1,46 @@
+{
+ "id": "bcrypt-verifier",
+ "seoTitle": "Free Bcrypt Hash Verifier - Check a Password",
+ "metaDescription": "Check whether a password matches a bcrypt hash ($2a, $2b or $2y, cost up to 16). Free, runs locally in your browser and sends nothing anywhere.",
+ "intro": "Enter a password and a bcrypt hash to find out whether they match. The check runs in your browser and nothing is sent to a server.",
+ "why": "When a login fails in development, you need to know whether the stored hash, the password or the code is at fault. Writing a script just to call a compare function is a detour, and web pages that verify on a server would receive both your password and its hash.\n\nThis verifier recomputes the hash locally. It reads the version, cost and salt from the hash you give, hashes your password with those same settings and compares the result to the stored value, in a way that does not stop at the first difference. It accepts the 2a, 2b and 2y prefixes and costs up to 16, though high costs can take many seconds. The result is a clear match or no match message. Use test credentials and avoid pasting live production secrets.",
+ "howTo": [
+  "Type or paste the password in the first box.",
+  "Paste the full bcrypt hash into the second box.",
+  "Run the tool.",
+  "Read whether it says MATCH or NO MATCH."
+ ],
+ "faq": [
+  {
+   "q": "What does a valid bcrypt hash look like?",
+   "a": "It starts with $2a$, $2b$ or $2y$, then a two-digit cost, then 53 characters: a 22-character salt and a 31-character hash. If the format is wrong, the tool tells you instead of guessing."
+  },
+  {
+   "q": "Why is it slow with some hashes?",
+   "a": "Verification repeats the original work, and each cost step doubles it. A cost of 14 or 16 can take many seconds in a browser, by design, since that is what slows down attackers."
+  },
+  {
+   "q": "Why does a correct password say no match?",
+   "a": "Common causes are a trailing space or newline in the password, a different encoding, a hash truncated when copied, or a password longer than 72 bytes that was altered before hashing. Check each in turn."
+  },
+  {
+   "q": "Is my password sent anywhere?",
+   "a": "No. Both values stay in your browser while the check runs. Even so, do not use this page for live production credentials; prefer test accounts."
+  }
+ ],
+ "related": [
+  "bcrypt-generator",
+  "argon2-verify",
+  "password-strength",
+  "hash-compare",
+  "pbkdf2-key-derivation",
+  "htpasswd-generator"
+ ],
+ "keywords": [
+  "bcrypt verifier",
+  "bcrypt check online",
+  "verify bcrypt hash",
+  "bcrypt compare password",
+  "free bcrypt validator"
+ ]
+}

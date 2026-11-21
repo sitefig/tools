@@ -1,0 +1,45 @@
+{
+ "id": "content-discovery-lag",
+ "seoTitle": "Content Discovery Lag: Publish Date to First Googlebot Visit",
+ "metaDescription": "Measure how long a bot took to request each new URL for the first time, from your publish dates and your access log. Free and private.",
+ "intro": "Compares the publish time of new URLs with the first bot request for each URL in your log and shows the lag.",
+ "why": "How fast new pages are picked up is one of the few crawl numbers you can act on. Slow discovery points to weak internal links, a stale sitemap or a site that bots visit rarely.\n\nYou paste a list of paths with publish times and your access log. The tool finds the first request from the bots you choose and reports the gap, the median and the slowest page. Times without a zone are read as UTC, and log times use their own offset, so check your server's time zone.",
+ "howTo": [
+  "Paste access log lines in the first box.",
+  "Paste one line per new URL in the second box: /path,2025-10-02 08:00.",
+  "Choose the bots and whether only 200 answers count.",
+  "Read the lag per URL and the median."
+ ],
+ "faq": [
+  {
+   "q": "What if a bot visited before the publish time?",
+   "a": "The row is marked for review. The publish time may be wrong, or the page was live earlier than you recorded."
+  },
+  {
+   "q": "Why is the lag unreliable for old pages?",
+   "a": "A page published before the log starts may have been crawled before the log begins. Those rows are flagged."
+  },
+  {
+   "q": "How can I speed up discovery?",
+   "a": "Link new pages from the home page or a hub, update the sitemap at once and make sure the pages return 200 quickly."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  }
+ ],
+ "related": [
+  "crawl-frequency-per-url",
+  "sitemap-lastmod-timeline",
+  "news-sitemap-freshness-checker",
+  "googlebot-crawl-budget-analyzer",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer"
+ ],
+ "keywords": [
+  "content discovery lag",
+  "how fast does googlebot find new pages",
+  "time to first crawl",
+  "new page crawl delay logs"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "schema-generator",
+ "seoTitle": "Free Schema.org JSON-LD Generator (FAQ, Product)",
+ "metaDescription": "Generate Schema.org JSON-LD for Article, Product, FAQ, LocalBusiness, Recipe, Event, HowTo and more from simple fields. Free, in-browser.",
+ "intro": "Choose a Schema.org type and fill in simple key: value lines to generate JSON-LD for Article, Product, LocalBusiness, FAQPage, Organization, Event, Recipe, HowTo and other types.",
+ "why": "Structured data tells search engines what a page is about, but writing JSON-LD by hand is tedious and error prone: nested objects, arrays, the right @type for each part. Plugins help only if you use a CMS that supports them.\n\nThis generator lets you write flat lines such as author.name or offers.price, and builds the nested objects with the right types for you. Special lines handle FAQ questions, breadcrumb items, HowTo steps and recipe ingredients. Pick a type to load a sample, edit it and copy the script. It supports twelve types, including Video and WebSite search actions. Check the output with the JSON-LD inspector and the official testing tools, because eligibility for rich results is not guaranteed. It runs in your browser.",
+ "howTo": [
+  "Choose a Schema.org type in the options to load a sample.",
+  "Edit the key: value lines with your own data, using dotted names for nested fields.",
+  "Run the tool to produce the JSON-LD script.",
+  "Paste it into your page and validate it with the inspector and Google's tools."
+ ],
+ "faq": [
+  {
+   "q": "How do I write nested fields?",
+   "a": "Use dots, for example author.name or address.streetAddress. The tool creates the nested objects and assigns sensible types such as Person, PostalAddress or Offer."
+  },
+  {
+   "q": "How do I add several FAQ items or steps?",
+   "a": "Use one line per item. For FAQ write q: Question | Answer. For breadcrumbs write item: Name | URL. For HowTo write step: Name | Text."
+  },
+  {
+   "q": "Will this give me rich results?",
+   "a": "Not necessarily. Markup must match visible page content and meet Google's guidelines, and Google decides when to show rich results. Always test the output."
+  },
+  {
+   "q": "Is my data uploaded?",
+   "a": "No. The JSON-LD is generated in your browser and nothing you enter is sent to a server. You can even load the page and then disconnect from the network before running it."
+  }
+ ],
+ "related": [
+  "jsonld-inspector",
+  "meta-tag-generator",
+  "og-twitter-generator",
+  "json-format",
+  "json-validate",
+  "seo-inspector"
+ ],
+ "keywords": [
+  "schema markup generator",
+  "json-ld generator",
+  "faq schema generator",
+  "product schema generator free",
+  "structured data generator online"
+ ]
+}

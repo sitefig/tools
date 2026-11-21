@@ -1,0 +1,46 @@
+{
+ "id": "privacy-policy-generator",
+ "seoTitle": "Free Privacy Policy Generator (GDPR & CCPA Template)",
+ "metaDescription": "Generate a privacy policy draft for GDPR, CCPA/CPRA or both. A free starting template that runs in your browser; not legal advice.",
+ "intro": "Answer a few questions about your site and get a privacy policy draft covering GDPR, CCPA/CPRA or both. It is a starting template, not legal advice.",
+ "why": "Almost every website that collects an email address, runs analytics or takes a payment needs a privacy policy, and regulators expect it to match what you actually do. Small businesses often have no lawyer on call and end up copying a stranger's text that does not fit their setup.\n\nThis generator builds a first draft from your answers: who you are, which regime applies, whether you have accounts, payments, newsletters, analytics, advertising, international transfers or processors, and how long you keep data. You get plain text you can adapt. It is a template only and not legal advice. Have a qualified lawyer review it before publishing, because the right wording depends on your facts. The text is produced in your browser and nothing is uploaded.",
+ "howTo": [
+  "Enter your company name, website, postal address and privacy contact email.",
+  "Choose the regime, GDPR, CCPA/CPRA or both, and name the supervisory authority.",
+  "Tick the features that apply, such as accounts, payments, newsletter, analytics, advertising and transfers, and set retention.",
+  "Run the tool, read the draft carefully, edit it and have it reviewed before you publish it."
+ ],
+ "faq": [
+  {
+   "q": "Is the generated policy legally valid?",
+   "a": "Not on its own. It is a generic template for information only, and it may not meet the rules that apply to your business. Treat it as a draft for a lawyer to review."
+  },
+  {
+   "q": "Which laws does it cover?",
+   "a": "You can choose GDPR for the EU and UK, CCPA/CPRA for California, or both. It does not cover other national or state laws, nor sector rules for health or children."
+  },
+  {
+   "q": "Do I still need a cookie policy?",
+   "a": "If you use cookies or similar technologies, usually yes, and often a consent mechanism too. The site has separate generators for the cookie policy and a banner."
+  },
+  {
+   "q": "Is my company information uploaded?",
+   "a": "No. The draft is created in your browser from what you type, and nothing is sent to a server."
+  }
+ ],
+ "related": [
+  "cookie-policy-generator",
+  "terms-generator",
+  "cookie-banner-generator",
+  "data-deletion-request-letter",
+  "gdpr-checklist",
+  "tracker-detector"
+ ],
+ "keywords": [
+  "privacy policy generator",
+  "gdpr privacy policy template",
+  "ccpa privacy policy generator",
+  "free privacy policy template",
+  "website privacy policy draft"
+ ]
+}

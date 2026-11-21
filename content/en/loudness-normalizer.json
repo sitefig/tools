@@ -1,0 +1,45 @@
+{
+ "id": "loudness-normalizer",
+ "seoTitle": "Loudness Normalizer: Set Audio to a LUFS Target",
+ "metaDescription": "Measure integrated loudness (LUFS) and set an audio file to -16, -14 or -23 LUFS with peak protection. Standard BS.1770 / EBU R128 method, in your browser.",
+ "intro": "Measures the integrated loudness of an audio file in LUFS and applies the gain needed to reach a target, with a peak ceiling so the result does not clip.",
+ "why": "Peak normalising makes a file reach 0 dB at its loudest instant, which says little about how loud it sounds. Loudness in LUFS is a better match for what people hear, and broadcasters and streaming services use it to level programmes.\n\nThe measurement follows ITU-R BS.1770-4: a K-weighting filter, 400 ms blocks with 75 percent overlap, an absolute gate at -70 LUFS and a relative gate 10 LU below the average. We checked it against ffmpeg's ebur128 filter and it agrees to the tenth of a LU. The true peak value is an estimate from 4x cubic oversampling, not a certified meter.",
+ "howTo": [
+  "Choose an audio file.",
+  "Enter the target LUFS and the peak ceiling.",
+  "Pick what to do when peaks would exceed the ceiling: reduce the gain, limit the peaks or allow clipping.",
+  "Press Run and download the WAV, or tick \"only measure\" to read the loudness."
+ ],
+ "faq": [
+  {
+   "q": "Which target should I use?",
+   "a": "EBU R128 broadcast uses -23 LUFS. Streaming services and podcast platforms publish their own values, often between -14 and -16. Check the current guidance of the service you upload to."
+  },
+  {
+   "q": "What does \"limit peaks\" do?",
+   "a": "It applies a simple look-ahead limiter so no sample goes above the ceiling while keeping the loudness target. It is not a mastering limiter; heavy limiting can change the sound."
+  },
+  {
+   "q": "Why did I not reach the target?",
+   "a": "With \"reduce gain\", the tool lowers the gain to keep peaks under the ceiling. Use \"limit peaks\" to get closer to the target."
+  },
+  {
+   "q": "Does it handle surround files?",
+   "a": "Up to six channels are read as L R C LFE Ls Rs with the BS.1770 weights. Most files are mono or stereo."
+  }
+ ],
+ "related": [
+  "audio-db-converter",
+  "decibel-meter",
+  "audio-fade-editor",
+  "audio-equalizer",
+  "audio-joiner",
+  "audio-trimmer"
+ ],
+ "keywords": [
+  "lufs normalizer",
+  "loudness normalization online",
+  "ebu r128 calculator",
+  "normalize audio to lufs"
+ ]
+}

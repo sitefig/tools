@@ -1,0 +1,47 @@
+{
+ "id": "punycode",
+ "seoTitle": "Free Punycode and IDN Domain Converter Online",
+ "metaDescription": "Convert internationalised domain names to xn-- Punycode and back, one domain per line. Free, follows RFC 3492 and runs in your browser.",
+ "intro": "Convert domain names with accents or non-Latin letters into their xn-- Punycode form, or turn an xn-- name back into readable Unicode. Paste one domain per line.",
+ "why": "The DNS only understands ASCII, so a name like münchen.de is actually stored as xn--mnchen-3ya.de. You see the xn-- form in DNS records, certificates, server logs, redirect rules and email headers, and you need it when configuring hosting for an international domain.\n\nThis converter applies the Punycode algorithm from RFC 3492 label by label, so each part of a domain between dots is handled separately and plain ASCII labels pass through. It does the work locally, which also makes it handy for checking suspicious lookalike domains without visiting them.",
+ "howTo": [
+  "Enter one domain per line, for example münchen.de or xn--mnchen-3ya.de.",
+  "Choose the direction: to punycode, or to unicode.",
+  "Read the converted domains in the output, one per line.",
+  "Copy them into your DNS settings, certificate request or redirect rules."
+ ],
+ "faq": [
+  {
+   "q": "What is the xn-- prefix?",
+   "a": "It marks a domain label that contains non-ASCII characters encoded as Punycode. Browsers show the readable Unicode version, while DNS, certificates and email use the xn-- version."
+  },
+  {
+   "q": "Does it do full IDNA processing?",
+   "a": "No. It applies plain Punycode to each label after Unicode normalisation (NFC) and lowercasing. It does not apply the full IDNA2008 mapping or validity rules, so confirm unusual characters with your registrar."
+  },
+  {
+   "q": "Can it help me spot lookalike domains?",
+   "a": "Yes. Converting a suspicious domain to Unicode reveals whether it uses unusual characters, such as a Cyrillic letter that resembles a Latin one. It only converts, so it does not judge whether the domain is malicious."
+  },
+  {
+   "q": "Why is only part of my domain converted?",
+   "a": "Only labels containing non-ASCII characters change. Labels like com or www are plain ASCII and are left as they are, so the output keeps the same dots."
+  }
+ ],
+ "related": [
+  "url-parser",
+  "url-encode",
+  "dns-record-generator",
+  "unicode-normalize",
+  "char-info",
+  "zero-width-detector"
+ ],
+ "keywords": [
+  "punycode converter",
+  "idn to punycode",
+  "xn-- decoder",
+  "free punycode online",
+  "internationalized domain name converter",
+  "unicode domain to ascii"
+ ]
+}

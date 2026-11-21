@@ -1,0 +1,45 @@
+{
+ "id": "csv-deduplicator",
+ "seoTitle": "CSV Deduplicator: Remove Duplicate Rows by Column | Free",
+ "metaDescription": "Remove duplicate CSV rows by key columns, keep first or last, ignore case and spaces, and list what was removed. Runs locally in your browser.",
+ "intro": "Removes duplicate rows from a CSV by comparing one or more key columns, or the whole row, and can show which rows were removed.",
+ "why": "Exports from CRMs and mailing lists often contain the same person twice with small differences in case or spacing. Comparing only the whole line misses those. Comparing the key column, such as email, finds them.\n\nChoose the key columns by name or number, decide whether the first or last match is kept, and switch case and space handling. You can also view only the removed rows or a list of duplicate groups before you trust the result. Row order of the kept rows is unchanged.",
+ "howTo": [
+  "Paste the CSV.",
+  "Enter key columns by name or 1-based number, or leave empty to compare whole rows.",
+  "Choose first or last, and the case and trim options.",
+  "Pick cleaned CSV, removed rows or duplicate groups, then copy."
+ ],
+ "faq": [
+  {
+   "q": "Which row is kept?",
+   "a": "The first match by default, or the last if you choose it. Kept rows stay in their original order."
+  },
+  {
+   "q": "Can I use several key columns?",
+   "a": "Yes, separate them with commas. A row is a duplicate only when all key values match."
+  },
+  {
+   "q": "Are blank values duplicates?",
+   "a": "Yes, two rows with an empty key are treated as the same key."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No, everything runs in your browser."
+  }
+ ],
+ "related": [
+  "csv-column-extractor",
+  "csv-delimiter-converter",
+  "csv-viewer",
+  "csv-column-profiler",
+  "csv-transpose",
+  "csv-to-json"
+ ],
+ "keywords": [
+  "remove duplicate rows csv",
+  "csv deduplicate by column",
+  "csv unique rows",
+  "dedupe email list"
+ ]
+}

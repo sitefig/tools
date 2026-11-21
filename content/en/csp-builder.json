@@ -1,0 +1,46 @@
+{
+ "id": "csp-builder",
+ "seoTitle": "Free CSP Builder: Content-Security-Policy Generator",
+ "metaDescription": "Build a Content-Security-Policy header from a preset and extra sources, with meta, nginx and Apache output. Free, runs in your browser.",
+ "intro": "Build a Content-Security-Policy from a strict, balanced or lockdown preset plus your own allowed sources. It prints the header, a meta tag, an nginx line and an Apache line.",
+ "why": "A Content-Security-Policy is one of the strongest defences against cross-site scripting, but writing one from scratch is fiddly. A single wrong source breaks scripts or fonts, and a policy that is too loose gives a false sense of security.\n\nThis builder starts from a preset: strict with nonces and strict-dynamic, balanced with same-origin defaults, or lockdown with everything denied. You add the hosts you really need for scripts, styles, images, fonts, connections, frames and media, set frame-ancestors and an optional report address, and choose whether to send it as Report-Only. The output is ready to paste into server config. Test in report-only mode first, because the tool cannot know what your pages load.",
+ "howTo": [
+  "Choose a preset: strict, balanced or lockdown.",
+  "Add extra sources for script, style, image, font, connect, frame and media directives, separated by spaces.",
+  "Set frame-ancestors and a report URL if you have one, and tick Report-Only to test first.",
+  "Run the tool and copy the header, meta tag, nginx or Apache line."
+ ],
+ "faq": [
+  {
+   "q": "Which preset should I start with?",
+   "a": "Balanced is the simplest to adopt. Strict gives better protection against injected scripts but needs a fresh nonce on every response. Lockdown denies everything by default and suits static sites."
+  },
+  {
+   "q": "Why should I use Report-Only first?",
+   "a": "Report-Only logs violations without blocking anything, so you can find sources you forgot before enforcing the policy. Switch it off only when reports are clean."
+  },
+  {
+   "q": "What are the limits of the meta tag version?",
+   "a": "Meta tags ignore frame-ancestors, report-uri and sandbox, and do not support Report-Only. Use the HTTP header where you can."
+  },
+  {
+   "q": "Does it upload my settings?",
+   "a": "No. The policy is built in your browser from the options you choose and nothing is sent anywhere."
+  }
+ ],
+ "related": [
+  "csp-analyzer",
+  "security-headers-generator",
+  "htaccess-generator",
+  "nginx-config-generator",
+  "subresource-integrity-generator",
+  "http-headers-analyzer"
+ ],
+ "keywords": [
+  "csp builder",
+  "content security policy generator",
+  "csp header generator free",
+  "build csp online",
+  "csp nginx apache generator"
+ ]
+}

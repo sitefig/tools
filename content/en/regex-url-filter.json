@@ -1,0 +1,45 @@
+{
+ "id": "regex-url-filter",
+ "seoTitle": "Regex URL Tester: Check a Pattern Against Many URLs",
+ "metaDescription": "Test one regular expression against a list of URLs and see matches, non-matches, capture groups and a replacement preview. For redirects and filters.",
+ "intro": "Enter a regular expression and a list of URLs. See which URLs match, what the capture groups hold and what a replacement such as /articles/$2 would produce.",
+ "why": "Redirect rules and analytics filters often use regular expressions, and a pattern that looks right can miss URLs or match too many. Testing against a real list of URLs catches that before the rule goes live.\n\nThis uses JavaScript regular expression syntax. Apache (PCRE), Nginx and Google Analytics have small differences, so re-check on the target system. A pattern with heavy backtracking can freeze the page: keep patterns simple.",
+ "howTo": [
+  "Type the regex in the first box. A /pattern/flags form works too.",
+  "Paste the URLs.",
+  "Choose what to test against: path, path and query, or full URL.",
+  "Optionally add a replacement to preview the redirect target."
+ ],
+ "faq": [
+  {
+   "q": "Which regex flavour is used?",
+   "a": "JavaScript. Most simple patterns behave the same in PCRE, but lookbehind, possessive quantifiers and some escapes differ."
+  },
+  {
+   "q": "Should I test the path or the full URL?",
+   "a": "Redirect rules in Apache and Nginx see the path only. Analytics filters usually see the page path or the full URL."
+  },
+  {
+   "q": "Why is a URL with a query string not matching?",
+   "a": "With \"path only\" the query is ignored. Switch to \"path and query\" if your pattern includes it."
+  },
+  {
+   "q": "What does $1 mean in the replacement?",
+   "a": "The first capture group, in the same way as in Apache RedirectMatch."
+  }
+ ],
+ "related": [
+  "regex-tester",
+  "regex-explainer",
+  "redirect-rule-tester",
+  "bulk-redirect-rules",
+  "url-list-normalizer",
+  "regex-cheatsheet"
+ ],
+ "keywords": [
+  "regex url tester",
+  "test regex redirect",
+  "regex url list",
+  "redirectmatch regex test"
+ ]
+}

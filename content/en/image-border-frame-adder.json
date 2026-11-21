@@ -1,0 +1,45 @@
+{
+ "id": "image-border-frame-adder",
+ "seoTitle": "Image Border and Frame Adder (Solid, Rounded, Polaroid)",
+ "metaDescription": "Add a solid border, rounded corners or a polaroid-style frame with a thick bottom edge to a picture and download the framed image.",
+ "intro": "Add a solid, rounded or polaroid frame to a picture.",
+ "why": "Pick a style, set the border width and colour, and download the result. Solid adds an even border. Rounded clips the picture to rounded corners with a coloured ring. Polaroid adds a thicker bottom edge like an instant photo.\n\nTransparent corners need PNG. If you save as JPEG the outside area is filled white or with the colour you set.",
+ "howTo": [
+  "Choose an image.",
+  "Pick solid, rounded or polaroid.",
+  "Set width, colour and corner radius.",
+  "Download the framed image."
+ ],
+ "faq": [
+  {
+   "q": "Can I make the corners transparent?",
+   "a": "Yes, keep the outside colour as transparent and save as PNG."
+  },
+  {
+   "q": "Is the original changed?",
+   "a": "No. A new file is made."
+  },
+  {
+   "q": "Is the picture resized?",
+   "a": "No. The border is added around the full-size picture."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-watermark",
+  "image-cropper",
+  "image-filters",
+  "image-collage",
+  "screenshot-device-framer",
+  "meme-generator"
+ ],
+ "keywords": [
+  "add border to image",
+  "polaroid frame",
+  "rounded corners image",
+  "photo frame"
+ ]
+}

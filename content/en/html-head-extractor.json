@@ -1,0 +1,45 @@
+{
+ "id": "html-head-extractor",
+ "seoTitle": "HTML Head Extractor: Meta, Link and Title Table",
+ "metaDescription": "List every title, meta, link and base element of a page head in one table and flag duplicates and missing basics. Free.",
+ "intro": "Reads the head of pasted HTML and lists its elements with attributes.",
+ "why": "View-source mixes the head with everything else. A table of title, meta and link elements makes duplicate canonicals, double descriptions and missing viewport tags easy to see.\n\nIt reads text up to the closing head tag. It is not a full HTML parser, so very odd markup may be missed. Repeats that are allowed, like several og:image tags, are not flagged.",
+ "howTo": [
+  "Paste the page source.",
+  "Run the tool.",
+  "Scan the table.",
+  "Fix flagged duplicates and add missing tags."
+ ],
+ "faq": [
+  {
+   "q": "What is flagged?",
+   "a": "More than one title, canonical, description, robots, viewport or similar single-use tag."
+  },
+  {
+   "q": "Are scripts listed?",
+   "a": "Only counted."
+  },
+  {
+   "q": "Does it need a full page?",
+   "a": "No, a head block is enough."
+  },
+  {
+   "q": "Is the page fetched?",
+   "a": "No. Paste the source."
+  }
+ ],
+ "related": [
+  "seo-inspector",
+  "meta-analyzer",
+  "canonical-conflict-checker",
+  "meta-tag-generator",
+  "meta-keywords-remover",
+  "seo-html-compare"
+ ],
+ "keywords": [
+  "html head extractor",
+  "list meta tags",
+  "head tags table",
+  "duplicate meta tags"
+ ]
+}

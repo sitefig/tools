@@ -1,0 +1,46 @@
+{
+ "id": "htaccess-generator",
+ "seoTitle": "Free .htaccess Generator: HTTPS, www and Caching",
+ "metaDescription": "Generate Apache .htaccess rules for HTTPS, www, trailing slash, gzip, browser caching and security headers. Free; built in your browser.",
+ "intro": "Tick the options you need and get an Apache .htaccess with HTTPS redirect, www handling, trailing slash rules, compression, browser caching and security headers.",
+ "why": "A few lines in .htaccess do a lot for a site on Apache: send everyone to HTTPS, pick one hostname, compress text files, cache static assets and add basic security headers. They are also the lines people copy from old forum posts and get subtly wrong, so one mistake can cause a redirect loop or a site-wide error.\n\nThis generator builds the file from options. Choose whether to force HTTPS, add or remove www, add or remove a trailing slash, and enable gzip, caching and security headers for your domain. The rules use mod_rewrite and, where relevant, mod_deflate, mod_expires and mod_headers, which must be available on your host. Keep a backup of your existing file and test after uploading. The result is produced in your browser.",
+ "howTo": [
+  "Enter your domain without www.",
+  "Choose the HTTPS, www and trailing slash behaviour.",
+  "Tick gzip, browser caching and security headers if you want them.",
+  "Run the tool, back up your current .htaccess and upload the new rules, then test the site."
+ ],
+ "faq": [
+  {
+   "q": "Will it work on any host?",
+   "a": "Only on Apache servers that allow .htaccess overrides and have the needed modules. NGINX and some hosts ignore .htaccess entirely. Check with your hosting provider if nothing changes."
+  },
+  {
+   "q": "What if I get a redirect loop?",
+   "a": "Loops often come from conflicting HTTPS rules, such as a CDN or load balancer already handling the redirect. Remove one of the redirects, and test with a private window to avoid cached redirects."
+  },
+  {
+   "q": "Should I merge this with my CMS rules?",
+   "a": "Yes, carefully. Many CMSs add their own rewrite block, for example for WordPress. Put redirects before it, and never delete the CMS rules."
+  },
+  {
+   "q": "Is my domain uploaded?",
+   "a": "No. Everything runs in your browser and nothing you paste is uploaded, stored or sent to a server, so staging or confidential configuration is safe to use here."
+  }
+ ],
+ "related": [
+  "redirect-code-generator",
+  "security-headers-generator",
+  "htaccess-to-nginx",
+  "nginx-config-generator",
+  "robots-generator",
+  "http-headers-analyzer"
+ ],
+ "keywords": [
+  "htaccess generator",
+  "htaccess https redirect",
+  "htaccess www redirect",
+  "apache gzip caching rules",
+  "htaccess security headers"
+ ]
+}

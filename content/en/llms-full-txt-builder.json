@@ -1,0 +1,44 @@
+{
+ "id": "llms-full-txt-builder",
+ "seoTitle": "llms-full.txt Builder: Combine Pages into One File",
+ "metaDescription": "Combine pasted page contents into a single llms-full.txt with a title, summary and a heading and source line per page. Free, in your browser.",
+ "intro": "Concatenates your pages into one Markdown file with consistent headings and source lines.",
+ "why": "Some sites publish llms-full.txt, the full text of their documentation in one file, so a model or tool can load it in one go. There is no strict format, so the useful part is consistency: one heading per page and where it came from.\n\nSeparate your pages with a line like === URL | Title, and the tool builds the file, optionally stripping HTML tags and turning headings into Markdown. It does not decide what is worth including.",
+ "howTo": [
+  "Paste pages with a === URL | Title line before each.",
+  "Set the site name and summary.",
+  "Choose whether to strip HTML.",
+  "Save the result as llms-full.txt."
+ ],
+ "faq": [
+  {
+   "q": "Is there an official format?",
+   "a": "No. llms.txt is a proposal and llms-full.txt is a common companion, with no fixed structure."
+  },
+  {
+   "q": "Does it fetch the pages?",
+   "a": "No. Paste the content."
+  },
+  {
+   "q": "What does Strip HTML do?",
+   "a": "It removes tags and keeps headings, lists and paragraphs as plain Markdown."
+  },
+  {
+   "q": "Do AI tools read it?",
+   "a": "Some do; there is no guarantee."
+  }
+ ],
+ "related": [
+  "llms-txt-generator",
+  "robots-generator",
+  "sitemap-generator",
+  "ai-bot-robots-builder",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "llms-full.txt",
+  "llms full txt generator",
+  "combine pages llms.txt",
+  "llms.txt builder"
+ ]
+}

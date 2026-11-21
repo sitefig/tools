@@ -1,0 +1,42 @@
+{
+ "id": "prometheus-recording-rules-generator",
+ "seoTitle": "Free Prometheus Recording Rules Generator",
+ "metaDescription": "Build Prometheus recording rule YAML from record = expr lines or rate, ratio and quantile shortcuts with naming checks. Free, in your browser.",
+ "intro": "Write recording rules as record = expression lines, or use the rate, ratio and quantile shortcuts, and get a rule group in YAML with checks on metric names and brackets.",
+ "why": "Heavy queries slow dashboards and alert evaluation. Recording rules precompute them, but writing the YAML by hand is repetitive, and the naming convention of level, metric and operations is easy to break. A rule named without the colon pattern makes a metric hard to recognise later.\n\nThis generator turns short lines into a valid rule group. The shortcuts expand common patterns: a rate by labels, an error ratio and a histogram quantile, each named following the convention. It also checks metric names and parentheses before you copy the YAML. You still need to review the expressions against your own metrics, and run promtool check rules before loading the file. Everything runs in your browser.",
+ "howTo": [
+  "Write rules as record = expression lines, or use @rate, @ratio or @quantile shortcuts.",
+  "Set the group name, evaluation interval, extra labels and the rate window.",
+  "Read the YAML and fix any name or bracket warnings.",
+  "Save it as a rules file, run promtool check rules, and reference it from prometheus.yml."
+ ],
+ "faq": [
+  {
+   "q": "What do the shortcuts produce?",
+   "a": "@rate creates a rate over your window summed by the labels you give, @ratio divides one rate by another, and @quantile wraps a histogram bucket in histogram_quantile. Each gets a name following level:metric:operations."
+  },
+  {
+   "q": "Why does the tool check naming?",
+   "a": "The convention puts the aggregation labels first, then the metric, then the operations, separated by colons. It makes recorded series easy to tell apart from raw ones and easier to find in dashboards."
+  },
+  {
+   "q": "Does it validate PromQL fully?",
+   "a": "No. It checks metric names and bracket balance only. Run promtool check rules against the generated file to catch syntax or semantic errors before you load it into Prometheus."
+  }
+ ],
+ "related": [
+  "prometheus-alert-generator",
+  "prometheus-config-generator",
+  "k8s-manifest-validator",
+  "yaml-format",
+  "nginx-rate-limit-calculator"
+ ],
+ "keywords": [
+  "prometheus recording rules generator",
+  "prometheus recording rule yaml",
+  "promql rate recording rule",
+  "prometheus rule naming convention",
+  "histogram_quantile recording rule",
+  "free prometheus tool"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "markdown-toc-generator",
+ "seoTitle": "Markdown Table of Contents Generator (GitHub Anchors)",
+ "metaDescription": "Make a nested, linked table of contents from Markdown headings with GitHub-style slugs, depth limits and duplicate handling. Free.",
+ "intro": "Reads the headings of a Markdown document and writes a linked, nested table of contents.",
+ "why": "A table of contents makes long READMEs easier to scan, but the anchors must match what GitHub generates: lowercase, punctuation removed, spaces turned into hyphens, and -1, -2 added to repeated headings.\n\nThis tool follows those rules, ignores headings inside fenced code, supports both # and underlined headings, strips links and emphasis from heading text, and lets you set the depth range and list marker. Other sites can use different slug rules, so check the links on your target platform.",
+ "howTo": [
+  "Paste the Markdown.",
+  "Set the shallowest and deepest heading level.",
+  "Pick the list marker.",
+  "Copy the list into your document."
+ ],
+ "faq": [
+  {
+   "q": "Do the links work outside GitHub?",
+   "a": "Many renderers use the same slugs, but not all. Test on your platform."
+  },
+  {
+   "q": "Are code blocks ignored?",
+   "a": "Yes. A # line inside a fenced block is not a heading."
+  },
+  {
+   "q": "What about repeated headings?",
+   "a": "The second gets -1, the third -2, as on GitHub."
+  }
+ ],
+ "related": [
+  "markdown-preview",
+  "markdown-table-generator",
+  "markdown-linter",
+  "markdown-to-html",
+  "markdown-cheatsheet",
+  "readme-generator"
+ ],
+ "keywords": [
+  "markdown toc generator",
+  "markdown table of contents",
+  "github toc anchors",
+  "readme contents"
+ ]
+}

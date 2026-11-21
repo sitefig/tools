@@ -1,0 +1,44 @@
+{
+ "id": "pictogram-maker",
+ "seoTitle": "Pictogram Maker: Icon Array for 3 in 10 Style Stats",
+ "metaDescription": "Draw a grid of icons with a share highlighted, such as 3 of 10 people, with fractions and a text caption. Free SVG.",
+ "intro": "Shows a proportion as a grid of icons, with the highlighted ones filled and the rest grey. A fraction fills part of the last icon.",
+ "why": "Icon arrays make risk and share easier to grasp than percentages, because you can count the icons. Set the total, the highlighted number, the icons per row and pick an icon.\n\nThe caption below the grid states the number and percentage in words, so the meaning is not only visual. Pick a total that matches the story, such as 10 or 100, and keep the highlight colour distinct from grey.",
+ "howTo": [
+  "Set the highlighted count and the total.",
+  "Choose icons per row and the icon shape.",
+  "Type a caption and pick a colour.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Can I use 2.5 of 10?",
+   "a": "Yes, the third icon is filled for half."
+  },
+  {
+   "q": "Which icons are there?",
+   "a": "Person, circle, square, heart and star."
+  },
+  {
+   "q": "Maximum total?",
+   "a": "500 icons."
+  },
+  {
+   "q": "Does it work without a pointer?",
+   "a": "Yes, all inputs are normal form fields."
+  }
+ ],
+ "related": [
+  "pie-donut-chart-maker",
+  "bar-chart-maker",
+  "survey-sample-size-calculator",
+  "conversion-funnel-visualizer",
+  "sparkline-generator",
+  "waterfall-chart-maker"
+ ],
+ "keywords": [
+  "pictogram maker",
+  "icon array generator",
+  "infographic proportion chart"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "toon-to-json",
+  "seoTitle": "TOON to JSON Converter (Token-Oriented Object Notation)",
+  "metaDescription": "Decode TOON text back to JSON: indented objects, inline and tabular arrays and list items, with errors that name the line.",
+  "intro": "Turn TOON back into JSON to inspect, validate or use it in code.",
+  "why": "The decoder reads objects by indentation, header lines such as items[3]{id,name}: with comma, tab or pipe delimiters, inline arrays, \"- \" list items and quoted strings with escapes. Lengths in headers are checked and errors name the line.\n\nIt supports the core forms; nested column groups and keyed tables from the newest spec revisions report a clear \"not supported\" error rather than guessing. Verified against the reference implementation by round-trip tests.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste TOON.",
+    "Choose the JSON indentation.",
+    "Run to get JSON, or read the error line.",
+    "Copy the JSON."
+  ],
+  "faq": [
+    {
+      "q": "What does [3] in a header mean?",
+      "a": "The number of items that follow. If the count is wrong the decoder reports it."
+    },
+    {
+      "q": "How are strings written?",
+      "a": "Plain unless they are empty, look like numbers or keywords, or contain delimiters, colons, quotes or leading dashes; then they are quoted."
+    },
+    {
+      "q": "Is TOON a standard?",
+      "a": "It is an open specification that is still evolving."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "json-to-toon",
+    "json-format",
+    "json-minify",
+    "yaml-to-json",
+    "llm-token-estimator",
+    "json-validate"
+  ],
+  "keywords": [
+    "toon to json",
+    "decode toon",
+    "toon parser",
+    "token oriented object notation"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "dsr-response-templates",
+ "seoTitle": "Data Subject Request Response Templates (GDPR Reply Letters)",
+ "metaDescription": "Generate a controller reply to access, erasure, portability, rectification, restriction or objection requests, including refusal and extension versions.",
+ "intro": "Writes the reply a company sends to a data subject request: fulfilled, partly refused, refused, identity check or extension.",
+ "why": "When a person exercises a GDPR right, the company must reply within a month and say clearly what it did. Writing a good reply each time is slow, and the wording for a refusal or an extension matters.\n\nThis tool builds a draft for six request types and five outcomes, with the article numbers and the complaint information that a refusal needs. Bracketed parts need your own details. It is a template, not legal advice.",
+ "howTo": [
+  "Choose the request type and the outcome.",
+  "Fill in company, requester, date, contact and reason.",
+  "Copy the draft and replace the [brackets].",
+  "Send it within the deadline and keep a record."
+ ],
+ "faq": [
+  {
+   "q": "What deadline applies?",
+   "a": "One month, extendable by two months for complex or numerous requests (Art. 12(3)). Use the Deadline Calculator."
+  },
+  {
+   "q": "Do I need to check identity?",
+   "a": "Only if you have reasonable doubts (Art. 12(6)). Ask for the minimum needed."
+  },
+  {
+   "q": "Which tool writes the request itself?",
+   "a": "The GDPR Erasure / Access Request Letter tool, which is for the person making the request."
+  }
+ ],
+ "related": [
+  "dsar-deadline-calculator",
+  "data-deletion-request-letter",
+  "ropa-builder",
+  "breach-notification-timer",
+  "privacy-policy-generator",
+  "gdpr-checklist"
+ ],
+ "keywords": [
+  "dsar response template",
+  "gdpr access request reply",
+  "right to erasure response",
+  "subject access request letter"
+ ]
+}

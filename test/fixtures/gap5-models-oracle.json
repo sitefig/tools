@@ -1,0 +1,392 @@
+{
+ "mlm": [
+  {
+   "text": "Paris is the [MASK] of France.",
+   "top": [
+    [
+     [
+      "capital",
+      0.9815465807914734
+     ],
+     [
+      "birthplace",
+      0.003342424286529422
+     ],
+     [
+      "northernmost",
+      0.0010447058593854308
+     ],
+     [
+      "centre",
+      0.0010043178917840123
+     ],
+     [
+      "southernmost",
+      0.0007803143234923482
+     ]
+    ]
+   ]
+  },
+  {
+   "text": "The doctor said I should [MASK] more water.",
+   "top": [
+    [
+     [
+      "drink",
+      0.2991653084754944
+     ],
+     [
+      "get",
+      0.22253333032131195
+     ],
+     [
+      "take",
+      0.12391622364521027
+     ],
+     [
+      "fetch",
+      0.041438788175582886
+     ],
+     [
+      "use",
+      0.03315763548016548
+     ]
+    ]
+   ]
+  },
+  {
+   "text": "She opened the door and [MASK] inside.",
+   "top": [
+    [
+     [
+      "stepped",
+      0.3975723385810852
+     ],
+     [
+      "walked",
+      0.11076367646455765
+     ],
+     [
+      "peeked",
+      0.09484986215829849
+     ],
+     [
+      "slipped",
+      0.08455976843833923
+     ],
+     [
+      "hurried",
+      0.04334934055805206
+     ]
+    ]
+   ]
+  },
+  {
+   "text": "I love to eat [MASK] for breakfast.",
+   "top": [
+    [
+     [
+      "pancakes",
+      0.09565419703722
+     ],
+     [
+      "breakfast",
+      0.040115565061569214
+     ],
+     [
+      "here",
+      0.02648119628429413
+     ],
+     [
+      "bacon",
+      0.020241469144821167
+     ],
+     [
+      "chicken",
+      0.019763074815273285
+     ]
+    ]
+   ]
+  },
+  {
+   "text": "The [MASK] barked loudly at the mailman.",
+   "top": [
+    [
+     [
+      "clerk",
+      0.056492745876312256
+     ],
+     [
+      "postmaster",
+      0.049337517470121384
+     ],
+     [
+      "dog",
+      0.040878213942050934
+     ],
+     [
+      "guard",
+      0.03262248635292053
+     ],
+     [
+      "man",
+      0.02448594756424427
+     ]
+    ]
+   ]
+  },
+  {
+   "text": "Water boils at 100 degrees [MASK].",
+   "top": [
+    [
+     [
+      "temperature",
+      0.11231513321399689
+     ],
+     [
+      "below",
+      0.07874175906181335
+     ],
+     [
+      "above",
+      0.06406699120998383
+     ],
+     [
+      "high",
+      0.05467463284730911
+     ],
+     [
+      "humidity",
+      0.041120465844869614
+     ]
+    ]
+   ]
+  },
+  {
+   "text": "He plays the [MASK] in a jazz band, and his brother plays the [MASK].",
+   "top": [
+    [
+     [
+      "saxophone",
+      0.22363118827342987
+     ],
+     [
+      "clarinet",
+      0.164274200797081
+     ],
+     [
+      "trumpet",
+      0.11970868706703186
+     ],
+     [
+      "trombone",
+      0.10484102368354797
+     ],
+     [
+      "guitar",
+      0.06358765810728073
+     ]
+    ],
+    [
+     [
+      "trombone",
+      0.137109637260437
+     ],
+     [
+      "saxophone",
+      0.12092765420675278
+     ],
+     [
+      "trumpet",
+      0.11470840126276016
+     ],
+     [
+      "drums",
+      0.07886040955781937
+     ],
+     [
+      "clarinet",
+      0.07410567253828049
+     ]
+    ]
+   ]
+  }
+ ],
+ "qa": [
+  {
+   "q": "Who designed the Eiffel Tower?",
+   "c": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.",
+   "answer": "Gustave Eiffel",
+   "score": 0.9862757307600987,
+   "start": 119,
+   "end": 133
+  },
+  {
+   "q": "Where is the Eiffel Tower?",
+   "c": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.",
+   "answer": "Champ de Mars in Paris, France",
+   "score": 0.3819243609905243,
+   "start": 56,
+   "end": 86
+  },
+  {
+   "q": "When was the tower built?",
+   "c": "The Eiffel Tower is a wrought-iron lattice tower on the Champ de Mars in Paris, France. It is named after the engineer Gustave Eiffel, whose company designed and built the tower from 1887 to 1889.",
+   "answer": "1887 to 1889",
+   "score": 0.4160294830799103,
+   "start": 183,
+   "end": 195
+  },
+  {
+   "q": "What is the secret password for the vault?",
+   "c": "Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. Filler sentence about nothing in particular. The secret password for the vault is Orchid-42 and nobody should share it. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. More filler text goes here. ",
+   "answer": "Orchid-42",
+   "score": 0.9984845570288599,
+   "start": 2737,
+   "end": 2746
+  },
+  {
+   "q": "What is the capital of Belgium?",
+   "c": "Brussels is the capital of Belgium and hosts the institutions of the European Union. Amsterdam is the capital of the Netherlands.",
+   "answer": "Brussels",
+   "score": 0.9960221648216248,
+   "start": 0,
+   "end": 8
+  },
+  {
+   "q": "How many legs does a spider have?",
+   "c": "Spiders are arachnids. Unlike insects, a spider has eight legs and two body segments.",
+   "answer": "eight",
+   "score": 0.9064306020736694,
+   "start": 52,
+   "end": 57
+  }
+ ],
+ "tok": {
+  "mlm": [
+   {
+    "t": "H\u00e9llo, W\u00f6rld! \u4f60\u597d na\u00efve caf\u00e9 \u2014 don't stop.",
+    "ids": [
+     7592,
+     1010,
+     2088,
+     999,
+     100,
+     100,
+     15743,
+     7668,
+     1517,
+     2123,
+     1005,
+     1056,
+     2644,
+     1012
+    ]
+   },
+   {
+    "t": "Uppercase ABC and lowercase abc; x-ray 3.14 U.S.A.",
+    "ids": [
+     3356,
+     18382,
+     5925,
+     1998,
+     2896,
+     18382,
+     5925,
+     1025,
+     1060,
+     1011,
+     4097,
+     1017,
+     1012,
+     2403,
+     1057,
+     1012,
+     1055,
+     1012,
+     1037,
+     1012
+    ]
+   },
+   {
+    "t": "tab\tsep  multiple   spaces\nnewline",
+    "ids": [
+     21628,
+     19802,
+     3674,
+     7258,
+     2047,
+     4179
+    ]
+   }
+  ],
+  "qa": [
+   {
+    "t": "H\u00e9llo, W\u00f6rld! \u4f60\u597d na\u00efve caf\u00e9 \u2014 don't stop.",
+    "ids": [
+     145,
+     2744,
+     6643,
+     117,
+     160,
+     19593,
+     17670,
+     1181,
+     106,
+     100,
+     100,
+     9468,
+     28203,
+     2707,
+     20583,
+     783,
+     1274,
+     112,
+     189,
+     1831,
+     119
+    ]
+   },
+   {
+    "t": "Uppercase ABC and lowercase abc; x-ray 3.14 U.S.A.",
+    "ids": [
+     5454,
+     14083,
+     5254,
+     1105,
+     2211,
+     14083,
+     170,
+     1830,
+     1665,
+     132,
+     193,
+     118,
+     7586,
+     124,
+     119,
+     1489,
+     158,
+     119,
+     156,
+     119,
+     138,
+     119
+    ]
+   },
+   {
+    "t": "tab\tsep  multiple   spaces\nnewline",
+    "ids": [
+     27629,
+     1830,
+     14516,
+     1643,
+     2967,
+     6966,
+     1207,
+     2568
+    ]
+   }
+  ]
+ }
+}

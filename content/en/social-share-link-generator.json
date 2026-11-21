@@ -1,0 +1,41 @@
+{
+ "id": "social-share-link-generator",
+ "seoTitle": "Social Share Link Generator for X, LinkedIn, Facebook and More",
+ "metaDescription": "Build share links for X, LinkedIn, Facebook, WhatsApp, Reddit, Bluesky, Telegram and email from a URL and title. Free, no scripts.",
+ "intro": "Build \"share this page\" links for X, LinkedIn, Facebook, WhatsApp, Reddit, Bluesky, Telegram and email from a URL and a title.",
+ "why": "Official share buttons load scripts from the platforms and track visitors. A plain link does the same job without that.\n\nEnter the page URL and an optional title, hashtags and X handle. The tool builds a properly encoded share link for each network and, if you like, ready-to-paste HTML with rel=noopener. These formats are the commonly used public ones. They were not opened or checked here, and platforms change them, so test each link once.",
+ "howTo": [
+  "Enter the full page URL.",
+  "Add a title, hashtags and handle if you want.",
+  "Copy the links or the HTML.",
+  "Click each one once to test it."
+ ],
+ "faq": [
+  {
+   "q": "Why not use official buttons?",
+   "a": "They load third-party scripts that can track visitors. Plain links do not."
+  },
+  {
+   "q": "Do the links still work?",
+   "a": "Platforms change formats. Test each one before you publish."
+  },
+  {
+   "q": "Is the URL encoded?",
+   "a": "Yes. Every value is percent-encoded."
+  }
+ ],
+ "related": [
+  "social-preview",
+  "whatsapp-link-generator",
+  "social-post-preview",
+  "x-post-character-counter",
+  "og-image-size-checker",
+  "embed-consent-wrapper"
+ ],
+ "keywords": [
+  "share link generator",
+  "social share buttons without javascript",
+  "twitter share url",
+  "linkedin share link"
+ ]
+}

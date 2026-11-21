@@ -1,0 +1,45 @@
+{
+ "id": "audio-noise-reducer",
+ "seoTitle": "Audio Noise Reducer with Noise Profile, Free Online",
+ "metaDescription": "Remove steady background hiss, hum or fan noise from a recording. Mark a noise-only section and spectral subtraction cleans the whole file. Private.",
+ "intro": "Learns the spectrum of a noise-only stretch of your recording and subtracts it from the whole file, then exports a WAV.",
+ "why": "Hiss from a cheap microphone, a laptop fan or a room tone is steady, and steady noise can be modelled. If you can point to a second of silence before the speaker starts, the tool measures the average noise spectrum there and turns down every frequency band where the noise dominates.\n\nIt works with a 2048-point STFT and smooths the gain to limit \"musical noise\" artefacts. It cannot remove changing noise such as traffic, keyboard clicks or other voices. Strong settings cost some brightness, so start gentle and raise the strength only as far as needed.",
+ "howTo": [
+  "Choose a recording and listen for a section with only noise, for example the first second.",
+  "Enter its start and end in seconds.",
+  "Set the maximum reduction and strength; the defaults are gentle.",
+  "Press Run and compare the result with the original."
+ ],
+ "faq": [
+  {
+   "q": "How long should the noise sample be?",
+   "a": "At least a few tenths of a second; one to two seconds gives a steadier estimate."
+  },
+  {
+   "q": "It sounds watery. What now?",
+   "a": "Lower the strength or the maximum reduction. Watery sound is the usual sign of too much subtraction."
+  },
+  {
+   "q": "Does it remove hum at 50 or 60 Hz?",
+   "a": "Steady hum is part of the noise profile and is reduced, but a notch filter in the equalizer can target it more precisely."
+  },
+  {
+   "q": "Is the audio uploaded?",
+   "a": "No. Everything runs in your browser."
+  }
+ ],
+ "related": [
+  "audio-equalizer",
+  "silence-remover",
+  "audio-recorder",
+  "mic-test",
+  "spectrogram-viewer",
+  "loudness-normalizer"
+ ],
+ "keywords": [
+  "remove background noise audio",
+  "audio denoise online",
+  "reduce hiss from recording",
+  "noise reduction free"
+ ]
+}

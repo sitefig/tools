@@ -1,0 +1,44 @@
+{
+ "id": "robots-blocked-resources-checker",
+ "seoTitle": "Blocked CSS, JS and Image Checker for robots.txt",
+ "metaDescription": "Check whether robots.txt blocks the CSS, JavaScript, image and font files crawlers need to render your pages. Free, runs in your browser.",
+ "intro": "Tests your resource URLs, or a set of common paths, against robots.txt for a chosen crawler and lists blocked ones.",
+ "why": "Google renders pages, so it needs the CSS and JavaScript they load. Old advice to disallow /assets/ or /wp-includes/ can leave the crawler with a broken-looking page.\n\nPaste your robots.txt and your resource URLs, or leave the list empty to test typical paths. The tool lists blocked resources with the deciding rule and flags Disallow rules that look like they cover page resources. These are items to review; the URL Inspection tool in Search Console shows what was really fetched.",
+ "howTo": [
+  "Paste the robots.txt.",
+  "Paste your resource URLs, or leave empty for common paths.",
+  "Choose the crawler.",
+  "Fix or add Allow rules for blocked resources."
+ ],
+ "faq": [
+  {
+   "q": "Why does blocking CSS and JS matter?",
+   "a": "Without them a rendering crawler may see an unstyled or incomplete page and judge it poorly."
+  },
+  {
+   "q": "Do I need to unblock images?",
+   "a": "Only if you want them in image search or they are part of the page layout."
+  },
+  {
+   "q": "Are the default paths my real files?",
+   "a": "No, they are typical examples. Use your own URLs for a real answer."
+  },
+  {
+   "q": "Is this a verdict?",
+   "a": "No. Treat results as review items."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "robots-generator",
+  "seo-robots-noindex-simulator",
+  "sitemap-validator",
+  "googlebot-robots-rule-simulator"
+ ],
+ "keywords": [
+  "robots.txt blocked css js",
+  "googlebot cannot access css",
+  "robots.txt blocked resources",
+  "render blocking robots.txt"
+ ]
+}

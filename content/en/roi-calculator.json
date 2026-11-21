@@ -1,0 +1,46 @@
+{
+ "id": "roi-calculator",
+ "seoTitle": "Free ROI Calculator: Return on Investment and CAGR",
+ "metaDescription": "Work out return on investment, gain and annualised return from the amount invested, final value and years held. Free ROI calculator, runs in your browser.",
+ "intro": "Enter the amount invested, the final value and, optionally, the years held. You get the gain, the ROI percentage and the annualised return.",
+ "why": "Whether you bought shares, a rental property or a pay-per-click campaign, the first question after selling is how well it did. A raw gain does not answer that, and a percentage on its own can mislead if one investment took one year and another took five. This tool gives both the simple return on investment and the annualised return, so you can compare holdings of different lengths on the same scale. It is also handy for marketers judging a campaign: set years to 0 and you get the plain ROI only. The calculation uses the figures you enter, ignores tax and fees unless you include them yourself, and never leaves your browser.",
+ "howTo": [
+  "Enter the amount invested and the final value.",
+  "Enter the number of years held, or 0 to skip the annualised figure.",
+  "Read the gain, the ROI percentage and the annualised return."
+ ],
+ "faq": [
+  {
+   "q": "How is ROI calculated?",
+   "a": "ROI equals final value minus amount invested, divided by amount invested, times 100. A result of 50% means the investment grew by half of what you put in."
+  },
+  {
+   "q": "What is the annualised return?",
+   "a": "The constant yearly rate that would turn the invested amount into the final value over the period: (final divided by invested) to the power of 1 over years, minus 1. It lets you compare holdings of different lengths."
+  },
+  {
+   "q": "Why is there no annualised figure?",
+   "a": "It is shown only when the years held are above 0 and the final value is positive. Set a number of years to see it."
+  },
+  {
+   "q": "Are costs and tax included?",
+   "a": "Only if you include them. Subtract fees from the final value or add them to the amount invested before you calculate."
+  }
+ ],
+ "related": [
+  "percent-change",
+  "compound-interest",
+  "profit-margin",
+  "break-even",
+  "sip-calculator",
+  "ads-roas-calculator"
+ ],
+ "keywords": [
+  "roi calculator",
+  "return on investment calculator",
+  "free roi calculator",
+  "annualized return calculator",
+  "investment return calculator",
+  "roi formula"
+ ]
+}

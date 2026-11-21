@@ -1,0 +1,45 @@
+{
+ "id": "sql-to-prisma",
+ "seoTitle": "Free SQL DDL to Prisma Schema Converter Online",
+ "metaDescription": "Convert CREATE TABLE statements from PostgreSQL, MySQL or SQLite into a schema.prisma with relations, defaults and indexes. Free, in your browser.",
+ "intro": "Converts CREATE TABLE statements into a schema.prisma with models, @id, @default, @unique, @map, native types, composite keys, indexes and foreign keys as relations with back-relation lists.",
+ "why": "If you already have a database and want to start using Prisma, the usual route is prisma db pull, which needs a live connection. Often you only have a schema dump, a migration file or DDL pasted from a ticket. This tool reads the CREATE TABLE statements and writes a first schema.prisma: models, id and unique attributes, autoincrement and now() defaults, @map and @@map so snake_case columns keep their names, native types where needed, composite keys and indexes. Foreign keys become @relation fields and the back-relation lists are added for you. Read the result carefully, since naming and relation choices are guesses. It all runs in your browser, so no database is contacted.",
+ "howTo": [
+  "Paste your CREATE TABLE statements into the input box.",
+  "Run the conversion to get the Prisma models.",
+  "Copy the schema into schema.prisma, add the datasource and generator blocks, and run prisma validate."
+ ],
+ "faq": [
+  {
+   "q": "Do I need a database connection?",
+   "a": "No. The tool reads only the DDL text you paste. For a live database, prisma db pull is the official route."
+  },
+  {
+   "q": "How are snake_case columns handled?",
+   "a": "Field names are converted to camelCase, and @map or @@map keeps the original column and table names so the mapping stays correct."
+  },
+  {
+   "q": "Are relations created?",
+   "a": "Yes. Foreign keys become @relation fields, and the opposite side gets a list field automatically. Multiple keys to the same table are given distinct relation names."
+  },
+  {
+   "q": "Is the schema ready to use?",
+   "a": "Treat it as a draft. Add the datasource and generator blocks, and run prisma validate and prisma format to catch anything that needs adjusting."
+  }
+ ],
+ "related": [
+  "prisma-to-sql",
+  "sql-to-drizzle",
+  "sql-to-typescript",
+  "sql-to-orm-schema",
+  "sql-dialect-converter",
+  "prisma-schema-generator"
+ ],
+ "keywords": [
+  "sql to prisma",
+  "create table to prisma schema",
+  "convert sql ddl to prisma models",
+  "free prisma schema generator",
+  "mysql to prisma schema"
+ ]
+}

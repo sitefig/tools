@@ -1,0 +1,46 @@
+{
+ "id": "nanoid-generator",
+ "seoTitle": "Free NanoID Generator - Custom Length and Alphabet",
+ "metaDescription": "Generate URL-safe random NanoID strings with a custom length and alphabet, up to 1000 at a time. Free and runs securely in your browser.",
+ "intro": "Generate short, URL-safe random IDs in the NanoID style. Choose the length, how many you need and the exact set of characters to draw from.",
+ "why": "Sometimes a UUID is more than you need: it is long, full of hyphens and awkward in URLs. NanoID-style identifiers are compact, and you control the alphabet. That helps with short links, invite codes, order references or test data where you want digits only, lowercase only or no look-alike characters.\n\nThis tool builds IDs from the browser's secure random source and avoids the modulo bias that makes some characters more likely than others. The default length of 21 with the 64-character URL-safe alphabet gives roughly the same collision resistance as a v4 UUID. Shorten the length or shrink the alphabet and that margin drops, so pick values with the number of IDs you expect in mind.",
+ "howTo": [
+  "Set the length of each ID, from 1 to 256.",
+  "Set how many IDs to generate, up to 1000.",
+  "Edit the alphabet if you want only certain characters, such as digits or lowercase letters.",
+  "Copy the list of IDs."
+ ],
+ "faq": [
+  {
+   "q": "What is the default alphabet?",
+   "a": "The standard URL-safe set of 64 characters: underscore, hyphen, digits, and lowercase and uppercase letters. With a length of 21, collisions are about as unlikely as with a random UUID."
+  },
+  {
+   "q": "How short can I safely go?",
+   "a": "It depends on how many IDs you will create. Fewer characters or a smaller alphabet means a higher chance of two matching. For anything stored long term, check uniqueness in your database rather than relying on chance."
+  },
+  {
+   "q": "Does it remove duplicate characters from my alphabet?",
+   "a": "Yes. Repeated characters are collapsed so every symbol has equal probability. The alphabet must contain between 2 and 256 distinct characters, otherwise you get an error."
+  },
+  {
+   "q": "Is this the official nanoid library?",
+   "a": "No. It is a small re-implementation of the same approach, using the browser's secure random bytes with rejection sampling. The output format matches, but it is not a copy of that package."
+  }
+ ],
+ "related": [
+  "uuid-generator",
+  "ulid-generator",
+  "random-secret-generator",
+  "password-generator",
+  "api-key-generator",
+  "base58-encoder"
+ ],
+ "keywords": [
+  "nanoid generator",
+  "random id generator online",
+  "url safe random string",
+  "custom alphabet id generator",
+  "free short id generator"
+ ]
+}

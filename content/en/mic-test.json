@@ -1,0 +1,45 @@
+{
+  "id": "mic-test",
+  "seoTitle": "Microphone Test: Level Meter, Record and Play Back",
+  "metaDescription": "Check that your microphone works: pick the input, watch a live level meter, record five seconds and play it back. Audio stays on your device.",
+  "intro": "Find out whether your mic works and how loud it is before a call or recording.",
+  "why": "After you allow access, the page shows the available inputs, a live meter in dBFS with the loudest level so far and a plain-language hint (too quiet, near clipping, fine). Recording uses the browser's MediaRecorder for five seconds and plays the clip back in a player; nothing is sent over the network.\n\nUse headphones for playback to avoid feedback. Browsers only show device names after you grant permission.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Press Start and allow the microphone.",
+    "Speak and watch the meter.",
+    "Record five seconds and play it back.",
+    "Choose another input if the level is zero."
+  ],
+  "faq": [
+    {
+      "q": "Is my voice uploaded?",
+      "a": "No. Audio is processed in the page."
+    },
+    {
+      "q": "Why is the level very low?",
+      "a": "Wrong input selected, muted device, or input gain set too low in the system settings."
+    },
+    {
+      "q": "What is dBFS?",
+      "a": "Decibels relative to full scale; 0 is the maximum before clipping."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "decibel-meter",
+    "audio-recorder",
+    "webcam-recorder",
+    "tone-generator",
+    "screen-recorder",
+    "instrument-tuner"
+  ],
+  "keywords": [
+    "microphone test",
+    "mic test online",
+    "test my mic",
+    "check microphone"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "geometry-shape-calculator",
+ "seoTitle": "Geometry Calculator: Area, Perimeter, Volume and Surface Area of 16 Shapes",
+ "metaDescription": "Pick a shape and enter its dimensions to get area, perimeter, volume or surface area with the formula for each result. Free.",
+ "intro": "Calculates area, perimeter, volume or surface area for 16 common 2D and 3D shapes and prints the formula for every result.",
+ "why": "Circles, trapezoids, cones and tori each need their own formula. Choose a shape, enter its dimensions and the page shows each quantity with the formula behind it, which is handy for homework and for checking a design.\n\nTriangles can be given by three sides (Heron) or by base and height. The ellipse perimeter is computed by numerical integration, not by an approximation formula. There is no diagram; the dimension names in the shape menu tell you what to enter. Lengths use your own unit u, so areas are in u squared and volumes in u cubed.",
+ "howTo": [
+  "Choose a shape from the list.",
+  "Enter its dimensions in the numbered fields.",
+  "Leave optional fields blank if you do not have them.",
+  "Read each result with its formula."
+ ],
+ "faq": [
+  {
+   "q": "Which units does it use?",
+   "a": "Whatever you enter. Results follow the same unit."
+  },
+  {
+   "q": "Is the ellipse perimeter exact?",
+   "a": "It is a numerical integral accurate to about 12 digits."
+  },
+  {
+   "q": "Where is the diagram?",
+   "a": "There is none; the shape name lists what each dimension means."
+  },
+  {
+   "q": "Can I get the angles of a triangle?",
+   "a": "Use the triangle solver for that."
+  }
+ ],
+ "related": [
+  "triangle-solver-sss-sas-asa-ssa",
+  "scientific-calculator-degrees",
+  "unit-converter",
+  "fraction-calculator",
+  "concrete-calculator",
+  "paint-coverage"
+ ],
+ "keywords": [
+  "geometry calculator",
+  "area and volume calculator",
+  "cylinder cone sphere volume",
+  "shape formulas"
+ ]
+}

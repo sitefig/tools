@@ -1,0 +1,45 @@
+{
+  "id": "markdown-to-plain-text",
+  "seoTitle": "Markdown to Plain Text Converter",
+  "metaDescription": "Strip Markdown to plain text: headings, emphasis, links, images, code fences, lists, tables, quotes and front matter, with link and image options.",
+  "intro": "Remove Markdown syntax to get clean text for emails, meta descriptions, word counts or speech.",
+  "why": "The converter removes front matter, heading markers, emphasis and strikethrough, inline code ticks, blockquote markers and rules, converts task lists and bullet lists to simple dashes, turns table rows into tab-separated text and unwraps links and images. You choose whether links keep their text, text plus URL, or only the URL, and whether images become alt text, URL or nothing.\n\nIt handles common CommonMark and GitHub-flavoured syntax with pattern rules rather than a full parser, so unusual nesting may leave stray characters.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste Markdown.",
+    "Choose how to treat links and images.",
+    "Copy the plain text.",
+    "Run the word counter on it if you need counts."
+  ],
+  "faq": [
+    {
+      "q": "Does it handle HTML in Markdown?",
+      "a": "It removes common inline tags but is not an HTML sanitiser."
+    },
+    {
+      "q": "Are code blocks kept?",
+      "a": "Yes, without the fences."
+    },
+    {
+      "q": "Why do tables become tabs?",
+      "a": "So the cells stay separated when pasted into a spreadsheet."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "markdown-to-html",
+    "html-to-markdown",
+    "html-tag-stripper",
+    "word-counter",
+    "markdown-preview",
+    "text-cleaner"
+  ],
+  "keywords": [
+    "markdown to text",
+    "strip markdown",
+    "remove markdown formatting",
+    "plain text from markdown"
+  ]
+}

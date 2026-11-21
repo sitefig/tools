@@ -1,0 +1,45 @@
+{
+ "id": "article-schema-generator",
+ "seoTitle": "Article Schema Generator: BlogPosting and NewsArticle JSON-LD",
+ "metaDescription": "Generate Article, NewsArticle or BlogPosting JSON-LD with ISO 8601 dates, authors with profile links and publisher. Checks date validity.",
+ "intro": "Generates Article, NewsArticle or BlogPosting markup with headline, images, dates with time zone, authors linked to a profile page, and publisher.",
+ "why": "Dates are the usual trouble in article markup. Search engines want ISO 8601, ideally with a time zone, and a plain \"15 January 2026\" is not that. You type 2026-01-15 09:30 and set the offset once; the tool outputs a valid value and warns when a time has no zone, when the date is not real, or when the modified date is before the published date.\n\nEach author line becomes a Person with a URL, so the author page can be referenced from other markup. Google lists no required properties for Article, only recommended ones, and the tool shows which of those are missing.",
+ "howTo": [
+  "Choose Article, NewsArticle or BlogPosting.",
+  "Fill headline, images, dates and one author: line per author.",
+  "Set the time zone offset if your times have none.",
+  "Copy the script tag into the article page."
+ ],
+ "faq": [
+  {
+   "q": "Which type should I use?",
+   "a": "BlogPosting for blog posts, NewsArticle for news, Article otherwise. Google treats them alike for article results."
+  },
+  {
+   "q": "What date format is used?",
+   "a": "ISO 8601, for example 2026-01-15T09:30:00+01:00. A date without a time stays a date."
+  },
+  {
+   "q": "Can I have several authors?",
+   "a": "Yes, repeat the author: line."
+  },
+  {
+   "q": "Is the headline length limited?",
+   "a": "Google gives no hard limit. Keep it close to the visible page title."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "rich-result-eligibility-checker",
+  "sameas-profile-list-builder",
+  "jsonld-syntax-validator",
+  "schema-property-checker",
+  "date-formats"
+ ],
+ "keywords": [
+  "article schema generator",
+  "blogposting json-ld",
+  "newsarticle markup",
+  "article structured data dates"
+ ]
+}

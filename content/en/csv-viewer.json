@@ -1,0 +1,47 @@
+{
+ "id": "csv-viewer",
+ "seoTitle": "Free CSV Viewer - Sort & Filter CSV Online",
+ "metaDescription": "Free online CSV viewer. Open or paste a CSV file and browse it as a sortable, filterable table with auto-detected delimiter. Nothing is uploaded.",
+ "intro": "Open a CSV file or paste text and see it as a table. Click a header to sort, type in the filter box to narrow rows, and choose the delimiter if auto-detection guesses wrong.",
+ "why": "Opening a CSV in a spreadsheet can change it: leading zeros vanish, long numbers turn into scientific notation and dates get reinterpreted. Sometimes you just want to look at the file, find a row, or check that an export has the columns you expect.\n\nThis viewer shows the data exactly as it is in the file. Click a column header to sort, with numbers sorted as numbers, and use the filter box to keep only rows that contain your text in any column. A row count tells you how many rows match. You can open a file from disk or paste text. The file is read in your browser and never uploaded, which makes it safe for exports that contain personal or commercial data.",
+ "howTo": [
+  "Open a CSV file with the file picker, or paste text into the box.",
+  "Check the delimiter and change it if the columns look wrong.",
+  "Click a column header to sort, and click again to reverse the order.",
+  "Type in the filter box to show only rows containing that text."
+ ],
+ "faq": [
+  {
+   "q": "Is my file uploaded?",
+   "a": "No. The file is read by your browser and rendered locally. Nothing is sent to a server, so exports with personal data can be inspected safely."
+  },
+  {
+   "q": "How does sorting work?",
+   "a": "Click a header to sort by that column. If both values are numbers they are compared numerically, otherwise as text with natural ordering. Click again to switch between ascending and descending."
+  },
+  {
+   "q": "How big a file can it show?",
+   "a": "It builds a normal HTML table, so files with tens of thousands of rows work but may feel slow. For very large files, filter first or split the file before viewing."
+  },
+  {
+   "q": "Can I edit or save changes?",
+   "a": "No, it is a viewer. To convert the data use CSV to JSON or the other converters, or edit the text in the box and watch the table update."
+  }
+ ],
+ "related": [
+  "csv-to-json",
+  "csv-to-markdown-table",
+  "csv-to-html-table",
+  "csv-column-extractor",
+  "xlsx-viewer",
+  "json-csv-grid-editor"
+ ],
+ "keywords": [
+  "csv viewer online",
+  "open csv file online",
+  "csv file viewer",
+  "free csv viewer",
+  "sort and filter csv",
+  "view csv without excel"
+ ]
+}

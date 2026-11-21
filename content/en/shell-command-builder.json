@@ -1,0 +1,46 @@
+{
+  "id": "shell-command-builder",
+  "seoTitle": "Shell Command Builder: tar, find, rsync, ssh, openssl, dumps",
+  "metaDescription": "Build safely quoted commands for tar, find, du, rsync, scp, ssh tunnels, self-signed certificates, database dumps, curl and grep, each with a note on the flags.",
+  "intro": "Pick a task, fill in a few values and get a command you can paste into a terminal, plus an explanation of its options.",
+  "why": "Each recipe takes up to five values (shown in the output with their meaning); empty fields use the example, and a dash means none. Arguments are single-quoted when they contain special characters. The tar, find, du, rsync, grep and openssl recipes were executed against a test directory to check that the generated commands work as described, and the rest were syntax-checked.\n\nThe tool does not run anything. Test destructive commands (find -delete, rsync --delete) with a dry run or on a copy first.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the task.",
+    "Fill Value 1 to 5 in the order shown in the output.",
+    "Copy the command.",
+    "Run it with care, starting with a safe variant."
+  ],
+  "faq": [
+    {
+      "q": "What do Value 1-5 mean?",
+      "a": "They map to the parameters listed under \"Values used\" in the output for the chosen task."
+    },
+    {
+      "q": "Is it safe to paste a command?",
+      "a": "Read it first. The tool quotes arguments, but you are responsible for what you run."
+    },
+    {
+      "q": "Which shell is assumed?",
+      "a": "POSIX-compatible shells such as bash and zsh; the grep recipe uses bash brace expansion."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "git-command-builder",
+    "curl-builder",
+    "chmod-calculator",
+    "cron-generator",
+    "docker-run-to-compose",
+    "bash-posix-portability-checker"
+  ],
+  "keywords": [
+    "shell command builder",
+    "tar command generator",
+    "rsync command",
+    "find command builder",
+    "linux command generator"
+  ]
+}

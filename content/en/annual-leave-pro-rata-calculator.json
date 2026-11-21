@@ -1,0 +1,39 @@
+{
+ "id": "annual-leave-pro-rata-calculator",
+ "seoTitle": "Annual Leave Pro-Rata Calculator for Part-Time and Part-Year Staff",
+ "metaDescription": "Work out holiday entitlement for part-time days or a start or leaving date part way through the leave year. Free.",
+ "intro": "Prorates the full-time annual leave by days worked per week and by the share of the leave year you are employed.",
+ "why": "Part-time staff and joiners or leavers get a proportion of the full entitlement. This tool multiplies it by the part-time ratio and by the share of the year worked.\n\nIt is the plain proportional method. Employers and countries use different methods and statutory minimums, so check yours. This is not legal advice.",
+ "howTo": [
+  "Enter full-time leave and days per week.",
+  "Set the leave year and your first and last day in it.",
+  "Choose half-day rounding."
+ ],
+ "faq": [
+  {
+   "q": "Does it use hours or days?",
+   "a": "Days per week for the ratio; hours are shown using hours per day."
+  },
+  {
+   "q": "What if I work the whole year?",
+   "a": "Set first and last day to cover the year."
+  },
+  {
+   "q": "Is rounding standard?",
+   "a": "No. Rounding up to half days is an option, not a rule."
+  }
+ ],
+ "related": [
+  "notice-period-end-date-calculator",
+  "work-hours-calculator",
+  "long-weekend-finder",
+  "date-difference",
+  "business-days",
+  "salary-hourly"
+ ],
+ "keywords": [
+  "pro rata holiday calculator",
+  "part time annual leave",
+  "holiday entitlement"
+ ]
+}

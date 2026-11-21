@@ -1,0 +1,45 @@
+{
+ "id": "triangle-solver-sss-sas-asa-ssa",
+ "seoTitle": "Triangle Solver: Find Missing Sides and Angles (SSS, SAS, ASA, SSA)",
+ "metaDescription": "Enter three known sides or angles and get the rest of the triangle, with area, radii and a drawing. Handles the two-solution SSA case.",
+ "intro": "Solves a triangle from any three known values (at least one side), using the laws of sines and cosines, and draws it to scale.",
+ "why": "A triangle is fixed by three values, but which three decides the method. Three sides use the law of cosines. Two angles and a side use the sum of angles and the law of sines. Two sides and the angle between them use the law of cosines first.\n\nTwo sides and an angle not between them (SSA) can have no solution, one, or two. When two triangles fit, both are shown and drawn. The method was tested against hundreds of random triangles, each given in seven different ways. Sides are called a, b, c and the angle opposite each is A, B, C, in degrees.",
+ "howTo": [
+  "Type three known values such as a=7 b=10 A=30.",
+  "Use lower case for sides and capitals for angles.",
+  "Read the solution, area, perimeter and radii.",
+  "If two triangles are shown, both match your data."
+ ],
+ "faq": [
+  {
+   "q": "Why are there two answers?",
+   "a": "With two sides and a non-included acute angle the third side can lie on either side of the height."
+  },
+  {
+   "q": "Can I give three angles?",
+   "a": "No. Angles alone give the shape but not the size."
+  },
+  {
+   "q": "What units?",
+   "a": "Sides in any unit, angles in degrees."
+  },
+  {
+   "q": "Why is there no solution?",
+   "a": "The side opposite the angle may be too short to reach the other side."
+  }
+ ],
+ "related": [
+  "geometry-shape-calculator",
+  "scientific-calculator-degrees",
+  "function-grapher-roots",
+  "unit-converter",
+  "roof-pitch",
+  "polynomial-equation-solver"
+ ],
+ "keywords": [
+  "triangle solver",
+  "law of sines calculator",
+  "law of cosines calculator",
+  "ssa ambiguous case"
+ ]
+}

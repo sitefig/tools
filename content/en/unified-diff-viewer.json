@@ -1,0 +1,44 @@
+{
+ "id": "unified-diff-viewer",
+ "seoTitle": "Git Diff Viewer: Unified Diff and Patch Side by Side",
+ "metaDescription": "Paste git diff or patch output and read each file as two columns with added and removed lines marked. Free, runs locally, nothing uploaded.",
+ "intro": "Renders unified diffs and .patch files as side-by-side columns or a single unified view, with line numbers and an added and removed count.",
+ "why": "Raw diff text is hard to read once a change touches many lines. A side-by-side view shows the old and new line next to each other so you can review quickly, for example a patch someone sent by email.\n\nThe parser reads git diff, git show and plain unified diffs. It pairs removed and added lines inside a hunk. It does not recompute the diff, so what you see is exactly what the patch says. Word-level highlights are not drawn; use the two-text diff tools for that.",
+ "howTo": [
+  "Paste the output of git diff, git show or a .patch file.",
+  "Choose side by side or unified layout.",
+  "Scroll through the files and hunks.",
+  "Check the status line for the number of added and removed lines."
+ ],
+ "faq": [
+  {
+   "q": "Which formats work?",
+   "a": "Unified diffs as made by git diff, git show, git format-patch and diff -u. Context diffs and binary patches are not supported."
+  },
+  {
+   "q": "Does it show word-level changes?",
+   "a": "No. It shows whole-line changes. For inline word highlights use the text diff tools on this site."
+  },
+  {
+   "q": "Are the counts right?",
+   "a": "They were compared with git diff --numstat on a test repository and matched."
+  },
+  {
+   "q": "Is the patch uploaded?",
+   "a": "No. It is parsed and shown in your browser."
+  }
+ ],
+ "related": [
+  "text-diff",
+  "code-diff-html",
+  "git-conflict-marker-cleaner",
+  "json-diff",
+  "pr-description-generator",
+  "commit-message-suggester"
+ ],
+ "keywords": [
+  "git diff viewer",
+  "patch viewer online",
+  "unified diff side by side"
+ ]
+}

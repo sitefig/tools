@@ -1,0 +1,45 @@
+{
+ "id": "video-rotator",
+ "seoTitle": "Video Rotator and Flipper: Fix Sideways Videos Online",
+ "metaDescription": "Rotate a video 90, 180 or 270 degrees or mirror it, in your browser. Fixes phone clips recorded in the wrong orientation. Nothing is uploaded.",
+ "intro": "Rotates a video by 90, 180 or 270 degrees and optionally mirrors it horizontally or vertically.",
+ "why": "Phone videos sometimes carry an orientation flag that other software ignores, so they play sideways. Re-encoding the pixels the right way up fixes it for every player.\n\nNothing is uploaded. The file is decoded by your browser and re-encoded, so quality drops a little and the result is WebM (or MP4 where your browser can record it). It records in real time, so a 60 second clip takes about a minute and the tab must stay visible. A 90 degree turn swaps width and height.",
+ "howTo": [
+  "Choose the video.",
+  "Pick the rotation and tick flip options if needed.",
+  "Process and wait.",
+  "Check the preview and download."
+ ],
+ "faq": [
+  {
+   "q": "Why does my phone video play sideways elsewhere?",
+   "a": "It stores rotation as metadata that some players and sites ignore. Rotating the pixels removes the dependence."
+  },
+  {
+   "q": "Is the mirror image text readable?",
+   "a": "Mirroring flips text. Use it only when you want that."
+  },
+  {
+   "q": "Is the quality the same?",
+   "a": "Almost. The video is re-encoded once."
+  },
+  {
+   "q": "Does it work for audio?",
+   "a": "Audio is kept unchanged."
+  }
+ ],
+ "related": [
+  "video-cropper",
+  "video-resizer",
+  "image-rotate-flip",
+  "video-trimmer",
+  "video-format-converter",
+  "video-metadata-inspector"
+ ],
+ "keywords": [
+  "rotate video online",
+  "flip video",
+  "fix sideways video",
+  "mirror video"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "hreflang-code-checker",
+ "seoTitle": "Hreflang Code Checker: Valid ISO Language and Region Codes",
+ "metaDescription": "Check hreflang values against ISO 639-1, ISO 3166-1 and ISO 15924 lists. Catches en-UK, jp, es-419 and underscores, with the corrected form.",
+ "intro": "Checks each hreflang value against the official language, region and script code lists and tells you the correct form, for example en-GB instead of en-UK.",
+ "why": "Google ignores hreflang values it cannot read, and the common mistakes are all about codes: UK instead of GB, jp instead of ja, a country code on its own, an underscore, a three-letter language, or the numeric region 419. The format check in other tools accepts many of these. This one checks membership in the ISO 639-1 language list, the ISO 3166-1 alpha-2 region list and the ISO 15924 script list.\n\nRules follow the Google page on localized versions, read 2026-10-23. The check says nothing about whether people in a region really read that language.",
+ "howTo": [
+  "Paste codes one per line, or whole link tags or code | URL lines.",
+  "Read the verdict for each code.",
+  "Apply the suggested form where one is given.",
+  "Run again until all are OK."
+ ],
+ "faq": [
+  {
+   "q": "Why is es-419 an error?",
+   "a": "It is a UN M.49 region. Google names it as unsupported; use es or a country such as es-MX."
+  },
+  {
+   "q": "Is lowercase allowed?",
+   "a": "Google reads codes case-insensitively. The tool suggests the usual form, de-AT, as a review note."
+  },
+  {
+   "q": "Why is eu listed as OK?",
+   "a": "eu is Basque. The tool warns about this in confusable cases such as be, se and ca when used alone."
+  },
+  {
+   "q": "Which lists are used?",
+   "a": "ISO 639-1, ISO 3166-1 and ISO 15924 from the Debian iso-codes package."
+  }
+ ],
+ "related": [
+  "hreflang-validator",
+  "hreflang-generator",
+  "language-region-code-lookup",
+  "hreflang-script-subtag-helper",
+  "hreflang-csv-audit",
+  "hreflang-sitemap-validator"
+ ],
+ "keywords": [
+  "hreflang code checker",
+  "hreflang en-UK",
+  "valid hreflang codes",
+  "iso 639-1 hreflang"
+ ]
+}

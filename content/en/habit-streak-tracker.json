@@ -1,0 +1,46 @@
+{
+ "id": "habit-streak-tracker",
+ "seoTitle": "Free Habit Streak Tracker, Saved in Your Browser",
+ "metaDescription": "Track daily habits, see your current and best streak and the last 14 days at a glance. Free tracker that stores data only in this browser.",
+ "intro": "Add habits, tick them off each day and see your current streak, best streak and total days. A 14-day strip shows recent progress, and data is saved only in this browser.",
+ "why": "Habit apps often ask for an account, notifications and a subscription, when all most people want is a checklist that shows how many days in a row they have kept going. This tracker offers exactly that. Add a habit such as reading or stretching, press Done today, and it works out your current streak, your best ever run and the total number of days. A strip of filled and empty squares shows the last two weeks so a missed day is obvious. Everything is saved in your browser's local storage, which means no sign-in and no sync: the data stays on this device and browser, and clearing site data or switching browsers starts afresh.",
+ "howTo": [
+  "Type a habit name and press 'Add habit'.",
+  "Press 'Done today' each day you complete it; press again to undo.",
+  "Check the streak, best streak, total and the 14-day strip, or press Delete to remove a habit."
+ ],
+ "faq": [
+  {
+   "q": "How is the current streak counted?",
+   "a": "As consecutive days ending today. If you have not ticked today yet, the streak still counts up to yesterday, so it does not drop to zero until a full day is missed."
+  },
+  {
+   "q": "Where is my data stored?",
+   "a": "In your browser's local storage on this device. It is not uploaded, not synced between devices and not backed up. Clearing site data, or using a private window, will delete it."
+  },
+  {
+   "q": "Can I mark an earlier day?",
+   "a": "No. You can only mark or unmark today. The strip shows the past 14 days, but past days cannot be edited."
+  },
+  {
+   "q": "What if I use the tracker on another device?",
+   "a": "You will start with an empty list there, because nothing syncs. Use one browser consistently for the history to make sense."
+  }
+ ],
+ "related": [
+  "bill-tracker",
+  "pomodoro-timer",
+  "kanban-board",
+  "scratchpad-notes",
+  "countdown-to-date",
+  "decision-wheel"
+ ],
+ "keywords": [
+  "habit tracker",
+  "free habit streak tracker",
+  "daily habit tracker online",
+  "streak tracker",
+  "habit tracker no sign up",
+  "simple habit tracker"
+ ]
+}

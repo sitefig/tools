@@ -1,0 +1,46 @@
+{
+ "id": "keyword-extractor",
+ "seoTitle": "Free Keyword Extractor: Key Phrases from Text",
+ "metaDescription": "Extract key phrases from any text using RAKE-style scoring, with frequency and most common single words. Free; runs in your browser.",
+ "intro": "Paste text to pull out its most important phrases using RAKE-style scoring, with each phrase's score and number of occurrences, plus the most frequent single words.",
+ "why": "You have an article, a transcript or a competitor page and want to know what it is really about. Reading it again and highlighting terms is slow, while simple word counts mostly return filler words and single terms.\n\nThis extractor splits text at stop words and punctuation to get candidate phrases, then scores each by how often its words appear and how many different words they sit next to. This is the idea behind the RAKE algorithm. The result is a ranked list of multi-word phrases such as \"meta description length\" rather than isolated words, with the number of times each phrase occurs. You can set how many results to show. The method is simple and works best on English prose, so use it as a starting point for keyword research and not as a replacement for it.",
+ "howTo": [
+  "Paste the text you want to analyse into the input box.",
+  "Set how many results you want.",
+  "Run the tool to see the ranked phrases and their scores.",
+  "Use the phrases to check coverage in your own copy or as ideas for headings and tags."
+ ],
+ "faq": [
+  {
+   "q": "How are phrases scored?",
+   "a": "Each word gets a score from its frequency and the degree of its co-occurrence with other words in candidate phrases. A phrase scores the sum of its words, so longer phrases made of focused words rank higher."
+  },
+  {
+   "q": "Does it work in languages other than English?",
+   "a": "Poorly. Its stop word list is English, so other languages will not split into phrases correctly. Results for non-English text should be treated with caution."
+  },
+  {
+   "q": "Is it the same as keyword research?",
+   "a": "No. It only describes the text you give it. It has no search volume or competition data, so use it to understand content, not to choose targets on its own."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "keyword-density",
+  "tfidf",
+  "content-gap",
+  "keyword-clusterer",
+  "keyword-intent-classifier",
+  "readability"
+ ],
+ "keywords": [
+  "keyword extractor",
+  "extract keywords from text",
+  "rake keyword extraction online",
+  "key phrase finder",
+  "seo keyword extractor free"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "ohms-law-calculator",
+ "seoTitle": "Ohm's Law Calculator: Volts, Amps, Ohms and Watts",
+ "metaDescription": "Enter any two of voltage, current, resistance and power and get the other two. Accepts k, M and m suffixes. Free.",
+ "intro": "Solves Ohm's law and the power formulas from any two known values among V, I, R and P.",
+ "why": "Pick any two values of the four and the rest follow from V = I x R and P = V x I. It is handy for choosing a resistor or checking an LED circuit.\n\nResults use engineering prefixes. It treats the circuit as an ideal resistor, so it does not model reactance or heating.",
+ "howTo": [
+  "Fill exactly two fields.",
+  "Use suffixes like 4.7k or 20m if useful.",
+  "Read the other two values."
+ ],
+ "faq": [
+  {
+   "q": "Why exactly two fields?",
+   "a": "Two values fix the rest. One is too few, three could conflict."
+  },
+  {
+   "q": "Does it work for AC?",
+   "a": "For RMS values with a purely resistive load, yes."
+  },
+  {
+   "q": "What does m mean?",
+   "a": "Milli (0.001). Use M for mega."
+  }
+ ],
+ "related": [
+  "electricity-cost-calculator",
+  "pwm-calculator",
+  "power-unit-converter",
+  "btu-calculator",
+  "wavelength-antenna-calculator",
+  "audio-db-converter"
+ ],
+ "keywords": [
+  "ohms law calculator",
+  "volts amps watts",
+  "resistor calculation"
+ ]
+}

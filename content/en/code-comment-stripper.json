@@ -1,0 +1,44 @@
+{
+ "id": "code-comment-stripper",
+ "seoTitle": "Free Code Comment Stripper for JS, CSS, Python, SQL, HTML and Shell",
+ "metaDescription": "Remove line and block comments from code without touching strings. Keep license comments if you want. Free and runs in your browser.",
+ "intro": "Deletes comments from C-style code, CSS, Python, shell, SQL and HTML/XML. Text inside strings is left alone, license comments can be kept, and lines that become empty can be dropped.",
+ "why": "You may want to share code without notes, shrink a file by hand or count only real code. A search and replace on // breaks every URL in a string.\n\nThe tool walks the text and tracks strings, so \"http://x\" survives. It is a scanner, not a parser: JavaScript regex literals are handled by a heuristic, and shell comments, heredocs or Python f-strings with nested quotes can confuse it. Check the output before you use it, and keep the original.",
+ "howTo": [
+  "Paste the code and choose the language.",
+  "Decide whether to keep license comments and remove empty lines.",
+  "Copy the result.",
+  "Run your own syntax check on it."
+ ],
+ "faq": [
+  {
+   "q": "Are strings safe?",
+   "a": "Yes for normal strings. Comment markers inside them are kept."
+  },
+  {
+   "q": "What counts as a license comment?",
+   "a": "Block comments starting /*! or /** and anything containing @license or @preserve."
+  },
+  {
+   "q": "Does it handle regex literals?",
+   "a": "By heuristic only. A regex after an operator or bracket is skipped, which is right for common code."
+  },
+  {
+   "q": "Is Python docstring text removed?",
+   "a": "No. Docstrings are strings, so they are kept."
+  }
+ ],
+ "related": [
+  "js-minify",
+  "css-minify",
+  "html-minify",
+  "sql-minify",
+  "lines-of-code-counter",
+  "code-syntax-highlighter-html"
+ ],
+ "keywords": [
+  "remove comments from code",
+  "strip comments javascript",
+  "comment remover"
+ ]
+}

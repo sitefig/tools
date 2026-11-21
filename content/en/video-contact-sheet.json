@@ -1,0 +1,45 @@
+{
+ "id": "video-contact-sheet",
+ "seoTitle": "Video Contact Sheet Maker: Overview Grid of Frames",
+ "metaDescription": "Make one image with evenly spaced frames and timestamps from a video. Choose rows, columns and size. Private, browser only.",
+ "intro": "Samples frames at even intervals and arranges them in a grid image with timestamps, for a quick overview of a video.",
+ "why": "A contact sheet lets you scan a long recording at a glance, review a screen capture or send a preview. The frames are taken from the middle of equal segments, so the first and last seconds are not over represented.\n\nThe sheet is a PNG you download. No upload happens.",
+ "howTo": [
+  "Choose the video.",
+  "Set the number of columns, rows and the thumbnail width.",
+  "Choose whether to draw timestamps.",
+  "Press Process and download the PNG."
+ ],
+ "faq": [
+  {
+   "q": "How many frames can I include?",
+   "a": "Up to 12 by 12."
+  },
+  {
+   "q": "Can I choose exact frames?",
+   "a": "Use the Video Frame Grabber for chosen times."
+  },
+  {
+   "q": "Why is a frame blurry?",
+   "a": "It may be a frame between keyframes during motion."
+  },
+  {
+   "q": "Is the sheet large?",
+   "a": "Width times columns, so keep thumbnails modest for sharing."
+  }
+ ],
+ "related": [
+  "video-frame-grabber",
+  "pdf-thumbnail-sheet",
+  "image-collage",
+  "video-trimmer",
+  "video-metadata-inspector",
+  "image-compressor"
+ ],
+ "keywords": [
+  "video contact sheet",
+  "video thumbnails grid",
+  "video storyboard maker",
+  "frame overview image"
+ ]
+}

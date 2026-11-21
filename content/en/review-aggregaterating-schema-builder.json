@@ -1,0 +1,45 @@
+{
+ "id": "review-aggregaterating-schema-builder",
+ "seoTitle": "Review and AggregateRating Schema Builder With Self-Serving Review Warning",
+ "metaDescription": "Build Review and AggregateRating JSON-LD, with a warning when a business marks up reviews of itself, which Google does not show as stars.",
+ "intro": "Creates Review or AggregateRating markup for an item you name, checks the rating range, and warns about self-serving reviews for businesses and organizations.",
+ "why": "Google supports review stars for many types, but for LocalBusiness and Organization only on sites that collect reviews about other businesses. Marking up reviews of your own business on your own site is the self-serving case. Tick the box if the page is on the reviewed business's own site and the tool says so.\n\nThe item you review is created from the type and name you give. Counts are required with an aggregate rating: ratingCount or reviewCount. Ratings must be real and visible to users.",
+ "howTo": [
+  "Enter the item type and name.",
+  "For one review enter author and ratingValue; for an average enter aggregate and a count.",
+  "Tick the box if the page is on the reviewed business's own site.",
+  "Copy the script tag."
+ ],
+ "faq": [
+  {
+   "q": "Which types are affected?",
+   "a": "LocalBusiness and Organization and their subtypes, as in Google's review snippet guidelines."
+  },
+  {
+   "q": "What range does the rating use?",
+   "a": "1 to 5 unless you set bestRating and worstRating."
+  },
+  {
+   "q": "Can I invent ratings?",
+   "a": "No. Markup must match visible, genuine reviews."
+  },
+  {
+   "q": "Can one block hold a review and an average?",
+   "a": "Yes: the average is attached to the reviewed item."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "product-schema-generator",
+  "localbusiness-schema-generator",
+  "rich-result-eligibility-checker",
+  "jsonld-syntax-validator",
+  "softwareapplication-schema-generator"
+ ],
+ "keywords": [
+  "review schema builder",
+  "aggregateRating json-ld",
+  "self-serving reviews schema",
+  "review snippet markup"
+ ]
+}

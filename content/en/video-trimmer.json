@@ -1,0 +1,45 @@
+{
+ "id": "video-trimmer",
+ "seoTitle": "Free Video Trimmer: Cut a Clip Online, No Upload",
+ "metaDescription": "Cut a video to a start and end time in your browser. Preview the clip, set the in and out points, and save only that section. Nothing is uploaded.",
+ "intro": "Cuts a video file to the start and end times you choose and saves just that section. It runs in your browser and the file never leaves your device.",
+ "why": "Most online trimmers upload your video to a server. This one plays your file in a hidden video element, copies the chosen section to a canvas and records it with the browser recorder. Your footage stays on your device, which matters for private or large files.\n\nIt records in real time, so a 60 second clip takes about a minute and the tab must stay visible. The result is re-encoded, not a lossless cut, so it is best for sharing clips, not for archiving masters. Use the player and the \"Use player time\" buttons to set the points by eye.",
+ "howTo": [
+  "Choose a video file and watch it in the preview player.",
+  "Pause on the first frame you want and press Use player time next to Start. Do the same for End.",
+  "Press Process and keep the tab open until it finishes.",
+  "Play the result and download it."
+ ],
+ "faq": [
+  {
+   "q": "Is the cut lossless?",
+   "a": "No. The section is decoded and recorded again, so there is a small quality loss. A lossless cut needs a tool that copies the stream, which browsers cannot do for most files."
+  },
+  {
+   "q": "Why does it take as long as the clip?",
+   "a": "The browser records the video as it plays. There is no faster path in the platform APIs."
+  },
+  {
+   "q": "Which formats can I open?",
+   "a": "Whatever your browser can play, usually MP4 (H.264), WebM and often MOV. The output is WebM, or MP4 where your browser supports it."
+  },
+  {
+   "q": "Is my video uploaded?",
+   "a": "No. Everything happens in this tab."
+  }
+ ],
+ "related": [
+  "video-metadata-inspector",
+  "video-frame-grabber",
+  "video-compressor",
+  "video-to-gif",
+  "video-merger",
+  "mp4-box-inspector"
+ ],
+ "keywords": [
+  "video trimmer online",
+  "cut video in browser",
+  "trim video no upload",
+  "clip video start end"
+ ]
+}

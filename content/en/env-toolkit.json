@@ -1,0 +1,46 @@
+{
+ "id": "env-toolkit",
+ "seoTitle": "Free .env Toolkit: Diff, Convert and Example Maker",
+ "metaDescription": "Diff two .env files with values masked, convert between .env and JSON, or generate a safe .env.example. Free, in your browser.",
+ "intro": "Compare two .env files without exposing values, convert .env to JSON or JSON to .env, or produce a .env.example with secrets stripped. Everything runs locally.",
+ "why": "Environment files drift. Staging has a variable production lacks, a teammate adds a key and forgets to tell anyone, or you need an example file for the repository without copying real passwords into it. Comparing files by eye risks reading secrets aloud in a screen share.\n\nThis toolkit has four modes. The diff lists keys only in A, only in B, identical and different, with values masked unless you ask to see them. The converters turn .env into JSON and nested JSON back into upper-case names with underscores. The example generator keeps keys and comments, blanks secret-looking values and optionally keeps harmless ones. It runs in the browser.",
+ "howTo": [
+  "Pick a mode: diff A vs B, .env to JSON, JSON to .env or generate .env.example.",
+  "Paste the first file into the first box, and the second file into the second box for diff mode.",
+  "Choose whether to show values in the diff or keep safe values in the example.",
+  "Run the tool and copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Are values shown in the diff?",
+   "a": "Not by default. Differences are reported with value lengths only, so secrets are not exposed. Tick the show values option if you need the actual values."
+  },
+  {
+   "q": "How does JSON to .env handle nested objects?",
+   "a": "Nested keys are joined with underscores and upper-cased, so db.host becomes DB_HOST. The top level must be an object, and null becomes an empty value."
+  },
+  {
+   "q": "How does it decide what is secret in the example file?",
+   "a": "Keys with names like SECRET, TOKEN, PASSWORD or API_KEY, values that match known secret formats and URLs with embedded credentials are replaced by a placeholder or left empty."
+  },
+  {
+   "q": "Does anything leave my browser?",
+   "a": "No. All four modes run locally in your browser and no file is uploaded, so you can compare real environment files, although masked output is safer to share."
+  }
+ ],
+ "related": [
+  "env-linter",
+  "env-to-json",
+  "json-to-env",
+  "env-sanitizer",
+  "docker-compose-env-generator",
+  "text-diff"
+ ],
+ "keywords": [
+  "env file diff",
+  "compare two env files",
+  "env to json converter",
+  "generate env.example",
+  "dotenv converter online"
+ ]
+}

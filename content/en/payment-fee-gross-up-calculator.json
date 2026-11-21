@@ -1,0 +1,37 @@
+{
+ "id": "payment-fee-gross-up-calculator",
+ "seoTitle": "Payment Fee Calculator: Charge So You Net a Target Amount",
+ "metaDescription": "Work out a payment processing fee, or the amount to charge so you receive an exact net after a percent plus fixed fee. Stripe and PayPal style.",
+ "intro": "Calculates a processing fee on a charge, or the charge you need so that the amount you receive after fees is a target.",
+ "why": "If you want to receive 100 and the processor takes 2.9 percent plus 0.30, charging 100 leaves you short. The right charge is (100 + 0.30) divided by (1 - 0.029). People often add 2.9 percent to 100, which is slightly too little.\n\nEnter the percentage and fixed fee from your processor's pricing page. The tool shows the fee, the charge and a check that works the fee back to your target. Passing fees on to customers is restricted in some places, so check the rules where you sell.",
+ "howTo": [
+  "Choose whether you want the fee on a charge or the charge for a net.",
+  "Enter the amount and your percentage and fixed fee.",
+  "Read the result and the check line."
+ ],
+ "faq": [
+  {
+   "q": "Which fees should I enter?",
+   "a": "The ones in your own processor contract or pricing page. Rates vary by country, card type and volume."
+  },
+  {
+   "q": "Is surcharging allowed?",
+   "a": "Not everywhere, and card networks have rules. Check before you pass fees on."
+  },
+  {
+   "q": "Does it handle currency conversion?",
+   "a": "No. Add a conversion fee to the percentage if it applies."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "break-even",
+  "dropshipping-profit-calculator",
+  "average-order-value-calculator"
+ ],
+ "keywords": [
+  "stripe fee calculator",
+  "paypal fee calculator",
+  "gross up payment fee"
+ ]
+}

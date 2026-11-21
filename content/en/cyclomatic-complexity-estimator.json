@@ -1,0 +1,44 @@
+{
+ "id": "cyclomatic-complexity-estimator",
+ "seoTitle": "Free Cyclomatic Complexity Estimator for JavaScript Functions",
+ "metaDescription": "Estimate McCabe complexity per JavaScript function from pasted code. Flags functions above your limit. Heuristic, free, offline.",
+ "intro": "Finds functions, methods and arrow functions in pasted JavaScript and estimates each one's cyclomatic complexity: one plus the number of if, for, while, case, catch, &&, ||, ?? and ternary operators inside it.",
+ "why": "Cyclomatic complexity is a rough count of independent paths through a function. High values mean more tests and more places for bugs. Linters report it, but only inside a project with a config.\n\nThis tool gives a quick estimate for a pasted file. It is a text scanner, not a parser, so odd syntax can fool it, and optional chaining and default values are not counted. Treat flagged functions as \"review\", and use a real linter in your build.",
+ "howTo": [
+  "Paste JavaScript.",
+  "Set the level above which a function is flagged.",
+  "Read the list of functions and their scores.",
+  "Split or simplify the ones marked REVIEW."
+ ],
+ "faq": [
+  {
+   "q": "What is counted?",
+   "a": "if, for (including in and of), while, case, catch, &&, ||, ?? and the ?: operator, plus one for the function itself."
+  },
+  {
+   "q": "Are nested functions included in the outer score?",
+   "a": "No. Each function is scored on its own, like common linters do."
+  },
+  {
+   "q": "What limit is sensible?",
+   "a": "Many teams use 10 to 15. It is a convention, not a rule."
+  },
+  {
+   "q": "Does it handle TypeScript?",
+   "a": "Simple cases may work, but types are not understood."
+  }
+ ],
+ "related": [
+  "lines-of-code-counter",
+  "js-format",
+  "code-comment-stripper",
+  "js-minify",
+  "big-o-cheatsheet",
+  "stacktrace-formatter"
+ ],
+ "keywords": [
+  "cyclomatic complexity calculator",
+  "javascript complexity",
+  "mccabe complexity"
+ ]
+}

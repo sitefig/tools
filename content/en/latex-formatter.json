@@ -1,0 +1,45 @@
+{
+ "id": "latex-formatter",
+ "seoTitle": "LaTeX Source Indenter",
+ "metaDescription": "Indent the content of begin/end environments and display math in LaTeX, trim spaces and collapse blank lines. Verbatim stays untouched.",
+ "intro": "Indents LaTeX environments and tidies whitespace.",
+ "why": "LaTeX does not care about indentation, but readers do. Nested lists, tables and figures are much easier to follow when each environment is indented.\n\nThe tool indents lines between \\begin{...} and \\end{...} and between \\[ and \\], skips % comments when counting, and leaves verbatim, lstlisting, minted and comment environments exactly as written. The document environment is not indented unless you ask. Only whitespace changes.",
+ "howTo": [
+  "Paste the LaTeX source.",
+  "Pick the indent.",
+  "Choose whether to indent inside the document environment.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Does it wrap lines?",
+   "a": "No."
+  },
+  {
+   "q": "Is $$...$$ handled?",
+   "a": "No. Only \\[ \\] and environments."
+  },
+  {
+   "q": "Could it change the output?",
+   "a": "Only inside environments where leading spaces matter, such as verbatim, which are skipped."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "markdown-formatter",
+  "markdown-to-html",
+  "html-format",
+  "code-diff-html",
+  "tabs-spaces-converter",
+  "line-ending-normalizer"
+ ],
+ "keywords": [
+  "latex formatter online",
+  "latex indent",
+  "latexindent alternative",
+  "format latex source"
+ ]
+}

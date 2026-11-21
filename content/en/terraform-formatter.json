@@ -1,0 +1,45 @@
+{
+ "id": "terraform-formatter",
+ "seoTitle": "Free Terraform HCL Formatter Online",
+ "metaDescription": "Indent Terraform and HCL by nesting depth and align equals signs like terraform fmt. Free, runs in the browser, and heredocs are left untouched.",
+ "intro": "Paste Terraform or other HCL and get consistent two-space indentation with the equals signs aligned in runs of attribute lines, in the style of terraform fmt.",
+ "why": "Terraform code pasted from a blog, a chat or an older module rarely follows the layout that terraform fmt produces. Reviewers then spend time on whitespace instead of logic, and a CI check that runs fmt fails the pull request. If you are on a machine without Terraform installed, you cannot fix it on the spot.\n\nThis formatter handles the two things people see most: nesting indentation and alignment of consecutive attributes. Heredoc bodies are copied exactly. It is text-based and approximate, so treat terraform fmt as the final word in your pipeline.",
+ "howTo": [
+  "Paste your Terraform or HCL code into the input.",
+  "Read the formatted output, with nested blocks indented by two spaces.",
+  "Copy it back into your .tf file."
+ ],
+ "faq": [
+  {
+   "q": "Is the output identical to terraform fmt?",
+   "a": "It follows the same main rules, indentation by depth and aligned equals signs, but it is a text-based approximation. Edge cases such as complex expressions may differ, so run terraform fmt in CI as the reference."
+  },
+  {
+   "q": "What happens to heredocs?",
+   "a": "Everything between a heredoc start such as EOT and its closing marker is copied unchanged, so embedded scripts and JSON policies keep their original spacing."
+  },
+  {
+   "q": "Does it validate my configuration?",
+   "a": "No. It does not parse the language or check resource arguments, provider schemas or references. Use terraform validate for that, and terraform plan to see what a change would do."
+  },
+  {
+   "q": "Are comments kept?",
+   "a": "Yes. Hash and double-slash comments stay on their lines and are indented with the block they sit in. Brackets inside strings and comments are ignored when counting depth."
+  }
+ ],
+ "related": [
+  "terraform-hcl-to-json",
+  "terraform-hcl-to-yaml",
+  "yaml-to-terraform-hcl",
+  "terraform-scaffolder",
+  "yaml-format",
+  "json-format"
+ ],
+ "keywords": [
+  "terraform formatter online",
+  "hcl formatter",
+  "terraform fmt online",
+  "free terraform beautifier",
+  "format hcl code"
+ ]
+}

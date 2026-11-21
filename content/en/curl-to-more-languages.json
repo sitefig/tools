@@ -1,0 +1,45 @@
+{
+ "id": "curl-to-more-languages",
+ "seoTitle": "Free cURL to C#, Java, Axios, Guzzle and Faraday Tool",
+ "metaDescription": "Convert a curl command into C# HttpClient, Java 11 HttpClient, axios, PHP Guzzle or Ruby Faraday code. Free, runs in your browser.",
+ "intro": "Converts a curl command into C# HttpClient, Java 11 HttpClient, JavaScript axios, PHP Guzzle or Ruby Faraday code. It reads headers, bodies, form fields, basic auth and common flags.",
+ "why": "API documentation almost always shows curl. Your project is in C#, Java, PHP or Ruby, or uses axios, and you have to translate headers, bodies and authentication by hand. That is where small mistakes creep in: a missing content type, a wrongly escaped JSON body, a form sent as JSON. Paste the curl command here, pick the target and get code that does the same request. The tool understands -X, -H, -d, --data-urlencode, --json, -F, -u, -k and -L. Other languages have their own tools on this site: Python, fetch and Node are covered by the main cURL to Code tool, and Go and Rust have separate converters. Your command, which may include tokens, is parsed in your browser.",
+ "howTo": [
+  "Paste the curl command, including line continuations, into the input box.",
+  "Choose the target language or library from the list.",
+  "Copy the generated code and replace any secrets with environment variables before committing."
+ ],
+ "faq": [
+  {
+   "q": "Which curl options are understood?",
+   "a": "Method (-X), headers (-H), data (-d and --data-urlencode), --json, multipart form fields (-F), basic auth (-u), insecure (-k) and follow redirects (-L). Unsupported flags are ignored, so check the output against your intent."
+  },
+  {
+   "q": "How is multipart handled?",
+   "a": "Multipart bodies from -F are supported for C#, Guzzle and Faraday. Java and axios output turns them into a URL-encoded body instead, which is not the same on the wire, so adjust if the server needs multipart."
+  },
+  {
+   "q": "Does it send the request?",
+   "a": "No. It only parses the text and writes code. Nothing is executed, and no request is made from the page."
+  },
+  {
+   "q": "Where are Python, fetch or Go conversions?",
+   "a": "Python, fetch, Node and plain PHP are in the main cURL to Code tool. Go and Rust have their own converters on this site."
+  }
+ ],
+ "related": [
+  "curl-to-code",
+  "curl-builder",
+  "curl-to-ai-sdk",
+  "curl-to-postman",
+  "curl-to-go-http",
+  "curl-to-rust-reqwest"
+ ],
+ "keywords": [
+  "curl to c#",
+  "curl to java httpclient",
+  "curl to axios",
+  "curl to guzzle php",
+  "free curl converter"
+ ]
+}

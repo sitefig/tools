@@ -1,0 +1,46 @@
+{
+ "id": "zip-inspector",
+ "seoTitle": "Free ZIP Inspector - List Archive Contents",
+ "metaDescription": "List the contents of a .zip without extracting: names, sizes, compression method, CRC-32, dates and flags. Free, runs in your browser.",
+ "intro": "List what is inside a .zip file without extracting it: file names, compressed and original sizes, method, CRC-32, date and encryption flag.",
+ "why": "Before you unpack an archive from an email or a download page, it helps to look inside. Is it one file or ten thousand? Does it contain an executable? How much space will it take? Extracting first just to find out can fill a disk or drop unwanted files into a folder.\n\nThis inspector reads the archive's central directory and prints a tab-separated table with each entry's name, compression method, uncompressed and packed sizes, space saved, CRC-32 checksum, last modified time and an encrypted flag. A summary line gives the totals and the archive comment. You can copy the table into a spreadsheet to sort or filter it. Nothing is extracted or uploaded, and the check happens entirely in your browser.",
+ "howTo": [
+  "Choose a .zip file.",
+  "Run the tool.",
+  "Read the summary line and the table of entries.",
+  "Copy the table into a spreadsheet if you want to sort or filter it."
+ ],
+ "faq": [
+  {
+   "q": "What does the saved column show?",
+   "a": "The percentage by which compression shrank each entry, calculated as one minus packed size divided by original size. A stored file shows 0 percent, and an empty file shows a dash."
+  },
+  {
+   "q": "What is the CRC-32 for?",
+   "a": "It is a checksum of the original file contents. After extracting a file you can compute its CRC-32 and compare, to confirm nothing was corrupted. It is not a security signature."
+  },
+  {
+   "q": "Does it detect encrypted entries?",
+   "a": "Yes. Entries with the encryption flag set are marked in the flags column, so you know in advance that you will need a password and a tool that supports it."
+  },
+  {
+   "q": "Can it open other archive types?",
+   "a": "No. Only the ZIP format is read. Files such as .rar, .7z and .tar.gz are different formats and will be reported as not a valid zip."
+  }
+ ],
+ "related": [
+  "zip-extractor",
+  "zip-creator",
+  "crc-calculator",
+  "file-hash",
+  "checksum-crc32-adler32",
+  "gzip-decompress"
+ ],
+ "keywords": [
+  "zip inspector",
+  "list zip contents online",
+  "view zip without extracting",
+  "zip file viewer",
+  "free zip content lister"
+ ]
+}

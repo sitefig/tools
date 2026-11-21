@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free IBAN Validator - Check Length and Checksum | Free Tools</title>
+<meta name="description" content="Check IBANs for the correct country length and the mod-97 checksum, one per line, with a clear reason for each failure. Free and runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/iban-validator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/iban-validator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/iban-validator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free IBAN Validator - Check Length and Checksum | Free Tools">
+<meta property="og:description" content="Check IBANs for the correct country length and the mod-97 checksum, one per line, with a clear reason for each failure. Free and runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/iban-validator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free IBAN Validator - Check Length and Checksum | Free Tools">
+<meta name="twitter:description" content="Check IBANs for the correct country length and the mod-97 checksum, one per line, with a clear reason for each failure. Free and runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"IBAN Validator","url":"https://tools.sitefig.net/en/iban-validator/","description":"Check IBANs for the correct country length and the mod-97 checksum, one per line, with a clear reason for each failure. Free and runs in your browser.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your IBANs into the box, one per line; spaces are fine.","Run the check.","Read the result on each line: valid, or the reason it failed.","Correct the failing lines and check again."],"keywords":"iban validator, iban checker online, validate iban number, iban mod 97 check, free iban verification","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Generators","item":"https://tools.sitefig.net/en/#generators"},{"@type":"ListItem","position":3,"name":"IBAN Validator","item":"https://tools.sitefig.net/en/iban-validator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does a valid result mean the account exists?","acceptedAnswer":{"@type":"Answer","text":"No. It means the number is well formed: right characters, right length for the country and a correct checksum. It cannot tell whether the account is open or who it belongs to; only the bank can."}},{"@type":"Question","name":"What does the checksum catch?","acceptedAnswer":{"@type":"Answer","text":"The mod-97 test catches nearly all single-character typos and most swapped adjacent characters. It will not catch a number that is valid but belongs to someone else."}},{"@type":"Question","name":"Which countries are supported?","acceptedAnswer":{"@type":"Answer","text":"A built-in table of lengths covers the IBAN countries of Europe and many others across the Middle East, Africa, Asia and the Americas. A country not in the table is reported as unknown."}},{"@type":"Question","name":"Does the tool check bank codes inside the IBAN?","acceptedAnswer":{"@type":"Answer","text":"No. It does not validate the national bank code or account number format for each country, only the overall length and checksum. Some countries have extra internal checks that are not applied here."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#generators">Generators</a></li><li><span aria-current="page">IBAN Validator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>IBAN Validator</h1>
+<p class="lede">Paste one IBAN per line to check the country code, the expected length and the mod-97 checksum. Each line gets a clear valid or invalid result.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="iban-validator" data-module="gen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A mistyped IBAN can send a payment to the wrong account or cause a bank to reject a bulk file days later. Most typos are caught by the checksum built into every IBAN, but that only helps if someone actually runs the check. Finance teams, developers building payment forms and anyone cleaning a supplier list run into this regularly.</p>
+<p>This validator handles a list in one go. It strips spaces, checks the structure, compares the length with the country's expected length and then runs the mod-97 test. Valid numbers are shown in the familiar groups of four. It checks structure only: it does not confirm that the account exists, who owns it, or that the bank accepts it. Processing stays in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your IBANs into the box, one per line; spaces are fine.</li><li>Run the check.</li><li>Read the result on each line: valid, or the reason it failed.</li><li>Correct the failing lines and check again.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does a valid result mean the account exists?</summary><p>No. It means the number is well formed: right characters, right length for the country and a correct checksum. It cannot tell whether the account is open or who it belongs to; only the bank can.</p></details>
+<details><summary>What does the checksum catch?</summary><p>The mod-97 test catches nearly all single-character typos and most swapped adjacent characters. It will not catch a number that is valid but belongs to someone else.</p></details>
+<details><summary>Which countries are supported?</summary><p>A built-in table of lengths covers the IBAN countries of Europe and many others across the Middle East, Africa, Asia and the Americas. A country not in the table is reported as unknown.</p></details>
+<details><summary>Does the tool check bank codes inside the IBAN?</summary><p>No. It does not validate the national bank code or account number format for each country, only the overall length and checksum. Some countries have extra internal checks that are not applied here.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/luhn-validator/"><span class="link-card__title">Luhn Validator</span><span class="link-card__desc">Validate numbers with the Luhn checksum or compute the missing check digit.</span></a></li><li><a class="link-card" href="/en/vat-number-format-validator/"><span class="link-card__title">EU VAT Number Format Validator</span><span class="link-card__desc">Checks the format only (not whether the number is registered) for EU member states.</span></a></li><li><a class="link-card" href="/en/check-digit-tool/"><span class="link-card__title">Luhn / Verhoeff / Damm Check Digits</span><span class="link-card__desc">Validate numbers or compute the check digit (credit card style Luhn, Verhoeff dihedral-group, Damm quasigroup). One number per line; spaces and dashes ignored.</span></a></li><li><a class="link-card" href="/en/mock-credit-card-generator/"><span class="link-card__title">Mock Credit Card Number Generator (Luhn-valid test data)</span><span class="link-card__desc">Generate fake but Luhn-valid card numbers for Visa, Mastercard, American Express, Discover, JCB, Diners Club and UnionPay with random future expiry dates and CVVs, for form validation and UI tests. The numbers are NOT real accounts and cannot be charged. For payment-gateway sandboxes use that provider's documented test cards (a few well-known ones are listed below the output).</span></a></li><li><a class="link-card" href="/en/crc-calculator/"><span class="link-card__title">CRC-16 / CRC-32 / CRC-64 Calculator</span><span class="link-card__desc">30 named CRC variants (CRC-16 ARC/CCITT/XMODEM/Modbus/X-25..., CRC-32 and 32C, CRC-64 XZ/ECMA/Redis) computed with hand-written table CRCs. Shows hex, decimal and the little-endian byte form.</span></a></li><li><a class="link-card" href="/en/regex-tester/"><span class="link-card__title">Regex Tester</span><span class="link-card__desc">Test a JavaScript regex: matches with indexes, capture groups, named groups and replace preview.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

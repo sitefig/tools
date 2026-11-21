@@ -1,0 +1,46 @@
+{
+ "id": "emi-calculator",
+ "seoTitle": "Free EMI Calculator: Monthly Instalment for a Loan",
+ "metaDescription": "Calculate the equated monthly instalment (EMI), total payment and total interest from loan principal, rate and tenure in months. Free and private.",
+ "intro": "Enter the principal, annual interest rate and tenure in months. The tool returns the equated monthly instalment, the total payment and the total interest.",
+ "why": "EMI is the term many banks and lenders use for the fixed amount you pay each month on a loan, and it is the number everyone asks for first. Lenders often quote tenure in months, especially for vehicle, personal and home loans, so this version takes months directly rather than years. It is useful when a salesperson gives a rate and a tenure and you want to check the instalment yourself, or when you compare 48, 60 and 72 month options. The result also shows how much interest you will pay in total. It assumes a reducing balance and a constant rate, and it works in your browser without uploading your loan details.",
+ "howTo": [
+  "Enter the loan principal.",
+  "Enter the annual interest rate and the tenure in months.",
+  "Read the EMI, total payment and total interest from the result."
+ ],
+ "faq": [
+  {
+   "q": "What formula does the EMI calculator use?",
+   "a": "EMI equals P times i times (1+i) to the power n, divided by ((1+i) to the power n minus 1), where i is the annual rate divided by 12 and 100, and n is the number of months."
+  },
+  {
+   "q": "Is this a reducing balance or flat rate calculation?",
+   "a": "Reducing balance, where interest is charged on the outstanding principal. Lenders who quote a flat rate calculate interest on the original amount, which gives a higher effective cost, so compare carefully."
+  },
+  {
+   "q": "Can I enter the tenure in years?",
+   "a": "Not directly. Multiply the years by 12 and enter the months. The loan calculator on this site takes years and also shows an amortization table."
+  },
+  {
+   "q": "Does it include processing fees or insurance?",
+   "a": "No. Only principal and interest are modelled. Add any fees to the principal or compare the total payment with the lender's quote."
+  }
+ ],
+ "related": [
+  "loan-calculator",
+  "compound-interest",
+  "simple-interest",
+  "sip-calculator",
+  "savings-goal",
+  "roi-calculator"
+ ],
+ "keywords": [
+  "emi calculator",
+  "free emi calculator",
+  "equated monthly installment calculator",
+  "loan emi calculator",
+  "emi formula",
+  "monthly instalment calculator"
+ ]
+}

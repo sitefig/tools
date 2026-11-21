@@ -1,0 +1,45 @@
+{
+ "id": "crossword-puzzle-maker",
+ "seoTitle": "Crossword Puzzle Maker from Words and Clues",
+ "metaDescription": "Enter answers with clues and get an interlocking crossword grid with numbered across and down clues and an answer grid. Free, printable.",
+ "intro": "Fits your answers into an interlocking crossword grid, numbers the cells and lists the across and down clues, then shows the filled answer grid.",
+ "why": "Write each line as ANSWER: clue. The tool tries many layouts and keeps the one that places the most words in the smallest grid, crossing words only where letters match and never letting two words touch by accident.\n\nEvery layout is checked by reading all runs of letters in the grid: each must be one of your words. This was also checked independently on several seeds. A word with no letters in common with the others cannot be placed and is listed instead. Change the seed to get another layout.",
+ "howTo": [
+  "Write one answer and clue per line, separated by a colon.",
+  "Press the run button; change the seed for another layout.",
+  "Print the puzzle with its clues.",
+  "Use the second page as the answer key."
+ ],
+ "faq": [
+  {
+   "q": "Why was a word not placed?",
+   "a": "It shares no letters with the placed words, or every spot would touch another word."
+  },
+  {
+   "q": "How many words?",
+   "a": "Between 2 and 40."
+  },
+  {
+   "q": "Are numbers standard?",
+   "a": "Yes, cells are numbered left to right, top to bottom."
+  },
+  {
+   "q": "Is there a digital play mode?",
+   "a": "No, it is for printing."
+  }
+ ],
+ "related": [
+  "word-search-puzzle-maker",
+  "quiz-builder-html-file",
+  "handwriting-practice-sheet-maker",
+  "math-worksheet-generator",
+  "bingo-card-generator",
+  "memory-match"
+ ],
+ "keywords": [
+  "crossword maker",
+  "crossword puzzle generator",
+  "make a crossword",
+  "printable crossword"
+ ]
+}

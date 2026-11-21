@@ -1,0 +1,45 @@
+{
+ "id": "rsa-pkcs1-pkcs8-converter",
+ "seoTitle": "Free RSA PKCS1 to PKCS#8 PEM Key Converter",
+ "metaDescription": "Convert RSA keys between PKCS1 (BEGIN RSA PRIVATE KEY) and PKCS#8 or SPKI (BEGIN PRIVATE KEY), detecting the direction. Free, in your browser.",
+ "intro": "Paste an RSA key in PEM format and convert it between PKCS1 and PKCS#8 for private keys, or PKCS1 and SPKI for public keys. The direction is detected.",
+ "why": "Different software wants different wrappers for the same RSA key. OpenSSL traditionally writes BEGIN RSA PRIVATE KEY, which is PKCS1. Java, many cloud APIs and newer tools expect BEGIN PRIVATE KEY, which is PKCS#8, and a mismatch produces errors like invalid key format or unsupported header.\n\nThe key material is the same; only the ASN.1 envelope changes. This tool detects the label, then wraps or unwraps the DER bytes locally, so you do not need OpenSSL on hand. Because private keys are involved, only use it with keys you are comfortable handling in a browser, and never paste a live production key into a page you do not trust. Encrypted PEM keys are not supported.",
+ "howTo": [
+  "Paste a PEM block: an RSA private or public key, or a PKCS#8 or SPKI key.",
+  "The direction is detected from the BEGIN line, so there is nothing to select.",
+  "Copy the converted PEM and use it in your application."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between the formats?",
+   "a": "PKCS1 holds only the RSA numbers. PKCS#8 and SPKI add an algorithm identifier, so they can describe other key types too. The RSA numbers inside are unchanged."
+  },
+  {
+   "q": "Does it work for EC or Ed25519 keys?",
+   "a": "No. Converting from PKCS#8 to PKCS1 stops with an error unless the algorithm is RSA, because only RSA has a PKCS1 form."
+  },
+  {
+   "q": "Can it open encrypted keys?",
+   "a": "No. Encrypted PEM blocks with a passphrase are not decrypted. Remove the passphrase with OpenSSL on your own machine first, if appropriate."
+  },
+  {
+   "q": "Is my key uploaded?",
+   "a": "No. The conversion is done by code running in your browser. Still, avoid pasting real production private keys anywhere unnecessary; use test keys when you can."
+  }
+ ],
+ "related": [
+  "rsa-key-pair-generator",
+  "ed25519-key-generator",
+  "x509-csr-decoder",
+  "ssh-key-inspector",
+  "x509-viewer",
+  "openpgp-inspector"
+ ],
+ "keywords": [
+  "pkcs1 to pkcs8 converter",
+  "convert rsa private key format",
+  "begin rsa private key to begin private key",
+  "free pem key converter",
+  "rsa spki to pkcs1"
+ ]
+}

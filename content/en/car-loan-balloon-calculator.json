@@ -1,0 +1,39 @@
+{
+ "id": "car-loan-balloon-calculator",
+ "seoTitle": "Car Finance Calculator With Balloon Payment",
+ "metaDescription": "Calculate monthly car loan payments with a deposit and a final balloon payment, plus total interest and total cost. Free and private.",
+ "intro": "Monthly instalment, interest and total cost for a car loan that ends with a balloon payment.",
+ "why": "A balloon payment lowers the monthly instalment because part of the loan is left to the end. That balance still accrues interest all along, so total interest is higher than for a loan paid down fully.\n\nUse the tool to compare a plain loan (balloon 0) with a balloon deal on the same price and rate. Remember you must pay, refinance or return the car at the end, depending on the contract.",
+ "howTo": [
+  "Enter car price, deposit, rate and term in months.",
+  "Enter the balloon amount, or 0 for a normal loan.",
+  "Compare the monthly payment and total cost."
+ ],
+ "faq": [
+  {
+   "q": "Is the balloon included in total cost?",
+   "a": "Yes. Total paid to the lender includes all instalments and the balloon."
+  },
+  {
+   "q": "Are fees included?",
+   "a": "No. Arrangement fees, insurance and taxes are not part of the calculation."
+  },
+  {
+   "q": "What if I cannot pay the balloon?",
+   "a": "That depends on the contract: refinance, sell the car or hand it back. Read the terms before signing."
+  }
+ ],
+ "related": [
+  "loan-calculator",
+  "emi-calculator",
+  "lease-vs-buy-car-calculator",
+  "fuel-cost",
+  "compound-interest",
+  "mortgage-amortization-calculator"
+ ],
+ "keywords": [
+  "car loan balloon",
+  "car finance calculator",
+  "balloon payment"
+ ]
+}

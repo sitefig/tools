@@ -1,0 +1,45 @@
+{
+ "id": "image-format-comparator",
+ "seoTitle": "Image Format Comparator (JPEG, WebP, AVIF and PNG Side by Side)",
+ "metaDescription": "Encode one image as JPEG, WebP, AVIF and PNG at the quality you choose and compare file size and PSNR, with the results shown next to each other. AVIF shows...",
+ "intro": "Compare JPEG, WebP, AVIF and PNG for the same picture.",
+ "why": "Choose an image and a quality. The page encodes it in each format your browser can write and shows the pictures side by side with file size and PSNR against the original. AVIF appears only if your browser can encode it; most cannot yet.\n\nPSNR is a number, not a judgement of looks. Always view the pictures. Transparency is flattened to white for the comparison.",
+ "howTo": [
+  "Choose an image.",
+  "Set the quality.",
+  "Optionally scale it down first.",
+  "Compare size and appearance."
+ ],
+ "faq": [
+  {
+   "q": "Why is AVIF missing?",
+   "a": "Browsers decode AVIF widely but few can encode it from a canvas."
+  },
+  {
+   "q": "What is PSNR?",
+   "a": "A measure of pixel difference from the original, in dB. Higher means closer. Above 40 dB is very close."
+  },
+  {
+   "q": "Is the result the best the format can do?",
+   "a": "No. Browser encoders are quick, not the most efficient. Dedicated tools can do better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-compressor",
+  "image-format-converter",
+  "batch-image-optimizer",
+  "png-to-jpg-converter",
+  "image-diff",
+  "image-info"
+ ],
+ "keywords": [
+  "image format comparison",
+  "jpeg vs webp",
+  "webp vs avif",
+  "compare image quality"
+ ]
+}

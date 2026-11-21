@@ -1,0 +1,45 @@
+{
+  "id": "vlsm-calculator",
+  "seoTitle": "VLSM Subnet Calculator: Split a Network by Host Needs",
+  "metaDescription": "Split a network into subnets of different sizes by the number of hosts each needs, with network, mask, first and last host and broadcast for each.",
+  "intro": "Plan an IPv4 address layout that wastes as few addresses as possible.",
+  "why": "Enter the parent network in CIDR and the subnets you need as \"name hosts\". The calculator sorts requests from largest to smallest, assigns each the smallest block that fits (hosts plus network and broadcast addresses), keeps blocks aligned, and prints network, mask, host range, broadcast and usable count. Results were compared with Python's ipaddress module.\n\nLeave room for growth by requesting more hosts than today, and note that /31 point-to-point links (RFC 3021) are not used here.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the parent network.",
+    "List required subnets, one per line.",
+    "Read the allocation table.",
+    "Check how much space is left."
+  ],
+  "faq": [
+    {
+      "q": "Why largest first?",
+      "a": "It keeps blocks aligned to their size boundaries and avoids fragmentation."
+    },
+    {
+      "q": "What if the plan does not fit?",
+      "a": "The tool reports which subnet could not be placed."
+    },
+    {
+      "q": "Does it support IPv6?",
+      "a": "No, IPv4 only. IPv6 subnets are usually /64s."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "ip-subnet-calculator",
+    "cidr-contains",
+    "ip-supernetting-calculator",
+    "subnet-cheat-sheet",
+    "ip-validator-converter",
+    "port-reference"
+  ],
+  "keywords": [
+    "vlsm calculator",
+    "subnet planning",
+    "variable length subnet mask",
+    "subnetting tool"
+  ]
+}

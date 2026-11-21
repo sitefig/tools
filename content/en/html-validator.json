@@ -1,0 +1,41 @@
+{
+ "id": "html-validator",
+ "seoTitle": "HTML Validator: Unclosed Tags, Nesting and Duplicate IDs",
+ "metaDescription": "Paste HTML to find unclosed and stray tags, block elements in p, nested links, list and table errors and duplicate ids, with line numbers.",
+ "intro": "A rule-based HTML checker that lists common markup mistakes with line numbers, labelled as errors or items to review.",
+ "why": "Browsers repair broken markup silently, so mistakes survive until a layout breaks. This tool reads the HTML with a small tokenizer and reports what a browser would repair: tags never closed, end tags with no start, a div inside a p (which the browser splits), links inside links, li outside lists, duplicate ids and attributes, obsolete tags and missing basics.\n\nIt is not the W3C validator. It does not check attribute values, ARIA or every content-model rule. Use it for quick feedback, then run a full validator for a formal result.",
+ "howTo": [
+  "Paste your HTML.",
+  "Read the list with line numbers.",
+  "Fix errors first, then review items.",
+  "Run again until clean."
+ ],
+ "faq": [
+  {
+   "q": "Is this a full validator?",
+   "a": "No. It checks common structural mistakes. Use the W3C Nu validator for a formal result."
+  },
+  {
+   "q": "Why is a div inside p flagged?",
+   "a": "The p end tag is optional, so browsers close the paragraph at the div and the tree differs from your source."
+  },
+  {
+   "q": "Are partial snippets ok?",
+   "a": "Yes. Document checks such as doctype and title only run when the text contains an html element."
+  }
+ ],
+ "related": [
+  "html-format",
+  "a11y-html-check",
+  "aria-attribute-validator",
+  "html-link-auditor",
+  "xml-validate",
+  "html-dom-diff"
+ ],
+ "keywords": [
+  "html validator online",
+  "check html errors",
+  "unclosed tags checker",
+  "html nesting validator"
+ ]
+}

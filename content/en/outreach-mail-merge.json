@@ -1,0 +1,38 @@
+{
+ "id": "outreach-mail-merge",
+ "seoTitle": "Outreach Mail Merge: Personalise Emails from a CSV, Offline",
+ "metaDescription": "Fill an email template from CSV rows with {{first_name|there}} fallbacks, subjects, missing-field warnings and mailto links. Nothing is sent or uploaded.",
+ "intro": "Merge a template with a contact list and preview every personalised email before you send.",
+ "why": "Personalised outreach converts better than blasts, but errors such as \"Hi [first_name]\" are costly. This tool merges a template with CSV rows, supports {{column}} and {{column|fallback}} placeholders and a Subject: line, flags rows with missing fields and generates a mailto link per message so you can review and send from your own mail client.\n\nNothing is sent and the contact list never leaves your browser. Cold email is regulated (GDPR, ePrivacy, CAN-SPAM): identify yourself, have a lawful basis and honour opt-outs.",
+ "howTo": [
+  "Write the template with {{placeholders}} and an optional first line \"Subject: ...\".",
+  "Paste a CSV with a header row and an email column.",
+  "Review each message and open the mailto links."
+ ],
+ "faq": [
+  {
+   "q": "What if a field is empty?",
+   "a": "The fallback after | is used; otherwise the message shows [field?] and a warning."
+  },
+  {
+   "q": "Can it send email?",
+   "a": "No. It prepares messages; you send them."
+  },
+  {
+   "q": "Is the list uploaded?",
+   "a": "No, merging happens in your browser."
+  }
+ ],
+ "related": [
+  "prompt-template-filler",
+  "link-intersect-tool",
+  "email-validator",
+  "html-email-extractor",
+  "email-signature-generator"
+ ],
+ "keywords": [
+  "mail merge csv",
+  "personalised outreach emails",
+  "cold email template merge"
+ ]
+}

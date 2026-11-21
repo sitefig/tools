@@ -1,0 +1,45 @@
+{
+ "id": "video-audio-extractor",
+ "seoTitle": "Video Audio Extractor: Save the Soundtrack as WAV",
+ "metaDescription": "Extract the audio track of a video as a WAV file in your browser. No upload. Why MP3 is not offered is explained.",
+ "intro": "Decodes the audio of a video and saves it as a 16-bit WAV file. You can set a start and end time.",
+ "why": "Browsers can decode audio but cannot encode MP3, so this tool writes WAV, which is simple and lossless. The file is larger than an MP3, but any editor can open it and convert it.\n\nDecoding happens on your device. Long files use memory because the whole track is decoded at once.",
+ "howTo": [
+  "Choose the video.",
+  "Optionally set a start and end time in seconds.",
+  "Press Process.",
+  "Download the WAV file."
+ ],
+ "faq": [
+  {
+   "q": "Why not MP3?",
+   "a": "There is no MP3 encoder in browsers, and this site ships no third-party code. Convert the WAV on your computer if you need MP3."
+  },
+  {
+   "q": "How big is the WAV?",
+   "a": "About 10 MB per minute for stereo at 44.1 kHz."
+  },
+  {
+   "q": "Does it work with any video?",
+   "a": "If the browser can decode the audio codec. If not, you get a clear message."
+  },
+  {
+   "q": "Can I trim it?",
+   "a": "Yes, use the start and end fields."
+  }
+ ],
+ "related": [
+  "audio-trimmer",
+  "audio-recorder",
+  "video-muter",
+  "video-music-mixer",
+  "audio-waveform-svg",
+  "video-trimmer"
+ ],
+ "keywords": [
+  "extract audio from video",
+  "video to wav",
+  "rip audio from video",
+  "save soundtrack"
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Luhn Validator - Check or Add Check Digit | Free Tools</title>
+<meta name="description" content="Validate numbers with the Luhn checksum or calculate the missing check digit, one number per line. Free and runs privately in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/luhn-validator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/luhn-validator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/luhn-validator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Luhn Validator - Check or Add Check Digit | Free Tools">
+<meta property="og:description" content="Validate numbers with the Luhn checksum or calculate the missing check digit, one number per line. Free and runs privately in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/luhn-validator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Luhn Validator - Check or Add Check Digit | Free Tools">
+<meta name="twitter:description" content="Validate numbers with the Luhn checksum or calculate the missing check digit, one number per line. Free and runs privately in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Luhn Validator","url":"https://tools.sitefig.net/en/luhn-validator/","description":"Validate numbers with the Luhn checksum or calculate the missing check digit, one number per line. Free and runs privately in your browser.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste numbers into the box, one per line; spaces and hyphens are allowed.","Choose validate to test them, or append check digit to complete a partial number.","Run the tool.","Read the verdict or the completed number on each line."],"keywords":"luhn validator, luhn algorithm checker, calculate luhn check digit, credit card number validator, free luhn tool","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Generators","item":"https://tools.sitefig.net/en/#generators"},{"@type":"ListItem","position":3,"name":"Luhn Validator","item":"https://tools.sitefig.net/en/luhn-validator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does a valid Luhn number mean the card is real?","acceptedAnswer":{"@type":"Answer","text":"No. Luhn is only a typo check. Many random numbers pass it. It cannot show that an account exists, has funds or belongs to anyone, so it is never a substitute for a proper payment check."}},{"@type":"Question","name":"How does the append mode work?","acceptedAnswer":{"@type":"Answer","text":"You enter the number without its last digit. The tool tries digits 0 to 9 and returns the one that makes the whole number pass the Luhn test, then shows the full number and the check digit."}},{"@type":"Question","name":"What inputs are rejected?","acceptedAnswer":{"@type":"Answer","text":"Anything with letters or symbols other than spaces and hyphens is reported as not numeric. The line is shown with the reason, and the other lines are still processed."}},{"@type":"Question","name":"Which numbers use Luhn?","acceptedAnswer":{"@type":"Answer","text":"Most payment card numbers, IMEI numbers, Canadian social insurance numbers and some other identifiers. Other schemes, such as IBAN or ISBN-13, use different checksums."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#generators">Generators</a></li><li><span aria-current="page">Luhn Validator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Luhn Validator</h1>
+<p class="lede">Test numbers against the Luhn checksum used by payment cards and many ID schemes, or append the check digit that makes a number valid.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="luhn-validator" data-module="gen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>The Luhn algorithm is the quick sanity check behind card numbers, IMEI numbers and several national identifiers. It catches most mistyped digits, which is why forms run it before sending anything to a server. Developers meet it when writing validation, testing payment forms or generating sample IDs, and need a reliable way to confirm that a number passes or to work out which final digit is missing.</p>
+<p>Paste one number per line. Spaces and hyphens are ignored. Validate mode says valid or invalid, and append mode finds the check digit and shows the complete number. Luhn only proves a number is well formed. It says nothing about whether a card exists or is active. The calculation runs locally.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste numbers into the box, one per line; spaces and hyphens are allowed.</li><li>Choose validate to test them, or append check digit to complete a partial number.</li><li>Run the tool.</li><li>Read the verdict or the completed number on each line.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does a valid Luhn number mean the card is real?</summary><p>No. Luhn is only a typo check. Many random numbers pass it. It cannot show that an account exists, has funds or belongs to anyone, so it is never a substitute for a proper payment check.</p></details>
+<details><summary>How does the append mode work?</summary><p>You enter the number without its last digit. The tool tries digits 0 to 9 and returns the one that makes the whole number pass the Luhn test, then shows the full number and the check digit.</p></details>
+<details><summary>What inputs are rejected?</summary><p>Anything with letters or symbols other than spaces and hyphens is reported as not numeric. The line is shown with the reason, and the other lines are still processed.</p></details>
+<details><summary>Which numbers use Luhn?</summary><p>Most payment card numbers, IMEI numbers, Canadian social insurance numbers and some other identifiers. Other schemes, such as IBAN or ISBN-13, use different checksums.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/check-digit-tool/"><span class="link-card__title">Luhn / Verhoeff / Damm Check Digits</span><span class="link-card__desc">Validate numbers or compute the check digit (credit card style Luhn, Verhoeff dihedral-group, Damm quasigroup). One number per line; spaces and dashes ignored.</span></a></li><li><a class="link-card" href="/en/iban-validator/"><span class="link-card__title">IBAN Validator</span><span class="link-card__desc">Check IBAN country length and the mod-97 checksum, one IBAN per line.</span></a></li><li><a class="link-card" href="/en/mock-credit-card-generator/"><span class="link-card__title">Mock Credit Card Number Generator (Luhn-valid test data)</span><span class="link-card__desc">Generate fake but Luhn-valid card numbers for Visa, Mastercard, American Express, Discover, JCB, Diners Club and UnionPay with random future expiry dates and CVVs, for form validation and UI tests. The numbers are NOT real accounts and cannot be charged. For payment-gateway sandboxes use that provider's documented test cards (a few well-known ones are listed below the output).</span></a></li><li><a class="link-card" href="/en/crc-calculator/"><span class="link-card__title">CRC-16 / CRC-32 / CRC-64 Calculator</span><span class="link-card__desc">30 named CRC variants (CRC-16 ARC/CCITT/XMODEM/Modbus/X-25..., CRC-32 and 32C, CRC-64 XZ/ECMA/Redis) computed with hand-written table CRCs. Shows hex, decimal and the little-endian byte form.</span></a></li><li><a class="link-card" href="/en/bcd-converter/"><span class="link-card__title">BCD (Binary-Coded Decimal) Converter</span><span class="link-card__desc">Convert decimal numbers to packed/unpacked BCD nibbles and back.</span></a></li><li><a class="link-card" href="/en/barcode-generator/"><span class="link-card__title">Barcode Generator</span><span class="link-card__desc">Code 128, Code 39, EAN-13 and UPC-A (check digit computed/verified). SVG output.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

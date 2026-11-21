@@ -1,0 +1,45 @@
+{
+ "id": "event-schema-generator",
+ "seoTitle": "Event Schema Generator for In-Person, Online and Mixed Events",
+ "metaDescription": "Build Event JSON-LD with venue or online URL, attendance mode, status (cancelled, postponed, rescheduled), ticket offer and time zone checks.",
+ "intro": "Produces Event markup for in-person, online or mixed events, with event status, venue address, virtual location, ticket offer, organizer and performer.",
+ "why": "Events change: they get cancelled, postponed or moved online, and search engines need the status to show it correctly. Choose the mode and status from short words and the tool writes the full Schema.org values, adds a VirtualLocation for online events, and asks for previousStartDate when you reschedule.\n\nIt checks that dates are real and carry a time zone offset, which Google requires for online events, and that in-person events have an address. Required fields (name, startDate, location) and recommended ones are checked against Google's Event documentation.",
+ "howTo": [
+  "Fill name, start and end date; set the mode and status.",
+  "Add the venue address, or onlineUrl for online events.",
+  "Add ticket price, currency and URL if tickets are sold.",
+  "Copy the script tag and test it."
+ ],
+ "faq": [
+  {
+   "q": "What does movedonline do?",
+   "a": "It sets the status to EventMovedOnline and adds the virtual location."
+  },
+  {
+   "q": "Do I need a time zone?",
+   "a": "Yes, give an offset such as +01:00 or Z. The tool warns when it is missing."
+  },
+  {
+   "q": "How do I mark a cancellation?",
+   "a": "Set status: cancelled. Keep the page and the original dates."
+  },
+  {
+   "q": "Can I list several performers?",
+   "a": "Yes, repeat performer: lines."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "rich-result-eligibility-checker",
+  "iso-8601-duration-builder",
+  "jsonld-syntax-validator",
+  "schema-property-checker",
+  "timezone-meeting-planner"
+ ],
+ "keywords": [
+  "event schema generator",
+  "event json-ld online",
+  "eventStatus cancelled markup",
+  "event structured data"
+ ]
+}

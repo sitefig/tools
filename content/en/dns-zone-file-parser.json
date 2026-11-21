@@ -1,0 +1,44 @@
+{
+ "id": "dns-zone-file-parser",
+ "seoTitle": "Free DNS Zone File Parser: BIND Zone to Record Table",
+ "metaDescription": "Parse a BIND zone file into a table of names, TTLs, classes, types and data. Handles $ORIGIN, $TTL, parentheses and @. Runs offline.",
+ "intro": "Reads a BIND-style zone file and lists every record with its full name, TTL, class, type and data. It applies $ORIGIN and $TTL, joins multi-line records in parentheses and can print JSON.",
+ "why": "Zone files are compact on purpose: a blank owner repeats the previous name, @ means the origin, and names without a trailing dot get the origin added. That makes them hard to read and easy to get wrong, for example by forgetting a dot.\n\nThe parser expands all of that so you can see what a server would load. It checks a few common mistakes (missing SOA, a CNAME next to other data). It does not support $INCLUDE or $GENERATE, and it does not validate record data.",
+ "howTo": [
+  "Paste your zone file.",
+  "Add an origin if the file has no $ORIGIN line.",
+  "Read the table, or tick JSON for a machine-readable list.",
+  "Check the notes below the table for missing SOA records or CNAME conflicts."
+ ],
+ "faq": [
+  {
+   "q": "Why does a name end with a dot?",
+   "a": "A trailing dot marks a fully qualified name. The parser shows every owner name in that form."
+  },
+  {
+   "q": "What if a record has no TTL?",
+   "a": "It uses the last $TTL, or the last explicit TTL in the file. If neither exists the TTL shows as a dash."
+  },
+  {
+   "q": "Are $INCLUDE and $GENERATE supported?",
+   "a": "No. They are listed as not processed."
+  },
+  {
+   "q": "Does it check that the data is valid?",
+   "a": "No. A type is checked against a list of known types, but the data is only split into fields."
+  }
+ ],
+ "related": [
+  "dns-record-generator",
+  "dns-resolution-simulator",
+  "dns-soa-dnssec-inspector",
+  "dig-nslookup-output-analyzer",
+  "dns-answer-comparer",
+  "dns-spf-record-flattener"
+ ],
+ "keywords": [
+  "bind zone file parser",
+  "dns zone file viewer",
+  "zone file to json"
+ ]
+}

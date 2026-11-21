@@ -1,0 +1,45 @@
+{
+ "id": "gcd-lcm-euclid-steps",
+ "seoTitle": "GCD and LCM Calculator with Euclidean Algorithm Steps",
+ "metaDescription": "Find the greatest common divisor and least common multiple of two or more integers, with each Euclid division step. Free and exact.",
+ "intro": "Computes GCD and LCM of a list of integers and prints every division step of the Euclidean algorithm.",
+ "why": "The Euclidean algorithm replaces the larger number by the remainder until the remainder is zero. Seeing each line, such as 1071 = 2 x 462 + 147, helps in class and when you need to show your work.\n\nWith more than two numbers the tool folds from left to right: it takes the GCD of the first two, then that result with the third, and so on, and builds the LCM the same way using lcm(a, b) = a / gcd(a, b) x b. Big integers are exact. Signs are ignored and zero is rejected to avoid trivial cases.",
+ "howTo": [
+  "Enter two or more integers separated by spaces, commas or new lines.",
+  "Read the GCD and LCM at the top.",
+  "Follow the division steps below to see how the GCD was found.",
+  "Copy the result if you need it for a worksheet."
+ ],
+ "faq": [
+  {
+   "q": "How many numbers can I enter?",
+   "a": "Up to 30 integers of up to 60 digits each."
+  },
+  {
+   "q": "What if the GCD is 1?",
+   "a": "The numbers are coprime and their LCM is their product."
+  },
+  {
+   "q": "Does it show prime factors?",
+   "a": "Not here. Use the prime factorization tool for that."
+  },
+  {
+   "q": "Does it accept negative numbers?",
+   "a": "Yes, but the sign is ignored."
+  }
+ ],
+ "related": [
+  "prime-factorizer-primality",
+  "fraction-calculator",
+  "bignumber-calculator",
+  "math-worksheet-generator",
+  "fraction-visualizer-pie-bar",
+  "scientific-calculator-degrees"
+ ],
+ "keywords": [
+  "gcd calculator",
+  "lcm calculator",
+  "euclidean algorithm steps",
+  "greatest common divisor online"
+ ]
+}

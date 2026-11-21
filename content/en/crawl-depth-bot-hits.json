@@ -1,0 +1,45 @@
+{
+ "id": "crawl-depth-bot-hits",
+ "seoTitle": "Crawl Depth vs Bot Hits by URL Path Depth",
+ "metaDescription": "Count crawler requests and distinct URLs by path depth to see where bot crawling thins out on your site. Free, local, no upload.",
+ "intro": "Shows hits, distinct URLs and hits per URL for each path depth, with a small bar chart.",
+ "why": "Sites that bury content deep in folders tend to see fewer visits there. A table of hits by depth shows whether crawling falls off sharply at a certain level.\n\nDepth here means the number of path segments in the URL. It is not the number of clicks from the home page, so a deep URL can still be linked from the home page. Use it as a first look, then compare with a click-depth report from a crawler.",
+ "howTo": [
+  "Paste access log lines.",
+  "Choose the bots to count.",
+  "Decide whether query strings make separate URLs.",
+  "Look for the depth where hits per URL drop."
+ ],
+ "faq": [
+  {
+   "q": "Is path depth the same as click depth?",
+   "a": "No. Click depth is the number of links from the home page. Path depth only counts folders in the URL."
+  },
+  {
+   "q": "What should I do if deep URLs are rarely crawled?",
+   "a": "Link to them from stronger pages, add them to the sitemap and check that they are worth indexing."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench."
+  }
+ ],
+ "related": [
+  "googlebot-crawl-budget-analyzer",
+  "crawl-frequency-per-url",
+  "uncrawled-sitemap-urls",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer",
+  "fake-googlebot-log-detector"
+ ],
+ "keywords": [
+  "crawl depth bot hits",
+  "url depth vs googlebot crawl",
+  "log file analysis crawl depth",
+  "bot hits by folder depth"
+ ]
+}

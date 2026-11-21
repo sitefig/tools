@@ -1,0 +1,41 @@
+{
+ "id": "type-scale-generator",
+ "seoTitle": "Modular Type Scale Generator: Ratio to CSS Variables",
+ "metaDescription": "Build a font-size scale from a base and a ratio such as 1.25 or 1.618, preview it and copy rem custom properties. Free, local.",
+ "intro": "Generates a modular type scale: choose a base size, a ratio and the steps above and below, and get rem custom properties plus a preview.",
+ "why": "A modular scale multiplies a base size by a fixed ratio for each step, so headings and text relate to each other. Picking sizes by eye tends to give uneven jumps.\n\nThis tool gives each step in px and rem, names the variables --step-0, --step-1 and so on, and previews every size. Large ratios grow fast, so check the top steps on small screens, or combine with a clamp() generator for fluid sizes.",
+ "howTo": [
+  "Set the base size and choose a ratio or enter your own.",
+  "Choose how many steps go below and above the base.",
+  "Review the preview.",
+  "Copy the :root block."
+ ],
+ "faq": [
+  {
+   "q": "Which ratio should I pick?",
+   "a": "1.2 to 1.25 suits dense interfaces. 1.333 to 1.5 suits editorial pages. Try several in the preview."
+  },
+  {
+   "q": "Why rem?",
+   "a": "rem respects the user's browser font size setting, which helps accessibility."
+  },
+  {
+   "q": "Can I make it fluid?",
+   "a": "Use the clamp() generator on the top steps to scale between viewport widths."
+  }
+ ],
+ "related": [
+  "css-clamp-generator",
+  "css-clamp-calculator",
+  "px-to-rem-converter",
+  "css-unit-converter",
+  "tailwind-spacing-generator",
+  "readable-typography-previewer"
+ ],
+ "keywords": [
+  "type scale generator",
+  "modular scale css",
+  "font size scale calculator",
+  "typography ratio"
+ ]
+}

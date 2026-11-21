@@ -1,0 +1,41 @@
+{
+ "id": "number-extractor-sum",
+ "seoTitle": "Number Extractor with Sum, Average, Min and Max",
+ "metaDescription": "Pull every number out of text and get the total, average, smallest and largest. Handles 1,234.56 and 1.234,56. Free and private.",
+ "intro": "Find every number in a block of text, list them, and get the total, average, smallest and largest. Handles thousands separators and decimal commas.",
+ "why": "Numbers buried in notes, receipts or chat logs are tedious to add up. Copying each one into a calculator invites mistakes.\n\nPaste the text and the tool lists every number it finds and sums them exactly, using integer arithmetic so decimals do not drift. Pick the number style: comma thousands with a decimal point, or decimal comma. Negative numbers are supported. Dates and codes are read as numbers too, so scan the list before trusting the sum.",
+ "howTo": [
+  "Paste the text.",
+  "Choose the number style.",
+  "Read the list and the totals.",
+  "Remove lines you do not want and run again."
+ ],
+ "faq": [
+  {
+   "q": "Is the sum exact?",
+   "a": "Yes for decimals. The numbers are added as scaled integers, and the average is shown to four places."
+  },
+  {
+   "q": "Why are dates split into numbers?",
+   "a": "The tool finds digits, not meaning. 2026-03-01 gives 2026, -3 and -1. Remove such parts first."
+  },
+  {
+   "q": "Can it handle currency symbols?",
+   "a": "Symbols are ignored, but mixed currencies are added as plain numbers."
+  }
+ ],
+ "related": [
+  "extract-emails-urls-numbers",
+  "character-frequency",
+  "scientific-expression-calculator",
+  "keyword-density",
+  "csv-column-profiler",
+  "bignumber-calculator"
+ ],
+ "keywords": [
+  "extract numbers from text",
+  "sum numbers in text",
+  "add numbers from text",
+  "number extractor"
+ ]
+}

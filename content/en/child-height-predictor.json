@@ -1,0 +1,45 @@
+{
+ "id": "child-height-predictor",
+ "seoTitle": "Child Adult Height Predictor (Mid-Parental Height)",
+ "metaDescription": "Estimate a child's adult height from the parents' heights with the mid-parental method, with the usual range of 8.5 cm either side.",
+ "intro": "Estimate adult height from the parents' heights.",
+ "why": "Enter the mother's and father's heights and the child's sex. The mid-parental method adds 13 cm to the sum for boys or subtracts 13 cm for girls, divides by two, and shows a range of 8.5 cm either side (about two standard deviations, per the MSD Manual).\n\nIt is a population estimate. A child's own growth pattern, nutrition and health matter more, and a doctor can judge a growth chart far better than this formula.",
+ "howTo": [
+  "Choose cm or inches.",
+  "Pick the child's sex.",
+  "Enter both parents' heights.",
+  "Read the predicted height and range."
+ ],
+ "faq": [
+  {
+   "q": "How reliable is it?",
+   "a": "Most children land within the range, but some do not. It cannot predict an individual."
+  },
+  {
+   "q": "Does it work for children who are not biological children of both parents?",
+   "a": "No. It relies on the parents' genes."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "bmi-calculator",
+  "ideal-weight",
+  "due-date-calculator",
+  "ovulation-calculator",
+  "water-intake",
+  "bmr-tdee"
+ ],
+ "keywords": [
+  "child height predictor",
+  "mid-parental height",
+  "adult height calculator",
+  "height prediction"
+ ]
+}

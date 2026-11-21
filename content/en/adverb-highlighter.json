@@ -1,0 +1,41 @@
+{
+ "id": "adverb-highlighter",
+ "seoTitle": "Adverb and Weak Word Highlighter for Writers",
+ "metaDescription": "Mark -ly adverbs and weak qualifiers like very, really and just in your draft, with counts and a rate per 100 words. Free and private.",
+ "intro": "Mark -ly adverbs and weak words like very, really, just and quite in your draft, with counts and a rate per 100 words.",
+ "why": "Many editors advise cutting adverbs and softeners that prop up a weak verb. A very big house is a mansion, and she walked slowly may be she crept.\n\nThis tool marks every word ending in -ly (except a list of common non-adverbs) and a list of qualifiers such as very, really, quite and just. It counts them per 100 words so you can compare drafts. It is a word-list check, not grammar: it will miss adverbs without -ly and flag some good ones.",
+ "howTo": [
+  "Paste your draft.",
+  "Choose whether to flag -ly words, qualifiers or both.",
+  "Read the marked text and the table.",
+  "Edit only where the word weakens the sentence."
+ ],
+ "faq": [
+  {
+   "q": "Does it find every adverb?",
+   "a": "No. Adverbs like often or fast do not end in -ly, and some -ly words are adjectives. It is a list-based check."
+  },
+  {
+   "q": "Should I remove all of them?",
+   "a": "No. Use them when they add meaning. The count is there to prompt a second look."
+  },
+  {
+   "q": "Is my text sent anywhere?",
+   "a": "No. The check runs in your browser."
+  }
+ ],
+ "related": [
+  "passive-voice-checker",
+  "cliche-detector",
+  "jargon-buzzword-detector",
+  "repeated-word-finder",
+  "plain-language-checker",
+  "duplicate-words-finder"
+ ],
+ "keywords": [
+  "adverb highlighter",
+  "find adverbs in text",
+  "weak words checker",
+  "very really just"
+ ]
+}

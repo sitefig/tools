@@ -1,0 +1,45 @@
+{
+ "id": "weekly-shift-schedule-planner",
+ "seoTitle": "Weekly Shift Schedule Planner with Hour Totals and Headcount",
+ "metaDescription": "List staff and their shifts per weekday and get a printable rota with total paid hours per person and people on shift per day. Free.",
+ "intro": "Turns a text list of shifts into a weekly rota table with paid hours per person, breaks and daily headcount.",
+ "why": "Write one line per person, for example Ana: Mon 9-17 (30), Tue 9-17 (30), Wed off. The break in brackets is unpaid minutes. The tool builds the grid, adds up each person's hours and counts how many people are on shift each day.\n\nOvernight shifts such as 22-6 are supported and counted on the day they start. Hours can be shown as decimals or as hours and minutes. The tool does not check legal limits such as maximum hours or rest periods; those depend on your country and contract. Print the table in landscape.",
+ "howTo": [
+  "Write one person per line with Day start-end entries.",
+  "Add an unpaid break in brackets if needed.",
+  "Choose decimal or hours:minutes.",
+  "Print the rota."
+ ],
+ "faq": [
+  {
+   "q": "What time formats work?",
+   "a": "9-17, 09:00-17:30 and 22-6."
+  },
+  {
+   "q": "Does it check labour law?",
+   "a": "No."
+  },
+  {
+   "q": "How are overnight shifts counted?",
+   "a": "On the day they start."
+  },
+  {
+   "q": "Can I assign by dragging?",
+   "a": "No, edit the text."
+  }
+ ],
+ "related": [
+  "work-hours-calculator",
+  "overtime-pay-calculator",
+  "time-tracker-log-summary",
+  "timezone-meeting-planner",
+  "monthly-calendar-printer",
+  "annual-leave-pro-rata-calculator"
+ ],
+ "keywords": [
+  "shift schedule planner",
+  "staff rota maker",
+  "weekly work schedule template",
+  "employee shift calendar"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "css-multi-column-generator",
+ "seoTitle": "CSS Multi-Column Layout Generator: columns, gap, rule",
+ "metaDescription": "Set column-count, width, gap and rule, preview text flowing into columns, and copy the CSS with span and break helpers. Free.",
+ "intro": "Configures CSS multi-column layout and previews sample text reflowing as you change the values.",
+ "why": "Multi-column layout flows one block of text into several columns, like a newspaper. The shorthand mixes count and width in ways that are easy to get wrong.\n\nThis tool writes the right property for what you set (column-count, column-width or the columns shorthand), adds a column-rule, and optionally a heading that spans all columns and a helper to stop cards splitting across columns. Long text in columns can hurt reading on small screens, so test on a phone.",
+ "howTo": [
+  "Set a count, a width, or both. Zero means automatic.",
+  "Choose gap and rule style.",
+  "Tick the helper classes you want.",
+  "Copy the CSS."
+ ],
+ "faq": [
+  {
+   "q": "Count or width?",
+   "a": "Width is more responsive: the browser fits as many columns as it can. Count is fixed."
+  },
+  {
+   "q": "What does column-fill do?",
+   "a": "balance evens the columns; auto fills one before the next, which needs a fixed height."
+  },
+  {
+   "q": "Is it accessible?",
+   "a": "Reading down and then up again on a short screen is tiring. Prefer one column on narrow viewports."
+  }
+ ],
+ "related": [
+  "css-grid-area-builder",
+  "grid-generator",
+  "flexbox-generator",
+  "text-column-splitter",
+  "css-media-query-builder",
+  "css-container-query-generator"
+ ],
+ "keywords": [
+  "css multi column generator",
+  "column-count column-gap",
+  "css columns layout",
+  "column-rule"
+ ]
+}

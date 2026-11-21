@@ -1,0 +1,44 @@
+{
+ "id": "tab-order-checker",
+ "seoTitle": "Tab Order Checker: Keyboard Focus Sequence and tabindex Problems",
+ "metaDescription": "Paste HTML to get the order Tab visits elements, with positive tabindex, unreachable clickable divs and focusable hidden elements flagged.",
+ "intro": "Lists the keyboard focus order of pasted HTML and flags tabindex problems.",
+ "why": "Keyboard users depend on a logical focus order and reachable controls.\n\nThe tool builds the tab sequence from the source order and tabindex values, shows elements removed from it, and flags positive tabindex, clickable elements that cannot be focused, and aria-hidden elements that can. It cannot see CSS that reorders content visually, so test the real page too.",
+ "howTo": [
+  "Paste the HTML.",
+  "Read the tab order table.",
+  "Fix the flagged elements.",
+  "Tab through the real page to confirm."
+ ],
+ "faq": [
+  {
+   "q": "What is wrong with positive tabindex?",
+   "a": "It jumps ahead of the natural order and is hard to maintain. Fix the DOM order instead."
+  },
+  {
+   "q": "What about tabindex -1?",
+   "a": "It removes an element from Tab but allows script focus; it is listed separately."
+  },
+  {
+   "q": "Does it know CSS order?",
+   "a": "No. Visual order must be checked in the browser."
+  },
+  {
+   "q": "Is the HTML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "a11y-html-check",
+  "aria-attribute-validator",
+  "accessible-name-calculator",
+  "skip-link-generator",
+  "focus-indicator-contrast-checker",
+  "target-size-checker"
+ ],
+ "keywords": [
+  "tab order checker",
+  "tabindex checker",
+  "keyboard focus order html"
+ ]
+}

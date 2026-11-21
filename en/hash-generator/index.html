@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Hash Generator for MD5, SHA-1 and SHA-256 | Free Tools</title>
+<meta name="description" content="Generate MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text at once. Free, uses UTF-8 and runs in your browser without uploading your text.">
+<link rel="canonical" href="https://tools.sitefig.net/en/hash-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/hash-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/hash-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Hash Generator for MD5, SHA-1 and SHA-256 | Free Tools">
+<meta property="og:description" content="Generate MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text at once. Free, uses UTF-8 and runs in your browser without uploading your text.">
+<meta property="og:url" content="https://tools.sitefig.net/en/hash-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Hash Generator for MD5, SHA-1 and SHA-256 | Free Tools">
+<meta name="twitter:description" content="Generate MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text at once. Free, uses UTF-8 and runs in your browser without uploading your text.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Hash Generator","url":"https://tools.sitefig.net/en/hash-generator/","description":"Generate MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes of any text at once. Free, uses UTF-8 and runs in your browser without uploading your text.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Type or paste the text to hash into the box.","Read the five hashes shown, one per line, each labelled with its algorithm.","Tick \"Uppercase hex\" if the system you compare against uses capital letters.","Copy the hash you need."],"keywords":"hash generator online, md5 hash generator, sha256 online, free sha1 generator, sha512 hash calculator, text to hash","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Hashing & JWT","item":"https://tools.sitefig.net/en/#hashing-and-jwt"},{"@type":"ListItem","position":3,"name":"Hash Generator","item":"https://tools.sitefig.net/en/hash-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which algorithm should I use?","acceptedAnswer":{"@type":"Answer","text":"Use SHA-256 or SHA-512 for integrity checks. MD5 and SHA-1 have known collision attacks, so avoid them where an attacker could craft input. They remain fine for catching accidental corruption or matching old checksums."}},{"@type":"Question","name":"Can I use this to store passwords?","acceptedAnswer":{"@type":"Answer","text":"No. Fast hashes like these are the wrong tool for passwords because they can be guessed billions of times per second. Use a slow password hash such as bcrypt, scrypt or Argon2, which are available on this site."}},{"@type":"Question","name":"Why does my hash differ from another tool?","acceptedAnswer":{"@type":"Answer","text":"The usual causes are a trailing newline or space, different line endings, or another text encoding. This tool hashes the exact UTF-8 bytes of what you typed, so even one extra character changes everything."}},{"@type":"Question","name":"Can I hash a file?","acceptedAnswer":{"@type":"Answer","text":"Not on this page. The File Hash tool computes the same algorithms for a file you choose, locally."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#hashing-and-jwt">Hashing &amp; JWT</a></li><li><span aria-current="page">Hash Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Hash Generator</h1>
+<p class="lede">Type or paste text and get its MD5, SHA-1, SHA-256, SHA-384 and SHA-512 hashes at the same time, as lowercase or uppercase hex.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="hash-generator" data-module="encode"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>A hash is a short fingerprint of data. You use it to check that a downloaded file or a copied string was not altered, to build cache keys, to compare a value against a published checksum, or to reproduce a hash that an API expects.</p>
+<p>This tool computes five common algorithms in one go, so you do not run five commands. MD5 and SHA-1 are included because many old systems still publish them, but they are broken for security uses; prefer SHA-256 or better. Text is hashed as UTF-8. The calculation runs in your browser, so the text you hash is never uploaded. Hashing is not encryption and cannot be reversed.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Type or paste the text to hash into the box.</li><li>Read the five hashes shown, one per line, each labelled with its algorithm.</li><li>Tick &quot;Uppercase hex&quot; if the system you compare against uses capital letters.</li><li>Copy the hash you need.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which algorithm should I use?</summary><p>Use SHA-256 or SHA-512 for integrity checks. MD5 and SHA-1 have known collision attacks, so avoid them where an attacker could craft input. They remain fine for catching accidental corruption or matching old checksums.</p></details>
+<details><summary>Can I use this to store passwords?</summary><p>No. Fast hashes like these are the wrong tool for passwords because they can be guessed billions of times per second. Use a slow password hash such as bcrypt, scrypt or Argon2, which are available on this site.</p></details>
+<details><summary>Why does my hash differ from another tool?</summary><p>The usual causes are a trailing newline or space, different line endings, or another text encoding. This tool hashes the exact UTF-8 bytes of what you typed, so even one extra character changes everything.</p></details>
+<details><summary>Can I hash a file?</summary><p>Not on this page. The File Hash tool computes the same algorithms for a file you choose, locally.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/file-hash/"><span class="link-card__title">File Hash</span><span class="link-card__desc">MD5, SHA-1, SHA-256, SHA-384, SHA-512 of a file, computed locally.</span></a></li><li><a class="link-card" href="/en/hash-compare/"><span class="link-card__title">Hash Compare</span><span class="link-card__desc">Compare two hashes (case/whitespace-insensitive) and guess the algorithm from length.</span></a></li><li><a class="link-card" href="/en/hmac-generator/"><span class="link-card__title">HMAC Generator</span><span class="link-card__desc">HMAC with MD5, SHA-1, SHA-256, SHA-384 or SHA-512; hex and Base64 output.</span></a></li><li><a class="link-card" href="/en/sha3-hash-generator/"><span class="link-card__title">SHA-3 / Keccak / SHAKE Hash Generator</span><span class="link-card__desc">SHA3-224/256/384/512, Keccak-256 and Keccak-512 (the pre-standard padding used by Ethereum), and the SHAKE128 / SHAKE256 extendable-output functions with a chosen output length. Hand-written Keccak-f[1600]; the browser Web Crypto API has no SHA-3, so this is pure JavaScript (fine for text, slow for megabytes).</span></a></li><li><a class="link-card" href="/en/bcrypt-generator/"><span class="link-card__title">Bcrypt Hash Generator</span><span class="link-card__desc">Hash passwords with bcrypt ($2a/$2b, cost 4-14) entirely in your browser. One password per line. Only the first 72 bytes count (bcrypt limit). Cost 12 takes a second or so.</span></a></li><li><a class="link-card" href="/en/checksum-crc32-adler32/"><span class="link-card__title">CRC32 &amp; Adler-32 Checksum</span><span class="link-card__desc">CRC-32 (IEEE) and Adler-32 checksums of your text (UTF-8).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

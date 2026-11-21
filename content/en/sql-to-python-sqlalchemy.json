@@ -1,0 +1,45 @@
+{
+ "id": "sql-to-python-sqlalchemy",
+ "seoTitle": "Free SQL DDL to SQLAlchemy 2.0 Models Converter",
+ "metaDescription": "Convert CREATE TABLE statements into SQLAlchemy 2.0 declarative models with Mapped, mapped_column, ForeignKey and indexes. Free, in your browser.",
+ "intro": "Converts CREATE TABLE statements into SQLAlchemy 2.0 declarative models using Mapped and mapped_column, covering column types, nullable, unique, primary keys, ForeignKey, server defaults and indexes.",
+ "why": "SQLAlchemy 2.0 introduced the typed declarative style with Mapped[...] and mapped_column(), which is more verbose than the old Column syntax. Porting a schema by hand means choosing the right type for every column, working out Optional for nullable ones and writing constraints in __table_args__. Paste your DDL and this tool produces the classes: types, nullable, unique, primary keys, ForeignKey with ondelete, server defaults, UniqueConstraint and Index. It does not generate relationship() attributes, so you add those where you want object navigation. It is a quick way to start an ORM layer on an existing database. Everything is converted in your browser.",
+ "howTo": [
+  "Paste your CREATE TABLE statements into the input box.",
+  "Run the conversion to get the model classes.",
+  "Copy them into your project, add relationship() attributes where needed and run your tests."
+ ],
+ "faq": [
+  {
+   "q": "Is this the 2.0 style?",
+   "a": "Yes. The models use Mapped[...] type annotations together with mapped_column(), which is the typed style of SQLAlchemy 2.0, and not the older Column(...) declarations from earlier versions."
+  },
+  {
+   "q": "Are relationships generated?",
+   "a": "No. Foreign keys are written as ForeignKey columns, but relationship() attributes are not created. Add them yourself based on how you use the models."
+  },
+  {
+   "q": "How are nullable columns typed?",
+   "a": "They are annotated as Optional so type checkers know they can be None, and mapped_column is given nullable=True where needed."
+  },
+  {
+   "q": "How are defaults written?",
+   "a": "Defaults found in the DDL are written as server defaults, so the database applies them. Python-side defaults need to be added by hand."
+  }
+ ],
+ "related": [
+  "sql-to-django",
+  "sql-to-orm-schema",
+  "json-to-pydantic",
+  "sql-to-go-gorm",
+  "sql-to-drizzle",
+  "sql-dialect-converter"
+ ],
+ "keywords": [
+  "sql to sqlalchemy",
+  "create table to sqlalchemy model",
+  "sqlalchemy 2.0 model generator",
+  "free ddl to python orm",
+  "sqlacodegen alternative"
+ ]
+}

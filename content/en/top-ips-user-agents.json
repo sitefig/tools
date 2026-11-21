@@ -1,0 +1,44 @@
+{
+ "id": "top-ips-user-agents",
+ "seoTitle": "Top IPs and User Agents Report from Access Logs",
+ "metaDescription": "Rank busy client IPs and user agents with request counts, share, bytes, errors and first and last request. Free, runs in your browser.",
+ "intro": "Two rankings from a Common or Combined log: client IPs and user agents.",
+ "why": "Which client causes most of the load? The answer is often one IP or one library user agent. Each row shows requests, share, bytes, 4xx and 5xx counts and the time range.\n\nA user agent is a claim by the client and can be faked. Many requests from one IP may be a proxy with many users.",
+ "howTo": [
+  "Paste the access log or choose a file.",
+  "Set how many rows to show.",
+  "Read the IP ranking.",
+  "Read the user agent ranking."
+ ],
+ "faq": [
+  {
+   "q": "Does it look up countries?",
+   "a": "No. That needs a database or an online service. See the offline IP lookup tool for private ranges and registry data."
+  },
+  {
+   "q": "What are first and last?",
+   "a": "The time of day (UTC) of the first and last request from that entry."
+  },
+  {
+   "q": "Can it detect bots?",
+   "a": "Use the bot identifier tool on the user agents."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "access-log-analyzer",
+  "bot-user-agent-identifier",
+  "ip-address-offline-lookup",
+  "brute-force-scan-detector",
+  "access-log-parser",
+  "ip-anonymizer"
+ ],
+ "keywords": [
+  "top ips from access log",
+  "top user agents log",
+  "busiest clients nginx"
+ ]
+}

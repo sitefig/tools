@@ -1,0 +1,39 @@
+{
+ "id": "flow-rate-unit-converter",
+ "seoTitle": "Flow Rate Converter: L/min, GPM, m3/h, CFM",
+ "metaDescription": "Convert litres per minute, US and UK gallons per minute or hour, cubic metres per hour and CFM. Free, offline.",
+ "intro": "Converts flow rates between litres per minute or second, cubic metres per hour or second, US and UK gallons per minute or hour and cubic feet per minute.",
+ "why": "Pump, shower and ventilation specs use different flow units: L/min, GPM, m3/h or CFM. Comparing them needs the right gallon.\n\nThis tool shows all units at once, with US and UK gallons separate.",
+ "howTo": [
+  "Enter the flow rate.",
+  "Choose its unit.",
+  "Read the other units."
+ ],
+ "faq": [
+  {
+   "q": "How many L/min is 1 GPM?",
+   "a": "1 US gallon per minute is 3.785 L/min."
+  },
+  {
+   "q": "What is CFM?",
+   "a": "Cubic feet per minute, used for fans and air flow."
+  },
+  {
+   "q": "Does it handle mass flow?",
+   "a": "No, only volume flow."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "volume-us-imperial-converter",
+  "power-unit-converter",
+  "bandwidth-download-time",
+  "density-unit-converter",
+  "frequency-rpm-converter"
+ ],
+ "keywords": [
+  "lpm to gpm",
+  "m3/h to l/s",
+  "cfm to m3/h"
+ ]
+}

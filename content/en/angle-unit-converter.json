@@ -1,0 +1,39 @@
+{
+ "id": "angle-unit-converter",
+ "seoTitle": "Angle Converter: Degrees, Radians, Gradians, Turns",
+ "metaDescription": "Convert degrees, radians, gradians, turns, arcminutes and mils, with radians as a multiple of pi. Free.",
+ "intro": "Converts angles between degrees, radians, gradians, turns, arcminutes, arcseconds and NATO mils, and shows degrees-minutes-seconds and the multiple of pi.",
+ "why": "Code, maps and CAD tools each use another angle unit. Radians are the default in most maths libraries, degrees in everyday life.\n\nThe tool shows the result as a multiple of pi when it is a simple fraction, and as degrees, minutes and seconds.",
+ "howTo": [
+  "Enter the angle.",
+  "Select its unit.",
+  "Read the other units, the pi form and DMS."
+ ],
+ "faq": [
+  {
+   "q": "How many degrees is pi radians?",
+   "a": "180 degrees."
+  },
+  {
+   "q": "What is a gradian?",
+   "a": "A unit where a right angle is 100 gradians, so a full turn is 400."
+  },
+  {
+   "q": "Why no pi fraction sometimes?",
+   "a": "Only simple fractions with a denominator up to 360 are shown."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "css-unit-converter",
+  "color-converter",
+  "frequency-rpm-converter",
+  "torque-unit-converter",
+  "scientific-notation-converter"
+ ],
+ "keywords": [
+  "degrees to radians",
+  "radians to degrees",
+  "gradians"
+ ]
+}

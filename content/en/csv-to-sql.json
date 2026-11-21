@@ -1,0 +1,47 @@
+{
+ "id": "csv-to-sql",
+ "seoTitle": "Free CSV to SQL INSERT Statement Generator",
+ "metaDescription": "Free online CSV to SQL converter. Generate INSERT statements and an optional CREATE TABLE from CSV, with quoting, NULL handling and multi-row output.",
+ "intro": "Generate SQL INSERT statements from CSV, with an optional CREATE TABLE guessed from the data. Choose the table name, identifier quoting, multi-row output and NULL handling.",
+ "why": "Loading a CSV into a database usually means an import wizard, a COPY command or a short script. For a small seed file, a test fixture or a quick migration, it is faster to have plain SQL you can read, review and commit.\n\nPaste the CSV and the tool uses the first row as column names, then writes one INSERT per row or a single multi-row INSERT. Numbers are left bare, text is quoted with single quotes doubled, and empty cells can become NULL. The CREATE TABLE option guesses INTEGER, REAL or TEXT from the values, which is a starting point, not a final schema. Review column types before running anything on a real database. The conversion is local and nothing is uploaded.",
+ "howTo": [
+  "Paste CSV with column names in the first row.",
+  "Enter the table name and choose identifier quotes: double quotes, backticks or none.",
+  "Tick Include CREATE TABLE, Single multi-row INSERT and Empty cells as NULL as needed.",
+  "Copy the SQL and run it in your database client."
+ ],
+ "faq": [
+  {
+   "q": "How are column types guessed?",
+   "a": "A column where every non-empty value is a whole number becomes INTEGER, one with decimals becomes REAL, and anything else TEXT. It is only a guess, so adjust types such as dates or decimals before using the table."
+  },
+  {
+   "q": "How are quotes in values handled?",
+   "a": "Text values are wrapped in single quotes and any single quote inside is doubled, which is the standard SQL way. Identifiers are quoted with your chosen style."
+  },
+  {
+   "q": "Which SQL dialect does it target?",
+   "a": "Plain INSERT and CREATE TABLE statements that work in most databases. Choose double quotes for PostgreSQL or SQLite, backticks for MySQL. Check dialect details such as types before running."
+  },
+  {
+   "q": "Is the output safe against SQL injection?",
+   "a": "The tool escapes quotes, but you should still only run SQL generated from data you trust, and test it on a copy of the database first."
+  }
+ ],
+ "related": [
+  "csv-to-json",
+  "sql-format",
+  "csv-to-markdown-table",
+  "json-to-sql",
+  "sql-on-csv",
+  "sql-to-json"
+ ],
+ "keywords": [
+  "csv to sql",
+  "csv to sql insert",
+  "convert csv to sql online",
+  "csv to insert statements",
+  "free csv to sql tool",
+  "csv to create table"
+ ]
+}

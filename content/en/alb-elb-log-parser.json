@@ -1,0 +1,44 @@
+{
+ "id": "alb-elb-log-parser",
+ "seoTitle": "AWS ALB and ELB Access Log Parser: Latency and 5xx",
+ "metaDescription": "Parse Application and Classic load balancer logs. See ELB and target status codes, latency percentiles and requests with no target. Free.",
+ "intro": "Reads ALB and Classic ELB access logs and summarises status codes, processing time and errors.",
+ "why": "Load balancer logs separate the balancer status from the target status, which is the key to telling a 502 from the balancer apart from a 500 from the app.\n\nThe tool reads the quoted request, user agent and other fields correctly. A processing time of -1 means the balancer did not get a response from a target, and the summary counts those.",
+ "howTo": [
+  "Download log files from S3 and unpack them, or drop the .gz files.",
+  "Filter by ELB status if needed.",
+  "Read status, latency and slowest paths.",
+  "Switch to the table for details."
+ ],
+ "faq": [
+  {
+   "q": "What does -1 mean?",
+   "a": "The balancer could not dispatch the request to a target or got no response in time."
+  },
+  {
+   "q": "Which fields are read?",
+   "a": "The first 36 fields of the ALB format; later fields are ignored."
+  },
+  {
+   "q": "What if some lines do not match?",
+   "a": "They are skipped and the result says how many. Network and Gateway load balancer logs use other formats."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "cloudfront-log-parser",
+  "s3-access-log-parser",
+  "response-time-percentiles",
+  "haproxy-log-parser",
+  "cloudtrail-event-viewer",
+  "request-spike-detector"
+ ],
+ "keywords": [
+  "alb access log parser",
+  "elb log analyzer",
+  "load balancer 502 logs"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "language-switcher-markup-generator",
+ "seoTitle": "Accessible Language Switcher Markup Generator (Crawlable Links)",
+ "metaDescription": "Generate a language or country switcher from plain links with hreflang, lang and aria-current. Native names, no JavaScript, plus head tags.",
+ "intro": "Writes a navigation list of real links for your language versions, labelled in each language.",
+ "why": "A crawlable switcher uses ordinary links. Each link carries hreflang and lang, so assistive technology pronounces the name correctly, and the current page is marked with aria-current. Labels default to the native name of the language, taken from your browser's Intl data, because people look for their own language.\n\nThe tool can also output the matching hreflang link tags for the head. It avoids flags (a flag is a country) and avoids select menus that navigate on change.",
+ "howTo": [
+  "Enter one line per version: code | URL | label.",
+  "Set the current page code and a navigation label.",
+  "Copy the nav block and the head tags.",
+  "Style it to match your site."
+ ],
+ "faq": [
+  {
+   "q": "Why not a dropdown?",
+   "a": "Selects that navigate on change are harder for keyboard and screen reader users."
+  },
+  {
+   "q": "Why native names?",
+   "a": "Visitors look for their own language, not the page language."
+  },
+  {
+   "q": "Should I use flags?",
+   "a": "No. A flag stands for a country, not a language."
+  },
+  {
+   "q": "Is JavaScript needed?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "hreflang-generator",
+  "hreflang-x-default-advisor",
+  "language-suggestion-banner-generator",
+  "hreflang-code-checker",
+  "language-region-code-lookup",
+  "html-lang-attribute-checker"
+ ],
+ "keywords": [
+  "language switcher html",
+  "accessible language selector",
+  "country selector markup",
+  "language links hreflang"
+ ]
+}

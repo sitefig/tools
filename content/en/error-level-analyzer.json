@@ -1,0 +1,45 @@
+{
+ "id": "error-level-analyzer",
+ "seoTitle": "Error Level Analysis (ELA) for JPEG Photos",
+ "metaDescription": "Recompress a JPEG at a fixed quality and show the amplified difference, so areas that were edited or pasted in may stand out. A hint for review, not proof...",
+ "intro": "Highlight regions that may have been edited in a JPEG.",
+ "why": "The photo is saved again as a JPEG at a set quality, and the difference from the original is amplified and shown as a picture. Regions with a different save history can look brighter or darker than the rest.\n\nThis is a hint, not proof. Edges, text, saturated colours and noise glow on their own, and screenshots or heavily re-saved files give confusing maps. Use it to decide where to look, then look.",
+ "howTo": [
+  "Choose a JPEG.",
+  "Keep quality 90 or change it.",
+  "Adjust the amplification.",
+  "Look for areas that differ from their surroundings."
+ ],
+ "faq": [
+  {
+   "q": "Can it prove a photo is fake?",
+   "a": "No. It can point at places worth a closer look."
+  },
+  {
+   "q": "Which quality should I use?",
+   "a": "90 is a common start. Try 75 to 95."
+  },
+  {
+   "q": "Does it work on PNG?",
+   "a": "It runs, but the map is not meaningful for lossless files."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "exif-viewer",
+  "image-info",
+  "image-diff",
+  "image-histogram-viewer",
+  "exif-remover",
+  "icc-profile-inspector"
+ ],
+ "keywords": [
+  "error level analysis",
+  "ELA image",
+  "photo forensics",
+  "detect edited image"
+ ]
+}

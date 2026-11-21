@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Cron Expression Explainer with Next Run Times | Free Tools</title>
+<meta name="description" content="Paste a 5-field cron expression and read it in plain English, with the next 10 run times in UTC or local time. Free and runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/cron-explainer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/cron-explainer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/cron-explainer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Cron Expression Explainer with Next Run Times | Free Tools">
+<meta property="og:description" content="Paste a 5-field cron expression and read it in plain English, with the next 10 run times in UTC or local time. Free and runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/cron-explainer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Cron Expression Explainer with Next Run Times | Free Tools">
+<meta name="twitter:description" content="Paste a 5-field cron expression and read it in plain English, with the next 10 run times in UTC or local time. Free and runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Cron Expression Explainer","url":"https://tools.sitefig.net/en/cron-explainer/","description":"Paste a 5-field cron expression and read it in plain English, with the next 10 run times in UTC or local time. Free and runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste a cron expression with five fields: minute, hour, day of month, month, day of week.","Choose whether to show run times in UTC or local time.","Read the plain-English meaning.","Compare the next ten run times with what you intended."],"keywords":"cron expression explainer, cron to english, crontab next run times, free cron parser, what does this cron mean, cron schedule checker","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Date & Time","item":"https://tools.sitefig.net/en/#date-and-time"},{"@type":"ListItem","position":3,"name":"Cron Expression Explainer","item":"https://tools.sitefig.net/en/cron-explainer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which cron syntax is supported?","acceptedAnswer":{"@type":"Answer","text":"Standard five-field cron: numbers, lists, ranges, steps, * and ?, month and weekday names, and the aliases @hourly, @daily, @weekly, @monthly and @yearly. Seconds fields, Quartz extras such as L, W or #, and year fields are not supported."}},{"@type":"Question","name":"How are day-of-month and day-of-week combined?","acceptedAnswer":{"@type":"Answer","text":"If both are restricted, the job runs when either one matches, as classic cron does. If only one is restricted, only that one counts."}},{"@type":"Question","name":"Which time zone does my cron run in?","acceptedAnswer":{"@type":"Answer","text":"That depends on the scheduler. Many servers use UTC, but crontab uses the system zone and some cloud schedulers let you set one. Compare the UTC and local lists to see the difference."}},{"@type":"Question","name":"Why does it say no run found?","acceptedAnswer":{"@type":"Answer","text":"The search looks about eight years ahead. An expression such as 0 0 31 2 * (31 February) never matches, so no run is listed. This is usually a sign of a mistake in the schedule."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#date-and-time">Date &amp; Time</a></li><li><span aria-current="page">Cron Expression Explainer</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Cron Expression Explainer</h1>
+<p class="lede">Paste a standard 5-field cron expression and get a plain-English description plus the next ten times it will run, in UTC or in your local time.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="cron-explainer" data-module="encode"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Cron strings are compact and easy to misread. Is &quot;0 9 * * 1-5&quot; weekdays at nine, and does &quot;*/15 9-17&quot; run at 17:45? A wrong schedule means a backup that never runs or a job that fires every minute, and you only find out later.</p>
+<p>This tool parses the expression, checks every field for range errors, and explains it in English. It then lists the next ten run times so you can check the schedule against your expectations. Names such as mon-fri and jan, and shortcuts like @daily and @hourly are understood. When both day-of-month and day-of-week are set, it follows the usual rule that either can match.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste a cron expression with five fields: minute, hour, day of month, month, day of week.</li><li>Choose whether to show run times in UTC or local time.</li><li>Read the plain-English meaning.</li><li>Compare the next ten run times with what you intended.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which cron syntax is supported?</summary><p>Standard five-field cron: numbers, lists, ranges, steps, * and ?, month and weekday names, and the aliases @hourly, @daily, @weekly, @monthly and @yearly. Seconds fields, Quartz extras such as L, W or #, and year fields are not supported.</p></details>
+<details><summary>How are day-of-month and day-of-week combined?</summary><p>If both are restricted, the job runs when either one matches, as classic cron does. If only one is restricted, only that one counts.</p></details>
+<details><summary>Which time zone does my cron run in?</summary><p>That depends on the scheduler. Many servers use UTC, but crontab uses the system zone and some cloud schedulers let you set one. Compare the UTC and local lists to see the difference.</p></details>
+<details><summary>Why does it say no run found?</summary><p>The search looks about eight years ahead. An expression such as 0 0 31 2 * (31 February) never matches, so no run is listed. This is usually a sign of a mistake in the schedule.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/cron-generator/"><span class="link-card__title">Cron Expression Generator</span><span class="link-card__desc">Build a cron expression from dropdowns and see what it means.</span></a></li><li><a class="link-card" href="/en/natural-language-to-cron/"><span class="link-card__title">Natural Language to Cron</span><span class="link-card__desc">Turn plain English schedules into a standard 5-field cron expression and read it back to confirm: &quot;every 15 minutes&quot;, &quot;every weekday at 8:30am&quot;, &quot;every monday and friday at 5pm&quot;, &quot;first day of every month at midnight&quot;, &quot;every 2 hours between 9am and 5pm on weekdays&quot;, &quot;quarterly&quot;, &quot;on the 1st and 15th at noon&quot;. Rule-based (no AI), English only; unrecognised words are reported. One schedule per line.</span></a></li><li><a class="link-card" href="/en/cron-timezone-converter/"><span class="link-card__title">Cron Time Zone Converter</span><span class="link-card__desc">Convert a 5-field cron expression written for one time zone into the equivalent in another (for example a job that must run at 09:00 Europe/Brussels on a UTC-only scheduler), shifting hours and, when the shift crosses midnight, the day-of-week / day-of-month fields. The offset is computed for the reference date you give, so the result is exact only on that side of a DST change: the tool says so.</span></a></li><li><a class="link-card" href="/en/cron-dialect-converter/"><span class="link-card__title">Cron Dialect Converter</span><span class="link-card__desc">Convert a standard 5-field cron to Quartz, Spring, AWS EventBridge, GitHub Actions and Kubernetes CronJob syntax.</span></a></li><li><a class="link-card" href="/en/crontab-randomized-generator/"><span class="link-card__title">Randomized Crontab Generator</span><span class="link-card__desc">Spread many cron jobs across minutes/hours so they do not all fire at :00. Stable per job (hash of seed + command, like Jenkins &quot;H&quot;), or evenly spaced across a window.</span></a></li><li><a class="link-card" href="/en/systemd-timer-generator/"><span class="link-card__title">systemd Timer Generator</span><span class="link-card__desc">Generate a .timer plus its matching .service (cron replacement) with OnCalendar or monotonic schedules.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

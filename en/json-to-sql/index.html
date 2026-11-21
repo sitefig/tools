@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free JSON to SQL: CREATE TABLE and INSERT Generator | Free Tools</title>
+<meta name="description" content="Turn a JSON array of objects into CREATE TABLE and escaped INSERT statements for PostgreSQL, MySQL or SQLite. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/json-to-sql/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/json-to-sql/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/json-to-sql/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free JSON to SQL: CREATE TABLE and INSERT Generator | Free Tools">
+<meta property="og:description" content="Turn a JSON array of objects into CREATE TABLE and escaped INSERT statements for PostgreSQL, MySQL or SQLite. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/json-to-sql/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free JSON to SQL: CREATE TABLE and INSERT Generator | Free Tools">
+<meta name="twitter:description" content="Turn a JSON array of objects into CREATE TABLE and escaped INSERT statements for PostgreSQL, MySQL or SQLite. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"JSON to SQL (CREATE TABLE + INSERT)","url":"https://tools.sitefig.net/en/json-to-sql/","description":"Turn a JSON array of objects into CREATE TABLE and escaped INSERT statements for PostgreSQL, MySQL or SQLite. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste a JSON array of objects, or a single object.","Pick the table name and the SQL dialect, and decide whether to include CREATE TABLE.","Copy the SQL, optionally as one multi-row INSERT."],"keywords":"json to sql, json to insert statements, json to create table, free json to postgres converter, generate sql from json array","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"JSON","item":"https://tools.sitefig.net/en/#json"},{"@type":"ListItem","position":3,"name":"JSON to SQL (CREATE TABLE + INSERT)","item":"https://tools.sitefig.net/en/json-to-sql/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How are types chosen?","acceptedAnswer":{"@type":"Answer","text":"From the values: integers, floating numbers, booleans, strings, timestamps and nested JSON. If one key holds mixed kinds, the column falls back to JSON or text, except integers mixed with decimals, which become floating point."}},{"@type":"Question","name":"Does it add a primary key?","acceptedAnswer":{"@type":"Answer","text":"No. Only column types and NOT NULL are generated. Add a primary key, indexes and foreign keys yourself for the table you plan to keep."}},{"@type":"Question","name":"How are quotes and special characters handled?","acceptedAnswer":{"@type":"Answer","text":"Single quotes are doubled, and for MySQL backslashes are escaped too. Identifiers are quoted with double quotes, or backticks for MySQL."}},{"@type":"Question","name":"Is it safe to run the output directly?","acceptedAnswer":{"@type":"Answer","text":"Review it first. The statements are plain SQL text built from your data, so run them on a test database before production."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#json">JSON</a></li><li><span aria-current="page">JSON to SQL (CREATE TABLE + INSERT)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>JSON to SQL (CREATE TABLE + INSERT)</h1>
+<p class="lede">Paste a JSON array of objects and get a CREATE TABLE with inferred column types and nullability, plus escaped INSERT statements for PostgreSQL, MySQL or SQLite.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="json-to-sql" data-module="devx"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Getting API output or an export into a database usually means writing a table definition and a pile of INSERT statements, with quotes escaped and booleans and dates written the way each engine expects. Importing through a client is possible, but a script you can read, review and commit is easier to repeat.</p>
+<p>The tool scans every object to find all keys, picks types from the values it sees, marks a column NOT NULL only if it is always present, and uses JSONB or JSON for nested values. Strings that look like timestamps become timestamp columns. Types are guesses from samples. Check them, add primary keys and indexes, and remember that INSERT text is sensitive to quoting rules of each dialect.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste a JSON array of objects, or a single object.</li><li>Pick the table name and the SQL dialect, and decide whether to include CREATE TABLE.</li><li>Copy the SQL, optionally as one multi-row INSERT.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How are types chosen?</summary><p>From the values: integers, floating numbers, booleans, strings, timestamps and nested JSON. If one key holds mixed kinds, the column falls back to JSON or text, except integers mixed with decimals, which become floating point.</p></details>
+<details><summary>Does it add a primary key?</summary><p>No. Only column types and NOT NULL are generated. Add a primary key, indexes and foreign keys yourself for the table you plan to keep.</p></details>
+<details><summary>How are quotes and special characters handled?</summary><p>Single quotes are doubled, and for MySQL backslashes are escaped too. Identifiers are quoted with double quotes, or backticks for MySQL.</p></details>
+<details><summary>Is it safe to run the output directly?</summary><p>Review it first. The statements are plain SQL text built from your data, so run them on a test database before production.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/csv-to-sql/"><span class="link-card__title">CSV to SQL INSERT</span><span class="link-card__desc">Generate INSERT statements (and optionally CREATE TABLE) from CSV.</span></a></li><li><a class="link-card" href="/en/sql-to-json/"><span class="link-card__title">SQL INSERT to JSON</span><span class="link-card__desc">Parse INSERT ... VALUES statements (multi-row, quoted strings, NULL, booleans, numbers) into JSON rows per table. Column names come from the INSERT or the CREATE TABLE in the same script. Subset: INSERT/CREATE TABLE only; expressions stay as raw text.</span></a></li><li><a class="link-card" href="/en/json-to-csv/"><span class="link-card__title">JSON to CSV</span><span class="link-card__desc">Convert an array of JSON objects to CSV, flattening nested values into dotted columns.</span></a></li><li><a class="link-card" href="/en/sql-slugifier/"><span class="link-card__title">SQL Identifier Slugifier</span><span class="link-card__desc">Turn titles, CSV headers or free text into safe snake_case table/column names: accents removed, no leading digit, reserved words suffixed, duplicates numbered.</span></a></li><li><a class="link-card" href="/en/list-to-sql-in/"><span class="link-card__title">List to SQL IN Clause</span><span class="link-card__desc">Turn a pasted column of values into a quoted, escaped IN (...) list. Auto-detects numbers, optional dedupe and Oracle-safe 1000-item chunks.</span></a></li><li><a class="link-card" href="/en/sql-format/"><span class="link-card__title">SQL Formatter</span><span class="link-card__desc">Uppercase keywords and lay out clauses, joins and subqueries on separate lines.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+ "id": "tailwind-class-sorter",
+ "seoTitle": "Free Tailwind CSS Class Sorter - Order Utilities Online",
+ "metaDescription": "Sort Tailwind utility classes into the conventional order, with variants after base classes, from a class list or whole HTML. Free, runs in your browser.",
+ "intro": "Sorts Tailwind CSS utility classes into the usual order (layout, box model, typography, effects) with variants like hover: and md: after the base classes. It works on a class list or on HTML.",
+ "why": "Long class strings grow in whatever order they were typed, which makes diffs noisy and code review slower. Two people style the same element and the lists look completely different. The official Prettier plugin fixes this, but you may not have a build set up, or you may be working in a snippet, a CMS field or a chat message. Paste the markup here and every class=\"...\" or className=\"...\" attribute is reordered; a bare class list works too. Duplicates can be removed. This is a hand-written approximation of the official ordering, so edge cases can differ from the plugin. Your code stays in the browser.",
+ "howTo": [
+  "Paste a list of classes, or HTML or JSX containing class or className attributes.",
+  "Leave \"Remove duplicate classes\" ticked if you want repeated classes dropped.",
+  "Copy the sorted result back into your project."
+ ],
+ "faq": [
+  {
+   "q": "Does it match prettier-plugin-tailwindcss exactly?",
+   "a": "Not always. It uses its own approximation of the official order: layout first, then box model, typography and effects, with variants after. Custom or unknown classes are placed first. Differences appear in rare edge cases."
+  },
+  {
+   "q": "How are variants handled?",
+   "a": "Classes with variants such as hover:, md: or dark: are placed after plain classes, and grouped by variant, then ordered by their base utility. Arbitrary values in square brackets are kept intact."
+  },
+  {
+   "q": "What about dynamic class names?",
+   "a": "Attributes containing a brace expression like className={cond ? \"a\" : \"b\"} are left untouched. Only plain strings and simple template literals without placeholders are sorted."
+  },
+  {
+   "q": "Will it change the meaning of my styles?",
+   "a": "Order in the class attribute does not affect CSS precedence in Tailwind, so sorting is safe. Removing duplicates is also safe, but custom CSS that relies on the order of attributes is not covered."
+  }
+ ],
+ "related": [
+  "tailwind-converter",
+  "tailwind-v3-to-v4-migrator",
+  "html-format",
+  "css-format",
+  "tailwind-to-inline-css",
+  "tailwind-spacing-generator"
+ ],
+ "keywords": [
+  "tailwind class sorter",
+  "sort tailwind classes online",
+  "tailwind class order",
+  "free tailwind class organiser",
+  "prettier tailwind sort without plugin"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "retirement-estimator",
+ "seoTitle": "Free Retirement Calculator: Nest Egg and 4% Rule",
+ "metaDescription": "Estimate your retirement pot, inflation-adjusted value and sustainable income using the 4% rule, with a shortfall check. Free, runs in your browser.",
+ "intro": "Enter your age, retirement age, savings, monthly contribution, expected return, inflation and desired income. The tool projects your nest egg and compares it with what you need.",
+ "why": "Retirement planning is easy to put off because the numbers feel vague. A rough projection turns it into something concrete: if I save this much a month at this return, what could I have at 65, and would it support the income I want? This estimator grows your current savings and contributions to retirement age, deflates the result by your inflation assumption, and applies the 4% rule to show a monthly income in current prices. It then tells you whether you are on track or by how much you fall short. It is a simple model with constant rates and ignores tax and pensions, so treat it as a conversation starter, not advice.",
+ "howTo": [
+  "Enter your current age, planned retirement age and current savings.",
+  "Enter your monthly contribution, expected annual return and inflation rate.",
+  "Enter the monthly income you want in current prices, then read the projection and the surplus or shortfall."
+ ],
+ "faq": [
+  {
+   "q": "What is the 4% rule?",
+   "a": "A rule of thumb that you can withdraw about 4% of your pot in the first year of retirement, then adjust for inflation, and expect it to last around 30 years. It is a guideline, not a guarantee."
+  },
+  {
+   "q": "Why are there two values for the nest egg?",
+   "a": "The first is the nominal amount at retirement. The second divides it by inflation over the years, showing what it would be worth at today's purchasing power. Compare your goal against the second."
+  },
+  {
+   "q": "Does it include pensions, tax or one-off payments?",
+   "a": "No. It uses constant contributions and a constant return. State pensions, tax, fees, lump sums and market swings are not modelled."
+  },
+  {
+   "q": "What if the retirement age is not above my age?",
+   "a": "The tool shows an error, since there must be at least one year to save. Enter an age higher than your current one."
+  }
+ ],
+ "related": [
+  "compound-interest",
+  "sip-calculator",
+  "savings-goal",
+  "inflation-calculator",
+  "roi-calculator",
+  "loan-calculator"
+ ],
+ "keywords": [
+  "retirement calculator",
+  "free retirement calculator",
+  "4 percent rule calculator",
+  "retirement savings estimator",
+  "nest egg calculator",
+  "how much to retire"
+ ]
+}

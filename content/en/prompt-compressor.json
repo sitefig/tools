@@ -1,0 +1,45 @@
+{
+  "id": "prompt-compressor",
+  "seoTitle": "Prompt Compressor: Cut Filler and Save Tokens",
+  "metaDescription": "Shorten a prompt by removing politeness filler, wordy phrases, duplicate lines and extra whitespace, with the token saving and every change listed.",
+  "intro": "Trim a long system prompt or instruction block without rewriting it by hand.",
+  "why": "A list of rules removes filler such as \"please\", \"kindly\" and \"I would like you to\", replaces wordy phrases (\"in order to\" becomes \"to\", \"due to the fact that\" becomes \"because\"), drops hedges like \"basically\" and \"very\", deletes trailing thank-yous, collapses whitespace and optionally removes duplicate lines. Each change is logged, and the character and estimated token counts before and after are shown (4 characters per token).\n\nThe rules are deliberately conservative, but meaning can still shift, so re-read the result and test the prompt. For real token counts use the tokenizer tools.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the prompt.",
+    "Choose whether to remove duplicate lines.",
+    "Review the compressed text and the change list.",
+    "Test the shortened prompt on your task."
+  ],
+  "faq": [
+    {
+      "q": "Does politeness affect model output?",
+      "a": "Slightly, in some tasks. Test before dropping it for production prompts."
+    },
+    {
+      "q": "Are the token counts exact?",
+      "a": "No, they are estimates. Use the GPT token counter for exact numbers."
+    },
+    {
+      "q": "Does it use AI?",
+      "a": "No. Fixed rules only."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "prompt-linter",
+    "system-prompt-budgeter",
+    "llm-token-estimator",
+    "gpt-token-counter",
+    "prompt-template-filler",
+    "json-to-toon"
+  ],
+  "keywords": [
+    "prompt compressor",
+    "reduce prompt tokens",
+    "shorten system prompt",
+    "llm cost saving"
+  ]
+}

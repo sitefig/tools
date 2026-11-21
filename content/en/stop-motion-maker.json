@@ -1,0 +1,45 @@
+{
+ "id": "stop-motion-maker",
+ "seoTitle": "Stop Motion Maker: Webcam Frames with Onion Skin",
+ "metaDescription": "Capture webcam frames one at a time with an onion skin overlay and compile them into a video. Private, browser only.",
+ "intro": "Captures webcam photos one by one, shows a faint copy of the previous frame to help positioning, and compiles the frames into a video at your frame rate.",
+ "why": "Stop motion needs small, accurate moves between shots. The onion skin overlay shows the last frame through the live view so you can line up the next one. You choose the frame rate, from 1 to 30, and the length follows from the number of frames.\n\nCamera access needs your permission and stays on your device. The video is made in the browser.",
+ "howTo": [
+  "Press Start camera and allow access.",
+  "Set up the scene, press Capture frame, move the subject slightly and repeat.",
+  "Adjust the onion skin strength and frame rate.",
+  "Press Make video, then download."
+ ],
+ "faq": [
+  {
+   "q": "Can I delete a bad frame?",
+   "a": "Delete last frame removes the most recent one."
+  },
+  {
+   "q": "What frame rate should I use?",
+   "a": "Eight to twelve gives the classic stop motion look. Use 24 for smooth motion."
+  },
+  {
+   "q": "Is there sound?",
+   "a": "No."
+  },
+  {
+   "q": "Is the camera recorded?",
+   "a": "Only the frames you capture are kept in memory."
+  }
+ ],
+ "related": [
+  "webcam-recorder",
+  "gif-maker",
+  "video-to-gif",
+  "video-speed-changer",
+  "media-devices-viewer",
+  "video-looper"
+ ],
+ "keywords": [
+  "stop motion animation maker",
+  "webcam stop motion online",
+  "onion skin animation",
+  "frame by frame video"
+ ]
+}

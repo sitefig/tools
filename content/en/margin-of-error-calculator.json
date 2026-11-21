@@ -1,0 +1,45 @@
+{
+ "id": "margin-of-error-calculator",
+ "seoTitle": "Survey Margin of Error Calculator with Confidence Range",
+ "metaDescription": "Compute the margin of error and confidence range for a survey result from sample size, result and confidence level. Free and private.",
+ "intro": "Enter sample size, your result and confidence level to see the plus or minus range.",
+ "why": "A result of 56% from 400 people is not exactly 56%: at 95% confidence it is about 51% to 61%. The margin shows how far a result could be from the true value due to sampling alone.\n\nIt uses the normal approximation and an optional finite population correction. It is rough near 0% or 100% and for small samples, and does not cover bias or poor wording.",
+ "howTo": [
+  "Enter the number of responses.",
+  "Enter the result percentage and confidence level.",
+  "Add the population if it is small.",
+  "Read the margin and the range."
+ ],
+ "faq": [
+  {
+   "q": "Does it cover bias?",
+   "a": "No, only random sampling error."
+  },
+  {
+   "q": "What is the worst case?",
+   "a": "The margin when the result is 50%."
+  },
+  {
+   "q": "Which confidence level?",
+   "a": "95% is common."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "survey-sample-size-calculator",
+  "ab-test-calculator",
+  "nps-calculator",
+  "csat-calculator",
+  "statistics-calculator",
+  "conversion-rate-calculator"
+ ],
+ "keywords": [
+  "margin of error calculator",
+  "survey margin of error",
+  "confidence interval percentage",
+  "poll margin of error"
+ ]
+}

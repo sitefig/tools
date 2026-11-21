@@ -1,0 +1,46 @@
+{
+  "id": "aspect-ratio-calculator",
+  "seoTitle": "Free Aspect Ratio Calculator: Resize and CSS Snippets",
+  "metaDescription": "Simplify a width and height to its aspect ratio, scale to a new size, and copy CSS aspect-ratio and padding-hack code. Free, in your browser.",
+  "intro": "Reduces a width by height pair to its simplest ratio, such as 16:9, and scales it to a new width or height. It also prints the CSS aspect-ratio rule, the padding hack and a Tailwind class.",
+  "why": "Resizing an image or a video without distorting it needs the ratio kept intact. Working out that 1920 by 1080 is 16:9, or what height a 1280 pixel wide version should have, is simple arithmetic that is easy to fumble when you do it quickly, especially with unusual sizes.\n\nEnter the dimensions as 1920x1080 or 16:9. The tool reduces them, shows the decimal ratio and the megapixel count, then scales to a width or height you supply. Alongside the numbers you get ready-made CSS: the modern aspect-ratio property, the older padding-top percentage trick for browsers without support, and a Tailwind arbitrary class. All calculation runs in your browser.",
+  "howTo": [
+    "Enter the dimensions as W x H or W:H, for example 1920x1080.",
+    "Type a new width or a new height to scale to.",
+    "Read the simplified ratio, decimal and megapixels.",
+    "Copy the CSS aspect-ratio, padding hack or Tailwind class."
+  ],
+  "faq": [
+    {
+      "q": "What formats can I enter?",
+      "a": "Two numbers separated by x, a colon, a slash, an asterisk or the multiplication sign, for example 1920x1080 or 16:9. Decimals are allowed. Anything else shows a hint about the expected format."
+    },
+    {
+      "q": "How is the simplest ratio found?",
+      "a": "Both numbers are scaled to thousandths and divided by their greatest common divisor, so decimal sizes still reduce neatly. Odd sizes like 1366x768 give an awkward ratio such as 683:384."
+    },
+    {
+      "q": "What is the padding hack for?",
+      "a": "Before the aspect-ratio property was supported everywhere, developers set padding-top as a percentage of the width to reserve a box of the right shape. The tool prints that value as well, for old browsers."
+    },
+    {
+      "q": "Which new size does it calculate?",
+      "a": "If you give a new width it works out the height, and if you give a new height it works out the width. Set a field to 0 to skip it. If you fill both, you get both results."
+    }
+  ],
+  "related": [
+    "image-resizer",
+    "image-cropper",
+    "screen-size-ppi",
+    "css-unit-converter",
+    "placeholder-image-generator",
+    "responsive-breakpoint-previewer"
+  ],
+  "keywords": [
+    "aspect ratio calculator",
+    "calculate aspect ratio",
+    "css aspect-ratio generator",
+    "16:9 resize calculator",
+    "free aspect ratio tool"
+  ]
+}

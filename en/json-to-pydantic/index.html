@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free JSON to Pydantic Model Generator (v2) Online | Free Tools</title>
+<meta name="description" content="Generate Pydantic v2 BaseModel classes from sample JSON with nested models, Optional fields, datetime and UUID detection. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/json-to-pydantic/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/json-to-pydantic/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/json-to-pydantic/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free JSON to Pydantic Model Generator (v2) Online | Free Tools">
+<meta property="og:description" content="Generate Pydantic v2 BaseModel classes from sample JSON with nested models, Optional fields, datetime and UUID detection. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/json-to-pydantic/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free JSON to Pydantic Model Generator (v2) Online | Free Tools">
+<meta name="twitter:description" content="Generate Pydantic v2 BaseModel classes from sample JSON with nested models, Optional fields, datetime and UUID detection. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"JSON to Pydantic Models","url":"https://tools.sitefig.net/en/json-to-pydantic/","description":"Generate Pydantic v2 BaseModel classes from sample JSON with nested models, Optional fields, datetime and UUID detection. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste a sample JSON object or array into the input box.","Set the root class name and decide whether to detect datetime, date and UUID strings.","Copy the models into your Python project and tighten any type the sample could not reveal."],"keywords":"json to pydantic, pydantic model generator from json, json to python class, free pydantic v2 generator, fastapi model from json","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Schema Converters","item":"https://tools.sitefig.net/en/#schema-converters"},{"@type":"ListItem","position":3,"name":"JSON to Pydantic Models","item":"https://tools.sitefig.net/en/json-to-pydantic/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does it do with camelCase keys?","acceptedAnswer":{"@type":"Answer","text":"It creates a snake_case attribute and adds Field(alias=\"originalKey\") so validation and serialisation still use the original name. Keys that are Python keywords are renamed the same way."}},{"@type":"Question","name":"How are optional fields found?","acceptedAnswer":{"@type":"Answer","text":"In an array of objects, a key missing from some items becomes Optional. A null value also makes the field Optional. A single object gives no hint about optional keys."}},{"@type":"Question","name":"Which special strings are detected?","acceptedAnswer":{"@type":"Answer","text":"ISO date-times, dates and UUIDs become datetime, date and UUID. Turn the option off if you would rather keep them as plain str."}},{"@type":"Question","name":"Is it Pydantic v1 or v2?","acceptedAnswer":{"@type":"Answer","text":"The output targets Pydantic v2 and uses BaseModel and Field with aliases. Projects still on Pydantic v1 may need small changes, for example to the way aliases and configuration are declared."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#schema-converters">Schema Converters</a></li><li><span aria-current="page">JSON to Pydantic Models</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>JSON to Pydantic Models</h1>
+<p class="lede">Generates Pydantic v2 BaseModel classes from sample JSON: nested classes, List, Optional and Union typing, datetime, date and UUID detection, snake_case names and Field aliases.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="json-to-pydantic" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>FastAPI endpoints, config loaders and data pipelines all need models that match the JSON they receive. Typing them out from a long sample is dull and error-prone, especially with nested objects and keys that are camelCase or Python keywords. Paste a sample here and get Pydantic v2 classes with the nesting worked out. Arrays of objects are merged, so keys missing from some items become Optional. Keys like userName are turned into user_name with a Field alias that keeps the original name, and a key such as class is renamed safely. Strings that look like dates, times or UUIDs get proper types. The sample is processed in your browser, so a real API response is not uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste a sample JSON object or array into the input box.</li><li>Set the root class name and decide whether to detect datetime, date and UUID strings.</li><li>Copy the models into your Python project and tighten any type the sample could not reveal.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What does it do with camelCase keys?</summary><p>It creates a snake_case attribute and adds Field(alias=&quot;originalKey&quot;) so validation and serialisation still use the original name. Keys that are Python keywords are renamed the same way.</p></details>
+<details><summary>How are optional fields found?</summary><p>In an array of objects, a key missing from some items becomes Optional. A null value also makes the field Optional. A single object gives no hint about optional keys.</p></details>
+<details><summary>Which special strings are detected?</summary><p>ISO date-times, dates and UUIDs become datetime, date and UUID. Turn the option off if you would rather keep them as plain str.</p></details>
+<details><summary>Is it Pydantic v1 or v2?</summary><p>The output targets Pydantic v2 and uses BaseModel and Field with aliases. Projects still on Pydantic v1 may need small changes, for example to the way aliases and configuration are declared.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/json-to-typescript/"><span class="link-card__title">JSON to TypeScript</span><span class="link-card__desc">Generate TypeScript interfaces or types from a JSON sample, merging array elements.</span></a></li><li><a class="link-card" href="/en/json-to-go/"><span class="link-card__title">JSON to Go Struct</span><span class="link-card__desc">Generate Go structs with json tags from a JSON sample.</span></a></li><li><a class="link-card" href="/en/json-schema-generator/"><span class="link-card__title">JSON Schema Generator</span><span class="link-card__desc">Infer a draft-07 JSON Schema from a sample document, with optional string format detection.</span></a></li><li><a class="link-card" href="/en/sql-to-python-sqlalchemy/"><span class="link-card__title">SQL DDL to SQLAlchemy 2.0 Models</span><span class="link-card__desc">Convert CREATE TABLE statements to SQLAlchemy 2.0 declarative models using Mapped[...] / mapped_column(): column types, nullable, unique, primary keys, ForeignKey with ondelete, server defaults, UniqueConstraint and Index in __table_args__. Relationship() attributes are not generated.</span></a></li><li><a class="link-card" href="/en/json-to-typescript-type-guards/"><span class="link-card__title">JSON to TypeScript Type Guards</span><span class="link-card__desc">From sample JSON, generate TypeScript interfaces plus runtime type-guard functions (isRoot(value): value is Root) that check every property, nested object, array element, optional and nullable field. Handy for validating API responses without a schema library.</span></a></li><li><a class="link-card" href="/en/json-to-zod/"><span class="link-card__title">JSON to Zod Schema</span><span class="link-card__desc">Generate a Zod schema (and inferred type) from a JSON sample.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

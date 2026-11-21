@@ -1,0 +1,45 @@
+{
+  "id": "audio-recorder",
+  "seoTitle": "Voice Recorder: Record Audio to a File in Your Browser",
+  "metaDescription": "Record audio from your microphone with a timer and pause, play it back and download it as a WebM, Ogg or M4A file. Nothing is uploaded.",
+  "intro": "Capture a quick voice memo without installing an app.",
+  "why": "The recorder uses the browser's MediaRecorder to capture microphone audio, shows the elapsed time, allows pause and resume, plays the result and offers a download in the format the browser records (usually WebM/Opus, Ogg or M4A). The stream stops when you finish or leave the page.\n\nBrowsers choose the format, so the file type varies. Convert it with the audio converter if you need WAV.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Press Start recording and allow the microphone.",
+    "Pause or stop when done.",
+    "Play it back.",
+    "Download the recording."
+  ],
+  "faq": [
+    {
+      "q": "What format is the file?",
+      "a": "Whatever your browser supports; Chrome and Firefox use WebM or Ogg Opus, Safari uses MP4/AAC."
+    },
+    {
+      "q": "Is there a time limit?",
+      "a": "No fixed limit, but long recordings use memory."
+    },
+    {
+      "q": "Does it work offline?",
+      "a": "Yes, once the page is loaded."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "mic-test",
+    "audio-converter",
+    "audio-trimmer",
+    "webcam-recorder",
+    "screen-recorder",
+    "decibel-meter"
+  ],
+  "keywords": [
+    "voice recorder online",
+    "record audio browser",
+    "audio recorder",
+    "mic recorder"
+  ]
+}

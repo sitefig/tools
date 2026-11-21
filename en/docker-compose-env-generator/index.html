@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Docker Compose Environment Generator from .env | Free Tools</title>
+<meta name="description" content="Generate a compose environment block or env_file setup from a .env file, or extract variables from a docker-compose.yml into .env.example. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/docker-compose-env-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/docker-compose-env-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/docker-compose-env-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Docker Compose Environment Generator from .env | Free Tools">
+<meta property="og:description" content="Generate a compose environment block or env_file setup from a .env file, or extract variables from a docker-compose.yml into .env.example. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/docker-compose-env-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Docker Compose Environment Generator from .env | Free Tools">
+<meta name="twitter:description" content="Generate a compose environment block or env_file setup from a .env file, or extract variables from a docker-compose.yml into .env.example. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Docker Compose Environment Generator","url":"https://tools.sitefig.net/en/docker-compose-env-generator/","description":"Generate a compose environment block or env_file setup from a .env file, or extract variables from a docker-compose.yml into .env.example. Free.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose the mode: .env to compose environment, .env to compose env_file, or compose to .env.example.","Paste the .env file or the docker-compose.yml into the input box and set the service name.","Decide whether to use ${VAR:-default} interpolation, then copy the result."],"keywords":"docker compose environment generator, env to docker compose, compose env_file example, free docker env tool, docker compose to env example","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Dev Config","item":"https://tools.sitefig.net/en/#dev-config"},{"@type":"ListItem","position":3,"name":"Docker Compose Environment Generator","item":"https://tools.sitefig.net/en/docker-compose-env-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does interpolation add?","acceptedAnswer":{"@type":"Answer","text":"Each variable is written as ${NAME:-default}, using the value from your .env as the default. Compose then reads NAME from the environment or a .env file, and falls back to the default."}},{"@type":"Question","name":"What does the compose to .env.example mode collect?","acceptedAnswer":{"@type":"Answer","text":"Every ${VAR} and ${VAR:-default} reference, and the keys under environment, so the example file lists everything the stack can be configured with."}},{"@type":"Question","name":"Does it hide secrets in the default values?","acceptedAnswer":{"@type":"Answer","text":"No. Defaults are written as they appear in your .env. Use the .env sanitizer first if the values are real secrets."}},{"@type":"Question","name":"When should I use env_file instead?","acceptedAnswer":{"@type":"Answer","text":"env_file keeps the compose file short and loads every variable from a file. Explicit environment entries document what the service needs. Choose what suits your team."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#dev-config">Dev Config</a></li><li><span aria-current="page">Docker Compose Environment Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Docker Compose Environment Generator</h1>
+<p class="lede">Works both ways: from a .env file it writes a compose &quot;environment:&quot; block with ${VAR:-default} interpolation or an env_file entry, and from a docker-compose.yml it extracts variables into a .env.example.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="docker-compose-env-generator" data-module="devz2" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Compose files and .env files drift apart. A new variable gets added to one and forgotten in the other, and someone spends an hour finding out why a container starts without its password. This helper keeps them in step. Give it a .env and it writes the environment section for a service, with ${VAR:-default} interpolation so the file works with or without a local .env, or an env_file reference instead. Give it a docker-compose.yml and it collects every ${VAR}, ${VAR:-default} and environment key into a ready .env.example. Which direction applies is your choice in the mode menu. Everything is processed in your browser, so config containing passwords is not uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose the mode: .env to compose environment, .env to compose env_file, or compose to .env.example.</li><li>Paste the .env file or the docker-compose.yml into the input box and set the service name.</li><li>Decide whether to use ${VAR:-default} interpolation, then copy the result.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What does interpolation add?</summary><p>Each variable is written as ${NAME:-default}, using the value from your .env as the default. Compose then reads NAME from the environment or a .env file, and falls back to the default.</p></details>
+<details><summary>What does the compose to .env.example mode collect?</summary><p>Every ${VAR} and ${VAR:-default} reference, and the keys under environment, so the example file lists everything the stack can be configured with.</p></details>
+<details><summary>Does it hide secrets in the default values?</summary><p>No. Defaults are written as they appear in your .env. Use the .env sanitizer first if the values are real secrets.</p></details>
+<details><summary>When should I use env_file instead?</summary><p>env_file keeps the compose file short and loads every variable from a file. Explicit environment entries document what the service needs. Choose what suits your team.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/env-sanitizer/"><span class="link-card__title">.env Sanitizer (.env to .env.example)</span><span class="link-card__desc">Turn a real .env into a safe .env.example: values of secret-looking keys (PASSWORD, TOKEN, KEY, SECRET, DSN...) or secret-looking values (JWTs, AWS keys, long hex/base64, URLs with embedded passwords) are replaced by placeholders; comments, blank lines and order are preserved. Non-secret settings can be kept or blanked. Runs locally; nothing is uploaded.</span></a></li><li><a class="link-card" href="/en/docker-compose-generator/"><span class="link-card__title">Docker Compose Generator</span><span class="link-card__desc">Pick services: postgres, mysql, mariadb, redis, mongo, nginx, rabbitmq, memcached, elasticsearch, minio, mailhog.</span></a></li><li><a class="link-card" href="/en/docker-compose-formatter/"><span class="link-card__title">Docker Compose Formatter</span><span class="link-card__desc">Re-indent a compose file consistently (comments kept) and optionally order top-level and service keys the conventional way.</span></a></li><li><a class="link-card" href="/en/env-to-json/"><span class="link-card__title">.env to JSON</span><span class="link-card__desc">Parse a dotenv file (export prefix, quotes, escapes, comments, multi-line values, ${VAR} expansion) into a JSON object.</span></a></li><li><a class="link-card" href="/en/json-to-env/"><span class="link-card__title">JSON to .env</span><span class="link-card__desc">Flatten JSON into KEY=VALUE lines: nested keys are joined with underscores and upper-cased (database.host -&gt; DATABASE_HOST); arrays become indexed keys or one JSON/comma value. Values with spaces or special characters are quoted.</span></a></li><li><a class="link-card" href="/en/docker-run-to-compose/"><span class="link-card__title">docker run to docker-compose.yml</span><span class="link-card__desc">Convert one or more docker run commands (ports, volumes, env, network, restart, limits, labels...) into a docker-compose.yml with named volumes extracted.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+ "id": "rule-of-40-calculator",
+ "seoTitle": "Rule of 40 Calculator for SaaS Growth and Profit",
+ "metaDescription": "Add yearly revenue growth and a profit margin to see whether the total reaches 40. Free and private.",
+ "intro": "Adds growth rate and a profit margin to check the Rule of 40.",
+ "why": "The Rule of 40 says growth rate plus profit margin should be at least 40 percent for a healthy software company. It lets a company trade growth against profit.\n\nChoose one margin definition, such as EBITDA or free cash flow, and keep it the same over time. The rule is a rough guide, mostly used for scaled companies.",
+ "howTo": [
+  "Enter yearly revenue growth.",
+  "Enter the margin and pick its type.",
+  "Read the score."
+ ],
+ "faq": [
+  {
+   "q": "Which margin should I use?",
+   "a": "The one your investors use; just stay consistent."
+  },
+  {
+   "q": "Does it apply to early startups?",
+   "a": "Less so. Early on, growth matters more."
+  },
+  {
+   "q": "Is it a law?",
+   "a": "No, it is a rule of thumb."
+  }
+ ],
+ "related": [
+  "mrr-arr-calculator",
+  "churn-rate-calculator",
+  "saas-metrics-calculator",
+  "retention-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "rule of 40 calculator",
+  "saas rule of 40",
+  "growth plus margin"
+ ]
+}

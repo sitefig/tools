@@ -1,0 +1,47 @@
+{
+ "id": "html-to-jsx",
+ "seoTitle": "Free HTML to JSX Converter for React Online",
+ "metaDescription": "Free online HTML to JSX converter. Change class to className, for to htmlFor, style strings to objects and close void tags. Runs in your browser.",
+ "intro": "Convert HTML into valid JSX. It renames attributes such as class and for, turns style strings into objects, closes void tags and wraps multiple roots in a fragment.",
+ "why": "Copying a snippet from a design tool, a CSS framework example or an old template into React rarely works the first time. JSX is stricter than HTML: attributes are camelCased, class is reserved, void tags need a closing slash and there must be one root.\n\nThis tool applies those rules in one pass. It changes class to className and for to htmlFor, converts inline style into an object, camelCases attributes like tabindex and maxlength, self-closes elements such as input and br, and wraps several top-level elements in a fragment. Curly braces in text are escaped so they are not read as expressions. You can wrap the result in a component. Everything runs in your browser, and your markup is not uploaded.",
+ "howTo": [
+  "Paste your HTML into the input box.",
+  "Tick Wrap in component if you want a function component, and give it a name.",
+  "Choose the indent for the output.",
+  "Copy the JSX and check that any converted event handlers call functions that exist."
+ ],
+ "faq": [
+  {
+   "q": "What does it convert?",
+   "a": "class to className, for to htmlFor, inline style strings to objects, hyphenated and lowercase attributes to camelCase, void tags to self-closing form, and comments to JSX comments."
+  },
+  {
+   "q": "Does it convert onclick handlers?",
+   "a": "Yes, for common events. onclick=\"go()\" becomes onClick={() => { go() }}, so the inline code is wrapped in an arrow function. Check that the called functions exist in your component."
+  },
+  {
+   "q": "What happens with several root elements?",
+   "a": "They are wrapped in a fragment, written as an empty pair of angle brackets, because a JSX expression must have a single root."
+  },
+  {
+   "q": "Can I convert JSX back to HTML?",
+   "a": "Yes. Use the JSX to HTML converter in this collection to turn className, htmlFor and style objects back into plain HTML attributes and strings."
+  }
+ ],
+ "related": [
+  "svg-to-jsx",
+  "jsx-to-html",
+  "html-format",
+  "html-minify",
+  "css-format",
+  "react-hook-form-generator"
+ ],
+ "keywords": [
+  "html to jsx",
+  "html to jsx converter",
+  "convert html to react",
+  "free html to jsx",
+  "class to classname converter",
+  "html to react component"
+ ]
+}

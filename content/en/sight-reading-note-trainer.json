@@ -1,0 +1,45 @@
+{
+ "id": "sight-reading-note-trainer",
+ "seoTitle": "Sight Reading Trainer: Name the Note on the Staff",
+ "metaDescription": "Notes appear on a treble or bass staff; name them with buttons or letter keys and get your speed and mistakes. Free, no sign-up.",
+ "intro": "Shows random notes on a treble or bass staff for you to name, with an optional time limit and a summary of your speed and mistakes.",
+ "why": "Reading music quickly means knowing the lines and spaces without counting. A staff is drawn with one note at a time, and you answer with the letter, by button or by pressing A to G.\n\nA round has 20 notes. The summary gives your score, your average answer time and the notes you missed. The picture has a text description and the buttons are real controls, so the trainer can be used with a keyboard. Range is from two ledger lines below the staff to one above it. Nothing is stored.",
+ "howTo": [
+  "Choose the clef and a time limit.",
+  "Press Start 20 notes.",
+  "Name each note with a button or key A to G.",
+  "Read the summary."
+ ],
+ "faq": [
+  {
+   "q": "Does it use sharps and flats?",
+   "a": "No, only natural notes."
+  },
+  {
+   "q": "How does the time limit work?",
+   "a": "If you do not answer in time the note counts as missed."
+  },
+  {
+   "q": "Is it for screen reader users?",
+   "a": "The staff has a text label but the exercise itself is visual."
+  },
+  {
+   "q": "Is the clef symbol drawn?",
+   "a": "The clef is named in text; the symbol is not drawn."
+  }
+ ],
+ "related": [
+  "ear-training-intervals-chords-scales",
+  "virtual-piano-keyboard",
+  "chord-finder-guitar-ukulele",
+  "multiplication-table-trainer",
+  "flashcards-spaced-repetition",
+  "morse-code-koch-trainer"
+ ],
+ "keywords": [
+  "sight reading trainer",
+  "note reading practice",
+  "learn notes on staff",
+  "treble bass clef quiz"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "referrer-policy-explainer",
+ "seoTitle": "Referrer-Policy Explainer: What Referer Is Sent",
+ "metaDescription": "Pick a Referrer-Policy value and a URL and see what Referer a browser sends to same-origin, cross-origin and downgrade targets. Free.",
+ "intro": "Shows exactly what Referer a browser sends under each Referrer-Policy value, for same-origin, cross-origin and downgrade navigations.",
+ "why": "The Referer header tells the next site where a visitor came from. With a full URL it can leak paths and query strings such as tokens or search terms.\n\nPick a policy and enter a page URL and the tool shows what is sent in three cases, then compares all eight policy values side by side. It follows the W3C Referrer Policy rules for navigation links. Fragments and credentials are never sent. The default in current browsers is strict-origin-when-cross-origin.",
+ "howTo": [
+  "Enter the page URL you care about.",
+  "Choose a policy.",
+  "Read what each case sends.",
+  "Set the header or meta tag that fits."
+ ],
+ "faq": [
+  {
+   "q": "Which policy is a good default?",
+   "a": "strict-origin-when-cross-origin is the browser default and a sensible one. Use no-referrer or same-origin for sensitive pages."
+  },
+  {
+   "q": "Does it cover images and scripts?",
+   "a": "It models navigation links. Sub-resource requests follow similar rules with small differences."
+  },
+  {
+   "q": "Why is a downgrade special?",
+   "a": "Sending a full URL from HTTPS to HTTP could expose it on the network."
+  }
+ ],
+ "related": [
+  "security-headers-grader",
+  "permissions-policy-generator",
+  "hsts-header-generator",
+  "security-headers-generator",
+  "url-tracker-stripper",
+  "http-headers-analyzer"
+ ],
+ "keywords": [
+  "referrer policy",
+  "strict-origin-when-cross-origin",
+  "referer header privacy",
+  "referrer policy values"
+ ]
+}

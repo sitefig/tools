@@ -1,0 +1,45 @@
+{
+ "id": "random-date-generator",
+ "seoTitle": "Free Random Date Generator: Dates and Times in a Range",
+ "metaDescription": "Generate random dates and times between two dates in ISO, Unix, RFC 2822 and other formats. Weekdays only, sorted, no duplicates. Free, local.",
+ "intro": "Creates random dates or timestamps between a start and an end, in the format you need.",
+ "why": "Test data, seed files and demos need dates that vary but stay in range. Set a start and an end, choose a format, and get as many values as you want. All times are UTC.\n\nDate-only formats pick a random day, so every day in the range has the same chance. Time formats pick a random millisecond. You can skip weekends, sort the list, and avoid duplicates. The random source is the browser's cryptographic one, without modulo bias.",
+ "howTo": [
+  "Enter a start and end date.",
+  "Choose a format and a count.",
+  "Tick weekdays only, sorted or no duplicates if needed.",
+  "Copy the list."
+ ],
+ "faq": [
+  {
+   "q": "Is the end date included?",
+   "a": "Yes. A date-only end covers the whole day."
+  },
+  {
+   "q": "What time zone is used?",
+   "a": "UTC. Convert if you need local time."
+  },
+  {
+   "q": "Why does it say only some values fit?",
+   "a": "When duplicates are off or weekends are skipped, the range may hold fewer values than you asked for."
+  },
+  {
+   "q": "Can I get the same dates again?",
+   "a": "No. The values are random each time, with no seed."
+  }
+ ],
+ "related": [
+  "mock-data-generator",
+  "random-number-generator",
+  "date-difference",
+  "timestamp-converter",
+  "fake-person-generator",
+  "cron-generator"
+ ],
+ "keywords": [
+  "random date generator",
+  "random date between two dates",
+  "generate random timestamps",
+  "random date list"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "wide-to-long-reshaper",
+ "seoTitle": "Wide to Long Reshaper: Unpivot a Table and Back",
+ "metaDescription": "Stack columns such as one per year into name and value rows, keeping id columns, or spread long data back to wide. Free CSV tool.",
+ "intro": "Melts a wide table into long format or casts a long table back to wide.",
+ "why": "Charts, databases and statistics tools like long data: one row per observation. Spreadsheets often hold wide data with a column per year or month. Choose the identifier columns to keep and the rest are stacked into a name column and a value column.\n\nThe reverse mode needs a name column and a value column and creates one column per distinct name; two rows with the same identifiers and name are an error rather than a silent overwrite.",
+ "howTo": [
+  "Paste the CSV and list the identifier columns.",
+  "Choose wide to long or long to wide.",
+  "Name the new columns, or set the name and value columns for the reverse.",
+  "Copy or download the result."
+ ],
+ "faq": [
+  {
+   "q": "Which columns get stacked?",
+   "a": "All except the identifiers, unless you list columns to stack."
+  },
+  {
+   "q": "Are values converted?",
+   "a": "No, text is carried over unchanged."
+  },
+  {
+   "q": "What if long to wide has duplicates?",
+   "a": "You get an error naming the name."
+  },
+  {
+   "q": "Large output?",
+   "a": "Limited to 500000 rows."
+  }
+ ],
+ "related": [
+  "csv-transpose",
+  "pivot-table-builder",
+  "csv-column-extractor",
+  "sql-on-csv",
+  "csv-to-json",
+  "json-csv-grid-editor"
+ ],
+ "keywords": [
+  "unpivot csv",
+  "melt wide to long",
+  "reshape table online"
+ ]
+}

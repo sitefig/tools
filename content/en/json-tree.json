@@ -1,0 +1,47 @@
+{
+ "id": "json-tree",
+ "seoTitle": "Free JSON Tree Viewer & Explorer Online",
+ "metaDescription": "Free JSON tree viewer. Browse JSON as a collapsible tree, search keys and values, and click a key to copy its path. Works in your browser.",
+ "intro": "Explore JSON as a collapsible tree instead of a wall of text. Search keys and values, expand or collapse branches, and click a key to copy its path.",
+ "why": "Large JSON responses are hard to read even when formatted. You scroll through hundreds of lines just to find where a field lives or how deep it is nested. A tree view lets you collapse what you do not care about and look at the shape of the data first.\n\nThe search box finds keys and values, which helps when you know a customer id or an error code but not where it sits. Clicking a key copies its path, so you can drop it straight into code or a JSONPath query. This is useful when you are reading an unfamiliar API, debugging a webhook payload or writing a mapping. The document is parsed in your browser and is not uploaded.",
+ "howTo": [
+  "Paste your JSON into the input area.",
+  "Expand and collapse branches to move around the structure.",
+  "Type in the search box to find keys or values.",
+  "Click a key to copy its path for use in code or JSONPath."
+ ],
+ "faq": [
+  {
+   "q": "How do I get the path of a value?",
+   "a": "Click its key in the tree and the path is copied, for example $.address.city. You can then use it in your code, or test it in the JSONPath Tester."
+  },
+  {
+   "q": "Does the search look at keys and values?",
+   "a": "Yes, it matches both. That helps when you remember a value such as an id or an email but not the field name that holds it."
+  },
+  {
+   "q": "What if my JSON is invalid?",
+   "a": "The tree cannot be built, and you will see an error. Fix the syntax first. The JSON Validator shows the exact line and column of the problem."
+  },
+  {
+   "q": "Can it handle large documents?",
+   "a": "It works for typical API responses. Very large files make the browser build many elements, so they can become slow. Collapsing branches helps."
+  }
+ ],
+ "related": [
+  "json-format",
+  "jsonpath-tester",
+  "json-validate",
+  "json-size-analyzer",
+  "json-diff",
+  "json-pointer-tester"
+ ],
+ "keywords": [
+  "json tree viewer",
+  "json viewer online",
+  "json explorer",
+  "free json tree",
+  "collapsible json viewer",
+  "json path finder"
+ ]
+}

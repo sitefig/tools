@@ -1,0 +1,47 @@
+{
+ "id": "renovate-config-generator",
+ "seoTitle": "Free Renovate Config Generator (renovate.json)",
+ "metaDescription": "Free online renovate.json generator. Choose presets, schedule, timezone, automerge and grouping rules for dependency updates, with labels and reviewers.",
+ "intro": "Create a renovate.json with the recommended preset, a schedule and timezone, automerge for minor and patch updates, grouped updates, pinned GitHub Action digests and weekly lock file maintenance.",
+ "why": "Renovate keeps dependencies current, but out of the box it can open a large number of pull requests at awkward times. Most teams end up wanting the same few settings: a quiet schedule, minor and patch updates grouped into one pull request, safe updates merged automatically and a cap on open pull requests.\n\nTick the options you want and the tool writes valid JSON with the schema URL, the extends list and the packageRules that implement grouping and automerge. Automerge is limited to updates from versions that are not 0.x, because those can break in minor releases. Add labels, reviewers and a concurrency limit. Automerge only helps if your tests are good, since a merged update is only as safe as your CI. Nothing is uploaded.",
+ "howTo": [
+  "Choose whether to extend config:recommended and pin GitHub Action digests.",
+  "Pick a schedule and enter your timezone.",
+  "Tick automerge, grouping and lock file maintenance as you wish, then set labels, reviewers and the pull request limit.",
+  "Copy the JSON into renovate.json in your repository."
+ ],
+ "faq": [
+  {
+   "q": "Is automerge safe?",
+   "a": "It is as safe as your tests. The tool restricts automerge to minor and patch updates of packages already at version 1.0 or higher, but you still need passing CI and branch protection."
+  },
+  {
+   "q": "What does grouping do?",
+   "a": "It puts all minor and patch updates into a single pull request, which cuts noise. Major updates still arrive separately so you can review breaking changes."
+  },
+  {
+   "q": "What is pinning action digests?",
+   "a": "It replaces version tags in GitHub Actions workflows with commit hashes, which protects against a tag being moved to malicious code. Renovate then updates the hashes for you."
+  },
+  {
+   "q": "How is this different from Dependabot?",
+   "a": "Both open update pull requests. Renovate offers more grouping and configuration options. Use the Dependabot generator if you prefer GitHub's built-in tool."
+  }
+ ],
+ "related": [
+  "dependabot-config-generator",
+  "github-actions-generator",
+  "pre-commit-config-generator",
+  "package-json-generator",
+  "semver-calculator",
+  "commitlint-semantic-release-generator"
+ ],
+ "keywords": [
+  "renovate config generator",
+  "renovate.json generator",
+  "renovate bot configuration",
+  "free renovate tool",
+  "renovate automerge config",
+  "renovate schedule config"
+ ]
+}

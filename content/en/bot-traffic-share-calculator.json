@@ -1,0 +1,44 @@
+{
+ "id": "bot-traffic-share-calculator",
+ "seoTitle": "Bot Traffic Share Calculator: Human vs Search vs AI Bots",
+ "metaDescription": "Split an access log sample into likely human, search bot, AI bot and other bot traffic by requests and bytes. Free, in your browser.",
+ "intro": "Classifies each log request by its user-agent and shows the share of each class.",
+ "why": "Bots can be a large part of your traffic and bandwidth, and server logs usually show more of them than analytics does. Knowing the split helps you size rate limits and decide where to spend effort.\n\nPaste a combined-format log sample and get shares by request count and by bytes for AI bots, search engine bots, other bots and likely humans. The human figure is an upper bound because some bots pretend to be browsers.",
+ "howTo": [
+  "Paste log lines.",
+  "Read the class table.",
+  "Look at byte share for bandwidth impact.",
+  "Use the AI log analyzer for detail on AI bots."
+ ],
+ "faq": [
+  {
+   "q": "How are humans detected?",
+   "a": "Anything that does not look like a bot by its user-agent. Disguised bots count as human."
+  },
+  {
+   "q": "Is a short sample enough?",
+   "a": "It can mislead; use several hours or days."
+  },
+  {
+   "q": "Does it use IPs?",
+   "a": "No."
+  },
+  {
+   "q": "What counts as other bot?",
+   "a": "Generic tools and strings such as curl, python-requests, crawler or headless."
+  }
+ ],
+ "related": [
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer",
+  "robots-txt-compliance-log-checker",
+  "uptime-log-analyzer",
+  "antibot-waf-detector"
+ ],
+ "keywords": [
+  "bot traffic percentage",
+  "human vs bot traffic",
+  "bot traffic calculator",
+  "log bot share"
+ ]
+}

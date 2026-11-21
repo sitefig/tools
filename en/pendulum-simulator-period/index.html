@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pendulum Simulator: Simple and Double Pendulum, Exact Period | Free Tools</title>
+<meta name="description" content="Simulate a simple or double pendulum, plot the angles over time and compare the period with the small-angle formula. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/pendulum-simulator-period/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/pendulum-simulator-period/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/pendulum-simulator-period/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Pendulum Simulator: Simple and Double Pendulum, Exact Period | Free Tools">
+<meta property="og:description" content="Simulate a simple or double pendulum, plot the angles over time and compare the period with the small-angle formula. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/pendulum-simulator-period/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Pendulum Simulator: Simple and Double Pendulum, Exact Period | Free Tools">
+<meta name="twitter:description" content="Simulate a simple or double pendulum, plot the angles over time and compare the period with the small-angle formula. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Pendulum Simulator: Simple and Double Pendulum with Exact Period","url":"https://tools.sitefig.net/en/pendulum-simulator-period/","description":"Simulate a simple or double pendulum, plot the angles over time and compare the period with the small-angle formula. Free, runs in your browser.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose simple or double.","Enter lengths, masses, gravity and starting angles.","Set the duration (up to 120 seconds).","Read the period or angle plot and the energy drift."],"keywords":"pendulum simulator, double pendulum chaos, pendulum period calculator, simple pendulum large angle","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Math & Science","item":"https://tools.sitefig.net/en/#math-and-science"},{"@type":"ListItem","position":3,"name":"Pendulum Simulator: Simple and Double Pendulum with Exact Period","item":"https://tools.sitefig.net/en/pendulum-simulator-period/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is there damping?","acceptedAnswer":{"@type":"Answer","text":"No, the system is frictionless."}},{"@type":"Question","name":"Why does the double pendulum differ for tiny changes?","acceptedAnswer":{"@type":"Answer","text":"It is chaotic, so small differences grow quickly."}},{"@type":"Question","name":"What is the exact period formula?","acceptedAnswer":{"@type":"Answer","text":"T = 2 pi sqrt(L/g) / AGM(1, cos(theta0 / 2))."}},{"@type":"Question","name":"Can I watch it move?","acceptedAnswer":{"@type":"Answer","text":"No, you get the angle-versus-time plot."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#math-and-science">Math &amp; Science</a></li><li><span aria-current="page">Pendulum Simulator: Simple and Double Pendulum with Exact Period</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Pendulum Simulator: Simple and Double Pendulum with Exact Period</h1>
+<p class="lede">Simulates a simple or double pendulum with a fourth-order Runge-Kutta method, plots the angles over time and reports the period and energy drift.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="pendulum-simulator-period" data-module="new22"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>For small swings a pendulum takes 2 pi sqrt(L/g) seconds, but for a 60 degree swing it takes about 7 percent longer. The simple mode shows the small-angle period, the exact period from the arithmetic-geometric mean formula and the period measured from the simulation, which agree to many digits.</p>
+<p>The double pendulum mode uses the standard Lagrangian equations of motion, which were checked against an independent derivation with a computer algebra system and a high-order solver. It is chaotic: after ten to twenty seconds tiny changes in the inputs give a different path. The energy drift line shows how well the integrator conserves energy. There is no friction, and the result is a plot, not a live animation.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose simple or double.</li><li>Enter lengths, masses, gravity and starting angles.</li><li>Set the duration (up to 120 seconds).</li><li>Read the period or angle plot and the energy drift.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Is there damping?</summary><p>No, the system is frictionless.</p></details>
+<details><summary>Why does the double pendulum differ for tiny changes?</summary><p>It is chaotic, so small differences grow quickly.</p></details>
+<details><summary>What is the exact period formula?</summary><p>T = 2 pi sqrt(L/g) / AGM(1, cos(theta0 / 2)).</p></details>
+<details><summary>Can I watch it move?</summary><p>No, you get the angle-versus-time plot.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/projectile-motion-calculator/"><span class="link-card__title">Projectile Motion Calculator: Range, Height, Flight Time and Path</span><span class="link-card__desc">Set launch speed, angle and height for Earth, Moon or other planets and get range, maximum height, time of flight, impact speed and the path.</span></a></li><li><a class="link-card" href="/en/wave-interference-superposition/"><span class="link-card__title">Wave Interference Simulator: Superposition of Two Sine Waves</span><span class="link-card__desc">Set amplitude, frequency and phase of two waves and see each wave and their sum, with constructive or destructive interference and beats.</span></a></li><li><a class="link-card" href="/en/orbital-mechanics-nbody-sandbox/"><span class="link-card__title">Orbital Mechanics Sandbox: N-Body Gravity Simulation with Orbit Trails</span><span class="link-card__desc">Enter bodies with mass, position and velocity, and the tool integrates their mutual gravity and draws the orbit trails.</span></a></li><li><a class="link-card" href="/en/dc-circuit-solver-netlist/"><span class="link-card__title">DC Circuit Solver: Voltages, Currents and Power from a Netlist</span><span class="link-card__desc">Describe a circuit of resistors, voltage sources and current sources as a netlist and get every node voltage, branch current and power.</span></a></li><li><a class="link-card" href="/en/function-grapher-roots/"><span class="link-card__title">Function Grapher with Roots and Intersections</span><span class="link-card__desc">Plot one or more functions of x, with the roots and the points where two curves cross marked and listed.</span></a></li><li><a class="link-card" href="/en/scientific-calculator-degrees/"><span class="link-card__title">Scientific Calculator with Degrees and CODATA Constants</span><span class="link-card__desc">Evaluate full expressions with trig (degrees or radians), logs, factorials, variables and physical constants that show their NIST source.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

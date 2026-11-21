@@ -1,0 +1,39 @@
+{
+ "id": "dst-clock-change-finder",
+ "seoTitle": "Daylight Saving Time Change Finder for Any Time Zone and Year",
+ "metaDescription": "Find when clocks go forward or back in a time zone and year, with exact times and UTC offsets. Free.",
+ "intro": "Finds each clock change in an IANA time zone for a year, with the exact moment, local time before and after and the offsets.",
+ "why": "Daylight saving dates differ by country and change by law. Enter a zone such as Europe/Brussels and a year and get the exact moments.\n\nIt reads your browser's time zone database and finds each change by bisection. Checked against known 2026 dates for Brussels and New York. Newer rule changes may be missing in old browsers.",
+ "howTo": [
+  "Enter an IANA time zone name.",
+  "Enter a year.",
+  "Read the changes."
+ ],
+ "faq": [
+  {
+   "q": "What if there is no result?",
+   "a": "The zone has no clock change that year."
+  },
+  {
+   "q": "How exact is it?",
+   "a": "To the second, as given by the browser data."
+  },
+  {
+   "q": "Can it show future years?",
+   "a": "Yes, using current rules, which may change."
+  }
+ ],
+ "related": [
+  "timezone-converter",
+  "timezone-meeting-planner",
+  "world-clock",
+  "cron-timezone-converter",
+  "email-send-time-zone-planner",
+  "sunrise-sunset-calculator"
+ ],
+ "keywords": [
+  "daylight saving dates",
+  "when do clocks change",
+  "dst change finder"
+ ]
+}

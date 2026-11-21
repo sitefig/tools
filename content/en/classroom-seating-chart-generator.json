@@ -1,0 +1,45 @@
+{
+ "id": "classroom-seating-chart-generator",
+ "seoTitle": "Classroom Seating Chart Generator: Random and Printable",
+ "metaDescription": "Paste a class list, set desks per row and aisles, and get a random seating plan with optional front-row students. Free, nothing uploaded.",
+ "intro": "Shuffles a list of names into a rows-and-desks seating plan, with optional aisles and students who must sit in the front row.",
+ "why": "A fresh seating plan takes a minute: paste the names, choose how many desks are in a row, and the chart appears with the front of the class at the top. Put an exclamation mark before a name to seat that student in the front row.\n\nThe shuffle is seeded, so the same seed gives the same plan and a new seed gives a new one. Empty desks are placed in the back row. The names stay on your device, which matters for a class list. Print the chart from your browser.",
+ "howTo": [
+  "Paste one name per line; start a name with ! for the front row.",
+  "Set desks per row and the aisle spacing.",
+  "Change the seed to shuffle again.",
+  "Print the chart."
+ ],
+ "faq": [
+  {
+   "q": "Is the class list uploaded?",
+   "a": "No. It stays in your browser."
+  },
+  {
+   "q": "Can I drag students to seats?",
+   "a": "No, change the seed or edit the list."
+  },
+  {
+   "q": "How many students?",
+   "a": "Up to 120."
+  },
+  {
+   "q": "Can I keep two students apart?",
+   "a": "Not directly; reshuffle until you like the result."
+  }
+ ],
+ "related": [
+  "random-team-splitter",
+  "list-shuffler",
+  "raffle-picker",
+  "word-search-puzzle-maker",
+  "math-worksheet-generator",
+  "decision-wheel"
+ ],
+ "keywords": [
+  "seating chart generator",
+  "random seating plan",
+  "classroom seating chart",
+  "shuffle students into seats"
+ ]
+}

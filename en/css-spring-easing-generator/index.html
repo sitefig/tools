@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CSS Spring Easing Generator (linear() Function) | Free Tools</title>
+<meta name="description" content="Turn spring physics (mass, stiffness, damping, velocity) into a CSS linear() easing and a matching duration, with damping ratio and overshoot.">
+<link rel="canonical" href="https://tools.sitefig.net/en/css-spring-easing-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/css-spring-easing-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/css-spring-easing-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="CSS Spring Easing Generator (linear() Function) | Free Tools">
+<meta property="og:description" content="Turn spring physics (mass, stiffness, damping, velocity) into a CSS linear() easing and a matching duration, with damping ratio and overshoot.">
+<meta property="og:url" content="https://tools.sitefig.net/en/css-spring-easing-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CSS Spring Easing Generator (linear() Function) | Free Tools">
+<meta name="twitter:description" content="Turn spring physics (mass, stiffness, damping, velocity) into a CSS linear() easing and a matching duration, with damping ratio and overshoot.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"CSS Spring Easing Generator (linear() Function)","url":"https://tools.sitefig.net/en/css-spring-easing-generator/","description":"Turn spring physics (mass, stiffness, damping, velocity) into a CSS linear() easing and a matching duration, with damping ratio and overshoot.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Set mass, stiffness and damping (170 and 14 is a lively default).","Choose how many sample points.","Copy the transition line.","Add a fallback easing before it."],"keywords":"css spring animation, linear() easing, spring easing css, css bounce animation","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"CSS","item":"https://tools.sitefig.net/en/#css"},{"@type":"ListItem","position":3,"name":"CSS Spring Easing Generator (linear() Function)","item":"https://tools.sitefig.net/en/css-spring-easing-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What do the parameters mean?","acceptedAnswer":{"@type":"Answer","text":"Stiffness pulls toward the target, damping slows oscillation, mass makes it more sluggish."}},{"@type":"Question","name":"How many points do I need?","acceptedAnswer":{"@type":"Answer","text":"30 to 60 gives a smooth curve; more bloats the CSS."}},{"@type":"Question","name":"Can I get no bounce?","acceptedAnswer":{"@type":"Answer","text":"Raise damping until the damping ratio is 1 or more."}},{"@type":"Question","name":"Is my data sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is processed in your browser, and the page makes no network requests with your input."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#css">CSS</a></li><li><span aria-current="page">CSS Spring Easing Generator (linear() Function)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>CSS Spring Easing Generator (linear() Function)</h1>
+<p class="lede">Get bouncy, natural animations in plain CSS without a JavaScript animation library.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="css-spring-easing-generator" data-module="gap2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>The generator solves the damped spring equation exactly (underdamped, critically damped and overdamped cases), samples it at the number of points you choose, finds the time to settle within 0.1% and writes a linear(...) easing and a transition ready to paste. The curve was compared with a numerical integration of the spring for several parameter sets.</p>
+<p>linear() with many stops is supported in current browsers; older ones ignore the declaration, so keep a plain ease-out before it. Large overshoot on opacity values is clamped by the browser, so use springs for transforms.</p>
+<p>No data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Set mass, stiffness and damping (170 and 14 is a lively default).</li><li>Choose how many sample points.</li><li>Copy the transition line.</li><li>Add a fallback easing before it.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What do the parameters mean?</summary><p>Stiffness pulls toward the target, damping slows oscillation, mass makes it more sluggish.</p></details>
+<details><summary>How many points do I need?</summary><p>30 to 60 gives a smooth curve; more bloats the CSS.</p></details>
+<details><summary>Can I get no bounce?</summary><p>Raise damping until the damping ratio is 1 or more.</p></details>
+<details><summary>Is my data sent anywhere?</summary><p>No. Everything is processed in your browser, and the page makes no network requests with your input.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/css-cubic-bezier/"><span class="link-card__title">CSS cubic-bezier() Easing Generator</span><span class="link-card__desc">Pick a preset (CSS keywords and the easings.net set) or enter control points to get cubic-bezier(x1, y1, x2, y2) with ready CSS for transition, animation, Tailwind and the Web Animations API, a sampled linear() approximation for modern browsers, and an SVG curve plus a looping animation preview. x values must be between 0 and 1; y may overshoot.</span></a></li><li><a class="link-card" href="/en/css-animation-generator/"><span class="link-card__title">CSS Animation Generator</span><span class="link-card__desc">Keyframe presets with duration, easing and iteration controls, live preview.</span></a></li><li><a class="link-card" href="/en/css-scroll-driven-animation-generator/"><span class="link-card__title">CSS Scroll-Driven Animation Generator</span><span class="link-card__desc">Generate CSS for scroll progress bars, reveal-on-scroll and parallax using animation-timeline: scroll() and view(), with a fallback for browsers without support.</span></a></li><li><a class="link-card" href="/en/css-view-transition-generator/"><span class="link-card__title">CSS View Transitions Generator</span><span class="link-card__desc">Generate CSS and JavaScript for same-document view transitions: cross-fade, slide or morph of named elements, with reduced-motion handling.</span></a></li><li><a class="link-card" href="/en/css-clamp-generator/"><span class="link-card__title">CSS clamp() Fluid Value Generator</span><span class="link-card__desc">Compute a fluid clamp(min, preferred, max) that scales linearly between two viewport widths, in rem with a vw slope.</span></a></li><li><a class="link-card" href="/en/css-loader-generator/"><span class="link-card__title">CSS Loader Generator</span><span class="link-card__desc">Pure-CSS spinners, dots, bars and pulses: HTML + CSS to copy, with preview.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

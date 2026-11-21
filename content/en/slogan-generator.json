@@ -1,0 +1,45 @@
+{
+ "id": "slogan-generator",
+ "seoTitle": "Slogan and Tagline Generator from Brand and Benefit",
+ "metaDescription": "Get tagline ideas from your brand name and a benefit word using common slogan patterns. Template based, free, runs in your browser.",
+ "intro": "Enter a brand name and a benefit to get a list of short slogans from common patterns.",
+ "why": "Slogans repeat a handful of shapes: a promise, a contrast, a command. Seeing your words in each shape speeds up choosing a direction.\n\nThis is a template list, so most lines need rewriting. Search any line in quotes and check trademarks before use. Nothing is uploaded.",
+ "howTo": [
+  "Enter the brand and a benefit noun.",
+  "Optionally add an action verb and audience.",
+  "Scan and pick a few lines.",
+  "Rewrite and test them."
+ ],
+ "faq": [
+  {
+   "q": "Does it use AI?",
+   "a": "No, templates only."
+  },
+  {
+   "q": "Are slogans unique?",
+   "a": "No, check search and trademark databases."
+  },
+  {
+   "q": "Can I add a verb?",
+   "a": "Yes, it adds action-style lines."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "value-proposition-generator",
+  "newsletter-name-generator",
+  "headline-generator",
+  "title-case-headline-analyzer",
+  "ad-copy-counter",
+  "user-persona-template"
+ ],
+ "keywords": [
+  "slogan generator",
+  "tagline generator",
+  "brand slogan ideas",
+  "tagline ideas"
+ ]
+}

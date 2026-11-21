@@ -1,0 +1,46 @@
+{
+ "id": "body-fat-navy",
+ "seoTitle": "Free Body Fat Calculator: US Navy Tape Method",
+ "metaDescription": "Estimate body fat percentage from height, neck, waist and hip measurements in centimetres using the US Navy method. Free, private, runs in your browser.",
+ "intro": "Enter your sex, height and tape measurements in centimetres. The tool applies the US Navy circumference formula and returns an estimated body fat percentage.",
+ "why": "Scales and BMI say nothing about what your weight is made of. Body fat percentage is a more useful measure when you are cutting, bulking or just tracking change, but proper tests such as DEXA scans are costly. The US Navy method estimates it from a tape measure: neck and waist for men, with hips added for women, plus height. It is cheap and repeatable, which makes it good for watching the trend, though not precise for any one reading. This calculator uses centimetres and shows the formula it applied. Measure at the same time of day, with the tape level and snug but not squeezing. It is an estimate, not medical advice, and your measurements stay in your browser.",
+ "howTo": [
+  "Choose your sex and enter your height in centimetres.",
+  "Enter your neck and waist (at the navel) measurements in centimetres, plus hips if you are female.",
+  "Read the estimated body fat percentage."
+ ],
+ "faq": [
+  {
+   "q": "Where should I measure?",
+   "a": "Neck just below the larynx, waist at the navel (relaxed, after breathing out), and for women the hips at the widest point. Keep the tape level and take each reading twice."
+  },
+  {
+   "q": "Why does it say to check my measurements?",
+   "a": "The formula takes a logarithm of waist minus neck, or waist plus hip minus neck. If the waist is not larger than the neck, the calculation is not possible and the tool shows an error."
+  },
+  {
+   "q": "How accurate is the Navy method?",
+   "a": "It is a population estimate that can be a few percentage points off for an individual. It is more useful for tracking change over weeks than for a single exact figure."
+  },
+  {
+   "q": "Do men need to enter hip?",
+   "a": "No. The hip value is used only in the female formula. The default value is ignored for men."
+  }
+ ],
+ "related": [
+  "bmi-calculator",
+  "bmr-tdee",
+  "ideal-weight",
+  "macro-calculator",
+  "heart-rate-zones",
+  "water-intake"
+ ],
+ "keywords": [
+  "body fat calculator",
+  "us navy body fat calculator",
+  "free body fat calculator",
+  "body fat percentage from measurements",
+  "navy method body fat",
+  "tape measure body fat"
+ ]
+}

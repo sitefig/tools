@@ -1,0 +1,46 @@
+{
+ "id": "pdf-thumbnail-sheet",
+ "seoTitle": "Free PDF Thumbnail Sheet & Contact Sheet Maker",
+ "metaDescription": "Turn the pages of a PDF into one contact sheet image with page numbers. Free, runs in your browser and nothing is uploaded.",
+ "intro": "Render the pages of a PDF as small thumbnails on a single image, each labelled with its page number. Choose columns, thumbnail width and format.",
+ "why": "A thumbnail sheet lets you see an entire document at a glance. Designers use one to review a brochure layout, editors to spot a page that is out of order, and anyone sending feedback can say \"see page 14\" with a picture to point at. Opening a 60-page PDF and scrolling through it is slow, and exporting each page by hand is worse.\n\nThis tool renders the pages you select, scales them to a fixed width and arranges them in a grid on one PNG, JPEG or WebP. Because the PDF is processed locally, you can use it on drafts and client files without handing them to a third-party service.",
+ "howTo": [
+  "Select a PDF file.",
+  "Leave pages blank for the whole document, or enter a range such as 1-12.",
+  "Set the number of columns, the thumbnail width in pixels and the sheet background colour.",
+  "Choose PNG, JPEG or WebP, run the tool and download the sheet."
+ ],
+ "faq": [
+  {
+   "q": "How many pages fit on one sheet?",
+   "a": "Up to 200 pages per sheet. Columns can be 1 to 12 and thumbnails 60 to 800 pixels wide. A sheet with many pages at wide thumbnails becomes a very large image, so lower the width for long documents."
+  },
+  {
+   "q": "Are the page numbers real PDF page numbers?",
+   "a": "They are the position of the page in the file, starting at 1, not any number printed on the page. If you filter by range, each thumbnail keeps its original position number."
+  },
+  {
+   "q": "Why are some images missing in the thumbnails?",
+   "a": "The renderer cannot draw JBIG2, JPEG2000 or CCITT images, so they show as grey boxes. Encrypted PDFs are not supported either. Fonts that are not embedded use system fonts, so text may look slightly different."
+  },
+  {
+   "q": "Does it upload my document?",
+   "a": "No. The PDF is read and drawn in your browser, and the sheet is created on your device. The file is never sent to a server."
+  }
+ ],
+ "related": [
+  "pdf-to-image",
+  "pdf-reorder-pages",
+  "pdf-info",
+  "pdf-page-count-and-sizes",
+  "pdf-extract-pages",
+  "pdf-delete-pages"
+ ],
+ "keywords": [
+  "pdf contact sheet",
+  "pdf thumbnail sheet",
+  "pdf pages overview image",
+  "pdf thumbnails online free",
+  "pdf to contact sheet"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "business-name-idea-generator",
+ "seoTitle": "Business Name Idea Generator From Your Keywords",
+ "metaDescription": "Turn one to three keywords into dozens of business name ideas with prefixes, suffixes and blends. Does not check domains or trademarks.",
+ "intro": "Combines your keywords with common prefixes, suffixes and blends into a list of name ideas.",
+ "why": "A list of options is a starting point. Reading dozens of combinations helps you see which sound you like, even when the final name is something different.\n\nThe list is deterministic, so the same keywords give the same list. The tool does not check domain names, trademarks, social handles or meaning in other languages, and a catchy name may already be taken. Do those checks before you commit.",
+ "howTo": [
+  "Enter one to three keywords, one per line.",
+  "Set the longest name you want.",
+  "Scan the list and shortlist favourites."
+ ],
+ "faq": [
+  {
+   "q": "Is the name available?",
+   "a": "Unknown. The tool does not check domains or trademarks."
+  },
+  {
+   "q": "Why are results the same each time?",
+   "a": "To keep it shareable and testable. Change the keywords to get new ideas."
+  },
+  {
+   "q": "Does it use AI?",
+   "a": "No. It uses fixed word lists and rules."
+  }
+ ],
+ "related": [
+  "sku-code-generator",
+  "gtin-check-digit-calculator",
+  "coupon-code-generator",
+  "barcode-generator",
+  "check-digit-tool",
+  "profit-margin"
+ ],
+ "keywords": [
+  "business name generator",
+  "name ideas from keywords",
+  "startup name generator"
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DNS Answer Comparer: Compare Two dig Results After a DNS Change | Free Tools</title>
+<meta name="description" content="Paste dig or nslookup answers from two resolvers or from before and after a change. See which records match, differ and have different TTLs.">
+<link rel="canonical" href="https://tools.sitefig.net/en/dns-answer-comparer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/dns-answer-comparer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/dns-answer-comparer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="DNS Answer Comparer: Compare Two dig Results After a DNS Change | Free Tools">
+<meta property="og:description" content="Paste dig or nslookup answers from two resolvers or from before and after a change. See which records match, differ and have different TTLs.">
+<meta property="og:url" content="https://tools.sitefig.net/en/dns-answer-comparer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DNS Answer Comparer: Compare Two dig Results After a DNS Change | Free Tools">
+<meta name="twitter:description" content="Paste dig or nslookup answers from two resolvers or from before and after a change. See which records match, differ and have different TTLs.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"DNS Answer Comparer: Compare Two Resolver Results After a Change","url":"https://tools.sitefig.net/en/dns-answer-comparer/","description":"Paste dig or nslookup answers from two resolvers or from before and after a change. See which records match, differ and have different TTLs.","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Run dig against resolver A and paste the answer in the first box.","Do the same for resolver B.","Read the verdict and the lists.","Wait for the TTL to pass and compare again."],"keywords":"dns propagation check, compare dig output, dns diff, dns records changed","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SEO – Technical","item":"https://tools.sitefig.net/en/#seo-technical"},{"@type":"ListItem","position":3,"name":"DNS Answer Comparer: Compare Two Resolver Results After a Change","item":"https://tools.sitefig.net/en/dns-answer-comparer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which input formats work?","acceptedAnswer":{"@type":"Answer","text":"Full dig answer lines (name TTL IN TYPE value), lines without TTL, and bare TYPE value lines."}},{"@type":"Question","name":"Why do TTLs differ?","acceptedAnswer":{"@type":"Answer","text":"A resolver that cached the record earlier shows the remaining time, so the numbers count down."}},{"@type":"Question","name":"Does it query DNS?","acceptedAnswer":{"@type":"Answer","text":"No. A web page cannot send DNS queries. You paste results you got elsewhere."}},{"@type":"Question","name":"What does a difference mean?","acceptedAnswer":{"@type":"Answer","text":"Usually propagation in progress. It can also be load-balanced or geo-aware DNS."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#seo-technical">SEO – Technical</a></li><li><span aria-current="page">DNS Answer Comparer: Compare Two Resolver Results After a Change</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>DNS Answer Comparer: Compare Two Resolver Results After a Change</h1>
+<p class="lede">Compares two sets of DNS records and shows what is the same, what is only in one answer and where the TTL differs. Useful after a DNS change or migration.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="dns-answer-comparer" data-module="new04"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>After a DNS change, different resolvers answer differently until caches expire. Running dig against two resolvers and comparing by eye is slow and error-prone, especially with several records.</p>
+<p>This page does not look anything up. Run dig yourself, for example dig @8.8.8.8 example.com A and dig @1.1.1.1 example.com A, and paste both. Records are compared as sets, ignoring order and a trailing dot. Round-robin or geo DNS can differ legitimately.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Run dig against resolver A and paste the answer in the first box.</li><li>Do the same for resolver B.</li><li>Read the verdict and the lists.</li><li>Wait for the TTL to pass and compare again.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which input formats work?</summary><p>Full dig answer lines (name TTL IN TYPE value), lines without TTL, and bare TYPE value lines.</p></details>
+<details><summary>Why do TTLs differ?</summary><p>A resolver that cached the record earlier shows the remaining time, so the numbers count down.</p></details>
+<details><summary>Does it query DNS?</summary><p>No. A web page cannot send DNS queries. You paste results you got elsewhere.</p></details>
+<details><summary>What does a difference mean?</summary><p>Usually propagation in progress. It can also be load-balanced or geo-aware DNS.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/dig-nslookup-output-analyzer/"><span class="link-card__title">dig and nslookup Output Analyzer (MX, NS, TXT, SPF, DMARC, DKIM)</span><span class="link-card__desc">Paste the output of dig or nslookup and get the records grouped and checked: SPF lookup count and policy, DMARC policy, DKIM key, MX order, NS count, CNAME clashes, TTLs, DNSSEC and error status.</span></a></li><li><a class="link-card" href="/en/dns-resolution-simulator/"><span class="link-card__title">DNS Resolution Simulator (Zone Records, Offline)</span><span class="link-card__desc">Paste DNS records and ask a question (name and type): see what an authoritative server would answer, including CNAME chains, wildcards, NODATA vs NXDOMAIN, delegations and glue. Nothing is looked up; it simulates your own records.</span></a></li><li><a class="link-card" href="/en/whois-record-parser/"><span class="link-card__title">WHOIS Record Parser (Domain and IP, Expiry and Status Explained)</span><span class="link-card__desc">Paste the text from a WHOIS or RDAP lookup and get a clean summary: registrar, dates, domain age, days to expiry, name servers, and what each EPP status code means.</span></a></li><li><a class="link-card" href="/en/dkim-record-generator/"><span class="link-card__title">DKIM Record Generator</span><span class="link-card__desc">Make a DKIM DNS TXT record from a public key, or generate a fresh RSA key pair in your browser.</span></a></li><li><a class="link-card" href="/en/domain-migration-checklist/"><span class="link-card__title">Domain Migration SEO Checklist: Redirects, Search Console, Sitemaps</span><span class="link-card__desc">Tick off a site move step by step: preparation, URL mapping, redirects, Change of Address and follow-up. Progress is saved in this browser only.</span></a></li><li><a class="link-card" href="/en/subdomain-list-analyzer/"><span class="link-card__title">Subdomain List Analyzer (Dedupe, Group, Flag Risky Names)</span><span class="link-card__desc">Paste hostnames from crt.sh, Certificate Transparency, amass, subfinder or a zone file. Dedupe, group by domain, count levels, and flag admin, staging, VPN, CI and backup names for review.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

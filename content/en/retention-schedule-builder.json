@@ -1,0 +1,41 @@
+{
+ "id": "retention-schedule-builder",
+ "seoTitle": "Data Retention Schedule Builder (Table with Justifications)",
+ "metaDescription": "Build a data retention schedule table from categories, periods, triggers and justifications. Flags vague periods and gaps. Free and local.",
+ "intro": "Formats a retention schedule as a Markdown table or CSV and flags empty justifications, missing periods and open-ended wording.",
+ "why": "GDPR Art. 5(1)(e) says personal data must not be kept longer than necessary. In practice that needs a written schedule: what you keep, for how long, from when, why, and how it is disposed of.\n\nPaste one category per line and the tool builds the table. It flags rows with no justification, no period, or wording like \"as long as necessary\" that does not give a fixed period. It does not know legal retention periods: those depend on the country and the type of record, so each one needs checking.",
+ "howTo": [
+  "Write one category per line: category | period | starts when | justification | disposal.",
+  "Choose Markdown or CSV.",
+  "Read the review list.",
+  "Check each period against the law that applies and save the table."
+ ],
+ "faq": [
+  {
+   "q": "Does it know legal retention periods?",
+   "a": "No. You supply them. It only formats and checks for gaps."
+  },
+  {
+   "q": "What is a trigger?",
+   "a": "The event that starts the clock, such as the end of a contract or of a financial year."
+  },
+  {
+   "q": "Can I import it into a spreadsheet?",
+   "a": "Yes. Choose CSV."
+  }
+ ],
+ "related": [
+  "ropa-builder",
+  "dpia-screening",
+  "lawful-basis-selector",
+  "gdpr-checklist",
+  "data-deletion-request-letter",
+  "privacy-policy-generator"
+ ],
+ "keywords": [
+  "data retention schedule",
+  "retention policy template",
+  "gdpr storage limitation",
+  "records retention table"
+ ]
+}

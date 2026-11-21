@@ -1,0 +1,45 @@
+{
+ "id": "resource-crawl-report",
+ "seoTitle": "Resource Crawl Report: How Bots Fetch CSS, JS, Images and Fonts",
+ "metaDescription": "See how often crawlers fetch pages, CSS, JavaScript, images, fonts and data files, with the errors each type received. Free log analysis.",
+ "intro": "Counts bot requests by file type, with distinct files, error counts and the resources that returned errors.",
+ "why": "To render a page, a crawler needs its CSS, JavaScript and often its images. If those requests fail, the crawler may see a broken page. If they dominate the log, your pages may load many files that bots keep refetching.\n\nThe type comes from the file extension in the URL. URLs without an extension count as pages. An access log cannot show whether a resource is blocked by robots.txt, so test that separately.",
+ "howTo": [
+  "Paste access log lines.",
+  "Choose the bots to count.",
+  "Read the table of types and the error share.",
+  "Fix the resources listed under errors, then check robots.txt for blocked folders."
+ ],
+ "faq": [
+  {
+   "q": "Why do bots fetch CSS and JavaScript?",
+   "a": "Rendering search engines load them to see the page as a browser does."
+  },
+  {
+   "q": "Is a high resource share bad?",
+   "a": "Not by itself. Look at errors and at files that are fetched over and over."
+  },
+  {
+   "q": "Does the report show blocked files?",
+   "a": "No. Use the blocked resources checker with your robots.txt."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  }
+ ],
+ "related": [
+  "robots-blocked-resources-checker",
+  "googlebot-crawl-budget-analyzer",
+  "bot-status-code-report",
+  "bot-response-time-report",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer"
+ ],
+ "keywords": [
+  "bot resource crawl report",
+  "googlebot css js requests log",
+  "crawled resources by file type",
+  "rendering resources errors logs"
+ ]
+}

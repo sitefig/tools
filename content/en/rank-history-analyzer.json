@@ -1,0 +1,38 @@
+{
+ "id": "rank-history-analyzer",
+ "seoTitle": "Keyword Rank History Analyzer: Movers, Volatility, Top-10 Share",
+ "metaDescription": "Paste rank tracker data (date, keyword, position) and see change, best, worst, volatility, top-3 and top-10 entries and exits, and turbulent days.",
+ "intro": "Analyse rank tracking exports: who gained or lost, how volatile each keyword is and when everything moved at once.",
+ "why": "Rank trackers export long tables that hide the story. This tool takes either a long format (date, keyword, position) or a wide one (keyword and one column per date) and reports per-keyword first, last, change, best, worst and standard deviation, the keywords that entered or left the top 3 and top 10, the top-10 share at start and end, and the average absolute position change per period, where spikes often match algorithm updates.\n\nRank data is sampled from one location and device, so day-to-day noise of a few places is normal. Compare spikes with known update dates before drawing conclusions.",
+ "howTo": [
+  "Export your tracker data as CSV.",
+  "Paste it (long or wide format).",
+  "Review movers, volatility and the turbulence table."
+ ],
+ "faq": [
+  {
+   "q": "What is volatility here?",
+   "a": "The standard deviation of the positions over the period; higher means a less stable ranking."
+  },
+  {
+   "q": "Can it tell me about the whole SERP?",
+   "a": "No. It sees only the positions of your own tracked keywords."
+  },
+  {
+   "q": "Which formats are accepted?",
+   "a": "date,keyword,position rows, or keyword plus date columns."
+  }
+ ],
+ "related": [
+  "gsc-performance-analyzer",
+  "trends-csv-analyzer",
+  "keyword-cannibalization-detector",
+  "keyword-clusterer",
+  "content-gap"
+ ],
+ "keywords": [
+  "rank tracker analysis",
+  "serp volatility",
+  "keyword position changes"
+ ]
+}

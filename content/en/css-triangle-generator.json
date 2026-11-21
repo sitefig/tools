@@ -1,0 +1,47 @@
+{
+ "id": "css-triangle-generator",
+ "seoTitle": "Free CSS Triangle Generator - 8 Directions",
+ "metaDescription": "Free CSS triangle generator. Create triangles in eight directions with the border technique, plus a clip-path alternative and live preview.",
+ "intro": "Make a CSS triangle in eight directions with the classic border technique, and get a clip-path alternative. Set width, height and colour and see a live preview.",
+ "why": "Tooltips, dropdown arrows and speech bubble tails are often drawn with a zero-size element and clever borders. The trick works, but the border values depend on direction and are hard to remember: which sides are transparent, which carries the colour, and what half the width is.\n\nChoose a direction, a width, a height and a colour, and the tool writes the exact declarations. The eight options cover the four arrow directions and the four corner triangles. You also get a clip-path polygon version, which is easier to reason about, can hold a background or gradient, and works for content. The border version has the smallest footprint and is supported everywhere. Preview it in the page, then copy the CSS. Nothing is uploaded.",
+ "howTo": [
+  "Choose a direction, such as up, down or top-left.",
+  "Set the width and height in pixels and pick a colour.",
+  "Check the preview.",
+  "Copy the border technique CSS or the clip-path version."
+ ],
+ "faq": [
+  {
+   "q": "Which version should I use?",
+   "a": "The border technique is tiny and works in every browser. clip-path is easier to adjust, allows gradients and can clip real content, but it clips box shadows and borders too."
+  },
+  {
+   "q": "Why is the element width 0?",
+   "a": "The triangle is made from the element's borders, so the element itself has no width or height. The border sizes define the shape and the visible area."
+  },
+  {
+   "q": "How do I add a border or shadow to the triangle?",
+   "a": "The border trick cannot easily have an outline. Use a second, slightly larger triangle behind it, or use clip-path on a wrapper with a filter drop-shadow."
+  },
+  {
+   "q": "How do I use it for a tooltip arrow?",
+   "a": "Put it in a ::before or ::after pseudo-element of the tooltip, set position absolute and place it at the edge of the box with top, left or bottom offsets."
+  }
+ ],
+ "related": [
+  "css-speech-bubble-generator",
+  "clip-path-generator",
+  "css-ribbon-banner-generator",
+  "border-radius-generator",
+  "box-shadow-generator",
+  "css-blob-generator"
+ ],
+ "keywords": [
+  "css triangle generator",
+  "css arrow generator",
+  "css triangle border trick",
+  "free css triangle tool",
+  "css triangle clip-path",
+  "make triangle with css"
+ ]
+}

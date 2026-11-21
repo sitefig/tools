@@ -1,0 +1,45 @@
+{
+ "id": "sticky-notes-board-local",
+ "seoTitle": "Sticky Notes Board Saved in Your Browser",
+ "metaDescription": "Add colored notes, type on them, change colors and reorder with buttons. Kept in your browser, works without storage. Free.",
+ "intro": "A board of colored sticky notes that you type on and reorder with buttons, kept in this browser and also usable without storage.",
+ "why": "Short reminders fit on small notes. Add a note, type, choose yellow, pink, blue or green, and move it earlier or later in the board.\n\nNotes are kept in this browser only. They are ordered with buttons rather than dragged to any spot, which keeps the board usable with a keyboard and on touch screens. If storage is blocked the board still works but is forgotten when you close the page.",
+ "howTo": [
+  "Press Add a note and type.",
+  "Choose a color for each note.",
+  "Use the < and > buttons to move a note.",
+  "Delete notes you no longer need."
+ ],
+ "faq": [
+  {
+   "q": "Can I drag notes anywhere?",
+   "a": "No, they are ordered with buttons."
+  },
+  {
+   "q": "Where are the notes stored?",
+   "a": "In this browser on this device."
+  },
+  {
+   "q": "Can I export them?",
+   "a": "Select the text and copy it."
+  },
+  {
+   "q": "Does it sync?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "todo-list-saved-in-browser",
+  "kanban-board",
+  "mind-map-maker",
+  "eisenhower-matrix-planner",
+  "habit-streak-tracker",
+  "writing-goal-tracker"
+ ],
+ "keywords": [
+  "online sticky notes",
+  "sticky notes board",
+  "notes saved in browser",
+  "simple notes board"
+ ]
+}

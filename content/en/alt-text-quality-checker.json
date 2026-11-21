@@ -1,0 +1,44 @@
+{
+ "id": "alt-text-quality-checker",
+ "seoTitle": "Alt Text Quality Checker: Filenames, Generic Words and Missing Alt",
+ "metaDescription": "Paste HTML and review every image alt text for missing alt, file names, generic words, \"image of\" openers, long text and unnamed linked images.",
+ "intro": "Reviews alt text in pasted HTML for common quality problems.",
+ "why": "Alt text fails in predictable ways: missing, a file name, or a vague word.\n\nThe tool checks img, area and image inputs, flags empty alt inside links with no other text, repeated captions, and very long text, and leaves empty alt alone on decorative images. It cannot judge whether the description is right, only whether it looks like a typical mistake.",
+ "howTo": [
+  "Paste the HTML.",
+  "Set the length limit if you want.",
+  "Read each finding with its line.",
+  "Rewrite alt to say what the image does here."
+ ],
+ "faq": [
+  {
+   "q": "Is empty alt wrong?",
+   "a": "No, it is correct for decorative images. It is an error only when it leaves a link with no name."
+  },
+  {
+   "q": "Why a 125 character limit?",
+   "a": "It is a common rule of thumb, not a WCAG rule. Put long descriptions in the page text."
+  },
+  {
+   "q": "Does it check SVG or CSS images?",
+   "a": "No, only img, area and image inputs."
+  },
+  {
+   "q": "Is the HTML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "image-seo",
+  "a11y-html-check",
+  "form-label-checker",
+  "link-purpose-checker",
+  "accessible-name-calculator",
+  "html-image-extractor"
+ ],
+ "keywords": [
+  "alt text checker",
+  "alt text quality",
+  "image alt audit"
+ ]
+}

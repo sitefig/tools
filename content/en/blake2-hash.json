@@ -1,0 +1,46 @@
+{
+ "id": "blake2-hash",
+ "seoTitle": "Free BLAKE2b and BLAKE2s Hash Generator Online",
+ "metaDescription": "Compute BLAKE2b or BLAKE2s digests of 1 to 64 bytes with an optional MAC key (RFC 7693) from text, hex or base64. Free, runs in your browser.",
+ "intro": "Enter a message as text, hex or base64, choose BLAKE2b or BLAKE2s and a digest length, and optionally add a hex key for keyed (MAC) mode. The digest is shown as hex.",
+ "why": "BLAKE2 is a fast hash used in password hashing (Argon2 is built on it), file integrity tools, package managers and several blockchains. When you implement it, or debug an interoperability problem between two libraries, you need a reference output to compare with, and test vectors in an RFC are awkward to type in by hand. This page computes BLAKE2b and BLAKE2s from a message in text, hex or base64, with a digest length from 1 byte up to the maximum, and an optional hex key that turns it into a message authentication code. The code is hand-written and runs in your browser, so the message is not uploaded. It has not been audited, so use a reviewed library in production.",
+ "howTo": [
+  "Paste the message and say whether it is text, hex or base64.",
+  "Pick BLAKE2b or BLAKE2s and set the digest length in bytes.",
+  "Add a hex key for MAC mode if you need one, then copy the hex digest."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between BLAKE2b and BLAKE2s?",
+   "a": "BLAKE2b is tuned for 64-bit platforms and gives digests up to 64 bytes. BLAKE2s is tuned for 8 to 32-bit platforms and gives digests up to 32 bytes. Their outputs differ for the same input."
+  },
+  {
+   "q": "How does the key option work?",
+   "a": "A hex key of up to 64 bytes for BLAKE2b, or 32 bytes for BLAKE2s, switches on the built-in keyed mode, which works as a MAC without needing HMAC. Leave it empty for a plain hash."
+  },
+  {
+   "q": "Is this safe for secrets or passwords?",
+   "a": "Do not paste live production secrets into any web page you do not fully trust. BLAKE2 is also a fast hash, which is a poor choice on its own for storing passwords; use Argon2 or scrypt for that."
+  },
+  {
+   "q": "Why does the digest change with the length?",
+   "a": "The digest length is part of the parameters mixed into the hash. A 32-byte BLAKE2b output is not simply the first 32 bytes of the 64-byte output."
+  }
+ ],
+ "related": [
+  "blake3-hash",
+  "argon2-hash",
+  "hash-generator",
+  "hmac-generator",
+  "sha3-hash-generator",
+  "noncrypto-hashes"
+ ],
+ "keywords": [
+  "blake2b hash online",
+  "blake2s generator",
+  "free blake2 hash",
+  "blake2 mac key",
+  "rfc 7693 blake2",
+  "blake2b online calculator"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "websocket-frame-parser",
+  "seoTitle": "WebSocket Frame Parser (RFC 6455) from Hex",
+  "metaDescription": "Decode raw WebSocket frames from hex: FIN, RSV bits, opcode, masking key, payload length, unmasked payload and close codes.",
+  "intro": "Look inside captured WebSocket traffic to see exactly what each frame carries.",
+  "why": "Paste hex bytes of one or more frames. For each frame the parser shows the opcode (text, binary, ping, pong, close, continuation), whether it is a final fragment, RSV bits (compression extensions), the mask and payload length (7, 16 or 64-bit forms), the unmasked payload as text or hex and any close code and reason. Output was compared with frames built by the ws library.\n\nClient-to-server frames are always masked and server frames are not. Payloads of permessage-deflate frames are compressed and show as binary.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Copy the frame bytes from your capture tool.",
+    "Paste the hex.",
+    "Read each frame.",
+    "Check masking and opcodes against what your client or server should send."
+  ],
+  "faq": [
+    {
+      "q": "Why are some payloads unreadable?",
+      "a": "The connection may use compression (RSV1) or a binary protocol."
+    },
+    {
+      "q": "What is the mask for?",
+      "a": "Clients XOR the payload with a random key so intermediaries cannot confuse it with HTTP."
+    },
+    {
+      "q": "Can it capture traffic?",
+      "a": "No. Use your browser dev tools or a proxy to copy the bytes."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "http2-http3-frame-inspector",
+    "hex-dump-viewer",
+    "sse-stream-parser",
+    "har-analyzer",
+    "webhook-payload-simulator",
+    "msgpack-cbor-decoder"
+  ],
+  "keywords": [
+    "websocket frame parser",
+    "decode websocket frame",
+    "ws opcode",
+    "rfc 6455"
+  ]
+}

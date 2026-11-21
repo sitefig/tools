@@ -1,0 +1,47 @@
+{
+ "id": "rice-prioritization",
+ "seoTitle": "Free RICE, ICE and MoSCoW Prioritisation Calculator",
+ "metaDescription": "Score features by reach, impact, confidence and effort and rank them with RICE, ICE or MoSCoW buckets. Free, runs in your browser, no upload.",
+ "intro": "Enter one feature per line with reach, impact, confidence and effort, and get them ranked by RICE or ICE score, or sorted into Must, Should, Could and Won't buckets.",
+ "why": "Backlogs fill up faster than they empty, and the loudest request tends to win. A scoring model does not remove judgement, but it forces you to put numbers on reach, impact, confidence and cost, so that disagreements become specific.\n\nThis calculator ranks a list using RICE (reach times impact times confidence, divided by effort) or the simpler ICE. MoSCoW mode sorts the list into buckets by RICE rank. Confidence can be given as a percentage such as 80, or as a fraction such as 0.8. The scores are only as honest as your estimates, and ties should lead to a conversation, not a coin toss. It runs in your browser.",
+ "howTo": [
+  "Enter one feature per line as \"feature, reach, impact, confidence, effort\".",
+  "Choose the method: RICE, ICE or MoSCoW.",
+  "Run the tool and read the ranked table.",
+  "Review the top items with your team, and adjust inputs where the ranking looks wrong."
+ ],
+ "faq": [
+  {
+   "q": "What scales should I use?",
+   "a": "Reach is a count of people per period. Impact is usually 0.25 to 3. Confidence is a percentage. Effort is in person-months or any consistent unit above zero. The ranking only depends on keeping each scale consistent across features."
+  },
+  {
+   "q": "How does ICE differ here?",
+   "a": "ICE multiplies impact, confidence on a 0 to 10 scale and ease, where ease is 10 minus effort, with a floor of 0.1. Use effort on a 1 to 9 scale for ICE. Reach is ignored."
+  },
+  {
+   "q": "How are MoSCoW buckets assigned?",
+   "a": "By RICE rank: the top quarter is Must, the next quarter Should, the next 30 percent Could and the rest Won't. These cut-offs are a convention of this tool, so adjust the buckets by hand."
+  },
+  {
+   "q": "What if a feature name contains a comma?",
+   "a": "That is fine. The last four fields are read as numbers, and everything before them is the feature name. A header line starting with \"feature\" is skipped."
+  }
+ ],
+ "related": [
+  "decision-matrix",
+  "kanban-board",
+  "competitor-comparison-matrix",
+  "startup-cost-calculator",
+  "user-persona-template",
+  "swot-generator"
+ ],
+ "keywords": [
+  "rice prioritization calculator",
+  "rice score calculator",
+  "ice scoring tool",
+  "moscow prioritisation",
+  "free product backlog prioritizer",
+  "feature scoring tool"
+ ]
+}

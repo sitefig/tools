@@ -1,0 +1,45 @@
+{
+ "id": "sql-slugifier",
+ "seoTitle": "Free SQL Identifier Slugifier: Safe snake_case Names",
+ "metaDescription": "Turn titles, CSV headers or free text into safe SQL table and column names: accents removed, no leading digit, reserved words suffixed. Free, in-browser.",
+ "intro": "Paste headings or titles and get safe snake_case identifiers for tables and columns, with accents removed, duplicates numbered and reserved words avoided.",
+ "why": "Importing a spreadsheet means turning headers like First Name, E-mail address or 2024 Revenue (EUR) into column names. Left as they are, they need quoting everywhere, begin with a digit, clash with keywords such as order or user, or repeat. Renaming each by hand is slow and inconsistent.\n\nThis tool normalises accents, replaces symbols such as ampersand and percent with words, and joins the parts in snake_case, camelCase or quoted kebab-case. It prefixes names that start with a digit, adds an underscore to common reserved words, caps the length to your database limit and numbers duplicates. The reserved word list is short, so check unusual names against your own database documentation.",
+ "howTo": [
+  "Paste names, one per line.",
+  "Choose snake_case, camelCase or kebab-case, a maximum length and the reserved word option.",
+  "Copy the identifiers in the same order as your input."
+ ],
+ "faq": [
+  {
+   "q": "How are accents handled?",
+   "a": "Letters are decomposed and the accent marks removed, so Café Étage becomes cafe_etage. The German sharp s becomes ss. Characters from non-Latin scripts are dropped."
+  },
+  {
+   "q": "What counts as a reserved word?",
+   "a": "A built-in list of common SQL keywords such as select, order, group, user, table and key. A match gets a trailing underscore. Your database may reserve others."
+  },
+  {
+   "q": "What if two names turn out the same?",
+   "a": "The first keeps its name, and later ones get _2, _3 and so on, trimmed so the result still fits the maximum length."
+  },
+  {
+   "q": "Why a maximum length of 63?",
+   "a": "PostgreSQL truncates identifiers at 63 bytes and MySQL allows 64 characters. Names longer than your limit are cut here so they stay predictable."
+  }
+ ],
+ "related": [
+  "case-converter",
+  "slug-generator",
+  "csv-to-sql",
+  "json-to-sql",
+  "sql-keyword-uppercaser",
+  "string-case-detector"
+ ],
+ "keywords": [
+  "sql identifier generator",
+  "csv header to snake_case",
+  "column name cleaner",
+  "free sql slugifier",
+  "safe sql table names"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "python-formatter",
+ "seoTitle": "Python Indentation and Blank Line Fixer",
+ "metaDescription": "Convert mixed tabs and spaces to one indent, set blank lines around defs and classes, strip trailing spaces. Not Ruff or Black. Free.",
+ "intro": "Normalises Python indentation, trailing spaces and blank lines around functions and classes.",
+ "why": "Mixed tabs and spaces break Python, and pasted code often has uneven blank lines. The tool maps whatever indents it finds onto one level per step, keeps continuation lines inside brackets in step with their statement, leaves triple-quoted strings alone and puts two blank lines around top-level defs and classes and one around methods.\n\nIt does not change quotes, spacing around operators or line length, so it is not Black or Ruff. To check it, 465 standard library files were formatted and parsed again: the syntax tree was identical for all of them, as it was for 60 files whose indents were first turned into tabs and odd widths.",
+ "howTo": [
+  "Paste Python code.",
+  "Choose the indent and whether to add blank lines around defs.",
+  "Copy the result.",
+  "Use Ruff or Black for full formatting."
+ ],
+ "faq": [
+  {
+   "q": "Does it change my code?",
+   "a": "No. The syntax tree stayed identical in the tests. Review the diff anyway."
+  },
+  {
+   "q": "Why does it not fix quotes?",
+   "a": "That is a style rewrite and needs a real formatter."
+  },
+  {
+   "q": "What about comments?",
+   "a": "They take the indent of the next statement."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "python-to-typescript",
+  "typescript-to-python",
+  "json-to-pydantic",
+  "tabs-spaces-converter",
+  "regex-to-code",
+  "stacktrace-formatter"
+ ],
+ "keywords": [
+  "python formatter online",
+  "python indentation fixer",
+  "python tabs to spaces",
+  "ruff black alternative"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "uuencode-decoder",
+ "seoTitle": "UUencode and UUdecode Online",
+ "metaDescription": "Encode text or bytes to classic uuencoded begin/end blocks, or decode a uuencoded block to text, hex or a file download. Free, private.",
+ "intro": "Encodes data as a uuencoded block and decodes one back, including the begin line and file name.",
+ "why": "Uuencode is an old way to send binary files over text-only channels such as early email and Usenet. You still meet it in old archives and mailing list posts.\n\nEach line carries up to 45 bytes with a length character first. The tool accepts both the space and the backtick as zero, reads the file name from the begin line and lets you download the decoded bytes.",
+ "howTo": [
+  "Choose encode or decode.",
+  "Paste the text or the whole block including begin and end lines.",
+  "For encoding, set the file name and mode in the begin line.",
+  "Copy the result or download the decoded file."
+ ],
+ "faq": [
+  {
+   "q": "Is uuencode secure?",
+   "a": "No. It is an encoding, not encryption."
+  },
+  {
+   "q": "Why is there a backtick in the output?",
+   "a": "Modern uuencode writes zero as a backtick so spaces are not lost in transit. Both forms decode."
+  },
+  {
+   "q": "What about xxencode?",
+   "a": "That is a different alphabet and is not supported."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "base64-encode",
+  "base64-decode",
+  "quoted-printable",
+  "base85-ascii85-converter",
+  "hex-text",
+  "base64-to-file"
+ ],
+ "keywords": [
+  "uuencode online",
+  "uudecode online",
+  "decode uuencoded file",
+  "begin 644 uuencoded"
+ ]
+}

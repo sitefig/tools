@@ -1,0 +1,45 @@
+{
+  "id": "quote-image-maker",
+  "seoTitle": "Quote Image Maker: Text on a Background (PNG)",
+  "metaDescription": "Make a quote card as a PNG: wrap text on a colour or gradient background with an author line in square, landscape or story sizes.",
+  "intro": "Create shareable quote graphics without a design tool.",
+  "why": "Enter the quote and an optional author, choose a size (1080 by 1080, 1200 by 630 or 1080 by 1920), a gradient, paper, black or custom colour and a font family. The text is wrapped and sized to fit the safe area, with a quotation mark, and the image is saved as PNG.\n\nCheck that your text is not copyrighted material you may not republish, and give credit to the author.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Type the quote and author.",
+    "Choose size, background and font.",
+    "Download the PNG.",
+    "Add alt text with the quote when you post it."
+  ],
+  "faq": [
+    {
+      "q": "Which sizes are available?",
+      "a": "Square for feeds, landscape for link previews and story for vertical stories."
+    },
+    {
+      "q": "Can I use my own colour?",
+      "a": "Yes, choose custom colour and enter a hex value."
+    },
+    {
+      "q": "Is the text kept as text?",
+      "a": "No, it is baked into the image; add alt text."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "code-to-image",
+    "meme-generator",
+    "og-twitter-generator",
+    "placeholder-image-generator",
+    "image-resizer",
+    "opengraph-banner-canvas-generator"
+  ],
+  "keywords": [
+    "quote image maker",
+    "quote card generator",
+    "text on image",
+    "social quote graphic"
+  ]
+}

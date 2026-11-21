@@ -1,0 +1,46 @@
+{
+ "id": "exam-section-timer",
+ "seoTitle": "Free Exam Section Timer: Run Timed Sections in Order",
+ "metaDescription": "List sections and minutes, and the timer runs through them one after another with a beep between sections. Free, runs in your browser.",
+ "intro": "List your sections as 'name, minutes', one per line. The timer runs them in order, beeps at each change and shows the time left in the section and overall.",
+ "why": "Timed exams, mock tests and workshop agendas share a pattern: several sections, each with its own limit, one after another. Keeping an eye on a clock while also reading questions is a distraction, and the cost of overrunning the first section is felt in the last. This timer takes a simple list, such as Reading, 20 and Writing, 30, and runs the sections back to back, showing the current section name, the countdown and the total time remaining. It beeps when a section ends and moves on by itself, and you can skip ahead. Teachers can use it for practice papers and students for revision. It runs in your browser, so a test timetable is never uploaded.",
+ "howTo": [
+  "Write each section on its own line as the name, a comma, then the minutes.",
+  "Press Start to begin the first section.",
+  "Use Pause, Skip or Reset as needed while the sections run in order."
+ ],
+ "faq": [
+  {
+   "q": "What format does each line need?",
+   "a": "A name, a comma, and a number of minutes, for example Math, 45. The last comma on the line separates the minutes, so section names may contain commas. Decimal minutes work."
+  },
+  {
+   "q": "What happens if a line is wrong?",
+   "a": "The timer shows 'Bad line' with the text of the offending line, and will not start until you fix it. Blank lines are ignored."
+  },
+  {
+   "q": "Does it show total time left?",
+   "a": "Yes. Beneath the main display it shows the segment number out of the total and the total time remaining across the current and later sections."
+  },
+  {
+   "q": "Will it loop?",
+   "a": "No. It runs once through the whole list and then shows Done, unlike the Pomodoro timer, which repeats its cycle until you stop it."
+  }
+ ],
+ "related": [
+  "countdown-timer",
+  "pomodoro-timer",
+  "stopwatch",
+  "gpa-calculator",
+  "flashcards-spaced-repetition",
+  "typing-speed-test"
+ ],
+ "keywords": [
+  "exam timer",
+  "free exam section timer",
+  "timed sections timer",
+  "test timer online",
+  "mock exam timer",
+  "multi section countdown"
+ ]
+}

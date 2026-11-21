@@ -1,0 +1,44 @@
+{
+ "id": "random-row-sampler",
+ "seoTitle": "Random Row Sampler: Seeded Sample from a CSV",
+ "metaDescription": "Draw a random sample of rows by count or percentage from a CSV, with a seed for repeatable results. Free, runs in the browser.",
+ "intro": "Selects random rows without replacement and keeps their original order, with an optional seed.",
+ "why": "Spot-checking a big file is faster on a sample. A fixed seed gives the same rows for the same input, which is useful when you must show how a sample was drawn. Leave the seed empty for a fresh draw each time.\n\nSampling is simple random sampling without replacement using a Fisher-Yates shuffle; it is not stratified, so small groups can be missed. The summary states the seed used.",
+ "howTo": [
+  "Paste the CSV with a header.",
+  "Set a sample size or a percentage.",
+  "Enter a seed to make it repeatable, or leave blank.",
+  "Copy or download the sample."
+ ],
+ "faq": [
+  {
+   "q": "Is it truly random?",
+   "a": "The shuffle uses a seeded pseudo-random generator, fine for sampling but not for security."
+  },
+  {
+   "q": "Does it keep the header?",
+   "a": "Yes."
+  },
+  {
+   "q": "What if the sample is bigger than the file?",
+   "a": "You get all the rows."
+  },
+  {
+   "q": "Stratified sampling?",
+   "a": "Not available."
+  }
+ ],
+ "related": [
+  "csv-splitter",
+  "list-shuffler",
+  "random-number-picker",
+  "csv-viewer",
+  "survey-sample-size-calculator",
+  "mock-data-generator"
+ ],
+ "keywords": [
+  "random sample csv",
+  "sample rows from dataset",
+  "seeded random rows"
+ ]
+}

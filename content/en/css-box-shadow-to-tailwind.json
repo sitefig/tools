@@ -1,0 +1,43 @@
+{
+ "id": "css-box-shadow-to-tailwind",
+ "seoTitle": "Free CSS box-shadow to Tailwind Class Converter",
+ "metaDescription": "Convert a CSS box-shadow to a Tailwind arbitrary class and detect matching v3 or v4 presets. Free, runs in your browser.",
+ "intro": "Paste a CSS box-shadow value, with several layers if you like, and get a Tailwind arbitrary-value class, a match against the built-in shadow presets and a theme entry for your config.",
+ "why": "Design tools export shadows as raw CSS, such as 0 4px 6px -1px rgba(0,0,0,0.1) plus a second layer. In Tailwind you want a class, but the arbitrary-value syntax needs underscores instead of spaces and careful handling of commas and colours, and it is easy to miss that your shadow is already identical to shadow-md.\n\nThis converter writes the arbitrary class for you and checks the value against the default presets of Tailwind v3 and v4, so you can use the shorter built-in name when it matches. If the shadow is custom and reused, it also gives the theme extension for tailwind.config.js and the v4 theme variable. It runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste a box-shadow value or the whole declaration, including inset or multiple layers.",
+  "Enter a name for the custom theme shadow if you want to reuse it.",
+  "Read the arbitrary class and see whether it matches a built-in preset.",
+  "Copy the class, the tailwind.config.js entry or the v4 theme variable into your project."
+ ],
+ "faq": [
+  {
+   "q": "What does the preset match mean?",
+   "a": "It means your shadow is exactly the same as a default Tailwind shadow such as shadow-md, so you can use that class instead of an arbitrary one. The tool checks both v3 and v4 defaults."
+  },
+  {
+   "q": "Are multiple shadow layers supported?",
+   "a": "Yes. Layers are joined into one arbitrary value with commas, and inset shadows are kept. Spaces inside the value are replaced by underscores, as Tailwind requires."
+  },
+  {
+   "q": "Do I need to put my shadow in the theme?",
+   "a": "Not if you use it once. For a shadow used in many places, the theme entry gives you a named class, which is easier to read and change than a long arbitrary value."
+  }
+ ],
+ "related": [
+  "box-shadow-generator",
+  "tailwind-converter",
+  "tailwind-v3-to-v4-migrator",
+  "css-3d-box-shadow-generator",
+  "tailwind-spacing-generator",
+  "css-claymorphism-generator"
+ ],
+ "keywords": [
+  "box shadow to tailwind",
+  "css box-shadow to tailwind class",
+  "tailwind arbitrary shadow",
+  "tailwind custom shadow",
+  "convert css shadow tailwind",
+  "free tailwind shadow converter"
+ ]
+}

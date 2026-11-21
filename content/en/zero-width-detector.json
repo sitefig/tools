@@ -1,0 +1,46 @@
+{
+ "id": "zero-width-detector",
+ "seoTitle": "Free Invisible Character & Homoglyph Detector",
+ "metaDescription": "Find and strip zero-width, bidi and invisible characters, plus Cyrillic or Greek look-alikes in Latin words. Free, runs in your browser.",
+ "intro": "Scan text for zero-width, bidirectional-control and other invisible characters, and for Cyrillic or Greek look-alike letters mixed into Latin words. Strip them or fix them.",
+ "why": "Text can hide things you cannot see. Zero-width characters can watermark a document so a leak can be traced, bidirectional controls can make code or a file name display differently from what it contains, and a Cyrillic \"а\" in \"paypal\" makes a spoofed link look genuine. Invisible characters also break searches, passwords and comparisons in confusing ways.\n\nThis detector lists every invisible or control character with its line, column and Unicode code point, finds words that mix scripts, and shows look-alike characters from other alphabets. You can then output cleaned text, or cleaned text with look-alikes converted to Latin letters. Some legitimate text, such as Cyrillic or Arabic, uses these scripts, so review before replacing. Processing is local.",
+ "howTo": [
+  "Paste the suspect text into the input box.",
+  "Choose the output: report, cleaned text, or cleaned text with homoglyphs converted to Latin.",
+  "Tick the option to keep unusual spaces if you do not want them replaced by normal spaces.",
+  "Run the tool and review the findings or copy the cleaned text."
+ ],
+ "faq": [
+  {
+   "q": "What counts as an invisible character?",
+   "a": "Zero-width spaces and joiners, byte order marks, bidirectional controls, soft hyphens, unusual spaces, tag characters, variation selectors and control codes. Each is listed by type and position."
+  },
+  {
+   "q": "Will cleaning damage legitimate text?",
+   "a": "It can. Joiners and variation selectors matter in some scripts and emoji, and homoglyph conversion would change real Cyrillic or Greek words. Check the report first and use the cleaned output only where it fits."
+  },
+  {
+   "q": "What is a Trojan Source risk?",
+   "a": "Bidirectional control characters can reorder how source code is displayed, so what a reviewer sees differs from what the compiler reads. The tool warns when it finds them."
+  },
+  {
+   "q": "Is the text uploaded?",
+   "a": "No. Everything runs in your browser and your text is not sent to any server, which matters if you are checking a confidential or watermarked document."
+  }
+ ],
+ "related": [
+  "unicode-normalize",
+  "char-info",
+  "pii-redactor",
+  "punycode",
+  "find-replace",
+  "utf8-bytes-viewer"
+ ],
+ "keywords": [
+  "zero width character detector",
+  "find invisible characters",
+  "homoglyph checker",
+  "remove zero width space",
+  "unicode watermark remover"
+ ]
+}

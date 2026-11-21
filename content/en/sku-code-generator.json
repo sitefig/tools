@@ -1,0 +1,39 @@
+{
+ "id": "sku-code-generator",
+ "seoTitle": "SKU Code Generator From Product Attributes",
+ "metaDescription": "Build consistent SKU codes from category, colour, size and more with fixed segment length and an optional running number. Free, private.",
+ "intro": "Turns a list of product attributes into consistent stock keeping unit codes.",
+ "why": "A good SKU is short, readable and the same every time. Building it from attributes means two people produce the same code for the same product, and a code can be read without a lookup.\n\nThe tool strips accents and symbols, keeps the first letters of each word segment, leaves numeric sizes whole, and can append a running number. It warns when two products get the same code so you can lengthen the segments.",
+ "howTo": [
+  "Write one product per line with attributes separated by commas.",
+  "Set the prefix, separator and segment length.",
+  "Add a running number if you need a unique code per item."
+ ],
+ "faq": [
+  {
+   "q": "Why do some SKUs repeat?",
+   "a": "Short segments can collide, for example two colours starting with the same letters. Use more letters or a running number."
+  },
+  {
+   "q": "Can SKUs have spaces?",
+   "a": "The tool removes them, since many systems break on spaces."
+  },
+  {
+   "q": "Is a SKU the same as a barcode?",
+   "a": "No. A SKU is your own code; a GTIN or EAN is a global product number."
+  }
+ ],
+ "related": [
+  "gtin-check-digit-calculator",
+  "coupon-code-generator",
+  "barcode-generator",
+  "check-digit-tool",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "sku generator",
+  "stock keeping unit code",
+  "product code format"
+ ]
+}

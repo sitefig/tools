@@ -1,0 +1,41 @@
+{
+ "id": "privacy-law-applicability-checker",
+ "seoTitle": "Privacy Law Applicability Checker: GDPR, UK GDPR, LGPD, CCPA",
+ "metaDescription": "Tick facts about your business and see whether GDPR, UK GDPR, Brazil LGPD or California CCPA may apply, with the article behind each. Not legal advice.",
+ "intro": "Checks the scope tests of four privacy laws against facts about your business and shows which ones may apply.",
+ "why": "A site run from one country can still fall under another country's privacy law. The GDPR applies to organisations established in the EU and to those who offer goods or services to, or monitor, people there. Brazil's LGPD has a similar reach. The CCPA applies to for-profit businesses in California that pass a revenue or data volume threshold.\n\nTick the facts that apply and see which laws are indicated, with the article behind each answer. The CCPA revenue figure is USD 26,625,000 from 1 January 2025 according to the California Privacy Protection Agency, and it is adjusted every odd year. The other thresholds come from secondary sources. Other laws are not covered.",
+ "howTo": [
+  "Tick each fact that is true for your business.",
+  "Read the result for each law.",
+  "Check the thresholds against the current official text.",
+  "Talk to a lawyer for the laws marked as likely."
+ ],
+ "faq": [
+  {
+   "q": "Which laws are missing?",
+   "a": "Other US states, PIPEDA, Switzerland, Australia, India and many more."
+  },
+  {
+   "q": "Where does the CCPA figure come from?",
+   "a": "The California Privacy Protection Agency page on monetary thresholds. The 100,000 consumer and 50 percent tests come from secondary sources and were not checked against the statute."
+  },
+  {
+   "q": "Does it cover exemptions?",
+   "a": "No. Small business, non-profit and sector exemptions are not modelled."
+  }
+ ],
+ "related": [
+  "cross-border-transfer-checker",
+  "lawful-basis-selector",
+  "dsar-deadline-calculator",
+  "gdpr-checklist",
+  "privacy-policy-generator",
+  "gpc-snippet-generator"
+ ],
+ "keywords": [
+  "does gdpr apply to me",
+  "ccpa applicability",
+  "lgpd scope",
+  "privacy law checker"
+ ]
+}

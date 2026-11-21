@@ -1,0 +1,46 @@
+{
+ "id": "keyboard-event-viewer",
+ "seoTitle": "Free Keyboard Event Viewer - key, code, keyCode",
+ "metaDescription": "Press any key to see its key, code, keyCode, which, location and modifier values, plus a history of recent presses. Free, in your browser.",
+ "intro": "Press any key to see the values a web page receives: key, code, keyCode, which, location, repeat and active modifiers, with a short history.",
+ "why": "When you write keyboard shortcuts or game controls, you need the exact values the browser reports, and they are confusing. key gives the character produced, code gives the physical key, and the old keyCode and which are deprecated yet still common in legacy code. International layouts make it worse: the same physical key can produce different characters.\n\nThis viewer shows all of those values the moment you press or release a key. It also shows whether the key is on the left, right or numpad, whether it is repeating and which of Ctrl, Shift, Alt and Meta are held. A list keeps the last twelve presses. It is an easy way to check what your own keyboard layout produces before you hard-code a handler. Nothing is recorded or sent anywhere.",
+ "howTo": [
+  "Click on the page, away from any text box.",
+  "Press a key and read the key, code, keyCode and other values.",
+  "Hold modifiers like Shift or Ctrl to see them listed.",
+  "Check the History list for your last presses."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between key and code?",
+   "a": "key is the value the key produces, such as a or A, and depends on layout and modifiers. code identifies the physical key, such as KeyA, and stays the same across layouts. Use code for game controls and key for text."
+  },
+  {
+   "q": "Why is keyCode crossed out in documentation?",
+   "a": "It is deprecated because its values were inconsistent between browsers and layouts. It is shown here because older scripts still use it, but new code should use key or code."
+  },
+  {
+   "q": "Why does pressing a key do nothing?",
+   "a": "The page ignores key events when focus is inside a text field or select box. Click on an empty part of the page first. Some keys captured by the system, such as the Windows key, may not reach the browser."
+  },
+  {
+   "q": "Does it record what I type?",
+   "a": "No. Events are shown on screen and kept only in the page's memory for the short history. Nothing is stored or uploaded. Avoid typing passwords anyway."
+  }
+ ],
+ "related": [
+  "gamepad-tester",
+  "typing-speed-test",
+  "mouse-click-speed-test",
+  "ascii-table",
+  "char-info",
+  "unicode-character-map"
+ ],
+ "keywords": [
+  "keyboard event viewer",
+  "javascript key code tester",
+  "keycode finder",
+  "event.key event.code",
+  "free keyboard tester"
+ ]
+}

@@ -1,0 +1,50 @@
+{
+ "id": "docx-to-pdf",
+ "seoTitle": "DOCX to PDF (Text Only) - Free, In Your Browser",
+ "metaDescription": "Convert the text of a Word .docx to a simple PDF: headings, paragraphs, bullets and table rows. No images or exact layout. Private, no upload.",
+ "intro": "Turn the text of a Word document into a clean paginated PDF. It is a text converter, not a Word layout engine.",
+ "why": "A faithful Word to PDF conversion needs Word's layout engine, its fonts and its style rules. This tool does not pretend to have those. It reads the document body of a .docx, keeps the text in order, and sets it in Helvetica on A4 or Letter pages with a margin you choose.\n\nWhat comes through: paragraphs, line breaks and tabs, Title and Heading styles (larger and bold), list items (with a bullet), and table rows (cells joined with a vertical bar). Long lines are wrapped using real Helvetica widths and the text flows onto as many pages as needed. The result is a normal PDF with searchable text.\n\nWhat does not: images, charts, text boxes, columns, headers, footers, footnotes, page breaks, numbering formats, fonts, colours, bold and italic inside a paragraph, and the original pagination. Characters outside Western European text become a question mark. For documents where layout matters, use a full word processor. The file is read in your browser and never uploaded.",
+ "howTo": [
+  "Choose a .docx file.",
+  "Pick the paper size, base font size and margin.",
+  "Run the tool and download the PDF.",
+  "Check the output; if layout matters, use a word processor instead."
+ ],
+ "faq": [
+  {
+   "q": "Is this a full Word to PDF converter?",
+   "a": "No. It converts text only. Images, fonts, columns, headers, footers and exact page layout are not reproduced. The honest goal is a readable, searchable text PDF."
+  },
+  {
+   "q": "Which file types work?",
+   "a": "Only .docx (Office Open XML). Old .doc files, .odt, .rtf, .xlsx and .pptx are not supported."
+  },
+  {
+   "q": "Why do some characters show as question marks?",
+   "a": "The PDF uses the built-in Helvetica font with Western European encoding. Characters outside that set, such as Greek, Cyrillic or CJK, cannot be drawn without embedding a font."
+  },
+  {
+   "q": "Are tables kept?",
+   "a": "Each table row becomes one line with the cell texts separated by a vertical bar. Borders and column widths are not reproduced."
+  },
+  {
+   "q": "Is my document uploaded?",
+   "a": "No. The .docx is unzipped and converted in your browser."
+  }
+ ],
+ "related": [
+  "docx-to-html",
+  "markdown-to-docx",
+  "text-to-pdf",
+  "docx-cleaner",
+  "pdf-text-extract-simple",
+  "pdf-compress"
+ ],
+ "keywords": [
+  "docx to pdf",
+  "word to pdf online",
+  "convert docx to pdf text",
+  "docx text to pdf free",
+  "word document to pdf no upload"
+ ]
+}

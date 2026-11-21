@@ -1,0 +1,45 @@
+{
+ "id": "email-name-formatter",
+ "seoTitle": "Email Name and Address Formatter for To and BCC Fields",
+ "metaDescription": "Turn names and email addresses from a spreadsheet into a Name <email> list for To or BCC, quoted where needed. Free, runs in your browser.",
+ "intro": "Paste rows of names and addresses and get a single separated list for a mail client.",
+ "why": "Mail clients expect \"Name\" <address> pairs. Pasting columns from a spreadsheet gives tabs and mixed formats, and names with commas or dots need quotes to stay valid.\n\nQuoting follows RFC 5322: names with specials such as comma, dot, quote, @ or brackets are quoted, and quotes inside are escaped. Non-ASCII names can be encoded as RFC 2047 encoded words. Use semicolons for Outlook.",
+ "howTo": [
+  "Paste one row per person.",
+  "Choose the separator.",
+  "Turn on encoding for non-ASCII names if your tool needs it.",
+  "Copy the list into To or BCC."
+ ],
+ "faq": [
+  {
+   "q": "Which row formats work?",
+   "a": "\"Name, email\", Name<TAB>email, Name <email> and plain addresses."
+  },
+  {
+   "q": "Why use semicolons?",
+   "a": "Older Outlook settings use semicolons between addresses."
+  },
+  {
+   "q": "Is BCC private?",
+   "a": "Yes, but check your tool: put addresses in BCC, not To."
+  },
+  {
+   "q": "Does it validate addresses?",
+   "a": "Basic syntax only."
+  }
+ ],
+ "related": [
+  "email-list-cleaner",
+  "email-validator",
+  "mailto-link-generator",
+  "mime-encoded-word-decoder",
+  "outreach-mail-merge",
+  "extract-emails-urls-numbers"
+ ],
+ "keywords": [
+  "email name formatter",
+  "name email list format",
+  "rfc 5322 address list",
+  "bcc list generator"
+ ]
+}

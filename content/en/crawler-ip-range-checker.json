@@ -1,0 +1,44 @@
+{
+ "id": "crawler-ip-range-checker",
+ "seoTitle": "Crawler IP Range Checker for Googlebot, Bingbot and GPTBot",
+ "metaDescription": "Paste a crawler operator's published IP range JSON and test IP addresses against it. Works with Google, Bing and OpenAI lists. Free.",
+ "intro": "Checks whether IPv4 and IPv6 addresses fall inside the ranges of a JSON file or CIDR list you paste.",
+ "why": "A user-agent claiming to be Googlebot proves nothing. The operators publish the IP ranges of their crawlers as JSON, and a request from outside them is not the real bot.\n\nDownload the current file yourself, paste it with your IPs, and see which are in range. The tool reads the prefix fields of the JSON and any CIDR line, for IPv4 and IPv6. It makes no network requests, so you need a fresh copy of the list.",
+ "howTo": [
+  "Download the operator's JSON file.",
+  "Paste it in the first box.",
+  "Paste the IPs from your log.",
+  "Read which are in range."
+ ],
+ "faq": [
+  {
+   "q": "Which files does it accept?",
+   "a": "Any text that contains CIDR ranges or IPs, including Google, Bing and OpenAI JSON files."
+  },
+  {
+   "q": "Why not fetch the lists for me?",
+   "a": "That is a network request, which this site does not make."
+  },
+  {
+   "q": "Is in range proof enough?",
+   "a": "It is strong evidence. Reverse DNS is the second check."
+  },
+  {
+   "q": "The sample ranges are real?",
+   "a": "No, they are documentation addresses."
+  }
+ ],
+ "related": [
+  "cidr-contains",
+  "bot-reverse-dns-verifier",
+  "fake-googlebot-log-detector",
+  "ip-supernetting-calculator",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "googlebot ip checker",
+  "verify googlebot ip",
+  "gptbot ip ranges",
+  "crawler cidr check"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "url-length-checker",
+ "seoTitle": "URL Length Checker: Sitemap, Apache and Nginx Limits",
+ "metaDescription": "Check URL length against the sitemap 2,048 limit, Apache 8190 and Nginx 8k request line defaults and your own limit. Free, in your browser.",
+ "intro": "Lists URLs by length in characters and bytes, with path depth and parameter counts, and flags those over the sitemap limit, near default server limits or your own guideline.",
+ "why": "Very long URLs are usually a sign of parameter or session ID problems. Some also break real limits: a sitemap entry must be shorter than 2,048 characters, Apache refuses request lines over 8,190 bytes by default and Nginx returns 414 when the request line does not fit its 8k buffer.\n\nGoogle does not publish a maximum URL length for Search that I could verify, so the \"own guideline\" setting is your style rule, not a ranking threshold. Browser and CDN limits are not checked.",
+ "howTo": [
+  "Paste your URLs.",
+  "Set your own guideline if you have one (0 turns it off).",
+  "Read the table sorted from longest to shortest.",
+  "Investigate long URLs with many parameters first."
+ ],
+ "faq": [
+  {
+   "q": "Is there an ideal URL length?",
+   "a": "No official one. Short readable URLs are easier to share and to check, but length is not a known ranking factor."
+  },
+  {
+   "q": "Characters or bytes?",
+   "a": "Servers count bytes, so a URL with non-ASCII characters is longer in bytes. Percent-encoded forms count three characters per byte."
+  },
+  {
+   "q": "Where do the limits come from?",
+   "a": "sitemaps.org protocol, the Apache LimitRequestLine and Nginx large_client_header_buffers documentation."
+  },
+  {
+   "q": "What about old browsers?",
+   "a": "Limits of old browsers are not covered here."
+  }
+ ],
+ "related": [
+  "url-parameter-analyzer",
+  "sitemap-validator",
+  "url-parser",
+  "slug-generator",
+  "crawl-error-url-grouper",
+  "string-length-bytes"
+ ],
+ "keywords": [
+  "url length limit",
+  "max url length seo",
+  "sitemap url 2048",
+  "long url checker"
+ ]
+}

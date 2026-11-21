@@ -1,0 +1,39 @@
+{
+ "id": "cooking-measurement-converter",
+ "seoTitle": "Cooking Converter: Cups to Grams for Flour, Sugar and More",
+ "metaDescription": "Convert cups, tablespoons, teaspoons, mL, grams and ounces for common ingredients using typical weights per cup.",
+ "intro": "Converts between cups, spoons, millilitres, grams and ounces for 17 baking ingredients, using typical grams per US cup.",
+ "why": "A cup of flour and a cup of sugar weigh different amounts, so cups to grams depends on the ingredient. Flour is about 120 g a cup, granulated sugar about 198 g.\n\nValues come from the King Arthur Baking ingredient weight chart (read 2026-10-23). Scooping and packing change real weight, so use a scale for baking.",
+ "howTo": [
+  "Choose the ingredient.",
+  "Enter the amount and its unit.",
+  "Read the other measures."
+ ],
+ "faq": [
+  {
+   "q": "How many grams is a cup of flour?",
+   "a": "120 g here, from the King Arthur chart. Other sources say 125 to 140 g."
+  },
+  {
+   "q": "Why do results differ from my recipe?",
+   "a": "Packing, sifting and brand change the weight. Trust the recipe weight first."
+  },
+  {
+   "q": "Are spoons US spoons?",
+   "a": "Yes, a US tablespoon is 14.79 mL and a teaspoon 4.93 mL."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "recipe-scaler",
+  "oven-temperature-converter",
+  "volume-us-imperial-converter",
+  "percentage-calculator",
+  "density-unit-converter"
+ ],
+ "keywords": [
+  "cups to grams",
+  "flour cup in grams",
+  "baking conversion"
+ ]
+}

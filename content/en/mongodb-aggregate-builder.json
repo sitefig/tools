@@ -1,0 +1,47 @@
+{
+ "id": "mongodb-aggregate-builder",
+ "seoTitle": "Free MongoDB Aggregation Pipeline Builder",
+ "metaDescription": "Free online MongoDB aggregation pipeline builder. Fill in match, unwind, lookup, group, sort, project, skip and limit stages for mongosh, Node or PyMongo.",
+ "intro": "Build an aggregation pipeline from form fields: $match, $unwind, $lookup, $group, $sort, $project, $skip and $limit. Output as mongosh, Node.js driver, PyMongo or plain JSON.",
+ "why": "Aggregation pipelines are powerful but fiddly to type: nested braces, dollar signs on field references and a stage order that matters. A missing bracket costs time, and translating a working mongosh query into Python or Node adds another chance for error.\n\nFill in only the stages you need and the tool assembles them in a sensible order: match first, then unwind, lookup, group, sort, project, skip and limit. Accumulators are written as name:op:field, for example total:sum:amount. You pick the output language, and get a snippet ready to paste. It builds a basic pipeline, not every operator MongoDB offers, so extend the result by hand for expressions and conditions. Nothing leaves your browser.",
+ "howTo": [
+  "Enter the collection name and choose the output format.",
+  "Fill in the stages you need, such as a $match JSON filter and a $group field.",
+  "Write accumulators as name:op:field, separated by commas.",
+  "Add sort, skip and limit, then copy the generated pipeline."
+ ],
+ "faq": [
+  {
+   "q": "Which stages and accumulators are supported?",
+   "a": "Stages: $match, $unwind, $lookup, $group, $sort, $project, $skip and $limit. Accumulators: sum, avg, min, max, first, last, push, addToSet and count. Others you add by hand."
+  },
+  {
+   "q": "In what order are stages added?",
+   "a": "In a fixed order: match, unwind, lookup, group, sort, project, skip, limit. If you need a different order, copy the JSON output and rearrange the stages."
+  },
+  {
+   "q": "How do I group all documents together?",
+   "a": "Enter null as the group field. The _id of the group becomes null, so accumulators run over the whole collection, which is useful for totals and averages."
+  },
+  {
+   "q": "Does it run the query?",
+   "a": "No. It only generates code. Test the pipeline on a copy of your data or with explain before running it on production."
+  }
+ ],
+ "related": [
+  "sql-to-mongodb",
+  "mongodb-to-sql",
+  "mongodb-objectid-parser",
+  "elasticsearch-query-builder",
+  "json-format",
+  "redis-command-generator"
+ ],
+ "keywords": [
+  "mongodb aggregation builder",
+  "mongodb pipeline generator",
+  "aggregate pipeline online",
+  "free mongodb query builder",
+  "mongosh aggregate generator",
+  "pymongo aggregate builder"
+ ]
+}

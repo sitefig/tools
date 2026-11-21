@@ -1,0 +1,45 @@
+{
+  "id": "tone-analyzer",
+  "seoTitle": "Tone of Voice Analyzer: Formality, Confidence, Urgency",
+  "metaDescription": "Score text for formality, confidence, urgency, positivity and directness with word lists and sentence statistics. English, runs locally.",
+  "intro": "Check how your copy sounds: formal or casual, confident or hedging, urgent or calm, and whether it speaks to the reader.",
+  "why": "Five dimensions are scored 0-100 from counts of formal and casual words, hedges and certainty words, urgency phrases, positive and negative words, second-person pronouns, exclamation marks, contractions, questions and average sentence length. The detail lines show the raw counts so you can see why a score came out as it did.\n\nThis is a lexicon method, so sarcasm, jargon and non-English text are misread. It is best for comparing two drafts of the same piece or checking that a brand voice guide is followed, not for judging a person.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste at least a paragraph of English text.",
+    "Read the five scores and the matched-word counts.",
+    "Edit the draft and run it again to compare.",
+    "Keep the tone that fits your audience."
+  ],
+  "faq": [
+    {
+      "q": "Is this machine learning?",
+      "a": "No. It uses fixed word lists and punctuation counts."
+    },
+    {
+      "q": "What is a good formality score?",
+      "a": "It depends on the audience: legal copy scores high, social posts low. Compare against your own examples."
+    },
+    {
+      "q": "Why is my score low on confidence?",
+      "a": "Words like maybe, perhaps and might lower it; words like always, will and guarantee raise it."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "readability",
+    "sentiment-lexicon",
+    "text-statistics",
+    "ai-sentiment-classifier",
+    "review-reply-generator",
+    "headline-generator"
+  ],
+  "keywords": [
+    "tone analyzer",
+    "tone of voice checker",
+    "formality score",
+    "copy tone"
+  ]
+}

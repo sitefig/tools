@@ -1,0 +1,44 @@
+{
+ "id": "reading-speed-test-wpm",
+ "seoTitle": "Reading Speed Test: Measure Your Words per Minute",
+ "metaDescription": "Read a passage at your own pace, press finish and get your words per minute; paste your own text to test any material. Free.",
+ "intro": "Times how long you take to read a text and gives your words per minute. You can paste your own text.",
+ "why": "Press start, read the passage as you normally would, and press finish. The tool divides the word count by the time in minutes. Because reading speed depends on the text, use the same text to compare yourself over time.\n\nThe built-in passage is short and original. There are no comprehension questions, so skimming looks the same as careful reading; read for understanding. Words are counted as groups of non-space characters. Nothing is stored or sent.",
+ "howTo": [
+  "Keep the sample text or paste your own.",
+  "Press Start reading and read normally.",
+  "Press the finish button.",
+  "Read your words per minute."
+ ],
+ "faq": [
+  {
+   "q": "What is a good speed?",
+   "a": "It depends on the text and your aim; compare only against yourself on the same text."
+  },
+  {
+   "q": "Are there comprehension questions?",
+   "a": "No."
+  },
+  {
+   "q": "Can I test my own document?",
+   "a": "Yes, paste it."
+  },
+  {
+   "q": "Is the time exact?",
+   "a": "It is measured by your browser clock to a fraction of a second."
+  }
+ ],
+ "related": [
+  "typing-speed-test",
+  "word-counter",
+  "text-statistics",
+  "stopwatch",
+  "flashcards-spaced-repetition"
+ ],
+ "keywords": [
+  "reading speed test",
+  "words per minute reading",
+  "how fast do i read",
+  "wpm reading test"
+ ]
+}

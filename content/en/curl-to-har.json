@@ -1,0 +1,45 @@
+{
+ "id": "curl-to-har",
+ "seoTitle": "Free cURL to HAR Converter - HAR 1.2 Request Entry",
+ "metaDescription": "Convert a curl command into a HAR 1.2 request entry with method, URL, headers, query string, cookies and body. Free, runs in your browser.",
+ "intro": "Converts a curl command into a HAR 1.2 request entry containing the method, URL, headers, query string, cookies and post data. No response is recorded.",
+ "why": "Some tools can only import a HAR file: load testers, API mockers, replay tools and certain documentation generators. HAR is what browsers export from the network tab, but if you only have a curl command from a ticket or an API guide, you have no HAR. This converter builds one request entry from the command, with the method, URL, headers, parsed query parameters, cookies and any request body, wrapped in a valid HAR 1.2 structure. It does not make the request, so there is no response data, timings or sizes: the entry is a request template. Parsing is done in your browser, so tokens in your command are not sent anywhere.",
+ "howTo": [
+  "Paste a curl command into the input box.",
+  "Run the conversion to produce the HAR JSON.",
+  "Save the output as a .har file and import it into your tool, adding responses there if needed."
+ ],
+ "faq": [
+  {
+   "q": "Does the HAR include a response?",
+   "a": "No. The command is only parsed, never run, so there is no response, status, timing or size. Tools that need a response will have to fill it in or ignore it."
+  },
+  {
+   "q": "What parts of the request are included?",
+   "a": "Method, URL, headers, query string parameters, cookies and the request body (post data), as in a HAR 1.2 request entry."
+  },
+  {
+   "q": "Can I convert several commands?",
+   "a": "This tool converts one command at a time. For several requests, use the cURL to Postman converter, which handles multiple commands, or run this tool once per command."
+  },
+  {
+   "q": "Is it valid for browsers' DevTools import?",
+   "a": "It follows the HAR 1.2 shape, but DevTools may expect response fields. If an import complains, try a tool made for request templates."
+  }
+ ],
+ "related": [
+  "har-analyzer",
+  "har-to-k6",
+  "curl-to-postman",
+  "http-headers-to-json",
+  "url-parser",
+  "curl-builder"
+ ],
+ "keywords": [
+  "curl to har",
+  "convert curl to har file",
+  "har 1.2 from curl command",
+  "free curl har converter",
+  "curl request to har"
+ ]
+}

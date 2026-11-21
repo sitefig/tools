@@ -1,0 +1,50 @@
+{
+ "id": "geotiff-viewer",
+ "seoTitle": "GeoTIFF Viewer: CRS, Bounds, Tags and Raster Preview Online",
+ "metaDescription": "Inspect a GeoTIFF in your browser: EPSG code, pixel size, bounding box, GeoKeys, NoData, band statistics and a PNG preview. LZW, Deflate and PackBits supported. No upload.",
+ "intro": "Open a GeoTIFF or plain TIFF and see where it is, how it is stored and what the pixels look like.",
+ "why": "The reader parses classic TIFF and BigTIFF (both byte orders), every image directory, and the GeoTIFF tags: model pixel scale, tie points, model transformation and the GeoKey directory. It reports the EPSG code and name for common systems (WGS 84, UTM zones, Web Mercator and others), the pixel size, the affine transform and the four corners and centre, with longitude and latitude for EPSG:4326 and 3857. Pixel data is decoded for strips and tiles, chunky and planar layouts, 8, 16 and 32-bit integers and 32 and 64-bit floats, with no compression, LZW, Deflate or PackBits and horizontal prediction. You get per-band minimum, maximum and mean (NoData excluded) and a PNG preview, stretched between the 2nd and 98th percentile for single bands.\n\nIt was checked against rasterio and tifffile on 18 files covering those combinations: every pixel, the transform, the EPSG code and the NoData value matched.\n\nLimits: JPEG, WebP, ZSTD, LERC and CCITT compression, the floating-point predictor, sub-byte samples, ground-control-point-only georeferencing, and projections other than 4326 and 3857 for longitude and latitude (corners are still given in the file's own units). Images over 40 million samples are refused to protect the browser.",
+ "howTo": [
+  "Choose a .tif or .tiff file.",
+  "Read the CRS, pixel size and bounds.",
+  "Pick the band and stretch for the preview.",
+  "Download the PNG preview if you need it."
+ ],
+ "faq": [
+  {
+   "q": "Why are there no latitude and longitude for my UTM file?",
+   "a": "Converting projected coordinates needs a projection library. The corners are shown in the file's own CRS units (metres for UTM) together with the EPSG code, which you can use in a GIS."
+  },
+  {
+   "q": "Can it open Cloud Optimized GeoTIFFs?",
+   "a": "Yes, as ordinary files; the whole file is read, so very large COGs are not practical here."
+  },
+  {
+   "q": "Which compressions work?",
+   "a": "None, LZW, Deflate (both codes) and PackBits, with or without horizontal prediction. JPEG, ZSTD, WebP and LERC compressed TIFFs report a clear error."
+  },
+  {
+   "q": "What does NoData do to the preview?",
+   "a": "Pixels equal to the NoData tag are transparent and excluded from the statistics and the stretch."
+  },
+  {
+   "q": "Is the file uploaded?",
+   "a": "No. Everything is decoded in your browser."
+  }
+ ],
+ "related": [
+  "geohash-tool",
+  "image-info",
+  "exif-viewer",
+  "csv-to-geojson",
+  "geojson-to-csv",
+  "hex-dump-viewer"
+ ],
+ "keywords": [
+  "geotiff viewer",
+  "view geotiff online",
+  "tiff tag viewer",
+  "geotiff crs",
+  "raster file inspector"
+ ]
+}

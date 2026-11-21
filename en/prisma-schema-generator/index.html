@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Prisma Schema Generator from Simple Models | Free Tools</title>
+<meta name="description" content="Write a schema.prisma from a compact model syntax, with foreign keys and back-references added for you. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/prisma-schema-generator/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/prisma-schema-generator/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/prisma-schema-generator/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Prisma Schema Generator from Simple Models | Free Tools">
+<meta property="og:description" content="Write a schema.prisma from a compact model syntax, with foreign keys and back-references added for you. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/prisma-schema-generator/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Prisma Schema Generator from Simple Models | Free Tools">
+<meta name="twitter:description" content="Write a schema.prisma from a compact model syntax, with foreign keys and back-references added for you. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Prisma Schema Generator","url":"https://tools.sitefig.net/en/prisma-schema-generator/","description":"Write a schema.prisma from a compact model syntax, with foreign keys and back-references added for you. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Write one model per line as Name: field:type modifiers, separated by commas.","Choose the database provider, the env variable for the URL and whether to add snake_case @@map names.","Copy the schema into schema.prisma and run prisma validate."],"keywords":"prisma schema generator, generate schema.prisma, prisma model builder, free prisma schema tool, prisma relations helper","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Data Models","item":"https://tools.sitefig.net/en/#data-models"},{"@type":"ListItem","position":3,"name":"Prisma Schema Generator","item":"https://tools.sitefig.net/en/prisma-schema-generator/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What modifiers can I use?","acceptedAnswer":{"@type":"Answer","text":"pk, unique, now, updatedAt, default=value, map=name and cuid for string ids. A question mark after a type makes it optional, and square brackets make a list."}},{"@type":"Question","name":"How are relations written?","acceptedAnswer":{"@type":"Answer","text":"Name another model as a type. A list such as posts:Post[] creates the foreign key on Post. A single such as author:User creates authorId on that model, and a list is added to User if missing."}},{"@type":"Question","name":"Does it support composite keys or enums?","acceptedAnswer":{"@type":"Answer","text":"No. Only a single pk per model, scalar types and relations are generated. Add enums, composite ids and named relations by hand."}},{"@type":"Question","name":"Which types can I use?","acceptedAnswer":{"@type":"Answer","text":"int, string, bool, float, datetime, json, bigint, decimal and bytes, in any letter case. Any other name must match one of your models."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#data-models">Data Models</a></li><li><span aria-current="page">Prisma Schema Generator</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Prisma Schema Generator</h1>
+<p class="lede">Describe each model as one line of fields and get a schema.prisma with datasource, generator, relation fields and the matching foreign key columns.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="prisma-schema-generator" data-module="devgen2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Prisma relations take a surprising amount of typing: the relation field, the scalar foreign key, the @relation arguments and the list on the other side all have to agree. Forgetting one produces a validation error that is clear but tedious to fix.</p>
+<p>With this tool you write something like User: id:int pk, email:string unique, posts:Post[] and it adds the author relation, authorId and references on the Post side. You pick the provider, and for MongoDB it uses ObjectId mapping. It supports one relation per pair of models, so named relations need hand edits. Run prisma format and prisma validate on the result.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Write one model per line as Name: field:type modifiers, separated by commas.</li><li>Choose the database provider, the env variable for the URL and whether to add snake_case @@map names.</li><li>Copy the schema into schema.prisma and run prisma validate.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>What modifiers can I use?</summary><p>pk, unique, now, updatedAt, default=value, map=name and cuid for string ids. A question mark after a type makes it optional, and square brackets make a list.</p></details>
+<details><summary>How are relations written?</summary><p>Name another model as a type. A list such as posts:Post[] creates the foreign key on Post. A single such as author:User creates authorId on that model, and a list is added to User if missing.</p></details>
+<details><summary>Does it support composite keys or enums?</summary><p>No. Only a single pk per model, scalar types and relations are generated. Add enums, composite ids and named relations by hand.</p></details>
+<details><summary>Which types can I use?</summary><p>int, string, bool, float, datetime, json, bigint, decimal and bytes, in any letter case. Any other name must match one of your models.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/prisma-to-sql/"><span class="link-card__title">Prisma Schema to SQL DDL</span><span class="link-card__desc">Convert a schema.prisma (models, enums, @id, @unique, @default, @map/@@map, @db.* types, @relation foreign keys, @@id/@@unique/@@index) into CREATE TABLE statements for PostgreSQL, MySQL or SQLite. Follows Prisma default type mappings (String -&gt; text / varchar(191) on MySQL); client-side defaults such as uuid()/cuid() produce no SQL default.</span></a></li><li><a class="link-card" href="/en/sql-to-prisma/"><span class="link-card__title">SQL DDL to Prisma Schema</span><span class="link-card__desc">Convert CREATE TABLE statements (PostgreSQL, MySQL or SQLite syntax) to a schema.prisma: models with @id, @default(autoincrement()/now()), @unique, @map/@@map for snake_case columns, @db.* native types, composite @@id/@@unique/@@index, foreign keys as @relation with generated back-relation lists.</span></a></li><li><a class="link-card" href="/en/prisma-seed-generator/"><span class="link-card__title">Prisma Seed Script Generator</span><span class="link-card__desc">Read a Prisma schema and write prisma/seed.ts using @faker-js/faker: models are seeded in foreign-key order, relations pick existing rows, enums and defaults are respected.</span></a></li><li><a class="link-card" href="/en/json-to-pydantic/"><span class="link-card__title">JSON to Pydantic Models</span><span class="link-card__desc">Generate Pydantic v2 BaseModel classes from sample JSON: nested classes, List/Optional/Union typing, datetime/date/UUID detection, snake_case attributes with Field(alias=...) when the JSON key is camelCase or a Python keyword. Arrays of objects are merged to find optional fields.</span></a></li><li><a class="link-card" href="/en/sql-to-drizzle/"><span class="link-card__title">SQL DDL to Drizzle ORM Schema</span><span class="link-card__desc">Convert CREATE TABLE statements into a Drizzle ORM TypeScript schema for PostgreSQL (pg-core), MySQL (mysql-core) or SQLite (sqlite-core): column builders, primaryKey/notNull/unique/default/defaultNow, references() with onDelete, composite primary keys and indexes.</span></a></li><li><a class="link-card" href="/en/mongodb-aggregate-builder/"><span class="link-card__title">MongoDB Aggregation Pipeline Builder</span><span class="link-card__desc">Fill in $match, $unwind, $lookup, $group, $sort, $project, $skip, $limit and get a pipeline for mongosh, Node, PyMongo or plain JSON.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

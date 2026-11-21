@@ -1,0 +1,44 @@
+{
+ "id": "typescript-to-csharp-class",
+ "seoTitle": "Free TypeScript to C# Class Converter Online",
+ "metaDescription": "Convert TypeScript interfaces and enums to C# classes or records with nullable types and System.Text.Json or Newtonsoft.Json attributes. Runs in your browser.",
+ "intro": "Paste TypeScript interfaces and enums and get C# classes or records with nullable reference types, List and Dictionary, enums and optional System.Text.Json or Newtonsoft.Json attributes.",
+ "why": "A .NET API behind a TypeScript front end needs types whose property names match the JSON, while C# convention wants PascalCase. Doing that mapping by hand for every property is repetitive and easy to get wrong.\n\nThe converter writes PascalCase properties with [JsonPropertyName] or [JsonProperty] carrying the original key, makes optional and nullable properties nullable, optionally adds the C# 11 required modifier to the rest, and maps string enums with their JSON values. The output builds on .NET 9 and round-trips JSON through System.Text.Json and through Newtonsoft.Json. Everything runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your TypeScript interfaces, type aliases or enums.",
+  "Choose the attribute library, class or record, and the namespace.",
+  "Copy the C# code into your project with nullable reference types enabled."
+ ],
+ "faq": [
+  {
+   "q": "Which TypeScript features are supported?",
+   "a": "Interfaces, type aliases, string enums, optional and nullable properties, unions, literals, tuples, arrays, Record, Date, extends and intersections, and JSDoc comments. Conditional and mapped types, keyof, typeof, function types and most utility generics are not supported, and the tool says so instead of guessing."
+  },
+  {
+   "q": "What happens to a union such as string | number?",
+   "a": "C# has no general union type, so the field becomes object with a comment that says it was a union. Unions of literal values such as \"a\" | \"b\" become the base type with the literal list in a comment, and a top-level string-literal type alias becomes a real enum."
+  },
+  {
+   "q": "Why does number become a floating point type?",
+   "a": "TypeScript has a single number type, so the converter cannot know whether a value is an integer. It uses a floating point type by default. Switch the option or edit single fields where you know the value is whole."
+  },
+  {
+   "q": "Which .NET version do I need?",
+   "a": "The default output uses the required modifier (C# 11) and [JsonStringEnumMemberName], which needs .NET 9 for System.Text.Json. Turn required off and use Newtonsoft.Json on older versions."
+  }
+ ],
+ "related": [
+  "typescript-to-java-record",
+  "typescript-to-kotlin-data-class",
+  "json-to-models",
+  "typescript-to-json-schema",
+  "typescript-to-go-struct",
+  "json-to-typescript"
+ ],
+ "keywords": [
+  "typescript to c#",
+  "typescript to csharp class",
+  "ts interface to c# model",
+  "system.text.json generator"
+ ]
+}

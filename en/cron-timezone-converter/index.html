@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Cron Time Zone Converter | Free Tools</title>
+<meta name="description" content="Convert a 5-field cron expression from one time zone to another, adjusting hours and days when it crosses midnight. Free, runs in the browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/cron-timezone-converter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/cron-timezone-converter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/cron-timezone-converter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Cron Time Zone Converter | Free Tools">
+<meta property="og:description" content="Convert a 5-field cron expression from one time zone to another, adjusting hours and days when it crosses midnight. Free, runs in the browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/cron-timezone-converter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Cron Time Zone Converter | Free Tools">
+<meta name="twitter:description" content="Convert a 5-field cron expression from one time zone to another, adjusting hours and days when it crosses midnight. Free, runs in the browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Cron Time Zone Converter","url":"https://tools.sitefig.net/en/cron-timezone-converter/","description":"Convert a 5-field cron expression from one time zone to another, adjusting hours and days when it crosses midnight. Free, runs in the browser.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the cron expression with five fields: minute, hour, day of month, month and day of week.","Enter the time zone it is written for and the time zone you want, as IANA names.","Optionally set a reference date so the correct daylight saving offset is used.","Copy the converted expression and read the notes about day shifts and clock changes."],"keywords":"cron timezone converter, convert cron to utc, cron expression time zone, cron local time to utc, shift cron expression hours, free cron converter","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Calculators","item":"https://tools.sitefig.net/en/#calculators"},{"@type":"ListItem","position":3,"name":"Cron Time Zone Converter","item":"https://tools.sitefig.net/en/cron-timezone-converter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Will the converted job still be right after daylight saving changes?","acceptedAnswer":{"@type":"Answer","text":"Not necessarily. The result is exact only while both zones keep the offset of your reference date. For year-round local time, set the time zone in the scheduler itself if it supports one."}},{"@type":"Question","name":"What cron syntax does it support?","acceptedAnswer":{"@type":"Answer","text":"Standard five-field cron with lists, ranges, steps and day names. Complex expressions, such as a step on a half-hour offset, may need manual conversion, and the tool will say so."}},{"@type":"Question","name":"Why did my day-of-week field change?","acceptedAnswer":{"@type":"Answer","text":"If the shift moves the time past midnight, the job runs on a different calendar day in the target zone. The tool moves each listed day forward or back by one so the job still fires on the intended day."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#calculators">Calculators</a></li><li><span aria-current="page">Cron Time Zone Converter</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Cron Time Zone Converter</h1>
+<p class="lede">Enter a five-field cron expression written for one time zone and get the equivalent for another, with the hour and, when the shift crosses midnight, the day fields adjusted.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="cron-timezone-converter" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Many schedulers only understand UTC. A job that must run at 09:00 in Brussels then needs a different expression in summer and winter, and a late-evening job in New York lands on the next day in UTC, so the day-of-week field has to move too. Doing this by hand is where weekday jobs end up running on a Saturday.</p>
+<p>This converter calculates the offset between the two zones on a reference date, shifts the hours and rolls the day fields forward or back as needed. It also warns about the daylight saving catch. A shifted expression is only right while both zones keep that offset. The work happens in your browser and your schedule is not uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the cron expression with five fields: minute, hour, day of month, month and day of week.</li><li>Enter the time zone it is written for and the time zone you want, as IANA names.</li><li>Optionally set a reference date so the correct daylight saving offset is used.</li><li>Copy the converted expression and read the notes about day shifts and clock changes.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Will the converted job still be right after daylight saving changes?</summary><p>Not necessarily. The result is exact only while both zones keep the offset of your reference date. For year-round local time, set the time zone in the scheduler itself if it supports one.</p></details>
+<details><summary>What cron syntax does it support?</summary><p>Standard five-field cron with lists, ranges, steps and day names. Complex expressions, such as a step on a half-hour offset, may need manual conversion, and the tool will say so.</p></details>
+<details><summary>Why did my day-of-week field change?</summary><p>If the shift moves the time past midnight, the job runs on a different calendar day in the target zone. The tool moves each listed day forward or back by one so the job still fires on the intended day.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/cron-explainer/"><span class="link-card__title">Cron Expression Explainer</span><span class="link-card__desc">Explain a 5-field cron expression in English and list the next 10 run times.</span></a></li><li><a class="link-card" href="/en/cron-generator/"><span class="link-card__title">Cron Expression Generator</span><span class="link-card__desc">Build a cron expression from dropdowns and see what it means.</span></a></li><li><a class="link-card" href="/en/natural-language-to-cron/"><span class="link-card__title">Natural Language to Cron</span><span class="link-card__desc">Turn plain English schedules into a standard 5-field cron expression and read it back to confirm: &quot;every 15 minutes&quot;, &quot;every weekday at 8:30am&quot;, &quot;every monday and friday at 5pm&quot;, &quot;first day of every month at midnight&quot;, &quot;every 2 hours between 9am and 5pm on weekdays&quot;, &quot;quarterly&quot;, &quot;on the 1st and 15th at noon&quot;. Rule-based (no AI), English only; unrecognised words are reported. One schedule per line.</span></a></li><li><a class="link-card" href="/en/timezone-converter/"><span class="link-card__title">Time Zone Converter</span><span class="link-card__desc">Convert a date/time from one IANA zone to several others, DST-aware.</span></a></li><li><a class="link-card" href="/en/timezone-meeting-planner/"><span class="link-card__title">Time Zone Meeting Planner</span><span class="link-card__desc">Find meeting times that work across time zones: list participants with IANA time zones (Europe/Brussels, America/New_York, Asia/Kolkata...), pick a date and working hours, and see a half-hour grid of local times with DST applied for that date plus the best slots where everybody (or the most people) is within working hours.</span></a></li><li><a class="link-card" href="/en/cron-dialect-converter/"><span class="link-card__title">Cron Dialect Converter</span><span class="link-card__desc">Convert a standard 5-field cron to Quartz, Spring, AWS EventBridge, GitHub Actions and Kubernetes CronJob syntax.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

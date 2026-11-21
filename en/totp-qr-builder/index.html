@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free TOTP QR Code Builder: otpauth URI and 2FA QR | Free Tools</title>
+<meta name="description" content="Build an otpauth:// URI and a QR code to add a TOTP account to an authenticator app. Generate a Base32 secret or use yours. Free, local.">
+<link rel="canonical" href="https://tools.sitefig.net/en/totp-qr-builder/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/totp-qr-builder/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/totp-qr-builder/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free TOTP QR Code Builder: otpauth URI and 2FA QR | Free Tools">
+<meta property="og:description" content="Build an otpauth:// URI and a QR code to add a TOTP account to an authenticator app. Generate a Base32 secret or use yours. Free, local.">
+<meta property="og:url" content="https://tools.sitefig.net/en/totp-qr-builder/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free TOTP QR Code Builder: otpauth URI and 2FA QR | Free Tools">
+<meta name="twitter:description" content="Build an otpauth:// URI and a QR code to add a TOTP account to an authenticator app. Generate a Base32 secret or use yours. Free, local.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"TOTP QR Code Builder (otpauth URI)","url":"https://tools.sitefig.net/en/totp-qr-builder/","description":"Build an otpauth:// URI and a QR code to add a TOTP account to an authenticator app. Generate a Base32 secret or use yours. Free, local.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter issuer and account.","Leave the secret empty to generate one, or paste a Base32 secret.","Scan the QR with an authenticator app.","Compare the code shown here with the app."],"keywords":"totp qr code generator, otpauth uri builder, 2fa qr code maker, authenticator qr generator","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"TOTP QR Code Builder (otpauth URI)","item":"https://tools.sitefig.net/en/totp-qr-builder/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is the secret stored?","acceptedAnswer":{"@type":"Answer","text":"No. It exists only in this page. Anyone with the QR image or secret can make valid codes, so do not share them."}},{"@type":"Question","name":"Why do I need an issuer?","acceptedAnswer":{"@type":"Answer","text":"It labels the entry in the app. It is also placed in the URI label so older apps show it too."}},{"@type":"Question","name":"Why do the codes not match?","acceptedAnswer":{"@type":"Answer","text":"Check the device clock. If the app does not support SHA256, SHA512, 8 digits or another period, use the defaults."}},{"@type":"Question","name":"Is the QR code standard?","acceptedAnswer":{"@type":"Answer","text":"Yes. It is a normal QR code with the URI as text."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">TOTP QR Code Builder (otpauth URI)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>TOTP QR Code Builder (otpauth URI)</h1>
+<p class="lede">Builds the otpauth URI and a scannable QR code for two-factor setup, with the current code so you can check the app matches.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="totp-qr-builder" data-module="new09" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>When you add two-factor login to an app, the user scans a QR code that carries the secret, issuer and account in an otpauth:// URI. This tool builds that URI for tests, demos and documentation.</p>
+<p>Leave the secret blank to get a fresh random 160-bit Base32 secret, or paste your own. The page shows the current code from the same secret so you can compare it with the authenticator. Most apps ignore algorithm, digits and period and use SHA1, 6 digits and 30 seconds, so change them only if you know the app supports it.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter issuer and account.</li><li>Leave the secret empty to generate one, or paste a Base32 secret.</li><li>Scan the QR with an authenticator app.</li><li>Compare the code shown here with the app.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Is the secret stored?</summary><p>No. It exists only in this page. Anyone with the QR image or secret can make valid codes, so do not share them.</p></details>
+<details><summary>Why do I need an issuer?</summary><p>It labels the entry in the app. It is also placed in the URI label so older apps show it too.</p></details>
+<details><summary>Why do the codes not match?</summary><p>Check the device clock. If the app does not support SHA256, SHA512, 8 digits or another period, use the defaults.</p></details>
+<details><summary>Is the QR code standard?</summary><p>Yes. It is a normal QR code with the URI as text.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/totp-generator/"><span class="link-card__title">TOTP Generator (RFC 6238)</span><span class="link-card__desc">Generate time-based one-time codes from a base32 secret or otpauth:// URI, with a live countdown. Computed locally with WebCrypto.</span></a></li><li><a class="link-card" href="/en/qr-code-generator/"><span class="link-card__title">QR Code Generator</span><span class="link-card__desc">Hand-written QR encoder (versions 1-40, L/M/Q/H, auto mask). Outputs SVG text and a PNG.</span></a></li><li><a class="link-card" href="/en/qr-code-reader/"><span class="link-card__title">QR Code Reader: Decode a QR Image in Your Browser</span><span class="link-card__desc">Read a QR code from a picture or screenshot: finds the code, corrects errors with Reed-Solomon and shows the text, version, error-correction level and mask. Hand-written decoder, nothing is uploaded.</span></a></li><li><a class="link-card" href="/en/random-secret-generator/"><span class="link-card__title">Random Secret / Token Generator</span><span class="link-card__desc">Hex, base64, base64url, UUID v4, alphanumeric or numeric tokens from crypto.getRandomValues.</span></a></li><li><a class="link-card" href="/en/password-generator/"><span class="link-card__title">Password Generator</span><span class="link-card__desc">Cryptographically random passwords (crypto.getRandomValues, no modulo bias). Guarantees each selected class appears.</span></a></li><li><a class="link-card" href="/en/hmac-generator/"><span class="link-card__title">HMAC Generator</span><span class="link-card__desc">HMAC with MD5, SHA-1, SHA-256, SHA-384 or SHA-512; hex and Base64 output.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

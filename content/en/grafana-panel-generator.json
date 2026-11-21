@@ -1,0 +1,45 @@
+{
+  "id": "grafana-panel-generator",
+  "seoTitle": "Grafana Panel JSON Generator for Prometheus Queries",
+  "metaDescription": "Create Grafana time series, stat, gauge or bar gauge panel JSON with a Prometheus query, unit, thresholds and legend, ready to paste into a dashboard.",
+  "intro": "Skip clicking through the panel editor: describe the panel and paste the JSON into your dashboard.",
+  "why": "Enter a title, a PromQL expression, legend format, unit, threshold values for warning and critical, the datasource UID and the panel type. The tool writes a panel object with gridPos, targets, fieldConfig (unit and absolute thresholds) and options suitable for current Grafana versions.\n\nPanel schemas change between Grafana versions, so import the JSON and let Grafana migrate it. Make sure the datasource uid matches the one in your instance.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the panel type and enter the query.",
+    "Set the unit and thresholds.",
+    "In Grafana open Dashboard settings, JSON Model.",
+    "Add the object to the panels array with a unique id."
+  ],
+  "faq": [
+    {
+      "q": "Where do I find the datasource uid?",
+      "a": "In Connections, Data sources, in the URL of the datasource page."
+    },
+    {
+      "q": "Can I use other datasources?",
+      "a": "The generated target uses the Prometheus form; adapt it for other plugins."
+    },
+    {
+      "q": "Why do thresholds start with null?",
+      "a": "The first step (base) has no value and applies below the next threshold."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "promql-query-builder",
+    "prometheus-alert-generator",
+    "prometheus-config-generator",
+    "otel-collector-config-generator",
+    "prometheus-recording-rules-generator",
+    "json-format"
+  ],
+  "keywords": [
+    "grafana panel json",
+    "grafana dashboard generator",
+    "prometheus panel",
+    "grafana json model"
+  ]
+}

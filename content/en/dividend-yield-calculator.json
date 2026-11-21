@@ -1,0 +1,39 @@
+{
+ "id": "dividend-yield-calculator",
+ "seoTitle": "Dividend Yield Calculator With Annual Income",
+ "metaDescription": "Calculate dividend yield, yield on cost and yearly dividend income from share price, dividend and shares held.",
+ "intro": "Dividend yield, yield on your cost and annual income, with optional withholding tax.",
+ "why": "Dividend yield is annual dividend divided by share price. It moves with the price, so a very high yield can signal a falling price or a dividend at risk.\n\nEnter the dividend for the next or last 12 months. Yield on cost uses your purchase price, and an optional withholding rate shows the net income.",
+ "howTo": [
+  "Enter price, annual dividend and shares held.",
+  "Optionally add your purchase price and withholding tax.",
+  "Read yield and income."
+ ],
+ "faq": [
+  {
+   "q": "Which dividend should I use?",
+   "a": "The total of the last 12 months or the declared next 12 months. Avoid one-off special dividends."
+  },
+  {
+   "q": "Is tax correct?",
+   "a": "It applies a flat rate you enter. Real rules vary."
+  },
+  {
+   "q": "Does it show growth?",
+   "a": "No, it is a single-year view."
+  }
+ ],
+ "related": [
+  "roi-calculator",
+  "stock-profit-calculator",
+  "dollar-cost-averaging-calculator",
+  "compound-interest",
+  "percentage-calculator",
+  "net-worth-calculator"
+ ],
+ "keywords": [
+  "dividend yield",
+  "yield on cost",
+  "dividend income"
+ ]
+}

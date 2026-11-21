@@ -1,0 +1,45 @@
+{
+  "id": "random-text-generator",
+  "seoTitle": "Random Text Generator: Words, Sentences, Paragraphs, Characters",
+  "metaDescription": "Generate random English words, sentences or paragraphs for placeholder text, or random characters from letters, digits and symbols.",
+  "intro": "Create filler text or random strings with a secure random source.",
+  "why": "Words are drawn from a list of 250 common English nouns; sentences and paragraphs are built from them with capitals and full stops, so the text reads like language without meaning. Character mode picks from letters, letters and digits, digits, hex or a symbol set.\n\nThe character mode is good for test data but is not meant for passwords; use the password generator, which has strength guidance.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose words, sentences, paragraphs or characters.",
+    "Set how many.",
+    "Pick the character set if needed.",
+    "Copy the result."
+  ],
+  "faq": [
+    {
+      "q": "Is this like lorem ipsum?",
+      "a": "Similar purpose, but it uses real English words rather than Latin-style filler."
+    },
+    {
+      "q": "Is it secure random?",
+      "a": "Yes, it uses crypto.getRandomValues."
+    },
+    {
+      "q": "Can I get the same text twice?",
+      "a": "No, there is no seed."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "lorem-ipsum",
+    "password-generator",
+    "random-secret-generator",
+    "mock-data-generator",
+    "text-repeater",
+    "fake-person-generator"
+  ],
+  "keywords": [
+    "random text generator",
+    "random words",
+    "random string generator",
+    "placeholder text"
+  ]
+}

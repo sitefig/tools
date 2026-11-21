@@ -1,0 +1,15 @@
+/* Compositions: layout primitives. Tune with custom properties. */
+.wrapper { box-sizing: content-box; width: min(100% - 2 * var(--gutter), var(--wrapper)); margin-inline: auto; }
+.stack > * + * { margin-block-start: var(--space, var(--space-s)); }
+.cluster { display: flex; flex-wrap: wrap; gap: var(--space, var(--space-xs)); align-items: var(--align, center); justify-content: var(--justify, flex-start); }
+.repel { display: flex; flex-wrap: wrap; gap: var(--space, var(--space-xs)); align-items: center; justify-content: space-between; }
+.sidebar { display: flex; flex-wrap: wrap; gap: var(--space, var(--space-m)); }
+.sidebar > :first-child { flex-basis: var(--side, 16rem); flex-grow: 1; }
+.sidebar > :last-child { flex-basis: 0; flex-grow: 999; min-inline-size: 60%; }
+.switcher { display: flex; flex-wrap: wrap; gap: var(--space, var(--space-m)); }
+.switcher > * { flex-grow: 1; flex-basis: calc((var(--threshold, 40rem) - 100%) * 999); }
+.grid { display: grid; gap: var(--space, var(--space-s)); grid-template-columns: repeat(auto-fit, minmax(min(var(--min, 16rem), 100%), 1fr)); }
+.cover { display: flex; flex-direction: column; min-height: var(--cover-h, 60vh); }
+.cover > * { margin-block: var(--space-s); }
+.cover > :first-child:not(h1) { margin-block-start: 0; }
+.cover > h1 { margin-block: auto; }

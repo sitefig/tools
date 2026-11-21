@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Docker Compose Formatter &amp; Key Sorter | Free Tools</title>
+<meta name="description" content="Free online Docker Compose formatter. Re-indent docker-compose.yml consistently, keep comments and optionally order keys in the conventional way.">
+<link rel="canonical" href="https://tools.sitefig.net/en/docker-compose-formatter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/docker-compose-formatter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/docker-compose-formatter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Docker Compose Formatter &amp; Key Sorter | Free Tools">
+<meta property="og:description" content="Free online Docker Compose formatter. Re-indent docker-compose.yml consistently, keep comments and optionally order keys in the conventional way.">
+<meta property="og:url" content="https://tools.sitefig.net/en/docker-compose-formatter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Docker Compose Formatter &amp; Key Sorter | Free Tools">
+<meta name="twitter:description" content="Free online Docker Compose formatter. Re-indent docker-compose.yml consistently, keep comments and optionally order keys in the conventional way.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Docker Compose Formatter","url":"https://tools.sitefig.net/en/docker-compose-formatter/","description":"Free online Docker Compose formatter. Re-indent docker-compose.yml consistently, keep comments and optionally order keys in the conventional way.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your docker-compose.yml into the input box.","Choose an indent of 2 or 4 spaces.","Tick Reorder keys if you want conventional ordering of top-level and service keys.","Copy the formatted file and run docker compose config to validate it."],"keywords":"docker compose formatter, format docker-compose yml, compose file beautifier, free docker compose formatter, sort docker compose keys, docker compose indent fixer","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Formatters","item":"https://tools.sitefig.net/en/#formatters"},{"@type":"ListItem","position":3,"name":"Docker Compose Formatter","item":"https://tools.sitefig.net/en/docker-compose-formatter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are my comments kept?","acceptedAnswer":{"@type":"Answer","text":"Yes. The formatter works on lines of text rather than rewriting from parsed data, so comments stay with the content they were next to."}},{"@type":"Question","name":"What does reordering do?","acceptedAnswer":{"@type":"Answer","text":"Inside each service, common keys such as image, build, command, ports, environment, volumes and depends_on are arranged in a familiar order. Top-level sections like services, volumes and networks are ordered too. Values are not changed."}},{"@type":"Question","name":"Does it validate the Compose file?","acceptedAnswer":{"@type":"Answer","text":"No. It does not know the Compose specification. After formatting, run docker compose config to check that the file is valid and to see the resolved result."}},{"@type":"Question","name":"Is it safe for files with secrets?","acceptedAnswer":{"@type":"Answer","text":"The processing is local to your browser and nothing is uploaded. Still, avoid committing real passwords in a Compose file. Use env files or secrets."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#formatters">Formatters</a></li><li><span aria-current="page">Docker Compose Formatter</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Docker Compose Formatter</h1>
+<p class="lede">Re-indent a docker-compose.yml with 2 or 4 spaces, keep your comments, and optionally reorder top-level and service keys into the conventional order, such as image before ports.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="docker-compose-formatter" data-module="devgen"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Compose files are edited by many hands, and they drift: services indented differently, list items at odd depths, and keys in random order so that image, ports and environment are hard to find. A consistent file is quicker to review and produces cleaner diffs.</p>
+<p>Unlike a parse-and-rewrite YAML formatter, this one works on the text, so comments stay where you wrote them. It normalises indentation, and with the reorder option puts keys such as image, build, command, ports, environment and volumes into a familiar sequence within each service. Multi-line values like folded command blocks are left alone. It does not check that the file is a valid Compose file. Formatting runs in your browser, and environment values or passwords you paste are not uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your docker-compose.yml into the input box.</li><li>Choose an indent of 2 or 4 spaces.</li><li>Tick Reorder keys if you want conventional ordering of top-level and service keys.</li><li>Copy the formatted file and run docker compose config to validate it.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Are my comments kept?</summary><p>Yes. The formatter works on lines of text rather than rewriting from parsed data, so comments stay with the content they were next to.</p></details>
+<details><summary>What does reordering do?</summary><p>Inside each service, common keys such as image, build, command, ports, environment, volumes and depends_on are arranged in a familiar order. Top-level sections like services, volumes and networks are ordered too. Values are not changed.</p></details>
+<details><summary>Does it validate the Compose file?</summary><p>No. It does not know the Compose specification. After formatting, run docker compose config to check that the file is valid and to see the resolved result.</p></details>
+<details><summary>Is it safe for files with secrets?</summary><p>The processing is local to your browser and nothing is uploaded. Still, avoid committing real passwords in a Compose file. Use env files or secrets.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/docker-compose-generator/"><span class="link-card__title">Docker Compose Generator</span><span class="link-card__desc">Pick services: postgres, mysql, mariadb, redis, mongo, nginx, rabbitmq, memcached, elasticsearch, minio, mailhog.</span></a></li><li><a class="link-card" href="/en/yaml-format/"><span class="link-card__title">YAML Formatter</span><span class="link-card__desc">Re-indent and normalise YAML (comments are not preserved; anchors are expanded).</span></a></li><li><a class="link-card" href="/en/docker-compose-to-k8s/"><span class="link-card__title">Docker Compose to Kubernetes Manifests</span><span class="link-card__desc">Convert a docker-compose.yml into Kubernetes YAML: one Deployment per service (image, command/entrypoint, environment, resources from deploy.resources, healthcheck -&gt; livenessProbe, replicas), a Service for published/exposed ports, PersistentVolumeClaims for named volumes and optionally a Secret for password/token-like variables. Constructs without an equivalent (depends_on, build, env_file, bind mounts) are listed as NOTE comments.</span></a></li><li><a class="link-card" href="/en/docker-run-to-compose/"><span class="link-card__title">docker run to docker-compose.yml</span><span class="link-card__desc">Convert one or more docker run commands (ports, volumes, env, network, restart, limits, labels...) into a docker-compose.yml with named volumes extracted.</span></a></li><li><a class="link-card" href="/en/dockerfile-linter/"><span class="link-card__title">Dockerfile Linter</span><span class="link-card__desc">Hadolint-style checks (DL3xxx rule codes): latest tags, apt/apk/pip hygiene, ADD vs COPY, USER root, CMD form, secrets in ENV.</span></a></li><li><a class="link-card" href="/en/docker-compose-env-generator/"><span class="link-card__title">Docker Compose Environment Generator</span><span class="link-card__desc">Two-way helper: from a .env file generate a compose &quot;environment:&quot; block with ${VAR:-default} interpolation (or env_file usage), or from a docker-compose.yml extract every ${VAR} / ${VAR:-default} / environment key into a ready .env.example.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

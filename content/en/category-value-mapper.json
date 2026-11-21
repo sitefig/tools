@@ -1,0 +1,44 @@
+{
+ "id": "category-value-mapper",
+ "seoTitle": "Category Value Mapper: Standardise Messy CSV Labels",
+ "metaDescription": "List every distinct value of a column with counts, then map messy labels to standard ones with old => new lines. Free.",
+ "intro": "Standardises category labels: first see all distinct values with counts, then write mappings and apply them to all rows.",
+ "why": "NY, ny and New York are one state to you and three values to a pivot table. Leave the mapping box empty to get the list of distinct values with counts, copy it, and write the mappings as old => new.\n\nValues without a mapping are kept and listed in the summary, so you know what is left to fix. Matching can ignore case. For automatic grouping of similar spellings use the fuzzy match tool first and then map the results.",
+ "howTo": [
+  "Paste the CSV and name the column.",
+  "Leave the mapping box empty to list distinct values.",
+  "Write old => new lines in the second box.",
+  "Copy or download the mapped CSV."
+ ],
+ "faq": [
+  {
+   "q": "Can I map several values to one?",
+   "a": "Yes, one line per old value."
+  },
+  {
+   "q": "Is matching case sensitive?",
+   "a": "Yes unless you tick ignore case."
+  },
+  {
+   "q": "Does it trim?",
+   "a": "With ignore case, surrounding spaces are ignored too."
+  },
+  {
+   "q": "Where is the mapping saved?",
+   "a": "Nowhere; keep your mapping text."
+  }
+ ],
+ "related": [
+  "fuzzy-match-deduplicator",
+  "table-find-replace",
+  "csv-column-profiler",
+  "pivot-table-builder",
+  "table-joiner",
+  "csv-whitespace-trimmer"
+ ],
+ "keywords": [
+  "standardize category labels",
+  "map values csv",
+  "clean categorical data"
+ ]
+}

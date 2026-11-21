@@ -1,0 +1,44 @@
+{
+ "id": "ssh-config-builder",
+ "seoTitle": "SSH Config Builder: Generate ~/.ssh/config Entries",
+ "metaDescription": "Turn one line per server into ready ~/.ssh/config Host blocks with user, port, key, jump host and keep-alive. Free, runs in your browser.",
+ "intro": "Builds Host blocks for ~/.ssh/config from simple comma separated lines, with optional shared keep-alive settings.",
+ "why": "A good ssh config saves typing and avoids offering every key to every server. Writing the blocks by hand is easy to get wrong when you have many hosts or jump hosts.\n\nEnter alias, host name, user, port, identity file and jump host per line. The output was checked with ssh -G, which reads the generated file and prints the settings it will use.",
+ "howTo": [
+  "Write one host per line: alias, hostname, user, port, key, jump host.",
+  "Choose IdentitiesOnly, keep-alive and AddKeysToAgent options.",
+  "Copy the output.",
+  "Append it to ~/.ssh/config and test with ssh -G alias."
+ ],
+ "faq": [
+  {
+   "q": "What does IdentitiesOnly do?",
+   "a": "It makes ssh offer only the key you name, instead of every key in the agent."
+  },
+  {
+   "q": "How do I use a jump host?",
+   "a": "Put the alias of the jump host in the last column. It becomes ProxyJump."
+  },
+  {
+   "q": "Is the key file read?",
+   "a": "No. Only the path text is written."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "ssh-key-pair-generator",
+  "ssh-key-fingerprint",
+  "ssh-key-inspector",
+  "shell-command-builder",
+  "systemd-unit-generator",
+  "cloud-init-generator"
+ ],
+ "keywords": [
+  "ssh config generator",
+  "ssh proxyjump config",
+  ".ssh/config builder"
+ ]
+}

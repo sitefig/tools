@@ -1,0 +1,43 @@
+{
+ "id": "openapi-to-postman",
+ "seoTitle": "Free OpenAPI to Postman Collection Converter",
+ "metaDescription": "Turn an OpenAPI 3 or Swagger 2 document, JSON or YAML, into a Postman Collection v2.1 with folders and auth. Free, runs in your browser.",
+ "intro": "Paste an OpenAPI 3 or Swagger 2 document in JSON or YAML and get a Postman Collection v2.1, with requests grouped by tag, a base URL variable, parameters, example bodies and auth.",
+ "why": "An OpenAPI file describes every endpoint, but to try them you still need requests in a client. Importing the spec directly into Postman works, yet people also need a collection file they can commit to a repository, send to a tester or adjust before importing. Writing one request at a time from the spec is slow and boring.\n\nThis converter reads the spec and builds the collection for you. Operations are grouped into folders by tag, the server address becomes a baseUrl variable, parameters are listed and bodies are generated from examples or from the schema. Collection-level auth is added for bearer, basic and API key schemes. Specs often describe private services, so it helps that the conversion happens only in your browser.",
+ "howTo": [
+  "Paste your OpenAPI 3 or Swagger 2 document, in JSON or YAML, into the input box.",
+  "Read the generated Postman Collection JSON in the output.",
+  "Copy it into a file, for example api.postman_collection.json.",
+  "Import the file into Postman and set the baseUrl and credentials variables."
+ ],
+ "faq": [
+  {
+   "q": "Does it support both Swagger 2 and OpenAPI 3?",
+   "a": "Yes. It reads Swagger 2 and OpenAPI 3 documents, in JSON or YAML. Very unusual features, such as complex references or callbacks, may be simplified in the generated requests."
+  },
+  {
+   "q": "Where do request bodies come from?",
+   "a": "From the examples in the spec when present, otherwise from the schema, which gives placeholder values of the right types. Replace them with realistic data before sending requests."
+  },
+  {
+   "q": "How is authentication handled?",
+   "a": "Bearer, basic and API key schemes become collection-level auth with variables for the secrets. Other schemes, such as OAuth 2, are not converted, so configure them in Postman."
+  }
+ ],
+ "related": [
+  "postman-to-openapi",
+  "openapi-validator",
+  "postman-to-curl",
+  "yaml-to-json",
+  "openapi-to-typescript-fetch",
+  "json-schema-generator"
+ ],
+ "keywords": [
+  "openapi to postman",
+  "swagger to postman collection",
+  "convert openapi to postman online",
+  "openapi yaml to postman",
+  "postman collection from openapi",
+  "free openapi converter"
+ ]
+}

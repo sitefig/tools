@@ -1,0 +1,45 @@
+{
+ "id": "protobuf-raw-decoder",
+ "seoTitle": "Protobuf Decoder Without a Schema (Raw Wire Format)",
+ "metaDescription": "Decode protobuf bytes from hex or Base64 without a .proto file: field numbers, wire types and best-guess values. Free and private.",
+ "intro": "Reads the protobuf wire format and prints each field with its number, wire type and a guess at the value.",
+ "why": "Protobuf data carries field numbers and wire types but no names. When you only have captured bytes, you can still read a lot from them: varints, fixed numbers, strings and nested messages.\n\nThe tool shows each field with several readings, such as unsigned and zigzag for varints, and decides between string, nested message and raw bytes by testing the content. These are guesses. A varint may be an enum or a bool, and a nested message may also be valid text.",
+ "howTo": [
+  "Paste the bytes as hex or Base64.",
+  "Leave the input type on auto, or force one.",
+  "Read the field tree.",
+  "Compare the guesses with your .proto file if you have one."
+ ],
+ "faq": [
+  {
+   "q": "Why is a field shown as a string and as a message?",
+   "a": "Some bytes are valid in both readings. The tool notes it."
+  },
+  {
+   "q": "Are groups supported?",
+   "a": "No. Wire types 3 and 4 are deprecated and give an error."
+  },
+  {
+   "q": "Can it decode gRPC frames?",
+   "a": "Remove the 5-byte frame header first."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "protobuf-to-json",
+  "proto-to-typescript",
+  "msgpack-cbor-decoder",
+  "hex-dump-viewer",
+  "bson-hex-converter",
+  "base64-decode"
+ ],
+ "keywords": [
+  "protobuf decoder online",
+  "decode protobuf without proto",
+  "protoc decode_raw online",
+  "protobuf wire format viewer"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "lines-of-code-counter",
+ "seoTitle": "Free Lines of Code Counter: Code, Comment and Blank Lines",
+ "metaDescription": "Count code, comment and blank lines per language. Paste several files separated by === lines. Free and offline.",
+ "intro": "Counts code, comment and blank lines in pasted source. Start each file with a line like === src/app.py and you get a per-language table with totals.",
+ "why": "A raw line count mixes real code with comments and empty lines. Tools like cloc solve that, but you may not be able to install anything or want to upload the code.\n\nThis counter reuses a string-aware scanner so comment markers inside strings are not counted as comments. Language is picked from the file extension on the === line. A line with code and a trailing comment counts as code. Multi-line strings count as code.",
+ "howTo": [
+  "Paste your source. For several files add a \"=== path/file.ext\" line before each.",
+  "Pick the fallback language for text without such a line.",
+  "Read the table and the per-file lines."
+ ],
+ "faq": [
+  {
+   "q": "Which languages are known?",
+   "a": "C-style languages (JS, TS, Java, C, C++, C#, Go, Rust, PHP and more), CSS, Python, shell/Ruby/YAML, SQL and HTML/XML."
+  },
+  {
+   "q": "How is a mixed line counted?",
+   "a": "As code."
+  },
+  {
+   "q": "Can I drop files?",
+   "a": "Not here. Paste the text, as nothing is uploaded."
+  },
+  {
+   "q": "Do the numbers match cloc?",
+   "a": "They can differ in edge cases such as docstrings and multi-line strings."
+  }
+ ],
+ "related": [
+  "code-comment-stripper",
+  "cyclomatic-complexity-estimator",
+  "word-counter",
+  "js-format",
+  "big-o-cheatsheet",
+  "sql-format"
+ ],
+ "keywords": [
+  "lines of code counter",
+  "count lines of code",
+  "loc counter"
+ ]
+}

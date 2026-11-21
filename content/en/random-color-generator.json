@@ -1,0 +1,45 @@
+{
+ "id": "random-color-generator",
+ "seoTitle": "Random Color Generator with Hue, Saturation and Lightness Ranges",
+ "metaDescription": "Generate random colours inside hue, saturation and lightness limits, for tags, avatars and tests. Free, local.",
+ "intro": "Creates up to 500 random colours inside the hue, saturation and lightness ranges you set, shown as swatches and HEX codes.",
+ "why": "Pure random colours are often muddy. Limits make them useful: for example hue 0 to 360 with saturation 50 to 70 and lightness 70 to 85 gives pastels for tags or chart series. Set a narrow hue range for a themed set.\n\nColours are made in HSL and shown as HEX. The generator is random each run, so copy the ones you want.",
+ "howTo": [
+  "Set how many colours you need.",
+  "Set the hue, saturation and lightness ranges.",
+  "Run the tool.",
+  "Copy the HEX list."
+ ],
+ "faq": [
+  {
+   "q": "Can I get the same colours again?",
+   "a": "No, there is no seed. Copy the list."
+  },
+  {
+   "q": "Why do some colours look similar in brightness?",
+   "a": "HSL lightness is not perceptual. Use the Palette Shuffler for even weight."
+  },
+  {
+   "q": "Is it good for avatars?",
+   "a": "Yes, with limited saturation and lightness the text stays readable."
+  },
+  {
+   "q": "What is the maximum?",
+   "a": "500 colours per run."
+  }
+ ],
+ "related": [
+  "palette-shuffler",
+  "avatar-generator",
+  "color-converter",
+  "color-picker",
+  "palette-generator",
+  "random-number-generator"
+ ],
+ "keywords": [
+  "random color generator",
+  "random pastel colors",
+  "random hex colors",
+  "random color hue range"
+ ]
+}

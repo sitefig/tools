@@ -1,0 +1,45 @@
+{
+ "id": "ksuid-tool",
+ "seoTitle": "Free KSUID Generator and Decoder",
+ "metaDescription": "Generate K-sortable unique IDs (KSUID) or decode a KSUID to its timestamp and payload. Runs in your browser, uses crypto random.",
+ "intro": "Makes Segment-style KSUIDs, or reads one back into its creation time and random payload.",
+ "why": "A KSUID is a 27-character ID made of a 32-bit timestamp and 128 random bits. IDs sort by creation time to the second, and the random part makes collisions practically impossible.\n\nThe layout follows the Segment KSUID specification: the timestamp counts seconds from 2014-05-13 (Unix time 1400000000), and the 20 bytes are written in base62 with digits first, then upper case, then lower case. The decoder reproduces the example in the project README.",
+ "howTo": [
+  "To make IDs, leave the box empty and set a count.",
+  "To decode, paste one or more KSUIDs.",
+  "Optionally generate for a chosen time.",
+  "Copy the results."
+ ],
+ "faq": [
+  {
+   "q": "How is it different from a UUID?",
+   "a": "A KSUID sorts by time as text and uses base62, so it is shorter than a hyphenated UUID. A UUID v7 does something similar with millisecond time."
+  },
+  {
+   "q": "Is the timestamp precise?",
+   "a": "Only to the second. Many IDs can share a second and differ in their random part."
+  },
+  {
+   "q": "What is the KSUID range?",
+   "a": "Time runs from 2014-05-13 for about 136 years, then the 32-bit field overflows."
+  },
+  {
+   "q": "Is there a millisecond version?",
+   "a": "The Segment project has a separate variant. This tool handles the standard 4-byte form."
+  }
+ ],
+ "related": [
+  "uuid-generator",
+  "ulid-generator",
+  "nanoid-generator",
+  "snowflake-id-decoder",
+  "uuid-v7-timestamp-extractor",
+  "random-secret-generator"
+ ],
+ "keywords": [
+  "ksuid generator",
+  "ksuid decoder",
+  "k-sortable unique id",
+  "generate ksuid online"
+ ]
+}

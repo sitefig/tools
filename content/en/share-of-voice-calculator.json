@@ -1,0 +1,45 @@
+{
+ "id": "share-of-voice-calculator",
+ "seoTitle": "Share of Voice Calculator: Brand vs Competitors",
+ "metaDescription": "Calculate share of voice from mentions, spend or impressions for your brand and competitors, as percentages with bars. Free and private.",
+ "intro": "Enter a value per brand to get each brand's share and a bar chart.",
+ "why": "Share of voice divides your number by the total of all listed brands. It works for any single metric, such as mentions, ad spend or impressions.\n\nThe share depends on which competitors you include, so keep the set stable between periods. Use the same metric and period for every brand.",
+ "howTo": [
+  "Enter one line per brand as Name: value.",
+  "Give your own brand name to mark it.",
+  "Read the shares.",
+  "Repeat each period with the same brands."
+ ],
+ "faq": [
+  {
+   "q": "Which metric should I use?",
+   "a": "Any, if it is the same for all brands."
+  },
+  {
+   "q": "Why did my share drop?",
+   "a": "Maybe a new competitor was added."
+  },
+  {
+   "q": "Does it measure quality?",
+   "a": "No, only volume."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "reach-frequency-calculator",
+  "ads-roas-calculator",
+  "branded-query-splitter",
+  "statistics-calculator",
+  "serp-ctr-traffic-model",
+  "swot-generator"
+ ],
+ "keywords": [
+  "share of voice calculator",
+  "brand share of voice",
+  "sov calculator",
+  "competitor share"
+ ]
+}

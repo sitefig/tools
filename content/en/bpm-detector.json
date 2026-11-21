@@ -1,0 +1,45 @@
+{
+ "id": "bpm-detector",
+ "seoTitle": "BPM Detector: Find the Tempo of a Song From a File",
+ "metaDescription": "Estimate the beats per minute of an audio file. Shows the tempo, half and double time and a confidence value. Free, private, no upload.",
+ "intro": "Analyses the rhythm of an audio file and reports the most likely tempo in BPM, together with the half-time and double-time readings.",
+ "why": "DJs need tempo to match tracks, runners choose music for a pace, and producers sync samples. Tapping along works but is imprecise. The tool measures where energy suddenly rises, builds an onset curve and looks for the period at which it repeats.\n\nTempo estimation is a heuristic. Steady dance, pop and rock tracks are usually right within a fraction of a BPM. Half and double time are common mistakes, which is why both are shown. Music with changing tempo, rubato or very sparse rhythm gives low confidence. It analyses up to two minutes from the middle of the file.",
+ "howTo": [
+  "Choose an audio file.",
+  "Press Run.",
+  "Read the tempo and the confidence.",
+  "If it feels twice or half as fast as you would tap, use the alternative value."
+ ],
+ "faq": [
+  {
+   "q": "How accurate is it?",
+   "a": "On steady material we measured errors under 1 percent on synthetic test tracks. Real music varies; treat the value as a good first guess."
+  },
+  {
+   "q": "Why 140 instead of 70?",
+   "a": "Both describe the same pulse. Which one counts as the beat is a matter of feel, so both are listed."
+  },
+  {
+   "q": "What does confidence mean?",
+   "a": "It compares the strength of the chosen rhythm with the average. Below about 3, the track has no clear steady beat."
+  },
+  {
+   "q": "Can I tap the tempo myself?",
+   "a": "Yes, use the Tap Tempo tool."
+  }
+ ],
+ "related": [
+  "audio-bpm-tap",
+  "metronome",
+  "musical-key-finder",
+  "audio-speed-changer",
+  "drum-machine",
+  "pitch-shifter"
+ ],
+ "keywords": [
+  "bpm detector",
+  "find tempo of song",
+  "bpm counter from audio file",
+  "tempo analyzer online"
+ ]
+}

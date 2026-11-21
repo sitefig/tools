@@ -1,0 +1,47 @@
+{
+ "id": "decision-matrix",
+ "seoTitle": "Free Weighted Decision Matrix Calculator Online",
+ "metaDescription": "Score options against weighted criteria and rank them by total. Enter criteria and scores as simple lines. Free, runs in your browser, nothing is uploaded.",
+ "intro": "List your criteria with weights in the first box and your options with a score per criterion in the second, and get a ranked table of weighted totals.",
+ "why": "Choosing between vendors, tools, job offers or locations rarely comes down to one factor, and gut feeling tends to follow the most recent conversation. A weighted matrix makes the trade-offs explicit: what matters, how much, and how each option does.\n\nWrite criteria with a weight, then score each option on every criterion in the same order. The tool multiplies each score by its weight, divides by the total weight, and ranks the options. Because it shows the per-criterion scores next to the total, you can see why something won. The matrix supports a decision but does not make it, and changing a weight shows how sensitive the result is. Nothing is uploaded.",
+ "howTo": [
+  "In the first box, write one criterion per line as \"name, weight\", for example Price, 5.",
+  "In the second box, write one option per line as \"name, score, score, ...\" in the same order as the criteria.",
+  "Run the tool to see the options ranked by weighted score.",
+  "Change weights or scores and run again to test how stable the ranking is."
+ ],
+ "faq": [
+  {
+   "q": "What scale should I use for scores?",
+   "a": "Any consistent scale, commonly 1 to 10, with higher meaning better. For a cost criterion where lower is better, invert it first so a cheap option gets a high score."
+  },
+  {
+   "q": "How is the weighted score calculated?",
+   "a": "Each score is multiplied by its criterion's weight, the products are added and the sum is divided by the total weight. The result stays on your score scale, so a 10-point scale gives totals up to 10."
+  },
+  {
+   "q": "Why do I get an error about the number of scores?",
+   "a": "Every option needs exactly one score per criterion. If you have three criteria, each option line must have its name plus three numbers."
+  },
+  {
+   "q": "Can I put commas in names?",
+   "a": "In the criteria box, yes, because the weight is read from the end of the line. In the options box, the first value is the name and the remaining values are scores, so avoid commas in option names."
+  }
+ ],
+ "related": [
+  "rice-prioritization",
+  "competitor-comparison-matrix",
+  "swot-generator",
+  "average-median-mode",
+  "kanban-board",
+  "percentage-calculator"
+ ],
+ "keywords": [
+  "weighted decision matrix",
+  "decision matrix calculator",
+  "pugh matrix online",
+  "free decision making tool",
+  "weighted scoring model",
+  "compare options with criteria"
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Response Time Percentiles per Endpoint from Access Logs | Free Tools</title>
+<meta name="description" content="Compute p50, p90, p95 and p99 latency per endpoint from logs with request time. Pick the unit and merge numeric IDs. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/response-time-percentiles/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/response-time-percentiles/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/response-time-percentiles/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Response Time Percentiles per Endpoint from Access Logs | Free Tools">
+<meta property="og:description" content="Compute p50, p90, p95 and p99 latency per endpoint from logs with request time. Pick the unit and merge numeric IDs. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/response-time-percentiles/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Response Time Percentiles per Endpoint from Access Logs | Free Tools">
+<meta name="twitter:description" content="Compute p50, p90, p95 and p99 latency per endpoint from logs with request time. Pick the unit and merge numeric IDs. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Response Time Percentile Calculator per Endpoint (p50, p90, p95, p99)","url":"https://tools.sitefig.net/en/response-time-percentiles/","description":"Compute p50, p90, p95 and p99 latency per endpoint from logs with request time. Pick the unit and merge numeric IDs. Free.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Add the duration to your log format.","Paste the log lines.","Set the unit and whether to merge IDs.","Sort by p95, p99 or count."],"keywords":"p95 latency from access log, nginx request_time percentiles, endpoint latency report","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Log Parsing","item":"https://tools.sitefig.net/en/#log-parsing"},{"@type":"ListItem","position":3,"name":"Response Time Percentile Calculator per Endpoint (p50, p90, p95, p99)","item":"https://tools.sitefig.net/en/response-time-percentiles/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which percentile method?","acceptedAnswer":{"@type":"Answer","text":"Nearest rank: the smallest value with at least p percent of values at or below it."}},{"@type":"Question","name":"What if my log has a different layout?","acceptedAnswer":{"@type":"Answer","text":"Use the regex option with a named group rt, and optionally path."}},{"@type":"Question","name":"What unit does nginx use?","acceptedAnswer":{"@type":"Answer","text":"$request_time is in seconds with millisecond resolution; Apache %D is microseconds."}},{"@type":"Question","name":"Is my log uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#log-parsing">Log Parsing</a></li><li><span aria-current="page">Response Time Percentile Calculator per Endpoint (p50, p90, p95, p99)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Response Time Percentile Calculator per Endpoint (p50, p90, p95, p99)</h1>
+<p class="lede">Groups requests by route and computes latency percentiles with the nearest-rank method.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="response-time-percentiles" data-module="new12"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Averages hide slow requests. Percentiles show how bad the slow ones are. The tool groups by endpoint, optionally merging /items/12 and /items/13 into /items/:id.</p>
+<p>The log must record the duration: add $request_time to nginx or %D to Apache. Results were checked against a Python nearest-rank calculation.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Add the duration to your log format.</li><li>Paste the log lines.</li><li>Set the unit and whether to merge IDs.</li><li>Sort by p95, p99 or count.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which percentile method?</summary><p>Nearest rank: the smallest value with at least p percent of values at or below it.</p></details>
+<details><summary>What if my log has a different layout?</summary><p>Use the regex option with a named group rt, and optionally path.</p></details>
+<details><summary>What unit does nginx use?</summary><p>$request_time is in seconds with millisecond resolution; Apache %D is microseconds.</p></details>
+<details><summary>Is my log uploaded?</summary><p>No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/access-log-parser/"><span class="link-card__title">Apache and Nginx Access Log Parser (Common and Combined Format Table)</span><span class="link-card__desc">Turn Common or Combined Log Format lines into a table with IP, time, method, path, status, bytes, referrer and user agent. Filter by text, regex, status or method, sort, and export CSV or JSON.</span></a></li><li><a class="link-card" href="/en/log-format-to-regex/"><span class="link-card__title">Nginx log_format and Apache LogFormat to Regex Converter</span><span class="link-card__desc">Paste a log_format or LogFormat directive and get a regular expression with named groups for JavaScript and Python, plus a test against a sample line.</span></a></li><li><a class="link-card" href="/en/request-spike-detector/"><span class="link-card__title">Request Rate Spike Detector: Minutes with Unusual Traffic or Errors</span><span class="link-card__desc">Build a per-minute (or larger) count of requests and errors from an access log and flag buckets far above the typical level. The baseline is the median plus a multiple of the robust spread (MAD).</span></a></li><li><a class="link-card" href="/en/haproxy-log-parser/"><span class="link-card__title">HAProxy HTTP Log Parser: Timers and Termination State Decoder</span><span class="link-card__desc">Decode HAProxy httplog lines: client, frontend, backend/server, the Tq/Tw/Tc/Tr/Ta timers, status, bytes and the four-letter termination state such as sD-- explained in words.</span></a></li><li><a class="link-card" href="/en/alb-elb-log-parser/"><span class="link-card__title">AWS ALB and Classic ELB Access Log Parser (Latency and Errors)</span><span class="link-card__desc">Parse Application Load Balancer and Classic ELB access logs. Shows status codes from the balancer and the targets, latency percentiles, requests never sent to a target, and the slowest URLs.</span></a></li><li><a class="link-card" href="/en/top-ips-user-agents/"><span class="link-card__title">Top IPs and User Agents Report from an Access Log</span><span class="link-card__desc">Rank the busiest client IPs and user agents in a Common or Combined log with request count, share of traffic, bytes, error counts and first and last request.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

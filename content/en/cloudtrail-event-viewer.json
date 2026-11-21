@@ -1,0 +1,44 @@
+{
+ "id": "cloudtrail-event-viewer",
+ "seoTitle": "CloudTrail Event Viewer: Who Did What and When",
+ "metaDescription": "Load CloudTrail JSON and see events by name, identity, source, region and error, plus a short review list. Free, runs locally.",
+ "intro": "Summarises CloudTrail events and lists a few patterns worth a second look.",
+ "why": "CloudTrail files are large JSON. This page groups events by name, identity, service, region and IP so you can answer who did this and when.\n\nThe review list uses four fixed patterns: root identity, failed console login, console login without MFA and AccessDenied-type errors. These are hints, not findings.",
+ "howTo": [
+  "Open a Records JSON file, or paste JSON lines.",
+  "Filter by event name or identity.",
+  "Read the summary and the review list.",
+  "Switch to the table for each event."
+ ],
+ "faq": [
+  {
+   "q": "Which file shapes work?",
+   "a": "A {\"Records\": [...]} file, a JSON array, or one event per line. Gzip files are unpacked."
+  },
+  {
+   "q": "Is the review list a security audit?",
+   "a": "No. It is four simple patterns. Use proper tooling for audits."
+  },
+  {
+   "q": "Why is MFA flagged?",
+   "a": "ConsoleLogin events record whether MFA was used in additionalEventData."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "s3-access-log-parser",
+  "aws-arn-parser",
+  "aws-iam-policy-linter",
+  "iam-policy-simulator-lite",
+  "jsonl-log-filter",
+  "gcp-log-export-viewer"
+ ],
+ "keywords": [
+  "cloudtrail viewer",
+  "cloudtrail log analyzer",
+  "aws audit log summary"
+ ]
+}

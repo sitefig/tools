@@ -1,0 +1,45 @@
+{
+ "id": "pdf-image-watermark",
+ "seoTitle": "PDF Image Watermark: Stamp a Logo on Every Page",
+ "metaDescription": "Stamp a PNG, JPEG or WebP logo onto PDF pages: position, size, opacity, angle, or tiled. PNG transparency kept. Private, runs in your browser.",
+ "intro": "Places an image on the pages of a PDF at a corner, the centre or tiled across the page, with your chosen size, opacity and angle.",
+ "why": "Company logos, draft stamps, \"paid\" marks and confidentiality notices are usually images rather than text. Select one PDF and one image together; the tool decodes the image, keeps its transparency as an alpha mask and draws it on top of the page content.\n\nThe position is given relative to the page as you see it, so it works on rotated and cropped pages (we checked rotations of 90, 180 and 270 degrees with a crop box). A watermark drawn this way is part of the page and can be removed by someone with a PDF editor, so it is a deterrent, not protection. The file is rewritten, which drops form fields and bookmarks.",
+ "howTo": [
+  "Select a PDF and an image together in the file picker.",
+  "Choose the position, size, opacity and angle.",
+  "Optionally enter pages, such as 1-3.",
+  "Press Run and download the stamped PDF."
+ ],
+ "faq": [
+  {
+   "q": "Is the watermark removable?",
+   "a": "Yes, by anyone with a PDF editor. For stronger protection, flatten the pages to images first."
+  },
+  {
+   "q": "Does transparency work?",
+   "a": "Yes, for PNG and WebP with an alpha channel."
+  },
+  {
+   "q": "Can I stamp text instead?",
+   "a": "Use the Add Text Watermark tool."
+  },
+  {
+   "q": "Why is my large logo downsized?",
+   "a": "Images are reduced to at most 1200 pixels on the long side to keep the file small."
+  }
+ ],
+ "related": [
+  "pdf-add-text-watermark",
+  "pdf-signer",
+  "pdf-add-page-numbers",
+  "pdf-flattener",
+  "pdf-crop-margins",
+  "pdf-annotate"
+ ],
+ "keywords": [
+  "pdf image watermark",
+  "add logo to pdf",
+  "stamp image on pdf",
+  "pdf watermark online"
+ ]
+}

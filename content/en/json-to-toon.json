@@ -1,0 +1,45 @@
+{
+  "id": "json-to-toon",
+  "seoTitle": "JSON to TOON Converter: Fewer Tokens for LLM Prompts",
+  "metaDescription": "Convert JSON to TOON (Token-Oriented Object Notation), the compact indentation format with tabular arrays, and see the estimated token saving.",
+  "intro": "Shrink structured data for LLM prompts by writing arrays of uniform objects as tables instead of repeating every key.",
+  "why": "TOON writes objects with indentation, primitive arrays inline (tags[2]: a,b) and arrays of uniform objects as a header plus one row per item (users[2]{id,name}:). Strings are quoted only when needed. The output of this tool follows the core of the published spec and decodes with the reference @toon-format/toon library; tested by round-tripping thousands of random values in both directions.\n\nThis implementation writes the standard forms and does not use the newer nested-column or keyed-table extensions. Savings are largest for long lists of similar records; deeply nested or irregular data saves little. Token counts shown are 4-characters-per-token estimates.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste JSON.",
+    "Choose indentation and array delimiter (comma, tab or pipe).",
+    "Copy the TOON and read the character and token savings.",
+    "Tell the model the format in your prompt, or include one example."
+  ],
+  "faq": [
+    {
+      "q": "Do models understand TOON?",
+      "a": "Most do well with a short description or example, but test on your task before relying on it."
+    },
+    {
+      "q": "Is it always smaller?",
+      "a": "Uniform arrays shrink most. Small or irregular objects may save little or even grow."
+    },
+    {
+      "q": "Is it lossless?",
+      "a": "Yes for JSON data: numbers, strings, booleans, null, arrays and objects round-trip. NaN and Infinity become null."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "toon-to-json",
+    "llm-token-estimator",
+    "gpt-token-counter",
+    "json-format",
+    "json-minify",
+    "prompt-compressor"
+  ],
+  "keywords": [
+    "toon format",
+    "json to toon",
+    "token oriented object notation",
+    "reduce llm tokens"
+  ]
+}

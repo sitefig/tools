@@ -1,0 +1,43 @@
+{
+ "id": "webhook-payload-simulator",
+ "seoTitle": "Free Signed Webhook Payload Simulator and Tester",
+ "metaDescription": "Build a signed webhook request for GitHub, Stripe, Slack, Shopify or generic HMAC, with headers and a curl command. Nothing is sent. Free.",
+ "intro": "Choose a provider, a secret and a payload and get the exact body, headers, HMAC signature and a curl command to replay a signed webhook against your own endpoint. Nothing is sent from the browser.",
+ "why": "Testing a webhook receiver is awkward. The provider's dashboard may only send real events, local servers are not reachable from the internet, and a hand-made request fails because the signature does not match the exact bytes of the body. Getting the timestamp format and header name right for each provider adds more room for mistakes.\n\nThis tool builds the request the way the chosen provider would, signs it with the secret you enter and prints a curl command you can run against localhost or a staging URL. Because it only prepares the request, nothing leaves your browser. Use a test secret rather than your live signing secret, since the command and headers contain what is needed to forge valid requests.",
+ "howTo": [
+  "Choose a provider: GitHub, Stripe, Slack, Shopify or a generic HMAC scheme.",
+  "Enter your test signing secret and the endpoint URL, plus the event name for GitHub or Shopify.",
+  "Paste your JSON payload, or leave it blank to use a sample event.",
+  "Copy the curl command and run it against your endpoint to test signature verification."
+ ],
+ "faq": [
+  {
+   "q": "Does the tool send the webhook?",
+   "a": "No. It only builds the body, headers and signature, and prints a curl command. You run that command yourself, so you decide where the request goes and can inspect it first."
+  },
+  {
+   "q": "Why does my endpoint still reject the signature?",
+   "a": "Most often the body was changed after signing, for example by a parser that re-serialises the JSON. Verify the signature against the raw request body, byte for byte, and check the timestamp tolerance."
+  },
+  {
+   "q": "Should I use my real signing secret?",
+   "a": "Use a test secret. With the live secret, the generated command can produce valid-looking requests for your production endpoint, so keep it out of shared screens, tickets and shell history."
+  }
+ ],
+ "related": [
+  "webhook-signature-verifier",
+  "hmac-generator",
+  "curl-builder",
+  "jwt-signature-validator",
+  "http-wire-format",
+  "api-mock-response-generator"
+ ],
+ "keywords": [
+  "webhook payload simulator",
+  "test webhook signature",
+  "stripe webhook signature generator",
+  "github webhook hmac tester",
+  "signed webhook curl",
+  "free webhook testing tool"
+ ]
+}

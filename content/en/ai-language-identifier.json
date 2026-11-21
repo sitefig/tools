@@ -1,0 +1,38 @@
+{
+ "id": "ai-language-identifier",
+ "seoTitle": "AI Language Identifier: 176 Languages with fastText, Offline",
+ "metaDescription": "Identify the language of text with Facebook fastText lid.176, run by a JavaScript port in your browser. Probabilities, per-line mode, nothing uploaded.",
+ "intro": "Detect which of 176 languages a text is written in, with probabilities, using the fastText lid.176 model in your browser.",
+ "why": "Language identification routes text to the right translator, spell checker, hreflang tag or support queue, and flags pages in the wrong language. fastText lid.176 is a compact, well-known classifier trained on Wikipedia, Tatoeba and SETimes; this page reads its 917 KB file with a hand-written JavaScript reader and predictor and reproduces the reference implementation exactly on our test set.\n\nShort strings, mixed-language text and transliterated text (for example Hindi typed in Latin letters) are the weak spots, and related languages such as Serbian and Croatian blur together; the probability column tells you when to doubt it. The model file is licensed CC BY-SA 3.0 and loads from this site once; your text stays in the tab.",
+ "howTo": [
+  "Paste text; leave \"each line separately\" ticked to classify every line.",
+  "Press Identify.",
+  "Read the language, its probability and the next two candidates."
+ ],
+ "faq": [
+  {
+   "q": "How is this different from the Language Detector tool?",
+   "a": "The other tool is rule-based over a few languages. This one runs the trained fastText model and covers 176 languages with probabilities."
+  },
+  {
+   "q": "Why is a short phrase wrong?",
+   "a": "There is too little evidence in a few words. Lower probabilities flag these cases; add more text."
+  },
+  {
+   "q": "What licence applies?",
+   "a": "The lid.176 model is CC BY-SA 3.0 (Facebook AI Research). Attribution is shown on this page and in data/SOURCES-gap5.md."
+  }
+ ],
+ "related": [
+  "language-detector",
+  "hreflang-validator",
+  "hreflang-generator",
+  "ai-fill-mask",
+  "text-summarizer"
+ ],
+ "keywords": [
+  "language identification",
+  "fasttext lid176",
+  "detect language of text"
+ ]
+}

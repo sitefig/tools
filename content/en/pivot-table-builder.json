@@ -1,0 +1,44 @@
+{
+ "id": "pivot-table-builder",
+ "seoTitle": "Pivot Table Builder for CSV: Sum, Count, Average",
+ "metaDescription": "Summarise a CSV as a cross-tab by typing the row, column and value fields and sum, count, average, min or max. Free, no upload.",
+ "intro": "Builds a pivot table from a CSV: choose the row field, an optional column field and the value to summarise.",
+ "why": "A pivot answers questions like revenue by region and product in one table. Instead of dragging fields, you type their names, which works with a keyboard and is easy to repeat.\n\nValues that are not numbers are skipped and counted, except with count. Totals are added for rows and columns; averages in the total cells are averages of all values, not of the cells shown. For several measures run the tool once per measure.",
+ "howTo": [
+  "Paste the CSV with a header.",
+  "Type the row field, column field (optional) and the value field.",
+  "Choose sum, count, average, min or max.",
+  "Copy or download the pivot as CSV."
+ ],
+ "faq": [
+  {
+   "q": "Can I use two row fields?",
+   "a": "Not yet. Merge the two columns first with the column merger."
+  },
+  {
+   "q": "What is in empty cells?",
+   "a": "Combinations with no rows are left empty."
+  },
+  {
+   "q": "Are totals averages of averages?",
+   "a": "No. They are computed over all underlying values."
+  },
+  {
+   "q": "Large tables?",
+   "a": "It is held in memory; tens of thousands of rows are fine."
+  }
+ ],
+ "related": [
+  "csv-column-profiler",
+  "column-statistics-summarizer",
+  "sql-on-csv",
+  "wide-to-long-reshaper",
+  "table-joiner",
+  "heatmap-maker"
+ ],
+ "keywords": [
+  "pivot table csv",
+  "cross tab from csv",
+  "group by sum online"
+ ]
+}

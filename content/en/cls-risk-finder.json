@@ -1,0 +1,44 @@
+{
+ "id": "cls-risk-finder",
+ "seoTitle": "CLS Risk Finder: Find Layout Shift Causes in Your HTML",
+ "metaDescription": "Scan pasted HTML and CSS for common layout shift causes: images and embeds without size, late ad slots, font swaps, script-inserted content.",
+ "intro": "Reviews markup for the usual causes of Cumulative Layout Shift and lists what to fix.",
+ "why": "Layout shift mostly comes from a short list of mistakes. Many can be seen in the source before any test.\n\nThis is a static read: images and iframes without dimensions, ad and banner slots with no reserved height, Google Fonts without display, @font-face without font-display, scripts that insert content at the top, and keyframes that move layout properties. It cannot see external CSS or real timing, so confirm with the Layout Instability API or Lighthouse.",
+ "howTo": [
+  "Paste the page HTML including inline style and script.",
+  "Read each review item with its line.",
+  "Add sizes, reserved space or font-display.",
+  "Measure again with the Web Vitals bookmarklet."
+ ],
+ "faq": [
+  {
+   "q": "Is this a CLS score?",
+   "a": "No. It lists risks. Only a browser measurement gives a score."
+  },
+  {
+   "q": "Why flag banners and cookie notices?",
+   "a": "Late-inserted blocks without reserved height push content down."
+  },
+  {
+   "q": "Does it read my CSS files?",
+   "a": "Only inline style tags you paste."
+  },
+  {
+   "q": "Is the HTML sent anywhere?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "image-size-attributes",
+  "web-vitals-bookmarklet",
+  "core-web-vitals-grader",
+  "font-loading-snippet-generator",
+  "lazy-loading-injector",
+  "image-seo"
+ ],
+ "keywords": [
+  "cls risk finder",
+  "cumulative layout shift causes",
+  "fix layout shift html"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "oven-temperature-converter",
+ "seoTitle": "Oven Temperature Converter: Gas Mark, Celsius, Fan, Fahrenheit",
+ "metaDescription": "Convert oven settings between gas mark, Celsius, fan Celsius and Fahrenheit using the common UK chart. Free.",
+ "intro": "Converts recipe oven temperatures between gas mark, conventional Celsius, fan-oven Celsius and Fahrenheit.",
+ "why": "UK recipes use gas marks, US recipes Fahrenheit and many ovens are fan-assisted. A fan oven is usually set about 20 C lower.\n\nEnter any one setting and see the others. Gas marks follow the usual chart, which differs by a few degrees between sources.",
+ "howTo": [
+  "Enter the setting from the recipe.",
+  "Choose what kind of setting it is.",
+  "Read the settings for your oven."
+ ],
+ "faq": [
+  {
+   "q": "What is gas mark 4 in Celsius?",
+   "a": "180 C, which is 350 F, or 160 C in a fan oven."
+  },
+  {
+   "q": "Is the fan rule exact?",
+   "a": "No. 20 C is a common rule. Some makers advise 10 to 25 C."
+  },
+  {
+   "q": "Can I enter 1/4 or 1/2?",
+   "a": "Yes, as text, with the Gas mark option."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "cooking-measurement-converter",
+  "recipe-scaler",
+  "volume-us-imperial-converter",
+  "time-duration-calculator",
+  "btu-calculator"
+ ],
+ "keywords": [
+  "gas mark to celsius",
+  "350f in celsius",
+  "fan oven temperature"
+ ]
+}

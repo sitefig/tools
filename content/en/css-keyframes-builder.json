@@ -1,0 +1,41 @@
+{
+ "id": "css-keyframes-builder",
+ "seoTitle": "CSS @keyframes Builder: Write Keyframes, Get Animation CSS",
+ "metaDescription": "Write keyframes as one line each and get a full @keyframes block, animation shorthand and live preview. Includes reduced-motion handling.",
+ "intro": "Builds a @keyframes block from simple lines like \"50%: opacity: 1; transform: scale(1.1)\" and adds the animation shorthand and a reduced-motion override.",
+ "why": "Preset animation tools are fine until you need your own steps. Writing @keyframes by hand is mostly typing braces.\n\nHere each keyframe is one line. The tool sorts them by percentage, checks the syntax, merges lines for the same percentage, and outputs the animation shorthand with your timing, direction and fill mode. It also adds a prefers-reduced-motion block so the animation can be switched off for users who ask for that.",
+ "howTo": [
+  "Write one keyframe per line: percent, a colon, then declarations.",
+  "Set name, duration, easing, iterations, direction and fill mode.",
+  "Watch the preview box.",
+  "Copy the CSS."
+ ],
+ "faq": [
+  {
+   "q": "Can I use from and to?",
+   "a": "Yes. Use from, to or percentages, and comma-separate several keys such as \"0%, 100%: opacity: 0\"."
+  },
+  {
+   "q": "Why a reduced-motion block?",
+   "a": "Some people get discomfort from motion. The block turns the animation off when their system asks for that."
+  },
+  {
+   "q": "Does it check property names?",
+   "a": "No. It checks the structure, not whether each property is animatable."
+  }
+ ],
+ "related": [
+  "css-animation-generator",
+  "css-cubic-bezier",
+  "css-spring-easing-generator",
+  "css-transform-generator",
+  "css-loader-generator",
+  "motion-animation-checker"
+ ],
+ "keywords": [
+  "css keyframes builder",
+  "keyframes generator",
+  "css animation code",
+  "@keyframes editor"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "musical-key-finder",
+ "seoTitle": "Musical Key Finder: Detect the Key of a Song",
+ "metaDescription": "Detect the likely key of a song from an audio file, with the top three matches and Camelot codes for DJ mixing. Free and private, runs locally.",
+ "intro": "Listens to an audio file, measures how much energy falls on each of the twelve pitch classes, and compares that profile with the Krumhansl-Kessler major and minor key profiles.",
+ "why": "Knowing the key helps you mix tracks harmonically, pick a scale for a solo or find a sample that fits. The method counts pitch classes over time and finds the key whose typical note usage matches best. A tuning estimate corrects for recordings that are slightly off A440.\n\nIt is a statistical guess. A song and its relative key (for example C major and A minor) share the same notes and are easy to confuse. Music that modulates, atonal music and noisy percussion give lower scores. The result lists three candidates with their Camelot wheel codes so you can see the close alternatives.",
+ "howTo": [
+  "Choose an audio file.",
+  "Press Run.",
+  "Read the top three keys and their match scores.",
+  "If the first two are a relative major and minor pair, trust your ear to choose."
+ ],
+ "faq": [
+  {
+   "q": "How reliable is it?",
+   "a": "In our synthetic tests it named the right key every time. Real recordings are harder; a match above about 0.8 is usually dependable."
+  },
+  {
+   "q": "What is the Camelot code?",
+   "a": "A wheel notation DJs use: 8B is C major and 8A is A minor, and neighbouring numbers mix well."
+  },
+  {
+   "q": "Does it use my whole file?",
+   "a": "It analyses up to two minutes from the middle of the file."
+  },
+  {
+   "q": "Which key profiles are used?",
+   "a": "The Krumhansl-Kessler probe-tone profiles for major and minor."
+  }
+ ],
+ "related": [
+  "bpm-detector",
+  "instrument-tuner",
+  "pitch-shifter",
+  "tone-generator",
+  "spectrogram-viewer",
+  "audio-spectrum-analyzer"
+ ],
+ "keywords": [
+  "key finder",
+  "detect key of song",
+  "musical key detector",
+  "camelot key finder"
+ ]
+}

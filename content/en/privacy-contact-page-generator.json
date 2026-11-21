@@ -1,0 +1,41 @@
+{
+ "id": "privacy-contact-page-generator",
+ "seoTitle": "Privacy Contact Page and privacy.txt Generator",
+ "metaDescription": "Build a privacy contact page and a security.txt-style privacy.txt with DPO, email, request form and policy links. Free, local.",
+ "intro": "Generates a privacy contact page in HTML and a small text file with your privacy contacts.",
+ "why": "People who want to use their data rights need to find the right contact quickly. A dedicated page with the DPO, email, postal address and request form helps them, and so does a machine-readable file.\n\nThis tool builds both. The text file copies the look of security.txt but no standard defines a privacy.txt, so browsers and regulators do not read it automatically. Keep the page and your privacy policy consistent.",
+ "howTo": [
+  "Fill in the organisation and contact details.",
+  "Copy the HTML into a page on your site.",
+  "Publish the text file at /.well-known/privacy.txt if you want to.",
+  "Link the page from your privacy policy and footer."
+ ],
+ "faq": [
+  {
+   "q": "Is privacy.txt a standard?",
+   "a": "No. It is an informal convention, modelled on security.txt (RFC 9116)."
+  },
+  {
+   "q": "Is a DPO required?",
+   "a": "Only in some cases (GDPR Art. 37). Leave the field empty if you have none."
+  },
+  {
+   "q": "Where should I link the page?",
+   "a": "In the footer and the privacy policy."
+  }
+ ],
+ "related": [
+  "security-txt-generator",
+  "privacy-policy-generator",
+  "data-deletion-request-letter",
+  "impressum-generator",
+  "cookie-policy-generator",
+  "dsr-response-templates"
+ ],
+ "keywords": [
+  "privacy contact page",
+  "dpo contact page",
+  "privacy.txt",
+  "data protection contact"
+ ]
+}

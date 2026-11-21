@@ -1,0 +1,41 @@
+{
+ "id": "line-break-remover",
+ "seoTitle": "Line Break Remover: Unwrap Text Copied from PDF or Email",
+ "metaDescription": "Join hard-wrapped lines back into paragraphs, keep real paragraph breaks and bullet lists, and mend hyphenated words. Free, in your browser.",
+ "intro": "Join text copied from a PDF or email back into flowing paragraphs, keeping real paragraph breaks, bullet lists and optionally mending hyphenated words.",
+ "why": "Text copied from a PDF or a plain-text email breaks at every line end. Pasting it into a document gives a ragged column of short lines.\n\nThis tool joins the lines of each paragraph, keeps blank-line paragraph breaks, can keep bullets and numbered items on their own lines, and joins words split with a hyphen at the line end. Or remove every break. A word such as well-known that happens to break at its hyphen is also joined, so check the result.",
+ "howTo": [
+  "Paste the wrapped text.",
+  "Choose whether to mend hyphenated line ends and keep list items.",
+  "Tick the last option to get one single line.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Why are some hyphens removed?",
+   "a": "A hyphen at a line end followed by a lowercase letter is treated as a split word. A real compound such as well-known may lose its hyphen, so read the result."
+  },
+  {
+   "q": "How are paragraphs found?",
+   "a": "A blank line starts a new paragraph. Text with no blank lines becomes one paragraph."
+  },
+  {
+   "q": "Does it change my words?",
+   "a": "No. Only line breaks, spaces and split hyphens change."
+  }
+ ],
+ "related": [
+  "text-cleaner",
+  "remove-empty-lines-trim",
+  "find-replace",
+  "line-ending-normalizer",
+  "transcript-cleaner",
+  "text-splitter"
+ ],
+ "keywords": [
+  "remove line breaks",
+  "unwrap text",
+  "join lines",
+  "fix pdf copy paste"
+ ]
+}

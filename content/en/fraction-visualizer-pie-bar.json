@@ -1,0 +1,45 @@
+{
+ "id": "fraction-visualizer-pie-bar",
+ "seoTitle": "Fraction Visualizer: Pie and Bar Models with Comparison",
+ "metaDescription": "Draw fractions like 3/8 as shaded circle slices and bars, compare two fractions and see the decimal and lowest terms. Free.",
+ "intro": "Draws each fraction as a pie and a bar, converts it to lowest terms, mixed number and decimal, and compares two fractions.",
+ "why": "Fractions make more sense when you can see them. Type 3/8 and see 3 of 8 slices shaded; type 3/8, 1/2 and the tool draws both and explains the comparison by cross-multiplying.\n\nMixed numbers like 1 3/4 are drawn as full circles plus a part. Denominators up to 24 and values up to 4 are supported to keep the drawings readable. The text lines give the lowest terms, the mixed number and the exact decimal.",
+ "howTo": [
+  "Type one fraction, or several separated by commas.",
+  "Use 3/8 or 1 3/4 for mixed numbers.",
+  "With two fractions the comparison is added.",
+  "Read the lines under the drawing."
+ ],
+ "faq": [
+  {
+   "q": "What is the largest denominator?",
+   "a": "24."
+  },
+  {
+   "q": "Can I use negatives?",
+   "a": "Yes, but the picture shows the size of the fraction."
+  },
+  {
+   "q": "How are two fractions compared?",
+   "a": "By cross-multiplication, shown step by step."
+  },
+  {
+   "q": "Can I print it?",
+   "a": "Yes, with your browser print function."
+  }
+ ],
+ "related": [
+  "fraction-calculator",
+  "number-line-jumps",
+  "math-worksheet-generator",
+  "gcd-lcm-euclid-steps",
+  "multiplication-table-trainer",
+  "recipe-scaler"
+ ],
+ "keywords": [
+  "fraction visualizer",
+  "fraction pie chart",
+  "compare fractions visually",
+  "fraction bar model"
+ ]
+}

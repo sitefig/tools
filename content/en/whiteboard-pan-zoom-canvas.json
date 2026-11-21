@@ -1,0 +1,45 @@
+{
+ "id": "whiteboard-pan-zoom-canvas",
+ "seoTitle": "Online Whiteboard: Pan, Zoom, Draw, Export SVG or PNG",
+ "metaDescription": "A free whiteboard with pen, shapes, text and eraser, panning and zooming, undo, and full keyboard drawing. Export SVG, PNG or JSON. Nothing is uploaded or saved.",
+ "intro": "A drawing canvas with no edges: draw with a pointer or the keyboard, pan and zoom, undo and redo, and export what you drew as SVG, PNG or JSON.",
+ "why": "Most whiteboards need a mouse or a pen. This one also works from the keyboard: Tab to the board, move a pink cursor with the arrow keys, and press Space to start and finish a stroke, line, rectangle or ellipse, to place text, or to erase the object under the cursor. Alt plus the arrows pans, plus and minus zoom, and Ctrl+Z undoes. A box for exact coordinates adds shapes by number, and a list of objects with Delete buttons stands in for selection.\n\nDrawings are vector objects, so SVG export stays sharp at any size, and PNG export can cover the whole drawing or only the visible area. The board is not saved when you leave the page, so export before closing. Eraser removes a whole object, not pixels.",
+ "howTo": [
+  "Choose a tool, colour and line width.",
+  "Draw with the pointer, or Tab to the board and use the arrow keys and Space.",
+  "Pan with the wheel, the Pan tool or Alt plus arrows, and zoom with Ctrl plus the wheel or the plus and minus keys.",
+  "Export SVG, PNG or JSON, or reopen a saved JSON file later."
+ ],
+ "faq": [
+  {
+   "q": "Is my drawing saved?",
+   "a": "Not automatically. Nothing is stored or sent. Use Save as JSON to keep it and Open JSON to bring it back."
+  },
+  {
+   "q": "How do I draw straight lines from the keyboard?",
+   "a": "Pick the Line tool, press Space for the start, move with the arrow keys, press Space again for the end."
+  },
+  {
+   "q": "Can I move or resize an object?",
+   "a": "Not yet. You can delete it from the list or with the eraser and draw it again, or undo."
+  },
+  {
+   "q": "What does the SVG contain?",
+   "a": "The strokes, shapes and text as plain vector elements, with an optional white background. Text uses the sans-serif font of whoever opens it."
+  }
+ ],
+ "related": [
+  "svg-path-editor",
+  "svg-to-png",
+  "svg-preview-editor",
+  "image-cropper",
+  "mind-map-svg-builder",
+  "text-box-drawer"
+ ],
+ "keywords": [
+  "online whiteboard",
+  "infinite canvas drawing",
+  "free whiteboard export svg",
+  "keyboard accessible drawing"
+ ]
+}

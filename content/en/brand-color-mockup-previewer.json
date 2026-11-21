@@ -1,0 +1,45 @@
+{
+ "id": "brand-color-mockup-previewer",
+ "seoTitle": "Brand Color Mockup Previewer: See a Palette on UI and Poster",
+ "metaDescription": "Assign colours to primary, accent, background, surface and text, then preview them on a web page, app card and poster. Free, local.",
+ "intro": "Previews your palette roles on fixed sample layouts and lists the contrast of the main text and accent pairs.",
+ "why": "A palette looks different in use than in a row of swatches. Give each role a colour and see a nav bar, hero, buttons, cards, an app screen and a poster use it. Button text colour is chosen for the better contrast on the fill.\n\nThe layouts are fixed examples for judging balance, not templates. Contrast figures use the WCAG 2 ratio, and low values are marked for review.",
+ "howTo": [
+  "Enter one role per line: primary, accent, background, text and optionally surface.",
+  "Run the tool.",
+  "Review the previews and the contrast list.",
+  "Change colours and run again."
+ ],
+ "faq": [
+  {
+   "q": "Which roles are required?",
+   "a": "primary, accent, background and text. Surface is optional."
+  },
+  {
+   "q": "Can I add a custom layout?",
+   "a": "No. The previews are fixed."
+  },
+  {
+   "q": "Is the preview responsive?",
+   "a": "It sits in a frame and wraps cards when narrow."
+  },
+  {
+   "q": "What is checked?",
+   "a": "Text on background, text on surface, primary on background and accent on background."
+  }
+ ],
+ "related": [
+  "contrast-checker",
+  "palette-contrast-matrix",
+  "accessible-palette-fixer",
+  "palette-generator",
+  "color-harmony-wheel",
+  "theme-color-meta-generator"
+ ],
+ "keywords": [
+  "palette mockup preview",
+  "brand colors preview",
+  "color scheme on website",
+  "ui color tester"
+ ]
+}

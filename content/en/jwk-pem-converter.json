@@ -1,0 +1,45 @@
+{
+ "id": "jwk-pem-converter",
+ "seoTitle": "Free JWK to PEM Converter (and PEM to JWK) Online",
+ "metaDescription": "Convert JSON Web Keys to PEM and PEM to JWK. RSA, EC P-256/384/521 and Ed25519, single keys or JWKS. Free, runs in your browser.",
+ "intro": "Converts between JWK and PEM for RSA, elliptic-curve and Ed25519 keys. Accepts a JWK, a JWKS or PEM blocks.",
+ "why": "JWKS endpoints and JOSE libraries use JWK. OpenSSL, nginx and many SDKs want PEM. Converting by hand means working with Base64url and ASN.1, which is easy to get wrong.\n\nPaste a JWK or JWKS and get PKCS#8 and SPKI PEM, plus the RSA-specific PKCS#1 forms. Paste PEM and get a JWK with an RFC 7638 thumbprint as kid. The conversion uses WebCrypto, so it uses your browser's own key parsing. Results were checked against OpenSSL for RSA and EC keys.",
+ "howTo": [
+  "Paste a JWK, a JWKS or one or more PEM blocks.",
+  "Read the converted keys.",
+  "Copy what you need.",
+  "Delete private keys from the page afterwards."
+ ],
+ "faq": [
+  {
+   "q": "Which key types work?",
+   "a": "RSA, EC with P-256, P-384 and P-521, and OKP with Ed25519. SEC1 \"EC PRIVATE KEY\" and encrypted PEM are rejected with a hint."
+  },
+  {
+   "q": "Why does the JWK from PEM have no alg?",
+   "a": "A PEM key does not say which signing algorithm it will be used with, so alg and use are left out. Add them yourself."
+  },
+  {
+   "q": "Is my private key uploaded?",
+   "a": "No. All conversion runs locally. Still, paste real production keys only on a machine you trust."
+  },
+  {
+   "q": "Are other curves such as secp256k1 supported?",
+   "a": "No. WebCrypto does not support them."
+  }
+ ],
+ "related": [
+  "ecdsa-key-generator",
+  "rsa-pkcs1-pkcs8-converter",
+  "jwt-signature-validator",
+  "asn1-der-decoder",
+  "x509-viewer",
+  "ssh-key-inspector"
+ ],
+ "keywords": [
+  "jwk to pem",
+  "pem to jwk",
+  "convert jwk to pem online",
+  "jwks to pem"
+ ]
+}

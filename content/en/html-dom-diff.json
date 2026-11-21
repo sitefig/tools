@@ -1,0 +1,41 @@
+{
+ "id": "html-dom-diff",
+ "seoTitle": "HTML DOM Diff: Compare Two Pages by Structure and Text",
+ "metaDescription": "Compare two HTML documents as trees and list added, removed and changed elements, attributes and text, ignoring formatting.",
+ "intro": "Compares two HTML snippets by structure and text, not by lines, and lists each difference with its element path.",
+ "why": "A text diff of two HTML files is noisy when indentation, attribute order or class order changed. This tool parses both, ignores whitespace and comments, and matches child elements by tag and id.\n\nIt reports elements added or removed, attributes added, removed or changed, and text changes, each with a path such as div#app > p. Elements are matched by position among same-tag siblings, so a reordered block shows as a remove plus an add.",
+ "howTo": [
+  "Paste the old HTML in A and the new in B.",
+  "Choose whether to ignore class order.",
+  "Read the differences.",
+  "Use the list to review a migration or template change."
+ ],
+ "faq": [
+  {
+   "q": "How is it different from a text diff?",
+   "a": "It ignores formatting and compares the element tree."
+  },
+  {
+   "q": "Does it render JavaScript?",
+   "a": "No. It compares the source you paste."
+  },
+  {
+   "q": "Why is a moved block a remove plus add?",
+   "a": "Matching is by order among siblings, not by content similarity."
+  }
+ ],
+ "related": [
+  "seo-html-compare",
+  "rendered-vs-raw-html-diff",
+  "text-diff",
+  "code-diff-html",
+  "schema-markup-diff",
+  "json-diff"
+ ],
+ "keywords": [
+  "html diff",
+  "compare html documents",
+  "dom diff tool",
+  "html structure compare"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "video-watermarker",
+ "seoTitle": "Video Watermarker: Add a Logo or Text Overlay in Your Browser",
+ "metaDescription": "Put a logo or text on every frame of a video. Choose position, size and opacity. Private, no upload.",
+ "intro": "Overlays text or an image logo on every frame of a video. You set the corner, size, opacity and margin.",
+ "why": "A watermark discourages casual reuse and brands your clips. The overlay is drawn on each frame as the video is recorded, so it becomes part of the picture.\n\nNothing is uploaded. The file is decoded by your browser and re-encoded, so quality drops a little and the result is WebM (or MP4 where your browser can record it). It records in real time, so a 60 second clip takes about a minute and the tab must stay visible. A visible watermark can be cropped out, so it is a deterrent, not protection.",
+ "howTo": [
+  "Choose the video.",
+  "Type the watermark text or choose a logo image (the logo wins if both are set).",
+  "Set position, size and opacity.",
+  "Process and download."
+ ],
+ "faq": [
+  {
+   "q": "Which image formats work for a logo?",
+   "a": "Any your browser can open: PNG, JPG, WebP, SVG. Use a transparent PNG for best results."
+  },
+  {
+   "q": "Can the watermark be removed?",
+   "a": "Not easily, but a determined person can crop or paint over it."
+  },
+  {
+   "q": "Can I animate it?",
+   "a": "No. It stays in one place."
+  },
+  {
+   "q": "Does it work on images too?",
+   "a": "Use the Image Watermark tool for pictures."
+  }
+ ],
+ "related": [
+  "image-watermark",
+  "subtitle-burner",
+  "video-trimmer",
+  "picture-in-picture-composer",
+  "video-compressor",
+  "video-cropper"
+ ],
+ "keywords": [
+  "watermark video online",
+  "add logo to video",
+  "video text overlay",
+  "brand video clip"
+ ]
+}

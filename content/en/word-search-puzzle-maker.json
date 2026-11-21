@@ -1,0 +1,45 @@
+{
+ "id": "word-search-puzzle-maker",
+ "seoTitle": "Word Search Puzzle Maker with Answer Key",
+ "metaDescription": "Hide your word list in a letter grid, choose the grid size and directions, and print the puzzle and a marked answer key. Free.",
+ "intro": "Builds a word search from your word list, with easy, medium or hard directions, a printable word list and an answer-key page with the words highlighted.",
+ "why": "A word search is a quick classroom activity when the words come from your lesson. Paste the list, set a grid size from 8 to 30, and choose directions: right and down only, add diagonals, or all eight directions including backwards.\n\nWords can share letters where they cross. Every placement is verified by reading the grid back, and the tool was checked with an independent search for every word in hundreds of grids. The same seed gives the same puzzle. Print from your browser or save as PDF.",
+ "howTo": [
+  "Enter your words, one per line or separated by commas.",
+  "Choose grid size and direction level.",
+  "Change the seed for a new layout.",
+  "Print the puzzle page and the answer key."
+ ],
+ "faq": [
+  {
+   "q": "What if a word does not fit?",
+   "a": "You get a message to use a larger grid or fewer words."
+  },
+  {
+   "q": "Are accents kept?",
+   "a": "No, only letters A to Z are used."
+  },
+  {
+   "q": "Can I get the same puzzle again?",
+   "a": "Yes, use the same seed."
+  },
+  {
+   "q": "Where is the answer key?",
+   "a": "On the second page, with the words highlighted."
+  }
+ ],
+ "related": [
+  "crossword-puzzle-maker",
+  "math-worksheet-generator",
+  "quiz-builder-html-file",
+  "handwriting-practice-sheet-maker",
+  "bingo-card-generator",
+  "memory-match"
+ ],
+ "keywords": [
+  "word search maker",
+  "word search generator",
+  "printable word search",
+  "puzzle maker with answers"
+ ]
+}

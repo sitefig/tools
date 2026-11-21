@@ -1,0 +1,45 @@
+{
+ "id": "line-ending-normalizer",
+ "seoTitle": "Line Ending Converter: CRLF to LF and Back",
+ "metaDescription": "Convert text or a file between CRLF, LF and CR line endings and count how many of each a file has. Runs in your browser.",
+ "intro": "Converts line endings and, for files, reports which endings the file has.",
+ "why": "Mixed line endings cause noisy diffs, broken shell scripts and odd characters. Windows uses CRLF, Unix and macOS use LF, and very old Mac files use CR.\n\nBrowsers turn every line break in a text box into LF, so pasted text cannot show its original endings. Choose a file to see the counts and get a converted copy to download. You can also remove trailing spaces and end with one line break. Binary files are refused.",
+ "howTo": [
+  "Choose a file, or paste text.",
+  "Pick the ending to convert to.",
+  "Optionally trim trailing spaces and end with one line break.",
+  "Download the file or copy the text."
+ ],
+ "faq": [
+  {
+   "q": "Why does pasted text not show CRLF?",
+   "a": "Browsers normalise line breaks in text boxes. Use the file option."
+  },
+  {
+   "q": "Is my file uploaded?",
+   "a": "No."
+  },
+  {
+   "q": "What encoding is assumed?",
+   "a": "UTF-8."
+  },
+  {
+   "q": "Which ending should I use?",
+   "a": "LF for most code and CRLF for Windows batch files."
+  }
+ ],
+ "related": [
+  "tabs-spaces-converter",
+  "text-column-splitter",
+  "hex-dump-viewer",
+  "code-diff-html",
+  "markdown-formatter",
+  "shell-script-formatter"
+ ],
+ "keywords": [
+  "crlf to lf converter",
+  "line ending converter",
+  "dos2unix online",
+  "normalize line endings"
+ ]
+}

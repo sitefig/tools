@@ -1,0 +1,46 @@
+{
+ "id": "a11y-html-check",
+ "seoTitle": "Free Accessibility HTML Lint (Basic WCAG Checks)",
+ "metaDescription": "Run basic accessibility checks on pasted HTML: lang, alt text, labels, links, buttons, headings and more. Free; not a full WCAG audit.",
+ "intro": "Paste HTML to catch common accessibility errors such as missing lang, alt text, form labels, link and button names, duplicate ids and keyboard problems. It is not a full WCAG audit.",
+ "why": "Many accessibility failures are simple markup mistakes: an image without alt text, a form field without a label, a button that contains only an icon, a div used as a click target that a keyboard cannot reach. Catching them early in the HTML is cheaper than fixing them after an audit or a complaint.\n\nThis lint scans the markup you paste for the most common problems and refers to the related WCAG criterion where it can. It checks the lang attribute, title, landmarks, zoom blocking, alt text, duplicate ids, labels, accessible names for buttons and links, iframe titles, tabindex, table headers, captions and obsolete elements. It is a static check: colour contrast, focus visibility and dynamic behaviour need testing in a browser with real assistive technology. It runs locally.",
+ "howTo": [
+  "Copy the HTML of the page or component and paste it into the input box.",
+  "Run the tool to scan the markup.",
+  "Work through the errors first, then the warnings and notes.",
+  "Test the page with a keyboard and a screen reader, as this tool cannot cover everything."
+ ],
+ "faq": [
+  {
+   "q": "Does passing mean my page is accessible?",
+   "a": "No. A static check finds only a fraction of problems. Colour contrast, focus order, dynamic content and the quality of labels need manual testing and, ideally, users with assistive technology."
+  },
+  {
+   "q": "Which standard does it refer to?",
+   "a": "It points to relevant WCAG success criteria in some messages, for example 1.1.1 for alt text and 3.1.1 for page language. It does not claim a conformance level."
+  },
+  {
+   "q": "Why is a div with onclick flagged?",
+   "a": "A div is not focusable or announced as a control by default. Use a button element, or add a role, tabindex and key handling, so keyboard and screen reader users can operate it."
+  },
+  {
+   "q": "Is my HTML sent anywhere?",
+   "a": "No. The scan runs in your browser and the markup you paste is not uploaded. You can even load the page and then disconnect from the network before running it."
+  }
+ ],
+ "related": [
+  "seo-inspector",
+  "heading-analyzer",
+  "image-seo",
+  "contrast-checker",
+  "color-blindness-simulator",
+  "html-format"
+ ],
+ "keywords": [
+  "accessibility html checker",
+  "wcag html lint",
+  "check alt text and labels",
+  "a11y checker online",
+  "html accessibility audit free"
+ ]
+}

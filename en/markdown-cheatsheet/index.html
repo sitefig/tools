@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Markdown Cheatsheet with Live Rendered Examples | Free Tools</title>
+<meta name="description" content="A quick Markdown syntax reference showing every common construct next to its rendered result. Free, works in your browser, nothing is uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/markdown-cheatsheet/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/markdown-cheatsheet/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/markdown-cheatsheet/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Markdown Cheatsheet with Live Rendered Examples | Free Tools">
+<meta property="og:description" content="A quick Markdown syntax reference showing every common construct next to its rendered result. Free, works in your browser, nothing is uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/markdown-cheatsheet/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Markdown Cheatsheet with Live Rendered Examples | Free Tools">
+<meta name="twitter:description" content="A quick Markdown syntax reference showing every common construct next to its rendered result. Free, works in your browser, nothing is uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Markdown Cheatsheet","url":"https://tools.sitefig.net/en/markdown-cheatsheet/","description":"A quick Markdown syntax reference showing every common construct next to its rendered result. Free, works in your browser, nothing is uploaded.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Open the page and scan the table for the element you need.","Copy the syntax from the middle column.","Compare the rendered result in the right column.","Try your own text in the Markdown preview tool."],"keywords":"markdown cheatsheet, markdown syntax guide, markdown quick reference, markdown table syntax, free markdown reference","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Reference","item":"https://tools.sitefig.net/en/#reference"},{"@type":"ListItem","position":3,"name":"Markdown Cheatsheet","item":"https://tools.sitefig.net/en/markdown-cheatsheet/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which Markdown flavour does it show?","acceptedAnswer":{"@type":"Answer","text":"CommonMark with common GitHub extensions: tables, task lists and strikethrough. Platform-specific extras, such as footnotes, emoji shortcodes or callout blocks, are not covered because they differ between sites."}},{"@type":"Question","name":"Why does my Markdown look different on another site?","acceptedAnswer":{"@type":"Answer","text":"Markdown has several dialects. Details like line breaks, nested list indentation and raw HTML handling vary, so a document can render differently in a forum, a wiki or a static site generator."}},{"@type":"Question","name":"How do I show a literal asterisk or backtick?","acceptedAnswer":{"@type":"Answer","text":"Put a backslash in front of it, as in the Escape row of the table. Inside inline code you can also wrap the code in a longer run of backticks."}},{"@type":"Question","name":"Can I edit the examples?","acceptedAnswer":{"@type":"Answer","text":"Not on this page. To experiment, paste the syntax into the Markdown preview tool and change it there."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#reference">Reference</a></li><li><span aria-current="page">Markdown Cheatsheet</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Markdown Cheatsheet</h1>
+<p class="lede">A one-page reference for common Markdown syntax. Each row shows the element, the source you type and how it renders, covering headings, emphasis, links, lists, code, tables and more.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="markdown-cheatsheet" data-module="text"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Most people know a handful of Markdown rules and forget the rest the moment they need them. How do you write a task list, add a title to a link, or make a table align right? Searching returns long guides when you want a quick answer.</p>
+<p>This cheatsheet is a single table. The middle column shows exactly what to type and the right column shows what you get, rendered by the same converter used in the Markdown to HTML tool. It covers headings, bold, italic, strikethrough, inline code, links, images, autolinks, reference links, block quotes, lists, task lists, code fences, rules, tables, line breaks and escapes. It works offline after loading.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Open the page and scan the table for the element you need.</li><li>Copy the syntax from the middle column.</li><li>Compare the rendered result in the right column.</li><li>Try your own text in the Markdown preview tool.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which Markdown flavour does it show?</summary><p>CommonMark with common GitHub extensions: tables, task lists and strikethrough. Platform-specific extras, such as footnotes, emoji shortcodes or callout blocks, are not covered because they differ between sites.</p></details>
+<details><summary>Why does my Markdown look different on another site?</summary><p>Markdown has several dialects. Details like line breaks, nested list indentation and raw HTML handling vary, so a document can render differently in a forum, a wiki or a static site generator.</p></details>
+<details><summary>How do I show a literal asterisk or backtick?</summary><p>Put a backslash in front of it, as in the Escape row of the table. Inside inline code you can also wrap the code in a longer run of backticks.</p></details>
+<details><summary>Can I edit the examples?</summary><p>Not on this page. To experiment, paste the syntax into the Markdown preview tool and change it there.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/markdown-preview/"><span class="link-card__title">Markdown Preview</span><span class="link-card__desc">Live rendered preview in a sandboxed frame (scripts never run).</span></a></li><li><a class="link-card" href="/en/markdown-to-html/"><span class="link-card__title">Markdown to HTML</span><span class="link-card__desc">CommonMark/GFM-style converter: tables, task lists, fences, nested lists. HTML is escaped by default.</span></a></li><li><a class="link-card" href="/en/markdown-table-generator/"><span class="link-card__title">Markdown Table Generator</span><span class="link-card__desc">Turn CSV, TSV or spreadsheet paste into an aligned Markdown table.</span></a></li><li><a class="link-card" href="/en/html-to-markdown/"><span class="link-card__title">HTML to Markdown</span><span class="link-card__desc">Convert HTML (headings, lists, tables, links, code) to Markdown using the browser parser.</span></a></li><li><a class="link-card" href="/en/regex-cheatsheet/"><span class="link-card__title">Regex Cheat Sheet</span><span class="link-card__desc">JavaScript regular expression syntax quick reference.</span></a></li><li><a class="link-card" href="/en/html-entities-reference/"><span class="link-card__title">HTML Entities Reference</span><span class="link-card__desc">Searchable list of named and numeric HTML entities. Type a name, character, number or description.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

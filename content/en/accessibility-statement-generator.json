@@ -1,0 +1,43 @@
+{
+ "id": "accessibility-statement-generator",
+ "seoTitle": "Accessibility Statement Generator (Web Accessibility Directive Style)",
+ "metaDescription": "Fill in organisation, standard, status, known issues and contact to get an accessibility statement in Markdown or text. A template, not legal advice.",
+ "intro": "Generates an accessibility statement from your details with the usual EU-style sections.",
+ "why": "Many public bodies must publish an accessibility statement, and other sites benefit from one.\n\nThe tool writes compliance status, known non-accessible content, preparation, feedback and optional enforcement sections. It refuses a partial or non-compliant statement with no listed issues. The structure was not checked against the EU Implementing Decision text in this session; verify it for your country.",
+ "howTo": [
+  "Enter organisation, site and standard.",
+  "List known issues one per line.",
+  "Add contact and enforcement details.",
+  "Review the drafting notes before publishing."
+ ],
+ "faq": [
+  {
+   "q": "Is it legally valid?",
+   "a": "It is a template. Check national rules or ask a lawyer."
+  },
+  {
+   "q": "Can I claim full compliance?",
+   "a": "Only with evidence for every criterion at the level."
+  },
+  {
+   "q": "Where do I publish it?",
+   "a": "Link it from every page, for public bodies."
+  },
+  {
+   "q": "Is the data uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "eaa-en301549-web-checklist",
+  "vpat-acr-builder",
+  "wcag-success-criteria-explorer",
+  "a11y-html-check",
+  "data-deletion-request-letter"
+ ],
+ "keywords": [
+  "accessibility statement generator",
+  "wad accessibility statement",
+  "accessibility statement template"
+ ]
+}

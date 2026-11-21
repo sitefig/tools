@@ -1,0 +1,45 @@
+{
+ "id": "color-space-plotter",
+ "seoTitle": "Color Space Plotter: Palette in 3D RGB, HSL or OKLab",
+ "metaDescription": "Plot palette colours in a rotatable 3D view of RGB, HSL or OKLab to find gaps and clusters. Free, local, with keyboard controls.",
+ "intro": "Draws each colour of a palette as a point in 3D and lets you rotate the view, with the coordinates listed in a table.",
+ "why": "A list of hex codes hides uneven lightness steps and clusters. In OKLab the vertical axis is lightness, so a palette with equal steps looks like a clean column. In RGB you see how colours fill the cube. In HSL you see hue as an angle around a cylinder.\n\nRotate with the sliders or buttons, which work without a mouse. The table under the plot gives the exact numbers for each point.",
+ "howTo": [
+  "Paste colours, one per line.",
+  "Choose RGB cube, HSL cylinder or OKLab.",
+  "Rotate and tilt with the sliders or buttons.",
+  "Read the table for exact values."
+ ],
+ "faq": [
+  {
+   "q": "Which space is best for checking steps?",
+   "a": "OKLab, because distances there match perceived differences more closely."
+  },
+  {
+   "q": "Can I use mouse drag?",
+   "a": "This version uses sliders and buttons only."
+  },
+  {
+   "q": "Why do colours overlap?",
+   "a": "They may be close, or aligned along the view direction. Rotate to check."
+  },
+  {
+   "q": "Is the depth accurate?",
+   "a": "Points are sorted by depth, not shaded."
+  }
+ ],
+ "related": [
+  "dataviz-palette-builder",
+  "color-harmony-wheel",
+  "palette-contrast-matrix",
+  "color-converter",
+  "palette-generator",
+  "css-color-formats"
+ ],
+ "keywords": [
+  "3d color plot",
+  "color space visualization",
+  "oklab plot",
+  "palette gaps clusters"
+ ]
+}

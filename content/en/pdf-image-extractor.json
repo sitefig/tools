@@ -1,0 +1,45 @@
+{
+ "id": "pdf-image-extractor",
+ "seoTitle": "PDF Image Extractor: Save Embedded Images as JPG or PNG",
+ "metaDescription": "Pull the embedded images out of a PDF: JPEGs copied untouched, other images as PNG with transparency. Free, private, nothing uploaded.",
+ "intro": "Walks through the pages of a PDF, finds the embedded image objects and saves each as its own file. JPEGs are copied byte for byte; other images are written as PNG.",
+ "why": "A PDF stores each picture once as an image object and then draws it on pages. Extracting those objects gives you the original photo at its original resolution, which a screenshot or a page render cannot.\n\nJPEG images are copied exactly, so there is no quality loss. Gray, RGB and indexed Flate images become PNG, and a soft mask becomes the alpha channel. We compared the output with the poppler tool pdfimages on a test file and the pixels were identical. Not handled: CMYK pixel data, JBIG2, CCITT and LZW images, and inline images; those are listed so you know what was missed.",
+ "howTo": [
+  "Choose a PDF.",
+  "Optionally set a minimum size to skip icons and bullets.",
+  "Press Run and read the list.",
+  "Download the files."
+ ],
+ "faq": [
+  {
+   "q": "Why is an image missing?",
+   "a": "It may use a filter that is not supported, or be drawn as vector graphics. Vector artwork is not an image; use PDF to Image for those pages."
+  },
+  {
+   "q": "Are the images the original quality?",
+   "a": "Yes. The data is the original embedded data, not a re-render."
+  },
+  {
+   "q": "What about scanned PDFs?",
+   "a": "Each page of a scan is usually one big image, so you will get one file per page."
+  },
+  {
+   "q": "Does the PNG keep transparency?",
+   "a": "Yes, when the PDF stores it as a soft mask of the same size."
+  }
+ ],
+ "related": [
+  "pdf-to-image",
+  "images-to-pdf",
+  "pdf-compress",
+  "pdf-info",
+  "pdf-text-extractor",
+  "pdf-image-watermark"
+ ],
+ "keywords": [
+  "extract images from pdf",
+  "pdf image extractor",
+  "save pictures from pdf",
+  "pdf to jpg embedded images"
+ ]
+}

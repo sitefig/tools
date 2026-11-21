@@ -1,0 +1,46 @@
+{
+ "id": "argon2-verify",
+ "seoTitle": "Free Argon2 Hash Verifier: Check a Password Online",
+ "metaDescription": "Paste an Argon2 PHC hash string and a password to see whether they match, with a constant-time comparison. Free, runs in your browser.",
+ "intro": "Paste a $argon2id$v=19$... hash string and a password. The tool recomputes the hash with the stored parameters and reports MATCH or NO MATCH.",
+ "why": "Sooner or later you wonder whether the hash in a database really belongs to a given password, perhaps after migrating a user table, changing library, or writing a test for a login flow. Command-line tools can do this, but not everyone has them installed. This verifier reads the parameters from the PHC string, including variant, memory, iterations, parallelism, salt and tag, recomputes the hash from the password and compares the result in constant time. It reports the parameters it found, which also helps when you inspect old hashes to decide if they need rehashing with stronger settings. Only Argon2 version 1.3 is supported. The work happens in your browser, but you should not paste real user hashes or passwords into untrusted pages.",
+ "howTo": [
+  "Paste the Argon2 PHC string into the first box.",
+  "Type the password to test in the second box.",
+  "Read MATCH or NO MATCH and the parameters found in the string."
+ ],
+ "faq": [
+  {
+   "q": "Which hash formats are accepted?",
+   "a": "The standard PHC string: $argon2id$v=19$m=...,t=...,p=...$salt$hash, using argon2id, argon2i or argon2d. Version 19 (0x13) only. Anything else shows a format error."
+  },
+  {
+   "q": "Why might a correct password say NO MATCH?",
+   "a": "The hash may have been made with a secret (pepper) or associated data, which a PHC string cannot carry, or the password may include a trailing newline or different encoding. Check how it was created."
+  },
+  {
+   "q": "Is the comparison constant-time?",
+   "a": "Yes, the tool compares the full tag by accumulating differences rather than stopping at the first mismatch. In a browser tool this matters little, but it follows good practice."
+  },
+  {
+   "q": "Can large parameters crash the tab?",
+   "a": "The tool refuses memory above 64 MiB, so a hash with a very large m value will fail with an error. Use a native tool for those."
+  }
+ ],
+ "related": [
+  "argon2-hash",
+  "argon2-parameter-tuner",
+  "bcrypt-verifier",
+  "scrypt-kdf",
+  "password-strength",
+  "hash-compare"
+ ],
+ "keywords": [
+  "argon2 verify online",
+  "argon2 hash checker",
+  "free argon2 verifier",
+  "check argon2 password",
+  "verify phc string",
+  "argon2id verify"
+ ]
+}

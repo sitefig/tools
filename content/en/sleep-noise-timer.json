@@ -1,0 +1,45 @@
+{
+ "id": "sleep-noise-timer",
+ "seoTitle": "Sleep Noise Player with Timer: White, Pink, Brown",
+ "metaDescription": "Play white, pink or brown noise with a volume slider and a sleep timer that fades out and stops. Generated live in your browser, no files.",
+ "intro": "Plays continuous noise and stops it by itself after the number of minutes you choose, with a 20 second fade at the end.",
+ "why": "Steady noise helps some people fall asleep, block out a neighbour or focus. A timer means it does not run all night. White noise is bright and hissy, pink noise is balanced like steady rain, and brown noise is deep like a distant rumble.\n\nThe noise is generated in your browser as a looped buffer, so it works offline once the page is loaded. Keep the volume low enough to hear what is going on around you if that matters. The countdown is shown on screen but is not read out every second by screen readers; start and stop messages are.",
+ "howTo": [
+  "Pick a noise colour.",
+  "Set the volume and the timer in minutes.",
+  "Press Start.",
+  "The sound fades out and stops when the time is up, or press Stop."
+ ],
+ "faq": [
+  {
+   "q": "Which colour is best for sleep?",
+   "a": "It is personal. Many people prefer pink or brown because they are less harsh than white."
+  },
+  {
+   "q": "Does it keep playing if the screen locks?",
+   "a": "It depends on your device and browser. Some phones suspend audio from web pages; test it before bedtime."
+  },
+  {
+   "q": "Is the sound a recording?",
+   "a": "No. It is generated live, so there is no audible repeat beyond a loop of a few seconds."
+  },
+  {
+   "q": "Can I leave the timer off?",
+   "a": "Set a long timer, up to 720 minutes."
+  }
+ ],
+ "related": [
+  "white-noise-generator",
+  "binaural-beat-generator",
+  "tone-generator",
+  "decibel-meter",
+  "hearing-frequency-test",
+  "metronome"
+ ],
+ "keywords": [
+  "sleep noise timer",
+  "white noise with timer",
+  "pink noise generator",
+  "brown noise for sleep"
+ ]
+}

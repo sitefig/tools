@@ -1,0 +1,45 @@
+{
+ "id": "json-to-pydantic",
+ "seoTitle": "Free JSON to Pydantic Model Generator (v2) Online",
+ "metaDescription": "Generate Pydantic v2 BaseModel classes from sample JSON with nested models, Optional fields, datetime and UUID detection. Free, runs in your browser.",
+ "intro": "Generates Pydantic v2 BaseModel classes from sample JSON: nested classes, List, Optional and Union typing, datetime, date and UUID detection, snake_case names and Field aliases.",
+ "why": "FastAPI endpoints, config loaders and data pipelines all need models that match the JSON they receive. Typing them out from a long sample is dull and error-prone, especially with nested objects and keys that are camelCase or Python keywords. Paste a sample here and get Pydantic v2 classes with the nesting worked out. Arrays of objects are merged, so keys missing from some items become Optional. Keys like userName are turned into user_name with a Field alias that keeps the original name, and a key such as class is renamed safely. Strings that look like dates, times or UUIDs get proper types. The sample is processed in your browser, so a real API response is not uploaded.",
+ "howTo": [
+  "Paste a sample JSON object or array into the input box.",
+  "Set the root class name and decide whether to detect datetime, date and UUID strings.",
+  "Copy the models into your Python project and tighten any type the sample could not reveal."
+ ],
+ "faq": [
+  {
+   "q": "What does it do with camelCase keys?",
+   "a": "It creates a snake_case attribute and adds Field(alias=\"originalKey\") so validation and serialisation still use the original name. Keys that are Python keywords are renamed the same way."
+  },
+  {
+   "q": "How are optional fields found?",
+   "a": "In an array of objects, a key missing from some items becomes Optional. A null value also makes the field Optional. A single object gives no hint about optional keys."
+  },
+  {
+   "q": "Which special strings are detected?",
+   "a": "ISO date-times, dates and UUIDs become datetime, date and UUID. Turn the option off if you would rather keep them as plain str."
+  },
+  {
+   "q": "Is it Pydantic v1 or v2?",
+   "a": "The output targets Pydantic v2 and uses BaseModel and Field with aliases. Projects still on Pydantic v1 may need small changes, for example to the way aliases and configuration are declared."
+  }
+ ],
+ "related": [
+  "json-to-typescript",
+  "json-to-go",
+  "json-schema-generator",
+  "sql-to-python-sqlalchemy",
+  "json-to-typescript-type-guards",
+  "json-to-zod"
+ ],
+ "keywords": [
+  "json to pydantic",
+  "pydantic model generator from json",
+  "json to python class",
+  "free pydantic v2 generator",
+  "fastapi model from json"
+ ]
+}

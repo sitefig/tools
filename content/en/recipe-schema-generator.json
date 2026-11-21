@@ -1,0 +1,45 @@
+{
+ "id": "recipe-schema-generator",
+ "seoTitle": "Recipe Schema Generator With ISO 8601 Times and Steps",
+ "metaDescription": "Build Recipe JSON-LD: ingredients, HowToStep instructions, nutrition, yield and times written as ISO 8601. Total time is added for you.",
+ "intro": "Generates Recipe markup with ingredients, step-by-step instructions as HowToStep items, nutrition calories, rating and ISO 8601 durations for prep, cook and total time.",
+ "why": "Recipe markup is among the most used and most error-prone. Times must be durations (PT25M), instructions work best as separate steps, and ingredients are plain strings. Type 10 min and 15 min and the tool outputs PT10M and PT15M and adds a total time of PT25M if you left it out.\n\nThe result is compared with Google's Recipe documentation: name and image are required, and a list of recommended fields such as author, yield, category, cuisine and video is reported if missing.",
+ "howTo": [
+  "Enter the name, image, author and description.",
+  "Enter prepTime and cookTime as text such as 15 min.",
+  "Add one ingredient: and one step: line per item.",
+  "Copy the script tag onto the recipe page."
+ ],
+ "faq": [
+  {
+   "q": "Is totalTime needed?",
+   "a": "It is recommended. If you give prep and cook times and no total, the tool adds the sum."
+  },
+  {
+   "q": "What are calories written as?",
+   "a": "Free text such as 250 calories, as in Google's example."
+  },
+  {
+   "q": "Can I group steps into sections?",
+   "a": "Not in this tool; it writes a flat list of steps."
+  },
+  {
+   "q": "Can I add ratings?",
+   "a": "Only genuine ones shown on the page. Use ratingValue and ratingCount."
+  }
+ ],
+ "related": [
+  "howto-schema-generator",
+  "iso-8601-duration-builder",
+  "schema-generator",
+  "rich-result-eligibility-checker",
+  "jsonld-syntax-validator",
+  "videoobject-schema-generator"
+ ],
+ "keywords": [
+  "recipe schema generator",
+  "recipe json-ld",
+  "recipe structured data times",
+  "recipeInstructions HowToStep"
+ ]
+}

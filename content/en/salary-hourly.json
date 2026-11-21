@@ -1,0 +1,46 @@
+{
+ "id": "salary-hourly",
+ "seoTitle": "Free Salary to Hourly Converter: Annual, Monthly, Weekly",
+ "metaDescription": "Convert hourly pay to weekly, monthly and annual salary and back, with your own hours per week and weeks per year. Free converter, runs in your browser.",
+ "intro": "Enter a pay amount, say whether it is hourly, weekly, monthly or annual, and set your hours per week and weeks per year. The tool shows the other pay periods.",
+ "why": "A job advert says 52,000 a year, the agency says 25 an hour, and your rota gives you 37.5 hours a week. Comparing offers or contract rates means putting everything on the same footing, and the answer depends on the hours and weeks you actually work. This converter lets you change both, so a part-time week, an unpaid fortnight or a 48-week contract year are easy to model. It shows hourly, daily, weekly, bi-weekly, monthly and annual figures at once. These are gross amounts before tax, holiday pay and benefits, and the tool does not know your local rules. Nothing you enter is sent anywhere.",
+ "howTo": [
+  "Enter the pay amount you have.",
+  "Select whether it is hourly, weekly, monthly or annual.",
+  "Set the hours per week and weeks per year, then read all the converted amounts."
+ ],
+ "faq": [
+  {
+   "q": "How is the annual salary derived from an hourly rate?",
+   "a": "Hourly rate times hours per week times weeks per year. With 40 hours and 52 weeks, 25 an hour is 52,000 a year. Change the hours and weeks to match your contract."
+  },
+  {
+   "q": "How are the monthly and daily figures worked out?",
+   "a": "Monthly is the annual figure divided by 12. Daily assumes a five-day working week, so it is the weekly pay divided by 5."
+  },
+  {
+   "q": "Are the results before or after tax?",
+   "a": "Before tax. The tool does not apply income tax, social contributions, pension or unpaid leave. Use it for comparing gross offers, not for estimating take-home pay."
+  },
+  {
+   "q": "Why do weekly and monthly conversions differ from 4 weeks?",
+   "a": "A month averages about 4.33 weeks. The tool converts through the annual amount, so it does not assume four weeks a month, which would understate monthly pay."
+  }
+ ],
+ "related": [
+  "tip-calculator",
+  "percentage-calculator",
+  "retirement-estimator",
+  "savings-goal",
+  "time-duration-calculator",
+  "vat-calculator"
+ ],
+ "keywords": [
+  "salary to hourly calculator",
+  "hourly to salary converter",
+  "free salary converter",
+  "hourly wage calculator",
+  "annual salary to hourly",
+  "monthly salary to hourly"
+ ]
+}

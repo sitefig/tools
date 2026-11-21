@@ -1,0 +1,45 @@
+{
+ "id": "sql-to-typescript",
+ "seoTitle": "Free SQL CREATE TABLE to TypeScript Interface Tool",
+ "metaDescription": "Paste CREATE TABLE statements and get TypeScript interfaces. NOT NULL columns become required, nullable ones get | null. Free and runs in your browser.",
+ "intro": "Turns CREATE TABLE statements from MySQL, PostgreSQL or SQLite into TypeScript interfaces, one per table, with nullable columns typed as \"| null\".",
+ "why": "When you build a TypeScript backend or a typed API client on top of an existing database, someone has to write the row types by hand. That is slow, and the types drift the moment a column changes. If you already have the schema dump or a migration file, the column list is right there: names, types, NOT NULL flags. This tool reads that DDL and writes the matching interfaces, so you start from something accurate and only adjust the odd column. Because the conversion runs in your browser, a schema from a private project never leaves your machine. It is a quick way to bootstrap types for a script, a prototype or a data-access layer without installing a code generator.",
+ "howTo": [
+  "Paste one or more CREATE TABLE statements into the SQL box.",
+  "Choose how BIGINT and dates are typed (string, number, bigint, Date) and whether property names stay as they are or become camelCase.",
+  "Tick \"export\" or the optional-for-DEFAULT setting if you want them, then copy the interfaces."
+ ],
+ "faq": [
+  {
+   "q": "How are SQL types mapped to TypeScript?",
+   "a": "Integers, decimals and floats become number, booleans become boolean, timestamps and dates follow your Date setting, JSON becomes unknown, blobs become Uint8Array and everything else becomes string. BIGINT is your choice, because a JavaScript number cannot hold every 64-bit value."
+  },
+  {
+   "q": "Does it handle quoted names and constraints?",
+   "a": "Yes. Backtick, double-quote and bracket identifiers are read, as are IF NOT EXISTS, PRIMARY KEY and other table constraints. Primary key columns are treated as NOT NULL. Constraint-only lines produce no property."
+  },
+  {
+   "q": "What happens to columns with a DEFAULT?",
+   "a": "By default they stay required. Tick the option for DEFAULT columns to be optional (?) and they become optional unless they are primary keys. That suits insert payloads more than row types."
+  },
+  {
+   "q": "Is it a full SQL parser?",
+   "a": "No. It reads CREATE TABLE statements only and splits column definitions with simple rules. Unusual syntax can be misread, so check the output against your schema before committing it."
+  }
+ ],
+ "related": [
+  "sql-to-json",
+  "sql-to-prisma",
+  "sql-to-drizzle",
+  "json-to-typescript",
+  "sql-dialect-converter",
+  "typescript-interface-to-zod"
+ ],
+ "keywords": [
+  "sql to typescript",
+  "create table to typescript interface",
+  "free sql to typescript converter",
+  "sql schema to ts types",
+  "mysql to typescript interface"
+ ]
+}

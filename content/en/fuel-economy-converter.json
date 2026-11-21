@@ -1,0 +1,39 @@
+{
+ "id": "fuel-economy-converter",
+ "seoTitle": "Fuel Economy Converter: L/100km, MPG US, MPG UK, km/L",
+ "metaDescription": "Convert L/100km, miles per US gallon, miles per UK gallon and km/L to compare cars across markets. Free.",
+ "intro": "Converts fuel consumption between litres per 100 km, km per litre, US MPG and UK MPG.",
+ "why": "Europe uses L/100km, the US uses MPG and the UK uses MPG with a larger gallon. 30 US MPG is about 36 UK MPG and 7.8 L/100km.\n\nEnter one figure and see all four. Lower L/100km is better, higher MPG is better.",
+ "howTo": [
+  "Enter the figure.",
+  "Choose its unit.",
+  "Compare the four results."
+ ],
+ "faq": [
+  {
+   "q": "Why is UK MPG higher than US MPG?",
+   "a": "The UK gallon (4.546 L) is larger than the US gallon (3.785 L)."
+  },
+  {
+   "q": "How to convert MPG to L/100km?",
+   "a": "Divide 235.215 by US MPG, or 282.481 by UK MPG."
+  },
+  {
+   "q": "Is it for electric cars?",
+   "a": "No, only fuel volume per distance."
+  }
+ ],
+ "related": [
+  "fuel-cost",
+  "unit-converter",
+  "volume-us-imperial-converter",
+  "running-pace-converter",
+  "bandwidth-download-time",
+  "percentage-calculator"
+ ],
+ "keywords": [
+  "mpg to l/100km",
+  "l/100km to mpg",
+  "fuel consumption converter"
+ ]
+}

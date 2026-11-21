@@ -1,0 +1,45 @@
+{
+ "id": "har-to-k6",
+ "seoTitle": "Free HAR to k6 Load Test Script Converter",
+ "metaDescription": "Turn a HAR capture into a k6 load-test script with one HTTP call per entry, headers, bodies and status checks. Free, runs in your browser.",
+ "intro": "Paste a HAR file from your browser developer tools and get a k6 script with one request per entry, headers, request bodies and a status check for each.",
+ "why": "The quickest way to write a realistic load test is to record what a browser does and replay it. The recording is a HAR file, but k6 wants JavaScript, so each entry must become an http call with the right method, URL, headers and body.\n\nThis tool does that conversion. It drops headers that a client sets itself, such as Host, Cookie and User-Agent, can skip images, CSS, fonts and scripts, and adds a check that the status matches what was recorded. You choose virtual users, duration and think time. Real tests need more: dynamic values like tokens and ids must be extracted and reused, and cookies need care. Treat the output as a base to edit.",
+ "howTo": [
+  "Export a HAR file from the browser network tab and paste its JSON.",
+  "Set virtual users, duration (or leave empty for one iteration) and sleep time.",
+  "Copy the script into a file and run it with k6 run."
+ ],
+ "faq": [
+  {
+   "q": "Are cookies and auth tokens kept?",
+   "a": "Cookie headers are removed, and other headers such as Authorization are kept as recorded. Tokens will expire, so replace them with a login step or an environment variable."
+  },
+  {
+   "q": "Why are static files skipped?",
+   "a": "Load tests normally target the API or page endpoints. Images, fonts, CSS and scripts are skipped by default, and you can untick the option to include them."
+  },
+  {
+   "q": "Does the script handle redirects or parameter correlation?",
+   "a": "Redirects are followed by k6 by default, but dynamic values are not extracted. You must add correlation, such as reading a CSRF token from a response, yourself."
+  },
+  {
+   "q": "Is the HAR uploaded?",
+   "a": "No. It is read in your browser. HAR files often hold cookies and tokens, so share the converted script only after removing sensitive values."
+  }
+ ],
+ "related": [
+  "postman-to-curl",
+  "curl-to-har",
+  "har-analyzer",
+  "curl-to-code",
+  "http-headers-analyzer",
+  "api-rate-limit-cost-calculator"
+ ],
+ "keywords": [
+  "har to k6",
+  "convert har to k6 script",
+  "har file load test",
+  "free har converter",
+  "k6 script from browser recording"
+ ]
+}

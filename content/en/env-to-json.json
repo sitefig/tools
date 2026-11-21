@@ -1,0 +1,45 @@
+{
+ "id": "env-to-json",
+ "seoTitle": "Free .env to JSON Converter Online",
+ "metaDescription": "Parse a dotenv file with quotes, comments, export prefixes, multi-line values and variable expansion into a JSON object. Free, in your browser.",
+ "intro": "Paste the contents of a .env file and get a JSON object, with quotes, escapes, comments, export prefixes, multi-line values and ${VAR} references handled.",
+ "why": "Environment files are everywhere, but sometimes you need the same settings as JSON: for a config loader, a CI secret store that takes JSON, a Kubernetes manifest or a quick comparison between two environments. Splitting on the first equals sign does not cut it, because of quoted values, inline comments and variable references.\n\nThis parser follows common dotenv rules: double-quoted values process escapes and can span lines, single-quoted values are literal, unquoted values lose trailing comments, and ${VAR} and ${VAR:-default} can be expanded. You can convert numbers and booleans, or nest keys on a separator. Real secrets in .env files should not be pasted into pages you do not trust; this one works locally.",
+ "howTo": [
+  "Paste the .env contents.",
+  "Choose whether to convert numbers and booleans, expand variable references and nest keys.",
+  "Copy the JSON object."
+ ],
+ "faq": [
+  {
+   "q": "How are quotes handled?",
+   "a": "Double-quoted values support \\n, \\t and escaped quotes and may span several lines. Single-quoted values are taken literally and are never expanded. Unquoted values end at a space followed by a hash."
+  },
+  {
+   "q": "What does nesting do?",
+   "a": "With a separator of double underscore or single underscore, DB__HOST=x becomes {\"db\":{\"host\":\"x\"}}. Keys are lowercased when nested. With none, the keys remain flat and keep their case."
+  },
+  {
+   "q": "Are real secrets safe here?",
+   "a": "Parsing runs in your browser and nothing is uploaded. Still, avoid pasting live production credentials into any web page. Use sample values when you only need the format."
+  },
+  {
+   "q": "What if a line is invalid?",
+   "a": "The tool stops and names the line number that does not look like KEY=value, or an unclosed quote, so you can fix that line."
+  }
+ ],
+ "related": [
+  "json-to-env",
+  "env-toolkit",
+  "env-linter",
+  "env-sanitizer",
+  "json-flatten-unflatten",
+  "docker-compose-env-generator"
+ ],
+ "keywords": [
+  "env to json",
+  "dotenv to json converter",
+  "convert .env file to json",
+  "free env parser online",
+  "parse .env with variable expansion"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "countdown-to-date",
+ "seoTitle": "Free Countdown to Date: Time Left Until an Event",
+ "metaDescription": "Enter a target date and time to see the days, hours, minutes and seconds remaining, or how long ago it was. Free countdown tool in your browser.",
+ "intro": "Pick a target date and time in your local time zone. The tool shows how much time remains in days, hours, minutes and seconds, or how long ago it passed.",
+ "why": "A launch day, an exam, a holiday or the end of a contract: sometimes you just want to know how long is left. A countdown turns that into something you can quote, such as 42 days or 1,008 hours. This tool compares your chosen local date and time with the current clock and breaks the gap into days, hours, minutes and seconds, and also gives the same span as decimal days and hours. If the target is in the past, it says how long ago it was, which also works for tracking elapsed time since an event. It calculates once when you run it, so run it again to refresh the value. Nothing you enter leaves your device.",
+ "howTo": [
+  "Pick the target date and time.",
+  "Run the tool to read the remaining time in days, hours, minutes and seconds.",
+  "Re-run it whenever you want an updated figure."
+ ],
+ "faq": [
+  {
+   "q": "Which time zone is used?",
+   "a": "Your device's local time zone, for both the target and the current time. The target is interpreted as local, so it will not suit an event fixed in another zone."
+  },
+  {
+   "q": "Does the countdown update by itself?",
+   "a": "No, it gives a snapshot when the tool runs. For a live ticking countdown, use the Countdown Timer, which starts from hours, minutes and seconds you enter."
+  },
+  {
+   "q": "What if the date has already passed?",
+   "a": "The tool tells you how long ago the date was, in the same days, hours, minutes and seconds format."
+  },
+  {
+   "q": "Does it account for daylight saving?",
+   "a": "It compares real moments in time using your system's rules, so a clock change between now and the target is included in the elapsed hours."
+  }
+ ],
+ "related": [
+  "countdown-timer",
+  "date-difference",
+  "add-subtract-dates",
+  "timezone-converter",
+  "age-calculator",
+  "world-clock"
+ ],
+ "keywords": [
+  "countdown to date",
+  "days until calculator",
+  "free countdown calculator",
+  "time until event",
+  "how many days until",
+  "countdown to a date and time"
+ ]
+}

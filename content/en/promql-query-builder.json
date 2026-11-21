@@ -1,0 +1,45 @@
+{
+  "id": "promql-query-builder",
+  "seoTitle": "PromQL Query Builder: rate, error ratio, histogram_quantile",
+  "metaDescription": "Build common PromQL queries from a metric name and labels: request rate, error ratio, latency percentiles, averages, increase, top N and availability SLO.",
+  "intro": "Pick a pattern and fill in the metric to get a correct PromQL expression with the usual windows.",
+  "why": "Patterns include rate of a counter, error ratio (5xx over all requests), a latency percentile from a classic histogram (histogram_quantile over _bucket series with the le label), averages from _sum and _count, increase over a period, top N by a label and an availability SLO. Each result comes with a note about its limits, such as the rate window needing at least four scrapes.\n\nThe tool builds expressions from templates and cannot check that your metrics and labels exist; test the result in Prometheus.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose the pattern.",
+    "Enter the metric, label selector, grouping labels and window.",
+    "Copy the query into Prometheus or Grafana.",
+    "Adjust labels to your metric names."
+  ],
+  "faq": [
+    {
+      "q": "Why does error ratio need a status label?",
+      "a": "It filters the 5xx series; use the label your instrumentation provides."
+    },
+    {
+      "q": "Rate or increase?",
+      "a": "rate gives per-second change; increase gives total change over the window."
+    },
+    {
+      "q": "Is the percentile exact?",
+      "a": "No, it is an estimate based on bucket boundaries."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "grafana-panel-generator",
+    "prometheus-alert-generator",
+    "prometheus-config-generator",
+    "prometheus-recording-rules-generator",
+    "otel-collector-config-generator",
+    "k8s-resource-calculator"
+  ],
+  "keywords": [
+    "promql builder",
+    "prometheus query generator",
+    "histogram_quantile",
+    "prometheus rate"
+  ]
+}

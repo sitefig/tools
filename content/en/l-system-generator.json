@@ -1,0 +1,45 @@
+{
+  "id": "l-system-generator",
+  "seoTitle": "L-System Fractal Generator: Koch, Dragon, Plant, Hilbert (SVG)",
+  "metaDescription": "Draw Lindenmayer-system fractals from presets or your own axiom and rules: turtle graphics as SVG, the expanded string and symbol counts.",
+  "intro": "Explore fractals made from simple rewriting rules and download them as SVG.",
+  "why": "An L-system starts from an axiom and repeatedly replaces each symbol by its rule. The tool expands the string for the chosen number of iterations, then draws it like a turtle: capital letters move forward, + and - turn by the angle, and [ and ] save and restore the position for branches. Presets include the Koch curve, Sierpinski triangle, dragon curve, fractal plant and Hilbert curve; the symbol counts match the known growth formulas (for example 5^n forward moves for the Koch curve).\n\nStrings are limited to two million symbols to keep the page responsive.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose a preset or \"custom\".",
+    "Set the number of iterations.",
+    "For custom systems enter an axiom, rules like F=F+F-F-F+F and an angle.",
+    "Download the SVG."
+  ],
+  "faq": [
+    {
+      "q": "What do X and Y do in the presets?",
+      "a": "They are control symbols that steer the growth but draw nothing themselves."
+    },
+    {
+      "q": "Why is it slow at high iterations?",
+      "a": "The string grows exponentially; the tool refuses strings over two million symbols."
+    },
+    {
+      "q": "Can I get the string?",
+      "a": "Short results are printed in the output."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "svg-optimizer",
+    "svg-path-editor",
+    "svg-to-png",
+    "svg-pattern-generator",
+    "mermaid-lite-renderer",
+    "game-2048"
+  ],
+  "keywords": [
+    "l-system generator",
+    "fractal generator",
+    "koch curve",
+    "dragon curve svg"
+  ]
+}

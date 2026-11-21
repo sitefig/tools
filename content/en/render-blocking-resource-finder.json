@@ -1,0 +1,44 @@
+{
+ "id": "render-blocking-resource-finder",
+ "seoTitle": "Render-Blocking Resource Finder: Scripts and Stylesheets in Your HTML",
+ "metaDescription": "Paste page HTML to list scripts and stylesheets that block first paint: sync head scripts, stylesheets, @import chains, with a fix for each.",
+ "intro": "Lists render-blocking scripts and stylesheets in pasted HTML and suggests a fix for each.",
+ "why": "Render-blocking resources delay the first paint. They are easy to spot in the source.\n\nThe tool flags scripts without async, defer or module, stylesheets that apply to every screen, @import inside style tags and large inline scripts in the head. It lists what is not blocking so you can see the pattern you already use. File sizes and caching are not known here; Lighthouse measures the real cost.",
+ "howTo": [
+  "Paste the full page HTML.",
+  "Read each finding and its line.",
+  "Apply the suggested attribute or loading pattern.",
+  "Re-run to confirm."
+ ],
+ "faq": [
+  {
+   "q": "Is defer or async better?",
+   "a": "defer keeps order and runs after parsing; async runs as soon as it arrives. Use defer for dependent scripts."
+  },
+  {
+   "q": "Are all stylesheets blocking?",
+   "a": "Yes unless a media query does not match, as with print."
+  },
+  {
+   "q": "What about module scripts?",
+   "a": "They are deferred by default."
+  },
+  {
+   "q": "Is the HTML sent anywhere?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "critical-css-extractor",
+  "resource-hints-generator",
+  "lighthouse-report-viewer",
+  "third-party-script-cost",
+  "font-loading-snippet-generator",
+  "mobile-friendly-html-check"
+ ],
+ "keywords": [
+  "render blocking resources",
+  "find render blocking scripts",
+  "defer async checker"
+ ]
+}

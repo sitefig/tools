@@ -1,0 +1,39 @@
+{
+ "id": "pay-raise-calculator",
+ "seoTitle": "Pay Raise Calculator: New Salary and Increase",
+ "metaDescription": "Calculate a new salary after a percentage or fixed raise, with the increase per month, week and hour and the real change after inflation.",
+ "intro": "New salary and increase per period after a raise.",
+ "why": "A 4% raise is a different monthly amount at different salaries. Entering the raise as a percentage or a fixed sum shows what it adds per year, month, week and hour.\n\nAdd an inflation figure to see whether the raise beats prices. Figures are gross, before tax.",
+ "howTo": [
+  "Enter the current salary.",
+  "Choose percent or fixed amount and enter the raise.",
+  "Optionally add inflation."
+ ],
+ "faq": [
+  {
+   "q": "Is it before tax?",
+   "a": "Yes. The net effect depends on your tax bands."
+  },
+  {
+   "q": "How is hourly pay computed?",
+   "a": "Weekly hours times weeks per year, which you can change."
+  },
+  {
+   "q": "What is the real change?",
+   "a": "The raise adjusted for the inflation rate you entered."
+  }
+ ],
+ "related": [
+  "salary-hourly",
+  "percent-change",
+  "percentage-calculator",
+  "income-tax-bracket-calculator",
+  "inflation-calculator",
+  "budget-50-30-20-planner"
+ ],
+ "keywords": [
+  "pay raise calculator",
+  "salary increase",
+  "raise percentage"
+ ]
+}

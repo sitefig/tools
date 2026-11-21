@@ -1,0 +1,46 @@
+{
+ "id": "jq-playground",
+ "seoTitle": "Free jq Playground - Test jq Filters Online",
+ "metaDescription": "Run jq filters on your JSON in the browser: select, map, group_by, sort_by, reduce, string interpolation and @csv. A jq subset, nothing is uploaded.",
+ "intro": "Paste JSON, write a jq filter, and see every result the way the jq command line prints it. Useful for drafting a filter before it goes into a shell script or CI step.",
+ "why": "jq is the standard way to slice JSON on the command line, but getting a filter right usually means retyping it in a terminal over and over. Here you can edit the filter beside the data and see each output immediately, with compact, raw and sorted-key switches that mirror the -c, -r and -S flags.\n\nThis is a subset of jq 1.7 written for the browser: paths, pipes, comma, select, map, sort_by, group_by, unique_by, min_by, reduce, if/elif/else, variables with as, string interpolation, the @csv, @tsv, @json, @base64 and @uri formats, regex tests and about ninety built-ins. It does not implement assignment operators (|=, +=), def, del or path functions, so a filter that needs those will report that clearly. Results were checked against the real jq on more than 150 filters. Everything runs locally and the JSON never leaves the page.",
+ "howTo": [
+  "Paste your JSON into the first box.",
+  "Type a jq filter in the second box, for example .items[] | select(.price > 10) | .name.",
+  "Tick Raw output to drop the quotes around strings, Compact for one line per result, Sort keys to order object keys.",
+  "Copy the results."
+ ],
+ "faq": [
+  {
+   "q": "Is this the real jq?",
+   "a": "No. It is a JavaScript implementation of the commonly used part of jq 1.7. Common filters give identical output to the real tool, but assignments (|=), def, del, paths and limits such as arbitrary precision for huge integers are not supported."
+  },
+  {
+   "q": "Why does my filter print several results?",
+   "a": "jq filters are generators. A filter such as .items[] emits one result per element, and each is printed separately, exactly as on the command line. Wrap the filter in [ ... ] to collect the results into one array."
+  },
+  {
+   "q": "Can I process several JSON documents at once?",
+   "a": "If the input is several JSON values one after another, the filter runs on each. Tick Slurp to wrap them in a single array first, like jq -s."
+  },
+  {
+   "q": "Is my data sent anywhere?",
+   "a": "No. The filter and JSON are processed in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "jsonpath-tester",
+  "json-format",
+  "json-flatten-unflatten",
+  "json-to-csv",
+  "json-sort-keys",
+  "json-pointer-tester"
+ ],
+ "keywords": [
+  "jq playground",
+  "jq online",
+  "jq filter tester",
+  "jq tutorial online",
+  "jq select map online"
+ ]
+}

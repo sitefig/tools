@@ -1,0 +1,41 @@
+{
+ "id": "hsts-header-generator",
+ "seoTitle": "HSTS Header Generator with Preload Eligibility Check",
+ "metaDescription": "Build a Strict-Transport-Security header for nginx or Apache and check the header rules for the HSTS preload list. Free generator.",
+ "intro": "Generates the Strict-Transport-Security header and checks max-age, includeSubDomains and preload against the preload list header rules.",
+ "why": "HSTS tells browsers to use HTTPS only for your site. A long max-age protects returning visitors, includeSubDomains extends it, and preload asks browsers to build the rule in.\n\nThis tool writes the header with nginx and Apache lines and says whether the header part of the hstspreload.org rules is met: at least one year, includeSubDomains and preload. The other rules (valid certificate, redirect, all subdomains on HTTPS) cannot be checked from a header. Preload is hard to undo.",
+ "howTo": [
+  "Set max-age and tick the options.",
+  "Copy the header or the server line.",
+  "Roll out with a short max-age first, then raise it.",
+  "Submit to the preload list only when every subdomain works over HTTPS."
+ ],
+ "faq": [
+  {
+   "q": "Why start with a short max-age?",
+   "a": "A mistake with a long max-age locks visitors out of HTTP for that long."
+  },
+  {
+   "q": "Can I remove preload later?",
+   "a": "It is slow. Removal can take months to reach users."
+  },
+  {
+   "q": "Does it check my site?",
+   "a": "No. It generates a header from your choices."
+  }
+ ],
+ "related": [
+  "security-headers-grader",
+  "security-headers-generator",
+  "nginx-security-conf-generator",
+  "http-headers-analyzer",
+  "permissions-policy-generator",
+  "csp-builder"
+ ],
+ "keywords": [
+  "hsts header generator",
+  "hsts preload requirements",
+  "strict-transport-security",
+  "hsts nginx"
+ ]
+}

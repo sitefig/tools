@@ -1,0 +1,47 @@
+{
+ "id": "sql-on-csv",
+ "seoTitle": "Free SQL on CSV and JSON Online Query Tool",
+ "metaDescription": "Run SQL queries against pasted CSV or JSON data with joins, grouping and subqueries. Free, runs in your browser, and your data is never uploaded.",
+ "intro": "Paste CSV or JSON tables, write a SQL query and see the result as a text table plus CSV. It runs a built-in SQL engine inside the page, with no database to install.",
+ "why": "Sometimes the data is a CSV export and the question is a simple one: how many orders per country, which customers appear in both files, what is the top ten by revenue. Opening a spreadsheet for joins gets awkward, and spinning up a database for one question is overkill.\n\nThis tool loads your pasted tables into a small SQL engine written for the page. You can use joins, GROUP BY, subqueries and WITH clauses, then copy the answer as CSV. Because the engine runs locally, exports containing customer or finance data are not sent to any server.",
+ "howTo": [
+  "Paste your data in box 1: CSV with a header row, or a JSON array of objects. Separate several tables with a line of ---.",
+  "Start a table with \"-- name: users\" if you want a name. Otherwise use t1, t2 and so on.",
+  "Write your SQL in box 2. Separate several statements with semicolons.",
+  "Tick \"Append CSV to output\" if you want the result as CSV as well, then copy it."
+ ],
+ "faq": [
+  {
+   "q": "Which SQL features work?",
+   "a": "SELECT with expressions, WHERE, all common joins, GROUP BY and HAVING, aggregates, ORDER BY, LIMIT, subqueries, non-recursive WITH, UNION, INTERSECT, EXCEPT, CASE, CAST, plus CREATE TABLE, CREATE VIEW, INSERT, UPDATE, DELETE and DROP. Window functions, recursive CTEs, triggers and date functions are not supported."
+  },
+  {
+   "q": "How does it differ from SQLite?",
+   "a": "Division with / is always true division, text that looks like a number compares as a number, and empty CSV cells become NULL. PRIMARY KEY, UNIQUE and NOT NULL are accepted but not enforced, so duplicates are not rejected."
+  },
+  {
+   "q": "Is my data uploaded anywhere?",
+   "a": "No. The engine runs inside the page, and both your tables and your queries stay in the browser. Closing the tab discards them."
+  },
+  {
+   "q": "How big can the data be?",
+   "a": "It is meant for pasted samples, from a few rows to a few thousand. The whole dataset is parsed in memory in your tab, so very large files will be slow. Use a real database for those."
+  }
+ ],
+ "related": [
+  "csv-viewer",
+  "csv-to-json",
+  "csv-to-sql",
+  "sql-format",
+  "sql-explainer",
+  "json-to-csv"
+ ],
+ "keywords": [
+  "sql on csv online",
+  "query csv with sql",
+  "run sql on json",
+  "free in-browser sql",
+  "csv sql query tool",
+  "sql playground csv"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "morse-translator",
+ "seoTitle": "Free Morse Code Translator Online (Text and Morse)",
+ "metaDescription": "Translate text to Morse code and Morse back to text. Letters are separated by spaces and words by a slash. Free, instant and runs in your browser.",
+ "intro": "Type a message to get Morse code, or paste dots and dashes to read it as text. Letters are separated by a space and words by \" / \".",
+ "why": "Morse code still appears in puzzle games, escape rooms, amateur radio exercises, scouting events and the odd hidden message. Decoding it from a printed chart is slow, and one misread dot changes the whole word.\n\nThis translator uses the international Morse alphabet for letters, digits and common punctuation such as full stop, comma, question mark, slash and @. Writing a message, you get dots and dashes with clear gaps. Reading one, it accepts a slash, a pipe or a wide gap between words, and tolerates typographic dots and dashes. Characters it does not know come out as a question mark.",
+ "howTo": [
+  "Choose the direction: text to morse or morse to text.",
+  "Type or paste your message. For Morse, separate letters with spaces and words with \" / \".",
+  "Read the translation in the output box.",
+  "Copy the result and share it."
+ ],
+ "faq": [
+  {
+   "q": "How should I separate letters and words?",
+   "a": "Use a single space between letters and a slash with spaces around it between words, for example \".... ..  /  - .... . .-. .\". A pipe or three or more spaces also work as a word gap when decoding."
+  },
+  {
+   "q": "What characters are supported?",
+   "a": "Letters A to Z, digits 0 to 9 and common punctuation: . , ? ' ! / ( ) & : ; = + - _ \" $ @. Accented letters and other scripts are not part of this table, so they appear as ?."
+  },
+  {
+   "q": "Does it play the sound?",
+   "a": "No, this page only translates text. If you want to hear it, the Morse Code Audio tool turns text into beeps."
+  },
+  {
+   "q": "Why do I see question marks in my result?",
+   "a": "A question mark marks a character the table does not contain, or a Morse group that is not a valid code, often caused by a typo in the dots and dashes."
+  }
+ ],
+ "related": [
+  "morse-code-audio",
+  "binary-text",
+  "nato-phonetic",
+  "rot13-caesar",
+  "classical-ciphers",
+  "hex-text"
+ ],
+ "keywords": [
+  "morse code translator",
+  "text to morse code",
+  "morse code decoder online",
+  "free morse translator",
+  "morse to english",
+  "translate to morse code"
+ ]
+}

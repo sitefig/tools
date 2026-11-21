@@ -1,0 +1,45 @@
+{
+ "id": "sql-to-json",
+ "seoTitle": "Free SQL INSERT to JSON Converter Online",
+ "metaDescription": "Parse SQL INSERT ... VALUES statements, including multi-row inserts, into JSON rows per table. Reads columns from INSERT or CREATE TABLE. Free, in-browser.",
+ "intro": "Paste a SQL script with INSERT statements and get JSON rows grouped by table, with strings, numbers, NULL and booleans converted to JSON values.",
+ "why": "A database dump or a seed script holds data in INSERT statements, but a front-end mock, a test fixture or a document store needs JSON. Loading the dump into a database just to export it again is heavy for a handful of rows.\n\nThis parser reads INSERT ... VALUES, including multi-row statements, quoted strings with doubled quotes, NULL, true and false and numbers. Column names come from the INSERT column list, or from a CREATE TABLE in the same script when the INSERT has none. It handles a subset only: INSERT and CREATE TABLE. Expressions such as function calls stay as raw text, and SELECT-based inserts, updates and other statements are ignored. Check results against your source data.",
+ "howTo": [
+  "Paste the SQL script with CREATE TABLE and INSERT statements.",
+  "Choose one object per table or a flat array of rows, and the indent.",
+  "Copy the JSON output."
+ ],
+ "faq": [
+  {
+   "q": "Where do the column names come from?",
+   "a": "From the column list in the INSERT, if present, otherwise from a CREATE TABLE for the same table in your script. Without either, columns are named col1, col2 and so on."
+  },
+  {
+   "q": "What SQL does it support?",
+   "a": "INSERT ... VALUES, optionally multi-row, and CREATE TABLE for column names. Statements like UPDATE, DELETE and INSERT ... SELECT are skipped, and function calls in values are kept as raw text."
+  },
+  {
+   "q": "How are types converted?",
+   "a": "Numbers become JSON numbers, NULL becomes null, TRUE and FALSE become booleans and quoted strings become strings with doubled quotes resolved. Dates stay as strings."
+  },
+  {
+   "q": "What if the column count does not match?",
+   "a": "The tool stops with an error saying how many values and columns the row has, so you can find the broken statement."
+  }
+ ],
+ "related": [
+  "json-to-sql",
+  "csv-to-sql",
+  "sql-format",
+  "sql-to-typescript",
+  "sql-on-csv",
+  "json-format"
+ ],
+ "keywords": [
+  "sql insert to json",
+  "convert sql inserts to json",
+  "sql dump to json online",
+  "free sql to json parser",
+  "insert statements to json rows"
+ ]
+}

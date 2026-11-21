@@ -1,0 +1,39 @@
+{
+ "id": "stopwatch-lap-csv-export",
+ "seoTitle": "Stopwatch with Laps and CSV Export",
+ "metaDescription": "Time events with laps, splits and cumulative times and download the laps as a CSV file. Free, in your browser.",
+ "intro": "A stopwatch with start, stop, lap and reset, and a button to download all laps as a CSV file.",
+ "why": "Timing a run, a speech or a test is more useful when the laps are saved. The CSV has lap number, split and total in mm:ss.hh and in seconds.\n\nIt uses a high-resolution browser clock. Nothing is uploaded.",
+ "howTo": [
+  "Press Start.",
+  "Press Lap at each split.",
+  "Press Download CSV when finished."
+ ],
+ "faq": [
+  {
+   "q": "How accurate is it?",
+   "a": "Display updates every 50 ms; the clock itself is more precise. Browser tabs in the background may update less often."
+  },
+  {
+   "q": "Where is the file saved?",
+   "a": "Your browser downloads folder as laps.csv."
+  },
+  {
+   "q": "Is anything stored?",
+   "a": "No, laps vanish when you leave the page."
+  }
+ ],
+ "related": [
+  "stopwatch",
+  "countdown-timer",
+  "pomodoro-timer-notifications",
+  "running-pace-converter",
+  "time-duration-calculator",
+  "event-countdown-live"
+ ],
+ "keywords": [
+  "stopwatch csv",
+  "lap timer export",
+  "online stopwatch laps"
+ ]
+}

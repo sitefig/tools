@@ -1,0 +1,45 @@
+{
+ "id": "value-proposition-generator",
+ "seoTitle": "Value Proposition Generator: Canvas to Statement",
+ "metaDescription": "Turn customer jobs, pains and gains plus your product benefits into value proposition statements using fill-in patterns. Free and private.",
+ "intro": "Fill in the canvas fields and get a fill-in sentence, a positioning statement and headline options.",
+ "why": "Many value propositions are vague. Forcing the pieces into a pattern - who it is for, the job, the pain, how you relieve it - shows which piece you cannot yet say clearly.\n\nThe patterns are the common fill-in and positioning templates. The output is a draft to edit, not finished copy. Check that it names a real customer and could not be claimed by every competitor.",
+ "howTo": [
+  "Describe the customer and their job, pain and gain.",
+  "Add your product, category and how it relieves the pain.",
+  "Read the three outputs.",
+  "Edit and test the wording with real customers."
+ ],
+ "faq": [
+  {
+   "q": "Where do the patterns come from?",
+   "a": "They are the widely used fill-in and positioning statement patterns."
+  },
+  {
+   "q": "Why start with -ing phrases?",
+   "a": "They fit the sentence grammar."
+  },
+  {
+   "q": "Does it use AI?",
+   "a": "No, templates only."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "slogan-generator",
+  "user-persona-template",
+  "swot-generator",
+  "headline-generator",
+  "newsletter-name-generator",
+  "rice-prioritization"
+ ],
+ "keywords": [
+  "value proposition generator",
+  "value proposition canvas",
+  "positioning statement",
+  "value prop template"
+ ]
+}

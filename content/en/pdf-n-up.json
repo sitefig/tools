@@ -1,0 +1,45 @@
+{
+ "id": "pdf-n-up",
+ "seoTitle": "PDF N-Up: Print Several Pages per Sheet",
+ "metaDescription": "Put 2, 4, 6, 8, 9, 12 or 16 PDF pages on each sheet for handouts and proofs. Choose paper size, orientation, margins and borders. Vector quality kept.",
+ "intro": "Rearranges a PDF so that several pages share one sheet, scaled to fit, and saves the result as a new PDF ready to print.",
+ "why": "Handouts, slide printouts and proof sheets use paper better with more than one page per side. Print dialogs can do this, but the result depends on the printer and on the program you use. Making the layout in the file gives you a PDF you can check and send anywhere.\n\nEach original page is placed as a vector object, not a picture, so text stays sharp and searchable. Pages are scaled to their cell with margins and gaps you control, rotated pages are handled, and the orientation can follow the best fit automatically. Links, form fields and bookmarks are not carried over.",
+ "howTo": [
+  "Choose a PDF.",
+  "Pick pages per sheet, paper size and orientation.",
+  "Set margin, gap and the border option.",
+  "Press Run and download the new PDF."
+ ],
+ "faq": [
+  {
+   "q": "Does the quality drop?",
+   "a": "No. Pages are placed as vector content and only scaled."
+  },
+  {
+   "q": "Which order are pages in?",
+   "a": "Left to right, then down, by default. You can choose top to bottom, then right."
+  },
+  {
+   "q": "Can I mix page sizes?",
+   "a": "Yes. Each page is scaled to fit its cell. The auto orientation looks at the first page."
+  },
+  {
+   "q": "Where do the links go?",
+   "a": "They are dropped, together with annotations and form fields. Use this for print copies."
+  }
+ ],
+ "related": [
+  "pdf-booklet-maker",
+  "pdf-merge",
+  "pdf-split",
+  "pdf-rotate",
+  "pdf-crop-margins",
+  "pdf-add-page-numbers"
+ ],
+ "keywords": [
+  "pdf n-up",
+  "multiple pages per sheet pdf",
+  "pdf handout maker",
+  "4 up pdf print"
+ ]
+}

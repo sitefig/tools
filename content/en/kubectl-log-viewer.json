@@ -1,0 +1,44 @@
+{
+ "id": "kubectl-log-viewer",
+ "seoTitle": "Kubernetes Pod Log Viewer: Split and Merge kubectl logs",
+ "metaDescription": "Split kubectl logs output by pod and container, merge lines by timestamp and filter by pod, container or text. Free, runs in your browser.",
+ "intro": "Groups kubectl logs --prefix --timestamps output by pod and container and can merge all lines into one timeline.",
+ "why": "When several containers write at once, kubectl prints them in blocks. Merging by timestamp shows what happened in order across pods.\n\nUse kubectl logs --prefix --timestamps (with --all-containers or a label selector) so each line has a [pod/name/container] tag and a time. Lines without the prefix are listed as having none.",
+ "howTo": [
+  "Run kubectl logs -l app=web --all-containers --prefix --timestamps.",
+  "Paste the output or choose the file.",
+  "Filter by pod, container or text.",
+  "Keep time sort on to see one timeline."
+ ],
+ "faq": [
+  {
+   "q": "Why do I need --prefix?",
+   "a": "Without it the output does not say which pod or container wrote a line."
+  },
+  {
+   "q": "Does it call my cluster?",
+   "a": "No. It only reads text you paste."
+  },
+  {
+   "q": "Can it read stern output?",
+   "a": "Not directly. Use the kubectl --prefix format."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "docker-log-viewer",
+  "k8s-manifest-validator",
+  "kubernetes-deployment-generator",
+  "multi-log-merger",
+  "log-grep-context",
+  "log-level-histogram"
+ ],
+ "keywords": [
+  "kubectl logs viewer",
+  "kubernetes log merge by time",
+  "pod log parser"
+ ]
+}

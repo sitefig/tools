@@ -1,0 +1,47 @@
+{
+ "id": "json-minify",
+ "seoTitle": "Free JSON Minifier & Compressor Online",
+ "metaDescription": "Free online JSON minifier. Remove all whitespace from JSON to shrink payloads. The input is validated first, and everything runs in your browser.",
+ "intro": "Strip every unnecessary space and line break from JSON to get the smallest valid text. The input is checked first, so invalid JSON is reported instead of silently mangled.",
+ "why": "Pretty-printed JSON is pleasant to read but wasteful to send. When you embed a payload in a URL, a test fixture, an environment variable or a single-line log entry, you want the compact form. Minifying by hand is risky because deleting spaces inside strings changes the data.\n\nThis tool parses the JSON first and then writes it back without any whitespace, so string contents are untouched and syntax errors are caught before you copy anything. It does not rename keys or change values. It is also handy to confirm that a file you are about to commit is valid. The work stays in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste formatted JSON into the input box.",
+  "Read the minified single-line result in the output.",
+  "If an error appears, fix the syntax at the line and column shown.",
+  "Copy the result into your code, config or request."
+ ],
+ "faq": [
+  {
+   "q": "Does minifying change my data?",
+   "a": "No values change. Only whitespace outside strings is removed. Spaces inside string values are kept exactly as they are, and numbers, booleans and nulls stay the same."
+  },
+  {
+   "q": "Will it fix invalid JSON?",
+   "a": "No. It validates first and reports the error with line and column. Trailing commas, comments and single quotes are not valid JSON and must be fixed before minifying."
+  },
+  {
+   "q": "How much smaller will it get?",
+   "a": "It depends on the indentation. Deeply indented, pretty-printed files often shrink a lot, while already compact JSON barely changes. Transfer size is also reduced further by gzip on your server."
+  },
+  {
+   "q": "Is the minified output safe to share?",
+   "a": "It contains the same data as the input, so it is as sensitive as the original. The tool itself runs locally in your browser and does not upload your text."
+  }
+ ],
+ "related": [
+  "json-format",
+  "json-validate",
+  "json-escape",
+  "gzip-compress",
+  "json-to-csv",
+  "json-size-analyzer"
+ ],
+ "keywords": [
+  "json minifier online",
+  "minify json",
+  "compress json online",
+  "free json minify",
+  "remove whitespace from json",
+  "json compactor"
+ ]
+}

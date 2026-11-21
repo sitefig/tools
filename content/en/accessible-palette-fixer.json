@@ -1,0 +1,45 @@
+{
+ "id": "accessible-palette-fixer",
+ "seoTitle": "Accessible Palette Fixer: Auto-Adjust Colors to WCAG AA",
+ "metaDescription": "Nudge palette colours until they reach a contrast target on your background, keeping hue. Shows before and after ratios. Free, local.",
+ "intro": "Takes a list of colours and a background and moves the lightness of each colour, in OKLCH, until it reaches the contrast ratio you choose.",
+ "why": "Brand colours often fail text contrast. This tool finds the smallest lightness change, darker or lighter, that reaches the target, keeping hue and as much chroma as sRGB allows. It shows each original and corrected colour with its ratio.\n\nContrast is the WCAG 2 ratio. A colour on a mid-tone background may not be fixable, and the tool says so. Always check the result by eye and in context.",
+ "howTo": [
+  "Enter your palette, one colour per line, with optional names.",
+  "Set the background colour and the target ratio.",
+  "Run the tool.",
+  "Copy the corrected colours."
+ ],
+ "faq": [
+  {
+   "q": "Which target should I use?",
+   "a": "4.5 for normal text at WCAG AA, 3 for large text and UI parts, 7 for AAA."
+  },
+  {
+   "q": "Why did the colour become less vivid?",
+   "a": "Dark or light versions of a hue fit less chroma in sRGB."
+  },
+  {
+   "q": "Does it handle APCA?",
+   "a": "No. Use the Contrast Checker for APCA values."
+  },
+  {
+   "q": "Can it fix a pair of text and background both?",
+   "a": "It adjusts only the palette colours against the one background."
+  }
+ ],
+ "related": [
+  "contrast-checker",
+  "palette-contrast-matrix",
+  "accessible-palette-generator",
+  "color-blindness-simulator",
+  "palette-generator",
+  "focus-indicator-contrast-checker"
+ ],
+ "keywords": [
+  "fix color contrast",
+  "wcag contrast fixer",
+  "accessible color adjust",
+  "make colors pass aa"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "pdf-text-extractor",
+ "seoTitle": "PDF Text Extractor for Word and Chrome PDFs, Offline",
+ "metaDescription": "Extract text from PDFs page by page, including files with subset or embedded fonts, with optional column layout. Reads the file locally, no upload.",
+ "intro": "Reads the text layer of a PDF using each font's Unicode map, so it works on files from Word, Chrome, LaTeX and InDesign where simple extractors return nothing. Output is plain text with page markers.",
+ "why": "Most modern PDFs store characters as glyph numbers in subset fonts. The readable text is only recoverable through a ToUnicode map inside the file, and a tool that ignores it returns garbage or nothing. This one parses those maps, the font widths and the page geometry, then groups glyphs into lines by position.\n\nThe layout option pads gaps with spaces so columns line up in plain text. Limits: text runs left to right and top to bottom, so a two-column page reads straight across the columns; rotated text is flagged rather than placed; scanned pages have no text layer, and the PDF OCR tool handles those. Encrypted files must be unlocked first.",
+ "howTo": [
+  "Choose a PDF.",
+  "Optionally enter a page range such as 1-3,5.",
+  "Tick \"keep gaps between columns\" for tables or forms.",
+  "Press Run, copy the text or download the .txt file."
+ ],
+ "faq": [
+  {
+   "q": "Why does a PDF give no text?",
+   "a": "The pages may be scans, which are pictures of text. Run the OCR tool first."
+  },
+  {
+   "q": "Why is the order wrong in two-column pages?",
+   "a": "Lines are read straight across the page. Copy one column at a time with a page range, or use layout mode to see the columns separated by spaces."
+  },
+  {
+   "q": "Does it send my file anywhere?",
+   "a": "No. The file is parsed in your browser."
+  },
+  {
+   "q": "It says some glyphs had no Unicode mapping. What now?",
+   "a": "Those characters come from fonts without a usable text map, often symbols or custom encodings. They are skipped."
+  }
+ ],
+ "related": [
+  "pdf-text-extract-simple",
+  "pdf-ocr-searchable",
+  "pdf-table-extractor",
+  "pdf-to-image",
+  "pdf-info",
+  "ocr-image-to-text"
+ ],
+ "keywords": [
+  "extract text from pdf",
+  "pdf to text offline",
+  "pdf text extractor",
+  "copy text from pdf subset font"
+ ]
+}

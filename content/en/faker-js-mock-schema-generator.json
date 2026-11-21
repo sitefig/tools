@@ -1,0 +1,43 @@
+{
+ "id": "faker-js-mock-schema-generator",
+ "seoTitle": "Free Faker.js Mock Factory Generator from JSON",
+ "metaDescription": "Turn a sample JSON object into a @faker-js/faker factory function. Field names pick the faker call. Free, runs in your browser.",
+ "intro": "Paste a sample JSON object and get a @faker-js/faker factory function. Field names and value shapes choose the faker call, and nested objects and arrays are handled.",
+ "why": "Tests, stories and demo screens need realistic data, not the same fixture copied everywhere. Writing a faker factory for an object with twenty fields means looking up the right call for each one: an email, a UUID, a date, a URL, a person's name. It is dull work and easy to leave half done.\n\nThis tool inspects a real example and guesses the match from the field name and the value, so email becomes an email address and createdAt becomes a date. Nested objects and arrays become nested factories. The guesses are heuristics, so check the result and adjust calls where your domain needs something specific. You can set the locale and the number of items. It runs in your browser, so your sample data is not uploaded.",
+ "howTo": [
+  "Paste a sample JSON object that shows the shape of your data.",
+  "Choose the faker locale and how many items the factory should create.",
+  "Read the generated factory function and check each faker call.",
+  "Copy it into your tests or storybook files and install @faker-js/faker."
+ ],
+ "faq": [
+  {
+   "q": "How does it choose the faker call?",
+   "a": "It looks at the field name first, such as email, id, url or createdAt, then at the value type. Anything it cannot place falls back to a generic call for that type, which you can replace."
+  },
+  {
+   "q": "Are the results deterministic?",
+   "a": "Not by default, because faker returns random values. For stable tests, set a seed with faker.seed in your own code before calling the factory."
+  },
+  {
+   "q": "Do I need a package installed?",
+   "a": "Yes. The generated code imports from @faker-js/faker, so install it as a development dependency. Check the faker version, since some method names changed between major releases."
+  }
+ ],
+ "related": [
+  "mock-data-generator",
+  "random-json-generator",
+  "api-mock-response-generator",
+  "prisma-seed-generator",
+  "fake-person-generator",
+  "json-to-typescript"
+ ],
+ "keywords": [
+  "faker js factory generator",
+  "json to faker",
+  "generate faker mock data",
+  "faker-js schema generator",
+  "mock data factory from json",
+  "free faker generator"
+ ]
+}

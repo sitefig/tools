@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PGP Encrypt with Public Key Online, gpg Compatible | Free Tools</title>
+<meta name="description" content="Encrypt text to an armored PGP public key or decrypt a gpg message with your private key in the browser. RSA, Curve25519, P-256. Nothing is uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/pgp-public-key-encrypt-decrypt/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/pgp-public-key-encrypt-decrypt/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/pgp-public-key-encrypt-decrypt/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="PGP Encrypt with Public Key Online, gpg Compatible | Free Tools">
+<meta property="og:description" content="Encrypt text to an armored PGP public key or decrypt a gpg message with your private key in the browser. RSA, Curve25519, P-256. Nothing is uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/pgp-public-key-encrypt-decrypt/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PGP Encrypt with Public Key Online, gpg Compatible | Free Tools">
+<meta name="twitter:description" content="Encrypt text to an armored PGP public key or decrypt a gpg message with your private key in the browser. RSA, Curve25519, P-256. Nothing is uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"PGP Public Key Encrypt and Decrypt (gpg Compatible, RSA and ECDH)","url":"https://tools.sitefig.net/en/pgp-public-key-encrypt-decrypt/","description":"Encrypt text to an armored PGP public key or decrypt a gpg message with your private key in the browser. RSA, Curve25519, P-256. Nothing is uploaded.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose Encrypt or Decrypt.","To encrypt, paste your text and the recipient's public key block; several keys can be pasted one after another.","To decrypt, paste the PGP MESSAGE, your private key block and its passphrase.","Copy the armored result or the decrypted text."],"keywords":"pgp encrypt online, gpg public key encrypt, decrypt pgp message browser, openpgp rsa curve25519","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Crypto","item":"https://tools.sitefig.net/en/#crypto"},{"@type":"ListItem","position":3,"name":"PGP Public Key Encrypt and Decrypt (gpg Compatible, RSA and ECDH)","item":"https://tools.sitefig.net/en/pgp-public-key-encrypt-decrypt/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it compatible with gpg?","acceptedAnswer":{"@type":"Answer","text":"Yes for the supported algorithms. It was tested in both directions with gpg 2.4.4 on RSA 2048 and 3072, Curve25519, NIST P-256, P-384 and P-521 keys, with and without passphrases, including 100 KB messages and messages encrypted by gpg with OCB."}},{"@type":"Question","name":"Does it sign the message?","acceptedAnswer":{"@type":"Answer","text":"No. The message is encrypted but not signed, so the recipient cannot tell who wrote it. Signatures in decrypted messages are not verified."}},{"@type":"Question","name":"Why not paste my main private key here?","acceptedAnswer":{"@type":"Answer","text":"The page is open code but you cannot easily prove that your browser or extensions are not watching it. Prefer a dedicated key, and the gpg command line for important keys."}},{"@type":"Question","name":"What about timing attacks?","acceptedAnswer":{"@type":"Answer","text":"The RSA and X25519 arithmetic uses JavaScript big integers, which are not constant time. That matters for a server, less for a one-off local decrypt."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#crypto">Crypto</a></li><li><span aria-current="page">PGP Public Key Encrypt and Decrypt (gpg Compatible, RSA and ECDH)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>PGP Public Key Encrypt and Decrypt (gpg Compatible, RSA and ECDH)</h1>
+<p class="lede">Encrypts a message to one or more OpenPGP public keys and decrypts messages made by gpg or other OpenPGP software when you paste the private key, all inside the page.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="pgp-public-key-encrypt-decrypt" data-module="new25" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Sending an encrypted note to someone who published a PGP key normally needs gpg and a terminal. This page implements the needed parts of OpenPGP from the RFC: reading keys, picking the encryption subkey, wrapping a random AES-256 session key with RSA or ECDH, and a protected data packet with an integrity check. Messages decrypt with gpg, and messages from gpg decrypt here.</p>
+<p>Keys and text never leave your browser, but a private key pasted into any web page is a risk you should weigh; use a throwaway key for sensitive work or the gpg command line. Supported: version 4 keys, RSA, ECDH on Curve25519, P-256, P-384 and P-521, secret keys protected by a passphrase, messages with integrity protection (SEIPD version 1) or the OCB packet gpg 2.4 writes, and compression. Not supported: version 6 keys and RFC 9580 messages, ElGamal, signing and verifying, Argon2 and BZip2. Signatures are ignored.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose Encrypt or Decrypt.</li><li>To encrypt, paste your text and the recipient's public key block; several keys can be pasted one after another.</li><li>To decrypt, paste the PGP MESSAGE, your private key block and its passphrase.</li><li>Copy the armored result or the decrypted text.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Is it compatible with gpg?</summary><p>Yes for the supported algorithms. It was tested in both directions with gpg 2.4.4 on RSA 2048 and 3072, Curve25519, NIST P-256, P-384 and P-521 keys, with and without passphrases, including 100 KB messages and messages encrypted by gpg with OCB.</p></details>
+<details><summary>Does it sign the message?</summary><p>No. The message is encrypted but not signed, so the recipient cannot tell who wrote it. Signatures in decrypted messages are not verified.</p></details>
+<details><summary>Why not paste my main private key here?</summary><p>The page is open code but you cannot easily prove that your browser or extensions are not watching it. Prefer a dedicated key, and the gpg command line for important keys.</p></details>
+<details><summary>What about timing attacks?</summary><p>The RSA and X25519 arithmetic uses JavaScript big integers, which are not constant time. That matters for a server, less for a one-off local decrypt.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/openpgp-symmetric-encrypt/"><span class="link-card__title">OpenPGP Passphrase Encrypt / Decrypt (gpg --symmetric Compatible)</span><span class="link-card__desc">Encrypt text to an ASCII-armored OpenPGP message with a passphrase (AES-256, iterated salted S2K, integrity protected), or decrypt one made by gpg --symmetric. Runs in your browser.</span></a></li><li><a class="link-card" href="/en/openpgp-inspector/"><span class="link-card__title">OpenPGP Armor / Packet Inspector</span><span class="link-card__desc">Paste an ASCII-armored PGP key, signature or message: checks the CRC-24, lists packets (algorithms, curves, key sizes, creation time, user IDs, signature subpackets) and computes v4 (SHA-1) / v6 (SHA-256) fingerprints. Nothing is verified or decrypted.</span></a></li><li><a class="link-card" href="/en/rsa-key-pair-generator/"><span class="link-card__title">RSA Key Pair Generator</span><span class="link-card__desc">Generate an RSA key pair with WebCrypto: PKCS#8 private key and SPKI public key as PEM (optional PKCS#1 format). Nothing is uploaded.</span></a></li><li><a class="link-card" href="/en/ssh-key-pair-generator/"><span class="link-card__title">SSH Key Pair Generator (Ed25519, ECDSA, RSA)</span><span class="link-card__desc">Generate an OpenSSH key pair in the browser: public key line for authorized_keys and an unencrypted OpenSSH private key. Keys are created with WebCrypto and never leave the page.</span></a></li><li><a class="link-card" href="/en/hash-generator/"><span class="link-card__title">Hash Generator</span><span class="link-card__desc">MD5, SHA-1, SHA-256, SHA-384 and SHA-512 of your text, all at once.</span></a></li><li><a class="link-card" href="/en/rsa-pkcs1-pkcs8-converter/"><span class="link-card__title">RSA PKCS#1 / PKCS#8 PEM Converter</span><span class="link-card__desc">Convert RSA keys between PKCS#1 (BEGIN RSA PRIVATE/PUBLIC KEY) and PKCS#8 / SPKI (BEGIN PRIVATE/PUBLIC KEY). Auto-detects direction.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

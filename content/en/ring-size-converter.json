@@ -1,0 +1,39 @@
+{
+ "id": "ring-size-converter",
+ "seoTitle": "Ring Size Converter: US, UK, ISO, Swiss and Diameter",
+ "metaDescription": "Convert ring sizes between US, UK letters, ISO and Swiss numbers and inside diameter or circumference in millimetres.",
+ "intro": "Converts ring sizes between systems and to millimetre diameter or circumference.",
+ "why": "Ring sizes are really lengths. US sizes step the inside diameter by 0.8128 mm from 11.63 mm at size 0. ISO sizes are the inside circumference in mm, and Swiss sizes are the ISO size minus 40. UK sizes use letters, with 1.25 mm of circumference per letter and C at 40 mm.\n\nThese formulas come from the Wikipedia article on ring size. Japanese sizes are not linear and are not included. Printed charts can differ slightly, so use a jeweller's gauge when fit matters.",
+ "howTo": [
+  "Choose the system you know.",
+  "Enter the value, for example 7, N 1/2 or 17.3 mm.",
+  "Read the other systems and the diameter."
+ ],
+ "faq": [
+  {
+   "q": "How do I measure at home?",
+   "a": "Measure the inside diameter of a ring that fits, or the finger circumference with a string."
+  },
+  {
+   "q": "Why does my chart differ?",
+   "a": "Charts round values differently, and UK letters are approximate."
+  },
+  {
+   "q": "What about wide bands?",
+   "a": "They fit tighter, so many people size up half a size."
+  }
+ ],
+ "related": [
+  "shoe-size-converter",
+  "clothing-size-converter",
+  "clothing-shoe-size-chart",
+  "unit-converter",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "ring size converter",
+  "us to uk ring size",
+  "ring diameter mm"
+ ]
+}

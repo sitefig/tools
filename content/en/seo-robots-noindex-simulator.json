@@ -1,0 +1,43 @@
+{
+ "id": "seo-robots-noindex-simulator",
+ "seoTitle": "Free Robots.txt and Noindex Crawl Simulator",
+ "metaDescription": "Combine robots.txt, X-Robots-Tag, meta robots and canonical to see if a URL can be crawled and indexed. Free, runs in your browser.",
+ "intro": "Paste a robots.txt and a page's response headers with its HTML head to see whether a URL can be crawled and indexed, and get a warning about blocking a noindex page in robots.txt.",
+ "why": "Crawling and indexing are two separate steps, and the controls interact in ways that surprise people. A page blocked in robots.txt cannot be fetched, so a noindex tag on it is never seen, and the URL can still appear in results without a snippet. A canonical tag may point somewhere else entirely. Each signal alone looks fine.\n\nThis simulator reads all of them together for a user agent and a path you choose. It reports whether the path is allowed to be crawled, which directives apply and whether the page can be indexed. It explains the common mistake that keeps pages in the index. It uses the text you paste and does not fetch your site, and it follows common rules, so confirm important cases in Search Console.",
+ "howTo": [
+  "Paste your robots.txt into the first box.",
+  "Paste the response headers, a blank line, then the page HTML head into the second box.",
+  "Enter the URL path to test and the user agent, such as Googlebot.",
+  "Read the crawl and index verdict and any warnings about conflicting signals."
+ ],
+ "faq": [
+  {
+   "q": "Why can a blocked page still appear in search?",
+   "a": "If other pages link to it, a search engine can list the URL without having crawled it. To keep a page out, allow crawling and use noindex, otherwise the tag is never seen."
+  },
+  {
+   "q": "Which wins, X-Robots-Tag or meta robots?",
+   "a": "Both are read, and the most restrictive directive generally applies. A noindex in either place is enough to keep the page out of the index when it can be crawled."
+  },
+  {
+   "q": "Does the tool fetch my live site?",
+   "a": "No. It only analyses the text you paste, so the answer matches your input, not necessarily what the live server sends. Compare it with a real fetch, for example in a URL inspection tool."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "robots-generator",
+  "meta-analyzer",
+  "canonical-generator",
+  "http-headers-analyzer",
+  "sitemap-validator"
+ ],
+ "keywords": [
+  "robots.txt noindex simulator",
+  "can google index this url",
+  "robots txt and noindex conflict",
+  "x-robots-tag tester",
+  "crawl vs index checker",
+  "free seo robots tool"
+ ]
+}

@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Phone Number Normalizer to E.164 for a CSV Column | Free Tools</title>
+<meta name="description" content="Convert phone numbers in a CSV column to E.164 with a default country, flagging numbers whose length looks wrong. Free, offline.">
+<link rel="canonical" href="https://tools.sitefig.net/en/phone-number-normalizer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/phone-number-normalizer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/phone-number-normalizer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Phone Number Normalizer to E.164 for a CSV Column | Free Tools">
+<meta property="og:description" content="Convert phone numbers in a CSV column to E.164 with a default country, flagging numbers whose length looks wrong. Free, offline.">
+<meta property="og:url" content="https://tools.sitefig.net/en/phone-number-normalizer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Phone Number Normalizer to E.164 for a CSV Column | Free Tools">
+<meta name="twitter:description" content="Convert phone numbers in a CSV column to E.164 with a default country, flagging numbers whose length looks wrong. Free, offline.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Phone Number Normalizer to E.164 (CSV Column, Default Country)","url":"https://tools.sitefig.net/en/phone-number-normalizer/","description":"Convert phone numbers in a CSV column to E.164 with a default country, flagging numbers whose length looks wrong. Free, offline.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the CSV and name the phone column.","Enter the default country as a two-letter code.","Keep the phone_check column to see review flags.","Copy or download the result."],"keywords":"phone number to e164, normalize phone numbers csv, international phone format","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Spreadsheet & Data Cleaning","item":"https://tools.sitefig.net/en/#spreadsheet-and-data-cleaning"},{"@type":"ListItem","position":3,"name":"Phone Number Normalizer to E.164 (CSV Column, Default Country)","item":"https://tools.sitefig.net/en/phone-number-normalizer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it as strict as libphonenumber?","acceptedAnswer":{"@type":"Answer","text":"No. It checks digit count only. We compared the output numbers with libphonenumber-js and they matched except for cases noted as 00 prefix handling."}},{"@type":"Question","name":"Extensions?","acceptedAnswer":{"@type":"Answer","text":"A trailing ext or x number is dropped."}},{"@type":"Question","name":"Which countries?","acceptedAnswer":{"@type":"Answer","text":"All with a calling code in the bundled table; use the ISO code, for example GB or DE."}},{"@type":"Question","name":"Is the data private?","acceptedAnswer":{"@type":"Answer","text":"Yes, nothing leaves your browser."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#spreadsheet-and-data-cleaning">Spreadsheet &amp; Data Cleaning</a></li><li><span aria-current="page">Phone Number Normalizer to E.164 (CSV Column, Default Country)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Phone Number Normalizer to E.164 (CSV Column, Default Country)</h1>
+<p class="lede">Rewrites phone numbers to +countrycode and digits using a default country for numbers without a code, and flags odd lengths for review.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="phone-number-normalizer" data-module="new21"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>CRM and mailing exports hold numbers in every local style. E.164 (+442079460958) is what most SMS and voice systems expect. Pick the default country, and local numbers lose their trunk zero and gain the country code.</p>
+<p>The check is structural: it knows each country calling code, the trunk prefix and the usual length of the national number (from Google libphonenumber metadata), but it does not know whether a number is assigned or a mobile. A number marked ok may still not exist. 00 is treated as the international prefix, as in most countries. Review flagged rows by hand.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the CSV and name the phone column.</li><li>Enter the default country as a two-letter code.</li><li>Keep the phone_check column to see review flags.</li><li>Copy or download the result.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Is it as strict as libphonenumber?</summary><p>No. It checks digit count only. We compared the output numbers with libphonenumber-js and they matched except for cases noted as 00 prefix handling.</p></details>
+<details><summary>Extensions?</summary><p>A trailing ext or x number is dropped.</p></details>
+<details><summary>Which countries?</summary><p>All with a calling code in the bundled table; use the ISO code, for example GB or DE.</p></details>
+<details><summary>Is the data private?</summary><p>Yes, nothing leaves your browser.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/entity-extractor/"><span class="link-card__title">Entity Extractor (Emails, Dates, Money, Names - Rules)</span><span class="link-card__desc">Pull emails, URLs, phones, dates, money, percentages, hashtags, @mentions and likely proper names out of text using patterns. Not an AI model.</span></a></li><li><a class="link-card" href="/en/email-list-cleaner/"><span class="link-card__title">Email List Cleaner (Dedupe, Lowercase, Validate)</span><span class="link-card__desc">Clean a pasted email list: split on any separator, lowercase, remove duplicates and syntax-invalid addresses, with a separate list of what was removed and why. Syntax only.</span></a></li><li><a class="link-card" href="/en/csv-whitespace-trimmer/"><span class="link-card__title">CSV Whitespace Trimmer (Trim and Collapse Spaces in Every Cell)</span><span class="link-card__desc">Remove leading and trailing spaces in all cells and collapse repeated spaces, tabs and non-breaking spaces to one space. Reports how many cells changed.</span></a></li><li><a class="link-card" href="/en/table-find-replace/"><span class="link-card__title">Find and Replace in Selected CSV Columns (Regex)</span><span class="link-card__desc">Apply a regular expression find and replace to chosen columns of a CSV only. See how many cells changed and which, before you copy the result. $1 style groups work.</span></a></li><li><a class="link-card" href="/en/csv-column-profiler/"><span class="link-card__title">CSV Column Profiler (Types, Nulls, Unique, Min/Max)</span><span class="link-card__desc">Profile each column of a CSV: inferred type, empty count, distinct values, min / max / mean for numbers, shortest and longest text, and most frequent values.</span></a></li><li><a class="link-card" href="/en/fake-person-generator/"><span class="link-card__title">Fake Person Generator</span><span class="link-card__desc">Clearly fictional people: example.com emails, 555-01xx phones, made-up addresses.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

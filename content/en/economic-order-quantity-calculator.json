@@ -1,0 +1,39 @@
+{
+ "id": "economic-order-quantity-calculator",
+ "seoTitle": "Economic Order Quantity (EOQ) Calculator",
+ "metaDescription": "Find the order size that minimises ordering plus holding cost, with orders per year and total cost. Free, private, in your browser.",
+ "intro": "Calculates the order size that balances ordering cost against holding cost.",
+ "why": "Ordering often costs more per unit, holding a lot of stock costs money too, and EOQ is the size where the two yearly costs are equal. The formula is the square root of 2 times demand times order cost divided by holding cost per unit.\n\nIt assumes steady demand and fixed costs and ignores quantity discounts, minimum order sizes and shelf life. Use it to see the scale of a good order, then adjust for those limits.",
+ "howTo": [
+  "Enter yearly demand.",
+  "Enter the cost of placing one order and the holding cost per unit per year.",
+  "Read EOQ, orders per year and the yearly cost."
+ ],
+ "faq": [
+  {
+   "q": "How do I get holding cost per unit?",
+   "a": "Add storage, insurance, shrink and the cost of money tied up, per unit per year."
+  },
+  {
+   "q": "Does EOQ handle volume discounts?",
+   "a": "No. Compare total cost at each discount break by hand."
+  },
+  {
+   "q": "What if demand varies?",
+   "a": "EOQ is a starting point; combine it with safety stock."
+  }
+ ],
+ "related": [
+  "reorder-point-calculator",
+  "safety-stock-calculator",
+  "inventory-turnover-calculator",
+  "average-order-value-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "eoq calculator",
+  "economic order quantity",
+  "optimal order size"
+ ]
+}

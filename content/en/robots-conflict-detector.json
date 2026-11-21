@@ -1,0 +1,44 @@
+{
+ "id": "robots-conflict-detector",
+ "seoTitle": "robots.txt Conflict Detector: Allow vs Disallow Overlaps",
+ "metaDescription": "Find Allow and Disallow rules that overlap in a robots.txt and see which one wins for each overlap. Free, runs in your browser.",
+ "intro": "Looks for Allow and Disallow rules in the same group that can match the same URL and tells you the winner and the effect.",
+ "why": "When an Allow and a Disallow both match a URL, the longer pattern wins, and on a tie the Allow wins. That is easy to get wrong by eye, especially with wildcards, and a rule you wrote as an exception may do nothing.\n\nThe detector checks each Allow against each Disallow in a group, names the winner and says whether the Allow works as an exception or is overridden. It finds overlaps by testing sample paths built from the patterns, so unusual wildcard mixes can be missed; review the important ones.",
+ "howTo": [
+  "Paste the robots.txt.",
+  "Read each overlapping pair and the winner.",
+  "Remove or reorder nothing: order does not matter, only length.",
+  "Confirm with the tester."
+ ],
+ "faq": [
+  {
+   "q": "Who wins a tie?",
+   "a": "The Allow rule, as in RFC 9309 and Google's documentation."
+  },
+  {
+   "q": "Does rule order matter?",
+   "a": "No. Specificity (pattern length) decides."
+  },
+  {
+   "q": "Why might an Allow do nothing?",
+   "a": "A longer Disallow that also matches the URL overrides it."
+  },
+  {
+   "q": "Does it check different user-agents against each other?",
+   "a": "No. Only rules in the same effective group are compared."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "robots-generator",
+  "seo-robots-noindex-simulator",
+  "sitemap-validator",
+  "robots-group-merger"
+ ],
+ "keywords": [
+  "robots.txt conflicts",
+  "allow disallow conflict",
+  "robots.txt rule precedence",
+  "robots.txt overlapping rules"
+ ]
+}

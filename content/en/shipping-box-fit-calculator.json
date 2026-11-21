@@ -1,0 +1,39 @@
+{
+ "id": "shipping-box-fit-calculator",
+ "seoTitle": "Shipping Box Volume and Item Fit Calculator",
+ "metaDescription": "Find box volume in litres and how many items fit in a grid in the best of six orientations. Free, runs offline in your browser.",
+ "intro": "Gives the volume of a box and counts how many identical items fit in a simple grid in the best orientation.",
+ "why": "Choosing a box by volume alone overestimates what fits, because items are rigid. A grid count in the best orientation is a safer figure, though not perfect.\n\nThe tool tries all six ways to rotate the item, counts how many fit along each side, and reports the best count next to the volume-only limit. Mixed orientations can fit more, and padding takes room, so confirm with a real box.",
+ "howTo": [
+  "Enter the inner box dimensions.",
+  "Enter the item dimensions.",
+  "Read the fit count and the space used."
+ ],
+ "faq": [
+  {
+   "q": "Why is the grid count lower than the volume limit?",
+   "a": "Items have fixed shapes and leave gaps. The volume limit assumes perfect filling."
+  },
+  {
+   "q": "Does it allow mixed orientations?",
+   "a": "No. All items share one orientation, which is easy to pack."
+  },
+  {
+   "q": "Should I use inner or outer size?",
+   "a": "Inner size, minus any padding you add."
+  }
+ ],
+ "related": [
+  "dimensional-weight-calculator",
+  "free-shipping-threshold-calculator",
+  "return-rate-cost-calculator",
+  "reorder-point-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "box volume calculator",
+  "how many items fit in a box",
+  "packing calculator"
+ ]
+}

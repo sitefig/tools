@@ -1,0 +1,45 @@
+{
+ "id": "ab-test-duration-calculator",
+ "seoTitle": "A/B Test Duration Calculator: Days and Full Weeks",
+ "metaDescription": "Work out how many days an A/B test must run from sample size, variants, daily visitors and traffic share, rounded up to full weeks.",
+ "intro": "Enter the sample size per variant, variant count and traffic to get the days and weeks needed.",
+ "why": "Tests that stop early produce false winners. Knowing the duration up front, and rounding to full weeks so each weekday is covered equally, keeps the test honest.\n\nGet the sample size from the A/B test calculator on this site, using your baseline rate and the smallest lift you care about. Low-traffic pages may need weeks or months.",
+ "howTo": [
+  "Get the sample size per variant.",
+  "Enter the number of variants and daily visitors.",
+  "Set the share of traffic in the test.",
+  "Read days and full weeks."
+ ],
+ "faq": [
+  {
+   "q": "Why full weeks?",
+   "a": "Behaviour differs by weekday, so full weeks avoid a weekday bias."
+  },
+  {
+   "q": "Do variants include the control?",
+   "a": "Yes, 2 means A and B."
+  },
+  {
+   "q": "Can I stop early?",
+   "a": "Not safely on a significance peek; fix the duration first."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "ab-test-calculator",
+  "conversion-rate-calculator",
+  "statistics-calculator",
+  "marketing-funnel-calculator",
+  "ads-roas-calculator",
+  "survey-sample-size-calculator"
+ ],
+ "keywords": [
+  "ab test duration",
+  "how long to run ab test",
+  "ab test calculator days",
+  "test length calculator"
+ ]
+}

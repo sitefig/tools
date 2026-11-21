@@ -1,0 +1,45 @@
+{
+ "id": "nps-calculator",
+ "seoTitle": "Net Promoter Score (NPS) Calculator with Breakdown Chart",
+ "metaDescription": "Calculate NPS from raw 0 to 10 scores or promoter, passive and detractor counts, with percentages and a bar chart. Free and private.",
+ "intro": "Paste raw scores or enter counts to get NPS from -100 to 100 and the split.",
+ "why": "NPS is the share of promoters (9 to 10) minus the share of detractors (0 to 6); passives (7 to 8) only count in the total. It is easy to compute and just as easy to miscount by hand.\n\nWith few responses the score swings widely, so the tool warns under 30. Track the score over time with a similar survey method, not against other companies.",
+ "howTo": [
+  "Paste scores, or leave empty and enter counts.",
+  "Read the NPS and the split.",
+  "Check the response count warning.",
+  "Repeat each period."
+ ],
+ "faq": [
+  {
+   "q": "What are the groups?",
+   "a": "Promoters 9 to 10, passives 7 to 8, detractors 0 to 6."
+  },
+  {
+   "q": "Can NPS be negative?",
+   "a": "Yes, down to -100."
+  },
+  {
+   "q": "Is the score a percent?",
+   "a": "No, it is a number between -100 and 100."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "csat-calculator",
+  "survey-sample-size-calculator",
+  "margin-of-error-calculator",
+  "statistics-calculator",
+  "retention-calculator",
+  "user-persona-template"
+ ],
+ "keywords": [
+  "nps calculator",
+  "net promoter score calculator",
+  "calculate nps",
+  "nps from scores"
+ ]
+}

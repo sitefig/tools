@@ -1,0 +1,45 @@
+{
+  "id": "bson-hex-converter",
+  "seoTitle": "BSON Hex / Base64 to JSON (MongoDB Extended JSON) and Back",
+  "metaDescription": "Decode BSON documents from hex or base64 into MongoDB Extended JSON ($oid, $date, $numberLong, $binary) or encode such JSON to BSON bytes.",
+  "intro": "See what is inside a BSON blob from MongoDB, or build one from JSON for tests.",
+  "why": "Decoding handles doubles, strings, embedded documents and arrays, binary with subtype, ObjectId, booleans, dates, null, regular expressions, int32, timestamps, int64, min/max keys and shows Decimal128 as raw hex. Encoding maps integers that fit 32 bits to int32 and other numbers to double, and understands the Extended JSON wrappers for ObjectId, dates, int64, binary, regular expressions and timestamps. Results were compared byte for byte with the official bson library.\n\nUndefined and deprecated types are not written, and Decimal128 is read-only.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose BSON to JSON or JSON to BSON.",
+    "Paste hex/base64 or Extended JSON.",
+    "Copy the converted data.",
+    "Use {\"$numberLong\":\"...\"} when you need a 64-bit integer."
+  ],
+  "faq": [
+    {
+      "q": "What is Extended JSON?",
+      "a": "MongoDB's way to represent BSON types that JSON lacks, such as {\"$oid\": \"...\"} for ObjectId."
+    },
+    {
+      "q": "Why did my integer become a double?",
+      "a": "Plain JSON numbers outside the 32-bit range are written as doubles. Wrap in $numberLong for int64."
+    },
+    {
+      "q": "Can I read a .bson dump?",
+      "a": "Paste one document at a time as hex or base64."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "msgpack-cbor-decoder",
+    "mongodb-objectid-parser",
+    "mongodb-query-builder",
+    "json-format",
+    "hex-dump-viewer",
+    "sql-to-mongodb"
+  ],
+  "keywords": [
+    "bson to json",
+    "json to bson",
+    "mongodb extended json",
+    "bson decoder"
+  ]
+}

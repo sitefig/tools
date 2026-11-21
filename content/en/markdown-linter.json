@@ -1,0 +1,45 @@
+{
+  "id": "markdown-linter",
+  "seoTitle": "Markdown Linter with markdownlint Rules",
+  "metaDescription": "Lint Markdown for heading levels, blank lines around headings and code fences, trailing spaces, tabs, bare URLs, missing code languages and empty links.",
+  "intro": "Check a README or docs page against the most common markdownlint rules and see each problem with its line number.",
+  "why": "Seventeen rules are implemented with markdownlint's own ids and names: MD001, 009, 010, 012, 013, 018, 019, 022, 024, 025, 026, 031, 034, 040, 041, 042 and 047. The output was compared with the markdownlint package on several documents and agrees on rule ids and line numbers for these rules.\n\nOther markdownlint rules (lists, emphasis style, HTML, link references and more) are not implemented here, so a clean result is not a full markdownlint pass. Run the real tool in CI for that.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the Markdown.",
+    "Optionally set a maximum line length for MD013.",
+    "Fix each reported line.",
+    "Add markdownlint to your repository for the other rules."
+  ],
+  "faq": [
+    {
+      "q": "Which rules are included?",
+      "a": "MD001, MD009, MD010, MD012, MD013, MD018, MD019, MD022, MD024, MD025, MD026, MD031, MD034, MD040, MD041, MD042, MD047."
+    },
+    {
+      "q": "Why is line length off by default?",
+      "a": "MD013 is controversial for prose, so it only runs when you set a limit."
+    },
+    {
+      "q": "Does it fix problems?",
+      "a": "No, it reports them."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "markdown-preview",
+    "markdown-to-html",
+    "markdown-table-generator",
+    "markdown-cheatsheet",
+    "readme-generator",
+    "markdown-to-plain-text"
+  ],
+  "keywords": [
+    "markdown linter",
+    "markdownlint online",
+    "lint readme",
+    "markdown checker"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "code-security-scanner",
+  "seoTitle": "Code Security Scanner: Risky Patterns with CWE IDs (Local)",
+  "metaDescription": "Paste code in JavaScript, Python, PHP, Java, Go, Ruby or C and flag risky patterns: eval, XSS sinks, SQL concatenation, shell injection, weak hashes, hard-coded secrets.",
+  "intro": "A quick, private lint for common security mistakes, each with its CWE identifier and a fix.",
+  "why": "Line-by-line regular expressions look for dynamic code execution, HTML injection sinks, SQL built by string concatenation or formatting, shell execution from variables, unsafe deserialisation (pickle, yaml.load, unserialize, ObjectInputStream), weak hashes (MD5, SHA-1), insecure randomness, disabled TLS verification, hard-coded credentials, debug modes and unsafe C string functions.\n\nThere is no data-flow analysis, so expect false positives and misses. It is a pre-check before using proper static analysis such as Semgrep or CodeQL, and the code never leaves your browser.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste a file or snippet.",
+    "Run the scan.",
+    "Read each finding with its CWE and suggested fix.",
+    "Use a full SAST tool in CI for deeper coverage."
+  ],
+  "faq": [
+    {
+      "q": "Which languages are covered?",
+      "a": "JavaScript/TypeScript, Python, PHP, Java, Go, Ruby and C patterns, plus language-independent rules."
+    },
+    {
+      "q": "Is a clean result safe?",
+      "a": "No. It checks a short list of patterns on single lines only."
+    },
+    {
+      "q": "Does it upload my code?",
+      "a": "No. The scan runs locally."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "sql-injection-pattern-scanner",
+    "secret-detector-redactor",
+    "prompt-injection-scanner",
+    "env-linter",
+    "hacked-html-scanner",
+    "csp-analyzer"
+  ],
+  "keywords": [
+    "code security scanner",
+    "static analysis lite",
+    "find vulnerabilities in code",
+    "cwe patterns"
+  ]
+}

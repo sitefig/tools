@@ -1,0 +1,43 @@
+{
+ "id": "svg-to-android-vector",
+ "seoTitle": "Free SVG to Android VectorDrawable Converter",
+ "metaDescription": "Convert SVG shapes and paths to Android VectorDrawable XML, with a size unit and optional tint. Warns about unsupported features. Free.",
+ "intro": "Paste an SVG and get Android VectorDrawable XML. Paths, basic shapes and simple group transforms are converted, and anything unsupported such as gradients or masks is listed as a warning.",
+ "why": "Android prefers vector drawables for icons because one small XML file scales to every screen density. Designers usually hand over SVG, and Android Studio's importer works but needs a project open, which is a lot of ceremony for a single icon.\n\nThis tool converts the common SVG elements directly: paths, rectangles, circles, ellipses, lines, polylines and polygons, plus groups with translate, scale or rotate. Solid fills and strokes only. Gradients, clip paths, masks and style blocks cannot be expressed in this simple conversion, so the tool lists them as warnings and you can fix the artwork or import it with Android Studio. The conversion runs in your browser.",
+ "howTo": [
+  "Paste your SVG markup into the input box.",
+  "Set the size unit, normally dp.",
+  "Tick the tint option if the icon is a single colour that should follow the theme.",
+  "Copy the XML into a file under res/drawable and read any warnings."
+ ],
+ "faq": [
+  {
+   "q": "Which SVG features does it support?",
+   "a": "Paths, rectangles, circles, ellipses, lines, polylines, polygons and groups with translate, scale and rotate transforms, using solid fills and strokes. Gradients, clip paths, masks and CSS style blocks are not converted."
+  },
+  {
+   "q": "What does the tint option do?",
+   "a": "It adds a tint attribute pointing at the theme's normal control colour, so a single-colour icon changes with light and dark themes. Leave it off for multicolour artwork, or the colours will be overridden."
+  },
+  {
+   "q": "What if my icon has warnings?",
+   "a": "Simplify the SVG so it uses only paths and solid colours, for example by converting strokes and text to outlines in your design tool. Alternatively import the file with Android Studio's Vector Asset tool."
+  }
+ ],
+ "related": [
+  "svg-to-swiftui-shape",
+  "svg-optimizer",
+  "svg-to-jsx",
+  "svg-path-editor",
+  "svg-to-react-native",
+  "android-manifest-builder"
+ ],
+ "keywords": [
+  "svg to android vector drawable",
+  "svg to vectordrawable converter",
+  "android vector xml from svg",
+  "convert svg to android xml",
+  "android icon svg converter",
+  "free svg to vectordrawable"
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "id": "sepa-epc-qr-code-generator",
+ "seoTitle": "SEPA Payment QR Code Generator (EPC / GiroCode)",
+ "metaDescription": "Create an EPC QR code with IBAN, amount and reference that euro banking apps scan to pre-fill a SEPA transfer.",
+ "intro": "QR code image for a SEPA credit transfer, built to the EPC format.",
+ "why": "Many banking apps in the euro area can scan a QR code that fills in beneficiary, IBAN, amount and reference. Put one on an invoice and payers make fewer mistakes.\n\nThe tool validates the IBAN checksum and field lengths, then builds the payload and the code in your browser. Test the code with a banking app before printing.",
+ "howTo": [
+  "Enter name, IBAN, amount and reference.",
+  "Choose a text or structured reference.",
+  "Download the PNG or copy the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Is the IBAN sent anywhere?",
+   "a": "Nothing you type leaves your browser."
+  },
+  {
+   "q": "What limits apply?",
+   "a": "Name up to 70 characters, text up to 140, structured reference up to 35, payload up to 331 bytes."
+  },
+  {
+   "q": "Does every app support it?",
+   "a": "Support varies by bank. Test first."
+  }
+ ],
+ "related": [
+  "qr-code-generator",
+  "iban-validator",
+  "structured-payment-reference-generator",
+  "invoice-generator",
+  "invoice-number-generator",
+  "qr-code-reader"
+ ],
+ "keywords": [
+  "SEPA QR code",
+  "EPC QR",
+  "GiroCode"
+ ]
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DMARC Aggregate Report Viewer: Read RUA XML, GZ and ZIP | Free Tools</title>
+<meta name="description" content="Open DMARC aggregate report XML (also .gz or .zip) and see pass and fail counts by source IP. Free, files stay in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/dmarc-aggregate-report-viewer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/dmarc-aggregate-report-viewer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/dmarc-aggregate-report-viewer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="DMARC Aggregate Report Viewer: Read RUA XML, GZ and ZIP | Free Tools">
+<meta property="og:description" content="Open DMARC aggregate report XML (also .gz or .zip) and see pass and fail counts by source IP. Free, files stay in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/dmarc-aggregate-report-viewer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="DMARC Aggregate Report Viewer: Read RUA XML, GZ and ZIP | Free Tools">
+<meta name="twitter:description" content="Open DMARC aggregate report XML (also .gz or .zip) and see pass and fail counts by source IP. Free, files stay in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"DMARC Aggregate Report (RUA XML) Viewer","url":"https://tools.sitefig.net/en/dmarc-aggregate-report-viewer/","description":"Open DMARC aggregate report XML (also .gz or .zip) and see pass and fail counts by source IP. Free, files stay in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Save the report attachment from your inbox.","Choose the file or paste the XML.","Read the totals and the table by source IP.","Fix your own failing senders, then tighten your policy."],"keywords":"dmarc report viewer, rua xml, dmarc aggregate report, read dmarc reports","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Network & HTTP","item":"https://tools.sitefig.net/en/#network-and-http"},{"@type":"ListItem","position":3,"name":"DMARC Aggregate Report (RUA XML) Viewer","item":"https://tools.sitefig.net/en/dmarc-aggregate-report-viewer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which files are supported?","acceptedAnswer":{"@type":"Answer","text":"Plain XML, gzip and single-file zip."}},{"@type":"Question","name":"What counts as a pass?","acceptedAnswer":{"@type":"Answer","text":"Either SPF or DKIM passing in the policy evaluation, which means aligned."}},{"@type":"Question","name":"Is my report uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. It is read locally."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#network-and-http">Network &amp; HTTP</a></li><li><span aria-current="page">DMARC Aggregate Report (RUA XML) Viewer</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>DMARC Aggregate Report (RUA XML) Viewer</h1>
+<p class="lede">Parses DMARC aggregate reports and summarises pass and fail per sending IP, with the failing sources listed.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="dmarc-aggregate-report-viewer" data-module="new06"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>DMARC receivers send you XML reports, usually zipped, that list which IP addresses sent mail as your domain and whether it passed. They are unreadable without a viewer, and the right sources to fix are often buried.</p>
+<p>Paste the XML or choose .xml, .gz or .zip files. The tool counts messages, DMARC passes (aligned SPF or DKIM) and failures per source IP, and lists failing records with the raw SPF and DKIM results. Everything happens in your browser. A failing source may be a forwarder, a list or an attacker: find out which before tightening policy.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Save the report attachment from your inbox.</li><li>Choose the file or paste the XML.</li><li>Read the totals and the table by source IP.</li><li>Fix your own failing senders, then tighten your policy.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which files are supported?</summary><p>Plain XML, gzip and single-file zip.</p></details>
+<details><summary>What counts as a pass?</summary><p>Either SPF or DKIM passing in the policy evaluation, which means aligned.</p></details>
+<details><summary>Is my report uploaded?</summary><p>No. It is read locally.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/dmarc-record-analyzer/"><span class="link-card__title">DMARC Record Analyzer (Explain a TXT Value)</span><span class="link-card__desc">Paste a DMARC TXT record and get every tag explained: policy, subdomain policy, percentage, alignment, report addresses, plus warnings such as p=none or pct below 100.</span></a></li><li><a class="link-card" href="/en/dmarc-generator/"><span class="link-card__title">DMARC Record Generator</span><span class="link-card__desc">Build the _dmarc TXT record: policy, subdomain policy, percentage, aggregate/forensic reports, alignment modes.</span></a></li><li><a class="link-card" href="/en/dkim-record-analyzer/"><span class="link-card__title">DKIM Record Analyzer (Key Type and RSA Key Length)</span><span class="link-card__desc">Paste a DKIM TXT record and read its tags, find the RSA key size or Ed25519 key, spot test mode and revoked keys, and get a note when the key is shorter than 2048 bits.</span></a></li><li><a class="link-card" href="/en/spf-record-generator/"><span class="link-card__title">SPF Record Generator</span><span class="link-card__desc">Compose an SPF TXT record from mechanisms, count DNS lookups against the 10-lookup limit and check the length.</span></a></li><li><a class="link-card" href="/en/email-header-analyzer/"><span class="link-card__title">Email Header Analyzer (Received Path, SPF, DKIM, DMARC)</span><span class="link-card__desc">Paste full email headers to trace the route (each Received hop with delay), read SPF, DKIM and DMARC results, check From / Return-Path alignment and spot spoofing signs.</span></a></li><li><a class="link-card" href="/en/eml-viewer/"><span class="link-card__title">EML Email Viewer (Headers, Body, Attachments)</span><span class="link-card__desc">Paste or open an .eml message and read it: decoded headers (RFC 2047), plain and HTML bodies, nested MIME parts, attachment list with sizes. Everything stays in your browser.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

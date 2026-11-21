@@ -1,0 +1,46 @@
+{
+  "id": "zalgo-text",
+  "seoTitle": "Free Zalgo Text Generator: Glitch and Creepy Text",
+  "metaDescription": "Stack combining marks above, through and below your letters to make glitchy Zalgo text. Adjust intensity and direction. Free, runs in your browser.",
+  "intro": "Adds random combining marks above, through and below each letter to create the corrupted look known as Zalgo text. You can set intensity, pick directions and use a seed for a repeatable result.",
+  "why": "Zalgo text is the dripping, glitched lettering you see in horror memes, game names and creepy posts. It is made by piling Unicode combining marks onto ordinary letters, and nobody types that by hand.\n\nHere you choose how wild it gets, from mini to max, and which directions are used: marks above, through the middle, or below. A seed makes the pattern repeatable, so the same input always gives the same output. Without a seed, each click is different. Heavy Zalgo can overflow lines, break layouts and bother screen readers, so use it for fun rather than anything people must read. It is generated locally in your browser.",
+  "howTo": [
+    "Type the text you want to corrupt.",
+    "Pick an intensity: mini, normal or max.",
+    "Tick or untick Up, Middle and Down, and add a seed if you want repeatable output.",
+    "Copy the glitched text from the output."
+  ],
+  "faq": [
+    {
+      "q": "Why does the output change each time?",
+      "a": "Without a seed the marks are chosen randomly. Type any word into the Seed box to get the same result for the same input every time."
+    },
+    {
+      "q": "Why does it spill over other lines?",
+      "a": "Combining marks are drawn above and below the letter without adding line height, so tall stacks overlap neighbouring text. Use the mini level, or switch off Up or Down, to reduce the overflow."
+    },
+    {
+      "q": "Will it work on every site?",
+      "a": "Some platforms strip or limit combining marks, and others cap the length of names. The text is still ordinary Unicode, so it can usually be pasted, but the look depends on the font and the site."
+    },
+    {
+      "q": "Can I reverse Zalgo text?",
+      "a": "This tool only adds marks. To clean text, use the Unicode normalizer and tick Strip diacritics, which removes combining marks and leaves the base letters."
+    }
+  ],
+  "related": [
+    "fancy-text",
+    "unicode-normalize",
+    "leetspeak",
+    "text-obfuscator",
+    "unicode-character-map",
+    "reverse-text"
+  ],
+  "keywords": [
+    "zalgo text generator",
+    "glitch text generator",
+    "creepy text generator",
+    "cursed text copy paste",
+    "free zalgo generator"
+  ]
+}

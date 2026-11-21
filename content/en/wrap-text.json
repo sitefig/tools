@@ -1,0 +1,46 @@
+{
+ "id": "wrap-text",
+ "seoTitle": "Free Text Wrapper: Hard Wrap or Unwrap at a Column Width",
+ "metaDescription": "Hard-wrap text at a set column width with optional indent, or join wrapped lines back into paragraphs. Free; runs in your browser.",
+ "intro": "Wrap long lines of text at a column width you choose, with an optional indent and long-word breaking, or unwrap hard-wrapped text back into single-line paragraphs.",
+ "why": "Plain text often needs a fixed line length: commit messages and email at around 72 characters, code comments at 80, README files and terminal output. The opposite problem is also common. Text copied from an email or PDF has a line break after every line, and pasting it into a form or document leaves ragged, broken paragraphs.\n\nThis tool wraps each paragraph at the column width you set, breaking at spaces and optionally splitting words longer than the line. An indent string, such as two spaces or a comment marker, can be added to each line. Unwrap mode does the reverse: it joins lines within a paragraph into one line and keeps blank-line paragraph breaks. Widths count characters, not pixels. It runs in your browser.",
+ "howTo": [
+  "Paste the text into the input box.",
+  "Choose wrap or unwrap in the options.",
+  "For wrap, set the width, an optional indent and whether to break very long words.",
+  "Run the tool and copy the result."
+ ],
+ "faq": [
+  {
+   "q": "How are paragraphs treated?",
+   "a": "In wrap mode, each existing line is wrapped separately. In unwrap mode, lines are joined within a paragraph, and blank lines mark where one paragraph ends and the next begins."
+  },
+  {
+   "q": "What does the minimum width mean?",
+   "a": "The width is the maximum line length in characters, with a minimum of 5. The indent counts towards that length, so a longer indent leaves less room for text."
+  },
+  {
+   "q": "Does it work with code?",
+   "a": "Not well. It wraps on spaces and collapses repeated whitespace, so code indentation and alignment are not preserved. Use it for prose, comments and plain text."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "remove-empty-lines-trim",
+  "tabs-spaces-converter",
+  "text-prefix-suffix-appender",
+  "line-numberer",
+  "find-replace",
+  "markdown-preview"
+ ],
+ "keywords": [
+  "wrap text online",
+  "hard wrap text at 80 columns",
+  "unwrap text lines",
+  "join broken lines",
+  "text wrapper tool free"
+ ]
+}

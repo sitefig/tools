@@ -1,0 +1,46 @@
+{
+  "id": "border-radius-generator",
+  "seoTitle": "Free CSS Border Radius Generator for Each Corner",
+  "metaDescription": "Set each corner's border-radius, including elliptical corners, and copy the CSS with a live preview. Free, runs in your browser.",
+  "intro": "Generates a border-radius value from four corner radii, with optional separate vertical radii for elliptical corners. Choose px, percent or rem units and see a live preview.",
+  "why": "Rounded corners are easy until you want something other than a uniform curve. A leaf shape, a speech bubble, a pill that curves only on one side, or an organic blob all rely on the slash syntax of border-radius, which very few people remember.\n\nEnter the top-left, top-right, bottom-right and bottom-left radii. Leave the vertical fields at 0 for ordinary circular corners, or fill them in to make each corner an ellipse. The output switches to the full horizontal-slash-vertical form only when it is needed, and you can pick units. The preview shows the shape immediately so you can tune it by eye. It is computed in your browser.",
+  "howTo": [
+    "Enter the four corner radii, starting at top-left and going clockwise.",
+    "Fill in the vertical radii only if you want elliptical corners.",
+    "Choose the unit: px, %, rem or similar.",
+    "Copy the border-radius line."
+  ],
+  "faq": [
+    {
+      "q": "What does the slash in the output mean?",
+      "a": "In border-radius, the values before the slash are horizontal radii and those after are vertical radii. Without a slash, each corner is a circle. With one, each corner can be an ellipse."
+    },
+    {
+      "q": "What does 0 mean in the vertical fields?",
+      "a": "Zero means \"same as the horizontal value\", so the corner stays circular. To make a vertical radius truly zero, use a very small number instead."
+    },
+    {
+      "q": "How do I make a circle or a pill?",
+      "a": "For a circle on a square box, use 50%. For a pill on a wide box, use a radius at least half of the height, or a very large value such as 9999px."
+    },
+    {
+      "q": "Which order are the corners in?",
+      "a": "Top-left, top-right, bottom-right, bottom-left, clockwise. This is the same order the CSS shorthand uses when you give four values."
+    }
+  ],
+  "related": [
+    "css-blob-generator",
+    "clip-path-generator",
+    "box-shadow-generator",
+    "css-speech-bubble-generator",
+    "css-unit-converter",
+    "neumorphism-generator"
+  ],
+  "keywords": [
+    "border radius generator",
+    "css border radius",
+    "elliptical border radius",
+    "rounded corners css generator",
+    "free border-radius tool"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "text-diff",
+ "seoTitle": "Free Text Diff: Compare Two Texts Online",
+ "metaDescription": "Compare two texts line by line or word by word with unified-style output, context lines and options to ignore case and whitespace. Free.",
+ "intro": "Paste an original and a changed version to see what was added and removed, line by line in unified style or word by word with inline markers. Case and whitespace can be ignored.",
+ "why": "Two versions of a document, a config file or an email draft sit in front of you and you need to know exactly what changed. Reading both side by side is slow, and it is easy to miss one altered number or a deleted clause.\n\nThis tool compares the two texts and reports the differences. In line mode it prints a unified diff with the amount of context you choose and a count of added and removed lines. In word mode it shows the changed words inline, with deleted text in [- -] and new text in {+ +}. You can ignore case or whitespace to filter out noise. It is a plain text comparison, so it does not understand file formats. Both texts stay in your browser.",
+ "howTo": [
+  "Paste the original text into the first box and the changed text into the second.",
+  "Choose line or word mode and the number of context lines.",
+  "Tick ignore case or ignore whitespace if formatting differences are noise.",
+  "Run the tool and read the additions and removals."
+ ],
+ "faq": [
+  {
+   "q": "What do the markers mean?",
+   "a": "In line mode, lines starting with a minus were removed and lines with a plus were added. In word mode, [-text-] is deleted and {+text+} is inserted, with unchanged text left as it is."
+  },
+  {
+   "q": "Is there a visual comparison?",
+   "a": "Yes. The side-by-side diff tool on this site shows the two texts in columns with highlighted lines and word changes, which suits code and longer documents."
+  },
+  {
+   "q": "Is there a size limit?",
+   "a": "There is no fixed limit, but very large inputs make the comparison slow because it is done in your browser. Split big files or compare the sections that matter."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "code-diff-html",
+  "json-diff",
+  "find-replace",
+  "sort-lines",
+  "dedupe-lines",
+  "env-toolkit"
+ ],
+ "keywords": [
+  "text diff",
+  "compare two texts online",
+  "diff checker",
+  "find differences between texts",
+  "text compare tool free"
+ ]
+}

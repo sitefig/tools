@@ -1,0 +1,38 @@
+{
+ "id": "media-devices-viewer",
+ "seoTitle": "Camera, Microphone and Speaker Viewer: List Media Devices",
+ "metaDescription": "List the cameras, microphones and speakers your browser exposes and the supported media constraints. Names appear after you grant access; nothing is recorded.",
+ "intro": "See which cameras, microphones and audio outputs your browser can use and what constraints it supports.",
+ "why": "Web apps pick devices through enumerateDevices. This viewer lists video inputs, audio inputs and outputs with their device ids, and the media constraints the browser supports. Browsers hide device names until a page has permission, so there is a button to allow camera and microphone once, read the names, and release the devices immediately.\n\nNo audio or video is recorded, kept or sent; the stream is stopped as soon as the names are read. It needs HTTPS and a supporting browser. Use it to check why a device is missing, how many devices a site would see, or what a tester machine exposes.",
+ "howTo": [
+  "Press List devices to see the counts without a prompt.",
+  "Press the allow button to reveal device names (the browser asks once).",
+  "Read the lists and the supported constraints."
+ ],
+ "faq": [
+  {
+   "q": "Does it record anything?",
+   "a": "No. The stream is opened only to unlock device names and is stopped at once."
+  },
+  {
+   "q": "Why are names blank?",
+   "a": "Browsers withhold labels until permission is granted."
+  },
+  {
+   "q": "Why no devices?",
+   "a": "A page on plain HTTP, a blocked permission or missing drivers can hide them."
+  }
+ ],
+ "related": [
+  "mic-test",
+  "audio-recorder",
+  "browser-permissions-viewer",
+  "browser-info",
+  "webrtc-leak-test"
+ ],
+ "keywords": [
+  "list cameras microphones browser",
+  "enumerate devices",
+  "check webcam available"
+ ]
+}

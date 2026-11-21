@@ -1,0 +1,44 @@
+{
+ "id": "ai-block-adoption-timeline",
+ "seoTitle": "AI Block Adoption Timeline from robots.txt Snapshots",
+ "metaDescription": "Paste dated robots.txt snapshots and see when each AI crawler was first blocked or unblocked. Free, runs in your browser.",
+ "intro": "Reads a series of dated robots.txt copies and shows when AI crawlers were blocked or unblocked.",
+ "why": "A site's AI policy changes over time. Archived copies of its robots.txt, taken on different dates, show when it started blocking GPTBot or ClaudeBot.\n\nPaste snapshots after === date lines and read the first block date per crawler and the list of changes. Fetching archived copies needs the network, so copy them yourself. A bot that did not exist yet cannot be blocked, so early snapshots show nothing for it.",
+ "howTo": [
+  "Collect robots.txt copies from different dates.",
+  "Paste each after a === date line.",
+  "Read first blocked dates.",
+  "Read the list of changes."
+ ],
+ "faq": [
+  {
+   "q": "Which date formats work?",
+   "a": "Any that sort as text, such as 2024-05-01."
+  },
+  {
+   "q": "Does it fetch archives?",
+   "a": "No."
+  },
+  {
+   "q": "Why is a crawler missing?",
+   "a": "It was never blocked in the snapshots."
+  },
+  {
+   "q": "What counts as blocked?",
+   "a": "The home page is disallowed for it."
+  }
+ ],
+ "related": [
+  "ai-crawler-policy-comparator",
+  "robots-txt-diff",
+  "ai-bot-robots-txt-audit",
+  "ai-crawler-user-agent-directory",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "ai block timeline",
+  "when did site block gptbot",
+  "robots.txt history ai",
+  "robots.txt snapshots compare"
+ ]
+}

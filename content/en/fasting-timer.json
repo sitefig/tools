@@ -1,0 +1,45 @@
+{
+ "id": "fasting-timer",
+ "seoTitle": "Intermittent Fasting Timer (Live 16:8 Countdown)",
+ "metaDescription": "A live timer for fasting and eating windows such as 16:8: shows which window you are in, the time left, and when you can eat next.",
+ "intro": "A live countdown for fasting and eating windows.",
+ "why": "Pick a plan such as 16:8 and the time your eating window starts each day. The page shows whether you are in the fasting or eating window, the time left, and when the next window begins. It updates every second while the tab is open.\n\nNothing is stored, so it follows your device clock. The clock is not read out every second to screen readers; the status line changes only when a window changes. Fasting is not right for everyone. Ask a doctor if you have a medical condition, take medication, are pregnant or have had an eating disorder.",
+ "howTo": [
+  "Choose a plan.",
+  "Set the time your eating window starts.",
+  "Keep the tab open to watch the countdown.",
+  "Change the plan any time."
+ ],
+ "faq": [
+  {
+   "q": "Does it keep running in the background?",
+   "a": "It runs while the page is open. Browsers may slow timers in hidden tabs, but it recalculates from the clock each time, so the display stays correct."
+  },
+  {
+   "q": "Does it send reminders?",
+   "a": "No. It has no notifications."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "fasting-window-planner",
+  "sleep-cycle-calculator",
+  "calorie-deficit-calculator",
+  "water-intake",
+  "workout-interval-timer",
+  "pomodoro-timer"
+ ],
+ "keywords": [
+  "intermittent fasting timer",
+  "16:8 timer",
+  "fasting countdown",
+  "eating window timer"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "image-size-attributes",
+ "seoTitle": "Image Width and Height Attributes Generator to Prevent Layout Shift",
+ "metaDescription": "Drop images to read their real size from the file header and get img tags with width, height and aspect-ratio that prevent layout shift. No upload.",
+ "intro": "Reads image dimensions from file headers and writes img tags with width, height and an aspect-ratio rule.",
+ "why": "Images without width and height make the page jump when they load, which hurts Cumulative Layout Shift. The fix is to give the browser the size up front.\n\nThe tool reads PNG, JPEG, GIF, WebP, BMP, AVIF, HEIC and SVG headers directly, so it does not decode pixels. It applies the EXIF rotation to JPEGs the way browsers do, and reduces the ratio for you. You get a ready img tag and the matching CSS aspect-ratio.",
+ "howTo": [
+  "Choose one or more image files.",
+  "Set the URL prefix for src.",
+  "Copy the img tag for each file.",
+  "Keep max-width: 100% and height: auto in your CSS."
+ ],
+ "faq": [
+  {
+   "q": "Do width and height stop responsive images?",
+   "a": "No. With height: auto the browser uses them only to compute the aspect ratio."
+  },
+  {
+   "q": "What about SVG?",
+   "a": "The tool uses width and height, or the viewBox, and rounds to whole pixels."
+  },
+  {
+   "q": "Why are some JPEG sizes swapped?",
+   "a": "The file has an EXIF rotation of 90 or 270 degrees, which browsers apply when showing the image."
+  },
+  {
+   "q": "Are the files uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "srcset-generator",
+  "image-info",
+  "image-seo",
+  "cls-risk-finder",
+  "lazy-loading-injector"
+ ],
+ "keywords": [
+  "image width height attributes",
+  "prevent layout shift images",
+  "image dimensions from file",
+  "aspect ratio img tag"
+ ]
+}

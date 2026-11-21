@@ -1,0 +1,47 @@
+{
+ "id": "title-case-headline-analyzer",
+ "seoTitle": "Free Headline Analyzer for Blog and SEO Titles",
+ "metaDescription": "Score headlines on length, numbers, power words and tone with a simple heuristic. Free, runs in your browser, and is not an SEO guarantee.",
+ "intro": "Paste one or more headlines and get a score out of 100 based on length, numbers, power words, tone and structure, plus a note on whether the headline may truncate in search results.",
+ "why": "You often write ten possible titles for one article, and a decision based on gut feeling alone is shaky. A quick comparison on length, concrete numbers and strong words is a useful second opinion, especially when a title will be cut off in search results after around 60 characters.\n\nThis analyser applies a simple scoring recipe to each line: a sweet spot for length, a bonus for digits, a list of power words, a nudge for positive or negative tone, and a starter such as how or why. It prints the score, character count, word count and the power words found. The score is a heuristic and not a ranking or click-through prediction.",
+ "howTo": [
+  "Paste your headlines, one per line.",
+  "Run the analyser.",
+  "Compare the scores, lengths and power words for each headline.",
+  "Shorten any headline flagged as possibly truncated, then rewrite and test again."
+ ],
+ "faq": [
+  {
+   "q": "What does the score measure?",
+   "a": "It adds points for a length of about 40 to 65 characters, a number in the title, up to three power words, some emotional tone, a how or why opening and a moderate word count. It is a writing aid, not an SEO metric."
+  },
+  {
+   "q": "Will a high score make my page rank?",
+   "a": "No. Rankings depend on content, links and many other factors. A better headline can help click-through, but the score has no connection to any search engine."
+  },
+  {
+   "q": "Does it work for languages other than English?",
+   "a": "Not well. The power word and tone lists are English, so only length and numbers are meaningful in other languages."
+  },
+  {
+   "q": "How can I check how the title looks in Google?",
+   "a": "Use the SERP Snippet or Title Length Checker. They show a preview and measure the title against typical display limits."
+  }
+ ],
+ "related": [
+  "title-length-checker",
+  "serp-snippet",
+  "heading-analyzer",
+  "slug-generator",
+  "meta-tag-generator",
+  "readability"
+ ],
+ "keywords": [
+  "headline analyzer",
+  "blog title checker",
+  "headline score tool",
+  "free title analyzer",
+  "seo headline tester",
+  "title length and power words"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "avro-to-json-schema",
+ "seoTitle": "Free Avro Schema to JSON Schema Converter",
+ "metaDescription": "Convert an Avro .avsc schema with records, enums, arrays, maps, unions and logical types to JSON Schema draft 2020-12. Free, in your browser.",
+ "intro": "Paste an Avro schema and get an equivalent JSON Schema (draft 2020-12), with named records and enums turned into definitions and unions into anyOf.",
+ "why": "Kafka and data pipelines describe messages in Avro, while REST APIs, form builders and documentation tools expect JSON Schema. Teams end up translating by hand when they want to validate the JSON form of an event, generate docs or share a contract with a web client.\n\nThis converter reads the .avsc, resolves named references and namespaces, and writes properties, required lists and $defs. Fields with a default are not required, unions become anyOf, maps become objects with additionalProperties, and common logical types such as timestamp-millis and uuid get a matching format. It covers the standard Avro types. Custom logical types and schema registry references are not resolved, and the JSON form of unions is simplified.",
+ "howTo": [
+  "Paste your Avro schema JSON, a record or any valid Avro type.",
+  "Read the JSON Schema in the output, with shared types under $defs.",
+  "Copy it into your validator or documentation tool."
+ ],
+ "faq": [
+  {
+   "q": "How are unions handled?",
+   "a": "As anyOf over the converted members, so a nullable union becomes a choice between null and the other type. Avro tagged JSON encoding, where the branch name wraps the value, is not modelled."
+  },
+  {
+   "q": "Which logical types are supported?",
+   "a": "timestamp-millis, timestamp-micros, date, uuid and time-millis. Others are ignored and the base type is used. Decimal is not given special treatment."
+  },
+  {
+   "q": "Why does additionalProperties false appear?",
+   "a": "Avro records have a fixed set of fields, so the generated object schema rejects unknown keys. Remove that line if your consumers should tolerate extras."
+  },
+  {
+   "q": "Does it follow references to other files?",
+   "a": "No. Only names defined earlier in the same document are resolved. An unknown type name stops the conversion with an error naming it."
+  }
+ ],
+ "related": [
+  "json-schema-generator",
+  "json-schema-validator",
+  "json-schema-to-zod",
+  "protobuf-to-json-schema",
+  "json-to-typescript",
+  "typescript-to-json-schema"
+ ],
+ "keywords": [
+  "avro to json schema",
+  "avsc to json schema converter",
+  "convert avro schema online",
+  "free avro schema tool",
+  "avro schema to jsonschema 2020-12"
+ ]
+}

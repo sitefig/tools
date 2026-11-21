@@ -1,0 +1,46 @@
+{
+ "id": "http-headers-analyzer",
+ "seoTitle": "Free HTTP Headers Analyzer: Security, Cache, SEO",
+ "metaDescription": "Paste raw HTTP response headers to check security, caching, compression and SEO issues. Free; runs in your browser and uploads nothing.",
+ "intro": "Paste raw response headers, for example from curl -I, to check status, redirects, security headers, cookies, caching, compression and SEO signals, with a list of issues.",
+ "why": "Headers decide a lot about how a page behaves: whether browsers cache it, whether it can be framed, whether a cookie is protected, whether a 302 should have been a 301. You see them with curl or in developer tools, but reading a long block for the one missing line is tedious.\n\nThis analyser parses the headers you paste and lists errors, warnings and notes: server errors and redirects, missing clickjacking protection, short or missing HSTS, unsafe CSP values, version leaks in Server and X-Powered-By, cookies missing flags, absent cache or compression headers, and canonical in a Link header. It then shows the parsed headers. It only judges what you paste, from one request, and does not make requests itself. It runs in your browser.",
+ "howTo": [
+  "Run curl -I https://example.com or copy response headers from developer tools.",
+  "Paste the raw headers into the input box.",
+  "Run the tool to see the issues grouped by severity.",
+  "Fix the findings on your server, then request the headers again to confirm."
+ ],
+ "faq": [
+  {
+   "q": "What format does it expect?",
+   "a": "Raw lines such as Name: value, optionally starting with a status line like HTTP/2 200. Repeated headers, such as several Set-Cookie lines, are all read."
+  },
+  {
+   "q": "Does it test my live site?",
+   "a": "No. It analyses only the text you paste, so it can be used on private or staging responses. You need to fetch the headers yourself first."
+  },
+  {
+   "q": "Which problems does it find?",
+   "a": "Security issues such as missing HSTS or frame protection, cookie flag gaps, version disclosure, caching and compression gaps, redirect types and a few SEO signals. It is a quick review, not a complete audit."
+  },
+  {
+   "q": "Are the headers uploaded?",
+   "a": "No. Everything runs in your browser and nothing you paste is uploaded, stored or sent to a server, so staging or confidential configuration is safe to use here."
+  }
+ ],
+ "related": [
+  "security-headers-generator",
+  "csp-analyzer",
+  "cookie-flag-analyzer",
+  "http-status-reference",
+  "cache-control-builder",
+  "http-headers-to-json"
+ ],
+ "keywords": [
+  "http headers analyzer",
+  "check response headers",
+  "security headers checker",
+  "analyse curl -i output",
+  "http header checker online"
+ ]
+}

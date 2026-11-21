@@ -1,0 +1,44 @@
+{
+ "id": "firewall-log-parser",
+ "seoTitle": "Firewall Log Parser: iptables, UFW and pfSense",
+ "metaDescription": "Parse iptables, UFW and pfSense filterlog lines into action, source, destination and ports, and rank sources and ports. Free.",
+ "intro": "Turns firewall log lines into columns and summaries of actions, sources and destination ports.",
+ "why": "Firewall logs are dense KEY=value or comma lists. Seeing which source and which port are blocked most helps tune rules.\n\nUFW and iptables lines are read by their SRC, DST and port fields. pfSense filterlog lines are read by position as in the pfSense source code. IPv6 and ICMP details are only partly shown.",
+ "howTo": [
+  "Paste the kernel log lines or filterlog lines.",
+  "Filter by action.",
+  "Read top sources and destination ports.",
+  "Switch to the table for each line."
+ ],
+ "faq": [
+  {
+   "q": "Which formats are supported?",
+   "a": "iptables LOG and UFW lines with SRC and DST, and pfSense filterlog CSV."
+  },
+  {
+   "q": "Where does pfSense field order come from?",
+   "a": "From the pfSense source file syslog.inc."
+  },
+  {
+   "q": "Does it block anything?",
+   "a": "No. It only reads text."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "auth-log-analyzer",
+  "syslog-parser",
+  "brute-force-scan-detector",
+  "ip-subnet-calculator",
+  "cidr-contains",
+  "log-format-detector"
+ ],
+ "keywords": [
+  "ufw log parser",
+  "iptables log analyzer",
+  "pfsense filterlog parser"
+ ]
+}

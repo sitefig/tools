@@ -1,0 +1,45 @@
+{
+  "id": "semver-range-intersection",
+  "seoTitle": "Semver Range Intersection Calculator for npm",
+  "metaDescription": "Find the versions that satisfy two npm semver ranges at once, or learn that they conflict. Useful for peer dependency problems.",
+  "intro": "Combine two version ranges such as ^1.2.0 and >=1.4.0 <3.5.0 into the exact range that satisfies both.",
+  "why": "Each range is converted to a set of intervals (caret, tilde, x-ranges, hyphen ranges, comparators and || unions are supported) and the intervals are intersected. The result is shown in comparator form, or a note that no version satisfies both. The implementation was compared with the npm semver package over more than 100,000 range-pair and version checks.\n\nPre-release tags follow npm's special matching rules that this tool does not model; it works on release versions.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter range A and range B.",
+    "Run it.",
+    "Use the intersection to pick a compatible version.",
+    "If it is empty, one package must change its requirement."
+  ],
+  "faq": [
+    {
+      "q": "What does the result mean?",
+      "a": "Any version inside it satisfies both of your ranges."
+    },
+    {
+      "q": "What if the result is empty?",
+      "a": "The requirements cannot be met by one installed version; npm may install two copies or report a conflict."
+    },
+    {
+      "q": "Does ^0.2.3 behave differently?",
+      "a": "Yes. For 0.x versions caret allows patch changes only: ^0.2.3 means >=0.2.3 <0.3.0."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "semver-calculator",
+    "package-json-formatter",
+    "package-json-license-checker",
+    "package-json-generator",
+    "dependabot-config-generator",
+    "renovate-config-generator"
+  ],
+  "keywords": [
+    "semver range intersection",
+    "npm version ranges",
+    "peer dependency conflict",
+    "semver calculator"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "x-post-character-counter",
+ "seoTitle": "X (Twitter) Character Counter with Link Weighting",
+ "metaDescription": "Count a post the way X does: links count 23, emoji and CJK count double, limit 280. Free and private, nothing is sent.",
+ "intro": "Count a post the way X does: links count as 23, emoji and CJK count as 2, and the limit is 280 weighted characters.",
+ "why": "X does not count characters one by one. Every link counts 23 whatever its length, and emoji and many non-Latin characters count double. A post that looks short can be over the limit.\n\nThis counter applies the published weighting (the twitter-text configuration, version 3: Latin ranges weigh 1, other characters 2, links 23, limit 280) and shows the plain count next to it. You can change the limit for accounts with a longer allowance. The text stays in your browser.",
+ "howTo": [
+  "Paste your draft.",
+  "Read the weighted length and what remains.",
+  "Change the limit if your account allows longer posts.",
+  "Shorten the text until the remaining number is zero or more."
+ ],
+ "faq": [
+  {
+   "q": "Why does my link count 23?",
+   "a": "X shortens every link and counts it as 23 characters, whatever the real length."
+  },
+  {
+   "q": "Why do emoji and Japanese count double?",
+   "a": "X gives characters outside certain Latin and punctuation ranges a weight of 2, so only 140 of them fit."
+  },
+  {
+   "q": "Are links without https detected?",
+   "a": "Only http(s):// and www. links are detected here. X may also link bare domains, so leave a little room."
+  }
+ ],
+ "related": [
+  "social-post-length-checker",
+  "thread-splitter",
+  "char-limit-counter",
+  "hashtag-formatter",
+  "social-post-preview",
+  "social-share-link-generator"
+ ],
+ "keywords": [
+  "x character counter",
+  "twitter character count",
+  "tweet length",
+  "280 characters"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "dockerfile-linter",
+ "seoTitle": "Free Dockerfile Linter with Hadolint-Style Rules",
+ "metaDescription": "Check a Dockerfile for latest tags, apt, apk and pip hygiene, ADD vs COPY, root user and secrets in ENV with DL rule codes. Free, in your browser.",
+ "intro": "Paste a Dockerfile and get findings with line numbers and Hadolint-style DL codes, covering image tags, package installs, USER, CMD form and secrets.",
+ "why": "A Dockerfile that builds is not necessarily a good one. Using node with no tag, running apt-get install without cleaning the lists, leaving the user as root or putting an API key in ENV all work today and cause trouble later: unrepeatable builds, big images and leaked credentials.\n\nThis linter reads your Dockerfile line by line, joining continuation lines, and reports the common problems using the code numbers Hadolint users know (DL3006, DL3008, DL3020 and so on). It implements a subset of rules with simple pattern matching, so it can miss cases or flag false positives. For full coverage, run Hadolint in your CI pipeline.",
+ "howTo": [
+  "Paste your Dockerfile into the input.",
+  "Read the list of findings, each with a line number, code and severity.",
+  "Fix the instructions, paste again, and run Hadolint in CI for the complete rule set."
+ ],
+ "faq": [
+  {
+   "q": "Is this the real Hadolint?",
+   "a": "No. It borrows the DL rule codes and wording for a subset of checks, using simple line-based matching. It does not parse shell commands or run ShellCheck on RUN lines."
+  },
+  {
+   "q": "Which problems does it catch?",
+   "a": "Missing or latest tags, MAINTAINER, relative WORKDIR, ADD instead of COPY, apt and apk and pip hygiene, pipes without pipefail, curl piped to a shell, several CMDs, root user and likely secrets in ENV or ARG."
+  },
+  {
+   "q": "Why is a missing HEALTHCHECK only information?",
+   "a": "Many images, such as one-off jobs, do not need one. The tool reports it at info level so that you can decide if a health check fits your service."
+  },
+  {
+   "q": "Is my Dockerfile uploaded?",
+   "a": "No, the checks run in your browser. Still, take hard-coded secrets out of the Dockerfile; the tool flags them but cannot remove them from your history."
+  }
+ ],
+ "related": [
+  "dockerfile-generator",
+  "dockerignore-generator",
+  "docker-compose-generator",
+  "docker-compose-formatter",
+  "k8s-manifest-validator",
+  "secret-detector-redactor"
+ ],
+ "keywords": [
+  "dockerfile linter online",
+  "hadolint online",
+  "dockerfile checker",
+  "free dockerfile best practices",
+  "dockerfile lint rules",
+  "dl3006 dl3008"
+ ]
+}

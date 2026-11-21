@@ -1,0 +1,46 @@
+{
+  "id": "box-shadow-generator",
+  "seoTitle": "Free CSS Box Shadow Generator with Live Preview",
+  "metaDescription": "Build a layered CSS box-shadow with offsets, blur, spread, colour, opacity and inset, and copy the code. Free, runs in your browser.",
+  "intro": "Generates a CSS box-shadow declaration from offset, blur, spread, colour and opacity controls. It can stack several smooth layers and make the shadow inset, with a live preview.",
+  "why": "A single hard shadow looks flat and dated, while the soft, layered shadows seen in modern interfaces take careful tuning. Writing the numbers by hand and refreshing the browser for each change is slow, and it is hard to judge a shadow without seeing it.\n\nSet the X and Y offsets, blur, spread, colour and opacity, and the preview updates beside a ready-to-copy declaration. The layers option splits the shadow into up to six progressively larger layers, which gives a smoother, more natural fall-off than one big blur. Turn on inset for pressed or inner effects. Opacity is baked into an rgba colour so you do not need to convert anything yourself. Everything runs in your browser.",
+  "howTo": [
+    "Set the X offset, Y offset, blur and spread values.",
+    "Pick a colour and an opacity percentage.",
+    "Raise Layers for a smoother shadow, or tick Inset for an inner shadow.",
+    "Copy the box-shadow line from the output."
+  ],
+  "faq": [
+    {
+      "q": "What does the layers option do?",
+      "a": "It generates several shadows whose offset, blur and spread double from one layer to the next, with the opacity shared out between them. The sum looks softer and more realistic than a single heavy blur."
+    },
+    {
+      "q": "Why is spread often negative?",
+      "a": "A negative spread shrinks the shadow before blurring, which keeps it from poking out at the sides. Combined with a vertical offset, it makes an element look like it is floating above the page."
+    },
+    {
+      "q": "Does the shadow affect layout?",
+      "a": "No. Box shadows are drawn outside the normal flow and do not change the size of the element or push neighbours. They can be clipped by a parent with overflow hidden."
+    },
+    {
+      "q": "Can I use the output in Tailwind?",
+      "a": "Paste the value into an arbitrary-value class, or use the box shadow to Tailwind converter, which turns a box-shadow declaration into a utility class."
+    }
+  ],
+  "related": [
+    "css-box-shadow-to-tailwind",
+    "css-3d-box-shadow-generator",
+    "neumorphism-generator",
+    "text-shadow-generator",
+    "glassmorphism-generator",
+    "border-radius-generator"
+  ],
+  "keywords": [
+    "box shadow generator",
+    "css box shadow generator",
+    "layered box shadow css",
+    "inset box shadow",
+    "free css shadow generator"
+  ]
+}

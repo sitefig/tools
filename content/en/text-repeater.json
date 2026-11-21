@@ -1,0 +1,44 @@
+{
+  "id": "text-repeater",
+  "seoTitle": "Text Repeater: Repeat a Word or Line Many Times",
+  "metaDescription": "Repeat any text up to 100,000 times with a separator of your choice: space, new line, comma or custom. Handy for test data.",
+  "intro": "Create long repeated strings for testing, fill-in text or formatting experiments.",
+  "why": "Enter the text, the number of repetitions and a separator. Use \\n and \\t in the custom separator for line breaks and tabs. The result is limited to five million characters to keep your browser responsive.\n\nFor realistic placeholder text use the lorem ipsum or random text generators instead.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Type or paste the text to repeat.",
+    "Set the count and separator.",
+    "Copy the result.",
+    "Use shorter counts for quick tests."
+  ],
+  "faq": [
+    {
+      "q": "What is the limit?",
+      "a": "100,000 repetitions or five million characters, whichever comes first."
+    },
+    {
+      "q": "How do I repeat with new lines?",
+      "a": "Choose \"new line\" as the separator."
+    },
+    {
+      "q": "Is it useful for load tests?",
+      "a": "It can create large payloads, but dedicated tools suit real load testing."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "lorem-ipsum",
+    "random-text-generator",
+    "list-shuffler",
+    "json-size-analyzer",
+    "find-replace",
+    "text-cleaner"
+  ],
+  "keywords": [
+    "text repeater",
+    "repeat text",
+    "string repeat tool"
+  ]
+}

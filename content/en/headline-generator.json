@@ -1,0 +1,45 @@
+{
+  "id": "headline-generator",
+  "seoTitle": "Blog Headline & Title Idea Generator (Templates, No AI)",
+  "metaDescription": "Turn a topic into dozens of headline ideas from proven patterns: how-to, list, question, guide and comparison titles with a length check.",
+  "intro": "Type a topic and get headline starters grouped by type, each with its character count so you can see what may be cut off in search results.",
+  "why": "The generator fills tested title patterns (how-to, numbered lists, questions, guides, comparisons and hooks) with your topic, a number, a year, an adjective and a pain point. Each result shows its length; search results usually show about 50 to 60 characters.\n\nThese are templates, not an AI model, so the output is a starting point. Pick the pattern that fits the page, then rewrite the headline in your own words and make sure the page delivers what it promises.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the topic as a verb phrase, such as \"choose running shoes\".",
+    "Set the number, year, adjective and pain point.",
+    "Scan the groups and copy the ones you like.",
+    "Rewrite the best one for the specific page."
+  ],
+  "faq": [
+    {
+      "q": "Are these written by AI?",
+      "a": "No. They are fill-in-the-blank templates, which makes the output predictable and private."
+    },
+    {
+      "q": "How long should a title be?",
+      "a": "Aim for under about 60 characters so it is not truncated in search results."
+    },
+    {
+      "q": "Should I put the keyword first?",
+      "a": "Put it early when it reads naturally; clarity beats stuffing."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "title-length-checker",
+    "serp-snippet",
+    "meta-description-suggester",
+    "title-case-headline-analyzer",
+    "keyword-placement-checker",
+    "slug-generator"
+  ],
+  "keywords": [
+    "headline generator",
+    "blog title ideas",
+    "title generator seo",
+    "headline templates"
+  ]
+}

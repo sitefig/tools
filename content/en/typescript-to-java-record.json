@@ -1,0 +1,44 @@
+{
+ "id": "typescript-to-java-record",
+ "seoTitle": "Free TypeScript to Java Record Converter Online",
+ "metaDescription": "Convert TypeScript interfaces and enums to Java 17 records with optional Jackson annotations, List, Map and enums. Free, runs in your browser.",
+ "intro": "Paste TypeScript interfaces and enums and get Java 17 records with List and Map, enums and optional Jackson @JsonProperty annotations, wrapped in one public class so a single file compiles.",
+ "why": "A Java service that exchanges JSON with a TypeScript client needs types that match the property names. Records are the compact way to write them, but every key still has to be copied and mapped by hand.\n\nThe converter writes one record per interface with primitives for required numbers and booleans and boxed types for optional or nullable ones. Jackson annotations keep the exact JSON names, optional properties are omitted when null, and string enums map each constant to its JSON value. The output compiles with javac and round-trips JSON through Jackson 2.17. Everything runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your TypeScript interfaces, type aliases or enums.",
+  "Choose Jackson or no annotations, a package and the wrapper class name.",
+  "Copy the Java code into a file named after the wrapper class."
+ ],
+ "faq": [
+  {
+   "q": "Which TypeScript features are supported?",
+   "a": "Interfaces, type aliases, string enums, optional and nullable properties, unions, literals, tuples, arrays, Record, Date, extends and intersections, and JSDoc comments. Conditional and mapped types, keyof, typeof, function types and most utility generics are not supported, and the tool says so instead of guessing."
+  },
+  {
+   "q": "What happens to a union such as string | number?",
+   "a": "Java has no general union type, so the field becomes Object with a comment that says it was a union. Unions of literal values such as \"a\" | \"b\" become the base type with the literal list in a comment, and a top-level string-literal type alias becomes a real enum."
+  },
+  {
+   "q": "Why does number become a floating point type?",
+   "a": "TypeScript has a single number type, so the converter cannot know whether a value is an integer. It uses a floating point type by default. Switch the option or edit single fields where you know the value is whole."
+  },
+  {
+   "q": "Why a wrapper class?",
+   "a": "Java allows only one public top-level type per file. The records and enums are nested in one final class so the output is a single file. Clear the wrapper name to get package-private top-level types instead."
+  }
+ ],
+ "related": [
+  "typescript-to-kotlin-data-class",
+  "typescript-to-csharp-class",
+  "json-to-models",
+  "typescript-to-json-schema",
+  "typescript-to-go-struct",
+  "json-to-typescript"
+ ],
+ "keywords": [
+  "typescript to java",
+  "typescript to java record",
+  "ts interface to java class",
+  "jackson record generator"
+ ]
+}

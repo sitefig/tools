@@ -1,0 +1,44 @@
+{
+ "id": "flowchart-maker",
+ "seoTitle": "Flowchart Maker from Text: Arrows to SVG Diagram",
+ "metaDescription": "Type Start -> Step -> End lines to get a flowchart with boxes, decisions and labelled arrows as SVG. Free, runs offline in the browser.",
+ "intro": "Generates a flowchart from lines such as \"Start -> Check input -> End\". Brackets pick shapes and -label-> names an arrow.",
+ "why": "Writing a flow as text is faster than dragging boxes, and the text is easy to review and keep in version control. The tool lays out the steps in layers, top to bottom or left to right, and draws arrows with labels.\n\nA step ending in a question mark becomes a decision diamond; (Start) is a terminal and [text] a box. A step with the same text is the same node, so loops are written by repeating the name. The automatic layout is plain: very large or heavily crossing graphs need hand layout.",
+ "howTo": [
+  "Write chains, one per line: A -> B -> C.",
+  "Label an arrow with -yes-> between steps.",
+  "Choose top to bottom or left to right.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "How do I make a decision?",
+   "a": "End the step with ? or wrap it in braces, then use -yes-> and -no-> arrows."
+  },
+  {
+   "q": "Can I draw a loop?",
+   "a": "Yes, point an arrow back at an earlier step."
+  },
+  {
+   "q": "Is it the same as Mermaid?",
+   "a": "No. It has its own small syntax; the Mermaid tools on this site handle Mermaid text."
+  },
+  {
+   "q": "How many steps?",
+   "a": "Up to 80."
+  }
+ ],
+ "related": [
+  "text-to-mermaid-flowchart",
+  "mermaid-lite-renderer",
+  "graphviz-dot-lite",
+  "user-flow-to-mermaid-text",
+  "mind-map-svg-builder",
+  "org-chart-maker"
+ ],
+ "keywords": [
+  "flowchart maker",
+  "text to flowchart",
+  "flow diagram generator"
+ ]
+}

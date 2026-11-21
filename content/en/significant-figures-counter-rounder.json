@@ -1,0 +1,45 @@
+{
+ "id": "significant-figures-counter-rounder",
+ "seoTitle": "Significant Figures Counter and Rounder with Scientific Notation",
+ "metaDescription": "Count significant figures in any number and round to a chosen number of figures, shown in plain and scientific notation. Free and exact.",
+ "intro": "Counts the significant figures in each number you enter and rounds it to the number of figures you choose, in plain and scientific notation.",
+ "why": "Significant figures show how precisely a measurement is known, and teachers mark them closely. The rules are easy to forget: leading zeros do not count, zeros between digits do, and trailing zeros count only after a decimal point.\n\nThe tool works on the digits you type, not on binary floating-point values, so 12.345 rounds exactly to 12.3 and 1.005 does not turn into 1.00 by accident. You can choose whether an exact half rounds up or to the even digit. A number like 1200 without a decimal point is ambiguous, so the tool treats trailing zeros as not significant and tells you to write 1.20e3 or 1200. if they are.",
+ "howTo": [
+  "Enter one number per line, in plain or e-notation.",
+  "Choose how many figures to round to, or clear the box to only count.",
+  "Pick the tie rule for exact halves.",
+  "Read the count, the rounded value and its scientific form."
+ ],
+ "faq": [
+  {
+   "q": "Why are the zeros in 1200 not counted?",
+   "a": "Without a decimal point the zeros could be placeholders. Write 1200. or 1.200e3 to make them significant."
+  },
+  {
+   "q": "Which tie rule should I use?",
+   "a": "Round half up is taught in most schools. Half to even is common in statistics and computing."
+  },
+  {
+   "q": "Does it handle e-notation?",
+   "a": "Yes, for example 1.20e3 or 4.5e-7."
+  },
+  {
+   "q": "Is the rounding exact?",
+   "a": "Yes, it works on the decimal digits you typed."
+  }
+ ],
+ "related": [
+  "scientific-calculator-degrees",
+  "unit-converter",
+  "bignumber-calculator",
+  "statistics-calculator",
+  "percentage-calculator",
+  "gcd-lcm-euclid-steps"
+ ],
+ "keywords": [
+  "significant figures calculator",
+  "sig figs counter",
+  "round to significant figures",
+  "scientific notation rounding"
+ ]
+}

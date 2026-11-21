@@ -1,0 +1,45 @@
+{
+ "id": "css-grid-area-builder",
+ "seoTitle": "Free CSS Grid Template Areas Builder with Preview",
+ "metaDescription": "Draw a layout as text rows and get grid-template-areas CSS with area classes and a coloured preview. Checks every area is one rectangle. Free, in browser.",
+ "intro": "Turns a text layout, one row per line with names for areas and dots for empty cells, into grid-template-areas CSS, per-area classes and a coloured preview.",
+ "why": "The grid-template-areas property is one of the most readable ways to lay out a page, but typing the quoted strings by hand is fiddly, and CSS silently drops the whole declaration if an area is not a rectangle. Here you draw the layout in plain text, for example header header header on one line and sidebar main main on the next. The tool checks that every row has the same number of cells and that each named area forms one rectangular block, then outputs the container rule plus a class per area and shows a coloured preview. It is a quick sketching aid for dashboards, article layouts and landing pages, and it runs entirely in your browser.",
+ "howTo": [
+  "Write the layout, one row per line, with a name per cell and a dot for an empty cell.",
+  "Set the column and row sizes, the gap and the container selector.",
+  "Read the generated CSS, check the preview, and copy the code."
+ ],
+ "faq": [
+  {
+   "q": "What makes an area invalid?",
+   "a": "Every named area must fill a single rectangle, and each row must have the same number of cells. An L-shaped or split area, or an uneven row, produces an error that names the problem."
+  },
+  {
+   "q": "How do I leave a cell empty?",
+   "a": "Use a dot, or several dots, as the cell name. Empty cells are written as dots in the grid-template-areas value and get no class."
+  },
+  {
+   "q": "What are valid area names?",
+   "a": "Names must start with a letter, underscore or hyphen and then use letters, digits, underscores or hyphens. They become class names, so keep them short and meaningful."
+  },
+  {
+   "q": "Does the preview match my real page?",
+   "a": "The preview uses your column, row and gap values with placeholder colours and fixed minimum height. It shows the structure, not your content or breakpoints."
+  }
+ ],
+ "related": [
+  "grid-generator",
+  "flexbox-generator",
+  "css-media-query-builder",
+  "responsive-breakpoint-previewer",
+  "aspect-ratio-calculator",
+  "css-format"
+ ],
+ "keywords": [
+  "css grid template areas generator",
+  "grid-template-areas builder",
+  "css grid layout builder online",
+  "free css grid areas tool",
+  "grid area visual preview"
+ ]
+}

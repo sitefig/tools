@@ -1,0 +1,45 @@
+{
+ "id": "multiplication-table-trainer",
+ "seoTitle": "Multiplication Table Trainer with Timed Drills",
+ "metaDescription": "Practice chosen times tables in random order, with an optional time limit, and see the facts you missed most. Free, no sign-up.",
+ "intro": "Drills multiplication facts for the tables you choose, with an optional timer, and ends with your score and the facts you missed most.",
+ "why": "Fluency in times tables comes from short, regular practice. Pick the tables (2 to 12), the number of questions and, if you want pressure, a time limit of 30 seconds to 2 minutes.\n\nEach question is random, you type the answer and press Enter. The end summary lists your score, time and the facts you got wrong. The page is built for keyboards and screen readers: the question is a labeled field and results are announced. Nothing is stored or sent.",
+ "howTo": [
+  "Tick the tables to practise.",
+  "Choose a time limit and number of questions.",
+  "Press Start, type each answer and press Enter.",
+  "Read the summary of missed facts."
+ ],
+ "faq": [
+  {
+   "q": "Does it save my progress?",
+   "a": "No, nothing is stored."
+  },
+  {
+   "q": "Can I practise only the 7 times table?",
+   "a": "Yes, tick only 7."
+  },
+  {
+   "q": "Is there a timer?",
+   "a": "Yes, optional."
+  },
+  {
+   "q": "Does it work on a phone?",
+   "a": "Yes, with the numeric keypad."
+  }
+ ],
+ "related": [
+  "math-worksheet-generator",
+  "fraction-visualizer-pie-bar",
+  "number-line-jumps",
+  "flashcards-spaced-repetition",
+  "analog-clock-reading-trainer",
+  "gcd-lcm-euclid-steps"
+ ],
+ "keywords": [
+  "times tables practice",
+  "multiplication drill timed",
+  "multiplication facts trainer",
+  "learn times tables"
+ ]
+}

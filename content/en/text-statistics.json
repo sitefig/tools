@@ -1,0 +1,46 @@
+{
+ "id": "text-statistics",
+ "seoTitle": "Free Text Statistics and Readability Analyzer",
+ "metaDescription": "Get averages, lexical diversity, top words and Flesch reading ease for English text. Free; runs in your browser.",
+ "intro": "Analyse a piece of English text for word and sentence averages, unique words, lexical diversity, longest word, top words, Flesch reading ease and Flesch-Kincaid grade.",
+ "why": "Beyond a simple word count, a few extra figures tell you how a text reads: how long the sentences are, how varied the vocabulary is, which words you lean on and how hard it is to read. Editors use them to tighten copy and students use them to check whether an essay is too repetitive.\n\nThis tool reports words, unique words and lexical diversity, the number of sentences and paragraphs, average word and sentence length, the longest word and an estimated syllable count. It adds the Flesch reading ease score with a plain label and the Flesch-Kincaid grade level, plus the ten most frequent words, with common stop words skipped if you wish. The syllable counter is a heuristic for English. The analysis runs in your browser.",
+ "howTo": [
+  "Paste your English text into the input box.",
+  "Choose whether to skip common words in the top words list.",
+  "Run the tool to see the statistics.",
+  "Use the sentence length and top words to find places to tighten or vary the text."
+ ],
+ "faq": [
+  {
+   "q": "What is lexical diversity?",
+   "a": "It is the number of unique words divided by the total number of words. A higher number means more varied vocabulary. Longer texts naturally score lower, so compare texts of similar length."
+  },
+  {
+   "q": "How accurate is the reading ease score?",
+   "a": "It is a formula based on sentence length and syllables, so it is an estimate. It suits English prose and says nothing about content, tone or structure."
+  },
+  {
+   "q": "How does it differ from the readability tool?",
+   "a": "This tool gives general text statistics with two readability scores. The readability scores tool computes six indexes, including Gunning Fog, SMOG, Coleman-Liau and ARI."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "readability",
+  "word-counter",
+  "keyword-density",
+  "character-frequency",
+  "duplicate-words-finder",
+  "sentiment-lexicon"
+ ],
+ "keywords": [
+  "text statistics",
+  "text analyzer online",
+  "lexical diversity calculator",
+  "average sentence length",
+  "flesch reading ease free"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "flashcards-spaced-repetition",
+ "seoTitle": "Free Flashcards App with Leitner Spaced Repetition",
+ "metaDescription": "Make flashcards and study them with Leitner boxes and 1, 2, 4, 8 and 16 day intervals. Cards are stored in your browser only. Free, no account.",
+ "intro": "Create front and back flashcards and review them with the Leitner system. Cards you know move to a box with a longer interval; cards you miss go back to box 1.",
+ "why": "Spaced repetition works because reviewing a fact just as you are about to forget it strengthens memory far more than cramming. The Leitner system is the simple version: five boxes, with cards you answer correctly moving up and cards you miss dropping to the start.\n\nHere you add cards as \"front | back\" lines, one per line, and the page shows you what is due today. Boxes 1 to 5 are reviewed at intervals of 1, 2, 4, 8 and 16 days. Your cards are stored only in this browser, so there is no account and nothing is uploaded, but this also means they will not sync between devices, and clearing site data deletes them.",
+ "howTo": [
+  "Type cards in the \"Add cards\" box as \"front | back\", one per line, and press Add.",
+  "Study the card that is due: read the front, then press \"Show answer\".",
+  "Press \"I knew it\" to move the card up a box, or \"Missed it\" to send it back to box 1.",
+  "Come back each day for the cards that are due. The counters show how many are due and how many sit in each box."
+ ],
+ "faq": [
+  {
+   "q": "What are the review intervals?",
+   "a": "Box 1 is due again after 1 day, box 2 after 2, box 3 after 4, box 4 after 8 and box 5 after 16 days. A missed card always returns to box 1."
+  },
+  {
+   "q": "Where are my cards stored, and can I back them up?",
+   "a": "In your browser's local storage on this device, with no upload or sync. There is no export button, so keep your own copy of important decks as text."
+  },
+  {
+   "q": "How do I add a back with a vertical bar in it?",
+   "a": "Only the first | separates front and back. Anything after it, including more bars, belongs to the back of the card."
+  },
+  {
+   "q": "Is this as good as dedicated apps?",
+   "a": "It is a simple Leitner box, without algorithms like SM-2, images, audio or sync. It is fine for small decks, and a dedicated app suits large, long-term study."
+  }
+ ],
+ "related": [
+  "kanban-board",
+  "mind-map-maker",
+  "typing-speed-test",
+  "countdown-timer",
+  "pomodoro-timer",
+  "habit-streak-tracker"
+ ],
+ "keywords": [
+  "flashcards online",
+  "leitner system flashcards",
+  "spaced repetition free",
+  "study flashcards no account",
+  "leitner box app",
+  "make flashcards in browser"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "xsd-viewer",
+  "seoTitle": "XSD Schema Viewer: Elements, Types and Facets as a Tree",
+  "metaDescription": "Paste an XML Schema (XSD) and see its elements, complex and simple types, attributes, occurrence limits and restrictions as an indented tree.",
+  "intro": "Read an XSD without wading through verbose XML: global elements first, then the named types.",
+  "why": "The viewer parses the schema strictly, then prints the target namespace, each global element with its nested sequences, choices, elements (type, minOccurs and maxOccurs shown as ranges), attributes (use and default), extensions, and the named complex and simple types including restriction bases and facets such as enumerations, patterns and length limits.\n\nIt shows structure only: imports and includes are not resolved, and it does not validate XML documents against the schema.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the .xsd content.",
+    "Read the element tree and the named types.",
+    "Check required attributes and occurrence limits.",
+    "Use the XML validator for well-formedness of documents."
+  ],
+  "faq": [
+    {
+      "q": "What does [0..*] mean?",
+      "a": "minOccurs 0 and unbounded maxOccurs: the element is optional and may repeat."
+    },
+    {
+      "q": "Does it follow xs:import?",
+      "a": "No. Paste each schema separately."
+    },
+    {
+      "q": "Can it validate an XML document?",
+      "a": "No. It is a viewer."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "xml-validate",
+    "xml-format",
+    "xml-to-json",
+    "xpath-tester",
+    "json-schema-generator",
+    "avro-to-json-schema"
+  ],
+  "keywords": [
+    "xsd viewer",
+    "xml schema viewer",
+    "xsd to tree",
+    "read xsd file"
+  ]
+}

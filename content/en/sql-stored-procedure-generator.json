@@ -1,0 +1,43 @@
+{
+ "id": "sql-stored-procedure-generator",
+ "seoTitle": "Free SQL CRUD Stored Procedure Generator",
+ "metaDescription": "Generate CRUD stored routines from a CREATE TABLE statement for PostgreSQL, MySQL or SQL Server. Free, runs in your browser.",
+ "intro": "Paste a CREATE TABLE statement and get create, get-by-key, list, update and delete routines as PostgreSQL functions, MySQL procedures or SQL Server T-SQL procedures.",
+ "why": "Some teams keep all data access in stored routines, and every new table needs the same five of them. The syntax differs a lot between engines: PostgreSQL uses functions with RETURNS, MySQL has CREATE PROCEDURE with IN parameters, and SQL Server uses T-SQL with its own variable style. Writing them by hand for each table is repetitive and mistakes in parameter lists are common.\n\nThis generator reads the table definition and writes the routines for the dialect you choose, so you can start from consistent code and then add checks, permissions and business rules. You can leave out any routine you do not need. The statement is parsed in your browser and your schema is not uploaded.",
+ "howTo": [
+  "Paste a CREATE TABLE statement into the input box.",
+  "Choose the dialect: PostgreSQL, MySQL or SQL Server.",
+  "Tick the routines you want: create, get, list, update and delete.",
+  "Copy the generated SQL and review it before running it on a development database."
+ ],
+ "faq": [
+  {
+   "q": "Does it need a primary key?",
+   "a": "Yes, get, update and delete routines look rows up by key, so the table should define one. Without a key, generated routines may be missing or use the wrong columns, so add one first."
+  },
+  {
+   "q": "Is the generated code production-ready?",
+   "a": "It is a starting point. It does not add error handling, transactions, permission checks or audit columns. Review each routine, test it and add the rules that your application requires."
+  },
+  {
+   "q": "Which data types are supported?",
+   "a": "Common types for each dialect are carried over into parameters. Unusual types such as arrays, custom domains or spatial columns may need hand edits, so check the parameter list against your table."
+  }
+ ],
+ "related": [
+  "sql-format",
+  "sql-to-json",
+  "sql-dialect-converter",
+  "csv-to-sql",
+  "sql-index-advisor",
+  "prisma-to-sql"
+ ],
+ "keywords": [
+  "stored procedure generator",
+  "sql crud generator",
+  "create table to stored procedure",
+  "postgresql function generator",
+  "mysql procedure generator",
+  "free sql crud tool"
+ ]
+}

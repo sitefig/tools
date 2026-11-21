@@ -1,0 +1,45 @@
+{
+ "id": "lean-body-mass-calculator",
+ "seoTitle": "Lean Body Mass Calculator (Boer, James and Hume)",
+ "metaDescription": "Estimate lean body mass and fat mass from weight, height and sex with the Boer, James and Hume formulas side by side.",
+ "intro": "Estimate lean mass and fat mass with three formulas.",
+ "why": "Enter weight, height and sex. The page shows lean body mass from the Boer, James and Hume formulas, with the fat mass and body fat percent that result.\n\nThese formulas use only weight, height and sex, so they cannot see how much muscle you carry. They can disagree by several kilograms. The coefficients were taken from calculator and reference pages, not from the original papers.",
+ "howTo": [
+  "Choose units and sex.",
+  "Enter weight and height.",
+  "Compare the three results.",
+  "Use the range, not one exact number."
+ ],
+ "faq": [
+  {
+   "q": "Which formula is best?",
+   "a": "Boer is often preferred for people with excess weight, and James levels off at high BMI. None replaces a body composition scan."
+  },
+  {
+   "q": "Is the body fat percent real?",
+   "a": "No. It is what is left after the formula removes lean mass, so treat it as a rough guess."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "body-fat-navy",
+  "bmi-calculator",
+  "ideal-weight",
+  "bmr-tdee",
+  "protein-intake-calculator",
+  "macro-calculator"
+ ],
+ "keywords": [
+  "lean body mass calculator",
+  "Boer formula",
+  "James formula",
+  "Hume formula"
+ ]
+}

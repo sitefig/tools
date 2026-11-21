@@ -1,0 +1,45 @@
+{
+  "id": "sqlite-file-viewer",
+  "seoTitle": "SQLite Database Viewer: Open .sqlite and .db Files Online",
+  "metaDescription": "Open a SQLite file in your browser: list tables, schema SQL and row counts and browse rows. Read-only, with no upload and no server.",
+  "intro": "Look inside a SQLite database from an app, a phone backup or a download without installing a database tool.",
+  "why": "The page reads the file format directly: header, page size, text encoding, the schema table and the b-tree pages of every ordinary table, including cells that spill onto overflow pages. Columns are named from the CREATE TABLE statement and INTEGER PRIMARY KEY columns show the rowid. Results were compared with Python's sqlite3 on a database with 1,500 rows, big text values and blobs.\n\nIt is read-only and has no SQL engine. WITHOUT ROWID tables, virtual tables and index b-trees are listed but not read. Files are processed in memory, so very large databases may be slow.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose a .sqlite, .sqlite3 or .db file.",
+    "Set how many rows to show per table.",
+    "Read the schema and sample rows.",
+    "Use the CSV and SQL tools to query exported data."
+  ],
+  "faq": [
+    {
+      "q": "Is my database uploaded?",
+      "a": "No. It is read in your browser."
+    },
+    {
+      "q": "Can I run SQL?",
+      "a": "No, this is a viewer. Export tables and use the SQL-on-CSV tool for queries."
+    },
+    {
+      "q": "Why is a table not shown?",
+      "a": "It may be WITHOUT ROWID or virtual, which this reader does not decode."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "sql-on-csv",
+    "sql-format",
+    "csv-viewer",
+    "json-to-sql",
+    "csv-to-sql",
+    "file-type-detector"
+  ],
+  "keywords": [
+    "sqlite viewer",
+    "open sqlite file online",
+    "db file viewer",
+    "sqlite browser"
+  ]
+}

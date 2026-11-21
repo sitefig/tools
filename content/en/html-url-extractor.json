@@ -1,0 +1,38 @@
+{
+ "id": "html-url-extractor",
+ "seoTitle": "URL Extractor from HTML: Links, Scripts, Images, CSS, JSON-LD",
+ "metaDescription": "List every URL in pasted HTML: anchors, scripts, stylesheets, images, srcset, forms, meta refresh, CSS url() and JSON-LD, resolved and grouped by host.",
+ "intro": "Get every URL a page references, with the tag it came from, resolved against a base URL.",
+ "why": "To audit third-party calls, migrate a site or check what a page loads, you need a list of every URL in its HTML. This extractor reads anchors, link, script, img, source, iframe and form attributes, srcset candidates, meta refresh and og:url values, CSS url() references, JSON-LD urls and plain-text URLs, resolves relative ones against the page URL and groups them by host.\n\nIt works on the HTML you paste; it will not see URLs built by JavaScript at runtime or requests made by scripts. Use the HAR analyzer for what a browser actually requested.",
+ "howTo": [
+  "Paste the page HTML.",
+  "Set the page URL to resolve relative paths.",
+  "Read the list and the per-host counts."
+ ],
+ "faq": [
+  {
+   "q": "Does it find URLs added by JavaScript?",
+   "a": "Only those present in the pasted source. For runtime requests use a HAR export."
+  },
+  {
+   "q": "Are duplicates removed?",
+   "a": "Yes, each absolute URL appears once with the first place it was found."
+  },
+  {
+   "q": "Can it extract only images?",
+   "a": "Use the Image Extractor for img, srcset, og:image and CSS backgrounds with alt checks."
+  }
+ ],
+ "related": [
+  "html-image-extractor",
+  "html-link-auditor",
+  "sitemap-url-extractor",
+  "har-analyzer",
+  "internal-link-extractor"
+ ],
+ "keywords": [
+  "extract urls from html",
+  "list all links in html",
+  "url extractor offline"
+ ]
+}

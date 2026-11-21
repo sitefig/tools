@@ -1,0 +1,45 @@
+{
+ "id": "json-to-typescript-type-guards",
+ "seoTitle": "Free JSON to TypeScript Type Guards Generator",
+ "metaDescription": "Generate TypeScript interfaces and runtime type-guard functions from sample JSON to check API responses without a schema library. Free, in browser.",
+ "intro": "Generates TypeScript interfaces plus runtime type-guard functions such as isUser(value): value is User from sample JSON, checking every property, nested object, array element, optional and nullable field.",
+ "why": "A TypeScript type says what a response should look like, but at runtime a response from a server you do not control can be anything. A type guard is the plain way to check: a function that returns true only if the value really has the shape. Writing them by hand for nested payloads is long and boring. Paste a sample response and this tool writes the interfaces and the guard functions together, including checks for arrays, nested objects, optional keys and null. It means you can validate API data without adding Zod or another library. Guards reflect only your sample, so review them where real data may vary. The sample stays in the browser.",
+ "howTo": [
+  "Paste a sample JSON response into the input box.",
+  "Set the root name, for example User.",
+  "Copy the interfaces and guard functions into your code and use the guard where you parse API data."
+ ],
+ "faq": [
+  {
+   "q": "What does a generated guard check?",
+   "a": "That the value is a non-null object, that each required property exists with the right type, that arrays contain items of the right type, and that nested objects pass their own guards. Optional and nullable fields are allowed to be absent or null."
+  },
+  {
+   "q": "How does it find optional fields?",
+   "a": "From arrays of objects: a key missing in some items becomes optional. A single object gives no sign, so every key is treated as required."
+  },
+  {
+   "q": "Should I use this instead of Zod?",
+   "a": "Guards avoid a dependency and are fine for small shapes. For larger or evolving schemas, a library gives better error messages. The Zod converters on this site are the alternative."
+  },
+  {
+   "q": "Are the guards strict about extra properties?",
+   "a": "No. The generated guards check the properties found in your sample, so a real response with extra keys that are not in the sample is not a reason for them to fail. Review the code if you need strictness."
+  }
+ ],
+ "related": [
+  "json-to-typescript",
+  "typescript-interface-to-zod",
+  "json-to-zod",
+  "json-schema-generator",
+  "json-to-pydantic",
+  "json-validate"
+ ],
+ "keywords": [
+  "json to typescript type guard",
+  "generate type guards from json",
+  "runtime type checking typescript",
+  "free type guard generator",
+  "api response validation typescript"
+ ]
+}

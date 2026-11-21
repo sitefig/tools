@@ -1,0 +1,45 @@
+{
+ "id": "ed25519-key-generator",
+ "seoTitle": "Free Ed25519 Key Pair Generator in Your Browser",
+ "metaDescription": "Generate an Ed25519 key pair with WebCrypto: PKCS#8 and SPKI PEM, an OpenSSH public key line and raw hex. Keys never leave your browser.",
+ "intro": "Create a new Ed25519 key pair with your browser WebCrypto and get PEM private and public keys, an OpenSSH public key line and the raw hex values.",
+ "why": "Ed25519 keys are short and fast, and they are now the default recommendation for SSH and many signing systems. Sometimes you just need a throwaway pair for a test, a CI fixture or a quick experiment, without opening a terminal.\n\nThis generator asks your browser crypto engine for a fresh key, then exports it in the formats people ask for: PKCS#8 for the private key, SPKI for the public key, the one-line ssh-ed25519 form, and the 32-byte seed and public key in hex. Nothing is uploaded. For long-lived keys that guard real systems, generate them on the machine that will use them, with ssh-keygen or your key management tooling.",
+ "howTo": [
+  "Open the tool and press the button to generate a key pair.",
+  "Copy the PKCS#8 private PEM, public PEM or the ssh-ed25519 line you need.",
+  "Store the private key safely, and never share it."
+ ],
+ "faq": [
+  {
+   "q": "Is it safe to use these keys for real systems?",
+   "a": "The randomness comes from your browser, which is generally sound, but a web page is not an ideal place to create long-lived secrets. For production keys, generate them on the target machine with ssh-keygen."
+  },
+  {
+   "q": "Why does it say my browser is unsupported?",
+   "a": "Ed25519 in WebCrypto needs a recent browser: current Chrome and Edge, Firefox 129 or newer, or Safari 17 or newer. Older versions throw an error."
+  },
+  {
+   "q": "Is a passphrase added?",
+   "a": "No. The private key is exported unencrypted. If you save it to disk, protect the file or encrypt it with your own tooling."
+  },
+  {
+   "q": "How do I use the public key line for SSH?",
+   "a": "Append the ssh-ed25519 line to authorized_keys on the server. SSH needs the private key in OpenSSH format, so convert the PKCS#8 file with ssh-keygen if required."
+  }
+ ],
+ "related": [
+  "ed25519-sign-verify",
+  "rsa-key-pair-generator",
+  "ssh-key-inspector",
+  "ssh-key-fingerprint",
+  "rsa-pkcs1-pkcs8-converter",
+  "password-generator"
+ ],
+ "keywords": [
+  "ed25519 key generator",
+  "generate ed25519 keypair online",
+  "openssh ed25519 public key",
+  "free ed25519 pem",
+  "webcrypto ed25519"
+ ]
+}

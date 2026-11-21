@@ -1,0 +1,46 @@
+{
+ "id": "ulid-generator",
+ "seoTitle": "Free ULID Generator - Sortable Unique IDs Online",
+ "metaDescription": "Generate sortable 26-character ULIDs with a 48-bit timestamp and 80 random bits, up to 1000 at a time. Free and runs in your browser.",
+ "intro": "Generate ULIDs in bulk. Each one is 26 characters long, starts with a millisecond timestamp, ends with random bits, and sorts in creation order.",
+ "why": "UUIDs are unique but unordered, which can scatter database inserts and make logs hard to read in sequence. A ULID packs a 48-bit millisecond timestamp in front of 80 random bits and writes the lot in Crockford Base32, so the strings sort alphabetically by creation time and are shorter than a hyphenated UUID.\n\nPeople use them for primary keys, event IDs, file names and anything that should be both unique and roughly chronological. This page produces a list for fixtures or quick tests, with an option for lowercase output. Randomness comes from the browser's secure random generator and nothing leaves your device. Note that IDs made within the same millisecond are not guaranteed to be increasing in order.",
+ "howTo": [
+  "Set how many ULIDs you want, from 1 to 1000.",
+  "Tick Lowercase if your system prefers lowercase letters.",
+  "Copy the generated list from the output box.",
+  "Generate again for a fresh batch."
+ ],
+ "faq": [
+  {
+   "q": "How is a ULID structured?",
+   "a": "The first 10 characters encode the time in milliseconds since the Unix epoch, and the last 16 characters encode 80 random bits. Both use Crockford Base32, which leaves out I, L, O and U to avoid confusion."
+  },
+  {
+   "q": "Are ULIDs in the same millisecond ordered?",
+   "a": "Not by this tool. Each ULID gets fresh random bits, so two made in the same millisecond sort by their random part. Libraries that offer monotonic mode increment the random value to keep order."
+  },
+  {
+   "q": "Is a ULID secret?",
+   "a": "No. The timestamp portion reveals when the ID was created, and the ID is meant to be shared. Do not use ULIDs as passwords or tokens that need to be unguessable."
+  },
+  {
+   "q": "Why choose ULID over UUID v7?",
+   "a": "Both are time-ordered. ULID is shorter as text and URL-friendly. UUID v7 fits the standard 128-bit UUID format that databases already support natively. Pick whichever your tooling handles best."
+  }
+ ],
+ "related": [
+  "uuid-generator",
+  "uuid-v7-timestamp-extractor",
+  "nanoid-generator",
+  "crockford-base32-encoder",
+  "mongodb-objectid-parser",
+  "timestamp-converter"
+ ],
+ "keywords": [
+  "ulid generator",
+  "generate ulid online",
+  "sortable unique id",
+  "ulid vs uuid",
+  "free ulid tool"
+ ]
+}

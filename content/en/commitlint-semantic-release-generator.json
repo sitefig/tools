@@ -1,0 +1,47 @@
+{
+ "id": "commitlint-semantic-release-generator",
+ "seoTitle": "Free commitlint & semantic-release Config Generator",
+ "metaDescription": "Free online generator for commitlint.config.js, .releaserc.json and a husky commit-msg hook, for conventional-commit based automated releases.",
+ "intro": "Generate commitlint.config.js, .releaserc.json and a husky commit-msg hook for releases driven by conventional commits. Choose branches, plugins, header length and allowed scopes.",
+ "why": "Automated releases work only if every commit message follows the same convention, so a tool can decide the next version from them. That needs two pieces that must agree: commitlint to check messages, and semantic-release to read them and publish.\n\nSet the release branches and tick the plugins you need: changelog, npm publish, the git plugin to commit release files and GitHub releases. Add a maximum header length and, if you want to restrict them, allowed scopes. The tool outputs the commitlint config extending the conventional preset, the release configuration with the right plugins in order, and the husky hook line. You still need to install the packages and set tokens such as GITHUB_TOKEN and NPM_TOKEN in your CI. Nothing is uploaded.",
+ "howTo": [
+  "Enter the release branches, for example main.",
+  "Tick the plugins you want: changelog, npm, git and GitHub releases.",
+  "Set the maximum header length and any allowed scopes.",
+  "Save each part in its file, install the packages and add the husky hook."
+ ],
+ "faq": [
+  {
+   "q": "What do I need to install?",
+   "a": "@commitlint/cli and @commitlint/config-conventional, husky, semantic-release and the plugins you ticked, such as @semantic-release/changelog and @semantic-release/git. Run them in CI with the right tokens."
+  },
+  {
+   "q": "How does semantic-release choose a version?",
+   "a": "From commit types: fix gives a patch release, feat a minor one and a breaking change marker a major one. Other types such as chore do not trigger a release."
+  },
+  {
+   "q": "What does the git plugin do?",
+   "a": "It commits files changed by the release, such as CHANGELOG.md and package.json, back to the repository with a skip ci message to avoid loops."
+  },
+  {
+   "q": "What are allowed scopes?",
+   "a": "A list of names that may appear in parentheses after the type, like feat(api). If you set them, commitlint rejects other scopes. Leave the field empty to allow any."
+  }
+ ],
+ "related": [
+  "conventional-commit-generator",
+  "pre-commit-config-generator",
+  "github-actions-generator",
+  "changelog-generator",
+  "semver-calculator",
+  "package-json-generator"
+ ],
+ "keywords": [
+  "commitlint config generator",
+  "semantic release config generator",
+  "releaserc generator",
+  "free commitlint tool",
+  "conventional commits release setup",
+  "husky commit-msg hook"
+ ]
+}

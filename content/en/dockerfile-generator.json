@@ -1,0 +1,46 @@
+{
+ "id": "dockerfile-generator",
+ "seoTitle": "Free Dockerfile Generator - Node, Python, Go, Java",
+ "metaDescription": "Generate a Dockerfile for Node, Python, Go, Java or an Nginx static site, with optional multi-stage builds. Free and runs in your browser.",
+ "intro": "Pick a stack, a version, a port and an entry file to get a ready-to-edit Dockerfile, either single-stage or multi-stage.",
+ "why": "Most Dockerfiles for a typical web app follow the same pattern, yet people still start from a blank file or copy one that runs as root, reinstalls dependencies on every code change or ships build tools in the final image. Getting the layer order and the user right takes a few attempts.\n\nThis generator produces a sensible baseline for Node, Python, Go, Java and static sites served by Nginx. Dependency manifests are copied before the source so Docker can cache the install layer, the multi-stage option keeps compilers out of the runtime image, and the Node, Python and Go variants run as a non-root user in the multi-stage form. Treat the output as a starting point: adjust base images, build commands and file names to match your project.",
+ "howTo": [
+  "Choose a stack: node, python, go, java or nginx-static.",
+  "Optionally enter a language version, the port and the entry file.",
+  "Tick Multi-stage build to separate build and runtime images.",
+  "Copy the Dockerfile and adapt it to your project."
+ ],
+ "faq": [
+  {
+   "q": "What does the generator assume about my project?",
+   "a": "Node expects package.json and a lockfile, Python expects requirements.txt, Go expects go.mod and go.sum, Java expects a Maven pom.xml. If you use another build tool, edit the copy and build lines."
+  },
+  {
+   "q": "What happens if I leave the version blank?",
+   "a": "Defaults are used: Node 22, Python 3.12, Go 1.22 and Java 21. Enter a tag such as 20 or 3.11 to pin a different release, and check that the tag exists on the registry."
+  },
+  {
+   "q": "Does it run the app as a non-root user?",
+   "a": "The Node image switches to the built-in node user, and the multi-stage Python and Go versions use a non-root user too. Check file permissions if your app writes to disk."
+  },
+  {
+   "q": "Is the result ready for production?",
+   "a": "It is a sound baseline, not a finished setup. You still need a .dockerignore, health checks, secrets handling and image scanning. Review base image versions regularly for security updates."
+  }
+ ],
+ "related": [
+  "dockerfile-linter",
+  "dockerignore-generator",
+  "docker-compose-generator",
+  "docker-run-to-compose",
+  "kubernetes-deployment-generator",
+  "github-actions-generator"
+ ],
+ "keywords": [
+  "dockerfile generator",
+  "create dockerfile online",
+  "multi-stage dockerfile example",
+  "node dockerfile template",
+  "free dockerfile builder"
+ ]
+}

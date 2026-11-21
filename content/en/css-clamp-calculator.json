@@ -1,0 +1,47 @@
+{
+ "id": "css-clamp-calculator",
+ "seoTitle": "Free CSS clamp() Calculator for Fluid Sizing",
+ "metaDescription": "Free CSS clamp() calculator. Enter min and max size and viewport range to get a fluid clamp() value in rem, with the maths and sample widths shown.",
+ "intro": "Enter a minimum and maximum size and the viewport range, and get a CSS clamp() value in rem. The slope and intercept are shown, along with the computed size at common screen widths.",
+ "why": "Fluid type and spacing let a heading grow smoothly from phone to desktop without a pile of media queries. The clamp() function does the job, but its middle value is a formula, something like 0.8rem + 1.4vw, that you have to derive from your target sizes and viewport widths.\n\nGive the smallest and largest size, the widths between which it should scale, and the root font size. The tool works out the slope and intercept, writes clamp(min, preferred, max) in rem, and lists the resulting pixel size at widths from 320 to 1920 so you can sanity-check it. Using rem for the fixed parts respects the user's font size settings. Pick the property to get a ready declaration. All the calculation is done in your browser.",
+ "howTo": [
+  "Enter the minimum and maximum size in pixels.",
+  "Enter the viewport widths where scaling starts and ends, and the root font size.",
+  "Choose the CSS property you want the declaration for.",
+  "Copy the clamp() declaration and check the sizes listed at common widths."
+ ],
+ "faq": [
+  {
+   "q": "What does the preferred value mean?",
+   "a": "It is the rem plus vw part in the middle of clamp(). The vw part grows with the viewport and the rem part sets the offset, so the size moves linearly between your two points."
+  },
+  {
+   "q": "Why use rem rather than px?",
+   "a": "rem values scale with the user's browser font size, which helps accessibility. If the preferred value is built only from px and vw, zooming text may not behave as expected."
+  },
+  {
+   "q": "What if the maximum is below the minimum?",
+   "a": "The tool still works. It orders the bounds correctly inside clamp() so the value stays valid, and the size then shrinks as the viewport grows."
+  },
+  {
+   "q": "Which root font size should I enter?",
+   "a": "The default of 16 matches most browsers. Change it only if your CSS sets html font-size to something else, so that rem conversions are correct."
+  }
+ ],
+ "related": [
+  "px-to-rem-converter",
+  "css-clamp-generator",
+  "css-unit-converter",
+  "aspect-ratio-calculator",
+  "responsive-breakpoint-previewer",
+  "css-media-query-builder"
+ ],
+ "keywords": [
+  "css clamp calculator",
+  "fluid typography calculator",
+  "clamp generator css",
+  "free clamp calculator",
+  "responsive font size clamp",
+  "css fluid sizing tool"
+ ]
+}

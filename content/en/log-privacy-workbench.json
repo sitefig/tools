@@ -1,0 +1,46 @@
+{
+ "id": "log-privacy-workbench",
+ "seoTitle": "Free Log Redactor and Grouping Tool",
+ "metaDescription": "Strip PII and secrets from log lines, then group similar lines with counts and levels. Free, in-browser, nothing is uploaded.",
+ "intro": "Redact personal data and secrets from log lines, then group near-identical messages after timestamps, IDs and numbers are normalised. See counts, levels and the first line of each pattern.",
+ "why": "Logs are what you paste into a bug report or send to a vendor when something breaks. They also tend to contain user emails, IP addresses, session tokens and card numbers. A thousand lines are hard to read, and a hundred of them are the same error with a different ID.\n\nThis workbench does two jobs. First it redacts personal data and, if you leave the option on, known secret formats. Then it replaces timestamps, UUIDs, hex strings and numbers with placeholders so repeated messages collapse into one pattern with a count, its log level and the first line number. You can view the grouped summary, the redacted log or both. All of it happens in your browser.",
+ "howTo": [
+  "Paste the log lines into the input box.",
+  "Choose the redaction style and whether to also redact secrets.",
+  "Select the view: both, grouped or redacted only.",
+  "Run the tool and copy the redacted log or the pattern summary."
+ ],
+ "faq": [
+  {
+   "q": "How are lines grouped?",
+   "a": "Timestamps, UUIDs, long hex strings and numbers are replaced with placeholders, and lines with the same result form one group. Groups are sorted by count and show their level and first line number."
+  },
+  {
+   "q": "Which log levels does it recognise?",
+   "a": "It looks for TRACE, DEBUG, INFO, NOTICE, WARN, ERROR, CRIT and FATAL words in each line. Lines without one are shown with a dash instead of a level."
+  },
+  {
+   "q": "Is the redaction complete?",
+   "a": "No. It is pattern based, like the PII and secret tools, so names, free-text addresses and unusual keys may remain. Review the redacted output before you share it."
+  },
+  {
+   "q": "Does the log leave my browser?",
+   "a": "No. Redaction and grouping run locally in your browser, and nothing is uploaded, logged or stored on this site. Closing the tab discards the text you pasted."
+  }
+ ],
+ "related": [
+  "pii-redactor",
+  "secret-detector-redactor",
+  "text-duplicate-line-counter",
+  "dedupe-lines",
+  "har-analyzer",
+  "sort-lines"
+ ],
+ "keywords": [
+  "log redaction tool",
+  "redact logs online",
+  "group similar log lines",
+  "remove pii from logs",
+  "log anonymiser free"
+ ]
+}

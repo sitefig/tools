@@ -1,0 +1,39 @@
+{
+ "id": "long-weekend-finder",
+ "seoTitle": "Long Weekend and Bridge Day Finder from Your Holiday List",
+ "metaDescription": "Paste your holidays and find long weekends and the leave days that bridge a holiday to a weekend. Free, offline.",
+ "intro": "Finds runs of three or more days off created by your holidays and weekends, and shows which one or two leave days would join them.",
+ "why": "Planning leave around holidays means looking for a Thursday holiday and taking Friday. Paste your own list of public holidays and this does the search.\n\nIt does not know any country's holidays, since that needs an up-to-date source, so you supply the dates. Substitute days are not added.",
+ "howTo": [
+  "Paste holidays as YYYY-MM-DD with an optional name.",
+  "Choose your weekend days and how many leave days you will bridge.",
+  "Read the long weekends and bridge options."
+ ],
+ "faq": [
+  {
+   "q": "Where do I get holiday dates?",
+   "a": "From your government or employer calendar. The tool does not fetch them."
+  },
+  {
+   "q": "Does it cover multi-year lists?",
+   "a": "Yes, any years in the list."
+  },
+  {
+   "q": "What about a different weekend?",
+   "a": "Choose Friday and Saturday for countries that use it."
+  }
+ ],
+ "related": [
+  "business-days",
+  "working-days-due-date-calculator",
+  "annual-leave-pro-rata-calculator",
+  "printable-calendar",
+  "add-subtract-dates",
+  "date-difference"
+ ],
+ "keywords": [
+  "long weekend finder",
+  "bridge days",
+  "puente days"
+ ]
+}

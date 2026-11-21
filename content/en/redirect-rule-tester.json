@@ -1,0 +1,45 @@
+{
+ "id": "redirect-rule-tester",
+ "seoTitle": "Redirect Rule Tester: Which Rule Matches My URL",
+ "metaDescription": "Paste Apache, Nginx or Netlify-style redirect rules, test URLs and see the matching rule, status code and final destination. Runs in your browser.",
+ "intro": "Paste your redirect rules and a list of URLs. The tool shows which rule fires first, the status code, the destination and any chain or loop.",
+ "why": "Rule order and wildcards cause most redirect surprises: a broad rule above a specific one, a wildcard that catches too much, a rule that sends a URL into a loop. Testing URLs against the rules on paper is faster than deploying and checking with curl.\n\nIt reads Apache Redirect and RedirectMatch, Nginx rewrite and one-line location blocks, and Netlify style rules with * and :placeholders. The Apache behaviour (path prefix, query string carried over) was checked against apache2 2.4. Nginx and Netlify follow their documentation and were not run on the real servers. Real servers also have their own precedence rules, so treat this as a good first check.",
+ "howTo": [
+  "Paste your rules, one per line.",
+  "Paste the URLs you want to test.",
+  "Read the match, status and destination for each URL.",
+  "Check the chains and loops and the list of rules that were not simulated."
+ ],
+ "faq": [
+  {
+   "q": "Which rule wins?",
+   "a": "The first matching rule in the order you pasted. Real servers may differ: nginx prefers exact locations and Apache orders modules."
+  },
+  {
+   "q": "Are query-string rules supported?",
+   "a": "No. Rules that match query parameters or hosts are listed as not simulated."
+  },
+  {
+   "q": "Does it call my server?",
+   "a": "No. Everything is computed from the text you paste."
+  },
+  {
+   "q": "Why does a Netlify rule match with and without a slash?",
+   "a": "The tester also tries the other slash form. This is an assumption that I could not verify."
+  }
+ ],
+ "related": [
+  "redirect-chain-analyzer",
+  "redirect-map-flattener",
+  "bulk-redirect-rules",
+  "redirect-rules-converter",
+  "regex-url-filter",
+  "htaccess-to-nginx"
+ ],
+ "keywords": [
+  "redirect rule tester",
+  "test htaccess redirects",
+  "netlify redirect tester",
+  "wildcard redirect test"
+ ]
+}

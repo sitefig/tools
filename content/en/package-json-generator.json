@@ -1,0 +1,46 @@
+{
+ "id": "package-json-generator",
+ "seoTitle": "Free package.json Generator - Starter File Online",
+ "metaDescription": "Create a starter package.json with name, version, scripts, module type, entry, engines and licence. Free and generated in your browser.",
+ "intro": "Fill in the name, version, scripts, module type and engines to get a clean starter package.json for a new Node project.",
+ "why": "npm init asks questions one at a time and still leaves you editing the file afterwards. Copying a package.json from an older project drags along dependencies and settings you do not want. The fields that matter at the start are few: name, version, module type, entry point, scripts, licence and the Node version you support.\n\nThis tool collects those in one form and prints valid, indented JSON. Scripts are entered in a compact name=command style separated by semicolons, and a bad pair produces a clear error rather than silent junk. Empty optional fields are left out of the output instead of printed as blanks. The file has no dependencies listed, so install them with your package manager afterwards. Generation is local.",
+ "howTo": [
+  "Enter the package name, version, description and author.",
+  "Choose module for ES modules or commonjs, and set the entry file.",
+  "Write scripts as name=command pairs separated by semicolons.",
+  "Copy the JSON into package.json and run npm install."
+ ],
+ "faq": [
+  {
+   "q": "What is the module type setting?",
+   "a": "module makes .js files load as ES modules with import and export. commonjs keeps the older require style. Choose module for new projects unless a tool you rely on needs commonjs."
+  },
+  {
+   "q": "How do I write several scripts?",
+   "a": "Use name=command and separate pairs with a semicolon, for example start=node index.js; test=node --test. Only the first equals sign splits name from command, so commands may contain more of them."
+  },
+  {
+   "q": "What does Private do?",
+   "a": "It adds private: true, which makes npm refuse to publish the package. Use it for applications and internal projects so you cannot publish them by accident."
+  },
+  {
+   "q": "Does it add dependencies?",
+   "a": "No. Run npm install package-name afterwards and npm will add the dependencies with the current version ranges. A generated file also includes an empty keywords array for you to fill."
+  }
+ ],
+ "related": [
+  "package-json-formatter",
+  "package-json-license-checker",
+  "semver-calculator",
+  "license-generator",
+  "tsconfig-generator",
+  "eslint-prettier-config-generator"
+ ],
+ "keywords": [
+  "package.json generator",
+  "create package.json online",
+  "npm init alternative",
+  "package json scripts builder",
+  "free package.json template"
+ ]
+}

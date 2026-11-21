@@ -1,0 +1,45 @@
+{
+ "id": "redirect-hits-in-logs",
+ "seoTitle": "Redirects Bots Keep Hitting: Find Them in Your Logs",
+ "metaDescription": "Find URLs that crawlers keep requesting and that answer with 301, 302, 307 or 308, ranked by hits. Fix the links that still point to them.",
+ "intro": "Lists redirecting URLs by number of bot hits, with status codes, bots and last seen time.",
+ "why": "A redirect costs the crawler one request and gives it nothing to index. If bots hit the same redirecting URL day after day, something still links to it: a menu, a sitemap, an old backlink or an internal page.\n\nThe log records the status but not the redirect target, so the tool cannot show full chains. It ranks the sources instead. Take the top URLs, check where they lead with a redirect checker, and update the links that point to them. Temporary redirects that are hit often are flagged for review.",
+ "howTo": [
+  "Paste access log lines.",
+  "Choose the bots and the minimum number of hits.",
+  "Read the ranked list of redirecting URLs.",
+  "Find and update internal links, sitemap entries and menus that point to them."
+ ],
+ "faq": [
+  {
+   "q": "Why can it not show redirect chains?",
+   "a": "The default log format has no Location header. Only the status of each request is logged."
+  },
+  {
+   "q": "Is a 302 a problem?",
+   "a": "A temporary redirect that lasts for months is usually meant to be permanent. Review it."
+  },
+  {
+   "q": "Do external links matter?",
+   "a": "Yes. Old backlinks keep bots coming to redirected URLs. Those cannot be changed, which is fine as long as the redirect works."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  }
+ ],
+ "related": [
+  "bot-status-code-report",
+  "wasted-crawl-detector",
+  "bulk-redirect-rules",
+  "htaccess-to-nginx",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer"
+ ],
+ "keywords": [
+  "redirects in server logs",
+  "googlebot hitting 301 urls",
+  "find redirect hits in log file",
+  "crawled redirects report"
+ ]
+}

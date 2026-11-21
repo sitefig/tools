@@ -1,0 +1,46 @@
+{
+  "id": "duplicate-words-finder",
+  "seoTitle": "Free Duplicate Words Finder: Spot \"the the\" Typos",
+  "metaDescription": "Find accidental repeated words such as \"the the\" and see which words you overuse. Free, runs in your browser and your text is never uploaded.",
+  "intro": "Scans your text for back-to-back repeats like \"is is\" and lists words used more than once with their counts. You can set case sensitivity and a minimum word length.",
+  "why": "The classic proofreading miss is the doubled word. Your eye slides over \"the the\" at the end of one line and the start of the next, and a spellchecker will not flag it because both words are spelled correctly. The same problem shows up in long emails, thesis chapters and product copy that was edited in several passes.\n\nThis tool checks for exactly that, and it also lists the words you lean on most often, which is useful when a draft feels repetitive. Short filler words can be hidden with the minimum length setting. It runs entirely in your browser, so a confidential draft or unpublished manuscript is not uploaded anywhere.",
+  "howTo": [
+    "Paste your draft into the input box.",
+    "Tick Case sensitive if \"The\" and \"the\" should count as different words.",
+    "Set the minimum word length to skip short words in the frequency list.",
+    "Review the back-to-back repeats first, then the list of repeated words."
+  ],
+  "faq": [
+    {
+      "q": "What counts as a back-to-back repeat?",
+      "a": "Two identical words that follow each other in the text, such as \"is is\" or \"the the\". They are reported with their word position. Case is ignored unless you tick Case sensitive."
+    },
+    {
+      "q": "What is the minimum word length for?",
+      "a": "It only affects the second list of words used more than once. Setting it to 3, the default, ignores very short words such as \"a\" or \"of\". Back-to-back repeats are always checked for every word."
+    },
+    {
+      "q": "Will it catch repeats across a line break?",
+      "a": "Yes. Words are read as one continuous stream, so a repeat split over two lines, or over a paragraph break, is still found."
+    },
+    {
+      "q": "Does it fix the text for me?",
+      "a": "No. It only reports what it finds, with a word position, so you can decide. Some repeats are legitimate, as in \"that that\" or \"had had\", and need a human judgement."
+    }
+  ],
+  "related": [
+    "word-counter",
+    "text-statistics",
+    "dedupe-lines",
+    "readability",
+    "keyword-density",
+    "text-diff"
+  ],
+  "keywords": [
+    "duplicate words finder",
+    "find repeated words in text",
+    "double word checker",
+    "the the typo checker",
+    "free repeated word finder"
+  ]
+}

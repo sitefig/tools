@@ -1,0 +1,46 @@
+{
+ "id": "aes-encrypt",
+ "seoTitle": "Free AES-256-GCM Text Encryption Online",
+ "metaDescription": "Encrypt text with a password using AES-256-GCM and PBKDF2 in your browser. Free, output is base64, nothing is uploaded.",
+ "intro": "Encrypt a piece of text with a password. The tool derives a key with PBKDF2-SHA256 (600,000 iterations), encrypts with AES-256-GCM and gives you one base64 string.",
+ "why": "Sometimes you need to pass a short secret through a channel you do not trust: a note in a ticket, an email, a shared document. Encrypting it with a password first means the channel only ever sees ciphertext.\n\nThis tool uses the browser WebCrypto API, so there is no custom cryptography. A random salt and nonce are generated for every run, the key comes from your password through PBKDF2 with 600,000 iterations, and AES-GCM adds authentication so tampering is detected. The output is a single base64 string that carries a version byte, the iteration count, salt and nonce, ready for the matching decrypt tool. It is a convenience for short text, not a replacement for a vetted file encryption tool.",
+ "howTo": [
+  "Enter the text to encrypt in the input box.",
+  "Type a strong password in the options. The default password is only a placeholder, so change it.",
+  "Run the tool to produce the base64 ciphertext.",
+  "Copy the output and share the password through a different channel."
+ ],
+ "faq": [
+  {
+   "q": "How is the output structured?",
+   "a": "Base64 of a version byte, the iteration count, a 16-byte salt, a 12-byte IV and the ciphertext. Header bytes are authenticated. A fresh salt and IV are used each time, so the same input gives different output."
+  },
+  {
+   "q": "Is it safe to use for important secrets?",
+   "a": "It uses standard primitives, but safety depends on your password. A weak password can be guessed offline. This is not audited software, so for high-stakes data use a reviewed tool."
+  },
+  {
+   "q": "What if I forget the password?",
+   "a": "The text cannot be recovered. There is no reset and no copy on any server. Keep the password in a password manager."
+  },
+  {
+   "q": "Is my text uploaded?",
+   "a": "No. Encryption runs in your browser through WebCrypto, and neither the text nor the password is sent anywhere. Closing the tab discards both from the page."
+  }
+ ],
+ "related": [
+  "aes-decrypt",
+  "password-generator",
+  "passphrase-generator",
+  "pbkdf2-key-derivation",
+  "aes-modes-demo",
+  "hmac-generator"
+ ],
+ "keywords": [
+  "aes encrypt online",
+  "aes-256-gcm encryption tool",
+  "encrypt text with password",
+  "browser text encryption",
+  "pbkdf2 aes online free"
+ ]
+}

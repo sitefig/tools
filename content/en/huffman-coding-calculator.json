@@ -1,0 +1,45 @@
+{
+  "id": "huffman-coding-calculator",
+  "seoTitle": "Huffman Coding Calculator: Codes, Entropy, Compression",
+  "metaDescription": "Build a Huffman code for your text: symbol counts, prefix codes, the encoded bits, average code length, Shannon entropy and compression ratio.",
+  "intro": "See how Huffman coding compresses a text and compare it with the theoretical limit.",
+  "why": "The tool counts the characters, builds the Huffman tree by repeatedly merging the two least frequent nodes, assigns codes and lists them with their frequencies. It shows the total encoded size, the average bits per symbol, the Shannon entropy (the lower bound for any symbol-by-symbol code) and the size relative to 8-bit text. The total cost was checked against an independent heap-based implementation and the codes are verified to be prefix-free.\n\nTies are broken by creation order, so equally optimal trees can give different bit patterns. The size excludes the cost of storing the code table, which matters for short texts.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste or type some text.",
+    "Read the table of symbols and codes.",
+    "Compare the average length with the entropy.",
+    "Try longer texts to see the ratio approach the entropy."
+  ],
+  "faq": [
+    {
+      "q": "Is Huffman coding optimal?",
+      "a": "Among prefix codes for known symbol frequencies, yes. Arithmetic coding and dictionary methods can do better overall."
+    },
+    {
+      "q": "Why do different tools give different codes?",
+      "a": "Equal frequencies can be merged in different orders, giving different but equally short codes."
+    },
+    {
+      "q": "What is entropy here?",
+      "a": "The average information per symbol from the frequencies, in bits."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "gzip-compress",
+    "hex-text",
+    "binary-text",
+    "character-frequency",
+    "text-statistics",
+    "ascii-tree-generator"
+  ],
+  "keywords": [
+    "huffman coding",
+    "huffman tree calculator",
+    "entropy calculator",
+    "prefix code"
+  ]
+}

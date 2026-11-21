@@ -1,0 +1,45 @@
+{
+ "id": "ssh-key-inspector",
+ "seoTitle": "Free SSH Public Key Inspector and Fingerprint Tool",
+ "metaDescription": "Parse an OpenSSH public key line to see the type, size, comment and the SHA-256 and MD5 fingerprints from ssh-keygen -l. Free, in your browser.",
+ "intro": "Paste an OpenSSH public key line and see its key type, bit size, comment and the SHA-256 and MD5 fingerprints that ssh-keygen -l would print.",
+ "why": "Public keys in authorized_keys files, deploy key lists and cloud consoles are long Base64 strings that all look alike. When you are asked to confirm a fingerprint, or you need to check which key is which, you want the same value that ssh-keygen shows.\n\nThis inspector decodes the key blob inside the line, checks that its internal type matches the label, estimates the RSA modulus size and calculates both fingerprints locally. It handles ssh-rsa, ssh-ed25519 and ECDSA lines. Public keys are not secret, but do not paste private keys into any website. The fingerprint tells you whether two lines are the same key, not whether the key is trustworthy.",
+ "howTo": [
+  "Paste one or more public key lines, in the form type, Base64 data and an optional comment.",
+  "Read the type, size, comment and the SHA256 and MD5 fingerprints.",
+  "Compare them with the value shown by your server, GitHub or cloud console."
+ ],
+ "faq": [
+  {
+   "q": "Which fingerprint should I compare?",
+   "a": "The SHA256 form is the current default in OpenSSH and is shown by most services. The older colon-separated MD5 form is included for systems that still display it."
+  },
+  {
+   "q": "Can I paste a private key?",
+   "a": "Please do not. This tool needs only the public key line, which starts with ssh-rsa, ssh-ed25519 or ecdsa-sha2. Keep private keys out of web pages."
+  },
+  {
+   "q": "Why does it say the key blob type does not match?",
+   "a": "The label at the start of the line and the type stored inside the Base64 data must agree. A mismatch usually means the line was edited or truncated when copied."
+  },
+  {
+   "q": "Does it check whether a key is strong?",
+   "a": "It shows the size, such as RSA bits, but gives no verdict. As a guide, use Ed25519 or RSA of at least 3072 bits for new keys."
+  }
+ ],
+ "related": [
+  "ssh-key-fingerprint",
+  "ed25519-key-generator",
+  "rsa-key-pair-generator",
+  "rsa-pkcs1-pkcs8-converter",
+  "openpgp-inspector",
+  "x509-viewer"
+ ],
+ "keywords": [
+  "ssh public key inspector",
+  "ssh key fingerprint online",
+  "ssh-keygen -l online",
+  "free ssh key checker",
+  "openssh key parser"
+ ]
+}

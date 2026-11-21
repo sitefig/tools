@@ -1,0 +1,45 @@
+{
+ "id": "opening-hours-schema-builder",
+ "seoTitle": "Opening Hours Schema Builder: Weekly Hours and Holidays to JSON-LD",
+ "metaDescription": "Write opening hours as simple lines and get OpeningHoursSpecification JSON-LD with split shifts, closed days and holiday dates.",
+ "intro": "Turns lines such as Mo-Fr 09:00-17:30 into an OpeningHoursSpecification array, with split shifts, closed days and date ranges for holidays.",
+ "why": "Opening hours markup is easy to get subtly wrong: day names, 24-hour times, a second shift, a closed Sunday, a closure over Christmas. You write the schedule the way you would say it, one line per rule, and the tool builds the objects and groups days with equal hours.\n\nIt follows the format in Google's local business documentation: closed all day is opens and closes 00:00, open 24 hours is 00:00 to 23:59, and seasonal hours use validFrom and validThrough. The array goes into the openingHoursSpecification property of a LocalBusiness.",
+ "howTo": [
+  "Write one rule per line, for example Mo-Fr 09:00-17:30.",
+  "Add split shifts after a comma: Mo 09:00-12:00,13:00-17:00.",
+  "Add holidays as dates: 2026-12-25 closed, or a range with two dots.",
+  "Copy the array into your LocalBusiness markup."
+ ],
+ "faq": [
+  {
+   "q": "Which day names work?",
+   "a": "Mo, Tu, We, Th, Fr, Sa, Su, three-letter names and full English names, in ranges like Mo-Fr or lists like Sa,Su."
+  },
+  {
+   "q": "How do I show 24 hours?",
+   "a": "Write 00:00-24:00. It is output as 00:00 to 23:59, which is what Google documents."
+  },
+  {
+   "q": "Can hours pass midnight?",
+   "a": "Yes. Write Sa 18:00-03:00; it stays one specification, as in the Google example."
+  },
+  {
+   "q": "Where do I put the result?",
+   "a": "Inside the LocalBusiness object under openingHoursSpecification. The LocalBusiness generator does this for you."
+  }
+ ],
+ "related": [
+  "localbusiness-schema-generator",
+  "schema-generator",
+  "rich-result-eligibility-checker",
+  "iso-8601-duration-builder",
+  "jsonld-syntax-validator",
+  "date-formats"
+ ],
+ "keywords": [
+  "opening hours schema",
+  "openingHoursSpecification generator",
+  "business hours json-ld",
+  "holiday opening hours markup"
+ ]
+}

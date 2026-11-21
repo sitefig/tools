@@ -1,0 +1,39 @@
+{
+ "id": "euro-area-inflation-calculator",
+ "seoTitle": "Euro Area Inflation Calculator (HICP 1996-2025)",
+ "metaDescription": "Adjust an amount between years with euro area HICP inflation data from Eurostat, built into the page. Works offline.",
+ "intro": "Converts an amount between two years using the euro area harmonised consumer price index.",
+ "why": "Constant-rate inflation calculators guess. This one uses the actual annual average HICP index published by Eurostat (2015 = 100) for the euro area, so you can see what 1,000 euro in 2010 is worth in 2024.\n\nThe data is stored in the page, with source and update date shown in the result. The euro area grew from 11 to 21 states over the period, and the index is a general basket, so your own prices may differ.",
+ "howTo": [
+  "Enter an amount.",
+  "Choose the from year and the to year.",
+  "Read the equivalent value and the year table."
+ ],
+ "faq": [
+  {
+   "q": "Where does the data come from?",
+   "a": "Eurostat dataset prc_hicp_aind, euro area aggregate, annual average index, updated 2026-02-06."
+  },
+  {
+   "q": "Why not January to January?",
+   "a": "The index is an annual average, so it compares average price levels."
+  },
+  {
+   "q": "Can I use a country?",
+   "a": "Not here. Only the euro area aggregate is bundled."
+  }
+ ],
+ "related": [
+  "inflation-calculator",
+  "purchasing-power-calculator",
+  "percent-change",
+  "compound-interest",
+  "currency-converter-manual-rates",
+  "retirement-estimator"
+ ],
+ "keywords": [
+  "euro inflation calculator",
+  "HICP",
+  "eurozone inflation"
+ ]
+}

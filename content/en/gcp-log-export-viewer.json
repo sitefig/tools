@@ -1,0 +1,44 @@
+{
+ "id": "gcp-log-export-viewer",
+ "seoTitle": "Google Cloud Logging Export Viewer (LogEntry JSON)",
+ "metaDescription": "Read JSON exported from Logs Explorer or a sink. Filter by severity, resource type or text and see counts. Free, runs in your browser.",
+ "intro": "Reads LogEntry JSON and shows severity and resource counts with one message line per entry.",
+ "why": "Logs Explorer exports are verbose JSON with the message in different places depending on the payload type. This tool picks the useful part: text payload, JSON message, HTTP request or method name.\n\nSeverity follows the LogSeverity order from DEFAULT to EMERGENCY.",
+ "howTo": [
+  "Export logs as JSON from Logs Explorer or a sink.",
+  "Paste or open the file.",
+  "Choose a minimum severity and optional filters.",
+  "Read the summary or the table."
+ ],
+ "faq": [
+  {
+   "q": "Which payloads are supported?",
+   "a": "textPayload, jsonPayload.message, httpRequest and protoPayload.methodName."
+  },
+  {
+   "q": "Is the order of severities documented?",
+   "a": "Yes, in the LogSeverity enum of the Cloud Logging API."
+  },
+  {
+   "q": "What if some lines do not match?",
+   "a": "They are skipped and the result says how many. Lines that are not JSON are counted."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "azure-monitor-log-viewer",
+  "cloudtrail-event-viewer",
+  "jsonl-log-filter",
+  "journald-json-viewer",
+  "vercel-netlify-log-viewer",
+  "log-level-histogram"
+ ],
+ "keywords": [
+  "google cloud logging export",
+  "gcp logentry viewer",
+  "stackdriver log json"
+ ]
+}

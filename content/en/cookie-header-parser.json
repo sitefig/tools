@@ -1,0 +1,43 @@
+{
+ "id": "cookie-header-parser",
+ "seoTitle": "Free Cookie and Set-Cookie Header Parser",
+ "metaDescription": "Split Cookie and Set-Cookie headers into names, decoded values and attributes. Free, offline, JSON output available.",
+ "intro": "Parses a Cookie request header into its name and value pairs, and Set-Cookie response headers into the name, value and attributes such as Path, Domain, Expires, Max-Age, Secure, HttpOnly and SameSite.",
+ "why": "A Cookie header is a single line of name=value pairs, and Set-Cookie lines carry attributes after semicolons. DevTools shows them in a table, but logs and curl output do not.\n\nPaste the header lines and read each cookie on its own, with percent-encoded values decoded and Expires converted to an ISO date. This tool describes; it does not judge. For security findings use the Cookie Flag Analyzer. Cookie values can be session identifiers, so avoid sharing the page link with real ones.",
+ "howTo": [
+  "Paste Cookie: and Set-Cookie: lines, or the bare header values.",
+  "Tick JSON if you want structured output.",
+  "Read the name, value and attributes for each cookie."
+ ],
+ "faq": [
+  {
+   "q": "Can I paste a header without the name?",
+   "a": "A line without Cookie: or Set-Cookie: is read as a Set-Cookie value."
+  },
+  {
+   "q": "Why are values decoded?",
+   "a": "Percent-encoded values are shown decoded when valid, to make them readable. The original text is unchanged elsewhere."
+  },
+  {
+   "q": "Does it check security flags?",
+   "a": "No. Use the Cookie Flag Analyzer for that."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "cookie-flag-analyzer",
+  "cookie-classifier",
+  "cookie-expiry-auditor",
+  "http-headers-analyzer",
+  "http-headers-to-json",
+  "cookie-table-builder"
+ ],
+ "keywords": [
+  "cookie header parser",
+  "set-cookie parser",
+  "parse cookie string"
+ ]
+}

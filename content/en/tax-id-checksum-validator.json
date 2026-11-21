@@ -1,0 +1,38 @@
+{
+ "id": "tax-id-checksum-validator",
+ "seoTitle": "VAT and Tax ID Checksum Validator: EU, CH, NO, AU, BR",
+ "metaDescription": "Check VAT, company and tax number check digits offline for 27 EU states, Switzerland, Norway, Australian ABN, ACN, TFN and Brazilian CPF, CNPJ.",
+ "intro": "Test whether a VAT, company or tax number has valid check digits, for many countries, without sending it anywhere.",
+ "why": "Typos in VAT and tax numbers cause rejected invoices and failed onboarding. Most national schemes include a check digit, so a mistyped number can be caught instantly and offline. This tool applies the published algorithms for 27 EU VAT formats, Swiss UID, Norwegian organisation numbers, Australian ABN, ACN and TFN and Brazilian CPF and CNPJ, accepts numbers with or without the country prefix, and says when only the format (not the checksum) can be verified.\n\nA valid checksum shows a number is well formed; it does not prove that the business exists or is VAT-registered. For cross-border EU sales confirm in VIES, and for Australia in the ABN Lookup. Our implementation was compared with python-stdnum on about 500,000 generated numbers; the only deliberate differences are Belgian check values 98 and 99 and the Spanish CIF letter-versus-digit rule, which we apply strictly.",
+ "howTo": [
+  "Paste numbers, one per line, with a country prefix (DE123456789, BE0417497106, ABN 51 824 753 556).",
+  "Numbers without a prefix are tried against every scheme.",
+  "Read VALID, INVALID or \"format only\" for each line."
+ ],
+ "faq": [
+  {
+   "q": "Does a valid result mean the company exists?",
+   "a": "No. It only means the check digits are consistent. Use VIES or the national register to confirm registration."
+  },
+  {
+   "q": "Is the number sent anywhere?",
+   "a": "No, the arithmetic runs in your browser."
+  },
+  {
+   "q": "Why \"format only\" for some countries?",
+   "a": "Some schemes (for example Bulgaria and Cyprus) have no public checksum or need data we do not include."
+  }
+ ],
+ "related": [
+  "vat-number-format-validator",
+  "iban-validator",
+  "luhn-validator",
+  "check-digit-tool",
+  "vat-calculator"
+ ],
+ "keywords": [
+  "vat number validator",
+  "abn validator",
+  "cpf cnpj checker"
+ ]
+}

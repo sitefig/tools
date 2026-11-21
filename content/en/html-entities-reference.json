@@ -1,0 +1,46 @@
+{
+  "id": "html-entities-reference",
+  "seoTitle": "Free HTML Entities Reference: Named and Numeric",
+  "metaDescription": "Search a list of HTML entities by name, character, number or description and get the named, decimal and hex forms. Free, runs in your browser.",
+  "intro": "A searchable table of named and numeric HTML entities. Type a name, a character, a number or a description and see its named, decimal and hexadecimal forms.",
+  "why": "You need a copyright sign, a non-breaking space or an arrow inside an HTML page, and you cannot remember whether it is the entity with copy in it, or a number. Sometimes you only know what the character looks like, or the code point from a bug report.\n\nThis reference lets you search any way round. Type copy, 169, euro or the character itself and the matching rows appear with the named entity, the decimal form and the hex form. The list covers the HTML 4 entities: Latin-1 symbols and accented letters, Greek letters, general punctuation, spaces and joiners. Invisible characters are shown with a dot. It runs entirely in your browser, so no search is sent anywhere.",
+  "howTo": [
+    "Type a name, character, number or description into the filter box.",
+    "Leave it blank to list every entity.",
+    "Find the row you need in the table.",
+    "Copy the named, decimal or hex form into your HTML."
+  ],
+  "faq": [
+    {
+      "q": "What can I type in the filter?",
+      "a": "A name such as copy, a word from the description such as arrow, a decimal number such as 169, a hex code such as x20ac, a form such as &#169;, or the character itself. Matching is not case sensitive."
+    },
+    {
+      "q": "Which entities are included?",
+      "a": "The classic HTML 4 set: quotation, ampersand, less-than and greater-than, Latin-1 symbols and letters, Greek letters, spaces, joiners, dashes, quotes, bullets and a number of arrows and symbols. It is not the full HTML5 list."
+    },
+    {
+      "q": "When should I use an entity at all?",
+      "a": "You must escape ampersand, less-than and greater-than in HTML text. For other characters, a UTF-8 page can usually contain the character directly. Entities help when you need an invisible character, such as a non-breaking space, to be visible in the source."
+    },
+    {
+      "q": "Why are some characters shown as a dot?",
+      "a": "Spaces, soft hyphens, zero-width characters and direction marks are invisible. A dot stands in for them in the Char column, so you can still find their entities."
+    }
+  ],
+  "related": [
+    "html-entities",
+    "unicode-character-map",
+    "char-info",
+    "unicode-escape",
+    "ascii-table",
+    "url-encode"
+  ],
+  "keywords": [
+    "html entities reference",
+    "html special characters list",
+    "html entity codes",
+    "copyright symbol html code",
+    "free html entity lookup"
+  ]
+}

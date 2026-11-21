@@ -1,0 +1,38 @@
+{
+ "id": "webrtc-leak-test",
+ "seoTitle": "Free WebRTC Leak Test: Local IP Exposure",
+ "metaDescription": "Check whether your browser exposes local IP addresses through WebRTC. Free, runs locally, no STUN server contacted, nothing sent.",
+ "intro": "Shows which local network addresses your browser reveals to any web page through WebRTC, and whether they are hidden behind randomised mDNS names.",
+ "why": "WebRTC lets a page ask the browser for network candidates in order to set up peer connections. Historically that gave every page your real local IP address without any prompt, which trackers and ad scripts used as an extra fingerprint signal and which could expose the layout of a private network.\n\nModern browsers replace those addresses with random .local names, but extensions, older versions and some settings still leak them. This page opens a connection locally, with no STUN server, and lists every candidate the browser offers so you can see whether you are protected. Nothing is sent anywhere. Testing the public IP needs a server and is not part of this tool.",
+ "howTo": [
+  "Open the page; the test runs automatically.",
+  "Read the table of candidates and the verdict below it.",
+  "Change a privacy setting or extension, then press Re-run to compare."
+ ],
+ "faq": [
+  {
+   "q": "Does this test my public IP?",
+   "a": "No. That needs a request to a server, which this tool never makes. It only shows local addresses the browser exposes."
+  },
+  {
+   "q": "What is a .local address?",
+   "a": "A random mDNS name the browser substitutes for your real local IP. It is the protected result."
+  },
+  {
+   "q": "How do I stop a leak?",
+   "a": "Update your browser, and if real addresses show, restrict WebRTC in browser settings or with a privacy extension."
+  }
+ ],
+ "related": [
+  "browser-fingerprint",
+  "browser-info",
+  "tracker-detector",
+  "har-analyzer",
+  "user-agent-parser"
+ ],
+ "keywords": [
+  "webrtc leak test",
+  "webrtc local ip",
+  "browser privacy test"
+ ]
+}

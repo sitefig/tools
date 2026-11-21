@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Capacitor Config Builder (TS or JSON) | Free Tools</title>
+<meta name="description" content="Build capacitor.config.ts or capacitor.config.json with app ID, server options and plugin settings for splash screen, status bar and push. Free.">
+<link rel="canonical" href="https://tools.sitefig.net/en/capacitor-config-builder/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/capacitor-config-builder/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/capacitor-config-builder/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Capacitor Config Builder (TS or JSON) | Free Tools">
+<meta property="og:description" content="Build capacitor.config.ts or capacitor.config.json with app ID, server options and plugin settings for splash screen, status bar and push. Free.">
+<meta property="og:url" content="https://tools.sitefig.net/en/capacitor-config-builder/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Capacitor Config Builder (TS or JSON) | Free Tools">
+<meta name="twitter:description" content="Build capacitor.config.ts or capacitor.config.json with app ID, server options and plugin settings for splash screen, status bar and push. Free.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Capacitor Config Builder (capacitor.config.ts / .json)","url":"https://tools.sitefig.net/en/capacitor-config-builder/","description":"Build capacitor.config.ts or capacitor.config.json with app ID, server options and plugin settings for splash screen, status bar and push. Free.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the app ID, app name and webDir where your built web assets live.","Optionally set a server URL for live reload, cleartext traffic and the Android scheme.","Tick the SplashScreen, StatusBar, Keyboard or PushNotifications plugins you use and set their values.","Choose TypeScript or JSON, copy the result into your project root and run npx cap sync."],"keywords":"capacitor config builder, capacitor.config.ts generator, capacitor config json, capacitor splashscreen config, ionic capacitor config, free capacitor tool","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Mobile & Desktop Config","item":"https://tools.sitefig.net/en/#mobile-and-desktop-config"},{"@type":"ListItem","position":3,"name":"Capacitor Config Builder (capacitor.config.ts / .json)","item":"https://tools.sitefig.net/en/capacitor-config-builder/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Should I keep server.url in a production build?","acceptedAnswer":{"@type":"Answer","text":"No. The server URL points the native shell at a development server for live reload. Remove it before you build release binaries, or the app will try to load your dev machine instead of the bundled files."}},{"@type":"Question","name":"What does the cleartext option change?","acceptedAnswer":{"@type":"Answer","text":"It sets server.cleartext and allows mixed content on Android, so plain HTTP is permitted. Use it only for local development against an HTTP server, never for a released app."}},{"@type":"Question","name":"Does it cover every Capacitor setting?","acceptedAnswer":{"@type":"Answer","text":"No. It covers the common fields and four popular plugins. Other plugins and platform options can be added by hand to the generated file, following the Capacitor documentation."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#mobile-and-desktop-config">Mobile &amp; Desktop Config</a></li><li><span aria-current="page">Capacitor Config Builder (capacitor.config.ts / .json)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Capacitor Config Builder (capacitor.config.ts / .json)</h1>
+<p class="lede">Set your app ID, name and web directory, add server and plugin options, and get a capacitor.config.ts or capacitor.config.json file you can drop into an Ionic or Capacitor project.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="capacitor-config-builder" data-module="devz2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Capacitor reads one config file at sync time, and a typo in a key is ignored without complaint. The plugin sections for the splash screen, status bar, keyboard and push notifications each have their own option names, and it is hard to remember them while you are also fighting a native build.</p>
+<p>This builder writes the file in either TypeScript or JSON from a short form. It also reminds you when a live-reload server URL is present, because that setting must not ship in a release build. Everything is produced in your browser, so internal hostnames and bundle IDs are not sent anywhere.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the app ID, app name and webDir where your built web assets live.</li><li>Optionally set a server URL for live reload, cleartext traffic and the Android scheme.</li><li>Tick the SplashScreen, StatusBar, Keyboard or PushNotifications plugins you use and set their values.</li><li>Choose TypeScript or JSON, copy the result into your project root and run npx cap sync.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Should I keep server.url in a production build?</summary><p>No. The server URL points the native shell at a development server for live reload. Remove it before you build release binaries, or the app will try to load your dev machine instead of the bundled files.</p></details>
+<details><summary>What does the cleartext option change?</summary><p>It sets server.cleartext and allows mixed content on Android, so plain HTTP is permitted. Use it only for local development against an HTTP server, never for a released app.</p></details>
+<details><summary>Does it cover every Capacitor setting?</summary><p>No. It covers the common fields and four popular plugins. Other plugins and platform options can be added by hand to the generated file, following the Capacitor documentation.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/electron-config-builder/"><span class="link-card__title">Electron App Config Builder (secure defaults)</span><span class="link-card__desc">Generate a secure-by-default Electron starter: main.js (BrowserWindow with contextIsolation, sandbox, no nodeIntegration, navigation and window-open blocking, Content-Security-Policy header, single-instance lock), a preload.js exposing a minimal IPC bridge, and package.json with an electron-builder configuration (appId, mac / win / linux targets, file globs).</span></a></li><li><a class="link-card" href="/en/android-manifest-builder/"><span class="link-card__title">AndroidManifest.xml Builder</span><span class="link-card__desc">Generate an AndroidManifest.xml: package namespace, application attributes (label, icon, theme, allowBackup, cleartext traffic, backup rules), launcher activity with explicit android:exported, optional deep-link / App Link intent filter, permissions (short names like CAMERA are expanded to android.permission.*) with a list of those that need a runtime prompt, and optional hardware features.</span></a></li><li><a class="link-card" href="/en/ios-plist-builder/"><span class="link-card__title">iOS Info.plist Builder</span><span class="link-card__desc">Generate an iOS Info.plist: bundle identifiers and versions, supported orientations, launch screen, usage-description strings (camera, photos, location, microphone, Face ID, tracking... via short aliases or full NS* keys), custom URL schemes, LSApplicationQueriesSchemes, background modes and App Transport Security exceptions. Output is valid XML property-list syntax.</span></a></li><li><a class="link-card" href="/en/package-json-generator/"><span class="link-card__title">package.json Generator</span><span class="link-card__desc">Starter package.json with metadata, ESM/CommonJS type, scripts and engines.</span></a></li><li><a class="link-card" href="/en/tsconfig-generator/"><span class="link-card__title">tsconfig.json Generator</span><span class="link-card__desc">tsconfig presets for Node, browser apps, libraries and React.</span></a></li><li><a class="link-card" href="/en/universal-links-validator/"><span class="link-card__title">Universal Links / App Links Validator (AASA &amp; assetlinks.json)</span><span class="link-card__desc">Validate an apple-app-site-association file (iOS Universal Links: applinks.details with appIDs and components or legacy paths, webcredentials, appclips) or Android assetlinks.json (delegate_permission/common.handle_all_urls, package_name, 32-byte SHA-256 fingerprints). Reports structural errors and warnings, and can test a URL path against the AASA rules. It checks the file content only: hosting (HTTPS, no redirects, /.well-known/, application/json) must be verified on your server.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

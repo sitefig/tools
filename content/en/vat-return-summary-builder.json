@@ -1,0 +1,39 @@
+{
+ "id": "vat-return-summary-builder",
+ "seoTitle": "VAT Return Summary Builder From Pasted Lines",
+ "metaDescription": "Total output and input VAT by rate from pasted sales and purchase lines and see the VAT payable or reclaimable.",
+ "intro": "Groups pasted invoices by rate into output VAT, input VAT and the net amount.",
+ "why": "Before filing, many people need a quick check of how much VAT they collected and paid. Paste one line per invoice and the totals are grouped by rate.\n\nIt is a summary for your own bookkeeping. Return boxes, special schemes, reverse charge entries and non-deductible VAT differ by country.",
+ "howTo": [
+  "Write S or P, date, description, net amount, rate.",
+  "Tick if amounts include VAT.",
+  "Read VAT collected, paid and the balance."
+ ],
+ "faq": [
+  {
+   "q": "Does it file my return?",
+   "a": "No. It only totals your lines."
+  },
+  {
+   "q": "How is gross handled?",
+   "a": "The tool divides by one plus the rate to get the net."
+  },
+  {
+   "q": "Is my data stored?",
+   "a": "Nothing you type leaves your browser."
+  }
+ ],
+ "related": [
+  "vat-calculator",
+  "oss-vat-calculator",
+  "expense-report-builder",
+  "invoice-generator",
+  "eu-vat-rates-lookup",
+  "reverse-charge-checker"
+ ],
+ "keywords": [
+  "VAT return summary",
+  "output and input VAT",
+  "VAT payable"
+ ]
+}

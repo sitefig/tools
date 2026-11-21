@@ -1,0 +1,45 @@
+{
+  "id": "sql-variable-inliner",
+  "seoTitle": "SQL Parameter Inliner: Fill ?, $1, :name Placeholders",
+  "metaDescription": "Substitute bound parameters into a SQL statement with correct literal escaping, to read or replay a logged query. For debugging only.",
+  "intro": "Paste a parameterised query and its values and get the full SQL as the database would see it.",
+  "why": "Placeholders in the forms ?, %s, $1, :name and @name are replaced by literals from a JSON array or object. Strings are quoted with doubled single quotes (backslash escapes for MySQL), numbers and booleans are written plainly, null becomes NULL and arrays expand to comma lists for IN (...). Quoted strings and comments in the SQL are left untouched. The output was checked by running it in SQLite against bound parameters with tricky strings.\n\nUse this to understand logs and to debug. Never build production queries by inlining values; keep using bound parameters.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the SQL with placeholders.",
+    "Paste the values as JSON.",
+    "Pick the dialect.",
+    "Read or run the resulting SQL in a console."
+  ],
+  "faq": [
+    {
+      "q": "Is the output safe to run in production?",
+      "a": "Not as a pattern. It is meant for inspection; bound parameters prevent injection."
+    },
+    {
+      "q": "How are arrays handled?",
+      "a": "They become a comma-separated list for IN (?) placeholders."
+    },
+    {
+      "q": "Which dialects are supported?",
+      "a": "Standard/SQLite, PostgreSQL and MySQL quoting."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "sql-format",
+    "sql-explainer",
+    "sql-index-advisor",
+    "sql-minify",
+    "sql-select-builder",
+    "sql-injection-pattern-scanner"
+  ],
+  "keywords": [
+    "sql parameter replace",
+    "inline sql parameters",
+    "debug prepared statement",
+    "sql log replay"
+  ]
+}

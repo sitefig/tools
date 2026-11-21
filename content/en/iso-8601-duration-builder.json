@@ -1,0 +1,45 @@
+{
+ "id": "iso-8601-duration-builder",
+ "seoTitle": "ISO 8601 Duration Converter for Schema.org (PT1H30M)",
+ "metaDescription": "Convert 1 hour 30 minutes to PT1H30M and back. Handles minutes, h:mm, days and ISO strings, one per line, for schema duration fields.",
+ "intro": "Converts plain time spans to ISO 8601 durations such as PT1H30M, and reads ISO durations back as words. One value per line.",
+ "why": "Schema fields like prepTime, cookTime, duration and totalTime want ISO 8601 durations, which nobody remembers. Type 1 hour 30 minutes, 90 min, 2:15 or 3 days 4 hours and get PT1H30M, PT1H30M, PT2H15M and P3DT4H. Paste PT1H30M and get 1 hour 30 minutes back.\n\nMinutes roll over into hours and hours into days, and months or years are never guessed from plain words because their length varies. ISO strings are validated against the format.",
+ "howTo": [
+  "Enter one duration per line.",
+  "Read the ISO value on the right.",
+  "Paste an ISO duration to see it in words.",
+  "Copy the value into your markup."
+ ],
+ "faq": [
+  {
+   "q": "What does the T mean?",
+   "a": "It separates date parts from time parts: P1DT12H is one day and twelve hours."
+  },
+  {
+   "q": "Why is 2:15 two hours?",
+   "a": "h:mm is read as hours and minutes. The video generator reads m:ss instead."
+  },
+  {
+   "q": "Are weeks supported?",
+   "a": "ISO strings with W are accepted and read; plain words use days."
+  },
+  {
+   "q": "Is 0 valid?",
+   "a": "PT0S is the zero duration."
+  }
+ ],
+ "related": [
+  "recipe-schema-generator",
+  "howto-schema-generator",
+  "videoobject-schema-generator",
+  "time-duration-calculator",
+  "schema-generator",
+  "date-formats"
+ ],
+ "keywords": [
+  "iso 8601 duration",
+  "PT1H30M converter",
+  "schema prepTime format",
+  "duration to ISO"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "search-operators-builder",
+ "seoTitle": "Free Google Search Operators Builder Online",
+ "metaDescription": "Build an advanced Google search query with site:, intitle:, inurl:, filetype:, exclusions and date filters from simple fields. Free, runs in your browser.",
+ "intro": "Fill in simple fields and get a ready-to-use advanced Google query with operators like site:, intitle:, inurl:, filetype:, exclusions and before/after dates, plus a search link.",
+ "why": "Advanced operators turn Google into a precise research tool: find PDFs on a government site, pages with a word in the title, content published after a certain date, or pages that mention you without linking. Few people remember the exact syntax, and quoting and OR rules are easy to get wrong.\n\nThis builder assembles the query for you. Type keywords, an exact phrase, alternatives, words to exclude and the operators you want, and it joins them with the right quotes and parentheses and gives a Google search URL. It builds text only and does not run searches or fetch results, so nothing about your research is sent anywhere until you click the link.",
+ "howTo": [
+  "Enter your keywords and an optional exact phrase.",
+  "Add alternatives (OR) and words to exclude, separated by commas.",
+  "Fill in the operator fields you need: site:, intitle:, inurl:, intext:, filetype:, dates and related:.",
+  "Copy the finished query, or open the Google search link it provides."
+ ],
+ "faq": [
+  {
+   "q": "Do all operators still work in Google?",
+   "a": "Google changes support over time. site:, intitle:, inurl:, filetype: and quoted phrases are reliable. related: has been reduced or removed, and results from some operators are approximate. Test a query before relying on it."
+  },
+  {
+   "q": "How are dates formatted?",
+   "a": "Use YYYY-MM-DD in the after and before fields, for example after:2024-01-01. Leave a field empty to leave it out. Google may accept other forms, but this one is the safest."
+  },
+  {
+   "q": "How do multiple alternatives work?",
+   "a": "Words in the \"Any of\" field are separated by commas and joined with OR in parentheses. Terms with spaces are quoted automatically."
+  },
+  {
+   "q": "Is anything sent to Google by the tool itself?",
+   "a": "No. The tool only builds the text. The search link is opened by you, and then your browser contacts Google as usual."
+  }
+ ],
+ "related": [
+  "keyword-intent-classifier",
+  "keyword-clusterer",
+  "seo-inspector",
+  "sitemap-url-extractor",
+  "heading-analyzer",
+  "topic-cluster-planner"
+ ],
+ "keywords": [
+  "google search operators builder",
+  "advanced google search generator",
+  "site: intitle: filetype builder",
+  "free google dork builder",
+  "google query builder",
+  "search operators cheat tool"
+ ]
+}

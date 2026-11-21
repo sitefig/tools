@@ -1,0 +1,45 @@
+{
+ "id": "schema-graph-visualizer",
+ "seoTitle": "Schema Graph Visualizer: See @id Links and Broken References",
+ "metaDescription": "Draw JSON-LD @id references as a node diagram with a table. Broken references and disconnected nodes are marked by colour and label.",
+ "intro": "Shows how your JSON-LD entities link together: organization, website, page, person. Missing targets and orphan nodes stand out.",
+ "why": "A good JSON-LD graph connects its entities by @id, for example a WebPage that is part of a WebSite published by an Organization. A reference to an @id that is never defined is a broken link, and a node nothing connects to is easy to miss in a long block.\n\nThe diagram puts nodes on a circle with arrows for references and nesting. Colour is never the only signal: broken references have a dashed outline and the table lists every node and link with its status. The picture has a text description and the tables carry the same facts.",
+ "howTo": [
+  "Paste the JSON-LD or HTML.",
+  "Read the summary line for counts.",
+  "Look for red dashed outlines and orange nodes.",
+  "Fix the missing @id or add the link, then run again."
+ ],
+ "faq": [
+  {
+   "q": "What counts as broken?",
+   "a": "An object that only has an @id which no full node defines."
+  },
+  {
+   "q": "What is disconnected?",
+   "a": "A node outside the largest connected group."
+  },
+  {
+   "q": "Is it interactive?",
+   "a": "It is a static diagram with tables, so it works with a keyboard and screen reader."
+  },
+  {
+   "q": "How many nodes can it show?",
+   "a": "Large graphs get crowded; the table still lists everything."
+  }
+ ],
+ "related": [
+  "schema-graph-merger",
+  "structured-data-extractor",
+  "schema-markup-diff",
+  "jsonld-syntax-validator",
+  "schema-property-checker",
+  "mermaid-lite-renderer"
+ ],
+ "keywords": [
+  "json-ld graph visualizer",
+  "schema @id references",
+  "broken @id reference",
+  "schema graph diagram"
+ ]
+}

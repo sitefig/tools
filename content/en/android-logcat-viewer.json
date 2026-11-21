@@ -1,0 +1,44 @@
+{
+ "id": "android-logcat-viewer",
+ "seoTitle": "Android Logcat Viewer: Filter by Tag, PID and Priority",
+ "metaDescription": "Parse adb logcat output and filter by priority, tag, PID or text. Finds FATAL EXCEPTION and ANR lines. Colour-coded view. Free.",
+ "intro": "Parses logcat lines (threadtime, time, brief) and summarises priorities, tags, processes and crashes.",
+ "why": "logcat output mixes every app and system service. Filtering by tag or process ID and showing only warnings and above makes it readable.\n\nThe summary lists lines containing FATAL EXCEPTION or ANR in. A colour-coded HTML view is available.",
+ "howTo": [
+  "Run adb logcat -v threadtime > log.txt.",
+  "Paste or open the file.",
+  "Set a minimum priority and optional tag, PID or text.",
+  "Read the summary or open the coloured view."
+ ],
+ "faq": [
+  {
+   "q": "Which formats work?",
+   "a": "threadtime, time and brief. Formats with a UID column are not supported."
+  },
+  {
+   "q": "What are the priority letters?",
+   "a": "V verbose, D debug, I info, W warn, E error, F fatal, S silent."
+  },
+  {
+   "q": "How do I get a PID?",
+   "a": "adb shell pidof com.example.app."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "stacktrace-formatter",
+  "ios-crash-report-viewer",
+  "exception-grouper",
+  "log-level-histogram",
+  "ansi-log-color-renderer",
+  "log-grep-context"
+ ],
+ "keywords": [
+  "logcat viewer online",
+  "adb logcat filter",
+  "android crash log parser"
+ ]
+}

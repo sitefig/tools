@@ -1,0 +1,41 @@
+{
+ "id": "whatsapp-link-generator",
+ "seoTitle": "WhatsApp Click-to-Chat Link Generator (wa.me)",
+ "metaDescription": "Create wa.me links with a prefilled message from phone numbers. Cleans spaces, plus signs and (0). Free, private, in your browser.",
+ "intro": "Create wa.me links with a prefilled message from phone numbers in international format. Cleans spaces, plus signs and dashes.",
+ "why": "A wa.me link opens a chat with a number and can fill in a message. It needs the number in full international form, digits only. Spaces, plus signs, brackets and a leading zero break it.\n\nPaste numbers, one per line, and a message. The tool strips the extras, removes a (0) trunk digit, warns if no country code is visible or the length is unusual, and URL-encodes the message. The format is as commonly documented and was not opened here, so click one link to test.",
+ "howTo": [
+  "Paste the numbers with country code.",
+  "Type the prefilled message.",
+  "Check any review notes.",
+  "Copy the links."
+ ],
+ "faq": [
+  {
+   "q": "What format does the number need?",
+   "a": "Country code then number, digits only, no plus, zeros or brackets."
+  },
+  {
+   "q": "What if a number starts with 0?",
+   "a": "It is a local number. Replace the leading 0 with the country code."
+  },
+  {
+   "q": "Does it send messages?",
+   "a": "No. It only builds links."
+  }
+ ],
+ "related": [
+  "social-share-link-generator",
+  "email-validator",
+  "tax-id-checksum-validator",
+  "slug-generator",
+  "embed-consent-wrapper",
+  "email-signature-generator"
+ ],
+ "keywords": [
+  "whatsapp link generator",
+  "wa.me link",
+  "whatsapp click to chat",
+  "whatsapp prefilled message link"
+ ]
+}

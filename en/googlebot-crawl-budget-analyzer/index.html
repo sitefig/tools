@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Googlebot Crawl Budget Analyzer for Server Logs | Free Tools</title>
+<meta name="description" content="Paste access log lines and see how Googlebot spends its requests by site section, URL template, status code and day. Free and local.">
+<link rel="canonical" href="https://tools.sitefig.net/en/googlebot-crawl-budget-analyzer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/googlebot-crawl-budget-analyzer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/googlebot-crawl-budget-analyzer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Googlebot Crawl Budget Analyzer for Server Logs | Free Tools">
+<meta property="og:description" content="Paste access log lines and see how Googlebot spends its requests by site section, URL template, status code and day. Free and local.">
+<meta property="og:url" content="https://tools.sitefig.net/en/googlebot-crawl-budget-analyzer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Googlebot Crawl Budget Analyzer for Server Logs | Free Tools">
+<meta name="twitter:description" content="Paste access log lines and see how Googlebot spends its requests by site section, URL template, status code and day. Free and local.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Googlebot Crawl Budget Analyzer (Hits by Section, Template and Day)","url":"https://tools.sitefig.net/en/googlebot-crawl-budget-analyzer/","description":"Paste access log lines and see how Googlebot spends its requests by site section, URL template, status code and day. Free and local.","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Copy access log lines from your server, CDN or hosting panel.","Pick which bots to count, for example Google crawlers.","Choose how to group URLs: folder, two levels or template.","Read the share, unique URLs and status columns, then check the busiest groups first."],"keywords":"googlebot crawl budget log analysis, crawl stats by section, server log seo analyzer, googlebot hits per folder","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SEO – Technical","item":"https://tools.sitefig.net/en/#seo-technical"},{"@type":"ListItem","position":3,"name":"Googlebot Crawl Budget Analyzer (Hits by Section, Template and Day)","item":"https://tools.sitefig.net/en/googlebot-crawl-budget-analyzer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which log format does it read?","acceptedAnswer":{"@type":"Answer","text":"Apache and nginx combined format: IP, time in brackets, the quoted request, status, bytes, then the quoted referrer and user agent. Lines in another format are skipped and counted."}},{"@type":"Question","name":"Can I trust the bot names in the result?","acceptedAnswer":{"@type":"Answer","text":"Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."}},{"@type":"Question","name":"Does crawl budget matter for a small site?","acceptedAnswer":{"@type":"Answer","text":"Rarely. It matters for large sites, sites with many parameter URLs, and sites that publish a lot of pages quickly."}},{"@type":"Question","name":"Is my log uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#seo-technical">SEO – Technical</a></li><li><span aria-current="page">Googlebot Crawl Budget Analyzer (Hits by Section, Template and Day)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Googlebot Crawl Budget Analyzer (Hits by Section, Template and Day)</h1>
+<p class="lede">Counts crawler requests per site section or URL template, with unique URLs, hits per URL, status classes and a daily total.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="googlebot-crawl-budget-analyzer" data-module="new07"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Search Console shows totals. Your server log shows where each request went. If one folder takes a third of all crawler hits but holds a handful of useful pages, that is where crawl effort leaks.</p>
+<p>The tool groups paths by folder, by two folder levels, or by a URL template where numbers and slugs are folded together. A high hits-per-URL value means the same URLs are fetched again and again. The first and last day of a log are often partial, so read the daily table with that in mind.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Copy access log lines from your server, CDN or hosting panel.</li><li>Pick which bots to count, for example Google crawlers.</li><li>Choose how to group URLs: folder, two levels or template.</li><li>Read the share, unique URLs and status columns, then check the busiest groups first.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which log format does it read?</summary><p>Apache and nginx combined format: IP, time in brackets, the quoted request, status, bytes, then the quoted referrer and user agent. Lines in another format are skipped and counted.</p></details>
+<details><summary>Can I trust the bot names in the result?</summary><p>Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS.</p></details>
+<details><summary>Does crawl budget matter for a small site?</summary><p>Rarely. It matters for large sites, sites with many parameter URLs, and sites that publish a lot of pages quickly.</p></details>
+<details><summary>Is my log uploaded?</summary><p>No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/crawl-budget-waste-estimator/"><span class="link-card__title">Crawl Budget Waste Estimator</span><span class="link-card__desc">Estimate the share of crawler requests spent on parameter, facet and duplicate URLs, and how long a full crawl of your real pages takes.</span></a></li><li><a class="link-card" href="/en/wasted-crawl-detector/"><span class="link-card__title">Wasted Crawl Detector (Parameters, Facets, Redirects, Errors in Logs)</span><span class="link-card__desc">Group bot requests into likely waste: error pages, redirects, faceted and parameter URLs, tracking and session parameters, internal search and thin pages.</span></a></li><li><a class="link-card" href="/en/bot-status-code-report/"><span class="link-card__title">Bot Status Code Report (2xx, 3xx, 4xx, 5xx per Crawler)</span><span class="link-card__desc">Break down the HTTP status codes your server returned to each crawler, list exact codes and show the URLs behind most errors.</span></a></li><li><a class="link-card" href="/en/access-log-analyzer/"><span class="link-card__title">Web Server Access Log Analyzer: Status Codes, Top URLs, Bots</span><span class="link-card__desc">Paste Apache or nginx combined-format log lines to see status codes, top URLs, 404s, slowest-growing paths, search and AI crawler activity and bot hits by status. Local analysis.</span></a></li><li><a class="link-card" href="/en/ai-bot-access-log-analyzer/"><span class="link-card__title">AI Bot Access Log Analyzer (Hits per Crawler, Path and Status)</span><span class="link-card__desc">Paste Apache or Nginx access log lines and count hits per AI crawler, with top paths and status codes for each.</span></a></li><li><a class="link-card" href="/en/fake-googlebot-log-detector/"><span class="link-card__title">Fake Googlebot Detector for Access Logs</span><span class="link-card__desc">Find log lines that claim to be Googlebot, then flag the IPs that are outside Google's published ranges (paste the JSON) or list them for DNS checks.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

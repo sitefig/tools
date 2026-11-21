@@ -1,0 +1,44 @@
+{
+ "id": "landmark-region-outline",
+ "seoTitle": "Landmark Region Outline: banner, nav, main and footer Map",
+ "metaDescription": "Paste HTML and see its landmark regions as a nested outline with names, plus warnings for missing main, repeated unnamed navs and content outside landmarks.",
+ "intro": "Shows the landmark structure of a page as an outline with warnings.",
+ "why": "Screen reader users jump between landmarks. A clear structure helps everyone.\n\nThe tool applies the HTML rules (header and footer only count at page level, section and form need a name), shows each name, warns on a missing or repeated main, banner or contentinfo, repeated navs without distinct names, and counts text outside any landmark.",
+ "howTo": [
+  "Paste the page HTML.",
+  "Read the outline.",
+  "Fix missing or duplicate landmarks.",
+  "Add aria-label to repeated regions."
+ ],
+ "faq": [
+  {
+   "q": "Do I need a main?",
+   "a": "Yes, exactly one visible main."
+  },
+  {
+   "q": "Why must repeated navs have names?",
+   "a": "Otherwise users hear \"navigation\" twice with no way to tell them apart."
+  },
+  {
+   "q": "Is a skip link outside landmarks a problem?",
+   "a": "No, skip links are ignored."
+  },
+  {
+   "q": "Is the HTML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "heading-analyzer",
+  "a11y-html-check",
+  "aria-attribute-validator",
+  "screen-reader-text-preview",
+  "accessible-name-calculator",
+  "skip-link-generator"
+ ],
+ "keywords": [
+  "landmark checker",
+  "html landmarks outline",
+  "aria landmarks banner main nav"
+ ]
+}

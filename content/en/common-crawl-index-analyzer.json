@@ -1,0 +1,44 @@
+{
+ "id": "common-crawl-index-analyzer",
+ "seoTitle": "Common Crawl Index Result Analyzer",
+ "metaDescription": "Paste the JSON lines from the Common Crawl index API for your domain and see captures per crawl, status codes, MIME types and top URLs.",
+ "intro": "Summarises Common Crawl index output: captures by crawl, status, type and URL.",
+ "why": "Common Crawl is the open web archive behind many AI training sets. Its index API tells you which of your URLs were captured in each crawl.\n\nRun the query yourself (the page shows a sample command) and paste the JSON lines here. The tool counts captures per crawl, status codes, MIME types and the most captured URLs. Presence in the archive shows exposure to datasets built from it; it does not show who used them.",
+ "howTo": [
+  "Query the index API for your domain with output=json.",
+  "Paste the lines.",
+  "Read captures per crawl.",
+  "Block CCBot in robots.txt if you decide to."
+ ],
+ "faq": [
+  {
+   "q": "Can the page call the API?",
+   "a": "No. It makes no network requests."
+  },
+  {
+   "q": "Does a capture mean a model was trained on it?",
+   "a": "No, only that the page is in the dataset."
+  },
+  {
+   "q": "What does blocking CCBot do?",
+   "a": "It asks the crawler not to capture future pages; it does not remove old captures."
+  },
+  {
+   "q": "Which fields are needed?",
+   "a": "url, status, mime and filename."
+  }
+ ],
+ "related": [
+  "ai-bot-robots-builder",
+  "ai-crawler-user-agent-directory",
+  "ai-bot-robots-txt-audit",
+  "robots-txt-viewer",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "common crawl index",
+  "is my site in common crawl",
+  "ccbot exposure",
+  "common crawl captures"
+ ]
+}

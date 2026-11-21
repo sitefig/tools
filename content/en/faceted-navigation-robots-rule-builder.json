@@ -1,0 +1,44 @@
+{
+ "id": "faceted-navigation-robots-rule-builder",
+ "seoTitle": "Faceted Navigation robots.txt Rule Builder",
+ "metaDescription": "Generate robots.txt Disallow rules for filter, sort and tracking parameters, or block all parameters except a few. Free, in your browser.",
+ "intro": "Builds the wildcard rules that keep crawlers out of faceted URLs, and tests sample URLs against them.",
+ "why": "Filters such as ?color=red&size=m create endless URL combinations. Blocking the parameters in robots.txt saves crawl effort, but the patterns must cover both ?param= and &param=, and a careless pattern blocks pagination.\n\nList the parameters to block, or block everything and keep a few, and get the rules plus a test on sample URLs. Remember robots.txt stops crawling, not indexing; canonical tags are the safer consolidation tool.",
+ "howTo": [
+  "List parameters to block, one per line.",
+  "Choose block listed or block all except the kept ones.",
+  "Optionally limit to a folder.",
+  "Test your real URLs with the robots.txt tester."
+ ],
+ "faq": [
+  {
+   "q": "Why two rules per parameter?",
+   "a": "A parameter can follow ? or &, so both are covered."
+  },
+  {
+   "q": "Will blocked URLs leave the index?",
+   "a": "Not necessarily. Linked blocked URLs can stay indexed without content."
+  },
+  {
+   "q": "Is canonical better?",
+   "a": "Often yes, because crawlers can read it. Blocked pages cannot show it."
+  },
+  {
+   "q": "What about pagination?",
+   "a": "Keep it crawlable using the kept parameters option."
+  }
+ ],
+ "related": [
+  "robots-tester",
+  "url-parameter-analyzer",
+  "crawl-budget-waste-estimator",
+  "robots-generator",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "faceted navigation robots.txt",
+  "block parameters robots.txt",
+  "robots.txt filter urls",
+  "ecommerce robots.txt facets"
+ ]
+}

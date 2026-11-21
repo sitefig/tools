@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-minifier",
+ "seoTitle": "robots.txt Minifier: Remove Comments and Duplicates",
+ "metaDescription": "Shrink a robots.txt without changing what crawlers do: strip comments and blank lines, drop duplicate rules, merge identical groups. Free.",
+ "intro": "Produces a compact robots.txt that behaves the same: no comments, no blank lines, no duplicate rules and merged groups.",
+ "why": "If your robots.txt is approaching the size limit or you serve it at scale, comments and repeated rules are dead weight. Rewriting by hand risks changing behaviour.\n\nThe minifier removes only what is safe: comments, blank lines, exact duplicate rules, and merges groups with identical user-agent sets. It deliberately keeps rules that look redundant, because their effect can depend on Allow rules. It shows the bytes saved.",
+ "howTo": [
+  "Paste the robots.txt.",
+  "Copy the compact output.",
+  "Check the bytes saved.",
+  "Test key URLs on the new file before publishing."
+ ],
+ "faq": [
+  {
+   "q": "Is the result equivalent?",
+   "a": "Yes for groups, rules and sitemaps. The tool does not remove rules that merely seem redundant."
+  },
+  {
+   "q": "Are comments lost?",
+   "a": "Yes. Keep a commented source copy elsewhere."
+  },
+  {
+   "q": "Why is a blank Disallow added?",
+   "a": "An empty group would otherwise merge into the next one, so an empty Disallow keeps it separate."
+  },
+  {
+   "q": "Is minifying needed?",
+   "a": "Rarely. It matters near the size limit."
+  }
+ ],
+ "related": [
+  "robots-txt-size-checker",
+  "robots-txt-formatter",
+  "robots-txt-validator",
+  "robots-group-merger",
+  "robots-tester"
+ ],
+ "keywords": [
+  "robots.txt minifier",
+  "compress robots.txt",
+  "minify robots.txt",
+  "shorten robots.txt"
+ ]
+}

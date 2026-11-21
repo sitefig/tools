@@ -1,0 +1,46 @@
+{
+  "id": "tokenizer-visualizer-hf",
+  "seoTitle": "Free Tokenizer Visualizer: DeepSeek, Qwen, Mistral",
+  "metaDescription": "Pick DeepSeek, Qwen, Phi-4, Mistral, StarCoder2, GPT-2 or OpenAI encodings and see text as coloured tokens with ids and bytes. Free, in your browser.",
+  "intro": "Shows your text split into coloured tokens for a chosen encoding, with a table of ids and bytes. Choices include DeepSeek, Qwen, Phi-4, Mistral, StarCoder2, GPT-NeoX and the OpenAI encodings.",
+  "why": "When you work with an open-weight model you often need to see its tokenizer in action. Why does an indented block of code create so many tokens, how does the model split a Chinese phrase, and what happens to a trailing space? The model card rarely tells you.\n\nSelect an encoding and paste your text. Each token is coloured, optionally labelled with its id, and listed in a table with its byte values, plus summary figures for tokens, characters and bytes. The vocabularies are re-implemented here from the public tokenizer files and loaded from this site when first used, then everything runs in your browser. Gemini, Llama and Gemma tokenizers are not included, and the Claude option is a legacy tokenizer that does not match current Claude models.",
+  "howTo": [
+    "Pick an encoding from the list.",
+    "Paste or type your text, and choose plain or allow for special tokens.",
+    "Tick Show token ids if you want the ids printed in the coloured view.",
+    "Study the coloured tokens and the table of ids and bytes."
+  ],
+  "faq": [
+    {
+      "q": "Are these exact tokenizers?",
+      "a": "They are reimplementations of the public tokenizer definitions for the listed models and give the same splits as the originals in normal use. Very rare characters added in recent Unicode versions can differ slightly."
+    },
+    {
+      "q": "Which encodings are missing?",
+      "a": "Llama, Gemma and Gemini are gated or unpublished. Falcon, Phi-3-mini and Qwen3 use features that are not implemented. Claude 3 and later have no public vocabulary."
+    },
+    {
+      "q": "What does the table show?",
+      "a": "For each token: its position, id, the text it stands for, and its bytes in hex. Tokens that are only part of a multi-byte character are shown with escaped bytes instead of text."
+    },
+    {
+      "q": "Is my text uploaded?",
+      "a": "No. Only the static vocabulary file is fetched from this same site, once per encoding. The splitting itself happens in your browser."
+    }
+  ],
+  "related": [
+    "multi-tokenizer-counter",
+    "tiktoken-visualizer",
+    "token-ids-to-text-multi",
+    "gpt-token-counter",
+    "text-chunk-splitter",
+    "llm-token-estimator"
+  ],
+  "keywords": [
+    "tokenizer visualizer",
+    "deepseek tokenizer online",
+    "qwen tokenizer visualizer",
+    "mistral tokenizer online",
+    "free bpe tokenizer viewer"
+  ]
+}

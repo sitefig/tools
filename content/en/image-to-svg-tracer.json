@@ -1,0 +1,51 @@
+{
+ "id": "image-to-svg-tracer",
+ "seoTitle": "Image to SVG Converter: Trace PNG or JPG to Vector Online",
+ "metaDescription": "Turn a logo, icon or flat artwork into a layered SVG: colour reduction, speck removal, hole-aware outline tracing and curve smoothing, all in your browser. Free, no upload.",
+ "intro": "Drop in a PNG, JPG or WebP and get an SVG made of stacked colour shapes you can scale, recolour and edit.",
+ "why": "The tracer reduces the image to a small palette (median cut refined by k-means, with anti-aliased edge pixels ignored when the palette is chosen), removes tiny islands, then follows the exact pixel boundary of each colour including holes. The staircase outline is smoothed with a short filter that keeps real corners, simplified with the Douglas-Peucker algorithm and written as straight segments or quadratic curves. Layers are stacked, each colour also covering the ones drawn above it, so no hairline gaps show between neighbours.\n\nWith simplification set to 0 the SVG reproduces the quantised bitmap pixel for pixel; this was checked by rendering the SVG with cairosvg (0.00 percent mismatch). With simplification the only differences are along edges, about 1 to 2 percent of pixels on a test logo.\n\nIt is for flat artwork. A photograph becomes colour bands, not a faithful vector. It does not fit optimal Bezier curves like Potrace, so diagonal and round edges can look slightly lumpy at high zoom, and thin strokes under about 2 pixels can erode. Images are traced at no more than 1000 pixels on the long side. Everything runs in your browser.",
+ "howTo": [
+  "Choose an image file.",
+  "Pick colour layers (try 8) or black and white for a silhouette.",
+  "Raise the simplification for fewer points, or set it to 0 for exact pixel edges.",
+  "Download the SVG and open it in a vector editor to refine it."
+ ],
+ "faq": [
+  {
+   "q": "Can it convert a photo to SVG?",
+   "a": "It will produce a posterised version with a few flat colours. That can look striking, but it is not a faithful vector copy of a photo."
+  },
+  {
+   "q": "How many colours should I use?",
+   "a": "Logos and icons usually need 2 to 8. If a small dark detail such as text turns into a neighbouring colour, add colours."
+  },
+  {
+   "q": "Why are curves not as smooth as Potrace?",
+   "a": "Outlines are smoothed by filtering and midpoint curves rather than optimal curve fitting. For print-quality tracing of a black and white logo, run a larger source image or refine the result in a vector editor."
+  },
+  {
+   "q": "Does it keep transparency?",
+   "a": "Fully transparent areas (alpha below 50 percent) stay empty; partly transparent edge pixels are treated as opaque or empty."
+  },
+  {
+   "q": "Is my image uploaded?",
+   "a": "No. It is decoded and traced locally in your browser."
+  }
+ ],
+ "related": [
+  "svg-optimizer",
+  "svg-preview-editor",
+  "svg-to-png",
+  "image-format-converter",
+  "image-resizer",
+  "color-picker-from-image"
+ ],
+ "keywords": [
+  "image to svg",
+  "png to svg",
+  "vectorize image",
+  "trace bitmap online",
+  "jpg to svg converter",
+  "posterize image"
+ ]
+}

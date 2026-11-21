@@ -1,0 +1,45 @@
+{
+ "id": "cookie-classifier",
+ "seoTitle": "Cookie Classifier: Necessary, Analytics or Marketing?",
+ "metaDescription": "Paste cookie names and sort them into necessary, functional, analytics and marketing from a built-in list. Free, runs in your browser, nothing sent.",
+ "intro": "Sorts cookie names into necessary, functional, analytics and marketing, names the likely vendor and says whether consent is usually needed.",
+ "why": "A cookie policy and a consent banner both start with the same question: which category is each cookie in? Doing it by hand from a browser cookie list is slow, and many names such as _ga or _fbp are well known.\n\nThis tool matches names against a built-in list of common cookies and marks everything else as unknown. It matches names only. A site can reuse any name, and regulators disagree on some analytics cookies, so treat the result as a first draft and check each cookie against the script that sets it.",
+ "howTo": [
+  "Copy cookie names from your browser dev tools, or paste a Cookie or Set-Cookie header.",
+  "Run the tool and read the category, vendor and consent note for each name.",
+  "Look at the unknown names and trace them to the script that sets them.",
+  "Use the result as input for your cookie banner and policy."
+ ],
+ "faq": [
+  {
+   "q": "Does it read my cookies?",
+   "a": "No. It only reads the names you paste. Nothing is uploaded."
+  },
+  {
+   "q": "Why is a cookie marked Unknown?",
+   "a": "The name is not in the built-in list. It may be a custom cookie or from a small vendor. Check the vendor documentation."
+  },
+  {
+   "q": "Is analytics always consent-exempt?",
+   "a": "No. Some regulators, for example the French CNIL, allow narrow first-party audience measurement without consent. Most Google Analytics setups need consent."
+  },
+  {
+   "q": "Is this legal advice?",
+   "a": "No. It is a name-based heuristic."
+  }
+ ],
+ "related": [
+  "cookie-flag-analyzer",
+  "cookie-table-builder",
+  "cookie-policy-generator",
+  "cookie-banner-generator",
+  "har-analyzer",
+  "cookie-expiry-auditor"
+ ],
+ "keywords": [
+  "cookie classifier",
+  "classify cookies",
+  "cookie categories",
+  "necessary analytics marketing cookies"
+ ]
+}

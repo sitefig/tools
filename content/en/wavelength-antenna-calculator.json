@@ -1,0 +1,45 @@
+{
+  "id": "wavelength-antenna-calculator",
+  "seoTitle": "Wavelength & Antenna Length Calculator (Dipole, Quarter-Wave)",
+  "metaDescription": "Convert frequency to wavelength and get half-wave dipole, quarter-wave and full-wave antenna lengths with a velocity factor, in metres, feet and inches.",
+  "intro": "Cut an antenna to length for a radio band from its frequency.",
+  "why": "Wavelength is the speed of light divided by frequency. The page lists free-space wavelength and, with your velocity factor (0.95 for bare wire, around 0.66 for coax), the full, half, quarter and 5/8 wave lengths in metres, feet and inches, plus the common 468/f(MHz) feet shortcut for a half-wave dipole.\n\nReal antennas need trimming for height, nearby objects and conductor thickness; use an antenna analyser or SWR meter to tune.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the frequency and unit.",
+    "Set the velocity factor.",
+    "Read the lengths.",
+    "Cut slightly long and trim for the lowest SWR."
+  ],
+  "faq": [
+    {
+      "q": "What is velocity factor?",
+      "a": "The speed of the signal in the conductor relative to light; it shortens the physical length."
+    },
+    {
+      "q": "Why 468?",
+      "a": "An empirical constant for a half-wave dipole that includes the end effect."
+    },
+    {
+      "q": "Does it design the matching network?",
+      "a": "No."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "uart-baud-calculator",
+    "pwm-calculator",
+    "resistor-color-code-calculator",
+    "unit-converter",
+    "battery-life-estimator",
+    "audio-db-converter"
+  ],
+  "keywords": [
+    "antenna length calculator",
+    "wavelength calculator",
+    "dipole length",
+    "quarter wave antenna"
+  ]
+}

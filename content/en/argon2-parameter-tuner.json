@@ -1,0 +1,43 @@
+{
+ "id": "argon2-parameter-tuner",
+ "seoTitle": "Free Argon2id Parameter Tuner and Calculator",
+ "metaDescription": "Choose Argon2id memory, iterations and parallelism for a target hashing time and memory budget. A calculator, not a benchmark. Free.",
+ "intro": "Enter a target time per hash, a memory budget and your core count, and get suggested Argon2id memory, iterations and parallelism. It is a calculator and does not run Argon2 itself.",
+ "why": "Argon2 is only as strong as its settings. Too little memory and an attacker with GPUs can try passwords quickly; too much and a burst of logins exhausts your server. Guidance such as the OWASP recommendations gives starting points, but the right numbers depend on your hardware and how many people sign in at once.\n\nThis tuner turns your constraints into parameters. You say how long a hash may take, how much memory one hash may use, how many cores you have and how many concurrent logins you must survive. You supply a measured throughput figure from your own stack, because this page cannot benchmark your server. Treat the result as a starting point and test it under load.",
+ "howTo": [
+  "Enter the target time per hash in milliseconds and the memory budget in MiB.",
+  "Set the parallelism and the number of CPU cores available for each hash.",
+  "Enter the throughput you measured by timing one hash in your own stack, and the number of concurrent logins to support.",
+  "Read the suggested iterations and memory use, then test them on your real server."
+ ],
+ "faq": [
+  {
+   "q": "Does this tool run Argon2?",
+   "a": "No. It only calculates. The throughput value you enter stands in for your hardware, so measure one hash in your own language and server, then use that figure to calibrate the suggestions."
+  },
+  {
+   "q": "Why Argon2id?",
+   "a": "Argon2id mixes data-dependent and data-independent memory access, which resists both GPU cracking and side-channel attacks. It is the variant most guidance recommends for password hashing."
+  },
+  {
+   "q": "What does the concurrent logins setting do?",
+   "a": "It multiplies the memory per hash by the number of simultaneous sign-ins, so you can see whether a login spike would exceed your server's memory. Lower the memory cost or rate-limit logins if it would."
+  }
+ ],
+ "related": [
+  "argon2-hash",
+  "argon2-verify",
+  "scrypt-kdf",
+  "bcrypt-generator",
+  "pbkdf2-key-derivation",
+  "password-strength"
+ ],
+ "keywords": [
+  "argon2 parameters calculator",
+  "argon2id memory iterations",
+  "argon2 tuning",
+  "argon2id recommended settings",
+  "password hashing parameters",
+  "free argon2 tool"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "go-struct-to-typescript",
+ "seoTitle": "Free Go Struct to TypeScript Interface Converter",
+ "metaDescription": "Convert Go structs to TypeScript interfaces using json tags, omitempty, pointers, slices, maps, time.Time and embedded structs. Runs in your browser.",
+ "intro": "Paste Go struct definitions and get TypeScript interfaces that follow the json tags: omitempty makes a property optional, pointers become | null, slices become arrays and embedded structs become extends.",
+ "why": "A Go API returns JSON shaped by struct tags, and the TypeScript client has to model the same names and optionality. Reading the tags and translating by hand is where mistakes creep in.\n\nThe converter follows what encoding/json does: it uses the tag name (or the field name when there is none), drops json:\"-\" and unexported fields, treats omitempty as optional, pointers as nullable, []byte as a base64 string and time.Time as a string, and inlines embedded structs through extends. Constant groups of typed strings or iota values become unions or enums. The result was type-checked with tsc against JSON produced by a real Go program. Everything runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your Go type declarations. Package and import lines can stay.",
+  "Choose how constants, time.Time and nil slices are mapped.",
+  "Copy the TypeScript into your front end project."
+ ],
+ "faq": [
+  {
+   "q": "What does it not see?",
+   "a": "Custom MarshalJSON methods, build tags, types from other packages (which become unknown with a comment) and generic constraints. It reads declarations only and never runs Go."
+  },
+  {
+   "q": "Why is int64 a number?",
+   "a": "JSON.parse returns a JavaScript number, which is exact only up to 2^53. Fields tagged with ,string become string. For larger values handle the field by hand."
+  },
+  {
+   "q": "What about nil slices?",
+   "a": "A nil slice without omitempty marshals as null. Turn on the nil slices option to type those fields as T[] | null."
+  },
+  {
+   "q": "How are embedded structs handled?",
+   "a": "An embedded struct without a json tag has its fields promoted into the parent in JSON, so the interface extends it. With a tag name it becomes an ordinary property."
+  }
+ ],
+ "related": [
+  "typescript-to-go-struct",
+  "json-to-go",
+  "python-to-typescript",
+  "json-to-typescript",
+  "json-schema-to-typescript",
+  "sql-to-go-gorm"
+ ],
+ "keywords": [
+  "go to typescript",
+  "golang struct to typescript",
+  "go struct to ts interface",
+  "json tags to typescript"
+ ]
+}

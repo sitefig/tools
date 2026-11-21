@@ -1,0 +1,45 @@
+{
+  "id": "seo-html-compare",
+  "seoTitle": "SEO HTML Compare: Titles, Meta, Headings Side by Side",
+  "metaDescription": "Paste the HTML of two pages and compare title, description, canonical, robots, headings, links, images and schema. Great for migrations and competitor checks.",
+  "intro": "Compare the SEO-relevant parts of two page sources, such as staging versus live or your page versus a competitor's, and see every difference highlighted.",
+  "why": "The tool extracts the title, meta description and robots, canonical, viewport and language, H1 text, heading and word counts, image and alt counts, link and nofollow counts, Open Graph and Twitter tags, hreflang and JSON-LD types from each document and prints them side by side with a mark where they differ. A short list of risky changes (new noindex, changed canonical or H1) appears at the end.\n\nIt reads the HTML you paste, not the rendered page, so content added by JavaScript is not seen. Use view-source or \"Copy outerHTML\" from the dev tools.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Copy the HTML source of page A (before or yours) and paste it in the first box.",
+    "Copy page B (after or competitor) into the second.",
+    "Run the comparison and check each marked row.",
+    "Fix unintended changes before launching a migration."
+  ],
+  "faq": [
+    {
+      "q": "Can it fetch the pages for me?",
+      "a": "No. A web page cannot read other sites, so you paste the source. A browser extension version could supply it automatically."
+    },
+    {
+      "q": "Does it render JavaScript?",
+      "a": "No. It parses the source as given."
+    },
+    {
+      "q": "What does the warnings line show?",
+      "a": "Only high-risk differences: a new noindex, a different canonical or a changed H1."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "seo-inspector",
+    "meta-analyzer",
+    "jsonld-inspector",
+    "heading-analyzer",
+    "internal-link-extractor",
+    "text-diff"
+  ],
+  "keywords": [
+    "seo compare",
+    "compare two pages seo",
+    "migration check",
+    "meta tag diff"
+  ]
+}

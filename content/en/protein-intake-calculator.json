@@ -1,0 +1,45 @@
+{
+ "id": "protein-intake-calculator",
+ "seoTitle": "Protein Intake Calculator (Daily Grams by Goal)",
+ "metaDescription": "Get a daily protein range in grams from your body weight and training goal, using the ISSN position stand ranges for exercisers, plus a split across meals.",
+ "intro": "Get a daily protein range in grams from your weight and training goal.",
+ "why": "Pick your body weight and a goal. The ranges come from the ISSN position stand on protein and exercise: 1.4 to 2.0 g per kg for most exercisers, lower for endurance work and higher for strength work, and 2.3 to 3.1 g per kg when lifting while cutting calories. The page also splits the total across your meals.\n\nThe 0.8 g per kg line is the commonly quoted adult RDA for people who do not train. Check the figure for your country. People with kidney disease should ask a doctor before raising protein.",
+ "howTo": [
+  "Choose kg or lb and enter your body weight.",
+  "Pick the goal that fits your training.",
+  "Set how many meals you eat a day.",
+  "Read the daily range and the grams per meal."
+ ],
+ "faq": [
+  {
+   "q": "Do I use total body weight?",
+   "a": "Most guidance uses actual body weight. People with a lot of excess weight sometimes use a target weight instead; a dietitian can advise."
+  },
+  {
+   "q": "Is more protein always better?",
+   "a": "No. Gains flatten out within the ranges shown. Extra protein mostly adds calories."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "macro-calculator",
+  "bmr-tdee",
+  "calorie-deficit-calculator",
+  "one-rep-max-calculator",
+  "water-intake",
+  "lean-body-mass-calculator"
+ ],
+ "keywords": [
+  "protein intake calculator",
+  "how much protein per day",
+  "protein for muscle gain",
+  "ISSN protein"
+ ]
+}

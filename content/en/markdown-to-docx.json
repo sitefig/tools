@@ -1,0 +1,45 @@
+{
+  "id": "markdown-to-docx",
+  "seoTitle": "Markdown to Word (.docx) Converter",
+  "metaDescription": "Turn Markdown into a real .docx: headings, bold, italic, code, links, nested lists, quotes, code blocks and tables. Opens in Word, LibreOffice and Google Docs.",
+  "intro": "Convert Markdown notes or documentation into a Word file without Pandoc.",
+  "why": "The converter builds the Office Open XML package itself: styles for Heading 1 to 6, quote and code paragraphs, a numbering definition for bullets and numbered lists with nesting, hyperlinks, tables with borders and a bold header row, and document properties. The result was opened with python-docx and converted to PDF with LibreOffice during testing.\n\nImages, footnotes, task-list checkboxes and fancy typography are not converted, and styling is basic. For publishing-quality output use Pandoc with a reference document.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Paste Markdown.",
+    "Set a document title.",
+    "Download document.docx.",
+    "Open it and adjust fonts or styles as needed."
+  ],
+  "faq": [
+    {
+      "q": "Which Markdown features are supported?",
+      "a": "Headings, paragraphs, bold, italic, strikethrough, inline code, links, nested lists, quotes, fenced code, tables and rules."
+    },
+    {
+      "q": "Are images included?",
+      "a": "No."
+    },
+    {
+      "q": "Does Word complain when opening it?",
+      "a": "The package follows the standard structure and opened in LibreOffice and python-docx; if Word reports a problem, tell us which Markdown triggered it."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "markdown-to-pdf",
+    "markdown-to-html",
+    "markdown-to-plain-text",
+    "docx-to-html",
+    "markdown-preview",
+    "text-to-pdf"
+  ],
+  "keywords": [
+    "markdown to docx",
+    "markdown to word",
+    "md to docx",
+    "convert markdown document"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "pdf-flattener",
+ "seoTitle": "PDF Flattener: Burn In Comments and Form Fields",
+ "metaDescription": "Flatten PDF annotations and filled form fields into the page so they cannot be edited or hidden. Keeps links if you want. Private, in-browser.",
+ "intro": "Draws the appearance of every comment, highlight, stamp and form field into the page content and removes the editable objects.",
+ "why": "A filled form or a reviewed document still carries separate annotation objects that a recipient can change, hide or delete. Flattening turns them into ordinary page content, so what you see is what everyone gets. It also fixes viewers that do not draw annotations on print.\n\nThe tool uses the appearance streams already stored in the file and places them exactly as a viewer would; on a test file the flattened page rendered pixel for pixel like the original with annotations. Fields with no stored appearance cannot be drawn and are reported. Links can be kept. The form itself is removed, so fields are no longer fillable.",
+ "howTo": [
+  "Choose a PDF with comments or filled form fields.",
+  "Keep \"keep clickable links\" ticked if you want to retain links.",
+  "Press Run.",
+  "Download the flattened PDF."
+ ],
+ "faq": [
+  {
+   "q": "Is flattening reversible?",
+   "a": "No. Keep the original if you may need to edit the annotations later."
+  },
+  {
+   "q": "Why were some fields removed?",
+   "a": "They had no appearance stream, which happens when a program relies on the viewer to draw them. Open the file in the form filler first and save with values."
+  },
+  {
+   "q": "Does it make the text unselectable?",
+   "a": "No. Page text stays text; flattened annotation text depends on how it was drawn."
+  },
+  {
+   "q": "What about hidden annotations?",
+   "a": "Annotations marked hidden are removed rather than drawn."
+  }
+ ],
+ "related": [
+  "pdf-form-filler",
+  "pdf-annotate",
+  "pdf-redact",
+  "pdf-compress",
+  "pdf-password-protect",
+  "pdf-grayscale"
+ ],
+ "keywords": [
+  "flatten pdf",
+  "flatten pdf form fields",
+  "merge annotations into pdf",
+  "make pdf uneditable"
+ ]
+}

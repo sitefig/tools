@@ -1,0 +1,44 @@
+{
+ "id": "sankey-diagram-builder",
+ "seoTitle": "Sankey Diagram Maker from Source, Target, Amount",
+ "metaDescription": "Enter flows as source, target and amount rows to draw a Sankey diagram with band widths that match the amounts. Free SVG, no signup.",
+ "intro": "Draws a Sankey diagram from rows of source, target and amount. Bands are as wide as the flow, nodes are as tall as the larger of what comes in or goes out.",
+ "why": "Sankey diagrams show where a total goes: budgets, energy, traffic sources, user journeys. Paste the flows and the layout is automatic, with columns assigned by path length from the sources.\n\nFlows must not loop back, since a Sankey needs a direction; cycles are reported. If a node receives more than it sends the difference shows as a taller node, which is also useful for spotting leaks. Dense diagrams with many crossing bands are better simplified first.",
+ "howTo": [
+  "Type one flow per line: source, target, amount.",
+  "Add a title and a unit text.",
+  "Check the table below the diagram against your input.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "What if my flows form a cycle?",
+   "a": "You get an error naming the problem. Break the cycle or split the node."
+  },
+  {
+   "q": "Are node colours meaningful?",
+   "a": "They only help tell nodes apart."
+  },
+  {
+   "q": "How many flows?",
+   "a": "Up to 300."
+  },
+  {
+   "q": "Can nodes be dragged?",
+   "a": "No. The layout is automatic; edit the input order to influence it."
+  }
+ ],
+ "related": [
+  "treemap-maker",
+  "conversion-funnel-visualizer",
+  "pie-donut-chart-maker",
+  "flowchart-maker",
+  "network-graph-visualizer",
+  "bar-chart-maker"
+ ],
+ "keywords": [
+  "sankey diagram maker",
+  "budget flow diagram",
+  "sankey chart online"
+ ]
+}

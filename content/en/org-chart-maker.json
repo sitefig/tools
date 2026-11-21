@@ -1,0 +1,44 @@
+{
+ "id": "org-chart-maker",
+ "seoTitle": "Org Chart Maker from a CSV of Names and Managers",
+ "metaDescription": "Make a top-down organisation chart from rows of name, manager and title. Loops and unknown managers are reported. Free SVG, private.",
+ "intro": "Reads people and their managers and draws the reporting tree with names and titles, with a table of levels.",
+ "why": "Most HR exports are already a list of people with a manager column. Paste it and get the chart without redrawing boxes.\n\nSeveral people without a manager become several roots side by side. A manager who is not in the list, a duplicate name or a reporting loop produces a clear error naming the person, which also makes it a quick data check before you import the file elsewhere.",
+ "howTo": [
+  "Paste rows: name, manager, title (header optional).",
+  "Leave the manager empty for the top person.",
+  "Fix any named error and run again.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Can there be several top people?",
+   "a": "Yes, each starts its own tree."
+  },
+  {
+   "q": "What if two people share a name?",
+   "a": "Make names unique, for example by adding an initial."
+  },
+  {
+   "q": "Is the chart wide for big teams?",
+   "a": "Yes. Width grows with the number of people at the bottom level."
+  },
+  {
+   "q": "Is the data private?",
+   "a": "Yes, it never leaves the page."
+  }
+ ],
+ "related": [
+  "flowchart-maker",
+  "mind-map-svg-builder",
+  "csv-viewer",
+  "ascii-tree-generator",
+  "network-graph-visualizer",
+  "treemap-maker"
+ ],
+ "keywords": [
+  "org chart maker",
+  "organization chart from csv",
+  "reporting structure diagram"
+ ]
+}

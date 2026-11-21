@@ -1,0 +1,47 @@
+{
+ "id": "json-to-xml",
+ "seoTitle": "Free JSON to XML Converter Online",
+ "metaDescription": "Free online JSON to XML converter. Keys starting with @ become attributes, #text becomes text content. Set the root element and indent. Runs locally.",
+ "intro": "Convert JSON into XML with a declaration, a root element of your choice and tidy indentation. Keys beginning with @ become attributes and #text becomes the element text.",
+ "why": "Plenty of older systems, SOAP services and feed formats still want XML, while your data starts life as JSON. Writing the conversion by hand means deciding how to treat attributes, arrays and special characters, and that is where mistakes creep in.\n\nHere the rules are simple and visible. A key such as @id becomes an attribute, #text holds the text of an element that also has attributes, arrays repeat the element once per item, and null becomes an empty element. Special characters like & and < are escaped for you, and awkward key names are made into legal XML names. Choose the root element name and indent, then copy the result. The conversion runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your JSON into the input box.",
+  "Enter the name of the root element, for example root or catalog.",
+  "Choose the indent size, or tab.",
+  "Copy the XML, including its declaration line."
+ ],
+ "faq": [
+  {
+   "q": "How do I create XML attributes?",
+   "a": "Prefix the key with @. For example {\"book\":{\"@id\":\"42\",\"title\":\"Dune\"}} gives a book element with an id attribute. Use #text for text content when an element also has attributes."
+  },
+  {
+   "q": "How are arrays written?",
+   "a": "Each array item becomes a repeated element with the same name as the array key. A top-level array is wrapped in item elements inside the root element."
+  },
+  {
+   "q": "What happens to null and special characters?",
+   "a": "A null value becomes an empty self-closing element. The characters &, < and > are escaped in text, and quotes are escaped in attributes. Invalid characters in key names are replaced with underscores."
+  },
+  {
+   "q": "Can I convert the XML back to JSON?",
+   "a": "Yes, with the XML to JSON tool. Its attribute prefix defaults to @, matching this tool, so simple documents round-trip."
+  }
+ ],
+ "related": [
+  "xml-to-json",
+  "xml-format",
+  "json-format",
+  "json-to-yaml",
+  "xml-validate",
+  "xpath-tester"
+ ],
+ "keywords": [
+  "json to xml converter",
+  "convert json to xml online",
+  "json to xml free",
+  "json xml attributes",
+  "online json xml tool",
+  "json to xml with attributes"
+ ]
+}

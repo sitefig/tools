@@ -1,0 +1,47 @@
+{
+ "id": "json-to-typescript",
+ "seoTitle": "Free JSON to TypeScript Interface Generator",
+ "metaDescription": "Free online JSON to TypeScript generator. Create interfaces or types from a JSON sample, with array merging and optional keys. Runs in your browser.",
+ "intro": "Generate TypeScript interfaces or type aliases from a JSON sample. Array items are merged into one shape, and keys missing from some items become optional.",
+ "why": "When you start using a new API, the quickest way to understand it is to look at a real response, but typing that response out as interfaces is dull and error-prone. Doing it by hand also means you have to notice which fields appear only sometimes.\n\nPaste a sample and the tool infers a type for each value, names nested objects from their keys, and merges all items in an array into one type. If one order has a gift field and another does not, gift is marked optional. You can choose interface or type, and set the root name. The result is a starting point from a single sample, so review it against your API documentation. Nothing is uploaded; inference runs locally.",
+ "howTo": [
+  "Paste a representative JSON sample into the input box.",
+  "Enter a root name such as User or ApiResponse.",
+  "Choose interface or type, and keep Mark missing keys optional ticked if you want that.",
+  "Copy the generated declarations into your project."
+ ],
+ "faq": [
+  {
+   "q": "How does it decide a field is optional?",
+   "a": "When you merge array items and a key is present in some but not all, it is marked optional with a question mark. A single object has no such information, so all its keys are required."
+  },
+  {
+   "q": "What happens with null values?",
+   "a": "A null in the sample becomes the type null. If the same field is a string elsewhere in an array, it becomes string | null. Check these against what your API really allows."
+  },
+  {
+   "q": "Is one sample enough?",
+   "a": "It is enough for a first draft, but types come from only what the sample shows. Rare fields, other number formats and extra variants will be missed, so use several items or the API schema when possible."
+  },
+  {
+   "q": "How are awkward key names handled?",
+   "a": "Keys that are not valid identifiers, such as my-key, are quoted in the output. Nested object type names are built from the key in PascalCase and made unique."
+  }
+ ],
+ "related": [
+  "json-to-zod",
+  "json-to-go",
+  "json-schema-generator",
+  "typescript-to-json-schema",
+  "json-to-typescript-type-guards",
+  "json-to-pydantic"
+ ],
+ "keywords": [
+  "json to typescript",
+  "json to typescript interface",
+  "convert json to ts types",
+  "free json to typescript generator",
+  "typescript interface from json",
+  "json to ts online"
+ ]
+}

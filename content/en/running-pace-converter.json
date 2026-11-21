@@ -1,0 +1,39 @@
+{
+ "id": "running-pace-converter",
+ "seoTitle": "Running Pace Converter: Min/km, Min/Mile, km/h, mph",
+ "metaDescription": "Convert running pace between min per km, min per mile, km/h and mph, with 5K, 10K and marathon finish times.",
+ "intro": "Converts pace or speed between minutes per kilometre, minutes per mile, km/h and mph and predicts finish times at an even pace.",
+ "why": "Races use kilometres in one country and miles in another. A pace of 5:30 per km is 8:51 per mile, 10.9 km/h.\n\nEnter a pace like 5:30 or a speed and see all forms plus finish times for a mile, 5K, 10K, half marathon and marathon. The times assume the same pace throughout.",
+ "howTo": [
+  "Enter a pace (5:30) or a speed.",
+  "Choose the unit.",
+  "Read the converted values and finish times."
+ ],
+ "faq": [
+  {
+   "q": "What is a 4 hour marathon pace?",
+   "a": "About 5:41 per km or 9:09 per mile."
+  },
+  {
+   "q": "Does it adjust for hills?",
+   "a": "No. It is straight arithmetic."
+  },
+  {
+   "q": "Which mile?",
+   "a": "The international mile, 1.609344 km."
+  }
+ ],
+ "related": [
+  "unit-converter",
+  "fuel-economy-converter",
+  "time-duration-calculator",
+  "stopwatch-lap-csv-export",
+  "heart-rate-zones",
+  "gps-speedometer"
+ ],
+ "keywords": [
+  "pace converter",
+  "min per km to min per mile",
+  "marathon pace calculator"
+ ]
+}

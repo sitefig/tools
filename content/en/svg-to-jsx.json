@@ -1,0 +1,47 @@
+{
+ "id": "svg-to-jsx",
+ "seoTitle": "Free SVG to JSX Converter for React Online",
+ "metaDescription": "Free online SVG to JSX converter. Turn SVG markup into a React component with className, camelCase attributes and style objects. Runs in your browser.",
+ "intro": "Convert SVG markup into JSX you can use in React. Attributes are renamed, style strings become objects, and the SVG can be wrapped in a component that accepts props.",
+ "why": "Exported icons and illustrations come as SVG files, and pasting them into a React component fails: class must be className, stroke-width must be strokeWidth, and style must be an object. Fixing those by hand in a large file is dull and easy to get wrong.\n\nPaste the SVG and the tool renames attributes, converts namespaced ones like xlink:href, turns inline style into an object, drops the XML declaration and comments, and closes empty tags. With the component option on, it wraps everything in an exported function that spreads props onto the svg element, so you can set size and colour from outside. The conversion is done in your browser, and your artwork is not uploaded.",
+ "howTo": [
+  "Paste your SVG markup into the input box.",
+  "Tick Wrap in component if you want an exported function component, and set its name.",
+  "Choose the indent for the generated code.",
+  "Copy the JSX into your React project."
+ ],
+ "faq": [
+  {
+   "q": "What changes are made to the SVG?",
+   "a": "class becomes className, hyphenated attributes become camelCase, style strings become objects, namespaced attributes such as xlink:href are converted, and the XML header and comments are removed."
+  },
+  {
+   "q": "How do I change size or colour?",
+   "a": "With the component option, props are spread on the svg element, so you can pass width, height, fill or className when using it. Icons using currentColor follow the text colour."
+  },
+  {
+   "q": "Does it optimise the SVG?",
+   "a": "No. It converts syntax only. To reduce file size first, run the SVG through an optimiser such as the SVG Optimizer tool."
+  },
+  {
+   "q": "What if my SVG is malformed?",
+   "a": "The tool reports a parse error instead of generating code. Look for unclosed tags, mismatched names or unescaped characters such as a bare ampersand in the markup."
+  }
+ ],
+ "related": [
+  "html-to-jsx",
+  "svg-optimizer",
+  "svg-to-css",
+  "svg-to-react-native",
+  "jsx-to-html",
+  "svg-preview-editor"
+ ],
+ "keywords": [
+  "svg to jsx",
+  "svg to react component",
+  "convert svg to jsx online",
+  "free svg to jsx",
+  "svgr online alternative",
+  "svg react converter"
+ ]
+}

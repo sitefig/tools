@@ -1,0 +1,45 @@
+{
+ "id": "solana-address-validator",
+ "seoTitle": "Free Solana Address Validator: Wallet or PDA Check",
+ "metaDescription": "Validate Solana public keys: Base58 characters, 32-byte length, and whether the key is on the ed25519 curve (wallet) or off it (PDA). Free, in-browser.",
+ "intro": "Paste Solana addresses to check the Base58 alphabet and the 32-byte length, and see whether each key lies on the ed25519 curve or off it like a program-derived address.",
+ "why": "A Solana address is a Base58 encoding of a 32-byte public key. A typo, a truncated copy or an address from another chain fails in different ways, and wallets sometimes accept the text before they complain about it.\n\nThis validator decodes each line, reports the byte length and tells you whether the point is on the ed25519 curve. Wallet keypairs are on the curve, while program-derived addresses are deliberately generated off the curve so nobody holds a private key for them. That distinction matters when you are checking an account in a transaction. A valid address does not mean the account exists on chain or holds funds.",
+ "howTo": [
+  "Paste Solana addresses, one per line.",
+  "Read the result: VALID or INVALID, with the reason if invalid.",
+  "For valid keys, see whether the address is on the curve or a PDA."
+ ],
+ "faq": [
+  {
+   "q": "What does a valid address prove?",
+   "a": "Only that the text decodes to exactly 32 bytes using the Base58 alphabet. It says nothing about whether an account exists, is funded or is owned by a particular program."
+  },
+  {
+   "q": "What is the meaning of off the curve?",
+   "a": "Program-derived addresses are produced so that they are not valid ed25519 public keys, which means no private key exists and only the owning program can sign for them."
+  },
+  {
+   "q": "Why do some addresses fail with a length error?",
+   "a": "Base58 strings of other chains, such as Bitcoin, decode to a different number of bytes. A truncated paste also gives the wrong size, and the tool reports the byte count it found."
+  },
+  {
+   "q": "Does it contact the network?",
+   "a": "No. The checks use local arithmetic only, so it works offline and no address is sent to any server."
+  }
+ ],
+ "related": [
+  "base58-encoder",
+  "ed25519-key-generator",
+  "ed25519-sign-verify",
+  "eip55-checksum-address",
+  "bech32-codec",
+  "bip39-generator"
+ ],
+ "keywords": [
+  "solana address validator",
+  "validate solana public key",
+  "solana pda checker",
+  "free solana address tool",
+  "ed25519 on curve check"
+ ]
+}

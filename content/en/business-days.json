@@ -1,0 +1,46 @@
+{
+ "id": "business-days",
+ "seoTitle": "Free Business Days Calculator Excluding Holidays",
+ "metaDescription": "Count weekdays between two dates, skip weekends and your own list of holidays, and see weekends and calendar days. Free, runs in your browser.",
+ "intro": "Enter a start date, an end date and any holidays. The tool counts working weekdays, weekend days, holidays that fall on weekdays and total calendar days.",
+ "why": "Delivery windows, payment terms and legal response times are often counted in business days, and that is where a plain date difference stops being useful. Seven business days from a Friday is not the following Friday. This calculator counts Monday to Friday only, lets you decide whether the end date counts, and subtracts any holidays you list. Because public holidays differ by country and region, the tool does not guess; you type the dates yourself in YYYY-MM-DD form. Holidays on weekends are not double counted. The breakdown shows how the total divides, which helps when a result looks off. The dates you enter stay in your browser.",
+ "howTo": [
+  "Pick the start and end dates and tick 'Include end date' if the last day counts.",
+  "List public holidays as YYYY-MM-DD dates separated by commas.",
+  "Read the business days, weekend days, holidays on weekdays and calendar days."
+ ],
+ "faq": [
+  {
+   "q": "Which days count as the weekend?",
+   "a": "Saturday and Sunday. The tool has no setting for other weekends, so for regions with a Friday and Saturday weekend, the result will not match local practice."
+  },
+  {
+   "q": "How do I enter holidays?",
+   "a": "As ISO dates such as 2026-12-25, separated by commas, spaces or semicolons. A badly formatted date shows an error. A holiday falling on a weekend is ignored."
+  },
+  {
+   "q": "Should I include the end date?",
+   "a": "It depends on your contract or rule. 'Within 5 business days' usually counts from the day after the start, so check the wording. Toggle the option to see both results."
+  },
+  {
+   "q": "What if the start date is after the end date?",
+   "a": "The tool swaps them automatically and counts between the two dates, so you still get a sensible result instead of an error or a negative number."
+  }
+ ],
+ "related": [
+  "date-difference",
+  "add-subtract-dates",
+  "week-number",
+  "day-of-week",
+  "countdown-to-date",
+  "age-calculator"
+ ],
+ "keywords": [
+  "business days calculator",
+  "working days calculator",
+  "free business days calculator",
+  "count weekdays between dates",
+  "workdays excluding holidays",
+  "business days between two dates"
+ ]
+}

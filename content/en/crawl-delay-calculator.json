@@ -1,0 +1,44 @@
+{
+ "id": "crawl-delay-calculator",
+ "seoTitle": "Crawl-delay Calculator: Requests per Day from Seconds",
+ "metaDescription": "Convert a robots.txt Crawl-delay into maximum requests per hour, day and month and see which crawlers read it. Free calculator.",
+ "intro": "Turns a Crawl-delay value in seconds into a request ceiling and the time a crawler would need to fetch your pages.",
+ "why": "A line such as Crawl-delay: 10 sounds modest, but it caps a crawler at 8,640 requests a day, which is slow for a big site. Many site owners set it without knowing that Google ignores it entirely.\n\nEnter the delay and your page count to see the ceiling and the days needed to fetch everything once. The page lists what the vendors document (Google, Apple and Amazon do not use it) and is open about what it did not check.",
+ "howTo": [
+  "Enter the delay in seconds.",
+  "Optionally enter how many pages you have.",
+  "Read the requests per day and the time for a full pass.",
+  "Decide whether Crawl-delay is the right tool at all."
+ ],
+ "faq": [
+  {
+   "q": "Does Google follow Crawl-delay?",
+   "a": "No. Google's documentation lists only user-agent, allow, disallow and sitemap."
+  },
+  {
+   "q": "What should I use to slow a crawler?",
+   "a": "Serve 429 or 503 responses when you are overloaded, or use the crawl settings in a search engine's webmaster tools where available."
+  },
+  {
+   "q": "Is the result exact?",
+   "a": "It is the upper bound for a crawler that reads the value as one request per N seconds."
+  },
+  {
+   "q": "Do all crawlers read it the same way?",
+   "a": "No. Some treat it as a pause, others as a time window."
+  }
+ ],
+ "related": [
+  "robots-generator",
+  "robots-txt-validator",
+  "nginx-rate-limit-calculator",
+  "bot-rate-limit-rule-calculator",
+  "robots-tester"
+ ],
+ "keywords": [
+  "crawl-delay calculator",
+  "robots.txt crawl delay",
+  "crawl delay requests per day",
+  "does google respect crawl delay"
+ ]
+}

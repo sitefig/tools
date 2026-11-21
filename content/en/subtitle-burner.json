@@ -1,0 +1,45 @@
+{
+ "id": "subtitle-burner",
+ "seoTitle": "Subtitle Burner: Hardcode SRT or VTT into a Video Online",
+ "metaDescription": "Draw SRT or VTT captions permanently onto a video. Set size, colour, box and position. Runs in your browser, private.",
+ "intro": "Reads an SRT or VTT file and draws each caption onto the video frames at the right times, so they show on any player or platform.",
+ "why": "Some platforms ignore subtitle files or show them badly. Burning the text into the picture guarantees it is seen. The tool wraps long lines, can draw a dark box behind them and places them at the bottom, middle or top.\n\nNothing is uploaded. The file is decoded by your browser and re-encoded, so quality drops a little and the result is WebM (or MP4 where your browser can record it). It records in real time, so a 60 second clip takes about a minute and the tab must stay visible. Hardcoded subtitles cannot be turned off or translated later, so keep your original video and the SRT.",
+ "howTo": [
+  "Choose the video and the subtitle file.",
+  "Set size, colour, box and position.",
+  "Process and watch the progress.",
+  "Check the result and download it."
+ ],
+ "faq": [
+  {
+   "q": "Which subtitle formats work?",
+   "a": "SubRip (.srt) and WebVTT (.vtt) with standard time codes."
+  },
+  {
+   "q": "Can I use other fonts?",
+   "a": "The three generic families (sans-serif, serif, monospace) are offered because they exist on every device."
+  },
+  {
+   "q": "Are non-English letters supported?",
+   "a": "Yes, as long as your device font has them."
+  },
+  {
+   "q": "How do I fix timing first?",
+   "a": "Use the Subtitle Timing Shifter, then burn."
+  }
+ ],
+ "related": [
+  "subtitle-timing-sync",
+  "subtitle-srt-vtt-converter",
+  "caption-file-validator",
+  "transcript-cleaner",
+  "video-watermarker",
+  "video-trimmer"
+ ],
+ "keywords": [
+  "burn subtitles into video",
+  "hardcode srt",
+  "add captions to video",
+  "open captions video"
+ ]
+}

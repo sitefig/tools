@@ -1,0 +1,41 @@
+{
+ "id": "reddit-title-checker",
+ "seoTitle": "Reddit Post Title Checker: Length and Clickbait Review",
+ "metaDescription": "Check post titles for length and review all-caps words, extra punctuation, emoji and clickbait phrases before you post. Free, private.",
+ "intro": "Check post titles for length against the 300 character limit and review all-caps words, extra punctuation, emoji and clickbait phrases.",
+ "why": "Reddit titles decide whether a post is opened. Titles that shout, tease or run on tend to be ignored or removed, and each community has its own rules.\n\nPaste one or more titles. The tool checks length against the commonly quoted 300 character limit (not verified at the source) and flags all-caps words, repeated punctuation, many emoji, links and a list of clickbait phrases. Findings are for review. Read the subreddit rules first.",
+ "howTo": [
+  "Paste your titles, one per line.",
+  "Set the limit if your community differs.",
+  "Read the findings for each title.",
+  "Rewrite and check again."
+ ],
+ "faq": [
+  {
+   "q": "Is 300 the real limit?",
+   "a": "It is the commonly quoted value and was not verified here. Change it in the option if needed."
+  },
+  {
+   "q": "Will a flagged title be removed?",
+   "a": "Not necessarily. Moderators set the rules."
+  },
+  {
+   "q": "Does it post for me?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "social-post-length-checker",
+  "x-post-character-counter",
+  "title-length-checker",
+  "headline-capitalizer",
+  "title-case-headline-analyzer",
+  "char-limit-counter"
+ ],
+ "keywords": [
+  "reddit title checker",
+  "reddit title length",
+  "clickbait title checker",
+  "reddit post title"
+ ]
+}

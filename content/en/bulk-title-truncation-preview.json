@@ -1,0 +1,45 @@
+{
+ "id": "bulk-title-truncation-preview",
+ "seoTitle": "Bulk Title Truncation Preview from CSV",
+ "metaDescription": "Check many titles at once for estimated pixel width and where desktop and mobile results would cut them off. Free, private.",
+ "intro": "Shows an estimated width and cut-off point for each title in a list or CSV.",
+ "why": "Checking titles one by one is slow. Paste hundreds, see which would be cut and where the text after the cut falls.\n\nWidths are estimated from Arial-like metrics at 20px, and the desktop and mobile limits are adjustable estimates. Search engines use their own fonts and often rewrite titles, so this is a guide. Edit the list and run again to test rewrites.",
+ "howTo": [
+  "Paste titles one per line, or a CSV with a title column.",
+  "Adjust the pixel limits if you want.",
+  "Run the tool.",
+  "Edit the long titles and re-run."
+ ],
+ "faq": [
+  {
+   "q": "How accurate are the pixels?",
+   "a": "Approximate. They come from font metrics, not a real search page."
+  },
+  {
+   "q": "Why two limits?",
+   "a": "Desktop and mobile results truncate differently."
+  },
+  {
+   "q": "How many titles?",
+   "a": "Up to 5,000."
+  },
+  {
+   "q": "Can it export?",
+   "a": "Copy the table; the preview column shows the cut."
+  }
+ ],
+ "related": [
+  "title-length-checker",
+  "serp-snippet",
+  "duplicate-title-description-finder",
+  "headline-generator",
+  "meta-description-suggester",
+  "title-case-headline-analyzer"
+ ],
+ "keywords": [
+  "bulk title length",
+  "title truncation",
+  "title pixel width",
+  "serp title preview"
+ ]
+}

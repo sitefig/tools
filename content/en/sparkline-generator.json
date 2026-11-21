@@ -1,0 +1,44 @@
+{
+ "id": "sparkline-generator",
+ "seoTitle": "Sparkline Generator: Tiny Inline SVG Trend Charts",
+ "metaDescription": "Paste numbers to get a small line, area or bar sparkline as copyable SVG sized for text or table cells. Free, no library.",
+ "intro": "Creates a small trend chart as an inline SVG with an accessible name that states the start, end, lowest and highest values.",
+ "why": "Sparklines sit inside sentences and table cells to show the shape of a series. The SVG has no scripts and no axes, only the shape and optional markers for the last point, the minimum and the maximum.\n\nThe accessible name carries the key numbers, because a tiny drawing alone tells screen reader users nothing. Paste the SVG straight into HTML or an email-safe image pipeline; width and height are set in pixels.",
+ "howTo": [
+  "Paste a series of numbers.",
+  "Choose line, area or bars and set width and height.",
+  "Pick a colour and type a short name.",
+  "Copy the SVG markup."
+ ],
+ "faq": [
+  {
+   "q": "Can I scale it with CSS?",
+   "a": "Yes, it has a viewBox, so set width and height in CSS."
+  },
+  {
+   "q": "What do the dots mean?",
+   "a": "Orange minimum, green maximum, last point in the line colour."
+  },
+  {
+   "q": "Does it work in emails?",
+   "a": "Many clients block inline SVG; render it to an image first."
+  },
+  {
+   "q": "How many values?",
+   "a": "Up to 5000."
+  }
+ ],
+ "related": [
+  "line-chart-maker",
+  "bar-chart-maker",
+  "csv-to-chart",
+  "histogram-builder",
+  "statistics-calculator",
+  "heatmap-maker"
+ ],
+ "keywords": [
+  "sparkline generator",
+  "inline svg chart",
+  "tiny trend chart"
+ ]
+}

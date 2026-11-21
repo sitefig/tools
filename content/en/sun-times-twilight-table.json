@@ -1,0 +1,44 @@
+{
+ "id": "sun-times-twilight-table",
+ "seoTitle": "Sun Times Table: Dawn, Dusk and Twilight by Coordinates",
+ "metaDescription": "Get sunrise, sunset, solar noon, day length and twilight times for any latitude, longitude and date, offline. Handles polar day and night.",
+ "intro": "Computes sun times for a place and date range from the NOAA solar equations, shown in the time zone you choose.",
+ "why": "Enter a location and a date and you get dawn, sunrise, solar noon, sunset and dusk for civil, nautical and astronomical twilight. The equations are those of the NOAA solar calculator (after Meeus). Results were compared with PyEphem for seven place and date cases and agree within seconds in most cases and under one minute in all.\n\nAbove the polar circles the sun can stay up or down all day; the tool says so instead of showing nonsense. Times use the daylight saving rules of the IANA time zone you type. Terrain, buildings and weather are ignored.",
+ "howTo": [
+  "Enter the location as lat, lon.",
+  "Set a start date and the number of days.",
+  "Type an IANA time zone such as Europe/London.",
+  "Read or copy the table."
+ ],
+ "faq": [
+  {
+   "q": "How accurate?",
+   "a": "About a minute at mid latitudes; worse near the poles."
+  },
+  {
+   "q": "Which sun position counts as sunrise?",
+   "a": "The upper limb with standard refraction, a zenith of 90.833 degrees."
+  },
+  {
+   "q": "Why does a time show (20/12)?",
+   "a": "The event falls on another local date than the row."
+  },
+  {
+   "q": "Can I use a UTC offset?",
+   "a": "Use an IANA name; UTC works for none."
+  }
+ ],
+ "related": [
+  "sun-path-calculator",
+  "sunrise-sunset-calculator",
+  "timezone-converter",
+  "coordinate-format-converter",
+  "printable-calendar",
+  "date-difference"
+ ],
+ "keywords": [
+  "sunrise sunset calculator",
+  "twilight times by coordinates",
+  "day length calculator"
+ ]
+}

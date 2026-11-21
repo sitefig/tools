@@ -1,0 +1,45 @@
+{
+ "id": "wave-interference-superposition",
+ "seoTitle": "Wave Interference Simulator: Add Two Sine Waves, Beats and Phase",
+ "metaDescription": "Set amplitude, frequency and phase of two waves and see each wave and their sum, with the resultant amplitude and beat frequency.",
+ "intro": "Plots two sine waves and their sum over time and tells you whether the interference is constructive or destructive, or what the beat frequency is.",
+ "why": "When two waves of the same frequency meet in phase their amplitudes add; in opposite phase they cancel. With slightly different frequencies the sum swells and fades at the beat frequency. Set the numbers and see the three curves on one graph.\n\nFor equal frequencies the tool prints the resultant amplitude from the exact formula sqrt(A1^2 + A2^2 + 2 A1 A2 cos(phase difference)). For different frequencies it prints the beat frequency and the envelope limits. The plot shows the waves at one point in space as time passes; it is not an animation of a whole medium.",
+ "howTo": [
+  "Enter amplitude, frequency and phase for each wave.",
+  "Set the time span.",
+  "Read the plot of wave 1, wave 2 and the sum.",
+  "Read the interference statement under it."
+ ],
+ "faq": [
+  {
+   "q": "What is a beat?",
+   "a": "The slow rise and fall in loudness when two close frequencies are mixed."
+  },
+  {
+   "q": "What phase gives full cancellation?",
+   "a": "180 degrees with equal amplitudes."
+  },
+  {
+   "q": "Are the waves traveling?",
+   "a": "The plot is over time at a fixed point, which is enough to show interference."
+  },
+  {
+   "q": "Is the sum stored?",
+   "a": "No, everything is computed on the page."
+  }
+ ],
+ "related": [
+  "pendulum-simulator-period",
+  "projectile-motion-calculator",
+  "function-grapher-roots",
+  "tone-generator",
+  "hearing-frequency-test",
+  "dc-circuit-solver-netlist"
+ ],
+ "keywords": [
+  "wave interference simulator",
+  "superposition of waves",
+  "beat frequency calculator",
+  "constructive destructive interference"
+ ]
+}

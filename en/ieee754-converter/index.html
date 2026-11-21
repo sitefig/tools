@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free IEEE 754 Float to Hex and Binary Converter | Free Tools</title>
+<meta name="description" content="Convert numbers to 32-bit and 64-bit IEEE 754 hex and bits, with sign, exponent and mantissa, or decode a hex pattern. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/ieee754-converter/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/ieee754-converter/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/ieee754-converter/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free IEEE 754 Float to Hex and Binary Converter | Free Tools">
+<meta property="og:description" content="Convert numbers to 32-bit and 64-bit IEEE 754 hex and bits, with sign, exponent and mantissa, or decode a hex pattern. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/ieee754-converter/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free IEEE 754 Float to Hex and Binary Converter | Free Tools">
+<meta name="twitter:description" content="Convert numbers to 32-bit and 64-bit IEEE 754 hex and bits, with sign, exponent and mantissa, or decode a hex pattern. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"IEEE 754 Float / Hex Converter","url":"https://tools.sitefig.net/en/ieee754-converter/","description":"Convert numbers to 32-bit and 64-bit IEEE 754 hex and bits, with sign, exponent and mantissa, or decode a hex pattern. Free, in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter one number or hex pattern per line, such as 0.1 or 0x40490fdb.","Read the hex and the sign, exponent and mantissa bits for 32 and 64 bits.","Copy the values you need."],"keywords":"ieee 754 converter, float to hex converter, ieee754 binary representation, free floating point visualizer, 32-bit float to binary","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Encoding","item":"https://tools.sitefig.net/en/#encoding"},{"@type":"ListItem","position":3,"name":"IEEE 754 Float / Hex Converter","item":"https://tools.sitefig.net/en/ieee754-converter/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How does it decide between 32 and 64-bit hex input?","acceptedAnswer":{"@type":"Answer","text":"Up to eight hex digits are read as a 32-bit float and up to sixteen digits as a 64-bit double. Longer patterns are rejected."}},{"@type":"Question","name":"Why does the stored 32-bit value differ from my number?","acceptedAnswer":{"@type":"Answer","text":"Single precision has only about seven significant decimal digits, so the nearest representable value is shown. 0.1 becomes roughly 0.10000000149."}},{"@type":"Question","name":"Does it show half precision or bfloat16?","acceptedAnswer":{"@type":"Answer","text":"No. Only the 32-bit and 64-bit formats are supported, because those cover most programming languages, databases and memory dumps. Half precision and bfloat16 are not included."}},{"@type":"Question","name":"Which special values work?","acceptedAnswer":{"@type":"Answer","text":"NaN, Infinity and -Infinity are accepted, as are numbers in exponent form like 1e300. Zero shows the sign bit, so negative zero can be told apart from zero."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#encoding">Encoding</a></li><li><span aria-current="page">IEEE 754 Float / Hex Converter</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>IEEE 754 Float / Hex Converter</h1>
+<p class="lede">Enter a number to see its 32-bit and 64-bit IEEE 754 representation in hex and binary, split into sign, exponent and mantissa, or decode a hex pattern.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="ieee754-converter" data-module="devx"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Floating-point numbers store a sign, an exponent and a fraction, which is why 0.1 cannot be held exactly and why 0.1 plus 0.2 is not 0.3. Seeing the actual bits explains many surprises: rounding in a financial report, NaN handling in a network protocol, or a value that shows up as 0x3f800000 in a memory dump.</p>
+<p>Type one value per line, such as 0.1, -118.625, NaN or 1e300. The tool prints the float32 and float64 hex, the bit groups and the stored value after rounding to single precision. Paste 0x40490fdb to decode it as a float32, or a longer pattern as float64.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter one number or hex pattern per line, such as 0.1 or 0x40490fdb.</li><li>Read the hex and the sign, exponent and mantissa bits for 32 and 64 bits.</li><li>Copy the values you need.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How does it decide between 32 and 64-bit hex input?</summary><p>Up to eight hex digits are read as a 32-bit float and up to sixteen digits as a 64-bit double. Longer patterns are rejected.</p></details>
+<details><summary>Why does the stored 32-bit value differ from my number?</summary><p>Single precision has only about seven significant decimal digits, so the nearest representable value is shown. 0.1 becomes roughly 0.10000000149.</p></details>
+<details><summary>Does it show half precision or bfloat16?</summary><p>No. Only the 32-bit and 64-bit formats are supported, because those cover most programming languages, databases and memory dumps. Half precision and bfloat16 are not included.</p></details>
+<details><summary>Which special values work?</summary><p>NaN, Infinity and -Infinity are accepted, as are numbers in exponent form like 1e300. Zero shows the sign bit, so negative zero can be told apart from zero.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/number-base-converter/"><span class="link-card__title">Number Base Converter</span><span class="link-card__desc">Convert arbitrarily large integers between bases 2-36, with two's complement.</span></a></li><li><a class="link-card" href="/en/bitwise-calculator/"><span class="link-card__title">Bitwise Calculator (AND, OR, XOR, shifts, rotate)</span><span class="link-card__desc">Apply AND, OR, XOR, NAND, NOR, XNOR, NOT, left / arithmetic right / logical right shifts, rotations, popcount, leading / trailing zeros and bit reversal to 8, 16, 32 or 64-bit values, with two's-complement signed or unsigned interpretation. Inputs accept decimal, 0x hex, 0b binary and 0o octal; results are shown in all four bases with the bit pattern.</span></a></li><li><a class="link-card" href="/en/bcd-converter/"><span class="link-card__title">BCD (Binary-Coded Decimal) Converter</span><span class="link-card__desc">Convert decimal numbers to packed/unpacked BCD nibbles and back.</span></a></li><li><a class="link-card" href="/en/hex-dump-viewer/"><span class="link-card__title">Hex Dump Viewer</span><span class="link-card__desc">Classic hexdump -C style view (offset, hex bytes, ASCII) of UTF-8 text or pasted hex bytes.</span></a></li><li><a class="link-card" href="/en/bignumber-calculator/"><span class="link-card__title">Arbitrary-Precision Calculator (big integers &amp; decimals)</span><span class="link-card__desc">Evaluate expressions with unlimited-size integers and exact decimals: + - * / % ^ ** ! parentheses, sqrt, abs, gcd, lcm, powmod, floor, round, factorial, fib, pi and e. Add, subtract and multiply are exact; division and sqrt are rounded to the chosen number of decimal places. One expression per line.</span></a></li><li><a class="link-card" href="/en/binary-text/"><span class="link-card__title">Binary ⇄ Text</span><span class="link-card__desc">Convert text to 8-bit binary (UTF-8) and back.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+{
+ "id": "redirect-rules-converter",
+ "seoTitle": "Free Redirect Rules Converter: nginx, Apache, Netlify",
+ "metaDescription": "Turn simple \"from to status\" lines into nginx, Apache, Caddy, Netlify _redirects or Vercel JSON redirects. Free and runs entirely in your browser.",
+ "intro": "Write your redirects once as plain lines of from, to and an optional status code, then output them for nginx, Apache, Caddy, Netlify or Vercel.",
+ "why": "Redirect lists tend to live in a spreadsheet during a site migration, and then someone has to retype every row into whatever the new host expects. The syntax differs enough to cause mistakes: nginx wants a location block, Apache a Redirect directive, Netlify a bare _redirects line and Vercel a JSON array.\n\nThis tool takes one line per rule and writes the matching format, validating that each source starts with a slash and that the status is a real redirect code. It is a good fit for exact-path redirects after a URL change. Pattern rules and regular expressions still need hand-written config.",
+ "howTo": [
+  "Enter one rule per line as from, to and an optional status code, such as /old /new 301.",
+  "Choose the output format: nginx, Apache, Caddy, Netlify _redirects or Vercel JSON.",
+  "Copy the result into your server config or redirects file."
+ ],
+ "faq": [
+  {
+   "q": "Which status codes are allowed?",
+   "a": "301, 302, 303, 307 and 308. If you leave the code out it defaults to 301. Any other value stops with an error so you do not ship an invalid redirect."
+  },
+  {
+   "q": "Can I use wildcards or regular expressions?",
+   "a": "No. Each line becomes an exact-path rule, such as location = /old in nginx. For pattern redirects, write those by hand or start from the generated block and extend it."
+  },
+  {
+   "q": "Where do I paste the nginx output?",
+   "a": "Inside the relevant server block of your nginx config, then reload nginx. The location blocks use an exact match, so they should not clash with your catch-all location."
+  },
+  {
+   "q": "Can the target be a full URL?",
+   "a": "Yes. The destination can be a path or an absolute URL such as https://example.com/new. The source must be a path starting with a slash."
+  }
+ ],
+ "related": [
+  "htaccess-to-nginx",
+  "redirect-code-generator",
+  "htaccess-generator",
+  "nginx-config-generator",
+  "caddyfile-generator",
+  "nginx-formatter"
+ ],
+ "keywords": [
+  "redirect rules converter",
+  "nginx redirect generator",
+  "netlify redirects generator",
+  "free 301 redirect tool",
+  "vercel redirects json",
+  "apache redirect converter"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "electricity-cost-calculator",
+  "seoTitle": "Electricity Cost Calculator: Appliance Running Cost",
+  "metaDescription": "Calculate what an appliance costs to run per day, month and year from its wattage, hours of use and your price per kWh, plus standby and CO2.",
+  "intro": "See what a heater, computer or kettle really costs to run.",
+  "why": "Energy in kWh is watts times hours divided by 1,000, plus standby power for the hours the device is idle. The page multiplies by your price per kWh for daily, monthly and yearly costs and estimates the CO2 from the grid intensity you enter.\n\nUse the price per kWh from your bill, including per-kWh network charges and taxes but not fixed charges. Devices with motors or heating elements cycle, so their average draw is below the label wattage.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the power in watts and hours per day.",
+    "Enter your price per kWh.",
+    "Add standby watts if the device stays plugged in.",
+    "Read the daily, monthly and yearly cost."
+  ],
+  "faq": [
+    {
+      "q": "How do I find the wattage?",
+      "a": "On the label or in the manual; a plug-in energy meter measures it exactly."
+    },
+    {
+      "q": "What about kWh vs kW?",
+      "a": "kW is power, kWh is energy used over time."
+    },
+    {
+      "q": "Is the CO2 figure accurate?",
+      "a": "Only as accurate as the grid intensity you enter; it varies by country and hour."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "btu-calculator",
+    "fuel-cost",
+    "compound-interest",
+    "loan-calculator",
+    "unit-converter",
+    "vat-calculator"
+  ],
+  "keywords": [
+    "electricity cost calculator",
+    "appliance running cost",
+    "kwh cost",
+    "power consumption cost"
+  ]
+}

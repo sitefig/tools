@@ -1,0 +1,43 @@
+{
+ "id": "dns-spf-record-flattener",
+ "seoTitle": "Free SPF Record Flattener and Lookup Counter",
+ "metaDescription": "Flatten an SPF record by inlining include records you paste, remove duplicates and count DNS lookups against the limit of 10. Free.",
+ "intro": "Paste your SPF record and the records it includes, and get a flattened version with duplicates removed, a count of DNS lookups against the limit of 10, and long TXT strings split correctly.",
+ "why": "SPF has a hard limit of ten DNS lookups. Every include, a, mx and redirect counts, and each included record can add more. Add a marketing platform, a ticketing system and a mail provider and you are over, at which point receivers may return a permanent error and your mail fails authentication.\n\nFlattening replaces the includes with the addresses they resolve to, so fewer lookups are needed. The tool does this from the records you paste, so it never queries DNS and you control what is inlined. That also means you must fetch each include yourself with dig. A flattened record goes out of date when providers change their addresses, so schedule a check or use a service that refreshes it. Nothing is uploaded.",
+ "howTo": [
+  "Paste your current SPF record into the first box.",
+  "Add each included record in the second box, one per line, as domain: v=spf1 ...",
+  "Read the flattened record, the lookup count and any warnings.",
+  "Publish the new TXT record at your DNS host and recheck it with a mail testing tool."
+ ],
+ "faq": [
+  {
+   "q": "Why doesn't the tool look up the includes itself?",
+   "a": "It never queries DNS, which keeps your domain names private and the result reproducible. Get each record with a command like dig +short TXT followed by the domain, then paste them in."
+  },
+  {
+   "q": "What happens when providers change their IP addresses?",
+   "a": "A flattened record keeps the old addresses, so legitimate mail can start failing SPF. Re-flatten regularly, or flatten only the includes that rarely change and keep the others as includes."
+  },
+  {
+   "q": "What is the limit on record length?",
+   "a": "A single TXT string holds 255 characters, so long records are split into several quoted strings that DNS joins back together. The tool does this splitting for you. Overall response size also matters."
+  }
+ ],
+ "related": [
+  "spf-record-generator",
+  "dmarc-generator",
+  "dkim-record-generator",
+  "dns-record-generator",
+  "dns-soa-dnssec-inspector",
+  "ip-supernetting-calculator"
+ ],
+ "keywords": [
+  "spf flattener",
+  "spf record flattening",
+  "spf 10 lookup limit",
+  "flatten spf includes",
+  "spf too many dns lookups",
+  "free spf tool"
+ ]
+}

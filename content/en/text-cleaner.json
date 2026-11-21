@@ -1,0 +1,45 @@
+{
+  "id": "text-cleaner",
+  "seoTitle": "Text Cleaner: Smart Quotes, Zero-Width, Spaces and Blank Lines",
+  "metaDescription": "Clean pasted text: straighten smart quotes and dashes, remove zero-width and control characters, fix spaces and blank lines, and normalise Unicode.",
+  "intro": "Fix the invisible mess in text copied from Word, PDFs, chat and web pages, and see exactly what was changed.",
+  "why": "Options convert curly quotes, en/em dashes and ellipses to plain ASCII, delete zero-width spaces, BOMs, soft hyphens, bidirectional controls and other control characters, replace non-breaking and exotic spaces, collapse repeated spaces and trailing whitespace, reduce runs of blank lines and apply Unicode NFC normalisation. A report lists how many of each were found.\n\nStripping typographic characters is not always wanted (it flattens proper dashes and quotes), so each step can be switched off. Invisible characters are also used in some attacks, so the zero-width detector is a good companion.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Paste the text.",
+    "Tick the clean-ups you want.",
+    "Copy the cleaned text and read the change report.",
+    "Use find and replace for anything specific to your text."
+  ],
+  "faq": [
+    {
+      "q": "Why remove zero-width characters?",
+      "a": "They break searches, comparisons and code, and are sometimes used to hide text."
+    },
+    {
+      "q": "What does NFC do?",
+      "a": "It combines base letters and accents into single characters so equal-looking text compares equal."
+    },
+    {
+      "q": "Will it change my line endings?",
+      "a": "It normalises all line endings to \\n."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "zero-width-detector",
+    "unicode-normalize",
+    "find-replace",
+    "remove-empty-lines-trim",
+    "dedupe-lines",
+    "tabs-spaces-converter"
+  ],
+  "keywords": [
+    "text cleaner",
+    "remove zero width characters",
+    "straighten smart quotes",
+    "clean copied text"
+  ]
+}

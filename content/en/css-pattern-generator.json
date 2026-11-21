@@ -1,0 +1,47 @@
+{
+ "id": "css-pattern-generator",
+ "seoTitle": "Free CSS Background Pattern Generator",
+ "metaDescription": "Free CSS pattern generator. Create stripes, dots, grids, checkerboards and zigzags from pure CSS gradients, with a live preview and copy-ready code.",
+ "intro": "Create pure-CSS background patterns: stripes, diagonal stripes, dots, offset polka dots, grid, checkerboard and zigzag. Pick two colours and a size and copy the CSS.",
+ "why": "Subtle patterns add texture to a hero section, card or empty state without an image request. They are built from repeating gradients, but the syntax is hard to remember, especially for checkerboards and zigzags that layer four gradients with offset positions.\n\nChoose a pattern type, a pattern colour and a background colour, and set the tile size. The tool writes the background-color, background-image, background-size and background-position declarations and shows the result in a preview. Because the patterns are CSS, they scale without blur, change with a variable and add no download weight. Very large or complex gradients can slow painting on low-end devices, so keep tile sizes sensible. Nothing is uploaded.",
+ "howTo": [
+  "Choose a pattern type from the list.",
+  "Pick the pattern colour and the background colour, and set the size in pixels.",
+  "Check the preview panel.",
+  "Copy the CSS onto the element you want to decorate."
+ ],
+ "faq": [
+  {
+   "q": "Does it use images?",
+   "a": "No. Every pattern is built from CSS gradients, so there is no file to download and the pattern stays sharp at any zoom level."
+  },
+  {
+   "q": "How do I make the pattern subtler?",
+   "a": "Choose two colours that are close in tone, or use a semi-transparent pattern colour. You can also lay the pattern on a plain element and lower its opacity."
+  },
+  {
+   "q": "Can I change the pattern size later?",
+   "a": "Yes. The size appears in background-size and in the gradient stops. Regenerate with a new size, or define the size in a CSS variable if you want to change it with media queries."
+  },
+  {
+   "q": "Is performance a concern?",
+   "a": "Simple patterns are cheap. Many layers over a large area, such as a checkerboard with a tiny tile, can be slower to paint on weak devices, so test on mobile."
+  }
+ ],
+ "related": [
+  "css-isometric-grid-generator",
+  "css-scrollbar-generator",
+  "gradient-generator",
+  "mesh-gradient-generator",
+  "css-blob-generator",
+  "svg-pattern-generator"
+ ],
+ "keywords": [
+  "css pattern generator",
+  "css background pattern",
+  "css stripes generator",
+  "free css pattern tool",
+  "css checkerboard background",
+  "css polka dots generator"
+ ]
+}

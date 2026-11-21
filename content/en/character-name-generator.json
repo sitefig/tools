@@ -1,0 +1,41 @@
+{
+ "id": "character-name-generator",
+ "seoTitle": "Character Name Generator by Culture and Era",
+ "metaDescription": "Generate names for fictional characters from several traditions and eras, or invented fantasy names. Free, in your browser.",
+ "intro": "Generate names for fictional characters from several cultures and eras (Victorian English, Norse, Japanese, Slavic and more) or invented fantasy names.",
+ "why": "Names carry a place and a time. A Victorian clerk and a Norse raider should not share a naming style.\n\nChoose a style, a gender and how many names. Each name joins a given name and a surname or byname from a list of about ten per group. Fantasy names are built from invented syllables. The lists are small and for fiction: real naming customs are more varied, for example with patronymics.",
+ "howTo": [
+  "Pick a style.",
+  "Choose male, female or any.",
+  "Set how many names to make.",
+  "Use a seed to repeat the list."
+ ],
+ "faq": [
+  {
+   "q": "Are these real names?",
+   "a": "The parts are real common names, but combinations are random and not records of real people."
+  },
+  {
+   "q": "Why so few options?",
+   "a": "Each list has about ten items. Combining them gives about a hundred names per group."
+  },
+  {
+   "q": "Can I get patronymics?",
+   "a": "Not yet. The Norse list includes some bynames."
+  }
+ ],
+ "related": [
+  "writing-prompt-generator",
+  "story-plot-generator",
+  "username-generator",
+  "app-name-ideas",
+  "random-line-picker",
+  "random-text-generator"
+ ],
+ "keywords": [
+  "character name generator",
+  "fantasy name generator",
+  "viking names",
+  "random name generator for stories"
+ ]
+}

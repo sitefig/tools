@@ -1,0 +1,41 @@
+{
+ "id": "caa-record-analyzer",
+ "seoTitle": "CAA Record Analyzer: Which CAs May Issue Certificates",
+ "metaDescription": "Paste CAA DNS records and see which certificate authorities may issue normal and wildcard certificates, report addresses and mistakes.",
+ "intro": "Reads CAA records and explains who may issue certificates for the domain.",
+ "why": "A CAA record in DNS lists the certificate authorities allowed to issue certificates for a domain. Without one, any CA may. A wrong record can also block your own renewals.\n\nPaste your CAA records from dig or your DNS panel and the tool says who may issue normal and wildcard certificates, where violation reports go, and flags unknown tags and critical flags. CAA is defined in RFC 8659. The tool reads text only and does not query DNS.",
+ "howTo": [
+  "Run dig CAA yourdomain or copy records from your DNS panel.",
+  "Paste them.",
+  "Read who is allowed and what is flagged.",
+  "Check your current CA is in the list before changing anything."
+ ],
+ "faq": [
+  {
+   "q": "What does issuewild do?",
+   "a": "It sets the rule for wildcard certificates and overrides issue for them."
+  },
+  {
+   "q": "What is \";\" as a value?",
+   "a": "It forbids issuance for that tag."
+  },
+  {
+   "q": "Does it check DNS?",
+   "a": "No. It reads pasted records only."
+  }
+ ],
+ "related": [
+  "dig-nslookup-output-analyzer",
+  "x509-viewer",
+  "x509-chain-analyzer",
+  "dmarc-record-analyzer",
+  "dnssec-record-decoder",
+  "security-txt-generator"
+ ],
+ "keywords": [
+  "caa record",
+  "certificate authority authorization",
+  "issuewild",
+  "caa checker"
+ ]
+}

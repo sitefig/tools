@@ -1,0 +1,50 @@
+{
+ "id": "font-subsetter",
+ "seoTitle": "TrueType Font Subsetter: Make a Smaller TTF or WOFF Online",
+ "metaDescription": "Cut a TrueType font down to the characters you need and save a much smaller TTF or WOFF. Rebuilds cmap, glyf and metrics in your browser. Checked against fontTools. No upload.",
+ "intro": "Keep only the glyphs your page or app uses and shrink a font file by 90 percent or more.",
+ "why": "Type the characters you need (and optionally Unicode ranges such as U+00C0-00FF). The tool finds each character's glyph through the font's cmap, adds the parts of composite glyphs such as accented letters and .notdef, renumbers the glyphs, and rebuilds glyf, loca, hmtx, cmap (formats 4 and 12), post, maxp, hhea and head with correct checksums. The result is saved as TTF or as WOFF (zlib compressed). WOFF 1 input files are read too.\n\nTested with fontTools and FreeType on DejaVu, Lato and Comic Sans fonts plus Noto and Serif fonts with characters outside the Basic Multilingual Plane: every kept character kept its cmap entry, outline, advance width and side bearing, every table loaded without error, and glyphs rendered pixel for pixel like the original. For example, a 760 KB font shrank to about 25 KB for the characters of a short sentence.\n\nLimits: OpenType layout tables are dropped, so kerning, ligatures and contextual forms are lost; CFF (.otf) fonts, variable fonts, WOFF2 (needs Brotli) and collections are not supported; hinting programs are kept as they are; OS/2 Unicode range bits are not updated. Font licences often restrict subsetting and embedding, so check yours first.",
+ "howTo": [
+  "Choose a .ttf or .woff font file.",
+  "Type the characters you need, tick ASCII, or add ranges.",
+  "Pick TTF or WOFF output.",
+  "Download the subset and check the licence allows it."
+ ],
+ "faq": [
+  {
+   "q": "Why did my kerning disappear?",
+   "a": "Kerning and ligatures live in GPOS, GSUB or kern tables, which this tool drops. Browsers then lay text out with plain advance widths."
+  },
+  {
+   "q": "Can it subset an OTF with CFF outlines or a variable font?",
+   "a": "No. CFF outlines and variation tables need a different rewriter. You will get a clear error."
+  },
+  {
+   "q": "Can it output WOFF2?",
+   "a": "No. WOFF2 needs Brotli compression, which browsers cannot produce for page code. WOFF (zlib) and TTF are offered."
+  },
+  {
+   "q": "Am I allowed to subset any font?",
+   "a": "Not always. Some licences forbid modification or require a specific permission. Open-source fonts such as those under the SIL Open Font License usually allow it, sometimes with a renaming rule."
+  },
+  {
+   "q": "Is the font uploaded?",
+   "a": "No. The work happens in your browser."
+  }
+ ],
+ "related": [
+  "css-minify",
+  "image-compressor",
+  "base64-image-viewer",
+  "svg-optimizer",
+  "hex-dump-viewer",
+  "css-format"
+ ],
+ "keywords": [
+  "font subsetter",
+  "subset ttf online",
+  "reduce font size",
+  "woff generator",
+  "trim font glyphs"
+ ]
+}

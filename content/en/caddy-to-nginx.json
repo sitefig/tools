@@ -1,0 +1,45 @@
+{
+ "id": "caddy-to-nginx",
+ "seoTitle": "Free Caddyfile to nginx Config Converter Online",
+ "metaDescription": "Convert Caddyfile site blocks into nginx server blocks: reverse_proxy, file_server, redir, header, handle and php_fastcgi. Free, runs in your browser.",
+ "intro": "Converts common Caddyfile site blocks to nginx server blocks, covering reverse_proxy, root and file_server, encode gzip, redir, respond, header, try_files, rewrite, handle, handle_path, php_fastcgi and tls.",
+ "why": "Caddy configures a lot by default, including HTTPS, so a short Caddyfile hides a long nginx config. Moving a site to nginx means spelling out what Caddy did silently: the port 443 server, the redirect from port 80, certificate paths, proxy headers and gzip. This tool does that expansion. Automatic HTTPS becomes an explicit 443 server plus a 301 redirect server, with placeholder certificate paths that you must replace. Proxies with matchers and several upstreams, static roots, redirects, fixed responses and handle blocks are translated, and directives it does not know are left as comments. Review the output and run nginx -t before use. The conversion happens in your browser.",
+ "howTo": [
+  "Paste your Caddyfile into the input box.",
+  "Run the conversion and read the nginx server blocks.",
+  "Replace the placeholder certificate paths, resolve the commented directives and test with nginx -t."
+ ],
+ "faq": [
+  {
+   "q": "What happens to automatic HTTPS?",
+   "a": "It becomes an explicit server on port 443 with placeholder certificate paths, and a second server on port 80 that redirects with a 301. You must supply real certificates, for example from Certbot."
+  },
+  {
+   "q": "Which directives are converted?",
+   "a": "reverse_proxy, root, file_server, encode gzip, redir, respond, header, try_files, rewrite, handle, handle_path, php_fastcgi and tls. Unsupported directives are kept as comments."
+  },
+  {
+   "q": "Are multiple upstreams supported?",
+   "a": "Yes. Several upstream addresses in a reverse_proxy directive are turned into an upstream group in nginx, and request matchers such as path prefixes become location blocks with the proxy settings inside."
+  },
+  {
+   "q": "Can I trust the output as is?",
+   "a": "No. Behaviour can differ between Caddy and nginx, especially for path handling. Always review the result and run nginx -t before reloading."
+  }
+ ],
+ "related": [
+  "nginx-to-caddy-converter",
+  "htaccess-to-nginx",
+  "nginx-config-generator",
+  "nginx-formatter",
+  "caddyfile-generator",
+  "nginx-security-conf-generator"
+ ],
+ "keywords": [
+  "caddyfile to nginx",
+  "convert caddy config to nginx",
+  "caddy to nginx converter",
+  "free caddyfile converter",
+  "migrate from caddy to nginx"
+ ]
+}

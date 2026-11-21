@@ -1,0 +1,43 @@
+{
+ "id": "llm-few-shot-prompt-formatter",
+ "seoTitle": "Free Few-Shot Prompt Formatter for LLMs",
+ "metaDescription": "Format input and output example pairs as a few-shot prompt: plain labels, XML, Markdown or OpenAI and Anthropic message JSON. Free, in browser.",
+ "intro": "Enter input and output example pairs and format them as a few-shot prompt in plain labels, XML tags or Markdown, or as message JSON ready for the OpenAI or Anthropic API.",
+ "why": "Examples are often the most reliable way to steer a model, but typing them out in a consistent layout is surprisingly fiddly. A missing label, an extra blank line or a differently worded example can change the behaviour. When you also want the same examples as API messages, you end up reformatting by hand.\n\nThis formatter takes your pairs once and outputs them in the layout you choose, with an optional instruction at the top and your own labels for input and output. You can use a backslash n inside an example for a line break. Switching format is a click, which makes it easy to compare how a model responds to each. The text stays in your browser and is not uploaded.",
+ "howTo": [
+  "Enter your example pairs, with one list of inputs and one of outputs.",
+  "Choose a format: plain labels, XML tags, Markdown, or OpenAI or Anthropic message JSON.",
+  "Add an optional instruction and set the labels for input and output.",
+  "Copy the formatted prompt or message array into your code."
+ ],
+ "faq": [
+  {
+   "q": "How many examples should I include?",
+   "a": "Three to five varied examples are a common starting point. Cover edge cases you care about, and keep the format identical across all of them. Test with and without them, because more examples are not always better."
+  },
+  {
+   "q": "Which format works best?",
+   "a": "It depends on the model and the task. XML tags separate parts clearly and suit Claude. Markdown and plain labels are easy to read. Try a couple and compare the answers on your own test inputs."
+  },
+  {
+   "q": "How do I put a line break inside an example?",
+   "a": "Write a backslash followed by n where the break should be. The tool turns it into a real newline in the formatted output, so multi-line inputs and outputs are possible."
+  }
+ ],
+ "related": [
+  "cot-chain-of-thought-prompt-builder",
+  "prompt-format-converter",
+  "system-prompt-xml-builder",
+  "prompt-linter",
+  "prompt-template-filler",
+  "jsonl-dataset-validator"
+ ],
+ "keywords": [
+  "few shot prompt formatter",
+  "few-shot prompt generator",
+  "format examples for llm prompt",
+  "few shot examples to openai messages",
+  "anthropic few shot format",
+  "free prompt formatter"
+ ]
+}

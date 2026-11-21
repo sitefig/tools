@@ -1,0 +1,45 @@
+{
+ "id": "json-patch-generator",
+ "seoTitle": "Free JSON Patch Generator (RFC 6902 Diff Tool)",
+ "metaDescription": "Compare an original and a modified JSON document and get the RFC 6902 add, remove and replace operations that turn one into the other. Free, in-browser.",
+ "intro": "Paste an original and a changed JSON document and get a JSON Patch array of add, remove and replace operations that transforms the first into the second.",
+ "why": "JSON Patch lets an API send only what changed, instead of a whole document. Writing the operations by hand for a nested object is tedious and easy to get wrong, especially paths with escaped slashes or arrays where items shift.\n\nThis generator walks both documents and produces a patch with RFC 6901 paths. Objects are compared by key, arrays by position, and a changed leaf becomes a replace. It does not detect moves or copies, so an item that moved appears as a remove plus an add, and a reordered array becomes several replaces. The result is correct but not always the shortest. Use the JSON Patch Applier to confirm that it reproduces your target.",
+ "howTo": [
+  "Paste the original JSON in the first box.",
+  "Paste the modified JSON in the second box.",
+  "Copy the generated patch, and test it with the applier tool."
+ ],
+ "faq": [
+  {
+   "q": "Does it create move or copy operations?",
+   "a": "No. Only add, remove and replace are generated. A moved value shows up as removal at the old path and addition at the new one, which is still valid but longer."
+  },
+  {
+   "q": "How are arrays compared?",
+   "a": "Item by item, by index. Extra items at the end of the original are removed, from the last backwards, and extra items in the new array are added. Inserting at the front changes many indexes."
+  },
+  {
+   "q": "What if the documents are the same?",
+   "a": "The tool returns an empty array and states that they are identical. Key order inside objects does not count as a difference."
+  },
+  {
+   "q": "Will the patch work with any server?",
+   "a": "It follows RFC 6902, so servers that implement it should accept it. Some APIs use a different partial-update format, such as JSON Merge Patch, which this tool does not create."
+  }
+ ],
+ "related": [
+  "json-patch-applier",
+  "json-diff",
+  "json-pointer-tester",
+  "json-format",
+  "json-sort-keys",
+  "text-diff"
+ ],
+ "keywords": [
+  "json patch generator",
+  "rfc 6902 diff",
+  "json diff to patch",
+  "free json patch tool",
+  "create json patch online"
+ ]
+}

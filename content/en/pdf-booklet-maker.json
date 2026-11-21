@@ -1,0 +1,45 @@
+{
+ "id": "pdf-booklet-maker",
+ "seoTitle": "PDF Booklet Maker: Saddle-Stitch Page Order for Printing",
+ "metaDescription": "Reorder a PDF into saddle-stitch booklet layout, two pages per landscape sheet. Print double-sided, fold and staple. Padded with blanks automatically.",
+ "intro": "Arranges the pages of a PDF so that, printed double-sided on the short edge and folded in half, they form a booklet with the pages in the right order.",
+ "why": "A folded booklet needs the pages in an odd order: the last page sits next to the first, the second next to the second last, and so on. Working it out by hand for 20 pages is tedious and easy to get wrong.\n\nThe tool pads the page count to a multiple of four, builds the front and back of every sheet, and places two pages per landscape sheet. Right-to-left binding is supported for languages that need it. The output is a PDF you can check on screen before printing. Links, form fields and bookmarks are not carried over, and the sheet size defaults to A4 landscape.",
+ "howTo": [
+  "Choose a PDF.",
+  "Pick the sheet size and the binding side.",
+  "Press Run and check the page order summary.",
+  "Print double-sided, flip on the short edge, fold and staple."
+ ],
+ "faq": [
+  {
+   "q": "Which duplex setting should I use?",
+   "a": "Flip on the short edge, which most printers call \"short-edge binding\" or \"flip on short side\"."
+  },
+  {
+   "q": "Why were blank pages added?",
+   "a": "A booklet sheet holds four pages. Missing pages at the end are filled with blanks."
+  },
+  {
+   "q": "Will A5 pages fit on A4 sheets?",
+   "a": "Yes. An A5 booklet on A4 landscape sheets fits with little or no scaling. Other sizes are scaled to fit."
+  },
+  {
+   "q": "Can I do a perfect-bound book?",
+   "a": "No. This is saddle-stitch only, where all sheets nest inside each other."
+  }
+ ],
+ "related": [
+  "pdf-n-up",
+  "pdf-reorder-pages",
+  "pdf-merge",
+  "pdf-rotate",
+  "pdf-blank-page-inserter",
+  "pdf-add-page-numbers"
+ ],
+ "keywords": [
+  "pdf booklet maker",
+  "booklet printing pdf",
+  "saddle stitch imposition",
+  "make a booklet from pdf"
+ ]
+}

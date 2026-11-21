@@ -1,0 +1,44 @@
+{
+ "id": "form-label-checker",
+ "seoTitle": "Form Label Checker: Inputs Without an Accessible Name",
+ "metaDescription": "Paste HTML to find inputs, selects and textareas with no label, placeholder-only fields, broken label for links and groups without a legend.",
+ "intro": "Finds form controls that have no accessible name or a weak one.",
+ "why": "A field without a name is unusable with a screen reader and hard for voice control.\n\nThe tool computes each control name from label, aria-label and aria-labelledby, flags placeholder-only and title-only names as weak, finds label for values pointing nowhere, duplicate ids, and radio or checkbox groups outside a fieldset.",
+ "howTo": [
+  "Paste the form HTML.",
+  "Read errors first, then review items.",
+  "Add a visible label for each control.",
+  "Group related radios with fieldset and legend."
+ ],
+ "faq": [
+  {
+   "q": "Is a placeholder a label?",
+   "a": "No. It disappears when typing and is not a reliable name."
+  },
+  {
+   "q": "Are buttons checked?",
+   "a": "Yes, buttons and submit inputs need text, a value or an aria-label."
+  },
+  {
+   "q": "Which WCAG criteria does this cover?",
+   "a": "1.3.1, 3.3.2 and 4.1.2 patterns."
+  },
+  {
+   "q": "Is my form uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "a11y-html-check",
+  "accessible-name-calculator",
+  "autocomplete-attribute-helper",
+  "accessible-error-message-builder",
+  "aria-attribute-validator",
+  "alt-text-quality-checker"
+ ],
+ "keywords": [
+  "form label checker",
+  "inputs without labels",
+  "missing form labels html"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "sitemap-xml-escaper",
+ "seoTitle": "Sitemap URL XML Escaper (&amp; and Encoding)",
+ "metaDescription": "Make raw URLs safe for a sitemap: percent-encode spaces and non-ASCII, then escape & < > quotes. Free, runs locally.",
+ "intro": "Escapes URLs so they are valid inside sitemap XML.",
+ "why": "A raw ampersand in a sitemap makes the XML invalid. So do spaces and some characters in URLs.\n\nThis tool percent-encodes unsafe characters and then applies the XML entity escapes from sitemaps.org (&amp; &apos; &quot; &gt; &lt;). By default it leaves existing entities alone so you do not get &amp;amp;.",
+ "howTo": [
+  "Paste raw URLs, one per line.",
+  "Choose whether to wrap them in loc tags.",
+  "Leave the other options as they are for most cases.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Why does & become &amp;?",
+   "a": "XML needs it. The crawler reads it back as &."
+  },
+  {
+   "q": "What about double escaping?",
+   "a": "Keep the entity option on to avoid it."
+  },
+  {
+   "q": "Does it change %20?",
+   "a": "No, existing percent-escapes are kept."
+  },
+  {
+   "q": "Do I need this if I use a generator?",
+   "a": "Good generators do it already. This is for hand-made lists."
+  }
+ ],
+ "related": [
+  "sitemap-generator",
+  "text-sitemap-generator",
+  "html-entities",
+  "sitemap-validator",
+  "url-encode"
+ ],
+ "keywords": [
+  "sitemap escape",
+  "ampersand in sitemap",
+  "xml escape url",
+  "sitemap special characters"
+ ]
+}

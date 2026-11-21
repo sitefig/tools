@@ -1,0 +1,39 @@
+{
+ "id": "number-to-words-multilingual",
+ "seoTitle": "Number to Words in English, French, German, Dutch and Spanish",
+ "metaDescription": "Spell numbers in words in five languages, with euro, dollar and pound formats for cheques and contracts. Free, offline.",
+ "intro": "Writes numbers out in words in English, French, German, Dutch and Spanish, with an optional currency format.",
+ "why": "Cheques and contracts often need the amount in words. Rules differ by language: French 80 is quatre-vingts, German writes numbers as one word, Spanish says veintiun mil.\n\nEnter one number per line and pick a language and currency. It was compared with the num2words library on 71 numbers; the differences were library quirks (Dutch accent on een, German einhunderteinstausend, Spanish uno before mil). The Dutch one-word rule was not checked against the Taalunie.",
+ "howTo": [
+  "Enter numbers, one per line.",
+  "Pick the language.",
+  "Pick a currency format if needed."
+ ],
+ "faq": [
+  {
+   "q": "How large a number can it write?",
+   "a": "Up to 999,999,999,999."
+  },
+  {
+   "q": "Are cents supported?",
+   "a": "With a currency set, up to two decimal places, rounded half up."
+  },
+  {
+   "q": "Does it cover Belgian or Swiss variants?",
+   "a": "No, only standard forms."
+  }
+ ],
+ "related": [
+  "number-to-words",
+  "roman-numerals",
+  "currency-converter-manual-rates",
+  "percentage-calculator",
+  "scientific-notation-converter",
+  "number-base-converter"
+ ],
+ "keywords": [
+  "number to words french",
+  "nummer in letters",
+  "cheque amount in words"
+ ]
+}

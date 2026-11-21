@@ -1,0 +1,46 @@
+{
+ "id": "xlsx-to-json",
+ "seoTitle": "Free Excel to JSON Converter - XLSX to JSON Online",
+ "metaDescription": "Convert an .xlsx sheet to JSON in your browser: array of objects keyed by the header row, or array of arrays. Numbers and booleans are typed.",
+ "intro": "Pick an Excel workbook, choose a sheet, and get JSON you can paste into code, a mock API or a test fixture. The file is read in the browser and never uploaded.",
+ "why": "Spreadsheets are where a lot of reference data starts, but code wants JSON. Opening Excel, exporting CSV and then converting that again is three steps for one result. This tool reads the .xlsx file directly and produces an array of objects whose keys come from the first row, or a plain array of rows if your sheet has no header.\n\nIt reads the cached values stored in the file, so formulas appear as their last calculated result. Dates are stored by Excel as serial numbers and are kept that way here rather than guessed at; convert them with the date tools if you need ISO strings. Numbers and TRUE/FALSE cells become JSON numbers and booleans, and numbers longer than 15 digits stay as text so they do not lose precision. Only .xlsx files are supported, not the old .xls format.",
+ "howTo": [
+  "Choose an .xlsx file.",
+  "Set the sheet number if the data is not on the first sheet.",
+  "Pick array of objects (first row is the header) or array of arrays.",
+  "Copy or download the JSON."
+ ],
+ "faq": [
+  {
+   "q": "Does it support the old .xls format?",
+   "a": "No. Only .xlsx (Office Open XML) workbooks are read. Save an .xls as .xlsx first."
+  },
+  {
+   "q": "How are dates handled?",
+   "a": "Excel stores dates as numbers (days since 1900). They are left as those numbers, because a number alone cannot tell a date from a quantity. Convert them separately if you need ISO dates."
+  },
+  {
+   "q": "What happens to formulas?",
+   "a": "You get the value Excel last calculated and saved in the file. If the file was produced by a program that never calculated the formulas, those cells may be empty."
+  },
+  {
+   "q": "Is the spreadsheet uploaded?",
+   "a": "No. The file is opened in your browser and nothing is sent to a server."
+  }
+ ],
+ "related": [
+  "xlsx-viewer",
+  "csv-to-json",
+  "json-to-xlsx",
+  "csv-to-xlsx",
+  "json-csv-grid-editor",
+  "json-to-csv"
+ ],
+ "keywords": [
+  "excel to json",
+  "xlsx to json",
+  "convert excel to json online",
+  "spreadsheet to json",
+  "xlsx to json converter"
+ ]
+}

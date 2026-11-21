@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>URL Length Checker: Sitemap, Apache and Nginx Limits | Free Tools</title>
+<meta name="description" content="Check URL length against the sitemap 2,048 limit, Apache 8190 and Nginx 8k request line defaults and your own limit. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/url-length-checker/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/url-length-checker/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/url-length-checker/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="URL Length Checker: Sitemap, Apache and Nginx Limits | Free Tools">
+<meta property="og:description" content="Check URL length against the sitemap 2,048 limit, Apache 8190 and Nginx 8k request line defaults and your own limit. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/url-length-checker/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="URL Length Checker: Sitemap, Apache and Nginx Limits | Free Tools">
+<meta name="twitter:description" content="Check URL length against the sitemap 2,048 limit, Apache 8190 and Nginx 8k request line defaults and your own limit. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"URL Length Checker: Sitemap, Apache and Nginx Limits","url":"https://tools.sitefig.net/en/url-length-checker/","description":"Check URL length against the sitemap 2,048 limit, Apache 8190 and Nginx 8k request line defaults and your own limit. Free, in your browser.","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your URLs.","Set your own guideline if you have one (0 turns it off).","Read the table sorted from longest to shortest.","Investigate long URLs with many parameters first."],"keywords":"url length limit, max url length seo, sitemap url 2048, long url checker","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SEO – Technical","item":"https://tools.sitefig.net/en/#seo-technical"},{"@type":"ListItem","position":3,"name":"URL Length Checker: Sitemap, Apache and Nginx Limits","item":"https://tools.sitefig.net/en/url-length-checker/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is there an ideal URL length?","acceptedAnswer":{"@type":"Answer","text":"No official one. Short readable URLs are easier to share and to check, but length is not a known ranking factor."}},{"@type":"Question","name":"Characters or bytes?","acceptedAnswer":{"@type":"Answer","text":"Servers count bytes, so a URL with non-ASCII characters is longer in bytes. Percent-encoded forms count three characters per byte."}},{"@type":"Question","name":"Where do the limits come from?","acceptedAnswer":{"@type":"Answer","text":"sitemaps.org protocol, the Apache LimitRequestLine and Nginx large_client_header_buffers documentation."}},{"@type":"Question","name":"What about old browsers?","acceptedAnswer":{"@type":"Answer","text":"Limits of old browsers are not covered here."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#seo-technical">SEO – Technical</a></li><li><span aria-current="page">URL Length Checker: Sitemap, Apache and Nginx Limits</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>URL Length Checker: Sitemap, Apache and Nginx Limits</h1>
+<p class="lede">Lists URLs by length in characters and bytes, with path depth and parameter counts, and flags those over the sitemap limit, near default server limits or your own guideline.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="url-length-checker" data-module="new04"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Very long URLs are usually a sign of parameter or session ID problems. Some also break real limits: a sitemap entry must be shorter than 2,048 characters, Apache refuses request lines over 8,190 bytes by default and Nginx returns 414 when the request line does not fit its 8k buffer.</p>
+<p>Google does not publish a maximum URL length for Search that I could verify, so the &quot;own guideline&quot; setting is your style rule, not a ranking threshold. Browser and CDN limits are not checked.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your URLs.</li><li>Set your own guideline if you have one (0 turns it off).</li><li>Read the table sorted from longest to shortest.</li><li>Investigate long URLs with many parameters first.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Is there an ideal URL length?</summary><p>No official one. Short readable URLs are easier to share and to check, but length is not a known ranking factor.</p></details>
+<details><summary>Characters or bytes?</summary><p>Servers count bytes, so a URL with non-ASCII characters is longer in bytes. Percent-encoded forms count three characters per byte.</p></details>
+<details><summary>Where do the limits come from?</summary><p>sitemaps.org protocol, the Apache LimitRequestLine and Nginx large_client_header_buffers documentation.</p></details>
+<details><summary>What about old browsers?</summary><p>Limits of old browsers are not covered here.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/url-parameter-analyzer/"><span class="link-card__title">URL Parameter &amp; Crawl Trap Analyzer</span><span class="link-card__desc">Paste crawled URLs: see which query parameters multiply pages (facets, sorting, sessions) and get robots.txt and canonical suggestions.</span></a></li><li><a class="link-card" href="/en/sitemap-validator/"><span class="link-card__title">Sitemap Validator</span><span class="link-card__desc">Check limits, duplicates, bad URLs, dates and values in pasted sitemap XML.</span></a></li><li><a class="link-card" href="/en/url-parser/"><span class="link-card__title">URL Parser</span><span class="link-card__desc">Split a URL into protocol, host, port, path, query parameters and fragment.</span></a></li><li><a class="link-card" href="/en/slug-generator/"><span class="link-card__title">URL Slug Generator</span><span class="link-card__desc">Turn titles into clean, SEO-friendly URL slugs.</span></a></li><li><a class="link-card" href="/en/crawl-error-url-grouper/"><span class="link-card__title">Crawl Error URL Grouper: Find Patterns in 404 and Error URL Lists</span><span class="link-card__desc">Paste URLs from a Search Console export, a crawler or a log. Groups them by folder, URL pattern, file type or query parameter so you can fix a whole class of errors at once.</span></a></li><li><a class="link-card" href="/en/string-length-bytes/"><span class="link-card__title">String Length &amp; Byte Size</span><span class="link-card__desc">Characters, code points, graphemes, words, lines and byte sizes in UTF-8/16/32.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

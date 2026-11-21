@@ -1,0 +1,46 @@
+{
+  "id": "sentiment-lexicon",
+  "seoTitle": "Free Sentiment Analyzer for English Text",
+  "metaDescription": "Score English text as positive, negative or neutral using a small built-in word list that handles negation and intensifiers. Free, runs in your browser.",
+  "intro": "Scores English text with a small built-in word list and labels it positive, negative or neutral. It accounts for words like \"not\" and \"very\" and lists the words that drove the score.",
+  "why": "Reading a batch of reviews, survey answers or support tickets and asking \"is this mostly happy or angry?\" is a common first step in feedback analysis. Spinning up a machine learning service just to get a rough answer is overkill, and it means sending customer text to someone else.\n\nThis tool uses a transparent lexicon of a couple of hundred scored words. Negations flip the sign, so \"not helpful\" counts as negative, and intensifiers such as \"extremely\" boost the value. You see every matched word and its score, which makes the result easy to sanity-check. It is English only and cannot detect sarcasm, so use it for a rough signal. The text stays in your browser.",
+  "howTo": [
+    "Paste the English text you want to score.",
+    "Read the sentiment label, the total score and the per-word score.",
+    "Check the lists of positive and negative words that were matched.",
+    "Try shorter passages if you want to find which sentence changed the result."
+  ],
+  "faq": [
+    {
+      "q": "How does the score work?",
+      "a": "Each known word has a value, for example good is 2 and terrible is -3. Values are added up, then divided by the number of words to give a comparative score. Above 0.05 is positive, below -0.05 is negative, otherwise neutral."
+    },
+    {
+      "q": "How are negation and intensifiers handled?",
+      "a": "If a negation like not or never appears in the three words before a scored word, the value is multiplied by -0.75. An intensifier such as very or extremely multiplies it instead. Exclamation marks add a small push."
+    },
+    {
+      "q": "What are the limits?",
+      "a": "It knows only a small English word list, so unknown words score zero. It cannot spot sarcasm, idioms, domain jargon or other languages. Use it as a quick indicator, not for decisions about people."
+    },
+    {
+      "q": "Does my text leave the browser?",
+      "a": "No. The word list is built into the page and the scoring runs locally. Nothing is sent to a server, which makes it suitable for private feedback data."
+    }
+  ],
+  "related": [
+    "text-statistics",
+    "word-counter",
+    "keyword-extractor",
+    "language-detector",
+    "readability",
+    "tfidf"
+  ],
+  "keywords": [
+    "sentiment analyzer",
+    "sentiment analysis online free",
+    "text sentiment checker",
+    "positive or negative text detector",
+    "lexicon sentiment analysis"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "argon2-hash",
+ "seoTitle": "Free Argon2 Hash Generator: Argon2id, Argon2i, Argon2d",
+ "metaDescription": "Generate Argon2d, Argon2i or Argon2id hashes (RFC 9106) with memory, iterations and parallelism, as raw hex or a PHC string. Free, in your browser.",
+ "intro": "Enter a password, pick a variant and set memory, iterations, parallelism and tag length. The tool returns the Argon2 hash as a PHC string, raw hex, or both.",
+ "why": "Argon2id is the usual recommendation for storing passwords, and its parameters decide how costly an attack is. Developers need to check what a given set of memory, iterations and lanes produces, reproduce a hash from another language, or build a test fixture with a known password and salt. This page implements RFC 9106 version 1.3, supports a secret (pepper) and associated data, and prints either the raw tag or the standard PHC string that databases store. If you leave the salt empty, a random 16-byte salt is used and displayed. Memory is capped at 64 MiB so a browser tab stays responsive. It is an unaudited, hand-written implementation, so use a vetted library in production, and avoid real passwords here.",
+ "howTo": [
+  "Enter the password and choose argon2id, argon2i or argon2d.",
+  "Set memory in KiB, iterations, parallelism and tag length, then enter a salt, or leave it empty for a random one.",
+  "Choose phc, hex or both as the output and copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Which variant should I pick?",
+   "a": "Argon2id is the usual choice for password hashing because it resists both side-channel and GPU attacks. Argon2i and Argon2d suit more specialised cases."
+  },
+  {
+   "q": "What are the limits?",
+   "a": "Memory from 8 to 65,536 KiB (64 MiB), at least 8 times the parallelism, iterations up to 1000, lanes up to 255, a tag of 4 to 1024 bytes and a salt of at least 8 bytes."
+  },
+  {
+   "q": "Why does a PHC string lack my secret?",
+   "a": "The PHC format stores only the salt, parameters and tag. A secret or associated data is not encoded, so you must supply it again when verifying. The tool notes this when you use them."
+  },
+  {
+   "q": "Is it safe to paste real passwords?",
+   "a": "No. Do not enter live production passwords or secrets into any page you do not fully trust. This tool is for testing and learning, and the implementation has not been audited."
+  }
+ ],
+ "related": [
+  "argon2-verify",
+  "argon2-parameter-tuner",
+  "scrypt-kdf",
+  "bcrypt-generator",
+  "pbkdf2-key-derivation",
+  "password-strength"
+ ],
+ "keywords": [
+  "argon2 hash generator",
+  "argon2id online",
+  "free argon2 calculator",
+  "argon2 phc string",
+  "argon2 test vector",
+  "rfc 9106 argon2"
+ ]
+}

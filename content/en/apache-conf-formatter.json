@@ -1,0 +1,47 @@
+{
+ "id": "apache-conf-formatter",
+ "seoTitle": "Free Apache Config & .htaccess Formatter Online",
+ "metaDescription": "Free online Apache config formatter. Indent httpd.conf and .htaccess sections such as VirtualHost and Directory, tidy spacing and keep comments.",
+ "intro": "Indent an Apache configuration so that VirtualHost, Directory and IfModule sections are easy to follow. Spacing is tidied, blank lines are reduced and comments are kept.",
+ "why": "Apache configs grow by copy and paste. After a few years a virtual host file has mixed tabs and spaces, directives with random spacing and nested sections that no longer line up, and a missing closing tag is hard to see. The same goes for a long .htaccess full of rewrite rules.\n\nThis formatter indents each directive according to its nesting level, so every opening tag lines up with its closing one. It collapses the odd runs of spaces between a directive and its arguments, reduces repeated blank lines and leaves comments where they are. Choose 2 spaces, 4 spaces or a tab. It changes layout only and does not check whether the directives exist or are valid, so test with apachectl configtest. Nothing you paste is uploaded.",
+ "howTo": [
+  "Paste your httpd.conf, virtual host or .htaccess content into the input box.",
+  "Choose an indent of 2 spaces, 4 spaces or a tab.",
+  "Check that opening and closing section tags line up in the output.",
+  "Copy the result, then run apachectl configtest before reloading Apache."
+ ],
+ "faq": [
+  {
+   "q": "Does it validate my directives?",
+   "a": "No. It only fixes layout. It does not know which directives or modules exist, so a mistyped directive is formatted like any other. Run apachectl configtest to check the configuration."
+  },
+  {
+   "q": "Will it change how Apache reads the file?",
+   "a": "It should not. Indentation and the number of spaces between arguments do not matter to Apache. Quoted arguments and comments are left as written."
+  },
+  {
+   "q": "Does it work for .htaccess files?",
+   "a": "Yes. The same sections and directives appear in .htaccess, including IfModule blocks and rewrite rules, and are indented in the same way."
+  },
+  {
+   "q": "What about variables like ${APACHE_LOG_DIR}?",
+   "a": "They are treated as normal text and left unchanged, so values such as ErrorLog ${APACHE_LOG_DIR}/error.log stay as they are."
+  }
+ ],
+ "related": [
+  "htaccess-generator",
+  "nginx-formatter",
+  "htaccess-to-nginx",
+  "nginx-config-generator",
+  "redirect-rules-converter",
+  "caddyfile-generator"
+ ],
+ "keywords": [
+  "apache config formatter",
+  "htaccess formatter",
+  "format httpd.conf online",
+  "free apache formatter",
+  "apache virtualhost formatter",
+  "beautify htaccess"
+ ]
+}

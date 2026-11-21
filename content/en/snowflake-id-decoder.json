@@ -1,0 +1,45 @@
+{
+ "id": "snowflake-id-decoder",
+ "seoTitle": "Free Snowflake ID Decoder: Twitter/X, Discord and Custom",
+ "metaDescription": "Decode Snowflake IDs into creation time, worker, datacenter and sequence. Presets for Twitter/X and Discord, or set your own epoch and bit widths. Free.",
+ "intro": "Reads a 64-bit Snowflake ID and shows the time it was created and the worker and sequence fields packed inside.",
+ "why": "Snowflake IDs pack a timestamp, a machine identifier and a counter into one 64-bit number so they sort by time without a central counter. Twitter/X and Discord use this scheme with different epochs.\n\nThe presets use the values from the Twitter snowflake source (epoch 1288834974657, 5 + 5 + 12 bits) and the Discord API reference (epoch 1420070400000). For other systems choose Custom and enter the epoch and bit widths. Check a known ID before trusting a custom layout.",
+ "howTo": [
+  "Paste one or more IDs.",
+  "Choose the layout.",
+  "For Custom enter the epoch in Unix milliseconds and the bit widths.",
+  "Read the time and fields."
+ ],
+ "faq": [
+  {
+   "q": "What if my platform is not listed?",
+   "a": "Pick Custom and enter its epoch and bit layout from its documentation. Layouts differ between systems."
+  },
+  {
+   "q": "Why is the time wrong?",
+   "a": "Usually the wrong layout or epoch. Try the other preset or check the ID is a Snowflake and not a different kind of ID."
+  },
+  {
+   "q": "Are IDs treated as numbers?",
+   "a": "They are read as exact 64-bit integers, so no precision is lost, unlike plain JavaScript numbers."
+  },
+  {
+   "q": "Can it create IDs?",
+   "a": "No, it only decodes."
+  }
+ ],
+ "related": [
+  "uuid-v7-timestamp-extractor",
+  "ulid-generator",
+  "ksuid-tool",
+  "uuid-generator",
+  "timestamp-converter",
+  "nanoid-generator"
+ ],
+ "keywords": [
+  "snowflake id decoder",
+  "discord id to date",
+  "twitter snowflake timestamp",
+  "decode snowflake"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "white-noise-generator",
+ "seoTitle": "Free White, Pink and Brown Noise Generator",
+ "metaDescription": "Play white, pink or brown noise with a volume slider for focus, sleep or masking sound. Generated live in your browser, free and no download.",
+ "intro": "Play steady white, pink or brown noise with a volume control. The sound is generated live in your browser and loops until you press stop.",
+ "why": "Steady background noise helps some people concentrate in an open office, settle a baby, mask a noisy neighbour or fall asleep. Streaming sites and apps can do this, but they add adverts, require sign-in or stop when the connection drops.\n\nThis generator creates the sound itself, with no audio files to download. White noise has equal energy at every frequency and sounds like a hiss; pink noise falls off toward the highs and sounds softer, like steady rain; brown noise is deeper still, closer to a low rumble. A four-second buffer is built when you press start and looped, so playback is gap-free. Keep the volume low, since long listening at high levels can harm your hearing.",
+ "howTo": [
+  "Choose a type: white, pink or brown.",
+  "Set the volume with the slider before you start.",
+  "Press Start to begin playback; press it again to stop.",
+  "Switch type at any time and the sound restarts with the new colour."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between the noise types?",
+   "a": "White noise is bright and hissy. Pink noise reduces high frequencies and sounds more natural. Brown noise emphasises low frequencies and sounds like a deep rumble. Try each and keep the one that feels comfortable."
+  },
+  {
+   "q": "Will it keep playing in the background?",
+   "a": "It plays while the page is open. Some phones pause web audio when the screen locks or the tab is closed, so test on your device before relying on it overnight."
+  },
+  {
+   "q": "Is there a timer?",
+   "a": "No. It plays until you stop it or close the page. If you want it to end automatically, use a separate countdown timer alongside it."
+  },
+  {
+   "q": "Is anything downloaded or recorded?",
+   "a": "No audio files are fetched and nothing is recorded or uploaded. The samples are computed in your browser from random numbers using the Web Audio API."
+  }
+ ],
+ "related": [
+  "tone-generator",
+  "metronome",
+  "decibel-meter",
+  "countdown-timer",
+  "pomodoro-timer",
+  "audio-trimmer"
+ ],
+ "keywords": [
+  "white noise generator",
+  "pink noise online",
+  "brown noise generator",
+  "free noise for sleep",
+  "focus noise player"
+ ]
+}

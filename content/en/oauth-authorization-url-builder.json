@@ -1,0 +1,44 @@
+{
+ "id": "oauth-authorization-url-builder",
+ "seoTitle": "Free OAuth 2.0 Authorization URL Builder With PKCE and State",
+ "metaDescription": "Build an OAuth 2.0 or OpenID Connect authorization URL with scopes, state, nonce and PKCE S256. Free, runs locally.",
+ "intro": "Builds the authorization request URL for the authorization code or implicit flow. It encodes the parameters, can generate a random state, nonce and a PKCE code challenge, and lists each parameter.",
+ "why": "Authorization URLs fail on small things: an unencoded redirect URI, a missing scope separator, no state, a PKCE challenge that does not match the verifier. The error pages are often vague.\n\nThis tool assembles the URL with correct encoding and random values from the browser crypto API. If it generates a PKCE verifier it shows it once. Keep it, you need it at the token request. Client secrets do not belong in this URL and the tool has no field for them.",
+ "howTo": [
+  "Enter the authorization endpoint, client_id and redirect URI.",
+  "Choose the response type and scopes.",
+  "Leave state blank for a random one, and tick PKCE for the code flow.",
+  "Copy the URL and keep the code verifier."
+ ],
+ "faq": [
+  {
+   "q": "Does it send the URL anywhere?",
+   "a": "No. It only builds text. You open the URL yourself."
+  },
+  {
+   "q": "Why is PKCE ignored for some response types?",
+   "a": "PKCE protects the authorization code flow. For other flows there is no code to protect."
+  },
+  {
+   "q": "Do I need a nonce?",
+   "a": "OpenID Connect flows that return an ID token directly need one. The tool warns when it is missing."
+  },
+  {
+   "q": "Where do I put the client secret?",
+   "a": "Not in this URL. It goes in the token request, from a server."
+  }
+ ],
+ "related": [
+  "pkce-generator",
+  "jwt-expiry-calculator",
+  "http-basic-auth-generator",
+  "query-string",
+  "webhook-signature-verifier",
+  "url-encode"
+ ],
+ "keywords": [
+  "oauth authorization url",
+  "oauth2 url builder",
+  "pkce authorize url"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "bot-status-code-report",
+ "seoTitle": "Crawler Status Code Report: 2xx, 3xx, 4xx and 5xx by Bot",
+ "metaDescription": "Break down the HTTP status codes your server returned to each crawler, with exact codes and the URLs behind most errors. Free and local.",
+ "intro": "Shows status classes per crawler, the exact status codes and the URLs that received the most 4xx and 5xx answers.",
+ "why": "Every redirect and error served to a crawler is a request that did not fetch a page. A small share is normal. A large share of 3xx means internal links and sitemaps point to old URLs, and a rise in 5xx means the server struggled while bots were visiting.\n\nThe table separates crawlers, because Googlebot, Bingbot and AI bots often see different mixes. The error URL list shows what to fix first.",
+ "howTo": [
+  "Paste access log lines.",
+  "Choose the bots, or all known bots.",
+  "Read the status classes per crawler.",
+  "Fix the URLs listed under 4xx and 5xx, then update links that point to redirects."
+ ],
+ "faq": [
+  {
+   "q": "Is a 304 an error?",
+   "a": "No. It means not modified, which is a cheap and good answer to a conditional request."
+  },
+  {
+   "q": "What error share is too high?",
+   "a": "There is no fixed limit. Anything that keeps growing, or that sits on important URLs, deserves a fix."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  },
+  {
+   "q": "Which log format does it read?",
+   "a": "Apache and nginx combined format: IP, time in brackets, the quoted request, status, bytes, then the quoted referrer and user agent. Lines in another format are skipped and counted."
+  }
+ ],
+ "related": [
+  "access-log-analyzer",
+  "redirect-hits-in-logs",
+  "wasted-crawl-detector",
+  "crawl-error-url-grouper",
+  "ai-bot-access-log-analyzer",
+  "fake-googlebot-log-detector"
+ ],
+ "keywords": [
+  "bot status code report",
+  "googlebot 404 301 500 in logs",
+  "crawler http status analysis",
+  "server log status codes seo"
+ ]
+}

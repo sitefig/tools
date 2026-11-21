@@ -1,0 +1,41 @@
+{
+ "id": "thread-splitter",
+ "seoTitle": "Thread Splitter: Long Text into Numbered Posts",
+ "metaDescription": "Split long text into numbered posts that fit X, Threads or Bluesky, breaking at sentence ends. Free, private, in your browser.",
+ "intro": "Split a long text into numbered posts of a set length for X, Threads or Bluesky, breaking at sentence ends and keeping every post under the limit.",
+ "why": "Long ideas need a thread, but cutting one by hand is fiddly: each post needs room for its number and must not end mid-sentence.\n\nSet the limit and the numbering style. The tool reserves space for the number, packs whole sentences into each post, keeps paragraph breaks where it can and splits only a sentence that is too long. With the X option, links count 23 and emoji 2. Links are never broken.",
+ "howTo": [
+  "Paste the long text.",
+  "Set the limit per post and the numbering.",
+  "Keep the X counting option on for X.",
+  "Copy each post in order."
+ ],
+ "faq": [
+  {
+   "q": "Where does it break?",
+   "a": "At sentence ends. A sentence longer than the limit is split at a word."
+  },
+  {
+   "q": "How is the numbering counted?",
+   "a": "Space for 1/5 style numbers is reserved in each post."
+  },
+  {
+   "q": "Does it post for me?",
+   "a": "No. It only formats text."
+  }
+ ],
+ "related": [
+  "x-post-character-counter",
+  "social-post-length-checker",
+  "text-splitter",
+  "hashtag-formatter",
+  "social-post-preview",
+  "char-limit-counter"
+ ],
+ "keywords": [
+  "thread splitter",
+  "twitter thread maker",
+  "split text into tweets",
+  "bluesky thread splitter"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "fraction-calculator",
+ "seoTitle": "Free Fraction Calculator: Add, Subtract, Multiply",
+ "metaDescription": "Add, subtract, multiply and divide fractions, mixed numbers and decimals, with the answer simplified and shown as a mixed number. Free, in your browser.",
+ "intro": "Enter two fractions, mixed numbers or decimals and choose an operation. The tool simplifies the result and shows it as a fraction, a mixed number and a decimal.",
+ "why": "Fractions are one of those skills that vanish once school is over, then reappear in recipes, woodwork, sewing patterns and helping with homework. Adding 3/4 and 2/3 means finding a common denominator, and getting a result like 17/12 raises a further question: how is that written as a mixed number? This calculator takes the usual notations, 3/4, 1 1/2 or 2.5, performs the operation with exact integer arithmetic and reduces the answer to its lowest terms. You see the improper fraction, the mixed number and the decimal side by side, which makes it easy to check your own working. Division by zero is caught with a clear message. Nothing is uploaded.",
+ "howTo": [
+  "Type fraction A, such as 3/4, 1 1/2 or 2.5.",
+  "Choose +, −, × or ÷ and type fraction B.",
+  "Read the simplified result as a fraction, a mixed number and a decimal."
+ ],
+ "faq": [
+  {
+   "q": "How do I enter a mixed number?",
+   "a": "Write the whole number, a space, then the fraction, for example 1 1/2. Negative mixed numbers work with a leading minus sign, such as -2 1/4."
+  },
+  {
+   "q": "Does it reduce fractions to lowest terms?",
+   "a": "Yes. The result is divided by the greatest common divisor of numerator and denominator, so 6/8 is shown as 3/4."
+  },
+  {
+   "q": "Can I use decimals?",
+   "a": "Yes. A decimal like 2.5 is converted to the fraction 25/10 and then simplified. Very long decimals may be rounded when converted."
+  },
+  {
+   "q": "What happens with a zero denominator?",
+   "a": "The tool shows an error, because a fraction with zero below the line is undefined. Dividing by a fraction equal to zero is also rejected."
+  }
+ ],
+ "related": [
+  "scientific-expression-calculator",
+  "percentage-calculator",
+  "average-median-mode",
+  "unit-converter",
+  "gpa-calculator",
+  "bitwise-calculator"
+ ],
+ "keywords": [
+  "fraction calculator",
+  "free fraction calculator",
+  "add fractions calculator",
+  "mixed number calculator",
+  "simplify fractions",
+  "divide fractions online"
+ ]
+}

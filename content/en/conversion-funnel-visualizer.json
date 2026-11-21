@@ -1,0 +1,47 @@
+{
+ "id": "conversion-funnel-visualizer",
+ "seoTitle": "Free Conversion Funnel Visualizer and Drop-Off Chart",
+ "metaDescription": "Turn funnel stages and counts into a bar funnel chart with step conversion, drop-off and overall conversion. Free, runs in your browser, no upload.",
+ "intro": "Enter funnel stages and their counts, one per line, and get a funnel chart showing each step's conversion from the previous stage, the drop-off and the overall conversion from the top.",
+ "why": "Where do visitors fall away between landing on a page and paying? The raw counts rarely tell you: 10,000 visits and 120 purchases is one number, but the weak step might be the sign-up page, or activation after sign-up. Seeing every step as a percentage of the one before makes the biggest leak obvious.\n\nPaste the counts from your analytics, in order, and the chart draws a bar per stage with the share of the previous stage, the drop-off and the share of the first stage. It calculates from what you enter and does not connect to any analytics service. The data is drawn in your browser and is never uploaded.",
+ "howTo": [
+  "Enter one stage per line as \"Stage name, count\", starting with the top of the funnel.",
+  "Use at least two stages.",
+  "Run the tool to draw the funnel.",
+  "Read each bar with its step conversion, drop-off and overall percentage."
+ ],
+ "faq": [
+  {
+   "q": "What is step conversion versus overall conversion?",
+   "a": "Step conversion is the percentage of the previous stage that reached this one. Overall conversion is the percentage of the very first stage that reached this one. Both matter: the step shows the leak, the total shows the outcome."
+  },
+  {
+   "q": "How do I get the counts?",
+   "a": "From your analytics, a CRM or a database query, counting people or sessions at each stage over the same period. Use the same unit for every stage, otherwise the percentages mislead."
+  },
+  {
+   "q": "Can a later stage have a higher count than an earlier one?",
+   "a": "It can happen with different counting units or time windows, and the tool will show a step above 100 percent. Treat that as a signal that the data needs checking."
+  },
+  {
+   "q": "Can I save the chart?",
+   "a": "The chart is shown in the page. Take a screenshot, or copy the figures into a spreadsheet to build your own chart."
+  }
+ ],
+ "related": [
+  "ab-test-calculator",
+  "ads-roas-calculator",
+  "retention-calculator",
+  "user-flow-to-mermaid-text",
+  "csv-viewer",
+  "percent-change"
+ ],
+ "keywords": [
+  "conversion funnel visualizer",
+  "funnel chart generator",
+  "funnel drop-off calculator",
+  "free funnel analysis tool",
+  "sales funnel conversion rate",
+  "signup funnel chart"
+ ]
+}

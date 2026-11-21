@@ -1,0 +1,45 @@
+{
+  "id": "geohash-tool",
+  "seoTitle": "Geohash Encoder, Decoder and Neighbours",
+  "metaDescription": "Convert latitude and longitude to a geohash and back, see the cell size and bounding box, and list the eight neighbouring cells.",
+  "intro": "Work with geohashes: encode a coordinate, decode a hash to its centre and box, or find the adjacent cells.",
+  "why": "Enter \"lat, lon\" to get the geohash at your chosen precision (1 to 12 characters) with the approximate cell size and shorter prefixes, or enter a geohash to get its centre, error margin, bounding box and neighbours. The functions follow the standard base-32 geohash interleaving and were checked against reference vectors and an independent implementation.\n\nA geohash cell is a rectangle whose size depends on latitude, and nearby points can have very different hashes at cell borders, so always include neighbour cells when searching by proximity.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter coordinates like 57.64911, 10.40744 or a geohash like u4pruydqqvj.",
+    "Choose precision when encoding.",
+    "Read the centre, box and neighbours.",
+    "Use prefixes to search an area at lower precision."
+  ],
+  "faq": [
+    {
+      "q": "How precise is a 9-character geohash?",
+      "a": "About 4.8 m by 4.8 m near the equator."
+    },
+    {
+      "q": "Why do neighbours matter?",
+      "a": "Points close together can fall in different cells; query the cell plus its neighbours to be safe."
+    },
+    {
+      "q": "Is it the same as a plus code?",
+      "a": "No, Open Location Code (plus codes) is a different scheme."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "unit-converter",
+    "timezone-converter",
+    "ip-validator-converter",
+    "json-to-csv",
+    "csv-viewer",
+    "screen-size-ppi"
+  ],
+  "keywords": [
+    "geohash",
+    "geohash encoder decoder",
+    "latitude longitude to geohash",
+    "geohash neighbors"
+  ]
+}

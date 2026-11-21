@@ -1,0 +1,45 @@
+{
+ "id": "cac-ltv-calculator",
+ "seoTitle": "CAC and LTV:CAC Ratio Calculator with Payback Period",
+ "metaDescription": "Calculate customer acquisition cost, lifetime value, LTV to CAC ratio and CAC payback months from spend, margin and lifespan.",
+ "intro": "Enter spend, new customers, revenue, margin and lifespan to get CAC, LTV, the ratio and payback.",
+ "why": "CAC alone says little. Set against what a customer returns, it shows whether growth pays for itself, and how many months it takes to earn the acquisition cost back.\n\nLTV here is gross profit over the lifespan, or over 1 divided by monthly churn if you enter churn. The 3:1 ratio is a common rule of thumb, not a law. Count salaries and tools in the spend for an honest CAC.",
+ "howTo": [
+  "Enter marketing and sales spend and new customers for a period.",
+  "Enter revenue per customer per month and margin.",
+  "Enter lifespan or churn.",
+  "Read CAC, LTV, ratio and payback."
+ ],
+ "faq": [
+  {
+   "q": "Is 3:1 a rule?",
+   "a": "It is a common benchmark. Context such as cash and growth stage matters."
+  },
+  {
+   "q": "Which period?",
+   "a": "Use the same period for spend and new customers."
+  },
+  {
+   "q": "Revenue or profit?",
+   "a": "The tool uses gross profit via margin."
+  },
+  {
+   "q": "Is data stored?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "retention-calculator",
+  "ads-roas-calculator",
+  "roi-calculator",
+  "email-subscriber-value-calculator",
+  "marketing-funnel-calculator",
+  "profit-margin"
+ ],
+ "keywords": [
+  "cac calculator",
+  "ltv cac ratio",
+  "customer acquisition cost",
+  "cac payback period"
+ ]
+}

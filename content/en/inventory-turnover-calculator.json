@@ -1,0 +1,39 @@
+{
+ "id": "inventory-turnover-calculator",
+ "seoTitle": "Inventory Turnover and Days of Inventory Calculator",
+ "metaDescription": "Compute turnover and days of inventory from cost of goods sold and opening and closing inventory. Free, private.",
+ "intro": "Calculates how many times stock turns over in a period and how many days it sits.",
+ "why": "Turnover shows how fast stock sells. Too low means cash sits on shelves, and too high can mean lost sales from stock-outs. Dividing by 365 gives days of inventory, which is easier to read.\n\nUse cost of goods sold, not revenue, and inventory valued at cost so both sides share a basis. What counts as a good value differs a lot between products, so compare with your own past figures and similar businesses.",
+ "howTo": [
+  "Enter cost of goods sold for the period.",
+  "Enter inventory value at the start and end.",
+  "Set days in the period and read turnover and days."
+ ],
+ "faq": [
+  {
+   "q": "Why use average inventory?",
+   "a": "Stock changes during the period, so averaging start and end smooths it."
+  },
+  {
+   "q": "Can I use revenue instead of COGS?",
+   "a": "Not for the standard ratio. It mixes cost and price bases."
+  },
+  {
+   "q": "What is a good turnover?",
+   "a": "It depends on the product. Compare with your history and peers."
+  }
+ ],
+ "related": [
+  "reorder-point-calculator",
+  "safety-stock-calculator",
+  "economic-order-quantity-calculator",
+  "average-order-value-calculator",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "inventory turnover ratio",
+  "days of inventory",
+  "stock turn calculator"
+ ]
+}

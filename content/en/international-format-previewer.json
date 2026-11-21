@@ -1,0 +1,45 @@
+{
+ "id": "international-format-previewer",
+ "seoTitle": "International Date, Number and Currency Format Previewer",
+ "metaDescription": "See one number, price and date in many locales at once with Intl, including separators, order, currency symbols and digits.",
+ "intro": "Shows how one value is written in the locales you choose, side by side.",
+ "why": "1,234.56 in the US is 1.234,56 in Germany and 1 234,56 in France. Dates change order and separators, and some locales use other digits. Pick locales, enter a number, a currency and a date, and compare.\n\nThe output comes from your browser's Intl implementation with CLDR data, which is what your own site would use. The table is plain text so you can copy it into a brief for translators.",
+ "howTo": [
+  "List the locales.",
+  "Set the number, currency and date.",
+  "Read the table.",
+  "Copy it into your localisation notes."
+ ],
+ "faq": [
+  {
+   "q": "Why do browsers differ?",
+   "a": "They ship different CLDR versions."
+  },
+  {
+   "q": "Is the date in UTC?",
+   "a": "Yes, so output is the same wherever you are."
+  },
+  {
+   "q": "Can I add other fields?",
+   "a": "Not here; this covers numbers, currency, percent and dates."
+  },
+  {
+   "q": "Why do some locales show other digits?",
+   "a": "Locales like ar-EG use their own numbering system by default."
+  }
+ ],
+ "related": [
+  "currency-display-checker",
+  "hreflang-code-checker",
+  "language-region-code-lookup",
+  "date-formats",
+  "currency-converter-manual-rates",
+  "locale-negotiation-simulator"
+ ],
+ "keywords": [
+  "intl number format preview",
+  "locale date format",
+  "currency format by country",
+  "number format germany"
+ ]
+}

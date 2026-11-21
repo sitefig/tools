@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PSD Viewer: Open Photoshop Layers and Flatten Online, No Photoshop | Free Tools</title>
+<meta name="description" content="Open a .psd in your browser: list layers with blend mode, opacity, groups and bounds, see the composite, flatten visible layers or export one layer as PNG. No upload.">
+<link rel="canonical" href="https://tools.sitefig.net/en/psd-layer-viewer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/psd-layer-viewer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/psd-layer-viewer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="PSD Viewer: Open Photoshop Layers and Flatten Online, No Photoshop | Free Tools">
+<meta property="og:description" content="Open a .psd in your browser: list layers with blend mode, opacity, groups and bounds, see the composite, flatten visible layers or export one layer as PNG. No upload.">
+<meta property="og:url" content="https://tools.sitefig.net/en/psd-layer-viewer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PSD Viewer: Open Photoshop Layers and Flatten Online, No Photoshop | Free Tools">
+<meta name="twitter:description" content="Open a .psd in your browser: list layers with blend mode, opacity, groups and bounds, see the composite, flatten visible layers or export one layer as PNG. No upload.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"PSD Viewer: Layers, Composite and Flatten (Photoshop File)","url":"https://tools.sitefig.net/en/psd-layer-viewer/","description":"Open a .psd in your browser: list layers with blend mode, opacity, groups and bounds, see the composite, flatten visible layers or export one layer as PNG. No upload.","applicationCategory":"MultimediaApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Choose a .psd file.","Read the layer table (numbered bottom to top).","Pick the stored composite, flattened layers or a single layer.","Download the PNG."],"keywords":"psd viewer, open psd online, photoshop file viewer, psd layers, flatten psd, psd to png","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Images","item":"https://tools.sitefig.net/en/#images"},{"@type":"ListItem","position":3,"name":"PSD Viewer: Layers, Composite and Flatten (Photoshop File)","item":"https://tools.sitefig.net/en/psd-layer-viewer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why do text layers look missing in the flattened image?","acceptedAnswer":{"@type":"Answer","text":"Text, vector shapes, smart objects, adjustments and layer effects need Photoshop's renderer. They are listed in the table and reported as not drawn; the stored composite includes them if the file has one."}},{"@type":"Question","name":"What is the stored composite?","acceptedAnswer":{"@type":"Answer","text":"Photoshop saves a flattened copy in each file when Maximise Compatibility is on. It is the most faithful preview when present."}},{"@type":"Question","name":"Does it open PSB or CMYK files?","acceptedAnswer":{"@type":"Answer","text":"No. PSB, CMYK, Lab, indexed and 32-bit files give a clear message. The layer list is still shown for unsupported colour modes."}},{"@type":"Question","name":"Which blend modes are supported?","acceptedAnswer":{"@type":"Answer","text":"Normal, multiply, screen, overlay, darken, lighten, difference, linear dodge and exclusion. Others are drawn as normal and named in the report."}},{"@type":"Question","name":"Is my file uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. It is decoded in your browser."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#images">Images</a></li><li><span aria-current="page">PSD Viewer: Layers, Composite and Flatten (Photoshop File)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>PSD Viewer: Layers, Composite and Flatten (Photoshop File)</h1>
+<p class="lede">Inspect a Photoshop file without Photoshop: layer list, stored preview, flattened result and single-layer export.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="psd-layer-viewer" data-module="gap3"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>The reader parses the PSD header, the layer and mask section and the merged image. For each layer it reports name (Unicode when present), bounds, blend mode, opacity, visibility, clipping, mask, group structure and kind (pixel, text, smart object, shape, fill or adjustment). Pixel data is decoded for raw, RLE, ZIP and ZIP-with-prediction channels in RGB and grayscale, 8 and 16 bit. You can show the composite stored in the file, flatten the layers yourself, or export one layer as a PNG.</p>
+<p>The flattener honours hidden layers and hidden groups, opacity, layer masks, clipping and the blend modes normal, multiply, screen, overlay, darken, lighten, difference, linear dodge and exclusion. Tested against psd-tools on files with all four compressions, groups, a hidden group and a multiply layer: every layer's pixels and bounds were identical, and the flattened image matched psd-tools' composite exactly. 16-bit RGB and 8-bit grayscale files also matched.</p>
+<p>Limits: CMYK, Lab, indexed and bitmap modes, 32-bit documents and PSB (large) files are not supported. Text, shapes, smart objects, adjustment layers and layer effects are listed but not drawn, and other blend modes are drawn as normal and reported. If a file was saved without Maximise Compatibility its stored composite is empty, so use the flatten option.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Choose a .psd file.</li><li>Read the layer table (numbered bottom to top).</li><li>Pick the stored composite, flattened layers or a single layer.</li><li>Download the PNG.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why do text layers look missing in the flattened image?</summary><p>Text, vector shapes, smart objects, adjustments and layer effects need Photoshop's renderer. They are listed in the table and reported as not drawn; the stored composite includes them if the file has one.</p></details>
+<details><summary>What is the stored composite?</summary><p>Photoshop saves a flattened copy in each file when Maximise Compatibility is on. It is the most faithful preview when present.</p></details>
+<details><summary>Does it open PSB or CMYK files?</summary><p>No. PSB, CMYK, Lab, indexed and 32-bit files give a clear message. The layer list is still shown for unsupported colour modes.</p></details>
+<details><summary>Which blend modes are supported?</summary><p>Normal, multiply, screen, overlay, darken, lighten, difference, linear dodge and exclusion. Others are drawn as normal and named in the report.</p></details>
+<details><summary>Is my file uploaded?</summary><p>No. It is decoded in your browser.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/image-format-converter/"><span class="link-card__title">Image Format Converter</span><span class="link-card__desc">Convert images to PNG, JPEG or WebP (formats browsers can encode).</span></a></li><li><a class="link-card" href="/en/image-info/"><span class="link-card__title">Image Info</span><span class="link-card__desc">Dimensions, type, size, aspect ratio, transparency and dominant colors of images.</span></a></li><li><a class="link-card" href="/en/exif-viewer/"><span class="link-card__title">EXIF / Image Metadata Viewer</span><span class="link-card__desc">Parse JPEG EXIF (camera, dates, GPS) and PNG/WebP chunks with a hand-written parser. File never leaves your browser.</span></a></li><li><a class="link-card" href="/en/image-compressor/"><span class="link-card__title">Image Compressor</span><span class="link-card__desc">Re-encode as JPEG or WebP at a chosen quality and see the size savings. Batch supported.</span></a></li><li><a class="link-card" href="/en/image-resizer/"><span class="link-card__title">Image Resizer</span><span class="link-card__desc">Resize by pixels or percent, keep aspect ratio, choose output format. Batch supported.</span></a></li><li><a class="link-card" href="/en/image-diff/"><span class="link-card__title">Image Diff</span><span class="link-card__desc">Compare two images and highlight changed pixels in red, with the percentage changed.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

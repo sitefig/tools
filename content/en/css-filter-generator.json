@@ -1,0 +1,46 @@
+{
+  "id": "css-filter-generator",
+  "seoTitle": "Free CSS Filter Generator: Blur, Hue, Sepia",
+  "metaDescription": "Combine blur, brightness, contrast, grayscale, hue-rotate, invert, opacity, saturate and sepia into one CSS filter value. Free, in your browser.",
+  "intro": "Assembles a CSS filter property from sliders-style inputs: blur, brightness, contrast, grayscale, hue-rotate, invert, opacity, saturate and sepia. Only changed values are included.",
+  "why": "CSS filters can recolour an icon, dim an image on hover, or soften a background, all without editing the picture. The syntax is simple, but the effect of combining several is hard to predict, and the order matters.\n\nEnter values for the filters you want, leave the rest at their defaults, and the tool writes a clean declaration that leaves out anything unchanged. A sample image shows the result, so you can see how a hue rotation interacts with a saturation boost. The preview is a colourful gradient rather than your own image, so use it to find a recipe, then test on the real thing. It all runs in your browser.",
+  "howTo": [
+    "Set the filter values you want to change.",
+    "Leave the others at their defaults so they are left out.",
+    "Look at the preview, which updates as you type.",
+    "Copy the filter line."
+  ],
+  "faq": [
+    {
+      "q": "In what order are the filters applied?",
+      "a": "In the order they are written, and this tool writes them in a fixed order: blur, brightness, contrast, grayscale, hue-rotate, invert, opacity, saturate, sepia. If you need a different order, edit the copied line."
+    },
+    {
+      "q": "What are the default values?",
+      "a": "Blur, grayscale, hue-rotate, invert and sepia default to 0. Brightness, contrast, opacity and saturate default to 100%. A value at its default is omitted, and no change at all gives filter: none."
+    },
+    {
+      "q": "Does filter affect performance?",
+      "a": "Heavy blur on big areas or animated filters can be expensive to render. Use modest values, and avoid animating them across large elements."
+    },
+    {
+      "q": "How is this different from the Image Filters tool?",
+      "a": "This tool only writes CSS for use in a web page. The Image Filters tool bakes the effect into a new image file that you can download."
+    }
+  ],
+  "related": [
+    "image-filters",
+    "text-shadow-generator",
+    "box-shadow-generator",
+    "glassmorphism-generator",
+    "color-blindness-simulator",
+    "css-animation-generator"
+  ],
+  "keywords": [
+    "css filter generator",
+    "css hue rotate generator",
+    "css blur filter",
+    "css grayscale filter",
+    "free css filter online"
+  ]
+}

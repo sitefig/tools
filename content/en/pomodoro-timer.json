@@ -1,0 +1,46 @@
+{
+ "id": "pomodoro-timer",
+ "seoTitle": "Free Pomodoro Timer: Work and Break Cycles",
+ "metaDescription": "A Pomodoro timer with adjustable work, short break and long break lengths, and a long break after every fourth round. Free, runs in your browser.",
+ "intro": "Set your work, short break and long break lengths and press Start. The timer runs four work rounds with short breaks, then a long break, and repeats.",
+ "why": "The Pomodoro technique splits work into short focused blocks with breaks between them, which many people find helps them start tasks and avoid drifting into a four-hour slog. The classic pattern is 25 minutes of work and 5 of rest, with a longer break after four rounds. You do not need an app for that. This timer builds the full cycle from three numbers, shows which segment you are in and how many remain, beeps at each change and loops until you stop it. You can change the lengths to suit you, for instance 50 minutes of work with a 10 minute break. It works without a login and keeps nothing on a server. Sound may need a first click on the page.",
+ "howTo": [
+  "Set the work, short break and long break lengths in minutes.",
+  "Press Start to begin the first work round.",
+  "Use Pause, Skip to jump to the next segment, or Reset to go back to the beginning."
+ ],
+ "faq": [
+  {
+   "q": "What is the default cycle?",
+   "a": "Twenty-five minutes of work and 5 of break, repeated four times, with the fourth break replaced by a 15 minute long break. The cycle then starts again."
+  },
+  {
+   "q": "Can I change the lengths?",
+   "a": "Yes. Edit the minutes and the timer resets to the new plan. All three values must be above zero, otherwise a message asks you to correct them."
+  },
+  {
+   "q": "Does it keep going automatically?",
+   "a": "Yes. When a segment ends it beeps and starts the next one on its own, looping through the four-round cycle until you pause or reset."
+  },
+  {
+   "q": "Are my sessions tracked?",
+   "a": "No. Nothing is recorded or stored, so there are no statistics or history. It is only a timer."
+  }
+ ],
+ "related": [
+  "countdown-timer",
+  "stopwatch",
+  "exam-section-timer",
+  "habit-streak-tracker",
+  "decision-wheel",
+  "world-clock"
+ ],
+ "keywords": [
+  "pomodoro timer",
+  "free pomodoro timer",
+  "pomodoro technique timer",
+  "study timer online",
+  "work break timer",
+  "25 5 timer"
+ ]
+}

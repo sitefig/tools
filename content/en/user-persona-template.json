@@ -1,0 +1,47 @@
+{
+ "id": "user-persona-template",
+ "seoTitle": "Free User Persona Template Generator in Markdown",
+ "metaDescription": "Fill in name, role, goals, frustrations, tools, quote and channels to get a one-page user persona in Markdown. Free and runs in your browser.",
+ "intro": "Describe a typical user through their name, age, role, goals, frustrations, tools, quote and channels, and get a one-page persona in Markdown.",
+ "why": "Personas help a team keep a real person in mind when it argues about features. They fail when they turn into long documents nobody reads or into invented demographics with no link to research.\n\nThis template keeps the persona to a page. It asks for the fields that tend to drive decisions: what the person wants, what annoys them, which tools they use today, how to reach them, and one sentence in their own words. The output is Markdown you can pin in a wiki or repo. Fill it from real interviews or support tickets, not from imagination. Your entries are assembled in your browser and never uploaded.",
+ "howTo": [
+  "Enter a name or short label, an age and a role.",
+  "List goals, frustrations, current tools and channels, separating items with commas.",
+  "Add a quote that sounds like something this person would say.",
+  "Copy the Markdown persona into your wiki, design file or repository."
+ ],
+ "faq": [
+  {
+   "q": "How many personas do I need?",
+   "a": "Usually two or three. More than that and the team cannot keep them in mind. Each should represent a distinct group whose needs would lead to different decisions."
+  },
+  {
+   "q": "Where should the details come from?",
+   "a": "From interviews, support tickets, survey answers and analytics. A persona based on guesses mostly repeats the team's assumptions, so note where each point came from."
+  },
+  {
+   "q": "Do I need an age?",
+   "a": "Not necessarily. Behaviour and goals usually matter more than demographics. Leave the age as a range, or fill in something useful instead, like years of experience."
+  },
+  {
+   "q": "Does it handle personal data?",
+   "a": "It is meant for fictional or composite personas. Do not enter real people's names or private details. The page does not upload what you type, but your documents might be shared later."
+  }
+ ],
+ "related": [
+  "swot-generator",
+  "competitor-comparison-matrix",
+  "rice-prioritization",
+  "user-flow-to-mermaid-text",
+  "app-name-ideas",
+  "decision-matrix"
+ ],
+ "keywords": [
+  "user persona template",
+  "persona generator",
+  "ux persona markdown",
+  "free customer persona maker",
+  "one page persona",
+  "create a user persona"
+ ]
+}

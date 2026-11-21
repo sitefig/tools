@@ -1,0 +1,45 @@
+{
+ "id": "sprite-sheet-packer",
+ "seoTitle": "Sprite Sheet Packer (PNG Atlas with JSON and CSS Map)",
+ "metaDescription": "Pack many images into one sprite sheet PNG and get a JSON map of each sprite name, position and size, plus ready CSS classes for use on a page.",
+ "intro": "Pack images into one sprite sheet with a JSON and CSS map.",
+ "why": "Choose many images. The tool packs them into rows on one PNG, tallest first, with padding you choose, and gives you a JSON map of each sprite name, position and size plus CSS classes that show a single sprite from the sheet.\n\nIt is a simple shelf packer, so it is not the tightest possible layout. Names come from file names, and duplicates are numbered.",
+ "howTo": [
+  "Choose the images.",
+  "Set the maximum width and padding.",
+  "Optionally round to powers of two.",
+  "Download the PNG and JSON, and copy the CSS."
+ ],
+ "faq": [
+  {
+   "q": "Which JSON format is it?",
+   "a": "A frames map with frame x, y, w, h and sourceSize, close to the common atlas layout. Check your engine's loader."
+  },
+  {
+   "q": "Why power of two?",
+   "a": "Some older GPUs and engines prefer it."
+  },
+  {
+   "q": "Is the order fixed?",
+   "a": "Tallest first, then by name."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-grid-splitter",
+  "image-collage",
+  "thumbnail-batch-generator",
+  "favicon-generator",
+  "app-icon-generator",
+  "gif-frame-extractor"
+ ],
+ "keywords": [
+  "sprite sheet generator",
+  "texture atlas",
+  "css sprites",
+  "sprite packer"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "bmi-calculator",
+ "seoTitle": "Free BMI Calculator: Metric and Imperial with WHO Range",
+ "metaDescription": "Calculate body mass index from weight and height in metric or imperial units, see the WHO category and a healthy weight range. Free, runs in your browser.",
+ "intro": "Enter your weight and height in metric or imperial units. The tool returns your BMI, its WHO category and the weight range that fits a BMI of 18.5 to 24.9 for your height.",
+ "why": "Body mass index is a quick screening number that doctors, insurers and fitness apps all quote, so people often want to know theirs without creating an account. The calculation is weight divided by height squared, but unit conversions trip people up, especially when height is in feet and inches. This calculator accepts either system and shows the standard WHO category, plus the weight range that corresponds to the normal band for your height. BMI is a blunt instrument: it does not distinguish muscle from fat or account for age, sex or build. Use it as a starting point and talk to a health professional about what it means for you. Your measurements never leave your browser.",
+ "howTo": [
+  "Choose Metric (kg, cm) or Imperial (lb, in).",
+  "Enter your weight and your height in the chosen units.",
+  "Read your BMI, the category and the healthy weight range for your height."
+ ],
+ "faq": [
+  {
+   "q": "What BMI categories does the tool use?",
+   "a": "Underweight below 18.5, normal weight 18.5 to 24.9, overweight 25 to 29.9, and obese 30 or above. These are the general WHO adult cut-offs, not tailored to age or ethnicity."
+  },
+  {
+   "q": "Why can BMI be misleading?",
+   "a": "It uses only height and weight. A muscular athlete may score as overweight, while someone with low muscle mass can have a normal BMI and still carry excess fat. It is a screening guide, not a diagnosis."
+  },
+  {
+   "q": "Can I enter height in feet and inches?",
+   "a": "Choose Imperial and enter the total height in inches, for example 69 for 5 ft 9 in. Weight goes in pounds. The tool converts internally to kilograms and centimetres."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an informational estimate. For health decisions, particularly for children, pregnancy or medical conditions, consult a qualified professional."
+  }
+ ],
+ "related": [
+  "bmr-tdee",
+  "ideal-weight",
+  "body-fat-navy",
+  "macro-calculator",
+  "water-intake",
+  "heart-rate-zones"
+ ],
+ "keywords": [
+  "bmi calculator",
+  "free bmi calculator",
+  "body mass index calculator",
+  "bmi calculator kg cm",
+  "bmi calculator lb inches",
+  "healthy weight range"
+ ]
+}

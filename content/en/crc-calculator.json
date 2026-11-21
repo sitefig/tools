@@ -1,0 +1,46 @@
+{
+ "id": "crc-calculator",
+ "seoTitle": "Free CRC Calculator: CRC-16, CRC-32, CRC-64 Online",
+ "metaDescription": "Compute CRC-16, CRC-32 and CRC-64 checksums with 30 named algorithms, including Modbus, XMODEM, CRC-32C and Redis. Free, runs in your browser.",
+ "intro": "Enter data as text, hex or base64 and choose one of 30 named CRC algorithms. The tool shows the checksum in hex and decimal, plus its little-endian byte form.",
+ "why": "CRC variants are a trap for anyone implementing a protocol. Two checksums can both be called CRC-16 and give different results, because the polynomial, starting value, bit order and final XOR can all differ. Datasheets quote a name or a parameter set and a check value for the string 123456789, but you still need something to confirm your code gives the same answer. This calculator offers 30 common variants, from CRC-16/ARC, Modbus and X-25 to CRC-32 as used in ZIP and PNG, CRC-32C and CRC-64 as used in XZ and Redis. It shows the value in hex, decimal and the byte order used on the wire. CRCs detect accidental errors, not tampering, so they are no substitute for a cryptographic hash.",
+ "howTo": [
+  "Enter the data and say whether it is text, hex or base64.",
+  "Choose the CRC algorithm from the list.",
+  "Read the checksum in hex, decimal and little-endian bytes."
+ ],
+ "faq": [
+  {
+   "q": "What input gives the standard check value?",
+   "a": "The ASCII string 123456789, which is the default sample. For CRC-32 (ISO-HDLC) it gives 0xCBF43926. Datasheets quote this value to confirm an implementation."
+  },
+  {
+   "q": "Why do different CRC-16 variants give different results?",
+   "a": "They use different polynomials, initial values, bit reflection and final XOR. 'CRC-16' on its own is ambiguous, so match the full name your protocol or datasheet specifies."
+  },
+  {
+   "q": "Is a CRC secure?",
+   "a": "No. It detects accidental changes, such as noise or typos, but can be forged easily. Use a cryptographic hash or a MAC if someone could tamper with the data."
+  },
+  {
+   "q": "How fast is it for big files?",
+   "a": "The implementation uses BigInt arithmetic, which is fine for kilobytes of data but slow for many megabytes. Use a native command-line tool for large files."
+  }
+ ],
+ "related": [
+  "checksum-crc32-adler32",
+  "hash-generator",
+  "file-hash",
+  "noncrypto-hashes",
+  "hex-text",
+  "check-digit-tool"
+ ],
+ "keywords": [
+  "crc calculator",
+  "crc32 calculator online",
+  "free crc16 calculator",
+  "crc64 online",
+  "crc modbus calculator",
+  "crc checksum tool"
+ ]
+}

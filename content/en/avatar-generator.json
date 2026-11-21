@@ -1,0 +1,45 @@
+{
+  "id": "avatar-generator",
+  "seoTitle": "Avatar Generator: Initials and Identicons as SVG",
+  "metaDescription": "Create default profile pictures as SVG from names: coloured initials or symmetric identicons. The same name always gives the same avatar.",
+  "intro": "Generate placeholder avatars for users, teams or demos without uploading anything.",
+  "why": "Each name is hashed to a hue and a pattern. Initials mode draws the first and last initial on a coloured circle; identicon mode draws a symmetric 5 by 5 pixel pattern. Output is plain SVG with an accessible label, one image per name, and a preview sheet.\n\nThe hash is a simple non-cryptographic 64-bit mix, fine for decoration; do not use it to hide identities, since the same name always gives the same picture. Check colour contrast if you put text on the circles.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter names, one per line.",
+    "Choose initials or identicon and a size.",
+    "Copy the SVG or save the preview.",
+    "Serve the SVG from your own origin."
+  ],
+  "faq": [
+    {
+      "q": "Is the avatar deterministic?",
+      "a": "Yes, the same name gives the same image every time."
+    },
+    {
+      "q": "Is it a Gravatar?",
+      "a": "No. Nothing is requested from any service."
+    },
+    {
+      "q": "Can I use it commercially?",
+      "a": "The images are generated from your input; there is nothing to license."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "placeholder-image-generator",
+    "favicon-generator",
+    "svg-optimizer",
+    "fake-person-generator",
+    "username-generator",
+    "color-converter"
+  ],
+  "keywords": [
+    "avatar generator",
+    "identicon generator",
+    "initials avatar svg",
+    "default profile picture"
+  ]
+}

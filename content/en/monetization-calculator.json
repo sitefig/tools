@@ -1,0 +1,47 @@
+{
+ "id": "monetization-calculator",
+ "seoTitle": "Free App Monetization Revenue Calculator",
+ "metaDescription": "Project app revenue from ads, subscriptions and in-app purchases with user growth and store fees, month by month. Free, runs in your browser.",
+ "intro": "Enter users, ad impressions and eCPM, subscription share and price, in-app purchase rates, store fee and growth, and see a month-by-month revenue projection.",
+ "why": "Before building an app, you want to know whether the numbers can work: how many users do you need before ads, subscriptions or in-app purchases pay for development? Back-of-envelope estimates hide how strongly the answer depends on conversion rates and store fees.\n\nThis calculator projects three revenue streams over up to 120 months with a monthly user growth rate. Ads come from impressions times eCPM, subscriptions from the paying share times the price, and in-app purchases from payers times revenue per payer, both after the store fee. The model is deliberately simple, with no churn cohorts or ad fill rate, so use it to compare scenarios, not to forecast.",
+ "howTo": [
+  "Enter monthly active users, ad impressions per user and the eCPM.",
+  "Enter the subscriber share and price, and the in-app purchase payer share and revenue per payer.",
+  "Set the store fee, monthly user growth and the number of months.",
+  "Read the monthly table and the total and average net revenue."
+ ],
+ "faq": [
+  {
+   "q": "What is eCPM?",
+   "a": "Effective cost per thousand impressions, the average ad revenue you earn per 1,000 ad views. It varies a lot by country, ad format and network, so use a figure from your own ad reports if you have one."
+  },
+  {
+   "q": "Are store fees applied to ads?",
+   "a": "No. The fee applies to subscriptions and in-app purchases only, as app stores charge on those. Ad revenue is counted in full, though your ad network may keep a share."
+  },
+  {
+   "q": "What is missing from the model?",
+   "a": "Churn cohorts, seasonality, refunds, taxes, ad fill rate, development and server costs, and changes in conversion rates over time. It keeps all ratios constant."
+  },
+  {
+   "q": "Is it a forecast?",
+   "a": "No. It shows what follows from the assumptions you type, and small changes can alter the result a lot. Test low, middle and high cases."
+  }
+ ],
+ "related": [
+  "startup-cost-calculator",
+  "retention-calculator",
+  "ads-roas-calculator",
+  "app-store-description-template",
+  "compound-interest",
+  "percent-change"
+ ],
+ "keywords": [
+  "app monetization calculator",
+  "app revenue calculator",
+  "ads vs subscription revenue",
+  "free app income estimator",
+  "ecpm revenue calculator",
+  "in app purchase revenue projection"
+ ]
+}

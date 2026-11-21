@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Tools</title>
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://tools.sitefig.net/en/">
+<noscript><meta http-equiv="refresh" content="0;url=/en/"></noscript>
+<script>
+(function () {
+  var langs = ["en"], def = "en", pref = (navigator.languages || [navigator.language || def]).map(function (l) { return String(l).toLowerCase().split('-')[0]; });
+  var lang = def; for (var i = 0; i < pref.length; i++) if (langs.indexOf(pref[i]) > -1) { lang = pref[i]; break; }
+  var h = location.hash.slice(1);
+  location.replace('/' + lang + '/' + (/^[a-z0-9-]+$/i.test(h) ? h + '/' : ''));
+})();
+</script>
+</head>
+<body>
+<p>Redirecting to the English site. If nothing happens, continue to <a href="/en/">Free Tools</a>.</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+ "id": "label-sheet-layout-printer",
+ "seoTitle": "Label Sheet Printer: Lay Out Address Labels on Any Sheet Size",
+ "metaDescription": "Enter your label sheet measurements, paste label text and print aligned labels, skipping used positions. Free, no templates needed.",
+ "intro": "Positions your label text on a grid defined by the measurements you enter, for A4 or Letter sheets, and can skip labels already used.",
+ "why": "Label sheets come in many layouts, and printers vary. Instead of a list of product codes, you enter the numbers printed on the label box or the maker's template: columns, rows, label size, the distance between labels and the margins. The tool checks that the grid fits on the page.\n\nSeparate labels with a blank line. If the sheet is partly used, skip the first few positions. Turn on outlines for a test print on plain paper and hold it against the sheet to the light. Print at 100 percent (no \"fit to page\") with margins set to none, or labels will drift.",
+ "howTo": [
+  "Enter the sheet measurements and paper size.",
+  "Paste your labels, separated by blank lines.",
+  "Optionally skip used labels and turn on outlines for a test.",
+  "Print at 100 percent scale."
+ ],
+ "faq": [
+  {
+   "q": "Does it include Avery formats?",
+   "a": "No. Enter the measurements from your label box; presets could not be verified here."
+  },
+  {
+   "q": "Why do labels drift?",
+   "a": "Browsers or printers scaling the page. Print at 100 percent with no margins."
+  },
+  {
+   "q": "Can labels have several lines?",
+   "a": "Yes; lines in a block stay together."
+  },
+  {
+   "q": "Can I import a CSV?",
+   "a": "Not here; see the badge maker for CSV merge."
+  }
+ ],
+ "related": [
+  "name-badge-maker-from-csv",
+  "certificate-mail-merge-generator",
+  "invoice-generator",
+  "business-card-pdf-designer",
+  "qr-code-generator",
+  "barcode-generator"
+ ],
+ "keywords": [
+  "address label printer",
+  "label sheet template",
+  "print labels on sheet",
+  "label layout tool"
+ ]
+}

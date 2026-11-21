@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free AES-256-GCM Text Encryption Online | Free Tools</title>
+<meta name="description" content="Encrypt text with a password using AES-256-GCM and PBKDF2 in your browser. Free, output is base64, nothing is uploaded.">
+<link rel="canonical" href="https://tools.sitefig.net/en/aes-encrypt/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/aes-encrypt/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/aes-encrypt/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free AES-256-GCM Text Encryption Online | Free Tools">
+<meta property="og:description" content="Encrypt text with a password using AES-256-GCM and PBKDF2 in your browser. Free, output is base64, nothing is uploaded.">
+<meta property="og:url" content="https://tools.sitefig.net/en/aes-encrypt/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free AES-256-GCM Text Encryption Online | Free Tools">
+<meta name="twitter:description" content="Encrypt text with a password using AES-256-GCM and PBKDF2 in your browser. Free, output is base64, nothing is uploaded.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"AES-GCM Encrypt","url":"https://tools.sitefig.net/en/aes-encrypt/","description":"Encrypt text with a password using AES-256-GCM and PBKDF2 in your browser. Free, output is base64, nothing is uploaded.","applicationCategory":"SecurityApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the text to encrypt in the input box.","Type a strong password in the options. The default password is only a placeholder, so change it.","Run the tool to produce the base64 ciphertext.","Copy the output and share the password through a different channel."],"keywords":"aes encrypt online, aes-256-gcm encryption tool, encrypt text with password, browser text encryption, pbkdf2 aes online free","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Privacy – Secrets","item":"https://tools.sitefig.net/en/#privacy-secrets"},{"@type":"ListItem","position":3,"name":"AES-GCM Encrypt","item":"https://tools.sitefig.net/en/aes-encrypt/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How is the output structured?","acceptedAnswer":{"@type":"Answer","text":"Base64 of a version byte, the iteration count, a 16-byte salt, a 12-byte IV and the ciphertext. Header bytes are authenticated. A fresh salt and IV are used each time, so the same input gives different output."}},{"@type":"Question","name":"Is it safe to use for important secrets?","acceptedAnswer":{"@type":"Answer","text":"It uses standard primitives, but safety depends on your password. A weak password can be guessed offline. This is not audited software, so for high-stakes data use a reviewed tool."}},{"@type":"Question","name":"What if I forget the password?","acceptedAnswer":{"@type":"Answer","text":"The text cannot be recovered. There is no reset and no copy on any server. Keep the password in a password manager."}},{"@type":"Question","name":"Is my text uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Encryption runs in your browser through WebCrypto, and neither the text nor the password is sent anywhere. Closing the tab discards both from the page."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#privacy-secrets">Privacy – Secrets</a></li><li><span aria-current="page">AES-GCM Encrypt</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>AES-GCM Encrypt</h1>
+<p class="lede">Encrypt a piece of text with a password. The tool derives a key with PBKDF2-SHA256 (600,000 iterations), encrypts with AES-256-GCM and gives you one base64 string.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="aes-encrypt" data-module="privacy" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Sometimes you need to pass a short secret through a channel you do not trust: a note in a ticket, an email, a shared document. Encrypting it with a password first means the channel only ever sees ciphertext.</p>
+<p>This tool uses the browser WebCrypto API, so there is no custom cryptography. A random salt and nonce are generated for every run, the key comes from your password through PBKDF2 with 600,000 iterations, and AES-GCM adds authentication so tampering is detected. The output is a single base64 string that carries a version byte, the iteration count, salt and nonce, ready for the matching decrypt tool. It is a convenience for short text, not a replacement for a vetted file encryption tool.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the text to encrypt in the input box.</li><li>Type a strong password in the options. The default password is only a placeholder, so change it.</li><li>Run the tool to produce the base64 ciphertext.</li><li>Copy the output and share the password through a different channel.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How is the output structured?</summary><p>Base64 of a version byte, the iteration count, a 16-byte salt, a 12-byte IV and the ciphertext. Header bytes are authenticated. A fresh salt and IV are used each time, so the same input gives different output.</p></details>
+<details><summary>Is it safe to use for important secrets?</summary><p>It uses standard primitives, but safety depends on your password. A weak password can be guessed offline. This is not audited software, so for high-stakes data use a reviewed tool.</p></details>
+<details><summary>What if I forget the password?</summary><p>The text cannot be recovered. There is no reset and no copy on any server. Keep the password in a password manager.</p></details>
+<details><summary>Is my text uploaded?</summary><p>No. Encryption runs in your browser through WebCrypto, and neither the text nor the password is sent anywhere. Closing the tab discards both from the page.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/aes-decrypt/"><span class="link-card__title">AES-GCM Decrypt</span><span class="link-card__desc">Decrypt output from the AES-GCM Encrypt tool with the same password. Authentication failure means wrong password or tampered data.</span></a></li><li><a class="link-card" href="/en/password-generator/"><span class="link-card__title">Password Generator</span><span class="link-card__desc">Cryptographically random passwords (crypto.getRandomValues, no modulo bias). Guarantees each selected class appears.</span></a></li><li><a class="link-card" href="/en/passphrase-generator/"><span class="link-card__title">Passphrase Generator</span><span class="link-card__desc">Pronounceable syllable-based passphrases from crypto.getRandomValues. Entropy is computed exactly from the syllable space.</span></a></li><li><a class="link-card" href="/en/pbkdf2-key-derivation/"><span class="link-card__title">PBKDF2 Key Derivation</span><span class="link-card__desc">Derive a key from a password with PBKDF2 (WebCrypto) using SHA-1/256/384/512; output as hex and Base64.</span></a></li><li><a class="link-card" href="/en/aes-modes-demo/"><span class="link-card__title">AES CBC / CTR / GCM / ECB Demo (educational)</span><span class="link-card__desc">EDUCATIONAL ONLY, not a vetted encryption product. Encrypt/decrypt with AES-CBC (PKCS#7), CTR, GCM (ciphertext||16-byte tag) or ECB (shown to demonstrate why ECB leaks patterns) via WebCrypto. Never reuse an IV/nonce with the same key; use a proper audited tool for real secrets.</span></a></li><li><a class="link-card" href="/en/hmac-generator/"><span class="link-card__title">HMAC Generator</span><span class="link-card__desc">HMAC with MD5, SHA-1, SHA-256, SHA-384 or SHA-512; hex and Base64 output.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+{
+ "id": "typescript-to-python",
+ "seoTitle": "Free TypeScript to Python Types Converter Online",
+ "metaDescription": "Convert TypeScript interfaces and types to Python TypedDict, dataclass or Pydantic v2 models. Free, runs in your browser, nothing uploaded.",
+ "intro": "Paste TypeScript interfaces, type aliases and enums and get matching Python TypedDict, dataclass or Pydantic models, with optional fields, unions, literals, tuples and nested objects handled.",
+ "why": "When a TypeScript front end talks to a Python back end, the same data shape ends up written twice, and the two copies drift apart. Converting the TypeScript declarations gives Python a starting point that matches what the client actually sends, so field names, optional properties and unions stay in step.\n\nThe tool reads your declarations with the same parser as the TypeScript to JSON Schema converter, then writes Python 3.10+ code: str | None instead of Optional, list[...] and tuple[...] instead of typing.List, Literal for string unions and a datetime for Date. Choose TypedDict for plain dicts, dataclass for simple objects, or Pydantic v2 for validation. Property names that are not valid Python identifiers get safe names, with an alias in Pydantic. Everything runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Paste your TypeScript interfaces, type aliases or enums.",
+  "Pick TypedDict, dataclass or Pydantic, and how number and string enums should map.",
+  "Copy the Python code into your project and adjust field types such as int versus float where you know better."
+ ],
+ "faq": [
+  {
+   "q": "Which TypeScript features are supported?",
+   "a": "Interfaces, type aliases, enums, optional and nullable properties, unions, literals, tuples, arrays, Record, Date, extends and intersections, and JSDoc comments. Conditional and mapped types, keyof, typeof, function types and most utility generics are not supported."
+  },
+  {
+   "q": "Why is number a float?",
+   "a": "TypeScript has a single number type, so the tool cannot know whether a value is an integer. It uses float by default. You can switch to int | float, and change individual fields by hand."
+  },
+  {
+   "q": "Which Python version do I need?",
+   "a": "Python 3.10 or newer for the X | None and X | Y syntax. TypedDict output that marks optional keys uses NotRequired, which needs Python 3.11 or typing_extensions."
+  },
+  {
+   "q": "How are circular types handled?",
+   "a": "Declarations are ordered so that referenced classes come first. When a type refers to itself or to a later one, the output adds from __future__ import annotations, and the functional TypedDict form quotes its annotations."
+  }
+ ],
+ "related": [
+  "typescript-to-json-schema",
+  "json-to-pydantic",
+  "typescript-interface-to-zod",
+  "json-schema-to-typescript",
+  "json-to-models",
+  "sql-to-python-sqlalchemy"
+ ],
+ "keywords": [
+  "typescript to python",
+  "typescript to pydantic",
+  "typescript interface to typeddict",
+  "typescript to dataclass"
+ ]
+}

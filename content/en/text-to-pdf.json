@@ -1,0 +1,46 @@
+{
+ "id": "text-to-pdf",
+ "seoTitle": "Free Text to PDF Converter - Plain Text to PDF",
+ "metaDescription": "Turn plain text into a multi-page PDF with A4 or Letter pages, Helvetica, Times or Courier, an optional header and page numbers. Free, in your browser.",
+ "intro": "Paste plain text and download it as a multi-page PDF, choosing page size, orientation, font, margins, an optional header and page numbers.",
+ "why": "Notes, logs, code snippets and email text often need to become a PDF: to attach to a ticket, archive a conversation or print neatly. Word processors add formatting you do not want, and online converters want the text uploaded.\n\nThis tool lays out your text directly. It wraps long lines to the page width, starts new pages automatically and keeps blank lines. You can pick A4 or Letter, portrait or landscape, and one of three standard fonts: Helvetica, Times or Courier, the last being fixed-width and good for code. Add a header line and number the pages as n or Page n of N. Because only standard PDF fonts are used, characters outside the Western European set show as question marks. Everything is made on your device.",
+ "howTo": [
+  "Paste or type the text into the box.",
+  "Choose page size, orientation, font, size and margin.",
+  "Add a header and choose a page-number style if you want them.",
+  "Run the tool and download the PDF."
+ ],
+ "faq": [
+  {
+   "q": "Which characters are supported?",
+   "a": "The standard PDF fonts cover Western European characters. Letters outside that range, such as Cyrillic, Greek, Chinese or emoji, are replaced by a question mark because no font is embedded."
+  },
+  {
+   "q": "Does it keep my line breaks?",
+   "a": "Yes. Each line of your text stays a line, long lines are wrapped to the page width, and blank lines are preserved. Tabs are converted to four spaces."
+  },
+  {
+   "q": "Can I use bold or colours?",
+   "a": "No. This tool outputs plain text in a single font and size. For headings and lists, try the Markdown to PDF tool instead."
+  },
+  {
+   "q": "Is the PDF searchable?",
+   "a": "Yes. The text is stored as real text with standard fonts, so you can select and search it in any viewer. It is not an image."
+  }
+ ],
+ "related": [
+  "markdown-to-pdf",
+  "images-to-pdf",
+  "pdf-merge",
+  "pdf-add-page-numbers",
+  "base64-to-pdf",
+  "word-counter"
+ ],
+ "keywords": [
+  "text to pdf",
+  "convert text to pdf online",
+  "plain text to pdf",
+  "txt to pdf free",
+  "make pdf from text"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "link-purpose-checker",
+ "seoTitle": "Link Purpose Checker: Vague, Duplicate and New-Window Links",
+ "metaDescription": "Paste HTML to find links with no name, vague text, raw URLs as text, same text for different pages and new windows without a warning.",
+ "intro": "Reviews links for purpose, names and new-window behaviour.",
+ "why": "Screen reader users often browse a list of links, where \"click here\" means nothing.\n\nThe tool finds unnamed links, vague phrases, long URLs as text, repeated link text with different targets, target=_blank without a hint, and file links without a format. Under WCAG 2.4.4 context can fix a vague link, so most items are marked review.",
+ "howTo": [
+  "Paste the HTML.",
+  "Read the findings.",
+  "Rewrite link text to say where it goes.",
+  "Mention new windows and file types."
+ ],
+ "faq": [
+  {
+   "q": "Is \"read more\" always a failure?",
+   "a": "No, if the context makes it clear. It is still weak in link lists."
+  },
+  {
+   "q": "Is opening a new tab required to be announced?",
+   "a": "It is best practice, not a WCAG requirement."
+  },
+  {
+   "q": "How is a name computed?",
+   "a": "From link text, image alt and aria-label in simplified form."
+  },
+  {
+   "q": "Is the HTML uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "html-link-auditor",
+  "internal-link-extractor",
+  "a11y-html-check",
+  "accessible-name-calculator",
+  "alt-text-quality-checker",
+  "html-link-generator"
+ ],
+ "keywords": [
+  "link purpose checker",
+  "click here links",
+  "ambiguous link text"
+ ]
+}

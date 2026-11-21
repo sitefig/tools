@@ -1,0 +1,38 @@
+{
+ "id": "ai-fill-mask",
+ "seoTitle": "AI Fill-Mask Tool: Predict the Missing Word Offline",
+ "metaDescription": "Type a sentence with [MASK] and a DistilBERT model running in your browser ranks the most likely words. Free, private, no upload, no API key.",
+ "intro": "Put [MASK] where a word is missing and see which words a real neural language model finds most likely, with probabilities.",
+ "why": "Fill-mask is how BERT-style models are trained: hide a word and predict it from the words on both sides. Seeing the ranked guesses shows what the model has learned about grammar, facts and common phrases, and is handy for word choice, cloze tests and teaching how language models work.\n\nThis page runs distilbert-base-uncased (Apache-2.0, 66 million parameters, int8 weights) with a hand-written JavaScript engine. The first run downloads 69 MB from this site; after that it works offline and your text is never uploaded. It is English only, lowercase output, and its probabilities describe common usage in its training text, not truth.",
+ "howTo": [
+  "Type an English sentence and write [MASK] where the word goes (up to five masks).",
+  "Press Predict; the first run downloads the model once.",
+  "Read the ranked words and their probabilities, or click \"Use\" to put one into the sentence."
+ ],
+ "faq": [
+  {
+   "q": "Is my text sent anywhere?",
+   "a": "No. The model file is fetched once from this site and runs in your tab. Your sentence never leaves the browser."
+  },
+  {
+   "q": "Why do some words start with ##?",
+   "a": "WordPiece splits rare words into pieces. A piece starting with ## continues the word before it."
+  },
+  {
+   "q": "How accurate is it?",
+   "a": "It matches the original PyTorch model on our test sentences (top word identical); int8 compression changes probabilities by about a percent. Like any language model it reflects its training data and can be biased or wrong."
+  }
+ ],
+ "related": [
+  "ai-sentiment-classifier",
+  "ai-question-answering",
+  "language-detector",
+  "text-summarizer",
+  "keyword-extractor"
+ ],
+ "keywords": [
+  "fill mask online",
+  "bert missing word prediction",
+  "distilbert in browser"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "thin-content-detector",
+ "seoTitle": "Thin Content Detector: Unique Words per Page",
+ "metaDescription": "Paste several pages to count unique words after removing shared menus and footers, and rank the thinnest. Free, private.",
+ "intro": "Counts total, shared and unique words for each pasted page.",
+ "why": "Word count alone overstates thin pages, because every page includes the menu and footer. Removing lines that repeat across most pages leaves the part that is actually unique.\n\nPaste pages separated by --- and an optional URL line. Boilerplate removal needs at least 3 pages. A short page can still be good, so treat the ranking as a list to read, not a verdict.",
+ "howTo": [
+  "Paste each page, separated by a line with ---.",
+  "Start a page with URL: to label it.",
+  "Set the thin threshold and boilerplate share.",
+  "Review the pages marked THIN."
+ ],
+ "faq": [
+  {
+   "q": "How is boilerplate found?",
+   "a": "Lines that appear on a set share of the pages, default 60%."
+  },
+  {
+   "q": "Can I paste HTML?",
+   "a": "Yes. Scripts and styles are removed."
+  },
+  {
+   "q": "Is there a standard threshold?",
+   "a": "No. Pick one that fits your content."
+  },
+  {
+   "q": "Does it detect duplicates?",
+   "a": "Not between pages. Use the similarity checker for that."
+  }
+ ],
+ "related": [
+  "text-similarity-checker",
+  "word-counter",
+  "keyword-cannibalization-detector",
+  "content-freshness-audit",
+  "duplicate-title-description-finder",
+  "text-to-html-ratio"
+ ],
+ "keywords": [
+  "thin content checker",
+  "unique word count",
+  "thin pages seo",
+  "boilerplate removal"
+ ]
+}

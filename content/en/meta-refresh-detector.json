@@ -1,0 +1,45 @@
+{
+ "id": "meta-refresh-detector",
+ "seoTitle": "Meta Refresh Redirect Detector with 301 Rule",
+ "metaDescription": "Find meta refresh tags in pasted HTML, see delay and target, how Google reads them, and the server redirect rule to use. Free.",
+ "intro": "Finds meta refresh tags and explains what they do for SEO.",
+ "why": "A meta refresh can redirect a visitor without a server rule. Google reads an instant refresh as a permanent redirect and a delayed one as temporary, but server-side redirects are more reliable.\n\nThe tool shows delay and target and writes an Apache and nginx rule for the page path you enter. A timed redirect can also hurt users: WCAG technique F40 lists it as a failure.",
+ "howTo": [
+  "Paste the HTML.",
+  "Enter the path of the page for the server rules.",
+  "Run the tool.",
+  "Replace the refresh with the server redirect if you can."
+ ],
+ "faq": [
+  {
+   "q": "Instant or delayed?",
+   "a": "Google treats instant as permanent and delayed as temporary, per its documentation."
+  },
+  {
+   "q": "Are HTTP Refresh headers found?",
+   "a": "No. Only HTML tags can be seen here."
+  },
+  {
+   "q": "Why prefer a server redirect?",
+   "a": "It is faster, clearer to crawlers and does not flash a page."
+  },
+  {
+   "q": "What if there is no URL?",
+   "a": "The page reloads itself; the tool warns about that."
+  }
+ ],
+ "related": [
+  "htaccess-to-nginx",
+  "redirect-code-generator",
+  "html-url-extractor",
+  "seo-inspector",
+  "http-headers-analyzer",
+  "html-head-extractor"
+ ],
+ "keywords": [
+  "meta refresh redirect",
+  "meta refresh seo",
+  "meta refresh 301",
+  "instant redirect html"
+ ]
+}

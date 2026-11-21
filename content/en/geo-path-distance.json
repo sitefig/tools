@@ -1,0 +1,45 @@
+{
+ "id": "geo-path-distance",
+ "seoTitle": "Path Distance Calculator: Haversine and Vincenty",
+ "metaDescription": "Paste coordinates to get leg and total distance with bearings in km, miles or nautical miles, on a sphere or the WGS 84 ellipsoid.",
+ "intro": "Measures a route made of coordinate points: each leg, the running total, the initial bearing and the total, with a choice of haversine or Vincenty.",
+ "why": "Drawing a path on a map to measure it needs map tiles. If you already have the coordinates, from a list, a GPS log or a plan, you can measure without any map. The result is the great-circle (shortest surface) length between consecutive points, not road distance.\n\nHaversine on a mean-radius sphere is within about 0.5 percent of the ellipsoid. Vincenty on WGS 84 reproduces the Geoscience Australia test line (Flinders Peak to Buninyong, 54972.271 m) exactly. Vincenty can fail for nearly opposite points; the tool says so and you can switch to haversine.",
+ "howTo": [
+  "Paste one coordinate per line, decimal or with N S E W.",
+  "Choose the unit and method.",
+  "Tick close the loop to return to the start.",
+  "Copy the leg table."
+ ],
+ "faq": [
+  {
+   "q": "Does it follow roads?",
+   "a": "No, straight great-circle legs between your points."
+  },
+  {
+   "q": "Which radius for haversine?",
+   "a": "6371.0088 km, the IUGG mean radius."
+  },
+  {
+   "q": "What is the bearing?",
+   "a": "The initial compass direction of each leg, from north."
+  },
+  {
+   "q": "Can I draw on a map?",
+   "a": "Not in this tool; it works from typed coordinates."
+  }
+ ],
+ "related": [
+  "geo-midpoint-finder",
+  "coordinate-format-converter",
+  "waypoints-to-gpx",
+  "gpx-track-analyzer",
+  "radius-circle-geojson",
+  "geohash-tool"
+ ],
+ "keywords": [
+  "distance between coordinates",
+  "route length calculator",
+  "great circle distance",
+  "vincenty distance"
+ ]
+}

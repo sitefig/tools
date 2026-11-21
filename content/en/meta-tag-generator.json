@@ -1,0 +1,46 @@
+{
+ "id": "meta-tag-generator",
+ "seoTitle": "Free Meta Tag Generator for Title and Description",
+ "metaDescription": "Generate meta tags for your page head: title, description, canonical, robots, viewport, charset and more. Free, runs in your browser.",
+ "intro": "Fill in simple key: value lines to produce the head tags for a page: charset, viewport, title, description, canonical, robots, author, theme colour and favicon, with length warnings.",
+ "why": "Every page needs a handful of tags in its head, and getting them slightly wrong is common: a title that is too long, a description missing, a canonical typed with a stray space, a robots value with a typo. Writing them from memory each time invites mistakes.\n\nThis generator takes lines such as title, description, canonical and robots, escapes the values so quotes do not break the HTML and prints the matching tags. It always adds charset and viewport, and warns when the title goes over 60 characters or the description over 160. The language is shown as an html tag note, since lang belongs on the opening html element. It is a convenience for writing markup, and the output is built locally in your browser.",
+ "howTo": [
+  "Edit the key: value lines, for example title, description, canonical, robots and lang.",
+  "Add author, keywords, theme_color or favicon if you need them.",
+  "Run the tool to produce the head tags and any warnings.",
+  "Copy the tags into the head of your page and set lang on the html tag."
+ ],
+ "faq": [
+  {
+   "q": "Which fields does it understand?",
+   "a": "title, description, canonical, robots, author, keywords, theme_color, favicon, charset and lang. Unknown keys are ignored, and charset defaults to utf-8."
+  },
+  {
+   "q": "Are title and description length limits strict?",
+   "a": "No. The tool warns above 60 and 160 characters, which are common guidelines. Google truncates by pixel width, so use the SERP snippet preview to see the likely result."
+  },
+  {
+   "q": "Should I add the keywords tag?",
+   "a": "Search engines ignore it, so it is optional. The tool supports it only because some systems still read it."
+  },
+  {
+   "q": "Does it store my text?",
+   "a": "No. The tags are generated in your browser and nothing you type is uploaded. It also means the page works for drafts and private sites you would not want to share."
+  }
+ ],
+ "related": [
+  "og-twitter-generator",
+  "serp-snippet",
+  "title-length-checker",
+  "canonical-generator",
+  "seo-inspector",
+  "schema-generator"
+ ],
+ "keywords": [
+  "meta tag generator",
+  "html meta tags generator",
+  "seo meta tags builder",
+  "title and description tag generator",
+  "canonical robots tag generator"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "spectrogram-viewer",
+ "seoTitle": "Spectrogram Viewer: Draw an Audio File as an Image",
+ "metaDescription": "Render a spectrogram of any audio file: time across, frequency up, colour for loudness. Linear or log axis, adjustable window. Free and private.",
+ "intro": "Computes a short-time Fourier transform of an audio file and draws it as a picture with labelled time and frequency axes, which you can save as PNG.",
+ "why": "A spectrogram shows what a waveform hides: which frequencies are present and when. It reveals hum lines, hiss, clipping, a low-pass cutoff left by MP3 compression, bird calls, and the harmonics of an instrument.\n\nChoose the window size to trade pitch detail against timing detail: 4096 samples separates close notes, 512 shows fast transients. A logarithmic frequency axis matches how we hear pitch; a linear axis shows high-frequency content better. Brighter colours are louder, over the dynamic range you set.",
+ "howTo": [
+  "Choose an audio file.",
+  "Pick the window size and the frequency axis.",
+  "Adjust the dynamic range (80 dB is a good start).",
+  "Press Run and save the image."
+ ],
+ "faq": [
+  {
+   "q": "What window size should I use?",
+   "a": "2048 for general use, 4096 for pitch detail, 512 for drums and speech timing."
+  },
+  {
+   "q": "Why does the top look empty?",
+   "a": "Many files have no content above 16 kHz because of MP3 compression or a low sample rate. That cutoff is useful to see."
+  },
+  {
+   "q": "Is this a live view?",
+   "a": "No, it draws the whole file. The live spectrum analyzer shows the microphone in real time."
+  },
+  {
+   "q": "How long a file can it draw?",
+   "a": "Several minutes. The image is capped at about 1400 columns, so long files lose some time detail."
+  }
+ ],
+ "related": [
+  "audio-spectrum-analyzer",
+  "audio-waveform-svg",
+  "audio-equalizer",
+  "audio-noise-reducer",
+  "musical-key-finder",
+  "bpm-detector"
+ ],
+ "keywords": [
+  "spectrogram online",
+  "audio spectrogram viewer",
+  "view frequencies of audio file",
+  "spectrogram generator"
+ ]
+}

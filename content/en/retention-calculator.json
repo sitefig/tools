@@ -1,0 +1,47 @@
+{
+ "id": "retention-calculator",
+ "seoTitle": "Free Customer Retention and Churn Calculator with LTV",
+ "metaDescription": "Project customer numbers with constant churn and monthly additions, and get lifetime, LTV and steady-state customers. Free, runs in your browser.",
+ "intro": "Enter starting customers, new customers per period, churn rate, number of periods and revenue per customer to project your customer base and see lifetime, LTV and the level it settles at.",
+ "why": "Churn works quietly. Losing 5 percent of customers a month sounds small, but it means the average customer stays only 20 months, and you must keep adding customers just to stand still. Knowing how many you will have in a year, and what each customer is worth, shapes pricing and marketing spend.\n\nThis calculator runs a simple period-by-period model: start with your customers, remove the churned share, add the new ones, repeat. It shows the table, the share of the original cohort left, the average lifetime, a revenue-based LTV and the steady-state customer count. It assumes constant churn and growth, which real businesses rarely have, so treat it as a planning aid.",
+ "howTo": [
+  "Enter your starting customers and the number of new customers added each period.",
+  "Enter the churn percentage per period and the number of periods to project.",
+  "Enter revenue per customer per period to get LTV.",
+  "Read the projection table and the lifetime, LTV and steady-state figures."
+ ],
+ "faq": [
+  {
+   "q": "How is LTV calculated here?",
+   "a": "As revenue per customer per period divided by the churn rate. It is a revenue figure, not profit, and ignores discounting and acquisition cost. Multiply by your gross margin for a margin-based estimate."
+  },
+  {
+   "q": "What is steady state?",
+   "a": "The customer count at which new customers per period equal the customers lost, which is new customers divided by the churn rate. Your base trends toward this number if inputs stay constant."
+  },
+  {
+   "q": "Is constant churn realistic?",
+   "a": "Not entirely. Churn is usually higher in the first months and falls for long-term customers. This model uses one flat rate, so it is best for rough planning and comparing scenarios."
+  },
+  {
+   "q": "What limits apply to the inputs?",
+   "a": "Churn must be between 0 and 100 percent, and periods between 1 and 240. With zero churn the lifetime is unbounded and the tool says so."
+  }
+ ],
+ "related": [
+  "ads-roas-calculator",
+  "monetization-calculator",
+  "conversion-funnel-visualizer",
+  "startup-cost-calculator",
+  "compound-interest",
+  "percent-change"
+ ],
+ "keywords": [
+  "churn rate calculator",
+  "customer retention calculator",
+  "ltv calculator",
+  "free customer lifetime value tool",
+  "subscription churn projection",
+  "steady state customers"
+ ]
+}

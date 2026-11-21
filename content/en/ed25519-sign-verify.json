@@ -1,0 +1,43 @@
+{
+ "id": "ed25519-sign-verify",
+ "seoTitle": "Free Ed25519 Sign & Verify Tool Online",
+ "metaDescription": "Generate an Ed25519 key pair, sign a message from a hex seed or verify a signature against a public key, using WebCrypto. Free, in your browser.",
+ "intro": "Generate an Ed25519 key pair, sign a message with a 32-byte hex seed, or verify a signature against a public key. The tool uses your browser's WebCrypto support.",
+ "why": "Ed25519 signatures turn up in SSH keys, JWT variants, software release signing, Nostr, blockchain wallets and many APIs. When an integration fails, you often need to check one thing: does this signature belong to this message and key, and is the key encoding what you thought?\n\nThis tool lets you generate a pair, sign with a seed, and verify with the public key and signature in hex, so you can compare against the output of your own library. It relies on WebCrypto, so it needs a browser that supports Ed25519. It is a test and learning tool. Do not paste a seed that protects real funds or production systems into any web page you do not fully trust.",
+ "howTo": [
+  "Choose a mode: generate, sign or verify.",
+  "For signing, enter the message and a 64-character hex seed. For verifying, enter the message, the public key and the 128-character signature.",
+  "Choose whether the message is plain text or hex.",
+  "Read the key pair, signature or verification result."
+ ],
+ "faq": [
+  {
+   "q": "Which browsers can run it?",
+   "a": "It needs WebCrypto with Ed25519, which recent versions of the major browsers include. If your browser lacks it, the tool shows an error instead of a result, and you can try an updated browser."
+  },
+  {
+   "q": "What is the seed?",
+   "a": "A 32-byte value, written as 64 hex characters, from which the private key and public key are derived. The same seed always gives the same key pair and, for the same message, the same signature."
+  },
+  {
+   "q": "Can I use it with real keys?",
+   "a": "Avoid it. Use throwaway seeds for testing and compare with your library's output. Secrets pasted into any web page can be exposed by extensions, shared screens or compromised devices."
+  }
+ ],
+ "related": [
+  "ssh-key-fingerprint",
+  "ed25519-key-generator",
+  "ethereum-eip191-signature-verifier",
+  "rsa-key-pair-generator",
+  "hmac-generator",
+  "openpgp-inspector"
+ ],
+ "keywords": [
+  "ed25519 sign verify online",
+  "ed25519 key pair generator",
+  "ed25519 signature checker",
+  "verify ed25519 signature",
+  "webcrypto ed25519 tool",
+  "free ed25519 tool"
+ ]
+}

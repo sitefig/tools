@@ -1,0 +1,45 @@
+{
+  "id": "file-type-detector",
+  "seoTitle": "File Type Detector: Identify Files by Magic Bytes",
+  "metaDescription": "Find out what a file really is from its first bytes, not its extension: images, archives, documents, audio, video, fonts, executables. Flags extension mismatches.",
+  "intro": "Drop in any file and see its true type, MIME type and the first bytes in hex.",
+  "why": "The tool reads the first 32 KB of each file and compares them with a table of about 70 well-known signatures (PNG, JPEG, PDF, ZIP, gzip, 7z, RAR, ELF, Mach-O, PE, WebAssembly, MP3, MP4, WebM, SQLite, fonts and more), falling back to text or JSON detection. It tells you when the extension does not match the content.\n\nContainer formats share headers: a .docx, .jar and .apk are all ZIP files, so a ZIP result can be correct for those. A file renamed to hide its type is revealed, but a signature is not proof the file is safe.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose one or more files.",
+    "Read the detected type and hex header.",
+    "Check the mismatch note.",
+    "Treat unexpected executables with caution."
+  ],
+  "faq": [
+    {
+      "q": "Is my file uploaded?",
+      "a": "No. Only the first 32 KB are read in your browser."
+    },
+    {
+      "q": "Why is my .docx shown as ZIP?",
+      "a": "Office documents are ZIP archives; the extension distinguishes them."
+    },
+    {
+      "q": "Can it detect malware?",
+      "a": "No. It identifies formats only."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "mime-type-lookup",
+    "hex-dump-viewer",
+    "file-hash",
+    "gzip-inspector",
+    "zip-inspector",
+    "mp4-box-inspector"
+  ],
+  "keywords": [
+    "file type detector",
+    "magic number checker",
+    "identify file type",
+    "what file is this"
+  ]
+}

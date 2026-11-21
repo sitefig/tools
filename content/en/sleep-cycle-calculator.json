@@ -1,0 +1,45 @@
+{
+  "id": "sleep-cycle-calculator",
+  "seoTitle": "Sleep Cycle Calculator: Bedtime and Wake-Up Times",
+  "metaDescription": "Find bedtimes that match a wake-up time, or wake-up times for a bedtime, using 90-minute sleep cycles and time to fall asleep.",
+  "intro": "Plan your sleep so you wake at the end of a cycle.",
+  "why": "Enter a time and choose whether it is your wake-up time or bedtime. The page lists times for six, five, four and three 90-minute cycles after allowing the minutes you need to fall asleep (15 by default). Both the cycle length and the latency can be changed.\n\nThe 90-minute cycle is an average that varies between people and through the night. Adults generally need 7 to 9 hours, and this is a planning aid, not medical advice.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose wake-up time or bedtime mode.",
+    "Enter the time in 24-hour format.",
+    "Adjust minutes to fall asleep.",
+    "Pick a time that suits your schedule."
+  ],
+  "faq": [
+    {
+      "q": "Is 90 minutes right for me?",
+      "a": "It is an average; individual cycles range from about 80 to 110 minutes."
+    },
+    {
+      "q": "How many cycles do I need?",
+      "a": "Five to six cycles (7.5 to 9 hours) suit many adults."
+    },
+    {
+      "q": "Will it fix poor sleep?",
+      "a": "No. Persistent problems are worth discussing with a clinician."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "fasting-window-planner",
+    "water-intake",
+    "bmr-tdee",
+    "timezone-meeting-planner",
+    "time-duration-calculator",
+    "countdown-timer"
+  ],
+  "keywords": [
+    "sleep cycle calculator",
+    "bedtime calculator",
+    "wake up time",
+    "90 minute sleep cycles"
+  ]
+}

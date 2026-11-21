@@ -1,0 +1,46 @@
+{
+ "id": "exif-remover",
+ "seoTitle": "Free EXIF Remover: Strip Photo Metadata Online",
+ "metaDescription": "Remove EXIF, GPS and other metadata from JPEG, PNG and WebP photos in your browser. Free, handles many files, no upload needed.",
+ "intro": "Strip EXIF, GPS, XMP and text metadata from images by re-encoding them in your browser. JPEG, PNG and WebP keep their format, and several files can be cleaned at once.",
+ "why": "Before you post a photo of an item for sale, attach a screenshot to a support ticket or publish a picture on your blog, it is worth removing what is hidden inside the file. Location, device model, timestamps and editing history can all travel with the image and tell strangers more than you intended.\n\nThis tool redraws each image on a canvas and saves a fresh file, so none of the original metadata is carried over. The re-encoded copy gets a -clean suffix, and the page reports whether metadata was found and how the file size changed. Everything happens locally, which is the point when the photo itself is private.",
+ "howTo": [
+  "Choose one or more images using the file picker.",
+  "Set the JPEG and WebP quality if you want a different value from the default 0.92.",
+  "Run the tool and read the report of what was found in each file.",
+  "Download the cleaned files, which keep their format and have -clean in the name."
+ ],
+ "faq": [
+  {
+   "q": "Does it remove all metadata?",
+   "a": "Re-drawing through a canvas drops EXIF, GPS, XMP, ICC profile and text chunks. The picture orientation is applied to the pixels. Colour profile loss can slightly change colours on wide-gamut images."
+  },
+  {
+   "q": "Will image quality change?",
+   "a": "JPEG and WebP files are compressed again, so there is a small quality loss that depends on the quality setting. PNG stays lossless. File size can go up or down compared with the original."
+  },
+  {
+   "q": "What happens to formats other than JPEG, PNG and WebP?",
+   "a": "They are re-encoded as PNG. Animated images lose their animation because only the first frame is drawn. Check the output file name and type before sharing."
+  },
+  {
+   "q": "Are my images uploaded?",
+   "a": "No. The images are processed by your browser and the cleaned files are created on your device. Nothing is sent to a server."
+  }
+ ],
+ "related": [
+  "exif-viewer",
+  "image-redaction",
+  "image-compressor",
+  "image-resizer",
+  "image-format-converter",
+  "pdf-remove-metadata"
+ ],
+ "keywords": [
+  "remove exif data",
+  "strip photo metadata",
+  "remove gps from photo",
+  "exif remover online free",
+  "delete image metadata"
+ ]
+}

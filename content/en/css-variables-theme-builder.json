@@ -1,0 +1,41 @@
+{
+ "id": "css-variables-theme-builder",
+ "seoTitle": "CSS Variables Theme Builder with Dark Mode",
+ "metaDescription": "Turn lines of \"name: light | dark\" into :root custom properties with a prefers-color-scheme dark block and a sample card.",
+ "intro": "Writes a CSS custom property theme with light and dark values, using the media query, a data attribute, or both.",
+ "why": "Theming with custom properties is simple until dark mode: you need the same names defined twice, and users want both the system setting and a manual switch.\n\nWrite one line per token, with the light value then a bar and the dark value. The tool outputs :root, the prefers-color-scheme block and an optional attribute selector. A preview card uses your bg, fg, primary, border and radius tokens if you define them.",
+ "howTo": [
+  "Write tokens, one per line: name: light | dark.",
+  "Choose media, attribute or both.",
+  "Check the sample card.",
+  "Copy the CSS."
+ ],
+ "faq": [
+  {
+   "q": "What if a token has no dark value?",
+   "a": "It stays the same in both modes."
+  },
+  {
+   "q": "How do I switch manually?",
+   "a": "Set data-theme=\"dark\" on the html element when you pick media + attribute or attribute."
+  },
+  {
+   "q": "Do I need the -- prefix?",
+   "a": "No. It is added for you, and you can set an optional prefix."
+  }
+ ],
+ "related": [
+  "design-tokens-converter",
+  "shadcn-theme-generator",
+  "theme-color-meta-generator",
+  "palette-generator",
+  "tailwind-v4-color-palette",
+  "accessible-palette-generator"
+ ],
+ "keywords": [
+  "css variables theme",
+  "dark mode css variables",
+  "css custom properties generator",
+  "prefers-color-scheme"
+ ]
+}

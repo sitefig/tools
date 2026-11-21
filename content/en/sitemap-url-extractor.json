@@ -1,0 +1,46 @@
+{
+ "id": "sitemap-url-extractor",
+ "seoTitle": "Free Sitemap URL Extractor: Get All loc URLs",
+ "metaDescription": "Pull every URL out of sitemap XML, with optional lastmod as tab-separated values and duplicate removal. Free; runs in your browser.",
+ "intro": "Paste sitemap XML to extract every loc URL into a clean list. Remove duplicates and include lastmod as a second column if you want.",
+ "why": "You need the list of URLs in a sitemap for a crawl, a redirect map, a spreadsheet audit or a comparison with analytics. The XML is verbose and most tools want one URL per line.\n\nThis extractor reads the loc elements in the sitemap you paste and returns them as a plain list, with a count at the end. It can remove duplicates, and it can add lastmod as a second tab-separated column that pastes straight into a spreadsheet. It works on sitemaps and sitemap indexes, though for an index you get the child sitemap addresses and have to open each one in turn. The extraction is done in your browser and nothing is fetched or uploaded.",
+ "howTo": [
+  "Open your sitemap and copy the XML.",
+  "Paste it into the input box.",
+  "Choose whether to remove duplicates and include lastmod.",
+  "Run the tool and copy the list into your spreadsheet or crawler."
+ ],
+ "faq": [
+  {
+   "q": "Can it read a sitemap index?",
+   "a": "Yes, but you get the addresses of the child sitemaps. Open each child sitemap, paste its XML and extract again to get the page URLs."
+  },
+  {
+   "q": "What format is the output with lastmod?",
+   "a": "Each line has the URL, a tab and the lastmod value. Tabs paste into separate columns in spreadsheets, so you can sort or filter by date."
+  },
+  {
+   "q": "Does it fetch the sitemap for me?",
+   "a": "No. You paste the XML yourself. The tool does not make any request, which also means it works on private or staging sitemaps."
+  },
+  {
+   "q": "Is the XML uploaded?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "sitemap-validator",
+  "sitemap-generator",
+  "extract-emails-urls-numbers",
+  "dedupe-lines",
+  "internal-link-extractor",
+  "xml-to-json"
+ ],
+ "keywords": [
+  "sitemap url extractor",
+  "extract urls from sitemap xml",
+  "sitemap to list",
+  "sitemap to csv",
+  "get loc urls from sitemap"
+ ]
+}

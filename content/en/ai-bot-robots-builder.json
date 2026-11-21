@@ -1,0 +1,46 @@
+{
+ "id": "ai-bot-robots-builder",
+ "seoTitle": "Free AI Bot robots.txt Builder (GPTBot, ClaudeBot)",
+ "metaDescription": "Build a robots.txt policy for AI crawlers: GPTBot, ClaudeBot, CCBot, Google-Extended, PerplexityBot and more. Free, in your browser.",
+ "intro": "Choose how to treat AI training crawlers, AI search crawlers and user-triggered fetchers, then generate robots.txt rules, with per-bot overrides for GPTBot, ClaudeBot, CCBot and others.",
+ "why": "Site owners increasingly want a say in how AI companies use their content. You may be happy to be cited in an AI search answer but not want your pages used to train models, or the other way round. These crawlers use different user-agent names, and the list keeps changing.\n\nThis builder groups known bots into training crawlers, AI search crawlers and user-triggered fetchers, and lets you set block or allow for each group. You can override single bots, either with allow, block or a path to disallow. The output is a commented robots.txt section that ends with a rule for all other agents. Robots.txt is advisory: well-behaved bots follow it, others may not. Check each company's documentation for current names. Generation happens in your browser.",
+ "howTo": [
+  "Set the default for AI training crawlers, AI search crawlers and user-triggered fetchers: block or allow.",
+  "Add overrides in the box, for example GPTBot: block or ClaudeBot: /private/.",
+  "Optionally enter your sitemap URL.",
+  "Run the tool and add the result to your robots.txt file."
+ ],
+ "faq": [
+  {
+   "q": "Will blocking these bots stop AI training on my content?",
+   "a": "Only for crawlers that honour robots.txt, and only for future crawling. Content already collected, or fetched by bots that ignore the file, is not affected."
+  },
+  {
+   "q": "Does blocking Google-Extended affect search rankings?",
+   "a": "No. Google-Extended is a separate control for AI training uses, and blocking it does not change Google Search crawling or ranking. Check Google's documentation for the current scope."
+  },
+  {
+   "q": "Why separate training, search and user fetchers?",
+   "a": "They serve different purposes. Training crawlers collect data for models, search crawlers fetch pages to cite in answers, and user fetchers load a page because a person asked an assistant to. Policies often differ."
+  },
+  {
+   "q": "Is anything sent to a server?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "robots-generator",
+  "robots-tester",
+  "llms-txt-generator",
+  "sitemap-generator",
+  "seo-robots-noindex-simulator",
+  "http-headers-analyzer"
+ ],
+ "keywords": [
+  "ai robots.txt generator",
+  "block gptbot",
+  "block ai crawlers robots.txt",
+  "claudebot robots.txt",
+  "ai bot policy builder"
+ ]
+}

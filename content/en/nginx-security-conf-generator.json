@@ -1,0 +1,43 @@
+{
+ "id": "nginx-security-conf-generator",
+ "seoTitle": "Free Hardened nginx Server Block Generator",
+ "metaDescription": "Generate a hardened nginx server block with modern TLS, HSTS, security headers, rate limiting and method limits. Free, runs in your browser.",
+ "intro": "Set your host, root and a few options and get a hardened nginx server block with modern TLS, HSTS, security headers, hidden version number, request limits and rate limiting.",
+ "why": "A default nginx install works, but it announces its version, serves dotfiles and backup files if they exist, allows every method and sends few security headers. Fixing this means collecting directives from several guides, and it is easy to miss one or to paste an outdated cipher list.\n\nThis generator writes a server block that includes the usual hardening in one place: TLS settings, HSTS, a Content-Security-Policy you can edit, request body limits, rate limiting, blocking of hidden and backup files, and a method allow-list. Review each part before production, since a strict CSP or HSTS can break a site that is not ready. Test with nginx -t. The configuration is created in your browser.",
+ "howTo": [
+  "Enter the server name and the document root.",
+  "Choose TLS, HSTS and rate limiting options, and enter a Content-Security-Policy and body size limit.",
+  "Set the allowed HTTP methods.",
+  "Copy the block into your nginx configuration, run nginx -t, then reload."
+ ],
+ "faq": [
+  {
+   "q": "Is it safe to enable HSTS straight away?",
+   "a": "HSTS tells browsers to use HTTPS only for the given period, and the browser remembers it. Enable it once your site works fully over HTTPS, and start with a short max-age while you test."
+  },
+  {
+   "q": "Will the default CSP work for my site?",
+   "a": "Probably not unchanged. A strict policy blocks inline scripts and third-party resources until you allow them. Start in report-only mode in a staging copy, and edit the policy to match your pages."
+  },
+  {
+   "q": "Does hardening guarantee security?",
+   "a": "No. It reduces common exposure, but your application, updates and certificates matter just as much. Check your result with a TLS and header scanner after deploying."
+  }
+ ],
+ "related": [
+  "nginx-config-generator",
+  "nginx-formatter",
+  "security-headers-generator",
+  "csp-builder",
+  "nginx-rate-limit-calculator",
+  "htaccess-to-nginx"
+ ],
+ "keywords": [
+  "nginx security config generator",
+  "hardened nginx config",
+  "nginx hsts security headers",
+  "secure nginx server block",
+  "nginx tls best practices config",
+  "free nginx hardening tool"
+ ]
+}

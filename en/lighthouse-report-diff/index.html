@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lighthouse Report Diff: Compare Two JSON Reports for Regressions | Free Tools</title>
+<meta name="description" content="Compare two Lighthouse JSON reports: score changes, metric regressions with a noise tolerance, and audits that started or stopped failing.">
+<link rel="canonical" href="https://tools.sitefig.net/en/lighthouse-report-diff/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/lighthouse-report-diff/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/lighthouse-report-diff/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Lighthouse Report Diff: Compare Two JSON Reports for Regressions | Free Tools">
+<meta property="og:description" content="Compare two Lighthouse JSON reports: score changes, metric regressions with a noise tolerance, and audits that started or stopped failing.">
+<meta property="og:url" content="https://tools.sitefig.net/en/lighthouse-report-diff/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Lighthouse Report Diff: Compare Two JSON Reports for Regressions | Free Tools">
+<meta name="twitter:description" content="Compare two Lighthouse JSON reports: score changes, metric regressions with a noise tolerance, and audits that started or stopped failing.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Lighthouse Report Diff: Before and After Regressions","url":"https://tools.sitefig.net/en/lighthouse-report-diff/","description":"Compare two Lighthouse JSON reports: score changes, metric regressions with a noise tolerance, and audits that started or stopped failing.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the earlier report into the first box.","Paste the later report into the second box.","Set how many percent of change you treat as noise.","Read the regressions first, then the newly failing audits."],"keywords":"lighthouse diff, compare lighthouse reports, performance regression check, lighthouse before after","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Web Performance","item":"https://tools.sitefig.net/en/#web-performance"},{"@type":"ListItem","position":3,"name":"Lighthouse Report Diff: Before and After Regressions","item":"https://tools.sitefig.net/en/lighthouse-report-diff/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Why are small changes labelled \"about the same\"?","acceptedAnswer":{"@type":"Answer","text":"Lab timings vary between runs. Changes inside your tolerance (5 percent by default) are shown as noise."}},{"@type":"Question","name":"Can I compare mobile with desktop?","acceptedAnswer":{"@type":"Answer","text":"You can, but the tool warns you: the throttling differs, so the numbers are not comparable."}},{"@type":"Question","name":"Which metrics are compared?","acceptedAnswer":{"@type":"Answer","text":"FCP, LCP, TBT, CLS, Speed Index and TTI when both reports contain them."}},{"@type":"Question","name":"Does it upload my reports?","acceptedAnswer":{"@type":"Answer","text":"No."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#web-performance">Web Performance</a></li><li><span aria-current="page">Lighthouse Report Diff: Before and After Regressions</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Lighthouse Report Diff: Before and After Regressions</h1>
+<p class="lede">Compares a before and an after Lighthouse JSON report and shows score changes, metric regressions and improvements, and newly failing or fixed audits.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="lighthouse-report-diff" data-module="new05"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>After a release you want to know whether the page got slower. Two reports side by side do not tell you quickly, and a single run can move 5 to 10 percent without any change.</p>
+<p>This tool lines up the category scores and the main metrics, marks a change as noise when it is inside your tolerance, and lists audits that crossed the 90 mark in either direction. It warns when the two reports are for different URLs or form factors. For a real verdict, run each version several times.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the earlier report into the first box.</li><li>Paste the later report into the second box.</li><li>Set how many percent of change you treat as noise.</li><li>Read the regressions first, then the newly failing audits.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Why are small changes labelled &quot;about the same&quot;?</summary><p>Lab timings vary between runs. Changes inside your tolerance (5 percent by default) are shown as noise.</p></details>
+<details><summary>Can I compare mobile with desktop?</summary><p>You can, but the tool warns you: the throttling differs, so the numbers are not comparable.</p></details>
+<details><summary>Which metrics are compared?</summary><p>FCP, LCP, TBT, CLS, Speed Index and TTI when both reports contain them.</p></details>
+<details><summary>Does it upload my reports?</summary><p>No.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/lighthouse-report-viewer/"><span class="link-card__title">Lighthouse JSON Report Viewer: Scores, Metrics and Failing Audits</span><span class="link-card__desc">Paste a Lighthouse JSON report (or a PageSpeed Insights API response) and read category scores, lab metrics, savings and the audits that failed, grouped by category.</span></a></li><li><a class="link-card" href="/en/core-web-vitals-grader/"><span class="link-card__title">Core Web Vitals &amp; Lighthouse Score Calculator</span><span class="link-card__desc">Enter LCP, INP, CLS (and optional FCP, TTFB, TBT, Speed Index): get Good / Needs improvement / Poor ratings and the Lighthouse performance score.</span></a></li><li><a class="link-card" href="/en/crux-response-analyzer/"><span class="link-card__title">CrUX and PageSpeed Insights Field Data Analyzer (Core Web Vitals p75)</span><span class="link-card__desc">Paste the JSON from the Chrome UX Report API (query or history) or PageSpeed Insights loadingExperience and get Core Web Vitals pass or fail, p75 vs thresholds, good/needs-improvement/poor shares and trend.</span></a></li><li><a class="link-card" href="/en/har-performance-analyzer/"><span class="link-card__title">HAR Performance Analyzer: Waterfall, Heaviest Requests and Third-Party Share</span><span class="link-card__desc">Paste a HAR file and get total weight by type, the largest and slowest requests, third-party share, uncompressed text and a text waterfall. Nothing is uploaded.</span></a></li><li><a class="link-card" href="/en/page-weight-download-time/"><span class="link-card__title">Page Weight Download Time on 3G, 4G and Broadband</span><span class="link-card__desc">Estimate how long a page of a given size takes to download on Slow 3G, Slow 4G, Fast 4G and broadband, with connection setup and extra round trips included.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

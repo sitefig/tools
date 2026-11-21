@@ -1,0 +1,44 @@
+{
+ "id": "heatmap-maker",
+ "seoTitle": "Heatmap Maker: Colour a Table of Numbers (SVG)",
+ "metaDescription": "Paste a grid with row and column labels to colour each cell by value with a legend and optional numbers. Free SVG heatmap.",
+ "intro": "Shades every cell of a numeric grid by its value. Pick a colour scale, show or hide the numbers, and get a legend and a table.",
+ "why": "A heatmap helps you find the hot and cold cells in a cross-tab, a correlation matrix or a schedule. The numbers can stay in the cells so the picture never replaces the data.\n\nText inside each cell switches between dark and light for readable contrast. Scales include a sequential blue, viridis-style, heat, grey and a diverging blue-white-red scale centred on zero. Colour alone is a weak channel, so keep the values on for anything you must read exactly.",
+ "howTo": [
+  "Paste a grid: first row column labels, first column row labels.",
+  "Choose a colour scale; use diverging for values around zero.",
+  "Show values in cells if the grid is small enough.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "Can I leave cells empty?",
+   "a": "Yes, they are drawn grey as no value."
+  },
+  {
+   "q": "Is the scale linear?",
+   "a": "Yes, from the smallest to the largest value, or symmetric around zero for the diverging scale."
+  },
+  {
+   "q": "How big a grid?",
+   "a": "Up to 10000 cells."
+  },
+  {
+   "q": "Is it colour-blind safe?",
+   "a": "The blue, viridis and grey scales are. The numbers in cells are the backup."
+  }
+ ],
+ "related": [
+  "calendar-heatmap",
+  "bar-chart-maker",
+  "csv-to-chart",
+  "pivot-table-builder",
+  "csv-viewer",
+  "parallel-coordinates-plot"
+ ],
+ "keywords": [
+  "heatmap generator",
+  "matrix heat map online",
+  "correlation matrix colours"
+ ]
+}

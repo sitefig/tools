@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free Unicode Escape and Unescape Online Tool | Free Tools</title>
+<meta name="description" content="Convert text to \uXXXX, \u{X} or U+XXXX escapes and back again, including \xNN. Free, handles emoji, and runs entirely in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/unicode-escape/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/unicode-escape/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/unicode-escape/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free Unicode Escape and Unescape Online Tool | Free Tools">
+<meta property="og:description" content="Convert text to \uXXXX, \u{X} or U+XXXX escapes and back again, including \xNN. Free, handles emoji, and runs entirely in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/unicode-escape/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free Unicode Escape and Unescape Online Tool | Free Tools">
+<meta name="twitter:description" content="Convert text to \uXXXX, \u{X} or U+XXXX escapes and back again, including \xNN. Free, handles emoji, and runs entirely in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Unicode Escape / Unescape","url":"https://tools.sitefig.net/en/unicode-escape/","description":"Convert text to \\uXXXX, \\u{X} or U+XXXX escapes and back again, including \\xNN. Free, handles emoji, and runs entirely in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Pick the direction: escape or unescape.","For escaping, choose a style: \\uXXXX, \\u{X} or U+XXXX.","Paste your text into the box, and tick \"Escape ASCII too\" if every character should be escaped.","Copy the converted text."],"keywords":"unicode escape online, unicode to \\u escape, unescape unicode text, free unicode converter, emoji to unicode escape, \\u0000 decoder","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Encoding","item":"https://tools.sitefig.net/en/#encoding"},{"@type":"ListItem","position":3,"name":"Unicode Escape / Unescape","item":"https://tools.sitefig.net/en/unicode-escape/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which style should I use?","acceptedAnswer":{"@type":"Answer","text":"\\uXXXX works in JSON and in every JavaScript version, using two escapes for characters above U+FFFF. \\u{X} is shorter and valid in modern JavaScript and Rust. U+XXXX is only a notation for documents and is not valid code."}},{"@type":"Question","name":"Why does one emoji produce two escapes?","acceptedAnswer":{"@type":"Answer","text":"In the \\uXXXX style, characters above U+FFFF are written as a UTF-16 surrogate pair, such as \\ud83d\\ude00. That is how JSON and older JavaScript represent them. Use \\u{X} for a single escape."}},{"@type":"Question","name":"What does unescape understand?","acceptedAnswer":{"@type":"Answer","text":"\\u{1F600}, \\u00e9, \\xe9, \\U0001F600 and U+00E9. Any other backslash sequences, such as \\n, are left untouched, so this is not a full string unescaper."}},{"@type":"Question","name":"Will it change normal ASCII text?","acceptedAnswer":{"@type":"Answer","text":"Not unless you tick \"Escape ASCII too\". By default, letters, digits and punctuation in the ASCII range are copied as they are, so the output stays easy to read."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#encoding">Encoding</a></li><li><span aria-current="page">Unicode Escape / Unescape</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Unicode Escape / Unescape</h1>
+<p class="lede">Turn non-ASCII text into \uXXXX, \u{X} or U+XXXX escape sequences, or decode escapes back into readable characters. \xNN and \UXXXXXXXX forms are understood when unescaping.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="unicode-escape" data-module="encode"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Source files, JSON payloads and config formats sometimes need pure ASCII, which means accented letters and emoji must be written as escapes. The other way round, logs and API responses are full of \u00e9 and \ud83d\ude00 that nobody can read at a glance.</p>
+<p>This tool escapes every character outside ASCII in the style you choose, and optionally ASCII too. Characters above U+FFFF become surrogate pairs in the \uXXXX style, which is how JavaScript and JSON expect them. Unescaping accepts several syntaxes in one pass. It is all done in your browser, so nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Pick the direction: escape or unescape.</li><li>For escaping, choose a style: \uXXXX, \u{X} or U+XXXX.</li><li>Paste your text into the box, and tick &quot;Escape ASCII too&quot; if every character should be escaped.</li><li>Copy the converted text.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which style should I use?</summary><p>\uXXXX works in JSON and in every JavaScript version, using two escapes for characters above U+FFFF. \u{X} is shorter and valid in modern JavaScript and Rust. U+XXXX is only a notation for documents and is not valid code.</p></details>
+<details><summary>Why does one emoji produce two escapes?</summary><p>In the \uXXXX style, characters above U+FFFF are written as a UTF-16 surrogate pair, such as \ud83d\ude00. That is how JSON and older JavaScript represent them. Use \u{X} for a single escape.</p></details>
+<details><summary>What does unescape understand?</summary><p>\u{1F600}, \u00e9, \xe9, \U0001F600 and U+00E9. Any other backslash sequences, such as \n, are left untouched, so this is not a full string unescaper.</p></details>
+<details><summary>Will it change normal ASCII text?</summary><p>Not unless you tick &quot;Escape ASCII too&quot;. By default, letters, digits and punctuation in the ASCII range are copied as they are, so the output stays easy to read.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/string-escape/"><span class="link-card__title">String Escape / Unescape</span><span class="link-card__desc">Escape or unescape for JavaScript, JSON, CSV, SQL and regex.</span></a></li><li><a class="link-card" href="/en/char-info/"><span class="link-card__title">Unicode Character Inspector</span><span class="link-card__desc">Code point, category, script, encodings and escapes for each character.</span></a></li><li><a class="link-card" href="/en/utf8-bytes-viewer/"><span class="link-card__title">UTF-8 Bytes Viewer</span><span class="link-card__desc">Show code points with their UTF-8 and UTF-16 byte sequences.</span></a></li><li><a class="link-card" href="/en/html-entities/"><span class="link-card__title">HTML Entities Encode / Decode</span><span class="link-card__desc">Escape or unescape HTML entities (named, decimal and hex).</span></a></li><li><a class="link-card" href="/en/json-escape/"><span class="link-card__title">JSON String Escape</span><span class="link-card__desc">Escape text so it can be embedded inside a JSON string.</span></a></li><li><a class="link-card" href="/en/unicode-normalize/"><span class="link-card__title">Unicode Normalizer</span><span class="link-card__desc">NFC / NFD / NFKC / NFKD, strip accents, remove invisible characters.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

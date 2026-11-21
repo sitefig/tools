@@ -1,0 +1,44 @@
+{
+ "id": "duplicate-row-remover",
+ "seoTitle": "Duplicate Row Remover for CSV by Selected Columns",
+ "metaDescription": "Remove duplicate rows from a CSV by chosen key columns, keeping the first or last, ignoring case and spaces. Lists what was removed.",
+ "intro": "Finds rows that match on the columns you choose and keeps one of each, reporting which rows were removed.",
+ "why": "Duplicates usually mean the same person or item entered twice, but only some columns define sameness: an email, an ID, a name and date together. Choose those columns and ignore the rest.\n\nComparison can ignore letter case and surrounding spaces, so Ann@x.com and ann@x.com  match. You choose whether the first or the last occurrence survives. The summary lists the removed row numbers so you can check before using the result.",
+ "howTo": [
+  "Paste the CSV with a header.",
+  "Type the columns that define a duplicate, or leave blank for whole rows.",
+  "Pick keep first or keep last.",
+  "Copy or download the cleaned CSV."
+ ],
+ "faq": [
+  {
+   "q": "Does it find near-duplicates?",
+   "a": "No, only exact matches after trimming and lowercasing. Use the fuzzy match tool for typos."
+  },
+  {
+   "q": "Which row numbers are shown?",
+   "a": "Data rows counted from 1 below the header."
+  },
+  {
+   "q": "Are other columns merged?",
+   "a": "No. The kept row is left as is."
+  },
+  {
+   "q": "Does order change?",
+   "a": "No, kept rows stay in their original order."
+  }
+ ],
+ "related": [
+  "dedupe-lines",
+  "fuzzy-match-deduplicator",
+  "csv-merger",
+  "email-list-cleaner",
+  "csv-column-profiler",
+  "table-joiner"
+ ],
+ "keywords": [
+  "remove duplicate rows csv",
+  "csv deduplicate by column",
+  "unique rows by key"
+ ]
+}

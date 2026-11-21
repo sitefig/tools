@@ -1,0 +1,45 @@
+{
+ "id": "llm-tool-definition-builder",
+ "seoTitle": "Free LLM Tool Definition Builder: OpenAI, Anthropic",
+ "metaDescription": "Wrap a JSON Schema into OpenAI Chat, OpenAI Responses (strict mode) and Anthropic tool definition JSON. Free, runs in your browser.",
+ "intro": "Paste the JSON Schema for a function and get the tool definition JSON for OpenAI Chat Completions, OpenAI Responses and Anthropic, with optional strict mode.",
+ "why": "The same function tool is described slightly differently by each provider. OpenAI Chat nests everything under a function key, the Responses API puts the fields at the top level, and Anthropic uses input_schema instead of parameters. Getting this wrong gives a 400 error with a message that is not always helpful.\n\nOpenAI strict mode adds more rules: every property must be listed as required and additionalProperties must be false, so optional fields become nullable. This builder applies that transformation for the OpenAI outputs and leaves the Anthropic schema as you wrote it. Check the result against each provider documentation, as the formats change over time.",
+ "howTo": [
+  "Paste a JSON Schema whose top level is an object into the input.",
+  "Enter the tool name and a clear description, and choose a target or All.",
+  "Copy the JSON for your provider, and keep strict mode ticked for OpenAI if you want it."
+ ],
+ "faq": [
+  {
+   "q": "What does strict mode change?",
+   "a": "For OpenAI it lists all properties as required, sets additionalProperties to false and turns optional fields into a type plus null. The Anthropic output is left unchanged."
+  },
+  {
+   "q": "Why must the schema be an object?",
+   "a": "Function arguments are passed as a single JSON object, so the top-level schema needs type object. The tool stops with an error otherwise."
+  },
+  {
+   "q": "Are tool names restricted?",
+   "a": "Yes. It accepts 1 to 64 characters of letters, digits, underscores and hyphens, which fits the rules of both providers."
+  },
+  {
+   "q": "Does it call any API?",
+   "a": "No. It only reshapes JSON in your browser. You still need to send the definition in a request to the provider yourself."
+  }
+ ],
+ "related": [
+  "json-schema-generator",
+  "json-schema-validator",
+  "openai-structured-outputs",
+  "mcp-message-validator",
+  "json-schema-to-zod",
+  "vercel-ai-core-message-converter"
+ ],
+ "keywords": [
+  "llm tool definition builder",
+  "openai function calling schema",
+  "anthropic tool use json",
+  "openai strict mode schema",
+  "free tool schema generator"
+ ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "log-level-histogram",
+ "seoTitle": "Log Level Histogram: DEBUG INFO WARN ERROR Over Time",
+ "metaDescription": "Count log lines per level in time buckets from any timestamped log. Timestamps are detected automatically. Free, runs locally.",
+ "intro": "Counts lines per log level for each minute, hour or day, with a bar per bucket.",
+ "why": "A spike in ERROR lines is easier to see as a table with bars than in the raw file. The tool finds the first timestamp in each line (ISO, Apache, syslog or epoch) and the first level word.\n\nContinuation lines such as stack traces carry no level and are not counted. Times without a zone are read as the zone you set.",
+ "howTo": [
+  "Paste the log.",
+  "Choose a bucket size or leave auto.",
+  "Set the zone for times without one.",
+  "Read the table."
+ ],
+ "faq": [
+  {
+   "q": "Which levels are found?",
+   "a": "TRACE, DEBUG, INFO, NOTICE, WARN, ERROR and FATAL, plus close synonyms."
+  },
+  {
+   "q": "What about syslog times with no year?",
+   "a": "Set the year option or the current year is used."
+  },
+  {
+   "q": "Why are some buckets empty?",
+   "a": "The range between first and last line is filled with zero rows."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "request-spike-detector",
+  "log-timestamp-normalizer",
+  "multi-log-merger",
+  "exception-grouper",
+  "log-pattern-miner",
+  "access-log-analyzer"
+ ],
+ "keywords": [
+  "log level counts over time",
+  "error rate per minute log",
+  "log histogram"
+ ]
+}

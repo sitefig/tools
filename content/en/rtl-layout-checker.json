@@ -1,0 +1,45 @@
+{
+ "id": "rtl-layout-checker",
+ "seoTitle": "RTL Layout and Bidi Checker for Arabic and Hebrew HTML",
+ "metaDescription": "Check dir and lang on right-to-left pages and flag Latin text, numbers, URLs and physical CSS that may need bdi, dir or logical properties.",
+ "intro": "Reviews pasted Arabic or Hebrew HTML for missing dir attributes, invalid values, embedded left-to-right runs and physical left and right styles.",
+ "why": "Right-to-left pages break in small ways: punctuation lands on the wrong side of an English brand name, a phone number reads backwards, a margin stays on the left. The tool reads the HTML source, checks that dir=\"rtl\" accompanies RTL languages, flags invalid dir values, finds URLs, numbers and Latin words inside RTL text, and notes inline styles that use left and right.\n\nIt is a source-level heuristic. It cannot see your CSS files, the rendered result or text added by scripts, so findings are labelled REVIEW. A native reader checking the rendered page is the real test.",
+ "howTo": [
+  "Paste the HTML of the page or a fragment.",
+  "Read the errors and review notes.",
+  "Wrap embedded LTR text in bdi or a span with dir=\"ltr\".",
+  "Use logical CSS properties."
+ ],
+ "faq": [
+  {
+   "q": "Which languages count as RTL?",
+   "a": "Arabic, Hebrew, Persian, Urdu, Pashto, Sindhi, Uyghur, Yiddish, Dhivehi and Central Kurdish."
+  },
+  {
+   "q": "What is bdi?",
+   "a": "An element that isolates its text from the surrounding direction."
+  },
+  {
+   "q": "Does it look at CSS files?",
+   "a": "No, only the HTML you paste."
+  },
+  {
+   "q": "Is it a full accessibility audit?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "html-lang-attribute-checker",
+  "declared-language-match-checker",
+  "zero-width-detector",
+  "hreflang-code-checker",
+  "multilingual-title-width-checker",
+  "language-switcher-markup-generator"
+ ],
+ "keywords": [
+  "rtl html checker",
+  "arabic html dir",
+  "bidi text issues",
+  "bdi element"
+ ]
+}

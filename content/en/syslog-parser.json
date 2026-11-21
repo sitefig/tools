@@ -1,0 +1,44 @@
+{
+ "id": "syslog-parser",
+ "seoTitle": "Syslog Parser: RFC 3164 and RFC 5424 with Facility Names",
+ "metaDescription": "Decode syslog lines into host, app, PID and message, and turn the PRI number into facility and severity. Free, runs in your browser.",
+ "intro": "Splits syslog lines into fields and decodes the priority into facility and severity names.",
+ "why": "The number in angle brackets at the start of a syslog line is facility times 8 plus severity. This tool does the arithmetic and shows names such as auth and crit. The code tables come from RFC 5424.\n\nRFC 3164 lines, RFC 5424 lines with structured data and plain file lines from /var/log/syslog are supported. 3164 timestamps have no year or zone.",
+ "howTo": [
+  "Paste syslog lines or choose a file.",
+  "Optionally show only a severity and worse.",
+  "Choose summary or table output.",
+  "Export CSV or JSON if needed."
+ ],
+ "faq": [
+  {
+   "q": "Why are facility and severity empty?",
+   "a": "File lines in /var/log have no PRI number. Only network syslog carries it."
+  },
+  {
+   "q": "What if some lines do not match?",
+   "a": "They are skipped and the result says how many. Unusual vendor formats are not recognised."
+  },
+  {
+   "q": "What is the PRI formula?",
+   "a": "PRI = facility * 8 + severity, so <34> is facility 4 (auth) severity 2 (crit)."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "auth-log-analyzer",
+  "firewall-log-parser",
+  "journald-json-viewer",
+  "log-format-detector",
+  "log-timestamp-normalizer",
+  "log-level-histogram"
+ ],
+ "keywords": [
+  "syslog parser online",
+  "rfc 5424 decoder",
+  "syslog priority facility severity"
+ ]
+}

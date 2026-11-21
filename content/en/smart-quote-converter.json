@@ -1,0 +1,41 @@
+{
+ "id": "smart-quote-converter",
+ "seoTitle": "Smart Quote Converter: Straight to Curly and Back",
+ "metaDescription": "Convert straight quotes to curly typographic quotes or curly back to straight, with optional dashes and ellipses. Free, in your browser.",
+ "intro": "Convert straight quotes to typographic curly quotes or the other way round, and optionally dashes and ellipses too.",
+ "why": "Word processors turn quotes curly, code and plain text need them straight, and pasting between the two leaves a mix. Curly quotes in source code or JSON break parsers.\n\nChoose the direction. Going curly, a quote after a space, bracket or dash opens and any other closes, which is right for nearly all English prose. Going straight, all curly single and double quotes become ASCII. Leading apostrophes as in '90s are the known weak spot and may need a manual fix.",
+ "howTo": [
+  "Paste your text.",
+  "Choose straight to curly or curly to straight.",
+  "Decide whether to convert dashes and ellipses too.",
+  "Copy the result and check any '90s style words."
+ ],
+ "faq": [
+  {
+   "q": "Why is '90s wrong?",
+   "a": "A quote after a space looks like an opening quote. The right mark is an apostrophe, which points the other way. Fix those by hand."
+  },
+  {
+   "q": "Does it fix quotes in code?",
+   "a": "It converts every quote it sees, so run it on prose only."
+  },
+  {
+   "q": "What about other languages?",
+   "a": "It produces English style quotes. German, French and other styles use different marks."
+  }
+ ],
+ "related": [
+  "text-cleaner",
+  "unicode-normalize",
+  "find-replace",
+  "case-converter",
+  "zero-width-detector",
+  "line-break-remover"
+ ],
+ "keywords": [
+  "smart quotes converter",
+  "straight to curly quotes",
+  "remove curly quotes",
+  "typographic quotes"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "ip-address-extractor",
+ "seoTitle": "Free IP Address Extractor: IPv4 and IPv6 from Logs",
+ "metaDescription": "Extract IPv4 and IPv6 addresses from pasted text or logs, count them, sort them and drop private ranges. Handles [.] defanged forms. Free.",
+ "intro": "Finds every valid IPv4 and IPv6 address in a block of text and lists them with how often each appears.",
+ "why": "A log line or incident report can hide dozens of addresses. Regex alone matches things that are not addresses, such as 999.1.1.1 or the version number 1.2.3. This tool validates each candidate: IPv4 needs four numbers from 0 to 255 without leading zeros, and IPv6 is parsed in all its forms, including :: and embedded IPv4.\n\nYou can list each address once with a count, sort by first appearance, frequency or numeric value, and drop private, loopback and link-local addresses. Defanged text such as 192[.]0[.]2[.]44 is restored before matching.",
+ "howTo": [
+  "Paste the log or report text.",
+  "Choose IPv4, IPv6 or both and a sort order.",
+  "Untick private addresses if you only want public ones.",
+  "Copy the list."
+ ],
+ "faq": [
+  {
+   "q": "Are IPv6 zone IDs kept?",
+   "a": "No. A zone such as %eth0 is ignored and the address itself is listed."
+  },
+  {
+   "q": "Why is 01.2.3.4 skipped?",
+   "a": "Leading zeros are ambiguous (some systems read them as octal), so such forms are not accepted."
+  },
+  {
+   "q": "Does it look up the owners?",
+   "a": "No. It only extracts. The offline lookup tool classifies ranges without a network call."
+  },
+  {
+   "q": "Can it list ports too?",
+   "a": "No. Ports are ignored."
+  }
+ ],
+ "related": [
+  "ip-address-offline-lookup",
+  "ip-validator-converter",
+  "ip-subnet-calculator",
+  "ip-anonymizer",
+  "extract-emails-urls-numbers",
+  "grep-lines"
+ ],
+ "keywords": [
+  "extract ip addresses",
+  "ip extractor from log",
+  "find ipv6 in text",
+  "list ip addresses from text"
+ ]
+}

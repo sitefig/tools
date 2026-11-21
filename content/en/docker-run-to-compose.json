@@ -1,0 +1,45 @@
+{
+ "id": "docker-run-to-compose",
+ "seoTitle": "Free docker run to docker-compose.yml Converter",
+ "metaDescription": "Convert docker run commands with ports, volumes, env, networks, restart and limits into a docker-compose.yml. Free, runs in your browser.",
+ "intro": "Paste one or more docker run commands and get a docker-compose.yml with services, ports, volumes, environment, networks and restart policy, and named volumes listed.",
+ "why": "Many projects start as a long docker run line copied from a README, then need to be repeated, shared or run as a stack. A compose file is easier to read, keep in git and bring up with one command, but translating each flag by hand means remembering the compose key for every option.\n\nThis converter parses the command with shell-style quoting and line continuations and maps the flags it knows: ports, volumes, env vars, name, network, restart, user, working directory, capabilities, labels, memory and more. Named volumes and networks are added at the bottom. Flags it does not understand are listed as notes, and flags such as --rm have no compose equivalent. Review the file before using it.",
+ "howTo": [
+  "Paste one or more docker run commands. Backslash line breaks are fine.",
+  "Read the compose YAML and any notes about ignored flags.",
+  "Save it as docker-compose.yml and run docker compose config to check it."
+ ],
+ "faq": [
+  {
+   "q": "Which flags are converted?",
+   "a": "Common ones such as -p, -v, -e, --env-file, --name, --network, --restart, -w, -u, --label, --cap-add, --device, --memory and --entrypoint. Unknown flags are reported in a note at the end."
+  },
+  {
+   "q": "How are volumes handled?",
+   "a": "A volume with a plain name, such as pgdata, is added to a top-level volumes section. Paths starting with a dot, slash or tilde stay as bind mounts."
+  },
+  {
+   "q": "What happens to --rm and -d?",
+   "a": "Both have no meaning in a compose file. -d is dropped silently, and --rm adds a note, suggesting docker compose run --rm for one-off containers."
+  },
+  {
+   "q": "Are networks created for me?",
+   "a": "Named networks are declared as external, so they must already exist. Remove the external flag if compose should create them."
+  }
+ ],
+ "related": [
+  "docker-compose-generator",
+  "docker-compose-formatter",
+  "docker-compose-to-k8s",
+  "dockerfile-generator",
+  "docker-compose-env-generator",
+  "dockerfile-linter"
+ ],
+ "keywords": [
+  "docker run to docker compose",
+  "convert docker run to compose yml",
+  "docker run command converter",
+  "free docker compose generator",
+  "composerize alternative"
+ ]
+}

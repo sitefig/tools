@@ -1,0 +1,45 @@
+{
+  "id": "ssh-key-pair-generator",
+  "seoTitle": "SSH Key Pair Generator (Ed25519, ECDSA, RSA) in Your Browser",
+  "metaDescription": "Generate an OpenSSH key pair in the browser: public key line for authorized_keys and an OpenSSH private key. Created with WebCrypto, nothing is uploaded.",
+  "intro": "Create an SSH key for servers, Git hosting or CI without installing anything.",
+  "why": "Pick Ed25519, ECDSA (P-256 or P-384) or RSA (3072 or 4096 bits) and an optional comment. WebCrypto generates the key, and the page writes the public key line, the SHA-256 fingerprint and the private key in the OpenSSH format. All four key types were verified with ssh-keygen -y and ssh-keygen -l, which derived the same public keys and fingerprints.\n\nThe private key is not passphrase-protected; add one with ssh-keygen -p. A key made in a web page is only as trustworthy as the page and device, so for high-value keys generate them on the machine that will keep them.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose the key type and comment.",
+    "Copy the public key line and the private key.",
+    "Save the private key with permissions 600 and add the public key to authorized_keys.",
+    "Protect it with ssh-keygen -p -f FILE."
+  ],
+  "faq": [
+    {
+      "q": "Which type is best?",
+      "a": "Ed25519 is small, fast and widely supported; use RSA 3072+ only for old systems."
+    },
+    {
+      "q": "Is it safe to generate keys in a browser?",
+      "a": "The key is made locally with the browser's crypto, but the safest place for important keys is the device that will use them."
+    },
+    {
+      "q": "Can I add a passphrase here?",
+      "a": "No. Run ssh-keygen -p afterwards."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "ssh-key-inspector",
+    "ssh-key-fingerprint",
+    "ed25519-key-generator",
+    "rsa-key-pair-generator",
+    "openpgp-inspector",
+    "asn1-der-decoder"
+  ],
+  "keywords": [
+    "ssh key generator",
+    "generate ed25519 key",
+    "openssh private key",
+    "ssh keygen online"
+  ]
+}

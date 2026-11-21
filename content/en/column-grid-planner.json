@@ -1,0 +1,45 @@
+{
+ "id": "column-grid-planner",
+ "seoTitle": "Column Grid Planner: Gutters, Margins, Column Widths and CSS",
+ "metaDescription": "Enter canvas width, columns, gutter and margin to get exact column widths and positions, CSS grid code and an SVG overlay. Free, local.",
+ "intro": "Calculates the width and left edge of every column in a design grid and writes the matching CSS grid and an SVG overlay.",
+ "why": "Design files and code need the same numbers. The tool applies column = (canvas - 2 x margin - gutter x (columns - 1)) / columns, lists each column start, shows the width of a four column span and gives CSS that reproduces the grid with fractional units.\n\nIt rejects settings where columns would have no width. The overlay preview is an SVG you can paste into a design tool.",
+ "howTo": [
+  "Enter canvas width, number of columns, gutter and margin.",
+  "Run the tool.",
+  "Read the column width and positions.",
+  "Copy the CSS grid or the SVG overlay."
+ ],
+ "faq": [
+  {
+   "q": "Is this the same as CSS Grid Generator?",
+   "a": "That tool builds CSS grids interactively. This one starts from design numbers and gives exact pixel positions."
+  },
+  {
+   "q": "Why fractional widths?",
+   "a": "Many grids do not divide evenly. Design tools round them, CSS keeps them exact."
+  },
+  {
+   "q": "Can I use percentages?",
+   "a": "Use the 1fr columns in the CSS, which adapt to the width."
+  },
+  {
+   "q": "What about baseline grids?",
+   "a": "Not included."
+  }
+ ],
+ "related": [
+  "grid-generator",
+  "css-grid-area-builder",
+  "responsive-breakpoint-previewer",
+  "aspect-ratio-calculator",
+  "tailwind-spacing-generator",
+  "css-container-query-generator"
+ ],
+ "keywords": [
+  "column grid calculator",
+  "design grid gutter margin",
+  "12 column grid px",
+  "grid layout planner"
+ ]
+}

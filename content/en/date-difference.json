@@ -1,0 +1,46 @@
+{
+ "id": "date-difference",
+ "seoTitle": "Free Date Difference Calculator: Days Between Dates",
+ "metaDescription": "Work out the years, months, days, weeks and hours between two dates, with total days. Free date difference calculator that runs in your browser.",
+ "intro": "Enter two dates. The tool shows the gap as years, months and days, and also as total days, weeks and days, and hours.",
+ "why": "Contract periods, notice dates, trial lengths, project timelines and holiday countdowns all come down to the same question: how long between these two dates? Counting on a calendar works for a week or two and then breaks down, because months have different lengths and a leap year hides an extra day. This tool gives the answer in two ways. The calendar form (years, months, days) reads naturally, while the total days figure is the one to use in formulas and legal deadlines. If you enter the dates in the wrong order, it swaps them and says so. For working days only, use the business days calculator. The dates stay in your browser.",
+ "howTo": [
+  "Pick the From date.",
+  "Pick the To date.",
+  "Read the difference in years, months and days, plus total days, weeks and hours."
+ ],
+ "faq": [
+  {
+   "q": "Does it matter which date comes first?",
+   "a": "No. If the first date is later, the tool swaps them and marks the result as 'dates swapped'. The difference is always shown as a positive span."
+  },
+  {
+   "q": "Is the end date counted?",
+   "a": "The result is the elapsed difference, so Monday to Tuesday is 1 day. To count both ends, add one day. The business days tool has an option to include the end date."
+  },
+  {
+   "q": "How are months and days calculated?",
+   "a": "Whole calendar months are counted first, then the remaining days, borrowing from the month before the end date when needed. This is the usual approach but can differ by a day from other conventions."
+  },
+  {
+   "q": "Do time zones or daylight saving matter?",
+   "a": "No. Dates are treated as plain calendar days, so clock changes do not alter the total. The hours figure is simply days times 24."
+  }
+ ],
+ "related": [
+  "add-subtract-dates",
+  "business-days",
+  "age-calculator",
+  "countdown-to-date",
+  "week-number",
+  "day-of-week"
+ ],
+ "keywords": [
+  "date difference calculator",
+  "days between dates calculator",
+  "free date calculator",
+  "how many days between two dates",
+  "date duration calculator",
+  "time between dates"
+ ]
+}

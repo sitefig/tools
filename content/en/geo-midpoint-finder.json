@@ -1,0 +1,44 @@
+{
+ "id": "geo-midpoint-finder",
+ "seoTitle": "Midpoint and Centre of Several Coordinates",
+ "metaDescription": "Enter two or more coordinates to get the great-circle midpoint, the geographic centre and each point's distance from it. Offline.",
+ "intro": "Finds the centre of gravity of several places on the globe, and the exact midpoint of two.",
+ "why": "Planning a meeting point starts with where everyone is. Averaging latitudes and longitudes goes wrong across the date line and near the poles; this tool averages the points as 3D vectors and projects the result back to the surface.\n\nThe centre minimises the sum of squared distances, which is not the same as the fairest travel time, and it can fall in the sea or in a place nobody can reach. Look up addresses elsewhere and paste the coordinates here; address search needs a geocoding service that this site does not use.",
+ "howTo": [
+  "Paste one coordinate per line.",
+  "Pick the unit.",
+  "Read the centre, the midpoint (for two points) and the distances.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Why not average the numbers?",
+   "a": "It fails across longitude 180 and distorts at high latitudes."
+  },
+  {
+   "q": "Is this the fairest point?",
+   "a": "It balances squared distances, not travel times."
+  },
+  {
+   "q": "Can I enter addresses?",
+   "a": "No, only coordinates."
+  },
+  {
+   "q": "What if the points are opposite?",
+   "a": "There is no single centre and the tool says so."
+  }
+ ],
+ "related": [
+  "geo-path-distance",
+  "coordinate-format-converter",
+  "radius-circle-geojson",
+  "geohash-tool",
+  "plus-code-converter",
+  "timezone-meeting-planner"
+ ],
+ "keywords": [
+  "midpoint between coordinates",
+  "geographic center of points",
+  "meeting point calculator"
+ ]
+}

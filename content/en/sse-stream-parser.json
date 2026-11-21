@@ -1,0 +1,46 @@
+{
+ "id": "sse-stream-parser",
+ "seoTitle": "Free SSE Stream Parser - Inspect text/event-stream Online",
+ "metaDescription": "Paste a Server-Sent Events capture and see events, ids, retry, comments and unterminated data as a browser EventSource would parse them.",
+ "intro": "Paste the raw body of a text/event-stream response and see exactly which events a browser would dispatch, and what would be dropped.",
+ "why": "When a streaming API misbehaves, the cause is often in the framing: a missing blank line that leaves an event undelivered, a multi-line data field, a stray carriage return, or a retry value that was ignored. Reading raw bytes does not tell you what EventSource will actually do.\n\nThis parser follows the WHATWG rules: lines end in LF, CR or CRLF, a leading BOM is dropped, one space after the colon is stripped, data lines are joined with newlines, an event is dispatched only on a blank line, and a trailing event without one is reported as pending rather than delivered. If the data looks like an OpenAI or Anthropic token stream, the text pieces are assembled so you can read the whole reply. It parses a pasted capture; it does not open a connection, which a page that makes no network requests cannot do. Copy the capture from your browser dev tools or from curl -N.",
+ "howTo": [
+  "Capture the response body, for example with curl -N or the network tab.",
+  "Paste it into the box.",
+  "Read the dispatched events, comments and any pending event.",
+  "Untick the JSON option if you want raw data strings."
+ ],
+ "faq": [
+  {
+   "q": "Does it connect to my endpoint?",
+   "a": "No. It parses text you paste. Opening a connection would need a network request, and this site makes none."
+  },
+  {
+   "q": "Why is my last event marked pending?",
+   "a": "An event is delivered only when a blank line ends it. If the stream was cut before that line, browsers discard the partial event, and so does this parser."
+  },
+  {
+   "q": "What is the [DONE] marker?",
+   "a": "Some APIs, such as OpenAI streams, end with a data line containing [DONE]. It is ordinary data to SSE; the parser just points it out."
+  },
+  {
+   "q": "How is retry handled?",
+   "a": "A retry field with only digits sets the reconnect delay in milliseconds. Anything else is ignored, as in the specification."
+  }
+ ],
+ "related": [
+  "http-wire-format",
+  "har-analyzer",
+  "json-format",
+  "mcp-message-validator",
+  "webhook-payload-simulator",
+  "http-headers-analyzer"
+ ],
+ "keywords": [
+  "sse parser",
+  "server sent events tester",
+  "text/event-stream parser",
+  "eventsource debugger",
+  "sse stream viewer"
+ ]
+}

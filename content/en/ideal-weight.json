@@ -1,0 +1,46 @@
+{
+ "id": "ideal-weight",
+ "seoTitle": "Free Ideal Weight Calculator: Devine, Robinson, Miller",
+ "metaDescription": "Compare ideal body weight from the Devine, Robinson, Miller and Hamwi formulas for your height and sex. Free calculator that runs in your browser.",
+ "intro": "Enter your sex and height in centimetres. The tool shows the ideal weight from four classic formulas in kilograms and pounds, plus the BMI-based healthy range.",
+ "why": "Ideal body weight formulas were not designed to tell you how you should look. The Devine formula, for example, was created in 1974 to help dose drugs, and the others followed as variations. They are still widely quoted, and they disagree with each other by several kilograms. Showing four side by side gives a sense of the spread and makes it plain that there is no single correct figure. This tool also lists the weight range that corresponds to a BMI of 18.5 to 24.9 at your height, which is a more current reference. All the formulas apply only above about 152 cm, and none considers muscle, age or frame. This is not medical advice and the input stays in your browser.",
+ "howTo": [
+  "Choose your sex.",
+  "Enter your height in centimetres.",
+  "Compare the four formula results and the healthy BMI range."
+ ],
+ "faq": [
+  {
+   "q": "Why do the four formulas give different answers?",
+   "a": "They were fitted to different data and purposes. Each starts with a base weight at 5 feet and adds a fixed amount per inch over that, using different numbers, so results can differ by a few kilograms."
+  },
+  {
+   "q": "Why does the tool refuse short heights?",
+   "a": "The formulas count inches over 5 feet (152.4 cm). Below that the result would be a negative number of inches, which the formulas were never designed to handle."
+  },
+  {
+   "q": "Is ideal weight the same as healthy weight?",
+   "a": "No. The BMI range shown is broader and more commonly used for health screening. Neither accounts for muscle mass, age or body composition."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. The results are informational estimates based on old population formulas. A health professional can assess what weight is appropriate for you personally."
+  }
+ ],
+ "related": [
+  "bmi-calculator",
+  "bmr-tdee",
+  "body-fat-navy",
+  "macro-calculator",
+  "unit-converter",
+  "water-intake"
+ ],
+ "keywords": [
+  "ideal weight calculator",
+  "free ideal weight calculator",
+  "devine formula calculator",
+  "ideal body weight",
+  "healthy weight for height",
+  "hamwi formula"
+ ]
+}

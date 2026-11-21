@@ -1,0 +1,46 @@
+{
+  "id": "roman-numerals",
+  "seoTitle": "Free Roman Numeral Converter: Numbers 1-3999",
+  "metaDescription": "Convert numbers from 1 to 3999 to Roman numerals and back, one per line, detected automatically. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Turns numbers between 1 and 3999 into Roman numerals, and Roman numerals back into numbers. Each line is detected automatically, so you can mix both in one go.",
+  "why": "Roman numerals still turn up on clock faces, film credits, book chapters, copyright years and the Super Bowl. Reading MCMXCIV quickly is a skill most of us have lost, and writing one by hand invites mistakes such as IIX or VX that are not valid forms.\n\nPaste a list and the tool decides line by line whether each entry is a number or a numeral. It follows the standard subtractive rules, so 4 is IV and 1994 is MCMXCIV. Invalid numerals are flagged rather than guessed at, and values outside 1 to 3999 are rejected, because standard notation has no clean way to go further. It runs locally in your browser.",
+  "howTo": [
+    "Enter numbers or Roman numerals, one per line.",
+    "Read the converted result next to each entry in the output.",
+    "Fix any line marked invalid or out of range.",
+    "Copy the converted lines."
+  ],
+  "faq": [
+    {
+      "q": "Why is the limit 3999?",
+      "a": "Standard Roman numerals use the symbols I, V, X, L, C, D and M, and M can repeat only three times. That makes MMMCMXCIX, or 3999, the largest regular value. Larger numbers need overlines, which this tool does not use."
+    },
+    {
+      "q": "Does it accept lowercase numerals?",
+      "a": "Yes. Input is converted to upper case before checking, so xiv and XIV give the same answer. The numeral is validated against the standard pattern."
+    },
+    {
+      "q": "Why is IIX reported as invalid?",
+      "a": "Strict Roman notation does not allow IIX for 8. The correct form is VIII. The tool checks the pattern of allowed subtractive pairs, such as IV, IX, XL and CM, and rejects everything else."
+    },
+    {
+      "q": "Can I convert a year like 2024?",
+      "a": "Yes. Enter 2024 and you get MMXXIV. Dates with slashes or dashes are not parsed as one value, so convert the day, month and year numbers on separate lines."
+    }
+  ],
+  "related": [
+    "number-to-words",
+    "number-base-converter",
+    "bcd-converter",
+    "case-converter",
+    "date-formats",
+    "ascii-table"
+  ],
+  "keywords": [
+    "roman numeral converter",
+    "number to roman numerals",
+    "roman numerals to number",
+    "convert year to roman numerals",
+    "free roman numeral calculator"
+  ]
+}

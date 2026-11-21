@@ -1,0 +1,43 @@
+{
+ "id": "css-isometric-grid-generator",
+ "seoTitle": "Free CSS Isometric Grid Background Generator",
+ "metaDescription": "Generate a pure CSS isometric grid background from layered linear gradients. Choose tile size and colours, then copy the CSS. Free.",
+ "intro": "Set a tile size and colours and get a pure CSS isometric grid background, drawn with layered linear gradients at 30, 150 and 90 degrees. No images or SVG files are needed.",
+ "why": "An isometric grid gives a page a technical, blueprint or game-board feel, and it is useful behind diagrams, dashboards and hero sections. Using an image means another request and a fixed size, while an SVG pattern takes careful geometry to tile without seams.\n\nA CSS-only version uses several linear gradients at the three isometric angles, repeated by background-size. Getting the angles and the tile ratio right is the hard part, because a small error produces visible drift. This generator handles the numbers and gives you the CSS to copy, with settings for tile size, background colour and two line colours. It is calculated in your browser and previewed straight away.",
+ "howTo": [
+  "Set the tile size in pixels.",
+  "Choose the background colour and the two line colours.",
+  "Check how the grid looks in the preview.",
+  "Copy the CSS and apply it to the element that should show the grid."
+ ],
+ "faq": [
+  {
+   "q": "Why use gradients instead of an image?",
+   "a": "Gradients scale without blur, need no extra file and can be changed with CSS variables. The trade-off is some rendering cost on very large areas, so apply the grid to the elements that need it."
+  },
+  {
+   "q": "Why do I see thin gaps or jagged lines?",
+   "a": "Diagonal gradient lines are anti-aliased, so very thin lines can look uneven at some zoom levels. Try a slightly larger tile size or a lower-contrast line colour."
+  },
+  {
+   "q": "Can I animate it?",
+   "a": "Yes, you can animate background-position to make the grid drift. Keep it subtle and respect the reduced-motion setting for people who prefer less movement."
+  }
+ ],
+ "related": [
+  "css-pattern-generator",
+  "svg-pattern-generator",
+  "css-ribbon-banner-generator",
+  "css-3d-box-shadow-generator",
+  "gradient-generator",
+  "css-blob-generator"
+ ],
+ "keywords": [
+  "css isometric grid",
+  "isometric grid background css",
+  "pure css grid pattern",
+  "css gradient grid generator",
+  "isometric pattern css",
+  "free css pattern tool"
+ ]
+}

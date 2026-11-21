@@ -1,0 +1,45 @@
+{
+ "id": "vocal-remover-center-cancel",
+ "seoTitle": "Vocal Remover by Center Cancellation, Karaoke Maker",
+ "metaDescription": "Make a karaoke track from a stereo song by cancelling the centre channel. Simple phase trick with optional bass keep. Not AI; runs in your browser.",
+ "intro": "Subtracts the right channel from the left, which removes anything mixed dead centre, and writes a karaoke-style WAV. A bass-keep option brings back the low end.",
+ "why": "In many stereo songs the lead vocal sits in the centre, with the same signal in both channels. Subtracting one channel from the other cancels it. The same happens to the kick, the bass and the snare, so the result can sound thin; the bass-keep option adds the low frequencies back from the mid channel.\n\nThis is a classic trick, not source separation. It leaves reverb, stereo-panned backing vocals and anything recorded in stereo. Mono files have nothing to subtract and are refused. A neural separator gives better results, but it needs a large model that this site does not ship.",
+ "howTo": [
+  "Choose a stereo audio file.",
+  "Set the frequency below which the bass is kept, or 0 for none.",
+  "Press Run.",
+  "Listen, adjust the bass setting if the song sounds thin, and download."
+ ],
+ "faq": [
+  {
+   "q": "Why are the vocals still audible?",
+   "a": "Vocals with stereo reverb or double tracking are not identical in both channels and do not cancel completely."
+  },
+  {
+   "q": "Why does it sound thin?",
+   "a": "The kick and bass are also centred and cancel. Raise the \"keep bass below\" value to restore them."
+  },
+  {
+   "q": "Is this the same as AI vocal removal?",
+   "a": "No. It is a fixed phase operation with no model, so it is fast, predictable and lower in quality."
+  },
+  {
+   "q": "Can I get the vocals alone?",
+   "a": "Not with this method. The inverse operation does not isolate them cleanly."
+  }
+ ],
+ "related": [
+  "audio-equalizer",
+  "audio-trimmer",
+  "audio-joiner",
+  "bpm-detector",
+  "audio-speed-changer",
+  "ai-speech-to-text"
+ ],
+ "keywords": [
+  "vocal remover online",
+  "karaoke maker",
+  "remove vocals from song",
+  "center channel cancel"
+ ]
+}

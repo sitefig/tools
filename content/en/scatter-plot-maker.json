@@ -1,0 +1,44 @@
+{
+ "id": "scatter-plot-maker",
+ "seoTitle": "Scatter Plot Maker with Trendline and Correlation r",
+ "metaDescription": "Paste x and y pairs to draw a scatter plot with a least-squares trendline, slope, intercept, Pearson r and R squared. Free, in your browser.",
+ "intro": "Plots paired numbers as points, fits an ordinary least-squares line and reports slope, intercept, Pearson correlation r and R squared.",
+ "why": "A scatter plot answers whether two measures move together. The trendline and r make that concrete, and the data table keeps every point readable without sight.\n\nThe fit is simple linear regression of y on x. It says nothing about causation, and a high r can come from one outlier, so look at the plot before trusting the number. Axes use rounded tick values and the chart is plain SVG you can restyle.",
+ "howTo": [
+  "Paste two columns, x then y. A header row sets the axis names.",
+  "Leave the trendline on or turn it off.",
+  "Read the equation, r and R squared printed on the chart.",
+  "Copy or download the SVG."
+ ],
+ "faq": [
+  {
+   "q": "What does r mean?",
+   "a": "Pearson r runs from -1 to 1. Near 0 means no straight-line relationship; the sign gives the direction."
+  },
+  {
+   "q": "Which regression is used?",
+   "a": "Ordinary least squares of y on x, with all points weighted equally."
+  },
+  {
+   "q": "Can it plot groups in colours?",
+   "a": "Not in this tool. Use the bubble chart for a third variable."
+  },
+  {
+   "q": "Is r checked?",
+   "a": "Yes against a hand calculation in Python for the sample data; it matches to all shown digits."
+  }
+ ],
+ "related": [
+  "bubble-chart-maker",
+  "statistics-calculator",
+  "histogram-builder",
+  "box-plot-maker",
+  "csv-to-chart",
+  "column-statistics-summarizer"
+ ],
+ "keywords": [
+  "scatter plot maker",
+  "trendline and correlation",
+  "pearson r calculator plot"
+ ]
+}

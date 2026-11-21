@@ -1,0 +1,47 @@
+{
+ "id": "query-string",
+ "seoTitle": "Free Query String Parser and Builder Online",
+ "metaDescription": "Parse a URL query string into key and value pairs and JSON, or build one from key=value lines or JSON. Free, handles repeated keys, runs in your browser.",
+ "intro": "Parse a query string or full URL into key/value pairs and JSON, or build a properly encoded query string from lines of key=value or from a JSON object.",
+ "why": "Query strings carry search filters, campaign tags, API parameters and OAuth state, and they get messy: repeated keys, plus signs for spaces, nested JSON in a value. Reading them in a raw URL is a chore, and building one by hand means remembering which characters to encode.\n\nIn parse mode this tool lists every pair, numbered, and gives a JSON view where repeated keys become arrays. In build mode it takes key=value lines or a JSON object and creates an encoded string, with spaces as %20 or +. Arrays turn into repeated keys, and nested objects are written as JSON text. It runs in your browser.",
+ "howTo": [
+  "Choose a mode: parse or build.",
+  "For parse, paste a URL or just the part after the question mark. For build, paste key=value lines or a JSON object.",
+  "For build, pick whether spaces become %20 or +.",
+  "Copy the pairs, the JSON or the finished query string."
+ ],
+ "faq": [
+  {
+   "q": "How are repeated keys handled?",
+   "a": "When parsing, the JSON view turns repeated keys into an array in order. When building from JSON, an array value becomes repeated keys, such as tag=a&tag=b. This is the most widely understood convention."
+  },
+  {
+   "q": "Should spaces be %20 or +?",
+   "a": "Both are accepted in form-encoded query strings, but only %20 is valid anywhere in a URL. Choose + when mimicking an HTML form. If unsure, keep %20."
+  },
+  {
+   "q": "What happens with nested objects in JSON?",
+   "a": "Objects inside values are converted to JSON text and then encoded, since there is no universal standard for nesting in query strings. Servers using bracket syntax such as a[b]=1 need those keys written in the lines mode."
+  },
+  {
+   "q": "Does it decode percent-encoding when parsing?",
+   "a": "Yes. Keys and values are decoded, and plus signs are read as spaces, as for form data. Use the URL Decode tool for a plain decode of other text."
+  }
+ ],
+ "related": [
+  "url-parser",
+  "url-encode",
+  "url-decode",
+  "utm-bulk-builder",
+  "json-format",
+  "url-tracker-stripper"
+ ],
+ "keywords": [
+  "query string parser",
+  "url query to json",
+  "query string builder online",
+  "free query params tool",
+  "parse url parameters",
+  "json to query string"
+ ]
+}

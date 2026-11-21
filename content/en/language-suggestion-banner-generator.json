@@ -1,0 +1,45 @@
+{
+ "id": "language-suggestion-banner-generator",
+ "seoTitle": "Language Suggestion Banner Generator Instead of Geo or Language Redirects",
+ "metaDescription": "Generate an accessible banner that suggests the local version from navigator.languages. No redirect, so crawlers and users can reach every version.",
+ "intro": "Builds a small script and style block that offers visitors the version in their language, which they can dismiss.",
+ "why": "Redirecting by IP address or browser language hides versions from crawlers and traps people who want another version. Google says it crawls from different locations without varying the crawler for a site, so it may never see a version served only by location. A banner keeps every URL reachable and lets the visitor choose.\n\nThe generated script reads navigator.languages in the visitor's browser, shows a region with a real link and a dismiss button of at least 44 pixels, and remembers the dismissal. Nothing is sent anywhere. Check the colours against your theme.",
+ "howTo": [
+  "Enter one line per version: code | URL | message | link text.",
+  "Set the current page language and the dismiss label.",
+  "Copy the block into the end of the body.",
+  "Test with the browser set to other languages."
+ ],
+ "faq": [
+  {
+   "q": "Why not redirect?",
+   "a": "A redirect can block crawlers and users from other versions."
+  },
+  {
+   "q": "Is it accessible?",
+   "a": "It uses a labelled region, a real link and a real button. Test with your own setup."
+  },
+  {
+   "q": "Does it use cookies?",
+   "a": "It stores one localStorage flag after dismissal."
+  },
+  {
+   "q": "Does it still need hreflang?",
+   "a": "Yes; the banner is for people, hreflang is for search engines."
+  }
+ ],
+ "related": [
+  "hreflang-x-default-advisor",
+  "language-switcher-markup-generator",
+  "hreflang-generator",
+  "international-url-structure-advisor",
+  "accept-language-parser",
+  "locale-negotiation-simulator"
+ ],
+ "keywords": [
+  "geo redirect alternative",
+  "language banner",
+  "ip redirect seo",
+  "suggest language version"
+ ]
+}

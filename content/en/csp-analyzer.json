@@ -1,0 +1,46 @@
+{
+ "id": "csp-analyzer",
+ "seoTitle": "Free CSP Analyzer: Grade a Content-Security-Policy",
+ "metaDescription": "Paste a Content-Security-Policy to find unsafe-inline, wildcards, risky hosts and missing directives, and get a grade. Free, in-browser.",
+ "intro": "Paste a Content-Security-Policy header or meta tag to find unsafe-inline and unsafe-eval, wildcards, risky schemes, JSONP-able CDN hosts and missing directives, with a grade.",
+ "why": "Many sites ship a CSP that looks serious but blocks very little. An allowed unsafe-inline, a wildcard, an allowed data: scheme or a whole CDN such as cdnjs can let an attacker run script anyway. A missing object-src or base-uri leaves further gaps.\n\nThis analyser parses the policy, notes typos and duplicate directives and reports each weakness with a severity and a suggested fix. It understands that unsafe-inline is ignored by modern browsers when a nonce, hash or strict-dynamic is present. It then gives a score from 0 to 100 and a letter grade. The check is static and based on rules of thumb, so use it as a review aid, then test the policy in a real browser. Nothing is uploaded.",
+ "howTo": [
+  "Copy your Content-Security-Policy header or meta tag.",
+  "Paste it into the input box.",
+  "Run the tool to see the grade and the list of findings.",
+  "Apply the suggested fixes and test the policy in Report-Only mode."
+ ],
+ "faq": [
+  {
+   "q": "How is the grade calculated?",
+   "a": "Each finding subtracts points by severity: high 30, medium 12 and low 4, starting from 100. The score maps to a letter from A to F. It is a quick signal, not a formal audit."
+  },
+  {
+   "q": "Why is a CDN host flagged?",
+   "a": "Some public hosts serve JSONP endpoints or user-uploaded scripts that can be used to bypass a host allowlist. Nonces with strict-dynamic are the usual safer approach."
+  },
+  {
+   "q": "Can it read a Report-Only policy?",
+   "a": "Yes. It detects the Report-Only name, analyses the directives as usual and adds a note that the policy does not block anything yet."
+  },
+  {
+   "q": "Is my policy sent anywhere?",
+   "a": "No. The analysis runs entirely in your browser, and your policy is not uploaded or stored, so you can check policies from private or staging sites."
+  }
+ ],
+ "related": [
+  "csp-builder",
+  "security-headers-generator",
+  "http-headers-analyzer",
+  "cookie-flag-analyzer",
+  "subresource-integrity-generator",
+  "cors-preflight-inspector"
+ ],
+ "keywords": [
+  "csp analyzer",
+  "csp checker online",
+  "content security policy validator",
+  "check csp for unsafe-inline",
+  "csp evaluator free"
+ ]
+}

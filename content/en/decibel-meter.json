@@ -1,0 +1,46 @@
+{
+ "id": "decibel-meter",
+ "seoTitle": "Free Decibel Meter - Microphone Sound Level in Browser",
+ "metaDescription": "Measure live microphone level in dBFS with min, average and max, and an adjustable SPL offset. Audio is analysed locally and never recorded.",
+ "intro": "Use your microphone to show the live sound level in dBFS, with minimum, average and maximum, and an estimated dB SPL based on an offset you set.",
+ "why": "You may want to know how loud a room, a machine or a neighbour's music really is before you complain, soundproof a space or set a speaker level. A phone or laptop microphone can give a useful relative reading, but most web meters hide how the number is produced.\n\nThis meter reads the microphone with echo cancellation, noise suppression and automatic gain turned off, so the level reflects the real signal. It shows dBFS, a digital scale where 0 is the loudest the device can record, and adds an offset you set to estimate dB SPL. Calibrate that offset against a reference meter. Without calibration, treat the SPL figure as a rough guide only, not a measurement for legal or workplace noise assessment. Audio is analysed live and never stored.",
+ "howTo": [
+  "Press Start and allow microphone access when your browser asks.",
+  "Watch the dBFS reading and the bar, along with min, average and max.",
+  "Set the SPL offset after comparing with a reference meter, if you have one.",
+  "Press Stop to release the microphone."
+ ],
+ "faq": [
+  {
+   "q": "Is the dB SPL value accurate?",
+   "a": "Not by itself. Every microphone has a different sensitivity, so the offset must be calibrated against a reference meter. Without that it is only an estimate, and consumer microphones are not flat across all frequencies."
+  },
+  {
+   "q": "What is dBFS?",
+   "a": "Decibels relative to full scale: 0 dBFS is the loudest signal the digital system can represent, and quieter sounds are negative. It is a digital level, not a sound pressure level in the room."
+  },
+  {
+   "q": "Is my audio recorded or sent anywhere?",
+   "a": "No. The microphone stream is analysed in real time in your browser to compute the level, and nothing is stored or uploaded. Stopping the meter releases the microphone."
+  },
+  {
+   "q": "Why does it not work on my device?",
+   "a": "The page needs microphone permission and a secure connection. If you denied access, change the site permission in your browser settings and reload. Some in-app browsers block microphone access entirely."
+  }
+ ],
+ "related": [
+  "audio-db-converter",
+  "tone-generator",
+  "white-noise-generator",
+  "webcam-recorder",
+  "screen-info",
+  "metronome"
+ ],
+ "keywords": [
+  "decibel meter online",
+  "sound level meter browser",
+  "microphone db meter",
+  "noise level measure",
+  "free dB meter"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "pdf-rotate",
+ "seoTitle": "Free Rotate PDF Pages - 90, 180, 270 Degrees",
+ "metaDescription": "Rotate all pages or a chosen range of a PDF by 90, 180 or 270 degrees clockwise, adding to any existing rotation. Free, in your browser.",
+ "intro": "Rotate every page, or just a range, of a PDF by 90, 180 or 270 degrees clockwise and save the result as a new file.",
+ "why": "A scan that came out sideways, a landscape table in a portrait report or an upside-down page from a document feeder is a daily annoyance. Viewers can rotate the display, but the change is lost the moment you send the file on.\n\nThis tool writes the rotation into the PDF itself. Choose a clockwise angle of 90, 180 or 270 degrees and, if you like, a page range such as 2,4-6, or leave it blank for all pages. The rotation is added to whatever each page already has, so rotating a page that is already turned 90 degrees by 90 more makes 180. The page content is not re-rendered or changed, only its orientation flag. Encrypted files are refused. The work happens in your browser and nothing is uploaded.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Pick the clockwise angle: 90, 180 or 270.",
+  "Enter a page range such as 2,4-6, or leave it blank to rotate all pages.",
+  "Run the tool and download the rotated PDF."
+ ],
+ "faq": [
+  {
+   "q": "How do I rotate counter-clockwise?",
+   "a": "Use 270 degrees for a quarter turn counter-clockwise, because 270 clockwise is the same thing. For a half turn, 180 is the same in either direction."
+  },
+  {
+   "q": "Does it stack on existing rotation?",
+   "a": "Yes. The new angle is added to each page's current rotation and wrapped at 360. A page already rotated 90 degrees and turned another 90 ends at 180."
+  },
+  {
+   "q": "Is the content changed?",
+   "a": "No. Only the page's rotation value is changed, so text stays sharp and searchable and file size is nearly the same. Nothing is re-rendered."
+  },
+  {
+   "q": "Can I rotate pages by an arbitrary angle?",
+   "a": "No. PDF page rotation works in steps of 90 degrees only. Straightening a slightly skewed scan needs an image editor."
+  }
+ ],
+ "related": [
+  "pdf-reorder-pages",
+  "pdf-reverse",
+  "pdf-crop-margins",
+  "pdf-page-count-and-sizes",
+  "image-rotate-flip",
+  "pdf-merge"
+ ],
+ "keywords": [
+  "rotate pdf pages",
+  "rotate pdf online",
+  "turn pdf upside down fix",
+  "rotate scanned pdf",
+  "free pdf rotator"
+ ]
+}

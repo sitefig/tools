@@ -1,0 +1,46 @@
+{
+  "id": "test-identifier-generator",
+  "seoTitle": "Test Identifier Generator: IBAN, IMEI, ISIN, LEI, VIN, ISBN and More",
+  "metaDescription": "Generate random identifiers with valid check digits for testing validators: IBAN, IMEI, ISIN, LEI, VIN, ABA routing, ISBN-13, ISSN, BSN, GSTIN, BIC, tracking numbers.",
+  "intro": "Get realistic but fake numbers to test input validation, parsers and databases.",
+  "why": "Each generator builds a value in the right format with the correct check digit: mod-97 for IBAN and LEI, Luhn for IMEI and ISIN, the weighted VIN check digit, the ABA 3-7-1 checksum, ISBN-13 and ISSN checks, the Dutch 11-test, the GSTIN base-36 check, UPS 1Z and UPU S10 parcel checks. Output was validated with the python-stdnum library (and independent checks for VIN and tracking numbers).\n\nThe values are random and unissued but could coincide with real identifiers by chance; use them only for software testing. IBANs have valid length and mod-97 digits, but national account check digits inside the BBAN are not computed.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Choose an identifier type.",
+    "Set how many.",
+    "Copy the list into your tests.",
+    "Never use generated values for real transactions."
+  ],
+  "faq": [
+    {
+      "q": "Are these real accounts?",
+      "a": "No. They are random numbers that pass format and check-digit tests."
+    },
+    {
+      "q": "Why do some national validators reject my IBAN?",
+      "a": "Some countries add their own check digits inside the account number, which this tool does not compute."
+    },
+    {
+      "q": "What about credit card numbers?",
+      "a": "Use the mock credit card generator, which covers card brands and expiry dates."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "mock-credit-card-generator",
+    "iban-validator",
+    "luhn-validator",
+    "vat-number-format-validator",
+    "fake-person-generator",
+    "mock-data-generator"
+  ],
+  "keywords": [
+    "test iban generator",
+    "imei generator",
+    "isin generator",
+    "vin generator",
+    "test data identifiers"
+  ]
+}

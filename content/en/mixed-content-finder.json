@@ -1,0 +1,41 @@
+{
+ "id": "mixed-content-finder",
+ "seoTitle": "Mixed Content Finder: http:// Resources in HTTPS Pages",
+ "metaDescription": "Paste HTML and list every http:// resource in src, srcset, link, form action and CSS url(), split into active, passive and links.",
+ "intro": "Finds insecure http:// references in the HTML of an HTTPS page and sorts them by type.",
+ "why": "When an HTTPS page loads a script, stylesheet or image over plain HTTP, browsers block or warn. Active content such as scripts and iframes is blocked; passive content such as images may be upgraded or flagged.\n\nPaste the page source and the tool lists every http:// reference with its line number, split into active, passive and review items. Plain links are listed separately because they are not mixed content. It reads static HTML only: resources added by scripts are not seen. The best fix is to change the URL to https.",
+ "howTo": [
+  "Open view-source on your page and copy the HTML.",
+  "Paste it into the box.",
+  "Fix the active items first, then the passive ones.",
+  "Re-test in the browser console for blocked content."
+ ],
+ "faq": [
+  {
+   "q": "Why are some images only warned about?",
+   "a": "Browsers treat images as passive content and may upgrade or warn instead of blocking."
+  },
+  {
+   "q": "Should I use upgrade-insecure-requests?",
+   "a": "It patches the problem but hides it. Fix the URLs."
+  },
+  {
+   "q": "Why are links separate?",
+   "a": "A link to an http page is a navigation, not a subresource load."
+  }
+ ],
+ "related": [
+  "http-headers-analyzer",
+  "csp-builder",
+  "har-analyzer",
+  "security-headers-grader",
+  "x509-viewer",
+  "tracker-detector"
+ ],
+ "keywords": [
+  "mixed content checker",
+  "http resources https page",
+  "insecure content",
+  "upgrade-insecure-requests"
+ ]
+}

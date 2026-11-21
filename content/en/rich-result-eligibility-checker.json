@@ -1,0 +1,45 @@
+{
+ "id": "rich-result-eligibility-checker",
+ "seoTitle": "Rich Result Eligibility Checker for JSON-LD",
+ "metaDescription": "See which required and recommended properties Google lists for each rich result type, and which ones your JSON-LD is missing. Runs locally.",
+ "intro": "Compares your JSON-LD with the required and recommended properties in Google's structured data documentation for Article, Product, Recipe, Event, Job posting, Video, Review, Local business and more.",
+ "why": "Google documents which properties a page needs to be eligible for each rich result. Missing a required one means no result; missing a recommended one means a weaker result. Reading eleven documentation pages to find out which is which is slow, so this tool holds the lists and compares them with your markup, nested items included.\n\nThe rules were read from the Search Central pages on 2026-10-23 and Google changes them. The output names the documentation page for each type. Eligibility is not a promise: Google decides what to show, and its Rich Results Test is the final check. FAQ and How-to are reported as retired.",
+ "howTo": [
+  "Paste the JSON-LD or the page HTML.",
+  "For each node read the list of missing required properties first.",
+  "Add the recommended ones that you can fill truthfully.",
+  "Confirm with the Rich Results Test before you deploy."
+ ],
+ "faq": [
+  {
+   "q": "How current are the rules?",
+   "a": "They come from Google pages read on 2026-10-23. The date is printed in the output. Re-check the linked page if something looks off."
+  },
+  {
+   "q": "What about types it does not know?",
+   "a": "They are not listed. Only types with a documented Google feature are checked."
+  },
+  {
+   "q": "Why does Product show two blocks?",
+   "a": "Product snippets and merchant listings have different requirements. The second block applies only if you sell the product."
+  },
+  {
+   "q": "Does it need the page to be live?",
+   "a": "No. It reads the JSON-LD you paste and fetches nothing."
+  }
+ ],
+ "related": [
+  "jsonld-syntax-validator",
+  "schema-property-checker",
+  "schema-deprecation-checker",
+  "schema-generator",
+  "jsonld-inspector",
+  "product-page-extractor"
+ ],
+ "keywords": [
+  "rich results checker",
+  "google structured data requirements",
+  "required properties schema",
+  "rich result eligibility"
+ ]
+}

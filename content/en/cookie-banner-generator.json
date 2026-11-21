@@ -1,0 +1,46 @@
+{
+ "id": "cookie-banner-generator",
+ "seoTitle": "Free Cookie Consent Banner Generator (HTML/JS)",
+ "metaDescription": "Generate a self-contained cookie banner with accept, reject and choose options. Free, copy-paste code; you must still gate your scripts.",
+ "intro": "Generate a self-contained HTML, CSS and JavaScript cookie banner with accept all, reject all and choose categories. Choices are stored in localStorage, and you must block scripts yourself.",
+ "why": "Many small sites need a simple consent banner without paying for or loading a large third-party script. A banner is only half the job, though: scripts that set tracking cookies must not run until the visitor agrees, and rejecting must be as easy as accepting.\n\nThis tool outputs one snippet you paste into your page. You set the title, message, policy link, optional analytics and marketing categories, position and theme. The code records the visitor's choice in localStorage under a fixed key. It does not block anything by itself, so you must read that stored choice and only load analytics or marketing scripts when allowed. It is a technical starting point and not legal advice. The snippet is generated locally in your browser.",
+ "howTo": [
+  "Edit the banner title and message, and add the link to your cookie policy.",
+  "Tick the analytics and marketing categories you use, and choose the position and theme.",
+  "Run the tool and copy the generated code into your site.",
+  "Change your scripts so they only load after the stored consent allows them."
+ ],
+ "faq": [
+  {
+   "q": "Does the banner block tracking scripts?",
+   "a": "No. It only records the choice in localStorage. You must write the code that checks the choice and delays analytics, advertising and other scripts until consent is given."
+  },
+  {
+   "q": "Where is the visitor's choice stored?",
+   "a": "In the browser localStorage under the key cookie-consent-v1. It stays on the visitor's device. If you need proof of consent on a server, add your own logging."
+  },
+  {
+   "q": "Is this enough to comply with GDPR?",
+   "a": "Not by itself. Compliance depends on your cookies, wording and behaviour. The tool is not legal advice, so have your set-up reviewed against the rules that apply to you."
+  },
+  {
+   "q": "Is the code generated on a server?",
+   "a": "No. The code is built in your browser from your settings, and nothing is uploaded, so you can generate it for private or staging projects without sharing anything."
+  }
+ ],
+ "related": [
+  "cookie-policy-generator",
+  "privacy-policy-generator",
+  "tracker-detector",
+  "cookie-flag-analyzer",
+  "har-analyzer",
+  "gdpr-checklist"
+ ],
+ "keywords": [
+  "cookie banner generator",
+  "cookie consent banner code",
+  "free cookie consent html",
+  "gdpr cookie popup generator",
+  "cookie banner javascript snippet"
+ ]
+}

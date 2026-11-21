@@ -1,0 +1,44 @@
+{
+ "id": "log-to-csv",
+ "seoTitle": "Log to CSV Converter: Access Logs, logfmt, JSON Lines, Regex",
+ "metaDescription": "Convert logs to CSV for a spreadsheet. Choose Common/Combined, an nginx or Apache format, logfmt, JSON lines or a custom regex. Free.",
+ "intro": "Converts several common log formats to CSV with the columns you pick.",
+ "why": "Spreadsheets and SQL tools want columns. This tool parses the log and writes CSV with proper quoting, so user agents with commas survive.\n\nFor a custom regex, named groups become columns. Use the SQL on CSV tool or the XLSX converter on the result. Lines that do not match are skipped without a note, so compare line counts.",
+ "howTo": [
+  "Paste the log or choose a file.",
+  "Pick the format and, if needed, enter a format string or regex.",
+  "Optionally list the columns to keep.",
+  "Copy or download the CSV."
+ ],
+ "faq": [
+  {
+   "q": "Can I get XLSX?",
+   "a": "Paste the CSV into the CSV to XLSX tool."
+  },
+  {
+   "q": "Can I query it with SQL?",
+   "a": "Yes, paste the CSV into the SQL on CSV tool. It is not DuckDB, but runs common SELECT queries."
+  },
+  {
+   "q": "Why are lines missing?",
+   "a": "Lines that do not match the format are dropped."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "sql-on-csv",
+  "csv-to-xlsx",
+  "csv-viewer",
+  "access-log-parser",
+  "log-format-to-regex",
+  "logfmt-parser"
+ ],
+ "keywords": [
+  "log to csv",
+  "access log to csv",
+  "convert log file to spreadsheet"
+ ]
+}

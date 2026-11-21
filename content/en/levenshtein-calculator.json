@@ -1,0 +1,45 @@
+{
+ "id": "levenshtein-calculator",
+ "seoTitle": "Free Levenshtein Distance Calculator with Edit Script",
+ "metaDescription": "Compute edit distance between two strings with the exact insertions, deletions and substitutions and an aligned view. Damerau and indel too. Free.",
+ "intro": "Finds the edit distance between two strings and shows one optimal list of edits and an aligned view of both strings.",
+ "why": "Edit distance counts the fewest single-character changes needed to turn one string into another. It is used for spell checking, record matching, diffing and testing OCR output.\n\nBesides the number, this tool shows which characters are inserted, deleted or substituted and lines the strings up so you can see it. You can switch to Damerau-Levenshtein (the optimal string alignment form, where swapping two neighbours costs one) or to indel distance, where only inserts and deletes are allowed. You can also compare words instead of characters.",
+ "howTo": [
+  "Enter the two strings.",
+  "Choose the distance type and whether to compare characters or words.",
+  "Read the distance, similarity and the aligned view.",
+  "Follow the edit script step by step if you need it."
+ ],
+ "faq": [
+  {
+   "q": "Are there several correct edit scripts?",
+   "a": "Often yes. The distance is always the same, but a different set of edits can have the same cost. One is shown."
+  },
+  {
+   "q": "What is the similarity percentage?",
+   "a": "One minus the distance divided by the longer length. For indel distance it divides by the sum of both lengths."
+  },
+  {
+   "q": "What does Damerau add?",
+   "a": "A swap of two neighbouring characters counts as one edit, so \"ab\" to \"ba\" costs 1 instead of 2. This is the restricted version known as optimal string alignment."
+  },
+  {
+   "q": "How long can the strings be?",
+   "a": "Up to 2000 characters or words each."
+  }
+ ],
+ "related": [
+  "string-similarity-comparer",
+  "text-diff",
+  "fuzzy-search-playground",
+  "text-similarity-checker",
+  "code-diff-html",
+  "redirect-map-matcher"
+ ],
+ "keywords": [
+  "levenshtein distance calculator",
+  "edit distance online",
+  "string edit distance",
+  "damerau levenshtein"
+ ]
+}

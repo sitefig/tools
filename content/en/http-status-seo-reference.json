@@ -1,0 +1,44 @@
+{
+ "id": "http-status-seo-reference",
+ "seoTitle": "HTTP Status Codes and Their SEO Effect: Quick Reference",
+ "metaDescription": "Search HTTP status codes and see how Google treats each one: indexing, crawl rate and redirect strength. Free, runs in your browser.",
+ "intro": "A searchable list of common HTTP status codes with a plain note on what each one means for Google Search: whether the page can be indexed, how crawling reacts and how strong a redirect signal is.",
+ "why": "Most status code lists describe the protocol. This one describes the effect on search. A 301 and a 302 both move a visitor, but Google reads a 301 as a strong hint that the new URL should be the indexed one and a 302 as a weak hint. A 404 and a 410 look different to a developer but Google handles them alike.\n\nThe notes come from Google Search Central's documentation on status codes and site moves, read in October 2026. Codes that Google does not document are marked as not covered, and the note says it is an assumption. Google can change its handling, so check the source for anything important.",
+ "howTo": [
+  "Type a code, a class such as 3xx, or a word such as redirect.",
+  "Read the note under each code.",
+  "Leave the box empty to list every code."
+ ],
+ "faq": [
+  {
+   "q": "Does a 410 remove a page faster than a 404?",
+   "a": "Google handles them the same way. Use 410 to say the removal is deliberate, but do not expect a faster result."
+  },
+  {
+   "q": "Is a 302 bad for SEO?",
+   "a": "No, it is the right code for a real temporary move. A 302 left in place for a permanent move is the problem, because it sends a weak signal."
+  },
+  {
+   "q": "Why does 429 appear next to server errors?",
+   "a": "Google treats 429 as a sign of server overload, so crawling slows down, as it does for 5xx errors."
+  },
+  {
+   "q": "Where do these notes come from?",
+   "a": "Google Search Central pages on HTTP status codes and on site moves. Codes without a source are marked."
+  }
+ ],
+ "related": [
+  "http-status-reference",
+  "redirect-type-advisor",
+  "redirect-chain-analyzer",
+  "soft-404-detector",
+  "http-headers-analyzer",
+  "access-log-analyzer"
+ ],
+ "keywords": [
+  "http status codes seo",
+  "301 vs 302 google",
+  "404 vs 410",
+  "status code crawl budget"
+ ]
+}

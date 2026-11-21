@@ -1,0 +1,46 @@
+{
+ "id": "jsonld-inspector",
+ "seoTitle": "Free JSON-LD Inspector: Check Schema.org Markup",
+ "metaDescription": "Extract JSON-LD from HTML and check required properties, dates and offers. Free; runs in your browser and nothing is uploaded.",
+ "intro": "Extract JSON-LD blocks from pasted HTML or raw JSON-LD, parse them, list the Schema.org types and flag missing properties, bad dates and price problems.",
+ "why": "Structured data helps search engines understand a page and can unlock rich results, but one stray comma or a missing required property quietly breaks it. Copying markup from a template and editing it by hand is where most errors come from.\n\nThis inspector finds every application/ld+json script in the HTML you paste, or accepts a raw JSON-LD object. It parses each block, reports invalid JSON with the error, checks that the context is schema.org, lists the types it finds, including those inside a graph, and checks required fields for common types, absolute URLs, valid publication dates and price with currency on offers. It is a sanity check and not Google's Rich Results Test, which uses more rules. All of it happens in your browser.",
+ "howTo": [
+  "Paste the page HTML, or just a JSON-LD object, into the input box.",
+  "Run the tool to extract and parse the blocks.",
+  "Read the types found and the list of warnings and errors for each block.",
+  "Fix the markup and run it again, then confirm with Google's own testing tools."
+ ],
+ "faq": [
+  {
+   "q": "Which types does it check?",
+   "a": "It has built-in required-property checks for common types such as Article, Product, LocalBusiness, FAQPage, Organization, Event and Recipe. Other types are listed with a note that no checks exist."
+  },
+  {
+   "q": "Does passing mean I will get rich results?",
+   "a": "No. Rich results depend on eligibility rules, content quality and Google's own decisions. This tool only catches structural and obvious property problems."
+  },
+  {
+   "q": "Can it read microdata or RDFa?",
+   "a": "No. It only reads JSON-LD, either in script tags or pasted directly as JSON. You can even load the page and then disconnect from the network before running it."
+  },
+  {
+   "q": "Is my markup uploaded?",
+   "a": "No. Parsing and checks run in your browser and nothing is sent to a server. It also means the page works for drafts and private sites you would not want to share."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "seo-inspector",
+  "meta-analyzer",
+  "json-validate",
+  "json-format",
+  "faker-js-mock-schema-generator"
+ ],
+ "keywords": [
+  "json-ld inspector",
+  "schema markup checker",
+  "structured data validator",
+  "check json-ld online",
+  "schema.org tester free"
+ ]
+}

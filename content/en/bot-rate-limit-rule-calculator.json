@@ -1,0 +1,44 @@
+{
+ "id": "bot-rate-limit-rule-calculator",
+ "seoTitle": "Bot Rate Limit Calculator: Cloudflare, Nginx, HAProxy",
+ "metaDescription": "Turn a limit such as 60 requests per minute into Cloudflare rate rule fields, Nginx limit_req_zone and HAProxy stick-table settings. Free.",
+ "intro": "Converts one request limit into settings for three platforms.",
+ "why": "Each platform expresses a rate limit differently: Nginx wants rate=30r/m and a zone size, HAProxy wants a stick table that tracks the request rate over a period, and Cloudflare wants a count, a period and a mitigation time.\n\nEnter the limit, the burst and the number of clients and get the three settings, with the memory sizing rule from the Nginx documentation. Allowed periods in Cloudflare depend on your plan, so check them.",
+ "howTo": [
+  "Enter requests and the period.",
+  "Set burst and the number of clients.",
+  "Copy the settings you need.",
+  "Test with a load tool before you enforce."
+ ],
+ "faq": [
+  {
+   "q": "Why does Nginx convert my hourly limit?",
+   "a": "limit_req only supports per second and per minute."
+  },
+  {
+   "q": "What is burst?",
+   "a": "Extra requests allowed above the rate before limiting starts."
+  },
+  {
+   "q": "How big should the zone be?",
+   "a": "About 16,000 client states per megabyte, so the tool rounds up."
+  },
+  {
+   "q": "Behind a CDN?",
+   "a": "Key on the real client IP header, not the proxy."
+  }
+ ],
+ "related": [
+  "nginx-rate-limit-calculator",
+  "api-rate-limit-cost-calculator",
+  "nginx-bot-map-generator",
+  "bot-firewall-rule-builder",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "rate limit calculator",
+  "nginx limit_req rate",
+  "haproxy stick table rate limit",
+  "cloudflare rate limiting rule"
+ ]
+}

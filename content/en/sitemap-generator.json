@@ -1,0 +1,46 @@
+{
+ "id": "sitemap-generator",
+ "seoTitle": "Free XML Sitemap Generator from a URL List",
+ "metaDescription": "Turn a list of URLs into a valid sitemap.xml with lastmod, changefreq and priority. Free; up to 50,000 URLs, built in your browser.",
+ "intro": "Paste a list of absolute URLs, one per line, and get a sitemap.xml with optional lastmod, changefreq and priority values. A homepage priority of 1.0 is available.",
+ "why": "A sitemap helps search engines discover your pages, particularly on new sites, large sites or sites with weak internal linking. If your CMS does not generate one, or you run a small static site, writing the XML by hand is tedious and easy to break with a stray character.\n\nThis tool takes a list of full URLs and produces the urlset XML with proper escaping. You can set lastmod to today, to none or to a fixed date, and add changefreq and priority. It rejects entries that are not absolute http or https URLs and stops at the limit of 50,000 URLs per sitemap, where you should use several files and a sitemap index. Google ignores changefreq and priority, so they are optional. The file is created in your browser.",
+ "howTo": [
+  "Paste your full URLs, one per line, into the input box.",
+  "Set the lastmod, changefreq and priority options, or clear them.",
+  "Run the tool to produce the XML.",
+  "Save it as sitemap.xml, upload it to your site and reference it in robots.txt or Search Console."
+ ],
+ "faq": [
+  {
+   "q": "What are the sitemap size limits?",
+   "a": "A sitemap can contain up to 50,000 URLs and be up to 50 MB uncompressed. The tool refuses more than 50,000 URLs. For larger sites, split the list and create a sitemap index file."
+  },
+  {
+   "q": "Do changefreq and priority matter?",
+   "a": "Google has said it ignores them, and lastmod only helps if it is accurate. Keep lastmod honest or leave it out. The tool lets you turn each off."
+  },
+  {
+   "q": "Which URLs belong in a sitemap?",
+   "a": "Canonical, indexable pages that return 200. Leave out redirects, noindex pages, blocked URLs and duplicates with tracking parameters, since they send mixed signals."
+  },
+  {
+   "q": "Is my URL list uploaded?",
+   "a": "No. The calculation runs in your browser and nothing you paste is uploaded, stored or sent to a server, so drafts and confidential copy are safe to check."
+  }
+ ],
+ "related": [
+  "sitemap-validator",
+  "sitemap-url-extractor",
+  "robots-generator",
+  "canonical-generator",
+  "hreflang-generator",
+  "slug-generator"
+ ],
+ "keywords": [
+  "sitemap generator",
+  "xml sitemap generator free",
+  "create sitemap.xml from urls",
+  "sitemap from url list",
+  "sitemap builder online"
+ ]
+}

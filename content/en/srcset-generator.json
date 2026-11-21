@@ -1,0 +1,44 @@
+{
+ "id": "srcset-generator",
+ "seoTitle": "Responsive Image srcset and sizes Generator with Resized Files",
+ "metaDescription": "Upload one image, pick widths and get an img tag with srcset, sizes, width and height plus resized WebP or JPEG files. Runs in your browser.",
+ "intro": "Creates an img tag with srcset and sizes and the resized image files for the widths you choose.",
+ "why": "Serving one large image to every phone wastes data. A srcset lets the browser choose the smallest file that is sharp enough.\n\nThis tool resizes your image in a canvas to each width, never larger than the original, and writes the srcset, sizes, width and height attributes. The sizes value must match your layout, so the default is only a starting point. Nothing is uploaded.",
+ "howTo": [
+  "Choose the image file.",
+  "List the widths and set the sizes attribute for your layout.",
+  "Pick WebP, JPEG or PNG and a quality.",
+  "Download the files and paste the markup."
+ ],
+ "faq": [
+  {
+   "q": "Why are some widths skipped?",
+   "a": "Widths larger than the original are dropped, because upscaling adds bytes without detail."
+  },
+  {
+   "q": "Which format should I use?",
+   "a": "WebP is widely supported and smaller than JPEG. AVIF cannot be created in the browser by this site."
+  },
+  {
+   "q": "What should sizes be?",
+   "a": "The width the image is drawn at for each breakpoint, in CSS pixels or vw units."
+  },
+  {
+   "q": "Is the image uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "image-size-attributes",
+  "image-compressor",
+  "image-resizer",
+  "lazy-loading-injector",
+  "image-seo"
+ ],
+ "keywords": [
+  "srcset generator",
+  "responsive images srcset sizes",
+  "resize image multiple widths",
+  "img srcset tool"
+ ]
+}

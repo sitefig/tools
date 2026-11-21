@@ -1,0 +1,41 @@
+{
+ "id": "gpc-signal-tester",
+ "seoTitle": "Global Privacy Control Signal Tester: Is GPC On?",
+ "metaDescription": "Check whether your browser sends the Global Privacy Control signal and Do Not Track, and what sites should do. Free, local test.",
+ "intro": "Reads navigator.globalPrivacyControl and doNotTrack in your browser and explains what a site should do with them.",
+ "why": "Global Privacy Control (GPC) is a switch in some browsers and extensions. When on, it tells every site you visit not to sell or share your personal data.\n\nThis page reads the JavaScript value your browser exposes and shows it. A site also sees the Sec-GPC header, which a page cannot read about itself. Whether a site must obey GPC depends on the law: some US states treat it as an opt-out request, the EU does not treat it as consent.",
+ "howTo": [
+  "Open the page in the browser you want to test.",
+  "Read the status line and the two values.",
+  "Turn GPC on in your browser or extension settings and press Check again.",
+  "Visit a site and see whether it honours your choice."
+ ],
+ "faq": [
+  {
+   "q": "Which browsers send GPC?",
+   "a": "Several privacy-focused browsers and extensions do. Support varies, so test yours."
+  },
+  {
+   "q": "Why does it show undefined?",
+   "a": "The browser does not expose the property, or a privacy setting hides it."
+  },
+  {
+   "q": "Does the page send my result anywhere?",
+   "a": "No. It reads your browser and shows the result here."
+  }
+ ],
+ "related": [
+  "gpc-snippet-generator",
+  "browser-info",
+  "browser-fingerprint",
+  "consent-banner-checklist",
+  "privacy-law-applicability-checker",
+  "webrtc-leak-test"
+ ],
+ "keywords": [
+  "gpc test",
+  "global privacy control check",
+  "sec-gpc",
+  "do not track test"
+ ]
+}

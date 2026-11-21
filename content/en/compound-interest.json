@@ -1,0 +1,46 @@
+{
+ "id": "compound-interest",
+ "seoTitle": "Free Compound Interest Calculator with Contributions",
+ "metaDescription": "See how a balance grows with compound interest, regular monthly contributions and a yearly breakdown. Free calculator that runs in your browser.",
+ "intro": "Enter a starting amount, annual rate, term and compounding frequency, plus an optional monthly contribution. You get the final balance, total interest and a year-by-year table.",
+ "why": "Compounding is easy to understand and hard to feel. A starting sum earning 5% looks modest for a year and surprising after twenty. People usually open a compound interest calculator when planning a savings pot, comparing a deposit account with an investment, or explaining to a child why starting early matters. The useful part is the yearly table, which separates what you paid in from what the interest added. This version lets you choose annual, semiannual, quarterly, monthly or daily compounding and add a monthly deposit, and it states its assumptions in the output. It is an illustration with a fixed rate, not a forecast, and it runs locally.",
+ "howTo": [
+  "Enter the initial amount, the annual rate and the number of years.",
+  "Choose the compounding frequency and, if you save regularly, the monthly contribution.",
+  "Read the final balance and interest earned, then scan the yearly table for the growth path."
+ ],
+ "faq": [
+  {
+   "q": "When are the monthly contributions added?",
+   "a": "At the end of each month. Each deposit then grows at the same effective monthly rate as the rest of the balance. A deposit made at the start of the month would give slightly higher results."
+  },
+  {
+   "q": "How does compounding frequency change the result?",
+   "a": "More frequent compounding gives slightly more interest at the same nominal rate. The difference between monthly and daily is small. Between annual and monthly it is more noticeable over long terms."
+  },
+  {
+   "q": "Does it account for tax, fees or inflation?",
+   "a": "No. It assumes a constant rate and ignores tax and charges. Use the inflation calculator separately to see what the future balance might buy at current prices."
+  },
+  {
+   "q": "Can I enter a fractional number of years?",
+   "a": "Yes. The term is converted to whole months by rounding, so 2.5 years becomes 30 months and the table adds a final row for the part-year."
+  }
+ ],
+ "related": [
+  "simple-interest",
+  "savings-goal",
+  "inflation-calculator",
+  "sip-calculator",
+  "retirement-estimator",
+  "roi-calculator"
+ ],
+ "keywords": [
+  "compound interest calculator",
+  "free compound interest calculator",
+  "compound interest with monthly contributions",
+  "savings growth calculator",
+  "interest on interest calculator",
+  "compound interest formula"
+ ]
+}

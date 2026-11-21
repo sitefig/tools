@@ -1,0 +1,45 @@
+{
+ "id": "javascript-obfuscator",
+ "seoTitle": "JavaScript Obfuscator Online: Rename Variables, Strings",
+ "metaDescription": "Obfuscate JavaScript in your browser with transforms that stay safe without a full parser: local renaming, string array, hex escapes, minify. Free and offline.",
+ "intro": "Makes a JavaScript file harder to read by renaming local variables, moving string literals into one array, writing numbers and strings in hex and removing comments and white space.",
+ "why": "Obfuscation does not protect secrets, but it can slow down casual copying of client-side code. Many obfuscators need a full parser. This one limits itself to transforms that are safe on tokens plus a conservative scope analysis, and tells you what it left alone.\n\nRenaming only touches names declared inside functions that are plain var, let, const, parameters and function declarations, and only where the name is never used as a property key, shorthand property, destructured name, arrow parameter, catch parameter, class or method name. If the code contains eval, with or new Function, renaming is skipped. Top-level names are never renamed, because other scripts may use them. Output was checked by running original and obfuscated code, including a 250 KB parser library whose results were identical.",
+ "howTo": [
+  "Paste your JavaScript.",
+  "Choose the transforms you want; string array and renaming are on by default.",
+  "Copy the result and run your tests, since obfuscated code can behave differently in unusual cases.",
+  "Use the same seed to get reproducible output."
+ ],
+ "faq": [
+  {
+   "q": "Is it safe?",
+   "a": "The listed transforms are conservative and were verified by running real code before and after. The tool re-parses the output with the built-in parser when it can read your code, and refuses to return output that does not parse."
+  },
+  {
+   "q": "What is not done?",
+   "a": "No control flow flattening, dead code, self-defending code or domain locking. Those need a full parser or runtime tricks."
+  },
+  {
+   "q": "Why are some names not renamed?",
+   "a": "Names that appear in destructuring, arrow parameters, shorthand properties, class bodies, catch clauses or as top-level declarations are left alone, because a wrong rename would change behaviour."
+  },
+  {
+   "q": "Does it make code unreadable for tools?",
+   "a": "Anyone can undo hex escapes and a string array with a formatter. Treat it as a speed bump."
+  }
+ ],
+ "related": [
+  "js-minify",
+  "js-format",
+  "text-obfuscator",
+  "javascript-ast-explorer",
+  "string-literal-escaper",
+  "code-comment-stripper"
+ ],
+ "keywords": [
+  "javascript obfuscator online",
+  "obfuscate js",
+  "rename variables javascript",
+  "string array obfuscation"
+ ]
+}

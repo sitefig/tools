@@ -1,0 +1,44 @@
+{
+ "id": "lighthouse-report-diff",
+ "seoTitle": "Lighthouse Report Diff: Compare Two JSON Reports for Regressions",
+ "metaDescription": "Compare two Lighthouse JSON reports: score changes, metric regressions with a noise tolerance, and audits that started or stopped failing.",
+ "intro": "Compares a before and an after Lighthouse JSON report and shows score changes, metric regressions and improvements, and newly failing or fixed audits.",
+ "why": "After a release you want to know whether the page got slower. Two reports side by side do not tell you quickly, and a single run can move 5 to 10 percent without any change.\n\nThis tool lines up the category scores and the main metrics, marks a change as noise when it is inside your tolerance, and lists audits that crossed the 90 mark in either direction. It warns when the two reports are for different URLs or form factors. For a real verdict, run each version several times.",
+ "howTo": [
+  "Paste the earlier report into the first box.",
+  "Paste the later report into the second box.",
+  "Set how many percent of change you treat as noise.",
+  "Read the regressions first, then the newly failing audits."
+ ],
+ "faq": [
+  {
+   "q": "Why are small changes labelled \"about the same\"?",
+   "a": "Lab timings vary between runs. Changes inside your tolerance (5 percent by default) are shown as noise."
+  },
+  {
+   "q": "Can I compare mobile with desktop?",
+   "a": "You can, but the tool warns you: the throttling differs, so the numbers are not comparable."
+  },
+  {
+   "q": "Which metrics are compared?",
+   "a": "FCP, LCP, TBT, CLS, Speed Index and TTI when both reports contain them."
+  },
+  {
+   "q": "Does it upload my reports?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "lighthouse-report-viewer",
+  "core-web-vitals-grader",
+  "crux-response-analyzer",
+  "har-performance-analyzer",
+  "page-weight-download-time"
+ ],
+ "keywords": [
+  "lighthouse diff",
+  "compare lighthouse reports",
+  "performance regression check",
+  "lighthouse before after"
+ ]
+}

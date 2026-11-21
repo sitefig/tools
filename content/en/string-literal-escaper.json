@@ -1,0 +1,44 @@
+{
+ "id": "string-literal-escaper",
+ "seoTitle": "Free String Literal Escaper for Java, C, C#, Python, Go, Rust, JSON and SQL",
+ "metaDescription": "Escape text into a quoted string literal for Java, C, C#, Python, Go, Rust, JavaScript, JSON, PHP, SQL or Bash, or unescape one. Free and offline.",
+ "intro": "Wraps raw text into a correct string literal for the language you pick: quotes, backslashes, newlines, control characters and, if you want, non-ASCII characters become the escapes that language accepts.",
+ "why": "Pasting a Windows path, a JSON snippet or a multi-line message into source code means escaping quotes and backslashes by hand. Each language has its own rules: Java has no \\x escape, C reads \\x greedily, SQL doubles single quotes, and Bash single quotes cannot hold an apostrophe.\n\nThe tool applies those rules and can also undo common backslash escapes. For C it writes control characters as three-digit octal, which cannot run into the next character. The result was checked by evaluating it in Python, JavaScript, JSON and Bash. The other languages follow their documented escape rules.",
+ "howTo": [
+  "Paste the raw text.",
+  "Pick the language and direction.",
+  "Tick non-ASCII escaping if the source file must stay ASCII.",
+  "Copy the literal."
+ ],
+ "faq": [
+  {
+   "q": "Why are control characters written differently per language?",
+   "a": "Java and C# accept \\uXXXX, C accepts octal, Python and Go accept \\xHH. The tool uses what each language allows."
+  },
+  {
+   "q": "What does unescape do?",
+   "a": "It reads backslash escapes (n, t, r, b, f, v, a, xHH, uXXXX, u{...}, octal) after removing surrounding quotes."
+  },
+  {
+   "q": "Is the Java output safe for \\u processing?",
+   "a": "Yes. It uses \\n and \\r for line breaks, since a raw \\u000a would break a Java source file."
+  },
+  {
+   "q": "Does it cover raw strings or template literals?",
+   "a": "Only the usual quoted form. JavaScript can use backticks if you choose that quote style yourself."
+  }
+ ],
+ "related": [
+  "string-escape",
+  "json-escape",
+  "json-unescape",
+  "unicode-escape",
+  "regex-escape",
+  "sql-format"
+ ],
+ "keywords": [
+  "string escape java",
+  "escape string python",
+  "string literal escape"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "gps-location-stripper",
+ "seoTitle": "GPS Location Stripper for JPEG (Keep Other Metadata)",
+ "metaDescription": "Delete only the GPS location tags from JPEG photos and keep camera, lens, exposure and date metadata. The image data is not re-encoded.",
+ "intro": "Remove only the GPS tags from JPEG photos.",
+ "why": "Choose JPEG files. The tool finds the GPS block in the EXIF data, zeroes it in place and blanks GPS fields in XMP. The picture data is not re-encoded, so there is no quality loss and the other EXIF fields (camera, exposure, date) stay.\n\nIt looks at the EXIF and XMP blocks. Some cameras keep location in maker notes or in a thumbnail, and sidecar files are not touched. Check the result in the EXIF viewer, or use the full metadata remover if in doubt.",
+ "howTo": [
+  "Choose one or more JPEGs.",
+  "Read the report of what was removed.",
+  "Download the cleaned files.",
+  "Check with the EXIF viewer."
+ ],
+ "faq": [
+  {
+   "q": "Does it change the pixels?",
+   "a": "No. Only the metadata bytes change."
+  },
+  {
+   "q": "Does it work for PNG or HEIC?",
+   "a": "No. Only JPEG. Use the full metadata remover for other types."
+  },
+  {
+   "q": "Is the location really gone?",
+   "a": "The EXIF GPS values are overwritten with zeros. Other places that might hold a location are listed in the notes."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "exif-viewer",
+  "exif-remover",
+  "photo-gps-export",
+  "image-redaction",
+  "photo-date-fixer",
+  "iptc-copyright-metadata-editor"
+ ],
+ "keywords": [
+  "remove gps from photo",
+  "strip location exif",
+  "remove geotag",
+  "privacy photo"
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "id": "json-unescape",
+ "seoTitle": "Free JSON String Unescape Online",
+ "metaDescription": "Free online JSON unescape tool. Turn escaped strings with \\n, \\\" and \\uXXXX back into readable text. Runs in your browser; nothing is uploaded.",
+ "intro": "Turn an escaped JSON string back into readable text. Sequences such as \\n, \\\" and \\uXXXX are decoded, and surrounding quotes are removed if present.",
+ "why": "Log files, API responses and database exports often show text as one escaped line full of backslashes. A stack trace, an HTML email or a SQL query stored in a JSON field is nearly impossible to read like that. You see \\n where you want a line break and \\u00e9 where you want an accented letter.\n\nPaste the escaped value and the tool decodes it into the original text, line breaks included. You can paste it with or without the surrounding quotes. Unlike a strict JSON parser, it does not insist on a complete valid document, so a fragment copied from the middle of a log line works. The decoding happens in your browser and nothing you paste is uploaded.",
+ "howTo": [
+  "Paste the escaped string, with or without its surrounding quotes.",
+  "Read the decoded text in the output, with real line breaks and characters.",
+  "Copy the plain text for your editor, ticket or report."
+ ],
+ "faq": [
+  {
+   "q": "Which escape sequences are decoded?",
+   "a": "The common ones: \\n, \\t, \\r, \\b, \\f, \\/, \\\\, \\\" and \\uXXXX. Unknown sequences are left as they are rather than causing an error."
+  },
+  {
+   "q": "Do I need to include the quotes?",
+   "a": "No. If the text starts and ends with a double quote, those are stripped. Otherwise the whole input is decoded as it is, which suits fragments copied from logs."
+  },
+  {
+   "q": "What about emoji written as two \\u sequences?",
+   "a": "A surrogate pair such as \\ud83d\\ude00 is decoded into the single emoji it represents, because both halves are converted and join up in the result."
+  },
+  {
+   "q": "Can it decode a full JSON document?",
+   "a": "It is meant for single string values. For a whole document use the JSON formatter or validator, which parse and display the structure."
+  }
+ ],
+ "related": [
+  "json-escape",
+  "json-format",
+  "string-escape",
+  "html-entities",
+  "url-decode",
+  "unicode-escape"
+ ],
+ "keywords": [
+  "json unescape online",
+  "unescape json string",
+  "decode json escape",
+  "free json unescape",
+  "remove backslashes json",
+  "json string decoder"
+ ]
+}

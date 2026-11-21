@@ -1,0 +1,41 @@
+{
+ "id": "privacy-policy-readability",
+ "seoTitle": "Privacy Policy Readability Grader and Vague Word Count",
+ "metaDescription": "Paste a privacy policy and get word count, reading time, Flesch scores, long sentences and a list of vague phrases. Free and local.",
+ "intro": "Scores the readability of a privacy policy and counts vague wording such as \"may\", \"third parties\" and \"from time to time\".",
+ "why": "The GDPR expects privacy information to be concise, transparent, intelligible and in plain language. Many policies are long and full of \"may\" and \"including but not limited to\".\n\nPaste yours and see the length, reading time, Flesch reading ease, grade level, the number of very long sentences and a count of vague phrases. The scores are for English text and use an estimated syllable count. They show where to simplify. They do not prove compliance.",
+ "howTo": [
+  "Paste the policy text.",
+  "Read the scores and the vague phrase counts.",
+  "Rewrite the longest sentences and the vaguest phrases.",
+  "Run it again to compare."
+ ],
+ "faq": [
+  {
+   "q": "Which language does it support?",
+   "a": "English only. Syllable counting is an English heuristic."
+  },
+  {
+   "q": "What is a good score?",
+   "a": "Aim for a Flesch reading ease of 50 or more for a general audience. Legal text is often below 30."
+  },
+  {
+   "q": "Where does 238 words per minute come from?",
+   "a": "It is an average silent reading speed for adults. Real speed varies."
+  }
+ ],
+ "related": [
+  "text-statistics",
+  "readability",
+  "privacy-policy-generator",
+  "cookie-policy-generator",
+  "pii-redactor",
+  "gdpr-checklist"
+ ],
+ "keywords": [
+  "privacy policy readability",
+  "policy reading time",
+  "plain language privacy",
+  "flesch privacy policy"
+ ]
+}

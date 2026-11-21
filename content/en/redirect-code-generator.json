@@ -1,0 +1,46 @@
+{
+ "id": "redirect-code-generator",
+ "seoTitle": "Free Redirect Rules Generator: Apache, NGINX, Netlify",
+ "metaDescription": "Convert old and new URL pairs into .htaccess, NGINX and _redirects rules with 301, 302, 307 or 308. Free; runs in your browser.",
+ "intro": "Paste old and new URL pairs and get redirect rules for Apache .htaccess, an NGINX server block and a Netlify or Cloudflare Pages _redirects file, with the status code you choose.",
+ "why": "Site migrations, URL clean-ups and retired pages all need redirects, usually many at once. Writing each rule by hand for the right server, with the right syntax and escaping, is slow and a typo can send visitors to an error page or lose the ranking of the old URL.\n\nThis generator reads pairs written as old new, old -> new or old, new, one per line, and prints rules for three targets at once. Query-string sources get a rewrite condition for Apache and a comment for NGINX. You pick 301, 302, 307 or 308. Use a permanent code for moved content and test a sample of URLs after deploying. It handles simple one-to-one redirects, not pattern rules or regular expressions. The output is built in your browser.",
+ "howTo": [
+  "Paste your pairs, one per line, as old new or old -> new.",
+  "Choose the status code: 301, 302, 307 or 308.",
+  "Run the tool to see the Apache, NGINX and _redirects rules.",
+  "Copy the section for your server, deploy it and test several of the old URLs."
+ ],
+ "faq": [
+  {
+   "q": "Which status code should I use?",
+   "a": "Use 301 or 308 for permanent moves, which pass ranking signals to the new URL. Use 302 or 307 for temporary redirects. 307 and 308 keep the request method unchanged."
+  },
+  {
+   "q": "Does it support wildcards or regex?",
+   "a": "No. It writes exact-path redirects, one per pair. For pattern-based rules, adapt the output by hand or use your server's own rewrite syntax."
+  },
+  {
+   "q": "How are old URLs with query strings handled?",
+   "a": "Apache output gets a RewriteCond on the query string. For NGINX the tool prints a comment showing the if-condition to add, since location blocks do not match query strings."
+  },
+  {
+   "q": "Is my URL list uploaded?",
+   "a": "No. Everything runs in your browser and nothing you paste is uploaded, stored or sent to a server, so staging or confidential configuration is safe to use here."
+  }
+ ],
+ "related": [
+  "htaccess-generator",
+  "canonical-generator",
+  "htaccess-to-nginx",
+  "redirect-rules-converter",
+  "nginx-config-generator",
+  "sitemap-generator"
+ ],
+ "keywords": [
+  "redirect generator",
+  "301 redirect generator",
+  "htaccess redirect rules",
+  "nginx redirect generator",
+  "netlify redirects file builder"
+ ]
+}

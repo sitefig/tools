@@ -1,0 +1,45 @@
+{
+ "id": "terraform-hcl-to-yaml",
+ "seoTitle": "Free Terraform HCL to YAML Converter Online",
+ "metaDescription": "Convert Terraform HCL2 configuration into YAML using the Terraform JSON structure, with expressions as strings. Free, runs in your browser.",
+ "intro": "Parses Terraform or HCL2 configuration and prints it as YAML using the Terraform JSON structure: labelled blocks nested, unlabelled blocks as lists and expressions as \"${...}\" strings.",
+ "why": "YAML is easier on the eyes than JSON and fits tools that already read YAML, such as config pipelines, Kubernetes-style tooling and documentation. If you want to inspect or transform Terraform with those tools, you need the HCL in YAML form. Paste your configuration here and you get the same structure Terraform uses for its JSON syntax, written as YAML: resource, type and name nested as maps, repeated blocks as lists and non-literal expressions kept as quoted \"${...}\" strings. Nothing is evaluated, and dynamic blocks are not expanded. The reverse direction is available in the YAML / JSON to Terraform HCL tool. Parsing is local to your browser.",
+ "howTo": [
+  "Paste your Terraform or HCL configuration into the input box.",
+  "Run the conversion to see the YAML.",
+  "Copy it into your pipeline, or use the reverse tool to turn it back into HCL."
+ ],
+ "faq": [
+  {
+   "q": "Is the structure the same as the JSON version?",
+   "a": "Yes. It uses the Terraform JSON syntax shape and prints it as YAML. The JSON converter on this site gives the same data as JSON."
+  },
+  {
+   "q": "Why do some values look like \"${var.name}\"?",
+   "a": "Expressions are kept as strings in Terraform's JSON syntax. They are not evaluated, so references and function calls appear as quoted text."
+  },
+  {
+   "q": "Does it support every HCL feature?",
+   "a": "It parses common HCL2 syntax, including comments and heredocs. Dynamic blocks are not expanded and no expression is evaluated, so variables and functions appear as text rather than computed values."
+  },
+  {
+   "q": "Is my Terraform code uploaded?",
+   "a": "No. The conversion runs entirely in your browser, and the text of your configuration is not sent to any server, so internal resource names and settings stay on your own machine."
+  }
+ ],
+ "related": [
+  "terraform-hcl-to-json",
+  "yaml-to-terraform-hcl",
+  "terraform-formatter",
+  "yaml-format",
+  "json-to-yaml",
+  "terraform-scaffolder"
+ ],
+ "keywords": [
+  "terraform hcl to yaml",
+  "convert tf to yaml",
+  "hcl to yaml online",
+  "free terraform yaml converter",
+  "terraform config as yaml"
+ ]
+}

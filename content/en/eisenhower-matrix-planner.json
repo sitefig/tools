@@ -1,0 +1,39 @@
+{
+ "id": "eisenhower-matrix-planner",
+ "seoTitle": "Eisenhower Matrix Planner: Urgent and Important Sorter",
+ "metaDescription": "Sort tasks into do now, schedule, delegate and drop from urgent and important flags you type. No dragging needed.",
+ "intro": "Sorts tasks into the four Eisenhower quadrants from flags you type.",
+ "why": "The Eisenhower matrix separates what is urgent from what is important. Important work that is not urgent is where planning and growth happen, and it is the first to be skipped.\n\nType a task and flags u and i after a bar. Typing works with a keyboard and a screen reader, which dragging does not. If most tasks land in do now, your urgency flags may be too generous.",
+ "howTo": [
+  "Write one task per line.",
+  "Add | u i, | i or | u after tasks.",
+  "Read the four groups."
+ ],
+ "faq": [
+  {
+   "q": "What if a task has no flags?",
+   "a": "It goes to drop or limit."
+  },
+  {
+   "q": "Can I use words?",
+   "a": "Yes, urgent and important work as well as u and i."
+  },
+  {
+   "q": "Is it saved?",
+   "a": "Not by the tool; copy the result."
+  }
+ ],
+ "related": [
+  "lean-canvas-builder",
+  "business-model-canvas-builder",
+  "okr-planner-scorer",
+  "raci-matrix-builder",
+  "decision-matrix",
+  "profit-margin"
+ ],
+ "keywords": [
+  "eisenhower matrix",
+  "urgent important matrix",
+  "task prioritisation"
+ ]
+}

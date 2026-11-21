@@ -1,0 +1,45 @@
+{
+  "id": "palette-contrast-matrix",
+  "seoTitle": "Palette Contrast Matrix: WCAG Ratios for Every Color Pair",
+  "metaDescription": "Paste a colour palette and see the WCAG contrast ratio of every pair with AA and AAA marks for text, large text and UI components.",
+  "intro": "Find out which combinations in your design system are accessible, instead of checking pairs one by one.",
+  "why": "Enter colours as hex values, optionally with names. The tool computes WCAG 2.x relative luminance contrast for every pair, shows a compact matrix (AAA, AA, large text or UI only, fail), a sorted list with pass levels for normal text (4.5:1 AA, 7:1 AAA), large text (3:1 AA, 4.5:1 AAA) and UI components (3:1), and lists the pairs safe for body text. The ratios match the contrast checker tool.\n\nWCAG 2 contrast has known limits (it ignores font weight, polarity and perceived lightness); APCA is an alternative being studied. Contrast is only one part of accessibility.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter 2 to 24 colours, one per line.",
+    "Read the matrix and the sorted list.",
+    "Pick pairs that pass for text.",
+    "Adjust colours that fail with the colour tools."
+  ],
+  "faq": [
+    {
+      "q": "What ratio do I need?",
+      "a": "4.5:1 for normal text and 3:1 for large text and UI components at level AA."
+    },
+    {
+      "q": "What counts as large text?",
+      "a": "18 pt (24 px) or 14 pt (about 18.7 px) bold and above."
+    },
+    {
+      "q": "Why is a pair listed once?",
+      "a": "Contrast is symmetric, so A on B equals B on A."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "contrast-checker",
+    "color-blindness-simulator",
+    "palette-generator",
+    "tailwind-v4-color-palette",
+    "color-converter",
+    "color-mixer"
+  ],
+  "keywords": [
+    "contrast matrix",
+    "wcag palette checker",
+    "color contrast all pairs",
+    "accessible color palette"
+  ]
+}

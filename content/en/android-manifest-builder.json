@@ -1,0 +1,45 @@
+{
+ "id": "android-manifest-builder",
+ "seoTitle": "Free AndroidManifest.xml Builder with Permissions",
+ "metaDescription": "Generate an AndroidManifest.xml with launcher activity, exported flag, deep links, permissions and hardware features. Free, runs in your browser.",
+ "intro": "Generates an AndroidManifest.xml with application attributes, a launcher activity with explicit android:exported, an optional deep link or App Link filter, permissions and hardware features.",
+ "why": "Android manifests are verbose, and a few details trip people up: android:exported must be explicit for activities with intent filters on recent Android versions, permission names need the android.permission prefix, and some permissions need a runtime prompt on top of the manifest entry. This builder helps with the basics. Enter the app label, main activity, theme and orientation, and list permissions by short name, such as CAMERA or INTERNET, and they are expanded and checked against those needing a runtime request. You can add a deep link with scheme, host and path prefix with autoVerify for App Links, hardware features and a Firebase Messaging service. It is a template to adapt, not a full project setup. It runs in your browser.",
+ "howTo": [
+  "List permissions and features one per line, using short names such as CAMERA or feature:android.hardware.camera.",
+  "Fill in the app label, main activity, theme, orientation and the backup and cleartext options.",
+  "Add a deep link if you need one, then copy the manifest into your project."
+ ],
+ "faq": [
+  {
+   "q": "Why is android:exported set?",
+   "a": "Recent Android versions require an explicit android:exported value for components with intent filters. The launcher activity is generated with it set to true."
+  },
+  {
+   "q": "How are permissions written?",
+   "a": "Short names like CAMERA become android.permission.CAMERA. The tool also lists those that need a runtime prompt, such as camera, location and notifications, so you remember to request them in code."
+  },
+  {
+   "q": "How do I mark a feature as optional?",
+   "a": "Add a question mark after a feature name, as in feature:android.hardware.camera?, and it is declared with required set to false."
+  },
+  {
+   "q": "What does the application ID field do?",
+   "a": "It is for reference. In modern Gradle projects the application ID is set in the build file, not in the manifest."
+  }
+ ],
+ "related": [
+  "android-keystore-fingerprint",
+  "ios-plist-builder",
+  "capacitor-config-builder",
+  "universal-links-validator",
+  "flutter-theme-generator",
+  "xml-format"
+ ],
+ "keywords": [
+  "androidmanifest.xml builder",
+  "android manifest generator",
+  "android permissions list generator",
+  "free android manifest tool",
+  "android app links intent filter"
+ ]
+}

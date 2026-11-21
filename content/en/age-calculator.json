@@ -1,0 +1,46 @@
+{
+ "id": "age-calculator",
+ "seoTitle": "Free Age Calculator: Exact Years, Months and Days",
+ "metaDescription": "Find your exact age in years, months and days from a date of birth, plus total days, weekday born and days to your next birthday. Free and private.",
+ "intro": "Enter a date of birth and, optionally, a date to measure the age on. The tool gives the exact age, the total days, the weekday of birth and the next birthday.",
+ "why": "Forms ask for age in whole years, but plenty of situations need more detail: how old a child is in months for a growth chart, whether someone has turned 18 by a certain date, or how many days until the next birthday. Counting months and days by hand is error-prone because months have different lengths and leap years interfere. This calculator uses calendar arithmetic, borrowing days from the previous month in the usual way, and can measure age at any past or future date as well as today. It also shows the weekday you were born on and the number of days until your next birthday. Dates are processed in your browser and never sent anywhere.",
+ "howTo": [
+  "Pick the date of birth.",
+  "Leave the 'Age at date' field blank for today, or pick another date to measure on.",
+  "Read the age in years, months and days, the totals and the next birthday."
+ ],
+ "faq": [
+  {
+   "q": "How does it handle birthdays on 29 February?",
+   "a": "In a non-leap year the birthday is treated as 28 February when working out the next birthday. The age itself is calculated from the actual calendar dates."
+  },
+  {
+   "q": "Can I calculate age at a future or past date?",
+   "a": "Yes. Enter the target date in the second field. The date of birth must not be after it, otherwise the tool shows an error."
+  },
+  {
+   "q": "Which time zone does 'today' use?",
+   "a": "Your device's local date, so the result changes at your own midnight. Dates in the fields are treated as plain calendar days without times."
+  },
+  {
+   "q": "Why do total months differ from years times twelve?",
+   "a": "The total months figure is whole years times 12 plus the extra completed months. The leftover days are not counted as a month until a full month passes."
+  }
+ ],
+ "related": [
+  "date-difference",
+  "add-subtract-dates",
+  "day-of-week",
+  "countdown-to-date",
+  "due-date-calculator",
+  "week-number"
+ ],
+ "keywords": [
+  "age calculator",
+  "free age calculator",
+  "exact age calculator",
+  "age in years months days",
+  "calculate age from date of birth",
+  "how old am i"
+ ]
+}

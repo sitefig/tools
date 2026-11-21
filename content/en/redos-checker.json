@@ -1,0 +1,45 @@
+{
+ "id": "redos-checker",
+ "seoTitle": "Free ReDoS Checker: Find Catastrophic Backtracking in a Regex",
+ "metaDescription": "Scan a JavaScript regex for ReDoS risks: nested quantifiers, overlapping alternatives, adjacent repeats. A heuristic review aid. Free, local.",
+ "intro": "Looks at the structure of a regex and flags shapes that are known to backtrack badly, with a suggestion for a test string and a fix.",
+ "why": "Some regexes take exponential time on input that almost matches. A web server running one of them can be frozen by a single request, which is called ReDoS. The risky shapes are well known: a repeated group that ends in a repeat, alternatives that start with the same character inside a loop, and two repeats side by side that match the same characters.\n\nThis tool parses the pattern and checks for those shapes using sampled character sets. It is a heuristic. It can miss risky patterns, especially with backreferences or lookarounds, and it can flag safe ones, so every finding is a review item. Confirm with a timing test on your own engine.",
+ "howTo": [
+  "Paste one or more regexes, one per line.",
+  "Read each finding and the part of the pattern it points to.",
+  "Try the suggested test string in the regex benchmark tool to confirm.",
+  "Rewrite the pattern so the parts cannot match the same text."
+ ],
+ "faq": [
+  {
+   "q": "Does \"no known risky shape\" mean the regex is safe?",
+   "a": "No. It only means none of the shapes this tool knows about were found. Treat it as a first filter."
+  },
+  {
+   "q": "Which engines are affected?",
+   "a": "Backtracking engines such as JavaScript, Python, Java, PHP and .NET. Engines with linear-time matching, such as RE2, are not."
+  },
+  {
+   "q": "How do I fix a flagged pattern?",
+   "a": "Make alternatives exclusive, remove the inner repeat, place a delimiter between repeats, limit lengths, or use a linear-time engine."
+  },
+  {
+   "q": "Does it run the regex?",
+   "a": "No. It only analyses the pattern, so it cannot hang. The benchmark tool can time a pattern against real input."
+  }
+ ],
+ "related": [
+  "regex-benchmark-simulator",
+  "regex-tester",
+  "regex-test-runner",
+  "regex-explainer",
+  "regex-railroad-diagram",
+  "regex-cheatsheet"
+ ],
+ "keywords": [
+  "redos checker",
+  "catastrophic backtracking regex",
+  "regex denial of service",
+  "regex safety check"
+ ]
+}

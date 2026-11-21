@@ -1,0 +1,47 @@
+{
+ "id": "disavow-file-generator",
+ "seoTitle": "Free Google Disavow File Generator for disavow.txt",
+ "metaDescription": "Turn a list of spammy domains and URLs into a correctly formatted disavow.txt for Google Search Console, with comments. Free, runs in your browser.",
+ "intro": "Paste spammy domains or URLs and get a clean disavow.txt in the format Google Search Console expects, with domain: lines, a header comment and no duplicates.",
+ "why": "After a link audit, you may have a list of bad backlinks in a spreadsheet, in a mix of formats: full URLs, bare domains, www and non-www versions, some already prefixed. Google's disavow tool wants a specific plain-text format, and one malformed line wastes your effort.\n\nThis generator normalises your list. It strips protocols and www, converts entries to domain: lines (or keeps full URLs if you want to disavow single pages), removes duplicates, sorts them and adds a comment header with the reason and date. Lines starting with # are skipped. Disavowing is a last resort, so review the list carefully first. Your list stays in your browser.",
+ "howTo": [
+  "Paste your domains or URLs into the box, one per line.",
+  "Choose a mode: whole domains, or keep full URLs.",
+  "Edit the comment that explains the reason, and tick the date option if you want one.",
+  "Copy the result or save it as disavow.txt and upload it in Search Console."
+ ],
+ "faq": [
+  {
+   "q": "Should I disavow whole domains or single URLs?",
+   "a": "Whole domains are the usual choice for spam, since the same site often links from many pages. Keep full URLs only when a few pages on an otherwise acceptable site are the problem."
+  },
+  {
+   "q": "Do I really need to disavow?",
+   "a": "Rarely. Google says it generally ignores spammy links and the tool is for cases such as a manual action or a large paid-link problem. Disavowing good links can do harm, so check each entry."
+  },
+  {
+   "q": "What does the output look like?",
+   "a": "Comment lines start with #, then each entry appears as domain:example.com, sorted and deduplicated. Existing domain: lines in your input are kept, and comment lines in the input are dropped."
+  },
+  {
+   "q": "What if a line is not a domain?",
+   "a": "A line without a dot in its host, such as a stray word, stops the tool with an error naming the line, so you can fix it before uploading."
+  }
+ ],
+ "related": [
+  "anchor-text-distribution",
+  "utm-bulk-builder",
+  "seo-robots-noindex-simulator",
+  "sitemap-validator",
+  "keyword-clusterer",
+  "robots-tester"
+ ],
+ "keywords": [
+  "disavow file generator",
+  "create disavow.txt",
+  "google disavow tool file",
+  "free disavow file maker",
+  "search console disavow format",
+  "bad backlinks disavow list"
+ ]
+}

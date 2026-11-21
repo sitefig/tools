@@ -1,0 +1,46 @@
+{
+  "id": "ascii-tree-generator",
+  "seoTitle": "Free ASCII Tree Generator for Folder Structures",
+  "metaDescription": "Turn an indented list into a directory-style tree with box-drawing or plain ASCII lines. Free, runs in your browser and nothing is uploaded.",
+  "intro": "Converts an indented list into a tree like the one printed by the tree command, using box-drawing or plain ASCII branches. You can add a trailing slash to folders.",
+  "why": "Documenting a project layout is a common chore. A README or a design document often needs a folder structure that shows what lives where, and drawing the branches with the right characters by hand is fiddly. The tree command only works on a real directory, which does not help when you are planning a structure that does not exist yet.\n\nType the names with indentation, using spaces, tabs or leading dashes, and the tool builds the tree. Items that have children can be marked with a trailing slash so folders stand out. Choose the unicode style for modern displays or ASCII for places that cannot render box characters. The conversion is local, so internal project names are not uploaded.",
+  "howTo": [
+    "Type or paste an indented list, one item per line.",
+    "Choose unicode or ascii branch style.",
+    "Tick Add / to folders if you want trailing slashes on items with children.",
+    "Copy the finished tree into your README or document."
+  ],
+  "faq": [
+    {
+      "q": "How is the structure worked out?",
+      "a": "By indentation. A line indented further than the line above becomes its child. Tabs count as four spaces, and a leading dash, asterisk or plus sign is ignored, so Markdown bullet lists work as input."
+    },
+    {
+      "q": "Can it read an existing folder?",
+      "a": "No, it cannot read your file system. It only formats text you give it. To capture a real directory, run the tree command or list the paths yourself and indent them."
+    },
+    {
+      "q": "What is the slash option for?",
+      "a": "Any item that has children gets a trailing slash, which marks it as a directory. Empty folders look like files unless you add the slash yourself in the input."
+    },
+    {
+      "q": "Why do branches look broken in my editor?",
+      "a": "The unicode style needs a monospaced font that includes box-drawing characters. If your tool cannot show them, switch to the ascii style, which uses plain dashes, pipes and backticks."
+    }
+  ],
+  "related": [
+    "ascii-table-generator",
+    "ascii-art-text",
+    "readme-generator",
+    "markdown-cheatsheet",
+    "list-converter",
+    "gitignore-generator"
+  ],
+  "keywords": [
+    "ascii tree generator",
+    "directory tree generator",
+    "folder structure to text",
+    "file tree markdown",
+    "free tree diagram text"
+  ]
+}

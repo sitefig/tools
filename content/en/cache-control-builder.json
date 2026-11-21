@@ -1,0 +1,47 @@
+{
+ "id": "cache-control-builder",
+ "seoTitle": "Free Cache-Control Header Builder Online",
+ "metaDescription": "Free online Cache-Control header builder. Pick directives or a preset, see conflict warnings and copy snippets for nginx, Apache and Express.",
+ "intro": "Compose a Cache-Control header from directives or start from a preset such as hashed static assets. Conflicting settings are flagged, and you get snippets for nginx, Apache and Express.",
+ "why": "Cache-Control decides how long browsers and CDNs keep your files, and mistakes either serve stale pages for a day or force every visitor to download assets again. The directives interact: no-store makes max-age pointless, and s-maxage is ignored on private responses.\n\nChoose a preset for the common cases, such as hashed assets, HTML that must be revalidated, or sensitive data, or set directives yourself: visibility, max-age, s-maxage, stale-while-revalidate, stale-if-error and flags like immutable. The tool assembles the header, shows how long that is in readable units, and warns about combinations that do not make sense. It gives ready snippets for nginx, Apache and Express. To test a live URL, use the HTTP cache tester. Nothing is uploaded.",
+ "howTo": [
+  "Pick a preset, or leave it on custom to set directives yourself.",
+  "Choose public or private and enter max-age and any other durations in seconds.",
+  "Tick flags such as immutable, no-cache or must-revalidate, and read any warnings.",
+  "Copy the header or the nginx, Apache or Express snippet."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between no-cache and no-store?",
+   "a": "no-cache lets a cache store the response but requires revalidation before reuse. no-store tells caches not to store it at all, which suits sensitive responses."
+  },
+  {
+   "q": "When should I use immutable?",
+   "a": "For files whose URL changes whenever the content changes, like app.3f2a1c.js, together with a long max-age. Browsers then skip revalidation entirely."
+  },
+  {
+   "q": "What do s-maxage and stale-while-revalidate do?",
+   "a": "s-maxage sets freshness for shared caches such as CDNs, overriding max-age there. stale-while-revalidate lets a cache serve a stale copy while it refreshes in the background."
+  },
+  {
+   "q": "Does it set the header on my server?",
+   "a": "No. It generates the value and example configuration. You add it to your server or framework and then check the real response headers."
+  }
+ ],
+ "related": [
+  "http-cache-control-tester",
+  "http-headers-analyzer",
+  "security-headers-generator",
+  "nginx-config-generator",
+  "htaccess-generator",
+  "http-headers-to-json"
+ ],
+ "keywords": [
+  "cache-control header generator",
+  "cache control builder",
+  "http caching header tool",
+  "free cache-control generator",
+  "max-age immutable generator",
+  "nginx cache-control header"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "wireguard-config-generator",
+  "seoTitle": "WireGuard Config Generator: Server and Client Files With Keys",
+  "metaDescription": "Generate WireGuard key pairs and ready-to-use server and client configs for a VPN subnet, with optional preshared keys and full or split tunnel.",
+  "intro": "Set up a WireGuard VPN faster: get a server config and one config per client, with keys created in your browser.",
+  "why": "Enter a /24 subnet, the server endpoint, the number of clients, DNS and routing. The page generates X25519 keys with a hand-written implementation of RFC 7748 (checked against the RFC test vector and against the wg tool, which derived the same public keys), optional preshared keys and files for wg0.conf and each client with sequential addresses.\n\nCopy each file to its machine over a secure channel and do not keep spare copies. The server also needs IP forwarding and a NAT rule for clients to reach the internet.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the subnet, endpoint and number of clients.",
+    "Choose full tunnel or split tunnel and DNS.",
+    "Copy the server config to /etc/wireguard/wg0.conf and each client file to its device.",
+    "Run wg-quick up wg0."
+  ],
+  "faq": [
+    {
+      "q": "Are the keys safe?",
+      "a": "They are random and created locally. Treat the output like any secret and avoid sharing it."
+    },
+    {
+      "q": "What is a preshared key?",
+      "a": "An extra symmetric key mixed in for added protection against future quantum attacks on key exchange."
+    },
+    {
+      "q": "How do clients get internet access?",
+      "a": "Enable ip_forward on the server and add a masquerade rule for the outgoing interface."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "ssh-key-pair-generator",
+    "nginx-config-generator",
+    "ip-subnet-calculator",
+    "systemd-unit-generator",
+    "docker-compose-generator",
+    "random-secret-generator"
+  ],
+  "keywords": [
+    "wireguard config generator",
+    "wireguard keys",
+    "vpn config generator",
+    "wg-quick config"
+  ]
+}

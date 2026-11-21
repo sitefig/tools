@@ -1,0 +1,43 @@
+{
+ "id": "cors-preflight-inspector",
+ "seoTitle": "Free CORS Preflight Inspector and Debugger",
+ "metaDescription": "Describe a browser request and paste server headers to see if a preflight is needed and why CORS accepts or blocks it. Free, in your browser.",
+ "intro": "Describe the browser request, with method, origin and headers, and paste the server's response headers. See whether a preflight is needed, what the OPTIONS request contains and why the response is accepted or blocked.",
+ "why": "CORS errors are famously unhelpful. The console says a request was blocked, but not which header was missing, or whether the problem is the preflight, the actual response or a wildcard used together with credentials. Developers change headers on the server by trial and error.\n\nThis inspector applies the browser's rules to what you paste. It decides whether the request is simple or needs a preflight, builds the OPTIONS request the browser would send, and walks through the response header by header: allowed origin, methods, headers and credentials. The explanation names the exact mismatch. It models the Fetch standard and does not send any request, so nothing leaves your browser. Always confirm the fix with the real browser.",
+ "howTo": [
+  "Write the request: a Method line, an Origin line and any other request headers.",
+  "Paste the server's response headers for the preflight or the actual response.",
+  "Tick the box if the request includes credentials, such as cookies.",
+  "Read whether a preflight is needed and the reason the response would be accepted or blocked."
+ ],
+ "faq": [
+  {
+   "q": "When does the browser send a preflight?",
+   "a": "For non-simple requests: methods other than GET, HEAD or POST, custom headers, or content types other than form or plain text. The browser sends an OPTIONS request first to ask permission."
+  },
+  {
+   "q": "Why does a wildcard origin fail with credentials?",
+   "a": "When credentials are included, the server must name the exact origin and send Allow-Credentials true. A wildcard for origin, headers or methods is rejected by the browser in that case."
+  },
+  {
+   "q": "Can this tool fix CORS for me?",
+   "a": "No, CORS is enforced by the browser and configured on the server. The tool shows which header is wrong, and you then change the server or proxy configuration."
+  }
+ ],
+ "related": [
+  "http-headers-analyzer",
+  "security-headers-generator",
+  "http-methods-headers",
+  "http-cache-control-tester",
+  "cache-control-builder",
+  "http-wire-format"
+ ],
+ "keywords": [
+  "cors preflight checker",
+  "cors error debugger",
+  "cors options request",
+  "access-control-allow-origin tester",
+  "why is my cors request blocked",
+  "free cors tool"
+ ]
+}

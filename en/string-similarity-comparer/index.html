@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free String Similarity Comparer: Jaro-Winkler, Dice, Cosine | Free Tools</title>
+<meta name="description" content="Compare two strings with Levenshtein, Jaro, Jaro-Winkler, Dice, Jaccard, cosine and LCS scores side by side. Free, runs locally.">
+<link rel="canonical" href="https://tools.sitefig.net/en/string-similarity-comparer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/string-similarity-comparer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/string-similarity-comparer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free String Similarity Comparer: Jaro-Winkler, Dice, Cosine | Free Tools">
+<meta property="og:description" content="Compare two strings with Levenshtein, Jaro, Jaro-Winkler, Dice, Jaccard, cosine and LCS scores side by side. Free, runs locally.">
+<meta property="og:url" content="https://tools.sitefig.net/en/string-similarity-comparer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free String Similarity Comparer: Jaro-Winkler, Dice, Cosine | Free Tools">
+<meta name="twitter:description" content="Compare two strings with Levenshtein, Jaro, Jaro-Winkler, Dice, Jaccard, cosine and LCS scores side by side. Free, runs locally.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"String Similarity Comparer (Jaro-Winkler, Dice, Cosine)","url":"https://tools.sitefig.net/en/string-similarity-comparer/","description":"Compare two strings with Levenshtein, Jaro, Jaro-Winkler, Dice, Jaccard, cosine and LCS scores side by side. Free, runs locally.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Enter the two strings.","Choose whether to ignore case and collapse whitespace.","Compare the scores in the table.","Pick the measure that suits your data and set your own threshold."],"keywords":"string similarity, jaro winkler calculator, dice coefficient calculator, compare strings similarity","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Text","item":"https://tools.sitefig.net/en/#text"},{"@type":"ListItem","position":3,"name":"String Similarity Comparer (Jaro-Winkler, Dice, Cosine)","item":"https://tools.sitefig.net/en/string-similarity-comparer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which score should I use for names?","acceptedAnswer":{"@type":"Answer","text":"Jaro-Winkler is a common choice for short names. Test it on your own data and set a threshold from examples."}},{"@type":"Question","name":"Why are bigram scores 0 for one-letter strings?","acceptedAnswer":{"@type":"Answer","text":"A single character has no pairs of letters, so there is nothing to compare unless the strings are equal."}},{"@type":"Question","name":"Are the scores comparable to each other?","acceptedAnswer":{"@type":"Answer","text":"Roughly, since all run from 0 to 1, but they measure different things. Compare scores of one measure across pairs."}},{"@type":"Question","name":"Is there a length limit?","acceptedAnswer":{"@type":"Answer","text":"5000 characters per string."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#text">Text</a></li><li><span aria-current="page">String Similarity Comparer (Jaro-Winkler, Dice, Cosine)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>String Similarity Comparer (Jaro-Winkler, Dice, Cosine)</h1>
+<p class="lede">Scores two strings with ten common similarity measures at once so you can see how they differ.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="string-similarity-comparer" data-module="new09"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>No single similarity score fits every job. Jaro-Winkler suits short names because it rewards a shared start. Dice and cosine on letter pairs suit longer text. Edit distance is easy to explain but harsh on long strings.</p>
+<p>Paste two strings and see all scores from 0 to 1 side by side, each with a one-line description of what it measures. The Jaro-Winkler scores use the usual prefix length of 4 and scale of 0.1, and match the published values for MARTHA and MARHTA.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Enter the two strings.</li><li>Choose whether to ignore case and collapse whitespace.</li><li>Compare the scores in the table.</li><li>Pick the measure that suits your data and set your own threshold.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which score should I use for names?</summary><p>Jaro-Winkler is a common choice for short names. Test it on your own data and set a threshold from examples.</p></details>
+<details><summary>Why are bigram scores 0 for one-letter strings?</summary><p>A single character has no pairs of letters, so there is nothing to compare unless the strings are equal.</p></details>
+<details><summary>Are the scores comparable to each other?</summary><p>Roughly, since all run from 0 to 1, but they measure different things. Compare scores of one measure across pairs.</p></details>
+<details><summary>Is there a length limit?</summary><p>5000 characters per string.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/levenshtein-calculator/"><span class="link-card__title">Levenshtein Distance Calculator (Edit Script and Alignment)</span><span class="link-card__desc">Edit distance between two strings with the exact insertions, deletions and substitutions, plus an aligned view. Also Damerau (adjacent swap) and indel (LCS) distance.</span></a></li><li><a class="link-card" href="/en/text-similarity-checker/"><span class="link-card__title">Text Similarity &amp; Duplicate Content Checker</span><span class="link-card__desc">Compare two texts: word-shingle Jaccard, cosine similarity and the longest shared phrases. Local duplicate-content check, not a web plagiarism scan.</span></a></li><li><a class="link-card" href="/en/fuzzy-search-playground/"><span class="link-card__title">Fuzzy Search Playground</span><span class="link-card__desc">Try fuzzy matching on your own word list: fzf-style subsequence scoring, typo-tolerant edit distance, or trigram similarity. Ranked results with matched letters marked.</span></a></li><li><a class="link-card" href="/en/embedding-similarity/"><span class="link-card__title">Embedding Vector Similarity</span><span class="link-card__desc">Compare embedding vectors you paste (JSON arrays or numbers, one vector per line): cosine similarity, dot product, Euclidean and Manhattan distance, plus a similarity matrix and best matches for several vectors. It does not create embeddings.</span></a></li><li><a class="link-card" href="/en/text-diff/"><span class="link-card__title">Text Diff</span><span class="link-card__desc">Compare two texts line by line or word by word, unified-style output.</span></a></li><li><a class="link-card" href="/en/keyword-list-cleaner/"><span class="link-card__title">Keyword List Cleaner: Remove Duplicates, Stop Words and Near-Duplicates</span><span class="link-card__desc">Cleans a keyword list: lowercase, trim, strip symbols, drop exact duplicates, optionally drop stop words and near-duplicates (same words in another order, simple plurals).</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

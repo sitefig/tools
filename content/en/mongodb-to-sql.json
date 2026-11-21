@@ -1,0 +1,45 @@
+{
+ "id": "mongodb-to-sql",
+ "seoTitle": "Free MongoDB Query to SQL Converter Online",
+ "metaDescription": "Translate MongoDB find, aggregate, insert, update and delete queries into SQL for PostgreSQL, MySQL or SQLite. Free, runs in your browser.",
+ "intro": "Translates MongoDB shell queries into SQL: find with operators like $in, $gt and $or, projection, sort, skip and limit, inserts, updates, deletes and simple aggregate pipelines for PostgreSQL, MySQL or SQLite.",
+ "why": "People moving between document and relational databases keep running into the same translation problem. A filter document with $or, $in and a regular expression is compact, but the SQL equivalent takes time to write. This tool reads the shell query and writes SQL for the dialect you pick: $and and $or groups, $in, comparison operators, $regex as LIKE or REGEXP, $exists, projection, sort, skip and limit, plus counting, distinct, inserts, updates with $set, $inc and $unset, deletes and simple pipelines with $match, $group, $lookup and $project. The query is parsed as text and never executed. Real collections are rarely shaped like tables, so treat the SQL as a draft. It runs in your browser.",
+ "howTo": [
+  "Paste a MongoDB shell query, such as db.users.find({...}), into the input box.",
+  "Choose the SQL dialect: PostgreSQL, MySQL or SQLite.",
+  "Copy the SQL and adjust table and column names to your schema."
+ ],
+ "faq": [
+  {
+   "q": "Which operations can it translate?",
+   "a": "find and findOne, countDocuments, distinct, insertOne and insertMany, updateOne and updateMany, deleteOne and deleteMany, and simple aggregate pipelines."
+  },
+  {
+   "q": "How are regular expressions translated?",
+   "a": "Simple patterns become LIKE where possible, and other patterns use the dialect's regular expression operator, such as REGEXP in MySQL. Check complex patterns by hand."
+  },
+  {
+   "q": "Does it run the query?",
+   "a": "No. The shell query is only parsed as text and never executed, and no database is contacted at any point, so you can paste queries from production logs without any side effects."
+  },
+  {
+   "q": "What happens to nested documents?",
+   "a": "Dotted paths and embedded documents have no direct SQL equivalent, so you may need to map them to columns or JSON operators yourself."
+  }
+ ],
+ "related": [
+  "sql-to-mongodb",
+  "mongodb-aggregate-builder",
+  "sql-explainer",
+  "json-to-sql",
+  "sql-dialect-converter",
+  "sql-format"
+ ],
+ "keywords": [
+  "mongodb to sql",
+  "mongo query to sql converter",
+  "translate mongodb find to sql",
+  "free mongodb sql translator",
+  "aggregate pipeline to sql"
+ ]
+}

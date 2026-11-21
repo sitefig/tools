@@ -1,0 +1,45 @@
+{
+ "id": "redis-command-generator",
+ "seoTitle": "Free Redis Command Generator for redis-cli and Clients",
+ "metaDescription": "Build correct Redis commands for strings, hashes, lists, sets, sorted sets, streams and locks, as redis-cli, ioredis, node-redis, redis-py or go-redis. Free.",
+ "intro": "Builds Redis commands such as SET with EX and NX, hashes, lists, sets, sorted sets, streams, SCAN and PUBLISH, and outputs them for redis-cli, ioredis, node-redis, redis-py or go-redis.",
+ "why": "Redis commands are short but easy to get subtly wrong: the order of SET options, the format of ZADD arguments, whether a lock needs NX and PX, or how to pass a pattern to SCAN. Looking them up on every use slows you down, and translating a command into the call style of your client library is another small step where mistakes happen. Pick the command here, fill in the key, values, expiry and flags, and get the command as redis-cli input or as code for the common clients. The client snippets use each library's generic raw-command call, which works for any command, so they always match what redis-cli would run. Nothing connects to a Redis server; the commands are only generated in your browser.",
+ "howTo": [
+  "Choose the command, such as HSET, ZADD or SET lock, and enter the key and a TTL if needed.",
+  "Type the values: a single value, or one item per line (\"field value\" or \"score member\" where required).",
+  "Pick redis-cli or a client library and copy the generated command."
+ ],
+ "faq": [
+  {
+   "q": "Does it connect to my Redis server?",
+   "a": "No. It only builds text. Nothing is sent anywhere, so you can use key names and values from real systems without exposing them, then run the command yourself."
+  },
+  {
+   "q": "What does the lock command do?",
+   "a": "It generates SET with NX and PX so the key is set only if it does not exist and expires after the time you give. That is the simple single-instance lock pattern; it is not a full distributed locking algorithm."
+  },
+  {
+   "q": "How are the client snippets written?",
+   "a": "Each snippet calls the library's generic command method with the command split into arguments. This works for every command and avoids differences between helper method names."
+  },
+  {
+   "q": "Which commands are included?",
+   "a": "SET variants, GET, DEL, EXPIRE, TTL, INCRBY, hash, list, set and sorted set commands, XADD, PUBLISH and SCAN. For anything else, write it by hand in redis-cli."
+  }
+ ],
+ "related": [
+  "redis-lua-script-generator",
+  "cron-generator",
+  "json-format",
+  "curl-builder",
+  "postgres-connection-builder",
+  "git-command-builder"
+ ],
+ "keywords": [
+  "redis command generator",
+  "redis cli command builder",
+  "redis set nx ex example",
+  "free redis command tool",
+  "ioredis command generator"
+ ]
+}

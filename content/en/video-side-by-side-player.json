@@ -1,0 +1,45 @@
+{
+ "id": "video-side-by-side-player",
+ "seoTitle": "Synchronized Video Comparison Player: Two Videos Side by Side",
+ "metaDescription": "Play two videos next to each other with one play, seek and speed control. Compare encodes or edits. Private, browser only.",
+ "intro": "Plays two videos side by side with shared controls, an offset field, speed choice, frame stepping and a choice of which one is heard.",
+ "why": "To compare two encodes, two edits or two takes you need them in the same position at the same time. The first video drives the clock and the second follows, corrected when it drifts by more than a tenth of a second.\n\nUse the offset to line up videos that start at different moments. Browsers cannot guarantee frame-exact sync, so use the frame step buttons for fine checks.",
+ "howTo": [
+  "Choose Video A and Video B.",
+  "Set the offset in seconds if B starts earlier or later.",
+  "Press Play, or drag the position slider.",
+  "Use Frame + and Frame - to compare single frames."
+ ],
+ "faq": [
+  {
+   "q": "Are they frame accurate?",
+   "a": "Close, within a tenth of a second while playing. Pause and step for exact comparisons."
+  },
+  {
+   "q": "Which sound is played?",
+   "a": "You choose A, B or none."
+  },
+  {
+   "q": "Does it upload?",
+   "a": "No."
+  },
+  {
+   "q": "Can I use different lengths?",
+   "a": "Yes. The slider runs to the longer length."
+  }
+ ],
+ "related": [
+  "video-metadata-inspector",
+  "video-compressor",
+  "video-format-converter",
+  "image-diff",
+  "pdf-compare",
+  "mp4-box-inspector"
+ ],
+ "keywords": [
+  "compare two videos",
+  "side by side video player",
+  "video diff",
+  "encoding quality comparison"
+ ]
+}

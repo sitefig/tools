@@ -1,0 +1,46 @@
+{
+ "id": "aes-decrypt",
+ "seoTitle": "Free AES-256-GCM Text Decryption Online",
+ "metaDescription": "Decrypt base64 text made by the AES-GCM Encrypt tool using the same password. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Paste the base64 output from the AES-GCM Encrypt tool, enter the password and read the original text. A wrong password or changed data is reported as a failure.",
+ "why": "You have received an encrypted note and the password through another channel, or you stored a snippet earlier and need it back. This tool reverses the encrypt tool on this site: it reads the version byte, iteration count, salt and nonce from the start of the data, derives the key from your password and decrypts.\n\nAES-GCM is authenticated, so the result is either the exact original or an error. There is no partial output when the password is wrong or a character was altered in transit. That is useful for spotting copy-and-paste damage, such as a missing line or an extra space. Decryption runs in your browser with WebCrypto, so neither the ciphertext nor the password is uploaded.",
+ "howTo": [
+  "Paste the base64 ciphertext into the input box.",
+  "Enter the exact password in the options.",
+  "Run the tool and wait a moment while the key is derived.",
+  "Read the decrypted text, or check the password and data if you get an error."
+ ],
+ "faq": [
+  {
+   "q": "Can it decrypt data from other tools?",
+   "a": "No. It only reads the format produced by the AES-GCM Encrypt tool on this site. Data from other programs has a different layout and will be rejected as an unrecognised format."
+  },
+  {
+   "q": "Why do I see decryption failed?",
+   "a": "Either the password is wrong, or the data was changed or truncated. GCM authentication cannot tell the two apart, so check both. Whitespace in base64 is ignored, but missing characters are not."
+  },
+  {
+   "q": "Does it limit iteration counts?",
+   "a": "Yes. It accepts counts between 1,000 and 5 million from the header, to prevent absurd values from freezing the page. Data from the companion encrypt tool uses 600,000."
+  },
+  {
+   "q": "Are the password and text sent anywhere?",
+   "a": "No. Decryption is done locally with the browser WebCrypto API. Neither the ciphertext nor the password is uploaded or stored, and closing the tab discards them."
+  }
+ ],
+ "related": [
+  "aes-encrypt",
+  "pbkdf2-key-derivation",
+  "base64-decode",
+  "aes-modes-demo",
+  "hmac-generator",
+  "password-strength"
+ ],
+ "keywords": [
+  "aes decrypt online",
+  "aes-gcm decrypt tool",
+  "decrypt text with password",
+  "browser decryption tool",
+  "decrypt base64 aes"
+ ]
+}

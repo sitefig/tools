@@ -1,0 +1,38 @@
+{
+ "id": "html-image-extractor",
+ "seoTitle": "Image Extractor from HTML: img, srcset, og:image, CSS, Alt Check",
+ "metaDescription": "Find every image reference in pasted HTML: img, srcset, picture sources, og:image, icons, posters, CSS backgrounds and JSON-LD, with alt and size flags.",
+ "intro": "List all images a page references and spot missing alt text, missing dimensions and lazy-loading gaps.",
+ "why": "Images drive both SEO and layout shift. This tool lists every image reference in pasted HTML: img tags with alt text, srcset and picture candidates, og:image and twitter:image, icons, video posters, CSS background URLs and JSON-LD images. For img tags it flags missing alt attributes, empty alt (fine only for decorative images), missing width and height (a cause of layout shift) and absent loading=\"lazy\".\n\nIt cannot download or measure files, because a web page cannot fetch other sites. Open or save the URLs yourself, or use the Image SEO audit for on-page rules.",
+ "howTo": [
+  "Paste the page HTML and the page URL.",
+  "Run the extractor.",
+  "Fix the flagged images and copy the URL list."
+ ],
+ "faq": [
+  {
+   "q": "Can it download the images?",
+   "a": "No, downloads from other sites are blocked in a web page. It lists the URLs."
+  },
+  {
+   "q": "Why flag missing width and height?",
+   "a": "Without them the browser cannot reserve space and the page shifts when images load."
+  },
+  {
+   "q": "Does the first image need lazy loading?",
+   "a": "No. Lazy loading the main hero image slows the largest contentful paint."
+  }
+ ],
+ "related": [
+  "image-seo",
+  "html-url-extractor",
+  "image-info",
+  "meta-analyzer",
+  "core-web-vitals-grader"
+ ],
+ "keywords": [
+  "extract images from html",
+  "image alt text audit",
+  "srcset extractor"
+ ]
+}

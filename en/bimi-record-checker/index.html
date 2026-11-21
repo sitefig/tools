@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free BIMI Record Checker: default._bimi TXT and DMARC Needs | Free Tools</title>
+<meta name="description" content="Check a BIMI TXT record for tags, https links and SVG file name, and your DMARC policy against BIMI needs. Free and offline.">
+<link rel="canonical" href="https://tools.sitefig.net/en/bimi-record-checker/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/bimi-record-checker/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/bimi-record-checker/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free BIMI Record Checker: default._bimi TXT and DMARC Needs | Free Tools">
+<meta property="og:description" content="Check a BIMI TXT record for tags, https links and SVG file name, and your DMARC policy against BIMI needs. Free and offline.">
+<meta property="og:url" content="https://tools.sitefig.net/en/bimi-record-checker/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free BIMI Record Checker: default._bimi TXT and DMARC Needs | Free Tools">
+<meta name="twitter:description" content="Check a BIMI TXT record for tags, https links and SVG file name, and your DMARC policy against BIMI needs. Free and offline.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"BIMI Record Checker (default._bimi TXT)","url":"https://tools.sitefig.net/en/bimi-record-checker/","description":"Check a BIMI TXT record for tags, https links and SVG file name, and your DMARC policy against BIMI needs. Free and offline.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Look up the TXT record at default._bimi.yourdomain with your DNS tool.","Paste it into the first box.","Optionally paste your _dmarc TXT record into the second box.","Fix every PROBLEM line and read the REVIEW lines."],"keywords":"bimi checker, bimi record validator, bimi dmarc requirements","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Network & HTTP","item":"https://tools.sitefig.net/en/#network-and-http"},{"@type":"ListItem","position":3,"name":"BIMI Record Checker (default._bimi TXT)","item":"https://tools.sitefig.net/en/bimi-record-checker/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Where is the BIMI record published?","acceptedAnswer":{"@type":"Answer","text":"As a TXT record at default._bimi.\u003cyour domain>, unless you use another selector."}},{"@type":"Question","name":"Which DMARC policy is needed?","acceptedAnswer":{"@type":"Answer","text":"Quarantine (with pct=100) or reject. A policy of none does not qualify."}},{"@type":"Question","name":"Do I need a VMC or CMC?","acceptedAnswer":{"@type":"Answer","text":"Some mailbox providers require one. The a= tag points to it. Check the rules of the providers you care about."}},{"@type":"Question","name":"Does the tool check the SVG?","acceptedAnswer":{"@type":"Answer","text":"No. It only checks the link. The file must be a valid SVG Tiny PS profile."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#network-and-http">Network &amp; HTTP</a></li><li><span aria-current="page">BIMI Record Checker (default._bimi TXT)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>BIMI Record Checker (default._bimi TXT)</h1>
+<p class="lede">Checks a BIMI TXT record for the required v=BIMI1 tag, an https logo link to an SVG file and an optional evidence link. A second box checks your DMARC record against what BIMI asks for.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="bimi-record-checker" data-module="new10"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>BIMI lets mailbox providers show your logo next to authenticated mail. It fails quietly: a wrong tag order, an http link or a DMARC policy of p=none means no logo, and nobody tells you why.</p>
+<p>This page checks the record text and the DMARC policy against the BIMI Internet-Draft. It cannot fetch your SVG or certificate, so it cannot confirm the logo file format or that your certificate is valid. Mailbox providers also add rules of their own.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Look up the TXT record at default._bimi.yourdomain with your DNS tool.</li><li>Paste it into the first box.</li><li>Optionally paste your _dmarc TXT record into the second box.</li><li>Fix every PROBLEM line and read the REVIEW lines.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Where is the BIMI record published?</summary><p>As a TXT record at default._bimi.&lt;your domain&gt;, unless you use another selector.</p></details>
+<details><summary>Which DMARC policy is needed?</summary><p>Quarantine (with pct=100) or reject. A policy of none does not qualify.</p></details>
+<details><summary>Do I need a VMC or CMC?</summary><p>Some mailbox providers require one. The a= tag points to it. Check the rules of the providers you care about.</p></details>
+<details><summary>Does the tool check the SVG?</summary><p>No. It only checks the link. The file must be a valid SVG Tiny PS profile.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/mta-sts-tls-rpt-checker/"><span class="link-card__title">MTA-STS and TLS-RPT Record Checker</span><span class="link-card__desc">Paste your _mta-sts and _smtp._tls TXT records and the mta-sts.txt policy file and check version, id, mode, mx patterns, max_age and report addresses.</span></a></li><li><a class="link-card" href="/en/dmarc-record-analyzer/"><span class="link-card__title">DMARC Record Analyzer (Explain a TXT Value)</span><span class="link-card__desc">Paste a DMARC TXT record and get every tag explained: policy, subdomain policy, percentage, alignment, report addresses, plus warnings such as p=none or pct below 100.</span></a></li><li><a class="link-card" href="/en/dkim-record-analyzer/"><span class="link-card__title">DKIM Record Analyzer (Key Type and RSA Key Length)</span><span class="link-card__desc">Paste a DKIM TXT record and read its tags, find the RSA key size or Ed25519 key, spot test mode and revoked keys, and get a note when the key is shorter than 2048 bits.</span></a></li><li><a class="link-card" href="/en/dns-spf-record-flattener/"><span class="link-card__title">SPF Record Flattener (offline)</span><span class="link-card__desc">Flatten an SPF record by inlining include:/redirect= records that you paste (lines &quot;domain: v=spf1 ...&quot;), de-duplicating ip4/ip6, counting DNS lookups against the limit of 10, and splitting long TXT strings. The tool never queries DNS: resolve each include yourself (dig +short TXT domain).</span></a></li><li><a class="link-card" href="/en/email-header-analyzer/"><span class="link-card__title">Email Header Analyzer (Received Path, SPF, DKIM, DMARC)</span><span class="link-card__desc">Paste full email headers to trace the route (each Received hop with delay), read SPF, DKIM and DMARC results, check From / Return-Path alignment and spot spoofing signs.</span></a></li><li><a class="link-card" href="/en/dns-record-generator/"><span class="link-card__title">DNS Zone Record Generator</span><span class="link-card__desc">Write DNS records as simple lines (TYPE name value ...) and get a validated BIND zone file, Route 53 change batch JSON or a generic JSON list. Supports A, AAAA, CNAME, MX, TXT (auto-split at 255 bytes), NS, SRV, CAA, PTR. Not a resolver: nothing is looked up or published.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

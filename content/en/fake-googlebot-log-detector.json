@@ -1,0 +1,44 @@
+{
+ "id": "fake-googlebot-log-detector",
+ "seoTitle": "Fake Googlebot Detector for Access Logs",
+ "metaDescription": "Find log lines that claim to be Googlebot and flag IPs outside Google's published ranges. Free, your log stays in the browser.",
+ "intro": "Lists IPs that use a Google crawler user-agent and, with Google's ranges pasted, flags the ones that do not belong.",
+ "why": "Scrapers often use the Googlebot user-agent because many sites let it through. Real Googlebot comes from Google's published IP ranges.\n\nPaste your log and Google's JSON ranges and the tool lists every IP that claims to be Google with the verdict. Without ranges it lists the IPs and tells you how to verify them with reverse DNS. Use a fresh copy of the ranges, as a stale file gives false alarms.",
+ "howTo": [
+  "Paste log lines.",
+  "Paste Google's common-crawlers.json or CIDR lines.",
+  "Read the range check per IP.",
+  "Block fakes at the firewall."
+ ],
+ "faq": [
+  {
+   "q": "Which Google files?",
+   "a": "common-crawlers.json, special-crawlers.json and user-triggered-fetchers.json are listed on Google's verification page."
+  },
+  {
+   "q": "Without ranges?",
+   "a": "You get the IP list and the reverse DNS procedure."
+  },
+  {
+   "q": "Could a real Googlebot be flagged?",
+   "a": "If your range file is outdated, yes."
+  },
+  {
+   "q": "Is the log uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "crawler-ip-range-checker",
+  "bot-reverse-dns-verifier",
+  "access-log-analyzer",
+  "bot-firewall-rule-builder",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "fake googlebot",
+  "detect fake googlebot logs",
+  "googlebot spoofing",
+  "verify googlebot in log"
+ ]
+}

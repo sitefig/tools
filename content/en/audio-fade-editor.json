@@ -1,0 +1,45 @@
+{
+ "id": "audio-fade-editor",
+ "seoTitle": "Audio Fade In and Fade Out Tool, Choose the Curve",
+ "metaDescription": "Add a fade in and a fade out to an audio file with linear, cosine, equal-power or logarithmic curves. Free, private, exports WAV.",
+ "intro": "Applies a fade at the start and a fade at the end of an audio file, with a choice of curve, and saves the result as WAV.",
+ "why": "A hard start or stop makes clicks, and a song that ends mid-note sounds unfinished. A fade fixes both. The shape matters: a straight line in amplitude sounds as if it drops late, while a logarithmic curve sounds even because the ear judges level on a log scale.\n\nPick linear for sound effects, cosine for a smooth S-shape, equal power when blending clips, and logarithmic for natural music fades. The fade lengths are in seconds and the file length does not change.",
+ "howTo": [
+  "Choose an audio file.",
+  "Enter the fade-in and fade-out lengths in seconds.",
+  "Pick a curve.",
+  "Press Run and download the WAV."
+ ],
+ "faq": [
+  {
+   "q": "Which curve sounds most natural?",
+   "a": "Logarithmic for music endings. It starts at -40 dB and rises evenly to the ear."
+  },
+  {
+   "q": "Can I fade only one end?",
+   "a": "Yes, set the other length to 0."
+  },
+  {
+   "q": "Does the file get shorter?",
+   "a": "No. The fades happen inside the existing length."
+  },
+  {
+   "q": "What about crossfades?",
+   "a": "Use the audio joiner, which overlaps two clips with an equal-power crossfade."
+  }
+ ],
+ "related": [
+  "audio-joiner",
+  "audio-trimmer",
+  "ringtone-maker",
+  "loudness-normalizer",
+  "silence-remover",
+  "audio-reverser"
+ ],
+ "keywords": [
+  "audio fade in fade out",
+  "add fade to mp3",
+  "fade out music online",
+  "audio fade curve"
+ ]
+}

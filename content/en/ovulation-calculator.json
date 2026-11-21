@@ -1,0 +1,45 @@
+{
+ "id": "ovulation-calculator",
+ "seoTitle": "Ovulation Calculator (Fertile Window by Cycle Length)",
+ "metaDescription": "Estimate ovulation and the fertile window for the next cycles from the first day of your last period, cycle length and luteal phase length.",
+ "intro": "Estimate ovulation and the fertile window from your cycle.",
+ "why": "Enter the first day of your last period, your usual cycle length and the luteal phase length (14 days is the common default). The tool places ovulation at cycle length minus luteal days after the period starts, and marks the fertile window as the 5 days before ovulation, the day itself and the day after. It lists several cycles.\n\nThis is a calendar estimate, and cycles vary from month to month. It is not birth control. Ovulation tests, temperature tracking or a doctor give better answers if you are trying to conceive.",
+ "howTo": [
+  "Enter the first day of your last period.",
+  "Enter your average cycle length.",
+  "Keep 14 days for the luteal phase or set your own.",
+  "Read the dates for each cycle."
+ ],
+ "faq": [
+  {
+   "q": "How accurate is it?",
+   "a": "It is rough. Ovulation can move by several days even in regular cycles."
+  },
+  {
+   "q": "Can I use it as contraception?",
+   "a": "No. It is not reliable for preventing pregnancy."
+  },
+  {
+   "q": "Is this medical advice?",
+   "a": "No. It is an estimate from a published formula. A doctor or dietitian can judge your own case far better."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "due-date-calculator",
+  "sleep-cycle-calculator",
+  "child-height-predictor",
+  "fasting-window-planner",
+  "bmi-calculator",
+  "water-intake"
+ ],
+ "keywords": [
+  "ovulation calculator",
+  "fertile window calculator",
+  "ovulation date",
+  "cycle calculator"
+ ]
+}

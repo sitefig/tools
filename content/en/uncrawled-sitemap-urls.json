@@ -1,0 +1,45 @@
+{
+ "id": "uncrawled-sitemap-urls",
+ "seoTitle": "Sitemap URLs Never Requested by Bots: Log Coverage Report",
+ "metaDescription": "List the sitemap URLs that no crawler requested in your access log, with crawl coverage per folder. Free, runs in your browser.",
+ "intro": "Shows which sitemap URLs received no bot request during the log period, grouped by folder, with a coverage percentage.",
+ "why": "A sitemap tells crawlers what you want crawled. The log tells you what they fetched. URLs that are in the first and absent from the second may have a discovery problem, a quality problem, or just a log that is too short.\n\nThe folder table shows where the gaps cluster, which usually points to a template, a weak internal link path or a blocked section. Bots visit rarely used URLs rarely, so a week of logs will list pages that a month of logs would cover. Any status code counts as a request here.",
+ "howTo": [
+  "Paste access log lines in the first box.",
+  "Paste the sitemap XML or a URL list in the second box.",
+  "Pick the bots to count.",
+  "Read the coverage by folder, then the list of uncrawled URLs."
+ ],
+ "faq": [
+  {
+   "q": "How long should the log period be?",
+   "a": "As long as you can get. Seven days is a minimum. Large sites often need a month to see every URL."
+  },
+  {
+   "q": "Does an uncrawled URL mean Google ignores it?",
+   "a": "No. It may simply not have been due for a visit. Compare with a longer log and with the URL Inspection tool."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench."
+  }
+ ],
+ "related": [
+  "orphan-page-finder",
+  "sitemap-url-extractor",
+  "sitemap-validator",
+  "sitemap-lastmod-timeline",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer"
+ ],
+ "keywords": [
+  "uncrawled sitemap urls",
+  "sitemap urls not crawled by googlebot",
+  "log file crawl coverage",
+  "sitemap crawl coverage report"
+ ]
+}

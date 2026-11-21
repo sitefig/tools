@@ -1,0 +1,45 @@
+{
+ "id": "analog-clock-reading-trainer",
+ "seoTitle": "Learn to Read an Analog Clock: Read It or Set It",
+ "metaDescription": "Children read the time on a clock face and type it, or set the hands with sliders to match a time, with instant feedback. Free.",
+ "intro": "Teaches analog clock reading in two modes: type the time shown on the clock, or move the hands to match a written time.",
+ "why": "Reading a clock needs two skills, and this page trains both. In Read mode a random time is drawn and the child types it as h:mm. In Set mode a time is written and the child moves the hour and minute sliders until the hands match.\n\nChoose quarter hours, five minutes or every minute to match the child's level. The sliders replace dragging the hands, so the clock can be set with a keyboard or a screen reader. The score counts correct answers in the session. Nothing is stored.",
+ "howTo": [
+  "Choose Read or Set mode and the minute precision.",
+  "In Read mode type the time shown; in Set mode move the sliders.",
+  "Press Check.",
+  "Press New time for the next question."
+ ],
+ "faq": [
+  {
+   "q": "What age is it for?",
+   "a": "It suits ages 5 to 9, but any learner can use it."
+  },
+  {
+   "q": "Are 24-hour times used?",
+   "a": "No, a 12-hour clock."
+  },
+  {
+   "q": "Why sliders instead of dragging?",
+   "a": "They work with keyboards and touch screens alike."
+  },
+  {
+   "q": "Is my score saved?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "multiplication-table-trainer",
+  "number-line-jumps",
+  "world-clock",
+  "stopwatch",
+  "countdown-timer",
+  "math-worksheet-generator"
+ ],
+ "keywords": [
+  "learn to tell time clock",
+  "analog clock practice",
+  "clock reading game",
+  "telling time for kids"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "eaa-en301549-web-checklist",
+ "seoTitle": "EAA and EN 301 549 Web Content Checklist (Clause 9 Summary)",
+ "metaDescription": "Mark each EN 301 549 clause 9 web requirement (WCAG 2.1 A and AA) as met, partial, not met or n/a and get a readiness summary.",
+ "intro": "Summarises your status for each EN 301 549 clause 9 web requirement.",
+ "why": "The European Accessibility Act points to EN 301 549, whose web clause mirrors WCAG 2.1 A and AA.\n\nPaste a status per clause and get counts, a table by principle and the open items. You can also print a blank checklist. It covers web content only, not documents, software or functional performance. The mapping was derived from the WCAG text and prior knowledge of EN 301 549 V3.2.1; the standard was not available to check.",
+ "howTo": [
+  "Choose the blank checklist to copy it.",
+  "Add met, partial, not or na after each clause.",
+  "Switch to the summary and paste your lines.",
+  "Work through the open items."
+ ],
+ "faq": [
+  {
+   "q": "Is this a compliance assessment?",
+   "a": "No. It records your own judgement."
+  },
+  {
+   "q": "Does the EAA apply to me?",
+   "a": "That depends on your products and services; ask a legal adviser."
+  },
+  {
+   "q": "Why not WCAG 2.2?",
+   "a": "EN 301 549 V3.2.1 refers to WCAG 2.1."
+  },
+  {
+   "q": "Is it uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "vpat-acr-builder",
+  "accessibility-statement-generator",
+  "wcag-success-criteria-explorer",
+  "a11y-html-check",
+  "aria-attribute-validator"
+ ],
+ "keywords": [
+  "eaa checklist",
+  "en 301 549 checklist",
+  "european accessibility act readiness"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "png-to-jpg-converter",
+ "seoTitle": "PNG to JPG Converter with Background Colour",
+ "metaDescription": "Convert PNG, WebP or other images to JPEG and choose the colour that fills transparent areas, since JPEG has no transparency. Set the quality and convert...",
+ "intro": "Convert PNG to JPG and pick the colour behind transparent areas.",
+ "why": "Drop in one or more images and choose the background colour and JPEG quality. JPEG has no transparency, so transparent pixels are filled with the colour you pick, white by default. Files are converted one by one in your browser.\n\nJPEG is lossy. Text, logos and sharp edges can show small artefacts at low quality, so keep the original PNG if you may need it again.",
+ "howTo": [
+  "Choose one or more images.",
+  "Set the background colour as a hex value.",
+  "Set the quality.",
+  "Download the JPEG files, or tick the ZIP box."
+ ],
+ "faq": [
+  {
+   "q": "Why is the background white?",
+   "a": "JPEG cannot store transparency. White is the default fill; change it to match your page."
+  },
+  {
+   "q": "Will the file get smaller?",
+   "a": "Usually, for photos. For flat graphics PNG can be smaller."
+  },
+  {
+   "q": "Does it keep EXIF data?",
+   "a": "No. Re-encoding drops metadata."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-format-converter",
+  "image-compressor",
+  "batch-image-optimizer",
+  "image-resizer",
+  "image-to-base64",
+  "png-quantizer"
+ ],
+ "keywords": [
+  "png to jpg",
+  "convert png to jpeg",
+  "png transparent background to jpg",
+  "batch png converter"
+ ]
+}

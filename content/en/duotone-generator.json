@@ -1,0 +1,45 @@
+{
+ "id": "duotone-generator",
+ "seoTitle": "Duotone Image Generator: Two-Color Photo Effect",
+ "metaDescription": "Map a photo between a shadow colour and a highlight colour for a duotone look. Free, browser only, the image is never uploaded.",
+ "intro": "Converts a photo to luminance and maps dark to your shadow colour and light to your highlight colour.",
+ "why": "Duotone images are common in posters and hero banners. Each pixel brightness is looked up between two colours. A contrast control lifts or flattens the mapping.\n\nThe luminance uses Rec. 709 weights on the gamma encoded values, a simple and common approach. The output is a PNG or JPG made locally.",
+ "howTo": [
+  "Choose an image.",
+  "Enter the shadow and highlight colours.",
+  "Adjust the contrast.",
+  "Run it and download the result."
+ ],
+ "faq": [
+  {
+   "q": "Which colours work best?",
+   "a": "A dark saturated colour for shadows and a bright warm or cool one for highlights."
+  },
+  {
+   "q": "Does it change image size?",
+   "a": "No. The output has the same pixel size."
+  },
+  {
+   "q": "Can I get transparency?",
+   "a": "PNG keeps any transparency flat; this tool outputs opaque pixels."
+  },
+  {
+   "q": "Is the image uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "image-filters",
+  "color-picker",
+  "image-compressor",
+  "mesh-gradient-image",
+  "color-blindness-simulator",
+  "image-format-converter"
+ ],
+ "keywords": [
+  "duotone effect online",
+  "two color photo filter",
+  "duotone image maker",
+  "gradient map photo"
+ ]
+}

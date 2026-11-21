@@ -1,0 +1,45 @@
+{
+ "id": "palette-shuffler",
+ "seoTitle": "Palette Shuffler: Random Color Palettes with Locks",
+ "metaDescription": "Shuffle colour palettes and lock the colours you like. Pick analogous, complementary, triadic, pastel or dark styles. Free, local.",
+ "intro": "Generates a palette of two to ten colours. Lock any colour with its checkbox and shuffle the rest until the whole set works.",
+ "why": "Good palettes come from trial and error. Lock the colours you like and shuffle the others. The styles steer the random choice: analogous keeps hues close, complementary alternates opposites, triadic spreads them evenly, pastel and dark limit lightness.\n\nColours are made in OKLCH, so they have similar visual weight. The list under the swatches can be copied. Results are random, so keep a copy of ones you like.",
+ "howTo": [
+  "Choose a style and the number of colours.",
+  "Press Shuffle unlocked colours.",
+  "Tick Lock on colours you want to keep.",
+  "Keep shuffling, then copy the list."
+ ],
+ "faq": [
+  {
+   "q": "Can I type my own colour?",
+   "a": "Use the Palette Generator for a given base colour. This tool is for exploring."
+  },
+  {
+   "q": "Are the palettes accessible?",
+   "a": "Not guaranteed. Check text pairs with the Palette Contrast Matrix."
+  },
+  {
+   "q": "Is it truly random?",
+   "a": "It uses Math.random, which is fine for design exploration."
+  },
+  {
+   "q": "Why do some colours look washed out?",
+   "a": "Chroma is limited to stay in the sRGB range."
+  }
+ ],
+ "related": [
+  "palette-generator",
+  "color-harmony-wheel",
+  "palette-contrast-matrix",
+  "accessible-palette-fixer",
+  "palette-exporter",
+  "random-color-generator"
+ ],
+ "keywords": [
+  "color palette generator lock",
+  "random palette shuffle",
+  "palette shuffler",
+  "coolors alternative"
+ ]
+}

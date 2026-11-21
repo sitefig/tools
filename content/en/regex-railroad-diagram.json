@@ -1,0 +1,45 @@
+{
+ "id": "regex-railroad-diagram",
+ "seoTitle": "Free Regex Railroad Diagram Generator Online",
+ "metaDescription": "Turn a JavaScript regular expression into a railroad diagram. See alternatives, loops, groups and lookarounds drawn as a path. Free, runs locally.",
+ "intro": "Draws a regular expression as a railroad diagram so you can follow it like a map: boxes for literals and character classes, branches for alternatives, and loops for repeats.",
+ "why": "A regex is a dense line of symbols. A diagram shows the structure that the symbols hide: which parts are optional, what repeats and how many times, and which groups capture. That makes review and teaching much easier than reading the raw pattern.\n\nThis tool parses the pattern in your browser and draws it as an SVG. It follows JavaScript syntax, including named groups, lookahead and lookbehind, backreferences and Unicode escapes. Other regex dialects are close but not identical, so check unusual features against your own engine.",
+ "howTo": [
+  "Paste a regex, bare or in /pattern/flags form.",
+  "Read the diagram left to right. Branches are alternatives, loops are repeats.",
+  "Add flags in the extra flags box if the pattern needs them, such as u for \\p{...}.",
+  "Fix any syntax error shown and the diagram redraws."
+ ],
+ "faq": [
+  {
+   "q": "Which regex flavour does it follow?",
+   "a": "JavaScript. Most syntax is shared with other engines, but features such as possessive quantifiers, atomic groups and recursion are not JavaScript and will be reported as invalid."
+  },
+  {
+   "q": "Does it show what the regex matches?",
+   "a": "No. It shows the structure only. Use a regex tester with sample text to see actual matches."
+  },
+  {
+   "q": "What do the loop labels mean?",
+   "a": "A loop under a box means the box can repeat. The label gives the allowed count, such as 2-5 times. A bypass line above means the part is optional."
+  },
+  {
+   "q": "Is my pattern sent anywhere?",
+   "a": "No. The pattern is parsed and drawn in your browser."
+  }
+ ],
+ "related": [
+  "regex-tester",
+  "regex-explainer",
+  "regex-cheatsheet",
+  "regex-generator",
+  "redos-checker",
+  "regex-to-code"
+ ],
+ "keywords": [
+  "regex railroad diagram",
+  "regex visualizer",
+  "regex diagram generator",
+  "visualize regular expression"
+ ]
+}

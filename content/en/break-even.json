@@ -1,0 +1,46 @@
+{
+ "id": "break-even",
+ "seoTitle": "Free Break-Even Calculator: Units and Revenue Needed",
+ "metaDescription": "Find how many units and how much revenue you need to cover fixed costs, from price and variable cost per unit. Free break-even tool, runs in your browser.",
+ "intro": "Enter fixed costs, the price per unit and the variable cost per unit. The tool shows the contribution per unit, the break-even units and the break-even revenue.",
+ "why": "Before you launch a product, rent a stall or hire a freelancer, one question matters: how much do I have to sell before I stop losing money? The break-even point answers it. It separates costs that stay the same whatever you sell, such as rent, from costs that grow with each unit, such as materials. The gap between your price and the variable cost is the contribution each sale makes towards covering the fixed costs. This calculator reports that contribution, the break-even quantity rounded up to whole units, and the revenue it represents. It is a simple single-product model, so use it for sense-checking plans, and note that it runs locally in your browser.",
+ "howTo": [
+  "Enter your total fixed costs for the period.",
+  "Enter the selling price per unit and the variable cost per unit.",
+  "Read the contribution per unit, the break-even units and the break-even revenue."
+ ],
+ "faq": [
+  {
+   "q": "What counts as a fixed cost?",
+   "a": "Costs that do not change with the number of units sold in the period, such as rent, salaries, software subscriptions or insurance. Costs that rise with each sale, such as materials or packaging, are variable."
+  },
+  {
+   "q": "Why does the tool reject a price below the variable cost?",
+   "a": "If each unit sells for less than it costs to make, every sale deepens the loss and you never break even. The tool shows an error instead of an impossible answer."
+  },
+  {
+   "q": "Why are there two break-even unit numbers?",
+   "a": "The exact figure can be fractional, for example 333.3 units. The tool also shows the next whole number, since you cannot sell part of a unit."
+  },
+  {
+   "q": "Does it work for more than one product?",
+   "a": "Not directly. It assumes one price and one variable cost. For a mix of products, use an average price and cost weighted by expected sales."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "markup-margin",
+  "roi-calculator",
+  "startup-cost-calculator",
+  "discount-calculator",
+  "percentage-calculator"
+ ],
+ "keywords": [
+  "break even calculator",
+  "free break even calculator",
+  "break even point formula",
+  "break even units calculator",
+  "contribution margin calculator",
+  "break even analysis"
+ ]
+}

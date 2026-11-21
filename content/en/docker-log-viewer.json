@@ -1,0 +1,44 @@
+{
+ "id": "docker-log-viewer",
+ "seoTitle": "Docker Log Viewer: docker logs --timestamps Parser",
+ "metaDescription": "Parse docker logs output with timestamps into time, stream and message, with gaps between lines and level counts. Free, runs locally.",
+ "intro": "Reads timestamped docker logs, JSON-file driver lines and CRI lines and shows streams, gaps and levels.",
+ "why": "docker logs --timestamps puts an RFC 3339 time in front of each line. This tool uses it to show time between lines, so pauses and bursts stand out.\n\nPlain docker logs text does not say whether a line came from stdout or stderr. The stream is known only for JSON-file log files and CRI lines, and the summary says so when it is unknown.",
+ "howTo": [
+  "Run docker logs --timestamps NAME > app.log.",
+  "Paste the output or choose the file.",
+  "Filter by stream or text.",
+  "Read the longest gaps in the summary."
+ ],
+ "faq": [
+  {
+   "q": "Why is the stream unknown?",
+   "a": "docker logs prints both streams without marking them. Use the JSON log file in /var/lib/docker/containers for the stream."
+  },
+  {
+   "q": "Which levels are detected?",
+   "a": "Words such as ERROR, WARN and INFO in the message."
+  },
+  {
+   "q": "Does it work for compose logs?",
+   "a": "Compose prefixes lines with the service name; those lines are shown as plain message text."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. Parsing happens in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."
+  }
+ ],
+ "related": [
+  "kubectl-log-viewer",
+  "docker-compose-generator",
+  "dockerfile-linter",
+  "log-level-histogram",
+  "log-grep-context",
+  "multi-log-merger"
+ ],
+ "keywords": [
+  "docker logs viewer",
+  "docker logs timestamps",
+  "container log parser"
+ ]
+}

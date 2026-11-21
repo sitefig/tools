@@ -1,0 +1,45 @@
+{
+  "id": "pdf-dark-mode",
+  "seoTitle": "PDF Dark Mode Converter (Invert for Night Reading)",
+  "metaDescription": "Convert a PDF to a dark-background version: invert colours while keeping hues, or use plain invert or a warm sepia dark. Pages become images.",
+  "intro": "Read a white PDF comfortably at night.",
+  "why": "Pages are rendered with the built-in PDF renderer, the pixels are inverted (optionally rotating hues by 180 degrees so colours stay recognisable, using the same matrix as CSS invert plus hue-rotate) and the pages are rebuilt into a new PDF. Resolution and JPEG quality control size.\n\nBecause pages are stored as images, text can no longer be selected or searched and files may be larger. Keep the original for anything that needs real text. Images in the PDF are inverted too.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose the PDF and the style.",
+    "Pick pages, resolution and quality.",
+    "Download the dark copy.",
+    "Keep the original file."
+  ],
+  "faq": [
+    {
+      "q": "Does it keep the text?",
+      "a": "No, the result is page images."
+    },
+    {
+      "q": "Why is it big?",
+      "a": "Higher DPI makes bigger images; try 90 to 110 DPI."
+    },
+    {
+      "q": "Does it change colours?",
+      "a": "\"Invert, keep hues\" tries to keep colours recognisable; plain invert gives the negative."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "pdf-to-image",
+    "images-to-pdf",
+    "pdf-compare",
+    "pdf-redact",
+    "pdf-info",
+    "pdf-merge"
+  ],
+  "keywords": [
+    "pdf dark mode",
+    "invert pdf colors",
+    "night mode pdf",
+    "dark pdf"
+  ]
+}

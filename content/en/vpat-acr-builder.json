@@ -1,0 +1,43 @@
+{
+ "id": "vpat-acr-builder",
+ "seoTitle": "VPAT / ACR Builder: WCAG 2.2 Conformance Report Tables",
+ "metaDescription": "Enter a level and remarks per WCAG 2.2 criterion to get an Accessibility Conformance Report with Level A, AA and AAA tables in Markdown.",
+ "intro": "Builds a Markdown accessibility conformance report from per-criterion levels and remarks.",
+ "why": "Buyers ask for a VPAT or ACR. The tables are long but mechanical.\n\nWrite one line per criterion and the tool fills the Level A, AA and AAA tables for all 86 WCAG 2.2 criteria, marks missing ones as Not Evaluated, flags the new 2.2 criteria and counts the totals. Terms follow the ITI VPAT conventions; check the current official template before publishing.",
+ "howTo": [
+  "Fill in product, date and contact.",
+  "Write criterion, level and remarks per line.",
+  "Copy the Markdown tables.",
+  "Review against the official template."
+ ],
+ "faq": [
+  {
+   "q": "Which words are accepted?",
+   "a": "supports, partial, no, na and ne."
+  },
+  {
+   "q": "Is 4.1.1 included?",
+   "a": "No. It was removed in WCAG 2.2."
+  },
+  {
+   "q": "Does it test my site?",
+   "a": "No. It only formats your findings."
+  },
+  {
+   "q": "Is it uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "eaa-en301549-web-checklist",
+  "accessibility-statement-generator",
+  "wcag-success-criteria-explorer",
+  "a11y-html-check",
+  "contrast-checker"
+ ],
+ "keywords": [
+  "vpat builder",
+  "acr conformance report",
+  "wcag 2.2 vpat"
+ ]
+}

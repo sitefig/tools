@@ -1,0 +1,46 @@
+{
+ "id": "user-agent-string-list",
+ "seoTitle": "Free User-Agent String List - Browsers and Bots",
+ "metaDescription": "Browse common User-Agent strings for Chrome, Firefox, Safari, Edge, mobile, Googlebot, Bingbot, curl and more, with a quick filter. Free and instant.",
+ "intro": "A reference list of common User-Agent strings for browsers, search engine bots and command line tools. Type a word to filter the list.",
+ "why": "You need a realistic User-Agent when testing how a server responds to different browsers, checking whether a site serves other content to Googlebot, or setting a header in curl or a scraper. Finding a current, correctly formatted string means searching around and copying from random pages.\n\nThis list collects widely seen examples: Chrome, Firefox, Safari, Edge, Opera and Samsung Internet on desktop and mobile, major crawlers such as Googlebot, Bingbot, DuckDuckBot and Applebot, and tools such as curl, wget and python-requests. Type chrome, bot or android to narrow it down. The strings are examples that were current when the list was made, and browser versions move on, so update the version numbers if a test depends on them. The list is built into the page.",
+ "howTo": [
+  "Type a word such as chrome, android or bot in the filter box, or leave it blank for the full list.",
+  "Run the tool.",
+  "Find the entry you need.",
+  "Copy the string into your test, header or crawler setting."
+ ],
+ "faq": [
+  {
+   "q": "Are these strings current?",
+   "a": "They are realistic examples with recent version numbers, but browsers update every few weeks. For a test that depends on a specific version, edit the number or copy the string from your own browser."
+  },
+  {
+   "q": "Can I use a bot string to see what Googlebot sees?",
+   "a": "Changing the User-Agent shows what a server returns to that header only. It does not prove how Google renders the page, since real crawlers also come from known IP addresses. Use Search Console for real checks."
+  },
+  {
+   "q": "Why do all browsers say Mozilla/5.0?",
+   "a": "It is a historical compatibility token. Early sites served better pages to Netscape, so other browsers claimed to be Mozilla too, and the habit stuck. The useful details come later in the string."
+  },
+  {
+   "q": "Is spoofing a User-Agent allowed?",
+   "a": "Sending a different header is technically simple, but a site's terms may restrict automated access. Respect robots.txt and the terms of any site you test or crawl."
+  }
+ ],
+ "related": [
+  "user-agent-parser",
+  "browser-info",
+  "http-headers-analyzer",
+  "robots-tester",
+  "ai-bot-robots-builder",
+  "curl-builder"
+ ],
+ "keywords": [
+  "user agent string list",
+  "common user agent strings",
+  "googlebot user agent",
+  "chrome user agent string",
+  "free user agent reference"
+ ]
+}

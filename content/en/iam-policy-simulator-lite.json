@@ -1,0 +1,44 @@
+{
+ "id": "iam-policy-simulator-lite",
+ "seoTitle": "IAM Policy Simulator Lite: Is This Action Allowed?",
+ "metaDescription": "Paste an AWS IAM policy and action and resource pairs to see allow or deny using explicit deny, allow and implicit deny. Offline, conditions listed.",
+ "intro": "Evaluates action and resource requests against one IAM identity policy and shows which statement decided each one.",
+ "why": "Checking a policy by reading it is error prone once wildcards and Deny statements mix. This page applies the basic evaluation rule: an explicit Deny wins, then an Allow, otherwise the request is denied by default.\n\nIt models one identity policy only. Conditions are shown but not evaluated, so results with a Condition say review. Resource policies, boundaries and SCPs are out of scope. The AWS policy simulator is the real answer.",
+ "howTo": [
+  "Paste the policy JSON.",
+  "Write one request per line: action then resource ARN.",
+  "Read the verdict and the matching statement.",
+  "Confirm important cases in the AWS simulator."
+ ],
+ "faq": [
+  {
+   "q": "Are conditions evaluated?",
+   "a": "No. A match with a Condition is reported as review."
+  },
+  {
+   "q": "Do wildcards work?",
+   "a": "Yes, * and ? in actions and resources. Actions are case-insensitive, resources are case-sensitive."
+  },
+  {
+   "q": "What about NotAction?",
+   "a": "It is supported for Allow and Deny statements."
+  },
+  {
+   "q": "Is the policy uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "aws-iam-policy-linter",
+  "aws-iam-policy-builder",
+  "aws-arn-parser",
+  "cloudtrail-event-viewer",
+  "rego-snippet-helper",
+  "json-format"
+ ],
+ "keywords": [
+  "iam policy simulator offline",
+  "test iam policy",
+  "iam allow deny evaluation"
+ ]
+}

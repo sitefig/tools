@@ -1,0 +1,43 @@
+{
+ "id": "graphviz-dot-lite",
+ "seoTitle": "Free Graphviz DOT Renderer Offline (Lite)",
+ "metaDescription": "Render a simple Graphviz DOT subset to SVG offline with a built-in layered layout. Free, runs in your browser, not the real Graphviz engine.",
+ "intro": "Write Graphviz DOT and get an SVG graph drawn offline in your browser. It supports common nodes, edges, shapes, styles, labels and clusters, with its own layout rather than the real Graphviz engine.",
+ "why": "DOT is a convenient text format for dependency graphs, state machines and architecture sketches, but the real Graphviz needs installing or a server-side render. When you only want to check a small graph while writing documentation, or you are somewhere you cannot install software, a quick in-page renderer is enough.\n\nThis one handles the commonly used subset: directed and undirected graphs, rankdir, default attributes, chains, node sets, shapes, styles, colours, arrow and label options, and cluster subgraphs. Layout attributes such as splines, ratio and nodesep are ignored, HTML labels and ports are not supported, and positions differ from real Graphviz. Choose curved, orthogonal or straight edges. Nothing is sent over the network.",
+ "howTo": [
+  "Type or paste DOT source, starting with digraph or graph.",
+  "Choose the edge style: curved, orthogonal or straight.",
+  "Check the rendered graph and fix any syntax message.",
+  "Export or copy the SVG, and use the real Graphviz if you need exact layout."
+ ],
+ "faq": [
+  {
+   "q": "Why does my graph look different from real Graphviz?",
+   "a": "This tool uses its own layered layout and ignores layout attributes such as nodesep, ratio and size. The structure and labels are the same, but positions and spacing will not match."
+  },
+  {
+   "q": "Which DOT features are unsupported?",
+   "a": "HTML-like labels, record shapes with ports, compass points and most layout tuning attributes. Cluster subgraphs, common shapes and styles are supported, and unsupported attributes are ignored."
+  },
+  {
+   "q": "Does it work offline?",
+   "a": "Yes. Once the page has loaded, rendering uses code in the page and makes no network request, so your graph text is not uploaded."
+  }
+ ],
+ "related": [
+  "mermaid-lite-renderer",
+  "sql-ddl-to-diagram",
+  "ascii-tree-generator",
+  "svg-optimizer",
+  "svg-to-png",
+  "user-flow-to-mermaid-text"
+ ],
+ "keywords": [
+  "graphviz online offline",
+  "dot language renderer",
+  "render dot to svg",
+  "graphviz viewer in browser",
+  "dot graph editor",
+  "free graphviz alternative"
+ ]
+}

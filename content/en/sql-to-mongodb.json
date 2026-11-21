@@ -1,0 +1,45 @@
+{
+ "id": "sql-to-mongodb",
+ "seoTitle": "Free SQL to MongoDB Query Converter Online",
+ "metaDescription": "Translate SQL SELECT, INSERT, UPDATE and DELETE into MongoDB shell syntax: find, aggregate pipelines, insertMany, updateMany. Free, in your browser.",
+ "intro": "Translates SQL into MongoDB shell syntax: SELECT to find() or an aggregate pipeline, INSERT to insertOne and insertMany, UPDATE to updateMany with $set, and DELETE to deleteMany. LIKE becomes a regex.",
+ "why": "Moving from a relational database to MongoDB, or just learning it from a SQL background, means translating every query. WHERE conditions become filter documents, ORDER BY becomes sort, GROUP BY with aggregates becomes a pipeline of $match, $group and $project stages, and a JOIN becomes $lookup. This tool does that mapping for you, so you can see how a familiar query looks in Mongo shell syntax. It is a learning aid and a first draft for migrations: it does not support subqueries, UNION or CTEs, and the translated query is never run. Check each result against your data model, because documents often are not shaped like your old tables. It runs in your browser.",
+ "howTo": [
+  "Paste one or more SQL statements, one per paragraph, into the input box.",
+  "Run the conversion to see the MongoDB commands.",
+  "Copy the commands into the shell or your code and check them against your collections."
+ ],
+ "faq": [
+  {
+   "q": "Which statements are supported?",
+   "a": "SELECT (with WHERE, ORDER BY, LIMIT, OFFSET, GROUP BY and simple JOINs), INSERT with VALUES, UPDATE and DELETE."
+  },
+  {
+   "q": "How does a join work?",
+   "a": "Simple joins become a $lookup stage in an aggregate pipeline. Complex join conditions may need manual adjustment, and Mongo data models often embed instead of join."
+  },
+  {
+   "q": "What about LIKE?",
+   "a": "LIKE patterns are translated into MongoDB regular expressions, so a condition such as email LIKE a wildcard pattern becomes a $regex filter. Check anchoring and case sensitivity on your own data."
+  },
+  {
+   "q": "What is not supported?",
+   "a": "Subqueries, UNION and CTEs. The query is only translated, never executed, so test it on a copy of your data."
+  }
+ ],
+ "related": [
+  "mongodb-to-sql",
+  "sql-explainer",
+  "mongodb-aggregate-builder",
+  "sql-to-json",
+  "sql-dialect-converter",
+  "json-to-sql"
+ ],
+ "keywords": [
+  "sql to mongodb",
+  "sql to mongo query converter",
+  "translate sql to aggregate pipeline",
+  "free sql mongodb translator",
+  "sql select to find"
+ ]
+}

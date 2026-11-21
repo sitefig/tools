@@ -1,0 +1,43 @@
+{
+ "id": "css-ribbon-banner-generator",
+ "seoTitle": "Free CSS Ribbon & Corner Banner Generator",
+ "metaDescription": "Generate CSS-only ribbons: corner sash, folded-end banner or arrow banner. Add your text and colours, preview live and copy HTML and CSS. Free.",
+ "intro": "Create a CSS-only ribbon, either a corner sash, a folded-end banner or an arrow banner, with your own text and colours. You get the HTML and CSS along with a live preview.",
+ "why": "Ribbons mark things like new, sale or beta, and they are one of those effects that look easy but take several tries to get right. A corner sash needs a rotated strip clipped by its container, a folded banner needs small triangles to fake the fold, and an arrow banner needs a clipped end.\n\nThis generator writes that markup and CSS for you. Pick the style, type the label, choose the background and text colours and the size, and see the result before you copy it. The output is plain HTML and CSS with no image or script, so it is light and works anywhere. It is generated in your browser, and you can tweak the values afterwards in your own stylesheet.",
+ "howTo": [
+  "Choose a ribbon style: corner sash, folded-end banner or arrow banner.",
+  "Type the label text and pick the ribbon and text colours.",
+  "Set the size and look at the live preview.",
+  "Copy the HTML and CSS into your page."
+ ],
+ "faq": [
+  {
+   "q": "Why does my corner sash get cut off?",
+   "a": "A sash relies on its parent being positioned and hiding overflow. Make sure the container has position set and overflow hidden, and that it is large enough for the rotated strip."
+  },
+  {
+   "q": "Is the text accessible?",
+   "a": "The ribbon is real text, so screen readers can read it. Check colour contrast between text and ribbon, and avoid putting essential information only in a decorative badge."
+  },
+  {
+   "q": "Can I use it for several labels on one page?",
+   "a": "Yes. Rename the class for each variant, or use CSS variables for the colours. The generated CSS is self-contained, so copy it once and adjust the values per ribbon."
+  }
+ ],
+ "related": [
+  "css-speech-bubble-generator",
+  "css-claymorphism-generator",
+  "border-radius-generator",
+  "clip-path-generator",
+  "css-3d-box-shadow-generator",
+  "css-triangle-generator"
+ ],
+ "keywords": [
+  "css ribbon generator",
+  "css corner ribbon",
+  "css banner generator",
+  "pure css ribbon",
+  "corner sash css",
+  "free css ribbon tool"
+ ]
+}

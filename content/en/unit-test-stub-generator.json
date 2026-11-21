@@ -1,0 +1,38 @@
+{
+ "id": "unit-test-stub-generator",
+ "seoTitle": "Unit Test Stub Generator: Jest, Vitest, pytest from Signatures",
+ "metaDescription": "Paste JavaScript, TypeScript or Python functions and get test stubs with edge-case inputs from parameter names, types and defaults, and throw tests.",
+ "intro": "Generate test skeletons for your functions, with edge-case inputs derived from their signatures.",
+ "why": "Writing the first test file is the boring part. This generator parses function declarations (function, async, arrow functions in JS and TS; def and async def in Python), builds a describe/it block or pytest test per function, derives edge-case arguments from parameter names, annotations and defaults (empty and Unicode strings, zero and negative numbers, empty lists, null) and adds a throws test when it sees a throw or raise.\n\nIt is a signature parser, not an AI: you still write the arrange and assert steps, which is where the thinking is. Parsing is regex-based, so complex generics, decorators and nested functions may need manual touch-ups. Your code stays in your browser.",
+ "howTo": [
+  "Paste the source code.",
+  "Choose Jest, Vitest or pytest and the module path.",
+  "Fill in the TODO assertions."
+ ],
+ "faq": [
+  {
+   "q": "Is this AI-generated?",
+   "a": "No, it is deterministic parsing and templates."
+  },
+  {
+   "q": "Which languages?",
+   "a": "JavaScript, TypeScript and Python."
+  },
+  {
+   "q": "Does it run the tests?",
+   "a": "No, it only writes stubs."
+  }
+ ],
+ "related": [
+  "docstring-skeleton-generator",
+  "commit-message-suggester",
+  "regex-tester",
+  "json-to-typescript",
+  "code-security-scanner"
+ ],
+ "keywords": [
+  "generate unit test stubs",
+  "jest test generator offline",
+  "pytest skeleton from function"
+ ]
+}

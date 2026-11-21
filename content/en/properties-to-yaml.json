@@ -1,0 +1,45 @@
+{
+ "id": "properties-to-yaml",
+ "seoTitle": "Java .properties to YAML Converter (Spring Boot) | Free",
+ "metaDescription": "Convert application.properties to nested YAML, or YAML to properties. Handles escapes, continuations and a[0] lists. Runs in your browser.",
+ "intro": "Converts Java .properties text to nested YAML and back, with dotted keys turned into maps and a[0] keys into lists.",
+ "why": "Spring Boot and other Java tools accept both application.properties and application.yml. Moving from one to the other by hand means retyping every nesting level.\n\nThe parser follows the Java properties format: comments with # or !, separators =, : or whitespace, line continuation with a trailing backslash, and \\uXXXX escapes. A conflict such as a=1 and a.b=2 is reported with the line instead of guessed. Values can optionally become numbers and booleans.",
+ "howTo": [
+  "Choose the direction.",
+  "Paste the text.",
+  "Decide whether numbers and true or false become YAML types.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "What about key conflicts?",
+   "a": "If a key is both a value and a parent, you get an error naming the line."
+  },
+  {
+   "q": "Are comments kept?",
+   "a": "No, they are dropped."
+  },
+  {
+   "q": "How are lists written?",
+   "a": "As key[0], key[1] in properties and as YAML lists in YAML."
+  },
+  {
+   "q": "Is it uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "yaml-to-json",
+  "json-to-yaml",
+  "env-to-json",
+  "yaml-validator",
+  "toml-to-yaml",
+  "json-to-env"
+ ],
+ "keywords": [
+  "properties to yaml",
+  "application.properties to yml",
+  "spring properties converter",
+  "yaml to properties"
+ ]
+}

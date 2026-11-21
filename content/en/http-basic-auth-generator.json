@@ -1,0 +1,46 @@
+{
+ "id": "http-basic-auth-generator",
+ "seoTitle": "Free HTTP Basic Auth Header Generator",
+ "metaDescription": "Encode a username and password into an HTTP Basic Authorization header, with curl and fetch snippets. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Enter a username and password to get the Base64 Authorization header for HTTP Basic authentication, plus ready-to-paste curl and fetch examples.",
+ "why": "Basic auth still guards staging sites, internal APIs, webhooks and package registries. When something returns 401, you often need the exact header value to try it in curl, a proxy, a CI secret or a reverse-proxy rule. Producing it by hand means remembering to join the two with a colon, encode as UTF-8 and then Base64 the result.\n\nThis tool does those steps for you and prints the header line, a curl command and a fetch call. It also rejects a username that contains a colon, which the scheme cannot represent. Because the encoding happens in your browser, the credentials are not uploaded. Still, avoid pasting live production passwords into any page you do not fully trust.",
+ "howTo": [
+  "Type the username in the first box.",
+  "Type the password in the second box.",
+  "Copy the Authorization header line, or the curl or fetch snippet beneath it.",
+  "Use the header over HTTPS only."
+ ],
+ "faq": [
+  {
+   "q": "Is Basic auth encrypted?",
+   "a": "No. The value is only Base64 encoded, which anyone can reverse in seconds. Basic auth is acceptable only over HTTPS, and even then a token-based scheme is usually safer for anything exposed to the public."
+  },
+  {
+   "q": "Why is a colon not allowed in the username?",
+   "a": "The header is built from user:password, and the first colon splits the two. A colon inside the username would make the server read part of it as the password, so the tool refuses it. Colons in the password are fine."
+  },
+  {
+   "q": "Does it handle non-ASCII characters?",
+   "a": "Yes. The text is encoded as UTF-8 before Base64, which is what most modern servers expect. Some very old servers assume Latin-1, so test if your password contains accented characters."
+  },
+  {
+   "q": "Are my credentials uploaded?",
+   "a": "No, the encoding runs locally in your browser. Even so, treat real production secrets with care and prefer test credentials when you only need to check the format."
+  }
+ ],
+ "related": [
+  "base64-encode",
+  "base64-decode",
+  "jwt-decode",
+  "curl-builder",
+  "http-headers-analyzer",
+  "htpasswd-generator"
+ ],
+ "keywords": [
+  "basic auth header generator",
+  "http basic authentication base64",
+  "authorization basic header",
+  "basic auth curl example",
+  "free basic auth encoder"
+ ]
+}

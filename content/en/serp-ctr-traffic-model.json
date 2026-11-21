@@ -1,0 +1,45 @@
+{
+ "id": "serp-ctr-traffic-model",
+ "seoTitle": "SERP Position CTR Model: Estimate Clicks from Rankings",
+ "metaDescription": "Estimate monthly clicks from search volume and ranking position with an editable CTR curve. Compare current and target positions.",
+ "intro": "Enter keywords with volume, current position and target position and see the estimated clicks now, at target and the possible gain. The click-through curve is yours to edit.",
+ "why": "Before you invest in a ranking improvement it helps to know what it could be worth. Moving from position 12 to position 3 on a 5,000-search keyword is a different size of prize than moving from 6 to 4.\n\nThe default curve is illustrative, with round numbers and not measured data. Real click-through rates depend on intent, brand, SERP features and ads. Replace the curve with your own Search Console numbers for better estimates. Volume is the monthly average from your keyword tool.",
+ "howTo": [
+  "Enter one keyword per line with volume, current position and target position.",
+  "Edit the CTR curve if you have your own data.",
+  "Set the chance of reaching the target positions.",
+  "Read the clicks now, at target and expected gain."
+ ],
+ "faq": [
+  {
+   "q": "Where does the default curve come from?",
+   "a": "It is made up for illustration. It is not measured, so replace it with your own."
+  },
+  {
+   "q": "How do I get my own curve?",
+   "a": "Export queries from Search Console and look at average CTR by position. The Search Console Performance Export Analyzer shows it."
+  },
+  {
+   "q": "What if I do not rank yet?",
+   "a": "Leave the current position empty or 0."
+  },
+  {
+   "q": "Why a chance percentage?",
+   "a": "Not every target will be reached, so you can scale the expected gain."
+  }
+ ],
+ "related": [
+  "gsc-performance-analyzer",
+  "keyword-difficulty-estimator",
+  "monthly-volume-seasonality",
+  "ads-roas-calculator",
+  "branded-query-splitter",
+  "rank-history-analyzer"
+ ],
+ "keywords": [
+  "ctr by position",
+  "seo traffic forecast",
+  "organic traffic estimate",
+  "ranking position click model"
+ ]
+}

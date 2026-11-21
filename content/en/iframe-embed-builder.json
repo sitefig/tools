@@ -1,0 +1,41 @@
+{
+ "id": "iframe-embed-builder",
+ "seoTitle": "Responsive iframe Embed Code Builder with Title and Sandbox",
+ "metaDescription": "Build responsive iframe markup with aspect ratio, title, lazy loading, allowfullscreen, referrer policy and sandbox preset. Free.",
+ "intro": "Generates iframe embed code that scales with its container and includes the attributes that matter for accessibility, privacy and safety.",
+ "why": "Embed codes from video sites use fixed widths and often omit a title. This builder produces an iframe that scales to its container using CSS aspect-ratio (with an older padding fallback if you pick it), a required title for screen readers, lazy loading, a referrer policy and an optional sandbox.\n\nSandbox presets are starting points: a sandbox that blocks scripts will break most video players, so test the embed. Prefer privacy-friendly embed domains where the provider offers them.",
+ "howTo": [
+  "Paste the embed URL.",
+  "Write a title that describes the content.",
+  "Choose ratio, loading, sandbox and referrer options.",
+  "Copy the markup."
+ ],
+ "faq": [
+  {
+   "q": "Why is a title required?",
+   "a": "Screen readers announce the frame by its title."
+  },
+  {
+   "q": "What does sandbox do?",
+   "a": "It restricts what the framed page can do. Add back only what the embed needs."
+  },
+  {
+   "q": "Why aspect-ratio?",
+   "a": "It keeps the shape as the width changes without extra wrapper elements."
+  }
+ ],
+ "related": [
+  "embed-consent-wrapper",
+  "lazy-loading-injector",
+  "youtube-link-tools",
+  "html-link-generator",
+  "cls-risk-finder",
+  "html-validator"
+ ],
+ "keywords": [
+  "iframe embed code generator",
+  "responsive iframe",
+  "iframe sandbox builder",
+  "aspect ratio iframe"
+ ]
+}

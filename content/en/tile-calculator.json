@@ -1,0 +1,46 @@
+{
+ "id": "tile-calculator",
+ "seoTitle": "Free Tile Calculator: How Many Tiles for a Floor or Wall",
+ "metaDescription": "Work out the number of tiles for an area from tile size, grout joint and waste allowance, and the tile area to buy. Free, runs in your browser.",
+ "intro": "Enter the area's length and width, the tile width and height, grout joint and waste. The tool returns the tile count with and without waste and the total tile area to buy.",
+ "why": "Tiles are sold by the box and by the square metre, but you lay them one by one, so you need both an area and a count. The grout joint matters more than people expect, because 3 mm on every edge adds up across a large floor. This calculator takes the room dimensions and tile size in the units you usually have to hand, metres for the area and centimetres for tiles, adds the joint to each tile, and returns how many tiles fit. It then applies a waste percentage for cuts and breakages and tells you the area of tile you will actually buy. Diagonal layouts and patterns need more waste than a straight grid. Nothing is uploaded.",
+ "howTo": [
+  "Enter the length and width of the area in metres.",
+  "Enter the tile width and height in centimetres and the grout joint in millimetres.",
+  "Set a waste percentage, then read the tile count and the area to buy."
+ ],
+ "faq": [
+  {
+   "q": "How much waste should I allow for tiles?",
+   "a": "Ten percent suits a simple straight layout. Diagonal patterns, small rooms with many cuts and natural stone often need 15% or more. Keep a few spare tiles for future repairs."
+  },
+  {
+   "q": "Does the grout joint change the count?",
+   "a": "Yes. The tool adds the joint to each tile's width and height, so wider joints mean fewer tiles. Set it to 0 for rectified tiles laid tight."
+  },
+  {
+   "q": "Can I calculate a wall?",
+   "a": "Yes. Use the wall's width as the length and its height as the width. Subtract openings by reducing the dimensions, since this tool has no separate openings field."
+  },
+  {
+   "q": "Does it include adhesive or grout quantities?",
+   "a": "No. It counts tiles only. Adhesive and grout coverage depend on the product and tile size, so use the manufacturer's guidance."
+  }
+ ],
+ "related": [
+  "flooring-calculator",
+  "paint-coverage",
+  "brick-calculator",
+  "concrete-calculator",
+  "unit-converter",
+  "roof-pitch"
+ ],
+ "keywords": [
+  "tile calculator",
+  "free tile calculator",
+  "how many tiles do i need",
+  "floor tile calculator",
+  "tile quantity calculator",
+  "wall tile estimator"
+ ]
+}

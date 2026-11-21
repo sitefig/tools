@@ -1,0 +1,44 @@
+{
+ "id": "content-signals-policy-builder",
+ "seoTitle": "Content Signals Policy Builder for robots.txt",
+ "metaDescription": "Generate Content-Signal lines (search, ai-input, ai-train) for robots.txt to say how crawlers may use your content. Free.",
+ "intro": "Builds the Content-Signal line for robots.txt from your yes, no or not stated choices.",
+ "why": "Content signals are a convention from Cloudflare to say what you allow beyond crawling: building a search index, using content as input to AI answers, or training models. They sit in robots.txt as one line, such as Content-Signal: search=yes, ai-train=no.\n\nLeaving a signal out states no preference, which is different from yes or no. The line only expresses a preference; nothing is blocked unless you add Disallow rules too.",
+ "howTo": [
+  "Choose yes, no or not stated for each signal.",
+  "Set the user-agent.",
+  "Copy the lines into robots.txt.",
+  "Add Disallow rules for crawlers you want to stop."
+ ],
+ "faq": [
+  {
+   "q": "Does it block crawlers?",
+   "a": "No. It is a preference, not an access rule."
+  },
+  {
+   "q": "What do the three signals mean?",
+   "a": "search: index and show links and short excerpts. ai-input: use in AI answers. ai-train: train models."
+  },
+  {
+   "q": "What does not stated mean?",
+   "a": "No preference, which is not the same as yes."
+  },
+  {
+   "q": "Who reads it?",
+   "a": "Not guaranteed. Cloudflare introduced it; support by other crawlers is not verified."
+  }
+ ],
+ "related": [
+  "ai-bot-robots-builder",
+  "ai-preferences-header-generator",
+  "robots-generator",
+  "tdm-reservation-header-builder",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "content signals",
+  "content-signal robots.txt",
+  "ai-train ai-input search",
+  "cloudflare content signals policy"
+ ]
+}

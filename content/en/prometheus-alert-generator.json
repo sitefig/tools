@@ -1,0 +1,45 @@
+{
+ "id": "prometheus-alert-generator",
+ "seoTitle": "Free Prometheus Alert Rule Generator Online",
+ "metaDescription": "Generate a Prometheus alerting rules file with ready-made alerts for downtime, CPU, memory, disk, 5xx errors, latency, crash loops and certificates.",
+ "intro": "List the alerts you want, with optional thresholds, and get a Prometheus rules file with PromQL expressions, severity labels and summaries.",
+ "why": "Almost every Prometheus setup ends up with the same first alerts: a target that is down, a busy CPU, a full disk, a spike in 5xx responses. The PromQL for each is easy to get slightly wrong, for example a disk query that counts tmpfs or a CPU expression that forgets to average by instance.\n\nThis generator holds eight tested-looking patterns and writes them into a rules group with your chosen for: duration and an optional team label. Metric names assume node_exporter, kube-state-metrics, blackbox exporter and a typical http_requests_total counter, so adjust them to what your services export. Use promtool check rules before loading the file.",
+ "howTo": [
+  "Enter one alert per line, with an optional threshold, such as HighCpu 85.",
+  "Set the group name, the for: duration and, if you like, a team label.",
+  "Save the output as a rules file, run promtool check rules, then reference it in rule_files."
+ ],
+ "faq": [
+  {
+   "q": "Which alerts are available?",
+   "a": "InstanceDown, HighCpu, HighMemory, DiskLow, High5xxRate, HighLatencyP95, PodCrashLooping and CertExpiry. An unknown name stops with an error listing these."
+  },
+  {
+   "q": "What do the thresholds mean?",
+   "a": "Each alert has its own default: percent for CPU, memory, disk and 5xx, seconds for latency, restarts for crash loops and days for certificate expiry. The number you type replaces that default."
+  },
+  {
+   "q": "Will the metrics exist in my setup?",
+   "a": "Only if you run the matching exporters. The expressions use node_exporter, kube-state-metrics, blackbox and http_requests_total names. Rename metrics to match your own instrumentation."
+  },
+  {
+   "q": "Does it check the PromQL?",
+   "a": "No. It only fills in the templates. Run promtool check rules on the file to catch syntax problems."
+  }
+ ],
+ "related": [
+  "prometheus-config-generator",
+  "prometheus-recording-rules-generator",
+  "k8s-resource-calculator",
+  "kubernetes-deployment-generator",
+  "systemd-unit-generator",
+  "yaml-format"
+ ],
+ "keywords": [
+  "prometheus alert rules generator",
+  "prometheus alerting rules examples",
+  "generate prometheus rules yaml",
+  "free prometheus alert templates",
+  "promql alert examples"
+ ]
+}

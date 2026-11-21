@@ -1,0 +1,45 @@
+{
+  "id": "docx-to-html",
+  "seoTitle": "Word (.docx) to HTML and Text Viewer",
+  "metaDescription": "Open a .docx in the browser and see it as HTML and plain text: headings, bold, italic, lists, tables, links and images. No upload, no Word needed.",
+  "intro": "Read or extract the text of a Word document on any device and copy clean HTML.",
+  "why": "A .docx is a ZIP of XML files. The viewer unzips it in the browser, reads word/document.xml, the relationships (for links and images) and the numbering definitions, then writes HTML for paragraphs with Heading and Title styles, bold, italic, underline, strikethrough, super- and subscripts, bulleted and numbered lists, tables, hyperlinks and embedded images. Output was compared with python-docx text on generated documents.\n\nIt shows content, not page layout: columns, text boxes, headers and footers, comments and exact fonts are not reproduced, and legacy .doc files are not supported.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Choose a .docx file.",
+    "Pick preview with HTML source or plain text.",
+    "Copy the HTML or text you need.",
+    "Check complex layouts in Word."
+  ],
+  "faq": [
+    {
+      "q": "Does it handle .doc files?",
+      "a": "No, only the modern .docx format."
+    },
+    {
+      "q": "Are images included?",
+      "a": "Yes, small images are embedded as data URIs in the HTML."
+    },
+    {
+      "q": "Is the file uploaded?",
+      "a": "No."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "docx-cleaner",
+    "markdown-to-docx",
+    "html-to-markdown",
+    "html-tag-stripper",
+    "word-counter",
+    "zip-inspector"
+  ],
+  "keywords": [
+    "docx viewer",
+    "docx to html",
+    "open word file online",
+    "extract text from docx"
+  ]
+}

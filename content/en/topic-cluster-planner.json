@@ -1,0 +1,47 @@
+{
+ "id": "topic-cluster-planner",
+ "seoTitle": "Free Topic Cluster Planner for Pillar Page Content",
+ "metaDescription": "Turn a pillar topic and a list of subtopics into a pillar and cluster outline with title ideas and an internal linking plan. Free, in your browser.",
+ "intro": "Type a pillar topic on the first line and your subtopics below it, and get an outline with a pillar page, cluster pages, title ideas and a linking plan between them.",
+ "why": "Topic clusters help a site cover a subject in depth: one broad pillar page, supported by narrower articles that all link back to it. The hard part is planning the structure and remembering which page links where, especially across a dozen articles written over several months.\n\nThis planner takes your pillar and subtopics and lays out the structure. Each cluster gets a working title idea, a link up to the pillar and a sideways link to a neighbouring cluster, and the pillar links back to every cluster. The titles rotate through simple templates and are prompts to improve, not finished copy. It runs in your browser, so a content plan stays private.",
+ "howTo": [
+  "Write the pillar topic on the first line, for example Technical SEO.",
+  "Add one subtopic per line below it.",
+  "Run the planner.",
+  "Copy the outline into your content calendar and refine the title ideas."
+ ],
+ "faq": [
+  {
+   "q": "How many subtopics should a cluster have?",
+   "a": "There is no fixed number. Many sites use five to fifteen supporting pages around a pillar. Choose subtopics that real searchers ask about, and combine those that overlap instead of writing near-duplicates."
+  },
+  {
+   "q": "How are the linking suggestions created?",
+   "a": "Each cluster links to the pillar, the pillar links back to each cluster, and each cluster gets one sideways link to the next subtopic in your list. Add more sideways links wherever topics genuinely overlap."
+  },
+  {
+   "q": "Are the title ideas ready to publish?",
+   "a": "No. They are generic templates such as \"What Is\" or \"Checklist for\" applied in rotation. Use them as a starting point and rewrite them with your own angle and keywords."
+  },
+  {
+   "q": "Will clusters improve my rankings?",
+   "a": "No tool can promise that. A clear structure with good internal links can help users and crawlers find related content, but quality and relevance matter most."
+  }
+ ],
+ "related": [
+  "keyword-clusterer",
+  "content-calendar-generator",
+  "internal-link-extractor",
+  "keyword-intent-classifier",
+  "heading-analyzer",
+  "sitemap-generator"
+ ],
+ "keywords": [
+  "topic cluster planner",
+  "pillar page outline",
+  "content cluster generator",
+  "free seo content planner",
+  "internal linking plan",
+  "pillar and cluster strategy"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "png-quantizer",
+ "seoTitle": "PNG Quantizer (Shrink PNG Files with a Reduced Colour Palette)",
+ "metaDescription": "Reduce a PNG to 256, 64 or fewer colours with median-cut and optional dithering, and save a smaller indexed PNG. Transparency is kept.",
+ "intro": "Shrink PNG files by reducing them to fewer colours.",
+ "why": "Choose a colour count from 2 to 256. The tool builds a palette with median cut, maps every pixel to the nearest entry, optionally dithers, and saves an indexed PNG with transparency kept. If a file would not get smaller, the original can be kept.\n\nLogos, icons and screenshots usually survive 64 colours well. Photos can band at low counts, so check by eye.",
+ "howTo": [
+  "Choose PNG files.",
+  "Set the number of colours.",
+  "Decide on dithering.",
+  "Compare the sizes and download."
+ ],
+ "faq": [
+  {
+   "q": "Is it lossy?",
+   "a": "Yes. Colours are merged. Pick the count that still looks right."
+  },
+  {
+   "q": "Is transparency kept?",
+   "a": "Yes, including partial transparency, within the palette limit."
+  },
+  {
+   "q": "Why use dithering?",
+   "a": "It hides banding in gradients but makes the file larger."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "image-compressor",
+  "batch-image-optimizer",
+  "png-to-jpg-converter",
+  "image-format-converter",
+  "image-to-svg-tracer",
+  "image-info"
+ ],
+ "keywords": [
+  "png quantizer",
+  "reduce png colors",
+  "compress png",
+  "indexed png"
+ ]
+}

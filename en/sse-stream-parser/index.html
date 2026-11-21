@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free SSE Stream Parser - Inspect text/event-stream Online | Free Tools</title>
+<meta name="description" content="Paste a Server-Sent Events capture and see events, ids, retry, comments and unterminated data as a browser EventSource would parse them.">
+<link rel="canonical" href="https://tools.sitefig.net/en/sse-stream-parser/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/sse-stream-parser/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/sse-stream-parser/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free SSE Stream Parser - Inspect text/event-stream Online | Free Tools">
+<meta property="og:description" content="Paste a Server-Sent Events capture and see events, ids, retry, comments and unterminated data as a browser EventSource would parse them.">
+<meta property="og:url" content="https://tools.sitefig.net/en/sse-stream-parser/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free SSE Stream Parser - Inspect text/event-stream Online | Free Tools">
+<meta name="twitter:description" content="Paste a Server-Sent Events capture and see events, ids, retry, comments and unterminated data as a browser EventSource would parse them.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"SSE (Server-Sent Events) Stream Parser","url":"https://tools.sitefig.net/en/sse-stream-parser/","description":"Paste a Server-Sent Events capture and see events, ids, retry, comments and unterminated data as a browser EventSource would parse them.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Capture the response body, for example with curl -N or the network tab.","Paste it into the box.","Read the dispatched events, comments and any pending event.","Untick the JSON option if you want raw data strings."],"keywords":"sse parser, server sent events tester, text/event-stream parser, eventsource debugger, sse stream viewer","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Network & HTTP","item":"https://tools.sitefig.net/en/#network-and-http"},{"@type":"ListItem","position":3,"name":"SSE (Server-Sent Events) Stream Parser","item":"https://tools.sitefig.net/en/sse-stream-parser/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Does it connect to my endpoint?","acceptedAnswer":{"@type":"Answer","text":"No. It parses text you paste. Opening a connection would need a network request, and this site makes none."}},{"@type":"Question","name":"Why is my last event marked pending?","acceptedAnswer":{"@type":"Answer","text":"An event is delivered only when a blank line ends it. If the stream was cut before that line, browsers discard the partial event, and so does this parser."}},{"@type":"Question","name":"What is the [DONE] marker?","acceptedAnswer":{"@type":"Answer","text":"Some APIs, such as OpenAI streams, end with a data line containing [DONE]. It is ordinary data to SSE; the parser just points it out."}},{"@type":"Question","name":"How is retry handled?","acceptedAnswer":{"@type":"Answer","text":"A retry field with only digits sets the reconnect delay in milliseconds. Anything else is ignored, as in the specification."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#network-and-http">Network &amp; HTTP</a></li><li><span aria-current="page">SSE (Server-Sent Events) Stream Parser</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>SSE (Server-Sent Events) Stream Parser</h1>
+<p class="lede">Paste the raw body of a text/event-stream response and see exactly which events a browser would dispatch, and what would be dropped.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="sse-stream-parser" data-module="gap1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>When a streaming API misbehaves, the cause is often in the framing: a missing blank line that leaves an event undelivered, a multi-line data field, a stray carriage return, or a retry value that was ignored. Reading raw bytes does not tell you what EventSource will actually do.</p>
+<p>This parser follows the WHATWG rules: lines end in LF, CR or CRLF, a leading BOM is dropped, one space after the colon is stripped, data lines are joined with newlines, an event is dispatched only on a blank line, and a trailing event without one is reported as pending rather than delivered. If the data looks like an OpenAI or Anthropic token stream, the text pieces are assembled so you can read the whole reply. It parses a pasted capture; it does not open a connection, which a page that makes no network requests cannot do. Copy the capture from your browser dev tools or from curl -N.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Capture the response body, for example with curl -N or the network tab.</li><li>Paste it into the box.</li><li>Read the dispatched events, comments and any pending event.</li><li>Untick the JSON option if you want raw data strings.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Does it connect to my endpoint?</summary><p>No. It parses text you paste. Opening a connection would need a network request, and this site makes none.</p></details>
+<details><summary>Why is my last event marked pending?</summary><p>An event is delivered only when a blank line ends it. If the stream was cut before that line, browsers discard the partial event, and so does this parser.</p></details>
+<details><summary>What is the [DONE] marker?</summary><p>Some APIs, such as OpenAI streams, end with a data line containing [DONE]. It is ordinary data to SSE; the parser just points it out.</p></details>
+<details><summary>How is retry handled?</summary><p>A retry field with only digits sets the reconnect delay in milliseconds. Anything else is ignored, as in the specification.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/http-wire-format/"><span class="link-card__title">HTTP Raw Message &lt;-&gt; JSON (wire format)</span><span class="link-card__desc">Parse a raw HTTP/1.x request or response (start line, headers, body, chunked transfer decoding, Content-Length check, query string, cookies, Basic auth) into structured JSON, or build a correctly framed raw HTTP message (CRLF line endings, Host and Content-Length) from JSON. Useful for debugging proxies, WAF rules, request smuggling cases and hand-written test fixtures.</span></a></li><li><a class="link-card" href="/en/har-analyzer/"><span class="link-card__title">HAR Privacy Analyzer</span><span class="link-card__desc">Paste HAR JSON: third-party domains, trackers, cookies and Set-Cookie flags, mixed content, large/slow requests, header mismatches. Stays in your browser; HAR files contain secrets so never upload them elsewhere.</span></a></li><li><a class="link-card" href="/en/json-format/"><span class="link-card__title">JSON Formatter</span><span class="link-card__desc">Pretty-print JSON with custom indent and optional key sorting; errors show line and column.</span></a></li><li><a class="link-card" href="/en/mcp-message-validator/"><span class="link-card__title">MCP / JSON-RPC Message Inspector</span><span class="link-card__desc">Offline inspector for Model Context Protocol traffic: paste one JSON-RPC message, an array, or one message per line and get structure checks (jsonrpc 2.0, ids, initialize, tools/list schemas, tools/call, content blocks, errors). It cannot connect to a live server.</span></a></li><li><a class="link-card" href="/en/webhook-payload-simulator/"><span class="link-card__title">Webhook Payload &amp; Signature Simulator</span><span class="link-card__desc">Build a signed webhook request for GitHub, Stripe, Slack, Shopify or a generic HMAC scheme: exact body, headers, HMAC signature and a curl command to replay it against your endpoint. Nothing is sent from the browser.</span></a></li><li><a class="link-card" href="/en/http-headers-analyzer/"><span class="link-card__title">HTTP Headers Analyzer</span><span class="link-card__desc">Paste raw response headers: security, caching, compression, SEO issues.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

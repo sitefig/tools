@@ -1,0 +1,46 @@
+{
+  "id": "palindrome-checker",
+  "seoTitle": "Free Palindrome Checker for Words and Phrases",
+  "metaDescription": "Test words or whole sentences for palindromes, ignoring case, spaces and punctuation, or use strict mode. Free, runs in your browser.",
+  "intro": "Checks each line of text and marks it YES or NO depending on whether it reads the same backwards. Strict mode keeps case, spaces and punctuation in the comparison.",
+  "why": "Palindromes pop up in programming interviews, word puzzles, school exercises and naming games. The famous phrase examples only work once you throw away punctuation and spaces, which is exactly the step people forget when testing them by hand or in a quick script.\n\nPaste several candidates, one per line, and each gets its own verdict. The default mode compares only letters and digits, ignoring case and accents, so \"A man, a plan, a canal: Panama\" passes. Strict mode compares every character as typed, which is closer to what a coding exercise usually asks for. Nothing leaves your browser, so you can test answers for a puzzle or assignment privately.",
+  "howTo": [
+    "Enter a word or phrase on each line.",
+    "Tick Strict if case, spaces and punctuation must also match.",
+    "Read the YES or NO verdict printed in front of each line.",
+    "Copy the results if you need them elsewhere."
+  ],
+  "faq": [
+    {
+      "q": "What does the normal mode ignore?",
+      "a": "Case, spaces, punctuation and accents. Only letters and digits are compared, so \"No lemon, no melon\" is a palindrome. Empty lines are skipped."
+    },
+    {
+      "q": "What changes in strict mode?",
+      "a": "Every character counts, including capital letters, spaces and punctuation, so \"Racecar\" fails because R and r differ. Emoji and combined characters are treated as single units rather than being split."
+    },
+    {
+      "q": "Is a single letter a palindrome?",
+      "a": "Yes, a single letter or digit reads the same both ways and is reported as YES. A line with no letters or digits left after cleaning is reported as NO."
+    },
+    {
+      "q": "Can I check many lines at once?",
+      "a": "Yes. Each non-empty line is judged separately and the result keeps your original text next to the verdict, so you can paste a long list and scan down it."
+    }
+  ],
+  "related": [
+    "anagram-checker",
+    "reverse-text",
+    "character-frequency",
+    "string-case-detector",
+    "case-converter",
+    "word-counter"
+  ],
+  "keywords": [
+    "palindrome checker",
+    "is it a palindrome",
+    "palindrome checker for sentences",
+    "check palindrome online",
+    "free palindrome tester"
+  ]
+}

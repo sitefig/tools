@@ -1,0 +1,45 @@
+{
+ "id": "openapi-validator",
+ "seoTitle": "Free OpenAPI Validator: Structural Check Online",
+ "metaDescription": "Check an OpenAPI 3 or Swagger 2 file for missing fields, path parameter mismatches, duplicate operationIds and unresolved $refs. Free, in your browser.",
+ "intro": "Paste an OpenAPI 3 or Swagger 2 document in JSON or YAML and get a list of errors and warnings about its structure, parameters, responses and references.",
+ "why": "A spec with a missing description, a path parameter that is not declared or two operations sharing an operationId may look fine in an editor and then break code generation, mock servers or documentation builds. These errors are tedious to find by reading a long file.\n\nThis validator runs the structural checks that catch most mistakes: required info fields, response codes and descriptions, path template variables versus declared parameters, required true on path parameters, duplicate operationIds and $refs that point nowhere. It also warns about unused schemas and missing summaries. It does not validate against the full OpenAPI meta-schema, so run a dedicated linter such as Spectral for style rules.",
+ "howTo": [
+  "Paste your OpenAPI or Swagger document, in JSON or YAML.",
+  "Read the error and warning counts followed by each finding.",
+  "Fix the spec and run it again until it reports no errors."
+ ],
+ "faq": [
+  {
+   "q": "Is this a full OpenAPI validation?",
+   "a": "No. It checks a defined set of structural rules, and says so in its output. A document can pass here and still fail the official meta-schema or a strict linter."
+  },
+  {
+   "q": "What does a path parameter error mean?",
+   "a": "Either the path contains something like {id} that is not declared in parameters, a declared path parameter is not in the path, or it lacks required: true, which is mandatory for path parameters."
+  },
+  {
+   "q": "Does it resolve external $refs?",
+   "a": "No. Only references starting with a hash and pointing inside the same document are checked. External file or URL references are not followed."
+  },
+  {
+   "q": "Which versions are accepted?",
+   "a": "OpenAPI 3.0 and 3.1, and Swagger 2.0. An unusual version string produces a warning rather than an error."
+  }
+ ],
+ "related": [
+  "openapi-to-typescript-fetch",
+  "openapi-to-postman",
+  "postman-to-openapi",
+  "json-schema-validator",
+  "yaml-format",
+  "http-status-reference"
+ ],
+ "keywords": [
+  "openapi validator",
+  "validate openapi online",
+  "swagger file checker",
+  "free openapi lint",
+  "check duplicate operationid"
+ ]
+}

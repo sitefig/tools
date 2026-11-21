@@ -1,0 +1,47 @@
+{
+ "id": "csv-to-markdown-table",
+ "seoTitle": "Free CSV to Markdown Table Converter Online",
+ "metaDescription": "Free online CSV to Markdown table converter. Create aligned GitHub-flavoured Markdown tables from CSV, with right-aligned numbers. Runs in your browser.",
+ "intro": "Turn CSV into an aligned GitHub-flavoured Markdown table. Numeric columns can be right-aligned, pipes inside cells are escaped, and line breaks become a br tag.",
+ "why": "Documentation, README files and pull requests are full of tables, and typing Markdown tables by hand means counting pipes and padding columns. When your data already lives in a spreadsheet, it makes sense to export CSV and convert it.\n\nThe tool pads each column so the raw Markdown stays readable in an editor, adds the separator row and, if you wish, right-aligns columns that contain only numbers. A pipe character inside a cell is escaped so it does not break the table, and line breaks inside a cell are replaced by a br tag. The first CSV row becomes the header. Conversion runs in your browser, so internal figures stay private.",
+ "howTo": [
+  "Paste your CSV into the input box, with column names in the first row.",
+  "Pick the delimiter, or leave it on auto.",
+  "Tick Right-align numeric columns if you want numbers aligned to the right.",
+  "Copy the Markdown table into your README or document."
+ ],
+ "faq": [
+  {
+   "q": "Does it work outside GitHub?",
+   "a": "The output is standard GitHub-flavoured Markdown with pipes and a dashed separator row. Most renderers, including GitLab, Obsidian and many static site generators, understand it."
+  },
+  {
+   "q": "What happens to a pipe character in a cell?",
+   "a": "It is escaped with a backslash so the table structure is not broken. Line breaks inside cells are turned into a br tag, since Markdown tables are one line per row."
+  },
+  {
+   "q": "How does alignment work?",
+   "a": "Columns are padded to equal width for readability. With the right-align option on, a column whose values are all numbers gets a colon in the separator row, so it renders right-aligned."
+  },
+  {
+   "q": "Can I turn a Markdown table back into CSV?",
+   "a": "Yes. Use the Markdown Table to CSV tool in this collection: paste the table and it gives you CSV back, which you can then convert to JSON or SQL."
+  }
+ ],
+ "related": [
+  "markdown-table-generator",
+  "markdown-table-to-csv",
+  "csv-to-html-table",
+  "csv-to-json",
+  "markdown-preview",
+  "ascii-table-generator"
+ ],
+ "keywords": [
+  "csv to markdown table",
+  "csv to markdown",
+  "convert csv to markdown online",
+  "markdown table generator from csv",
+  "free csv to markdown",
+  "github markdown table from csv"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "ip-supernetting-calculator",
+ "seoTitle": "Free IP Supernetting and CIDR Aggregation Calculator",
+ "metaDescription": "Aggregate IPv4 and IPv6 addresses, CIDR blocks and ranges into the smallest set of prefixes and find the smallest covering supernet. Free.",
+ "intro": "Enter IPv4 or IPv6 addresses, CIDR blocks or ranges and get the smallest set of CIDR prefixes that covers them, plus the single smallest supernet and how much extra address space it wastes.",
+ "why": "Firewall rules, route tables and allow-lists grow into long lists of adjacent blocks. Merging 10.0.0.0/24 and 10.0.1.0/24 into one /23 is easy, but doing it across dozens of entries, mixed with single addresses and ranges, is error-prone. A wrong merge opens up more address space than intended.\n\nThis calculator merges overlapping and adjacent entries into the minimal list of prefixes, so you can shorten a rule set without changing what it matches. It also reports the one smallest supernet that contains everything and how many addresses it adds beyond your list, which helps you decide whether a single summary route is acceptable. The calculation runs in your browser and nothing is uploaded.",
+ "howTo": [
+  "Enter addresses, CIDR blocks or ranges written as a-b, one per line.",
+  "Read the minimal list of CIDR prefixes that covers exactly the same addresses.",
+  "Check the smallest single supernet and the wasted address space it implies.",
+  "Copy the aggregated list into your firewall, route table or allow-list."
+ ],
+ "faq": [
+  {
+   "q": "Does aggregation change what is matched?",
+   "a": "The minimal prefix list covers exactly the same addresses as your input, no more and no less. The single supernet is different: it can include extra addresses, and the tool shows how many."
+  },
+  {
+   "q": "Can I mix IPv4 and IPv6?",
+   "a": "Yes. The two families are aggregated separately because they cannot be merged. You will see one result list for IPv4 and another for IPv6."
+  },
+  {
+   "q": "What if my ranges do not align to prefixes?",
+   "a": "A range such as 10.0.0.5 to 10.0.0.20 does not match a single prefix, so it is split into several smaller blocks. The tool produces the smallest set that covers the range exactly."
+  }
+ ],
+ "related": [
+  "ip-subnet-calculator",
+  "cidr-contains",
+  "ip-validator-converter",
+  "mac-address-generator",
+  "port-reference",
+  "dns-spf-record-flattener"
+ ],
+ "keywords": [
+  "ip supernet calculator",
+  "cidr aggregation tool",
+  "merge cidr blocks",
+  "summarize ip ranges",
+  "route summarization calculator",
+  "free cidr merge tool"
+ ]
+}

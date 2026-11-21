@@ -1,0 +1,46 @@
+{
+ "id": "unit-converter",
+ "seoTitle": "Free Unit Converter: Length, Mass, Temperature and More",
+ "metaDescription": "Convert between units of length, mass, temperature, volume, area, speed, data, time, energy and pressure. Free converter, runs in your browser.",
+ "intro": "Pick a category, enter a value and choose the units to convert from and to. The tool shows the answer and the same value in every other unit of that category.",
+ "why": "Recipes in cups, car manuals in psi, a flight distance in nautical miles, a download in gibibytes: units from different systems keep turning up together. Search engines can convert one pair at a time, but when you want to see a value in every unit at once, or you need a precise factor for a spreadsheet, a proper table is faster. This converter covers ten categories and prints the full list of equivalents, so you can pick the one you need. Temperature is handled through kelvin to avoid the offset mistakes of simple multiplication. Data units include both decimal (MB) and binary (MiB) forms, which is a common source of confusion. Conversions are done locally.",
+ "howTo": [
+  "Choose a category such as Length, Mass or Temperature.",
+  "Enter the value, then select the From and To units from the same category.",
+  "Read the converted value and the list of all equivalent units below it."
+ ],
+ "faq": [
+  {
+   "q": "What happens if I pick units from different categories?",
+   "a": "The tool shows an error listing the valid units for the selected category. Change the category first, then pick matching From and To units."
+  },
+  {
+   "q": "Why are MB and MiB different?",
+   "a": "MB uses powers of 1000 (1 MB is 1,000,000 bytes) and MiB uses powers of 1024 (1,048,576 bytes). Storage makers usually use MB, while many operating systems report MiB."
+  },
+  {
+   "q": "How accurate are the conversions?",
+   "a": "They use standard exact factors where they exist, such as 2.54 cm per inch and 0.45359237 kg per pound. Results show up to ten significant decimals. A year is taken as 365.25 days."
+  },
+  {
+   "q": "Are gallons US or imperial?",
+   "a": "US gallons, quarts, pints, cups and fluid ounces. The unit label reads gal(US). Imperial units are not included."
+  }
+ ],
+ "related": [
+  "number-base-converter",
+  "bandwidth-download-time",
+  "screen-size-ppi",
+  "fuel-cost",
+  "time-duration-calculator",
+  "timestamp-converter"
+ ],
+ "keywords": [
+  "unit converter",
+  "free unit converter",
+  "online unit conversion",
+  "convert units",
+  "temperature converter",
+  "metric imperial converter"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "text-splitter",
+ "seoTitle": "Text Splitter by Characters, Words, Lines or Sentences",
+ "metaDescription": "Cut long text into parts of a set number of characters, words, lines or sentences. Words are never split. Free, runs in your browser.",
+ "intro": "Cut a long text into parts of a set number of characters, words, lines or sentences, for example to fit a limit. Words are never cut in half.",
+ "why": "Long text often has to fit a limit: a form field, a message, a translation tool. Splitting by hand risks cutting a word in half.\n\nChoose characters, words, lines or sentences and a size, and get numbered parts. In character mode a part ends at the last whole word that fits. For splitting with overlap for AI retrieval use the Text Chunk Splitter instead.",
+ "howTo": [
+  "Paste the text.",
+  "Choose the unit and the maximum size of a part.",
+  "Read the numbered parts.",
+  "Copy each part as needed."
+ ],
+ "faq": [
+  {
+   "q": "Are words ever cut?",
+   "a": "Only a single word longer than the limit is cut, because it cannot fit otherwise."
+  },
+  {
+   "q": "How are sentences found?",
+   "a": "At a full stop, question mark or exclamation mark followed by a space. Abbreviations can cause extra breaks."
+  },
+  {
+   "q": "Can I get overlap between parts?",
+   "a": "Not here. The Text Chunk Splitter adds overlap for retrieval use."
+  }
+ ],
+ "related": [
+  "text-chunk-splitter",
+  "char-limit-counter",
+  "thread-splitter",
+  "line-break-remover",
+  "word-counter",
+  "json-array-chunker"
+ ],
+ "keywords": [
+  "text splitter",
+  "split text by characters",
+  "split text into parts",
+  "chunk text"
+ ]
+}

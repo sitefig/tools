@@ -1,0 +1,38 @@
+{
+ "id": "text-to-mermaid-flowchart",
+ "seoTitle": "Text to Mermaid Flowchart: Arrows, Steps and Outlines",
+ "metaDescription": "Turn arrow chains, numbered steps or indented outlines into Mermaid diagram code, with decision branches. A syntax converter you can use offline.",
+ "intro": "Write a process in plain text and get Mermaid flowchart or mind map code.",
+ "why": "Mermaid diagrams are easy to read but fiddly to type. This converter takes lines such as \"Start -> Check stock -> In stock? yes: Ship / no: Backorder\", numbered step lists or an indented outline and outputs flowchart or mindmap code with sensible shapes (decisions as diamonds, start and end as rounded boxes) and labelled branches.\n\nIt is a small syntax converter, not an AI diagram generator: it only understands the notations described here. Paste the result into the Mermaid renderer on this site or any Markdown tool that supports Mermaid.",
+ "howTo": [
+  "Write arrow chains, numbered steps or an indented outline.",
+  "Choose the direction or leave the input style on Auto.",
+  "Copy the Mermaid code into your diagram tool."
+ ],
+ "faq": [
+  {
+   "q": "How do I write a decision?",
+   "a": "End a step with ? and add \"yes: X / no: Y\" after it."
+  },
+  {
+   "q": "Can it draw the diagram?",
+   "a": "Paste the output into the Mermaid renderer tool."
+  },
+  {
+   "q": "What are the limits?",
+   "a": "No subgraphs, styling or sequence diagrams; edit the generated code for those."
+  }
+ ],
+ "related": [
+  "mermaid-lite-renderer",
+  "ascii-tree-generator",
+  "markdown-preview",
+  "docstring-skeleton-generator",
+  "json-to-yaml"
+ ],
+ "keywords": [
+  "text to mermaid",
+  "flowchart from text",
+  "outline to mind map"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "prisma-to-sql",
+ "seoTitle": "Free Prisma Schema to SQL DDL Converter Online",
+ "metaDescription": "Convert a schema.prisma into CREATE TABLE statements for PostgreSQL, MySQL or SQLite, with keys, defaults and indexes. Free, runs in your browser.",
+ "intro": "Converts a schema.prisma into CREATE TABLE statements for PostgreSQL, MySQL or SQLite, covering models, enums, @id, @unique, @default, @map, @relation foreign keys and indexes.",
+ "why": "Prisma generates SQL through migrations, but sometimes you just want to see the DDL: to review what a schema means in plain SQL, to hand it to a DBA, to set up a database without Node, or to compare with a legacy schema. Running prisma migrate needs a project, a connection and a shadow database. Paste the schema here instead and get the CREATE TABLE statements, using Prisma's default type mappings, the dialect from the datasource block or one you pick. Names from @map and @@map are used, relations become foreign keys and indexes are written out. Client-side defaults such as uuid() and cuid() produce no SQL default, as in Prisma itself. Nothing leaves your browser.",
+ "howTo": [
+  "Paste your schema.prisma, including the datasource block and models, into the input box.",
+  "Choose \"from datasource\" or pick PostgreSQL, MySQL or SQLite.",
+  "Review the CREATE TABLE statements and use them as a reference or starting point."
+ ],
+ "faq": [
+  {
+   "q": "Does it match what prisma migrate produces?",
+   "a": "It follows Prisma's default mappings, such as String to text, or varchar(191) on MySQL. Migrations can differ in details like constraint names, so use the output as a guide, not a byte-for-byte match."
+  },
+  {
+   "q": "How are relations converted?",
+   "a": "Fields with @relation, fields and references become foreign key constraints, with onDelete actions where specified. List-side relation fields produce no columns."
+  },
+  {
+   "q": "What happens to uuid() and cuid() defaults?",
+   "a": "These run in Prisma's client, not in the database, so no SQL default is generated for them. Autoincrement and now() are converted."
+  },
+  {
+   "q": "Are enums supported?",
+   "a": "Yes. Enums are created as database enums where the dialect supports them, and mapped in other ways where it does not. Check the result for your dialect."
+  }
+ ],
+ "related": [
+  "sql-to-prisma",
+  "prisma-schema-generator",
+  "sql-dialect-converter",
+  "sql-to-drizzle",
+  "prisma-seed-generator",
+  "sql-ddl-to-diagram"
+ ],
+ "keywords": [
+  "prisma to sql",
+  "prisma schema to create table",
+  "convert schema.prisma to ddl",
+  "free prisma sql generator",
+  "prisma to postgres ddl"
+ ]
+}

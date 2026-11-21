@@ -1,0 +1,46 @@
+{
+  "id": "clip-path-generator",
+  "seoTitle": "Free CSS Clip-path Generator: Shapes and Polygons",
+  "metaDescription": "Pick a preset shape or edit polygon points to create a CSS clip-path with a live preview. Free, runs in your browser and nothing is uploaded.",
+  "intro": "Generates a CSS clip-path from presets such as hexagon, star, triangle, arrow, circle, ellipse and inset, or from your own polygon points. A preview shows the shape.",
+  "why": "The clip-path property lets you cut an element into a shape without exporting an image: an angled hero section, a hexagonal avatar, an arrow-shaped button. The polygon syntax is just a list of percentage pairs, but working out the numbers for a star or chevron by hand takes many refreshes.\n\nPick a preset and the code appears, ready to copy. To customise it, enter your own points in the optional box, one x and y pair per line in percent or pixels, and the preset is overridden. At least three points are required, and badly formed lines produce an error that points at the culprit. The shape is drawn over a gradient so you can see its edges. It all runs in your browser.",
+  "howTo": [
+    "Choose a preset shape from the list.",
+    "Optionally enter custom polygon points, one \"x% y%\" pair per line.",
+    "Check the preview.",
+    "Copy the clip-path declaration."
+  ],
+  "faq": [
+    {
+      "q": "What presets are included?",
+      "a": "Triangle, trapezoid, parallelogram, rhombus, pentagon, hexagon, octagon, star, cross, arrow, message bubble and chevron as polygons, plus circle, ellipse and inset with rounded corners."
+    },
+    {
+      "q": "How do I enter my own polygon?",
+      "a": "Type one point per line as two numbers, each with a percent or px unit, such as \"50% 0%\". You need at least three points. Typing anything in this box overrides the preset."
+    },
+    {
+      "q": "Does clip-path remove the clipped area from layout?",
+      "a": "No. The element still takes up its full box for layout and hit testing is limited to the visible shape. Content outside the shape is simply not painted."
+    },
+    {
+      "q": "Are shadows and borders clipped too?",
+      "a": "Yes. A box-shadow or border outside the clip shape is cut off with the rest. Apply the shadow to a wrapper, or use a drop-shadow filter on a parent."
+    }
+  ],
+  "related": [
+    "border-radius-generator",
+    "css-triangle-generator",
+    "css-blob-generator",
+    "css-speech-bubble-generator",
+    "svg-path-editor",
+    "css-ribbon-banner-generator"
+  ],
+  "keywords": [
+    "clip path generator",
+    "css clip-path polygon",
+    "css shapes generator",
+    "hexagon css clip path",
+    "free clip-path maker"
+  ]
+}

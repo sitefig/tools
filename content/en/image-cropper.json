@@ -1,0 +1,46 @@
+{
+  "id": "image-cropper",
+  "seoTitle": "Free Image Cropper: Crop by Numbers or Aspect Ratio",
+  "metaDescription": "Crop an image with exact pixel coordinates, or centre-crop to 1:1, 4:3, 3:2, 16:9 or 9:16. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Crops images by a rectangle you define in pixels, or centre-crops to a standard aspect ratio such as square, 4:3, 3:2, 16:9 or 9:16. Output as PNG, JPEG or WebP.",
+  "why": "Profile pictures need to be square, video thumbnails are 16:9, and stories are 9:16. Cropping to those shapes in a heavy editor, or by dragging in a cramped online tool, is more work than the task deserves. Sometimes you also know the exact pixel area you want, for example from a design spec.\n\nUse the ratio presets for a quick centred crop that keeps the largest possible area, or choose custom rectangle and enter X, Y, width and height. A width or height of 0 means \"the rest of the image\". Values are clamped to the image so the crop never goes outside it. There is no drag handle, so it suits precise numeric crops best. The processing is local and the image is never uploaded.",
+  "howTo": [
+    "Choose the image file or files.",
+    "Pick an aspect ratio, or select custom rectangle.",
+    "For a custom crop, enter X, Y, width and height in pixels.",
+    "Choose the format and quality, run it and download the cropped image."
+  ],
+  "faq": [
+    {
+      "q": "How does the ratio crop choose the area?",
+      "a": "It takes the largest region with that shape from the centre of the image. If the image is wider than the ratio, the sides are trimmed, and if it is taller, the top and bottom are trimmed."
+    },
+    {
+      "q": "What do width and height 0 mean?",
+      "a": "In custom mode, a width of 0 means \"from X to the right edge\" and a height of 0 means \"from Y to the bottom edge\". Use this to trim only the left or top."
+    },
+    {
+      "q": "Can I crop by dragging with the mouse?",
+      "a": "No. This tool works with numbers. To find the right values, open the image info tool to see its dimensions, then work out the coordinates."
+    },
+    {
+      "q": "Is the cropped image re-compressed?",
+      "a": "Yes, it is encoded again in the format you choose. Pick PNG for a lossless result, or a high JPEG or WebP quality to keep detail."
+    }
+  ],
+  "related": [
+    "image-resizer",
+    "image-rotate-flip",
+    "aspect-ratio-calculator",
+    "image-info",
+    "favicon-generator",
+    "image-compressor"
+  ],
+  "keywords": [
+    "image cropper",
+    "crop image online",
+    "crop photo to square",
+    "crop image to 16:9",
+    "free photo cropper"
+  ]
+}

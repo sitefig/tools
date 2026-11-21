@@ -1,0 +1,45 @@
+{
+ "id": "thumbnail-batch-generator",
+ "seoTitle": "Thumbnail Batch Generator (Uniform Square Thumbnails in a ZIP)",
+ "metaDescription": "Make same-size thumbnails from many images by centre-cropping or padding them to a square or any fixed size, then download them together in a ZIP.",
+ "intro": "Make same-size thumbnails from many images in a ZIP.",
+ "why": "Set a width and height, choose centre crop or padding, and drop in your images. Each one becomes a thumbnail of exactly that size. Crop fills the frame and cuts the edges. Padding keeps the whole picture and fills the gaps with a colour.\n\nResults come back in one ZIP. Thumbnails are re-encoded, so EXIF data is not kept.",
+ "howTo": [
+  "Set the thumbnail width and height.",
+  "Choose centre crop or pad.",
+  "Pick the format and quality.",
+  "Choose the images and download the ZIP."
+ ],
+ "faq": [
+  {
+   "q": "Crop or pad?",
+   "a": "Crop gives a clean grid but cuts the edges. Pad shows everything."
+  },
+  {
+   "q": "Can I make non-square thumbnails?",
+   "a": "Yes. Set any width and height."
+  },
+  {
+   "q": "Are the images enlarged?",
+   "a": "Small images are scaled up to fill the frame, which can look soft."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "batch-image-optimizer",
+  "image-resizer",
+  "image-cropper",
+  "image-grid-splitter",
+  "app-icon-generator",
+  "favicon-generator"
+ ],
+ "keywords": [
+  "thumbnail generator",
+  "batch thumbnails",
+  "square thumbnails",
+  "bulk image resize crop"
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "id": "ai-speech-to-text",
+ "seoTitle": "AI Speech to Text: Whisper Tiny Transcription Offline",
+ "metaDescription": "Transcribe audio files or your microphone to English text with OpenAI Whisper tiny in your browser. 43 MB model once, nothing uploaded, slow but private.",
+ "intro": "Transcribe English speech to text with Whisper tiny running entirely in your browser, from a file or the microphone.",
+ "why": "Most dictation and transcription services send your audio to a server. Whisper is an open speech recognition model, and the tiny English version is small enough (39 million parameters, 43 MB with int8 weights) to run in a tab, so interviews, meetings and voice notes can be transcribed without leaving your device.\n\nIt is slow: expect roughly 20 seconds of processing for each 30-second window on a laptop, so it suits short clips. Audio is cut into fixed 30-second windows, which can split a word at a boundary. Like all Whisper models it can invent text on silence or music and mishears names and jargon, so proofread. Our JavaScript engine reproduces the reference PyTorch transcript token for token on the test clip.",
+ "howTo": [
+  "Choose an audio or video file, or press Record from the microphone and stop when finished.",
+  "Press Transcribe; the first run downloads 43 MB once.",
+  "Watch the progress per window, then copy or download the text."
+ ],
+ "faq": [
+  {
+   "q": "Is my audio uploaded?",
+   "a": "No. It is decoded and transcribed in your tab. The only download is the model file from this site."
+  },
+  {
+   "q": "Why is it slow?",
+   "a": "The model runs on one CPU thread in JavaScript, and Whisper always processes a full 30-second window. A GPU-based tool would be much faster but would need a server or a larger download."
+  },
+  {
+   "q": "Which languages work?",
+   "a": "This is the English-only tiny model. Other languages need the multilingual Whisper models, which are larger."
+  }
+ ],
+ "related": [
+  "mic-test",
+  "audio-recorder",
+  "transcript-cleaner",
+  "subtitle-srt-vtt-converter",
+  "youtube-caption-format-converter"
+ ],
+ "keywords": [
+  "speech to text offline",
+  "whisper in browser",
+  "private transcription"
+ ]
+}

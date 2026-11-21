@@ -1,0 +1,47 @@
+{
+ "id": "keyword-intent-classifier",
+ "seoTitle": "Free Search Intent Classifier for Keyword Lists",
+ "metaDescription": "Label keywords as informational, commercial, transactional or navigational with simple rules, and see the trigger word. Free, runs in your browser.",
+ "intro": "Paste a list of keywords and get a search intent label for each one: informational, commercial, transactional or navigational, along with the word that triggered it.",
+ "why": "Search intent decides which kind of page can rank: a guide for \"how to start a blog\", a comparison for \"best crm software\", a product or pricing page for \"buy running shoes\". Sorting hundreds of keywords by hand before planning content is tedious.\n\nThis classifier checks each keyword against lists of signal words, such as buy, price, best, vs, login and how. The first rule that fits sets the label, and the matching signal is shown so you can judge it. Keywords with no signal are tagged \"informational?\" as a default. It is a quick first pass, not a model of how Google reads queries, so check ambiguous ones in the search results.",
+ "howTo": [
+  "Paste your keywords, one per line.",
+  "Run the classifier.",
+  "Read the table with the keyword, its intent and the signal that triggered it.",
+  "Check the summary counts, and look at keywords labelled with a question mark by hand."
+ ],
+ "faq": [
+  {
+   "q": "How are conflicts resolved?",
+   "a": "Rules are checked in a fixed order: transactional, navigational, commercial, then informational. A keyword like \"best price\" is labelled transactional because that rule comes first."
+  },
+  {
+   "q": "Is it accurate?",
+   "a": "It is a keyword-pattern heuristic written in English. It misses context, other languages and unusual phrasing. Treat it as a way to sort a long list quickly, then verify important keywords against real search results."
+  },
+  {
+   "q": "What does \"informational?\" mean?",
+   "a": "No signal word matched, so the tool defaulted to informational. Look at those keywords yourself; many are product or brand queries."
+  },
+  {
+   "q": "Does it use an AI model or send data anywhere?",
+   "a": "No. It uses a fixed set of word patterns in your browser, so results are repeatable and the list is not uploaded."
+  }
+ ],
+ "related": [
+  "keyword-clusterer",
+  "keyword-extractor",
+  "topic-cluster-planner",
+  "search-operators-builder",
+  "title-case-headline-analyzer",
+  "content-gap"
+ ],
+ "keywords": [
+  "search intent classifier",
+  "keyword intent tool",
+  "classify keywords by intent",
+  "free intent checker",
+  "informational vs transactional keywords",
+  "keyword intent labels"
+ ]
+}

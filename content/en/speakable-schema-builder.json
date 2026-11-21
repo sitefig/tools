@@ -1,0 +1,45 @@
+{
+ "id": "speakable-schema-builder",
+ "seoTitle": "Speakable Schema Builder With CSS Selectors or XPath",
+ "metaDescription": "Add speakable markup to an Article or WebPage with cssSelector or xPath. Enforces one locator type and repeats Google guidance.",
+ "intro": "Generates speakable JSON-LD that points to the sections of a page suited to text-to-speech, using CSS selectors or XPath.",
+ "why": "Speakable tells voice assistants which parts of a page to read aloud. Google's documentation allows either cssSelector or xPath, not both, and the tool enforces that. It also repeats the guidance: mark key points, not the whole article, aim for about 20 to 30 seconds per section, and leave out datelines, captions and source credits.\n\nGoogle lists the feature as beta for news content in English on U.S. Google Home devices. Treat it as optional.",
+ "howTo": [
+  "Enter the page name and URL.",
+  "Add css: lines or xpath: lines, not both.",
+  "Choose WebPage, Article or NewsArticle.",
+  "Copy the script tag."
+ ],
+ "faq": [
+  {
+   "q": "Which should I use, CSS or XPath?",
+   "a": "CSS selectors are easier to maintain. Use one kind per block."
+  },
+  {
+   "q": "Is speakable widely supported?",
+   "a": "Google describes it as beta and limited to some markets. Other voice assistants may differ."
+  },
+  {
+   "q": "What should I mark?",
+   "a": "Headline and summary sentences that make sense when heard alone."
+  },
+  {
+   "q": "Can I use several selectors?",
+   "a": "Yes, repeat the line."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "article-schema-generator",
+  "rich-result-eligibility-checker",
+  "jsonld-syntax-validator",
+  "schema-property-checker",
+  "meta-analyzer"
+ ],
+ "keywords": [
+  "speakable schema",
+  "speakable specification",
+  "voice assistant structured data",
+  "speakable cssSelector"
+ ]
+}

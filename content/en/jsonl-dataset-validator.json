@@ -1,0 +1,45 @@
+{
+ "id": "jsonl-dataset-validator",
+ "seoTitle": "Free JSONL Dataset Validator for Fine-Tuning",
+ "metaDescription": "Validate JSON Lines datasets for fine-tuning and evals: JSON errors per line, chat message roles, prompt and completion pairs. Free, in your browser.",
+ "intro": "Paste a JSONL file and see which lines are invalid JSON, have bad chat roles, lack an assistant reply or miss prompt and completion fields.",
+ "why": "Fine-tuning jobs fail late and with short messages, often because one line of a large file has a trailing comma, an unknown role or an empty message. Finding line 4,381 by eye is no fun.\n\nThis validator reads the file line by line and reports each problem with its line number. For chat data it checks that messages is a non-empty array, roles are known, content is present and non-empty, and at least one assistant turn exists to learn from. It can also check prompt and completion pairs, or just any object. It adds a rough token estimate of the content. Provider rules differ, so check your provider guide as well.",
+ "howTo": [
+  "Paste your JSONL, one JSON object per line.",
+  "Choose the expected format: chat messages, prompt and completion, or any object.",
+  "Read the summary and the list of problems, fix those lines, and run it again."
+ ],
+ "faq": [
+  {
+   "q": "Which roles are accepted?",
+   "a": "system, user, assistant, tool and developer. Any other role is flagged. If your provider accepts a different set, treat this check as a hint only."
+  },
+  {
+   "q": "Does it check provider limits?",
+   "a": "No. It does not check maximum tokens per example, file size or the number of examples. It gives an approximate token total to help you plan."
+  },
+  {
+   "q": "How are blank lines treated?",
+   "a": "Empty lines are skipped. A line that has content but is not valid JSON is reported with the parser error message."
+  },
+  {
+   "q": "Is my dataset uploaded?",
+   "a": "No. Validation runs in your browser. Very large files can still be slow to paste, so test a sample first."
+  }
+ ],
+ "related": [
+  "json-lines-tools",
+  "json-validate",
+  "json-format",
+  "llm-token-estimator",
+  "json-schema-validator",
+  "prompt-template-filler"
+ ],
+ "keywords": [
+  "jsonl validator",
+  "fine tuning dataset validator",
+  "validate jsonl online",
+  "openai fine-tune jsonl checker",
+  "free json lines checker"
+ ]
+}

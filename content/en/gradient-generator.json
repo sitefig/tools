@@ -1,0 +1,46 @@
+{
+  "id": "gradient-generator",
+  "seoTitle": "Free CSS Gradient Generator with Live Preview",
+  "metaDescription": "Create linear, radial, conic and repeating CSS gradients from your colour stops, with a preview and Tailwind output. Free, runs in your browser.",
+  "intro": "Builds CSS gradient code from a list of colour stops. It supports linear, radial, conic and repeating linear gradients, shows a live preview and prints a Tailwind version as well.",
+  "why": "Gradients are quick to write when you remember the syntax and annoying when you do not: the angle, the position keywords, where the stops sit, and whether it is conic or radial. A typo makes the whole declaration invalid and the browser shows nothing.\n\nType your stops one per line, each with an optional position such as a percentage, choose the gradient type and angle, and the tool writes the background declaration and previews it full size. Colours are checked, so a bad value gives an error instead of broken CSS. For linear gradients on the eight standard angles with up to three plain colours it also prints the Tailwind direction classes. It runs in your browser and nothing is uploaded.",
+  "howTo": [
+    "Enter the colour stops, one per line, with optional positions.",
+    "Choose a type: linear, radial, conic or repeating-linear.",
+    "Set the angle, the radial shape and the centre position if needed.",
+    "Copy the CSS background or the Tailwind classes."
+  ],
+  "faq": [
+    {
+      "q": "How do I set where a colour stops?",
+      "a": "Add a position after the colour on the same line, such as \"#ff512f 0%\" or \"red 30px\". Without a position the browser spreads the stops evenly."
+    },
+    {
+      "q": "Which angle applies to which type?",
+      "a": "Linear and repeating gradients use the angle as written. Conic gradients use it as the starting angle. Radial gradients ignore it and use the shape and centre position instead."
+    },
+    {
+      "q": "What Tailwind output do I get?",
+      "a": "Always an arbitrary-value background class. For a linear gradient at one of the eight standard angles with at most three simple stops you also get the from, via and to classes."
+    },
+    {
+      "q": "Why do I get an error?",
+      "a": "You need at least two stops, and each colour must be a valid CSS colour. Check for a missing comma inside rgb functions and for a position without a colour."
+    }
+  ],
+  "related": [
+    "mesh-gradient-generator",
+    "color-mixer",
+    "palette-generator",
+    "css-3d-box-shadow-generator",
+    "svg-pattern-generator",
+    "css-pattern-generator"
+  ],
+  "keywords": [
+    "css gradient generator",
+    "linear gradient generator",
+    "conic gradient css",
+    "radial gradient css generator",
+    "free gradient maker"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+ "id": "news-sitemap-freshness-checker",
+ "seoTitle": "News Sitemap Freshness Checker (48 Hour Rule)",
+ "metaDescription": "Show how old each article in a Google News sitemap is and list entries older than 48 hours to remove. Free, runs locally.",
+ "intro": "Reads a news sitemap, shows the age of each article and lists the stale ones.",
+ "why": "Google asks for news sitemaps to hold only articles from the last two days. Old entries add noise and are a sign the file is not being cleaned.\n\nPaste the sitemap to see each article age. You can change the hour limit or set a reference time, which helps when you test a saved file.",
+ "howTo": [
+  "Paste the news sitemap XML.",
+  "Keep 48 hours or set another limit.",
+  "Read the status of each article.",
+  "Remove the listed stale entries."
+ ],
+ "faq": [
+  {
+   "q": "Is 48 hours exact?",
+   "a": "Google says the last two days. 48 hours is the usual reading and you can change it."
+  },
+  {
+   "q": "What if all are stale?",
+   "a": "Remove them. An empty news sitemap is fine."
+  },
+  {
+   "q": "Does it check dates?",
+   "a": "It reports missing, invalid and future publication dates."
+  },
+  {
+   "q": "Is anything sent anywhere?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "news-sitemap-generator",
+  "sitemap-validator",
+  "sitemap-lastmod-validator",
+  "sitemap-url-extractor",
+  "content-freshness-audit"
+ ],
+ "keywords": [
+  "news sitemap freshness",
+  "news sitemap 48 hours",
+  "old articles news sitemap",
+  "google news sitemap check"
+ ]
+}

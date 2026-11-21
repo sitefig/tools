@@ -1,0 +1,43 @@
+{
+ "id": "universal-links-validator",
+ "seoTitle": "Free Universal Links & App Links Validator",
+ "metaDescription": "Check an apple-app-site-association or assetlinks.json file for structural errors and test a URL path against the rules. Free, in your browser.",
+ "intro": "Paste an apple-app-site-association file or an Android assetlinks.json and see structural errors and warnings. For iOS you can also test whether a URL path would open the app.",
+ "why": "Deep links fail quietly. A link that should open your app opens Safari or Chrome instead, and the cause is usually a small mistake in the association file: a wrong Team ID, a path pattern that does not start with a slash, or a fingerprint copied without colons. Apple and Google cache these files, so each fix can take a while to confirm on a device.\n\nChecking the JSON before you upload it saves those cycles. This tool reads the file you paste, reports errors and warnings, and matches a sample path against your rules. It looks at file content only. Hosting still has to be checked on your server, and nothing you paste is uploaded.",
+ "howTo": [
+  "Paste the contents of your apple-app-site-association file or assetlinks.json into the input box.",
+  "For an iOS file, type a URL path such as /app/orders/42 in the test field.",
+  "Read the list of errors, warnings and OK lines, and fix anything marked as an error.",
+  "Upload the corrected file under /.well-known/ on your domain and verify the hosting separately."
+ ],
+ "faq": [
+  {
+   "q": "Does this check that my server is set up correctly?",
+   "a": "No. It validates the file content only. You still need to confirm that the file is served over HTTPS from /.well-known/ without redirects and with a JSON content type."
+  },
+  {
+   "q": "What does the URL test tell me?",
+   "a": "It runs your path through the components or legacy paths in the iOS file and reports whether it matches, is excluded or has no rule. It follows the common matching rules, so confirm edge cases on a real device."
+  },
+  {
+   "q": "How does it tell the two file types apart?",
+   "a": "A JSON array is treated as Android assetlinks.json, and a JSON object as an apple-app-site-association file. If the input is neither, or is not valid JSON, the tool shows an error."
+  }
+ ],
+ "related": [
+  "ios-plist-builder",
+  "android-manifest-builder",
+  "android-keystore-fingerprint",
+  "json-validate",
+  "http-headers-analyzer",
+  "capacitor-config-builder"
+ ],
+ "keywords": [
+  "aasa validator",
+  "assetlinks.json validator",
+  "universal links validator",
+  "apple-app-site-association checker",
+  "android app links tester",
+  "free deep link validator"
+ ]
+}

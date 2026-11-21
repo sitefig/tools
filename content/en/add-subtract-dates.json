@@ -1,0 +1,46 @@
+{
+ "id": "add-subtract-dates",
+ "seoTitle": "Free Add or Subtract Days, Weeks, Months from a Date",
+ "metaDescription": "Add or subtract years, months, weeks and days from any start date and see the resulting date and weekday. Free date calculator, runs in your browser.",
+ "intro": "Pick a start date, choose add or subtract, and enter years, months, weeks and days. The tool returns the resulting date with its weekday.",
+ "why": "Deadlines are often written as a duration rather than a date: thirty days from invoice, six months after signing, twelve weeks of notice. Working out the resulting date by hand means counting across months of different lengths, and month arithmetic raises a question that spreadsheets answer inconsistently: what is one month after 31 January? This tool answers it in a clear, documented way. It adds or removes whole months first, clamping to the last day of the target month when needed, and then adds the weeks and days. The output includes the weekday so you can see if a deadline lands on a weekend. All date maths is done locally.",
+ "howTo": [
+  "Pick the start date and choose Add or Subtract.",
+  "Enter the years, months, weeks and days to apply.",
+  "Read the resulting date and weekday."
+ ],
+ "faq": [
+  {
+   "q": "What is one month after 31 January?",
+   "a": "The tool clamps to the last valid day, so 31 January plus one month gives 28 February, or 29 in a leap year. Months are applied before weeks and days."
+  },
+  {
+   "q": "In what order are the parts applied?",
+   "a": "Years and months are applied together first, then weeks and days. Entering 1 month and 10 days from 31 January therefore gives 10 March in a non-leap year."
+  },
+  {
+   "q": "Can I mix add and subtract?",
+   "a": "Not in one step. The chosen operation applies to every part. To add months and subtract days, run the tool twice and use the first result as the new start date."
+  },
+  {
+   "q": "Does it skip weekends or holidays?",
+   "a": "No, it counts calendar days. For working days, use the business days calculator, which excludes weekends and the holidays you list."
+  }
+ ],
+ "related": [
+  "date-difference",
+  "business-days",
+  "age-calculator",
+  "countdown-to-date",
+  "day-of-week",
+  "due-date-calculator"
+ ],
+ "keywords": [
+  "add days to date calculator",
+  "date calculator",
+  "free date adder",
+  "subtract days from date",
+  "add months to date",
+  "what date is 30 days from now"
+ ]
+}

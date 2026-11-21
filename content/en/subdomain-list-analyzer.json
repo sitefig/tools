@@ -1,0 +1,38 @@
+{
+ "id": "subdomain-list-analyzer",
+ "seoTitle": "Subdomain List Analyzer: Dedupe, Group and Flag Risky Names",
+ "metaDescription": "Paste hostnames from crt.sh, amass or a zone file. Dedupe, group by domain, count levels and flag admin, staging, VPN, CI and backup names for review.",
+ "intro": "Clean a messy list of hostnames, group it by registered domain and spot the names that deserve a security review.",
+ "why": "Subdomain lists from Certificate Transparency, amass, subfinder or DNS zone exports come with wildcards, duplicates, URLs and case differences. This tool normalises them, groups them by registered domain, shows how deep the names go and flags words that often mark exposed internals: admin consoles, staging and test environments, VPNs, CI systems, internal tools, backups and databases.\n\nIt is an attack-surface inventory aid for your own domains. Keyword matches are hints, not findings, and the grouping uses a short built-in list of two-level suffixes rather than the full Public Suffix List. It performs no DNS lookups: dangling records (names pointing to deleted cloud services) need a resolver to confirm.",
+ "howTo": [
+  "Paste hostnames, one per line (URLs and wildcards are cleaned).",
+  "Keep \"Flag interesting names\" on for the review list.",
+  "Export the grouped list and check each flagged name with your DNS and asset records."
+ ],
+ "faq": [
+  {
+   "q": "Where do I get a list?",
+   "a": "From crt.sh, your DNS provider export, a zone transfer you are allowed to do, or tools such as amass and subfinder."
+  },
+  {
+   "q": "Is this scanning anything?",
+   "a": "No. It only processes the text you paste."
+  },
+  {
+   "q": "What is a subdomain takeover?",
+   "a": "A DNS record that still points to a deleted cloud resource, which an attacker can claim. Find them by resolving each flagged name."
+  }
+ ],
+ "related": [
+  "dig-nslookup-output-analyzer",
+  "whois-record-parser",
+  "sitemap-url-extractor",
+  "cidr-contains",
+  "html-url-extractor"
+ ],
+ "keywords": [
+  "subdomain list cleaner",
+  "crt.sh output dedupe",
+  "attack surface subdomains"
+ ]
+}

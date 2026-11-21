@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free JSON to XML Converter Online | Free Tools</title>
+<meta name="description" content="Free online JSON to XML converter. Keys starting with @ become attributes, #text becomes text content. Set the root element and indent. Runs locally.">
+<link rel="canonical" href="https://tools.sitefig.net/en/json-to-xml/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/json-to-xml/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/json-to-xml/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free JSON to XML Converter Online | Free Tools">
+<meta property="og:description" content="Free online JSON to XML converter. Keys starting with @ become attributes, #text becomes text content. Set the root element and indent. Runs locally.">
+<meta property="og:url" content="https://tools.sitefig.net/en/json-to-xml/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free JSON to XML Converter Online | Free Tools">
+<meta name="twitter:description" content="Free online JSON to XML converter. Keys starting with @ become attributes, #text becomes text content. Set the root element and indent. Runs locally.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"JSON to XML","url":"https://tools.sitefig.net/en/json-to-xml/","description":"Free online JSON to XML converter. Keys starting with @ become attributes, #text becomes text content. Set the root element and indent. Runs locally.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste your JSON into the input box.","Enter the name of the root element, for example root or catalog.","Choose the indent size, or tab.","Copy the XML, including its declaration line."],"keywords":"json to xml converter, convert json to xml online, json to xml free, json xml attributes, online json xml tool, json to xml with attributes","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"JSON","item":"https://tools.sitefig.net/en/#json"},{"@type":"ListItem","position":3,"name":"JSON to XML","item":"https://tools.sitefig.net/en/json-to-xml/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How do I create XML attributes?","acceptedAnswer":{"@type":"Answer","text":"Prefix the key with @. For example {\"book\":{\"@id\":\"42\",\"title\":\"Dune\"}} gives a book element with an id attribute. Use #text for text content when an element also has attributes."}},{"@type":"Question","name":"How are arrays written?","acceptedAnswer":{"@type":"Answer","text":"Each array item becomes a repeated element with the same name as the array key. A top-level array is wrapped in item elements inside the root element."}},{"@type":"Question","name":"What happens to null and special characters?","acceptedAnswer":{"@type":"Answer","text":"A null value becomes an empty self-closing element. The characters &, \u003c and > are escaped in text, and quotes are escaped in attributes. Invalid characters in key names are replaced with underscores."}},{"@type":"Question","name":"Can I convert the XML back to JSON?","acceptedAnswer":{"@type":"Answer","text":"Yes, with the XML to JSON tool. Its attribute prefix defaults to @, matching this tool, so simple documents round-trip."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#json">JSON</a></li><li><span aria-current="page">JSON to XML</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>JSON to XML</h1>
+<p class="lede">Convert JSON into XML with a declaration, a root element of your choice and tidy indentation. Keys beginning with @ become attributes and #text becomes the element text.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="json-to-xml" data-module="data"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Plenty of older systems, SOAP services and feed formats still want XML, while your data starts life as JSON. Writing the conversion by hand means deciding how to treat attributes, arrays and special characters, and that is where mistakes creep in.</p>
+<p>Here the rules are simple and visible. A key such as @id becomes an attribute, #text holds the text of an element that also has attributes, arrays repeat the element once per item, and null becomes an empty element. Special characters like &amp; and &lt; are escaped for you, and awkward key names are made into legal XML names. Choose the root element name and indent, then copy the result. The conversion runs in your browser and nothing is uploaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste your JSON into the input box.</li><li>Enter the name of the root element, for example root or catalog.</li><li>Choose the indent size, or tab.</li><li>Copy the XML, including its declaration line.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How do I create XML attributes?</summary><p>Prefix the key with @. For example {&quot;book&quot;:{&quot;@id&quot;:&quot;42&quot;,&quot;title&quot;:&quot;Dune&quot;}} gives a book element with an id attribute. Use #text for text content when an element also has attributes.</p></details>
+<details><summary>How are arrays written?</summary><p>Each array item becomes a repeated element with the same name as the array key. A top-level array is wrapped in item elements inside the root element.</p></details>
+<details><summary>What happens to null and special characters?</summary><p>A null value becomes an empty self-closing element. The characters &amp;, &lt; and &gt; are escaped in text, and quotes are escaped in attributes. Invalid characters in key names are replaced with underscores.</p></details>
+<details><summary>Can I convert the XML back to JSON?</summary><p>Yes, with the XML to JSON tool. Its attribute prefix defaults to @, matching this tool, so simple documents round-trip.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/xml-to-json/"><span class="link-card__title">XML to JSON</span><span class="link-card__desc">Convert XML to JSON: attributes get a prefix, repeated elements become arrays, text goes to #text.</span></a></li><li><a class="link-card" href="/en/xml-format/"><span class="link-card__title">XML Formatter</span><span class="link-card__desc">Pretty-print XML with consistent indentation (mixed content is preserved).</span></a></li><li><a class="link-card" href="/en/json-format/"><span class="link-card__title">JSON Formatter</span><span class="link-card__desc">Pretty-print JSON with custom indent and optional key sorting; errors show line and column.</span></a></li><li><a class="link-card" href="/en/json-to-yaml/"><span class="link-card__title">JSON to YAML</span><span class="link-card__desc">Convert JSON to clean block-style YAML.</span></a></li><li><a class="link-card" href="/en/xml-validate/"><span class="link-card__title">XML Validator</span><span class="link-card__desc">Check that XML is well-formed using the browser parser.</span></a></li><li><a class="link-card" href="/en/xpath-tester/"><span class="link-card__title">XPath Tester</span><span class="link-card__desc">Evaluate XPath 1.0 expressions against XML using the browser engine.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

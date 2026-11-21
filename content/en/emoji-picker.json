@@ -1,0 +1,46 @@
+{
+  "id": "emoji-picker",
+  "seoTitle": "Free Emoji Picker: Search and Copy Emojis",
+  "metaDescription": "Browse emojis by category or search by name, click to copy one, and collect several in a tray. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Lists emojis in categories such as smileys, people, animals, food, travel and symbols. Search by name, click an emoji to copy it, and collect several in a tray to copy together.",
+  "why": "Not every computer makes emoji easy to type. Desktop keyboards often hide the picker in a shortcut you can never remember, and you may be working in a tool, a terminal or a spreadsheet without one. Copying an emoji from a random website is clumsy.\n\nThis picker puts them in one place. Pick a category tab or type a word such as heart, fire or cat, and click to copy the character at once. A tray collects everything you click, so you can build a line of emoji and copy it in one go. Emoji appearance depends on your device's font, so the same character can look different on another phone or system. Nothing is sent to a server.",
+  "howTo": [
+    "Choose a category tab, or type a word such as heart or fire in the search box.",
+    "Click an emoji to copy it; it is also added to the tray.",
+    "Press Copy all to copy everything in the tray.",
+    "Paste the emoji into your document, message or code."
+  ],
+  "faq": [
+    {
+      "q": "Does clicking really copy the emoji?",
+      "a": "Yes, it uses the browser clipboard, and a short message confirms it. If your browser blocks clipboard access, the emoji still goes into the tray, where you can select and copy it by hand."
+    },
+    {
+      "q": "How does search work?",
+      "a": "It matches names and keywords, such as \"joy tears\", and also the category name. You can paste an emoji into the search box to find it. Results appear as soon as you type."
+    },
+    {
+      "q": "Why does an emoji look different elsewhere?",
+      "a": "Each platform draws emoji in its own style, so the same character looks different on Apple, Google, Microsoft and Samsung devices. The underlying Unicode character is the same."
+    },
+    {
+      "q": "Is the list complete?",
+      "a": "No. It covers a large set of commonly used emoji in eight categories, not every skin tone variant, flag or newly added sequence. For other symbols, use the Unicode character map."
+    }
+  ],
+  "related": [
+    "unicode-character-map",
+    "fancy-text",
+    "char-info",
+    "html-entities-reference",
+    "unicode-escape",
+    "zalgo-text"
+  ],
+  "keywords": [
+    "emoji picker",
+    "emoji copy and paste",
+    "emoji search",
+    "emoji keyboard online",
+    "free emoji list"
+  ]
+}

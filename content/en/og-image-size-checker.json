@@ -1,0 +1,45 @@
+{
+ "id": "og-image-size-checker",
+ "seoTitle": "Social Image Size Checker for Open Graph Images",
+ "metaDescription": "Choose an image to check pixels, aspect ratio and file size against Facebook and LinkedIn link-preview guidance. Nothing is uploaded.",
+ "intro": "Reads an image locally and tests it against published sharing guidance.",
+ "why": "A wrong-sized og:image gets cropped, shown small or ignored. The rules differ between platforms and change over time.\n\nThis tool checks Facebook (200x200 minimum, 600x315 for a large preview, 1200x630 recommended, 8 MB) and LinkedIn (1200x627, 1.91:1, 5 MB). X and Slack are not tested because their limits could not be verified at the source. A pass is not a guarantee.",
+ "howTo": [
+  "Choose an image file.",
+  "Read its pixels, ratio and size.",
+  "See each check as PASS, REVIEW or FAIL.",
+  "Resize if needed and check again."
+ ],
+ "faq": [
+  {
+   "q": "Why 1.91:1?",
+   "a": "Both platforms recommend about that ratio for link previews."
+  },
+  {
+   "q": "Is the image uploaded?",
+   "a": "No, it is read in your browser."
+  },
+  {
+   "q": "Why no X result?",
+   "a": "Its limits could not be checked at the source."
+  },
+  {
+   "q": "What formats work?",
+   "a": "Whatever your browser can decode, such as PNG, JPEG, WebP, GIF."
+  }
+ ],
+ "related": [
+  "og-twitter-generator",
+  "meta-analyzer",
+  "social-preview",
+  "opengraph-banner-canvas-generator",
+  "image-resizer",
+  "image-compressor"
+ ],
+ "keywords": [
+  "og image size",
+  "open graph image checker",
+  "social share image dimensions",
+  "1200x630"
+ ]
+}

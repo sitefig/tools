@@ -1,0 +1,45 @@
+{
+ "id": "webcam-color-sampler",
+ "seoTitle": "Webcam Color Sampler: Read a Real-World Color via Camera",
+ "metaDescription": "Point your camera at an object and read the average colour under a box as HEX and RGB. Free, local, nothing recorded.",
+ "intro": "Shows the live camera view with a sampling box and reports the average colour inside it as HEX and RGB. Save colours into a list.",
+ "why": "Matching a paint chip or a fabric starts with a number. The tool averages a small box of pixels, which reduces camera noise. Move the box with sliders and set its size.\n\nCamera auto white balance and lighting change what is measured, so use a neutral light and compare with a known reference. The video stays in your browser.",
+ "howTo": [
+  "Press Start camera and allow access.",
+  "Move the box over your object with the position sliders.",
+  "Press Save this colour to keep a value.",
+  "Click a saved colour to copy it."
+ ],
+ "faq": [
+  {
+   "q": "Is the colour accurate?",
+   "a": "It is a guide. Cameras adjust colour automatically and lights tint objects."
+  },
+  {
+   "q": "Does it save video?",
+   "a": "No. Frames are only drawn on the screen."
+  },
+  {
+   "q": "Can I sample a photo?",
+   "a": "Use the Color Picker from Image."
+  },
+  {
+   "q": "Why a box and not one pixel?",
+   "a": "Averaging cuts noise."
+  }
+ ],
+ "related": [
+  "color-picker-from-image",
+  "color-picker",
+  "color-converter",
+  "media-devices-viewer",
+  "webcam-recorder",
+  "color-names-lookup"
+ ],
+ "keywords": [
+  "camera color picker",
+  "webcam color detector",
+  "read color with camera",
+  "real world color sampler"
+ ]
+}

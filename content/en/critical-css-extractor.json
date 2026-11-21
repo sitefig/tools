@@ -1,0 +1,45 @@
+{
+ "id": "critical-css-extractor",
+ "seoTitle": "Critical CSS Extractor: Above-the-Fold Rules to Inline",
+ "metaDescription": "Paste HTML and your stylesheet to get only the rules that match the first screen of elements, plus the snippet that loads the rest without blocking.",
+ "intro": "Extracts the CSS rules that match the first elements of a page so you can inline them and defer the rest.",
+ "why": "Inlining the CSS needed for the first screen lets the browser paint before the full stylesheet arrives.\n\nWithout a rendering engine this tool uses a proxy: html, body and the first N visible body elements. It keeps rules whose selectors match them, matching media queries, the fonts they use and the keyframes they name, and drops print rules. It gives you the style tag and the preload snippet. Check it at real viewport sizes.",
+ "howTo": [
+  "Paste the page HTML and the full CSS.",
+  "Set how many body elements count as above the fold.",
+  "Copy the critical CSS into a style tag in the head.",
+  "Load the full stylesheet with the preload snippet."
+ ],
+ "faq": [
+  {
+   "q": "How accurate is above the fold?",
+   "a": "It is a heuristic by element count, not by pixels. Raise the number if content flashes unstyled."
+  },
+  {
+   "q": "What about selectors it cannot test?",
+   "a": "Rules with :is(), :has() or nth-child are kept to be safe and counted in the summary."
+  },
+  {
+   "q": "Does it handle @media?",
+   "a": "Yes. Inner rules are filtered and print blocks are dropped."
+  },
+  {
+   "q": "Is my CSS uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "unused-css-finder",
+  "css-minify",
+  "render-blocking-resource-finder",
+  "compression-size-estimator",
+  "resource-hints-generator",
+  "css-selector-tester"
+ ],
+ "keywords": [
+  "critical css extractor",
+  "inline critical css",
+  "above the fold css",
+  "critical path css"
+ ]
+}

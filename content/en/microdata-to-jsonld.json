@@ -1,0 +1,45 @@
+{
+ "id": "microdata-to-jsonld",
+ "seoTitle": "Microdata to JSON-LD Converter",
+ "metaDescription": "Convert schema.org microdata in pasted HTML to JSON-LD. Nested itemscope becomes nested objects and itemref is followed. Runs locally.",
+ "intro": "Reads itemscope, itemtype, itemprop and itemid from pasted HTML and writes equivalent JSON-LD.",
+ "why": "Moving from microdata to JSON-LD means rewriting markup by hand, and mistakes creep in with nested items. This tool applies the value rules of the HTML Microdata specification: meta content, src and href for links, data and time attributes, text content otherwise, and follows itemref.\n\nValues keep their string form, so a price stays \"89.99\"; the converter does not guess numbers. Relative links stay relative unless you give a base URL.",
+ "howTo": [
+  "Paste the HTML with the microdata.",
+  "Optionally enter the base URL for relative links.",
+  "Read the JSON-LD output.",
+  "Place it in a script tag and remove the microdata attributes."
+ ],
+ "faq": [
+  {
+   "q": "Does it handle nested items?",
+   "a": "Yes. An element with itemscope and itemprop becomes a nested object."
+  },
+  {
+   "q": "What about several items on a page?",
+   "a": "Several top-level items are output in one @graph."
+  },
+  {
+   "q": "Are multiple values supported?",
+   "a": "Repeated properties become arrays."
+  },
+  {
+   "q": "Is the output verified against another converter?",
+   "a": "Checked by hand against the specification on samples; no independent converter was available in the build environment."
+  }
+ ],
+ "related": [
+  "rdfa-to-jsonld",
+  "structured-data-extractor",
+  "jsonld-syntax-validator",
+  "schema-property-checker",
+  "product-page-extractor",
+  "schema-generator"
+ ],
+ "keywords": [
+  "microdata to json-ld",
+  "convert microdata",
+  "itemscope itemprop to json-ld",
+  "microdata converter"
+ ]
+}

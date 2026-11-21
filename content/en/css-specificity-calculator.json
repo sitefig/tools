@@ -1,0 +1,46 @@
+{
+  "id": "css-specificity-calculator",
+  "seoTitle": "Free CSS Specificity Calculator: Which Selector Wins",
+  "metaDescription": "Calculate CSS specificity as (a,b,c) for selectors or a whole stylesheet and see which one wins. Free, runs in your browser, nothing is uploaded.",
+  "intro": "Computes the specificity of each CSS selector as an (a,b,c) triple and highlights the highest. Paste selectors one per line, as comma lists, or a full stylesheet.",
+  "why": "When your CSS rule has no effect, the cause is almost always specificity: a more specific selector somewhere else is winning. Working it out means counting IDs, classes and element names in your head, and remembering that :not() and :is() take their most specific argument while :where() counts for nothing.\n\nPaste your selectors and each one is scored as three numbers: IDs, then classes, attributes and pseudo-classes, then elements and pseudo-elements. The highest is marked. You can paste a whole stylesheet, and the tool pulls out the selectors for you. Note that it compares selector specificity only, not source order, cascade layers or !important, which can also decide a conflict. It runs in your browser.",
+  "howTo": [
+    "Paste selectors, one per line, or a whole stylesheet.",
+    "Read the (a,b,c) score in front of each selector.",
+    "Look for the line marked as the highest.",
+    "Adjust the selectors, then recheck."
+  ],
+  "faq": [
+    {
+      "q": "How is (a,b,c) read?",
+      "a": "The first number counts ID selectors, the second counts classes, attributes and pseudo-classes, the third counts element types and pseudo-elements. Compare from left to right: any higher a beats any b, and so on."
+    },
+    {
+      "q": "How are :not, :is, :where and :has handled?",
+      "a": ":not, :is, :matches and :has take the specificity of their most specific argument. :where adds nothing. nth-child pseudo-classes count as one class, plus any selector listed after \"of\"."
+    },
+    {
+      "q": "Does the tool consider !important, inline styles or layers?",
+      "a": "No. It scores selectors only. Inline styles, !important declarations, cascade layers and source order are applied separately by the browser and can override these results."
+    },
+    {
+      "q": "What does the highest marker mean?",
+      "a": "It points at the selector with the greatest specificity in the list you pasted. If two are equal, the first one is shown, and in a real page the later rule in the source would win."
+    }
+  ],
+  "related": [
+    "css-selector-tester",
+    "css-selector-speed-profiler",
+    "css-format",
+    "css-minify",
+    "tailwind-converter",
+    "css-to-scss"
+  ],
+  "keywords": [
+    "css specificity calculator",
+    "css selector specificity",
+    "which css selector wins",
+    "specificity score checker",
+    "free specificity tool"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "pdf-compare",
+  "seoTitle": "PDF Compare: Visual Difference Between Two PDFs",
+  "metaDescription": "Compare two versions of a PDF page by page: pages are rendered and differences are highlighted in red, with the percentage changed and where.",
+  "intro": "See exactly what changed between two revisions of a document.",
+  "why": "Select both PDFs together (original first). Each pair of pages is rendered at the same size and compared pixel by pixel with an adjustable threshold. The result is a PNG per page showing differences in red over a faded copy of the original, and a summary with the percentage of changed pixels and the areas with the most change.\n\nThis is a visual comparison, so it works for scans and any layout but cannot tell text edits from layout shifts: inserting a paragraph moves everything below it and lights up the rest of the page.\n\nThe file is read in your browser and is not uploaded anywhere.",
+  "howTo": [
+    "Select two PDFs at once.",
+    "Choose pages, resolution and threshold.",
+    "Review the diff images.",
+    "Use a text compare when you only need wording changes."
+  ],
+  "faq": [
+    {
+      "q": "Can it compare text only?",
+      "a": "No, it compares appearance."
+    },
+    {
+      "q": "What does the threshold do?",
+      "a": "Pixel colour differences below it are ignored."
+    },
+    {
+      "q": "Do page counts have to match?",
+      "a": "Pages are compared by number; extra pages are reported."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "The file is read in your browser and is not uploaded anywhere."
+    }
+  ],
+  "related": [
+    "text-diff",
+    "pdf-info",
+    "pdf-to-image",
+    "image-diff",
+    "pdf-merge",
+    "pdf-dark-mode"
+  ],
+  "keywords": [
+    "compare pdf",
+    "pdf diff",
+    "pdf difference",
+    "visual pdf comparison"
+  ]
+}

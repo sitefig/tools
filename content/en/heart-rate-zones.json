@@ -1,0 +1,46 @@
+{
+ "id": "heart-rate-zones",
+ "seoTitle": "Free Heart Rate Zones Calculator with Karvonen Method",
+ "metaDescription": "Calculate maximum heart rate and five training zones from your age, using the Karvonen method if you enter a resting heart rate. Free, in your browser.",
+ "intro": "Enter your age and, optionally, your resting heart rate. The tool estimates your maximum heart rate and lists five training zones in beats per minute.",
+ "why": "Training by feel works until you want to know whether your easy runs are really easy. Heart rate zones give each session a purpose: gentle recovery, aerobic base, tempo or hard intervals. The simplest estimate is 220 minus your age for maximum heart rate, applied as percentages. The Karvonen method refines it by using your heart rate reserve, the gap between resting and maximum, so the zones shift to suit how fit you are. This page shows both the 220 minus age figure and the Tanaka alternative, and switches to Karvonen when you enter a resting rate. Formula-based maximums can be off by ten beats or more, so use a tested maximum if you have one. Not medical advice; all processing is local.",
+ "howTo": [
+  "Enter your age.",
+  "Enter your resting heart rate, or 0 to use plain percentages of maximum.",
+  "Read your estimated maximum and the five zones in beats per minute."
+ ],
+ "faq": [
+  {
+   "q": "How is maximum heart rate estimated?",
+   "a": "The tool uses 220 minus age and also shows the Tanaka formula, 208 minus 0.7 times age. Both are population averages and individual maximums vary by ten beats or more."
+  },
+  {
+   "q": "What is the Karvonen method?",
+   "a": "It sets the target as resting heart rate plus a percentage of the heart rate reserve (maximum minus resting). It tends to give higher, more personalised zones than a plain percentage of maximum."
+  },
+  {
+   "q": "How do I measure my resting heart rate?",
+   "a": "Take your pulse for a minute when you wake up, before getting out of bed, and average a few days. A smartwatch overnight reading also works."
+  },
+  {
+   "q": "Is this safe to rely on?",
+   "a": "It is an informational estimate, not medical advice. If you have a heart condition, take medication that affects heart rate or feel unwell, speak to your doctor before training by zones."
+  }
+ ],
+ "related": [
+  "bmr-tdee",
+  "bmi-calculator",
+  "water-intake",
+  "body-fat-navy",
+  "stopwatch",
+  "ideal-weight"
+ ],
+ "keywords": [
+  "heart rate zones calculator",
+  "free heart rate calculator",
+  "karvonen formula calculator",
+  "max heart rate calculator",
+  "training zones by age",
+  "target heart rate"
+ ]
+}

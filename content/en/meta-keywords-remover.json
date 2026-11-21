@@ -1,0 +1,45 @@
+{
+ "id": "meta-keywords-remover",
+ "seoTitle": "Legacy Meta Tag Remover: Strip meta keywords",
+ "metaDescription": "Remove the meta keywords tag and other obsolete meta tags from a pasted head. See exactly what was removed. Free, local.",
+ "intro": "Strips meta keywords and other old meta tags from HTML.",
+ "why": "Google has said it does not use the meta keywords tag, and it only reveals your target terms to competitors. Old templates carry other dead tags too.\n\nThe tool removes keywords and, if you leave the option on, a list of legacy names such as revisit-after, distribution and rating. That list is my own judgement of tags no major engine documents, so review the removed list before shipping.",
+ "howTo": [
+  "Paste the head or the page source.",
+  "Choose whether to remove other legacy tags.",
+  "Run the tool.",
+  "Check the list of removed tags and copy the cleaned HTML."
+ ],
+ "faq": [
+  {
+   "q": "Does removing keywords hurt SEO?",
+   "a": "Google ignores it. Other engines may have used it long ago."
+  },
+  {
+   "q": "What else is removed?",
+   "a": "Names like revisit-after, distribution, rating and classification, if enabled."
+  },
+  {
+   "q": "Does it touch robots or description?",
+   "a": "No."
+  },
+  {
+   "q": "Is the original kept?",
+   "a": "The removed tags are listed in a comment at the end."
+  }
+ ],
+ "related": [
+  "html-head-extractor",
+  "meta-tag-generator",
+  "seo-inspector",
+  "meta-refresh-detector",
+  "html-minify",
+  "tracker-detector"
+ ],
+ "keywords": [
+  "meta keywords remover",
+  "remove meta keywords",
+  "obsolete meta tags",
+  "clean head html"
+ ]
+}

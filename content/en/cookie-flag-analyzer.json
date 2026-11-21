@@ -1,0 +1,46 @@
+{
+ "id": "cookie-flag-analyzer",
+ "seoTitle": "Free Cookie Flag Analyzer: Secure, HttpOnly, SameSite",
+ "metaDescription": "Paste Set-Cookie headers to check Secure, HttpOnly, SameSite, cookie prefixes, lifetime and known tracking cookies. Free and in-browser.",
+ "intro": "Paste Set-Cookie header lines to check the Secure, HttpOnly and SameSite flags, __Host- and __Secure- prefix rules, lifetime, scope and known tracking cookies.",
+ "why": "Cookie flags decide whether a stolen script, a network eavesdropper or another site can reach a session cookie. A missing HttpOnly lets injected JavaScript read it, a missing Secure sends it over plain HTTP, and a loose SameSite setting invites cross-site request abuse. These mistakes are easy to make and hard to see in the browser.\n\nThis analyser parses each Set-Cookie line you paste, lists its flags and attributes and reports issues ranked from high to low severity. It checks the rules for cookie name prefixes, long lifetimes and broad Domain scope, and recognises common tracking cookies. Values are shortened in the output. You can say whether the site uses HTTPS, as some checks depend on it. Everything runs locally.",
+ "howTo": [
+  "Copy the Set-Cookie header lines from your browser developer tools or from curl output.",
+  "Paste them into the input box, one per line.",
+  "Tick or untick the option that says the site is served over HTTPS.",
+  "Run the tool and fix the high-severity issues first."
+ ],
+ "faq": [
+  {
+   "q": "What does each flag protect against?",
+   "a": "Secure keeps the cookie off plain HTTP, HttpOnly hides it from JavaScript, and SameSite limits sending it on cross-site requests. Together they reduce theft and request forgery risks."
+  },
+  {
+   "q": "What are the __Host- and __Secure- prefixes?",
+   "a": "They are name prefixes that browsers enforce. __Secure- requires the Secure flag. __Host- also requires Path=/ and no Domain attribute, which locks the cookie to the exact host."
+  },
+  {
+   "q": "Does it need the Cookie header too?",
+   "a": "No. It reads Set-Cookie response headers only, the lines that create or update cookies. Request Cookie headers contain no flags, so there is nothing to check in them."
+  },
+  {
+   "q": "Are my cookies uploaded?",
+   "a": "No. The text is analysed in your browser and not sent anywhere. Even so, do not paste live session cookies you still use."
+  }
+ ],
+ "related": [
+  "http-headers-analyzer",
+  "har-analyzer",
+  "security-headers-generator",
+  "csp-analyzer",
+  "tracker-detector",
+  "jwt-decode"
+ ],
+ "keywords": [
+  "cookie flag checker",
+  "check httponly secure samesite",
+  "set-cookie analyzer",
+  "cookie security audit",
+  "cookie attributes tester"
+ ]
+}

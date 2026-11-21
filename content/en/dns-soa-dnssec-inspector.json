@@ -1,0 +1,43 @@
+{
+ "id": "dns-soa-dnssec-inspector",
+ "seoTitle": "Free DNS SOA & DNSSEC Record Inspector",
+ "metaDescription": "Decode SOA, DNSKEY, DS, RRSIG and NSEC3PARAM records, check timers and confirm a DS digest matches its DNSKEY. Free, in your browser.",
+ "intro": "Paste SOA, DNSKEY, DS or CDS, RRSIG and NSEC3PARAM records to decode them. The tool checks timers, key tags, algorithms and signature windows, and whether a DS digest matches the DNSKEY.",
+ "why": "DNSSEC problems are hard to see. A zone stops resolving because a signature expired yesterday, a DS record at the registrar points to a key that was rolled, or a SOA timer is far outside normal guidance. The records are long strings of hex and base64, and dig output does not explain them.\n\nThis inspector decodes what you paste and flags the common problems: SOA timers against RFC 1912 guidance, key tag and algorithm, whether a key is a KSK or ZSK, signature inception and expiry, and the DS digest, which is recomputed locally with SHA-1, SHA-256 or SHA-384. It reads records you paste and does not query DNS. Nothing leaves your browser.",
+ "howTo": [
+  "Run dig or your DNS provider's export and copy the SOA, DNSKEY, DS, RRSIG or NSEC3PARAM records.",
+  "Paste them into the input box, one record per line.",
+  "Read the decoded fields, the warnings and the DS digest check.",
+  "Fix expired signatures, mismatched DS records or odd timers at your DNS host or registrar."
+ ],
+ "faq": [
+  {
+   "q": "Does the tool query DNS for me?",
+   "a": "No. It only decodes records you paste, so you control what is checked. Use dig or your provider's console to fetch the records, and make sure you copy them from the right zone."
+  },
+  {
+   "q": "What does a DS mismatch mean?",
+   "a": "The digest in the parent's DS record does not match the child zone's DNSKEY. Validating resolvers will treat the zone as bogus, so update the DS at your registrar to match the active KSK."
+  },
+  {
+   "q": "Are the SOA warnings strict rules?",
+   "a": "They compare your timers with RFC 1912 guidance, which is older advice. Many operators use different values on purpose, so treat the notes as hints, not errors."
+  }
+ ],
+ "related": [
+  "dns-record-generator",
+  "dns-spf-record-flattener",
+  "spf-record-generator",
+  "dmarc-generator",
+  "dkim-record-generator",
+  "ip-validator-converter"
+ ],
+ "keywords": [
+  "dnssec record inspector",
+  "soa record decoder",
+  "ds record validator",
+  "dnskey key tag calculator",
+  "rrsig expiry checker",
+  "free dns tools online"
+ ]
+}

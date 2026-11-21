@@ -1,0 +1,39 @@
+{
+ "id": "raci-matrix-builder",
+ "seoTitle": "RACI Matrix Builder With Role Checks",
+ "metaDescription": "Turn tasks and assignments into a RACI table and flag tasks without exactly one accountable owner. Free and private.",
+ "intro": "Builds a RACI table from text and checks the common mistakes.",
+ "why": "A RACI matrix says who does the work, who is accountable, who is consulted and who is informed. Common mistakes are two accountable people or none, and nobody doing the work.\n\nList people on the first line and tasks below with a role per person. The tool builds the table and lists problems for review.",
+ "howTo": [
+  "Write a People line.",
+  "Add one task per line with assignments like Ana=R.",
+  "Fix the review items and run again."
+ ],
+ "faq": [
+  {
+   "q": "Can there be several responsible people?",
+   "a": "Yes. Accountable should be exactly one."
+  },
+  {
+   "q": "What do the letters mean?",
+   "a": "Responsible, Accountable, Consulted, Informed."
+  },
+  {
+   "q": "Can a person have two roles on a task?",
+   "a": "Use the more senior role; the tool takes one per person."
+  }
+ ],
+ "related": [
+  "lean-canvas-builder",
+  "business-model-canvas-builder",
+  "okr-planner-scorer",
+  "decision-matrix",
+  "profit-margin",
+  "break-even"
+ ],
+ "keywords": [
+  "raci matrix builder",
+  "raci chart",
+  "responsibility assignment"
+ ]
+}

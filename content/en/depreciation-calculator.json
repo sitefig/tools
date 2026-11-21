@@ -1,0 +1,39 @@
+{
+ "id": "depreciation-calculator",
+ "seoTitle": "Depreciation Calculator: Straight-Line, Declining, SYD",
+ "metaDescription": "Build a depreciation schedule from cost, residual value and life using straight-line, declining balance or sum-of-the-years-digits.",
+ "intro": "Yearly depreciation, accumulated depreciation and book value.",
+ "why": "Depreciation spreads the cost of an asset over its life. Straight-line is even, declining balance front-loads, and sum-of-years-digits front-loads less sharply.\n\nThe schedule never goes below residual value and uses whole years. Tax rules may require different methods or rates.",
+ "howTo": [
+  "Enter cost, residual value and life.",
+  "Choose the method.",
+  "Read the table."
+ ],
+ "faq": [
+  {
+   "q": "What is the factor?",
+   "a": "Declining balance uses factor divided by life as the yearly rate. 2 means double declining."
+  },
+  {
+   "q": "Does it handle part years?",
+   "a": "No."
+  },
+  {
+   "q": "Does it match tax rules?",
+   "a": "Not necessarily."
+  }
+ ],
+ "related": [
+  "corporate-tax-estimator",
+  "break-even",
+  "profit-margin",
+  "loan-calculator",
+  "roi-calculator",
+  "percent-change"
+ ],
+ "keywords": [
+  "depreciation calculator",
+  "straight line depreciation",
+  "declining balance"
+ ]
+}

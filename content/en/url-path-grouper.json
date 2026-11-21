@@ -1,0 +1,45 @@
+{
+ "id": "url-path-grouper",
+ "seoTitle": "URL List Sorter and Folder Counter by Path Depth",
+ "metaDescription": "Sort a URL list by folder and see how many URLs sit in each folder and at each depth. Handy for sitemap, crawl and log exports.",
+ "intro": "Groups URLs under their folders at the level you choose, counts them, shows the depth distribution and lists the URLs sorted by path.",
+ "why": "A flat list of thousands of URLs hides the structure of a site. Counting by folder shows where the pages are, which sections are large and how deep the site goes.\n\nPick the folder level (1 = first folder, 2 = first two folders). A URL that is a file or page directly in a folder counts toward that folder; the last path segment is never treated as a folder. Nothing is requested: it only reads the list.",
+ "howTo": [
+  "Paste your URLs.",
+  "Choose the folder level and order.",
+  "Read the folder table and depth table.",
+  "Switch off the URL list if you only need the counts."
+ ],
+ "faq": [
+  {
+   "q": "What does depth mean here?",
+   "a": "The number of path segments. The home page is 0, /blog/post is 2."
+  },
+  {
+   "q": "Is the last segment a folder?",
+   "a": "No. /shop/widgets groups under /shop/ with widgets as the page."
+  },
+  {
+   "q": "Does it handle hosts?",
+   "a": "Only the path is used for grouping, so different hosts with the same path end up together."
+  },
+  {
+   "q": "How big a list can it take?",
+   "a": "Tens of thousands of lines are fine in a modern browser."
+  }
+ ],
+ "related": [
+  "url-list-normalizer",
+  "crawl-error-url-grouper",
+  "sitemap-url-extractor",
+  "sort-lines",
+  "url-parser",
+  "sitemap-validator"
+ ],
+ "keywords": [
+  "sort urls by folder",
+  "count urls per directory",
+  "url depth analysis",
+  "group urls by path"
+ ]
+}

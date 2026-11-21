@@ -1,0 +1,46 @@
+{
+ "id": "metronome",
+ "seoTitle": "Free Online Metronome - Adjustable BPM and Beats",
+ "metaDescription": "A click-track metronome with adjustable tempo from 20 to 300 BPM, beats per bar and an accented first beat. Free, runs in your browser.",
+ "intro": "Set a tempo and the number of beats per bar and start the click. The first beat of each bar is higher-pitched, and a dot flashes in time.",
+ "why": "Practising with a metronome is the simplest way to improve timing, whether you play an instrument, write music or rehearse a speech. A phone app works, but a browser metronome is handy on a laptop already open on your music or notes, with no install and no adverts.\n\nThis metronome schedules clicks ahead of time using the audio clock rather than a plain timer, so the beat stays steady even when the page is busy. Tempo goes from 20 to 300 BPM, and you can set one to twelve beats per bar, with the downbeat sounding at a higher pitch than the others. A coloured dot flashes with each click: red on the downbeat, green on the rest. If you need to find the tempo of an existing song first, use the tap tempo tool.",
+ "howTo": [
+  "Enter the tempo in beats per minute, from 20 to 300.",
+  "Enter the beats per bar, for example 4 for 4/4 time.",
+  "Press Start and play along to the click.",
+  "Press Stop to end; changes to the tempo take effect while it is running."
+ ],
+ "faq": [
+  {
+   "q": "How accurate is the timing?",
+   "a": "Clicks are scheduled on the Web Audio clock, which is far steadier than a normal JavaScript timer. The flashing dot is a visual aid and may lag slightly on slow devices, but the sound stays on time."
+  },
+  {
+   "q": "How do I find the tempo of a song?",
+   "a": "Use the tap tempo tool: tap along with the music for several beats and read the BPM. Then enter that figure here to practise at the same speed."
+  },
+  {
+   "q": "Can I set a time signature like 6/8?",
+   "a": "Only the number of beats per bar is adjustable, so 6/8 can be approximated with 6 beats at double the tempo. There are no subdivisions or custom accent patterns."
+  },
+  {
+   "q": "Why is there no sound?",
+   "a": "Browsers only start audio after you interact with the page, so press Start rather than relying on autoplay. Also check that your device is not muted and the tab is not muted."
+  }
+ ],
+ "related": [
+  "audio-bpm-tap",
+  "tone-generator",
+  "white-noise-generator",
+  "pomodoro-timer",
+  "stopwatch",
+  "countdown-timer"
+ ],
+ "keywords": [
+  "online metronome",
+  "free metronome bpm",
+  "click track online",
+  "metronome with accent",
+  "browser metronome"
+ ]
+}

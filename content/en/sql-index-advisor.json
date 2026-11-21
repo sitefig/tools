@@ -1,0 +1,45 @@
+{
+ "id": "sql-index-advisor",
+ "seoTitle": "Free SQL Index Advisor - Suggest CREATE INDEX Online",
+ "metaDescription": "Paste your schema and queries to get CREATE INDEX suggestions from WHERE, JOIN and ORDER BY columns. Static heuristic, free, runs in your browser.",
+ "intro": "Suggests CREATE INDEX statements from your CREATE TABLE schema and the SELECT, UPDATE and DELETE queries you run, using WHERE equality and range columns, join keys, ORDER BY and GROUP BY.",
+ "why": "Slow queries are often missing an index, but guessing which one to add is a good way to create indexes that never get used and slow down writes. This tool reads the queries you actually run and proposes indexes from the pattern: equality columns first, then range columns, plus join keys and sort columns. It skips what already exists, such as primary keys, UNIQUE constraints and indexes you have defined. Add the schema for better column resolution. It is a static heuristic without table statistics, so it cannot know row counts or selectivity. Always confirm a suggestion with EXPLAIN on real data before adding it to production. Everything is analysed in your browser.",
+ "howTo": [
+  "Paste your CREATE TABLE and CREATE INDEX statements into the first box.",
+  "Paste the queries you run, separated by semicolons, into the second box.",
+  "Read the suggested indexes, then test each one with EXPLAIN on real data."
+ ],
+ "faq": [
+  {
+   "q": "How does it choose the column order?",
+   "a": "Equality conditions come first, then range conditions, then join, ORDER BY or GROUP BY columns where they can help. This follows the common rule of thumb for composite indexes."
+  },
+  {
+   "q": "Will it suggest indexes that already exist?",
+   "a": "It skips columns already covered by a primary key, a UNIQUE constraint or an index in the schema you provide. Without a schema it cannot do this reliably."
+  },
+  {
+   "q": "Can I trust the suggestions?",
+   "a": "They are a starting point. Without statistics the tool cannot judge selectivity, and an index also costs write speed and space. Confirm with EXPLAIN before adding it."
+  },
+  {
+   "q": "Does it handle every kind of query?",
+   "a": "It handles common SELECT, UPDATE and DELETE patterns. Complex queries with subqueries or functions on columns may produce limited or no suggestions."
+  }
+ ],
+ "related": [
+  "sql-explainer",
+  "postgres-explain-visualizer",
+  "sql-dialect-converter",
+  "sql-to-typescript",
+  "sql-format",
+  "sql-on-csv"
+ ],
+ "keywords": [
+  "sql index advisor",
+  "suggest indexes for sql queries",
+  "create index recommendation tool",
+  "free index suggestion",
+  "where clause index finder"
+ ]
+}

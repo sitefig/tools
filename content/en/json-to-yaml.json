@@ -1,0 +1,47 @@
+{
+ "id": "json-to-yaml",
+ "seoTitle": "Free JSON to YAML Converter Online",
+ "metaDescription": "Free online JSON to YAML converter. Get clean block-style YAML with 2 or 4 space indentation, ready for config files. Runs in your browser.",
+ "intro": "Turn JSON into readable block-style YAML with a 2 or 4 space indent. Paste an API response or settings object and copy YAML for your config file.",
+ "why": "YAML is the usual language of configuration for Kubernetes, CI pipelines and Docker Compose, but data often arrives as JSON. Retyping it invites indentation mistakes, and YAML is unforgiving about those. A converter gives you a consistent starting point.\n\nPaste the JSON and you get block-style YAML with nested maps and lists laid out in the standard way, ready to drop into a file. This is handy when you copy a JSON example from API documentation into a pipeline, or turn an exported settings object into something humans can edit. Because JSON is valid input and the output is regenerated from the parsed data, you also catch syntax errors early. Conversion is local and nothing is uploaded.",
+ "howTo": [
+  "Paste your JSON into the input box.",
+  "Choose an indent of 2 or 4 spaces.",
+  "Copy the YAML output into your config file.",
+  "If an error appears, fix the JSON at the line and column shown."
+ ],
+ "faq": [
+  {
+   "q": "Is the output block style or flow style?",
+   "a": "Block style, with maps and lists on separate indented lines. Flow style such as {a: 1} is not used, which keeps the result easy to read and diff."
+  },
+  {
+   "q": "Are comments or key order preserved?",
+   "a": "JSON has no comments, so none appear. Keys keep the order of your input. Strings that could be confused with other YAML types, such as true or numbers, are quoted."
+  },
+  {
+   "q": "Can I go from YAML back to JSON?",
+   "a": "Yes, use the YAML to JSON tool. It handles maps, lists, flow style, block scalars, anchors and multiple documents."
+  },
+  {
+   "q": "Does it work for Kubernetes or Compose files?",
+   "a": "It produces valid YAML for any JSON structure. It does not know about Kubernetes or Compose, so check field names against the schema you target."
+  }
+ ],
+ "related": [
+  "yaml-to-json",
+  "json-format",
+  "json-to-toml",
+  "yaml-format",
+  "docker-compose-formatter",
+  "json-to-xml"
+ ],
+ "keywords": [
+  "json to yaml converter",
+  "convert json to yaml online",
+  "json to yaml free",
+  "json yaml tool",
+  "json to yaml block style",
+  "online json to yaml"
+ ]
+}

@@ -1,0 +1,47 @@
+{
+ "id": "swot-generator",
+ "seoTitle": "Free SWOT Analysis Template Generator in Markdown",
+ "metaDescription": "Enter strengths, weaknesses, opportunities and threats as comma lists and get a clean SWOT analysis in Markdown. Free and runs in your browser.",
+ "intro": "Type your strengths, weaknesses, opportunities and threats as short comma-separated lists and get a tidy SWOT document in Markdown, ready for a wiki or slide.",
+ "why": "A SWOT analysis is only useful when it gets written down and shared, and people often stall on layout rather than content. A blank page, four quadrants and a vague idea of what goes where is enough to put it off.\n\nThis template removes the formatting step. Name the subject, fill four fields with comma-separated points, and you get a document with headings that remind you of the rule: strengths and weaknesses are internal, opportunities and threats are external. It ends with two prompts for next steps. It is a structure, not an analysis, so the value comes from honest, specific points. Your text is processed in the browser.",
+ "howTo": [
+  "Enter the subject of the analysis, such as a product, team or business.",
+  "Fill in strengths, weaknesses, opportunities and threats, separating items with commas.",
+  "Check the Markdown output with its four headed lists.",
+  "Copy the result into your document or presentation."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between internal and external factors?",
+   "a": "Strengths and weaknesses are inside your control, such as team skills or product quality. Opportunities and threats come from outside, such as market trends, competitors or regulation. Mixing them up is the commonest SWOT mistake."
+  },
+  {
+   "q": "How many points should each list have?",
+   "a": "Three to six specific points per quadrant is usually enough. Long lists dilute the message. Prefer concrete statements such as \"no mobile app\" over general ones such as \"technology\"."
+  },
+  {
+   "q": "Can I use semicolons or line breaks instead of commas?",
+   "a": "Yes. Items can be separated by commas, semicolons or line breaks, so a list pasted from notes works too. Empty items are dropped."
+  },
+  {
+   "q": "Is the SWOT saved?",
+   "a": "No. It is created from what is in the fields while you are on the page. Copy the Markdown if you want to keep it."
+  }
+ ],
+ "related": [
+  "competitor-comparison-matrix",
+  "user-persona-template",
+  "decision-matrix",
+  "rice-prioritization",
+  "startup-cost-calculator",
+  "press-release-template"
+ ],
+ "keywords": [
+  "swot analysis template",
+  "swot generator",
+  "swot analysis markdown",
+  "free swot tool",
+  "create a swot analysis online",
+  "strengths weaknesses opportunities threats"
+ ]
+}

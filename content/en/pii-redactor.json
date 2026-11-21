@@ -1,0 +1,46 @@
+{
+ "id": "pii-redactor",
+ "seoTitle": "Free PII Redactor: Remove Emails, Phones and IBANs",
+ "metaDescription": "Redact emails, phone numbers, IP addresses, cards, IBANs and ID numbers from text. Free, runs in your browser, nothing is uploaded.",
+ "intro": "Replace emails, phones, IPv4 and IPv6 addresses, MAC addresses, credit cards, IBANs, SSNs, Belgian national numbers and URL tokens with labels, masks or pseudonyms.",
+ "why": "Before a customer email, an export or a log excerpt is pasted into a ticket, shared with a contractor or used in an AI prompt, the personal data in it needs to go. Doing it by hand is slow and easy to get wrong, especially with long text.\n\nThis tool finds common identifiers with patterns and checks. Card numbers must pass the Luhn test and IBANs the mod-97 check, which cuts false positives. You pick the style: a label like [EMAIL], a mask that keeps the last few characters, or a stable pseudonym that maps the same value to the same token. It runs in the browser, so the text you are protecting is not uploaded.",
+ "howTo": [
+  "Paste the text into the input box.",
+  "Pick the style: label, mask or pseudonym, and how many trailing characters to keep.",
+  "Optionally list types to skip, such as IPv4, and tick the summary option.",
+  "Run the tool and copy the redacted text."
+ ],
+ "faq": [
+  {
+   "q": "Which types of data does it detect?",
+   "a": "Emails, phone numbers, IPv4 and IPv6, MAC addresses, credit cards, IBANs, US SSNs, Belgian national numbers and tokens in URL parameters. Names and street addresses are not detected."
+  },
+  {
+   "q": "Will it catch everything?",
+   "a": "No. It uses patterns, so unusual formats, names and free-text addresses can slip through. Read the output before sharing and do not rely on it as the only safeguard for regulated data."
+  },
+  {
+   "q": "What does the pseudonym style do?",
+   "a": "It replaces each distinct value with a consistent placeholder, so the same email gets the same token throughout the text. That keeps relationships visible without revealing the value."
+  },
+  {
+   "q": "Is my text sent to a server?",
+   "a": "No. Everything is processed in your browser and the tool makes no network request with your text. Closing the tab discards it, so nothing is stored on this site."
+  }
+ ],
+ "related": [
+  "secret-detector-redactor",
+  "log-privacy-workbench",
+  "image-redaction",
+  "zero-width-detector",
+  "extract-emails-urls-numbers",
+  "iban-validator"
+ ],
+ "keywords": [
+  "pii redactor online",
+  "remove personal data from text",
+  "redact emails and phone numbers",
+  "anonymise text free",
+  "mask credit card numbers"
+ ]
+}

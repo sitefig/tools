@@ -1,0 +1,45 @@
+{
+ "id": "cycling-power-speed-calculator",
+ "seoTitle": "Cycling Power and Speed Calculator (Watts, Weight, Gradient)",
+ "metaDescription": "Estimate steady cycling speed from power, rider and bike weight, gradient and riding position, or the watts needed for a target speed.",
+ "intro": "Estimate cycling speed from watts, or the watts a speed needs.",
+ "why": "Enter your power, rider and bike weight, the gradient and a riding position. The tool solves steady-state power balance: air drag, rolling resistance and gravity, with a drivetrain loss of 2.4%. It also splits the power into those three parts.\n\nDrag area (CdA) values for each position are typical assumed figures, not measurements of you. There is no wind, drafting or acceleration. Expect real rides to differ by 5 to 15%. Adjust CdA by changing the position, and Crr for the surface.",
+ "howTo": [
+  "Choose whether you know the watts or the speed.",
+  "Enter rider and bike weight and the gradient.",
+  "Pick the riding position and check Crr.",
+  "Read the speed or the watts and where the power goes."
+ ],
+ "faq": [
+  {
+   "q": "What is CdA?",
+   "a": "Drag area: the frontal area times the drag coefficient. Lower is faster. Upright riders are around 0.4 m2, time trial positions near 0.23."
+  },
+  {
+   "q": "Why is climbing speed so sensitive to weight?",
+   "a": "On steep hills most power fights gravity, so every kilogram counts directly."
+  },
+  {
+   "q": "Does it include wind?",
+   "a": "No. Wind, drafting and corners all change real speed."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No. The work happens in your browser and the page makes no network request with your input."
+  }
+ ],
+ "related": [
+  "calories-burned-calculator",
+  "heart-rate-zones",
+  "running-pace-calculator",
+  "swimming-pace-calculator",
+  "vo2-max-estimator",
+  "electricity-cost-calculator"
+ ],
+ "keywords": [
+  "cycling power calculator",
+  "watts to speed",
+  "bike speed calculator",
+  "CdA calculator"
+ ]
+}

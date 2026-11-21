@@ -1,0 +1,45 @@
+{
+  "id": "ssml-markup-builder",
+  "seoTitle": "SSML Builder: Speech Markup With Pauses, Rate, Pitch, Emphasis",
+  "metaDescription": "Turn text into SSML with pauses between paragraphs, speaking rate, pitch, emphasis, spelled-out characters and a voice name. Output is well-formed XML.",
+  "intro": "Prepare text-to-speech input for Alexa, Google, Azure or Polly with correct markup.",
+  "why": "Write plain text with a blank line between paragraphs, *word* for emphasis, [pause 500ms] for pauses and [spell 4471] for character-by-character reading. The tool escapes XML, wraps paragraphs in <p>, inserts <break> between them, applies a prosody element for rate and pitch, an optional voice and the language, and verifies the result with an XML parser.\n\nSpeech platforms accept different subsets of SSML and some require their own extensions, so test in your target service. The tool does not speak the result; the text-to-speech tool uses the browser's own voices.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Write the text with markers.",
+    "Choose language, voice, rate and pitch.",
+    "Copy the SSML.",
+    "Paste it into your speech service console."
+  ],
+  "faq": [
+    {
+      "q": "What does <break> do?",
+      "a": "It inserts a pause of a given length."
+    },
+    {
+      "q": "How do I spell out a code?",
+      "a": "Use [spell ABC], which becomes say-as interpret-as=\"characters\"."
+    },
+    {
+      "q": "Does it work in every service?",
+      "a": "The core elements are widely supported; vendor extensions are not generated."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "text-to-speech",
+    "xml-validate",
+    "xml-format",
+    "subtitle-srt-vtt-converter",
+    "transcript-cleaner",
+    "morse-code-audio"
+  ],
+  "keywords": [
+    "ssml builder",
+    "ssml generator",
+    "speech synthesis markup",
+    "alexa ssml"
+  ]
+}

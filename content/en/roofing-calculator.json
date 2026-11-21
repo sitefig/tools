@@ -1,0 +1,45 @@
+{
+  "id": "roofing-calculator",
+  "seoTitle": "Roofing Calculator: Roof Area, Squares and Shingle Bundles",
+  "metaDescription": "Estimate roof surface from the building footprint and pitch: slope factor, roof area, roofing squares and bundles with a waste allowance.",
+  "intro": "Get a first estimate of roofing material from simple measurements.",
+  "why": "The footprint (length and width plus eave overhang on each side) is multiplied by the slope factor sqrt(1 + (rise/12)^2) to get the roof surface. Squares are the surface divided by 100 sq ft, with waste added, and standard architectural shingles come in about three bundles per square.\n\nThe same factor applies to gable and hip roofs of equal pitch; dormers, valleys and complex shapes need a measured take-off, and you still have to add ridge cap, starter strip, underlayment and flashing.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter the building length and width.",
+    "Set the overhang and pitch (rise per 12 inches).",
+    "Choose the roof type and waste percentage.",
+    "Read squares and bundles."
+  ],
+  "faq": [
+    {
+      "q": "What is a roofing square?",
+      "a": "100 square feet of roof."
+    },
+    {
+      "q": "How do I find the pitch?",
+      "a": "Measure rise over 12 inches of run with a level, or read it from plans."
+    },
+    {
+      "q": "How much waste?",
+      "a": "10% for simple gable roofs, 12 to 15% for hips and complex roofs."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "roof-pitch",
+    "square-footage-calculator",
+    "concrete-calculator",
+    "tile-calculator",
+    "paint-coverage",
+    "unit-converter"
+  ],
+  "keywords": [
+    "roofing calculator",
+    "roof area calculator",
+    "shingle calculator",
+    "roof squares"
+  ]
+}

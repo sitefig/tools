@@ -1,0 +1,46 @@
+{
+ "id": "eip191-message-hash",
+ "seoTitle": "Free EIP-191 personal_sign Message Hash Calculator",
+ "metaDescription": "Compute the EIP-191 digest that personal_sign and eth_sign wallets sign, for version 0x45 or 0x00, from text or hex. Free, runs in your browser.",
+ "intro": "Enter a message as text or hex and choose version 0x45 (personal_sign) or 0x00 (intended validator). The tool shows the preimage and its Keccak-256 hash.",
+ "why": "When a wallet asks you to sign a message, it does not sign the raw text. It prefixes it with a fixed string and the message length, hashes the result with Keccak-256 and signs that digest. Developers who verify signatures on a server or in a contract have to rebuild the same hash, and mismatches usually come from the length being counted in bytes rather than characters, or from a wrong prefix. This tool shows the exact preimage and the digest for a message, so you can compare it with what your library produced. It supports the 0x45 personal_sign form and the 0x00 form that includes a validator address. It runs in your browser and produces no signature; never paste private keys into web pages.",
+ "howTo": [
+  "Enter the message and say whether it is text or hex.",
+  "Choose version 0x45 personal_sign or 0x00 validator, and enter the validator address for 0x00.",
+  "Read the preimage and the Keccak-256 hash."
+ ],
+ "faq": [
+  {
+   "q": "What exactly is hashed in personal_sign?",
+   "a": "The prefix '\\x19Ethereum Signed Message:\\n', then the message length in bytes as decimal digits, then the message bytes. The Keccak-256 of that whole string is what the wallet signs."
+  },
+  {
+   "q": "Is the length in characters or bytes?",
+   "a": "Bytes. A message with non-ASCII characters is longer in UTF-8 than its character count suggests, which is a common source of signature mismatches."
+  },
+  {
+   "q": "What is version 0x00?",
+   "a": "Data with an intended validator: the bytes 0x19 0x00, a 20-byte validator address, then the data. It ties a signature to a specific verifying contract."
+  },
+  {
+   "q": "Does this tool sign anything?",
+   "a": "No. It only computes the digest. Signing needs a private key, which you should never paste into a web page."
+  }
+ ],
+ "related": [
+  "eip712-typed-data-hash",
+  "eip55-checksum-address",
+  "ethereum-eip191-signature-verifier",
+  "ethereum-keccak256-hasher",
+  "abi-encoder-decoder",
+  "hex-text"
+ ],
+ "keywords": [
+  "eip191 message hash",
+  "personal_sign hash",
+  "free ethereum message hash",
+  "eth_sign digest",
+  "ethereum signed message prefix",
+  "keccak256 signed message"
+ ]
+}

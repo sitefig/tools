@@ -1,0 +1,45 @@
+{
+ "id": "text-obfuscator",
+ "seoTitle": "Free Text and Email Obfuscator - Hide Addresses Online",
+ "metaDescription": "Obfuscate text or an email address with HTML entities, \\u escapes, [at]/[dot] spelling, zero-width spaces, homoglyphs or reversed text. Free and in-browser.",
+ "intro": "Applies simple obfuscation to text or an email address: HTML entities, unicode escapes, [at]/[dot] spelling, zero-width spaces, look-alike Cyrillic letters or reversed output.",
+ "why": "Publishing an email address on a web page invites scrapers and spam bots. The usual advice is to make the address harder to read for a simple script while it stays readable for a person. This tool applies several common tricks so you can pick one: numeric HTML entities, JavaScript escapes, \"name [at] example [dot] com\", invisible spaces, look-alike letters, or text written backwards and flipped with CSS. Be realistic about what this achieves. It stops naive harvesters and keyword filters, not determined ones, and it is not encryption. Some methods also hurt accessibility or copy-and-paste. Everything is generated locally, so the address you type is not sent anywhere.",
+ "howTo": [
+  "Type or paste the text or email address into the input box.",
+  "Choose a method from the list, for example HTML entities (decimal) or Email: [at] / [dot].",
+  "Copy the output and paste it into your HTML, template or message."
+ ],
+ "faq": [
+  {
+   "q": "Is obfuscated text secure?",
+   "a": "No. It is not encryption. A scraper that decodes entities, or a person who reads \"[at]\", can recover the original. It only filters out the simplest harvesters and word-based filters."
+  },
+  {
+   "q": "Which method should I use?",
+   "a": "HTML entities keep the address clickable-looking and copyable once rendered. Reversed text with CSS needs a span and breaks copy-paste. Homoglyphs and zero-width spaces break search and mail links, so use them sparingly."
+  },
+  {
+   "q": "Do the results work inside a mailto link?",
+   "a": "HTML entities do, when placed in the href or link text of your HTML. The other methods change the characters themselves and will not work as a plain mailto address."
+  },
+  {
+   "q": "Does random mix give the same output each time?",
+   "a": "No. The random HTML entity mode picks a form per character using browser randomness, so repeated runs differ, though each result decodes to the same text."
+  }
+ ],
+ "related": [
+  "html-entities",
+  "unicode-escape",
+  "zero-width-detector",
+  "pii-redactor",
+  "secret-detector-redactor",
+  "string-escape"
+ ],
+ "keywords": [
+  "email obfuscator",
+  "obfuscate email address online",
+  "hide email from spam bots",
+  "free text obfuscator",
+  "html entity email encoder"
+ ]
+}

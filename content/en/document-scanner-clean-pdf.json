@@ -1,0 +1,45 @@
+{
+ "id": "document-scanner-clean-pdf",
+ "seoTitle": "Document Scanner Online: Straighten Page Photos to PDF",
+ "metaDescription": "Straighten photos of paper pages, flatten shadows, make black and white or grey scans and save a multi-page PDF. Corners by auto-detect or typed numbers. Free, local.",
+ "intro": "Load a photo of a page, find its corners automatically or type them, straighten the perspective, clean up the lighting and collect pages into one PDF. Nothing is uploaded.",
+ "why": "A phone photo of a page has a tilted shape, a shadow across one side and a grey background. This tool finds the page as the biggest light or dark area, takes its four extreme points as corners, warps the page into a rectangle and divides out the slowly changing light so the paper turns white. Black and white mode uses a local threshold, which keeps faint text that a single global threshold would lose.\n\nThe corner finder is a simple heuristic, not a trained model: it works best on a page on a plain, contrasting surface, and you can always set the corners by hand, with the pointer, with [ ] and the arrow keys, or with number boxes. A photo taken at an angle cannot tell the true page proportions, so you can pick A4 or Letter. Pages go into a PDF written by the page itself: colour pages as JPEG, grey and black and white pages as compressed greyscale.",
+ "howTo": [
+  "Choose a photo of a page (on a phone, the file dialog offers the camera).",
+  "Press \"Find the page corners automatically\", then check them and fix any by hand.",
+  "Choose the clean-up mode and page shape, press \"Straighten and clean up\", then \"Add this page to the PDF\".",
+  "Repeat for more pages, reorder them, and download the PDF."
+ ],
+ "faq": [
+  {
+   "q": "Does it use the camera directly?",
+   "a": "No. You choose a picture file; on most phones the file dialog lets you take a new photo. Live camera capture is not included."
+  },
+  {
+   "q": "Why does the page come out the wrong proportions?",
+   "a": "A photo shot at an angle does not say how long the page really is. Pick A4 or Letter in Page shape, or leave it on the measured shape."
+  },
+  {
+   "q": "How accurate is the corner detection?",
+   "a": "On a clean test photo it landed within a few percent of the picture size. Cluttered backgrounds, curled pages or a page that blends with the table can fool it, so always check the corners."
+  },
+  {
+   "q": "Is there OCR?",
+   "a": "No. The PDF contains images only. The site has a separate OCR tool for extracting text."
+  }
+ ],
+ "related": [
+  "perspective-corrector",
+  "images-to-pdf",
+  "ocr-image-to-text",
+  "pdf-compress",
+  "image-cropper",
+  "pdf-grayscale"
+ ],
+ "keywords": [
+  "document scanner online",
+  "scan paper to pdf",
+  "straighten photo of document",
+  "phone scan to pdf free"
+ ]
+}

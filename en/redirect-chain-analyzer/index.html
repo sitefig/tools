@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Redirect Chain Analyzer for curl -IL Output | Free Tools</title>
+<meta name="description" content="Paste the headers from curl -sIL or dev tools to see every redirect hop, loops, 302 vs 301 and http to https issues. No requests are made.">
+<link rel="canonical" href="https://tools.sitefig.net/en/redirect-chain-analyzer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/redirect-chain-analyzer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/redirect-chain-analyzer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Redirect Chain Analyzer for curl -IL Output | Free Tools">
+<meta property="og:description" content="Paste the headers from curl -sIL or dev tools to see every redirect hop, loops, 302 vs 301 and http to https issues. No requests are made.">
+<meta property="og:url" content="https://tools.sitefig.net/en/redirect-chain-analyzer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Redirect Chain Analyzer for curl -IL Output | Free Tools">
+<meta name="twitter:description" content="Paste the headers from curl -sIL or dev tools to see every redirect hop, loops, 302 vs 301 and http to https issues. No requests are made.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Redirect Chain Analyzer (from curl -IL output)","url":"https://tools.sitefig.net/en/redirect-chain-analyzer/","description":"Paste the headers from curl -sIL or dev tools to see every redirect hop, loops, 302 vs 301 and http to https issues. No requests are made.","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Run curl -sIL https://example.com/old in a terminal.","Paste the full output, including all hops.","Optionally enter the start URL so relative redirects resolve.","Fix chains longer than one hop and replace 302s with 301/308 where the move is permanent."],"keywords":"redirect chain checker, curl redirect, redirect loop, redirect analyzer, http redirect seo","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SEO – Technical","item":"https://tools.sitefig.net/en/#seo-technical"},{"@type":"ListItem","position":3,"name":"Redirect Chain Analyzer (from curl -IL output)","item":"https://tools.sitefig.net/en/redirect-chain-analyzer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How many redirects are too many?","acceptedAnswer":{"@type":"Answer","text":"One is fine. Googlebot follows up to about 10 hops, but every extra hop wastes crawl budget and slows users."}},{"@type":"Question","name":"301 or 302?","acceptedAnswer":{"@type":"Answer","text":"Use 301 or 308 for permanent moves and 302 or 307 for temporary ones. Search engines treat them differently."}},{"@type":"Question","name":"Can this tool check a URL for me?","acceptedAnswer":{"@type":"Answer","text":"No, it only analyses headers you paste. A browser extension could fetch them."}},{"@type":"Question","name":"Is my data sent anywhere?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is processed in your browser, and the page makes no network requests with your input."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#seo-technical">SEO – Technical</a></li><li><span aria-current="page">Redirect Chain Analyzer (from curl -IL output)</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Redirect Chain Analyzer (from curl -IL output)</h1>
+<p class="lede">Turn the raw output of a redirect check into a readable chain with the status of each hop and a list of SEO problems.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="redirect-chain-analyzer" data-module="gap2"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Run curl -sIL URL (or copy response headers from your browser), paste the output and the tool lists each hop with its status, Location and cache-control, resolves relative Locations against the start URL, and flags loops, temporary redirects where a permanent one is expected, downgrades from https to http, chains of several redirects and chains that end in an error.</p>
+<p>The page cannot fetch URLs itself (browsers block cross-site requests), so you supply the headers. Aim for at most one redirect between a link and its final URL.</p>
+<p>No data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Run curl -sIL https://example.com/old in a terminal.</li><li>Paste the full output, including all hops.</li><li>Optionally enter the start URL so relative redirects resolve.</li><li>Fix chains longer than one hop and replace 302s with 301/308 where the move is permanent.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How many redirects are too many?</summary><p>One is fine. Googlebot follows up to about 10 hops, but every extra hop wastes crawl budget and slows users.</p></details>
+<details><summary>301 or 302?</summary><p>Use 301 or 308 for permanent moves and 302 or 307 for temporary ones. Search engines treat them differently.</p></details>
+<details><summary>Can this tool check a URL for me?</summary><p>No, it only analyses headers you paste. A browser extension could fetch them.</p></details>
+<details><summary>Is my data sent anywhere?</summary><p>No. Everything is processed in your browser, and the page makes no network requests with your input.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/redirect-code-generator/"><span class="link-card__title">Redirect Rules Generator</span><span class="link-card__desc">old -&gt; new pairs to Apache .htaccess, NGINX and Netlify/Cloudflare _redirects.</span></a></li><li><a class="link-card" href="/en/redirect-map-matcher/"><span class="link-card__title">Site Migration Redirect Map Matcher</span><span class="link-card__desc">Match old URLs to new URLs by path and slug similarity and export a 301 redirect map (CSV, nginx or Apache).</span></a></li><li><a class="link-card" href="/en/http-headers-analyzer/"><span class="link-card__title">HTTP Headers Analyzer</span><span class="link-card__desc">Paste raw response headers: security, caching, compression, SEO issues.</span></a></li><li><a class="link-card" href="/en/http-status-reference/"><span class="link-card__title">HTTP Status Codes</span><span class="link-card__desc">Searchable reference of HTTP status codes and what they mean.</span></a></li><li><a class="link-card" href="/en/htaccess-generator/"><span class="link-card__title">.htaccess Generator</span><span class="link-card__desc">HTTPS, www, trailing slash, gzip, caching and security headers for Apache.</span></a></li><li><a class="link-card" href="/en/cache-control-builder/"><span class="link-card__title">Cache-Control Header Builder</span><span class="link-card__desc">Compose a Cache-Control header from directives or a preset, with conflict warnings and snippets for nginx, Apache and Express.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

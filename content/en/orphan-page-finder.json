@@ -1,0 +1,45 @@
+{
+ "id": "orphan-page-finder",
+ "seoTitle": "Find Pages Bots Crawl That Are Missing From Your Sitemap",
+ "metaDescription": "Compare the pages crawlers request in your access log with your sitemap or crawl list to find crawled URLs you do not list. Free, in your browser.",
+ "intro": "Lists pages that bots requested but that are not in the sitemap or URL list you paste, with hits, last seen time and the bots involved.",
+ "why": "Pages that bots visit but you do not list are worth a look. They may be old URLs that are still linked, pages you forgot to put in the sitemap, or true orphans that only external links reach.\n\nThe tool matches paths from your log against the URLs you paste, ignoring host, query and trailing slash. A sitemap is not a map of internal links, so treat the result as candidates. Confirm with an internal link crawl before you call a page an orphan.",
+ "howTo": [
+  "Paste access log lines in the first box.",
+  "Paste your sitemap XML or one URL per line in the second box.",
+  "Choose which bots to count and whether to keep only 200 answers.",
+  "Review the pages that are not in your list, starting with the most requested."
+ ],
+ "faq": [
+  {
+   "q": "Is a page missing from the sitemap an orphan page?",
+   "a": "Not always. An orphan has no internal links. A page can be linked and still be absent from the sitemap. Use a crawl of your internal links to confirm."
+  },
+  {
+   "q": "Can I trust the bot names in the result?",
+   "a": "Only as claims. The tool reads the user-agent text, and anyone can send a fake one. For anything that matters, check the IP addresses against the operator's published ranges or with reverse DNS."
+  },
+  {
+   "q": "Why are query strings ignored?",
+   "a": "Parameter variants would flood the list. Use the wasted crawl detector to study parameter URLs."
+  },
+  {
+   "q": "Is my log uploaded?",
+   "a": "No. The log is parsed in your browser and never sent anywhere. Logs contain IP addresses, so you may want to remove them first with the log privacy workbench."
+  }
+ ],
+ "related": [
+  "uncrawled-sitemap-urls",
+  "sitemap-url-extractor",
+  "sitemap-validator",
+  "access-log-analyzer",
+  "ai-bot-access-log-analyzer",
+  "fake-googlebot-log-detector"
+ ],
+ "keywords": [
+  "orphan page finder logs",
+  "pages crawled not in sitemap",
+  "log file vs sitemap comparison",
+  "find orphan pages googlebot"
+ ]
+}

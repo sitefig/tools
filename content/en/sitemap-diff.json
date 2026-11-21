@@ -1,0 +1,45 @@
+{
+ "id": "sitemap-diff",
+ "seoTitle": "Sitemap Diff: Added, Removed and Changed URLs",
+ "metaDescription": "Compare two sitemaps or URL lists and see added, removed and changed URLs with lastmod changes. Free, no upload.",
+ "intro": "Compares an old and a new sitemap and lists what was added, removed and changed.",
+ "why": "After a migration or redesign you want to know which URLs came or went. Eyeballing two big XML files does not work.\n\nPaste two sitemaps, or one sitemap and a plain URL list from a crawl, logs or an archive export, and the tool shows the difference. That second use finds pages missing from the sitemap. It only compares text you paste.",
+ "howTo": [
+  "Paste the old sitemap or URL list in the first box.",
+  "Paste the new one in the second box.",
+  "Tick the option to ignore trailing slashes if needed.",
+  "Review added, removed and changed lists."
+ ],
+ "faq": [
+  {
+   "q": "Can I compare a sitemap to a URL list?",
+   "a": "Yes. Plain lists work as either side."
+  },
+  {
+   "q": "What counts as changed?",
+   "a": "A different lastmod, changefreq, priority or image count for the same URL."
+  },
+  {
+   "q": "Does it fetch archives?",
+   "a": "No. Paste the list yourself."
+  },
+  {
+   "q": "Are URLs normalised?",
+   "a": "Only if you tick the option for trailing slash and host case."
+  }
+ ],
+ "related": [
+  "seo-html-compare",
+  "sitemap-validator",
+  "sitemap-url-extractor",
+  "text-diff",
+  "sitemap-url-pattern-analyzer",
+  "wayback-cdx-analyzer"
+ ],
+ "keywords": [
+  "sitemap diff",
+  "compare two sitemaps",
+  "sitemap changes",
+  "missing urls in sitemap"
+ ]
+}

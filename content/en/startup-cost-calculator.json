@@ -1,0 +1,47 @@
+{
+ "id": "startup-cost-calculator",
+ "seoTitle": "Free Startup Cost Calculator with Runway and Buffer",
+ "metaDescription": "Add one-time and monthly costs, set a runway and contingency, and see the total funding you need. Free, runs in your browser, nothing is uploaded.",
+ "intro": "List your one-time and monthly costs, choose a runway in months and a contingency percentage, and see the monthly burn and the funding you need.",
+ "why": "First-time founders usually underestimate costs, mostly because small monthly fees add up and one-off costs are forgotten. Without a total, \"how much do we need?\" becomes a guess, and runway is discovered when the money runs out.\n\nEnter each cost as a line: item, amount and whether it is once or monthly. The tool adds the one-time costs and multiplies the monthly ones by your runway, then adds a contingency buffer on top. You get the burn rate and the funding needed in one place. It is simple arithmetic with no taxes, inflation or revenue, so use it as a first-pass budget. Your figures stay in your browser.",
+ "howTo": [
+  "Enter one cost per line as \"item, amount, once\" or \"item, amount, monthly\".",
+  "Set the runway in months and the contingency percentage.",
+  "Run the calculation.",
+  "Read the table, the one-time total, the monthly burn, the contingency and the funding needed."
+ ],
+ "faq": [
+  {
+   "q": "What contingency should I use?",
+   "a": "Many people add 10 to 20 percent. The default is 15 percent. Use a higher figure when costs are uncertain or the plan depends on hiring or hardware."
+  },
+  {
+   "q": "Does it include revenue?",
+   "a": "No. It only counts costs, so the result is the funding needed with no income. If you expect revenue, subtract it yourself or model it separately."
+  },
+  {
+   "q": "How are amounts parsed?",
+   "a": "The second field is read as a number after currency symbols are stripped. Use a period for decimals and do not use commas as thousand separators, because commas separate the fields. A line without a valid amount or the word once or monthly causes an error."
+  },
+  {
+   "q": "Are taxes or inflation included?",
+   "a": "No. Amounts are used exactly as entered, so include VAT and expected price rises in the numbers if they apply."
+  }
+ ],
+ "related": [
+  "monetization-calculator",
+  "retention-calculator",
+  "break-even",
+  "savings-goal",
+  "swot-generator",
+  "ads-roas-calculator"
+ ],
+ "keywords": [
+  "startup cost calculator",
+  "startup budget template",
+  "runway calculator",
+  "free startup expense tool",
+  "how much funding do i need",
+  "monthly burn calculator"
+ ]
+}

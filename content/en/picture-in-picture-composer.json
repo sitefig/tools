@@ -1,0 +1,45 @@
+{
+ "id": "picture-in-picture-composer",
+ "seoTitle": "Picture-in-Picture Composer: Overlay One Video on Another",
+ "metaDescription": "Put a small video over a main video in a corner, with border and size. For webcam over screen recording. Private, browser only.",
+ "intro": "Overlays a second video in a corner of a main video. Choose the corner, width, margin and border colour.",
+ "why": "A webcam clip over a screen recording is the classic use. Both videos play together and are recorded as one. The main video sets the length and the inset disappears when it ends.\n\nNothing is uploaded. The file is decoded by your browser and re-encoded, so quality drops a little and the result is WebM (or MP4 where your browser can record it). It records in real time, so a 60 second clip takes about a minute and the tab must stay visible. The inset sound is muted by default so it does not clash with the main audio.",
+ "howTo": [
+  "Choose the main video and the inset video.",
+  "Pick the corner, size, margin and border.",
+  "Set the inset volume if you want it audible.",
+  "Process and download."
+ ],
+ "faq": [
+  {
+   "q": "How do I sync the two videos?",
+   "a": "They start together. Trim either one first with the Video Trimmer if they need an offset."
+  },
+  {
+   "q": "Can I use a webcam recording?",
+   "a": "Yes, record it with the Webcam Recorder, then use the file here."
+  },
+  {
+   "q": "What if the inset is longer?",
+   "a": "It stops when the main video ends."
+  },
+  {
+   "q": "Is the inset round?",
+   "a": "No, it is a rectangle with an optional border."
+  }
+ ],
+ "related": [
+  "webcam-recorder",
+  "screen-recorder",
+  "video-trimmer",
+  "video-watermarker",
+  "video-merger",
+  "video-resizer"
+ ],
+ "keywords": [
+  "picture in picture video",
+  "overlay webcam on screen recording",
+  "video overlay online",
+  "pip video composer"
+ ]
+}

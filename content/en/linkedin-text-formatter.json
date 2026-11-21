@@ -1,0 +1,41 @@
+{
+ "id": "linkedin-text-formatter",
+ "seoTitle": "LinkedIn Text Formatter: Bold and Italic with Markers",
+ "metaDescription": "Type **bold** and *italic* and get Unicode bold and italic text for LinkedIn posts, with an accessibility warning. Free, private.",
+ "intro": "Type **bold**, *italic* or ***both*** in your draft and get Unicode bold and italic text you can paste into LinkedIn, with an accessibility warning.",
+ "why": "LinkedIn posts take plain text only, so bold and italic are made with special Unicode letters. Many tools do this by selecting text. Here you write markers: **bold**, *italic* and ***both***.\n\nThe tool maps letters A to Z and digits to the sans-serif bold and italic blocks of Unicode. These are not real formatting. Screen readers may read them poorly, search cannot find them and some fonts show boxes, so use them for a word or two, never for key content.",
+ "howTo": [
+  "Write your post with **bold** and *italic* markers.",
+  "Read the converted text.",
+  "Copy it into LinkedIn.",
+  "Check it in the preview before posting."
+ ],
+ "faq": [
+  {
+   "q": "Is it accessible?",
+   "a": "Not fully. Screen readers may spell the letters or skip them. Use sparingly."
+  },
+  {
+   "q": "Why are accented letters unchanged?",
+   "a": "Unicode has no styled forms for most accented letters."
+  },
+  {
+   "q": "Why no italic digits?",
+   "a": "Unicode has no italic digits in this block, so they stay plain."
+  }
+ ],
+ "related": [
+  "fancy-text",
+  "social-post-preview",
+  "hashtag-formatter",
+  "social-post-length-checker",
+  "case-converter",
+  "instagram-line-break-formatter"
+ ],
+ "keywords": [
+  "linkedin text formatter",
+  "linkedin bold text",
+  "linkedin italic generator",
+  "unicode bold text"
+ ]
+}

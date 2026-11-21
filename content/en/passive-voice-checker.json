@@ -1,0 +1,45 @@
+{
+ "id": "passive-voice-checker",
+ "seoTitle": "Passive Voice and Long Sentence Checker",
+ "metaDescription": "Highlight likely passive sentences and sentences that are too long in your English text, with counts and percentages. Free, in your browser.",
+ "intro": "Flags sentences that look passive and sentences over a word limit, shows how many there are and the average sentence length.",
+ "why": "Passive sentences and very long sentences make text harder to follow. Counting them gives a quick sense of where to tighten.\n\nIt is a heuristic, not a grammar parser. It looks for a form of \"to be\" followed by a past participle, so it finds most simple passives but also flags some adjectives, and it misses others. Passive voice is not wrong: it is useful when the doer is unknown or unimportant. There is no search engine rule on sentence length.",
+ "howTo": [
+  "Paste your text.",
+  "Set what counts as a long sentence.",
+  "Read the counts.",
+  "Rewrite flagged sentences where it helps the reader."
+ ],
+ "faq": [
+  {
+   "q": "Is passive voice bad for SEO?",
+   "a": "No search engine penalty is known. It is a style issue."
+  },
+  {
+   "q": "Why is \"She is tired\" not flagged?",
+   "a": "The tool skips a few common adjective cases but not all of them."
+  },
+  {
+   "q": "What is a good sentence length?",
+   "a": "There is no fixed rule. Many style guides suggest an average under about 20 words."
+  },
+  {
+   "q": "Does it work in other languages?",
+   "a": "No, English only."
+  }
+ ],
+ "related": [
+  "readability",
+  "text-statistics",
+  "word-counter",
+  "duplicate-words-finder",
+  "keyword-density",
+  "title-case-headline-analyzer"
+ ],
+ "keywords": [
+  "passive voice checker",
+  "long sentence checker",
+  "sentence length analyzer",
+  "find passive sentences"
+ ]
+}

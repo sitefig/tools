@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free cURL to Vercel AI SDK Converter (generateText) | Free Tools</title>
+<meta name="description" content="Turn a curl call to an OpenAI-style or Anthropic API into Vercel AI SDK generateText or streamText code. Free, runs in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/curl-to-ai-sdk/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/curl-to-ai-sdk/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/curl-to-ai-sdk/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free cURL to Vercel AI SDK Converter (generateText) | Free Tools">
+<meta property="og:description" content="Turn a curl call to an OpenAI-style or Anthropic API into Vercel AI SDK generateText or streamText code. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/curl-to-ai-sdk/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free cURL to Vercel AI SDK Converter (generateText) | Free Tools">
+<meta name="twitter:description" content="Turn a curl call to an OpenAI-style or Anthropic API into Vercel AI SDK generateText or streamText code. Free, runs in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"cURL to Vercel AI SDK","url":"https://tools.sitefig.net/en/curl-to-ai-sdk/","description":"Turn a curl call to an OpenAI-style or Anthropic API into Vercel AI SDK generateText or streamText code. Free, runs in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste a curl command that calls a /chat/completions or Anthropic /messages endpoint.","Run the conversion to get the SDK code.","Copy it into your project and check the provider import and the environment variable name."],"keywords":"curl to vercel ai sdk, curl openai to generatetext, convert curl to ai sdk, free curl to ai sdk, anthropic curl to javascript","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Code Generators","item":"https://tools.sitefig.net/en/#code-generators"},{"@type":"ListItem","position":3,"name":"cURL to Vercel AI SDK","item":"https://tools.sitefig.net/en/curl-to-ai-sdk/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Which endpoints does it recognise?","acceptedAnswer":{"@type":"Answer","text":"OpenAI-compatible /chat/completions and Anthropic /messages requests with a JSON body. Other endpoints, such as embeddings or image generation, are not converted."}},{"@type":"Question","name":"What happens to the API key?","acceptedAnswer":{"@type":"Answer","text":"The key is replaced by an environment variable reference, so you never paste a real secret into the code. Set the variable in your own environment."}},{"@type":"Question","name":"How does it choose between generateText and streamText?","acceptedAnswer":{"@type":"Answer","text":"If the request body contains \"stream\": true, the converted code uses streamText so you can read tokens as they arrive. Without it, the output uses generateText and returns the whole answer at once."}},{"@type":"Question","name":"Are all request fields carried over?","acceptedAnswer":{"@type":"Answer","text":"Model, system and chat messages, temperature and max tokens are. Tools, response formats and other provider-specific fields may need to be added by hand."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#code-generators">Code Generators</a></li><li><span aria-current="page">cURL to Vercel AI SDK</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>cURL to Vercel AI SDK</h1>
+<p class="lede">Turns a curl call to an OpenAI-compatible chat completions endpoint or an Anthropic messages endpoint into Vercel AI SDK code using generateText or streamText.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="curl-to-ai-sdk" data-module="devz2" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Provider docs and bug reports usually show a raw curl request. If your app uses the Vercel AI SDK, you then have to work out which parts belong in the model name, the system prompt, the message list and the settings. This tool reads the request body, picks out the model, system text, messages, temperature and max tokens, and writes the matching SDK call. Streaming requests produce streamText, others produce generateText. The API key in the Authorization header is not copied; the output reads it from an environment variable instead, which is where a secret belongs. It is a conversion aid for common chat calls, not a full SDK migration, so review the imports and provider setup. Parsing happens in your browser.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste a curl command that calls a /chat/completions or Anthropic /messages endpoint.</li><li>Run the conversion to get the SDK code.</li><li>Copy it into your project and check the provider import and the environment variable name.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>Which endpoints does it recognise?</summary><p>OpenAI-compatible /chat/completions and Anthropic /messages requests with a JSON body. Other endpoints, such as embeddings or image generation, are not converted.</p></details>
+<details><summary>What happens to the API key?</summary><p>The key is replaced by an environment variable reference, so you never paste a real secret into the code. Set the variable in your own environment.</p></details>
+<details><summary>How does it choose between generateText and streamText?</summary><p>If the request body contains &quot;stream&quot;: true, the converted code uses streamText so you can read tokens as they arrive. Without it, the output uses generateText and returns the whole answer at once.</p></details>
+<details><summary>Are all request fields carried over?</summary><p>Model, system and chat messages, temperature and max tokens are. Tools, response formats and other provider-specific fields may need to be added by hand.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/curl-to-more-languages/"><span class="link-card__title">cURL to C# / Java / Axios / Guzzle / Faraday</span><span class="link-card__desc">Convert a curl command (-X -H -d --data-urlencode --json -F -u -k -L) into C# HttpClient, Java 11 HttpClient, JavaScript axios, PHP Guzzle or Ruby Faraday. Python, fetch, Node and plain PHP live in the main cURL to Code tool; Go and Rust have their own tools. Multipart (-F) is supported for C#, Guzzle and Faraday; Java and axios convert it to a urlencoded body.</span></a></li><li><a class="link-card" href="/en/curl-to-postman/"><span class="link-card__title">cURL to Postman Collection</span><span class="link-card__desc">Convert one or more curl commands (one per blank-line separated block) into an importable Postman Collection v2.1 JSON with headers, query params, raw/urlencoded/form-data body and basic auth.</span></a></li><li><a class="link-card" href="/en/vercel-ai-core-message-converter/"><span class="link-card__title">OpenAI Chat Messages &lt;-&gt; Vercel AI SDK CoreMessage Converter</span><span class="link-card__desc">Convert a messages array between the OpenAI Chat Completions format and Vercel AI SDK CoreMessage / ModelMessage: string and multi-part content, image_url &lt;-&gt; image parts, assistant tool_calls &lt;-&gt; tool-call parts, tool role results &lt;-&gt; tool-result parts. Choose AI SDK 4 field names (args / result) or AI SDK 5 (input / output).</span></a></li><li><a class="link-card" href="/en/prompt-format-converter/"><span class="link-card__title">Chat Prompt Format Converter</span><span class="link-card__desc">Convert a conversation between OpenAI messages, Anthropic (system + messages), Gemini contents, ChatML, Llama 2, Llama 3, Mistral [INST] templates and a plain transcript. Input can be any of the JSON shapes or &quot;System:/User:/Assistant:&quot; lines. Special-token templates follow each family's published chat template; model-specific variants may differ slightly.</span></a></li><li><a class="link-card" href="/en/openai-structured-outputs/"><span class="link-card__title">OpenAI Structured Outputs Schema Builder</span><span class="link-card__desc">Turn sample JSON (or an existing JSON Schema) into a strict response_format for OpenAI Structured Outputs: every property required, additionalProperties false, optional fields made nullable, plus ready-to-paste Python / TypeScript request snippets. Strict mode forbids some keywords (e.g. minLength, pattern on older models); they are stripped and listed.</span></a></li><li><a class="link-card" href="/en/llm-tool-definition-builder/"><span class="link-card__title">LLM Tool Definition Builder</span><span class="link-card__desc">Wrap a JSON Schema into OpenAI (Chat / Responses, strict mode) and Anthropic tool-definition JSON.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

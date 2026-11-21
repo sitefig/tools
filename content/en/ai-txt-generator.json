@@ -1,0 +1,44 @@
+{
+ "id": "ai-txt-generator",
+ "seoTitle": "ai.txt Generator: AI Training Permissions by File Type",
+ "metaDescription": "Create an ai.txt that allows or disallows AI training per media type: text, images, audio, video and code. Free, runs in your browser.",
+ "intro": "Generates an ai.txt with robots.txt-style rules per file extension for the media types you choose.",
+ "why": "ai.txt is a proposal by Spawning to tell AI developers which file types on a site may be used for training. It looks like robots.txt and works per extension.\n\nThe specification page could not be loaded while building this tool, so the syntax is from memory and marked unverified in the output. No AI company is documented to read ai.txt, so robots.txt and the TDM headers are more likely to be honoured. Treat the file as an extra signal at best.",
+ "howTo": [
+  "Set allow or disallow for each media type.",
+  "Add extra extensions to block.",
+  "Copy the output and save it as /ai.txt.",
+  "Back it up with robots.txt rules."
+ ],
+ "faq": [
+  {
+   "q": "Does any AI company read ai.txt?",
+   "a": "None is documented to do so."
+  },
+  {
+   "q": "Is the syntax verified?",
+   "a": "No, the output says so."
+  },
+  {
+   "q": "Is it a standard?",
+   "a": "No, it is a proposal."
+  },
+  {
+   "q": "What else should I use?",
+   "a": "robots.txt tokens for AI crawlers, TDM headers or the aipref drafts."
+  }
+ ],
+ "related": [
+  "ai-bot-robots-builder",
+  "tdm-reservation-header-builder",
+  "content-signals-policy-builder",
+  "noai-meta-tag-generator",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "ai.txt generator",
+  "ai.txt spawning",
+  "ai training opt out file",
+  "ai.txt file"
+ ]
+}

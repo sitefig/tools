@@ -1,0 +1,38 @@
+{
+ "id": "etsy-fee-calculator",
+ "seoTitle": "Etsy Fee Calculator: Listing, Transaction, Payment Fees",
+ "metaDescription": "Estimate Etsy fees and profit per sale from listing, transaction and payment rates you enter. Defaults are examples. Free, private.",
+ "intro": "Estimates what an Etsy sale costs in fees and what is left after item and shipping costs, using rates you can edit.",
+ "why": "Etsy sellers pay several separate charges on one sale: a listing fee, a transaction fee, payment processing and sometimes an advertising fee. They apply to different bases, for example item plus shipping, so mental math often misses the total.\n\nThe defaults here are example values that you must check against Etsy's current fee page for your country. Change any rate and the result follows. The tool shows total fees as a share of the sale and profit after your own costs.",
+ "howTo": [
+  "Enter item price, shipping charged and quantity.",
+  "Check the fee rates against Etsy's fee page and edit them.",
+  "Add your item and real shipping cost to see profit."
+ ],
+ "faq": [
+  {
+   "q": "Are the default rates current?",
+   "a": "Not verified. They are examples. Check Etsy's fee page for your country and shop."
+  },
+  {
+   "q": "Does the transaction fee include shipping?",
+   "a": "You can see the base used: this tool applies it to item plus shipping. Change the rate to 0 if your case differs."
+  },
+  {
+   "q": "What about taxes?",
+   "a": "Not included. Enter prices without tax."
+  }
+ ],
+ "related": [
+  "profit-margin",
+  "break-even",
+  "payment-fee-gross-up-calculator",
+  "dropshipping-profit-calculator",
+  "average-order-value-calculator"
+ ],
+ "keywords": [
+  "etsy fee calculator",
+  "etsy profit calculator",
+  "etsy seller fees"
+ ]
+}

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Free cURL to Postman Collection Converter Online | Free Tools</title>
+<meta name="description" content="Convert one or more curl commands into a Postman Collection v2.1 JSON file with headers, query params, body and basic auth. Free, in your browser.">
+<link rel="canonical" href="https://tools.sitefig.net/en/curl-to-postman/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/curl-to-postman/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/curl-to-postman/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Free cURL to Postman Collection Converter Online | Free Tools">
+<meta property="og:description" content="Convert one or more curl commands into a Postman Collection v2.1 JSON file with headers, query params, body and basic auth. Free, in your browser.">
+<meta property="og:url" content="https://tools.sitefig.net/en/curl-to-postman/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free cURL to Postman Collection Converter Online | Free Tools">
+<meta name="twitter:description" content="Convert one or more curl commands into a Postman Collection v2.1 JSON file with headers, query params, body and basic auth. Free, in your browser.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"cURL to Postman Collection","url":"https://tools.sitefig.net/en/curl-to-postman/","description":"Convert one or more curl commands into a Postman Collection v2.1 JSON file with headers, query params, body and basic auth. Free, in your browser.","applicationCategory":"DeveloperApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste one or more curl commands, separating separate requests with a blank line.","Run the conversion to generate the collection JSON.","Save it as a .json file and use Import in Postman, then replace any tokens with variables."],"keywords":"curl to postman, convert curl to postman collection, import curl into postman, free curl postman converter, curl commands to collection json","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Code Generators","item":"https://tools.sitefig.net/en/#code-generators"},{"@type":"ListItem","position":3,"name":"cURL to Postman Collection","item":"https://tools.sitefig.net/en/curl-to-postman/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How are multiple commands separated?","acceptedAnswer":{"@type":"Answer","text":"Each block separated by a blank line becomes one request in the collection. Line continuations with a backslash inside a block are joined."}},{"@type":"Question","name":"Which body types are supported?","acceptedAnswer":{"@type":"Answer","text":"Raw bodies such as JSON, URL-encoded form data and multipart form-data from -F fields. Basic authentication from -u becomes a Postman auth setting."}},{"@type":"Question","name":"Does it keep my tokens?","acceptedAnswer":{"@type":"Answer","text":"Headers are copied as written, including any Authorization value. Replace real secrets with Postman variables before sharing the collection."}},{"@type":"Question","name":"Is the output compatible with other tools?","acceptedAnswer":{"@type":"Answer","text":"It targets Collection v2.1, which Postman imports. Other tools that read Postman collections, such as Insomnia or Bruno, can often import it too, but this is not tested here."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#code-generators">Code Generators</a></li><li><span aria-current="page">cURL to Postman Collection</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>cURL to Postman Collection</h1>
+<p class="lede">Converts one or more curl commands into an importable Postman Collection v2.1 JSON, keeping headers, query parameters, raw, URL-encoded or form-data bodies and basic auth.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="curl-to-postman" data-module="devz2" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Teams share API calls as curl snippets in tickets, chat and documentation. Turning ten of them into Postman requests by copying fields one at a time is a waste of an afternoon. Paste the commands here, separated by blank lines, and you get a single collection file that Postman can import, with one request per command. Headers, the URL and its query string, the body type and basic authentication are carried across. It is handy for building a test collection from an incident ticket, from README examples or from a browser's &quot;Copy as cURL&quot; output. The conversion is done locally, which matters when your commands contain real tokens: they stay on your machine until you decide to import the file.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste one or more curl commands, separating separate requests with a blank line.</li><li>Run the conversion to generate the collection JSON.</li><li>Save it as a .json file and use Import in Postman, then replace any tokens with variables.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How are multiple commands separated?</summary><p>Each block separated by a blank line becomes one request in the collection. Line continuations with a backslash inside a block are joined.</p></details>
+<details><summary>Which body types are supported?</summary><p>Raw bodies such as JSON, URL-encoded form data and multipart form-data from -F fields. Basic authentication from -u becomes a Postman auth setting.</p></details>
+<details><summary>Does it keep my tokens?</summary><p>Headers are copied as written, including any Authorization value. Replace real secrets with Postman variables before sharing the collection.</p></details>
+<details><summary>Is the output compatible with other tools?</summary><p>It targets Collection v2.1, which Postman imports. Other tools that read Postman collections, such as Insomnia or Bruno, can often import it too, but this is not tested here.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/postman-to-openapi/"><span class="link-card__title">Postman Collection to OpenAPI 3</span><span class="link-card__desc">Convert a Postman Collection (v2.0 / v2.1 JSON) into an OpenAPI 3.0.3 document: folders become tags, {{variables}} and :params become path parameters, query params and headers become parameters, JSON / urlencoded / form-data bodies become requestBody schemas inferred from the example, saved responses become response examples, bearer / basic / apikey auth becomes securitySchemes. Schemas are inferred from examples, so review required fields and types.</span></a></li><li><a class="link-card" href="/en/openapi-to-postman/"><span class="link-card__title">OpenAPI to Postman Collection</span><span class="link-card__desc">Convert an OpenAPI 3 / Swagger 2 document (JSON or YAML) into a Postman Collection v2.1: operations grouped into folders by tag, {{baseUrl}} variable from servers, path / query / header parameters, request bodies generated from examples or schemas, bearer / basic / API key auth at collection level.</span></a></li><li><a class="link-card" href="/en/postman-to-curl/"><span class="link-card__title">Postman Collection to cURL</span><span class="link-card__desc">Convert every request in a Postman Collection v2.x JSON (folders, headers, raw / urlencoded / form-data bodies, basic / bearer / API-key auth) to curl commands.</span></a></li><li><a class="link-card" href="/en/curl-to-har/"><span class="link-card__title">cURL to HAR</span><span class="link-card__desc">Convert a curl command to a HAR 1.2 request entry (method, URL, headers, query string, cookies, postData) that can be imported into HAR-based tools. No response is recorded.</span></a></li><li><a class="link-card" href="/en/curl-to-more-languages/"><span class="link-card__title">cURL to C# / Java / Axios / Guzzle / Faraday</span><span class="link-card__desc">Convert a curl command (-X -H -d --data-urlencode --json -F -u -k -L) into C# HttpClient, Java 11 HttpClient, JavaScript axios, PHP Guzzle or Ruby Faraday. Python, fetch, Node and plain PHP live in the main cURL to Code tool; Go and Rust have their own tools. Multipart (-F) is supported for C#, Guzzle and Faraday; Java and axios convert it to a urlencoded body.</span></a></li><li><a class="link-card" href="/en/curl-builder/"><span class="link-card__title">cURL Command Builder</span><span class="link-card__desc">Fill in method, URL, headers, body, auth and flags to get a correctly quoted curl command.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

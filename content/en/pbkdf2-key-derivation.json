@@ -1,0 +1,45 @@
+{
+ "id": "pbkdf2-key-derivation",
+ "seoTitle": "Free PBKDF2 Key Derivation Calculator Online",
+ "metaDescription": "Derive a key from a password with PBKDF2 using SHA-1, SHA-256, SHA-384 or SHA-512. Set salt, iterations and length. Free, in your browser.",
+ "intro": "Derive a key from a password with PBKDF2 using your chosen salt, iteration count, output length and hash, and read the result in hex and Base64.",
+ "why": "PBKDF2 turns a password into a key by running an HMAC many thousands of times, which makes guessing slower. It appears in WPA2 Wi-Fi, disk and archive encryption, password managers and many framework password hashers, and its test vectors are published in RFCs.\n\nWhen you are writing or debugging code that uses it, comparing against a trusted output saves hours: a different iteration count, salt encoding or hash function gives a completely different key. This tool uses the browser WebCrypto implementation, so results match standard libraries. For new password storage, prefer Argon2 or scrypt; PBKDF2 is acceptable only with a high iteration count and a unique salt per user.",
+ "howTo": [
+  "Enter the password, then the salt as text.",
+  "Set the iteration count, the output length in bytes and the hash function.",
+  "Copy the derived key as hex or Base64."
+ ],
+ "faq": [
+  {
+   "q": "How many iterations should I use?",
+   "a": "More is better until it slows your server too much. Current guidance for PBKDF2-HMAC-SHA256 is several hundred thousand iterations. Follow the latest OWASP recommendation for your hash."
+  },
+  {
+   "q": "Is the salt treated as text or bytes?",
+   "a": "As text, encoded as UTF-8. If your library uses a binary salt, the result will differ unless you encode the same bytes in both places."
+  },
+  {
+   "q": "Is it safe to use real passwords?",
+   "a": "The calculation runs in your browser and nothing is uploaded, but do not enter live production passwords into pages you do not trust. Use test values for debugging."
+  },
+  {
+   "q": "What are the limits?",
+   "a": "Output length is limited to between 1 and 1024 bytes, and iterations must be at least 1. A very high count will make the page pause while it works."
+  }
+ ],
+ "related": [
+  "argon2-hash",
+  "scrypt-kdf",
+  "hkdf-derive",
+  "bcrypt-generator",
+  "hmac-generator",
+  "argon2-parameter-tuner"
+ ],
+ "keywords": [
+  "pbkdf2 online",
+  "pbkdf2 calculator",
+  "pbkdf2 sha256 generator",
+  "free key derivation tool",
+  "pbkdf2 test vector"
+ ]
+}

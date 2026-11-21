@@ -1,0 +1,45 @@
+{
+ "id": "mime-encoded-word-decoder",
+ "seoTitle": "Decode =?UTF-8?B? Email Subject Lines (RFC 2047)",
+ "metaDescription": "Decode =?charset?B?...?= and =?charset?Q?...?= encoded words in email headers, or encode non-ASCII header text. Free, nothing uploaded.",
+ "intro": "Decodes MIME encoded words in headers such as Subject and From, and encodes UTF-8 header text.",
+ "why": "Email headers can only hold ASCII, so non-ASCII text is wrapped as =?charset?B?base64?= or =?charset?Q?quoted-printable?=. You see these when you read raw headers.\n\nThe tool decodes every word, joins neighbouring words the way RFC 2047 asks (the space between two encoded words is dropped) and handles charsets your browser knows, such as ISO-8859-1. Encoding splits long text into words that stay under 75 characters.",
+ "howTo": [
+  "Paste the header text.",
+  "Choose decode, or encode for UTF-8 text.",
+  "For encoding pick B (Base64) or Q.",
+  "Copy the result."
+ ],
+ "faq": [
+  {
+   "q": "What does the B and Q mean?",
+   "a": "B is Base64. Q is a quoted-printable variant where an underscore means a space."
+  },
+  {
+   "q": "A word was kept as is.",
+   "a": "Its charset is unknown to the browser or the data is damaged. The tool tells you which charset."
+  },
+  {
+   "q": "Does it decode whole emails?",
+   "a": "No. Only encoded words in header text. Use the quoted-printable tool for bodies."
+  },
+  {
+   "q": "Is my input sent anywhere?",
+   "a": "No. Everything runs in your browser and nothing is uploaded."
+  }
+ ],
+ "related": [
+  "quoted-printable",
+  "base64-decode",
+  "utf8-bytes-viewer",
+  "http-headers-to-json",
+  "punycode",
+  "hex-text"
+ ],
+ "keywords": [
+  "decode mime encoded word",
+  "email subject =?utf-8?b? decoder",
+  "rfc 2047 decoder",
+  "decode encoded email header"
+ ]
+}

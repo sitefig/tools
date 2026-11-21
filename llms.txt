@@ -1,0 +1,94 @@
+# Free Tools
+
+> 1878 free tools that run in your browser. No sign-up, no uploads: what you enter stays on your device. Every tool has its own page with an explanation, usage steps and FAQ.
+
+## Start
+
+- [All tools](https://tools.sitefig.net/en/): all tools, searchable
+- [About](https://tools.sitefig.net/en/about/)
+- [Accessibility statement](https://tools.sitefig.net/en/accessibility/)
+
+## Categories
+
+- [SEO – On-page](https://tools.sitefig.net/en/#seo-on-page): 18 tools
+- [SEO – Generators](https://tools.sitefig.net/en/#seo-generators): 62 tools
+- [SEO – Content](https://tools.sitefig.net/en/#seo-content): 36 tools
+- [SEO – Technical](https://tools.sitefig.net/en/#seo-technical): 110 tools
+- [Privacy – Images](https://tools.sitefig.net/en/#privacy-images): 3 tools
+- [Privacy – Secrets](https://tools.sitefig.net/en/#privacy-secrets): 18 tools
+- [Privacy – Browser](https://tools.sitefig.net/en/#privacy-browser): 22 tools
+- [Privacy – Legal](https://tools.sitefig.net/en/#privacy-legal): 23 tools
+- [JSON](https://tools.sitefig.net/en/#json): 35 tools
+- [CSV](https://tools.sitefig.net/en/#csv): 11 tools
+- [XML](https://tools.sitefig.net/en/#xml): 8 tools
+- [YAML & TOML](https://tools.sitefig.net/en/#yaml-and-toml): 7 tools
+- [Code Formatters](https://tools.sitefig.net/en/#code-formatters): 16 tools
+- [Code Generators](https://tools.sitefig.net/en/#code-generators): 12 tools
+- [Encoding](https://tools.sitefig.net/en/#encoding): 39 tools
+- [Hashing & JWT](https://tools.sitefig.net/en/#hashing-and-jwt): 16 tools
+- [Date & Time](https://tools.sitefig.net/en/#date-and-time): 22 tools
+- [Network & HTTP](https://tools.sitefig.net/en/#network-and-http): 58 tools
+- [Regex](https://tools.sitefig.net/en/#regex): 11 tools
+- [Text](https://tools.sitefig.net/en/#text): 55 tools
+- [Markdown](https://tools.sitefig.net/en/#markdown): 9 tools
+- [Text Fun](https://tools.sitefig.net/en/#text-fun): 21 tools
+- [Reference](https://tools.sitefig.net/en/#reference): 11 tools
+- [Color](https://tools.sitefig.net/en/#color): 29 tools
+- [CSS](https://tools.sitefig.net/en/#css): 55 tools
+- [Images](https://tools.sitefig.net/en/#images): 55 tools
+- [SVG](https://tools.sitefig.net/en/#svg): 7 tools
+- [Calculators – Finance](https://tools.sitefig.net/en/#calculators-finance): 79 tools
+- [Calculators – Health](https://tools.sitefig.net/en/#calculators-health): 31 tools
+- [Calculators – Everyday](https://tools.sitefig.net/en/#calculators-everyday): 41 tools
+- [Calculators – Build](https://tools.sitefig.net/en/#calculators-build): 10 tools
+- [Time & Productivity](https://tools.sitefig.net/en/#time-and-productivity): 28 tools
+- [Randomness](https://tools.sitefig.net/en/#randomness): 10 tools
+- [Generators](https://tools.sitefig.net/en/#generators): 27 tools
+- [Test Data](https://tools.sitefig.net/en/#test-data): 7 tools
+- [Dev Config](https://tools.sitefig.net/en/#dev-config): 71 tools
+- [Image Extras](https://tools.sitefig.net/en/#image-extras): 2 tools
+- [Media & Audio](https://tools.sitefig.net/en/#media-and-audio): 15 tools
+- [Device & Sensors](https://tools.sitefig.net/en/#device-and-sensors): 14 tools
+- [Documents](https://tools.sitefig.net/en/#documents): 17 tools
+- [SEO – Extras](https://tools.sitefig.net/en/#seo-extras): 30 tools
+- [Marketing](https://tools.sitefig.net/en/#marketing): 66 tools
+- [Product Planning](https://tools.sitefig.net/en/#product-planning): 20 tools
+- [Games](https://tools.sitefig.net/en/#games): 5 tools
+- [Learning](https://tools.sitefig.net/en/#learning): 23 tools
+- [Dev Extras](https://tools.sitefig.net/en/#dev-extras): 21 tools
+- [Archives & Spreadsheets](https://tools.sitefig.net/en/#archives-and-spreadsheets): 9 tools
+- [Hashing – bcrypt](https://tools.sitefig.net/en/#hashing-bcrypt): 2 tools
+- [PDF](https://tools.sitefig.net/en/#pdf): 42 tools
+- [Crypto](https://tools.sitefig.net/en/#crypto): 52 tools
+- [Converters](https://tools.sitefig.net/en/#converters): 41 tools
+- [Formatters](https://tools.sitefig.net/en/#formatters): 21 tools
+- [Infra](https://tools.sitefig.net/en/#infra): 31 tools
+- [Diagrams](https://tools.sitefig.net/en/#diagrams): 4 tools
+- [SQL & Data](https://tools.sitefig.net/en/#sql-and-data): 5 tools
+- [Images – Extra](https://tools.sitefig.net/en/#images-extra): 2 tools
+- [Data Models](https://tools.sitefig.net/en/#data-models): 10 tools
+- [LLM Tools](https://tools.sitefig.net/en/#llm-tools): 26 tools
+- [AI & LLM](https://tools.sitefig.net/en/#ai-and-llm): 12 tools
+- [Schema Converters](https://tools.sitefig.net/en/#schema-converters): 24 tools
+- [SQL Tools](https://tools.sitefig.net/en/#sql-tools): 18 tools
+- [Mobile & Desktop Config](https://tools.sitefig.net/en/#mobile-and-desktop-config): 8 tools
+- [Calculators](https://tools.sitefig.net/en/#calculators): 14 tools
+- [Markup Converters](https://tools.sitefig.net/en/#markup-converters): 16 tools
+- [API Converters](https://tools.sitefig.net/en/#api-converters): 5 tools
+- [Developer Playground](https://tools.sitefig.net/en/#developer-playground): 1 tools
+- [Audio](https://tools.sitefig.net/en/#audio): 21 tools
+- [Video](https://tools.sitefig.net/en/#video): 25 tools
+- [Images – OCR](https://tools.sitefig.net/en/#images-ocr): 2 tools
+- [AI Crawlers](https://tools.sitefig.net/en/#ai-crawlers): 18 tools
+- [Web Performance](https://tools.sitefig.net/en/#web-performance): 19 tools
+- [Accessibility](https://tools.sitefig.net/en/#accessibility): 25 tools
+- [Log Parsing](https://tools.sitefig.net/en/#log-parsing): 45 tools
+- [Fonts](https://tools.sitefig.net/en/#fonts): 5 tools
+- [Charts & Data Visualization](https://tools.sitefig.net/en/#charts-and-data-visualization): 27 tools
+- [Spreadsheet & Data Cleaning](https://tools.sitefig.net/en/#spreadsheet-and-data-cleaning): 20 tools
+- [Maps & Geo](https://tools.sitefig.net/en/#maps-and-geo): 14 tools
+- [Math & Science](https://tools.sitefig.net/en/#math-and-science): 28 tools
+
+## Machine-readable
+
+- [Sitemap](https://tools.sitefig.net/sitemap.xml)

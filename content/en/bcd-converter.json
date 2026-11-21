@@ -1,0 +1,45 @@
+{
+ "id": "bcd-converter",
+ "seoTitle": "Free BCD Converter: Decimal to Binary-Coded Decimal",
+ "metaDescription": "Convert decimal numbers to packed or unpacked binary-coded decimal nibbles and decode BCD bits back to decimal. Free, runs in your browser.",
+ "intro": "Turn a decimal number into packed and unpacked binary-coded decimal, one four-bit group per digit, or decode groups of BCD bits back to a decimal number.",
+ "why": "Binary-coded decimal stores each digit in its own four bits instead of converting the whole number to binary. Real-time clock chips, seven-segment displays, some payment terminals and mainframe formats still use it, because each digit can be shown or read without arithmetic.\n\nIf you are reading a register from a datasheet or checking a protocol field, you need a quick way to go between the two forms. This converter writes 2026 as 0010 0000 0010 0110 in packed form, shows the matching hex, and shows the unpacked form with a zero nibble ahead of each digit. In the other direction, it rejects any nibble above 9, which is not valid BCD.",
+ "howTo": [
+  "Choose decimal to BCD, or BCD to decimal.",
+  "Enter the digits, or groups of four bits, in the input.",
+  "Read the packed, hex and unpacked forms, or the decoded number."
+ ],
+ "faq": [
+  {
+   "q": "What is the difference between packed and unpacked BCD?",
+   "a": "Packed BCD puts two digits in each byte, one per nibble. Unpacked BCD uses a whole byte per digit with the upper four bits set to zero, so it takes twice the space."
+  },
+  {
+   "q": "Why is a nibble above 9 an error?",
+   "a": "Four bits can hold 0 to 15, but BCD only uses 0 to 9 for digits. Values 10 to 15 are not valid, so the decoder reports the offending nibble."
+  },
+  {
+   "q": "Does it handle negative numbers or decimals?",
+   "a": "No. It converts non-negative whole numbers made of digits only. Sign nibbles and decimal points differ between BCD formats, so they are not modelled."
+  },
+  {
+   "q": "Why does the hex line match the decimal?",
+   "a": "In packed BCD each nibble holds one digit, so the hexadecimal reading of the bytes is the same digits as the decimal number. An odd digit count gets a leading zero."
+  }
+ ],
+ "related": [
+  "number-base-converter",
+  "binary-text",
+  "bitwise-calculator",
+  "ieee754-converter",
+  "hex-text",
+  "check-digit-tool"
+ ],
+ "keywords": [
+  "bcd converter",
+  "binary coded decimal converter",
+  "decimal to bcd online",
+  "free bcd decoder",
+  "packed bcd unpacked bcd"
+ ]
+}

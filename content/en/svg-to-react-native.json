@@ -1,0 +1,45 @@
+{
+ "id": "svg-to-react-native",
+ "seoTitle": "Free SVG to React Native (react-native-svg) Converter",
+ "metaDescription": "Convert SVG markup into a react-native-svg component in TSX or JSX, with camelCased attributes and props spread onto the root. Free, in-browser.",
+ "intro": "Paste SVG code and get a react-native-svg component, with elements mapped to Svg, Path, Circle and others, attributes in camelCase and props passed to the root.",
+ "why": "React Native cannot render an SVG tag directly. The react-native-svg library offers matching components, but the markup needs changes first: elements become capitalised components, attributes such as stroke-width become strokeWidth, and class and data attributes have to go.\n\nThis converter parses the SVG, maps supported elements, converts inline style declarations into attributes, spreads props onto the root so that you can set size and colour, and writes the imports you need. Elements that react-native-svg does not support are left as a comment so you can see what was dropped. Check animations, filters and CSS classes, which are not translated, then test the icon on a device.",
+ "howTo": [
+  "Paste your SVG code into the input.",
+  "Choose TSX or JSX and set the component name.",
+  "Copy the component into your project and install react-native-svg if you have not yet."
+ ],
+ "faq": [
+  {
+   "q": "Which SVG elements are supported?",
+   "a": "svg, g, path, circle, ellipse, rect, line, polygon, polyline, text, tspan, defs, gradients, clipPath, mask, use, symbol, pattern, image, marker and textPath. Others appear as comments."
+  },
+  {
+   "q": "What happens to class and style?",
+   "a": "The class attribute is removed, because React Native has no CSS classes. Inline style declarations are split into separate attributes, such as opacity or strokeDasharray."
+  },
+  {
+   "q": "How do I change size or colour?",
+   "a": "Props are spread onto the root Svg, so pass width, height or fill when you use the component. A fixed width and height in the original SVG are kept as defaults."
+  },
+  {
+   "q": "Does it optimise the SVG?",
+   "a": "No. It converts the structure only. Run an SVG optimiser first if you want smaller path data and fewer unneeded attributes."
+  }
+ ],
+ "related": [
+  "svg-to-jsx",
+  "svg-optimizer",
+  "svg-to-android-vector",
+  "svg-to-swiftui-shape",
+  "html-to-jsx",
+  "svg-preview-editor"
+ ],
+ "keywords": [
+  "svg to react native",
+  "react-native-svg converter",
+  "svg to jsx react native",
+  "free svgr alternative",
+  "convert svg to component"
+ ]
+}

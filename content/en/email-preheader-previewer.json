@@ -1,0 +1,45 @@
+{
+ "id": "email-preheader-previewer",
+ "seoTitle": "Subject and Preheader Previewer: Mock Inbox Row",
+ "metaDescription": "Preview how your sender name, subject and preheader are cut off in a mock Gmail, Outlook and iPhone inbox row. Free and private, runs in your browser.",
+ "intro": "Enter a subject and a preheader to see them in mock inbox rows of different widths, with the cut-off shown by an ellipsis.",
+ "why": "Inbox clients show only part of your subject and preheader, and the part depends on the screen. A subject that reads well at 700 pixels can lose its key words at 340. This page shows the same text in three row widths so you see where it is cut.\n\nThe widths and fonts are approximations, not copies of the real clients, which also change with settings and updates. Use the preview to shorten and to move important words to the front. If you leave the preheader empty, clients usually show the first text in the email body instead.",
+ "howTo": [
+  "Type the sender name, subject and preheader.",
+  "Look at the three rows and note where the text is cut.",
+  "Move the key words to the front and shorten the rest.",
+  "Check the character counts under the previews."
+ ],
+ "faq": [
+  {
+   "q": "Does it match Gmail exactly?",
+   "a": "No. It uses fixed widths and a system font as a guide. Send a test email to real accounts for the final check."
+  },
+  {
+   "q": "What is a preheader?",
+   "a": "The preview text next to or below the subject in the inbox. You set it with hidden text at the top of the email."
+  },
+  {
+   "q": "How long should a preheader be?",
+   "a": "Many guides suggest roughly 40 to 130 characters. Phones show less than desktop."
+  },
+  {
+   "q": "Is anything uploaded?",
+   "a": "No, the preview is built in your browser."
+  }
+ ],
+ "related": [
+  "email-subject-line-tester",
+  "spam-trigger-word-checker",
+  "email-signature-generator",
+  "eml-viewer",
+  "email-campaign-rates",
+  "html-head-extractor"
+ ],
+ "keywords": [
+  "preheader preview",
+  "email preview text",
+  "inbox preview tool",
+  "subject truncation"
+ ]
+}

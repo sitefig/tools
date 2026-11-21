@@ -1,0 +1,45 @@
+{
+ "id": "sql-dialect-converter",
+ "seoTitle": "Free SQL DDL Converter: PostgreSQL, MySQL and SQLite",
+ "metaDescription": "Convert CREATE TABLE and CREATE INDEX DDL between PostgreSQL, MySQL and SQLite, mapping types, defaults and keys. Free, runs in your browser.",
+ "intro": "Converts CREATE TABLE and CREATE INDEX statements between PostgreSQL, MySQL and SQLite, mapping types such as SERIAL, AUTO_INCREMENT, BOOLEAN, UUID and JSONB, plus defaults, quoting, keys and indexes.",
+ "why": "Moving a schema from one database to another is mostly mechanical, which is exactly why it is easy to get wrong. SERIAL becomes AUTO_INCREMENT, BOOLEAN becomes TINYINT(1), TIMESTAMPTZ becomes DATETIME, identifiers change from double quotes to backticks, and defaults like now() need rewriting. This tool parses your DDL and writes it again for the target dialect, including primary keys, unique constraints, foreign keys and indexes. It is useful when you prototype on SQLite and deploy on PostgreSQL, or port a MySQL schema. It handles table structure only: views, triggers, functions, partitions and CHECK constraints are not carried over, so review the result before running it. Your schema stays in your browser.",
+ "howTo": [
+  "Paste your CREATE TABLE and CREATE INDEX statements in any of the three dialects.",
+  "Choose the target dialect: MySQL, PostgreSQL or SQLite.",
+  "Review the converted DDL, add anything that was not carried over, and test it on a scratch database."
+ ],
+ "faq": [
+  {
+   "q": "Which type mappings does it apply?",
+   "a": "Typical ones: SERIAL and AUTO_INCREMENT, BOOLEAN and TINYINT(1), TIMESTAMPTZ and DATETIME, UUID and CHAR(36), JSONB and JSON. Defaults such as now() and true/false are translated too."
+  },
+  {
+   "q": "What is not converted?",
+   "a": "Views, triggers, functions, partitions and CHECK constraints are left out. Dialect-specific features without an equivalent need manual work."
+  },
+  {
+   "q": "Can I migrate data with it?",
+   "a": "No. It converts structure only. Use your database tools for data export and import, and check that the converted types suit your values."
+  },
+  {
+   "q": "Is the output safe to run directly?",
+   "a": "Treat it as a draft. Run it on a test database first, because subtle differences in types, collations and default values can change behaviour."
+  }
+ ],
+ "related": [
+  "sql-to-prisma",
+  "prisma-to-sql",
+  "sql-format",
+  "sql-to-typescript",
+  "sql-ddl-to-diagram",
+  "sql-to-drizzle"
+ ],
+ "keywords": [
+  "sql dialect converter",
+  "postgres to mysql ddl",
+  "mysql to postgresql converter",
+  "sqlite to postgres schema",
+  "free ddl converter"
+ ]
+}

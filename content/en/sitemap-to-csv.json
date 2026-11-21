@@ -1,0 +1,44 @@
+{
+ "id": "sitemap-to-csv",
+ "seoTitle": "Sitemap to CSV Converter (loc, lastmod, images, hreflang)",
+ "metaDescription": "Convert sitemap XML to CSV with loc, lastmod, changefreq, priority and image, video and hreflang columns. Free, private.",
+ "intro": "Turns a sitemap into a CSV you can open in a spreadsheet.",
+ "why": "A spreadsheet makes it easy to filter sections, sort by date and share lists. Sitemaps are XML, which is not.\n\nColumns for images, videos, hreflang alternates and news fields appear only when the sitemap has them. Fields with commas or quotes are escaped correctly.",
+ "howTo": [
+  "Paste the sitemap XML.",
+  "Run the tool.",
+  "Copy the CSV or download it.",
+  "Open it in a spreadsheet."
+ ],
+ "faq": [
+  {
+   "q": "Does it handle sitemap indexes?",
+   "a": "Yes, the child sitemaps are listed as rows."
+  },
+  {
+   "q": "How are alternates written?",
+   "a": "As lang=url pairs separated by spaces."
+  },
+  {
+   "q": "Is the order kept?",
+   "a": "Yes, file order."
+  },
+  {
+   "q": "Can I go back to XML?",
+   "a": "Yes, with the CSV to Sitemap Converter."
+  }
+ ],
+ "related": [
+  "csv-to-sitemap",
+  "sitemap-url-extractor",
+  "sitemap-validator",
+  "sitemap-url-pattern-analyzer",
+  "xml-to-json"
+ ],
+ "keywords": [
+  "sitemap to csv",
+  "convert sitemap xml to excel",
+  "sitemap export",
+  "sitemap to spreadsheet"
+ ]
+}

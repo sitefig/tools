@@ -1,0 +1,45 @@
+{
+ "id": "keyword-permutation-generator",
+ "seoTitle": "Keyword Permutation Generator: Combine Word Lists",
+ "metaDescription": "Combine two to four lists of words into every keyword variation, in one order or all column orders. Up to 50,000 results, free.",
+ "intro": "Put your modifiers, products and locations in separate blocks and get every combination, optionally in every column order. Copy the list into your keyword tool.",
+ "why": "Keyword research often starts with combining modifiers (\"buy\", \"cheap\"), products and places. Doing it by hand or in a spreadsheet is slow. This writes every combination at once.\n\nThe result is a list of candidate searches, not proof that anyone searches for them. Check them against a keyword tool or your Search Console data. To avoid freezing the browser the tool stops at 50,000 combinations.",
+ "howTo": [
+  "Write each list as one item per line.",
+  "Put a blank line between lists (two to four lists).",
+  "Choose the joiner and whether to use every column order.",
+  "Copy the result into your keyword tool."
+ ],
+ "faq": [
+  {
+   "q": "How many combinations will I get?",
+   "a": "The product of the list sizes, times the number of column orders if you tick that box."
+  },
+  {
+   "q": "Can I join without spaces?",
+   "a": "Yes, set the joiner to nothing, for example for domain name ideas."
+  },
+  {
+   "q": "Why not search volumes?",
+   "a": "Volumes need a data provider. This tool only generates the list."
+  },
+  {
+   "q": "Will duplicates be removed?",
+   "a": "Yes, identical results are listed once."
+  }
+ ],
+ "related": [
+  "keyword-list-cleaner",
+  "keyword-clusterer",
+  "question-keyword-extractor",
+  "keyword-intent-classifier",
+  "app-name-ideas",
+  "dedupe-lines"
+ ],
+ "keywords": [
+  "keyword permutation generator",
+  "keyword combiner",
+  "keyword variations generator",
+  "keyword merge tool"
+ ]
+}

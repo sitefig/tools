@@ -1,0 +1,41 @@
+{
+ "id": "consent-mode-debugger",
+ "seoTitle": "Consent Mode gcs and gcd Decoder: Read Google Consent State",
+ "metaDescription": "Paste Google tag request URLs and decode the gcs and gcd parameters into ad_storage, analytics_storage, ad_user_data and ad_personalization.",
+ "intro": "Decodes the gcs and gcd parameters from Google tag requests to show the consent state of each signal.",
+ "why": "When you debug Consent Mode you look at network requests and see values like gcs=G101 or gcd=13r3r3q3q5. They are hard to read by eye.\n\nThis tool extracts both parameters from a URL or a pasted value and spells out each signal. The gcs form is the original one. Google does not publish the gcd format, so the letter table comes from third-party documentation and may change. Use it as a debugging aid and confirm with Google's own tools when it matters.",
+ "howTo": [
+  "Open dev tools, Network tab, and find a request to a Google domain such as google-analytics.com/g/collect.",
+  "Copy the request URL.",
+  "Paste it, or just the gcs and gcd values, one per line.",
+  "Read the state for each signal."
+ ],
+ "faq": [
+  {
+   "q": "Why is gcd not officially documented?",
+   "a": "Google has not published the format. The mapping used here comes from CookieHub documentation and may be incomplete."
+  },
+  {
+   "q": "What does a letter like r mean?",
+   "a": "Denied by default, then granted by an update call. Other letters are listed in the output."
+  },
+  {
+   "q": "Does it need the whole URL?",
+   "a": "No. A value like gcd=13r3r3q3q5 is enough."
+  }
+ ],
+ "related": [
+  "google-consent-mode-snippet",
+  "har-analyzer",
+  "pre-consent-request-finder",
+  "tracker-detector",
+  "consent-banner-checklist",
+  "url-tracker-stripper"
+ ],
+ "keywords": [
+  "gcs parameter",
+  "gcd parameter decoder",
+  "consent mode debug",
+  "google consent mode check"
+ ]
+}

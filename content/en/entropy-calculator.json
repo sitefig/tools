@@ -1,0 +1,45 @@
+{
+ "id": "entropy-calculator",
+ "seoTitle": "Free Entropy Calculator: Shannon Entropy of Text or a Key",
+ "metaDescription": "Compute Shannon entropy in bits per character and in total for any string, and compare it with the entropy of a random string from the same character pool. Free.",
+ "intro": "Measures how evenly a string uses its symbols, as bits per symbol and in total, and shows a random-pool estimate.",
+ "why": "Shannon entropy tells you how unpredictable a string is, judged only from its own symbol counts. \"aaaa\" has 0 bits, \"abcd\" has 2 bits per character. It is useful for spotting random-looking data such as keys, tokens or packed files.\n\nIt is not a password strength score. A common password can have high Shannon entropy and still be guessed instantly. The second figure, pool entropy, assumes every character was chosen at random from the classes present, and is only valid for truly random strings such as generator output.",
+ "howTo": [
+  "Paste the text or key.",
+  "Choose whether symbols are characters, bytes or words.",
+  "Read bits per symbol, total bits and the pool estimate.",
+  "Use the results to compare strings, not to rate passwords."
+ ],
+ "faq": [
+  {
+   "q": "What is a good entropy value?",
+   "a": "There is no universal value. For random keys, the pool entropy of the generator matters, for example 128 bits or more for symmetric keys."
+  },
+  {
+   "q": "Why is a short string low in entropy?",
+   "a": "Few symbols cannot show a spread. A 5-letter string has at most log2(5) bits per symbol."
+  },
+  {
+   "q": "Is Shannon entropy the same as password strength?",
+   "a": "No. Strength depends on how an attacker would guess, not on letter counts."
+  },
+  {
+   "q": "What does the evenness figure mean?",
+   "a": "Entropy divided by the maximum possible for the distinct symbols used. 100% means every symbol appears equally often."
+  }
+ ],
+ "related": [
+  "password-strength",
+  "password-generator",
+  "hash-generator",
+  "random-secret-generator",
+  "huffman-coding-calculator",
+  "birthday-collision-calculator"
+ ],
+ "keywords": [
+  "entropy calculator",
+  "shannon entropy calculator",
+  "string entropy",
+  "password entropy bits"
+ ]
+}

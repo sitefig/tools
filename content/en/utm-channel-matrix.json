@@ -1,0 +1,45 @@
+{
+ "id": "utm-channel-matrix",
+ "seoTitle": "UTM Channel Matrix Generator: Many URLs, Many Channels, CSV",
+ "metaDescription": "Tag many URLs across many channels with UTM parameters in one go and copy the table as CSV. Free, private, runs in your browser.",
+ "intro": "Paste URLs and channels and get every combination tagged, as CSV rows.",
+ "why": "Tagging each link for each channel by hand invites typos, and one wrong capital splits your reports. A matrix keeps source, medium and campaign names consistent.\n\nEach channel line holds source, medium and optional campaign and content, separated by pipes. Values can be lowercased and spaces replaced with underscores. Existing query strings and fragments are kept.",
+ "howTo": [
+  "Paste the destination URLs.",
+  "List channels as source | medium | campaign | content.",
+  "Set the default campaign and cleaning options.",
+  "Copy the CSV into a spreadsheet."
+ ],
+ "faq": [
+  {
+   "q": "Why lowercase values?",
+   "a": "Analytics tools treat Email and email as different values."
+  },
+  {
+   "q": "Can a channel have its own campaign?",
+   "a": "Yes, put it as the third field."
+  },
+  {
+   "q": "Does it shorten links?",
+   "a": "No."
+  },
+  {
+   "q": "Is there a limit?",
+   "a": "Only your browser's speed."
+  }
+ ],
+ "related": [
+  "utm-bulk-builder",
+  "utm-builder",
+  "utm-parameter-parser",
+  "url-tracker-stripper",
+  "url-parser",
+  "ads-roas-calculator"
+ ],
+ "keywords": [
+  "bulk utm generator",
+  "utm builder csv",
+  "utm campaign links",
+  "utm combinations"
+ ]
+}

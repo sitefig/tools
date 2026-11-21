@@ -1,0 +1,45 @@
+{
+ "id": "keyword-difficulty-estimator",
+ "seoTitle": "Keyword Difficulty Estimator from Metrics You Enter",
+ "metaDescription": "Turn the authority and referring domain counts of the ranking pages into a 0 to 100 difficulty score with a visible formula. Compare with your own site.",
+ "intro": "Enter the average authority and referring domains of the pages that rank for a keyword and get a simple difficulty score, a label and the gap to your site.",
+ "why": "Vendor keyword difficulty scores are black boxes and cost money. If you already collected the numbers from the results, a transparent formula is enough to rank your own list.\n\nDifficulty is 50% of average authority plus 50% of a log-scaled link score (referring domains). The formula is shown under the results. It ignores content quality, search intent, brand strength and SERP features, and it is not comparable with any tool's own score. Use it to sort your list, not to predict rankings.",
+ "howTo": [
+  "Enter one keyword per line: keyword, average authority, average referring domains and optionally the lowest authority in the top 10.",
+  "Set your own site's authority on the same scale.",
+  "Read the table from easiest to hardest.",
+  "Look for weak spots, where a low-authority page already ranks."
+ ],
+ "faq": [
+  {
+   "q": "Where do I get the numbers?",
+   "a": "From any SEO tool that shows authority and referring domains for the top results. Use the same tool for all keywords."
+  },
+  {
+   "q": "What is the link cap?",
+   "a": "The number of referring domains that counts as a full link score. Raise it for very competitive niches."
+  },
+  {
+   "q": "Is a high score impossible to beat?",
+   "a": "Not always. Intent fit and content quality matter, and small sites rank for hard keywords."
+  },
+  {
+   "q": "Why a log scale?",
+   "a": "The step from 5 to 50 referring domains matters more than from 500 to 550."
+  }
+ ],
+ "related": [
+  "gsc-performance-analyzer",
+  "keyword-intent-classifier",
+  "serp-ctr-traffic-model",
+  "keyword-clusterer",
+  "backlink-export-analyzer",
+  "keyword-list-cleaner"
+ ],
+ "keywords": [
+  "keyword difficulty calculator",
+  "estimate keyword difficulty",
+  "seo difficulty formula",
+  "easy keywords to rank"
+ ]
+}

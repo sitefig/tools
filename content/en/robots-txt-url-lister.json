@@ -1,0 +1,44 @@
+{
+ "id": "robots-txt-url-lister",
+ "seoTitle": "robots.txt URL Lister: http, https, www and Subdomains",
+ "metaDescription": "List the robots.txt URL of every host variant (http, https, www, non-www, each subdomain) you need to check. Free, runs in your browser.",
+ "intro": "Builds the list of robots.txt addresses for your domains and subdomains and their protocol and www variants.",
+ "why": "A robots.txt applies only to the exact protocol, host and port it is served from. Your blog subdomain, the www host and the old http address each need their own check, and they are easy to forget.\n\nEnter hosts and get every robots.txt URL to open. Discovering subdomains needs certificate or DNS lookups, which this site does not do, so paste a list from your DNS zone.",
+ "howTo": [
+  "Enter your domains and subdomains.",
+  "Choose whether to add http and www variants.",
+  "Open each URL.",
+  "Check each returns 200 or redirects to the preferred host."
+ ],
+ "faq": [
+  {
+   "q": "Does example.com/robots.txt cover subdomains?",
+   "a": "No. Each subdomain needs its own file."
+  },
+  {
+   "q": "Should the http version exist?",
+   "a": "It should redirect to https, or serve the same rules."
+  },
+  {
+   "q": "Can it find my subdomains?",
+   "a": "No, that needs a lookup. Paste a list you already have."
+  },
+  {
+   "q": "What if www and non-www differ?",
+   "a": "Crawlers read the file of the host they crawl, so make them consistent."
+  }
+ ],
+ "related": [
+  "robots-txt-validator",
+  "robots-tester",
+  "redirect-code-generator",
+  "robots-generator",
+  "seo-robots-noindex-simulator"
+ ],
+ "keywords": [
+  "robots.txt subdomain",
+  "robots.txt www vs non-www",
+  "robots.txt http https",
+  "robots.txt every host"
+ ]
+}

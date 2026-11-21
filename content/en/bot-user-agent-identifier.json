@@ -1,0 +1,44 @@
+{
+ "id": "bot-user-agent-identifier",
+ "seoTitle": "Bot Identifier: Who Is Behind This User-Agent?",
+ "metaDescription": "Name the bot, operator and purpose behind each pasted user-agent string, with robots.txt behaviour and a reminder to verify the source. Free.",
+ "intro": "Matches user-agent strings against about fifty known bots and AI crawlers.",
+ "why": "Logs are full of strings like Mozilla/5.0 AppleWebKit (compatible; GPTBot/1.4). The name tells you who claims to be visiting, and what they claim to do.\n\nPaste user agents, one per line, and get the bot, operator, purpose and robots.txt behaviour. A user-agent is only a claim: anyone can send any string, so verify by IP range or reverse DNS before acting.",
+ "howTo": [
+  "Paste user-agent strings.",
+  "Read the match table.",
+  "Look up unknown bots in the directory.",
+  "Verify important ones by IP."
+ ],
+ "faq": [
+  {
+   "q": "Can the match be wrong?",
+   "a": "Yes. It is by name inside the string, and strings can be forged."
+  },
+  {
+   "q": "What about normal browsers?",
+   "a": "They are reported as no known bot."
+  },
+  {
+   "q": "Where does the bot data come from?",
+   "a": "The same table as the AI crawler directory; rows are marked checked or not verified."
+  },
+  {
+   "q": "How do I verify a bot?",
+   "a": "Use the IP range checker or the reverse DNS verifier."
+  }
+ ],
+ "related": [
+  "user-agent-parser",
+  "ai-crawler-user-agent-directory",
+  "crawler-ip-range-checker",
+  "bot-reverse-dns-verifier",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "identify bot user agent",
+  "what bot is this",
+  "gptbot user agent string",
+  "bot detector user agent"
+ ]
+}

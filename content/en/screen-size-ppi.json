@@ -1,0 +1,46 @@
+{
+ "id": "screen-size-ppi",
+ "seoTitle": "Free Screen Size and PPI Calculator: Pixel Density",
+ "metaDescription": "Calculate pixels per inch, physical width and height, pixel pitch and aspect ratio from a screen's resolution and diagonal. Free, in your browser.",
+ "intro": "Enter the width and height in pixels and the diagonal in inches. The tool returns pixels per inch, physical size, pixel pitch, aspect ratio and megapixels.",
+ "why": "A 27-inch monitor can look crisp or fuzzy depending on its resolution. The number that tells you is pixel density, and monitor shops rarely print it. The calculation divides the diagonal in pixels by the diagonal in inches, which is easy but tedious by hand. Designers use it to decide how big UI elements should be, buyers to compare a 4K and a QHD screen, and developers to reason about device pixel ratios. This tool also works out the physical width and height, the distance between pixel centres in millimetres and the simplified aspect ratio, and the megapixel count of the resolution. Everything is computed in your browser from the numbers you type.",
+ "howTo": [
+  "Enter the horizontal and vertical resolution in pixels.",
+  "Enter the screen diagonal in inches.",
+  "Read the PPI, physical size, pixel pitch, aspect ratio and megapixels."
+ ],
+ "faq": [
+  {
+   "q": "What PPI is considered sharp?",
+   "a": "It depends on viewing distance. Around 110 PPI looks fine on a desk monitor at arm's length, while phones held close are usually above 300 PPI. There is no single threshold."
+  },
+  {
+   "q": "How is PPI calculated?",
+   "a": "The diagonal length in pixels (square root of width squared plus height squared) divided by the diagonal in inches. Pixel pitch is 25.4 mm divided by PPI."
+  },
+  {
+   "q": "Why does the physical size differ slightly from the manufacturer's?",
+   "a": "Manufacturers round the diagonal and may measure the panel edge to edge. The tool derives the size from the numbers you give, assuming square pixels."
+  },
+  {
+   "q": "Does it handle curved or non-square pixel screens?",
+   "a": "No. It assumes a flat panel with square pixels. Curved monitors, unusual subpixel layouts and panels with non-square pixels may differ slightly from the figures shown."
+  }
+ ],
+ "related": [
+  "aspect-ratio-calculator",
+  "unit-converter",
+  "css-unit-converter",
+  "px-to-rem-converter",
+  "responsive-breakpoint-previewer",
+  "image-resizer"
+ ],
+ "keywords": [
+  "ppi calculator",
+  "screen size calculator",
+  "free ppi calculator",
+  "pixel density calculator",
+  "monitor ppi",
+  "screen resolution to inches"
+ ]
+}

@@ -1,0 +1,43 @@
+{
+ "id": "tailwind-to-inline-css",
+ "seoTitle": "Free Tailwind to Inline CSS Converter for Email",
+ "metaDescription": "Convert Tailwind utility classes in HTML into inline style attributes for email and embeds. Supports a common subset. Free, in your browser.",
+ "intro": "Paste HTML with Tailwind classes and get inline style attributes instead, which suits HTML email and embedded widgets. It converts a common subset and keeps or lists the classes it cannot convert.",
+ "why": "Many email clients ignore or strip stylesheets, so styles that work in a browser vanish in an inbox. The same goes for snippets pasted into a CMS that removes style blocks. Inline styles survive, but writing them by hand for every element throws away the speed of Tailwind.\n\nThis converter translates the utility classes it understands into a style attribute: layout, flexbox and grid basics, spacing, sizing, typography, borders, radius, shadows and arbitrary values. It does not know the Tailwind colour palette or variants like md: and hover:, because those need a stylesheet. Such classes are kept or listed, so you can handle them. Conversion runs in your browser.",
+ "howTo": [
+  "Paste HTML that uses Tailwind classes in class attributes.",
+  "Decide whether to keep unconverted classes in the class attribute.",
+  "Read the converted HTML and the list of classes that could not be converted.",
+  "Replace palette colours and responsive classes by hand, then test the email in your target clients."
+ ],
+ "faq": [
+  {
+   "q": "Why are colours such as blue-500 not converted?",
+   "a": "The converter only knows black, white, transparent and arbitrary values like bg-[#3b82f6]. The full palette is not included. Swap palette colours for arbitrary hex values first, and they will convert."
+  },
+  {
+   "q": "What about responsive and hover classes?",
+   "a": "Variants such as md: and hover: need media queries or pseudo-classes, which inline styles cannot express. These classes are left in the class attribute and listed, so you can see what is missing."
+  },
+  {
+   "q": "Will the result look right in every email client?",
+   "a": "Not guaranteed. Email clients support different parts of CSS, and flexbox and grid are unreliable in some. Test in the clients you care about and consider table layouts for important emails."
+  }
+ ],
+ "related": [
+  "tailwind-converter",
+  "tailwind-v3-to-v4-migrator",
+  "tailwind-class-sorter",
+  "html-format",
+  "css-minify",
+  "scss-to-css"
+ ],
+ "keywords": [
+  "tailwind to inline css",
+  "tailwind classes to style attribute",
+  "tailwind html email converter",
+  "convert tailwind to css",
+  "inline tailwind for email",
+  "free tailwind inliner"
+ ]
+}

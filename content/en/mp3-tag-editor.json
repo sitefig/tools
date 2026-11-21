@@ -1,0 +1,45 @@
+{
+ "id": "mp3-tag-editor",
+ "seoTitle": "MP3 Tag Editor: Edit ID3 Tags and Cover Art Online",
+ "metaDescription": "Read and edit ID3 tags of MP3 files: title, artist, album, year, track, genre, comment and cover art. No re-encoding, no upload.",
+ "intro": "Shows the ID3 tags of one or more MP3 files and writes new ones, including a cover image. The audio data is copied as it is, so quality does not change.",
+ "why": "Players sort and display music by its tags. Wrong artists, missing track numbers and absent cover art are common after ripping or downloading. Fixing them should not need an installed program.\n\nThe tool reads ID3v2.3, 2.4 and the old ID3v1 block (a v2.2 reader is included but untested), and writes ID3v2.3 with UTF-16 text where needed, which every player understands. Frames you do not edit are kept when the file already has a v2.3 tag; from v2.2 or v2.4 the fields shown on the page are carried over and anything else is listed as dropped.",
+ "howTo": [
+  "Select one or more MP3 files, plus a PNG or JPEG if you want to set cover art.",
+  "Press Run with all fields blank to see the current tags.",
+  "Fill in the fields you want to change and press Run again.",
+  "Download the tagged files."
+ ],
+ "faq": [
+  {
+   "q": "Is the audio re-encoded?",
+   "a": "No. The audio bytes are copied unchanged, only the tag at the start of the file is rewritten."
+  },
+  {
+   "q": "What happens to the old ID3v1 tag?",
+   "a": "It is removed when you save, to avoid conflicting information."
+  },
+  {
+   "q": "Can I tag many files at once?",
+   "a": "Yes, but the same values are applied to all of them. Use it for artist, album and cover, and tag titles one by one."
+  },
+  {
+   "q": "Does it support other formats?",
+   "a": "Only MP3 with ID3. M4A, FLAC and OGG use other tag systems."
+  }
+ ],
+ "related": [
+  "audio-converter",
+  "audio-trimmer",
+  "audio-joiner",
+  "file-type-detector",
+  "bpm-detector",
+  "musical-key-finder"
+ ],
+ "keywords": [
+  "mp3 tag editor",
+  "edit id3 tags online",
+  "add album art to mp3",
+  "mp3 metadata editor"
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "id": "social-image-size-reference",
+ "seoTitle": "Social Media Image Size Reference by Platform",
+ "metaDescription": "Look up recommended image sizes and ratios for Instagram, Facebook, LinkedIn, X, YouTube, Pinterest and TikTok, or enter your size to match formats.",
+ "intro": "Look up recommended image sizes and aspect ratios per platform and format, or type your image size (like 1200x630) to see which formats it suits.",
+ "why": "Each network crops images to its own shapes. A 16:9 picture on a 4:5 feed loses its sides.\n\nFilter by platform or type your image size, such as 1200x630, to see which formats share its aspect ratio. Only the YouTube values were checked at the source on the date shown. The others are widely quoted values that were not verified, and platforms change them often, so confirm in the platform before you design.",
+ "howTo": [
+  "Type a platform name, or your image size like 1200x630.",
+  "Read the sizes and ratios.",
+  "Check the source status of each row.",
+  "Confirm in the platform before final export."
+ ],
+ "faq": [
+  {
+   "q": "Are these sizes official?",
+   "a": "Only the YouTube rows were checked at the source. The rest are commonly quoted and marked as not checked."
+  },
+  {
+   "q": "Why do ratios matter more than pixels?",
+   "a": "A platform scales images but crops by ratio."
+  },
+  {
+   "q": "How do I check an image file?",
+   "a": "Use the Social Image Size Checker for Open Graph images."
+  }
+ ],
+ "related": [
+  "og-image-size-checker",
+  "social-preview",
+  "image-info",
+  "opengraph-banner-canvas-generator",
+  "image-size-attributes",
+  "image-grid-splitter"
+ ],
+ "keywords": [
+  "social media image sizes",
+  "instagram image size",
+  "youtube thumbnail size",
+  "linkedin image size"
+ ]
+}

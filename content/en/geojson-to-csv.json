@@ -1,0 +1,45 @@
+{
+ "id": "geojson-to-csv",
+ "seoTitle": "Free GeoJSON to CSV Converter with WKT and Lat/Lon",
+ "metaDescription": "Flatten a GeoJSON FeatureCollection into CSV with one row per feature, property columns, longitude and latitude, and WKT. Free, in your browser.",
+ "intro": "Flattens a GeoJSON FeatureCollection, single Feature or array of Features to CSV: one row per feature, properties as columns, longitude and latitude for points and an optional WKT column.",
+ "why": "GeoJSON is the format for web maps, but analysts, spreadsheets and databases want rows and columns. Opening a file with nested properties in Excel is no help, and a quick script is more effort than it should be. Paste the GeoJSON here and each feature becomes a row. Properties become columns, with nested objects flattened into dotted names. Point features get longitude and latitude columns, and every geometry can also be written as WKT, which many databases can import. You can pick the delimiter. It does not reproject coordinates or simplify shapes, so output is in the coordinate system of the source, normally WGS 84. The conversion runs in your browser and your data is not uploaded.",
+ "howTo": [
+  "Paste the GeoJSON, a FeatureCollection, a Feature or an array of Features, into the input box.",
+  "Choose whether to include a WKT geometry column and set the delimiter.",
+  "Copy the CSV or save it for use in a spreadsheet or database."
+ ],
+ "faq": [
+  {
+   "q": "How are nested properties handled?",
+   "a": "Nested objects are flattened into dotted column names, such as tags.capital. Features with different properties get all columns, left empty where missing."
+  },
+  {
+   "q": "What happens to lines and polygons?",
+   "a": "They have no single longitude and latitude, so those columns stay empty. Use the WKT column to keep the full geometry."
+  },
+  {
+   "q": "Does it change coordinates?",
+   "a": "No. Coordinates are written exactly as they appear in the file. GeoJSON normally uses longitude then latitude order in WGS 84, so check the column order if you import the CSV elsewhere."
+  },
+  {
+   "q": "Can I convert CSV back to GeoJSON?",
+   "a": "Yes, for points with the CSV to GeoJSON tool on this site, which reads latitude and longitude columns or a WKT POINT column."
+  }
+ ],
+ "related": [
+  "csv-to-geojson",
+  "json-to-csv",
+  "csv-viewer",
+  "json-flatten-unflatten",
+  "json-format",
+  "csv-to-json"
+ ],
+ "keywords": [
+  "geojson to csv",
+  "convert geojson to csv online",
+  "geojson to wkt",
+  "free geojson converter",
+  "geojson properties to spreadsheet"
+ ]
+}

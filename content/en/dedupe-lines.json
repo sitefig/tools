@@ -1,0 +1,46 @@
+{
+ "id": "dedupe-lines",
+ "seoTitle": "Free Duplicate Line Remover: Keep First, Unique or Dupes",
+ "metaDescription": "Remove duplicate lines, keep only unique lines, or show only the duplicated ones. Case and surrounding spaces can be ignored. Free, in-browser.",
+ "intro": "Paste a list and remove repeated lines, keep only lines that occur once, or list only the lines that appear more than once. Case and surrounding spaces are optional to ignore.",
+ "why": "Mailing lists, keyword exports, log excerpts and URL lists all pick up duplicates. Removing them by hand is slow, and spreadsheets need several steps to do it. Sometimes you want the opposite: just the lines that repeat, to see what is being duplicated.\n\nThis tool has three modes. Keep first removes later copies and leaves each line once in its original order. Only unique drops every line that appears more than once. Only duplicates shows each repeated line once. You choose whether comparison is case sensitive and whether to ignore spaces around lines, which is on by default. The original line, not the trimmed one, is kept in the output. It runs in your browser.",
+ "howTo": [
+  "Paste your list into the input box, one item per line.",
+  "Choose the mode: keep first, only unique or only duplicates.",
+  "Set case sensitivity and whether to ignore surrounding spaces.",
+  "Run the tool and copy the result."
+ ],
+ "faq": [
+  {
+   "q": "Which copy is kept in keep first mode?",
+   "a": "The first occurrence of each line, in its original position and exact form, including its original spacing and capitalisation. Later matches are removed."
+  },
+  {
+   "q": "What is the difference between only unique and keep first?",
+   "a": "Keep first keeps one copy of every line. Only unique keeps only lines that were never repeated, so anything that had duplicates disappears completely."
+  },
+  {
+   "q": "How do I count how many times each line occurs?",
+   "a": "Use the duplicate line counter tool on this site, which reports how many times each line occurs. This tool only filters lines and does not show any counts."
+  },
+  {
+   "q": "Is my list uploaded?",
+   "a": "No. The text is processed in your browser and is not uploaded, stored or sent to a server, so it is fine to use with drafts, lists and private notes."
+  }
+ ],
+ "related": [
+  "sort-lines",
+  "text-duplicate-line-counter",
+  "remove-empty-lines-trim",
+  "list-converter",
+  "duplicate-words-finder",
+  "extract-emails-urls-numbers"
+ ],
+ "keywords": [
+  "remove duplicate lines",
+  "dedupe list online",
+  "delete duplicate lines",
+  "find duplicate lines",
+  "unique lines tool free"
+ ]
+}

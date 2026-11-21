@@ -1,0 +1,45 @@
+{
+ "id": "rdfa-to-jsonld",
+ "seoTitle": "RDFa to JSON-LD Converter",
+ "metaDescription": "Convert RDFa (vocab, prefix, typeof, property, resource) in pasted HTML to JSON-LD with full schema.org types. Runs locally.",
+ "intro": "Reads RDFa attributes from pasted HTML and writes JSON-LD, resolving vocab and prefix declarations.",
+ "why": "RDFa spreads structured data across many attributes. The converter reads vocab, prefix, typeof, about, property, resource, href, src, content and datetime, builds items and nested items, and shortens schema.org IRIs to plain type names.\n\nIt covers the subset used in practice with schema.org. Rel and rev chains, datatypes, language tags and the full RDFa initial context are not handled, and the output says so. Unknown prefixes are reported rather than guessed.",
+ "howTo": [
+  "Paste the HTML with RDFa attributes.",
+  "Read the JSON-LD output and any warnings.",
+  "Check nested items and links.",
+  "Replace the attributes with a script tag."
+ ],
+ "faq": [
+  {
+   "q": "Which RDFa features are missing?",
+   "a": "rel and rev chaining, datatype, language, inlist and the full initial context."
+  },
+  {
+   "q": "What does url become?",
+   "a": "A link value becomes an object with @id, as RDFa treats it as a resource."
+  },
+  {
+   "q": "Can it handle prefixes?",
+   "a": "Yes, declared in the prefix attribute; schema is known by default."
+  },
+  {
+   "q": "Is it verified?",
+   "a": "By hand against samples; no independent RDFa library was available."
+  }
+ ],
+ "related": [
+  "microdata-to-jsonld",
+  "structured-data-extractor",
+  "jsonld-syntax-validator",
+  "schema-property-checker",
+  "schema-generator",
+  "html-url-extractor"
+ ],
+ "keywords": [
+  "rdfa to json-ld",
+  "convert rdfa",
+  "typeof property to json-ld",
+  "rdfa converter"
+ ]
+}

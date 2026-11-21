@@ -1,0 +1,44 @@
+{
+ "id": "ai-snippet-control-advisor",
+ "seoTitle": "Snippet Control Advisor: nosnippet and max-snippet",
+ "metaDescription": "Choose what you want to limit and get the nosnippet, max-snippet or data-nosnippet markup Google documents for limiting what Search shows.",
+ "intro": "Gives the markup for limiting snippets, with an honest note on what Google says about AI features.",
+ "why": "Google's page on AI features lists nosnippet, data-nosnippet, max-snippet and noindex as the controls for limiting what is shown from your pages in Search, and says a page must be indexed and eligible for a snippet to appear as a supporting link.\n\nPick a goal and get the exact markup. Google does not spell out beyond that how each control changes AI Overviews or AI Mode, so the tool does not claim more. Google-Extended is a separate token for Gemini training and grounding and does not affect Search.",
+ "howTo": [
+  "Choose your goal.",
+  "Set the excerpt length if needed.",
+  "Copy the tag, header or attribute.",
+  "Check results after recrawling, which can take days."
+ ],
+ "faq": [
+  {
+   "q": "Does nosnippet remove my page from AI Overviews?",
+   "a": "Google lists it among the controls but does not spell out the exact effect."
+  },
+  {
+   "q": "What is data-nosnippet?",
+   "a": "An attribute for span, div or section that keeps that part out of snippets."
+  },
+  {
+   "q": "Does noindex remove the page from Search?",
+   "a": "Yes, once the crawler sees it."
+  },
+  {
+   "q": "Does Google-Extended affect Search?",
+   "a": "No, per Google."
+  }
+ ],
+ "related": [
+  "robots-meta-tag-generator",
+  "x-robots-tag-header-builder",
+  "ai-bot-robots-builder",
+  "seo-robots-noindex-simulator",
+  "robots-txt-validator"
+ ],
+ "keywords": [
+  "nosnippet ai overviews",
+  "max-snippet generator",
+  "data-nosnippet",
+  "limit google snippets"
+ ]
+}

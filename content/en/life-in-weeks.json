@@ -1,0 +1,45 @@
+{
+  "id": "life-in-weeks",
+  "seoTitle": "Life in Weeks Calendar (Weeks Lived and Left)",
+  "metaDescription": "Visualise your life as a grid of weeks from your birth date and expected lifespan: weeks lived, weeks left and a printable chart.",
+  "intro": "See a lifetime as a grid, one square per week.",
+  "why": "Enter a birth date and an expected lifespan. The page counts the full weeks lived, weeks in the chosen lifespan and weeks left, and draws a grid of 52 columns by one row per year with lived weeks filled. The preview can be printed or saved as a PDF.\n\nThe lifespan is only a planning number, not a prediction; real life expectancy varies widely with country, health and chance.\n\nNo data is sent anywhere: the work happens in your browser, so you can use it offline once the page has loaded.",
+  "howTo": [
+    "Enter your birth date.",
+    "Set the lifespan you want to plan around.",
+    "Read the numbers and the chart.",
+    "Print it if you like."
+  ],
+  "faq": [
+    {
+      "q": "Is it accurate?",
+      "a": "The week count is exact; the lifespan is whatever you choose."
+    },
+    {
+      "q": "Is my birth date stored?",
+      "a": "No, it stays in the page."
+    },
+    {
+      "q": "Why 52 columns?",
+      "a": "A year has 52 weeks plus one or two days."
+    },
+    {
+      "q": "Is my data sent anywhere?",
+      "a": "No. Everything is processed in your browser, and the page makes no network requests with your input."
+    }
+  ],
+  "related": [
+    "age-calculator",
+    "date-difference",
+    "countdown-to-date",
+    "printable-calendar",
+    "week-number",
+    "sleep-cycle-calculator"
+  ],
+  "keywords": [
+    "life in weeks",
+    "weeks lived calculator",
+    "life calendar",
+    "memento mori calendar"
+  ]
+}

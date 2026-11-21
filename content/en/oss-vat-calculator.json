@@ -1,0 +1,39 @@
+{
+ "id": "oss-vat-calculator",
+ "seoTitle": "OSS VAT Calculator for EU Distance Sales",
+ "metaDescription": "Work out VAT due per EU destination country for B2C distance sales at standard rates, with totals for your One-Stop-Shop return.",
+ "intro": "VAT per destination country and the total for an OSS return.",
+ "why": "Under the One-Stop-Shop scheme you charge the VAT rate of the customer's country and report it in one return. Doing that by hand across countries is error-prone.\n\nPaste country and amount lines. The tool uses standard rates from the bundled table, or a rate you give per line, and works from net or gross amounts. It does not file anything.",
+ "howTo": [
+  "Paste lines of country code and amount, with an optional rate.",
+  "Choose net or gross amounts and enter your own country.",
+  "Read VAT per country and the total."
+ ],
+ "faq": [
+  {
+   "q": "Which rates are used?",
+   "a": "Standard rates as of 13 July 2026 from the Your Europe page, unless you override them."
+  },
+  {
+   "q": "Why are my own country sales rejected?",
+   "a": "Domestic sales go on your normal VAT return, not OSS."
+  },
+  {
+   "q": "Does it convert currency?",
+   "a": "No. Enter amounts in the reporting currency."
+  }
+ ],
+ "related": [
+  "eu-vat-rates-lookup",
+  "eu-distance-selling-threshold-tracker",
+  "vat-calculator",
+  "reverse-charge-checker",
+  "vat-return-summary-builder",
+  "invoice-generator"
+ ],
+ "keywords": [
+  "OSS VAT",
+  "one stop shop calculator",
+  "EU distance sales VAT"
+ ]
+}

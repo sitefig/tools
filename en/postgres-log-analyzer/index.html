@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PostgreSQL Log Analyzer: Slow Queries, Errors, Lock Waits | Free Tools</title>
+<meta name="description" content="Find slow statements, errors, lock waits, deadlocks and temp files in a PostgreSQL log, grouped by query shape. Free, browser-based.">
+<link rel="canonical" href="https://tools.sitefig.net/en/postgres-log-analyzer/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/postgres-log-analyzer/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/postgres-log-analyzer/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="PostgreSQL Log Analyzer: Slow Queries, Errors, Lock Waits | Free Tools">
+<meta property="og:description" content="Find slow statements, errors, lock waits, deadlocks and temp files in a PostgreSQL log, grouped by query shape. Free, browser-based.">
+<meta property="og:url" content="https://tools.sitefig.net/en/postgres-log-analyzer/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PostgreSQL Log Analyzer: Slow Queries, Errors, Lock Waits | Free Tools">
+<meta name="twitter:description" content="Find slow statements, errors, lock waits, deadlocks and temp files in a PostgreSQL log, grouped by query shape. Free, browser-based.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"PostgreSQL Log Analyzer: Slow Queries, Errors and Lock Waits","url":"https://tools.sitefig.net/en/postgres-log-analyzer/","description":"Find slow statements, errors, lock waits, deadlocks and temp files in a PostgreSQL log, grouped by query shape. Free, browser-based.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Set log_min_duration_statement and collect the log.","Paste the log or open the file.","Choose how to rank query shapes.","Read slow queries, errors and lock waits."],"keywords":"postgresql log analyzer, postgres slow query log, pgbadger alternative browser","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"Log Parsing","item":"https://tools.sitefig.net/en/#log-parsing"},{"@type":"ListItem","position":3,"name":"PostgreSQL Log Analyzer: Slow Queries, Errors and Lock Waits","item":"https://tools.sitefig.net/en/postgres-log-analyzer/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How are queries grouped?","acceptedAnswer":{"@type":"Answer","text":"Literals become ? and the text is lower-cased, so two queries that differ only by values share a shape."}},{"@type":"Question","name":"Why do I see no slow queries?","acceptedAnswer":{"@type":"Answer","text":"Duration lines appear only when log_min_duration_statement or log_duration is on."}},{"@type":"Question","name":"Is it as good as pgBadger?","acceptedAnswer":{"@type":"Answer","text":"No. It is a quick view for pasted logs, with no charts and no prepared-statement tracking."}},{"@type":"Question","name":"Is my log uploaded?","acceptedAnswer":{"@type":"Answer","text":"No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#log-parsing">Log Parsing</a></li><li><span aria-current="page">PostgreSQL Log Analyzer: Slow Queries, Errors and Lock Waits</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>PostgreSQL Log Analyzer: Slow Queries, Errors and Lock Waits</h1>
+<p class="lede">A small pgBadger-style summary: slow queries by shape, grouped errors, lock waits and deadlocks.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="postgres-log-analyzer" data-module="new12" data-sensitive="1"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Slow query logs list the same query with different literals. Grouping by shape shows which query costs the most in total, not just the slowest single run.</p>
+<p>Parsing depends on your log_line_prefix and on log_min_duration_statement or log_duration being set. Multi-line statements are joined. For a real report on large logs use pgBadger.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Set log_min_duration_statement and collect the log.</li><li>Paste the log or open the file.</li><li>Choose how to rank query shapes.</li><li>Read slow queries, errors and lock waits.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How are queries grouped?</summary><p>Literals become ? and the text is lower-cased, so two queries that differ only by values share a shape.</p></details>
+<details><summary>Why do I see no slow queries?</summary><p>Duration lines appear only when log_min_duration_statement or log_duration is on.</p></details>
+<details><summary>Is it as good as pgBadger?</summary><p>No. It is a quick view for pasted logs, with no charts and no prepared-statement tracking.</p></details>
+<details><summary>Is my log uploaded?</summary><p>No. Everything is processed in your browser and nothing is sent. Logs can hold IP addresses and tokens, so the page does not write them into the address bar.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/mysql-slow-query-analyzer/"><span class="link-card__title">MySQL Slow Query Log Analyzer (Group by Fingerprint)</span><span class="link-card__desc">Group slow queries by their fingerprint and rank by total time, average, maximum or count. Shows rows examined versus rows sent, lock time and an example of each pattern.</span></a></li><li><a class="link-card" href="/en/postgres-explain-visualizer/"><span class="link-card__title">PostgreSQL EXPLAIN Plan Visualizer</span><span class="link-card__desc">Paste EXPLAIN / EXPLAIN ANALYZE output (text or FORMAT JSON) and get an indented plan tree with per-node exclusive time or cost bars, row-estimate error factors and automatic findings: sequential scans that discard most rows, external (disk) sorts, multi-batch hashes, wildly wrong estimates, hot nested loops.</span></a></li><li><a class="link-card" href="/en/sql-index-advisor/"><span class="link-card__title">SQL Index Advisor</span><span class="link-card__desc">Paste your CREATE TABLE statements and the SELECT / UPDATE / DELETE queries you run: get CREATE INDEX suggestions based on WHERE equality and range columns, join keys and ORDER BY / GROUP BY, skipping indexes already provided by primary keys, UNIQUE constraints or existing indexes. Static heuristic (no table statistics): always confirm with EXPLAIN on real data.</span></a></li><li><a class="link-card" href="/en/sql-explainer/"><span class="link-card__title">SQL Query Explainer (plain English)</span><span class="link-card__desc">Explain a SELECT / INSERT / UPDATE / DELETE / CREATE TABLE statement in plain English: tables and joins, filters, grouping, ordering and limits in logical execution order, plus warnings about common pitfalls (SELECT *, leading-wildcard LIKE, functions on columns, big OFFSET, UPDATE/DELETE without WHERE). Rule-based parser: no CTEs, UNION or window frames.</span></a></li><li><a class="link-card" href="/en/redis-mongodb-slowlog-parser/"><span class="link-card__title">Redis SLOWLOG and MongoDB Slow Query Log Parser</span><span class="link-card__desc">Rank slow operations from redis-cli SLOWLOG GET output or from a mongod JSON log. Redis commands are grouped by command name, MongoDB operations by namespace, command and plan.</span></a></li><li><a class="link-card" href="/en/exception-grouper/"><span class="link-card__title">Exception Grouper: Cluster Similar Error Messages in a Log</span><span class="link-card__desc">Group error and exception lines by replacing variable parts (numbers, IDs, IPs, paths, URLs, quoted values) with placeholders. Shows count, first and last line and an example for each group.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+ "id": "ngram-extractor",
+ "seoTitle": "N-gram Extractor: Common 2, 3 and 4-Word Phrases in Text",
+ "metaDescription": "Find the most repeated two, three and four-word phrases in a text, with counts, without phrases crossing sentences. Free, in your browser.",
+ "intro": "Counts repeated phrases of two to eight words in your text, with a choice of how stop words are treated. Useful for spotting key phrases and over-repetition.",
+ "why": "Single-word counts miss what a page is about. Phrases such as \"trail running shoes\" carry the topic. Counting two to four-word phrases shows which ones a text repeats, and where the wording gets repetitive.\n\nPhrases do not cross sentence ends, commas or brackets. By default, phrases that start or end with a stop word such as \"the\" or \"of\" are dropped. There is no ideal count: use it to spot repetition and to compare with competitor text.",
+ "howTo": [
+  "Paste your text.",
+  "Set the shortest and longest phrase length.",
+  "Choose how stop words are handled and the minimum count.",
+  "Read the tables, one per length."
+ ],
+ "faq": [
+  {
+   "q": "How does this differ from keyword density?",
+   "a": "The keyword density tool covers phrases up to three words. This one goes up to eight and shows counts per 1,000 words."
+  },
+  {
+   "q": "Why are some phrases missing?",
+   "a": "They appear less often than the minimum count or contain a stop word under the current setting."
+  },
+  {
+   "q": "Does it work for other languages?",
+   "a": "The stop word list is English. Other languages work with stop words set to keep all."
+  },
+  {
+   "q": "Is there a safe count?",
+   "a": "No. Natural writing repeats the main phrase. Rewrite only when it reads badly."
+  }
+ ],
+ "related": [
+  "keyword-density",
+  "keyword-extractor",
+  "tfidf",
+  "content-gap",
+  "text-statistics",
+  "keyword-clusterer"
+ ],
+ "keywords": [
+  "ngram extractor",
+  "common phrases in text",
+  "bigram trigram counter",
+  "phrase frequency"
+ ]
+}

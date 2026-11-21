@@ -1,0 +1,39 @@
+{
+ "id": "working-days-due-date-calculator",
+ "seoTitle": "Due Date by Working Days Calculator with Your Own Holidays",
+ "metaDescription": "Add or subtract working days from a start date, skipping weekends and the holidays you list. Free.",
+ "intro": "Moves forward or back a number of working days, skipping weekend days and the holiday dates you paste.",
+ "why": "Delivery and legal deadlines count working days. Choose your weekend, add your holidays and get the date.\n\nThe start day is not counted. Holidays are only those you list, since the tool does not fetch any calendar.",
+ "howTo": [
+  "Enter a start date and number of working days.",
+  "Pick your weekend days.",
+  "List holidays."
+ ],
+ "faq": [
+  {
+   "q": "Can I subtract days?",
+   "a": "Yes, use a negative number."
+  },
+  {
+   "q": "Does it know public holidays?",
+   "a": "No. Paste the dates for your country."
+  },
+  {
+   "q": "Is the start day counted?",
+   "a": "No, counting begins the next working day."
+  }
+ ],
+ "related": [
+  "business-days",
+  "add-subtract-dates",
+  "long-weekend-finder",
+  "notice-period-end-date-calculator",
+  "date-difference",
+  "email-drip-cadence-planner"
+ ],
+ "keywords": [
+  "working days calculator",
+  "add business days",
+  "due date calculator"
+ ]
+}

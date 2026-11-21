@@ -1,0 +1,46 @@
+{
+ "id": "pdf-reverse",
+ "seoTitle": "Free Reverse PDF Page Order Online",
+ "metaDescription": "Put the pages of a PDF in reverse order in one step, so the last page comes first. Free, runs in your browser and nothing is uploaded.",
+ "intro": "Flip a PDF so the last page comes first and the first page comes last. No settings needed: choose the file and run the tool.",
+ "why": "Reversed page order is common when a scanner stacks pages face down, when you scan the back of a double-sided stack, or when a document was printed in the order it came off the printer. Fixing a 50-page file by dragging pages one by one is nobody's idea of fun.\n\nThis tool reverses the whole document in a single step. It takes the file, rearranges the pages and writes a new PDF named after the original, without re-rendering the content, so text and images remain unchanged. It is the quickest option for a full reversal. If you need only part of the document reversed, or want to mix other changes in, use the Reorder PDF Pages tool with a reversed range. Encrypted PDFs are refused, and bookmarks and form fields are not preserved.",
+ "howTo": [
+  "Choose a PDF file.",
+  "Run the tool.",
+  "Check the page count in the summary.",
+  "Download the reversed PDF."
+ ],
+ "faq": [
+  {
+   "q": "Does it need any options?",
+   "a": "No. The whole document is reversed. If you want only part of it reversed, use the Reorder PDF Pages tool and write the range backwards, for example 1-2,8-3,9-."
+  },
+  {
+   "q": "Is the quality affected?",
+   "a": "No. Pages are copied without being re-rendered, so text stays selectable and images keep their quality. Only the order changes."
+  },
+  {
+   "q": "Will page numbers printed on the pages change?",
+   "a": "No. Numbers that are part of the page content stay as they were, so a reversed file shows them counting down. Use the page number tool afterwards to stamp new ones."
+  },
+  {
+   "q": "Can I undo it?",
+   "a": "Run the tool again on the new file to reverse it back. Your original file is not touched, so you can also just keep it."
+  }
+ ],
+ "related": [
+  "pdf-reorder-pages",
+  "pdf-rotate",
+  "pdf-extract-pages",
+  "pdf-add-page-numbers",
+  "pdf-merge",
+  "pdf-split"
+ ],
+ "keywords": [
+  "reverse pdf pages",
+  "reverse pdf order",
+  "flip pdf page order",
+  "pdf last page first",
+  "free reverse pdf tool"
+ ]
+}

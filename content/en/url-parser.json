@@ -1,0 +1,47 @@
+{
+ "id": "url-parser",
+ "seoTitle": "Free URL Parser to Split Links into Parts",
+ "metaDescription": "Split a URL into protocol, host, port, path segments, query parameters and fragment, with decoded values. Free and runs in your browser, no upload.",
+ "intro": "Paste a URL and see its protocol, username, host, port, path, query parameters and fragment broken out into separate lines, with path segments and parameters decoded.",
+ "why": "Long links with tracking parameters, nested redirects and encoded paths are hard to read. When a redirect misbehaves or a campaign link is wrong, you need to see exactly what the browser sees: which host, which port, which parameters, and in which order.\n\nThis parser uses the browser's own URL implementation, so it follows the same rules as real links. It lists every component and numbers the query parameters, including repeated keys. If you leave off the scheme, https:// is assumed. Because the parsing runs locally, links with tokens or internal host names are not sent anywhere.",
+ "howTo": [
+  "Paste the URL into the box. A missing scheme is treated as https://.",
+  "Run the parser.",
+  "Read the components: protocol, host, port, origin, path, search and hash.",
+  "Check the decoded path segments and the numbered query parameters."
+ ],
+ "faq": [
+  {
+   "q": "Why does the port say \"(default)\"?",
+   "a": "When a URL has no explicit port, or uses the default one for its scheme such as 443 for https, the browser reports an empty port. The tool shows \"(default)\" in that case."
+  },
+  {
+   "q": "How are repeated query parameters shown?",
+   "a": "Each occurrence is listed in order and numbered, so tag=a&tag=b appears as two lines. To get them as JSON, use the Query String Parser."
+  },
+  {
+   "q": "Does it follow redirects or fetch the page?",
+   "a": "No. It only analyses the text of the link. A web page cannot read other sites' responses, so nothing is requested."
+  },
+  {
+   "q": "What happens with an invalid URL?",
+   "a": "You see an \"Invalid URL\" error. Common causes are spaces, a missing host or unsupported characters. Percent-encode special characters first and try again."
+  }
+ ],
+ "related": [
+  "query-string",
+  "url-encode",
+  "url-decode",
+  "url-tracker-stripper",
+  "utm-bulk-builder",
+  "punycode"
+ ],
+ "keywords": [
+  "url parser",
+  "split url into parts",
+  "url components online",
+  "free url analyzer",
+  "parse query parameters from url",
+  "break down a url"
+ ]
+}

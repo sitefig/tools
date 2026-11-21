@@ -1,0 +1,44 @@
+{
+ "id": "gitlab-ci-linter",
+ "seoTitle": "GitLab CI Linter: Check .gitlab-ci.yml Offline",
+ "metaDescription": "Check .gitlab-ci.yml for YAML errors, jobs without script, unknown stages, broken needs and extends. Free and offline, no GitLab login needed.",
+ "intro": "Checks the structure of a .gitlab-ci.yml: YAML syntax, jobs, stages, needs, extends, when values and keywords outside the documented list.",
+ "why": "GitLab's own CI lint needs a project and a login. This page gives a quick structural check you can run on any file, for example while reviewing a merge request.\n\nIt flags clear mistakes as problems and doubtful ones as review items. It cannot see include files, variables, rules logic or runner settings, so a pass here is not a pass in GitLab. Keyword names come from the GitLab CI/CD YAML reference.",
+ "howTo": [
+  "Paste your .gitlab-ci.yml.",
+  "Read the Problems list first, then the Review list.",
+  "Fix the file and paste again.",
+  "Run GitLab's own CI lint for the final check."
+ ],
+ "faq": [
+  {
+   "q": "Does it replace GitLab's CI lint?",
+   "a": "No. It checks structure only. It does not fetch includes, expand variables or evaluate rules."
+  },
+  {
+   "q": "Why is a keyword marked for review?",
+   "a": "It is not in the documented job keyword list. It may be a typo, or a newer keyword than this list."
+  },
+  {
+   "q": "Are only and except an error?",
+   "a": "No. They are reported for review because GitLab recommends rules for new pipelines."
+  },
+  {
+   "q": "Is the file sent anywhere?",
+   "a": "No. Parsing happens in your browser."
+  }
+ ],
+ "related": [
+  "gitlab-ci-generator",
+  "github-actions-explainer",
+  "yaml-validator",
+  "jenkinsfile-generator",
+  "dockerfile-linter",
+  "k8s-manifest-validator"
+ ],
+ "keywords": [
+  "gitlab ci lint",
+  "gitlab-ci.yml validator",
+  "check gitlab pipeline yaml"
+ ]
+}

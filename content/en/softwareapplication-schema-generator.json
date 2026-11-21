@@ -1,0 +1,45 @@
+{
+ "id": "softwareapplication-schema-generator",
+ "seoTitle": "SoftwareApplication Schema Generator (Mobile, Web App, Free Price 0)",
+ "metaDescription": "Build SoftwareApplication, MobileApplication or WebApplication JSON-LD with category, operating system, price and rating.",
+ "intro": "Generates app markup with Google's application categories, operating system, price (0 for free apps) and an aggregate rating or review.",
+ "why": "Google requires a name, a price and either a rating or a review for software app results. The tool checks the category against the list in Google's documentation, writes free apps as price 0 with a currency, and warns when no rating or review is present.\n\nPick SoftwareApplication, MobileApplication or WebApplication as the type. Ratings must be genuine and shown on the page.",
+ "howTo": [
+  "Choose the type.",
+  "Fill name, operatingSystem and category.",
+  "Enter price and currency; use 0 for a free app.",
+  "Add ratingValue and ratingCount, then copy the script."
+ ],
+ "faq": [
+  {
+   "q": "Which categories are valid?",
+   "a": "The ones Google lists, from GameApplication to ReferenceApplication. Others trigger a warning."
+  },
+  {
+   "q": "How is a free app written?",
+   "a": "As an offer with price 0 and a currency."
+  },
+  {
+   "q": "Do I need both rating and review?",
+   "a": "One of them is enough for Google."
+  },
+  {
+   "q": "Which operating systems can I list?",
+   "a": "Free text such as Android 10+, iOS 16+."
+  }
+ ],
+ "related": [
+  "schema-generator",
+  "rich-result-eligibility-checker",
+  "review-aggregaterating-schema-builder",
+  "jsonld-syntax-validator",
+  "schema-property-checker",
+  "product-schema-generator"
+ ],
+ "keywords": [
+  "softwareapplication schema generator",
+  "mobile app structured data",
+  "webapplication json-ld",
+  "app schema price 0"
+ ]
+}

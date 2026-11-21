@@ -1,0 +1,45 @@
+{
+ "id": "content-brief-builder",
+ "seoTitle": "Content Brief Builder from Competitor Headings",
+ "metaDescription": "Paste headings of top-ranking pages and get a content brief: shared topics, questions, common terms, outline length and a draft outline.",
+ "intro": "Turns the headings of competing pages into a brief: topics most pages cover, questions asked, common terms and a draft outline for your own page.",
+ "why": "Writers often start from an empty page. Seeing what the top pages cover, and which questions they answer, gives a starting outline in minutes.\n\nPaste each competitor's headings (Markdown, HTML or lines like H2: Title) and separate pages with a line of three equal signs. Topics are grouped by shared words in the headings, so check the groups. A brief shows what others cover. It cannot tell you what will rank or what your own angle should be.",
+ "howTo": [
+  "Type the target keyword in the first box.",
+  "Paste the headings of each competitor page, separated by ===.",
+  "Read the topics, questions and terms.",
+  "Edit the draft outline and add your own expertise."
+ ],
+ "faq": [
+  {
+   "q": "How do I get headings from a page?",
+   "a": "View the page source or use a heading extractor, then paste the h1 to h4 lines. Markdown # headings also work."
+  },
+  {
+   "q": "How many pages should I use?",
+   "a": "Three to ten of the top results is enough."
+  },
+  {
+   "q": "Does it copy competitors?",
+   "a": "It only counts topics. Write your own text and add information they do not have."
+  },
+  {
+   "q": "Can it fetch the pages?",
+   "a": "No. A web page cannot fetch other sites, so you paste the headings."
+  }
+ ],
+ "related": [
+  "heading-analyzer",
+  "content-gap",
+  "tfidf",
+  "topic-cluster-planner",
+  "question-keyword-extractor",
+  "keyword-extractor"
+ ],
+ "keywords": [
+  "content brief template",
+  "content brief generator",
+  "competitor headings outline",
+  "seo content outline"
+ ]
+}

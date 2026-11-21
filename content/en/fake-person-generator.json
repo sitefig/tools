@@ -1,0 +1,46 @@
+{
+ "id": "fake-person-generator",
+ "seoTitle": "Free Fake Person Generator - Clearly Fictional Data",
+ "metaDescription": "Generate fictional people with example.com emails, 555-01xx phone numbers and made-up addresses. Seeded, JSON or text; free in your browser.",
+ "intro": "Generate fictional people for testing: a name, an example.com email, a 555-01xx phone number, a birth date, a made-up address and a company.",
+ "why": "Forms, CRMs, onboarding flows and email templates need sample people, but using real names and addresses in a demo or a bug report is a privacy problem. Random strings, on the other hand, look wrong and hide layout issues such as long surnames.\n\nThis generator produces records that are obviously fictional. Emails use the reserved example.com domain, phone numbers sit in the +1-555-01xx block reserved for fiction, and addresses use invented towns and street names with a fake ZZ region. The seed makes the set repeatable, so screenshots and tests stay stable. Choose JSON for code or plain text for pasting into a document. Nothing is fetched from a server.",
+ "howTo": [
+  "Set how many people you need, from 1 to 500.",
+  "Enter a seed so you can reproduce the same list later.",
+  "Choose JSON or Text as the format.",
+  "Copy the output into your test data."
+ ],
+ "faq": [
+  {
+   "q": "Can these people be real?",
+   "a": "A name like Alex Smith is common, so a coincidental match is possible, but the emails, phones and addresses are built from reserved or invented values. They are not meant to identify anyone."
+  },
+  {
+   "q": "Why example.com and 555-01xx?",
+   "a": "example.com is reserved for documentation, so mail never reaches a real inbox. The 555-0100 to 555-0199 range is set aside for fictional use in North America, which keeps test records from dialling real people."
+  },
+  {
+   "q": "Does it generate national ID numbers or card numbers?",
+   "a": "No. It only creates name, email, phone, birth date, address and company. For card-shaped test numbers use the mock credit card generator, which is clearly marked as test data."
+  },
+  {
+   "q": "Is the list repeatable?",
+   "a": "Yes. The same seed and count return the same people. Change the seed for a new list. This is useful for stable screenshots and snapshot tests."
+  }
+ ],
+ "related": [
+  "mock-data-generator",
+  "mock-credit-card-generator",
+  "faker-js-mock-schema-generator",
+  "random-json-generator",
+  "api-mock-response-generator",
+  "pii-redactor"
+ ],
+ "keywords": [
+  "fake person generator",
+  "fake name and address generator",
+  "fictional test users",
+  "dummy user data generator",
+  "free fake identity test data"
+ ]
+}

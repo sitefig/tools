@@ -1,0 +1,39 @@
+{
+ "id": "eu-invoice-requirements-checker",
+ "seoTitle": "EU Invoice Requirements Checker (Article 226)",
+ "metaDescription": "Tick what your invoice shows to find which mandatory EU VAT details are missing, based on Article 226 of the VAT Directive.",
+ "intro": "A checklist of the 15 details Article 226 lists for VAT invoices, adjusted to your case.",
+ "why": "Article 226 of Directive 2006/112/EC lists the only details required for VAT purposes: date, sequential number, VAT IDs, names and addresses, description, supply date, taxable amount, rate, VAT amount and special references.\n\nTick the special cases that apply and what your invoice already shows. Items that do not apply are listed separately. Member states may add national rules such as e-invoicing, so this is a minimum check.",
+ "howTo": [
+  "Tick the cases that apply, such as reverse charge.",
+  "Tick each detail your invoice shows.",
+  "Read the missing list."
+ ],
+ "faq": [
+  {
+   "q": "Is this the full legal requirement?",
+   "a": "It is the EU-level list. Your country may require more or allow simplified invoices."
+  },
+  {
+   "q": "Why is the supply date optional?",
+   "a": "It is needed only when it differs from the issue date."
+  },
+  {
+   "q": "Does it read my invoice?",
+   "a": "No. You tick the boxes."
+  }
+ ],
+ "related": [
+  "invoice-generator",
+  "credit-note-generator",
+  "quotation-generator",
+  "reverse-charge-checker",
+  "invoice-number-generator",
+  "receipt-generator"
+ ],
+ "keywords": [
+  "EU invoice requirements",
+  "Article 226",
+  "mandatory invoice fields"
+ ]
+}

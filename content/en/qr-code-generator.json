@@ -1,0 +1,46 @@
+{
+ "id": "qr-code-generator",
+ "seoTitle": "Free QR Code Generator - SVG and PNG, No Sign-up",
+ "metaDescription": "Create QR codes for text, URLs, Wi-Fi, vCard, email and SMS with error correction and mask control. Download SVG or PNG; free and runs in your browser.",
+ "intro": "Turn text, a link, Wi-Fi details, a contact card, an email or an SMS into a QR code. You get SVG markup and a downloadable PNG.",
+ "why": "QR codes show up on posters, menus, packaging, event badges and Wi-Fi cards. Many online generators want an account, add tracking redirects or put a watermark on the image. A QR code that points at someone else's redirect also stops working if that service goes away.\n\nThis generator encodes your content directly, so the code contains exactly what you typed and no middleman. Presets build the right payload for a URL, Wi-Fi network, vCard, email or SMS, and you can pick the error correction level, the mask, the quiet zone and the PNG scale. The encoder is written from scratch for versions 1 to 40, and everything happens in your browser.",
+ "howTo": [
+  "Choose a preset, or leave it on Text.",
+  "Enter the content; for presets use the | separators shown in the label.",
+  "Pick the error correction level and adjust scale and quiet zone if needed.",
+  "Copy the SVG text or download the PNG."
+ ],
+ "faq": [
+  {
+   "q": "Which error correction level should I pick?",
+   "a": "L, M, Q and H recover about 7, 15, 25 and 30 percent of damaged data. Higher levels survive scuffs better but need a denser code. M suits most screens; use Q or H for print that may get dirty."
+  },
+  {
+   "q": "How much can a code hold?",
+   "a": "The largest codes hold about 7,000 digits, 4,000 letters-and-digits or roughly 2,900 bytes at level L. Longer text or higher error correction produces a denser code that is harder to scan."
+  },
+  {
+   "q": "Are the codes static or dynamic?",
+   "a": "Static. The data sits in the pattern itself, with no redirect, tracking or expiry. The flip side is that you cannot change the target later without making a new code."
+  },
+  {
+   "q": "Does it support kanji or mixed modes?",
+   "a": "Not specially. The whole text uses one mode: numeric, alphanumeric or byte (UTF-8). That is valid and scans normally, but may be slightly larger than an encoder that mixes modes."
+  }
+ ],
+ "related": [
+  "barcode-generator",
+  "image-to-base64",
+  "url-encode",
+  "svg-optimizer",
+  "svg-to-png",
+  "url-parser"
+ ],
+ "keywords": [
+  "qr code generator",
+  "free qr code generator no sign up",
+  "wifi qr code generator",
+  "qr code svg download",
+  "vcard qr code"
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "id": "email-frequency-fatigue-estimator",
+ "seoTitle": "Email Send Frequency Fatigue Estimator (What-If Model)",
+ "metaDescription": "Model how sending more emails per week may change open rate, unsubscribes and list size over months. You set the assumptions. Free and private.",
+ "intro": "A simple what-if model comparing your current send frequency with a planned one, month by month.",
+ "why": "More emails mean more opens in total, but often a lower open rate and more unsubscribes. The question is where the trade stops paying. This model makes your assumptions explicit and shows the effect on list size and total opens.\n\nThe two key numbers, the relative open-rate drop and the relative unsubscribe rise per extra weekly send, are your guesses. The defaults are placeholders, not measured values. Run a frequency test on part of your list to find your own numbers before acting on the output.",
+ "howTo": [
+  "Enter list size, current open rate and sends per week.",
+  "Enter the planned sends per week and your two assumptions.",
+  "Add monthly signups and the months to model.",
+  "Compare the two lists and the opens totals."
+ ],
+ "faq": [
+  {
+   "q": "Where do the default percentages come from?",
+   "a": "They are neutral placeholders, not research findings. Replace them."
+  },
+  {
+   "q": "Does it model revenue?",
+   "a": "No. Use the ROI calculator with your results."
+  },
+  {
+   "q": "Why does the total opens go up?",
+   "a": "Because there are more sends, even if each send is opened less."
+  },
+  {
+   "q": "Is it a prediction?",
+   "a": "No, it is a calculation from assumptions."
+  }
+ ],
+ "related": [
+  "email-campaign-rates",
+  "email-list-growth-calculator",
+  "email-marketing-roi-calculator",
+  "email-subscriber-value-calculator",
+  "retention-calculator",
+  "email-drip-cadence-planner"
+ ],
+ "keywords": [
+  "email frequency calculator",
+  "email fatigue",
+  "how often to send email",
+  "send frequency model"
+ ]
+}

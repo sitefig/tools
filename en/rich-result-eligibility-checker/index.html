@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Rich Result Eligibility Checker for JSON-LD | Free Tools</title>
+<meta name="description" content="See which required and recommended properties Google lists for each rich result type, and which ones your JSON-LD is missing. Runs locally.">
+<link rel="canonical" href="https://tools.sitefig.net/en/rich-result-eligibility-checker/">
+<link rel="alternate" hreflang="en" href="https://tools.sitefig.net/en/rich-result-eligibility-checker/">
+<link rel="alternate" hreflang="x-default" href="https://tools.sitefig.net/en/rich-result-eligibility-checker/">
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1216" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Free Tools">
+<meta property="og:title" content="Rich Result Eligibility Checker for JSON-LD | Free Tools">
+<meta property="og:description" content="See which required and recommended properties Google lists for each rich result type, and which ones your JSON-LD is missing. Runs locally.">
+<meta property="og:url" content="https://tools.sitefig.net/en/rich-result-eligibility-checker/">
+<meta property="og:locale" content="en_GB">
+<meta property="og:image" content="https://tools.sitefig.net/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Free Tools">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Rich Result Eligibility Checker for JSON-LD | Free Tools">
+<meta name="twitter:description" content="See which required and recommended properties Google lists for each rich result type, and which ones your JSON-LD is missing. Runs locally.">
+<meta name="twitter:image" content="https://tools.sitefig.net/assets/og.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2032%2032'%3E%3Crect%20width%3D'32'%20height%3D'32'%20rx%3D'7'%20fill%3D'%231d4ed8'%2F%3E%3Cpath%20d%3D'M9%2017l5%205%209-12'%20stroke%3D'%23fff'%20stroke-width%3D'3'%20fill%3D'none'%20stroke-linecap%3D'round'%20stroke-linejoin%3D'round'%2F%3E%3C%2Fsvg%3E">
+<script src="/assets/theme.js"></script>
+<link rel="stylesheet" href="/assets/site.css?v=22c7e8cf">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","publisher":{"@type":"Organization","name":"Sitefig","url":"https://sitefig.eu"},"name":"Rich Result Eligibility Checker","url":"https://tools.sitefig.net/en/rich-result-eligibility-checker/","description":"See which required and recommended properties Google lists for each rich result type, and which ones your JSON-LD is missing. Runs locally.","applicationCategory":"BusinessApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"inLanguage":"en","featureList":["Paste the JSON-LD or the page HTML.","For each node read the list of missing required properties first.","Add the recommended ones that you can fill truthfully.","Confirm with the Rich Results Test before you deploy."],"keywords":"rich results checker, google structured data requirements, required properties schema, rich result eligibility","accessibilityFeature":["structuralNavigation","readingOrder","highContrastDisplay","displayTransformability"],"accessibilityAPI":["ARIA"],"accessibilityHazard":["noFlashingHazard"],"accessibilitySummary":"Built to WCAG 2.2 level AA: keyboard operable controls, labelled form fields, light and dark themes, reflow down to 320 CSS pixels and support for reduced motion and forced colours. Known limitations are listed in the accessibility statement.","isPartOf":{"@type":"WebSite","name":"Free Tools","url":"https://tools.sitefig.net/en/"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tools.sitefig.net/en/"},{"@type":"ListItem","position":2,"name":"SEO – Technical","item":"https://tools.sitefig.net/en/#seo-technical"},{"@type":"ListItem","position":3,"name":"Rich Result Eligibility Checker","item":"https://tools.sitefig.net/en/rich-result-eligibility-checker/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"How current are the rules?","acceptedAnswer":{"@type":"Answer","text":"They come from Google pages read on 2026-10-23. The date is printed in the output. Re-check the linked page if something looks off."}},{"@type":"Question","name":"What about types it does not know?","acceptedAnswer":{"@type":"Answer","text":"They are not listed. Only types with a documented Google feature are checked."}},{"@type":"Question","name":"Why does Product show two blocks?","acceptedAnswer":{"@type":"Answer","text":"Product snippets and merchant listings have different requirements. The second block applies only if you sell the product."}},{"@type":"Question","name":"Does it need the page to be live?","acceptedAnswer":{"@type":"Answer","text":"No. It reads the JSON-LD you paste and fetches nothing."}}]}</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header">
+<div class="wrapper repel site-header__inner">
+<a class="site-header__brand" href="/en/">Free Tools</a>
+<nav class="site-header__nav" aria-label="Main"><ul><li><a href="/en/">All tools</a></li><li><a href="/en/about/">About</a></li><li><a class="site-header__parent" href="https://sitefig.eu" title="Sitefig: continuous UX monitoring and auditing for large websites">Sitefig</a></li><li><button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false" hidden><svg class="theme-toggle__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg><span>Dark mode</span></button></li></ul></nav>
+</div>
+</header>
+<main id="main" tabindex="-1">
+<div class="wrapper py-8 stack" style="--space:var(--space-l)">
+<nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="/en/">Home</a></li><li><a href="/en/#seo-technical">SEO – Technical</a></li><li><span aria-current="page">Rich Result Eligibility Checker</span></li></ol></nav>
+<header class="stack" style="--space:var(--space-xs)">
+<h1>Rich Result Eligibility Checker</h1>
+<p class="lede">Compares your JSON-LD with the required and recommended properties in Google's structured data documentation for Article, Product, Recipe, Event, Job posting, Video, Review, Local business and more.</p>
+</header>
+<section aria-labelledby="tool-h" class="stack" style="--space:var(--space-xs)">
+<h2 id="tool-h">Use the tool</h2>
+<div id="tool-root" data-tool="rich-result-eligibility-checker" data-module="new03"><noscript><p>This tool needs JavaScript. It runs entirely in your browser; nothing you enter is uploaded.</p></noscript></div>
+</section>
+<div class="prose stack">
+<section aria-labelledby="why-h" class="stack"><h2 id="why-h">Why this tool exists</h2>
+<p>Google documents which properties a page needs to be eligible for each rich result. Missing a required one means no result; missing a recommended one means a weaker result. Reading eleven documentation pages to find out which is which is slow, so this tool holds the lists and compares them with your markup, nested items included.</p>
+<p>The rules were read from the Search Central pages on 2026-10-23 and Google changes them. The output names the documentation page for each type. Eligibility is not a promise: Google decides what to show, and its Rich Results Test is the final check. FAQ and How-to are reported as retired.</p></section>
+<section aria-labelledby="how-h"><h2 id="how-h">How to use it</h2>
+<ol><li>Paste the JSON-LD or the page HTML.</li><li>For each node read the list of missing required properties first.</li><li>Add the recommended ones that you can fill truthfully.</li><li>Confirm with the Rich Results Test before you deploy.</li></ol></section>
+<section aria-labelledby="faq-h" class="faq stack"><h2 id="faq-h">Frequently asked questions</h2>
+<details><summary>How current are the rules?</summary><p>They come from Google pages read on 2026-10-23. The date is printed in the output. Re-check the linked page if something looks off.</p></details>
+<details><summary>What about types it does not know?</summary><p>They are not listed. Only types with a documented Google feature are checked.</p></details>
+<details><summary>Why does Product show two blocks?</summary><p>Product snippets and merchant listings have different requirements. The second block applies only if you sell the product.</p></details>
+<details><summary>Does it need the page to be live?</summary><p>No. It reads the JSON-LD you paste and fetches nothing.</p></details></section>
+</div>
+<section aria-labelledby="rel-h" class="related stack"><h2 id="rel-h">Tools often used together</h2>
+<ul class="card-list grid"><li><a class="link-card" href="/en/jsonld-syntax-validator/"><span class="link-card__title">JSON-LD Syntax Validator</span><span class="link-card__desc">Parse JSON-LD with exact line and column errors, then check @context, @type and @id. Accepts raw JSON or a whole HTML page.</span></a></li><li><a class="link-card" href="/en/schema-property-checker/"><span class="link-card__title">Schema.org Property Checker</span><span class="link-card__desc">Check each JSON-LD property against the Schema.org vocabulary for its @type, with did-you-mean suggestions and superseded warnings.</span></a></li><li><a class="link-card" href="/en/schema-deprecation-checker/"><span class="link-card__title">Schema Deprecation Checker</span><span class="link-card__desc">Flag JSON-LD types whose Google rich results were retired or limited (FAQ, HowTo, special announcement and more), with the changelog date.</span></a></li><li><a class="link-card" href="/en/schema-generator/"><span class="link-card__title">Schema.org JSON-LD Generator</span><span class="link-card__desc">Article, Product, LocalBusiness, FAQ, Organization, Breadcrumb, Event, Recipe, Person, WebSite, Video, HowTo.</span></a></li><li><a class="link-card" href="/en/jsonld-inspector/"><span class="link-card__title">JSON-LD Inspector</span><span class="link-card__desc">Extract JSON-LD from HTML and sanity-check required properties.</span></a></li><li><a class="link-card" href="/en/product-page-extractor/"><span class="link-card__title">Product Page Data Extractor (JSON-LD, Open Graph, Microdata, Amazon IDs)</span><span class="link-card__desc">Paste a product page's HTML and get its structured product data: JSON-LD Product and Offer, Open Graph, microdata, Amazon title, price and bullets, plus a check against Google's product rich result needs.</span></a></li></ul></section>
+</div>
+</main>
+<footer class="site-footer">
+<div class="wrapper stack" style="--space:var(--space-s)">
+<nav aria-label="Footer"><ul>
+<li><a href="/en/about/">About</a></li>
+<li><a href="/en/accessibility/">Accessibility statement</a></li>
+<li><a href="/en/">All tools</a></li>
+</ul></nav>
+<nav aria-label="Sitefig network"><ul><li><a href="https://sus.bot/" rel="noopener">sus.bot</a></li><li><a href="https://www.opencrawlers.com/" rel="noopener">Crawler list</a></li><li><a href="https://sus.bot/contact/" rel="noopener">Contact</a></li><li><a href="https://sus.bot/press/" rel="noopener">Press kit</a></li><li><a href="https://sus.bot/privacy/" rel="noopener">Privacy</a></li><li><a href="https://sitefig.eu/" rel="noopener">Sitefig</a></li></ul></nav>
+<nav aria-label="Language"><ul><li><span aria-current="true" lang="en">English</span></li></ul></nav>
+<p>Free tools. No sign-up. Runs in your browser. Free tools by <a href="https://sitefig.eu">Sitefig</a>.</p>
+</div>
+</footer>
+<script type="module" src="/src/page.js"></script>
+</body>
+</html>

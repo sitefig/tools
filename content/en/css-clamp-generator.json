@@ -1,0 +1,45 @@
+{
+ "id": "css-clamp-generator",
+ "seoTitle": "Free CSS clamp() Generator for Fluid Typography",
+ "metaDescription": "Compute a fluid CSS clamp() value that scales linearly between two viewport widths, written in rem with a vw slope. Free, runs in your browser.",
+ "intro": "Enter a minimum and maximum size and two viewport widths to get a clamp() value that grows smoothly between them, in rem with a vw slope.",
+ "why": "Fluid type and spacing remove the need for a pile of breakpoints: a heading can be 16px on a phone, 32px on a desktop and anything sensible in between. The formula for the middle value, a rem offset plus a vw slope, is easy to get wrong when worked out on paper.\n\nGive this tool the two sizes and the two viewport widths where they apply, and it works out the slope and the intercept, converts to rem against your root size, and writes the complete clamp(). The minimum and maximum are swapped if you enter them the other way round, so a shrinking value also works. Test on real devices, and note that pure vw scaling ignores the user's zoom unless you keep the rem part, which this output does.",
+ "howTo": [
+  "Enter the minimum and maximum size in pixels.",
+  "Enter the viewport widths at which those sizes apply, and the root font size.",
+  "Copy the clamp() value, or the ready font-size declaration."
+ ],
+ "faq": [
+  {
+   "q": "Why is there a rem term as well as vw?",
+   "a": "A value in vw alone ignores the user font size setting. Adding a rem offset keeps zoom and text size preferences working, which helps accessibility."
+  },
+  {
+   "q": "What happens outside the two viewport widths?",
+   "a": "The size stays at the minimum below the lower width and at the maximum above the upper width, because clamp() caps the middle value on both sides."
+  },
+  {
+   "q": "Can I use it for margins and padding?",
+   "a": "Yes. The result is a plain length, so it works for any property that accepts one, such as padding, gap or width."
+  },
+  {
+   "q": "Does it work for shrinking values?",
+   "a": "Yes. If the maximum size is smaller than the minimum, the slope is negative and the bounds are swapped into the right order inside clamp()."
+  }
+ ],
+ "related": [
+  "css-clamp-calculator",
+  "px-to-rem-converter",
+  "css-unit-converter",
+  "responsive-breakpoint-previewer",
+  "aspect-ratio-calculator",
+  "tailwind-spacing-generator"
+ ],
+ "keywords": [
+  "css clamp generator",
+  "fluid typography calculator",
+  "clamp font size generator",
+  "free css clamp tool",
+  "responsive font size clamp"
+ ]
+}

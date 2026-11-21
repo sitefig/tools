@@ -1,0 +1,41 @@
+{
+ "id": "css-transform-generator",
+ "seoTitle": "CSS Transform Generator: Rotate, Scale, Skew, 3D | Free",
+ "metaDescription": "Set translate, rotate, scale, skew and perspective, preview the box and copy the CSS transform and transform-origin. Free, runs in your browser.",
+ "intro": "Combines the common CSS transform functions into one declaration and shows the result on a box. Identity values are left out so the CSS stays short.",
+ "why": "The transform property takes functions in a fixed order, and the order changes the result: rotate then translate is not the same as translate then rotate. Writing the string by hand and guessing is slow.\n\nThis tool builds the declaration in a sensible order (translate, rotate, scale, skew), adds a perspective on the parent only when you ask for it, and warns when translateZ would have no visible effect without perspective. Everything runs locally.",
+ "howTo": [
+  "Enter values for the functions you need; leave the rest at their defaults.",
+  "Pick a transform-origin and, for 3D, a perspective in pixels.",
+  "Check the preview box against the dashed outline of the original position.",
+  "Copy the CSS."
+ ],
+ "faq": [
+  {
+   "q": "Why does translateZ do nothing?",
+   "a": "Without a perspective on the parent element, depth has no visual effect. Set the perspective field."
+  },
+  {
+   "q": "Does the order matter?",
+   "a": "Yes. Transforms apply right to left on the element. This tool uses translate, rotate, scale, skew."
+  },
+  {
+   "q": "Is the output safe for old browsers?",
+   "a": "The functions used are widely supported. 3D functions need a browser with 3D transforms, which is all current ones."
+  }
+ ],
+ "related": [
+  "css-cubic-bezier",
+  "css-animation-generator",
+  "css-keyframes-builder",
+  "css-filter-generator",
+  "box-shadow-generator",
+  "flexbox-generator"
+ ],
+ "keywords": [
+  "css transform generator",
+  "css rotate scale skew",
+  "css 3d transform",
+  "transform-origin"
+ ]
+}

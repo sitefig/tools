@@ -1,0 +1,38 @@
+{
+ "id": "ip-address-offline-lookup",
+ "seoTitle": "IP Address Offline Lookup: Private or Public, Country, PTR",
+ "metaDescription": "Classify IPv4 and IPv6 addresses with the IANA special-purpose registries, find the registry country from RIR data and get the reverse DNS name, all offline.",
+ "intro": "Check whether an IP address is private, loopback, CGNAT or public, which registry country it belongs to, and its reverse DNS name.",
+ "why": "Logs and configs are full of addresses. This tool tells you what each one is: private-use, CGNAT, loopback, link-local, documentation, multicast, IPv4-mapped IPv6 and the other IANA special-purpose blocks (with the RFC), and for public addresses the country the block is registered to, from the five Regional Internet Registries' delegation files compiled into a 2 MB table. It also builds the PTR name for reverse lookups and shows decimal, hex and expanded forms.\n\nRegistry country is where a block was allocated, not where a device sits: cloud, CDN, VPN and mobile addresses are often elsewhere. City, ISP, proxy detection and reputation need commercial databases and are not part of this offline tool. The country table is dated and shown in the output.",
+ "howTo": [
+  "Paste one or more IPv4 or IPv6 addresses.",
+  "Keep \"Look up registry country\" on (downloads a 2 MB table once).",
+  "Read category, country, PTR name and the other notations."
+ ],
+ "faq": [
+  {
+   "q": "Is this a geolocation service?",
+   "a": "No. It gives the registry country of the allocation. For precise location you need a commercial geo database."
+  },
+  {
+   "q": "Where does the data come from?",
+   "a": "The IANA special-purpose address registries and the delegated-extended statistics files published by AFRINIC, APNIC, ARIN, LACNIC and RIPE NCC (see data/SOURCES-gap5.md)."
+  },
+  {
+   "q": "Does it contact any server?",
+   "a": "Only to load its own data file from this site. The addresses you type never leave your browser."
+  }
+ ],
+ "related": [
+  "ip-validator-converter",
+  "ip-subnet-calculator",
+  "cidr-contains",
+  "ip-supernetting-calculator",
+  "whois-record-parser"
+ ],
+ "keywords": [
+  "ip address lookup offline",
+  "is ip private",
+  "ip to country offline"
+ ]
+}

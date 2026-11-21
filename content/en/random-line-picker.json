@@ -1,0 +1,41 @@
+{
+ "id": "random-line-picker",
+ "seoTitle": "Random Line Picker: Draw Lines from a List",
+ "metaDescription": "Pick one or more random lines from a pasted list, with or without repeats, using secure random numbers. Free, runs in your browser.",
+ "intro": "Pick one or more random lines from a pasted list, with or without repeats, using your browser secure random numbers.",
+ "why": "Choosing what to eat, who goes first or which idea to try is easier when something else decides. A random pick also avoids the bias people show when they choose.\n\nPaste a list, set how many lines to draw and whether a line may be drawn twice. The draw uses your browser's secure random numbers without modulo bias, so every line has the same chance. Nothing is uploaded.",
+ "howTo": [
+  "Paste your list, one item per line.",
+  "Set how many lines to pick.",
+  "Choose whether repeats are allowed or identical lines count once.",
+  "Press run again for a fresh draw."
+ ],
+ "faq": [
+  {
+   "q": "Is it really random?",
+   "a": "It uses crypto.getRandomValues with rejection sampling, so each line is equally likely."
+  },
+  {
+   "q": "Can I draw the same line twice?",
+   "a": "Only if you tick the repeat option. Otherwise each line is drawn at most once."
+  },
+  {
+   "q": "Can I repeat a draw?",
+   "a": "No. For a repeatable, provable draw use the Giveaway Winner Picker with a seed."
+  }
+ ],
+ "related": [
+  "list-shuffler",
+  "giveaway-winner-picker",
+  "random-number-picker",
+  "random-team-splitter",
+  "secret-santa-generator",
+  "dedupe-lines"
+ ],
+ "keywords": [
+  "random line picker",
+  "pick random item from list",
+  "random name picker",
+  "random choice"
+ ]
+}

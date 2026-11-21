@@ -1,0 +1,43 @@
+{
+ "id": "langgraph-state-generator",
+ "seoTitle": "Free LangGraph State & Graph Code Generator",
+ "metaDescription": "Describe LangGraph state, nodes and edges in a few lines and get runnable Python with TypedDict state and a compiled StateGraph. Free.",
+ "intro": "Describe your LangGraph workflow with state fields, node names and edges, including conditional routes, and get Python code with a TypedDict state, node stubs and a compiled graph.",
+ "why": "A LangGraph agent starts with the same scaffolding every time: a TypedDict with reducers, one function per node, a StateGraph, the edges, and routing functions for the branches. The shape is simple but fiddly, especially the Annotated reducer syntax and the mapping dictionary for conditional edges.\n\nSketching the graph in a short text spec first is quicker than writing the boilerplate, and it makes the design visible before any logic exists. The tool turns that spec into code you can run and then fill in. It works in your browser, so an unfinished design for a private project is never sent to a server.",
+ "howTo": [
+  "Under state:, list each field as name: type, adding reducer=add_messages or reducer=operator.add where needed.",
+  "Write nodes: followed by comma-separated node names, and entry: with the first node.",
+  "Under edges:, add lines like a -> b, or a -> b if condition for a conditional route.",
+  "Set the state class name, then copy the Python into a file and implement each node."
+ ],
+ "faq": [
+  {
+   "q": "Is the generated code complete?",
+   "a": "It is runnable scaffolding. Each node is a stub that returns an empty dict, and routing functions need your own logic. The invoke example uses an empty value for the first state field."
+  },
+  {
+   "q": "What reducers are supported?",
+   "a": "Any dotted name after reducer= is written into an Annotated type, so add_messages and operator.add work out of the box. The right imports are added for those two. Other reducers need their import added by hand."
+  },
+  {
+   "q": "Why do I get an undeclared node error?",
+   "a": "Every name used in an edge must appear in the nodes list, apart from START and END. Add the missing name to nodes, or fix a typo in the edge line."
+  }
+ ],
+ "related": [
+  "prompt-template-filler",
+  "llm-tool-definition-builder",
+  "mcp-message-validator",
+  "llm-cost-calculator",
+  "vercel-ai-core-message-converter",
+  "json-to-pydantic"
+ ],
+ "keywords": [
+  "langgraph state generator",
+  "langgraph stategraph example",
+  "langgraph typedict reducer",
+  "langgraph code generator",
+  "langgraph conditional edges",
+  "free langgraph tool"
+ ]
+}

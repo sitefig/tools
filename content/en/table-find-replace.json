@@ -1,0 +1,44 @@
+{
+ "id": "table-find-replace",
+ "seoTitle": "Find and Replace in CSV Columns with Regex",
+ "metaDescription": "Run a regular expression find and replace on chosen CSV columns only and see how many cells changed. Free, private.",
+ "intro": "Applies a regex replacement to selected columns and reports the number of changed cells with examples.",
+ "why": "Plain find and replace works on the whole text and breaks quoted fields. Here the CSV is parsed first and the pattern is applied cell by cell, in only the columns you name.\n\nUse groups like (\\d{3})-(\\d{4}) and $1 $2 in the replacement. Add the i flag to ignore case; g is on by default. The summary shows up to five before and after examples so you can catch a wrong pattern before copying the result.",
+ "howTo": [
+  "Paste the CSV.",
+  "List the columns to change, or leave blank for all.",
+  "Type the pattern, the replacement and the flags.",
+  "Check the examples, then copy or download."
+ ],
+ "faq": [
+  {
+   "q": "Which regex flavour?",
+   "a": "JavaScript regular expressions."
+  },
+  {
+   "q": "Is the header changed?",
+   "a": "No, only data rows."
+  },
+  {
+   "q": "Can I use capture groups?",
+   "a": "Yes, $1, $2 and $& work."
+  },
+  {
+   "q": "A wrong pattern?",
+   "a": "Nothing is saved. Change it and run again."
+  }
+ ],
+ "related": [
+  "find-replace",
+  "regex-cheatsheet",
+  "csv-whitespace-trimmer",
+  "category-value-mapper",
+  "csv-column-splitter",
+  "date-format-normalizer"
+ ],
+ "keywords": [
+  "regex replace csv column",
+  "find and replace in selected columns",
+  "bulk edit csv cells"
+ ]
+}

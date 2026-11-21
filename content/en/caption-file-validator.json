@@ -1,0 +1,43 @@
+{
+ "id": "caption-file-validator",
+ "seoTitle": "Caption File Validator for WebVTT and SRT",
+ "metaDescription": "Check a .vtt or .srt file for header, timestamp, order and syntax errors, plus reading speed, line length and overlap guidance.",
+ "intro": "Validates WebVTT and SRT caption files and flags readability problems.",
+ "why": "A broken caption file makes the player drop cues silently.\n\nThe tool checks the WEBVTT header, timing lines, end after start, cue order, settings, tags, SRT numbering and separators. Review items cover reading speed, line length, cue length and overlap, which are common style guides rather than WCAG rules. Valid files were also cross-checked with ffmpeg.",
+ "howTo": [
+  "Paste the file.",
+  "Fix errors first.",
+  "Adjust reading speed and line length limits.",
+  "Check accuracy by watching the video."
+ ],
+ "faq": [
+  {
+   "q": "VTT or SRT?",
+   "a": "The tool detects it from the WEBVTT header."
+  },
+  {
+   "q": "Is 20 characters per second a rule?",
+   "a": "No, it is a common guideline you can change."
+  },
+  {
+   "q": "Does it check accuracy?",
+   "a": "No. Only syntax and readability."
+  },
+  {
+   "q": "Is the file uploaded?",
+   "a": "No."
+  }
+ ],
+ "related": [
+  "subtitle-srt-vtt-converter",
+  "transcript-cleaner",
+  "youtube-caption-format-converter",
+  "wcag-success-criteria-explorer",
+  "audio-waveform-svg"
+ ],
+ "keywords": [
+  "caption file validator",
+  "vtt validator",
+  "srt validator"
+ ]
+}
