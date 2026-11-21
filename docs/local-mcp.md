@@ -16,6 +16,10 @@ node cli/ft.mjs run zip-inspector -f archive.zip --json
 
 ## MCP server (stdio)
 
+```
+git clone https://github.com/sitefig/tools.git free-tools && cd free-tools && npm install
+```
+
 ```json
 { "mcpServers": { "free-tools": { "command": "node", "args": ["/absolute/path/to/free-tools/cli/mcp.mjs"] } } }
 ```

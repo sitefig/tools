@@ -184,6 +184,14 @@
       "url": "https://sus.bot/"
     },
     {
+      "label": "MCP server",
+      "url": "https://github.com/sitefig/tools/blob/main/docs/local-mcp.md"
+    },
+    {
+      "label": "Source code",
+      "url": "https://github.com/sitefig/tools"
+    },
+    {
       "label": "Crawler list",
       "url": "https://www.opencrawlers.com/"
     },
