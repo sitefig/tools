@@ -9,7 +9,7 @@
     "en": "en_GB"
   },
   "licenceNote": "Set siteUrl to the real domain before deploying: canonical, Open Graph, sitemap and JSON-LD URLs all derive from it.",
-  "accessibilityContact": "",
+  "accessibilityContact": "receipt@sus.bot",
   "sensitive": {
     "cats": [
       "^Privacy . Secrets$",
